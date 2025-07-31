@@ -214,7 +214,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
         </div>
 
         {/* Content Section */}
-        <section className="relative">
+        <section className="relative bg-zinc-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
             {/* Featured Image */}
             <div className="max-w-4xl mx-auto mb-16">
@@ -242,7 +242,14 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 </p>
               </div>
               
-              <div className="blog-content">
+              <div className="blog-content" style={{ 
+                color: '#ffffff', 
+                position: 'relative', 
+                zIndex: 10,
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                padding: '2rem',
+                borderRadius: '1rem'
+              }}>
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
               
@@ -424,15 +431,21 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       <style jsx global>{`
         /* Beautiful blog content styles */
         .blog-content {
-          color: #e5e7eb;
+          color: #ffffff !important;
           font-size: 1.125rem;
           line-height: 1.75;
           max-width: none;
+          position: relative !important;
+          z-index: 10 !important;
+        }
+        
+        .blog-content * {
+          color: #ffffff !important;
         }
         
         .blog-content p {
           margin-bottom: 1.5rem;
-          color: #e5e7eb;
+          color: #ffffff !important;
           font-size: 1.125rem;
           line-height: 1.75;
         }
@@ -482,12 +495,12 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
         }
         
         .blog-content strong {
-          color: #f3f4f6;
+          color: #ffffff !important;
           font-weight: 600;
         }
         
         .blog-content em {
-          color: #e5e7eb;
+          color: #ffffff !important;
           font-style: italic;
         }
         
@@ -495,13 +508,13 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
         .blog-content ol {
           margin-bottom: 1.5rem;
           padding-left: 1.5rem;
-          color: #e5e7eb;
+          color: #ffffff !important;
         }
         
         .blog-content ul li,
         .blog-content ol li {
           margin-bottom: 0.5rem;
-          color: #e5e7eb;
+          color: #ffffff !important;
           line-height: 1.75;
         }
         
