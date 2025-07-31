@@ -7,7 +7,7 @@ const blogPosts = {
   'instagram-ignited-success-stories': {
     title: "How Marcus Rivera Grew from 800 to 125K Instagram Followers in 8 Months with Instagram Ignited",
     image: "https://ext.same-assets.com/1161517358/3768082061.png",
-    date: "December 15, 2024",
+    date: "January 8, 2024",
     readTime: "12 min read",
     content: `
       <p>When Marcus Rivera joined <strong>Instagram Ignited</strong> by <strong>Anyro</strong>, he had just 800 followers and was struggling to get his content seen. Today, he's sitting at 125K engaged followers, making $15K/month through sponsored posts and digital products. Here's his complete transformation story and the exact strategies from <strong>IImagined</strong> that made it possible.</p>
@@ -187,7 +187,7 @@ const blogPosts = {
   'digital-products-success-story': {
     title: "From $0 to $25K/Month: How Sophia Chen Launched Her Digital Product Empire",
     image: "https://ext.same-assets.com/1161517358/2730191624.png",
-    date: "December 10, 2024",
+    date: "February 22, 2024",
     readTime: "15 min read",
     content: `
       <p>After generating over $500K selling digital products in the past 18 months, I've learned that success isn't about having the perfect product, the biggest audience, or even the best marketing skills.</p>

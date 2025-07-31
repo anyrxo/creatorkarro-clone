@@ -3,7 +3,7 @@ export const additionalBlogPosts = {
   '500k-followers': {
     title: "How Anyro Built 500K+ Followers in 10 Months Using Instagram Ignited (Complete Case Study)",
     image: "https://ext.same-assets.com/1161517358/422346753.png",
-    date: "December 25, 2024",
+    date: "March 15, 2024",
     readTime: "15 min read",
     content: `
       <p>When <strong>Anyro</strong> launched <strong>IImagined</strong> 10 months ago, he had just 127 followers (mostly friends and family). Today, over 500,000 people follow his content, and his <strong>Instagram Ignited</strong> course has generated over $2.3 million in revenue. Here's the complete behind-the-scenes story of how he built a massive following and turned it into a 7-figure business.</p>
@@ -391,7 +391,7 @@ export const additionalBlogPosts = {
   '10k-month': {
     title: "How Jake Chen Hit $25K/Month with Anyro's Digital Products Course: 7-Step Blueprint Revealed",
     image: "https://ext.same-assets.com/1161517358/3253216564.png",
-    date: "December 20, 2024",
+    date: "November 12, 2023",
     readTime: "12 min read",
     content: `
       <p>When Jake Chen joined <strong>Anyro's Digital Products</strong> course through <strong>IImagined</strong>, he was making $0 from his 3,000 Instagram followers. Just 4 months later, he hit $25K/month selling educational content about productivity systems. Here's the exact 7-step blueprint from <strong>Anyro's Digital Products</strong> course that made it possible.</p>
@@ -846,7 +846,7 @@ export const additionalBlogPosts = {
   'creator-path': {
     title: "How Ashton Torres Built a $12K/Month AI Influencer Empire Using Anyro's System (Complete Blueprint)",
     image: "https://ext.same-assets.com/1161517358/3692619406.png",
-    date: "December 18, 2024",
+    date: "May 5, 2024",
     readTime: "14 min read",
     content: `
       <p>When Ashton Torres joined <strong>Anyro's AI Influencers</strong> course through <strong>IImagined</strong>, she had zero experience with AI and was struggling to monetize her 4,000 Instagram followers. Just 3 months later, she's managing 5 AI models generating $12K/month while working only 2 hours per day. Here's the complete blueprint that made it possible.</p>

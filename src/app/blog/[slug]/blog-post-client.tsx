@@ -12,6 +12,7 @@ interface BlogPost {
   date: string
   readTime: string
   content: string
+  slug?: string
 }
 
 interface BlogPostClientProps {
@@ -24,13 +25,39 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
   const contentAnimation = useScrollAnimation({ threshold: 0.1 })
   const newsletterAnimation = useScrollAnimation({ threshold: 0.1 })
   
+  // Get age-based stats based on post date
+  const getAgeBasedStats = (dateStr: string) => {
+    const postDate = new Date(dateStr)
+    const today = new Date('2025-08-01')
+    const daysDiff = Math.floor((today.getTime() - postDate.getTime()) / (1000 * 60 * 60 * 24))
+    
+    // Base stats that grow over time
+    const baseViews = 500
+    const baseLikes = 50
+    const baseShares = 10
+    
+    // Daily growth
+    const dailyViewGrowth = Math.floor(Math.random() * 40) + 14 // 14-53 views per day
+    const dailyLikeGrowth = Math.floor(Math.random() * 3) + 1 // 1-3 likes per day
+    const dailyShareGrowth = 1 // 1 share per day
+    
+    return {
+      views: baseViews + (dailyViewGrowth * daysDiff),
+      likes: baseLikes + (dailyLikeGrowth * daysDiff),
+      shares: baseShares + (dailyShareGrowth * daysDiff)
+    }
+  }
+  
+  const stats = getAgeBasedStats(post.date)
+  
   // Reading progress
   const [readingProgress, setReadingProgress] = useState(0)
   const [liked, setLiked] = useState(false)
-  const [likeCount, setLikeCount] = useState(Math.floor(Math.random() * 500) + 100)
-  const [shareCount, setShareCount] = useState(Math.floor(Math.random() * 200) + 50)
-  const [viewCount] = useState(Math.floor(Math.random() * 5000) + 2000)
+  const [likeCount, setLikeCount] = useState(stats.likes)
+  const [shareCount, setShareCount] = useState(stats.shares)
+  const [viewCount] = useState(stats.views)
   const [copied, setCopied] = useState(false)
+  const [hasShared, setHasShared] = useState(false)
   
   useEffect(() => {
     const updateReadingProgress = () => {
@@ -49,7 +76,13 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
     const url = window.location.href
     navigator.clipboard.writeText(url)
     setCopied(true)
-    setShareCount(prev => prev + 1)
+    
+    // Only increment share count once per session
+    if (!hasShared) {
+      setShareCount(prev => prev + 1)
+      setHasShared(true)
+    }
+    
     setTimeout(() => setCopied(false), 2000)
   }
   
@@ -188,7 +221,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               ref={contentAnimation.elementRef}
               className={`max-w-4xl mx-auto scroll-fade-up ${contentAnimation.isVisible ? 'visible' : ''}`}
             >
-              <div className="prose prose-lg prose-invert prose-blue max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:bg-gradient-to-r prose-h2:from-blue-400 prose-h2:to-purple-500 prose-h2:bg-clip-text prose-h2:text-transparent prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-blue-300 prose-p:text-white prose-p:leading-relaxed prose-p:mb-8 prose-strong:text-white prose-strong:font-semibold prose-ul:space-y-4 prose-ul:my-8 prose-ol:space-y-4 prose-ol:my-8 prose-li:text-gray-100 prose-li:leading-relaxed prose-blockquote:border-blue-500 prose-blockquote:bg-zinc-900/50 prose-blockquote:rounded-lg prose-blockquote:my-8 prose-code:bg-zinc-800 prose-code:text-blue-300 prose-code:px-1 prose-code:rounded prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-700">
+              <div className="prose prose-lg prose-invert max-w-none">
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
             </article>
@@ -358,6 +391,61 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       </div>
 
       <style jsx global>{`
+        /* Blog content styles */
+        .prose h2 {
+          margin-top: 3rem !important;
+          margin-bottom: 2rem !important;
+          font-size: 2.25rem !important;
+          font-weight: 700 !important;
+          background: linear-gradient(to right, #60a5fa, #a78bfa) !important;
+          -webkit-background-clip: text !important;
+          -webkit-text-fill-color: transparent !important;
+          background-clip: text !important;
+        }
+        
+        .prose h3 {
+          margin-top: 2.5rem !important;
+          margin-bottom: 1.5rem !important;
+          font-size: 1.875rem !important;
+          font-weight: 700 !important;
+          color: #93c5fd !important;
+        }
+        
+        .prose p {
+          margin-bottom: 1.5rem !important;
+          color: #ffffff !important;
+          font-size: 1.125rem !important;
+          line-height: 1.8 !important;
+        }
+        
+        .prose ul,
+        .prose ol {
+          margin: 1.5rem 0 !important;
+          padding-left: 1.5rem !important;
+        }
+        
+        .prose li {
+          margin-bottom: 0.75rem !important;
+          color: #f3f4f6 !important;
+          font-size: 1.125rem !important;
+          line-height: 1.75 !important;
+        }
+        
+        .prose strong {
+          color: #ffffff !important;
+          font-weight: 600 !important;
+        }
+        
+        .prose blockquote {
+          border-left: 4px solid #3b82f6 !important;
+          padding: 1.5rem !important;
+          margin: 2rem 0 !important;
+          background: rgba(31, 41, 55, 0.5) !important;
+          border-radius: 0 0.5rem 0.5rem 0 !important;
+          font-style: italic !important;
+          color: #e5e7eb !important;
+        }
+        
         .hover-lift {
           transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
