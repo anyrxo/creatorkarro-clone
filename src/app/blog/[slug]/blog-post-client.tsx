@@ -242,61 +242,14 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 </p>
               </div>
               
-              {/* Debug Tests */}
-              <div style={{ backgroundColor: 'red', padding: '20px', marginBottom: '20px' }}>
-                <p style={{ color: 'white', fontSize: '20px' }}>TEST 1: This text should be visible</p>
-              </div>
-              
-              <div style={{ backgroundColor: 'blue', padding: '20px', marginBottom: '20px', color: 'white' }}>
-                <p>TEST 2: Raw content preview (first 200 chars):</p>
-                <p>{post.content.substring(0, 200)}...</p>
-              </div>
-              
-              {/* Blog Content - Try without dangerouslySetInnerHTML first */}
-              <div 
-                style={{ 
-                  backgroundColor: '#000000',
-                  color: '#ffffff',
-                  padding: '3rem',
-                  borderRadius: '1rem',
-                  border: '3px solid #ff0000',
-                  marginBottom: '2rem',
-                  fontSize: '20px',
-                  lineHeight: '1.8'
-                }}
-              >
-                <h2 style={{ color: '#ffffff', marginBottom: '1rem' }}>Content Test Without HTML:</h2>
-                <div style={{ color: '#ffffff' }}>
-                  {post.content.replace(/<[^>]*>/g, '').substring(0, 500)}...
-                </div>
-              </div>
-              
-              {/* Original Blog Content */}
-              <div 
-                style={{ 
-                  backgroundColor: '#1a1a1a',
-                  padding: '3rem',
-                  borderRadius: '1rem',
-                  border: '3px solid #00ff00',
-                  position: 'relative',
-                  zIndex: 999,
-                  isolation: 'isolate'
-                }}
-              >
-                <h2 style={{ color: '#ffffff', marginBottom: '1rem' }}>Blog Content with HTML:</h2>
-                <div 
-                  dangerouslySetInnerHTML={{ __html: post.content }} 
-                  style={{
-                    color: '#ffffff !important',
-                    fontSize: '18px',
-                    lineHeight: '1.8'
-                  }}
-                />
+              {/* Blog Content */}
+              <div className="bg-zinc-900 p-8 rounded-xl">
+                <div className="blog-content blog-article-content" dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
               
               {/* Add a beautiful conclusion section */}
               <div className="mt-16 p-8 bg-gradient-to-r from-purple-600/10 via-pink-600/10 to-red-600/10 rounded-2xl border border-purple-500/20">
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <h3 className="text-2xl font-bold mb-4 text-white">
                   Key Takeaways
                 </h3>
                 <p className="text-lg text-gray-200">
@@ -471,12 +424,17 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
 
       <style jsx global>{`
         /* Force all blog content to be visible */
+        .blog-content,
+        .blog-content *,
         .blog-article-content,
         .blog-article-content * {
           color: #ffffff !important;
           opacity: 1 !important;
           visibility: visible !important;
           -webkit-text-fill-color: #ffffff !important;
+          background-clip: border-box !important;
+          filter: none !important;
+          mix-blend-mode: normal !important;
         }
         
         .blog-article-content p {
@@ -513,13 +471,15 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           -webkit-text-fill-color: #ffffff !important;
         }
         
-        /* Remove any conflicting styles */
+        /* Ensure blog content is properly styled */
         .blog-content {
-          all: unset;
+          color: #ffffff !important;
+          font-size: 1.125rem !important;
+          line-height: 1.75 !important;
         }
         
         .blog-content p {
-          margin-bottom: 1.5rem;
+          margin-bottom: 1.5rem !important;
           color: #ffffff !important;
           font-size: 1.125rem;
           line-height: 1.75;
