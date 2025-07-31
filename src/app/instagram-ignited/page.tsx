@@ -270,23 +270,23 @@ export default function InstagramIgnitedPage() {
                 description: "The Only Content Creation Program Based On Continually Tested Strategies & Concepts."
               },
               {
-                title: "Instagram OS",
+                title: "<span class='text-blue-400'>Instagram</span> OS",
                 description: "Master the short-form content framework that drove 100M+ views and earned me over half a million dollars."
               },
               {
-                title: "Monetization OS",
+                title: "<span class='text-blue-400'>Monetization</span> OS",
                 description: "Learn how to scale your personal brand's revenue with advanced strategies and diverse income streams."
               },
               {
-                title: "Newsletter OS",
+                title: "<span class='text-blue-400'>Newsletter</span> OS",
                 description: "Learn how I used chatbots and short-form content to grow a 50K+ email list and build your business's most valuable asset."
               },
               {
-                title: "Niche OS",
+                title: "<span class='text-blue-400'>Niche</span> OS",
                 description: "Stop second-guessing your niche. Learn to choose the perfect one that fits your skills, passion, and long-term success."
               },
               {
-                title: "Editing OS",
+                title: "<span class='text-blue-400'>Editing</span> OS"
                 description: "Unlock the editing secrets that have driven over 1 billion views on Instagram for both myself and my clients."
               },
               {
@@ -307,7 +307,7 @@ export default function InstagramIgnitedPage() {
                 ref={moduleCards.setElementRef(index)}
                 className={`testimonial-card hover-lift scroll-fade-up ${moduleCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
-                <h3 className="text-lg md:text-2xl font-bold mb-4">{module.title}</h3>
+                <h3 className="text-lg md:text-2xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: module.title }}></h3>
                 <p className="text-gray-400">{module.description}</p>
               </div>
             ))}

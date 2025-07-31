@@ -151,25 +151,25 @@ export default function AIInfluencersPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">AI Character Creation<br />(Total Value: $997)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-pink-400">AI Character</span> Creation<br />(Total Value: $997)</h3>
               <p className="text-gray-400">
                 Create photorealistic AI models using Flux, SDXL, and advanced LoRA training for consistent characters.
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">Fanvue Domination<br />(Total Value: $1,497)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-pink-400">Fanvue</span> Domination<br />(Total Value: $1,497)</h3>
               <p className="text-gray-400">
                 Complete Fanvue strategy: profile optimization, pricing, PPV campaigns, and fan retention systems.
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">Content Automation Engine<br />(Total Value: $797)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-pink-400">Content Automation</span> Engine<br />(Total Value: $797)</h3>
               <p className="text-gray-400">
                 Generate unlimited AI content: photos, videos, custom requests - all automated with ComfyUI workflows.
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">100% Profit Margins<br />(Total Value: $697)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-pink-400">100% Profit</span> Margins<br />(Total Value: $697)</h3>
               <p className="text-gray-400">
                 No models, no photographers, no agencies. Keep 100% of earnings with zero overhead costs.
               </p>

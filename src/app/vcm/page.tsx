@@ -166,19 +166,19 @@ export default function VCMPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">N8N Core Training<br />(Total Value: $997)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-purple-400">N8N Core</span> Training<br />(Total Value: $997)</h3>
               <p className="text-gray-400">
                 Complete N8N mastery from basics to advanced automation workflows.
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">100+ N8N Workflows<br />(Total Value: $1,497)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-purple-400">100+ N8N</span> Workflows<br />(Total Value: $1,497)</h3>
               <p className="text-gray-400">
                 Pre-built workflows for social media, email marketing, data processing, and business automation.
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">AI Integration Mastery<br />(Total Value: $797)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-purple-400">AI Integration</span> Mastery<br />(Total Value: $797)</h3>
               <p className="text-gray-400">
                 Connect ChatGPT, Claude, and other AI tools to automate content creation and customer service.
               </p>

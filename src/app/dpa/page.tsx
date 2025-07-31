@@ -194,31 +194,31 @@ export default function DPAPage() {
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">Niche Research Vault<br />(Total Value: $597)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-green-400">Niche Research</span> Vault<br />(Total Value: $597)</h3>
               <p className="text-gray-400">
                 Find profitable niches with tools and strategies that identify high-demand, low-competition markets.
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">Content Creation Engine<br />(Total Value: $797)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-green-400">Content Creation</span> Engine<br />(Total Value: $797)</h3>
               <p className="text-gray-400">
                 Templates and systems to create professional guides, workbooks, and courses in days, not months.
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">Sales Page Secrets<br />(Total Value: $697)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-green-400">Sales Page</span> Secrets<br />(Total Value: $697)</h3>
               <p className="text-gray-400">
                 High-converting sales page templates and copywriting formulas that turn visitors into buyers.
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">Launch Strategy System<br />(Total Value: $497)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-green-400">Launch Strategy</span> System<br />(Total Value: $497)</h3>
               <p className="text-gray-400">
                 Step-by-step product launch sequences that generate buzz and maximize first-week sales.
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">Scaling & Automation<br />(Total Value: $997)</h3>
+              <h3 className="text-2xl font-bold mb-4"><span className="text-green-400">Scaling & Automation</span><br />(Total Value: $997)</h3>
               <p className="text-gray-400">
                 Systems to automate sales, create product funnels, and scale to multiple income streams.
               </p>
