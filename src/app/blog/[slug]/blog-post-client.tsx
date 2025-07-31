@@ -243,13 +243,36 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               </div>
               
               <div className="blog-content" style={{ 
-                color: '#ffffff', 
+                color: '#ffffff !important', 
                 position: 'relative', 
-                zIndex: 10,
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                zIndex: 100,
+                backgroundColor: '#000000',
                 padding: '2rem',
-                borderRadius: '1rem'
+                borderRadius: '1rem',
+                border: '2px solid #333'
               }}>
+                <style dangerouslySetInnerHTML={{ __html: `
+                  .blog-content * {
+                    color: #ffffff !important;
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                  }
+                  .blog-content p,
+                  .blog-content h1,
+                  .blog-content h2,
+                  .blog-content h3,
+                  .blog-content h4,
+                  .blog-content h5,
+                  .blog-content h6,
+                  .blog-content li,
+                  .blog-content strong,
+                  .blog-content em,
+                  .blog-content span,
+                  .blog-content div {
+                    color: #ffffff !important;
+                    opacity: 1 !important;
+                  }
+                `}} />
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
               
@@ -460,10 +483,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           line-height: 1.2;
           margin-top: 2.5rem;
           margin-bottom: 1rem;
-          background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
+          color: #ffffff !important;
         }
         
         .blog-content h1 {
@@ -667,9 +687,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           font-size: 2.5rem;
           font-weight: 700;
           margin-bottom: 0.5rem;
-          background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: #60a5fa !important;
         }
         
         .blog-content .stat-label {
@@ -678,10 +696,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
         }
         
         .blog-content .gradient-heading {
-          background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
+          color: #ffffff !important;
           font-size: 2.5rem;
           font-weight: 800;
           margin: 3rem 0 1.5rem;
@@ -1268,10 +1283,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           }
         }
         
-        .prose h1 {
-          margin-top: 0 !important;
-          margin-bottom: 3rem !important;
-          font-size: 3.75rem !important;
+        /* Removed conflicting prose styles */
           font-weight: 800 !important;
           line-height: 1.1 !important;
           background: linear-gradient(to right, #60a5fa, #a78bfa, #ec4899) !important;
