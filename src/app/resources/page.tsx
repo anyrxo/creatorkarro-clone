@@ -1,0 +1,198 @@
+'use client'
+
+import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
+
+export default function ResourcesPage() {
+  // Scroll animations for different sections
+  const heroAnimation = useScrollAnimation({ threshold: 0.3 })
+  const freeResourcesAnimation = useScrollAnimation({ threshold: 0.2 })
+  const disclaimerAnimation = useScrollAnimation({ threshold: 0.2 })
+
+  // For category animations (5 categories)
+  const categoryAnimations = useScrollAnimations(5, { threshold: 0.1 })
+
+  const resources = [
+    {
+      category: "Content Creation",
+      tools: [
+        {
+          name: "CapCut",
+          description: "Free video editing software perfect for creating Instagram Reels and TikToks",
+          link: "https://www.capcut.com/",
+          type: "Free"
+        },
+        {
+          name: "Canva",
+          description: "Design tool for creating thumbnails, graphics, and social media posts",
+          link: "https://www.canva.com/",
+          type: "Freemium"
+        },
+        {
+          name: "Unsplash",
+          description: "High-quality stock photos for your content",
+          link: "https://unsplash.com/",
+          type: "Free"
+        }
+      ]
+    },
+    {
+      category: "Email Marketing",
+      tools: [
+        {
+          name: "Beehiiv",
+          description: "Newsletter platform I use for my email list",
+          link: "https://beehiiv.com/",
+          type: "Freemium"
+        },
+        {
+          name: "ConvertKit",
+          description: "Email marketing automation for creators",
+          link: "https://convertkit.com/",
+          type: "Paid"
+        }
+      ]
+    },
+    {
+      category: "Analytics & Growth",
+      tools: [
+        {
+          name: "Later",
+          description: "Social media scheduling and analytics",
+          link: "https://later.com/",
+          type: "Freemium"
+        },
+        {
+          name: "Google Analytics",
+          description: "Track your website traffic and user behavior",
+          link: "https://analytics.google.com/",
+          type: "Free"
+        }
+      ]
+    },
+    {
+      category: "Course Creation",
+      tools: [
+        {
+          name: "Whop",
+          description: "Platform I use to host all my courses",
+          link: "https://whop.com/",
+          type: "Platform"
+        },
+        {
+          name: "Loom",
+          description: "Screen recording for course content",
+          link: "https://loom.com/",
+          type: "Freemium"
+        }
+      ]
+    },
+    {
+      category: "Productivity",
+      tools: [
+        {
+          name: "Notion",
+          description: "All-in-one workspace for notes, planning, and organization",
+          link: "https://notion.so/",
+          type: "Freemium"
+        },
+        {
+          name: "Calendly",
+          description: "Scheduling tool for calls and meetings",
+          link: "https://calendly.com/",
+          type: "Freemium"
+        }
+      ]
+    }
+  ]
+
+  return (
+    <div className="min-h-screen bg-dark">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 section-spacing">
+        <div className="max-w-6xl mx-auto">
+          {/* Page Title */}
+          <div
+            ref={heroAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <h1 className="text-4xl md:text-6xl font-bold mb-8">RESOURCES</h1>
+            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+              Here are the tools and resources I personally use and recommend to build and grow your online business.
+            </p>
+          </div>
+
+          {/* Resources Grid */}
+          <div className="space-y-16">
+            {resources.map((category, categoryIndex) => (
+              <div key={categoryIndex}>
+                <h2
+                  ref={categoryAnimations.setElementRef(categoryIndex)}
+                  className={`text-2xl md:text-3xl font-bold mb-8 text-center scroll-fade-up ${categoryAnimations.visibleElements[categoryIndex] ? 'visible' : ''}`}
+                >
+                  {category.category}
+                </h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                  {category.tools.map((tool, toolIndex) => (
+                    <div
+                      key={toolIndex}
+                      className={`testimonial-card hover-lift scroll-fade-up ${categoryAnimations.visibleElements[categoryIndex] ? `visible scroll-stagger-${toolIndex + 1}` : ''}`}
+                    >
+                      <div className="flex items-center justify-between mb-4">
+                        <h3 className="text-lg md:text-xl font-bold">{tool.name}</h3>
+                        <span className={`px-3 py-1 rounded-full text-sm ${
+                          tool.type === 'Free' ? 'bg-green-600/20 text-green-400' :
+                          tool.type === 'Freemium' ? 'bg-blue-600/20 text-blue-400' :
+                          tool.type === 'Platform' ? 'bg-purple-600/20 text-purple-400' :
+                          'bg-orange-600/20 text-orange-400'
+                        }`}>
+                          {tool.type}
+                        </span>
+                      </div>
+                      <p className="text-gray-400 mb-6 text-sm md:text-base">{tool.description}</p>
+                      <a
+                        href={tool.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:text-blue-300 font-medium transition-colors duration-200"
+                      >
+                        Check it out →
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Free Resources Section */}
+          <div
+            ref={freeResourcesAnimation.elementRef}
+            className={`mt-24 bg-zinc-900/50 rounded-2xl p-6 md:p-8 text-center hover-lift scroll-scale ${freeResourcesAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">Free Resources</h2>
+            <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
+              I also create free resources to help you get started. Check out my Gumroad for templates, guides, and more.
+            </p>
+            <a
+              href="https://anyrxo.gumroad.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button inline-block hover-lift"
+            >
+              Access Free Resources
+            </a>
+          </div>
+
+          {/* Disclaimer */}
+          <div
+            ref={disclaimerAnimation.elementRef}
+            className={`mt-16 bg-zinc-900 border border-zinc-700 rounded-lg p-6 scroll-fade-up ${disclaimerAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <p className="text-sm text-gray-400 text-center">
+              <strong>Disclaimer:</strong> Some of the links above may be affiliate links, which means I may earn a commission if you make a purchase. This doesn't affect the price you pay, and I only recommend tools I genuinely use and believe in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

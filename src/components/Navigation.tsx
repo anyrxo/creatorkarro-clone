@@ -1,0 +1,217 @@
+'use client'
+
+import Link from 'next/link'
+import Image from 'next/image'
+import { useState, useEffect } from 'react'
+import { Menu, X, ChevronDown } from 'lucide-react'
+
+export default function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isCoursesOpen, setIsCoursesOpen] = useState(false)
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isMenuOpen])
+
+  const mainNavigation = [
+    { name: 'Story', href: '/story' },
+    {
+      name: 'Courses',
+      href: '#',
+      hasDropdown: true,
+      dropdownItems: [
+        { name: 'Instagram Ignited', href: '/creator-world' },
+        { name: 'Digital Products', href: '/dpa' },
+        { name: 'N8N AI Automations', href: '/vcm' },
+        { name: 'AI Influencers', href: '/ai-influencers' },
+        { name: 'ComfyUI & Workflows', href: '/comfyui-workflows' }
+      ]
+    },
+    { name: 'Resources', href: '/resources' },
+    { name: 'Testimonials', href: '/testimonials' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
+  ]
+
+  const allNavigation = [...mainNavigation, { name: 'Login', href: '/login' }]
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-sm border-b border-zinc-800">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center h-20">
+          {/* Logo - Far Left */}
+          <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src="/anyro.png"
+              alt="Anyro"
+              width={40}
+              height={40}
+              className="w-10 h-10 rounded-full"
+            />
+            <span className="text-xl font-bold whitespace-nowrap">Creator Academy</span>
+          </Link>
+
+          {/* Desktop Navigation - Centered with flex-grow */}
+          <nav className="hidden md:flex flex-1 justify-center">
+            <div className="nav-pill flex items-center space-x-1">
+              {mainNavigation.map((item) => (
+                <div key={item.name} className="relative">
+                  {item.hasDropdown ? (
+                    <div
+                      className="relative group"
+                      onMouseLeave={() => setIsCoursesOpen(false)}
+                    >
+                      <button
+                        className="flex items-center px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-200 rounded-full hover:bg-zinc-700 hover:scale-105"
+                        onMouseEnter={() => setIsCoursesOpen(true)}
+                      >
+                        {item.name}
+                        <ChevronDown size={16} className={`ml-1 transition-transform duration-200 ${isCoursesOpen ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      <div
+                        className={`absolute top-full left-0 mt-2 w-48 bg-zinc-800/95 backdrop-blur-md border border-zinc-600 rounded-lg shadow-2xl py-2 z-50 transition-all duration-300 ease-out ${
+                          isCoursesOpen
+                            ? 'opacity-100 visible transform translate-y-0'
+                            : 'opacity-0 invisible transform -translate-y-2'
+                        }`}
+                      >
+                        {item.dropdownItems?.map((dropdownItem, index) => (
+                          <Link
+                            key={dropdownItem.name}
+                            href={dropdownItem.href}
+                            className={`block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-zinc-700 transition-all duration-200 hover:transform hover:translate-x-1 ${
+                              isCoursesOpen ? `opacity-100 delay-${index * 50}` : 'opacity-0'
+                            }`}
+                          >
+                            {dropdownItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-200 rounded-full hover:bg-zinc-700 hover:scale-105 hover:shadow-lg"
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
+          </nav>
+
+          {/* Member Login - Far Right */}
+          <div className="hidden md:block">
+            <Link
+              href="/login"
+              className="nav-pill px-6 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-200 hover:bg-zinc-700 hover:scale-105"
+            >
+              Member Login
+            </Link>
+          </div>
+
+          {/* Mobile menu button - positioned to the right */}
+          <div className="md:hidden ml-auto">
+            <button
+              className="p-2 text-gray-300 hover:text-white transition-all duration-200 hover:scale-110 active:scale-95"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <div className="relative w-6 h-6">
+                <Menu
+                  size={24}
+                  className={`absolute inset-0 transition-all duration-300 ${
+                    isMenuOpen ? 'opacity-0 rotate-180' : 'opacity-100 rotate-0'
+                  }`}
+                />
+                <X
+                  size={24}
+                  className={`absolute inset-0 transition-all duration-300 ${
+                    isMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-180'
+                  }`}
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile menu backdrop */}
+        <div
+          className={`lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm transition-all duration-300 z-40 ${
+            isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+          }`}
+          onClick={() => setIsMenuOpen(false)}
+        />
+
+        {/* Mobile Navigation */}
+        <div className={`lg:hidden absolute top-full left-0 right-0 bg-zinc-900/95 backdrop-blur-md border-b border-zinc-800 transition-all duration-300 ease-in-out z-50 shadow-2xl ${
+          isMenuOpen
+            ? 'opacity-100 transform translate-y-0 visible'
+            : 'opacity-0 transform -translate-y-4 invisible'
+        }`}>
+          <div className="px-4 py-6 space-y-4">
+            {allNavigation.map((item, index) => (
+              <div
+                key={item.name}
+                className={`transition-all duration-300 ease-in-out ${
+                  isMenuOpen
+                    ? `transform translate-x-0 opacity-100 delay-${index * 75}`
+                    : 'transform -translate-x-8 opacity-0'
+                }`}
+              >
+                {item.hasDropdown ? (
+                  <div>
+                    <button
+                      className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200"
+                      onClick={() => setIsCoursesOpen(!isCoursesOpen)}
+                    >
+                      {item.name}
+                      <ChevronDown size={16} className={`transform transition-transform ${isCoursesOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`ml-4 mt-2 space-y-2 transition-all duration-300 ease-in-out overflow-hidden ${
+                      isCoursesOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      {item.dropdownItems?.map((dropdownItem, dropdownIndex) => (
+                        <Link
+                          key={dropdownItem.name}
+                          href={dropdownItem.href}
+                          className={`block px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-all duration-200 ${
+                            isCoursesOpen
+                              ? `transform translate-x-0 opacity-100 delay-${dropdownIndex * 50}`
+                              : 'transform -translate-x-4 opacity-0'
+                          }`}
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {dropdownItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </header>
+  )
+}
