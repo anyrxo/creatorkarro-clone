@@ -25,23 +25,34 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
   const contentAnimation = useScrollAnimation({ threshold: 0.1 })
   const newsletterAnimation = useScrollAnimation({ threshold: 0.1 })
   
-  // Get age-based stats based on post date
-  const getAgeBasedStats = (dateStr: string) => {
+  // Get consistent stats based on post title (deterministic)
+  const getAgeBasedStats = (dateStr: string, title: string) => {
+    // Create a simple hash from the title for consistency
+    let hash = 0
+    for (let i = 0; i < title.length; i++) {
+      const char = title.charCodeAt(i)
+      hash = ((hash << 5) - hash) + char
+      hash = hash & hash // Convert to 32bit integer
+    }
+    
+    // Use absolute value to ensure positive numbers
+    const seed = Math.abs(hash)
+    
     const postDate = new Date(dateStr)
-    const today = new Date('2025-08-01')
+    const today = new Date('2025-01-31')
     const daysDiff = Math.floor((today.getTime() - postDate.getTime()) / (1000 * 60 * 60 * 24))
     
-    // Base stats that grow over time
-    const baseViews = 500
-    const baseLikes = 50
+    // Base stats that grow over time (deterministic based on title)
+    const baseViews = 500 + (seed % 1000)
+    const baseLikes = 50 + (seed % 100)
     
-    // Daily growth
-    const dailyViewGrowth = Math.floor(Math.random() * 40) + 14 // 14-53 views per day
-    const dailyLikeGrowth = Math.floor(Math.random() * 3) + 1 // 1-3 likes per day
+    // Daily growth (deterministic)
+    const dailyViewGrowth = 14 + (seed % 40) // 14-53 views per day
+    const dailyLikeGrowth = 1 + (seed % 3) // 1-3 likes per day
     
     const totalLikes = baseLikes + (dailyLikeGrowth * daysDiff)
-    // Shares are 13-18% of likes
-    const shareRatio = 0.13 + (Math.random() * 0.05) // 13-18%
+    // Shares are 13-18% of likes (deterministic)
+    const shareRatio = 0.13 + ((seed % 5) * 0.01) // 13-18%
     const totalShares = Math.floor(totalLikes * shareRatio)
     
     return {
@@ -51,7 +62,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
     }
   }
   
-  const stats = getAgeBasedStats(post.date)
+  const stats = getAgeBasedStats(post.date, post.title)
   
   // Reading progress
   const [readingProgress, setReadingProgress] = useState(0)
@@ -678,6 +689,513 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
         .blog-content * {
           opacity: 1 !important;
           visibility: visible !important;
+        }
+        
+        /* Interactive Elements CSS */
+        .animated-intro {
+          animation: fadeInUp 1s ease;
+          margin-bottom: 3rem;
+        }
+        
+        .lead-text {
+          font-size: 1.5rem !important;
+          line-height: 1.8 !important;
+          color: #f3f4f6 !important;
+          font-weight: 300 !important;
+        }
+        
+        .highlight-green {
+          color: #10b981 !important;
+          font-weight: 700 !important;
+          background: linear-gradient(120deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.2) 100%) !important;
+          padding: 0.125rem 0.5rem !important;
+          border-radius: 0.25rem !important;
+        }
+        
+        .stats-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 2rem;
+          margin: 3rem 0;
+        }
+        
+        .stat-card {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 1rem;
+          padding: 2rem;
+          text-align: center;
+          transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+          transform: translateY(-5px);
+        }
+        
+        .blue-glow {
+          box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .purple-glow {
+          box-shadow: 0 0 30px rgba(147, 51, 234, 0.3);
+        }
+        
+        .pink-glow {
+          box-shadow: 0 0 30px rgba(236, 72, 153, 0.3);
+        }
+        
+        .stat-number {
+          font-size: 3rem;
+          font-weight: 800;
+          background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+          color: #9ca3af;
+          font-size: 1.125rem;
+        }
+        
+        .interactive-box {
+          background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+          border: 1px solid rgba(59, 130, 246, 0.3);
+          border-radius: 1rem;
+          padding: 2rem;
+          margin: 2rem 0;
+        }
+        
+        .conversion-chart {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-around;
+          height: 200px;
+          margin-top: 2rem;
+        }
+        
+        .chart-bar {
+          width: 30%;
+          background: linear-gradient(to top, rgba(59, 130, 246, 0.3), rgba(147, 51, 234, 0.3));
+          border-radius: 0.5rem 0.5rem 0 0;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          padding-bottom: 1rem;
+          transition: all 0.3s ease;
+          animation: growUp 1s ease forwards;
+        }
+        
+        @keyframes growUp {
+          from {
+            height: 0;
+          }
+        }
+        
+        .chart-bar.highlighted {
+          background: linear-gradient(to top, #3b82f6, #9333ea);
+        }
+        
+        .chart-bar span {
+          position: absolute;
+          bottom: -2rem;
+          font-size: 0.875rem;
+          color: #9ca3af;
+          text-align: center;
+          width: 100%;
+        }
+        
+        .chart-bar .value {
+          position: absolute;
+          top: -2rem;
+          font-weight: 700;
+          color: #f3f4f6;
+        }
+        
+        .pro-tip {
+          background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+          border: 1px solid rgba(34, 197, 94, 0.3);
+          border-radius: 1rem;
+          padding: 2rem;
+          margin: 2rem 0;
+        }
+        
+        .pro-tip h4 {
+          color: #10b981 !important;
+          margin-bottom: 1rem !important;
+        }
+        
+        .timeline {
+          position: relative;
+          padding: 2rem 0;
+        }
+        
+        .timeline::before {
+          content: '';
+          position: absolute;
+          left: 2rem;
+          top: 0;
+          bottom: 0;
+          width: 2px;
+          background: linear-gradient(to bottom, #3b82f6, #9333ea);
+        }
+        
+        .timeline-item {
+          display: flex;
+          margin-bottom: 2rem;
+          position: relative;
+          animation: slideInLeft 0.6s ease forwards;
+        }
+        
+        @keyframes slideInLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        
+        .timeline-marker {
+          background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
+          color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 2rem;
+          font-weight: 700;
+          min-width: 100px;
+          text-align: center;
+          z-index: 1;
+        }
+        
+        .timeline-content {
+          margin-left: 2rem;
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 0.75rem;
+          padding: 1.5rem;
+          flex: 1;
+        }
+        
+        .product-stack {
+          display: grid;
+          gap: 1rem;
+          margin: 2rem 0;
+        }
+        
+        .stack-item {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 0.75rem;
+          padding: 1.5rem;
+          transition: all 0.3s ease;
+        }
+        
+        .stack-item.free {
+          border-color: rgba(156, 163, 175, 0.3);
+        }
+        
+        .stack-item.low {
+          border-color: rgba(34, 197, 94, 0.3);
+        }
+        
+        .stack-item.mid {
+          border-color: rgba(59, 130, 246, 0.3);
+        }
+        
+        .stack-item.high {
+          border-color: rgba(147, 51, 234, 0.3);
+          background: linear-gradient(135deg, rgba(147, 51, 234, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+        }
+        
+        .stack-item:hover {
+          transform: translateX(10px);
+        }
+        
+        .automation-flow {
+          background: rgba(59, 130, 246, 0.05);
+          border-radius: 1rem;
+          padding: 2rem;
+          margin: 2rem 0;
+        }
+        
+        .flow-diagram {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 2rem;
+          flex-wrap: wrap;
+        }
+        
+        .flow-step {
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 0.5rem;
+          padding: 1rem 1.5rem;
+          font-weight: 600;
+          transition: all 0.3s ease;
+        }
+        
+        .flow-step.highlighted {
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+          border-color: #10b981;
+          color: white;
+          transform: scale(1.1);
+          animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+          0%, 100% {
+            transform: scale(1.1);
+          }
+          50% {
+            transform: scale(1.15);
+          }
+        }
+        
+        .flow-arrow {
+          color: #60a5fa;
+          font-size: 2rem;
+          margin: 0 1rem;
+        }
+        
+        .automation-list {
+          list-style: none;
+          padding: 0;
+        }
+        
+        .automation-list li {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 1.5rem;
+          padding: 1.5rem;
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 0.75rem;
+          transition: all 0.3s ease;
+        }
+        
+        .automation-list li:hover {
+          transform: translateX(10px);
+          border-color: rgba(59, 130, 246, 0.5);
+        }
+        
+        .automation-list .icon {
+          font-size: 2rem;
+          margin-right: 1.5rem;
+        }
+        
+        .case-study {
+          background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(251, 113, 133, 0.1) 100%);
+          border: 1px solid rgba(236, 72, 153, 0.3);
+          border-radius: 1rem;
+          padding: 2rem;
+          margin: 2rem 0;
+        }
+        
+        .metrics-dashboard {
+          background: rgba(0, 0, 0, 0.3);
+          border-radius: 1rem;
+          padding: 2rem;
+          margin: 2rem 0;
+        }
+        
+        .metric-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 1.5rem;
+          margin-top: 1.5rem;
+        }
+        
+        .metric-card {
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 0.75rem;
+          padding: 1.5rem;
+          text-align: center;
+          transition: all 0.3s ease;
+        }
+        
+        .metric-card:hover {
+          transform: translateY(-5px);
+          border-color: rgba(59, 130, 246, 0.5);
+        }
+        
+        .metric-label {
+          color: #9ca3af;
+          font-size: 0.875rem;
+          margin-bottom: 0.5rem;
+        }
+        
+        .metric-value {
+          font-size: 2rem;
+          font-weight: 800;
+          color: #f3f4f6;
+          margin-bottom: 0.5rem;
+        }
+        
+        .metric-change {
+          font-size: 0.875rem;
+          font-weight: 600;
+        }
+        
+        .metric-change.positive {
+          color: #10b981;
+        }
+        
+        .metric-change.negative {
+          color: #ef4444;
+        }
+        
+        .checklist {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 0.75rem;
+          padding: 1.5rem;
+          margin: 2rem 0;
+        }
+        
+        .checklist label {
+          display: block;
+          margin-bottom: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          color: #e5e7eb;
+        }
+        
+        .checklist label:hover {
+          padding-left: 1rem;
+          color: #60a5fa;
+        }
+        
+        .checklist input[type="checkbox"] {
+          margin-right: 1rem;
+          width: 1.25rem;
+          height: 1.25rem;
+          cursor: pointer;
+          accent-color: #60a5fa;
+        }
+        
+        .scaling-pyramid {
+          margin: 2rem 0;
+        }
+        
+        .pyramid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+        }
+        
+        .pyramid-level {
+          text-align: center;
+          padding: 1.5rem;
+          position: relative;
+          margin-bottom: -1px;
+          transition: all 0.3s ease;
+        }
+        
+        .pyramid-level:hover {
+          transform: scale(1.05);
+          z-index: 1;
+        }
+        
+        .pyramid-level.level-1 {
+          width: 100%;
+          background: rgba(59, 130, 246, 0.1);
+          border: 1px solid rgba(59, 130, 246, 0.3);
+          border-radius: 0 0 0.75rem 0.75rem;
+        }
+        
+        .pyramid-level.level-2 {
+          width: 75%;
+          background: rgba(147, 51, 234, 0.1);
+          border: 1px solid rgba(147, 51, 234, 0.3);
+        }
+        
+        .pyramid-level.level-3 {
+          width: 50%;
+          background: rgba(236, 72, 153, 0.1);
+          border: 1px solid rgba(236, 72, 153, 0.3);
+        }
+        
+        .pyramid-level.level-4 {
+          width: 25%;
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+          border: 1px solid #10b981;
+          border-radius: 0.75rem 0.75rem 0 0;
+          color: white;
+        }
+        
+        .pyramid-level h4 {
+          margin-bottom: 0.5rem !important;
+          font-weight: 700 !important;
+        }
+        
+        .roadmap {
+          display: grid;
+          gap: 2rem;
+          margin: 2rem 0;
+        }
+        
+        .roadmap-phase {
+          background: rgba(255, 255, 255, 0.02);
+          border-left: 4px solid transparent;
+          border-image: linear-gradient(to bottom, #3b82f6, #9333ea) 1;
+          padding: 1.5rem;
+          border-radius: 0 0.75rem 0.75rem 0;
+          transition: all 0.3s ease;
+        }
+        
+        .roadmap-phase:hover {
+          transform: translateX(10px);
+          background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .roadmap-phase h4 {
+          color: #60a5fa !important;
+          margin-bottom: 1rem !important;
+        }
+        
+        .final-cta {
+          background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+          border: 2px solid transparent;
+          border-image: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%) 1;
+          border-radius: 1rem;
+          padding: 3rem;
+          margin: 3rem 0;
+          text-align: center;
+        }
+        
+        .action-steps {
+          background: rgba(0, 0, 0, 0.3);
+          border-radius: 0.75rem;
+          padding: 2rem;
+          margin-top: 2rem;
+        }
+        
+        .action-steps ol {
+          text-align: left;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+          .flow-diagram {
+            flex-direction: column;
+            gap: 1rem;
+          }
+          
+          .flow-arrow {
+            transform: rotate(90deg);
+          }
+          
+          .stats-grid,
+          .metric-grid {
+            grid-template-columns: 1fr;
+          }
         }
         
         .hover-lift {
