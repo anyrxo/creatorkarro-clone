@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { useEffect, useState } from 'react'
+import { additionalBlogPosts } from './blog-data'
 
 interface BlogPost {
   title: string
@@ -108,25 +109,17 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
         {/* Content Section */}
         <section className="relative">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            {/* Article Stats */}
+            {/* Featured Image */}
             <div className="max-w-4xl mx-auto mb-16">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl p-6 text-center hover-lift">
-                  <div className="text-2xl font-bold text-blue-400 mb-2">8 min</div>
-                  <div className="text-gray-400 text-sm">Read Time</div>
-                </div>
-                <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl p-6 text-center hover-lift">
-                  <div className="text-2xl font-bold text-green-400 mb-2">2.5K</div>
-                  <div className="text-gray-400 text-sm">Views</div>
-                </div>
-                <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl p-6 text-center hover-lift">
-                  <div className="text-2xl font-bold text-purple-400 mb-2">47</div>
-                  <div className="text-gray-400 text-sm">Shares</div>
-                </div>
-                <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl p-6 text-center hover-lift">
-                  <div className="text-2xl font-bold text-pink-400 mb-2">92%</div>
-                  <div className="text-gray-400 text-sm">Success Rate</div>
-                </div>
+              <div className="relative aspect-video rounded-2xl overflow-hidden hover-lift">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent" />
               </div>
             </div>
 
@@ -135,22 +128,36 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               ref={contentAnimation.elementRef}
               className={`max-w-4xl mx-auto scroll-fade-up ${contentAnimation.isVisible ? 'visible' : ''}`}
             >
-              <div className="prose prose-invert prose-lg max-w-none">
-                <div 
-                  className="article-content"
-                  dangerouslySetInnerHTML={{ __html: post.content }}
-                />
+              <div className="prose prose-lg prose-invert prose-blue max-w-none
+                             prose-headings:font-bold prose-headings:tracking-tight
+                             prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:text-center
+                             prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-blue-300
+                             prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-8
+                             prose-strong:text-white prose-strong:font-semibold
+                             prose-ul:space-y-4 prose-ul:my-8
+                             prose-ol:space-y-4 prose-ol:my-8
+                             prose-li:text-gray-300 prose-li:leading-relaxed
+                             prose-blockquote:border-blue-500 prose-blockquote:bg-zinc-900/50 prose-blockquote:rounded-lg prose-blockquote:my-8
+                             prose-code:bg-zinc-800 prose-code:text-blue-300 prose-code:px-1 prose-code:rounded
+                             prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-700"
+              >
+                <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
             </article>
           </div>
         </section>
 
-        {/* Newsletter Section */}
-        <section className="section-spacing bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Newsletter Section - PROMINENT */}
+        <section className="section-spacing relative overflow-hidden">
+          {/* Animated Background */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20">
+            <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+          </div>
+          
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div 
               ref={newsletterAnimation.elementRef}
-              className={`bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-pink-600/10 border border-blue-600/30 rounded-3xl p-8 md:p-12 text-center hover-lift scroll-fade-up ${newsletterAnimation.isVisible ? 'visible' : ''}`}
+              className={`bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 backdrop-blur-sm border-2 border-blue-500/50 rounded-3xl p-12 md:p-16 text-center hover-lift shadow-2xl shadow-blue-500/20 scroll-fade-up ${newsletterAnimation.isVisible ? 'visible' : ''}`}
             >
               <div className="max-w-3xl mx-auto">
                 {/* Icon */}
@@ -161,31 +168,47 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                   </svg>
                 </div>
                 
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                    Want More Insights Like This?
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                  <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient">
+                    Get The Creator Playbook
                   </span>
                 </h2>
                 
-                <p className="text-xl text-gray-300 mb-8">
-                  Join <span className="text-blue-300 font-semibold">10,000+</span> creators getting actionable strategies on 
-                  <span className="text-purple-300"> Instagram growth</span>, 
-                  <span className="text-green-300"> digital products</span>, and 
-                  <span className="text-pink-300"> AI automation</span> delivered weekly.
+                <p className="text-xl md:text-2xl text-gray-200 mb-6 font-light">
+                  Join <span className="text-blue-300 font-bold text-2xl md:text-3xl">10,000+</span> creators getting proven strategies that actually work
                 </p>
+                
+                <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                    <div className="text-3xl mb-2">📈</div>
+                    <p className="text-sm text-gray-300">Instagram Growth</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                    <div className="text-3xl mb-2">💰</div>
+                    <p className="text-sm text-gray-300">Digital Products</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                    <div className="text-3xl mb-2">🤖</div>
+                    <p className="text-sm text-gray-300">AI Automation</p>
+                  </div>
+                </div>
                 
                 <a
                   href="https://anyro.beehiiv.com/subscribe"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover-lift"
+                  className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-lg font-bold rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover-lift shadow-xl shadow-blue-500/30 animate-glow"
                 >
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                   </svg>
-                  Join the Newsletter
+                  Join Free Newsletter →
                 </a>
+                
+                <p className="text-sm text-gray-400 mt-6">
+                  Get actionable tips delivered to your inbox every week. No spam, ever.
+                </p>
               </div>
             </div>
           </div>
@@ -197,60 +220,84 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                 <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  Continue Reading
+                  More Success Stories
                 </span>
               </h2>
               
               <div className="grid md:grid-cols-3 gap-8">
-                {/* Related articles would go here */}
-                <Link href="/blog" className="group bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl overflow-hidden hover-lift">
+                {/* Show actual blog posts */}
+                <Link href="/blog/500k-followers" className="group bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl overflow-hidden hover-lift">
                   <div className="aspect-video relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-6xl">📈</div>
-                    </div>
+                    <Image
+                      src={additionalBlogPosts['500k-followers'].image}
+                      alt={additionalBlogPosts['500k-followers'].title}
+                      fill
+                      className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent" />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-400 transition-colors">
-                      More Instagram Growth Tips
+                    <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-400 transition-colors line-clamp-2">
+                      {additionalBlogPosts['500k-followers'].title}
                     </h3>
-                    <p className="text-gray-400 text-sm">
-                      Discover advanced strategies for growing your Instagram following
+                    <p className="text-gray-400 text-sm mb-3">
+                      Learn how Anyro built a massive following and 7-figure business
                     </p>
+                    <div className="flex items-center text-xs text-gray-500">
+                      <span>{additionalBlogPosts['500k-followers'].date}</span>
+                      <span className="mx-2">•</span>
+                      <span>{additionalBlogPosts['500k-followers'].readTime}</span>
+                    </div>
                   </div>
                 </Link>
                 
-                <Link href="/digital-products" className="group bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl overflow-hidden hover-lift">
+                <Link href="/blog/10k-month" className="group bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl overflow-hidden hover-lift">
                   <div className="aspect-video relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-blue-500/20" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-6xl">💰</div>
-                    </div>
+                    <Image
+                      src={additionalBlogPosts['10k-month'].image}
+                      alt={additionalBlogPosts['10k-month'].title}
+                      fill
+                      className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent" />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-green-400 transition-colors">
-                      Digital Products Course
+                    <h3 className="text-lg font-semibold mb-2 group-hover:text-green-400 transition-colors line-clamp-2">
+                      {additionalBlogPosts['10k-month'].title}
                     </h3>
-                    <p className="text-gray-400 text-sm">
-                      Learn how to create and sell digital products that convert
+                    <p className="text-gray-400 text-sm mb-3">
+                      Step-by-step guide to reaching $10K/month with content
                     </p>
+                    <div className="flex items-center text-xs text-gray-500">
+                      <span>{additionalBlogPosts['10k-month'].date}</span>
+                      <span className="mx-2">•</span>
+                      <span>{additionalBlogPosts['10k-month'].readTime}</span>
+                    </div>
                   </div>
                 </Link>
                 
-                <Link href="/ai-influencers" className="group bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl overflow-hidden hover-lift">
+                <Link href="/blog/creator-path" className="group bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl overflow-hidden hover-lift">
                   <div className="aspect-video relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-500/20" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-6xl">🤖</div>
-                    </div>
+                    <Image
+                      src={additionalBlogPosts['creator-path'].image}
+                      alt={additionalBlogPosts['creator-path'].title}
+                      fill
+                      className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent" />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-pink-400 transition-colors">
-                      AI Influencers Guide
+                    <h3 className="text-lg font-semibold mb-2 group-hover:text-pink-400 transition-colors line-clamp-2">
+                      {additionalBlogPosts['creator-path'].title}
                     </h3>
-                    <p className="text-gray-400 text-sm">
-                      Build virtual models that generate income 24/7
+                    <p className="text-gray-400 text-sm mb-3">
+                      Essential skills to build a profitable creator business
                     </p>
+                    <div className="flex items-center text-xs text-gray-500">
+                      <span>{additionalBlogPosts['creator-path'].date}</span>
+                      <span className="mx-2">•</span>
+                      <span>{additionalBlogPosts['creator-path'].readTime}</span>
+                    </div>
                   </div>
                 </Link>
               </div>
@@ -260,52 +307,121 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       </div>
 
       <style jsx global>{`
-        .article-content h2 {
-          @apply text-3xl font-bold mt-12 mb-6 text-white;
-          background: linear-gradient(135deg, #60a5fa, #a78bfa);
+        /* Force proper spacing and formatting */
+        .prose h2 {
+          margin-top: 3rem !important;
+          margin-bottom: 2rem !important;
+          font-size: 2.25rem !important;
+          font-weight: 700 !important;
+          background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
+          line-height: 1.3 !important;
         }
         
-        .article-content h3 {
-          @apply text-2xl font-semibold mt-8 mb-4 text-blue-300;
+        .prose h3 {
+          margin-top: 2.5rem !important;
+          margin-bottom: 1.5rem !important;
+          font-size: 1.875rem !important;
+          font-weight: 700 !important;
+          color: #93c5fd !important;
+          line-height: 1.4 !important;
         }
         
-        .article-content p {
-          @apply text-gray-300 leading-relaxed mb-6 text-lg;
+        .prose p {
+          margin-bottom: 1.5rem !important;
+          color: #d1d5db !important;
+          font-size: 1.125rem !important;
+          line-height: 1.75 !important;
         }
         
-        .article-content ul, .article-content ol {
-          @apply ml-6 mb-6 space-y-3;
+        .prose ul,
+        .prose ol {
+          margin-top: 1.5rem !important;
+          margin-bottom: 1.5rem !important;
+          padding-left: 1.5rem !important;
         }
         
-        .article-content li {
-          @apply text-gray-300 leading-relaxed;
+        .prose li {
+          margin-bottom: 0.5rem !important;
+          color: #d1d5db !important;
+          font-size: 1.125rem !important;
+          line-height: 1.75 !important;
         }
         
-        .article-content strong {
-          @apply text-white font-semibold;
+        .prose ul li {
+          list-style-type: disc !important;
+          list-style-position: outside !important;
         }
         
-        .article-content blockquote {
-          @apply border-l-4 border-blue-500 pl-6 py-4 bg-zinc-900/50 rounded-r-lg my-8 italic text-gray-300;
+        .prose ol li {
+          list-style-type: decimal !important;
+          list-style-position: outside !important;
         }
         
-        .article-content code {
-          @apply bg-zinc-800 px-2 py-1 rounded text-sm text-blue-300 font-mono;
+        .prose li::marker {
+          color: #60a5fa !important;
         }
         
-        .article-content pre {
-          @apply bg-zinc-900 border border-zinc-700 rounded-lg p-6 overflow-x-auto my-8;
+        .prose strong {
+          color: #ffffff !important;
+          font-weight: 600 !important;
         }
         
-        .article-content pre code {
-          @apply bg-transparent px-0 py-0 text-gray-300;
+        .prose blockquote {
+          border-left: 4px solid #3b82f6 !important;
+          padding-left: 1.5rem !important;
+          margin: 2rem 0 !important;
+          background: rgba(31, 41, 55, 0.5) !important;
+          padding: 1.5rem !important;
+          border-radius: 0 0.5rem 0.5rem 0 !important;
+          font-style: italic !important;
+          color: #e5e7eb !important;
         }
         
-        .article-content a {
-          @apply text-blue-400 hover:text-blue-300 underline transition-colors;
+        .prose code {
+          background: #1f2937 !important;
+          color: #93c5fd !important;
+          padding: 0.125rem 0.375rem !important;
+          border-radius: 0.25rem !important;
+          font-size: 0.875rem !important;
+        }
+        
+        .prose pre {
+          background: #111827 !important;
+          border: 1px solid #374151 !important;
+          border-radius: 0.5rem !important;
+          padding: 1.5rem !important;
+          margin: 2rem 0 !important;
+          overflow-x: auto !important;
+        }
+        
+        .prose pre code {
+          background: transparent !important;
+          padding: 0 !important;
+          color: #e5e7eb !important;
+          font-size: 0.875rem !important;
+        }
+        
+        .prose a {
+          color: #60a5fa !important;
+          text-decoration: underline !important;
+          text-underline-offset: 2px !important;
+          transition: all 0.2s !important;
+        }
+        
+        .prose a:hover {
+          color: #93c5fd !important;
+          text-underline-offset: 4px !important;
+        }
+        
+        /* First paragraph styling */
+        .prose > p:first-child {
+          font-size: 1.25rem !important;
+          line-height: 1.8 !important;
+          color: #e5e7eb !important;
+          margin-bottom: 2rem !important;
         }
         
         .hover-lift {
@@ -326,6 +442,37 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
         .scroll-fade-up.visible {
           opacity: 1;
           transform: translateY(0);
+        }
+        
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient 5s ease infinite;
+        }
+        
+        @keyframes gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        
+        .animate-glow {
+          animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+          from {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3);
+          }
+          to {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.7), 0 0 60px rgba(59, 130, 246, 0.4);
+          }
+        }
+        
+        .line-clamp-2 {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
         }
       `}</style>
     </>
