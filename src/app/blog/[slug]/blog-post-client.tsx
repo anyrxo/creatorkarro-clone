@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { useEffect, useState } from 'react'
 import { additionalBlogPosts } from './blog-data'
+import { processContentForVisibility } from './process-content'
 
 interface BlogPost {
   title: string
@@ -243,19 +244,29 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 </p>
               </div>
               
-              {/* Blog Content */}
-              <div className="bg-zinc-800 p-8 rounded-xl blog-article-wrapper" style={{ opacity: 1 }}>
-                <div 
-                  className="blog-article-content"
-                  dangerouslySetInnerHTML={{ __html: post.content }} 
-                  style={{ 
-                    color: '#ffffff',
-                    opacity: 1,
-                    visibility: 'visible',
-                    position: 'relative',
-                    zIndex: 10
-                  }}
-                />
+              {/* Blog Content with Forced Inline Styles */}
+              <div className="bg-black p-8 rounded-xl border-4 border-red-500" style={{ opacity: 1 }}>
+                <h2 className="text-white text-2xl mb-4">Blog Content:</h2>
+                
+                {/* Version 1: Processed content with inline styles */}
+                <div className="mb-8 p-4 border-2 border-yellow-500">
+                  <h3 className="text-yellow-400 mb-2">Version 1: Processed with inline styles</h3>
+                  <div dangerouslySetInnerHTML={{ __html: processContentForVisibility(post.content) }} />
+                </div>
+                
+                {/* Version 2: Raw content wrapped in white div */}
+                <div className="mb-8 p-4 border-2 border-green-500">
+                  <h3 className="text-green-400 mb-2">Version 2: Raw content in white wrapper</h3>
+                  <div style={{ color: 'white' }} dangerouslySetInnerHTML={{ __html: post.content }} />
+                </div>
+                
+                {/* Version 3: Plain text without HTML */}
+                <div className="p-4 border-2 border-blue-500">
+                  <h3 className="text-blue-400 mb-2">Version 3: Plain text (no HTML)</h3>
+                  <div style={{ color: 'white', whiteSpace: 'pre-wrap' }}>
+                    {post.content.replace(/<[^>]*>/g, '').substring(0, 1000)}...
+                  </div>
+                </div>
               </div>
               
               {/* Add a beautiful conclusion section */}
@@ -434,38 +445,15 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       </div>
 
       <style jsx global>{`
-        /* NUCLEAR OPTION - Force ALL blog content to be visible */
-        .blog-article-content,
-        .blog-article-content *,
-        .blog-article-content p,
-        .blog-article-content h1,
-        .blog-article-content h2,
-        .blog-article-content h3,
-        .blog-article-content h4,
-        .blog-article-content h5,
-        .blog-article-content h6,
-        .blog-article-content li,
-        .blog-article-content ul,
-        .blog-article-content ol,
-        .blog-article-content strong,
-        .blog-article-content em,
-        .blog-article-content span,
-        .blog-article-content div,
-        .blog-article-content a,
-        .blog-article-content blockquote {
-          color: #ffffff !important;
+        /* Force visibility on blog content */
+        body * {
+          -webkit-text-fill-color: initial !important;
+        }
+        
+        .bg-black * {
+          color: white !important;
           opacity: 1 !important;
           visibility: visible !important;
-          -webkit-text-fill-color: #ffffff !important;
-          text-fill-color: #ffffff !important;
-          filter: none !important;
-          transform: none !important;
-          background-clip: border-box !important;
-          -webkit-background-clip: border-box !important;
-          mix-blend-mode: normal !important;
-          isolation: auto !important;
-          position: relative !important;
-          z-index: 1 !important;
         }
         
         .blog-article-content p {
