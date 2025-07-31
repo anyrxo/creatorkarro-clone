@@ -51,11 +51,11 @@ export default function StoryPage() {
             </p>
 
             <p>
-              Like most people, I started out completely lost. I was watching every YouTube video, buying every course, trying every "get rich quick" scheme. Nothing worked. I failed at dropshipping, failed at crypto, failed at pretty much everything I touched.
+              Like most people, I started out completely lost. I was watching every YouTube video, buying every course, trying to find my path. But instead of chasing quick wins, I went deep on what actually fascinated me - AI, automation, and content creation. That's when everything changed.
             </p>
 
             <p>
-              Then one day, I decided to just be real. I started posting about my failures, my small wins, the messy behind-the-scenes stuff. People actually connected with that. My Instagram blew up, and before I knew it, I had half a million people following my journey across different platforms.
+              I started experimenting with everything - building AI influencers that generate income 24/7, automating entire businesses with N8N, creating viral content with ComfyUI, mastering the algorithm on every platform, and packaging my knowledge into digital products. Each success built on the last, and suddenly I wasn't just learning - I was earning.
             </p>
 
             <div
@@ -82,15 +82,15 @@ export default function StoryPage() {
             </div>
 
             <p>
-              Here's what I learned after posting thousands of pieces of content: most advice online is BS. What actually works is being authentic, understanding human psychology, and having systems that scale. Once I figured out the viral content formula and how to turn views into dollars, everything clicked.
+              Here's what I discovered: success isn't about picking one thing - it's about stacking skills that multiply each other. My AI influencers drive traffic to my digital products. My N8N automations handle the backend while I sleep. ComfyUI lets me create content at scale. Going viral brings in the audience. And digital products turn that audience into revenue. It's all connected.
             </p>
 
             <p>
-              IImagined isn't just another course. It's literally everything I wish someone had told me when I started. No fluff, no theory - just the exact strategies that took me from broke to $3M+. And yeah, my students are crushing it too.
+              IImagined isn't just another course. It's the exact blueprint for all 5 systems that built my empire. No fluff, no theory - just proven methods: AI influencers, N8N automations, ComfyUI workflows, viral content strategies, and digital product funnels. Everything that took me to $3M+, and everything my students are using to build their own success.
             </p>
 
             <p>
-              Look, I'm not special. I don't have some secret talent. If I can go from failing at everything to building a 7-figure business, you can too. You just need someone to show you what actually works (and save you from wasting years like I did).
+              Look, I'm not special. I don't have some secret talent. I just found what works and went all in. These 5 methods aren't random - they're the future of online business. Master them now while most people are still figuring out basic social media.
             </p>
 
             <div
