@@ -128,19 +128,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               ref={contentAnimation.elementRef}
               className={`max-w-4xl mx-auto scroll-fade-up ${contentAnimation.isVisible ? 'visible' : ''}`}
             >
-              <div className="prose prose-lg prose-invert prose-blue max-w-none
-                             prose-headings:font-bold prose-headings:tracking-tight
-                             prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:text-center
-                             prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-blue-300
-                             prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-8
-                             prose-strong:text-white prose-strong:font-semibold
-                             prose-ul:space-y-4 prose-ul:my-8
-                             prose-ol:space-y-4 prose-ol:my-8
-                             prose-li:text-gray-300 prose-li:leading-relaxed
-                             prose-blockquote:border-blue-500 prose-blockquote:bg-zinc-900/50 prose-blockquote:rounded-lg prose-blockquote:my-8
-                             prose-code:bg-zinc-800 prose-code:text-blue-300 prose-code:px-1 prose-code:rounded
-                             prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-700"
-              >
+              <div className="prose prose-lg prose-invert prose-blue max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:text-center prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-blue-300 prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-8 prose-strong:text-white prose-strong:font-semibold prose-ul:space-y-4 prose-ul:my-8 prose-ol:space-y-4 prose-ol:my-8 prose-li:text-gray-300 prose-li:leading-relaxed prose-blockquote:border-blue-500 prose-blockquote:bg-zinc-900/50 prose-blockquote:rounded-lg prose-blockquote:my-8 prose-code:bg-zinc-800 prose-code:text-blue-300 prose-code:px-1 prose-code:rounded prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-700">
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
             </article>
