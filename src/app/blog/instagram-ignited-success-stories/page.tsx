@@ -1,6 +1,6 @@
 export default function InstagramIgnitedSuccessStories() {
   return (
-    <div className="min-h-screen bg-dark text-white">
+    <div className="min-h-screen bg-zinc-900 text-white">
       {/* Header */}
       <section className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -250,7 +250,6 @@ export default function InstagramIgnitedSuccessStories() {
               marginBottom: '24px', 
               color: '#ffffff',
               padding: '24px',
-              background: 'rgba(59, 130, 246, 0.1)',
               borderRadius: '8px',
               borderLeft: '4px solid #3b82f6'
             }}>
@@ -262,7 +261,7 @@ export default function InstagramIgnitedSuccessStories() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-24 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-pink-600/10">
+      <section className="py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-4xl font-bold mb-6">
             <span style={{ 
