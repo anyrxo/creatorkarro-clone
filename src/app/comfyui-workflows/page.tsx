@@ -23,11 +23,11 @@ export default function ComfyUIWorkflowsPage() {
             className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Master ComfyUI & AI Workflows To Create Stunning Content in Minutes
+              Master <span className="text-orange-400">ComfyUI & AI Workflows</span> To Create <span className="text-orange-400">Stunning Content</span> in Minutes
             </h1>
 
             <p className="text-xl text-gray-400 mb-8">
-              Build professional AI image generation workflows that save hours and deliver consistent results
+              Build professional <span className="text-orange-300">AI image generation workflows</span> that save hours and deliver consistent results
             </p>
 
             <p className="text-sm text-yellow-400 mb-8">Early bird pricing - Save 60% today</p>
@@ -128,8 +128,8 @@ export default function ComfyUIWorkflowsPage() {
           </div>
 
           <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-            <h3 className="text-3xl font-bold mb-4">Create professional AI content effortlessly</h3>
-            <p className="text-xl text-gray-400 mb-8">Join creators who've mastered the most powerful AI image tool available</p>
+            <h3 className="text-3xl font-bold mb-4">Create professional <span className="text-orange-400">AI content</span> effortlessly</h3>
+            <p className="text-xl text-gray-400 mb-8">Join creators who've mastered the most powerful <span className="text-orange-300">AI image tool</span> available</p>
             <Link href="#packages" className="cta-button inline-block btn-animate animate-glow hover-lift">
               Start Creating Now
             </Link>
@@ -280,13 +280,13 @@ export default function ComfyUIWorkflowsPage() {
               <div className="flex items-center mb-4">
                 <Image
                   src="https://ext.same-assets.com/1161517358/1695287196.jpeg"
-                  alt="Zara Williams"
+                  alt="Brendan Williams"
                   width={48}
                   height={48}
                   className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
                 />
                 <div>
-                  <h4 className="font-semibold group-hover:text-orange-400 transition-colors duration-300">Zara Williams</h4>
+                  <h4 className="font-semibold group-hover:text-orange-400 transition-colors duration-300">Brendan Williams</h4>
                   <p className="text-sm text-gray-400">AI Artist</p>
                 </div>
               </div>

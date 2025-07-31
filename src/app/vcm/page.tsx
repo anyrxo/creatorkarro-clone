@@ -23,11 +23,11 @@ export default function VCMPage() {
             className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Master N8N AI Automations And Build Your Content Empire on Autopilot
+              Master <span className="text-purple-400">N8N AI Automations</span> And Build Your <span className="text-purple-400">Content Empire</span> on Autopilot
             </h1>
 
             <p className="text-xl text-gray-400 mb-8">
-              Automate your entire content workflow with N8N - no coding required
+              Automate your entire <span className="text-purple-300">content workflow</span> with N8N - no coding required
             </p>
 
             <p className="text-sm text-yellow-400 mb-8">The price is increasing very soon.</p>
@@ -143,8 +143,8 @@ export default function VCMPage() {
           </div>
 
           <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-            <h3 className="text-3xl font-bold mb-4">Start automating your business today</h3>
-            <p className="text-xl text-gray-400 mb-8">Join N8N AI Automations and build workflows that save hours every day.</p>
+            <h3 className="text-3xl font-bold mb-4">Start <span className="text-purple-400">automating</span> your business today</h3>
+            <p className="text-xl text-gray-400 mb-8">Join <span className="text-purple-300">N8N AI Automations</span> and build workflows that save hours every day.</p>
             <Link href="#packages" className="cta-button inline-block btn-animate animate-glow hover-lift">
               I'm Ready To Enroll
             </Link>

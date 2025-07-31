@@ -41,11 +41,11 @@ export default function TestimonialsPage() {
       results: "40+ hours saved weekly, 5x productivity increase"
     },
     {
-      name: "Isabella Torres",
+      name: "Ashton Torres",
       role: "AI Content Creator",
       course: "AI Influencers",
       avatar: "https://ext.same-assets.com/1161517358/432373971.webp",
-      content: "AI Influencers opened up a completely new revenue stream for me! I created 3 AI personas that generate content 24/7. Within 2 months, my AI influencers gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach is revolutionary!",
+      content: "AI Influencers opened up a completely new revenue stream for me! I created 3 AI models that generate content 24/7. Within 2 months, my AI models gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach is revolutionary!",
       results: "200K combined followers, $8K/month AI revenue"
     },
     {
@@ -57,7 +57,7 @@ export default function TestimonialsPage() {
       results: "500% productivity increase, premium pricing"
     },
     {
-      name: "Elena Rodriguez",
+      name: "Allan Rodriguez",
       role: "Lifestyle Blogger",
       course: "Instagram Ignited",
       avatar: "https://ext.same-assets.com/1161517358/430339476.webp",
@@ -81,12 +81,12 @@ export default function TestimonialsPage() {
       results: "$22K first week launch, 3x conversion rates"
     },
     {
-      name: "Zara Williams",
+      name: "Brendan Williams",
       role: "AI Artist",
       course: "ComfyUI & Workflows",
       avatar: "https://ext.same-assets.com/1161517358/1695287196.jpeg",
       content: "ComfyUI & Workflows opened up endless creative possibilities! I went from basic Midjourney prompts to creating complex, professional AI art workflows. My art business revenue jumped 400% and I'm booked solid with client work!",
-      results: "Transformed barber business"
+      results: "400% revenue increase, booked solid"
     },
     {
       name: "Jack Connors",
@@ -208,10 +208,10 @@ export default function TestimonialsPage() {
             <div className={`bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-600/30 rounded-2xl p-6 md:p-8 hover-lift scroll-scale ${successAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center">Featured Success: Houston's Journey</h3>
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center mb-6">
-                Houston joined IImagined with just a few thousand followers and big dreams.
-                In his first month alone, he hit 20K followers using our viral content strategies.
+                Houston joined Instagram Ignited with just a few thousand followers and big dreams.
+                In his first month alone, he hit 20K followers using Anyro's viral carousel strategies.
                 Today, he's making over $7K per month and has grown his brand to 80K+ followers.
-                His transformation shows what's possible when you have the right system and take consistent action.
+                His transformation shows what's possible when you have the right Instagram system and take consistent action.
               </p>
               <div className="text-center">
                 <span className="inline-block bg-green-600/20 text-green-400 px-4 py-2 rounded-full text-sm font-semibold">
@@ -224,9 +224,9 @@ export default function TestimonialsPage() {
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center">Featured Success: Tochi's Transformation</h3>
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center mb-6">
                 Tochi started with just 400 followers and was struggling to see any results.
-                After taking IImagined, she grew her following to 240K in under 12 months
-                and launched her own community and newsletter. Her story proves that with
-                the right guidance, anyone can build a massive audience and successful business.
+                After taking Instagram Ignited, she grew her following to 240K in under 12 months
+                and launched her own Digital Products business using Anyro's frameworks. Her story proves that with
+                the right Instagram and monetization strategies, anyone can build a massive audience and successful business.
               </p>
               <div className="text-center">
                 <span className="inline-block bg-purple-600/20 text-purple-400 px-4 py-2 rounded-full text-sm font-semibold">

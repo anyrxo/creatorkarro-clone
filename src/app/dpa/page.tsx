@@ -16,7 +16,7 @@ export default function DPAPage() {
   const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
   const testimonials = [
     {
-      name: "Sophia Chen",
+      name: "Jake Chen",
       role: "Digital Entrepreneur",
       avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
       content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Anyro's pricing psychology and launch strategies are game-changing. I've now built a sustainable $25K/month business selling educational content!"
@@ -45,11 +45,11 @@ export default function DPAPage() {
             className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              How I Made $500K+ Profit Selling Digital Products with Organic Content
+              How I Made <span className="text-green-400">$500K+ Profit</span> Selling <span className="text-green-400">Digital Products</span> with Organic Content
             </h1>
 
             <p className="text-xl text-gray-400 mb-8">
-              No Paid Ads. No Big Audience. No Tech Skills Needed.
+              No Paid Ads. No Big Audience. No <span className="text-green-300">Tech Skills</span> Needed.
             </p>
 
             <p className="text-sm text-yellow-400 mb-8">The price is increasing very soon.</p>
@@ -165,8 +165,8 @@ export default function DPAPage() {
           </div>
 
           <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-            <h3 className="text-3xl font-bold mb-4">Start selling your digital products today</h3>
-            <p className="text-xl text-gray-400 mb-8">Join Digital Product Academy and start earning with digital products today.</p>
+            <h3 className="text-3xl font-bold mb-4">Start selling your <span className="text-green-400">digital products</span> today</h3>
+            <p className="text-xl text-gray-400 mb-8">Join <span className="text-green-300">Digital Product Academy</span> and start earning with digital products today.</p>
             <Link href="#packages" className="cta-button inline-block btn-animate animate-glow hover-lift">
               I'm Ready To Enroll
             </Link>

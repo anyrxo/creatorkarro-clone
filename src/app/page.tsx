@@ -31,7 +31,7 @@ export default function HomePage() {
       content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months using Anyro's viral carousel techniques. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month through sponsored posts and my own digital products. The community support is incredible!"
     },
     {
-      name: "Sophia Chen",
+      name: "Jake Chen",
       role: "Digital Entrepreneur", 
       course: "Digital Products",
       avatar: "https://ext.same-assets.com/1161517358/3465280603.webp",
@@ -45,11 +45,11 @@ export default function HomePage() {
       content: "N8N AI Automations saved me 40+ hours per week! I automated my entire content workflow - from research to posting across 5 platforms. My productivity skyrocketed and I can now focus on strategy instead of repetitive tasks. The workflows Anyro provides are incredibly detailed and actually work!"
     },
     {
-      name: "Isabella Torres",
+      name: "Ashton Torres",
       role: "AI Content Creator",
       course: "AI Influencers",
       avatar: "https://ext.same-assets.com/1161517358/432373971.webp", 
-      content: "AI Influencers opened up a completely new revenue stream for me! I created 3 AI personas that generate content 24/7. Within 2 months, my AI influencers gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach to AI content is revolutionary!"
+      content: "AI Influencers opened up a completely new revenue stream for me! I created 3 AI models that generate content 24/7. Within 2 months, my AI models gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach to AI content is revolutionary!"
     },
     {
       name: "Ryan Blackwood",
@@ -196,7 +196,7 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-400 transition-colors duration-300">
                 <span className="text-pink-400">AI</span> Influencers
               </h3>
-              <p className="text-gray-400 mb-6">Create <span className="text-pink-300">virtual personas</span> that earn 24/7.</p>
+              <p className="text-gray-400 mb-6">Create <span className="text-pink-300">virtual models</span> that earn 24/7.</p>
               <Link href="/ai-influencers" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Start creating →
               </Link>
