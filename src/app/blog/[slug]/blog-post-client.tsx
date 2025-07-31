@@ -123,6 +123,22 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       </div>
 
       <div className="min-h-screen bg-dark">
+        {/* DEPLOYMENT TEST MARKER */}
+        <div style={{ 
+          position: 'fixed', 
+          top: '100px', 
+          left: '50%', 
+          transform: 'translateX(-50%)', 
+          backgroundColor: 'red', 
+          color: 'white', 
+          padding: '20px', 
+          fontSize: '24px', 
+          zIndex: 9999,
+          border: '5px solid yellow'
+        }}>
+          DEPLOYMENT VERSION 5 - If you see this, deployment is working!
+        </div>
+        
         {/* Hero Section with Floating Navigation */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background Image with Overlay */}
@@ -242,6 +258,13 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 <p className="text-xl text-gray-200 leading-relaxed">
                   Welcome to this comprehensive guide where we dive deep into actionable strategies and proven methods. Get ready to transform your approach and achieve remarkable results.
                 </p>
+              </div>
+              
+              {/* SIMPLE TEST */}
+              <div style={{ backgroundColor: 'yellow', color: 'black', padding: '50px', fontSize: '30px', marginBottom: '20px' }}>
+                <p>TEST: Can you see this text? It should be BLACK text on YELLOW background.</p>
+                <p>Post title: {post.title}</p>
+                <p>Content length: {post.content.length} characters</p>
               </div>
               
               {/* Blog Content with Forced Inline Styles */}
