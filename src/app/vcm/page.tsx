@@ -239,13 +239,13 @@ export default function VCMPage() {
               </div>
 
               <div className="space-y-4 text-left mb-8">
-                <p className="text-gray-300">✓ Full lifetime access to the Viral Carousels Mastery.</p>
-                <p className="text-gray-300">✓ 100 done-for-you images to speed up content creation.</p>
-                <p className="text-gray-300">✓ 10-lesson course to grow your Instagram fast and build a loyal audience.</p>
-                <p className="text-gray-300">✓ Swipe file of my best-performing carousels to never run out of ideas.</p>
-                <p className="text-gray-300">✓ ChatGPT prompt generating viral carousel ideas for your niche.</p>
-                <p className="text-gray-300">✓ Bonus: Access to our community + 1-on-1 support to keep you improving.</p>
-                <p className="text-gray-300">✓ Bonus: 5 high-converting fonts to level up your carousels.</p>
+                <p className="text-gray-300">✓ Full lifetime access to <span className="text-purple-400">N8N AI Automations</span> course.</p>
+                <p className="text-gray-300">✓ 100+ pre-built <span className="text-blue-300">automation workflows</span> for every business need.</p>
+                <p className="text-gray-300">✓ Complete N8N mastery from <span className="text-green-300">beginner to advanced</span> level.</p>
+                <p className="text-gray-300">✓ <span className="text-yellow-300">AI integration tutorials</span> for ChatGPT, Claude, and more.</p>
+                <p className="text-gray-300">✓ Business process automation for <span className="text-pink-300">lead generation</span> and customer management.</p>
+                <p className="text-gray-300">✓ Bonus: Private community access with <span className="text-blue-300">1-on-1 support</span> from Anyro.</p>
+                <p className="text-gray-300">✓ Bonus: Advanced scaling techniques for <span className="text-green-300">enterprise-level</span> automation.</p>
               </div>
 
               <Link href="#" className="cta-button inline-block w-full text-center mb-4 btn-animate animate-glow hover-lift">
@@ -264,8 +264,10 @@ export default function VCMPage() {
             ref={ctaAnimation.elementRef}
             className={`scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Fast-track your results with a proven system</h2>
-            <p className="text-xl text-gray-400 mb-8">Learn how to create viral carousels that grow your audience and convert—without the guesswork or overwhelm.</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Fast-track your <span className="text-purple-400">automation</span> with a proven system
+            </h2>
+            <p className="text-xl text-gray-400 mb-8">Master <span className="text-blue-300">N8N AI workflows</span> that automate your entire business—without the technical complexity or learning curve.</p>
             <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift">
               Yes, I want to join TODAY!
             </Link>
