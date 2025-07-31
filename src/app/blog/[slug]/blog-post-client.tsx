@@ -220,7 +220,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                   </div>
                 </Link>
                 
-                <Link href="/dpa" className="group bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl overflow-hidden hover-lift">
+                <Link href="/digital-products" className="group bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl overflow-hidden hover-lift">
                   <div className="aspect-video relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-blue-500/20" />
                     <div className="absolute inset-0 flex items-center justify-center">

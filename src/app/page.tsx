@@ -167,7 +167,7 @@ export default function HomePage() {
                 <span className="text-green-400">Digital</span> Products
               </h3>
               <p className="text-gray-400 mb-6">Scale to <span className="text-green-300">$10K/month</span> with proven strategies.</p>
-              <Link href="/dpa" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
+              <Link href="/digital-products" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Enroll now →
               </Link>
             </div>
@@ -182,7 +182,7 @@ export default function HomePage() {
                 <span className="text-purple-400">N8N AI</span> Automations
               </h3>
               <p className="text-gray-400 mb-6">Build <span className="text-purple-300">automated workflows</span> that scale.</p>
-              <Link href="/vcm" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
+              <Link href="/n8n-ai-automations" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Automate now →
               </Link>
             </div>

@@ -840,7 +840,7 @@ export const additionalBlogPosts = {
       
       <p><strong>Your digital product empire is one decision away.</strong></p>
       
-      <p><a href="/dpa" style="color: #60a5fa; text-decoration: none; font-weight: bold;">Join Anyro's Digital Products course today</a> and get the complete system Jake used to build his $25K/month business.</p>
+      <p><a href="/digital-products" style="color: #60a5fa; text-decoration: none; font-weight: bold;">Join Anyro's Digital Products course today</a> and get the complete system Jake used to build his $25K/month business.</p>
     `
   },
   'creator-path': {

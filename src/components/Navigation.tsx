@@ -31,8 +31,8 @@ export default function Navigation() {
       hasDropdown: true,
       dropdownItems: [
         { name: 'Instagram Ignited', href: '/instagram-ignited' },
-        { name: 'Digital Products', href: '/dpa' },
-        { name: 'N8N AI Automations', href: '/vcm' },
+        { name: 'Digital Products', href: '/digital-products' },
+        { name: 'N8N AI Automations', href: '/n8n-ai-automations' },
         { name: 'AI Influencers', href: '/ai-influencers' },
         { name: 'ComfyUI & Workflows', href: '/comfyui-workflows' }
       ]
