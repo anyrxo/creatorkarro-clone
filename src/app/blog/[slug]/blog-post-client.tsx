@@ -34,17 +34,20 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
     // Base stats that grow over time
     const baseViews = 500
     const baseLikes = 50
-    const baseShares = 10
     
     // Daily growth
     const dailyViewGrowth = Math.floor(Math.random() * 40) + 14 // 14-53 views per day
     const dailyLikeGrowth = Math.floor(Math.random() * 3) + 1 // 1-3 likes per day
-    const dailyShareGrowth = 1 // 1 share per day
+    
+    const totalLikes = baseLikes + (dailyLikeGrowth * daysDiff)
+    // Shares are 13-18% of likes
+    const shareRatio = 0.13 + (Math.random() * 0.05) // 13-18%
+    const totalShares = Math.floor(totalLikes * shareRatio)
     
     return {
       views: baseViews + (dailyViewGrowth * daysDiff),
-      likes: baseLikes + (dailyLikeGrowth * daysDiff),
-      shares: baseShares + (dailyShareGrowth * daysDiff)
+      likes: totalLikes,
+      shares: totalShares
     }
   }
   
@@ -221,7 +224,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               ref={contentAnimation.elementRef}
               className={`max-w-4xl mx-auto scroll-fade-up ${contentAnimation.isVisible ? 'visible' : ''}`}
             >
-              <div className="prose prose-lg prose-invert max-w-none">
+              <div className="prose prose-lg prose-invert max-w-none blog-content">
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
             </article>
@@ -391,7 +394,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       </div>
 
       <style jsx global>{`
-        /* Blog content styles */
+        /* Force blog content styles */
         .prose h2 {
           margin-top: 3rem !important;
           margin-bottom: 2rem !important;
@@ -431,6 +434,16 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           line-height: 1.75 !important;
         }
         
+        .prose ul > li {
+          list-style-type: disc !important;
+          list-style-position: outside !important;
+        }
+        
+        .prose ol > li {
+          list-style-type: decimal !important;
+          list-style-position: outside !important;
+        }
+        
         .prose strong {
           color: #ffffff !important;
           font-weight: 600 !important;
@@ -444,6 +457,41 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           border-radius: 0 0.5rem 0.5rem 0 !important;
           font-style: italic !important;
           color: #e5e7eb !important;
+        }
+        
+        /* Force all prose text to be visible */
+        .prose * {
+          color: inherit !important;
+        }
+        
+        .prose a {
+          color: #60a5fa !important;
+          text-decoration: underline !important;
+        }
+        
+        /* Specific blog content styling */
+        .blog-content p {
+          color: #ffffff !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+        
+        .blog-content li {
+          color: #f3f4f6 !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+        
+        .blog-content h2,
+        .blog-content h3,
+        .blog-content h4 {
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+        
+        .blog-content * {
+          opacity: 1 !important;
+          visibility: visible !important;
         }
         
         .hover-lift {
