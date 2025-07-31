@@ -242,38 +242,56 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 </p>
               </div>
               
-              <div className="blog-content" style={{ 
-                color: '#ffffff !important', 
-                position: 'relative', 
-                zIndex: 100,
-                backgroundColor: '#000000',
-                padding: '2rem',
-                borderRadius: '1rem',
-                border: '2px solid #333'
-              }}>
-                <style dangerouslySetInnerHTML={{ __html: `
-                  .blog-content * {
-                    color: #ffffff !important;
-                    opacity: 1 !important;
-                    visibility: visible !important;
-                  }
-                  .blog-content p,
-                  .blog-content h1,
-                  .blog-content h2,
-                  .blog-content h3,
-                  .blog-content h4,
-                  .blog-content h5,
-                  .blog-content h6,
-                  .blog-content li,
-                  .blog-content strong,
-                  .blog-content em,
-                  .blog-content span,
-                  .blog-content div {
-                    color: #ffffff !important;
-                    opacity: 1 !important;
-                  }
-                `}} />
-                <div dangerouslySetInnerHTML={{ __html: post.content }} />
+              {/* Debug Tests */}
+              <div style={{ backgroundColor: 'red', padding: '20px', marginBottom: '20px' }}>
+                <p style={{ color: 'white', fontSize: '20px' }}>TEST 1: This text should be visible</p>
+              </div>
+              
+              <div style={{ backgroundColor: 'blue', padding: '20px', marginBottom: '20px', color: 'white' }}>
+                <p>TEST 2: Raw content preview (first 200 chars):</p>
+                <p>{post.content.substring(0, 200)}...</p>
+              </div>
+              
+              {/* Blog Content - Try without dangerouslySetInnerHTML first */}
+              <div 
+                style={{ 
+                  backgroundColor: '#000000',
+                  color: '#ffffff',
+                  padding: '3rem',
+                  borderRadius: '1rem',
+                  border: '3px solid #ff0000',
+                  marginBottom: '2rem',
+                  fontSize: '20px',
+                  lineHeight: '1.8'
+                }}
+              >
+                <h2 style={{ color: '#ffffff', marginBottom: '1rem' }}>Content Test Without HTML:</h2>
+                <div style={{ color: '#ffffff' }}>
+                  {post.content.replace(/<[^>]*>/g, '').substring(0, 500)}...
+                </div>
+              </div>
+              
+              {/* Original Blog Content */}
+              <div 
+                style={{ 
+                  backgroundColor: '#1a1a1a',
+                  padding: '3rem',
+                  borderRadius: '1rem',
+                  border: '3px solid #00ff00',
+                  position: 'relative',
+                  zIndex: 999,
+                  isolation: 'isolate'
+                }}
+              >
+                <h2 style={{ color: '#ffffff', marginBottom: '1rem' }}>Blog Content with HTML:</h2>
+                <div 
+                  dangerouslySetInnerHTML={{ __html: post.content }} 
+                  style={{
+                    color: '#ffffff !important',
+                    fontSize: '18px',
+                    lineHeight: '1.8'
+                  }}
+                />
               </div>
               
               {/* Add a beautiful conclusion section */}
@@ -452,18 +470,52 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       </div>
 
       <style jsx global>{`
-        /* Beautiful blog content styles */
-        .blog-content {
+        /* Force all blog content to be visible */
+        .blog-article-content,
+        .blog-article-content * {
           color: #ffffff !important;
-          font-size: 1.125rem;
-          line-height: 1.75;
-          max-width: none;
-          position: relative !important;
-          z-index: 10 !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          -webkit-text-fill-color: #ffffff !important;
         }
         
-        .blog-content * {
+        .blog-article-content p {
           color: #ffffff !important;
+          margin-bottom: 1.5rem !important;
+        }
+        
+        .blog-article-content h1,
+        .blog-article-content h2,
+        .blog-article-content h3,
+        .blog-article-content h4,
+        .blog-article-content h5,
+        .blog-article-content h6 {
+          color: #ffffff !important;
+          -webkit-text-fill-color: #ffffff !important;
+          margin-top: 2rem !important;
+          margin-bottom: 1rem !important;
+        }
+        
+        .blog-article-content ul,
+        .blog-article-content ol {
+          color: #ffffff !important;
+        }
+        
+        .blog-article-content li {
+          color: #ffffff !important;
+        }
+        
+        .blog-article-content strong,
+        .blog-article-content em,
+        .blog-article-content span,
+        .blog-article-content div {
+          color: #ffffff !important;
+          -webkit-text-fill-color: #ffffff !important;
+        }
+        
+        /* Remove any conflicting styles */
+        .blog-content {
+          all: unset;
         }
         
         .blog-content p {
