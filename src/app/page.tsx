@@ -83,7 +83,7 @@ export default function HomePage() {
               Start your creator journey:
             </p>
             <Link
-              href="/creator-world"
+              href="/instagram-ignited"
               className="cta-button inline-block btn-animate animate-glow hover-lift"
             >
               Start Here
@@ -152,7 +152,7 @@ export default function HomePage() {
                 <span className="text-blue-400">Instagram</span> Ignited
               </h3>
               <p className="text-gray-400 mb-6">Turn <span className="text-blue-300">viral content</span> into a full-time career.</p>
-              <Link href="/creator-world" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
+              <Link href="/instagram-ignited" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Join here →
               </Link>
             </div>
@@ -297,7 +297,7 @@ export default function HomePage() {
               Join thousands of creators building <span className="text-blue-400">profitable</span> businesses with <span className="text-purple-400">Anyro's</span> proven strategies
             </p>
             <Link
-              href="/creator-world"
+              href="/instagram-ignited"
               className="cta-button inline-block text-lg btn-animate animate-glow hover-lift"
             >
               Join Instagram Ignited

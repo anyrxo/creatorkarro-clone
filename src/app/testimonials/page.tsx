@@ -247,7 +247,7 @@ export default function TestimonialsPage() {
               Your success story could be featured here next.
             </p>
             <Link
-              href="/creator-world"
+              href="/instagram-ignited"
               className="cta-button inline-block text-lg hover-lift"
             >
               Start Your Transformation Today

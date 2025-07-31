@@ -30,7 +30,7 @@ export default function Navigation() {
       href: '#',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'Instagram Ignited', href: '/creator-world' },
+        { name: 'Instagram Ignited', href: '/instagram-ignited' },
         { name: 'Digital Products', href: '/dpa' },
         { name: 'N8N AI Automations', href: '/vcm' },
         { name: 'AI Influencers', href: '/ai-influencers' },

@@ -47,7 +47,7 @@ export default function StoryPage() {
             className={`space-y-6 md:space-y-8 text-base md:text-lg text-gray-300 leading-relaxed scroll-fade-up ${storyAnimation.isVisible ? 'visible' : ''}`}
           >
             <p>
-              Hey, I'm Anyro (formerly known as Karro). I'm a content creator, entrepreneur, and educator who's built a multi-six-figure business through organic content creation and digital products.
+              Hey, I'm Anyro. I'm a content creator, entrepreneur, and educator who's built a multi-six-figure business through organic content creation and digital products.
             </p>
 
             <p>
@@ -122,7 +122,7 @@ export default function StoryPage() {
               Join thousands of creators who have transformed their lives with IImagined.
             </p>
             <Link
-              href="/creator-world"
+              href="/instagram-ignited"
               className="cta-button inline-block hover-lift"
             >
               Start Your Transformation

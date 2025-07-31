@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
 
-export default function CreatorWorldPage() {
+export default function InstagramIgnitedPage() {
   // Scroll animations for different sections
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const resultsAnimation = useScrollAnimation({ threshold: 0.1 })
@@ -65,13 +65,13 @@ export default function CreatorWorldPage() {
             </div>
 
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              Your Complete System to
-              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"> Grow an Audience</span> and Turn It Into
-              <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent"> Income</span>
+              Your Complete <span className="text-blue-400">System</span> to
+              <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"> Grow an Audience</span> and Turn It Into
+              <span className="bg-gradient-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent"> Income</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-8">
-              Now includes Digital Product Academy and Viral Carousels Mastery in one bundle.
+              Now includes <span className="text-blue-300">Digital Product Academy</span> and <span className="text-blue-300">Viral Carousels Mastery</span> in one bundle.
             </p>
 
             {/* YouTube Channel Link instead of embedded video */}
@@ -394,15 +394,15 @@ export default function CreatorWorldPage() {
             {[
               {
                 name: "Houston",
-                story: "Houston joined Creator World with a few thousand followers. After applying viral strategies, he hit 20K+ followers in a month, launched digital products, and grew his brand to 80K+."
+                story: "Houston joined Instagram Ignited with a few thousand followers. After applying the viral strategies from IImagined, he hit 20K+ followers in a month, launched digital products, and grew his brand to 80K+."
               },
               {
                 name: "Tim",
-                story: "Tim joined the program feeling lost in content creation. After following the clear structure, his growth skyrocketed, and he built a strong foundation, reaching 100K+ followers."
+                story: "Tim joined the Instagram Ignited program feeling lost in content creation. After following Anyro's clear structure, his growth skyrocketed, and he built a strong foundation, reaching 100K+ followers."
               },
               {
                 name: "Jake",
-                story: "Jake joined IImagined in summer 2024 with under 100 followers. After completing the program and getting a personalized audit, his growth soared from 15K to 64K followers, earning a full-time income from his brand."
+                story: "Jake joined IImagined in summer 2024 with under 100 followers. After completing the Instagram Ignited program and getting a personalized audit, his growth soared from 15K to 64K followers, earning a full-time income from his brand."
               }
             ].map((story, index) => (
               <div
@@ -442,7 +442,7 @@ export default function CreatorWorldPage() {
                 content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months using Anyro's viral carousel techniques. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month through sponsored posts and my own digital products. The community support is incredible!"
               },
               {
-                name: "Elena Rodriguez",
+                name: "Allan Rodriguez",
                 role: "Lifestyle Blogger",
                 avatar: "https://ext.same-assets.com/1161517358/432373971.webp",
                 content: "The Instagram OS module alone was worth the entire course! I finally understood the algorithm and my first viral carousel got 2.3M views. Within 3 months, I grew from 5K to 85K followers and landed my first $25K brand partnership. Anyro's strategies actually work!"
@@ -454,13 +454,13 @@ export default function CreatorWorldPage() {
                 content: "I was skeptical about another Instagram course, but Instagram Ignited delivered results immediately. My engagement went from 300 likes to 8K+ per post. The monetization strategies helped me scale my coaching business to $22K/month. The ROI was instant!"
               },
               {
-                name: "Sophia Martinez",
+                name: "Jake Martinez",
                 role: "Business Coach",
                 avatar: "https://ext.same-assets.com/1161517358/3465280603.webp",
                 content: "As someone who struggled with Instagram for years, this course was a game-changer. The Niche OS helped me find my perfect audience, and within 6 months I had 180K engaged followers. My course sales increased 400% thanks to the Instagram traffic. Absolutely life-changing!"
               },
               {
-                name: "Jake Thompson",
+                name: "Brendan Thompson",
                 role: "Digital Entrepreneur",
                 avatar: "https://ext.same-assets.com/1161517358/366375215.webp",
                 content: "Instagram Ignited took me from 1,200 followers to 240K in 10 months! The content templates and posting strategies are pure gold. I'm now generating $35K/month through affiliate marketing and my own products. This program is the real deal - no fluff, just results!"
@@ -478,7 +478,7 @@ export default function CreatorWorldPage() {
                 content: "I was stuck at 12K followers for months until I found Instagram Ignited. The mindset shifts and content frameworks helped me break through to 165K followers. My tech review videos now get 500K+ views regularly, and I've monetized through courses making $18K/month!"
               },
               {
-                name: "Isabella Torres",
+                name: "Ashton Torres",
                 role: "Travel Blogger",
                 avatar: "https://ext.same-assets.com/1161517358/640627202.jpeg",
                 content: "Instagram Ignited taught me how to turn my travel passion into profit! From 2K to 130K followers in 9 months, with engagement rates of 15%+. The newsletter strategies helped me build a 25K email list. I'm now earning $28K/month through travel partnerships and my own courses!"

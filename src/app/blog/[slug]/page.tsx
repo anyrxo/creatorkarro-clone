@@ -181,7 +181,7 @@ const blogPosts = {
       
       <p><strong>Ready to write your own success story?</strong></p>
       
-      <p><a href="/creator-world" style="color: #60a5fa; text-decoration: none; font-weight: bold;">Join Instagram Ignited today</a> and start building the Instagram business you've always dreamed of.</p>
+      <p><a href="/instagram-ignited" style="color: #60a5fa; text-decoration: none; font-weight: bold;">Join Instagram Ignited today</a> and start building the Instagram business you've always dreamed of.</p>
     `
   },
   'digital-products-success-story': {
