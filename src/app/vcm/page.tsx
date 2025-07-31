@@ -257,6 +257,95 @@ export default function VCMPage() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className={`text-center mb-16 scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}>
+            <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">SUCCESS STORIES</p>
+            <h2 className="text-4xl md:text-5xl font-bold">
+              Real <span className="text-purple-400">N8N Automation</span> Results
+            </h2>
+            <p className="text-xl text-gray-400 mt-4">Students saving hours with AI workflows</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+            <div className={`testimonial-card card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
+              <div className="flex items-center mb-4">
+                <Image
+                  src="https://ext.same-assets.com/1161517358/366375215.webp"
+                  alt="Devon Mitchell"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
+                />
+                <div>
+                  <h4 className="font-semibold group-hover:text-purple-400 transition-colors duration-300">Devon Mitchell</h4>
+                  <p className="text-sm text-gray-400">Automation Specialist</p>
+                </div>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm md:text-base">
+                "N8N AI Automations saved me 40+ hours per week! I automated my entire content workflow - from research to posting across 5 platforms. My productivity skyrocketed and I can now focus on strategy instead of repetitive tasks. The workflows Anyro provides are incredibly detailed!"
+              </p>
+              <div className="bg-purple-600/10 border border-purple-600/30 rounded-lg p-3 group-hover:bg-purple-600/20 group-hover:border-purple-500/50 transition-all duration-300">
+                <p className="text-sm font-semibold text-purple-300 group-hover:text-purple-200 transition-colors duration-300">40+ hours saved weekly, 5x productivity increase</p>
+              </div>
+            </div>
+
+            <div className={`testimonial-card card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+              <div className="flex items-center mb-4">
+                <Image
+                  src="https://ext.same-assets.com/1161517358/640627202.jpeg"
+                  alt="Cameron Lee"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
+                />
+                <div>
+                  <h4 className="font-semibold group-hover:text-purple-400 transition-colors duration-300">Cameron Lee</h4>
+                  <p className="text-sm text-gray-400">Tech Entrepreneur</p>
+                </div>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm md:text-base">
+                "N8N AI Automations completely transformed my business operations! I automated lead generation, customer onboarding, and content distribution. My team productivity increased 300% and we're scaling without adding headcount. The ROI is incredible!"
+              </p>
+              <div className="bg-purple-600/10 border border-purple-600/30 rounded-lg p-3 group-hover:bg-purple-600/20 group-hover:border-purple-500/50 transition-all duration-300">
+                <p className="text-sm font-semibold text-purple-300 group-hover:text-purple-200 transition-colors duration-300">300% team productivity, automated business operations</p>
+              </div>
+            </div>
+
+            <div className={`testimonial-card card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+              <div className="flex items-center mb-4">
+                <Image
+                  src="https://ext.same-assets.com/1161517358/2128294924.webp"
+                  alt="Sarah Johnson"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
+                />
+                <div>
+                  <h4 className="font-semibold group-hover:text-purple-400 transition-colors duration-300">Sarah Johnson</h4>
+                  <p className="text-sm text-gray-400">Digital Marketing Agency Owner</p>
+                </div>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm md:text-base">
+                "The N8N course revolutionized how we handle client campaigns! We automated social media scheduling, lead nurturing, and reporting workflows. Our agency can now handle 3x more clients with the same team size. Client satisfaction is through the roof!"
+              </p>
+              <div className="bg-purple-600/10 border border-purple-600/30 rounded-lg p-3 group-hover:bg-purple-600/20 group-hover:border-purple-500/50 transition-all duration-300">
+                <p className="text-sm font-semibold text-purple-300 group-hover:text-purple-200 transition-colors duration-300">3x more clients, same team size</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={`text-center scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}>
+            <h3 className="text-3xl font-bold mb-4">Automate your business like these pros</h3>
+            <p className="text-xl text-gray-400 mb-8">Join entrepreneurs using N8N to scale without burning out</p>
+            <Link href="#packages" className="cta-button inline-block btn-animate animate-glow hover-lift">
+              Start Automating Today
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="section-spacing bg-zinc-900/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">

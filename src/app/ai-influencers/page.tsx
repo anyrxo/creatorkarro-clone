@@ -242,6 +242,95 @@ export default function AIInfluencersPage() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className={`text-center mb-16 scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}>
+            <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">SUCCESS STORIES</p>
+            <h2 className="text-4xl md:text-5xl font-bold">
+              Real <span className="text-pink-400">AI Influencer</span> Results
+            </h2>
+            <p className="text-xl text-gray-400 mt-4">Students building successful virtual personas</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+            <div className={`testimonial-card card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
+              <div className="flex items-center mb-4">
+                <Image
+                  src="https://ext.same-assets.com/1161517358/432373971.webp"
+                  alt="Isabella Torres"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
+                />
+                <div>
+                  <h4 className="font-semibold group-hover:text-pink-400 transition-colors duration-300">Isabella Torres</h4>
+                  <p className="text-sm text-gray-400">AI Content Creator</p>
+                </div>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm md:text-base">
+                "AI Influencers opened up a completely new revenue stream for me! I created 3 AI personas that generate content 24/7. Within 2 months, my AI influencers gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach is revolutionary!"
+              </p>
+              <div className="bg-pink-600/10 border border-pink-600/30 rounded-lg p-3 group-hover:bg-pink-600/20 group-hover:border-pink-500/50 transition-all duration-300">
+                <p className="text-sm font-semibold text-pink-300 group-hover:text-pink-200 transition-colors duration-300">200K combined followers, $8K/month AI revenue</p>
+              </div>
+            </div>
+
+            <div className={`testimonial-card card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+              <div className="flex items-center mb-4">
+                <Image
+                  src="https://ext.same-assets.com/1161517358/2908592891.webp"
+                  alt="Jake Harrison"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
+                />
+                <div>
+                  <h4 className="font-semibold group-hover:text-pink-400 transition-colors duration-300">Jake Harrison</h4>
+                  <p className="text-sm text-gray-400">Virtual Model Creator</p>
+                </div>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm md:text-base">
+                "I was skeptical about AI influencers until I tried Anyro's system. Now I manage 5 different AI personalities across Instagram and TikTok. They work around the clock while I sleep! Last month alone, my AI models generated $12K through brand deals and custom content requests."
+              </p>
+              <div className="bg-pink-600/10 border border-pink-600/30 rounded-lg p-3 group-hover:bg-pink-600/20 group-hover:border-pink-500/50 transition-all duration-300">
+                <p className="text-sm font-semibold text-pink-300 group-hover:text-pink-200 transition-colors duration-300">5 AI personalities, $12K/month revenue</p>
+              </div>
+            </div>
+
+            <div className={`testimonial-card card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+              <div className="flex items-center mb-4">
+                <Image
+                  src="https://ext.same-assets.com/1161517358/1695287196.jpeg"
+                  alt="Maya Chen"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
+                />
+                <div>
+                  <h4 className="font-semibold group-hover:text-pink-400 transition-colors duration-300">Maya Chen</h4>
+                  <p className="text-sm text-gray-400">Digital Entrepreneur</p>
+                </div>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm md:text-base">
+                "The AI Influencers course changed everything for me. I went from struggling to grow my personal brand to managing multiple AI personas that each have their own fanbase. My virtual models are now booking paid collaborations and I'm scaling to 6 figures!"
+              </p>
+              <div className="bg-pink-600/10 border border-pink-600/30 rounded-lg p-3 group-hover:bg-pink-600/20 group-hover:border-pink-500/50 transition-all duration-300">
+                <p className="text-sm font-semibold text-pink-300 group-hover:text-pink-200 transition-colors duration-300">Multiple AI personas, scaling to 6 figures</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={`text-center scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}>
+            <h3 className="text-3xl font-bold mb-4">Become our next AI influencer success story</h3>
+            <p className="text-xl text-gray-400 mb-8">Join creators building profitable virtual personas with zero face-to-camera content</p>
+            <Link href="#packages" className="cta-button inline-block btn-animate animate-glow hover-lift">
+              Start Your AI Empire
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="section-spacing bg-zinc-900/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">

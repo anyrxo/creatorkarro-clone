@@ -228,7 +228,7 @@ export default function HomePage() {
               </h3>
               <p className="text-gray-400 mb-6">Access <span className="text-yellow-300">premium tools</span> and templates.</p>
               <Link
-                href="https://anyrxo.gumroad.com/"
+                href="https://anyrxo.gumroad.com"
                 target="_blank"
                 className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2"
               >

@@ -17,66 +17,75 @@ export default function TestimonialsPage() {
 
   const testimonials = [
     {
-      name: "Houston Kold",
-      role: "Online Entrepreneur",
+      name: "Marcus Rivera",
+      role: "Content Creator",
+      course: "Instagram Ignited",
       avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
-      content: "This program is a game-changer! I went from a few thousand followers to 20K in my first month using viral content strategies. Now, I'm making $7K+ per month and have grown my brand to 80K followers. The transformation has been amazing!",
-      results: "20K+ followers in first month, $7K+/month revenue"
+      content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months using Anyro's viral carousel techniques. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month through sponsored posts and digital products.",
+      results: "800 to 125K followers, $15K/month revenue"
     },
     {
-      name: "Arnas Gintalas",
-      role: "Online Entrepreneur",
+      name: "Sophia Chen",
+      role: "Digital Entrepreneur",
+      course: "Digital Products",
       avatar: "https://ext.same-assets.com/1161517358/3465280603.webp",
-      content: "As the founder of a 1,000,000-follower page, I can say that few people understand the Instagram game, as well as Anyro does. Instagram is now my full-time career. I have detached my time from money and am now living my best life.",
-      results: "1M+ followers, Full-time Instagram career"
+      content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Anyro's pricing psychology and launch strategies are game-changing. I've now built a sustainable $25K/month business selling educational content.",
+      results: "$10K in 3 weeks, $25K/month business"
     },
     {
-      name: "Tochi",
-      role: "Content Creator",
+      name: "Devon Mitchell",
+      role: "Automation Specialist",
+      course: "N8N AI Automations",
       avatar: "https://ext.same-assets.com/1161517358/366375215.webp",
-      content: "When I first joined the program, I had just 400 Instagram followers and was struggling to see any results. After taking the course, I grew my following to 240K in under 12 months, and I've since launched my own community and newsletter. And I'm just getting started!",
-      results: "From 400 to 240K followers in 12 months"
+      content: "N8N AI Automations saved me 40+ hours per week! I automated my entire content workflow - from research to posting across 5 platforms. My productivity skyrocketed and I can now focus on strategy instead of repetitive tasks. The workflows Anyro provides are incredibly detailed!",
+      results: "40+ hours saved weekly, 5x productivity increase"
     },
     {
-      name: "Alvie O'Brien",
-      role: "Agency Owner",
+      name: "Isabella Torres",
+      role: "AI Content Creator",
+      course: "AI Influencers",
       avatar: "https://ext.same-assets.com/1161517358/432373971.webp",
-      content: "The IImagined program is incredible. I went from 200-400 views per video to 2,000-3,000, with my first video hitting 250K views using Anyro's strategies. The community and Anyro's personal advice have been invaluable. Highly recommend!",
-      results: "250K views on first viral video"
+      content: "AI Influencers opened up a completely new revenue stream for me! I created 3 AI personas that generate content 24/7. Within 2 months, my AI influencers gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach is revolutionary!",
+      results: "200K combined followers, $8K/month AI revenue"
     },
     {
-      name: "Pascal",
-      role: "Online Entrepreneur",
+      name: "Ryan Blackwood",
+      role: "Visual Artist",
+      course: "ComfyUI & Workflows",
       avatar: "https://ext.same-assets.com/1161517358/2908592891.webp",
-      content: "This program is incredible! After completing this course, my video reached 2 million views, and I gained 8,000 followers overnight. I highly recommend it to all creators!",
-      results: "2M views, 8K followers overnight"
+      content: "ComfyUI & Workflows turned me into an AI art powerhouse! I can now create stunning visuals in minutes instead of hours. My client work rate increased 500% and I'm charging premium prices for AI-enhanced designs. The workflow templates are incredibly professional!",
+      results: "500% productivity increase, premium pricing"
     },
     {
-      name: "Tim",
-      role: "Content Creator",
+      name: "Elena Rodriguez",
+      role: "Lifestyle Blogger",
+      course: "Instagram Ignited",
       avatar: "https://ext.same-assets.com/1161517358/430339476.webp",
-      content: "I remember when I first joined, feeling lost and unsure in my content creation journey. But the program's structure helped me quickly grasp the essentials, leading to rapid audience growth and reaching 100K followers on Instagram.",
-      results: "100K+ followers on Instagram"
+      content: "The Instagram OS module alone was worth the entire course! I finally understood the algorithm and my first viral carousel got 2.3M views. Within 3 months, I grew from 5K to 85K followers and landed my first $25K brand partnership.",
+      results: "2.3M views, 5K to 85K followers, $25K partnership"
     },
     {
-      name: "Josh Bond",
-      role: "Content Creator",
+      name: "Cameron Lee",
+      role: "Tech Entrepreneur",
+      course: "N8N AI Automations",
       avatar: "https://ext.same-assets.com/1161517358/640627202.jpeg",
-      content: "Anyro is an absolute professional. After joining The Creator World program I was able to get my first million views on one of my videos in just few short weeks. This is hands down the best playbook for online content creators.",
-      results: "First million views in weeks"
+      content: "N8N AI Automations completely transformed my business operations! I automated lead generation, customer onboarding, and content distribution. My team productivity increased 300% and we're scaling without adding headcount. Incredible ROI!",
+      results: "300% team productivity, automated business operations"
     },
     {
-      name: "Ching Wei",
-      role: "Online Fitness Coach",
+      name: "Alex Morgan",
+      role: "Digital Product Creator",
+      course: "Digital Products",
       avatar: "https://ext.same-assets.com/1161517358/2128294924.webp",
-      content: "Definitely worth the investment! After my page audit, I went from 0 to 20K followers, then 40K and beyond, all thanks to the value and support in this program.",
-      results: "From 0 to 40K+ followers"
+      content: "The Digital Products framework is genius! I used Anyro's validation methods to test my course idea, then his launch strategies to generate $22K in the first week. The pricing psychology section alone 3x my conversion rates!",
+      results: "$22K first week launch, 3x conversion rates"
     },
     {
-      name: "Remus Alin",
-      role: "Barber",
+      name: "Zara Williams",
+      role: "AI Artist",
+      course: "ComfyUI & Workflows",
       avatar: "https://ext.same-assets.com/1161517358/1695287196.jpeg",
-      content: "Best social media course so far! Amazing strategies and straightforward advice. Consistency and following his steps are the secrets. Highly recommend!",
+      content: "ComfyUI & Workflows opened up endless creative possibilities! I went from basic Midjourney prompts to creating complex, professional AI art workflows. My art business revenue jumped 400% and I'm booked solid with client work!",
       results: "Transformed barber business"
     },
     {

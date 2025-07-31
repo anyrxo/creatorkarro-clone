@@ -16,22 +16,22 @@ export default function DPAPage() {
   const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
   const testimonials = [
     {
-      name: "Houston Kold",
-      role: "Online Entrepreneur",
+      name: "Sophia Chen",
+      role: "Digital Entrepreneur",
       avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
-      content: "This program is a game-changer! I went from a few thousand followers to 20K in my first month using viral content strategies. Now, I'm making $7K+ per month and have grown my brand to 80K followers. The transformation has been amazing!"
+      content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Anyro's pricing psychology and launch strategies are game-changing. I've now built a sustainable $25K/month business selling educational content!"
     },
     {
-      name: "Jack Connors",
-      role: "Content Creator",
+      name: "Michael Torres",
+      role: "Course Creator",
       avatar: "https://ext.same-assets.com/1161517358/527605891.webp",
-      content: "After joining the program and applying the teachings, I saw rapid results. I went from a few hundred followers to 50K, and now I've reached 100K+ followers and launched my own paid community."
+      content: "I was struggling to monetize my expertise until I found Digital Products by Anyro. The framework helped me create and launch 3 profitable courses. I went from $0 to $18K/month in 5 months. The product validation methods saved me months of work!"
     },
     {
-      name: "Tochi",
-      role: "Content Creator",
+      name: "Emma Rodriguez",
+      role: "Online Coach",
       avatar: "https://ext.same-assets.com/1161517358/366375215.webp",
-      content: "When I first joined the program, I had just 400 Instagram followers and was struggling to see any results. After taking the course, I grew my following to 240K in under 12 months, and I've since launched my own community and newsletter. And I'm just getting started!"
+      content: "Digital Products transformed how I think about online business! I created my coaching program using Anyro's frameworks and launched to $12K in the first month. The pricing strategies and sales psychology insights are incredible!"
     }
   ]
 
