@@ -8,136 +8,53 @@ export default function BlogPage() {
   // Scroll animations
   const headerAnimation = useScrollAnimation({ threshold: 0.2 })
   const newsletterAnimation = useScrollAnimation({ threshold: 0.2 })
+  // Only show blog posts that actually exist
   const blogPosts = [
+    {
+      title: "From 0 to 500K followers in 10 months. Here's everything I learned about Instagram growth",
+      slug: "digital-products-success-story",
+      image: "https://ext.same-assets.com/1161517358/3768082061.png",
+      excerpt: "Complete Instagram growth blueprint with actionable strategies, monetization tips, and real case studies.",
+      date: "January 8, 2024",
+      readTime: "12 min read"
+    },
     {
       title: "How Marcus Rivera Grew from 800 to 125K Instagram Followers in 8 Months with Instagram Ignited",
       slug: "instagram-ignited-success-stories",
-      image: "https://ext.same-assets.com/1161517358/3768082061.png"
+      image: "https://ext.same-assets.com/1161517358/3768082061.png",
+      excerpt: "Marcus's complete transformation story using Instagram Ignited strategies to build a $15K/month business.",
+      date: "January 8, 2024", 
+      readTime: "12 min read"
+    }
+  ]
+  
+  // Coming soon posts for visual appeal
+  const comingSoonPosts = [
+    {
+      title: "The AI Influencer Revolution: Building Virtual Personas That Earn $8K/Month",
+      image: "https://ext.same-assets.com/1161517358/3158317405.jpeg",
+      isComingSoon: true
     },
     {
-      title: "From $0 to $25K/Month: How Sophia Chen Launched Her Digital Product Empire",
-      slug: "digital-products-success-story",
-      image: "https://ext.same-assets.com/1161517358/3352557511.jpeg"
+      title: "ComfyUI Mastery: From Beginner to $10K/Month AI Art Business",
+      image: "https://ext.same-assets.com/1161517358/3907883451.jpeg",
+      isComingSoon: true
     },
     {
-      title: "How Devon Mitchell Automated His Entire Business with N8N AI Workflows",
-      slug: "n8n-automation-case-study",
-      image: "https://ext.same-assets.com/1161517358/2233149341.jpeg"
+      title: "N8N Automation Secrets: How to Build a $50K/Month Business",
+      image: "https://ext.same-assets.com/1161517358/2233149341.jpeg",
+      isComingSoon: true
     },
     {
-      title: "The AI Influencer Revolution: How Isabella Torres Built Virtual Personas Earning $8K/Month",
-      slug: "ai-influencers-breakthrough",
-      image: "https://ext.same-assets.com/1161517358/3158317405.jpeg"
-    },
-    {
-      title: "ComfyUI Mastery: Ryan Blackwood's Journey to $10K/Month AI Art Business",
-      slug: "comfyui-success-story",
-      image: "https://ext.same-assets.com/1161517358/3907883451.jpeg"
-    },
-    {
-      title: "Instagram Algorithm Secrets: What Anyro's 500K+ Followers Taught Him",
-      slug: "instagram-algorithm-secrets",
-      image: "https://ext.same-assets.com/1161517358/3486675981.webp"
-    },
-    {
-      title: "Why Most Digital Products Fail (And How to Build One That Sells $1K+/Day)",
-      slug: "digital-products-that-sell",
-      image: "https://ext.same-assets.com/1161517358/191600949.png"
-    },
-    {
-      title: "The Complete Guide to Viral Instagram Carousels That Convert",
-      slug: "viral-carousel-guide",
-      image: "https://ext.same-assets.com/1161517358/2372176800.jpeg"
-    },
-    {
-      title: "How I Built a $50K/Month Business Using Only AI Tools and Automation",
-      slug: "ai-automation-business",
-      image: "https://ext.same-assets.com/1161517358/371774701.png"
-    },
-    {
-      title: "From Zero to AI Influencer: Creating Virtual Personas That Actually Make Money",
-      slug: "ai-influencer-creation-guide",
-      image: "https://ext.same-assets.com/1161517358/4208462077.jpeg"
-    },
-    {
-      title: "The Psychology Behind $10K+ Digital Product Sales Pages",
-      slug: "digital-product-psychology",
-      image: "https://ext.same-assets.com/1161517358/422346753.png"
-    },
-    {
-      title: "7 N8N Workflows Every Content Creator Needs to Automate Their Business",
-      slug: "essential-n8n-workflows",
-      image: "https://ext.same-assets.com/1161517358/1954019985.png"
-    },
-    {
-      title: "ComfyUI vs. Other AI Art Tools: Why Professionals Choose ComfyUI",
-      slug: "comfyui-comparison",
-      image: "https://ext.same-assets.com/1161517358/3253216564.png"
-    },
-    {
-      title: "Instagram Growth Hacks That Actually Work in 2024",
-      slug: "instagram-growth-hacks-2024",
-      image: "https://ext.same-assets.com/1161517358/3692619406.png"
-    },
-    {
-      title: "How to Price Your Digital Products for Maximum Profit (With Real Examples)",
-      slug: "digital-product-pricing-strategy",
-      image: "https://ext.same-assets.com/1161517358/4097775543.png"
-    },
-    {
-      title: "The Future of AI Influencers: Trends Every Creator Should Know",
-      slug: "ai-influencer-trends",
-      image: "https://ext.same-assets.com/1161517358/518336580.png"
-    },
-    {
-      title: "Building Your Personal Brand: Lessons from 500K+ Instagram Followers",
-      slug: "personal-brand-building",
-      image: "https://ext.same-assets.com/1161517358/1556582572.png"
-    },
-    {
-      title: "Why Most Automation Tools Fail (And Why N8N is Different)",
-      slug: "n8n-vs-other-automation-tools",
-      image: "https://ext.same-assets.com/1161517358/1982036823.png"
-    },
-    {
-      title: "My Biggest Instagram Mistakes (And How They Led to $100K+ Revenue)",
-      slug: "instagram-mistakes-to-success",
-      image: "https://ext.same-assets.com/1161517358/2786752937.png"
-    },
-    {
-      title: "The Complete ComfyUI Workflow Library: 50+ Professional Templates",
-      slug: "comfyui-workflow-library",
-      image: "https://ext.same-assets.com/1161517358/3425573237.png"
-    },
-    {
-      title: "How I Make $5K+ Per Month with AI-Generated Content",
-      slug: "ai-content-monetization",
-      image: "https://ext.same-assets.com/1161517358/575595742.png"
-    },
-    {
-      title: "Digital Product Launch Strategy: From Idea to $10K in 30 Days",
-      slug: "digital-product-launch-strategy",
-      image: "https://ext.same-assets.com/1161517358/4169895119.png"
-    },
-    {
-      title: "The Ultimate Guide to Instagram Monetization: 7 Proven Strategies",
-      slug: "instagram-monetization-guide",
-      image: "https://ext.same-assets.com/1161517358/4095419434.png"
-    },
-    {
-      title: "High-Income Skills for the AI Era: What to Learn in 2024",
-      slug: "high-income-skills-ai-era",
-      image: "https://ext.same-assets.com/1161517358/616695064.png"
-    },
-    {
-      title: "Why 2024 is the Best Time to Start Creating AI Content",
-      slug: "ai-content-opportunity-2024",
-      image: "https://ext.same-assets.com/1161517358/990247447.png"
+      title: "Digital Product Psychology: Why Some Products Sell $1K+/Day",
+      image: "https://ext.same-assets.com/1161517358/422346753.png",
+      isComingSoon: true
     }
   ]
 
-  // Scroll animations for blog posts
-  const { setElementRef, visibleElements } = useScrollAnimations(blogPosts.length)
+  // Scroll animations for all posts
+  const allPosts = [...blogPosts, ...comingSoonPosts]
+  const { setElementRef, visibleElements } = useScrollAnimations(allPosts.length)
 
   return (
     <div className="min-h-screen bg-dark">
@@ -150,42 +67,93 @@ export default function BlogPage() {
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-8">
               <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                BLOG
+                SUCCESS STORIES
               </span>
             </h1>
             <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-              Success stories, strategies, and insights from <span className="text-blue-400">Anyro</span> and <span className="text-purple-400">IImagined</span> students
+              Real transformations, proven strategies, and actionable insights from <span className="text-blue-400">Anyro</span> and <span className="text-purple-400">IImagined</span> students
             </p>
           </div>
 
-          {/* Blog Posts Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {blogPosts.map((post, index) => (
-              <div
-                key={index}
-                ref={setElementRef(index)}
-                className={`scroll-fade-up ${visibleElements[index] ? 'visible' : ''}`}
-              >
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="group bg-zinc-900 rounded-lg overflow-hidden hover:bg-zinc-800 transition-colors duration-200 card-hover hover-lift block"
+          {/* Featured Posts (Working) */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-white mb-8 text-center">
+              📚 <span className="text-green-400">Available Now</span>
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {blogPosts.map((post, index) => (
+                <div
+                  key={index}
+                  ref={setElementRef(index)}
+                  className={`scroll-fade-up ${visibleElements[index] ? 'visible' : ''}`}
                 >
-                <div className="aspect-video relative">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-200"
-                  />
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="group bg-gradient-to-r from-green-500/10 to-blue-500/10 border-2 border-green-500/30 rounded-xl overflow-hidden hover:border-green-400 transition-all duration-300 card-hover hover-lift block"
+                  >
+                    <div className="aspect-video relative">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-200"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center text-xs text-gray-400 mb-3">
+                        <span>{post.date}</span>
+                        <span className="mx-2">•</span>
+                        <span>{post.readTime}</span>
+                        <span className="ml-auto bg-green-500 text-white px-2 py-1 rounded-full text-xs">LIVE</span>
+                      </div>
+                      <h3 className="text-xl font-semibold mb-3 group-hover:text-green-400 transition-colors duration-200">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-400 text-sm">
+                        {post.excerpt}
+                      </p>
+                    </div>
+                  </Link>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold group-hover:text-blue-400 transition-colors duration-200">
-                    {post.title}
-                  </h3>
+              ))}
+            </div>
+          </div>
+
+          {/* Coming Soon Posts */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-white mb-8 text-center">
+              🚀 <span className="text-yellow-400">Coming Soon</span>
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {comingSoonPosts.map((post, index) => (
+                <div
+                  key={index + blogPosts.length}
+                  ref={setElementRef(index + blogPosts.length)}
+                  className={`scroll-fade-up ${visibleElements[index + blogPosts.length] ? 'visible' : ''}`}
+                >
+                  <div className="group bg-zinc-900/50 border border-zinc-700 rounded-xl overflow-hidden opacity-75 hover:opacity-90 transition-all duration-200">
+                    <div className="aspect-video relative">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                        <span className="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold">
+                          Coming Soon
+                        </span>
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold text-gray-300">
+                        {post.title}
+                      </h3>
+                    </div>
+                  </div>
                 </div>
-                </Link>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Newsletter Section */}
