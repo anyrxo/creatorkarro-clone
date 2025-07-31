@@ -1261,14 +1261,16 @@ const blogPosts = {
 }
 
 export async function generateStaticParams() {
-  return Object.keys(blogPosts).map((slug) => ({
+  const allPosts = { ...blogPosts, ...additionalBlogPosts }
+  return Object.keys(allPosts).map((slug) => ({
     slug: slug,
   }))
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  const post = blogPosts[slug as keyof typeof blogPosts]
+  const allPosts = { ...blogPosts, ...additionalBlogPosts }
+  const post = allPosts[slug as keyof typeof allPosts]
 
   if (!post) {
     notFound()
