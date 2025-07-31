@@ -260,36 +260,150 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 </p>
               </div>
               
-              {/* SIMPLE TEST */}
-              <div style={{ backgroundColor: 'yellow', color: 'black', padding: '50px', fontSize: '30px', marginBottom: '20px' }}>
-                <p>TEST: Can you see this text? It should be BLACK text on YELLOW background.</p>
-                <p>Post title: {post.title}</p>
-                <p>Content length: {post.content.length} characters</p>
-              </div>
-              
-              {/* Blog Content with Forced Inline Styles */}
-              <div className="bg-black p-8 rounded-xl border-4 border-red-500" style={{ opacity: 1 }}>
-                <h2 className="text-white text-2xl mb-4">Blog Content:</h2>
+              {/* Blog Content with Beautiful Styling */}
+              <div className="blog-content prose prose-invert prose-lg max-w-none">
+                <style jsx global>{`
+                  .blog-content {
+                    color: #ffffff !important;
+                  }
+                  
+                  .blog-content p {
+                    color: #e5e7eb !important;
+                    margin-bottom: 1.5rem !important;
+                    line-height: 1.8 !important;
+                    font-size: 1.125rem !important;
+                  }
+                  
+                  .blog-content h1 {
+                    color: #ffffff !important;
+                    font-size: 2.5rem !important;
+                    font-weight: 700 !important;
+                    margin: 3rem 0 1.5rem 0 !important;
+                    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                  }
+                  
+                  .blog-content h2 {
+                    color: #ffffff !important;
+                    font-size: 2rem !important;
+                    font-weight: 700 !important;
+                    margin: 2.5rem 0 1.25rem 0 !important;
+                    background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                  }
+                  
+                  .blog-content h3 {
+                    color: #ffffff !important;
+                    font-size: 1.5rem !important;
+                    font-weight: 600 !important;
+                    margin: 2rem 0 1rem 0 !important;
+                  }
+                  
+                  .blog-content h4 {
+                    color: #ffffff !important;
+                    font-size: 1.25rem !important;
+                    font-weight: 600 !important;
+                    margin: 1.75rem 0 0.875rem 0 !important;
+                  }
+                  
+                  .blog-content ul, .blog-content ol {
+                    color: #e5e7eb !important;
+                    margin: 1.5rem 0 !important;
+                    padding-left: 2rem !important;
+                  }
+                  
+                  .blog-content li {
+                    color: #e5e7eb !important;
+                    margin-bottom: 0.75rem !important;
+                    line-height: 1.7 !important;
+                  }
+                  
+                  .blog-content strong {
+                    color: #ffffff !important;
+                    font-weight: 600 !important;
+                  }
+                  
+                  .blog-content em {
+                    color: #e5e7eb !important;
+                    font-style: italic !important;
+                  }
+                  
+                  .blog-content blockquote {
+                    color: #e5e7eb !important;
+                    border-left: 4px solid #3b82f6 !important;
+                    padding-left: 1.5rem !important;
+                    margin: 2rem 0 !important;
+                    font-style: italic !important;
+                    background: rgba(59, 130, 246, 0.1) !important;
+                    padding: 1.5rem !important;
+                    border-radius: 0.5rem !important;
+                  }
+                  
+                  .blog-content a {
+                    color: #60a5fa !important;
+                    text-decoration: underline !important;
+                    transition: color 0.2s !important;
+                  }
+                  
+                  .blog-content a:hover {
+                    color: #93bbfc !important;
+                  }
+                  
+                  .blog-content code {
+                    background: rgba(59, 130, 246, 0.1) !important;
+                    color: #60a5fa !important;
+                    padding: 0.25rem 0.5rem !important;
+                    border-radius: 0.25rem !important;
+                    font-family: monospace !important;
+                  }
+                  
+                  .blog-content pre {
+                    background: #1f2937 !important;
+                    color: #e5e7eb !important;
+                    padding: 1.5rem !important;
+                    border-radius: 0.5rem !important;
+                    overflow-x: auto !important;
+                    margin: 2rem 0 !important;
+                  }
+                  
+                  .blog-content table {
+                    width: 100% !important;
+                    margin: 2rem 0 !important;
+                    border-collapse: collapse !important;
+                  }
+                  
+                  .blog-content th {
+                    background: #1f2937 !important;
+                    color: #ffffff !important;
+                    padding: 1rem !important;
+                    text-align: left !important;
+                    font-weight: 600 !important;
+                    border: 1px solid #374151 !important;
+                  }
+                  
+                  .blog-content td {
+                    color: #e5e7eb !important;
+                    padding: 1rem !important;
+                    border: 1px solid #374151 !important;
+                  }
+                  
+                  .blog-content hr {
+                    border-color: #374151 !important;
+                    margin: 3rem 0 !important;
+                  }
+                  
+                  /* Remove any opacity or transform issues */
+                  .blog-content * {
+                    opacity: 1 !important;
+                    transform: none !important;
+                  }
+                `}</style>
                 
-                {/* Version 1: Processed content with inline styles */}
-                <div className="mb-8 p-4 border-2 border-yellow-500">
-                  <h3 className="text-yellow-400 mb-2">Version 1: Processed with inline styles</h3>
-                  <div dangerouslySetInnerHTML={{ __html: processContentForVisibility(post.content) }} />
-                </div>
-                
-                {/* Version 2: Raw content wrapped in white div */}
-                <div className="mb-8 p-4 border-2 border-green-500">
-                  <h3 className="text-green-400 mb-2">Version 2: Raw content in white wrapper</h3>
-                  <div style={{ color: 'white' }} dangerouslySetInnerHTML={{ __html: post.content }} />
-                </div>
-                
-                {/* Version 3: Plain text without HTML */}
-                <div className="p-4 border-2 border-blue-500">
-                  <h3 className="text-blue-400 mb-2">Version 3: Plain text (no HTML)</h3>
-                  <div style={{ color: 'white', whiteSpace: 'pre-wrap' }}>
-                    {post.content.replace(/<[^>]*>/g, '').substring(0, 1000)}...
-                  </div>
-                </div>
+                <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
               
               {/* Add a beautiful conclusion section */}
