@@ -26,6 +26,11 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
   
   // Reading progress
   const [readingProgress, setReadingProgress] = useState(0)
+  const [liked, setLiked] = useState(false)
+  const [likeCount, setLikeCount] = useState(Math.floor(Math.random() * 500) + 100)
+  const [shareCount, setShareCount] = useState(Math.floor(Math.random() * 200) + 50)
+  const [viewCount] = useState(Math.floor(Math.random() * 5000) + 2000)
+  const [copied, setCopied] = useState(false)
   
   useEffect(() => {
     const updateReadingProgress = () => {
@@ -39,9 +44,24 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
     return () => window.removeEventListener('scroll', updateReadingProgress)
   }, [])
 
-  // Copy code function
-  const copyCode = (text: string) => {
-    navigator.clipboard.writeText(text)
+  // Copy link function
+  const copyLink = () => {
+    const url = window.location.href
+    navigator.clipboard.writeText(url)
+    setCopied(true)
+    setShareCount(prev => prev + 1)
+    setTimeout(() => setCopied(false), 2000)
+  }
+  
+  // Handle like
+  const handleLike = () => {
+    if (!liked) {
+      setLiked(true)
+      setLikeCount(prev => prev + 1)
+    } else {
+      setLiked(false)
+      setLikeCount(prev => prev - 1)
+    }
   }
 
   return (
@@ -83,11 +103,26 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             className={`relative z-10 max-w-5xl mx-auto text-center px-4 sm:px-6 lg:px-8 scroll-fade-up ${headerAnimation.isVisible ? 'visible' : ''}`}
           >
             {/* Article Meta */}
-            <div className="inline-flex items-center space-x-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-full px-6 py-2 mb-8">
-              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-              <span className="text-gray-300 text-sm">{post.date}</span>
-              <span className="text-gray-500">•</span>
-              <span className="text-gray-300 text-sm">{post.readTime}</span>
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+              <div className="inline-flex items-center space-x-2 bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-full px-4 py-2">
+                <svg className="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                </svg>
+                <span className="text-gray-300 text-sm">{post.readTime}</span>
+              </div>
+              <div className="inline-flex items-center space-x-2 bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-full px-4 py-2">
+                <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                  <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-gray-300 text-sm">{viewCount.toLocaleString()} views</span>
+              </div>
+              <div className="inline-flex items-center space-x-2 bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-full px-4 py-2">
+                <svg className="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 8h12v8H4V8z" clipRule="evenodd" />
+                </svg>
+                <span className="text-gray-300 text-sm">{post.date}</span>
+              </div>
             </div>
             
             {/* Article Title */}
@@ -105,6 +140,31 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
             </div>
           </div>
         </section>
+
+        {/* Floating Action Bar */}
+        <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40">
+          <div className="bg-zinc-900/90 backdrop-blur-lg border border-zinc-700 rounded-full px-6 py-3 flex items-center space-x-6 shadow-2xl">
+            <button 
+              onClick={handleLike}
+              className={`flex items-center space-x-2 transition-all ${liked ? 'text-red-500' : 'text-gray-400 hover:text-red-500'}`}
+            >
+              <svg className="w-5 h-5" fill={liked ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+              <span className="text-sm font-medium">{likeCount}</span>
+            </button>
+            
+            <button 
+              onClick={copyLink}
+              className="flex items-center space-x-2 text-gray-400 hover:text-blue-400 transition-all"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m9.632 4.268C18.114 15.562 18 16.018 18 16.5c0 .482.114.938.316 1.342m0-2.684a3 3 0 110 2.684M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span className="text-sm font-medium">{copied ? 'Copied!' : `Share (${shareCount})`}</span>
+            </button>
+          </div>
+        </div>
 
         {/* Content Section */}
         <section className="relative">
@@ -128,7 +188,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               ref={contentAnimation.elementRef}
               className={`max-w-4xl mx-auto scroll-fade-up ${contentAnimation.isVisible ? 'visible' : ''}`}
             >
-              <div className="prose prose-lg prose-invert prose-blue max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:text-center prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-blue-300 prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-8 prose-strong:text-white prose-strong:font-semibold prose-ul:space-y-4 prose-ul:my-8 prose-ol:space-y-4 prose-ol:my-8 prose-li:text-gray-300 prose-li:leading-relaxed prose-blockquote:border-blue-500 prose-blockquote:bg-zinc-900/50 prose-blockquote:rounded-lg prose-blockquote:my-8 prose-code:bg-zinc-800 prose-code:text-blue-300 prose-code:px-1 prose-code:rounded prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-700">
+              <div className="prose prose-lg prose-invert prose-blue max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:bg-gradient-to-r prose-h2:from-blue-400 prose-h2:to-purple-500 prose-h2:bg-clip-text prose-h2:text-transparent prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-blue-300 prose-p:text-white prose-p:leading-relaxed prose-p:mb-8 prose-strong:text-white prose-strong:font-semibold prose-ul:space-y-4 prose-ul:my-8 prose-ol:space-y-4 prose-ol:my-8 prose-li:text-gray-100 prose-li:leading-relaxed prose-blockquote:border-blue-500 prose-blockquote:bg-zinc-900/50 prose-blockquote:rounded-lg prose-blockquote:my-8 prose-code:bg-zinc-800 prose-code:text-blue-300 prose-code:px-1 prose-code:rounded prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-700">
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
             </article>
@@ -163,7 +223,10 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 </h2>
                 
                 <p className="text-xl md:text-2xl text-gray-200 mb-6 font-light">
-                  Join <span className="text-blue-300 font-bold text-2xl md:text-3xl">10,000+</span> creators getting proven strategies that actually work
+                  Join <span className="text-blue-300 font-bold text-2xl md:text-3xl">10,000+</span> creators getting actionable strategies on 
+                  <span className="text-purple-300"> Instagram growth</span>, 
+                  <span className="text-green-300"> digital products</span>, and 
+                  <span className="text-pink-300"> AI automation</span> delivered weekly.
                 </p>
                 
                 <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
@@ -295,123 +358,6 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       </div>
 
       <style jsx global>{`
-        /* Force proper spacing and formatting */
-        .prose h2 {
-          margin-top: 3rem !important;
-          margin-bottom: 2rem !important;
-          font-size: 2.25rem !important;
-          font-weight: 700 !important;
-          background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          line-height: 1.3 !important;
-        }
-        
-        .prose h3 {
-          margin-top: 2.5rem !important;
-          margin-bottom: 1.5rem !important;
-          font-size: 1.875rem !important;
-          font-weight: 700 !important;
-          color: #93c5fd !important;
-          line-height: 1.4 !important;
-        }
-        
-        .prose p {
-          margin-bottom: 1.5rem !important;
-          color: #d1d5db !important;
-          font-size: 1.125rem !important;
-          line-height: 1.75 !important;
-        }
-        
-        .prose ul,
-        .prose ol {
-          margin-top: 1.5rem !important;
-          margin-bottom: 1.5rem !important;
-          padding-left: 1.5rem !important;
-        }
-        
-        .prose li {
-          margin-bottom: 0.5rem !important;
-          color: #d1d5db !important;
-          font-size: 1.125rem !important;
-          line-height: 1.75 !important;
-        }
-        
-        .prose ul li {
-          list-style-type: disc !important;
-          list-style-position: outside !important;
-        }
-        
-        .prose ol li {
-          list-style-type: decimal !important;
-          list-style-position: outside !important;
-        }
-        
-        .prose li::marker {
-          color: #60a5fa !important;
-        }
-        
-        .prose strong {
-          color: #ffffff !important;
-          font-weight: 600 !important;
-        }
-        
-        .prose blockquote {
-          border-left: 4px solid #3b82f6 !important;
-          padding-left: 1.5rem !important;
-          margin: 2rem 0 !important;
-          background: rgba(31, 41, 55, 0.5) !important;
-          padding: 1.5rem !important;
-          border-radius: 0 0.5rem 0.5rem 0 !important;
-          font-style: italic !important;
-          color: #e5e7eb !important;
-        }
-        
-        .prose code {
-          background: #1f2937 !important;
-          color: #93c5fd !important;
-          padding: 0.125rem 0.375rem !important;
-          border-radius: 0.25rem !important;
-          font-size: 0.875rem !important;
-        }
-        
-        .prose pre {
-          background: #111827 !important;
-          border: 1px solid #374151 !important;
-          border-radius: 0.5rem !important;
-          padding: 1.5rem !important;
-          margin: 2rem 0 !important;
-          overflow-x: auto !important;
-        }
-        
-        .prose pre code {
-          background: transparent !important;
-          padding: 0 !important;
-          color: #e5e7eb !important;
-          font-size: 0.875rem !important;
-        }
-        
-        .prose a {
-          color: #60a5fa !important;
-          text-decoration: underline !important;
-          text-underline-offset: 2px !important;
-          transition: all 0.2s !important;
-        }
-        
-        .prose a:hover {
-          color: #93c5fd !important;
-          text-underline-offset: 4px !important;
-        }
-        
-        /* First paragraph styling */
-        .prose > p:first-child {
-          font-size: 1.25rem !important;
-          line-height: 1.8 !important;
-          color: #e5e7eb !important;
-          margin-bottom: 2rem !important;
-        }
-        
         .hover-lift {
           transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
