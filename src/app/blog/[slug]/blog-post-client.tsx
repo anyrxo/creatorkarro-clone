@@ -260,6 +260,23 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                 </p>
               </div>
               
+              {/* DEPLOYMENT TEST - VERSION 6 */}
+              <div style={{
+                position: 'fixed',
+                top: '10px',
+                right: '10px',
+                backgroundColor: 'red',
+                color: 'white',
+                padding: '20px',
+                fontSize: '20px',
+                zIndex: 9999,
+                border: '3px solid yellow',
+                borderRadius: '10px'
+              }}>
+                🚨 VERSION 6 DEPLOYED 🚨<br/>
+                Time: {new Date().toLocaleTimeString()}
+              </div>
+              
               {/* Blog Content with Beautiful Styling */}
               <div className="blog-content prose prose-invert prose-lg max-w-none">
                 <style jsx global>{`
@@ -403,7 +420,32 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
                   }
                 `}</style>
                 
-                <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                <div 
+                  style={{
+                    color: '#ffffff',
+                    fontSize: '18px',
+                    lineHeight: '1.8',
+                    fontFamily: 'Montserrat, sans-serif'
+                  }}
+                  dangerouslySetInnerHTML={{ 
+                    __html: post.content
+                      .replace(/<p>/g, '<p style="color: #ffffff !important; margin-bottom: 24px !important; font-size: 18px !important; line-height: 1.8 !important;">')
+                      .replace(/<p\s+([^>]*)>/g, '<p $1 style="color: #ffffff !important; margin-bottom: 24px !important; font-size: 18px !important; line-height: 1.8 !important;">')
+                      .replace(/<h1>/g, '<h1 style="color: #ffffff !important; font-size: 40px !important; font-weight: 700 !important; margin: 48px 0 24px 0 !important; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">')
+                      .replace(/<h2>/g, '<h2 style="color: #ffffff !important; font-size: 32px !important; font-weight: 700 !important; margin: 40px 0 20px 0 !important; background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">')
+                      .replace(/<h3>/g, '<h3 style="color: #ffffff !important; font-size: 24px !important; font-weight: 600 !important; margin: 32px 0 16px 0 !important;">')
+                      .replace(/<h4>/g, '<h4 style="color: #ffffff !important; font-size: 20px !important; font-weight: 600 !important; margin: 28px 0 14px 0 !important;">')
+                      .replace(/<ul>/g, '<ul style="color: #ffffff !important; margin: 24px 0 !important; padding-left: 32px !important;">')
+                      .replace(/<ol>/g, '<ol style="color: #ffffff !important; margin: 24px 0 !important; padding-left: 32px !important;">')
+                      .replace(/<li>/g, '<li style="color: #ffffff !important; margin-bottom: 12px !important; line-height: 1.7 !important; font-size: 18px !important;">')
+                      .replace(/<strong>/g, '<strong style="color: #ffffff !important; font-weight: 600 !important;">')
+                      .replace(/<em>/g, '<em style="color: #ffffff !important; font-style: italic !important;">')
+                      .replace(/<blockquote>/g, '<blockquote style="color: #ffffff !important; border-left: 4px solid #3b82f6 !important; padding: 24px !important; margin: 32px 0 !important; background: rgba(59, 130, 246, 0.1) !important; border-radius: 8px !important;">')
+                      .replace(/<a\s/g, '<a style="color: #60a5fa !important; text-decoration: underline !important;" ')
+                      .replace(/<div/g, '<div style="color: #ffffff !important;"')
+                      .replace(/<span/g, '<span style="color: #ffffff !important;"')
+                  }} 
+                />
               </div>
               
               {/* Add a beautiful conclusion section */}
