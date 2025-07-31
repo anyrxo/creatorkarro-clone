@@ -206,13 +206,14 @@ const blogPosts = {
 }
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default function BlogPostPage({ params }: PageProps) {
-  const post = blogPosts[params.slug as keyof typeof blogPosts]
+export default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = await params
+  const post = blogPosts[slug as keyof typeof blogPosts]
   
   if (!post) {
     notFound()
