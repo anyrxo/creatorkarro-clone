@@ -58,7 +58,7 @@ export default function Navigation() {
               height={40}
               className="w-10 h-10 rounded-full"
             />
-            <span className="text-xl font-bold whitespace-nowrap">Creator Academy</span>
+            <span className="text-xl font-bold whitespace-nowrap">IImagined</span>
           </Link>
 
           {/* Desktop Navigation - Centered with flex-grow */}
@@ -118,7 +118,7 @@ export default function Navigation() {
               href="/login"
               className="nav-pill px-6 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-200 hover:bg-zinc-700 hover:scale-105"
             >
-              Member Login
+              LOGIN
             </Link>
           </div>
 
