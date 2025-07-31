@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { additionalBlogPosts } from './blog-data'
 import BlogPostClient from './blog-post-client'
+import TestBlogClient from './test-blog-client'
 
 // Blog post data with full content
 const blogPosts = {
@@ -1276,5 +1277,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     notFound()
   }
 
-  return <BlogPostClient post={post} />
+  // Temporarily use test component to debug
+  return (
+    <>
+      <TestBlogClient content={post.content} />
+      <hr style={{ margin: '50px 0', borderColor: 'red', borderWidth: '5px' }} />
+      <BlogPostClient post={post} />
+    </>
+  )
 }

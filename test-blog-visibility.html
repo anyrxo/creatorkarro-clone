@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Content Visibility Test</title>
+    <style>
+        /* Simulate the dark background */
+        body {
+            background: #27272a; /* zinc-800 */
+            padding: 2rem;
+            font-family: sans-serif;
+        }
+
+        /* The fix we applied */
+        .blog-article-content,
+        .blog-article-content * {
+            color: #ffffff !important;
+        }
+        
+        .blog-article-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.75;
+            font-size: 1.125rem;
+        }
+        
+        .blog-article-content h2 {
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .blog-article-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .blog-article-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-article-content strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-article-content">
+        <h2>This is a test heading - it should be white!</h2>
+        <p>This is a test paragraph. All the blog content should now be visible with white text on the dark background.</p>
+        <p><strong>This is bold text</strong> and it should also be visible.</p>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+        <p>The fix was simple: we removed all the complex CSS that was causing conflicts and just forced all content inside .blog-article-content to be white with !important.</p>
+    </div>
+</body>
+</html>
