@@ -12,11 +12,11 @@ interface BlogPost {
   content: string
 }
 
-interface BlogPostProps {
+interface BlogPostClientProps {
   post: BlogPost
 }
 
-export default function BlogPost({ post }: BlogPostProps) {
+export default function BlogPostClient({ post }: BlogPostClientProps) {
   const [liked, setLiked] = useState(false)
   const [likeCount, setLikeCount] = useState(247)
   const [shareCount, setShareCount] = useState(34)

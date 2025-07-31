@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import BlogPost from './BlogPost'
+import BlogPostClient from './BlogPostClient'
 
 // Simple blog data - everything in one place
 const blogPosts = {
@@ -219,7 +219,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound()
   }
 
-  return <BlogPost post={post} />
+  return <BlogPostClient post={post} />
 }
 
 export function generateStaticParams() {
