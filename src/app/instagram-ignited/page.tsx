@@ -45,9 +45,7 @@ export default function InstagramIgnitedPage() {
             className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Your Complete <span className="text-blue-400">System</span> to
-              <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"> Grow an Audience</span> and Turn It Into
-              <span className="bg-gradient-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent"> Income</span>
+              Your Complete <span className="text-blue-400">System</span> to <span className="text-blue-400">Grow an Audience</span> and Turn It Into <span className="text-blue-400">Income</span>
             </h1>
 
             <p className="text-xl text-gray-400 mb-8">
