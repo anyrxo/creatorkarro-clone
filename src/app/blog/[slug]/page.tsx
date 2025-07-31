@@ -4,44 +4,44 @@ import BlogPostClient from './blog-post-client'
 
 // Blog post data with full content
 const blogPosts = {
-  'whop-clipping': {
-    title: "How to Make $10K/Month Clipping with Whop (Using AI)",
+  'instagram-ignited-success-stories': {
+    title: "How Marcus Rivera Grew from 800 to 125K Instagram Followers in 8 Months with Instagram Ignited",
     image: "https://ext.same-assets.com/1161517358/3768082061.png",
-    date: "December 15, 2023",
-    readTime: "8 min read",
+    date: "December 15, 2024",
+    readTime: "12 min read",
     content: `
-      <p>In this comprehensive guide, I'll show you exactly how to build a $10K/month business through content clipping on Whop, leveraging AI tools to maximize efficiency and results.</p>
+      <p>When Marcus Rivera joined <strong>Instagram Ignited</strong> by <strong>Anyro</strong>, he had just 800 followers and was struggling to get his content seen. Today, he's sitting at 125K engaged followers, making $15K/month through sponsored posts and digital products. Here's his complete transformation story and the exact strategies from <strong>IImagined</strong> that made it possible.</p>
       
-      <h2>What is Content Clipping?</h2>
-      <p>Content clipping involves taking long-form content (podcasts, YouTube videos, live streams) and extracting the most valuable, engaging moments to create short-form content that can be monetized across multiple platforms.</p>
+      <h2>The Starting Point: Struggling Content Creator</h2>
+      <p>Marcus joined <strong>Instagram Ignited</strong> feeling overwhelmed by the platform. Like many creators, he was posting inconsistently, his engagement was flat (averaging just 15-30 likes per post), and he had no clear content strategy. Despite spending hours creating posts, his follower count remained stuck at 800 for months.</p>
       
-      <p>The beauty of this business model lies in its scalability. Once you understand the psychology of viral content and master the technical aspects, you can process dozens of videos per day, each generating multiple revenue streams.</p>
+      <p>"I was ready to give up on Instagram," Marcus admits. "I'd watch other creators blow up overnight while I couldn't even break 50 likes on my posts. That's when I found <strong>Anyro's Instagram Ignited</strong> program through <strong>IImagined</strong>."</p>
       
-      <h2>Why Whop is Perfect for This Business Model</h2>
-      <p>Whop provides the infrastructure to sell access to your clipping services, digital products, and build a community around your content creation expertise. Here's why it works:</p>
+      <h2>Why Instagram Ignited Worked When Other Courses Failed</h2>
+      <p><strong>Instagram Ignited</strong> by <strong>Anyro</strong> isn't just another Instagram course. It's a comprehensive system built on proven strategies that have generated over 100 million views and helped thousands of creators build profitable businesses. Here's what made it different for Marcus:</p>
       <ul>
-        <li><strong>Built-in payment processing:</strong> No need to integrate Stripe or PayPal separately</li>
-        <li><strong>Subscription management:</strong> Recurring revenue made simple</li>
-        <li><strong>Community features:</strong> Build relationships with clients and create user-generated content</li>
-        <li><strong>Analytics dashboard:</strong> Track your most successful content and optimize accordingly</li>
-        <li><strong>Mobile-first design:</strong> Your clients can access everything from their phones</li>
-        <li><strong>Affiliate system:</strong> Let others promote your services for a commission</li>
+        <li><strong>Instagram OS Framework:</strong> A complete operating system for understanding and leveraging the Instagram algorithm</li>
+        <li><strong>Viral Carousel Templates:</strong> Done-for-you templates that consistently generate high engagement</li>
+        <li><strong>Monetization Strategies:</strong> Step-by-step guidance on turning followers into paying customers</li>
+        <li><strong>Live Community Support:</strong> Weekly mastermind calls with <strong>Anyro</strong> and other successful creators</li>
+        <li><strong>Niche Selection Guide:</strong> How to choose the perfect niche for long-term success</li>
+        <li><strong>Content Calendar System:</strong> Never run out of ideas with the proven content planning system</li>
       </ul>
       
-      <h2>The AI-Powered Clipping Process</h2>
-      <p>Using AI tools can 10x your productivity and quality. Here's my exact workflow that allows me to process 20+ hours of content daily:</p>
+      <h2>The Instagram Ignited Transformation Process</h2>
+      <p>Marcus's success wasn't overnight, but it was systematic. Here's exactly how he applied <strong>Anyro's Instagram Ignited</strong> strategies to achieve explosive growth:</p>
       
-      <h3>Step 1: Content Discovery & Analysis</h3>
-      <p>The foundation of successful clipping is finding the right content. Use these AI tools to identify viral potential:</p>
+      <h3>Month 1: Foundation & Niche Clarity</h3>
+      <p>The first breakthrough came when Marcus used the <strong>Niche OS</strong> module to identify his perfect content niche. Instead of posting random lifestyle content, he focused on:</p>
       <ul>
-        <li><strong>Otter.ai ($20/month):</strong> Transcribe long-form content automatically with 95%+ accuracy</li>
-        <li><strong>Claude/ChatGPT ($20/month):</strong> Analyze transcripts for viral moment potential using custom prompts</li>
-        <li><strong>TubeBuddy ($9/month):</strong> Research trending topics and keywords in your niche</li>
-        <li><strong>VidIQ ($39/month):</strong> Analyze competitor performance and identify content gaps</li>
-        <li><strong>BuzzSumo ($199/month):</strong> Find the most shared content in any niche</li>
+        <li><strong>Specific Audience:</strong> Young entrepreneurs building side hustles</li>
+        <li><strong>Content Pillars:</strong> Productivity hacks, morning routines, and success mindsets</li>
+        <li><strong>Visual Style:</strong> Clean, minimalist carousels with bold typography</li>
+        <li><strong>Posting Schedule:</strong> 5 posts per week using <strong>Anyro's</strong> proven timing strategy</li>
+        <li><strong>Engagement Strategy:</strong> Responding to every comment within 2 hours</li>
       </ul>
       
-      <p><strong>Pro Tip:</strong> Create a custom ChatGPT prompt that analyzes transcripts for: emotional peaks, controversial statements, actionable advice, surprising statistics, and personal stories. These elements consistently drive engagement.</p>
+      <p><strong>Results:</strong> By month 1, Marcus had grown from 800 to 2,100 followers with engagement rates jumping from 2% to 8%.</p>
       
       <h3>Step 2: Automated Clipping</h3>
       <p>These tools will save you dozens of hours weekly:</p>

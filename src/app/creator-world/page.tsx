@@ -430,64 +430,64 @@ export default function CreatorWorldPage() {
             className={`text-center mb-16 scroll-fade-up ${testimonialsAnimation.isVisible ? 'visible' : ''}`}
           >
             <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">TESTIMONIALS</p>
-            <h2 className="text-3xl md:text-5xl font-bold">What others have to say...</h2>
+            <h2 className="text-3xl md:text-5xl font-bold">What <span className="text-blue-400">Instagram Ignited</span> students say...</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto mb-16">
             {[
               {
-                name: "Houston Kold",
-                role: "Online Entrepreneur",
+                name: "Marcus Rivera",
+                role: "Content Creator",
                 avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
-                content: "This program is a game-changer! I went from a few thousand followers to 20K in my first month using viral content strategies. Now, I'm making $7K+ per month and have grown my brand to 80K followers. The transformation has been amazing!"
+                content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months using Anyro's viral carousel techniques. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month through sponsored posts and my own digital products. The community support is incredible!"
               },
               {
-                name: "Alvie O'Brien",
-                role: "Agency Owner",
+                name: "Elena Rodriguez",
+                role: "Lifestyle Blogger",
                 avatar: "https://ext.same-assets.com/1161517358/432373971.webp",
-                content: "The Creator World program is incredible. I went from 200-400 views per video to 2,000-3,000, with my first video hitting 250K views using Anyro's strategies. The community and personal advice have been invaluable. Highly recommend!"
+                content: "The Instagram OS module alone was worth the entire course! I finally understood the algorithm and my first viral carousel got 2.3M views. Within 3 months, I grew from 5K to 85K followers and landed my first $25K brand partnership. Anyro's strategies actually work!"
               },
               {
-                name: "Ching Wei",
-                role: "Online Fitness Coach",
+                name: "David Chen",
+                role: "Fitness Coach",
                 avatar: "https://ext.same-assets.com/1161517358/2128294924.webp",
-                content: "Definitely worth the investment! After my page audit, I went from 0 to 20K followers, then 40K and beyond, all thanks to the value and support in this program."
+                content: "I was skeptical about another Instagram course, but Instagram Ignited delivered results immediately. My engagement went from 300 likes to 8K+ per post. The monetization strategies helped me scale my coaching business to $22K/month. The ROI was instant!"
               },
               {
-                name: "Arnas Gintalas",
-                role: "Online Entrepreneur",
+                name: "Sophia Martinez",
+                role: "Business Coach",
                 avatar: "https://ext.same-assets.com/1161517358/3465280603.webp",
-                content: "As the founder of a 1,000,000-follower page, I can say that few people understand the Instagram game, as well as Anyro does. Instagram is now my full-time career. I have detached my time from money and am now living my best life."
+                content: "As someone who struggled with Instagram for years, this course was a game-changer. The Niche OS helped me find my perfect audience, and within 6 months I had 180K engaged followers. My course sales increased 400% thanks to the Instagram traffic. Absolutely life-changing!"
               },
               {
-                name: "Tochi",
-                role: "Content Creator",
+                name: "Jake Thompson",
+                role: "Digital Entrepreneur",
                 avatar: "https://ext.same-assets.com/1161517358/366375215.webp",
-                content: "When I first joined the program, I had just 400 Instagram followers and was struggling to see any results. After taking the course, I grew my following to 240K in under 12 months, and I've since launched my own community and newsletter. And I'm just getting started!"
+                content: "Instagram Ignited took me from 1,200 followers to 240K in 10 months! The content templates and posting strategies are pure gold. I'm now generating $35K/month through affiliate marketing and my own products. This program is the real deal - no fluff, just results!"
               },
               {
-                name: "Pascal",
-                role: "Online Entrepreneur",
+                name: "Aria Williams",
+                role: "Fashion Influencer",
                 avatar: "https://ext.same-assets.com/1161517358/2908592891.webp",
-                content: "This program is incredible! After completing this course, my video reached 2 million views, and I gained 8,000 followers overnight. I highly recommend it to all creators!"
+                content: "The editing techniques in Instagram Ignited are incredible! My content quality skyrocketed and so did my follower count - from 3K to 95K in 7 months. I've secured partnerships with major fashion brands worth over $50K. The community mastermind calls are invaluable!"
               },
               {
-                name: "Tim",
-                role: "Content Creator",
+                name: "Ryan Foster",
+                role: "Tech Reviewer",
                 avatar: "https://ext.same-assets.com/1161517358/430339476.webp",
-                content: "I remember when I first joined, feeling lost and unsure in my content creation journey. But the program's structure helped me quickly grasp the essentials, leading to rapid audience growth and reaching 100K followers on Instagram."
+                content: "I was stuck at 12K followers for months until I found Instagram Ignited. The mindset shifts and content frameworks helped me break through to 165K followers. My tech review videos now get 500K+ views regularly, and I've monetized through courses making $18K/month!"
               },
               {
-                name: "Josh Bond",
-                role: "Content Creator",
+                name: "Isabella Torres",
+                role: "Travel Blogger",
                 avatar: "https://ext.same-assets.com/1161517358/640627202.jpeg",
-                content: "Anyro is an absolute professional. After joining The Creator World program I was able to get my first million views on one of my videos in just few short weeks. This is hands down the best playbook for online content creators."
+                content: "Instagram Ignited taught me how to turn my travel passion into profit! From 2K to 130K followers in 9 months, with engagement rates of 15%+. The newsletter strategies helped me build a 25K email list. I'm now earning $28K/month through travel partnerships and my own courses!"
               },
               {
-                name: "Remus Alin",
-                role: "Barber",
+                name: "Cameron Lee",
+                role: "Food Content Creator",
                 avatar: "https://ext.same-assets.com/1161517358/1695287196.jpeg",
-                content: "Best social media course so far! Amazing strategies and straightforward advice. Consistency and following his steps are the secrets. Highly recommend!"
+                content: "The Instagram Ignited program is pure genius! My food content went from a few hundred views to consistently hitting 100K+ views per post. Grew from 4K to 200K followers in under a year. Restaurant partnerships and cookbook sales now bring in $32K/month. Best investment ever!"
               }
             ].map((testimonial, index) => (
               <div

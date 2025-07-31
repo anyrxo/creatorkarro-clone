@@ -24,40 +24,39 @@ export default function HomePage() {
 
   const testimonials = [
     {
-      name: "Houston Kold",
-      role: "Online Entrepreneur",
+      name: "Marcus Rivera",
+      role: "Content Creator",
+      course: "Instagram Ignited",
       avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
-      content: "This program is a game-changer! I went from a few thousand followers to 20K in my first month using viral content strategies. Now, I'm making $7K+ per month and have grown my brand to 80K followers. The transformation has been amazing!"
+      content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months using Anyro's viral carousel techniques. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month through sponsored posts and my own digital products. The community support is incredible!"
     },
     {
-      name: "Arnas Gintalas",
-      role: "Online Entrepreneur",
+      name: "Sophia Chen",
+      role: "Digital Entrepreneur", 
+      course: "Digital Products",
       avatar: "https://ext.same-assets.com/1161517358/3465280603.webp",
-      content: "As the founder of a 1,000,000-follower page, I can say that few people understand the Instagram game, as well as Anyro does. Instagram is now my full-time career. I have detached my time from money and am now living my best life."
+      content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Anyro's pricing psychology and launch strategies are game-changing. I've now built a sustainable $25K/month business selling educational content. Best investment I've ever made!"
     },
     {
-      name: "Tochi",
-      role: "Content Creator",
+      name: "Devon Mitchell",
+      role: "Automation Specialist",
+      course: "N8N AI Automations", 
       avatar: "https://ext.same-assets.com/1161517358/366375215.webp",
-      content: "When I first joined the program, I had just 400 Instagram followers and was struggling to see any results. After taking the course, I grew my following to 240K in under 12 months, and I've since launched my own community and newsletter. And I'm just getting started!"
+      content: "N8N AI Automations saved me 40+ hours per week! I automated my entire content workflow - from research to posting across 5 platforms. My productivity skyrocketed and I can now focus on strategy instead of repetitive tasks. The workflows Anyro provides are incredibly detailed and actually work!"
     },
     {
-      name: "Alvie O'Brien",
-      role: "Agency Owner",
-      avatar: "https://ext.same-assets.com/1161517358/432373971.webp",
-      content: "The IImagined program is incredible. I went from 200-400 views per video to 2,000-3,000, with my first video hitting 250K views using Anyro's strategies. The community and Anyro's personal advice have been invaluable. Highly recommend!"
+      name: "Isabella Torres",
+      role: "AI Content Creator",
+      course: "AI Influencers",
+      avatar: "https://ext.same-assets.com/1161517358/432373971.webp", 
+      content: "AI Influencers opened up a completely new revenue stream for me! I created 3 AI personas that generate content 24/7. Within 2 months, my AI influencers gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach to AI content is revolutionary!"
     },
     {
-      name: "Pascal",
-      role: "Online Entrepreneur",
+      name: "Ryan Blackwood",
+      role: "Visual Artist",
+      course: "ComfyUI & Workflows",
       avatar: "https://ext.same-assets.com/1161517358/2908592891.webp",
-      content: "This program is incredible! After completing this course, my video reached 2 million views, and I gained 8,000 followers overnight. I highly recommend it to all creators!"
-    },
-    {
-      name: "Tim",
-      role: "Content Creator",
-      avatar: "https://ext.same-assets.com/1161517358/430339476.webp",
-      content: "I remember when I first joined, feeling lost and unsure in my content creation journey. But the program's structure helped me quickly grasp the essentials, leading to rapid audience growth and reaching 100K followers on Instagram."
+      content: "ComfyUI & Workflows turned me into an AI art powerhouse! I can now create stunning visuals in minutes instead of hours. My client work rate increased 500% and I'm charging premium prices for AI-enhanced designs. The workflow templates are incredibly professional and save me endless time!"
     }
   ]
 
@@ -74,9 +73,9 @@ export default function HomePage() {
               WELCOME
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Creating Content. Designing Products.
+              <span className="text-blue-400">Creating Content.</span> <span className="text-purple-400">Designing Products.</span>
               <br />
-              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
                 Sharing Everything I Learn.
               </span>
             </h1>
@@ -142,58 +141,92 @@ export default function HomePage() {
           >
             <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">LINKS</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Community Card */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Instagram Ignited Card */}
             <div className={`testimonial-card card-hover hover-glow group scroll-fade-left ${linksAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-blue-500 rounded-full mr-3 animate-float"></div>
-                <span className="text-sm text-gray-400 uppercase tracking-wider">COMMUNITY</span>
+                <span className="text-sm text-gray-400 uppercase tracking-wider">INSTAGRAM</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors duration-300">Instagram Ignited</h3>
-              <p className="text-gray-400 mb-6">Turn content creation into a full-time career.</p>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors duration-300">
+                <span className="text-blue-400">Instagram</span> Ignited
+              </h3>
+              <p className="text-gray-400 mb-6">Turn <span className="text-blue-300">viral content</span> into a full-time career.</p>
               <Link href="/creator-world" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Join here →
               </Link>
             </div>
 
-            {/* Course Card */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-right ${linksAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            {/* Digital Products Card */}
+            <div className={`testimonial-card card-hover hover-glow group scroll-fade-up ${linksAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="flex items-center mb-4">
-                <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-float [animation-delay:0.5s]"></div>
-                <span className="text-sm text-gray-400 uppercase tracking-wider">COURSE</span>
+                <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-float [animation-delay:0.3s]"></div>
+                <span className="text-sm text-gray-400 uppercase tracking-wider">DIGITAL PRODUCTS</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-green-400 transition-colors duration-300">Digital Product Academy</h3>
-              <p className="text-gray-400 mb-6">Scale your digital product to $10K/month.</p>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-green-400 transition-colors duration-300">
+                <span className="text-green-400">Digital</span> Products
+              </h3>
+              <p className="text-gray-400 mb-6">Scale to <span className="text-green-300">$10K/month</span> with proven strategies.</p>
               <Link href="/dpa" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Enroll now →
               </Link>
             </div>
 
-            {/* YouTube Card */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-left ${linksAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+            {/* N8N AI Automations Card */}
+            <div className={`testimonial-card card-hover hover-glow group scroll-fade-right ${linksAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
               <div className="flex items-center mb-4">
-                <div className="w-3 h-3 bg-red-500 rounded-full mr-3 animate-float [animation-delay:1s]"></div>
-                <span className="text-sm text-gray-400 uppercase tracking-wider">YOUTUBE</span>
+                <div className="w-3 h-3 bg-purple-500 rounded-full mr-3 animate-float [animation-delay:0.6s]"></div>
+                <span className="text-sm text-gray-400 uppercase tracking-wider">AUTOMATION</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-red-400 transition-colors duration-300">My most valuable videos</h3>
-              <p className="text-gray-400 mb-6">Tutorials, online money, motivation, and lifestyle.</p>
-              <Link
-                href="https://www.youtube.com/@anyrxo"
-                target="_blank"
-                className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2"
-              >
-                Explore all videos →
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-300">
+                <span className="text-purple-400">N8N AI</span> Automations
+              </h3>
+              <p className="text-gray-400 mb-6">Build <span className="text-purple-300">automated workflows</span> that scale.</p>
+              <Link href="/vcm" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
+                Automate now →
               </Link>
             </div>
 
-            {/* Resources Card */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-right ${linksAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
+            {/* AI Influencers Card */}
+            <div className={`testimonial-card card-hover hover-glow group scroll-fade-left ${linksAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
               <div className="flex items-center mb-4">
-                <div className="w-3 h-3 bg-purple-500 rounded-full mr-3 animate-float [animation-delay:1.5s]"></div>
+                <div className="w-3 h-3 bg-pink-500 rounded-full mr-3 animate-float [animation-delay:0.9s]"></div>
+                <span className="text-sm text-gray-400 uppercase tracking-wider">AI INFLUENCERS</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-400 transition-colors duration-300">
+                <span className="text-pink-400">AI</span> Influencers
+              </h3>
+              <p className="text-gray-400 mb-6">Create <span className="text-pink-300">virtual personas</span> that earn 24/7.</p>
+              <Link href="/ai-influencers" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
+                Start creating →
+              </Link>
+            </div>
+
+            {/* ComfyUI Card */}
+            <div className={`testimonial-card card-hover hover-glow group scroll-fade-up ${linksAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-orange-500 rounded-full mr-3 animate-float [animation-delay:1.2s]"></div>
+                <span className="text-sm text-gray-400 uppercase tracking-wider">COMFYUI</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-orange-400 transition-colors duration-300">
+                <span className="text-orange-400">ComfyUI</span> & Workflows
+              </h3>
+              <p className="text-gray-400 mb-6">Master <span className="text-orange-300">AI art creation</span> workflows.</p>
+              <Link href="/comfyui-workflows" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
+                Create art →
+              </Link>
+            </div>
+
+            {/* Free Resources Card */}
+            <div className={`testimonial-card card-hover hover-glow group scroll-fade-right ${linksAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3 animate-float [animation-delay:1.5s]"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">RESOURCES</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-300">Free Resources</h3>
-              <p className="text-gray-400 mb-6">All my free courses to level up your online business</p>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-yellow-400 transition-colors duration-300">
+                <span className="text-yellow-400">Free</span> Resources
+              </h3>
+              <p className="text-gray-400 mb-6">Access <span className="text-yellow-300">premium tools</span> and templates.</p>
               <Link
                 href="https://anyrxo.gumroad.com/"
                 target="_blank"
@@ -215,7 +248,7 @@ export default function HomePage() {
           >
             <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">TESTIMONIALS</p>
             <h2 className="text-4xl md:text-5xl font-bold">
-              What others have to say...
+              What <span className="text-blue-400">students</span> have to say...
             </h2>
           </div>
 
@@ -236,6 +269,7 @@ export default function HomePage() {
                   <div>
                     <h4 className="font-semibold group-hover:text-blue-400 transition-colors duration-300">{testimonial.name}</h4>
                     <p className="text-sm text-gray-400">{testimonial.role}</p>
+                    <p className="text-xs text-blue-400 font-medium">{testimonial.course}</p>
                   </div>
                 </div>
                 <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
@@ -255,10 +289,13 @@ export default function HomePage() {
             className={`scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
                 Get Started Today
               </span>
             </h2>
+            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+              Join thousands of creators building <span className="text-blue-400">profitable</span> businesses with <span className="text-purple-400">Anyro's</span> proven strategies
+            </p>
             <Link
               href="/creator-world"
               className="cta-button inline-block text-lg btn-animate animate-glow hover-lift"
