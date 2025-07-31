@@ -47,15 +47,15 @@ export default function StoryPage() {
             className={`space-y-6 md:space-y-8 text-base md:text-lg text-gray-300 leading-relaxed scroll-fade-up ${storyAnimation.isVisible ? 'visible' : ''}`}
           >
             <p>
-              Hey, I'm Anyro. I'm a content creator, entrepreneur, and educator who's built a multi-six-figure business through organic content creation and digital products.
+              Hey, I'm Anyro. I create content, build businesses, and teach others how to do the same. What started as me posting random stuff online has somehow turned into a 7-figure business. Wild, right?
             </p>
 
             <p>
-              My journey started like many others - confused, overwhelmed, and trying to figure out how to make money online. I spent countless hours consuming content, trying different strategies, and failing more times than I can count.
+              Like most people, I started out completely lost. I was watching every YouTube video, buying every course, trying every "get rich quick" scheme. Nothing worked. I failed at dropshipping, failed at crypto, failed at pretty much everything I touched.
             </p>
 
             <p>
-              But everything changed when I discovered the power of personal branding and content creation. I started sharing my journey, my learnings, and my failures. What began as a small Instagram account documenting my entrepreneurial journey has now grown into a community of over 500,000 followers across all platforms.
+              Then one day, I decided to just be real. I started posting about my failures, my small wins, the messy behind-the-scenes stuff. People actually connected with that. My Instagram blew up, and before I knew it, I had half a million people following my journey across different platforms.
             </p>
 
             <div
@@ -71,26 +71,26 @@ export default function StoryPage() {
                   <p className="text-gray-400">Total Followers</p>
                 </div>
                 <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-                  <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2 animate-float [animation-delay:0.5s]">$555K+</div>
+                  <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2 animate-float [animation-delay:0.5s]">$3M+</div>
                   <p className="text-gray-400">Revenue Generated</p>
                 </div>
                 <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-                  <div className="text-3xl md:text-4xl font-bold text-purple-400 mb-2 animate-float [animation-delay:1s]">100M+</div>
+                  <div className="text-3xl md:text-4xl font-bold text-purple-400 mb-2 animate-float [animation-delay:1s]">500M+</div>
                   <p className="text-gray-400">Total Views</p>
                 </div>
               </div>
             </div>
 
             <p>
-              Through trial, error, and relentless testing, I discovered what actually works in the content creation space. I learned how to create viral content consistently, how to build an engaged audience, and most importantly, how to monetize that audience effectively.
+              Here's what I learned after posting thousands of pieces of content: most advice online is BS. What actually works is being authentic, understanding human psychology, and having systems that scale. Once I figured out the viral content formula and how to turn views into dollars, everything clicked.
             </p>
 
             <p>
-              The IImagined program is the culmination of everything I've learned. It's not just theory - it's a proven system that I've used to build my own business and that hundreds of my students have used to achieve similar results.
+              IImagined isn't just another course. It's literally everything I wish someone had told me when I started. No fluff, no theory - just the exact strategies that took me from broke to $3M+. And yeah, my students are crushing it too.
             </p>
 
             <p>
-              I believe that everyone has the potential to build a successful online business. You just need the right guidance, the right strategies, and the willingness to take action. That's exactly what IImagined provides.
+              Look, I'm not special. I don't have some secret talent. If I can go from failing at everything to building a 7-figure business, you can too. You just need someone to show you what actually works (and save you from wasting years like I did).
             </p>
 
             <div
@@ -99,16 +99,16 @@ export default function StoryPage() {
             >
               <h3 className="text-xl md:text-2xl font-bold mb-4">My Mission</h3>
               <p className="text-lg md:text-xl">
-                To help creators turn their passion into profit by providing them with the exact strategies, tools, and support they need to build a thriving online business.
+                To help as many people as possible escape the 9-5, build real wealth through content, and actually enjoy their life while doing it. Because making money online shouldn't feel like torture.
               </p>
             </div>
 
             <p>
-              When I'm not creating content or helping students, you can find me traveling the world, trying new experiences, and constantly learning. I believe that the best content comes from living an interesting life and sharing those experiences with others.
+              When I'm not working (which is rare because I'm obsessed with this stuff), I'm probably traveling somewhere random, trying weird foods, or deep in a YouTube rabbit hole learning something new. Living an interesting life makes creating content way easier.
             </p>
 
             <p>
-              Whether you're just starting out or looking to take your existing business to the next level, I'm here to help you succeed. Let's build something amazing together.
+              Whether you're at zero or already making money, there's always another level. I'm here to help you hit it. Let's get after it.
             </p>
           </div>
 
