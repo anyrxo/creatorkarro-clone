@@ -436,7 +436,7 @@ export default function CTRManipulationPage() {
                         <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
                           <SelectValue />
                         </SelectTrigger>
-                        <SelectContent className="bg-gray-700 border-gray-600">
+                        <SelectContent>
                           <SelectItem value="quick">Quick CTR Boost (30 days)</SelectItem>
                           <SelectItem value="aggressive">Aggressive Campaign (21 days)</SelectItem>
                           <SelectItem value="custom">Custom Configuration</SelectItem>
@@ -482,7 +482,7 @@ export default function CTRManipulationPage() {
                             <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
                               <SelectValue />
                             </SelectTrigger>
-                            <SelectContent className="bg-gray-700 border-gray-600">
+                            <SelectContent>
                               <SelectItem value="conservative">Conservative (Safest)</SelectItem>
                               <SelectItem value="moderate">Moderate (Balanced)</SelectItem>
                               <SelectItem value="aggressive">Aggressive (Fastest)</SelectItem>
@@ -496,7 +496,7 @@ export default function CTRManipulationPage() {
                             <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
                               <SelectValue />
                             </SelectTrigger>
-                            <SelectContent className="bg-gray-700 border-gray-600">
+                            <SelectContent>
                               <SelectItem value="natural-growth">Natural Growth</SelectItem>
                               <SelectItem value="viral-spike">Viral Spike</SelectItem>
                               <SelectItem value="commercial-intent">Commercial Intent</SelectItem>
