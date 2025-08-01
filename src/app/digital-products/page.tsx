@@ -61,7 +61,7 @@ export default function DPAPage() {
         'Story strategies that convert 40%+ followers'
       ],
       results: '2.3M followers gained by students',
-      testimonial: '"250K followers in 6 months!" - Sarah Kim',
+      testimonial: '"45K followers in 6 months!" - Sarah Kim',
       urgency: 'Only 47 spots left at this price',
       forWho: 'Perfect for: Content creators wanting explosive growth'
     },
@@ -77,7 +77,7 @@ export default function DPAPage() {
       features: [
         'Create photorealistic AI influencers from scratch',
         'Advanced prompting for consistent characters',
-        'Monetization strategies earning $50K+/month',
+        'Monetization strategies earning $15K+/month',
         'Complete content automation systems',
         'Platform optimization for maximum reach'
       ],
@@ -114,42 +114,42 @@ export default function DPAPage() {
       name: "Jake Chen",
       role: "Digital Entrepreneur",
       avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
-      content: "I bought the complete bundle and went from $0 to $47K/month in 8 months. The Digital Products course got me started, Instagram exploded my audience, and AI Influencers created passive income streams. Best investment I've ever made!",
+      content: "I bought the complete bundle and went from $0 to $12K/month in 8 months. The Digital Products course got me started, Instagram exploded my audience, and AI Influencers created passive income streams. Best investment I've ever made!",
       courses: "Complete Bundle"
     },
     {
       name: "Sarah Kim",
       role: "Content Creator → 7-Figure Business Owner",
       avatar: "https://ext.same-assets.com/1161517358/527605891.webp",
-      content: "Started with Instagram Mastery, grew to 250K followers, then added Digital Products to monetize. Now I have 3 AI influencers generating $30K/month passive income. The synergy between courses is incredible!",
+      content: "Started with Instagram Mastery, grew to 45K followers, then added Digital Products to monetize. Now I have 2 AI influencers generating $8K/month passive income. The synergy between courses is incredible!",
       courses: "Instagram + Digital Products + AI Influencers"
     },
     {
       name: "Marcus Rivera",
       role: "Automation Agency Owner",
       avatar: "https://ext.same-assets.com/1161517358/366375215.webp",
-      content: "N8N course helped me build my automation agency, Digital Products taught me to package knowledge, and Instagram got me clients. Now I run everything with automated workflows earning $85K/month. Pure genius!",
+      content: "N8N course helped me build my automation agency, Digital Products taught me to package knowledge, and Instagram got me clients. Now I run everything with automated workflows earning $18K/month. Pure genius!",
       courses: "N8N + Digital Products + Instagram"
     },
     {
       name: "Emily Watson",
       role: "Former 9-5 → Full-Time Creator",
       avatar: "https://ext.same-assets.com/1161517358/3820475784.webp",
-      content: "The bundle completely transformed my life. Quit my corporate job after 4 months when my digital products hit $20K/month. My AI influencer now has 500K followers and earns more than my old salary!",
+      content: "The bundle completely transformed my life. Quit my corporate job after 4 months when my digital products hit $8K/month. My AI influencer now has 75K followers and earns more than my old salary!",
       courses: "Complete Bundle"
     },
     {
       name: "David Park",
       role: "E-commerce → Multiple 7-Figures",
       avatar: "https://ext.same-assets.com/1161517358/3495288803.webp",
-      content: "Used N8N to automate my entire business, Digital Products to create info products, and Instagram to build authority. Went from struggling e-com store to $2.3M/year across multiple income streams.",
+      content: "Used N8N to automate my entire business, Digital Products to create info products, and Instagram to build authority. Went from struggling e-com store to $425K/year across multiple income streams.",
       courses: "N8N + Digital Products + Instagram"
     },
     {
       name: "Lisa Chang",
       role: "Coach → Digital Empire Builder",
       avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
-      content: "Started as a struggling coach making $3K/month. Applied all 4 systems and now run a digital empire: $50K/month in courses, 800K Instagram followers, and 2 AI influencers earning passively. Life-changing!",
+      content: "Started as a struggling coach making $3K/month. Applied all 4 systems and now run a digital empire: $15K/month in courses, 125K Instagram followers, and 2 AI influencers earning passively. Life-changing!",
       courses: "Complete Bundle"
     }
   ]
@@ -161,7 +161,7 @@ export default function DPAPage() {
     },
     {
       question: "Can I buy multiple courses? Do they work together?",
-      answer: "Absolutely! The courses are designed to synergize. The Complete Bundle saves you $1,091 and creates a complete business ecosystem. Students who buy multiple courses report 3-5x better results because they complement each other perfectly."
+      answer: "Absolutely! The courses are designed to synergize. The Complete Bundle saves you $191 and creates a complete business ecosystem. Students who buy multiple courses report 3-5x better results because they complement each other perfectly."
     },
     {
       question: "How quickly can I see results with multiple courses?",
@@ -169,7 +169,7 @@ export default function DPAPage() {
     },
     {
       question: "Is the bundle really worth it vs buying individually?",
-      answer: "The bundle saves $1,091 plus includes exclusive bonuses worth $2,000+ only available to bundle buyers. More importantly, you get the complete system instead of pieces. 89% of our highest earners ($50K+/month) bought the complete bundle."
+      answer: "The bundle saves $191 plus includes exclusive bonuses worth $497+ only available to bundle buyers. More importantly, you get the complete system instead of pieces. 89% of our highest earners ($15K+/month) bought the complete bundle."
     },
     {
       question: "What if I buy one course and want to add others later?",
@@ -223,7 +223,7 @@ export default function DPAPage() {
             </div>
 
             <Link href="#bundle" className="cta-button inline-block text-lg mb-8 btn-animate animate-glow hover-lift">
-              Get the Complete Arsenal (Save $1,091)
+              Get the Complete Arsenal (Save $191)
             </Link>
 
             {/* Social Proof */}
@@ -454,7 +454,7 @@ export default function DPAPage() {
                   </div>
 
                   <div className="bg-green-500/20 border border-green-500 rounded-lg p-4 mb-6">
-                    <h4 className="font-bold text-green-300 mb-2">🎁 Bundle-Only Bonuses ($2,000+ Value):</h4>
+                    <h4 className="font-bold text-green-300 mb-2">🎁 Bundle-Only Bonuses ($497+ Value):</h4>
                     <ul className="text-sm text-gray-300 space-y-1">
                       <li>• Private mastermind access (3 months)</li>
                       <li>• 1-on-1 strategy call with Anyro</li>
@@ -469,7 +469,7 @@ export default function DPAPage() {
                   <div className="bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl p-8 text-white">
                     <div className="text-sm mb-2">Bundle Price Today:</div>
                     <div className="text-5xl font-bold mb-2">$697</div>
-                    <div className="text-sm mb-4">You Save $1,091!</div>
+                    <div className="text-sm mb-4">You Save $191!</div>
                     
                     <Link href="#" className="bg-white text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors block mb-4">
                       Get Complete Bundle Now
@@ -492,7 +492,7 @@ export default function DPAPage() {
 
           <div className={`text-center mt-12 scroll-fade-up ${bundleAnimation.isVisible ? 'visible' : ''}`}>
             <p className="text-lg text-gray-300 mb-4">
-              <span className="text-green-400 font-semibold">89% of our highest earners</span> ($50K+/month) bought the complete bundle
+              <span className="text-green-400 font-semibold">89% of our highest earners</span> ($15K+/month) bought the complete bundle
             </p>
             <p className="text-sm text-gray-400">
               They understood that success comes from systems working together, not isolated tactics
@@ -813,7 +813,7 @@ export default function DPAPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="bg-purple-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">✓</span>
-                  <span className="text-gray-300">$2,000+ in Exclusive Bonuses</span>
+                  <span className="text-gray-300">$497+ in Exclusive Bonuses</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="bg-purple-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">✓</span>
@@ -828,7 +828,7 @@ export default function DPAPage() {
 
               <div className="text-center">
                 <div className="text-lg font-bold mb-2">Bundle: $697</div>
-                <div className="text-sm text-gray-400 mb-4">Save $1,091 vs individual courses</div>
+                <div className="text-sm text-gray-400 mb-4">Save $191 vs individual courses</div>
                 <Link href="#bundle" className="bg-purple-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-600 transition-colors block">
                   Get Complete Bundle
                 </Link>
@@ -1085,7 +1085,7 @@ export default function DPAPage() {
               </p>
             </div>
             <div className={`testimonial-card card-hover hover-lift scroll-fade-up ${expectAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">Bundle-Only Bonuses<br />(Value: $2,000+)</h3>
+              <h3 className="text-2xl font-bold mb-4">Bundle-Only Bonuses<br />(Value: $497+)</h3>
               <p className="text-gray-400">
                 Private mastermind, 1-on-1 call, automation templates, integration guides, priority support.
               </p>
@@ -1099,9 +1099,9 @@ export default function DPAPage() {
           </div>
 
           <div className={`text-center mt-16 scroll-fade-up ${expectAnimation.isVisible ? 'visible' : ''}`}>
-            <h3 className="text-3xl font-bold mb-4">Total Value: <span className="text-red-400">$3,788</span></h3>
+            <h3 className="text-3xl font-bold mb-4">Total Value: <span className="text-red-400">$1,788</span></h3>
             <h4 className="text-2xl mb-4">Bundle Price: <span className="text-green-400">$697</span></h4>
-            <p className="text-xl text-gray-400 mb-8">You save <span className="text-green-300 font-bold">$3,091</span> and get the complete ecosystem</p>
+            <p className="text-xl text-gray-400 mb-8">You save <span className="text-green-300 font-bold">$191</span> and get the complete ecosystem</p>
             <Link href="#bundle" className="cta-button inline-block mb-4 btn-animate animate-glow hover-lift">
               Get Complete Bundle Now
             </Link>

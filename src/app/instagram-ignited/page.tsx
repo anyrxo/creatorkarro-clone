@@ -646,36 +646,36 @@ export default function InstagramIgnitedPage() {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">10 Core Modules</span>
-                  <span className="text-xl font-bold text-green-400">$6,875</span>
+                  <span className="text-xl font-bold text-green-400">$1,297</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">365 Days Content Ideas</span>
-                  <span className="text-xl font-bold text-green-400">$997</span>
+                  <span className="text-xl font-bold text-green-400">$247</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Viral Reel Templates</span>
-                  <span className="text-xl font-bold text-green-400">$797</span>
+                  <span className="text-xl font-bold text-green-400">$197</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Caption Swipe File</span>
-                  <span className="text-xl font-bold text-green-400">$497</span>
+                  <span className="text-xl font-bold text-green-400">$147</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Influencer Outreach Scripts</span>
-                  <span className="text-xl font-bold text-green-400">$397</span>
+                  <span className="text-xl font-bold text-green-400">$127</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Monthly Algorithm Updates</span>
-                  <span className="text-xl font-bold text-green-400">$1,997</span>
+                  <span className="text-xl font-bold text-green-400">$397</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Private Mastermind Access</span>
-                  <span className="text-xl font-bold text-green-400">$2,997</span>
+                  <span className="text-xl font-bold text-green-400">$697</span>
                 </div>
                 
                 <div className="flex justify-between items-center py-6 bg-green-900/20 rounded-lg px-6 mt-6">
                   <span className="text-2xl font-bold">TOTAL VALUE:</span>
-                  <span className="text-3xl font-black text-green-400">$14,557</span>
+                  <span className="text-3xl font-black text-green-400">$3,109</span>
                 </div>
               </div>
             </div>
@@ -722,15 +722,15 @@ export default function InstagramIgnitedPage() {
                 <div className="mt-8">
                   <h4 className="text-xl font-bold mb-4 text-green-400">Instagram Ignited</h4>
                   <div className="mb-2">
-                    <span className="text-lg text-gray-400 line-through">$697</span>
+                    <span className="text-lg text-gray-400 line-through">$1,297</span>
                   </div>
-                  <div className="text-4xl font-black mb-4 text-green-400">$297</div>
+                  <div className="text-4xl font-black mb-4 text-green-400">$247</div>
                   <div className="text-sm text-gray-400 mb-6">ONE-TIME PAYMENT</div>
                   <ul className="text-left space-y-2 text-gray-300">
                     <li>• Complete system education</li>
                     <li>• Proven viral strategies</li>
                     <li>• Lifetime access</li>
-                    <li>• $14,557 worth of bonuses</li>
+                    <li>• $3,109 worth of bonuses</li>
                     <li>• Results guaranteed</li>
                   </ul>
                 </div>
@@ -742,7 +742,7 @@ export default function InstagramIgnitedPage() {
           <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
             <div className="bg-zinc-900 border border-red-500 rounded-3xl p-8 mb-8">
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400">
-                ⚠️ WARNING: This Deal EXPIRES Soon ⚠️
+                ⚠️ Limited Time Special Offer ⚠️
               </h3>
               
               <div className="grid md:grid-cols-3 gap-6 mb-8">

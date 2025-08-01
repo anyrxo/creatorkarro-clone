@@ -617,48 +617,48 @@ export default function AIInfluencersPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-8 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="text-4xl mb-4">🚀</div>
-              <h3 className="text-xl font-bold mb-4 text-gold-400">AI Model Library</h3>
-              <p className="text-gray-400 mb-4">50+ pre-trained AI models ready to use</p>
-              <div className="text-lg font-bold text-gold-400">Bonus Value: $247</div>
+            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
+              <div className="text-3xl mb-3">🚀</div>
+              <h3 className="text-lg font-bold mb-3 text-gold-400">AI Model Library</h3>
+              <p className="text-gray-400 mb-3 text-sm">50+ pre-trained AI models ready to use</p>
+              <div className="text-sm font-bold text-gold-400">Value: $197</div>
             </div>
-            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-8 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <div className="text-4xl mb-4">🎬</div>
-              <h3 className="text-xl font-bold mb-4 text-gold-400">Content Template Vault</h3>
-              <p className="text-gray-400 mb-4">1000+ proven content templates</p>
-              <div className="text-lg font-bold text-gold-400">Bonus Value: $197</div>
+            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+              <div className="text-3xl mb-3">🎬</div>
+              <h3 className="text-lg font-bold mb-3 text-gold-400">Content Template Vault</h3>
+              <p className="text-gray-400 mb-3 text-sm">1000+ proven content templates</p>
+              <div className="text-sm font-bold text-gold-400">Value: $147</div>
             </div>
-            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-8 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <div className="text-4xl mb-4">🤖</div>
-              <h3 className="text-xl font-bold mb-4 text-gold-400">Automation Scripts</h3>
-              <p className="text-gray-400 mb-4">Complete automation toolkit</p>
-              <div className="text-lg font-bold text-gold-400">Bonus Value: $147</div>
+            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+              <div className="text-3xl mb-3">🤖</div>
+              <h3 className="text-lg font-bold mb-3 text-gold-400">Automation Scripts</h3>
+              <p className="text-gray-400 mb-3 text-sm">Complete automation toolkit</p>
+              <div className="text-sm font-bold text-gold-400">Value: $127</div>
             </div>
-            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-8 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <div className="text-4xl mb-4">👥</div>
-              <h3 className="text-xl font-bold mb-4 text-gold-400">Private Mastermind</h3>
-              <p className="text-gray-400 mb-4">Exclusive community access</p>
-              <div className="text-lg font-bold text-gold-400">Bonus Value: $147</div>
+            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
+              <div className="text-3xl mb-3">👥</div>
+              <h3 className="text-lg font-bold mb-3 text-gold-400">Private Mastermind</h3>
+              <p className="text-gray-400 mb-3 text-sm">Exclusive community access</p>
+              <div className="text-sm font-bold text-gold-400">Value: $147</div>
             </div>
-            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-8 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <div className="text-4xl mb-4">📞</div>
-              <h3 className="text-xl font-bold mb-4 text-gold-400">1-on-1 Strategy Call</h3>
-              <p className="text-gray-400 mb-4">Personal consultation with me</p>
-              <div className="text-lg font-bold text-gold-400">Bonus Value: $197</div>
+            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
+              <div className="text-3xl mb-3">📞</div>
+              <h3 className="text-lg font-bold mb-3 text-gold-400">1-on-1 Strategy Call</h3>
+              <p className="text-gray-400 mb-3 text-sm">Personal consultation with me</p>
+              <div className="text-sm font-bold text-gold-400">Value: $197</div>
             </div>
-            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-8 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-xl font-bold mb-4 text-gold-400">Fast-Track Checklist</h3>
-              <p className="text-gray-400 mb-4">30-day implementation roadmap</p>
-              <div className="text-lg font-bold text-gold-400">Bonus Value: $97</div>
+            <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
+              <div className="text-3xl mb-3">⚡</div>
+              <h3 className="text-lg font-bold mb-3 text-gold-400">Fast-Track Checklist</h3>
+              <p className="text-gray-400 mb-3 text-sm">30-day implementation roadmap</p>
+              <div className="text-sm font-bold text-gold-400">Value: $97</div>
             </div>
           </div>
 
           <div className={`text-center mt-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 border border-gold-500/50 rounded-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold mb-4 text-gold-400">Total Bonus Value</h3>
-              <div className="text-4xl font-bold text-gold-400 mb-2">$1,132</div>
+              <div className="text-4xl font-bold text-gold-400 mb-2">$1,032</div>
               <p className="text-gray-300">Free when you join today</p>
             </div>
           </div>
@@ -688,19 +688,19 @@ export default function AIInfluencersPage() {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ 8 Complete Training Modules</span>
-                  <span className="text-gold-400 font-bold">$1,397</span>
+                  <span className="text-gold-400 font-bold">$1,297</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ AI Model Library (50+ Models)</span>
-                  <span className="text-gold-400 font-bold">$247</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Content Template Vault (1000+ Templates)</span>
                   <span className="text-gold-400 font-bold">$197</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Complete Automation Scripts</span>
+                  <span className="text-gray-300">✓ Content Template Vault (1000+ Templates)</span>
                   <span className="text-gold-400 font-bold">$147</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-700">
+                  <span className="text-gray-300">✓ Complete Automation Scripts</span>
+                  <span className="text-gold-400 font-bold">$127</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ Private Mastermind Community</span>
@@ -727,7 +727,7 @@ export default function AIInfluencersPage() {
               <div className="border-t-2 border-gold-500/50 pt-6">
                 <div className="flex justify-between items-center text-2xl font-bold">
                   <span className="text-white">TOTAL VALUE:</span>
-                  <span className="text-gold-400">$2,529</span>
+                  <span className="text-gold-400">$1,997</span>
                 </div>
               </div>
             </div>
@@ -740,14 +740,14 @@ export default function AIInfluencersPage() {
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-2 text-gray-400">Regular Price</h3>
                 <p className="text-gray-500 mb-4">What this would normally cost</p>
-                <div className="text-4xl font-bold mb-2 text-gray-500 line-through">$497</div>
+                <div className="text-4xl font-bold mb-2 text-gray-500 line-through">$1,497</div>
                 <p className="text-gray-500">Too expensive for most people</p>
               </div>
 
               <div className="space-y-3 text-left mb-8">
                 <p className="text-gray-500">✓ Same complete system</p>
                 <p className="text-gray-500">✓ Same lifetime access</p>
-                <p className="text-gray-500">✓ Same bonuses worth $3,482</p>
+                <p className="text-gray-500">✓ Same bonuses worth $1,032</p>
                 <p className="text-gray-500">✓ Same results potential</p>
               </div>
 
@@ -768,16 +768,16 @@ export default function AIInfluencersPage() {
                 <h3 className="text-2xl font-bold mb-2 text-pink-400">Special Launch Price</h3>
                 <p className="text-gray-300 mb-4">97% OFF - Only for early adopters</p>
                 <div className="flex items-center justify-center space-x-3 mb-2">
-                  <span className="text-gray-400 line-through text-2xl">$497</span>
-                  <span className="text-green-400 font-bold text-lg">Save $300!</span>
+                  <span className="text-gray-400 line-through text-2xl">$1,497</span>
+                  <span className="text-green-400 font-bold text-lg">Save $1,300!</span>
                 </div>
                 <div className="text-6xl font-bold mb-2 text-pink-400">$197</div>
                 <p className="text-gray-300">One-time payment, lifetime access</p>
               </div>
 
               <div className="space-y-3 text-left mb-8">
-                <p className="text-gray-300">✓ Complete 8-module system ($8,675 value)</p>
-                <p className="text-gray-300">✓ All exclusive bonuses ($3,482 value)</p>
+                <p className="text-gray-300">✓ Complete 8-module system ($1,297 value)</p>
+                <p className="text-gray-300">✓ All exclusive bonuses ($1,032 value)</p>
                 <p className="text-gray-300">✓ Private community & 1-on-1 call</p>
                 <p className="text-gray-300">✓ Lifetime updates & new content</p>
                 <p className="text-gray-300">✓ 60-day money-back guarantee</p>
@@ -785,7 +785,7 @@ export default function AIInfluencersPage() {
               </div>
 
               <Link href="#" className="cta-button inline-block w-full text-center mb-4 btn-animate animate-glow hover-lift">
-                🚀 Secure Your Spot NOW - $297
+                🚀 Secure Your Spot NOW - $197
               </Link>
               
               <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4 mb-4">
@@ -1039,14 +1039,14 @@ export default function AIInfluencersPage() {
                 <div className="flex items-center justify-center space-x-4 mb-4">
                   <div className="text-3xl">⏰</div>
                   <div>
-                    <h3 className="text-xl font-bold text-yellow-400">Price Increases in:</h3>
-                    <div className="text-2xl font-mono text-yellow-300">23:47:12</div>
+                    <h3 className="text-xl font-bold text-yellow-400">Limited Time Offer</h3>
+                    <div className="text-lg text-yellow-300">Price increasing soon</div>
                   </div>
                 </div>
                 <p className="text-gray-300">
-                  <span className="text-yellow-400 font-bold">Current Price: $297</span> • 
+                  <span className="text-yellow-400 font-bold">Current Price: $197</span> • 
                   <span className="text-red-400 font-bold"> New Price: $497</span> • 
-                  <span className="text-gray-400">Full Price: $997</span>
+                  <span className="text-gray-400">Full Price: $1,497</span>
                 </p>
               </div>
 
@@ -1070,7 +1070,7 @@ export default function AIInfluencersPage() {
               </p>
 
               <Link href="#packages" className="cta-button inline-block text-2xl py-4 px-12 btn-animate animate-glow hover-lift">
-                🔥 SECURE YOUR SPOT NOW - $297 🔥
+                🔥 SECURE YOUR SPOT NOW - $197 🔥
               </Link>
 
               <p className="text-sm text-green-400 mt-4 font-bold">

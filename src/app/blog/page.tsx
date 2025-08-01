@@ -5,6 +5,76 @@ import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimat
 import { calculateBlogMetrics, formatBlogDate } from '@/utils/blogMetrics'
 import { useEffect, useState } from 'react'
 
+// News articles data extracted from the newsarticles directory
+const newsArticles = [
+  {
+    title: "AI Assistant Showdown: ChatGPT vs Gemini vs Perplexity vs Claude",
+    category: "AI NEWS",
+    categoryColor: "purple",
+    excerpt: "The top AI assistants—ChatGPT, Gemini, Perplexity, and Claude—each shine in different areas like productivity, research, real-time search, and creative writing.",
+    description: "Comprehensive comparison of the leading AI assistants and their unique strengths for different use cases.",
+    readTime: "8 min",
+    date: "2025-06-09",
+    slug: "ai-assistant-showdown-chatgpt-gemini-perplexity-claude",
+    keywords: ["ai assistants", "chatgpt", "gemini", "perplexity", "claude"]
+  },
+  {
+    title: "OpenAI's 03 Pro: Brilliant Strategist or Overthinking Giant?",
+    category: "TECH NEWS",
+    categoryColor: "blue",
+    excerpt: "OpenAI's 03 Pro is slow and costly, but delivers deep, strategic reasoning when given time. From outperforming benchmarks to offering transformative business insights.",
+    description: "In-depth analysis of OpenAI's latest 03 Pro model and its strategic capabilities versus performance trade-offs.",
+    readTime: "12 min",
+    date: "2025-06-13",
+    slug: "openai-03-pro-brilliant-strategist-overthinking-giant",
+    keywords: ["openai", "03 pro", "ai reasoning", "strategic ai", "performance analysis"]
+  },
+  {
+    title: "Anthropic Launches Claude 4: A Strategic Pivot from Chatbots to Agentic Coding Infrastructure",
+    category: "AI NEWS",
+    categoryColor: "purple",
+    excerpt: "Anthropic's strategic shift towards agentic coding infrastructure with Claude 4, moving beyond traditional chatbot capabilities.",
+    description: "Analysis of Anthropic's Claude 4 launch and strategic pivot to agentic coding infrastructure.",
+    readTime: "10 min",
+    date: "2025-01-15",
+    slug: "anthropic-claude-4-agentic-coding-infrastructure",
+    keywords: ["anthropic", "claude 4", "agentic ai", "coding infrastructure", "ai development"]
+  },
+  {
+    title: "DeepSeek R1: The New Era of Open-Source AI",
+    category: "TECH NEWS", 
+    categoryColor: "green",
+    excerpt: "DeepSeek unveils revolutionary AI advancements with the R1 open-source model, marking a new era in accessible AI technology.",
+    description: "Comprehensive overview of DeepSeek's R1 model and its impact on the open-source AI landscape.",
+    readTime: "9 min",
+    date: "2025-01-20",
+    slug: "deepseek-r1-open-source-ai",
+    keywords: ["deepseek", "r1 model", "open source ai", "ai research", "machine learning"]
+  },
+  {
+    title: "Google Unveils Gemini 2.5 Pro: A Game-Changer in AI",
+    category: "AI NEWS",
+    categoryColor: "blue",
+    excerpt: "Google's latest Gemini 2.5 Pro model promises unprecedented capabilities in multimodal AI processing and reasoning.",
+    description: "Deep dive into Google's Gemini 2.5 Pro capabilities and potential impact on the AI industry.",
+    readTime: "11 min",
+    date: "2025-01-25",
+    slug: "google-gemini-2-5-pro-game-changer",
+    keywords: ["google", "gemini 2.5 pro", "multimodal ai", "ai advancement", "google ai"]
+  },
+  {
+    title: "The Future of AI-Powered Computer Control",
+    category: "TECH TRENDS",
+    categoryColor: "purple",
+    excerpt: "Exploring the emerging landscape of AI agents capable of autonomous computer control and task automation.",
+    description: "Analysis of AI-powered computer control systems and their implications for automation and productivity.",
+    readTime: "14 min",
+    date: "2025-02-01",
+    slug: "future-ai-powered-computer-control",
+    keywords: ["ai control", "computer automation", "ai agents", "task automation", "productivity ai"]
+  }
+]
+
 const blogPosts = [
   {
     title: "Instagram Growth Hacks That Actually Work in 2025",
@@ -412,9 +482,12 @@ function BlogPostCard({ post, index, setElementRef, isVisible }: {
 }
 
 export default function BlogPage() {
+  const [activeTab, setActiveTab] = useState<'general' | 'news'>('general')
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const { setElementRef, visibleElements } = useScrollAnimations(blogPosts.length, { threshold: 0.1 })
+  
+  const currentPosts = activeTab === 'general' ? blogPosts : newsArticles
+  const { setElementRef, visibleElements } = useScrollAnimations(currentPosts.length, { threshold: 0.1 })
 
   return (
     <div className="min-h-screen bg-dark">
@@ -440,6 +513,36 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* Tab Navigation */}
+      <section className="py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center mb-8">
+            <div className="bg-zinc-800 rounded-lg p-1 flex gap-1">
+              <button
+                onClick={() => setActiveTab('general')}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                  activeTab === 'general'
+                    ? 'bg-blue-500 text-white shadow-lg'
+                    : 'text-gray-400 hover:text-white hover:bg-zinc-700'
+                }`}
+              >
+                General
+              </button>
+              <button
+                onClick={() => setActiveTab('news')}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                  activeTab === 'news'
+                    ? 'bg-blue-500 text-white shadow-lg'
+                    : 'text-gray-400 hover:text-white hover:bg-zinc-700'
+                }`}
+              >
+                News
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Blog Posts Grid */}
       <section 
         ref={contentAnimation.elementRef}
@@ -447,9 +550,9 @@ export default function BlogPage() {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogPosts.map((post, index) => (
+            {currentPosts.map((post, index) => (
               <BlogPostCard 
-                key={index} 
+                key={`${activeTab}-${index}`} 
                 post={post} 
                 index={index} 
                 setElementRef={setElementRef}

@@ -29,7 +29,7 @@ export default function N8NAutomationsPage() {
           >
             <div className="mb-4">
               <span className="bg-red-600/20 text-red-400 px-4 py-2 rounded-full text-sm font-bold animate-pulse">
-                🚨 EARLY BIRD ENDS IN 72 HOURS 🚨
+                🚨 LIMITED TIME EARLY BIRD OFFER 🚨
               </span>
             </div>
 
@@ -59,24 +59,10 @@ export default function N8NAutomationsPage() {
 
             {/* Countdown Timer */}
             <div className="bg-zinc-900 border border-red-600/50 rounded-lg p-4 mb-8 max-w-lg mx-auto">
-              <p className="text-red-300 font-bold mb-2">⏰ EARLY BIRD DEADLINE:</p>
-              <div className="flex justify-center space-x-4 text-white">
-                <div className="text-center">
-                  <div className="text-2xl font-bold">02</div>
-                  <div className="text-xs">DAYS</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold">23</div>
-                  <div className="text-xs">HOURS</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold">45</div>
-                  <div className="text-xs">MINS</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold">12</div>
-                  <div className="text-xs">SECS</div>
-                </div>
+              <p className="text-red-300 font-bold mb-2">⏰ LIMITED TIME OFFER:</p>
+              <div className="text-center text-white">
+                <div className="text-lg font-bold">Early Bird Special Price</div>
+                <div className="text-sm">Price increases soon</div>
               </div>
             </div>
 
@@ -781,12 +767,12 @@ export default function N8NAutomationsPage() {
             ref={pricingAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}
           >
-            <p className="text-sm text-red-400 uppercase tracking-wider mb-4">🚨 FINAL WARNING</p>
+            <p className="text-sm text-red-400 uppercase tracking-wider mb-4">🚨 LIMITED TIME OFFER</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Last Chance To Join The <span className="text-purple-400">Automation Revolution</span>
             </h2>
             <p className="text-xl text-gray-400 mt-4 max-w-3xl mx-auto">
-              In 72 hours, this offer disappears and the price doubles. The cart closes for 6 months.
+              Take advantage of our early bird pricing while it's still available.
             </p>
           </div>
 
@@ -797,26 +783,12 @@ export default function N8NAutomationsPage() {
               <div className="bg-red-600/20 border border-red-500/50 rounded-lg p-4 mb-8">
                 <div className="flex items-center justify-center space-x-2 mb-2">
                   <span className="animate-pulse text-red-400">🚨</span>
-                  <span className="text-red-300 font-bold">EARLY BIRD EXPIRES IN:</span>
+                  <span className="text-red-300 font-bold">LIMITED TIME OFFER:</span>
                   <span className="animate-pulse text-red-400">🚨</span>
                 </div>
-                <div className="flex justify-center space-x-4 text-white">
-                  <div className="text-center">
-                    <div className="text-xl font-bold">02</div>
-                    <div className="text-xs">DAYS</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-xl font-bold">23</div>
-                    <div className="text-xs">HOURS</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-xl font-bold">45</div>
-                    <div className="text-xs">MINS</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-xl font-bold">12</div>
-                    <div className="text-xs">SECS</div>
-                  </div>
+                <div className="text-center text-white">
+                  <div className="text-lg font-bold">Early Bird Special Price</div>
+                  <div className="text-sm">Price increases soon</div>
                 </div>
               </div>
 
@@ -828,18 +800,18 @@ export default function N8NAutomationsPage() {
                 <div className="bg-zinc-800/50 rounded-lg p-6 mb-6">
                   <div className="flex items-center justify-center space-x-4 mb-4">
                     <div className="text-center">
-                      <span className="text-gray-400 line-through text-2xl">$3,438</span>
+                      <span className="text-gray-400 line-through text-2xl">$1,697</span>
                       <p className="text-xs text-gray-500">Total Value</p>
                     </div>
                     <div className="text-center">
-                      <span className="text-red-400 line-through text-2xl">$497</span>
+                      <span className="text-red-400 line-through text-2xl">$1,497</span>
                       <p className="text-xs text-gray-500">Regular Price</p>
                     </div>
                   </div>
                   
                   <div className="text-center">
                     <div className="text-6xl font-bold text-green-400 mb-2">$297</div>
-                    <p className="text-green-300 font-bold text-lg">Save $3,141 Today!</p>
+                    <p className="text-green-300 font-bold text-lg">Save $1,200 Today!</p>
                     <p className="text-gray-400 text-sm">One-time payment • No recurring fees • Lifetime access</p>
                   </div>
                 </div>

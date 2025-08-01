@@ -1043,14 +1043,14 @@ export default function ComfyUIWorkflowsPage() {
                     <span className="text-red-300 font-bold">Total Value</span>
                   </div>
                   <div className="flex items-center justify-center space-x-4 mb-2">
-                    <span className="text-gray-400 line-through text-xl">$497</span>
+                    <span className="text-gray-400 line-through text-xl">$997</span>
                     <span className="text-red-300 font-bold">Regular Price</span>
                   </div>
                 </div>
                 
-                <div className="text-6xl font-bold mb-2 text-orange-400">$197</div>
+                <div className="text-6xl font-bold mb-2 text-orange-400">$147</div>
                 <p className="text-gray-400">One-time payment • Lifetime access</p>
-                <p className="text-green-400 font-semibold">Save $300 Today Only!</p>
+                <p className="text-green-400 font-semibold">Save $850 Today Only!</p>
               </div>
 
               <div className="bg-orange-900/20 border border-orange-600/30 rounded-lg p-6 mb-8">
@@ -1076,7 +1076,7 @@ export default function ComfyUIWorkflowsPage() {
               </Link>
               
               <div className="space-y-2 text-sm">
-                <p className="text-orange-300 font-semibold">⏰ Price increases in 48 hours</p>
+                <p className="text-orange-300 font-semibold">⏰ Limited time offer - Price increasing soon</p>
                 <p className="text-gray-400">Join 847+ creators earning $5-15K monthly</p>
                 <p className="text-green-400">✅ Instant access • ✅ No recurring fees</p>
               </div>
@@ -1100,14 +1100,14 @@ export default function ComfyUIWorkflowsPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
             <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-8 scroll-fade-up ${urgencyAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div className="text-red-400 text-4xl mb-4">⏰</div>
-              <h3 className="text-2xl font-bold mb-4 text-red-300">Price Increase Timeline</h3>
+              <h3 className="text-2xl font-bold mb-4 text-red-300">Limited Time Pricing</h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center pb-3 border-b border-red-600/20">
-                  <span className="text-gray-300">Current Price (Next 48 hours)</span>
-                  <span className="text-green-400 font-bold">$197</span>
+                  <span className="text-gray-300">Early Bird Price</span>
+                  <span className="text-green-400 font-bold">$147</span>
                 </div>
                 <div className="flex justify-between items-center pb-3 border-b border-red-600/20">
-                  <span className="text-gray-300">After Early Bird Ends</span>
+                  <span className="text-gray-300">Regular Price</span>
                   <span className="text-red-400 font-bold">$497</span>
                 </div>
                 <div className="flex justify-between items-center pb-3 border-b border-red-600/20">
@@ -1116,7 +1116,7 @@ export default function ComfyUIWorkflowsPage() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-300">Your Savings Today</span>
-                  <span className="text-green-400 font-bold">$800</span>
+                  <span className="text-green-400 font-bold">$850</span>
                 </div>
               </div>
             </div>
@@ -1353,7 +1353,7 @@ export default function ComfyUIWorkflowsPage() {
             className={`scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}
           >
             <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-4 mb-8 inline-block">
-              <p className="text-red-300 font-semibold">⚠️ FINAL WARNING: Price increases in 48 hours - Don't miss out!</p>
+              <p className="text-red-300 font-semibold">⚠️ Limited time offer - Early bird pricing available now</p>
             </div>
             
             <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
