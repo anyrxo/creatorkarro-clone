@@ -6,6 +6,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { siteConfig, defaultSEO, schemas } from "@/config/seo";
 import { generateDynamicMeta } from "@/lib/meta-generator";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -171,6 +173,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
