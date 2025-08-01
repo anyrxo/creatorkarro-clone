@@ -79,11 +79,41 @@ export interface PBNMoneysite {
   }
 }
 
+export interface PBNTemplate {
+  id: string
+  name: string
+  theme: string
+  layout: string
+  plugins: string[]
+  contentTypes: string[]
+}
+
+export interface SafetyProtocol {
+  id: string
+  name: string
+  type: string
+  requirements: string[]
+  implementation: string[]
+}
+
+export interface LinkingMatrix {
+  innerLinks: number
+  moneyLinks: number
+  bufferLinks: number
+  crossLinks: number
+  distribution: Array<{
+    from: string
+    to: string
+    anchorText: string
+    linkType: string
+  }>
+}
+
 export class PBNQuickDeployEngine {
   private networks: Map<string, PBNNetwork> = new Map()
   private domainPool: PBNDomain[] = []
-  private templates: Map<string, any> = new Map()
-  private safetyProtocols: Map<string, any> = new Map()
+  private templates: Map<string, PBNTemplate> = new Map()
+  private safetyProtocols: Map<string, SafetyProtocol> = new Map()
   
   constructor() {
     this.initializeDomainPool()
@@ -546,7 +576,7 @@ export class PBNQuickDeployEngine {
     targetKeywords: string[]
   ): PBNDomain[] {
     // Filter domains by authority and relevance
-    let availableDomains = this.domainPool.filter(domain => 
+    const availableDomains = this.domainPool.filter(domain => 
       domain.authority >= minAuthority && 
       domain.status !== 'deindexed' &&
       domain.status !== 'flagged'
@@ -696,7 +726,7 @@ export class PBNQuickDeployEngine {
   }
 
   // Generate comprehensive content strategy
-  private generateContentStrategy(domains: PBNDomain[], linkingMatrix: any) {
+  private generateContentStrategy(domains: PBNDomain[], linkingMatrix: LinkingMatrix) {
     const totalPosts = domains.reduce((sum, domain) => {
       return sum + (domain.contentPlan.postsPerMonth * 12) // Annual plan
     }, 0)

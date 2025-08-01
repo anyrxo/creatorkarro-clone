@@ -88,6 +88,74 @@ export interface RankAlert {
   acknowledged: boolean
 }
 
+export interface CompetitorAnalysis {
+  domain: string
+  keywords: number
+  avgPosition: number
+  visibility: number
+  estimatedTraffic: number
+  rankingDistribution: {
+    top3: number
+    top10: number
+    top20: number
+    top50: number
+  }
+}
+
+export interface VisibilityMetrics {
+  score: number
+  change: number
+  trend: 'up' | 'down' | 'stable'
+  estimatedTraffic: number
+  totalImpressions: number
+  averagePosition: number
+}
+
+export interface AlertThresholds {
+  rankingDrop: number
+  rankingGain: number
+  positionChange: number
+  visibilityChange: number
+  trafficChange: number
+}
+
+export interface KeywordAnalysis {
+  keyword: string
+  positions: number[]
+  urls: string[]
+  changes: number[]
+  averagePosition: number
+  bestPosition: number
+  worstPosition: number
+  volatility: number
+  trend: 'improving' | 'declining' | 'stable'
+  searchVolume: number
+  difficulty: number
+}
+
+export interface RankingReport {
+  tracker: {
+    id: string
+    domain: string
+    totalKeywords: number
+    lastUpdate: string
+  }
+  summary: {
+    averagePosition: number
+    visibility: VisibilityMetrics
+    topKeywords: KeywordAnalysis[]
+    improvements: number
+    declines: number
+  }
+  alerts: RankAlert[]
+  competitors: CompetitorAnalysis[]
+  timeframe: {
+    start: string
+    end: string
+    dataPoints: number
+  }
+}
+
 export class RankTrackingEngine {
   private trackers: Map<string, RankTracker> = new Map()
   private rankingHistory: Map<string, RankingData[]> = new Map()
@@ -340,7 +408,7 @@ export class RankTrackingEngine {
       locations: string[]
       devices: string[]
     }
-  ): Promise<any[]> {
+  ): Promise<CompetitorAnalysis[]> {
     const analysis = []
 
     for (const competitor of competitors) {
@@ -367,7 +435,7 @@ export class RankTrackingEngine {
     return analysis.sort((a, b) => b.keywords - a.keywords)
   }
 
-  private calculateVisibility(rankings: RankingData[]): any {
+  private calculateVisibility(rankings: RankingData[]): VisibilityMetrics {
     const ctrCurve = [
       0.3167, // Position 1
       0.1551, // Position 2
@@ -517,7 +585,7 @@ export class RankTrackingEngine {
     trackerId: string,
     currentRankings: RankingData[],
     previousRankings: RankingData[],
-    thresholds: any
+    thresholds: AlertThresholds
   ) {
     const alerts: RankAlert[] = []
 
@@ -620,7 +688,7 @@ export class RankTrackingEngine {
     return features
   }
 
-  async generateRankingReport(trackerId: string): Promise<any> {
+  async generateRankingReport(trackerId: string): Promise<RankingReport> {
     const tracker = this.trackers.get(trackerId)
     if (!tracker) {
       throw new Error('Tracker not found')
@@ -630,7 +698,7 @@ export class RankTrackingEngine {
     const alerts = this.alerts.get(trackerId) || []
 
     // Group rankings by keyword for analysis
-    const keywordAnalysis = new Map<string, any>()
+    const keywordAnalysis = new Map<string, KeywordAnalysis>()
     
     rankings.forEach(ranking => {
       if (!keywordAnalysis.has(ranking.keyword)) {

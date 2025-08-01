@@ -73,11 +73,30 @@ export interface SocialAccount {
   proxy?: string
 }
 
+export interface SocialTemplate {
+  id: string
+  type: 'comment' | 'share-text' | 'hashtag-set'
+  platform: string
+  content: string[]
+  variables: string[]
+  tone: 'professional' | 'casual' | 'enthusiastic' | 'neutral'
+}
+
+export interface CampaignMetrics {
+  totalActions: number
+  estimatedReach: number
+  signalStrength: number
+  indexingBoost: number
+  completionRate: number
+  platformBreakdown: Record<string, number>
+  estimatedSEOImpact: number
+}
+
 export class SocialSignalAutomationEngine {
   private platforms: Map<string, SocialPlatform> = new Map()
   private campaigns: Map<string, SocialSignalCampaign> = new Map()
   private accounts: Map<string, SocialAccount[]> = new Map()
-  private templates: Map<string, any> = new Map()
+  private templates: Map<string, SocialTemplate> = new Map()
   
   constructor() {
     this.initializePlatforms()
@@ -498,10 +517,10 @@ export class SocialSignalAutomationEngine {
   // Calculate comprehensive campaign metrics
   private calculateCampaignMetrics(
     platforms: string[], 
-    actionsPerUrl: any, 
+    actionsPerUrl: Record<string, number>, 
     targetUrls: string[], 
     totalActions: number
-  ) {
+  ): CampaignMetrics {
     const platformWeights = platforms.map(p => this.platforms.get(p)?.signalWeight || 5)
     const averageWeight = platformWeights.reduce((sum, w) => sum + w, 0) / platformWeights.length
     

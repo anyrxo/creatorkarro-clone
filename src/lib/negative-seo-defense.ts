@@ -64,6 +64,44 @@ export interface DefenseSystem {
   lastAudit: string
 }
 
+export interface DefenseReport {
+  system: {
+    id: string
+    domain: string
+    protectionLevel: string
+    healthScore: number
+    lastAudit: string
+  }
+  backlinkProfile: {
+    total: number
+    healthy: number
+    suspicious: number
+    toxic: number
+    disavowed: number
+  }
+  threatSummary: {
+    total: number
+    critical: number
+    high: number
+    medium: number
+    low: number
+    resolved: number
+  }
+  activeProtocols: Array<{
+    name: string
+    type: string
+    effectiveness: number
+    automationLevel: string
+  }>
+  recommendations: string[]
+  estimatedProtection: {
+    attacksBlocked: number
+    toxicLinksIdentified: number
+    contentTheftsPrevented: number
+    fakeReviewsDisputed: number
+  }
+}
+
 export class NegativeSEODefenseEngine {
   private defenseSystems: Map<string, DefenseSystem> = new Map()
   
@@ -609,7 +647,7 @@ domain:*.seo-spam-directory.net
     return disavowContent
   }
 
-  async generateDefenseReport(systemId: string): Promise<any> {
+  async generateDefenseReport(systemId: string): Promise<DefenseReport> {
     const system = this.defenseSystems.get(systemId)
     if (!system) {
       throw new Error('Defense system not found')
