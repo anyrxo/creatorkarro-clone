@@ -439,7 +439,7 @@ export default function AlgorithmDefensePage() {
                     {selectedSystem.vulnerabilities.map((vuln, index) => (
                       <div key={index} className="p-4 border rounded-lg space-y-2">
                         <div className="flex items-center justify-between">
-                          <h4 className="font-medium">{vuln.type.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</h4>
+                          <h4 className="font-medium">{vuln.type.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase())}</h4>
                           <div className="flex items-center gap-2">
                             <Badge variant={getSeverityColor(vuln.severity)}>
                               {vuln.severity}
