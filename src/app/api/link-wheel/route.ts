@@ -24,7 +24,7 @@ export async function GET(request: NextRequest) {
       }
       
       if (format === 'csv') {
-        const csvData = this.generateWheelCSV(wheel)
+        const csvData = generateWheelCSV(wheel)
         return new NextResponse(csvData, {
           headers: {
             'Content-Type': 'text/csv',
