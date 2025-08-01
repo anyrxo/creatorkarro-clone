@@ -68,11 +68,17 @@ export default function ParasiteCampaignDashboard({
 }: ParasiteCampaignDashboardProps) {
   const [activeTab, setActiveTab] = useState('overview')
   const [loading, setLoading] = useState(false)
-  const [newCampaign, setNewCampaign] = useState({
+  const [newCampaign, setNewCampaign] = useState<{
+    name: string
+    strategy: 'aggressive' | 'social-authority' | 'educational'
+    keywords: string
+    platforms: string[]
+    budget: number
+  }>({
     name: '',
-    strategy: 'aggressive' as const,
+    strategy: 'aggressive',
     keywords: '',
-    platforms: [] as string[],
+    platforms: [],
     budget: 1000
   })
 
