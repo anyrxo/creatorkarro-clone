@@ -58,7 +58,7 @@ export default function N8NAutomationsPage() {
             </div>
 
             {/* Countdown Timer */}
-            <div className="bg-red-900/30 border border-red-600/50 rounded-lg p-4 mb-8 max-w-lg mx-auto">
+            <div className="bg-zinc-900 border border-red-600/50 rounded-lg p-4 mb-8 max-w-lg mx-auto">
               <p className="text-red-300 font-bold mb-2">⏰ EARLY BIRD DEADLINE:</p>
               <div className="flex justify-center space-x-4 text-white">
                 <div className="text-center">
@@ -110,7 +110,7 @@ export default function N8NAutomationsPage() {
       </section>
 
       {/* Problem Section */}
-      <section className="section-spacing bg-red-900/10">
+      <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div 
             ref={problemAnimation.elementRef}
@@ -126,7 +126,7 @@ export default function N8NAutomationsPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className={`bg-red-900/20 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
+            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div className="text-red-400 text-3xl mb-4">😫</div>
               <h3 className="text-xl font-bold mb-3 text-red-300">Still Doing Everything Manually</h3>
               <p className="text-gray-400 text-sm">
@@ -134,7 +134,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-red-900/20 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="text-red-400 text-3xl mb-4">⏰</div>
               <h3 className="text-xl font-bold mb-3 text-red-300">Burning 40+ Hours/Week</h3>
               <p className="text-gray-400 text-sm">
@@ -142,7 +142,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-red-900/20 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
               <div className="text-red-400 text-3xl mb-4">🔥</div>
               <h3 className="text-xl font-bold mb-3 text-red-300">"Too Technical" Excuse</h3>
               <p className="text-gray-400 text-sm">
@@ -150,7 +150,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-red-900/20 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
+            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
               <div className="text-red-400 text-3xl mb-4">💸</div>
               <h3 className="text-xl font-bold mb-3 text-red-300">Leaving $50K+ On The Table</h3>
               <p className="text-gray-400 text-sm">
@@ -158,7 +158,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-red-900/20 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
+            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
               <div className="text-red-400 text-3xl mb-4">📈</div>
               <h3 className="text-xl font-bold mb-3 text-red-300">Competitors Scaling 10x Faster</h3>
               <p className="text-gray-400 text-sm">
@@ -166,7 +166,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-red-900/20 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
+            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
               <div className="text-red-400 text-3xl mb-4">😴</div>
               <h3 className="text-xl font-bold mb-3 text-red-300">Business Dies When You Sleep</h3>
               <p className="text-gray-400 text-sm">
@@ -205,7 +205,7 @@ export default function N8NAutomationsPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className={`bg-green-900/20 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
+            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div className="text-green-400 text-4xl mb-4">🧩</div>
               <h3 className="text-xl font-bold mb-3 text-green-300">Drag & Drop Interface</h3>
               <p className="text-gray-400 text-sm">
@@ -213,7 +213,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-green-900/20 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="text-green-400 text-4xl mb-4">🔗</div>
               <h3 className="text-xl font-bold mb-3 text-green-300">800+ App Integrations</h3>
               <p className="text-gray-400 text-sm">
@@ -221,7 +221,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-green-900/20 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
               <div className="text-green-400 text-4xl mb-4">🤖</div>
               <h3 className="text-xl font-bold mb-3 text-green-300">AI-Powered Everything</h3>
               <p className="text-gray-400 text-sm">
@@ -229,7 +229,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-green-900/20 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
+            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
               <div className="text-green-400 text-4xl mb-4">⚡</div>
               <h3 className="text-xl font-bold mb-3 text-green-300">Deploy In Minutes</h3>
               <p className="text-gray-400 text-sm">
@@ -237,7 +237,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-green-900/20 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
+            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
               <div className="text-green-400 text-4xl mb-4">💰</div>
               <h3 className="text-xl font-bold mb-3 text-green-300">$97/Month vs $50K Budget</h3>
               <p className="text-gray-400 text-sm">
@@ -245,7 +245,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
 
-            <div className={`bg-green-900/20 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
+            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
               <div className="text-green-400 text-4xl mb-4">🌍</div>
               <h3 className="text-xl font-bold mb-3 text-green-300">Works 24/7 Globally</h3>
               <p className="text-gray-400 text-sm">
@@ -737,19 +737,19 @@ export default function N8NAutomationsPage() {
             </div>
 
             <div className={`grid md:grid-cols-3 gap-8 mb-12 scroll-fade-up ${stackedAnimation.isVisible ? 'visible' : ''}`}>
-              <div className="bg-red-900/20 border border-red-600/30 rounded-lg p-6 text-center">
+              <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-6 text-center">
                 <h3 className="text-xl font-bold mb-3 text-red-300">Hiring Developers</h3>
                 <p className="text-3xl font-bold text-red-400 mb-2">$50,000+</p>
                 <p className="text-gray-400 text-sm">Plus months of development time and ongoing maintenance costs</p>
               </div>
               
-              <div className="bg-red-900/20 border border-red-600/30 rounded-lg p-6 text-center">
+              <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-6 text-center">
                 <h3 className="text-xl font-bold mb-3 text-red-300">Automation Agency</h3>
                 <p className="text-3xl font-bold text-red-400 mb-2">$25,000+</p>
                 <p className="text-gray-400 text-sm">For basic setup, no training, no ownership, ongoing fees</p>
               </div>
               
-              <div className="bg-green-900/20 border border-green-600/30 rounded-lg p-6 text-center relative">
+              <div className="bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center relative">
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">BEST VALUE</span>
                 </div>
@@ -899,19 +899,19 @@ export default function N8NAutomationsPage() {
 
               {/* Guarantees */}
               <div className="mt-8 space-y-4">
-                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                <div className="bg-zinc-900 border border-green-500/30 rounded-lg p-4">
                   <h4 className="text-green-300 font-bold mb-2">🛡️ 60-Day Money-Back Guarantee</h4>
                   <p className="text-gray-400 text-sm">Try everything risk-free. If you don't save 40+ hours in the first month, get your money back.</p>
                 </div>
                 
-                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                <div className="bg-zinc-900 border border-blue-500/30 rounded-lg p-4">
                   <h4 className="text-blue-300 font-bold mb-2">⚡ Instant Access</h4>
                   <p className="text-gray-400 text-sm">Get immediate access to all 12 modules, workflows, and bonuses. Start automating in the next 30 minutes.</p>
                 </div>
               </div>
 
               {/* Final Warning */}
-              <div className="mt-8 bg-red-900/20 border border-red-500/50 rounded-lg p-6">
+              <div className="mt-8 bg-zinc-900 border border-red-500/50 rounded-lg p-6">
                 <h4 className="text-red-300 font-bold text-lg mb-2">⚠️ FINAL WARNING</h4>
                 <p className="text-gray-300 mb-3">
                   In 72 hours, this offer disappears forever. The price doubles to $797 and the cart closes for 6 months.
@@ -1049,7 +1049,7 @@ export default function N8NAutomationsPage() {
           </div>
 
           <div className={`text-center mt-16 scroll-fade-up ${faqAnimation.isVisible ? 'visible' : ''}`}>
-            <div className="bg-red-900/20 border border-red-500/50 rounded-lg p-8 max-w-3xl mx-auto mb-8">
+            <div className="bg-zinc-900 border border-red-500/50 rounded-lg p-8 max-w-3xl mx-auto mb-8">
               <h3 className="text-2xl font-bold mb-4 text-red-300">🚨 No More Excuses</h3>
               <p className="text-lg text-gray-300 mb-6">
                 Every question answered. Every objection handled. Every excuse destroyed.
@@ -1252,7 +1252,7 @@ export default function N8NAutomationsPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-12">
-              <div className="bg-red-900/20 border border-red-600/30 rounded-lg p-8">
+              <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-8">
                 <h3 className="text-2xl font-bold mb-4 text-red-300">😫 Path #1: Stay Manual</h3>
                 <ul className="text-left space-y-3 text-gray-400 mb-6">
                   <li>❌ Keep working 60+ hours/week</li>
@@ -1265,7 +1265,7 @@ export default function N8NAutomationsPage() {
                 <p className="text-red-400 font-bold">Cost: Your dreams, your freedom, your future</p>
               </div>
 
-              <div className="bg-green-900/20 border border-green-600/30 rounded-lg p-8">
+              <div className="bg-zinc-900 border border-green-600/30 rounded-lg p-8">
                 <h3 className="text-2xl font-bold mb-4 text-green-300">🚀 Path #2: Automate Everything</h3>
                 <ul className="text-left space-y-3 text-gray-400 mb-6">
                   <li>✅ Build systems that work 24/7</li>

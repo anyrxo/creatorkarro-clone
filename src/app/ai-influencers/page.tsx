@@ -74,7 +74,7 @@ export default function AIInfluencersPage() {
       </section>
 
       {/* Problem/Pain Points Section */}
-      <section className="section-spacing bg-red-900/10">
+      <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div 
             ref={problemAnimation.elementRef}
@@ -119,7 +119,7 @@ export default function AIInfluencersPage() {
           </div>
 
           <div className={`text-center mt-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}>
-            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-8 max-w-3xl mx-auto">
+            <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 max-w-3xl mx-auto card-hover">
               <h3 className="text-2xl font-bold mb-4 text-red-400">The Real Cost of Traditional Content Creation</h3>
               <p className="text-lg text-gray-300 mb-4">
                 Most creators spend <span className="text-red-400 font-bold">80% of their time</span> on content creation and only 
@@ -134,7 +134,7 @@ export default function AIInfluencersPage() {
       </section>
 
       {/* The Solution Section */}
-      <section className="section-spacing bg-green-900/10">
+      <section className="section-spacing bg-zinc-900/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div 
             ref={solutionAnimation.elementRef}
@@ -201,7 +201,7 @@ export default function AIInfluencersPage() {
           </div>
 
           <div className={`text-center scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}>
-            <div className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border border-green-500/30 rounded-lg p-8 max-w-4xl mx-auto">
+            <div className="bg-zinc-900 border border-green-500/30 rounded-lg p-8 max-w-4xl mx-auto card-hover">
               <h3 className="text-3xl font-bold mb-4 text-green-400">This Changes Everything</h3>
               <p className="text-lg text-gray-300 mb-6">
                 Instead of being limited by your personal capacity, you can create an entire network of AI influencers, 
@@ -1006,7 +1006,7 @@ export default function AIInfluencersPage() {
       </section>
 
       {/* Urgency & Scarcity Section */}
-      <section className="section-spacing bg-red-900/10 border-t border-red-500/20">
+      <section className="section-spacing border-t border-red-500/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div 
             ref={urgencyAnimation.elementRef}
@@ -1015,7 +1015,7 @@ export default function AIInfluencersPage() {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-400">⚠️ This Offer Won't Last Forever</h2>
               
-              <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-8 mb-8">
+              <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 mb-8 card-hover">
                 <h3 className="text-2xl font-bold mb-4 text-red-300">Why I'm Limiting This Offer</h3>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>

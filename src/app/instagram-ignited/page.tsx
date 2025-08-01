@@ -115,13 +115,13 @@ export default function InstagramIgnitedPage() {
       </section>
 
       {/* PROBLEM Section */}
-      <section className="section-spacing bg-red-900/20 border-t border-red-900/30">
+      <section className="section-spacing border-t border-red-900/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
             ref={problemAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}
           >
-            <div className="inline-block bg-red-900/30 border border-red-500 rounded-full px-4 py-2 mb-6">
+            <div className="inline-block bg-zinc-900 border border-red-500 rounded-full px-4 py-2 mb-6">
               <span className="text-red-400 text-sm font-semibold uppercase tracking-wider">BRUTAL TRUTH</span>
             </div>
             <h2 className="text-3xl md:text-6xl font-bold mb-6 text-red-400">
@@ -168,7 +168,7 @@ export default function InstagramIgnitedPage() {
               <div
                 key={index}
                 ref={problemCards.setElementRef(index)}
-                className={`bg-red-900/10 border border-red-900/30 rounded-2xl p-6 hover:bg-red-900/20 transition-all duration-300 hover-lift scroll-fade-up ${problemCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
+                className={`bg-zinc-900 border border-red-900/30 rounded-2xl p-6 hover:bg-red-900/20 transition-all duration-300 hover-lift scroll-fade-up ${problemCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
                 <div className="text-4xl mb-4">{problem.icon}</div>
                 <h3 className="text-xl font-bold mb-4 text-red-400">{problem.title}</h3>
@@ -186,7 +186,7 @@ export default function InstagramIgnitedPage() {
                 Every day you wait, your competitors get further ahead. Every month you stay stuck, that's $5K-$20K in lost income. 
                 Every year you struggle with Instagram, that's a potential $100K+ business that never gets built.
               </p>
-              <div className="bg-red-900/20 border border-red-500 rounded-lg p-6">
+              <div className="bg-zinc-900 border border-red-500 rounded-lg p-6">
                 <p className="text-xl font-bold text-red-400 mb-2">
                   💔 You're not just losing followers... you're losing your dreams.
                 </p>
@@ -206,7 +206,7 @@ export default function InstagramIgnitedPage() {
             ref={solutionAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}
           >
-            <div className="inline-block bg-blue-900/30 border border-blue-500 rounded-full px-4 py-2 mb-6">
+            <div className="inline-block bg-zinc-900 border border-blue-500 rounded-full px-4 py-2 mb-6">
               <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">THE SOLUTION</span>
             </div>
             <h2 className="text-3xl md:text-6xl font-bold mb-6">
@@ -627,7 +627,7 @@ export default function InstagramIgnitedPage() {
             ref={pricingAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}
           >
-            <div className="inline-block bg-green-900/30 border border-green-500 rounded-full px-4 py-2 mb-6">
+            <div className="inline-block bg-zinc-900 border border-green-500 rounded-full px-4 py-2 mb-6">
               <span className="text-green-400 text-sm font-semibold uppercase tracking-wider">INSANE VALUE</span>
             </div>
             <h2 className="text-3xl md:text-6xl font-bold mb-6">
@@ -687,7 +687,7 @@ export default function InstagramIgnitedPage() {
             
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Instagram Growth Agency */}
-              <div className="bg-red-900/20 border border-red-500 rounded-2xl p-6 text-center">
+              <div className="bg-zinc-900 border border-red-500 rounded-2xl p-6 text-center">
                 <h4 className="text-xl font-bold mb-4 text-red-400">Instagram Growth Agency</h4>
                 <div className="text-3xl font-black mb-4 text-red-400">$2,000-$5,000</div>
                 <div className="text-sm text-gray-400 mb-6">PER MONTH</div>
@@ -740,7 +740,7 @@ export default function InstagramIgnitedPage() {
 
           {/* Scarcity & Urgency */}
           <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-            <div className="bg-red-900/30 border border-red-500 rounded-3xl p-8 mb-8">
+            <div className="bg-zinc-900 border border-red-500 rounded-3xl p-8 mb-8">
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400">
                 ⚠️ WARNING: This Deal EXPIRES Soon ⚠️
               </h3>
@@ -788,7 +788,7 @@ export default function InstagramIgnitedPage() {
                 ✅ Instant Access • ✅ Lifetime Updates • ✅ 30-Day Money-Back Guarantee
               </p>
               
-              <div className="bg-green-900/20 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
+              <div className="bg-zinc-900 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
                 <h4 className="text-xl font-bold text-green-400 mb-3">💯 Zero-Risk Guarantee</h4>
                 <p className="text-gray-300">
                   Try Instagram Ignited for 30 days. If you don't see massive improvement in your growth, 
