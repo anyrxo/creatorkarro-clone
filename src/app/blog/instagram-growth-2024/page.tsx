@@ -128,7 +128,7 @@ export default function InstagramGrowth2024() {
                   <h3 className="text-xl font-bold text-white mb-2">The Notes Goldmine</h3>
                   <p className="text-gray-400 mb-3">Instagram Notes (the status updates) get 3x more engagement than stories. Post controversial opinions or questions daily.</p>
                   <div className="bg-zinc-900 rounded-lg p-4">
-                    <p className="text-sm text-gray-300"><span className="text-blue-400 font-semibold">Example:</span> "Hot take: Carousels > Reels in 2024" got 500+ DMs</p>
+                    <p className="text-sm text-gray-300"><span className="text-blue-400 font-semibold">Example:</span> "Hot take: Carousels &gt; Reels in 2024" got 500+ DMs</p>
                   </div>
                 </div>
               </div>
@@ -178,7 +178,7 @@ export default function InstagramGrowth2024() {
                 <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">6</div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">The Comment Pod Evolution</h3>
-                  <p className="text-gray-400 mb-3">Create topic-specific engagement groups. 10 niche accounts > 100 random accounts.</p>
+                  <p className="text-gray-400 mb-3">Create topic-specific engagement groups. 10 niche accounts &gt; 100 random accounts.</p>
                   <div className="bg-zinc-900 rounded-lg p-4">
                     <p className="text-sm text-gray-300"><span className="text-blue-400 font-semibold">Rule:</span> Meaningful 7+ word comments only</p>
                   </div>
@@ -216,7 +216,7 @@ export default function InstagramGrowth2024() {
               <div className="flex items-start gap-4">
                 <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">9</div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">Broadcast Channels > Everything</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">Broadcast Channels &gt; Everything</h3>
                   <p className="text-gray-400 mb-3">Start a broadcast channel. It's Instagram's push notification system. Direct access to your audience.</p>
                   <div className="bg-zinc-900 rounded-lg p-4">
                     <p className="text-sm text-gray-300"><span className="text-blue-400 font-semibold">Conversion:</span> 25% of followers join channels</p>

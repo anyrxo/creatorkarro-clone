@@ -244,7 +244,7 @@ const blogPosts = [
 export default function BlogPage() {
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const postAnimations = useScrollAnimations(blogPosts.length, { threshold: 0.1 })
+  const { setElementRef, visibleElements } = useScrollAnimations(blogPosts.length, { threshold: 0.1 })
 
   const getCategoryColor = (color: string) => {
     const colors: { [key: string]: string } = {
@@ -291,8 +291,8 @@ export default function BlogPage() {
             {blogPosts.map((post, index) => (
               <article 
                 key={index}
-                ref={postAnimations[index].elementRef}
-                className={`bg-zinc-900 rounded-2xl p-8 hover:bg-zinc-800 transition-all duration-300 group cursor-pointer hover-lift scroll-fade-up ${postAnimations[index].isVisible ? 'visible' : ''}`}
+                ref={setElementRef(index)}
+                className={`bg-zinc-900 rounded-2xl p-8 hover:bg-zinc-800 transition-all duration-300 group cursor-pointer hover-lift scroll-fade-up ${visibleElements[index] ? 'visible' : ''}`}
               >
                 <Link href={`/blog/${post.slug}`} className="block">
                   <div className="mb-6">

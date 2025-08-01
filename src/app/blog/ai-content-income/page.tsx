@@ -285,7 +285,7 @@ export default function AIContentIncome() {
           
           <div className="space-y-6">
             <div className="bg-zinc-900 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-blue-400 mb-3">1. Quality > Quantity Always Wins</h3>
+              <h3 className="text-xl font-bold text-blue-400 mb-3">1. Quality &gt; Quantity Always Wins</h3>
               <p className="text-gray-300">
                 I generate 10-15 high-quality pieces instead of 100 mediocre ones. Clients pay premium for AI content that doesn't look like AI content.
               </p>
