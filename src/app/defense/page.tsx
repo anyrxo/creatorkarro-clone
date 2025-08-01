@@ -604,7 +604,7 @@ export default function NegativeSEODefensePage() {
                   <h3 className="text-xl font-semibold text-white mb-2">No Defense Systems Active</h3>
                   <p className="text-gray-400 mb-4">Deploy a defense system to start protecting your domain</p>
                   <Button
-                    onClick={() => document.querySelector('[value="deploy"]')?.click()}
+                    onClick={() => (document.querySelector('[value="deploy"]') as HTMLElement)?.click()}
                     className="bg-red-600 hover:bg-red-700 text-white"
                   >
                     Deploy First Defense System
