@@ -69,7 +69,10 @@ export function getGeoData(request: NextRequest): GeoData {
 
 // Advanced A/B testing with behavioral targeting
 export function getABTestVariant(request: NextRequest): ABTestVariant {
-  const ip = request.ip || request.headers.get('x-forwarded-for') || ''
+  const ip = request.headers.get('x-forwarded-for') || 
+            request.headers.get('x-real-ip') || 
+            request.headers.get('x-vercel-forwarded-for') || 
+            ''
   const userAgent = request.headers.get('user-agent') || ''
   const referer = request.headers.get('referer') || ''
   
