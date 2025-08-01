@@ -15,22 +15,19 @@ const existingPosts = [
   'whop-clipping'
 ]
 
-// Generate static params for known blog posts
-export async function generateStaticParams() {
-  // Return empty array to allow dynamic generation of all routes
-  return []
-}
-
-interface BlogPostPageProps {
-  params: {
-    slug: string
-  }
-}
-
-export default function BlogPostPage({ params }: BlogPostPageProps) {
+export default function BlogPostPage({ 
+  params 
+}: { 
+  params: { slug: string } 
+}) {
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const contentAnimation = useScrollAnimation({ threshold: 0.1 })
   const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
+
+  // Ensure we have a slug
+  if (!params?.slug) {
+    notFound()
+  }
 
   // If this is one of our existing posts, redirect to the actual page
   if (existingPosts.includes(params.slug)) {
