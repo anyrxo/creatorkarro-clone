@@ -14,12 +14,13 @@ import {
 } from "@/lib/international-seo"
 
 interface Props {
-  params: { country: string }
+  params: Promise<{ country: string }>
 }
 
 // Generate metadata for country-specific home pages
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const countryCode = params.country.toUpperCase()
+  const resolvedParams = await params
+  const countryCode = resolvedParams.country.toUpperCase()
   
   if (!INTERNATIONAL_MARKETS[countryCode]) {
     return {}
@@ -51,8 +52,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function CountryHomePage({ params }: Props) {
-  const countryCode = params.country.toUpperCase()
+export default async function CountryHomePage({ params }: Props) {
+  const resolvedParams = await params
+  const countryCode = resolvedParams.country.toUpperCase()
   
   // Return 404 if country not supported
   if (!INTERNATIONAL_MARKETS[countryCode]) {
