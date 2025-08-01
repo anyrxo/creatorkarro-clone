@@ -283,7 +283,7 @@ export default function AIInfluencerTrends() {
                   <p className="text-gray-400 mb-4">Virtual influencers creating content together</p>
                   
                   <div className="bg-zinc-800 rounded-lg p-6">
-                    <h4 className="text-white font-semibold mb-3">Collaboration types:</h3>
+                    <h4 className="text-white font-semibold mb-3">Collaboration types:</h4>
                     <ul className="space-y-2 text-gray-300">
                       <li>• Joint photoshoots and campaigns</li>
                       <li>• Cross-promotion between AI accounts</li>

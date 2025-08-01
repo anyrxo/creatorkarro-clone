@@ -386,7 +386,7 @@ export default function N8nBeginnersGuide() {
                   <h4 className="text-white font-semibold mb-2">Notify Your Team</h4>
                   <p className="text-gray-400 mb-2">Alert sales for hot leads</p>
                   <div className="bg-zinc-800 rounded p-3">
-                    <code className="text-sm text-gray-300">IF company size > 50 → Slack notification to sales</code>
+                    <code className="text-sm text-gray-300">IF company size &gt; 50 → Slack notification to sales</code>
                   </div>
                 </div>
               </div>

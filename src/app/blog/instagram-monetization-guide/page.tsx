@@ -61,7 +61,7 @@ export default function InstagramMonetizationGuide() {
                     <p>• Micro-niches pay more</p>
                     <p>• Multiple revenue streams</p>
                     <p>• Can profit in 30 days</p>
-                    <p>• Authenticity > perfection</p>
+                    <p>• Authenticity &gt; perfection</p>
                   </div>
                 </div>
               </div>
@@ -486,10 +486,10 @@ export default function InstagramMonetizationGuide() {
             <div className="bg-zinc-800 rounded-xl p-6">
               <h3 className="text-xl font-bold text-green-400 mb-4">📊 Track What Matters</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>• Link clicks > likes</li>
-                <li>• DMs > comments</li>
-                <li>• Sales > followers</li>
-                <li>• Email signups > reach</li>
+                <li>• Link clicks &gt; likes</li>
+                <li>• DMs &gt; comments</li>
+                <li>• Sales &gt; followers</li>
+                <li>• Email signups &gt; reach</li>
               </ul>
             </div>
             

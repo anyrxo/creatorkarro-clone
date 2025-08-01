@@ -135,7 +135,7 @@ export default function InstagramMistakesLessons() {
                       </div>
                       <div className="flex items-center gap-3">
                         <span className="text-pink-400">2023:</span>
-                        <span className="text-gray-300">DMs and shares > likes</span>
+                        <span className="text-gray-300">DMs and shares &gt; likes</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <span className="text-pink-400">2024:</span>
@@ -180,7 +180,7 @@ export default function InstagramMistakesLessons() {
                     <ul className="space-y-2 text-gray-300">
                       <li>• Your weird is your superpower</li>
                       <li>• Authenticity beats perfection</li>
-                      <li>• Personal stories > generic tips</li>
+                      <li>• Personal stories &gt; generic tips</li>
                       <li>• Vulnerability creates connection</li>
                       <li>• Your failures are content gold</li>
                     </ul>
@@ -198,7 +198,7 @@ export default function InstagramMistakesLessons() {
                   <p className="text-gray-400 mb-4">Broadcasting instead of conversing</p>
                   
                   <div className="bg-zinc-800 rounded-lg p-6">
-                    <h4 className="text-white font-semibold mb-3">Community > Audience:</h4>
+                    <h4 className="text-white font-semibold mb-3">Community &gt; Audience:</h4>
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <p className="text-pink-400 font-semibold mb-2">Before (Audience):</p>
@@ -290,7 +290,7 @@ export default function InstagramMistakesLessons() {
           
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-white mb-3">1. Engagement Rate > Follower Count</h3>
+              <h3 className="text-xl font-bold text-white mb-3">1. Engagement Rate &gt; Follower Count</h3>
               <p className="text-gray-300">I'd rather have 1,000 true fans who buy than 100,000 ghosts who scroll.</p>
             </div>
             
@@ -311,7 +311,7 @@ export default function InstagramMistakesLessons() {
             
             <div className="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-xl p-6">
               <h3 className="text-xl font-bold text-white mb-3">5. Test Everything, Assume Nothing</h3>
-              <p className="text-gray-300">What works for others might not work for you. Data > opinions.</p>
+              <p className="text-gray-300">What works for others might not work for you. Data &gt; opinions.</p>
             </div>
             
             <div className="bg-gradient-to-r from-red-500/10 to-pink-500/10 rounded-xl p-6">

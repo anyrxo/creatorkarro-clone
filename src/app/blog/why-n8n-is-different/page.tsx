@@ -171,9 +171,9 @@ export default function WhyN8NisDifferent() {
                   <div className="bg-zinc-800 rounded-lg p-6">
                     <div className="bg-zinc-900 rounded p-4 mb-4">
                       <code className="text-green-400 text-sm">
-                        // Full JavaScript/Python support<br/>
-                        const customLogic = items.map(item => {`{`}<br/>
-                        &nbsp;&nbsp;// Any transformation you can imagine<br/>
+                        {`// Full JavaScript/Python support`}<br/>
+                        const customLogic = items.map(item =&gt; {'{'}<br/>
+                        &nbsp;&nbsp;{`// Any transformation you can imagine`}<br/>
                         &nbsp;&nbsp;return processComplexData(item);<br/>
                         {`}`});
                       </code>
