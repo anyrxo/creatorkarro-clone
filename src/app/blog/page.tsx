@@ -5,123 +5,7 @@ import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
 
 const blogPosts = [
-  {
-    title: "How Marcus Rivera Grew from 800 to 125K Instagram Followers in 8 Months with Instagram Ignited",
-    category: "SUCCESS STORY",
-    categoryColor: "purple",
-    excerpt: "Discover the exact strategies Marcus used to transform his Instagram presence and build a $15K/month business.",
-    readTime: "12 min",
-    date: "Jan 8, 2024",
-    slug: "instagram-ignited-success-stories"
-  },
-  {
-    title: "From $0 to $25K/Month: How Sophia Chen Launched Her Digital Product Empire",
-    category: "SUCCESS STORY",
-    categoryColor: "green",
-    excerpt: "Learn how Sophia built a profitable digital product business from scratch using proven launch strategies.",
-    readTime: "15 min",
-    date: "Jan 10, 2024",
-    slug: "digital-product-success-story"
-  },
-  {
-    title: "How Devon Mitchell Automated His Entire Business with N8N AI Workflows",
-    category: "AUTOMATION",
-    categoryColor: "blue",
-    excerpt: "See how Devon saved 40+ hours per week by automating his content workflow across 5 platforms.",
-    readTime: "10 min",
-    date: "Jan 12, 2024",
-    slug: "n8n-automation-success"
-  },
-  {
-    title: "The AI Influencer Revolution: How Isabella Torres Built Virtual Personas Earning $8K/Month",
-    category: "AI STRATEGY",
-    categoryColor: "pink",
-    excerpt: "Discover how Isabella created AI models that generate content 24/7 and earn through partnerships.",
-    readTime: "14 min",
-    date: "Jan 14, 2024",
-    slug: "ai-influencer-success"
-  },
-  {
-    title: "ComfyUI Mastery: Ryan Blackwood's Journey to $10K/Month AI Art Business",
-    category: "AI TOOLS",
-    categoryColor: "purple",
-    excerpt: "Learn how Ryan increased his client work rate by 500% using AI-enhanced design workflows.",
-    readTime: "13 min",
-    date: "Jan 16, 2024",
-    slug: "comfyui-success-story"
-  },
-  {
-    title: "Instagram Algorithm Secrets: What Anyro's 500K+ Followers Taught Him",
-    category: "GROWTH GUIDE",
-    categoryColor: "blue",
-    excerpt: "The complete Instagram blueprint that took me from zero to half a million followers and $15K/month.",
-    readTime: "12 min",
-    date: "Jan 15, 2024",
-    slug: "500k-followers"
-  },
-  {
-    title: "Why Most Digital Products Fail (And How to Build One That Sells $1K+/Day)",
-    category: "MONETIZATION",
-    categoryColor: "green",
-    excerpt: "Avoid the common pitfalls and learn the psychology behind successful digital product launches.",
-    readTime: "16 min",
-    date: "Jan 18, 2024",
-    slug: "digital-products-that-sell"
-  },
-  {
-    title: "The Complete Guide to Viral Instagram Carousels That Convert",
-    category: "CONTENT STRATEGY",
-    categoryColor: "purple",
-    excerpt: "Master the art of creating carousels that get 3-5x more engagement and drive sales.",
-    readTime: "11 min",
-    date: "Jan 20, 2024",
-    slug: "viral-carousel-guide"
-  },
-  {
-    title: "How I Built a $50K/Month Business Using Only AI Tools and Automation",
-    category: "CASE STUDY",
-    categoryColor: "blue",
-    excerpt: "A deep dive into the exact AI stack and automation workflows that power my business.",
-    readTime: "18 min",
-    date: "Jan 22, 2024",
-    slug: "ai-automation-business"
-  },
-  {
-    title: "From Zero to AI Influencer: Creating Virtual Personas That Actually Make Money",
-    category: "AI STRATEGY",
-    categoryColor: "pink",
-    excerpt: "Step-by-step guide to building AI influencers that generate content and revenue on autopilot.",
-    readTime: "15 min",
-    date: "Jan 24, 2024",
-    slug: "creating-ai-influencers"
-  },
-  {
-    title: "The Psychology Behind $10K+ Digital Product Sales Pages",
-    category: "SALES",
-    categoryColor: "green",
-    excerpt: "Discover the psychological triggers and copywriting techniques that convert visitors into buyers.",
-    readTime: "14 min",
-    date: "Jan 26, 2024",
-    slug: "sales-page-psychology"
-  },
-  {
-    title: "7 N8N Workflows Every Content Creator Needs to Automate Their Business",
-    category: "AUTOMATION",
-    categoryColor: "blue",
-    excerpt: "Save 20+ hours per week with these essential automation workflows for content creators.",
-    readTime: "13 min",
-    date: "Jan 28, 2024",
-    slug: "essential-n8n-workflows"
-  },
-  {
-    title: "ComfyUI vs. Other AI Art Tools: Why Professionals Choose ComfyUI",
-    category: "AI TOOLS",
-    categoryColor: "purple",
-    excerpt: "An honest comparison of AI art tools and why ComfyUI is the professional's choice.",
-    readTime: "10 min",
-    date: "Jan 30, 2024",
-    slug: "comfyui-comparison"
-  },
+  // Existing posts
   {
     title: "Instagram Growth Hacks That Actually Work in 2024",
     category: "GROWTH GUIDE",
@@ -132,49 +16,22 @@ const blogPosts = [
     slug: "instagram-growth-2024"
   },
   {
-    title: "How to Price Your Digital Products for Maximum Profit (With Real Examples)",
-    category: "PRICING",
-    categoryColor: "green",
-    excerpt: "Learn the psychology of pricing and see real examples of successful product pricing strategies.",
-    readTime: "15 min",
-    date: "Feb 3, 2024",
-    slug: "digital-product-pricing"
-  },
-  {
-    title: "The Future of AI Influencers: Trends Every Creator Should Know",
-    category: "TRENDS",
-    categoryColor: "pink",
-    excerpt: "Stay ahead of the curve with these emerging trends in AI-generated content and virtual personas.",
-    readTime: "11 min",
-    date: "Feb 5, 2024",
-    slug: "ai-influencer-trends"
-  },
-  {
-    title: "Building Your Personal Brand: Lessons from 500K+ Instagram Followers",
-    category: "BRANDING",
+    title: "Instagram Reels Mastery: The Ultimate Guide to Viral Content",
+    category: "CONTENT STRATEGY",
     categoryColor: "purple",
-    excerpt: "How to create a memorable personal brand that attracts followers and converts them into customers.",
-    readTime: "16 min",
-    date: "Feb 7, 2024",
-    slug: "personal-brand-building"
-  },
-  {
-    title: "Why Most Automation Tools Fail (And Why N8N is Different)",
-    category: "AUTOMATION",
-    categoryColor: "blue",
-    excerpt: "Understanding the limitations of popular automation tools and why N8N is the superior choice.",
-    readTime: "9 min",
-    date: "Feb 9, 2024",
-    slug: "why-n8n-is-different"
-  },
-  {
-    title: "My Biggest Instagram Mistakes (And How They Led to $100K+ Revenue)",
-    category: "LESSONS",
-    categoryColor: "red",
-    excerpt: "Learn from my failures and discover how mistakes can become your biggest opportunities.",
+    excerpt: "Master the art of creating Instagram Reels that go viral and drive massive engagement.",
     readTime: "14 min",
     date: "Feb 11, 2024",
-    slug: "instagram-mistakes-lessons"
+    slug: "instagram-reels-guide"
+  },
+  {
+    title: "TikTok Growth Hacks: 0 to 100K Followers in 90 Days",
+    category: "GROWTH GUIDE",
+    categoryColor: "pink",
+    excerpt: "The exact blueprint I used to explode on TikTok and how you can replicate it.",
+    readTime: "13 min",
+    date: "Feb 12, 2024",
+    slug: "tiktok-growth-hacks"
   },
   {
     title: "The Complete ComfyUI Workflow Library: 50+ Professional Templates",
@@ -186,13 +43,31 @@ const blogPosts = [
     slug: "comfyui-workflow-library"
   },
   {
-    title: "How I Make $5K+ Per Month with AI-Generated Content",
-    category: "INCOME REPORT",
-    categoryColor: "green",
-    excerpt: "Full breakdown of my AI content monetization strategy and income streams.",
-    readTime: "13 min",
+    title: "YouTube Shorts: The Secret to 1M Views in 30 Days",
+    category: "VIDEO STRATEGY",
+    categoryColor: "red",
+    excerpt: "How to crack the YouTube Shorts algorithm and build a massive following fast.",
+    readTime: "15 min",
+    date: "Feb 14, 2024",
+    slug: "youtube-shorts-strategy"
+  },
+  {
+    title: "Scale Your Content Creation: 100 Posts in 2 Hours",
+    category: "PRODUCTIVITY",
+    categoryColor: "blue",
+    excerpt: "My exact system for creating a month's worth of content in a single afternoon.",
+    readTime: "12 min",
     date: "Feb 15, 2024",
-    slug: "ai-content-income"
+    slug: "scale-content-creation"
+  },
+  {
+    title: "The 30-Day Social Media Calendar That Tripled My Sales",
+    category: "CONTENT STRATEGY",
+    categoryColor: "green",
+    excerpt: "Copy my exact posting schedule and content themes that convert followers into customers.",
+    readTime: "11 min",
+    date: "Feb 16, 2024",
+    slug: "social-media-calendar"
   },
   {
     title: "Digital Product Launch Strategy: From Idea to $10K in 30 Days",
@@ -204,6 +79,15 @@ const blogPosts = [
     slug: "product-launch-strategy"
   },
   {
+    title: "AI Automation Guide: Build Your $10K/Month Business Machine",
+    category: "AUTOMATION",
+    categoryColor: "purple",
+    excerpt: "Complete blueprint for automating your entire business with AI tools and workflows.",
+    readTime: "18 min",
+    date: "Feb 18, 2024",
+    slug: "ai-automation-guide"
+  },
+  {
     title: "The Ultimate Guide to Instagram Monetization: 7 Proven Strategies",
     category: "MONETIZATION",
     categoryColor: "green",
@@ -211,6 +95,15 @@ const blogPosts = [
     readTime: "15 min",
     date: "Feb 19, 2024",
     slug: "instagram-monetization-guide"
+  },
+  {
+    title: "Email Marketing Mastery: Turn Subscribers into $100K Revenue",
+    category: "MARKETING",
+    categoryColor: "blue",
+    excerpt: "The email sequences and strategies that generate 40% of my total revenue.",
+    readTime: "14 min",
+    date: "Feb 20, 2024",
+    slug: "email-marketing-guide"
   },
   {
     title: "High-Income Skills for the AI Era: What to Learn in 2024",
@@ -222,6 +115,15 @@ const blogPosts = [
     slug: "ai-era-skills"
   },
   {
+    title: "How I Built a Digital Product Empire That Makes $50K/Month",
+    category: "CASE STUDY",
+    categoryColor: "green",
+    excerpt: "Behind the scenes of my digital product business and the strategies that drive success.",
+    readTime: "16 min",
+    date: "Feb 22, 2024",
+    slug: "digital-products-empire"
+  },
+  {
     title: "Why 2024 is the Best Time to Start Creating AI Content",
     category: "OPPORTUNITY",
     categoryColor: "pink",
@@ -231,13 +133,112 @@ const blogPosts = [
     slug: "ai-content-opportunity"
   },
   {
-    title: "The Ultimate Whop Clipping Strategy",
-    category: "MONETIZATION GUIDE",
+    title: "50 Digital Product Ideas That Are Printing Money in 2024",
+    category: "2024 TRENDS",
+    categoryColor: "pink",
+    excerpt: "From $47 templates to $10K masterclasses - find your perfect product.",
+    readTime: "25 min",
+    date: "Feb 23, 2024",
+    slug: "digital-products-ideas-2024"
+  },
+  {
+    title: "How I Built 5 Faceless Channels to $500K/Year",
+    category: "STRATEGY",
+    categoryColor: "purple",
+    excerpt: "The complete blueprint to anonymous content empire building.",
+    readTime: "19 min",
+    date: "Feb 24, 2024",
+    slug: "faceless-content-strategy"
+  },
+  {
+    title: "How I Make $47,000/Month Selling Simple Templates",
+    category: "GUIDE",
     categoryColor: "green",
-    excerpt: "Turn Twitch streams into a $10K/month business with this proven system.",
+    excerpt: "The exact blueprint to turn 2-hour projects into passive income machines.",
+    readTime: "17 min",
+    date: "Feb 25, 2024",
+    slug: "how-to-sell-templates"
+  },
+  {
+    title: "Create Your First Faceless YouTube Channel in 7 Days",
+    category: "YOUTUBE",
+    categoryColor: "red",
+    excerpt: "The complete guide to building a profitable faceless YouTube channel from scratch.",
+    readTime: "18 min",
+    date: "Feb 26, 2024",
+    slug: "create-faceless-youtube-channel"
+  },
+  {
+    title: "23 Ways to Monetize AI and Make $10K+/Month",
+    category: "MONETIZATION",
+    categoryColor: "green",
+    excerpt: "Real businesses making real money with AI (with proof).",
+    readTime: "24 min",
+    date: "Feb 27, 2024",
+    slug: "monetize-with-ai"
+  },
+  {
+    title: "AI Image Generation: The Complete Guide for Content Creators",
+    category: "AI TOOLS",
+    categoryColor: "purple",
+    excerpt: "Master every AI image tool from Midjourney to Stable Diffusion and create stunning visuals.",
+    readTime: "16 min",
+    date: "Feb 28, 2024",
+    slug: "ai-image-generation-guide"
+  },
+  {
+    title: "37 ChatGPT Automation Hacks That Save 20+ Hours/Week",
+    category: "PRODUCTIVITY",
+    categoryColor: "blue",
+    excerpt: "Transform ChatGPT into your personal AI assistant with these game-changing automation tips.",
     readTime: "15 min",
-    date: "Jan 22, 2024",
-    slug: "whop-clipping"
+    date: "Feb 29, 2024",
+    slug: "chatgpt-automation-tips"
+  },
+  {
+    title: "The C.A.S.H. Framework: Create 1,000 Pieces of Content Per Month",
+    category: "FRAMEWORK",
+    categoryColor: "green",
+    excerpt: "My proven system for scaling content creation without burning out.",
+    readTime: "14 min",
+    date: "Mar 1, 2024",
+    slug: "content-scaling-framework"
+  },
+  {
+    title: "n8n for Beginners: Automate Everything Without Code",
+    category: "AUTOMATION",
+    categoryColor: "orange",
+    excerpt: "The complete guide to workflow automation that saves 20+ hours/week.",
+    readTime: "21 min",
+    date: "Mar 1, 2024",
+    slug: "n8n-beginners-guide"
+  },
+  {
+    title: "The $100K/Year Passive Income Blueprint I Actually Use",
+    category: "PASSIVE INCOME",
+    categoryColor: "green",
+    excerpt: "7 income streams that generate $8,400/month while I sleep.",
+    readTime: "22 min",
+    date: "Mar 2, 2024",
+    slug: "passive-income-blueprint"
+  },
+  {
+    title: "Prompt Engineering: The $150/Hour Skill Nobody's Teaching Right",
+    category: "AI MASTERY",
+    categoryColor: "purple",
+    excerpt: "Master the art of AI communication with battle-tested frameworks and 100+ examples.",
+    readTime: "28 min",
+    date: "Mar 3, 2024",
+    slug: "prompt-engineering-guide"
+  },
+  {
+    title: "Social Media Automation: Post to 10 Platforms in 10 Minutes",
+    category: "AUTOMATION",
+    categoryColor: "blue",
+    excerpt: "The complete system I use to manage 50+ accounts with 2 hours/week.",
+    readTime: "20 min",
+    date: "Mar 4, 2024",
+    slug: "social-media-automation"
   }
 ]
 
@@ -252,7 +253,8 @@ export default function BlogPage() {
       purple: 'bg-purple-500/10 border-purple-500/20 text-purple-400',
       green: 'bg-green-500/10 border-green-500/20 text-green-400',
       pink: 'bg-pink-500/10 border-pink-500/20 text-pink-400',
-      red: 'bg-red-500/10 border-red-500/20 text-red-400'
+      red: 'bg-red-500/10 border-red-500/20 text-red-400',
+      orange: 'bg-orange-500/10 border-orange-500/20 text-orange-400'
     }
     return colors[color] || colors.blue
   }
