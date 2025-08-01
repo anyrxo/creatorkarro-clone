@@ -91,7 +91,24 @@ export default async function CountryHomePage({ params }: Props) {
       
       {/* Country-specific Testimonials */}
       <Testimonials 
-        testimonials={content.testimonials}
+        testimonials={content.testimonials.map((testimonial, index) => {
+          // Parse testimonial string format: "Name from Location: 'Quote'"
+          const match = testimonial.match(/^([^:]+):\s*"([^"]+)"$/)
+          if (match) {
+            const [, nameLocation, result] = match
+            return {
+              name: nameLocation.trim(),
+              result: result.trim(),
+              image: '/placeholder-testimonial.jpg'
+            }
+          }
+          // Fallback for unparseable testimonials
+          return {
+            name: `Customer ${index + 1}`,
+            result: testimonial,
+            image: '/placeholder-testimonial.jpg'
+          }
+        })}
         countryCode={countryCode}
         country={config.country}
       />
