@@ -603,7 +603,7 @@ export default function CTRManipulationPage() {
                   <h3 className="text-xl font-semibold text-white mb-2">No Campaigns Active</h3>
                   <p className="text-gray-400 mb-4">Deploy your first CTR manipulation campaign to start boosting rankings</p>
                   <Button
-                    onClick={() => document.querySelector('[value="deploy"]')?.click()}
+                    onClick={() => (document.querySelector('[value="deploy"]') as HTMLElement)?.click()}
                     className="bg-blue-600 hover:bg-blue-700 text-white"
                   >
                     Deploy First Campaign
