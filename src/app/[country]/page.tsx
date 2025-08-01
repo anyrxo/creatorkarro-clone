@@ -77,7 +77,7 @@ export default async function CountryHomePage({ params }: Props) {
       <Hero 
         title={content.title}
         description={content.description}
-        cta={content.cta}
+        cta={{ text: content.cta, urgency: content.urgency }}
         countryCode={countryCode}
         currency={content.currency}
         urgency={content.urgency}
