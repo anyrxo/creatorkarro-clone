@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
 export default function ContactPage() {
@@ -170,9 +171,9 @@ export default function ContactPage() {
                 <h3 className="text-lg md:text-xl font-semibold mb-3">Do you offer refunds?</h3>
                 <p className="text-gray-400">
                   Yes! We offer a 365-day action-based money-back guarantee.
-                  <a href="/refund-policy" className="text-blue-400 hover:text-blue-300 ml-1">
+                  <Link href="/refund-policy" className="text-blue-400 hover:text-blue-300 ml-1">
                     Learn more
-                  </a>
+                  </Link>
                 </p>
               </div>
               <div className={`text-left scroll-fade-left ${faqAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>

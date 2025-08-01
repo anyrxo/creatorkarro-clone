@@ -1,5 +1,6 @@
 // FAQ Main Page - Comprehensive FAQ System
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { faqGenerator } from '@/lib/faq-schema-generator'
 import FAQSection from '@/components/FAQSection'
 
@@ -124,9 +125,9 @@ export default function FAQPage() {
               <div className="bg-gray-700 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-white mb-3">📚 Help Center</h3>
                 <p className="text-gray-300 mb-4">Comprehensive guides and tutorials</p>
-                <a href="/help" className="text-blue-400 hover:text-blue-300">
+                <Link href="/help" className="text-blue-400 hover:text-blue-300">
                   Browse Help Center
-                </a>
+                </Link>
               </div>
             </div>
           </div>

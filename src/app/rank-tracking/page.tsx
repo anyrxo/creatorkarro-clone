@@ -71,11 +71,7 @@ export default function RankTrackingPage() {
     }
   })
 
-  useEffect(() => {
-    loadTrackers()
-  }, [])
-
-  const loadTrackers = async () => {
+  const loadTrackers = useCallback(async () => {
     try {
       const response = await fetch('/api/rank-tracking?action=getAllTrackers')
       const data = await response.json()
@@ -88,7 +84,11 @@ export default function RankTrackingPage() {
     } catch (error) {
       console.error('Error loading trackers:', error)
     }
-  }
+  }, [selectedTracker])
+
+  useEffect(() => {
+    loadTrackers()
+  }, [loadTrackers])
 
   const handleCreateTracker = async () => {
     setLoading(true)

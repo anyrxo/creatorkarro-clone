@@ -392,7 +392,7 @@ export class CTRManipulationNetworkEngine {
     const maxBots = Math.floor(this.botNetwork.length * limit)
     
     // Filter bots by geographic requirements
-    let availableBots = this.botNetwork.filter(bot => 
+    const availableBots = this.botNetwork.filter(bot => 
       countries.length === 0 || countries.includes(bot.location.country)
     )
 

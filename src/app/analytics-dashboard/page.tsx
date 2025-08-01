@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -103,11 +103,19 @@ export default function AnalyticsDashboardPage() {
     competitors: ''
   })
 
-  useEffect(() => {
-    loadDashboards()
+  const loadReports = useCallback(async (domain: string) => {
+    try {
+      const response = await fetch(`/api/analytics-dashboard?domain=${domain}&type=reports`)
+      const data = await response.json()
+      if (data.success) {
+        setReports(data.reports)
+      }
+    } catch (error) {
+      console.error('Error loading reports:', error)
+    }
   }, [])
 
-  const loadDashboards = async () => {
+  const loadDashboards = useCallback(async () => {
     try {
       const response = await fetch('/api/analytics-dashboard?action=getAllDashboards')
       const data = await response.json()
@@ -121,19 +129,11 @@ export default function AnalyticsDashboardPage() {
     } catch (error) {
       console.error('Error loading dashboards:', error)
     }
-  }
+  }, [selectedDashboard, loadReports])
 
-  const loadReports = async (domain: string) => {
-    try {
-      const response = await fetch(`/api/analytics-dashboard?domain=${domain}&type=reports`)
-      const data = await response.json()
-      if (data.success) {
-        setReports(data.reports)
-      }
-    } catch (error) {
-      console.error('Error loading reports:', error)
-    }
-  }
+  useEffect(() => {
+    loadDashboards()
+  }, [loadDashboards])
 
   const handleCreateDashboard = async () => {
     setLoading(true)
