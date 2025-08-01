@@ -416,7 +416,7 @@ export default function NegativeSEODefensePage() {
                         <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
                           <SelectValue />
                         </SelectTrigger>
-                        <SelectContent className="bg-gray-700 border-gray-600">
+                        <SelectContent>
                           <SelectItem value="basic">Basic Protection ($500/mo)</SelectItem>
                           <SelectItem value="enhanced">Enhanced Protection ($1,500/mo)</SelectItem>
                           <SelectItem value="fortress">Fortress Protection ($3,000/mo)</SelectItem>
