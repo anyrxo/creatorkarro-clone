@@ -55,8 +55,8 @@ export default function TestimonialsPage() {
     }
   }, [statsAnimation.isVisible])
 
-  // For testimonial grid animations
-  const testimonialAnimations = useScrollAnimations(30, { threshold: 0.1 })
+  // For testimonial grid animations - set to handle more testimonials
+  const testimonialAnimations = useScrollAnimations(50, { threshold: 0.1 })
   
   // Filter state
   const [activeFilter, setActiveFilter] = useState('all')
@@ -231,6 +231,11 @@ export default function TestimonialsPage() {
   
   // Get unique courses for filter buttons
   const courses = ['all', ...Array.from(new Set(testimonials.map(t => t.course)))]
+  
+  // Debug: Log testimonial counts
+  console.log('Total testimonials:', testimonials.length)
+  console.log('Filtered testimonials:', filteredTestimonials.length)
+  console.log('Active filter:', activeFilter)
 
   return (
     <div className="min-h-screen bg-dark">
@@ -301,9 +306,9 @@ export default function TestimonialsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {filteredTestimonials.map((testimonial, index) => (
               <div
-                key={index}
+                key={`${testimonial.name}-${index}`}
                 ref={testimonialAnimations.setElementRef(index)}
-                className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 border border-zinc-700 hover:border-blue-500/50 transition-all duration-300 group hover-lift scroll-fade-up ${testimonialAnimations.visibleElements[index] ? `visible scroll-stagger-${Math.min(index % 6 + 1, 6)}` : ''}`}
+                className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 border border-zinc-700 hover:border-blue-500/50 transition-all duration-300 group hover-lift scroll-fade-up visible"
               >
                 {/* Course Badge */}
                 <div className="flex items-center justify-between mb-4">
