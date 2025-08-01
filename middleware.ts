@@ -1,15 +1,19 @@
 // Next.js Middleware - Edge Runtime SEO Optimization
 import { NextRequest, NextResponse } from 'next/server'
-import { getGeoData, getABTestVariant, shouldRedirect } from './edge/utils'
+import { getGeoData, shouldRedirect } from './edge/utils'
 
 export function middleware(request: NextRequest) {
-  const { nextUrl: url, geo } = request
+  const { nextUrl: url } = request
   const response = NextResponse.next()
   
-  // Extract geo information
-  const country = geo?.country || 'US'
-  const city = geo?.city || 'New York'
-  const region = geo?.region || 'NY'
+  // Extract geo information from headers
+  const country = request.headers.get('x-vercel-ip-country') || 
+                  request.headers.get('cf-ipcountry') || 
+                  'US'
+  const city = request.headers.get('x-vercel-ip-city') || 
+               'New York'
+  const region = request.headers.get('x-vercel-ip-country-region') || 
+                 'NY'
   
   // A/B Testing assignment
   const abVariant = getABTestVariant(request)
@@ -49,7 +53,10 @@ export function middleware(request: NextRequest) {
 }
 
 function getABTestVariant(request: NextRequest) {
-  const ip = request.ip || request.headers.get('x-forwarded-for') || ''
+  const ip = request.headers.get('x-forwarded-for') || 
+            request.headers.get('x-real-ip') || 
+            request.headers.get('x-vercel-forwarded-for') || 
+            ''
   const userAgent = request.headers.get('user-agent') || ''
   
   // Create stable hash for consistent variant assignment
