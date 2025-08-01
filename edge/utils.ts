@@ -272,7 +272,10 @@ export function getAnalyticsData(request: NextRequest, variant: ABTestVariant, s
     device: segment.device,
     userAgent: request.headers.get('user-agent'),
     referer: request.headers.get('referer'),
-    ip: request.ip || request.headers.get('x-forwarded-for')
+    ip: request.headers.get('x-forwarded-for') || 
+        request.headers.get('x-real-ip') || 
+        request.headers.get('x-vercel-forwarded-for') || 
+        ''
   }
 }
 
