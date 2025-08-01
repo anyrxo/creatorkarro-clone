@@ -30,10 +30,14 @@ export interface UserSegment {
 
 // Get comprehensive geo data
 export function getGeoData(request: NextRequest): GeoData {
-  const { geo } = request
-  const country = geo?.country || 'US'
-  const city = geo?.city || 'New York'
-  const region = geo?.region || 'NY'
+  // Access geo data from headers (available in Vercel/Cloudflare)
+  const country = request.headers.get('x-vercel-ip-country') || 
+                  request.headers.get('cf-ipcountry') || 
+                  'US'
+  const city = request.headers.get('x-vercel-ip-city') || 
+               'New York'
+  const region = request.headers.get('x-vercel-ip-country-region') || 
+                 'NY'
   
   const geoMapping = {
     'US': { currency: 'USD', language: 'en-US', timezone: 'America/New_York' },
