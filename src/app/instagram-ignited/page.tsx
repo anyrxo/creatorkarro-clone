@@ -3,116 +3,70 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
+import {
+  ValueBadge,
+  ModuleCard,
+  BonusCard,
+  ProblemCard,
+  TestimonialCard,
+  FAQCard,
+  PricingComparison,
+  HeroSection,
+  SectionHeader
+} from '@/components/course/CourseLayout'
 
 export default function InstagramIgnitedPage() {
   // Scroll animations for different sections
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
+  const problemAnimation = useScrollAnimation({ threshold: 0.1 })
+  const solutionAnimation = useScrollAnimation({ threshold: 0.1 })
   const resultsAnimation = useScrollAnimation({ threshold: 0.1 })
   const whoForAnimation = useScrollAnimation({ threshold: 0.1 })
   const studentResultsAnimation = useScrollAnimation({ threshold: 0.1 })
   const modulesAnimation = useScrollAnimation({ threshold: 0.1 })
   const bonusAnimation = useScrollAnimation({ threshold: 0.1 })
-  const problemAnimation = useScrollAnimation({ threshold: 0.1 })
-  const solutionAnimation = useScrollAnimation({ threshold: 0.1 })
-  const storiesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const testimonialsAnimation = useScrollAnimation({ threshold: 0.1 })
   const pricingAnimation = useScrollAnimation({ threshold: 0.1 })
+  const testimonialsAnimation = useScrollAnimation({ threshold: 0.1 })
   const faqAnimation = useScrollAnimation({ threshold: 0.1 })
   const finalCtaAnimation = useScrollAnimation({ threshold: 0.2 })
 
   // For grid items that need staggered animations
-  const whoForCards = useScrollAnimations(3, { threshold: 0.1 })
   const problemCards = useScrollAnimations(6, { threshold: 0.1 })
+  const whoForCards = useScrollAnimations(3, { threshold: 0.1 })
   const moduleCards = useScrollAnimations(10, { threshold: 0.1 })
   const bonusCards = useScrollAnimations(6, { threshold: 0.1 })
-  const testimonialCards = useScrollAnimations(9, { threshold: 0.1 })
+  const testimonialCards = useScrollAnimations(3, { threshold: 0.1 })
   const faqCards = useScrollAnimations(12, { threshold: 0.1 })
+  const storiesAnimation = useScrollAnimation({ threshold: 0.1 })
 
   return (
     <div className="min-h-screen bg-dark">
-      {/* Hero Section */}
-      <section className="section-spacing overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
-          >
-            {/* Reviews */}
-            <div className="flex items-center justify-center mb-8">
-              <div className="flex items-center space-x-2">
-                <div className="flex">
-                  <Image
-                    src="https://ext.same-assets.com/1161517358/2822588328.webp"
-                    alt="User"
-                    width={24}
-                    height={24}
-                    className="w-6 h-6 rounded-full -mr-1 hover:scale-110 transition-transform duration-300"
-                  />
-                  <Image
-                    src="https://ext.same-assets.com/1161517358/3376144705.webp"
-                    alt="User"
-                    width={24}
-                    height={24}
-                    className="w-6 h-6 rounded-full -mr-1 hover:scale-110 transition-transform duration-300"
-                  />
-                  <Image
-                    src="https://ext.same-assets.com/1161517358/2657109700.webp"
-                    alt="User"
-                    width={24}
-                    height={24}
-                    className="w-6 h-6 rounded-full hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <div className="flex text-yellow-400 animate-float">
-                  {'★'.repeat(5)}
-                </div>
-                <span className="text-sm text-gray-400">2,000+ reviews</span>
-              </div>
-            </div>
-
-            <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              Your Complete <span className="text-blue-400">System</span> to <span className="text-blue-400">Grow an Audience</span> and Turn It Into <span className="text-blue-400">Income</span>
-            </h1>
-
-            <p className="text-lg md:text-xl text-gray-400 mb-8">
-              Now includes <span className="text-blue-300">Digital Product Academy</span> and <span className="text-blue-300">Viral Carousels Mastery</span> in one bundle.
-            </p>
-
-            {/* YouTube Channel Link instead of embedded video */}
-            <div className="bg-zinc-900 rounded-lg p-6 mb-8 max-w-md mx-auto hover-lift">
-              <div className="flex items-center justify-center space-x-4">
-                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                  </svg>
-                </div>
-                <div className="text-left">
-                  <h3 className="text-lg font-semibold text-white">Watch My Content</h3>
-                  <p className="text-gray-400 text-sm">Free videos on entrepreneurship & content creation</p>
-                </div>
-              </div>
-              <Link
-                href="https://www.youtube.com/@anyrxo"
-                target="_blank"
-                className="cta-button inline-block w-full text-center mt-4"
-              >
-                Visit YouTube Channel
-              </Link>
-            </div>
-
-            <p className="text-sm text-yellow-400 mb-4 animate-float">
-              The price will increase very soon.
-            </p>
-
-            <Link
-              href="#pricing"
-              className="cta-button inline-block text-lg btn-animate animate-glow hover-lift"
-            >
-              Claim IImagined 4.0 Bundle
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* 1. Hero Section */}
+      <div ref={heroAnimation.elementRef}>
+        <HeroSection
+          badge="🔥 INSTAGRAM EMPIRE BUILDER 🔥"
+          badgeColor="bg-gradient-to-r from-red-600/30 to-orange-600/30 text-red-300 border border-red-500/50"
+          title="Your Complete <span class='text-blue-400'>System</span> to <span class='text-blue-400'>Grow an Audience</span> and Turn It Into <span class='text-blue-400'>Income</span>"
+          description="The ONLY proven system that takes you from Instagram ghost to algorithm dominator in 90 days or less. Now includes Digital Product Academy and Viral Carousels Mastery in one bundle."
+          ctaText="🚀 Claim Instagram Ignited Bundle"
+          ctaLink="#pricing"
+          socialProof={{
+            images: [
+              "https://ext.same-assets.com/1161517358/2822588328.webp",
+              "https://ext.same-assets.com/1161517358/3376144705.webp",
+              "https://ext.same-assets.com/1161517358/2657109700.webp"
+            ],
+            rating: 5,
+            text: "2,000+ students transformed"
+          }}
+          stats={[
+            { value: "500K+", label: "Followers Grown", color: "text-blue-400" },
+            { value: "$500K+", label: "Revenue Generated", color: "text-green-400" },
+            { value: "100M+", label: "Views Created", color: "text-purple-400" }
+          ]}
+          isVisible={heroAnimation.isVisible}
+        />
+      </div>
 
       {/* PROBLEM Section */}
       <section className="section-spacing border-t border-red-900/30">
@@ -526,9 +480,10 @@ export default function InstagramIgnitedPage() {
                 ref={moduleCards.setElementRef(index)}
                 className={`testimonial-card hover-lift scroll-fade-up relative ${moduleCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
-                <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                  {module.value} Value
-                </div>
+                <ValueBadge 
+                  value={module.value}
+                  className="absolute top-4 right-4"
+                />
                 <h3 className="text-lg md:text-xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: module.title }}></h3>
                 <p className="text-gray-400 leading-relaxed">{module.description}</p>
               </div>
@@ -609,9 +564,11 @@ export default function InstagramIgnitedPage() {
                 ref={bonusCards.setElementRef(index)}
                 className={`bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-2xl p-6 hover:from-yellow-500/20 hover:to-orange-500/20 transition-all duration-300 hover-lift scroll-fade-up relative ${bonusCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
-                <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-black">
-                  {bonus.value} VALUE
-                </div>
+                <ValueBadge 
+                  value={bonus.value}
+                  variant="yellow"
+                  className="absolute top-4 right-4"
+                />
                 <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400">{bonus.title}</h3>
                 <p className="text-gray-300 leading-relaxed">{bonus.description}</p>
               </div>

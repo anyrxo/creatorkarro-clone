@@ -50,12 +50,25 @@ const nextConfig = {
   // Static optimization
   trailingSlash: false,
 
-  // Headers for MAXIMUM performance and SEO domination
+  // Headers for MAXIMUM performance and FORTRESS PROTECTION
   async headers() {
     return [
       {
         source: '/(.*)',
         headers: [
+          // ORYANA Fortress Protection Headers
+          {
+            key: 'X-Fortress-Protection',
+            value: 'active'
+          },
+          {
+            key: 'X-Anti-Scraping',
+            value: 'enabled'
+          },
+          {
+            key: 'X-Content-Protection',
+            value: 'maximum'
+          },
           // Security headers
           {
             key: 'X-DNS-Prefetch-Control',
@@ -67,7 +80,7 @@ const nextConfig = {
           },
           {
             key: 'X-Frame-Options',
-            value: 'SAMEORIGIN'
+            value: 'DENY'
           },
           {
             key: 'X-Content-Type-Options',
@@ -75,7 +88,24 @@ const nextConfig = {
           },
           {
             key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin'
+            value: 'strict-origin-when-cross-origin'
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), accelerometer=(), gyroscope=()'
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains; preload'
+          },
+          // Anti-scraping headers
+          {
+            key: 'X-Robots-Tag',
+            value: 'noarchive, nosnippet, notranslate, noimageindex'
+          },
+          {
+            key: 'Cache-Control',
+            value: 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0'
           },
           // Performance headers
           {

@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { FortressProvider } from "@/components/FortressProvider";
 import { siteConfig, defaultSEO, schemas } from "@/config/seo";
 import { generateDynamicMeta } from "@/lib/meta-generator";
 import { Analytics } from "@vercel/analytics/next";
@@ -168,13 +169,15 @@ export default function RootLayout({
           }}
         />
         
-        <Navigation />
-        <main className="pt-20">
-          {children}
-        </main>
-        <Footer />
-        <Analytics />
-        <SpeedInsights />
+        <FortressProvider>
+          <Navigation />
+          <main className="pt-20">
+            {children}
+          </main>
+          <Footer />
+          <Analytics />
+          <SpeedInsights />
+        </FortressProvider>
       </body>
     </html>
   );

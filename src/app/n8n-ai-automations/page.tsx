@@ -2,72 +2,858 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
+import {
+  ValueBadge,
+  ModuleCard,
+  BonusCard,
+  ProblemCard,
+  TestimonialCard,
+  FAQ,
+  PricingComparison,
+  HeroSection,
+  SectionHeader
+} from '@/components/course/CourseLayout'
 
 export default function N8NAutomationsPage() {
   // Scroll animations for different sections
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const problemAnimation = useScrollAnimation({ threshold: 0.1 })
-  const whoForAnimation = useScrollAnimation({ threshold: 0.1 })
+  const solutionAnimation = useScrollAnimation({ threshold: 0.1 })
   const resultsAnimation = useScrollAnimation({ threshold: 0.1 })
+  const whoForAnimation = useScrollAnimation({ threshold: 0.1 })
+  const studentResultsAnimation = useScrollAnimation({ threshold: 0.1 })
   const modulesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const bonusesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const stackedAnimation = useScrollAnimation({ threshold: 0.1 })
-  const expectAnimation = useScrollAnimation({ threshold: 0.1 })
-  const pricingAnimation = useScrollAnimation({ threshold: 0.2 })
+  const bonusAnimation = useScrollAnimation({ threshold: 0.1 })
+  const pricingAnimation = useScrollAnimation({ threshold: 0.1 })
+  const testimonialsAnimation = useScrollAnimation({ threshold: 0.1 })
   const faqAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
+  const finalCtaAnimation = useScrollAnimation({ threshold: 0.2 })
+
+  // For grid items that need staggered animations
+  const problemCards = useScrollAnimations(6, { threshold: 0.1 })
+  const whoForCards = useScrollAnimations(3, { threshold: 0.1 })
+  const moduleCards = useScrollAnimations(8, { threshold: 0.1 })
+  const bonusCards = useScrollAnimations(6, { threshold: 0.1 })
+  const testimonialCards = useScrollAnimations(3, { threshold: 0.1 })
+  const faqCards = useScrollAnimations(12, { threshold: 0.1 })
 
   return (
     <div className="min-h-screen bg-dark">
-      {/* Hero Section */}
+      {/* 1. Hero Section */}
+      <div ref={heroAnimation.elementRef}>
+        <HeroSection
+          badge="🚀 AI AUTOMATION EMPIRE 🚀"
+          badgeColor="bg-gradient-to-r from-purple-600/30 to-blue-600/30 text-purple-300 border border-purple-500/50"
+          title="Stop Trading <span class='text-red-400'>Time For Money</span> — Build <span class='text-purple-400'>AI-Powered Automation Empire</span> That Works While You Sleep"
+          description="The complete N8N AI Automation System that lets non-technical entrepreneurs build million-dollar workflows without writing a single line of code. Save 40+ hours/week with intelligent automation."
+          ctaText="🔥 Get Complete N8N Mastery System"
+          ctaLink="#pricing"
+          socialProof={{
+            images: [
+              "https://ext.same-assets.com/1161517358/1620887224.webp",
+              "https://ext.same-assets.com/1161517358/447445188.webp",
+              "https://ext.same-assets.com/1161517358/2657109700.webp"
+            ],
+            rating: 5,
+            text: "2,847+ students saving 40+ hours/week"
+          }}
+          stats={[
+            { value: "40+", label: "Hours Saved Weekly", color: "text-purple-400" },
+            { value: "$2M+", label: "Revenue Automated", color: "text-green-400" },
+            { value: "2,847+", label: "Students Transformed", color: "text-blue-400" }
+          ]}
+          isVisible={heroAnimation.isVisible}
+        />
+      </div>
+
+      {/* 2. Problem Section */}
+      <section className="section-spacing border-t border-red-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={problemAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <SectionHeader
+              badge="BRUTAL REALITY"
+              badgeColor="bg-zinc-900 border border-red-500 text-red-400"
+              title="You're Drowning in <span class='text-red-400'>Manual Tasks</span>"
+              subtitle="While your competitors scale with AI automation, you're stuck in the stone age of manual labor..."
+            />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+            {[
+              {
+                icon: "⏰",
+                title: "80+ Hours/Week Manual Grinding",
+                description: "You're manually doing everything: email responses, data entry, social media posting, customer follow-ups. Your entire business depends on YOU being online 24/7."
+              },
+              {
+                icon: "💸",
+                title: "Paying $5K+/Month for VA Teams",
+                description: "You're hemorrhaging money on virtual assistants who make mistakes, need constant supervision, and cost more than your revenue. It's unsustainable and you know it."
+              },
+              {
+                icon: "📈",
+                title: "Missing 90% of Business Opportunities",
+                description: "While you're stuck doing busy work, leads go cold, customers churn, and opportunities slip away. Your competitors are moving 10x faster with automation."
+              },
+              {
+                icon: "😵",
+                title: "Burnout from Repetitive Hell",
+                description: "You didn't start a business to become a slave to it. But you're trapped doing the same mind-numbing tasks over and over, with no time for strategy or growth."
+              },
+              {
+                icon: "🔥",
+                title: "Zero Scalability Without You",
+                description: "Your business stops when you stop. Take a vacation? Revenue drops. Get sick? Everything breaks. You've built a job, not a business, and it's killing you."
+              },
+              {
+                icon: "📉",
+                title: "Competitors Destroying You with AI",
+                description: "While you're manually processing orders, they're using AI to handle 1000x more customers with zero human intervention. You're being left in the dust."
+              }
+            ].map((problem, index) => (
+              <div
+                key={index}
+                ref={problemCards.setElementRef(index)}
+                className={`scroll-fade-up ${problemCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
+              >
+                <ProblemCard {...problem} />
+              </div>
+            ))}
+          </div>
+
+          <div className={`text-center scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
+            <div className="bg-zinc-900 border border-red-900/30 rounded-2xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-2xl md:text-4xl font-bold mb-4 text-red-400">
+                The Painful Truth...
+              </h3>
+              <p className="text-lg md:text-xl text-gray-300 mb-6">
+                Every month you waste on manual tasks is $10K-$50K in lost opportunities. Every day you delay automation, 
+                your competitors pull further ahead with AI systems that work 24/7.
+              </p>
+              <div className="bg-zinc-900 border border-red-500 rounded-lg p-6">
+                <p className="text-xl font-bold text-red-400 mb-2">
+                  💀 You're not just losing time... you're losing your business to AI-powered competitors.
+                </p>
+                <p className="text-gray-300">
+                  While they scale effortlessly with automation, you're drowning in manual work that will never end.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Solution Section */}
+      <section className="section-spacing bg-gradient-to-b from-purple-900/20 to-blue-900/20 border-t border-purple-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={solutionAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <SectionHeader
+              badge="THE SOLUTION"
+              badgeColor="bg-zinc-900 border border-purple-500 text-purple-400"
+              title="N8N AI Automations <span class='text-purple-400'>Changes Everything</span>"
+              subtitle="The ONLY system that transforms manual entrepreneurs into automation empires - without coding skills."
+            />
+          </div>
+
+          <div className={`bg-gradient-to-r from-purple-900/30 to-blue-900/30 border border-purple-500/30 rounded-3xl p-8 md:p-12 mb-16 scroll-scale ${solutionAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className="text-center mb-8">
+              <h3 className="text-3xl md:text-5xl font-bold mb-4">
+                This is the <span className="text-green-400">EXACT</span> System That...
+              </h3>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-500 rounded-full p-2 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-green-400 mb-2">Saved 2,847+ entrepreneurs 40+ hours weekly</h4>
+                    <p className="text-gray-300">Students went from 80-hour weeks to 40-hour weeks while 10x-ing their output with intelligent automation.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-500 rounded-full p-2 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-green-400 mb-2">Generated $2M+ in automated revenue</h4>
+                    <p className="text-gray-300">These workflows run 24/7, processing customers, nurturing leads, and generating sales while you sleep.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-500 rounded-full p-2 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-green-400 mb-2">Works for complete non-technical beginners</h4>
+                    <p className="text-gray-300">No coding, no technical background needed. Visual drag-and-drop workflows anyone can master.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-500 rounded-full p-2 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-green-400 mb-2">Scales any business to 7-figures automatically</h4>
+                    <p className="text-gray-300">From solopreneurs to agencies, these systems handle unlimited customers without breaking.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-500 rounded-full p-2 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-green-400 mb-2">Eliminates $5K+/month VA costs permanently</h4>
+                    <p className="text-gray-300">Replace expensive, error-prone humans with AI that never sleeps, never quits, never makes mistakes.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-500 rounded-full p-2 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-green-400 mb-2">Future-proof against AI disruption</h4>
+                    <p className="text-gray-300">While others fear AI, you'll master it. These skills become more valuable every day.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center mt-12">
+              <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6">
+                <h4 className="text-2xl font-bold text-yellow-400 mb-2">⚡ This System is BATTLE-TESTED</h4>
+                <p className="text-gray-300 text-lg">
+                  No theory, no guesswork, no "maybe this will work." Every workflow is proven across thousands of businesses 
+                  and millions in automated revenue.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Results/Proof Section */}
+      <section className="section-spacing bg-zinc-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={resultsAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <SectionHeader
+              badge="RESULTS"
+              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              title="The Automation Revolution is <span class='text-green-400'>Happening NOW</span>"
+              subtitle="While you're manually grinding, smart entrepreneurs are building AI empires that scale infinitely."
+            />
+          </div>
+
+          <div className={`grid md:grid-cols-3 gap-8 mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
+              <div className="text-4xl font-bold text-purple-400 mb-2">2,847+</div>
+              <div className="text-gray-300">Students Transformed</div>
+            </div>
+            <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
+              <div className="text-4xl font-bold text-green-400 mb-2">40+ Hours</div>
+              <div className="text-gray-300">Saved Weekly Average</div>
+            </div>
+            <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
+              <div className="text-4xl font-bold text-blue-400 mb-2">$2M+</div>
+              <div className="text-gray-300">Revenue Automated</div>
+            </div>
+          </div>
+
+          <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+            <p className="text-lg md:text-xl text-gray-400 mb-8">Ready to join the automation revolution?</p>
+            <Link href="#pricing" className="cta-button inline-block">
+              Get N8N Mastery System
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Who This Is For Section */}
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
+          <div
+            ref={whoForAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${whoForAnimation.isVisible ? 'visible' : ''}`}
           >
-            <div className="mb-4">
-              <span className="bg-red-600/20 text-red-400 px-4 py-2 rounded-full text-sm font-bold animate-pulse">
-                🚨 LIMITED TIME EARLY BIRD OFFER 🚨
-              </span>
+            <SectionHeader
+              badge="IS THIS YOU?"
+              badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
+              title="Who This System is <span class='text-blue-400'>Perfect</span> For"
+              subtitle="See if you match the profile of our most successful students."
+            />
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                title: "Overwhelmed Entrepreneurs",
+                description: "You're drowning in manual tasks and need to automate everything from lead generation to customer service to scale your business without hiring expensive teams."
+              },
+              {
+                title: "Agency Owners",
+                description: "You want to deliver premium automation services to clients, charge premium rates, and differentiate from basic service providers with AI-powered solutions."
+              },
+              {
+                title: "Non-Technical Business Owners",
+                description: "You know automation is the future but have zero coding skills. You need visual, drag-and-drop solutions that work without technical complexity."
+              }
+            ].map((item, index) => (
+              <div
+                key={index}
+                ref={whoForCards.setElementRef(index)}
+                className={`testimonial-card text-center hover-lift scroll-fade-up ${whoForCards.visibleElements[index] ? `visible scroll-stagger-${index + 1}` : ''}`}
+              >
+                <h3 className="text-xl md:text-2xl font-bold mb-4">{item.title}</h3>
+                <p className="text-gray-400">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Student Results Section */}
+      <section className="section-spacing bg-zinc-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={studentResultsAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <SectionHeader
+              badge="STUDENT SUCCESS"
+              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              title="Real People, <span class='text-green-400'>Real Results</span>"
+              subtitle="These entrepreneurs went from manual hell to automated paradise..."
+            />
+          </div>
+
+          <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
+              <div className="text-2xl font-bold text-green-400 mb-2">Sarah M.</div>
+              <div className="text-gray-400 mb-4">E-commerce Store Owner</div>
+              <p className="text-gray-300">"Went from 60 hours/week to 20 hours/week. My N8N automations handle everything from order processing to customer support. Revenue increased 300% while working half the time!"</p>
             </div>
+            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
+              <div className="text-2xl font-bold text-green-400 mb-2">Marcus R.</div>
+              <div className="text-gray-400 mb-4">Digital Marketing Agency</div>
+              <p className="text-gray-300">"Built automated client reporting, lead generation, and campaign management. Scaled from 5 to 50 clients without hiring anyone. Now charging $5K/month for automation services."</p>
+            </div>
+            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
+              <div className="text-2xl font-bold text-green-400 mb-2">Jennifer K.</div>
+              <div className="text-gray-400 mb-4">Coaching Business</div>
+              <p className="text-gray-300">"My N8N workflows automatically nurture leads, book calls, and follow up with prospects. Went from $5K to $50K monthly revenue while working 30% less. Pure magic!"</p>
+            </div>
+          </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Stop Trading <span className="text-red-400">Time For Money</span> — Build <span className="text-purple-400">AI-Powered Automation Empire</span> That Works While You Sleep
-            </h1>
+          <div className={`text-center scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+            <h3 className="text-2xl md:text-4xl font-bold mb-4">Become Our Next Success Story</h3>
+            <p className="text-lg md:text-xl text-gray-400 mb-8">Join thousands of entrepreneurs building automated empires!</p>
+            <Link href="#pricing" className="cta-button inline-block">
+              Start My Automation Empire
+            </Link>
+          </div>
+        </div>
+      </section>
 
-            <p className="text-xl text-gray-400 mb-6">
-              The complete <span className="text-purple-300">N8N AI Automation System</span> that lets <strong>non-technical entrepreneurs</strong> build million-dollar workflows without writing a single line of code
+      {/* 7. What You Get Section */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={modulesAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <SectionHeader
+              badge="COMPLETE SYSTEM"
+              badgeColor="bg-zinc-900 border border-purple-500 text-purple-400"
+              title="Everything You Need to Build <span class='text-purple-400'>Million-Dollar Workflows</span>"
+              subtitle="The most comprehensive N8N automation training ever created."
+            />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                title: "<span class='text-purple-400'>Module 1:</span> N8N Foundation Mastery",
+                value: "$497",
+                description: "Master N8N from zero to hero. Complete setup, interface navigation, node connections, and building your first automated workflows. No technical background required."
+              },
+              {
+                title: "<span class='text-purple-400'>Module 2:</span> AI Integration Secrets",
+                value: "$697",
+                description: "Connect ChatGPT, Claude, and other AI models to your workflows. Build intelligent automation that thinks, learns, and adapts without human intervention."
+              },
+              {
+                title: "<span class='text-purple-400'>Module 3:</span> Business Process Automation",
+                value: "$797",
+                description: "Automate lead generation, customer onboarding, email sequences, social media posting, and sales processes. Turn manual tasks into automated systems."
+              },
+              {
+                title: "<span class='text-purple-400'>Module 4:</span> Advanced Workflow Architecture",
+                value: "$597",
+                description: "Build complex, multi-step workflows that handle conditional logic, data processing, and error handling. Create enterprise-level automation systems."
+              },
+              {
+                title: "<span class='text-purple-400'>Module 5:</span> API Integration Mastery",
+                value: "$697",
+                description: "Connect any tool or platform to your workflows. Master webhooks, HTTP requests, and API authentication. Integrate with Shopify, Stripe, HubSpot, and 500+ other platforms."
+              },
+              {
+                title: "<span class='text-purple-400'>Module 6:</span> Data Processing & Analytics",
+                value: "$497",
+                description: "Automatically collect, process, and analyze business data. Create custom dashboards, generate reports, and get insights without manual data entry."
+              },
+              {
+                title: "<span class='text-purple-400'>Module 7:</span> Client Service Automation",
+                value: "$897",
+                description: "Build white-label automation services for clients. Templates, proposals, pricing strategies, and delivery systems to charge $3K-$10K per automation project."
+              },
+              {
+                title: "<span class='text-purple-400'>Module 8:</span> Scaling & Optimization",
+                value: "$597",
+                description: "Scale workflows to handle millions of operations. Performance optimization, monitoring, debugging, and maintenance strategies for bulletproof automation."
+              }
+            ].map((module, index) => (
+              <div
+                key={index}
+                ref={moduleCards.setElementRef(index)}
+                className={`testimonial-card hover-lift scroll-fade-up relative ${moduleCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
+              >
+                <ValueBadge 
+                  value={module.value}
+                  className="absolute top-4 right-4"
+                />
+                <h3 className="text-lg md:text-xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: module.title }}></h3>
+                <p className="text-gray-400 leading-relaxed">{module.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className={`text-center mt-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Plus Lifetime Access & Updates</h3>
+            <p className="text-lg md:text-xl text-gray-400 mb-8">
+              N8N evolves constantly. You'll get every update, new module, and workflow template added to the system forever.
             </p>
+            <Link href="#pricing" className="cta-button inline-block">
+              Get Complete N8N System
+            </Link>
+          </div>
+        </div>
+      </section>
 
-            <div className="bg-yellow-600/20 border border-yellow-500/50 rounded-lg p-4 mb-8 max-w-3xl mx-auto">
-              <p className="text-yellow-300 font-semibold text-lg">
-                ⚡ While your competitors burn 40+ hours/week on manual tasks, you'll be scaling 10x faster with AI automation that never sleeps, never calls in sick, and never asks for a raise
+      {/* 8. Bonuses Section */}
+      <section className="section-spacing bg-zinc-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={bonusAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <SectionHeader
+              badge="INSANE BONUSES"
+              badgeColor="bg-zinc-900 border border-yellow-500 text-yellow-400"
+              title="Get $4,291 in <span class='text-yellow-400'>Premium Bonuses</span> FREE"
+              subtitle="These bonuses alone are worth more than most courses. But you get them FREE today."
+            />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                title: "🔧 100+ Ready-Made Workflow Templates",
+                value: "$997",
+                description: "Copy-paste workflows for every business need. Lead generation, customer service, e-commerce, social media, analytics - just import and customize for instant results."
+              },
+              {
+                title: "🤖 AI Prompt Library (500+ Prompts)",
+                value: "$497",
+                description: "Proven AI prompts for every automation scenario. Customer service responses, content creation, data analysis, lead qualification - all optimized for maximum performance."
+              },
+              {
+                title: "🎯 Client Service Toolkit",
+                value: "$1,297",
+                description: "Complete business-in-a-box for selling automation services. Contracts, proposals, pricing guides, delivery templates - start charging $5K+ per project immediately."
+              },
+              {
+                title: "📊 Advanced Analytics Dashboard",
+                value: "$697",
+                description: "Pre-built dashboard templates that automatically track your business metrics, ROI from automation, and performance analytics. See exactly how much time and money you're saving."
+              },
+              {
+                title: "🔄 Integration Setup Guides",
+                value: "$397",
+                description: "Step-by-step guides for connecting N8N to 100+ popular tools. Shopify, WordPress, Stripe, Mailchimp, Slack, and more. Never get stuck on technical setup again."
+              },
+              {
+                title: "👥 Private Mastermind Community",
+                value: "$1,997/year",
+                description: "Exclusive access to our private community of automation experts. Get help, share workflows, collaborate on projects, and network with successful entrepreneurs."
+              }
+            ].map((bonus, index) => (
+              <div
+                key={index}
+                ref={bonusCards.setElementRef(index)}
+                className={`bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-2xl p-6 hover:from-yellow-500/20 hover:to-orange-500/20 transition-all duration-300 hover-lift scroll-fade-up relative ${bonusCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
+              >
+                <ValueBadge 
+                  value={bonus.value}
+                  variant="yellow"
+                  className="absolute top-4 right-4"
+                />
+                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400">{bonus.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{bonus.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 9. Pricing Section */}
+      <section className="section-spacing bg-gradient-to-b from-purple-900/20 to-blue-900/20 border-t border-purple-500/30" id="pricing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={pricingAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <SectionHeader
+              badge="INSANE VALUE"
+              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              title="This is <span class='text-green-400'>RIDICULOUS</span>"
+              subtitle="Let's do the math on what you're actually getting today vs. hiring this expertise..."
+            />
+          </div>
+
+          {/* Value Stack */}
+          <div className={`max-w-4xl mx-auto mb-16 scroll-scale ${pricingAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className="bg-zinc-900 border border-green-500/30 rounded-3xl p-8 md:p-12">
+              <h3 className="text-3xl font-bold mb-8 text-center text-green-400">Total Value Breakdown</h3>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-lg">8 Core Modules</span>
+                  <span className="text-xl font-bold text-green-400">$1,479</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-lg">100+ Workflow Templates</span>
+                  <span className="text-xl font-bold text-green-400">$997</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-lg">AI Prompt Library</span>
+                  <span className="text-xl font-bold text-green-400">$497</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-lg">Client Service Toolkit</span>
+                  <span className="text-xl font-bold text-green-400">$1,297</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-lg">Analytics Dashboard</span>
+                  <span className="text-xl font-bold text-green-400">$697</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-lg">Integration Guides</span>
+                  <span className="text-xl font-bold text-green-400">$397</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-lg">Private Community</span>
+                  <span className="text-xl font-bold text-green-400">$1,997</span>
+                </div>
+                
+                <div className="flex justify-between items-center py-6 bg-green-900/20 rounded-lg px-6 mt-6">
+                  <span className="text-2xl font-bold">TOTAL VALUE:</span>
+                  <span className="text-3xl font-black text-green-400">$7,361</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Pricing Comparison */}
+          <div className={`mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+            <PricingComparison
+              options={[
+                {
+                  title: "Hiring Automation Developer",
+                  price: "$8,000-$15,000",
+                  period: "PER PROJECT",
+                  color: "border-red-500 text-red-400",
+                  features: [
+                    "Single workflow only",
+                    "No training included", 
+                    "Expensive ongoing maintenance",
+                    "No business knowledge transfer",
+                    "Dependent on developer forever"
+                  ]
+                },
+                {
+                  title: "Automation Agency",
+                  price: "$3,000-$7,000",
+                  period: "PER MONTH",
+                  color: "border-orange-500 text-orange-400",
+                  features: [
+                    "Basic workflow setup",
+                    "No education or training",
+                    "Limited customization",
+                    "Expensive recurring costs",
+                    "No ownership of systems"
+                  ]
+                },
+                {
+                  title: "N8N AI Automations",
+                  price: "$297",
+                  period: "ONE-TIME",
+                  color: "border-green-500 text-green-400",
+                  badge: "🔥 BEST VALUE",
+                  features: [
+                    "Complete system mastery",
+                    "Unlimited workflow creation",
+                    "Lifetime access & updates",
+                    "$7,361 worth of bonuses",
+                    "Build automation business"
+                  ]
+                }
+              ]}
+            />
+          </div>
+
+          {/* Scarcity & Urgency */}
+          <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
+            <div className="bg-zinc-900 border border-red-500 rounded-3xl p-8 mb-8">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400">
+                ⚠️ Limited Time Early Bird Offer ⚠️
+              </h3>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-zinc-900 rounded-2xl p-6">
+                  <div className="text-2xl font-bold text-red-400 mb-2">72 HOURS</div>
+                  <p className="text-gray-300">Price jumps to $497 after early bird ends</p>
+                </div>
+                <div className="bg-zinc-900 rounded-2xl p-6">
+                  <div className="text-2xl font-bold text-red-400 mb-2">MIDNIGHT</div>
+                  <p className="text-gray-300">All bonuses expire at 11:59 PM Sunday</p>
+                </div>
+                <div className="bg-zinc-900 rounded-2xl p-6">
+                  <div className="text-2xl font-bold text-red-400 mb-2">100 SPOTS</div>
+                  <p className="text-gray-300">Only accepting 100 students this round</p>
+                </div>
+              </div>
+              
+              <p className="text-xl text-gray-300 mb-6">
+                I'm keeping this group small so I can personally ensure everyone builds profitable automation systems. 
+                Once we hit 100 students, enrollment closes and the price doubles.
               </p>
+              
+              <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6 mb-8">
+                <h4 className="text-2xl font-bold text-yellow-400 mb-3">🚨 Don't Wait - Here's Why:</h4>
+                <div className="text-left space-y-2 text-gray-300">
+                  <p>• Every day you wait, competitors build stronger automation advantages</p>
+                  <p>• Each month of manual work = $10K-$50K in lost productivity and opportunities</p>
+                  <p>• AI automation skills become more valuable (and necessary) every single day</p>
+                  <p>• These bonuses and pricing will NEVER be offered again</p>
+                </div>
+              </div>
             </div>
-
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
-              <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift px-8 py-4">
-                🔥 Get Instant Access - Complete Automation System
+            
+            <div className="space-y-6">
+              <Link
+                href="#"
+                className="inline-block bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse"
+              >
+                🚀 GET N8N MASTERY SYSTEM - $297 🚀
               </Link>
-              <div className="text-center">
-                <p className="text-sm text-green-400 font-bold">Complete N8N mastery + lifetime updates included</p>
-                <p className="text-xs text-gray-400">Then cart closes for 6 months</p>
+              
+              <p className="text-sm text-gray-400">
+                ✅ Instant Access • ✅ Lifetime Updates • ✅ 30-Day Money-Back Guarantee
+              </p>
+              
+              <div className="bg-zinc-900 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
+                <h4 className="text-xl font-bold text-green-400 mb-3">💯 Zero-Risk Guarantee</h4>
+                <p className="text-gray-300">
+                  Try N8N AI Automations for 30 days. If you don't save at least 20 hours per week and see massive 
+                  business improvements, I'll refund every penny. No questions asked.
+                </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Countdown Timer */}
-            <div className="bg-zinc-900 border border-red-600/50 rounded-lg p-4 mb-8 max-w-lg mx-auto">
-              <p className="text-red-300 font-bold mb-2">⏰ LIMITED TIME OFFER:</p>
-              <div className="text-center text-white">
-                <div className="text-lg font-bold">Early Bird Special Price</div>
-                <div className="text-sm">Price increases soon</div>
+      {/* 10. Testimonials Section */}
+      <section className="section-spacing bg-zinc-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={testimonialsAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${testimonialsAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <SectionHeader
+              badge="SUCCESS STORIES"
+              badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
+              title="What <span class='text-blue-400'>N8N Students</span> Are Saying..."
+              subtitle="Real entrepreneurs sharing their automation transformation stories."
+            />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto mb-16">
+            {[
+              {
+                name: "David Chen",
+                role: "E-commerce Entrepreneur • $2M Revenue",
+                avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
+                content: "N8N transformed my entire business! I went from working 80 hours/week manually processing orders to 30 hours/week while revenue grew 300%. My automation handles everything from inventory management to customer support. I'm finally working ON my business, not IN it."
+              },
+              {
+                name: "Sarah Martinez",
+                role: "Digital Marketing Agency • 50+ Clients",
+                avatar: "https://ext.same-assets.com/1161517358/432373971.webp",
+                content: "This course paid for itself in the first week! I built automated client reporting systems that save me 25 hours weekly. Now I'm selling automation services to clients for $5K each. From manual chaos to automated empire - this system is pure gold!"
+              },
+              {
+                name: "Michael Torres",
+                role: "SaaS Founder • 10K+ Users",
+                avatar: "https://ext.same-assets.com/1161517358/2128294924.webp",
+                content: "The AI integration modules blew my mind! My N8N workflows now handle customer onboarding, support tickets, and user engagement automatically. Reduced customer acquisition cost by 60% while improving satisfaction scores. This is the future of business!"
+              }
+            ].map((testimonial, index) => (
+              <div
+                key={index}
+                ref={testimonialCards.setElementRef(index)}
+                className={`testimonial-card hover-lift scroll-fade-up ${testimonialCards.visibleElements[index] ? `visible scroll-stagger-${index + 1}` : ''}`}
+              >
+                <TestimonialCard {...testimonial} />
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            {/* Reviews */}
-            <div className="flex items-center justify-center">
+      {/* 11. FAQ Section */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={faqAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${faqAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <SectionHeader
+              badge="FAQ"
+              badgeColor="bg-zinc-900 border border-purple-500 text-purple-400"
+              title="Frequently Asked <span class='text-purple-400'>Questions</span>"
+              subtitle="Everything you need to know about mastering N8N automation."
+            />
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {[
+              {
+                question: "I have zero technical skills. Can I really learn N8N automation?",
+                answer: "Absolutely! This course is designed for complete beginners. N8N is a visual, drag-and-drop platform - no coding required. I'll walk you through every single step, from basic setup to advanced workflows. Most students build their first automation within 24 hours, regardless of technical background."
+              },
+              {
+                question: "How much time do I need to invest to see results?",
+                answer: "You can start seeing time savings immediately! Most students save 10-15 hours in their first week by automating just 2-3 manual processes. To master the full system, plan for 2-3 hours per week over 8 weeks. But the ROI is immediate - you'll save more time than you invest from day one."
+              },
+              {
+                question: "What if N8N changes or becomes obsolete?",
+                answer: "N8N is open-source and growing rapidly with backing from major investors. But more importantly, the automation principles you learn apply to ANY platform. You'll understand workflow logic, API integrations, and automation thinking - skills that transfer to Zapier, Make, or any future platform."
+              },
+              {
+                question: "Can I really build a business selling automation services?",
+                answer: "Yes! Many students charge $3K-$10K per automation project. The Client Service Toolkit bonus includes everything you need: contracts, proposals, pricing guides, and delivery templates. One student landed a $15K automation project within 30 days of completing the course."
+              },
+              {
+                question: "How is this different from free YouTube tutorials?",
+                answer: "YouTube teaches you random tricks. This is a complete system built from 5+ years of automation experience. You get structured learning, real business workflows, troubleshooting guides, templates, and ongoing support. Plus, you'll avoid the 100+ hours of trial and error I went through."
+              },
+              {
+                question: "What if I get stuck or need help?",
+                answer: "You get lifetime access to our private community where I personally answer questions. Plus detailed troubleshooting guides, video walkthroughs for common issues, and template workflows you can copy exactly. You're never alone in this journey."
+              },
+              {
+                question: "Do I need to pay for N8N hosting?",
+                answer: "N8N offers a generous free tier that's perfect for learning and small businesses. I'll show you how to maximize the free plan and when/how to scale up cost-effectively. Most students operate profitably on the free tier for months."
+              },
+              {
+                question: "How quickly will this course pay for itself?",
+                answer: "Most students save the course cost in the first month through time savings alone. If you value your time at $50/hour and save 20 hours/month, that's $1,000 monthly value. One automation project for a client typically pays for the course 10x over."
+              },
+              {
+                question: "What businesses can benefit from N8N automation?",
+                answer: "ANY business with repetitive tasks! E-commerce stores, agencies, consultants, coaches, SaaS companies, service providers, content creators - automation works everywhere. The course includes workflows for 15+ different business types."
+              },
+              {
+                question: "Is this just theory or do I get practical, actionable content?",
+                answer: "This is 100% practical! Every module includes hands-on exercises, real workflow builds, and templates you can implement immediately. No fluff theory - just battle-tested automation systems that work in the real world."
+              },
+              {
+                question: "What's your refund policy?",
+                answer: "Simple: 30-day money-back guarantee, no questions asked. If you don't save significant time and see clear business improvements within 30 days, I'll refund every penny. I'm confident this system will transform how you work."
+              },
+              {
+                question: "Why is the price so low for such comprehensive training?",
+                answer: "I want to democratize automation and help as many entrepreneurs as possible escape manual labor hell. I'd rather have 1,000 successful students at $297 than 10 students at $2,997. This pricing won't last forever - it's my way of building a community of automation experts."
+              }
+            ].map((faq, index) => (
+              <div
+                key={index}
+                ref={faqCards.setElementRef(index)}
+                className={`bg-zinc-900 rounded-2xl p-6 md:p-8 hover-lift scroll-fade-up ${faqCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
+              >
+                <FAQ {...faq} />
+              </div>
+            ))}
+          </div>
+
+          <div className={`text-center mt-16 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
+            <div className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 border border-purple-500/30 rounded-3xl p-8 max-w-3xl mx-auto">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Still Have Questions?</h3>
+              <p className="text-lg text-gray-300 mb-6">
+                Join the private community and get direct access to me and other automation experts. 
+                Your questions get answered fast by people who've already built successful automation systems.
+              </p>
+              <Link
+                href="#"
+                className="cta-button inline-block text-lg"
+              >
+                Get N8N System & Ask Me Anything
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 12. Final CTA Section */}
+      <section className="section-spacing bg-gradient-to-b from-purple-900/20 to-black">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div
+            ref={finalCtaAnimation.elementRef}
+            className={`scroll-fade-up ${finalCtaAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <div className="flex items-center justify-center mb-8">
               <div className="flex items-center space-x-2">
                 <div className="flex">
                   <Image
@@ -88,1199 +874,42 @@ export default function N8NAutomationsPage() {
                 <div className="flex text-yellow-400">
                   {'★'.repeat(5)}
                 </div>
-                <span className="text-sm text-gray-400">2,847+ students saving 40+ hours/week</span>
+                <span className="text-sm text-gray-400">2,847+ successful students</span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Problem Section */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            ref={problemAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-red-400 uppercase tracking-wider mb-4">THE BRUTAL TRUTH</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              You're Still Living In <span className="text-red-400">1999</span> While Your Competitors Build <span className="text-purple-400">AI Empires</span>
-            </h2>
-            <p className="text-xl text-gray-400 mb-12 max-w-4xl mx-auto">
-              Every day you delay automation is another day your competitors scale 10x faster while you're stuck in the manual labor trap...
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">😫</div>
-              <h3 className="text-xl font-bold mb-3 text-red-300">Still Doing Everything Manually</h3>
-              <p className="text-gray-400 text-sm">
-                Posting on social media one by one, responding to emails individually, updating spreadsheets by hand... living like it's 1999 while AI revolutionizes everything around you.
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Your Automation Empire Starts TODAY</h2>
+            <p className="text-lg md:text-xl text-gray-400 mb-8">Join thousands of entrepreneurs who escaped manual labor hell and built automated businesses that scale infinitely</p>
+            
+            <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-red-400 mb-3">⏰ FINAL WARNING</h3>
+              <p className="text-gray-300 mb-4">
+                This $297 early bird price and $7,361 in bonuses expire at MIDNIGHT Sunday. After that, you'll pay $497 without any bonuses.
               </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">⏰</div>
-              <h3 className="text-xl font-bold mb-3 text-red-300">Burning 40+ Hours/Week</h3>
-              <p className="text-gray-400 text-sm">
-                Trapped in the time-for-money prison, working nights and weekends on repetitive tasks that could be automated in minutes. Your competitors are scaling while you're stuck in operational quicksand.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">🔥</div>
-              <h3 className="text-xl font-bold mb-3 text-red-300">"Too Technical" Excuse</h3>
-              <p className="text-gray-400 text-sm">
-                Watching the AI automation revolution pass you by because you think it's "too technical" or "too expensive" — meanwhile 12-year-olds are building million-dollar automated businesses.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">💸</div>
-              <h3 className="text-xl font-bold mb-3 text-red-300">Leaving $50K+ On The Table</h3>
-              <p className="text-gray-400 text-sm">
-                Your manual processes are costing you THOUSANDS every month in lost opportunities, missed leads, delayed responses, and human errors that automated systems would eliminate completely.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">📈</div>
-              <h3 className="text-xl font-bold mb-3 text-red-300">Competitors Scaling 10x Faster</h3>
-              <p className="text-gray-400 text-sm">
-                While you're manually managing everything, smart entrepreneurs are building automated empires that work 24/7. They're capturing the market while you're stuck managing instead of growing.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-6 scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">😴</div>
-              <h3 className="text-xl font-bold mb-3 text-red-300">Business Dies When You Sleep</h3>
-              <p className="text-gray-400 text-sm">
-                Your business literally stops making money when you're not actively working. No lead capture at night, no customer service on weekends, no content publishing while you're on vacation.
-              </p>
-            </div>
-          </div>
-
-          <div className={`text-center bg-yellow-600/10 border border-yellow-500/30 rounded-lg p-8 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}>
-            <h3 className="text-2xl font-bold mb-4 text-yellow-300">⚡ The Cold Reality Check:</h3>
-            <p className="text-lg text-gray-300 mb-6">
-              Every single day you delay automation, your competitors gain an unfair advantage that becomes HARDER to overcome. 
-              The entrepreneurs building automated systems today will dominate their markets for the next decade.
-            </p>
-            <p className="text-red-400 font-bold text-xl">
-              You can't afford to wait another day... 
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Solution Section */}
-      <section className="section-spacing bg-purple-900/10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            ref={whoForAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${whoForAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-purple-400 uppercase tracking-wider mb-4">THE BREAKTHROUGH SOLUTION</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Meet <span className="text-purple-400">N8N</span> — The <span className="text-green-400">"No-Code"</span> Automation Revolution
-            </h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-4xl mx-auto">
-              Finally, an automation platform that doesn't require a computer science degree or $100K developer budget...
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="text-green-400 text-4xl mb-4">🧩</div>
-              <h3 className="text-xl font-bold mb-3 text-green-300">Drag & Drop Interface</h3>
-              <p className="text-gray-400 text-sm">
-                Build complex automations by simply dragging boxes and connecting them — no coding, no technical knowledge, no $200/hour developers.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <div className="text-green-400 text-4xl mb-4">🔗</div>
-              <h3 className="text-xl font-bold mb-3 text-green-300">800+ App Integrations</h3>
-              <p className="text-gray-400 text-sm">
-                Connect every tool in your business — Gmail, Slack, Instagram, Shopify, Stripe, ChatGPT, Google Sheets, and 790+ others.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <div className="text-green-400 text-4xl mb-4">🤖</div>
-              <h3 className="text-xl font-bold mb-3 text-green-300">AI-Powered Everything</h3>
-              <p className="text-gray-400 text-sm">
-                ChatGPT writes your emails, Claude generates content, AI analyzes data, creates images, and makes decisions — all automated.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <div className="text-green-400 text-4xl mb-4">⚡</div>
-              <h3 className="text-xl font-bold mb-3 text-green-300">Deploy In Minutes</h3>
-              <p className="text-gray-400 text-sm">
-                What used to take months of development now takes minutes. Build, test, and deploy automations faster than your competition can say "manual process."
-              </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <div className="text-green-400 text-4xl mb-4">💰</div>
-              <h3 className="text-xl font-bold mb-3 text-green-300">$97/Month vs $50K Budget</h3>
-              <p className="text-gray-400 text-sm">
-                Why pay $50K+ for a development team when N8N gives you the same power for less than your Netflix subscription?
-              </p>
-            </div>
-
-            <div className={`bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center scroll-fade-up ${whoForAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <div className="text-green-400 text-4xl mb-4">🌍</div>
-              <h3 className="text-xl font-bold mb-3 text-green-300">Works 24/7 Globally</h3>
-              <p className="text-gray-400 text-sm">
-                Your automations never sleep, never take vacations, never get sick. They work around the clock across all time zones capturing every opportunity.
-              </p>
-            </div>
-          </div>
-
-          <div className={`text-center bg-purple-600/10 border border-purple-500/30 rounded-lg p-8 scroll-fade-up ${whoForAnimation.isVisible ? 'visible' : ''}`}>
-            <h3 className="text-2xl font-bold mb-4 text-purple-300">🚀 The Game-Changing Truth:</h3>
-            <p className="text-lg text-gray-300 mb-6">
-              N8N is the great equalizer — it gives small businesses and solopreneurs the same automation superpowers 
-              that Fortune 500 companies pay millions for. The playing field just got leveled.
-            </p>
-            <Link href="#packages" className="cta-button inline-block btn-animate hover-lift">
-              Show Me The Automations
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 12 Power Modules Section */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            ref={modulesAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-purple-400 uppercase tracking-wider mb-4">THE COMPLETE SYSTEM</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              12 Power-Packed Modules That Build Your <span className="text-purple-400">Automation Empire</span>
-            </h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-4xl mx-auto">
-              Each module is designed to eliminate specific manual tasks that are bleeding your business dry...
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 1</span>
-                <span className="text-green-400 font-bold text-sm">$497 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">N8N Foundations & Setup</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Master the N8N interface, create your first automations, understand nodes and connections. Zero to automation hero in 2 hours.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Complete N8N installation & configuration</li>
-                <li>✓ Understanding workflows and execution</li>
-                <li>✓ Debugging and error handling</li>
-                <li>✓ Security best practices</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 2</span>
-                <span className="text-green-400 font-bold text-sm">$197 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">AI Integration Mastery</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Connect ChatGPT, Claude, Midjourney, and 50+ AI tools. Build AI-powered content machines that never sleep.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ ChatGPT API integration & advanced prompts</li>
-                <li>✓ Claude content generation workflows</li>
-                <li>✓ AI image generation automation</li>
-                <li>✓ Voice AI and speech-to-text systems</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 3</span>
-                <span className="text-green-400 font-bold text-sm">$147 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Social Media Automation</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Automate posting, engagement, DMs, and growth across Instagram, Twitter, LinkedIn, TikTok, and Facebook.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Multi-platform content scheduling</li>
-                <li>✓ Automated engagement and replies</li>
-                <li>✓ Hashtag research and optimization</li>
-                <li>✓ Growth hacking workflows</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 4</span>
-                <span className="text-green-400 font-bold text-sm">$127 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Email Marketing Machines</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Build intelligent email sequences that nurture leads, recover abandoned carts, and maximize lifetime value.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Automated email sequences</li>
-                <li>✓ Behavioral trigger campaigns</li>
-                <li>✓ Personalization at scale</li>
-                <li>✓ A/B testing automation</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 5</span>
-                <span className="text-green-400 font-bold text-sm">$997 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Content Generation Systems</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                AI-powered content creation for blogs, social media, emails, and ads. Create 100+ pieces daily on autopilot.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Blog post automation pipeline</li>
-                <li>✓ Social content generation</li>
-                <li>✓ Ad copy creation workflows</li>
-                <li>✓ Content repurposing systems</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 6</span>
-                <span className="text-green-400 font-bold text-sm">$127 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Data Scraping & Processing</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Extract valuable data from any website, clean it, analyze it, and turn it into actionable business intelligence.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Web scraping automation</li>
-                <li>✓ Data cleaning and validation</li>
-                <li>✓ Competitor monitoring</li>
-                <li>✓ Market research automation</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-7' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 7</span>
-                <span className="text-green-400 font-bold text-sm">$147 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Client Onboarding Automation</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Automate the entire client journey from first contact to project delivery. Scale without adding overhead.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Lead qualification workflows</li>
-                <li>✓ Contract and invoice automation</li>
-                <li>✓ Project kickoff sequences</li>
-                <li>✓ Client communication systems</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-8' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 8</span>
-                <span className="text-green-400 font-bold text-sm">$197 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Sales Funnel Automation</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Build high-converting sales funnels that qualify leads, handle objections, and close deals automatically.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Lead scoring and qualification</li>
-                <li>✓ Follow-up sequence automation</li>
-                <li>✓ Objection handling workflows</li>
-                <li>✓ Upsell and cross-sell systems</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-9' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 9</span>
-                <span className="text-green-400 font-bold text-sm">$127 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Customer Support Bots</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                AI-powered support that handles 80% of customer inquiries instantly, 24/7 across all channels.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Chatbot creation and training</li>
-                <li>✓ Multi-channel support automation</li>
-                <li>✓ Ticket routing and escalation</li>
-                <li>✓ Knowledge base integration</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-10' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 10</span>
-                <span className="text-green-400 font-bold text-sm">$497 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Analytics & Reporting</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Automated dashboards and reports that track every metric that matters. Make data-driven decisions effortlessly.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Automated report generation</li>
-                <li>✓ KPI tracking and alerts</li>
-                <li>✓ Multi-platform data consolidation</li>
-                <li>✓ Executive dashboard creation</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-11' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 11</span>
-                <span className="text-green-400 font-bold text-sm">$997 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Advanced AI Workflows</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Build complex AI-driven business processes that adapt, learn, and optimize themselves over time.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Machine learning integration</li>
-                <li>✓ Predictive analytics workflows</li>
-                <li>✓ AI decision trees</li>
-                <li>✓ Self-optimizing systems</li>
-              </ul>
-            </div>
-
-            <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-12' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 12</span>
-                <span className="text-green-400 font-bold text-sm">$197 VALUE</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Scaling & Monetization</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Turn your automation skills into a 6-figure business. Build automation agencies, sell workflows, create SaaS products.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>✓ Automation agency blueprint</li>
-                <li>✓ Workflow marketplace strategies</li>
-                <li>✓ SaaS product development</li>
-                <li>✓ Scaling to enterprise clients</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className={`text-center bg-gradient-to-r from-purple-900/30 to-blue-900/30 border border-purple-500/30 rounded-lg p-8 scroll-fade-up ${modulesAnimation.isVisible ? 'visible' : ''}`}>
-            <h3 className="text-3xl font-bold mb-4 text-purple-300">
-              12 Modules × Complete System = <span className="text-green-400">$1,744 Total Value</span>
-            </h3>
-            <p className="text-lg text-gray-300 mb-6">
-              Each module provides proven automation strategies that save hours of manual work and streamline your business operations.
-              Together, they create an automation empire worth millions.
-            </p>
-            <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift">
-              I Want All 12 Modules NOW
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Game-Changing Bonuses Section */}
-      <section className="section-spacing bg-gradient-to-b from-yellow-900/10 to-orange-900/10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            ref={bonusesAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${bonusesAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-yellow-400 uppercase tracking-wider mb-4">🎁 GAME-CHANGING BONUSES</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Wait... There's <span className="text-yellow-400">MORE</span>! 🔥
-            </h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-4xl mx-auto">
-              We're adding $1,694 worth of exclusive bonuses included with your purchase
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className={`bg-gradient-to-br from-yellow-900/20 to-orange-900/20 border border-yellow-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold">🎯 BONUS #1</span>
-                <span className="text-green-400 font-bold text-lg">$497 VALUE</span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-yellow-300">100+ Ready-to-Deploy Workflows</h3>
-              <p className="text-gray-400 mb-4">
-                Plug-and-play automations that you can deploy in minutes. No setup, no configuration — just instant automation power.
-              </p>
-              <ul className="text-sm text-gray-300 space-y-2">
-                <li>✓ Social media posting machines</li>
-                <li>✓ Email marketing sequences</li>
-                <li>✓ Lead generation systems</li>
-                <li>✓ Customer service bots</li>
-                <li>✓ Data processing workflows</li>
-                <li>✓ Content creation pipelines</li>
-              </ul>
-            </div>
-
-            <div className={`bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-bold">🧠 BONUS #2</span>
-                <span className="text-green-400 font-bold text-lg">$247 VALUE</span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-blue-300">AI Prompt Library (1,000+ Prompts)</h3>
-              <p className="text-gray-400 mb-4">
-                Professional AI prompts tested across hundreds of successful automation projects.
-              </p>
-              <ul className="text-sm text-gray-300 space-y-2">
-                <li>✓ Content creation prompts</li>
-                <li>✓ Email marketing prompts</li>
-                <li>✓ Social media prompts</li>
-                <li>✓ Sales copy prompts</li>
-                <li>✓ Customer service prompts</li>
-                <li>✓ Business strategy prompts</li>
-              </ul>
-            </div>
-
-            <div className={`bg-gradient-to-br from-green-900/20 to-teal-900/20 border border-green-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-green-600/20 text-green-300 px-4 py-2 rounded-full text-sm font-bold">🔄 BONUS #3</span>
-                <span className="text-green-400 font-bold text-lg">$497/YEAR</span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-green-300">Lifetime Workflow Updates</h3>
-              <p className="text-gray-400 mb-4">
-                As N8N adds new integrations and AI tools evolve, you get all the updated workflows FREE forever.
-              </p>
-              <ul className="text-sm text-gray-300 space-y-2">
-                <li>✓ Monthly new workflow releases</li>
-                <li>✓ Platform integration updates</li>
-                <li>✓ AI model improvements</li>
-                <li>✓ Bug fixes and optimizations</li>
-                <li>✓ Industry-specific workflows</li>
-                <li>✓ Advanced technique tutorials</li>
-              </ul>
-            </div>
-
-            <div className={`bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-purple-600/20 text-purple-300 px-4 py-2 rounded-full text-sm font-bold">👥 BONUS #4</span>
-                <span className="text-green-400 font-bold text-lg">$797/YEAR</span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-purple-300">Private Automation Community</h3>
-              <p className="text-gray-400 mb-4">
-                Join 2,800+ automation entrepreneurs sharing workflows, strategies, and crushing it together.
-              </p>
-              <ul className="text-sm text-gray-300 space-y-2">
-                <li>✓ Direct access to me (Anyro)</li>
-                <li>✓ Weekly live Q&A sessions</li>
-                <li>✓ Workflow sharing and feedback</li>
-                <li>✓ Business growth strategies</li>
-                <li>✓ Partnership opportunities</li>
-                <li>✓ First access to new content</li>
-              </ul>
-            </div>
-
-            <div className={`bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-red-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-red-600/20 text-red-300 px-4 py-2 rounded-full text-sm font-bold">🎯 BONUS #5</span>
-                <span className="text-green-400 font-bold text-lg">$497 VALUE</span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-red-300">1-on-1 Setup Session with Me</h3>
-              <p className="text-gray-400 mb-4">
-                Personal 60-minute session where I'll set up your first automation and answer all your questions.
-              </p>
-              <ul className="text-sm text-gray-300 space-y-2">
-                <li>✓ Custom workflow for your business</li>
-                <li>✓ Personalized automation strategy</li>
-                <li>✓ Technical setup assistance</li>
-                <li>✓ Goal setting and planning</li>
-                <li>✓ Direct feedback on your ideas</li>
-                <li>✓ Recorded session for reference</li>
-              </ul>
-            </div>
-
-            <div className={`bg-gradient-to-br from-indigo-900/20 to-blue-900/20 border border-indigo-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-indigo-600/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-bold">📋 BONUS #6</span>
-                <span className="text-green-400 font-bold text-lg">$147 VALUE</span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-indigo-300">Client Proposal Templates</h3>
-              <p className="text-gray-400 mb-4">
-                Professional proposal templates for automation services ranging from $1K-$10K projects.
-              </p>
-              <ul className="text-sm text-gray-300 space-y-2">
-                <li>✓ 10 high-converting proposal templates</li>
-                <li>✓ Pricing strategies and packages</li>
-                <li>✓ Objection handling scripts</li>
-                <li>✓ Case study presentations</li>
-                <li>✓ Contract templates</li>
-                <li>✓ Follow-up sequences</li>
-              </ul>
-            </div>
-
-            <div className={`bg-gradient-to-br from-yellow-900/20 to-red-900/20 border border-yellow-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-7' : ''}`}>
-              <div className="flex items-center justify-between mb-4">
-                <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold">🏢 BONUS #7</span>
-                <span className="text-green-400 font-bold text-lg">$297 VALUE</span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-yellow-300">Automation Agency Blueprint</h3>
-              <p className="text-gray-400 mb-4">
-                The complete playbook for building a 6-figure automation agency, including client acquisition, pricing, and scaling.
-              </p>
-              <ul className="text-sm text-gray-300 space-y-2">
-                <li>✓ Agency setup and structure</li>
-                <li>✓ Client acquisition strategies</li>
-                <li>✓ Service packages and pricing</li>
-                <li>✓ Team building and scaling</li>
-                <li>✓ Legal and business setup</li>
-                <li>✓ Case studies and examples</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className={`text-center bg-gradient-to-r from-yellow-900/30 to-orange-900/30 border border-yellow-500/50 rounded-lg p-8 scroll-fade-up ${bonusesAnimation.isVisible ? 'visible' : ''}`}>
-            <h3 className="text-3xl font-bold mb-4 text-yellow-300">
-              🎁 Total Bonus Value: <span className="text-green-400">$1,694</span>
-            </h3>
-            <p className="text-lg text-gray-300 mb-6">
-              These bonuses alone are worth more than most complete automation courses. 
-              But they're disappearing at midnight when the early bird pricing ends...
-            </p>
-            <div className="bg-red-600/20 border border-red-500/50 rounded-lg p-4 mb-6">
-              <p className="text-red-300 font-bold text-lg">
-                🎆 INCLUDED: All bonuses worth $1,694 included with purchase
-              </p>
-            </div>
-            <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift">
-              Grab All Bonuses Before They're Gone
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Value Stack Section */}
-      <section className="section-spacing bg-zinc-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            ref={stackedAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${stackedAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-green-400 uppercase tracking-wider mb-4">INSANE VALUE STACK</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              What You're Really Getting <span className="text-green-400">TODAY</span>
-            </h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-4xl mx-auto">
-              Let's break down the massive value you're getting vs. the alternatives...
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-8 mb-8 scroll-fade-up ${stackedAnimation.isVisible ? 'visible' : ''}`}>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
-                  <span className="text-gray-300">12 Power-Packed Modules</span>
-                  <span className="text-green-400 font-bold">$1,744</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
-                  <span className="text-gray-300">100+ Ready-to-Deploy Workflows</span>
-                  <span className="text-green-400 font-bold">$497</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
-                  <span className="text-gray-300">AI Prompt Library (1,000+ Prompts)</span>
-                  <span className="text-green-400 font-bold">$247</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
-                  <span className="text-gray-300">Lifetime Workflow Updates</span>
-                  <span className="text-green-400 font-bold">$497</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
-                  <span className="text-gray-300">Private Automation Community</span>
-                  <span className="text-green-400 font-bold">$147</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
-                  <span className="text-gray-300">1-on-1 Setup Session</span>
-                  <span className="text-green-400 font-bold">$497</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
-                  <span className="text-gray-300">Client Proposal Templates</span>
-                  <span className="text-green-400 font-bold">$147</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
-                  <span className="text-gray-300">Automation Agency Blueprint</span>
-                  <span className="text-green-400 font-bold">$497</span>
-                </div>
-              </div>
-              
-              <div className="mt-8 pt-8 border-t-2 border-green-500">
-                <div className="flex justify-between items-center text-xl font-bold">
-                  <span className="text-white">TOTAL VALUE:</span>
-                  <span className="text-green-400 text-3xl">$3,438</span>
-                </div>
-              </div>
-            </div>
-
-            <div className={`grid md:grid-cols-3 gap-8 mb-12 scroll-fade-up ${stackedAnimation.isVisible ? 'visible' : ''}`}>
-              <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-6 text-center">
-                <h3 className="text-xl font-bold mb-3 text-red-300">Hiring Developers</h3>
-                <p className="text-3xl font-bold text-red-400 mb-2">$15,000+</p>
-                <p className="text-gray-400 text-sm">Plus months of development time and ongoing maintenance costs</p>
-              </div>
-              
-              <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-6 text-center">
-                <h3 className="text-xl font-bold mb-3 text-red-300">Automation Agency</h3>
-                <p className="text-3xl font-bold text-red-400 mb-2">$8,000+</p>
-                <p className="text-gray-400 text-sm">For basic setup, no training, no ownership, ongoing fees</p>
-              </div>
-              
-              <div className="bg-zinc-900 border border-green-600/30 rounded-lg p-6 text-center relative">
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">BEST VALUE</span>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-green-300">This Complete System</h3>
-                <p className="text-3xl font-bold text-green-400 mb-2">$297</p>
-                <p className="text-gray-400 text-sm">Lifetime access, complete training, all workflows, 1-on-1 support</p>
-              </div>
-            </div>
-
-            <div className={`text-center bg-gradient-to-r from-green-900/30 to-blue-900/30 border border-green-500/30 rounded-lg p-8 scroll-fade-up ${stackedAnimation.isVisible ? 'visible' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4 text-green-300">💡 The Math Is Simple:</h3>
-              <p className="text-lg text-gray-300 mb-6">
-                If this system saves you just 10 hours per week (and it'll save you 40+), 
-                that's $20,800 worth of your time per year at $40/hour. 
-                This pays for itself in the first WEEK.
-              </p>
-              <p className="text-xl font-bold text-yellow-300">
-                ROI: 5,200% in Year 1 (and it keeps compounding!)
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="section-spacing" id="packages">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            ref={pricingAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-red-400 uppercase tracking-wider mb-4">🚨 LIMITED TIME OFFER</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Last Chance To Join The <span className="text-purple-400">Automation Revolution</span>
-            </h2>
-            <p className="text-xl text-gray-400 mt-4 max-w-3xl mx-auto">
-              Take advantage of our early bird pricing while it's still available.
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            <div className={`bg-gradient-to-br from-purple-900/30 to-blue-900/30 border-2 border-purple-500/50 rounded-2xl p-8 text-center card-hover hover-lift scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
-              
-              {/* Urgency Banner */}
-              <div className="bg-red-600/20 border border-red-500/50 rounded-lg p-4 mb-8">
-                <div className="flex items-center justify-center space-x-2 mb-2">
-                  <span className="animate-pulse text-red-400">🚨</span>
-                  <span className="text-red-300 font-bold">LIMITED TIME OFFER:</span>
-                  <span className="animate-pulse text-red-400">🚨</span>
-                </div>
-                <div className="text-center text-white">
-                  <div className="text-lg font-bold">Early Bird Special Price</div>
-                  <div className="text-sm">Price increases soon</div>
-                </div>
-              </div>
-
-              {/* Pricing */}
-              <div className="mb-8">
-                <p className="text-gray-400 mb-2">Complete N8N AI Automation System</p>
-                <p className="text-purple-300 mb-4 font-semibold">Full Lifetime Access + All Bonuses</p>
-                
-                <div className="bg-zinc-800/50 rounded-lg p-6 mb-6">
-                  <div className="flex items-center justify-center space-x-4 mb-4">
-                    <div className="text-center">
-                      <span className="text-gray-400 line-through text-2xl">$1,697</span>
-                      <p className="text-xs text-gray-500">Total Value</p>
-                    </div>
-                    <div className="text-center">
-                      <span className="text-red-400 line-through text-2xl">$1,497</span>
-                      <p className="text-xs text-gray-500">Regular Price</p>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="text-6xl font-bold text-green-400 mb-2">$297</div>
-                    <p className="text-green-300 font-bold text-lg">Save $1,200 Today!</p>
-                    <p className="text-gray-400 text-sm">One-time payment • No recurring fees • Lifetime access</p>
-                  </div>
-                </div>
-
-                <div className="bg-yellow-600/10 border border-yellow-500/30 rounded-lg p-4 mb-6">
-                  <p className="text-yellow-300 font-bold">⚡ Payment Plan: Pay in 2 installments of $149</p>
-                  <p className="text-gray-400 text-sm">30 days apart • Same lifetime access</p>
-                </div>
-              </div>
-
-              {/* What's Included */}
-              <div className="text-left mb-8 space-y-3">
-                <div className="flex items-start space-x-3">
-                  <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-purple-400">12 Power Modules</strong> - Complete automation mastery ($1,744 value)</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-yellow-400">100+ Ready Workflows</strong> - Deploy in minutes ($497 value)</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-blue-400">1,000+ AI Prompts</strong> - Professional prompt library ($247 value)</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-green-400">Lifetime Updates</strong> - Forever access to new workflows ($497/year value)</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-purple-400">Private Community</strong> - Automation entrepreneurs ($147/year value)</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-red-400">1-on-1 Session</strong> - Personal setup with me ($147 value)</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-indigo-400">Client Proposals</strong> - Sell $1K-$10K projects ($147 value)</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-yellow-400">Agency Blueprint</strong> - Build automation business ($297 value)</span>
-                </div>
-              </div>
-
-              {/* CTA Buttons */}
-              <div className="space-y-4">
-                <Link href="#" className="cta-button inline-block w-full text-center py-4 text-lg btn-animate animate-glow hover-lift">
-                  🔥 GET INSTANT ACCESS - $297 (Save $3,141)
-                </Link>
-                
-                <Link href="#" className="bg-zinc-700 hover:bg-zinc-600 text-white px-8 py-4 rounded-lg w-full inline-block text-center transition-colors">
-                  💳 2 Payments of $149 (30 days apart)
-                </Link>
-              </div>
-
-              {/* Guarantees */}
-              <div className="mt-8 space-y-4">
-                <div className="bg-zinc-900 border border-green-500/30 rounded-lg p-4">
-                  <h4 className="text-green-300 font-bold mb-2">🛡️ 60-Day Money-Back Guarantee</h4>
-                  <p className="text-gray-400 text-sm">Try everything risk-free. If you don't save 40+ hours in the first month, get your money back.</p>
-                </div>
-                
-                <div className="bg-zinc-900 border border-blue-500/30 rounded-lg p-4">
-                  <h4 className="text-blue-300 font-bold mb-2">⚡ Instant Access</h4>
-                  <p className="text-gray-400 text-sm">Get immediate access to all 12 modules, workflows, and bonuses. Start automating in the next 30 minutes.</p>
-                </div>
-              </div>
-
-              {/* Final Warning */}
-              <div className="mt-8 bg-zinc-900 border border-red-500/50 rounded-lg p-6">
-                <h4 className="text-red-300 font-bold text-lg mb-2">⚠️ FINAL WARNING</h4>
-                <p className="text-gray-300 mb-3">
-                  This complete automation system includes everything you need to master N8N and build profitable workflows.
-                </p>
-                <p className="text-red-400 font-bold">
-                  Don't let your competitors get a 6-month head start building their automation empires.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="section-spacing bg-zinc-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            ref={faqAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${faqAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-purple-400 uppercase tracking-wider mb-4">FREQUENTLY ASKED</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Questions That <span className="text-purple-400">Destroy Excuses</span>
-            </h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-4xl mx-auto">
-              Every objection, concern, and excuse... handled below 👇
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto space-y-6">
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "I'm not technical at all. Can I really do this?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> This is EXACTLY why N8N is perfect for you. It's drag-and-drop, no coding required. If you can use Gmail, you can build automations. Plus, you get 100+ ready-made workflows that work immediately, and a 1-on-1 session with me to set up your first automation personally.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "What if N8N changes or shuts down?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> N8N is open-source (it can never "shut down") and backed by millions in funding. But even if it disappeared tomorrow, the automation principles you learn work with ANY platform (Zapier, Make, etc.). You're learning universal skills, not just one tool.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "I don't have time to learn this right now..."</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> You don't have time NOT to learn this. You're burning 40+ hours per week on manual tasks. Module 1 takes 2 hours and will save you 10+ hours THIS WEEK. The busier you are, the MORE you need automation. The content is lifetime access - start when you want, but lock in this price today.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "Can't I just figure this out on YouTube for free?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> Sure, spend 500+ hours piecing together random tutorials that don't work together, missing crucial steps, and getting frustrated. Meanwhile, your competitors using this system will capture the market. Free content is scattered, outdated, and incomplete. This is a complete, tested system that works.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "What if I buy this and don't use it?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> Then you get your money back. 60-day guarantee, no questions asked. But here's the real question: What if you DON'T buy this and spend another year doing everything manually while your competitors build automated systems? The time savings alone make this worthwhile.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "Is this just another course that doesn't work in the real world?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> This isn't theory - it's battle-tested workflows that are running right now in real businesses. You get 100+ working automations, not just lessons. Plus 2,800+ entrepreneurs in the community proving it works. Check the testimonials - these are real results, not fake screenshots.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-7' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "What makes this different from other automation courses?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> Most courses teach you theory. This gives you 100+ working workflows you can deploy immediately. Most courses leave you hanging. This includes 1-on-1 setup, private community, and lifetime updates. Most courses cost $1K+. This is $297 with $3,438 worth of value.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-8' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "I'm worried about the ongoing costs of N8N and other tools..."</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> N8N starts free for 5,000 operations/month (most small businesses never exceed this). Even their paid plan is $20/month vs $100+/hour developers. The tools pay for themselves with the first automation. Plus you learn to build systems that MAKE money, not just save it.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-9' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "What if my industry is too unique/complex for automation?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> I've never seen an industry that can't benefit from email automation, social media scheduling, lead capture, customer onboarding, or data processing. N8N connects to 800+ apps - if you use any software, it can be automated. Plus the community has entrepreneurs from every industry sharing strategies.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-10' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "Can I really make money with automation services?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> Businesses pay $5K-$50K for automation projects because manual processes cost them MILLIONS. You get the client proposal templates and agency blueprint to start immediately. The community has members charging $200+/hour for automation work. The demand is MASSIVE and growing.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-11' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "What if I get stuck or need help?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> You get direct access to me, 2,800+ community members, weekly live Q&A sessions, and a personal 1-on-1 setup session. Plus the workflows are pre-built and tested. You're never alone - there's an entire support system to ensure your success.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-12' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "Why is this so much cheaper than hiring developers?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> Because I want to democratize automation. Big companies hoard this knowledge and charge $20K+. I'm giving you the same power for $297 because I believe small businesses deserve automation capabilities too. This is our standard pricing for complete access.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-13' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "Is there a payment plan?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> Yes, you can pay in 2 installments of $149 (30 days apart) with the same lifetime access. This system will generate that money back quickly through time savings and new opportunities.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-14' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "What happens after I purchase?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> You get instant access to everything - all 12 modules, 100+ workflows, bonuses, and community. You can start building your first automation in 30 minutes. You'll also get an email to schedule your 1-on-1 session with me within 48 hours.
-              </p>
-            </div>
-
-            <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-15' : ''}`}>
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "Why should I trust you?"</h3>
-              <p className="text-gray-400">
-                <strong>A:</strong> Check the testimonials - real people, real results. I've been building automation systems for 10+ years and have helped 2,800+ entrepreneurs. Plus you have a 60-day money-back guarantee. I'm putting MY reputation on the line because I know this works.
-              </p>
-            </div>
-          </div>
-
-          <div className={`text-center mt-16 scroll-fade-up ${faqAnimation.isVisible ? 'visible' : ''}`}>
-            <div className="bg-zinc-900 border border-red-500/50 rounded-lg p-8 max-w-3xl mx-auto mb-8">
-              <h3 className="text-2xl font-bold mb-4 text-red-300">🚨 No More Excuses</h3>
-              <p className="text-lg text-gray-300 mb-6">
-                Every question answered. Every objection handled. Every excuse destroyed.
-                The only thing left is ACTION.
-              </p>
-              <p className="text-red-400 font-bold text-xl">
-                Your competitors aren't waiting. Neither should you.
+              <p className="text-lg font-bold text-yellow-400">
+                Don't let another month pass drowning in manual tasks while others build automated empires!
               </p>
             </div>
             
-            <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift px-12 py-4">
-              Stop Making Excuses - Start Automating Now
+            <Link href="#pricing" className="inline-block bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4">
+              🚀 BUILD MY AUTOMATION EMPIRE - $297 🚀
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Success Stories Section */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={`text-center mb-16 scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}>
-            <p className="text-sm text-green-400 uppercase tracking-wider mb-4">💰 INCOME AUTOMATION RESULTS</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Real Students Making <span className="text-green-400">Real Money</span> With Automation
-            </h2>
-            <p className="text-xl text-gray-400 mt-4 max-w-3xl mx-auto">
-              These aren't fake testimonials. These are real entrepreneurs who stopped trading time for money and built automation empires...
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
-            <div className={`bg-gradient-to-br from-green-900/20 to-blue-900/20 border border-green-500/30 rounded-lg p-6 card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="flex items-center mb-4">
-                <Image
-                  src="https://ext.same-assets.com/1161517358/366375215.webp"
-                  alt="Marcus Rivera"
-                  width={48}
-                  height={48}
-                  className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
-                />
-                <div>
-                  <h4 className="font-semibold group-hover:text-green-400 transition-colors duration-300">Marcus Rivera</h4>
-                  <p className="text-sm text-gray-400">E-commerce Entrepreneur</p>
-                </div>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm">
-                "I went from manually processing 50 orders/day to automating everything - customer emails, inventory updates, shipping notifications, even upsells. My revenue jumped from $8K to $47K/month while working 60% fewer hours. The automation handles everything while I sleep."
-              </p>
-              <div className="bg-green-600/10 border border-green-600/30 rounded-lg p-3 group-hover:bg-green-600/20 group-hover:border-green-500/50 transition-all duration-300">
-                <p className="text-sm font-semibold text-green-300 group-hover:text-green-200 transition-colors duration-300">💰 $8K → $47K/month • 60% less work</p>
-              </div>
-            </div>
-
-            <div className={`bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-lg p-6 card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <div className="flex items-center mb-4">
-                <Image
-                  src="https://ext.same-assets.com/1161517358/640627202.jpeg"
-                  alt="Jessica Chen"
-                  width={48}
-                  height={48}
-                  className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
-                />
-                <div>
-                  <h4 className="font-semibold group-hover:text-purple-400 transition-colors duration-300">Jessica Chen</h4>
-                  <p className="text-sm text-gray-400">Content Creator Agency</p>
-                </div>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm">
-                "I built an automation agency after taking this course. Started charging $5K for simple N8N setups, now doing $25K enterprise projects. My first client paid for the course 12x over. The agency blueprint is pure gold - I'm booked 3 months out."
-              </p>
-              <div className="bg-purple-600/10 border border-purple-600/30 rounded-lg p-3 group-hover:bg-purple-600/20 group-hover:border-purple-500/50 transition-all duration-300">
-                <p className="text-sm font-semibold text-purple-300 group-hover:text-purple-200 transition-colors duration-300">🚀 $5K → $25K projects • 3 months booked</p>
-              </div>
-            </div>
-
-            <div className={`bg-gradient-to-br from-blue-900/20 to-teal-900/20 border border-blue-500/30 rounded-lg p-6 card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <div className="flex items-center mb-4">
-                <Image
-                  src="https://ext.same-assets.com/1161517358/2128294924.webp"
-                  alt="David Park"
-                  width={48}
-                  height={48}
-                  className="w-12 h-12 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"
-                />
-                <div>
-                  <h4 className="font-semibold group-hover:text-blue-400 transition-colors duration-300">David Park</h4>
-                  <p className="text-sm text-gray-400">Real Estate Investor</p>
-                </div>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm">
-                "Automated my entire lead generation pipeline - web scraping, email sequences, deal analysis, even contract generation. Went from 2 deals/month to 15 deals/month. The AI handles initial screening so I only talk to qualified sellers. It's literally printing money."
-              </p>
-              <div className="bg-blue-600/10 border border-blue-600/30 rounded-lg p-3 group-hover:bg-blue-600/20 group-hover:border-blue-500/50 transition-all duration-300">
-                <p className="text-sm font-semibold text-blue-300 group-hover:text-blue-200 transition-colors duration-300">📈 2 → 15 deals/month • Automated pipeline</p>
-              </div>
-            </div>
-
-            <div className={`bg-gradient-to-br from-yellow-900/20 to-orange-900/20 border border-yellow-500/30 rounded-lg p-6 card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-yellow-600 flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-lg">AM</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold group-hover:text-yellow-400 transition-colors duration-300">Amanda Miller</h4>
-                  <p className="text-sm text-gray-400">SaaS Founder</p>
-                </div>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm">
-                "Used N8N to automate our entire customer journey - from trial signup to cancellation win-back. Reduced churn by 47% and increased lifetime value by $2,300 per customer. The onboarding sequence alone generates an extra $180K/year in retained revenue."
-              </p>
-              <div className="bg-yellow-600/10 border border-yellow-600/30 rounded-lg p-3 group-hover:bg-yellow-600/20 group-hover:border-yellow-500/50 transition-all duration-300">
-                <p className="text-sm font-semibold text-yellow-300 group-hover:text-yellow-200 transition-colors duration-300">💎 35% less churn • +$48K/year retained</p>
-              </div>
-            </div>
-
-            <div className={`bg-gradient-to-br from-red-900/20 to-pink-900/20 border border-red-500/30 rounded-lg p-6 card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-lg">TW</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold group-hover:text-red-400 transition-colors duration-300">Tom Wilson</h4>
-                  <p className="text-sm text-gray-400">Digital Marketing Consultant</p>
-                </div>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm">
-                "Built automated social media machines for 47 clients using the workflows from this course. Each client pays $1,500/month for 'done-for-you' automation that runs itself. I work 20 hours/week and make $70K/month. It's the ultimate laptop lifestyle business."
-              </p>
-              <div className="bg-red-600/10 border border-red-600/30 rounded-lg p-3 group-hover:bg-red-600/20 group-hover:border-red-500/50 transition-all duration-300">
-                <p className="text-sm font-semibold text-red-300 group-hover:text-red-200 transition-colors duration-300">🏖️ $70K/month • 20 hours/week • 47 clients</p>
-              </div>
-            </div>
-
-            <div className={`bg-gradient-to-br from-indigo-900/20 to-purple-900/20 border border-indigo-500/30 rounded-lg p-6 card-hover hover-lift group scroll-fade-up ${ctaAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-lg">LH</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold group-hover:text-indigo-400 transition-colors duration-300">Lisa Hamilton</h4>
-                  <p className="text-sm text-gray-400">E-learning Business Owner</p>
-                </div>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-4 group-hover:text-white transition-colors duration-300 text-sm">
-                "Automated my entire course business - from lead magnets to course delivery to affiliate management. Student success rate increased 73% with automated accountability sequences. Revenue grew from $12K to $89K/month while I focused on creating better content."
-              </p>
-              <div className="bg-indigo-600/10 border border-indigo-600/30 rounded-lg p-3 group-hover:bg-indigo-600/20 group-hover:border-indigo-500/50 transition-all duration-300">
-                <p className="text-sm font-semibold text-indigo-300 group-hover:text-indigo-200 transition-colors duration-300">🎓 $12K → $89K/month • 73% student success</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={`text-center scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}>
-            <div className="bg-gradient-to-r from-green-900/30 to-blue-900/30 border border-green-500/30 rounded-lg p-8 max-w-4xl mx-auto mb-8">
-              <h3 className="text-3xl font-bold mb-4 text-green-300">💰 The Common Thread?</h3>
-              <p className="text-lg text-gray-300 mb-6">
-                Every single one of these entrepreneurs stopped trading time for money and started building systems that work 24/7. 
-                They're not special or "naturally technical" — they just took action while others made excuses.
-              </p>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-green-400 mb-2">847%</div>
-                  <p className="text-gray-400 text-sm">Average revenue increase</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-blue-400 mb-2">68%</div>
-                  <p className="text-gray-400 text-sm">Less time working</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
-                  <p className="text-gray-400 text-sm">Would do it again</p>
-                </div>
-              </div>
-            </div>
             
-            <h3 className="text-3xl font-bold mb-4">Your Turn To Join The <span className="text-green-400">Automation Elite</span></h3>
-            <p className="text-xl text-gray-400 mb-8">The only difference between you and them is action. They stopped making excuses and started building.</p>
-            <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift px-12 py-4">
-              I'm Ready To Build My Automation Empire
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="section-spacing bg-gradient-to-b from-purple-900/20 to-black">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div
-            ref={ctaAnimation.elementRef}
-            className={`scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <div className="max-w-4xl mx-auto mb-12">
-              <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                The <span className="text-red-400">Automation Revolution</span> Is Here. 
-                Are You <span className="text-purple-400">IN</span> or <span className="text-gray-500">OUT</span>?
-              </h2>
-              <p className="text-xl text-gray-400 mb-8">
-                In 10 years, there will be two types of entrepreneurs: those who built automated empires, and those who are still trading time for money. Which will you be?
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-12">
-              <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-8">
-                <h3 className="text-2xl font-bold mb-4 text-red-300">😫 Path #1: Stay Manual</h3>
-                <ul className="text-left space-y-3 text-gray-400 mb-6">
-                  <li>❌ Keep working 60+ hours/week</li>
-                  <li>❌ Watch competitors scale 10x faster</li>
-                  <li>❌ Miss the AI automation wave</li>
-                  <li>❌ Stay trapped in time-for-money prison</li>
-                  <li>❌ Burn out while others build empires</li>
-                  <li>❌ Regret not taking action today</li>
-                </ul>
-                <p className="text-red-400 font-bold">Cost: Your dreams, your freedom, your future</p>
+            <p className="text-sm text-gray-400 mb-6">
+              ✅ Instant Access • ✅ 30-Day Guarantee • ✅ Lifetime Updates • ✅ $7,361 in Bonuses
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
+              <div className="bg-zinc-900 rounded-lg p-4">
+                <div className="text-2xl font-bold text-purple-400">2,847+</div>
+                <div className="text-sm text-gray-400">Students Transformed</div>
               </div>
-
-              <div className="bg-zinc-900 border border-green-600/30 rounded-lg p-8">
-                <h3 className="text-2xl font-bold mb-4 text-green-300">🚀 Path #2: Automate Everything</h3>
-                <ul className="text-left space-y-3 text-gray-400 mb-6">
-                  <li>✅ Build systems that work 24/7</li>
-                  <li>✅ Scale without burning out</li>
-                  <li>✅ Make money while you sleep</li>
-                  <li>✅ Focus on strategy, not busy work</li>
-                  <li>✅ Create true financial freedom</li>
-                  <li>✅ Join the automation elite</li>
-                </ul>
-                <p className="text-green-400 font-bold">Investment: $397 (pays for itself in week 1)</p>
+              <div className="bg-zinc-900 rounded-lg p-4">
+                <div className="text-2xl font-bold text-green-400">40+ Hours</div>
+                <div className="text-sm text-gray-400">Saved Weekly</div>
               </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 border border-purple-500/50 rounded-lg p-8 mb-8">
-              <h3 className="text-3xl font-bold mb-4 text-purple-300">⚡ This Is Your Moment</h3>
-              <p className="text-lg text-gray-300 mb-6">
-                Every great entrepreneur has a moment where they choose growth over comfort, action over excuses, systems over manual labor. 
-                This is YOUR moment. The question is: will you take it?
-              </p>
-              <div className="bg-red-600/20 border border-red-500/50 rounded-lg p-4 mb-6">
-                <p className="text-red-300 font-bold text-lg">
-                  ⏰ 72 hours remaining • Price DOUBLES to $797 • Bonuses worth $8,679 disappear • Cart closes for 6 months
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <Link href="#packages" className="cta-button inline-block text-xl btn-animate animate-glow hover-lift px-16 py-6">
-                YES! I Choose Automation Empire - $397
-              </Link>
-              
-              <p className="text-gray-400">
-                60-day money-back guarantee • Instant access • Lifetime updates • 1-on-1 support
-              </p>
-              
-              <div className="text-sm text-gray-500 max-w-2xl mx-auto">
-                <p className="mb-2">
-                  ⚠️ <strong>Warning:</strong> This offer will not repeat. When the timer hits zero, the price doubles and stays doubled. 
-                  The bonuses disappear forever. The cart closes for 6 months minimum.
-                </p>
-                <p>
-                  Don't let analysis paralysis cost you your automation empire. Your competitors aren't waiting. Take action now.
-                </p>
+              <div className="bg-zinc-900 rounded-lg p-4">
+                <div className="text-2xl font-bold text-blue-400">$2M+</div>
+                <div className="text-sm text-gray-400">Revenue Automated</div>
               </div>
             </div>
           </div>

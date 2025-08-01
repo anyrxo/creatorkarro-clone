@@ -49,6 +49,15 @@ export default {
           '3': 'hsl(var(--chart-3))',
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))'
+        },
+        gold: {
+          400: '#FBBF24',
+          500: '#F59E0B',
+          900: '#78350F'
+        },
+        discord: {
+          500: '#5865F2',
+          600: '#4752C4'
         }
       },
       borderRadius: {

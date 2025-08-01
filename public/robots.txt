@@ -1,26 +1,82 @@
+# ORYANA Fortress Protection - Advanced Robots.txt
+# This site is protected against unauthorized scraping and cloning
+
 User-agent: *
 Allow: /
-Disallow: /admin/
 Disallow: /api/
-Crawl-delay: 0
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /bot-trap
+Disallow: /security-dashboard
+Disallow: /.env
+Disallow: /database/
+Disallow: /backup/
+Disallow: /config/
+Disallow: /logs/
 
-# Block competitor crawlers
-User-agent: AhrefsBot
+# Specific bot restrictions
+User-agent: Googlebot
+Allow: /
+Disallow: /api/security/
+Crawl-delay: 1
+
+User-agent: Bingbot  
+Allow: /
+Disallow: /api/security/
+Crawl-delay: 1
+
+# Block known scraping bots
+User-agent: Scrapy
 Disallow: /
 
-User-agent: SEMrushBot
+User-agent: wget
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: python-requests
+Disallow: /
+
+User-agent: Selenium
+Disallow: /
+
+User-agent: PhantomJS
+Disallow: /
+
+User-agent: HeadlessChrome
+Disallow: /
+
+User-agent: Playwright
+Disallow: /
+
+User-agent: Puppeteer
+Disallow: /
+
+# Block aggressive crawlers
+User-agent: AhrefsBot
 Disallow: /
 
 User-agent: MJ12bot
 Disallow: /
 
-# Speed up Google
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
+User-agent: DotBot
+Disallow: /
 
+User-agent: SemrushBot
+Disallow: /
+
+# Honeypot for bots (legitimate users won't access this)
+User-agent: *
+Disallow: /secret-admin-panel-do-not-access/
+
+# Site information
 Sitemap: https://iimagined.ai/sitemap.xml
 Sitemap: https://iimagined.ai/sitemap-index.xml
 Sitemap: https://iimagined.ai/news-sitemap.xml
-Sitemap: https://iimagined.ai/video-sitemap.xml
-Sitemap: https://iimagined.ai/image-sitemap.xml
+
+# Legal notice
+# This website is protected by copyright law
+# Unauthorized scraping, copying, or cloning is prohibited
+# Violations will be prosecuted to the full extent of the law
+# All activity is monitored and logged
