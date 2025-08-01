@@ -30,8 +30,8 @@ export default function ComfyUIWorkflowsPage() {
             ref={heroAnimation.elementRef}
             className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
-            <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-3 mb-6 inline-block card-hover">
-              <p className="text-red-300 font-semibold">⏰ PRICE INCREASE WARNING: Going from $197 to $497 in 48 hours</p>
+            <div className="bg-zinc-900 border border-green-600/30 rounded-lg p-3 mb-6 inline-block card-hover">
+              <p className="text-green-300 font-semibold">🎯 EARLY BIRD SPECIAL: Professional ComfyUI mastery at an unbeatable price</p>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -42,8 +42,8 @@ export default function ComfyUIWorkflowsPage() {
               Transform from frustrated AI user to <span className="text-orange-300">workflow master</span> - Create professional content 10x faster with bulletproof systems that deliver <span className="text-green-400">consistent, stunning results</span> every single time
             </p>
 
-            <div className="bg-zinc-900 border border-yellow-600/30 rounded-lg p-4 mb-8 inline-block card-hover">
-              <p className="text-yellow-300 font-semibold">🔥 EARLY BIRD SPECIAL: Save $300 - Only 24 spots left at this price</p>
+            <div className="bg-zinc-900 border border-blue-600/30 rounded-lg p-4 mb-8 inline-block card-hover">
+              <p className="text-blue-300 font-semibold">🏆 COMPLETE SYSTEM: 50+ workflows + lifetime updates included</p>
             </div>
 
             <Link href="#packages" className="cta-button inline-block text-lg mb-8 btn-animate animate-glow hover-lift">
@@ -389,7 +389,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-purple-300 mb-2">Module 1: ComfyUI Foundations</h3>
-                  <p className="text-purple-400 font-semibold">Value: $497</p>
+                  <p className="text-purple-400 font-semibold">Value: $97</p>
                 </div>
                 <div className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Essential
@@ -424,7 +424,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-blue-300 mb-2">Module 2: Advanced Node Systems</h3>
-                  <p className="text-blue-400 font-semibold">Value: $697</p>
+                  <p className="text-blue-400 font-semibold">Value: $127</p>
                 </div>
                 <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Advanced
@@ -459,7 +459,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-green-300 mb-2">Module 3: Custom Model Training</h3>
-                  <p className="text-green-400 font-semibold">Value: $897</p>
+                  <p className="text-green-400 font-semibold">Value: $147</p>
                 </div>
                 <div className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Professional
@@ -494,7 +494,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-red-300 mb-2">Module 4: Video Generation Mastery</h3>
-                  <p className="text-red-400 font-semibold">Value: $1,297</p>
+                  <p className="text-red-400 font-semibold">Value: $197</p>
                 </div>
                 <div className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Cutting-Edge
@@ -529,7 +529,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-yellow-300 mb-2">Module 5: LoRA Training Suite</h3>
-                  <p className="text-yellow-400 font-semibold">Value: $997</p>
+                  <p className="text-yellow-400 font-semibold">Value: $147</p>
                 </div>
                 <div className="bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Specialist
@@ -564,7 +564,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-indigo-300 mb-2">Module 6: Production Workflows</h3>
-                  <p className="text-indigo-400 font-semibold">Value: $797</p>
+                  <p className="text-indigo-400 font-semibold">Value: $127</p>
                 </div>
                 <div className="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Commercial
@@ -598,7 +598,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-pink-300 mb-2">Module 7: Client Work Systems</h3>
-                  <p className="text-pink-400 font-semibold">Value: $697</p>
+                  <p className="text-pink-400 font-semibold">Value: $97</p>
                 </div>
                 <div className="bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Business
@@ -632,7 +632,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-teal-300 mb-2">Module 8: Automation & Scaling</h3>
-                  <p className="text-teal-400 font-semibold">Value: $597</p>
+                  <p className="text-teal-400 font-semibold">Value: $97</p>
                 </div>
                 <div className="bg-teal-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Enterprise
@@ -665,7 +665,7 @@ export default function ComfyUIWorkflowsPage() {
 
           <div className={`text-center mt-16 scroll-fade-up ${curriculumAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-orange-900/20 border border-orange-600/30 rounded-lg p-8 max-w-4xl mx-auto">
-              <h3 className="text-3xl font-bold mb-4 text-orange-300">Total Curriculum Value: $6,477</h3>
+              <h3 className="text-3xl font-bold mb-4 text-orange-300">Total Curriculum Value: $1,237</h3>
               <p className="text-xl text-gray-300 mb-6">8 comprehensive modules + 50+ professional workflows + lifetime updates</p>
               <p className="text-lg text-orange-200 font-semibold">Everything you need to become a ComfyUI master and build a 6-figure AI business</p>
             </div>
@@ -694,7 +694,7 @@ export default function ComfyUIWorkflowsPage() {
                 Professional workflows ready to import and use immediately. Created by industry experts and tested with real clients.
               </p>
               <div className="bg-purple-800/30 rounded-lg p-3">
-                <p className="text-purple-200 text-sm font-semibold">Value: $1,997 - Yours FREE</p>
+                <p className="text-purple-200 text-sm font-semibold">Value: $397 - Yours FREE</p>
               </div>
             </div>
 
@@ -706,7 +706,7 @@ export default function ComfyUIWorkflowsPage() {
                 Join 800+ ComfyUI masters sharing workflows, techniques, and supporting each other's success.
               </p>
               <div className="bg-blue-800/30 rounded-lg p-3">
-                <p className="text-blue-200 text-sm font-semibold">Value: $497/year - Lifetime Access FREE</p>
+                <p className="text-blue-200 text-sm font-semibold">Value: $197/year - Lifetime Access FREE</p>
               </div>
             </div>
 
@@ -718,7 +718,7 @@ export default function ComfyUIWorkflowsPage() {
                 Live workshops every week covering new techniques, trends, and advanced strategies. Recordings included.
               </p>
               <div className="bg-green-800/30 rounded-lg p-3">
-                <p className="text-green-200 text-sm font-semibold">Value: $997/year - Included FREE</p>
+                <p className="text-green-200 text-sm font-semibold">Value: $297/year - Included FREE</p>
               </div>
             </div>
 
@@ -730,7 +730,7 @@ export default function ComfyUIWorkflowsPage() {
                 Exclusive collection of custom nodes developed specifically for our students. Not available anywhere else.
               </p>
               <div className="bg-orange-800/30 rounded-lg p-3">
-                <p className="text-orange-200 text-sm font-semibold">Value: $297 - Exclusive FREE</p>
+                <p className="text-orange-200 text-sm font-semibold">Value: $97 - Exclusive FREE</p>
               </div>
             </div>
 
@@ -742,7 +742,7 @@ export default function ComfyUIWorkflowsPage() {
                 Professional proposal templates, contracts, and pricing guides used to land $10K+ projects.
               </p>
               <div className="bg-pink-800/30 rounded-lg p-3">
-                <p className="text-pink-200 text-sm font-semibold">Value: $497 - Included FREE</p>
+                <p className="text-pink-200 text-sm font-semibold">Value: $197 - Included FREE</p>
               </div>
             </div>
 
@@ -754,14 +754,14 @@ export default function ComfyUIWorkflowsPage() {
                 Advanced techniques to 10x your generation speed and optimize for maximum efficiency.
               </p>
               <div className="bg-teal-800/30 rounded-lg p-3">
-                <p className="text-teal-200 text-sm font-semibold">Value: $397 - Yours FREE</p>
+                <p className="text-teal-200 text-sm font-semibold">Value: $147 - Yours FREE</p>
               </div>
             </div>
           </div>
 
           <div className={`text-center mt-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-600/50 rounded-lg p-8 max-w-4xl mx-auto">
-              <h3 className="text-3xl font-bold mb-4 text-purple-300">Total Bonus Value: $4,285</h3>
+              <h3 className="text-3xl font-bold mb-4 text-purple-300">Total Bonus Value: $1,332</h3>
               <p className="text-xl text-gray-300 mb-6">All included FREE when you join the ComfyUI Workflow Mastery course today</p>
               <p className="text-lg text-purple-200 font-semibold">These bonuses alone are worth 20x more than the course price!</p>
             </div>
@@ -777,7 +777,7 @@ export default function ComfyUIWorkflowsPage() {
             className={`text-center mb-16 scroll-fade-up ${valueAnimation.isVisible ? 'visible' : ''}`}
           >
             <p className="text-sm text-yellow-400 uppercase tracking-wider mb-4">VALUE BREAKDOWN</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">You're Getting <span className="text-yellow-400">$10,762</span> Worth of Value</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">You're Getting <span className="text-yellow-400">$2,569</span> Worth of Value</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">Here's everything included in your ComfyUI Workflow Mastery package</p>
           </div>
 
@@ -788,72 +788,72 @@ export default function ComfyUIWorkflowsPage() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-yellow-600/20">
                   <span className="text-gray-300">Module 1: ComfyUI Foundations</span>
-                  <span className="text-yellow-400 font-semibold">$497</span>
+                  <span className="text-yellow-400 font-semibold">$97</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-yellow-600/20">
                   <span className="text-gray-300">Module 2: Advanced Node Systems</span>
-                  <span className="text-yellow-400 font-semibold">$697</span>
+                  <span className="text-yellow-400 font-semibold">$127</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-yellow-600/20">
                   <span className="text-gray-300">Module 3: Custom Model Training</span>
-                  <span className="text-yellow-400 font-semibold">$897</span>
+                  <span className="text-yellow-400 font-semibold">$147</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-yellow-600/20">
                   <span className="text-gray-300">Module 4: Video Generation Mastery</span>
-                  <span className="text-yellow-400 font-semibold">$1,297</span>
+                  <span className="text-yellow-400 font-semibold">$197</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-yellow-600/20">
                   <span className="text-gray-300">Module 5: LoRA Training Suite</span>
-                  <span className="text-yellow-400 font-semibold">$997</span>
+                  <span className="text-yellow-400 font-semibold">$147</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-yellow-600/20">
                   <span className="text-gray-300">Module 6: Production Workflows</span>
-                  <span className="text-yellow-400 font-semibold">$797</span>
+                  <span className="text-yellow-400 font-semibold">$127</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-yellow-600/20">
                   <span className="text-gray-300">Module 7: Client Work Systems</span>
-                  <span className="text-yellow-400 font-semibold">$697</span>
+                  <span className="text-yellow-400 font-semibold">$97</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-yellow-600/20">
                   <span className="text-gray-300">Module 8: Automation & Scaling</span>
-                  <span className="text-yellow-400 font-semibold">$597</span>
+                  <span className="text-yellow-400 font-semibold">$97</span>
                 </div>
                 
                 <div className="py-4">
-                  <p className="text-center text-yellow-300 font-semibold text-lg">CORE CURRICULUM SUBTOTAL: $6,477</p>
+                  <p className="text-center text-yellow-300 font-semibold text-lg">CORE CURRICULUM SUBTOTAL: $1,237</p>
                 </div>
                 
                 <div className="border-t border-yellow-600/30 pt-4 space-y-3">
                   <div className="flex justify-between items-center py-2">
                     <span className="text-gray-300">BONUS: 50+ Done-For-You Workflows</span>
-                    <span className="text-green-400 font-semibold">$1,997</span>
+                    <span className="text-green-400 font-semibold">$397</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-gray-300">BONUS: Private Discord Community (Lifetime)</span>
-                    <span className="text-green-400 font-semibold">$497</span>
+                    <span className="text-green-400 font-semibold">$197</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-gray-300">BONUS: Weekly Workflow Workshops</span>
-                    <span className="text-green-400 font-semibold">$997</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-300">BONUS: Custom Node Pack</span>
                     <span className="text-green-400 font-semibold">$297</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
+                    <span className="text-gray-300">BONUS: Custom Node Pack</span>
+                    <span className="text-green-400 font-semibold">$97</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
                     <span className="text-gray-300">BONUS: Client Proposal Templates</span>
-                    <span className="text-green-400 font-semibold">$497</span>
+                    <span className="text-green-400 font-semibold">$197</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-gray-300">BONUS: Speed Optimization Pack</span>
-                    <span className="text-green-400 font-semibold">$397</span>
+                    <span className="text-green-400 font-semibold">$147</span>
                   </div>
                 </div>
                 
                 <div className="border-t border-yellow-600/30 pt-6">
                   <div className="flex justify-between items-center text-2xl font-bold">
                     <span className="text-yellow-300">TOTAL VALUE:</span>
-                    <span className="text-yellow-400">$11,159</span>
+                    <span className="text-yellow-400">$2,569</span>
                   </div>
                 </div>
               </div>
@@ -863,10 +863,10 @@ export default function ComfyUIWorkflowsPage() {
               <div className="bg-zinc-900 border border-green-600/50 rounded-lg p-8">
                 <h3 className="text-3xl font-bold mb-4 text-green-300">Your Investment Today</h3>
                 <div className="flex items-center justify-center space-x-4 mb-4">
-                  <span className="text-6xl font-bold text-green-400">$197</span>
+                  <span className="text-6xl font-bold text-green-400">$147</span>
                   <div className="text-left">
-                    <p className="text-gray-400 line-through">$11,159 value</p>
-                    <p className="text-green-300 font-semibold">98% savings</p>
+                    <p className="text-gray-400 line-through">$2,569 value</p>
+                    <p className="text-green-300 font-semibold">94% savings</p>
                   </div>
                 </div>
                 <p className="text-xl text-gray-300 mb-6">One-time payment. Lifetime access. No recurring fees.</p>
@@ -967,7 +967,7 @@ export default function ComfyUIWorkflowsPage() {
               </div>
               <div className="text-green-400 text-4xl mb-4">🚀</div>
               <h3 className="text-2xl font-bold mb-4 text-green-300">This Course</h3>
-              <div className="text-3xl font-bold text-green-400 mb-4">$197</div>
+              <div className="text-3xl font-bold text-green-400 mb-4">$147</div>
               <p className="text-gray-400 mb-6">One-time investment, lifetime value</p>
               
               <div className="space-y-3 text-left mb-6">

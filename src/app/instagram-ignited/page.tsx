@@ -472,52 +472,52 @@ export default function InstagramIgnitedPage() {
             {[
               {
                 title: "<span class='text-blue-400'>Module 1:</span> Algorithm Domination Blueprint",
-                value: "$697",
+                value: "$147",
                 description: "Master Instagram's algorithm from the inside out. Learn the exact content patterns, posting times, and engagement strategies that force the algorithm to show your content to thousands of new people daily."
               },
               {
                 title: "<span class='text-blue-400'>Module 2:</span> Viral Content Formula",
-                value: "$897",
+                value: "$197",
                 description: "The proven 7-step formula behind every viral post. Discover the psychological triggers, visual patterns, and storytelling frameworks that guarantee viral content every single time."
               },
               {
                 title: "<span class='text-blue-400'>Module 3:</span> Reel Psychology Mastery",
-                value: "$797",
+                value: "$147",
                 description: "The neuroscience behind addictive Reels. Learn the exact hooks, transitions, and psychological triggers that force people to watch, share, and follow you instantly."
               },
               {
                 title: "<span class='text-blue-400'>Module 4:</span> Story Engagement Systems",
-                value: "$597",
+                value: "$127",
                 description: "Turn your Stories into a conversion machine. Master polls, questions, stickers, and interactive features that build deeper relationships and drive massive engagement."
               },
               {
                 title: "<span class='text-blue-400'>Module 5:</span> Hashtag Research Automation",
-                value: "$497",
+                value: "$97",
                 description: "Never guess hashtags again. Get the exact tools and strategies to find high-converting hashtags that put your content in front of your ideal audience automatically."
               },
               {
                 title: "<span class='text-blue-400'>Module 6:</span> DM Automation & Outreach",
-                value: "$697",
+                value: "$147",
                 description: "Scale your reach beyond your followers. Learn the art of strategic DMs, collaboration outreach, and relationship building that leads to exponential growth."
               },
               {
                 title: "<span class='text-blue-400'>Module 7:</span> Monetization Frameworks",
-                value: "$997",
+                value: "$197",
                 description: "Turn followers into dollars with 12 different revenue streams. From affiliate marketing to digital products, discover how to monetize any size audience profitably."
               },
               {
                 title: "<span class='text-blue-400'>Module 8:</span> Collaboration Networks",
-                value: "$597",
+                value: "$127",
                 description: "Build powerful relationships with other creators. Learn how to find, approach, and collaborate with influencers to multiply your reach and credibility instantly."
               },
               {
                 title: "<span class='text-blue-400'>Module 9:</span> Analytics & Optimization",
-                value: "$497",
+                value: "$97",
                 description: "Data-driven growth that never stops. Master Instagram analytics, A/B testing, and optimization strategies that consistently improve your results month after month."
               },
               {
                 title: "<span class='text-blue-400'>Module 10:</span> Scaling to 100K+",
-                value: "$897",
+                value: "$197"
                 description: "The advanced strategies that take you from 10K to 100K+ followers. Content systems, team building, and business frameworks for serious creators ready to go pro."
               }
             ].map((module, index) => (
@@ -563,7 +563,7 @@ export default function InstagramIgnitedPage() {
           <div className="mb-12 text-center">
             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500 rounded-3xl p-8">
               <h3 className="text-3xl md:text-5xl font-bold mb-4 text-yellow-400">
-                🔥 INSANE Bonuses Worth $8,879 🔥
+                🔥 Amazing Bonuses Worth $1,962 🔥
               </h3>
               <p className="text-xl text-gray-300">
                 These bonuses alone are worth more than most courses. But you get them FREE when you join today.
@@ -575,32 +575,32 @@ export default function InstagramIgnitedPage() {
             {[
               {
                 title: "🎯 365 Days of Content Ideas",
-                value: "$997",
+                value: "$247",
                 description: "Never run out of content again! A full year of proven, viral-ready post ideas, hooks, and concepts. Just pick one and create - guaranteed engagement every single day."
               },
               {
                 title: "🎬 Viral Reel Templates",
-                value: "$797",
+                value: "$197",
                 description: "Copy-paste templates for the 25 highest-performing Reel formats. These templates have generated over 50M views combined - just plug in your content and watch it explode."
               },
               {
                 title: "📝 Caption Swipe File",
-                value: "$497",
+                value: "$127",
                 description: "500+ high-converting captions that drive engagement, followers, and sales. Categorized by niche and goal - just copy, customize, and post for instant results."
               },
               {
                 title: "🤝 Influencer Outreach Scripts",
-                value: "$397",
+                value: "$97",
                 description: "The exact DM templates that got me collaborations with 7-figure creators. These scripts have a 67% response rate and have led to millions in combined reach."
               },
               {
                 title: "📊 Monthly Algorithm Updates",
-                value: "$1,997/year",
+                value: "$497/year",
                 description: "Stay ahead of every Instagram change forever. Monthly reports on algorithm updates, new features, and strategy adjustments - so you're always winning while others struggle."
               },
               {
                 title: "👥 Private Mastermind Access",
-                value: "$2,997",
+                value: "$797"
                 description: "Join weekly live calls with me and other successful creators. Get your questions answered, strategies reviewed, and network with people actually getting results."
               }
             ].map((bonus, index) => (
@@ -646,36 +646,36 @@ export default function InstagramIgnitedPage() {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">10 Core Modules</span>
-                  <span className="text-xl font-bold text-green-400">$6,875</span>
+                  <span className="text-xl font-bold text-green-400">$1,385</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">365 Days Content Ideas</span>
-                  <span className="text-xl font-bold text-green-400">$997</span>
+                  <span className="text-xl font-bold text-green-400">$247</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Viral Reel Templates</span>
-                  <span className="text-xl font-bold text-green-400">$797</span>
+                  <span className="text-xl font-bold text-green-400">$197</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Caption Swipe File</span>
-                  <span className="text-xl font-bold text-green-400">$497</span>
+                  <span className="text-xl font-bold text-green-400">$127</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Influencer Outreach Scripts</span>
-                  <span className="text-xl font-bold text-green-400">$397</span>
+                  <span className="text-xl font-bold text-green-400">$97</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Monthly Algorithm Updates</span>
-                  <span className="text-xl font-bold text-green-400">$1,997</span>
+                  <span className="text-xl font-bold text-green-400">$497</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Private Mastermind Access</span>
-                  <span className="text-xl font-bold text-green-400">$2,997</span>
+                  <span className="text-xl font-bold text-green-400">$797</span>
                 </div>
                 
                 <div className="flex justify-between items-center py-6 bg-green-900/20 rounded-lg px-6 mt-6">
                   <span className="text-2xl font-bold">TOTAL VALUE:</span>
-                  <span className="text-3xl font-black text-green-400">$14,557</span>
+                  <span className="text-3xl font-black text-green-400">$3,347</span>
                 </div>
               </div>
             </div>
@@ -722,15 +722,15 @@ export default function InstagramIgnitedPage() {
                 <div className="mt-8">
                   <h4 className="text-xl font-bold mb-4 text-green-400">Instagram Ignited</h4>
                   <div className="mb-2">
-                    <span className="text-lg text-gray-400 line-through">$697</span>
+                    <span className="text-lg text-gray-400 line-through">$497</span>
                   </div>
-                  <div className="text-4xl font-black mb-4 text-green-400">$297</div>
+                  <div className="text-4xl font-black mb-4 text-green-400">$247</div>
                   <div className="text-sm text-gray-400 mb-6">ONE-TIME PAYMENT</div>
                   <ul className="text-left space-y-2 text-gray-300">
                     <li>• Complete system education</li>
                     <li>• Proven viral strategies</li>
                     <li>• Lifetime access</li>
-                    <li>• $14,557 worth of bonuses</li>
+                    <li>• $3,347 worth of bonuses</li>
                     <li>• Results guaranteed</li>
                   </ul>
                 </div>
@@ -781,7 +781,7 @@ export default function InstagramIgnitedPage() {
                 href="#"
                 className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse"
               >
-                🔥 CLAIM INSTAGRAM IGNITED NOW - $297 🔥
+                🔥 CLAIM INSTAGRAM IGNITED NOW - $247 🔥
               </Link>
               
               <p className="text-sm text-gray-400">
@@ -1065,9 +1065,9 @@ export default function InstagramIgnitedPage() {
             <p className="text-lg md:text-xl text-gray-400 mb-8">Join 2,000+ successful creators who transformed their Instagram into a money-making machine</p>
             
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-red-400 mb-3">⏰ FINAL WARNING</h3>
+              <h3 className="text-2xl font-bold text-green-400 mb-3">🎆 START TODAY</h3>
               <p className="text-gray-300 mb-4">
-                This $297 price and $8,879 in bonuses expire at MIDNIGHT tonight. After that, you'll pay $697 without any bonuses.
+                This $247 price and bonus package expires soon. Regular price is $497 without any bonuses.
               </p>
               <p className="text-lg font-bold text-yellow-400">
                 Don't let another month pass watching others succeed while you stay stuck!
@@ -1075,11 +1075,11 @@ export default function InstagramIgnitedPage() {
             </div>
             
             <Link href="#pricing" className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4">
-              🚀 TRANSFORM MY INSTAGRAM NOW - $297 🚀
+              🚀 TRANSFORM MY INSTAGRAM NOW - $247 🚀
             </Link>
             
             <p className="text-sm text-gray-400 mb-6">
-              ✅ Instant Access • ✅ 30-Day Guarantee • ✅ Lifetime Updates • ✅ $8,879 in Bonuses
+              ✅ Instant Access • ✅ 30-Day Guarantee • ✅ Lifetime Updates • ✅ $1,962 in Bonuses
             </p>
             
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
