@@ -114,19 +114,19 @@ export class CTRManipulationNetworkEngine {
       {
         type: 'residential',
         location: { country: 'US', region: 'California', city: 'Los Angeles', timezone: 'America/Los_Angeles' },
-        device: { type: 'desktop', os: 'Windows 11', browser: 'Chrome 119', screenResolution: '1920x1080' },
+        device: { type: 'desktop', os: 'Windows 11', browser: 'Chrome 119', screenResolution: '1920x1080', userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36' },
         behavior: { clickProbability: 0.95, dwellTime: 45, bounceRate: 0.25, scrollDepth: 75, pageViews: 2.3 }
       },
       {
         type: 'residential',
         location: { country: 'US', region: 'New York', city: 'New York', timezone: 'America/New_York' },
-        device: { type: 'mobile', os: 'iOS 17', browser: 'Safari', screenResolution: '390x844' },
+        device: { type: 'mobile', os: 'iOS 17', browser: 'Safari', screenResolution: '390x844', userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1' },
         behavior: { clickProbability: 0.88, dwellTime: 32, bounceRate: 0.35, scrollDepth: 60, pageViews: 1.8 }
       },
       {
         type: 'residential',
         location: { country: 'US', region: 'Texas', city: 'Austin', timezone: 'America/Chicago' },
-        device: { type: 'desktop', os: 'macOS Sonoma', browser: 'Chrome 119', screenResolution: '2560x1440' },
+        device: { type: 'desktop', os: 'macOS Sonoma', browser: 'Chrome 119', screenResolution: '2560x1440', userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36' },
         behavior: { clickProbability: 0.92, dwellTime: 52, bounceRate: 0.22, scrollDepth: 82, pageViews: 2.7 }
       },
       
@@ -134,19 +134,19 @@ export class CTRManipulationNetworkEngine {
       {
         type: 'residential',
         location: { country: 'UK', region: 'England', city: 'London', timezone: 'Europe/London' },
-        device: { type: 'desktop', os: 'Windows 11', browser: 'Edge 118', screenResolution: '1920x1080' },
+        device: { type: 'desktop', os: 'Windows 11', browser: 'Edge 118', screenResolution: '1920x1080', userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.76' },
         behavior: { clickProbability: 0.89, dwellTime: 41, bounceRate: 0.28, scrollDepth: 68, pageViews: 2.1 }
       },
       {
         type: 'residential',
         location: { country: 'DE', region: 'Berlin', city: 'Berlin', timezone: 'Europe/Berlin' },
-        device: { type: 'mobile', os: 'Android 14', browser: 'Chrome Mobile', screenResolution: '412x892' },
+        device: { type: 'mobile', os: 'Android 14', browser: 'Chrome Mobile', screenResolution: '412x892', userAgent: 'Mozilla/5.0 (Linux; Android 14; SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36' },
         behavior: { clickProbability: 0.85, dwellTime: 38, bounceRate: 0.32, scrollDepth: 65, pageViews: 1.9 }
       },
       {
         type: 'residential',
         location: { country: 'FR', region: 'Île-de-France', city: 'Paris', timezone: 'Europe/Paris' },
-        device: { type: 'tablet', os: 'iPadOS 17', browser: 'Safari', screenResolution: '820x1180' },
+        device: { type: 'tablet', os: 'iPadOS 17', browser: 'Safari', screenResolution: '820x1180', userAgent: 'Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1' },
         behavior: { clickProbability: 0.87, dwellTime: 48, bounceRate: 0.26, scrollDepth: 78, pageViews: 2.4 }
       },
       
@@ -154,13 +154,13 @@ export class CTRManipulationNetworkEngine {
       {
         type: 'mobile',
         location: { country: 'CA', region: 'Ontario', city: 'Toronto', timezone: 'America/Toronto' },
-        device: { type: 'mobile', os: 'iOS 17', browser: 'Safari', screenResolution: '428x926' },
+        device: { type: 'mobile', os: 'iOS 17', browser: 'Safari', screenResolution: '428x926', userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1' },
         behavior: { clickProbability: 0.83, dwellTime: 28, bounceRate: 0.38, scrollDepth: 55, pageViews: 1.6 }
       },
       {
         type: 'mobile',
         location: { country: 'AU', region: 'New South Wales', city: 'Sydney', timezone: 'Australia/Sydney' },
-        device: { type: 'mobile', os: 'Android 14', browser: 'Samsung Internet', screenResolution: '360x800' },
+        device: { type: 'mobile', os: 'Android 14', browser: 'Samsung Internet', screenResolution: '360x800', userAgent: 'Mozilla/5.0 (Linux; Android 14; SM-A525F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.0 Chrome/111.0.5563.116 Mobile Safari/537.36' },
         behavior: { clickProbability: 0.86, dwellTime: 35, bounceRate: 0.33, scrollDepth: 62, pageViews: 1.7 }
       },
       
@@ -168,13 +168,13 @@ export class CTRManipulationNetworkEngine {
       {
         type: 'datacenter',
         location: { country: 'NL', region: 'North Holland', city: 'Amsterdam', timezone: 'Europe/Amsterdam' },
-        device: { type: 'desktop', os: 'Ubuntu 22.04', browser: 'Firefox 119', screenResolution: '1920x1080' },
+        device: { type: 'desktop', os: 'Ubuntu 22.04', browser: 'Firefox 119', screenResolution: '1920x1080', userAgent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:119.0) Gecko/20100101 Firefox/119.0' },
         behavior: { clickProbability: 0.78, dwellTime: 35, bounceRate: 0.42, scrollDepth: 58, pageViews: 1.5 }
       },
       {
         type: 'datacenter',
         location: { country: 'SG', region: 'Singapore', city: 'Singapore', timezone: 'Asia/Singapore' },
-        device: { type: 'desktop', os: 'Windows 11', browser: 'Chrome 119', screenResolution: '1366x768' },
+        device: { type: 'desktop', os: 'Windows 11', browser: 'Chrome 119', screenResolution: '1366x768', userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36' },
         behavior: { clickProbability: 0.81, dwellTime: 31, bounceRate: 0.39, scrollDepth: 61, pageViews: 1.8 }
       }
     ]

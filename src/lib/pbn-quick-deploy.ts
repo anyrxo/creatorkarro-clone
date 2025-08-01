@@ -112,8 +112,8 @@ export interface LinkingMatrix {
 export class PBNQuickDeployEngine {
   private networks: Map<string, PBNNetwork> = new Map()
   private domainPool: PBNDomain[] = []
-  private templates: Map<string, PBNTemplate> = new Map()
-  private safetyProtocols: Map<string, SafetyProtocol> = new Map()
+  private templates: Map<string, any> = new Map()
+  private safetyProtocols: Map<string, any> = new Map()
   
   constructor() {
     this.initializeDomainPool()
@@ -721,7 +721,8 @@ export class PBNQuickDeployEngine {
       innerLinks,
       moneyLinks,
       bufferLinks,
-      crossLinks
+      crossLinks,
+      distribution: [] // Empty array for now - would be populated with actual link distribution in production
     }
   }
 

@@ -2,9 +2,8 @@ import { MetadataRoute } from 'next'
 import fs from 'fs'
 import path from 'path'
 
-// Generate 50,000+ URLs dynamically
-export async function generateMassiveSitemaps() {
-  const cities = [
+// Cities array used by multiple functions
+const cities = [
     'new-york', 'los-angeles', 'chicago', 'houston', 'phoenix', 'philadelphia', 
     'san-antonio', 'san-diego', 'dallas', 'san-jose', 'austin', 'jacksonville',
     'fort-worth', 'columbus', 'charlotte', 'san-francisco', 'indianapolis', 'seattle',
@@ -21,7 +20,9 @@ export async function generateMassiveSitemaps() {
     'reno', 'baton-rouge', 'irvine', 'chesapeake', 'irving', 'scottsdale',
     'north-las-vegas', 'fremont', 'gilbert', 'san-bernardino', 'boise', 'birmingham'
   ]
-  
+
+// Generate 50,000+ URLs dynamically
+export async function generateMassiveSitemaps() {
   const keywords = [
     'ai-automation', 'instagram-growth', 'digital-products', 'comfyui-workflows',
     'youtube-shorts', 'content-creation', 'social-media-calendar', 'product-launch',
@@ -39,7 +40,12 @@ export async function generateMassiveSitemaps() {
     'technique', 'hack', 'trick', 'tip', 'comprehensive', 'detailed'
   ]
 
-  const urls = []
+  const urls: Array<{
+    url: string
+    lastModified: Date
+    changeFrequency: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
+    priority: number
+  }> = []
   
   // Generate programmatic URLs
   cities.forEach(city => {
@@ -127,7 +133,12 @@ export async function generateNewsSitemap() {
 
 // Generate video sitemap
 export async function generateVideoSitemap() {
-  const videoUrls = []
+  const videoUrls: Array<{
+    url: string
+    lastModified: Date
+    changeFrequency: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
+    priority: number
+  }> = []
   const videos = [
     'instagram-growth-masterclass', 'ai-automation-demo', 'comfyui-tutorial',
     'youtube-shorts-creation', 'content-batching-system', 'passive-income-blueprint'
@@ -149,7 +160,12 @@ export async function generateVideoSitemap() {
 
 // Generate image sitemap
 export async function generateImageSitemap() {
-  const imageUrls = []
+  const imageUrls: Array<{
+    url: string
+    lastModified: Date
+    changeFrequency: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
+    priority: number
+  }> = []
   const images = [
     'instagram-growth-infographic', 'ai-automation-flowchart', 'comfyui-workflow-diagram',
     'youtube-shorts-template', 'content-calendar-example', 'revenue-dashboard-screenshot'

@@ -4,12 +4,14 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react'],
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
+  },
+
+  // Turbopack configuration (now stable)
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
       },
     },
   },
@@ -257,7 +259,7 @@ const nextConfig = {
   // Environment variables
   env: {
     SITE_URL: 'https://iimagined.ai',
-    ENABLE_ANALYTICS: process.env.NODE_ENV === 'production',
+    ENABLE_ANALYTICS: process.env.NODE_ENV === 'production' ? 'true' : 'false',
   },
 };
 

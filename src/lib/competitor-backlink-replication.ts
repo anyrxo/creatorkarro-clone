@@ -435,12 +435,12 @@ Thanks,
   }
 
   // Helper methods
-  private getRandomPlacement(): string {
-    const placements = ['content', 'sidebar', 'footer', 'navigation', 'resource']
+  private getRandomPlacement(): 'content' | 'sidebar' | 'footer' | 'navigation' | 'resource' {
+    const placements: ('content' | 'sidebar' | 'footer' | 'navigation' | 'resource')[] = ['content', 'sidebar', 'footer', 'navigation', 'resource']
     return placements[Math.floor(Math.random() * placements.length)]
   }
 
-  private getAcquisitionDifficulty(authority: number): string {
+  private getAcquisitionDifficulty(authority: number): 'easy' | 'medium' | 'hard' | 'impossible' {
     if (authority >= 90) return 'impossible'
     if (authority >= 80) return 'hard'
     if (authority >= 70) return 'medium'

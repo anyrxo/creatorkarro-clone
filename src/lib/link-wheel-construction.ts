@@ -89,6 +89,33 @@ export interface LinkWheelParams {
 
 export interface LinkWheelReport {
   wheel: LinkWheel
+  analysis: {
+    authorityDistribution: {
+      tier1Average: number
+      tier2Average: number
+      tier3Average: number
+      bufferAverage: number
+    }
+    nicheDistribution: Record<string, number>
+    estimatedCosts: {
+      setup: number
+      monthly: number
+      annual: number
+      roi: string
+    }
+    riskAssessment: {
+      overallRisk: string
+      riskFactors: (string | null)[]
+      mitigationStrategies: string[]
+    }
+    maintenanceSchedule: {
+      daily: string[]
+      weekly: string[]
+      monthly: string[]
+      quarterly: string[]
+      annual: string[]
+    }
+  }
   performance: {
     totalLinkJuice: number
     estimatedRankingBoost: number
@@ -495,7 +522,12 @@ export class LinkWheelConstructionEngine {
     return strategies[pattern as keyof typeof strategies] || strategies.hybrid
   }
 
-  private calculateSafetyProfile(params: LinkWheelParams): LinkWheel['safetyProfile'] {
+  private calculateSafetyProfile(params: { 
+    totalSites: number; 
+    safetyLevel: string; 
+    pattern: string; 
+    diversification: number 
+  }): LinkWheel['safetyProfile'] {
     const baseScore = 85
     const safetyModifiers = {
       conservative: 15,
@@ -541,7 +573,13 @@ export class LinkWheelConstructionEngine {
     return Math.round((tier1Power + tier2Power + tier3Power + bufferPower) / 10)
   }
 
-  private calculateProjectedImpact(params: LinkWheelParams): LinkWheel['projectedImpact'] {
+  private calculateProjectedImpact(params: { 
+    tier1: number; 
+    tier2: number; 
+    tier3: number; 
+    linkJuiceFlow: number; 
+    pattern: string 
+  }): LinkWheel['projectedImpact'] {
     const linkJuiceMultiplier = {
       circular: 1.2,
       pyramid: 1.4,
@@ -639,6 +677,23 @@ export class LinkWheelConstructionEngine {
         estimatedCosts: this.calculateDeploymentCosts(wheel),
         riskAssessment: this.assessRisks(wheel),
         maintenanceSchedule: this.generateMaintenanceSchedule(wheel)
+      },
+      performance: {
+        totalLinkJuice: wheel.projectedImpact.linkJuiceFlow,
+        estimatedRankingBoost: parseInt(wheel.projectedImpact.rankingBoost),
+        safetyScore: wheel.safetyProfile.qualityScore,
+        maintenanceRequirements: ['Daily monitoring', 'Weekly content updates', 'Monthly link audits']
+      },
+      recommendations: [
+        'Monitor link velocity to avoid detection',
+        'Regularly update content across all sites',
+        'Diversify anchor text distribution',
+        'Implement gradual link building strategy'
+      ],
+      projections: {
+        timeToImpact: '3-6 months for initial results',
+        expectedResults: '25-40% ranking improvement',
+        maintenanceSchedule: 'Weekly monitoring and monthly optimization'
       }
     }
   }

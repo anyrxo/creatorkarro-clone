@@ -415,7 +415,8 @@ export class ParasiteSEOEngine {
       }
     }
     
-    const platformTemplates = titleTemplates[template as keyof typeof titleTemplates]?.[platform.name] || [
+    const templateSet = titleTemplates[template as keyof typeof titleTemplates]
+    const platformTemplates = (templateSet as any)?.[platform.name] || [
       `Advanced ${keyword} Techniques That Actually Work`,
       `The Complete ${keyword} Implementation Guide`,
       `${keyword} Mastery: Professional Strategies`

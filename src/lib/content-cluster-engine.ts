@@ -106,11 +106,19 @@ export class ContentClusterEngine {
     
     const config = clusterSizes[options.clusterSize]
     
+    // Map options to the expected format for content generation
+    const contentOptions = {
+      qualityLevel: options.clusterSize === 'massive' || options.clusterSize === 'large' ? 'premium' : 'standard',
+      contentLength: options.clusterSize === 'massive' ? 'comprehensive' : options.clusterSize === 'large' ? 'detailed' : 'standard',
+      includeImages: true,
+      location: options.location
+    }
+    
     // Generate pillar page
-    const pillarPage = this.generatePillarPage(mainTopic, config.pillarSections, options)
+    const pillarPage = this.generatePillarPage(mainTopic, config.pillarSections, contentOptions)
     
     // Generate cluster pages
-    const clusterPages = this.generateClusterPages(mainTopic, config.clusterPages, options)
+    const clusterPages = this.generateClusterPages(mainTopic, config.clusterPages, contentOptions)
     
     // Create internal link structure
     const internalLinkStructure = this.createInternalLinkStructure(pillarPage, clusterPages)
@@ -141,7 +149,7 @@ export class ContentClusterEngine {
   private generatePillarPage(
     topic: string, 
     sectionCount: number, 
-    options: { qualityLevel: string; contentLength: string; includeImages: boolean }
+    options: { qualityLevel: string; contentLength: string; includeImages: boolean; location?: string }
   ): PillarPage {
     const primaryKeyword = this.formatPrimaryKeyword(topic)
     const sections = this.generatePillarSections(topic, sectionCount, options)
@@ -163,7 +171,7 @@ export class ContentClusterEngine {
   }
 
   // Generate pillar page sections with semantic optimization
-  private generatePillarSections(topic: string, count: number, options: { qualityLevel: string; contentLength: string; includeImages: boolean }): ContentSection[] {
+  private generatePillarSections(topic: string, count: number, options: { qualityLevel: string; contentLength: string; includeImages: boolean; location?: string }): ContentSection[] {
     const sectionTemplates = this.getPillarSectionTemplates(topic)
     const sections: ContentSection[] = []
     
@@ -183,7 +191,7 @@ export class ContentClusterEngine {
   }
 
   // Generate cluster pages for long-tail keywords
-  private generateClusterPages(topic: string, count: number, options: { qualityLevel: string; contentLength: string; includeImages: boolean }): ClusterPage[] {
+  private generateClusterPages(topic: string, count: number, options: { qualityLevel: string; contentLength: string; includeImages: boolean; location?: string }): ClusterPage[] {
     const clusterPages: ClusterPage[] = []
     const longtailKeywords = this.generateLongtailKeywords(topic, count)
     
@@ -524,7 +532,7 @@ ${cluster.competitorGap.slice(0, 10).map(gap =>
   }
 
   // Additional helper methods (simplified implementations)
-  private getPillarSectionTemplates(topic: string): Array<{ title: string; keywords: string[]; framework: string }> {
+  private getPillarSectionTemplates(topic: string): Array<{ heading: string; focus: string }> {
     return [
       { heading: "What is {topic}?", focus: "definition" },
       { heading: "How {topic} Works", focus: "process" },
@@ -549,11 +557,11 @@ ${cluster.competitorGap.slice(0, 10).map(gap =>
     return [`${topic}-tools`, `${topic}-guide`, `${focus}-examples`]
   }
 
-  private generateSectionContent(template: { title: string; keywords: string[]; framework: string }, topic: string, options: { qualityLevel: string; contentLength: string; includeImages: boolean }): string {
+  private generateSectionContent(template: { heading: string; focus: string }, topic: string, options: { qualityLevel: string; contentLength: string; includeImages: boolean; location?: string }): string {
     return `Comprehensive content about ${template.focus} in ${topic}. This section covers all essential aspects with practical examples and actionable insights.`
   }
 
-  private generateClusterContent(keyword: string, topic: string, options: { qualityLevel: string; contentLength: string; includeImages: boolean }): string {
+  private generateClusterContent(keyword: string, topic: string, options: { qualityLevel: string; contentLength: string; includeImages: boolean; location?: string }): string {
     return `Detailed guide about ${keyword} within the context of ${topic}. Includes step-by-step instructions, examples, and best practices.`
   }
 

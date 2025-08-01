@@ -69,21 +69,22 @@ export interface GuestPostCampaign {
 }
 
 export interface PitchTemplate {
-  id: string
-  name: string
   subject: string
-  content: string
-  personalizationTokens: string[]
-  effectiveness: number
+  intro: string
+  value_proposition?: string
+  topic_suggestions?: string
+  credentials?: string
+  article_outline?: string
+  problem_agitation?: string
+  solution_preview?: string
+  article_structure?: string
+  closing: string
 }
 
 export interface ContentTemplate {
-  id: string
-  name: string
   structure: string[]
-  wordCountRange: { min: number; max: number }
-  linkingStrategy: string
-  authorBioTemplate: string
+  wordCount: { min: number; max: number }
+  backlinks: { max: number; types: string[] }
 }
 
 export interface AuthorProfile {
@@ -97,12 +98,19 @@ export interface AuthorProfile {
 }
 
 export interface CampaignOptions {
-  pitchStrategy: string
-  contentStrategy: string
+  targetNiches: string[]
   targetKeywords: string[]
-  authorProfile: AuthorProfile
-  linkingTargets: Array<{ url: string; anchorText: string }>
-  followUpSequence: number[]
+  contentCount: number
+  pitchStrategy: 'authority-expert' | 'data-driven' | 'problem-solution'
+  authorProfile: {
+    name: string
+    title: string
+    expertise: string
+    experience: number
+    credentials: string[]
+    website: string
+  }
+  mainDomain: string
 }
 
 export class GuestPostAutomationEngine {
@@ -727,7 +735,7 @@ ${template.closing}`
     return content.trim()
   }
 
-  private generateAuthorBio(profile: AuthorProfile, mainDomain: string): string {
+  private generateAuthorBio(profile: { name: string; title: string; experience: number; expertise: string; credentials: string[] }, mainDomain: string): string {
     return `${profile.name} is a ${profile.title} with ${profile.experience}+ years of experience in ${profile.expertise}. ${profile.credentials[0]} Learn more at ${mainDomain}.`
   }
 
@@ -762,7 +770,7 @@ ${template.closing}`
     return articles[Math.floor(Math.random() * articles.length)]
   }
 
-  private getNicheCredibility(niche: string, profile: AuthorProfile): string {
+  private getNicheCredibility(niche: string, profile: { experience: number }): string {
     return `${profile.experience} years in ${niche} with proven results`
   }
 
@@ -779,7 +787,7 @@ ${template.closing}`
     return stats[Math.floor(Math.random() * stats.length)]
   }
 
-  private generateSampleWork(profile: AuthorProfile): string[] {
+  private generateSampleWork(profile: { website: string }): string[] {
     return [
       `${profile.website}/case-study-1`,
       `${profile.website}/guide-automation`,

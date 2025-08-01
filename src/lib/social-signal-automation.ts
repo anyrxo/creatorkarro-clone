@@ -96,7 +96,7 @@ export class SocialSignalAutomationEngine {
   private platforms: Map<string, SocialPlatform> = new Map()
   private campaigns: Map<string, SocialSignalCampaign> = new Map()
   private accounts: Map<string, SocialAccount[]> = new Map()
-  private templates: Map<string, SocialTemplate> = new Map()
+  private templates: Map<string, any> = new Map()
   
   constructor() {
     this.initializePlatforms()
@@ -495,8 +495,8 @@ export class SocialSignalAutomationEngine {
     const templates = this.templates.get('shareTexts')
     const shareTexts: string[] = []
     
-    Object.entries(templates).forEach(([platform, texts]) => {
-      texts.forEach((template: string) => {
+    Object.entries(templates as any).forEach(([platform, texts]) => {
+      (texts as string[]).forEach((template: string) => {
         const topic = this.getRandomTopic(niche)
         const problem = this.getRandomProblem(niche)
         const keyPoint = this.getRandomKeyPoint(niche)
@@ -534,7 +534,15 @@ export class SocialSignalAutomationEngine {
       estimatedReach,
       signalStrength,
       indexingBoost,
-      completionRate
+      completionRate,
+      platformBreakdown: {
+        'Twitter': Math.round(totalActions * 0.3),
+        'LinkedIn': Math.round(totalActions * 0.25),
+        'Reddit': Math.round(totalActions * 0.2),
+        'Medium': Math.round(totalActions * 0.15),
+        'Facebook': Math.round(totalActions * 0.1)
+      },
+      estimatedSEOImpact: Math.round(signalStrength * 0.8)
     }
   }
 

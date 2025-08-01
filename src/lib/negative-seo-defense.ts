@@ -261,15 +261,17 @@ export class NegativeSEODefenseEngine {
   ): Promise<DefenseSystem> {
     const {
       monitoringFrequency = protectionLevel === 'military-grade' ? 'real-time' : 'daily',
-      alerts = {
-        email: true,
-        sms: protectionLevel === 'fortress' || protectionLevel === 'military-grade',
-        slack: true,
-        dashboard: true
-      },
+      alerts: alertsOptions,
       customProtocols = [],
       budget = this.calculateBudget(protectionLevel)
     } = options
+
+    const alerts = {
+      email: alertsOptions?.email ?? true,
+      sms: alertsOptions?.sms ?? (protectionLevel === 'fortress' || protectionLevel === 'military-grade'),
+      slack: alertsOptions?.slack ?? true,
+      dashboard: alertsOptions?.dashboard ?? true
+    }
 
     console.log(`🛡️ Deploying Negative SEO Defense System`)
     console.log(`🌐 Domain: ${domain}`)

@@ -266,7 +266,10 @@ function handleLocalRequest(request, geo) {
     return `
 function getABTestVariant(request) {
   const userAgent = request.headers.get('user-agent') || ''
-  const ip = request.ip || request.headers.get('x-forwarded-for') || ''
+  const ip = request.headers.get('x-forwarded-for')?.split(',')[0] || 
+             request.headers.get('x-real-ip') || 
+             request.headers.get('cf-connecting-ip') || 
+             'unknown'
   
   const variants = ['control', 'variant-a', 'variant-b', 'variant-c']
   const hash = hashString(ip)

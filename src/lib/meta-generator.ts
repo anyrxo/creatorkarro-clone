@@ -167,7 +167,7 @@ export function generateBlogMeta(post: BlogPost, location?: string) {
   return generateDynamicMeta({
     title: `${trigger} ${post.title} ${urgency}${location ? ` | ${location}` : ''}`,
     description: `${post.excerpt} Proven strategies that work ${urgency.toLowerCase()}. Join 127K+ who've transformed their results.`,
-    keywords: post.keywords || [],
+    keywords: post.tags || [],
     location,
     service: post.category?.toLowerCase()
   })

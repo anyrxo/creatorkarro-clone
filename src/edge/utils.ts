@@ -166,9 +166,9 @@ export function getGeoData(request: NextRequest): GeoData {
  */
 export function getABTestVariant(request: NextRequest): ABTestVariant {
   // Get consistent identifier for user
-  const ip = request.ip || 
-             request.headers.get('x-forwarded-for')?.split(',')[0] ||
+  const ip = request.headers.get('x-forwarded-for')?.split(',')[0] ||
              request.headers.get('x-real-ip') ||
+             request.headers.get('cf-connecting-ip') ||
              'unknown'
   
   const userAgent = request.headers.get('user-agent') || ''
@@ -293,7 +293,10 @@ export function getTrackingData(request: NextRequest) {
  * Generate consistent session ID
  */
 function generateSessionId(request: NextRequest): string {
-  const ip = request.ip || request.headers.get('x-forwarded-for')?.split(',')[0] || 'unknown'
+  const ip = request.headers.get('x-forwarded-for')?.split(',')[0] ||
+             request.headers.get('x-real-ip') ||
+             request.headers.get('cf-connecting-ip') ||
+             'unknown'
   const userAgent = request.headers.get('user-agent') || ''
   const timestamp = Math.floor(Date.now() / (1000 * 60 * 30)) // 30-minute windows
   

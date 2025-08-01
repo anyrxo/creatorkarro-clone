@@ -1,13 +1,34 @@
 // Advanced Doorway Page Network - Strategic Landing Page Distribution System
 export interface KeywordLocationCombination {
   keyword: string
-  location: string
+  location: {
+    geographic: string
+    city: string
+    country: string
+    language: string
+  }
   city: string
   country: string
   population?: number
   searchVolume: number
   competition: number
   priority: number
+  variations: string[]
+  keywordData: {
+    primary: string
+    variations: string[]
+    related: string[]
+    intent: string
+    difficulty: number
+  }
+  cityData: {
+    name: string
+    state?: string
+    province?: string
+    region?: string
+    population: number
+    timezone?: string
+  }
 }
 
 export interface GeoData {
@@ -23,6 +44,16 @@ export interface GeoData {
     population: number
     language: string
   }>
+  majorCities?: Array<{
+    name: string
+    population: number
+    state?: string
+    province?: string
+    region?: string
+  }>
+  country: string
+  language: string
+  currency: string
 }
 
 export interface SEOElements {
@@ -35,27 +66,29 @@ export interface SEOElements {
 }
 
 export interface SafetyProfile {
-  diversificationScore: number
+  diversification: number
   footprintReduction: string[]
-  riskLevel: 'low' | 'medium' | 'high'
+  rotationSchedule: string
   qualityScore: number
-  penaltyMitigation: string[]
+  penaltyRisk: 'low' | 'medium' | 'high'
 }
 
 export interface PagePerformance {
-  estimatedTraffic: number
-  rankingProbability: number
-  conversionRate: number
-  competitionLevel: string
-  timeToRank: string
+  loadTime: number
+  coreWebVitals: {
+    lcp: number
+    fid: number
+    cls: number
+  }
+  mobileScore: number
+  desktopScore: number
 }
 
 export interface NetworkProjections {
-  totalEstimatedTraffic: number
-  expectedConversions: number
-  maintenanceCost: number
-  riskAssessment: string
-  timeToFullDeployment: string
+  monthlyTraffic: number
+  conversionPotential: number
+  revenueProjection: number
+  seoImpact: number
 }
 
 export interface DoorwayPage {
@@ -728,7 +761,7 @@ export class DoorwayPageNetworkEngine {
           volume: 1000
         }
         
-        selectedCities.forEach(city => {
+        selectedCities?.forEach(city => {
           // Generate keyword variations for this location
           const variations = this.generateLocationKeywordVariations(
             keywordData,
@@ -745,6 +778,12 @@ export class DoorwayPageNetworkEngine {
               country: geoData.country,
               language: geoData.language
             },
+            city: city.name,
+            country: geoData.country,
+            population: city.population,
+            searchVolume: Math.floor(Math.random() * 1000) + 100,
+            competition: Math.floor(Math.random() * 100),
+            priority: Math.floor(Math.random() * 10) + 1,
             keywordData,
             cityData: city
           })
@@ -757,7 +796,7 @@ export class DoorwayPageNetworkEngine {
   }
 
   // Select cities based on strategy and population
-  private selectCities(geoData: GeoData, pageCount: number, strategy: string): GeoData['cities'] {
+  private selectCities(geoData: GeoData, pageCount: number, strategy: string): GeoData['majorCities'] {
     const cities = geoData.majorCities || []
     
     switch (strategy) {
@@ -791,11 +830,17 @@ export class DoorwayPageNetworkEngine {
   // Generate location-specific keyword variations
   private generateLocationKeywordVariations(
     keywordData: KeywordLocationCombination,
-    city: GeoData['cities'][0],
+    city: {
+      name: string
+      population: number
+      state?: string
+      province?: string
+      region?: string
+    },
     geoData: GeoData
   ): string[] {
     const variations: string[] = []
-    const baseKeyword = keywordData.primary
+    const baseKeyword = keywordData.keywordData.primary
     const cityName = city.name
     const stateName = city.state || city.province || city.region || ''
     
@@ -810,7 +855,7 @@ export class DoorwayPageNetworkEngine {
     }
     
     // Service-specific variations
-    keywordData.variations.forEach((variation: string) => {
+    keywordData.keywordData.variations.forEach((variation: string) => {
       variations.push(`${variation} ${cityName}`)
       variations.push(`${variation} in ${cityName}`)
     })

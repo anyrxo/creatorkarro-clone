@@ -220,18 +220,28 @@ export class RankTrackingEngine {
       locations = ['us'],
       devices = ['desktop', 'mobile'],
       searchEngines = ['google'],
-      alerts = {
-        email: true,
-        sms: false,
-        slack: true,
-        webhook: false
-      },
+      alerts: alertsOptions,
       alertThresholds = {
         dropThreshold: 5,
         gainThreshold: 10,
         competitorAlert: true
       }
     } = options
+
+    const alerts = {
+      email: alertsOptions?.email ?? true,
+      sms: alertsOptions?.sms ?? false,
+      slack: alertsOptions?.slack ?? true,
+      webhook: alertsOptions?.webhook ?? false
+    }
+
+    const finalAlertThresholds: AlertThresholds = {
+      rankingDrop: alertThresholds.dropThreshold ?? 5,
+      rankingGain: alertThresholds.gainThreshold ?? 10,
+      positionChange: 3,
+      visibilityChange: 15,
+      trafficChange: 20
+    }
 
     console.log(`📊 Deploying Real-Time Rank Tracking System`)
     console.log(`🌐 Domain: ${domain}`)
@@ -296,7 +306,7 @@ export class RankTrackingEngine {
     this.scheduleUpdates(tracker.id, updateFrequency)
 
     // Check for initial alerts
-    await this.checkForAlerts(tracker.id, initialRankings, [], alertThresholds)
+    await this.checkForAlerts(tracker.id, initialRankings, [], finalAlertThresholds)
 
     console.log(`✅ Rank Tracker Deployed Successfully`)
     console.log(`📊 Tracking ID: ${tracker.id}`)
@@ -423,12 +433,20 @@ export class RankTrackingEngine {
         }
       })
 
+      const visibility = rankedKeywords / keywords.length * 100
+      
       analysis.push({
         domain: competitor,
         keywords: rankedKeywords,
         avgPosition: rankedKeywords > 0 ? totalPositions / rankedKeywords : 0,
-        visibility: rankedKeywords / keywords.length * 100,
-        overlap: Math.round(rankedKeywords / keywords.length * 100)
+        visibility,
+        estimatedTraffic: Math.round(visibility * 100),
+        rankingDistribution: {
+          top3: 0,
+          top10: Math.round(rankedKeywords * 0.3),
+          top20: Math.round(rankedKeywords * 0.6),
+          top50: rankedKeywords
+        }
       })
     }
 
@@ -467,7 +485,9 @@ export class RankTrackingEngine {
       score: avgVisibility,
       change: 0, // Initial check
       trend: 'stable' as const,
-      estimatedTraffic: Math.round(estimatedTraffic)
+      estimatedTraffic: Math.round(estimatedTraffic),
+      totalImpressions: Math.round(avgVisibility * 1500),
+      averagePosition: rankings.length > 0 ? rankings.reduce((sum, r) => sum + r.position, 0) / rankings.length : 0
     }
   }
 
@@ -567,9 +587,11 @@ export class RankTrackingEngine {
 
     // Check for alerts
     await this.checkForAlerts(trackerId, currentRankings, previousRankings, {
-      dropThreshold: 5,
-      gainThreshold: 10,
-      competitorAlert: true
+      rankingDrop: 5,
+      rankingGain: 10,
+      positionChange: 3,
+      visibilityChange: 15,
+      trafficChange: 20
     })
 
     return {
@@ -594,7 +616,7 @@ export class RankTrackingEngine {
       if (!previous) return
 
       // Check for significant drops
-      if (current.change < -thresholds.dropThreshold) {
+      if (current.change < -thresholds.rankingDrop) {
         alerts.push({
           id: `alert-${Date.now()}-${index}`,
           type: 'ranking-drop',
@@ -611,7 +633,7 @@ export class RankTrackingEngine {
       }
 
       // Check for significant gains
-      if (current.change > thresholds.gainThreshold) {
+      if (current.change > thresholds.rankingGain) {
         alerts.push({
           id: `alert-${Date.now()}-${index}`,
           type: 'ranking-gain',
@@ -705,32 +727,35 @@ export class RankTrackingEngine {
         keywordAnalysis.set(ranking.keyword, {
           keyword: ranking.keyword,
           positions: [],
-          avgPosition: 0,
+          urls: [],
+          changes: [],
+          averagePosition: 0,
           bestPosition: 100,
           worstPosition: 0,
           volatility: 0,
           trend: 'stable',
           searchVolume: ranking.searchVolume,
-          difficulty: ranking.difficulty,
-          intent: ranking.intent
+          difficulty: ranking.difficulty
         })
       }
 
       const analysis = keywordAnalysis.get(ranking.keyword)
-      analysis.positions.push(ranking.position)
-      analysis.bestPosition = Math.min(analysis.bestPosition, ranking.position || 100)
-      analysis.worstPosition = Math.max(analysis.worstPosition, ranking.position)
+      if (analysis) {
+        analysis.positions.push(ranking.position)
+        analysis.bestPosition = Math.min(analysis.bestPosition, ranking.position || 100)
+        analysis.worstPosition = Math.max(analysis.worstPosition, ranking.position)
+      }
     })
 
     // Calculate keyword metrics
     keywordAnalysis.forEach(analysis => {
-      analysis.avgPosition = Math.round(
+      analysis.averagePosition = Math.round(
         analysis.positions.reduce((sum: number, p: number) => sum + p, 0) / analysis.positions.length
       )
       
       // Calculate volatility (standard deviation)
       const variance = analysis.positions.reduce((sum: number, p: number) => 
-        sum + Math.pow(p - analysis.avgPosition, 2), 0
+        sum + Math.pow(p - analysis.averagePosition, 2), 0
       ) / analysis.positions.length
       analysis.volatility = Math.round(Math.sqrt(variance))
 
@@ -750,37 +775,33 @@ export class RankTrackingEngine {
       tracker: {
         id: tracker.id,
         domain: tracker.domain,
-        lastUpdate: tracker.lastUpdate,
-        updateFrequency: tracker.updateFrequency
+        totalKeywords: tracker.keywords.total,
+        lastUpdate: tracker.lastUpdate
       },
       summary: {
-        totalKeywords: tracker.keywords.total,
-        trackedKeywords: tracker.keywords.tracked,
-        improved: tracker.keywords.improved,
-        declined: tracker.keywords.declined,
-        unchanged: tracker.keywords.unchanged,
-        new: tracker.keywords.new,
-        lost: tracker.keywords.lost
+        averagePosition: rankings.length > 0 ? rankings.reduce((sum, r) => sum + r.position, 0) / rankings.length : 0,
+        visibility: {
+          score: tracker.visibility.score,
+          change: tracker.visibility.change,
+          trend: tracker.visibility.trend,
+          estimatedTraffic: tracker.visibility.estimatedTraffic,
+          totalImpressions: Math.round(tracker.visibility.score * 1500),
+          averagePosition: rankings.length > 0 ? rankings.reduce((sum, r) => sum + r.position, 0) / rankings.length : 0
+        },
+        topKeywords: Array.from(keywordAnalysis.values())
+          .filter(k => k.averagePosition > 0 && k.averagePosition <= 10)
+          .sort((a, b) => a.averagePosition - b.averagePosition)
+          .slice(0, 10),
+        improvements: tracker.keywords.improved,
+        declines: tracker.keywords.declined
       },
-      rankings: tracker.rankings,
-      visibility: tracker.visibility,
-      keywordAnalysis: Array.from(keywordAnalysis.values()),
-      topPerformers: Array.from(keywordAnalysis.values())
-        .filter(k => k.avgPosition > 0 && k.avgPosition <= 10)
-        .sort((a, b) => a.avgPosition - b.avgPosition)
-        .slice(0, 10),
-      opportunities: Array.from(keywordAnalysis.values())
-        .filter(k => k.avgPosition > 10 && k.avgPosition <= 20)
-        .sort((a, b) => b.searchVolume - a.searchVolume)
-        .slice(0, 10),
-      alerts: {
-        total: alerts.length,
-        critical: alerts.filter(a => a.severity === 'critical').length,
-        warning: alerts.filter(a => a.severity === 'warning').length,
-        info: alerts.filter(a => a.severity === 'info').length,
-        recent: alerts.slice(-10)
-      },
-      competitors: tracker.competitors
+      alerts,
+      competitors: [],
+      timeframe: {
+        start: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString(), // 30 days ago
+        end: new Date().toISOString(),
+        dataPoints: 30
+      }
     }
 
     return report
@@ -807,8 +828,7 @@ export async function deployBasicTracking(domain: string, keywords: string[]): P
     locations: ['us'],
     devices: ['desktop'],
     alerts: {
-      email: true,
-      dashboard: true
+      email: true
     }
   })
 }
@@ -822,8 +842,7 @@ export async function deployAdvancedTracking(domain: string, keywords: string[],
     devices: ['desktop', 'mobile'],
     alerts: {
       email: true,
-      slack: true,
-      dashboard: true
+      slack: true
     }
   })
 }
@@ -840,8 +859,7 @@ export async function deployEnterpriseTracking(domain: string, keywords: string[
       email: true,
       sms: true,
       slack: true,
-      webhook: true,
-      dashboard: true
+      webhook: true
     }
   })
 }

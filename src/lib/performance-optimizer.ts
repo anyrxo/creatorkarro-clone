@@ -1,4 +1,13 @@
 // Core Web Vitals Nuclear Optimization System
+
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
+declare const gtag: (...args: any[]) => void;
+
 export interface PerformanceConfig {
   enableImageOptimization: boolean
   enableCodeSplitting: boolean
@@ -249,7 +258,7 @@ export function trackCoreWebVitals() {
     for (const entry of entryList.getEntries()) {
       gtag('event', 'FID', {
         event_category: 'Web Vitals',
-        value: Math.round(entry.processingStart - entry.startTime),
+        value: Math.round((entry as any).processingStart - entry.startTime),
         non_interaction: true
       })
     }
@@ -259,8 +268,8 @@ export function trackCoreWebVitals() {
   let clsValue = 0
   new PerformanceObserver((entryList) => {
     for (const entry of entryList.getEntries()) {
-      if (!entry.hadRecentInput) {
-        clsValue += entry.value
+      if (!(entry as any).hadRecentInput) {
+        clsValue += (entry as any).value
       }
     }
     
