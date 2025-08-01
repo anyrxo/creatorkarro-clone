@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { analyticsDashboardEngine } from '@/lib/analytics-dashboard'
+import { analyticsDashboardEngine } from '@/lib/analytics-dashboard-system'
 
 export async function POST(request: NextRequest) {
   try {
@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     switch (action) {
       case 'create': {
         const { domain, options } = params
-        const dashboard = await analyticsDashboardEngine.createDashboard(
+        const dashboard = await analyticsDashboardEngine.deployAnalyticsDashboard(
           domain,
           options
         )
@@ -17,17 +17,17 @@ export async function POST(request: NextRequest) {
       }
 
       case 'generateReport': {
-        const { domain, period } = params
+        const { dashboardId, period } = params
         const report = await analyticsDashboardEngine.generateReport(
-          domain,
+          dashboardId,
           period
         )
         return NextResponse.json({ success: true, report })
       }
 
       case 'getDashboard': {
-        const { domain } = params
-        const dashboard = analyticsDashboardEngine.getDashboardByDomain(domain)
+        const { dashboardId } = params
+        const dashboard = analyticsDashboardEngine.getDashboardById(dashboardId)
         if (!dashboard) {
           return NextResponse.json({ error: 'Dashboard not found' }, { status: 404 })
         }
@@ -40,15 +40,28 @@ export async function POST(request: NextRequest) {
       }
 
       case 'getReports': {
-        const { domain } = params
-        const reports = analyticsDashboardEngine.getReportsByDomain(domain)
+        const { dashboardId } = params
+        const dashboard = analyticsDashboardEngine.getDashboardById(dashboardId)
+        const reports = dashboard ? dashboard.reports : []
         return NextResponse.json({ success: true, reports })
       }
 
       case 'getHistorical': {
-        const { domain } = params
-        const historical = analyticsDashboardEngine.getHistoricalData(domain)
+        const { dashboardId } = params
+        const historical = analyticsDashboardEngine.getMetricsHistory(dashboardId)
         return NextResponse.json({ success: true, historical })
+      }
+
+      case 'refresh': {
+        const { dashboardId } = params
+        const dashboard = await analyticsDashboardEngine.refreshDashboard(dashboardId)
+        return NextResponse.json({ success: true, dashboard })
+      }
+
+      case 'export': {
+        const { dashboardId, format } = params
+        const exportPath = await analyticsDashboardEngine.exportDashboard(dashboardId, format)
+        return NextResponse.json({ success: true, exportPath })
       }
 
       default:
@@ -69,21 +82,35 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
-    const domain = searchParams.get('domain')
+    const dashboardId = searchParams.get('dashboardId')
     const type = searchParams.get('type')
+    const action = searchParams.get('action')
 
-    if (type === 'reports' && domain) {
-      const reports = analyticsDashboardEngine.getReportsByDomain(domain)
+    if (action === 'getAllDashboards') {
+      const dashboards = analyticsDashboardEngine.getAllDashboards()
+      // Simulate mock data if no dashboards exist
+      if (dashboards.length === 0) {
+        return NextResponse.json({ 
+          success: true, 
+          dashboards: []
+        })
+      }
+      return NextResponse.json({ success: true, dashboards })
+    }
+
+    if (type === 'reports' && dashboardId) {
+      const dashboard = analyticsDashboardEngine.getDashboardById(dashboardId)
+      const reports = dashboard ? dashboard.reports : []
       return NextResponse.json({ success: true, reports })
     }
 
-    if (type === 'historical' && domain) {
-      const historical = analyticsDashboardEngine.getHistoricalData(domain)
+    if (type === 'historical' && dashboardId) {
+      const historical = analyticsDashboardEngine.getMetricsHistory(dashboardId)
       return NextResponse.json({ success: true, historical })
     }
 
-    if (domain) {
-      const dashboard = analyticsDashboardEngine.getDashboardByDomain(domain)
+    if (dashboardId) {
+      const dashboard = analyticsDashboardEngine.getDashboardById(dashboardId)
       if (!dashboard) {
         return NextResponse.json({ error: 'Dashboard not found' }, { status: 404 })
       }

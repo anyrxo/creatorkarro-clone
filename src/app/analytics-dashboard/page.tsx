@@ -11,7 +11,6 @@ import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Progress } from '@/components/ui/progress'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 import { TrendingUp, TrendingDown, AlertTriangle, CheckCircle, Activity, DollarSign, Users, Globe, Link, FileText } from 'lucide-react'
 
 interface DashboardMetrics {
@@ -87,8 +86,6 @@ interface DashboardMetrics {
     visibilityGap: number
   }
 }
-
-const COLORS = ['#22c55e', '#3b82f6', '#f59e0b', '#ef4444', '#8b5cf6', '#6b7280']
 
 export default function AnalyticsDashboardPage() {
   const [dashboards, setDashboards] = useState<DashboardMetrics[]>([])
@@ -212,40 +209,82 @@ export default function AnalyticsDashboardPage() {
     return num.toString()
   }
 
-  const getTrafficData = () => {
-    if (!selectedDashboard) return []
-    
-    // Simulate historical data
-    return Array.from({ length: 7 }, (_, i) => ({
-      day: `Day ${i + 1}`,
-      traffic: Math.floor(selectedDashboard.organic.traffic * (0.8 + Math.random() * 0.4)),
-      sessions: Math.floor(selectedDashboard.organic.sessions * (0.8 + Math.random() * 0.4))
-    }))
+  // Mock data for demonstration
+  const mockDashboard: DashboardMetrics = {
+    id: '1',
+    domain: 'example.com',
+    timestamp: new Date().toISOString(),
+    organic: {
+      traffic: 125420,
+      growth: 15.3,
+      sessions: 98650,
+      bounceRate: 42.3,
+      avgDuration: 245,
+      pageviews: 342850
+    },
+    rankings: {
+      total: 4826,
+      top3: 287,
+      top10: 892,
+      top100: 2453,
+      improved: 1254,
+      declined: 342,
+      averagePosition: 8.2
+    },
+    backlinks: {
+      total: 248690,
+      new: 4218,
+      lost: 892,
+      dofollow: 195420,
+      nofollow: 53270,
+      domainAuthority: 68,
+      toxicityScore: 2.1
+    },
+    technical: {
+      crawlErrors: 12,
+      indexedPages: 52840,
+      sitemapStatus: 'healthy',
+      robotsStatus: 'healthy',
+      pageSpeed: {
+        mobile: 85,
+        desktop: 92
+      },
+      coreWebVitals: {
+        lcp: 2.1,
+        fid: 45,
+        cls: 0.08
+      }
+    },
+    content: {
+      totalPages: 52840,
+      newPages: 15420,
+      updatedPages: 8920,
+      thinPages: 234,
+      duplicatePages: 12,
+      avgWordCount: 1248,
+      contentScore: 85
+    },
+    conversions: {
+      total: 8426,
+      rate: 3.8,
+      revenue: 486250,
+      goalCompletions: {
+        signups: 3842,
+        purchases: 2156,
+        downloads: 1842,
+        contacts: 586
+      }
+    },
+    competitors: {
+      tracked: 5,
+      outranking: 3,
+      beingOutranked: 2,
+      sharedKeywords: 2453,
+      visibilityGap: 12.4
+    }
   }
 
-  const getRankingDistribution = () => {
-    if (!selectedDashboard) return []
-    
-    return [
-      { name: 'Top 3', value: selectedDashboard.rankings.top3, fill: COLORS[0] },
-      { name: 'Top 10', value: selectedDashboard.rankings.top10 - selectedDashboard.rankings.top3, fill: COLORS[1] },
-      { name: 'Top 20', value: 200, fill: COLORS[2] },
-      { name: 'Top 50', value: selectedDashboard.rankings.top100 - selectedDashboard.rankings.top10 - 200, fill: COLORS[3] },
-      { name: '50-100', value: 300, fill: COLORS[4] },
-      { name: 'Not Ranking', value: selectedDashboard.rankings.total - selectedDashboard.rankings.top100, fill: COLORS[5] }
-    ]
-  }
-
-  const getConversionData = () => {
-    if (!selectedDashboard) return []
-    
-    return [
-      { name: 'Signups', value: selectedDashboard.conversions.goalCompletions.signups },
-      { name: 'Purchases', value: selectedDashboard.conversions.goalCompletions.purchases },
-      { name: 'Downloads', value: selectedDashboard.conversions.goalCompletions.downloads },
-      { name: 'Contacts', value: selectedDashboard.conversions.goalCompletions.contacts }
-    ]
-  }
+  const dashboard = selectedDashboard || mockDashboard
 
   return (
     <div className="container mx-auto p-6 space-y-6">
@@ -279,404 +318,338 @@ export default function AnalyticsDashboardPage() {
         </TabsList>
 
         <TabsContent value="overview" className="space-y-6">
-          {selectedDashboard ? (
-            <>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-medium flex items-center gap-2">
-                      <TrendingUp className="h-4 w-4" />
-                      Organic Traffic
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">
-                      {formatNumber(selectedDashboard.organic.traffic)}
-                    </div>
-                    <p className="text-sm">
-                      <span className={selectedDashboard.organic.growth > 0 ? 'text-green-600' : 'text-red-600'}>
-                        {selectedDashboard.organic.growth > 0 ? '+' : ''}{selectedDashboard.organic.growth.toFixed(1)}%
-                      </span>
-                      {' '}vs last period
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-medium flex items-center gap-2">
-                      <Globe className="h-4 w-4" />
-                      Top 10 Rankings
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">
-                      {selectedDashboard.rankings.top10}
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      {selectedDashboard.rankings.top3} in top 3
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-medium flex items-center gap-2">
-                      <Link className="h-4 w-4" />
-                      Total Backlinks
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">
-                      {formatNumber(selectedDashboard.backlinks.total)}
-                    </div>
-                    <p className="text-sm">
-                      <span className="text-green-600">+{selectedDashboard.backlinks.new}</span>
-                      {' / '}
-                      <span className="text-red-600">-{selectedDashboard.backlinks.lost}</span>
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-medium flex items-center gap-2">
-                      <DollarSign className="h-4 w-4" />
-                      Revenue
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">
-                      ${formatNumber(selectedDashboard.conversions.revenue)}
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      {selectedDashboard.conversions.rate.toFixed(2)}% conversion
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Traffic Trend</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ResponsiveContainer width="100%" height={300}>
-                      <LineChart data={getTrafficData()}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="day" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        <Line type="monotone" dataKey="traffic" stroke="#3b82f6" name="Traffic" />
-                        <Line type="monotone" dataKey="sessions" stroke="#22c55e" name="Sessions" />
-                      </LineChart>
-                    </ResponsiveContainer>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Ranking Distribution</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ResponsiveContainer width="100%" height={300}>
-                      <PieChart>
-                        <Pie
-                          data={getRankingDistribution()}
-                          cx="50%"
-                          cy="50%"
-                          outerRadius={100}
-                          dataKey="value"
-                          label={({ name, value }) => `${name}: ${value}`}
-                        >
-                          {getRankingDistribution().map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={entry.fill} />
-                          ))}
-                        </Pie>
-                        <Tooltip />
-                      </PieChart>
-                    </ResponsiveContainer>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-sm">Technical Health</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Page Speed (Mobile)</span>
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm font-medium">{selectedDashboard.technical.pageSpeed.mobile}</span>
-                        <Progress value={selectedDashboard.technical.pageSpeed.mobile} className="w-20" />
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Crawl Errors</span>
-                      <Badge variant={selectedDashboard.technical.crawlErrors > 10 ? 'destructive' : 'secondary'}>
-                        {selectedDashboard.technical.crawlErrors}
-                      </Badge>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Core Web Vitals</span>
-                      <Badge variant={selectedDashboard.technical.coreWebVitals.lcp > 2.5 ? 'destructive' : 'default'}>
-                        {selectedDashboard.technical.coreWebVitals.lcp > 2.5 ? 'Needs Work' : 'Good'}
-                      </Badge>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-sm">Content Performance</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Total Pages</span>
-                      <span className="text-sm font-medium">{formatNumber(selectedDashboard.content.totalPages)}</span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Avg Word Count</span>
-                      <span className="text-sm font-medium">{selectedDashboard.content.avgWordCount}</span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Content Score</span>
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm font-medium">{selectedDashboard.content.contentScore}</span>
-                        <Progress value={selectedDashboard.content.contentScore} className="w-20" />
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-sm">Competitor Analysis</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Tracked Competitors</span>
-                      <span className="text-sm font-medium">{selectedDashboard.competitors.tracked}</span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Outranking</span>
-                      <Badge variant="default">{selectedDashboard.competitors.outranking}</Badge>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Visibility Gap</span>
-                      <span className={`text-sm font-medium ${selectedDashboard.competitors.visibilityGap > 0 ? 'text-green-600' : 'text-red-600'}`}>
-                        {selectedDashboard.competitors.visibilityGap > 0 ? '+' : ''}{selectedDashboard.competitors.visibilityGap.toFixed(1)}%
-                      </span>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </>
-          ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Card>
-              <CardContent className="text-center py-12">
-                <p className="text-muted-foreground">
-                  No dashboards created yet. Go to the "Create New" tab to set up your first dashboard.
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm font-medium flex items-center gap-2">
+                  <TrendingUp className="h-4 w-4" />
+                  Organic Traffic
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">
+                  {formatNumber(dashboard.organic.traffic)}
+                </div>
+                <p className="text-sm">
+                  <span className={dashboard.organic.growth > 0 ? 'text-green-600' : 'text-red-600'}>
+                    {dashboard.organic.growth > 0 ? '+' : ''}{dashboard.organic.growth.toFixed(1)}%
+                  </span>
+                  {' '}vs last period
                 </p>
               </CardContent>
             </Card>
-          )}
+
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm font-medium flex items-center gap-2">
+                  <Globe className="h-4 w-4" />
+                  Top 10 Rankings
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">
+                  {dashboard.rankings.top10}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {dashboard.rankings.top3} in top 3
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm font-medium flex items-center gap-2">
+                  <Link className="h-4 w-4" />
+                  Total Backlinks
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">
+                  {formatNumber(dashboard.backlinks.total)}
+                </div>
+                <p className="text-sm">
+                  <span className="text-green-600">+{dashboard.backlinks.new}</span>
+                  {' / '}
+                  <span className="text-red-600">-{dashboard.backlinks.lost}</span>
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm font-medium flex items-center gap-2">
+                  <DollarSign className="h-4 w-4" />
+                  Revenue
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">
+                  ${formatNumber(dashboard.conversions.revenue)}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {dashboard.conversions.rate.toFixed(2)}% conversion
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-sm">Technical Health</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Page Speed (Mobile)</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-medium">{dashboard.technical.pageSpeed.mobile}</span>
+                    <Progress value={dashboard.technical.pageSpeed.mobile} className="w-20" />
+                  </div>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Crawl Errors</span>
+                  <Badge variant={dashboard.technical.crawlErrors > 10 ? 'destructive' : 'secondary'}>
+                    {dashboard.technical.crawlErrors}
+                  </Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Core Web Vitals</span>
+                  <Badge variant={dashboard.technical.coreWebVitals.lcp > 2.5 ? 'destructive' : 'default'}>
+                    {dashboard.technical.coreWebVitals.lcp > 2.5 ? 'Needs Work' : 'Good'}
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-sm">Content Performance</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Total Pages</span>
+                  <span className="text-sm font-medium">{formatNumber(dashboard.content.totalPages)}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Avg Word Count</span>
+                  <span className="text-sm font-medium">{dashboard.content.avgWordCount}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Content Score</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-medium">{dashboard.content.contentScore}</span>
+                    <Progress value={dashboard.content.contentScore} className="w-20" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-sm">Competitor Analysis</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Tracked Competitors</span>
+                  <span className="text-sm font-medium">{dashboard.competitors.tracked}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Outranking</span>
+                  <Badge variant="default">{dashboard.competitors.outranking}</Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Visibility Gap</span>
+                  <span className={`text-sm font-medium ${dashboard.competitors.visibilityGap > 0 ? 'text-green-600' : 'text-red-600'}`}>
+                    {dashboard.competitors.visibilityGap > 0 ? '+' : ''}{dashboard.competitors.visibilityGap.toFixed(1)}%
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </TabsContent>
 
         <TabsContent value="traffic" className="space-y-6">
-          {selectedDashboard && (
-            <>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Traffic Analytics</CardTitle>
-                  <CardDescription>
-                    Detailed organic traffic metrics and user behavior
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div>
-                      <p className="text-sm font-medium text-muted-foreground">Sessions</p>
-                      <p className="text-2xl font-bold">{formatNumber(selectedDashboard.organic.sessions)}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-muted-foreground">Pageviews</p>
-                      <p className="text-2xl font-bold">{formatNumber(selectedDashboard.organic.pageviews)}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-muted-foreground">Bounce Rate</p>
-                      <p className="text-2xl font-bold">{selectedDashboard.organic.bounceRate.toFixed(1)}%</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-muted-foreground">Avg Duration</p>
-                      <p className="text-2xl font-bold">{Math.floor(selectedDashboard.organic.avgDuration / 60)}:{(selectedDashboard.organic.avgDuration % 60).toString().padStart(2, '0')}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-muted-foreground">Pages/Session</p>
-                      <p className="text-2xl font-bold">{(selectedDashboard.organic.pageviews / selectedDashboard.organic.sessions).toFixed(2)}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-muted-foreground">Growth Rate</p>
-                      <p className={`text-2xl font-bold ${selectedDashboard.organic.growth > 0 ? 'text-green-600' : 'text-red-600'}`}>
-                        {selectedDashboard.organic.growth > 0 ? '+' : ''}{selectedDashboard.organic.growth.toFixed(1)}%
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </>
-          )}
+          <Card>
+            <CardHeader>
+              <CardTitle>Traffic Analytics</CardTitle>
+              <CardDescription>
+                Detailed organic traffic metrics and user behavior
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Sessions</p>
+                  <p className="text-2xl font-bold">{formatNumber(dashboard.organic.sessions)}</p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Pageviews</p>
+                  <p className="text-2xl font-bold">{formatNumber(dashboard.organic.pageviews)}</p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Bounce Rate</p>
+                  <p className="text-2xl font-bold">{dashboard.organic.bounceRate.toFixed(1)}%</p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Avg Duration</p>
+                  <p className="text-2xl font-bold">{Math.floor(dashboard.organic.avgDuration / 60)}:{(dashboard.organic.avgDuration % 60).toString().padStart(2, '0')}</p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Pages/Session</p>
+                  <p className="text-2xl font-bold">{(dashboard.organic.pageviews / dashboard.organic.sessions).toFixed(2)}</p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Growth Rate</p>
+                  <p className={`text-2xl font-bold ${dashboard.organic.growth > 0 ? 'text-green-600' : 'text-red-600'}`}>
+                    {dashboard.organic.growth > 0 ? '+' : ''}{dashboard.organic.growth.toFixed(1)}%
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </TabsContent>
 
         <TabsContent value="rankings" className="space-y-6">
-          {selectedDashboard && (
-            <>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Keyword Rankings</CardTitle>
-                  <CardDescription>
-                    Position tracking and keyword performance
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div className="text-center p-4 border rounded-lg">
-                      <p className="text-3xl font-bold text-green-600">{selectedDashboard.rankings.improved}</p>
-                      <p className="text-sm text-muted-foreground mt-1">Improved</p>
-                    </div>
-                    <div className="text-center p-4 border rounded-lg">
-                      <p className="text-3xl font-bold text-red-600">{selectedDashboard.rankings.declined}</p>
-                      <p className="text-sm text-muted-foreground mt-1">Declined</p>
-                    </div>
-                    <div className="text-center p-4 border rounded-lg">
-                      <p className="text-3xl font-bold">{selectedDashboard.rankings.total}</p>
-                      <p className="text-sm text-muted-foreground mt-1">Total Keywords</p>
-                    </div>
-                    <div className="text-center p-4 border rounded-lg">
-                      <p className="text-3xl font-bold">{selectedDashboard.rankings.averagePosition.toFixed(1)}</p>
-                      <p className="text-sm text-muted-foreground mt-1">Avg Position</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </>
-          )}
+          <Card>
+            <CardHeader>
+              <CardTitle>Keyword Rankings</CardTitle>
+              <CardDescription>
+                Position tracking and keyword performance
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="text-center p-4 border rounded-lg">
+                  <p className="text-3xl font-bold text-green-600">{dashboard.rankings.improved}</p>
+                  <p className="text-sm text-muted-foreground mt-1">Improved</p>
+                </div>
+                <div className="text-center p-4 border rounded-lg">
+                  <p className="text-3xl font-bold text-red-600">{dashboard.rankings.declined}</p>
+                  <p className="text-sm text-muted-foreground mt-1">Declined</p>
+                </div>
+                <div className="text-center p-4 border rounded-lg">
+                  <p className="text-3xl font-bold">{dashboard.rankings.total}</p>
+                  <p className="text-sm text-muted-foreground mt-1">Total Keywords</p>
+                </div>
+                <div className="text-center p-4 border rounded-lg">
+                  <p className="text-3xl font-bold">{dashboard.rankings.averagePosition.toFixed(1)}</p>
+                  <p className="text-sm text-muted-foreground mt-1">Avg Position</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </TabsContent>
 
         <TabsContent value="technical" className="space-y-6">
-          {selectedDashboard && (
-            <>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Core Web Vitals</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm">LCP (Largest Contentful Paint)</span>
-                        <span className="text-sm font-medium">{selectedDashboard.technical.coreWebVitals.lcp.toFixed(2)}s</span>
-                      </div>
-                      <Progress 
-                        value={Math.min(100, (2.5 / selectedDashboard.technical.coreWebVitals.lcp) * 100)} 
-                        className={selectedDashboard.technical.coreWebVitals.lcp > 2.5 ? 'bg-red-100' : ''}
-                      />
-                    </div>
-                    <div>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm">FID (First Input Delay)</span>
-                        <span className="text-sm font-medium">{selectedDashboard.technical.coreWebVitals.fid.toFixed(0)}ms</span>
-                      </div>
-                      <Progress 
-                        value={Math.min(100, (100 / selectedDashboard.technical.coreWebVitals.fid) * 100)} 
-                        className={selectedDashboard.technical.coreWebVitals.fid > 100 ? 'bg-red-100' : ''}
-                      />
-                    </div>
-                    <div>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm">CLS (Cumulative Layout Shift)</span>
-                        <span className="text-sm font-medium">{selectedDashboard.technical.coreWebVitals.cls.toFixed(3)}</span>
-                      </div>
-                      <Progress 
-                        value={Math.min(100, (0.1 / selectedDashboard.technical.coreWebVitals.cls) * 100)} 
-                        className={selectedDashboard.technical.coreWebVitals.cls > 0.1 ? 'bg-red-100' : ''}
-                      />
-                    </div>
-                  </CardContent>
-                </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Core Web Vitals</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="text-sm">LCP (Largest Contentful Paint)</span>
+                    <span className="text-sm font-medium">{dashboard.technical.coreWebVitals.lcp.toFixed(2)}s</span>
+                  </div>
+                  <Progress 
+                    value={Math.min(100, (2.5 / dashboard.technical.coreWebVitals.lcp) * 100)} 
+                    className={dashboard.technical.coreWebVitals.lcp > 2.5 ? 'bg-red-100' : ''}
+                  />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="text-sm">FID (First Input Delay)</span>
+                    <span className="text-sm font-medium">{dashboard.technical.coreWebVitals.fid.toFixed(0)}ms</span>
+                  </div>
+                  <Progress 
+                    value={Math.min(100, (100 / dashboard.technical.coreWebVitals.fid) * 100)} 
+                    className={dashboard.technical.coreWebVitals.fid > 100 ? 'bg-red-100' : ''}
+                  />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="text-sm">CLS (Cumulative Layout Shift)</span>
+                    <span className="text-sm font-medium">{dashboard.technical.coreWebVitals.cls.toFixed(3)}</span>
+                  </div>
+                  <Progress 
+                    value={Math.min(100, (0.1 / dashboard.technical.coreWebVitals.cls) * 100)} 
+                    className={dashboard.technical.coreWebVitals.cls > 0.1 ? 'bg-red-100' : ''}
+                  />
+                </div>
+              </CardContent>
+            </Card>
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Technical Status</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="flex items-center justify-between p-3 border rounded-lg">
-                      <span>Indexed Pages</span>
-                      <span className="font-medium">{formatNumber(selectedDashboard.technical.indexedPages)}</span>
-                    </div>
-                    <div className="flex items-center justify-between p-3 border rounded-lg">
-                      <span>Sitemap Status</span>
-                      <Badge variant={selectedDashboard.technical.sitemapStatus === 'healthy' ? 'default' : 'destructive'}>
-                        {selectedDashboard.technical.sitemapStatus}
-                      </Badge>
-                    </div>
-                    <div className="flex items-center justify-between p-3 border rounded-lg">
-                      <span>Robots.txt Status</span>
-                      <Badge variant={selectedDashboard.technical.robotsStatus === 'healthy' ? 'default' : 'destructive'}>
-                        {selectedDashboard.technical.robotsStatus}
-                      </Badge>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </>
-          )}
+            <Card>
+              <CardHeader>
+                <CardTitle>Technical Status</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="flex items-center justify-between p-3 border rounded-lg">
+                  <span>Indexed Pages</span>
+                  <span className="font-medium">{formatNumber(dashboard.technical.indexedPages)}</span>
+                </div>
+                <div className="flex items-center justify-between p-3 border rounded-lg">
+                  <span>Sitemap Status</span>
+                  <Badge variant={dashboard.technical.sitemapStatus === 'healthy' ? 'default' : 'destructive'}>
+                    {dashboard.technical.sitemapStatus}
+                  </Badge>
+                </div>
+                <div className="flex items-center justify-between p-3 border rounded-lg">
+                  <span>Robots.txt Status</span>
+                  <Badge variant={dashboard.technical.robotsStatus === 'healthy' ? 'default' : 'destructive'}>
+                    {dashboard.technical.robotsStatus}
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </TabsContent>
 
         <TabsContent value="conversions" className="space-y-6">
-          {selectedDashboard && (
-            <>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Conversion Metrics</CardTitle>
-                  <CardDescription>
-                    Goal completions and revenue tracking
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="mb-6">
-                    <ResponsiveContainer width="100%" height={300}>
-                      <BarChart data={getConversionData()}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Bar dataKey="value" fill="#3b82f6" />
-                      </BarChart>
-                    </ResponsiveContainer>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="text-center p-4 border rounded-lg">
-                      <p className="text-2xl font-bold">{selectedDashboard.conversions.total}</p>
-                      <p className="text-sm text-muted-foreground">Total Conversions</p>
-                    </div>
-                    <div className="text-center p-4 border rounded-lg">
-                      <p className="text-2xl font-bold">{selectedDashboard.conversions.rate.toFixed(2)}%</p>
-                      <p className="text-sm text-muted-foreground">Conversion Rate</p>
-                    </div>
-                    <div className="text-center p-4 border rounded-lg">
-                      <p className="text-2xl font-bold">${formatNumber(selectedDashboard.conversions.revenue)}</p>
-                      <p className="text-sm text-muted-foreground">Total Revenue</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </>
-          )}
+          <Card>
+            <CardHeader>
+              <CardTitle>Conversion Metrics</CardTitle>
+              <CardDescription>
+                Goal completions and revenue tracking
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="text-center p-4 border rounded-lg">
+                  <p className="text-2xl font-bold">{dashboard.conversions.total}</p>
+                  <p className="text-sm text-muted-foreground">Total Conversions</p>
+                </div>
+                <div className="text-center p-4 border rounded-lg">
+                  <p className="text-2xl font-bold">{dashboard.conversions.rate.toFixed(2)}%</p>
+                  <p className="text-sm text-muted-foreground">Conversion Rate</p>
+                </div>
+                <div className="text-center p-4 border rounded-lg">
+                  <p className="text-2xl font-bold">${formatNumber(dashboard.conversions.revenue)}</p>
+                  <p className="text-sm text-muted-foreground">Total Revenue</p>
+                </div>
+              </div>
+              
+              <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="p-3 border rounded-lg">
+                  <p className="text-sm text-muted-foreground">Signups</p>
+                  <p className="text-xl font-semibold">{dashboard.conversions.goalCompletions.signups}</p>
+                </div>
+                <div className="p-3 border rounded-lg">
+                  <p className="text-sm text-muted-foreground">Purchases</p>
+                  <p className="text-xl font-semibold">{dashboard.conversions.goalCompletions.purchases}</p>
+                </div>
+                <div className="p-3 border rounded-lg">
+                  <p className="text-sm text-muted-foreground">Downloads</p>
+                  <p className="text-xl font-semibold">{dashboard.conversions.goalCompletions.downloads}</p>
+                </div>
+                <div className="p-3 border rounded-lg">
+                  <p className="text-sm text-muted-foreground">Contacts</p>
+                  <p className="text-xl font-semibold">{dashboard.conversions.goalCompletions.contacts}</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </TabsContent>
 
         <TabsContent value="create" className="space-y-6">
@@ -788,26 +761,26 @@ export default function AnalyticsDashboardPage() {
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                {dashboards.map((dashboard) => (
+                {dashboards.map((db) => (
                   <div
-                    key={dashboard.id}
+                    key={db.id}
                     className={`p-4 border rounded-lg cursor-pointer transition-colors ${
-                      selectedDashboard?.id === dashboard.id ? 'bg-muted' : 'hover:bg-muted/50'
+                      selectedDashboard?.id === db.id ? 'bg-muted' : 'hover:bg-muted/50'
                     }`}
                     onClick={() => {
-                      setSelectedDashboard(dashboard)
-                      loadReports(dashboard.domain)
+                      setSelectedDashboard(db)
+                      loadReports(db.domain)
                     }}
                   >
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="font-medium">{dashboard.domain}</p>
+                        <p className="font-medium">{db.domain}</p>
                         <p className="text-sm text-muted-foreground">
-                          Traffic: {formatNumber(dashboard.organic.traffic)} • Rankings: {dashboard.rankings.top10} top 10
+                          Traffic: {formatNumber(db.organic.traffic)} • Rankings: {db.rankings.top10} top 10
                         </p>
                       </div>
-                      <Badge variant={dashboard.organic.growth > 0 ? 'default' : 'destructive'}>
-                        {dashboard.organic.growth > 0 ? '+' : ''}{dashboard.organic.growth.toFixed(1)}%
+                      <Badge variant={db.organic.growth > 0 ? 'default' : 'destructive'}>
+                        {db.organic.growth > 0 ? '+' : ''}{db.organic.growth.toFixed(1)}%
                       </Badge>
                     </div>
                   </div>
