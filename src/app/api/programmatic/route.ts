@@ -252,7 +252,7 @@ function generateProgrammaticHTML(page: any, context: any) {
       </div>
       
       <div class="content">
-        ${page.content.split('\n\n').map(paragraph => `<p>${paragraph}</p>`).join('')}
+        ${page.content.split('\n\n').map((paragraph: string) => `<p>${paragraph}</p>`).join('')}
       </div>
       
       <div class="testimonial">
