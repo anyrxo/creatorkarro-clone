@@ -115,7 +115,12 @@ export default async function CountryHomePage({ params }: Props) {
       
       {/* Localized Pricing */}
       <Pricing 
-        pricing={content.pricing}
+        pricing={{
+          amount: `${content.pricing.symbol}${content.pricing.amount}`,
+          originalAmount: `${content.pricing.symbol}${content.pricing.amount + 200}`, // Assuming 200 discount
+          discount: `${content.pricing.symbol}200`,
+          tax: content.pricing.tax
+        }}
         currency={content.currency}
         countryCode={countryCode}
         urgency={content.urgency}
