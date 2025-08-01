@@ -162,14 +162,14 @@ export function TestimonialCard({ name, role, image, testimonial, result, isVisi
 }
 
 // FAQ Card Component - Consistent design
-interface FAQCardProps {
+interface FAQItem {
   question: string
   answer: string
   isVisible: boolean
   staggerClass?: string
 }
 
-export function FAQCard({ question, answer, isVisible, staggerClass = '' }: FAQCardProps) {
+export function FAQCard({ question, answer, isVisible, staggerClass = '' }: FAQItem) {
   return (
     <div className={`bg-zinc-800 border border-zinc-700 rounded-lg p-6 scroll-fade-up ${isVisible ? `visible ${staggerClass}` : ''}`}>
       <h3 className="text-xl font-bold mb-3 text-pink-400">{question}</h3>

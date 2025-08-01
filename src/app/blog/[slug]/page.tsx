@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import BlogComingSoon from './BlogComingSoon'
 
 // List of blog posts that have actual pages
 const existingPosts = [
@@ -4330,6 +4329,6 @@ export default async function BlogPostPage({
     )
   }
 
-  // For all other slugs, show a coming soon page
-  return <BlogComingSoon />
+  // For all other slugs, show not found
+  notFound()
 }

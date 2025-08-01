@@ -43,7 +43,7 @@ export const generateBrowserFingerprint = (): string => {
 export class DevToolsDetector {
   private callbacks: (() => void)[] = [];
   private isOpen = false;
-  private checkInterval: NodeJS.Timeout | null = null;
+  private checkInterval: ReturnType<typeof setInterval> | null = null;
 
   constructor() {
     this.init();
@@ -215,18 +215,12 @@ export const detectBotPatterns = (userAgent: string, headers: any): boolean => {
   
   // Check for automation indicators
   if (typeof window !== 'undefined') {
-    // @ts-ignore
-    if (window.navigator.webdriver ||
-        // @ts-ignore
-        window.callPhantom ||
-        // @ts-ignore
-        window._phantom ||
-        // @ts-ignore
-        window.Buffer ||
-        // @ts-ignore
-        window.emit ||
-        // @ts-ignore
-        window.spawn) {
+    if ((window.navigator as any).webdriver ||
+        (window as any).callPhantom ||
+        (window as any)._phantom ||
+        (window as any).Buffer ||
+        (window as any).emit ||
+        (window as any).spawn) {
       return true;
     }
   }
