@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/config/seo'
+import { generateMassiveSitemaps } from '@/lib/sitemap-generator'
 
 // Blog posts slugs (would typically come from a database or CMS)
 const blogPosts = [
@@ -38,7 +39,7 @@ const courses = [
   'ai-automation-agency'
 ]
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages
   const staticPages = [
     {
@@ -89,5 +90,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...blogPages, ...coursePages]
+  // Get first chunk of massive sitemap (limited to 50,000 for main sitemap)
+  const massiveSitemaps = await generateMassiveSitemaps()
+  const firstChunk = massiveSitemaps[0] || []
+
+  return [...staticPages, ...blogPages, ...coursePages, ...firstChunk.slice(0, 45000)]
 }

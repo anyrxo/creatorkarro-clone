@@ -1,0 +1,61 @@
+{
+  "heroHeadlines": [
+    "Revolutionary Course for Entrepreneurs | Generate Real Results",
+    "Proven Training for Business Owners | Transform Your Business",
+    "Advanced System for Creators | Maximize Success",
+    "Complete Blueprint for Professionals | Generate Real Results",
+    "Ultimate Masterclass for Entrepreneurs | Transform Your Business"
+  ],
+  "valuePropositions": [
+    "Join 127K+ entrepreneurs who have transformed their businesses using our proven strategies",
+    "Join 100K+ business owners who have generated substantial income using our battle-tested techniques",
+    "Join 150K+ creators who have achieved remarkable success using our revolutionary system",
+    "Join thousands of+ professionals who have transformed their businesses using our proven strategies",
+    "Join 127K+ entrepreneurs who have generated substantial income using our battle-tested techniques"
+  ],
+  "contentVariations": [
+    "Our tested company approach helps entrepreneurs achieve achievement through powerful promotion. Additionally, expansion techniques.",
+    "Our verified enterprise method helps entrepreneurs achieve accomplishment through successful advertising. Additionally, development techniques.",
+    "Our validated venture technique helps entrepreneurs achieve triumph through efficient outreach. Additionally, progress techniques.",
+    "Our established organization system helps entrepreneurs achieve victory through productive communication. Additionally, advancement techniques.",
+    "Our confirmed firm plan helps entrepreneurs achieve breakthrough through impactful branding. Additionally, improvement techniques."
+  ],
+  "bulkSamples": [
+    {
+      "id": "content_1",
+      "original": "Learn AI automation to transform your business and generate passive income.",
+      "variations": [
+        "Learn AI automation to transform your company. Additionally, generate passive income.",
+        "Learn AI automation to transform your enterprise. Additionally, generate passive income."
+      ],
+      "scores": {
+        "uniqueness": 31,
+        "readability": 89
+      }
+    },
+    {
+      "id": "content_2",
+      "original": "Instagram growth strategies that actually work for entrepreneurs and creators.",
+      "variations": [
+        "Instagram expansion strategies that actually work for entrepreneurs. Additionally, creators.",
+        "Instagram development strategies that actually work for entrepreneurs. Additionally, creators."
+      ],
+      "scores": {
+        "uniqueness": 46,
+        "readability": 90
+      }
+    },
+    {
+      "id": "content_3",
+      "original": "Digital marketing courses designed for maximum results and real success.",
+      "variations": [
+        "Digital promotion courses designed for maximum results. Additionally, real achievement.",
+        "Digital advertising courses designed for maximum results. Additionally, real accomplishment."
+      ],
+      "scores": {
+        "uniqueness": 57,
+        "readability": 90
+      }
+    }
+  ]
+}

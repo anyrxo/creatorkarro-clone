@@ -1,0 +1,253 @@
+{
+  "timestamp": "2025-08-01T09:03:30.148Z",
+  "summary": {
+    "wheelsDeployed": 4,
+    "totalSites": 432,
+    "totalInvestment": 15085,
+    "averageLinkJuiceFlow": 94,
+    "averageSafetyScore": 88
+  },
+  "wheels": [
+    {
+      "name": "Small Business Link Wheel",
+      "moneysite": "https://localbusiness.com",
+      "pattern": "circular",
+      "tiers": {
+        "tier1": 4,
+        "tier2": 8,
+        "tier3": 16,
+        "buffer": 32,
+        "total": 60
+      },
+      "linkJuiceFlow": 54,
+      "safetyScore": 80,
+      "penaltyRisk": "medium",
+      "setupCost": 2240,
+      "monthlyCost": 336,
+      "projectedImpact": {
+        "linkJuiceFlow": 54,
+        "rankingBoost": "+4-7 positions",
+        "trafficIncrease": "+1620-3240%",
+        "timeToImpact": "30-60 days",
+        "domainAuthorityBoost": "+3 points",
+        "conversionPotential": "108 additional leads/month"
+      },
+      "timeline": {
+        "duration": "8-15 days",
+        "phases": [
+          "Phase 1: Site acquisition and validation",
+          "Phase 2: Content generation and seeding",
+          "Phase 3: Initial link structure setup",
+          "Phase 4: Tier 3 and buffer activation",
+          "Phase 5: Tier 2 integration and optimization",
+          "Phase 6: Tier 1 authority connections",
+          "Phase 7: Money site link placement",
+          "Phase 8: Monitoring and fine-tuning"
+        ],
+        "milestones": [
+          "Day 2: Site preparation complete",
+          "Day 4: Lower tiers activated",
+          "Day 6: Premium tiers connected",
+          "Day 8: Full wheel operational"
+        ]
+      }
+    },
+    {
+      "name": "Enterprise Authority Wheel",
+      "moneysite": "https://enterprise.com",
+      "pattern": "pyramid",
+      "tiers": {
+        "tier1": 8,
+        "tier2": 20,
+        "tier3": 40,
+        "buffer": 80,
+        "total": 148
+      },
+      "linkJuiceFlow": 131,
+      "safetyScore": 95,
+      "penaltyRisk": "low",
+      "setupCost": 5300,
+      "monthlyCost": 795,
+      "projectedImpact": {
+        "linkJuiceFlow": 131,
+        "rankingBoost": "+9-16 positions",
+        "trafficIncrease": "+3930-7860%",
+        "timeToImpact": "45-90 days",
+        "domainAuthorityBoost": "+7 points",
+        "conversionPotential": "262 additional leads/month"
+      },
+      "timeline": {
+        "duration": "19-37 days",
+        "phases": [
+          "Phase 1: Site acquisition and validation",
+          "Phase 2: Content generation and seeding",
+          "Phase 3: Initial link structure setup",
+          "Phase 4: Tier 3 and buffer activation",
+          "Phase 5: Tier 2 integration and optimization",
+          "Phase 6: Tier 1 authority connections",
+          "Phase 7: Money site link placement",
+          "Phase 8: Monitoring and fine-tuning"
+        ],
+        "milestones": [
+          "Day 5: Site preparation complete",
+          "Day 10: Lower tiers activated",
+          "Day 14: Premium tiers connected",
+          "Day 19: Full wheel operational"
+        ]
+      }
+    },
+    {
+      "name": "Aggressive Growth Wheel",
+      "moneysite": "https://startupgrowth.com",
+      "pattern": "hybrid",
+      "tiers": {
+        "tier1": 6,
+        "tier2": 15,
+        "tier3": 30,
+        "buffer": 60,
+        "total": 111
+      },
+      "linkJuiceFlow": 104,
+      "safetyScore": 75,
+      "penaltyRisk": "medium",
+      "setupCost": 3975,
+      "monthlyCost": 596,
+      "projectedImpact": {
+        "linkJuiceFlow": 104,
+        "rankingBoost": "+7-13 positions",
+        "trafficIncrease": "+3120-6240%",
+        "timeToImpact": "21-45 days",
+        "domainAuthorityBoost": "+5 points",
+        "conversionPotential": "208 additional leads/month"
+      },
+      "timeline": {
+        "duration": "14-28 days",
+        "phases": [
+          "Phase 1: Site acquisition and validation",
+          "Phase 2: Content generation and seeding",
+          "Phase 3: Initial link structure setup",
+          "Phase 4: Tier 3 and buffer activation",
+          "Phase 5: Tier 2 integration and optimization",
+          "Phase 6: Tier 1 authority connections",
+          "Phase 7: Money site link placement",
+          "Phase 8: Monitoring and fine-tuning"
+        ],
+        "milestones": [
+          "Day 4: Site preparation complete",
+          "Day 7: Lower tiers activated",
+          "Day 11: Premium tiers connected",
+          "Day 14: Full wheel operational"
+        ]
+      }
+    },
+    {
+      "name": "Maximum Protection Fortress",
+      "moneysite": "https://highvalue.com",
+      "pattern": "fortress",
+      "tiers": {
+        "tier1": 5,
+        "tier2": 12,
+        "tier3": 24,
+        "buffer": 72,
+        "total": 113
+      },
+      "linkJuiceFlow": 87,
+      "safetyScore": 100,
+      "penaltyRisk": "low",
+      "setupCost": 3570,
+      "monthlyCost": 536,
+      "projectedImpact": {
+        "linkJuiceFlow": 87,
+        "rankingBoost": "+6-11 positions",
+        "trafficIncrease": "+2610-5220%",
+        "timeToImpact": "60-120 days",
+        "domainAuthorityBoost": "+4 points",
+        "conversionPotential": "174 additional leads/month"
+      },
+      "timeline": {
+        "duration": "14-28 days",
+        "phases": [
+          "Phase 1: Site acquisition and validation",
+          "Phase 2: Content generation and seeding",
+          "Phase 3: Initial link structure setup",
+          "Phase 4: Tier 3 and buffer activation",
+          "Phase 5: Tier 2 integration and optimization",
+          "Phase 6: Tier 1 authority connections",
+          "Phase 7: Money site link placement",
+          "Phase 8: Monitoring and fine-tuning"
+        ],
+        "milestones": [
+          "Day 4: Site preparation complete",
+          "Day 7: Lower tiers activated",
+          "Day 11: Premium tiers connected",
+          "Day 14: Full wheel operational"
+        ]
+      }
+    }
+  ],
+  "patternAnalysis": {
+    "circular": {
+      "count": 1,
+      "totalFlow": 54,
+      "totalSafety": 80,
+      "totalCost": 2240,
+      "avgFlow": 54,
+      "avgSafety": 80,
+      "avgCost": 2240
+    },
+    "pyramid": {
+      "count": 1,
+      "totalFlow": 131,
+      "totalSafety": 95,
+      "totalCost": 5300,
+      "avgFlow": 131,
+      "avgSafety": 95,
+      "avgCost": 5300
+    },
+    "hybrid": {
+      "count": 1,
+      "totalFlow": 104,
+      "totalSafety": 75,
+      "totalCost": 3975,
+      "avgFlow": 104,
+      "avgSafety": 75,
+      "avgCost": 3975
+    },
+    "fortress": {
+      "count": 1,
+      "totalFlow": 87,
+      "totalSafety": 100,
+      "totalCost": 3570,
+      "avgFlow": 87,
+      "avgSafety": 100,
+      "avgCost": 3570
+    }
+  },
+  "safetyAnalysis": {
+    "averageQualityScore": 88,
+    "riskDistribution": {
+      "medium": 2,
+      "low": 2
+    },
+    "averageDiversification": 84
+  },
+  "investmentAnalysis": {
+    "totalSetup": 15085,
+    "totalMonthly": 2263,
+    "totalAnnual": 27156,
+    "averageSetupPerWheel": 3771,
+    "averageMonthlyPerWheel": 566,
+    "projectedROI": "250-400%",
+    "paybackPeriod": "4-8 months"
+  },
+  "recommendations": [
+    "Use hybrid patterns for optimal balance of performance and safety",
+    "Maintain safety scores above 80 for sustainable long-term results",
+    "Deploy fortress patterns for high-value money sites requiring maximum protection",
+    "Implement gradual link velocity for better penalty risk mitigation",
+    "Monitor tier 1 sites closely as they provide maximum link juice flow",
+    "Diversify content themes to reduce footprint detection risks",
+    "Schedule regular safety audits every 90 days for all active wheels",
+    "Consider pyramid patterns when maximum authority flow is the priority"
+  ]
+}

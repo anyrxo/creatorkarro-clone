@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-08-01T06:56:18.450Z",
+  "testResults": {
+    "basicVariations": {
+      "passed": true,
+      "originalLength": 115,
+      "variationCount": 5,
+      "uniquenessScore": 73,
+      "readabilityScore": 86
+    },
+    "templateGeneration": {
+      "passed": true,
+      "heroHeadlineCount": 5,
+      "valuePropositionCount": 5,
+      "templatesUsed": 2
+    },
+    "bulkGeneration": {
+      "passed": true,
+      "contentPieces": 3,
+      "totalVariations": 9,
+      "averageUniqueness": 45,
+      "averageReadability": 90
+    },
+    "seoOptimization": {
+      "passed": true,
+      "variationCount": 3,
+      "keywordOptimized": true
+    }
+  },
+  "performance": {
+    "totalVariationsGenerated": 14,
+    "averageUniquenessScore": 45,
+    "averageReadabilityScore": 90,
+    "processingTime": "<1s per variation"
+  },
+  "recommendations": [
+    "System is ready for production use",
+    "Consider integrating with OpenAI API for advanced variations",
+    "Implement caching for frequently generated content",
+    "Add industry-specific synonym databases"
+  ]
+}

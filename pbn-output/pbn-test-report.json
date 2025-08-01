@@ -1,0 +1,92 @@
+{
+  "timestamp": "2025-08-01T08:13:31.344Z",
+  "summary": {
+    "networksDeployed": 3,
+    "totalDomains": 16,
+    "totalAuthority": 735,
+    "averageRiskScore": 100,
+    "totalInvestment": 48000
+  },
+  "networks": [
+    {
+      "name": "Small Conservative Network",
+      "moneySite": "techstartup.com",
+      "domains": 5,
+      "totalAuthority": 224,
+      "averageAuthority": 45,
+      "moneyLinks": 10,
+      "contentPosts": 240,
+      "diversificationScore": 100,
+      "riskLevel": "low",
+      "projectedTraffic": 840,
+      "authorityBoost": 18,
+      "investment": 15000
+    },
+    {
+      "name": "Power Authority Network",
+      "moneySite": "marketingagency.com",
+      "domains": 7,
+      "totalAuthority": 319,
+      "averageAuthority": 46,
+      "moneyLinks": 29,
+      "contentPosts": 336,
+      "diversificationScore": 100,
+      "riskLevel": "low",
+      "projectedTraffic": 1196,
+      "authorityBoost": 26,
+      "investment": 21000
+    },
+    {
+      "name": "Aggressive Growth Network",
+      "moneySite": "saasplatform.com",
+      "domains": 4,
+      "totalAuthority": 192,
+      "averageAuthority": 48,
+      "moneyLinks": 26,
+      "contentPosts": 192,
+      "diversificationScore": 100,
+      "riskLevel": "low",
+      "projectedTraffic": 720,
+      "authorityBoost": 15,
+      "investment": 12000
+    }
+  ],
+  "domainPoolAnalysis": {
+    "totalAvailable": 10,
+    "averageAuthority": 43,
+    "averageAge": 9,
+    "nicheDistribution": {
+      "marketing": 1,
+      "business": 2,
+      "technology": 1,
+      "software": 1,
+      "entrepreneurship": 1,
+      "automation": 1,
+      "productivity": 1,
+      "digital-marketing": 1,
+      "seo": 1,
+      "social-media": 1,
+      "content": 2,
+      "startups": 1,
+      "funding": 1,
+      "ecommerce": 1,
+      "online-sales": 1,
+      "creative": 1,
+      "web-development": 1,
+      "coding": 1
+    }
+  },
+  "safetyAnalysis": {
+    "averageDiversification": 100,
+    "riskMitigation": "Multi-registrar, multi-host, multi-theme diversification",
+    "footprintReduction": "Natural content patterns, varied posting schedules",
+    "linkingStrategy": "Gradual velocity with 70% inner linking ratio"
+  },
+  "recommendations": {
+    "optimalNetworkSize": "8-12 domains for balanced risk/reward",
+    "preferredRiskLevel": "moderate for most use cases",
+    "linkVelocity": "medium for natural growth patterns",
+    "contentStrategy": "4-6 posts per domain per month",
+    "maturationTimeline": "90-120 days for full link equity transfer"
+  }
+}

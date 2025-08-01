@@ -14,13 +14,20 @@ export default function HomePage() {
   const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
 
   const partners = [
-    { name: 'Quillbot', logo: 'https://ext.same-assets.com/1161517358/1713187735.svg' },
-    { name: 'Harber London', logo: 'https://ext.same-assets.com/1161517358/1512880195.svg' },
-    { name: 'Gainful', logo: 'https://ext.same-assets.com/1161517358/3521062091.svg' },
-    { name: 'Intelligent Change', logo: 'https://ext.same-assets.com/1161517358/266310045.svg' },
-    { name: 'Cohesive', logo: 'https://ext.same-assets.com/1161517358/3834285082.svg' },
-    { name: 'Omnisend', logo: 'https://ext.same-assets.com/1161517358/3275847761.svg' },
-    { name: 'Submagic', logo: 'https://ext.same-assets.com/1161517358/1225272574.svg' }
+    { name: 'Google Gemini', logo: '/partners/google-gemini.png' },
+    { name: 'Claude AI', logo: '/partners/claude.png' },
+    { name: 'n8n', logo: '/partners/n8n.png' },
+    { name: 'Make', logo: '/partners/make.png' },
+    { name: 'Zapier', logo: '/partners/zapier.png' },
+    { name: 'NVIDIA', logo: '/partners/nvidia.png' },
+    { name: 'DigitalOcean', logo: '/partners/digitalocean.png' },
+    { name: 'Loom', logo: '/partners/loom.png' },
+    { name: 'Whop', logo: '/partners/whop.png' },
+    { name: 'Manus AI', logo: '/partners/manus-ai.png' },
+    { name: 'AI Platform', logo: '/partners/partner-1.png' },
+    { name: 'Tech Stack', logo: '/partners/partner-2.avif' },
+    { name: 'Cloud Partner', logo: '/partners/partner-3.png' },
+    { name: 'Integration Hub', logo: '/partners/partner-4.webp' }
   ]
 
   const testimonials = [

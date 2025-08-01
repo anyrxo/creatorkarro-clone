@@ -1,0 +1,10 @@
+System,Threat Type,Severity,Source,Ranking Drop,Traffic Loss,Status
+https://smallbusiness.com,toxic-backlinks,critical,Competitor negative SEO attack,-11,-21%,detected
+https://smallbusiness.com,content-scraping,high,Mirror site network,-2,-9%,mitigated
+https://growingcompany.com,content-scraping,high,RSS feed scraper network,-3,-9%,mitigated
+https://growingcompany.com,fake-reviews,high,Review bombing campaign,-11,-23%,mitigated
+https://growingcompany.com,ddos,critical,SYN flood attack,-0,-80%,mitigated
+https://establishedbrand.com,toxic-backlinks,critical,Link farm network from Russia,-6,-15%,mitigated
+https://establishedbrand.com,content-scraping,low,Automated content theft bot,-4,-17%,mitigated
+https://enterprise.com,content-scraping,high,RSS feed scraper network,-9,-18%,mitigated
+https://enterprise.com,fake-reviews,high,Competitor sabotage,-4,-30%,mitigated

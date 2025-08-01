@@ -1,0 +1,231 @@
+{
+  "timestamp": "2025-08-01T07:48:03.036Z",
+  "summary": {
+    "totalCampaigns": 3,
+    "totalOpportunities": 225,
+    "totalCompetitors": 8,
+    "totalBudget": 40000,
+    "averageAuthority": 80,
+    "trafficPotential": 1387304
+  },
+  "campaigns": [
+    {
+      "name": "Competitor Analysis Campaign",
+      "competitors": [
+        "zapier.com",
+        "hootsuite.com",
+        "buffer.com"
+      ],
+      "opportunities": 75,
+      "budget": 10000,
+      "metrics": {
+        "averageAuthority": 77,
+        "totalTrafficPotential": 480940,
+        "totalCost": 9961,
+        "averageSuccessRate": 81,
+        "estimatedRankingBoost": 27,
+        "projectedSuccessfulLinks": 11,
+        "roi": 12071
+      },
+      "topOpportunities": [
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "broken-link-building",
+          "cost": 646,
+          "success": 85
+        },
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "resource-page-inclusion",
+          "cost": 656,
+          "success": 79
+        },
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "resource-page-inclusion",
+          "cost": 712,
+          "success": 85
+        },
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "resource-page-inclusion",
+          "cost": 727,
+          "success": 85
+        },
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "broken-link-building",
+          "cost": 677,
+          "success": 79
+        }
+      ]
+    },
+    {
+      "name": "Competitor Analysis Campaign",
+      "competitors": [
+        "mailchimp.com",
+        "hubspot.com",
+        "salesforce.com"
+      ],
+      "opportunities": 120,
+      "budget": 25000,
+      "metrics": {
+        "averageAuthority": 87,
+        "totalTrafficPotential": 737222,
+        "totalCost": 24861,
+        "averageSuccessRate": 23,
+        "estimatedRankingBoost": 30,
+        "projectedSuccessfulLinks": 8,
+        "roi": 7413
+      },
+      "topOpportunities": [
+        {
+          "domain": "marketingland.com",
+          "authority": 82,
+          "strategy": "guest-post-outreach",
+          "cost": 658,
+          "success": 27
+        },
+        {
+          "domain": "marketingland.com",
+          "authority": 82,
+          "strategy": "guest-post-outreach",
+          "cost": 668,
+          "success": 27
+        },
+        {
+          "domain": "marketingland.com",
+          "authority": 82,
+          "strategy": "guest-post-outreach",
+          "cost": 674,
+          "success": 27
+        },
+        {
+          "domain": "marketingland.com",
+          "authority": 82,
+          "strategy": "guest-post-outreach",
+          "cost": 741,
+          "success": 27
+        },
+        {
+          "domain": "marketingland.com",
+          "authority": 82,
+          "strategy": "guest-post-outreach",
+          "cost": 742,
+          "success": 27
+        }
+      ]
+    },
+    {
+      "name": "Competitor Analysis Campaign",
+      "competitors": [
+        "intercom.com",
+        "zendesk.com"
+      ],
+      "opportunities": 30,
+      "budget": 5000,
+      "metrics": {
+        "averageAuthority": 76,
+        "totalTrafficPotential": 169142,
+        "totalCost": 4909,
+        "averageSuccessRate": 83,
+        "estimatedRankingBoost": 27,
+        "projectedSuccessfulLinks": 6,
+        "roi": 8614
+      },
+      "topOpportunities": [
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "broken-link-building",
+          "cost": 592,
+          "success": 79
+        },
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "broken-link-building",
+          "cost": 606,
+          "success": 79
+        },
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "broken-link-building",
+          "cost": 699,
+          "success": 85
+        },
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "broken-link-building",
+          "cost": 714,
+          "success": 85
+        },
+        {
+          "domain": "business2community.com",
+          "authority": 74,
+          "strategy": "broken-link-building",
+          "cost": 730,
+          "success": 85
+        }
+      ]
+    }
+  ],
+  "strategyAnalysis": [
+    {
+      "strategy": "guest-post-outreach",
+      "taskCount": 33,
+      "averageSuccess": 23,
+      "averageCost": 753,
+      "averageAuthority": 83,
+      "totalBudget": 24861
+    },
+    {
+      "strategy": "broken-link-building",
+      "taskCount": 12,
+      "averageSuccess": 82,
+      "averageCost": 695,
+      "averageAuthority": 74,
+      "totalBudget": 8341
+    },
+    {
+      "strategy": "resource-page-inclusion",
+      "taskCount": 6,
+      "averageSuccess": 82,
+      "averageCost": 724,
+      "averageAuthority": 74,
+      "totalBudget": 4346
+    },
+    {
+      "strategy": "unlinked-mention-reclaim",
+      "taskCount": 3,
+      "averageSuccess": 81,
+      "averageCost": 728,
+      "averageAuthority": 74,
+      "totalBudget": 2183
+    }
+  ],
+  "projectedResults": {
+    "successfulLinks": 79,
+    "monthlyTraffic": 1387304,
+    "rankingImprovement": 28,
+    "authorityBoost": 16,
+    "roi": 8671
+  },
+  "recommendations": {
+    "topStrategies": [
+      "resource-page-inclusion",
+      "broken-link-building",
+      "unlinked-mention-reclaim"
+    ],
+    "budgetOptimization": "Focus 24000 on high-authority targets (DA80+)",
+    "timeframe": "4-8 weeks for full campaign completion",
+    "scalingPotential": "Can scale to 450+ opportunities with increased budget"
+  }
+}

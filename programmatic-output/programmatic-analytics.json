@@ -1,0 +1,124 @@
+{
+  "generated": "2025-08-01T06:50:47.517Z",
+  "totalPages": 1000,
+  "statistics": {
+    "keywords": {
+      "count": 2,
+      "top": [
+        {
+          "keyword": "ai-automation",
+          "count": 924
+        },
+        {
+          "keyword": "instagram-growth",
+          "count": 76
+        }
+      ]
+    },
+    "locations": {
+      "count": 77,
+      "top": [
+        {
+          "location": "new-york",
+          "count": 24
+        },
+        {
+          "location": "los-angeles",
+          "count": 24
+        },
+        {
+          "location": "chicago",
+          "count": 24
+        },
+        {
+          "location": "houston",
+          "count": 24
+        },
+        {
+          "location": "phoenix",
+          "count": 24
+        },
+        {
+          "location": "philadelphia",
+          "count": 24
+        },
+        {
+          "location": "san-antonio",
+          "count": 16
+        },
+        {
+          "location": "san-diego",
+          "count": 12
+        },
+        {
+          "location": "dallas",
+          "count": 12
+        },
+        {
+          "location": "san-jose",
+          "count": 12
+        }
+      ]
+    },
+    "modifiers": {
+      "count": 12,
+      "distribution": [
+        {
+          "modifier": "course",
+          "count": 84
+        },
+        {
+          "modifier": "training",
+          "count": 84
+        },
+        {
+          "modifier": "bootcamp",
+          "count": 84
+        },
+        {
+          "modifier": "masterclass",
+          "count": 84
+        },
+        {
+          "modifier": "workshop",
+          "count": 83
+        },
+        {
+          "modifier": "certification",
+          "count": 83
+        },
+        {
+          "modifier": "program",
+          "count": 83
+        },
+        {
+          "modifier": "academy",
+          "count": 83
+        },
+        {
+          "modifier": "school",
+          "count": 83
+        },
+        {
+          "modifier": "tutorial",
+          "count": 83
+        },
+        {
+          "modifier": "guide",
+          "count": 83
+        },
+        {
+          "modifier": "blueprint",
+          "count": 83
+        }
+      ]
+    }
+  },
+  "seoMetrics": {
+    "averageTitleLength": 50,
+    "averageDescriptionLength": 127,
+    "averageKeywordCount": 9,
+    "uniqueUrls": 1000,
+    "estimatedIndexablePages": 850
+  }
+}

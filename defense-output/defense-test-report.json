@@ -1,0 +1,166 @@
+{
+  "timestamp": "2025-08-01T09:13:07.440Z",
+  "summary": {
+    "systemsDeployed": 4,
+    "totalThreats": 9,
+    "totalMitigated": 8,
+    "overallSuccessRate": 89,
+    "totalCost": 10000,
+    "averageHealthScore": 90
+  },
+  "systems": [
+    {
+      "domain": "https://smallbusiness.com",
+      "protectionLevel": "basic",
+      "healthScore": 82,
+      "backlinkProfile": {
+        "total": 10904,
+        "healthy": 7963,
+        "suspicious": 1897,
+        "toxic": 1044,
+        "disavowed": 730
+      },
+      "threatsDetected": 2,
+      "threatsMitigated": 1,
+      "mitigationRate": 50,
+      "monthlyCost": 500,
+      "effectiveness": 75
+    },
+    {
+      "domain": "https://growingcompany.com",
+      "protectionLevel": "enhanced",
+      "healthScore": 96,
+      "backlinkProfile": {
+        "total": 23463,
+        "healthy": 21634,
+        "suspicious": 1584,
+        "toxic": 245,
+        "disavowed": 171
+      },
+      "threatsDetected": 3,
+      "threatsMitigated": 3,
+      "mitigationRate": 100,
+      "monthlyCost": 1500,
+      "effectiveness": 85
+    },
+    {
+      "domain": "https://establishedbrand.com",
+      "protectionLevel": "fortress",
+      "healthScore": 94,
+      "backlinkProfile": {
+        "total": 16687,
+        "healthy": 15592,
+        "suspicious": 332,
+        "toxic": 763,
+        "disavowed": 534
+      },
+      "threatsDetected": 2,
+      "threatsMitigated": 2,
+      "mitigationRate": 100,
+      "monthlyCost": 3000,
+      "effectiveness": 92
+    },
+    {
+      "domain": "https://enterprise.com",
+      "protectionLevel": "military-grade",
+      "healthScore": 89,
+      "backlinkProfile": {
+        "total": 24011,
+        "healthy": 19186,
+        "suspicious": 4199,
+        "toxic": 626,
+        "disavowed": 438
+      },
+      "threatsDetected": 2,
+      "threatsMitigated": 2,
+      "mitigationRate": 100,
+      "monthlyCost": 5000,
+      "effectiveness": 98
+    }
+  ],
+  "threatAnalysis": {
+    "distribution": {
+      "toxic-backlinks": {
+        "count": 2,
+        "mitigated": 1,
+        "mitigationRate": 50,
+        "avgSeverity": "varied"
+      },
+      "content-scraping": {
+        "count": 4,
+        "mitigated": 4,
+        "mitigationRate": 100,
+        "avgSeverity": "varied"
+      },
+      "fake-reviews": {
+        "count": 2,
+        "mitigated": 2,
+        "mitigationRate": 100,
+        "avgSeverity": "varied"
+      },
+      "ddos": {
+        "count": 1,
+        "mitigated": 1,
+        "mitigationRate": 100,
+        "avgSeverity": "varied"
+      }
+    },
+    "severityBreakdown": {
+      "low": 1,
+      "medium": 0,
+      "high": 5,
+      "critical": 3
+    },
+    "topSources": {
+      "Competitor negative SEO attack": 1,
+      "Mirror site network": 1,
+      "RSS feed scraper network": 2,
+      "Review bombing campaign": 1,
+      "SYN flood attack": 1,
+      "Link farm network from Russia": 1,
+      "Automated content theft bot": 1,
+      "Competitor sabotage": 1
+    }
+  },
+  "costBenefitAnalysis": [
+    {
+      "domain": "https://smallbusiness.com",
+      "protectionLevel": "basic",
+      "monthlyCost": 500,
+      "threatsBlocked": 1,
+      "costPerThreat": 500,
+      "roi": "Positive"
+    },
+    {
+      "domain": "https://growingcompany.com",
+      "protectionLevel": "enhanced",
+      "monthlyCost": 1500,
+      "threatsBlocked": 3,
+      "costPerThreat": 500,
+      "roi": "Positive"
+    },
+    {
+      "domain": "https://establishedbrand.com",
+      "protectionLevel": "fortress",
+      "monthlyCost": 3000,
+      "threatsBlocked": 2,
+      "costPerThreat": 1500,
+      "roi": "Positive"
+    },
+    {
+      "domain": "https://enterprise.com",
+      "protectionLevel": "military-grade",
+      "monthlyCost": 5000,
+      "threatsBlocked": 2,
+      "costPerThreat": 2500,
+      "roi": "Positive"
+    }
+  ],
+  "recommendations": [
+    "Schedule monthly security audits for all protected domains",
+    "Maintain updated disavow files with weekly reviews",
+    "Enable real-time alerts for critical threats",
+    "Implement content protection measures proactively",
+    "Monitor brand mentions across all platforms"
+  ]
+}

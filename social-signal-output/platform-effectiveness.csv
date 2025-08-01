@@ -1,0 +1,8 @@
+Platform,Authority,Signal Weight,Accounts,Actions,Indexing Speed,Effectiveness
+twitter,95,8.5,50,786,0.5h,81
+reddit,91,7.8,25,786,2h,71
+linkedin,98,9.2,15,786,4h,90
+facebook,96,8,30,280,6h,77
+pinterest,83,6.5,40,280,12h,54
+hackernews,92,8.8,10,444,1h,81
+youtube,100,9.5,20,444,2h,95

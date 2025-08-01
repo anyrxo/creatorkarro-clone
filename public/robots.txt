@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Crawl-delay: 0
+
+# Block competitor crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SEMrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Speed up Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+Sitemap: https://iimagined.ai/sitemap.xml
+Sitemap: https://iimagined.ai/sitemap-index.xml
+Sitemap: https://iimagined.ai/news-sitemap.xml
+Sitemap: https://iimagined.ai/video-sitemap.xml
+Sitemap: https://iimagined.ai/image-sitemap.xml

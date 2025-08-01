@@ -1,0 +1,214 @@
+{
+  "timestamp": "2025-08-01T08:05:56.693Z",
+  "summary": {
+    "totalCampaigns": 3,
+    "totalActions": 3806,
+    "totalAccounts": 370,
+    "totalReach": 570900,
+    "averageSignalStrength": 84,
+    "totalBudget": 15500
+  },
+  "campaigns": [
+    {
+      "name": "Conservative Viral Campaign",
+      "intensity": "conservative",
+      "platforms": [
+        "twitter",
+        "reddit",
+        "linkedin"
+      ],
+      "targetUrls": 2,
+      "metrics": {
+        "totalActions": 186,
+        "estimatedReach": 27900,
+        "signalStrength": 85,
+        "indexingBoost": 51,
+        "completionRate": 95,
+        "averageAuthority": 95,
+        "seoImpact": 68
+      },
+      "velocity": {
+        "actionsPerHour": 3,
+        "peakHours": [
+          9,
+          12,
+          15,
+          18,
+          20
+        ],
+        "distributionPattern": "natural"
+      },
+      "budget": 2500,
+      "contentVariations": 23
+    },
+    {
+      "name": "Moderate Multi-Platform Campaign",
+      "intensity": "moderate",
+      "platforms": [
+        "twitter",
+        "reddit",
+        "linkedin",
+        "facebook",
+        "pinterest"
+      ],
+      "targetUrls": 4,
+      "metrics": {
+        "totalActions": 1400,
+        "estimatedReach": 210000,
+        "signalStrength": 80,
+        "indexingBoost": 48,
+        "completionRate": 95,
+        "averageAuthority": 93,
+        "seoImpact": 64
+      },
+      "velocity": {
+        "actionsPerHour": 29,
+        "peakHours": [
+          9,
+          12,
+          15,
+          18,
+          20
+        ],
+        "distributionPattern": "viral"
+      },
+      "budget": 5000,
+      "contentVariations": 37
+    },
+    {
+      "name": "Aggressive Tech Signal Boost",
+      "intensity": "aggressive",
+      "platforms": [
+        "hackernews",
+        "reddit",
+        "twitter",
+        "linkedin",
+        "youtube"
+      ],
+      "targetUrls": 3,
+      "metrics": {
+        "totalActions": 2220,
+        "estimatedReach": 333000,
+        "signalStrength": 88,
+        "indexingBoost": 53,
+        "completionRate": 95,
+        "averageAuthority": 95,
+        "seoImpact": 70
+      },
+      "velocity": {
+        "actionsPerHour": 62,
+        "peakHours": [
+          9,
+          12,
+          15,
+          18,
+          20
+        ],
+        "distributionPattern": "aggressive"
+      },
+      "budget": 8000,
+      "contentVariations": 34
+    }
+  ],
+  "platformAnalysis": [
+    {
+      "platform": "youtube",
+      "authority": 100,
+      "signalWeight": 9.5,
+      "accounts": 20,
+      "indexingSpeed": 2,
+      "campaignUsage": 1,
+      "totalActions": 444,
+      "effectiveness": 95
+    },
+    {
+      "platform": "linkedin",
+      "authority": 98,
+      "signalWeight": 9.2,
+      "accounts": 15,
+      "indexingSpeed": 4,
+      "campaignUsage": 3,
+      "totalActions": 786,
+      "effectiveness": 90
+    },
+    {
+      "platform": "twitter",
+      "authority": 95,
+      "signalWeight": 8.5,
+      "accounts": 50,
+      "indexingSpeed": 0.5,
+      "campaignUsage": 3,
+      "totalActions": 786,
+      "effectiveness": 81
+    },
+    {
+      "platform": "hackernews",
+      "authority": 92,
+      "signalWeight": 8.8,
+      "accounts": 10,
+      "indexingSpeed": 1,
+      "campaignUsage": 1,
+      "totalActions": 444,
+      "effectiveness": 81
+    },
+    {
+      "platform": "facebook",
+      "authority": 96,
+      "signalWeight": 8,
+      "accounts": 30,
+      "indexingSpeed": 6,
+      "campaignUsage": 1,
+      "totalActions": 280,
+      "effectiveness": 77
+    },
+    {
+      "platform": "reddit",
+      "authority": 91,
+      "signalWeight": 7.8,
+      "accounts": 25,
+      "indexingSpeed": 2,
+      "campaignUsage": 3,
+      "totalActions": 786,
+      "effectiveness": 71
+    },
+    {
+      "platform": "pinterest",
+      "authority": 83,
+      "signalWeight": 6.5,
+      "accounts": 40,
+      "indexingSpeed": 12,
+      "campaignUsage": 1,
+      "totalActions": 280,
+      "effectiveness": 54
+    }
+  ],
+  "projectedResults": {
+    "successfulActions": 3502,
+    "organicAmplification": 142725,
+    "indexingAcceleration": 50,
+    "seoSignalBoost": 67,
+    "viralPotential": "Medium"
+  },
+  "recommendations": {
+    "optimalIntensity": "moderate",
+    "bestPlatforms": [
+      "youtube",
+      "linkedin",
+      "hackernews",
+      "twitter"
+    ],
+    "budgetAllocation": {
+      "highAuthority": "60% - LinkedIn, YouTube, Twitter",
+      "broadReach": "25% - Facebook, Reddit, Pinterest",
+      "niche": "15% - Hacker News, Tumblr, specialized platforms"
+    },
+    "timeline": "48-72 hours for optimal engagement distribution",
+    "riskMitigation": "Use conservative intensity for brand safety, moderate for balanced growth"
+  },
+  "contentStrategy": {
+    "commentsGenerated": 42,
+    "shareTextsGenerated": 52,
+    "hashtagsUtilized": 12,
+    "personalizedContent": "Platform-specific messaging with contextual relevance"
+  }
+}

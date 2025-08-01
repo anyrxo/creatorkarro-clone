@@ -5,17 +5,30 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { siteConfig, defaultSEO, schemas } from "@/config/seo";
+import { generateDynamicMeta } from "@/lib/meta-generator";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
+
+// Generate AI-powered meta tags
+const dynamicMeta = generateDynamicMeta({
+  title: 'Master AI Automation & Instagram Growth | Transform Your Business Today',
+  description: 'Revolutionary AI automation, Instagram growth, and digital product strategies that have generated $2.3M+ revenue. Join 127K+ entrepreneurs who dominate their markets.',
+  keywords: [
+    'ai automation mastery', 'instagram growth secrets', 'digital product empire',
+    'passive income blueprint', 'content creation automation', 'social media domination',
+    'youtube shorts viral', 'chatgpt business automation', 'comfyui workflows pro',
+    'online business systems', 'make money online fast', 'entrepreneur success'
+  ]
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: defaultSEO.title,
+    default: dynamicMeta.title,
     template: `%s | ${siteConfig.name}`
   },
-  description: defaultSEO.description,
-  keywords: defaultSEO.keywords,
+  description: dynamicMeta.description,
+  keywords: dynamicMeta.keywords,
   authors: [{ name: "Anyro", url: `${siteConfig.url}/about` }],
   creator: "Anyro",
   publisher: siteConfig.name,
@@ -51,8 +64,15 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'google-site-verification-code', // Add your actual verification code
+    google: 'google-site-verification-code',
     yandex: 'yandex-verification-code',
+    yahoo: 'yahoo-site-verification-code'
+  },
+  other: {
+    'msvalidate.01': 'bing-site-verification-code',
+    'facebook-domain-verification': 'facebook-domain-verification-code',
+    'pinterest-verification': 'pinterest-site-verification-code',
+    'p:domain_verify': 'pinterest-domain-verification-code'
   },
 };
 

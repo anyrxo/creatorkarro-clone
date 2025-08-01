@@ -1,0 +1,147 @@
+{
+  "timestamp": "2025-08-01T08:47:26.944Z",
+  "summary": {
+    "campaignsDeployed": 3,
+    "totalBots": 13,
+    "totalClicks": 1638,
+    "averageCTRImprovement": 0.06666666666666667,
+    "averageDetectionRate": 0.02888888888888889,
+    "totalBudget": 48000
+  },
+  "campaigns": [
+    {
+      "name": "Quick CTR Boost Campaign",
+      "targetUrl": "https://businesstools.com/automation",
+      "keywords": [
+        "business automation",
+        "workflow tools",
+        "productivity software"
+      ],
+      "bots": 4,
+      "dailyClicks": 60,
+      "targetCTR": 0.06,
+      "organicCTR": 0.02,
+      "totalClicks": 376,
+      "averageCTR": 0.051,
+      "rankingImprovement": 8,
+      "detectionEvents": 0,
+      "geographic": [
+        "US",
+        "CA"
+      ],
+      "searchEngines": [
+        "google",
+        "bing"
+      ]
+    },
+    {
+      "name": "Aggressive Local Business Campaign",
+      "targetUrl": "https://localservices.com/marketing",
+      "keywords": [
+        "local marketing",
+        "small business seo",
+        "digital marketing agency"
+      ],
+      "bots": 3,
+      "dailyClicks": 120,
+      "targetCTR": 0.12,
+      "organicCTR": 0.02,
+      "totalClicks": 770,
+      "averageCTR": 0.102,
+      "rankingImprovement": 15,
+      "detectionEvents": 0,
+      "geographic": [
+        "US"
+      ],
+      "searchEngines": [
+        "google",
+        "bing"
+      ]
+    },
+    {
+      "name": "International Brand Authority Campaign",
+      "targetUrl": "https://techsolution.com/enterprise",
+      "keywords": [
+        "enterprise software",
+        "business solutions",
+        "tech platform"
+      ],
+      "bots": 6,
+      "dailyClicks": 80,
+      "targetCTR": 0.08,
+      "organicCTR": 0.02,
+      "totalClicks": 492,
+      "averageCTR": 0.068,
+      "rankingImprovement": 10,
+      "detectionEvents": 1,
+      "geographic": [
+        "US",
+        "CA",
+        "GB",
+        "AU",
+        "DE"
+      ],
+      "searchEngines": [
+        "google",
+        "bing",
+        "yahoo"
+      ]
+    }
+  ],
+  "botNetworkAnalysis": {
+    "totalBots": 10,
+    "activeBots": 10,
+    "botTypes": {
+      "residential": 5,
+      "datacenter": 2,
+      "mobile": 3
+    },
+    "geographic": {
+      "countries": [
+        "US",
+        "UK",
+        "DE",
+        "FR",
+        "CA",
+        "NL",
+        "SG",
+        "AU"
+      ],
+      "coverage": 8
+    },
+    "performance": {
+      "averageSuccessRate": 0.901,
+      "averageDetectionRate": 0.044
+    }
+  },
+  "safetyAnalysis": {
+    "averageDetectionRate": 0.02888888888888889,
+    "botDiversification": "Multi-country, multi-device, multi-proxy diversification",
+    "behaviorNaturalness": "Human-like patterns with randomized dwell times",
+    "antiDetectionFeatures": [
+      "Residential proxy rotation",
+      "Device fingerprint variation",
+      "Natural behavior simulation",
+      "Geographic distribution",
+      "Time zone appropriate scheduling"
+    ]
+  },
+  "projectedImpact": {
+    "ctrImprovement": "+6.67%",
+    "rankingBoost": "+33 positions average",
+    "trafficIncrease": "+2,457 visits",
+    "conversionPotential": "49 potential conversions",
+    "timeToImpact": "14-30 days for full optimization"
+  },
+  "recommendations": {
+    "optimalCTRTarget": "6-12% for most industries",
+    "recommendedIntensity": "moderate for balanced risk/reward",
+    "idealCampaignDuration": "30-45 days for sustainable results",
+    "bestPractices": [
+      "Use natural-growth pattern for long-term campaigns",
+      "Target 8-12 countries for maximum diversification",
+      "Monitor detection rates and adjust intensity accordingly",
+      "Combine with content optimization for best results"
+    ]
+  }
+}

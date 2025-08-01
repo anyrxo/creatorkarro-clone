@@ -1,0 +1,11 @@
+Bot ID,Type,Country,City,Device,OS,Success Rate,Detection Rate,Total Clicks,Status
+ctr-bot-1,residential,US,Los Angeles,desktop,Windows 11,95.0%,2.00%,454,active
+ctr-bot-2,residential,US,New York,mobile,iOS 17,92.0%,3.00%,420,active
+ctr-bot-3,residential,US,Austin,desktop,macOS Sonoma,96.0%,1.00%,441,active
+ctr-bot-4,residential,UK,London,desktop,Windows 11,91.0%,4.00%,0,active
+ctr-bot-5,mobile,DE,Berlin,mobile,Android 14,89.0%,5.00%,79,active
+ctr-bot-6,residential,FR,Paris,tablet,iPadOS 17,93.0%,3.00%,0,active
+ctr-bot-7,mobile,CA,Toronto,mobile,iOS 17,87.0%,6.00%,164,active
+ctr-bot-8,datacenter,NL,Amsterdam,desktop,Ubuntu 22.04,84.0%,8.00%,0,active
+ctr-bot-9,datacenter,SG,Singapore,desktop,Windows 11,86.0%,7.00%,0,active
+ctr-bot-10,mobile,AU,Sydney,mobile,Android 14,88.0%,5.00%,80,active

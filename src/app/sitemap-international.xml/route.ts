@@ -1,0 +1,110 @@
+// International Sitemap Generator - Multi-country SEO
+import { NextResponse } from 'next/server'
+import { INTERNATIONAL_MARKETS, generateInternationalSitemap } from '@/lib/international-seo'
+
+export async function GET() {
+  const baseUrls = [
+    '/',
+    '/courses',
+    '/blog',
+    '/about',
+    '/resources',
+    '/instagram-ignited',
+    '/contact',
+    '/privacy',
+    '/terms'
+  ]
+  
+  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+`
+
+  // Generate URLs for all countries and languages
+  baseUrls.forEach(path => {
+    Object.entries(INTERNATIONAL_MARKETS).forEach(([countryCode, config]) => {
+      const url = countryCode === 'US' 
+        ? `https://iimagined.ai${path}`
+        : `https://iimagined.ai/${countryCode.toLowerCase()}${path}`
+      
+      // Add main URL
+      sitemap += `
+  <url>
+    <loc>${url}</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>`
+      
+      // Add hreflang alternates for this URL
+      Object.entries(INTERNATIONAL_MARKETS).forEach(([altCountryCode, altConfig]) => {
+        const altUrl = altCountryCode === 'US' 
+          ? `https://iimagined.ai${path}`
+          : `https://iimagined.ai/${altCountryCode.toLowerCase()}${path}`
+        
+        sitemap += `
+    <xhtml:link rel="alternate" hreflang="${altConfig.hreflang}" href="${altUrl}" />`
+      })
+      
+      // Add x-default
+      sitemap += `
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iimagined.ai${path}" />
+  </url>`
+    })
+  })
+  
+  // Add programmatic international pages
+  const keywords = [
+    'ai-automation', 'instagram-growth', 'digital-marketing', 'passive-income',
+    'chatgpt-business', 'social-media-marketing', 'content-creation',
+    'youtube-automation', 'affiliate-marketing', 'online-business'
+  ]
+  
+  const cities = [
+    'new-york', 'los-angeles', 'chicago', 'houston', 'phoenix', 'philadelphia',
+    'san-antonio', 'san-diego', 'dallas', 'san-jose', 'austin', 'jacksonville',
+    'toronto', 'vancouver', 'montreal', 'calgary', 'ottawa', 'edmonton',
+    'london', 'birmingham', 'manchester', 'glasgow', 'liverpool', 'leeds',
+    'sydney', 'melbourne', 'brisbane', 'perth', 'adelaide', 'gold-coast',
+    'berlin', 'hamburg', 'munich', 'cologne', 'frankfurt', 'stuttgart',
+    'paris', 'marseille', 'lyon', 'toulouse', 'nice', 'nantes',
+    'madrid', 'barcelona', 'valencia', 'seville', 'zaragoza', 'bilbao',
+    'rome', 'milan', 'naples', 'turin', 'palermo', 'genoa',
+    'sao-paulo', 'rio-janeiro', 'brasilia', 'salvador', 'fortaleza', 'belo-horizonte',
+    'mexico-city', 'guadalajara', 'monterrey', 'puebla', 'tijuana', 'leon',
+    'mumbai', 'delhi', 'bangalore', 'hyderabad', 'chennai', 'kolkata',
+    'tokyo', 'osaka', 'nagoya', 'sapporo', 'fukuoka', 'kobe',
+    'singapore', 'kuala-lumpur', 'jakarta', 'bangkok', 'manila', 'hanoi'
+  ]
+  
+  const modifiers = [
+    'course', 'training', 'bootcamp', 'masterclass', 'workshop', 'certification',
+    'program', 'academy', 'school', 'university', 'tutorial', 'guide'
+  ]
+  
+  // Generate programmatic URLs (sample - limit to prevent sitemap being too large)
+  keywords.slice(0, 5).forEach(keyword => {
+    cities.slice(0, 20).forEach(city => {
+      modifiers.slice(0, 3).forEach(modifier => {
+        const programmaticUrl = `https://iimagined.ai/programmatic/${keyword}/${city}/${modifier}`
+        
+        sitemap += `
+  <url>
+    <loc>${programmaticUrl}</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`
+      })
+    })
+  })
+  
+  sitemap += `
+</urlset>`
+
+  return new NextResponse(sitemap, {
+    headers: {
+      'Content-Type': 'application/xml',
+      'Cache-Control': 'public, max-age=86400, stale-while-revalidate=43200'
+    }
+  })
+}

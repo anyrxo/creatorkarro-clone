@@ -1,0 +1,325 @@
+{
+  "timestamp": "2025-08-01T07:07:23.395Z",
+  "summary": {
+    "totalClusters": 5,
+    "totalPages": 100,
+    "totalInternalLinks": 354,
+    "averageAuthority": 1412,
+    "totalOpportunities": 35
+  },
+  "clusterDetails": [
+    {
+      "topic": "ai automation business",
+      "pillarTitle": "The Complete Guide to Ai Automation Business | 2024",
+      "clusterPages": 25,
+      "authorityScore": 1795,
+      "internalLinks": 108,
+      "competitorGaps": 7,
+      "topKeywords": [
+        {
+          "keyword": "top ai automation business",
+          "volume": 2028,
+          "difficulty": 21
+        },
+        {
+          "keyword": "how to ai automation business",
+          "volume": 2002,
+          "difficulty": 52
+        },
+        {
+          "keyword": "best ai automation business",
+          "volume": 1891,
+          "difficulty": 57
+        },
+        {
+          "keyword": "complete ai automation business",
+          "volume": 1883,
+          "difficulty": 59
+        },
+        {
+          "keyword": "complete ai automation business",
+          "volume": 1634,
+          "difficulty": 23
+        }
+      ]
+    },
+    {
+      "topic": "instagram growth strategies",
+      "pillarTitle": "How to Dominate Instagram Growth Strategies | Proven System",
+      "clusterPages": 25,
+      "authorityScore": 1872,
+      "internalLinks": 108,
+      "competitorGaps": 7,
+      "topKeywords": [
+        {
+          "keyword": "best instagram growth strategies",
+          "volume": 2016,
+          "difficulty": 31
+        },
+        {
+          "keyword": "how to instagram growth strategies",
+          "volume": 1712,
+          "difficulty": 46
+        },
+        {
+          "keyword": "step by step instagram growth strategies",
+          "volume": 1655,
+          "difficulty": 22
+        },
+        {
+          "keyword": "top instagram growth strategies",
+          "volume": 1597,
+          "difficulty": 31
+        },
+        {
+          "keyword": "step by step instagram growth strategies",
+          "volume": 1566,
+          "difficulty": 66
+        }
+      ]
+    },
+    {
+      "topic": "digital marketing automation",
+      "pillarTitle": "Master Digital Marketing Automation: Ultimate Guide",
+      "clusterPages": 15,
+      "authorityScore": 1096,
+      "internalLinks": 46,
+      "competitorGaps": 7,
+      "topKeywords": [
+        {
+          "keyword": "best digital marketing automation",
+          "volume": 2008,
+          "difficulty": 42
+        },
+        {
+          "keyword": "step by step digital marketing automation",
+          "volume": 1668,
+          "difficulty": 43
+        },
+        {
+          "keyword": "ultimate guide digital marketing automation",
+          "volume": 1629,
+          "difficulty": 36
+        },
+        {
+          "keyword": "complete digital marketing automation",
+          "volume": 1400,
+          "difficulty": 77
+        },
+        {
+          "keyword": "top digital marketing automation",
+          "volume": 1283,
+          "difficulty": 69
+        }
+      ]
+    },
+    {
+      "topic": "passive income systems",
+      "pillarTitle": "Passive Income Systems Strategies That Actually Work",
+      "clusterPages": 15,
+      "authorityScore": 1141,
+      "internalLinks": 46,
+      "competitorGaps": 7,
+      "topKeywords": [
+        {
+          "keyword": "best passive income systems",
+          "volume": 1722,
+          "difficulty": 24
+        },
+        {
+          "keyword": "complete passive income systems",
+          "volume": 1617,
+          "difficulty": 74
+        },
+        {
+          "keyword": "top passive income systems",
+          "volume": 1443,
+          "difficulty": 55
+        },
+        {
+          "keyword": "best passive income systems",
+          "volume": 1255,
+          "difficulty": 58
+        },
+        {
+          "keyword": "ultimate guide passive income systems",
+          "volume": 1058,
+          "difficulty": 26
+        }
+      ]
+    },
+    {
+      "topic": "online course creation",
+      "pillarTitle": "Online Course Creation Strategies That Actually Work",
+      "clusterPages": 15,
+      "authorityScore": 1155,
+      "internalLinks": 46,
+      "competitorGaps": 7,
+      "topKeywords": [
+        {
+          "keyword": "complete online course creation",
+          "volume": 1293,
+          "difficulty": 25
+        },
+        {
+          "keyword": "ultimate guide online course creation",
+          "volume": 1236,
+          "difficulty": 28
+        },
+        {
+          "keyword": "best online course creation",
+          "volume": 1053,
+          "difficulty": 21
+        },
+        {
+          "keyword": "how to online course creation",
+          "volume": 1045,
+          "difficulty": 66
+        },
+        {
+          "keyword": "how does online course creation",
+          "volume": 974,
+          "difficulty": 44
+        }
+      ]
+    }
+  ],
+  "linkStructure": {
+    "distribution": {
+      "pillar-to-cluster": 95,
+      "cluster-to-pillar": 95,
+      "cluster-to-cluster": 164
+    },
+    "averageRelevance": 0.75,
+    "contextualStrength": "High"
+  },
+  "seoOpportunities": {
+    "topGaps": [
+      {
+        "keyword": "passive income systems masterclass",
+        "difficulty": 44,
+        "opportunity": 94,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about passive income systems masterclass"
+      },
+      {
+        "keyword": "digital marketing automation masterclass",
+        "difficulty": 35,
+        "opportunity": 93,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about digital marketing automation masterclass"
+      },
+      {
+        "keyword": "learn digital marketing automation",
+        "difficulty": 50,
+        "opportunity": 93,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about learn digital marketing automation"
+      },
+      {
+        "keyword": "passive income systems training",
+        "difficulty": 26,
+        "opportunity": 91,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about passive income systems training"
+      },
+      {
+        "keyword": "instagram growth strategies masterclass",
+        "difficulty": 32,
+        "opportunity": 90,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about instagram growth strategies masterclass"
+      },
+      {
+        "keyword": "passive income systems course",
+        "difficulty": 52,
+        "opportunity": 89,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about passive income systems course"
+      },
+      {
+        "keyword": "instagram growth strategies course",
+        "difficulty": 31,
+        "opportunity": 88,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about instagram growth strategies course"
+      },
+      {
+        "keyword": "passive income systems for beginners",
+        "difficulty": 66,
+        "opportunity": 85,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about passive income systems for beginners"
+      },
+      {
+        "keyword": "online course creation for beginners",
+        "difficulty": 36,
+        "opportunity": 84,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about online course creation for beginners"
+      },
+      {
+        "keyword": "instagram growth strategies bootcamp",
+        "difficulty": 28,
+        "opportunity": 83,
+        "competitorUrls": [
+          "competitor1.com",
+          "competitor2.com",
+          "competitor3.com"
+        ],
+        "suggestedContent": "Create comprehensive guide about instagram growth strategies bootcamp"
+      }
+    ],
+    "estimatedTrafficIncrease": "+424%",
+    "projectedRankingImprovements": 120
+  },
+  "implementation": {
+    "phase1": "Create pillar pages (Week 1)",
+    "phase2": "Develop cluster pages (Week 2-3)",
+    "phase3": "Implement internal links (Week 4)",
+    "phase4": "Monitor and optimize (Ongoing)"
+  },
+  "recommendations": [
+    "Prioritize high-authority topics for maximum impact",
+    "Focus on low-competition, high-volume keywords first",
+    "Implement progressive content expansion strategy",
+    "Monitor competitor content gaps continuously",
+    "Optimize internal link anchor text for better relevance"
+  ]
+}
