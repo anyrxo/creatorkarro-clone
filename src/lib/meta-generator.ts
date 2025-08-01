@@ -8,6 +8,17 @@ export interface MetaOptions {
   modifier?: string
 }
 
+export interface BlogPost {
+  title: string
+  excerpt: string
+  slug: string
+  category: string
+  tags: string[]
+  publishDate: string
+  readTime: number
+  featured?: boolean
+}
+
 export function generateDynamicMeta(options: MetaOptions = {}) {
   const {
     title = "AI Automation & Instagram Growth",
@@ -149,7 +160,7 @@ export function generateDynamicMeta(options: MetaOptions = {}) {
 }
 
 // Generate meta tags for different page types
-export function generateBlogMeta(post: any, location?: string) {
+export function generateBlogMeta(post: BlogPost, location?: string) {
   const trigger = ['Master', 'Unlock', 'Discover', 'Learn'][Math.floor(Math.random() * 4)]
   const urgency = ['Today', 'Now', 'This Week'][Math.floor(Math.random() * 3)]
   

@@ -68,11 +68,48 @@ export interface GuestPostCampaign {
   }
 }
 
+export interface PitchTemplate {
+  id: string
+  name: string
+  subject: string
+  content: string
+  personalizationTokens: string[]
+  effectiveness: number
+}
+
+export interface ContentTemplate {
+  id: string
+  name: string
+  structure: string[]
+  wordCountRange: { min: number; max: number }
+  linkingStrategy: string
+  authorBioTemplate: string
+}
+
+export interface AuthorProfile {
+  name: string
+  email: string
+  bio: string
+  credentials: string[]
+  expertise: string[]
+  sampleWork: string[]
+  socialMedia: Record<string, string>
+}
+
+export interface CampaignOptions {
+  pitchStrategy: string
+  contentStrategy: string
+  targetKeywords: string[]
+  authorProfile: AuthorProfile
+  linkingTargets: Array<{ url: string; anchorText: string }>
+  followUpSequence: number[]
+}
+
 export class GuestPostAutomationEngine {
   private targets: Map<string, GuestPostTarget> = new Map()
   private campaigns: Map<string, GuestPostCampaign> = new Map()
-  private pitchTemplates: Map<string, any> = new Map()
-  private contentTemplates: Map<string, any> = new Map()
+  private pitchTemplates: Map<string, PitchTemplate> = new Map()
+  private contentTemplates: Map<string, ContentTemplate> = new Map()
   
   constructor() {
     this.initializeTargets()
@@ -519,7 +556,7 @@ Interested in seeing a detailed outline?
   // Generate automated, personalized pitch
   private generateAutomatedPitch(
     target: GuestPostTarget, 
-    options: any
+    options: CampaignOptions
   ): GuestPostPitch {
     const template = this.pitchTemplates.get(options.pitchStrategy)!
     const topics = this.generateTopicIdeas(target, options.targetKeywords)
@@ -554,7 +591,7 @@ Interested in seeing a detailed outline?
   private generateGuestPostContent(
     pitch: GuestPostPitch,
     target: GuestPostTarget,
-    options: any
+    options: CampaignOptions
   ): GuestPostContent {
     const template = this.contentTemplates.get('ultimate-guide')!
     const wordCount = Math.floor(Math.random() * (target.requirements.wordCount.max - target.requirements.wordCount.min)) + target.requirements.wordCount.min
@@ -650,7 +687,7 @@ Interested in seeing a detailed outline?
     return processed
   }
 
-  private generatePitchContent(template: any, target: GuestPostTarget, options: any, topics: string[]): string {
+  private generatePitchContent(template: PitchTemplate, target: GuestPostTarget, options: CampaignOptions, topics: string[]): string {
     return `${template.intro}
 
 ${template.value_proposition}
@@ -662,7 +699,7 @@ ${template.credentials}
 ${template.closing}`
   }
 
-  private generateContentBody(topic: string, template: any, wordCount: number, target: GuestPostTarget): string {
+  private generateContentBody(topic: string, template: ContentTemplate, wordCount: number, target: GuestPostTarget): string {
     const sectionsCount = template.structure.length
     const wordsPerSection = Math.floor(wordCount / sectionsCount)
     
@@ -690,7 +727,7 @@ ${template.closing}`
     return content.trim()
   }
 
-  private generateAuthorBio(profile: any, mainDomain: string): string {
+  private generateAuthorBio(profile: AuthorProfile, mainDomain: string): string {
     return `${profile.name} is a ${profile.title} with ${profile.experience}+ years of experience in ${profile.expertise}. ${profile.credentials[0]} Learn more at ${mainDomain}.`
   }
 
@@ -725,7 +762,7 @@ ${template.closing}`
     return articles[Math.floor(Math.random() * articles.length)]
   }
 
-  private getNicheCredibility(niche: string, profile: any): string {
+  private getNicheCredibility(niche: string, profile: AuthorProfile): string {
     return `${profile.experience} years in ${niche} with proven results`
   }
 
@@ -742,7 +779,7 @@ ${template.closing}`
     return stats[Math.floor(Math.random() * stats.length)]
   }
 
-  private generateSampleWork(profile: any): string[] {
+  private generateSampleWork(profile: AuthorProfile): string[] {
     return [
       `${profile.website}/case-study-1`,
       `${profile.website}/guide-automation`,

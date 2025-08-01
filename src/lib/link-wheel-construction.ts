@@ -71,6 +71,38 @@ export interface LinkWheel {
   }
 }
 
+export interface TierCounts {
+  tier1: number
+  tier2: number
+  tier3: number
+  buffer: number
+}
+
+export interface LinkWheelParams {
+  moneysite: string
+  tierCounts: TierCounts
+  linkingPattern: string
+  contentThemes: string[]
+  qualityLevel: string
+  automation: boolean
+}
+
+export interface LinkWheelReport {
+  wheel: LinkWheel
+  performance: {
+    totalLinkJuice: number
+    estimatedRankingBoost: number
+    safetyScore: number
+    maintenanceRequirements: string[]
+  }
+  recommendations: string[]
+  projections: {
+    timeToImpact: string
+    expectedResults: string
+    maintenanceSchedule: string
+  }
+}
+
 export class LinkWheelConstructionEngine {
   private linkWheels: Map<string, LinkWheel> = new Map()
   
@@ -436,7 +468,7 @@ export class LinkWheelConstructionEngine {
     }))
   }
 
-  private calculateLinkingStrategy(pattern: string, tierCounts: any) {
+  private calculateLinkingStrategy(pattern: string, tierCounts: TierCounts) {
     const strategies = {
       circular: {
         description: 'Each tier links in a circle, with tier 1 linking to money site',
@@ -463,7 +495,7 @@ export class LinkWheelConstructionEngine {
     return strategies[pattern as keyof typeof strategies] || strategies.hybrid
   }
 
-  private calculateSafetyProfile(params: any): LinkWheel['safetyProfile'] {
+  private calculateSafetyProfile(params: LinkWheelParams): LinkWheel['safetyProfile'] {
     const baseScore = 85
     const safetyModifiers = {
       conservative: 15,
@@ -509,7 +541,7 @@ export class LinkWheelConstructionEngine {
     return Math.round((tier1Power + tier2Power + tier3Power + bufferPower) / 10)
   }
 
-  private calculateProjectedImpact(params: any): LinkWheel['projectedImpact'] {
+  private calculateProjectedImpact(params: LinkWheelParams): LinkWheel['projectedImpact'] {
     const linkJuiceMultiplier = {
       circular: 1.2,
       pyramid: 1.4,
@@ -588,7 +620,7 @@ export class LinkWheelConstructionEngine {
     return Array.from(this.linkWheels.values())
   }
 
-  async generateLinkWheelReport(wheelId: string): Promise<any> {
+  async generateLinkWheelReport(wheelId: string): Promise<LinkWheelReport> {
     const wheel = this.linkWheels.get(wheelId)
     if (!wheel) {
       throw new Error('Link wheel not found')

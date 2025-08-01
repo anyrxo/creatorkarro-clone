@@ -1,4 +1,63 @@
 // Advanced Doorway Page Network - Strategic Landing Page Distribution System
+export interface KeywordLocationCombination {
+  keyword: string
+  location: string
+  city: string
+  country: string
+  population?: number
+  searchVolume: number
+  competition: number
+  priority: number
+}
+
+export interface GeoData {
+  cities: Array<{
+    name: string
+    population: number
+    country: string
+    region: string
+  }>
+  countries: Array<{
+    name: string
+    code: string
+    population: number
+    language: string
+  }>
+}
+
+export interface SEOElements {
+  metaTitle: string
+  metaDescription: string
+  canonicalUrl: string
+  hreflang: string[]
+  schemaMarkup: Record<string, unknown>
+  robotsDirective: string
+}
+
+export interface SafetyProfile {
+  diversificationScore: number
+  footprintReduction: string[]
+  riskLevel: 'low' | 'medium' | 'high'
+  qualityScore: number
+  penaltyMitigation: string[]
+}
+
+export interface PagePerformance {
+  estimatedTraffic: number
+  rankingProbability: number
+  conversionRate: number
+  competitionLevel: string
+  timeToRank: string
+}
+
+export interface NetworkProjections {
+  totalEstimatedTraffic: number
+  expectedConversions: number
+  maintenanceCost: number
+  riskAssessment: string
+  timeToFullDeployment: string
+}
+
 export interface DoorwayPage {
   id: string
   url: string
@@ -24,7 +83,7 @@ export interface DoorwayPage {
     metaDescription: string
     canonicalUrl: string
     hreflang: string[]
-    schemaMarkup: any
+    schemaMarkup: Record<string, unknown>
     robotsDirective: string
   }
   linking: {
@@ -649,8 +708,8 @@ export class DoorwayPageNetworkEngine {
     geographicTargets: string[],
     strategy: string,
     pageCount: number
-  ): any[] {
-    const combinations: any[] = []
+  ): KeywordLocationCombination[] {
+    const combinations: KeywordLocationCombination[] = []
     
     geographicTargets.forEach(geoTarget => {
       const geoData = this.geographicTargets.get(geoTarget)
@@ -698,14 +757,14 @@ export class DoorwayPageNetworkEngine {
   }
 
   // Select cities based on strategy and population
-  private selectCities(geoData: any, pageCount: number, strategy: string): any[] {
+  private selectCities(geoData: GeoData, pageCount: number, strategy: string): GeoData['cities'] {
     const cities = geoData.majorCities || []
     
     switch (strategy) {
       case 'geographic':
         // Prioritize by population
         return cities
-          .sort((a: any, b: any) => b.population - a.population)
+          .sort((a, b) => b.population - a.population)
           .slice(0, Math.min(pageCount, cities.length))
       
       case 'keyword':
@@ -715,7 +774,7 @@ export class DoorwayPageNetworkEngine {
       case 'hybrid':
         // Balanced approach - top cities first, then smaller markets
         const topCities = cities
-          .sort((a: any, b: any) => b.population - a.population)
+          .sort((a, b) => b.population - a.population)
           .slice(0, Math.ceil(cities.length * 0.6))
         const remainingCities = cities.slice(topCities.length)
         return [...topCities, ...remainingCities].slice(0, pageCount)
@@ -731,9 +790,9 @@ export class DoorwayPageNetworkEngine {
 
   // Generate location-specific keyword variations
   private generateLocationKeywordVariations(
-    keywordData: any,
-    city: any,
-    geoData: any
+    keywordData: KeywordLocationCombination,
+    city: GeoData['cities'][0],
+    geoData: GeoData
   ): string[] {
     const variations: string[] = []
     const baseKeyword = keywordData.primary
@@ -768,7 +827,7 @@ export class DoorwayPageNetworkEngine {
 
   // Generate unique content for each page
   private async generatePageContent(
-    combination: any,
+    combination: KeywordLocationCombination,
     template: ContentTemplate,
     contentVariation: number,
     qualityLevel: string
@@ -807,7 +866,7 @@ export class DoorwayPageNetworkEngine {
   }
 
   // Generate SEO elements for each page
-  private generateSEOElements(combination: any, template: ContentTemplate): any {
+  private generateSEOElements(combination: KeywordLocationCombination, template: ContentTemplate): SEOElements {
     const keyword = combination.keywordData.primary
     const city = combination.cityData.name
     const location = combination.location
@@ -969,7 +1028,7 @@ export class DoorwayPageNetworkEngine {
   }
 
   // Calculate safety profile for network
-  private calculateSafetyProfile(pages: DoorwayPage[], contentVariation: number): any {
+  private calculateSafetyProfile(pages: DoorwayPage[], contentVariation: number): SafetyProfile {
     const totalPages = pages.length
     const uniqueTemplates = new Set(pages.map(p => p.seo.metaTitle.split('|')[0])).size
     const geographicSpread = new Set(pages.map(p => p.location.city)).size
@@ -1006,13 +1065,13 @@ export class DoorwayPageNetworkEngine {
     return shuffled.slice(0, count)
   }
 
-  private generatePageURL(combination: any): string {
+  private generatePageURL(combination: KeywordLocationCombination): string {
     const keyword = combination.keyword.toLowerCase().replace(/\s+/g, '-')
     const city = combination.cityData.name.toLowerCase().replace(/\s+/g, '-')
     return `/${keyword}-${city}`
   }
 
-  private generateBodyContent(combination: any, template: ContentTemplate, qualityLevel: string): string[] {
+  private generateBodyContent(combination: KeywordLocationCombination, template: ContentTemplate, qualityLevel: string): string[] {
     const paragraphs: string[] = []
     const paragraphCount = qualityLevel === 'enterprise' ? 8 : qualityLevel === 'premium' ? 6 : 4
     
@@ -1051,7 +1110,7 @@ export class DoorwayPageNetworkEngine {
     return text.split(/\s+/).length
   }
 
-  private calculatePagePerformance(combination: any, qualityLevel: string): any {
+  private calculatePagePerformance(combination: KeywordLocationCombination, qualityLevel: string): PagePerformance {
     const baseScore = qualityLevel === 'enterprise' ? 95 : qualityLevel === 'premium' ? 85 : 75
     
     return {
@@ -1066,7 +1125,7 @@ export class DoorwayPageNetworkEngine {
     }
   }
 
-  private generateSchemaMarkup(combination: any, template: ContentTemplate): any {
+  private generateSchemaMarkup(combination: KeywordLocationCombination, template: ContentTemplate): Record<string, unknown> {
     return {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
@@ -1108,7 +1167,7 @@ export class DoorwayPageNetworkEngine {
     return Math.max(20, Math.min(90, difficulty))
   }
 
-  private calculateNetworkProjections(network: DoorwayNetwork): any {
+  private calculateNetworkProjections(network: DoorwayNetwork): NetworkProjections {
     const pageCount = network.pages.length
     const avgTrafficPerPage = 150 // Conservative estimate
     const conversionRate = 0.02 // 2% conversion rate
