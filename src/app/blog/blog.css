@@ -1,8 +1,13 @@
 /* Blog-specific styles to ensure text visibility */
+.blog-content {
+  color: white !important;
+}
+
 .blog-content * {
-  color: #e5e7eb !important;
+  color: inherit !important;
   opacity: 1 !important;
   visibility: visible !important;
+  -webkit-text-fill-color: initial !important;
 }
 
 .blog-content h1,
@@ -11,18 +16,86 @@
 .blog-content h4,
 .blog-content h5,
 .blog-content h6 {
-  color: #ffffff !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
 }
 
-.blog-content p,
-.blog-content li,
-.blog-content span {
-  color: #e5e7eb !important;
+.blog-content p {
+  color: #d1d5db !important;
+  -webkit-text-fill-color: #d1d5db !important;
 }
 
-/* Ensure gradient text is visible */
-.blog-content .gradient-text {
+.blog-content li {
+  color: #d1d5db !important;
+  -webkit-text-fill-color: #d1d5db !important;
+}
+
+.blog-content span:not(.gradient-text) {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+.blog-content strong {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+}
+
+.blog-content em {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+.blog-content a {
+  color: #60a5fa !important;
+  -webkit-text-fill-color: #60a5fa !important;
+}
+
+/* Fix for text that might be using CSS variables */
+.blog-content .text-gray-300,
+.blog-content .text-gray-400,
+.blog-content .text-gray-500 {
+  color: #d1d5db !important;
+  -webkit-text-fill-color: #d1d5db !important;
+}
+
+.blog-content .text-white {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* Ensure gradient text remains gradient */
+.blog-content .gradient-text,
+.blog-content [class*="bg-clip-text"] {
   background-clip: text !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+}
+
+/* Override any CSS variable issues */
+.blog-content {
+  --foreground: white !important;
+  --text-foreground: white !important;
+  --text-color: white !important;
+}
+
+/* Force all div text to be visible */
+.blog-content div {
+  color: inherit !important;
+}
+
+/* Specific fixes for common issues */
+.blog-content .prose {
+  color: #d1d5db !important;
+}
+
+.blog-content article {
+  color: #d1d5db !important;
+}
+
+/* Debug: Add a slight text shadow to make sure text is visible */
+.blog-content p,
+.blog-content li,
+.blog-content span,
+.blog-content div {
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
 }

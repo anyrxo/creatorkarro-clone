@@ -2,7 +2,76 @@ import '../blog.css'
 
 export default function BlogPost() {
   return (
-    <div className="min-h-screen blog-content" style={{ backgroundColor: '#0f0f0f' }}>
+    <>
+      <style jsx global>{`
+        /* Remove all CSS variable dependencies */
+        .blog-text-fix,
+        .blog-text-fix * {
+          --foreground: white !important;
+          --text-foreground: white !important;
+          color: rgb(255, 255, 255) !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          -webkit-text-fill-color: unset !important;
+          text-fill-color: unset !important;
+        }
+        
+        .blog-text-fix p,
+        .blog-text-fix .text-gray-300,
+        .blog-text-fix .text-gray-400,
+        .blog-text-fix .text-gray-500 {
+          color: rgb(209, 213, 219) !important;
+          -webkit-text-fill-color: unset !important;
+        }
+        
+        .blog-text-fix h1,
+        .blog-text-fix h2,
+        .blog-text-fix h3,
+        .blog-text-fix h4,
+        .blog-text-fix .text-white {
+          color: rgb(255, 255, 255) !important;
+          -webkit-text-fill-color: unset !important;
+        }
+        
+        .blog-text-fix .text-blue-400 {
+          color: rgb(96, 165, 250) !important;
+          -webkit-text-fill-color: unset !important;
+        }
+        
+        .blog-text-fix .text-purple-400 {
+          color: rgb(196, 181, 253) !important;
+          -webkit-text-fill-color: unset !important;
+        }
+        
+        .blog-text-fix .text-pink-400 {
+          color: rgb(244, 114, 182) !important;
+          -webkit-text-fill-color: unset !important;
+        }
+        
+        .blog-text-fix .text-green-400 {
+          color: rgb(74, 222, 128) !important;
+          -webkit-text-fill-color: unset !important;
+        }
+        
+        /* Override any gradient text */
+        .blog-text-fix [class*="bg-clip-text"] {
+          -webkit-background-clip: text !important;
+          background-clip: text !important;
+          -webkit-text-fill-color: transparent !important;
+        }
+        
+        /* Force visibility on all elements */
+        .blog-text-fix div,
+        .blog-text-fix span,
+        .blog-text-fix strong,
+        .blog-text-fix em,
+        .blog-text-fix li {
+          color: inherit !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+      `}</style>
+      <div className="min-h-screen blog-content blog-text-fix" style={{ backgroundColor: '#0f0f0f' }}>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20"></div>
@@ -526,6 +595,7 @@ export default function BlogPost() {
           </a>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
