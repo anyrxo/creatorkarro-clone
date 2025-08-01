@@ -414,7 +414,7 @@ function BlogPostCard({ post, index, setElementRef, isVisible }: {
   return (
     <article 
       ref={setElementRef(index)}
-      className={`bg-zinc-900 rounded-2xl p-6 hover:bg-zinc-800 transition-all duration-300 group cursor-pointer hover-lift scroll-fade-up ${isVisible ? 'visible' : ''}`}
+      className="bg-zinc-900 rounded-2xl p-6 hover:bg-zinc-800 transition-all duration-300 group cursor-pointer hover-lift scroll-fade-up visible"
     >
       <Link href={`/blog/${post.slug}`} className="block">
         {/* Category Badge */}
@@ -488,6 +488,12 @@ export default function BlogPage() {
   
   const currentPosts = activeTab === 'general' ? blogPosts : newsArticles
   const { setElementRef, visibleElements } = useScrollAnimations(currentPosts.length, { threshold: 0.1 })
+  
+  // Debug logging
+  console.log('Active tab:', activeTab)
+  console.log('Current posts count:', currentPosts.length)
+  console.log('Blog posts count:', blogPosts.length)
+  console.log('News articles count:', newsArticles.length)
 
   return (
     <div className="min-h-screen bg-dark">
@@ -556,7 +562,7 @@ export default function BlogPage() {
                 post={post} 
                 index={index} 
                 setElementRef={setElementRef}
-                isVisible={visibleElements[index]}
+                isVisible={true}
               />
             ))}
           </div>
