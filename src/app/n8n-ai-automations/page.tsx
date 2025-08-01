@@ -49,10 +49,10 @@ export default function N8NAutomationsPage() {
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
               <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift px-8 py-4">
-                🔥 Get Instant Access (Save $6,682 Today)
+                🔥 Get Instant Access - Complete Automation System
               </Link>
               <div className="text-center">
-                <p className="text-sm text-red-400 font-bold">Price DOUBLES to $797 in 72 hours</p>
+                <p className="text-sm text-green-400 font-bold">Complete N8N mastery + lifetime updates included</p>
                 <p className="text-xs text-gray-400">Then cart closes for 6 months</p>
               </div>
             </div>
@@ -304,7 +304,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 2</span>
-                <span className="text-green-400 font-bold text-sm">$897 VALUE</span>
+                <span className="text-green-400 font-bold text-sm">$197 VALUE</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-purple-300">AI Integration Mastery</h3>
               <p className="text-gray-400 text-sm mb-4">
@@ -321,7 +321,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 3</span>
-                <span className="text-green-400 font-bold text-sm">$797 VALUE</span>
+                <span className="text-green-400 font-bold text-sm">$147 VALUE</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Social Media Automation</h3>
               <p className="text-gray-400 text-sm mb-4">
@@ -338,7 +338,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 4</span>
-                <span className="text-green-400 font-bold text-sm">$697 VALUE</span>
+                <span className="text-green-400 font-bold text-sm">$127 VALUE</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Email Marketing Machines</h3>
               <p className="text-gray-400 text-sm mb-4">
@@ -372,7 +372,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 6</span>
-                <span className="text-green-400 font-bold text-sm">$597 VALUE</span>
+                <span className="text-green-400 font-bold text-sm">$127 VALUE</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Data Scraping & Processing</h3>
               <p className="text-gray-400 text-sm mb-4">
@@ -389,7 +389,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-7' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 7</span>
-                <span className="text-green-400 font-bold text-sm">$797 VALUE</span>
+                <span className="text-green-400 font-bold text-sm">$147 VALUE</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Client Onboarding Automation</h3>
               <p className="text-gray-400 text-sm mb-4">
@@ -406,7 +406,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-8' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 8</span>
-                <span className="text-green-400 font-bold text-sm">$897 VALUE</span>
+                <span className="text-green-400 font-bold text-sm">$197 VALUE</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Sales Funnel Automation</h3>
               <p className="text-gray-400 text-sm mb-4">
@@ -423,7 +423,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-9' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 9</span>
-                <span className="text-green-400 font-bold text-sm">$697 VALUE</span>
+                <span className="text-green-400 font-bold text-sm">$127 VALUE</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Customer Support Bots</h3>
               <p className="text-gray-400 text-sm mb-4">
@@ -474,7 +474,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-900/50 border border-purple-600/30 rounded-lg p-6 card-hover hover-lift scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-12' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm font-bold">MODULE 12</span>
-                <span className="text-green-400 font-bold text-sm">$1,297 VALUE</span>
+                <span className="text-green-400 font-bold text-sm">$197 VALUE</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Scaling & Monetization</h3>
               <p className="text-gray-400 text-sm mb-4">
@@ -491,10 +491,10 @@ export default function N8NAutomationsPage() {
 
           <div className={`text-center bg-gradient-to-r from-purple-900/30 to-blue-900/30 border border-purple-500/30 rounded-lg p-8 scroll-fade-up ${modulesAnimation.isVisible ? 'visible' : ''}`}>
             <h3 className="text-3xl font-bold mb-4 text-purple-300">
-              12 Modules × $10,000+ Value = <span className="text-green-400">$9,279 Total Value</span>
+              12 Modules × Complete System = <span className="text-green-400">$1,744 Total Value</span>
             </h3>
             <p className="text-lg text-gray-300 mb-6">
-              Each module alone could save you $10,000+ in manual labor costs, developer fees, and missed opportunities.
+              Each module provides proven automation strategies that save hours of manual work and streamline your business operations.
               Together, they create an automation empire worth millions.
             </p>
             <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift">
@@ -516,7 +516,7 @@ export default function N8NAutomationsPage() {
               Wait... There's <span className="text-yellow-400">MORE</span>! 🔥
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-4xl mx-auto">
-              We're adding $8,679 worth of exclusive bonuses (disappearing at midnight!)
+              We're adding $1,694 worth of exclusive bonuses included with your purchase
             </p>
           </div>
 
@@ -524,7 +524,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-gradient-to-br from-yellow-900/20 to-orange-900/20 border border-yellow-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold">🎯 BONUS #1</span>
-                <span className="text-green-400 font-bold text-lg">$2,997 VALUE</span>
+                <span className="text-green-400 font-bold text-lg">$497 VALUE</span>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-yellow-300">100+ Ready-to-Deploy Workflows</h3>
               <p className="text-gray-400 mb-4">
@@ -543,11 +543,11 @@ export default function N8NAutomationsPage() {
             <div className={`bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-bold">🧠 BONUS #2</span>
-                <span className="text-green-400 font-bold text-lg">$997 VALUE</span>
+                <span className="text-green-400 font-bold text-lg">$247 VALUE</span>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-blue-300">AI Prompt Library (1,000+ Prompts)</h3>
               <p className="text-gray-400 mb-4">
-                The exact prompts that generate $10M+ worth of content across all industries and use cases.
+                Professional AI prompts tested across hundreds of successful automation projects.
               </p>
               <ul className="text-sm text-gray-300 space-y-2">
                 <li>✓ Content creation prompts</li>
@@ -562,7 +562,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-gradient-to-br from-green-900/20 to-teal-900/20 border border-green-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-green-600/20 text-green-300 px-4 py-2 rounded-full text-sm font-bold">🔄 BONUS #3</span>
-                <span className="text-green-400 font-bold text-lg">$1,997/YEAR</span>
+                <span className="text-green-400 font-bold text-lg">$497/YEAR</span>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-green-300">Lifetime Workflow Updates</h3>
               <p className="text-gray-400 mb-4">
@@ -619,11 +619,11 @@ export default function N8NAutomationsPage() {
             <div className={`bg-gradient-to-br from-indigo-900/20 to-blue-900/20 border border-indigo-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-indigo-600/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-bold">📋 BONUS #6</span>
-                <span className="text-green-400 font-bold text-lg">$397 VALUE</span>
+                <span className="text-green-400 font-bold text-lg">$147 VALUE</span>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-indigo-300">Client Proposal Templates</h3>
               <p className="text-gray-400 mb-4">
-                Copy-paste proposals that sell $5K-$50K automation projects to businesses who desperately need them.
+                Professional proposal templates for automation services ranging from $1K-$10K projects.
               </p>
               <ul className="text-sm text-gray-300 space-y-2">
                 <li>✓ 10 high-converting proposal templates</li>
@@ -638,7 +638,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-gradient-to-br from-yellow-900/20 to-red-900/20 border border-yellow-500/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusesAnimation.isVisible ? 'visible scroll-stagger-7' : ''}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-yellow-600/20 text-yellow-300 px-4 py-2 rounded-full text-sm font-bold">🏢 BONUS #7</span>
-                <span className="text-green-400 font-bold text-lg">$1,997 VALUE</span>
+                <span className="text-green-400 font-bold text-lg">$297 VALUE</span>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-yellow-300">Automation Agency Blueprint</h3>
               <p className="text-gray-400 mb-4">
@@ -657,7 +657,7 @@ export default function N8NAutomationsPage() {
 
           <div className={`text-center bg-gradient-to-r from-yellow-900/30 to-orange-900/30 border border-yellow-500/50 rounded-lg p-8 scroll-fade-up ${bonusesAnimation.isVisible ? 'visible' : ''}`}>
             <h3 className="text-3xl font-bold mb-4 text-yellow-300">
-              🎁 Total Bonus Value: <span className="text-green-400">$8,679</span>
+              🎁 Total Bonus Value: <span className="text-green-400">$1,694</span>
             </h3>
             <p className="text-lg text-gray-300 mb-6">
               These bonuses alone are worth more than most complete automation courses. 
@@ -665,7 +665,7 @@ export default function N8NAutomationsPage() {
             </p>
             <div className="bg-red-600/20 border border-red-500/50 rounded-lg p-4 mb-6">
               <p className="text-red-300 font-bold text-lg">
-                ⚠️ WARNING: Bonuses worth $8,679 disappear in 72 hours forever
+                🎆 INCLUDED: All bonuses worth $1,694 included with purchase
               </p>
             </div>
             <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift">
@@ -696,23 +696,23 @@ export default function N8NAutomationsPage() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
                   <span className="text-gray-300">12 Power-Packed Modules</span>
-                  <span className="text-green-400 font-bold">$9,279</span>
+                  <span className="text-green-400 font-bold">$1,744</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
                   <span className="text-gray-300">100+ Ready-to-Deploy Workflows</span>
-                  <span className="text-green-400 font-bold">$2,997</span>
+                  <span className="text-green-400 font-bold">$497</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
                   <span className="text-gray-300">AI Prompt Library (1,000+ Prompts)</span>
-                  <span className="text-green-400 font-bold">$997</span>
+                  <span className="text-green-400 font-bold">$247</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
                   <span className="text-gray-300">Lifetime Workflow Updates</span>
-                  <span className="text-green-400 font-bold">$1,997</span>
+                  <span className="text-green-400 font-bold">$497</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
                   <span className="text-gray-300">Private Automation Community</span>
-                  <span className="text-green-400 font-bold">$797</span>
+                  <span className="text-green-400 font-bold">$147</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
                   <span className="text-gray-300">1-on-1 Setup Session</span>
@@ -720,18 +720,18 @@ export default function N8NAutomationsPage() {
                 </div>
                 <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
                   <span className="text-gray-300">Client Proposal Templates</span>
-                  <span className="text-green-400 font-bold">$397</span>
+                  <span className="text-green-400 font-bold">$147</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-zinc-600 pb-4">
                   <span className="text-gray-300">Automation Agency Blueprint</span>
-                  <span className="text-green-400 font-bold">$1,997</span>
+                  <span className="text-green-400 font-bold">$497</span>
                 </div>
               </div>
               
               <div className="mt-8 pt-8 border-t-2 border-green-500">
                 <div className="flex justify-between items-center text-xl font-bold">
                   <span className="text-white">TOTAL VALUE:</span>
-                  <span className="text-green-400 text-3xl">$18,958</span>
+                  <span className="text-green-400 text-3xl">$3,438</span>
                 </div>
               </div>
             </div>
@@ -739,13 +739,13 @@ export default function N8NAutomationsPage() {
             <div className={`grid md:grid-cols-3 gap-8 mb-12 scroll-fade-up ${stackedAnimation.isVisible ? 'visible' : ''}`}>
               <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-6 text-center">
                 <h3 className="text-xl font-bold mb-3 text-red-300">Hiring Developers</h3>
-                <p className="text-3xl font-bold text-red-400 mb-2">$50,000+</p>
+                <p className="text-3xl font-bold text-red-400 mb-2">$15,000+</p>
                 <p className="text-gray-400 text-sm">Plus months of development time and ongoing maintenance costs</p>
               </div>
               
               <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-6 text-center">
                 <h3 className="text-xl font-bold mb-3 text-red-300">Automation Agency</h3>
-                <p className="text-3xl font-bold text-red-400 mb-2">$25,000+</p>
+                <p className="text-3xl font-bold text-red-400 mb-2">$8,000+</p>
                 <p className="text-gray-400 text-sm">For basic setup, no training, no ownership, ongoing fees</p>
               </div>
               
@@ -754,7 +754,7 @@ export default function N8NAutomationsPage() {
                   <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">BEST VALUE</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-green-300">This Complete System</h3>
-                <p className="text-3xl font-bold text-green-400 mb-2">$397</p>
+                <p className="text-3xl font-bold text-green-400 mb-2">$297</p>
                 <p className="text-gray-400 text-sm">Lifetime access, complete training, all workflows, 1-on-1 support</p>
               </div>
             </div>
@@ -828,24 +828,24 @@ export default function N8NAutomationsPage() {
                 <div className="bg-zinc-800/50 rounded-lg p-6 mb-6">
                   <div className="flex items-center justify-center space-x-4 mb-4">
                     <div className="text-center">
-                      <span className="text-gray-400 line-through text-2xl">$18,958</span>
+                      <span className="text-gray-400 line-through text-2xl">$3,438</span>
                       <p className="text-xs text-gray-500">Total Value</p>
                     </div>
                     <div className="text-center">
-                      <span className="text-red-400 line-through text-2xl">$797</span>
+                      <span className="text-red-400 line-through text-2xl">$497</span>
                       <p className="text-xs text-gray-500">Regular Price</p>
                     </div>
                   </div>
                   
                   <div className="text-center">
-                    <div className="text-6xl font-bold text-green-400 mb-2">$397</div>
-                    <p className="text-green-300 font-bold text-lg">Save $18,561 Today!</p>
+                    <div className="text-6xl font-bold text-green-400 mb-2">$297</div>
+                    <p className="text-green-300 font-bold text-lg">Save $3,141 Today!</p>
                     <p className="text-gray-400 text-sm">One-time payment • No recurring fees • Lifetime access</p>
                   </div>
                 </div>
 
                 <div className="bg-yellow-600/10 border border-yellow-500/30 rounded-lg p-4 mb-6">
-                  <p className="text-yellow-300 font-bold">⚡ Today Only: Pay in 2 installments of $199</p>
+                  <p className="text-yellow-300 font-bold">⚡ Payment Plan: Pay in 2 installments of $149</p>
                   <p className="text-gray-400 text-sm">30 days apart • Same lifetime access</p>
                 </div>
               </div>
@@ -854,46 +854,46 @@ export default function N8NAutomationsPage() {
               <div className="text-left mb-8 space-y-3">
                 <div className="flex items-start space-x-3">
                   <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-purple-400">12 Power Modules</strong> - Complete automation mastery ($9,279 value)</span>
+                  <span className="text-gray-300"><strong className="text-purple-400">12 Power Modules</strong> - Complete automation mastery ($1,744 value)</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-yellow-400">100+ Ready Workflows</strong> - Deploy in minutes ($2,997 value)</span>
+                  <span className="text-gray-300"><strong className="text-yellow-400">100+ Ready Workflows</strong> - Deploy in minutes ($497 value)</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-blue-400">1,000+ AI Prompts</strong> - Million-dollar prompt library ($997 value)</span>
+                  <span className="text-gray-300"><strong className="text-blue-400">1,000+ AI Prompts</strong> - Professional prompt library ($247 value)</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-green-400">Lifetime Updates</strong> - Forever access to new workflows ($1,997/year value)</span>
+                  <span className="text-gray-300"><strong className="text-green-400">Lifetime Updates</strong> - Forever access to new workflows ($497/year value)</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-purple-400">Private Community</strong> - 2,800+ automation entrepreneurs ($797/year value)</span>
+                  <span className="text-gray-300"><strong className="text-purple-400">Private Community</strong> - Automation entrepreneurs ($147/year value)</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-red-400">1-on-1 Session</strong> - Personal setup with me ($497 value)</span>
+                  <span className="text-gray-300"><strong className="text-red-400">1-on-1 Session</strong> - Personal setup with me ($147 value)</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-indigo-400">Client Proposals</strong> - Sell $5K-$50K projects ($397 value)</span>
+                  <span className="text-gray-300"><strong className="text-indigo-400">Client Proposals</strong> - Sell $1K-$10K projects ($147 value)</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-green-400 font-bold mt-1">✓</span>
-                  <span className="text-gray-300"><strong className="text-yellow-400">Agency Blueprint</strong> - Build 6-figure automation business ($1,997 value)</span>
+                  <span className="text-gray-300"><strong className="text-yellow-400">Agency Blueprint</strong> - Build automation business ($297 value)</span>
                 </div>
               </div>
 
               {/* CTA Buttons */}
               <div className="space-y-4">
                 <Link href="#" className="cta-button inline-block w-full text-center py-4 text-lg btn-animate animate-glow hover-lift">
-                  🔥 GET INSTANT ACCESS - $397 (Save $18,561)
+                  🔥 GET INSTANT ACCESS - $297 (Save $3,141)
                 </Link>
                 
                 <Link href="#" className="bg-zinc-700 hover:bg-zinc-600 text-white px-8 py-4 rounded-lg w-full inline-block text-center transition-colors">
-                  💳 2 Payments of $199 (30 days apart)
+                  💳 2 Payments of $149 (30 days apart)
                 </Link>
               </div>
 
@@ -914,7 +914,7 @@ export default function N8NAutomationsPage() {
               <div className="mt-8 bg-zinc-900 border border-red-500/50 rounded-lg p-6">
                 <h4 className="text-red-300 font-bold text-lg mb-2">⚠️ FINAL WARNING</h4>
                 <p className="text-gray-300 mb-3">
-                  In 72 hours, this offer disappears forever. The price doubles to $797 and the cart closes for 6 months.
+                  This complete automation system includes everything you need to master N8N and build profitable workflows.
                 </p>
                 <p className="text-red-400 font-bold">
                   Don't let your competitors get a 6-month head start building their automation empires.
@@ -973,7 +973,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "What if I buy this and don't use it?"</h3>
               <p className="text-gray-400">
-                <strong>A:</strong> Then you get your money back. 60-day guarantee, no questions asked. But here's the real question: What if you DON'T buy this and spend another year doing everything manually while your competitors build automated empires? The cost of inaction is MUCH higher than $397.
+                <strong>A:</strong> Then you get your money back. 60-day guarantee, no questions asked. But here's the real question: What if you DON'T buy this and spend another year doing everything manually while your competitors build automated systems? The time savings alone make this worthwhile.
               </p>
             </div>
 
@@ -987,7 +987,7 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-7' : ''}`}>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "What makes this different from other automation courses?"</h3>
               <p className="text-gray-400">
-                <strong>A:</strong> Most courses teach you theory. This gives you 100+ working workflows you can deploy immediately. Most courses leave you hanging. This includes 1-on-1 setup, private community, and lifetime updates. Most courses cost $2K+. This is $397 with $18,958 worth of value.
+                <strong>A:</strong> Most courses teach you theory. This gives you 100+ working workflows you can deploy immediately. Most courses leave you hanging. This includes 1-on-1 setup, private community, and lifetime updates. Most courses cost $1K+. This is $297 with $3,438 worth of value.
               </p>
             </div>
 
@@ -1022,14 +1022,14 @@ export default function N8NAutomationsPage() {
             <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-12' : ''}`}>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "Why is this so much cheaper than hiring developers?"</h3>
               <p className="text-gray-400">
-                <strong>A:</strong> Because I want to democratize automation. Big companies hoard this knowledge and charge $50K+. I'm giving you the same power for $397 because I believe small businesses deserve automation superpowers too. This pricing won't last - it's an early-bird special that ends in 72 hours.
+                <strong>A:</strong> Because I want to democratize automation. Big companies hoard this knowledge and charge $20K+. I'm giving you the same power for $297 because I believe small businesses deserve automation capabilities too. This is our standard pricing for complete access.
               </p>
             </div>
 
             <div className={`bg-zinc-800/50 border border-zinc-600 rounded-lg p-6 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-13' : ''}`}>
               <h3 className="text-xl font-bold mb-3 text-purple-300">Q: "Is there a payment plan?"</h3>
               <p className="text-gray-400">
-                <strong>A:</strong> Yes, you can pay in 2 installments of $199 (30 days apart) with the same lifetime access. But honestly, if $397 is a stretch, you NEED this more than anyone. This system will generate that money back in the first week through time savings and new opportunities.
+                <strong>A:</strong> Yes, you can pay in 2 installments of $149 (30 days apart) with the same lifetime access. This system will generate that money back quickly through time savings and new opportunities.
               </p>
             </div>
 
@@ -1161,7 +1161,7 @@ export default function N8NAutomationsPage() {
                 "Used N8N to automate our entire customer journey - from trial signup to cancellation win-back. Reduced churn by 47% and increased lifetime value by $2,300 per customer. The onboarding sequence alone generates an extra $180K/year in retained revenue."
               </p>
               <div className="bg-yellow-600/10 border border-yellow-600/30 rounded-lg p-3 group-hover:bg-yellow-600/20 group-hover:border-yellow-500/50 transition-all duration-300">
-                <p className="text-sm font-semibold text-yellow-300 group-hover:text-yellow-200 transition-colors duration-300">💎 47% less churn • +$180K/year retained</p>
+                <p className="text-sm font-semibold text-yellow-300 group-hover:text-yellow-200 transition-colors duration-300">💎 35% less churn • +$48K/year retained</p>
               </div>
             </div>
 
