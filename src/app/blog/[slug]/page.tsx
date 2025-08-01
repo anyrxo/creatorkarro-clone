@@ -15,7 +15,19 @@ const existingPosts = [
   'whop-clipping'
 ]
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+// Generate static params for known blog posts
+export async function generateStaticParams() {
+  // Return empty array to allow dynamic generation of all routes
+  return []
+}
+
+interface BlogPostPageProps {
+  params: {
+    slug: string
+  }
+}
+
+export default function BlogPostPage({ params }: BlogPostPageProps) {
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const contentAnimation = useScrollAnimation({ threshold: 0.1 })
   const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
