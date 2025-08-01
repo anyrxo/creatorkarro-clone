@@ -6,7 +6,14 @@ export interface FAQItem {
   category: string
   keywords: string[]
   priority: number
-  schema: object
+  schema: {
+    '@type': string
+    name: string
+    acceptedAnswer: {
+      '@type': string
+      text: string
+    }
+  }
 }
 
 export interface FAQCategory {
@@ -321,7 +328,7 @@ export class FAQSchemaGenerator {
   }
   
   // Generate schema for individual question
-  private generateQuestionSchema(question: string, answer: string): object {
+  private generateQuestionSchema(question: string, answer: string): FAQItem['schema'] {
     return {
       '@type': 'Question',
       'name': question,
