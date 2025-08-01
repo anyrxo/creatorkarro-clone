@@ -16,12 +16,13 @@ const montserrat = Montserrat({ subsets: ["latin"] })
 
 interface Props {
   children: React.ReactNode
-  params: { country: string }
+  params: Promise<{ country: string }>
 }
 
 // Generate metadata for international pages
-export async function generateMetadata({ params }: { params: { country: string } }): Promise<Metadata> {
-  const countryCode = params.country.toUpperCase()
+export async function generateMetadata({ params }: { params: Promise<{ country: string }> }): Promise<Metadata> {
+  const resolvedParams = await params
+  const countryCode = resolvedParams.country.toUpperCase()
   
   if (!INTERNATIONAL_MARKETS[countryCode]) {
     return {}
@@ -87,8 +88,9 @@ export async function generateStaticParams() {
     }))
 }
 
-export default function CountryLayout({ children, params }: Props) {
-  const countryCode = params.country.toUpperCase()
+export default async function CountryLayout({ children, params }: Props) {
+  const resolvedParams = await params
+  const countryCode = resolvedParams.country.toUpperCase()
   
   // Return 404 if country not supported
   if (!INTERNATIONAL_MARKETS[countryCode]) {
@@ -135,7 +137,7 @@ export default function CountryLayout({ children, params }: Props) {
           rel="alternate" 
           type="application/rss+xml" 
           title={`IImagined.ai ${config.country} Blog`} 
-          href={`https://iimagined.ai/${params.country}/rss.xml`} 
+          href={`https://iimagined.ai/${resolvedParams.country}/rss.xml`} 
         />
         
         {/* Structured Data - International Organization */}
