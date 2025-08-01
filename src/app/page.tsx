@@ -9,6 +9,7 @@ export default function HomePage() {
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const partnersAnimation = useScrollAnimation({ threshold: 0.3 })
   const linksAnimation = useScrollAnimation({ threshold: 0.2 })
+  const blogAnimation = useScrollAnimation({ threshold: 0.1 })
   const testimonialsAnimation = useScrollAnimation({ threshold: 0.1 })
   const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
 
@@ -233,6 +234,91 @@ export default function HomePage() {
                 className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2"
               >
                 Access resources →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Section */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div 
+            ref={blogAnimation.elementRef}
+            className={`text-center mb-12 scroll-fade-up ${blogAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">BLOG</p>
+            <h2 className="text-4xl md:text-5xl font-bold">
+              Latest <span className="text-blue-400">Creator</span> Insights
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Blog Post 1 */}
+            <div className={`testimonial-card card-hover hover-glow group scroll-fade-left ${blogAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-blue-500 rounded-full mr-3 animate-float"></div>
+                <span className="text-sm text-gray-400 uppercase tracking-wider">GROWTH GUIDE</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors duration-300">
+                From 0 to <span className="text-blue-400">500K Followers</span>
+              </h3>
+              <p className="text-gray-400 mb-4">The complete Instagram blueprint that took me from zero to half a million followers and $15K/month</p>
+              <div className="flex items-center text-sm text-gray-500 mb-6">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>12 min read</span>
+                <span className="mx-2">•</span>
+                <span>Jan 15, 2024</span>
+              </div>
+              <Link href="/blog/500k-followers" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
+                Read more →
+              </Link>
+            </div>
+
+            {/* Blog Post 2 */}
+            <div className={`testimonial-card card-hover hover-glow group scroll-fade-up ${blogAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-purple-500 rounded-full mr-3 animate-float [animation-delay:0.3s]"></div>
+                <span className="text-sm text-gray-400 uppercase tracking-wider">SUCCESS STORY</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-300">
+                From 800 to <span className="text-purple-400">125K Followers</span>
+              </h3>
+              <p className="text-gray-400 mb-4">How Marcus Rivera used Instagram Ignited to build a $15K/month business in just 8 months</p>
+              <div className="flex items-center text-sm text-gray-500 mb-6">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>12 min read</span>
+                <span className="mx-2">•</span>
+                <span>Jan 8, 2024</span>
+              </div>
+              <Link href="/blog/instagram-ignited-success-stories" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
+                Read more →
+              </Link>
+            </div>
+
+            {/* Blog Post 3 */}
+            <div className={`testimonial-card card-hover hover-glow group scroll-fade-right ${blogAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-float [animation-delay:0.6s]"></div>
+                <span className="text-sm text-gray-400 uppercase tracking-wider">MONETIZATION GUIDE</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-green-400 transition-colors duration-300">
+                The Ultimate <span className="text-green-400">Whop Clipping Strategy</span>
+              </h3>
+              <p className="text-gray-400 mb-4">Turn Twitch streams into a $10K/month business with this proven system used by 500+ successful clippers</p>
+              <div className="flex items-center text-sm text-gray-500 mb-6">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>15 min read</span>
+                <span className="mx-2">•</span>
+                <span>Jan 22, 2024</span>
+              </div>
+              <Link href="/blog/whop-clipping" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
+                Read more →
               </Link>
             </div>
           </div>
