@@ -68,7 +68,13 @@ const SelectValue = ({ placeholder }: { placeholder?: string }) => {
   return <span>{value || placeholder}</span>
 }
 
-const SelectContent = ({ children }: { children: React.ReactNode }) => {
+const SelectContent = ({ 
+  children, 
+  className 
+}: { 
+  children: React.ReactNode
+  className?: string 
+}) => {
   const { open, onOpenChange } = React.useContext(SelectContext)
   
   if (!open) return null
@@ -79,7 +85,10 @@ const SelectContent = ({ children }: { children: React.ReactNode }) => {
         className="fixed inset-0 z-50"
         onClick={() => onOpenChange?.(false)}
       />
-      <div className="absolute z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md animate-in fade-in-80 top-full mt-1">
+      <div className={cn(
+        "absolute z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md animate-in fade-in-80 top-full mt-1",
+        className
+      )}>
         <div className="p-1">{children}</div>
       </div>
     </>
