@@ -276,7 +276,7 @@ export default function HomePage() {
                 </svg>
                 <span>12 min read</span>
                 <span className="mx-2">•</span>
-                <span>Jan 15, 2024</span>
+                <span>Jan 15, 2025</span>
               </div>
               <Link href="/blog/500k-followers" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Read more →
@@ -299,7 +299,7 @@ export default function HomePage() {
                 </svg>
                 <span>12 min read</span>
                 <span className="mx-2">•</span>
-                <span>Jan 8, 2024</span>
+                <span>Jan 8, 2025</span>
               </div>
               <Link href="/blog/instagram-ignited-success-stories" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Read more →
@@ -322,7 +322,7 @@ export default function HomePage() {
                 </svg>
                 <span>15 min read</span>
                 <span className="mx-2">•</span>
-                <span>Jan 22, 2024</span>
+                <span>Jan 22, 2025</span>
               </div>
               <Link href="/blog/whop-clipping" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Read more →

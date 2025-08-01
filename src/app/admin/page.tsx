@@ -31,36 +31,36 @@ export default function AdminDashboard() {
   useEffect(() => {
     const initialPages: PageConfig[] = [
       // SEO Tools
-      { path: '/analytics-dashboard', title: 'Analytics Dashboard', category: 'seo-tools', isHidden: true, isActive: true, description: 'Advanced SEO analytics and monitoring', lastModified: '2024-01-15', visits: 156 },
-      { path: '/rank-tracking', title: 'Rank Tracking System', category: 'seo-tools', isHidden: true, isActive: true, description: 'Real-time SERP position monitoring', lastModified: '2024-01-14', visits: 89 },
-      { path: '/competitor-backlinks', title: 'Competitor Backlink Analysis', category: 'seo-tools', isHidden: true, isActive: true, description: 'Backlink replication and analysis', lastModified: '2024-01-13', visits: 234 },
-      { path: '/pbn', title: 'PBN Quick Deploy', category: 'seo-tools', isHidden: true, isActive: true, description: 'Private blog network management', lastModified: '2024-01-12', visits: 67 },
-      { path: '/ctr', title: 'CTR Manipulation Network', category: 'seo-tools', isHidden: true, isActive: true, description: 'Click-through rate optimization', lastModified: '2024-01-11', visits: 145 },
-      { path: '/defense', title: 'Negative SEO Defense', category: 'seo-tools', isHidden: true, isActive: true, description: 'Protection against SEO attacks', lastModified: '2024-01-10', visits: 78 },
-      { path: '/parasite', title: 'Parasite SEO Engine', category: 'seo-tools', isHidden: true, isActive: true, description: 'High-authority domain exploitation', lastModified: '2024-01-09', visits: 123 },
-      { path: '/link-wheel', title: 'Link Wheel Construction', category: 'seo-tools', isHidden: true, isActive: true, description: 'Advanced link building networks', lastModified: '2024-01-08', visits: 91 },
-      { path: '/guest-posts', title: 'Guest Post Automation', category: 'seo-tools', isHidden: true, isActive: true, description: 'Automated guest posting campaigns', lastModified: '2024-01-07', visits: 167 },
-      { path: '/social-signals', title: 'Social Signal Automation', category: 'seo-tools', isHidden: true, isActive: true, description: 'Social media engagement automation', lastModified: '2024-01-06', visits: 203 },
-      { path: '/clusters', title: 'Content Cluster Engine', category: 'seo-tools', isHidden: true, isActive: true, description: 'Topical authority content generation', lastModified: '2024-01-05', visits: 134 },
-      { path: '/algorithm-defense', title: 'Algorithm Defense System', category: 'seo-tools', isHidden: true, isActive: true, description: 'Algorithm update protection', lastModified: '2024-01-04', visits: 98 },
+      { path: '/analytics-dashboard', title: 'Analytics Dashboard', category: 'seo-tools', isHidden: true, isActive: true, description: 'Advanced SEO analytics and monitoring', lastModified: '2025-01-15', visits: 156 },
+      { path: '/rank-tracking', title: 'Rank Tracking System', category: 'seo-tools', isHidden: true, isActive: true, description: 'Real-time SERP position monitoring', lastModified: '2025-01-14', visits: 89 },
+      { path: '/competitor-backlinks', title: 'Competitor Backlink Analysis', category: 'seo-tools', isHidden: true, isActive: true, description: 'Backlink replication and analysis', lastModified: '2025-01-13', visits: 234 },
+      { path: '/pbn', title: 'PBN Quick Deploy', category: 'seo-tools', isHidden: true, isActive: true, description: 'Private blog network management', lastModified: '2025-01-12', visits: 67 },
+      { path: '/ctr', title: 'CTR Manipulation Network', category: 'seo-tools', isHidden: true, isActive: true, description: 'Click-through rate optimization', lastModified: '2025-01-11', visits: 145 },
+      { path: '/defense', title: 'Negative SEO Defense', category: 'seo-tools', isHidden: true, isActive: true, description: 'Protection against SEO attacks', lastModified: '2025-01-10', visits: 78 },
+      { path: '/parasite', title: 'Parasite SEO Engine', category: 'seo-tools', isHidden: true, isActive: true, description: 'High-authority domain exploitation', lastModified: '2025-01-09', visits: 123 },
+      { path: '/link-wheel', title: 'Link Wheel Construction', category: 'seo-tools', isHidden: true, isActive: true, description: 'Advanced link building networks', lastModified: '2025-01-08', visits: 91 },
+      { path: '/guest-posts', title: 'Guest Post Automation', category: 'seo-tools', isHidden: true, isActive: true, description: 'Automated guest posting campaigns', lastModified: '2025-01-07', visits: 167 },
+      { path: '/social-signals', title: 'Social Signal Automation', category: 'seo-tools', isHidden: true, isActive: true, description: 'Social media engagement automation', lastModified: '2025-01-06', visits: 203 },
+      { path: '/clusters', title: 'Content Cluster Engine', category: 'seo-tools', isHidden: true, isActive: true, description: 'Topical authority content generation', lastModified: '2025-01-05', visits: 134 },
+      { path: '/algorithm-defense', title: 'Algorithm Defense System', category: 'seo-tools', isHidden: true, isActive: true, description: 'Algorithm update protection', lastModified: '2025-01-04', visits: 98 },
 
       // Main Pages
-      { path: '/', title: 'Homepage', category: 'main', isHidden: false, isActive: true, description: 'Main landing page', lastModified: '2024-01-15', visits: 2456 },
-      { path: '/instagram-ignited', title: 'Instagram Ignited Course', category: 'main', isHidden: false, isActive: true, description: 'Instagram growth course', lastModified: '2024-01-14', visits: 1234 },
-      { path: '/digital-products', title: 'Digital Products', category: 'main', isHidden: false, isActive: true, description: 'Digital product marketplace', lastModified: '2024-01-13', visits: 876 },
-      { path: '/comfyui-workflows', title: 'ComfyUI Workflows', category: 'main', isHidden: false, isActive: true, description: 'AI workflow templates', lastModified: '2024-01-12', visits: 654 },
-      { path: '/n8n-ai-automations', title: 'N8N AI Automations', category: 'main', isHidden: false, isActive: true, description: 'Automation workflows', lastModified: '2024-01-11', visits: 432 },
+      { path: '/', title: 'Homepage', category: 'main', isHidden: false, isActive: true, description: 'Main landing page', lastModified: '2025-01-15', visits: 2456 },
+      { path: '/instagram-ignited', title: 'Instagram Ignited Course', category: 'main', isHidden: false, isActive: true, description: 'Instagram growth course', lastModified: '2025-01-14', visits: 1234 },
+      { path: '/digital-products', title: 'Digital Products', category: 'main', isHidden: false, isActive: true, description: 'Digital product marketplace', lastModified: '2025-01-13', visits: 876 },
+      { path: '/comfyui-workflows', title: 'ComfyUI Workflows', category: 'main', isHidden: false, isActive: true, description: 'AI workflow templates', lastModified: '2025-01-12', visits: 654 },
+      { path: '/n8n-ai-automations', title: 'N8N AI Automations', category: 'main', isHidden: false, isActive: true, description: 'Automation workflows', lastModified: '2025-01-11', visits: 432 },
 
       // Blog Pages
-      { path: '/blog', title: 'Blog Index', category: 'blog', isHidden: false, isActive: true, description: 'Main blog page', lastModified: '2024-01-15', visits: 3456 },
-      { path: '/blog/ai-automation-guide', title: 'AI Automation Guide', category: 'blog', isHidden: false, isActive: true, description: 'Complete AI automation tutorial', lastModified: '2024-01-14', visits: 567 },
-      { path: '/blog/instagram-growth-2024', title: 'Instagram Growth 2024', category: 'blog', isHidden: false, isActive: true, description: 'Latest Instagram growth strategies', lastModified: '2024-01-13', visits: 789 },
-      { path: '/blog/passive-income-blueprint', title: 'Passive Income Blueprint', category: 'blog', isHidden: false, isActive: true, description: 'Complete passive income guide', lastModified: '2024-01-12', visits: 1023 },
+      { path: '/blog', title: 'Blog Index', category: 'blog', isHidden: false, isActive: true, description: 'Main blog page', lastModified: '2025-01-15', visits: 3456 },
+      { path: '/blog/ai-automation-guide', title: 'AI Automation Guide', category: 'blog', isHidden: false, isActive: true, description: 'Complete AI automation tutorial', lastModified: '2025-01-14', visits: 567 },
+      { path: '/blog/instagram-growth-2025', title: 'Instagram Growth 2025', category: 'blog', isHidden: false, isActive: true, description: 'Latest Instagram growth strategies', lastModified: '2025-01-13', visits: 789 },
+      { path: '/blog/passive-income-blueprint', title: 'Passive Income Blueprint', category: 'blog', isHidden: false, isActive: true, description: 'Complete passive income guide', lastModified: '2025-01-12', visits: 1023 },
 
       // API Endpoints
-      { path: '/api/analytics-dashboard', title: 'Analytics API', category: 'api', isHidden: true, isActive: true, description: 'Analytics data endpoints', lastModified: '2024-01-15', visits: 0 },
-      { path: '/api/rank-tracking', title: 'Rank Tracking API', category: 'api', isHidden: true, isActive: true, description: 'SERP tracking endpoints', lastModified: '2024-01-14', visits: 0 },
-      { path: '/api/competitor-backlinks', title: 'Backlinks API', category: 'api', isHidden: true, isActive: true, description: 'Backlink analysis endpoints', lastModified: '2024-01-13', visits: 0 },
+      { path: '/api/analytics-dashboard', title: 'Analytics API', category: 'api', isHidden: true, isActive: true, description: 'Analytics data endpoints', lastModified: '2025-01-15', visits: 0 },
+      { path: '/api/rank-tracking', title: 'Rank Tracking API', category: 'api', isHidden: true, isActive: true, description: 'SERP tracking endpoints', lastModified: '2025-01-14', visits: 0 },
+      { path: '/api/competitor-backlinks', title: 'Backlinks API', category: 'api', isHidden: true, isActive: true, description: 'Backlink analysis endpoints', lastModified: '2025-01-13', visits: 0 },
     ]
     setPages(initialPages)
   }, [])

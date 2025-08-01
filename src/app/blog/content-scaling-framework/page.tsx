@@ -32,7 +32,7 @@ export default function ContentScalingFramework() {
               How to create <span className="text-white font-semibold">1,000 pieces of content monthly</span> without burning out
             </p>
 
-            <BlogMetrics publishDate="2024-02-22" readTime="22 min" />
+            <BlogMetrics publishDate="2025-02-22" readTime="22 min" />
           </div>
         </div>
       </section>

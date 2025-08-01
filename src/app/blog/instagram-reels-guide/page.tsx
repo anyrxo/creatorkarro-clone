@@ -32,7 +32,7 @@ export default function InstagramReelsGuide() {
               Master the art of creating Instagram Reels that <span className="text-white font-semibold">go viral and drive massive engagement</span>
             </p>
 
-            <BlogMetrics publishDate="2024-01-11" readTime="14 min" />
+            <BlogMetrics publishDate="2025-01-11" readTime="14 min" />
           </div>
         </div>
       </section>

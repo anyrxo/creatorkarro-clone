@@ -32,7 +32,7 @@ export default function SalesPagePsychology() {
               Discover the <span className="text-white font-semibold">psychological triggers and copywriting techniques</span> that convert visitors into buyers
             </p>
 
-            <BlogMetrics publishDate="2024-01-26" readTime="14 min" />
+            <BlogMetrics publishDate="2025-01-26" readTime="14 min" />
           </div>
         </div>
       </section>

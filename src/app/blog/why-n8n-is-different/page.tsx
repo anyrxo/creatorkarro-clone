@@ -32,7 +32,7 @@ export default function WhyN8NisDifferent() {
               The technical breakdown that shows why <span className="text-white font-semibold">N8N is the automation platform of choice</span> for power users
             </p>
 
-            <BlogMetrics publishDate="2024-02-07" readTime="10 min" />
+            <BlogMetrics publishDate="2025-02-07" readTime="10 min" />
           </div>
         </div>
       </section>

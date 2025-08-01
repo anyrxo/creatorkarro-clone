@@ -8,7 +8,7 @@ const existingPosts = [
   'ai-content-income',
   'digital-product-success-story',
   'digital-products-that-sell',
-  'instagram-growth-2024',
+  'instagram-growth-2025',
   'instagram-ignited-success-stories',
   'whop-clipping'
 ]

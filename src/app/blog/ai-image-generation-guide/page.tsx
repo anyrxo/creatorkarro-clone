@@ -32,7 +32,7 @@ export default function AIImageGenerationGuide() {
               Master every AI image tool and technique to <span className="text-white font-semibold">create viral content in minutes</span>
             </p>
 
-            <BlogMetrics publishDate="2024-02-20" readTime="20 min" />
+            <BlogMetrics publishDate="2025-02-20" readTime="20 min" />
           </div>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function AIImageGenerationGuide() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">The AI Image Generation Landscape 2024</h2>
+            <h2 className="text-2xl font-bold text-white text-center mb-8">The AI Image Generation Landscape 2025</h2>
             <div className="grid md:grid-cols-4 gap-4">
               <div className="bg-zinc-900 rounded-xl p-4 text-center">
                 <div className="text-3xl font-bold text-blue-400 mb-2">15+</div>

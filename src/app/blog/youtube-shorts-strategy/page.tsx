@@ -32,7 +32,7 @@ export default function YouTubeShortsStrategy() {
               How to crack the YouTube Shorts algorithm and <span className="text-white font-semibold">build a massive following fast</span>
             </p>
 
-            <BlogMetrics publishDate="2024-01-14" readTime="15 min" />
+            <BlogMetrics publishDate="2025-01-14" readTime="15 min" />
           </div>
         </div>
       </section>

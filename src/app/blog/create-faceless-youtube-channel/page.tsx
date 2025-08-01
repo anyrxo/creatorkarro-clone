@@ -32,7 +32,7 @@ export default function CreateFacelessYouTubeChannel() {
               The complete guide to building a <span className="text-white font-semibold">profitable faceless YouTube channel from scratch</span>
             </p>
 
-            <BlogMetrics publishDate="2024-01-26" readTime="18 min" />
+            <BlogMetrics publishDate="2025-01-26" readTime="18 min" />
           </div>
         </div>
       </section>

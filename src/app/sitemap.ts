@@ -4,7 +4,7 @@ import { generateMassiveSitemaps } from '@/lib/sitemap-generator'
 
 // Blog posts slugs (would typically come from a database or CMS)
 const blogPosts = [
-  'instagram-growth-2024',
+  'instagram-growth-2025',
   'instagram-reels-guide',
   'tiktok-growth-hacks',
   'comfyui-workflow-library',
@@ -18,7 +18,7 @@ const blogPosts = [
   'ai-era-skills',
   'digital-products-empire',
   'ai-content-opportunity',
-  'digital-products-ideas-2024',
+  'digital-products-ideas-2025',
   'faceless-content-strategy',
   'how-to-sell-templates',
   'create-faceless-youtube-channel',

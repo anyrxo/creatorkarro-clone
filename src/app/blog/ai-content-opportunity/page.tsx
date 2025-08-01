@@ -32,7 +32,7 @@ export default function AIContentOpportunity() {
               Why the next 24 months will create more <span className="text-white font-semibold">content millionaires than the last 24 years</span>
             </p>
 
-            <BlogMetrics publishDate="2024-02-19" readTime="16 min" />
+            <BlogMetrics publishDate="2025-02-19" readTime="16 min" />
           </div>
         </div>
       </section>
@@ -406,7 +406,7 @@ export default function AIContentOpportunity() {
           <div className="bg-zinc-800 rounded-xl p-8">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-bold text-red-400 mb-4">Old World (Pre-2024)</h3>
+                <h3 className="text-xl font-bold text-red-400 mb-4">Old World (Pre-2025)</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li>• 1 piece of content = hours/days</li>
                   <li>• Limited by personal capacity</li>
@@ -416,7 +416,7 @@ export default function AIContentOpportunity() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-green-400 mb-4">New World (2024+)</h3>
+                <h3 className="text-xl font-bold text-green-400 mb-4">New World (2025+)</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li>• 100 pieces = hours/days</li>
                   <li>• Limited only by imagination</li>

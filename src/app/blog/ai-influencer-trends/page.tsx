@@ -32,7 +32,7 @@ export default function AIInfluencerTrends() {
               How virtual humans are reshaping <span className="text-white font-semibold">social media, marketing, and creator economy</span>
             </p>
 
-            <BlogMetrics publishDate="2024-02-03" readTime="13 min" />
+            <BlogMetrics publishDate="2025-02-03" readTime="13 min" />
           </div>
         </div>
       </section>
@@ -309,7 +309,7 @@ export default function AIInfluencerTrends() {
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-blue-400 mb-4">🚀 2024 Predictions</h3>
+              <h3 className="text-xl font-bold text-blue-400 mb-4">🚀 2025 Predictions</h3>
               <ul className="space-y-2 text-gray-300">
                 <li>• First AI influencer with 10M+ followers</li>
                 <li>• AI-generated Hollywood movie star</li>

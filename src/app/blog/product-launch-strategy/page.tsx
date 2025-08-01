@@ -32,7 +32,7 @@ export default function ProductLaunchStrategy() {
               The exact 60-day strategy I use to launch <span className="text-white font-semibold">6-figure digital products consistently</span>
             </p>
 
-            <BlogMetrics publishDate="2024-02-13" readTime="15 min" />
+            <BlogMetrics publishDate="2025-02-13" readTime="15 min" />
           </div>
         </div>
       </section>

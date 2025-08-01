@@ -32,7 +32,7 @@ export default function AIInfluencerSuccess() {
               Discover how Isabella created <span className="text-white font-semibold">AI models that generate content 24/7</span> and earn through partnerships
             </p>
 
-            <BlogMetrics publishDate="2024-01-14" readTime="14 min" />
+            <BlogMetrics publishDate="2025-01-14" readTime="14 min" />
           </div>
         </div>
       </section>

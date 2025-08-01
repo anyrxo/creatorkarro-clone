@@ -32,7 +32,7 @@ export default function DigitalProductsEmpire() {
               Behind the scenes of my digital product business and <span className="text-white font-semibold">the strategies that drive success</span>
             </p>
 
-            <BlogMetrics publishDate="2024-01-22" readTime="16 min" />
+            <BlogMetrics publishDate="2025-01-22" readTime="16 min" />
           </div>
         </div>
       </section>

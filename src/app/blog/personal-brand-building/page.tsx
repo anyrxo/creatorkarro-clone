@@ -32,7 +32,7 @@ export default function PersonalBrandBuilding() {
               The step-by-step system to create a <span className="text-white font-semibold">magnetic personal brand that attracts opportunities</span>
             </p>
 
-            <BlogMetrics publishDate="2024-02-05" readTime="14 min" />
+            <BlogMetrics publishDate="2025-02-05" readTime="14 min" />
           </div>
         </div>
       </section>

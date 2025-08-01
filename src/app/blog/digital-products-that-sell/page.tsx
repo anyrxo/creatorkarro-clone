@@ -57,10 +57,10 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What digital products sell best in 2024?",
+      "name": "What digital products sell best in 2025?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The best-selling digital products in 2024 include online courses ($47B market), templates and tools ($12B), stock content ($4.8B), coaching programs ($3.2B), and membership sites ($2.1B). Niche-specific products in health, wealth, and relationships consistently generate $1K-10K/day. Focus on transformation-based products over information-only products for maximum profit."
+        "text": "The best-selling digital products in 2025 include online courses ($47B market), templates and tools ($12B), stock content ($4.8B), coaching programs ($3.2B), and membership sites ($2.1B). Niche-specific products in health, wealth, and relationships consistently generate $1K-10K/day. Focus on transformation-based products over information-only products for maximum profit."
       }
     },
     {
@@ -168,7 +168,7 @@ export default function DigitalProductsThatSell() {
                 Discover the exact <span className="text-white font-semibold">digital product ideas and selling strategies</span> that generate $30K+/month using proven psychological triggers and the best digital products to sell online
               </p>
 
-              <BlogMetrics publishDate="2024-01-18" readTime="16 min" />
+              <BlogMetrics publishDate="2025-01-18" readTime="16 min" />
               
               {/* Quick answer for featured snippets */}
               <div className="mt-8 p-6 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl border border-green-500/20">
@@ -187,7 +187,7 @@ export default function DigitalProductsThatSell() {
         {/* Digital Product Statistics - Optimized for entity SEO */}
         <section className="py-16 px-4 border-y border-gray-800" itemScope itemType="https://schema.org/Dataset">
           <div className="container mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-4">Digital Product Market Reality Check 2024</h2>
+            <h2 className="text-2xl font-bold text-white text-center mb-4">Digital Product Market Reality Check 2025</h2>
             <p className="text-center text-gray-400 mb-8 max-w-3xl mx-auto">
               Understanding why 90% of digital products fail while 10% generate life-changing income. These statistics reveal what separates million-dollar digital products from failures.
             </p>
@@ -204,7 +204,7 @@ export default function DigitalProductsThatSell() {
               </div>
               <div className="text-center" itemProp="distribution">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">$47B+</div>
-                <div className="text-gray-400">Market Size 2024</div>
+                <div className="text-gray-400">Market Size 2025</div>
                 <div className="text-xs text-gray-500 mt-1">Growing 15% yearly</div>
               </div>
               <div className="text-center" itemProp="distribution">
@@ -455,7 +455,7 @@ export default function DigitalProductsThatSell() {
             
             {/* Profitable Niches */}
             <div className="bg-zinc-900 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-white mb-4">Most Profitable Digital Product Niches 2024</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Most Profitable Digital Product Niches 2025</h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div>
                   <h4 className="text-green-400 font-semibold mb-2">Health & Wellness</h4>
@@ -662,12 +662,12 @@ export default function DigitalProductsThatSell() {
               {/* FAQ 1 */}
               <div className="bg-zinc-800 rounded-xl p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <h3 className="text-xl font-bold text-green-400 mb-3" itemProp="name">
-                  What digital products sell best in 2024?
+                  What digital products sell best in 2025?
                 </h3>
                 <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                   <div itemProp="text" className="text-gray-300">
                     <p className="mb-3">
-                      The best-selling digital products in 2024 are <strong>online courses</strong> ($47B market), 
+                      The best-selling digital products in 2025 are <strong>online courses</strong> ($47B market), 
                       <strong>templates and tools</strong> ($12B), <strong>stock content</strong> ($4.8B), 
                       <strong>coaching programs</strong> ($3.2B), and <strong>membership sites</strong> ($2.1B).
                     </p>

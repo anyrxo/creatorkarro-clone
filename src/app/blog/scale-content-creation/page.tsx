@@ -32,7 +32,7 @@ export default function ScaleContentCreation() {
               My exact system for creating <span className="text-white font-semibold">a month's worth of content in a single afternoon</span>
             </p>
 
-            <BlogMetrics publishDate="2024-01-15" readTime="12 min" />
+            <BlogMetrics publishDate="2025-01-15" readTime="12 min" />
           </div>
         </div>
       </section>

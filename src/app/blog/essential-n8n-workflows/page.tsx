@@ -32,7 +32,7 @@ export default function EssentialN8NWorkflows() {
               Save <span className="text-white font-semibold">20+ hours per week</span> with these essential automation workflows for content creators
             </p>
 
-            <BlogMetrics publishDate="2024-01-28" readTime="13 min" />
+            <BlogMetrics publishDate="2025-01-28" readTime="13 min" />
           </div>
         </div>
       </section>

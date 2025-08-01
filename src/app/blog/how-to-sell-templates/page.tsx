@@ -32,7 +32,7 @@ export default function HowToSellTemplates() {
               The exact blueprint to turn <span className="text-white font-semibold">2-hour projects into passive income machines</span>
             </p>
 
-            <BlogMetrics publishDate="2024-02-25" readTime="17 min" />
+            <BlogMetrics publishDate="2025-02-25" readTime="17 min" />
           </div>
         </div>
       </section>

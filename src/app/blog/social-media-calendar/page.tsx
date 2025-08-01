@@ -32,7 +32,7 @@ export default function SocialMediaCalendar() {
               Copy my exact posting schedule and content themes that <span className="text-white font-semibold">convert followers into customers</span>
             </p>
 
-            <BlogMetrics publishDate="2024-01-16" readTime="11 min" />
+            <BlogMetrics publishDate="2025-01-16" readTime="11 min" />
           </div>
         </div>
       </section>

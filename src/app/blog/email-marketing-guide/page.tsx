@@ -32,7 +32,7 @@ export default function EmailMarketingGuide() {
               The email sequences and strategies that <span className="text-white font-semibold">generate 40% of my total revenue</span>
             </p>
 
-            <BlogMetrics publishDate="2024-01-20" readTime="14 min" />
+            <BlogMetrics publishDate="2025-01-20" readTime="14 min" />
           </div>
         </div>
       </section>

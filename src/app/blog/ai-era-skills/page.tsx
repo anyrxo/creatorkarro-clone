@@ -32,7 +32,7 @@ export default function AIEraSkills() {
               Master these skills to <span className="text-white font-semibold">thrive in the AI revolution</span> and command premium rates
             </p>
 
-            <BlogMetrics publishDate="2024-02-17" readTime="14 min" />
+            <BlogMetrics publishDate="2025-02-17" readTime="14 min" />
           </div>
         </div>
       </section>
@@ -56,7 +56,7 @@ export default function AIEraSkills() {
               <div className="bg-zinc-900 rounded-xl p-6">
                 <div className="text-4xl font-bold text-blue-400 mb-2">375%</div>
                 <p className="text-gray-400">Increase in AI skill demand</p>
-                <p className="text-sm text-gray-500 mt-2">LinkedIn 2024 Report</p>
+                <p className="text-sm text-gray-500 mt-2">LinkedIn 2025 Report</p>
               </div>
             </div>
           </div>

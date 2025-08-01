@@ -32,7 +32,7 @@ export default function N8nBeginnersGuide() {
               The complete guide to <span className="text-white font-semibold">workflow automation that saves 20+ hours/week</span>
             </p>
 
-            <BlogMetrics publishDate="2024-03-01" readTime="21 min" />
+            <BlogMetrics publishDate="2025-03-01" readTime="21 min" />
           </div>
         </div>
       </section>

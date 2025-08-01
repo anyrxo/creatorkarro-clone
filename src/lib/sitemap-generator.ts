@@ -34,7 +34,7 @@ export async function generateMassiveSitemaps() {
   ]
   
   const modifiers = [
-    'best', 'top', 'guide', 'course', 'tutorial', '2024', '2025', 'advanced',
+    'best', 'top', 'guide', 'course', 'tutorial', '2025', '2026', 'advanced',
     'ultimate', 'complete', 'professional', 'expert', 'master', 'premium',
     'proven', 'secret', 'blueprint', 'strategy', 'system', 'method',
     'technique', 'hack', 'trick', 'tip', 'comprehensive', 'detailed'
@@ -79,7 +79,7 @@ export async function generateMassiveSitemaps() {
   
   // Add blog variations
   const blogPosts = [
-    'instagram-growth-2024', 'instagram-reels-guide', 'tiktok-growth-hacks',
+    'instagram-growth-2025', 'instagram-reels-guide', 'tiktok-growth-hacks',
     'comfyui-workflow-library', 'youtube-shorts-strategy', 'scale-content-creation',
     'social-media-calendar', 'product-launch-strategy', 'ai-automation-guide'
   ]

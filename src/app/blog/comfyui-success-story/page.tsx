@@ -32,7 +32,7 @@ export default function ComfyUISuccessStory() {
               Learn how Ryan increased his client work rate by <span className="text-white font-semibold">500%</span> using AI-enhanced design workflows
             </p>
 
-            <BlogMetrics publishDate="2024-01-16" readTime="13 min" />
+            <BlogMetrics publishDate="2025-01-16" readTime="13 min" />
           </div>
         </div>
       </section>

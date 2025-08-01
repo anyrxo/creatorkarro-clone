@@ -34,7 +34,7 @@ export default function WhopClippingGuide() {
               Turn Twitch streams into a <span className="text-white font-semibold">$10K/month business</span> with this proven system used by 500+ successful clippers
             </p>
 
-            <BlogMetrics publishDate="2024-01-22" readTime="15 min" />
+            <BlogMetrics publishDate="2025-01-22" readTime="15 min" />
           </div>
         </div>
       </section>

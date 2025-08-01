@@ -32,7 +32,7 @@ export default function N8NAutomationSuccess() {
               See how Devon saved <span className="text-white font-semibold">40+ hours per week</span> by automating his content workflow across 5 platforms
             </p>
 
-            <BlogMetrics publishDate="2024-01-12" readTime="10 min" />
+            <BlogMetrics publishDate="2025-01-12" readTime="10 min" />
           </div>
         </div>
       </section>

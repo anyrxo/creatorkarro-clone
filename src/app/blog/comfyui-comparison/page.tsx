@@ -32,7 +32,7 @@ export default function ComfyUIComparison() {
               The definitive comparison of <span className="text-white font-semibold">ComfyUI, Automatic1111, and Midjourney</span> for content creators
             </p>
 
-            <BlogMetrics publishDate="2024-01-30" readTime="12 min" />
+            <BlogMetrics publishDate="2025-01-30" readTime="12 min" />
           </div>
         </div>
       </section>

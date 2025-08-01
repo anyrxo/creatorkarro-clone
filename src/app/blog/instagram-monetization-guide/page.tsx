@@ -29,10 +29,10 @@ export default function InstagramMonetizationGuide() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-8">
-              The complete guide to <span className="text-white font-semibold">Instagram monetization in 2024</span> (with real numbers)
+              The complete guide to <span className="text-white font-semibold">Instagram monetization in 2025</span> (with real numbers)
             </p>
 
-            <BlogMetrics publishDate="2024-02-15" readTime="18 min" />
+            <BlogMetrics publishDate="2025-02-15" readTime="18 min" />
           </div>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function InstagramMonetizationGuide() {
         className={`section-spacing scroll-fade-up ${methodsAnimation.isVisible ? 'visible' : ''}`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">10 Ways to Monetize Instagram in 2024</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">10 Ways to Monetize Instagram in 2025</h2>
           
           <div className="space-y-8">
             {/* Method 1 */}

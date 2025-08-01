@@ -32,7 +32,7 @@ export default function PromptEngineeringGuide() {
               Master the art of AI communication with <span className="text-white font-semibold">battle-tested frameworks and 100+ examples</span>
             </p>
 
-            <BlogMetrics publishDate="2024-03-03" readTime="28 min" />
+            <BlogMetrics publishDate="2025-03-03" readTime="28 min" />
           </div>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function PromptEngineeringGuide() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">Why Prompt Engineering = Money in 2024</h2>
+            <h2 className="text-2xl font-bold text-white text-center mb-8">Why Prompt Engineering = Money in 2025</h2>
             <div className="grid md:grid-cols-4 gap-4">
               <div className="bg-zinc-900 rounded-xl p-4 text-center">
                 <div className="text-3xl mb-2">💰</div>

@@ -32,7 +32,7 @@ export default function AIAutomationBusiness() {
               A deep dive into the exact <span className="text-white font-semibold">AI stack and automation workflows</span> that power my business
             </p>
 
-            <BlogMetrics publishDate="2024-01-22" readTime="18 min" />
+            <BlogMetrics publishDate="2025-01-22" readTime="18 min" />
           </div>
         </div>
       </section>

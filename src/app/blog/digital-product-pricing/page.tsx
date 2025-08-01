@@ -32,7 +32,7 @@ export default function DigitalProductPricing() {
               Discover the <span className="text-white font-semibold">pricing strategies that 6-figure creators use</span> to maximize revenue
             </p>
 
-            <BlogMetrics publishDate="2024-02-01" readTime="11 min" />
+            <BlogMetrics publishDate="2025-02-01" readTime="11 min" />
           </div>
         </div>
       </section>

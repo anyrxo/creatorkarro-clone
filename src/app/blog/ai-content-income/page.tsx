@@ -32,7 +32,7 @@ export default function AIContentIncome() {
               Full breakdown of my <span className="text-white font-semibold">AI content monetization strategy</span> and income streams
             </p>
 
-            <BlogMetrics publishDate="2024-02-15" readTime="13 min" />
+            <BlogMetrics publishDate="2025-02-15" readTime="13 min" />
           </div>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function AIContentIncome() {
         className={`section-spacing scroll-fade-up ${breakdownAnimation.isVisible ? 'visible' : ''}`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">February 2024 Income Breakdown</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">February 2025 Income Breakdown</h2>
           
           <div className="space-y-4 mb-12">
             <div className="bg-zinc-900 rounded-xl p-6">

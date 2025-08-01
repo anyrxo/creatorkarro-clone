@@ -33,7 +33,7 @@ export default function DigitalProductSuccessStory() {
               How Sophia Chen launched her <span className="text-white font-semibold">digital product empire</span> using proven strategies from Anyro's course
             </p>
 
-            <BlogMetrics publishDate="2024-01-10" readTime="15 min" />
+            <BlogMetrics publishDate="2025-01-10" readTime="15 min" />
           </div>
         </div>
       </section>

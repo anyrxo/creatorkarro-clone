@@ -34,7 +34,7 @@ export default function InstagramIgnitedSuccessStories() {
               How Marcus Rivera used <span className="text-white font-semibold">Instagram Ignited</span> to build a $15K/month business in just 8 months
             </p>
 
-            <BlogMetrics publishDate="2024-01-08" readTime="12 min" />
+            <BlogMetrics publishDate="2025-01-08" readTime="12 min" />
           </div>
         </div>
       </section>

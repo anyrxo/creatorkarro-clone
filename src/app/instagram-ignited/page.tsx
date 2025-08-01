@@ -400,7 +400,7 @@ export default function InstagramIgnitedPage() {
               },
               {
                 name: "Jake",
-                story: "Jake joined IImagined in summer 2024 with under 100 followers. After completing the Instagram Ignited program and getting a personalized audit, his growth soared from 15K to 64K followers, earning a full-time income from his brand."
+                story: "Jake joined IImagined in summer 2025 with under 100 followers. After completing the Instagram Ignited program and getting a personalized audit, his growth soared from 15K to 64K followers, earning a full-time income from his brand."
               }
             ].map((story, index) => (
               <div

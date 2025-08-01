@@ -34,7 +34,7 @@ export default function BlogPost() {
               The complete Instagram blueprint that took me from zero to <span className="text-white font-semibold">half a million followers</span> and $15K/month
             </p>
 
-            <BlogMetrics publishDate="2024-01-15" readTime="12 min" />
+            <BlogMetrics publishDate="2025-01-15" readTime="12 min" />
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ import BlogMetrics from '@/components/BlogMetrics'
 const passiveIncomeSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "Passive Income Ideas 2024: $100K/Year Blueprint & 7 Income Streams",
+  "name": "Passive Income Ideas 2025: $100K/Year Blueprint & 7 Income Streams",
   "description": "Learn how to make passive income online with proven passive income strategies. Build automated income streams that generate $10K monthly passive income from home.",
   "image": "https://iimagined.ai/passive-income-blueprint-featured.jpg",
   "totalTime": "PT90D",
@@ -56,7 +56,7 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What are the best passive income ideas for beginners in 2024?",
+      "name": "What are the best passive income ideas for beginners in 2025?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The best passive income ideas for beginners include online courses ($3,200/mo average), digital products ($2,100/mo), affiliate marketing ($1,800/mo), YouTube ad revenue ($500/mo), stock content ($300/mo), print on demand ($300/mo), and SaaS subscriptions ($200/mo). Start with digital products as they require minimal investment and can generate $1,000-2,500/mo within 90 days."
@@ -156,7 +156,7 @@ export default function PassiveIncomeBlueprint() {
               className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-6">
-                <span className="text-green-400 text-sm font-semibold">PASSIVE INCOME BLUEPRINT 2024</span>
+                <span className="text-green-400 text-sm font-semibold">PASSIVE INCOME BLUEPRINT 2025</span>
               </div>
 
               <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
@@ -167,11 +167,11 @@ export default function PassiveIncomeBlueprint() {
                 Discover the exact <span className="text-white font-semibold">passive income strategies and automated income systems</span> that generate $8,400/month while you sleep using real passive income ideas that work
               </p>
 
-              <BlogMetrics publishDate="2024-03-02" readTime="22 min" />
+              <BlogMetrics publishDate="2025-03-02" readTime="22 min" />
               
               {/* Quick answer for featured snippets */}
               <div className="mt-8 p-6 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl border border-green-500/20">
-                <h2 className="text-xl font-bold text-white mb-4">🎯 Quick Answer: Best Passive Income Ideas 2024</h2>
+                <h2 className="text-xl font-bold text-white mb-4">🎯 Quick Answer: Best Passive Income Ideas 2025</h2>
                 <p className="text-gray-300 text-left">
                   The most profitable passive income streams include <strong>online courses</strong> ($3,200/mo average), 
                   <strong>digital products</strong> ($2,100/mo), <strong>affiliate marketing</strong> ($1,800/mo), 
@@ -307,7 +307,7 @@ export default function PassiveIncomeBlueprint() {
           className={`section-spacing bg-zinc-900 scroll-fade-up ${streamsAnimation.isVisible ? 'visible' : ''}`}
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold text-white mb-4 text-center">7 Best Passive Income Streams That Actually Work in 2024</h2>
+            <h2 className="text-3xl font-bold text-white mb-4 text-center">7 Best Passive Income Streams That Actually Work in 2025</h2>
             <p className="text-center text-gray-400 mb-8 max-w-4xl mx-auto">
               These proven passive income ideas generate real monthly revenue through automated systems. Each income stream includes specific examples, earnings potential, and implementation strategies for making passive income online.
             </p>
@@ -709,7 +709,7 @@ export default function PassiveIncomeBlueprint() {
               {/* FAQ 1 */}
               <div className="bg-zinc-800 rounded-xl p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <h3 className="text-xl font-bold text-green-400 mb-3" itemProp="name">
-                  What are the best passive income ideas for beginners in 2024?
+                  What are the best passive income ideas for beginners in 2025?
                 </h3>
                 <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                   <div itemProp="text" className="text-gray-300">

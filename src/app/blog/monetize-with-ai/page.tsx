@@ -32,7 +32,7 @@ export default function MonetizeWithAI() {
               Real businesses making <span className="text-white font-semibold">real money with AI</span> (with proof)
             </p>
 
-            <BlogMetrics publishDate="2024-02-27" readTime="24 min" />
+            <BlogMetrics publishDate="2025-02-27" readTime="24 min" />
           </div>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function MonetizeWithAI() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">My AI Income Streams (Feb 2024)</h2>
+            <h2 className="text-2xl font-bold text-white text-center mb-8">My AI Income Streams (Feb 2025)</h2>
             <div className="grid md:grid-cols-5 gap-4">
               <div className="bg-zinc-900 rounded-xl p-4 text-center">
                 <h3 className="text-sm text-gray-400 mb-2">AI Courses</h3>

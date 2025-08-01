@@ -32,7 +32,7 @@ export default function InstagramMistakesLessons() {
               The brutal Instagram mistakes that taught me <span className="text-white font-semibold">what actually matters for monetization</span>
             </p>
 
-            <BlogMetrics publishDate="2024-02-09" readTime="12 min" />
+            <BlogMetrics publishDate="2025-02-09" readTime="12 min" />
           </div>
         </div>
       </section>
@@ -56,7 +56,7 @@ export default function InstagramMistakesLessons() {
                 <p className="text-gray-400 text-sm">Dropped to 25K</p>
               </div>
               <div className="bg-zinc-900 rounded-xl p-4">
-                <div className="text-3xl font-bold text-green-400 mb-2">2024</div>
+                <div className="text-3xl font-bold text-green-400 mb-2">2025</div>
                 <p className="text-gray-400 text-sm">$100K/mo revenue</p>
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function InstagramMistakesLessons() {
                         <span className="text-gray-300">DMs and shares &gt; likes</span>
                       </div>
                       <div className="flex items-center gap-3">
-                        <span className="text-pink-400">2024:</span>
+                        <span className="text-pink-400">2025:</span>
                         <span className="text-gray-300">AI content + authenticity balance</span>
                       </div>
                     </div>

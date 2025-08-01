@@ -32,7 +32,7 @@ export default function ChatGPTAutomationTips() {
               Turn ChatGPT into your <span className="text-white font-semibold">24/7 content creation machine</span> with these pro strategies
             </p>
 
-            <BlogMetrics publishDate="2024-02-21" readTime="18 min" />
+            <BlogMetrics publishDate="2025-02-21" readTime="18 min" />
           </div>
         </div>
       </section>

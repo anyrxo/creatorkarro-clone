@@ -32,7 +32,7 @@ export default function ViralCarouselGuide() {
               Master the art of creating carousels that get <span className="text-white font-semibold">3-5x more engagement</span> and drive sales
             </p>
 
-            <BlogMetrics publishDate="2024-01-20" readTime="11 min" />
+            <BlogMetrics publishDate="2025-01-20" readTime="11 min" />
           </div>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function ViralCarouselGuide() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">Why Carousels Dominate Instagram in 2024</h2>
+            <h2 className="text-2xl font-bold text-white text-center mb-8">Why Carousels Dominate Instagram in 2025</h2>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="text-4xl font-bold text-purple-400 mb-2">4.5x</div>

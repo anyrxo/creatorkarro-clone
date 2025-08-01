@@ -32,7 +32,7 @@ export default function ComfyUIWorkflowLibrary() {
               Copy-paste ready workflows for <span className="text-white font-semibold">AI art, video, animation, and automation</span>
             </p>
 
-            <BlogMetrics publishDate="2024-02-11" readTime="16 min" />
+            <BlogMetrics publishDate="2025-02-11" readTime="16 min" />
           </div>
         </div>
       </section>

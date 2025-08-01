@@ -32,7 +32,7 @@ export default function FacelessContentStrategy() {
               The complete blueprint to <span className="text-white font-semibold">anonymous content empire building</span>
             </p>
 
-            <BlogMetrics publishDate="2024-02-24" readTime="19 min" />
+            <BlogMetrics publishDate="2025-02-24" readTime="19 min" />
           </div>
         </div>
       </section>

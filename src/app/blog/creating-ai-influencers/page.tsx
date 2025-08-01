@@ -32,7 +32,7 @@ export default function CreatingAIInfluencers() {
               Step-by-step guide to building <span className="text-white font-semibold">AI influencers that generate content and revenue</span> on autopilot
             </p>
 
-            <BlogMetrics publishDate="2024-01-24" readTime="15 min" />
+            <BlogMetrics publishDate="2025-01-24" readTime="15 min" />
           </div>
         </div>
       </section>

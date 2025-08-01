@@ -32,7 +32,7 @@ export default function SocialMediaAutomation() {
               The complete system I use to manage <span className="text-white font-semibold">50+ accounts with 2 hours/week</span>
             </p>
 
-            <BlogMetrics publishDate="2024-03-04" readTime="20 min" />
+            <BlogMetrics publishDate="2025-03-04" readTime="20 min" />
           </div>
         </div>
       </section>

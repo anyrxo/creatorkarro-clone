@@ -65,9 +65,9 @@ export default function BlogComingSoon() {
               <p className="text-gray-400">And how to build one that sells $1K+/day using psychology and proven frameworks.</p>
             </Link>
 
-            <Link href="/blog/instagram-growth-2024" className="bg-zinc-900 rounded-xl p-6 hover:bg-zinc-800 transition-all duration-300 group">
+            <Link href="/blog/instagram-growth-2025" className="bg-zinc-900 rounded-xl p-6 hover:bg-zinc-800 transition-all duration-300 group">
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                Instagram Growth Hacks 2024
+                Instagram Growth Hacks 2025
               </h3>
               <p className="text-gray-400">Proven strategies to grow your Instagram following organically and sustainably.</p>
             </Link>

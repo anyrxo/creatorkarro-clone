@@ -7,14 +7,14 @@ import { useEffect, useState } from 'react'
 
 const blogPosts = [
   {
-    title: "Instagram Growth Hacks That Actually Work in 2024",
+    title: "Instagram Growth Hacks That Actually Work in 2025",
     category: "GROWTH GUIDE",
     categoryColor: "blue",
     excerpt: "Discover the underground Instagram growth strategies that top creators don't want you to know. From hashtag psychology to algorithm manipulation, I reveal the exact tactics that gained me 127K real followers.",
     description: "Proven strategies to grow your Instagram following organically and sustainably using advanced growth hacking techniques.",
     readTime: "12 min",
-    date: "2024-01-01",
-    slug: "instagram-growth-2024",
+    date: "2025-01-01",
+    slug: "instagram-growth-2025",
     keywords: ["instagram growth", "instagram followers", "grow instagram", "instagram algorithm", "instagram hacks"]
   },
   {
@@ -24,7 +24,7 @@ const blogPosts = [
     excerpt: "Master the art of creating Instagram Reels that go viral consistently. Learn the psychology behind viral content, optimal posting times, and the exact formulas used by million-follower accounts.",
     description: "Complete guide to creating viral Instagram Reels that drive massive engagement and follower growth.",
     readTime: "14 min",
-    date: "2024-01-11",
+    date: "2025-01-11",
     slug: "instagram-reels-guide",
     keywords: ["instagram reels", "viral reels", "instagram content", "reels strategy", "viral content"]
   },
@@ -35,7 +35,7 @@ const blogPosts = [
     excerpt: "The exact blueprint I used to explode on TikTok, gaining 127K followers in just 90 days. No paid ads, no buying followers - just pure algorithmic growth strategies that work.",
     description: "Step-by-step TikTok growth strategy to reach 100K followers in 90 days using proven viral techniques.",
     readTime: "13 min",
-    date: "2024-01-12",
+    date: "2025-01-12",
     slug: "tiktok-growth-hacks",
     keywords: ["tiktok growth", "tiktok followers", "tiktok algorithm", "viral tiktok", "tiktok strategy"]
   },
@@ -46,7 +46,7 @@ const blogPosts = [
     excerpt: "Access my personal collection of ComfyUI workflows worth $5,000+. From photorealistic portraits to abstract art, these templates generate stunning AI visuals in minutes.",
     description: "Professional ComfyUI workflow templates for creating stunning AI art quickly and efficiently.",
     readTime: "20 min",
-    date: "2024-01-13",
+    date: "2025-01-13",
     slug: "comfyui-workflow-library",
     keywords: ["comfyui", "ai art", "stable diffusion", "ai workflows", "comfyui templates"]
   },
@@ -57,7 +57,7 @@ const blogPosts = [
     excerpt: "Crack the YouTube Shorts algorithm with my proven formula. I'll show you exactly how I generated 127M views and gained 847K subscribers using specific psychological triggers.",
     description: "Comprehensive YouTube Shorts strategy to reach millions of views and build a massive following fast.",
     readTime: "15 min",
-    date: "2024-01-14",
+    date: "2025-01-14",
     slug: "youtube-shorts-strategy",
     keywords: ["youtube shorts", "youtube algorithm", "viral youtube", "youtube views", "youtube growth"]
   },
@@ -68,7 +68,7 @@ const blogPosts = [
     excerpt: "My exact system for creating a month's worth of content in a single afternoon. Includes templates, AI prompts, and the batch creation workflow that saves me 20+ hours weekly.",
     description: "Revolutionary content batching system to create 100+ posts in just 2 hours using AI and automation.",
     readTime: "12 min",
-    date: "2024-01-15",
+    date: "2025-01-15",
     slug: "scale-content-creation",
     keywords: ["content creation", "content batching", "social media content", "content strategy", "productivity"]
   },
@@ -79,7 +79,7 @@ const blogPosts = [
     excerpt: "Copy my exact posting schedule that took me from $14K to $147K/month. Every post type, timing, and psychological trigger mapped out for maximum conversions.",
     description: "Strategic 30-day social media calendar proven to triple sales through optimized content scheduling.",
     readTime: "11 min",
-    date: "2024-01-16",
+    date: "2025-01-16",
     slug: "social-media-calendar",
     keywords: ["social media calendar", "content calendar", "social media strategy", "content planning", "sales optimization"]
   },
@@ -90,7 +90,7 @@ const blogPosts = [
     excerpt: "The exact launch sequence I use to generate $10K+ with every digital product. From pre-launch hype to post-launch automation, this is the complete playbook.",
     description: "Proven digital product launch framework to generate $10K+ in revenue within 30 days.",
     readTime: "17 min",
-    date: "2024-01-17",
+    date: "2025-01-17",
     slug: "product-launch-strategy",
     keywords: ["product launch", "digital products", "launch strategy", "online business", "product marketing"]
   },
@@ -101,7 +101,7 @@ const blogPosts = [
     excerpt: "Complete blueprint for automating your entire business with AI. I reveal the exact tools, workflows, and systems that run my $88K/month business in just 4 hours per day.",
     description: "Comprehensive AI automation blueprint to build a $10K/month business that runs itself.",
     readTime: "18 min",
-    date: "2024-01-18",
+    date: "2025-01-18",
     slug: "ai-automation-guide",
     keywords: ["ai automation", "business automation", "ai tools", "automated business", "passive income"]
   },
@@ -112,7 +112,7 @@ const blogPosts = [
     excerpt: "Turn your Instagram followers into multiple revenue streams. From sponsored posts to digital products, learn the exact strategies that generate $50K+ monthly from Instagram.",
     description: "7 proven Instagram monetization strategies to create multiple revenue streams from your following.",
     readTime: "15 min",
-    date: "2024-01-19",
+    date: "2025-01-19",
     slug: "instagram-monetization-guide",
     keywords: ["instagram monetization", "make money instagram", "instagram income", "influencer marketing", "instagram business"]
   },
@@ -123,18 +123,18 @@ const blogPosts = [
     excerpt: "The email sequences and psychological triggers that generate 40% of my total revenue. Includes my exact templates, automation workflows, and conversion optimization tricks.",
     description: "Advanced email marketing strategies and sequences that convert subscribers into $100K+ revenue.",
     readTime: "14 min",
-    date: "2024-01-20",
+    date: "2025-01-20",
     slug: "email-marketing-guide",
     keywords: ["email marketing", "email automation", "email sequences", "email revenue", "marketing automation"]
   },
   {
-    title: "High-Income Skills for the AI Era: What to Learn in 2024",
+    title: "High-Income Skills for the AI Era: What to Learn in 2025",
     category: "SKILLS",
     categoryColor: "purple",
     excerpt: "Future-proof your career with these high-demand skills. I analyze market data to reveal which AI-era skills command $150+ per hour and how to master them fast.",
     description: "Essential high-income skills to master in the AI era for maximum career growth and earning potential.",
     readTime: "12 min",
-    date: "2024-01-21",
+    date: "2025-01-21",
     slug: "ai-era-skills",
     keywords: ["ai skills", "high income skills", "future skills", "ai careers", "skill development"]
   },
@@ -145,31 +145,31 @@ const blogPosts = [
     excerpt: "Behind the scenes of my $2.3M digital product empire. From my first $19 template to scaling to $50K/month, I reveal everything including profit margins and systems.",
     description: "Complete case study of building a $50K/month digital product empire from scratch.",
     readTime: "16 min",
-    date: "2024-01-22",
+    date: "2025-01-22",
     slug: "digital-products-empire",
     keywords: ["digital products", "online business", "passive income", "digital product business", "case study"]
   },
   {
-    title: "Why 2024 is the Best Time to Start Creating AI Content",
+    title: "Why 2025 is the Best Time to Start Creating AI Content",
     category: "OPPORTUNITY",
     categoryColor: "pink",
     excerpt: "The AI content gold rush is here. Market analysis shows unprecedented opportunity for early movers. Learn why starting now positions you for massive success.",
-    description: "Market analysis revealing why 2024 presents the biggest opportunity for AI content creators.",
+    description: "Market analysis revealing why 2025 presents the biggest opportunity for AI content creators.",
     readTime: "10 min",
-    date: "2024-01-23",
+    date: "2025-01-23",
     slug: "ai-content-opportunity",
-    keywords: ["ai content", "content creation", "ai opportunity", "digital content", "content strategy 2024"]
+    keywords: ["ai content", "content creation", "ai opportunity", "digital content", "content strategy 2025"]
   },
   {
-    title: "50 Digital Product Ideas That Are Printing Money in 2024",
-    category: "2024 TRENDS",
+    title: "50 Digital Product Ideas That Are Printing Money in 2025",
+    category: "2025 TRENDS",
     categoryColor: "pink",
     excerpt: "From $47 templates to $10K masterclasses - discover the hottest digital products selling right now. Includes market size, competition analysis, and profit potential for each.",
-    description: "50 proven digital product ideas with market analysis and profit potential for 2024.",
+    description: "50 proven digital product ideas with market analysis and profit potential for 2025.",
     readTime: "25 min",
-    date: "2024-01-23",
-    slug: "digital-products-ideas-2024",
-    keywords: ["digital product ideas", "online products", "product ideas 2024", "profitable products", "online business ideas"]
+    date: "2025-01-23",
+    slug: "digital-products-ideas-2025",
+    keywords: ["digital product ideas", "online products", "product ideas 2025", "profitable products", "online business ideas"]
   },
   {
     title: "How I Built 5 Faceless Channels to $500K/Year",
@@ -178,7 +178,7 @@ const blogPosts = [
     excerpt: "The complete blueprint to building anonymous content empires. I reveal my exact channel themes, content systems, and monetization strategies for faceless success.",
     description: "Strategic blueprint for building profitable faceless content channels generating $500K+ annually.",
     readTime: "19 min",
-    date: "2024-01-24",
+    date: "2025-01-24",
     slug: "faceless-content-strategy",
     keywords: ["faceless youtube", "anonymous content", "faceless channels", "youtube automation", "content strategy"]
   },
@@ -189,7 +189,7 @@ const blogPosts = [
     excerpt: "The exact blueprint to turn 2-hour template projects into $47K monthly income. Includes pricing psychology, marketing strategies, and automation systems.",
     description: "Complete guide to building a $47K/month template business with simple digital products.",
     readTime: "17 min",
-    date: "2024-01-25",
+    date: "2025-01-25",
     slug: "how-to-sell-templates",
     keywords: ["sell templates", "template business", "digital templates", "online templates", "template income"]
   },
@@ -200,7 +200,7 @@ const blogPosts = [
     excerpt: "Step-by-step guide to launching a profitable faceless YouTube channel. From niche selection to monetization, plus my personal tools and workflows for rapid growth.",
     description: "7-day action plan to create and launch a profitable faceless YouTube channel from scratch.",
     readTime: "18 min",
-    date: "2024-01-26",
+    date: "2025-01-26",
     slug: "create-faceless-youtube-channel",
     keywords: ["faceless youtube channel", "youtube without showing face", "youtube automation", "faceless content", "youtube guide"]
   },
@@ -211,7 +211,7 @@ const blogPosts = [
     excerpt: "Real businesses making real money with AI. I break down 23 proven AI monetization models with income proof, startup costs, and step-by-step implementation guides.",
     description: "23 proven AI monetization strategies with real examples generating $10K+ monthly income.",
     readTime: "24 min",
-    date: "2024-01-27",
+    date: "2025-01-27",
     slug: "monetize-with-ai",
     keywords: ["monetize ai", "ai business", "ai income", "make money with ai", "ai monetization"]
   },
@@ -222,7 +222,7 @@ const blogPosts = [
     excerpt: "Master every AI image tool from Midjourney to Stable Diffusion. Includes advanced prompting techniques, style guides, and commercial usage strategies for content creators.",
     description: "Comprehensive guide to AI image generation tools and techniques for professional content creation.",
     readTime: "16 min",
-    date: "2024-01-28",
+    date: "2025-01-28",
     slug: "ai-image-generation-guide",
     keywords: ["ai image generation", "midjourney", "stable diffusion", "ai art", "image ai tools"]
   },
@@ -233,7 +233,7 @@ const blogPosts = [
     excerpt: "Transform ChatGPT into your personal AI assistant. These advanced automation techniques handle everything from content creation to customer service, saving 20+ hours weekly.",
     description: "37 advanced ChatGPT automation techniques to save 20+ hours per week on repetitive tasks.",
     readTime: "15 min",
-    date: "2024-01-29",
+    date: "2025-01-29",
     slug: "chatgpt-automation-tips",
     keywords: ["chatgpt automation", "chatgpt hacks", "ai automation", "chatgpt productivity", "ai assistant"]
   },
@@ -244,7 +244,7 @@ const blogPosts = [
     excerpt: "My proprietary C.A.S.H. system for massive content production. Create, Automate, Scale, and Harvest - the framework that powers my content empire across all platforms.",
     description: "Revolutionary C.A.S.H. framework for creating 1,000+ pieces of quality content monthly.",
     readTime: "14 min",
-    date: "2024-03-01",
+    date: "2025-03-01",
     slug: "content-scaling-framework",
     keywords: ["content framework", "content scaling", "content production", "content strategy", "cash framework"]
   },
@@ -255,7 +255,7 @@ const blogPosts = [
     excerpt: "The complete beginner's guide to n8n automation. Build powerful workflows that connect all your tools and save 20+ hours per week - no coding required.",
     description: "Beginner-friendly guide to n8n workflow automation for business process optimization.",
     readTime: "21 min",
-    date: "2024-03-01",
+    date: "2025-03-01",
     slug: "n8n-beginners-guide",
     keywords: ["n8n automation", "workflow automation", "no code automation", "n8n tutorial", "business automation"]
   },
@@ -266,7 +266,7 @@ const blogPosts = [
     excerpt: "My exact blueprint for generating $8,400/month in passive income. 7 income streams broken down with setup costs, time investment, and realistic revenue expectations.",
     description: "Proven blueprint for building 7 passive income streams generating $100K+ annually.",
     readTime: "22 min",
-    date: "2024-03-02",
+    date: "2025-03-02",
     slug: "passive-income-blueprint",
     keywords: ["passive income", "income streams", "passive income ideas", "make money online", "financial freedom"]
   },
@@ -274,10 +274,10 @@ const blogPosts = [
     title: "Prompt Engineering: The $150/Hour Skill Nobody's Teaching Right",
     category: "AI MASTERY",
     categoryColor: "purple",
-    excerpt: "Master the highest-paid AI skill of 2024. My comprehensive guide includes advanced frameworks, 100+ battle-tested prompts, and techniques used by $150/hour consultants.",
+    excerpt: "Master the highest-paid AI skill of 2025. My comprehensive guide includes advanced frameworks, 100+ battle-tested prompts, and techniques used by $150/hour consultants.",
     description: "Advanced prompt engineering guide with frameworks and techniques for $150/hour AI consulting.",
     readTime: "28 min",
-    date: "2024-03-03",
+    date: "2025-03-03",
     slug: "prompt-engineering-guide",
     keywords: ["prompt engineering", "ai prompts", "chatgpt prompts", "ai consulting", "prompt techniques"]
   },
@@ -288,7 +288,7 @@ const blogPosts = [
     excerpt: "The complete automation system I use to manage 50+ social accounts with just 2 hours per week. Includes tools, workflows, and content multiplication strategies.",
     description: "Complete social media automation system for managing multiple platforms efficiently.",
     readTime: "20 min",
-    date: "2024-03-04",
+    date: "2025-03-04",
     slug: "social-media-automation",
     keywords: ["social media automation", "automate social media", "social media tools", "content automation", "social scheduling"]
   }
