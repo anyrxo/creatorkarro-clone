@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
-import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { NewsletterSignup } from '@/components/NewsletterSignup'
-import { FAQSection } from '@/components/FAQSection'
+import Link from 'next/link'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import NewsletterSignup from '@/components/NewsletterSignup'
+import FAQSection from '@/components/FAQSection'
 
 export const metadata: Metadata = {
   title: 'DeepSeek R1: The Open-Source AI Revolution That\'s Crushing GPT-4 and Claude at 96% Lower Cost',
@@ -44,13 +45,7 @@ export default function DeepSeekR1RevolutionPage() {
   return (
     <article className="min-h-screen bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900">
       <div className="container mx-auto px-4 py-8">
-        <Breadcrumbs 
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Blog', href: '/blog' },
-            { label: 'DeepSeek R1 Revolution', href: '/blog/deepseek-r1-open-source-ai-revolution' }
-          ]} 
-        />
+        <Breadcrumbs />
         
         <header className="mb-12 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -619,12 +614,12 @@ response = requests.post(api_url, headers=headers, json=payload)`}
               At IImagined.ai, we specialize in open-source AI implementation and cost-optimization strategies. Whether you're evaluating DeepSeek R1 for your organization or planning a comprehensive AI transformation, we can help you navigate this revolution.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/contact" className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
+              <Link href="/contact" className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
                 Schedule Free AI Consultation
-              </a>
-              <a href="/resources" className="bg-transparent border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
+              </Link>
+              <Link href="/resources" className="bg-transparent border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
                 Download Open-Source AI Guide
-              </a>
+              </Link>
             </div>
           </div>
 

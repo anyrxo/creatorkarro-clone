@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
-import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { NewsletterSignup } from '@/components/NewsletterSignup'
-import { FAQSection } from '@/components/FAQSection'
+import Link from 'next/link'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import NewsletterSignup from '@/components/NewsletterSignup'
+import FAQSection from '@/components/FAQSection'
 
 export const metadata: Metadata = {
   title: 'LLaMA 4: Meta\'s 10 Million Token Open-Source AI That Outperforms GPT-4.5 and Gemini 2.0',
@@ -44,13 +45,7 @@ export default function LLaMA4PowerhousePage() {
   return (
     <article className="min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-slate-900">
       <div className="container mx-auto px-4 py-8">
-        <Breadcrumbs 
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Blog', href: '/blog' },
-            { label: 'LLaMA 4 Open-Source Powerhouse', href: '/blog/llama-4-open-source-ai-powerhouse' }
-          ]} 
-        />
+        <Breadcrumbs />
         
         <header className="mb-12 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -843,12 +838,12 @@ trainer.train(
               At IImagined.ai, we specialize in LLaMA 4 implementation and open-source AI strategy. Whether you're planning local deployment, custom fine-tuning, or comprehensive AI transformation, we can help you harness the full potential of Meta's revolutionary model suite.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/contact" className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
+              <Link href="/contact" className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
                 Schedule LLaMA 4 Consultation
-              </a>
-              <a href="/resources" className="bg-transparent border border-green-500 text-green-400 hover:bg-green-500 hover:text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
+              </Link>
+              <Link href="/resources" className="bg-transparent border border-green-500 text-green-400 hover:bg-green-500 hover:text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
                 Download Implementation Guide
-              </a>
+              </Link>
             </div>
           </div>
 

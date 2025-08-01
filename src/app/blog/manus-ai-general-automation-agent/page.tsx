@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
-import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { NewsletterSignup } from '@/components/NewsletterSignup'
-import { FAQSection } from '@/components/FAQSection'
+import Link from 'next/link'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import NewsletterSignup from '@/components/NewsletterSignup'
+import FAQSection from '@/components/FAQSection'
 
 export const metadata: Metadata = {
   title: 'Manus AI: The First General AI Agent Achieving 86.5% on GAIA Benchmark - Complete Automation Guide',
@@ -44,13 +45,7 @@ export default function ManusAIAutomationPage() {
   return (
     <article className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
       <div className="container mx-auto px-4 py-8">
-        <Breadcrumbs 
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Blog', href: '/blog' },
-            { label: 'Manus AI General Agent', href: '/blog/manus-ai-general-automation-agent' }
-          ]} 
-        />
+        <Breadcrumbs />
         
         <header className="mb-12 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -688,12 +683,12 @@ export default function ManusAIAutomationPage() {
               At IImagined.ai, we specialize in general AI agent implementation and automation strategy. Whether you're evaluating Manus AI for your organization or planning comprehensive AI transformation, we can help you navigate this revolution and maximize your competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
+              <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
                 Schedule AI Automation Consultation
-              </a>
-              <a href="/resources" className="bg-transparent border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
+              </Link>
+              <Link href="/resources" className="bg-transparent border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
                 Download General AI Implementation Guide
-              </a>
+              </Link>
             </div>
           </div>
 

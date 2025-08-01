@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
-import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { NewsletterSignup } from '@/components/NewsletterSignup'
-import { FAQSection } from '@/components/FAQSection'
+import Link from 'next/link'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import NewsletterSignup from '@/components/NewsletterSignup'
+import FAQSection from '@/components/FAQSection'
 
 export const metadata: Metadata = {
   title: 'Claude 4 Opus & Sonnet: The Agentic AI Revolution Transforming Software Development in 2025',
@@ -44,13 +45,7 @@ export default function Claude4AgenticCodingPage() {
   return (
     <article className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="container mx-auto px-4 py-8">
-        <Breadcrumbs 
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Blog', href: '/blog' },
-            { label: 'Claude 4 Agentic Revolution', href: '/blog/claude-4-agentic-coding-revolution' }
-          ]} 
-        />
+        <Breadcrumbs />
         
         <header className="mb-12 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -506,12 +501,12 @@ claude-cli create-workflow \\
               At IImagined.ai, we specialize in enterprise AI implementation and automation strategy. Whether you're evaluating Claude 4 for your organization or planning a comprehensive agentic AI rollout, we can help you navigate this transformation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/contact" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
+              <Link href="/contact" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
                 Schedule AI Strategy Consultation
-              </a>
-              <a href="/resources" className="bg-transparent border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
+              </Link>
+              <Link href="/resources" className="bg-transparent border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
                 Download Enterprise AI Guide
-              </a>
+              </Link>
             </div>
           </div>
 

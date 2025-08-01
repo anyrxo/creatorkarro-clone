@@ -52,26 +52,37 @@ const newsArticles = [
     keywords: ["deepseek", "r1 model", "open source ai", "ai research", "machine learning"]
   },
   {
-    title: "Google Unveils Gemini 2.5 Pro: A Game-Changer in AI",
+    title: "Google Gemini 2.5 Pro Review: Free AI Model That Beats GPT-4.5 (2025 Complete Guide)",
     category: "AI NEWS",
     categoryColor: "blue",
-    excerpt: "Google's latest Gemini 2.5 Pro model promises unprecedented capabilities in multimodal AI processing and reasoning.",
-    description: "Deep dive into Google's Gemini 2.5 Pro capabilities and potential impact on the AI industry.",
-    readTime: "11 min",
-    date: "2025-01-25",
+    excerpt: "Google's completely free Gemini 2.5 Pro outperforms GPT-4.5, DeepSeek R1, and Claude 3.7 in multiple benchmarks. This changes everything about AI economics.",
+    description: "Complete guide to Google's free Gemini 2.5 Pro model that's disrupting the AI industry with premium performance at zero cost.",
+    readTime: "16 min",
+    date: "2025-03-30",
     slug: "google-gemini-2-5-pro-game-changer",
-    keywords: ["google", "gemini 2.5 pro", "multimodal ai", "ai advancement", "google ai"]
+    keywords: ["google gemini 2.5 pro", "free ai model", "ai comparison", "google ai studio", "ai performance"]
   },
   {
-    title: "The Future of AI-Powered Computer Control",
+    title: "The Future of AI Computer Control: Microsoft OmniParser V2 & OmniTool Complete Guide (2025)",
     category: "TECH TRENDS",
     categoryColor: "purple",
-    excerpt: "Exploring the emerging landscape of AI agents capable of autonomous computer control and task automation.",
-    description: "Analysis of AI-powered computer control systems and their implications for automation and productivity.",
-    readTime: "14 min",
+    excerpt: "Microsoft's OmniParser V2 and OmniTool represent the biggest leap toward autonomous AI computer control. These open-source tools enable AI agents to see, understand, and control computers with 95% accuracy.",
+    description: "Complete guide to Microsoft's revolutionary OmniParser V2 and OmniTool for AI-powered computer control and automation.",
+    readTime: "18 min",
     date: "2025-02-01",
     slug: "future-ai-powered-computer-control",
-    keywords: ["ai control", "computer automation", "ai agents", "task automation", "productivity ai"]
+    keywords: ["microsoft omniparser", "omnitool", "ai computer control", "automation tools", "ai agents", "computer vision"]
+  },
+  {
+    title: "Agno Framework Review: Build Lightning-Fast AI Agents in 2025 (5000x Faster Than LangGraph)",
+    category: "AI FRAMEWORKS",
+    categoryColor: "blue",
+    excerpt: "Agno delivers 5,000x faster agent instantiation and 50x less memory usage while maintaining enterprise-grade performance. This isn't just an improvement—it's a complete paradigm shift in AI agent development.",
+    description: "Complete review of Agno, the revolutionary open-source AI agent framework that outperforms LangGraph and LangChain.",
+    readTime: "16 min",
+    date: "2025-03-14",
+    slug: "agno-open-source-ai-agent-framework",
+    keywords: ["agno framework", "ai agents", "langgraph alternative", "ai agent development", "open source ai", "agent framework"]
   }
 ]
 
