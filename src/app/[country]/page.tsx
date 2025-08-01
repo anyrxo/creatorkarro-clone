@@ -128,7 +128,7 @@ export default async function CountryHomePage({ params }: Props) {
       
       {/* International CTA */}
       <CTA 
-        cta={content.cta}
+        cta={{ text: content.cta, urgency: content.urgency }}
         countryCode={countryCode}
         urgency={content.urgency}
       />
