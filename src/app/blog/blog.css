@@ -1,0 +1,28 @@
+/* Blog-specific styles to ensure text visibility */
+.blog-content * {
+  color: #e5e7eb !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  color: #ffffff !important;
+}
+
+.blog-content p,
+.blog-content li,
+.blog-content span {
+  color: #e5e7eb !important;
+}
+
+/* Ensure gradient text is visible */
+.blog-content .gradient-text {
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}

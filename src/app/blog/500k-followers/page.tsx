@@ -1,6 +1,8 @@
+import '../blog.css'
+
 export default function BlogPost() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#0f0f0f' }}>
+    <div className="min-h-screen blog-content" style={{ backgroundColor: '#0f0f0f' }}>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20"></div>
