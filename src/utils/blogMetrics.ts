@@ -1,23 +1,55 @@
+// Simple hash function to generate consistent random numbers from a string
+function hashCode(str: string): number {
+  let hash = 0
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i)
+    hash = ((hash << 5) - hash) + char
+    hash = hash & hash // Convert to 32bit integer
+  }
+  return Math.abs(hash)
+}
+
+// Generate consistent random number between 0 and 1 from a seed
+function seededRandom(seed: string): number {
+  const hash = hashCode(seed)
+  return (hash % 1000) / 1000
+}
+
 // Calculate dynamic metrics based on days since publication
-export function calculateBlogMetrics(publishDate: string) {
+export function calculateBlogMetrics(publishDate: string, slug: string) {
   const publish = new Date(publishDate)
   const now = new Date()
   const daysSincePublish = Math.floor((now.getTime() - publish.getTime()) / (1000 * 60 * 60 * 24))
   
-  // Base metrics
-  const baseViews = Math.floor(Math.random() * 500) + 800 // 800-1300
-  const baseLikes = Math.floor(Math.random() * 50) + 80 // 80-130
-  const baseShares = Math.floor(Math.random() * 20) + 15 // 15-35
+  // Get stored metrics from localStorage
+  const storedMetrics = getStoredMetrics(slug)
   
-  // Growth factors (different for each metric)
-  const viewsGrowthRate = 45 + Math.random() * 25 // 45-70 views per day
-  const likesGrowthRate = 3 + Math.random() * 2 // 3-5 likes per day
-  const sharesGrowthRate = 0.8 + Math.random() * 0.7 // 0.8-1.5 shares per day
+  // Use slug as seed for consistent random values
+  const seed1 = seededRandom(slug + 'views')
+  const seed2 = seededRandom(slug + 'likes')
+  const seed3 = seededRandom(slug + 'growth')
   
-  // Calculate current metrics with some randomness
-  const views = Math.floor(baseViews + (daysSincePublish * viewsGrowthRate * (0.8 + Math.random() * 0.4)))
-  const likes = Math.floor(baseLikes + (daysSincePublish * likesGrowthRate * (0.7 + Math.random() * 0.6)))
-  const shares = Math.floor(baseShares + (daysSincePublish * sharesGrowthRate * (0.6 + Math.random() * 0.8)))
+  // Base metrics (older posts start with higher numbers)
+  const ageMultiplier = Math.min(daysSincePublish / 30, 3) // Cap at 3x for very old posts
+  const baseViews = Math.floor((1200 + seed1 * 800) * (1 + ageMultiplier))
+  const baseLikes = Math.floor((120 + seed2 * 80) * (1 + ageMultiplier * 0.8))
+  
+  // Daily growth rates (consistent for each post but varies by post)
+  const dailyViewsGrowth = 65 + seed3 * 35 // 65-100 views per day
+  const dailyLikesGrowth = 4.5 + seed3 * 3.5 // 4.5-8 likes per day
+  
+  // Calculate current metrics
+  let views = Math.floor(baseViews + (daysSincePublish * dailyViewsGrowth))
+  let likes = Math.floor(baseLikes + (daysSincePublish * dailyLikesGrowth))
+  
+  // Add any user interactions stored
+  views += storedMetrics.additionalViews
+  likes += storedMetrics.additionalLikes
+  
+  // Calculate shares as 13-18% of likes (consistent ratio per post)
+  const shareRatio = 0.13 + seededRandom(slug + 'shares') * 0.05 // 13-18%
+  let shares = Math.floor(likes * shareRatio)
+  shares += storedMetrics.additionalShares
   
   // Format numbers for display
   const formatNumber = (num: number) => {
@@ -35,6 +67,42 @@ export function calculateBlogMetrics(publishDate: string) {
     rawLikes: likes,
     rawShares: shares
   }
+}
+
+// Get stored metrics from localStorage
+function getStoredMetrics(slug: string) {
+  if (typeof window === 'undefined') {
+    return { additionalViews: 0, additionalLikes: 0, additionalShares: 0 }
+  }
+  
+  const stored = localStorage.getItem(`blogMetrics_${slug}`)
+  if (stored) {
+    return JSON.parse(stored)
+  }
+  
+  // Initialize with a view count
+  const initial = { additionalViews: 1, additionalLikes: 0, additionalShares: 0 }
+  localStorage.setItem(`blogMetrics_${slug}`, JSON.stringify(initial))
+  return initial
+}
+
+// Update stored metrics
+export function updateStoredMetrics(slug: string, type: 'view' | 'like' | 'share') {
+  const current = getStoredMetrics(slug)
+  
+  switch (type) {
+    case 'view':
+      current.additionalViews += 1
+      break
+    case 'like':
+      current.additionalLikes += 1
+      break
+    case 'share':
+      current.additionalShares += 1
+      break
+  }
+  
+  localStorage.setItem(`blogMetrics_${slug}`, JSON.stringify(current))
 }
 
 // Format date for display

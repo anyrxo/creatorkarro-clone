@@ -1,7 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { calculateBlogMetrics, formatBlogDate } from '@/utils/blogMetrics'
+import { calculateBlogMetrics, formatBlogDate, updateStoredMetrics } from '@/utils/blogMetrics'
+import { usePathname } from 'next/navigation'
 
 interface BlogMetricsProps {
   publishDate: string
@@ -9,6 +10,9 @@ interface BlogMetricsProps {
 }
 
 export default function BlogMetrics({ publishDate, readTime }: BlogMetricsProps) {
+  const pathname = usePathname()
+  const slug = pathname.split('/').pop() || ''
+  
   const [metrics, setMetrics] = useState({
     views: '0',
     likes: '0',
@@ -17,43 +21,64 @@ export default function BlogMetrics({ publishDate, readTime }: BlogMetricsProps)
     rawLikes: 0,
     rawShares: 0
   })
-  const [liked, setLiked] = useState(false)
+  const [hasLiked, setHasLiked] = useState(false)
+  const [hasViewed, setHasViewed] = useState(false)
+  const [showLikedMessage, setShowLikedMessage] = useState(false)
 
   useEffect(() => {
     // Calculate initial metrics
-    setMetrics(calculateBlogMetrics(publishDate))
+    const updateMetrics = () => {
+      setMetrics(calculateBlogMetrics(publishDate, slug))
+    }
+    
+    updateMetrics()
+    
+    // Track view (only once per session)
+    const viewedPosts = sessionStorage.getItem('viewedPosts') || '[]'
+    const viewedArray = JSON.parse(viewedPosts)
+    if (!viewedArray.includes(slug)) {
+      viewedArray.push(slug)
+      sessionStorage.setItem('viewedPosts', JSON.stringify(viewedArray))
+      updateStoredMetrics(slug, 'view')
+      setHasViewed(true)
+      // Update metrics after recording view
+      setTimeout(updateMetrics, 100)
+    }
     
     // Check if user has liked this post before
-    const likedPosts = localStorage.getItem('likedPosts') || '[]'
-    const likedArray = JSON.parse(likedPosts)
-    if (likedArray.includes(window.location.pathname)) {
-      setLiked(true)
+    const userLikes = localStorage.getItem('userLikedPosts') || '[]'
+    const likedArray = JSON.parse(userLikes)
+    if (likedArray.includes(slug)) {
+      setHasLiked(true)
     }
     
     // Update metrics every 30 seconds for live feel
-    const interval = setInterval(() => {
-      setMetrics(calculateBlogMetrics(publishDate))
-    }, 30000)
+    const interval = setInterval(updateMetrics, 30000)
     
     return () => clearInterval(interval)
-  }, [publishDate])
+  }, [publishDate, slug])
 
   const handleLike = () => {
-    if (!liked) {
-      setLiked(true)
+    if (!hasLiked) {
+      setHasLiked(true)
       
-      // Save to localStorage
-      const likedPosts = localStorage.getItem('likedPosts') || '[]'
-      const likedArray = JSON.parse(likedPosts)
-      likedArray.push(window.location.pathname)
-      localStorage.setItem('likedPosts', JSON.stringify(likedArray))
+      // Save to user's liked posts
+      const userLikes = localStorage.getItem('userLikedPosts') || '[]'
+      const likedArray = JSON.parse(userLikes)
+      likedArray.push(slug)
+      localStorage.setItem('userLikedPosts', JSON.stringify(likedArray))
       
-      // Update metrics immediately
-      setMetrics(prev => ({
-        ...prev,
-        likes: formatNumber(prev.rawLikes + 1),
-        rawLikes: prev.rawLikes + 1
-      }))
+      // Update global metrics
+      updateStoredMetrics(slug, 'like')
+      
+      // Update display immediately
+      setTimeout(() => {
+        setMetrics(calculateBlogMetrics(publishDate, slug))
+      }, 100)
+    } else {
+      // Show already liked message
+      setShowLikedMessage(true)
+      setTimeout(() => setShowLikedMessage(false), 2000)
     }
   }
 
@@ -65,12 +90,13 @@ export default function BlogMetrics({ publishDate, readTime }: BlogMetricsProps)
           url: window.location.href
         })
         
-        // Update share count
-        setMetrics(prev => ({
-          ...prev,
-          shares: formatNumber(prev.rawShares + 1),
-          rawShares: prev.rawShares + 1
-        }))
+        // Update global share count
+        updateStoredMetrics(slug, 'share')
+        
+        // Update display
+        setTimeout(() => {
+          setMetrics(calculateBlogMetrics(publishDate, slug))
+        }, 100)
       } catch (err) {
         console.log('Share cancelled')
       }
@@ -79,20 +105,14 @@ export default function BlogMetrics({ publishDate, readTime }: BlogMetricsProps)
       navigator.clipboard.writeText(window.location.href)
       alert('Link copied to clipboard!')
       
-      // Update share count
-      setMetrics(prev => ({
-        ...prev,
-        shares: formatNumber(prev.rawShares + 1),
-        rawShares: prev.rawShares + 1
-      }))
+      // Update global share count
+      updateStoredMetrics(slug, 'share')
+      
+      // Update display
+      setTimeout(() => {
+        setMetrics(calculateBlogMetrics(publishDate, slug))
+      }, 100)
     }
-  }
-
-  const formatNumber = (num: number) => {
-    if (num >= 1000) {
-      return `${(num / 1000).toFixed(1)}K`
-    }
-    return num.toString()
   }
 
   return (
@@ -105,15 +125,22 @@ export default function BlogMetrics({ publishDate, readTime }: BlogMetricsProps)
         <span>{metrics.views} views</span>
       </div>
       
-      <button 
-        onClick={handleLike}
-        className={`flex items-center gap-2 transition-colors ${liked ? 'text-red-500' : 'hover:text-red-400'}`}
-      >
-        <svg className="w-5 h-5" fill={liked ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-        <span>{metrics.likes} likes</span>
-      </button>
+      <div className="relative">
+        <button 
+          onClick={handleLike}
+          className={`flex items-center gap-2 transition-colors ${hasLiked ? 'text-red-500' : 'hover:text-red-400'}`}
+        >
+          <svg className="w-5 h-5" fill={hasLiked ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+          <span>{metrics.likes} likes</span>
+        </button>
+        {showLikedMessage && (
+          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
+            Already liked!
+          </div>
+        )}
+      </div>
       
       <button 
         onClick={handleShare}
