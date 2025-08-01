@@ -574,7 +574,7 @@ export default function LinkWheelPage() {
                   <h3 className="text-xl font-semibold text-white mb-2">No Link Wheels Deployed</h3>
                   <p className="text-gray-400 mb-4">Deploy your first link wheel to start dominating search rankings</p>
                   <Button
-                    onClick={() => document.querySelector('[value="deploy"]')?.click()}
+                    onClick={() => (document.querySelector('[value="deploy"]') as HTMLElement)?.click()}
                     className="bg-purple-600 hover:bg-purple-700 text-white"
                   >
                     Deploy First Link Wheel
