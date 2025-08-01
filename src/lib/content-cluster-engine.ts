@@ -141,7 +141,7 @@ export class ContentClusterEngine {
   private generatePillarPage(
     topic: string, 
     sectionCount: number, 
-    options: any
+    options: { qualityLevel: string; contentLength: string; includeImages: boolean }
   ): PillarPage {
     const primaryKeyword = this.formatPrimaryKeyword(topic)
     const sections = this.generatePillarSections(topic, sectionCount, options)
@@ -163,7 +163,7 @@ export class ContentClusterEngine {
   }
 
   // Generate pillar page sections with semantic optimization
-  private generatePillarSections(topic: string, count: number, options: any): ContentSection[] {
+  private generatePillarSections(topic: string, count: number, options: { qualityLevel: string; contentLength: string; includeImages: boolean }): ContentSection[] {
     const sectionTemplates = this.getPillarSectionTemplates(topic)
     const sections: ContentSection[] = []
     
@@ -183,7 +183,7 @@ export class ContentClusterEngine {
   }
 
   // Generate cluster pages for long-tail keywords
-  private generateClusterPages(topic: string, count: number, options: any): ClusterPage[] {
+  private generateClusterPages(topic: string, count: number, options: { qualityLevel: string; contentLength: string; includeImages: boolean }): ClusterPage[] {
     const clusterPages: ClusterPage[] = []
     const longtailKeywords = this.generateLongtailKeywords(topic, count)
     
@@ -524,7 +524,7 @@ ${cluster.competitorGap.slice(0, 10).map(gap =>
   }
 
   // Additional helper methods (simplified implementations)
-  private getPillarSectionTemplates(topic: string): any[] {
+  private getPillarSectionTemplates(topic: string): Array<{ title: string; keywords: string[]; framework: string }> {
     return [
       { heading: "What is {topic}?", focus: "definition" },
       { heading: "How {topic} Works", focus: "process" },
@@ -549,11 +549,11 @@ ${cluster.competitorGap.slice(0, 10).map(gap =>
     return [`${topic}-tools`, `${topic}-guide`, `${focus}-examples`]
   }
 
-  private generateSectionContent(template: any, topic: string, options: any): string {
+  private generateSectionContent(template: { title: string; keywords: string[]; framework: string }, topic: string, options: { qualityLevel: string; contentLength: string; includeImages: boolean }): string {
     return `Comprehensive content about ${template.focus} in ${topic}. This section covers all essential aspects with practical examples and actionable insights.`
   }
 
-  private generateClusterContent(keyword: string, topic: string, options: any): string {
+  private generateClusterContent(keyword: string, topic: string, options: { qualityLevel: string; contentLength: string; includeImages: boolean }): string {
     return `Detailed guide about ${keyword} within the context of ${topic}. Includes step-by-step instructions, examples, and best practices.`
   }
 

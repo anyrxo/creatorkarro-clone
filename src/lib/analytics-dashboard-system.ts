@@ -63,14 +63,35 @@ export interface DashboardAlert {
   suggestedAction?: string
 }
 
+export interface AnalyticsMetrics {
+  traffic: Array<{ name: string; value: number; change: number }>
+  rankings: Array<{ name: string; value: number; change: number }>
+  technical: Array<{ name: string; value: number; change: number }>
+  content: Array<{ name: string; value: number; change: number }>
+  links: Array<{ name: string; value: number; change: number }>
+  conversions: Array<{ name: string; value: number; change: number }>
+}
+
 export interface AnalyticsReport {
   id: string
   name: string
   type: 'daily' | 'weekly' | 'monthly' | 'custom'
   generatedAt: string
-  metrics: any
+  metrics: AnalyticsMetrics
   insights: string[]
   recommendations: string[]
+}
+
+export interface AlertThreshold {
+  warning: number
+  critical: number
+}
+
+export interface AlertThresholds {
+  traffic: AlertThreshold
+  rankings: AlertThreshold
+  errors: AlertThreshold
+  performance: AlertThreshold
 }
 
 export interface DashboardConfig {
@@ -83,7 +104,7 @@ export interface DashboardConfig {
     performance: { warning: number; critical: number }
   }
   integratedSystems: string[]
-  customMetrics: any[]
+  customMetrics: Array<{ name: string; value: number; type: string }>
 }
 
 export class AnalyticsDashboardEngine {
@@ -122,9 +143,9 @@ export class AnalyticsDashboardEngine {
     options: {
       refreshInterval?: number
       metricsToTrack?: string[]
-      alertThresholds?: any
+      alertThresholds?: AlertThresholds
       enableRealTime?: boolean
-      customMetrics?: any[]
+      customMetrics?: Array<{ name: string; value: number; type: string }>
       exportFormats?: ('pdf' | 'csv' | 'json' | 'excel')[]
     } = {}
   ): Promise<AnalyticsDashboard> {
@@ -257,7 +278,7 @@ export class AnalyticsDashboardEngine {
     ]
   }
 
-  private getDefaultThresholds(): any {
+  private getDefaultThresholds(): AlertThresholds {
     return {
       traffic: { warning: -10, critical: -20 },
       rankings: { warning: -5, critical: -10 },
@@ -423,7 +444,7 @@ export class AnalyticsDashboardEngine {
       .join(' ')
   }
 
-  private countMetrics(metrics: any): number {
+  private countMetrics(metrics: AnalyticsMetrics): number {
     let count = 0
     Object.values(metrics).forEach(category => {
       count += (category as any[]).length
@@ -432,34 +453,34 @@ export class AnalyticsDashboardEngine {
   }
 
   private calculatePerformanceScore(
-    metrics: any,
+    metrics: AnalyticsMetrics,
     systemsStatus: SystemStatus[]
   ): number {
     let score = 0
     let factors = 0
 
     // Traffic contribution (25%)
-    const trafficGrowth = metrics.traffic.find((m: any) => m.name === 'Organic Traffic')?.change || 0
+    const trafficGrowth = metrics.traffic.find(m => m.name === 'Organic Traffic')?.change || 0
     score += Math.min(25, Math.max(0, 12.5 + trafficGrowth * 0.5))
     factors++
 
     // Rankings contribution (25%)
-    const avgPosition = metrics.rankings.find((m: any) => m.name === 'Average Position')?.value || 20
+    const avgPosition = metrics.rankings.find(m => m.name === 'Average Position')?.value || 20
     score += Math.min(25, Math.max(0, 25 - avgPosition * 1.25))
     factors++
 
     // Technical health (20%)
-    const pageSpeed = metrics.technical.find((m: any) => m.name === 'Page Speed Score')?.value || 50
+    const pageSpeed = metrics.technical.find(m => m.name === 'Page Speed Score')?.value || 50
     score += pageSpeed * 0.2
     factors++
 
     // Content quality (15%)
-    const contentScore = metrics.content.find((m: any) => m.name === 'Content Quality Score')?.value || 50
+    const contentScore = metrics.content.find(m => m.name === 'Content Quality Score')?.value || 50
     score += contentScore * 0.15
     factors++
 
     // Link profile (10%)
-    const toxicRatio = metrics.links.find((m: any) => m.name === 'Toxic Link Ratio')?.value || 10
+    const toxicRatio = metrics.links.find(m => m.name === 'Toxic Link Ratio')?.value || 10
     score += Math.max(0, 10 - toxicRatio)
     factors++
 
@@ -472,7 +493,7 @@ export class AnalyticsDashboardEngine {
   }
 
   private generateRecommendations(
-    metrics: any,
+    metrics: AnalyticsMetrics,
     systemsStatus: SystemStatus[],
     performanceScore: number
   ): string[] {
@@ -496,25 +517,25 @@ export class AnalyticsDashboardEngine {
     }
 
     // Rankings recommendations
-    const avgPosition = metrics.rankings.find((m: any) => m.name === 'Average Position')?.value || 20
+    const avgPosition = metrics.rankings.find(m => m.name === 'Average Position')?.value || 20
     if (avgPosition > 10) {
       recommendations.push('🎯 Improve average rankings by optimizing underperforming pages.')
     }
 
     // Technical recommendations
-    const crawlErrors = metrics.technical.find((m: any) => m.name === 'Crawl Errors')?.value || 0
+    const crawlErrors = metrics.technical.find(m => m.name === 'Crawl Errors')?.value || 0
     if (crawlErrors > 50) {
       recommendations.push('🔧 High number of crawl errors detected. Fix technical issues immediately.')
     }
 
     // Content recommendations
-    const contentQuality = metrics.content.find((m: any) => m.name === 'Content Quality Score')?.value || 0
+    const contentQuality = metrics.content.find(m => m.name === 'Content Quality Score')?.value || 0
     if (contentQuality < 70) {
       recommendations.push('📝 Content quality needs improvement. Focus on E-E-A-T signals.')
     }
 
     // Link recommendations
-    const toxicRatio = metrics.links.find((m: any) => m.name === 'Toxic Link Ratio')?.value || 0
+    const toxicRatio = metrics.links.find(m => m.name === 'Toxic Link Ratio')?.value || 0
     if (toxicRatio > 5) {
       recommendations.push('🔗 High toxic link ratio detected. Run link audit and disavow bad links.')
     }
@@ -528,7 +549,7 @@ export class AnalyticsDashboardEngine {
     return recommendations
   }
 
-  private checkForAlerts(metrics: any, thresholds: any): DashboardAlert[] {
+  private checkForAlerts(metrics: AnalyticsMetrics, thresholds: AlertThresholds): DashboardAlert[] {
     const alerts: DashboardAlert[] = []
 
     // Traffic alerts
@@ -558,7 +579,7 @@ export class AnalyticsDashboardEngine {
     }
 
     // Error alerts
-    const crawlErrors = metrics.technical.find((m: any) => m.name === 'Crawl Errors')?.value || 0
+    const crawlErrors = metrics.technical.find(m => m.name === 'Crawl Errors')?.value || 0
     if (crawlErrors >= thresholds.errors.critical) {
       alerts.push({
         id: `alert-${Date.now()}-3`,
@@ -573,7 +594,7 @@ export class AnalyticsDashboardEngine {
     }
 
     // Performance alerts
-    const pageSpeed = metrics.technical.find((m: any) => m.name === 'Page Speed Score')?.value || 0
+    const pageSpeed = metrics.technical.find(m => m.name === 'Page Speed Score')?.value || 0
     if (pageSpeed <= thresholds.performance.critical) {
       alerts.push({
         id: `alert-${Date.now()}-4`,
@@ -729,7 +750,7 @@ export class AnalyticsDashboardEngine {
     return Array.from(this.dashboards.values())
   }
 
-  getMetricsHistory(dashboardId: string): any[] {
+  getMetricsHistory(dashboardId: string): Array<{ timestamp: string; metrics: AnalyticsMetrics }> {
     return this.metricsHistory.get(dashboardId) || []
   }
 }
