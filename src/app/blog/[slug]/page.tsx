@@ -556,146 +556,206 @@ const newsArticles: Record<string, {
   },
   'google-gemini-2-5-pro-free-guide': {
     title: "Google Gemini 2.5 Pro Review: Free AI Model That Beats GPT-4.5 (2025 Complete Guide)",
-    content: `
+    content: `<div className="min-h-screen bg-dark">
+  <section className="section-spacing overflow-hidden">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center max-w-5xl mx-auto">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
+          <span className="text-purple-400 text-sm font-semibold">AI MODEL UPDATE</span>
+        </div>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Google Gemini 2.5 Pro Review <span className="text-purple-400">Free AI Model That Beats GPT-4.5 (2025 Complete Guide)</span>
+        </h1>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+          Complete guide to the latest AI innovations and developments
+        </p>
+        <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-gray-400">
+          <span>📅 March 30, 2025</span>
+          <span>•</span>
+          <span>⏱️ 16 min</span>
+          <span>•</span>
+          <span>🔥 AI NEWS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">📊 Key Metrics</h2>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+          
+          <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-2xl p-6 border border-purple-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-purple-400 text-sm font-semibold">Value</span>
+              <span className="text-2xl">💰</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">$0</div>
+            <div className="text-sm text-gray-400">cost</li>
+      <li><strong>Google Integration:</s</div>
+          </div>
+          <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-2xl p-6 border border-purple-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-purple-400 text-sm font-semibold">Performance</span>
+              <span className="text-2xl">🚀</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">10X</div>
+            <div className="text-sm text-gray-400">larger than most competitors</li>
+      <li><stron</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="section-spacing bg-dark">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto text-gray-300">
+        
 <div className="article-intro">
-  <p className="lead-paragraph"><strong>Google just dropped a nuclear bomb on the AI industry:</strong> Gemini 2.5 Pro is completely free and outperforms GPT-4.5, DeepSeek R1, and Claude 3.7 in multiple benchmarks.</p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Google just dropped a nuclear bomb on the AI industry:</strong> Gemini 2.5 Pro is completely free and outperforms GPT-4.5, DeepSeek R1, and Claude 3.7 in multiple benchmarks.</p>
   
-  <p>After extensively testing Gemini 2.5 Pro for IImagined.ai's automation systems over the past 3 weeks, I've discovered why this free model is causing panic among paid AI services – and how you can leverage it immediately for your business.</p>
+  <p className="text-gray-300 mb-4">After extensively testing Gemini 2.5 Pro for IImagined.ai's automation systems over the past 3 weeks, I've discovered why this free model is causing panic among paid AI services – and how you can leverage it immediately for your business.</p>
 </div>
 
 <div className="alert-box">
-  <h3>🔥 Breaking News Alert</h3>
-  <p><strong>Gemini 2.5 Pro is 100% FREE on Google AI Studio with a 1 million token context window.</strong> This changes everything about AI economics.</p>
+  <h3 className="text-2xl font-bold text-purple-400 mb-4">🔥 Breaking News Alert</h3>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Gemini 2.5 Pro is 100% FREE on Google AI Studio with a 1 million token context window.</strong> This changes everything about AI economics.</p>
 </div>
 
 <div className="toc-container">
-  <h2>Table of Contents</h2>
-  <ul>
-    <li><a href="#performance-analysis">Performance vs GPT-4.5 & Claude</a></li>
-    <li><a href="#free-access-guide">How to Access Free (Complete Guide)</a></li>
-    <li><a href="#real-world-testing">8 Real-World Tests & Results</a></li>
-    <li><a href="#business-applications">Business Use Cases & ROI</a></li>
-    <li><a href="#technical-capabilities">Technical Deep Dive</a></li>
-    <li><a href="#vs-competitors">Gemini 2.5 Pro vs All Competitors</a></li>
-    <li><a href="#anyro-results">IImagined.ai Testing Results</a></li>
-    <li><a href="#implementation-guide">Implementation Strategy</a></li>
-    <li><a href="#faq">Frequently Asked Questions</a></li>
+  <h2 className="text-3xl font-bold text-white mb-6">Table of Contents</h2>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#performance-analysis">Performance vs GPT-4.5 & Claude</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#free-access-guide">How to Access Free (Complete Guide)</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#real-world-testing">8 Real-World Tests & Results</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#business-applications">Business Use Cases & ROI</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#technical-capabilities">Technical Deep Dive</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#vs-competitors">Gemini 2.5 Pro vs All Competitors</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#anyro-results">IImagined.ai Testing Results</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#implementation-guide">Implementation Strategy</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#faq">Frequently Asked Questions</a></span></li>
   </ul>
 </div>
 
-<div id="performance-analysis">
-  <h2>🏆 Performance Analysis: How Gemini 2.5 Pro Crushes the Competition</h2>
+<div className="text-gray-300" id="performance-analysis">
+  <h2 className="text-3xl font-bold text-white mb-6">🏆 Performance Analysis: How Gemini 2.5 Pro Crushes the Competition</h2>
   
   <div className="anyro-insight">
-    <h3>💡 Anyro's Take:</h3>
-    <p>"I've been using expensive AI models for IImagined.ai's automation for months. Gemini 2.5 Pro delivering comparable results for FREE is a game-changer that will reshape the entire AI industry economics."</p>
+    <h3 className="text-2xl font-bold text-purple-400 mb-4">💡 Anyro's Take:</h3>
+    <p className="text-gray-300 mb-4">"I've been using expensive AI models for IImagined.ai's automation for months. Gemini 2.5 Pro delivering comparable results for FREE is a game-changer that will reshape the entire AI industry economics."</p>
   </div>
 
-  <h3>🎯 Benchmark Comparison Table</h3>
-  <table className="performance-table">
-    <thead>
+  <h3 className="text-2xl font-bold text-purple-400 mb-4">🎯 Benchmark Comparison Table</h3>
+  <table className="w-full text-gray-300 border-collapse">
+    <thead className="bg-gray-900/30">
       <tr>
-        <th>Capability</th>
-        <th>Gemini 2.5 Pro</th>
-        <th>GPT-4.5</th>
-        <th>Claude 3.7</th>
-        <th>DeepSeek R1</th>
-        <th>Winner</th>
+        <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Capability</th>
+        <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Gemini 2.5 Pro</th>
+        <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">GPT-4.5</th>
+        <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Claude 3.7</th>
+        <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">DeepSeek R1</th>
+        <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Winner</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody className="divide-y divide-gray-800">
       <tr>
-        <td><strong>Reasoning & Logic</strong></td>
-        <td>94.2%</td>
-        <td>89.1%</td>
-        <td>91.7%</td>
-        <td>87.3%</td>
-        <td>🏆 Gemini 2.5</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Reasoning & Logic</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">94.2%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">89.1%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">91.7%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">87.3%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">🏆 Gemini 2.5</td>
       </tr>
       <tr>
-        <td><strong>Mathematical Problem Solving</strong></td>
-        <td>92.8%</td>
-        <td>88.4%</td>
-        <td>90.2%</td>
-        <td>85.9%</td>
-        <td>🏆 Gemini 2.5</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Mathematical Problem Solving</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">92.8%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">88.4%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">90.2%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">85.9%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">🏆 Gemini 2.5</td>
       </tr>
       <tr>
-        <td><strong>Science & Research</strong></td>
-        <td>91.5%</td>
-        <td>87.8%</td>
-        <td>89.9%</td>
-        <td>86.1%</td>
-        <td>🏆 Gemini 2.5</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Science & Research</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">91.5%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">87.8%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">89.9%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">86.1%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">🏆 Gemini 2.5</td>
       </tr>
       <tr>
-        <td><strong>Coding & Programming</strong></td>
-        <td>88.7%</td>
-        <td>90.3%</td>
-        <td>93.1%</td>
-        <td>87.5%</td>
-        <td>🏆 Claude 3.7</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Coding & Programming</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">88.7%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">90.3%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">93.1%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">87.5%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">🏆 Claude 3.7</td>
       </tr>
       <tr>
-        <td><strong>Multimodal Processing</strong></td>
-        <td>95.1%</td>
-        <td>88.9%</td>
-        <td>85.4%</td>
-        <td>82.7%</td>
-        <td>🏆 Gemini 2.5</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Multimodal Processing</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">95.1%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">88.9%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">85.4%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">82.7%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">🏆 Gemini 2.5</td>
       </tr>
       <tr>
-        <td><strong>Context Understanding</strong></td>
-        <td>96.3%</td>
-        <td>85.2%</td>
-        <td>89.8%</td>
-        <td>83.4%</td>
-        <td>🏆 Gemini 2.5</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Context Understanding</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">96.3%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">85.2%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">89.8%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">83.4%</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">🏆 Gemini 2.5</td>
       </tr>
     </tbody>
   </table>
 
   <div className="performance-highlights">
-    <h3>🚀 Key Performance Wins</h3>
-    <ul className="highlight-list">
-      <li><strong>1 Million Token Context:</strong> 10x larger than most competitors</li>
-      <li><strong>Advanced Reasoning:</strong> Thinks before responding, not just predicting</li>
-      <li><strong>Multimodal Mastery:</strong> Handles text, images, and structured data simultaneously</li>
-      <li><strong>Zero Cost Advantage:</strong> Delivers premium performance at $0 cost</li>
-      <li><strong>Google Integration:</strong> Seamless workflow with Google Workspace</li>
+    <h3 className="text-2xl font-bold text-purple-400 mb-4">🚀 Key Performance Wins</h3>
+    <ul className="space-y-2 mb-6 text-gray-300">
+      <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>1 Million Token Context:</strong> 10x larger than most competitors</span></li>
+      <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Advanced Reasoning:</strong> Thinks before responding, not just predicting</span></li>
+      <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Multimodal Mastery:</strong> Handles text, images, and structured data simultaneously</span></li>
+      <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Zero Cost Advantage:</strong> Delivers premium performance at $0 cost</span></li>
+      <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Google Integration:</strong> Seamless workflow with Google Workspace</span></li>
     </ul>
   </div>
 </div>
 
 <div className="conclusion-section">
-  <h2>🎯 The Bottom Line: A Free AI Revolution</h2>
+  <h2 className="text-3xl font-bold text-white mb-6">🎯 The Bottom Line: A Free AI Revolution</h2>
   
   <div className="anyro-insight">
-    <h3>💡 Anyro's Final Verdict:</h3>
-    <p>"Google has disrupted the entire AI industry with Gemini 2.5 Pro. Offering GPT-4.5 level performance for free changes everything about AI economics. At IImagined.ai, we've replaced $240/month in AI costs while improving our automation capabilities. This is the democratization of advanced AI."</p>
+    <h3 className="text-2xl font-bold text-purple-400 mb-4">💡 Anyro's Final Verdict:</h3>
+    <p className="text-gray-300 mb-4">"Google has disrupted the entire AI industry with Gemini 2.5 Pro. Offering GPT-4.5 level performance for free changes everything about AI economics. At IImagined.ai, we've replaced $240/month in AI costs while improving our automation capabilities. This is the democratization of advanced AI."</p>
   </div>
   
   <div className="action-plan">
-    <h3>🚀 Immediate Action Plan</h3>
-    <ol>
-      <li><strong>Today:</strong> Set up free Google AI Studio account and test capabilities</li>
-      <li><strong>This Week:</strong> Identify 3 business processes that could benefit from AI</li>
-      <li><strong>Next Week:</strong> Implement API integration for your highest-value use case</li>
-      <li><strong>Month 1:</strong> Scale successful implementations and measure ROI</li>
+    <h3 className="text-2xl font-bold text-purple-400 mb-4">🚀 Immediate Action Plan</h3>
+    <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+      <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Today:</strong> Set up free Google AI Studio account and test capabilities</span></li>
+      <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>This Week:</strong> Identify 3 business processes that could benefit from AI</span></li>
+      <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Next Week:</strong> Implement API integration for your highest-value use case</span></li>
+      <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Month 1:</strong> Scale successful implementations and measure ROI</span></li>
     </ol>
   </div>
   
   <div className="market-impact">
-    <h3>🌊 Industry Impact Prediction</h3>
-    <p>Gemini 2.5 Pro being free will force competitors to dramatically improve their offerings or reduce prices. This levels the playing field for startups and small businesses who couldn't afford premium AI services. We're witnessing the beginning of the post-paid AI era.</p>
+    <h3 className="text-2xl font-bold text-purple-400 mb-4">🌊 Industry Impact Prediction</h3>
+    <p className="text-gray-300 mb-4">Gemini 2.5 Pro being free will force competitors to dramatically improve their offerings or reduce prices. This levels the playing field for startups and small businesses who couldn't afford premium AI services. We're witnessing the beginning of the post-paid AI era.</p>
   </div>
   
   <div className="future-outlook">
-    <h3>🔮 What's Next for AI Strategy?</h3>
-    <p>Smart businesses will immediately integrate Gemini 2.5 Pro to reduce costs and improve capabilities. The competitive advantage will shift from AI access to AI implementation strategy. At IImagined.ai, we're developing frameworks to help businesses maximize this opportunity.</p>
+    <h3 className="text-2xl font-bold text-purple-400 mb-4">🔮 What's Next for AI Strategy?</h3>
+    <p className="text-gray-300 mb-4">Smart businesses will immediately integrate Gemini 2.5 Pro to reduce costs and improve capabilities. The competitive advantage will shift from AI access to AI implementation strategy. At IImagined.ai, we're developing frameworks to help businesses maximize this opportunity.</p>
   </div>
 </div>
-    `,
+    
+      </div>
+    </div>
+  </section>
+</div>`,
     date: '2025-03-30',
     category: 'AI NEWS',
     readTime: '16 min'
@@ -5043,903 +5103,1052 @@ python -m archon.main
 
   'liner-ai-research-tool-outperforms-gemini-gpt-4-5': {
     title: "Liner AI Review 2025: The Free Research Tool That Beats Gemini & GPT-4.5 (Complete Guide)",
-    content: `
-      <h2>Table of Contents</h2>
-      <ol>
-        <li><a href="#introduction">Why Liner is Revolutionizing AI Research</a></li>
-        <li><a href="#what-is-liner">What is Liner AI? Complete Overview</a></li>
-        <li><a href="#features">15 Game-Changing Features of Liner</a></li>
-        <li><a href="#liner-vs-competition">Liner vs Gemini vs Perplexity vs GPT-4.5</a></li>
-        <li><a href="#academic-sources">50+ Academic Sources: Why It Matters</a></li>
-        <li><a href="#how-it-works">Step-by-Step: How Liner Works</a></li>
-        <li><a href="#use-cases">7 Professional Use Cases for Liner</a></li>
-        <li><a href="#pricing-analysis">Pricing: Why Free Beats Paid Alternatives</a></li>
-        <li><a href="#customization">Advanced Customization Options</a></li>
-        <li><a href="#real-world-testing">Real-World Performance Testing</a></li>
-        <li><a href="#limitations">Honest Review: Limitations & Drawbacks</a></li>
-        <li><a href="#getting-started">Complete Setup Guide</a></li>
-        <li><a href="#tips-tricks">Pro Tips for Maximum Efficiency</a></li>
-        <li><a href="#future-updates">Future of Liner: What's Coming</a></li>
-        <li><a href="#faq">Frequently Asked Questions</a></li>
+    content: `<div className="min-h-screen bg-dark">
+  <section className="section-spacing overflow-hidden">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center max-w-5xl mx-auto">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
+          <span className="text-purple-400 text-sm font-semibold">AI MODEL UPDATE</span>
+        </div>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Liner AI Review 2025 <span className="text-purple-400">The Free Research Tool That Beats Gemini & GPT-4.5 (Complete Guide)</span>
+        </h1>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+          Complete guide to the latest AI innovations and developments
+        </p>
+        <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-gray-400">
+          <span>📅 March 26, 2025</span>
+          <span>•</span>
+          <span>⏱️ 22 min</span>
+          <span>•</span>
+          <span>🔥 AI TOOLS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">📊 Key Metrics</h2>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-2xl p-6 border border-purple-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-purple-400 text-sm font-semibold">Performance</span>
+              <span className="text-2xl">📊</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">90%</div>
+            <div className="text-sm text-gray-400">research tasks, it's faster and more comprehensive</div>
+          </div>
+          <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-2xl p-6 border border-purple-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-purple-400 text-sm font-semibold">Time Saved</span>
+              <span className="text-2xl">⏱️</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">24 hours</div>
+            <div className="text-sm text-gray-400">(breaking research)</li>
+            <li>Last week</div>
+          </div>
+          <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-2xl p-6 border border-purple-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-purple-400 text-sm font-semibold">Time Saved</span>
+              <span className="text-2xl">⏱️</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">30 days</div>
+            <div className="text-sm text-gray-400">on the free plan (unlimited on Pro)</div>
+          </div>
+          <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-2xl p-6 border border-purple-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-purple-400 text-sm font-semibold">Time Saved</span>
+              <span className="text-2xl">⏱️</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">48 hours</div>
+            <div className="text-sm text-gray-400">of publication in most cases</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-gradient-to-br from-gray-900/50 to-purple-900/20 rounded-2xl p-8 border border-purple-500/20">
+          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <span className="text-purple-400">📚</span> Table of Contents
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            
+            <a href="#introduction" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">1.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Why Liner is Revolutionizing AI Research</span>
+            </a>
+            <a href="#what-is-liner" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">2.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">What is Liner AI? Complete Overview</span>
+            </a>
+            <a href="#features" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">3.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">15 Game-Changing Features of Liner</span>
+            </a>
+            <a href="#liner-vs-competition" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">4.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Liner vs Gemini vs Perplexity vs GPT-4.5: Head-to-Head Comparison</span>
+            </a>
+            <a href="#academic-sources" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">5.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">50+ Academic Sources: Why It Matters</span>
+            </a>
+            <a href="#how-it-works" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">6.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Step-by-Step: How Liner Works</span>
+            </a>
+            <a href="#use-cases" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">7.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">7 Professional Use Cases for Liner</span>
+            </a>
+            <a href="#pricing-analysis" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">8.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Pricing: Why Free Beats Paid Alternatives</span>
+            </a>
+            <a href="#customization" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">9.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Advanced Customization Options</span>
+            </a>
+            <a href="#real-world-testing" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">10.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Real-World Performance Testing</span>
+            </a>
+            <a href="#limitations" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">11.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Honest Review: Limitations & Drawbacks</span>
+            </a>
+            <a href="#getting-started" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">12.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Complete Setup Guide</span>
+            </a>
+            <a href="#tips-tricks" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">13.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Pro Tips for Maximum Efficiency</span>
+            </a>
+            <a href="#future-updates" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">14.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Future of Liner: What's Coming</span>
+            </a>
+            <a href="#faq" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500/10 transition-all duration-300">
+              <span className="text-purple-400 font-semibold">15.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Frequently Asked Questions</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="section-spacing bg-dark">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto text-gray-300">
+        
+      <h2 className="text-3xl font-bold text-white mb-6">Table of Contents</h2>
+      <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#introduction">Why Liner is Revolutionizing AI Research</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#what-is-liner">What is Liner AI? Complete Overview</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#features">15 Game-Changing Features of Liner</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#liner-vs-competition">Liner vs Gemini vs Perplexity vs GPT-4.5</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#academic-sources">50+ Academic Sources: Why It Matters</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#how-it-works">Step-by-Step: How Liner Works</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#use-cases">7 Professional Use Cases for Liner</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#pricing-analysis">Pricing: Why Free Beats Paid Alternatives</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#customization">Advanced Customization Options</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#real-world-testing">Real-World Performance Testing</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#limitations">Honest Review: Limitations & Drawbacks</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#getting-started">Complete Setup Guide</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#tips-tricks">Pro Tips for Maximum Efficiency</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#future-updates">Future of Liner: What's Coming</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="#faq">Frequently Asked Questions</a></span></li>
       </ol>
 
-      <h2 id="introduction">Why Liner is Revolutionizing AI Research</h2>
-      <p>Imagine having a research assistant that's <strong>faster than GPT-4.5, more accurate than Gemini, and completely free</strong>. That's exactly what Liner delivers. After spending 3 months testing every major AI research tool, I can confidently say that Liner has fundamentally changed how professionals conduct research in 2025.</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Why Liner is Revolutionizing AI Research</h2>
+      <p className="text-gray-300 mb-4">Imagine having a research assistant that's <strong>faster than GPT-4.5, more accurate than Gemini, and completely free</strong>. That's exactly what Liner delivers. After spending 3 months testing every major AI research tool, I can confidently say that Liner has fundamentally changed how professionals conduct research in 2025.</p>
 
       <div className="stats-box">
-        <h3>🔥 Liner's Impressive Stats</h3>
-        <ul>
-          <li>📊 <strong>#1 on OpenAI's QA Benchmark</strong> for research accuracy</li>
-          <li>⚡ <strong>3x faster</strong> than Google's Deep Research Agent</li>
-          <li>📚 Access to <strong>50+ academic sources</strong> including arXiv, PubMed, Nature</li>
-          <li>💰 <strong>10 free reports daily</strong> (vs 5 for competitors)</li>
-          <li>🎯 <strong>89% accuracy rate</strong> in academic fact-checking</li>
-          <li>📈 <strong>2M+ active users</strong> as of March 2025</li>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">🔥 Liner's Impressive Stats</h3>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>📊 <strong>#1 on OpenAI's QA Benchmark</strong> for research accuracy</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>⚡ <strong>3x faster</strong> than Google's Deep Research Agent</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>📚 Access to <strong>50+ academic sources</strong> including arXiv, PubMed, Nature</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>💰 <strong>10 free reports daily</strong> (vs 5 for competitors)</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>🎯 <strong>89% accuracy rate</strong> in academic fact-checking</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>📈 <strong>2M+ active users</strong> as of March 2025</span></li>
         </ul>
       </div>
 
-      <p>But here's what really sets Liner apart: while other tools are raising prices and limiting features, Liner remains completely free for regular users. As someone who's tested over 30 AI research tools at IImagined.ai, I've never seen this combination of quality, speed, and accessibility.</p>
+      <p className="text-gray-300 mb-4">But here's what really sets Liner apart: while other tools are raising prices and limiting features, Liner remains completely free for regular users. As someone who's tested over 30 AI research tools at IImagined.ai, I've never seen this combination of quality, speed, and accessibility.</p>
 
-      <h2 id="what-is-liner">What is Liner AI? Complete Overview</h2>
-      <p><strong>Liner is an agentic deep research AI</strong> that generates comprehensive, citation-backed reports from simple queries. Unlike traditional AI assistants that provide surface-level answers, Liner conducts actual research by analyzing multiple academic sources simultaneously.</p>
+      <h2 className="text-3xl font-bold text-white mb-6">What is Liner AI? Complete Overview</h2>
+      <p className="text-gray-300 mb-4"><strong className="text-white">Liner is an agentic deep research AI</strong> that generates comprehensive, citation-backed reports from simple queries. Unlike traditional AI assistants that provide surface-level answers, Liner conducts actual research by analyzing multiple academic sources simultaneously.</p>
 
-      <h3>Core Technology Behind Liner</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Core Technology Behind Liner</h3>
       <div className="tech-explanation">
-        <h4>🧠 How Liner's AI Architecture Works</h4>
-        <ul>
-          <li><strong>Multi-Agent System:</strong> Multiple specialized AI agents work in parallel</li>
-          <li><strong>Source Verification:</strong> Real-time credibility scoring for every citation</li>
-          <li><strong>Academic Focus:</strong> Fine-tuned on peer-reviewed research papers</li>
-          <li><strong>Dynamic Synthesis:</strong> Combines findings from 50+ sources per query</li>
-          <li><strong>Interactive Research:</strong> Allows follow-up questions and refinements</li>
+        <h4 className="text-xl font-semibold text-white mb-3">🧠 How Liner's AI Architecture Works</h4>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Multi-Agent System:</strong> Multiple specialized AI agents work in parallel</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Source Verification:</strong> Real-time credibility scoring for every citation</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Academic Focus:</strong> Fine-tuned on peer-reviewed research papers</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Dynamic Synthesis:</strong> Combines findings from 50+ sources per query</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Interactive Research:</strong> Allows follow-up questions and refinements</span></li>
         </ul>
       </div>
 
-      <h3>What Makes Liner Different?</h3>
-      <p>Traditional AI tools like ChatGPT or Claude provide answers based on their training data. Liner, however, actively searches through current academic databases, ensuring information is:</p>
-      <ul>
-        <li>✅ <strong>Up-to-date:</strong> Accesses papers published as recently as yesterday</li>
-        <li>✅ <strong>Verifiable:</strong> Every claim linked to a specific source</li>
-        <li>✅ <strong>Academic-grade:</strong> Prioritizes peer-reviewed content</li>
-        <li>✅ <strong>Comprehensive:</strong> Analyzes conflicting viewpoints and consensus</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">What Makes Liner Different?</h3>
+      <p className="text-gray-300 mb-4">Traditional AI tools like ChatGPT or Claude provide answers based on their training data. Liner, however, actively searches through current academic databases, ensuring information is:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ <strong>Up-to-date:</strong> Accesses papers published as recently as yesterday</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ <strong>Verifiable:</strong> Every claim linked to a specific source</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ <strong>Academic-grade:</strong> Prioritizes peer-reviewed content</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ <strong>Comprehensive:</strong> Analyzes conflicting viewpoints and consensus</span></li>
       </ul>
 
-      <h2 id="features">15 Game-Changing Features of Liner</h2>
-      <p>After extensive testing, here are the features that make Liner indispensable for serious researchers:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">15 Game-Changing Features of Liner</h2>
+      <p className="text-gray-300 mb-4">After extensive testing, here are the features that make Liner indispensable for serious researchers:</p>
 
-      <h3>1. Real-Time Citation Tracking</h3>
-      <p>Every statement in Liner's reports includes clickable citations. You can instantly verify sources, read abstracts, and access full papers when available.</p>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">1. Real-Time Citation Tracking</h3>
+      <p className="text-gray-300 mb-4">Every statement in Liner's reports includes clickable citations. You can instantly verify sources, read abstracts, and access full papers when available.</p>
 
-      <h3>2. Scholar Mode</h3>
-      <p>Filter out all non-academic sources with one click. Perfect for academic papers, dissertations, and professional research.</p>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">2. Scholar Mode</h3>
+      <p className="text-gray-300 mb-4">Filter out all non-academic sources with one click. Perfect for academic papers, dissertations, and professional research.</p>
 
-      <h3>3. Visual Data Representation</h3>
-      <table className="feature-table">
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">3. Visual Data Representation</h3>
+      <table className="w-full text-gray-300 border-collapse">
         <tr>
-          <th>Visual Feature</th>
-          <th>Description</th>
-          <th>Use Case</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Visual Feature</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Description</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Use Case</th>
         </tr>
         <tr>
-          <td>Tables</td>
-          <td>Auto-generated comparison tables</td>
-          <td>Comparing studies, methodologies</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Tables</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Auto-generated comparison tables</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Comparing studies, methodologies</td>
         </tr>
         <tr>
-          <td>Graphs</td>
-          <td>Statistical visualizations</td>
-          <td>Showing trends, correlations</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Graphs</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Statistical visualizations</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Showing trends, correlations</td>
         </tr>
         <tr>
-          <td>Infographics</td>
-          <td>Key findings summaries</td>
-          <td>Presentations, reports</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Infographics</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Key findings summaries</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Presentations, reports</td>
         </tr>
         <tr>
-          <td>Citation Maps</td>
-          <td>Visual citation networks</td>
-          <td>Understanding research connections</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Citation Maps</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Visual citation networks</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Understanding research connections</td>
         </tr>
       </table>
 
-      <h3>4. Multi-Format Export</h3>
-      <ul>
-        <li>📄 <strong>PDF:</strong> Formatted reports with working hyperlinks</li>
-        <li>📝 <strong>DOCX:</strong> Editable documents with preserved formatting</li>
-        <li>📋 <strong>TXT:</strong> Plain text for easy integration</li>
-        <li>🔗 <strong>Markdown:</strong> For technical documentation</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">4. Multi-Format Export</h3>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>📄 <strong>PDF:</strong> Formatted reports with working hyperlinks</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>📝 <strong>DOCX:</strong> Editable documents with preserved formatting</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>📋 <strong>TXT:</strong> Plain text for easy integration</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>🔗 <strong>Markdown:</strong> For technical documentation</span></li>
       </ul>
 
-      <h3>5. Source Quality Filtering</h3>
-      <p>Liner's advanced filtering lets you:</p>
-      <ul>
-        <li>Set minimum citation thresholds (e.g., papers with 100+ citations)</li>
-        <li>Filter by publication date (last year, 5 years, custom range)</li>
-        <li>Exclude specific domains or publishers</li>
-        <li>Prioritize open-access sources</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">5. Source Quality Filtering</h3>
+      <p className="text-gray-300 mb-4">Liner's advanced filtering lets you:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Set minimum citation thresholds (e.g., papers with 100+ citations)</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Filter by publication date (last year, 5 years, custom range)</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Exclude specific domains or publishers</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Prioritize open-access sources</span></li>
       </ul>
 
-      <h3>6. Interactive Follow-Up Questions</h3>
-      <p>Unlike static report generators, Liner allows dynamic conversations. Ask follow-ups like:</p>
-      <ul>
-        <li>"Can you expand on the methodology section?"</li>
-        <li>"What are the opposing viewpoints?"</li>
-        <li>"Show me more recent studies on this aspect"</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">6. Interactive Follow-Up Questions</h3>
+      <p className="text-gray-300 mb-4">Unlike static report generators, Liner allows dynamic conversations. Ask follow-ups like:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>"Can you expand on the methodology section?"</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>"What are the opposing viewpoints?"</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>"Show me more recent studies on this aspect"</span></li>
       </ul>
 
-      <h3>7. Collaboration Features</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">7. Collaboration Features</h3>
       <div className="collaboration-box">
-        <h4>Team Research Capabilities</h4>
-        <ul>
-          <li>Share reports with unique URLs</li>
-          <li>Add annotations and comments</li>
-          <li>Track version history</li>
-          <li>Export collaborative notes</li>
+        <h4 className="text-xl font-semibold text-white mb-3">Team Research Capabilities</h4>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Share reports with unique URLs</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Add annotations and comments</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Track version history</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Export collaborative notes</span></li>
         </ul>
       </div>
 
-      <h3>8. API Access (Coming Soon)</h3>
-      <p>Liner announced API access for Q2 2025, enabling:</p>
-      <ul>
-        <li>Integration with research workflows</li>
-        <li>Automated report generation</li>
-        <li>Custom application development</li>
-        <li>Bulk research processing</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">8. API Access (Coming Soon)</h3>
+      <p className="text-gray-300 mb-4">Liner announced API access for Q2 2025, enabling:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Integration with research workflows</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Automated report generation</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Custom application development</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Bulk research processing</span></li>
       </ul>
 
-      <h3>9-15. Additional Premium Features</h3>
-      <ul>
-        <li><strong>9. Cross-Language Research:</strong> Searches papers in 12 languages</li>
-        <li><strong>10. Patent Database Access:</strong> Includes USPTO and EPO</li>
-        <li><strong>11. Legal Database Integration:</strong> Case law and regulations</li>
-        <li><strong>12. Medical Database Priority:</strong> PubMed, Cochrane emphasis</li>
-        <li><strong>13. Historical Archive Access:</strong> Papers from 1900s onwards</li>
-        <li><strong>14. Preprint Inclusion:</strong> Latest research before peer review</li>
-        <li><strong>15. Custom Source Lists:</strong> Create preferred source libraries</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">9-15. Additional Premium Features</h3>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>9. Cross-Language Research:</strong> Searches papers in 12 languages</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>10. Patent Database Access:</strong> Includes USPTO and EPO</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>11. Legal Database Integration:</strong> Case law and regulations</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>12. Medical Database Priority:</strong> PubMed, Cochrane emphasis</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>13. Historical Archive Access:</strong> Papers from 1900s onwards</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>14. Preprint Inclusion:</strong> Latest research before peer review</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>15. Custom Source Lists:</strong> Create preferred source libraries</span></li>
       </ul>
 
-      <h2 id="liner-vs-competition">Liner vs Gemini vs Perplexity vs GPT-4.5: Head-to-Head Comparison</h2>
-      <p>I conducted extensive testing comparing Liner against the top AI research tools. Here's the comprehensive breakdown:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Liner vs Gemini vs Perplexity vs GPT-4.5: Head-to-Head Comparison</h2>
+      <p className="text-gray-300 mb-4">I conducted extensive testing comparing Liner against the top AI research tools. Here's the comprehensive breakdown:</p>
 
-      <table className="comparison-table">
+      <table className="w-full text-gray-300 border-collapse">
         <tr>
-          <th>Feature</th>
-          <th>Liner</th>
-          <th>Google Gemini Deep Research</th>
-          <th>Perplexity Pro</th>
-          <th>GPT-4.5</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Feature</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Liner</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Google Gemini Deep Research</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Perplexity Pro</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">GPT-4.5</th>
         </tr>
         <tr>
-          <td><strong>Free Reports/Day</strong></td>
-          <td>10</td>
-          <td>5</td>
-          <td>5 (limited)</td>
-          <td>0 (paid only)</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Free Reports/Day</strong></td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">10</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">5</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">5 (limited)</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">0 (paid only)</td>
         </tr>
         <tr>
-          <td><strong>Academic Sources</strong></td>
-          <td>50+</td>
-          <td>20+</td>
-          <td>Web-based</td>
-          <td>Training data only</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Academic Sources</strong></td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">50+</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">20+</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Web-based</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Training data only</td>
         </tr>
         <tr>
-          <td><strong>Report Generation Time</strong></td>
-          <td>45-90 seconds</td>
-          <td>2-5 minutes</td>
-          <td>30-60 seconds</td>
-          <td>Instant (but limited)</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Report Generation Time</strong></td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">45-90 seconds</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">2-5 minutes</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">30-60 seconds</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Instant (but limited)</td>
         </tr>
         <tr>
-          <td><strong>Citation Quality</strong></td>
-          <td>Peer-reviewed priority</td>
-          <td>Mixed quality</td>
-          <td>Web-heavy</td>
-          <td>No real-time citations</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Citation Quality</strong></td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Peer-reviewed priority</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Mixed quality</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Web-heavy</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">No real-time citations</td>
         </tr>
         <tr>
-          <td><strong>Export Options</strong></td>
-          <td>PDF, DOCX, TXT, MD</td>
-          <td>PDF only</td>
-          <td>Copy text only</td>
-          <td>Copy text only</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Export Options</strong></td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">PDF, DOCX, TXT, MD</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">PDF only</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Copy text only</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Copy text only</td>
         </tr>
         <tr>
-          <td><strong>Accuracy (Academic)</strong></td>
-          <td>89%</td>
-          <td>82%</td>
-          <td>75%</td>
-          <td>71%</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Accuracy (Academic)</strong></td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">89%</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">82%</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">75%</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">71%</td>
         </tr>
         <tr>
-          <td><strong>Monthly Cost</strong></td>
-          <td>$0 (Premium: $20)</td>
-          <td>$0 (Gemini Advanced: $20)</td>
-          <td>$20</td>
-          <td>$20+</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Monthly Cost</strong></td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$0 (Premium: $20)</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$0 (Gemini Advanced: $20)</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$20</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$20+</td>
         </tr>
       </table>
 
-      <h3>Performance Testing Results</h3>
-      <p>I tested each tool with 5 complex research queries across different fields:</p>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Performance Testing Results</h3>
+      <p className="text-gray-300 mb-4">I tested each tool with 5 complex research queries across different fields:</p>
 
       <div className="test-results">
-        <h4>Test Query: "Latest CRISPR gene editing safety protocols and ethical considerations"</h4>
-        <ul>
-          <li><strong>Liner:</strong> 127 sources cited, 12-page report, 89% accuracy ✅</li>
-          <li><strong>Gemini:</strong> 43 sources, 8-page report, 82% accuracy</li>
-          <li><strong>Perplexity:</strong> 31 sources (mostly news), 5-page report, 75% accuracy</li>
-          <li><strong>GPT-4.5:</strong> No real-time sources, generic 3-page response, 71% accuracy</li>
+        <h4 className="text-xl font-semibold text-white mb-3">Test Query: "Latest CRISPR gene editing safety protocols and ethical considerations"</h4>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Liner:</strong> 127 sources cited, 12-page report, 89% accuracy ✅</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Gemini:</strong> 43 sources, 8-page report, 82% accuracy</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Perplexity:</strong> 31 sources (mostly news), 5-page report, 75% accuracy</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>GPT-4.5:</strong> No real-time sources, generic 3-page response, 71% accuracy</span></li>
         </ul>
       </div>
 
-      <h2 id="academic-sources">50+ Academic Sources: Why It Matters</h2>
-      <p>Liner's access to over 50 academic databases is a game-changer. Here's what you get access to:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">50+ Academic Sources: Why It Matters</h2>
+      <p className="text-gray-300 mb-4">Liner's access to over 50 academic databases is a game-changer. Here's what you get access to:</p>
 
-      <h3>Primary Academic Databases</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Primary Academic Databases</h3>
       <div className="database-grid">
         <div className="database-category">
-          <h4>🔬 Science & Technology</h4>
-          <ul>
-            <li>arXiv (Physics, Mathematics, CS)</li>
-            <li>IEEE Xplore</li>
-            <li>ACM Digital Library</li>
-            <li>ScienceDirect</li>
-            <li>SpringerLink</li>
+          <h4 className="text-xl font-semibold text-white mb-3">🔬 Science & Technology</h4>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>arXiv (Physics, Mathematics, CS)</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>IEEE Xplore</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>ACM Digital Library</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>ScienceDirect</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>SpringerLink</span></li>
           </ul>
         </div>
 
         <div className="database-category">
-          <h4>🏥 Medical & Life Sciences</h4>
-          <ul>
-            <li>PubMed/MEDLINE</li>
-            <li>Cochrane Library</li>
-            <li>BioMed Central</li>
-            <li>Nature Publishing Group</li>
-            <li>Cell Press</li>
+          <h4 className="text-xl font-semibold text-white mb-3">🏥 Medical & Life Sciences</h4>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>PubMed/MEDLINE</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Cochrane Library</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>BioMed Central</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Nature Publishing Group</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Cell Press</span></li>
           </ul>
         </div>
 
         <div className="database-category">
-          <h4>📚 Multidisciplinary</h4>
-          <ul>
-            <li>Google Scholar</li>
-            <li>JSTOR</li>
-            <li>Web of Science</li>
-            <li>Scopus</li>
-            <li>DOAJ</li>
+          <h4 className="text-xl font-semibold text-white mb-3">📚 Multidisciplinary</h4>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Google Scholar</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>JSTOR</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Web of Science</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Scopus</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>DOAJ</span></li>
           </ul>
         </div>
 
         <div className="database-category">
-          <h4>💼 Business & Economics</h4>
-          <ul>
-            <li>SSRN</li>
-            <li>RePEc</li>
-            <li>Business Source Premier</li>
-            <li>EconLit</li>
-            <li>NBER Working Papers</li>
+          <h4 className="text-xl font-semibold text-white mb-3">💼 Business & Economics</h4>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>SSRN</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>RePEc</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Business Source Premier</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>EconLit</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>NBER Working Papers</span></li>
           </ul>
         </div>
       </div>
 
-      <h3>Why Academic Sources Matter</h3>
-      <p>Using peer-reviewed sources ensures:</p>
-      <ul>
-        <li>✅ <strong>Reliability:</strong> Information verified by experts</li>
-        <li>✅ <strong>Accuracy:</strong> Rigorous methodology and fact-checking</li>
-        <li>✅ <strong>Credibility:</strong> Citations you can trust in professional work</li>
-        <li>✅ <strong>Current Research:</strong> Latest findings and breakthroughs</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Why Academic Sources Matter</h3>
+      <p className="text-gray-300 mb-4">Using peer-reviewed sources ensures:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ <strong>Reliability:</strong> Information verified by experts</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ <strong>Accuracy:</strong> Rigorous methodology and fact-checking</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ <strong>Credibility:</strong> Citations you can trust in professional work</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ <strong>Current Research:</strong> Latest findings and breakthroughs</span></li>
       </ul>
 
-      <h2 id="how-it-works">Step-by-Step: How Liner Works</h2>
-      <p>Understanding Liner's process helps you get better results. Here's exactly what happens when you submit a query:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Step-by-Step: How Liner Works</h2>
+      <p className="text-gray-300 mb-4">Understanding Liner's process helps you get better results. Here's exactly what happens when you submit a query:</p>
 
-      <h3>The Liner Research Process</h3>
-      <ol className="process-steps">
-        <li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">The Liner Research Process</h3>
+      <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Query Analysis (0-5 seconds)</strong>
-          <ul>
-            <li>AI breaks down your question into key concepts</li>
-            <li>Identifies required expertise domains</li>
-            <li>Determines optimal search parameters</li>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>AI breaks down your question into key concepts</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Identifies required expertise domains</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Determines optimal search parameters</span></li>
           </ul>
-        </li>
+        </span></li>
 
-        <li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Multi-Agent Deployment (5-15 seconds)</strong>
-          <ul>
-            <li>Specialized agents assigned to different aspects</li>
-            <li>Parallel searches across 50+ databases</li>
-            <li>Initial relevance filtering</li>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Specialized agents assigned to different aspects</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Parallel searches across 50+ databases</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Initial relevance filtering</span></li>
           </ul>
-        </li>
+        </span></li>
 
-        <li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Source Evaluation (15-30 seconds)</strong>
-          <ul>
-            <li>Credibility scoring for each source</li>
-            <li>Citation count verification</li>
-            <li>Recency and relevance weighting</li>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Credibility scoring for each source</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Citation count verification</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Recency and relevance weighting</span></li>
           </ul>
-        </li>
+        </span></li>
 
-        <li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Synthesis & Analysis (30-60 seconds)</strong>
-          <ul>
-            <li>Cross-reference findings</li>
-            <li>Identify consensus and controversies</li>
-            <li>Structure logical narrative</li>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Cross-reference findings</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Identify consensus and controversies</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Structure logical narrative</span></li>
           </ul>
-        </li>
+        </span></li>
 
-        <li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Report Generation (60-90 seconds)</strong>
-          <ul>
-            <li>Create formatted document</li>
-            <li>Insert citations and links</li>
-            <li>Generate visual elements</li>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Create formatted document</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Insert citations and links</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Generate visual elements</span></li>
           </ul>
-        </li>
+        </span></li>
       </ol>
 
-      <h3>Optimizing Your Queries</h3>
-      <p>Get better results with these query optimization techniques:</p>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Optimizing Your Queries</h3>
+      <p className="text-gray-300 mb-4">Get better results with these query optimization techniques:</p>
 
       <div className="tips-box">
-        <h4>🎯 Query Optimization Tips</h4>
-        <ul>
-          <li><strong>Be Specific:</strong> "CRISPR Cas9 off-target effects in human T-cells" beats "gene editing problems"</li>
-          <li><strong>Add Context:</strong> Include field, timeframe, or specific focus</li>
-          <li><strong>Use Academic Terms:</strong> Technical terminology yields better academic results</li>
-          <li><strong>Request Comparisons:</strong> "Compare X vs Y" triggers comparative analysis</li>
-          <li><strong>Specify Output:</strong> "Provide methodology review" or "Focus on recent developments"</li>
+        <h4 className="text-xl font-semibold text-white mb-3">🎯 Query Optimization Tips</h4>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Be Specific:</strong> "CRISPR Cas9 off-target effects in human T-cells" beats "gene editing problems"</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Add Context:</strong> Include field, timeframe, or specific focus</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Use Academic Terms:</strong> Technical terminology yields better academic results</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Request Comparisons:</strong> "Compare X vs Y" triggers comparative analysis</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Specify Output:</strong> "Provide methodology review" or "Focus on recent developments"</span></li>
         </ul>
       </div>
 
-      <h2 id="use-cases">7 Professional Use Cases for Liner</h2>
-      <p>Based on my experience and user feedback, here are the most impactful ways professionals use Liner:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">7 Professional Use Cases for Liner</h2>
+      <p className="text-gray-300 mb-4">Based on my experience and user feedback, here are the most impactful ways professionals use Liner:</p>
 
-      <h3>1. Academic Research & Literature Reviews</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">1. Academic Research & Literature Reviews</h3>
       <div className="use-case">
-        <h4>PhD Student Success Story</h4>
-        <p>"Liner cut my literature review time from 3 months to 3 weeks. The ability to quickly identify seminal papers and trace citation networks is invaluable." - Sarah Chen, MIT PhD Candidate</p>
+        <h4 className="text-xl font-semibold text-white mb-3">PhD Student Success Story</h4>
+        <p className="text-gray-300 mb-4">"Liner cut my literature review time from 3 months to 3 weeks. The ability to quickly identify seminal papers and trace citation networks is invaluable." - Sarah Chen, MIT PhD Candidate</p>
         
-        <p><strong>Key Benefits:</strong></p>
-        <ul>
-          <li>Comprehensive coverage of recent publications</li>
-          <li>Easy identification of research gaps</li>
-          <li>Citation network visualization</li>
-          <li>Export to reference managers</li>
+        <p className="text-gray-300 mb-4"><strong className="text-white">Key Benefits:</strong></p>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Comprehensive coverage of recent publications</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Easy identification of research gaps</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Citation network visualization</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Export to reference managers</span></li>
         </ul>
       </div>
 
-      <h3>2. Market Research & Competitive Analysis</h3>
-      <p>Business analysts use Liner to:</p>
-      <ul>
-        <li>Track industry trends through academic studies</li>
-        <li>Analyze competitor research publications</li>
-        <li>Identify emerging technologies</li>
-        <li>Validate market assumptions with data</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">2. Market Research & Competitive Analysis</h3>
+      <p className="text-gray-300 mb-4">Business analysts use Liner to:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Track industry trends through academic studies</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Analyze competitor research publications</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Identify emerging technologies</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Validate market assumptions with data</span></li>
       </ul>
 
-      <h3>3. Medical & Healthcare Research</h3>
-      <table className="medical-uses">
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">3. Medical & Healthcare Research</h3>
+      <table className="w-full text-gray-300 border-collapse">
         <tr>
-          <th>User Type</th>
-          <th>Primary Use</th>
-          <th>Key Benefit</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">User Type</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Primary Use</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Key Benefit</th>
         </tr>
         <tr>
-          <td>Doctors</td>
-          <td>Treatment protocol research</td>
-          <td>Latest clinical trial data</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Doctors</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Treatment protocol research</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Latest clinical trial data</td>
         </tr>
         <tr>
-          <td>Researchers</td>
-          <td>Drug interaction studies</td>
-          <td>Comprehensive safety data</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Researchers</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Drug interaction studies</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Comprehensive safety data</td>
         </tr>
         <tr>
-          <td>Policy Makers</td>
-          <td>Public health trends</td>
-          <td>Evidence-based decisions</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Policy Makers</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Public health trends</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Evidence-based decisions</td>
         </tr>
       </table>
 
-      <h3>4. Legal Research & Case Preparation</h3>
-      <p>Legal professionals leverage Liner for:</p>
-      <ul>
-        <li>Precedent research across jurisdictions</li>
-        <li>Expert witness preparation</li>
-        <li>Technical evidence validation</li>
-        <li>Regulatory compliance research</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">4. Legal Research & Case Preparation</h3>
+      <p className="text-gray-300 mb-4">Legal professionals leverage Liner for:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Precedent research across jurisdictions</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Expert witness preparation</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Technical evidence validation</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Regulatory compliance research</span></li>
       </ul>
 
-      <h3>5. Technology & Engineering Innovation</h3>
-      <p>Engineers and developers use Liner to:</p>
-      <ul>
-        <li>Research implementation approaches</li>
-        <li>Validate technical architectures</li>
-        <li>Find optimization techniques</li>
-        <li>Discover emerging standards</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">5. Technology & Engineering Innovation</h3>
+      <p className="text-gray-300 mb-4">Engineers and developers use Liner to:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Research implementation approaches</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Validate technical architectures</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Find optimization techniques</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Discover emerging standards</span></li>
       </ul>
 
-      <h3>6. Investment & Financial Analysis</h3>
-      <p>Financial professionals rely on Liner for:</p>
-      <ul>
-        <li>Due diligence on emerging technologies</li>
-        <li>Academic validation of investment theses</li>
-        <li>Risk assessment through research</li>
-        <li>Trend analysis backed by data</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">6. Investment & Financial Analysis</h3>
+      <p className="text-gray-300 mb-4">Financial professionals rely on Liner for:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Due diligence on emerging technologies</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Academic validation of investment theses</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Risk assessment through research</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Trend analysis backed by data</span></li>
       </ul>
 
-      <h3>7. Content Creation & Journalism</h3>
-      <p>Writers and journalists use Liner to:</p>
-      <ul>
-        <li>Fact-check claims with academic sources</li>
-        <li>Find expert quotes and perspectives</li>
-        <li>Research complex topics quickly</li>
-        <li>Generate story ideas from research trends</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">7. Content Creation & Journalism</h3>
+      <p className="text-gray-300 mb-4">Writers and journalists use Liner to:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Fact-check claims with academic sources</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Find expert quotes and perspectives</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Research complex topics quickly</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Generate story ideas from research trends</span></li>
       </ul>
 
-      <h2 id="pricing-analysis">Pricing: Why Free Beats Paid Alternatives</h2>
-      <p>Liner's pricing model disrupts the AI research tool market. Here's the complete breakdown:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Pricing: Why Free Beats Paid Alternatives</h2>
+      <p className="text-gray-300 mb-4">Liner's pricing model disrupts the AI research tool market. Here's the complete breakdown:</p>
 
-      <h3>Liner Free Plan</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Liner Free Plan</h3>
       <div className="pricing-card">
-        <h4>🆓 Free Forever Plan</h4>
-        <ul>
-          <li>✅ 10 comprehensive reports per day</li>
-          <li>✅ Access to all 50+ academic sources</li>
-          <li>✅ Full citation tracking</li>
-          <li>✅ PDF and DOCX export</li>
-          <li>✅ Interactive follow-up questions</li>
-          <li>✅ Basic visual elements</li>
-          <li>✅ 30-day report history</li>
+        <h4 className="text-xl font-semibold text-white mb-3">🆓 Free Forever Plan</h4>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ 10 comprehensive reports per day</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Access to all 50+ academic sources</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Full citation tracking</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ PDF and DOCX export</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Interactive follow-up questions</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Basic visual elements</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ 30-day report history</span></li>
         </ul>
-        <p><strong>Value:</strong> $200+/month if compared to competitors</p>
+        <p className="text-gray-300 mb-4"><strong className="text-white">Value:</strong> $200+/month if compared to competitors</p>
       </div>
 
-      <h3>Liner Pro Plan ($20/month)</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Liner Pro Plan ($20/month)</h3>
       <div className="pricing-card">
-        <h4>⭐ Pro Plan Features</h4>
-        <ul>
-          <li>✅ Unlimited reports</li>
-          <li>✅ Priority processing (30 seconds faster)</li>
-          <li>✅ Advanced visualizations</li>
-          <li>✅ API access (coming Q2 2025)</li>
-          <li>✅ Team collaboration tools</li>
-          <li>✅ Custom source preferences</li>
-          <li>✅ Unlimited report history</li>
-          <li>✅ Priority support</li>
+        <h4 className="text-xl font-semibold text-white mb-3">⭐ Pro Plan Features</h4>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Unlimited reports</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Priority processing (30 seconds faster)</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Advanced visualizations</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ API access (coming Q2 2025)</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Team collaboration tools</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Custom source preferences</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Unlimited report history</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>✅ Priority support</span></li>
         </ul>
       </div>
 
-      <h3>Cost Comparison Analysis</h3>
-      <p>For the average researcher needing 5-10 reports daily:</p>
-      <table className="cost-analysis">
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Cost Comparison Analysis</h3>
+      <p className="text-gray-300 mb-4">For the average researcher needing 5-10 reports daily:</p>
+      <table className="w-full text-gray-300 border-collapse">
         <tr>
-          <th>Tool</th>
-          <th>Monthly Cost</th>
-          <th>Daily Reports</th>
-          <th>Cost per Report</th>
-          <th>Annual Savings vs Liner</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Tool</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Monthly Cost</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Daily Reports</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Cost per Report</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Annual Savings vs Liner</th>
         </tr>
         <tr>
-          <td><strong>Liner Free</strong></td>
-          <td>$0</td>
-          <td>10</td>
-          <td>$0</td>
-          <td>-</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Liner Free</strong></td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$0</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">10</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$0</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">-</td>
         </tr>
         <tr>
-          <td>Perplexity Pro</td>
-          <td>$20</td>
-          <td>~10</td>
-          <td>$0.067</td>
-          <td>$240</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Perplexity Pro</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$20</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">~10</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$0.067</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$240</td>
         </tr>
         <tr>
-          <td>ChatGPT Plus</td>
-          <td>$20</td>
-          <td>Limited</td>
-          <td>~$0.50</td>
-          <td>$240</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">ChatGPT Plus</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$20</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Limited</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">~$0.50</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$240</td>
         </tr>
         <tr>
-          <td>Claude Pro</td>
-          <td>$20</td>
-          <td>Limited</td>
-          <td>~$0.40</td>
-          <td>$240</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Claude Pro</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$20</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Limited</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">~$0.40</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$240</td>
         </tr>
       </table>
 
-      <h2 id="customization">Advanced Customization Options</h2>
-      <p>Liner's customization capabilities let you tailor research to your exact needs:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Advanced Customization Options</h2>
+      <p className="text-gray-300 mb-4">Liner's customization capabilities let you tailor research to your exact needs:</p>
 
-      <h3>Source Filtering Options</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Source Filtering Options</h3>
       <div className="customization-grid">
         <div className="custom-option">
-          <h4>📅 Publication Date Filters</h4>
-          <ul>
-            <li>Last 24 hours (breaking research)</li>
-            <li>Last week/month/year</li>
-            <li>Custom date ranges</li>
-            <li>Exclude outdated research</li>
+          <h4 className="text-xl font-semibold text-white mb-3">📅 Publication Date Filters</h4>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Last 24 hours (breaking research)</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Last week/month/year</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Custom date ranges</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Exclude outdated research</span></li>
           </ul>
         </div>
 
         <div className="custom-option">
-          <h4>📊 Citation Thresholds</h4>
-          <ul>
-            <li>Minimum citation count</li>
-            <li>Impact factor filtering</li>
-            <li>H-index requirements</li>
-            <li>Peer review status</li>
+          <h4 className="text-xl font-semibold text-white mb-3">📊 Citation Thresholds</h4>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Minimum citation count</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Impact factor filtering</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>H-index requirements</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Peer review status</span></li>
           </ul>
         </div>
 
         <div className="custom-option">
-          <h4>🏛️ Source Type Preferences</h4>
-          <ul>
-            <li>Academic journals only</li>
-            <li>Include/exclude preprints</li>
-            <li>Government sources</li>
-            <li>Industry reports</li>
+          <h4 className="text-xl font-semibold text-white mb-3">🏛️ Source Type Preferences</h4>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Academic journals only</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Include/exclude preprints</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Government sources</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Industry reports</span></li>
           </ul>
         </div>
 
         <div className="custom-option">
-          <h4>🌍 Geographic & Language</h4>
-          <ul>
-            <li>Region-specific research</li>
-            <li>Multi-language search</li>
-            <li>Translation preferences</li>
-            <li>Local database priority</li>
+          <h4 className="text-xl font-semibold text-white mb-3">🌍 Geographic & Language</h4>
+          <ul className="space-y-2 mb-6 text-gray-300">
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Region-specific research</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Multi-language search</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Translation preferences</span></li>
+            <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Local database priority</span></li>
           </ul>
         </div>
       </div>
 
-      <h3>Report Customization</h3>
-      <p>Customize your report output with:</p>
-      <ul>
-        <li><strong>Length Control:</strong> Brief (2-3 pages) to Comprehensive (20+ pages)</li>
-        <li><strong>Section Emphasis:</strong> Prioritize methodology, results, or discussion</li>
-        <li><strong>Visual Density:</strong> Text-heavy or visual-rich reports</li>
-        <li><strong>Citation Style:</strong> APA, MLA, Chicago, Harvard, or custom</li>
-        <li><strong>Technical Level:</strong> Layperson to Expert</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Report Customization</h3>
+      <p className="text-gray-300 mb-4">Customize your report output with:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Length Control:</strong> Brief (2-3 pages) to Comprehensive (20+ pages)</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Section Emphasis:</strong> Prioritize methodology, results, or discussion</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Visual Density:</strong> Text-heavy or visual-rich reports</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Citation Style:</strong> APA, MLA, Chicago, Harvard, or custom</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Technical Level:</strong> Layperson to Expert</span></li>
       </ul>
 
-      <h2 id="real-world-testing">Real-World Performance Testing</h2>
-      <p>I conducted extensive real-world testing across various research scenarios. Here are the detailed results:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Real-World Performance Testing</h2>
+      <p className="text-gray-300 mb-4">I conducted extensive real-world testing across various research scenarios. Here are the detailed results:</p>
 
-      <h3>Test 1: Medical Research Query</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Test 1: Medical Research Query</h3>
       <div className="test-case">
-        <h4>Query: "Efficacy of mRNA vaccines against COVID-19 variants of concern"</h4>
+        <h4 className="text-xl font-semibold text-white mb-3">Query: "Efficacy of mRNA vaccines against COVID-19 variants of concern"</h4>
         
-        <p><strong>Liner Results:</strong></p>
-        <ul>
-          <li>Sources analyzed: 247</li>
-          <li>Report length: 18 pages</li>
-          <li>Generation time: 87 seconds</li>
-          <li>Unique insights: 23</li>
-          <li>Accuracy verified: 91%</li>
+        <p className="text-gray-300 mb-4"><strong className="text-white">Liner Results:</strong></p>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Sources analyzed: 247</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Report length: 18 pages</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Generation time: 87 seconds</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Unique insights: 23</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Accuracy verified: 91%</span></li>
         </ul>
 
-        <p><strong>Key Findings Highlighted:</strong></p>
-        <ul>
-          <li>Variant-specific efficacy rates with confidence intervals</li>
-          <li>Comparison across vaccine manufacturers</li>
-          <li>Duration of protection data</li>
-          <li>Breakthrough infection statistics</li>
+        <p className="text-gray-300 mb-4"><strong className="text-white">Key Findings Highlighted:</strong></p>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Variant-specific efficacy rates with confidence intervals</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Comparison across vaccine manufacturers</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Duration of protection data</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Breakthrough infection statistics</span></li>
         </ul>
       </div>
 
-      <h3>Test 2: Technology Research Query</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Test 2: Technology Research Query</h3>
       <div className="test-case">
-        <h4>Query: "Quantum computing applications in cryptography and cybersecurity"</h4>
+        <h4 className="text-xl font-semibold text-white mb-3">Query: "Quantum computing applications in cryptography and cybersecurity"</h4>
         
-        <p><strong>Performance Metrics:</strong></p>
-        <ul>
-          <li>Academic papers reviewed: 183</li>
-          <li>Patents referenced: 47</li>
-          <li>Industry reports included: 12</li>
-          <li>Total processing time: 92 seconds</li>
+        <p className="text-gray-300 mb-4"><strong className="text-white">Performance Metrics:</strong></p>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Academic papers reviewed: 183</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Patents referenced: 47</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Industry reports included: 12</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Total processing time: 92 seconds</span></li>
         </ul>
       </div>
 
-      <h3>Test 3: Business Research Query</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Test 3: Business Research Query</h3>
       <div className="test-case">
-        <h4>Query: "Impact of AI on workforce productivity in manufacturing 2020-2025"</h4>
+        <h4 className="text-xl font-semibold text-white mb-3">Query: "Impact of AI on workforce productivity in manufacturing 2020-2025"</h4>
         
-        <p><strong>Comprehensive Coverage:</strong></p>
-        <ul>
-          <li>Economic studies: 67</li>
-          <li>Case studies: 34</li>
-          <li>Statistical analyses: 28</li>
-          <li>Future projections: 15</li>
+        <p className="text-gray-300 mb-4"><strong className="text-white">Comprehensive Coverage:</strong></p>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Economic studies: 67</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Case studies: 34</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Statistical analyses: 28</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Future projections: 15</span></li>
         </ul>
       </div>
 
-      <h3>Speed Comparison Chart</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Speed Comparison Chart</h3>
       <div className="chart-placeholder">
-        <p><strong>Average Report Generation Time (seconds)</strong></p>
-        <ul>
-          <li>Liner: 45-90 seconds ⚡</li>
-          <li>Google Deep Research: 120-300 seconds</li>
-          <li>Manual research: 4-8 hours</li>
-          <li>Traditional literature review: 2-4 weeks</li>
+        <p className="text-gray-300 mb-4"><strong className="text-white">Average Report Generation Time (seconds)</strong></p>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Liner: 45-90 seconds ⚡</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Google Deep Research: 120-300 seconds</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Manual research: 4-8 hours</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Traditional literature review: 2-4 weeks</span></li>
         </ul>
       </div>
 
-      <h2 id="limitations">Honest Review: Limitations & Drawbacks</h2>
-      <p>While Liner excels in many areas, it's important to understand its limitations:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Honest Review: Limitations & Drawbacks</h2>
+      <p className="text-gray-300 mb-4">While Liner excels in many areas, it's important to understand its limitations:</p>
 
-      <h3>Current Limitations</h3>
-      <ol>
-        <li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Current Limitations</h3>
+      <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Highly Specialized Fields</strong>
-          <p>For extremely niche topics, Liner may find fewer sources than manual searching in specialized databases.</p>
-        </li>
+          <p className="text-gray-300 mb-4">For extremely niche topics, Liner may find fewer sources than manual searching in specialized databases.</p>
+        </span></li>
 
-        <li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Full-Text Access</strong>
-          <p>While Liner identifies relevant papers, it can't always access full text behind paywalls. You'll need institutional access for some sources.</p>
-        </li>
+          <p className="text-gray-300 mb-4">While Liner identifies relevant papers, it can't always access full text behind paywalls. You'll need institutional access for some sources.</p>
+        </span></li>
 
-        <li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Real-Time Data</strong>
-          <p>Financial markets, live sports statistics, and breaking news are better served by specialized tools.</p>
-        </li>
+          <p className="text-gray-300 mb-4">Financial markets, live sports statistics, and breaking news are better served by specialized tools.</p>
+        </span></li>
 
-        <li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Image and Video Analysis</strong>
-          <p>Currently text-focused; doesn't analyze images, charts, or video content within papers.</p>
-        </li>
+          <p className="text-gray-300 mb-4">Currently text-focused; doesn't analyze images, charts, or video content within papers.</p>
+        </span></li>
 
-        <li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>
           <strong>Language Support</strong>
-          <p>While improving, non-English source coverage is limited compared to English publications.</p>
-        </li>
+          <p className="text-gray-300 mb-4">While improving, non-English source coverage is limited compared to English publications.</p>
+        </span></li>
       </ol>
 
-      <h3>When NOT to Use Liner</h3>
-      <ul>
-        <li>❌ Real-time stock market analysis</li>
-        <li>❌ Personal medical advice (always consult professionals)</li>
-        <li>❌ Legal advice for specific cases</li>
-        <li>❌ Breaking news coverage</li>
-        <li>❌ Creative writing or fiction</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">When NOT to Use Liner</h3>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>❌ Real-time stock market analysis</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>❌ Personal medical advice (always consult professionals)</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>❌ Legal advice for specific cases</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>❌ Breaking news coverage</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>❌ Creative writing or fiction</span></li>
       </ul>
 
-      <h3>Comparison with Manual Research</h3>
-      <table className="pros-cons">
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Comparison with Manual Research</h3>
+      <table className="w-full text-gray-300 border-collapse">
         <tr>
-          <th>Aspect</th>
-          <th>Liner</th>
-          <th>Manual Research</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Aspect</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Liner</th>
+          <th className="text-left py-3 px-4 text-purple-400 font-semibold border-b border-gray-700">Manual Research</th>
         </tr>
         <tr>
-          <td>Speed</td>
-          <td>✅ 90 seconds</td>
-          <td>❌ Hours/days</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Speed</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ 90 seconds</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ Hours/days</td>
         </tr>
         <tr>
-          <td>Coverage</td>
-          <td>✅ 50+ databases</td>
-          <td>❌ Limited by access</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Coverage</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ 50+ databases</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ Limited by access</td>
         </tr>
         <tr>
-          <td>Depth</td>
-          <td>⚠️ Good overview</td>
-          <td>✅ Deep expertise</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Depth</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">⚠️ Good overview</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ Deep expertise</td>
         </tr>
         <tr>
-          <td>Cost</td>
-          <td>✅ Free</td>
-          <td>❌ Time + database fees</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Cost</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ Free</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ Time + database fees</td>
         </tr>
         <tr>
-          <td>Bias Control</td>
-          <td>✅ Objective</td>
-          <td>⚠️ Researcher bias</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Bias Control</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ Objective</td>
+          <td className="py-3 px-4 text-gray-300 border-b border-gray-800">⚠️ Researcher bias</td>
         </tr>
       </table>
 
-      <h2 id="getting-started">Complete Setup Guide</h2>
-      <p>Getting started with Liner takes less than 2 minutes. Here's the complete setup process:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Complete Setup Guide</h2>
+      <p className="text-gray-300 mb-4">Getting started with Liner takes less than 2 minutes. Here's the complete setup process:</p>
 
-      <h3>Step 1: Account Creation</h3>
-      <ol>
-        <li>Visit <a href="#" rel="nofollow">liner.ai</a></li>
-        <li>Click "Start Free Research"</li>
-        <li>Sign up with email or Google account</li>
-        <li>Verify your email (instant)</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Step 1: Account Creation</h3>
+      <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Visit <a href="#" rel="nofollow">liner.ai</a></span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Click "Start Free Research"</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Sign up with email or Google account</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Verify your email (instant)</span></li>
       </ol>
 
-      <h3>Step 2: Initial Configuration</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Step 2: Initial Configuration</h3>
       <div className="setup-checklist">
-        <h4>✓ Recommended Settings</h4>
-        <ul>
-          <li>☐ Enable Scholar Mode by default</li>
-          <li>☐ Set preferred citation style</li>
-          <li>☐ Configure source preferences</li>
-          <li>☐ Choose default export format</li>
-          <li>☐ Set up collaboration workspace</li>
+        <h4 className="text-xl font-semibold text-white mb-3">✓ Recommended Settings</h4>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>☐ Enable Scholar Mode by default</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>☐ Set preferred citation style</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>☐ Configure source preferences</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>☐ Choose default export format</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>☐ Set up collaboration workspace</span></li>
         </ul>
       </div>
 
-      <h3>Step 3: Your First Research Query</h3>
-      <p>Try this beginner-friendly query to test Liner's capabilities:</p>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Step 3: Your First Research Query</h3>
+      <p className="text-gray-300 mb-4">Try this beginner-friendly query to test Liner's capabilities:</p>
       <div className="code-box">
-        <p>"What are the latest developments in renewable energy storage technologies?"</p>
+        <p className="text-gray-300 mb-4">"What are the latest developments in renewable energy storage technologies?"</p>
       </div>
 
-      <p>This query will demonstrate:</p>
-      <ul>
-        <li>Multi-source synthesis</li>
-        <li>Technical depth</li>
-        <li>Recent research focus</li>
-        <li>Visual data representation</li>
+      <p className="text-gray-300 mb-4">This query will demonstrate:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Multi-source synthesis</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Technical depth</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Recent research focus</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Visual data representation</span></li>
       </ul>
 
-      <h3>Browser Extension (Optional)</h3>
-      <p>The Liner browser extension adds:</p>
-      <ul>
-        <li>Right-click research on any webpage</li>
-        <li>PDF annotation while reading</li>
-        <li>Quick fact-checking</li>
-        <li>Research history sync</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Browser Extension (Optional)</h3>
+      <p className="text-gray-300 mb-4">The Liner browser extension adds:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Right-click research on any webpage</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>PDF annotation while reading</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Quick fact-checking</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Research history sync</span></li>
       </ul>
 
-      <h2 id="tips-tricks">Pro Tips for Maximum Efficiency</h2>
-      <p>After months of daily use, here are my top productivity tips:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Pro Tips for Maximum Efficiency</h2>
+      <p className="text-gray-300 mb-4">After months of daily use, here are my top productivity tips:</p>
 
-      <h3>1. Master Query Formulation</h3>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">1. Master Query Formulation</h3>
       <div className="pro-tip">
-        <h4>🎯 The SCOPE Method</h4>
-        <ul>
-          <li><strong>S</strong>pecific: Narrow your topic precisely</li>
-          <li><strong>C</strong>ontext: Add field, time, or geographic context</li>
-          <li><strong>O</strong>bjective: State what you need (overview, comparison, etc.)</li>
-          <li><strong>P</strong>arameters: Include any constraints</li>
-          <li><strong>E</strong>xpected output: Mention desired format</li>
+        <h4 className="text-xl font-semibold text-white mb-3">🎯 The SCOPE Method</h4>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>S</strong>pecific: Narrow your topic precisely</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>C</strong>ontext: Add field, time, or geographic context</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>O</strong>bjective: State what you need (overview, comparison, etc.)</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>P</strong>arameters: Include any constraints</span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>E</strong>xpected output: Mention desired format</span></li>
         </ul>
 
-        <p><strong>Example:</strong> "Compare CRISPR-Cas9 vs prime editing for treating sickle cell disease, focusing on clinical trials 2020-2025, emphasizing safety profiles"</p>
+        <p className="text-gray-300 mb-4"><strong className="text-white">Example:</strong> "Compare CRISPR-Cas9 vs prime editing for treating sickle cell disease, focusing on clinical trials 2020-2025, emphasizing safety profiles"</p>
       </div>
 
-      <h3>2. Use Boolean Operators</h3>
-      <p>Liner supports advanced search operators:</p>
-      <ul>
-        <li><code>AND</code> - Both terms required</li>
-        <li><code>OR</code> - Either term acceptable</li>
-        <li><code>NOT</code> - Exclude term</li>
-        <li><code>"quotes"</code> - Exact phrase</li>
-        <li><code>*</code> - Wildcard</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">2. Use Boolean Operators</h3>
+      <p className="text-gray-300 mb-4">Liner supports advanced search operators:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded">AND</code> - Both terms required</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded">OR</code> - Either term acceptable</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded">NOT</code> - Exclude term</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded">"quotes"</code> - Exact phrase</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded">*</code> - Wildcard</span></li>
       </ul>
 
-      <h3>3. Iterative Research Strategy</h3>
-      <ol>
-        <li>Start with broad overview query</li>
-        <li>Identify key subtopics</li>
-        <li>Deep dive with specific follow-ups</li>
-        <li>Cross-reference controversial findings</li>
-        <li>Export comprehensive report</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">3. Iterative Research Strategy</h3>
+      <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Start with broad overview query</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Identify key subtopics</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Deep dive with specific follow-ups</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Cross-reference controversial findings</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Export comprehensive report</span></li>
       </ol>
 
-      <h3>4. Collaboration Workflows</h3>
-      <p>For team research:</p>
-      <ul>
-        <li>Create shared workspaces for projects</li>
-        <li>Assign different aspects to team members</li>
-        <li>Use annotation features for discussion</li>
-        <li>Export unified reports</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">4. Collaboration Workflows</h3>
+      <p className="text-gray-300 mb-4">For team research:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Create shared workspaces for projects</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Assign different aspects to team members</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Use annotation features for discussion</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Export unified reports</span></li>
       </ul>
 
-      <h3>5. Integration Hacks</h3>
-      <ul>
-        <li><strong>Zotero Integration:</strong> Export citations directly</li>
-        <li><strong>Notion Sync:</strong> Embed reports in databases</li>
-        <li><strong>Slack Notifications:</strong> Alert team of new findings</li>
-        <li><strong>Google Docs:</strong> Live collaboration on reports</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">5. Integration Hacks</h3>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Zotero Integration:</strong> Export citations directly</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Notion Sync:</strong> Embed reports in databases</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Slack Notifications:</strong> Alert team of new findings</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Google Docs:</strong> Live collaboration on reports</span></li>
       </ul>
 
-      <h2 id="future-updates">Future of Liner: What's Coming</h2>
-      <p>Based on Liner's roadmap and beta features, here's what's coming:</p>
+      <h2 className="text-3xl font-bold text-white mb-6">Future of Liner: What's Coming</h2>
+      <p className="text-gray-300 mb-4">Based on Liner's roadmap and beta features, here's what's coming:</p>
 
-      <h3>Q2 2025 Updates</h3>
-      <ul>
-        <li>🔌 <strong>API Launch:</strong> Full programmatic access</li>
-        <li>🤖 <strong>AI Research Assistant:</strong> Autonomous research agents</li>
-        <li>📱 <strong>Mobile App:</strong> iOS and Android native apps</li>
-        <li>🔗 <strong>Deeper Integrations:</strong> Office 365, Google Workspace</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Q2 2025 Updates</h3>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>🔌 <strong>API Launch:</strong> Full programmatic access</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>🤖 <strong>AI Research Assistant:</strong> Autonomous research agents</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>📱 <strong>Mobile App:</strong> iOS and Android native apps</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>🔗 <strong>Deeper Integrations:</strong> Office 365, Google Workspace</span></li>
       </ul>
 
-      <h3>Q3 2025 Planned Features</h3>
-      <ul>
-        <li>🌐 <strong>Multilingual Expansion:</strong> 20+ languages</li>
-        <li>📊 <strong>Advanced Analytics:</strong> Research trend predictions</li>
-        <li>🤝 <strong>Enterprise Plans:</strong> Team management tools</li>
-        <li>🧠 <strong>Custom AI Training:</strong> Domain-specific models</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Q3 2025 Planned Features</h3>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>🌐 <strong>Multilingual Expansion:</strong> 20+ languages</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>📊 <strong>Advanced Analytics:</strong> Research trend predictions</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>🤝 <strong>Enterprise Plans:</strong> Team management tools</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>🧠 <strong>Custom AI Training:</strong> Domain-specific models</span></li>
       </ul>
 
-      <h3>Long-term Vision</h3>
-      <p>Liner aims to become the "Google Scholar meets ChatGPT" - a comprehensive research platform that:</p>
-      <ul>
-        <li>Automates literature reviews entirely</li>
-        <li>Predicts research trends</li>
-        <li>Facilitates collaboration</li>
-        <li>Democratizes access to knowledge</li>
+      <h3 className="text-2xl font-bold text-purple-400 mb-4">Long-term Vision</h3>
+      <p className="text-gray-300 mb-4">Liner aims to become the "Google Scholar meets ChatGPT" - a comprehensive research platform that:</p>
+      <ul className="space-y-2 mb-6 text-gray-300">
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Automates literature reviews entirely</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Predicts research trends</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Facilitates collaboration</span></li>
+        <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Democratizes access to knowledge</span></li>
       </ul>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
+      <h2 className="text-3xl font-bold text-white mb-6">Frequently Asked Questions</h2>
       
       <div className="faq-section">
-        <h3>Is Liner really free?</h3>
-        <p>Yes, Liner offers 10 free comprehensive reports daily with no credit card required. This is more than sufficient for most researchers, students, and professionals. The free plan includes access to all academic sources and export features.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">Is Liner really free?</h3>
+        <p className="text-gray-300 mb-4">Yes, Liner offers 10 free comprehensive reports daily with no credit card required. This is more than sufficient for most researchers, students, and professionals. The free plan includes access to all academic sources and export features.</p>
 
-        <h3>How accurate is Liner compared to manual research?</h3>
-        <p>In our testing, Liner achieved 89% accuracy when compared to manual expert research. It excels at finding relevant sources and synthesizing information but should be verified for critical decisions. Think of it as a research accelerator, not a replacement for expertise.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">How accurate is Liner compared to manual research?</h3>
+        <p className="text-gray-300 mb-4">In our testing, Liner achieved 89% accuracy when compared to manual expert research. It excels at finding relevant sources and synthesizing information but should be verified for critical decisions. Think of it as a research accelerator, not a replacement for expertise.</p>
 
-        <h3>Can I use Liner for commercial research?</h3>
-        <p>Yes, both free and paid plans allow commercial use. Many businesses use Liner for market research, competitive analysis, and due diligence. The Pro plan offers additional features useful for commercial applications.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">Can I use Liner for commercial research?</h3>
+        <p className="text-gray-300 mb-4">Yes, both free and paid plans allow commercial use. Many businesses use Liner for market research, competitive analysis, and due diligence. The Pro plan offers additional features useful for commercial applications.</p>
 
-        <h3>What makes Liner better than ChatGPT or Claude?</h3>
-        <p>Unlike general AI assistants, Liner actively searches current academic databases rather than relying on training data. This means real-time information, verifiable citations, and access to the latest research. ChatGPT and Claude can't access paywalled academic content or provide reliable citations.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">What makes Liner better than ChatGPT or Claude?</h3>
+        <p className="text-gray-300 mb-4">Unlike general AI assistants, Liner actively searches current academic databases rather than relying on training data. This means real-time information, verifiable citations, and access to the latest research. ChatGPT and Claude can't access paywalled academic content or provide reliable citations.</p>
 
-        <h3>How does Liner handle conflicting research findings?</h3>
-        <p>Liner explicitly identifies when research sources disagree and presents multiple viewpoints. It highlights consensus areas and controversial findings, allowing you to make informed judgments rather than hiding complexity.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">How does Liner handle conflicting research findings?</h3>
+        <p className="text-gray-300 mb-4">Liner explicitly identifies when research sources disagree and presents multiple viewpoints. It highlights consensus areas and controversial findings, allowing you to make informed judgments rather than hiding complexity.</p>
 
-        <h3>Can I save and organize my research?</h3>
-        <p>Yes, Liner saves all your reports for 30 days on the free plan (unlimited on Pro). You can organize research into projects, add tags, and export entire research collections. The collaboration features also allow team organization.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">Can I save and organize my research?</h3>
+        <p className="text-gray-300 mb-4">Yes, Liner saves all your reports for 30 days on the free plan (unlimited on Pro). You can organize research into projects, add tags, and export entire research collections. The collaboration features also allow team organization.</p>
 
-        <h3>Is my research data private?</h3>
-        <p>Liner uses enterprise-grade encryption and doesn't sell or share user data. Your research queries and reports are private by default. Team workspaces have additional privacy controls for sensitive research.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">Is my research data private?</h3>
+        <p className="text-gray-300 mb-4">Liner uses enterprise-grade encryption and doesn't sell or share user data. Your research queries and reports are private by default. Team workspaces have additional privacy controls for sensitive research.</p>
 
-        <h3>What file formats can I export?</h3>
-        <p>Liner supports PDF (with clickable citations), DOCX (editable), TXT (plain text), and Markdown formats. The Pro plan adds JSON export for developers and direct integration with reference managers.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">What file formats can I export?</h3>
+        <p className="text-gray-300 mb-4">Liner supports PDF (with clickable citations), DOCX (editable), TXT (plain text), and Markdown formats. The Pro plan adds JSON export for developers and direct integration with reference managers.</p>
 
-        <h3>How often is the academic database updated?</h3>
-        <p>Liner's databases update in real-time. New papers appear within 24-48 hours of publication in most cases. Preprint servers like arXiv are checked multiple times daily.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">How often is the academic database updated?</h3>
+        <p className="text-gray-300 mb-4">Liner's databases update in real-time. New papers appear within 24-48 hours of publication in most cases. Preprint servers like arXiv are checked multiple times daily.</p>
 
-        <h3>Can Liner access papers behind paywalls?</h3>
-        <p>Liner can identify and cite paywalled papers, providing abstracts and metadata. However, it cannot bypass paywalls to access full text. It will indicate when full text isn't available and suggest open-access alternatives when possible.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">Can Liner access papers behind paywalls?</h3>
+        <p className="text-gray-300 mb-4">Liner can identify and cite paywalled papers, providing abstracts and metadata. However, it cannot bypass paywalls to access full text. It will indicate when full text isn't available and suggest open-access alternatives when possible.</p>
       </div>
 
       <div className="author-note">
-        <h3>My Personal Experience with Liner</h3>
-        <p>As someone who reviews AI tools professionally at IImagined.ai, I was skeptical when I first heard about Liner. Another "ChatGPT killer" claiming to revolutionize research? I've heard it all before.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">My Personal Experience with Liner</h3>
+        <p className="text-gray-300 mb-4">As someone who reviews AI tools professionally at IImagined.ai, I was skeptical when I first heard about Liner. Another "ChatGPT killer" claiming to revolutionize research? I've heard it all before.</p>
         
-        <p>But after three months of daily use, Liner has become indispensable. It's not perfect - highly specialized queries sometimes need manual follow-up, and the lack of full-text access to paywalled content can be frustrating. However, for 90% of research tasks, it's faster and more comprehensive than any alternative.</p>
+        <p className="text-gray-300 mb-4">But after three months of daily use, Liner has become indispensable. It's not perfect - highly specialized queries sometimes need manual follow-up, and the lack of full-text access to paywalled content can be frustrating. However, for 90% of research tasks, it's faster and more comprehensive than any alternative.</p>
         
-        <p>What truly sets Liner apart is its commitment to academic rigor while remaining accessible. In an era of AI hype and hallucinations, having a tool that prioritizes peer-reviewed sources and transparent citations is refreshing.</p>
+        <p className="text-gray-300 mb-4">What truly sets Liner apart is its commitment to academic rigor while remaining accessible. In an era of AI hype and hallucinations, having a tool that prioritizes peer-reviewed sources and transparent citations is refreshing.</p>
         
-        <p>- Anyro, Lead AI Analyst at IImagined.ai</p>
+        <p className="text-gray-300 mb-4">- Anyro, Lead AI Analyst at IImagined.ai</p>
       </div>
 
       <div className="cta-section">
-        <h3>Ready to Transform Your Research?</h3>
-        <p>Join 2 million+ researchers, students, and professionals using Liner to accelerate their work. Start with 10 free reports today - no credit card required.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">Ready to Transform Your Research?</h3>
+        <p className="text-gray-300 mb-4">Join 2 million+ researchers, students, and professionals using Liner to accelerate their work. Start with 10 free reports today - no credit card required.</p>
         <a href="#start" className="cta-button">Start Free Research Now</a>
         
-        <h3>Want More AI Tool Reviews?</h3>
-        <p>Subscribe to our newsletter for weekly reviews of the latest AI research tools, productivity hacks, and exclusive tutorials.</p>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">Want More AI Tool Reviews?</h3>
+        <p className="text-gray-300 mb-4">Subscribe to our newsletter for weekly reviews of the latest AI research tools, productivity hacks, and exclusive tutorials.</p>
         <a href="#newsletter" className="cta-button">Get Weekly AI Updates</a>
       </div>
 
       <div className="related-articles">
-        <h3>Related Articles</h3>
-        <ul>
-          <li><a href="/blog/perplexity-pro-review">Perplexity Pro Review: Is It Worth $20/Month?</a></li>
-          <li><a href="/blog/best-ai-research-tools-2025">Best AI Research Tools 2025: Complete Comparison</a></li>
-          <li><a href="/blog/academic-research-ai">How AI is Transforming Academic Research</a></li>
-          <li><a href="/blog/chatgpt-research-limitations">Why ChatGPT Isn't Enough for Serious Research</a></li>
+        <h3 className="text-2xl font-bold text-purple-400 mb-4">Related Articles</h3>
+        <ul className="space-y-2 mb-6 text-gray-300">
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="/blog/perplexity-pro-review">Perplexity Pro Review: Is It Worth $20/Month?</a></span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="/blog/best-ai-research-tools-2025">Best AI Research Tools 2025: Complete Comparison</a></span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="/blog/academic-research-ai">How AI is Transforming Academic Research</a></span></li>
+          <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><a href="/blog/chatgpt-research-limitations">Why ChatGPT Isn't Enough for Serious Research</a></span></li>
         </ul>
       </div>
-    `,
+    
+      </div>
+    </div>
+  </section>
+</div>`,
     date: "2025-03-26",
     category: "AI TOOLS",
     readTime: "22 min"
@@ -14819,55 +15028,164 @@ preferences:
   },
   'revolutionizing-developer-productivity-windsurf-wave-2': {
     title: "Revolutionizing Developer Productivity: Windsurf Wave 2 - The AI-Powered IDE That Eliminates Context Switching",
-    content: `<div class="max-w-4xl mx-auto">
-  <p><strong>Meta Description:</strong> Discover Windsurf Wave 2's game-changing AI features: intelligent web search, automated memories, seamless dev containers, and advanced productivity tools. Complete developer guide included.</p>
-  <p><em>By Anyro, AI Development Tools Expert at IImagined.ai | January 26, 2025</em></p>
+    content: `<div className="min-h-screen bg-dark">
+  <section className="section-spacing overflow-hidden">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center max-w-5xl mx-auto">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
+          <span className="text-blue-400 text-sm font-semibold">AI CODING TOOL</span>
+        </div>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Revolutionizing Developer Productivity <span className="text-blue-400">Windsurf Wave 2 - The AI-Powered IDE That Eliminates Context Switching</span>
+        </h1>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+          Discover Windsurf Wave 2's game-changing AI features: intelligent web search, automated memories, seamless dev containers, and advanced productivity tools. Complete developer guide included.
+        </p>
+        <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-gray-400">
+          <span>📅 January 26, 2025</span>
+          <span>•</span>
+          <span>⏱️ 18 min</span>
+          <span>•</span>
+          <span>🔥 DEVELOPMENT TOOLS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">📊 Key Metrics</h2>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 rounded-2xl p-6 border border-blue-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-blue-400 text-sm font-semibold">Performance</span>
+              <span className="text-2xl">📊</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">93%</div>
+            <div className="text-sm text-gray-400">developers</strong> spend 30+ minutes daily switch</div>
+          </div>
+          <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 rounded-2xl p-6 border border-blue-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-blue-400 text-sm font-semibold">Time Saved</span>
+              <span className="text-2xl">⏱️</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">30+ minutes</div>
+            <div className="text-sm text-gray-400">daily switching between development tools</li>
+   </div>
+          </div>
+          <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 rounded-2xl p-6 border border-blue-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-blue-400 text-sm font-semibold">Time Saved</span>
+              <span className="text-2xl">⏱️</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">20 minutes</div>
+            <div className="text-sm text-gray-400">per feature, with constant context loss</p>
+
+  <p></div>
+          </div>
+          <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 rounded-2xl p-6 border border-blue-500/20">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-blue-400 text-sm font-semibold">Time Saved</span>
+              <span className="text-2xl">⏱️</span>
+            </div>
+            <div className="text-3xl font-bold text-white mb-2">5 minutes</div>
+            <div className="text-sm text-gray-400">per feature, with maintained context</p>
+
+  <p><st</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-gradient-to-br from-gray-900/50 to-blue-900/20 rounded-2xl p-8 border border-blue-500/20">
+          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <span className="text-blue-400">📚</span> Table of Contents
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            
+            <a href="#what-is-windsurf-ide" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500/10 transition-all duration-300">
+              <span className="text-blue-400 font-semibold">1.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">What is Windsurf IDE?</span>
+            </a>
+            <a href="#wave-2-revolutionary-features" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500/10 transition-all duration-300">
+              <span className="text-blue-400 font-semibold">2.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Wave 2 Revolutionary Features</span>
+            </a>
+            <a href="#windsurf-vs-competitor-ides" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500/10 transition-all duration-300">
+              <span className="text-blue-400 font-semibold">3.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Windsurf vs Competitor IDEs</span>
+            </a>
+            <a href="#anyros-developer-experience-analysis" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500/10 transition-all duration-300">
+              <span className="text-blue-400 font-semibold">4.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">Anyro's Developer Experience Analysis</span>
+            </a>
+            <a href="#faq" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500/10 transition-all duration-300">
+              <span className="text-blue-400 font-semibold">5.</span>
+              <span className="text-gray-300 group-hover:text-white transition-colors">FAQ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="section-spacing bg-dark">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto text-gray-300">
+        <div className="max-w-4xl mx-auto">
+  <p className="text-gray-300 mb-4"><strong className="text-white">Meta Description:</strong> Discover Windsurf Wave 2's game-changing AI features: intelligent web search, automated memories, seamless dev containers, and advanced productivity tools. Complete developer guide included.</p>
+  <p className="text-gray-300 mb-4"><em>By Anyro, AI Development Tools Expert at IImagined.ai | January 26, 2025</em></p>
   
-  <h2>Table of Contents</h2>
-  <ol>
-    <li><a href="#what-is-windsurf-ide">What is Windsurf IDE?</a></li>
-    <li><a href="#wave-2-revolutionary-features">Wave 2 Revolutionary Features</a></li>
-    <li><a href="#windsurf-vs-competitor-ides">Windsurf vs Competitor IDEs</a></li>
-    <li><a href="#anyros-developer-experience-analysis">Anyro's Developer Experience Analysis</a></li>
-    <li><a href="#faq">FAQ</a></li>
+  <h2 className="text-3xl font-bold text-white mb-6">Table of Contents</h2>
+  <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><a href="#what-is-windsurf-ide">What is Windsurf IDE?</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><a href="#wave-2-revolutionary-features">Wave 2 Revolutionary Features</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><a href="#windsurf-vs-competitor-ides">Windsurf vs Competitor IDEs</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><a href="#anyros-developer-experience-analysis">Anyro's Developer Experience Analysis</a></span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><a href="#faq">FAQ</a></span></li>
   </ol>
 
   <hr>
 
-  <h2>The Developer Productivity Crisis: Why Traditional IDEs Are Failing</h2>
+  <h2 className="text-3xl font-bold text-white mb-6">The Developer Productivity Crisis: Why Traditional IDEs Are Failing</h2>
 
-  <p><strong>Are you tired of context switching between your IDE, browser, documentation, and terminal?</strong> Frustrated by AI coding assistants that don't understand your project context or workflow patterns? Fed up with development environments that make you fight the tools instead of focusing on building?</p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Are you tired of context switching between your IDE, browser, documentation, and terminal?</strong> Frustrated by AI coding assistants that don't understand your project context or workflow patterns? Fed up with development environments that make you fight the tools instead of focusing on building?</p>
 
-  <p><strong>The harsh reality facing developers in 2025:</strong></p>
-  <ul>
-    <li><strong>93% of developers</strong> spend 30+ minutes daily switching between development tools</li>
-    <li><strong>Traditional IDEs</strong> require manual setup and configuration for each project</li>
-    <li><strong>Existing AI assistants</strong> lack context about your specific codebase and workflow</li>
-    <li><strong>Productivity tools</strong> are siloed, forcing constant context switching</li>
-    <li><strong>Development environments</strong> break frequently and require maintenance overhead</li>
+  <p className="text-gray-300 mb-4"><strong className="text-white">The harsh reality facing developers in 2025:</strong></p>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>93% of developers</strong> spend 30+ minutes daily switching between development tools</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Traditional IDEs</strong> require manual setup and configuration for each project</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Existing AI assistants</strong> lack context about your specific codebase and workflow</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Productivity tools</strong> are siloed, forcing constant context switching</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Development environments</strong> break frequently and require maintenance overhead</span></li>
   </ul>
 
-  <p>Enter <strong>Windsurf Wave 2</strong>—the AI-powered IDE that eliminates context switching and learns your development patterns to become your ultimate coding companion.</p>
+  <p className="text-gray-300 mb-4">Enter <strong>Windsurf Wave 2</strong>—the AI-powered IDE that eliminates context switching and learns your development patterns to become your ultimate coding companion.</p>
 
-  <h2 id="what-is-windsurf-ide">What is Windsurf IDE?</h2>
+  <h2 className="text-3xl font-bold text-white mb-6">What is Windsurf IDE?</h2>
 
-  <p><strong>Windsurf IDE</strong> is a revolutionary development environment that combines the power of Visual Studio Code with advanced AI capabilities through its <strong>Cascade</strong> AI system. Unlike traditional IDEs that simply provide editing capabilities, Windsurf creates an intelligent development ecosystem that adapts to your workflow.</p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Windsurf IDE</strong> is a revolutionary development environment that combines the power of Visual Studio Code with advanced AI capabilities through its <strong>Cascade</strong> AI system. Unlike traditional IDEs that simply provide editing capabilities, Windsurf creates an intelligent development ecosystem that adapts to your workflow.</p>
 
-  <h3>Core Philosophy: Context-Aware Development</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">Core Philosophy: Context-Aware Development</h3>
 
-  <p>Windsurf was built on the principle that development tools should understand not just your code, but your entire development context:</p>
+  <p className="text-gray-300 mb-4">Windsurf was built on the principle that development tools should understand not just your code, but your entire development context:</p>
 
-  <ul>
-    <li><strong>Project Context:</strong> Understanding your codebase architecture, dependencies, and patterns</li>
-    <li><strong>Workflow Context:</strong> Learning your development habits, preferences, and common tasks</li>
-    <li><strong>Environmental Context:</strong> Integrating with your terminal, containers, and deployment tools</li>
-    <li><strong>Team Context:</strong> Sharing insights and patterns across team members</li>
-    <li><strong>Historical Context:</strong> Remembering past decisions and solutions</li>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Project Context:</strong> Understanding your codebase architecture, dependencies, and patterns</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Workflow Context:</strong> Learning your development habits, preferences, and common tasks</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Environmental Context:</strong> Integrating with your terminal, containers, and deployment tools</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Team Context:</strong> Sharing insights and patterns across team members</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Historical Context:</strong> Remembering past decisions and solutions</span></li>
   </ul>
 
-  <h3>Technical Architecture</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">Technical Architecture</h3>
 
-  <pre><code># Windsurf IDE Architecture
+  <pre className="bg-gray-900/50 rounded-lg p-4 overflow-x-auto mb-6 border border-gray-700"><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded"># Windsurf IDE Architecture
 core_platform:
   base: "VS Code OSS with proprietary enhancements"
   language_server: "Enhanced language servers with AI integration"
@@ -14888,13 +15206,13 @@ integration_layer:
   web_search: "Real-time documentation and API reference"
   version_control: "Enhanced Git workflows with AI insights"</code></pre>
 
-  <h2 id="wave-2-revolutionary-features">Wave 2 Revolutionary Features</h2>
+  <h2 className="text-3xl font-bold text-white mb-6">Wave 2 Revolutionary Features</h2>
 
-  <h3>1. Intelligent Web Search: Breaking Down Information Silos</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">1. Intelligent Web Search: Breaking Down Information Silos</h3>
 
-  <p><strong>The Game-Changer:</strong> Windsurf Wave 2 introduces the first IDE with <strong>real-time web integration</strong> that understands your development context and fetches relevant information without breaking your flow.</p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">The Game-Changer:</strong> Windsurf Wave 2 introduces the first IDE with <strong>real-time web integration</strong> that understands your development context and fetches relevant information without breaking your flow.</p>
 
-  <pre><code class="language-javascript">// Example: Working on a React TypeScript project
+  <pre><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded">// Example: Working on a React TypeScript project
 // You type: "How do I use React Query with TypeScript?"
 // Cascade AI automatically:
 // 1. Searches for React Query + TypeScript documentation
@@ -14912,11 +15230,11 @@ integration_layer:
 // Windsurf Wave 2 workflow:
 // Type question directly in IDE → Get contextual answer instantly</code></pre>
 
-  <h3>2. Automated Memories: Your AI Coding Companion That Learns</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">2. Automated Memories: Your AI Coding Companion That Learns</h3>
 
-  <p><strong>Revolutionary Concept:</strong> Cascade AI doesn't just provide generic assistance—it learns your specific coding patterns, preferences, and project architectures to become increasingly valuable over time.</p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Revolutionary Concept:</strong> Cascade AI doesn't just provide generic assistance—it learns your specific coding patterns, preferences, and project architectures to become increasingly valuable over time.</p>
 
-  <pre><code># What Cascade AI remembers about your development style:
+  <pre className="bg-gray-900/50 rounded-lg p-4 overflow-x-auto mb-6 border border-gray-700"><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded"># What Cascade AI remembers about your development style:
 coding_patterns:
   architecture_preferences: 
     - "Prefers functional components over class components"
@@ -14933,11 +15251,11 @@ coding_patterns:
     - "Uses custom Error classes with specific error codes"
     - "Logs errors with structured logging format"</code></pre>
 
-  <h3>3. Seamless Development Environment Integration</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">3. Seamless Development Environment Integration</h3>
 
-  <p><strong>Unified Development Experience:</strong> Wave 2 eliminates the boundary between your editor, terminal, containers, and external tools.</p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Unified Development Experience:</strong> Wave 2 eliminates the boundary between your editor, terminal, containers, and external tools.</p>
 
-  <pre><code class="language-bash"># Traditional workflow:
+  <pre><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded"># Traditional workflow:
 # 1. Alt+Tab to terminal
 # 2. Run command
 # 3. Alt+Tab back to IDE
@@ -14957,60 +15275,60 @@ coding_patterns:
 
 # All without leaving the editor</code></pre>
 
-  <h2 id="windsurf-vs-competitor-ides">Windsurf vs Competitor IDEs</h2>
+  <h2 className="text-3xl font-bold text-white mb-6">Windsurf vs Competitor IDEs</h2>
 
-  <h3>Comprehensive IDE Comparison Matrix</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">Comprehensive IDE Comparison Matrix</h3>
 
-  <table class="comparison-table">
-    <thead>
+  <table className="w-full text-gray-300 border-collapse">
+    <thead className="bg-gray-900/30">
       <tr>
-        <th>Feature</th>
-        <th>Windsurf Wave 2</th>
-        <th>VS Code</th>
-        <th>Cursor</th>
-        <th>GitHub Copilot</th>
-        <th>JetBrains IDEs</th>
+        <th className="text-left py-3 px-4 text-blue-400 font-semibold border-b border-gray-700">Feature</th>
+        <th className="text-left py-3 px-4 text-blue-400 font-semibold border-b border-gray-700">Windsurf Wave 2</th>
+        <th className="text-left py-3 px-4 text-blue-400 font-semibold border-b border-gray-700">VS Code</th>
+        <th className="text-left py-3 px-4 text-blue-400 font-semibold border-b border-gray-700">Cursor</th>
+        <th className="text-left py-3 px-4 text-blue-400 font-semibold border-b border-gray-700">GitHub Copilot</th>
+        <th className="text-left py-3 px-4 text-blue-400 font-semibold border-b border-gray-700">JetBrains IDEs</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody className="divide-y divide-gray-800">
       <tr>
-        <td><strong>Base Price</strong></td>
-        <td>Free / $10 Pro</td>
-        <td>Free</td>
-        <td>$20/month</td>
-        <td>$10/month</td>
-        <td>$200/year</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Base Price</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Free / $10 Pro</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">Free</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$20/month</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$10/month</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">$200/year</td>
       </tr>
       <tr>
-        <td><strong>AI Integration</strong></td>
-        <td>✅ Native Cascade AI</td>
-        <td>⚠️ Extension-based</td>
-        <td>✅ Built-in AI</td>
-        <td>✅ AI completion</td>
-        <td>⚠️ Limited AI</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>AI Integration</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ Native Cascade AI</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">⚠️ Extension-based</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ Built-in AI</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ AI completion</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">⚠️ Limited AI</td>
       </tr>
       <tr>
-        <td><strong>Web Search</strong></td>
-        <td>✅ Real-time context</td>
-        <td>❌ None</td>
-        <td>❌ None</td>
-        <td>❌ None</td>
-        <td>❌ None</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Web Search</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ Real-time context</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ None</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ None</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ None</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ None</td>
       </tr>
       <tr>
-        <td><strong>Learning/Memory</strong></td>
-        <td>✅ Automated patterns</td>
-        <td>❌ None</td>
-        <td>⚠️ Basic</td>
-        <td>❌ None</td>
-        <td>❌ None</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800"><strong>Learning/Memory</strong></td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">✅ Automated patterns</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ None</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">⚠️ Basic</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ None</td>
+        <td className="py-3 px-4 text-gray-300 border-b border-gray-800">❌ None</td>
       </tr>
     </tbody>
   </table>
 
-  <h3>Performance Benchmarks</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">Performance Benchmarks</h3>
 
-  <pre><code class="language-bash"># Average startup time with medium-sized TypeScript project:
+  <pre><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded"># Average startup time with medium-sized TypeScript project:
 Windsurf Wave 2:    2.1 seconds
 VS Code:            2.8 seconds
 Cursor:             3.2 seconds
@@ -15022,41 +15340,41 @@ Windsurf Cascade AI:   1.4 seconds
 GitHub Copilot:        2.8 seconds
 Cursor AI:             2.1 seconds</code></pre>
 
-  <h2 id="anyros-developer-experience-analysis">Anyro's Developer Experience Analysis</h2>
+  <h2 className="text-3xl font-bold text-white mb-6">Anyro's Developer Experience Analysis</h2>
 
-  <p><em>Having used every major IDE over 15+ years of development and built production systems at IImagined.ai, here's my honest assessment of Windsurf Wave 2:</em></p>
+  <p className="text-gray-300 mb-4"><em>Having used every major IDE over 15+ years of development and built production systems at IImagined.ai, here's my honest assessment of Windsurf Wave 2:</em></p>
 
-  <h3>The Context Switching Revolution</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">The Context Switching Revolution</h3>
 
-  <p><strong>The Problem Windsurf Solves:</strong><br>
+  <p className="text-gray-300 mb-4"><strong className="text-white">The Problem Windsurf Solves:</strong><br />
   As a developer building complex automation systems, I spend significant time researching APIs, debugging integration issues, and maintaining consistency across projects. Traditional IDEs force me to juggle multiple tools:</p>
 
-  <p><strong>My Old Workflow (Pre-Windsurf):</strong></p>
-  <ol>
-    <li>Code in VS Code (5 minutes)</li>
-    <li>Google API documentation (3 minutes)</li>
-    <li>Copy/paste examples and adapt (4 minutes)</li>
-    <li>Switch to terminal for testing (2 minutes)</li>
-    <li>Debug in browser dev tools (5 minutes)</li>
-    <li>Return to IDE and lose context (1 minute)</li>
+  <p className="text-gray-300 mb-4"><strong className="text-white">My Old Workflow (Pre-Windsurf):</strong></p>
+  <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Code in VS Code (5 minutes)</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Google API documentation (3 minutes)</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Copy/paste examples and adapt (4 minutes)</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Switch to terminal for testing (2 minutes)</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Debug in browser dev tools (5 minutes)</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Return to IDE and lose context (1 minute)</span></li>
   </ol>
 
-  <p><strong>Total:</strong> 20 minutes per feature, with constant context loss</p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Total:</strong> 20 minutes per feature, with constant context loss</p>
 
-  <p><strong>My New Workflow (Windsurf Wave 2):</strong></p>
-  <ol>
-    <li>Code with AI assistance that knows my project (3 minutes)</li>
-    <li>Ask questions and get contextual answers instantly (30 seconds)</li>
-    <li>Test and debug in the same environment (2 minutes)</li>
+  <p className="text-gray-300 mb-4"><strong className="text-white">My New Workflow (Windsurf Wave 2):</strong></p>
+  <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Code with AI assistance that knows my project (3 minutes)</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Ask questions and get contextual answers instantly (30 seconds)</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Test and debug in the same environment (2 minutes)</span></li>
   </ol>
 
-  <p><strong>Total:</strong> 5.5 minutes per feature, with maintained context</p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Total:</strong> 5.5 minutes per feature, with maintained context</p>
 
-  <p><strong>Productivity gain: 260% improvement</strong></p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Productivity gain: 260% improvement</strong></p>
 
-  <h3>Real-World Implementation Examples</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">Real-World Implementation Examples</h3>
 
-  <pre><code class="language-typescript">// Traditional approach: 20 minutes of documentation hunting
+  <pre><code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded">// Traditional approach: 20 minutes of documentation hunting
 // Windsurf approach: Ask directly in the IDE
 
 // Me: "How do I create a Stripe customer with metadata?"
@@ -15098,122 +15416,126 @@ export async function createStripeCustomer(
   }
 }</code></pre>
 
-  <h3>When Windsurf Excels vs. Falls Short</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">When Windsurf Excels vs. Falls Short</h3>
 
-  <p><strong>✅ Perfect For:</strong></p>
-  <ul>
-    <li><strong>Full-stack development</strong> with multiple technologies</li>
-    <li><strong>API-heavy projects</strong> requiring documentation lookup</li>
-    <li><strong>Teams</strong> wanting to share development patterns</li>
-    <li><strong>Learning new technologies</strong> with contextual guidance</li>
-    <li><strong>Complex debugging</strong> scenarios</li>
+  <p className="text-gray-300 mb-4"><strong className="text-white">✅ Perfect For:</strong></p>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Full-stack development</strong> with multiple technologies</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>API-heavy projects</strong> requiring documentation lookup</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Teams</strong> wanting to share development patterns</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Learning new technologies</strong> with contextual guidance</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Complex debugging</strong> scenarios</span></li>
   </ul>
 
-  <p><strong>⚠️ Consider Alternatives For:</strong></p>
-  <ul>
-    <li><strong>Large enterprise codebases</strong> (JetBrains might be better)</li>
-    <li><strong>Highly specialized languages</strong> not well-supported by AI</li>
-    <li><strong>Offline development</strong> (requires internet for AI features)</li>
-    <li><strong>Teams with heavy customization needs</strong></li>
+  <p className="text-gray-300 mb-4"><strong className="text-white">⚠️ Consider Alternatives For:</strong></p>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Large enterprise codebases</strong> (JetBrains might be better)</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Highly specialized languages</strong> not well-supported by AI</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Offline development</strong> (requires internet for AI features)</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Teams with heavy customization needs</strong></span></li>
   </ul>
 
-  <h3>Pricing Analysis: ROI Calculation</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">Pricing Analysis: ROI Calculation</h3>
 
-  <p><strong>Cost Comparison (Annual):</strong></p>
-  <ul>
-    <li>Windsurf Pro: $120/year</li>
-    <li>GitHub Copilot: $120/year</li>
-    <li>JetBrains WebStorm: $200/year</li>
-    <li>VS Code: Free (but limited AI capabilities)</li>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Cost Comparison (Annual):</strong></p>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Windsurf Pro: $120/year</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>GitHub Copilot: $120/year</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>JetBrains WebStorm: $200/year</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>VS Code: Free (but limited AI capabilities)</span></li>
   </ul>
 
-  <p><strong>Value Analysis:</strong><br>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Value Analysis:</strong><br />
   If Windsurf saves me 30 minutes per day (conservative estimate):</p>
-  <ul>
-    <li>30 minutes × 250 working days = 125 hours annually</li>
-    <li>At $100/hour developer rate = $12,500 value</li>
-    <li>ROI: 10,400% return on $120 investment</li>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>30 minutes × 250 working days = 125 hours annually</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>At $100/hour developer rate = $12,500 value</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>ROI: 10,400% return on $120 investment</span></li>
   </ul>
 
-  <h2 id="faq">FAQ</h2>
+  <h2 className="text-3xl font-bold text-white mb-6">FAQ</h2>
 
-  <h3>General Questions</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">General Questions</h3>
 
-  <p><strong>Q: Is Windsurf Wave 2 free?</strong><br>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Q: Is Windsurf Wave 2 free?</strong><br />
   A: Yes, Windsurf offers a comprehensive free tier with core AI features. The Pro plan ($10/month) adds advanced features like priority AI processing, enhanced memory, and team collaboration.</p>
 
-  <p><strong>Q: How does Windsurf compare to GitHub Copilot?</strong><br>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Q: How does Windsurf compare to GitHub Copilot?</strong><br />
   A: While Copilot focuses on code completion, Windsurf provides a complete AI-powered development environment with web search, automated learning, and contextual problem-solving.</p>
 
-  <p><strong>Q: Can I use my existing VS Code extensions?</strong><br>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Q: Can I use my existing VS Code extensions?</strong><br />
   A: Yes, Windsurf is built on VS Code OSS and supports the vast majority of VS Code extensions.</p>
 
-  <h3>Technical Questions</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">Technical Questions</h3>
 
-  <p><strong>Q: Does Windsurf work offline?</strong><br>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Q: Does Windsurf work offline?</strong><br />
   A: Basic IDE functionality works offline, but AI features like web search, Cascade AI assistance, and automated memories require an internet connection.</p>
 
-  <p><strong>Q: How does the automated memory feature work?</strong><br>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Q: How does the automated memory feature work?</strong><br />
   A: Cascade AI analyzes your coding patterns, project structure, and preferences over time, then uses this knowledge to provide increasingly personalized suggestions and solutions.</p>
 
-  <p><strong>Q: What programming languages are supported?</strong><br>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Q: What programming languages are supported?</strong><br />
   A: Windsurf supports 30+ programming languages with first-class support for JavaScript/TypeScript, Python, Java, C#, Go, Rust, and more.</p>
 
-  <h2>Final Thoughts: The Future of Developer Productivity</h2>
+  <h2 className="text-3xl font-bold text-white mb-6">Final Thoughts: The Future of Developer Productivity</h2>
 
-  <p>Windsurf Wave 2 represents a fundamental shift in how we think about development environments. Instead of treating IDEs as passive editors, Windsurf transforms your development environment into an intelligent partner that learns, adapts, and grows with you.</p>
+  <p className="text-gray-300 mb-4">Windsurf Wave 2 represents a fundamental shift in how we think about development environments. Instead of treating IDEs as passive editors, Windsurf transforms your development environment into an intelligent partner that learns, adapts, and grows with you.</p>
 
-  <h3>Key Takeaways for Developers</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">Key Takeaways for Developers</h3>
 
-  <p><strong>🚀 For Individual Developers:</strong></p>
-  <ul>
-    <li>Start with the free tier to experience context-aware development</li>
-    <li>Allow 2-3 weeks for Cascade AI to learn your patterns</li>
-    <li>Focus on leveraging web search for API integrations and learning</li>
-    <li>Use the Problem UI for faster debugging and issue resolution</li>
+  <p className="text-gray-300 mb-4"><strong className="text-white">🚀 For Individual Developers:</strong></p>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Start with the free tier to experience context-aware development</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Allow 2-3 weeks for Cascade AI to learn your patterns</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Focus on leveraging web search for API integrations and learning</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Use the Problem UI for faster debugging and issue resolution</span></li>
   </ul>
 
-  <p><strong>👥 For Development Teams:</strong></p>
-  <ul>
-    <li>Implement Windsurf gradually, starting with new projects</li>
-    <li>Use team features to share coding standards and patterns</li>
-    <li>Measure productivity gains through reduced context switching</li>
-    <li>Train junior developers faster with AI-guided learning</li>
+  <p className="text-gray-300 mb-4"><strong className="text-white">👥 For Development Teams:</strong></p>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Implement Windsurf gradually, starting with new projects</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Use team features to share coding standards and patterns</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Measure productivity gains through reduced context switching</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Train junior developers faster with AI-guided learning</span></li>
   </ul>
 
-  <p><strong>🏢 For Engineering Leaders:</strong></p>
-  <ul>
-    <li>Consider the ROI of reduced development time and faster onboarding</li>
-    <li>Evaluate team productivity improvements over 3-6 months</li>
-    <li>Factor in reduced tool sprawl and simplified development environments</li>
-    <li>Plan migration strategy for existing development workflows</li>
+  <p className="text-gray-300 mb-4"><strong className="text-white">🏢 For Engineering Leaders:</strong></p>
+  <ul className="space-y-2 mb-6 text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Consider the ROI of reduced development time and faster onboarding</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Evaluate team productivity improvements over 3-6 months</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Factor in reduced tool sprawl and simplified development environments</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>Plan migration strategy for existing development workflows</span></li>
   </ul>
 
-  <h3>Your Next Steps</h3>
+  <h3 className="text-2xl font-bold text-blue-400 mb-4">Your Next Steps</h3>
 
-  <ol>
-    <li><strong><a href="https://codeium.com/windsurf">Download Windsurf IDE</a></strong> and explore the Wave 2 features</li>
-    <li><strong>Start with a new project</strong> to experience the full AI capabilities</li>
-    <li><strong>Experiment with web search</strong> for API integrations and documentation</li>
-    <li><strong>Allow time for AI learning</strong> - the real magic happens after a few weeks</li>
-    <li><strong>Share your experience</strong> with the development community</li>
+  <ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong><a href="https://codeium.com/windsurf">Download Windsurf IDE</a></strong> and explore the Wave 2 features</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Start with a new project</strong> to experience the full AI capabilities</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Experiment with web search</strong> for API integrations and documentation</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Allow time for AI learning</strong> - the real magic happens after a few weeks</span></li>
+    <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span><strong>Share your experience</strong> with the development community</span></li>
   </ol>
 
   <hr>
 
-  <p><strong>Ready to revolutionize your development workflow?</strong></p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">Ready to revolutionize your development workflow?</strong></p>
 
-  <p><a href="https://codeium.com/windsurf"><strong>Get Started with Windsurf Wave 2 →</strong></a></p>
+  <p className="text-gray-300 mb-4"><a href="https://codeium.com/windsurf"><strong>Get Started with Windsurf Wave 2 →</strong></a></p>
 
-  <p><em>Want more insights on AI-powered development tools? Subscribe to <a href="https://iimagined.ai/newsletter">IImagined.ai's newsletter</a> for weekly deep-dives into the tools and techniques transforming software development.</em></p>
+  <p className="text-gray-300 mb-4"><em>Want more insights on AI-powered development tools? Subscribe to <a href="https://iimagined.ai/newsletter">IImagined.ai's newsletter</a> for weekly deep-dives into the tools and techniques transforming software development.</em></p>
 
-  <p><strong>About the Author:</strong> Anyro is the founder of IImagined.ai and has extensive experience with AI-powered development tools. He has successfully integrated Windsurf into production workflows serving millions of users and provides consulting on development tool selection and team productivity optimization.</p>
+  <p className="text-gray-300 mb-4"><strong className="text-white">About the Author:</strong> Anyro is the founder of IImagined.ai and has extensive experience with AI-powered development tools. He has successfully integrated Windsurf into production workflows serving millions of users and provides consulting on development tool selection and team productivity optimization.</p>
 
   <hr>
 
-  <p><em>This article contains affiliate links. IImagined.ai may receive compensation if you sign up for Windsurf through our links, at no additional cost to you. This helps support our content creation and allows us to continue providing comprehensive reviews of development tools.</em></p>
+  <p className="text-gray-300 mb-4"><em>This article contains affiliate links. IImagined.ai may receive compensation if you sign up for Windsurf through our links, at no additional cost to you. This helps support our content creation and allows us to continue providing comprehensive reviews of development tools.</em></p>
 </div>
-    `,
+    
+      </div>
+    </div>
+  </section>
+</div>`,
     date: "2025-01-26",
     category: "DEVELOPMENT TOOLS",
     readTime: "18 min"

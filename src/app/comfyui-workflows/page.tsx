@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect } from 'react'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { 
   HeroSection, 
@@ -13,7 +14,6 @@ import {
   FAQCard, 
   PricingComparison 
 } from '@/components/course/CourseLayout'
-import ScrollAnimation from '@/components/ScrollAnimation'
 import NumberTicker from '@/components/magicui/number-ticker'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
@@ -416,7 +416,7 @@ export default function ComfyUIWorkflowsPage() {
             />
           </div>
 
-          <div className={`text-center mt-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}>
+          <div className={`text-center mt-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
             <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 max-w-3xl mx-auto card-hover">
               <h3 className="text-2xl font-bold mb-4 text-red-400">The Hidden Cost of Inefficient AI Workflows</h3>
               <p className="text-lg text-gray-300 mb-4">
@@ -440,12 +440,12 @@ export default function ComfyUIWorkflowsPage() {
               badgeColor="text-green-400"
               title="ComfyUI Workflow Mastery: Your Professional Solution"
               description="Proven workflows that deliver consistent, professional results every time"
-              isVisible={solutionAnimation.isVisible}
+              isVisible={heroAnimation.isVisible}
             />
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-center mb-16">
-            <div className={`scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}>
+            <div className={`scroll-fade-up ${isVisible ? 'visible' : ''}`}>
               <h3 className="text-3xl font-bold mb-6 text-green-400">What if you could...</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -474,7 +474,7 @@ export default function ComfyUIWorkflowsPage() {
                 </div>
               </div>
             </div>
-            <div className={`scroll-fade-up ${solutionAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className={`scroll-fade-up ${isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="bg-gradient-to-br from-orange-600/20 to-red-600/20 border border-orange-500/30 rounded-2xl p-8">
                 <h4 className="text-2xl font-bold mb-4 text-center">The ComfyUI Advantage</h4>
                 <div className="text-center mb-6">
@@ -512,7 +512,7 @@ export default function ComfyUIWorkflowsPage() {
               badgeColor="text-gray-400"
               title="The Complete ComfyUI Workflow Mastery System"
               description="6 comprehensive modules + 50+ professional workflows"
-              isVisible={curriculumAnimation.isVisible}
+              isVisible={heroAnimation.isVisible}
             />
           </div>
 
@@ -530,14 +530,14 @@ export default function ComfyUIWorkflowsPage() {
                 deliverables={module.deliverables}
                 tools={module.tools}
                 value={module.value}
-                isVisible={curriculumAnimation.isVisible}
+                isVisible={heroAnimation.isVisible}
                 staggerClass={`scroll-stagger-${index + 1}`}
               />
             ))}
           </div>
 
           {/* Total Value */}
-          <div className={`text-center mt-16 scroll-fade-up ${curriculumAnimation.isVisible ? 'visible' : ''}`}>
+          <div className={`text-center mt-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 border border-gold-500/50 rounded-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-3xl font-bold mb-4 text-yellow-400">
                 <TypingAnimation
@@ -564,7 +564,7 @@ export default function ComfyUIWorkflowsPage() {
               badgeColor="text-gold-400"
               title="But Wait, There's More!"
               description="Limited-time bonuses worth over $800"
-              isVisible={bonusAnimation.isVisible}
+              isVisible={heroAnimation.isVisible}
             />
           </div>
 
@@ -576,13 +576,13 @@ export default function ComfyUIWorkflowsPage() {
                 title={bonus.title}
                 description={bonus.description}
                 value={bonus.value}
-                isVisible={bonusAnimation.isVisible}
+                isVisible={heroAnimation.isVisible}
                 staggerClass={`scroll-stagger-${index + 1}`}
               />
             ))}
           </div>
 
-          <div className={`text-center mt-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}>
+          <div className={`text-center mt-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 border border-gold-500/50 rounded-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold mb-4 text-gold-400">
                 <BlurIn
@@ -609,13 +609,13 @@ export default function ComfyUIWorkflowsPage() {
               badgeColor="text-red-400"
               title="Here's Everything You Get"
               description="Complete ComfyUI Workflow Mastery System + Bonuses"
-              isVisible={valueAnimation.isVisible}
+              isVisible={heroAnimation.isVisible}
             />
           </div>
 
           {/* Value Stack */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 border-2 border-gold-500/50 rounded-2xl p-8 scroll-fade-up ${valueAnimation.isVisible ? 'visible' : ''}`}>
+            <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 border-2 border-gold-500/50 rounded-2xl p-8 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
               <div className="text-center mb-8">
                 <h3 className="text-3xl font-bold mb-4 text-gold-400">Total Package Value Breakdown</h3>
                 <p className="text-gray-300">Everything you need to master ComfyUI workflows</p>
@@ -671,12 +671,12 @@ export default function ComfyUIWorkflowsPage() {
           <div ref={pricingAnimation.elementRef}>
             <PricingComparison
               options={pricingOptions}
-              isVisible={pricingAnimation.isVisible}
+              isVisible={heroAnimation.isVisible}
             />
           </div>
 
           {/* Risk Reversal */}
-          <div className={`text-center mt-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
+          <div className={`text-center mt-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
             <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-8 max-w-3xl mx-auto">
               <h3 className="text-2xl font-bold mb-4 text-green-400">🛡️ 60-Day "Master ComfyUI" Guarantee</h3>
               <p className="text-gray-300 mb-4">
@@ -699,7 +699,7 @@ export default function ComfyUIWorkflowsPage() {
               badgeColor="text-gray-400"
               title={<>Real <span className="text-orange-400">ComfyUI</span> Results</>}
               description="Students mastering professional AI workflows"
-              isVisible={testimonialsAnimation.isVisible}
+              isVisible={heroAnimation.isVisible}
             />
           </div>
 
@@ -712,13 +712,13 @@ export default function ComfyUIWorkflowsPage() {
                 image={testimonial.image}
                 testimonial={testimonial.testimonial}
                 result={testimonial.result}
-                isVisible={testimonialsAnimation.isVisible}
+                isVisible={heroAnimation.isVisible}
                 staggerClass={`scroll-stagger-${index + 1}`}
               />
             ))}
           </div>
 
-          <div className={`text-center scroll-fade-up ${testimonialsAnimation.isVisible ? 'visible' : ''}`}>
+          <div className={`text-center scroll-fade-up ${isVisible ? 'visible' : ''}`}>
             <h3 className="text-3xl font-bold mb-4">
               <BlurIn
                 word="Become our next ComfyUI"
@@ -760,7 +760,7 @@ export default function ComfyUIWorkflowsPage() {
               badgeColor="text-gray-400"
               title="Got Questions? We Have Answers"
               description="Everything you need to know about mastering ComfyUI workflows"
-              isVisible={faqAnimation.isVisible}
+              isVisible={heroAnimation.isVisible}
             />
           </div>
 
@@ -770,7 +770,7 @@ export default function ComfyUIWorkflowsPage() {
                 key={index}
                 question={faq.question}
                 answer={faq.answer}
-                isVisible={faqAnimation.isVisible}
+                isVisible={heroAnimation.isVisible}
                 staggerClass={`scroll-stagger-${index + 1}`}
               />
             ))}

@@ -208,3 +208,108 @@ export function getKeywordsForCategory(category: string): string[] {
     'AI', 'automation', 'digital products', 'content creation', 'online business'
   ]
 }
+
+// Enhanced Product Schema for courses
+export interface ProductStructuredData {
+  '@context': 'https://schema.org'
+  '@type': 'Product'
+  name: string
+  description: string
+  brand: {
+    '@type': 'Brand'
+    name: string
+  }
+  offers: {
+    '@type': 'Offer'
+    url: string
+    priceCurrency: 'USD'
+    price: string
+    availability: string
+    seller: {
+      '@type': 'Organization'
+      name: string
+    }
+  }
+  aggregateRating?: {
+    '@type': 'AggregateRating'
+    ratingValue: number
+    reviewCount: number
+    bestRating: number
+    worstRating: number
+  }
+  category: string
+  image: string
+  url: string
+}
+
+// FAQ Schema
+export interface FAQStructuredData {
+  '@context': 'https://schema.org'
+  '@type': 'FAQPage'
+  mainEntity: Array<{
+    '@type': 'Question'
+    name: string
+    acceptedAnswer: {
+      '@type': 'Answer'
+      text: string
+    }
+  }>
+}
+
+export function generateProductStructuredData(
+  name: string,
+  description: string,
+  price: string,
+  url: string,
+  rating: number = 4.9,
+  reviewCount: number = 127
+): ProductStructuredData {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name,
+    description,
+    brand: {
+      '@type': 'Brand',
+      name: 'IImagined.ai'
+    },
+    offers: {
+      '@type': 'Offer',
+      url,
+      priceCurrency: 'USD',
+      price: price.replace('$', ''),
+      availability: 'https://schema.org/InStock',
+      seller: {
+        '@type': 'Organization',
+        name: 'IImagined.ai'
+      }
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: rating,
+      reviewCount,
+      bestRating: 5,
+      worstRating: 1
+    },
+    category: 'Online Course',
+    image: `${siteConfig.url}${url}/og-image.png`,
+    url: `${siteConfig.url}${url}`
+  }
+}
+
+export function generateFAQStructuredData(
+  faqs: Array<{ question: string; answer: string }>
+): FAQStructuredData {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  }
+}

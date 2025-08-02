@@ -19,13 +19,21 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 // Generate AI-powered meta tags
 const dynamicMeta = generateDynamicMeta({
-  title: 'Master AI Automation & Instagram Growth | Transform Your Business Today',
-  description: 'Revolutionary AI automation, Instagram growth, and digital product strategies that have generated $2.3M+ revenue. Join 127K+ entrepreneurs who dominate their markets.',
+  title: 'Master Claude 4 AI, Gemini 2 Pro & Instagram Growth | 127K+ Students Creating $10K+/Month',
+  description: 'Learn cutting-edge AI automation with Claude 4, Gemini 2 Pro, DeepSeek R1, and proven Instagram growth strategies. Join 127K+ creators building profitable businesses with advanced AI tools and social media mastery.',
   keywords: [
-    'ai automation mastery', 'instagram growth secrets', 'digital product empire',
-    'passive income blueprint', 'content creation automation', 'social media domination',
-    'youtube shorts viral', 'chatgpt business automation', 'comfyui workflows pro',
-    'online business systems', 'make money online fast', 'entrepreneur success'
+    // Latest AI Models 2025
+    'claude 4 ai', 'claude 4 automation', 'claude 4 sonnet', 'gemini 2 pro', 'gemini 2 pro flash',
+    'deepseek r1', 'deepseek r1 browser use', 'gpt-4.1', 'llama 4', 'qwen 3 alibaba',
+    // AI Automation & Agents
+    'ai automation', 'ai agents', 'ai workflow automation', 'n8n automation', 'multimodal ai',
+    'ai business automation', 'ai content creation', 'ai influencers', 'ai models comparison',
+    // Social Media Growth
+    'instagram growth', 'instagram growth 2025', 'instagram automation', 'tiktok growth hacks',
+    'youtube automation', 'social media marketing', 'viral content strategy', 'faceless youtube',
+    // Digital Business & Products
+    'digital products', 'passive income', 'online business', 'make money online',
+    'comfyui workflows', 'ai image generation', 'content strategy', 'email marketing'
   ]
 })
 

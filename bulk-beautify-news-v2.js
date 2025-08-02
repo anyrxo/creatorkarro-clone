@@ -382,7 +382,7 @@ function parseArticles(fileContent) {
   
   // Find all article keys
   const articleKeys = [];
-  const keyRegex = /'([a-z-]+)':\s*\{/g;
+  const keyRegex = /'([a-z0-9-]+)':\s*\{/g;
   let keyMatch;
   
   // First, find the newsArticles section
@@ -415,10 +415,20 @@ function parseArticles(fileContent) {
   
   const newsSection = fileContent.substring(newsStart, newsEnd);
   
-  // Extract all article keys from the news section
-  while ((keyMatch = keyRegex.exec(newsSection)) !== null) {
-    articleKeys.push(keyMatch[1]);
+  // Extract all article keys from the entire file content (more reliable)
+  const allArticleKeys = [];
+  const allKeyRegex = /'([a-z0-9-]+)':\s*\{/g;
+  let allKeyMatch;
+  
+  while ((allKeyMatch = allKeyRegex.exec(fileContent)) !== null) {
+    // Only include keys that are in the newsArticles section
+    const keyPosition = allKeyMatch.index;
+    if (keyPosition > newsStart && keyPosition < newsEnd) {
+      allArticleKeys.push(allKeyMatch[1]);
+    }
   }
+  
+  articleKeys.push(...allArticleKeys);
   
   console.log(`Found ${articleKeys.length} article keys`);
   
