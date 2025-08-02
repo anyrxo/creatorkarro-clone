@@ -732,19 +732,19 @@ export default function N8NAutomationsPage() {
               {
                 name: "David Chen",
                 role: "E-commerce Entrepreneur • $2M Revenue",
-                avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
+                avatar: "https://randomuser.me/api/portraits/men/23.jpg",
                 content: "N8N transformed my entire business! I went from working 80 hours/week manually processing orders to 30 hours/week while revenue grew 300%. My automation handles everything from inventory management to customer support. I'm finally working ON my business, not IN it."
               },
               {
                 name: "Sarah Martinez",
                 role: "Digital Marketing Agency • 50+ Clients",
-                avatar: "https://ext.same-assets.com/1161517358/432373971.webp",
+                avatar: "https://randomuser.me/api/portraits/women/28.jpg",
                 content: "This course paid for itself in the first week! I built automated client reporting systems that save me 25 hours weekly. Now I'm selling automation services to clients for $5K each. From manual chaos to automated empire - this system is pure gold!"
               },
               {
                 name: "Michael Torres",
                 role: "SaaS Founder • 10K+ Users",
-                avatar: "https://ext.same-assets.com/1161517358/2128294924.webp",
+                avatar: "https://randomuser.me/api/portraits/men/94.jpg",
                 content: "The AI integration modules blew my mind! My N8N workflows now handle customer onboarding, support tickets, and user engagement automatically. Reduced customer acquisition cost by 60% while improving satisfaction scores. This is the future of business!"
               }
             ].map((testimonial, index) => (

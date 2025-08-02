@@ -321,9 +321,7 @@ export function HeroSection({
             </div>
           )}
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            {title}
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" dangerouslySetInnerHTML={{ __html: title }} />
 
           <p className="text-xl text-gray-400 mb-8">
             {description}

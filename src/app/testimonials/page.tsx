@@ -66,7 +66,7 @@ export default function TestimonialsPage() {
       name: "Marcus Rivera",
       role: "Content Creator",
       course: "Instagram Ignited",
-      avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
+      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
       content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months using Anyro's viral carousel techniques. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month through sponsored posts and digital products.",
       results: "800 to 125K followers, $15K/month revenue"
     },
@@ -74,7 +74,7 @@ export default function TestimonialsPage() {
       name: "Sophia Chen",
       role: "Digital Entrepreneur",
       course: "Digital Products",
-      avatar: "https://ext.same-assets.com/1161517358/3465280603.webp",
+      avatar: "https://randomuser.me/api/portraits/women/28.jpg",
       content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Anyro's pricing psychology and launch strategies are game-changing. I've now built a sustainable $25K/month business selling educational content.",
       results: "$10K in 3 weeks, $25K/month business"
     },
@@ -82,7 +82,7 @@ export default function TestimonialsPage() {
       name: "Devon Mitchell",
       role: "Automation Specialist",
       course: "N8N AI Automations",
-      avatar: "https://ext.same-assets.com/1161517358/366375215.webp",
+      avatar: "https://randomuser.me/api/portraits/men/67.jpg",
       content: "N8N AI Automations saved me 40+ hours per week! I automated my entire content workflow - from research to posting across 5 platforms. My productivity skyrocketed and I can now focus on strategy instead of repetitive tasks. The workflows Anyro provides are incredibly detailed!",
       results: "40+ hours saved weekly, 5x productivity increase"
     },
@@ -90,7 +90,7 @@ export default function TestimonialsPage() {
       name: "Ashton Torres",
       role: "AI Content Creator",
       course: "AI Influencers",
-      avatar: "https://ext.same-assets.com/1161517358/432373971.webp",
+      avatar: "https://randomuser.me/api/portraits/men/12.jpg",
       content: "AI Influencers opened up a completely new revenue stream for me! I created 3 AI models that generate content 24/7. Within 2 months, my AI models gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach is revolutionary!",
       results: "200K combined followers, $8K/month AI revenue"
     },
@@ -98,7 +98,7 @@ export default function TestimonialsPage() {
       name: "Ryan Blackwood",
       role: "Visual Artist",
       course: "ComfyUI & Workflows",
-      avatar: "https://ext.same-assets.com/1161517358/2908592891.webp",
+      avatar: "https://randomuser.me/api/portraits/men/52.jpg",
       content: "ComfyUI & Workflows turned me into an AI art powerhouse! I can now create stunning visuals in minutes instead of hours. My client work rate increased 500% and I'm charging premium prices for AI-enhanced designs. The workflow templates are incredibly professional!",
       results: "500% productivity increase, premium pricing"
     },
@@ -106,7 +106,7 @@ export default function TestimonialsPage() {
       name: "Allan Rodriguez",
       role: "Lifestyle Blogger",
       course: "Instagram Ignited",
-      avatar: "https://ext.same-assets.com/1161517358/430339476.webp",
+      avatar: "https://randomuser.me/api/portraits/men/88.jpg",
       content: "The Instagram OS module alone was worth the entire course! I finally understood the algorithm and my first viral carousel got 2.3M views. Within 3 months, I grew from 5K to 85K followers and landed my first $25K brand partnership.",
       results: "2.3M views, 5K to 85K followers, $25K partnership"
     },
@@ -114,7 +114,7 @@ export default function TestimonialsPage() {
       name: "Cameron Lee",
       role: "Tech Entrepreneur",
       course: "N8N AI Automations",
-      avatar: "https://ext.same-assets.com/1161517358/640627202.jpeg",
+      avatar: "https://randomuser.me/api/portraits/men/71.jpg",
       content: "N8N AI Automations completely transformed my business operations! I automated lead generation, customer onboarding, and content distribution. My team productivity increased 300% and we're scaling without adding headcount. Incredible ROI!",
       results: "300% team productivity, automated business operations"
     },
@@ -122,7 +122,7 @@ export default function TestimonialsPage() {
       name: "Alex Morgan",
       role: "Digital Product Creator",
       course: "Digital Products",
-      avatar: "https://ext.same-assets.com/1161517358/2128294924.webp",
+      avatar: "https://randomuser.me/api/portraits/men/23.jpg",
       content: "The Digital Products framework is genius! I used Anyro's validation methods to test my course idea, then his launch strategies to generate $22K in the first week. The pricing psychology section alone 3x my conversion rates!",
       results: "$22K first week launch, 3x conversion rates"
     },
@@ -130,7 +130,7 @@ export default function TestimonialsPage() {
       name: "Brendan Williams",
       role: "AI Artist",
       course: "ComfyUI & Workflows",
-      avatar: "https://ext.same-assets.com/1161517358/1695287196.jpeg",
+      avatar: "https://randomuser.me/api/portraits/men/65.jpg",
       content: "ComfyUI & Workflows opened up endless creative possibilities! I went from basic Midjourney prompts to creating complex, professional AI art workflows. My art business revenue jumped 400% and I'm booked solid with client work!",
       results: "400% revenue increase, booked solid"
     },
@@ -138,7 +138,7 @@ export default function TestimonialsPage() {
       name: "Jack Connors",
       role: "Content Creator",
       course: "Instagram Ignited",
-      avatar: "https://ext.same-assets.com/1161517358/527605891.webp",
+      avatar: "https://randomuser.me/api/portraits/men/18.jpg",
       content: "After joining the program and applying the teachings, I saw rapid results. I went from a few hundred followers to 50K, and now I've reached 100K+ followers and launched my own paid community.",
       results: "100K+ followers, paid community"
     },
@@ -146,7 +146,7 @@ export default function TestimonialsPage() {
       name: "Maria Gonzalez",
       role: "Fashion Blogger",
       course: "Instagram Ignited",
-      avatar: "https://ext.same-assets.com/1161517358/2749851203.webp",
+      avatar: "https://randomuser.me/api/portraits/women/33.jpg",
       content: "As a complete beginner with no followers, I was skeptical. But the step-by-step guidance helped me grow to 45K followers in 6 months. The carousel strategies alone changed everything for me!",
       results: "0 to 45K followers, first brand deal at $5K"
     },
@@ -154,7 +154,7 @@ export default function TestimonialsPage() {
       name: "David Park",
       role: "Fitness Coach",
       course: "Digital Products",
-      avatar: "https://ext.same-assets.com/1161517358/3289751423.webp",
+      avatar: "https://randomuser.me/api/portraits/men/85.jpg",
       content: "I turned my fitness knowledge into a $50K product launch! The validation framework helped me test my idea before building, and the launch strategy exceeded all expectations.",
       results: "$50K launch, 500+ happy customers"
     },
@@ -162,7 +162,7 @@ export default function TestimonialsPage() {
       name: "Lisa Thompson",
       role: "Travel Blogger",
       course: "N8N AI Automations",
-      avatar: "https://ext.same-assets.com/1161517358/1829473526.webp",
+      avatar: "https://randomuser.me/api/portraits/women/17.jpg",
       content: "Managing content across 6 platforms was killing me. N8N automations gave me my life back! Now everything posts automatically while I focus on creating.",
       results: "6 platforms automated, 30 hours saved weekly"
     },
@@ -170,7 +170,7 @@ export default function TestimonialsPage() {
       name: "James Wilson",
       role: "Tech Reviewer",
       course: "AI Influencers",
-      avatar: "https://ext.same-assets.com/1161517358/2847192634.webp",
+      avatar: "https://randomuser.me/api/portraits/men/94.jpg",
       content: "I created an AI tech reviewer that posts daily content. It's like having a full team working 24/7. The passive income from this is incredible!",
       results: "AI generates $4K/month passively"
     },
@@ -178,7 +178,7 @@ export default function TestimonialsPage() {
       name: "Emma Davis",
       role: "Life Coach",
       course: "Instagram Ignited",
-      avatar: "https://ext.same-assets.com/1161517358/3917482951.webp",
+      avatar: "https://randomuser.me/api/portraits/women/89.jpg",
       content: "From 2K to 75K followers in 5 months! The engagement strategies taught me how to build a real community, not just numbers. My coaching business exploded!",
       results: "2K to 75K followers, $20K/month coaching"
     },
@@ -186,7 +186,7 @@ export default function TestimonialsPage() {
       name: "Michael Brown",
       role: "Photographer",
       course: "ComfyUI & Workflows",
-      avatar: "https://ext.same-assets.com/1161517358/1748291635.webp",
+      avatar: "https://randomuser.me/api/portraits/men/76.jpg",
       content: "AI art workflows transformed my photography business. I can now offer unique AI-enhanced portraits that clients pay premium for. Game changer!",
       results: "3x pricing, fully booked 3 months out"
     },
@@ -194,7 +194,7 @@ export default function TestimonialsPage() {
       name: "Sarah Johnson",
       role: "Nutritionist",
       course: "Digital Products",
-      avatar: "https://ext.same-assets.com/1161517358/2918374651.webp",
+      avatar: "https://randomuser.me/api/portraits/women/50.jpg",
       content: "My meal plan guide made $15K in the first month! The pricing psychology module helped me position it perfectly. Now it's consistent passive income.",
       results: "$15K first month, $5K/month passive"
     },
@@ -202,7 +202,7 @@ export default function TestimonialsPage() {
       name: "Robert Garcia",
       role: "Music Producer",
       course: "N8N AI Automations",
-      avatar: "https://ext.same-assets.com/1161517358/1928374615.webp",
+      avatar: "https://randomuser.me/api/portraits/men/41.jpg",
       content: "Automated my entire music promotion workflow. What used to take days now happens automatically. More time for creating, less time on admin!",
       results: "80% time saved, 2x release schedule"
     },
@@ -210,7 +210,7 @@ export default function TestimonialsPage() {
       name: "Amanda White",
       role: "Beauty Influencer",
       course: "Instagram Ignited",
-      avatar: "https://ext.same-assets.com/1161517358/3847291853.webp",
+      avatar: "https://randomuser.me/api/portraits/women/21.jpg",
       content: "The viral carousel formula is INSANE! My first one got 1.2M views and 15K new followers. Now brands are reaching out to ME!",
       results: "1.2M viral views, $10K brand deals"
     },
@@ -218,7 +218,7 @@ export default function TestimonialsPage() {
       name: "Kevin Martinez",
       role: "Business Coach",
       course: "Digital Products",
-      avatar: "https://ext.same-assets.com/1161517358/2847193625.webp",
+      avatar: "https://randomuser.me/api/portraits/men/7.jpg",
       content: "Launched my coaching program to $35K using Anyro's strategies. The email sequences and launch tactics were pure gold. Best investment ever!",
       results: "$35K launch, 6-figure run rate"
     }
@@ -378,7 +378,7 @@ export default function TestimonialsPage() {
                 <div className="relative z-10">
                   <div className="flex items-center mb-6">
                     <Image
-                      src="https://ext.same-assets.com/1161517358/1847293615.webp"
+                      src="https://randomuser.me/api/portraits/men/29.jpg"
                       alt="Houston"
                       width={80}
                       height={80}
@@ -425,7 +425,7 @@ export default function TestimonialsPage() {
                 <div className="relative z-10">
                   <div className="flex items-center mb-6">
                     <Image
-                      src="https://ext.same-assets.com/1161517358/3192847561.webp"
+                      src="https://randomuser.me/api/portraits/men/36.jpg"
                       alt="Tochi"
                       width={80}
                       height={80}

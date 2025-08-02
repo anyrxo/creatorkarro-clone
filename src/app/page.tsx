@@ -93,7 +93,7 @@ export default function HomePage() {
       name: "Marcus Rivera",
       role: "Content Creator",
       course: "Instagram Ignited",
-      avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
+      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
       content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month!",
       rating: 5
     },
@@ -101,7 +101,7 @@ export default function HomePage() {
       name: "Jake Chen",
       role: "Digital Entrepreneur", 
       course: "Digital Products",
-      avatar: "https://ext.same-assets.com/1161517358/3465280603.webp",
+      avatar: "https://randomuser.me/api/portraits/men/45.jpg",
       content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Now running a sustainable $25K/month business!",
       rating: 5
     },
@@ -109,7 +109,7 @@ export default function HomePage() {
       name: "Devon Mitchell",
       role: "Automation Specialist",
       course: "N8N AI Automations", 
-      avatar: "https://ext.same-assets.com/1161517358/366375215.webp",
+      avatar: "https://randomuser.me/api/portraits/men/67.jpg",
       content: "N8N AI Automations saved me 40+ hours per week! Automated my entire content workflow. The productivity gains are incredible!",
       rating: 5
     }
@@ -231,9 +231,9 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
               >
-                <Link href={course.link} className="block magnetic-button">
+                <Link href={course.link} className="block magnetic-button h-full">
                   <Interactive3DCard>
-                    <div className="text-center space-y-4">
+                    <div className="text-center space-y-4 h-full flex flex-col justify-between p-8">
                       <motion.div 
                         className="text-6xl"
                         animate={{ 
@@ -303,16 +303,17 @@ export default function HomePage() {
                 className="group"
               >
                 <motion.div
-                  className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent"
+                  className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent flex items-center justify-center"
                   whileHover={{ scale: 1.1 }}
                 >
-                  {stat.prefix}
+                  <span>{stat.prefix}</span>
                   <NumberTicker 
                     value={stat.value} 
                     delay={0.5 + index * 0.2}
                     decimalPlaces={stat.decimals || 0}
+                    className="inline-block"
                   />
-                  {stat.suffix}
+                  <span>{stat.suffix}</span>
                 </motion.div>
                 <p className="text-zinc-500 mt-2">{stat.label}</p>
               </motion.div>

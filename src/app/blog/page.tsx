@@ -33,28 +33,6 @@ const newsArticles = [
     keywords: ["openai", "03 pro", "ai reasoning", "strategic ai", "performance analysis"]
   },
   {
-    title: "GPT-4.1 vs Claude Sonnet 3.7: Complete Model Comparison",
-    category: "AI NEWS",
-    categoryColor: "purple",
-    excerpt: "OpenAI's GPT-4.1 delivers impressive performance at 80% lower cost than Claude Sonnet 3.7. Real-world testing reveals surprising strengths in TypeScript development and data processing.",
-    description: "Comprehensive comparison of GPT-4.1 and Claude Sonnet 3.7 performance, pricing, and use cases.",
-    readTime: "18 min",
-    date: "2025-04-14",
-    slug: "gpt-4-1-vs-claude-sonnet-3-7-comparison",
-    keywords: ["gpt 4.1", "claude sonnet 3.7", "ai model comparison", "openai", "anthropic"]
-  },
-  {
-    title: "Anthropic Launches Claude 4: A Strategic Pivot from Chatbots to Agentic Coding Infrastructure",
-    category: "AI NEWS",
-    categoryColor: "purple",
-    excerpt: "Anthropic's strategic shift towards agentic coding infrastructure with Claude 4, moving beyond traditional chatbot capabilities.",
-    description: "Analysis of Anthropic's Claude 4 launch and strategic pivot to agentic coding infrastructure.",
-    readTime: "10 min",
-    date: "2025-01-15",
-    slug: "anthropic-claude-4-agentic-coding-infrastructure",
-    keywords: ["anthropic", "claude 4", "agentic ai", "coding infrastructure", "ai development"]
-  },
-  {
     title: "Alibaba's QwQ-32B vs DeepSeek R1: Complete AI Model Comparison",
     category: "TECH NEWS", 
     categoryColor: "green",
@@ -108,39 +86,6 @@ const newsArticles = [
     date: "2025-06-15",
     slug: "builderai-billion-dollar-ai-bust",
     keywords: ["builder.ai", "ai fraud", "startup failure", "microsoft", "softbank", "no-code platforms"]
-  },
-  {
-    title: "Gemini 2.5 Flash Review: Google's $0.60 AI Model That Beats GPT-4",
-    category: "AI NEWS",
-    categoryColor: "blue",
-    excerpt: "Google's Gemini 2.5 Flash offers blazing speed and unbelievably low pricing at just $0.60/M output tokens while delivering performance that rivals models costing 10x more.",
-    description: "Complete review of Google Gemini 2.5 Flash - the budget AI model that delivers premium performance at 90% lower cost.",
-    readTime: "19 min",
-    date: "2025-04-20",
-    slug: "gemini-2-5-flash-budget-ai-model",
-    keywords: ["gemini 2.5 flash", "google gemini", "budget ai model", "cheap ai api", "gemini pricing"]
-  },
-  {
-    title: "Qwen 3 Review: Alibaba's Open-Source Model That Beats GPT-4 & LLaMA 4",
-    category: "OPEN SOURCE",
-    categoryColor: "green",
-    excerpt: "Alibaba's Qwen 3 features 235B parameters with MoE architecture, outperforms GPT-4 in coding, beats LLaMA 4 in reasoning, and remains completely free under Apache 2.0 license.",
-    description: "Complete guide to Alibaba's Qwen 3 - the open-source LLM that's reshaping the AI landscape with superior performance and true commercial freedom.",
-    readTime: "22 min",
-    date: "2025-05-13",
-    slug: "qwen-3-alibaba-open-source-llm",
-    keywords: ["qwen 3", "alibaba qwen", "open source llm", "apache 2.0", "mixture of experts"]
-  },
-  {
-    title: "Composer Agent Review: Build Full-Stack Apps with One Prompt",
-    category: "AI TOOLS",
-    categoryColor: "purple",
-    excerpt: "Abacus AI's Composer Agent revolutionizes development by building complete full-stack applications from a single prompt. Multi-model AI support, autonomous coding, free trial available.",
-    description: "Complete guide to Composer Agent in Code LLM - the AI tool that generates full applications autonomously with advanced language models.",
-    readTime: "20 min",
-    date: "2025-03-02",
-    slug: "composer-agent-code-llm-full-stack",
-    keywords: ["composer agent", "code llm", "abacus ai", "full stack development", "autonomous coding"]
   },
   {
     title: "Llamacon 2025 Recap: How Zuckerberg and Nadella Are Reshaping AI Software Development Forever",
@@ -197,28 +142,6 @@ const newsArticles = [
     slug: "google-ai-studio-update-powerful-free-all-in-one-platform-developers-creators",
     keywords: ["google ai studio", "gemini 2.5 flash", "free ai development", "ai platform", "google ai models", "ai development tools"]
   },
-  {
-    title: "Vectorize RAG Platform: All-in-One AI Document Parsing & Vector Search Revolution",
-    category: "AI PLATFORMS",
-    categoryColor: "blue",
-    excerpt: "Vectorize transforms RAG pipeline development with its revolutionary all-in-one platform featuring advanced document parsing, automated embeddings, and intelligent vector search capabilities.",
-    description: "Comprehensive guide to Vectorize - the revolutionary RAG platform for AI document parsing, embeddings, and vector search. Transform your AI applications with automated data extraction.",
-    readTime: "18 min",
-    date: "2025-01-02",
-    slug: "vectorize-all-in-one-rag-platform",
-    keywords: ["vectorize", "rag platform", "ai document parsing", "vector search", "embeddings", "vectorize iris"]
-  },
-  {
-    title: "DeepSeek-R1 & Browser Use: The Future of AI Research Tools Revolution",
-    category: "AI RESEARCH",
-    categoryColor: "green",
-    excerpt: "Discover how DeepSeek-R1 and Browser Use are revolutionizing AI research with 89% accuracy, unlimited queries, and complete open-source freedom - all while outperforming OpenAI's $200/month Deep Research tool.",
-    description: "Complete guide to DeepSeek-R1 and Browser Use - revolutionary open-source AI research tools that rival OpenAI Deep Research with superior performance and zero costs.",
-    readTime: "19 min",
-    date: "2025-01-03",
-    slug: "deepseek-r1-browser-use-ai-research",
-    keywords: ["deepseek r1", "browser use", "ai research tools", "open source ai", "deep research alternative", "ai automation"]
-  }
 ]
 
 const blogPosts = [
@@ -647,7 +570,7 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-dark relative">
       {/* Hero Section */}
-      <section className="section-spacing overflow-hidden">
+      <section className="pt-16 pb-8 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
             ref={heroAnimation.elementRef}
@@ -677,7 +600,7 @@ export default function BlogPage() {
       </section>
 
       {/* Tab Navigation */}
-      <section className="py-8">
+      <section className="py-4">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation animation="scale" delay={100}>
             <div className="flex justify-center mb-8">

@@ -731,19 +731,19 @@ export default function DigitalProductsPage() {
               {
                 name: "Jennifer Martinez",
                 role: "Life Coach • $45K/Month",
-                avatar: "https://ext.same-assets.com/1161517358/1430260149.webp",
+                avatar: "https://randomuser.me/api/portraits/women/65.jpg",
                 content: "Digital Products Academy changed my life! I went from struggling to get coaching clients to running a $45K/month digital empire. My signature course practically sells itself now. I help more people in a month than I used to help in a year!"
               },
               {
                 name: "David Thompson",
                 role: "Marketing Expert • $32K/Month",
-                avatar: "https://ext.same-assets.com/1161517358/432373971.webp",
+                avatar: "https://randomuser.me/api/portraits/men/38.jpg",
                 content: "I was burned out from client work when I found this system. Now I have 3 digital products generating consistent passive income. Last month I made $32K while traveling Europe. This isn't just a course - it's a complete business transformation!"
               },
               {
                 name: "Sarah Kim",
                 role: "Fitness Expert • $28K/Month",
-                avatar: "https://ext.same-assets.com/1161517358/2128294924.webp",
+                avatar: "https://randomuser.me/api/portraits/women/73.jpg",
                 content: "From personal trainer making $3K/month to digital product creator making $28K/month! My online fitness programs have helped thousands of people while giving me complete time freedom. The pricing strategies alone 10x'd my income!"
               }
             ].map((testimonial, index) => (
