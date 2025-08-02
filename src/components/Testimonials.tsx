@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface TestimonialsProps {
   testimonials: Array<{
     name: string
@@ -25,8 +27,14 @@ export default function Testimonials({ testimonials, countryCode, country }: Tes
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
               <div className="flex items-center mb-4">
-                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  {testimonial.name.charAt(0)}
+                <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>

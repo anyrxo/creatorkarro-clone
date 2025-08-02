@@ -94,19 +94,23 @@ export default async function CountryHomePage({ params }: Props) {
         testimonials={content.testimonials.map((testimonial, index) => {
           // Parse testimonial string format: "Name from Location: 'Quote'"
           const match = testimonial.match(/^([^:]+):\s*"([^"]+)"$/)
+          // Use different testimonial images for variety
+          const imageIndex = (index % 8) + 1
+          const testimonialImage = `/testimonials/testimonial-${imageIndex}.jpg`
+          
           if (match) {
             const [, nameLocation, result] = match
             return {
               name: nameLocation.trim(),
               result: result.trim(),
-              image: '/placeholder-testimonial.jpg'
+              image: testimonialImage
             }
           }
           // Fallback for unparseable testimonials
           return {
             name: `Customer ${index + 1}`,
             result: testimonial,
-            image: '/placeholder-testimonial.jpg'
+            image: testimonialImage
           }
         })}
         countryCode={countryCode}
@@ -174,7 +178,7 @@ export default async function CountryHomePage({ params }: Props) {
             </div>
             
             <div className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibent text-white mb-3">
+              <h3 className="text-xl font-semibold text-white mb-3">
                 Do you have {config.country}-specific support?
               </h3>
               <p className="text-gray-300">

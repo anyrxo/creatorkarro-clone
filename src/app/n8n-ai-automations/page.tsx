@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
 import SocialIcon from '@/components/SocialIcon'
+import PartnerLogo from '@/components/PartnerLogo'
 import {
   ValueBadge,
   ModuleCard,
@@ -388,13 +389,21 @@ export default function N8NAutomationsPage() {
                 className="group relative bg-zinc-800/50 backdrop-blur-sm rounded-xl p-4 border border-zinc-700/50 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
               >
                 <div className="flex flex-col items-center text-center">
-                  <SocialIcon 
-                    platform={tool.platform as any}
-                    variant="color"
-                    size={40}
-                    href={undefined}
-                    className="mb-3 group-hover:scale-110 transition-transform"
-                  />
+                  {['n8n', 'zapier', 'make', 'claude', 'gemini', 'loom', 'nvidia', 'digitalocean', 'whop', 'manus'].includes(tool.platform) ? (
+                    <PartnerLogo 
+                      platform={tool.platform as any}
+                      size={40}
+                      className="mb-3 group-hover:scale-110 transition-transform"
+                    />
+                  ) : (
+                    <SocialIcon 
+                      platform={tool.platform as any}
+                      variant="color"
+                      size={40}
+                      href={undefined}
+                      className="mb-3 group-hover:scale-110 transition-transform"
+                    />
+                  )}
                   <h3 className="font-semibold text-white text-sm mb-1">{tool.name}</h3>
                   <p className="text-xs text-zinc-400">{tool.category}</p>
                 </div>

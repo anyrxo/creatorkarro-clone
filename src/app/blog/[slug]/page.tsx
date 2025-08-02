@@ -1305,195 +1305,374 @@ const newsArticles: Record<string, {
   },
   'google-gemini-2-5-pro-game-changer': {
     title: "Google Gemini 2.5 Pro: Complete Game-Changer Analysis - Free AI Model Benchmarks & Use Cases",
-    content: `<div class="max-w-4xl mx-auto">
-  <p><strong>Meta Description:</strong> Comprehensive analysis of Google Gemini 2.5 Pro: performance benchmarks vs GPT-4.5, DeepSeek R1, Claude 3.7. Free access guide with real-world testing results and implementation strategies.</p>
-  <p><em>By Anyro, AI Performance Analysis Expert at IImagined.ai | March 30, 2025</em></p>
-  
-  <h2>Table of Contents</h2>
-  <ol>
-    <li><a href="#model-overview">Gemini 2.5 Pro Overview</a></li>
-    <li><a href="#performance-benchmarks">Performance Benchmarks & Testing</a></li>
-    <li><a href="#real-world-applications">Real-World Application Testing</a></li>
-    <li><a href="#competitor-analysis">Competitive Analysis</a></li>
-    <li><a href="#free-access-guide">Free Access Implementation Guide</a></li>
-    <li><a href="#anyros-analysis">Anyro's Expert Analysis</a></li>
-    <li><a href="#use-case-matrix">Use Case Decision Matrix</a></li>
-    <li><a href="#faq">FAQ</a></li>
-  </ol>
+    content: `<div className="min-h-screen bg-dark">
+      {/* Hero Section - Optimized for featured snippets */}
+      <section className="section-spacing overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-5xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-6">
+              <span className="text-green-400 text-sm font-semibold">GOOGLE GEMINI 2.5 PRO ANALYSIS 2025</span>
+            </div>
 
-  <hr>
+            <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
+              Google Gemini 2.5 Pro: <span className="text-green-400">Complete Game-Changer Analysis</span>
+            </h1>
 
-  <h2 id="model-overview">Google Gemini 2.5 Pro: A New Benchmark in AI Performance</h2>
+            <p className="text-lg md:text-xl text-gray-400 mb-8">
+              <span className="text-white font-semibold">Free AI model benchmarks vs GPT-4.5, DeepSeek R1, Claude 3.7</span> with real-world testing results and implementation strategies that reveal why this model dominates reasoning tasks
+            </p>
 
-  <p><strong>Google has once again pushed the boundaries of artificial intelligence with the release of Gemini 2.5 Pro</strong>, its latest experimental AI model. This state-of-the-art model has already proven itself to be a powerhouse, outperforming some of the biggest names in AI, including GPT-4.5, DeepSeek R1, and Claude 3.7 Sonnet.</p>
+            <div className="flex items-center justify-center gap-4 text-sm text-gray-400 mb-8">
+              <span>By Anyro, AI Performance Analysis Expert at IImagined.ai</span>
+              <span>•</span>
+              <span>March 30, 2025</span>
+              <span>•</span>
+              <span>16 min read</span>
+            </div>
+            
+            {/* Quick answer for featured snippets */}
+            <div className="mt-8 p-6 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-xl border border-green-500/20">
+              <h2 className="text-xl font-bold text-white mb-4">🎯 Quick Answer: Is Gemini 2.5 Pro the Best Free Model?</h2>
+              <p className="text-gray-300 text-left">
+                <strong>Google Gemini 2.5 Pro</strong> is completely free and outperforms most paid competitors in reasoning (95/100), mathematics (94/100), and multimodal tasks (92/100). 
+                It offers a <strong>1 million token context window</strong> and achieves an overall score of <strong>92.3/100</strong> - higher than Claude 3.7 Sonnet and GPT-4.5.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <h3>Key Technical Specifications</h3>
+      {/* Performance Metrics Section */}
+      <section className="py-16 px-4 border-y border-gray-800">
+        <div className="container mx-auto">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl font-bold text-white text-center mb-4">Gemini 2.5 Pro: Record-Breaking Performance</h2>
+            <p className="text-center text-gray-400 mb-8 max-w-3xl mx-auto">
+              Google's latest AI model sets new standards with superior reasoning capabilities and 100% free access through Google AI Studio.
+            </p>
+            <div className="grid md:grid-cols-4 gap-4">
+              <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                <div className="text-3xl font-bold text-green-400 mb-2">92.3</div>
+                <div className="text-gray-400 text-sm">Overall Score</div>
+                <div className="text-xs text-gray-500 mt-1">Best in class</div>
+              </div>
+              <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                <div className="text-3xl font-bold text-blue-400 mb-2">1M</div>
+                <div className="text-gray-400 text-sm">Token Context</div>
+                <div className="text-xs text-gray-500 mt-1">Massive window</div>
+              </div>
+              <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                <div className="text-3xl font-bold text-purple-400 mb-2">FREE</div>
+                <div className="text-gray-400 text-sm">Access Cost</div>
+                <div className="text-xs text-gray-500 mt-1">Google AI Studio</div>
+              </div>
+              <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                <div className="text-3xl font-bold text-orange-400 mb-2">95</div>
+                <div className="text-gray-400 text-sm">Reasoning Score</div>
+                <div className="text-xs text-gray-500 mt-1">Industry leading</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>Gemini 2.5 Pro</th>
-        <th>Significance</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Context Window</strong></td>
-        <td>1 million tokens</td>
-        <td>Handles entire codebases and long documents</td>
-      </tr>
-      <tr>
-        <td><strong>Access Model</strong></td>
-        <td>100% Free on Google AI Studio</td>
-        <td>Democratizes access to cutting-edge AI</td>
-      </tr>
-      <tr>
-        <td><strong>Reasoning Approach</strong></td>
-        <td>Think-before-responding architecture</td>
-        <td>Enhanced accuracy and logical consistency</td>
-      </tr>
-      <tr>
-        <td><strong>API Availability</strong></td>
-        <td>Immediate access</td>
-        <td>No waitlists or approval processes</td>
-      </tr>
-    </tbody>
-  </table>
+      {/* Main Content */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          
+          {/* Table of Contents */}
+          <div className="bg-zinc-900/50 rounded-xl p-6 mb-12 border border-gray-800">
+            <h3 className="text-xl font-bold text-white mb-4">📋 Table of Contents</h3>
+            <div className="grid md:grid-cols-2 gap-2 text-sm">
+              <a href="#model-overview" className="text-gray-400 hover:text-green-400 transition-colors">🔍 Gemini 2.5 Pro Overview</a>
+              <a href="#performance-benchmarks" className="text-gray-400 hover:text-green-400 transition-colors">📊 Performance Benchmarks</a>
+              <a href="#real-world-applications" className="text-gray-400 hover:text-green-400 transition-colors">🧪 Real-World Testing</a>
+              <a href="#competitor-analysis" className="text-gray-400 hover:text-green-400 transition-colors">⚔️ Competitive Analysis</a>
+              <a href="#free-access-guide" className="text-gray-400 hover:text-green-400 transition-colors">🆓 Free Access Guide</a>
+              <a href="#anyros-analysis" className="text-gray-400 hover:text-green-400 transition-colors">💡 Expert Analysis</a>
+              <a href="#use-case-matrix" className="text-gray-400 hover:text-green-400 transition-colors">🎯 Use Case Matrix</a>
+              <a href="#faq" className="text-gray-400 hover:text-green-400 transition-colors">❓ FAQ</a>
+            </div>
+          </div>
 
-  <p>Gemini 2.5 Pro is designed to handle complex problems with <strong>enhanced reasoning, structured outputs, and a vast context window</strong>. Most impressively, Google has made it <strong>100% free on Google AI Studio</strong>, where users can access it via an API for immediate use.</p>
+          <div id="model-overview" className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-6">🤖 Google Gemini 2.5 Pro: A New Benchmark in AI Performance</h2>
+            
+            <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-xl p-6 border border-green-500/20 mb-8">
+              <h3 className="text-xl font-bold text-white mb-4">🔥 Key Breakthrough</h3>
+              <p className="text-gray-300">
+                <strong>Google has once again pushed the boundaries of artificial intelligence with the release of Gemini 2.5 Pro</strong>, its latest experimental AI model. This state-of-the-art model has already proven itself to be a powerhouse, outperforming some of the biggest names in AI, including GPT-4.5, DeepSeek R1, and Claude 3.7 Sonnet.
+              </p>
+            </div>
 
-  <h2 id="performance-benchmarks">Performance Benchmarks & Comprehensive Testing</h2>
+            <h3 className="text-2xl font-bold text-white mb-6">🔧 Key Technical Specifications</h3>
+            
+            <div className="bg-zinc-900/50 rounded-xl overflow-hidden border border-gray-800 mb-8">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-gray-800">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-white font-semibold">Feature</th>
+                      <th className="px-6 py-4 text-left text-white font-semibold">Gemini 2.5 Pro</th>
+                      <th className="px-6 py-4 text-left text-white font-semibold">Significance</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-700">
+                    <tr className="hover:bg-gray-800/50 transition-colors">
+                      <td className="px-6 py-4 text-green-400 font-semibold">Context Window</td>
+                      <td className="px-6 py-4 text-blue-400 font-bold">1 million tokens</td>
+                      <td className="px-6 py-4 text-gray-300">Handles entire codebases and long documents</td>
+                    </tr>
+                    <tr className="hover:bg-gray-800/50 transition-colors">
+                      <td className="px-6 py-4 text-green-400 font-semibold">Access Model</td>
+                      <td className="px-6 py-4 text-purple-400 font-bold">100% Free on Google AI Studio</td>
+                      <td className="px-6 py-4 text-gray-300">Democratizes access to cutting-edge AI</td>
+                    </tr>
+                    <tr className="hover:bg-gray-800/50 transition-colors">
+                      <td className="px-6 py-4 text-green-400 font-semibold">Reasoning Approach</td>
+                      <td className="px-6 py-4 text-yellow-400 font-bold">Think-before-responding architecture</td>
+                      <td className="px-6 py-4 text-gray-300">Enhanced accuracy and logical consistency</td>
+                    </tr>
+                    <tr className="hover:bg-gray-800/50 transition-colors">
+                      <td className="px-6 py-4 text-green-400 font-semibold">API Availability</td>
+                      <td className="px-6 py-4 text-green-400 font-bold">Immediate access</td>
+                      <td className="px-6 py-4 text-gray-300">No waitlists or approval processes</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-  <h3>Benchmark Comparison Matrix</h3>
+            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-6 border border-blue-500/20">
+              <h4 className="text-lg font-bold text-white mb-3">🎯 Why This Matters</h4>
+              <p className="text-gray-300">
+                Gemini 2.5 Pro is designed to handle complex problems with <span className="text-blue-400 font-semibold">enhanced reasoning, structured outputs, and a vast context window</span>. Most impressively, Google has made it <span className="text-purple-400 font-semibold">100% free on Google AI Studio</span>, where users can access it via an API for immediate use.
+              </p>
+            </div>
+          </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Model</th>
-        <th>Reasoning</th>
-        <th>Coding</th>
-        <th>Mathematics</th>
-        <th>Multimodal</th>
-        <th>Overall Score</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Gemini 2.5 Pro</strong></td>
-        <td>95/100</td>
-        <td>88/100</td>
-        <td>94/100</td>
-        <td>92/100</td>
-        <td><strong>92.3/100</strong></td>
-      </tr>
-      <tr>
-        <td><strong>Claude 3.7 Sonnet</strong></td>
-        <td>91/100</td>
-        <td>95/100</td>
-        <td>89/100</td>
-        <td>87/100</td>
-        <td>90.5/100</td>
-      </tr>
-      <tr>
-        <td><strong>GPT-4.5</strong></td>
-        <td>89/100</td>
-        <td>91/100</td>
-        <td>87/100</td>
-        <td>90/100</td>
-        <td>89.3/100</td>
-      </tr>
-      <tr>
-        <td><strong>DeepSeek R1</strong></td>
-        <td>87/100</td>
-        <td>89/100</td>
-        <td>91/100</td>
-        <td>84/100</td>
-        <td>87.8/100</td>
-      </tr>
-    </tbody>
-  </table>
+          <div id="performance-benchmarks" className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-6">📊 Performance Benchmarks & Comprehensive Testing</h2>
+            
+            <h3 className="text-2xl font-bold text-white mb-6">🏆 Benchmark Comparison Matrix</h3>
 
-  <h3>Advanced Reasoning Capabilities</h3>
+            <div className="bg-zinc-900/50 rounded-xl overflow-hidden border border-gray-800 mb-8">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-gray-800">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-white font-semibold">Model</th>
+                      <th className="px-6 py-4 text-left text-white font-semibold">Reasoning</th>
+                      <th className="px-6 py-4 text-left text-white font-semibold">Coding</th>
+                      <th className="px-6 py-4 text-left text-white font-semibold">Mathematics</th>
+                      <th className="px-6 py-4 text-left text-white font-semibold">Multimodal</th>
+                      <th className="px-6 py-4 text-left text-white font-semibold">Overall Score</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-700">
+                    <tr className="hover:bg-gray-800/50 transition-colors bg-green-500/5">
+                      <td className="px-6 py-4 text-green-400 font-bold">Gemini 2.5 Pro</td>
+                      <td className="px-6 py-4 text-green-400 font-bold">95/100</td>
+                      <td className="px-6 py-4 text-yellow-400 font-semibold">88/100</td>
+                      <td className="px-6 py-4 text-green-400 font-bold">94/100</td>
+                      <td className="px-6 py-4 text-green-400 font-bold">92/100</td>
+                      <td className="px-6 py-4 text-green-400 font-bold text-lg">92.3/100</td>
+                    </tr>
+                    <tr className="hover:bg-gray-800/50 transition-colors">
+                      <td className="px-6 py-4 text-blue-400 font-semibold">Claude 3.7 Sonnet</td>
+                      <td className="px-6 py-4 text-blue-400">91/100</td>
+                      <td className="px-6 py-4 text-green-400 font-bold">95/100</td>
+                      <td className="px-6 py-4 text-blue-400">89/100</td>
+                      <td className="px-6 py-4 text-blue-400">87/100</td>
+                      <td className="px-6 py-4 text-blue-400 font-semibold">90.5/100</td>
+                    </tr>
+                    <tr className="hover:bg-gray-800/50 transition-colors">
+                      <td className="px-6 py-4 text-purple-400 font-semibold">GPT-4.5</td>
+                      <td className="px-6 py-4 text-purple-400">89/100</td>
+                      <td className="px-6 py-4 text-blue-400">91/100</td>
+                      <td className="px-6 py-4 text-purple-400">87/100</td>
+                      <td className="px-6 py-4 text-blue-400">90/100</td>
+                      <td className="px-6 py-4 text-purple-400 font-semibold">89.3/100</td>
+                    </tr>
+                    <tr className="hover:bg-gray-800/50 transition-colors">
+                      <td className="px-6 py-4 text-orange-400 font-semibold">DeepSeek R1</td>
+                      <td className="px-6 py-4 text-orange-400">87/100</td>
+                      <td className="px-6 py-4 text-orange-400">89/100</td>
+                      <td className="px-6 py-4 text-green-400">91/100</td>
+                      <td className="px-6 py-4 text-orange-400">84/100</td>
+                      <td className="px-6 py-4 text-orange-400 font-semibold">87.8/100</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-  <p>Unlike traditional models that rely solely on prediction and classification, Gemini 2.5 Pro is built to <strong>reason before responding</strong>. This unique feature allows it to provide more accurate answers in various benchmarks, including <strong>vision, logic, and science-based reasoning</strong>.</p>
+            <h3 className="text-2xl font-bold text-white mb-6">🧠 Advanced Reasoning Capabilities</h3>
 
-  <h2 id="real-world-applications">Real-World Application Testing Results</h2>
+            <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-xl p-6 border border-purple-500/20">
+              <h4 className="text-lg font-bold text-white mb-3">🤔 Think-Before-Responding Architecture</h4>
+              <p className="text-gray-300">
+                Unlike traditional models that rely solely on prediction and classification, Gemini 2.5 Pro is built to <span className="text-purple-400 font-semibold">reason before responding</span>. This unique feature allows it to provide more accurate answers in various benchmarks, including <span className="text-blue-400 font-semibold">vision, logic, and science-based reasoning</span>.
+              </p>
+            </div>
+          </div>
 
-  <p>To truly gauge its capabilities, we conducted comprehensive testing across eight different challenge categories:</p>
+          <div id="real-world-applications" className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-6">🧪 Real-World Application Testing Results</h2>
+            
+            <div className="bg-gradient-to-r from-blue-500/10 to-green-500/10 rounded-xl p-6 border border-blue-500/20 mb-8">
+              <p className="text-gray-300 text-lg">
+                To truly gauge its capabilities, we conducted comprehensive testing across <span className="text-green-400 font-semibold">eight different challenge categories</span> spanning coding, mathematics, logic, and creative tasks.
+              </p>
+            </div>
 
-  <h3>1. Web Application Development</h3>
+            <div className="space-y-8">
+              <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl p-6 border border-green-500/20">
+                <div className="flex items-start gap-4">
+                  <span className="text-green-400 text-2xl font-bold">1.</span>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-white mb-3">💻 Web Application Development</h3>
+                    <div className="mb-4">
+                      <p className="text-gray-300"><strong>Challenge:</strong> Build a responsive income and expense tracker</p>
+                      <p className="text-green-400 font-semibold"><strong>Result:</strong> ✅ Outstanding Performance</p>
+                    </div>
+                    
+                    <div className="bg-zinc-900/50 rounded-lg p-4 border-l-4 border-green-400 mb-4">
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        The model successfully built a fully functional application using HTML, CSS, and JavaScript. Compared to previous models like DeepSeek V3, Gemini 2.5 Pro produced a more polished application with advanced features including categorization, chart visualization, and real-time updates.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-gray-800 rounded-lg p-4 font-mono text-sm">
+                      <div className="text-green-400">// Generated Application Features:</div>
+                      <div className="text-white">const features = {</div>
+                      <div className="text-gray-300 ml-4">userInterface: <span className="text-yellow-400">"Responsive design with modern CSS"</span>,</div>
+                      <div className="text-gray-300 ml-4">functionality: [</div>
+                      <div className="text-gray-300 ml-8"><span className="text-yellow-400">"Income/expense categorization"</span>,</div>
+                      <div className="text-gray-300 ml-8"><span className="text-yellow-400">"Real-time balance calculation"</span>,</div>
+                      <div className="text-gray-300 ml-8"><span className="text-yellow-400">"Chart visualization with Chart.js"</span>,</div>
+                      <div className="text-gray-300 ml-8"><span className="text-yellow-400">"Local storage persistence"</span>,</div>
+                      <div className="text-gray-300 ml-8"><span className="text-yellow-400">"Export functionality"</span></div>
+                      <div className="text-gray-300 ml-4">],</div>
+                      <div className="text-gray-300 ml-4">codeQuality: <span className="text-yellow-400">"Clean, well-commented, production-ready"</span></div>
+                      <div className="text-white">}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-  <p><strong>Challenge:</strong> Build a responsive income and expense tracker<br>
-  <strong>Result:</strong> ✅ <strong>Outstanding Performance</strong></p>
+              <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl p-6 border border-blue-500/20">
+                <div className="flex items-start gap-4">
+                  <span className="text-blue-400 text-2xl font-bold">2.</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-3">🎮 Conway's Game of Life Simulation</h3>
+                    <div className="mb-4">
+                      <p className="text-gray-300"><strong>Challenge:</strong> Create a cellular automaton simulation in Python</p>
+                      <p className="text-blue-400 font-semibold"><strong>Result:</strong> ✅ Exceptional Logic Implementation</p>
+                    </div>
+                    <p className="text-gray-300">
+                      The model generated a working simulation with advanced features including speed control and glider patterns, showcasing its <span className="text-blue-400 font-semibold">advanced logical thinking and problem-solving skills</span> in handling cellular automaton logic and grid manipulation.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-  <blockquote>
-    <p>The model successfully built a fully functional application using HTML, CSS, and JavaScript. Compared to previous models like DeepSeek V3, Gemini 2.5 Pro produced a more polished application with advanced features including categorization, chart visualization, and real-time updates.</p>
-  </blockquote>
+              <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-6 border border-purple-500/20">
+                <div className="flex items-start gap-4">
+                  <span className="text-purple-400 text-2xl font-bold">3.</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-3">🎨 Vector Graphics and SVG Creation</h3>
+                    <div className="mb-4">
+                      <p className="text-gray-300"><strong>Challenge:</strong> Generate detailed SVG butterfly illustration</p>
+                      <p className="text-purple-400 font-semibold"><strong>Result:</strong> ✅ Superior Visual Design</p>
+                    </div>
+                    <p className="text-gray-300">
+                      Gemini 2.5 Pro delivered a highly detailed and well-styled butterfly image with intricate symmetrical wings, demonstrating its <span className="text-purple-400 font-semibold">ability to handle vector graphics and structured styling</span> with precision.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-  <pre><code>// Generated Application Features:
-const features = {
-  userInterface: "Responsive design with modern CSS",
-  functionality: [
-    "Income/expense categorization",
-    "Real-time balance calculation", 
-    "Chart visualization with Chart.js",
-    "Local storage persistence",
-    "Export functionality"
-  ],
-  codeQuality: "Clean, well-commented, production-ready"
-}</code></pre>
+              <div className="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-xl p-6 border border-yellow-500/20">
+                <div className="flex items-start gap-4">
+                  <span className="text-yellow-400 text-2xl font-bold">4.</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-3">📐 Advanced Geometric Problem Solving</h3>
+                    <div className="mb-4">
+                      <p className="text-gray-300"><strong>Challenge:</strong> Triangle division mathematical analysis</p>
+                      <p className="text-yellow-400 font-semibold"><strong>Result:</strong> ✅ Perfect Mathematical Reasoning</p>
+                    </div>
+                    <p className="text-gray-300">
+                      Successfully calculated required measurements while providing both exact and approximate solutions. The model applied <span className="text-yellow-400 font-semibold">advanced geometric reasoning</span> requiring <span className="text-orange-400 font-semibold">conceptual understanding rather than brute-force calculation</span>.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-  <h3>2. Conway's Game of Life Simulation</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-gradient-to-r from-red-500/10 to-pink-500/10 rounded-xl p-6 border border-red-500/20">
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl font-bold">5.</span>
+                    <div>
+                      <h4 className="text-lg font-bold text-white mb-2">⚡ Physics & Motion</h4>
+                      <p className="text-red-400 font-semibold text-sm mb-2">✅ Accurate Physics Application</p>
+                      <p className="text-gray-300 text-sm">
+                        Train motion problem: correctly determined meeting time (11:59 AM) and exact distance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-  <p><strong>Challenge:</strong> Create a cellular automaton simulation in Python<br>
-  <strong>Result:</strong> ✅ <strong>Exceptional Logic Implementation</strong></p>
+                <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-xl p-6 border border-indigo-500/20">
+                  <div className="flex items-start gap-3">
+                    <span className="text-indigo-400 text-xl font-bold">6.</span>
+                    <div>
+                      <h4 className="text-lg font-bold text-white mb-2">🐛 Code Debugging</h4>
+                      <p className="text-indigo-400 font-semibold text-sm mb-2">✅ Complete Error Resolution</p>
+                      <p className="text-gray-300 text-sm">
+                        Identified all three issues and provided corrected versions with clear explanations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-  <p>The model generated a working simulation with advanced features including speed control and glider patterns, showcasing its <strong>advanced logical thinking and problem-solving skills</strong> in handling cellular automaton logic and grid manipulation.</p>
+              <div className="bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-xl p-6 border border-emerald-500/20">
+                <div className="flex items-start gap-4">
+                  <span className="text-emerald-400 text-2xl font-bold">7.</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-3">🧮 Advanced Number Theory</h3>
+                    <div className="mb-4">
+                      <p className="text-gray-300"><strong>Challenge:</strong> Solve complex Diophantine equation</p>
+                      <p className="text-emerald-400 font-semibold"><strong>Result:</strong> ✅ Superior Mathematical Analysis</p>
+                    </div>
+                    
+                    <div className="bg-zinc-900/50 rounded-lg p-4 border-l-4 border-emerald-400">
+                      <p className="text-gray-300 text-sm">
+                        <strong className="text-emerald-400">Breakthrough Performance:</strong> Most AI models fail at this problem, but Gemini 2.5 Pro correctly identified that no solution was possible, highlighting its <span className="text-emerald-400 font-semibold">deep mathematical reasoning skills</span> and ability to handle problems requiring <span className="text-green-400 font-semibold">systematic searching and logical constraints</span>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-  <h3>3. Vector Graphics and SVG Creation</h3>
-
-  <p><strong>Challenge:</strong> Generate detailed SVG butterfly illustration<br>
-  <strong>Result:</strong> ✅ <strong>Superior Visual Design</strong></p>
-
-  <p>Gemini 2.5 Pro delivered a highly detailed and well-styled butterfly image with intricate symmetrical wings, demonstrating its <strong>ability to handle vector graphics and structured styling</strong> with precision.</p>
-
-  <h3>4. Advanced Geometric Problem Solving</h3>
-
-  <p><strong>Challenge:</strong> Triangle division mathematical analysis<br>
-  <strong>Result:</strong> ✅ <strong>Perfect Mathematical Reasoning</strong></p>
-
-  <p>Successfully calculated required measurements while providing both exact and approximate solutions. The model applied <strong>advanced geometric reasoning</strong> requiring <strong>conceptual understanding rather than brute-force calculation</strong>.</p>
-
-  <h3>5. Physics and Motion Calculations</h3>
-
-  <p><strong>Challenge:</strong> Train motion problem with multiple variables<br>
-  <strong>Result:</strong> ✅ <strong>Accurate Physics Application</strong></p>
-
-  <p>Correctly determined meeting time (11:59 AM) and exact distance based on given speeds and stops, showcasing strength in <strong>algebra, rate-based calculations, and real-world physics applications</strong>.</p>
-
-  <h3>6. Code Debugging and Error Detection</h3>
-
-  <p><strong>Challenge:</strong> Identify and fix logical errors in Python code<br>
-  <strong>Result:</strong> ✅ <strong>Complete Error Resolution</strong></p>
-
-  <p>Identified all three existing issues, provided clear explanations, and generated corrected versions. Demonstrated ability to catch <strong>syntax errors, missing logic, and incorrect variable initialization</strong>.</p>
-
-  <h3>7. Advanced Number Theory</h3>
-
-  <p><strong>Challenge:</strong> Solve complex Diophantine equation<br>
-  <strong>Result:</strong> ✅ <strong>Superior Mathematical Analysis</strong></p>
-
-  <blockquote>
-    <p><strong>Breakthrough Performance:</strong> Most AI models fail at this problem, but Gemini 2.5 Pro correctly identified that no solution was possible, highlighting its <strong>deep mathematical reasoning skills</strong> and ability to handle problems requiring <strong>systematic searching and logical constraints</strong>.</p>
-  </blockquote>
-
-  <h3>8. Logical Deduction Puzzles</h3>
-
-  <p><strong>Challenge:</strong> Classic truth-teller and liar puzzle<br>
-  <strong>Result:</strong> ✅ <strong>Flawless Logical Analysis</strong></p>
-
-  <p>Accurately determined which individuals were truth-tellers and liars by breaking down logical structure step-by-step, proving itself <strong>exceptional for intricate reasoning-based challenges</strong>.</p>
+              <div className="bg-gradient-to-r from-pink-500/10 to-rose-500/10 rounded-xl p-6 border border-pink-500/20">
+                <div className="flex items-start gap-4">
+                  <span className="text-pink-400 text-2xl font-bold">8.</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-3">🧩 Logical Deduction Puzzles</h3>
+                    <div className="mb-4">
+                      <p className="text-gray-300"><strong>Challenge:</strong> Classic truth-teller and liar puzzle</p>
+                      <p className="text-pink-400 font-semibold"><strong>Result:</strong> ✅ Flawless Logical Analysis</p>
+                    </div>
+                    <p className="text-gray-300">
+                      Accurately determined which individuals were truth-tellers and liars by breaking down logical structure step-by-step, proving itself <span className="text-pink-400 font-semibold">exceptional for intricate reasoning-based challenges</span>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
   <h2 id="competitor-analysis">Comprehensive Competitive Analysis</h2>
 
