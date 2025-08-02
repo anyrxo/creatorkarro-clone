@@ -9,6 +9,11 @@ import { createRevealAnimation, createMagneticHover, revealAnimationStyles } fro
 import TestimonialCarousel from '@/components/TestimonialCarousel'
 import Link from 'next/link'
 import Image from 'next/image'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import NumberTicker from '@/components/magicui/number-ticker'
+import Marquee from '@/components/magicui/marquee'
+import ShimmerButton from '@/components/magicui/shimmer-button'
+import { ChevronRight } from 'lucide-react'
 
 export default function HomePage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -149,6 +154,15 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="max-w-6xl mx-auto"
           >
+            <div className="flex justify-center mb-8">
+              <AnimatedGradientText>
+                🚀 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+                <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
+                  Introducing our proven system
+                </span>
+                <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+              </AnimatedGradientText>
+            </div>
             <div className="grid md:grid-cols-3 gap-8">
               {features.map((feature, index) => (
                 <motion.div
@@ -246,6 +260,15 @@ export default function HomePage() {
                           transition={{ duration: 0.8, delay: 0.5 }}
                         />
                         <p className="text-sm text-zinc-500 mt-4">{course.stats}</p>
+                        {index === 0 && (
+                          <div className="mt-4 flex justify-center">
+                            <AnimatedGradientText className="text-xs">
+                              <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
+                                Most Popular
+                              </span>
+                            </AnimatedGradientText>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </Interactive3DCard>
@@ -266,10 +289,10 @@ export default function HomePage() {
             className="grid md:grid-cols-4 gap-8 text-center"
           >
             {[
-              { value: '12K+', label: 'Active Students' },
-              { value: '500K', label: 'Followers Built' },
-              { value: '$2M+', label: 'Student Revenue' },
-              { value: '4.9★', label: 'Average Rating' }
+              { value: 12000, suffix: '+', label: 'Active Students' },
+              { value: 500000, suffix: '', label: 'Followers Built' },
+              { value: 2000000, prefix: '$', suffix: '+', label: 'Student Revenue' },
+              { value: 4.9, suffix: '★', label: 'Average Rating', decimals: 1 }
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -283,7 +306,13 @@ export default function HomePage() {
                   className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent"
                   whileHover={{ scale: 1.1 }}
                 >
-                  {stat.value}
+                  {stat.prefix}
+                  <NumberTicker 
+                    value={stat.value} 
+                    delay={0.5 + index * 0.2}
+                    decimalPlaces={stat.decimals || 0}
+                  />
+                  {stat.suffix}
                 </motion.div>
                 <p className="text-zinc-500 mt-2">{stat.label}</p>
               </motion.div>
@@ -313,6 +342,29 @@ export default function HomePage() {
             interval={5000}
           />
         </div>
+      </section>
+
+      {/* Scrolling Testimonials Marquee */}
+      <section className="relative py-12 bg-black overflow-hidden">
+        <Marquee className="[--duration:40s]" pauseOnHover>
+          {[
+            "Just hit 100K followers using these strategies! 🚀",
+            "Made my first $10K month with digital products 💰",
+            "The automation course saved me 40 hours per week!",
+            "From 0 to 50K in 3 months - this system works!",
+            "Best investment I've made in my creator journey",
+            "The community support is incredible!",
+            "Already seeing massive growth in week 1",
+            "These strategies actually work - 250K followers now!"
+          ].map((review, index) => (
+            <div
+              key={index}
+              className="mx-4 flex items-center gap-2 rounded-lg bg-zinc-900/50 px-6 py-3 backdrop-blur-sm border border-zinc-800"
+            >
+              <span className="text-zinc-400">{review}</span>
+            </div>
+          ))}
+        </Marquee>
       </section>
 
       {/* What You'll Learn Section */}
@@ -588,11 +640,18 @@ export default function HomePage() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link
-                href="/instagram-ignited"
-                className="magnetic-button inline-block px-12 py-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-xl rounded-full hover:shadow-[0_0_40px_rgba(168,85,247,0.5)] transition-all duration-300"
-              >
-                Start Your Journey
+              <Link href="/instagram-ignited">
+                <ShimmerButton
+                  className="shadow-2xl"
+                  shimmerColor="#ffffff"
+                  shimmerSize="0.1em"
+                  background="linear-gradient(135deg, #2563eb, #9333ea)"
+                  borderRadius="9999px"
+                >
+                  <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
+                    Start Your Journey
+                  </span>
+                </ShimmerButton>
               </Link>
             </motion.div>
           </motion.div>

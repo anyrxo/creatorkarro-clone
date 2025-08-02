@@ -55,15 +55,15 @@ const newsArticles = [
     keywords: ["anthropic", "claude 4", "agentic ai", "coding infrastructure", "ai development"]
   },
   {
-    title: "DeepSeek R1: The New Era of Open-Source AI",
+    title: "Alibaba's QwQ-32B vs DeepSeek R1: Complete AI Model Comparison",
     category: "TECH NEWS", 
     categoryColor: "green",
-    excerpt: "DeepSeek unveils revolutionary AI advancements with the R1 open-source model, marking a new era in accessible AI technology.",
-    description: "Comprehensive overview of DeepSeek's R1 model and its impact on the open-source AI landscape.",
-    readTime: "9 min",
+    excerpt: "Alibaba's QwQ-32B-Preview challenges DeepSeek R1 in reasoning tasks with 32.8B parameters and Apache 2.0 licensing. Complete performance analysis and benchmark comparison.",
+    description: "Comprehensive comparison of Alibaba's QwQ-32B and DeepSeek R1 models covering performance, licensing, and real-world applications.",
+    readTime: "15 min",
     date: "2025-01-20",
-    slug: "deepseek-r1-open-source-ai",
-    keywords: ["deepseek", "r1 model", "open source ai", "ai research", "machine learning"]
+    slug: "alibaba-qwq-32b-vs-deepseek-r1",
+    keywords: ["alibaba qwq-32b", "deepseek r1", "ai model comparison", "reasoning models", "open source ai"]
   },
   {
     title: "Google Gemini 2.5 Pro Review: Free AI Model That Beats GPT-4.5 (2025 Complete Guide)",
