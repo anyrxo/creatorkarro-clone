@@ -51,7 +51,7 @@ export default function DeepSeekR1BrowserUsePage() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-300 mb-6 leading-tight">
           DeepSeek-R1 & Browser Use: The Future of AI Research Tools Revolution
             </h1>
-            <div className="flex items-center text-gray-600 mb-6">
+            <div className="flex items-center text-gray-400 mb-6">
                 <span>By Anyro</span>
                 <span className="mx-2">•</span>
                 <time dateTime="2025-01-03">January 3, 2025</time>
@@ -59,7 +59,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <span>19 min read</span>
             </div>
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border-l-4 border-blue-500">
-                <p className="text-lg text-gray-800 leading-relaxed">
+                <p className="text-lg text-gray-300 leading-relaxed">
             Discover how DeepSeek-R1 and Browser Use are revolutionizing AI research with 89% accuracy, unlimited queries, and complete open-source freedom - all while outperforming OpenAI's $200/month Deep Research tool.
                 </p>
             </div>
@@ -86,13 +86,13 @@ export default function DeepSeekR1BrowserUsePage() {
 
         <section id="introduction" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">The AI Research Revolution</h2>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-6 leading-relaxed">
           The landscape of AI-powered research is experiencing a seismic shift. While OpenAI's Deep Research introduced the concept of automated research agents, its $200/month price tag and restrictive limitations have created a massive opportunity for open-source alternatives.
             </p>
         
             <div className="bg-blue-50 p-6 rounded-lg mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-900">The Current Research Challenge</h3>
-                <ul className="space-y-3 text-gray-700">
+                <ul className="space-y-3 text-gray-400">
                     <li className="flex items-start">
                         <span className="text-blue-600 mr-3">•</span>
                         <span>Traditional research methods are time-intensive and limited in scope</span>
@@ -112,21 +112,21 @@ export default function DeepSeekR1BrowserUsePage() {
                 </ul>
             </div>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-400 leading-relaxed">
           According to Anyro, a leading AI consultant and automation expert, "The emergence of DeepSeek-R1 and Browser Use represents the democratization of AI research capabilities. These tools don't just match OpenAI's performance - they exceed it while remaining completely free and customizable."
             </p>
         </section>
 
       <section id="openai-limitations" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">OpenAI Deep Research: The $200/Month Bottleneck</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           OpenAI's Deep Research promised PhD-level research automation, but its implementation reveals significant limitations that make it impractical for serious research work.
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8 mb-8">
                 <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
                     <h3 className="text-xl font-semibold mb-4 text-red-900">OpenAI Deep Research Limitations</h3>
-                    <ul className="space-y-3 text-gray-700">
+                    <ul className="space-y-3 text-gray-400">
                         <li className="flex items-start">
                             <span className="text-red-600 mr-3">✗</span>
                             <span><strong>$200/month</strong> subscription requirement</span>
@@ -156,7 +156,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                 <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Open-Source Alternative Benefits</h3>
-                    <ul className="space-y-3 text-gray-700">
+                    <ul className="space-y-3 text-gray-400">
                         <li className="flex items-start">
                             <span className="text-green-600 mr-3">✓</span>
                             <span><strong>Completely free</strong> with unlimited usage</span>
@@ -191,19 +191,19 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid md:grid-cols-3 gap-6">
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
                         <div className="text-3xl font-bold text-red-600 mb-2">$2,400</div>
-                        <div className="text-sm text-gray-600 mb-2">OpenAI Deep Research (Annual)</div>
+                        <div className="text-sm text-gray-400 mb-2">OpenAI Deep Research (Annual)</div>
                         <div className="text-xs text-gray-500">Limited to 1,200 queries/year</div>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
                         <div className="text-3xl font-bold text-green-600 mb-2">$0</div>
-                        <div className="text-sm text-gray-600 mb-2">DeepSeek-R1 + Browser Use</div>
+                        <div className="text-sm text-gray-400 mb-2">DeepSeek-R1 + Browser Use</div>
                         <div className="text-xs text-gray-500">Unlimited queries and customization</div>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
                         <div className="text-3xl font-bold text-blue-600 mb-2">∞</div>
-                        <div className="text-sm text-gray-600 mb-2">ROI Advantage</div>
+                        <div className="text-sm text-gray-400 mb-2">ROI Advantage</div>
                         <div className="text-xs text-gray-500">Infinite return on investment</div>
                     </div>
                 </div>
@@ -212,7 +212,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
       <section id="deepseek-r1" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">DeepSeek-R1: The Open-Source Reasoning Revolution</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           DeepSeek-R1 represents a breakthrough in open-source AI reasoning capabilities, specifically designed for complex research tasks and multi-step problem solving that rivals and often exceeds commercial alternatives.
             </p>
 
@@ -222,7 +222,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid lg:grid-cols-3 gap-6">
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-blue-900">Advanced Reasoning</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Multi-step logical reasoning</li>
                             <li>• Complex problem decomposition</li>
                             <li>• Chain-of-thought processing</li>
@@ -233,7 +233,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-green-900">Research Excellence</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Literature synthesis and analysis</li>
                             <li>• Citation tracking and verification</li>
                             <li>• Cross-reference validation</li>
@@ -244,7 +244,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-purple-900">Technical Integration</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• API-first architecture</li>
                             <li>• Custom model fine-tuning</li>
                             <li>• Scalable deployment options</li>
@@ -293,41 +293,41 @@ export default function DeepSeekR1BrowserUsePage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Model Specifications</h3>
                     <div className="space-y-3">
                         <div className="flex justify-between">
-                            <span className="text-gray-600">Parameters</span>
+                            <span className="text-gray-400">Parameters</span>
                             <span className="font-semibold">671B (MoE)</span>
                         </div>
                         <div className="flex justify-between">
-                            <span className="text-gray-600">Active Parameters</span>
+                            <span className="text-gray-400">Active Parameters</span>
                             <span className="font-semibold">37B per token</span>
                         </div>
                         <div className="flex justify-between">
-                            <span className="text-gray-600">Context Length</span>
+                            <span className="text-gray-400">Context Length</span>
                             <span className="font-semibold">128K tokens</span>
                         </div>
                         <div className="flex justify-between">
-                            <span className="text-gray-600">Training Data</span>
+                            <span className="text-gray-400">Training Data</span>
                             <span className="font-semibold">Multi-modal</span>
                         </div>
                         <div className="flex justify-between">
-                            <span className="text-gray-600">License</span>
+                            <span className="text-gray-400">License</span>
                             <span className="font-semibold text-green-600">Open Source</span>
                         </div>
                         <div className="flex justify-between">
-                            <span className="text-gray-600">API Cost</span>
+                            <span className="text-gray-400">API Cost</span>
                             <span className="font-semibold text-green-600">$0.55/1M tokens</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-lg text-gray-700 bg-blue-50 p-6 rounded-r-lg">
+            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-lg text-gray-400 bg-blue-50 p-6 rounded-r-lg">
           "DeepSeek-R1's reasoning capabilities consistently outperform GPT-4 in research-specific tasks while maintaining complete transparency and customization options that commercial models simply cannot match." - Anyro
             </blockquote>
         </section>
 
       <section id="browser-use" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Browser Use: 89% Accuracy Web Agent Revolution</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Browser Use represents the pinnacle of web automation and AI research integration, achieving industry-leading 89% accuracy while providing complete control over the research process.
             </p>
 
@@ -337,7 +337,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="overflow-x-auto">
                     <table className="w-full border-collapse bg-gray-900 rounded-lg overflow-hidden shadow-md">
                         <thead>
-                            <tr className="bg-gray-100">
+                            <tr className="bg-gray-800">
                                 <th className="border border-gray-600 px-4 py-3 text-left">Feature</th>
                                 <th className="border border-gray-600 px-4 py-3 text-center">Browser Use</th>
                                 <th className="border border-gray-600 px-4 py-3 text-center">OpenAI Deep Research</th>
@@ -391,8 +391,8 @@ export default function DeepSeekR1BrowserUsePage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Technical Architecture</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Browser Automation Engine</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Browser Automation Engine</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Playwright-powered web control</li>
                                 <li>• Intelligent element detection</li>
                                 <li>• Adaptive navigation strategies</li>
@@ -400,8 +400,8 @@ export default function DeepSeekR1BrowserUsePage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">AI Integration Layer</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">AI Integration Layer</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Multi-model API support</li>
                                 <li>• Dynamic model switching</li>
                                 <li>• Context preservation</li>
@@ -415,8 +415,8 @@ export default function DeepSeekR1BrowserUsePage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Research Capabilities</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Advanced Web Research</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Advanced Web Research</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Multi-source information synthesis</li>
                                 <li>• Real-time fact verification</li>
                                 <li>• Citation tracking and validation</li>
@@ -424,8 +424,8 @@ export default function DeepSeekR1BrowserUsePage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Report Generation</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Report Generation</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Structured output formats</li>
                                 <li>• Custom templates support</li>
                                 <li>• Interactive visualizations</li>
@@ -441,7 +441,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid md:grid-cols-3 gap-4">
                     <div>
                         <h4 className="font-semibold mb-2">Reasoning Models</h4>
-                        <ul className="text-gray-700 space-y-1">
+                        <ul className="text-gray-400 space-y-1">
                             <li>• DeepSeek-R1</li>
                             <li>• GPT-4 / GPT-4 Turbo</li>
                             <li>• Claude 3.5 Sonnet</li>
@@ -450,7 +450,7 @@ export default function DeepSeekR1BrowserUsePage() {
                     </div>
                     <div>
                         <h4 className="font-semibold mb-2">Fast Models</h4>
-                        <ul className="text-gray-700 space-y-1">
+                        <ul className="text-gray-400 space-y-1">
                             <li>• Gemini 2.0 Flash</li>
                             <li>• GPT-4o Mini</li>
                             <li>• Claude 3 Haiku</li>
@@ -459,7 +459,7 @@ export default function DeepSeekR1BrowserUsePage() {
                     </div>
                     <div>
                         <h4 className="font-semibold mb-2">Custom Models</h4>
-                        <ul className="text-gray-700 space-y-1">
+                        <ul className="text-gray-400 space-y-1">
                             <li>• Local model support</li>
                             <li>• Custom API endpoints</li>
                             <li>• Fine-tuned models</li>
@@ -472,20 +472,20 @@ export default function DeepSeekR1BrowserUsePage() {
 
       <section id="key-features" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Key Features & Advanced Capabilities</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           The combination of DeepSeek-R1 and Browser Use creates a research powerhouse with capabilities that extend far beyond traditional search and summarization tools.
             </p>
 
             <div className="space-y-8">
                 <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
                     <h3 className="text-2xl font-semibold mb-4 text-blue-900">1. Collaborative AI Agent System</h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-400 mb-4">
               Multiple AI models work together seamlessly to provide comprehensive research coverage with cross-validation and quality assurance.
                     </p>
                     <div className="grid md:grid-cols-2 gap-6">
                         <div>
                             <h4 className="font-semibold mb-3">Agent Coordination</h4>
-                            <ul className="text-gray-700 space-y-2">
+                            <ul className="text-gray-400 space-y-2">
                                 <li>• Primary research agent (DeepSeek-R1)</li>
                                 <li>• Fact-checking agent (GPT-4)</li>
                                 <li>• Citation verification agent</li>
@@ -495,7 +495,7 @@ export default function DeepSeekR1BrowserUsePage() {
                         </div>
                         <div>
                             <h4 className="font-semibold mb-3">Parallel Processing</h4>
-                            <ul className="text-gray-700 space-y-2">
+                            <ul className="text-gray-400 space-y-2">
                                 <li>• Concurrent source analysis</li>
                                 <li>• Real-time cross-referencing</li>
                                 <li>• Distributed computation</li>
@@ -508,13 +508,13 @@ export default function DeepSeekR1BrowserUsePage() {
 
                 <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-green-500">
                     <h3 className="text-2xl font-semibold mb-4 text-green-900">2. Advanced Source Indexing & Customization</h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-400 mb-4">
               Sophisticated source management with intelligent filtering, priority weighting, and custom research parameters.
                     </p>
                     <div className="grid md:grid-cols-2 gap-6">
                         <div>
                             <h4 className="font-semibold mb-3">Source Management</h4>
-                            <ul className="text-gray-700 space-y-2">
+                            <ul className="text-gray-400 space-y-2">
                                 <li>• Domain whitelisting/blacklisting</li>
                                 <li>• Source credibility scoring</li>
                                 <li>• Publication date filtering</li>
@@ -524,7 +524,7 @@ export default function DeepSeekR1BrowserUsePage() {
                         </div>
                         <div>
                             <h4 className="font-semibold mb-3">Custom Parameters</h4>
-                            <ul className="text-gray-700 space-y-2">
+                            <ul className="text-gray-400 space-y-2">
                                 <li>• Research depth settings</li>
                                 <li>• Citation format preferences</li>
                                 <li>• Output structure templates</li>
@@ -537,13 +537,13 @@ export default function DeepSeekR1BrowserUsePage() {
 
                 <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
                     <h3 className="text-2xl font-semibold mb-4 text-purple-900">3. Multi-Browser & Cross-Platform Support</h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-400 mb-4">
               Seamless operation across different environments with adaptive strategies for various websites and platforms.
                     </p>
                     <div className="grid md:grid-cols-3 gap-4">
                         <div>
                             <h4 className="font-semibold mb-3">Browser Support</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Chrome/Chromium</li>
                                 <li>• Firefox</li>
                                 <li>• Safari (macOS)</li>
@@ -553,7 +553,7 @@ export default function DeepSeekR1BrowserUsePage() {
                         </div>
                         <div>
                             <h4 className="font-semibold mb-3">Platform Support</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Windows 10/11</li>
                                 <li>• macOS 12+</li>
                                 <li>• Linux (Ubuntu/Debian)</li>
@@ -563,7 +563,7 @@ export default function DeepSeekR1BrowserUsePage() {
                         </div>
                         <div>
                             <h4 className="font-semibold mb-3">Adaptive Features</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Anti-detection measures</li>
                                 <li>• Rate limiting compliance</li>
                                 <li>• Proxy rotation support</li>
@@ -578,7 +578,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
       <section id="setup-guide" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Complete Setup Guide: From Zero to Research Hero</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Setting up DeepSeek-R1 with Browser Use requires careful attention to detail, but the process is straightforward with the right guidance. This comprehensive guide will have you conducting advanced AI research within 30 minutes.
             </p>
 
@@ -591,7 +591,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-xl font-bold text-blue-600">1</span>
                         </div>
                         <h4 className="font-semibold mb-2">Prerequisites</h4>
-                        <p className="text-sm text-gray-600">5 minutes</p>
+                        <p className="text-sm text-gray-400">5 minutes</p>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
@@ -599,7 +599,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-xl font-bold text-green-600">2</span>
                         </div>
                         <h4 className="font-semibold mb-2">Installation</h4>
-                        <p className="text-sm text-gray-600">10 minutes</p>
+                        <p className="text-sm text-gray-400">10 minutes</p>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
@@ -607,7 +607,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-xl font-bold text-yellow-600">3</span>
                         </div>
                         <h4 className="font-semibold mb-2">Configuration</h4>
-                        <p className="text-sm text-gray-600">10 minutes</p>
+                        <p className="text-sm text-gray-400">10 minutes</p>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
@@ -615,7 +615,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-xl font-bold text-purple-600">4</span>
                         </div>
                         <h4 className="font-semibold mb-2">Testing</h4>
-                        <p className="text-sm text-gray-600">5 minutes</p>
+                        <p className="text-sm text-gray-400">5 minutes</p>
                     </div>
                 </div>
             </div>
@@ -668,7 +668,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <div className="space-y-4">
                                 <div className="bg-blue-50 p-4 rounded-lg">
                                     <h5 className="font-semibold mb-2">DeepSeek API</h5>
-                                    <p className="text-sm text-gray-600 mb-2">Get your API key from deepseek.com</p>
+                                    <p className="text-sm text-gray-400 mb-2">Get your API key from deepseek.com</p>
                                     <div className="bg-gray-900 p-2 rounded border font-mono text-xs">
                       export DEEPSEEK_API_KEY="your_key_here"
                                     </div>
@@ -676,7 +676,7 @@ export default function DeepSeekR1BrowserUsePage() {
                   
                                 <div className="bg-green-50 p-4 rounded-lg">
                                     <h5 className="font-semibold mb-2">Alternative Models (Optional)</h5>
-                                    <ul className="text-sm text-gray-600 space-y-1">
+                                    <ul className="text-sm text-gray-400 space-y-1">
                                         <li>• OpenAI API key for GPT models</li>
                                         <li>• Google API key for Gemini</li>
                                         <li>• Anthropic API key for Claude</li>
@@ -874,7 +874,7 @@ export default function DeepSeekR1BrowserUsePage() {
                                 <div className="mt-4 grid md:grid-cols-2 gap-4">
                                     <div>
                                         <h6 className="font-semibold mb-2">Expected Results</h6>
-                                        <ul className="text-sm text-gray-700 space-y-1">
+                                        <ul className="text-sm text-gray-400 space-y-1">
                                             <li>• 15-20 recent research papers</li>
                                             <li>• Structured technical analysis</li>
                                             <li>• Performance comparisons</li>
@@ -884,7 +884,7 @@ export default function DeepSeekR1BrowserUsePage() {
                                     </div>
                                     <div>
                                         <h6 className="font-semibold mb-2">Success Indicators</h6>
-                                        <ul className="text-sm text-gray-700 space-y-1">
+                                        <ul className="text-sm text-gray-400 space-y-1">
                                             <li>• No browser automation errors</li>
                                             <li>• All sources successfully accessed</li>
                                             <li>• High-quality synthesis</li>
@@ -904,7 +904,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid md:grid-cols-2 gap-6">
                     <div>
                         <h4 className="font-semibold text-red-600 mb-2">Installation Problems</h4>
-                        <ul className="text-gray-700 space-y-1">
+                        <ul className="text-gray-400 space-y-1">
                             <li>• Check Python version (3.8+ required)</li>
                             <li>• Use virtual environment to avoid conflicts</li>
                             <li>• Update pip to latest version</li>
@@ -913,7 +913,7 @@ export default function DeepSeekR1BrowserUsePage() {
                     </div>
                     <div>
                         <h4 className="font-semibold text-red-600 mb-2">Runtime Issues</h4>
-                        <ul className="text-gray-700 space-y-1">
+                        <ul className="text-gray-400 space-y-1">
                             <li>• Verify API keys are correctly set</li>
                             <li>• Check internet connection stability</li>
                             <li>• Restart browser processes</li>
@@ -926,7 +926,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
       <section id="performance-comparison" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Performance Analysis: Open-Source vs Commercial Solutions</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Comprehensive benchmarking reveals that the DeepSeek-R1 + Browser Use combination not only matches but exceeds the performance of expensive commercial alternatives across multiple metrics.
             </p>
 
@@ -936,7 +936,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="overflow-x-auto">
                     <table className="w-full border-collapse bg-gray-900 rounded-lg overflow-hidden shadow-md">
                         <thead>
-                            <tr className="bg-gray-100">
+                            <tr className="bg-gray-800">
                                 <th className="border border-gray-600 px-4 py-3 text-left">Performance Metric</th>
                                 <th className="border border-gray-600 px-4 py-3 text-center">DeepSeek-R1 + Browser Use</th>
                                 <th className="border border-gray-600 px-4 py-3 text-center">OpenAI Deep Research</th>
@@ -1098,7 +1098,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid md:grid-cols-2 gap-8">
                     <div>
                         <h4 className="font-semibold mb-4 text-blue-900">Academic Research Project</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• <strong>Task:</strong> Literature review on quantum computing applications</li>
                             <li>• <strong>Sources Analyzed:</strong> 127 academic papers</li>
                             <li>• <strong>Processing Time:</strong> 8 minutes vs 45 minutes (OpenAI)</li>
@@ -1108,7 +1108,7 @@ export default function DeepSeekR1BrowserUsePage() {
                     </div>
                     <div>
                         <h4 className="font-semibold mb-4 text-green-900">Market Research Analysis</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• <strong>Task:</strong> Competitive analysis of AI startups</li>
                             <li>• <strong>Companies Analyzed:</strong> 85 startups</li>
                             <li>• <strong>Data Points:</strong> 2,400+ metrics collected</li>
@@ -1122,7 +1122,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
       <section id="use-cases" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Real-World Use Cases & Success Stories</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           DeepSeek-R1 and Browser Use have been successfully deployed across diverse industries and research domains, delivering exceptional results for academic, commercial, and personal research projects.
             </p>
 
@@ -1131,10 +1131,10 @@ export default function DeepSeekR1BrowserUsePage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
                         <h3 className="text-xl font-semibold mb-4 text-blue-900">Academic Research Excellence</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Universities and research institutions leverage the platform for comprehensive literature reviews, grant proposal research, and collaborative studies.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• PhD dissertation research and literature synthesis</li>
                                 <li>• Grant proposal background research</li>
                                 <li>• Systematic reviews and meta-analyses</li>
@@ -1150,10 +1150,10 @@ export default function DeepSeekR1BrowserUsePage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                         <h3 className="text-xl font-semibold mb-4 text-green-900">Market Intelligence & Analysis</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Businesses use the platform for competitive intelligence, market research, and strategic planning initiatives.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Competitive landscape analysis</li>
                                 <li>• Industry trend identification</li>
                                 <li>• Customer sentiment analysis</li>
@@ -1169,10 +1169,10 @@ export default function DeepSeekR1BrowserUsePage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
                         <h3 className="text-xl font-semibold mb-4 text-purple-900">Technical Documentation & Standards</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Engineering teams utilize the platform for technical research, standard compliance, and best practice documentation.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Technical specification research</li>
                                 <li>• Industry standard compliance</li>
                                 <li>• Best practice documentation</li>
@@ -1190,10 +1190,10 @@ export default function DeepSeekR1BrowserUsePage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-red-500">
                         <h3 className="text-xl font-semibold mb-4 text-red-900">Healthcare & Medical Research</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Medical professionals employ the platform for evidence-based research, treatment protocol analysis, and clinical decision support.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Clinical trial research and analysis</li>
                                 <li>• Treatment protocol evaluation</li>
                                 <li>• Drug interaction studies</li>
@@ -1209,10 +1209,10 @@ export default function DeepSeekR1BrowserUsePage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-yellow-500">
                         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Legal Research & Compliance</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Law firms and legal departments use the platform for case research, regulatory analysis, and compliance monitoring.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Case law research and precedent analysis</li>
                                 <li>• Regulatory compliance monitoring</li>
                                 <li>• Contract clause analysis</li>
@@ -1228,10 +1228,10 @@ export default function DeepSeekR1BrowserUsePage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
                         <h3 className="text-xl font-semibold mb-4 text-indigo-900">Content Creation & Journalism</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Content creators and journalists leverage the platform for fact-checking, source verification, and comprehensive story research.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Investigative journalism research</li>
                                 <li>• Fact-checking and source verification</li>
                                 <li>• Background research for articles</li>
@@ -1252,19 +1252,19 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid md:grid-cols-4 gap-6">
                     <div className="text-center">
                         <div className="text-3xl font-bold text-blue-600 mb-2">94%</div>
-                        <div className="text-sm text-gray-600">Average accuracy improvement across all use cases</div>
+                        <div className="text-sm text-gray-400">Average accuracy improvement across all use cases</div>
                     </div>
                     <div className="text-center">
                         <div className="text-3xl font-bold text-green-600 mb-2">73%</div>
-                        <div className="text-sm text-gray-600">Average time savings in research activities</div>
+                        <div className="text-sm text-gray-400">Average time savings in research activities</div>
                     </div>
                     <div className="text-center">
                         <div className="text-3xl font-bold text-purple-600 mb-2">$47K</div>
-                        <div className="text-sm text-gray-600">Average annual cost savings per organization</div>
+                        <div className="text-sm text-gray-400">Average annual cost savings per organization</div>
                     </div>
                     <div className="text-center">
                         <div className="text-3xl font-bold text-red-600 mb-2">99%</div>
-                        <div className="text-sm text-gray-600">User satisfaction rate across implementations</div>
+                        <div className="text-sm text-gray-400">User satisfaction rate across implementations</div>
                     </div>
                 </div>
             </div>
@@ -1272,7 +1272,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
       <section id="technical-architecture" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Technical Architecture & System Design</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Understanding the technical foundation of DeepSeek-R1 and Browser Use reveals the sophisticated engineering that enables their superior performance and reliability.
             </p>
 
@@ -1282,7 +1282,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid lg:grid-cols-3 gap-6">
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-blue-900">AI Reasoning Layer</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• DeepSeek-R1 core processing</li>
                             <li>• Multi-step reasoning engine</li>
                             <li>• Context management system</li>
@@ -1293,7 +1293,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-green-900">Web Automation Layer</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Browser Use control system</li>
                             <li>• Playwright integration engine</li>
                             <li>• Intelligent navigation algorithms</li>
@@ -1304,7 +1304,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-purple-900">Integration & API Layer</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Multi-model API orchestration</li>
                             <li>• Real-time data synchronization</li>
                             <li>• Response optimization engine</li>
@@ -1320,8 +1320,8 @@ export default function DeepSeekR1BrowserUsePage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">DeepSeek-R1 Technical Details</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Model Architecture</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Model Architecture</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Mixture-of-Experts (MoE) design</li>
                                 <li>• 671B total parameters</li>
                                 <li>• 37B active parameters per token</li>
@@ -1330,8 +1330,8 @@ export default function DeepSeekR1BrowserUsePage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Reasoning Capabilities</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Reasoning Capabilities</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Chain-of-thought processing</li>
                                 <li>• Multi-step logical reasoning</li>
                                 <li>• Hypothesis generation and testing</li>
@@ -1346,8 +1346,8 @@ export default function DeepSeekR1BrowserUsePage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Browser Use Technical Stack</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Core Technologies</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Core Technologies</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Python 3.8+ runtime environment</li>
                                 <li>• Playwright browser automation</li>
                                 <li>• AsyncIO for concurrent processing</li>
@@ -1356,8 +1356,8 @@ export default function DeepSeekR1BrowserUsePage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Advanced Features</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Advanced Features</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Intelligent element detection</li>
                                 <li>• Adaptive error recovery</li>
                                 <li>• Session state management</li>
@@ -1374,7 +1374,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid md:grid-cols-2 gap-6">
                     <div>
                         <h4 className="font-semibold text-orange-900 mb-3">Parallel Processing</h4>
-                        <ul className="text-gray-700 space-y-2">
+                        <ul className="text-gray-400 space-y-2">
                             <li>• Concurrent web requests and analysis</li>
                             <li>• Multi-threaded data processing</li>
                             <li>• Asynchronous AI model calls</li>
@@ -1384,7 +1384,7 @@ export default function DeepSeekR1BrowserUsePage() {
                     </div>
                     <div>
                         <h4 className="font-semibold text-orange-900 mb-3">Intelligent Caching</h4>
-                        <ul className="text-gray-700 space-y-2">
+                        <ul className="text-gray-400 space-y-2">
                             <li>• Source content caching strategies</li>
                             <li>• AI response memoization</li>
                             <li>• Browser session persistence</li>
@@ -1401,7 +1401,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid lg:grid-cols-3 gap-6">
                     <div className="bg-blue-50 p-4 rounded-lg">
                         <h4 className="font-semibold mb-3 text-blue-900">Data Protection</h4>
-                        <ul className="text-sm text-gray-700 space-y-1">
+                        <ul className="text-sm text-gray-400 space-y-1">
                             <li>• End-to-end encryption</li>
                             <li>• Local data processing</li>
                             <li>• No data retention policies</li>
@@ -1412,7 +1412,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                     <div className="bg-green-50 p-4 rounded-lg">
                         <h4 className="font-semibold mb-3 text-green-900">Access Control</h4>
-                        <ul className="text-sm text-gray-700 space-y-1">
+                        <ul className="text-sm text-gray-400 space-y-1">
                             <li>• API key management</li>
                             <li>• Role-based permissions</li>
                             <li>• Secure authentication</li>
@@ -1423,7 +1423,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                     <div className="bg-purple-50 p-4 rounded-lg">
                         <h4 className="font-semibold mb-3 text-purple-900">Network Security</h4>
-                        <ul className="text-sm text-gray-700 space-y-1">
+                        <ul className="text-sm text-gray-400 space-y-1">
                             <li>• TLS/SSL encryption</li>
                             <li>• Proxy support</li>
                             <li>• VPN compatibility</li>
@@ -1437,20 +1437,20 @@ export default function DeepSeekR1BrowserUsePage() {
 
       <section id="advanced-features" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Advanced Features & Enterprise Customization</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Beyond basic research capabilities, DeepSeek-R1 and Browser Use offer advanced features and enterprise-grade customization options that scale with organizational needs.
             </p>
 
             <div className="space-y-8">
                 <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
                     <h3 className="text-2xl font-semibold mb-4 text-blue-900">1. Advanced Research Workflows</h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-400 mb-4">
               Sophisticated workflow management enables complex, multi-stage research projects with automated quality control and progress tracking.
                     </p>
                     <div className="grid md:grid-cols-2 gap-6">
                         <div>
                             <h4 className="font-semibold mb-3">Workflow Components</h4>
-                            <ul className="text-gray-700 space-y-2">
+                            <ul className="text-gray-400 space-y-2">
                                 <li>• Multi-stage research pipelines</li>
                                 <li>• Conditional logic and branching</li>
                                 <li>• Quality gates and checkpoints</li>
@@ -1460,7 +1460,7 @@ export default function DeepSeekR1BrowserUsePage() {
                         </div>
                         <div>
                             <h4 className="font-semibold mb-3">Quality Assurance</h4>
-                            <ul className="text-gray-700 space-y-2">
+                            <ul className="text-gray-400 space-y-2">
                                 <li>• Multi-model cross-validation</li>
                                 <li>• Automated fact-checking</li>
                                 <li>• Source credibility scoring</li>
@@ -1473,13 +1473,13 @@ export default function DeepSeekR1BrowserUsePage() {
 
                 <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-green-500">
                     <h3 className="text-2xl font-semibold mb-4 text-green-900">2. Custom Model Integration</h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-400 mb-4">
               Flexible model architecture supports custom models, fine-tuning, and specialized configurations for domain-specific research.
                     </p>
                     <div className="grid md:grid-cols-3 gap-4">
                         <div>
                             <h4 className="font-semibold mb-3">Model Types</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Domain-specific models</li>
                                 <li>• Fine-tuned research models</li>
                                 <li>• Local model deployment</li>
@@ -1489,7 +1489,7 @@ export default function DeepSeekR1BrowserUsePage() {
                         </div>
                         <div>
                             <h4 className="font-semibold mb-3">Configuration Options</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Model weight adjustments</li>
                                 <li>• Temperature and sampling</li>
                                 <li>• Context window optimization</li>
@@ -1499,7 +1499,7 @@ export default function DeepSeekR1BrowserUsePage() {
                         </div>
                         <div>
                             <h4 className="font-semibold mb-3">Integration Methods</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• REST API integration</li>
                                 <li>• WebSocket connections</li>
                                 <li>• Direct model loading</li>
@@ -1512,7 +1512,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                 <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
                     <h3 className="text-2xl font-semibold mb-4 text-purple-900">3. Enterprise Analytics & Reporting</h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-400 mb-4">
               Comprehensive analytics dashboard provides insights into research performance, cost optimization, and quality metrics.
                     </p>
             
@@ -1554,7 +1554,7 @@ export default function DeepSeekR1BrowserUsePage() {
               
                         <div>
                             <h4 className="font-semibold mb-4">Research Insights</h4>
-                            <ul className="text-gray-700 space-y-2">
+                            <ul className="text-gray-400 space-y-2">
                                 <li>• Source diversity analysis</li>
                                 <li>• Quality trend monitoring</li>
                                 <li>• Usage pattern identification</li>
@@ -1578,7 +1578,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-2xl">🚀</span>
                         </div>
                         <h4 className="font-semibold mb-2">Scale & Performance</h4>
-                        <p className="text-gray-700 text-sm">Handle 10,000+ concurrent research queries with sub-second response times</p>
+                        <p className="text-gray-400 text-sm">Handle 10,000+ concurrent research queries with sub-second response times</p>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
@@ -1586,7 +1586,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-2xl">🔒</span>
                         </div>
                         <h4 className="font-semibold mb-2">Security & Compliance</h4>
-                        <p className="text-gray-700 text-sm">Enterprise-grade security with SOC2, GDPR, and HIPAA compliance options</p>
+                        <p className="text-gray-400 text-sm">Enterprise-grade security with SOC2, GDPR, and HIPAA compliance options</p>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
@@ -1594,7 +1594,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-2xl">⚙️</span>
                         </div>
                         <h4 className="font-semibold mb-2">Customization</h4>
-                        <p className="text-gray-700 text-sm">Fully customizable workflows, models, and integration points</p>
+                        <p className="text-gray-400 text-sm">Fully customizable workflows, models, and integration points</p>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
@@ -1602,7 +1602,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-2xl">📊</span>
                         </div>
                         <h4 className="font-semibold mb-2">Analytics & Insights</h4>
-                        <p className="text-gray-700 text-sm">Comprehensive analytics dashboard with real-time monitoring</p>
+                        <p className="text-gray-400 text-sm">Comprehensive analytics dashboard with real-time monitoring</p>
                     </div>
                 </div>
             </div>
@@ -1610,7 +1610,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
       <section id="enterprise-deployment" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Enterprise Deployment & Integration</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Enterprise deployment of DeepSeek-R1 and Browser Use requires careful planning and strategic implementation to maximize organizational benefits while ensuring security and scalability.
             </p>
 
@@ -1620,7 +1620,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid lg:grid-cols-3 gap-6">
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-blue-900">Cloud Deployment</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• AWS, Azure, GCP support</li>
                             <li>• Auto-scaling infrastructure</li>
                             <li>• Managed database services</li>
@@ -1634,7 +1634,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-green-900">On-Premises Deployment</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Complete data control</li>
                             <li>• Custom hardware optimization</li>
                             <li>• Air-gapped environments</li>
@@ -1648,7 +1648,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-purple-900">Hybrid Deployment</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Best of both worlds</li>
                             <li>• Sensitive data on-premises</li>
                             <li>• Scalable cloud processing</li>
@@ -1667,8 +1667,8 @@ export default function DeepSeekR1BrowserUsePage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Integration Architecture</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">API Integration</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">API Integration</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• RESTful API endpoints</li>
                                 <li>• GraphQL query support</li>
                                 <li>• WebSocket real-time connections</li>
@@ -1677,8 +1677,8 @@ export default function DeepSeekR1BrowserUsePage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Enterprise Systems</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Enterprise Systems</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• LDAP/Active Directory integration</li>
                                 <li>• SSO and SAML support</li>
                                 <li>• ERP system connections</li>
@@ -1693,8 +1693,8 @@ export default function DeepSeekR1BrowserUsePage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Scalability & Performance</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Horizontal Scaling</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Horizontal Scaling</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Microservices architecture</li>
                                 <li>• Container orchestration (K8s)</li>
                                 <li>• Auto-scaling policies</li>
@@ -1703,8 +1703,8 @@ export default function DeepSeekR1BrowserUsePage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Performance Optimization</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Performance Optimization</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Intelligent caching layers</li>
                                 <li>• CDN integration</li>
                                 <li>• Database query optimization</li>
@@ -1723,7 +1723,7 @@ export default function DeepSeekR1BrowserUsePage() {
                     <div className="grid md:grid-cols-4 gap-4">
                         <div className="bg-gray-900 p-4 rounded-lg shadow-sm">
                             <h4 className="font-semibold text-blue-600 mb-2">Week 1-2: Planning</h4>
-                            <ul className="text-sm text-gray-700 space-y-1">
+                            <ul className="text-sm text-gray-400 space-y-1">
                                 <li>• Requirements gathering</li>
                                 <li>• Architecture design</li>
                                 <li>• Security assessment</li>
@@ -1733,7 +1733,7 @@ export default function DeepSeekR1BrowserUsePage() {
               
                         <div className="bg-gray-900 p-4 rounded-lg shadow-sm">
                             <h4 className="font-semibold text-green-600 mb-2">Week 3-4: Setup</h4>
-                            <ul className="text-sm text-gray-700 space-y-1">
+                            <ul className="text-sm text-gray-400 space-y-1">
                                 <li>• Infrastructure provisioning</li>
                                 <li>• Core system installation</li>
                                 <li>• Basic configuration</li>
@@ -1743,7 +1743,7 @@ export default function DeepSeekR1BrowserUsePage() {
               
                         <div className="bg-gray-900 p-4 rounded-lg shadow-sm">
                             <h4 className="font-semibold text-purple-600 mb-2">Week 5-6: Integration</h4>
-                            <ul className="text-sm text-gray-700 space-y-1">
+                            <ul className="text-sm text-gray-400 space-y-1">
                                 <li>• Enterprise system integration</li>
                                 <li>• Custom workflow setup</li>
                                 <li>• User access configuration</li>
@@ -1753,7 +1753,7 @@ export default function DeepSeekR1BrowserUsePage() {
               
                         <div className="bg-gray-900 p-4 rounded-lg shadow-sm">
                             <h4 className="font-semibold text-orange-600 mb-2">Week 7-8: Launch</h4>
-                            <ul className="text-sm text-gray-700 space-y-1">
+                            <ul className="text-sm text-gray-400 space-y-1">
                                 <li>• User training programs</li>
                                 <li>• Phased rollout</li>
                                 <li>• Monitoring setup</li>
@@ -1779,14 +1779,14 @@ export default function DeepSeekR1BrowserUsePage() {
                 </div>
             </div>
 
-            <blockquote className="border-l-4 border-green-500 pl-6 italic text-lg text-gray-700 bg-green-50 p-6 rounded-r-lg">
+            <blockquote className="border-l-4 border-green-500 pl-6 italic text-lg text-gray-400 bg-green-50 p-6 rounded-r-lg">
           "Enterprise deployment of DeepSeek-R1 and Browser Use typically achieves full operational status within 8 weeks, with organizations seeing immediate productivity gains and cost savings that justify the investment within the first quarter." - Anyro
             </blockquote>
         </section>
 
       <section id="future-roadmap" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Future Roadmap & Innovation Pipeline</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           The development roadmap for DeepSeek-R1 and Browser Use focuses on advancing AI reasoning capabilities, expanding integration options, and pioneering new research methodologies.
             </p>
 
@@ -1799,7 +1799,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-2xl">🧠</span>
                         </div>
                         <h4 className="font-semibold mb-3 text-center">Enhanced AI Reasoning</h4>
-                        <ul className="text-sm text-gray-700 space-y-2">
+                        <ul className="text-sm text-gray-400 space-y-2">
                             <li>• Multi-modal reasoning capabilities</li>
                             <li>• Advanced causal inference</li>
                             <li>• Automated hypothesis generation</li>
@@ -1813,7 +1813,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-2xl">⚡</span>
                         </div>
                         <h4 className="font-semibold mb-3 text-center">Performance Optimization</h4>
-                        <ul className="text-sm text-gray-700 space-y-2">
+                        <ul className="text-sm text-gray-400 space-y-2">
                             <li>• Real-time streaming research</li>
                             <li>• Edge computing deployment</li>
                             <li>• Quantum-ready algorithms</li>
@@ -1827,7 +1827,7 @@ export default function DeepSeekR1BrowserUsePage() {
                             <span className="text-2xl">🌐</span>
                         </div>
                         <h4 className="font-semibold mb-3 text-center">Ecosystem Expansion</h4>
-                        <ul className="text-sm text-gray-700 space-y-2">
+                        <ul className="text-sm text-gray-400 space-y-2">
                             <li>• Advanced API integrations</li>
                             <li>• Plugin marketplace</li>
                             <li>• Community contribution tools</li>
@@ -1843,8 +1843,8 @@ export default function DeepSeekR1BrowserUsePage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Near-Term Developments (2025)</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Q2 2025 Release</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Q2 2025 Release</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Multi-language research support</li>
                                 <li>• Advanced visualization tools</li>
                                 <li>• Collaborative research workspaces</li>
@@ -1852,8 +1852,8 @@ export default function DeepSeekR1BrowserUsePage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Q3 2025 Release</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Q3 2025 Release</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Voice-activated research queries</li>
                                 <li>• Advanced citation management</li>
                                 <li>• Research workflow templates</li>
@@ -1867,8 +1867,8 @@ export default function DeepSeekR1BrowserUsePage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Long-Term Vision (2025-2026)</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Advanced AI Integration</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Advanced AI Integration</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Autonomous research agents</li>
                                 <li>• Predictive research recommendations</li>
                                 <li>• Multi-modal content analysis</li>
@@ -1876,8 +1876,8 @@ export default function DeepSeekR1BrowserUsePage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Enterprise Features</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Enterprise Features</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Advanced security frameworks</li>
                                 <li>• Global compliance modules</li>
                                 <li>• Custom model training</li>
@@ -1893,7 +1893,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid md:grid-cols-2 gap-6">
                     <div>
                         <h4 className="font-semibold text-indigo-900 mb-3">Open Source Contributions</h4>
-                        <ul className="text-gray-700 space-y-2">
+                        <ul className="text-gray-400 space-y-2">
                             <li>• Community plugin development</li>
                             <li>• Open research dataset creation</li>
                             <li>• Collaborative model improvement</li>
@@ -1903,7 +1903,7 @@ export default function DeepSeekR1BrowserUsePage() {
                     </div>
                     <div>
                         <h4 className="font-semibold text-indigo-900 mb-3">Academic Partnerships</h4>
-                        <ul className="text-gray-700 space-y-2">
+                        <ul className="text-gray-400 space-y-2">
                             <li>• University research collaborations</li>
                             <li>• Graduate student internship programs</li>
                             <li>• Research paper publication initiatives</li>
@@ -1919,19 +1919,19 @@ export default function DeepSeekR1BrowserUsePage() {
                 <div className="grid md:grid-cols-4 gap-4">
                     <div className="text-center">
                         <div className="text-2xl font-bold text-blue-600 mb-2">5x</div>
-                        <div className="text-sm text-gray-600">Faster research by 2026</div>
+                        <div className="text-sm text-gray-400">Faster research by 2026</div>
                     </div>
                     <div className="text-center">
                         <div className="text-2xl font-bold text-green-600 mb-2">99%</div>
-                        <div className="text-sm text-gray-600">Accuracy target for all domains</div>
+                        <div className="text-sm text-gray-400">Accuracy target for all domains</div>
                     </div>
                     <div className="text-center">
                         <div className="text-2xl font-bold text-purple-600 mb-2">50M+</div>
-                        <div className="text-sm text-gray-600">Active researchers by 2026</div>
+                        <div className="text-sm text-gray-400">Active researchers by 2026</div>
                     </div>
                     <div className="text-center">
                         <div className="text-2xl font-bold text-red-600 mb-2">$10B</div>
-                        <div className="text-sm text-gray-600">Economic value creation estimate</div>
+                        <div className="text-sm text-gray-400">Economic value creation estimate</div>
                     </div>
                 </div>
             </div>
@@ -1944,14 +1944,14 @@ export default function DeepSeekR1BrowserUsePage() {
           {faqData.map((faq, index) => (
                 <div key={index} className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
                     <h3 className="text-lg font-semibold text-gray-300 mb-3">{faq.question}</h3>
-                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <p className="text-gray-400 leading-relaxed">{faq.answer}</p>
                 </div>
           ))}
             </div>
 
             <div className="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Need Technical Support?</h3>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-400 mb-4">
             Have additional questions about DeepSeek-R1, Browser Use, or need help with implementation? 
             Our team of AI research experts is here to help you maximize the potential of your research workflow.
                 </p>

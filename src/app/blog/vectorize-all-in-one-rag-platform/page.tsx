@@ -51,7 +51,7 @@ export default function VectorizeRAGPlatformPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-300 mb-6 leading-tight">
           Vectorize RAG Platform: All-in-One AI Document Parsing & Vector Search Revolution
             </h1>
-            <div className="flex items-center text-gray-600 mb-6">
+            <div className="flex items-center text-gray-400 mb-6">
                 <span>By Anyro</span>
                 <span className="mx-2">•</span>
                 <time dateTime="2025-01-02">January 2, 2025</time>
@@ -59,7 +59,7 @@ export default function VectorizeRAGPlatformPage() {
                 <span>18 min read</span>
             </div>
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border-l-4 border-blue-500">
-                <p className="text-lg text-gray-800 leading-relaxed">
+                <p className="text-lg text-gray-300 leading-relaxed">
             Discover how Vectorize is transforming RAG pipeline development with its revolutionary all-in-one platform featuring advanced document parsing, automated embeddings, and intelligent vector search capabilities.
                 </p>
             </div>
@@ -89,13 +89,13 @@ export default function VectorizeRAGPlatformPage() {
 
         <section id="what-is-vectorize" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">What is Vectorize?</h2>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-6 leading-relaxed">
           In the rapidly evolving landscape of AI applications, <strong>Vectorize</strong> emerges as a revolutionary platform that addresses one of the most critical challenges in modern AI development: building efficient and scalable Retrieval-Augmented Generation (RAG) pipelines. This next-generation platform transforms the complex process of handling unstructured data into a streamlined, automated workflow.
             </p>
         
             <div className="bg-blue-50 p-6 rounded-lg mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-900">Key Platform Overview</h3>
-                <ul className="space-y-3 text-gray-700">
+                <ul className="space-y-3 text-gray-400">
                     <li className="flex items-start">
                         <span className="text-blue-600 mr-3">•</span>
                         <span><strong>All-in-One Solution:</strong> Combines document parsing, embeddings, vector search, and retrieval</span>
@@ -115,21 +115,21 @@ export default function VectorizeRAGPlatformPage() {
                 </ul>
             </div>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-400 leading-relaxed">
           According to Anyro, a leading AI consultant and automation expert, "Vectorize represents a paradigm shift in how we approach RAG pipeline development. The platform's ability to automatically extract, structure, and optimize data for AI-powered retrieval eliminates the traditional bottlenecks that have plagued developers for years."
             </p>
         </section>
 
       <section id="rag-challenges" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">The RAG Development Challenge</h2>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-6 leading-relaxed">
           Building effective RAG systems traditionally involves numerous technical hurdles that can significantly impact development timelines and project success rates.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-red-50 p-6 rounded-lg">
                     <h3 className="text-xl font-semibold mb-4 text-red-900">Traditional RAG Challenges</h3>
-                    <ul className="space-y-3 text-gray-700">
+                    <ul className="space-y-3 text-gray-400">
                         <li className="flex items-start">
                             <span className="text-red-600 mr-3">✗</span>
                             <span>Complex multi-tool configurations</span>
@@ -155,7 +155,7 @@ export default function VectorizeRAGPlatformPage() {
 
                 <div className="bg-green-50 p-6 rounded-lg">
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Vectorize Solutions</h3>
-                    <ul className="space-y-3 text-gray-700">
+                    <ul className="space-y-3 text-gray-400">
                         <li className="flex items-start">
                             <span className="text-green-600 mr-3">✓</span>
                             <span>One-click pipeline deployment</span>
@@ -180,21 +180,21 @@ export default function VectorizeRAGPlatformPage() {
                 </div>
             </div>
 
-            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-lg text-gray-700 bg-blue-50 p-6 rounded-r-lg">
+            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-lg text-gray-400 bg-blue-50 p-6 rounded-r-lg">
           "The traditional RAG development process can take weeks or even months to properly configure and optimize. Vectorize reduces this timeline to hours or days while delivering superior results." - Anyro
             </blockquote>
         </section>
 
       <section id="vectorize-iris" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Vectorize Iris: Advanced Document Parsing Engine</h2>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-6 leading-relaxed">
           At the heart of Vectorize lies <strong>Vectorize Iris</strong>, a fine-tuned vision model that represents a breakthrough in document parsing technology. This advanced AI system can process and understand complex document structures with unprecedented accuracy.
             </p>
 
             <div className="grid lg:grid-cols-3 gap-6 mb-8">
                 <div className="bg-gray-900 p-6 rounded-lg shadow-md border">
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Document Types</h3>
-                    <ul className="space-y-2 text-gray-700">
+                    <ul className="space-y-2 text-gray-400">
                         <li>• Complex multi-column PDFs</li>
                         <li>• Word documents and presentations</li>
                         <li>• Spreadsheets and data tables</li>
@@ -206,7 +206,7 @@ export default function VectorizeRAGPlatformPage() {
 
                 <div className="bg-gray-900 p-6 rounded-lg shadow-md border">
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Extraction Capabilities</h3>
-                    <ul className="space-y-2 text-gray-700">
+                    <ul className="space-y-2 text-gray-400">
                         <li>• Text content and formatting</li>
                         <li>• Tables and structured data</li>
                         <li>• Images and diagrams</li>
@@ -218,7 +218,7 @@ export default function VectorizeRAGPlatformPage() {
 
                 <div className="bg-gray-900 p-6 rounded-lg shadow-md border">
                     <h3 className="text-xl font-semibold mb-4 text-purple-900">AI Enhancement</h3>
-                    <ul className="space-y-2 text-gray-700">
+                    <ul className="space-y-2 text-gray-400">
                         <li>• Context-aware parsing</li>
                         <li>• Smart chunking strategies</li>
                         <li>• Relationship mapping</li>
@@ -234,7 +234,7 @@ export default function VectorizeRAGPlatformPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                     <div>
                         <h4 className="text-lg font-semibold mb-3">Accuracy Benchmarks</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Text extraction: 99.2% accuracy</li>
                             <li>• Table parsing: 97.8% accuracy</li>
                             <li>• Image recognition: 96.5% accuracy</li>
@@ -243,7 +243,7 @@ export default function VectorizeRAGPlatformPage() {
                     </div>
                     <div>
                         <h4 className="text-lg font-semibold mb-3">Performance Metrics</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Processing speed: 10x faster than traditional tools</li>
                             <li>• Memory efficiency: 40% reduction in resource usage</li>
                             <li>• Error rate: 85% lower than competitors</li>
@@ -256,17 +256,17 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="key-features" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Core Platform Features</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Vectorize offers a comprehensive suite of features designed to address every aspect of RAG pipeline development and optimization.
             </p>
 
             <div className="space-y-8">
                 <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
                     <h3 className="text-2xl font-semibold mb-4 text-blue-900">1. Intelligent Pipeline Orchestration</h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-400 mb-4">
               Vectorize's core strength lies in its ability to automatically orchestrate complex RAG pipelines with minimal user intervention.
                     </p>
-                    <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
+                    <ul className="grid md:grid-cols-2 gap-4 text-gray-400">
                         <li>• Automated workflow generation</li>
                         <li>• Smart resource allocation</li>
                         <li>• Dynamic scaling capabilities</li>
@@ -278,10 +278,10 @@ export default function VectorizeRAGPlatformPage() {
 
                 <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-green-500">
                     <h3 className="text-2xl font-semibold mb-4 text-green-900">2. Advanced Vector Management</h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-400 mb-4">
               The platform provides sophisticated vector database management with intelligent optimization strategies.
                     </p>
-                    <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
+                    <ul className="grid md:grid-cols-2 gap-4 text-gray-400">
                         <li>• Multi-database support</li>
                         <li>• Automatic index optimization</li>
                         <li>• Vector quality assessment</li>
@@ -293,10 +293,10 @@ export default function VectorizeRAGPlatformPage() {
 
                 <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
                     <h3 className="text-2xl font-semibold mb-4 text-purple-900">3. Comprehensive Analytics Dashboard</h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-400 mb-4">
               Monitor and optimize your RAG systems with detailed analytics and performance insights.
                     </p>
-                    <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
+                    <ul className="grid md:grid-cols-2 gap-4 text-gray-400">
                         <li>• Real-time performance metrics</li>
                         <li>• Query analysis and optimization</li>
                         <li>• Usage patterns and trends</li>
@@ -310,7 +310,7 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="streamlined-setup" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Streamlined RAG Pipeline Setup</h2>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-6 leading-relaxed">
           Traditional RAG pipeline setup requires extensive technical expertise and time-consuming configuration processes. Vectorize revolutionizes this approach with its intuitive, visual interface.
             </p>
 
@@ -323,23 +323,23 @@ export default function VectorizeRAGPlatformPage() {
                         <div className="space-y-4">
                             <div className="flex items-center">
                                 <div className="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">1</div>
-                                <span className="text-gray-700">Configure multiple tools and services</span>
+                                <span className="text-gray-400">Configure multiple tools and services</span>
                             </div>
                             <div className="flex items-center">
                                 <div className="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">2</div>
-                                <span className="text-gray-700">Write custom integration code</span>
+                                <span className="text-gray-400">Write custom integration code</span>
                             </div>
                             <div className="flex items-center">
                                 <div className="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">3</div>
-                                <span className="text-gray-700">Manual data preprocessing</span>
+                                <span className="text-gray-400">Manual data preprocessing</span>
                             </div>
                             <div className="flex items-center">
                                 <div className="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">4</div>
-                                <span className="text-gray-700">Complex embedding configuration</span>
+                                <span className="text-gray-400">Complex embedding configuration</span>
                             </div>
                             <div className="flex items-center">
                                 <div className="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">5</div>
-                                <span className="text-gray-700">Extensive testing and debugging</span>
+                                <span className="text-gray-400">Extensive testing and debugging</span>
                             </div>
                             <div className="text-center mt-6 text-red-600 font-semibold">Timeline: 2-8 weeks</div>
                         </div>
@@ -350,23 +350,23 @@ export default function VectorizeRAGPlatformPage() {
                         <div className="space-y-4">
                             <div className="flex items-center">
                                 <div className="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">1</div>
-                                <span className="text-gray-700">Select data sources and destinations</span>
+                                <span className="text-gray-400">Select data sources and destinations</span>
                             </div>
                             <div className="flex items-center">
                                 <div className="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">2</div>
-                                <span className="text-gray-700">Drag-and-drop pipeline configuration</span>
+                                <span className="text-gray-400">Drag-and-drop pipeline configuration</span>
                             </div>
                             <div className="flex items-center">
                                 <div className="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">3</div>
-                                <span className="text-gray-700">Automatic optimization settings</span>
+                                <span className="text-gray-400">Automatic optimization settings</span>
                             </div>
                             <div className="flex items-center">
                                 <div className="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">4</div>
-                                <span className="text-gray-700">One-click deployment</span>
+                                <span className="text-gray-400">One-click deployment</span>
                             </div>
                             <div className="flex items-center">
                                 <div className="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-3">5</div>
-                                <span className="text-gray-700">Real-time validation and testing</span>
+                                <span className="text-gray-400">Real-time validation and testing</span>
                             </div>
                             <div className="text-center mt-6 text-green-600 font-semibold">Timeline: 30 minutes to 2 hours</div>
                         </div>
@@ -376,10 +376,10 @@ export default function VectorizeRAGPlatformPage() {
 
             <div className="bg-blue-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Drag-and-Drop Functionality</h3>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-400 mb-4">
             Vectorize's visual interface allows developers to construct complex workflows by simply dragging and dropping components:
                 </p>
-                <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
+                <ul className="grid md:grid-cols-2 gap-4 text-gray-400">
                     <li>• Data source connectors</li>
                     <li>• Processing modules</li>
                     <li>• Embedding generators</li>
@@ -392,7 +392,7 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="data-integration" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Flexible Data Integration & Scheduling</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Vectorize excels at ingesting data from diverse sources with intelligent scheduling and processing capabilities that adapt to your specific requirements.
             </p>
 
@@ -401,8 +401,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Data Sources</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Cloud Storage</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Cloud Storage</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Google Drive integration</li>
                                 <li>• Dropbox synchronization</li>
                                 <li>• AWS S3 buckets</li>
@@ -410,8 +410,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Web Sources</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Web Sources</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Web crawlers and scrapers</li>
                                 <li>• RSS feeds</li>
                                 <li>• API endpoints</li>
@@ -419,8 +419,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Direct Upload</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Direct Upload</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Local file uploads</li>
                                 <li>• Batch processing</li>
                                 <li>• FTP/SFTP connections</li>
@@ -434,8 +434,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Scheduling Options</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Real-Time Processing</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Real-Time Processing</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Instant document processing</li>
                                 <li>• Live data feeds</li>
                                 <li>• Webhook integrations</li>
@@ -443,8 +443,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Automated Scheduling</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Automated Scheduling</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Hourly, daily, weekly intervals</li>
                                 <li>• Custom time frames</li>
                                 <li>• Smart resource management</li>
@@ -452,8 +452,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Manual Control</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Manual Control</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• On-demand processing</li>
                                 <li>• Batch job management</li>
                                 <li>• Priority queuing</li>
@@ -472,21 +472,21 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-2xl">🔄</span>
                         </div>
                         <h4 className="font-semibold mb-2">Auto-Sync</h4>
-                        <p className="text-gray-700 text-sm">Automatically detects and processes new content from connected sources</p>
+                        <p className="text-gray-400 text-sm">Automatically detects and processes new content from connected sources</p>
                     </div>
                     <div className="text-center">
                         <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <span className="text-2xl">⚡</span>
                         </div>
                         <h4 className="font-semibold mb-2">Fast Processing</h4>
-                        <p className="text-gray-700 text-sm">Optimized processing speeds with intelligent resource allocation</p>
+                        <p className="text-gray-400 text-sm">Optimized processing speeds with intelligent resource allocation</p>
                     </div>
                     <div className="text-center">
                         <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <span className="text-2xl">🛡️</span>
                         </div>
                         <h4 className="font-semibold mb-2">Secure Transfer</h4>
-                        <p className="text-gray-700 text-sm">Enterprise-grade security with encrypted data transmission</p>
+                        <p className="text-gray-400 text-sm">Enterprise-grade security with encrypted data transmission</p>
                     </div>
                 </div>
             </div>
@@ -494,7 +494,7 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="rag-sandbox" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">RAG Sandbox: Real-Time Testing Environment</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           The RAG Sandbox represents a groundbreaking approach to RAG system validation, providing developers with an integrated testing environment that eliminates the need for external tools and complex setup procedures.
             </p>
 
@@ -504,7 +504,7 @@ export default function VectorizeRAGPlatformPage() {
                 <div className="grid lg:grid-cols-3 gap-6">
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-blue-900">Query Testing</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Natural language queries</li>
                             <li>• Complex search patterns</li>
                             <li>• Multi-parameter filtering</li>
@@ -515,7 +515,7 @@ export default function VectorizeRAGPlatformPage() {
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-green-900">Model Selection</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Llama 3 variants</li>
                             <li>• DeepSeek R models</li>
                             <li>• OpenAI GPT series</li>
@@ -526,7 +526,7 @@ export default function VectorizeRAGPlatformPage() {
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md">
                         <h4 className="text-lg font-semibold mb-4 text-purple-900">Performance Metrics</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• Similarity scores</li>
                             <li>• Relevancy rankings</li>
                             <li>• Response latency</li>
@@ -540,7 +540,7 @@ export default function VectorizeRAGPlatformPage() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
                     <h3 className="text-xl font-semibold mb-4">Interactive Testing Features</h3>
-                    <ul className="space-y-3 text-gray-700">
+                    <ul className="space-y-3 text-gray-400">
                         <li className="flex items-start">
                             <span className="text-blue-600 mr-3">•</span>
                             <span>Real-time query execution with instant results</span>
@@ -566,7 +566,7 @@ export default function VectorizeRAGPlatformPage() {
 
                 <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                     <h3 className="text-xl font-semibold mb-4">Validation Benefits</h3>
-                    <ul className="space-y-3 text-gray-700">
+                    <ul className="space-y-3 text-gray-400">
                         <li className="flex items-start">
                             <span className="text-green-600 mr-3">✓</span>
                             <span>Eliminate need for external validation tools</span>
@@ -591,14 +591,14 @@ export default function VectorizeRAGPlatformPage() {
                 </div>
             </div>
 
-            <blockquote className="border-l-4 border-green-500 pl-6 italic text-lg text-gray-700 bg-green-50 p-6 rounded-r-lg">
+            <blockquote className="border-l-4 border-green-500 pl-6 italic text-lg text-gray-400 bg-green-50 p-6 rounded-r-lg">
           "The RAG Sandbox feature alone saves developers weeks of setup time and provides confidence in their system's performance before production deployment." - Anyro
             </blockquote>
         </section>
 
       <section id="evaluation-optimization" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">RAG Evaluation & Optimization Tools</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Vectorize's comprehensive evaluation suite provides detailed insights into RAG system performance, enabling data-driven optimization decisions that significantly improve retrieval accuracy and user satisfaction.
             </p>
 
@@ -611,7 +611,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-2xl">🎯</span>
                         </div>
                         <h4 className="font-semibold mb-2">Query Accuracy</h4>
-                        <p className="text-gray-700 text-sm">Measures how well retrieved documents match query intent</p>
+                        <p className="text-gray-400 text-sm">Measures how well retrieved documents match query intent</p>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
@@ -619,7 +619,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-2xl">📊</span>
                         </div>
                         <h4 className="font-semibold mb-2">Precision & Recall</h4>
-                        <p className="text-gray-700 text-sm">Evaluates relevance and completeness of search results</p>
+                        <p className="text-gray-400 text-sm">Evaluates relevance and completeness of search results</p>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
@@ -627,7 +627,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-2xl">⚡</span>
                         </div>
                         <h4 className="font-semibold mb-2">Latency Analysis</h4>
-                        <p className="text-gray-700 text-sm">Monitors response times and system performance</p>
+                        <p className="text-gray-400 text-sm">Monitors response times and system performance</p>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
@@ -635,7 +635,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-2xl">🏆</span>
                         </div>
                         <h4 className="font-semibold mb-2">Ranking Quality</h4>
-                        <p className="text-gray-700 text-sm">Assesses relevancy ranking and result ordering</p>
+                        <p className="text-gray-400 text-sm">Assesses relevancy ranking and result ordering</p>
                     </div>
                 </div>
             </div>
@@ -645,8 +645,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Performance Metrics Dashboard</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Real-Time Monitoring</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Real-Time Monitoring</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Query processing time</li>
                                 <li>• Vector search performance</li>
                                 <li>• Model inference latency</li>
@@ -654,8 +654,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Quality Assessments</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Quality Assessments</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Relevance scoring</li>
                                 <li>• Result diversity analysis</li>
                                 <li>• User satisfaction tracking</li>
@@ -669,8 +669,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Optimization Recommendations</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Automatic Suggestions</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Automatic Suggestions</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Embedding model upgrades</li>
                                 <li>• Chunking strategy improvements</li>
                                 <li>• Vector database tuning</li>
@@ -678,8 +678,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Performance Enhancements</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Performance Enhancements</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Caching optimizations</li>
                                 <li>• Parallel processing adjustments</li>
                                 <li>• Resource scaling recommendations</li>
@@ -692,13 +692,13 @@ export default function VectorizeRAGPlatformPage() {
 
             <div className="bg-indigo-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Comparative Analysis Tools</h3>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-400 mb-4">
             Vectorize enables comprehensive comparison of different vectorization strategies and system configurations:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                     <div>
                         <h4 className="font-semibold mb-2">Strategy Comparison</h4>
-                        <ul className="text-gray-700 space-y-1">
+                        <ul className="text-gray-400 space-y-1">
                             <li>• Embedding model variants</li>
                             <li>• Chunking approaches</li>
                             <li>• Preprocessing techniques</li>
@@ -706,7 +706,7 @@ export default function VectorizeRAGPlatformPage() {
                     </div>
                     <div>
                         <h4 className="font-semibold mb-2">Performance Benchmarks</h4>
-                        <ul className="text-gray-700 space-y-1">
+                        <ul className="text-gray-400 space-y-1">
                             <li>• Speed vs. accuracy trade-offs</li>
                             <li>• Resource utilization analysis</li>
                             <li>• Cost-benefit comparisons</li>
@@ -714,7 +714,7 @@ export default function VectorizeRAGPlatformPage() {
                     </div>
                     <div>
                         <h4 className="font-semibold mb-2">Historical Tracking</h4>
-                        <ul className="text-gray-700 space-y-1">
+                        <ul className="text-gray-400 space-y-1">
                             <li>• Performance trend analysis</li>
                             <li>• Optimization impact assessment</li>
                             <li>• Long-term system health</li>
@@ -726,7 +726,7 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="document-extraction" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Advanced Document Extraction & Processing</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Vectorize's document extraction capabilities represent a significant advancement in handling unstructured data, with the Extraction Tester providing unprecedented accuracy in processing complex document types.
             </p>
 
@@ -735,8 +735,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Complex Document Processing</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Multi-Column PDFs</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Multi-Column PDFs</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Academic papers and journals</li>
                                 <li>• Technical manuals and guides</li>
                                 <li>• Magazine and newspaper layouts</li>
@@ -744,8 +744,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Structured Data Extraction</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Structured Data Extraction</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Financial statements and reports</li>
                                 <li>• Invoice and receipt processing</li>
                                 <li>• Form data extraction</li>
@@ -759,8 +759,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Visual Content Processing</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Charts & Graphs</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Charts & Graphs</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Data visualization interpretation</li>
                                 <li>• Chart type recognition</li>
                                 <li>• Value extraction and analysis</li>
@@ -768,8 +768,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Images & Diagrams</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Images & Diagrams</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Technical diagram analysis</li>
                                 <li>• Image caption extraction</li>
                                 <li>• Visual element description</li>
@@ -786,19 +786,19 @@ export default function VectorizeRAGPlatformPage() {
                 <div className="grid md:grid-cols-3 gap-6">
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
                         <div className="text-3xl font-bold text-blue-600 mb-2">99.2%</div>
-                        <div className="text-sm text-gray-600 mb-2">Text Extraction Accuracy</div>
+                        <div className="text-sm text-gray-400 mb-2">Text Extraction Accuracy</div>
                         <div className="text-xs text-gray-500">Compared to 94.7% industry average</div>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
                         <div className="text-3xl font-bold text-green-600 mb-2">97.8%</div>
-                        <div className="text-sm text-gray-600 mb-2">Table Structure Preservation</div>
+                        <div className="text-sm text-gray-400 mb-2">Table Structure Preservation</div>
                         <div className="text-xs text-gray-500">Maintains formatting and relationships</div>
                     </div>
 
                     <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
                         <div className="text-3xl font-bold text-purple-600 mb-2">10x</div>
-                        <div className="text-sm text-gray-600 mb-2">Processing Speed</div>
+                        <div className="text-sm text-gray-400 mb-2">Processing Speed</div>
                         <div className="text-xs text-gray-500">Faster than traditional OCR tools</div>
                     </div>
                 </div>
@@ -810,7 +810,7 @@ export default function VectorizeRAGPlatformPage() {
                 <div className="overflow-x-auto">
                     <table className="w-full border-collapse">
                         <thead>
-                            <tr className="bg-gray-100">
+                            <tr className="bg-gray-800">
                                 <th className="border border-gray-600 px-4 py-3 text-left">Format Category</th>
                                 <th className="border border-gray-600 px-4 py-3 text-left">Supported Types</th>
                                 <th className="border border-gray-600 px-4 py-3 text-left">Extraction Features</th>
@@ -856,7 +856,7 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="ai-model-support" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">AI Model & Database Support</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Vectorize's flexibility lies in its comprehensive support for leading AI models and vector databases, allowing developers to choose the optimal stack for their specific requirements.
             </p>
 
@@ -865,8 +865,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Supported AI Models</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">OpenAI Models</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">OpenAI Models</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• GPT-4 and variants</li>
                                 <li>• GPT-3.5 Turbo</li>
                                 <li>• Text-embedding-ada-002</li>
@@ -874,8 +874,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Open Source Models</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Open Source Models</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Llama 3 (8B, 70B variants)</li>
                                 <li>• DeepSeek R series</li>
                                 <li>• Mistral models</li>
@@ -883,8 +883,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Enterprise Platforms</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Enterprise Platforms</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Amazon Bedrock</li>
                                 <li>• Google Vertex AI</li>
                                 <li>• Azure OpenAI Service</li>
@@ -898,8 +898,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Vector Database Options</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Popular Databases</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Popular Databases</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Pinecone</li>
                                 <li>• Weaviate</li>
                                 <li>• Qdrant</li>
@@ -907,8 +907,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Cloud-Native Options</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Cloud-Native Options</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• AWS OpenSearch</li>
                                 <li>• Azure Cognitive Search</li>
                                 <li>• Google Vertex AI Vector Search</li>
@@ -916,8 +916,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Traditional Databases</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Traditional Databases</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• PostgreSQL with pgvector</li>
                                 <li>• Redis with RediSearch</li>
                                 <li>• Elasticsearch</li>
@@ -936,19 +936,19 @@ export default function VectorizeRAGPlatformPage() {
                         <h4 className="text-lg font-semibold mb-4 text-blue-900">Performance Focus</h4>
                         <div className="space-y-2">
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Speed</span>
+                                <span className="text-sm text-gray-400">Speed</span>
                                 <span className="text-sm font-semibold">Llama 3-8B</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Quality</span>
+                                <span className="text-sm text-gray-400">Quality</span>
                                 <span className="text-sm font-semibold">GPT-4</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Cost-Effective</span>
+                                <span className="text-sm text-gray-400">Cost-Effective</span>
                                 <span className="text-sm font-semibold">DeepSeek R</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Specialized</span>
+                                <span className="text-sm text-gray-400">Specialized</span>
                                 <span className="text-sm font-semibold">Code Llama</span>
                             </div>
                         </div>
@@ -958,19 +958,19 @@ export default function VectorizeRAGPlatformPage() {
                         <h4 className="text-lg font-semibold mb-4 text-green-900">Use Case Matching</h4>
                         <div className="space-y-2">
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Enterprise</span>
+                                <span className="text-sm text-gray-400">Enterprise</span>
                                 <span className="text-sm font-semibold">Azure OpenAI</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Research</span>
+                                <span className="text-sm text-gray-400">Research</span>
                                 <span className="text-sm font-semibold">Llama 3-70B</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Production</span>
+                                <span className="text-sm text-gray-400">Production</span>
                                 <span className="text-sm font-semibold">Bedrock</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Prototyping</span>
+                                <span className="text-sm text-gray-400">Prototyping</span>
                                 <span className="text-sm font-semibold">OpenAI API</span>
                             </div>
                         </div>
@@ -980,19 +980,19 @@ export default function VectorizeRAGPlatformPage() {
                         <h4 className="text-lg font-semibold mb-4 text-purple-900">Scale Considerations</h4>
                         <div className="space-y-2">
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Small Scale</span>
+                                <span className="text-sm text-gray-400">Small Scale</span>
                                 <span className="text-sm font-semibold">ChromaDB</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Medium Scale</span>
+                                <span className="text-sm text-gray-400">Medium Scale</span>
                                 <span className="text-sm font-semibold">Qdrant</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Large Scale</span>
+                                <span className="text-sm text-gray-400">Large Scale</span>
                                 <span className="text-sm font-semibold">Pinecone</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Enterprise</span>
+                                <span className="text-sm text-gray-400">Enterprise</span>
                                 <span className="text-sm font-semibold">Weaviate</span>
                             </div>
                         </div>
@@ -1003,7 +1003,7 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="use-cases" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Real-World Use Cases & Applications</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Vectorize's versatility enables implementation across diverse industries and applications, from enterprise knowledge management to customer support automation.
             </p>
 
@@ -1012,10 +1012,10 @@ export default function VectorizeRAGPlatformPage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
                         <h3 className="text-xl font-semibold mb-4 text-blue-900">Enterprise Knowledge Management</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Organizations use Vectorize to create intelligent knowledge bases from their vast document repositories.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Employee handbook and policy documents</li>
                                 <li>• Technical documentation and manuals</li>
                                 <li>• Meeting transcripts and reports</li>
@@ -1030,10 +1030,10 @@ export default function VectorizeRAGPlatformPage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                         <h3 className="text-xl font-semibold mb-4 text-green-900">Customer Support Automation</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Support teams leverage Vectorize to provide instant, accurate responses to customer inquiries.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Product documentation and FAQs</li>
                                 <li>• Troubleshooting guides and tutorials</li>
                                 <li>• Previous support ticket resolutions</li>
@@ -1048,10 +1048,10 @@ export default function VectorizeRAGPlatformPage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
                         <h3 className="text-xl font-semibold mb-4 text-purple-900">Legal Document Analysis</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Law firms and legal departments use Vectorize for efficient contract analysis and case research.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Contract templates and clauses</li>
                                 <li>• Case law and legal precedents</li>
                                 <li>• Regulatory documents and compliance guides</li>
@@ -1068,10 +1068,10 @@ export default function VectorizeRAGPlatformPage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-red-500">
                         <h3 className="text-xl font-semibold mb-4 text-red-900">Healthcare Information Systems</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Healthcare providers implement Vectorize for medical knowledge management and clinical decision support.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Medical literature and research papers</li>
                                 <li>• Clinical guidelines and protocols</li>
                                 <li>• Patient case studies and outcomes</li>
@@ -1086,10 +1086,10 @@ export default function VectorizeRAGPlatformPage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-yellow-500">
                         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Financial Services</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Financial institutions utilize Vectorize for risk assessment, compliance monitoring, and client advisory services.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Market research and analysis reports</li>
                                 <li>• Regulatory compliance documents</li>
                                 <li>• Investment strategies and performance data</li>
@@ -1104,10 +1104,10 @@ export default function VectorizeRAGPlatformPage() {
                     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
                         <h3 className="text-xl font-semibold mb-4 text-indigo-900">E-commerce & Retail</h3>
                         <div className="space-y-3">
-                            <p className="text-gray-700">
+                            <p className="text-gray-400">
                   Retail companies deploy Vectorize for product information management and personalized shopping experiences.
                             </p>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Product catalogs and specifications</li>
                                 <li>• Customer reviews and feedback</li>
                                 <li>• Inventory management documents</li>
@@ -1127,19 +1127,19 @@ export default function VectorizeRAGPlatformPage() {
                 <div className="grid md:grid-cols-4 gap-6">
                     <div className="text-center">
                         <div className="text-3xl font-bold text-blue-600 mb-2">85%</div>
-                        <div className="text-sm text-gray-600">Average time savings across all implementations</div>
+                        <div className="text-sm text-gray-400">Average time savings across all implementations</div>
                     </div>
                     <div className="text-center">
                         <div className="text-3xl font-bold text-green-600 mb-2">92%</div>
-                        <div className="text-sm text-gray-600">Improvement in information accuracy</div>
+                        <div className="text-sm text-gray-400">Improvement in information accuracy</div>
                     </div>
                     <div className="text-center">
                         <div className="text-3xl font-bold text-purple-600 mb-2">67%</div>
-                        <div className="text-sm text-gray-600">Reduction in operational costs</div>
+                        <div className="text-sm text-gray-400">Reduction in operational costs</div>
                     </div>
                     <div className="text-center">
                         <div className="text-3xl font-bold text-red-600 mb-2">98%</div>
-                        <div className="text-sm text-gray-600">Customer satisfaction with implementation results</div>
+                        <div className="text-sm text-gray-400">Customer satisfaction with implementation results</div>
                     </div>
                 </div>
             </div>
@@ -1147,7 +1147,7 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="implementation" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Implementation Guide & Best Practices</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Successfully implementing Vectorize requires understanding of best practices, proper planning, and strategic configuration choices that maximize system performance and user satisfaction.
             </p>
 
@@ -1160,7 +1160,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-xl font-bold text-blue-600">1</span>
                         </div>
                         <h4 className="font-semibold mb-2 text-center">Assessment & Planning</h4>
-                        <ul className="text-sm text-gray-700 space-y-1">
+                        <ul className="text-sm text-gray-400 space-y-1">
                             <li>• Data audit and inventory</li>
                             <li>• Use case definition</li>
                             <li>• Performance requirements</li>
@@ -1173,7 +1173,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-xl font-bold text-green-600">2</span>
                         </div>
                         <h4 className="font-semibold mb-2 text-center">Configuration & Setup</h4>
-                        <ul className="text-sm text-gray-700 space-y-1">
+                        <ul className="text-sm text-gray-400 space-y-1">
                             <li>• Platform configuration</li>
                             <li>• Data source integration</li>
                             <li>• Model selection</li>
@@ -1186,7 +1186,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-xl font-bold text-yellow-600">3</span>
                         </div>
                         <h4 className="font-semibold mb-2 text-center">Testing & Optimization</h4>
-                        <ul className="text-sm text-gray-700 space-y-1">
+                        <ul className="text-sm text-gray-400 space-y-1">
                             <li>• Sandbox validation</li>
                             <li>• Performance tuning</li>
                             <li>• Quality assessment</li>
@@ -1199,7 +1199,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-xl font-bold text-purple-600">4</span>
                         </div>
                         <h4 className="font-semibold mb-2 text-center">Deployment & Monitoring</h4>
-                        <ul className="text-sm text-gray-700 space-y-1">
+                        <ul className="text-sm text-gray-400 space-y-1">
                             <li>• Production deployment</li>
                             <li>• Performance monitoring</li>
                             <li>• User training</li>
@@ -1214,8 +1214,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Technical Best Practices</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Data Preparation</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Data Preparation</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Clean and standardize document formats</li>
                                 <li>• Remove duplicate and low-quality content</li>
                                 <li>• Implement consistent naming conventions</li>
@@ -1223,8 +1223,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Pipeline Configuration</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Pipeline Configuration</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Choose appropriate chunking strategies</li>
                                 <li>• Optimize embedding model selection</li>
                                 <li>• Configure proper similarity thresholds</li>
@@ -1238,8 +1238,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Operational Guidelines</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Performance Optimization</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Performance Optimization</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Monitor query response times</li>
                                 <li>• Implement caching strategies</li>
                                 <li>• Optimize vector database indexes</li>
@@ -1247,8 +1247,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Quality Assurance</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Quality Assurance</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Regular evaluation metric reviews</li>
                                 <li>• User feedback collection and analysis</li>
                                 <li>• A/B testing of different configurations</li>
@@ -1265,7 +1265,7 @@ export default function VectorizeRAGPlatformPage() {
                     <div className="grid md:grid-cols-2 gap-6">
                         <div>
                             <h4 className="font-semibold text-red-600 mb-2">Challenge: Poor Retrieval Quality</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Solution: Adjust chunking strategy</li>
                                 <li>• Solution: Fine-tune similarity thresholds</li>
                                 <li>• Solution: Improve query preprocessing</li>
@@ -1274,7 +1274,7 @@ export default function VectorizeRAGPlatformPage() {
                         </div>
                         <div>
                             <h4 className="font-semibold text-red-600 mb-2">Challenge: Slow Response Times</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Solution: Implement result caching</li>
                                 <li>• Solution: Optimize vector database configuration</li>
                                 <li>• Solution: Use faster embedding models</li>
@@ -1285,14 +1285,14 @@ export default function VectorizeRAGPlatformPage() {
                 </div>
             </div>
 
-            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-lg text-gray-700 bg-blue-50 p-6 rounded-r-lg">
+            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-lg text-gray-400 bg-blue-50 p-6 rounded-r-lg">
           "The key to successful Vectorize implementation is starting with a clear understanding of your use case and data characteristics. The platform's flexibility allows for extensive customization, but proper planning ensures optimal results from day one." - Anyro
             </blockquote>
         </section>
 
       <section id="performance-benchmarks" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Performance Benchmarks & Competitive Analysis</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Vectorize consistently outperforms traditional RAG solutions across key metrics, delivering superior accuracy, speed, and cost-effectiveness in real-world deployments.
             </p>
 
@@ -1302,7 +1302,7 @@ export default function VectorizeRAGPlatformPage() {
                 <div className="overflow-x-auto">
                     <table className="w-full border-collapse bg-gray-900 rounded-lg overflow-hidden shadow-md">
                         <thead>
-                            <tr className="bg-gray-100">
+                            <tr className="bg-gray-800">
                                 <th className="border border-gray-600 px-4 py-3 text-left">Metric</th>
                                 <th className="border border-gray-600 px-4 py-3 text-center">Vectorize</th>
                                 <th className="border border-gray-600 px-4 py-3 text-center">Traditional RAG</th>
@@ -1464,7 +1464,7 @@ export default function VectorizeRAGPlatformPage() {
                 <div className="grid md:grid-cols-2 gap-8">
                     <div>
                         <h4 className="font-semibold mb-4 text-blue-900">Enterprise Deployment - Fortune 500 Company</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• <strong>Documents Processed:</strong> 2.5 million documents</li>
                             <li>• <strong>Average Query Time:</strong> 89ms</li>
                             <li>• <strong>User Satisfaction:</strong> 96% positive feedback</li>
@@ -1474,7 +1474,7 @@ export default function VectorizeRAGPlatformPage() {
                     </div>
                     <div>
                         <h4 className="font-semibold mb-4 text-green-900">Healthcare Implementation - Regional Hospital Network</h4>
-                        <ul className="space-y-2 text-gray-700">
+                        <ul className="space-y-2 text-gray-400">
                             <li>• <strong>Medical Documents:</strong> 850,000 records</li>
                             <li>• <strong>Clinical Decision Time:</strong> 45% reduction</li>
                             <li>• <strong>Accuracy Improvement:</strong> 23% in diagnosis support</li>
@@ -1488,7 +1488,7 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="competitive-analysis" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Competitive Analysis & Market Position</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           In the rapidly evolving RAG platform market, Vectorize stands out through its comprehensive feature set, superior performance, and unique approach to document processing and system optimization.
             </p>
 
@@ -1500,19 +1500,19 @@ export default function VectorizeRAGPlatformPage() {
                         <h4 className="text-lg font-semibold mb-4 text-blue-900">Traditional RAG Solutions</h4>
                         <div className="space-y-3">
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Setup Complexity</span>
+                                <span className="text-sm text-gray-400">Setup Complexity</span>
                                 <span className="text-red-600 font-semibold">High</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Document Processing</span>
+                                <span className="text-sm text-gray-400">Document Processing</span>
                                 <span className="text-yellow-600 font-semibold">Manual</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Scalability</span>
+                                <span className="text-sm text-gray-400">Scalability</span>
                                 <span className="text-yellow-600 font-semibold">Limited</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Cost Efficiency</span>
+                                <span className="text-sm text-gray-400">Cost Efficiency</span>
                                 <span className="text-red-600 font-semibold">Poor</span>
                             </div>
                         </div>
@@ -1523,19 +1523,19 @@ export default function VectorizeRAGPlatformPage() {
                         <h4 className="text-lg font-semibold mb-4 text-green-900">Vectorize Platform</h4>
                         <div className="space-y-3">
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Setup Complexity</span>
+                                <span className="text-sm text-gray-400">Setup Complexity</span>
                                 <span className="text-green-600 font-semibold">Low</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Document Processing</span>
+                                <span className="text-sm text-gray-400">Document Processing</span>
                                 <span className="text-green-600 font-semibold">AI-Powered</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Scalability</span>
+                                <span className="text-sm text-gray-400">Scalability</span>
                                 <span className="text-green-600 font-semibold">Enterprise</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Cost Efficiency</span>
+                                <span className="text-sm text-gray-400">Cost Efficiency</span>
                                 <span className="text-green-600 font-semibold">Excellent</span>
                             </div>
                         </div>
@@ -1545,19 +1545,19 @@ export default function VectorizeRAGPlatformPage() {
                         <h4 className="text-lg font-semibold mb-4 text-purple-900">Custom Development</h4>
                         <div className="space-y-3">
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Setup Complexity</span>
+                                <span className="text-sm text-gray-400">Setup Complexity</span>
                                 <span className="text-red-600 font-semibold">Very High</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Document Processing</span>
+                                <span className="text-sm text-gray-400">Document Processing</span>
                                 <span className="text-yellow-600 font-semibold">Variable</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Scalability</span>
+                                <span className="text-sm text-gray-400">Scalability</span>
                                 <span className="text-yellow-600 font-semibold">Custom</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-sm text-gray-600">Cost Efficiency</span>
+                                <span className="text-sm text-gray-400">Cost Efficiency</span>
                                 <span className="text-red-600 font-semibold">Very Poor</span>
                             </div>
                         </div>
@@ -1568,7 +1568,7 @@ export default function VectorizeRAGPlatformPage() {
             <div className="grid lg:grid-cols-2 gap-8 mb-8">
                 <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Unique Differentiators</h3>
-                    <ul className="space-y-3 text-gray-700">
+                    <ul className="space-y-3 text-gray-400">
                         <li className="flex items-start">
                             <span className="text-blue-600 mr-3">•</span>
                             <span><strong>Vectorize Iris:</strong> Advanced AI-powered document parsing with 99.2% accuracy</span>
@@ -1594,7 +1594,7 @@ export default function VectorizeRAGPlatformPage() {
 
                 <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Competitive Advantages</h3>
-                    <ul className="space-y-3 text-gray-700">
+                    <ul className="space-y-3 text-gray-400">
                         <li className="flex items-start">
                             <span className="text-green-600 mr-3">✓</span>
                             <span><strong>Time-to-Market:</strong> 97% faster deployment than traditional solutions</span>
@@ -1624,17 +1624,17 @@ export default function VectorizeRAGPlatformPage() {
                 <div className="grid md:grid-cols-3 gap-6">
                     <div className="text-center">
                         <div className="text-2xl font-bold text-indigo-600 mb-2">$45B</div>
-                        <div className="text-sm text-gray-600 mb-2">RAG Platform Market Size (2025)</div>
+                        <div className="text-sm text-gray-400 mb-2">RAG Platform Market Size (2025)</div>
                         <div className="text-xs text-gray-500">Projected to reach $180B by 2030</div>
                     </div>
                     <div className="text-center">
                         <div className="text-2xl font-bold text-green-600 mb-2">85%</div>
-                        <div className="text-sm text-gray-600 mb-2">Enterprise Adoption Rate</div>
+                        <div className="text-sm text-gray-400 mb-2">Enterprise Adoption Rate</div>
                         <div className="text-xs text-gray-500">Among Fortune 1000 companies</div>
                     </div>
                     <div className="text-center">
                         <div className="text-2xl font-bold text-purple-600 mb-2">12%</div>
-                        <div className="text-sm text-gray-600 mb-2">Vectorize Market Share</div>
+                        <div className="text-sm text-gray-400 mb-2">Vectorize Market Share</div>
                         <div className="text-xs text-gray-500">Fastest growing RAG platform</div>
                     </div>
                 </div>
@@ -1643,7 +1643,7 @@ export default function VectorizeRAGPlatformPage() {
 
       <section id="future-roadmap" className="mb-12">
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Future Roadmap & Platform Evolution</h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
           Vectorize's development roadmap focuses on advanced AI integration, enhanced automation capabilities, and expanded platform integrations to maintain its position as the leading RAG solution.
             </p>
 
@@ -1656,7 +1656,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-2xl">🤖</span>
                         </div>
                         <h4 className="font-semibold mb-3 text-center">Advanced AI Integration</h4>
-                        <ul className="text-sm text-gray-700 space-y-2">
+                        <ul className="text-sm text-gray-400 space-y-2">
                             <li>• Multi-modal processing capabilities</li>
                             <li>• Advanced reasoning and inference</li>
                             <li>• Automated quality assessment</li>
@@ -1670,7 +1670,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-2xl">🔧</span>
                         </div>
                         <h4 className="font-semibold mb-3 text-center">Automation Enhancements</h4>
-                        <ul className="text-sm text-gray-700 space-y-2">
+                        <ul className="text-sm text-gray-400 space-y-2">
                             <li>• Self-optimizing pipelines</li>
                             <li>• Automated model selection</li>
                             <li>• Dynamic resource scaling</li>
@@ -1684,7 +1684,7 @@ export default function VectorizeRAGPlatformPage() {
                             <span className="text-2xl">🌐</span>
                         </div>
                         <h4 className="font-semibold mb-3 text-center">Platform Integrations</h4>
-                        <ul className="text-sm text-gray-700 space-y-2">
+                        <ul className="text-sm text-gray-400 space-y-2">
                             <li>• Extended API ecosystem</li>
                             <li>• Enterprise system connectors</li>
                             <li>• Advanced analytics platforms</li>
@@ -1700,8 +1700,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-blue-900">Short-Term Developments (Q2-Q3 2025)</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Enhanced Document Processing</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Enhanced Document Processing</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Video content transcription and analysis</li>
                                 <li>• Audio file processing capabilities</li>
                                 <li>• Advanced image understanding</li>
@@ -1709,8 +1709,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">User Experience Improvements</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">User Experience Improvements</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Enhanced visual pipeline editor</li>
                                 <li>• Advanced debugging interfaces</li>
                                 <li>• Improved mobile responsiveness</li>
@@ -1724,8 +1724,8 @@ export default function VectorizeRAGPlatformPage() {
                     <h3 className="text-xl font-semibold mb-4 text-green-900">Long-Term Vision (2025-2026)</h3>
                     <div className="space-y-4">
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">AI-Powered Automation</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">AI-Powered Automation</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Fully autonomous pipeline optimization</li>
                                 <li>• Predictive performance management</li>
                                 <li>• Intelligent content recommendation</li>
@@ -1733,8 +1733,8 @@ export default function VectorizeRAGPlatformPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-800 mb-2">Enterprise Features</h4>
-                            <ul className="text-gray-700 space-y-1">
+                            <h4 className="font-semibold text-gray-300 mb-2">Enterprise Features</h4>
+                            <ul className="text-gray-400 space-y-1">
                                 <li>• Advanced role-based access control</li>
                                 <li>• Multi-tenant architecture support</li>
                                 <li>• Compliance and audit frameworks</li>
@@ -1750,7 +1750,7 @@ export default function VectorizeRAGPlatformPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                     <div>
                         <h4 className="font-semibold text-orange-900 mb-3">Research & Development</h4>
-                        <ul className="text-gray-700 space-y-2">
+                        <ul className="text-gray-400 space-y-2">
                             <li>• Next-generation embedding models</li>
                             <li>• Advanced retrieval algorithms</li>
                             <li>• Multi-language processing capabilities</li>
@@ -1760,7 +1760,7 @@ export default function VectorizeRAGPlatformPage() {
                     </div>
                     <div>
                         <h4 className="font-semibold text-orange-900 mb-3">Market Expansion</h4>
-                        <ul className="text-gray-700 space-y-2">
+                        <ul className="text-gray-400 space-y-2">
                             <li>• Industry-specific solutions</li>
                             <li>• Regional compliance frameworks</li>
                             <li>• Partner ecosystem development</li>
@@ -1771,7 +1771,7 @@ export default function VectorizeRAGPlatformPage() {
                 </div>
             </div>
 
-            <blockquote className="border-l-4 border-purple-500 pl-6 italic text-lg text-gray-700 bg-purple-50 p-6 rounded-r-lg">
+            <blockquote className="border-l-4 border-purple-500 pl-6 italic text-lg text-gray-400 bg-purple-50 p-6 rounded-r-lg">
           "Vectorize's roadmap reflects our commitment to staying ahead of the RAG technology curve. The platform's future developments will focus on making AI-powered document processing even more intelligent, automated, and accessible to organizations of all sizes." - Anyro
             </blockquote>
         </section>
@@ -1783,14 +1783,14 @@ export default function VectorizeRAGPlatformPage() {
           {faqData.map((faq, index) => (
                 <div key={index} className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
                     <h3 className="text-lg font-semibold text-gray-300 mb-3">{faq.question}</h3>
-                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <p className="text-gray-400 leading-relaxed">{faq.answer}</p>
                 </div>
           ))}
             </div>
 
             <div className="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Need More Information?</h3>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-400 mb-4">
             Have additional questions about Vectorize or need personalized guidance for your RAG implementation? 
             Our team of AI experts is here to help you maximize the potential of your document processing and retrieval systems.
                 </p>
