@@ -138,6 +138,17 @@ const newsArticles = [
     date: "2025-03-02",
     slug: "composer-agent-code-llm-full-stack",
     keywords: ["composer agent", "code llm", "abacus ai", "full stack development", "autonomous coding"]
+  },
+  {
+    title: "Llamacon 2025 Recap: How Zuckerberg and Nadella Are Reshaping AI Software Development Forever",
+    category: "AI INSIGHTS",
+    categoryColor: "blue",
+    excerpt: "The future of software development was revealed at Llamacon 2025, and it's more radical than anyone imagined. Meta CEO Mark Zuckerberg and Microsoft CEO Satya Nadella outlined a world where AI agents write 50% of code.",
+    description: "Complete analysis of Llamacon 2025 revelations from Zuckerberg and Nadella on AI-first development, autonomous research agents, and the machine-first era of software creation.",
+    readTime: "24 min",
+    date: "2025-05-07",
+    slug: "llamacon-2025-recap-zuckerberg-nadella-future-ai-software",
+    keywords: ["llamacon 2025", "zuckerberg", "nadella", "ai development", "machine first era", "autonomous agents", "software development"]
   }
 ]
 

@@ -40,16 +40,10 @@ const faqData = [
 ]
 
 export default function ComposerAgentPage() {
-  const breadcrumbPaths = [
-    { label: 'Home', href: '/' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Composer Agent Review', href: '/blog/composer-agent-code-llm-full-stack' }
-  ]
-
   return (
     <div className="min-h-screen bg-dark">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Breadcrumbs paths={breadcrumbPaths} />
+        <Breadcrumbs />
         
         <article className="prose prose-invert max-w-none">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">

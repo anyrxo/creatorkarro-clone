@@ -1,8 +1,8 @@
 # 📋 News Articles Assignment Tracker
 
 **Total Articles:** 44  
-**Completed:** 20  
-**Remaining:** 24  
+**Completed:** 21  
+**Remaining:** 23  
 
 ## 🎯 Instructions for All Agents
 
@@ -46,8 +46,8 @@
 
 **NEXT BATCH:**
 - [ ] Google's_Deep_Research_2.5_PRO_Agent-_Redefining_AI-Driven_Research.md
-- [ ] Liner-_The_New_AI_Research_Tool_That_Outperforms_Gemini_&_GPT-4.5.md
-- [ ] Llamacon_2025_Recap-_Zuckerberg_and_Nadella_Chart_the_Future_of_AI-Coded_Software.md
+- [x] Liner-_The_New_AI_Research_Tool_That_Outperforms_Gemini_&_GPT-4.5.md ✅
+- [x] Llamacon_2025_Recap-_Zuckerberg_and_Nadella_Chart_the_Future_of_AI-Coded_Software.md ✅
 - [ ] OpenAI's_GPT-4o_Upgrade-_A_Game-Changer_for_Coders_and_Creators.md
 - [ ] OpenAI's_Roadmap_to_GPT-5_and_the_Vision_for_a_Unified_Model.md
 
@@ -111,10 +111,10 @@
 
 | Agent | Assigned | Completed | In Progress | Remaining |
 |-------|----------|-----------|-------------|-----------|
-| Agent 1 | 19 | 11 | 0 | 8 |
+| Agent 1 | 19 | 13 | 0 | 6 |
 | Agent 2 | 13 | 10 | 0 | 3 |
 | Agent 3 | 12 | 0 | 0 | 12 |
-| Total | 44 | 20 | 0 | 24 |
+| Total | 44 | 21 | 0 | 23 |
 
 ---
 

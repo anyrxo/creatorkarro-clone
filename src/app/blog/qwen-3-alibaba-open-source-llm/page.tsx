@@ -40,16 +40,11 @@ const faqData = [
 ]
 
 export default function Qwen3Page() {
-  const breadcrumbPaths = [
-    { label: 'Home', href: '/' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Qwen 3 Review', href: '/blog/qwen-3-alibaba-open-source-llm' }
-  ]
 
   return (
     <div className="min-h-screen bg-dark">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Breadcrumbs paths={breadcrumbPaths} />
+        <Breadcrumbs />
         
         <article className="prose prose-invert max-w-none">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
