@@ -149,6 +149,17 @@ const newsArticles = [
     date: "2025-05-07",
     slug: "llamacon-2025-recap-zuckerberg-nadella-future-ai-software",
     keywords: ["llamacon 2025", "zuckerberg", "nadella", "ai development", "machine first era", "autonomous agents", "software development"]
+  },
+  {
+    title: "Vectorize RAG Platform: All-in-One AI Document Parsing & Vector Search Revolution",
+    category: "AI PLATFORMS",
+    categoryColor: "blue",
+    excerpt: "Vectorize transforms RAG pipeline development with its revolutionary all-in-one platform featuring advanced document parsing, automated embeddings, and intelligent vector search capabilities.",
+    description: "Comprehensive guide to Vectorize - the revolutionary RAG platform for AI document parsing, embeddings, and vector search. Transform your AI applications with automated data extraction.",
+    readTime: "18 min",
+    date: "2025-01-02",
+    slug: "vectorize-all-in-one-rag-platform",
+    keywords: ["vectorize", "rag platform", "ai document parsing", "vector search", "embeddings", "vectorize iris"]
   }
 ]
 
