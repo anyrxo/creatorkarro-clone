@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import SocialIcon from './SocialIcon'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -20,11 +21,11 @@ export default function Footer() {
       { name: 'Terms of Service', href: '/terms' }
     ],
     social: [
-      { name: 'Instagram', href: 'https://www.instagram.com/anyrxo/', icon: '📸' },
-      { name: 'YouTube', href: 'https://www.youtube.com/@anyrxo', icon: '📺' },
-      { name: 'Twitter', href: 'https://twitter.com/anyrxo', icon: '🐦' },
-      { name: 'TikTok', href: 'https://tiktok.com/@anyro', icon: '🎵' },
-      { name: 'Newsletter', href: 'https://anyro.beehiiv.com/subscribe', icon: '📧' }
+      { name: 'Instagram', href: 'https://www.instagram.com/anyrxo/', platform: 'instagram' },
+      { name: 'YouTube', href: 'https://www.youtube.com/@anyrxo', platform: 'youtube' },
+      { name: 'Twitter', href: 'https://twitter.com/anyrxo', platform: 'twitter' },
+      { name: 'TikTok', href: 'https://tiktok.com/@anyro', platform: 'tiktok' },
+      { name: 'Newsletter', href: 'https://anyro.beehiiv.com/subscribe', platform: 'beehiiv' }
     ]
   }
 
@@ -43,16 +44,15 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               {footerLinks.social.map((link) => (
-                <Link
+                <SocialIcon
                   key={link.name}
+                  platform={link.platform as any}
+                  variant="color"
+                  size={24}
                   href={link.href}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                  aria-label={`Follow us on ${link.name}`}
-                >
-                  <span className="text-xl">{link.icon}</span>
-                </Link>
+                  className="hover:scale-110 transition-transform duration-200"
+                />
               ))}
             </div>
           </div>

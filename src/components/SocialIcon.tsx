@@ -14,6 +14,20 @@ export type SocialPlatform =
   | 'telegram' 
   | 'snapchat' 
   | 'whatsapp'
+  | 'fanvue'
+  | 'nvidia'
+  | 'digitalocean'
+  | 'n8n'
+  | 'zapier'
+  | 'make'
+  | 'loom'
+  | 'beehiiv'
+  | 'whop'
+  | 'manus'
+  | 'kling'
+  | 'claude'
+  | 'gemini'
+  | 'runpod'
 
 export interface SocialIconProps {
   platform: SocialPlatform
@@ -36,7 +50,21 @@ const platformUrls: Record<SocialPlatform, string> = {
   discord: 'https://discord.com/',
   telegram: 'https://telegram.org/',
   snapchat: 'https://snapchat.com/',
-  whatsapp: 'https://whatsapp.com/'
+  whatsapp: 'https://whatsapp.com/',
+  fanvue: 'https://fanvue.com/',
+  nvidia: 'https://nvidia.com/',
+  digitalocean: 'https://digitalocean.com/',
+  n8n: 'https://n8n.io/',
+  zapier: 'https://zapier.com/',
+  make: 'https://make.com/',
+  loom: 'https://loom.com/',
+  beehiiv: 'https://beehiiv.com/',
+  whop: 'https://whop.com/',
+  manus: 'https://manus.com/',
+  kling: 'https://kling.ai/',
+  claude: 'https://claude.ai/',
+  gemini: 'https://gemini.google.com/',
+  runpod: 'https://runpod.io/'
 }
 
 export default function SocialIcon({
@@ -113,17 +141,31 @@ export function SocialLinks({
 
 // Example usage component showing different variations
 export function SocialIconShowcase() {
-  const platforms: SocialPlatform[] = [
+  const socialPlatforms: SocialPlatform[] = [
     'instagram', 'youtube', 'twitter', 'tiktok', 'facebook', 
     'linkedin', 'github', 'discord', 'telegram', 'whatsapp'
+  ]
+
+  const businessPlatforms: SocialPlatform[] = [
+    'fanvue', 'nvidia', 'digitalocean', 'n8n', 'zapier', 'make',
+    'loom', 'beehiiv', 'whop', 'claude', 'gemini', 'runpod'
   ]
 
   return (
     <div className="space-y-8 p-6">
       <div>
-        <h3 className="text-lg font-semibold mb-4">Colored Icons</h3>
+        <h3 className="text-lg font-semibold mb-4">Social Media Icons (Colored)</h3>
         <div className="flex flex-wrap gap-4">
-          {platforms.map(platform => (
+          {socialPlatforms.map(platform => (
+            <SocialIcon key={platform} platform={platform} variant="color" size={32} />
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h3 className="text-lg font-semibold mb-4">Business Tools Icons (Colored)</h3>
+        <div className="flex flex-wrap gap-4">
+          {businessPlatforms.map(platform => (
             <SocialIcon key={platform} platform={platform} variant="color" size={32} />
           ))}
         </div>
@@ -132,7 +174,10 @@ export function SocialIconShowcase() {
       <div>
         <h3 className="text-lg font-semibold mb-4">Black Icons</h3>
         <div className="flex flex-wrap gap-4">
-          {platforms.map(platform => (
+          {socialPlatforms.slice(0, 6).map(platform => (
+            <SocialIcon key={platform} platform={platform} variant="black" size={32} />
+          ))}
+          {businessPlatforms.slice(0, 6).map(platform => (
             <SocialIcon key={platform} platform={platform} variant="black" size={32} />
           ))}
         </div>
@@ -141,7 +186,7 @@ export function SocialIconShowcase() {
       <div className="bg-gray-900 p-4 rounded">
         <h3 className="text-lg font-semibold mb-4 text-white">White Icons on Dark</h3>
         <div className="flex flex-wrap gap-4">
-          {platforms.map(platform => (
+          {socialPlatforms.slice(0, 6).map(platform => (
             <SocialIcon 
               key={platform} 
               platform={platform} 
@@ -156,7 +201,7 @@ export function SocialIconShowcase() {
       <div>
         <h3 className="text-lg font-semibold mb-4">Custom Colored Icons</h3>
         <div className="flex flex-wrap gap-4">
-          {platforms.map(platform => (
+          {businessPlatforms.slice(0, 8).map(platform => (
             <SocialIcon 
               key={platform} 
               platform={platform} 

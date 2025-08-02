@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
+import SocialIcon from '@/components/SocialIcon'
 import {
   ValueBadge,
   ModuleCard,

@@ -1,6 +1,7 @@
 'use client'
 
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
+import SocialIcon from '@/components/SocialIcon'
 
 export default function ResourcesPage() {
   // Scroll animations for different sections
@@ -19,19 +20,22 @@ export default function ResourcesPage() {
           name: "CapCut",
           description: "Free video editing software perfect for creating Instagram Reels and TikToks",
           link: "https://www.capcut.com/",
-          type: "Free"
+          type: "Free",
+          icon: null
         },
         {
           name: "Canva",
           description: "Design tool for creating thumbnails, graphics, and social media posts",
           link: "https://www.canva.com/",
-          type: "Freemium"
+          type: "Freemium",
+          icon: null
         },
         {
           name: "Unsplash",
           description: "High-quality stock photos for your content",
           link: "https://unsplash.com/",
-          type: "Free"
+          type: "Free",
+          icon: null
         }
       ]
     },
@@ -42,13 +46,15 @@ export default function ResourcesPage() {
           name: "Beehiiv",
           description: "Newsletter platform I use for my email list. Get a 30-day trial + 20% OFF for 3 months.",
           link: "https://www.beehiiv.com?via=AbdulMannan1",
-          type: "Freemium"
+          type: "Freemium",
+          icon: "beehiiv"
         },
         {
           name: "ConvertKit",
           description: "Email marketing automation for creators",
           link: "https://convertkit.com/",
-          type: "Paid"
+          type: "Paid",
+          icon: null
         }
       ]
     },
@@ -59,13 +65,15 @@ export default function ResourcesPage() {
           name: "Later",
           description: "Social media scheduling and analytics",
           link: "https://later.com/",
-          type: "Freemium"
+          type: "Freemium",
+          icon: null
         },
         {
           name: "Google Analytics",
           description: "Track your website traffic and user behavior",
           link: "https://analytics.google.com/",
-          type: "Free"
+          type: "Free",
+          icon: null
         }
       ]
     },
@@ -76,13 +84,15 @@ export default function ResourcesPage() {
           name: "Whop",
           description: "Platform I use to host all my courses",
           link: "https://whop.com/agencypartners?a=anyro",
-          type: "Platform"
+          type: "Platform",
+          icon: "whop"
         },
         {
           name: "Loom",
           description: "Screen recording for course content",
           link: "https://loom.com/",
-          type: "Freemium"
+          type: "Freemium",
+          icon: "loom"
         }
       ]
     },
@@ -93,13 +103,15 @@ export default function ResourcesPage() {
           name: "Notion",
           description: "All-in-one workspace for notes, planning, and organization",
           link: "https://notion.so/",
-          type: "Freemium"
+          type: "Freemium",
+          icon: null
         },
         {
           name: "Calendly",
           description: "Scheduling tool for calls and meetings",
           link: "https://calendly.com/",
-          type: "Freemium"
+          type: "Freemium",
+          icon: null
         }
       ]
     },
@@ -110,13 +122,15 @@ export default function ResourcesPage() {
           name: "RunPod",
           description: "GPU cloud computing for AI development. Get a one-time random credit bonus from $5-500 when you sign up and load $10 for the first time. Instant access to RunPod's GPU resources.",
           link: "https://runpod.io?ref=yf9yht6f",
-          type: "Cloud Service"
+          type: "Cloud Service",
+          icon: "runpod"
         },
         {
           name: "Fanvue",
           description: "Creator platform for building your audience and monetizing content",
           link: "https://www.fanvue.com/signup?referral=FV-33CETP",
-          type: "Platform"
+          type: "Platform",
+          icon: "fanvue"
         }
       ]
     }
@@ -154,7 +168,17 @@ export default function ResourcesPage() {
                       className={`testimonial-card hover-lift scroll-fade-up ${categoryAnimations.visibleElements[categoryIndex] ? `visible scroll-stagger-${toolIndex + 1}` : ''}`}
                     >
                       <div className="flex items-center justify-between mb-4">
-                        <h3 className="text-lg md:text-xl font-bold">{tool.name}</h3>
+                        <div className="flex items-center gap-3">
+                          {tool.icon && (
+                            <SocialIcon 
+                              platform={tool.icon as any} 
+                              variant="color" 
+                              size={24} 
+                              href={undefined}
+                            />
+                          )}
+                          <h3 className="text-lg md:text-xl font-bold">{tool.name}</h3>
+                        </div>
                         <span className={`px-3 py-1 rounded-full text-sm ${
                           tool.type === 'Free' ? 'bg-green-600/20 text-green-400' :
                           tool.type === 'Freemium' ? 'bg-blue-600/20 text-blue-400' :

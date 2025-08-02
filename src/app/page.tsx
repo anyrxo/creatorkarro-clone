@@ -7,6 +7,7 @@ import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'fra
 import { initInteractiveSounds, soundManager } from '@/lib/soundManager'
 import { createRevealAnimation, createMagneticHover, revealAnimationStyles } from '@/lib/smoothScroll'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
+import PartnerSlider from '@/components/PartnerSlider'
 import Link from 'next/link'
 import Image from 'next/image'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
@@ -96,7 +97,7 @@ export default function HomePage() {
       name: "Marcus Rivera",
       role: "Content Creator",
       course: "Instagram Ignited",
-      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&auto=format",
       content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month!",
       rating: 5
     },
@@ -104,7 +105,7 @@ export default function HomePage() {
       name: "Jake Chen",
       role: "Digital Entrepreneur", 
       course: "Digital Products",
-      avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format",
       content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Now running a sustainable $25K/month business!",
       rating: 5
     },
@@ -112,7 +113,7 @@ export default function HomePage() {
       name: "Devon Mitchell",
       role: "Automation Specialist",
       course: "N8N AI Automations", 
-      avatar: "https://randomuser.me/api/portraits/men/67.jpg",
+      avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face&auto=format",
       content: "N8N AI Automations saved me 40+ hours per week! Automated my entire content workflow. The productivity gains are incredible!",
       rating: 5
     }
@@ -378,6 +379,9 @@ export default function HomePage() {
           ))}
         </Marquee>
       </section>
+
+      {/* Partner Slider */}
+      <PartnerSlider />
 
       {/* What You'll Learn Section */}
       <section className="relative py-20 bg-black overflow-hidden">

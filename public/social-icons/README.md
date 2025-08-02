@@ -1,6 +1,6 @@
-# Social Media Icons
+# Social Media & Business Icons
 
-This folder contains SVG icons for popular social media platforms in both colored and black/white versions.
+This folder contains SVG icons for popular social media platforms and business tools in both colored and black/white versions.
 
 ## Available Icons
 
@@ -8,6 +8,7 @@ This folder contains SVG icons for popular social media platforms in both colore
 
 | Platform | Colored Version | Black Version | Brand Color |
 |----------|----------------|---------------|-------------|
+| **Social Media** | | | |
 | Instagram | `instagram-color.svg` | `instagram-black.svg` | Gradient (Pink/Purple/Orange) |
 | YouTube | `youtube-color.svg` | `youtube-black.svg` | #FF0000 |
 | Twitter/X | `twitter-color.svg` | `twitter-black.svg` | #1DA1F2 |
@@ -19,6 +20,25 @@ This folder contains SVG icons for popular social media platforms in both colore
 | Telegram | `telegram-color.svg` | `telegram-black.svg` | #0088CC |
 | Snapchat | `snapchat-color.svg` | `snapchat-black.svg` | #FFFC00 |
 | WhatsApp | `whatsapp-color.svg` | `whatsapp-black.svg` | #25D366 |
+| **Content Platforms** | | | |
+| Fanvue | `fanvue-color.svg` | `fanvue-black.svg` | #FF6B6B |
+| Loom | `loom-color.svg` | `loom-black.svg` | #625DF5 |
+| Beehiiv | `beehiiv-color.svg` | `beehiiv-black.svg` | #FFBE0B |
+| Whop | `whop-color.svg` | `whop-black.svg` | #5B21B6 |
+| **Cloud & Infrastructure** | | | |
+| NVIDIA | `nvidia-color.svg` | `nvidia-black.svg` | #76B900 |
+| DigitalOcean | `digitalocean-color.svg` | `digitalocean-black.svg` | #0080FF |
+| RunPod | `runpod-color.svg` | `runpod-black.svg` | #8B5CF6 |
+| **Automation Tools** | | | |
+| N8N | `n8n-color.svg` | `n8n-black.svg` | #EA4B71 |
+| Zapier | `zapier-color.svg` | `zapier-black.svg` | #FF4A00 |
+| Make | `make-color.svg` | `make-black.svg` | #6366F1 |
+| **AI Tools** | | | |
+| Claude | `claude-color.svg` | `claude-black.svg` | #D97706 |
+| Gemini | `gemini-color.svg` | `gemini-black.svg` | Google Colors |
+| Kling AI | `kling-color.svg` | `kling-black.svg` | #8B5CF6 |
+| **Other Tools** | | | |
+| Manus | `manus-color.svg` | `manus-black.svg` | #0F172A |
 
 ## Usage
 

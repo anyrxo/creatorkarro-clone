@@ -14,6 +14,9 @@ import {
   HeroSection,
   SectionHeader
 } from '@/components/course/CourseLayout'
+import WordRotate from '@/components/magicui/word-rotate'
+import BlurIn from '@/components/magicui/blur-in'  
+import TypingAnimation from '@/components/magicui/typing-animation'
 
 export default function DigitalProductsPage() {
   // Scroll animations for different sections

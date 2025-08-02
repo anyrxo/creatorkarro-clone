@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
+import SocialIcon from '@/components/SocialIcon'
 import {
   ValueBadge,
   ModuleCard,
@@ -14,6 +15,9 @@ import {
   HeroSection,
   SectionHeader
 } from '@/components/course/CourseLayout'
+import WordRotate from '@/components/magicui/word-rotate'
+import BlurIn from '@/components/magicui/blur-in'
+import TypingAnimation from '@/components/magicui/typing-animation'
 
 export default function N8NAutomationsPage() {
   // Scroll animations for different sections
@@ -297,6 +301,69 @@ export default function N8NAutomationsPage() {
             <p className="text-lg md:text-xl text-gray-400 mb-8">Ready to join the automation revolution?</p>
             <Link href="#pricing" className="cta-button inline-block">
               Get N8N Mastery System
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Automation Tools Section */}
+      <section className="py-16 bg-gradient-to-b from-zinc-900/30 to-black border-t border-zinc-700/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Master the <span className="text-purple-400">Automation Ecosystem</span>
+            </h2>
+            <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+              Learn to integrate N8N with the most powerful automation and AI tools
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-5xl mx-auto">
+            {[
+              { platform: 'n8n', name: 'N8N', category: 'Core Platform' },
+              { platform: 'zapier', name: 'Zapier', category: 'Alternative' },
+              { platform: 'make', name: 'Make', category: 'Alternative' },
+              { platform: 'claude', name: 'Claude', category: 'AI Integration' },
+              { platform: 'gemini', name: 'Gemini', category: 'AI Integration' },
+              { platform: 'loom', name: 'Loom', category: 'Content' },
+              { platform: 'beehiiv', name: 'Beehiiv', category: 'Email' },
+              { platform: 'whop', name: 'Whop', category: 'Commerce' },
+              { platform: 'fanvue', name: 'Fanvue', category: 'Creator' },
+              { platform: 'runpod', name: 'RunPod', category: 'AI Compute' },
+              { platform: 'digitalocean', name: 'DigitalOcean', category: 'Hosting' },
+              { platform: 'nvidia', name: 'NVIDIA', category: 'AI Hardware' }
+            ].map((tool, index) => (
+              <div
+                key={tool.platform}
+                className="group relative bg-zinc-800/50 backdrop-blur-sm rounded-xl p-4 border border-zinc-700/50 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
+              >
+                <div className="flex flex-col items-center text-center">
+                  <SocialIcon 
+                    platform={tool.platform as any}
+                    variant="color"
+                    size={40}
+                    href={undefined}
+                    className="mb-3 group-hover:scale-110 transition-transform"
+                  />
+                  <h3 className="font-semibold text-white text-sm mb-1">{tool.name}</h3>
+                  <p className="text-xs text-zinc-400">{tool.category}</p>
+                </div>
+                
+                {/* Hover effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-blue-600/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-zinc-400 mb-6">
+              Plus 100+ other integrations covered in the complete course
+            </p>
+            <Link href="#pricing" className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+              <span>Master All Integrations</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </Link>
           </div>
         </div>
