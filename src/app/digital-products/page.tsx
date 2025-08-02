@@ -14,7 +14,6 @@ import {
   HeroSection,
   SectionHeader
 } from '@/components/course/CourseLayout'
-import ParticleBackground from '@/components/ParticleBackground'
 
 export default function DigitalProductsPage() {
   // Scroll animations for different sections
@@ -41,7 +40,6 @@ export default function DigitalProductsPage() {
 
   return (
     <div className="min-h-screen bg-dark relative">
-      <ParticleBackground />
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef}>
         <HeroSection

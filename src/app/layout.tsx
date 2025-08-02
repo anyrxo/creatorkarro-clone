@@ -12,6 +12,7 @@ import { siteConfig, defaultSEO, schemas } from "@/config/seo";
 import { generateDynamicMeta } from "@/lib/meta-generator";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import NodeBackground from "@/components/NodeBackground";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -173,12 +174,13 @@ export default function RootLayout({
         />
         
         <FortressProvider>
+          <NodeBackground />
           <LoadingBar />
           <RouteLoader />
           <ScrollProgressIndicator />
           <Navigation />
           <PageTransition>
-            <main className="pt-20 page-enter">
+            <main className="pt-20 page-enter relative z-10">
               {children}
             </main>
           </PageTransition>

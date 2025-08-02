@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
 import { calculateBlogMetrics, formatBlogDate } from '@/utils/blogMetrics'
 import { useEffect, useState } from 'react'
-import ParticleBackground from '@/components/ParticleBackground'
 import ScrollAnimation, { StaggeredAnimation, CountUp } from '@/components/ScrollAnimation'
 import { TiltCard, SpotlightCard } from '@/components/HoverEffects'
 import AnimatedText, { GradientText } from '@/components/AnimatedText'
@@ -647,7 +646,6 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-dark relative">
-      <ParticleBackground />
       {/* Hero Section */}
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

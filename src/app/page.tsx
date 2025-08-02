@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from 'react'
 import { BeautifulHero } from '@/components/BeautifulHero'
-import { InfiniteGallery } from '@/components/InfiniteGallery'
 import { Interactive3DCard } from '@/components/Interactive3DCard'
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'framer-motion'
 import { initInteractiveSounds, soundManager } from '@/lib/soundManager'
@@ -111,13 +110,22 @@ export default function HomePage() {
     }
   ]
 
-  const partners = [
-    { name: 'Google Gemini', logo: '/partners/google-gemini.png' },
-    { name: 'Claude AI', logo: '/partners/claude.png' },
-    { name: 'n8n', logo: '/partners/n8n.png' },
-    { name: 'Make', logo: '/partners/make.png' },
-    { name: 'Zapier', logo: '/partners/zapier.png' },
-    { name: 'NVIDIA', logo: '/partners/nvidia.png' }
+  const features = [
+    {
+      icon: '🚀',
+      title: 'Launch in Days, Not Months',
+      description: 'Get your first 1000 followers within 30 days using our proven growth framework'
+    },
+    {
+      icon: '💎',
+      title: 'Premium Templates & Tools',
+      description: 'Access our exclusive library of viral content templates and automation tools'
+    },
+    {
+      icon: '🎓',
+      title: 'Step-by-Step Training',
+      description: 'Follow along with detailed video tutorials and implementation guides'
+    }
   ]
 
   return (
@@ -125,7 +133,7 @@ export default function HomePage() {
       {/* Beautiful Hero Section */}
       <BeautifulHero />
 
-      {/* Floating Partners Section */}
+      {/* Key Features Section */}
       <section className="relative py-20 bg-gradient-to-b from-black to-zinc-900">
         <motion.div 
           className="absolute inset-0"
@@ -139,27 +147,35 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="max-w-6xl mx-auto"
           >
-            <p className="text-sm text-zinc-400 uppercase tracking-[0.2em] mb-4">TRUSTED BY INDUSTRY LEADERS</p>
-            <div className="flex flex-wrap justify-center items-center gap-12">
-              {partners.map((partner, index) => (
+            <div className="grid md:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
                 <motion.div
-                  key={partner.name}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  className="group"
+                  transition={{ delay: index * 0.2 }}
+                  whileHover={{ y: -5 }}
+                  className="text-center"
                 >
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={120}
-                    height={40}
-                    className="h-10 w-auto filter invert opacity-40 group-hover:opacity-80 transition-all duration-300"
-                  />
+                  <motion.div
+                    className="inline-block text-5xl mb-4"
+                    animate={{ 
+                      rotate: [0, 10, -10, 0],
+                      scale: [1, 1.1, 1]
+                    }}
+                    transition={{ 
+                      duration: 3,
+                      repeat: Infinity,
+                      repeatDelay: index + 1
+                    }}
+                  >
+                    {feature.icon}
+                  </motion.div>
+                  <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
+                  <p className="text-zinc-400">{feature.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -299,8 +315,236 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Infinite Gallery Section */}
-      <InfiniteGallery />
+      {/* What You'll Learn Section */}
+      <section className="relative py-20 bg-black overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black" />
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
+              Master Every Skill
+            </h2>
+            <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+              From viral content creation to automated business systems
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {[
+              {
+                icon: '🎯',
+                title: 'Viral Content Strategy',
+                description: 'Create content that reaches millions and drives real engagement'
+              },
+              {
+                icon: '📊',
+                title: 'Growth Analytics',
+                description: 'Track, analyze, and optimize your growth with data-driven insights'
+              },
+              {
+                icon: '🤖',
+                title: 'AI Automation',
+                description: 'Build systems that work 24/7 while you focus on creativity'
+              },
+              {
+                icon: '💸',
+                title: 'Monetization',
+                description: 'Turn your audience into a sustainable business empire'
+              },
+              {
+                icon: '🎨',
+                title: 'Content Creation',
+                description: 'Professional tools and techniques for stunning visuals'
+              },
+              {
+                icon: '📱',
+                title: 'Platform Mastery',
+                description: 'Dominate Instagram, TikTok, YouTube, and emerging platforms'
+              },
+              {
+                icon: '🚀',
+                title: 'Scaling Systems',
+                description: 'Go from solo creator to automated business owner'
+              },
+              {
+                icon: '🧠',
+                title: 'AI Psychology',
+                description: 'Understand what makes content viral and audiences engage'
+              }
+            ].map((skill, index) => (
+              <motion.div
+                key={skill.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ y: -5, scale: 1.02 }}
+                className="relative group"
+              >
+                <div className="p-6 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-zinc-700 transition-all duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <motion.div 
+                    className="text-4xl mb-4"
+                    animate={{ rotate: [0, 5, -5, 0] }}
+                    transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
+                  >
+                    {skill.icon}
+                  </motion.div>
+                  <h3 className="text-xl font-semibold text-white mb-2">{skill.title}</h3>
+                  <p className="text-sm text-zinc-400">{skill.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="relative py-20 bg-gradient-to-b from-black via-zinc-900 to-black">
+        <div className="absolute inset-0">
+          <motion.div
+            className="absolute inset-0"
+            animate={{
+              backgroundPosition: ['0% 0%', '100% 100%']
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: 'reverse'
+            }}
+            style={{
+              backgroundImage: 'radial-gradient(circle at 20% 50%, purple 0%, transparent 50%), radial-gradient(circle at 80% 80%, blue 0%, transparent 50%)',
+              backgroundSize: '200% 200%',
+              opacity: 0.1
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-6xl mx-auto"
+          >
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
+                  Why Creators
+                  <span className="block bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    Choose Us
+                  </span>
+                </h2>
+                <div className="space-y-6">
+                  {[
+                    {
+                      title: 'Battle-Tested Strategies',
+                      description: 'Every technique we teach has been proven to work across thousands of successful accounts'
+                    },
+                    {
+                      title: 'Real Results, Fast',
+                      description: 'Our students see measurable growth within the first 30 days of implementation'
+                    },
+                    {
+                      title: 'Lifetime Access & Updates',
+                      description: 'Get instant access to all future updates and new strategies as platforms evolve'
+                    },
+                    {
+                      title: 'Community Support',
+                      description: 'Join a thriving community of creators who support and inspire each other daily'
+                    }
+                  ].map((point, index) => (
+                    <motion.div
+                      key={point.title}
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                      className="flex gap-4"
+                    >
+                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold text-white mb-1">{point.title}</h3>
+                        <p className="text-zinc-400">{point.description}</p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <div className="relative rounded-2xl overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20" />
+                  <div className="p-8 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
+                    <div className="grid grid-cols-2 gap-6">
+                      {[
+                        { value: '95%', label: 'Success Rate' },
+                        { value: '24/7', label: 'Support' },
+                        { value: '30+', label: 'Hours of Content' },
+                        { value: '100+', label: 'Templates' }
+                      ].map((stat, index) => (
+                        <motion.div
+                          key={stat.label}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.5 + index * 0.1 }}
+                          className="text-center"
+                        >
+                          <div className="text-3xl font-bold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">
+                            {stat.value}
+                          </div>
+                          <p className="text-sm text-zinc-500 mt-1">{stat.label}</p>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Floating elements */}
+                <motion.div
+                  className="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 blur-2xl"
+                  animate={{
+                    scale: [1, 1.2, 1],
+                    opacity: [0.5, 0.8, 0.5]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity
+                  }}
+                />
+                <motion.div
+                  className="absolute -bottom-4 -left-4 w-32 h-32 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 blur-2xl"
+                  animate={{
+                    scale: [1, 1.3, 1],
+                    opacity: [0.5, 0.7, 0.5]
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity
+                  }}
+                />
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Final CTA with Beautiful Design */}
       <section className="relative py-32 overflow-hidden">

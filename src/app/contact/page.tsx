@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import ParticleBackground from '@/components/ParticleBackground'
 
 export default function ContactPage() {
   // Scroll animations for different sections
@@ -12,7 +11,6 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-dark relative">
-      <ParticleBackground />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 section-spacing">
         <div className="max-w-4xl mx-auto">
           {/* Page Title */}

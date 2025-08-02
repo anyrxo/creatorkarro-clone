@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
-import ParticleBackground from '@/components/ParticleBackground'
 import {
   ValueBadge,
   ModuleCard,
@@ -41,7 +40,6 @@ export default function N8NAutomationsPage() {
 
   return (
     <div className="min-h-screen bg-dark relative">
-      <ParticleBackground />
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection

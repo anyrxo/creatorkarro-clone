@@ -13,7 +13,6 @@ import {
   FAQCard, 
   PricingComparison 
 } from '@/components/course/CourseLayout'
-import ParticleBackground from '@/components/ParticleBackground'
 import ScrollAnimation from '@/components/ScrollAnimation'
 
 export default function AIInfluencersPage() {
@@ -370,7 +369,6 @@ export default function AIInfluencersPage() {
 
   return (
     <div className="min-h-screen bg-dark relative">
-      <ParticleBackground />
       {/* Hero Section */}
       <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection

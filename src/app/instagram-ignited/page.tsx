@@ -16,7 +16,6 @@ import {
   SectionHeader
 } from '@/components/course/CourseLayout'
 import CryptoCheckout from '@/components/checkout/CryptoCheckout'
-import ParticleBackground from '@/components/ParticleBackground'
 
 export default function InstagramIgnitedPage() {
   // Crypto checkout state
@@ -58,7 +57,6 @@ export default function InstagramIgnitedPage() {
 
   return (
     <div className="min-h-screen bg-dark relative">
-      <ParticleBackground />
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef}>
         <HeroSection

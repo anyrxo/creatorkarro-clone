@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-motion'
+import Link from 'next/link'
 
 export function BeautifulHero() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -137,7 +138,7 @@ export function BeautifulHero() {
             animate={{ opacity: 1, letterSpacing: "0.2em" }}
             transition={{ duration: 1.5, delay: 0.5 }}
           >
-            WELCOME TO THE FUTURE
+            TRANSFORM YOUR PASSION INTO PROFIT
           </motion.p>
           
           <h1 
@@ -154,8 +155,8 @@ export function BeautifulHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.8 }}
           >
-            Experience the next generation of digital creation with cutting-edge AI tools 
-            and revolutionary workflows that transform your ideas into reality.
+            Join 12,000+ creators who've built thriving businesses with our proven 
+            Instagram growth, digital products, and AI automation strategies.
           </motion.p>
 
           <motion.div
@@ -164,35 +165,39 @@ export function BeautifulHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2.2 }}
           >
-            <motion.button
-              className="group relative px-8 py-4 bg-white text-black font-medium rounded-full overflow-hidden"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span className="relative z-10">Get Started</span>
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600"
-                initial={{ x: "-100%" }}
-                whileHover={{ x: 0 }}
-                transition={{ duration: 0.3 }}
-              />
-              <motion.span
-                className="absolute inset-0 flex items-center justify-center text-white font-medium"
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
+            <Link href="/instagram-ignited">
+              <motion.button
+                className="group relative px-8 py-4 bg-white text-black font-medium rounded-full overflow-hidden"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                Get Started
-              </motion.span>
-            </motion.button>
+                <span className="relative z-10">Start Learning Today</span>
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600"
+                  initial={{ x: "-100%" }}
+                  whileHover={{ x: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <motion.span
+                  className="absolute inset-0 flex items-center justify-center text-white font-medium"
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  Start Learning Today
+                </motion.span>
+              </motion.button>
+            </Link>
 
-            <motion.button
-              className="px-8 py-4 border border-zinc-700 text-white font-medium rounded-full backdrop-blur-sm hover:bg-white/5 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Watch Demo
-            </motion.button>
+            <Link href="/story">
+              <motion.button
+                className="px-8 py-4 border border-zinc-700 text-white font-medium rounded-full backdrop-blur-sm hover:bg-white/5 transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Read My Story
+              </motion.button>
+            </Link>
           </motion.div>
         </motion.div>
 
