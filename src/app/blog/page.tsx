@@ -706,6 +706,7 @@ export default function BlogPage() {
               </button>
             </div>
           </div>
+          </ScrollAnimation>
         </div>
       </section>
 
@@ -730,27 +731,34 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="section-spacing bg-zinc-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Join 127K+ Creators Getting Weekly Growth Hacks
-          </h2>
+      <section className="section-spacing bg-zinc-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-pink-600/10 animate-gradient-shift" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <ScrollAnimation animation="fade-up">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Join <CountUp end={127000} suffix="+" className="text-blue-400" /> Creators Getting Weekly Growth Hacks
+            </h2>
+          </ScrollAnimation>
           
-          <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Get exclusive Instagram growth strategies, AI automation blueprints, and digital product launches delivered to your inbox every week. Unsubscribe anytime.
-          </p>
+          <ScrollAnimation animation="fade-up" delay={200}>
+            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+              Get exclusive Instagram growth strategies, AI automation blueprints, and digital product launches delivered to your inbox every week. Unsubscribe anytime.
+            </p>
+          </ScrollAnimation>
           
-          <a
-            href="https://anyro.beehiiv.com/subscribe"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button inline-flex items-center gap-3"
-          >
-            Join Free Newsletter
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </a>
+          <ScrollAnimation animation="scale" delay={400}>
+            <a
+              href="https://anyro.beehiiv.com/subscribe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-luxury inline-flex items-center gap-3 text-white"
+            >
+              Join Free Newsletter
+              <svg className="w-5 h-5 animate-wave" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          </ScrollAnimation>
         </div>
       </section>
     </div>
