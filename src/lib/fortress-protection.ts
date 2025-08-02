@@ -43,7 +43,7 @@ export const generateBrowserFingerprint = (): string => {
 export class DevToolsDetector {
   private callbacks: (() => void)[] = [];
   private isOpen = false;
-  private checkInterval: ReturnType<typeof setInterval> | null = null;
+  private checkInterval: number | null = null;
 
   constructor() {
     this.init();
@@ -194,7 +194,7 @@ export class RateLimiter {
 }
 
 // Bot detection patterns
-export const detectBotPatterns = (userAgent: string, headers: any): boolean => {
+export const detectBotPatterns = (userAgent: string, headers: Record<string, string | undefined>): boolean => {
   const botPatterns = [
     /bot/i, /crawler/i, /spider/i, /scraper/i,
     /curl/i, /wget/i, /python/i, /requests/i,

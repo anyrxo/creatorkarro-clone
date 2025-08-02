@@ -9,7 +9,7 @@ import {
   BonusCard,
   ProblemCard,
   TestimonialCard,
-  FAQ,
+  FAQCard,
   PricingComparison,
   HeroSection,
   SectionHeader
@@ -823,7 +823,7 @@ export default function N8NAutomationsPage() {
                 ref={faqCards.setElementRef(index)}
                 className={`bg-zinc-900 rounded-2xl p-6 md:p-8 hover-lift scroll-fade-up ${faqCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
-                <FAQ {...faq} />
+                <FAQCard {...faq} />
               </div>
             ))}
           </div>

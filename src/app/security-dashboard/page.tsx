@@ -66,7 +66,7 @@ export default function SecurityDashboard() {
       const interval = setInterval(refreshData, 30000);
       return () => clearInterval(interval);
     }
-  }, [authenticated]);
+  }, [authenticated, refreshData]);
 
   if (!authenticated) {
     return (
