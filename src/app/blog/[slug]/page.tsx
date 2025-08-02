@@ -11506,7 +11506,7 @@ export default async function BlogPostPage({
 
             {/* Article Content */}
             <div 
-              className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-ul:text-gray-300 prose-li:text-gray-300"
+              className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-ul:text-gray-300 prose-li:text-gray-300 [&>div]:!bg-transparent [&>div]:!text-gray-300 [&_*]:!text-gray-300 [&_h1]:!text-white [&_h2]:!text-white [&_h3]:!text-white [&_h4]:!text-white [&_strong]:!text-white [&_em]:!text-gray-400"
               dangerouslySetInnerHTML={{ __html: newsArticle.content }}
             />
 
