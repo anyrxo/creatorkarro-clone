@@ -694,6 +694,206 @@ html {
   100% { transform: translateX(100%); }
 }
 
+/* Advanced Morphing Effects */
+@keyframes morph {
+  0%, 100% { border-radius: 20px; transform: rotate(0deg); }
+  25% { border-radius: 50px 20px 20px 50px; transform: rotate(90deg); }
+  50% { border-radius: 50px; transform: rotate(180deg); }
+  75% { border-radius: 20px 50px 50px 20px; transform: rotate(270deg); }
+}
+
+.morph-animation {
+  animation: morph 8s ease-in-out infinite;
+}
+
+/* Liquid Loading Effect */
+@keyframes liquid-loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes liquid-inner {
+  0% { height: 0%; }
+  50% { height: 100%; }
+  100% { height: 0%; }
+}
+
+.liquid-loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid rgba(59, 130, 246, 0.3);
+  animation: liquid-loading 2s linear infinite;
+}
+
+.liquid-loader::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: liquid-inner 2s ease-in-out infinite;
+}
+
+/* Pulsing Glow Effect */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+    transform: scale(1.05);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Floating Elements */
+@keyframes float-up {
+  0% { opacity: 0; transform: translateY(100px); }
+  50% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-100px); }
+}
+
+.floating-element {
+  animation: float-up 4s ease-in-out infinite;
+}
+
+.floating-element:nth-child(2) { animation-delay: 1s; }
+.floating-element:nth-child(3) { animation-delay: 2s; }
+.floating-element:nth-child(4) { animation-delay: 3s; }
+
+/* Text Scramble Effect */
+@keyframes text-scramble {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.text-scramble {
+  animation: text-scramble 0.1s ease-in-out infinite;
+}
+
+/* Advanced Card Tilt */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-3d:hover {
+  transform: rotateY(15deg) rotateX(5deg) translateZ(50px);
+}
+
+/* Icon Bounce */
+@keyframes icon-bounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(-5deg); }
+  50% { transform: translateY(-15px) rotate(0deg); }
+  75% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.icon-bounce {
+  animation: icon-bounce 2s ease-in-out infinite;
+}
+
+/* Gradient Border Animation */
+@keyframes gradient-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-border {
+  position: relative;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+  background-size: 400% 400%;
+  animation: gradient-border 3s ease infinite;
+  border-radius: inherit;
+}
+
+.animated-border::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #0f1114;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+/* Spotlight Effect */
+.spotlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.8s ease;
+}
+
+.spotlight:hover::before {
+  left: 100%;
+}
+
+/* Enhanced Scroll Indicators */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+  transform-origin: 0%;
+  z-index: 9999;
+  transition: transform 0.1s ease-out;
+}
+
+/* Magnetic Cursor Effect */
+.magnetic-area {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: rgba(59, 130, 246, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.hovering {
+  width: 40px;
+  height: 40px;
+  background: rgba(139, 92, 246, 0.6);
+}
+
+/* Performance Optimizations */
+.gpu-accelerated {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 /* Dark theme overrides */
 body {
   background: linear-gradient(135deg, #0a0c0e 0%, #1a1d29 100%);

@@ -1,8 +1,8 @@
 # 📋 News Articles Assignment Tracker
 
 **Total Articles:** 44  
-**Completed:** 6  
-**Remaining:** 38  
+**Completed:** 15  
+**Remaining:** 29  
 
 ## 🎯 Instructions for All Agents
 
@@ -19,7 +19,7 @@
    - Anyro's expert insights
    - CTA sections
 
-## ✅ COMPLETED Articles (6)
+## ✅ COMPLETED Articles (14)
 
 - [x] AI_Assistant_Showdown-_ChatGPT_vs_Gemini_vs_Perplexity_vs_Claude.md
 - [x] OpenAIs_03_Pro.md  
@@ -27,14 +27,22 @@
 - [x] The_Future_of_AI-Powered_Computer_Control.md
 - [x] Agno-_A_Powerful_Open-Source_Framework_for_Building_AI_Agents_with_Memory,_Tools,_and_Reasoning.md
 - [x] Alibaba's_QwQ-32B-_Outperforms_Deepseek_R1_in_Reasoning_Tasks.md
+- [x] Anthropic_Launches_Claude_4-_A_Strategic_Pivot_from_Chatbots_to_Agentic_Coding_Infrastructure.md (Agent 2)
+- [x] Deepseek_Unveils_Revolutionary_AI_Advancements_with_the_R2_Open-Source_Model.md (Agent 2)
+- [x] Manus_AI-_The_First-Ever_General_AI_Agent_That_Can_Automate_Your_Life.md (Agent 2)
+- [x] LLaMA_4-_The_Open-Source_Powerhouse_Redefining_AI.md (Agent 2)
+- [x] DeepSeek_Janus_Pro_7B-_A_Unified_Multimodal_Powerhouse.md (Agent 2)
+- [x] Dart_AI-_The_Free_Agentic_Project_Manager_That_Automates_Everything.md (Agent 1)
+- [x] DeepAgent_Update-_The_God-Tier_AI_Agent_That_Can_Build_and_Automate_Almost_Anything.md (Agent 1)
+- [x] ✨🤖_DeepSeek_R1-_The_New_Era_of_Open-Source_AI.md (Agent 1)
 
 ## 🔄 AGENT 1 Assignment (13 articles total)
 
 **CURRENT BATCH:**
-- [ ] Archon-_The_AI_Agent_That_Autonomously_Builds_AI_Agents.md
-- [ ] Builder.ai-_From_Billion-Dollar_AI_Darling_to_Bust_—_What_Went_Wrong_.md
-- [ ] Dart_AI-_The_Free_Agentic_Project_Manager_That_Automates_Everything.md
-- [ ] DeepAgent_Update-_The_God-Tier_AI_Agent_That_Can_Build_and_Automate_Almost_Anything.md
+- [x] Archon-_The_AI_Agent_That_Autonomously_Builds_AI_Agents.md ✅
+- [ ] Builder.ai-_From_Billion-Dollar_AI_Darling_to_Bust_—_What_Went_Wrong_.md **IN PROGRESS**
+- [x] Dart_AI-_The_Free_Agentic_Project_Manager_That_Automates_Everything.md ✅
+- [x] DeepAgent_Update-_The_God-Tier_AI_Agent_That_Can_Build_and_Automate_Almost_Anything.md ✅
 
 **NEXT BATCH:**
 - [ ] Google's_Deep_Research_2.5_PRO_Agent-_Redefining_AI-Driven_Research.md
@@ -47,18 +55,18 @@
 - [ ] The_Ultimate_AI_Showdown-_ChatGPT_vs_Gemini_vs_Perplexity_vs_Grok.md
 - [ ] Unveiling_Google's_Gemini_2.0_Pro_–_The_Future_of_AI_Coding.md
 - [ ] autoMate-_A_Free_and_Open-Source_Alternative_to_Manus_AI.md
-- [ ] ✨🤖_DeepSeek_R1-_The_New_Era_of_Open-Source_AI.md
+- [x] ✨🤖_DeepSeek_R1-_The_New_Era_of_Open-Source_AI.md ✅
 
 ## 🔄 AGENT 2 Assignment (13 articles total)
 
 **CURRENT BATCH:**
-- [ ] Anthropic_Launches_Claude_4-_A_Strategic_Pivot_from_Chatbots_to_Agentic_Coding_Infrastructure.md
-- [ ] Deepseek_Unveils_Revolutionary_AI_Advancements_with_the_R2_Open-Source_Model.md
-- [ ] Manus_AI-_The_First-Ever_General_AI_Agent_That_Can_Automate_Your_Life.md
-- [ ] LLaMA_4-_The_Open-Source_Powerhouse_Redefining_AI.md
+- [x] Anthropic_Launches_Claude_4-_A_Strategic_Pivot_from_Chatbots_to_Agentic_Coding_Infrastructure.md ✅
+- [x] Deepseek_Unveils_Revolutionary_AI_Advancements_with_the_R2_Open-Source_Model.md ✅
+- [x] Manus_AI-_The_First-Ever_General_AI_Agent_That_Can_Automate_Your_Life.md ✅
+- [x] LLaMA_4-_The_Open-Source_Powerhouse_Redefining_AI.md ✅
 
 **NEXT BATCH:**
-- [ ] DeepSeek_Janus_Pro_7B-_A_Unified_Multimodal_Powerhouse.md
+- [x] DeepSeek_Janus_Pro_7B-_A_Unified_Multimodal_Powerhouse.md ✅
 - [ ] Full-Stack_App_Development_with_Gemini_2.0_Pro_&_Bolt.DIY.md
 - [ ] GPT-4.1_vs_Claude_Sonnet_3.7-_Is_OpenAI's_Latest_Model_a_Game-Changer_.md
 - [ ] Gemini_2.5_Flash-_Google's_Budget_AI_Model_That_Rivals_the_Giants.md
@@ -103,10 +111,10 @@
 
 | Agent | Assigned | Completed | In Progress | Remaining |
 |-------|----------|-----------|-------------|-----------|
-| Agent 1 | 19 | 6 | 0 | 13 |
-| Agent 2 | 13 | 0 | 0 | 13 |
+| Agent 1 | 19 | 10 | 0 | 9 |
+| Agent 2 | 13 | 5 | 0 | 8 |
 | Agent 3 | 12 | 0 | 0 | 12 |
-| Total | 44 | 6 | 0 | 38 |
+| Total | 44 | 15 | 0 | 29 |
 
 ---
 

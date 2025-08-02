@@ -316,7 +316,7 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Blog Post 1 */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-left ${blogAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
+            <AnimatedCard hoverEffect="lift" glowColor="blue" delay={100} className="p-6 group">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-blue-500 rounded-full mr-3 animate-float"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">GROWTH GUIDE</span>
@@ -336,10 +336,10 @@ export default function HomePage() {
               <Link href="/blog/500k-followers" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Read more →
               </Link>
-            </div>
+            </AnimatedCard>
 
             {/* Blog Post 2 */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-up ${blogAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <AnimatedCard hoverEffect="tilt" glowColor="purple" delay={200} className="p-6 group">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-purple-500 rounded-full mr-3 animate-float [animation-delay:0.3s]"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">SUCCESS STORY</span>
@@ -359,10 +359,10 @@ export default function HomePage() {
               <Link href="/blog/instagram-ignited-success-stories" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Read more →
               </Link>
-            </div>
+            </AnimatedCard>
 
             {/* Blog Post 3 */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-right ${blogAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+            <AnimatedCard hoverEffect="glow" glowColor="green" delay={300} className="p-6 group">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-float [animation-delay:0.6s]"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">MONETIZATION GUIDE</span>
@@ -382,7 +382,7 @@ export default function HomePage() {
               <Link href="/blog/whop-clipping" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2">
                 Read more →
               </Link>
-            </div>
+            </AnimatedCard>
           </div>
         </div>
       </section>
@@ -402,9 +402,12 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div
+              <AnimatedCard
                 key={index}
-                className={`testimonial-card card-hover hover-lift group scroll-fade-up ${testimonialsAnimation.isVisible ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
+                hoverEffect="lift"
+                glowColor="blue"
+                delay={index * 100}
+                className="p-6 group"
               >
                 <div className="flex items-center mb-4">
                   <Image
@@ -423,7 +426,7 @@ export default function HomePage() {
                 <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
                   "{testimonial.content}"
                 </p>
-              </div>
+              </AnimatedCard>
             ))}
           </div>
         </div>
@@ -445,15 +448,16 @@ export default function HomePage() {
               Whether you're just starting or ready to scale, we have something for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link
+              <EnhancedButton
+                variant="primary"
+                size="lg"
                 href="/instagram-ignited"
-                className="cta-button inline-block btn-animate hover-lift"
               >
                 Explore Courses
-              </Link>
+              </EnhancedButton>
               <Link
                 href="/blog"
-                className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300"
+                className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-1 inline-flex items-center"
               >
                 Read Free Content →
               </Link>
