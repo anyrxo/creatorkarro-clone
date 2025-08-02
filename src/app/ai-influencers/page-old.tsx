@@ -28,6 +28,7 @@ export default function AIInfluencersPage() {
   const urgencyAnimation = useScrollAnimation({ threshold: 0.1 })
   const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
   const whoForAnimation = useScrollAnimation({ threshold: 0.1 })
+  const resultsAnimation = useScrollAnimation({ threshold: 0.1 })
 
   return (
     <div className="min-h-screen bg-dark">

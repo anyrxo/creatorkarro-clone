@@ -4,6 +4,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { useState, useEffect } from 'react'
+import ParticleBackground from '@/components/ParticleBackground'
+import AnimatedCard from '@/components/AnimatedCard'
+import AnimatedText, { GradientText } from '@/components/AnimatedText'
+import EnhancedButton from '@/components/EnhancedButton'
 
 export default function HomePage() {
   // Scroll animations for different sections
@@ -81,48 +85,49 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-dark relative">
+      <ParticleBackground />
+      
       {/* Hero Section */}
-      <section className="section-spacing hero-gradient overflow-hidden">
+      <section className="section-spacing hero-gradient overflow-hidden relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
             ref={heroAnimation.elementRef}
             className={`text-center max-w-4xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
-            <div className="inline-block px-4 py-2 bg-zinc-800 rounded-full text-sm text-gray-300 mb-8">
-              <span className="text-blue-400">{communitySize.toLocaleString()}+</span> creators learning together
+            <div className="inline-block px-4 py-2 bg-zinc-800/80 backdrop-blur-sm rounded-full text-sm text-gray-300 mb-8 border border-zinc-700/50">
+              <AnimatedText animation="counter" countTo={communitySize} suffix="+" className="text-blue-400 font-semibold" />
+              <span className="ml-1">creators learning together</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-blue-400">Creating Content.</span> <span className="text-purple-400">Building Products.</span>
+              <AnimatedText delay={200} className="text-blue-400">Creating Content.</AnimatedText>{' '}
+              <AnimatedText delay={400} className="text-purple-400">Building Products.</AnimatedText>
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Sharing My Journey.
-              </span>
+              <GradientText className="text-4xl md:text-6xl font-bold">
+                <AnimatedText delay={600}>Sharing My Journey.</AnimatedText>
+              </GradientText>
             </h1>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
               From zero to full-time creator. Explore the strategies, tools, and courses that transformed my life.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
-                href="/story"
-                className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300"
-              >
-                Read My Story →
-              </Link>
-              <span className="text-gray-600 hidden sm:block">•</span>
-              <Link
-                href="/blog"
-                className="text-purple-400 hover:text-purple-300 font-medium transition-all duration-300"
-              >
-                Browse Articles →
-              </Link>
-              <span className="text-gray-600 hidden sm:block">•</span>
-              <Link
-                href="/instagram-ignited"
-                className="text-pink-400 hover:text-pink-300 font-medium transition-all duration-300"
-              >
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <EnhancedButton variant="primary" size="lg" href="/instagram-ignited">
                 Start Learning →
-              </Link>
+              </EnhancedButton>
+              <div className="flex gap-4">
+                <Link
+                  href="/story"
+                  className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-1 inline-flex items-center"
+                >
+                  Read My Story →
+                </Link>
+                <Link
+                  href="/blog"
+                  className="text-purple-400 hover:text-purple-300 font-medium transition-all duration-300 hover:translate-x-1 inline-flex items-center"
+                >
+                  Browse Articles →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -183,7 +188,7 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Instagram Ignited Card */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-left ${linksAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
+            <AnimatedCard hoverEffect="glow" glowColor="blue" delay={100} className="p-6 group">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-blue-500 rounded-full mr-3 animate-float"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">INSTAGRAM</span>
@@ -198,10 +203,10 @@ export default function HomePage() {
               <Link href="/instagram-ignited" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2 inline-flex items-center">
                 Learn more →
               </Link>
-            </div>
+            </AnimatedCard>
 
             {/* Digital Products Card */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-up ${linksAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <AnimatedCard hoverEffect="tilt" glowColor="green" delay={200} className="p-6 group">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-float [animation-delay:0.3s]"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">DIGITAL PRODUCTS</span>
@@ -216,10 +221,10 @@ export default function HomePage() {
               <Link href="/digital-products" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2 inline-flex items-center">
                 Learn more →
               </Link>
-            </div>
+            </AnimatedCard>
 
             {/* N8N AI Automations Card */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-right ${linksAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+            <AnimatedCard hoverEffect="scale" glowColor="purple" delay={300} className="p-6 group">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-purple-500 rounded-full mr-3 animate-float [animation-delay:0.6s]"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">AUTOMATION</span>
@@ -234,10 +239,10 @@ export default function HomePage() {
               <Link href="/n8n-ai-automations" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2 inline-flex items-center">
                 Learn more →
               </Link>
-            </div>
+            </AnimatedCard>
 
             {/* AI Influencers Card */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-left ${linksAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
+            <AnimatedCard hoverEffect="magnetic" glowColor="pink" delay={400} className="p-6 group">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-pink-500 rounded-full mr-3 animate-float [animation-delay:0.9s]"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">AI INFLUENCERS</span>
@@ -252,10 +257,10 @@ export default function HomePage() {
               <Link href="/ai-influencers" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2 inline-flex items-center">
                 Learn more →
               </Link>
-            </div>
+            </AnimatedCard>
 
             {/* ComfyUI Card */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-up ${linksAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
+            <AnimatedCard hoverEffect="lift" glowColor="orange" delay={500} className="p-6 group">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-orange-500 rounded-full mr-3 animate-float [animation-delay:1.2s]"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">COMFYUI</span>
@@ -270,10 +275,10 @@ export default function HomePage() {
               <Link href="/comfyui-workflows" className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 hover:translate-x-2 inline-flex items-center">
                 Learn more →
               </Link>
-            </div>
+            </AnimatedCard>
 
             {/* Free Resources Card */}
-            <div className={`testimonial-card card-hover hover-glow group scroll-fade-right ${linksAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
+            <AnimatedCard hoverEffect="glow" glowColor="yellow" delay={600} className="p-6 group">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3 animate-float [animation-delay:1.5s]"></div>
                 <span className="text-sm text-gray-400 uppercase tracking-wider">RESOURCES</span>
@@ -292,7 +297,7 @@ export default function HomePage() {
               >
                 Browse free resources →
               </Link>
-            </div>
+            </AnimatedCard>
           </div>
         </div>
       </section>
