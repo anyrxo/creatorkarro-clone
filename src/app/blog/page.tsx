@@ -148,149 +148,6 @@ const newsArticles = [
     slug: "google-ai-studio-update-powerful-free-all-in-one-platform-developers-creators",
     keywords: ["google ai studio", "gemini 2.5 flash", "free ai development", "ai platform", "google ai models", "ai development tools"]
   },
-  {
-    title: "Anthropic Launches Claude 4: A Strategic Pivot from Chatbots to Agentic Coding Infrastructure",
-    category: "AI NEWS",
-    categoryColor: "purple",
-    excerpt: "Anthropic's strategic shift towards agentic coding infrastructure with Claude 4, moving beyond traditional chatbot capabilities.",
-    description: "Analysis of Anthropic's Claude 4 launch and strategic pivot to agentic coding infrastructure.",
-    readTime: "10 min",
-    date: "2025-01-15",
-    slug: "anthropic-claude-4-agentic-coding-infrastructure",
-    keywords: ["anthropic", "claude 4", "agentic ai", "coding infrastructure", "ai development"]
-  },
-  {
-    title: "DeepSeek Unveils Revolutionary AI Advancements with the R2 Open-Source Model",
-    category: "TECH NEWS",
-    categoryColor: "green",
-    excerpt: "DeepSeek's groundbreaking R2 model pushes the boundaries of open-source AI with unprecedented performance improvements.",
-    description: "Comprehensive analysis of DeepSeek's R2 model and its revolutionary impact on open-source AI development.",
-    readTime: "14 min",
-    date: "2025-01-25",
-    slug: "deepseek-r2-open-source-model-revolutionary-ai",
-    keywords: ["deepseek", "r2 model", "open source ai", "ai advancement", "deepseek r2"]
-  },
-  {
-    title: "Manus AI: The First-Ever General AI Agent That Can Automate Your Life",
-    category: "AI AGENTS",
-    categoryColor: "blue",
-    excerpt: "Manus AI represents a breakthrough in general AI agents, capable of automating complex workflows across multiple platforms and applications.",
-    description: "Complete guide to Manus AI - the revolutionary general AI agent for comprehensive life automation.",
-    readTime: "16 min",
-    date: "2025-02-01",
-    slug: "manus-ai-first-general-ai-agent-automate-life",
-    keywords: ["manus ai", "general ai agent", "life automation", "ai workflow", "intelligent automation"]
-  },
-  {
-    title: "LLaMA 4: The Open-Source Powerhouse Redefining AI",
-    category: "OPEN SOURCE",
-    categoryColor: "green",
-    excerpt: "Meta's LLaMA 4 sets new standards for open-source AI with unprecedented performance and accessibility.",
-    description: "In-depth analysis of Meta's LLaMA 4 and its transformative impact on the open-source AI ecosystem.",
-    readTime: "18 min",
-    date: "2025-02-10",
-    slug: "llama-4-open-source-powerhouse-redefining-ai",
-    keywords: ["llama 4", "meta ai", "open source llm", "facebook ai", "large language model"]
-  },
-  {
-    title: "DeepSeek Janus Pro 7B: A Unified Multimodal Powerhouse",
-    category: "AI MODELS",
-    categoryColor: "purple",
-    excerpt: "DeepSeek's Janus Pro 7B combines vision and language processing in a unified architecture, delivering exceptional multimodal capabilities.",
-    description: "Comprehensive review of DeepSeek Janus Pro 7B - the unified multimodal AI model revolutionizing vision-language tasks.",
-    readTime: "15 min",
-    date: "2025-02-15",
-    slug: "deepseek-janus-pro-7b-unified-multimodal-powerhouse",
-    keywords: ["deepseek janus", "multimodal ai", "vision language model", "janus pro 7b", "unified architecture"]
-  },
-  {
-    title: "Full-Stack App Development with Gemini 2.0 Pro & Bolt.DIY",
-    category: "DEVELOPMENT",
-    categoryColor: "blue",
-    excerpt: "Build complete full-stack applications using Gemini 2.0 Pro and Bolt.DIY - a revolutionary combination for rapid development.",
-    description: "Step-by-step guide to full-stack development using Google's Gemini 2.0 Pro and Bolt.DIY platform.",
-    readTime: "22 min",
-    date: "2025-02-20",
-    slug: "full-stack-app-development-gemini-2-pro-bolt-diy",
-    keywords: ["gemini 2.0 pro", "bolt.diy", "full stack development", "rapid development", "ai development"]
-  },
-  {
-    title: "GPT-4.1 vs Claude Sonnet 3.7: Is OpenAI's Latest Model a Game-Changer?",
-    category: "AI COMPARISON",
-    categoryColor: "purple",
-    excerpt: "OpenAI's GPT-4.1 delivers impressive performance at 80% lower cost than Claude Sonnet 3.7. Real-world testing reveals surprising strengths.",
-    description: "Comprehensive comparison of GPT-4.1 and Claude Sonnet 3.7 performance, pricing, and use cases.",
-    readTime: "18 min",
-    date: "2025-04-14",
-    slug: "gpt-4-1-vs-claude-sonnet-3-7-comparison",
-    keywords: ["gpt 4.1", "claude sonnet 3.7", "ai model comparison", "openai", "anthropic"]
-  },
-  {
-    title: "Gemini 2.5 Flash: Google's Budget AI Model That Rivals the Giants",
-    category: "AI NEWS",
-    categoryColor: "blue",
-    excerpt: "Google's Gemini 2.5 Flash offers blazing speed and unbelievably low pricing at just $0.60/M output tokens while delivering performance that rivals models costing 10x more.",
-    description: "Complete review of Google Gemini 2.5 Flash - the budget AI model that delivers premium performance at 90% lower cost.",
-    readTime: "19 min",
-    date: "2025-04-20",
-    slug: "gemini-2-5-flash-budget-ai-model",
-    keywords: ["gemini 2.5 flash", "google gemini", "budget ai model", "cheap ai api", "gemini pricing"]
-  },
-  {
-    title: "Qwen 3: Alibaba's Open-Source LLM Leap",
-    category: "OPEN SOURCE",
-    categoryColor: "green",
-    excerpt: "Alibaba's Qwen 3 features 235B parameters with MoE architecture, outperforms GPT-4 in coding, beats LLaMA 4 in reasoning, and remains completely free under Apache 2.0 license.",
-    description: "Complete guide to Alibaba's Qwen 3 - the open-source LLM that's reshaping the AI landscape with superior performance and true commercial freedom.",
-    readTime: "22 min",
-    date: "2025-05-13",
-    slug: "qwen-3-alibaba-open-source-llm",
-    keywords: ["qwen 3", "alibaba qwen", "open source llm", "apache 2.0", "mixture of experts"]
-  },
-  {
-    title: "Revolutionizing Full-Stack Development: The New Composer Agent in Code LLM",
-    category: "AI TOOLS",
-    categoryColor: "purple",
-    excerpt: "Abacus AI's Composer Agent revolutionizes development by building complete full-stack applications from a single prompt. Multi-model AI support, autonomous coding, free trial available.",
-    description: "Complete guide to Composer Agent in Code LLM - the AI tool that generates full applications autonomously with advanced language models.",
-    readTime: "20 min",
-    date: "2025-03-02",
-    slug: "composer-agent-code-llm-full-stack",
-    keywords: ["composer agent", "code llm", "abacus ai", "full stack development", "autonomous coding"]
-  },
-  {
-    title: "RooCode v3.3 Update – A Cline Alternative",
-    category: "DEVELOPMENT TOOLS",
-    categoryColor: "green",
-    excerpt: "RooCode v3.3 emerges as a powerful alternative to Cline, offering enhanced features for modern development workflows.",
-    description: "Comprehensive review of RooCode v3.3 and how it compares to Cline for development automation.",
-    readTime: "13 min",
-    date: "2025-03-10",
-    slug: "roocode-v3-3-update-cline-alternative",
-    keywords: ["roocode", "cline alternative", "development tools", "coding assistant", "roocode v3.3"]
-  },
-  {
-    title: "The All-In-One RAG Platform for AI Document Parsing, Embeddings, and Vector Search",
-    category: "AI PLATFORMS",
-    categoryColor: "purple",
-    excerpt: "Revolutionary AI infrastructure platform combining intelligent document parsing, advanced embeddings, and lightning-fast vector search in one unified solution.",
-    description: "Complete guide to the all-in-one RAG platform transforming AI document processing and search capabilities.",
-    readTime: "14 min",
-    date: "2025-02-05",
-    slug: "vectorize-all-in-one-rag-platform",
-    keywords: ["rag platform", "document parsing", "vector search", "ai embeddings", "document ai"]
-  },
-  {
-    title: "The Future of AI Research: Exploring DeepSeek-R1 & Open-Source AI Research Tools",
-    category: "AI RESEARCH",
-    categoryColor: "green",
-    excerpt: "Discover how DeepSeek-R1 and Browser Use are revolutionizing AI research with 89% accuracy, unlimited queries, and complete open-source freedom.",
-    description: "Complete guide to DeepSeek-R1 and Browser Use - revolutionary open-source AI research tools that rival OpenAI Deep Research.",
-    readTime: "19 min",
-    date: "2025-01-03",
-    slug: "deepseek-r1-browser-use-ai-research",
-    keywords: ["deepseek r1", "browser use", "ai research tools", "open source ai", "deep research alternative"]
-  },
 ]
 
 const blogPosts = [
@@ -655,7 +512,7 @@ function BlogPostCard({ post, index, setElementRef, isVisible }: {
         {/* Metrics Row */}
         <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
           <div className="flex items-center gap-1">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 transform-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
             </svg>
@@ -663,14 +520,14 @@ function BlogPostCard({ post, index, setElementRef, isVisible }: {
           </div>
           
           <div className="flex items-center gap-1">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 transform-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
             <span>{metrics.likes}</span>
           </div>
           
           <div className="flex items-center gap-1">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 transform-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m9.632 4.316C18.114 15.062 18 14.518 18 14c0-.482.114-.938.316-1.342m0 2.684a3 3 0 110-2.684M9 12a3 3 0 106 0 3 3 0 00-6 0zm12 0a3 3 0 106 0 3 3 0 00-6 0z" />
             </svg>
             <span>{metrics.shares}</span>
