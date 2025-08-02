@@ -76,7 +76,7 @@ const newsArticles = [
   {
     title: "Agno Framework Review: Build Lightning-Fast AI Agents in 2025 (5000x Faster Than LangGraph)",
     category: "AI FRAMEWORKS",
-    categoryColor: "blue",
+    categoryColor: "blue", 
     excerpt: "Agno delivers 5,000x faster agent instantiation and 50x less memory usage while maintaining enterprise-grade performance. This isn't just an improvement—it's a complete paradigm shift in AI agent development.",
     description: "Complete review of Agno, the revolutionary open-source AI agent framework that outperforms LangGraph and LangChain.",
     readTime: "16 min",
