@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import NewsletterSignup from '@/components/NewsletterSignup'
-import FAQSection from '@/components/FAQSection'
+import { FAQCard } from "@/components/course/CourseLayout"
 
 export const metadata: Metadata = {
   title: 'Manus AI: The First General AI Agent Achieving 86.5% on GAIA Benchmark - Complete Automation Guide',
@@ -692,7 +692,17 @@ export default function ManusAIAutomationPage() {
             </div>
           </div>
 
-          <FAQSection faqs={faqs} />
+          <div className="grid gap-6 max-w-4xl mx-auto">
+              {faqs.map((faq, index) => (
+                <FAQCard
+                  key={index}
+                  question={faq.question}
+                  answer={faq.answer}
+                  isVisible={true}
+                  staggerClass={`delay-${index * 100}`}
+                />
+              ))}
+            </div>
 
           <div className="mt-12">
             <NewsletterSignup 

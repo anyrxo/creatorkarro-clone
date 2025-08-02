@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import NewsletterSignup from '@/components/NewsletterSignup'
-import FAQSection from '@/components/FAQSection'
+import { FAQCard } from '@/components/course/CourseLayout'
 
 export const metadata: Metadata = {
   title: 'Gemini 2.0 Pro + Bolt.DIY: Build Full-Stack Apps Without Code in 2025 | IImagined.ai',
@@ -630,7 +630,17 @@ export const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           {/* FAQ Section */}
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
-            <FAQSection faqs={faqData} />
+            <div className="grid gap-6 max-w-4xl mx-auto">
+              {faqData.map((faq, index) => (
+                <FAQCard
+                  key={index}
+                  question={faq.question}
+                  answer={faq.answer}
+                  isVisible={true}
+                  staggerClass={`delay-${index * 100}`}
+                />
+              ))}
+            </div>
           </section>
 
           {/* Call to Action */}

@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import NewsletterSignup from '@/components/NewsletterSignup'
-import FAQSection from '@/components/FAQSection'
+import { FAQCard } from "@/components/course/CourseLayout"
 
 export const metadata: Metadata = {
   title: 'DeepSeek R1: The Open-Source AI Revolution That\'s Crushing GPT-4 and Claude at 96% Lower Cost',
@@ -623,7 +623,17 @@ response = requests.post(api_url, headers=headers, json=payload)`}
             </div>
           </div>
 
-          <FAQSection faqs={faqs} />
+          <div className="grid gap-6 max-w-4xl mx-auto">
+              {faqs.map((faq, index) => (
+                <FAQCard
+                  key={index}
+                  question={faq.question}
+                  answer={faq.answer}
+                  isVisible={true}
+                  staggerClass={`delay-${index * 100}`}
+                />
+              ))}
+            </div>
 
           <div className="mt-12">
             <NewsletterSignup 

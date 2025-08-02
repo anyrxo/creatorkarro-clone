@@ -94,6 +94,50 @@ const newsArticles = [
     date: "2025-03-14",
     slug: "agno-open-source-ai-agent-framework",
     keywords: ["agno framework", "ai agents", "langgraph alternative", "ai agent development", "open source ai", "agent framework"]
+  },
+  {
+    title: "Builder.ai: From Billion-Dollar AI Darling to Bust — What Went Wrong?",
+    category: "AI ANALYSIS",
+    categoryColor: "red",
+    excerpt: "Builder.ai, once valued at $1.5 billion and backed by Microsoft and SoftBank, collapsed after failing to deliver on its no-code AI promises and facing fraud allegations.",
+    description: "Complete analysis of Builder.ai's spectacular collapse from $1.5B valuation to bankruptcy, revealing fraud, fake AI claims, and lessons for the AI industry.",
+    readTime: "21 min",
+    date: "2025-06-15",
+    slug: "builderai-billion-dollar-ai-bust",
+    keywords: ["builder.ai", "ai fraud", "startup failure", "microsoft", "softbank", "no-code platforms"]
+  },
+  {
+    title: "Gemini 2.5 Flash Review: Google's $0.60 AI Model That Beats GPT-4",
+    category: "AI NEWS",
+    categoryColor: "blue",
+    excerpt: "Google's Gemini 2.5 Flash offers blazing speed and unbelievably low pricing at just $0.60/M output tokens while delivering performance that rivals models costing 10x more.",
+    description: "Complete review of Google Gemini 2.5 Flash - the budget AI model that delivers premium performance at 90% lower cost.",
+    readTime: "19 min",
+    date: "2025-04-20",
+    slug: "gemini-2-5-flash-budget-ai-model",
+    keywords: ["gemini 2.5 flash", "google gemini", "budget ai model", "cheap ai api", "gemini pricing"]
+  },
+  {
+    title: "Qwen 3 Review: Alibaba's Open-Source Model That Beats GPT-4 & LLaMA 4",
+    category: "OPEN SOURCE",
+    categoryColor: "green",
+    excerpt: "Alibaba's Qwen 3 features 235B parameters with MoE architecture, outperforms GPT-4 in coding, beats LLaMA 4 in reasoning, and remains completely free under Apache 2.0 license.",
+    description: "Complete guide to Alibaba's Qwen 3 - the open-source LLM that's reshaping the AI landscape with superior performance and true commercial freedom.",
+    readTime: "22 min",
+    date: "2025-05-13",
+    slug: "qwen-3-alibaba-open-source-llm",
+    keywords: ["qwen 3", "alibaba qwen", "open source llm", "apache 2.0", "mixture of experts"]
+  },
+  {
+    title: "Composer Agent Review: Build Full-Stack Apps with One Prompt",
+    category: "AI TOOLS",
+    categoryColor: "purple",
+    excerpt: "Abacus AI's Composer Agent revolutionizes development by building complete full-stack applications from a single prompt. Multi-model AI support, autonomous coding, free trial available.",
+    description: "Complete guide to Composer Agent in Code LLM - the AI tool that generates full applications autonomously with advanced language models.",
+    readTime: "20 min",
+    date: "2025-03-02",
+    slug: "composer-agent-code-llm-full-stack",
+    keywords: ["composer agent", "code llm", "abacus ai", "full stack development", "autonomous coding"]
   }
 ]
 

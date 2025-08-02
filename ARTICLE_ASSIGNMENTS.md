@@ -1,8 +1,8 @@
 # 📋 News Articles Assignment Tracker
 
 **Total Articles:** 44  
-**Completed:** 16  
-**Remaining:** 28  
+**Completed:** 19  
+**Remaining:** 25  
 
 ## 🎯 Instructions for All Agents
 
@@ -40,7 +40,7 @@
 
 **CURRENT BATCH:**
 - [x] Archon-_The_AI_Agent_That_Autonomously_Builds_AI_Agents.md ✅
-- [ ] Builder.ai-_From_Billion-Dollar_AI_Darling_to_Bust_—_What_Went_Wrong_.md **IN PROGRESS**
+- [x] Builder.ai-_From_Billion-Dollar_AI_Darling_to_Bust_—_What_Went_Wrong_.md ✅
 - [x] Dart_AI-_The_Free_Agentic_Project_Manager_That_Automates_Everything.md ✅
 - [x] DeepAgent_Update-_The_God-Tier_AI_Agent_That_Can_Build_and_Automate_Almost_Anything.md ✅
 
@@ -69,10 +69,10 @@
 - [x] DeepSeek_Janus_Pro_7B-_A_Unified_Multimodal_Powerhouse.md ✅
 - [x] Full-Stack_App_Development_with_Gemini_2.0_Pro_&_Bolt.DIY.md ✅
 - [x] GPT-4.1_vs_Claude_Sonnet_3.7-_Is_OpenAI's_Latest_Model_a_Game-Changer_.md ✅
-- [ ] Gemini_2.5_Flash-_Google's_Budget_AI_Model_That_Rivals_the_Giants.md
+- [x] Gemini_2.5_Flash-_Google's_Budget_AI_Model_That_Rivals_the_Giants.md ✅
 
 **FINAL BATCH:**
-- [ ] Qwen_3-_Alibaba's_Open-Source_LLM_Leap.md
+- [x] Qwen_3-_Alibaba's_Open-Source_LLM_Leap.md ✅
 - [ ] Revolutionizing_Full-Stack_Development-_The_New_Composer_Agent_in_Code_LLM.md
 - [ ] RooCode_v3.3_Update_–_A_Cline_Alternative.md
 - [ ] The_All-In-One_RAG_Platform_for_AI_Document_Parsing,_Embeddings,_and_Vector_Search.md
@@ -111,10 +111,10 @@
 
 | Agent | Assigned | Completed | In Progress | Remaining |
 |-------|----------|-----------|-------------|-----------|
-| Agent 1 | 19 | 10 | 0 | 9 |
-| Agent 2 | 13 | 7 | 0 | 6 |
+| Agent 1 | 19 | 11 | 0 | 8 |
+| Agent 2 | 13 | 9 | 0 | 4 |
 | Agent 3 | 12 | 0 | 0 | 12 |
-| Total | 44 | 17 | 0 | 27 |
+| Total | 44 | 19 | 0 | 25 |
 
 ---
 
