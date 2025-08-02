@@ -364,14 +364,16 @@ interface SectionHeaderProps {
   badgeColor?: string
   title: string | React.ReactNode
   description?: string | React.ReactNode
+  subtitle?: string | React.ReactNode
   isVisible: boolean
 }
 
-export function SectionHeader({ badge, badgeColor = 'text-gray-400', title, description, isVisible }: SectionHeaderProps) {
+export function SectionHeader({ badge, badgeColor = 'text-gray-400', title, description, subtitle, isVisible }: SectionHeaderProps) {
   return (
     <div className={`text-center mb-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
       {badge && <p className={`text-sm ${badgeColor} uppercase tracking-wider mb-4`}>{badge}</p>}
       <h2 className="text-4xl md:text-5xl font-bold mb-6">{title}</h2>
+      {subtitle && <p className="text-xl text-gray-400">{subtitle}</p>}
       {description && <p className="text-xl text-gray-400">{description}</p>}
     </div>
   )

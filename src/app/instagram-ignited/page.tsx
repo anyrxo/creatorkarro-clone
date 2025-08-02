@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
 import {
   ValueBadge,
@@ -14,8 +15,23 @@ import {
   HeroSection,
   SectionHeader
 } from '@/components/course/CourseLayout'
+import CryptoCheckout from '@/components/checkout/CryptoCheckout'
 
 export default function InstagramIgnitedPage() {
+  // Crypto checkout state
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
+
+  // Product information for Instagram Ignited
+  const product = {
+    id: 'instagram-ignited',
+    name: 'Instagram Ignited: 0 to 500K Followers',
+    price: 297,
+    description: 'Complete Instagram growth system with 10+ modules, 100+ lessons, and $8,879 worth of bonuses'
+  }
+
+  const handleBuyNow = () => {
+    setIsCheckoutOpen(true)
+  }
   // Scroll animations for different sections
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const problemAnimation = useScrollAnimation({ threshold: 0.1 })
@@ -297,9 +313,9 @@ export default function InstagramIgnitedPage() {
 
           <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
             <p className="text-lg md:text-xl text-gray-400 mb-8">Ready to take your brand to the next level?</p>
-            <Link href="#pricing" className="cta-button inline-block">
+            <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
               Claim Full Creator Bundle
-            </Link>
+            </button>
           </div>
         </div>
       </section>
@@ -397,9 +413,9 @@ export default function InstagramIgnitedPage() {
           <div className={`text-center scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
             <h3 className="text-2xl md:text-4xl font-bold mb-4">Become my next success story</h3>
             <p className="text-lg md:text-xl text-gray-400 mb-8">Join IImagined and turn content creation into a full-time career!</p>
-            <Link href="#pricing" className="cta-button inline-block">
+            <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
               Join IImagined 4.0
-            </Link>
+            </button>
           </div>
         </div>
       </section>
@@ -495,9 +511,9 @@ export default function InstagramIgnitedPage() {
             <p className="text-lg md:text-xl text-gray-400 mb-8">
               Access all recorded page audits, lessons, and our private community in the evergreen, constantly updated program.
             </p>
-            <Link href="#pricing" className="cta-button inline-block">
+            <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
               Join IImagined 4.0
-            </Link>
+            </button>
             <p className="text-sm text-gray-400 mt-4">And claim all the bonuses</p>
           </div>
         </div>
@@ -566,8 +582,7 @@ export default function InstagramIgnitedPage() {
               >
                 <ValueBadge 
                   value={bonus.value}
-                  variant="yellow"
-                  className="absolute top-4 right-4"
+                  className="absolute top-4 right-4 bg-yellow-500"
                 />
                 <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400">{bonus.title}</h3>
                 <p className="text-gray-300 leading-relaxed">{bonus.description}</p>
@@ -734,12 +749,12 @@ export default function InstagramIgnitedPage() {
             </div>
             
             <div className="space-y-6">
-              <Link
-                href="#"
-                className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse"
+              <button
+                onClick={handleBuyNow}
+                className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse cursor-pointer"
               >
                 🔥 CLAIM INSTAGRAM IGNITED NOW - $297 🔥
-              </Link>
+              </button>
               
               <p className="text-sm text-gray-400">
                 ✅ Instant Access • ✅ Lifetime Updates • ✅ 30-Day Money-Back Guarantee
@@ -837,12 +852,12 @@ export default function InstagramIgnitedPage() {
                 Join the private mastermind and ask me directly on our weekly live calls. 
                 You'll get personalized answers and strategies specific to your situation.
               </p>
-              <Link
-                href="#"
-                className="cta-button inline-block text-lg"
+              <button
+                onClick={handleBuyNow}
+                className="cta-button inline-block text-lg cursor-pointer"
               >
                 Join Instagram Ignited & Ask Me Anything
-              </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -883,9 +898,9 @@ export default function InstagramIgnitedPage() {
                 <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
                   {story.story}
                 </p>
-                <Link href="#pricing" className="cta-button inline-block">
+                <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
                   Get Started
-                </Link>
+                </button>
               </div>
             ))}
           </div>
@@ -1031,9 +1046,9 @@ export default function InstagramIgnitedPage() {
               </p>
             </div>
             
-            <Link href="#pricing" className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4">
+            <button onClick={handleBuyNow} className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 cursor-pointer">
               🚀 TRANSFORM MY INSTAGRAM NOW - $297 🚀
-            </Link>
+            </button>
             
             <p className="text-sm text-gray-400 mb-6">
               ✅ Instant Access • ✅ 30-Day Guarantee • ✅ Lifetime Updates • ✅ $8,879 in Bonuses
@@ -1056,6 +1071,13 @@ export default function InstagramIgnitedPage() {
           </div>
         </div>
       </section>
+      
+      {/* Crypto Checkout Modal */}
+      <CryptoCheckout
+        isOpen={isCheckoutOpen}
+        onClose={() => setIsCheckoutOpen(false)}
+        product={product}
+      />
     </div>
   )
 }

@@ -162,6 +162,39 @@ const newsArticles = [
     keywords: ["ai comparison 2025", "chatgpt vs gemini", "perplexity vs grok", "ai assistant comparison", "best ai chatbot", "ai performance analysis"]
   },
   {
+    title: "autoMate Review: Free Open-Source Alternative to Manus AI - Complete Setup Guide & Performance Analysis (2025)",
+    category: "AI TOOLS",
+    categoryColor: "green",
+    excerpt: "autoMate emerges as a powerful open-source alternative to Manus AI, offering computer control capabilities, AI-powered automation, and user-friendly interface. Built on Microsoft's Omni Parser V2 with full system interaction.",
+    description: "Complete autoMate review: Free open-source AI automation tool vs Manus AI. Installation guide, system requirements, performance analysis, and real-world use cases for developers and AI enthusiasts.",
+    readTime: "22 min",
+    date: "2025-03-28",
+    slug: "automate-free-open-source-alternative-manus-ai",
+    keywords: ["automate tool", "manus ai alternative", "open source automation", "ai powered automation", "computer control ai", "microsoft omni parser"]
+  },
+  {
+    title: "Augment Code: The Free AI Coding Assistant That Automates Your Codebase - Complete Review & Setup Guide (2025)",
+    category: "AI TOOLS",
+    categoryColor: "green",
+    excerpt: "Discover Augment Code, the free AI coding assistant with deep contextual awareness. Get 3,000 free messages monthly, unlimited code completions, and revolutionary Next Edit automation for complex codebases.",
+    description: "Complete Augment Code review: Free AI coding assistant with deep contextual awareness, Slack integration, Next Edit automation, and enterprise security. Perfect for large development teams.",
+    readTime: "25 min",
+    date: "2025-03-19",
+    slug: "augment-code-free-ai-coding-assistant-that-automates-codebase",
+    keywords: ["augment code", "ai coding assistant", "free coding tools", "contextual code completion", "slack integration", "next edit automation"]
+  },
+  {
+    title: "Google AI Studio Update: A Powerful, Free All-in-One Platform for Developers and Creators - Complete Developer Guide (2025)",
+    category: "AI PLATFORMS",
+    categoryColor: "blue",
+    excerpt: "Discover Google AI Studio's game-changing update: free Gemini 2.5 Flash model, built-in code editor, video generation, and 10+ starter templates. Complete developer guide with setup tutorials.",
+    description: "Complete Google AI Studio developer guide: Free Gemini 2.5 Flash model, built-in VS Code editor, video generation, 10+ production templates, and enterprise deployment. Everything developers need to know.",
+    readTime: "28 min",
+    date: "2025-04-30",
+    slug: "google-ai-studio-update-powerful-free-all-in-one-platform-developers-creators",
+    keywords: ["google ai studio", "gemini 2.5 flash", "free ai development", "ai platform", "google ai models", "ai development tools"]
+  },
+  {
     title: "Vectorize RAG Platform: All-in-One AI Document Parsing & Vector Search Revolution",
     category: "AI PLATFORMS",
     categoryColor: "blue",

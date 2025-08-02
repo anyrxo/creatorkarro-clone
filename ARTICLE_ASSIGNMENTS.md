@@ -1,8 +1,8 @@
 # 📋 News Articles Assignment Tracker
 
 **Total Articles:** 44  
-**Completed:** 24  
-**Remaining:** 20  
+**Completed:** 30  
+**Remaining:** 14  
 
 ## 🎯 Instructions for All Agents
 
@@ -19,7 +19,7 @@
    - Anyro's expert insights
    - CTA sections
 
-## ✅ COMPLETED Articles (14)
+## ✅ COMPLETED Articles (30)
 
 - [x] AI_Assistant_Showdown-_ChatGPT_vs_Gemini_vs_Perplexity_vs_Claude.md
 - [x] OpenAIs_03_Pro.md  
@@ -35,6 +35,9 @@
 - [x] Dart_AI-_The_Free_Agentic_Project_Manager_That_Automates_Everything.md (Agent 1)
 - [x] DeepAgent_Update-_The_God-Tier_AI_Agent_That_Can_Build_and_Automate_Almost_Anything.md (Agent 1)
 - [x] ✨🤖_DeepSeek_R1-_The_New_Era_of_Open-Source_AI.md (Agent 1)
+- [x] autoMate-_A_Free_and_Open-Source_Alternative_to_Manus_AI.md (Agent 1)
+- [x] Augment_Code-_The_Free_AI_Coding_Assistant_That_Automates_Your_Codebase.md (Agent 3)
+- [x] Google_AI_Studio_Update-_A_Powerful,_Free_All-in-One_Platform_for_Developers_and_Creators.md (Agent 3)
 
 ## 🔄 AGENT 1 Assignment (13 articles total)
 
@@ -54,7 +57,7 @@
 **FINAL BATCH:**
 - [x] The_Ultimate_AI_Showdown-_ChatGPT_vs_Gemini_vs_Perplexity_vs_Grok.md ✅
 - [ ] Unveiling_Google's_Gemini_2.0_Pro_–_The_Future_of_AI_Coding.md
-- [ ] autoMate-_A_Free_and_Open-Source_Alternative_to_Manus_AI.md
+- [x] autoMate-_A_Free_and_Open-Source_Alternative_to_Manus_AI.md ✅
 - [x] ✨🤖_DeepSeek_R1-_The_New_Era_of_Open-Source_AI.md ✅
 
 ## 🔄 AGENT 2 Assignment (13 articles total)
@@ -81,8 +84,8 @@
 ## 🔄 AGENT 3 Assignment (12 articles total)
 
 **CURRENT BATCH:**
-- [ ] Augment_Code-_The_Free_AI_Coding_Assistant_That_Automates_Your_Codebase.md
-- [ ] Google_AI_Studio_Update-_A_Powerful,_Free_All-in-One_Platform_for_Developers_and_Creators.md
+- [x] Augment_Code-_The_Free_AI_Coding_Assistant_That_Automates_Your_Codebase.md ✅ (Agent 3)
+- [x] Google_AI_Studio_Update-_A_Powerful,_Free_All-in-One_Platform_for_Developers_and_Creators.md ✅ (Agent 3)
 - [ ] 💻✨_Revolutionizing_Developer_Productivity-_Windsurf_Wave_2.md
 - [ ] 🤖_Qwen-2.5_Max_Raises_the_Bar_for_AI.md
 
@@ -111,10 +114,10 @@
 
 | Agent | Assigned | Completed | In Progress | Remaining |
 |-------|----------|-----------|-------------|-----------|
-| Agent 1 | 19 | 14 | 0 | 5 |
-| Agent 2 | 13 | 12 | 0 | 1 |
-| Agent 3 | 12 | 0 | 0 | 12 |
-| Total | 44 | 24 | 0 | 20 |
+| Agent 1 | 19 | 15 | 0 | 4 |
+| Agent 2 | 13 | 13 | 0 | 0 |
+| Agent 3 | 12 | 2 | 0 | 10 |
+| Total | 44 | 30 | 0 | 14 |
 
 ---
 

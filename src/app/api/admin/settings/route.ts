@@ -79,6 +79,15 @@ interface PaymentSettings {
   nowpaymentsEnvironment: 'sandbox' | 'production';
   supportedCryptoCurrencies: string[];
   cryptoPaymentTimeout: number;
+  directWalletEnabled: boolean;
+  walletAddresses: {
+    BTC: string;
+    ETH: string;
+    SOL: string;
+    USDT: string;
+    USDC: string;
+  };
+  paymentMethod: 'nowpayments' | 'direct_wallet' | 'both';
   defaultCurrency: string;
   taxRate: number;
   taxIncluded: boolean;
@@ -187,6 +196,15 @@ const getSettings = async () => {
       nowpaymentsEnvironment: 'production' as const,
       supportedCryptoCurrencies: ['BTC', 'ETH', 'USDT', 'USDC', 'LTC', 'XRP', 'ADA', 'DOT', 'MATIC', 'TRX', 'BNB', 'SOL'],
       cryptoPaymentTimeout: 60,
+      directWalletEnabled: true,
+      walletAddresses: {
+        BTC: 'bc1qg58la9talxvag8r0pfv6cq3m7t4hg7anttzz97',
+        ETH: '0xCe469428F94D48d433489374111ca80Df880FA75',
+        SOL: 'EYyjCBorMF3yxjLHM9KEuez6kSzLWo58Z4PMyDZEYjw4',
+        USDT: '0xCe469428F94D48d433489374111ca80Df880FA75', // ERC-20 USDT uses ETH address
+        USDC: '0xCe469428F94D48d433489374111ca80Df880FA75'  // ERC-20 USDC uses ETH address
+      },
+      paymentMethod: 'both' as const,
       defaultCurrency: 'USD',
       taxRate: 0,
       taxIncluded: false,

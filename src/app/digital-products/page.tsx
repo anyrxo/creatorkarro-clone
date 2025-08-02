@@ -77,6 +77,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="BRUTAL REALITY"
               badgeColor="bg-zinc-900 border border-red-500 text-red-400"
+              isVisible={problemAnimation.isVisible}
               title="You're Trapped in the <span className='text-red-400'>Trading Time for Money</span> Prison"
               subtitle="While others build digital empires that work 24/7, you're stuck in the outdated hustle..."
             />
@@ -120,7 +121,7 @@ export default function DigitalProductsPage() {
                 ref={problemCards.setElementRef(index)}
                 className={`scroll-fade-up ${problemCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
-                <ProblemCard {...problem} />
+                <ProblemCard {...problem} isVisible={problemCards.visibleElements[index]} />
               </div>
             ))}
           </div>
@@ -159,6 +160,7 @@ export default function DigitalProductsPage() {
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
               title="Digital Products Academy <span className='text-green-400'>Changes Everything</span>"
               subtitle="The ONLY proven system that transforms your knowledge into high-converting digital products that scale infinitely."
+              isVisible={solutionAnimation.isVisible}
             />
           </div>
 
@@ -267,7 +269,7 @@ export default function DigitalProductsPage() {
             ref={resultsAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible' : ''}`}
           >
-            <SectionHeader
+            <SectionHeader isVisible={resultsAnimation.isVisible}
               badge="PROVEN RESULTS"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
               title="The Digital Product Revolution is <span className='text-green-400'>Here</span>"
@@ -309,6 +311,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="IS THIS YOU?"
               badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
+              isVisible={whoForAnimation.isVisible}
               title="Who This System is <span className='text-blue-400'>Perfect</span> For"
               subtitle="See if you match the profile of our most successful students."
             />
@@ -353,6 +356,7 @@ export default function DigitalProductsPage() {
               badge="SUCCESS STORIES"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
               title="Real People, <span className='text-green-400'>Real Results</span>"
+              isVisible={studentResultsAnimation.isVisible}
               subtitle="These entrepreneurs went from broke to building digital empires..."
             />
           </div>
@@ -395,6 +399,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="COMPLETE SYSTEM"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              isVisible={modulesAnimation.isVisible}
               title="Everything You Need to Build <span className='text-green-400'>Million-Dollar Digital Products</span>"
               subtitle="The most comprehensive digital product creation system ever built."
             />
@@ -480,6 +485,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="INCREDIBLE BONUSES"
               badgeColor="bg-zinc-900 border border-yellow-500 text-yellow-400"
+              isVisible={bonusAnimation.isVisible}
               title="Get $3,794 in <span className='text-yellow-400'>Premium Bonuses</span> FREE"
               subtitle="These bonuses alone are worth more than most courses. But you get them FREE today."
             />
@@ -525,8 +531,7 @@ export default function DigitalProductsPage() {
               >
                 <ValueBadge 
                   value={bonus.value}
-                  variant="yellow"
-                  className="absolute top-4 right-4"
+                  className="absolute top-4 right-4 bg-yellow-500"
                 />
                 <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400">{bonus.title}</h3>
                 <p className="text-gray-300 leading-relaxed">{bonus.description}</p>
@@ -546,6 +551,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="INSANE VALUE"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              isVisible={pricingAnimation.isVisible}
               title="This is <span className='text-green-400'>RIDICULOUS</span>"
               subtitle="Let's do the math on what you're actually getting today vs. learning this the hard way..."
             />
@@ -599,23 +605,22 @@ export default function DigitalProductsPage() {
             <PricingComparison
               options={[
                 {
-                  title: "Trial & Error Method",
+                  name: "Trial & Error Method",
+                  description: "LOST REVENUE",
                   price: "$10,000+",
-                  period: "LOST REVENUE",
-                  color: "border-red-500 text-red-400",
                   features: [
                     "Years of failed launches",
                     "Wasted time and money", 
                     "No guidance or system",
                     "High stress and frustration",
                     "No guarantee of success"
-                  ]
+                  ],
+                  disabled: true
                 },
                 {
-                  title: "Business Coach",
+                  name: "Business Coach",
+                  description: "PER MONTH",
                   price: "$5,000+",
-                  period: "PER MONTH",
-                  color: "border-orange-500 text-orange-400",
                   features: [
                     "Generic business advice",
                     "Not digital product specific",
@@ -625,11 +630,11 @@ export default function DigitalProductsPage() {
                   ]
                 },
                 {
-                  title: "Digital Products Academy",
+                  name: "Digital Products Academy",
+                  description: "ONE-TIME",
                   price: "$297",
-                  period: "ONE-TIME",
-                  color: "border-green-500 text-green-400",
                   badge: "🔥 BEST VALUE",
+                  popular: true,
                   features: [
                     "Complete proven system",
                     "89% success rate",
@@ -639,6 +644,7 @@ export default function DigitalProductsPage() {
                   ]
                 }
               ]}
+              isVisible={pricingAnimation.isVisible}
             />
           </div>
 
@@ -715,6 +721,7 @@ export default function DigitalProductsPage() {
               badge="SUCCESS STORIES"
               badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
               title="What <span className='text-blue-400'>Digital Product</span> Students Are Saying..."
+              isVisible={testimonialsAnimation.isVisible}
               subtitle="Real entrepreneurs sharing their transformation stories."
             />
           </div>
@@ -745,7 +752,14 @@ export default function DigitalProductsPage() {
                 ref={testimonialCards.setElementRef(index)}
                 className={`testimonial-card hover-lift scroll-fade-up ${testimonialCards.visibleElements[index] ? `visible scroll-stagger-${index + 1}` : ''}`}
               >
-                <TestimonialCard {...testimonial} />
+                <TestimonialCard 
+                  name={testimonial.name}
+                  role={testimonial.role.split(' • ')[0]}
+                  image={testimonial.avatar}
+                  testimonial={testimonial.content}
+                  result={testimonial.role.split(' • ')[1]}
+                  isVisible={testimonialCards.visibleElements[index]}
+                />
               </div>
             ))}
           </div>
@@ -762,6 +776,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="FAQ"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              isVisible={faqAnimation.isVisible}
               title="Frequently Asked <span className='text-green-400'>Questions</span>"
               subtitle="Everything you need to know about building digital product empires."
             />
@@ -823,7 +838,7 @@ export default function DigitalProductsPage() {
                 ref={faqCards.setElementRef(index)}
                 className={`bg-zinc-900 rounded-2xl p-6 md:p-8 hover-lift scroll-fade-up ${faqCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
-                <FAQCard {...faq} />
+                <FAQCard {...faq} isVisible={faqCards.visibleElements[index]} />
               </div>
             ))}
           </div>
