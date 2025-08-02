@@ -416,7 +416,7 @@ export default function ComfyUIWorkflowsPage() {
             />
           </div>
 
-          <div className={`text-center mt-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
+          <div className={`text-center mt-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 max-w-3xl mx-auto card-hover">
               <h3 className="text-2xl font-bold mb-4 text-red-400">The Hidden Cost of Inefficient AI Workflows</h3>
               <p className="text-lg text-gray-300 mb-4">
@@ -445,7 +445,7 @@ export default function ComfyUIWorkflowsPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-center mb-16">
-            <div className={`scroll-fade-up ${isVisible ? 'visible' : ''}`}>
+            <div className={`scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}>
               <h3 className="text-3xl font-bold mb-6 text-green-400">What if you could...</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -474,7 +474,7 @@ export default function ComfyUIWorkflowsPage() {
                 </div>
               </div>
             </div>
-            <div className={`scroll-fade-up ${isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className={`scroll-fade-up ${solutionAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="bg-gradient-to-br from-orange-600/20 to-red-600/20 border border-orange-500/30 rounded-2xl p-8">
                 <h4 className="text-2xl font-bold mb-4 text-center">The ComfyUI Advantage</h4>
                 <div className="text-center mb-6">
@@ -537,7 +537,7 @@ export default function ComfyUIWorkflowsPage() {
           </div>
 
           {/* Total Value */}
-          <div className={`text-center mt-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
+          <div className={`text-center mt-16 scroll-fade-up ${curriculumAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 border border-gold-500/50 rounded-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-3xl font-bold mb-4 text-yellow-400">
                 <TypingAnimation
@@ -582,7 +582,7 @@ export default function ComfyUIWorkflowsPage() {
             ))}
           </div>
 
-          <div className={`text-center mt-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
+          <div className={`text-center mt-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 border border-gold-500/50 rounded-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold mb-4 text-gold-400">
                 <BlurIn
@@ -615,7 +615,7 @@ export default function ComfyUIWorkflowsPage() {
 
           {/* Value Stack */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 border-2 border-gold-500/50 rounded-2xl p-8 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
+            <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 border-2 border-gold-500/50 rounded-2xl p-8 scroll-fade-up ${valueAnimation.isVisible ? 'visible' : ''}`}>
               <div className="text-center mb-8">
                 <h3 className="text-3xl font-bold mb-4 text-gold-400">Total Package Value Breakdown</h3>
                 <p className="text-gray-300">Everything you need to master ComfyUI workflows</p>
@@ -676,7 +676,7 @@ export default function ComfyUIWorkflowsPage() {
           </div>
 
           {/* Risk Reversal */}
-          <div className={`text-center mt-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
+          <div className={`text-center mt-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-8 max-w-3xl mx-auto">
               <h3 className="text-2xl font-bold mb-4 text-green-400">🛡️ 60-Day "Master ComfyUI" Guarantee</h3>
               <p className="text-gray-300 mb-4">
@@ -718,7 +718,7 @@ export default function ComfyUIWorkflowsPage() {
             ))}
           </div>
 
-          <div className={`text-center scroll-fade-up ${isVisible ? 'visible' : ''}`}>
+          <div className={`text-center scroll-fade-up ${testimonialsAnimation.isVisible ? 'visible' : ''}`}>
             <h3 className="text-3xl font-bold mb-4">
               <BlurIn
                 word="Become our next ComfyUI"

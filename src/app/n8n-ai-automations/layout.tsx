@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'N8N AI Automations Mastery - 50+ Advanced Workflows & Training',
     description: 'Build intelligent automation systems with N8N and AI. Master advanced workflows that scale your business operations automatically.',
-    type: 'product',
+    type: 'website',
     images: [
       {
         url: 'https://iimagined.ai/n8n-ai-automations-og.png',

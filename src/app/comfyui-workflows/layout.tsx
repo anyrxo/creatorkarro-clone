@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'ComfyUI Workflows Mastery - 50+ Professional Templates & Training',
     description: 'Transform from frustrated AI user to workflow master. Create professional content 10x faster with bulletproof ComfyUI systems.',
-    type: 'product',
+    type: 'website',
     images: [
       {
         url: 'https://iimagined.ai/comfyui-workflows-og.png',
