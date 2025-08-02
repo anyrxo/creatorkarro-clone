@@ -91,12 +91,6 @@ export default function ExpandedAdminDashboard() {
   const [selectedUserRole, setSelectedUserRole] = useState('all')
   const [selectedOrderStatus, setSelectedOrderStatus] = useState('all')
 
-  useEffect(() => {
-    if (isAuthenticated) {
-      loadAllData()
-    }
-  }, [isAuthenticated, loadAllData])
-
   const loadAllData = useCallback(async () => {
     setLoading(true)
     try {
@@ -113,6 +107,12 @@ export default function ExpandedAdminDashboard() {
     }
     setLoading(false)
   }, [])
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      loadAllData()
+    }
+  }, [isAuthenticated, loadAllData])
 
   const loadUsers = async () => {
     // Mock user data - replace with real API
