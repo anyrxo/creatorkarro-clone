@@ -30,6 +30,17 @@ const newsArticles = [
     keywords: ["openai", "03 pro", "ai reasoning", "strategic ai", "performance analysis"]
   },
   {
+    title: "GPT-4.1 vs Claude Sonnet 3.7: Complete Model Comparison",
+    category: "AI NEWS",
+    categoryColor: "purple",
+    excerpt: "OpenAI's GPT-4.1 delivers impressive performance at 80% lower cost than Claude Sonnet 3.7. Real-world testing reveals surprising strengths in TypeScript development and data processing.",
+    description: "Comprehensive comparison of GPT-4.1 and Claude Sonnet 3.7 performance, pricing, and use cases.",
+    readTime: "18 min",
+    date: "2025-04-14",
+    slug: "gpt-4-1-vs-claude-sonnet-3-7-comparison",
+    keywords: ["gpt 4.1", "claude sonnet 3.7", "ai model comparison", "openai", "anthropic"]
+  },
+  {
     title: "Anthropic Launches Claude 4: A Strategic Pivot from Chatbots to Agentic Coding Infrastructure",
     category: "AI NEWS",
     categoryColor: "purple",

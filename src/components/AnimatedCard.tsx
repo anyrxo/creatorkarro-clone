@@ -17,4 +17,135 @@ export default function AnimatedCard({
   hoverEffect = 'lift',
   glowColor = 'blue',
   delay = 0
-}: AnimatedCardProps) {\n  const [isVisible, setIsVisible] = useState(false)\n  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })\n  const cardRef = useRef<HTMLDivElement>(null)\n  const glowRef = useRef<HTMLDivElement>(null)\n\n  useEffect(() => {\n    const observer = new IntersectionObserver(\n      ([entry]) => {\n        if (entry.isIntersecting) {\n          setTimeout(() => setIsVisible(true), delay)\n        }\n      },\n      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }\n    )\n\n    if (cardRef.current) {\n      observer.observe(cardRef.current)\n    }\n\n    return () => observer.disconnect()\n  }, [delay])\n\n  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {\n    if (!cardRef.current) return\n\n    const rect = cardRef.current.getBoundingClientRect()\n    const x = ((e.clientX - rect.left) / rect.width) * 100\n    const y = ((e.clientY - rect.top) / rect.height) * 100\n\n    setMousePosition({ x, y })\n\n    if (hoverEffect === 'tilt') {\n      const centerX = rect.left + rect.width / 2\n      const centerY = rect.top + rect.height / 2\n      const rotateX = (e.clientY - centerY) / 10\n      const rotateY = (centerX - e.clientX) / 10\n\n      cardRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px)`\n    } else if (hoverEffect === 'magnetic') {\n      const centerX = rect.left + rect.width / 2\n      const centerY = rect.top + rect.height / 2\n      const deltaX = (e.clientX - centerX) * 0.1\n      const deltaY = (e.clientY - centerY) * 0.1\n\n      cardRef.current.style.transform = `translate(${deltaX}px, ${deltaY}px)`\n    }\n  }\n\n  const handleMouseLeave = () => {\n    if (hoverEffect === 'tilt' || hoverEffect === 'magnetic') {\n      if (cardRef.current) {\n        cardRef.current.style.transform = ''\n      }\n    }\n    setMousePosition({ x: 50, y: 50 })\n  }\n\n  const getHoverStyles = () => {\n    switch (hoverEffect) {\n      case 'lift':\n        return 'hover:-translate-y-4 hover:shadow-2xl'\n      case 'glow':\n        return `hover:shadow-2xl hover:shadow-${glowColor}-500/25`\n      case 'scale':\n        return 'hover:scale-105'\n      case 'tilt':\n      case 'magnetic':\n        return 'transition-all duration-300 ease-out'\n      default:\n        return 'hover:-translate-y-2'\n    }\n  }\n\n  return (\n    <div\n      ref={cardRef}\n      className={cn(\n        'card-premium group relative',\n        'transform-gpu transition-all duration-500 ease-out',\n        'opacity-0 translate-y-8',\n        {\n          'opacity-100 translate-y-0': isVisible,\n        },\n        getHoverStyles(),\n        className\n      )}\n      onMouseMove={handleMouseMove}\n      onMouseLeave={handleMouseLeave}\n      style={{\n        transitionDelay: `${delay}ms`,\n      }}\n    >\n      {/* Background glow effect */}\n      {hoverEffect === 'glow' && (\n        <div\n          ref={glowRef}\n          className={cn(\n            'absolute inset-0 rounded-inherit opacity-0 group-hover:opacity-100',\n            'transition-opacity duration-500',\n            `bg-gradient-to-r from-${glowColor}-500/20 to-purple-500/20`,\n            'blur-xl -z-10 scale-110'\n          )}\n        />\n      )}\n\n      {/* Mouse tracking light effect */}\n      <div\n        className=\"absolute inset-0 rounded-inherit opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none\"\n        style={{\n          background: `radial-gradient(circle 150px at ${mousePosition.x}% ${mousePosition.y}%, rgba(255,255,255,0.1) 0%, transparent 50%)`\n        }}\n      />\n\n      {/* Border gradient */}\n      <div className=\"absolute inset-0 rounded-inherit opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10\">\n        <div className={cn(\n          'absolute inset-[1px] rounded-inherit',\n          `bg-gradient-to-r from-${glowColor}-500/20 via-purple-500/20 to-${glowColor}-500/20`\n        )} />\n      </div>\n\n      {/* Content */}\n      <div className=\"relative z-10 h-full\">\n        {children}\n      </div>\n\n      {/* Shimmer effect */}\n      <div className=\"absolute inset-0 -top-1 -bottom-1 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:animate-shimmer pointer-events-none\" />\n    </div>\n  )\n}
+}: AnimatedCardProps) {
+  const [isVisible, setIsVisible] = useState(false)
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const cardRef = useRef<HTMLDivElement>(null)
+  const glowRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => setIsVisible(true), delay)
+        }
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    )
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [delay])
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cardRef.current) return
+
+    const rect = cardRef.current.getBoundingClientRect()
+    const x = ((e.clientX - rect.left) / rect.width) * 100
+    const y = ((e.clientY - rect.top) / rect.height) * 100
+
+    setMousePosition({ x, y })
+
+    if (hoverEffect === 'tilt') {
+      const centerX = rect.left + rect.width / 2
+      const centerY = rect.top + rect.height / 2
+      const rotateX = (e.clientY - centerY) / 10
+      const rotateY = (centerX - e.clientX) / 10
+
+      cardRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px)`
+    } else if (hoverEffect === 'magnetic') {
+      const centerX = rect.left + rect.width / 2
+      const centerY = rect.top + rect.height / 2
+      const deltaX = (e.clientX - centerX) * 0.1
+      const deltaY = (e.clientY - centerY) * 0.1
+
+      cardRef.current.style.transform = `translate(${deltaX}px, ${deltaY}px)`
+    }
+  }
+
+  const handleMouseLeave = () => {
+    if (hoverEffect === 'tilt' || hoverEffect === 'magnetic') {
+      if (cardRef.current) {
+        cardRef.current.style.transform = ''
+      }
+    }
+    setMousePosition({ x: 50, y: 50 })
+  }
+
+  const getHoverStyles = () => {
+    switch (hoverEffect) {
+      case 'lift':
+        return 'hover:-translate-y-4 hover:shadow-2xl'
+      case 'glow':
+        return `hover:shadow-2xl hover:shadow-${glowColor}-500/25`
+      case 'scale':
+        return 'hover:scale-105'
+      case 'tilt':
+      case 'magnetic':
+        return 'transition-all duration-300 ease-out'
+      default:
+        return 'hover:-translate-y-2'
+    }
+  }
+
+  return (
+    <div
+      ref={cardRef}
+      className={cn(
+        'card-premium group relative',
+        'transform-gpu transition-all duration-500 ease-out',
+        'opacity-0 translate-y-8',
+        {
+          'opacity-100 translate-y-0': isVisible,
+        },
+        getHoverStyles(),
+        className
+      )}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        transitionDelay: `${delay}ms`,
+      }}
+    >
+      {/* Background glow effect */}
+      {hoverEffect === 'glow' && (
+        <div
+          ref={glowRef}
+          className={cn(
+            'absolute inset-0 rounded-inherit opacity-0 group-hover:opacity-100',
+            'transition-opacity duration-500',
+            `bg-gradient-to-r from-${glowColor}-500/20 to-purple-500/20`,
+            'blur-xl -z-10 scale-110'
+          )}
+        />
+      )}
+
+      {/* Mouse tracking light effect */}
+      <div
+        className="absolute inset-0 rounded-inherit opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none"
+        style={{
+          background: `radial-gradient(circle 150px at ${mousePosition.x}% ${mousePosition.y}%, rgba(255,255,255,0.1) 0%, transparent 50%)`
+        }}
+      />
+
+      {/* Border gradient */}
+      <div className="absolute inset-0 rounded-inherit opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10">
+        <div className={cn(
+          'absolute inset-[1px] rounded-inherit',
+          `bg-gradient-to-r from-${glowColor}-500/20 via-purple-500/20 to-${glowColor}-500/20`
+        )} />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 h-full">
+        {children}
+      </div>
+
+      {/* Shimmer effect */}
+      <div className="absolute inset-0 -top-1 -bottom-1 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:animate-shimmer pointer-events-none" />
+    </div>
+  )
+}

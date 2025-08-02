@@ -1,8 +1,8 @@
 # 📋 News Articles Assignment Tracker
 
 **Total Articles:** 44  
-**Completed:** 15  
-**Remaining:** 29  
+**Completed:** 16  
+**Remaining:** 28  
 
 ## 🎯 Instructions for All Agents
 
@@ -67,8 +67,8 @@
 
 **NEXT BATCH:**
 - [x] DeepSeek_Janus_Pro_7B-_A_Unified_Multimodal_Powerhouse.md ✅
-- [ ] Full-Stack_App_Development_with_Gemini_2.0_Pro_&_Bolt.DIY.md
-- [ ] GPT-4.1_vs_Claude_Sonnet_3.7-_Is_OpenAI's_Latest_Model_a_Game-Changer_.md
+- [x] Full-Stack_App_Development_with_Gemini_2.0_Pro_&_Bolt.DIY.md ✅
+- [x] GPT-4.1_vs_Claude_Sonnet_3.7-_Is_OpenAI's_Latest_Model_a_Game-Changer_.md ✅
 - [ ] Gemini_2.5_Flash-_Google's_Budget_AI_Model_That_Rivals_the_Giants.md
 
 **FINAL BATCH:**
@@ -112,9 +112,9 @@
 | Agent | Assigned | Completed | In Progress | Remaining |
 |-------|----------|-----------|-------------|-----------|
 | Agent 1 | 19 | 10 | 0 | 9 |
-| Agent 2 | 13 | 5 | 0 | 8 |
+| Agent 2 | 13 | 7 | 0 | 6 |
 | Agent 3 | 12 | 0 | 0 | 12 |
-| Total | 44 | 15 | 0 | 29 |
+| Total | 44 | 17 | 0 | 27 |
 
 ---
 
