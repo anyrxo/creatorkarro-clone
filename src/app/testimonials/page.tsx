@@ -295,25 +295,25 @@ export default function TestimonialsPage() {
           >
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-blue-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent mb-2">
-                <NumberTicker value={13000} suffix="+" className="text-3xl md:text-4xl font-bold text-blue-400" />
+                <NumberTicker value={13000} className="text-3xl md:text-4xl font-bold text-blue-400" />+
               </div>
               <p className="text-gray-400 text-sm md:text-base">Happy Students</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-green-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-2">
-                <NumberTicker value={125} suffix="M+" className="text-3xl md:text-4xl font-bold text-green-400" />
+                <NumberTicker value={125} className="text-3xl md:text-4xl font-bold text-green-400" />M+
               </div>
               <p className="text-gray-400 text-sm md:text-base">Views Generated</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-purple-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent mb-2">
-                <NumberTicker value={10} suffix="M+" className="text-3xl md:text-4xl font-bold text-purple-400" />
+                <NumberTicker value={10} className="text-3xl md:text-4xl font-bold text-purple-400" />M+
               </div>
               <p className="text-gray-400 text-sm md:text-base">Followers Gained</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-yellow-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent mb-2">
-                <NumberTicker value={5} prefix="$" suffix="M+" className="text-3xl md:text-4xl font-bold text-orange-400" />
+                $<NumberTicker value={5} className="text-3xl md:text-4xl font-bold text-orange-400" />M+
               </div>
               <p className="text-gray-400 text-sm md:text-base">Student Revenue</p>
             </div>
@@ -420,19 +420,19 @@ export default function TestimonialsPage() {
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Starting Point</p>
                       <p className="text-2xl font-bold text-blue-400">
-                        <NumberTicker value={3} suffix="K Followers" className="text-2xl font-bold text-blue-400" />
+                        <NumberTicker value={3} className="text-2xl font-bold text-blue-400" />K Followers
                       </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">First Month</p>
                       <p className="text-2xl font-bold text-green-400">
-                        <NumberTicker value={20} suffix="K Followers" className="text-2xl font-bold text-green-400" />
+                        <NumberTicker value={20} className="text-2xl font-bold text-green-400" />K Followers
                       </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Monthly Revenue</p>
                       <p className="text-2xl font-bold text-yellow-400">
-                        <NumberTicker value={7} prefix="$" suffix="K+" className="text-2xl font-bold text-yellow-400" />
+                        $<NumberTicker value={7} className="text-2xl font-bold text-yellow-400" />K+
                       </p>
                     </div>
                   </div>
@@ -473,19 +473,19 @@ export default function TestimonialsPage() {
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Year 1 Growth</p>
                       <p className="text-2xl font-bold text-purple-400">
-                        <NumberTicker value={60000} suffix="%" className="text-2xl font-bold text-purple-400" />
+                        <NumberTicker value={60000} className="text-2xl font-bold text-purple-400" />%
                       </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Products Launched</p>
                       <p className="text-2xl font-bold text-pink-400">
-                        <NumberTicker value={5} suffix=" Courses" className="text-2xl font-bold text-pink-400" />
+                        <NumberTicker value={5} className="text-2xl font-bold text-pink-400" /> Courses
                       </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Student Community</p>
                       <p className="text-2xl font-bold text-blue-400">
-                        <NumberTicker value={3000} suffix="+" className="text-2xl font-bold text-blue-400" />
+                        <NumberTicker value={3000} className="text-2xl font-bold text-blue-400" />+
                       </p>
                     </div>
                   </div>

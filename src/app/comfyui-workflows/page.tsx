@@ -479,7 +479,7 @@ export default function ComfyUIWorkflowsPage() {
                 <h4 className="text-2xl font-bold mb-4 text-center">The ComfyUI Advantage</h4>
                 <div className="text-center mb-6">
                   <div className="text-4xl font-bold text-orange-400 mb-2">
-                    <NumberTicker value={10} suffix="x Faster" className="text-4xl font-bold text-orange-400" />
+                    <NumberTicker value={10} className="text-4xl font-bold text-orange-400" />x Faster
                   </div>
                   <p className="text-gray-300">Professional Content Creation</p>
                 </div>
@@ -547,7 +547,7 @@ export default function ComfyUIWorkflowsPage() {
                 />
               </h3>
               <div className="text-5xl font-bold text-yellow-400 mb-2">
-                <NumberTicker value={1082} prefix="$" className="text-5xl font-bold text-yellow-400" />
+                $<NumberTicker value={1082} className="text-5xl font-bold text-yellow-400" />
               </div>
               <p className="text-gray-300">6 comprehensive modules + 50+ workflows</p>
             </div>
@@ -592,7 +592,7 @@ export default function ComfyUIWorkflowsPage() {
                 />
               </h3>
               <div className="text-4xl font-bold text-gold-400 mb-2">
-                <NumberTicker value={842} prefix="$" className="text-4xl font-bold text-gold-400" />
+                $<NumberTicker value={842} className="text-4xl font-bold text-gold-400" />
               </div>
               <p className="text-gray-300">Free when you join today</p>
             </div>
@@ -660,7 +660,7 @@ export default function ComfyUIWorkflowsPage() {
                 <div className="flex justify-between items-center text-2xl font-bold">
                   <span className="text-white">TOTAL VALUE:</span>
                   <span className="text-gold-400">
-                    <NumberTicker value={1994} prefix="$" className="text-2xl font-bold text-gold-400" />
+                    $<NumberTicker value={1994} className="text-2xl font-bold text-gold-400" />
                   </span>
                 </div>
               </div>
@@ -825,7 +825,7 @@ export default function ComfyUIWorkflowsPage() {
                     borderRadius="9999px"
                   >
                     <span className="whitespace-nowrap text-2xl font-bold px-12 py-4">
-                      🚀 SECURE EARLY BIRD PRICING - <NumberTicker value={147} prefix="$" className="inline" /> 🚀
+                      🚀 SECURE EARLY BIRD PRICING - $<NumberTicker value={147} className="inline" /> 🚀
                     </span>
                   </ShimmerButton>
                 </Link>
@@ -859,7 +859,7 @@ export default function ComfyUIWorkflowsPage() {
                 </div>
               </h2>
               <p className="text-xl text-gray-400 mb-8">
-                Join creators generating professional AI content <NumberTicker value={10} suffix="x faster" className="text-orange-400 font-bold inline" /> with proven workflows
+                Join creators generating professional AI content <NumberTicker value={10} className="text-orange-400 font-bold inline" />x faster with proven workflows
               </p>
               <Link href="#packages">
                 <ShimmerButton

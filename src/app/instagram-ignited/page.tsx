@@ -1211,19 +1211,19 @@ export default function InstagramIgnitedPage() {
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
               <div className="bg-zinc-900 rounded-lg p-4">
                 <div className="text-2xl font-bold text-green-400">
-                  <NumberTicker value={6000} suffix="+" className="text-2xl font-bold text-green-400" />
+                  <NumberTicker value={6000} className="text-2xl font-bold text-green-400" />+
                 </div>
                 <div className="text-sm text-gray-400">Success Stories</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">
                 <div className="text-2xl font-bold text-blue-400">
-                  <NumberTicker value={2.5} prefix="$" suffix="M+" decimalPlaces={1} className="text-2xl font-bold text-blue-400" />
+                  $<NumberTicker value={2.5} decimalPlaces={1} className="text-2xl font-bold text-blue-400" />M+
                 </div>
                 <div className="text-sm text-gray-400">Revenue Generated</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">
                 <div className="text-2xl font-bold text-yellow-400">
-                  <NumberTicker value={250} suffix="M+" className="text-2xl font-bold text-yellow-400" />
+                  <NumberTicker value={250} className="text-2xl font-bold text-yellow-400" />M+
                 </div>
                 <div className="text-sm text-gray-400">Total Views Created</div>
               </div>

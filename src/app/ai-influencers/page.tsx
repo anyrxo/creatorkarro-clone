@@ -517,8 +517,8 @@ export default function AIInfluencersPage() {
                 <h4 className="text-2xl font-bold mb-4 text-center">AI Influencer Empire Formula</h4>
                 <div className="text-center mb-6">
                   <div className="text-4xl font-bold text-pink-400 mb-2">
-                    <NumberTicker value={10} prefix="$" suffix="K-" className="text-4xl font-bold text-pink-400 inline" />
-                    <NumberTicker value={50} prefix="$" suffix="K/Month" className="text-4xl font-bold text-pink-400 inline" />
+                    $<NumberTicker value={10} className="text-4xl font-bold text-pink-400 inline-block" />K-
+                    $<NumberTicker value={50} className="text-4xl font-bold text-pink-400 inline-block" />K/Month
                   </div>
                   <p className="text-gray-300">Per AI Influencer Model</p>
                 </div>
@@ -586,7 +586,7 @@ export default function AIInfluencersPage() {
                 />
               </h3>
               <div className="text-5xl font-bold text-yellow-400 mb-2">
-                <NumberTicker value={1397} prefix="$" className="text-5xl font-bold text-yellow-400" />
+                $<NumberTicker value={1397} className="text-5xl font-bold text-yellow-400" />
               </div>
               <p className="text-gray-300">8 comprehensive modules + implementation guides</p>
             </div>
@@ -631,7 +631,7 @@ export default function AIInfluencersPage() {
                 />
               </h3>
               <div className="text-4xl font-bold text-gold-400 mb-2">
-                <NumberTicker value={1032} prefix="$" className="text-4xl font-bold text-gold-400" />
+                $<NumberTicker value={1032} className="text-4xl font-bold text-gold-400" />
               </div>
               <p className="text-gray-300">Free when you join today</p>
             </div>
@@ -699,7 +699,7 @@ export default function AIInfluencersPage() {
                 <div className="flex justify-between items-center text-2xl font-bold">
                   <span className="text-white">TOTAL VALUE:</span>
                   <span className="text-gold-400">
-                    <NumberTicker value={2429} prefix="$" className="text-2xl font-bold text-gold-400" />
+                    $<NumberTicker value={2429} className="text-2xl font-bold text-gold-400" />
                   </span>
                 </div>
               </div>
@@ -866,7 +866,7 @@ export default function AIInfluencersPage() {
                     borderRadius="9999px"
                   >
                     <span className="whitespace-nowrap text-2xl font-bold px-12 py-4">
-                      🔥 SECURE YOUR SPOT NOW - <NumberTicker value={197} prefix="$" className="inline" /> 🔥
+                      🔥 SECURE YOUR SPOT NOW - $<NumberTicker value={197} className="inline" /> 🔥
                     </span>
                   </ShimmerButton>
                 </Link>
@@ -900,7 +900,7 @@ export default function AIInfluencersPage() {
                 </div>
               </h2>
               <p className="text-xl text-gray-400 mb-8">
-                Join hundreds of creators who are already making <NumberTicker value={10} prefix="$" suffix="K+" className="text-pink-400 font-bold inline" /> per month with faceless AI brands
+                Join hundreds of creators who are already making $<NumberTicker value={10} className="text-pink-400 font-bold inline" />K+ per month with faceless AI brands
               </p>
               <Link href="#packages">
                 <ShimmerButton

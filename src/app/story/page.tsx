@@ -83,15 +83,15 @@ export default function StoryPage() {
               />
               <div className="grid md:grid-cols-3 gap-6 md:gap-8 text-center">
                 <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-                  <NumberTicker value={500} suffix="K+" className="text-3xl md:text-4xl font-bold text-blue-400 mb-2" />
+                  <NumberTicker value={500} className="text-3xl md:text-4xl font-bold text-blue-400 mb-2" />K+
                   <p className="text-gray-400">Total Followers</p>
                 </div>
                 <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-                  <NumberTicker value={3} prefix="$" suffix="M+" className="text-3xl md:text-4xl font-bold text-green-400 mb-2" />
+                  $<NumberTicker value={3} className="text-3xl md:text-4xl font-bold text-green-400 mb-2" />M+
                   <p className="text-gray-400">Revenue Generated</p>
                 </div>
                 <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-                  <NumberTicker value={500} suffix="M+" className="text-3xl md:text-4xl font-bold text-purple-400 mb-2" />
+                  <NumberTicker value={500} className="text-3xl md:text-4xl font-bold text-purple-400 mb-2" />M+
                   <p className="text-gray-400">Total Views</p>
                 </div>
               </div>

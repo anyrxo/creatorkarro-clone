@@ -302,19 +302,19 @@ export default function DigitalProductsPage() {
           <div className={`grid md:grid-cols-3 gap-8 mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
               <div className="text-4xl font-bold text-green-400 mb-2">
-                <NumberTicker value={5} prefix="$" suffix="M+" className="text-4xl font-bold text-green-400" />
+                $<NumberTicker value={5} className="text-4xl font-bold text-green-400" />M+
               </div>
               <div className="text-gray-300">Student Revenue Generated</div>
             </div>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
               <div className="text-4xl font-bold text-blue-400 mb-2">
-                <NumberTicker value={3500} suffix="+" className="text-4xl font-bold text-blue-400" />
+                <NumberTicker value={3500} className="text-4xl font-bold text-blue-400" />+
               </div>
               <div className="text-gray-300">Products Launched</div>
             </div>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
               <div className="text-4xl font-bold text-purple-400 mb-2">
-                <NumberTicker value={89} suffix="%" className="text-4xl font-bold text-purple-400" />
+                <NumberTicker value={89} className="text-4xl font-bold text-purple-400" />%
               </div>
               <div className="text-gray-300">Success Rate</div>
             </div>

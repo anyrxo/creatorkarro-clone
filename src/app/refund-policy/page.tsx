@@ -65,7 +65,7 @@ export default function RefundPolicyPage() {
               className={`bg-zinc-900 border border-zinc-700 rounded-lg p-8 my-12 card-hover hover-lift scroll-fade-up ${guaranteeAnimation.isVisible ? 'visible' : ''}`}
             >
               <h2 className="text-3xl font-bold mb-6 text-center">
-                <NumberTicker value={365} suffix="-Day" className="text-3xl font-bold text-green-400 inline-block" />
+                <NumberTicker value={365} className="text-3xl font-bold text-green-400 inline-block" />-Day
                 <span className="text-white"> Action-Based Money-Back Guarantee</span>
               </h2>
 
@@ -80,7 +80,7 @@ export default function RefundPolicyPage() {
               />
 
               <p className="mb-8">
-                If you follow the program and do not achieve at least one video with <NumberTicker value={1} suffix=" million views" className="font-bold text-blue-400 inline-block" /> within <NumberTicker value={12} suffix=" months" className="font-bold text-green-400 inline-block" />, we'll refund your full purchase price—no questions asked.
+                If you follow the program and do not achieve at least one video with <NumberTicker value={1} className="font-bold text-blue-400 inline-block" /> million views within <NumberTicker value={12} className="font-bold text-green-400 inline-block" /> months, we'll refund your full purchase price—no questions asked.
               </p>
 
               <h3 className="text-2xl font-bold mb-4">To qualify for this guarantee, you must:</h3>

@@ -314,19 +314,19 @@ export default function N8NAutomationsPage() {
           <div className={`grid md:grid-cols-3 gap-8 mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
               <div className="text-4xl font-bold text-purple-400 mb-2">
-                <NumberTicker value={2847} suffix="+" className="text-4xl font-bold text-purple-400" />
+                <NumberTicker value={2847} className="text-4xl font-bold text-purple-400" />+
               </div>
               <div className="text-gray-300">Students Transformed</div>
             </div>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
               <div className="text-4xl font-bold text-green-400 mb-2">
-                <NumberTicker value={40} suffix="+ Hours" className="text-4xl font-bold text-green-400" />
+                <NumberTicker value={40} className="text-4xl font-bold text-green-400" />+ Hours
               </div>
               <div className="text-gray-300">Saved Weekly Average</div>
             </div>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
               <div className="text-4xl font-bold text-blue-400 mb-2">
-                <NumberTicker value={2} prefix="$" suffix="M+" className="text-4xl font-bold text-blue-400" />
+                $<NumberTicker value={2} className="text-4xl font-bold text-blue-400" />M+
               </div>
               <div className="text-gray-300">Revenue Automated</div>
             </div>
@@ -1059,7 +1059,7 @@ export default function N8NAutomationsPage() {
                 borderRadius="1rem"
               >
                 <span className="whitespace-nowrap text-2xl font-bold px-12 py-4">
-                  🚀 BUILD MY AUTOMATION EMPIRE - <NumberTicker value={297} prefix="$" className="inline" /> 🚀
+                  🚀 BUILD MY AUTOMATION EMPIRE - $<NumberTicker value={297} className="inline" /> 🚀
                 </span>
               </ShimmerButton>
             </Link>
@@ -1071,19 +1071,19 @@ export default function N8NAutomationsPage() {
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
               <div className="bg-zinc-900 rounded-lg p-4">
                 <div className="text-2xl font-bold text-purple-400">
-                  <NumberTicker value={1600} suffix="+" className="text-2xl font-bold text-purple-400" />
+                  <NumberTicker value={1600} className="text-2xl font-bold text-purple-400" />+
                 </div>
                 <div className="text-sm text-gray-400">Students Transformed</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">
                 <div className="text-2xl font-bold text-green-400">
-                  <NumberTicker value={40} suffix="+ Hours" className="text-2xl font-bold text-green-400" />
+                  <NumberTicker value={40} className="text-2xl font-bold text-green-400" />+ Hours
                 </div>
                 <div className="text-sm text-gray-400">Saved Weekly</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">
                 <div className="text-2xl font-bold text-blue-400">
-                  <NumberTicker value={2} prefix="$" suffix="M+" className="text-2xl font-bold text-blue-400" />
+                  $<NumberTicker value={2} className="text-2xl font-bold text-blue-400" />M+
                 </div>
                 <div className="text-sm text-gray-400">Revenue Automated</div>
               </div>

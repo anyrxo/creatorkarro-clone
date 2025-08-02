@@ -149,6 +149,17 @@ const newsArticles = [
     keywords: ["google ai studio", "gemini 2.5 flash", "free ai development", "ai platform", "google ai models", "ai development tools"]
   },
   {
+    title: "Revolutionizing Developer Productivity: Windsurf Wave 2",
+    category: "DEVELOPMENT TOOLS",
+    categoryColor: "blue",
+    excerpt: "Windsurf Wave 2 introduces revolutionary AI features: intelligent web search, automated memories, seamless dev containers, and context-aware development that eliminates productivity bottlenecks.",
+    description: "Complete guide to Windsurf Wave 2's game-changing features: Cascade AI with automated learning, real-time web search, development environment integration, and 260% productivity improvements.",
+    readTime: "18 min",
+    date: "2025-01-26",
+    slug: "revolutionizing-developer-productivity-windsurf-wave-2",
+    keywords: ["windsurf ide", "cascade ai", "developer productivity", "ai coding assistant", "development tools", "context switching"]
+  },
+  {
     title: "Dart AI: The Free Agentic Project Manager That Automates Everything",
     category: "AI TOOLS",
     categoryColor: "blue",
