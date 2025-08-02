@@ -13,6 +13,9 @@ import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import NumberTicker from '@/components/magicui/number-ticker'
 import Marquee from '@/components/magicui/marquee'
 import ShimmerButton from '@/components/magicui/shimmer-button'
+import WordRotate from '@/components/magicui/word-rotate'
+import BlurIn from '@/components/magicui/blur-in'
+import TypingAnimation from '@/components/magicui/typing-animation'
 import { ChevronRight } from 'lucide-react'
 
 export default function HomePage() {
@@ -211,12 +214,20 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Transform Your
-              <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Creative Journey
-              </span>
-            </h2>
+            <div className="text-5xl md:text-7xl font-bold text-white mb-6">
+              <BlurIn
+                word="Transform Your"
+                className="text-5xl md:text-7xl font-bold text-white"
+                duration={0.8}
+              />
+              <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <WordRotate
+                  words={["Creative Journey", "Digital Empire", "Content Strategy", "Revenue Streams"]}
+                  className="text-5xl md:text-7xl font-bold"
+                  duration={3000}
+                />
+              </div>
+            </div>
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
               Master the tools and strategies that turned thousands of creators into successful entrepreneurs
             </p>
@@ -381,9 +392,11 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Master Every Skill
-            </h2>
+            <TypingAnimation
+              text="Master Every Skill"
+              className="text-5xl md:text-7xl font-bold text-white mb-6"
+              duration={150}
+            />
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
               From viral content creation to automated business systems
             </p>
@@ -627,12 +640,20 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-6xl md:text-8xl font-bold text-white mb-8">
-              Ready to
-              <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Create?
-              </span>
-            </h2>
+            <div className="text-6xl md:text-8xl font-bold text-white mb-8">
+              <BlurIn
+                word="Ready to"
+                className="text-6xl md:text-8xl font-bold text-white"
+                duration={1}
+              />
+              <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <WordRotate
+                  words={["Create?", "Scale?", "Grow?", "Succeed?"]}
+                  className="text-6xl md:text-8xl font-bold"
+                  duration={2500}
+                />
+              </div>
+            </div>
             <p className="text-2xl text-zinc-400 mb-12">
               Join thousands of creators building their dream businesses
             </p>
