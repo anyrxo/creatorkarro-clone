@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Professional SVG icons for pain points and features
 export type PainPointIconType = 
   | 'chart-down' 
   | 'fire' 
