@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
+// Professional icon system deployment
 import Script from "next/script";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
