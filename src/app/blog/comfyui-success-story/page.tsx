@@ -39,7 +39,7 @@ export default function ComfyUISuccessStory() {
     </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold text-white mb-4">From Struggling Designer to AI Art Master</h2>
                 <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8">

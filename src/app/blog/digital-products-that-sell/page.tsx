@@ -181,7 +181,7 @@ export default function DigitalProductsThatSell() {
             </section>
 
       <section className="py-16 px-4 border-y border-gray-800" itemScope itemType="https://schema.org/Dataset">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-2xl font-bold text-white text-center mb-4">Digital Product Market Reality Check 2025</h2>
                     <p className="text-center text-gray-400 mb-8 max-w-3xl mx-auto">
               Understanding why 90% of digital products fail while 10% generate life-changing income. These statistics reveal what separates million-dollar digital products from failures.

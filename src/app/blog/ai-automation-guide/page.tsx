@@ -47,7 +47,7 @@ export default function AIAutomationGuide() {
 </section>
 
       <section className="py-16 px-4 border-y border-gray-800" itemScope itemType="https://schema.org/StatisticalVariable">
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-white text-center mb-4">Real AI Automation Tools ROI: $88K/Month Results</h2>
             <p className="text-center text-gray-400 mb-8 max-w-3xl mx-auto">

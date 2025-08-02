@@ -178,7 +178,7 @@ export default function InstagramGrowth2025() {
       />
 
       <section className="py-16 px-4 border-y border-gray-800" itemScope itemType="https://schema.org/NewsArticle">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-white text-center mb-4">Instagram Algorithm 2025: Major Changes for Instagram Growth</h2>
             <p className="text-center text-gray-400 mb-8 max-w-3xl mx-auto">
             Understanding the latest Instagram algorithm updates is crucial for organic Instagram growth. These Instagram marketing changes affect how to grow Instagram followers and which Instagram engagement strategies work best.

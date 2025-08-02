@@ -72,7 +72,7 @@ export default function AIAutomationGuideToxicSEO() {
         </section>
 
       <section className="py-12 px-4 bg-purple-500/5 border-y border-purple-500/20">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto max-w-4xl">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <div className="bg-zinc-900 rounded-xl p-8">
                     <h2 className="text-2xl font-bold text-purple-400 mb-4">What Are AI Automation Tools? (Quick Answer)</h2>
                     <p className="text-lg text-gray-300 mb-6">
@@ -97,7 +97,7 @@ export default function AIAutomationGuideToxicSEO() {
         </section>
 
       <section className="py-16 px-4 border-b border-gray-800">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl font-bold text-white text-center mb-4">My AI Automation Tools Results (Verified by Stripe)</h2>
                     <p className="text-center text-gray-400 mb-8">How business automation software transformed my entrepreneurial journey</p>

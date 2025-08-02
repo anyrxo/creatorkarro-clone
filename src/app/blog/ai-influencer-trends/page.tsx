@@ -39,7 +39,7 @@ export default function AIInfluencerTrends() {
     </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold text-white text-center mb-8">The Current State of AI Influencers</h2>
                 <div className="grid md:grid-cols-4 gap-4 text-center">

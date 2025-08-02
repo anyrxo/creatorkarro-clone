@@ -210,7 +210,7 @@ export default function DigitalProductsIdeas2025() {
 </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-white text-center mb-8">The $325 Billion Digital Product Gold Rush Is Here</h2>
             <p className="text-gray-400 text-center mb-8 max-w-3xl mx-auto">

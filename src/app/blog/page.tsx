@@ -17,6 +17,17 @@ import { ChevronRight } from 'lucide-react'
 // News articles data extracted from the newsarticles directory
 const newsArticles = [
   {
+    title: "Telegram Bot Monetization: The Ultimate Guide to Automated Revenue Generation",
+    category: "MARKETING",
+    categoryColor: "red",
+    excerpt: "Discover how successful creators earn $5K-50K monthly with Telegram bot monetization. Complete guide covering payment processing, subscriber psychology, and proven revenue strategies.",
+    description: "Comprehensive guide to Telegram bot monetization with real case studies, advanced tools, and step-by-step implementation strategies.",
+    readTime: "18 min",
+    date: "2025-08-02",
+    slug: "telegram-bot-monetization",
+    keywords: ["telegram bot monetization", "content creator income", "automation revenue", "subscription business", "digital marketing"]
+  },
+  {
     title: "AI Assistant Showdown: ChatGPT vs Gemini vs Perplexity vs Claude",
     category: "AI NEWS",
     categoryColor: "purple",

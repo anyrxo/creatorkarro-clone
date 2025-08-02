@@ -39,7 +39,7 @@ export default function AIContentIncome() {
     </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div className="text-center">
                     <div className="text-3xl md:text-4xl font-bold text-white mb-2">$5,847</div>
