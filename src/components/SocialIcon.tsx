@@ -67,6 +67,64 @@ const platformUrls: Record<SocialPlatform, string> = {
   runpod: 'https://runpod.io/'
 }
 
+// Platform color mapping
+const platformColors: Record<SocialPlatform, string> = {
+  instagram: '#E4405F',
+  youtube: '#FF0000',
+  twitter: '#1DA1F2',
+  tiktok: '#000000',
+  facebook: '#1877F2',
+  linkedin: '#0A66C2',
+  github: '#181717',
+  discord: '#5865F2',
+  telegram: '#0088CC',
+  snapchat: '#FFFC00',
+  whatsapp: '#25D366',
+  fanvue: '#FF6B6B',
+  nvidia: '#76B900',
+  digitalocean: '#0080FF',
+  n8n: '#EA4B71',
+  zapier: '#FF4A00',
+  make: '#6366F1',
+  loom: '#625DF5',
+  beehiiv: '#3B82F6',
+  whop: '#7C3AED',
+  manus: '#8B5CF6',
+  kling: '#EC4899',
+  claude: '#D97706',
+  gemini: '#4285F4',
+  runpod: '#7C3AED'
+}
+
+// Platform initials for simple letter-based icons
+const platformInitials: Record<SocialPlatform, string> = {
+  instagram: 'IG',
+  youtube: 'YT',
+  twitter: 'X',
+  tiktok: 'TT',
+  facebook: 'FB',
+  linkedin: 'LI',
+  github: 'GH',
+  discord: 'DC',
+  telegram: 'TG',
+  snapchat: 'SC',
+  whatsapp: 'WA',
+  fanvue: 'FV',
+  nvidia: 'NV',
+  digitalocean: 'DO',
+  n8n: 'N8',
+  zapier: 'ZP',
+  make: 'MK',
+  loom: 'LM',
+  beehiiv: 'BH',
+  whop: 'WH',
+  manus: 'MN',
+  kling: 'KL',
+  claude: 'CL',
+  gemini: 'GM',
+  runpod: 'RP'
+}
+
 export default function SocialIcon({
   platform,
   variant = 'color',
@@ -76,18 +134,23 @@ export default function SocialIcon({
   target = '_blank',
   onClick
 }: SocialIconProps) {
-  const iconSrc = `/social-icons/${platform}-${variant}.svg`
   const defaultHref = href || platformUrls[platform]
+  const color = variant === 'color' ? platformColors[platform] : (variant === 'white' ? '#FFFFFF' : '#000000')
+  const initials = platformInitials[platform]
   
   const iconElement = (
-    <Image
-      src={iconSrc}
-      alt={`${platform} icon`}
-      width={size}
-      height={size}
-      className={`inline-block ${className}`}
+    <div
+      className={`inline-flex items-center justify-center rounded-lg font-bold text-white ${className}`}
+      style={{
+        width: size,
+        height: size,
+        backgroundColor: color,
+        fontSize: size * 0.35
+      }}
       onClick={onClick}
-    />
+    >
+      {initials}
+    </div>
   )
 
   if (href !== null && !onClick) {

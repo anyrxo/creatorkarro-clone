@@ -1058,8 +1058,8 @@ export default function N8NAutomationsPage() {
                 background="linear-gradient(135deg, #8b5cf6, #3b82f6)"
                 borderRadius="1rem"
               >
-                <span className="whitespace-nowrap text-2xl font-bold px-12 py-4">
-                  🚀 BUILD MY AUTOMATION EMPIRE - $<NumberTicker value={297} className="inline" /> 🚀
+                <span className="text-xl md:text-2xl font-bold px-8 py-4 text-center block">
+                  🚀 BUILD MY AUTOMATION EMPIRE<br className="md:hidden" /> - $<NumberTicker value={297} className="inline" /> 🚀
                 </span>
               </ShimmerButton>
             </Link>

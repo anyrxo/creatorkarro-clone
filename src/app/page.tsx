@@ -306,7 +306,7 @@ export default function HomePage() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="grid md:grid-cols-4 gap-8 text-center"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center"
           >
             {[
               { value: 13000, suffix: '+', label: 'Active Students' },

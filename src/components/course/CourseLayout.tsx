@@ -408,7 +408,12 @@ export function SectionHeader({ badge, badgeColor = 'text-gray-400', title, desc
   return (
     <div className={`text-center mb-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
       {badge && <p className={`text-sm ${badgeColor} uppercase tracking-wider mb-4`}>{badge}</p>}
-      <h2 className="text-4xl md:text-5xl font-bold mb-6">{title}</h2>
+      <h2 
+        className="text-4xl md:text-5xl font-bold mb-6"
+        dangerouslySetInnerHTML={typeof title === 'string' ? { __html: title } : undefined}
+      >
+        {typeof title !== 'string' ? title : null}
+      </h2>
       {subtitle && <p className="text-xl text-gray-400">{subtitle}</p>}
       {description && <p className="text-xl text-gray-400">{description}</p>}
     </div>
