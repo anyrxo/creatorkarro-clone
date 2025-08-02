@@ -1,8 +1,8 @@
 # 📋 News Articles Assignment Tracker
 
 **Total Articles:** 44  
-**Completed:** 34  
-**Remaining:** 10  
+**Completed:** 36  
+**Remaining:** 8  
 
 ## 🎯 Instructions for All Agents
 
@@ -116,8 +116,8 @@
 |-------|----------|-----------|-------------|-----------|
 | Agent 1 | 19 | 15 | 0 | 4 |
 | Agent 2 | 13 | 13 | 0 | 0 |
-| Agent 3 | 12 | 6 | 0 | 6 |
-| Total | 44 | 34 | 0 | 10 |
+| Agent 3 | 12 | 8 | 0 | 4 |
+| Total | 44 | 36 | 0 | 8 |
 
 ---
 
