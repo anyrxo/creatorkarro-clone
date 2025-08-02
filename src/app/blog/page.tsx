@@ -160,6 +160,17 @@ const newsArticles = [
     keywords: ["windsurf ide", "cascade ai", "developer productivity", "ai coding assistant", "development tools", "context switching"]
   },
   {
+    title: "Gemini Canvas: Google's Free AI Coding Revolution - Complete Developer's Guide 2025",
+    category: "DEVELOPMENT TOOLS",
+    categoryColor: "purple",
+    excerpt: "Master Google Gemini Canvas, the completely free AI coding assistant that revolutionizes development with real-time code generation, multi-modal understanding, and visual debugging capabilities.",
+    description: "Comprehensive guide to Google Gemini Canvas: zero-configuration development environment with AI-powered debugging, real-time preview, collaborative features, and 400-600% productivity improvements.",
+    readTime: "22 min",
+    date: "2025-03-23",
+    slug: "gemini-canvas-googles-fully-free-ai-coder-revolutionizing-development",
+    keywords: ["gemini canvas", "google ai", "free coding assistant", "real-time development", "multi-modal ai", "visual debugging", "development tools"]
+  },
+  {
     title: "Dart AI: The Free Agentic Project Manager That Automates Everything",
     category: "AI TOOLS",
     categoryColor: "blue",
@@ -776,7 +787,7 @@ export default function BlogPage() {
                 <span className="text-white">AI Strategies from </span>
                 <div className="bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-clip-text text-transparent inline-block">
                   <WordRotate
-                    words={["IImagined.ai", "CreatorKarro", "Industry Experts", "Growth Masters"]}
+                    words={["IImagined.ai", "Anyro", "Industry Experts", "Growth Masters"]}
                     className="text-4xl md:text-6xl font-bold"
                     duration={3500}
                   />

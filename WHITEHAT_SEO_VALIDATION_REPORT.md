@@ -235,7 +235,7 @@ Podcast              ❌ None         Opportunity
 ```
 Competitor          DA    Content    Technical    Overall
 ─────────────────────────────────────────────────────────
-CreatorKarro.com    45    Good       Good         Strong
+IImagined.ai        45    Good       Good         Strong
 Competitor A        52    Average    Excellent    Strong
 Competitor B        38    Excellent  Poor         Average
 IImagined.ai        New   Excellent  Excellent    Rising ⭐

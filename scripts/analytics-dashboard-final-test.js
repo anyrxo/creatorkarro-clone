@@ -9,7 +9,7 @@ const testAnalyticsDashboard = async () => {
   
   // Test deployment
   console.log('\n📊 Deploying Master Analytics Dashboard')
-  console.log('🌐 Domain: creatorkarro.com')
+  console.log('🌐 Domain: iimagined.ai')
   console.log('⏰ Refresh Interval: 15 minutes')
   console.log('🔌 Integrations: All 23 SEO systems connected')
   
@@ -144,10 +144,10 @@ const testAnalyticsDashboard = async () => {
   
   // Test export functionality
   console.log('\n📤 Export Options Available:')
-  console.log('  ✅ PDF export ready: /exports/dashboard-creatorkarro.com-1734567890.pdf')
-  console.log('  ✅ CSV export ready: /exports/dashboard-creatorkarro.com-1734567890.csv')
-  console.log('  ✅ JSON export ready: /exports/dashboard-creatorkarro.com-1734567890.json')
-  console.log('  ✅ Excel export ready: /exports/dashboard-creatorkarro.com-1734567890.xlsx')
+  console.log('  ✅ PDF export ready: /exports/dashboard-iimagined.ai-1734567890.pdf')
+  console.log('  ✅ CSV export ready: /exports/dashboard-iimagined.ai-1734567890.csv')
+  console.log('  ✅ JSON export ready: /exports/dashboard-iimagined.ai-1734567890.json')
+  console.log('  ✅ Excel export ready: /exports/dashboard-iimagined.ai-1734567890.xlsx')
   
   console.log('\n')
   console.log('='.repeat(50))

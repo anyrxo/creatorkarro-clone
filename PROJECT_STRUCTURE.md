@@ -1,4 +1,4 @@
-# CreatorKarro Clone - Complete Project Structure
+# IImagined - Complete Project Structure
 
 ## Overview
 This is a Next.js 15 project with aggressive SEO optimization capabilities and digital product sales features.

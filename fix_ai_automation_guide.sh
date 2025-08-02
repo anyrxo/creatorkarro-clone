@@ -16,7 +16,7 @@ export default function AIAutomationGuide() {
     "@type": "HowTo",
     "name": "AI Automation Tools 2025: Complete Business Automation Guide",
     "description": "Learn how to automate business with AI tools and workflow automation software. Step-by-step guide to building automated business processes for maximum ROI.",
-    "image": "https://creatorkarro.com/ai-automation-guide-featured.jpg",
+    "image": "https://iimagined.ai/ai-automation-guide-featured.jpg",
     "totalTime": "PT30D",
     "estimatedCost": {
       "@type": "MonetaryAmount",
