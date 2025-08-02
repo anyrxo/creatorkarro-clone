@@ -1330,15 +1330,15 @@ nav button:hover::after, nav a:hover::after {
 }
 
 /* Icon Button Animations */
-.icon-button, button svg, a svg {
+.icon-button {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-button:hover, button:hover svg, a:hover svg {
+.icon-button:hover {
   transform: rotate(90deg) scale(1.1);
 }
 
-.icon-button:active, button:active svg, a:active svg {
+.icon-button:active {
   transform: rotate(90deg) scale(0.9);
 }
 

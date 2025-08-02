@@ -323,7 +323,7 @@ export default function HomePage() {
                 className="group"
               >
                 <motion.div
-                  className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent flex items-center justify-center"
+                  className="text-5xl md:text-6xl font-bold text-white flex items-center justify-center"
                   whileHover={{ scale: 1.1 }}
                 >
                   <span>{stat.prefix}</span>

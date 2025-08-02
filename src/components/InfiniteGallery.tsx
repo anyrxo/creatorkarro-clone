@@ -249,15 +249,6 @@ export function InfiniteGallery() {
           )}
         </div>
 
-        {/* Floating UI elements */}
-        <motion.div
-          className="fixed bottom-8 right-8 bg-white/10 backdrop-blur-md rounded-full px-6 py-3 text-white"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-        >
-          {items.length} items loaded
-        </motion.div>
       </div>
     </section>
   )
