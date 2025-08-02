@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Card } from '@/components/ui/card';
 
 interface SecurityStats {
@@ -43,7 +43,7 @@ export default function SecurityDashboard() {
     }
   };
 
-  const refreshData = async () => {
+  const refreshData = useCallback(async () => {
     if (!authenticated) return;
     
     setLoading(true);
@@ -58,7 +58,7 @@ export default function SecurityDashboard() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [authenticated, token]);
 
   useEffect(() => {
     if (authenticated) {

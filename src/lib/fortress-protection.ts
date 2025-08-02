@@ -43,7 +43,7 @@ export const generateBrowserFingerprint = (): string => {
 export class DevToolsDetector {
   private callbacks: (() => void)[] = [];
   private isOpen = false;
-  private checkInterval: number | null = null;
+  private checkInterval: ReturnType<typeof setInterval> | null = null;
 
   constructor() {
     this.init();
@@ -117,7 +117,7 @@ export class DevToolsDetector {
     });
 
     // Run debugger check periodically
-    this.checkInterval = setInterval(checkDebugger, 1000);
+    this.checkInterval = setInterval(checkDebugger, 1000) as unknown as ReturnType<typeof setInterval>;
   }
 
   onDevToolsOpen(callback: () => void) {
