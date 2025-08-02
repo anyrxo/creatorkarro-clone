@@ -1,0 +1,57 @@
+{
+  "beautification": {
+    "newsCategories": [
+      "AI NEWS",
+      "AI TOOLS",
+      "AI AGENTS",
+      "AI PLATFORMS",
+      "DEVELOPMENT TOOLS",
+      "AI CODING",
+      "AI AUTOMATION"
+    ],
+    "colorSchemes": {
+      "ai_models": {
+        "keywords": ["gpt", "claude", "gemini", "llama", "openai", "anthropic"],
+        "color": "purple",
+        "badge": "AI MODEL UPDATE"
+      },
+      "ai_coding": {
+        "keywords": ["code", "coding", "coder", "copilot", "cursor", "windsurf", "augment", "canvas"],
+        "color": "blue",
+        "badge": "AI CODING TOOL"
+      },
+      "ai_agents": {
+        "keywords": ["agent", "agentic", "automate", "automation", "deepagent"],
+        "color": "cyan",
+        "badge": "AI AGENT"
+      },
+      "ai_project": {
+        "keywords": ["project", "manager", "dart", "task", "workflow"],
+        "color": "green",
+        "badge": "AI PROJECT MANAGEMENT"
+      },
+      "dev_tools": {
+        "keywords": ["developer", "development", "ide", "productivity", "windsurf"],
+        "color": "indigo",
+        "badge": "DEVELOPER TOOLS"
+      },
+      "ai_platforms": {
+        "keywords": ["platform", "studio", "canvas", "playground"],
+        "color": "blue",
+        "badge": "AI PLATFORM"
+      },
+      "open_source": {
+        "keywords": ["open-source", "qwen", "deepseek", "mistral"],
+        "color": "orange",
+        "badge": "OPEN SOURCE AI"
+      }
+    },
+    "transformationOptions": {
+      "includeStats": true,
+      "includeTOC": true,
+      "includeKeyTakeaways": true,
+      "preserveOriginalContent": true,
+      "createBackup": true
+    }
+  }
+}
