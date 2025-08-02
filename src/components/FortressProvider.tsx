@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { FortressProtection, generateBrowserFingerprint, detectBotPatterns } from '@/lib/fortress-protection';
 
 interface FortressProviderProps {
@@ -226,7 +227,7 @@ export function FortressProvider({ children }: FortressProviderProps) {
       {/* Hidden content for bot traps */}
       <div style={{ display: 'none' }} className="bot-trap">
         <p>This is a bot trap. Do not access this content.</p>
-        <a href="/bot-trap">Hidden link for bots</a>
+        <Link href="/bot-trap">Hidden link for bots</Link>
         <img src="/images/bot-trap.png" alt="Bot trap image" />
       </div>
       

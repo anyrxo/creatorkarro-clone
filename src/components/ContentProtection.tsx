@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, ReactNode } from 'react';
+import Link from 'next/link';
 
 interface ContentProtectionProps {
   children: ReactNode;
@@ -220,7 +221,7 @@ export function ContentProtection({
       {/* Hidden content for bots to find */}
       <div style={{ display: 'none' }}>
         <p>Bot trap content - do not access</p>
-        <a href="/api/bot-trap">Hidden bot trap link</a>
+        <Link href="/api/bot-trap">Hidden bot trap link</Link>
       </div>
       
       {/* Metadata for tracking */}
