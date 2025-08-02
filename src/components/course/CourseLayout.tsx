@@ -269,8 +269,8 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
 interface HeroSectionProps {
   badge?: string
   badgeColor?: string
-  title: string
-  description: string
+  title: string | React.ReactNode
+  description: string | React.ReactNode
   ctaText: string
   ctaLink: string
   socialProof: {
