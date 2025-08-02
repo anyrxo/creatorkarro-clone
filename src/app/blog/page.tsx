@@ -7,6 +7,10 @@ import { useEffect, useState } from 'react'
 import ScrollAnimation, { StaggeredAnimation, CountUp } from '@/components/ScrollAnimation'
 import { TiltCard, SpotlightCard } from '@/components/HoverEffects'
 import AnimatedText, { GradientText } from '@/components/AnimatedText'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import NumberTicker from '@/components/magicui/number-ticker'
+import ShimmerButton from '@/components/magicui/shimmer-button'
+import { ChevronRight } from 'lucide-react'
 
 // News articles data extracted from the newsarticles directory
 const newsArticles = [
@@ -576,9 +580,13 @@ export default function BlogPage() {
             ref={heroAnimation.elementRef}
             className={`text-center max-w-4xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800 mb-6">
-              <span className="text-gray-300 text-sm font-semibold">BLOG</span>
-            </div>
+            <AnimatedGradientText className="mb-6">
+              📝 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+              <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
+                Blog & News
+              </span>
+              <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+            </AnimatedGradientText>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               <AnimatedText animation="fade" delay={200}>Success Stories, Growth Hacks &</AnimatedText>{' '}
@@ -657,7 +665,7 @@ export default function BlogPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <ScrollAnimation animation="fade-up">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Join <CountUp end={127000} suffix="+" className="text-blue-400" /> Creators Getting Weekly Growth Hacks
+              Join <NumberTicker value={127000} delay={0.5} className="text-blue-400 inline-block" />+ Creators Getting Weekly Growth Hacks
             </h2>
           </ScrollAnimation>
           
@@ -672,12 +680,21 @@ export default function BlogPage() {
               href="https://anyro.beehiiv.com/subscribe"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-luxury inline-flex items-center gap-3 text-white"
             >
-              Join Free Newsletter
-              <svg className="w-5 h-5 animate-wave" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
+              <ShimmerButton
+                className="shadow-2xl"
+                shimmerColor="#ffffff"
+                shimmerSize="0.1em"
+                background="linear-gradient(135deg, #2563eb, #9333ea)"
+                borderRadius="12px"
+              >
+                <span className="whitespace-nowrap font-bold px-6 py-3 text-base inline-flex items-center gap-3">
+                  Join Free Newsletter
+                  <svg className="w-5 h-5 animate-wave" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+              </ShimmerButton>
             </a>
           </ScrollAnimation>
         </div>

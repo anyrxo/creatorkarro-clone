@@ -5,6 +5,10 @@ import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import ScrollAnimation from '@/components/ScrollAnimation'
 import { TiltCard, SpotlightCard } from '@/components/HoverEffects'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import NumberTicker from '@/components/magicui/number-ticker'
+import ShimmerButton from '@/components/magicui/shimmer-button'
+import { ChevronRight } from 'lucide-react'
 
 // Value Badge Component - Fixed to TOP RIGHT position
 interface ValueBadgeProps {
@@ -266,12 +270,17 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
               Not Available
             </div>
           ) : (
-            <Link 
-              href="#" 
-              className={`cta-button inline-block w-full text-center mb-4 btn-animate ${option.popular ? 'animate-glow' : ''} hover-lift`}
+            <ShimmerButton
+              className="shadow-2xl w-full mb-4"
+              shimmerColor="#ffffff"
+              shimmerSize="0.1em"
+              background={option.popular ? "linear-gradient(135deg, #ec4899, #a855f7)" : "linear-gradient(135deg, #3b82f6, #10b981)"}
+              borderRadius="12px"
             >
-              {option.popular ? '🚀 Secure Your Spot NOW' : 'Get Started'} - {option.price}
-            </Link>
+              <span className="whitespace-nowrap font-bold px-6 py-3 text-base">
+                {option.popular ? '🚀 Secure Your Spot NOW' : 'Get Started'} - {option.price}
+              </span>
+            </ShimmerButton>
           )}
         </div>
       ))}
@@ -321,14 +330,29 @@ export function HeroSection({
             </div>
           )}
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" dangerouslySetInnerHTML={{ __html: title }} />
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            {typeof title === 'string' && title.includes('className') ? 
+              <span dangerouslySetInnerHTML={{ __html: title }} /> : 
+              title
+            }
+          </h1>
 
           <p className="text-xl text-gray-400 mb-8">
             {description}
           </p>
 
-          <Link href={ctaLink} className="cta-button inline-block text-lg mb-8 btn-animate animate-glow hover-lift">
-            {ctaText}
+          <Link href={ctaLink} className="inline-block mb-8">
+            <ShimmerButton
+              className="shadow-2xl text-lg"
+              shimmerColor="#ffffff"
+              shimmerSize="0.1em"
+              background="linear-gradient(135deg, #10b981, #3b82f6)"
+              borderRadius="12px"
+            >
+              <span className="whitespace-nowrap font-bold px-6 py-2">
+                {ctaText}
+              </span>
+            </ShimmerButton>
           </Link>
 
           {/* Social Proof */}

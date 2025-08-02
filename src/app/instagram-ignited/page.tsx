@@ -16,6 +16,11 @@ import {
   SectionHeader
 } from '@/components/course/CourseLayout'
 import CryptoCheckout from '@/components/checkout/CryptoCheckout'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import NumberTicker from '@/components/magicui/number-ticker'
+import Marquee from '@/components/magicui/marquee'
+import ShimmerButton from '@/components/magicui/shimmer-button'
+import { ChevronRight } from 'lucide-react'
 
 export default function InstagramIgnitedPage() {
   // Crypto checkout state
@@ -1000,6 +1005,31 @@ export default function InstagramIgnitedPage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Scrolling Success Stories Marquee */}
+      <section className="relative py-12 bg-black overflow-hidden">
+        <Marquee className="[--duration:50s]" pauseOnHover>
+          {[
+            "Went from 800 to 125K followers using Anyro's techniques! 🚀",
+            "My first viral carousel got 2.3M views after this course 💥",
+            "Landed my first $25K brand partnership within 3 months! 💰",
+            "From 2% to 12% engagement rate - this system works! 📈",
+            "Made $35K/month from Instagram using these strategies 💸",
+            "240K followers in 10 months - no fluff, just results! ⭐",
+            "Secured $50K brand deals with major fashion brands! 👗",
+            "My tech videos now get 500K+ views regularly 📱",
+            "15%+ engagement rates and $28K/month from travel content ✈️",
+            "From 4K to 200K followers in under a year! 🎯"
+          ].map((story, index) => (
+            <div
+              key={index}
+              className="mx-4 flex items-center gap-2 rounded-lg bg-zinc-900/50 px-6 py-3 backdrop-blur-sm border border-zinc-800"
+            >
+              <span className="text-zinc-300 text-sm font-medium">{story}</span>
+            </div>
+          ))}
+        </Marquee>
       </section>
 
       {/* Final Results CTA */}

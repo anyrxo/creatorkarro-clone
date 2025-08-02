@@ -2,6 +2,9 @@
 
 import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import ShimmerButton from '@/components/magicui/shimmer-button'
+import { ChevronRight } from 'lucide-react'
 
 export default function ContactPage() {
   // Scroll animations for different sections
@@ -18,6 +21,15 @@ export default function ContactPage() {
             ref={heroAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
+            <div className="flex justify-center mb-6">
+              <AnimatedGradientText>
+                📬 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+                <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
+                  Let's Connect
+                </span>
+                <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+              </AnimatedGradientText>
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-8">CONTACT</h1>
           </div>
 
@@ -181,9 +193,18 @@ export default function ContactPage() {
                     href="https://whop.com/anyrxo"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300 text-sm font-medium"
                   >
-                    Access Courses →
+                    <ShimmerButton
+                      className="shadow-lg text-xs"
+                      shimmerColor="#ffffff"
+                      shimmerSize="0.05em"
+                      background="linear-gradient(135deg, #3b82f6, #1d4ed8)"
+                      borderRadius="8px"
+                    >
+                      <span className="font-medium px-3 py-1.5">
+                        Access Courses →
+                      </span>
+                    </ShimmerButton>
                   </a>
                 </div>
 
@@ -200,9 +221,18 @@ export default function ContactPage() {
                     href="https://anyrxo.gumroad.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-green-400 hover:text-green-300 transition-colors duration-300 text-sm font-medium"
                   >
-                    Browse Free Stuff →
+                    <ShimmerButton
+                      className="shadow-lg text-xs"
+                      shimmerColor="#ffffff"
+                      shimmerSize="0.05em"
+                      background="linear-gradient(135deg, #10b981, #059669)"
+                      borderRadius="8px"
+                    >
+                      <span className="font-medium px-3 py-1.5">
+                        Browse Free Stuff →
+                      </span>
+                    </ShimmerButton>
                   </a>
                 </div>
 
