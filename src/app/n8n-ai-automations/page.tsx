@@ -39,9 +39,10 @@ export default function N8NAutomationsPage() {
   const faqCards = useScrollAnimations(12, { threshold: 0.1 })
 
   return (
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-dark relative">
+      <ParticleBackground />
       {/* 1. Hero Section */}
-      <div ref={heroAnimation.elementRef}>
+      <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection
           badge="🚀 AI AUTOMATION EMPIRE 🚀"
           badgeColor="bg-gradient-to-r from-purple-600/30 to-blue-600/30 text-purple-300 border border-purple-500/50"

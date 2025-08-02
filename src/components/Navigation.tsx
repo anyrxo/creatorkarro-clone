@@ -46,7 +46,7 @@ export default function Navigation() {
   const allNavigation = [...mainNavigation, { name: 'Login', href: '/login' }]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-sm border-b border-zinc-800">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-xl border-b border-zinc-800 glass-premium">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-20">
           {/* Logo - Far Left */}
@@ -72,27 +72,28 @@ export default function Navigation() {
                       onMouseLeave={() => setIsCoursesOpen(false)}
                     >
                       <button
-                        className="flex items-center px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-200 rounded-full hover:bg-zinc-700 hover:scale-105"
+                        className="flex items-center px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 rounded-full hover:bg-zinc-700/50 hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] backdrop-blur-sm"
                         onMouseEnter={() => setIsCoursesOpen(true)}
                       >
                         {item.name}
-                        <ChevronDown size={16} className={`ml-1 transition-transform duration-200 ${isCoursesOpen ? 'rotate-180' : ''}`} />
+                        <ChevronDown size={16} className={`ml-1 transition-transform duration-300 ${isCoursesOpen ? 'rotate-180' : ''}`} />
                       </button>
 
                       <div
-                        className={`absolute top-full left-0 mt-2 w-48 bg-zinc-800/95 backdrop-blur-md border border-zinc-600 rounded-lg shadow-2xl py-2 z-50 transition-all duration-300 ease-out ${
+                        className={`absolute top-full left-0 mt-2 w-56 bg-zinc-900/95 backdrop-blur-xl border border-zinc-700/50 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.8)] py-2 z-50 transition-all duration-300 ease-out glass-premium ${
                           isCoursesOpen
-                            ? 'opacity-100 visible transform translate-y-0'
-                            : 'opacity-0 invisible transform -translate-y-2'
+                            ? 'opacity-100 visible transform translate-y-0 scale-100'
+                            : 'opacity-0 invisible transform -translate-y-4 scale-95'
                         }`}
                       >
                         {item.dropdownItems?.map((dropdownItem, index) => (
                           <Link
                             key={dropdownItem.name}
                             href={dropdownItem.href}
-                            className={`block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-zinc-700 transition-all duration-200 hover:transform hover:translate-x-1 ${
+                            className={`block px-5 py-3 text-sm text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20 transition-all duration-300 hover:transform hover:translate-x-2 rounded-lg mx-2 ${
                               isCoursesOpen ? `opacity-100 delay-${index * 50}` : 'opacity-0'
                             }`}
+                            style={{ transitionDelay: isCoursesOpen ? `${index * 50}ms` : '0ms' }}
                           >
                             {dropdownItem.name}
                           </Link>
@@ -102,7 +103,7 @@ export default function Navigation() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-200 rounded-full hover:bg-zinc-700 hover:scale-105 hover:shadow-lg"
+                      className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 rounded-full hover:bg-zinc-700/50 hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] backdrop-blur-sm"
                     >
                       {item.name}
                     </Link>
@@ -116,7 +117,7 @@ export default function Navigation() {
           <div className="hidden md:block">
             <Link
               href="/login"
-              className="nav-pill px-6 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-200 hover:bg-zinc-700 hover:scale-105"
+              className="nav-pill px-6 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] backdrop-blur-sm border-zinc-700 hover:border-blue-500/50"
             >
               LOGIN
             </Link>

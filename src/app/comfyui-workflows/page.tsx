@@ -13,6 +13,8 @@ import {
   FAQCard, 
   PricingComparison 
 } from '@/components/course/CourseLayout'
+import ParticleBackground from '@/components/ParticleBackground'
+import ScrollAnimation from '@/components/ScrollAnimation'
 
 export default function ComfyUIWorkflowsPage() {
   // Scroll animations for different sections
@@ -323,9 +325,10 @@ export default function ComfyUIWorkflowsPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-dark relative">
+      <ParticleBackground />
       {/* Hero Section */}
-      <div ref={heroAnimation.elementRef}>
+      <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection
           badge="🎯 EARLY BIRD SPECIAL: Professional ComfyUI mastery at an unbeatable price"
           badgeColor="bg-green-600/30 text-green-300"

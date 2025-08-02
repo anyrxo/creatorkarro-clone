@@ -5,9 +5,12 @@ import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { useState, useEffect } from 'react'
 import ParticleBackground from '@/components/ParticleBackground'
+import InteractiveBackground from '@/components/InteractiveBackground'
 import AnimatedCard from '@/components/AnimatedCard'
 import AnimatedText, { GradientText } from '@/components/AnimatedText'
 import EnhancedButton from '@/components/EnhancedButton'
+import ScrollAnimation, { StaggeredAnimation, TextScramble } from '@/components/ScrollAnimation'
+import { TiltCard } from '@/components/HoverEffects'
 
 export default function HomePage() {
   // Scroll animations for different sections
@@ -87,6 +90,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-dark relative">
       <ParticleBackground />
+      <InteractiveBackground />
       
       {/* Hero Section */}
       <section className="py-12 md:py-16 hero-gradient overflow-hidden relative z-10">
@@ -100,10 +104,10 @@ export default function HomePage() {
               <span className="ml-1">creators learning together</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <AnimatedText delay={200} className="text-blue-300 drop-shadow-lg">Creating Content.</AnimatedText>{' '}
-              <AnimatedText delay={400} className="text-purple-300 drop-shadow-lg">Building Products.</AnimatedText>
+              <AnimatedText delay={200} className="text-white drop-shadow-[0_2px_10px_rgba(59,130,246,0.5)]">Creating Content.</AnimatedText>{' '}
+              <AnimatedText delay={400} className="text-white drop-shadow-[0_2px_10px_rgba(147,51,234,0.5)]">Building Products.</AnimatedText>
               <br />
-              <GradientText className="text-4xl md:text-6xl font-bold drop-shadow-2xl" gradient="primary">
+              <GradientText className="text-4xl md:text-6xl font-bold drop-shadow-[0_4px_20px_rgba(59,130,246,0.8)]" gradient="primary">
                 <AnimatedText delay={600}>Sharing My Journey.</AnimatedText>
               </GradientText>
             </h1>

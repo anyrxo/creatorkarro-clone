@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import ScrollAnimation from '@/components/ScrollAnimation'
+import { TiltCard, SpotlightCard } from '@/components/HoverEffects'
 
 // Value Badge Component - Fixed to TOP RIGHT position
 interface ValueBadgeProps {

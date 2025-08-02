@@ -13,6 +13,8 @@ import {
   FAQCard, 
   PricingComparison 
 } from '@/components/course/CourseLayout'
+import ParticleBackground from '@/components/ParticleBackground'
+import ScrollAnimation from '@/components/ScrollAnimation'
 
 export default function AIInfluencersPage() {
   // Scroll animations for different sections
@@ -367,9 +369,10 @@ export default function AIInfluencersPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-dark relative">
+      <ParticleBackground />
       {/* Hero Section */}
-      <div ref={heroAnimation.elementRef}>
+      <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection
           badge="🎯 LIMITED TIME OFFER: Price increasing soon"
           badgeColor="bg-yellow-600/30 text-yellow-300"

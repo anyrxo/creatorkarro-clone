@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { FortressProvider } from "@/components/FortressProvider";
 import ScrollProgressIndicator from "@/components/ScrollProgressIndicator";
 import LoadingBar from "@/components/LoadingBar";
+import PageTransition, { RouteLoader } from "@/components/PageTransition";
 import { siteConfig, defaultSEO, schemas } from "@/config/seo";
 import { generateDynamicMeta } from "@/lib/meta-generator";
 import { Analytics } from "@vercel/analytics/next";
@@ -173,11 +174,14 @@ export default function RootLayout({
         
         <FortressProvider>
           <LoadingBar />
+          <RouteLoader />
           <ScrollProgressIndicator />
           <Navigation />
-          <main className="pt-20 page-enter">
-            {children}
-          </main>
+          <PageTransition>
+            <main className="pt-20 page-enter">
+              {children}
+            </main>
+          </PageTransition>
           <Footer />
           <Analytics />
           <SpeedInsights />

@@ -40,7 +40,7 @@ export default function ResourcesPage() {
       tools: [
         {
           name: "Beehiiv",
-          description: "Newsletter platform I use for my email list. You earn 50% commission for 12 months. Your audience receives a 30-day trial + 20% OFF for 3 months.",
+          description: "Newsletter platform I use for my email list. Get a 30-day trial + 20% OFF for 3 months.",
           link: "https://www.beehiiv.com?via=AbdulMannan1",
           type: "Freemium"
         },
@@ -75,7 +75,7 @@ export default function ResourcesPage() {
         {
           name: "Whop",
           description: "Platform I use to host all my courses",
-          link: "https://whop.com/",
+          link: "https://whop.com/agencypartners?a=anyro",
           type: "Platform"
         },
         {
@@ -108,7 +108,7 @@ export default function ResourcesPage() {
       tools: [
         {
           name: "RunPod",
-          description: "GPU cloud computing for AI development. A one-time random credit bonus from $5-500 when they sign up with your link and load $10 for the first time. Instant access to RunPod's GPU resources.",
+          description: "GPU cloud computing for AI development. Get a one-time random credit bonus from $5-500 when you sign up and load $10 for the first time. Instant access to RunPod's GPU resources.",
           link: "https://runpod.io?ref=yf9yht6f",
           type: "Cloud Service"
         },
