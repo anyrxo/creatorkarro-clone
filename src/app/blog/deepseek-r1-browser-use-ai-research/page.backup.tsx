@@ -47,7 +47,7 @@ export default function DeepSeekR1BrowserUsePage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-8">
       <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-300 mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
           DeepSeek-R1 & Browser Use: The Future of AI Research Tools Revolution
         </h1>
         <div className="flex items-center text-gray-600 mb-6">
@@ -84,7 +84,7 @@ export default function DeepSeekR1BrowserUsePage() {
       </nav>
 
       <section id="introduction" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">The AI Research Revolution</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">The AI Research Revolution</h2>
         <p className="text-lg text-gray-700 mb-6 leading-relaxed">
           The landscape of AI-powered research is experiencing a seismic shift. While OpenAI's Deep Research introduced the concept of automated research agents, its $200/month price tag and restrictive limitations have created a massive opportunity for open-source alternatives.
         </p>
@@ -117,7 +117,7 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="openai-limitations" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">OpenAI Deep Research: The $200/Month Bottleneck</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">OpenAI Deep Research: The $200/Month Bottleneck</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           OpenAI's Deep Research promised PhD-level research automation, but its implementation reveals significant limitations that make it impractical for serious research work.
         </p>
@@ -188,19 +188,19 @@ export default function DeepSeekR1BrowserUsePage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Cost Analysis: OpenAI vs Open-Source</h3>
           
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="text-3xl font-bold text-red-600 mb-2">$2,400</div>
               <div className="text-sm text-gray-600 mb-2">OpenAI Deep Research (Annual)</div>
               <div className="text-xs text-gray-500">Limited to 1,200 queries/year</div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="text-3xl font-bold text-green-600 mb-2">$0</div>
               <div className="text-sm text-gray-600 mb-2">DeepSeek-R1 + Browser Use</div>
               <div className="text-xs text-gray-500">Unlimited queries and customization</div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="text-3xl font-bold text-blue-600 mb-2">∞</div>
               <div className="text-sm text-gray-600 mb-2">ROI Advantage</div>
               <div className="text-xs text-gray-500">Infinite return on investment</div>
@@ -210,7 +210,7 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="deepseek-r1" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">DeepSeek-R1: The Open-Source Reasoning Revolution</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">DeepSeek-R1: The Open-Source Reasoning Revolution</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           DeepSeek-R1 represents a breakthrough in open-source AI reasoning capabilities, specifically designed for complex research tasks and multi-step problem solving that rivals and often exceeds commercial alternatives.
         </p>
@@ -219,7 +219,7 @@ export default function DeepSeekR1BrowserUsePage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">DeepSeek-R1 Core Capabilities</h3>
           
           <div className="grid lg:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-blue-900">Advanced Reasoning</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Multi-step logical reasoning</li>
@@ -230,7 +230,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-green-900">Research Excellence</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Literature synthesis and analysis</li>
@@ -241,7 +241,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-purple-900">Technical Integration</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• API-first architecture</li>
@@ -255,7 +255,7 @@ export default function DeepSeekR1BrowserUsePage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Performance Benchmarks</h3>
             <div className="space-y-4">
               <div>
@@ -288,7 +288,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Model Specifications</h3>
             <div className="space-y-3">
               <div className="flex justify-between">
@@ -325,7 +325,7 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="browser-use" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Browser Use: 89% Accuracy Web Agent Revolution</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Browser Use: 89% Accuracy Web Agent Revolution</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Browser Use represents the pinnacle of web automation and AI research integration, achieving industry-leading 89% accuracy while providing complete control over the research process.
         </p>
@@ -334,51 +334,51 @@ export default function DeepSeekR1BrowserUsePage() {
           <h3 className="text-2xl font-semibold mb-6 text-center text-green-900">Browser Use Advantage Matrix</h3>
           
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-gray-900 rounded-lg overflow-hidden shadow-md">
+            <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-md">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border border-gray-600 px-4 py-3 text-left">Feature</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">Browser Use</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">OpenAI Deep Research</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">Google Deep Research</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left">Feature</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">Browser Use</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">OpenAI Deep Research</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">Google Deep Research</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Web Agent Accuracy</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">89%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">87%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">85%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Web Agent Accuracy</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">89%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">87%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">85%</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Monthly Cost</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">$0</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">$200</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">Free (Limited)</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Monthly Cost</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">$0</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">$200</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">Free (Limited)</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Query Limitations</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">Unlimited</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">100/month</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">10/month</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Query Limitations</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">Unlimited</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">100/month</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">10/month</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Website Restrictions</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">None</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">Many</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">Some</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Website Restrictions</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">None</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">Many</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">Some</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Customization</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">Full Control</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">None</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">Limited</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Customization</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">Full Control</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">None</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">Limited</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Multi-Model Support</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">Yes</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">No</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">No</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Multi-Model Support</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">Yes</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">No</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">No</td>
                 </tr>
               </tbody>
             </table>
@@ -386,7 +386,7 @@ export default function DeepSeekR1BrowserUsePage() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Technical Architecture</h3>
             <div className="space-y-4">
               <div>
@@ -410,7 +410,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Research Capabilities</h3>
             <div className="space-y-4">
               <div>
@@ -470,13 +470,13 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="key-features" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Key Features & Advanced Capabilities</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Key Features & Advanced Capabilities</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           The combination of DeepSeek-R1 and Browser Use creates a research powerhouse with capabilities that extend far beyond traditional search and summarization tools.
         </p>
 
         <div className="space-y-8">
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-2xl font-semibold mb-4 text-blue-900">1. Collaborative AI Agent System</h3>
             <p className="text-gray-700 mb-4">
               Multiple AI models work together seamlessly to provide comprehensive research coverage with cross-validation and quality assurance.
@@ -505,7 +505,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-2xl font-semibold mb-4 text-green-900">2. Advanced Source Indexing & Customization</h3>
             <p className="text-gray-700 mb-4">
               Sophisticated source management with intelligent filtering, priority weighting, and custom research parameters.
@@ -534,7 +534,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
+          <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
             <h3 className="text-2xl font-semibold mb-4 text-purple-900">3. Multi-Browser & Cross-Platform Support</h3>
             <p className="text-gray-700 mb-4">
               Seamless operation across different environments with adaptive strategies for various websites and platforms.
@@ -576,7 +576,7 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="setup-guide" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Complete Setup Guide: From Zero to Research Hero</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Complete Setup Guide: From Zero to Research Hero</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Setting up DeepSeek-R1 with Browser Use requires careful attention to detail, but the process is straightforward with the right guidance. This comprehensive guide will have you conducting advanced AI research within 30 minutes.
         </p>
@@ -585,7 +585,7 @@ export default function DeepSeekR1BrowserUsePage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Setup Timeline</h3>
           
           <div className="grid lg:grid-cols-4 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl font-bold text-blue-600">1</span>
               </div>
@@ -593,7 +593,7 @@ export default function DeepSeekR1BrowserUsePage() {
               <p className="text-sm text-gray-600">5 minutes</p>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl font-bold text-green-600">2</span>
               </div>
@@ -601,7 +601,7 @@ export default function DeepSeekR1BrowserUsePage() {
               <p className="text-sm text-gray-600">10 minutes</p>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-yellow-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl font-bold text-yellow-600">3</span>
               </div>
@@ -609,7 +609,7 @@ export default function DeepSeekR1BrowserUsePage() {
               <p className="text-sm text-gray-600">10 minutes</p>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl font-bold text-purple-600">4</span>
               </div>
@@ -620,7 +620,7 @@ export default function DeepSeekR1BrowserUsePage() {
         </div>
 
         <div className="space-y-8">
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-blue-900">Step 1: Prerequisites & Environment Setup</h3>
             
             <div className="grid lg:grid-cols-2 gap-8">
@@ -668,7 +668,7 @@ export default function DeepSeekR1BrowserUsePage() {
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <h5 className="font-semibold mb-2">DeepSeek API</h5>
                     <p className="text-sm text-gray-600 mb-2">Get your API key from deepseek.com</p>
-                    <div className="bg-gray-900 p-2 rounded border font-mono text-xs">
+                    <div className="bg-white p-2 rounded border font-mono text-xs">
                       export DEEPSEEK_API_KEY="your_key_here"
                     </div>
                   </div>
@@ -686,7 +686,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-green-900">Step 2: Installation Process</h3>
             
             <div className="space-y-6">
@@ -743,7 +743,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-yellow-900">Step 3: Configuration & Customization</h3>
             
             <div className="grid lg:grid-cols-2 gap-8">
@@ -751,7 +751,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <h4 className="text-lg font-semibold mb-4">Environment Configuration</h4>
                 <div className="bg-yellow-50 p-4 rounded-lg mb-4">
                   <h5 className="font-semibold mb-2">Create .env file</h5>
-                  <div className="bg-gray-900 p-3 rounded border font-mono text-sm">
+                  <div className="bg-white p-3 rounded border font-mono text-sm">
                     <div className="space-y-1">
                       <div># API Keys</div>
                       <div>DEEPSEEK_API_KEY=your_deepseek_key</div>
@@ -840,7 +840,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-purple-900">Step 4: Testing & Validation</h3>
             
             <div className="space-y-6">
@@ -864,7 +864,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 <h4 className="text-lg font-semibold mb-4">Test Research Query</h4>
                 <div className="bg-purple-50 p-4 rounded-lg">
                   <h5 className="font-semibold mb-2">Sample Test Query</h5>
-                  <div className="bg-gray-900 p-3 rounded border">
+                  <div className="bg-white p-3 rounded border">
                     <p className="text-sm italic">
                       "Write a comprehensive technical report on the latest developments in transformer architecture optimization for large language models, including recent papers from 2024-2025, performance benchmarks, and future research directions."
                     </p>
@@ -924,7 +924,7 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="performance-comparison" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Performance Analysis: Open-Source vs Commercial Solutions</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Performance Analysis: Open-Source vs Commercial Solutions</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Comprehensive benchmarking reveals that the DeepSeek-R1 + Browser Use combination not only matches but exceeds the performance of expensive commercial alternatives across multiple metrics.
         </p>
@@ -933,58 +933,58 @@ export default function DeepSeekR1BrowserUsePage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Comprehensive Performance Matrix</h3>
           
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-gray-900 rounded-lg overflow-hidden shadow-md">
+            <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-md">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border border-gray-600 px-4 py-3 text-left">Performance Metric</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">DeepSeek-R1 + Browser Use</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">OpenAI Deep Research</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">Google Deep Research</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">Improvement</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left">Performance Metric</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">DeepSeek-R1 + Browser Use</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">OpenAI Deep Research</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">Google Deep Research</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">Improvement</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Research Accuracy</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">94.2%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">91.8%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">89.3%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">+2.4%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Research Accuracy</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">94.2%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">91.8%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">89.3%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">+2.4%</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Source Coverage</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">Unlimited</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">Limited</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">Moderate</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">100%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Source Coverage</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">Unlimited</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">Limited</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">Moderate</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">100%</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Processing Speed</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">3.2x faster</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">Baseline</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">1.4x faster</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">220%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Processing Speed</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">3.2x faster</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">Baseline</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">1.4x faster</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">220%</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Citation Quality</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">97.1%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">93.4%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">91.2%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">+3.7%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Citation Quality</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">97.1%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">93.4%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">91.2%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">+3.7%</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Cost Efficiency</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">$0.55/M tokens</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">$20/query</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">Free/Limited</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">97% savings</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Cost Efficiency</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">$0.55/M tokens</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">$20/query</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">Free/Limited</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">97% savings</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Customization Level</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">Full Control</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">None</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">Minimal</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">Unlimited</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Customization Level</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">Full Control</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">None</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">Minimal</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">Unlimited</td>
                 </tr>
               </tbody>
             </table>
@@ -992,7 +992,7 @@ export default function DeepSeekR1BrowserUsePage() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Speed Benchmarks</h3>
             <div className="space-y-4">
               <div>
@@ -1025,7 +1025,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Quality Metrics</h3>
             <div className="space-y-4">
               <div>
@@ -1058,7 +1058,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
             <h3 className="text-xl font-semibold mb-4 text-purple-900">Cost Analysis</h3>
             <div className="space-y-4">
               <div>
@@ -1120,14 +1120,14 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="use-cases" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Real-World Use Cases & Success Stories</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Real-World Use Cases & Success Stories</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           DeepSeek-R1 and Browser Use have been successfully deployed across diverse industries and research domains, delivering exceptional results for academic, commercial, and personal research projects.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           <div className="space-y-6">
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
               <h3 className="text-xl font-semibold mb-4 text-blue-900">Academic Research Excellence</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1146,7 +1146,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
               <h3 className="text-xl font-semibold mb-4 text-green-900">Market Intelligence & Analysis</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1165,7 +1165,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
               <h3 className="text-xl font-semibold mb-4 text-purple-900">Technical Documentation & Standards</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1186,7 +1186,7 @@ export default function DeepSeekR1BrowserUsePage() {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
               <h3 className="text-xl font-semibold mb-4 text-red-900">Healthcare & Medical Research</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1205,7 +1205,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-yellow-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-yellow-500">
               <h3 className="text-xl font-semibold mb-4 text-yellow-900">Legal Research & Compliance</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1224,7 +1224,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
               <h3 className="text-xl font-semibold mb-4 text-indigo-900">Content Creation & Journalism</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1270,7 +1270,7 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="technical-architecture" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Technical Architecture & System Design</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Technical Architecture & System Design</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Understanding the technical foundation of DeepSeek-R1 and Browser Use reveals the sophisticated engineering that enables their superior performance and reliability.
         </p>
@@ -1279,7 +1279,7 @@ export default function DeepSeekR1BrowserUsePage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">System Architecture Overview</h3>
           
           <div className="grid lg:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-blue-900">AI Reasoning Layer</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• DeepSeek-R1 core processing</li>
@@ -1290,7 +1290,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-green-900">Web Automation Layer</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Browser Use control system</li>
@@ -1301,7 +1301,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-purple-900">Integration & API Layer</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Multi-model API orchestration</li>
@@ -1315,7 +1315,7 @@ export default function DeepSeekR1BrowserUsePage() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">DeepSeek-R1 Technical Details</h3>
             <div className="space-y-4">
               <div>
@@ -1341,7 +1341,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Browser Use Technical Stack</h3>
             <div className="space-y-4">
               <div>
@@ -1394,7 +1394,7 @@ export default function DeepSeekR1BrowserUsePage() {
           </div>
         </div>
 
-        <div className="bg-gray-900 p-8 rounded-lg shadow-lg">
+        <div className="bg-white p-8 rounded-lg shadow-lg">
           <h3 className="text-2xl font-semibold mb-6">Security & Privacy Architecture</h3>
           
           <div className="grid lg:grid-cols-3 gap-6">
@@ -1435,13 +1435,13 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="advanced-features" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Advanced Features & Enterprise Customization</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Advanced Features & Enterprise Customization</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Beyond basic research capabilities, DeepSeek-R1 and Browser Use offer advanced features and enterprise-grade customization options that scale with organizational needs.
         </p>
 
         <div className="space-y-8">
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-2xl font-semibold mb-4 text-blue-900">1. Advanced Research Workflows</h3>
             <p className="text-gray-700 mb-4">
               Sophisticated workflow management enables complex, multi-stage research projects with automated quality control and progress tracking.
@@ -1470,7 +1470,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-2xl font-semibold mb-4 text-green-900">2. Custom Model Integration</h3>
             <p className="text-gray-700 mb-4">
               Flexible model architecture supports custom models, fine-tuning, and specialized configurations for domain-specific research.
@@ -1509,7 +1509,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
+          <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
             <h3 className="text-2xl font-semibold mb-4 text-purple-900">3. Enterprise Analytics & Reporting</h3>
             <p className="text-gray-700 mb-4">
               Comprehensive analytics dashboard provides insights into research performance, cost optimization, and quality metrics.
@@ -1572,7 +1572,7 @@ export default function DeepSeekR1BrowserUsePage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Enterprise Feature Matrix</h3>
           
           <div className="grid lg:grid-cols-4 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🚀</span>
               </div>
@@ -1580,7 +1580,7 @@ export default function DeepSeekR1BrowserUsePage() {
               <p className="text-gray-700 text-sm">Handle 10,000+ concurrent research queries with sub-second response times</p>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🔒</span>
               </div>
@@ -1588,7 +1588,7 @@ export default function DeepSeekR1BrowserUsePage() {
               <p className="text-gray-700 text-sm">Enterprise-grade security with SOC2, GDPR, and HIPAA compliance options</p>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">⚙️</span>
               </div>
@@ -1596,7 +1596,7 @@ export default function DeepSeekR1BrowserUsePage() {
               <p className="text-gray-700 text-sm">Fully customizable workflows, models, and integration points</p>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">📊</span>
               </div>
@@ -1608,7 +1608,7 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="enterprise-deployment" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Enterprise Deployment & Integration</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Enterprise Deployment & Integration</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Enterprise deployment of DeepSeek-R1 and Browser Use requires careful planning and strategic implementation to maximize organizational benefits while ensuring security and scalability.
         </p>
@@ -1617,7 +1617,7 @@ export default function DeepSeekR1BrowserUsePage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Enterprise Deployment Options</h3>
           
           <div className="grid lg:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-blue-900">Cloud Deployment</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• AWS, Azure, GCP support</li>
@@ -1631,7 +1631,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-green-900">On-Premises Deployment</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Complete data control</li>
@@ -1645,7 +1645,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-purple-900">Hybrid Deployment</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Best of both worlds</li>
@@ -1662,7 +1662,7 @@ export default function DeepSeekR1BrowserUsePage() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Integration Architecture</h3>
             <div className="space-y-4">
               <div>
@@ -1688,7 +1688,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Scalability & Performance</h3>
             <div className="space-y-4">
               <div>
@@ -1720,7 +1720,7 @@ export default function DeepSeekR1BrowserUsePage() {
           
           <div className="space-y-6">
             <div className="grid md:grid-cols-4 gap-4">
-              <div className="bg-gray-900 p-4 rounded-lg shadow-sm">
+              <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h4 className="font-semibold text-blue-600 mb-2">Week 1-2: Planning</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Requirements gathering</li>
@@ -1730,7 +1730,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 </ul>
               </div>
               
-              <div className="bg-gray-900 p-4 rounded-lg shadow-sm">
+              <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h4 className="font-semibold text-green-600 mb-2">Week 3-4: Setup</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Infrastructure provisioning</li>
@@ -1740,7 +1740,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 </ul>
               </div>
               
-              <div className="bg-gray-900 p-4 rounded-lg shadow-sm">
+              <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h4 className="font-semibold text-purple-600 mb-2">Week 5-6: Integration</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Enterprise system integration</li>
@@ -1750,7 +1750,7 @@ export default function DeepSeekR1BrowserUsePage() {
                 </ul>
               </div>
               
-              <div className="bg-gray-900 p-4 rounded-lg shadow-sm">
+              <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h4 className="font-semibold text-orange-600 mb-2">Week 7-8: Launch</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• User training programs</li>
@@ -1784,7 +1784,7 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="future-roadmap" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Future Roadmap & Innovation Pipeline</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Future Roadmap & Innovation Pipeline</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           The development roadmap for DeepSeek-R1 and Browser Use focuses on advancing AI reasoning capabilities, expanding integration options, and pioneering new research methodologies.
         </p>
@@ -1793,7 +1793,7 @@ export default function DeepSeekR1BrowserUsePage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Innovation Roadmap</h3>
           
           <div className="grid lg:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🧠</span>
               </div>
@@ -1807,7 +1807,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">⚡</span>
               </div>
@@ -1821,7 +1821,7 @@ export default function DeepSeekR1BrowserUsePage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🌐</span>
               </div>
@@ -1838,7 +1838,7 @@ export default function DeepSeekR1BrowserUsePage() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Near-Term Developments (2025)</h3>
             <div className="space-y-4">
               <div>
@@ -1862,7 +1862,7 @@ export default function DeepSeekR1BrowserUsePage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Long-Term Vision (2025-2026)</h3>
             <div className="space-y-4">
               <div>
@@ -1937,12 +1937,12 @@ export default function DeepSeekR1BrowserUsePage() {
       </section>
 
       <section id="faqs" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
         
         <div className="space-y-6">
           {faqData.map((faq, index) => (
-            <div key={index} className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
-              <h3 className="text-lg font-semibold text-gray-300 mb-3">{faq.question}</h3>
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
               <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
             </div>
           ))}
@@ -1972,13 +1972,13 @@ export default function DeepSeekR1BrowserUsePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/contact" 
-              className="bg-gray-900 text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
+              className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Get Started Free
             </Link>
             <Link 
               href="/blog" 
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-green-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-600 transition-colors"
             >
               Explore More AI Tools
             </Link>

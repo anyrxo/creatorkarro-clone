@@ -737,7 +737,7 @@ response = model.generate_content(
             <p className="mb-6">
               Ready to slash your AI costs by 90% without sacrificing quality? IImagined.ai helps businesses implement Gemini Flash for maximum impact and minimum cost.
             </p>
-            <Link href="/" className="bg-gray-900 text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition duration-300 inline-block">
+            <Link href="/" className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">
               Get Implementation Help
             </Link>
           </div>

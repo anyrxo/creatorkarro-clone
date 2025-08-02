@@ -1153,11 +1153,11 @@ user = service.create_user("john@example.com", "John Doe", 30)
                 href="https://github.com/RooCodeAI/RooCode" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gray-900 text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition duration-300 inline-block text-center"
+                className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block text-center"
               >
                 Download RooCode v3.3
               </a>
-              <Link href="/" className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-gray-300 transition duration-300 inline-block text-center">
+              <Link href="/" className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition duration-300 inline-block text-center">
                 Get Implementation Help
               </Link>
             </div>

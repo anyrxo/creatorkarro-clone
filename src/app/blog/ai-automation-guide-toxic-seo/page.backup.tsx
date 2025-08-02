@@ -504,21 +504,21 @@ export default function AIAutomationGuideToxicSEO() {
                 <h3 className="text-2xl font-bold text-yellow-400 mb-6">📅 Week 4: Sales Automation</h3>
                 <div className="space-y-4">
                   <div className="flex gap-4">
-                    <div className="bg-yellow-500 text-gray-300 rounded w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
+                    <div className="bg-yellow-500 text-black rounded w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
                     <div>
                       <h4 className="text-white font-semibold">Lead Qualification AI</h4>
                       <p className="text-gray-400 text-sm">Automatic lead scoring and routing</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="bg-yellow-500 text-gray-300 rounded w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
+                    <div className="bg-yellow-500 text-black rounded w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
                     <div>
                       <h4 className="text-white font-semibold">Email Sequences</h4>
                       <p className="text-gray-400 text-sm">AI-powered nurture campaigns</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="bg-yellow-500 text-gray-300 rounded w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
+                    <div className="bg-yellow-500 text-black rounded w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
                     <div>
                       <h4 className="text-white font-semibold">Revenue Tracking</h4>
                       <p className="text-gray-400 text-sm">Automated analytics and reporting</p>

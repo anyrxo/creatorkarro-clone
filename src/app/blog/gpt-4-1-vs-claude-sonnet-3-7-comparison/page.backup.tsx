@@ -669,7 +669,7 @@ npm run build
             <p className="mb-6">
               Ready to integrate GPT-4.1 or Claude into your projects? IImagined.ai provides expert guidance on AI model selection and implementation strategies.
             </p>
-            <Link href="/" className="bg-gray-900 text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition duration-300 inline-block">
+            <Link href="/" className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">
               Explore AI Solutions
             </Link>
           </div>

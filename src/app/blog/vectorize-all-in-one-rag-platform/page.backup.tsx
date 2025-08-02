@@ -47,7 +47,7 @@ export default function VectorizeRAGPlatformPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-8">
       <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-300 mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
           Vectorize RAG Platform: All-in-One AI Document Parsing & Vector Search Revolution
         </h1>
         <div className="flex items-center text-gray-600 mb-6">
@@ -87,7 +87,7 @@ export default function VectorizeRAGPlatformPage() {
       </nav>
 
       <section id="what-is-vectorize" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">What is Vectorize?</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">What is Vectorize?</h2>
         <p className="text-lg text-gray-700 mb-6 leading-relaxed">
           In the rapidly evolving landscape of AI applications, <strong>Vectorize</strong> emerges as a revolutionary platform that addresses one of the most critical challenges in modern AI development: building efficient and scalable Retrieval-Augmented Generation (RAG) pipelines. This next-generation platform transforms the complex process of handling unstructured data into a streamlined, automated workflow.
         </p>
@@ -120,7 +120,7 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="rag-challenges" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">The RAG Development Challenge</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">The RAG Development Challenge</h2>
         <p className="text-lg text-gray-700 mb-6 leading-relaxed">
           Building effective RAG systems traditionally involves numerous technical hurdles that can significantly impact development timelines and project success rates.
         </p>
@@ -185,13 +185,13 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="vectorize-iris" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Vectorize Iris: Advanced Document Parsing Engine</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Vectorize Iris: Advanced Document Parsing Engine</h2>
         <p className="text-lg text-gray-700 mb-6 leading-relaxed">
           At the heart of Vectorize lies <strong>Vectorize Iris</strong>, a fine-tuned vision model that represents a breakthrough in document parsing technology. This advanced AI system can process and understand complex document structures with unprecedented accuracy.
         </p>
 
         <div className="grid lg:grid-cols-3 gap-6 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-md border">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Document Types</h3>
             <ul className="space-y-2 text-gray-700">
               <li>• Complex multi-column PDFs</li>
@@ -203,7 +203,7 @@ export default function VectorizeRAGPlatformPage() {
             </ul>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-md border">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Extraction Capabilities</h3>
             <ul className="space-y-2 text-gray-700">
               <li>• Text content and formatting</li>
@@ -215,7 +215,7 @@ export default function VectorizeRAGPlatformPage() {
             </ul>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-md border">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-4 text-purple-900">AI Enhancement</h3>
             <ul className="space-y-2 text-gray-700">
               <li>• Context-aware parsing</li>
@@ -254,13 +254,13 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="key-features" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Core Platform Features</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Core Platform Features</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Vectorize offers a comprehensive suite of features designed to address every aspect of RAG pipeline development and optimization.
         </p>
 
         <div className="space-y-8">
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-2xl font-semibold mb-4 text-blue-900">1. Intelligent Pipeline Orchestration</h3>
             <p className="text-gray-700 mb-4">
               Vectorize's core strength lies in its ability to automatically orchestrate complex RAG pipelines with minimal user intervention.
@@ -275,7 +275,7 @@ export default function VectorizeRAGPlatformPage() {
             </ul>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-2xl font-semibold mb-4 text-green-900">2. Advanced Vector Management</h3>
             <p className="text-gray-700 mb-4">
               The platform provides sophisticated vector database management with intelligent optimization strategies.
@@ -290,7 +290,7 @@ export default function VectorizeRAGPlatformPage() {
             </ul>
           </div>
 
-          <div className="bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
+          <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-purple-500">
             <h3 className="text-2xl font-semibold mb-4 text-purple-900">3. Comprehensive Analytics Dashboard</h3>
             <p className="text-gray-700 mb-4">
               Monitor and optimize your RAG systems with detailed analytics and performance insights.
@@ -308,7 +308,7 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="streamlined-setup" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Streamlined RAG Pipeline Setup</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Streamlined RAG Pipeline Setup</h2>
         <p className="text-lg text-gray-700 mb-6 leading-relaxed">
           Traditional RAG pipeline setup requires extensive technical expertise and time-consuming configuration processes. Vectorize revolutionizes this approach with its intuitive, visual interface.
         </p>
@@ -317,7 +317,7 @@ export default function VectorizeRAGPlatformPage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Setup Process Comparison</h3>
           
           <div className="grid lg:grid-cols-2 gap-8">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-xl font-semibold mb-4 text-red-600">Traditional Approach</h4>
               <div className="space-y-4">
                 <div className="flex items-center">
@@ -344,7 +344,7 @@ export default function VectorizeRAGPlatformPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-xl font-semibold mb-4 text-green-600">Vectorize Approach</h4>
               <div className="space-y-4">
                 <div className="flex items-center">
@@ -390,13 +390,13 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="data-integration" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Flexible Data Integration & Scheduling</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Flexible Data Integration & Scheduling</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Vectorize excels at ingesting data from diverse sources with intelligent scheduling and processing capabilities that adapt to your specific requirements.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-md border">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Data Sources</h3>
             <div className="space-y-4">
               <div>
@@ -429,7 +429,7 @@ export default function VectorizeRAGPlatformPage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-md border">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Scheduling Options</h3>
             <div className="space-y-4">
               <div>
@@ -492,7 +492,7 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="rag-sandbox" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">RAG Sandbox: Real-Time Testing Environment</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">RAG Sandbox: Real-Time Testing Environment</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           The RAG Sandbox represents a groundbreaking approach to RAG system validation, providing developers with an integrated testing environment that eliminates the need for external tools and complex setup procedures.
         </p>
@@ -501,7 +501,7 @@ export default function VectorizeRAGPlatformPage() {
           <h3 className="text-2xl font-semibold mb-6 text-center text-green-900">Sandbox Capabilities</h3>
           
           <div className="grid lg:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-blue-900">Query Testing</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Natural language queries</li>
@@ -512,7 +512,7 @@ export default function VectorizeRAGPlatformPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-green-900">Model Selection</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Llama 3 variants</li>
@@ -523,7 +523,7 @@ export default function VectorizeRAGPlatformPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-purple-900">Performance Metrics</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Similarity scores</li>
@@ -537,7 +537,7 @@ export default function VectorizeRAGPlatformPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-xl font-semibold mb-4">Interactive Testing Features</h3>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
@@ -563,7 +563,7 @@ export default function VectorizeRAGPlatformPage() {
             </ul>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-xl font-semibold mb-4">Validation Benefits</h3>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
@@ -596,7 +596,7 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="evaluation-optimization" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">RAG Evaluation & Optimization Tools</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">RAG Evaluation & Optimization Tools</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Vectorize's comprehensive evaluation suite provides detailed insights into RAG system performance, enabling data-driven optimization decisions that significantly improve retrieval accuracy and user satisfaction.
         </p>
@@ -605,7 +605,7 @@ export default function VectorizeRAGPlatformPage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Evaluation Framework</h3>
           
           <div className="grid lg:grid-cols-4 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
@@ -613,7 +613,7 @@ export default function VectorizeRAGPlatformPage() {
               <p className="text-gray-700 text-sm">Measures how well retrieved documents match query intent</p>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">📊</span>
               </div>
@@ -621,7 +621,7 @@ export default function VectorizeRAGPlatformPage() {
               <p className="text-gray-700 text-sm">Evaluates relevance and completeness of search results</p>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">⚡</span>
               </div>
@@ -629,7 +629,7 @@ export default function VectorizeRAGPlatformPage() {
               <p className="text-gray-700 text-sm">Monitors response times and system performance</p>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🏆</span>
               </div>
@@ -640,7 +640,7 @@ export default function VectorizeRAGPlatformPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Performance Metrics Dashboard</h3>
             <div className="space-y-4">
               <div>
@@ -664,7 +664,7 @@ export default function VectorizeRAGPlatformPage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Optimization Recommendations</h3>
             <div className="space-y-4">
               <div>
@@ -724,13 +724,13 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="document-extraction" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Advanced Document Extraction & Processing</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Advanced Document Extraction & Processing</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Vectorize's document extraction capabilities represent a significant advancement in handling unstructured data, with the Extraction Tester providing unprecedented accuracy in processing complex document types.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Complex Document Processing</h3>
             <div className="space-y-4">
               <div>
@@ -754,7 +754,7 @@ export default function VectorizeRAGPlatformPage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Visual Content Processing</h3>
             <div className="space-y-4">
               <div>
@@ -783,19 +783,19 @@ export default function VectorizeRAGPlatformPage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Extraction Tester Performance</h3>
           
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="text-3xl font-bold text-blue-600 mb-2">99.2%</div>
               <div className="text-sm text-gray-600 mb-2">Text Extraction Accuracy</div>
               <div className="text-xs text-gray-500">Compared to 94.7% industry average</div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="text-3xl font-bold text-green-600 mb-2">97.8%</div>
               <div className="text-sm text-gray-600 mb-2">Table Structure Preservation</div>
               <div className="text-xs text-gray-500">Maintains formatting and relationships</div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md text-center">
+            <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="text-3xl font-bold text-purple-600 mb-2">10x</div>
               <div className="text-sm text-gray-600 mb-2">Processing Speed</div>
               <div className="text-xs text-gray-500">Faster than traditional OCR tools</div>
@@ -803,49 +803,49 @@ export default function VectorizeRAGPlatformPage() {
           </div>
         </div>
 
-        <div className="bg-gray-900 p-8 rounded-lg shadow-lg">
+        <div className="bg-white p-8 rounded-lg shadow-lg">
           <h3 className="text-2xl font-semibold mb-6">File Format Support Matrix</h3>
           
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border border-gray-600 px-4 py-3 text-left">Format Category</th>
-                  <th className="border border-gray-600 px-4 py-3 text-left">Supported Types</th>
-                  <th className="border border-gray-600 px-4 py-3 text-left">Extraction Features</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">Accuracy</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left">Format Category</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left">Supported Types</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left">Extraction Features</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">Accuracy</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Documents</td>
-                  <td className="border border-gray-600 px-4 py-3">PDF, DOCX, DOC, RTF</td>
-                  <td className="border border-gray-600 px-4 py-3">Text, tables, images, metadata</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">99.2%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Documents</td>
+                  <td className="border border-gray-300 px-4 py-3">PDF, DOCX, DOC, RTF</td>
+                  <td className="border border-gray-300 px-4 py-3">Text, tables, images, metadata</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">99.2%</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Presentations</td>
-                  <td className="border border-gray-600 px-4 py-3">PPTX, PPT, ODP</td>
-                  <td className="border border-gray-600 px-4 py-3">Slides, notes, embedded content</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">98.5%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Presentations</td>
+                  <td className="border border-gray-300 px-4 py-3">PPTX, PPT, ODP</td>
+                  <td className="border border-gray-300 px-4 py-3">Slides, notes, embedded content</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">98.5%</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Spreadsheets</td>
-                  <td className="border border-gray-600 px-4 py-3">XLSX, XLS, CSV, ODS</td>
-                  <td className="border border-gray-600 px-4 py-3">Data, formulas, charts, formatting</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">97.8%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Spreadsheets</td>
+                  <td className="border border-gray-300 px-4 py-3">XLSX, XLS, CSV, ODS</td>
+                  <td className="border border-gray-300 px-4 py-3">Data, formulas, charts, formatting</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">97.8%</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Web Content</td>
-                  <td className="border border-gray-600 px-4 py-3">HTML, XML, MD</td>
-                  <td className="border border-gray-600 px-4 py-3">Structure, links, media references</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">99.7%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Web Content</td>
+                  <td className="border border-gray-300 px-4 py-3">HTML, XML, MD</td>
+                  <td className="border border-gray-300 px-4 py-3">Structure, links, media references</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">99.7%</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Images</td>
-                  <td className="border border-gray-600 px-4 py-3">PNG, JPG, TIFF, WEBP</td>
-                  <td className="border border-gray-600 px-4 py-3">OCR, object detection, descriptions</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-blue-600">96.5%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Images</td>
+                  <td className="border border-gray-300 px-4 py-3">PNG, JPG, TIFF, WEBP</td>
+                  <td className="border border-gray-300 px-4 py-3">OCR, object detection, descriptions</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-blue-600">96.5%</td>
                 </tr>
               </tbody>
             </table>
@@ -854,13 +854,13 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="ai-model-support" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">AI Model & Database Support</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">AI Model & Database Support</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Vectorize's flexibility lies in its comprehensive support for leading AI models and vector databases, allowing developers to choose the optimal stack for their specific requirements.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Supported AI Models</h3>
             <div className="space-y-4">
               <div>
@@ -893,7 +893,7 @@ export default function VectorizeRAGPlatformPage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Vector Database Options</h3>
             <div className="space-y-4">
               <div>
@@ -931,7 +931,7 @@ export default function VectorizeRAGPlatformPage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Model Selection Guidance</h3>
           
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-blue-900">Performance Focus</h4>
               <div className="space-y-2">
                 <div className="flex justify-between">
@@ -953,7 +953,7 @@ export default function VectorizeRAGPlatformPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-green-900">Use Case Matching</h4>
               <div className="space-y-2">
                 <div className="flex justify-between">
@@ -975,7 +975,7 @@ export default function VectorizeRAGPlatformPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-purple-900">Scale Considerations</h4>
               <div className="space-y-2">
                 <div className="flex justify-between">
@@ -1001,14 +1001,14 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="use-cases" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Real-World Use Cases & Applications</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Real-World Use Cases & Applications</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Vectorize's versatility enables implementation across diverse industries and applications, from enterprise knowledge management to customer support automation.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           <div className="space-y-6">
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
               <h3 className="text-xl font-semibold mb-4 text-blue-900">Enterprise Knowledge Management</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1026,7 +1026,7 @@ export default function VectorizeRAGPlatformPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
               <h3 className="text-xl font-semibold mb-4 text-green-900">Customer Support Automation</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1044,7 +1044,7 @@ export default function VectorizeRAGPlatformPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
               <h3 className="text-xl font-semibold mb-4 text-purple-900">Legal Document Analysis</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1064,7 +1064,7 @@ export default function VectorizeRAGPlatformPage() {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
               <h3 className="text-xl font-semibold mb-4 text-red-900">Healthcare Information Systems</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1082,7 +1082,7 @@ export default function VectorizeRAGPlatformPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-yellow-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-yellow-500">
               <h3 className="text-xl font-semibold mb-4 text-yellow-900">Financial Services</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1100,7 +1100,7 @@ export default function VectorizeRAGPlatformPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
               <h3 className="text-xl font-semibold mb-4 text-indigo-900">E-commerce & Retail</h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
@@ -1145,7 +1145,7 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="implementation" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Implementation Guide & Best Practices</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Implementation Guide & Best Practices</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Successfully implementing Vectorize requires understanding of best practices, proper planning, and strategic configuration choices that maximize system performance and user satisfaction.
         </p>
@@ -1154,7 +1154,7 @@ export default function VectorizeRAGPlatformPage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Implementation Roadmap</h3>
           
           <div className="grid lg:grid-cols-4 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl font-bold text-blue-600">1</span>
               </div>
@@ -1167,7 +1167,7 @@ export default function VectorizeRAGPlatformPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl font-bold text-green-600">2</span>
               </div>
@@ -1180,7 +1180,7 @@ export default function VectorizeRAGPlatformPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-yellow-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl font-bold text-yellow-600">3</span>
               </div>
@@ -1193,7 +1193,7 @@ export default function VectorizeRAGPlatformPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl font-bold text-purple-600">4</span>
               </div>
@@ -1209,7 +1209,7 @@ export default function VectorizeRAGPlatformPage() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Technical Best Practices</h3>
             <div className="space-y-4">
               <div>
@@ -1233,7 +1233,7 @@ export default function VectorizeRAGPlatformPage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Operational Guidelines</h3>
             <div className="space-y-4">
               <div>
@@ -1290,7 +1290,7 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="performance-benchmarks" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Performance Benchmarks & Competitive Analysis</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Performance Benchmarks & Competitive Analysis</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Vectorize consistently outperforms traditional RAG solutions across key metrics, delivering superior accuracy, speed, and cost-effectiveness in real-world deployments.
         </p>
@@ -1299,58 +1299,58 @@ export default function VectorizeRAGPlatformPage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Performance Comparison Matrix</h3>
           
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-gray-900 rounded-lg overflow-hidden shadow-md">
+            <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-md">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border border-gray-600 px-4 py-3 text-left">Metric</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">Vectorize</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">Traditional RAG</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">Custom Solutions</th>
-                  <th className="border border-gray-600 px-4 py-3 text-center">Improvement</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left">Metric</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">Vectorize</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">Traditional RAG</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">Custom Solutions</th>
+                  <th className="border border-gray-300 px-4 py-3 text-center">Improvement</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Setup Time</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">30 minutes</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">2-8 weeks</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">3-12 weeks</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">97% faster</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Setup Time</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">30 minutes</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">2-8 weeks</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">3-12 weeks</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">97% faster</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Document Parsing Accuracy</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">99.2%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">94.7%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">91.3%</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">+4.5%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Document Parsing Accuracy</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">99.2%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">94.7%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">91.3%</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">+4.5%</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Query Response Time</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">120ms avg</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">850ms avg</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">1.2s avg</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">7x faster</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Query Response Time</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">120ms avg</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">850ms avg</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">1.2s avg</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">7x faster</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Relevance Score</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">0.94</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">0.82</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">0.79</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">+15%</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Relevance Score</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">0.94</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">0.82</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">0.79</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">+15%</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Processing Throughput</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">10K docs/hour</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">1K docs/hour</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">800 docs/hour</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">10x faster</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Processing Throughput</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">10K docs/hour</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">1K docs/hour</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">800 docs/hour</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">10x faster</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="border border-gray-600 px-4 py-3 font-semibold">Total Cost of Ownership</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600 font-semibold">$2,500/month</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">$8,900/month</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center">$12,400/month</td>
-                  <td className="border border-gray-600 px-4 py-3 text-center text-green-600">72% savings</td>
+                  <td className="border border-gray-300 px-4 py-3 font-semibold">Total Cost of Ownership</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600 font-semibold">$2,500/month</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">$8,900/month</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center">$12,400/month</td>
+                  <td className="border border-gray-300 px-4 py-3 text-center text-green-600">72% savings</td>
                 </tr>
               </tbody>
             </table>
@@ -1358,7 +1358,7 @@ export default function VectorizeRAGPlatformPage() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Speed Benchmarks</h3>
             <div className="space-y-4">
               <div>
@@ -1391,7 +1391,7 @@ export default function VectorizeRAGPlatformPage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Accuracy Metrics</h3>
             <div className="space-y-4">
               <div>
@@ -1424,7 +1424,7 @@ export default function VectorizeRAGPlatformPage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
             <h3 className="text-xl font-semibold mb-4 text-purple-900">Cost Efficiency</h3>
             <div className="space-y-4">
               <div>
@@ -1486,7 +1486,7 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="competitive-analysis" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Competitive Analysis & Market Position</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Competitive Analysis & Market Position</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           In the rapidly evolving RAG platform market, Vectorize stands out through its comprehensive feature set, superior performance, and unique approach to document processing and system optimization.
         </p>
@@ -1495,7 +1495,7 @@ export default function VectorizeRAGPlatformPage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Market Position Analysis</h3>
           
           <div className="grid lg:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-blue-900">Traditional RAG Solutions</h4>
               <div className="space-y-3">
                 <div className="flex justify-between">
@@ -1517,7 +1517,7 @@ export default function VectorizeRAGPlatformPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md border-2 border-green-400">
+            <div className="bg-white rounded-lg p-6 shadow-md border-2 border-green-400">
               <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold mb-3 inline-block">Market Leader</div>
               <h4 className="text-lg font-semibold mb-4 text-green-900">Vectorize Platform</h4>
               <div className="space-y-3">
@@ -1540,7 +1540,7 @@ export default function VectorizeRAGPlatformPage() {
               </div>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="text-lg font-semibold mb-4 text-purple-900">Custom Development</h4>
               <div className="space-y-3">
                 <div className="flex justify-between">
@@ -1565,7 +1565,7 @@ export default function VectorizeRAGPlatformPage() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Unique Differentiators</h3>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
@@ -1591,7 +1591,7 @@ export default function VectorizeRAGPlatformPage() {
             </ul>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Competitive Advantages</h3>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
@@ -1641,7 +1641,7 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="future-roadmap" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-6">Future Roadmap & Platform Evolution</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Future Roadmap & Platform Evolution</h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           Vectorize's development roadmap focuses on advanced AI integration, enhanced automation capabilities, and expanded platform integrations to maintain its position as the leading RAG solution.
         </p>
@@ -1650,7 +1650,7 @@ export default function VectorizeRAGPlatformPage() {
           <h3 className="text-2xl font-semibold mb-6 text-center">Planned Enhancements</h3>
           
           <div className="grid lg:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🤖</span>
               </div>
@@ -1664,7 +1664,7 @@ export default function VectorizeRAGPlatformPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🔧</span>
               </div>
@@ -1678,7 +1678,7 @@ export default function VectorizeRAGPlatformPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-900 rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🌐</span>
               </div>
@@ -1695,7 +1695,7 @@ export default function VectorizeRAGPlatformPage() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">Short-Term Developments (Q2-Q3 2025)</h3>
             <div className="space-y-4">
               <div>
@@ -1719,7 +1719,7 @@ export default function VectorizeRAGPlatformPage() {
             </div>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+          <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
             <h3 className="text-xl font-semibold mb-4 text-green-900">Long-Term Vision (2025-2026)</h3>
             <div className="space-y-4">
               <div>
@@ -1776,12 +1776,12 @@ export default function VectorizeRAGPlatformPage() {
       </section>
 
       <section id="faqs" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-300 mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
         
         <div className="space-y-6">
           {faqData.map((faq, index) => (
-            <div key={index} className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
-              <h3 className="text-lg font-semibold text-gray-300 mb-3">{faq.question}</h3>
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
               <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
             </div>
           ))}
@@ -1811,13 +1811,13 @@ export default function VectorizeRAGPlatformPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/contact" 
-              className="bg-gray-900 text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
+              className="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Start Your Implementation
             </Link>
             <Link 
               href="/blog" 
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-indigo-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors"
             >
               Explore More AI Solutions
             </Link>
