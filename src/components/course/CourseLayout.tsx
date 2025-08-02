@@ -51,9 +51,12 @@ export function ModuleCard({
   staggerClass = ''
 }: ModuleCardProps) {
   return (
-    <div className={`relative ${bgColor} border ${borderColor} rounded-lg p-8 scroll-fade-up card-hover hover-lift ${isVisible ? `visible ${staggerClass}` : ''}`}>
-      <ValueBadge value={value} />
-      <div className="flex items-start space-x-6">
+    <ScrollAnimation animation="fade-up" delay={number * 100}>
+      <TiltCard maxTilt={8} perspective={1500}>
+        <SpotlightCard spotlightColor={`rgba(147, 51, 234, 0.1)`}>
+          <div className={`relative ${bgColor} border ${borderColor} rounded-lg p-8 card-premium transition-all duration-500`}>
+            <ValueBadge value={value} />
+            <div className="flex items-start space-x-6">
         <div className={`${color.replace('text-', 'bg-')} text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0`}>
           {number}
         </div>
@@ -83,6 +86,9 @@ export function ModuleCard({
         </div>
       </div>
     </div>
+    </SpotlightCard>
+    </TiltCard>
+    </ScrollAnimation>
   )
 }
 
@@ -98,12 +104,16 @@ interface BonusCardProps {
 
 export function BonusCard({ icon, title, description, value, isVisible, staggerClass = '' }: BonusCardProps) {
   return (
-    <div className={`relative bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${isVisible ? `visible ${staggerClass}` : ''}`}>
-      <ValueBadge value={value} className="bg-gold-500" />
-      <div className="text-3xl mb-3">{icon}</div>
-      <h3 className="text-lg font-bold mb-3 text-gold-400">{title}</h3>
-      <p className="text-gray-400 text-sm pr-8">{description}</p>
-    </div>
+    <ScrollAnimation animation="scale" delay={100}>
+      <TiltCard maxTilt={10}>
+        <div className="relative bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-premium hover:border-gold-400/50 transition-all duration-500">
+          <ValueBadge value={value} className="bg-gold-500" />
+          <div className="text-3xl mb-3 animate-float">{icon}</div>
+          <h3 className="text-lg font-bold mb-3 text-gold-400">{title}</h3>
+          <p className="text-gray-400 text-sm pr-8">{description}</p>
+        </div>
+      </TiltCard>
+    </ScrollAnimation>
   )
 }
 
@@ -118,11 +128,13 @@ interface ProblemCardProps {
 
 export function ProblemCard({ icon, title, description, isVisible, staggerClass = '' }: ProblemCardProps) {
   return (
-    <div className={`bg-zinc-900 border border-red-500/20 rounded-lg p-8 text-center card-hover hover-lift scroll-fade-up ${isVisible ? `visible ${staggerClass}` : ''}`}>
-      <div className="text-4xl mb-4">{icon}</div>
-      <h3 className="text-xl font-bold mb-4 text-red-400">{title}</h3>
-      <p className="text-gray-400">{description}</p>
-    </div>
+    <ScrollAnimation animation="fade-up">
+      <div className="bg-zinc-900 border border-red-500/20 rounded-lg p-8 text-center card-premium hover:border-red-400/50 transition-all duration-500 group">
+        <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{icon}</div>
+        <h3 className="text-xl font-bold mb-4 text-red-400">{title}</h3>
+        <p className="text-gray-400">{description}</p>
+      </div>
+    </ScrollAnimation>
   )
 }
 
