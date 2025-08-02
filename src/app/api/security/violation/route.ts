@@ -24,12 +24,13 @@ function getRealIP(request: NextRequest): string {
   const forwarded = request.headers.get('x-forwarded-for');
   const realIP = request.headers.get('x-real-ip');
   const remoteAddr = request.headers.get('x-remote-addr');
+  const vercelForwarded = request.headers.get('x-vercel-forwarded-for');
   
   if (forwarded) {
     return forwarded.split(',')[0].trim();
   }
   
-  return realIP || remoteAddr || request.ip || 'unknown';
+  return realIP || remoteAddr || vercelForwarded || 'unknown';
 }
 
 function isRateLimited(ip: string): boolean {
