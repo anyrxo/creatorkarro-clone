@@ -21,8 +21,12 @@ export default function ParticleBackground() {
     const canvas = canvasRef.current
     if (!canvas) return
 
-    const ctx = canvas.getContext('2d')
+    const ctx = canvas.getContext('2d', { alpha: true })
     if (!ctx) return
+    
+    // Enable high-quality rendering
+    ctx.imageSmoothingEnabled = true
+    ctx.imageSmoothingQuality = 'high'
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth
@@ -39,8 +43,8 @@ export default function ParticleBackground() {
           y: Math.random() * canvas.height,
           vx: (Math.random() - 0.5) * 0.5,
           vy: (Math.random() - 0.5) * 0.5,
-          size: Math.random() * 3 + 1,
-          opacity: Math.random() * 0.5 + 0.1,
+          size: Math.random() * 2 + 1,
+          opacity: Math.random() * 0.15 + 0.05, // Lower opacity for subtlety
           hue: Math.random() * 60 + 200, // Blue to purple range
         })
       }
@@ -61,7 +65,7 @@ export default function ParticleBackground() {
 
         // Subtle opacity oscillation
         particle.opacity += Math.sin(Date.now() * 0.001 + particle.x * 0.01) * 0.002
-        particle.opacity = Math.max(0.05, Math.min(0.6, particle.opacity))
+        particle.opacity = Math.max(0.03, Math.min(0.2, particle.opacity)) // Keep opacity very low
       })
     }
 
@@ -89,9 +93,9 @@ export default function ParticleBackground() {
           const dy = particle.y - otherParticle.y
           const distance = Math.sqrt(dx * dx + dy * dy)
 
-          if (distance < 100 && distance > 0) {
-            ctx.strokeStyle = `hsla(${(particle.hue + otherParticle.hue) / 2}, 70%, 55%, ${(1 - distance / 100) * 0.1})`
-            ctx.lineWidth = 1
+          if (distance < 150 && distance > 0) {
+            ctx.strokeStyle = `hsla(${(particle.hue + otherParticle.hue) / 2}, 70%, 55%, ${(1 - distance / 150) * 0.05})` // Very low opacity connections
+            ctx.lineWidth = 0.5 // Thinner lines for subtlety
             ctx.beginPath()
             ctx.moveTo(particle.x, particle.y)
             ctx.lineTo(otherParticle.x, otherParticle.y)

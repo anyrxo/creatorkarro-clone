@@ -23,8 +23,12 @@ export default function InteractiveBackground() {
     const canvas = canvasRef.current
     if (!canvas) return
 
-    const ctx = canvas.getContext('2d')
+    const ctx = canvas.getContext('2d', { alpha: true })
     if (!ctx) return
+    
+    // Enable high-quality rendering
+    ctx.imageSmoothingEnabled = true
+    ctx.imageSmoothingQuality = 'high'
 
     // Set canvas size
     const resizeCanvas = () => {
@@ -116,9 +120,9 @@ export default function InteractiveBackground() {
           const distance = Math.sqrt(dx * dx + dy * dy)
 
           if (distance < 300) {
-            const opacity = (1 - distance / 300) * 0.2
+            const opacity = (1 - distance / 300) * 0.08 // Very subtle connections
             ctx.strokeStyle = `rgba(147, 51, 234, ${opacity})`
-            ctx.lineWidth = 1
+            ctx.lineWidth = 0.5 // Thinner lines
             ctx.beginPath()
             ctx.moveTo(orb.x, orb.y)
             ctx.lineTo(otherOrb.x, otherOrb.y)
@@ -136,8 +140,8 @@ export default function InteractiveBackground() {
           orb.x, orb.y, 0,
           orb.x, orb.y, orb.radius + pulseSize + 30
         )
-        glowGradient.addColorStop(0, orb.color + '40')
-        glowGradient.addColorStop(0.5, orb.color + '20')
+        glowGradient.addColorStop(0, orb.color + '20') // Reduced opacity
+        glowGradient.addColorStop(0.5, orb.color + '10') // Reduced opacity
         glowGradient.addColorStop(1, 'transparent')
 
         ctx.fillStyle = glowGradient
@@ -150,9 +154,9 @@ export default function InteractiveBackground() {
           orb.x - orb.radius / 3, orb.y - orb.radius / 3, 0,
           orb.x, orb.y, orb.radius + pulseSize
         )
-        orbGradient.addColorStop(0, orb.color + '60')
-        orbGradient.addColorStop(0.5, orb.color + '30')
-        orbGradient.addColorStop(1, orb.color + '10')
+        orbGradient.addColorStop(0, orb.color + '30') // Reduced opacity
+        orbGradient.addColorStop(0.5, orb.color + '15') // Reduced opacity
+        orbGradient.addColorStop(1, orb.color + '05') // Reduced opacity
 
         ctx.fillStyle = orbGradient
         ctx.beginPath()
@@ -195,7 +199,7 @@ export default function InteractiveBackground() {
       className="fixed top-0 left-0 w-full h-full pointer-events-none z-0"
       style={{ 
         mixBlendMode: 'screen',
-        opacity: 0.6
+        opacity: 0.3 // Lower overall opacity for subtlety
       }}
     />
   )
