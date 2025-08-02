@@ -263,6 +263,7 @@ function generateTOC(sections, color) {
 function transformMainContent(content, color) {
   // Remove the outer wrapper div if it exists
   content = content.replace(/<div class="max-w-4xl mx-auto">([\s\S]*)<\/div>$/, '$1');
+  content = content.replace(/<div className="max-w-4xl mx-auto">([\s\S]*)<\/div>$/, '$1');
   
   // Transform class to className
   content = content.replace(/class="/g, 'className="');
@@ -272,35 +273,59 @@ function transformMainContent(content, color) {
   content = content.replace(/<img([^>]*?)>/g, '<img$1 />');
   content = content.replace(/<input([^>]*?)>/g, '<input$1 />');
   
-  // Transform headers
-  content = content.replace(/<h2>/g, `<h2 className="text-3xl font-bold text-white mb-6">`);
-  content = content.replace(/<h3>/g, `<h3 className="text-2xl font-bold text-${color}-400 mb-4">`);
-  content = content.replace(/<h4>/g, `<h4 className="text-xl font-semibold text-white mb-3">`);
+  // Transform headers with dark theme
+  content = content.replace(/<h2(?:\s[^>]*)?>(?!.*className)/g, `<h2 className="text-3xl font-bold text-white mb-6">`);
+  content = content.replace(/<h3(?:\s[^>]*)?>(?!.*className)/g, `<h3 className="text-2xl font-bold text-${color}-400 mb-4">`);
+  content = content.replace(/<h4(?:\s[^>]*)?>(?!.*className)/g, `<h4 className="text-xl font-semibold text-white mb-3">`);
+  content = content.replace(/<h5(?:\s[^>]*)?>(?!.*className)/g, `<h5 className="text-lg font-semibold text-${color}-400 mb-2">`);
   
-  // Transform paragraphs
-  content = content.replace(/<p>/g, '<p className="text-gray-300 mb-4">');
-  content = content.replace(/<p><strong>/g, '<p className="text-gray-300 mb-4"><strong className="text-white">');
+  // Transform paragraphs with dark theme
+  content = content.replace(/<p(?:\s[^>]*)?>(?!.*className)/g, '<p className="text-gray-300 mb-4">');
+  content = content.replace(/<p className="text-gray-300 mb-4"><strong>/g, '<p className="text-gray-300 mb-4"><strong className="text-white">');
   
-  // Transform lists
-  content = content.replace(/<ul>/g, '<ul className="space-y-2 mb-6">');
-  content = content.replace(/<ol>/g, '<ol className="space-y-2 mb-6 list-decimal list-inside">');
-  content = content.replace(/<li>/g, `<li className="flex items-start gap-2 text-gray-300"><div className="w-1.5 h-1.5 rounded-full bg-${color}-400 mt-2 flex-shrink-0"></div><span>`);
+  // Transform lists with dark theme
+  content = content.replace(/<ul(?:\s[^>]*)?>(?!.*className)/g, '<ul className="space-y-2 mb-6 text-gray-300">');
+  content = content.replace(/<ol(?:\s[^>]*)?>(?!.*className)/g, '<ol className="space-y-2 mb-6 list-decimal list-inside text-gray-300">');
+  content = content.replace(/<li(?:\s[^>]*)?>(?!.*className)/g, `<li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-${color}-400 mt-2 flex-shrink-0"></div><span>`);
   content = content.replace(/<\/li>/g, '</span></li>');
   
   // Transform blockquotes
-  content = content.replace(/<blockquote>/g, `<blockquote className="border-l-4 border-${color}-500 pl-4 italic text-gray-300 my-6">`);
+  content = content.replace(/<blockquote(?:\s[^>]*)?>(?!.*className)/g, `<blockquote className="border-l-4 border-${color}-500 pl-4 italic text-gray-300 my-6 bg-gray-900/20 p-4 rounded">`);
   
-  // Transform code blocks
-  content = content.replace(/<pre><code>/g, '<pre className="bg-gray-900/50 rounded-lg p-4 overflow-x-auto mb-6"><code className="text-sm text-gray-300">');
+  // Transform tables with dark theme
+  content = content.replace(/<table(?:\s[^>]*)?>(?!.*className)/g, '<table className="w-full text-gray-300 border-collapse">');
+  content = content.replace(/<th(?:\s[^>]*)?>(?!.*className)/g, `<th className="text-left py-3 px-4 text-${color}-400 font-semibold border-b border-gray-700">`);
+  content = content.replace(/<td(?:\s[^>]*)?>(?!.*className)/g, '<td className="py-3 px-4 text-gray-300 border-b border-gray-800">');
+  content = content.replace(/<thead(?:\s[^>]*)?>(?!.*className)/g, '<thead className="bg-gray-900/30">');
+  content = content.replace(/<tbody(?:\s[^>]*)?>(?!.*className)/g, '<tbody className="divide-y divide-gray-800">');
+  
+  // Transform code blocks with dark theme
+  content = content.replace(/<pre><code>/g, '<pre className="bg-gray-900/50 rounded-lg p-4 overflow-x-auto mb-6 border border-gray-700"><code className="text-sm text-gray-300">');
+  content = content.replace(/<pre(?:\s[^>]*)?>(?!.*className)/g, '<pre className="bg-gray-900/50 rounded-lg p-4 overflow-x-auto mb-6 border border-gray-700 text-gray-300">');
+  content = content.replace(/<code(?:\s[^>]*)?>(?!.*className)/g, '<code className="text-sm text-gray-300 bg-gray-800 px-1 py-0.5 rounded">');
+  
+  // Transform divs that might have white backgrounds
+  content = content.replace(/<div([^>]*?)>/g, (match, attrs) => {
+    if (attrs.includes('className') || attrs.includes('class')) {
+      return match.replace(/class="/g, 'className="').replace(/bg-white/g, 'bg-gray-900').replace(/text-black/g, 'text-gray-300');
+    }
+    return `<div className="text-gray-300"${attrs}>`;
+  });
+  
+  // Fix any remaining white backgrounds
+  content = content.replace(/bg-white/g, 'bg-gray-900');
+  content = content.replace(/text-black/g, 'text-gray-300');
+  content = content.replace(/border-gray-200/g, 'border-gray-700');
+  content = content.replace(/border-gray-300/g, 'border-gray-600');
   
   // Fix template literals in code blocks
   content = content.replace(/\${`([^`]*)`}/g, '$1');
   
-  // Wrap in sections
+  // Wrap in sections with dark theme
   return `
-  <section className="section-spacing">
+  <section className="section-spacing bg-dark">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto text-gray-300">
         ${content}
       </div>
     </div>
@@ -476,14 +501,21 @@ async function bulkBeautifyNewsArticles() {
     
     console.log(`📊 Found ${articles.length} total articles\n`);
     
-    // Filter news articles (skip already beautified ones)
+    // Filter news articles (find any that need fixing)
     const newsCategories = ['AI NEWS', 'AI TOOLS', 'AI AGENTS', 'AI PLATFORMS', 'DEVELOPMENT TOOLS', 'AI CODING', 'AI AUTOMATION'];
     const newsArticles = articles.filter(article => {
       const isNews = newsCategories.some(cat => article.category.includes(cat));
-      const isAlreadyBeautified = article.content.includes('className="min-h-screen bg-dark"') || 
-                                   article.content.includes('section-spacing');
-      const needsBeautification = article.content.includes('<div class="max-w-4xl mx-auto">');
-      return isNews && needsBeautification && !isAlreadyBeautified;
+      const isAlreadyFullyBeautified = article.content.includes('className="min-h-screen bg-dark"') && 
+                                      article.content.includes('section-spacing') &&
+                                      !article.content.includes('<div class="max-w-4xl mx-auto">') &&
+                                      !article.content.includes('bg-white') &&
+                                      !article.content.includes('text-black');
+      const needsWork = article.content.includes('<div class="max-w-4xl mx-auto">') ||
+                       article.content.includes('bg-white') ||
+                       article.content.includes('text-black') ||
+                       !article.content.includes('className="min-h-screen bg-dark"');
+      
+      return isNews && needsWork && !isAlreadyFullyBeautified;
     });
     
     console.log(`📰 Found ${newsArticles.length} news articles to beautify\n`);

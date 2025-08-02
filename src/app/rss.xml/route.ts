@@ -2,6 +2,79 @@ import { NextResponse } from 'next/server'
 import { siteConfig } from '@/config/seo'
 
 const blogPosts = [
+  // Latest AI-focused articles (highest priority)
+  {
+    title: "Claude 4 Agentic Coding Revolution: The Future of AI Development",
+    description: "Discover how Claude 4's agentic capabilities are revolutionizing software development and automation.",
+    link: `${siteConfig.url}/blog/claude-4-agentic-coding-revolution`,
+    pubDate: "Wed, 15 Jan 2025 00:00:00 GMT",
+    category: "AI Development"
+  },
+  {
+    title: "Gemini 2 Pro Bolt DIY Full Stack Revolution",
+    description: "How Gemini 2 Pro is transforming DIY full-stack development with unprecedented AI capabilities.",
+    link: `${siteConfig.url}/blog/gemini-2-pro-bolt-diy-full-stack-revolution`,
+    pubDate: "Tue, 14 Jan 2025 00:00:00 GMT",
+    category: "AI Development"
+  },
+  {
+    title: "DeepSeek R1 Open Source AI Revolution",
+    description: "The breakthrough open-source AI model that's challenging GPT-4 dominance.",
+    link: `${siteConfig.url}/blog/deepseek-r1-open-source-ai-revolution`,
+    pubDate: "Mon, 13 Jan 2025 00:00:00 GMT",
+    category: "AI Models"
+  },
+  {
+    title: "GPT-4.1 vs Claude Sonnet 3.7: Ultimate AI Comparison",
+    description: "Comprehensive analysis of the two leading AI models shaping 2025.",
+    link: `${siteConfig.url}/blog/gpt-4-1-vs-claude-sonnet-3-7-comparison`,
+    pubDate: "Sun, 12 Jan 2025 00:00:00 GMT",
+    category: "AI Comparison"
+  },
+  {
+    title: "LLaMA 4: The Open Source AI Powerhouse",
+    description: "Meta's latest open-source model is setting new benchmarks for AI performance.",
+    link: `${siteConfig.url}/blog/llama-4-open-source-ai-powerhouse`,
+    pubDate: "Sat, 11 Jan 2025 00:00:00 GMT",
+    category: "AI Models"
+  },
+  {
+    title: "Manus AI: The General Automation Agent Revolution",
+    description: "How Manus AI is redefining what's possible with general-purpose automation agents.",
+    link: `${siteConfig.url}/blog/manus-ai-general-automation-agent`,
+    pubDate: "Fri, 10 Jan 2025 00:00:00 GMT",
+    category: "AI Automation"
+  },
+  {
+    title: "Vectorize: All-in-One RAG Platform for Enterprise AI",
+    description: "The comprehensive platform that's simplifying enterprise AI implementation.",
+    link: `${siteConfig.url}/blog/vectorize-all-in-one-rag-platform`,
+    pubDate: "Thu, 09 Jan 2025 00:00:00 GMT",
+    category: "Enterprise AI"
+  },
+  {
+    title: "RooCode v3.3: The Ultimate Cline Alternative",
+    description: "Why RooCode is becoming the go-to choice for AI-powered development workflows.",
+    link: `${siteConfig.url}/blog/roocode-v3-3-cline-alternative`,
+    pubDate: "Wed, 08 Jan 2025 00:00:00 GMT",
+    category: "AI Development"
+  },
+  {
+    title: "Qwen 3: Alibaba's Revolutionary Open Source LLM",
+    description: "Alibaba's latest contribution to the open-source AI ecosystem is impressive.",
+    link: `${siteConfig.url}/blog/qwen-3-alibaba-open-source-llm`,
+    pubDate: "Tue, 07 Jan 2025 00:00:00 GMT",
+    category: "AI Models"
+  },
+  {
+    title: "DeepSeek Janus Pro 7B: Multimodal AI Revolution",
+    description: "The breakthrough multimodal model that's redefining AI capabilities.",
+    link: `${siteConfig.url}/blog/deepseek-janus-pro-7b-multimodal-ai-revolution`,
+    pubDate: "Mon, 06 Jan 2025 00:00:00 GMT",
+    category: "Multimodal AI"
+  },
+  
+  // High-value content
   {
     title: "Instagram Growth Hacks That Actually Work in 2025",
     description: "Discover the underground Instagram growth strategies that top creators don't want you to know.",

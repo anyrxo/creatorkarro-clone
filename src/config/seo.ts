@@ -4,26 +4,44 @@ export const siteConfig = {
   ogImage: 'https://iimagined.ai/og-image.png',
   description: 'Master Instagram growth, AI automation, and digital product creation with IImagined.ai. Join 127K+ creators learning battle-tested strategies that generate real results.',
   keywords: [
-    'instagram growth',
+    // AI & Automation (High Priority)
+    'claude 4 ai',
+    'gemini 2 pro',
+    'gpt-4.1',
+    'deepseek r1',
+    'llama 4',
     'ai automation',
-    'digital products',
-    'content creation',
+    'ai agents',
+    'ai development',
+    'multimodal ai',
+    'ai models comparison',
+    'n8n automation',
+    'ai influencers',
+    'ai content creation',
+    'chatgpt automation',
+    'ai workflow automation',
+    
+    // Social Media Growth
+    'instagram growth',
+    'instagram reels',
+    'tiktok growth',
+    'youtube automation',
     'social media marketing',
+    'content creation',
+    'viral content strategy',
+    'faceless youtube',
+    
+    // Digital Business
+    'digital products',
     'passive income',
     'online business',
-    'instagram reels',
-    'youtube automation',
-    'ai tools',
-    'chatgpt',
-    'midjourney',
-    'stable diffusion',
-    'comfyui',
-    'n8n automation',
     'make money online',
+    'digital marketing',
     'content strategy',
     'email marketing',
-    'faceless youtube',
-    'tiktok growth'
+    'comfyui workflows',
+    'ai image generation',
+    'automation tools'
   ],
   links: {
     twitter: 'https://twitter.com/anyro',
@@ -64,19 +82,25 @@ export const defaultSEO = {
 // Page-specific SEO configurations
 export const pageSEO = {
   home: {
-    title: 'IImagined.ai - Master Instagram Growth & AI Automation | 127K+ Students',
-    description: 'Learn proven Instagram growth strategies, AI automation blueprints, and digital product creation from Anyro. Join 127K+ creators building profitable online businesses.',
+    title: 'IImagined.ai - Master AI Automation, Claude 4 & Instagram Growth | 127K+ Students',
+    description: 'Learn Claude 4 AI automation, Gemini 2 Pro development, Instagram growth strategies, and digital product creation. Join 127K+ creators building $10K+/month businesses with cutting-edge AI tools.',
     keywords: [
       'iimagined',
       'anyro',
-      'instagram growth course',
+      'claude 4 automation',
+      'gemini 2 pro course',
+      'gpt-4.1 training',
       'ai automation course',
+      'instagram growth course',
+      'ai influencers course',
+      'deepseek r1 guide',
+      'llama 4 training',
+      'ai agents development',
       'digital products course',
-      'instagram ignited',
-      'ai automation agency',
-      'make money online',
-      'passive income strategies',
-      'content creation course'
+      'n8n automation',
+      'comfyui workflows',
+      'ai content creation',
+      'multimodal ai training'
     ]
   },
   courses: {
@@ -94,16 +118,22 @@ export const pageSEO = {
     ]
   },
   blog: {
-    title: 'Blog - Growth Hacks, AI Strategies & Success Stories | IImagined.ai',
-    description: 'Free guides on Instagram growth, AI automation, digital products, and content creation. Learn from real success stories and proven strategies that generate results.',
+    title: 'AI Blog - Claude 4, Gemini 2 Pro, Growth Hacks & Success Stories | IImagined.ai',
+    description: 'Latest guides on Claude 4 AI, Gemini 2 Pro, DeepSeek R1, Instagram growth, AI automation, and digital products. 64 articles covering cutting-edge AI models and proven business strategies.',
     keywords: [
-      'instagram growth blog',
+      'claude 4 blog',
+      'gemini 2 pro blog',
+      'gpt-4.1 blog',
+      'deepseek r1 blog',
+      'llama 4 blog',
       'ai automation blog',
+      'ai models comparison',
+      'instagram growth blog',
+      'ai development blog',
+      'multimodal ai blog',
+      'ai agents blog',
       'digital marketing blog',
-      'social media tips',
-      'content creation blog',
-      'make money online blog',
-      'passive income blog'
+      'ai tools blog'
     ]
   },
   resources: {
