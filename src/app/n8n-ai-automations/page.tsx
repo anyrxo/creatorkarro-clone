@@ -45,7 +45,7 @@ export default function N8NAutomationsPage() {
         <HeroSection
           badge="🚀 AI AUTOMATION EMPIRE 🚀"
           badgeColor="bg-gradient-to-r from-purple-600/30 to-blue-600/30 text-purple-300 border border-purple-500/50"
-          title="Stop Trading <span class='text-red-400'>Time For Money</span> — Build <span class='text-purple-400'>AI-Powered Automation Empire</span> That Works While You Sleep"
+          title="Stop Trading <span className='text-red-400'>Time For Money</span> — Build <span className='text-purple-400'>AI-Powered Automation Empire</span> That Works While You Sleep"
           description="The complete N8N AI Automation System that lets non-technical entrepreneurs build million-dollar workflows without writing a single line of code. Save 40+ hours/week with intelligent automation."
           ctaText="🔥 Get Complete N8N Mastery System"
           ctaLink="#pricing"
@@ -77,7 +77,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="BRUTAL REALITY"
               badgeColor="bg-zinc-900 border border-red-500 text-red-400"
-              title="You're Drowning in <span class='text-red-400'>Manual Tasks</span>"
+              title="You're Drowning in <span className='text-red-400'>Manual Tasks</span>"
               subtitle="While your competitors scale with AI automation, you're stuck in the stone age of manual labor..."
             />
           </div>
@@ -157,7 +157,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="THE SOLUTION"
               badgeColor="bg-zinc-900 border border-purple-500 text-purple-400"
-              title="N8N AI Automations <span class='text-purple-400'>Changes Everything</span>"
+              title="N8N AI Automations <span className='text-purple-400'>Changes Everything</span>"
               subtitle="The ONLY system that transforms manual entrepreneurs into automation empires - without coding skills."
             />
           </div>
@@ -270,7 +270,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="RESULTS"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="The Automation Revolution is <span class='text-green-400'>Happening NOW</span>"
+              title="The Automation Revolution is <span className='text-green-400'>Happening NOW</span>"
               subtitle="While you're manually grinding, smart entrepreneurs are building AI empires that scale infinitely."
             />
           </div>
@@ -309,7 +309,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="IS THIS YOU?"
               badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
-              title="Who This System is <span class='text-blue-400'>Perfect</span> For"
+              title="Who This System is <span className='text-blue-400'>Perfect</span> For"
               subtitle="See if you match the profile of our most successful students."
             />
           </div>
@@ -352,7 +352,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="STUDENT SUCCESS"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="Real People, <span class='text-green-400'>Real Results</span>"
+              title="Real People, <span className='text-green-400'>Real Results</span>"
               subtitle="These entrepreneurs went from manual hell to automated paradise..."
             />
           </div>
@@ -395,7 +395,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="COMPLETE SYSTEM"
               badgeColor="bg-zinc-900 border border-purple-500 text-purple-400"
-              title="Everything You Need to Build <span class='text-purple-400'>Million-Dollar Workflows</span>"
+              title="Everything You Need to Build <span className='text-purple-400'>Million-Dollar Workflows</span>"
               subtitle="The most comprehensive N8N automation training ever created."
             />
           </div>
@@ -403,42 +403,42 @@ export default function N8NAutomationsPage() {
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "<span class='text-purple-400'>Module 1:</span> N8N Foundation Mastery",
+                title: "<span className='text-purple-400'>Module 1:</span> N8N Foundation Mastery",
                 value: "$497",
                 description: "Master N8N from zero to hero. Complete setup, interface navigation, node connections, and building your first automated workflows. No technical background required."
               },
               {
-                title: "<span class='text-purple-400'>Module 2:</span> AI Integration Secrets",
+                title: "<span className='text-purple-400'>Module 2:</span> AI Integration Secrets",
                 value: "$697",
                 description: "Connect ChatGPT, Claude, and other AI models to your workflows. Build intelligent automation that thinks, learns, and adapts without human intervention."
               },
               {
-                title: "<span class='text-purple-400'>Module 3:</span> Business Process Automation",
+                title: "<span className='text-purple-400'>Module 3:</span> Business Process Automation",
                 value: "$797",
                 description: "Automate lead generation, customer onboarding, email sequences, social media posting, and sales processes. Turn manual tasks into automated systems."
               },
               {
-                title: "<span class='text-purple-400'>Module 4:</span> Advanced Workflow Architecture",
+                title: "<span className='text-purple-400'>Module 4:</span> Advanced Workflow Architecture",
                 value: "$597",
                 description: "Build complex, multi-step workflows that handle conditional logic, data processing, and error handling. Create enterprise-level automation systems."
               },
               {
-                title: "<span class='text-purple-400'>Module 5:</span> API Integration Mastery",
+                title: "<span className='text-purple-400'>Module 5:</span> API Integration Mastery",
                 value: "$697",
                 description: "Connect any tool or platform to your workflows. Master webhooks, HTTP requests, and API authentication. Integrate with Shopify, Stripe, HubSpot, and 500+ other platforms."
               },
               {
-                title: "<span class='text-purple-400'>Module 6:</span> Data Processing & Analytics",
+                title: "<span className='text-purple-400'>Module 6:</span> Data Processing & Analytics",
                 value: "$497",
                 description: "Automatically collect, process, and analyze business data. Create custom dashboards, generate reports, and get insights without manual data entry."
               },
               {
-                title: "<span class='text-purple-400'>Module 7:</span> Client Service Automation",
+                title: "<span className='text-purple-400'>Module 7:</span> Client Service Automation",
                 value: "$897",
                 description: "Build white-label automation services for clients. Templates, proposals, pricing strategies, and delivery systems to charge $3K-$10K per automation project."
               },
               {
-                title: "<span class='text-purple-400'>Module 8:</span> Scaling & Optimization",
+                title: "<span className='text-purple-400'>Module 8:</span> Scaling & Optimization",
                 value: "$597",
                 description: "Scale workflows to handle millions of operations. Performance optimization, monitoring, debugging, and maintenance strategies for bulletproof automation."
               }
@@ -480,7 +480,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="INSANE BONUSES"
               badgeColor="bg-zinc-900 border border-yellow-500 text-yellow-400"
-              title="Get $4,291 in <span class='text-yellow-400'>Premium Bonuses</span> FREE"
+              title="Get $4,291 in <span className='text-yellow-400'>Premium Bonuses</span> FREE"
               subtitle="These bonuses alone are worth more than most courses. But you get them FREE today."
             />
           </div>
@@ -546,7 +546,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="INSANE VALUE"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="This is <span class='text-green-400'>RIDICULOUS</span>"
+              title="This is <span className='text-green-400'>RIDICULOUS</span>"
               subtitle="Let's do the math on what you're actually getting today vs. hiring this expertise..."
             />
           </div>
@@ -714,7 +714,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="SUCCESS STORIES"
               badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
-              title="What <span class='text-blue-400'>N8N Students</span> Are Saying..."
+              title="What <span className='text-blue-400'>N8N Students</span> Are Saying..."
               subtitle="Real entrepreneurs sharing their automation transformation stories."
             />
           </div>
@@ -762,7 +762,7 @@ export default function N8NAutomationsPage() {
             <SectionHeader
               badge="FAQ"
               badgeColor="bg-zinc-900 border border-purple-500 text-purple-400"
-              title="Frequently Asked <span class='text-purple-400'>Questions</span>"
+              title="Frequently Asked <span className='text-purple-400'>Questions</span>"
               subtitle="Everything you need to know about mastering N8N automation."
             />
           </div>

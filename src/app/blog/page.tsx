@@ -151,6 +151,17 @@ const newsArticles = [
     keywords: ["llamacon 2025", "zuckerberg", "nadella", "ai development", "machine first era", "autonomous agents", "software development"]
   },
   {
+    title: "The Ultimate AI Showdown 2025: ChatGPT vs Gemini vs Perplexity vs Grok - Complete Performance Analysis",
+    category: "AI INSIGHTS",
+    categoryColor: "blue",
+    excerpt: "After comprehensive testing of ChatGPT, Google Gemini, Perplexity, and Grok through 20+ real-world challenges, discover which AI assistant delivers the most value for different user types and use cases.",
+    description: "Comprehensive 2025 AI chatbot comparison: ChatGPT vs Gemini vs Perplexity vs Grok. Real-world benchmarks, performance analysis, and expert recommendations for choosing the best AI assistant.",
+    readTime: "28 min",
+    date: "2025-06-30",
+    slug: "ultimate-ai-showdown-chatgpt-gemini-perplexity-grok",
+    keywords: ["ai comparison 2025", "chatgpt vs gemini", "perplexity vs grok", "ai assistant comparison", "best ai chatbot", "ai performance analysis"]
+  },
+  {
     title: "Vectorize RAG Platform: All-in-One AI Document Parsing & Vector Search Revolution",
     category: "AI PLATFORMS",
     categoryColor: "blue",
@@ -160,6 +171,17 @@ const newsArticles = [
     date: "2025-01-02",
     slug: "vectorize-all-in-one-rag-platform",
     keywords: ["vectorize", "rag platform", "ai document parsing", "vector search", "embeddings", "vectorize iris"]
+  },
+  {
+    title: "DeepSeek-R1 & Browser Use: The Future of AI Research Tools Revolution",
+    category: "AI RESEARCH",
+    categoryColor: "green",
+    excerpt: "Discover how DeepSeek-R1 and Browser Use are revolutionizing AI research with 89% accuracy, unlimited queries, and complete open-source freedom - all while outperforming OpenAI's $200/month Deep Research tool.",
+    description: "Complete guide to DeepSeek-R1 and Browser Use - revolutionary open-source AI research tools that rival OpenAI Deep Research with superior performance and zero costs.",
+    readTime: "19 min",
+    date: "2025-01-03",
+    slug: "deepseek-r1-browser-use-ai-research",
+    keywords: ["deepseek r1", "browser use", "ai research tools", "open source ai", "deep research alternative", "ai automation"]
   }
 ]
 

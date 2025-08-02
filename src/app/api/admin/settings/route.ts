@@ -73,6 +73,12 @@ interface PaymentSettings {
   paypalClientId: string;
   paypalClientSecret: string;
   paypalMode: 'sandbox' | 'production';
+  nowpaymentsEnabled: boolean;
+  nowpaymentsApiKey: string;
+  nowpaymentsPublicKey: string;
+  nowpaymentsEnvironment: 'sandbox' | 'production';
+  supportedCryptoCurrencies: string[];
+  cryptoPaymentTimeout: number;
   defaultCurrency: string;
   taxRate: number;
   taxIncluded: boolean;
@@ -175,6 +181,12 @@ const getSettings = async () => {
       paypalClientId: 'AY••••••••••••••••••••••••••••••',
       paypalClientSecret: 'EL••••••••••••••••••••••••••••••',
       paypalMode: 'production' as const,
+      nowpaymentsEnabled: true,
+      nowpaymentsApiKey: 'FQTHSZD-1G6MC7D-NN5K7AQ-5PSGR2V',
+      nowpaymentsPublicKey: '59999bf5-b303-4e10-bce1-70fabe96d81a',
+      nowpaymentsEnvironment: 'production' as const,
+      supportedCryptoCurrencies: ['BTC', 'ETH', 'USDT', 'USDC', 'LTC', 'XRP', 'ADA', 'DOT', 'MATIC', 'TRX', 'BNB', 'SOL'],
+      cryptoPaymentTimeout: 60,
       defaultCurrency: 'USD',
       taxRate: 0,
       taxIncluded: false,

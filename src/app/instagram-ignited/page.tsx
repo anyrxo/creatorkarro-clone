@@ -46,7 +46,7 @@ export default function InstagramIgnitedPage() {
         <HeroSection
           badge="🔥 INSTAGRAM EMPIRE BUILDER 🔥"
           badgeColor="bg-gradient-to-r from-red-600/30 to-orange-600/30 text-red-300 border border-red-500/50"
-          title="Your Complete <span class='text-blue-400'>System</span> to <span class='text-blue-400'>Grow an Audience</span> and Turn It Into <span class='text-blue-400'>Income</span>"
+          title="Your Complete <span className='text-blue-400'>System</span> to <span className='text-blue-400'>Grow an Audience</span> and Turn It Into <span className='text-blue-400'>Income</span>"
           description="The ONLY proven system that takes you from Instagram ghost to algorithm dominator in 90 days or less. Now includes Digital Product Academy and Viral Carousels Mastery in one bundle."
           ctaText="🚀 Claim Instagram Ignited Bundle"
           ctaLink="#pricing"
@@ -425,52 +425,52 @@ export default function InstagramIgnitedPage() {
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "<span class='text-blue-400'>Module 1:</span> Algorithm Domination Blueprint",
+                title: "<span className='text-blue-400'>Module 1:</span> Algorithm Domination Blueprint",
                 value: "$697",
                 description: "Master Instagram's algorithm from the inside out. Learn the exact content patterns, posting times, and engagement strategies that force the algorithm to show your content to thousands of new people daily."
               },
               {
-                title: "<span class='text-blue-400'>Module 2:</span> Viral Content Formula",
+                title: "<span className='text-blue-400'>Module 2:</span> Viral Content Formula",
                 value: "$897",
                 description: "The proven 7-step formula behind every viral post. Discover the psychological triggers, visual patterns, and storytelling frameworks that guarantee viral content every single time."
               },
               {
-                title: "<span class='text-blue-400'>Module 3:</span> Reel Psychology Mastery",
+                title: "<span className='text-blue-400'>Module 3:</span> Reel Psychology Mastery",
                 value: "$797",
                 description: "The neuroscience behind addictive Reels. Learn the exact hooks, transitions, and psychological triggers that force people to watch, share, and follow you instantly."
               },
               {
-                title: "<span class='text-blue-400'>Module 4:</span> Story Engagement Systems",
+                title: "<span className='text-blue-400'>Module 4:</span> Story Engagement Systems",
                 value: "$597",
                 description: "Turn your Stories into a conversion machine. Master polls, questions, stickers, and interactive features that build deeper relationships and drive massive engagement."
               },
               {
-                title: "<span class='text-blue-400'>Module 5:</span> Hashtag Research Automation",
+                title: "<span className='text-blue-400'>Module 5:</span> Hashtag Research Automation",
                 value: "$497",
                 description: "Never guess hashtags again. Get the exact tools and strategies to find high-converting hashtags that put your content in front of your ideal audience automatically."
               },
               {
-                title: "<span class='text-blue-400'>Module 6:</span> DM Automation & Outreach",
+                title: "<span className='text-blue-400'>Module 6:</span> DM Automation & Outreach",
                 value: "$697",
                 description: "Scale your reach beyond your followers. Learn the art of strategic DMs, collaboration outreach, and relationship building that leads to exponential growth."
               },
               {
-                title: "<span class='text-blue-400'>Module 7:</span> Monetization Frameworks",
+                title: "<span className='text-blue-400'>Module 7:</span> Monetization Frameworks",
                 value: "$997",
                 description: "Turn followers into dollars with 12 different revenue streams. From affiliate marketing to digital products, discover how to monetize any size audience profitably."
               },
               {
-                title: "<span class='text-blue-400'>Module 8:</span> Collaboration Networks",
+                title: "<span className='text-blue-400'>Module 8:</span> Collaboration Networks",
                 value: "$597",
                 description: "Build powerful relationships with other creators. Learn how to find, approach, and collaborate with influencers to multiply your reach and credibility instantly."
               },
               {
-                title: "<span class='text-blue-400'>Module 9:</span> Analytics & Optimization",
+                title: "<span className='text-blue-400'>Module 9:</span> Analytics & Optimization",
                 value: "$497",
                 description: "Data-driven growth that never stops. Master Instagram analytics, A/B testing, and optimization strategies that consistently improve your results month after month."
               },
               {
-                title: "<span class='text-blue-400'>Module 10:</span> Scaling to 100K+",
+                title: "<span className='text-blue-400'>Module 10:</span> Scaling to 100K+",
                 value: "$897",
                 description: "The advanced strategies that take you from 10K to 100K+ followers. Content systems, team building, and business frameworks for serious creators ready to go pro."
               }

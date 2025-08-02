@@ -1,8 +1,8 @@
 # 📋 News Articles Assignment Tracker
 
 **Total Articles:** 44  
-**Completed:** 22  
-**Remaining:** 22  
+**Completed:** 24  
+**Remaining:** 20  
 
 ## 🎯 Instructions for All Agents
 
@@ -52,7 +52,7 @@
 - [ ] OpenAI's_Roadmap_to_GPT-5_and_the_Vision_for_a_Unified_Model.md
 
 **FINAL BATCH:**
-- [ ] The_Ultimate_AI_Showdown-_ChatGPT_vs_Gemini_vs_Perplexity_vs_Grok.md
+- [x] The_Ultimate_AI_Showdown-_ChatGPT_vs_Gemini_vs_Perplexity_vs_Grok.md ✅
 - [ ] Unveiling_Google's_Gemini_2.0_Pro_–_The_Future_of_AI_Coding.md
 - [ ] autoMate-_A_Free_and_Open-Source_Alternative_to_Manus_AI.md
 - [x] ✨🤖_DeepSeek_R1-_The_New_Era_of_Open-Source_AI.md ✅
@@ -76,7 +76,7 @@
 - [x] Revolutionizing_Full-Stack_Development-_The_New_Composer_Agent_in_Code_LLM.md ✅
 - [x] RooCode_v3.3_Update_–_A_Cline_Alternative.md ✅
 - [x] The_All-In-One_RAG_Platform_for_AI_Document_Parsing,_Embeddings,_and_Vector_Search.md ✅
-- [ ] The_Future_of_AI_Research-_Exploring_DeepSeek-R1_&_Open-Source_AI_Research_Tools.md
+- [x] The_Future_of_AI_Research-_Exploring_DeepSeek-R1_&_Open-Source_AI_Research_Tools.md ✅
 
 ## 🔄 AGENT 3 Assignment (12 articles total)
 
@@ -111,10 +111,10 @@
 
 | Agent | Assigned | Completed | In Progress | Remaining |
 |-------|----------|-----------|-------------|-----------|
-| Agent 1 | 19 | 13 | 0 | 6 |
-| Agent 2 | 13 | 11 | 0 | 2 |
+| Agent 1 | 19 | 14 | 0 | 5 |
+| Agent 2 | 13 | 12 | 0 | 1 |
 | Agent 3 | 12 | 0 | 0 | 12 |
-| Total | 44 | 22 | 0 | 22 |
+| Total | 44 | 24 | 0 | 20 |
 
 ---
 

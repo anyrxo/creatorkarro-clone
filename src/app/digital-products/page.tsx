@@ -45,7 +45,7 @@ export default function DigitalProductsPage() {
         <HeroSection
           badge="💎 DIGITAL EMPIRE BUILDER 💎"
           badgeColor="bg-gradient-to-r from-green-600/30 to-emerald-600/30 text-green-300 border border-green-500/50"
-          title="Turn Your <span class='text-green-400'>Knowledge</span> Into a <span class='text-green-400'>$500K+ Digital Empire</span> Without Ads or Followers"
+          title="Turn Your <span className='text-green-400'>Knowledge</span> Into a <span className='text-green-400'>$500K+ Digital Empire</span> Without Ads or Followers"
           description="The complete Digital Products Academy that shows you how to create, launch, and scale high-converting digital products that generate consistent $10K-$50K months on autopilot."
           ctaText="🚀 Get Digital Products Mastery"
           ctaLink="#pricing"
@@ -77,7 +77,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="BRUTAL REALITY"
               badgeColor="bg-zinc-900 border border-red-500 text-red-400"
-              title="You're Trapped in the <span class='text-red-400'>Trading Time for Money</span> Prison"
+              title="You're Trapped in the <span className='text-red-400'>Trading Time for Money</span> Prison"
               subtitle="While others build digital empires that work 24/7, you're stuck in the outdated hustle..."
             />
           </div>
@@ -157,7 +157,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="THE SOLUTION"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="Digital Products Academy <span class='text-green-400'>Changes Everything</span>"
+              title="Digital Products Academy <span className='text-green-400'>Changes Everything</span>"
               subtitle="The ONLY proven system that transforms your knowledge into high-converting digital products that scale infinitely."
             />
           </div>
@@ -270,7 +270,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="PROVEN RESULTS"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="The Digital Product Revolution is <span class='text-green-400'>Here</span>"
+              title="The Digital Product Revolution is <span className='text-green-400'>Here</span>"
               subtitle="While you're trading time for money, smart entrepreneurs are building passive income empires."
             />
           </div>
@@ -309,7 +309,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="IS THIS YOU?"
               badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
-              title="Who This System is <span class='text-blue-400'>Perfect</span> For"
+              title="Who This System is <span className='text-blue-400'>Perfect</span> For"
               subtitle="See if you match the profile of our most successful students."
             />
           </div>
@@ -352,7 +352,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="SUCCESS STORIES"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="Real People, <span class='text-green-400'>Real Results</span>"
+              title="Real People, <span className='text-green-400'>Real Results</span>"
               subtitle="These entrepreneurs went from broke to building digital empires..."
             />
           </div>
@@ -395,7 +395,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="COMPLETE SYSTEM"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="Everything You Need to Build <span class='text-green-400'>Million-Dollar Digital Products</span>"
+              title="Everything You Need to Build <span className='text-green-400'>Million-Dollar Digital Products</span>"
               subtitle="The most comprehensive digital product creation system ever built."
             />
           </div>
@@ -403,42 +403,42 @@ export default function DigitalProductsPage() {
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "<span class='text-green-400'>Module 1:</span> Product Idea Validation",
+                title: "<span className='text-green-400'>Module 1:</span> Product Idea Validation",
                 value: "$497",
                 description: "Never build a product that doesn't sell. Learn the exact validation process to identify profitable ideas before you create anything. Market research, competitor analysis, and demand testing."
               },
               {
-                title: "<span class='text-green-400'>Module 2:</span> High-Converting Product Creation",
+                title: "<span className='text-green-400'>Module 2:</span> High-Converting Product Creation",
                 value: "$697",
                 description: "Transform raw knowledge into irresistible digital products. Courses, eBooks, templates, tools - learn what formats work best and how to structure content that delivers results."
               },
               {
-                title: "<span class='text-green-400'>Module 3:</span> Pricing Psychology Mastery",
+                title: "<span className='text-green-400'>Module 3:</span> Pricing Psychology Mastery",
                 value: "$597",
                 description: "Price your products for maximum profit and positioning. Psychology-based pricing strategies, value stacking, and premium positioning that lets you charge 10x more than competitors."
               },
               {
-                title: "<span class='text-green-400'>Module 4:</span> Zero-Ad Launch Strategies",
+                title: "<span className='text-green-400'>Module 4:</span> Zero-Ad Launch Strategies",
                 value: "$797",
                 description: "Launch profitable products without spending a dime on ads. Organic marketing strategies, partnerships, and launch sequences that generate massive buzz and sales."
               },
               {
-                title: "<span class='text-green-400'>Module 5:</span> Sales Funnel Automation",
+                title: "<span className='text-green-400'>Module 5:</span> Sales Funnel Automation",
                 value: "$697",
                 description: "Build automated sales systems that work 24/7. Email sequences, landing pages, and sales funnels that convert cold traffic into paying customers while you sleep."
               },
               {
-                title: "<span class='text-green-400'>Module 6:</span> Customer Success Systems",
+                title: "<span className='text-green-400'>Module 6:</span> Customer Success Systems",
                 value: "$497",
                 description: "Keep customers happy and buying more. Onboarding sequences, support systems, and strategies that turn one-time buyers into lifetime customers and raving fans."
               },
               {
-                title: "<span class='text-green-400'>Module 7:</span> Scaling to Multiple Products",
+                title: "<span className='text-green-400'>Module 7:</span> Scaling to Multiple Products",
                 value: "$897",
                 description: "Expand from one product to an entire empire. Product suites, membership sites, mastermind programs, and licensing strategies that multiply your income streams."
               },
               {
-                title: "<span class='text-green-400'>Module 8:</span> Business Operations & Growth",
+                title: "<span className='text-green-400'>Module 8:</span> Business Operations & Growth",
                 value: "$597",
                 description: "Build systems that scale without you. Team building, automation tools, financial management, and growth strategies for sustainable long-term success."
               }
@@ -480,7 +480,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="INCREDIBLE BONUSES"
               badgeColor="bg-zinc-900 border border-yellow-500 text-yellow-400"
-              title="Get $3,794 in <span class='text-yellow-400'>Premium Bonuses</span> FREE"
+              title="Get $3,794 in <span className='text-yellow-400'>Premium Bonuses</span> FREE"
               subtitle="These bonuses alone are worth more than most courses. But you get them FREE today."
             />
           </div>
@@ -546,7 +546,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="INSANE VALUE"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="This is <span class='text-green-400'>RIDICULOUS</span>"
+              title="This is <span className='text-green-400'>RIDICULOUS</span>"
               subtitle="Let's do the math on what you're actually getting today vs. learning this the hard way..."
             />
           </div>
@@ -714,7 +714,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="SUCCESS STORIES"
               badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
-              title="What <span class='text-blue-400'>Digital Product</span> Students Are Saying..."
+              title="What <span className='text-blue-400'>Digital Product</span> Students Are Saying..."
               subtitle="Real entrepreneurs sharing their transformation stories."
             />
           </div>
@@ -762,7 +762,7 @@ export default function DigitalProductsPage() {
             <SectionHeader
               badge="FAQ"
               badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="Frequently Asked <span class='text-green-400'>Questions</span>"
+              title="Frequently Asked <span className='text-green-400'>Questions</span>"
               subtitle="Everything you need to know about building digital product empires."
             />
           </div>

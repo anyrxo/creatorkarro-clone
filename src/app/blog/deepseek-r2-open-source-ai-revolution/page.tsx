@@ -364,7 +364,7 @@ export default function DeepSeekR2Page() {
                   </ul>
                 </div>
 
-                <div class="border-l-4 border-orange-500 pl-6">
+                <div className="border-l-4 border-orange-500 pl-6">
                   <h4 className="text-xl font-bold text-orange-600 mb-3">4. Performance Monitoring Suite</h4>
                   <p className="text-gray-700 mb-3">
                     Comprehensive monitoring and optimization tools for tracking model performance, resource utilization, and cost efficiency metrics.

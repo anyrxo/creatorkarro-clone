@@ -179,8 +179,8 @@ export default function Qwen3Page() {
                 <ul className="space-y-2 text-sm">
                   <li>• Qwen3-MoE-30B (efficient scaling)</li>
                   <li>• Qwen3-MoE-235B (maximum power)</li>
-                  <li class="mt-4 text-green-400">✓ All Apache 2.0 licensed</li>
-                  <li class="text-green-400">✓ All commercially usable</li>
+                  <li className="mt-4 text-green-400">✓ All Apache 2.0 licensed</li>
+                  <li className="text-green-400">✓ All commercially usable</li>
                 </ul>
               </div>
             </div>
