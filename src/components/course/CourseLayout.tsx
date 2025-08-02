@@ -362,8 +362,8 @@ export function HeroSection({
 interface SectionHeaderProps {
   badge?: string
   badgeColor?: string
-  title: string
-  description?: string
+  title: string | React.ReactNode
+  description?: string | React.ReactNode
   isVisible: boolean
 }
 
