@@ -623,7 +623,7 @@ const blogPosts = [
     date: "2025-03-04",
     slug: "social-media-automation",
     keywords: ["social media automation", "automate social media", "social media tools", "content automation", "social scheduling"]
-  }
+}
 ]
 
 // Blog post card component with dynamic metrics
@@ -669,81 +669,68 @@ function BlogPostCard({ post, index, setElementRef, isVisible }: {
       pink: 'bg-pink-500/10 border-pink-500/20 text-pink-400',
       red: 'bg-red-500/10 border-red-500/20 text-red-400',
       orange: 'bg-orange-500/10 border-orange-500/20 text-orange-400'
-    }
+}
     return colors[color] || colors.blue
-  }
+}
 
   return (
+    
     <ScrollAnimation animation="fade-up" delay={index * 100}>
-      <TiltCard maxTilt={10} glare={false}>
-        <SpotlightCard spotlightColor="rgba(59, 130, 246, 0.15)">
-          <article className="bg-zinc-900 rounded-2xl p-6 hover:bg-zinc-800 transition-all duration-300 group cursor-pointer">
-            <Link href={`/blog/${post.slug}`} className="block">
-        {/* Category Badge */}
-        <div className="mb-4">
-          <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(post.categoryColor)}`}>
+        <TiltCard maxTilt={10} glare={false}>
+            <SpotlightCard spotlightColor="rgba(59, 130, 246, 0.15)">
+                <article className="bg-zinc-900 rounded-2xl p-6 hover:bg-zinc-800 transition-all duration-300 group cursor-pointer">
+                    <Link href={`/blog/`} className="block"><div className="mb-4">
+                        <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold `}>
             {post.category}
-          </span>
-        </div>
-        
-        {/* Title */}
-        <h2 className="text-xl font-bold mb-3 group-hover:text-blue-400 transition-colors duration-300 line-clamp-2">
+                        </span>
+                    </div><h2 className="text-xl font-bold mb-3 group-hover:text-blue-400 transition-colors duration-300 line-clamp-2">
           {post.title}
-        </h2>
-        
-        {/* Excerpt */}
-        <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                </h2><p className="text-gray-400 text-sm mb-4 line-clamp-3">
           {post.excerpt}
-        </p>
-        
-        {/* Metrics Row */}
-        <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
-          <div className="flex items-center gap-1">
-            <svg className="w-4 h-4 transform-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-            </svg>
-            <span>{metrics.views}</span>
-          </div>
-          
-          <div className="flex items-center gap-1">
-            <svg className="w-4 h-4 transform-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-            <span>{metrics.likes}</span>
-          </div>
-          
-          <div className="flex items-center gap-1">
-            <svg className="w-4 h-4 transform-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m9.632 4.316C18.114 15.062 18 14.518 18 14c0-.482.114-.938.316-1.342m0 2.684a3 3 0 110-2.684M9 12a3 3 0 106 0 3 3 0 00-6 0zm12 0a3 3 0 106 0 3 3 0 00-6 0z" />
-            </svg>
-            <span>{metrics.shares}</span>
-          </div>
-        </div>
-        
-        {/* Bottom Row */}
-        <div className="flex items-center justify-between text-sm text-gray-500">
-          <div className="flex items-center gap-3">
+            </p><div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
             <div className="flex items-center gap-1">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>{post.readTime}</span>
+                <svg className="w-4 h-4 transform-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+                <span>{metrics.views}</span>
+            </div>
+          
+            <div className="flex items-center gap-1">
+                <svg className="w-4 h-4 transform-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                <span>{metrics.likes}</span>
+            </div>
+          
+            <div className="flex items-center gap-1">
+                <svg className="w-4 h-4 transform-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m9.632 4.316C18.114 15.062 18 14.518 18 14c0-.482.114-.938.316-1.342m0 2.684a3 3 0 110-2.684M9 12a3 3 0 106 0 3 3 0 00-6 0zm12 0a3 3 0 106 0 3 3 0 00-6 0z" />
+                </svg>
+                <span>{metrics.shares}</span>
+            </div>
+        </div><div className="flex items-center justify-between text-sm text-gray-500">
+        <div className="flex items-center gap-3">
+            <div className="flex items-center gap-1">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>{post.readTime}</span>
             </div>
             <span>•</span>
             <span>{formatBlogDate(post.date)}</span>
-          </div>
-          
-          <svg className="w-5 h-5 text-gray-600 group-hover:text-blue-400 group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
         </div>
-      </Link>
-    </article>
-  </SpotlightCard>
-  </TiltCard>
-  </ScrollAnimation>
-  )
+          
+        <svg className="w-5 h-5 text-gray-600 group-hover:text-blue-400 group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+    </div>
+</Link>
+</article>
+</SpotlightCard>
+</TiltCard>
+</ScrollAnimation>
+)
 }
 
 export default function BlogPage() {
@@ -762,142 +749,131 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-dark relative">
-      {/* Hero Section */}
+
       <section className="pt-16 pb-8 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
+            <div
             ref={heroAnimation.elementRef}
-            className={`text-center max-w-4xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
+            className={`text-center max-w-4xl mx-auto scroll-fade-up `}
           >
-            <AnimatedGradientText className="mb-6">
+                <AnimatedGradientText className="mb-6">
               📝 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
-              <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
+                    <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
                 Blog & News
-              </span>
-              <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-            </AnimatedGradientText>
+                    </span>
+                    <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                </AnimatedGradientText>
 
-            <div className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <BlurIn
+                <div className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    <BlurIn
                 word="Success Stories, Growth Hacks &"
                 className="text-4xl md:text-6xl font-bold text-white"
                 duration={0.8}
               />
-              <div className="mt-2">
-                <span className="text-white">AI Strategies from </span>
-                <div className="bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-clip-text text-transparent inline-block">
-                  <WordRotate
+                        <div className="mt-2">
+                            <span className="text-white">AI Strategies from </span>
+                            <div className="bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-clip-text text-transparent inline-block">
+                                <WordRotate
                     words={["IImagined.ai", "Anyro", "Industry Experts", "Growth Masters"]}
                     className="text-4xl md:text-6xl font-bold"
                     duration={3500}
                   />
-                </div>
-              </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
 
-            <AnimatedText 
+                        <AnimatedText
               animation="fade" 
               delay={800}
               className="text-lg md:text-xl text-gray-400"
             >
               Master Instagram growth, AI automation, and digital product creation with battle-tested strategies that generate real results
-            </AnimatedText>
-          </div>
-        </div>
-      </section>
+                        </AnimatedText>
+                    </div>
+                </div>
+            </section>
 
-      {/* Tab Navigation */}
       <section className="py-4">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollAnimation animation="scale" delay={100}>
-            <div className="flex justify-center mb-8">
-              <div className="bg-zinc-800 rounded-lg p-1 flex gap-1 glass-premium backdrop-blur-xl">
-              <button
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <ScrollAnimation animation="scale" delay={100}>
+                        <div className="flex justify-center mb-8">
+                            <div className="bg-zinc-800 rounded-lg p-1 flex gap-1 glass-premium backdrop-blur-xl">
+                                <button
                 onClick={() => setActiveTab('general')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                  activeTab === 'general'
-                    ? 'bg-blue-500 text-white shadow-lg'
-                    : 'text-gray-400 hover:text-white hover:bg-zinc-700'
-                }`}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 `}
               >
                 General
-              </button>
-              <button
+                                </button>
+                                <button
                 onClick={() => setActiveTab('news')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                  activeTab === 'news'
-                    ? 'bg-blue-500 text-white shadow-lg'
-                    : 'text-gray-400 hover:text-white hover:bg-zinc-700'
-                }`}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 `}
               >
                 News
-              </button>
-            </div>
-          </div>
-          </ScrollAnimation>
-        </div>
-      </section>
+                                </button>
+                            </div>
+                        </div>
+                    </ScrollAnimation>
+                </div>
+            </section>
 
-      {/* Blog Posts Grid */}
-      <section 
+      <section
         ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up ${contentAnimation.isVisible ? 'visible' : ''}`}
+        className={`section-spacing scroll-fade-up `}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {currentPosts.map((post, index) => (
-              <BlogPostCard 
-                key={`${activeTab}-${index}`} 
+                        <BlogPostCard
+                key={`-`} 
                 post={post} 
                 index={index} 
                 setElementRef={setElementRef}
                 isVisible={true}
               />
             ))}
-          </div>
-        </div>
-      </section>
+                        </div>
+                    </div>
+                </section>
 
-      {/* Newsletter CTA */}
       <section className="section-spacing bg-zinc-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-pink-600/10 animate-gradient-shift" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <ScrollAnimation animation="fade-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-pink-600/10 animate-gradient-shift" />
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                        <ScrollAnimation animation="fade-up">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Join <NumberTicker value={127000} delay={0.5} className="text-blue-400 inline-block" />+ Creators Getting Weekly Growth Hacks
-            </h2>
-          </ScrollAnimation>
+                            </h2>
+                        </ScrollAnimation>
           
-          <ScrollAnimation animation="fade-up" delay={200}>
-            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                        <ScrollAnimation animation="fade-up" delay={200}>
+                            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
               Get exclusive Instagram growth strategies, AI automation blueprints, and digital product launches delivered to your inbox every week. Unsubscribe anytime.
-            </p>
-          </ScrollAnimation>
+                            </p>
+                        </ScrollAnimation>
           
-          <ScrollAnimation animation="scale" delay={400}>
-            <a
+                        <ScrollAnimation animation="scale" delay={400}>
+                            <a
               href="https://anyro.beehiiv.com/subscribe"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <ShimmerButton
+                                <ShimmerButton
                 className="shadow-2xl"
                 shimmerColor="#ffffff"
                 shimmerSize="0.1em"
                 background="linear-gradient(135deg, #2563eb, #9333ea)"
                 borderRadius="12px"
               >
-                <span className="whitespace-nowrap font-bold px-6 py-3 text-base inline-flex items-center gap-3">
+                                    <span className="whitespace-nowrap font-bold px-6 py-3 text-base inline-flex items-center gap-3">
                   Join Free Newsletter
-                  <svg className="w-5 h-5 animate-wave" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </span>
-              </ShimmerButton>
-            </a>
-          </ScrollAnimation>
-        </div>
-      </section>
-    </div>
-  )
-}
+                                        <svg className="w-5 h-5 animate-wave" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                        </svg>
+                                    </span>
+                                </ShimmerButton>
+                            </a>
+                        </ScrollAnimation>
+                    </div>
+                </section>
+            </div>
+    )
+  }
