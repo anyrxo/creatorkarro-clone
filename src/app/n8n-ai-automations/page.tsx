@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
+import ParticleBackground from '@/components/ParticleBackground'
 import {
   ValueBadge,
   ModuleCard,

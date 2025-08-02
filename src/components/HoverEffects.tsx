@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { cn } from '@/lib/utils'
 
 // 3D Tilt Card
@@ -88,7 +88,7 @@ export function MagneticButton({
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const buttonRef = useRef<HTMLDivElement>(null)
 
-  const handleMouseMove = (e: MouseEvent) => {
+  const handleMouseMove = useCallback((e: MouseEvent) => {
     if (!buttonRef.current) return
 
     const rect = buttonRef.current.getBoundingClientRect()
@@ -108,7 +108,7 @@ export function MagneticButton({
     } else {
       setPosition({ x: 0, y: 0 })
     }
-  }
+  }, [radius, strength])
 
   const handleMouseLeave = () => {
     setPosition({ x: 0, y: 0 })
@@ -117,7 +117,7 @@ export function MagneticButton({
   useEffect(() => {
     window.addEventListener('mousemove', handleMouseMove)
     return () => window.removeEventListener('mousemove', handleMouseMove)
-  }, [])
+  }, [handleMouseMove])
 
   return (
     <div

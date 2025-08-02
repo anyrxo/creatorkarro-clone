@@ -194,11 +194,37 @@ export function TextScramble({
   const elementRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const scrambleTextFn = () => {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*'
+      let iterations = 0
+      
+      const interval = setInterval(() => {
+        setDisplayText(
+          text
+            .split('')
+            .map((char, index) => {
+              if (index < iterations) {
+                return text[index]
+              }
+              return chars[Math.floor(Math.random() * chars.length)]
+            })
+            .join('')
+        )
+
+        iterations += 1 / 3
+
+        if (iterations >= text.length) {
+          clearInterval(interval)
+          setDisplayText(text)
+        }
+      }, scrambleSpeed)
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !isScrambling) {
           setIsScrambling(true)
-          scrambleText()
+          scrambleTextFn()
         }
       },
       { threshold: 0.5 }
@@ -209,33 +235,8 @@ export function TextScramble({
     }
 
     return () => observer.disconnect()
-  }, [])
+  }, [isScrambling, scrambleSpeed, text])
 
-  const scrambleText = () => {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*'
-    let iterations = 0
-    
-    const interval = setInterval(() => {
-      setDisplayText(
-        text
-          .split('')
-          .map((char, index) => {
-            if (index < iterations) {
-              return text[index]
-            }
-            return chars[Math.floor(Math.random() * chars.length)]
-          })
-          .join('')
-      )
-
-      iterations += 1 / 3
-
-      if (iterations >= text.length) {
-        clearInterval(interval)
-        setDisplayText(text)
-      }
-    }, scrambleSpeed)
-  }
 
   return (
     <div ref={elementRef} className={className}>
@@ -269,11 +270,37 @@ export function CountUp({
   const elementRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    if (!isVisible) return
+
+    const animateCountFn = () => {
+      const startTime = Date.now()
+  
+      const update = () => {
+        const now = Date.now()
+        const progress = Math.min((now - startTime) / duration, 1)
+        
+        // Easing function
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4)
+        const currentCount = start + (end - start) * easeOutQuart
+        
+        setCount(Math.floor(currentCount * Math.pow(10, decimals)) / Math.pow(10, decimals))
+  
+        if (progress < 1) {
+          requestAnimationFrame(update)
+        }
+      }
+  
+      requestAnimationFrame(update)
+    }
+
+    animateCountFn()
+  }, [isVisible, start, end, duration, decimals])
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !isVisible) {
           setIsVisible(true)
-          animateCount()
         }
       },
       { threshold: 0.5 }
@@ -284,29 +311,7 @@ export function CountUp({
     }
 
     return () => observer.disconnect()
-  }, [])
-
-  const animateCount = () => {
-    const startTime = Date.now()
-    const endTime = startTime + duration
-
-    const update = () => {
-      const now = Date.now()
-      const progress = Math.min((now - startTime) / duration, 1)
-      
-      // Easing function
-      const easeOutQuart = 1 - Math.pow(1 - progress, 4)
-      const currentCount = start + (end - start) * easeOutQuart
-
-      setCount(currentCount)
-
-      if (progress < 1) {
-        requestAnimationFrame(update)
-      }
-    }
-
-    requestAnimationFrame(update)
-  }
+  }, [isVisible])
 
   return (
     <div ref={elementRef} className={className}>

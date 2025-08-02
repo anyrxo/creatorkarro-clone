@@ -224,12 +224,12 @@ export function BeautifulHero() {
             key={i}
             className="absolute w-1 h-1 bg-white/20 rounded-full"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: window.innerHeight + 100,
+              x: `${Math.random() * 100}%`,
+              y: '110%',
             }}
             animate={{
-              y: -100,
-              x: Math.random() * window.innerWidth,
+              y: '-10%',
+              x: `${Math.random() * 100}%`,
             }}
             transition={{
               duration: Math.random() * 20 + 10,

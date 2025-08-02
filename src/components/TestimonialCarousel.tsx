@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
@@ -29,14 +29,14 @@ export default function TestimonialCarousel({
   const [isAnimating, setIsAnimating] = useState(false)
   const intervalRef = useRef<NodeJS.Timeout>()
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     if (isAnimating) return
     setIsAnimating(true)
     setTimeout(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length)
       setIsAnimating(false)
     }, 300)
-  }
+  }, [isAnimating, testimonials.length])
 
   const goToPrevious = () => {
     if (isAnimating) return
@@ -63,7 +63,7 @@ export default function TestimonialCarousel({
         if (intervalRef.current) clearInterval(intervalRef.current)
       }
     }
-  }, [currentIndex, autoPlay, interval])
+  }, [currentIndex, autoPlay, interval, goToNext])
 
   const current = testimonials[currentIndex]
 
