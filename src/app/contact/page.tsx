@@ -4,6 +4,9 @@ import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
+import BlurIn from '@/components/magicui/blur-in'
+import TypingAnimation from '@/components/magicui/typing-animation'
+import WordRotate from '@/components/magicui/word-rotate'
 import { ChevronRight } from 'lucide-react'
 
 export default function ContactPage() {
@@ -30,7 +33,11 @@ export default function ContactPage() {
                 <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
               </AnimatedGradientText>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8">CONTACT</h1>
+            <BlurIn
+              word="CONTACT"
+              className="text-4xl md:text-6xl font-bold mb-8"
+              duration={0.8}
+            />
           </div>
 
           {/* Contact Content */}
@@ -41,13 +48,16 @@ export default function ContactPage() {
             {/* Left Column - Contact Info */}
             <div className={`space-y-8 scroll-fade-left ${contentAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                  Get in touch
-                </h2>
-                <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
-                  I'd love to hear from you! Whether you have questions about my courses,
-                  need support, or want to collaborate, feel free to reach out.
-                </p>
+                <WordRotate
+                  words={["Get in touch", "Let's Connect", "Reach Out", "Say Hello"]}
+                  className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+                  duration={3000}
+                />
+                <TypingAnimation
+                  text="I'd love to hear from you! Whether you have questions about my courses, need support, or want to collaborate, feel free to reach out."
+                  className="text-lg md:text-xl text-gray-400 leading-relaxed"
+                  duration={50}
+                />
               </div>
 
               <div className="space-y-8">
@@ -175,9 +185,11 @@ export default function ContactPage() {
 
             {/* Right Column - Quick Links & Info */}
             <div className={`bg-zinc-900/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 hover-lift scroll-fade-right border border-zinc-800/50 ${contentAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <h3 className="text-xl md:text-2xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-                Quick Links
-              </h3>
+              <BlurIn
+                word="Quick Links"
+                className="text-xl md:text-2xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent"
+                duration={0.6}
+              />
               
               <div className="space-y-6">
                 {/* Course Access */}
@@ -276,7 +288,11 @@ export default function ContactPage() {
             ref={faqAnimation.elementRef}
             className={`mt-16 text-center scroll-fade-up ${faqAnimation.isVisible ? 'visible' : ''}`}
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+            <BlurIn
+              word="Frequently Asked Questions"
+              className="text-2xl md:text-3xl font-bold mb-8"
+              duration={0.8}
+            />
             <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
               <div className={`text-left scroll-fade-left ${faqAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
                 <h3 className="text-lg md:text-xl font-semibold mb-3">How do I access my course?</h3>

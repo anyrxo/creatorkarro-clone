@@ -1,6 +1,9 @@
 'use client'
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import BlurIn from '@/components/magicui/blur-in'
+import TypingAnimation from '@/components/magicui/typing-animation'
+import NumberTicker from '@/components/magicui/number-ticker'
 
 export default function RefundPolicyPage() {
   // Scroll animations for different sections
@@ -18,7 +21,11 @@ export default function RefundPolicyPage() {
             ref={titleAnimation.elementRef}
             className={`mb-12 scroll-fade-up ${titleAnimation.isVisible ? 'visible' : ''}`}
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-8">Refund Policy</h1>
+            <BlurIn
+              word="Refund Policy"
+              className="text-5xl md:text-6xl font-bold mb-8"
+              duration={0.8}
+            />
           </div>
 
           {/* Content */}
@@ -57,18 +64,23 @@ export default function RefundPolicyPage() {
               ref={guaranteeAnimation.elementRef}
               className={`bg-zinc-900 border border-zinc-700 rounded-lg p-8 my-12 card-hover hover-lift scroll-fade-up ${guaranteeAnimation.isVisible ? 'visible' : ''}`}
             >
-              <h2 className="text-3xl font-bold mb-6 text-center">365-Day Action-Based Money-Back Guarantee</h2>
+              <h2 className="text-3xl font-bold mb-6 text-center">
+                <NumberTicker value={365} suffix="-Day" className="text-3xl font-bold text-green-400 inline-block" />
+                <span className="text-white"> Action-Based Money-Back Guarantee</span>
+              </h2>
 
               <p className="mb-6">
                 However, as stated on our website, we do offer a <strong>365-Day Action-Based Money-Back Guarantee.</strong>
               </p>
 
-              <p className="mb-6">
-                We are confident that IImagined will help you achieve massive success. That's why we're offering a <strong>365-Day Action-Based Money-Back Guarantee.</strong>
-              </p>
+              <TypingAnimation
+                text="We are confident that IImagined will help you achieve massive success. That's why we're offering a 365-Day Action-Based Money-Back Guarantee."
+                className="mb-6"
+                duration={50}
+              />
 
               <p className="mb-8">
-                If you follow the program and do not achieve at least one video with 1 million views within 12 months, we'll refund your full purchase price—no questions asked.
+                If you follow the program and do not achieve at least one video with <NumberTicker value={1} suffix=" million views" className="font-bold text-blue-400 inline-block" /> within <NumberTicker value={12} suffix=" months" className="font-bold text-green-400 inline-block" />, we'll refund your full purchase price—no questions asked.
               </p>
 
               <h3 className="text-2xl font-bold mb-4">To qualify for this guarantee, you must:</h3>
@@ -76,7 +88,7 @@ export default function RefundPolicyPage() {
               <div className="space-y-4">
                 <div className="flex items-start">
                   <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">1</span>
-                  <span>Post at least 4 pieces of content per week throughout the program.</span>
+                  <span>Post at least <NumberTicker value={4} className="font-semibold text-blue-400 inline-block" /> pieces of content per week throughout the program.</span>
                 </div>
                 <div className="flex items-start">
                   <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">2</span>

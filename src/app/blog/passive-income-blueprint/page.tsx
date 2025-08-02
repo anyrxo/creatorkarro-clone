@@ -994,7 +994,7 @@ export default function PassiveIncomeBlueprint() {
             </Link>
             
             <div className="mt-6 text-sm text-gray-500">
-              ⭐ 2,847 students building passive income | 💰 Average: $2,100/mo after 6 months
+              ⭐ 13,000 students building passive income | 💰 Average: $2,100/mo after 6 months
             </div>
           </div>
         </section>

@@ -14,6 +14,12 @@ import {
   PricingComparison 
 } from '@/components/course/CourseLayout'
 import ScrollAnimation from '@/components/ScrollAnimation'
+import NumberTicker from '@/components/magicui/number-ticker'
+import WordRotate from '@/components/magicui/word-rotate'
+import BlurIn from '@/components/magicui/blur-in'
+import TypingAnimation from '@/components/magicui/typing-animation'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import ShimmerButton from '@/components/magicui/shimmer-button'
 
 export default function ComfyUIWorkflowsPage() {
   // Scroll animations for different sections
@@ -472,7 +478,9 @@ export default function ComfyUIWorkflowsPage() {
               <div className="bg-gradient-to-br from-orange-600/20 to-red-600/20 border border-orange-500/30 rounded-2xl p-8">
                 <h4 className="text-2xl font-bold mb-4 text-center">The ComfyUI Advantage</h4>
                 <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-orange-400 mb-2">10x Faster</div>
+                  <div className="text-4xl font-bold text-orange-400 mb-2">
+                    <NumberTicker value={10} suffix="x Faster" className="text-4xl font-bold text-orange-400" />
+                  </div>
                   <p className="text-gray-300">Professional Content Creation</p>
                 </div>
                 <div className="space-y-3 text-sm">
@@ -531,8 +539,16 @@ export default function ComfyUIWorkflowsPage() {
           {/* Total Value */}
           <div className={`text-center mt-16 scroll-fade-up ${curriculumAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 border border-gold-500/50 rounded-lg p-8 max-w-2xl mx-auto">
-              <h3 className="text-3xl font-bold mb-4 text-yellow-400">Total Curriculum Value</h3>
-              <div className="text-5xl font-bold text-yellow-400 mb-2">$1,082</div>
+              <h3 className="text-3xl font-bold mb-4 text-yellow-400">
+                <TypingAnimation
+                  text="Total Curriculum Value"
+                  className="text-3xl font-bold text-yellow-400"
+                  duration={100}
+                />
+              </h3>
+              <div className="text-5xl font-bold text-yellow-400 mb-2">
+                <NumberTicker value={1082} prefix="$" className="text-5xl font-bold text-yellow-400" />
+              </div>
               <p className="text-gray-300">6 comprehensive modules + 50+ workflows</p>
             </div>
           </div>
@@ -568,8 +584,16 @@ export default function ComfyUIWorkflowsPage() {
 
           <div className={`text-center mt-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 border border-gold-500/50 rounded-lg p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4 text-gold-400">Total Bonus Value</h3>
-              <div className="text-4xl font-bold text-gold-400 mb-2">$842</div>
+              <h3 className="text-2xl font-bold mb-4 text-gold-400">
+                <BlurIn
+                  word="Total Bonus Value"
+                  className="text-2xl font-bold text-gold-400"
+                  duration={0.8}
+                />
+              </h3>
+              <div className="text-4xl font-bold text-gold-400 mb-2">
+                <NumberTicker value={842} prefix="$" className="text-4xl font-bold text-gold-400" />
+              </div>
               <p className="text-gray-300">Free when you join today</p>
             </div>
           </div>
@@ -635,7 +659,9 @@ export default function ComfyUIWorkflowsPage() {
               <div className="border-t-2 border-gold-500/50 pt-6">
                 <div className="flex justify-between items-center text-2xl font-bold">
                   <span className="text-white">TOTAL VALUE:</span>
-                  <span className="text-gold-400">$1,994</span>
+                  <span className="text-gold-400">
+                    <NumberTicker value={1994} prefix="$" className="text-2xl font-bold text-gold-400" />
+                  </span>
                 </div>
               </div>
             </div>
@@ -693,10 +719,33 @@ export default function ComfyUIWorkflowsPage() {
           </div>
 
           <div className={`text-center scroll-fade-up ${testimonialsAnimation.isVisible ? 'visible' : ''}`}>
-            <h3 className="text-3xl font-bold mb-4">Become our next ComfyUI success story</h3>
+            <h3 className="text-3xl font-bold mb-4">
+              <BlurIn
+                word="Become our next ComfyUI"
+                className="text-3xl font-bold text-white"
+                duration={0.8}
+              />
+              <div className="text-orange-400">
+                <WordRotate
+                  words={["success story", "master creator", "profit machine", "AI expert"]}
+                  className="text-3xl font-bold"
+                  duration={2500}
+                />
+              </div>
+            </h3>
             <p className="text-xl text-gray-400 mb-8">Join creators mastering professional AI workflows and building profitable services</p>
-            <Link href="#packages" className="cta-button inline-block btn-animate animate-glow hover-lift">
-              Start Your ComfyUI Journey
+            <Link href="#packages">
+              <ShimmerButton
+                className="shadow-2xl"
+                shimmerColor="#ffffff"
+                shimmerSize="0.1em"
+                background="linear-gradient(135deg, #f97316, #ea580c)"
+                borderRadius="9999px"
+              >
+                <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
+                  Start Your ComfyUI Journey
+                </span>
+              </ShimmerButton>
             </Link>
           </div>
         </div>
@@ -735,7 +784,13 @@ export default function ComfyUIWorkflowsPage() {
           <div ref={urgencyAnimation.elementRef}>
             <div className={`text-center scroll-fade-up ${urgencyAnimation.isVisible ? 'visible' : ''}`}>
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-400">⏰ Early Bird Pricing Ends Soon</h2>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-400">
+                  ⏰ <TypingAnimation
+                    text="Early Bird Pricing Ends Soon"
+                    className="text-4xl md:text-5xl font-bold text-red-400 inline"
+                    duration={100}
+                  />
+                </h2>
                 
                 <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 mb-8 card-hover">
                   <h3 className="text-2xl font-bold mb-4 text-red-300">Why This Price Won't Last</h3>
@@ -761,8 +816,18 @@ export default function ComfyUIWorkflowsPage() {
                   The AI revolution is happening now. Don't get left behind while others master the tools that will define the future.
                 </p>
 
-                <Link href="#packages" className="cta-button inline-block text-2xl py-4 px-12 btn-animate animate-glow hover-lift">
-                  🚀 SECURE EARLY BIRD PRICING - $147 🚀
+                <Link href="#packages">
+                  <ShimmerButton
+                    className="shadow-2xl"
+                    shimmerColor="#ffffff"
+                    shimmerSize="0.1em"
+                    background="linear-gradient(135deg, #dc2626, #b91c1c)"
+                    borderRadius="9999px"
+                  >
+                    <span className="whitespace-nowrap text-2xl font-bold px-12 py-4">
+                      🚀 SECURE EARLY BIRD PRICING - <NumberTicker value={147} prefix="$" className="inline" /> 🚀
+                    </span>
+                  </ShimmerButton>
                 </Link>
 
                 <p className="text-sm text-green-400 mt-4 font-bold">
@@ -779,10 +844,35 @@ export default function ComfyUIWorkflowsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div ref={ctaAnimation.elementRef}>
             <div className={`scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to master ComfyUI workflows?</h2>
-              <p className="text-xl text-gray-400 mb-8">Join creators generating professional AI content 10x faster with proven workflows</p>
-              <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift">
-                Start Your ComfyUI Journey
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                <BlurIn
+                  word="Ready to master ComfyUI"
+                  className="text-4xl md:text-5xl font-bold text-white"
+                  duration={0.8}
+                />
+                <div className="text-orange-400">
+                  <WordRotate
+                    words={["workflows?", "automation?", "mastery?", "profits?"]}
+                    className="text-4xl md:text-5xl font-bold"
+                    duration={2500}
+                  />
+                </div>
+              </h2>
+              <p className="text-xl text-gray-400 mb-8">
+                Join creators generating professional AI content <NumberTicker value={10} suffix="x faster" className="text-orange-400 font-bold inline" /> with proven workflows
+              </p>
+              <Link href="#packages">
+                <ShimmerButton
+                  className="shadow-2xl"
+                  shimmerColor="#ffffff"
+                  shimmerSize="0.1em"
+                  background="linear-gradient(135deg, #f97316, #ea580c)"
+                  borderRadius="9999px"
+                >
+                  <span className="whitespace-nowrap text-lg font-bold px-8 py-3">
+                    Start Your ComfyUI Journey
+                  </span>
+                </ShimmerButton>
               </Link>
               <p className="text-sm text-gray-400 mt-4">60-day money-back guarantee</p>
             </div>

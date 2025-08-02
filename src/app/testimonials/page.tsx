@@ -4,6 +4,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
 import { useState, useEffect } from 'react'
+import NumberTicker from '@/components/magicui/number-ticker'
+import WordRotate from '@/components/magicui/word-rotate'
+import BlurIn from '@/components/magicui/blur-in'
+import TypingAnimation from '@/components/magicui/typing-animation'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import ShimmerButton from '@/components/magicui/shimmer-button'
 
 export default function TestimonialsPage() {
   // Scroll animations for different sections
@@ -28,10 +34,10 @@ export default function TestimonialsPage() {
       const interval = duration / steps
       
       const targets = {
-        students: 12000,
+        students: 13000,
         views: 125,
         followers: 10,
-        revenue: 2.3
+        revenue: 5.0
       }
       
       let currentStep = 0
@@ -66,7 +72,7 @@ export default function TestimonialsPage() {
       name: "Marcus Rivera",
       role: "Content Creator",
       course: "Instagram Ignited",
-      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+      avatar: "https://i.pravatar.cc/150?img=32",
       content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months using Anyro's viral carousel techniques. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month through sponsored posts and digital products.",
       results: "800 to 125K followers, $15K/month revenue"
     },
@@ -74,7 +80,7 @@ export default function TestimonialsPage() {
       name: "Sophia Chen",
       role: "Digital Entrepreneur",
       course: "Digital Products",
-      avatar: "https://randomuser.me/api/portraits/women/28.jpg",
+      avatar: "https://i.pravatar.cc/150?img=28",
       content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Anyro's pricing psychology and launch strategies are game-changing. I've now built a sustainable $25K/month business selling educational content.",
       results: "$10K in 3 weeks, $25K/month business"
     },
@@ -82,7 +88,7 @@ export default function TestimonialsPage() {
       name: "Devon Mitchell",
       role: "Automation Specialist",
       course: "N8N AI Automations",
-      avatar: "https://randomuser.me/api/portraits/men/67.jpg",
+      avatar: "https://i.pravatar.cc/150?img=67",
       content: "N8N AI Automations saved me 40+ hours per week! I automated my entire content workflow - from research to posting across 5 platforms. My productivity skyrocketed and I can now focus on strategy instead of repetitive tasks. The workflows Anyro provides are incredibly detailed!",
       results: "40+ hours saved weekly, 5x productivity increase"
     },
@@ -90,7 +96,7 @@ export default function TestimonialsPage() {
       name: "Ashton Torres",
       role: "AI Content Creator",
       course: "AI Influencers",
-      avatar: "https://randomuser.me/api/portraits/men/12.jpg",
+      avatar: "https://i.pravatar.cc/150?img=12",
       content: "AI Influencers opened up a completely new revenue stream for me! I created 3 AI models that generate content 24/7. Within 2 months, my AI models gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach is revolutionary!",
       results: "200K combined followers, $8K/month AI revenue"
     },
@@ -98,7 +104,7 @@ export default function TestimonialsPage() {
       name: "Ryan Blackwood",
       role: "Visual Artist",
       course: "ComfyUI & Workflows",
-      avatar: "https://randomuser.me/api/portraits/men/52.jpg",
+      avatar: "https://i.pravatar.cc/150?img=52",
       content: "ComfyUI & Workflows turned me into an AI art powerhouse! I can now create stunning visuals in minutes instead of hours. My client work rate increased 500% and I'm charging premium prices for AI-enhanced designs. The workflow templates are incredibly professional!",
       results: "500% productivity increase, premium pricing"
     },
@@ -106,7 +112,7 @@ export default function TestimonialsPage() {
       name: "Allan Rodriguez",
       role: "Lifestyle Blogger",
       course: "Instagram Ignited",
-      avatar: "https://randomuser.me/api/portraits/men/88.jpg",
+      avatar: "https://i.pravatar.cc/150?img=88",
       content: "The Instagram OS module alone was worth the entire course! I finally understood the algorithm and my first viral carousel got 2.3M views. Within 3 months, I grew from 5K to 85K followers and landed my first $25K brand partnership.",
       results: "2.3M views, 5K to 85K followers, $25K partnership"
     },
@@ -114,7 +120,7 @@ export default function TestimonialsPage() {
       name: "Cameron Lee",
       role: "Tech Entrepreneur",
       course: "N8N AI Automations",
-      avatar: "https://randomuser.me/api/portraits/men/71.jpg",
+      avatar: "https://i.pravatar.cc/150?img=71",
       content: "N8N AI Automations completely transformed my business operations! I automated lead generation, customer onboarding, and content distribution. My team productivity increased 300% and we're scaling without adding headcount. Incredible ROI!",
       results: "300% team productivity, automated business operations"
     },
@@ -122,7 +128,7 @@ export default function TestimonialsPage() {
       name: "Alex Morgan",
       role: "Digital Product Creator",
       course: "Digital Products",
-      avatar: "https://randomuser.me/api/portraits/men/23.jpg",
+      avatar: "https://i.pravatar.cc/150?img=23",
       content: "The Digital Products framework is genius! I used Anyro's validation methods to test my course idea, then his launch strategies to generate $22K in the first week. The pricing psychology section alone 3x my conversion rates!",
       results: "$22K first week launch, 3x conversion rates"
     },
@@ -130,7 +136,7 @@ export default function TestimonialsPage() {
       name: "Brendan Williams",
       role: "AI Artist",
       course: "ComfyUI & Workflows",
-      avatar: "https://randomuser.me/api/portraits/men/65.jpg",
+      avatar: "https://i.pravatar.cc/150?img=65",
       content: "ComfyUI & Workflows opened up endless creative possibilities! I went from basic Midjourney prompts to creating complex, professional AI art workflows. My art business revenue jumped 400% and I'm booked solid with client work!",
       results: "400% revenue increase, booked solid"
     },
@@ -138,7 +144,7 @@ export default function TestimonialsPage() {
       name: "Jack Connors",
       role: "Content Creator",
       course: "Instagram Ignited",
-      avatar: "https://randomuser.me/api/portraits/men/18.jpg",
+      avatar: "https://i.pravatar.cc/150?img=18",
       content: "After joining the program and applying the teachings, I saw rapid results. I went from a few hundred followers to 50K, and now I've reached 100K+ followers and launched my own paid community.",
       results: "100K+ followers, paid community"
     },
@@ -146,7 +152,7 @@ export default function TestimonialsPage() {
       name: "Maria Gonzalez",
       role: "Fashion Blogger",
       course: "Instagram Ignited",
-      avatar: "https://randomuser.me/api/portraits/women/33.jpg",
+      avatar: "https://i.pravatar.cc/150?img=33",
       content: "As a complete beginner with no followers, I was skeptical. But the step-by-step guidance helped me grow to 45K followers in 6 months. The carousel strategies alone changed everything for me!",
       results: "0 to 45K followers, first brand deal at $5K"
     },
@@ -154,7 +160,7 @@ export default function TestimonialsPage() {
       name: "David Park",
       role: "Fitness Coach",
       course: "Digital Products",
-      avatar: "https://randomuser.me/api/portraits/men/85.jpg",
+      avatar: "https://i.pravatar.cc/150?img=85",
       content: "I turned my fitness knowledge into a $50K product launch! The validation framework helped me test my idea before building, and the launch strategy exceeded all expectations.",
       results: "$50K launch, 500+ happy customers"
     },
@@ -162,7 +168,7 @@ export default function TestimonialsPage() {
       name: "Lisa Thompson",
       role: "Travel Blogger",
       course: "N8N AI Automations",
-      avatar: "https://randomuser.me/api/portraits/women/17.jpg",
+      avatar: "https://i.pravatar.cc/150?img=17",
       content: "Managing content across 6 platforms was killing me. N8N automations gave me my life back! Now everything posts automatically while I focus on creating.",
       results: "6 platforms automated, 30 hours saved weekly"
     },
@@ -170,7 +176,7 @@ export default function TestimonialsPage() {
       name: "James Wilson",
       role: "Tech Reviewer",
       course: "AI Influencers",
-      avatar: "https://randomuser.me/api/portraits/men/94.jpg",
+      avatar: "https://i.pravatar.cc/150?img=94",
       content: "I created an AI tech reviewer that posts daily content. It's like having a full team working 24/7. The passive income from this is incredible!",
       results: "AI generates $4K/month passively"
     },
@@ -178,7 +184,7 @@ export default function TestimonialsPage() {
       name: "Emma Davis",
       role: "Life Coach",
       course: "Instagram Ignited",
-      avatar: "https://randomuser.me/api/portraits/women/89.jpg",
+      avatar: "https://i.pravatar.cc/150?img=89",
       content: "From 2K to 75K followers in 5 months! The engagement strategies taught me how to build a real community, not just numbers. My coaching business exploded!",
       results: "2K to 75K followers, $20K/month coaching"
     },
@@ -186,7 +192,7 @@ export default function TestimonialsPage() {
       name: "Michael Brown",
       role: "Photographer",
       course: "ComfyUI & Workflows",
-      avatar: "https://randomuser.me/api/portraits/men/76.jpg",
+      avatar: "https://i.pravatar.cc/150?img=76",
       content: "AI art workflows transformed my photography business. I can now offer unique AI-enhanced portraits that clients pay premium for. Game changer!",
       results: "3x pricing, fully booked 3 months out"
     },
@@ -194,7 +200,7 @@ export default function TestimonialsPage() {
       name: "Sarah Johnson",
       role: "Nutritionist",
       course: "Digital Products",
-      avatar: "https://randomuser.me/api/portraits/women/50.jpg",
+      avatar: "https://i.pravatar.cc/150?img=50",
       content: "My meal plan guide made $15K in the first month! The pricing psychology module helped me position it perfectly. Now it's consistent passive income.",
       results: "$15K first month, $5K/month passive"
     },
@@ -202,7 +208,7 @@ export default function TestimonialsPage() {
       name: "Robert Garcia",
       role: "Music Producer",
       course: "N8N AI Automations",
-      avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+      avatar: "https://i.pravatar.cc/150?img=41",
       content: "Automated my entire music promotion workflow. What used to take days now happens automatically. More time for creating, less time on admin!",
       results: "80% time saved, 2x release schedule"
     },
@@ -210,7 +216,7 @@ export default function TestimonialsPage() {
       name: "Amanda White",
       role: "Beauty Influencer",
       course: "Instagram Ignited",
-      avatar: "https://randomuser.me/api/portraits/women/21.jpg",
+      avatar: "https://i.pravatar.cc/150?img=21",
       content: "The viral carousel formula is INSANE! My first one got 1.2M views and 15K new followers. Now brands are reaching out to ME!",
       results: "1.2M viral views, $10K brand deals"
     },
@@ -218,7 +224,7 @@ export default function TestimonialsPage() {
       name: "Kevin Martinez",
       role: "Business Coach",
       course: "Digital Products",
-      avatar: "https://randomuser.me/api/portraits/men/7.jpg",
+      avatar: "https://i.pravatar.cc/150?img=7",
       content: "Launched my coaching program to $35K using Anyro's strategies. The email sequences and launch tactics were pure gold. Best investment ever!",
       results: "$35K launch, 6-figure run rate"
     }
@@ -247,7 +253,18 @@ export default function TestimonialsPage() {
             className={`text-center mb-12 scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Success Stories from Our <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Community</span>
+              <BlurIn
+                word="Success Stories from Our"
+                className="text-4xl md:text-5xl font-bold"
+                duration={0.8}
+              />
+              <div className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <WordRotate
+                  words={["Community", "Creators", "Students", "Family"]}
+                  className="text-4xl md:text-5xl font-bold"
+                  duration={2500}
+                />
+              </div>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
               Real creators sharing their transformation journeys. Every story started with a single decision to invest in themselves.
@@ -278,25 +295,25 @@ export default function TestimonialsPage() {
           >
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-blue-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent mb-2">
-                {animatedStats.students.toLocaleString()}+
+                <NumberTicker value={13000} suffix="+" className="text-3xl md:text-4xl font-bold text-blue-400" />
               </div>
               <p className="text-gray-400 text-sm md:text-base">Happy Students</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-green-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-2">
-                {animatedStats.views}M+
+                <NumberTicker value={125} suffix="M+" className="text-3xl md:text-4xl font-bold text-green-400" />
               </div>
               <p className="text-gray-400 text-sm md:text-base">Views Generated</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-purple-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent mb-2">
-                {animatedStats.followers}M+
+                <NumberTicker value={10} suffix="M+" className="text-3xl md:text-4xl font-bold text-purple-400" />
               </div>
               <p className="text-gray-400 text-sm md:text-base">Followers Gained</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-yellow-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent mb-2">
-                ${animatedStats.revenue}M+
+                <NumberTicker value={5} prefix="$" suffix="M+" className="text-3xl md:text-4xl font-bold text-orange-400" />
               </div>
               <p className="text-gray-400 text-sm md:text-base">Student Revenue</p>
             </div>
@@ -368,7 +385,16 @@ export default function TestimonialsPage() {
             className={`mb-16 scroll-fade-up ${successAnimation.isVisible ? 'visible' : ''}`}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">Featured</span> Success Stories
+              <AnimatedGradientText>
+                <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
+                  Featured
+                </span>
+              </AnimatedGradientText>{" "}
+              <TypingAnimation
+                text="Success Stories"
+                className="text-3xl md:text-4xl font-bold text-white inline"
+                duration={100}
+              />
             </h2>
             
             <div className="space-y-16">
@@ -378,7 +404,7 @@ export default function TestimonialsPage() {
                 <div className="relative z-10">
                   <div className="flex items-center mb-6">
                     <Image
-                      src="https://randomuser.me/api/portraits/men/29.jpg"
+                      src="https://i.pravatar.cc/150?img=29"
                       alt="Houston"
                       width={80}
                       height={80}
@@ -393,15 +419,21 @@ export default function TestimonialsPage() {
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Starting Point</p>
-                      <p className="text-2xl font-bold text-blue-400">3K Followers</p>
+                      <p className="text-2xl font-bold text-blue-400">
+                        <NumberTicker value={3} suffix="K Followers" className="text-2xl font-bold text-blue-400" />
+                      </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">First Month</p>
-                      <p className="text-2xl font-bold text-green-400">20K Followers</p>
+                      <p className="text-2xl font-bold text-green-400">
+                        <NumberTicker value={20} suffix="K Followers" className="text-2xl font-bold text-green-400" />
+                      </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Monthly Revenue</p>
-                      <p className="text-2xl font-bold text-yellow-400">$7K+</p>
+                      <p className="text-2xl font-bold text-yellow-400">
+                        <NumberTicker value={7} prefix="$" suffix="K+" className="text-2xl font-bold text-yellow-400" />
+                      </p>
                     </div>
                   </div>
                   
@@ -425,7 +457,7 @@ export default function TestimonialsPage() {
                 <div className="relative z-10">
                   <div className="flex items-center mb-6">
                     <Image
-                      src="https://randomuser.me/api/portraits/men/36.jpg"
+                      src="https://i.pravatar.cc/150?img=36"
                       alt="Tochi"
                       width={80}
                       height={80}
@@ -440,15 +472,21 @@ export default function TestimonialsPage() {
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Year 1 Growth</p>
-                      <p className="text-2xl font-bold text-purple-400">60,000%</p>
+                      <p className="text-2xl font-bold text-purple-400">
+                        <NumberTicker value={60000} suffix="%" className="text-2xl font-bold text-purple-400" />
+                      </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Products Launched</p>
-                      <p className="text-2xl font-bold text-pink-400">5 Courses</p>
+                      <p className="text-2xl font-bold text-pink-400">
+                        <NumberTicker value={5} suffix=" Courses" className="text-2xl font-bold text-pink-400" />
+                      </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
                       <p className="text-sm text-gray-400 mb-1">Student Community</p>
-                      <p className="text-2xl font-bold text-blue-400">3,000+</p>
+                      <p className="text-2xl font-bold text-blue-400">
+                        <NumberTicker value={3000} suffix="+" className="text-2xl font-bold text-blue-400" />
+                      </p>
                     </div>
                   </div>
                   
@@ -476,15 +514,23 @@ export default function TestimonialsPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 animate-pulse"></div>
             <div className="relative z-10">
               <div className="inline-block px-4 py-2 bg-zinc-800 rounded-full text-sm text-gray-300 mb-6">
-                <span className="text-green-400">✨</span> Join 12,000+ successful students
+                <span className="text-green-400">★</span> Join 13,000+ successful students
               </div>
               
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                Your Success Story
+                <BlurIn
+                  word="Your Success Story"
+                  className="text-3xl md:text-5xl font-bold text-white"
+                  duration={0.8}
+                />
                 <br />
-                <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  Starts Today
-                </span>
+                <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  <WordRotate
+                    words={["Starts Today", "Begins Now", "Awaits You", "Is Coming"]}
+                    className="text-3xl md:text-5xl font-bold"
+                    duration={2500}
+                  />
+                </div>
               </h2>
               
               <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
@@ -493,11 +539,18 @@ export default function TestimonialsPage() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                <Link
-                  href="/instagram-ignited"
-                  className="cta-button inline-block text-lg hover-lift"
-                >
-                  Start Your Journey Today
+                <Link href="/instagram-ignited">
+                  <ShimmerButton
+                    className="shadow-2xl"
+                    shimmerColor="#ffffff"
+                    shimmerSize="0.1em"
+                    background="linear-gradient(135deg, #2563eb, #9333ea)"
+                    borderRadius="9999px"
+                  >
+                    <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
+                      Start Your Journey Today
+                    </span>
+                  </ShimmerButton>
                 </Link>
                 <Link
                   href="/story"

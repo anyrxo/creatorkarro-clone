@@ -17,7 +17,8 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
-import { ChevronRight } from 'lucide-react'
+import PainPointIcon from '@/components/PainPointIcon'
+import { ChevronRight, Smartphone, CreditCard, Bot } from 'lucide-react'
 
 export default function HomePage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -66,8 +67,8 @@ export default function HomePage() {
       subtitle: '0 to 500K Followers',
       description: 'Transform your Instagram into a thriving business with viral strategies.',
       gradient: 'from-blue-600 to-cyan-600',
-      icon: '📱',
-      stats: '8,000+ students',
+      icon: 'smartphone',
+      stats: '6,000+ students',
       link: '/instagram-ignited'
     },
     {
@@ -76,8 +77,8 @@ export default function HomePage() {
       subtitle: 'Passive Income Empire',
       description: 'Create and sell digital products that generate income while you sleep.',
       gradient: 'from-green-600 to-emerald-600',
-      icon: '💰',
-      stats: '3,000+ students',
+      icon: 'credit-card',
+      stats: '3,500+ students',
       link: '/digital-products'
     },
     {
@@ -86,8 +87,8 @@ export default function HomePage() {
       subtitle: 'Automate Everything',
       description: 'Build AI-powered systems that work 24/7 for your business.',
       gradient: 'from-purple-600 to-pink-600',
-      icon: '🤖',
-      stats: '1,800+ students',
+      icon: 'bot',
+      stats: '2,000+ students',
       link: '/n8n-ai-automations'
     }
   ]
@@ -97,7 +98,7 @@ export default function HomePage() {
       name: "Marcus Rivera",
       role: "Content Creator",
       course: "Instagram Ignited",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&auto=format",
+      avatar: "https://i.pravatar.cc/150?img=32",
       content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month!",
       rating: 5
     },
@@ -105,7 +106,7 @@ export default function HomePage() {
       name: "Jake Chen",
       role: "Digital Entrepreneur", 
       course: "Digital Products",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format",
+      avatar: "https://i.pravatar.cc/150?img=45",
       content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Now running a sustainable $25K/month business!",
       rating: 5
     },
@@ -113,7 +114,7 @@ export default function HomePage() {
       name: "Devon Mitchell",
       role: "Automation Specialist",
       course: "N8N AI Automations", 
-      avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face&auto=format",
+      avatar: "https://i.pravatar.cc/150?img=78",
       content: "N8N AI Automations saved me 40+ hours per week! Automated my entire content workflow. The productivity gains are incredible!",
       rating: 5
     }
@@ -121,17 +122,17 @@ export default function HomePage() {
 
   const features = [
     {
-      icon: '🚀',
+      icon: 'rocket',
       title: 'Launch in Days, Not Months',
       description: 'Get your first 1000 followers within 30 days using our proven growth framework'
     },
     {
-      icon: '💎',
+      icon: 'diamond',
       title: 'Premium Templates & Tools',
       description: 'Access our exclusive library of viral content templates and automation tools'
     },
     {
-      icon: '🎓',
+      icon: 'graduation',
       title: 'Step-by-Step Training',
       description: 'Follow along with detailed video tutorials and implementation guides'
     }
@@ -179,7 +180,7 @@ export default function HomePage() {
                   className="text-center"
                 >
                   <motion.div
-                    className="inline-block text-5xl mb-4"
+                    className="inline-block mb-4"
                     animate={{ 
                       rotate: [0, 10, -10, 0],
                       scale: [1, 1.1, 1]
@@ -190,7 +191,12 @@ export default function HomePage() {
                       repeatDelay: index + 1
                     }}
                   >
-                    {feature.icon}
+                    <PainPointIcon 
+                      type={feature.icon as any} 
+                      size={48} 
+                      className="text-blue-500" 
+                      color="currentColor"
+                    />
                   </motion.div>
                   <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
                   <p className="text-zinc-400">{feature.description}</p>
@@ -247,7 +253,7 @@ export default function HomePage() {
                   <Interactive3DCard>
                     <div className="text-center space-y-4 h-full flex flex-col justify-between p-8">
                       <motion.div 
-                        className="text-6xl"
+                        className="flex justify-center"
                         animate={{ 
                           rotate: [0, 10, -10, 0],
                           scale: [1, 1.1, 1]
@@ -258,7 +264,9 @@ export default function HomePage() {
                           repeatDelay: 2
                         }}
                       >
-                        {course.icon}
+                        {course.icon === 'smartphone' && <Smartphone size={64} className="text-blue-400" />}
+                        {course.icon === 'credit-card' && <CreditCard size={64} className="text-green-400" />}
+                        {course.icon === 'bot' && <Bot size={64} className="text-purple-400" />}
                       </motion.div>
                       <h3 className="text-2xl font-bold text-white">{course.title}</h3>
                       <p className="text-sm text-zinc-400 uppercase tracking-wider">{course.subtitle}</p>
@@ -301,9 +309,9 @@ export default function HomePage() {
             className="grid md:grid-cols-4 gap-8 text-center"
           >
             {[
-              { value: 12000, suffix: '+', label: 'Active Students' },
-              { value: 500000, suffix: '', label: 'Followers Built' },
-              { value: 2000000, prefix: '$', suffix: '+', label: 'Student Revenue' },
+              { value: 13000, suffix: '+', label: 'Active Students' },
+              { value: 10000000, suffix: '+', label: 'Followers Built' },
+              { value: 5000000, prefix: '$', suffix: '+', label: 'Student Revenue' },
               { value: 4.9, suffix: '★', label: 'Average Rating', decimals: 1 }
             ].map((stat, index) => (
               <motion.div
@@ -409,42 +417,42 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
               {
-                icon: '🎯',
+                icon: 'target',
                 title: 'Viral Content Strategy',
                 description: 'Create content that reaches millions and drives real engagement'
               },
               {
-                icon: '📊',
+                icon: 'analytics',
                 title: 'Growth Analytics',
                 description: 'Track, analyze, and optimize your growth with data-driven insights'
               },
               {
-                icon: '🤖',
+                icon: 'automation',
                 title: 'AI Automation',
                 description: 'Build systems that work 24/7 while you focus on creativity'
               },
               {
-                icon: '💸',
+                icon: 'monetization',
                 title: 'Monetization',
                 description: 'Turn your audience into a sustainable business empire'
               },
               {
-                icon: '🎨',
+                icon: 'content',
                 title: 'Content Creation',
                 description: 'Professional tools and techniques for stunning visuals'
               },
               {
-                icon: '📱',
+                icon: 'platform',
                 title: 'Platform Mastery',
                 description: 'Dominate Instagram, TikTok, YouTube, and emerging platforms'
               },
               {
-                icon: '🚀',
+                icon: 'scaling',
                 title: 'Scaling Systems',
                 description: 'Go from solo creator to automated business owner'
               },
               {
-                icon: '🧠',
+                icon: 'psychology',
                 title: 'AI Psychology',
                 description: 'Understand what makes content viral and audiences engage'
               }
@@ -461,11 +469,16 @@ export default function HomePage() {
                 <div className="p-6 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-zinc-700 transition-all duration-300">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <motion.div 
-                    className="text-4xl mb-4"
+                    className="mb-4"
                     animate={{ rotate: [0, 5, -5, 0] }}
                     transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
                   >
-                    {skill.icon}
+                    <PainPointIcon 
+                      type={skill.icon as any} 
+                      size={40} 
+                      className="text-blue-400" 
+                      color="currentColor"
+                    />
                   </motion.div>
                   <h3 className="text-xl font-semibold text-white mb-2">{skill.title}</h3>
                   <p className="text-sm text-zinc-400">{skill.description}</p>

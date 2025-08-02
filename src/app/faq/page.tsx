@@ -3,6 +3,10 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { faqGenerator } from '@/lib/faq-schema-generator'
 import FAQSection from '@/components/FAQSection'
+import BlurIn from '@/components/magicui/blur-in'
+import WordRotate from '@/components/magicui/word-rotate'
+import TypingAnimation from '@/components/magicui/typing-animation'
+import ShimmerButton from '@/components/magicui/shimmer-button'
 
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions | IImagined.ai',
@@ -52,12 +56,22 @@ export default function FAQPage() {
         <section className="bg-gradient-to-b from-gray-800 to-gray-900 py-20">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Frequently Asked Questions
+              <BlurIn
+                word="Frequently Asked"
+                className="text-4xl md:text-5xl font-bold text-white inline-block mr-4"
+                duration={0.8}
+              />
+              <WordRotate
+                words={["Questions", "Answers", "Help", "Support"]}
+                className="text-4xl md:text-5xl font-bold text-white inline-block"
+                duration={2500}
+              />
             </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              Get instant answers to all your questions about AI automation, Instagram growth, 
-              digital marketing, and building a successful online business.
-            </p>
+            <TypingAnimation
+              text="Get instant answers to all your questions about AI automation, Instagram growth, digital marketing, and building a successful online business."
+              className="text-xl text-gray-300 mb-8"
+              duration={50}
+            />
             <div className="flex flex-wrap justify-center gap-4">
               {Object.keys(faqSystems).map(topic => (
                 <a
@@ -99,9 +113,11 @@ export default function FAQPage() {
         {/* Contact Section */}
         <section className="bg-gray-800 py-20">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">
-              Still Have Questions?
-            </h2>
+            <BlurIn
+              word="Still Have Questions?"
+              className="text-3xl font-bold text-white mb-6"
+              duration={0.8}
+            />
             <p className="text-gray-300 text-lg mb-8">
               Can't find what you're looking for? Our expert support team is here to help 24/7.
             </p>
@@ -136,9 +152,11 @@ export default function FAQPage() {
         {/* Popular Questions */}
         <section className="py-20 bg-gray-900">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-white text-center mb-12">
-              Most Popular Questions
-            </h2>
+            <BlurIn
+              word="Most Popular Questions"
+              className="text-3xl font-bold text-white text-center mb-12"
+              duration={0.8}
+            />
             
             <div className="grid gap-6">
               {/* Extract top 5 highest priority questions across all categories */}

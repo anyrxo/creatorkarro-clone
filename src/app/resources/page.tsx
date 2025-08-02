@@ -2,6 +2,10 @@
 
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
 import SocialIcon from '@/components/SocialIcon'
+import BlurIn from '@/components/magicui/blur-in'
+import WordRotate from '@/components/magicui/word-rotate'
+import TypingAnimation from '@/components/magicui/typing-animation'
+import ShimmerButton from '@/components/magicui/shimmer-button'
 
 export default function ResourcesPage() {
   // Scroll animations for different sections
@@ -145,22 +149,34 @@ export default function ResourcesPage() {
             ref={heroAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-8">RESOURCES</h1>
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-              Here are the tools and resources I personally use and recommend to build and grow your online business.
-            </p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-8">
+              <BlurIn
+                word="RESOURCES"
+                className="text-4xl md:text-6xl font-bold"
+                duration={0.8}
+              />
+            </h1>
+            <TypingAnimation
+              text="Here are the tools and resources I personally use and recommend to build and grow your online business."
+              className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto"
+              duration={50}
+            />
           </div>
 
           {/* Resources Grid */}
           <div className="space-y-16">
             {resources.map((category, categoryIndex) => (
               <div key={categoryIndex}>
-                <h2
+                <div
                   ref={categoryAnimations.setElementRef(categoryIndex)}
-                  className={`text-2xl md:text-3xl font-bold mb-8 text-center scroll-fade-up ${categoryAnimations.visibleElements[categoryIndex] ? 'visible' : ''}`}
+                  className={`text-center mb-8 scroll-fade-up ${categoryAnimations.visibleElements[categoryIndex] ? 'visible' : ''}`}
                 >
-                  {category.category}
-                </h2>
+                  <WordRotate
+                    words={[category.category, `${category.category} Tools`, `Best ${category.category}`]}
+                    className="text-2xl md:text-3xl font-bold"
+                    duration={3000}
+                  />
+                </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                   {category.tools.map((tool, toolIndex) => (
                     <div
@@ -210,7 +226,11 @@ export default function ResourcesPage() {
             ref={freeResourcesAnimation.elementRef}
             className={`mt-24 bg-zinc-900/50 rounded-2xl p-6 md:p-8 text-center hover-lift scroll-scale ${freeResourcesAnimation.isVisible ? 'visible' : ''}`}
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">Free Resources</h2>
+            <BlurIn
+              word="Free Resources"
+              className="text-2xl md:text-3xl font-bold mb-6"
+              duration={0.8}
+            />
             <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
               I also create free resources to help you get started. Check out my Gumroad for templates, guides, and more.
             </p>
@@ -218,9 +238,18 @@ export default function ResourcesPage() {
               href="https://anyrxo.gumroad.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-button inline-block hover-lift"
             >
-              Access Free Resources
+              <ShimmerButton
+                className="shadow-2xl"
+                shimmerColor="#ffffff"
+                shimmerSize="0.1em"
+                background="linear-gradient(135deg, #10b981, #059669)"
+                borderRadius="9999px"
+              >
+                <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
+                  Access Free Resources
+                </span>
+              </ShimmerButton>
             </a>
           </div>
 

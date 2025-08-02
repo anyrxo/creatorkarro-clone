@@ -3,6 +3,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import BlurIn from '@/components/magicui/blur-in'
+import TypingAnimation from '@/components/magicui/typing-animation'
+import NumberTicker from '@/components/magicui/number-ticker'
+import ShimmerButton from '@/components/magicui/shimmer-button'
+import WordRotate from '@/components/magicui/word-rotate'
 
 export default function StoryPage() {
   // Scroll animations for different sections
@@ -22,8 +27,17 @@ export default function StoryPage() {
             ref={heroAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              MY STORY
+            <h1 className="text-4xl md:text-6xl font-bold mb-8">
+              <BlurIn
+                word="MY"
+                className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent inline-block mr-4"
+                duration={0.8}
+              />
+              <WordRotate
+                words={["STORY", "JOURNEY", "PATH", "VISION"]}
+                className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent inline-block"
+                duration={2500}
+              />
             </h1>
           </div>
 
@@ -62,20 +76,22 @@ export default function StoryPage() {
               ref={statsAnimation.elementRef}
               className={`bg-zinc-900 rounded-2xl p-6 md:p-8 my-12 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}
             >
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                The Numbers
-              </h2>
+              <BlurIn
+                word="The Numbers"
+                className="text-2xl md:text-3xl font-bold mb-6 text-center bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"
+                duration={0.8}
+              />
               <div className="grid md:grid-cols-3 gap-6 md:gap-8 text-center">
                 <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-                  <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2 animate-float">500K+</div>
+                  <NumberTicker value={500} suffix="K+" className="text-3xl md:text-4xl font-bold text-blue-400 mb-2" />
                   <p className="text-gray-400">Total Followers</p>
                 </div>
                 <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-                  <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2 animate-float [animation-delay:0.5s]">$3M+</div>
+                  <NumberTicker value={3} prefix="$" suffix="M+" className="text-3xl md:text-4xl font-bold text-green-400 mb-2" />
                   <p className="text-gray-400">Revenue Generated</p>
                 </div>
                 <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-                  <div className="text-3xl md:text-4xl font-bold text-purple-400 mb-2 animate-float [animation-delay:1s]">500M+</div>
+                  <NumberTicker value={500} suffix="M+" className="text-3xl md:text-4xl font-bold text-purple-400 mb-2" />
                   <p className="text-gray-400">Total Views</p>
                 </div>
               </div>
@@ -97,7 +113,11 @@ export default function StoryPage() {
               ref={missionAnimation.elementRef}
               className={`bg-blue-600/10 border border-blue-600/30 rounded-lg p-6 md:p-8 text-center scroll-scale ${missionAnimation.isVisible ? 'visible' : ''}`}
             >
-              <h3 className="text-xl md:text-2xl font-bold mb-4">My Mission</h3>
+              <TypingAnimation
+                text="My Mission"
+                className="text-xl md:text-2xl font-bold mb-4"
+                duration={100}
+              />
               <p className="text-lg md:text-xl">
                 To help as many people as possible escape the 9-5, build real wealth through content, and actually enjoy their life while doing it. Because making money online shouldn't feel like torture.
               </p>
@@ -117,15 +137,26 @@ export default function StoryPage() {
             ref={ctaAnimation.elementRef}
             className={`mt-16 text-center bg-zinc-900/50 rounded-2xl p-6 md:p-8 scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to start your journey?</h2>
+            <BlurIn
+              word="Ready to start your journey?"
+              className="text-2xl md:text-3xl font-bold mb-4"
+              duration={0.8}
+            />
             <p className="text-lg md:text-xl text-gray-400 mb-8">
               Join thousands of creators who have transformed their lives with IImagined.
             </p>
-            <Link
-              href="/instagram-ignited"
-              className="cta-button inline-block hover-lift"
-            >
-              Start Your Transformation
+            <Link href="/instagram-ignited">
+              <ShimmerButton
+                className="shadow-2xl"
+                shimmerColor="#ffffff"
+                shimmerSize="0.1em"
+                background="linear-gradient(135deg, #2563eb, #9333ea)"
+                borderRadius="9999px"
+              >
+                <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
+                  Start Your Transformation
+                </span>
+              </ShimmerButton>
             </Link>
           </div>
         </div>

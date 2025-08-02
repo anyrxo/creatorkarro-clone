@@ -17,6 +17,11 @@ import {
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'  
 import TypingAnimation from '@/components/magicui/typing-animation'
+import NumberTicker from '@/components/magicui/number-ticker'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import ShimmerButton from '@/components/magicui/shimmer-button'
+import Marquee from '@/components/magicui/marquee'
+import { ChevronRight } from 'lucide-react'
 
 export default function DigitalProductsPage() {
   // Scroll animations for different sections
@@ -59,11 +64,11 @@ export default function DigitalProductsPage() {
               "https://ext.same-assets.com/1161517358/2657109700.webp"
             ],
             rating: 5,
-            text: "3,247+ students earning $10K+ monthly"
+            text: "3,500+ students earning $10K+ monthly"
           }}
           stats={[
-            { value: "$2M+", label: "Student Revenue Generated", color: "text-green-400" },
-            { value: "3,247+", label: "Products Launched", color: "text-blue-400" },
+            { value: "$5M+", label: "Student Revenue Generated", color: "text-green-400" },
+            { value: "4,200+", label: "Products Launched", color: "text-blue-400" },
             { value: "89%", label: "Success Rate", color: "text-purple-400" }
           ]}
           isVisible={heroAnimation.isVisible}
@@ -158,13 +163,27 @@ export default function DigitalProductsPage() {
             ref={solutionAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}
           >
-            <SectionHeader
-              badge="THE SOLUTION"
-              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              title="Digital Products Academy <span className='text-green-400'>Changes Everything</span>"
-              subtitle="The ONLY proven system that transforms your knowledge into high-converting digital products that scale infinitely."
-              isVisible={solutionAnimation.isVisible}
-            />
+            <div className="text-center mb-8">
+              <div className="text-4xl md:text-6xl font-bold text-white mb-6">
+                <BlurIn
+                  word="Digital Products Academy"
+                  className="text-4xl md:text-6xl font-bold text-white"
+                  duration={0.8}
+                />
+                <div className="bg-gradient-to-r from-green-400 via-emerald-500 to-green-500 bg-clip-text text-transparent">
+                  <WordRotate
+                    words={["Changes Everything", "Transforms Lives", "Creates Freedom", "Builds Empires"]}
+                    className="text-4xl md:text-6xl font-bold"
+                    duration={3000}
+                  />
+                </div>
+              </div>
+              <TypingAnimation
+                text="The ONLY proven system that transforms your knowledge into high-converting digital products that scale infinitely."
+                className="text-xl text-zinc-400 max-w-3xl mx-auto"
+                duration={150}
+              />
+            </div>
           </div>
 
           <div className={`bg-gradient-to-r from-green-900/30 to-emerald-900/30 border border-green-500/30 rounded-3xl p-8 md:p-12 mb-16 scroll-scale ${solutionAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
@@ -183,7 +202,7 @@ export default function DigitalProductsPage() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-green-400 mb-2">Generated $2M+ in student revenue</h4>
+                    <h4 className="text-xl font-bold text-green-400 mb-2">Generated $5M+ in student revenue</h4>
                     <p className="text-gray-300">Students have created and sold everything from $47 guides to $2,997 mastermind programs using this system.</p>
                   </div>
                 </div>
@@ -195,7 +214,7 @@ export default function DigitalProductsPage() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-green-400 mb-2">Launched 3,247+ successful products</h4>
+                    <h4 className="text-xl font-bold text-green-400 mb-2">Launched 4,200+ successful products</h4>
                     <p className="text-gray-300">From complete beginners to experts, this system works for anyone with valuable knowledge to share.</p>
                   </div>
                 </div>
@@ -282,15 +301,21 @@ export default function DigitalProductsPage() {
 
           <div className={`grid md:grid-cols-3 gap-8 mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <div className="text-4xl font-bold text-green-400 mb-2">$2M+</div>
+              <div className="text-4xl font-bold text-green-400 mb-2">
+                <NumberTicker value={5} prefix="$" suffix="M+" className="text-4xl font-bold text-green-400" />
+              </div>
               <div className="text-gray-300">Student Revenue Generated</div>
             </div>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <div className="text-4xl font-bold text-blue-400 mb-2">3,247+</div>
+              <div className="text-4xl font-bold text-blue-400 mb-2">
+                <NumberTicker value={3500} suffix="+" className="text-4xl font-bold text-blue-400" />
+              </div>
               <div className="text-gray-300">Products Launched</div>
             </div>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <div className="text-4xl font-bold text-purple-400 mb-2">89%</div>
+              <div className="text-4xl font-bold text-purple-400 mb-2">
+                <NumberTicker value={89} suffix="%" className="text-4xl font-bold text-purple-400" />
+              </div>
               <div className="text-gray-300">Success Rate</div>
             </div>
           </div>
@@ -399,13 +424,27 @@ export default function DigitalProductsPage() {
             ref={modulesAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible' : ''}`}
           >
-            <SectionHeader
-              badge="COMPLETE SYSTEM"
-              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              isVisible={modulesAnimation.isVisible}
-              title="Everything You Need to Build <span className='text-green-400'>Million-Dollar Digital Products</span>"
-              subtitle="The most comprehensive digital product creation system ever built."
-            />
+            <div className="text-center mb-8">
+              <div className="text-4xl md:text-6xl font-bold text-white mb-6">
+                <BlurIn
+                  word="Everything You Need to Build"
+                  className="text-4xl md:text-6xl font-bold text-white"
+                  duration={0.8}
+                />
+                <div className="bg-gradient-to-r from-green-400 via-emerald-500 to-green-500 bg-clip-text text-transparent">
+                  <WordRotate
+                    words={["Million-Dollar Products", "Digital Empires", "Passive Income Streams", "Scalable Businesses"]}
+                    className="text-4xl md:text-6xl font-bold"
+                    duration={3500}
+                  />
+                </div>
+              </div>
+              <TypingAnimation
+                text="The most comprehensive digital product creation system ever built."
+                className="text-xl text-zinc-400 max-w-3xl mx-auto"
+                duration={120}
+              />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
@@ -734,19 +773,19 @@ export default function DigitalProductsPage() {
               {
                 name: "Jennifer Martinez",
                 role: "Life Coach • $45K/Month",
-                avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+                avatar: "https://i.pravatar.cc/150?img=65",
                 content: "Digital Products Academy changed my life! I went from struggling to get coaching clients to running a $45K/month digital empire. My signature course practically sells itself now. I help more people in a month than I used to help in a year!"
               },
               {
                 name: "David Thompson",
                 role: "Marketing Expert • $32K/Month",
-                avatar: "https://randomuser.me/api/portraits/men/38.jpg",
+                avatar: "https://i.pravatar.cc/150?img=38",
                 content: "I was burned out from client work when I found this system. Now I have 3 digital products generating consistent passive income. Last month I made $32K while traveling Europe. This isn't just a course - it's a complete business transformation!"
               },
               {
                 name: "Sarah Kim",
                 role: "Fitness Expert • $28K/Month",
-                avatar: "https://randomuser.me/api/portraits/women/73.jpg",
+                avatar: "https://i.pravatar.cc/150?img=73",
                 content: "From personal trainer making $3K/month to digital product creator making $28K/month! My online fitness programs have helped thousands of people while giving me complete time freedom. The pricing strategies alone 10x'd my income!"
               }
             ].map((testimonial, index) => (
@@ -892,10 +931,23 @@ export default function DigitalProductsPage() {
                 <div className="flex text-yellow-400">
                   {'★'.repeat(5)}
                 </div>
-                <span className="text-sm text-gray-400">3,247+ successful students</span>
+                <span className="text-sm text-gray-400">3,500+ successful students</span>
               </div>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Your Digital Empire Starts TODAY</h2>
+            <div className="text-3xl md:text-5xl font-bold text-white mb-4">
+              <BlurIn
+                word="Your Digital Empire Starts"
+                className="text-3xl md:text-5xl font-bold text-white"
+                duration={0.8}
+              />
+              <div className="bg-gradient-to-r from-green-400 via-emerald-500 to-green-500 bg-clip-text text-transparent">
+                <WordRotate
+                  words={["TODAY", "NOW", "RIGHT HERE", "THIS MOMENT"]}
+                  className="text-3xl md:text-5xl font-bold"
+                  duration={2500}
+                />
+              </div>
+            </div>
             <p className="text-lg md:text-xl text-gray-400 mb-8">Join thousands of entrepreneurs who escaped the time-for-money trap and built scalable passive income streams</p>
             
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
@@ -918,11 +970,11 @@ export default function DigitalProductsPage() {
             
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
               <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-green-400">$2M+</div>
+                <div className="text-2xl font-bold text-green-400">$5M+</div>
                 <div className="text-sm text-gray-400">Student Revenue</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-blue-400">3,247+</div>
+                <div className="text-2xl font-bold text-blue-400">3,500+</div>
                 <div className="text-sm text-gray-400">Products Launched</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">

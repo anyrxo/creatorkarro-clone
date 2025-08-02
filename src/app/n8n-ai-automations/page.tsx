@@ -18,6 +18,11 @@ import {
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
+import NumberTicker from '@/components/magicui/number-ticker'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import ShimmerButton from '@/components/magicui/shimmer-button'
+import Marquee from '@/components/magicui/marquee'
+import { ChevronRight } from 'lucide-react'
 
 export default function N8NAutomationsPage() {
   // Scroll animations for different sections
@@ -60,12 +65,12 @@ export default function N8NAutomationsPage() {
               "https://ext.same-assets.com/1161517358/2657109700.webp"
             ],
             rating: 5,
-            text: "2,847+ students saving 40+ hours/week"
+            text: "1,600+ students saving 40+ hours/week"
           }}
           stats={[
             { value: "40+", label: "Hours Saved Weekly", color: "text-purple-400" },
             { value: "$2M+", label: "Revenue Automated", color: "text-green-400" },
-            { value: "2,847+", label: "Students Transformed", color: "text-blue-400" }
+            { value: "1,600+", label: "Students Transformed", color: "text-blue-400" }
           ]}
           isVisible={heroAnimation.isVisible}
         />
@@ -159,19 +164,43 @@ export default function N8NAutomationsPage() {
             ref={solutionAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}
           >
-            <SectionHeader
-              badge="THE SOLUTION"
-              badgeColor="bg-zinc-900 border border-purple-500 text-purple-400"
-              isVisible={solutionAnimation.isVisible}
-              title="N8N AI Automations <span className='text-purple-400'>Changes Everything</span>"
-              subtitle="The ONLY system that transforms manual entrepreneurs into automation empires - without coding skills."
-            />
+            <div className="text-center mb-8">
+              <div className="text-4xl md:text-6xl font-bold text-white mb-6">
+                <BlurIn
+                  word="N8N AI Automations"
+                  className="text-4xl md:text-6xl font-bold text-white"
+                  duration={0.8}
+                />
+                <div className="bg-gradient-to-r from-purple-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                  <WordRotate
+                    words={["Changes Everything", "Transforms Business", "Creates Freedom", "Builds Empires"]}
+                    className="text-4xl md:text-6xl font-bold"
+                    duration={3000}
+                  />
+                </div>
+              </div>
+              <TypingAnimation
+                text="The ONLY system that transforms manual entrepreneurs into automation empires - without coding skills."
+                className="text-xl text-zinc-400 max-w-3xl mx-auto"
+                duration={150}
+              />
+            </div>
           </div>
 
           <div className={`bg-gradient-to-r from-purple-900/30 to-blue-900/30 border border-purple-500/30 rounded-3xl p-8 md:p-12 mb-16 scroll-scale ${solutionAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
             <div className="text-center mb-8">
               <h3 className="text-3xl md:text-5xl font-bold mb-4">
-                This is the <span className="text-green-400">EXACT</span> System That...
+                <BlurIn
+                  word="This is the"
+                  className="text-3xl md:text-5xl font-bold text-white"
+                  duration={0.8}
+                />
+                <span className="text-green-400"> EXACT </span>
+                <TypingAnimation
+                  text="System That..."
+                  className="text-3xl md:text-5xl font-bold text-white inline"
+                  duration={100}
+                />
               </h3>
             </div>
             
@@ -284,23 +313,39 @@ export default function N8NAutomationsPage() {
 
           <div className={`grid md:grid-cols-3 gap-8 mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <div className="text-4xl font-bold text-purple-400 mb-2">2,847+</div>
+              <div className="text-4xl font-bold text-purple-400 mb-2">
+                <NumberTicker value={2847} suffix="+" className="text-4xl font-bold text-purple-400" />
+              </div>
               <div className="text-gray-300">Students Transformed</div>
             </div>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <div className="text-4xl font-bold text-green-400 mb-2">40+ Hours</div>
+              <div className="text-4xl font-bold text-green-400 mb-2">
+                <NumberTicker value={40} suffix="+ Hours" className="text-4xl font-bold text-green-400" />
+              </div>
               <div className="text-gray-300">Saved Weekly Average</div>
             </div>
             <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <div className="text-4xl font-bold text-blue-400 mb-2">$2M+</div>
+              <div className="text-4xl font-bold text-blue-400 mb-2">
+                <NumberTicker value={2} prefix="$" suffix="M+" className="text-4xl font-bold text-blue-400" />
+              </div>
               <div className="text-gray-300">Revenue Automated</div>
             </div>
           </div>
 
           <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
             <p className="text-lg md:text-xl text-gray-400 mb-8">Ready to join the automation revolution?</p>
-            <Link href="#pricing" className="cta-button inline-block">
-              Get N8N Mastery System
+            <Link href="#pricing">
+              <ShimmerButton
+                className="shadow-2xl"
+                shimmerColor="#ffffff"
+                shimmerSize="0.1em"
+                background="linear-gradient(135deg, #8b5cf6, #7c3aed)"
+                borderRadius="9999px"
+              >
+                <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
+                  Get N8N Mastery System
+                </span>
+              </ShimmerButton>
             </Link>
           </div>
         </div>
@@ -311,7 +356,12 @@ export default function N8NAutomationsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Master the <span className="text-purple-400">Automation Ecosystem</span>
+              <WordRotate
+                words={["Master the", "Dominate the", "Control the", "Rule the"]}
+                className="text-3xl md:text-4xl font-bold text-white"
+                duration={2500}
+              />
+              <span className="text-purple-400"> Automation Ecosystem</span>
             </h2>
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
               Learn to integrate N8N with the most powerful automation and AI tools
@@ -420,13 +470,27 @@ export default function N8NAutomationsPage() {
             ref={studentResultsAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible' : ''}`}
           >
-            <SectionHeader
-              badge="STUDENT SUCCESS"
-              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
-              isVisible={studentResultsAnimation.isVisible}
-              title="Real People, <span className='text-green-400'>Real Results</span>"
-              subtitle="These entrepreneurs went from manual hell to automated paradise..."
-            />
+            <div className="text-center mb-8">
+              <div className="text-4xl md:text-6xl font-bold text-white mb-6">
+                <BlurIn
+                  word="Real People, Real"
+                  className="text-4xl md:text-6xl font-bold text-white"
+                  duration={0.8}
+                />
+                <div className="bg-gradient-to-r from-green-400 via-emerald-500 to-green-500 bg-clip-text text-transparent">
+                  <WordRotate
+                    words={["Results", "Success", "Freedom", "Transformation"]}
+                    className="text-4xl md:text-6xl font-bold"
+                    duration={3000}
+                  />
+                </div>
+              </div>
+              <TypingAnimation
+                text="These entrepreneurs went from manual hell to automated paradise..."
+                className="text-xl text-zinc-400 max-w-3xl mx-auto"
+                duration={120}
+              />
+            </div>
           </div>
 
           <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
@@ -799,19 +863,19 @@ export default function N8NAutomationsPage() {
               {
                 name: "David Chen",
                 role: "E-commerce Entrepreneur • $2M Revenue",
-                avatar: "https://randomuser.me/api/portraits/men/23.jpg",
+                avatar: "https://i.pravatar.cc/150?img=23",
                 content: "N8N transformed my entire business! I went from working 80 hours/week manually processing orders to 30 hours/week while revenue grew 300%. My automation handles everything from inventory management to customer support. I'm finally working ON my business, not IN it."
               },
               {
                 name: "Sarah Martinez",
                 role: "Digital Marketing Agency • 50+ Clients",
-                avatar: "https://randomuser.me/api/portraits/women/28.jpg",
+                avatar: "https://i.pravatar.cc/150?img=28",
                 content: "This course paid for itself in the first week! I built automated client reporting systems that save me 25 hours weekly. Now I'm selling automation services to clients for $5K each. From manual chaos to automated empire - this system is pure gold!"
               },
               {
                 name: "Michael Torres",
                 role: "SaaS Founder • 10K+ Users",
-                avatar: "https://randomuser.me/api/portraits/men/94.jpg",
+                avatar: "https://i.pravatar.cc/150?img=94",
                 content: "The AI integration modules blew my mind! My N8N workflows now handle customer onboarding, support tickets, and user engagement automatically. Reduced customer acquisition cost by 60% while improving satisfaction scores. This is the future of business!"
               }
             ].map((testimonial, index) => (
@@ -898,7 +962,7 @@ export default function N8NAutomationsPage() {
               },
               {
                 question: "Why is the price so low for such comprehensive training?",
-                answer: "I want to democratize automation and help as many entrepreneurs as possible escape manual labor hell. I'd rather have 1,000 successful students at $297 than 10 students at $2,997. This pricing won't last forever - it's my way of building a community of automation experts."
+                answer: "I want to democratize automation and help as many entrepreneurs as possible escape manual labor hell. I'd rather have 1,600 successful students at $297 than 10 students at $2,997. This pricing won't last forever - it's my way of building a community of automation experts."
               }
             ].map((faq, index) => (
               <div
@@ -960,7 +1024,20 @@ export default function N8NAutomationsPage() {
                 <span className="text-sm text-gray-400">2,847+ successful students</span>
               </div>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Your Automation Empire Starts TODAY</h2>
+            <div className="text-3xl md:text-5xl font-bold text-white mb-4">
+              <BlurIn
+                word="Your Automation Empire Starts"
+                className="text-3xl md:text-5xl font-bold text-white"
+                duration={0.8}
+              />
+              <div className="bg-gradient-to-r from-purple-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                <WordRotate
+                  words={["TODAY", "NOW", "RIGHT HERE", "THIS MOMENT"]}
+                  className="text-3xl md:text-5xl font-bold"
+                  duration={2500}
+                />
+              </div>
+            </div>
             <p className="text-lg md:text-xl text-gray-400 mb-8">Join thousands of entrepreneurs who escaped manual labor hell and built automated businesses that scale infinitely</p>
             
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
@@ -973,8 +1050,18 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
             
-            <Link href="#pricing" className="inline-block bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4">
-              🚀 BUILD MY AUTOMATION EMPIRE - $297 🚀
+            <Link href="#pricing">
+              <ShimmerButton
+                className="shadow-2xl mb-4"
+                shimmerColor="#ffffff"
+                shimmerSize="0.1em"
+                background="linear-gradient(135deg, #8b5cf6, #3b82f6)"
+                borderRadius="1rem"
+              >
+                <span className="whitespace-nowrap text-2xl font-bold px-12 py-4">
+                  🚀 BUILD MY AUTOMATION EMPIRE - <NumberTicker value={297} prefix="$" className="inline" /> 🚀
+                </span>
+              </ShimmerButton>
             </Link>
             
             <p className="text-sm text-gray-400 mb-6">
@@ -983,15 +1070,21 @@ export default function N8NAutomationsPage() {
             
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
               <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-purple-400">2,847+</div>
+                <div className="text-2xl font-bold text-purple-400">
+                  <NumberTicker value={1600} suffix="+" className="text-2xl font-bold text-purple-400" />
+                </div>
                 <div className="text-sm text-gray-400">Students Transformed</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-green-400">40+ Hours</div>
+                <div className="text-2xl font-bold text-green-400">
+                  <NumberTicker value={40} suffix="+ Hours" className="text-2xl font-bold text-green-400" />
+                </div>
                 <div className="text-sm text-gray-400">Saved Weekly</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-blue-400">$2M+</div>
+                <div className="text-2xl font-bold text-blue-400">
+                  <NumberTicker value={2} prefix="$" suffix="M+" className="text-2xl font-bold text-blue-400" />
+                </div>
                 <div className="text-sm text-gray-400">Revenue Automated</div>
               </div>
             </div>

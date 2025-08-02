@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
 import SocialIcon from '@/components/SocialIcon'
+import PainPointIcon from '@/components/PainPointIcon'
 import {
   ValueBadge,
   ModuleCard,
@@ -21,6 +22,9 @@ import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import NumberTicker from '@/components/magicui/number-ticker'
 import Marquee from '@/components/magicui/marquee'
 import ShimmerButton from '@/components/magicui/shimmer-button'
+import WordRotate from '@/components/magicui/word-rotate'
+import BlurIn from '@/components/magicui/blur-in'
+import TypingAnimation from '@/components/magicui/typing-animation'
 import { ChevronRight } from 'lucide-react'
 
 export default function InstagramIgnitedPage() {
@@ -79,12 +83,12 @@ export default function InstagramIgnitedPage() {
               "https://ext.same-assets.com/1161517358/2657109700.webp"
             ],
             rating: 5,
-            text: "2,000+ students transformed"
+            text: "6,000+ students transformed"
           }}
           stats={[
-            { value: "500K+", label: "Followers Grown", color: "text-blue-400" },
-            { value: "$500K+", label: "Revenue Generated", color: "text-green-400" },
-            { value: "100M+", label: "Views Created", color: "text-purple-400" }
+            { value: "10M+", label: "Followers Grown", color: "text-blue-400" },
+            { value: "$2.5M+", label: "Revenue Generated", color: "text-green-400" },
+            { value: "250M+", label: "Views Created", color: "text-purple-400" }
           ]}
           isVisible={heroAnimation.isVisible}
         />
@@ -100,9 +104,20 @@ export default function InstagramIgnitedPage() {
             <div className="inline-block bg-zinc-900 border border-red-500 rounded-full px-4 py-2 mb-6">
               <span className="text-red-400 text-sm font-semibold uppercase tracking-wider">BRUTAL TRUTH</span>
             </div>
-            <h2 className="text-3xl md:text-6xl font-bold mb-6 text-red-400">
-              You're Getting DESTROYED by Instagram
-            </h2>
+            <div className="text-3xl md:text-6xl font-bold mb-6 text-red-400">
+              <BlurIn
+                word="You're Getting DESTROYED by"
+                className="text-3xl md:text-6xl font-bold text-red-400"
+                duration={0.8}
+              />
+              <div className="mt-2">
+                <WordRotate
+                  words={["Instagram", "The Algorithm", "Your Competition", "This System"]}
+                  className="text-3xl md:text-6xl font-bold text-red-400"
+                  duration={2500}
+                />
+              </div>
+            </div>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
               While your competitors are building million-dollar personal brands, you're stuck in Instagram hell...
             </p>
@@ -111,32 +126,32 @@ export default function InstagramIgnitedPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
             {[
               {
-                icon: "📉",
+                icon: "chart-down",
                 title: "Posting Daily, Getting 10 Likes",
                 description: "You're grinding every single day, creating content, writing captions... and getting the same pathetic 8-15 likes from your mom and closest friends. Your reach is DEAD."
               },
               {
-                icon: "😤",
+                icon: "fire",
                 title: "Watching Competitors Blow Up",
                 description: "That person who started after you? They just hit 100K followers while you're stuck at 2,400. Their 'worse' content is getting 50K views while yours gets 200."
               },
               {
-                icon: "💀",
+                icon: "skull",
                 title: "Algorithm Changes Killing You",
                 description: "Every time Instagram updates, your already terrible reach gets even worse. You have ZERO control over your visibility and you're at the mercy of a broken system."
               },
               {
-                icon: "👻",
+                icon: "ghost",
                 title: "You're Completely Invisible",
                 description: "Despite posting quality content, you might as well not exist. No one sees your posts, no one engages, no one cares. You're screaming into the void."
               },
               {
-                icon: "💸",
+                icon: "money-off",
                 title: "Missing the $10K+/Month Economy",
                 description: "The creator economy is exploding. People with smaller followings than you are making $10K-$50K per month while you're making $0. You're watching millions slip away."
               },
               {
-                icon: "🔥",
+                icon: "flame",
                 title: "Burning Out from Zero Results",
                 description: "You're exhausted. Hours spent creating, editing, posting, engaging... for NOTHING. You're ready to quit but you know Instagram could change your life if you just knew what actually works."
               }
@@ -146,7 +161,14 @@ export default function InstagramIgnitedPage() {
                 ref={problemCards.setElementRef(index)}
                 className={`bg-zinc-900 border border-red-900/30 rounded-2xl p-6 hover:bg-red-900/20 transition-all duration-300 hover-lift scroll-fade-up ${problemCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
-                <div className="text-4xl mb-4">{problem.icon}</div>
+                <div className="mb-4">
+                  <PainPointIcon 
+                    type={problem.icon as any} 
+                    size={48} 
+                    className="text-red-500" 
+                    color="currentColor"
+                  />
+                </div>
                 <h3 className="text-xl font-bold mb-4 text-red-400">{problem.title}</h3>
                 <p className="text-gray-300 leading-relaxed">{problem.description}</p>
               </div>
@@ -185,9 +207,25 @@ export default function InstagramIgnitedPage() {
             <div className="inline-block bg-zinc-900 border border-blue-500 rounded-full px-4 py-2 mb-6">
               <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">THE SOLUTION</span>
             </div>
-            <h2 className="text-3xl md:text-6xl font-bold mb-6">
-              Instagram <span className="text-blue-400">Ignited</span> Changes Everything
-            </h2>
+            <div className="text-3xl md:text-6xl font-bold mb-6">
+              <BlurIn
+                word="Instagram"
+                className="text-3xl md:text-6xl font-bold text-white"
+                duration={0.8}
+              />
+              <span className="text-blue-400 mx-4">
+                <TypingAnimation
+                  text="Ignited"
+                  className="text-3xl md:text-6xl font-bold text-blue-400 inline"
+                  duration={100}
+                />
+              </span>
+              <WordRotate
+                words={["Changes Everything", "Transforms Lives", "Creates Empires", "Builds Success"]}
+                className="text-3xl md:text-6xl font-bold text-white"
+                duration={3000}
+              />
+            </div>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
               The ONLY proven system that takes you from Instagram ghost to algorithm dominator in 90 days or less.
             </p>
@@ -195,9 +233,13 @@ export default function InstagramIgnitedPage() {
 
           <div className={`bg-gradient-to-r from-blue-900/30 to-green-900/30 border border-blue-500/30 rounded-3xl p-8 md:p-12 mb-16 scroll-scale ${solutionAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
             <div className="text-center mb-8">
-              <h3 className="text-3xl md:text-5xl font-bold mb-4">
-                This is the <span className="text-green-400">EXACT</span> System That...
-              </h3>
+              <div className="text-3xl md:text-5xl font-bold mb-4">
+                <TypingAnimation
+                  text="This is the EXACT System That..."
+                  className="text-3xl md:text-5xl font-bold text-white"
+                  duration={80}
+                />
+              </div>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8">
@@ -221,7 +263,7 @@ export default function InstagramIgnitedPage() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-green-400 mb-2">Generated over $500K in revenue</h4>
+                    <h4 className="text-xl font-bold text-green-400 mb-2">Generated over $2.5M in revenue</h4>
                     <p className="text-gray-300">This isn't just about followers - it's about building a real business that pays you monthly.</p>
                   </div>
                 </div>
@@ -299,9 +341,20 @@ export default function InstagramIgnitedPage() {
             className={`text-center mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible' : ''}`}
           >
             <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">RESULTS</p>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              If you're not growing your audience, you'll get left behind...
-            </h2>
+            <div className="text-3xl md:text-5xl font-bold mb-4">
+              <BlurIn
+                word="If you're not growing your audience,"
+                className="text-3xl md:text-5xl font-bold text-white"
+                duration={1}
+              />
+              <div className="mt-2 text-red-400">
+                <WordRotate
+                  words={["you'll get left behind...", "you're missing millions...", "your dreams are dying...", "competitors are winning..."]}
+                  className="text-3xl md:text-5xl font-bold"
+                  duration={2500}
+                />
+              </div>
+            </div>
             <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
               Look at what's happened since I committed to growing my audience. Everything I've learned and implemented is packed into this course.
             </p>
@@ -321,6 +374,65 @@ export default function InstagramIgnitedPage() {
             <p className="text-lg md:text-xl text-gray-400 mb-8">Ready to take your brand to the next level?</p>
             <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
               Claim Full Creator Bundle
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Content Tools Section */}
+      <section className="py-16 bg-gradient-to-b from-zinc-900/30 to-black border-t border-zinc-700/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Master the <span className="text-blue-400">Instagram Creator Stack</span>
+            </h2>
+            <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+              Learn to create, grow, and monetize with the same tools successful creators use
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {[
+              { platform: 'instagram', name: 'Instagram', category: 'Core Platform' },
+              { platform: 'tiktok', name: 'TikTok', category: 'Content Creation' },
+              { platform: 'youtube', name: 'YouTube', category: 'Long-form Content' },
+              { platform: 'facebook', name: 'Facebook', category: 'Cross-posting' },
+              { platform: 'linkedin', name: 'LinkedIn', category: 'Professional' },
+              { platform: 'beehiiv', name: 'Beehiiv', category: 'Email Marketing' },
+              { platform: 'fanvue', name: 'Fanvue', category: 'Monetization' },
+              { platform: 'loom', name: 'Loom', category: 'Video Content' }
+            ].map((tool, index) => (
+              <div
+                key={tool.platform}
+                className="group relative bg-zinc-800/50 backdrop-blur-sm rounded-xl p-4 border border-zinc-700/50 hover:border-blue-500/50 transition-all duration-300 hover:scale-105"
+              >
+                <div className="flex flex-col items-center text-center">
+                  <SocialIcon 
+                    platform={tool.platform as any}
+                    variant="color"
+                    size={40}
+                    href={undefined}
+                    className="mb-3 group-hover:scale-110 transition-transform"
+                  />
+                  <h3 className="font-semibold text-white text-sm mb-1">{tool.name}</h3>
+                  <p className="text-xs text-zinc-400">{tool.category}</p>
+                </div>
+                
+                {/* Hover effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-zinc-400 mb-6">
+              Plus content creation tools, analytics platforms, and scheduling software
+            </p>
+            <button onClick={handleBuyNow} className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors cursor-pointer">
+              <span>Master All Platforms</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </button>
           </div>
         </div>
@@ -608,9 +720,20 @@ export default function InstagramIgnitedPage() {
             <div className="inline-block bg-zinc-900 border border-green-500 rounded-full px-4 py-2 mb-6">
               <span className="text-green-400 text-sm font-semibold uppercase tracking-wider">INSANE VALUE</span>
             </div>
-            <h2 className="text-3xl md:text-6xl font-bold mb-6">
-              This is <span className="text-green-400">RIDICULOUS</span>
-            </h2>
+            <div className="text-3xl md:text-6xl font-bold mb-6">
+              <BlurIn
+                word="This is"
+                className="text-3xl md:text-6xl font-bold text-white"
+                duration={0.8}
+              />
+              <span className="text-green-400 ml-4">
+                <WordRotate
+                  words={["RIDICULOUS", "INSANE VALUE", "UNBELIEVABLE", "TOO GOOD"]}
+                  className="text-3xl md:text-6xl font-bold text-green-400"
+                  duration={2000}
+                />
+              </span>
+            </div>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
               Let's do the math on what you're actually getting today...
             </p>
@@ -821,7 +944,7 @@ export default function InstagramIgnitedPage() {
               },
               {
                 question: "Can I really make money with Instagram, or is it just for influence?",
-                answer: "You can absolutely make serious money! I've generated over $500K using Instagram, and my students are earning $5K-$50K monthly through various revenue streams: digital products, affiliate marketing, sponsorships, coaching, consulting, and more. Module 7 covers 12 different monetization methods in detail."
+                answer: "You can absolutely make serious money! I've generated over $2.5M using Instagram, and my students are earning $5K-$50K monthly through various revenue streams: digital products, affiliate marketing, sponsorships, coaching, consulting, and more. Module 7 covers 12 different monetization methods in detail."
               },
               {
                 question: "What if I'm not photogenic or don't want to show my face?",
@@ -837,7 +960,7 @@ export default function InstagramIgnitedPage() {
               },
               {
                 question: "Why is the price so low compared to other courses or agencies?",
-                answer: "Because I want to help as many people as possible build successful personal brands. I've already made my money - now I want to create a legacy of successful students. Most agencies charge $2K-$5K monthly for worse results. I'd rather have 1,000 successful students at $297 than 10 students at $2,997."
+                answer: "Because I want to help as many people as possible build successful personal brands. I've already made my money - now I want to create a legacy of successful students. Most agencies charge $2K-$5K monthly for worse results. I'd rather have 6,000 successful students at $297 than 10 students at $2,997."
               }
             ].map((faq, index) => (
               <div
@@ -929,55 +1052,55 @@ export default function InstagramIgnitedPage() {
               {
                 name: "Marcus Rivera",
                 role: "Content Creator • 125K Followers",
-                avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+                avatar: "https://i.pravatar.cc/150?img=32",
                 content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months using Anyro's viral carousel techniques. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month through sponsored posts and my own digital products. The community support is incredible!"
               },
               {
                 name: "Allan Rodriguez",
                 role: "Lifestyle Blogger • $25K Brand Deal",
-                avatar: "https://randomuser.me/api/portraits/men/88.jpg",
+                avatar: "https://i.pravatar.cc/150?img=88",
                 content: "The Instagram OS module alone was worth the entire course! I finally understood the algorithm and my first viral carousel got 2.3M views. Within 3 months, I grew from 5K to 85K followers and landed my first $25K brand partnership. Anyro's strategies actually work!"
               },
               {
                 name: "David Chen",
                 role: "Fitness Coach • $22K/Month",
-                avatar: "https://randomuser.me/api/portraits/men/23.jpg",
+                avatar: "https://i.pravatar.cc/150?img=23",
                 content: "I was skeptical about another Instagram course, but Instagram Ignited delivered results immediately. My engagement went from 300 likes to 8K+ per post. The monetization strategies helped me scale my coaching business to $22K/month. The ROI was instant!"
               },
               {
                 name: "Jake Martinez",
                 role: "Business Coach • 180K Followers",
-                avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+                avatar: "https://i.pravatar.cc/150?img=45",
                 content: "As someone who struggled with Instagram for years, this course was a game-changer. The Niche OS helped me find my perfect audience, and within 6 months I had 180K engaged followers. My course sales increased 400% thanks to the Instagram traffic. Absolutely life-changing!"
               },
               {
                 name: "Brendan Thompson",
                 role: "Digital Entrepreneur • $35K/Month",
-                avatar: "https://randomuser.me/api/portraits/men/65.jpg",
+                avatar: "https://i.pravatar.cc/150?img=65",
                 content: "Instagram Ignited took me from 1,200 followers to 240K in 10 months! The content templates and posting strategies are pure gold. I'm now generating $35K/month through affiliate marketing and my own products. This program is the real deal - no fluff, just results!"
               },
               {
                 name: "Aria Williams",
                 role: "Fashion Influencer • $50K Brand Deals",
-                avatar: "https://randomuser.me/api/portraits/women/42.jpg",
+                avatar: "https://i.pravatar.cc/150?img=42",
                 content: "The editing techniques in Instagram Ignited are incredible! My content quality skyrocketed and so did my follower count - from 3K to 95K in 7 months. I've secured partnerships with major fashion brands worth over $50K. The community mastermind calls are invaluable!"
               },
               {
                 name: "Ryan Foster",
                 role: "Tech Reviewer • 165K Followers",
-                avatar: "https://randomuser.me/api/portraits/men/52.jpg",
+                avatar: "https://i.pravatar.cc/150?img=52",
                 content: "I was stuck at 12K followers for months until I found Instagram Ignited. The mindset shifts and content frameworks helped me break through to 165K followers. My tech review videos now get 500K+ views regularly, and I've monetized through courses making $18K/month!"
               },
               {
                 name: "Ashton Torres",
                 role: "Travel Blogger • $28K/Month",
-                avatar: "https://randomuser.me/api/portraits/men/12.jpg",
+                avatar: "https://i.pravatar.cc/150?img=12",
                 content: "Instagram Ignited taught me how to turn my travel passion into profit! From 2K to 130K followers in 9 months, with engagement rates of 15%+. The newsletter strategies helped me build a 25K email list. I'm now earning $28K/month through travel partnerships and my own courses!"
               },
               {
                 name: "Cameron Lee",
                 role: "Food Creator • 200K Followers",
-                avatar: "https://randomuser.me/api/portraits/men/71.jpg",
+                avatar: "https://i.pravatar.cc/150?img=71",
                 content: "The Instagram Ignited program is pure genius! My food content went from a few hundred views to consistently hitting 100K+ views per post. Grew from 4K to 200K followers in under a year. Restaurant partnerships and cookbook sales now bring in $32K/month. Best investment ever!"
               }
             ].map((testimonial, index) => (
@@ -1087,15 +1210,21 @@ export default function InstagramIgnitedPage() {
             
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
               <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-green-400">2,000+</div>
+                <div className="text-2xl font-bold text-green-400">
+                  <NumberTicker value={6000} suffix="+" className="text-2xl font-bold text-green-400" />
+                </div>
                 <div className="text-sm text-gray-400">Success Stories</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-blue-400">$500K+</div>
+                <div className="text-2xl font-bold text-blue-400">
+                  <NumberTicker value={2.5} prefix="$" suffix="M+" decimalPlaces={1} className="text-2xl font-bold text-blue-400" />
+                </div>
                 <div className="text-sm text-gray-400">Revenue Generated</div>
               </div>
               <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-yellow-400">100M+</div>
+                <div className="text-2xl font-bold text-yellow-400">
+                  <NumberTicker value={250} suffix="M+" className="text-2xl font-bold text-yellow-400" />
+                </div>
                 <div className="text-sm text-gray-400">Total Views Created</div>
               </div>
             </div>

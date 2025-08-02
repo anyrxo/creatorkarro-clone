@@ -14,6 +14,12 @@ import {
   PricingComparison 
 } from '@/components/course/CourseLayout'
 import ScrollAnimation from '@/components/ScrollAnimation'
+import NumberTicker from '@/components/magicui/number-ticker'
+import WordRotate from '@/components/magicui/word-rotate'
+import BlurIn from '@/components/magicui/blur-in'
+import TypingAnimation from '@/components/magicui/typing-animation'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import ShimmerButton from '@/components/magicui/shimmer-button'
 
 export default function AIInfluencersPage() {
   // Scroll animations for different sections
@@ -510,7 +516,10 @@ export default function AIInfluencersPage() {
               <div className="bg-gradient-to-br from-pink-600/20 to-purple-600/20 border border-pink-500/30 rounded-2xl p-8">
                 <h4 className="text-2xl font-bold mb-4 text-center">AI Influencer Empire Formula</h4>
                 <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-pink-400 mb-2">$10K-50K/Month</div>
+                  <div className="text-4xl font-bold text-pink-400 mb-2">
+                    <NumberTicker value={10} prefix="$" suffix="K-" className="text-4xl font-bold text-pink-400 inline" />
+                    <NumberTicker value={50} prefix="$" suffix="K/Month" className="text-4xl font-bold text-pink-400 inline" />
+                  </div>
                   <p className="text-gray-300">Per AI Influencer Model</p>
                 </div>
                 <div className="space-y-3 text-sm">
@@ -569,8 +578,16 @@ export default function AIInfluencersPage() {
           {/* Total Value */}
           <div className={`text-center mt-16 scroll-fade-up ${curriculumAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 border border-gold-500/50 rounded-lg p-8 max-w-2xl mx-auto">
-              <h3 className="text-3xl font-bold mb-4 text-yellow-400">Total Curriculum Value</h3>
-              <div className="text-5xl font-bold text-yellow-400 mb-2">$1,397</div>
+              <h3 className="text-3xl font-bold mb-4 text-yellow-400">
+                <TypingAnimation
+                  text="Total Curriculum Value"
+                  className="text-3xl font-bold text-yellow-400"
+                  duration={100}
+                />
+              </h3>
+              <div className="text-5xl font-bold text-yellow-400 mb-2">
+                <NumberTicker value={1397} prefix="$" className="text-5xl font-bold text-yellow-400" />
+              </div>
               <p className="text-gray-300">8 comprehensive modules + implementation guides</p>
             </div>
           </div>
@@ -606,8 +623,16 @@ export default function AIInfluencersPage() {
 
           <div className={`text-center mt-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 border border-gold-500/50 rounded-lg p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4 text-gold-400">Total Bonus Value</h3>
-              <div className="text-4xl font-bold text-gold-400 mb-2">$1,032</div>
+              <h3 className="text-2xl font-bold mb-4 text-gold-400">
+                <BlurIn
+                  word="Total Bonus Value"
+                  className="text-2xl font-bold text-gold-400"
+                  duration={0.8}
+                />
+              </h3>
+              <div className="text-4xl font-bold text-gold-400 mb-2">
+                <NumberTicker value={1032} prefix="$" className="text-4xl font-bold text-gold-400" />
+              </div>
               <p className="text-gray-300">Free when you join today</p>
             </div>
           </div>
@@ -673,7 +698,9 @@ export default function AIInfluencersPage() {
               <div className="border-t-2 border-gold-500/50 pt-6">
                 <div className="flex justify-between items-center text-2xl font-bold">
                   <span className="text-white">TOTAL VALUE:</span>
-                  <span className="text-gold-400">$2,429</span>
+                  <span className="text-gold-400">
+                    <NumberTicker value={2429} prefix="$" className="text-2xl font-bold text-gold-400" />
+                  </span>
                 </div>
               </div>
             </div>
@@ -731,10 +758,35 @@ export default function AIInfluencersPage() {
           </div>
 
           <div className={`text-center scroll-fade-up ${testimonialsAnimation.isVisible ? 'visible' : ''}`}>
-            <h3 className="text-3xl font-bold mb-4">Become our next AI influencer success story</h3>
-            <p className="text-xl text-gray-400 mb-8">Join creators building profitable virtual models with zero face-to-camera content</p>
-            <Link href="#packages" className="cta-button inline-block btn-animate animate-glow hover-lift">
-              Start Your AI Empire
+            <h3 className="text-3xl font-bold mb-4">
+              <BlurIn
+                word="Become our next AI influencer"
+                className="text-3xl font-bold text-white"
+                duration={0.8}
+              />
+              <div className="text-pink-400">
+                <WordRotate
+                  words={["success story", "millionaire", "empire builder", "AI mogul"]}
+                  className="text-3xl font-bold"
+                  duration={2500}
+                />
+              </div>
+            </h3>
+            <p className="text-xl text-gray-400 mb-8">
+              Join creators building profitable virtual models with zero face-to-camera content
+            </p>
+            <Link href="#packages">
+              <ShimmerButton
+                className="shadow-2xl"
+                shimmerColor="#ffffff"
+                shimmerSize="0.1em"
+                background="linear-gradient(135deg, #ec4899, #be185d)"
+                borderRadius="9999px"
+              >
+                <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
+                  Start Your AI Empire
+                </span>
+              </ShimmerButton>
             </Link>
           </div>
         </div>
@@ -773,7 +825,13 @@ export default function AIInfluencersPage() {
           <div ref={urgencyAnimation.elementRef}>
             <div className={`text-center scroll-fade-up ${urgencyAnimation.isVisible ? 'visible' : ''}`}>
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-400">⚠️ This Offer Won't Last Forever</h2>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-400">
+                  ⚠️ <TypingAnimation
+                    text="This Offer Won't Last Forever"
+                    className="text-4xl md:text-5xl font-bold text-red-400 inline"
+                    duration={100}
+                  />
+                </h2>
                 
                 <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 mb-8 card-hover">
                   <h3 className="text-2xl font-bold mb-4 text-red-300">Why I'm Limiting This Offer</h3>
@@ -799,8 +857,18 @@ export default function AIInfluencersPage() {
                   Don't let this opportunity slip away. Every day you wait is money left on the table while others build their AI empires.
                 </p>
 
-                <Link href="#packages" className="cta-button inline-block text-2xl py-4 px-12 btn-animate animate-glow hover-lift">
-                  🔥 SECURE YOUR SPOT NOW - $197 🔥
+                <Link href="#packages">
+                  <ShimmerButton
+                    className="shadow-2xl"
+                    shimmerColor="#ffffff"
+                    shimmerSize="0.1em"
+                    background="linear-gradient(135deg, #dc2626, #b91c1c)"
+                    borderRadius="9999px"
+                  >
+                    <span className="whitespace-nowrap text-2xl font-bold px-12 py-4">
+                      🔥 SECURE YOUR SPOT NOW - <NumberTicker value={197} prefix="$" className="inline" /> 🔥
+                    </span>
+                  </ShimmerButton>
                 </Link>
 
                 <p className="text-sm text-green-400 mt-4 font-bold">
@@ -817,10 +885,35 @@ export default function AIInfluencersPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div ref={ctaAnimation.elementRef}>
             <div className={`scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to build your AI influencer empire?</h2>
-              <p className="text-xl text-gray-400 mb-8">Join hundreds of creators who are already making $10K+ per month with faceless AI brands</p>
-              <Link href="#packages" className="cta-button inline-block text-lg btn-animate animate-glow hover-lift">
-                Start Creating Today
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                <BlurIn
+                  word="Ready to build your AI influencer"
+                  className="text-4xl md:text-5xl font-bold text-white"
+                  duration={0.8}
+                />
+                <div className="text-pink-400">
+                  <WordRotate
+                    words={["empire?", "kingdom?", "dynasty?", "fortune?"]}
+                    className="text-4xl md:text-5xl font-bold"
+                    duration={2500}
+                  />
+                </div>
+              </h2>
+              <p className="text-xl text-gray-400 mb-8">
+                Join hundreds of creators who are already making <NumberTicker value={10} prefix="$" suffix="K+" className="text-pink-400 font-bold inline" /> per month with faceless AI brands
+              </p>
+              <Link href="#packages">
+                <ShimmerButton
+                  className="shadow-2xl"
+                  shimmerColor="#ffffff"
+                  shimmerSize="0.1em"
+                  background="linear-gradient(135deg, #ec4899, #be185d)"
+                  borderRadius="9999px"
+                >
+                  <span className="whitespace-nowrap text-lg font-bold px-8 py-3">
+                    Start Creating Today
+                  </span>
+                </ShimmerButton>
               </Link>
               <p className="text-sm text-gray-400 mt-4">60-day money-back guarantee</p>
             </div>
