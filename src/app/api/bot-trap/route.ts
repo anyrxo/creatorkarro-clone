@@ -9,12 +9,13 @@ import { NextRequest, NextResponse } from 'next/server';
 function getRealIP(request: NextRequest): string {
   const forwarded = request.headers.get('x-forwarded-for');
   const realIP = request.headers.get('x-real-ip');
+  const remoteAddress = request.headers.get('x-vercel-forwarded-for');
   
   if (forwarded) {
     return forwarded.split(',')[0].trim();
   }
   
-  return realIP || request.ip || 'unknown';
+  return realIP || remoteAddress || 'unknown';
 }
 
 function detectBotFromHeaders(request: NextRequest): { isBot: boolean; confidence: number; indicators: string[] } {
