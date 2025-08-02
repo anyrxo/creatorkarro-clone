@@ -189,7 +189,7 @@ export async function PUT(request: NextRequest) {
     console.log(`Updating post ${slug}:`, updates);
 
     // Simulate different types of updates
-    let response: any = { success: true, slug };
+    const response: any = { success: true, slug };
 
     if (updates.status) {
       response.message = `Post status updated to ${updates.status}`;

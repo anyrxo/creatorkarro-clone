@@ -591,12 +591,18 @@ export default function AdminDashboard() {
                   </div>
                 </div>
 
-                <div className="mt-6 text-center">
+                <div className="mt-6 text-center space-y-4">
                   <Button 
                     onClick={() => window.open('/security-dashboard', '_blank')}
-                    className="bg-blue-600 hover:bg-blue-700"
+                    className="bg-blue-600 hover:bg-blue-700 w-full"
                   >
                     View Full Security Dashboard
+                  </Button>
+                  <Button 
+                    onClick={() => window.open('/admin/expanded', '_blank')}
+                    className="bg-purple-600 hover:bg-purple-700 w-full"
+                  >
+                    🚀 Access Complete Admin Dashboard
                   </Button>
                 </div>
               </CardContent>
