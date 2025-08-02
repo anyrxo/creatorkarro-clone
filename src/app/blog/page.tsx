@@ -4,6 +4,10 @@ import Link from 'next/link'
 import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
 import { calculateBlogMetrics, formatBlogDate } from '@/utils/blogMetrics'
 import { useEffect, useState } from 'react'
+import ParticleBackground from '@/components/ParticleBackground'
+import ScrollAnimation, { StaggeredAnimation, CountUp } from '@/components/ScrollAnimation'
+import { TiltCard, SpotlightCard } from '@/components/HoverEffects'
+import AnimatedText, { GradientText } from '@/components/AnimatedText'
 
 // News articles data extracted from the newsarticles directory
 const newsArticles = [
@@ -555,11 +559,11 @@ function BlogPostCard({ post, index, setElementRef, isVisible }: {
   }
 
   return (
-    <article 
-      ref={setElementRef(index)}
-      className="bg-zinc-900 rounded-2xl p-6 hover:bg-zinc-800 transition-all duration-300 group cursor-pointer hover-lift scroll-fade-up visible"
-    >
-      <Link href={`/blog/${post.slug}`} className="block">
+    <ScrollAnimation animation="fade-up" delay={index * 100}>
+      <TiltCard maxTilt={10} glare={false}>
+        <SpotlightCard spotlightColor="rgba(59, 130, 246, 0.15)">
+          <article className="bg-zinc-900 rounded-2xl p-6 hover:bg-zinc-800 transition-all duration-300 group cursor-pointer">
+            <Link href={`/blog/${post.slug}`} className="block">
         {/* Category Badge */}
         <div className="mb-4">
           <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(post.categoryColor)}`}>
@@ -621,6 +625,9 @@ function BlogPostCard({ post, index, setElementRef, isVisible }: {
         </div>
       </Link>
     </article>
+  </SpotlightCard>
+  </TiltCard>
+  </ScrollAnimation>
   )
 }
 
@@ -639,7 +646,8 @@ export default function BlogPage() {
   console.log('News articles count:', newsArticles.length)
 
   return (
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-dark relative">
+      <ParticleBackground />
       {/* Hero Section */}
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -652,12 +660,20 @@ export default function BlogPage() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Success Stories, Growth Hacks & AI Strategies from <span className="text-blue-400">IImagined.ai</span>
+              <AnimatedText animation="fade" delay={200}>Success Stories, Growth Hacks &</AnimatedText>{' '}
+              <AnimatedText animation="fade" delay={400}>AI Strategies from</AnimatedText>{' '}
+              <GradientText gradient="primary">
+                <AnimatedText animation="fade" delay={600}>IImagined.ai</AnimatedText>
+              </GradientText>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-400">
+            <AnimatedText 
+              animation="fade" 
+              delay={800}
+              className="text-lg md:text-xl text-gray-400"
+            >
               Master Instagram growth, AI automation, and digital product creation with battle-tested strategies that generate real results
-            </p>
+            </AnimatedText>
           </div>
         </div>
       </section>
@@ -665,8 +681,9 @@ export default function BlogPage() {
       {/* Tab Navigation */}
       <section className="py-8">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center mb-8">
-            <div className="bg-zinc-800 rounded-lg p-1 flex gap-1">
+          <ScrollAnimation animation="scale" delay={100}>
+            <div className="flex justify-center mb-8">
+              <div className="bg-zinc-800 rounded-lg p-1 flex gap-1 glass-premium backdrop-blur-xl">
               <button
                 onClick={() => setActiveTab('general')}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${

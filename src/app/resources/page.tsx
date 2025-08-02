@@ -8,8 +8,8 @@ export default function ResourcesPage() {
   const freeResourcesAnimation = useScrollAnimation({ threshold: 0.2 })
   const disclaimerAnimation = useScrollAnimation({ threshold: 0.2 })
 
-  // For category animations (5 categories)
-  const categoryAnimations = useScrollAnimations(5, { threshold: 0.1 })
+  // For category animations (6 categories)
+  const categoryAnimations = useScrollAnimations(6, { threshold: 0.1 })
 
   const resources = [
     {
@@ -40,8 +40,8 @@ export default function ResourcesPage() {
       tools: [
         {
           name: "Beehiiv",
-          description: "Newsletter platform I use for my email list",
-          link: "https://beehiiv.com/",
+          description: "Newsletter platform I use for my email list. You earn 50% commission for 12 months. Your audience receives a 30-day trial + 20% OFF for 3 months.",
+          link: "https://www.beehiiv.com?via=AbdulMannan1",
           type: "Freemium"
         },
         {
@@ -102,6 +102,23 @@ export default function ResourcesPage() {
           type: "Freemium"
         }
       ]
+    },
+    {
+      category: "AI & Cloud Computing",
+      tools: [
+        {
+          name: "RunPod",
+          description: "GPU cloud computing for AI development. A one-time random credit bonus from $5-500 when they sign up with your link and load $10 for the first time. Instant access to RunPod's GPU resources.",
+          link: "https://runpod.io?ref=yf9yht6f",
+          type: "Cloud Service"
+        },
+        {
+          name: "Fanvue",
+          description: "Creator platform for building your audience and monetizing content",
+          link: "https://www.fanvue.com/signup?referral=FV-33CETP",
+          type: "Platform"
+        }
+      ]
     }
   ]
 
@@ -142,6 +159,7 @@ export default function ResourcesPage() {
                           tool.type === 'Free' ? 'bg-green-600/20 text-green-400' :
                           tool.type === 'Freemium' ? 'bg-blue-600/20 text-blue-400' :
                           tool.type === 'Platform' ? 'bg-purple-600/20 text-purple-400' :
+                          tool.type === 'Cloud Service' ? 'bg-cyan-600/20 text-cyan-400' :
                           'bg-orange-600/20 text-orange-400'
                         }`}>
                           {tool.type}

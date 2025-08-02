@@ -89,7 +89,7 @@ export default function HomePage() {
       <ParticleBackground />
       
       {/* Hero Section */}
-      <section className="section-spacing hero-gradient overflow-hidden relative z-10">
+      <section className="py-12 md:py-16 hero-gradient overflow-hidden relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
             ref={heroAnimation.elementRef}
@@ -100,10 +100,10 @@ export default function HomePage() {
               <span className="ml-1">creators learning together</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <AnimatedText delay={200} className="text-blue-400">Creating Content.</AnimatedText>{' '}
-              <AnimatedText delay={400} className="text-purple-400">Building Products.</AnimatedText>
+              <AnimatedText delay={200} className="text-blue-300 drop-shadow-lg">Creating Content.</AnimatedText>{' '}
+              <AnimatedText delay={400} className="text-purple-300 drop-shadow-lg">Building Products.</AnimatedText>
               <br />
-              <GradientText className="text-4xl md:text-6xl font-bold">
+              <GradientText className="text-4xl md:text-6xl font-bold drop-shadow-2xl" gradient="primary">
                 <AnimatedText delay={600}>Sharing My Journey.</AnimatedText>
               </GradientText>
             </h1>
