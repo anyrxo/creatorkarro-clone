@@ -865,8 +865,8 @@ export default function AIInfluencersPage() {
                     background="linear-gradient(135deg, #dc2626, #b91c1c)"
                     borderRadius="9999px"
                   >
-                    <span className="whitespace-nowrap text-2xl font-bold px-12 py-4">
-                      🔥 SECURE YOUR SPOT NOW - $<NumberTicker value={197} className="inline" /> 🔥
+                    <span className="text-xl md:text-2xl font-bold px-8 py-4 text-center block">
+                      🔥 SECURE YOUR SPOT NOW<br className="md:hidden" /> - $<NumberTicker value={197} className="inline" /> 🔥
                     </span>
                   </ShimmerButton>
                 </Link>

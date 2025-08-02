@@ -960,8 +960,8 @@ export default function DigitalProductsPage() {
               </p>
             </div>
             
-            <Link href="#pricing" className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4">
-              🚀 BUILD MY DIGITAL EMPIRE - $297 🚀
+            <Link href="#pricing" className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-8 rounded-2xl text-xl md:text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 text-center">
+              🚀 BUILD MY DIGITAL EMPIRE<br className="md:hidden" /> - $297 🚀
             </Link>
             
             <p className="text-sm text-gray-400 mb-6">
