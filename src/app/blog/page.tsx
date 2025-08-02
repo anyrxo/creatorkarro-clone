@@ -148,6 +148,171 @@ const newsArticles = [
     slug: "google-ai-studio-update-powerful-free-all-in-one-platform-developers-creators",
     keywords: ["google ai studio", "gemini 2.5 flash", "free ai development", "ai platform", "google ai models", "ai development tools"]
   },
+  {
+    title: "Dart AI: The Free Agentic Project Manager That Automates Everything",
+    category: "AI TOOLS",
+    categoryColor: "blue",
+    excerpt: "Dart AI revolutionizes project management with autonomous task execution, intelligent planning, and seamless team collaboration. Completely free with enterprise-grade features.",
+    description: "Complete guide to Dart AI - the free agentic project manager that automates workflows, manages tasks autonomously, and integrates with your entire tech stack.",
+    readTime: "17 min",
+    date: "2025-01-10",
+    slug: "dart-ai-free-agentic-project-manager",
+    keywords: ["dart ai", "agentic project manager", "free project management", "ai automation", "workflow automation"]
+  },
+  {
+    title: "DeepAgent Update: The God-Tier AI Agent That Can Build and Automate Almost Anything",
+    category: "AI AGENTS",
+    categoryColor: "purple",
+    excerpt: "DeepAgent's latest update brings god-tier capabilities for building and automating complex systems. From code generation to infrastructure management, it does everything.",
+    description: "Complete DeepAgent update guide - the AI agent that builds applications, automates workflows, and manages infrastructure with near-human intelligence.",
+    readTime: "20 min",
+    date: "2025-01-18",
+    slug: "deepagent-update-god-tier-ai-agent",
+    keywords: ["deepagent", "ai agent", "automation", "code generation", "infrastructure management"]
+  },
+  {
+    title: "Anthropic Launches Claude 4: A Strategic Pivot from Chatbots to Agentic Coding Infrastructure",
+    category: "AI NEWS",
+    categoryColor: "purple",
+    excerpt: "Anthropic's strategic shift towards agentic coding infrastructure with Claude 4, moving beyond traditional chatbot capabilities.",
+    description: "Analysis of Anthropic's Claude 4 launch and strategic pivot to agentic coding infrastructure.",
+    readTime: "10 min",
+    date: "2025-01-15",
+    slug: "anthropic-claude-4-agentic-coding-infrastructure",
+    keywords: ["anthropic", "claude 4", "agentic ai", "coding infrastructure", "ai development"]
+  },
+  {
+    title: "DeepSeek Unveils Revolutionary AI Advancements with the R2 Open-Source Model",
+    category: "TECH NEWS",
+    categoryColor: "green",
+    excerpt: "DeepSeek's groundbreaking R2 model pushes the boundaries of open-source AI with unprecedented performance improvements.",
+    description: "Comprehensive analysis of DeepSeek's R2 model and its revolutionary impact on open-source AI development.",
+    readTime: "14 min",
+    date: "2025-01-25",
+    slug: "deepseek-r2-open-source-model-revolutionary-ai",
+    keywords: ["deepseek", "r2 model", "open source ai", "ai advancement", "deepseek r2"]
+  },
+  {
+    title: "Manus AI: The First-Ever General AI Agent That Can Automate Your Life",
+    category: "AI AGENTS",
+    categoryColor: "blue",
+    excerpt: "Manus AI represents a breakthrough in general AI agents, capable of automating complex workflows across multiple platforms and applications.",
+    description: "Complete guide to Manus AI - the revolutionary general AI agent for comprehensive life automation.",
+    readTime: "16 min",
+    date: "2025-02-01",
+    slug: "manus-ai-first-general-ai-agent-automate-life",
+    keywords: ["manus ai", "general ai agent", "life automation", "ai workflow", "intelligent automation"]
+  },
+  {
+    title: "LLaMA 4: The Open-Source Powerhouse Redefining AI",
+    category: "OPEN SOURCE",
+    categoryColor: "green",
+    excerpt: "Meta's LLaMA 4 sets new standards for open-source AI with unprecedented performance and accessibility.",
+    description: "In-depth analysis of Meta's LLaMA 4 and its transformative impact on the open-source AI ecosystem.",
+    readTime: "18 min",
+    date: "2025-02-10",
+    slug: "llama-4-open-source-powerhouse-redefining-ai",
+    keywords: ["llama 4", "meta ai", "open source llm", "facebook ai", "large language model"]
+  },
+  {
+    title: "DeepSeek Janus Pro 7B: A Unified Multimodal Powerhouse",
+    category: "AI MODELS",
+    categoryColor: "purple",
+    excerpt: "DeepSeek's Janus Pro 7B combines vision and language processing in a unified architecture, delivering exceptional multimodal capabilities.",
+    description: "Comprehensive review of DeepSeek Janus Pro 7B - the unified multimodal AI model revolutionizing vision-language tasks.",
+    readTime: "15 min",
+    date: "2025-02-15",
+    slug: "deepseek-janus-pro-7b-unified-multimodal-powerhouse",
+    keywords: ["deepseek janus", "multimodal ai", "vision language model", "janus pro 7b", "unified architecture"]
+  },
+  {
+    title: "Full-Stack App Development with Gemini 2.0 Pro & Bolt.DIY",
+    category: "DEVELOPMENT",
+    categoryColor: "blue",
+    excerpt: "Build complete full-stack applications using Gemini 2.0 Pro and Bolt.DIY - a revolutionary combination for rapid development.",
+    description: "Step-by-step guide to full-stack development using Google's Gemini 2.0 Pro and Bolt.DIY platform.",
+    readTime: "22 min",
+    date: "2025-02-20",
+    slug: "full-stack-app-development-gemini-2-pro-bolt-diy",
+    keywords: ["gemini 2.0 pro", "bolt.diy", "full stack development", "rapid development", "ai development"]
+  },
+  {
+    title: "GPT-4.1 vs Claude Sonnet 3.7: Is OpenAI's Latest Model a Game-Changer?",
+    category: "AI COMPARISON",
+    categoryColor: "purple",
+    excerpt: "OpenAI's GPT-4.1 delivers impressive performance at 80% lower cost than Claude Sonnet 3.7. Real-world testing reveals surprising strengths.",
+    description: "Comprehensive comparison of GPT-4.1 and Claude Sonnet 3.7 performance, pricing, and use cases.",
+    readTime: "18 min",
+    date: "2025-04-14",
+    slug: "gpt-4-1-vs-claude-sonnet-3-7-comparison",
+    keywords: ["gpt 4.1", "claude sonnet 3.7", "ai model comparison", "openai", "anthropic"]
+  },
+  {
+    title: "Gemini 2.5 Flash: Google's Budget AI Model That Rivals the Giants",
+    category: "AI NEWS",
+    categoryColor: "blue",
+    excerpt: "Google's Gemini 2.5 Flash offers blazing speed and unbelievably low pricing at just $0.60/M output tokens while delivering performance that rivals models costing 10x more.",
+    description: "Complete review of Google Gemini 2.5 Flash - the budget AI model that delivers premium performance at 90% lower cost.",
+    readTime: "19 min",
+    date: "2025-04-20",
+    slug: "gemini-2-5-flash-budget-ai-model",
+    keywords: ["gemini 2.5 flash", "google gemini", "budget ai model", "cheap ai api", "gemini pricing"]
+  },
+  {
+    title: "Qwen 3: Alibaba's Open-Source LLM Leap",
+    category: "OPEN SOURCE",
+    categoryColor: "green",
+    excerpt: "Alibaba's Qwen 3 features 235B parameters with MoE architecture, outperforms GPT-4 in coding, beats LLaMA 4 in reasoning, and remains completely free under Apache 2.0 license.",
+    description: "Complete guide to Alibaba's Qwen 3 - the open-source LLM that's reshaping the AI landscape with superior performance and true commercial freedom.",
+    readTime: "22 min",
+    date: "2025-05-13",
+    slug: "qwen-3-alibaba-open-source-llm",
+    keywords: ["qwen 3", "alibaba qwen", "open source llm", "apache 2.0", "mixture of experts"]
+  },
+  {
+    title: "Revolutionizing Full-Stack Development: The New Composer Agent in Code LLM",
+    category: "AI TOOLS",
+    categoryColor: "purple",
+    excerpt: "Abacus AI's Composer Agent revolutionizes development by building complete full-stack applications from a single prompt. Multi-model AI support, autonomous coding, free trial available.",
+    description: "Complete guide to Composer Agent in Code LLM - the AI tool that generates full applications autonomously with advanced language models.",
+    readTime: "20 min",
+    date: "2025-03-02",
+    slug: "composer-agent-code-llm-full-stack",
+    keywords: ["composer agent", "code llm", "abacus ai", "full stack development", "autonomous coding"]
+  },
+  {
+    title: "RooCode v3.3 Update – A Cline Alternative",
+    category: "DEVELOPMENT TOOLS",
+    categoryColor: "green",
+    excerpt: "RooCode v3.3 emerges as a powerful alternative to Cline, offering enhanced features for modern development workflows.",
+    description: "Comprehensive review of RooCode v3.3 and how it compares to Cline for development automation.",
+    readTime: "13 min",
+    date: "2025-03-10",
+    slug: "roocode-v3-3-update-cline-alternative",
+    keywords: ["roocode", "cline alternative", "development tools", "coding assistant", "roocode v3.3"]
+  },
+  {
+    title: "The All-In-One RAG Platform for AI Document Parsing, Embeddings, and Vector Search",
+    category: "AI PLATFORMS",
+    categoryColor: "purple",
+    excerpt: "Revolutionary AI infrastructure platform combining intelligent document parsing, advanced embeddings, and lightning-fast vector search in one unified solution.",
+    description: "Complete guide to the all-in-one RAG platform transforming AI document processing and search capabilities.",
+    readTime: "14 min",
+    date: "2025-02-05",
+    slug: "vectorize-all-in-one-rag-platform",
+    keywords: ["rag platform", "document parsing", "vector search", "ai embeddings", "document ai"]
+  },
+  {
+    title: "The Future of AI Research: Exploring DeepSeek-R1 & Open-Source AI Research Tools",
+    category: "AI RESEARCH",
+    categoryColor: "green",
+    excerpt: "Discover how DeepSeek-R1 and Browser Use are revolutionizing AI research with 89% accuracy, unlimited queries, and complete open-source freedom.",
+    description: "Complete guide to DeepSeek-R1 and Browser Use - revolutionary open-source AI research tools that rival OpenAI Deep Research.",
+    readTime: "19 min",
+    date: "2025-01-03",
+    slug: "deepseek-r1-browser-use-ai-research",
+    keywords: ["deepseek r1", "browser use", "ai research tools", "open source ai", "deep research alternative"]
+  },
 ]
 
 const blogPosts = [
