@@ -242,7 +242,7 @@ export function ContentProtection({
 }
 
 // HOC for easy content protection
-export function withContentProtection<T extends {}>(
+export function withContentProtection<T extends Record<string, any>>(
   Component: React.ComponentType<T>,
   protectionOptions?: Partial<ContentProtectionProps>
 ) {

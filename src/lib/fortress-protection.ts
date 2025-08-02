@@ -53,7 +53,7 @@ export class DevToolsDetector {
     if (typeof window === 'undefined') return;
 
     // Method 1: Console debug detection
-    let devtools = { open: false, orientation: null };
+    const devtools = { open: false, orientation: null as string | null };
     const threshold = 160;
 
     setInterval(() => {
