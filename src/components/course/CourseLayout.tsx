@@ -229,7 +229,7 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
             {option.originalPrice && (
               <div className="flex items-center justify-center space-x-3 mb-2">
                 <span className="text-gray-400 line-through text-2xl">{option.originalPrice}</span>
-                {!option.disabled && <span className="text-green-400 font-bold text-lg">Save {option.originalPrice.replace('$', '').replace(',', '') - option.price.replace('$', '').replace(',', '') > 0 ? `$${option.originalPrice.replace('$', '').replace(',', '') - option.price.replace('$', '').replace(',', '')}` : ''}!</span>}
+                {!option.disabled && <span className="text-green-400 font-bold text-lg">Save {parseInt(option.originalPrice.replace('$', '').replace(',', '')) - parseInt(option.price.replace('$', '').replace(',', '')) > 0 ? `$${parseInt(option.originalPrice.replace('$', '').replace(',', '')) - parseInt(option.price.replace('$', '').replace(',', ''))}` : ''}!</span>}
               </div>
             )}
             

@@ -78,7 +78,7 @@ export default function EnhancedButton({
     <Component
       ref={buttonRef as any}
       className={baseStyles}
-      onClick={href ? undefined : handleClick}
+      onClick={href ? undefined : (handleClick as any)}
       href={href}
       disabled={disabled || loading}
     >

@@ -96,7 +96,7 @@ export default function HomePage() {
             className={`text-center max-w-4xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
             <div className="inline-block px-4 py-2 bg-zinc-800/80 backdrop-blur-sm rounded-full text-sm text-gray-300 mb-8 border border-zinc-700/50">
-              <AnimatedText animation="counter" countTo={communitySize} suffix="+" className="text-blue-400 font-semibold">{communitySize}+</AnimatedText>
+              <AnimatedText animation="counter" countTo={communitySize} suffix="+" className="text-blue-400 font-semibold">0</AnimatedText>
               <span className="ml-1">creators learning together</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">

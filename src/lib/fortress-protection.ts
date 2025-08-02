@@ -29,7 +29,7 @@ export const generateBrowserFingerprint = (): string => {
     screen.width + 'x' + screen.height,
     new Date().getTimezoneOffset(),
     navigator.hardwareConcurrency,
-    navigator.deviceMemory,
+    (navigator as any).deviceMemory || 'unknown',
     canvas.toDataURL(),
     navigator.plugins.length,
     Object.keys(window).length,

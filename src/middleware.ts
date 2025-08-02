@@ -23,7 +23,7 @@ function getRealIP(request: NextRequest): string {
   if (forwarded) return forwarded.split(',')[0].trim();
   if (realIP) return realIP;
   
-  return request.ip || 'unknown';
+  return 'unknown';
 }
 
 function isBlocked(ip: string): boolean {
