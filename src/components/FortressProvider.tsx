@@ -14,104 +14,75 @@ export function FortressProvider({ children }: FortressProviderProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Initial bot detection
-    const userAgent = navigator.userAgent;
-    const headers = {
-      'accept': navigator.userAgent.includes('Chrome') ? 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' : '',
-      'accept-language': navigator.language,
-      'accept-encoding': 'gzip, deflate, br'
-    };
-
-    // Check if this is a bot
-    if (detectBotPatterns(userAgent, headers)) {
+    // Much more lenient bot detection - only block obvious bots
+    const userAgent = navigator.userAgent.toLowerCase();
+    
+    // Only block the most obvious scraping tools
+    const scrapingTools = ['curl', 'wget', 'scrapy', 'beautifulsoup'];
+    const isScrapingTool = scrapingTools.some(tool => userAgent.includes(tool));
+    
+    // Only block obvious scraping tools with no browser headers
+    if (isScrapingTool) {
       setIsBlocked(true);
       setIsLoading(false);
       return;
     }
 
-    // Initialize fortress protection
-    const fortressInstance = new FortressProtection();
-    setFortress(fortressInstance);
-
-    // Log this request
-    const fingerprint = generateBrowserFingerprint();
-    fortressInstance.logRequest({
-      userAgent: navigator.userAgent,
-      ip: 'client-side', // Will be enriched server-side
-      path: window.location.pathname
-    });
+    // Skip fortress protection initialization for normal users
+    // const fortressInstance = new FortressProtection();
+    // setFortress(fortressInstance);
 
     setIsLoading(false);
 
     // Cleanup on unmount
-    return () => {
-      fortressInstance.destroy();
-    };
+    // return () => {
+    //   fortressInstance.destroy();
+    // };
   }, []);
 
   // Advanced anti-scraping measures
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    // Disable common scraping methods
+    // Minimal keyboard restrictions - only prevent page saving
     const disableKeyboardShortcuts = (e: KeyboardEvent) => {
-      // Disable Ctrl+A (Select All)
-      if (e.ctrlKey && e.key === 'a') {
+      // Only disable Ctrl+S (Save page)
+      if (e.ctrlKey && e.key.toLowerCase() === 's') {
         e.preventDefault();
         return false;
       }
-      
-      // Disable Ctrl+S (Save)
-      if (e.ctrlKey && e.key === 's') {
-        e.preventDefault();
-        return false;
-      }
-      
-      // Disable Ctrl+P (Print)
-      if (e.ctrlKey && e.key === 'p') {
-        e.preventDefault();
-        return false;
-      }
+      // All other shortcuts are allowed for normal user experience
     };
 
     document.addEventListener('keydown', disableKeyboardShortcuts);
     
-    // Disable text selection via mouse
+    // Allow normal text selection - only disable for certain elements
     const disableSelection = (e: Event) => {
       if (e.target instanceof HTMLElement) {
         const tagName = e.target.tagName.toLowerCase();
-        if (!['input', 'textarea'].includes(tagName)) {
+        // Allow selection everywhere except specifically protected content
+        if (e.target.classList.contains('no-select')) {
           e.preventDefault();
           return false;
         }
       }
     };
 
+    // Make selection disabling opt-in rather than default
     document.addEventListener('selectstart', disableSelection);
 
-    // Monitor for automation tools
-    const checkForAutomation = () => {
-      // Check for common automation properties
-      const automationIndicators = [
-        'webdriver' in navigator,
-        'callPhantom' in window,
-        '_phantom' in window,
-        'Buffer' in window,
-        'spawn' in window,
-        'emit' in window,
-      ];
+    // Disable automation detection for normal user experience
+    // const checkForAutomation = () => {
+    //   // Automation detection disabled to prevent blocking normal users
+    // };
 
-      if (automationIndicators.some(indicator => indicator)) {
-        setIsBlocked(true);
-      }
-    };
-
-    const automationCheck = setInterval(checkForAutomation, 5000);
+    // Disable automation checks for better user experience
+    // const automationCheck = setInterval(checkForAutomation, 30000);
 
     return () => {
       document.removeEventListener('keydown', disableKeyboardShortcuts);
       document.removeEventListener('selectstart', disableSelection);
-      clearInterval(automationCheck);
+      // clearInterval(automationCheck);
     };
   }, []);
 
@@ -121,20 +92,28 @@ export function FortressProvider({ children }: FortressProviderProps) {
 
     const style = document.createElement('style');
     style.textContent = `
-      /* Advanced content protection */
+      /* Allow normal text selection for better UX */
       ::selection {
-        background: transparent !important;
+        background: rgba(59, 130, 246, 0.3) !important;
       }
       
       ::-moz-selection {
-        background: transparent !important;
+        background: rgba(59, 130, 246, 0.3) !important;
       }
       
-      /* Disable drag and drop */
-      * {
+      /* Only disable drag for images and specific elements */
+      img, .no-drag {
         -webkit-user-drag: none !important;
         -moz-user-drag: none !important;
         user-drag: none !important;
+      }
+      
+      /* Only disable selection for specifically marked content */
+      .no-select {
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
       }
       
       /* Hide content from print */
@@ -154,46 +133,25 @@ export function FortressProvider({ children }: FortressProviderProps) {
         }
       }
       
-      /* Anti-screenshot overlay */
-      .fortress-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: 999998;
-        background: repeating-linear-gradient(
-          45deg,
-          transparent,
-          transparent 10px,
-          rgba(255,255,255,0.01) 10px,
-          rgba(255,255,255,0.01) 20px
-        );
-      }
+      /* Removed anti-screenshot overlay for better user experience */
     `;
     document.head.appendChild(style);
 
-    // Add invisible overlay to prevent screenshots
-    const overlay = document.createElement('div');
-    overlay.className = 'fortress-overlay';
-    document.body.appendChild(overlay);
+    // Remove invisible overlay - it was preventing normal use
+    // const overlay = document.createElement('div');
+    // overlay.className = 'fortress-overlay';
+    // document.body.appendChild(overlay);
 
     return () => {
       document.head.removeChild(style);
-      document.body.removeChild(overlay);
+      // document.body.removeChild(overlay);
     };
   }, []);
 
+  // Remove loading screen - let users access the site immediately
   if (isLoading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Initializing security protocols...</p>
-        </div>
-      </div>
-    );
+    // Show content immediately, security checks happen in background
+    return <>{children}</>;
   }
 
   if (isBlocked) {
