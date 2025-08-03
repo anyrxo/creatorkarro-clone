@@ -24,6 +24,9 @@ export default function BlogComments({ postSlug, comments, commentCount }: BlogC
   const [showComments, setShowComments] = useState(false)
   const [sortBy, setSortBy] = useState<'top' | 'newest' | 'oldest'>('top')
   const [expandedReplies, setExpandedReplies] = useState<Set<string>>(new Set())
+  const [likedComments, setLikedComments] = useState<Set<string>>(new Set())
+  const [commentLikes, setCommentLikes] = useState<Record<string, number>>({})
+  const [replyingTo, setReplyingTo] = useState<string | null>(null)
 
   const toggleReplies = (commentId: string) => {
     const newExpanded = new Set(expandedReplies)
@@ -33,6 +36,33 @@ export default function BlogComments({ postSlug, comments, commentCount }: BlogC
       newExpanded.add(commentId)
     }
     setExpandedReplies(newExpanded)
+  }
+
+  const toggleLike = (commentId: string, currentLikes: number) => {
+    const newLikedComments = new Set(likedComments)
+    const newCommentLikes = { ...commentLikes }
+    
+    if (likedComments.has(commentId)) {
+      // Unlike
+      newLikedComments.delete(commentId)
+      newCommentLikes[commentId] = (newCommentLikes[commentId] || currentLikes) - 1
+    } else {
+      // Like
+      newLikedComments.add(commentId)
+      newCommentLikes[commentId] = (newCommentLikes[commentId] || currentLikes) + 1
+    }
+    
+    setLikedComments(newLikedComments)
+    setCommentLikes(newCommentLikes)
+  }
+
+  const startReply = (commentId: string) => {
+    setReplyingTo(commentId)
+    // Scroll to the comment section
+    const commentElement = document.getElementById(`comment-${commentId}`)
+    if (commentElement) {
+      commentElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
   }
 
   const formatTimeAgo = (timestamp: string) => {
@@ -61,52 +91,68 @@ export default function BlogComments({ postSlug, comments, commentCount }: BlogC
     })
   }
 
-  const CommentItem = ({ comment, isReply = false }: { comment: Comment, isReply?: boolean }) => (
-    <div className={`${isReply ? 'ml-8 border-l-2 border-gray-700 pl-4' : ''} mb-6`}>
-      <div className="flex items-start gap-3">
-        {/* Avatar */}
-        <div className="flex-shrink-0">
-          {comment.avatar ? (
-            <img 
-              src={comment.avatar} 
-              alt={comment.username}
-              className="w-8 h-8 rounded-full object-cover"
-            />
-          ) : (
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
-              <User className="w-4 h-4 text-white" />
+  const CommentItem = ({ comment, isReply = false }: { comment: Comment, isReply?: boolean }) => {
+    const currentLikes = commentLikes[comment.id] || comment.likes
+    const isLiked = likedComments.has(comment.id)
+    
+    return (
+      <div id={`comment-${comment.id}`} className={`${isReply ? 'ml-8 border-l-2 border-gray-700 pl-4' : ''} mb-6`}>
+        <div className="flex items-start gap-3">
+          {/* Avatar */}
+          <div className="flex-shrink-0">
+            {comment.avatar ? (
+              <img 
+                src={comment.avatar} 
+                alt={comment.username}
+                className="w-8 h-8 rounded-full object-cover"
+              />
+            ) : (
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
+                <User className="w-4 h-4 text-white" />
+              </div>
+            )}
+          </div>
+
+          <div className="flex-1 min-w-0">
+            {/* Header */}
+            <div className="flex items-center gap-2 mb-2">
+              <span className="font-semibold text-white text-sm">
+                {comment.username}
+                {comment.isOP && (
+                  <span className="ml-2 bg-blue-600 text-white px-2 py-0.5 rounded text-xs font-medium">OP</span>
+                )}
+              </span>
+              <span className="text-gray-400 text-xs">•</span>
+              <span className="text-gray-400 text-xs">{formatTimeAgo(comment.timestamp)}</span>
             </div>
-          )}
-        </div>
 
-        <div className="flex-1 min-w-0">
-          {/* Header */}
-          <div className="flex items-center gap-2 mb-2">
-            <span className="font-semibold text-white text-sm">
-              {comment.username}
-              {comment.isOP && (
-                <span className="ml-2 bg-blue-600 text-white px-2 py-0.5 rounded text-xs font-medium">OP</span>
+            {/* Content */}
+            <div className="text-gray-300 text-sm leading-relaxed mb-3">
+              {comment.content}
+            </div>
+
+            {/* Actions */}
+            <div className="flex items-center gap-4 text-xs">
+              <button 
+                onClick={() => toggleLike(comment.id, comment.likes)}
+                className={`flex items-center gap-1 transition-colors ${
+                  isLiked ? 'text-red-400' : 'text-gray-400 hover:text-red-400'
+                }`}
+              >
+                <Heart className={`w-3 h-3 ${isLiked ? 'fill-current' : ''}`} />
+                <span>{currentLikes}</span>
+              </button>
+              {!isReply && (
+                <button 
+                  onClick={() => startReply(comment.id)}
+                  className={`flex items-center gap-1 transition-colors ${
+                    replyingTo === comment.id ? 'text-blue-400' : 'text-gray-400 hover:text-blue-400'
+                  }`}
+                >
+                  <Reply className="w-3 h-3" />
+                  <span>Reply</span>
+                </button>
               )}
-            </span>
-            <span className="text-gray-400 text-xs">•</span>
-            <span className="text-gray-400 text-xs">{formatTimeAgo(comment.timestamp)}</span>
-          </div>
-
-          {/* Content */}
-          <div className="text-gray-300 text-sm leading-relaxed mb-3">
-            {comment.content}
-          </div>
-
-          {/* Actions */}
-          <div className="flex items-center gap-4 text-xs">
-            <button className="flex items-center gap-1 text-gray-400 hover:text-red-400 transition-colors">
-              <Heart className="w-3 h-3" />
-              <span>{comment.likes}</span>
-            </button>
-            <button className="flex items-center gap-1 text-gray-400 hover:text-blue-400 transition-colors">
-              <Reply className="w-3 h-3" />
-              <span>Reply</span>
-            </button>
             {comment.replies.length > 0 && (
               <button 
                 onClick={() => toggleReplies(comment.id)}
@@ -133,10 +179,23 @@ export default function BlogComments({ postSlug, comments, commentCount }: BlogC
               ))}
             </div>
           )}
+          
+          {/* Reply Form */}
+          {replyingTo === comment.id && (
+            <div className="mt-4 pt-4 border-t border-gray-700">
+              <CommentSubmissionForm 
+                postSlug={postSlug} 
+                parentCommentId={comment.id}
+                onCancel={() => setReplyingTo(null)}
+                isReply={true}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
-  )
+    )
+  }
 
   return (
     <section className="mt-16 border-t border-gray-800 pt-12">
@@ -199,7 +258,17 @@ export default function BlogComments({ postSlug, comments, commentCount }: BlogC
 }
 
 // Comment Submission Form with Spam Protection
-function CommentSubmissionForm({ postSlug }: { postSlug: string }) {
+function CommentSubmissionForm({ 
+  postSlug, 
+  parentCommentId = null, 
+  onCancel = null, 
+  isReply = false 
+}: { 
+  postSlug: string
+  parentCommentId?: string | null
+  onCancel?: (() => void) | null
+  isReply?: boolean
+}) {
   const [comment, setComment] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)

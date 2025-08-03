@@ -444,8 +444,20 @@ function generateContextualCommentForPost(post, isReply = false) {
 
 // Generate comments for a specific blog post
 function generateCommentsForPost(post) {
-  // Generate 4-9 main comments (more variety)
-  const commentCount = Math.floor(Math.random() * 6) + 4;
+  // Age-based comment distribution
+  const postDate = new Date(post.date);
+  const now = new Date();
+  const daysSincePublish = Math.floor((now.getTime() - postDate.getTime()) / (1000 * 60 * 60 * 24));
+  
+  // Older posts get more comments
+  let baseComments = 4;
+  if (daysSincePublish > 60) baseComments = 8;      // 2+ months: 8-15 comments
+  else if (daysSincePublish > 30) baseComments = 6; // 1+ months: 6-12 comments  
+  else if (daysSincePublish > 14) baseComments = 5; // 2+ weeks: 5-10 comments
+  else if (daysSincePublish > 7) baseComments = 4;  // 1+ weeks: 4-8 comments
+  else baseComments = 2; // New posts: 2-6 comments
+  
+  const commentCount = Math.floor(Math.random() * 6) + baseComments;
   const comments = [];
   
   for (let i = 0; i < commentCount; i++) {
