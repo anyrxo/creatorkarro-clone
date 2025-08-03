@@ -74,57 +74,67 @@ export default function BlogPage() {
             </ScrollAnimation>
           </div>
 
-          {/* Search and Filter with Beautiful Styling */}
+          {/* Category Filters */}
           <ScrollAnimation animation="fade-up" delay={800}>
-            <div className="flex flex-col lg:flex-row gap-6 mb-12">
-              <div className="relative flex-1 max-w-2xl">
-                <div className="relative">
-                  <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 z-10" />
+            <div className="flex flex-wrap gap-3 justify-center mb-8">
+              {displayCategories.map((category, index) => (
+                <ScrollAnimation 
+                  key={category} 
+                  animation="fade-up" 
+                  delay={900 + index * 50}
+                  className="inline-block"
+                >
+                  <button
+                    onClick={() => setSelectedCategory(category)}
+                    className={`px-6 py-3 rounded-xl transition-all duration-300 text-sm font-medium border transform hover:scale-105 ${
+                      selectedCategory === category
+                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white border-blue-500/50 shadow-lg shadow-blue-500/25'
+                        : 'bg-gray-800/60 text-gray-300 hover:bg-gray-700/60 border-gray-600/50 hover:border-gray-500/50 backdrop-blur-sm'
+                    }`}
+                  >
+                    {category}
+                  </button>
+                </ScrollAnimation>
+              ))}
+            </div>
+          </ScrollAnimation>
+
+          {/* Search Box with Gradient Flow Effect */}
+          <ScrollAnimation animation="fade-up" delay={1000}>
+            <div className="relative max-w-3xl mx-auto mb-12">
+              <div className="relative group">
+                {/* Gradient background that shows on focus */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 blur-sm"></div>
+                
+                {/* Search input container */}
+                <div className="relative bg-gray-900/90 backdrop-blur-sm rounded-xl border border-gray-700/50 group-focus-within:border-transparent transition-all duration-300">
+                  <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-400 w-6 h-6 z-10 transition-colors duration-300" />
                   <input
                     type="text"
                     placeholder="Search articles, topics, or tags..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-14 pr-12 py-4 bg-gray-800/80 border border-gray-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 hover:border-gray-500/50 transition-all duration-300 text-base backdrop-blur-sm"
+                    className="w-full pl-16 pr-14 py-5 bg-transparent text-white placeholder-gray-400 focus:outline-none text-lg rounded-xl"
                   />
                   {searchTerm && (
                     <button
                       onClick={() => setSearchTerm('')}
-                      className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200 text-lg"
+                      className="absolute right-5 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200 text-xl font-light w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-700/50"
                     >
                       ×
                     </button>
                   )}
                 </div>
-              </div>
-              
-              <div className="flex flex-wrap gap-3 lg:justify-start justify-center">
-                {displayCategories.map((category, index) => (
-                  <ScrollAnimation 
-                    key={category} 
-                    animation="fade-up" 
-                    delay={900 + index * 50}
-                    className="inline-block"
-                  >
-                    <button
-                      onClick={() => setSelectedCategory(category)}
-                      className={`px-4 py-2.5 rounded-lg transition-all duration-300 text-sm font-medium border transform hover:scale-105 ${
-                        selectedCategory === category
-                          ? 'bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/25'
-                          : 'bg-gray-800/60 text-gray-300 hover:bg-gray-700/60 border-gray-600/50 hover:border-gray-500/50 backdrop-blur-sm'
-                      }`}
-                    >
-                      {category}
-                    </button>
-                  </ScrollAnimation>
-                ))}
+                
+                {/* Animated gradient border */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-20 transition-opacity duration-500"></div>
               </div>
             </div>
           </ScrollAnimation>
 
           {/* Featured Posts with Beautiful TiltCard Animation - Only show when no search/filter */}
           {searchTerm === '' && selectedCategory === 'All' && featuredPosts.length > 0 && (
-            <ScrollAnimation animation="fade-up" delay={1000}>
+            <ScrollAnimation animation="fade-up" delay={1200}>
               <div className="mb-16">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="p-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg">
@@ -223,7 +233,7 @@ export default function BlogPage() {
           )}
 
           {/* All Posts with Beautiful Grid Layout */}
-          <ScrollAnimation animation="fade-up" delay={1200}>
+          <ScrollAnimation animation="fade-up" delay={1400}>
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-8">
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
@@ -256,7 +266,7 @@ export default function BlogPage() {
               ) : (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {filteredPosts.map((post, index) => (
-                    <ScrollAnimation key={post.slug} animation="fade-up" delay={1200 + index * 100}>
+                    <ScrollAnimation key={post.slug} animation="fade-up" delay={1400 + index * 100}>
                       <TiltCard className="h-full">
                         <Link href={`/blog/${post.slug}`}>
                           <SpotlightCard 
@@ -364,7 +374,7 @@ export default function BlogPage() {
           </ScrollAnimation>
 
           {/* Beautiful CTA Section */}
-          <ScrollAnimation animation="fade-up" delay={1400}>
+          <ScrollAnimation animation="fade-up" delay={1600}>
             <SpotlightCard 
               className="bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 backdrop-blur-sm border border-blue-600/30 rounded-2xl p-8 text-center mt-16 relative overflow-hidden"
               spotlightColor="rgba(59, 130, 246, 0.4)"
