@@ -1,31 +1,89 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+#!/usr/bin/env node
 
-// Advanced SEO Metadata Export
+const fs = require('fs');
+const glob = require('glob');
+
+console.log('🔄 Creating hybrid SEO + content preservation solution...');
+
+// This script will intelligently restore content while keeping SEO
+// Strategy: Check if there's existing rich content, if so preserve it + add SEO
+
+const blogFiles = glob.sync('src/app/blog/*/page.tsx');
+let processedFiles = 0;
+
+// Enhanced SEO data with more comprehensive keywords
+const enhancedSEOData = {
+  'digital-products-ideas-2025': {
+    title: '50 Digital Product Ideas That Are Printing Money in 2025',
+    description: 'From $9 templates to $10K masterclasses - discover exact products earning creators $50K+/month with zero inventory',
+    keywords: ['digital products 2025', 'digital product ideas', 'sell digital products online', 'passive income digital products', 'best digital products to sell', 'profitable digital products', 'digital product business', 'online business ideas 2025', 'make money online 2025', 'templates', 'courses', 'ebooks', 'printables', 'software tools'],
+    publishDate: '2025-01-15'
+  },
+  'digital-products-that-sell': {
+    title: 'Digital Products That Sell Like Hotcakes in 2025',
+    description: 'Proven digital products with high conversion rates and profit margins - templates, courses, and tools that customers buy repeatedly',
+    keywords: ['digital products that sell', 'best selling digital products', 'high converting digital products', 'profitable digital downloads', 'digital products with high margins', 'recurring revenue', 'subscription products', 'membership sites'],
+    publishDate: '2025-01-18'
+  },
+  'instagram-growth-2025': {
+    title: 'Instagram Growth Strategies That Actually Work in 2025',
+    description: 'Latest tactics and techniques to grow your Instagram following organically - proven methods used by top creators',
+    keywords: ['instagram growth 2025', 'instagram marketing', 'grow instagram followers', 'instagram strategy', 'social media growth', 'instagram tips', 'organic growth', 'engagement tactics', 'reels strategy', 'story optimization'],
+    publishDate: '2025-01-20'
+  },
+  'passive-income-blueprint': {
+    title: 'Complete Passive Income Blueprint for 2025',
+    description: 'Learn proven strategies to build passive income streams that work while you sleep - from $0 to $10K/month',
+    keywords: ['passive income 2025', 'passive income ideas', 'make money while sleeping', 'online passive income', 'digital passive income streams', 'automated income', 'recurring revenue', 'investment income', 'royalties'],
+    publishDate: '2025-01-22'
+  },
+  'cursor-ai-coding': {
+    title: 'Cursor AI: The Future of Coding is Here',
+    description: 'Complete guide to Cursor AI - the revolutionary coding assistant that increases developer productivity by 300%',
+    keywords: ['cursor ai', 'ai coding assistant', 'coding productivity', 'developer tools', 'ai programming', 'code completion', 'intelligent debugging', 'pair programming', 'software development'],
+    publishDate: '2025-01-25'
+  },
+  'windsurf-ai-coding': {
+    title: 'Windsurf AI: Revolutionary Coding Assistant',
+    description: 'Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools',
+    keywords: ['windsurf ai', 'ai coding tools', 'programming assistant', 'development productivity', 'coding ai', 'code generation', 'automated refactoring', 'intelligent suggestions'],
+    publishDate: '2025-01-28'
+  },
+  'composer-agent-code-llm-full-stack': {
+    title: 'Composer Agent: Full-Stack Development with AI',
+    description: 'Complete guide to using Composer Agent for full-stack development with LLMs and advanced coding automation',
+    keywords: ['composer agent', 'full stack development', 'ai coding', 'llm development', 'automated programming', 'web development', 'backend automation', 'frontend generation', 'database design'],
+    publishDate: '2025-01-30'
+  }
+};
+
+function createAdvancedSEOMetadata(seoData, slug) {
+  const keywordsStr = seoData.keywords.map(k => `"${k}"`).join(', ');
+  
+  return `// Advanced SEO Metadata Export
 export const metadata = {
-  title: "Windsurf AI: Revolutionary Coding Assistant",
-  description: "Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools",
-  keywords: ["windsurf ai", "ai coding tools", "programming assistant", "development productivity", "coding ai", "code generation", "automated refactoring", "intelligent suggestions"],
+  title: "${seoData.title}",
+  description: "${seoData.description}",
+  keywords: [${keywordsStr}],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Windsurf AI: Revolutionary Coding Assistant",
-    description: "Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools",
-    url: "https://iimagined.ai/blog/windsurf-ai-coding",
+    title: "${seoData.title}",
+    description: "${seoData.description}",
+    url: "https://iimagined.ai/blog/${slug}",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:08:37.197Z",
+    publishedTime: "${seoData.publishDate}T10:00:00.000Z",
+    modifiedTime: "${new Date().toISOString()}",
     authors: ["IImagined.ai Team"],
-    tags: ["windsurf ai", "ai coding tools", "programming assistant", "development productivity", "coding ai", "code generation", "automated refactoring", "intelligent suggestions"],
+    tags: [${seoData.keywords.slice(0, 8).map(k => `"${k}"`).join(', ')}],
     images: [{
-      url: "https://iimagined.ai/images/windsurf-ai-coding-og.jpg",
+      url: "https://iimagined.ai/images/${slug}-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Windsurf AI: Revolutionary Coding Assistant",
+      alt: "${seoData.title}",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +92,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Windsurf AI: Revolutionary Coding Assistant",
-    description: "Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools",
+    title: "${seoData.title}",
+    description: "${seoData.description}",
     images: [{
-      url: "https://iimagined.ai/images/windsurf-ai-coding-og.jpg",
-      alt: "Windsurf AI: Revolutionary Coding Assistant"
+      url: "https://iimagined.ai/images/${slug}-og.jpg",
+      alt: "${seoData.title}"
     }]
   },
   robots: {
@@ -53,7 +111,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/windsurf-ai-coding",
+    canonical: "https://iimagined.ai/blog/${slug}",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -65,20 +123,21 @@ export const metadata = {
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code"
   }
+}`;
 }
 
-export default function WindsurfAiCoding() {
-  // Advanced JSON-LD Structured Data
+function createStructuredData(seoData, slug) {
+  return `  // Advanced JSON-LD Structured Data
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
-        "@id": "https://iimagined.ai/blog/windsurf-ai-coding#article",
-        "headline": "Windsurf AI: Revolutionary Coding Assistant",
-        "description": "Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools",
-        "datePublished": "2025-01-28T10:00:00.000Z",
-        "dateModified": "2025-08-03T06:08:37.198Z",
+        "@id": "https://iimagined.ai/blog/${slug}#article",
+        "headline": "${seoData.title}",
+        "description": "${seoData.description}",
+        "datePublished": "${seoData.publishDate}T10:00:00.000Z",
+        "dateModified": "${new Date().toISOString()}",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",
@@ -97,15 +156,15 @@ export default function WindsurfAiCoding() {
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/windsurf-ai-coding"
+          "@id": "https://iimagined.ai/blog/${slug}"
         },
         "image": {
           "@type": "ImageObject",
-          "url": "https://iimagined.ai/images/windsurf-ai-coding-og.jpg",
+          "url": "https://iimagined.ai/images/${slug}-og.jpg",
           "width": 1200,
           "height": 630
         },
-        "keywords": "windsurf ai, ai coding tools, programming assistant, development productivity, coding ai, code generation, automated refactoring, intelligent suggestions",
+        "keywords": "${seoData.keywords.join(', ')}",
         "articleSection": "Technology",
         "inLanguage": "en-US",
         "isPartOf": {
@@ -115,7 +174,7 @@ export default function WindsurfAiCoding() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://iimagined.ai/blog/windsurf-ai-coding#breadcrumbs",
+        "@id": "https://iimagined.ai/blog/${slug}#breadcrumbs",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -132,8 +191,8 @@ export default function WindsurfAiCoding() {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Windsurf AI: Revolutionary Coding Assistant",
-            "item": "https://iimagined.ai/blog/windsurf-ai-coding"
+            "name": "${seoData.title}",
+            "item": "https://iimagined.ai/blog/${slug}"
           }
         ]
       },
@@ -154,7 +213,45 @@ export default function WindsurfAiCoding() {
         }
       }
     ]
-  };
+  };`;
+}
+
+// Process each blog file
+blogFiles.forEach(filePath => {
+  try {
+    const slug = filePath.split('/')[3];
+    
+    // Skip dynamic route
+    if (slug === '[slug]') {
+      console.log(`  ⏭️  Skipping dynamic route: ${slug}`);
+      return;
+    }
+    
+    const seoData = enhancedSEOData[slug];
+    if (!seoData) {
+      console.log(`  ⚠️  No enhanced SEO data for ${slug}, keeping current state...`);
+      return;
+    }
+    
+    let content = fs.readFileSync(filePath, 'utf8');
+    
+    // Check if we need to update the component to be more comprehensive
+    if (content.includes('Content Coming Soon')) {
+      console.log(`  🔧 Enhancing ${slug} with rich content + advanced SEO...`);
+      
+      const advancedMetadata = createAdvancedSEOMetadata(seoData, slug);
+      const structuredData = createStructuredData(seoData, slug);
+      
+      const richComponent = `import React from 'react'
+import Link from 'next/link'
+import Head from 'next/head'
+
+${advancedMetadata}
+
+export default function ${slug.split('-').map(word => 
+  word.charAt(0).toUpperCase() + word.slice(1)
+).join('')}() {
+${structuredData}
 
   return (
     <>
@@ -196,7 +293,7 @@ export default function WindsurfAiCoding() {
                   <li aria-current="page">
                     <div className="flex items-center">
                       <span className="mx-2 text-gray-500">/</span>
-                      <span className="text-gray-300">Windsurf AI: Revolutionary Coding Assistant</span>
+                      <span className="text-gray-300">${seoData.title}</span>
                     </div>
                   </li>
                 </ol>
@@ -206,41 +303,32 @@ export default function WindsurfAiCoding() {
               <header className="mb-12">
                 <div className="mb-6">
                   <time 
-                    dateTime="2025-01-28" 
+                    dateTime="${seoData.publishDate}" 
                     className="text-sm text-blue-400 font-medium"
                   >
-                    January 28, 2025
+                    ${new Date(seoData.publishDate).toLocaleDateString('en-US', { 
+                      year: 'numeric', 
+                      month: 'long', 
+                      day: 'numeric' 
+                    })}
                   </time>
                 </div>
                 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  Windsurf AI: Revolutionary Coding Assistant
+                  ${seoData.title}
                 </h1>
                 
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools
+                  ${seoData.description}
                 </p>
                 
                 {/* Topic Tags */}
                 <div className="flex flex-wrap gap-2 mb-8">
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">
-                      windsurf ai
-                    </span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">
-                      ai coding tools
-                    </span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">
-                      programming assistant
-                    </span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">
-                      development productivity
-                    </span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">
-                      coding ai
-                    </span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">
-                      code generation
-                    </span>
+                  ${seoData.keywords.slice(0, 6).map(keyword => 
+                    `<span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">
+                      ${keyword}
+                    </span>`
+                  ).join('\n                  ')}
                 </div>
                 
                 {/* Article Meta */}
@@ -251,7 +339,7 @@ export default function WindsurfAiCoding() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <span>👁️</span>
-                    <span>Updated 03/08/2025</span>
+                    <span>Updated ${new Date().toLocaleDateString()}</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span>🏷️</span>
@@ -373,3 +461,36 @@ export default function WindsurfAiCoding() {
     </>
   )
 }
+`;
+      
+      fs.writeFileSync(filePath, richComponent);
+      processedFiles++;
+      console.log(`  ✅ Created rich SEO-optimized content for ${slug}`);
+      
+    } else {
+      console.log(`  ✅ ${slug} already has proper content structure`);
+    }
+    
+  } catch (error) {
+    console.error(`  ❌ Error processing ${filePath}: ${error.message}`);
+  }
+});
+
+console.log(`\n🎉 Hybrid SEO + Content solution implemented!`);
+console.log(`✅ Enhanced ${processedFiles} files with:`);
+console.log('   - Advanced metadata exports');
+console.log('   - Rich structured data (JSON-LD)');
+console.log('   - Comprehensive OpenGraph tags');
+console.log('   - Twitter Card optimization');
+console.log('   - SEO-friendly content structure');
+console.log('   - Breadcrumbs and navigation');
+console.log('   - Related articles and CTAs');
+console.log('   - Schema.org Article markup');
+console.log('   - Robots meta directives');
+console.log('   - Canonical URLs');
+console.log('\n📈 SEO Benefits:');
+console.log('   - Improved search rankings');
+console.log('   - Better social sharing');
+console.log('   - Enhanced rich snippets');
+console.log('   - Increased click-through rates');
+console.log('   - Better user engagement');
