@@ -99,35 +99,37 @@ export default function BlogPage() {
             </div>
           </ScrollAnimation>
 
-          {/* Search Box with Gradient Flow Effect */}
+          {/* Search Box with Gradient Flow Effect - Positioned Below Filters */}
           <ScrollAnimation animation="fade-up" delay={1000}>
-            <div className="relative max-w-3xl mx-auto mb-12">
-              <div className="relative group">
-                {/* Gradient background that shows on focus */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 blur-sm"></div>
-                
-                {/* Search input container */}
-                <div className="relative bg-gray-900/90 backdrop-blur-sm rounded-xl border border-gray-700/50 group-focus-within:border-transparent transition-all duration-300">
-                  <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-400 w-6 h-6 z-10 transition-colors duration-300" />
-                  <input
-                    type="text"
-                    placeholder="Search articles, topics, or tags..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-16 pr-14 py-5 bg-transparent text-white placeholder-gray-400 focus:outline-none text-lg rounded-xl"
-                  />
-                  {searchTerm && (
-                    <button
-                      onClick={() => setSearchTerm('')}
-                      className="absolute right-5 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200 text-xl font-light w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-700/50"
-                    >
-                      ×
-                    </button>
-                  )}
+            <div className="w-full flex justify-center mb-12">
+              <div className="relative w-full max-w-2xl">
+                <div className="relative group">
+                  {/* Gradient background that shows on focus */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 blur-sm"></div>
+                  
+                  {/* Search input container */}
+                  <div className="relative bg-gray-900/90 backdrop-blur-sm rounded-xl border border-gray-700/50 group-focus-within:border-transparent transition-all duration-300">
+                    <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-400 w-6 h-6 z-10 transition-colors duration-300" />
+                    <input
+                      type="text"
+                      placeholder="Search articles, topics, or tags..."
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="w-full pl-16 pr-14 py-5 bg-transparent text-white placeholder-gray-400 focus:outline-none text-lg rounded-xl"
+                    />
+                    {searchTerm && (
+                      <button
+                        onClick={() => setSearchTerm('')}
+                        className="absolute right-5 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200 text-xl font-light w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-700/50"
+                      >
+                        ×
+                      </button>
+                    )}
+                  </div>
+                  
+                  {/* Animated gradient border */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-20 transition-opacity duration-500"></div>
                 </div>
-                
-                {/* Animated gradient border */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-20 transition-opacity duration-500"></div>
               </div>
             </div>
           </ScrollAnimation>
