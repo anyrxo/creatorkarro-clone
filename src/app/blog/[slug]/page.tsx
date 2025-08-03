@@ -1,12 +1,121 @@
 import React from 'react'
-import { notFound } from 'next/navigation'
+import { redirect, notFound } from 'next/navigation'
+
+// List of all available blog posts
+const availablePosts = [
+  'digital-products-ideas-2025',
+  'digital-products-that-sell', 
+  'instagram-growth-2025',
+  'passive-income-blueprint',
+  'cursor-ai-coding',
+  'windsurf-ai-coding',
+  'composer-agent-code-llm-full-stack',
+  'ai-automation-guide',
+  'chatgpt-automation-workflows',
+  'ai-automation-business',
+  'instagram-monetization-guide',
+  'youtube-shorts-strategy',
+  'tiktok-growth-hacks',
+  'social-media-automation',
+  'email-marketing-guide',
+  'prompt-engineering-guide',
+  'no-code-automation-tools',
+  'business-automation-tools',
+  'saas-automation-systems',
+  'mobile-app-automation',
+  'voice-ai-automation',
+  'machine-learning-automation',
+  'cloud-automation-infrastructure',
+  'security-automation-systems',
+  'devops-automation-pipeline',
+  'robotic-process-automation',
+  'workflow-automation-guide',
+  'api-automation-integration',
+  'database-automation-systems',
+  'iot-automation-systems',
+  'inventory-management-automation',
+  'quality-assurance-automation',
+  'hr-automation-systems',
+  'lead-generation-automation',
+  'pinterest-automation-marketing',
+  'browser-automation-marketing',
+  'web-scraping-automation',
+  'shopify-automation-ai',
+  'telegram-bot-monetization',
+  'n8n-beginners-guide',
+  'n8n-automation-success',
+  'essential-n8n-workflows',
+  'why-n8n-is-different',
+  'make-app-automation',
+  'monetize-with-ai',
+  'ai-content-income',
+  'ai-content-opportunity',
+  'ai-era-skills',
+  'ai-image-generation-guide',
+  'ai-influencer-success',
+  'ai-influencer-trends',
+  'ai-research-content-marketing',
+  'ai-seo-content-optimization',
+  'creating-ai-influencers',
+  'faceless-content-strategy',
+  'content-scaling-framework',
+  'scale-content-creation',
+  'viral-carousel-guide',
+  'create-faceless-youtube-channel',
+  'instagram-reels-guide',
+  'instagram-mistakes-lessons',
+  'instagram-ignited-success-stories',
+  'personal-brand-building',
+  'product-launch-strategy',
+  'sales-page-psychology',
+  'how-to-sell-templates',
+  'digital-product-pricing',
+  'digital-product-success-story',
+  'digital-products-empire',
+  'social-media-calendar',
+  'whop-clipping',
+  'claude-4-vs-gpt-4-comparison',
+  'claude-4-agentic-coding-revolution',
+  'chatgpt-automation-tips',
+  'gpt-4-1-vs-claude-sonnet-3-7-comparison',
+  'gpt4o-upgrade-creator-business',
+  'gpt5-roadmap-creator-empire',
+  'gemini-2-pro-creator-tech-empire',
+  'gemini-2-pro-bolt-diy-full-stack-revolution',
+  'gemini-2-5-flash-budget-ai-model',
+  'google-io-2025-creator-opportunities',
+  'google-deep-research-25-pro-business',
+  'deepseek-market-disruption',
+  'deepseek-r1-open-source-ai-revolution',
+  'deepseek-r2-open-source-ai-revolution',
+  'deepseek-r1-browser-use-ai-research',
+  'deepseek-janus-pro-7b-multimodal-ai-revolution',
+  'llama-4-open-source-ai-powerhouse',
+  'qwen-3-alibaba-open-source-llm',
+  'alpha-evolve-ai-business-empire',
+  'deepagent-update-god-tier-ai-automation',
+  'manus-ai-general-automation-agent',
+  'dart-ai-free-agentic-project-manager',
+  'roocode-v3-3-cline-alternative',
+  'vectorize-all-in-one-rag-platform',
+  'cloud-gpu-ai-automation',
+  'comfyui-workflow-library',
+  'comfyui-success-story',
+  'comfyui-comparison',
+  'ai-automation-guide-toxic-seo',
+  'ai-agents-business-automation',
+  '500k-followers'
+];
 
 export default async function BlogSlugPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  // Temporarily disabled for build
-  return (
-    <div className="min-h-screen bg-dark flex items-center justify-center">
-      <p className="text-gray-400">Dynamic blog page temporarily disabled due to build issues.</p>
-    </div>
-  )
+  
+  // Check if the slug exists in our available posts
+  if (availablePosts.includes(slug)) {
+    // Redirect to the actual blog post
+    redirect(`/blog/${slug}`);
+  }
+  
+  // If post doesn't exist, show 404
+  notFound();
 }
