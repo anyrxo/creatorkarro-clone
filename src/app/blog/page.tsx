@@ -1,103 +1,25 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { Search, Clock, Tag, TrendingUp } from 'lucide-react'
-
-interface BlogPost {
-  slug: string
-  title: string
-  description: string
-  category: string
-  readTime: string
-  publishedAt: string
-  featured?: boolean
-}
-
-const blogPosts: BlogPost[] = [
-  {
-    slug: 'digital-products-ideas-2025',
-    title: '50 Digital Product Ideas That Are Printing Money in 2025',
-    description: 'From $9 templates to $10K masterclasses - discover exact products earning creators $50K+/month with zero inventory',
-    category: 'Digital Products',
-    readTime: '8 min',
-    publishedAt: 'Jan 15, 2025',
-    featured: true
-  },
-  {
-    slug: 'instagram-growth-2025',
-    title: 'Instagram Growth Strategies That Actually Work in 2025',
-    description: 'Latest tactics and techniques to grow your Instagram following organically - proven methods used by top creators',
-    category: 'Social Media',
-    readTime: '6 min',
-    publishedAt: 'Jan 20, 2025',
-    featured: true
-  },
-  {
-    slug: 'ai-automation-guide',
-    title: 'Complete AI Automation Guide for Creators',
-    description: 'Step-by-step guide to automate your content creation and business processes using AI tools',
-    category: 'AI & Automation',
-    readTime: '12 min',
-    publishedAt: 'Jan 18, 2025'
-  },
-  {
-    slug: 'passive-income-blueprint',
-    title: 'The Complete Passive Income Blueprint for 2025',
-    description: 'Build multiple streams of passive income using digital products, courses, and automation',
-    category: 'Business',
-    readTime: '10 min',
-    publishedAt: 'Jan 16, 2025'
-  },
-  {
-    slug: 'cursor-ai-coding',
-    title: 'Cursor AI: The Future of Coding is Here',
-    description: 'How Cursor AI is revolutionizing software development with intelligent code completion',
-    category: 'AI & Tools',
-    readTime: '7 min',
-    publishedAt: 'Jan 14, 2025'
-  },
-  {
-    slug: 'windsurf-ai-coding',
-    title: 'Windsurf vs Cursor: Which AI Coding Tool Wins?',
-    description: 'Comprehensive comparison of the top AI-powered coding assistants for developers',
-    category: 'AI & Tools',
-    readTime: '9 min',
-    publishedAt: 'Jan 12, 2025'
-  },
-  {
-    slug: 'instagram-monetization-guide',
-    title: 'How to Monetize Instagram: Complete 2025 Guide',
-    description: 'Turn your Instagram following into a profitable business with these proven strategies',
-    category: 'Social Media',
-    readTime: '11 min',
-    publishedAt: 'Jan 10, 2025'
-  },
-  {
-    slug: 'youtube-shorts-strategy',
-    title: 'YouTube Shorts Strategy That Gets Millions of Views',
-    description: 'The exact formula top creators use to create viral YouTube Shorts consistently',
-    category: 'Content Creation',
-    readTime: '8 min',
-    publishedAt: 'Jan 8, 2025'
-  }
-]
-
-const categories = ['All', 'Digital Products', 'Social Media', 'AI & Automation', 'Business', 'AI & Tools', 'Content Creation']
+import { Search, Calendar, Clock, Tag, Filter, ArrowRight, TrendingUp } from 'lucide-react'
+import { allBlogPosts, categories, allTags, featuredPosts, type BlogPost } from '@/data/blog-posts'
 
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('All')
 
-  const filteredPosts = blogPosts.filter(post => {
-    const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         post.description.toLowerCase().includes(searchTerm.toLowerCase())
-    const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory
-    return matchesSearch && matchesCategory
-  })
+  const filteredPosts = useMemo(() => {
+    return allBlogPosts.filter(post => {
+      const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           post.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
+      const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory
+      return matchesSearch && matchesCategory
+    })
+  }, [searchTerm, selectedCategory])
 
-  const featuredPosts = blogPosts.filter(post => post.featured)
-  const regularPosts = filteredPosts.filter(post => !post.featured)
+  const displayCategories = ['All', ...categories]
 
   return (
     <div className="min-h-screen bg-dark">
@@ -112,6 +34,13 @@ export default function BlogPage() {
               Insights, strategies, and tutorials to help you build a thriving creator business with AI automation, 
               digital products, and proven growth tactics.
             </p>
+            <div className="flex items-center justify-center gap-4 mt-6 text-gray-400">
+              <span>{allBlogPosts.length} Articles</span>
+              <span>•</span>
+              <span>{categories.length} Categories</span>
+              <span>•</span>
+              <span>{featuredPosts.length} Featured</span>
+            </div>
           </div>
 
           {/* Search and Filter */}
@@ -120,7 +49,7 @@ export default function BlogPage() {
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="text"
-                placeholder="Search articles..."
+                placeholder="Search articles, topics, or tags..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-12 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
@@ -128,11 +57,11 @@ export default function BlogPage() {
             </div>
             
             <div className="flex flex-wrap gap-2">
-              {categories.map((category) => (
+              {displayCategories.map((category) => (
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 rounded-full transition-all ${
+                  className={`px-4 py-2 rounded-full transition-all text-sm font-medium ${
                     selectedCategory === category
                       ? 'bg-blue-600 text-white'
                       : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
@@ -145,17 +74,17 @@ export default function BlogPage() {
           </div>
 
           {/* Featured Posts */}
-          {searchTerm === '' && selectedCategory === 'All' && (
+          {searchTerm === '' && selectedCategory === 'All' && featuredPosts.length > 0 && (
             <div className="mb-16">
               <div className="flex items-center gap-2 mb-8">
                 <TrendingUp className="w-6 h-6 text-yellow-400" />
                 <h2 className="text-2xl font-bold text-white">Featured Articles</h2>
               </div>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {featuredPosts.map((post) => (
                   <Link key={post.slug} href={`/blog/${post.slug}`}>
-                    <article className="group bg-gray-800/50 rounded-xl p-8 border border-gray-700 hover:border-blue-500/50 transition-all cursor-pointer">
-                      <div className="flex items-center gap-4 mb-4">
+                    <article className="group bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 transition-all cursor-pointer">
+                      <div className="flex items-center gap-2 mb-4">
                         <span className="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">
                           {post.category}
                         </span>
@@ -163,23 +92,24 @@ export default function BlogPage() {
                           Featured
                         </span>
                       </div>
-                      <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors">
+                      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors line-clamp-2">
                         {post.title}
                       </h3>
-                      <p className="text-gray-300 mb-6 leading-relaxed">
+                      <p className="text-gray-300 mb-4 leading-relaxed text-sm line-clamp-3">
                         {post.description}
                       </p>
                       <div className="flex items-center justify-between text-sm text-gray-400">
                         <div className="flex items-center gap-4">
                           <div className="flex items-center gap-1">
                             <Clock className="w-4 h-4" />
-                            <span>{post.readTime}</span>
+                            <span>{post.readTime} min</span>
                           </div>
-                          <span>{post.publishedAt}</span>
+                          <div className="flex items-center gap-1">
+                            <Calendar className="w-4 h-4" />
+                            <span>{post.date}</span>
+                          </div>
                         </div>
-                        <span className="text-blue-400 group-hover:text-blue-300 transition-colors">
-                          Read Article →
-                        </span>
+                        <ArrowRight className="w-4 h-4 text-blue-400 group-hover:text-blue-300 transition-colors" />
                       </div>
                     </article>
                   </Link>
@@ -198,17 +128,28 @@ export default function BlogPage() {
             {filteredPosts.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-gray-400 text-lg">No articles found matching your criteria.</p>
+                <button 
+                  onClick={() => {
+                    setSearchTerm('')
+                    setSelectedCategory('All')
+                  }}
+                  className="mt-4 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  Clear filters
+                </button>
               </div>
             ) : (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {(searchTerm === '' && selectedCategory === 'All' ? regularPosts : filteredPosts).map((post) => (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredPosts
+                  .filter(post => !(searchTerm === '' && selectedCategory === 'All' && post.featured))
+                  .map((post) => (
                   <Link key={post.slug} href={`/blog/${post.slug}`}>
                     <article className="group bg-gray-800/30 rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-all cursor-pointer hover:bg-gray-800/50">
                       <div className="flex items-center gap-2 mb-3">
                         <Tag className="w-4 h-4 text-gray-400" />
                         <span className="text-sm text-blue-300 font-medium">{post.category}</span>
                       </div>
-                      <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-300 transition-colors line-clamp-2">
+                      <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-blue-300 transition-colors line-clamp-2">
                         {post.title}
                       </h3>
                       <p className="text-gray-300 text-sm mb-4 line-clamp-2">
@@ -218,14 +159,23 @@ export default function BlogPage() {
                         <div className="flex items-center gap-3">
                           <div className="flex items-center gap-1">
                             <Clock className="w-3 h-3" />
-                            <span>{post.readTime}</span>
+                            <span>{post.readTime} min</span>
                           </div>
-                          <span>{post.publishedAt}</span>
+                          <span>{post.date}</span>
                         </div>
-                        <span className="text-blue-400 group-hover:text-blue-300 transition-colors">
-                          Read →
-                        </span>
+                        <ArrowRight className="w-3 h-3 text-blue-400 group-hover:text-blue-300 transition-colors" />
                       </div>
+                      
+                      {/* Tags */}
+                      {post.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-1 mt-3">
+                          {post.tags.slice(0, 3).map((tag, index) => (
+                            <span key={index} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </article>
                   </Link>
                 ))}
