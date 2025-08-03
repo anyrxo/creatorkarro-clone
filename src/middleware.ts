@@ -67,12 +67,10 @@ function detectBotPattern(request: NextRequest): { isBot: boolean; reason?: stri
   const accept = request.headers.get('accept') || '';
   const acceptLanguage = request.headers.get('accept-language') || '';
   
-  // Common bot patterns
+  // Only detect obvious bots - be much more permissive for browsers
   const botPatterns = [
-    /bot/i, /crawler/i, /spider/i, /scraper/i,
-    /curl/i, /wget/i, /python/i, /requests/i,
-    /playwright/i, /puppeteer/i, /selenium/i,
-    /headless/i, /phantomjs/i, /jsdom/i
+    /curl/i, /wget/i, /python-requests/i,
+    /scrapy/i, /headless/i, /phantomjs/i
   ];
   
   for (const pattern of botPatterns) {
@@ -81,22 +79,13 @@ function detectBotPattern(request: NextRequest): { isBot: boolean; reason?: stri
     }
   }
   
-  // Missing essential headers
+  // Only block if completely missing user agent
   if (!userAgent) {
     return { isBot: true, reason: 'Missing User-Agent header' };
   }
   
-  if (!accept) {
-    return { isBot: true, reason: 'Missing Accept header' };
-  }
-  
-  // Non-browser accept header
-  if (!accept.includes('text/html')) {
-    return { isBot: true, reason: 'Non-browser Accept header' };
-  }
-  
-  // Very short user agent (likely fake)
-  if (userAgent.length < 20) {
+  // Very short user agent (likely fake) - but be more lenient
+  if (userAgent.length < 10) {
     return { isBot: true, reason: 'Suspiciously short User-Agent' };
   }
   
