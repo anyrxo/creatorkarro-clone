@@ -300,8 +300,8 @@ export default function HomePage() {
       </section>
 
       {/* Beautiful Stats Section */}
-      <section className="relative py-20 bg-black">
-        <div className="container mx-auto px-4 max-w-6xl">
+      <section className="relative py-20 bg-black overflow-hidden">
+        <div className="container mx-auto px-6 sm:px-8 max-w-7xl">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -309,9 +309,9 @@ export default function HomePage() {
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center"
           >
             {[
-              { value: 13000, suffix: '+', label: 'Active Students' },
-              { value: 10000000, suffix: '+', label: 'Followers Built' },
-              { value: 5000000, prefix: '$', suffix: '+', label: 'Student Revenue' },
+              { value: 13000, suffix: '+', label: 'Active Students', displayValue: '13K' },
+              { value: 10000000, suffix: '+', label: 'Followers Built', displayValue: '10M' },
+              { value: 5000000, prefix: '$', suffix: '+', label: 'Student Revenue', displayValue: '5M' },
               { value: 4.9, suffix: '★', label: 'Average Rating', decimals: 1 }
             ].map((stat, index) => (
               <motion.div
@@ -320,7 +320,7 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group px-2"
+                className="group px-4 py-4"
               >
                 <motion.div
                   className="space-y-2"
@@ -328,12 +328,16 @@ export default function HomePage() {
                 >
                   <div className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-white">
                     <span>{stat.prefix}</span>
-                    <NumberTicker 
-                      value={stat.value} 
-                      delay={0.5 + index * 0.2}
-                      decimalPlaces={stat.decimals || 0}
-                      className="inline-block"
-                    />
+                    {stat.displayValue ? (
+                      <span>{stat.displayValue}</span>
+                    ) : (
+                      <NumberTicker 
+                        value={stat.value} 
+                        delay={0.5 + index * 0.2}
+                        decimalPlaces={stat.decimals || 0}
+                        className="inline-block"
+                      />
+                    )}
                     <span>{stat.suffix}</span>
                   </div>
                   <p className="text-sm sm:text-base text-zinc-500 font-medium">{stat.label}</p>
