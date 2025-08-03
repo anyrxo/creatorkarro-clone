@@ -77,15 +77,15 @@ export default function BlogPage() {
           {/* Search and Filter with Beautiful Styling */}
           <ScrollAnimation animation="fade-up" delay={800}>
             <div className="flex flex-col md:flex-row gap-6 mb-12">
-              <SpotlightCard className="relative flex-1 bg-gray-800/50 border border-gray-700 rounded-xl overflow-hidden backdrop-blur-sm">
+              <SpotlightCard className="relative flex-1 bg-gray-800/80 border border-gray-600 rounded-xl overflow-hidden backdrop-blur-sm">
                 <div className="relative">
-                  <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 z-10" />
+                  <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300 w-5 h-5 z-10" />
                   <input
                     type="text"
                     placeholder="Search articles, topics, or tags..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-12 pr-4 py-4 bg-transparent text-white placeholder-gray-400 focus:outline-none relative z-10"
+                    className="w-full pl-12 pr-4 py-4 bg-transparent text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl relative z-10 text-base"
                   />
                 </div>
               </SpotlightCard>
@@ -139,11 +139,13 @@ export default function BlogPage() {
                           <div className="h-full flex flex-col">
                             {/* Badge Section */}
                             <div className="flex items-center gap-2 mb-4">
-                              <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+                              <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-2 py-1 rounded-full text-xs font-medium shadow-lg">
                                 {post.category}
                               </span>
-                              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg animate-pulse">
-                                ✨ Featured
+                              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full text-xs font-medium shadow-lg animate-pulse flex items-center gap-1">
+                                <span className="text-xs">✨</span>
+                                <span className="hidden sm:inline">Featured</span>
+                                <span className="sm:hidden">✨</span>
                               </span>
                             </div>
 
@@ -216,11 +218,11 @@ export default function BlogPage() {
           <ScrollAnimation animation="fade-up" delay={1200}>
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-8">
-                <GradientText className="text-3xl font-bold" gradient="primary">
+                <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   {searchTerm || selectedCategory !== 'All' ? 'Search Results' : 'Latest Articles'}
-                </GradientText>
-                <div className="px-3 py-1 bg-gray-800 rounded-full">
-                  <NumberTicker value={filteredPosts.length} className="text-sm font-medium text-gray-300" />
+                </h2>
+                <div className="px-3 py-1 bg-gray-800/50 rounded-full border border-gray-700">
+                  <NumberTicker value={filteredPosts.length} className="text-sm font-medium text-blue-300" />
                 </div>
               </div>
               
@@ -264,8 +266,9 @@ export default function BlogPage() {
                                 </div>
                                 {post.featured && (
                                   <div className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border border-yellow-500/30 backdrop-blur-sm">
-                                    <TrendingUp className="w-3 h-3 text-yellow-400" />
-                                    <span className="text-xs text-yellow-300 font-semibold">FEATURED</span>
+                                    <TrendingUp className="w-3 h-3 text-yellow-400 flex-shrink-0" />
+                                    <span className="text-xs text-yellow-300 font-semibold hidden sm:inline">FEATURED</span>
+                                    <span className="text-xs text-yellow-300 sm:hidden">✨</span>
                                   </div>
                                 )}
                               </div>
