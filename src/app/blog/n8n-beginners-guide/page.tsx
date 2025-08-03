@@ -3,9 +3,15 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "N8N Beginners Guide",
-  description: "Complete n8n beginners guide - step-by-step instructions, best practices, and expert tips",
-  keywords: ["n8n", "beginners", "guide", "n8n 2025", "n8n beginners guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  title: "N8N for Beginners 2025: Complete Course Guide to Business Automation",
+  description: "Master N8N automation with our complete beginner's guide. Learn workflow automation, save 40+ hours/week, and transform your business. Step-by-step tutorial + course recommendations.",
+  keywords: [
+    "n8n for beginners", "n8n course", "n8n tutorial", "n8n automation guide", 
+    "business automation course", "workflow automation tutorial", "n8n vs zapier", 
+    "n8n training", "automation course online", "n8n beginner course",
+    "how to learn n8n", "n8n step by step", "business process automation",
+    "n8n workflow examples", "automation training", "n8n certification"
+  ],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
@@ -73,12 +79,21 @@ export default function N8nBeginnersGuide() {
                 </div>
 
                 <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              n8n for Beginners: Automate <span className="text-orange-400">Everything</span> Without Code
+              N8N for Beginners 2025: Complete <span className="text-orange-400">Course Guide</span> to Business Automation
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-400 mb-8">
-              The complete guide to <span className="text-white font-semibold">workflow automation that saves 20+ hours/week</span>
+              Master N8N automation with our step-by-step guide. <span className="text-white font-semibold">Save 40+ hours/week</span> and transform your business with intelligent workflows.
                 </p>
+
+                {/* Course CTA */}
+                <div className="bg-gradient-to-r from-orange-600/20 to-purple-600/20 border border-orange-500/30 rounded-2xl p-6 mb-8">
+                  <p className="text-white font-semibold mb-3">🚀 Want the Complete N8N Mastery System?</p>
+                  <p className="text-gray-300 mb-4">Skip the trial-and-error. Get our comprehensive N8N course with 20+ hours of training, templates, and 1-on-1 support.</p>
+                  <Link href="/n8n-ai-automations" className="inline-block bg-gradient-to-r from-orange-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
+                    Get Complete N8N Course →
+                  </Link>
+                </div>
 
                 
             </div>

@@ -25,6 +25,116 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import Marquee from '@/components/magicui/marquee'
 import { ChevronRight } from 'lucide-react'
 
+// SEO Schema markup for course domination
+const courseSchema = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "N8N AI Automations Masterclass",
+  "description": "Complete N8N automation system for entrepreneurs. Build AI-powered workflows without coding. Save 40+ hours/week with intelligent automation.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "IImagined",
+    "url": "https://iimagined.ai",
+    "logo": "https://iimagined.ai/logo.png"
+  },
+  "instructor": {
+    "@type": "Person",
+    "name": "Anyro",
+    "url": "https://iimagined.ai/story",
+    "jobTitle": "AI Automation Expert"
+  },
+  "courseCode": "N8N-AI-2025",
+  "educationalLevel": "Beginner to Advanced",
+  "teaches": [
+    "N8N Workflow Automation",
+    "AI Integration",
+    "Business Process Automation",
+    "No-Code Development",
+    "API Integrations"
+  ],
+  "timeRequired": "PT20H",
+  "numberOfCredits": 8,
+  "offers": {
+    "@type": "Offer",
+    "price": "297",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2025-01-01",
+    "priceValidUntil": "2025-12-31",
+    "category": "Education"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1600",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Sarah Chen"
+      },
+      "reviewBody": "This N8N course completely transformed my business. I now save 40+ hours per week with automated workflows."
+    }
+  ],
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Online",
+    "courseSchedule": {
+      "@type": "Schedule",
+      "duration": "PT20H",
+      "repeatFrequency": "Self-paced"
+    }
+  },
+  "about": [
+    "N8N Automation",
+    "AI Workflows",
+    "Business Automation",
+    "No-Code Tools",
+    "Process Optimization"
+  ],
+  "keywords": "n8n course, automation training, AI workflows, business automation, no-code automation, n8n tutorial, workflow automation course"
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this N8N course suitable for complete beginners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! This course is designed for entrepreneurs with no technical background. We start from the absolute basics and guide you step-by-step to advanced automation mastery."
+      }
+    },
+    {
+      "@type": "Question", 
+      "name": "How much time can I save with N8N automation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our students typically save 40+ hours per week by automating repetitive business processes. Some have automated entire departments, saving hundreds of hours monthly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need coding experience to use N8N?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No coding required! N8N is a visual, no-code automation platform. You build workflows by connecting pre-built nodes with drag-and-drop simplicity."
+      }
+    }
+  ]
+}
+
 export default function N8NAutomationsPage() {
   // Scroll animations for different sections
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
@@ -49,6 +159,17 @@ export default function N8NAutomationsPage() {
   const faqCards = useScrollAnimations(12, { threshold: 0.1 })
 
   return (
+    <>
+      {/* SEO Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      
     <div className="min-h-screen bg-dark relative">
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef} className="relative z-10">
@@ -1101,5 +1222,6 @@ export default function N8NAutomationsPage() {
         </div>
       </section>
     </div>
+    </>
   )
 }

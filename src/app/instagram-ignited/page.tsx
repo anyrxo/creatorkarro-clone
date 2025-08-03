@@ -39,6 +39,123 @@ export default function InstagramIgnitedPage() {
     description: 'Complete Instagram growth system with 10+ modules, 100+ lessons, and $8,879 worth of bonuses'
   }
 
+  // Schema markup for Instagram Ignited Course
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Instagram Ignited: 0 to 500K Followers",
+    "description": "Complete Instagram growth system for entrepreneurs. Learn viral content strategies, algorithm domination, and monetization techniques from growing 0 to 500K followers.",
+    "provider": {
+      "@type": "Organization",
+      "name": "IImagined",
+      "url": "https://iimagined.ai"
+    },
+    "instructor": {
+      "@type": "Person",
+      "name": "Anyro",
+      "url": "https://iimagined.ai/story",
+      "jobTitle": "Instagram Growth Expert",
+      "alumniOf": "500K+ Instagram Following"
+    },
+    "courseMode": "online",
+    "educationalLevel": "Beginner to Advanced",
+    "teaches": [
+      "Instagram Algorithm Mastery",
+      "Viral Content Creation",
+      "Instagram Monetization",
+      "Reel Psychology",
+      "Story Engagement",
+      "Instagram Growth Strategies"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "297",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "category": "Instagram Marketing Course",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "10+ hours",
+        "instructor": "Anyro"
+      }
+    },
+    "totalTime": "PT20H",
+    "numberOfCredits": 10,
+    "educationalCredentialAwarded": "Instagram Growth Certificate",
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student",
+      "audienceType": ["Content Creators", "Business Owners", "Social Media Managers", "Entrepreneurs"]
+    },
+    "coursePrerequisites": "None - suitable for complete beginners",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2000",
+      "bestRating": "5"
+    }
+  }
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best Instagram growth course for beginners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instagram Ignited by IImagined is the most comprehensive beginner-friendly Instagram course, featuring proven strategies that grew a following from 0 to 500K+ and generated over $2.5M in revenue."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "How quickly will I see Instagram growth results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most students see significant improvements within 2-4 weeks of implementing the strategies, with better engagement and reach almost immediately. Consistent follower growth typically begins within 30 days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need expensive equipment for Instagram growth?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not at all! Everything can be done with just your smartphone. Instagram Ignited shows you free tools and apps for editing, scheduling, and analytics. Focus on strategy first, equipment second."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I make money with Instagram?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Students are earning $5K-$50K monthly through various revenue streams including digital products, affiliate marketing, sponsorships, coaching, and consulting using Instagram Ignited strategies."
+        }
+      }
+    ]
+  }
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "IImagined",
+    "url": "https://iimagined.ai",
+    "logo": "https://iimagined.ai/logo.png",
+    "description": "Leading Instagram growth and digital marketing education platform",
+    "foundingDate": "2023",
+    "founder": {
+      "@type": "Person",
+      "name": "Anyro",
+      "url": "https://iimagined.ai/story"
+    },
+    "sameAs": [
+      "https://twitter.com/anyrxo",
+      "https://linkedin.com/in/anyro",
+      "https://youtube.com/@iimagined"
+    ]
+  }
+
   const handleBuyNow = () => {
     setIsCheckoutOpen(true)
   }
@@ -66,7 +183,22 @@ export default function InstagramIgnitedPage() {
   const storiesAnimation = useScrollAnimation({ threshold: 0.1 })
 
   return (
-    <div className="min-h-screen bg-dark relative">
+    <>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+
+      <div className="min-h-screen bg-dark relative">
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef}>
         <HeroSection
@@ -1238,6 +1370,7 @@ export default function InstagramIgnitedPage() {
         onClose={() => setIsCheckoutOpen(false)}
         product={product}
       />
-    </div>
+      </div>
+    </>
   )
 }

@@ -46,8 +46,116 @@ export default function DigitalProductsPage() {
   const testimonialCards = useScrollAnimations(3, { threshold: 0.1 })
   const faqCards = useScrollAnimations(12, { threshold: 0.1 })
 
+  // Schema markup for Digital Products Course
+  const digitalProductsSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Digital Products Empire: Complete Business Course",
+    "description": "Master the art of creating and selling digital products. Learn to build profitable digital products, marketing strategies, and automated sales systems that generate passive income.",
+    "provider": {
+      "@type": "Organization",
+      "name": "IImagined",
+      "url": "https://iimagined.ai"
+    },
+    "instructor": {
+      "@type": "Person",
+      "name": "Anyro",
+      "url": "https://iimagined.ai/story",
+      "jobTitle": "Digital Product & Business Expert",
+      "alumniOf": "Digital Entrepreneur"
+    },
+    "courseMode": "online",
+    "educationalLevel": "Beginner to Advanced",
+    "teaches": [
+      "Digital Product Creation",
+      "Online Business Strategy",
+      "Marketing Automation",
+      "Sales Funnel Development",
+      "Passive Income Systems",
+      "Product Monetization"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "497",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "category": "Business Course",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "20+ hours",
+        "instructor": "Anyro"
+      }
+    },
+    "totalTime": "PT20H",
+    "numberOfCredits": 10,
+    "educationalCredentialAwarded": "Digital Products Business Certificate",
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student",
+      "audienceType": ["Entrepreneurs", "Content Creators", "Business Owners", "Online Marketers"]
+    },
+    "coursePrerequisites": "Basic computer and internet skills",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1500",
+      "bestRating": "5"
+    }
+  }
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are digital products and how do I create them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Digital products are downloadable items like courses, ebooks, templates, software, or digital services. Our course teaches you to create, market, and sell profitable digital products from scratch."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Can I really make money selling digital products?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Digital products have incredible profit margins since there's no inventory or shipping costs. Many students earn $10K-$100K+ monthly selling digital products with the right strategies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need technical skills to sell digital products?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No technical skills required! Our course covers everything including simple tools for creating products, setting up sales pages, and automating delivery systems - perfect for complete beginners."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the best digital product to start with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We recommend starting with digital templates, guides, or mini-courses in your area of expertise. These are quick to create, have high demand, and generate immediate revenue while you learn."
+        }
+      }
+    ]
+  }
+
   return (
-    <div className="min-h-screen bg-dark relative">
+    <>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(digitalProductsSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <div className="min-h-screen bg-dark relative">
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef}>
         <HeroSection
@@ -985,6 +1093,7 @@ export default function DigitalProductsPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }

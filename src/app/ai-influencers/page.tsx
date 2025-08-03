@@ -44,6 +44,103 @@ export default function AIInfluencersPage() {
   const urgencyAnimation = useScrollAnimation({ threshold: 0.1 })
   const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
 
+  // Enhanced Schema markup for AI Influencers Course
+  const aiInfluencersSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "AI Influencers Mastery: Virtual Influencer Business Course",
+    "description": "Complete course on creating virtual AI influencers that generate passive income through automated content creation, brand partnerships, and virtual presence monetization.",
+    "provider": {
+      "@type": "Organization",
+      "name": "IImagined",
+      "url": "https://iimagined.ai"
+    },
+    "instructor": {
+      "@type": "Person",
+      "name": "Anyro",
+      "url": "https://iimagined.ai/story",
+      "jobTitle": "AI Influencer & Virtual Content Expert",
+      "alumniOf": "Virtual Influencer Pioneer"
+    },
+    "courseMode": "online",
+    "educationalLevel": "Beginner to Advanced",
+    "teaches": [
+      "AI Character Creation",
+      "Virtual Influencer Development",
+      "Automated Content Generation",
+      "Brand Partnership Strategies",
+      "Virtual Presence Monetization",
+      "AI Content Automation"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "997",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "category": "AI Business Course",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "25+ hours",
+        "instructor": "Anyro"
+      }
+    },
+    "totalTime": "PT25H",
+    "numberOfCredits": 12,
+    "educationalCredentialAwarded": "AI Influencer Business Certificate",
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student",
+      "audienceType": ["Entrepreneurs", "Content Creators", "Digital Marketers", "AI Enthusiasts"]
+    },
+    "coursePrerequisites": "Basic computer skills and marketing interest",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "800",
+      "bestRating": "5"
+    }
+  }
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an AI influencer and how can I create one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An AI influencer is a virtual character created using AI technology that can generate content, engage with audiences, and create revenue streams. Our course teaches you to create, develop, and monetize AI influencers from scratch."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Can AI influencers really make money?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! AI influencers can generate income through brand partnerships, product promotions, virtual merchandise, content licensing, and automated affiliate marketing. Some virtual influencers earn millions annually."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need technical skills to create AI influencers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No technical background required! Our course covers everything from basic AI character creation to advanced monetization strategies, with step-by-step tutorials for complete beginners."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between AI influencers and regular influencers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI influencers can work 24/7, never age, create unlimited content, have perfect consistency, no scandals, and can be completely controlled for brand partnerships and messaging."
+        }
+      }
+    ]
+  }
+
   // Define modules data
   const modules = [
     {
@@ -384,11 +481,14 @@ export default function AIInfluencersPage() {
 
   return (
     <>
+      {/* Enhanced Schema Markup */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(courseStructuredData),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aiInfluencersSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="min-h-screen bg-dark relative">
       {/* Hero Section */}

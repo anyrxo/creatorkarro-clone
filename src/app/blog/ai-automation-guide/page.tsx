@@ -728,6 +728,56 @@ export default function AIAutomationGuide() {
     </div>
 </section>
 
+      {/* N8N Course CTA - Strategic Placement */}
+      <section className="section-spacing bg-gradient-to-r from-blue-600/20 to-purple-600/20 border-y border-blue-500/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-500/30 mb-4">
+              <span className="text-blue-400 text-sm font-semibold">🚀 SKIP THE SETUP - GET READY-MADE AUTOMATIONS</span>
+            </div>
+            
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              Get My Exact N8N Automation System That Generated <span className="text-blue-400">$88K/Month</span>
+            </h2>
+            
+            <p className="text-xl text-gray-300 mb-6 leading-relaxed">
+              Why spend months building these AI automation tools from scratch? Get my complete N8N automation system with 
+              <span className="text-white font-semibold"> 50+ pre-built workflows, business automation templates, and the exact AI workflow automation</span> 
+              that powers my $88K/month automated business.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              <div className="bg-zinc-900/50 rounded-xl p-4">
+                <div className="text-2xl font-bold text-blue-400 mb-2">50+</div>
+                <div className="text-sm text-gray-300">Ready-made N8N workflows</div>
+              </div>
+              <div className="bg-zinc-900/50 rounded-xl p-4">
+                <div className="text-2xl font-bold text-purple-400 mb-2">$88K</div>
+                <div className="text-sm text-gray-300">Monthly automation revenue</div>
+              </div>
+              <div className="bg-zinc-900/50 rounded-xl p-4">
+                <div className="text-2xl font-bold text-green-400 mb-2">2,400+</div>
+                <div className="text-sm text-gray-300">Students already automated</div>
+              </div>
+            </div>
+            
+            <Link
+              href="/n8n-ai-automations"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold rounded-xl transition-all transform hover:scale-105 shadow-2xl"
+            >
+              Get The Complete N8N Automation System
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+            
+            <div className="mt-4 text-sm text-gray-400">
+              ⭐ 4.9/5 from 2,400+ students | 🔒 30-day money-back guarantee | 🚀 Save 40+ hours per week
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         
         className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"

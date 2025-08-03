@@ -35,6 +35,103 @@ export default function ComfyUIWorkflowsPage() {
   const urgencyAnimation = useScrollAnimation({ threshold: 0.1 })
   const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
 
+  // Schema markup for ComfyUI Workflows Course
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "ComfyUI Workflows: Ultimate AI Image Generation Course",
+    "description": "Master ComfyUI with professional workflows for AI image generation. Learn advanced techniques, custom nodes, and automated image generation systems from industry experts.",
+    "provider": {
+      "@type": "Organization",
+      "name": "IImagined",
+      "url": "https://iimagined.ai"
+    },
+    "instructor": {
+      "@type": "Person",
+      "name": "Anyro",
+      "url": "https://iimagined.ai/story",
+      "jobTitle": "AI Image Generation Expert",
+      "alumniOf": "ComfyUI Professional"
+    },
+    "courseMode": "online",
+    "educationalLevel": "Beginner to Advanced",
+    "teaches": [
+      "ComfyUI Workflow Creation",
+      "AI Image Generation",
+      "Custom Node Development",
+      "Automation Systems",
+      "Professional Image Production",
+      "Advanced AI Techniques"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "197",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "category": "AI Education Course",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "15+ hours",
+        "instructor": "Anyro"
+      }
+    },
+    "totalTime": "PT15H",
+    "numberOfCredits": 8,
+    "educationalCredentialAwarded": "ComfyUI Professional Certificate",
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student",
+      "audienceType": ["AI Enthusiasts", "Graphic Designers", "Content Creators", "Digital Artists"]
+    },
+    "coursePrerequisites": "Basic computer skills - suitable for beginners",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "1200",
+      "bestRating": "5"
+    }
+  }
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best ComfyUI course for beginners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ComfyUI Workflows by IImagined is the most comprehensive beginner-friendly ComfyUI course, featuring step-by-step workflows, professional techniques, and hands-on projects for mastering AI image generation."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Do I need prior AI experience for ComfyUI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No prior AI experience required! The ComfyUI Workflows course starts with fundamentals and progressively builds to advanced techniques. Perfect for complete beginners to AI image generation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can I create with ComfyUI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With ComfyUI, you can create professional AI images, automated workflows, custom art styles, batch processing systems, and advanced image generation pipelines for any creative project."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is ComfyUI different from other AI image tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ComfyUI offers node-based workflow creation, unlimited customization, local processing, and professional-grade control over AI image generation - far more powerful than simple prompt-based tools."
+        }
+      }
+    ]
+  }
+
   // Define modules data for ComfyUI
   const modules = [
     {
@@ -330,7 +427,18 @@ export default function ComfyUIWorkflowsPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-dark relative">
+    <>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <div className="min-h-screen bg-dark relative">
       {/* Hero Section */}
       <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection
@@ -879,6 +987,7 @@ export default function ComfyUIWorkflowsPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }

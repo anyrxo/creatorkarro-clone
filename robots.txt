@@ -1,0 +1,46 @@
+User-agent: *
+Allow: /
+
+# PRIORITY CRAWLING FOR COURSE PAGES
+Allow: /n8n-ai-automations
+Allow: /instagram-ignited  
+Allow: /comfyui-workflows
+Allow: /ai-influencers
+Allow: /digital-products
+
+# HIGH-VALUE BLOG CONTENT
+Allow: /blog/ai-automation-guide
+Allow: /blog/robotic-process-automation
+Allow: /blog/ai-seo-content-optimization
+Allow: /blog/instagram-growth-2025
+Allow: /blog/n8n-beginners-guide
+
+# SITEMAP LOCATION
+Sitemap: https://iimagined.ai/sitemap.xml
+
+# CRAWL DELAY FOR OPTIMAL INDEXING
+Crawl-delay: 1
+
+# GOOGLE BOTS PRIORITY ACCESS
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /_next/static/
+
+User-agent: Googlebot-News
+Allow: /blog/
+
+# BING BOT OPTIMIZATION  
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# ACCELERATED INDEXING
+User-agent: *
+Allow: /api/
+Allow: /_next/static/
+Allow: /images/
+Allow: /favicon.ico

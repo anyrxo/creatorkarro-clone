@@ -665,6 +665,111 @@ export default function RoboticProcessAutomation() {
         </div>
       </section>
 
+      {/* N8N Course CTA - RPA Professional Focus */}
+      <section className="section-spacing bg-gradient-to-r from-orange-600/20 to-red-600/20 border-y border-orange-500/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/20 border border-orange-500/30 mb-6">
+              <span className="text-orange-400 text-sm font-semibold">🤖 FROM RPA TO INTELLIGENT AUTOMATION</span>
+            </div>
+            
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              Skip Traditional RPA - Build <span className="text-orange-400">Intelligent N8N Automations</span> That Cost 90% Less
+            </h2>
+            
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-4xl mx-auto">
+              Why pay $420/month per UiPath robot when you can build unlimited intelligent automations with N8N? 
+              Get my complete system that <span className="text-white font-semibold">replaced $50K/month in RPA licensing costs</span> 
+              with smart, scalable automations that actually think.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-zinc-900/50 rounded-xl p-6">
+                <div className="text-3xl font-bold text-red-400 mb-2">$420</div>
+                <div className="text-sm text-gray-400 mb-2">UiPath per robot/month</div>
+                <div className="text-xs text-gray-500">vs $0 with N8N</div>
+              </div>
+              <div className="bg-zinc-900/50 rounded-xl p-6">
+                <div className="text-3xl font-bold text-orange-400 mb-2">50+</div>
+                <div className="text-sm text-gray-400 mb-2">Pre-built workflows</div>
+                <div className="text-xs text-gray-500">Enterprise-grade templates</div>
+              </div>
+              <div className="bg-zinc-900/50 rounded-xl p-6">
+                <div className="text-3xl font-bold text-green-400 mb-2">2,400+</div>
+                <div className="text-sm text-gray-400 mb-2">RPA professionals</div>
+                <div className="text-xs text-gray-500">already switched to N8N</div>
+              </div>
+            </div>
+            
+            <div className="bg-zinc-900/50 rounded-xl p-6 mb-8">
+              <h3 className="text-xl font-bold text-white mb-4">Why RPA Professionals Choose N8N Over Enterprise Tools:</h3>
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <div>
+                      <span className="text-white font-semibold">Unlimited Bots:</span>
+                      <span className="text-gray-300"> No per-robot licensing fees</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <div>
+                      <span className="text-white font-semibold">AI Integration:</span>
+                      <span className="text-gray-300"> Native ChatGPT, Claude, Gemini support</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <div>
+                      <span className="text-white font-semibold">API-First:</span>
+                      <span className="text-gray-300"> Connect any system without screen scraping</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <div>
+                      <span className="text-white font-semibold">Self-Hosted:</span>
+                      <span className="text-gray-300"> Complete control over your data</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <div>
+                      <span className="text-white font-semibold">Cloud Scale:</span>
+                      <span className="text-gray-300"> Handle millions of executions</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <div>
+                      <span className="text-white font-semibold">Open Source:</span>
+                      <span className="text-gray-300"> Customize everything to your needs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <Link
+              href="/n8n-ai-automations"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white font-bold rounded-xl transition-all transform hover:scale-105 shadow-2xl"
+            >
+              Get The Complete N8N Automation System
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+            
+            <div className="mt-6 text-sm text-gray-400">
+              ⭐ 4.9/5 from 2,400+ automation professionals | 🔒 30-day money-back guarantee | 🤖 Replace expensive RPA tools
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         
         className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"

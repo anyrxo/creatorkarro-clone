@@ -221,7 +221,7 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <div className="text-5xl md:text-7xl font-bold text-white mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
               <BlurIn
                 word="Transform Your"
                 className="text-5xl md:text-7xl font-bold text-white"
@@ -234,7 +234,7 @@ export default function HomePage() {
                   duration={3000}
                 />
               </div>
-            </div>
+            </h1>
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
               Master the tools and strategies that turned thousands of creators into successful entrepreneurs
             </p>

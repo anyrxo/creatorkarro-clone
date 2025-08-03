@@ -343,24 +343,54 @@ export default function InstagramGrowth2025() {
                 </div>
               </div>
               
-              {/* Related Articles */}
+              {/* Instagram Ignited Course CTA */}
               <div className="mt-16 pt-12 border-t border-gray-700">
+                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-8">
+                  <div className="text-center">
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">🚀 Ready to Transform Your Instagram?</h3>
+                    <p className="text-lg text-gray-300 mb-6">
+                      Want the complete system behind growing from 0 to 500K+ followers? Get our proven Instagram growth course with viral content strategies, algorithm domination techniques, and monetization blueprints.
+                    </p>
+                    <div className="grid md:grid-cols-3 gap-4 mb-6 text-center">
+                      <div className="bg-black/30 rounded-lg p-4">
+                        <div className="text-2xl font-bold text-blue-400">500K+</div>
+                        <div className="text-sm text-gray-400">Followers Grown</div>
+                      </div>
+                      <div className="bg-black/30 rounded-lg p-4">
+                        <div className="text-2xl font-bold text-green-400">$2.5M+</div>
+                        <div className="text-sm text-gray-400">Revenue Generated</div>
+                      </div>
+                      <div className="bg-black/30 rounded-lg p-4">
+                        <div className="text-2xl font-bold text-purple-400">2,000+</div>
+                        <div className="text-sm text-gray-400">Students Transformed</div>
+                      </div>
+                    </div>
+                    <Link href="/instagram-ignited" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                      Get Instagram Ignited Course →
+                    </Link>
+                    <p className="text-sm text-gray-400 mt-3">✅ 10+ Modules • ✅ Lifetime Access • ✅ 30-Day Guarantee</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Related Articles */}
+              <div className="mt-8">
                 <h3 className="text-2xl font-bold text-white mb-8">Related Articles</h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <Link href="/blog" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                  <Link href="/blog/n8n-beginners-guide" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
                     <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                      More Automation Guides
+                      N8N Automation Guide
                     </h4>
                     <p className="text-gray-400 text-sm">
-                      Discover our complete library of automation and productivity guides.
+                      Automate your Instagram content and scheduling with N8N workflows.
                     </p>
                   </Link>
-                  <Link href="/digital-products" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                  <Link href="/blog/social-media-automation" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
                     <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                      Digital Products
+                      Social Media Automation
                     </h4>
                     <p className="text-gray-400 text-sm">
-                      Ready-to-use templates, tools, and automation systems.
+                      Scale your social media presence with intelligent automation systems.
                     </p>
                   </Link>
                 </div>

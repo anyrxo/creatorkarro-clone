@@ -19,21 +19,24 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 // Generate AI-powered meta tags
 const dynamicMeta = generateDynamicMeta({
-  title: 'Master Claude 4 AI, Gemini 2 Pro & Instagram Growth | 127K+ Students Creating $10K+/Month',
-  description: 'Learn cutting-edge AI automation with Claude 4, Gemini 2 Pro, DeepSeek R1, and proven Instagram growth strategies. Join 127K+ creators building profitable businesses with advanced AI tools and social media mastery.',
+  title: 'AI Automation Course & Instagram Growth Training | 10K+/Month Business Systems',
+  description: 'Master N8N automation, Claude 4 AI, and Instagram growth strategies. 127K+ students building $10K+/month businesses with proven AI tools, social media marketing, and digital products systems.',
   keywords: [
-    // Latest AI Models 2025
-    'claude 4 ai', 'claude 4 automation', 'claude 4 sonnet', 'gemini 2 pro', 'gemini 2 pro flash',
-    'deepseek r1', 'deepseek r1 browser use', 'gpt-4.1', 'llama 4', 'qwen 3 alibaba',
-    // AI Automation & Agents
-    'ai automation', 'ai agents', 'ai workflow automation', 'n8n automation', 'multimodal ai',
-    'ai business automation', 'ai content creation', 'ai influencers', 'ai models comparison',
-    // Social Media Growth
-    'instagram growth', 'instagram growth 2025', 'instagram automation', 'tiktok growth hacks',
-    'youtube automation', 'social media marketing', 'viral content strategy', 'faceless youtube',
-    // Digital Business & Products
-    'digital products', 'passive income', 'online business', 'make money online',
-    'comfyui workflows', 'ai image generation', 'content strategy', 'email marketing'
+    // High-Volume Course Keywords
+    'ai automation course', 'instagram growth course', 'n8n course', 'automation training', 'social media course',
+    'business automation course', 'digital marketing course', 'make money online course', 'passive income course',
+    // AI & Automation Terms
+    'ai automation', 'ai agents', 'workflow automation', 'business automation', 'marketing automation',
+    'claude 4 ai', 'n8n automation', 'ai tools', 'automation tools', 'ai business tools',
+    // Instagram Growth Keywords
+    'instagram growth', 'how to grow instagram', 'instagram marketing', 'instagram followers',
+    'instagram course', 'social media growth', 'instagram strategy', 'viral content creation',
+    // Business & Income Keywords  
+    'make money online', 'passive income', 'online business', 'digital products', 'side hustle',
+    '10k per month', 'business course', 'entrepreneur course', 'income generation',
+    // Tech Training Keywords
+    'ai course', 'automation course', 'tech course', 'coding course', 'no code automation',
+    'workflow course', 'productivity course', 'business systems', 'process automation'
   ]
 })
 
@@ -111,9 +114,50 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preconnect to external domains */}
+        {/* DNS Prefetch & Preconnect for Performance */}
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://vitals.vercel-insights.com" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        
+        {/* Non-blocking font loading */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+          media="print"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var link = document.querySelector('link[href*="fonts.googleapis.com"]');
+                if (link) {
+                  link.media = 'all';
+                }
+              })();
+            `
+          }}
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+          />
+        </noscript>
+        
+        {/* Preload critical images */}
+        <link rel="preload" href="/hero-bg.webp" as="image" type="image/webp" />
+        
+        {/* Resource Hints for Better Performance */}
+        <link rel="prefetch" href="/instagram-ignited" />
+        <link rel="prefetch" href="/n8n-ai-automations" />
+        <link rel="prefetch" href="/digital-products" />
         
         {/* Favicon set */}
         <link rel="icon" href="/favicon.ico" />
@@ -142,16 +186,29 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.website) }}
         />
+        
+        {/* Critical CSS - Inline for immediate rendering */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            /* Critical above-the-fold styles */
+            body { margin: 0; padding: 0; background: #0a0a0a; color: #f9fafb; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif; }
+            .hero-section { min-height: 100vh; background: radial-gradient(ellipse at center, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.8) 70%, rgba(15, 23, 42, 1) 100%); }
+            h1, h2 { font-weight: 700; line-height: 1.2; }
+            .nav-fixed { position: fixed; top: 0; width: 100%; z-index: 50; backdrop-filter: blur(10px); }
+            .gradient-text { background: linear-gradient(to right, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+            @media (max-width: 768px) { h1 { font-size: 2.25rem; } }
+          `
+        }} />
       </head>
       <body className={montserrat.className}>
-        {/* Google Analytics */}
+        {/* Google Analytics - Optimized Loading */}
         <Script
-          strategy="afterInteractive"
+          strategy="worker"
           src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`} // Replace with actual GA ID
         />
         <Script
           id="google-analytics"
-          strategy="afterInteractive"
+          strategy="worker"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -162,10 +219,10 @@ export default function RootLayout({
           }}
         />
         
-        {/* Facebook Pixel */}
+        {/* Facebook Pixel - Deferred Loading */}
         <Script
           id="facebook-pixel"
-          strategy="afterInteractive"
+          strategy="worker"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)

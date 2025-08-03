@@ -2,7 +2,9 @@
 const nextConfig = {
   // Performance optimizations
   experimental: {
-    optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react'],
+    optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react', 'framer-motion'],
+    optimizeCss: true,
+    serverMinification: true,
   },
 
   // Turbopack configuration (now stable)
@@ -179,9 +181,18 @@ const nextConfig = {
     ]
   },
 
-  // Dynamic rewrites for programmatic pages
+  // Dynamic rewrites for programmatic pages + SEO optimization
   async rewrites() {
     return [
+      // SEO-critical sitemap routing
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap',
+      },
+      {
+        source: '/robots.txt',
+        destination: '/api/robots',
+      },
       // International redirects - country-specific pages
       {
         source: '/ca/:path*',
@@ -261,9 +272,11 @@ const nextConfig = {
       config.optimization.usedExports = true
       config.optimization.sideEffects = false
 
-      // Advanced chunk splitting
+      // Advanced chunk splitting for NUCLEAR performance
       config.optimization.splitChunks = {
         chunks: 'all',
+        minSize: 20000,
+        maxSize: 244000,
         cacheGroups: {
           framework: {
             chunks: 'all',
@@ -271,6 +284,25 @@ const nextConfig = {
             test: /(?<!node_modules.*)[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types)[\\/]/,
             priority: 40,
             enforce: true,
+          },
+          framerMotion: {
+            name: 'framer-motion',
+            test: /[\\/]node_modules[\\/]framer-motion[\\/]/,
+            priority: 30,
+            chunks: 'all',
+          },
+          animations: {
+            name: 'animations',
+            test: /[\\/](framer-motion|gsap|lottie)[\\/]/,
+            priority: 25,
+            chunks: 'async',
+          },
+          vendor: {
+            name: 'vendor',
+            test: /[\\/]node_modules[\\/]/,
+            priority: 10,
+            chunks: 'all',
+            minChunks: 2,
           },
           commons: {
             name: 'commons',
@@ -280,6 +312,11 @@ const nextConfig = {
           }
         }
       }
+      
+      // Tree shaking optimization
+      config.optimization.providedExports = true
+      config.optimization.usedExports = true
+      config.optimization.concatenateModules = true
     }
 
     return config
