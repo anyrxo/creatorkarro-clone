@@ -79,13 +79,13 @@ export default function BlogPage() {
             <div className="flex flex-col md:flex-row gap-6 mb-12">
               <SpotlightCard className="relative flex-1 bg-gray-800/80 border border-gray-600 rounded-xl overflow-hidden backdrop-blur-sm">
                 <div className="relative">
-                  <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300 w-5 h-5 z-10" />
+                  <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-300 w-6 h-6 z-10" />
                   <input
                     type="text"
                     placeholder="Search articles, topics, or tags..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-12 pr-4 py-4 bg-transparent text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl relative z-10 text-base"
+                    className="w-full pl-16 pr-6 py-6 bg-transparent text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl relative z-10 text-lg font-medium"
                   />
                 </div>
               </SpotlightCard>
@@ -247,9 +247,7 @@ export default function BlogPage() {
                 </div>
               ) : (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {filteredPosts
-                    .filter(post => !(searchTerm === '' && selectedCategory === 'All' && post.featured))
-                    .map((post, index) => (
+                  {filteredPosts.map((post, index) => (
                     <ScrollAnimation key={post.slug} animation="fade-up" delay={1200 + index * 100}>
                       <TiltCard className="h-full">
                         <Link href={`/blog/${post.slug}`}>
