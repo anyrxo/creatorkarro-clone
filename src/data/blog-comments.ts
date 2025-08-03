@@ -1,5 +1,5 @@
 // Auto-generated realistic blog comments
-// Generated on: 2025-08-03T09:16:28.246Z
+// Generated on: 2025-08-03T09:27:13.597Z
 
 export interface Comment {
   id: string;
@@ -23,403 +23,414 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "manus-ai-general-automation-agent",
     "comments": [
       {
-        "id": "b20dokvkt",
-        "username": "TechCreator",
+        "id": "dxnk79jr1",
+        "username": "Guest",
         "avatar": "",
-        "content": "Has anyone tried combining this with RunwayML? Wondering if there's synergy there.",
-        "timestamp": "2025-07-15T00:20:26.653Z",
-        "likes": 53,
+        "content": "that diagram finally made it click for me. was confused before",
+        "timestamp": "2025-07-22T12:18:12.072Z",
+        "likes": 43,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "sudi1el8b",
-        "username": "MobileFirst",
+        "id": "or7mgy1ur",
+        "username": "Guest",
         "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-26T16:53:26.657Z",
-        "likes": 38,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cukx9y2xp",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with manus.",
-        "timestamp": "2025-07-11T22:42:26.657Z",
-        "likes": 9,
+        "content": "decent breakdown but watch out for token limits. they sneak up on you",
+        "timestamp": "2025-08-03T02:12:12.072Z",
+        "likes": 47,
         "replies": [
           {
-            "id": "t4d0ir6aj",
-            "username": "SoloPreneur23",
+            "id": "9zjryhwst",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-28T22:03:26.657Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "rkyc6g8ja",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-30T06:55:26.657Z",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-08-03T09:25:12.072Z",
             "likes": 5,
             "replies": [],
             "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "7kcrk3ji7",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-26T13:52:26.657Z",
-        "likes": 5,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "9jmomp65d",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-11T18:52:26.657Z",
-        "likes": 22,
-        "replies": [
-          {
-            "id": "q58e1jbgi",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-08-02T07:04:26.657Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
           },
           {
-            "id": "t5j28i5ad",
-            "username": "StartupSally",
+            "id": "mbanu4cka",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-12T21:24:26.657Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "w72sfpusj",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-28T00:25:26.657Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "m7hyqlk5c",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "Been using Jasper for my content creation and it's a total game changer. The time savings alone justify the cost.",
-        "timestamp": "2025-07-28T13:03:26.657Z",
-        "likes": 9,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "5jq8and1a",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-27T05:00:26.657Z",
-        "likes": 33,
-        "replies": [
-          {
-            "id": "1gs6suex7",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-30T10:22:26.657Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "w4wuvxw4m",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T01:23:26.657Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "pjhq8ppu9",
-            "username": "FullStackFred",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-24T09:18:26.657Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 15
-  },
-  "telegram-bot-monetization": {
-    "postSlug": "telegram-bot-monetization",
-    "comments": [
-      {
-        "id": "feu1qwavn",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-13T14:54:26.657Z",
-        "likes": 25,
-        "replies": [
-          {
-            "id": "twh8tz9t0",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-02T03:47:26.657Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "vnnz3y9p1",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-20T04:45:26.657Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "xpoon8487",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-29T00:10:26.657Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "hiyqi9s2a",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-26T02:30:26.657Z",
-        "likes": 6,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mw3x9m72l",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using telegram, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-14T08:12:26.657Z",
-        "likes": 21,
-        "replies": [
-          {
-            "id": "j6i3omdpm",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-08-01T23:04:26.657Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "jkfv4lhpn",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T20:16:26.657Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "x2g044rok",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-28T10:28:26.657Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ey5ljsg1g",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-08-03T07:11:26.657Z",
-        "likes": 23,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "094tpr6rp",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-31T16:28:26.657Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "g6io6f78o",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-08-01T14:49:26.657Z",
-        "likes": 19,
-        "replies": [
-          {
-            "id": "68ghpbaeh",
-            "username": "DevOpsDaily",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T15:30:26.657Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "m7jevu38w",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-20T14:30:26.657Z",
-        "likes": 39,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "lo3w66yxf",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-27T04:10:26.657Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 15
-  },
-  "twitter-x-automation-2025": {
-    "postSlug": "twitter-x-automation-2025",
-    "comments": [
-      {
-        "id": "km8q3wvsb",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-22T14:05:26.657Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mtugs05z1",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-07T05:00:26.657Z",
-        "likes": 46,
-        "replies": [
-          {
-            "id": "atubgahbj",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-08-02T11:48:26.657Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "9y1uapj2r",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-20T05:01:26.657Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "3k4t6z3nd",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-07T07:13:26.657Z",
-        "likes": 54,
-        "replies": [
-          {
-            "id": "2vkfypx4f",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-28T20:42:26.657Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "yl89804no",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-31T19:02:26.657Z",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T09:16:12.072Z",
             "likes": 6,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ja5zz4ybn",
-            "username": "CreativeHustle",
+            "id": "ui1mddxov",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-01T23:55:26.657Z",
-            "likes": 5,
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-29T17:17:12.072Z",
+            "likes": 15,
             "replies": [],
             "isOP": false
           }
         ],
+        "isOP": false
+      },
+      {
+        "id": "yegvxpxw4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-13T19:24:12.072Z",
+        "likes": 7,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "bsu59q3tr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-27T15:03:12.072Z",
+        "likes": 49,
+        "replies": [
+          {
+            "id": "3hyr953ab",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-29T03:06:12.072Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "seidxinp9",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-28T03:42:12.072Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "dnfuky00t",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-29T12:58:12.072Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "yz28oen1o",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found ChatGPT? mind = blown. cant work without it now",
+        "timestamp": "2025-08-01T17:55:12.072Z",
+        "likes": 20,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "lqn2kntjs",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-10T04:13:12.072Z",
+        "likes": 54,
+        "replies": [
+          {
+            "id": "2u0dl5xhg",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-30T19:03:12.072Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "cwqx04pdt",
+        "username": "Guest",
+        "avatar": "",
+        "content": "that diagram finally made it click for me. was confused before",
+        "timestamp": "2025-08-01T04:53:12.072Z",
+        "likes": 31,
+        "replies": [
+          {
+            "id": "fbee91fbc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-31T08:44:12.072Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "fxunsu4nd",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-30T14:28:12.072Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "mumwy3zkm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-02T15:26:12.072Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "rs5wstfhs",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-07T19:22:12.072Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 18
+  },
+  "telegram-bot-monetization": {
+    "postSlug": "telegram-bot-monetization",
+    "comments": [
+      {
+        "id": "jgdb50r5b",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-30T05:47:12.072Z",
+        "likes": 50,
+        "replies": [
+          {
+            "id": "x85e95f7w",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T06:15:12.072Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "bxwemdm0y",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-28T17:22:12.072Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ycvg0zi35",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-19T11:52:12.072Z",
+        "likes": 53,
+        "replies": [
+          {
+            "id": "oeqehszjq",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-29T00:10:12.072Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "9xy9a90vj",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-30T00:34:12.072Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "4rldf5jp9",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-31T15:43:12.072Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "zho3y4hcq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-14T22:14:12.072Z",
+        "likes": 28,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "iajq3ajjv",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-12T02:43:12.072Z",
+        "likes": 37,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "n8kzm5dhy",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-29T20:04:12.072Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "te2cv3d33",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-12T19:45:12.072Z",
+        "likes": 8,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "xjs9sofyq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-04T12:46:12.072Z",
+        "likes": 12,
+        "replies": [
+          {
+            "id": "86mohgy1b",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-31T18:54:12.072Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 13
+  },
+  "twitter-x-automation-2025": {
+    "postSlug": "twitter-x-automation-2025",
+    "comments": [
+      {
+        "id": "7p3n915dd",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-08-02T18:36:12.072Z",
+        "likes": 40,
+        "replies": [
+          {
+            "id": "2hot01f68",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-30T17:43:12.072Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "qshbhoapf",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-22T06:21:12.072Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "z7hbs0sz9",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-27T13:04:12.072Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "pzco36a2c",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-09T00:43:12.073Z",
+        "likes": 28,
+        "replies": [
+          {
+            "id": "339qrq2cs",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-27T14:51:12.073Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ppym4no9q",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T19:09:12.073Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "eur9tc7c1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-21T21:08:12.073Z",
+        "likes": 18,
+        "replies": [],
         "isOP": false
       }
     ],
@@ -429,70 +440,142 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "ai-automation-business",
     "comments": [
       {
-        "id": "bh46uva5y",
-        "username": "CreativeHustle",
+        "id": "0g68kprhh",
+        "username": "Guest",
         "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-27T11:01:26.657Z",
-        "likes": 7,
+        "content": "which tool should i start with? so many options its overwhelming af",
+        "timestamp": "2025-07-20T22:18:12.073Z",
+        "likes": 12,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "esdgk7ugl",
-        "username": "ServerlessSteve",
+        "id": "3qrybzr0x",
+        "username": "Guest",
         "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-18T05:33:26.657Z",
-        "likes": 52,
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-14T15:50:12.073Z",
+        "likes": 44,
+        "replies": [
+          {
+            "id": "4px5ncbad",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-09T17:50:12.073Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "tkz5iolpc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how do yall handle the whole ai ethics thing? kinda struggling with it",
+        "timestamp": "2025-07-29T15:38:12.073Z",
+        "likes": 32,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "75ix876w8",
-        "username": "FrontendPhil",
+        "id": "yl0rrueup",
+        "username": "Guest",
         "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-26T07:04:26.657Z",
+        "content": "not trying to be negative but ive been burned by hyped tools before",
+        "timestamp": "2025-07-05T22:50:12.073Z",
+        "likes": 21,
+        "replies": [
+          {
+            "id": "vk2ybqbdn",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-28T21:52:12.073Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "evccch9mb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-28T00:50:12.073Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "kruja5ek3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-08-01T22:10:12.073Z",
+        "likes": 43,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "wulh35o48",
+        "username": "Guest",
+        "avatar": "",
+        "content": "that diagram finally made it click for me. was confused before",
+        "timestamp": "2025-07-05T01:08:12.073Z",
         "likes": 36,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "lh1kzq5y1",
-        "username": "DigitalNomadSarah",
+        "id": "b495aqka9",
+        "username": "Guest",
         "avatar": "",
-        "content": "These AI solutions always look great in demos but struggle in real-world scenarios.",
-        "timestamp": "2025-07-17T03:41:26.657Z",
-        "likes": 8,
+        "content": "not trying to be negative but ive been burned by hyped tools before",
+        "timestamp": "2025-07-19T01:48:12.073Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "jcbsfsil9",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-21T07:16:12.073Z",
+        "likes": 7,
         "replies": [
           {
-            "id": "0q82k17ol",
-            "username": "MobileFirst",
+            "id": "cpndilll4",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-29T06:23:26.657Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "jrd7ely4e",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-28T02:53:26.657Z",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-02T09:00:12.073Z",
             "likes": 6,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ja1izp4y1",
-            "username": "BuildingMyEmpire",
+            "id": "ja8wrsk8u",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-01T20:19:26.657Z",
-            "likes": 7,
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-30T12:33:12.073Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "p8vc5469i",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-31T01:24:12.073Z",
+            "likes": 3,
             "replies": [],
             "isOP": false
           }
@@ -500,112 +583,66 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       }
     ],
-    "commentCount": 7
+    "commentCount": 14
   },
   "cursor-ai-coding": {
     "postSlug": "cursor-ai-coding",
     "comments": [
       {
-        "id": "hz55cc0gz",
-        "username": "ServerlessSteve",
+        "id": "61o41qq3f",
+        "username": "Guest",
         "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-31T00:01:26.657Z",
-        "likes": 54,
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-08-01T04:42:12.073Z",
+        "likes": 51,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "5g3poife1",
-        "username": "InfluencerMike",
+        "id": "yfdzjnlya",
+        "username": "Guest",
         "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-30T15:24:26.657Z",
-        "likes": 54,
+        "content": "how do yall handle the whole ai ethics thing? kinda struggling with it",
+        "timestamp": "2025-07-16T05:22:12.073Z",
+        "likes": 7,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "341phbaxp",
-        "username": "TechStack_",
+        "id": "2l9o7r87z",
+        "username": "Guest",
         "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-07-05T10:57:26.657Z",
-        "likes": 17,
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-04T18:02:12.073Z",
+        "likes": 53,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "8q8xduczq",
-        "username": "DataScienceD",
+        "id": "rvnpw3d9b",
+        "username": "Guest",
         "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-08T11:03:26.657Z",
-        "likes": 14,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 4
-  },
-  "hr-automation-systems": {
-    "postSlug": "hr-automation-systems",
-    "comments": [
-      {
-        "id": "wpvgi7or5",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-20T21:00:26.657Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "82krocpxa",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-08-01T19:46:26.657Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "gz7g0lkk2",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-17T08:07:26.657Z",
-        "likes": 35,
+        "content": "which tool should i start with? so many options its overwhelming af",
+        "timestamp": "2025-07-30T10:38:12.073Z",
+        "likes": 27,
         "replies": [
           {
-            "id": "hnsjsemfq",
-            "username": "CreativeHustle",
+            "id": "4iek3v8ui",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-27T19:36:26.657Z",
-            "likes": 15,
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-31T04:27:12.073Z",
+            "likes": 11,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "8ne9ta8aj",
-            "username": "BackendBeast",
+            "id": "v8h45a97x",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-20T10:12:26.657Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "00tflvakl",
-            "username": "APIGuru",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-08-01T04:29:26.657Z",
-            "likes": 2,
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-27T16:09:12.073Z",
+            "likes": 14,
             "replies": [],
             "isOP": false
           }
@@ -613,52 +650,140 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "lnls57j8e",
-        "username": "CodeMaster_X",
+        "id": "uiwus5ya2",
+        "username": "Guest",
         "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-05T18:24:26.657Z",
-        "likes": 19,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "q30fq7cpe",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-11T18:44:26.657Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cwo13904u",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-29T08:03:26.657Z",
-        "likes": 25,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "iahxd8x5f",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-23T09:16:26.657Z",
+        "content": "api integration looks solid but heads up - rate limiting with cursor can be a pain",
+        "timestamp": "2025-07-28T18:41:12.073Z",
         "likes": 40,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "4pqk1an56",
-        "username": "ScaleUpStudio",
+        "id": "l3johhp8h",
+        "username": "Guest",
         "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-08-01T06:21:26.657Z",
-        "likes": 21,
+        "content": "remember when i first found RunwayML? mind = blown. cant work without it now",
+        "timestamp": "2025-07-26T23:09:12.073Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "hr-automation-systems": {
+    "postSlug": "hr-automation-systems",
+    "comments": [
+      {
+        "id": "mq0l151xr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-04T23:51:12.073Z",
+        "likes": 17,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "1y8sp5iui",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-11T09:54:12.073Z",
+        "likes": 39,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "xxpev8rey",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-17T05:27:12.073Z",
+        "likes": 20,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "t3sv22i71",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-21T19:02:12.073Z",
+        "likes": 42,
+        "replies": [
+          {
+            "id": "pghrrd6ij",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-27T12:48:12.073Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "j4tcgdzzi",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-31T08:09:12.073Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "tkndsynth",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-20T05:19:12.073Z",
+        "likes": 32,
+        "replies": [
+          {
+            "id": "7t6enno8y",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-29T17:52:12.073Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "09a0mw80b",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-26T21:00:12.073Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "7xgu9sh7k",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-31T02:14:12.073Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "hxaeor42s",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-21T12:07:12.073Z",
+        "likes": 50,
         "replies": [],
         "isOP": false
       }
@@ -669,30 +794,20 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "whop-clipping",
     "comments": [
       {
-        "id": "1l8dqqnxj",
-        "username": "SoloPreneur23",
+        "id": "b4b0jqou1",
+        "username": "Guest",
         "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-08-01T08:12:26.657Z",
-        "likes": 44,
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-11T13:57:12.073Z",
+        "likes": 39,
         "replies": [
           {
-            "id": "z6wi3kczy",
-            "username": "ContentKing_92",
+            "id": "azjmiov6l",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T15:51:26.657Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "9ib41b8av",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T00:30:26.657Z",
-            "likes": 7,
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-31T04:47:12.073Z",
+            "likes": 1,
             "replies": [],
             "isOP": false
           }
@@ -700,60 +815,30 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "qvosmf1y4",
-        "username": "PassiveIncomeJoe",
+        "id": "vcn0mwa27",
+        "username": "Guest",
         "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-05T20:35:26.657Z",
-        "likes": 42,
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-08T20:11:12.073Z",
+        "likes": 33,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "dmwb28tog",
-        "username": "ContentKing_92",
+        "id": "0nkck8690",
+        "username": "Guest",
         "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-07-07T02:26:26.657Z",
-        "likes": 25,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ge2ku1z06",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-26T16:03:26.657Z",
-        "likes": 17,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "9j9n6t8mk",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-07-20T01:08:26.657Z",
-        "likes": 34,
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-17T00:22:12.073Z",
+        "likes": 28,
         "replies": [
           {
-            "id": "hj9pj1iob",
-            "username": "StartupSucc3ss",
+            "id": "sfe58mhrl",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T15:20:26.657Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "4189irn8k",
-            "username": "BusinessHacks",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-27T10:53:26.657Z",
-            "likes": 6,
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-27T20:05:12.073Z",
+            "likes": 13,
             "replies": [],
             "isOP": false
           }
@@ -761,1297 +846,152 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "v71sxob99",
-        "username": "RevenueOptimizer",
+        "id": "cabeuhppr",
+        "username": "Guest",
         "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-16T13:22:26.657Z",
-        "likes": 20,
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-28T00:22:12.073Z",
+        "likes": 11,
+        "replies": [
+          {
+            "id": "6bygg7ws0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-28T15:31:12.073Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "l4umarozu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-27T11:25:12.073Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "tj9dm327f",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-29T11:10:12.073Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "nz7mk1jgo",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-15T05:34:12.073Z",
+        "likes": 15,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "gl8901vqd",
-        "username": "CreatorLife",
+        "id": "23nh8kq9q",
+        "username": "Guest",
         "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-29T03:40:26.657Z",
-        "likes": 51,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "a2t9a6k3t",
-        "username": "OnlineEmpire",
-        "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-08-01T22:35:26.657Z",
-        "likes": 35,
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-25T14:40:12.073Z",
+        "likes": 54,
         "replies": [],
         "isOP": false
       }
     ],
-    "commentCount": 12
+    "commentCount": 11
   },
   "chatgpt-prompts-for-business": {
     "postSlug": "chatgpt-prompts-for-business",
     "comments": [
       {
-        "id": "fyxkb1x7p",
-        "username": "CreatorCodex",
+        "id": "h8avdkry9",
+        "username": "Guest",
         "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-17T03:54:26.657Z",
-        "likes": 9,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "jp3o2qwvq",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-08-01T02:56:26.657Z",
-        "likes": 12,
-        "replies": [
-          {
-            "id": "3lqby9kzq",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-08-01T03:21:26.657Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "n8w9toi5c",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-27T12:15:26.657Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "esgq1lst4",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-08T07:06:26.657Z",
-        "likes": 40,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ok4e5q7sz",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Claude - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-08T21:16:26.657Z",
-        "likes": 36,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "968oe8rby",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-23T17:42:26.657Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "twitter-growth-hacks-2025": {
-    "postSlug": "twitter-growth-hacks-2025",
-    "comments": [
-      {
-        "id": "r22d64by4",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "For anyone implementing this - start small and test. Don't try to change everything at once.",
-        "timestamp": "2025-07-05T04:27:26.657Z",
-        "likes": 18,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "eqbjvqc1e",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Cross-platform consistency is harder than it looks. This framework helps streamline that.",
-        "timestamp": "2025-07-15T22:22:26.657Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "sioaumbik",
-        "username": "BusinessHacks",
-        "avatar": "",
-        "content": "Anyone tried this on newer platforms like {emerging platform}? Wondering about first-mover advantage.",
-        "timestamp": "2025-07-15T16:42:26.657Z",
-        "likes": 31,
-        "replies": [
-          {
-            "id": "2zhi8zwky",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-01T17:39:26.657Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "5c1ttnnje",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-29T01:30:26.657Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "6pxj8uthf",
-            "username": "ROI_Focused",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-29T04:27:26.657Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 6
-  },
-  "api-automation-integration": {
-    "postSlug": "api-automation-integration",
-    "comments": [
-      {
-        "id": "zflk9goe8",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-15T12:03:26.658Z",
-        "likes": 53,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "5cgp5v8zj",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-14T17:06:26.658Z",
-        "likes": 6,
-        "replies": [
-          {
-            "id": "4ljbmr3el",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-29T06:55:26.658Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "x2je4q26e",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-12T01:56:26.658Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "gj5sl262p",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-13T19:08:26.658Z",
-        "likes": 14,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "plpkjb1it",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-08T05:15:26.658Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cb5rd8j4h",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-24T11:29:26.658Z",
-        "likes": 53,
-        "replies": [
-          {
-            "id": "zpz6wdi0u",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-23T12:51:26.658Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "lv8kv9hbb",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-08T19:29:26.658Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "15z166cz7",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-26T17:11:26.658Z",
-        "likes": 12,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "personal-brand-building": {
-    "postSlug": "personal-brand-building",
-    "comments": [
-      {
-        "id": "j79zujzu2",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-29T19:21:26.760Z",
-        "likes": 47,
-        "replies": [
-          {
-            "id": "ctfn38jgv",
-            "username": "BusinessBuilder",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-30T06:51:26.760Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "d9z73vqrc",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-05T22:09:26.760Z",
-        "likes": 38,
-        "replies": [
-          {
-            "id": "9fkpbxqve",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T16:25:26.760Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "nh3dq663a",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-30T01:56:26.760Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "651g0j3cd",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-14T13:16:26.760Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "r23nkdg2c",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-19T20:41:26.760Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "60wim9gx5",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-29T10:44:26.760Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "53jiahiz3",
-        "username": "ROI_Focused",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-22T13:23:26.760Z",
-        "likes": 10,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "qa2z7czba",
-        "username": "SaaSFounder",
-        "avatar": "",
-        "content": "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-        "timestamp": "2025-07-06T05:57:26.760Z",
-        "likes": 40,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "dart-ai-free-agentic-project-manager": {
-    "postSlug": "dart-ai-free-agentic-project-manager",
-    "comments": [
-      {
-        "id": "8u1y16n0r",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-24T15:46:26.760Z",
-        "likes": 27,
-        "replies": [
-          {
-            "id": "w7q1tq09t",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-08-01T08:20:26.760Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "9khdouw0i",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-31T18:40:26.760Z",
-        "likes": 5,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "bmqii1u01",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-13T07:32:26.760Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "kwb23sj2o",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with dart.",
-        "timestamp": "2025-07-26T22:57:26.760Z",
-        "likes": 34,
-        "replies": [
-          {
-            "id": "fj618x0ij",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-27T15:46:26.760Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "owggrn0r0",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-28T07:12:26.760Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "yn1orwx9s",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "These AI solutions always look great in demos but struggle in real-world scenarios.",
-        "timestamp": "2025-07-25T11:16:26.760Z",
-        "likes": 39,
-        "replies": [
-          {
-            "id": "onfx1a2fl",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-08-02T05:33:26.760Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "8o71rda8p",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-23T00:16:26.760Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "5olki07tv",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-19T20:15:26.760Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "xgv4uw0of",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-27T03:15:26.760Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 12
-  },
-  "voice-ai-automation": {
-    "postSlug": "voice-ai-automation",
-    "comments": [
-      {
-        "id": "as3zicofg",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-05T09:05:26.760Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "x4nibn14o",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-12T17:02:26.760Z",
-        "likes": 51,
-        "replies": [
-          {
-            "id": "alzbpg4qy",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-29T09:22:26.760Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "g3dh7nhvv",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T18:02:26.760Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "lkpm8e56l",
-            "username": "APIGuru",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-30T11:17:26.760Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "tbglq7p9b",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-08-03T05:53:26.760Z",
-        "likes": 18,
-        "replies": [
-          {
-            "id": "c31d7hu9l",
-            "username": "FullStackFred",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-28T12:59:26.760Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "rn22ibnle",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-01T20:32:26.760Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "rnqhppz0h",
-            "username": "DevOpsDaily",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T04:44:26.760Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "7xi1s40sf",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-28T11:31:26.760Z",
+        "content": "been using Midjourney for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-07-09T23:56:12.073Z",
         "likes": 33,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "nngyl8180",
-        "username": "CloudArchitect",
+        "id": "ulg5nqt0y",
+        "username": "Guest",
         "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-13T16:40:26.760Z",
-        "likes": 18,
-        "replies": [
-          {
-            "id": "y4g5u32dd",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-08-01T06:59:26.760Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 12
-  },
-  "ai-influencer-trends": {
-    "postSlug": "ai-influencer-trends",
-    "comments": [
-      {
-        "id": "eulp899en",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "These AI solutions always look great in demos but struggle in real-world scenarios.",
-        "timestamp": "2025-07-14T09:41:26.760Z",
-        "likes": 24,
-        "replies": [
-          {
-            "id": "tqck4xf6o",
-            "username": "DevOpsDaily",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-27T13:03:26.760Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "an9vvqffa",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "These AI solutions always look great in demos but struggle in real-world scenarios.",
-        "timestamp": "2025-07-26T13:00:26.760Z",
-        "likes": 33,
-        "replies": [
-          {
-            "id": "16z0x9yxf",
-            "username": "FrontendPhil",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-02T09:11:26.760Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "m9xyxjime",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-30T15:28:26.760Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "vwydzfuux",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-08T19:41:26.760Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 6
-  },
-  "robotic-process-automation": {
-    "postSlug": "robotic-process-automation",
-    "comments": [
-      {
-        "id": "7jtgnwkiy",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-04T23:33:26.760Z",
-        "likes": 6,
-        "replies": [
-          {
-            "id": "n6byujx5p",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-01T06:26:26.760Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "iarjhnyiy",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-30T06:52:26.760Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "jikcgfuyg",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-30T19:15:26.760Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "lzcxg8wtk",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using robotic, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-04T17:26:26.760Z",
-        "likes": 28,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "xw86iptii",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-04T23:05:26.760Z",
-        "likes": 36,
-        "replies": [
-          {
-            "id": "8dzqlte9n",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-10T10:26:26.760Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ieyz07wy3",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T20:11:26.760Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "86nodiiri",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-19T12:24:26.760Z",
-        "likes": 23,
-        "replies": [
-          {
-            "id": "egwupr39a",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-27T18:05:26.760Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "7ynk8gilx",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-28T21:23:26.760Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "etbrjgil6",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-27T14:02:26.760Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "yx5fv1nrf",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-11T14:42:26.760Z",
-        "likes": 54,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "juitswei3",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-20T19:17:26.760Z",
-        "likes": 18,
-        "replies": [
-          {
-            "id": "0ph2v9h93",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-31T20:05:26.760Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "8w9hhmjti",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-30T21:55:26.760Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "rxalxpfcg",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-28T14:52:26.760Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "na3mm8o0i",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-14T14:09:26.760Z",
-        "likes": 34,
-        "replies": [
-          {
-            "id": "1a5y58jkz",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-31T19:32:26.760Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "si1lp9u8l",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T08:06:26.760Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 20
-  },
-  "llama-4-multimodal-ai-breakthrough": {
-    "postSlug": "llama-4-multimodal-ai-breakthrough",
-    "comments": [
-      {
-        "id": "yyfrchgmp",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-07T22:25:26.760Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "p5v5eqhbr",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-28T04:30:26.760Z",
-        "likes": 26,
-        "replies": [
-          {
-            "id": "amtls1j7e",
-            "username": "DevOpsDaily",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-08-01T16:52:26.760Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "721hyp4bo",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-07-09T11:24:26.760Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "3gd168yb8",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-17T06:09:26.760Z",
-        "likes": 33,
-        "replies": [
-          {
-            "id": "w30ipusbq",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-29T22:23:26.760Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "2w9bzzwj5",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-01T14:08:26.760Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "q94j61god",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T01:11:26.760Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 8
-  },
-  "ai-content-creation-mastery": {
-    "postSlug": "ai-content-creation-mastery",
-    "comments": [
-      {
-        "id": "9ij262fpv",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Midjourney - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-05T12:46:26.760Z",
-        "likes": 21,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "tsvlc2yt4",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-04T12:50:26.760Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "r05by7359",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-23T19:25:26.760Z",
-        "likes": 24,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "7mvd1rwu1",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-28T18:27:26.760Z",
-        "likes": 43,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "8h98uep8e",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "Has anyone tried combining this with RunwayML? Wondering if there's synergy there.",
-        "timestamp": "2025-07-04T21:35:26.760Z",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-15T04:46:12.073Z",
         "likes": 46,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "is29ykckt",
-        "username": "DigitalNomadSarah",
+        "id": "plxs6d714",
+        "username": "Guest",
         "avatar": "",
-        "content": "Has anyone tried combining this with RunwayML? Wondering if there's synergy there.",
-        "timestamp": "2025-07-17T18:36:26.760Z",
-        "likes": 36,
+        "content": "been using Claude for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-07-31T20:01:12.073Z",
+        "likes": 13,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "8sif9rhyc",
-        "username": "DevOpsDaily",
+        "id": "3xeqxghzu",
+        "username": "Guest",
         "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-05T16:58:26.760Z",
-        "likes": 28,
+        "content": "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+        "timestamp": "2025-08-01T11:46:12.073Z",
+        "likes": 27,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 4
+  },
+  "twitter-growth-hacks-2025": {
+    "postSlug": "twitter-growth-hacks-2025",
+    "comments": [
+      {
+        "id": "2gzx5qtqy",
+        "username": "Guest",
+        "avatar": "",
+        "content": "cross platform stuff is hard. this helps keep it consistent",
+        "timestamp": "2025-07-25T10:06:12.073Z",
+        "likes": 27,
         "replies": [
           {
-            "id": "z6yyz3e1y",
-            "username": "CreatorLife",
+            "id": "q2dh1a8oh",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T09:09:26.760Z",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-30T02:33:12.073Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "y3sc9bx2u",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-30T23:15:12.073Z",
             "likes": 8,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "4ayoxttir",
-            "username": "MLEngineer99",
+            "id": "g3wtdo82j",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-28T16:52:26.760Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "grm5bsyx4",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-16T10:10:26.760Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "prompt-engineering-guide": {
-    "postSlug": "prompt-engineering-guide",
-    "comments": [
-      {
-        "id": "tpn80kdlu",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "The data-driven approach is refreshing. Too many 'gurus' rely on anecdotes instead of metrics.",
-        "timestamp": "2025-07-31T23:10:26.760Z",
-        "likes": 22,
-        "replies": [
-          {
-            "id": "pn0xn6tju",
-            "username": "GrowthExpert",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-27T23:46:26.760Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "7lxtjro0w",
-            "username": "ProfitMaximizer",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-12T05:35:26.760Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "cthxjv0gc",
-            "username": "DigitalBiz",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-29T07:16:26.760Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ehdrf3z7f",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-15T23:48:26.760Z",
-        "likes": 6,
-        "replies": [
-          {
-            "id": "44cnu1o7v",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-28T07:10:26.760Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "pmetrwhx0",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-28T12:43:26.760Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "cowmseoy7",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-31T06:12:26.760Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "v2vz90shw",
-        "username": "ScalingUp_",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-19T11:11:26.760Z",
-        "likes": 22,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "o2dggj7zx",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-26T11:52:26.760Z",
-        "likes": 13,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "vectorize-all-in-one-rag-platform": {
-    "postSlug": "vectorize-all-in-one-rag-platform",
-    "comments": [
-      {
-        "id": "a5znq0sux",
-        "username": "ProfitMaximizer",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-09T09:32:26.760Z",
-        "likes": 37,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ybqlz6v4b",
-        "username": "ScalingUp_",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-17T00:14:26.760Z",
-        "likes": 33,
-        "replies": [
-          {
-            "id": "dskd64rxn",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-08-01T13:44:26.760Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "xdkf8ixdc",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-28T17:12:26.760Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "qwvlijozy",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-16T03:35:26.760Z",
-        "likes": 6,
-        "replies": [
-          {
-            "id": "uf1juok43",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-29T12:26:26.760Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-31T18:39:12.073Z",
             "likes": 9,
             "replies": [],
             "isOP": false
@@ -2060,60 +1000,143 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "zvzn79qlv",
-        "username": "RevenueOptimizer",
+        "id": "l6usouaa3",
+        "username": "Guest",
         "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-18T15:36:26.760Z",
-        "likes": 32,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "x3bckb228",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-        "timestamp": "2025-07-23T05:49:26.760Z",
-        "likes": 43,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "vu0v0dkts",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-08-01T03:47:26.760Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ouwozjkv0",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-18T19:17:26.760Z",
-        "likes": 9,
+        "content": "used these tactics for a client. engagement went up 300%",
+        "timestamp": "2025-07-11T11:48:12.073Z",
+        "likes": 53,
         "replies": [
           {
-            "id": "dg8885t5e",
-            "username": "StrategySteve",
+            "id": "i6n6cj6qg",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-08-02T07:29:26.760Z",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-02T00:23:12.073Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "acv0mzj84",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-28T17:13:12.073Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "0iaacchbu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tiktok algorithm changes every week lol. how do you keep up?",
+        "timestamp": "2025-07-23T03:18:12.073Z",
+        "likes": 52,
+        "replies": [
+          {
+            "id": "3l15fun6n",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-08-01T17:14:12.073Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "bcx0b9h8e",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-29T09:51:12.073Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "gbnu2c5m6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-31T10:13:12.073Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "twql1wo0r",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these tactics for a client. engagement went up 300%",
+        "timestamp": "2025-07-27T16:38:12.073Z",
+        "likes": 24,
+        "replies": [
+          {
+            "id": "5x5skw9qc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-01T16:30:12.073Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "5mov1kz6a",
+        "username": "Guest",
+        "avatar": "",
+        "content": "platform specific tips are helpful. each one needs different approach",
+        "timestamp": "2025-07-11T21:04:12.073Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "adbnwu8fh",
+        "username": "Guest",
+        "avatar": "",
+        "content": "cross platform stuff is hard. this helps keep it consistent",
+        "timestamp": "2025-07-16T12:35:12.073Z",
+        "likes": 39,
+        "replies": [
+          {
+            "id": "5tyqga5yx",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-08-01T08:38:12.073Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "8xu3p9jex",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T10:29:12.073Z",
             "likes": 1,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "fo0yd7qlm",
-            "username": "StartupSucc3ss",
+            "id": "ftcihwwsi",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-17T22:16:26.760Z",
-            "likes": 15,
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T06:52:12.073Z",
+            "likes": 10,
             "replies": [],
             "isOP": false
           }
@@ -2121,76 +1144,253 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       }
     ],
-    "commentCount": 12
+    "commentCount": 18
   },
-  "ai-content-opportunity": {
-    "postSlug": "ai-content-opportunity",
+  "api-automation-integration": {
+    "postSlug": "api-automation-integration",
     "comments": [
       {
-        "id": "nqmu17d9c",
-        "username": "MLEngineer99",
+        "id": "3rlujb3py",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-14T00:16:26.760Z",
-        "likes": 10,
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-20T02:08:12.073Z",
+        "likes": 26,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "hcrgcwvub",
-        "username": "FrontendPhil",
+        "id": "q84z6szf1",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been using RunwayML for my content creation and it's a total game changer. The time savings alone justify the cost.",
-        "timestamp": "2025-08-01T00:45:26.760Z",
-        "likes": 40,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "6aqlyy0sz",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Has anyone tried combining this with Claude? Wondering if there's synergy there.",
-        "timestamp": "2025-07-29T12:01:26.760Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "yuqlra6m9",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-09T23:42:26.760Z",
-        "likes": 53,
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-08T04:42:12.073Z",
+        "likes": 42,
         "replies": [
           {
-            "id": "xrg0lzmow",
-            "username": "ContentKing_92",
+            "id": "s1y7wfn7g",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T01:54:26.760Z",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-09T18:36:12.073Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "zakaaza8o",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-30T18:21:12.073Z",
             "likes": 12,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "9gc4u4gm2",
-            "username": "CodeMaster_X",
+            "id": "yvh11f7xh",
+            "username": "Guest",
             "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-08-01T09:11:26.760Z",
-            "likes": 8,
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-27T11:41:12.073Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "h2ry2isee",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-10T02:28:12.073Z",
+        "likes": 19,
+        "replies": [
+          {
+            "id": "uwfz3xky9",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-31T17:03:12.073Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ri50rpkr6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-29T02:50:12.073Z",
+        "likes": 9,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "va1s0ci4j",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-16T02:59:12.073Z",
+        "likes": 9,
+        "replies": [
+          {
+            "id": "adjummeq0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-30T20:07:12.073Z",
+            "likes": 11,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "su5mqzl46",
-            "username": "DevOpsDaily",
+            "id": "3o529zm9s",
+            "username": "Guest",
             "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-30T12:41:26.760Z",
-            "likes": 10,
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-30T16:22:12.073Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "personal-brand-building": {
+    "postSlug": "personal-brand-building",
+    "comments": [
+      {
+        "id": "rcfja2eh8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-09T07:21:12.175Z",
+        "likes": 51,
+        "replies": [
+          {
+            "id": "k3vlkmify",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-27T21:48:12.175Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "yfsvf91ih",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-01T02:22:12.175Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "20rfpeduy",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-19T06:21:12.175Z",
+        "likes": 29,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "6btb1gtwl",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-21T15:41:12.175Z",
+        "likes": 51,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 5
+  },
+  "dart-ai-free-agentic-project-manager": {
+    "postSlug": "dart-ai-free-agentic-project-manager",
+    "comments": [
+      {
+        "id": "ecasyvgtm",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone tried mixing this with Midjourney? wondering if they work together",
+        "timestamp": "2025-08-01T23:43:12.175Z",
+        "likes": 36,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ypms99yhv",
+        "username": "Guest",
+        "avatar": "",
+        "content": "that diagram finally made it click for me. was confused before",
+        "timestamp": "2025-07-22T22:17:12.175Z",
+        "likes": 22,
+        "replies": [
+          {
+            "id": "9s7uu7k8w",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-18T14:20:12.175Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "gqnsynub0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-31T03:31:12.175Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ke2f3euq4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "not trying to be negative but ive been burned by hyped tools before",
+        "timestamp": "2025-07-23T03:24:12.175Z",
+        "likes": 9,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "595dalsug",
+        "username": "Guest",
+        "avatar": "",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-16T20:30:12.175Z",
+        "likes": 26,
+        "replies": [
+          {
+            "id": "mhexmbilz",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T17:17:12.175Z",
+            "likes": 9,
             "replies": [],
             "isOP": false
           }
@@ -2200,34 +1400,85 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 7
   },
-  "linkedin-growth-strategies-2025": {
-    "postSlug": "linkedin-growth-strategies-2025",
+  "voice-ai-automation": {
+    "postSlug": "voice-ai-automation",
     "comments": [
       {
-        "id": "l3kprrpzk",
-        "username": "PassiveIncomeJoe",
+        "id": "zb5r41uh3",
+        "username": "Guest",
         "avatar": "",
-        "content": "Anyone tried this on newer platforms like {emerging platform}? Wondering about first-mover advantage.",
-        "timestamp": "2025-07-27T16:21:26.865Z",
-        "likes": 33,
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-27T19:44:12.175Z",
+        "likes": 5,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "t46z61044",
+        "username": "Guest",
+        "avatar": "",
+        "content": "decent breakdown but watch out for token limits. they sneak up on you",
+        "timestamp": "2025-07-13T19:07:12.175Z",
+        "likes": 37,
         "replies": [
           {
-            "id": "8rmunk7ho",
-            "username": "DigitalNomadSarah",
+            "id": "xv9c1cvqs",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-08-01T19:02:26.865Z",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-08-02T07:01:12.175Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "pamfpqvr3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-29T08:50:12.175Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "mpgut56bh",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone tried mixing this with Claude? wondering if they work together",
+        "timestamp": "2025-07-15T00:49:12.175Z",
+        "likes": 37,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ocjy5vjjv",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-05T20:58:12.175Z",
+        "likes": 35,
+        "replies": [
+          {
+            "id": "x3u2vvkfx",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-31T00:06:12.175Z",
             "likes": 5,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "gy9e096o7",
-            "username": "ContentKing_92",
+            "id": "c1omewm38",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-07T14:56:26.865Z",
-            "likes": 10,
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-27T16:08:12.175Z",
+            "likes": 8,
             "replies": [],
             "isOP": false
           }
@@ -2235,71 +1486,30 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "i4uz82eau",
-        "username": "DigitalBiz",
+        "id": "87td1w6iz",
+        "username": "Guest",
         "avatar": "",
-        "content": "Tried this approach across 3 different niches and got consistent results. Well researched.",
-        "timestamp": "2025-07-21T04:41:26.865Z",
-        "likes": 43,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "aq61abuuf",
-        "username": "BusinessBuilder",
-        "avatar": "",
-        "content": "For anyone implementing this - start small and test. Don't try to change everything at once.",
-        "timestamp": "2025-07-28T15:07:26.865Z",
-        "likes": 45,
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-31T00:37:12.175Z",
+        "likes": 26,
         "replies": [
           {
-            "id": "9p7mmijy2",
-            "username": "StartupSucc3ss",
+            "id": "2e0oae3eg",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-30T04:56:26.865Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "5cwsv1ukk",
-        "username": "MonetizeThis",
-        "avatar": "",
-        "content": "Does this work equally well across all platforms? Instagram vs LinkedIn have such different dynamics.",
-        "timestamp": "2025-07-08T16:15:26.865Z",
-        "likes": 39,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "5i4olocrf",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "Used this exact funnel structure for my course launch and converted at 12%. These principles work.",
-        "timestamp": "2025-07-26T21:45:26.865Z",
-        "likes": 52,
-        "replies": [
-          {
-            "id": "ydtktit93",
-            "username": "StartupSucc3ss",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-30T15:23:26.865Z",
-            "likes": 3,
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T09:26:12.175Z",
+            "likes": 2,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "r61v8rtrh",
-            "username": "SaaSFounder",
+            "id": "6iysg2yz8",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-30T02:08:26.865Z",
-            "likes": 12,
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-27T22:43:12.175Z",
+            "likes": 2,
             "replies": [],
             "isOP": false
           }
@@ -2307,50 +1517,40 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "0b5izv7bf",
-        "username": "ProfitMaximizer",
+        "id": "ok8qtbnti",
+        "username": "Guest",
         "avatar": "",
-        "content": "The platform-specific tips are helpful. Each one really does require a different approach.",
-        "timestamp": "2025-07-29T23:07:26.865Z",
-        "likes": 41,
+        "content": "which tool should i start with? so many options its overwhelming af",
+        "timestamp": "2025-07-30T14:29:12.175Z",
+        "likes": 33,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "qui9pqyl3",
-        "username": "BusinessBuilder",
+        "id": "2uf72lgrx",
+        "username": "Guest",
         "avatar": "",
-        "content": "Anyone tried this on newer platforms like {emerging platform}? Wondering about first-mover advantage.",
-        "timestamp": "2025-07-29T12:50:26.865Z",
-        "likes": 32,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "88jqj7417",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Anyone tried this on newer platforms like {emerging platform}? Wondering about first-mover advantage.",
-        "timestamp": "2025-08-02T07:21:26.865Z",
-        "likes": 18,
+        "content": "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+        "timestamp": "2025-07-29T20:35:12.175Z",
+        "likes": 25,
         "replies": [
           {
-            "id": "oizm5re6x",
-            "username": "AutomationAndy",
+            "id": "9nin3a1cw",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-27T21:40:26.865Z",
-            "likes": 11,
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-28T10:42:12.175Z",
+            "likes": 14,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "adz253o26",
-            "username": "AutomationAndy",
+            "id": "agn25keg7",
+            "username": "Guest",
             "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-08-01T13:56:26.865Z",
-            "likes": 7,
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-31T06:01:12.175Z",
+            "likes": 14,
             "replies": [],
             "isOP": false
           }
@@ -2360,44 +1560,663 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 15
   },
-  "content-marketing-automation": {
-    "postSlug": "content-marketing-automation",
+  "ai-influencer-trends": {
+    "postSlug": "ai-influencer-trends",
     "comments": [
       {
-        "id": "jmsyvaims",
-        "username": "AutomationAndy",
+        "id": "cqd78d10e",
+        "username": "Guest",
         "avatar": "",
-        "content": "Great tutorial! For anyone using content, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-25T08:50:26.865Z",
-        "likes": 43,
+        "content": "decent breakdown but watch out for token limits. they sneak up on you",
+        "timestamp": "2025-07-24T06:29:12.175Z",
+        "likes": 23,
+        "replies": [
+          {
+            "id": "q2ymzedtb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-27T16:48:12.175Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "tlqdqcznx",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-17T04:40:12.175Z",
+        "likes": 38,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "xm3zyclw9",
-        "username": "BackendBeast",
+        "id": "91u6ex4cb",
+        "username": "Guest",
         "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-27T22:26:26.865Z",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-31T00:30:12.175Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "fmdtod42b",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found Jasper? mind = blown. cant work without it now",
+        "timestamp": "2025-07-19T03:48:12.175Z",
+        "likes": 44,
+        "replies": [
+          {
+            "id": "4onz0jsum",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-08-01T18:26:12.175Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "robotic-process-automation": {
+    "postSlug": "robotic-process-automation",
+    "comments": [
+      {
+        "id": "frhhx8fvm",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-19T04:53:12.175Z",
+        "likes": 21,
+        "replies": [
+          {
+            "id": "1122wail7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-24T15:29:12.175Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "zmniokn1v",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T13:10:12.175Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "wm9sj7ftn",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-04T23:43:12.175Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "4tcu8z8jd",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on robotic",
+        "timestamp": "2025-07-13T11:01:12.175Z",
+        "likes": 47,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "cs5q1ggmh",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-08-03T07:17:12.175Z",
+        "likes": 28,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "bo0ndneld",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-10T19:48:12.175Z",
+        "likes": 31,
+        "replies": [
+          {
+            "id": "9cls85h7i",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-20T00:54:12.175Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "1nsbgq3cc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-31T13:20:12.175Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "1z469bmy3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-22T07:01:12.175Z",
+        "likes": 18,
+        "replies": [
+          {
+            "id": "079vm9v4k",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-12T13:32:12.175Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "llama-4-multimodal-ai-breakthrough": {
+    "postSlug": "llama-4-multimodal-ai-breakthrough",
+    "comments": [
+      {
+        "id": "gwq1szutg",
+        "username": "Guest",
+        "avatar": "",
+        "content": "api integration looks solid but heads up - rate limiting with llama can be a pain",
+        "timestamp": "2025-07-12T12:11:12.175Z",
         "likes": 7,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "eb87ti7e0",
-        "username": "CreativeHustle",
+        "id": "9kmqkokz5",
+        "username": "Guest",
         "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-21T06:16:26.865Z",
-        "likes": 39,
+        "content": "remember when i first found Jasper? mind = blown. cant work without it now",
+        "timestamp": "2025-07-21T11:23:12.175Z",
+        "likes": 42,
         "replies": [
           {
-            "id": "006bxrxav",
-            "username": "ScaleUpStudio",
+            "id": "1ppi4huix",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-28T16:36:26.865Z",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-28T06:20:12.175Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "v5y710d64",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T06:48:12.175Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "hc8n97gcs",
+        "username": "Guest",
+        "avatar": "",
+        "content": "api integration looks solid but heads up - rate limiting with llama can be a pain",
+        "timestamp": "2025-07-29T05:58:12.175Z",
+        "likes": 43,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 5
+  },
+  "ai-content-creation-mastery": {
+    "postSlug": "ai-content-creation-mastery",
+    "comments": [
+      {
+        "id": "sd3lii88z",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-17T00:20:12.175Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "rjhj0se9i",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found Claude? mind = blown. cant work without it now",
+        "timestamp": "2025-07-04T19:14:12.175Z",
+        "likes": 11,
+        "replies": [
+          {
+            "id": "ec44wkqqn",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-28T05:06:12.175Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "pun8enqo4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-23T16:50:12.175Z",
+        "likes": 41,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "4robhdtkl",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-27T13:00:12.175Z",
+        "likes": 30,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 5
+  },
+  "prompt-engineering-guide": {
+    "postSlug": "prompt-engineering-guide",
+    "comments": [
+      {
+        "id": "3cftw5k3c",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-22T11:08:12.175Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "f38g7mff8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-06T17:25:12.175Z",
+        "likes": 40,
+        "replies": [
+          {
+            "id": "iljwovqwl",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-30T00:09:12.175Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "lq48whc99",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-29T16:39:12.175Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "frui099wa",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-23T12:28:12.175Z",
+        "likes": 14,
+        "replies": [
+          {
+            "id": "c3iumshs5",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-08-02T01:09:12.175Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "1x6wdiei6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-27T19:12:12.175Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "zs02gwa9y",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T14:16:12.175Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "miy6s5cno",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-09T13:14:12.175Z",
+        "likes": 21,
+        "replies": [
+          {
+            "id": "s6eah925f",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-29T04:38:12.175Z",
             "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "q85pxmu08",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-08-02T02:18:12.175Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "7lb1cny9w",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-31T18:06:12.175Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "u1hhs9vez",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-21T12:22:12.175Z",
+        "likes": 23,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "mak184m9x",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried this on my saas and revenue went up 40% last quarter. actually works",
+        "timestamp": "2025-07-17T17:11:12.175Z",
+        "likes": 18,
+        "replies": [
+          {
+            "id": "gdo9a9iyb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-19T17:51:12.175Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "vqzvjcom8",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T02:47:12.175Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "k0ybp15yo",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T23:19:12.175Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "htxl2um5m",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this matches what i learned from {book/course}. consistency wins",
+        "timestamp": "2025-08-01T10:12:12.175Z",
+        "likes": 22,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 18
+  },
+  "vectorize-all-in-one-rag-platform": {
+    "postSlug": "vectorize-all-in-one-rag-platform",
+    "comments": [
+      {
+        "id": "nn5o8b5gj",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-11T07:42:12.175Z",
+        "likes": 29,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ksps02jis",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-08T01:16:12.175Z",
+        "likes": 39,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "trznuctoc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-28T18:53:12.175Z",
+        "likes": 13,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "02pmaph6j",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-25T16:34:12.175Z",
+        "likes": 26,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 4
+  },
+  "ai-content-opportunity": {
+    "postSlug": "ai-content-opportunity",
+    "comments": [
+      {
+        "id": "lo8v7pt1m",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-23T04:58:12.175Z",
+        "likes": 52,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "8pgszl44v",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found Claude? mind = blown. cant work without it now",
+        "timestamp": "2025-08-02T07:16:12.175Z",
+        "likes": 35,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "vqjawhudo",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been using ChatGPT for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-07-11T01:00:12.175Z",
+        "likes": 16,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 3
+  },
+  "linkedin-growth-strategies-2025": {
+    "postSlug": "linkedin-growth-strategies-2025",
+    "comments": [
+      {
+        "id": "2l6svapmw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "start small with this stuff. dont try to change everything at once",
+        "timestamp": "2025-07-04T21:53:12.277Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "s95jqy0mn",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tiktok algorithm changes every week lol. how do you keep up?",
+        "timestamp": "2025-07-09T08:48:12.277Z",
+        "likes": 33,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "f46268rtq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone try this on newer platforms? thinking about first mover advantage",
+        "timestamp": "2025-07-10T06:01:12.277Z",
+        "likes": 24,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "a5ib9wmly",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been doing marketing for 10 years. this nails the psychology part",
+        "timestamp": "2025-07-28T07:15:12.277Z",
+        "likes": 21,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 4
+  },
+  "content-marketing-automation": {
+    "postSlug": "content-marketing-automation",
+    "comments": [
+      {
+        "id": "tpx3m2asi",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-29T09:14:12.277Z",
+        "likes": 47,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "bvrodk7l9",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-18T20:21:12.277Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ib4c2ch0l",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-28T03:11:12.277Z",
+        "likes": 8,
+        "replies": [
+          {
+            "id": "mkzu685iq",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-02T07:08:12.277Z",
+            "likes": 12,
             "replies": [],
             "isOP": false
           }
@@ -2411,510 +2230,80 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "discord-automation-bots",
     "comments": [
       {
-        "id": "jko3fbftz",
-        "username": "MarketingMaven",
+        "id": "qml986o92",
+        "username": "Guest",
         "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-20T00:54:26.865Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "871s51a63",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-26T01:08:26.865Z",
-        "likes": 26,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "qizizb5ed",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-10T01:27:26.865Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "eoh32x4m2",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-08T20:12:26.865Z",
-        "likes": 30,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 4
-  },
-  "project-management-automation": {
-    "postSlug": "project-management-automation",
-    "comments": [
-      {
-        "id": "x0uq0fyas",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-05T07:49:26.865Z",
-        "likes": 35,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "qhspno0gk",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-07T02:03:26.865Z",
-        "likes": 22,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "xkmc7u32x",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-30T23:56:26.865Z",
-        "likes": 22,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 3
-  },
-  "monetize-with-ai": {
-    "postSlug": "monetize-with-ai",
-    "comments": [
-      {
-        "id": "wh16jbokl",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Claude - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-27T22:55:26.865Z",
-        "likes": 51,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "3l7zggt5e",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-15T13:46:26.865Z",
-        "likes": 23,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "py9sibbya",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-20T19:36:26.865Z",
-        "likes": 45,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2tmcmszem",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-06T15:05:26.865Z",
-        "likes": 47,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "fgr9l2oat",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-27T17:37:26.865Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "1iaffqmkl",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-08-03T03:19:26.865Z",
-        "likes": 28,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 6
-  },
-  "content-scaling-framework": {
-    "postSlug": "content-scaling-framework",
-    "comments": [
-      {
-        "id": "qw4cza6ua",
-        "username": "DigitalBiz",
-        "avatar": "",
-        "content": "Anyone tried this on newer platforms like {emerging platform}? Wondering about first-mover advantage.",
-        "timestamp": "2025-07-24T06:18:26.865Z",
-        "likes": 23,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "nt1d441r5",
-        "username": "SaaSFounder",
-        "avatar": "",
-        "content": "For anyone implementing this - start small and test. Don't try to change everything at once.",
-        "timestamp": "2025-07-15T00:05:26.865Z",
-        "likes": 35,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ufs9eikq1",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "Cross-platform consistency is harder than it looks. This framework helps streamline that.",
-        "timestamp": "2025-07-28T23:24:26.865Z",
-        "likes": 36,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "329rb3ylc",
-        "username": "StrategySteve",
-        "avatar": "",
-        "content": "Tried this approach across 3 different niches and got consistent results. Well researched.",
-        "timestamp": "2025-08-01T04:20:26.865Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "gni3adb2l",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "Cross-platform consistency is harder than it looks. This framework helps streamline that.",
-        "timestamp": "2025-07-11T18:18:26.865Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mlbv4a1ae",
-        "username": "BusinessBuilder",
-        "avatar": "",
-        "content": "Been in marketing for 10 years and this is spot on. The psychology behind it is everything.",
-        "timestamp": "2025-07-28T06:13:26.865Z",
-        "likes": 26,
-        "replies": [
-          {
-            "id": "bm61aiaug",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T00:30:26.865Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "dqtpzw8gz",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-24T07:57:26.865Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "s1jyu97uj",
-            "username": "ProfitMaximizer",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-02T01:02:26.865Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "omhc5vfh8",
-        "username": "StrategySteve",
-        "avatar": "",
-        "content": "The platform-specific tips are helpful. Each one really does require a different approach.",
-        "timestamp": "2025-07-31T23:27:26.865Z",
-        "likes": 39,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "5o0yn6kqy",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "Used this exact funnel structure for my course launch and converted at 12%. These principles work.",
-        "timestamp": "2025-07-06T23:20:26.866Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "deepseek-market-disruption": {
-    "postSlug": "deepseek-market-disruption",
-    "comments": [
-      {
-        "id": "3i7ktknmy",
-        "username": "BusinessHacks",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-13T22:59:26.867Z",
-        "likes": 45,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "94azu0e6o",
-        "username": "ROI_Focused",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-15T04:55:26.867Z",
-        "likes": 39,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "dcckygy4f",
-        "username": "StrategySteve",
-        "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-16T01:02:26.867Z",
-        "likes": 7,
-        "replies": [
-          {
-            "id": "qhpe65d69",
-            "username": "RevenueOptimizer",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-31T07:42:26.867Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "7g83ahqgx",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-24T23:14:26.867Z",
-        "likes": 54,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "nfugq9mk3",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-26T01:24:26.867Z",
-        "likes": 17,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "0bj14hwvl",
-        "username": "BusinessMinded",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-31T19:32:26.867Z",
-        "likes": 25,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "social-media-automation": {
-    "postSlug": "social-media-automation",
-    "comments": [
-      {
-        "id": "suanijdgx",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-08T16:02:26.867Z",
-        "likes": 24,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mneh2abvo",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-18T16:02:26.867Z",
-        "likes": 32,
-        "replies": [
-          {
-            "id": "0vq9wpzzl",
-            "username": "FullStackFred",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-06T13:13:26.867Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "v025wbz5d",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-30T19:28:26.867Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "15gyrc1e5",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-09T20:50:26.867Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "b38emz4hb",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-14T01:10:26.867Z",
-        "likes": 49,
-        "replies": [
-          {
-            "id": "6txgmjli6",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-06T04:34:26.867Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "wm6pglixt",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-31T21:26:26.867Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "4n4a6x93t",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-23T04:01:26.867Z",
-        "likes": 21,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mu5awgjzi",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-15T16:38:26.867Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "d7a5jyoh0",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-13T02:25:26.867Z",
-        "likes": 9,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "ai-research-content-marketing": {
-    "postSlug": "ai-research-content-marketing",
-    "comments": [
-      {
-        "id": "reghez62g",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-09T22:45:26.868Z",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-27T18:57:12.277Z",
         "likes": 43,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "g7u1x93gj",
-        "username": "CloudArchitect",
+        "id": "dojjljib1",
+        "username": "Guest",
         "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-14T21:41:26.868Z",
-        "likes": 46,
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-17T15:05:12.277Z",
+        "likes": 11,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "c005vcx1u",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-25T18:50:12.277Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "uaksng9d1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-14T18:37:12.277Z",
+        "likes": 26,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "7bs3b48f3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on discord",
+        "timestamp": "2025-07-27T12:30:12.277Z",
+        "likes": 26,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "0bkvmn2tt",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-22T22:55:12.277Z",
+        "likes": 40,
         "replies": [
           {
-            "id": "v6qhpri6g",
-            "username": "StartupSally",
+            "id": "ck0sipl7y",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-29T15:31:26.868Z",
-            "likes": 12,
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-28T03:56:12.277Z",
+            "likes": 9,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ykct2nl6c",
-            "username": "CreatorLife",
+            "id": "wzlrixyi8",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-08-01T08:51:26.869Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "m00s58m24",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-27T15:43:26.869Z",
-            "likes": 3,
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-27T20:31:12.277Z",
+            "likes": 1,
             "replies": [],
             "isOP": false
           }
@@ -2922,20 +2311,56 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "g9hmp9tis",
-        "username": "TechCreator",
+        "id": "fbbbb404s",
+        "username": "Guest",
         "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-08-02T12:30:26.869Z",
-        "likes": 46,
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-25T15:24:12.277Z",
+        "likes": 47,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 9
+  },
+  "project-management-automation": {
+    "postSlug": "project-management-automation",
+    "comments": [
+      {
+        "id": "dvx2irclp",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on project",
+        "timestamp": "2025-07-17T07:29:12.277Z",
+        "likes": 19,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "u2ejpqmrm",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-30T21:33:12.277Z",
+        "likes": 50,
         "replies": [
           {
-            "id": "w2quu19tr",
-            "username": "MLEngineer99",
+            "id": "2v8lkagrx",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-08T23:32:26.869Z",
-            "likes": 3,
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-29T14:17:12.277Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "65redya4x",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-04T19:08:12.277Z",
+            "likes": 4,
             "replies": [],
             "isOP": false
           }
@@ -2943,86 +2368,235 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "82rmuakjt",
-        "username": "TechCreator",
+        "id": "3qk2vswos",
+        "username": "Guest",
         "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-17T01:25:26.869Z",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-25T22:52:12.277Z",
         "likes": 50,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "pt5a1jx87",
-        "username": "AutomationAndy",
+        "id": "awczkpoao",
+        "username": "Guest",
         "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-25T18:47:26.869Z",
+        "content": "nice tutorial. btw theres an easier way to do triggers on project",
+        "timestamp": "2025-07-31T15:45:12.277Z",
+        "likes": 48,
+        "replies": [
+          {
+            "id": "iv1x0fjr1",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T19:30:12.277Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "0ecfwfsx3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on project",
+        "timestamp": "2025-07-29T22:28:12.277Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "a3cp7b9ew",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-10T12:35:12.277Z",
+        "likes": 49,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 9
+  },
+  "monetize-with-ai": {
+    "postSlug": "monetize-with-ai",
+    "comments": [
+      {
+        "id": "inqo5thj8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-15T11:21:12.277Z",
+        "likes": 47,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "4fmmdy869",
+        "username": "Guest",
+        "avatar": "",
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-18T03:40:12.277Z",
         "likes": 6,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "8u4p8xpgf",
-        "username": "CreatorLife",
+        "id": "8ntifc5xp",
+        "username": "Guest",
         "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-31T13:20:26.869Z",
-        "likes": 33,
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-08T05:10:12.277Z",
+        "likes": 22,
+        "replies": [
+          {
+            "id": "0zpyjqp8g",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-27T16:34:12.277Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "9a6uycl1t",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T00:48:12.277Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "nbnviblvk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been using Jasper for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-07-18T03:16:12.277Z",
+        "likes": 34,
+        "replies": [
+          {
+            "id": "0z4stain7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T10:20:12.277Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "t96h5831z",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-28T00:27:12.277Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "5tk9l69h8",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-27T15:05:12.277Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "6hjr0uuty",
+        "username": "Guest",
+        "avatar": "",
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-27T04:57:12.277Z",
+        "likes": 23,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "6opfr3fsy",
-        "username": "SoloPreneur23",
+        "id": "ozeo6scq3",
+        "username": "Guest",
         "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-07-20T20:11:26.869Z",
-        "likes": 6,
+        "content": "anyone tried mixing this with Jasper? wondering if they work together",
+        "timestamp": "2025-07-07T08:48:12.277Z",
+        "likes": 38,
         "replies": [],
         "isOP": false
       }
     ],
     "commentCount": 11
   },
-  "deepseek-r1-open-source-ai-revolution": {
-    "postSlug": "deepseek-r1-open-source-ai-revolution",
+  "content-scaling-framework": {
+    "postSlug": "content-scaling-framework",
     "comments": [
       {
-        "id": "zeoyrtrum",
-        "username": "FullStackFred",
+        "id": "4ss59o466",
+        "username": "Guest",
         "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-20T22:17:26.869Z",
-        "likes": 26,
+        "content": "used this funnel for my course launch. got 12% conversion which is sick",
+        "timestamp": "2025-07-28T23:08:12.277Z",
+        "likes": 43,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "u520dqjjd",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used this funnel for my course launch. got 12% conversion which is sick",
+        "timestamp": "2025-07-10T00:37:12.277Z",
+        "likes": 49,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "rd7pzklvk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "timing matters way more than people think. test different times",
+        "timestamp": "2025-07-16T02:59:12.277Z",
+        "likes": 32,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "0wggfcvfb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "timing matters way more than people think. test different times",
+        "timestamp": "2025-07-13T14:04:12.277Z",
+        "likes": 39,
         "replies": [
           {
-            "id": "i3cq0439s",
-            "username": "MobileFirst",
+            "id": "pckk0nytk",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-18T11:04:26.869Z",
-            "likes": 7,
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-27T16:53:12.277Z",
+            "likes": 1,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "xjxg93fhw",
-            "username": "PytonPro",
+            "id": "gdn7i716l",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-31T07:00:26.869Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "b0pk47sdp",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-28T17:52:26.869Z",
-            "likes": 15,
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-28T03:02:12.277Z",
+            "likes": 3,
             "replies": [],
             "isOP": false
           }
@@ -3030,492 +2604,391 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "etpoawnjg",
-        "username": "CreativeHustle",
+        "id": "vojerffz6",
+        "username": "Guest",
         "avatar": "",
-        "content": "This reminds me of when I first discovered RunwayML - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-27T15:15:26.869Z",
+        "content": "start small with this stuff. dont try to change everything at once",
+        "timestamp": "2025-07-31T03:04:12.277Z",
+        "likes": 52,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 7
+  },
+  "deepseek-market-disruption": {
+    "postSlug": "deepseek-market-disruption",
+    "comments": [
+      {
+        "id": "uc7inu0vf",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-09T18:47:12.277Z",
+        "likes": 22,
+        "replies": [
+          {
+            "id": "3pfcjw7rz",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-08-02T07:58:12.277Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "i9iqmnwbs",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-28T05:37:12.277Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "5wsusy04f",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-06T17:58:12.277Z",
+        "likes": 30,
+        "replies": [
+          {
+            "id": "t1oou95j6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-14T23:44:12.277Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "4jd97f57f",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-08-01T09:18:12.277Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "y9djuoo04",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-17T21:49:12.277Z",
         "likes": 7,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "dfnxytfu7",
-        "username": "CloudArchitect",
+        "id": "lb771avtc",
+        "username": "Guest",
         "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-27T01:27:26.869Z",
-        "likes": 30,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "hmgphg409",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-27T21:03:26.869Z",
-        "likes": 42,
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-10T14:39:12.277Z",
+        "likes": 48,
         "replies": [
           {
-            "id": "ykdyf4oxr",
-            "username": "FullStackFred",
+            "id": "9spmvgy8z",
+            "username": "Guest",
             "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-31T08:54:26.869Z",
-            "likes": 11,
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T00:09:12.277Z",
+            "likes": 4,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "dl9fnnmug",
-            "username": "AutomationAndy",
+            "id": "h66blo2gd",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-25T12:58:26.869Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "gf9roh0fg",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-08-01T15:58:26.869Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "os1atbgqw",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-07-23T16:16:26.869Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "hd1wlg6y1",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-14T15:50:26.869Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 12
-  },
-  "email-marketing-guide": {
-    "postSlug": "email-marketing-guide",
-    "comments": [
-      {
-        "id": "yj692975j",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-31T14:52:26.970Z",
-        "likes": 27,
-        "replies": [
-          {
-            "id": "y81p6lutv",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-29T01:49:26.970Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "b5mg1nant",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-30T08:17:26.970Z",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-18T23:11:12.277Z",
             "likes": 14,
             "replies": [],
             "isOP": false
-          },
-          {
-            "id": "j87idvxlk",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-30T03:48:26.970Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
           }
         ],
         "isOP": false
       },
       {
-        "id": "7vmaf111v",
-        "username": "StartupSally",
+        "id": "c9gelf76n",
+        "username": "Guest",
         "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-24T11:13:26.970Z",
-        "likes": 51,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ldku42lps",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-25T03:06:26.970Z",
-        "likes": 35,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "854rrypx4",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "Has anyone tried combining this with ChatGPT? Wondering if there's synergy there.",
-        "timestamp": "2025-07-12T20:17:26.970Z",
-        "likes": 15,
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-09T14:36:12.277Z",
+        "likes": 24,
         "replies": [
           {
-            "id": "1a3tz3i9q",
-            "username": "CodeMaster_X",
+            "id": "xewbnsngi",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-30T00:32:26.970Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "3tla1tvw5",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-31T04:38:26.970Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "au9y0kzvn",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-14T07:11:26.970Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "22k0vkaee",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-10T01:38:26.970Z",
-        "likes": 44,
-        "replies": [
-          {
-            "id": "vey5iled2",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-01T10:35:26.970Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 12
-  },
-  "viral-carousel-guide": {
-    "postSlug": "viral-carousel-guide",
-    "comments": [
-      {
-        "id": "l6jei8i0q",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-25T23:21:26.970Z",
-        "likes": 10,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "1ujr7k4v8",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The data-driven approach is refreshing. Too many 'gurus' rely on anecdotes instead of metrics.",
-        "timestamp": "2025-07-28T15:12:26.970Z",
-        "likes": 18,
-        "replies": [
-          {
-            "id": "a2zq4kyor",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-31T12:48:26.970Z",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-24T06:00:12.277Z",
             "likes": 2,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ifde9u52n",
-            "username": "MarketingMaven",
+            "id": "voeyoilsm",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-27T20:08:26.970Z",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-31T04:18:12.277Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "fha1wu4ga",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-27T12:20:12.277Z",
             "likes": 5,
             "replies": [],
             "isOP": false
           }
         ],
         "isOP": false
-      },
-      {
-        "id": "f1w4m3gsj",
-        "username": "EntrepreneurE",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-23T18:05:26.970Z",
-        "likes": 53,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "w1oyut7r2",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-27T08:34:26.970Z",
-        "likes": 17,
-        "replies": [
-          {
-            "id": "wm9dl8xul",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-28T07:49:26.970Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ynpnuk96v",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T10:28:26.970Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "malmyz8vz",
-            "username": "EntrepreneurE",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-08-02T01:44:26.970Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ye3sxboj1",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-08-01T15:00:26.970Z",
-        "likes": 33,
-        "replies": [
-          {
-            "id": "otyo8cu1k",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T15:47:26.970Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "xi0lgxz7y",
-            "username": "ScalingUp_",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-12T17:30:26.970Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "wvazdfr52",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T14:27:26.970Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "f1a4s6g0a",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-21T01:12:26.970Z",
-        "likes": 16,
-        "replies": [],
-        "isOP": false
       }
     ],
     "commentCount": 14
   },
-  "digital-product-pricing": {
-    "postSlug": "digital-product-pricing",
+  "social-media-automation": {
+    "postSlug": "social-media-automation",
     "comments": [
       {
-        "id": "fquegw3do",
-        "username": "CreativeHustle",
+        "id": "ucjdpqsjw",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-08T09:24:26.970Z",
-        "likes": 41,
-        "replies": [
-          {
-            "id": "dlazo5kg3",
-            "username": "ScalingUp_",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-31T11:54:26.970Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "rm39qb0vd",
-            "username": "ProfitMaximizer",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-27T23:40:26.970Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ee491eqgw",
-        "username": "RevenueOptimizer",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-08-01T02:38:26.970Z",
-        "likes": 15,
-        "replies": [
-          {
-            "id": "qdgx8nxz3",
-            "username": "GrowthExpert",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-08-03T02:53:26.970Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "tn4asm97o",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-18T17:27:26.970Z",
-        "likes": 40,
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-29T21:13:12.277Z",
+        "likes": 36,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "68psiqxm2",
-        "username": "BusinessHacks",
+        "id": "oto3oxkhl",
+        "username": "Guest",
         "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-19T23:48:26.970Z",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-29T21:16:12.277Z",
+        "likes": 13,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "5gdmkoj0s",
+        "username": "Guest",
+        "avatar": "",
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-08-03T04:28:12.277Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "zkh3r4lhr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-05T04:58:12.277Z",
+        "likes": 7,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "qqy9c8v83",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on social",
+        "timestamp": "2025-07-06T09:06:12.277Z",
+        "likes": 42,
+        "replies": [
+          {
+            "id": "v5sqleeyr",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-31T17:26:12.277Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "0rf5rsci8",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T13:45:12.277Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "oc6tq142c",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-29T06:30:12.277Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "h7qk1fjmx",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-26T05:37:12.277Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "pi69vjsu8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-04T09:47:12.277Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
+  },
+  "ai-research-content-marketing": {
+    "postSlug": "ai-research-content-marketing",
+    "comments": [
+      {
+        "id": "y9yd6v1wa",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-11T06:31:12.277Z",
+        "likes": 47,
+        "replies": [
+          {
+            "id": "e23pz0rtm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-27T15:55:12.277Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "zvuc5gdzm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-29T18:44:12.277Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ly0g04gw0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-07-24T09:50:12.277Z",
         "likes": 26,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "il6hcw2v0",
-        "username": "DigitalNomadSarah",
+        "id": "qw0j3kdbp",
+        "username": "Guest",
         "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-11T03:24:26.970Z",
-        "likes": 25,
+        "content": "api integration looks solid but heads up - rate limiting with ai can be a pain",
+        "timestamp": "2025-07-06T10:05:12.277Z",
+        "likes": 32,
+        "replies": [
+          {
+            "id": "d98etee8u",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T03:45:12.277Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "nzawc6zrc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-31T13:59:12.277Z",
+        "likes": 8,
         "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "xtinef6ef",
+        "username": "Guest",
+        "avatar": "",
+        "content": "which tool should i start with? so many options its overwhelming af",
+        "timestamp": "2025-07-20T02:51:12.277Z",
+        "likes": 6,
+        "replies": [
+          {
+            "id": "wc1jx86ta",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-25T09:06:12.277Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
         "isOP": false
       }
     ],
-    "commentCount": 8
+    "commentCount": 9
   },
-  "passive-income-blueprint-digital-products": {
-    "postSlug": "passive-income-blueprint-digital-products",
+  "deepseek-r1-open-source-ai-revolution": {
+    "postSlug": "deepseek-r1-open-source-ai-revolution",
     "comments": [
       {
-        "id": "jsmfn4o9a",
-        "username": "TechCreator",
+        "id": "j7gyiuja6",
+        "username": "Guest",
         "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-28T17:40:26.970Z",
-        "likes": 36,
+        "content": "anyone tried mixing this with Jasper? wondering if they work together",
+        "timestamp": "2025-07-11T19:39:12.277Z",
+        "likes": 18,
         "replies": [
           {
-            "id": "k8hs7o9tw",
-            "username": "StartupSucc3ss",
+            "id": "plpb45ft0",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T00:44:26.970Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "yz7vh9rx5",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-28T00:14:26.970Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "o8u91j8ln",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-13T23:25:26.970Z",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-31T19:56:12.277Z",
             "likes": 10,
             "replies": [],
             "isOP": false
@@ -3524,426 +2997,19 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "bafa28lv2",
-        "username": "CreatorLife",
+        "id": "rw7clfphs",
+        "username": "Guest",
         "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-26T08:02:26.970Z",
-        "likes": 16,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "6yw45lt64",
-        "username": "MonetizeThis",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-08-02T14:11:26.970Z",
-        "likes": 23,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "pfcmzeawe",
-        "username": "DigitalBiz",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-07T22:06:26.970Z",
-        "likes": 9,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "ai-agents-business-automation": {
-    "postSlug": "ai-agents-business-automation",
-    "comments": [
-      {
-        "id": "jxfe41opv",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-23T15:57:26.970Z",
-        "likes": 15,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "a5ptn5kiv",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-12T04:58:26.970Z",
-        "likes": 14,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "f25oggwpu",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Has anyone tried combining this with Midjourney? Wondering if there's synergy there.",
-        "timestamp": "2025-07-22T02:52:26.970Z",
-        "likes": 5,
-        "replies": [
-          {
-            "id": "yof1r3ju6",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-30T07:51:26.970Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "4pd9bk8co",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-31T10:29:26.970Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "lzwece7v3",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-31T17:04:26.970Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "06ljb5jry",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-29T00:44:26.970Z",
-        "likes": 23,
-        "replies": [
-          {
-            "id": "5hnkq4drk",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-02T06:17:26.970Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "lr7mbodb3",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-29T20:13:26.970Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "s1588uacu",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-27T07:45:26.970Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "h5ajengbh",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-18T07:21:26.970Z",
-        "likes": 17,
-        "replies": [
-          {
-            "id": "gnjmr1ty6",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-29T05:09:26.970Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "0tfruuchk",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-08-02T06:01:26.970Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "zw1oogb5u",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-29T03:32:26.970Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 14
-  },
-  "crypto-trading-bots": {
-    "postSlug": "crypto-trading-bots",
-    "comments": [
-      {
-        "id": "130nb2x7r",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-29T08:00:26.970Z",
-        "likes": 24,
-        "replies": [
-          {
-            "id": "ox1a51dnp",
-            "username": "DevLife2024",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-30T13:50:26.970Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "zpzgp5v0q",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-29T16:03:26.970Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "x7lwe9jwd",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-15T21:21:26.970Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ft8d5nxil",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-24T20:10:26.970Z",
-        "likes": 30,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "vq3dgyqix",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-31T14:47:26.970Z",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-21T03:25:12.277Z",
         "likes": 46,
         "replies": [
           {
-            "id": "rm1706la7",
-            "username": "FullStackFred",
+            "id": "10s3pmynf",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-16T15:20:26.970Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "br67vr0m6",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-31T14:34:26.970Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "1gq8qzhyo",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-24T06:14:26.970Z",
-        "likes": 15,
-        "replies": [
-          {
-            "id": "2c96y0kv1",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-13T09:27:26.970Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "rab8ydncf",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-31T03:22:26.970Z",
-        "likes": 16,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "3lfu5rur7",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-08-02T03:33:26.970Z",
-        "likes": 41,
-        "replies": [
-          {
-            "id": "6kxq3si8y",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-29T18:58:26.970Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "3ck99klzw",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-13T23:56:26.970Z",
-        "likes": 44,
-        "replies": [
-          {
-            "id": "7pehewlr1",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-30T21:44:26.970Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "skzjli1gx",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-16T04:49:26.970Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "4g9l1pmi6",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-02T06:19:26.970Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 17
-  },
-  "instagram-growth-2025": {
-    "postSlug": "instagram-growth-2025",
-    "comments": [
-      {
-        "id": "r70nnuqe0",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "Used this exact funnel structure for my course launch and converted at 12%. These principles work.",
-        "timestamp": "2025-07-11T23:26:26.970Z",
-        "likes": 40,
-        "replies": [
-          {
-            "id": "afeax9sfx",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-29T14:42:26.970Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "6uh4jq2b9",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-19T17:25:26.970Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "c4f5s1jt5",
-        "username": "RevenueOptimizer",
-        "avatar": "",
-        "content": "Used this exact funnel structure for my course launch and converted at 12%. These principles work.",
-        "timestamp": "2025-07-25T16:11:26.970Z",
-        "likes": 45,
-        "replies": [
-          {
-            "id": "d4e7ryocq",
-            "username": "BusinessBuilder",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-17T06:12:26.970Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "x1go6knoh",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T18:09:26.970Z",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-29T14:27:12.277Z",
             "likes": 1,
             "replies": [],
             "isOP": false
@@ -3952,185 +3018,1106 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "46763dkpe",
-        "username": "SaaSFounder",
+        "id": "3c8jvsv7k",
+        "username": "Guest",
         "avatar": "",
-        "content": "Cross-platform consistency is harder than it looks. This framework helps streamline that.",
-        "timestamp": "2025-07-17T15:59:26.970Z",
-        "likes": 21,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "ai-voice-generator-comparison": {
-    "postSlug": "ai-voice-generator-comparison",
-    "comments": [
-      {
-        "id": "76c4n21cr",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-12T16:56:26.970Z",
-        "likes": 36,
-        "replies": [
-          {
-            "id": "80ek2k64l",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-13T13:59:26.970Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "c0w1kutw2",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-30T05:45:26.970Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "2vlsrbuyx",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-07T11:15:26.970Z",
-        "likes": 33,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "0olxwecgz",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-27T15:54:26.970Z",
-        "likes": 33,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "kwe6jiftj",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Has anyone tried combining this with ChatGPT? Wondering if there's synergy there.",
-        "timestamp": "2025-07-31T04:33:26.970Z",
-        "likes": 25,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 6
-  },
-  "inventory-management-automation": {
-    "postSlug": "inventory-management-automation",
-    "comments": [
-      {
-        "id": "b0lkj9nij",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-31T20:41:26.970Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "bq5qm3wxc",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-30T23:45:26.970Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "btr0xxznw",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-07T01:10:26.970Z",
-        "likes": 17,
-        "replies": [
-          {
-            "id": "ji796hxr6",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-30T07:48:26.970Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "k22up5io4",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-30T13:52:26.970Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "es9m89hbd",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-28T13:37:26.970Z",
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-19T17:00:12.277Z",
         "likes": 18,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "am6l8w5u3",
-        "username": "FullStackFred",
+        "id": "bf18136r6",
+        "username": "Guest",
         "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-18T18:18:26.970Z",
-        "likes": 34,
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-17T11:28:12.277Z",
+        "likes": 15,
         "replies": [
           {
-            "id": "wvs82aozk",
-            "username": "TechStack_",
+            "id": "jalntfmos",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-27T14:36:26.970Z",
-            "likes": 12,
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-29T04:58:12.277Z",
+            "likes": 13,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "2izh3ygvo",
-            "username": "BackendBeast",
+            "id": "62evsgl47",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-14T11:53:26.970Z",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T03:51:12.277Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "em8qe5udz",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T08:18:12.277Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "2yhtemw7k",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-05T15:49:12.277Z",
+        "likes": 14,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "qrrvdk7to",
+        "username": "Guest",
+        "avatar": "",
+        "content": "api integration looks solid but heads up - rate limiting with deepseek can be a pain",
+        "timestamp": "2025-08-01T17:15:12.277Z",
+        "likes": 35,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "email-marketing-guide": {
+    "postSlug": "email-marketing-guide",
+    "comments": [
+      {
+        "id": "24an8vkyr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-24T17:42:12.379Z",
+        "likes": 13,
+        "replies": [
+          {
+            "id": "22e5abf0i",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-31T14:50:12.379Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "n60ifpi7b",
+        "username": "Guest",
+        "avatar": "",
+        "content": "not trying to be negative but ive been burned by hyped tools before",
+        "timestamp": "2025-07-13T19:46:12.379Z",
+        "likes": 30,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "8vgvlkegu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-07-19T11:08:12.379Z",
+        "likes": 16,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "rq44dkoxj",
+        "username": "Guest",
+        "avatar": "",
+        "content": "which tool should i start with? so many options its overwhelming af",
+        "timestamp": "2025-07-10T16:28:12.379Z",
+        "likes": 53,
+        "replies": [
+          {
+            "id": "f3pdssl9d",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-31T04:51:12.379Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "viral-carousel-guide": {
+    "postSlug": "viral-carousel-guide",
+    "comments": [
+      {
+        "id": "4n3xfy06p",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-11T07:00:12.379Z",
+        "likes": 23,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "duvnbgy93",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-16T00:48:12.379Z",
+        "likes": 27,
+        "replies": [
+          {
+            "id": "90uh8xgl0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T05:50:12.379Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "mm3ccz3o9",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-29T03:22:12.379Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ib9bzxqcq",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-30T04:01:12.379Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "9dlaabj3t",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this matches what i learned from {book/course}. consistency wins",
+        "timestamp": "2025-07-12T11:54:12.379Z",
+        "likes": 25,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "usaky8l1w",
+        "username": "Guest",
+        "avatar": "",
+        "content": "seems like it needs a lot of resources. what about solo people?",
+        "timestamp": "2025-07-31T07:27:12.379Z",
+        "likes": 21,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "z7g295fl2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-27T03:41:12.379Z",
+        "likes": 50,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "w9ydnca7v",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-26T09:34:12.379Z",
+        "likes": 10,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "k5ratizm1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-24T01:01:12.379Z",
+        "likes": 21,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "1rmjxjahk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-26T00:46:12.379Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "digital-product-pricing": {
+    "postSlug": "digital-product-pricing",
+    "comments": [
+      {
+        "id": "5uoxkzi2v",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-15T01:48:12.379Z",
+        "likes": 33,
+        "replies": [
+          {
+            "id": "1m3mlivlm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-08-02T08:28:12.379Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2bifjtma4",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-18T22:19:12.379Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "0onzid5km",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-28T00:12:12.379Z",
+        "likes": 16,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "gd4e2q8t6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-25T21:12:12.379Z",
+        "likes": 8,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 5
+  },
+  "passive-income-blueprint-digital-products": {
+    "postSlug": "passive-income-blueprint-digital-products",
+    "comments": [
+      {
+        "id": "60ynz0fpx",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-16T22:27:12.379Z",
+        "likes": 23,
+        "replies": [
+          {
+            "id": "4ubvq839d",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-05T06:56:12.379Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "csoxed0hi",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-29T04:44:12.379Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "tj9qw8f0f",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-31T06:58:12.379Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "c7ax28mgu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-07T06:51:12.379Z",
+        "likes": 6,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "16p3cc984",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-14T00:40:12.379Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "xwmxcqm69",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-08-02T21:39:12.379Z",
+        "likes": 30,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "0rcwygwyr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-14T21:36:12.379Z",
+        "likes": 54,
+        "replies": [
+          {
+            "id": "cmfiuipfh",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-31T01:20:12.379Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "jc4mu7sc3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-31T21:14:12.379Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "z6cta0wt6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-24T20:43:12.379Z",
+        "likes": 24,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "qoyca6g2c",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-17T07:45:12.379Z",
+        "likes": 11,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 12
+  },
+  "ai-agents-business-automation": {
+    "postSlug": "ai-agents-business-automation",
+    "comments": [
+      {
+        "id": "spylg0jjs",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-21T02:33:12.379Z",
+        "likes": 28,
+        "replies": [
+          {
+            "id": "g5zb2v2qs",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-28T09:34:12.379Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "41j6u4hvs",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-08-01T10:28:12.379Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "k2h0o71zs",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been using ChatGPT for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-08-02T10:15:12.379Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "knbikwvoe",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-18T08:38:12.379Z",
+        "likes": 37,
+        "replies": [
+          {
+            "id": "0srh8rs9v",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-31T23:42:12.379Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ha5k7jyel",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-31T21:09:12.379Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "hsmy1pa2c",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-08-01T18:51:12.379Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "yr77msb1z",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-12T06:25:12.379Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "d96unfe8m",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how do yall handle the whole ai ethics thing? kinda struggling with it",
+        "timestamp": "2025-07-17T20:19:12.379Z",
+        "likes": 52,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
+  },
+  "crypto-trading-bots": {
+    "postSlug": "crypto-trading-bots",
+    "comments": [
+      {
+        "id": "s7m3szqhy",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-26T16:25:12.379Z",
+        "likes": 22,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "h64b620cr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-08-01T14:49:12.379Z",
+        "likes": 14,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "wohmh6zzq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-25T09:23:12.379Z",
+        "likes": 21,
+        "replies": [
+          {
+            "id": "99rp75h8o",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-31T12:38:12.379Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "15rxxambu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T09:50:12.379Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "vf4rbnqji",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-19T12:46:12.379Z",
+        "likes": 52,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ggqbr4ktj",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-29T19:13:12.379Z",
+        "likes": 24,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ycf6u7omj",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-08T06:57:12.379Z",
+        "likes": 17,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "the9v2c32",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-18T21:02:12.379Z",
+        "likes": 52,
+        "replies": [
+          {
+            "id": "qit295r0d",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-31T17:27:12.379Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "zgb4hf1aw",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-28T00:26:12.379Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "instagram-growth-2025": {
+    "postSlug": "instagram-growth-2025",
+    "comments": [
+      {
+        "id": "pylpuhb5z",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these tactics for a client. engagement went up 300%",
+        "timestamp": "2025-07-07T11:34:12.379Z",
+        "likes": 25,
+        "replies": [
+          {
+            "id": "7u04b73jk",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-08-01T10:49:12.379Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "uu9igq7w6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-28T03:37:12.379Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "a8og5qtta",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-28T05:16:12.379Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "437pmnp3f",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the content calendar thing saved my life. finally organized",
+        "timestamp": "2025-07-20T04:20:12.379Z",
+        "likes": 44,
+        "replies": [
+          {
+            "id": "b48k8q4xx",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T22:50:12.379Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "x3d002390",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-27T10:55:12.379Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "mweqfuec2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "a/b test everything. what works for one audience fails for another",
+        "timestamp": "2025-07-28T20:25:12.379Z",
+        "likes": 44,
+        "replies": [
+          {
+            "id": "39jnaglza",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-31T23:41:12.379Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "vhn5a45lc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T03:17:12.379Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
+  },
+  "ai-voice-generator-comparison": {
+    "postSlug": "ai-voice-generator-comparison",
+    "comments": [
+      {
+        "id": "g9nfz4e32",
+        "username": "Guest",
+        "avatar": "",
+        "content": "api integration looks solid but heads up - rate limiting with ai can be a pain",
+        "timestamp": "2025-07-30T01:10:12.379Z",
+        "likes": 26,
+        "replies": [
+          {
+            "id": "odeql1i12",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-19T23:40:12.379Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ko67upc1i",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+        "timestamp": "2025-07-15T03:20:12.379Z",
+        "likes": 51,
+        "replies": [
+          {
+            "id": "me8bq7ffx",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T03:00:12.379Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "fr55kcpi6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-04T14:30:12.379Z",
+        "likes": 38,
+        "replies": [
+          {
+            "id": "4uelx2j4v",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-31T08:44:12.379Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "pmjnyfqd",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-07T18:33:12.379Z",
+        "likes": 50,
+        "replies": [
+          {
+            "id": "epdzzue92",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T22:21:12.379Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "6amugwdu8",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-07T07:38:12.379Z",
             "likes": 14,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "uq632sgcv",
-            "username": "MLEngineer99",
+            "id": "ffzwuwotg",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T06:39:26.970Z",
-            "likes": 11,
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-30T10:59:12.379Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "2wps3m3ej",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-11T04:28:12.379Z",
+        "likes": 32,
+        "replies": [
+          {
+            "id": "avwwqp038",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-20T14:45:12.379Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "i01q3a0gr",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-30T11:23:12.379Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "k9l8fdcs2",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T05:40:12.379Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "rokv48gxx",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-26T01:36:12.379Z",
+        "likes": 15,
+        "replies": [
+          {
+            "id": "cd31i34hd",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-14T23:48:12.379Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "65hjbahcs",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-16T22:53:12.379Z",
+        "likes": 42,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "nda7s5i14",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone tried mixing this with ChatGPT? wondering if they work together",
+        "timestamp": "2025-07-08T15:52:12.379Z",
+        "likes": 22,
+        "replies": [
+          {
+            "id": "05mrf54ma",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-29T10:48:12.379Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "fhx3chkx0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-01T22:59:12.379Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ew6h8rjab",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-31T19:46:12.379Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 21
+  },
+  "inventory-management-automation": {
+    "postSlug": "inventory-management-automation",
+    "comments": [
+      {
+        "id": "x3c56qris",
+        "username": "Guest",
+        "avatar": "",
+        "content": "webhook setup is annoying. test everything before going live trust me",
+        "timestamp": "2025-07-26T08:05:12.379Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "9x7jemcw7",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-12T17:48:12.379Z",
+        "likes": 25,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "6qy4dde2e",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-08T10:22:12.379Z",
+        "likes": 7,
+        "replies": [
+          {
+            "id": "3mlgesfpa",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-08-01T15:51:12.379Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "aqb60jc0f",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-28T08:57:12.379Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "l37s8s286",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-10T18:39:12.379Z",
+        "likes": 36,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "gjomq3crt",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-28T11:04:12.379Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "h1jz2kvbf",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-14T13:08:12.379Z",
+        "likes": 6,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "wn1wzl6af",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-27T03:02:12.379Z",
+        "likes": 11,
+        "replies": [
+          {
+            "id": "cg8b8vkzx",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-27T12:54:12.379Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           }
@@ -4144,660 +4131,49 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "deepagent-update-god-tier-ai-automation",
     "comments": [
       {
-        "id": "m187vbazc",
-        "username": "CreatorCodex",
+        "id": "tu035qgqw",
+        "username": "Guest",
         "avatar": "",
-        "content": "This reminds me of when I first discovered Midjourney - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-23T10:08:26.970Z",
-        "likes": 35,
-        "replies": [
-          {
-            "id": "7mpm35x58",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-30T13:53:26.970Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "406z5r6de",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-22T08:26:26.970Z",
-        "likes": 12,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "16rt86axd",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with deepagent.",
-        "timestamp": "2025-07-24T07:06:26.970Z",
-        "likes": 43,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cx3cw3dc8",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-11T21:19:26.970Z",
-        "likes": 33,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "zkept7gtj",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-22T00:33:26.970Z",
-        "likes": 39,
-        "replies": [
-          {
-            "id": "fbdjmh5ci",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-14T22:41:26.970Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "5sw5643mj",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T01:56:26.970Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "4l1yjb7c7",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-08-01T11:08:26.970Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "kr06w8wxs",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-25T03:41:26.970Z",
-        "likes": 11,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "workflow-automation-guide": {
-    "postSlug": "workflow-automation-guide",
-    "comments": [
-      {
-        "id": "ks1zdq6d8",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-14T16:05:27.079Z",
-        "likes": 42,
-        "replies": [
-          {
-            "id": "9s1j53tcy",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-31T12:30:27.079Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "vposhe7q1",
-            "username": "FullStackFred",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-28T09:03:27.079Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "eogm5p543",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-29T07:22:27.079Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "xofwwnqxl",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-28T08:17:27.079Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "jvsa6w385",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-05T21:42:27.079Z",
-        "likes": 47,
-        "replies": [
-          {
-            "id": "pah5gzcfb",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-08-01T14:02:27.079Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "8dfvi0kaz",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-18T11:34:27.079Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "1gbcibtwo",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-28T12:48:27.079Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "odxafuhtg",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-28T03:20:27.079Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "gpt5-roadmap-creator-empire": {
-    "postSlug": "gpt5-roadmap-creator-empire",
-    "comments": [
-      {
-        "id": "mvesm5n9k",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-07-05T23:19:27.079Z",
-        "likes": 28,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "qm43z9d6s",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-18T22:51:27.079Z",
-        "likes": 49,
-        "replies": [
-          {
-            "id": "5hd0pu5ml",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-30T13:26:27.079Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "bosp5emq0",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T14:04:27.079Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "u79mvb3tk",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-07T07:52:27.079Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "hixxigwp6",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-27T13:11:27.079Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "w4d12wdgh",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-27T09:39:27.080Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "y6wgmo7ec",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-21T17:13:27.080Z",
-        "likes": 18,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "l6dfk7o0u",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-21T15:08:27.080Z",
-        "likes": 39,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "3fa4o8yu2",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-27T21:47:27.080Z",
-        "likes": 39,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "9w9j2d9j1",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-27T15:45:27.080Z",
-        "likes": 12,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "lead-generation-automation": {
-    "postSlug": "lead-generation-automation",
-    "comments": [
-      {
-        "id": "8fnrzwdhz",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "How do you handle edge cases? Automation is great until something unexpected happens.",
-        "timestamp": "2025-07-29T18:54:27.080Z",
-        "likes": 9,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ptdsr99mc",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-21T03:00:27.080Z",
-        "likes": 47,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "i97hckwq3",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-18T03:39:27.080Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mq3mlnoh8",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-09T02:44:27.080Z",
-        "likes": 9,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "7ebj1ll7q",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-21T01:56:27.080Z",
-        "likes": 16,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "gip4barsj",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using lead, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-08-02T16:25:27.080Z",
-        "likes": 15,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "vmg8ytf6c",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-27T04:18:27.080Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "n8n-beginners-guide": {
-    "postSlug": "n8n-beginners-guide",
-    "comments": [
-      {
-        "id": "3dofka7i2",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-26T07:59:27.080Z",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-06T22:15:12.379Z",
         "likes": 10,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "es1oitjwd",
-        "username": "MonetizeThis",
+        "id": "nmu1ti7qw",
+        "username": "Guest",
         "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-07-23T07:42:27.080Z",
-        "likes": 7,
-        "replies": [
-          {
-            "id": "12077nyvj",
-            "username": "EntrepreneurE",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-01T05:57:27.080Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "p0ggn3fpj",
-            "username": "DigitalBiz",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-31T03:27:27.080Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "uc0ck0g0y",
-            "username": "GrowthExpert",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-31T17:38:27.080Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "j8cl7zx6q",
-        "username": "GrowthExpert",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-29T23:40:27.080Z",
-        "likes": 20,
-        "replies": [
-          {
-            "id": "qeiwk55ml",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T06:41:27.080Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "hwpvngj0n",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-07-26T18:33:27.080Z",
-        "likes": 47,
-        "replies": [
-          {
-            "id": "bxbtszk06",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-29T06:27:27.080Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "tesldlhmz",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-27T17:50:27.080Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "lch7fa9el",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-31T17:46:27.080Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "8wzi6rlx5",
-        "username": "DigitalBiz",
-        "avatar": "",
-        "content": "The data-driven approach is refreshing. Too many 'gurus' rely on anecdotes instead of metrics.",
-        "timestamp": "2025-07-15T15:44:27.080Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "y5dwkaeyb",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-07T01:11:27.080Z",
+        "content": "how do yall handle the whole ai ethics thing? kinda struggling with it",
+        "timestamp": "2025-07-24T20:51:12.379Z",
         "likes": 45,
-        "replies": [
-          {
-            "id": "3rgdlbkkm",
-            "username": "SaaSFounder",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-31T03:17:27.080Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "n65tl8x8u",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-28T03:47:27.080Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "z1maw040d",
-            "username": "RevenueOptimizer",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-30T15:42:27.080Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "tll3u3jrw",
-        "username": "ROI_Focused",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-12T09:31:27.080Z",
-        "likes": 36,
-        "replies": [
-          {
-            "id": "i70fd6i6d",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-08-01T23:38:27.080Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 18
-  },
-  "deepseek-janus-pro-7b-multimodal-ai-revolution": {
-    "postSlug": "deepseek-janus-pro-7b-multimodal-ai-revolution",
-    "comments": [
-      {
-        "id": "co32p5trm",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-31T16:42:27.080Z",
-        "likes": 33,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "1swgsesx3",
-        "username": "AutomationAndy",
+        "id": "y3ayyofza",
+        "username": "Guest",
         "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-24T02:37:27.080Z",
-        "likes": 19,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "zhq58nbc9",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-16T15:55:27.080Z",
-        "likes": 43,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "7d2bles9t",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-11T13:36:27.080Z",
-        "likes": 16,
+        "content": "not trying to be negative but ive been burned by hyped tools before",
+        "timestamp": "2025-07-11T00:04:12.379Z",
+        "likes": 52,
         "replies": [
           {
-            "id": "035kndw0o",
-            "username": "DataScienceD",
+            "id": "bv7cxvmzp",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-29T23:26:27.080Z",
-            "likes": 1,
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-06T01:59:12.379Z",
+            "likes": 12,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ef0manhy2",
-            "username": "MarketingMaven",
+            "id": "2pzdz930s",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-28T05:51:27.080Z",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-29T05:59:12.379Z",
             "likes": 9,
             "replies": [],
             "isOP": false
@@ -4806,734 +4182,40 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "hj0lof0c3",
-        "username": "CreativeHustle",
+        "id": "deaw8swv0",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-19T05:29:27.080Z",
-        "likes": 21,
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-07-22T10:00:12.379Z",
+        "likes": 26,
         "replies": [
           {
-            "id": "yrfn0x4em",
-            "username": "TechStack_",
+            "id": "te4k0el0a",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T17:50:27.080Z",
-            "likes": 7,
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-31T02:05:12.379Z",
+            "likes": 4,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "2619hte5d",
-            "username": "ContentKing_92",
+            "id": "kp6jkh4u1",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-28T00:03:27.080Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "wa3olmmmd",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-23T01:33:27.080Z",
-        "likes": 49,
-        "replies": [
-          {
-            "id": "tm6r3k46s",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-28T10:01:27.080Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "v3pa6y88w",
-            "username": "FullStackFred",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-28T15:08:27.080Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "k4914m290",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-08-02T03:33:27.080Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "o1ezmdbzr",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-16T01:01:27.080Z",
-        "likes": 21,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 14
-  },
-  "gemini-2-5-flash-budget-ai-model": {
-    "postSlug": "gemini-2-5-flash-budget-ai-model",
-    "comments": [
-      {
-        "id": "x2o6m8lm0",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-11T02:45:27.080Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "jib978eut",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-06T23:01:27.080Z",
-        "likes": 30,
-        "replies": [
-          {
-            "id": "si0h3n023",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-28T07:05:27.080Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "qrpd3db99",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-30T22:46:27.080Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "9h79dxtml",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Midjourney - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-16T09:36:27.080Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "gqa8mcbvm",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-29T11:14:27.080Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "az4traa0d",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-28T16:13:27.080Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "acsehg3ow",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-31T20:20:27.080Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "0ihk46dyo",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered ChatGPT - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-20T05:42:27.080Z",
-        "likes": 39,
-        "replies": [
-          {
-            "id": "6wn0m4icf",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-02T00:05:27.080Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ixscv69nb",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-29T12:40:27.080Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "n90hvvsxl",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-29T12:38:27.080Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "gnfw61vqz",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-18T22:46:27.080Z",
-        "likes": 22,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "iuot0u4sl",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-23T15:02:27.080Z",
-        "likes": 19,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "0ffn2fcpn",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-10T21:50:27.080Z",
-        "likes": 47,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "x719h5p5y",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-18T19:35:27.080Z",
-        "likes": 6,
-        "replies": [
-          {
-            "id": "b6pjplpjk",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-27T12:57:27.080Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ba810otsa",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T18:40:27.080Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "8t26mrazg",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T09:27:27.080Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 19
-  },
-  "youtube-shorts-strategy": {
-    "postSlug": "youtube-shorts-strategy",
-    "comments": [
-      {
-        "id": "h7n3cocyn",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-20T11:31:27.080Z",
-        "likes": 42,
-        "replies": [
-          {
-            "id": "buo963ogc",
-            "username": "OnlineEmpire",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-27T10:29:27.080Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "jzcz79cb9",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-30T09:26:27.080Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "7qp9hcwmp",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-27T10:39:27.080Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "jjga4le5o",
-        "username": "EntrepreneurE",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-09T03:48:27.080Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "5t45jhzvf",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-07T20:41:27.080Z",
-        "likes": 40,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "71mvmdwat",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-30T18:39:27.080Z",
-        "likes": 41,
-        "replies": [
-          {
-            "id": "41igi6ygd",
-            "username": "ROI_Focused",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T07:19:27.080Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "2yxvdzqag",
-            "username": "GrowthExpert",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-08-01T04:27:27.080Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "2vpzkx3io",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-28T06:48:27.080Z",
-        "likes": 15,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "business-automation-tools": {
-    "postSlug": "business-automation-tools",
-    "comments": [
-      {
-        "id": "77svuyjq8",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-19T19:54:27.080Z",
-        "likes": 44,
-        "replies": [
-          {
-            "id": "t5xtp11uz",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-31T03:07:27.080Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "tp0e4b0rk",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-30T12:36:27.080Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "bdthuu26i",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-29T13:55:27.080Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "197r67aiz",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-13T20:39:27.080Z",
-        "likes": 47,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "6xhhnwksk",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-26T20:00:27.080Z",
-        "likes": 53,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "kf8pmcu35",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-12T00:15:27.080Z",
-        "likes": 17,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "passive-income-blueprint": {
-    "postSlug": "passive-income-blueprint",
-    "comments": [
-      {
-        "id": "xxkatbule",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "The data-driven approach is refreshing. Too many 'gurus' rely on anecdotes instead of metrics.",
-        "timestamp": "2025-07-05T08:05:27.080Z",
-        "likes": 18,
-        "replies": [
-          {
-            "id": "4cihlg20c",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-08-01T07:17:27.080Z",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-30T14:07:12.379Z",
             "likes": 14,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "pdrmtq6nr",
-            "username": "OnlineEmpire",
+            "id": "cpi5mnxij",
+            "username": "Guest",
             "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-28T18:19:27.080Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "gfh9jsw35",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-08-01T23:02:27.080Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "lq95uaomy",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-26T23:36:27.080Z",
-        "likes": 50,
-        "replies": [
-          {
-            "id": "6vz1uezzv",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-29T17:26:27.080Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ln30buu02",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-12T22:41:27.080Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "gq58xajb5",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-08T03:09:27.080Z",
-        "likes": 5,
-        "replies": [
-          {
-            "id": "c523wgwlp",
-            "username": "BusinessHacks",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-28T09:06:27.080Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "dx9zyrpdx",
-            "username": "OnlineEmpire",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-14T17:18:27.080Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "yq22qyf1i",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-30T01:42:27.080Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "fymgyb1kp",
-        "username": "ProfitMaximizer",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-24T10:41:27.080Z",
-        "likes": 15,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "qgrza72eq",
-        "username": "GrowthExpert",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-09T14:15:27.080Z",
-        "likes": 19,
-        "replies": [
-          {
-            "id": "zhf22wmni",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-31T09:00:27.080Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "m8vh9b53t",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-31T21:47:27.080Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "8p3iasdfh",
-            "username": "RevenueOptimizer",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-29T05:14:27.080Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 16
-  },
-  "comfyui-workflow-library": {
-    "postSlug": "comfyui-workflow-library",
-    "comments": [
-      {
-        "id": "kbuu1u0hm",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-09T19:41:27.080Z",
-        "likes": 46,
-        "replies": [
-          {
-            "id": "qo7ffedun",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-03T01:30:27.080Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "nj3eu5vb5",
-            "username": "FrontendPhil",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-28T11:47:27.080Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "zbpcrhmvd",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-06T01:20:27.080Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "5awq8euyb",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-21T23:33:27.080Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "e918wmydi",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-14T01:25:27.080Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "f7dwg8nr0",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-27T02:52:27.080Z",
-        "likes": 21,
-        "replies": [
-          {
-            "id": "wpfzo3ql6",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-17T06:04:27.080Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "gx3lo498j",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-29T16:29:27.080Z",
-            "likes": 1,
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-30T22:06:12.379Z",
+            "likes": 11,
             "replies": [],
             "isOP": false
           }
@@ -5543,327 +4225,55 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 9
   },
-  "affiliate-marketing-automation": {
-    "postSlug": "affiliate-marketing-automation",
+  "workflow-automation-guide": {
+    "postSlug": "workflow-automation-guide",
     "comments": [
       {
-        "id": "qg61gdqlr",
-        "username": "BackendBeast",
+        "id": "rramhx477",
+        "username": "Guest",
         "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-24T19:51:27.182Z",
-        "likes": 47,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "p5qzzqmoh",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-15T19:49:27.182Z",
-        "likes": 51,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "d566mlgtr",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-12T02:30:27.182Z",
-        "likes": 23,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "d4vrzhv0e",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-22T07:41:27.182Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 4
-  },
-  "creating-ai-influencers": {
-    "postSlug": "creating-ai-influencers",
-    "comments": [
-      {
-        "id": "wm8popszc",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-17T01:15:27.183Z",
-        "likes": 6,
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-23T11:03:12.481Z",
+        "likes": 39,
         "replies": [
           {
-            "id": "ncnm5tqrr",
-            "username": "PassiveIncomeJoe",
+            "id": "22bmxr43z",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-07T14:57:27.183Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "gjq2acc6c",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-30T16:15:27.183Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "3lciyrtnq",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Midjourney - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-11T21:58:27.183Z",
-        "likes": 9,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "xzr60fkb8",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-07-14T03:44:27.183Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "eme714x2r",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-22T05:34:27.183Z",
-        "likes": 51,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "hc8zxntpx",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with creating.",
-        "timestamp": "2025-07-29T09:41:27.183Z",
-        "likes": 19,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "kzisy554x",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-12T20:46:27.183Z",
-        "likes": 47,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "b6z90c8hs",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-09T22:16:27.183Z",
-        "likes": 35,
-        "replies": [
-          {
-            "id": "oxlz9trrb",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T22:55:27.183Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "digital-products-ideas-2025": {
-    "postSlug": "digital-products-ideas-2025",
-    "comments": [
-      {
-        "id": "n21zpl3a4",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-12T23:51:27.183Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "6ts3q4me8",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-20T22:00:27.183Z",
-        "likes": 45,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "no2n95x0b",
-        "username": "EntrepreneurE",
-        "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-17T15:23:27.183Z",
-        "likes": 25,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "xiciyw04h",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-05T11:34:27.183Z",
-        "likes": 10,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "dhrdxhtvu",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-13T11:53:27.183Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "exd6rhsx8",
-        "username": "BusinessHacks",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-16T09:58:27.183Z",
-        "likes": 26,
-        "replies": [
-          {
-            "id": "dy0rszozm",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-08-01T19:41:27.183Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "e1nh33afh",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-08-02T07:06:27.183Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "11ywzvuer",
-        "username": "ProfitMaximizer",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-10T06:36:27.183Z",
-        "likes": 14,
-        "replies": [
-          {
-            "id": "lslf8atba",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-30T04:45:27.183Z",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T11:19:12.481Z",
             "likes": 9,
             "replies": [],
             "isOP": false
           }
         ],
         "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "email-marketing-automation-guide": {
-    "postSlug": "email-marketing-automation-guide",
-    "comments": [
-      {
-        "id": "2cdph2rx3",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-29T20:59:27.183Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "h7yu9xth8",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-30T13:47:27.183Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
       },
       {
-        "id": "dkn90bv88",
-        "username": "ScaleUpStudio",
+        "id": "50s1sdc4f",
+        "username": "Guest",
         "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-08-02T18:25:27.183Z",
-        "likes": 6,
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-30T19:26:12.481Z",
+        "likes": 31,
         "replies": [
           {
-            "id": "5f0oum2ka",
-            "username": "PassiveIncomeJoe",
+            "id": "nfbovscij",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-26T16:16:27.183Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "oi6c0d2qa",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T08:11:27.183Z",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-31T14:28:12.481Z",
             "likes": 5,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "xp9b0d5xv",
-            "username": "StartupSally",
+            "id": "01d7zro59",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T16:38:27.183Z",
-            "likes": 13,
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-29T02:08:12.481Z",
+            "likes": 4,
             "replies": [],
             "isOP": false
           }
@@ -5871,179 +4281,108 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "9l3t23w4g",
-        "username": "ServerlessSteve",
+        "id": "5vgr6d8ur",
+        "username": "Guest",
         "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-27T03:43:27.183Z",
-        "likes": 14,
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-08T04:38:12.481Z",
+        "likes": 9,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "f1o9tc7nk",
-        "username": "APIGuru",
+        "id": "osmv492oa",
+        "username": "Guest",
         "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-31T21:09:27.183Z",
-        "likes": 21,
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-31T21:46:12.481Z",
+        "likes": 31,
         "replies": [
           {
-            "id": "g7kwdd7dc",
-            "username": "BuildingMyEmpire",
+            "id": "9xq9753h8",
+            "username": "Guest",
             "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-06T17:29:27.183Z",
-            "likes": 8,
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-31T14:56:12.481Z",
+            "likes": 1,
             "replies": [],
             "isOP": false
-          },
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "0axvb8t4u",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-17T02:52:12.481Z",
+        "likes": 28,
+        "replies": [
           {
-            "id": "b4ca4nzsg",
-            "username": "BuildingMyEmpire",
+            "id": "k6llf31uj",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T10:20:27.183Z",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-08-01T22:30:12.481Z",
             "likes": 6,
             "replies": [],
             "isOP": false
           }
         ],
         "isOP": false
-      },
+      }
+    ],
+    "commentCount": 10
+  },
+  "gpt5-roadmap-creator-empire": {
+    "postSlug": "gpt5-roadmap-creator-empire",
+    "comments": [
       {
-        "id": "pbmr05nbo",
-        "username": "MarketingMaven",
+        "id": "vc2fjaqrr",
+        "username": "Guest",
         "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-23T11:23:27.183Z",
-        "likes": 14,
-        "replies": [
-          {
-            "id": "rxv1ww90y",
-            "username": "APIGuru",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-08-01T01:54:27.183Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "vwho9rsvu",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-27T09:31:27.183Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ckl487lrp",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-26T20:59:27.183Z",
-        "likes": 32,
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-30T19:22:12.481Z",
+        "likes": 7,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "o6j6q53u1",
-        "username": "DigitalNomadSarah",
+        "id": "aip28pkdb",
+        "username": "Guest",
         "avatar": "",
-        "content": "This reminds me of when I first discovered RunwayML - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-29T16:33:27.183Z",
-        "likes": 42,
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-12T17:07:12.481Z",
+        "likes": 50,
         "replies": [
           {
-            "id": "jldtjhe9d",
-            "username": "DataScienceD",
+            "id": "vujzo9agn",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-29T22:20:27.183Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "bih9w5c7p",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "Been using ChatGPT for my content creation and it's a total game changer. The time savings alone justify the cost.",
-        "timestamp": "2025-07-28T16:10:27.183Z",
-        "likes": 51,
-        "replies": [
-          {
-            "id": "sdsjhipzt",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-13T02:44:27.183Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "w3usokkq8",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-29T14:23:27.183Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "u1skmkt15",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-01T01:21:27.183Z",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-31T04:48:12.481Z",
             "likes": 2,
             "replies": [],
             "isOP": false
           }
         ],
         "isOP": false
-      }
-    ],
-    "commentCount": 20
-  },
-  "digital-products-that-sell": {
-    "postSlug": "digital-products-that-sell",
-    "comments": [
+      },
       {
-        "id": "ddkr6c25t",
-        "username": "GrowthHacker_",
+        "id": "twg9puawi",
+        "username": "Guest",
         "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-11T18:32:27.183Z",
+        "content": "which tool should i start with? so many options its overwhelming af",
+        "timestamp": "2025-07-10T02:29:12.481Z",
         "likes": 45,
         "replies": [
           {
-            "id": "2mjg6saln",
-            "username": "ScalingUp_",
+            "id": "dqho14ji6",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-31T13:24:27.183Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "afah120lr",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-18T15:58:27.183Z",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T01:16:12.481Z",
             "likes": 6,
             "replies": [],
             "isOP": false
@@ -6052,20 +4391,20 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "ypeg3stuh",
-        "username": "SoloPreneur23",
+        "id": "eesszk8cc",
+        "username": "Guest",
         "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-23T08:00:27.183Z",
-        "likes": 18,
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-11T06:29:12.481Z",
+        "likes": 30,
         "replies": [
           {
-            "id": "549w9nmt2",
-            "username": "StartupSucc3ss",
+            "id": "yuwfpmzof",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-24T04:55:27.183Z",
-            "likes": 11,
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-08-02T08:34:12.481Z",
+            "likes": 4,
             "replies": [],
             "isOP": false
           }
@@ -6073,49 +4412,221 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "accsghdmc",
-        "username": "BusinessBuilder",
+        "id": "9szwsfhpx",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-14T01:22:27.183Z",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-07T16:51:12.481Z",
+        "likes": 19,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "lead-generation-automation": {
+    "postSlug": "lead-generation-automation",
+    "comments": [
+      {
+        "id": "yjoqbu32y",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-08-01T07:01:12.481Z",
+        "likes": 54,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "l7y7y9n6f",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-26T22:54:12.481Z",
+        "likes": 35,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "u5neguyja",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-21T02:08:12.481Z",
+        "likes": 14,
+        "replies": [
+          {
+            "id": "eepbxr8xy",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-27T14:29:12.481Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2jdk74cfe",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T03:25:12.481Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 5
+  },
+  "n8n-beginners-guide": {
+    "postSlug": "n8n-beginners-guide",
+    "comments": [
+      {
+        "id": "gdx61d8dj",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-27T18:35:12.481Z",
+        "likes": 30,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "93y92gorw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this matches what i learned from {book/course}. consistency wins",
+        "timestamp": "2025-07-13T14:17:12.481Z",
+        "likes": 8,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "iujp036z0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-27T07:47:12.481Z",
+        "likes": 26,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "lvwtqz1j3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-24T04:13:12.481Z",
+        "likes": 48,
+        "replies": [
+          {
+            "id": "4teswwp2c",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-08-01T20:26:12.481Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "m3pdr6xnb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-08-02T02:52:12.481Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ltj1qoa1g",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-23T10:15:12.481Z",
+        "likes": 28,
+        "replies": [
+          {
+            "id": "p2wgv4hwx",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T10:53:12.481Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "1padjarnn",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-30T18:23:12.481Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "laun871x1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-06T21:32:12.481Z",
         "likes": 37,
         "replies": [],
         "isOP": false
-      },
+      }
+    ],
+    "commentCount": 10
+  },
+  "deepseek-janus-pro-7b-multimodal-ai-revolution": {
+    "postSlug": "deepseek-janus-pro-7b-multimodal-ai-revolution",
+    "comments": [
       {
-        "id": "uegm9ctfm",
-        "username": "BusinessBuilder",
+        "id": "w6auwdjd8",
+        "username": "Guest",
         "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-06T14:46:27.183Z",
-        "likes": 32,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "1yn96flcl",
-        "username": "BusinessBuilder",
-        "avatar": "",
-        "content": "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-        "timestamp": "2025-07-21T18:08:27.183Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "qrkk4jrkx",
-        "username": "SaaSFounder",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-07-07T17:26:27.183Z",
-        "likes": 53,
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-15T19:13:12.481Z",
+        "likes": 7,
         "replies": [
           {
-            "id": "xqu9uxl5e",
-            "username": "StartupSucc3ss",
+            "id": "oguvurv18",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-08-02T07:54:27.183Z",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-29T19:22:12.481Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "2a8iujhyq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-09T19:29:12.481Z",
+        "likes": 37,
+        "replies": [
+          {
+            "id": "58cvevgmf",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T01:29:12.481Z",
             "likes": 8,
             "replies": [],
             "isOP": false
@@ -6124,50 +4635,179 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "qcbyjop71",
-        "username": "ProfitMaximizer",
+        "id": "yajpviaun",
+        "username": "Guest",
         "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-08-03T01:13:27.183Z",
-        "likes": 22,
+        "content": "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+        "timestamp": "2025-07-24T00:35:12.481Z",
+        "likes": 24,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "3xpducu4j",
-        "username": "CreatorLife",
+        "id": "dqdxfping",
+        "username": "Guest",
         "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-26T14:48:27.183Z",
-        "likes": 10,
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-07T13:36:12.481Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "gemini-2-5-flash-budget-ai-model": {
+    "postSlug": "gemini-2-5-flash-budget-ai-model",
+    "comments": [
+      {
+        "id": "irhnmud4v",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-07T12:32:12.481Z",
+        "likes": 19,
         "replies": [
           {
-            "id": "re5h0j9f6",
-            "username": "BuildingMyEmpire",
+            "id": "tq68ycyrp",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-27T09:40:27.183Z",
-            "likes": 15,
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-29T14:39:12.481Z",
+            "likes": 11,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "67lj8kzpg",
-            "username": "ContentKing_92",
+            "id": "j01k27qaw",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-22T06:26:27.183Z",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-31T07:00:12.481Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "m6v47zm3f",
+        "username": "Guest",
+        "avatar": "",
+        "content": "which tool should i start with? so many options its overwhelming af",
+        "timestamp": "2025-07-05T05:40:12.481Z",
+        "likes": 9,
+        "replies": [
+          {
+            "id": "1cfrhjryp",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-27T15:54:12.481Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ck532cfha",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-28T18:09:12.481Z",
             "likes": 6,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ilam3zjuo",
-            "username": "StartupSally",
+            "id": "bc0ia5rg3",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-01T22:57:27.183Z",
-            "likes": 9,
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-27T11:08:12.481Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "l3j20dlhb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-06T07:32:12.481Z",
+        "likes": 14,
+        "replies": [
+          {
+            "id": "0ybc7hsi7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-29T07:54:12.481Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "k12p8bdl5",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-08-01T23:30:12.481Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "bmiziuapf",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-08-01T03:59:12.481Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "gnlxdrwr9",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-08T19:12:12.481Z",
+        "likes": 40,
+        "replies": [
+          {
+            "id": "h72f160wk",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-30T09:24:12.481Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "erfqxjnck",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-08-01T05:03:12.481Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "hzi5t7jy3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-30T02:10:12.481Z",
+            "likes": 8,
             "replies": [],
             "isOP": false
           }
@@ -6177,121 +4817,44 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 15
   },
-  "instagram-mistakes-lessons": {
-    "postSlug": "instagram-mistakes-lessons",
+  "youtube-shorts-strategy": {
+    "postSlug": "youtube-shorts-strategy",
     "comments": [
       {
-        "id": "6j559nz2w",
-        "username": "PassiveIncomeJoe",
+        "id": "gmu5pwxds",
+        "username": "Guest",
         "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-14T10:11:27.183Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "fkzy8i27e",
-        "username": "StrategySteve",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-21T09:30:27.183Z",
-        "likes": 14,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cox3vkl28",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-29T21:13:27.183Z",
-        "likes": 5,
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-25T13:59:12.481Z",
+        "likes": 43,
         "replies": [
           {
-            "id": "cqy8b4mrv",
-            "username": "InfluencerMike",
+            "id": "b16srsz0n",
+            "username": "Guest",
             "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-31T18:06:27.183Z",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-08-02T03:34:12.481Z",
             "likes": 9,
             "replies": [],
             "isOP": false
           }
         ],
         "isOP": false
-      }
-    ],
-    "commentCount": 4
-  },
-  "qwen-3-alibaba-open-source-llm": {
-    "postSlug": "qwen-3-alibaba-open-source-llm",
-    "comments": [
-      {
-        "id": "0c8y7sgja",
-        "username": "ScalingUp_",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-06T06:58:27.183Z",
-        "likes": 36,
-        "replies": [
-          {
-            "id": "wfw6ctz5i",
-            "username": "DigitalBiz",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-28T13:24:27.183Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "cn31a1o3w",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-28T13:57:27.183Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
       },
       {
-        "id": "meaf892b1",
-        "username": "SoloPreneur23",
+        "id": "mkkn7i0f1",
+        "username": "Guest",
         "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-11T16:04:27.183Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "3fxmgbfnz",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-07-23T10:20:27.183Z",
-        "likes": 54,
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-28T07:06:12.481Z",
+        "likes": 47,
         "replies": [
           {
-            "id": "40wl7c6br",
-            "username": "CreativeHustle",
+            "id": "mog4bbguj",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-29T21:05:27.183Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "qa6cywcz0",
-            "username": "BusinessMinded",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-30T06:44:27.183Z",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-08-01T17:23:12.481Z",
             "likes": 2,
             "replies": [],
             "isOP": false
@@ -6300,71 +4863,91 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "ylret4gbx",
-        "username": "BuildingMyEmpire",
+        "id": "vmy99blid",
+        "username": "Guest",
         "avatar": "",
-        "content": "The data-driven approach is refreshing. Too many 'gurus' rely on anecdotes instead of metrics.",
-        "timestamp": "2025-07-05T08:22:27.183Z",
-        "likes": 26,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 8
-  },
-  "sales-funnel-automation": {
-    "postSlug": "sales-funnel-automation",
-    "comments": [
-      {
-        "id": "g6jxa07hx",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-25T12:23:27.183Z",
-        "likes": 10,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "d1dnllbr9",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-07T01:58:27.183Z",
-        "likes": 51,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "4nucm5so6",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-30T12:47:27.183Z",
-        "likes": 17,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 3
-  },
-  "comfyui-comparison": {
-    "postSlug": "comfyui-comparison",
-    "comments": [
-      {
-        "id": "y3kxwkbpl",
-        "username": "DigitalBiz",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-08-01T00:48:27.183Z",
-        "likes": 17,
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-10T10:02:12.481Z",
+        "likes": 6,
         "replies": [
           {
-            "id": "9pbj5gawm",
-            "username": "MonetizeThis",
+            "id": "2tvzptstc",
+            "username": "Guest",
             "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-29T21:19:27.183Z",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-31T23:12:12.481Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "83n1mioab",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-04T18:44:12.481Z",
+        "likes": 27,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "i06efe7tv",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-27T08:19:12.481Z",
+        "likes": 23,
+        "replies": [
+          {
+            "id": "pqgqqikl7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-02T06:55:12.481Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "zbbrlvm0g",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-20T06:51:12.481Z",
+        "likes": 24,
+        "replies": [
+          {
+            "id": "uxkte9216",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-27T12:38:12.481Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "mp26b4dru",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-31T02:55:12.481Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2g7wd17na",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-28T06:32:12.481Z",
             "likes": 8,
             "replies": [],
             "isOP": false
@@ -6373,49 +4956,369 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "ogemz776m",
-        "username": "ROI_Focused",
+        "id": "uqvdxw750",
+        "username": "Guest",
         "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-18T17:54:27.183Z",
-        "likes": 48,
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-15T19:38:12.481Z",
+        "likes": 30,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "1g8scvp46",
-        "username": "CreatorLife",
+        "id": "hrct0v2lz",
+        "username": "Guest",
         "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-05T11:36:27.183Z",
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-06T21:26:12.481Z",
+        "likes": 51,
+        "replies": [
+          {
+            "id": "2jbrnviqm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-27T21:59:12.481Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 16
+  },
+  "business-automation-tools": {
+    "postSlug": "business-automation-tools",
+    "comments": [
+      {
+        "id": "l3ex8xwzu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-25T19:43:12.481Z",
+        "likes": 47,
+        "replies": [
+          {
+            "id": "wrpx4j58c",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-28T21:43:12.481Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "jiziehxnq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-16T02:20:12.481Z",
+        "likes": 7,
+        "replies": [
+          {
+            "id": "bf8esu3g7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-28T07:28:12.481Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "x2fmtnf19",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-28T08:58:12.481Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "x6o9nq6w5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-08-02T15:44:12.481Z",
+        "likes": 29,
+        "replies": [
+          {
+            "id": "2c5hb5yk7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-27T18:19:12.481Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "pfr5ebc7s",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-11T02:43:12.481Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "f59jqrosq",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-28T22:12:12.481Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "crf0blt2t",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-07T05:51:12.481Z",
+        "likes": 10,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ats59swa0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-25T08:05:12.481Z",
+        "likes": 51,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "5c3blh8ce",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-20T06:46:12.481Z",
+        "likes": 52,
+        "replies": [
+          {
+            "id": "0hw11fu83",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-27T19:32:12.481Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "jo5y97kbe",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-28T13:49:12.481Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "9zv111weg",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-29T18:09:12.481Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 15
+  },
+  "passive-income-blueprint": {
+    "postSlug": "passive-income-blueprint",
+    "comments": [
+      {
+        "id": "si8t5xtnv",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-20T06:30:12.481Z",
         "likes": 26,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "dhrxqfbj0",
-        "username": "ContentKing_92",
+        "id": "nxr41ti5s",
+        "username": "Guest",
         "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-25T18:21:27.183Z",
-        "likes": 34,
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-24T14:57:12.481Z",
+        "likes": 25,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "oh863inss",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-29T11:03:12.481Z",
+        "likes": 47,
         "replies": [
           {
-            "id": "p88xywyyn",
-            "username": "StartupSally",
+            "id": "zrjrem0xo",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-30T01:31:27.183Z",
-            "likes": 8,
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-30T08:25:12.481Z",
+            "likes": 5,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "10lxiats7",
-            "username": "CreatorLife",
+            "id": "kawihmwxx",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-27T11:02:27.183Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-27T23:19:12.481Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "pm144z8oz",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-08-01T03:34:12.481Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "2i46s8ft8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-08-02T13:50:12.481Z",
+        "likes": 41,
+        "replies": [
+          {
+            "id": "29nqw61r5",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-30T15:41:12.481Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "za09071vg",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T03:50:12.481Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "6h8ll3hia",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-07T16:12:12.481Z",
+        "likes": 53,
+        "replies": [
+          {
+            "id": "k8ry4cco4",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-08-01T23:29:12.481Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2975ogrl3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-27T21:00:12.481Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "f0a8vgpqu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-27T15:43:12.481Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "7c1vt4me4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-28T00:52:12.481Z",
+        "likes": 17,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "c92qswl1n",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-24T06:04:12.481Z",
+        "likes": 49,
+        "replies": [
+          {
+            "id": "igfssvixr",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-08-01T16:30:12.481Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "lam5enenb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-31T05:58:12.481Z",
             "likes": 7,
             "replies": [],
             "isOP": false
@@ -6424,50 +5327,1199 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "32l2miy47",
-        "username": "ScaleUpStudio",
+        "id": "kmczhshes",
+        "username": "Guest",
         "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-12T07:10:27.183Z",
-        "likes": 17,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "jg7yaargh",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-08T05:47:27.183Z",
-        "likes": 46,
+        "content": "tried this on my saas and revenue went up 40% last quarter. actually works",
+        "timestamp": "2025-08-01T19:48:12.481Z",
+        "likes": 43,
         "replies": [
           {
-            "id": "uxqo71gqo",
-            "username": "OnlineEmpire",
+            "id": "g28ldnkl4",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-08-02T07:34:27.183Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "9cc35k6jc",
-            "username": "OnlineEmpire",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-31T03:11:27.183Z",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-09T05:48:12.481Z",
             "likes": 12,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ox90hgq60",
-            "username": "AutomationAndy",
+            "id": "4o4xm8xeo",
+            "username": "Guest",
             "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-08-01T11:05:27.183Z",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-27T17:27:12.481Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 20
+  },
+  "comfyui-workflow-library": {
+    "postSlug": "comfyui-workflow-library",
+    "comments": [
+      {
+        "id": "cwnm7xgnp",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-14T17:05:12.481Z",
+        "likes": 47,
+        "replies": [
+          {
+            "id": "c3mljifgf",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-01T13:37:12.481Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "6dxkz6iio",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-30T18:35:12.481Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "5no9qec14",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T09:09:12.481Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "vbrwmgag2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-18T10:13:12.481Z",
+        "likes": 17,
+        "replies": [
+          {
+            "id": "2pzgx6cep",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-27T10:17:12.481Z",
             "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "0g3u8pc2g",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-27T14:23:12.481Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "hjtmv73tk",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-28T00:13:12.481Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "lba377mox",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-18T15:14:12.481Z",
+        "likes": 54,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "uc66daaar",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-08T11:16:12.481Z",
+        "likes": 18,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "jyefta6yu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-20T09:51:12.481Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "affiliate-marketing-automation": {
+    "postSlug": "affiliate-marketing-automation",
+    "comments": [
+      {
+        "id": "t2467m302",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-28T16:30:12.582Z",
+        "likes": 35,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "nhegr7jp8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-24T13:14:12.582Z",
+        "likes": 12,
+        "replies": [
+          {
+            "id": "myyi15u6u",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-30T12:29:12.582Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "wckqnf3ol",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-08-01T21:05:12.582Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "1xwbsqke1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-20T19:05:12.582Z",
+        "likes": 7,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "q530p33pu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-31T18:47:12.582Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "zrzvyhr2a",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-07T15:28:12.582Z",
+        "likes": 52,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "fbvrmrn4w",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-06T22:06:12.582Z",
+        "likes": 10,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "creating-ai-influencers": {
+    "postSlug": "creating-ai-influencers",
+    "comments": [
+      {
+        "id": "ftc1kl7a9",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-08-02T09:06:12.582Z",
+        "likes": 10,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "vmfazd1s1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been using Jasper for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-07-17T19:38:12.582Z",
+        "likes": 12,
+        "replies": [
+          {
+            "id": "s6s4skkv8",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-31T18:37:12.582Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "vqfd9q30q",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-31T03:05:12.582Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "8xb9d2x74",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-30T15:21:12.582Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "bqbrxp9qv",
+        "username": "Guest",
+        "avatar": "",
+        "content": "api integration looks solid but heads up - rate limiting with creating can be a pain",
+        "timestamp": "2025-07-29T15:06:12.582Z",
+        "likes": 13,
+        "replies": [
+          {
+            "id": "og2ivrwhp",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-30T23:09:12.582Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2nrsjs8mm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-29T06:18:12.582Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "digital-products-ideas-2025": {
+    "postSlug": "digital-products-ideas-2025",
+    "comments": [
+      {
+        "id": "t82ifxmiu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-09T21:41:12.582Z",
+        "likes": 27,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "l3aaqg1ji",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-28T11:24:12.582Z",
+        "likes": 12,
+        "replies": [
+          {
+            "id": "6taotfhez",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-18T00:32:12.582Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "1fgfnfxij",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-29T22:50:12.582Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "iub6ff4mk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "seems like it needs a lot of resources. what about solo people?",
+        "timestamp": "2025-08-01T01:16:12.582Z",
+        "likes": 24,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "jozpgqre3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-28T12:14:12.582Z",
+        "likes": 34,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ri8unqt0q",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this matches what i learned from {book/course}. consistency wins",
+        "timestamp": "2025-07-13T19:31:12.582Z",
+        "likes": 31,
+        "replies": [
+          {
+            "id": "n0w45tu2z",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-30T12:58:12.582Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "xsu56r3p9",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-30T12:23:12.582Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "6t1qaee8b",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-08-01T08:44:12.582Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "gatpu6ope",
+        "username": "Guest",
+        "avatar": "",
+        "content": "seems like it needs a lot of resources. what about solo people?",
+        "timestamp": "2025-07-07T04:18:12.583Z",
+        "likes": 39,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "email-marketing-automation-guide": {
+    "postSlug": "email-marketing-automation-guide",
+    "comments": [
+      {
+        "id": "ti3clui2b",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-15T09:27:12.583Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "oz5nrdttk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-08-02T11:17:12.583Z",
+        "likes": 37,
+        "replies": [
+          {
+            "id": "oi3jx2taj",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T20:27:12.583Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "qmm88v8jg",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-31T10:02:12.583Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "plspww7lb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-17T22:17:12.583Z",
+        "likes": 19,
+        "replies": [
+          {
+            "id": "lvsdkmgxg",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-09T17:47:12.583Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "1pgeuddsx",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-31T19:58:12.583Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 7
+  },
+  "digital-products-that-sell": {
+    "postSlug": "digital-products-that-sell",
+    "comments": [
+      {
+        "id": "0kye214c5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-20T22:24:12.583Z",
+        "likes": 29,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "qswraiaop",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-30T05:12:12.583Z",
+        "likes": 47,
+        "replies": [
+          {
+            "id": "0788mjv6d",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-31T01:33:12.583Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "vr7zsbat2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-08T23:29:12.583Z",
+        "likes": 33,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ph7128777",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this matches what i learned from {book/course}. consistency wins",
+        "timestamp": "2025-08-02T04:10:12.583Z",
+        "likes": 53,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "oqkgge83x",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-29T17:23:12.583Z",
+        "likes": 46,
+        "replies": [
+          {
+            "id": "94vk3z44t",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-01T19:23:12.583Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 7
+  },
+  "instagram-mistakes-lessons": {
+    "postSlug": "instagram-mistakes-lessons",
+    "comments": [
+      {
+        "id": "h4uoanh4g",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-08-02T10:50:12.583Z",
+        "likes": 28,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "4agxe6gac",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-12T00:40:12.583Z",
+        "likes": 47,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "nwx9oihuf",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-08-01T20:12:12.583Z",
+        "likes": 39,
+        "replies": [
+          {
+            "id": "ifhxr5z4m",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-31T17:28:12.583Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "kac4gzodf",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-28T09:16:12.583Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2b61n78ja",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-09T03:45:12.583Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "rcr2d2xnb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-21T18:11:12.583Z",
+        "likes": 11,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "nelf522mn",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-05T08:03:12.583Z",
+        "likes": 11,
+        "replies": [
+          {
+            "id": "yc5ho5j48",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-28T09:51:12.583Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 9
+  },
+  "qwen-3-alibaba-open-source-llm": {
+    "postSlug": "qwen-3-alibaba-open-source-llm",
+    "comments": [
+      {
+        "id": "5xy5xq1ui",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-23T06:48:12.583Z",
+        "likes": 47,
+        "replies": [
+          {
+            "id": "pn003t1tu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-16T01:50:12.583Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "4dkwsrqfo",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-29T14:25:12.583Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "6lhafeth7",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-30T18:16:12.583Z",
+        "likes": 16,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "q7z10kn4t",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this matches what i learned from {book/course}. consistency wins",
+        "timestamp": "2025-07-16T16:11:12.583Z",
+        "likes": 42,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "hnjatnoz4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-15T20:33:12.583Z",
+        "likes": 22,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ertybezna",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-24T09:54:12.583Z",
+        "likes": 25,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 7
+  },
+  "sales-funnel-automation": {
+    "postSlug": "sales-funnel-automation",
+    "comments": [
+      {
+        "id": "up3d15wk6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-24T03:56:12.583Z",
+        "likes": 24,
+        "replies": [
+          {
+            "id": "ntyegriop",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-28T06:38:12.583Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "9aw5nutea",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-21T18:32:12.583Z",
+        "likes": 22,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "bczjoc00y",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-15T06:49:12.583Z",
+        "likes": 28,
+        "replies": [
+          {
+            "id": "9gb8krmva",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-29T02:36:12.583Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "wztv9n6xp",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-29T08:24:12.583Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ztvwfvxzo",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-01T01:51:12.583Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 7
+  },
+  "comfyui-comparison": {
+    "postSlug": "comfyui-comparison",
+    "comments": [
+      {
+        "id": "myypybzic",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-22T10:44:12.583Z",
+        "likes": 36,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "sej7xjhg5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-06T09:53:12.583Z",
+        "likes": 16,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "k6k47dmha",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-22T23:05:12.583Z",
+        "likes": 42,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "v7exo4ryt",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-30T10:37:12.583Z",
+        "likes": 47,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "tc60zbru3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "seems like it needs a lot of resources. what about solo people?",
+        "timestamp": "2025-07-05T19:56:12.583Z",
+        "likes": 17,
+        "replies": [
+          {
+            "id": "p9v4zlxz0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-27T18:52:12.583Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "0zi0c1sjl",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T23:19:12.583Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 7
+  },
+  "data-entry-automation": {
+    "postSlug": "data-entry-automation",
+    "comments": [
+      {
+        "id": "0w2hw2neb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-19T18:01:12.583Z",
+        "likes": 47,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "pua0ekj8d",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on data",
+        "timestamp": "2025-07-12T06:01:12.583Z",
+        "likes": 50,
+        "replies": [
+          {
+            "id": "3t31vs9tb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-29T03:04:12.583Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "9p3wqp6p6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T07:49:12.583Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "7hd2555gd",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-31T05:28:12.583Z",
+        "likes": 52,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "xnu71tmjw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-09T05:11:12.583Z",
+        "likes": 33,
+        "replies": [
+          {
+            "id": "rqh4oxgbh",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-08-01T02:24:12.583Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "hqkfy9omc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-22T14:03:12.583Z",
+        "likes": 16,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "tqf6111g4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-27T12:45:12.583Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "4zl1tapta",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-24T22:05:12.583Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
+  },
+  "comfyui-success-story": {
+    "postSlug": "comfyui-success-story",
+    "comments": [
+      {
+        "id": "t87rnjay6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-16T22:57:12.684Z",
+        "likes": 31,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "5636c04n6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-07T06:20:12.684Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "j0pbi0hv2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-22T17:48:12.684Z",
+        "likes": 43,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 3
+  },
+  "dropshipping-automation": {
+    "postSlug": "dropshipping-automation",
+    "comments": [
+      {
+        "id": "rzk9kdm2n",
+        "username": "Guest",
+        "avatar": "",
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-29T17:02:12.684Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "lbysc9i9g",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-15T07:43:12.684Z",
+        "likes": 24,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "4m6cyyqs8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-23T13:19:12.684Z",
+        "likes": 6,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "efe72lag8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-19T09:30:12.684Z",
+        "likes": 20,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "p9raeplii",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-24T22:32:12.684Z",
+        "likes": 8,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "opcpwwn2c",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-15T07:30:12.684Z",
+        "likes": 13,
+        "replies": [
+          {
+            "id": "eosmr8wed",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T00:55:12.684Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "8kinrrrss",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T06:23:12.684Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2o4gdhwar",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-29T11:36:12.684Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "2p3ki98si",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-16T21:34:12.684Z",
+        "likes": 36,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "r6rwp8maz",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-29T19:48:12.684Z",
+        "likes": 32,
+        "replies": [
+          {
+            "id": "4sz0qn0vz",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T12:52:12.684Z",
+            "likes": 8,
             "replies": [],
             "isOP": false
           }
@@ -6477,79 +6529,166 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 12
   },
-  "data-entry-automation": {
-    "postSlug": "data-entry-automation",
+  "sales-page-psychology": {
+    "postSlug": "sales-page-psychology",
     "comments": [
       {
-        "id": "5y6gzek1t",
-        "username": "CloudArchitect",
+        "id": "v0iocer9l",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-18T01:46:27.183Z",
-        "likes": 34,
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-21T13:10:12.684Z",
+        "likes": 25,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "1ed5g54uv",
-        "username": "GrowthHacker_",
+        "id": "kg2mfg0kw",
+        "username": "Guest",
         "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-31T16:57:27.183Z",
-        "likes": 33,
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-27T05:17:12.684Z",
+        "likes": 14,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "7as39nrf3",
-        "username": "CreatorLife",
+        "id": "3hnqjw0ei",
+        "username": "Guest",
         "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-05T15:26:27.183Z",
-        "likes": 29,
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-31T18:35:12.684Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "y7tk7nnwz",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-30T02:05:12.684Z",
+        "likes": 43,
         "replies": [],
         "isOP": false
       }
     ],
-    "commentCount": 3
+    "commentCount": 4
   },
-  "comfyui-success-story": {
-    "postSlug": "comfyui-success-story",
+  "supply-chain-automation": {
+    "postSlug": "supply-chain-automation",
     "comments": [
       {
-        "id": "xce4cblr9",
-        "username": "CreatorLife",
+        "id": "11p0q705y",
+        "username": "Guest",
         "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-21T00:33:27.286Z",
-        "likes": 10,
+        "content": "remember when i first found RunwayML? mind = blown. cant work without it now",
+        "timestamp": "2025-07-25T05:52:12.684Z",
+        "likes": 53,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "mzl85enfn",
-        "username": "OnlineEmpire",
+        "id": "cfcivlzb6",
+        "username": "Guest",
         "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-12T10:01:27.286Z",
-        "likes": 44,
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-27T11:41:12.684Z",
+        "likes": 46,
         "replies": [
           {
-            "id": "snrk5x428",
-            "username": "ScaleUpStudio",
+            "id": "xh0f8fd3g",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-27T17:42:27.286Z",
-            "likes": 1,
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-30T21:20:12.684Z",
+            "likes": 4,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "2dfwbaug6",
-            "username": "GrowthHacker_",
+            "id": "8g2gnvgpj",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-01T05:46:27.286Z",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-08-01T05:50:12.684Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "hpwa5qu7o",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-12T07:04:12.684Z",
+        "likes": 51,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "uvjkcp5au",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone tried mixing this with ChatGPT? wondering if they work together",
+        "timestamp": "2025-07-04T19:27:12.684Z",
+        "likes": 53,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "gou3x1djc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "not trying to be negative but ive been burned by hyped tools before",
+        "timestamp": "2025-07-28T01:37:12.684Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 7
+  },
+  "alpha-evolve-ai-business-empire": {
+    "postSlug": "alpha-evolve-ai-business-empire",
+    "comments": [
+      {
+        "id": "yl6psgmcy",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been using Claude for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-07-11T13:30:12.684Z",
+        "likes": 26,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "h9vclq3hp",
+        "username": "Guest",
+        "avatar": "",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-14T22:03:12.684Z",
+        "likes": 47,
+        "replies": [
+          {
+            "id": "2otf40omy",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-31T15:22:12.684Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "j8axvp16m",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-27T22:33:12.684Z",
             "likes": 12,
             "replies": [],
             "isOP": false
@@ -6558,50 +6697,92 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "0ylpr12st",
-        "username": "ROI_Focused",
+        "id": "bojl0vbfs",
+        "username": "Guest",
         "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-12T04:51:27.286Z",
-        "likes": 35,
-        "replies": [],
+        "content": "anyone tried mixing this with Claude? wondering if they work together",
+        "timestamp": "2025-07-27T00:46:12.684Z",
+        "likes": 10,
+        "replies": [
+          {
+            "id": "5sxcisgg1",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-30T07:30:12.684Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
         "isOP": false
       },
       {
-        "id": "1f1iflsxa",
-        "username": "GrowthHacker_",
+        "id": "bi0gcqkwv",
+        "username": "Guest",
         "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-16T19:04:27.286Z",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-09T03:27:12.684Z",
+        "likes": 37,
+        "replies": [
+          {
+            "id": "38aca3gg0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T05:49:12.684Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "sovgpby1j",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T13:41:12.684Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "cfttktxob",
+        "username": "Guest",
+        "avatar": "",
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-07-27T03:27:12.684Z",
         "likes": 36,
         "replies": [
           {
-            "id": "kafd2rca7",
-            "username": "ScalingUp_",
+            "id": "cm5oc7x0m",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-30T02:37:27.286Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "mv698653v",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T12:45:27.286Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "nsqtx4ozk",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-09T02:30:27.286Z",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-27T09:38:12.684Z",
             "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "wq28ro35p",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-30T06:04:12.684Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "e8dzza0nw",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-27T15:37:12.684Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           }
@@ -6609,80 +6790,39 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "h7oimy3m1",
-        "username": "ContentKing_92",
+        "id": "w5hyebmjw",
+        "username": "Guest",
         "avatar": "",
-        "content": "The data-driven approach is refreshing. Too many 'gurus' rely on anecdotes instead of metrics.",
-        "timestamp": "2025-07-14T10:47:27.286Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "yz3pa37yy",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-21T03:33:27.286Z",
-        "likes": 15,
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-16T18:30:12.684Z",
+        "likes": 29,
         "replies": [
           {
-            "id": "gq0vsmqjy",
-            "username": "SaaSFounder",
+            "id": "koayjgj44",
+            "username": "Guest",
             "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-08-01T23:50:27.286Z",
-            "likes": 15,
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-29T08:55:12.684Z",
+            "likes": 6,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ecf97pyet",
-            "username": "CreativeHustle",
+            "id": "mkopvj2um",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-01T18:54:27.286Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "urcui62zj",
-        "username": "ScalingUp_",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-07T02:59:27.286Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "25xpuf4xn",
-        "username": "ProfitMaximizer",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-05T17:18:27.286Z",
-        "likes": 43,
-        "replies": [
-          {
-            "id": "a3zai4jif",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-28T20:15:27.286Z",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T19:03:12.684Z",
             "likes": 13,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "y3tkatumd",
-            "username": "CreativeHustle",
+            "id": "yeaxe3q0z",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-27T15:26:27.286Z",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-31T00:46:12.684Z",
             "likes": 9,
             "replies": [],
             "isOP": false
@@ -6693,143 +6833,44 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 17
   },
-  "dropshipping-automation": {
-    "postSlug": "dropshipping-automation",
+  "youtube-automation-faceless": {
+    "postSlug": "youtube-automation-faceless",
     "comments": [
       {
-        "id": "683ptdh62",
-        "username": "AutomationAndy",
+        "id": "k0dobphxt",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-11T03:53:27.286Z",
-        "likes": 44,
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-20T11:21:12.684Z",
+        "likes": 26,
         "replies": [
           {
-            "id": "9bqjyezna",
-            "username": "MLEngineer99",
+            "id": "32vy0c8yb",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-27T21:45:27.286Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "tglel1vdj",
-            "username": "DevLife2024",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-29T16:37:27.286Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ni6ls9ju8",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-02T04:49:27.286Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "vgkokp7kt",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-07T09:30:27.286Z",
-        "likes": 32,
-        "replies": [
-          {
-            "id": "ee82f3dby",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-08-02T02:25:27.286Z",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-08-02T08:00:12.684Z",
             "likes": 4,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "x5klkobs0",
-            "username": "DataScienceD",
+            "id": "9mc8nf16t",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-29T11:09:27.286Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "jt9k2ukgh",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using dropshipping, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-18T11:15:27.286Z",
-        "likes": 37,
-        "replies": [
-          {
-            "id": "duduwmfnc",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-30T21:43:27.286Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "j4348xrg1",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-08-01T07:02:27.286Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "sales-page-psychology": {
-    "postSlug": "sales-page-psychology",
-    "comments": [
-      {
-        "id": "vt4dno9oi",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-10T21:40:27.286Z",
-        "likes": 18,
-        "replies": [
-          {
-            "id": "3yr3kfg00",
-            "username": "GrowthExpert",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-30T13:55:27.286Z",
-            "likes": 8,
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T11:18:12.684Z",
+            "likes": 6,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "fdma1kt8m",
-            "username": "BusinessHacks",
+            "id": "z0hk4elh9",
+            "username": "Guest",
             "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-27T16:57:27.286Z",
-            "likes": 1,
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T10:42:12.684Z",
+            "likes": 5,
             "replies": [],
             "isOP": false
           }
@@ -6837,158 +6878,39 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "sy9vutbtl",
-        "username": "DigitalNomadSarah",
+        "id": "rv9bfwjbl",
+        "username": "Guest",
         "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-31T04:38:27.286Z",
-        "likes": 52,
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-11T13:00:12.684Z",
+        "likes": 6,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "867ly098b",
-        "username": "DigitalBiz",
+        "id": "nbu4yjx4k",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-07-29T09:39:27.286Z",
-        "likes": 10,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2wyezr2d7",
-        "username": "ROI_Focused",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-28T19:56:27.286Z",
-        "likes": 44,
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-12T07:12:12.684Z",
+        "likes": 38,
         "replies": [
           {
-            "id": "rc0gsvpsp",
-            "username": "BusinessHacks",
+            "id": "gluipgsnm",
+            "username": "Guest",
             "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-31T01:06:27.286Z",
-            "likes": 9,
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-30T01:27:12.684Z",
+            "likes": 10,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "5iyajzvmg",
-            "username": "CreativeHustle",
+            "id": "q4ytxm31g",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-27T21:58:27.286Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "2lopqfmbq",
-            "username": "EntrepreneurE",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-28T07:43:27.286Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "tsig3xq4t",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-15T12:00:27.286Z",
-        "likes": 42,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "rriii9byv",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-09T21:27:27.286Z",
-        "likes": 25,
-        "replies": [
-          {
-            "id": "pm227dq0l",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-01T03:30:27.286Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "19ozv8tr7",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-07T01:28:27.286Z",
-        "likes": 25,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "m2sk64xoh",
-        "username": "RevenueOptimizer",
-        "avatar": "",
-        "content": "The data-driven approach is refreshing. Too many 'gurus' rely on anecdotes instead of metrics.",
-        "timestamp": "2025-07-08T20:37:27.286Z",
-        "likes": 17,
-        "replies": [
-          {
-            "id": "qr0u1h0md",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-27T10:59:27.286Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "1b18ab8k3",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-31T10:07:27.286Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 16
-  },
-  "supply-chain-automation": {
-    "postSlug": "supply-chain-automation",
-    "comments": [
-      {
-        "id": "16h5gfuvp",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-24T23:20:27.286Z",
-        "likes": 15,
-        "replies": [
-          {
-            "id": "9ero0c70s",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-29T23:41:27.286Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-05T18:57:12.684Z",
             "likes": 3,
             "replies": [],
             "isOP": false
@@ -6997,20 +6919,40 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "0g0axwdpo",
-        "username": "FrontendPhil",
+        "id": "s2qwttep5",
+        "username": "Guest",
         "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-20T16:51:27.286Z",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-23T21:30:12.684Z",
         "likes": 47,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "02v85gcj0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-23T09:52:12.684Z",
+        "likes": 32,
         "replies": [
           {
-            "id": "np8zdtho2",
-            "username": "DevLife2024",
+            "id": "kclfhw0kg",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T01:27:27.286Z",
-            "likes": 8,
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-29T20:08:12.684Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ea1s2y7zn",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-29T23:51:12.684Z",
+            "likes": 11,
             "replies": [],
             "isOP": false
           }
@@ -7018,364 +6960,118 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "tltc1t2xh",
-        "username": "DevOpsDaily",
+        "id": "o2sx8nmqg",
+        "username": "Guest",
         "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-15T02:32:27.286Z",
-        "likes": 9,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "reo20twqf",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-25T07:38:27.286Z",
-        "likes": 33,
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-18T05:43:12.684Z",
+        "likes": 29,
         "replies": [
           {
-            "id": "ikjdw5k93",
-            "username": "MLEngineer99",
+            "id": "ikj06kw6d",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-30T05:22:27.286Z",
-            "likes": 9,
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-08-01T05:46:12.684Z",
+            "likes": 3,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "hgud4n5ie",
-            "username": "CodeMaster_X",
+            "id": "lzys0yynf",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-31T23:21:27.286Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "3un6aey7f",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-06T22:39:27.286Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2cye84sxe",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Midjourney - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-17T16:57:27.286Z",
-        "likes": 25,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "alpha-evolve-ai-business-empire": {
-    "postSlug": "alpha-evolve-ai-business-empire",
-    "comments": [
-      {
-        "id": "kopdw6mg8",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-23T07:08:27.286Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2ck8rzedt",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with alpha.",
-        "timestamp": "2025-07-18T16:29:27.286Z",
-        "likes": 44,
-        "replies": [
-          {
-            "id": "0gug6l8yx",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-11T01:57:27.286Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "uwokd335w",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-24T01:57:27.286Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "jdgpzc55e",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-28T06:33:27.286Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "zbnuqmz4m",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-24T22:28:27.286Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "07mek253c",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-21T22:29:27.286Z",
-        "likes": 18,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "eybz5til1",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-06T07:27:27.286Z",
-        "likes": 46,
-        "replies": [
-          {
-            "id": "edfl7yi2j",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-30T15:31:27.286Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "hprn5xb5p",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-01T17:35:27.286Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 10
-  },
-  "youtube-automation-faceless": {
-    "postSlug": "youtube-automation-faceless",
-    "comments": [
-      {
-        "id": "0raitq522",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "How do you handle edge cases? Automation is great until something unexpected happens.",
-        "timestamp": "2025-08-02T14:52:27.286Z",
-        "likes": 35,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2ox0f8na7",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-08-01T07:39:27.286Z",
-        "likes": 36,
-        "replies": [
-          {
-            "id": "vvv11m007",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-08-01T11:41:27.286Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "coxenzj36",
-            "username": "FullStackFred",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-29T00:44:27.286Z",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-28T23:01:12.684Z",
             "likes": 9,
             "replies": [],
             "isOP": false
           }
         ],
         "isOP": false
-      },
-      {
-        "id": "08zf3kmfw",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-25T23:03:27.286Z",
-        "likes": 35,
-        "replies": [
-          {
-            "id": "x38eg2hel",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-08-01T03:43:27.286Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "olpkey7lu",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-28T10:05:27.286Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ncn5u34ro",
-            "username": "APIGuru",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-08-01T20:06:27.286Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "0nr64oums",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-15T14:34:27.286Z",
-        "likes": 18,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ydi3lz668",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-24T13:29:27.286Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "yc9f58crb",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-18T00:15:27.286Z",
-        "likes": 44,
-        "replies": [
-          {
-            "id": "evml3gpqo",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-23T02:26:27.286Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "aw74b7jrl",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-12T10:08:27.286Z",
-        "likes": 5,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "4xao90e9k",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-15T09:29:27.286Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
       }
     ],
-    "commentCount": 14
+    "commentCount": 15
   },
   "google-ads-automation": {
     "postSlug": "google-ads-automation",
     "comments": [
       {
-        "id": "wkji8iizl",
-        "username": "InfluencerMike",
+        "id": "3jefj8sjr",
+        "username": "Guest",
         "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-21T14:50:27.286Z",
-        "likes": 28,
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-06T04:16:12.684Z",
+        "likes": 50,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "3e8crp640",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-08-03T03:12:12.684Z",
+        "likes": 20,
         "replies": [
           {
-            "id": "87mhkucun",
-            "username": "PassiveIncomeJoe",
+            "id": "1ow5lyqv2",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-29T11:06:27.286Z",
-            "likes": 10,
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-31T03:24:12.684Z",
+            "likes": 4,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "rpn3pxuks",
-            "username": "InfluencerMike",
+            "id": "rea3lkak5",
+            "username": "Guest",
             "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-26T01:53:27.286Z",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-02T00:03:12.684Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "vulzlxt3m",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-08-01T01:04:12.684Z",
+        "likes": 42,
+        "replies": [
+          {
+            "id": "och5bgq58",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-14T06:48:12.684Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "i1amd163i",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-29T13:52:12.684Z",
             "likes": 1,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "6zqrkkquz",
-            "username": "InfluencerMike",
+            "id": "m7jun0ozb",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-30T00:43:27.286Z",
-            "likes": 4,
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-28T13:14:12.684Z",
+            "likes": 10,
             "replies": [],
             "isOP": false
           }
@@ -7383,53 +7079,12 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "2qv0vvqbi",
-        "username": "CreativeHustle",
+        "id": "0cpi7lugq",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-11T16:01:27.286Z",
-        "likes": 17,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "duphna6q2",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-19T07:04:27.286Z",
-        "likes": 24,
-        "replies": [
-          {
-            "id": "v9gi4qmjx",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-27T10:55:27.286Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "et2khkvki",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-27T21:31:27.286Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "h314i2js5",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-10T15:45:27.286Z",
-        "likes": 40,
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-14T01:42:12.684Z",
+        "likes": 25,
         "replies": [],
         "isOP": false
       }
@@ -7440,708 +7095,30 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "marketing-automation-platforms",
     "comments": [
       {
-        "id": "rl5igkxeq",
-        "username": "FrontendPhil",
+        "id": "gl92go8ol",
+        "username": "Guest",
         "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-15T01:34:27.286Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "y8mn1pukq",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-08-02T01:33:27.286Z",
-        "likes": 19,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "zmp5pi871",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-08-02T05:51:27.286Z",
-        "likes": 29,
-        "replies": [
-          {
-            "id": "wxhw0h3ut",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-28T05:05:27.286Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "z9rfdc82q",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-30T00:14:27.286Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ge31iqjhr",
-            "username": "DevOpsDaily",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-28T21:32:27.286Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "pusagiwn4",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-31T10:20:27.286Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "32gtv11ig",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-26T09:57:27.286Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "q759rq0p1",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-07T20:33:27.286Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "mg74vcwuv",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T05:18:27.286Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "xsar8jc6y",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-28T02:45:27.286Z",
-        "likes": 37,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "xo3qs30xl",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using marketing, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-09T03:57:27.286Z",
-        "likes": 52,
-        "replies": [
-          {
-            "id": "eg42nws0v",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-08-02T05:00:27.287Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ngms0my2l",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-30T05:13:27.287Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "harsdf6on",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-18T03:01:27.287Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 15
-  },
-  "why-n8n-is-different": {
-    "postSlug": "why-n8n-is-different",
-    "comments": [
-      {
-        "id": "7ptjhjgek",
-        "username": "BusinessHacks",
-        "avatar": "",
-        "content": "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-        "timestamp": "2025-07-16T13:40:27.287Z",
-        "likes": 39,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "5y75l8mev",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-18T11:39:27.287Z",
-        "likes": 42,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "9fq994dog",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-09T12:05:27.287Z",
-        "likes": 33,
-        "replies": [
-          {
-            "id": "gm8l47rzj",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-30T12:13:27.287Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "jx21twpc2",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-01T20:08:27.287Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "f78qfmm7r",
-            "username": "StartupSucc3ss",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-28T02:31:27.287Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "q2pbegf6i",
-        "username": "GrowthExpert",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-28T02:25:27.287Z",
-        "likes": 54,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "google-deep-research-25-pro-business": {
-    "postSlug": "google-deep-research-25-pro-business",
-    "comments": [
-      {
-        "id": "xtd4iixnw",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-09T17:32:27.287Z",
-        "likes": 15,
-        "replies": [
-          {
-            "id": "22tr5hctk",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T16:42:27.287Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ece6npc5p",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-28T01:04:27.287Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "qq3s8wrna",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-25T22:10:27.287Z",
-        "likes": 47,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "fqpewj1vn",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-07T10:52:27.287Z",
-        "likes": 14,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "1yol066qs",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-17T02:39:27.287Z",
-        "likes": 44,
-        "replies": [
-          {
-            "id": "oiyr63z2z",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-19T07:40:27.287Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "19ixk8u3j",
-        "username": "DigitalBiz",
-        "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-17T01:11:27.287Z",
-        "likes": 18,
-        "replies": [
-          {
-            "id": "8lputvq8l",
-            "username": "BusinessHacks",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-02T00:29:27.287Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "iofirjhg9",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-07T11:58:27.287Z",
-        "likes": 9,
-        "replies": [
-          {
-            "id": "xnawn2k4a",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-29T20:55:27.287Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "07lm1uuml",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-29T15:52:27.298Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "9e05oa9jq",
-            "username": "BusinessMinded",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-27T13:28:27.298Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "shopify-automation-ai": {
-    "postSlug": "shopify-automation-ai",
-    "comments": [
-      {
-        "id": "jp9xc82wp",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-29T14:42:27.400Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "bvntxdkcl",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-10T00:46:27.400Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "iy6gvz7x7",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-07T04:49:27.400Z",
-        "likes": 34,
-        "replies": [
-          {
-            "id": "2w3y3y3t5",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T21:41:27.400Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "cb10hotjv",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-11T15:24:27.400Z",
-        "likes": 48,
-        "replies": [
-          {
-            "id": "6u7ipta8p",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-08-02T03:06:27.400Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "67wsuq2kc",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-05T12:16:27.400Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "06gz83kop",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-12T08:28:27.400Z",
-        "likes": 30,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 8
-  },
-  "how-to-sell-templates": {
-    "postSlug": "how-to-sell-templates",
-    "comments": [
-      {
-        "id": "pk821o8ld",
-        "username": "GrowthExpert",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-23T16:16:27.400Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "wgei47grc",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-07-19T19:49:27.400Z",
-        "likes": 22,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "vmgwz5qff",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-22T06:39:27.400Z",
-        "likes": 19,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "wkr9vepkf",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-15T16:55:27.400Z",
-        "likes": 21,
-        "replies": [
-          {
-            "id": "fpsqnxle6",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-14T06:07:27.400Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "22r95po5p",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-31T18:14:27.400Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "vz7u99ly4",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-08-02T01:53:27.400Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "iwi5pq7hd",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-28T09:49:27.400Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "bdfsxvhd7",
-            "username": "OnlineEmpire",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-08-02T00:27:27.400Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "56meic0l0",
-            "username": "DigitalBiz",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-28T14:29:27.400Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "uhovm8r0f",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-        "timestamp": "2025-07-11T12:45:27.400Z",
+        "content": "webhook setup is annoying. test everything before going live trust me",
+        "timestamp": "2025-07-18T22:24:12.684Z",
         "likes": 25,
         "replies": [],
         "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "instagram-ignited-success-stories": {
-    "postSlug": "instagram-ignited-success-stories",
-    "comments": [
-      {
-        "id": "vwlkcsi1e",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-07-27T21:04:27.400Z",
-        "likes": 33,
-        "replies": [],
-        "isOP": false
       },
       {
-        "id": "lpe4kwd3d",
-        "username": "ProfitMaximizer",
+        "id": "0uzmmtb5g",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-07-06T04:47:27.400Z",
-        "likes": 12,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2zyoivsae",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-22T21:02:27.400Z",
-        "likes": 10,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cclltacbg",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-11T14:06:27.400Z",
-        "likes": 15,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "z5lbzqnvc",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-23T13:58:27.400Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "08glhri88",
-        "username": "ProfitMaximizer",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-12T10:28:27.400Z",
-        "likes": 52,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "me5gtmzc1",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-08-01T05:42:27.400Z",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-05T08:07:12.684Z",
         "likes": 18,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "lbwuwnepd",
-        "username": "BusinessMinded",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-13T23:36:27.400Z",
-        "likes": 32,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 8
-  },
-  "security-automation-systems": {
-    "postSlug": "security-automation-systems",
-    "comments": [
-      {
-        "id": "rxfk5q20k",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-07T05:40:27.400Z",
-        "likes": 22,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ju5fjesp1",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-05T22:32:27.400Z",
-        "likes": 50,
         "replies": [
           {
-            "id": "6w5l5vpbf",
-            "username": "MLEngineer99",
+            "id": "3ko38njm8",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-27T22:59:27.400Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "6vb1j3zg6",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-28T21:29:27.400Z",
-            "likes": 7,
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-29T02:19:12.684Z",
+            "likes": 4,
             "replies": [],
             "isOP": false
           }
@@ -8149,87 +7126,144 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "34msqlpfm",
-        "username": "GrowthHacker_",
+        "id": "5z348vxao",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-06T18:18:27.400Z",
-        "likes": 46,
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-17T09:27:12.684Z",
+        "likes": 29,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "7d9dctrpo",
-        "username": "DevLife2024",
+        "id": "yjmwd4lgt",
+        "username": "Guest",
         "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-17T00:43:27.400Z",
-        "likes": 11,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "vo6il1ubh",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-08-01T02:12:27.400Z",
-        "likes": 51,
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-28T04:36:12.684Z",
+        "likes": 32,
         "replies": [
           {
-            "id": "ij1whr031",
-            "username": "APIGuru",
+            "id": "17vvjorm7",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-28T05:47:27.400Z",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-29T08:30:12.684Z",
             "likes": 10,
             "replies": [],
             "isOP": false
-          },
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "cetuiyy7o",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-21T20:20:12.684Z",
+        "likes": 14,
+        "replies": [
           {
-            "id": "6z0zgr2um",
-            "username": "FrontendPhil",
+            "id": "agccgqx0q",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-02T04:37:27.400Z",
-            "likes": 15,
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-08-01T11:12:12.684Z",
+            "likes": 1,
             "replies": [],
             "isOP": false
           }
         ],
+        "isOP": false
+      },
+      {
+        "id": "rk5buhcp4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-29T22:08:12.684Z",
+        "likes": 7,
+        "replies": [],
         "isOP": false
       }
     ],
     "commentCount": 9
   },
-  "deepseek-janus-multimodal-breakthrough": {
-    "postSlug": "deepseek-janus-multimodal-breakthrough",
+  "why-n8n-is-different": {
+    "postSlug": "why-n8n-is-different",
     "comments": [
       {
-        "id": "af1b5yq2k",
-        "username": "ContentKing_92",
+        "id": "sbljf5ojc",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-07-27T15:16:27.400Z",
-        "likes": 10,
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-26T14:42:12.684Z",
+        "likes": 49,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "pzm8f0ms3",
-        "username": "StartupSucc3ss",
+        "id": "g4csc2g31",
+        "username": "Guest",
         "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-08-01T23:24:27.400Z",
-        "likes": 8,
+        "content": "seems like it needs a lot of resources. what about solo people?",
+        "timestamp": "2025-07-12T10:34:12.684Z",
+        "likes": 25,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "mmc9bg4yy",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how long till you saw real results?",
+        "timestamp": "2025-07-08T22:08:12.684Z",
+        "likes": 20,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 3
+  },
+  "google-deep-research-25-pro-business": {
+    "postSlug": "google-deep-research-25-pro-business",
+    "comments": [
+      {
+        "id": "d0j1yp2ps",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-22T15:58:12.684Z",
+        "likes": 25,
         "replies": [
           {
-            "id": "01fk4881o",
-            "username": "SoloPreneur23",
+            "id": "toomkhkdz",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-01T00:35:27.400Z",
-            "likes": 11,
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-29T16:44:12.684Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "r1i5ihvoe",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-29T11:10:12.684Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "lily4aop0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-08-02T09:14:12.684Z",
+            "likes": 6,
             "replies": [],
             "isOP": false
           }
@@ -8237,71 +7271,148 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "kctdxvkwk",
-        "username": "GrowthExpert",
+        "id": "hnm5ky7sm",
+        "username": "Guest",
         "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-07-09T14:24:27.400Z",
-        "likes": 23,
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-23T07:17:12.684Z",
+        "likes": 9,
+        "replies": [
+          {
+            "id": "3j06uh26v",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-31T03:11:12.684Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "5hjjrnisu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-14T19:38:12.684Z",
+        "likes": 43,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "cw03qfo7d",
-        "username": "StartupSally",
+        "id": "2dez84nwp",
+        "username": "Guest",
         "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-25T04:35:27.400Z",
-        "likes": 47,
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-23T04:47:12.684Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "shopify-automation-ai": {
+    "postSlug": "shopify-automation-ai",
+    "comments": [
+      {
+        "id": "nd6muz1ty",
+        "username": "Guest",
+        "avatar": "",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-11T20:36:12.786Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "xzle5wutz",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-14T22:18:12.786Z",
+        "likes": 36,
         "replies": [
           {
-            "id": "lxl8rixga",
-            "username": "MonetizeThis",
+            "id": "2v8aeswxu",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-01T19:14:27.400Z",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-30T21:13:12.786Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ew4evk9yk",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-30T06:09:12.786Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "mo0rwbuim",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-14T02:34:12.786Z",
+        "likes": 30,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "syoud4shq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-26T08:04:12.786Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "mjlcg7ao1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how do yall handle the whole ai ethics thing? kinda struggling with it",
+        "timestamp": "2025-07-12T05:41:12.786Z",
+        "likes": 46,
+        "replies": [
+          {
+            "id": "gxndpwlxx",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-20T17:31:12.786Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "5d5n4phlb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-29T16:01:12.786Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "laf85svnm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-28T04:36:12.786Z",
             "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "m2pfcnwvr",
-        "username": "DigitalBiz",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-29T04:09:27.400Z",
-        "likes": 19,
-        "replies": [
-          {
-            "id": "bndxngkjx",
-            "username": "ROI_Focused",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T18:52:27.400Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "kf1xszb86",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-01T03:53:27.400Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "xxv5a1ham",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-28T15:14:27.400Z",
-            "likes": 4,
             "replies": [],
             "isOP": false
           }
@@ -8311,161 +7422,444 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 10
   },
+  "how-to-sell-templates": {
+    "postSlug": "how-to-sell-templates",
+    "comments": [
+      {
+        "id": "yz595ics9",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-14T10:39:12.786Z",
+        "likes": 11,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "aj74m1pjz",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-31T23:05:12.786Z",
+        "likes": 28,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "u5d6xy8tk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-21T08:54:12.786Z",
+        "likes": 7,
+        "replies": [
+          {
+            "id": "wvqgszrdk",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-08-02T06:09:12.786Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 4
+  },
+  "instagram-ignited-success-stories": {
+    "postSlug": "instagram-ignited-success-stories",
+    "comments": [
+      {
+        "id": "us11s3eaq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how long till you saw real results?",
+        "timestamp": "2025-07-19T16:18:12.786Z",
+        "likes": 17,
+        "replies": [
+          {
+            "id": "0oef76zy6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-30T21:09:12.786Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "j02f1zme1",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-29T06:54:12.786Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "1r044wpr3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-30T10:41:12.786Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "v229rjaby",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how long till you saw real results?",
+        "timestamp": "2025-07-04T15:08:12.786Z",
+        "likes": 7,
+        "replies": [
+          {
+            "id": "la4xlan95",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-29T09:28:12.786Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "l8rxcg4a7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-08-01T09:51:12.786Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "cndildqnr",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-02T10:21:12.786Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "e7sg6gzes",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-28T11:13:12.786Z",
+        "likes": 34,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "4l8ckjfnj",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-22T21:42:12.786Z",
+        "likes": 17,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
+  },
+  "security-automation-systems": {
+    "postSlug": "security-automation-systems",
+    "comments": [
+      {
+        "id": "qnghboggk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "webhook setup is annoying. test everything before going live trust me",
+        "timestamp": "2025-07-24T12:31:12.786Z",
+        "likes": 39,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "shiyd33wm",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-18T16:57:12.786Z",
+        "likes": 16,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "w6md79stg",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-19T06:58:12.786Z",
+        "likes": 5,
+        "replies": [
+          {
+            "id": "def12ic6s",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-28T12:28:12.786Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "w239flo2t",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-29T14:41:12.786Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "jofoc9is4",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-27T18:51:12.786Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "lf0flfop8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-05T19:13:12.786Z",
+        "likes": 7,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "2c4eywpbz",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-24T11:53:12.786Z",
+        "likes": 20,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "coqqho3bt",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-07T05:22:12.786Z",
+        "likes": 48,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "9geevemj4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-11T18:46:12.786Z",
+        "likes": 21,
+        "replies": [
+          {
+            "id": "a4aej4hsz",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-30T21:15:12.786Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "deepseek-janus-multimodal-breakthrough": {
+    "postSlug": "deepseek-janus-multimodal-breakthrough",
+    "comments": [
+      {
+        "id": "2f7uz9vgu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-15T22:39:12.786Z",
+        "likes": 40,
+        "replies": [
+          {
+            "id": "tp17od0bw",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T12:42:12.786Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "dmnsztubs",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T19:31:12.786Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "v1y5yjxwu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-27T18:09:12.786Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "a0y0oep00",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this matches what i learned from {book/course}. consistency wins",
+        "timestamp": "2025-07-18T21:26:12.786Z",
+        "likes": 15,
+        "replies": [
+          {
+            "id": "i8lww780t",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-01T20:22:12.786Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "a301m5wdo",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-30T00:28:12.786Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "gpgetbger",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-08-02T06:32:12.786Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "me5ho2foe",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-27T05:12:12.786Z",
+        "likes": 41,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "hbatb220v",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-13T00:05:12.786Z",
+        "likes": 47,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
+  },
   "500k-followers": {
     "postSlug": "500k-followers",
     "comments": [
       {
-        "id": "34eslysfi",
-        "username": "RevenueOptimizer",
+        "id": "6vnnb08pc",
+        "username": "Guest",
         "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-11T16:10:27.400Z",
-        "likes": 19,
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-28T18:15:12.786Z",
+        "likes": 25,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "2x3wcx1al",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-27T23:02:12.786Z",
+        "likes": 14,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "uq6yqt22s",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-27T09:34:12.786Z",
+        "likes": 9,
         "replies": [
           {
-            "id": "uija63gru",
-            "username": "CreatorCodex",
+            "id": "wr2tb5sgx",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-08-01T14:25:27.400Z",
-            "likes": 4,
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-28T10:15:12.786Z",
+            "likes": 5,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "h3malr5gf",
-            "username": "DigitalBiz",
+            "id": "vkct63397",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-08-01T09:24:27.400Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "tr4t777k4",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-16T14:07:27.400Z",
-        "likes": 18,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "orkkuphoy",
-        "username": "StrategySteve",
-        "avatar": "",
-        "content": "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-        "timestamp": "2025-07-22T13:55:27.400Z",
-        "likes": 51,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "w980e1f3a",
-        "username": "ROI_Focused",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-21T10:52:27.400Z",
-        "likes": 22,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "dkmkmnh2c",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-25T20:06:27.400Z",
-        "likes": 27,
-        "replies": [
-          {
-            "id": "md1809qyq",
-            "username": "ROI_Focused",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-31T06:58:27.400Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "7tyb4bkr6",
-        "username": "EntrepreneurE",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-08-02T10:39:27.400Z",
-        "likes": 36,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 9
-  },
-  "no-code-automation-tools": {
-    "postSlug": "no-code-automation-tools",
-    "comments": [
-      {
-        "id": "guhtw3nep",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-15T13:06:27.400Z",
-        "likes": 45,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2ueej8ej3",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-06T23:05:27.400Z",
-        "likes": 11,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cuwdkj8dx",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-08-02T04:13:27.400Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "qxzna6lqk",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "How do you handle edge cases? Automation is great until something unexpected happens.",
-        "timestamp": "2025-07-20T00:52:27.400Z",
-        "likes": 54,
-        "replies": [
-          {
-            "id": "ykzcgjuy4",
-            "username": "FrontendPhil",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-28T03:08:27.400Z",
-            "likes": 11,
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-27T15:37:12.786Z",
+            "likes": 3,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "zhe1fdp2f",
-            "username": "PytonPro",
+            "id": "o0zivr894",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-01T18:43:27.400Z",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-08-01T16:37:12.786Z",
             "likes": 9,
             "replies": [],
             "isOP": false
@@ -8474,1195 +7868,19 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "b4do1c9rr",
-        "username": "AutomationAndy",
+        "id": "ixhs34gzf",
+        "username": "Guest",
         "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-06T19:02:27.400Z",
-        "likes": 25,
-        "replies": [
-          {
-            "id": "95tf2o0uj",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-02T07:32:27.400Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "8kiyn648n",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-08-02T05:35:27.400Z",
-        "likes": 50,
-        "replies": [
-          {
-            "id": "x9pev9gab",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-29T23:33:27.400Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "winzhzjz1",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-31T16:47:27.400Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "devops-automation-pipeline": {
-    "postSlug": "devops-automation-pipeline",
-    "comments": [
-      {
-        "id": "k8nnqea8z",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-08T07:09:27.400Z",
-        "likes": 32,
-        "replies": [
-          {
-            "id": "7pb8vtkpz",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-27T17:38:27.400Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "vzbxigvel",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-27T14:31:27.400Z",
-        "likes": 34,
-        "replies": [
-          {
-            "id": "e6rbwqi8c",
-            "username": "FullStackFred",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-08-01T07:40:27.400Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "bxuug3po9",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-30T08:00:27.400Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "k782ne7rc",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-08-01T22:15:27.400Z",
-        "likes": 13,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "honrww5nc",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-05T07:36:27.400Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "9totvh839",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-24T23:14:27.400Z",
-        "likes": 30,
-        "replies": [
-          {
-            "id": "0dombdcgh",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-28T02:02:27.400Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "qcavog3re",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-28T00:32:27.400Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "upid68hqq",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-28T10:48:27.400Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "aj7lxz8ve",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-16T02:39:27.400Z",
-        "likes": 26,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 12
-  },
-  "amazon-affiliate-automation": {
-    "postSlug": "amazon-affiliate-automation",
-    "comments": [
-      {
-        "id": "0rht2i1wc",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-26T19:17:27.400Z",
-        "likes": 17,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "iw6enw6mg",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-24T03:02:27.400Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "bhpqld4yy",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-16T23:58:27.400Z",
-        "likes": 15,
-        "replies": [
-          {
-            "id": "b07dkx7km",
-            "username": "FullStackFred",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-01T21:21:27.400Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "j6v8fs5ha",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-08-01T19:06:27.400Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "uw8a9dret",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-27T11:09:27.400Z",
-        "likes": 42,
-        "replies": [
-          {
-            "id": "y6gvuzliw",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-30T16:31:27.400Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "6ihzq2yzg",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-31T03:28:27.400Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "nmuyymnyq",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-05T13:30:27.400Z",
-        "likes": 39,
-        "replies": [
-          {
-            "id": "a2ddtw70m",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-29T23:05:27.400Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "6ra6ms5ww",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-16T20:25:27.400Z",
-        "likes": 17,
-        "replies": [
-          {
-            "id": "15qdmee8q",
-            "username": "APIGuru",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-01T14:05:27.400Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "bl1ea0g4v",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-31T12:40:27.400Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "scale-content-creation": {
-    "postSlug": "scale-content-creation",
-    "comments": [
-      {
-        "id": "2damyb3fv",
-        "username": "ScalingUp_",
-        "avatar": "",
-        "content": "TikTok's algorithm seems to change weekly. How do you adapt these strategies?",
-        "timestamp": "2025-08-03T00:20:27.400Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "qdh0p6xvb",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Anyone tried this on newer platforms like {emerging platform}? Wondering about first-mover advantage.",
-        "timestamp": "2025-08-03T03:24:27.400Z",
-        "likes": 53,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "o1rol783u",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "The content calendar framework saved my sanity. Finally have a system that works.",
-        "timestamp": "2025-07-25T18:52:27.400Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "agm7is9cu",
-        "username": "ScalingUp_",
-        "avatar": "",
-        "content": "The content calendar framework saved my sanity. Finally have a system that works.",
-        "timestamp": "2025-07-04T10:15:27.400Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "iqjaqajrd",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "The platform-specific tips are helpful. Each one really does require a different approach.",
-        "timestamp": "2025-07-27T12:59:27.400Z",
-        "likes": 15,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "y9qnpsjds",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "Used this exact funnel structure for my course launch and converted at 12%. These principles work.",
-        "timestamp": "2025-07-30T09:42:27.401Z",
-        "likes": 10,
-        "replies": [
-          {
-            "id": "u9qr07o52",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-13T04:04:27.401Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "7wtx9ahbp",
-            "username": "RevenueOptimizer",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-28T08:29:27.401Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "8uiy08xzn",
-        "username": "ROI_Focused",
-        "avatar": "",
-        "content": "Applied these tactics to my client's campaign and saw 300% improvement in engagement.",
-        "timestamp": "2025-07-16T03:58:27.401Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "r9roo1lhy",
-        "username": "ProfitMaximizer",
-        "avatar": "",
-        "content": "Cross-platform consistency is harder than it looks. This framework helps streamline that.",
-        "timestamp": "2025-07-31T04:52:27.401Z",
-        "likes": 49,
-        "replies": [
-          {
-            "id": "q2c8rl5wm",
-            "username": "ScalingUp_",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-29T16:05:27.401Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "digital-product-success-story": {
-    "postSlug": "digital-product-success-story",
-    "comments": [
-      {
-        "id": "h6amcpntr",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-21T09:09:27.503Z",
-        "likes": 13,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ow1dcphir",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "Finally someone talking about the unglamorous side of building a business. Reality check needed.",
-        "timestamp": "2025-07-28T07:42:27.503Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "i05utn1bj",
-        "username": "StrategySteve",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-27T07:05:27.503Z",
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-13T22:28:12.786Z",
         "likes": 13,
         "replies": [
           {
-            "id": "na9xkc9wx",
-            "username": "ROI_Focused",
+            "id": "bsjsctpb2",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T06:39:27.503Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "e38io99do",
-            "username": "GrowthExpert",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-30T10:07:27.503Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "jcuw40arm",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-09T03:25:27.503Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "bghzdlhnn",
-        "username": "RevenueOptimizer",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-06T16:40:27.503Z",
-        "likes": 24,
-        "replies": [
-          {
-            "id": "ba1y71e82",
-            "username": "SaaSFounder",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-31T22:05:27.503Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "f934uvpo8",
-            "username": "BusinessMinded",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-30T04:14:27.503Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 9
-  },
-  "tiktok-growth-hacks": {
-    "postSlug": "tiktok-growth-hacks",
-    "comments": [
-      {
-        "id": "81wxbjajw",
-        "username": "StrategySteve",
-        "avatar": "",
-        "content": "The content calendar framework saved my sanity. Finally have a system that works.",
-        "timestamp": "2025-07-29T02:29:27.503Z",
-        "likes": 54,
-        "replies": [
-          {
-            "id": "1y9jza0ta",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-19T07:42:27.503Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "f1481w0i0",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Don't sleep on the organic strategies. Paid ads are great but organic builds long-term value.",
-        "timestamp": "2025-07-10T14:24:27.503Z",
-        "likes": 12,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "jd8fw3et2",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "A/B testing is crucial here. What works for one audience might flop for another.",
-        "timestamp": "2025-07-18T08:16:27.503Z",
-        "likes": 11,
-        "replies": [
-          {
-            "id": "y9ltezhyr",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-31T09:57:27.503Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ot0eq8ap6",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-31T21:59:27.503Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "m4o7eou4m",
-        "username": "GrowthExpert",
-        "avatar": "",
-        "content": "TikTok's algorithm seems to change weekly. How do you adapt these strategies?",
-        "timestamp": "2025-07-30T15:01:27.503Z",
-        "likes": 27,
-        "replies": [
-          {
-            "id": "r7f35ewe3",
-            "username": "ROI_Focused",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T01:40:27.503Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "v6wt76yyn",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-30T01:37:27.503Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "cpcx5d17v",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-26T10:40:27.503Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ucvs3qzt0",
-        "username": "ProfitMaximizer",
-        "avatar": "",
-        "content": "Been in marketing for 10 years and this is spot on. The psychology behind it is everything.",
-        "timestamp": "2025-07-30T14:35:27.503Z",
-        "likes": 8,
-        "replies": [
-          {
-            "id": "lehmz93be",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-30T23:38:27.503Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "lj0xr1ob1",
-            "username": "MonetizeThis",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-02T05:56:27.503Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "81ntbq6wp",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The platform-specific tips are helpful. Each one really does require a different approach.",
-        "timestamp": "2025-07-27T02:40:27.503Z",
-        "likes": 43,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ganzhicif",
-        "username": "ProfitMaximizer",
-        "avatar": "",
-        "content": "Been in marketing for 10 years and this is spot on. The psychology behind it is everything.",
-        "timestamp": "2025-07-19T16:09:27.503Z",
-        "likes": 8,
-        "replies": [
-          {
-            "id": "rhqelen7v",
-            "username": "ROI_Focused",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-28T09:53:27.503Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "m0ehltbb5",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-31T02:04:27.503Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 17
-  },
-  "email-marketing-automation": {
-    "postSlug": "email-marketing-automation",
-    "comments": [
-      {
-        "id": "7fs8z3re5",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-17T20:39:27.503Z",
-        "likes": 21,
-        "replies": [
-          {
-            "id": "1k2oz9coo",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-08-03T02:16:27.503Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "n10h1v9n7",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-08T09:51:27.503Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "de95xgf50",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-10T01:36:27.503Z",
-        "likes": 23,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "9d4ua8kax",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-04T17:26:27.503Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ola7q7xnk",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-08T16:02:27.503Z",
-        "likes": 28,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cea8ss5y5",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-25T19:05:27.503Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "42isdjfl3",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-09T09:35:27.503Z",
-        "likes": 17,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "nneb768c6",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-13T01:14:27.503Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 9
-  },
-  "ai-influencer-success": {
-    "postSlug": "ai-influencer-success",
-    "comments": [
-      {
-        "id": "5zk2jeve5",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with ai.",
-        "timestamp": "2025-07-09T13:10:27.503Z",
-        "likes": 19,
-        "replies": [
-          {
-            "id": "250dllodj",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T15:41:27.503Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "byavav0z2",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "Has anyone tried combining this with ChatGPT? Wondering if there's synergy there.",
-        "timestamp": "2025-07-20T18:22:27.503Z",
-        "likes": 54,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ceh8pjh1p",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-12T11:58:27.503Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mwi1smwd7",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-15T03:01:27.503Z",
-        "likes": 40,
-        "replies": [
-          {
-            "id": "b28mwsirf",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T16:28:27.503Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "itavfu8op",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-30T23:27:27.503Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "coltw29l4",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-29T06:14:27.503Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "rqniudwuu",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-25T12:45:27.503Z",
-        "likes": 42,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "71vrytrkd",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "Has anyone tried combining this with Jasper? Wondering if there's synergy there.",
-        "timestamp": "2025-07-23T15:41:27.503Z",
-        "likes": 15,
-        "replies": [
-          {
-            "id": "5qkvdkvus",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-31T04:15:27.503Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "034pux56z",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-30T03:26:27.503Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "n4v5ip74v",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-27T16:49:27.503Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "bprrcqpi1",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-21T03:29:27.503Z",
-        "likes": 23,
-        "replies": [
-          {
-            "id": "7uafpjs3k",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-28T00:37:27.503Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "bxe9d851f",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-28T15:26:27.503Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "iyrbp7dwz",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-08-01T01:01:27.503Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 17
-  },
-  "no-code-automation-tools-comparison": {
-    "postSlug": "no-code-automation-tools-comparison",
-    "comments": [
-      {
-        "id": "tax0n5w3v",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-05T09:19:27.503Z",
-        "likes": 39,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "uly41oigj",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-08T08:31:27.503Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "qw33skidv",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-25T11:44:27.503Z",
-        "likes": 28,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 3
-  },
-  "ai-image-generation-guide": {
-    "postSlug": "ai-image-generation-guide",
-    "comments": [
-      {
-        "id": "7wecy2mx2",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-08-03T04:33:27.503Z",
-        "likes": 47,
-        "replies": [
-          {
-            "id": "klnxuk4m0",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-27T16:12:27.503Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "jp6fotqif",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "Has anyone tried combining this with Jasper? Wondering if there's synergy there.",
-        "timestamp": "2025-07-24T19:04:27.503Z",
-        "likes": 53,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cdeqqc3in",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Been using Jasper for my content creation and it's a total game changer. The time savings alone justify the cost.",
-        "timestamp": "2025-07-28T01:26:27.504Z",
-        "likes": 16,
-        "replies": [
-          {
-            "id": "5h243gaxy",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-01T14:27:27.504Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ofbir2j7q",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-28T13:29:27.504Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "bw1h15cr3",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-31T01:58:27.504Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "muega6rik",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with ai.",
-        "timestamp": "2025-07-16T12:22:27.504Z",
-        "likes": 13,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "tcxgdt5iv",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with ai.",
-        "timestamp": "2025-08-02T03:37:27.504Z",
-        "likes": 19,
-        "replies": [
-          {
-            "id": "dyjfwtd9p",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-02T08:34:27.504Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "52ws5r6aq",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-31T11:31:27.504Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "w5q9f1pky",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-31T14:18:27.504Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "m2bvqphan",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-24T18:26:27.504Z",
-        "likes": 10,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "instagram-monetization-guide": {
-    "postSlug": "instagram-monetization-guide",
-    "comments": [
-      {
-        "id": "h2k9flcnd",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-25T13:00:27.504Z",
-        "likes": 5,
-        "replies": [
-          {
-            "id": "ne5yz2ybh",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-29T23:43:27.504Z",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T10:54:12.786Z",
             "likes": 15,
             "replies": [],
             "isOP": false
@@ -9671,338 +7889,116 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "32yopab3i",
-        "username": "OnlineEmpire",
+        "id": "g9iaxt2c3",
+        "username": "Guest",
         "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-10T13:10:27.504Z",
-        "likes": 51,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "tmm4qjk08",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-        "timestamp": "2025-08-02T04:07:27.504Z",
-        "likes": 24,
-        "replies": [
-          {
-            "id": "xdeh9zadf",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-01T02:38:27.504Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "19i3ablht",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-29T19:54:27.504Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "hdu3gv1ic",
-            "username": "SaaSFounder",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-27T16:42:27.504Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "jf6tyj4jw",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-08-01T07:45:27.504Z",
-        "likes": 54,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "7p0esy21i",
-        "username": "ScalingUp_",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-31T11:52:27.504Z",
-        "likes": 25,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "93o22tjv1",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-25T21:14:27.504Z",
-        "likes": 6,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "izbss2gz6",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-08-01T19:45:27.504Z",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-30T15:27:12.786Z",
         "likes": 35,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "w0dvn6yo4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how long till you saw real results?",
+        "timestamp": "2025-07-23T15:15:12.786Z",
+        "likes": 7,
         "replies": [
           {
-            "id": "tg0hobc3m",
-            "username": "MarketingMaven",
+            "id": "z9qvub8pa",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-29T11:25:27.504Z",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T10:42:12.786Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "6i72z2d6s",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-26T11:38:12.786Z",
             "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "wkur3u2db",
-            "username": "BusinessBuilder",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-27T10:42:27.504Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "g7mouuy96",
-            "username": "DigitalBiz",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T13:03:27.504Z",
-            "likes": 9,
             "replies": [],
             "isOP": false
           }
         ],
+        "isOP": false
+      },
+      {
+        "id": "w1qyevojh",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-06T10:36:12.786Z",
+        "likes": 32,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "0snerckc0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-25T17:40:12.786Z",
+        "likes": 40,
+        "replies": [],
         "isOP": false
       }
     ],
     "commentCount": 14
   },
-  "linkedin-automation-growth": {
-    "postSlug": "linkedin-automation-growth",
+  "no-code-automation-tools": {
+    "postSlug": "no-code-automation-tools",
     "comments": [
       {
-        "id": "3utqaglp1",
-        "username": "DigitalNomadSarah",
+        "id": "8oqnktops",
+        "username": "Guest",
         "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-13T07:11:27.504Z",
-        "likes": 20,
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-24T13:37:12.786Z",
+        "likes": 30,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "rotru5lwa",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-15T04:26:12.786Z",
+        "likes": 50,
         "replies": [
           {
-            "id": "0xogruwlk",
-            "username": "DigitalNomadSarah",
+            "id": "067zjs3h4",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-02T01:39:27.505Z",
-            "likes": 3,
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-28T12:13:12.786Z",
+            "likes": 12,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "bmo7jn4zh",
-            "username": "DevLife2024",
+            "id": "bj8y24qfz",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-09T09:02:27.505Z",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T01:40:12.786Z",
             "likes": 10,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "11460gn6i",
-            "username": "CodeMaster_X",
+            "id": "5igafusnm",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-27T14:32:27.505Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "e84767fey",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-07T05:11:27.505Z",
-        "likes": 15,
-        "replies": [
-          {
-            "id": "499i56mbr",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-08-01T18:52:27.505Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "31cakt3zb",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-07T14:45:27.505Z",
-        "likes": 16,
-        "replies": [
-          {
-            "id": "q87e5gaal",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-28T02:44:27.505Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "uk27tl3sy",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-29T23:02:27.505Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ii623ycoc",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-30T08:33:27.505Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "uwzfqmqou",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-21T03:31:27.505Z",
-        "likes": 19,
-        "replies": [
-          {
-            "id": "qgo1239tm",
-            "username": "DevLife2024",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-29T14:15:27.505Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "z5mpetqjn",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-11T20:36:27.505Z",
-        "likes": 26,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "n8n-automation-success": {
-    "postSlug": "n8n-automation-success",
-    "comments": [
-      {
-        "id": "hdomsoqey",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-08-02T07:04:27.505Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "7nvhpi6d8",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-31T08:03:27.505Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "zgxvi0imy",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-29T18:54:27.505Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "kxbyy6g4y",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-14T21:04:27.505Z",
-        "likes": 24,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "3wvsg3xgc",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-22T12:58:27.505Z",
-        "likes": 29,
-        "replies": [
-          {
-            "id": "oz8e0h1bx",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-28T21:35:27.505Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "o6vzg5uu9",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-30T23:45:27.505Z",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-19T18:43:12.786Z",
             "likes": 6,
             "replies": [],
             "isOP": false
@@ -10011,50 +8007,56 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "vjh73ejwb",
-        "username": "ServerlessSteve",
+        "id": "96zlrto1o",
+        "username": "Guest",
         "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-09T18:40:27.505Z",
-        "likes": 15,
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-26T07:17:12.786Z",
+        "likes": 41,
         "replies": [],
         "isOP": false
-      },
+      }
+    ],
+    "commentCount": 6
+  },
+  "devops-automation-pipeline": {
+    "postSlug": "devops-automation-pipeline",
+    "comments": [
       {
-        "id": "xzkaitg7b",
-        "username": "CreativeHustle",
+        "id": "q9va07zj7",
+        "username": "Guest",
         "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-08-01T01:10:27.505Z",
-        "likes": 18,
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-08-03T07:34:12.786Z",
+        "likes": 15,
         "replies": [
           {
-            "id": "hj0rwlsmu",
-            "username": "ReactDev_",
+            "id": "5rblx9xkp",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-27T18:58:27.505Z",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-31T00:00:12.786Z",
             "likes": 12,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ec3xnyw00",
-            "username": "InfluencerMike",
+            "id": "n4172eh6h",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-12T14:28:27.505Z",
-            "likes": 13,
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-28T07:18:12.786Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "sl1joujee",
-            "username": "DigitalNomadSarah",
+            "id": "33sln83cs",
+            "username": "Guest",
             "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-30T17:03:27.505Z",
-            "likes": 13,
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T20:01:12.786Z",
+            "likes": 1,
             "replies": [],
             "isOP": false
           }
@@ -10062,30 +8064,200 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "8hef8s37h",
-        "username": "SoloPreneur23",
+        "id": "rkmkg8xj4",
+        "username": "Guest",
         "avatar": "",
-        "content": "Great tutorial! For anyone using n8n, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-08-02T09:37:27.505Z",
-        "likes": 42,
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-26T18:35:12.786Z",
+        "likes": 10,
         "replies": [
           {
-            "id": "6g0lxt8z1",
-            "username": "DevOpsDaily",
+            "id": "lgwxkenx3",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-02T07:54:27.505Z",
-            "likes": 9,
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-28T00:33:12.786Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "75e6x659t",
-            "username": "GrowthHacker_",
+            "id": "co9w9g5js",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-28T23:52:27.505Z",
-            "likes": 14,
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-01T20:46:12.786Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "59nfr5j2v",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-25T15:06:12.786Z",
+        "likes": 31,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "amazon-affiliate-automation": {
+    "postSlug": "amazon-affiliate-automation",
+    "comments": [
+      {
+        "id": "xee0ky1pm",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-29T09:06:12.786Z",
+        "likes": 51,
+        "replies": [
+          {
+            "id": "no2lgwk20",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-29T15:12:12.786Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "yb3j1xldv",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-27T15:00:12.786Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "r6n4aynhr",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T14:38:12.786Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "t28wukkhi",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-20T08:40:12.786Z",
+        "likes": 17,
+        "replies": [
+          {
+            "id": "xyxm4wkhs",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-29T16:56:12.786Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "jqsbewmql",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-01T16:25:12.786Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "1s7rad7k7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-05T19:14:12.786Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "1o0g422ik",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-12T20:14:12.786Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "7z85pjo0y",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-24T04:46:12.786Z",
+        "likes": 54,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "mlz5776ds",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-13T23:54:12.786Z",
+        "likes": 34,
+        "replies": [
+          {
+            "id": "i4djjoq5z",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-24T04:20:12.786Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "4xnicor9j",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-29T12:08:12.786Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "8mhoyo3kg",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-17T00:30:12.786Z",
+        "likes": 49,
+        "replies": [
+          {
+            "id": "250wudrft",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-30T00:42:12.786Z",
+            "likes": 2,
             "replies": [],
             "isOP": false
           }
@@ -10095,43 +8267,408 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 15
   },
-  "social-media-calendar": {
-    "postSlug": "social-media-calendar",
+  "scale-content-creation": {
+    "postSlug": "scale-content-creation",
     "comments": [
       {
-        "id": "9xd4id3pg",
-        "username": "ProfitMaximizer",
+        "id": "v03wjrpoa",
+        "username": "Guest",
         "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-06T13:30:27.505Z",
-        "likes": 36,
+        "content": "those email templates are amazing. saved me hours of writing",
+        "timestamp": "2025-07-24T04:31:12.786Z",
+        "likes": 12,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "2amj97znb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "start small with this stuff. dont try to change everything at once",
+        "timestamp": "2025-07-04T12:55:12.786Z",
+        "likes": 50,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "fckt5uxkx",
+        "username": "Guest",
+        "avatar": "",
+        "content": "cross platform stuff is hard. this helps keep it consistent",
+        "timestamp": "2025-07-11T05:30:12.786Z",
+        "likes": 44,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "66n8fz07g",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those email templates are amazing. saved me hours of writing",
+        "timestamp": "2025-07-14T22:38:12.786Z",
+        "likes": 24,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "kygv508an",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone try this on newer platforms? thinking about first mover advantage",
+        "timestamp": "2025-07-12T21:30:12.786Z",
+        "likes": 53,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "zn0hp8rth",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those email templates are amazing. saved me hours of writing",
+        "timestamp": "2025-07-17T12:09:12.786Z",
+        "likes": 21,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "digital-product-success-story": {
+    "postSlug": "digital-product-success-story",
+    "comments": [
+      {
+        "id": "cl4v9799v",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried this on my saas and revenue went up 40% last quarter. actually works",
+        "timestamp": "2025-07-11T06:10:12.886Z",
+        "likes": 48,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "8fqq1b7om",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-24T06:27:12.886Z",
+        "likes": 37,
         "replies": [
           {
-            "id": "4e4w90qy0",
-            "username": "RevenueOptimizer",
+            "id": "8i6fjz8mg",
+            "username": "Guest",
             "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-29T07:23:27.505Z",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-29T21:15:12.886Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "tqz9ai2pa",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-28T23:46:12.886Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ltxfs7v0m",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-08-01T12:37:12.886Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "hrwkjhe6p",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried this on my saas and revenue went up 40% last quarter. actually works",
+        "timestamp": "2025-07-04T12:20:12.886Z",
+        "likes": 25,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "tiktok-growth-hacks": {
+    "postSlug": "tiktok-growth-hacks",
+    "comments": [
+      {
+        "id": "7665vg39v",
+        "username": "Guest",
+        "avatar": "",
+        "content": "does this work on all platforms? instagram and linkedin are so different",
+        "timestamp": "2025-07-25T02:48:12.886Z",
+        "likes": 12,
+        "replies": [
+          {
+            "id": "sinqxmxqx",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-01T06:07:12.886Z",
             "likes": 4,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "967i2euo7",
-            "username": "CreativeHustle",
+            "id": "xxnr2um1v",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-12T19:29:27.505Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-08-01T23:50:12.886Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "z04dupybk",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-31T00:41:12.886Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "bbj1m41i4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "platform specific tips are helpful. each one needs different approach",
+        "timestamp": "2025-07-13T07:35:12.886Z",
+        "likes": 53,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "h2gwo40ud",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone try this on newer platforms? thinking about first mover advantage",
+        "timestamp": "2025-07-22T23:53:12.886Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "9emlrrscw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "a/b test everything. what works for one audience fails for another",
+        "timestamp": "2025-07-31T14:17:12.886Z",
+        "likes": 17,
+        "replies": [
+          {
+            "id": "h2t1485tf",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-30T08:15:12.886Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "m7bs00czj",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-29T14:50:12.886Z",
             "likes": 2,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "w96vw92wc",
-            "username": "ScalingUp_",
+            "id": "a6eyzwn1m",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-27T13:21:27.505Z",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T00:47:12.886Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "8362qnoxi",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these tactics for a client. engagement went up 300%",
+        "timestamp": "2025-08-01T13:00:12.886Z",
+        "likes": 35,
+        "replies": [
+          {
+            "id": "9sbydzsjt",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-31T06:00:12.886Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "hmg37ziim",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-27T20:57:12.886Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "vmnp15z9w",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-02T02:17:12.886Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "mjcqi0zdy",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those email templates are amazing. saved me hours of writing",
+        "timestamp": "2025-07-20T05:05:12.886Z",
+        "likes": 9,
+        "replies": [
+          {
+            "id": "hybkil82v",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-30T14:36:12.886Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "w3uxgiyjv",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-28T19:50:12.886Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "p2g0pkosz",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-28T20:38:12.886Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "6vhtylxyk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tiktok algorithm changes every week lol. how do you keep up?",
+        "timestamp": "2025-08-02T21:07:12.886Z",
+        "likes": 37,
+        "replies": [
+          {
+            "id": "qy45tczto",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-02T05:27:12.886Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 20
+  },
+  "email-marketing-automation": {
+    "postSlug": "email-marketing-automation",
+    "comments": [
+      {
+        "id": "qfygeirxt",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-29T02:30:12.886Z",
+        "likes": 36,
+        "replies": [
+          {
+            "id": "fzju396vh",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-20T08:29:12.886Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "g9rcqga0n",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-11T23:17:12.886Z",
+        "likes": 6,
+        "replies": [
+          {
+            "id": "uq29n5yl4",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-02T20:09:12.886Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "klcak3u0x",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T22:52:12.886Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "1uboeq8tz",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-29T04:42:12.886Z",
             "likes": 7,
             "replies": [],
             "isOP": false
@@ -10140,49 +8677,297 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "iimj3sfro",
-        "username": "EntrepreneurE",
+        "id": "0m7sqflgp",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-29T22:44:27.505Z",
-        "likes": 49,
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-24T01:25:12.886Z",
+        "likes": 17,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "2jku4ysbf",
-        "username": "SaaSFounder",
+        "id": "4hmcjbm1n",
+        "username": "Guest",
         "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-07-31T15:42:27.505Z",
-        "likes": 14,
+        "content": "anyone tried mixing this with Midjourney? wondering if they work together",
+        "timestamp": "2025-07-14T14:14:12.886Z",
+        "likes": 12,
         "replies": [],
         "isOP": false
-      },
+      }
+    ],
+    "commentCount": 8
+  },
+  "ai-influencer-success": {
+    "postSlug": "ai-influencer-success",
+    "comments": [
       {
-        "id": "j2zihhpv9",
-        "username": "RevenueOptimizer",
+        "id": "d92dswnnb",
+        "username": "Guest",
         "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-18T21:53:27.505Z",
-        "likes": 47,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cznr1x481",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-14T04:37:27.505Z",
-        "likes": 38,
+        "content": "decent breakdown but watch out for token limits. they sneak up on you",
+        "timestamp": "2025-07-30T11:47:12.886Z",
+        "likes": 34,
         "replies": [
           {
-            "id": "1gbvak75r",
-            "username": "EntrepreneurE",
+            "id": "48evnm5ka",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-06T12:19:27.505Z",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-08-01T08:29:12.886Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "5nrp4gvof",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-29T20:56:12.886Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "d13shooho",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T15:58:12.886Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "oockcwh8k",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-13T06:15:12.886Z",
+        "likes": 43,
+        "replies": [
+          {
+            "id": "u9qe3h902",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T02:07:12.886Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "wvrgjs9sh",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-06T14:54:12.886Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "rebvb4t70",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-31T02:08:12.886Z",
+        "likes": 12,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "vplxpp55c",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-16T01:10:12.886Z",
+        "likes": 41,
+        "replies": [
+          {
+            "id": "4a5fm8xvc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-28T10:03:12.886Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "u0s7nyazu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-28T07:52:12.886Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "9iufyhzdv",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-10T09:28:12.886Z",
+        "likes": 49,
+        "replies": [
+          {
+            "id": "2cehy1thd",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-08-01T12:32:12.886Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "4lw7wroy3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-28T11:16:12.886Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "tyj431kbb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-27T17:54:12.886Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ri930x506",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-27T04:07:12.886Z",
+        "likes": 8,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "1i4crzhwe",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-12T13:42:12.886Z",
+        "likes": 20,
+        "replies": [
+          {
+            "id": "y9114o0eu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-27T16:34:12.886Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 18
+  },
+  "no-code-automation-tools-comparison": {
+    "postSlug": "no-code-automation-tools-comparison",
+    "comments": [
+      {
+        "id": "ntxyfnoo1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-30T07:32:12.886Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "x3djvn8wl",
+        "username": "Guest",
+        "avatar": "",
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-17T06:30:12.886Z",
+        "likes": 37,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "cfq5lpq0e",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-06T07:23:12.886Z",
+        "likes": 40,
+        "replies": [
+          {
+            "id": "5i4p4x7kv",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-29T02:11:12.886Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "465pfknfk",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-30T06:36:12.886Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "xzi7k0q85",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-08T04:19:12.886Z",
+        "likes": 15,
+        "replies": [
+          {
+            "id": "njfiihbb0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-30T04:42:12.886Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "yyqnvs4z1",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T10:06:12.886Z",
             "likes": 1,
             "replies": [],
             "isOP": false
@@ -10191,22 +8976,633 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "b66fe63xj",
-        "username": "ROI_Focused",
+        "id": "9rv5n1c6i",
+        "username": "Guest",
         "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-18T16:44:27.505Z",
-        "likes": 34,
+        "content": "nice tutorial. btw theres an easier way to do triggers on no",
+        "timestamp": "2025-07-05T16:07:12.886Z",
+        "likes": 50,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "m1e4g08ku",
-        "username": "ProfitMaximizer",
+        "id": "3yb9mlfki",
+        "username": "Guest",
         "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-13T11:07:27.505Z",
-        "likes": 19,
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-26T12:55:12.886Z",
+        "likes": 23,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "klm22wyy4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-25T21:09:12.886Z",
+        "likes": 48,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "ai-image-generation-guide": {
+    "postSlug": "ai-image-generation-guide",
+    "comments": [
+      {
+        "id": "lqb4rw9v4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-13T13:12:12.886Z",
+        "likes": 33,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "e3m5hr8ey",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-18T10:00:12.886Z",
+        "likes": 28,
+        "replies": [
+          {
+            "id": "77r71ht4f",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-08-02T03:21:12.886Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "s1o5t3lhf",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-30T07:46:12.886Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "4fsx4aro0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-31T18:20:12.886Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "mcph4l4ii",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found Claude? mind = blown. cant work without it now",
+        "timestamp": "2025-08-02T09:54:12.886Z",
+        "likes": 34,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "instagram-monetization-guide": {
+    "postSlug": "instagram-monetization-guide",
+    "comments": [
+      {
+        "id": "jr136kctn",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-22T00:40:12.886Z",
+        "likes": 52,
+        "replies": [
+          {
+            "id": "9tnzvb4d3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-28T08:09:12.886Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "7dcigcodr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-16T13:25:12.886Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "3fuwaa4zd",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-18T06:57:12.887Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "jxj29oj0l",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-21T06:11:12.887Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "av68cx9x2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-26T07:39:12.887Z",
+        "likes": 39,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "bpwa7a03z",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-15T09:22:12.887Z",
+        "likes": 38,
+        "replies": [
+          {
+            "id": "adg2rlvr2",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-27T21:37:12.887Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "l0zvdiuo5",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-30T05:21:12.887Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "91y60erbr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-08-01T09:27:12.887Z",
+        "likes": 34,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
+  },
+  "linkedin-automation-growth": {
+    "postSlug": "linkedin-automation-growth",
+    "comments": [
+      {
+        "id": "1e2uaplec",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-22T17:01:12.887Z",
+        "likes": 11,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "9y0si7lz6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-14T04:23:12.887Z",
+        "likes": 22,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "lhfn296wx",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-16T23:34:12.887Z",
+        "likes": 6,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "hw161xvi0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "webhook setup is annoying. test everything before going live trust me",
+        "timestamp": "2025-07-30T23:57:12.887Z",
+        "likes": 7,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "yu6l18evp",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-29T11:12:12.887Z",
+        "likes": 20,
+        "replies": [
+          {
+            "id": "tpe2wmi4f",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-31T16:22:12.887Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "rh2vvdkyr",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-29T02:15:12.887Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "uih577023",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-30T18:10:12.887Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "9xy01joh6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-31T21:39:12.887Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "sa7aboql0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-18T06:18:12.887Z",
+        "likes": 28,
+        "replies": [
+          {
+            "id": "g35mz6ezv",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-08-02T21:53:12.887Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ceow91w9b",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-19T12:53:12.887Z",
+        "likes": 50,
+        "replies": [
+          {
+            "id": "imk5074ew",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-28T17:02:12.887Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "urxxdo1q7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-30T18:11:12.887Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2qa5zx9da",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-31T20:56:12.887Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 15
+  },
+  "n8n-automation-success": {
+    "postSlug": "n8n-automation-success",
+    "comments": [
+      {
+        "id": "smuoz1a1i",
+        "username": "Guest",
+        "avatar": "",
+        "content": "webhook setup is annoying. test everything before going live trust me",
+        "timestamp": "2025-07-12T14:30:12.887Z",
+        "likes": 17,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "trfc8rymk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-28T12:31:12.887Z",
+        "likes": 18,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "rwfwe7ylx",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-31T14:35:12.887Z",
+        "likes": 18,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "1xg1d0os8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-10T12:59:12.887Z",
+        "likes": 36,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "0kn0at90g",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-23T15:48:12.887Z",
+        "likes": 26,
+        "replies": [
+          {
+            "id": "1lc3not0g",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-27T15:12:12.887Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "gkq1agp2v",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-30T12:40:12.887Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "jijx0r6bl",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-14T00:05:12.887Z",
+        "likes": 29,
+        "replies": [
+          {
+            "id": "9sjcllo23",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T16:23:12.887Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "jugw72a7c",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-13T08:23:12.887Z",
+        "likes": 12,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "vk7w8f0b0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-11T11:00:12.887Z",
+        "likes": 31,
+        "replies": [
+          {
+            "id": "v7emvh54g",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-28T05:49:12.887Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "nhl9bobsw",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-08-01T15:11:12.887Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "gecok13uh",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T05:51:12.887Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 14
+  },
+  "social-media-calendar": {
+    "postSlug": "social-media-calendar",
+    "comments": [
+      {
+        "id": "mwmalmk23",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-09T11:36:12.887Z",
+        "likes": 27,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "pvky6v2g7",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-23T22:14:12.887Z",
+        "likes": 52,
+        "replies": [
+          {
+            "id": "40uda60id",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T03:17:12.887Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "bcbejexgy",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T21:38:12.887Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "m8xgs1y5x",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how long till you saw real results?",
+        "timestamp": "2025-07-08T05:44:12.887Z",
+        "likes": 33,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "vlo66byls",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-12T20:35:12.887Z",
+        "likes": 36,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "dyccxdey1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "seems like it needs a lot of resources. what about solo people?",
+        "timestamp": "2025-07-09T08:48:12.887Z",
+        "likes": 25,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "y0plqkxiw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how long till you saw real results?",
+        "timestamp": "2025-07-27T14:15:12.887Z",
+        "likes": 34,
+        "replies": [
+          {
+            "id": "dhtu1epvh",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T02:53:12.887Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "l8en6hfto",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-13T12:19:12.887Z",
+        "likes": 32,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "snsuwxdsv",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-20T09:46:12.887Z",
+        "likes": 5,
         "replies": [],
         "isOP": false
       }
@@ -10217,755 +9613,125 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "deepseek-r1-browser-use-ai-research",
     "comments": [
       {
-        "id": "i2uo0jw9y",
-        "username": "PytonPro",
+        "id": "e3c0fr3fz",
+        "username": "Guest",
         "avatar": "",
-        "content": "This reminds me of when I first discovered ChatGPT - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-08T01:00:27.608Z",
-        "likes": 15,
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-26T05:18:12.988Z",
+        "likes": 43,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "9iogho2fi",
-        "username": "InfluencerMike",
+        "id": "1owrgbe0l",
+        "username": "Guest",
         "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-14T19:23:27.608Z",
-        "likes": 22,
+        "content": "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+        "timestamp": "2025-07-05T05:15:12.988Z",
+        "likes": 5,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "1bkzsq0t9",
-        "username": "MLEngineer99",
+        "id": "lv2e1e9cj",
+        "username": "Guest",
         "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-15T15:18:27.608Z",
-        "likes": 28,
-        "replies": [
-          {
-            "id": "tc156oy3x",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-31T23:06:27.608Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ibwnhn90b",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-07T14:05:27.608Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "6b24ezeml",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-08T14:12:27.608Z",
-        "likes": 25,
+        "content": "anyone tried mixing this with Jasper? wondering if they work together",
+        "timestamp": "2025-07-30T12:27:12.988Z",
+        "likes": 51,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "tf9hm6zg2",
-        "username": "MLEngineer99",
+        "id": "fi7we6laz",
+        "username": "Guest",
         "avatar": "",
-        "content": "This reminds me of when I first discovered ChatGPT - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-12T19:06:27.608Z",
-        "likes": 47,
-        "replies": [
-          {
-            "id": "vshj7vvuv",
-            "username": "DevOpsDaily",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-29T00:21:27.608Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "m209syyvg",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-30T14:02:27.608Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
+        "content": "anyone tried mixing this with Claude? wondering if they work together",
+        "timestamp": "2025-07-13T09:34:12.988Z",
+        "likes": 31,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ahr7c37so",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-31T07:23:12.988Z",
+        "likes": 9,
+        "replies": [],
         "isOP": false
       }
     ],
-    "commentCount": 9
+    "commentCount": 5
   },
   "ai-seo-content-optimization": {
     "postSlug": "ai-seo-content-optimization",
     "comments": [
       {
-        "id": "oaxejl1fl",
-        "username": "DevOpsDaily",
+        "id": "cerd7tp8u",
+        "username": "Guest",
         "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-27T21:01:27.608Z",
-        "likes": 44,
+        "content": "how do yall handle the whole ai ethics thing? kinda struggling with it",
+        "timestamp": "2025-07-20T03:58:12.988Z",
+        "likes": 50,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "xj0dakeqa",
-        "username": "MobileFirst",
+        "id": "sef9j6it0",
+        "username": "Guest",
         "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-06T10:05:27.608Z",
-        "likes": 18,
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-14T05:51:12.988Z",
+        "likes": 41,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "aqufhdn20",
-        "username": "CreativeHustle",
+        "id": "6d7ujhvkb",
+        "username": "Guest",
         "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-20T22:55:27.608Z",
-        "likes": 54,
+        "content": "which tool should i start with? so many options its overwhelming af",
+        "timestamp": "2025-08-01T12:29:12.988Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "6uxzvqj6o",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-08T18:29:12.988Z",
+        "likes": 42,
         "replies": [
           {
-            "id": "xwx21ajef",
-            "username": "CloudArchitect",
+            "id": "17u83uf5a",
+            "username": "Guest",
             "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-29T00:58:27.608Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "88ydvc0u4",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-08-02T07:44:27.608Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "jx1fbi2kc",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-29T16:17:27.608Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "amitm67rd",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with ai.",
-        "timestamp": "2025-07-07T19:08:27.608Z",
-        "likes": 26,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "sy5xi4elh",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-30T04:12:27.608Z",
-        "likes": 28,
-        "replies": [
-          {
-            "id": "7z2wu3a7e",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-08-02T08:03:27.608Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "da0b0vckh",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-11T16:35:27.608Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "nj6epdie8",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-12T05:10:27.608Z",
-        "likes": 13,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "chatgpt-automation-tips": {
-    "postSlug": "chatgpt-automation-tips",
-    "comments": [
-      {
-        "id": "aghvtzjnn",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-15T09:27:27.608Z",
-        "likes": 44,
-        "replies": [
-          {
-            "id": "0nelykun5",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-20T19:54:27.608Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "yer0ius53",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "These AI solutions always look great in demos but struggle in real-world scenarios.",
-        "timestamp": "2025-07-29T01:49:27.608Z",
-        "likes": 14,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "5kc5drnen",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-08T23:58:27.608Z",
-        "likes": 54,
-        "replies": [
-          {
-            "id": "44n2dhp6v",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-13T19:37:27.608Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "zhr5r6c7l",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T09:08:27.608Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "vh5w5p78d",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-21T14:22:27.608Z",
-        "likes": 16,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "7gr57e7eq",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-31T10:11:27.608Z",
-        "likes": 5,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 8
-  },
-  "claude-4-agentic-coding-revolution": {
-    "postSlug": "claude-4-agentic-coding-revolution",
-    "comments": [
-      {
-        "id": "46pt442qb",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Jasper - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-08-01T11:50:27.608Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "6ihynegdz",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Midjourney - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-24T16:58:27.608Z",
-        "likes": 12,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "coond3ds1",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "Been using Jasper for my content creation and it's a total game changer. The time savings alone justify the cost.",
-        "timestamp": "2025-07-09T18:41:27.608Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "7mej90sa3",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-27T10:42:27.608Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "s5jlayt66",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-29T01:34:27.608Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "c873it9py",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Midjourney - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-24T23:31:27.608Z",
-        "likes": 15,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 6
-  },
-  "digital-products-that-sell-2025": {
-    "postSlug": "digital-products-that-sell-2025",
-    "comments": [
-      {
-        "id": "8wflwh36n",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-29T05:50:27.608Z",
-        "likes": 22,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "h4ro10iuo",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-20T05:01:27.608Z",
-        "likes": 36,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "4num8jcu9",
-        "username": "ROI_Focused",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-18T00:08:27.608Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "4r7tqnw4r",
-        "username": "BusinessBuilder",
-        "avatar": "",
-        "content": "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-        "timestamp": "2025-07-23T06:05:27.608Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "hcx8tahjo",
-        "username": "ProfitMaximizer",
-        "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-07-31T02:22:27.608Z",
-        "likes": 33,
-        "replies": [
-          {
-            "id": "bp9at5rpq",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-30T08:48:27.608Z",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-30T17:01:12.988Z",
             "likes": 13,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "q1oedqfkw",
-            "username": "DigitalBiz",
+            "id": "sqgpat53k",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T19:16:27.608Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "deepseek-r2-open-source-ai-revolution": {
-    "postSlug": "deepseek-r2-open-source-ai-revolution",
-    "comments": [
-      {
-        "id": "019t6abw4",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-31T19:07:27.608Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "c7zonzvpj",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-30T11:31:27.608Z",
-        "likes": 30,
-        "replies": [
-          {
-            "id": "98pwt2a7y",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-28T22:45:27.608Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ajnvgcttj",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-07-22T00:09:27.608Z",
-        "likes": 38,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ab523wqti",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-05T10:35:27.608Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ea9u3wksy",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "These AI solutions always look great in demos but struggle in real-world scenarios.",
-        "timestamp": "2025-07-21T16:35:27.608Z",
-        "likes": 53,
-        "replies": [
-          {
-            "id": "f7xmtofc0",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-27T18:16:27.608Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "u2uifw0ku",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-31T00:44:27.608Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "biffprjik",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-08-02T06:38:27.608Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "9fxd0e5rq",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-23T06:25:27.608Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "suumq8lwk",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-26T00:40:27.608Z",
-        "likes": 35,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "chatgpt-automation-workflows": {
-    "postSlug": "chatgpt-automation-workflows",
-    "comments": [
-      {
-        "id": "p132eg0y8",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-22T10:39:27.608Z",
-        "likes": 38,
-        "replies": [
-          {
-            "id": "9o2x3d5l6",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T08:40:27.608Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "fq67gcv7w",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-31T05:27:27.608Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "bs1sf4vfd",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-31T16:51:27.608Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ms19g551d",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-08-03T05:10:27.608Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "te2u2ffgc",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "Been using Midjourney for my content creation and it's a total game changer. The time savings alone justify the cost.",
-        "timestamp": "2025-07-08T17:56:27.608Z",
-        "likes": 27,
-        "replies": [
-          {
-            "id": "1s4fxb2wm",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-31T06:03:27.608Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "gzw0nmos3",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-31T21:43:27.608Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "sa3jyhamv",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Jasper - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-30T03:38:27.608Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mmpim34lv",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-05T08:53:27.608Z",
-        "likes": 24,
-        "replies": [
-          {
-            "id": "qqwttukxq",
-            "username": "DevLife2024",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-08-01T19:59:27.608Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "j6m30s2xg",
-            "username": "DevLife2024",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-28T02:36:27.608Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "xr7nnm92d",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-15T23:36:27.608Z",
-        "likes": 48,
-        "replies": [
-          {
-            "id": "wzh3d4i15",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-31T12:09:27.608Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "zfhrttv3b",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-28T17:35:27.608Z",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-27T22:16:12.988Z",
             "likes": 4,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "sy2uaa0p8",
-            "username": "CreatorLife",
+            "id": "h30q1ezxo",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-12T13:48:27.608Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 16
-  },
-  "cloud-gpu-ai-automation": {
-    "postSlug": "cloud-gpu-ai-automation",
-    "comments": [
-      {
-        "id": "3hnzupbpp",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-27T15:39:27.608Z",
-        "likes": 13,
-        "replies": [
-          {
-            "id": "6idvwwsrr",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-29T23:42:27.608Z",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-27T14:02:12.988Z",
             "likes": 8,
             "replies": [],
             "isOP": false
@@ -10974,532 +9740,30 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "qhdxcsvcn",
-        "username": "BuildingMyEmpire",
+        "id": "tvstjnri7",
+        "username": "Guest",
         "avatar": "",
-        "content": "Has anyone tried combining this with RunwayML? Wondering if there's synergy there.",
-        "timestamp": "2025-07-04T20:46:27.608Z",
-        "likes": 53,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "a1hz2mpp0",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-26T14:07:27.608Z",
-        "likes": 52,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 4
-  },
-  "product-launch-strategy": {
-    "postSlug": "product-launch-strategy",
-    "comments": [
-      {
-        "id": "3lppv4to7",
-        "username": "BusinessMinded",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-27T12:42:27.608Z",
-        "likes": 25,
-        "replies": [
-          {
-            "id": "cugyea6hj",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-01T20:06:27.608Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "gdv4772q4",
-            "username": "EntrepreneurE",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-31T11:41:27.608Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "m6741hk0h",
-        "username": "StrategySteve",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-23T13:59:27.608Z",
-        "likes": 36,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "3uehz7mls",
-        "username": "OnlineEmpire",
-        "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-23T17:30:27.608Z",
-        "likes": 11,
-        "replies": [
-          {
-            "id": "m814at703",
-            "username": "OnlineEmpire",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-08-02T07:57:27.608Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "wigo6545v",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-15T17:53:27.608Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "make-app-automation": {
-    "postSlug": "make-app-automation",
-    "comments": [
-      {
-        "id": "awchlyk0b",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-21T16:04:27.608Z",
-        "likes": 37,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "1lid7kda6",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-11T21:36:27.608Z",
-        "likes": 53,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "r9r3gkkcj",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-05T16:47:27.608Z",
-        "likes": 27,
-        "replies": [
-          {
-            "id": "9qvzfw5qg",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-31T00:05:27.608Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "b9a8dv4qe",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-12T18:29:27.608Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mvudhklkf",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-19T20:25:27.608Z",
-        "likes": 25,
-        "replies": [
-          {
-            "id": "9798ahwph",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-08-01T00:26:27.608Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ex6xik7ep",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-22T08:39:27.608Z",
-        "likes": 39,
-        "replies": [
-          {
-            "id": "0dp67u4jl",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-30T21:05:27.608Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 9
-  },
-  "gemini-2-pro-bolt-diy-full-stack-revolution": {
-    "postSlug": "gemini-2-pro-bolt-diy-full-stack-revolution",
-    "comments": [
-      {
-        "id": "6idq0b5qz",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-07-13T04:34:27.712Z",
-        "likes": 52,
-        "replies": [
-          {
-            "id": "4n8ffhd2k",
-            "username": "StartupSucc3ss",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-28T00:48:27.712Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "adcj9g05c",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-08-01T23:17:27.712Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "6dr0mh9z2",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-29T19:09:27.712Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "sdgpcvb8b",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-10T10:07:27.712Z",
-        "likes": 13,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ceargkp8b",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-22T01:33:27.712Z",
-        "likes": 42,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "rfqoncr7n",
-        "username": "OnlineEmpire",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-12T18:56:27.712Z",
-        "likes": 33,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "roocode-v3-3-cline-alternative": {
-    "postSlug": "roocode-v3-3-cline-alternative",
-    "comments": [
-      {
-        "id": "btnp2ajv8",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-27T11:35:27.712Z",
-        "likes": 45,
-        "replies": [
-          {
-            "id": "rhvwnd4ql",
-            "username": "DigitalBiz",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-31T23:05:27.712Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "maiq1eipo",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-09T10:32:27.712Z",
+        "content": "which tool should i start with? so many options its overwhelming af",
+        "timestamp": "2025-07-22T18:10:12.988Z",
         "likes": 47,
         "replies": [
           {
-            "id": "wkaw9p3ew",
-            "username": "InfluencerMike",
+            "id": "pv01grhqy",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-01T23:51:27.712Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "98y89izox",
-        "username": "MonetizeThis",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-04T23:46:27.712Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "s4ghiquby",
-        "username": "ScalingUp_",
-        "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-07-04T15:18:27.712Z",
-        "likes": 11,
-        "replies": [
-          {
-            "id": "jneoenk8n",
-            "username": "StartupSucc3ss",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-27T12:43:27.712Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "zo2r1wq5x",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T19:21:27.712Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "9j894zyha",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-20T16:50:27.712Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "b7o6eb2hn",
-        "username": "ScalingUp_",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-27T00:31:27.712Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "kg9svxgqk",
-        "username": "RevenueOptimizer",
-        "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-25T15:17:27.712Z",
-        "likes": 54,
-        "replies": [
-          {
-            "id": "4o00l75fq",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-23T05:41:27.712Z",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-26T10:07:12.988Z",
             "likes": 15,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "e4ma40fg6",
-            "username": "StartupSally",
+            "id": "2b5fqcgjl",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-27T19:09:27.712Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "9jef7ikon",
-            "username": "BusinessHacks",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T11:51:27.712Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 14
-  },
-  "web-scraping-automation": {
-    "postSlug": "web-scraping-automation",
-    "comments": [
-      {
-        "id": "1jho3zplx",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-21T05:17:27.712Z",
-        "likes": 20,
-        "replies": [
-          {
-            "id": "bz2uwaqyy",
-            "username": "DevLife2024",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-27T14:30:27.712Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "q7quvvpvc",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-27T16:26:27.712Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "f64yajxdt",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-02T05:50:27.712Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-27T18:56:12.988Z",
             "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "gksyai30u",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-09T05:56:27.712Z",
-        "likes": 11,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "m02ex5o5t",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-08T14:12:27.712Z",
-        "likes": 28,
-        "replies": [
-          {
-            "id": "8zv3ljn4s",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-30T16:43:27.712Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "tw96f9y7a",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-27T20:28:27.712Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "xjp0f732a",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-10T11:15:27.712Z",
-        "likes": 5,
-        "replies": [
-          {
-            "id": "8191j0xnk",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-31T16:34:27.712Z",
-            "likes": 13,
             "replies": [],
             "isOP": false
           }
@@ -11509,63 +9773,342 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 10
   },
-  "ai-content-creation-tools-2025": {
-    "postSlug": "ai-content-creation-tools-2025",
+  "chatgpt-automation-tips": {
+    "postSlug": "chatgpt-automation-tips",
     "comments": [
       {
-        "id": "g3d48qqj9",
-        "username": "InfluencerMike",
+        "id": "brt3z9bu9",
+        "username": "Guest",
         "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-10T14:11:27.712Z",
-        "likes": 23,
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-12T05:28:12.988Z",
+        "likes": 51,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "83ug4rqeg",
-        "username": "CreativeHustle",
+        "id": "enwnrgecv",
+        "username": "Guest",
         "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-19T02:52:27.712Z",
-        "likes": 11,
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-24T09:37:12.988Z",
+        "likes": 7,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "hutp9lxgc",
-        "username": "DataScienceD",
+        "id": "xiqv6qkfr",
+        "username": "Guest",
         "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-24T12:35:27.712Z",
-        "likes": 25,
+        "content": "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+        "timestamp": "2025-07-16T06:25:12.988Z",
+        "likes": 22,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "aj40l6iwd",
-        "username": "APIGuru",
+        "id": "h5u9dwv7z",
+        "username": "Guest",
         "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-25T06:55:27.712Z",
-        "likes": 27,
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-26T03:47:12.988Z",
+        "likes": 29,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "pry9b62g5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone tried mixing this with ChatGPT? wondering if they work together",
+        "timestamp": "2025-07-21T06:40:12.988Z",
+        "likes": 30,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 5
+  },
+  "claude-4-agentic-coding-revolution": {
+    "postSlug": "claude-4-agentic-coding-revolution",
+    "comments": [
+      {
+        "id": "tirlibjiy",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-23T07:35:12.988Z",
+        "likes": 49,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "lf3zt85bz",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-08-03T04:50:12.988Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "jp7ef7j8b",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-24T18:54:12.988Z",
+        "likes": 24,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "l5kkqs2rk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "that diagram finally made it click for me. was confused before",
+        "timestamp": "2025-07-24T12:52:12.988Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "7e6tjpyb5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found RunwayML? mind = blown. cant work without it now",
+        "timestamp": "2025-07-26T01:14:12.988Z",
+        "likes": 49,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "0b8s6zx5z",
+        "username": "Guest",
+        "avatar": "",
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-23T12:03:12.988Z",
+        "likes": 52,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ohf264kic",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-29T14:25:12.988Z",
+        "likes": 48,
         "replies": [
           {
-            "id": "qewb37ebm",
-            "username": "CreatorLife",
+            "id": "tfln6ru28",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T06:33:27.719Z",
-            "likes": 10,
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-31T05:46:12.988Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "digital-products-that-sell-2025": {
+    "postSlug": "digital-products-that-sell-2025",
+    "comments": [
+      {
+        "id": "0dxq87hxf",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-31T03:26:12.988Z",
+        "likes": 33,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "yokrhdncq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-07T00:33:12.988Z",
+        "likes": 10,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "7g9mmm742",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-30T16:15:12.988Z",
+        "likes": 37,
+        "replies": [
+          {
+            "id": "2c8ymzz4a",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-08-02T00:03:12.988Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "qxe31oxc5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-29T18:48:12.988Z",
+        "likes": 49,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "gd3lq1gfk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-22T00:13:12.988Z",
+        "likes": 8,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "deepseek-r2-open-source-ai-revolution": {
+    "postSlug": "deepseek-r2-open-source-ai-revolution",
+    "comments": [
+      {
+        "id": "ktawfh8z6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how do yall handle the whole ai ethics thing? kinda struggling with it",
+        "timestamp": "2025-07-05T13:47:12.988Z",
+        "likes": 21,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "lmfimgl0f",
+        "username": "Guest",
+        "avatar": "",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-29T10:12:12.988Z",
+        "likes": 41,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "x7ujjhmn3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found Midjourney? mind = blown. cant work without it now",
+        "timestamp": "2025-07-04T21:23:12.988Z",
+        "likes": 16,
+        "replies": [
+          {
+            "id": "0o61q6rqd",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-08-01T20:18:12.988Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "l6tljvioh",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-29T03:14:12.988Z",
+        "likes": 13,
+        "replies": [
+          {
+            "id": "nmjjj49zu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-30T18:30:12.988Z",
+            "likes": 2,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "6v4d8oioj",
-            "username": "ContentKing_92",
+            "id": "c0n4gy3ci",
+            "username": "Guest",
             "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-30T19:57:27.719Z",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-29T02:35:12.988Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "pgk27bcbs",
+        "username": "Guest",
+        "avatar": "",
+        "content": "not trying to be negative but ive been burned by hyped tools before",
+        "timestamp": "2025-07-26T21:44:12.988Z",
+        "likes": 22,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "chatgpt-automation-workflows": {
+    "postSlug": "chatgpt-automation-workflows",
+    "comments": [
+      {
+        "id": "37xjzofuk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how do yall handle the whole ai ethics thing? kinda struggling with it",
+        "timestamp": "2025-08-02T22:32:12.988Z",
+        "likes": 17,
+        "replies": [
+          {
+            "id": "wt8ucbqe5",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-08-02T08:02:12.988Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "d9bc24d8h",
+        "username": "Guest",
+        "avatar": "",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-08-02T15:38:12.988Z",
+        "likes": 35,
+        "replies": [
+          {
+            "id": "4t2vyyae3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-08-01T01:32:12.988Z",
             "likes": 10,
             "replies": [],
             "isOP": false
@@ -11574,13 +10117,614 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "8wq0tniss",
-        "username": "FrontendPhil",
+        "id": "g5ytmoxpj",
+        "username": "Guest",
         "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-24T08:15:27.719Z",
+        "content": "that diagram finally made it click for me. was confused before",
+        "timestamp": "2025-07-15T01:58:12.988Z",
         "likes": 31,
         "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "3yiif7f64",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-28T01:16:12.988Z",
+        "likes": 30,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "dapxhj3az",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-04T14:33:12.988Z",
+        "likes": 25,
+        "replies": [
+          {
+            "id": "rx9so8lys",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-31T09:24:12.988Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "4hfvm332e",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-08-01T19:28:12.988Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 9
+  },
+  "cloud-gpu-ai-automation": {
+    "postSlug": "cloud-gpu-ai-automation",
+    "comments": [
+      {
+        "id": "mv4xz6cgy",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+        "timestamp": "2025-07-15T16:20:12.988Z",
+        "likes": 51,
+        "replies": [
+          {
+            "id": "e3vahwwqc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T17:00:12.988Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "s324hv657",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-31T19:44:12.988Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "qq3lbeoom",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-28T02:27:12.988Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "9u8txt7qc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "decent breakdown but watch out for token limits. they sneak up on you",
+        "timestamp": "2025-07-26T04:19:12.988Z",
+        "likes": 32,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "adq025gc8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-05T10:52:12.988Z",
+        "likes": 27,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "78icdg2ay",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-21T18:59:12.988Z",
+        "likes": 23,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "pcet1wsrh",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-21T23:52:12.988Z",
+        "likes": 42,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "pkufpzog5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-15T02:02:12.988Z",
+        "likes": 13,
+        "replies": [
+          {
+            "id": "0tmgafnqi",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-27T22:48:12.988Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "s36pbzk9x",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-08-02T20:33:12.988Z",
+        "likes": 39,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "product-launch-strategy": {
+    "postSlug": "product-launch-strategy",
+    "comments": [
+      {
+        "id": "way2wcd23",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-26T13:08:12.988Z",
+        "likes": 53,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "cxxigwsqw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried this on my saas and revenue went up 40% last quarter. actually works",
+        "timestamp": "2025-07-05T08:16:12.988Z",
+        "likes": 49,
+        "replies": [
+          {
+            "id": "kf0fv4hg5",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-02T03:56:12.988Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "16x0wvuu6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-29T18:46:12.988Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ynq3qux0f",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-15T07:47:12.988Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "gm3c89rh0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-13T21:06:12.988Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "make-app-automation": {
+    "postSlug": "make-app-automation",
+    "comments": [
+      {
+        "id": "xvwf2hbaa",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-07T06:12:12.988Z",
+        "likes": 12,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "qfhan66yq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-11T10:16:12.988Z",
+        "likes": 51,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "11g3wz22x",
+        "username": "Guest",
+        "avatar": "",
+        "content": "webhook setup is annoying. test everything before going live trust me",
+        "timestamp": "2025-07-31T07:40:12.988Z",
+        "likes": 33,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "kutfxn1jk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-29T20:00:12.988Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "zq9ygdgyc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-08-01T22:00:12.988Z",
+        "likes": 40,
+        "replies": [
+          {
+            "id": "hzna1d4b8",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-28T08:34:12.988Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "zf6b4a2g9",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-31T01:01:12.988Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "rv5v046gl",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-30T03:01:12.988Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "zumvdyt9a",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-16T08:29:12.988Z",
+        "likes": 7,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 9
+  },
+  "gemini-2-pro-bolt-diy-full-stack-revolution": {
+    "postSlug": "gemini-2-pro-bolt-diy-full-stack-revolution",
+    "comments": [
+      {
+        "id": "u37j58gi5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-09T03:05:13.089Z",
+        "likes": 14,
+        "replies": [
+          {
+            "id": "ndczq92rc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-31T17:32:13.089Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "tbrmxuqxu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-30T09:46:13.089Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "hrr6en539",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-30T02:09:13.089Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "abfqztj6k",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-10T08:21:13.089Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "yus76brg0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-09T05:06:13.089Z",
+        "likes": 23,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "roocode-v3-3-cline-alternative": {
+    "postSlug": "roocode-v3-3-cline-alternative",
+    "comments": [
+      {
+        "id": "7j6popjrj",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried this on my saas and revenue went up 40% last quarter. actually works",
+        "timestamp": "2025-07-27T21:56:13.089Z",
+        "likes": 15,
+        "replies": [
+          {
+            "id": "q5ta6j0ix",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-31T21:15:13.089Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "6gq8ke4ia",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-23T10:02:13.089Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "xdwet8vzr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "seems like it needs a lot of resources. what about solo people?",
+        "timestamp": "2025-07-31T23:20:13.089Z",
+        "likes": 36,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "43fxcu7zg",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-07-11T07:33:13.089Z",
+        "likes": 34,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 5
+  },
+  "web-scraping-automation": {
+    "postSlug": "web-scraping-automation",
+    "comments": [
+      {
+        "id": "9vrh1nylw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-05T20:21:13.089Z",
+        "likes": 9,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "sxlkbxpdn",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-20T13:55:13.089Z",
+        "likes": 35,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "m6e65yil0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-11T07:16:13.089Z",
+        "likes": 27,
+        "replies": [
+          {
+            "id": "nt15tpmy6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-31T15:15:13.089Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "dxxaeeqq3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-29T23:21:13.089Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "rsdam1uoc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T04:47:13.089Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "gcodntsjm",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-29T21:12:13.089Z",
+        "likes": 7,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 7
+  },
+  "ai-content-creation-tools-2025": {
+    "postSlug": "ai-content-creation-tools-2025",
+    "comments": [
+      {
+        "id": "wpl3dzz47",
+        "username": "Guest",
+        "avatar": "",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-12T23:15:13.089Z",
+        "likes": 37,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "4nou5k5h3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-11T14:33:13.089Z",
+        "likes": 18,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "uubvu4wkx",
+        "username": "Guest",
+        "avatar": "",
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-07-09T22:03:13.089Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "k0qkgbaqb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+        "timestamp": "2025-07-06T08:31:13.089Z",
+        "likes": 14,
+        "replies": [
+          {
+            "id": "qoo3u942s",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-08-01T11:20:13.089Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "tnipf4gff",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-30T13:43:13.089Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "fxcwzp8jr",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T05:56:13.089Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
         "isOP": false
       }
     ],
@@ -11590,430 +10734,39 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "onlyfans-marketing-automation",
     "comments": [
       {
-        "id": "mmgi7anh5",
-        "username": "CloudArchitect",
+        "id": "330sz3u8g",
+        "username": "Guest",
         "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-15T15:32:27.719Z",
-        "likes": 53,
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-08-01T11:20:13.089Z",
+        "likes": 35,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "r5njskz59",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-29T21:00:13.089Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "mba7ox141",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-21T09:17:13.089Z",
+        "likes": 8,
         "replies": [
           {
-            "id": "yp63r10to",
-            "username": "MarketingMaven",
+            "id": "bjne7aogc",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-04T10:47:27.719Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "9px8jhh4w",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T17:43:27.719Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "otggu3l29",
-            "username": "DevLife2024",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-27T12:32:27.719Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "su8y4xc90",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-13T17:16:27.719Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "277xp2cxf",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-18T11:39:27.719Z",
-        "likes": 45,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "8mehibp24",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-27T22:17:27.719Z",
-        "likes": 47,
-        "replies": [
-          {
-            "id": "s252m10u0",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-27T12:50:27.719Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "dbterftq5",
-            "username": "CodeMaster_X",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-27T10:49:27.719Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "aix7xf1um",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-08-01T22:51:27.719Z",
-        "likes": 43,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "tl1nfm0t8",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-11T17:38:27.719Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "ai-avatar-video-generator-review": {
-    "postSlug": "ai-avatar-video-generator-review",
-    "comments": [
-      {
-        "id": "0wuv1lrmo",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-22T12:17:27.719Z",
-        "likes": 24,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ilrwanymz",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Midjourney - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-08T17:37:27.719Z",
-        "likes": 33,
-        "replies": [
-          {
-            "id": "hjc6fvtye",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-30T17:17:27.719Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "1i60tb8yt",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-31T07:46:27.719Z",
-        "likes": 21,
-        "replies": [
-          {
-            "id": "lq52oriqc",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-05T07:07:27.719Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "cf3sj24os",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-07T09:35:27.719Z",
-        "likes": 33,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mdxejmxns",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Has anyone tried combining this with RunwayML? Wondering if there's synergy there.",
-        "timestamp": "2025-07-09T04:32:27.719Z",
-        "likes": 20,
-        "replies": [
-          {
-            "id": "afyb5xvdq",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T23:57:27.719Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "gkpurxc4l",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-08-01T15:53:27.719Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "m6ghf0ywn",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "Been using Claude for my content creation and it's a total game changer. The time savings alone justify the cost.",
-        "timestamp": "2025-08-01T13:35:27.719Z",
-        "likes": 14,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "7te7l64a3",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-13T20:56:27.719Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "w7tg96e5v",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-08-02T01:32:27.719Z",
-        "likes": 19,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 12
-  },
-  "saas-automation-systems": {
-    "postSlug": "saas-automation-systems",
-    "comments": [
-      {
-        "id": "pht0ur02v",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-15T05:53:27.719Z",
-        "likes": 26,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "d1yeml4t6",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using saas, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-25T11:57:27.719Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "24fjpzge5",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-30T14:10:27.719Z",
-        "likes": 16,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "6x20kvtl7",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-04T14:14:27.719Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 4
-  },
-  "composer-agent-code-llm-full-stack": {
-    "postSlug": "composer-agent-code-llm-full-stack",
-    "comments": [
-      {
-        "id": "k5dxiy5tb",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-15T18:25:27.719Z",
-        "likes": 19,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cwq2ex6d8",
-        "username": "RevenueOptimizer",
-        "avatar": "",
-        "content": "The data-driven approach is refreshing. Too many 'gurus' rely on anecdotes instead of metrics.",
-        "timestamp": "2025-07-16T02:34:27.719Z",
-        "likes": 11,
-        "replies": [
-          {
-            "id": "9gpv8xqwt",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-28T01:22:27.719Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "vtczbh3rm",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-08-02T01:27:27.719Z",
-        "likes": 33,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "zx5ablvxa",
-        "username": "DigitalBiz",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-08-02T23:09:27.719Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "rwd4wwax5",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-08T11:57:27.719Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 6
-  },
-  "zapier-automation-mastery": {
-    "postSlug": "zapier-automation-mastery",
-    "comments": [
-      {
-        "id": "ui76wvuw4",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "How do you handle edge cases? Automation is great until something unexpected happens.",
-        "timestamp": "2025-07-10T12:12:27.719Z",
-        "likes": 29,
-        "replies": [
-          {
-            "id": "88ljhii3j",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-31T06:01:27.719Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "8rfs8xmox",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-30T12:31:27.719Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "vdphbem64",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using zapier, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-08-01T23:43:27.719Z",
-        "likes": 38,
-        "replies": [
-          {
-            "id": "fovnsmgy6",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-31T06:11:27.719Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "u9elg4hgq",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-31T22:30:27.719Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "dvmirfptc",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-27T20:10:27.719Z",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-02T01:14:13.089Z",
             "likes": 10,
             "replies": [],
             "isOP": false
@@ -12022,97 +10775,56 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "248dra8z7",
-        "username": "SoloPreneur23",
+        "id": "wy6ih1y0y",
+        "username": "Guest",
         "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-08-01T15:37:27.719Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2uk9zx9ej",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-10T03:53:27.719Z",
-        "likes": 53,
-        "replies": [
-          {
-            "id": "5z2no5h81",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T09:27:27.719Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "tr6ie4bol",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "How do you handle edge cases? Automation is great until something unexpected happens.",
-        "timestamp": "2025-07-09T23:03:27.719Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "gq5w2izyj",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-04T18:09:27.719Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "8wgg0i1s9",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-19T20:45:27.719Z",
-        "likes": 36,
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-06T20:48:13.089Z",
+        "likes": 38,
         "replies": [],
         "isOP": false
       }
     ],
-    "commentCount": 13
+    "commentCount": 5
   },
-  "faceless-content-strategy": {
-    "postSlug": "faceless-content-strategy",
+  "ai-avatar-video-generator-review": {
+    "postSlug": "ai-avatar-video-generator-review",
     "comments": [
       {
-        "id": "3n77sc4i0",
-        "username": "ContentKing_92",
+        "id": "zxk617kfl",
+        "username": "Guest",
         "avatar": "",
-        "content": "The content calendar framework saved my sanity. Finally have a system that works.",
-        "timestamp": "2025-07-06T16:46:27.719Z",
-        "likes": 8,
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-08T05:38:13.089Z",
+        "likes": 15,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "c981skvs8",
-        "username": "AutomationAndy",
+        "id": "ek2kynrcx",
+        "username": "Guest",
         "avatar": "",
-        "content": "Applied these tactics to my client's campaign and saw 300% improvement in engagement.",
-        "timestamp": "2025-07-31T11:09:27.719Z",
-        "likes": 15,
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-11T19:02:13.089Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "jjcnzb1c3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found RunwayML? mind = blown. cant work without it now",
+        "timestamp": "2025-07-24T12:47:13.089Z",
+        "likes": 50,
         "replies": [
           {
-            "id": "1rg41gsjf",
-            "username": "ScaleUpStudio",
+            "id": "3k531uwqs",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-30T13:15:27.720Z",
-            "likes": 2,
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-31T07:32:13.089Z",
+            "likes": 14,
             "replies": [],
             "isOP": false
           }
@@ -12120,107 +10832,76 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "zzp0qx5j0",
-        "username": "MarketingMaven",
+        "id": "shelikm08",
+        "username": "Guest",
         "avatar": "",
-        "content": "Pro tip: the timing of your posts matters more than most people realize. Test different windows.",
-        "timestamp": "2025-07-08T00:54:27.720Z",
-        "likes": 19,
-        "replies": [
-          {
-            "id": "lyz6ah9lh",
-            "username": "ROI_Focused",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-27T14:12:27.720Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ykphv7mer",
-            "username": "ROI_Focused",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-29T22:18:27.720Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "pza4q51am",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-26T02:38:27.720Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "eja1fi3pl",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "The content calendar framework saved my sanity. Finally have a system that works.",
-        "timestamp": "2025-07-27T17:34:27.720Z",
+        "content": "that diagram finally made it click for me. was confused before",
+        "timestamp": "2025-07-28T04:58:13.089Z",
         "likes": 41,
         "replies": [],
         "isOP": false
       }
     ],
-    "commentCount": 8
+    "commentCount": 5
   },
-  "cloud-automation-infrastructure": {
-    "postSlug": "cloud-automation-infrastructure",
+  "saas-automation-systems": {
+    "postSlug": "saas-automation-systems",
     "comments": [
       {
-        "id": "olhsz8m3e",
-        "username": "ScaleUpStudio",
+        "id": "1r6m0bx50",
+        "username": "Guest",
         "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-20T09:00:27.823Z",
-        "likes": 23,
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-23T05:26:13.089Z",
+        "likes": 21,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "96d0dq24q",
-        "username": "MLEngineer99",
+        "id": "shf91eet9",
+        "username": "Guest",
         "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-08-01T20:34:27.823Z",
-        "likes": 24,
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-08-01T23:32:13.089Z",
+        "likes": 18,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "kxupkd8f9",
-        "username": "TechStack_",
+        "id": "jto7vo6du",
+        "username": "Guest",
         "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-07T06:27:27.823Z",
-        "likes": 51,
+        "content": "nice tutorial. btw theres an easier way to do triggers on saas",
+        "timestamp": "2025-07-12T06:08:13.089Z",
+        "likes": 46,
         "replies": [
           {
-            "id": "3okgn9c59",
-            "username": "GrowthHacker_",
+            "id": "sgk02eapr",
+            "username": "Guest",
             "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-08-02T03:29:27.823Z",
-            "likes": 15,
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T07:13:13.089Z",
+            "likes": 10,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "01l3gmubo",
-            "username": "BackendBeast",
+            "id": "b9ls6m70f",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-28T11:38:27.823Z",
-            "likes": 13,
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-28T12:11:13.089Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "o0gu8y3d8",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-29T11:48:13.089Z",
+            "likes": 3,
             "replies": [],
             "isOP": false
           }
@@ -12228,19 +10909,39 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "uz7b4nbd2",
-        "username": "DigitalNomadSarah",
+        "id": "ddhzup7sp",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-31T12:22:27.823Z",
-        "likes": 17,
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-24T17:00:13.089Z",
+        "likes": 23,
         "replies": [
           {
-            "id": "x54ye9amj",
-            "username": "BackendBeast",
+            "id": "k8xih82rk",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-08-02T20:53:27.823Z",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-30T15:22:13.089Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "o6j97njge",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-31T20:59:13.089Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "s1ezun7yc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-01T17:38:13.089Z",
             "likes": 5,
             "replies": [],
             "isOP": false
@@ -12249,56 +10950,30 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "35bwpm2gb",
-        "username": "ReactDev_",
+        "id": "uacotnowk",
+        "username": "Guest",
         "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-15T07:25:27.823Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 8
-  },
-  "browser-automation-marketing": {
-    "postSlug": "browser-automation-marketing",
-    "comments": [
-      {
-        "id": "sj1t7paip",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using browser, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-16T23:56:27.823Z",
-        "likes": 36,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "9czhu69lu",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-28T20:56:27.823Z",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-25T08:44:13.089Z",
         "likes": 35,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "hom5ycamr",
-        "username": "DevOpsDaily",
+        "id": "x3h3tt0hj",
+        "username": "Guest",
         "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-30T19:23:27.823Z",
-        "likes": 45,
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-08-01T22:30:13.089Z",
+        "likes": 28,
         "replies": [
           {
-            "id": "0vxpcyp9w",
-            "username": "MLEngineer99",
+            "id": "m0k9qml6p",
+            "username": "Guest",
             "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-31T17:55:27.823Z",
-            "likes": 2,
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-27T12:43:13.089Z",
+            "likes": 1,
             "replies": [],
             "isOP": false
           }
@@ -12306,30 +10981,46 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "x3zlexey6",
-        "username": "AutomationAndy",
+        "id": "px75zfjao",
+        "username": "Guest",
         "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-25T01:42:27.823Z",
-        "likes": 29,
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-06T20:48:13.089Z",
+        "likes": 32,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 14
+  },
+  "composer-agent-code-llm-full-stack": {
+    "postSlug": "composer-agent-code-llm-full-stack",
+    "comments": [
+      {
+        "id": "pjqjzphyd",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-06T21:00:13.089Z",
+        "likes": 9,
         "replies": [
           {
-            "id": "olcy1djne",
-            "username": "BuildingMyEmpire",
+            "id": "bkw32a96z",
+            "username": "Guest",
             "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-31T10:26:27.823Z",
-            "likes": 6,
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T15:13:13.089Z",
+            "likes": 9,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "6e21b7gjz",
-            "username": "MLEngineer99",
+            "id": "78pa6tgbh",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-08-02T03:05:27.823Z",
-            "likes": 4,
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-10T14:19:13.089Z",
+            "likes": 13,
             "replies": [],
             "isOP": false
           }
@@ -12337,19 +11028,199 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "v9hfjltzt",
-        "username": "MobileFirst",
+        "id": "kv7jn8yh0",
+        "username": "Guest",
         "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-08-01T10:31:27.823Z",
-        "likes": 22,
+        "content": "how long till you saw real results?",
+        "timestamp": "2025-08-02T04:16:13.089Z",
+        "likes": 13,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "a54mifsh4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-18T05:30:13.089Z",
+        "likes": 40,
         "replies": [
           {
-            "id": "6oa9rcul8",
-            "username": "APIGuru",
+            "id": "y5zv8cf4v",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-20T01:14:27.823Z",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-08-02T02:21:13.089Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "t8rjn1id9",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-28T18:33:13.089Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "6nnucku4k",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-27T09:58:13.089Z",
+        "likes": 35,
+        "replies": [
+          {
+            "id": "zucq73ydb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-15T04:56:13.089Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "pofprkyv9",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-08-01T06:41:13.089Z",
+        "likes": 35,
+        "replies": [
+          {
+            "id": "frludyepn",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T18:45:13.089Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "izmf5rcw7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-31T20:59:13.089Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "g6jjtr941",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-30T01:44:13.089Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ayyv6qllz",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-13T05:16:13.089Z",
+        "likes": 5,
+        "replies": [
+          {
+            "id": "q0kapq7sc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-28T03:16:13.089Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "f7ulu1uo2",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-31T11:00:13.089Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 16
+  },
+  "zapier-automation-mastery": {
+    "postSlug": "zapier-automation-mastery",
+    "comments": [
+      {
+        "id": "ippir1hdf",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-19T10:51:13.089Z",
+        "likes": 16,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "y16exmqwr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-20T12:12:13.089Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "n5axhb49r",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-20T15:53:13.089Z",
+        "likes": 5,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "q9itww2uc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-31T16:13:13.089Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "vzhgi8cwd",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-12T08:54:13.089Z",
+        "likes": 51,
+        "replies": [
+          {
+            "id": "7t5ukjba1",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-08-01T06:07:13.089Z",
             "likes": 9,
             "replies": [],
             "isOP": false
@@ -12358,127 +11229,359 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "qooge2u6m",
-        "username": "ContentKing_92",
+        "id": "jzobw9qbw",
+        "username": "Guest",
         "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-17T08:30:27.823Z",
-        "likes": 32,
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-08-01T14:42:13.089Z",
+        "likes": 54,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "6rc4f84go",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-08T23:52:13.089Z",
+        "likes": 6,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "faceless-content-strategy": {
+    "postSlug": "faceless-content-strategy",
+    "comments": [
+      {
+        "id": "qcgj609ud",
+        "username": "Guest",
+        "avatar": "",
+        "content": "a/b test everything. what works for one audience fails for another",
+        "timestamp": "2025-07-08T14:17:13.089Z",
+        "likes": 29,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "cve9qnqp9",
+        "username": "Guest",
+        "avatar": "",
+        "content": "timing matters way more than people think. test different times",
+        "timestamp": "2025-07-10T19:02:13.089Z",
+        "likes": 20,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "73m5x7qx7",
+        "username": "Guest",
+        "avatar": "",
+        "content": "platform specific tips are helpful. each one needs different approach",
+        "timestamp": "2025-07-28T12:05:13.089Z",
+        "likes": 52,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 3
+  },
+  "cloud-automation-infrastructure": {
+    "postSlug": "cloud-automation-infrastructure",
+    "comments": [
+      {
+        "id": "tqt9t13pb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-29T06:53:13.191Z",
+        "likes": 22,
         "replies": [
           {
-            "id": "vepa5tfsq",
-            "username": "DevOpsDaily",
+            "id": "8ygu77nep",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-08-01T18:33:27.823Z",
-            "likes": 8,
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-28T00:28:13.191Z",
+            "likes": 13,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "q0j2f1k8h",
-            "username": "CreatorLife",
+            "id": "a8dbn1mge",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-28T22:47:27.823Z",
-            "likes": 8,
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-30T22:28:13.191Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "gpmchnya2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-12T20:30:13.191Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "u5jqp4p08",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-09T09:20:13.191Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "r901in5iw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-08-02T02:13:13.191Z",
+        "likes": 33,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "browser-automation-marketing": {
+    "postSlug": "browser-automation-marketing",
+    "comments": [
+      {
+        "id": "a33e7q3ot",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-11T10:13:13.191Z",
+        "likes": 31,
+        "replies": [
+          {
+            "id": "l49ll9z5c",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-30T13:27:13.191Z",
+            "likes": 10,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "stgepz2oz",
-            "username": "SoloPreneur23",
+            "id": "sk0ihf4sb",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-29T03:23:27.823Z",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-21T08:01:13.191Z",
             "likes": 6,
             "replies": [],
             "isOP": false
           }
         ],
         "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "google-io-2025-creator-opportunities": {
-    "postSlug": "google-io-2025-creator-opportunities",
-    "comments": [
+      },
       {
-        "id": "qw5fdcrp9",
-        "username": "CreativeHustle",
+        "id": "k68xk8wqb",
+        "username": "Guest",
         "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-20T03:16:27.823Z",
-        "likes": 51,
-        "replies": [],
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-23T10:22:13.191Z",
+        "likes": 49,
+        "replies": [
+          {
+            "id": "djv4wjicb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-31T22:09:13.191Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "xfst0negv",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T02:37:13.191Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "wge9f5dk6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-29T11:23:13.191Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
         "isOP": false
       },
       {
-        "id": "1c7fj55js",
-        "username": "PassiveIncomeJoe",
+        "id": "w4e2sl040",
+        "username": "Guest",
         "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-22T17:19:27.823Z",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-07T02:22:13.191Z",
+        "likes": 52,
+        "replies": [
+          {
+            "id": "b8izc9e0c",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-01T22:07:13.191Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "20who3jwn",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-08-01T23:11:13.191Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "je51duayp",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-31T12:29:13.191Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "yuuzbibnu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-09T11:47:13.191Z",
         "likes": 42,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "bu9oibuv0",
-        "username": "BusinessMinded",
+        "id": "dxwg02rgg",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-07-11T15:18:27.823Z",
-        "likes": 28,
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-07T10:44:13.191Z",
+        "likes": 50,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "477ojeoud",
-        "username": "BusinessMinded",
+        "id": "3csudk66d",
+        "username": "Guest",
         "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-30T03:00:27.823Z",
-        "likes": 36,
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-19T10:09:13.191Z",
+        "likes": 33,
         "replies": [],
         "isOP": false
-      },
+      }
+    ],
+    "commentCount": 14
+  },
+  "google-io-2025-creator-opportunities": {
+    "postSlug": "google-io-2025-creator-opportunities",
+    "comments": [
       {
-        "id": "ojg0t65p7",
-        "username": "DigitalBiz",
+        "id": "yqf543zkb",
+        "username": "Guest",
         "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-25T22:41:27.823Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "scs2kthwg",
-        "username": "StartupSucc3ss",
-        "avatar": "",
-        "content": "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-        "timestamp": "2025-07-11T11:15:27.823Z",
-        "likes": 41,
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-19T12:05:13.191Z",
+        "likes": 30,
         "replies": [
           {
-            "id": "8kao6i6di",
-            "username": "SoloPreneur23",
+            "id": "s9ke9a2yr",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-08-02T04:10:27.823Z",
-            "likes": 4,
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-27T17:12:13.191Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "3uk1d7wdm",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-04T23:12:13.191Z",
+        "likes": 9,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "d9mdoyxpj",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-08-01T20:24:13.191Z",
+        "likes": 12,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "2sginn49c",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-19T08:35:13.191Z",
+        "likes": 14,
+        "replies": [
+          {
+            "id": "zy9vt5xt9",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-28T03:57:13.191Z",
+            "likes": 8,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "j7sod1zqz",
-            "username": "BusinessHacks",
+            "id": "aaovkxuwj",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-28T16:43:27.823Z",
-            "likes": 6,
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-27T19:01:13.191Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "58p9joe41",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-02T00:09:13.191Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           }
@@ -12492,19 +11595,29 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "digital-products-empire",
     "comments": [
       {
-        "id": "jonohe16t",
-        "username": "BuildingMyEmpire",
+        "id": "7l1r6mf1y",
+        "username": "Guest",
         "avatar": "",
-        "content": "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-        "timestamp": "2025-07-25T07:40:27.823Z",
-        "likes": 5,
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-24T16:57:13.191Z",
+        "likes": 16,
         "replies": [
           {
-            "id": "znwr94g4n",
-            "username": "StartupSucc3ss",
+            "id": "ey9ik1p2c",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T19:56:27.823Z",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-30T16:53:13.191Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "dhtz7bnsj",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-28T02:05:13.191Z",
             "likes": 5,
             "replies": [],
             "isOP": false
@@ -12513,30 +11626,50 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "dhlsfc6e1",
-        "username": "TechCreator",
+        "id": "latz4i1wc",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-26T22:55:27.823Z",
-        "likes": 34,
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-04T22:29:13.191Z",
+        "likes": 37,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "oz3gep57a",
-        "username": "SoloPreneur23",
+        "id": "w6l827fpp",
+        "username": "Guest",
         "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-08-03T04:35:27.823Z",
-        "likes": 44,
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-05T23:26:13.191Z",
+        "likes": 28,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "te89vv1mq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-28T01:04:13.191Z",
+        "likes": 46,
         "replies": [
           {
-            "id": "d956fgtny",
-            "username": "MarketingMaven",
+            "id": "uuo5lhyju",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-02T09:01:27.823Z",
-            "likes": 4,
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-28T22:06:13.191Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "47pfgrbgd",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-28T05:28:13.191Z",
+            "likes": 15,
             "replies": [],
             "isOP": false
           }
@@ -12544,71 +11677,50 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "q7c9wjryr",
-        "username": "StrategySteve",
+        "id": "de9ctoi6k",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-24T21:55:27.823Z",
-        "likes": 7,
-        "replies": [
-          {
-            "id": "sla3mbjov",
-            "username": "BusinessBuilder",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T06:19:27.823Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "szu67cajl",
-        "username": "EntrepreneurE",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-13T22:41:27.823Z",
-        "likes": 15,
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-06T10:33:13.191Z",
+        "likes": 48,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "sicf4d55u",
-        "username": "InfluencerMike",
+        "id": "5harwlygz",
+        "username": "Guest",
         "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-20T20:31:27.823Z",
-        "likes": 21,
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-15T21:54:13.191Z",
+        "likes": 11,
         "replies": [
           {
-            "id": "1cmy646o4",
-            "username": "StrategySteve",
+            "id": "i5g79jsv4",
+            "username": "Guest",
             "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-08-01T19:00:27.823Z",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-31T00:30:13.191Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "i4hqee138",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-28T12:25:13.191Z",
             "likes": 3,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "wah3wyzfz",
-            "username": "GrowthExpert",
+            "id": "adjtn8t36",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-28T23:09:27.823Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "jfmc5r548",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-17T12:50:27.823Z",
-            "likes": 8,
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-28T08:01:13.191Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           }
@@ -12616,143 +11728,111 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "de6qnb1u9",
-        "username": "AutomationAndy",
+        "id": "wfz5v9u7z",
+        "username": "Guest",
         "avatar": "",
-        "content": "What's the biggest mistake you see people make when implementing this?",
-        "timestamp": "2025-07-29T03:35:27.823Z",
-        "likes": 34,
-        "replies": [
-          {
-            "id": "i0i6qs0vl",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-28T01:48:27.823Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "9lqrk7zoy",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-27T12:19:27.823Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "0auv28ny7",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-31T15:20:27.823Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
+        "content": "tried this on my saas and revenue went up 40% last quarter. actually works",
+        "timestamp": "2025-07-24T06:11:13.191Z",
+        "likes": 46,
+        "replies": [],
         "isOP": false
       }
     ],
-    "commentCount": 16
+    "commentCount": 14
   },
   "gpt4o-upgrade-creator-business": {
     "postSlug": "gpt4o-upgrade-creator-business",
     "comments": [
       {
-        "id": "1nyrgp21j",
-        "username": "BuildingMyEmpire",
+        "id": "dblsw6tn1",
+        "username": "Guest",
         "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-14T00:43:27.823Z",
-        "likes": 34,
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-18T15:22:13.191Z",
+        "likes": 21,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "fiz33aui5",
-        "username": "DataScienceD",
+        "id": "slivtxxy1",
+        "username": "Guest",
         "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-19T07:22:27.823Z",
-        "likes": 19,
-        "replies": [
-          {
-            "id": "57i1rjxw9",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-27T09:24:27.823Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "mnves94lw",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-11T18:01:27.823Z",
-        "likes": 35,
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-29T21:16:13.191Z",
+        "likes": 46,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "vriow99zh",
-        "username": "ScaleUpStudio",
+        "id": "bfl15alnu",
+        "username": "Guest",
         "avatar": "",
-        "content": "This reminds me of when I first discovered Claude - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-12T15:09:27.823Z",
-        "likes": 43,
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-24T01:10:13.191Z",
+        "likes": 44,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "kebdx6800",
-        "username": "BackendBeast",
+        "id": "o6cp5rr42",
+        "username": "Guest",
         "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-29T13:50:27.823Z",
-        "likes": 14,
+        "content": "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+        "timestamp": "2025-07-24T22:17:13.191Z",
+        "likes": 22,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "v1bd204tv",
-        "username": "DataScienceD",
+        "id": "spb16scej",
+        "username": "Guest",
         "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-10T16:53:27.823Z",
-        "likes": 38,
+        "content": "remember when i first found Jasper? mind = blown. cant work without it now",
+        "timestamp": "2025-07-19T07:05:13.191Z",
+        "likes": 37,
         "replies": [],
         "isOP": false
       }
     ],
-    "commentCount": 7
+    "commentCount": 5
   },
   "gemini-2-5-ultra-ai-revolution": {
     "postSlug": "gemini-2-5-ultra-ai-revolution",
     "comments": [
       {
-        "id": "uw5gg0f7k",
-        "username": "MobileFirst",
+        "id": "k55r3387c",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-04T21:09:27.823Z",
-        "likes": 19,
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-30T00:43:13.191Z",
+        "likes": 35,
         "replies": [
           {
-            "id": "l15czpc1g",
-            "username": "FullStackFred",
+            "id": "de02nwqoc",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-28T07:07:27.823Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-29T06:51:13.191Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "p2up8o69u",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-30T17:43:13.191Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "zbnrmbvl1",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-30T15:34:13.191Z",
             "likes": 11,
             "replies": [],
             "isOP": false
@@ -12761,71 +11841,50 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "1tq2u7eh1",
-        "username": "BuildingMyEmpire",
+        "id": "rps1wcvaq",
+        "username": "Guest",
         "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-07-10T04:04:27.823Z",
-        "likes": 18,
+        "content": "been using Midjourney for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-07-16T05:14:13.191Z",
+        "likes": 41,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "tnvff1o90",
-        "username": "FrontendPhil",
+        "id": "7hqtuo9lc",
+        "username": "Guest",
         "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with gemini.",
-        "timestamp": "2025-07-19T04:26:27.823Z",
-        "likes": 47,
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-07-12T07:07:13.191Z",
+        "likes": 16,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "1sybw70bq",
-        "username": "AutomationAndy",
+        "id": "59by99e9v",
+        "username": "Guest",
         "avatar": "",
-        "content": "This reminds me of when I first discovered Jasper - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-30T23:49:27.823Z",
-        "likes": 25,
+        "content": "remember when i first found RunwayML? mind = blown. cant work without it now",
+        "timestamp": "2025-07-26T20:46:13.191Z",
+        "likes": 44,
         "replies": [
           {
-            "id": "f6b1ueo01",
-            "username": "CreatorLife",
+            "id": "dvt15p6k9",
+            "username": "Guest",
             "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-28T04:12:27.823Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "3m1govan9",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-18T23:52:27.823Z",
-        "likes": 31,
-        "replies": [
-          {
-            "id": "8urxv3c4q",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-30T09:27:27.823Z",
-            "likes": 7,
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-30T17:13:13.191Z",
+            "likes": 5,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "f3qb37k65",
-            "username": "MLEngineer99",
+            "id": "r7trreabm",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-28T23:33:27.823Z",
-            "likes": 10,
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T23:42:13.191Z",
+            "likes": 11,
             "replies": [],
             "isOP": false
           }
@@ -12839,29 +11898,307 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "mobile-app-automation",
     "comments": [
       {
-        "id": "cukmdn6oq",
-        "username": "BackendBeast",
+        "id": "tdye4u6pp",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-29T16:19:27.823Z",
-        "likes": 12,
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-26T01:11:13.191Z",
+        "likes": 11,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "7a37vns1g",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-17T08:41:13.191Z",
+        "likes": 47,
         "replies": [
           {
-            "id": "0232e7ke9",
-            "username": "GrowthHacker_",
+            "id": "nkcdox7jc",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-11T14:11:27.823Z",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-30T16:55:13.191Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "hjox8waj4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on mobile",
+        "timestamp": "2025-07-05T14:59:13.191Z",
+        "likes": 50,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "vapzbpup6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-12T07:03:13.191Z",
+        "likes": 54,
+        "replies": [
+          {
+            "id": "hjf0lj2j8",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-28T05:57:13.191Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "kamxltaz5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-23T07:48:13.191Z",
+        "likes": 10,
+        "replies": [
+          {
+            "id": "3uppkqteh",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-13T10:53:13.191Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "zddzjr70p",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-31T06:00:13.191Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "jhxuld9cq",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-23T18:53:13.191Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "vve632kb2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-07T09:30:13.191Z",
+        "likes": 11,
+        "replies": [
+          {
+            "id": "k8w33qgw4",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-08-01T09:55:13.191Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "qf716lo8n",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-15T17:40:13.191Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 13
+  },
+  "gemini-2-pro-creator-tech-empire": {
+    "postSlug": "gemini-2-pro-creator-tech-empire",
+    "comments": [
+      {
+        "id": "dg9vgf2iz",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-18T12:32:13.191Z",
+        "likes": 13,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "giu5hhpbv",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how long till you saw real results?",
+        "timestamp": "2025-07-17T10:23:13.191Z",
+        "likes": 31,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "jmsdl5vu1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the biggest mistake people make with this?",
+        "timestamp": "2025-07-11T18:01:13.191Z",
+        "likes": 35,
+        "replies": [
+          {
+            "id": "ojsz7pm74",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-31T20:57:13.191Z",
             "likes": 1,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "1f1qqecow",
-            "username": "APIGuru",
+            "id": "wxcnhr8qr",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-01T04:18:27.823Z",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T16:30:13.191Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "ujxef5ucp",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been doing online biz for 5 years. wish i had this from the start",
+        "timestamp": "2025-08-01T18:46:13.191Z",
+        "likes": 8,
+        "replies": [
+          {
+            "id": "l78qqa01y",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-31T02:08:13.191Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2c0iaz7ke",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-27T12:10:13.191Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ydbxstrfv",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-27T20:08:13.191Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "0fu61jy4u",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this matches what i learned from {book/course}. consistency wins",
+        "timestamp": "2025-07-07T17:53:13.191Z",
+        "likes": 23,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "z28j0r13f",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-21T22:38:13.191Z",
+        "likes": 12,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 11
+  },
+  "customer-service-automation": {
+    "postSlug": "customer-service-automation",
+    "comments": [
+      {
+        "id": "oyyvdoy65",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on customer",
+        "timestamp": "2025-07-22T05:05:13.191Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "fi548ash1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-18T23:03:13.191Z",
+        "likes": 11,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "rpad10iga",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-08-02T01:22:13.191Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "81z6ccxrx",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-08-03T03:42:13.191Z",
+        "likes": 22,
+        "replies": [
+          {
+            "id": "gn7ipb6z4",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-31T07:44:13.191Z",
             "likes": 9,
             "replies": [],
             "isOP": false
@@ -12870,966 +12207,832 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "46ve71f09",
-        "username": "DataScienceD",
+        "id": "0n2234n9f",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-08-01T15:26:27.823Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "j9oq36faj",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using mobile, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-30T13:05:27.823Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "pvzp68isl",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-20T10:23:27.823Z",
-        "likes": 26,
-        "replies": [
-          {
-            "id": "rqdq1fqrg",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-29T09:37:27.823Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "p1feep059",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-22T21:10:27.823Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "4ozd0tw6n",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T15:49:27.823Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 9
-  },
-  "gemini-2-pro-creator-tech-empire": {
-    "postSlug": "gemini-2-pro-creator-tech-empire",
-    "comments": [
-      {
-        "id": "4nxaiwwye",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "How do you scale this approach for service-based businesses vs product-based?",
-        "timestamp": "2025-08-01T08:07:27.823Z",
-        "likes": 38,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "77ivnc8gc",
-        "username": "DigitalBiz",
-        "avatar": "",
-        "content": "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-        "timestamp": "2025-07-27T19:21:27.823Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ybiul0mq3",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-24T15:13:27.823Z",
-        "likes": 37,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "35s29wjw1",
-        "username": "GrowthExpert",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-07T10:56:27.823Z",
-        "likes": 53,
-        "replies": [
-          {
-            "id": "d7i2zt9lt",
-            "username": "RevenueOptimizer",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-27T22:36:27.823Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "z77wnc9vy",
-            "username": "BusinessMinded",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-29T11:57:27.823Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ijy9wrmt7",
-            "username": "DigitalBiz",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-08-01T03:01:27.823Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 7
-  },
-  "customer-service-automation": {
-    "postSlug": "customer-service-automation",
-    "comments": [
-      {
-        "id": "olmheg99g",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-08-01T11:35:27.823Z",
-        "likes": 42,
-        "replies": [
-          {
-            "id": "bi39shi8a",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T12:20:27.823Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "pg18i3jc2",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-28T22:57:27.823Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "qk0si6031",
-            "username": "TechCreator",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-27T22:41:27.823Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "g25i9pc38",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-21T14:09:27.823Z",
-        "likes": 47,
-        "replies": [
-          {
-            "id": "yuryyyskv",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-31T21:29:27.823Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "0249f1kko",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-28T02:20:27.823Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "d299ibnak",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-28T05:09:27.823Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "89gpxo2qj",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-31T06:51:27.823Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 9
-  },
-  "ai-era-skills": {
-    "postSlug": "ai-era-skills",
-    "comments": [
-      {
-        "id": "fjjls3r7y",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with ai.",
-        "timestamp": "2025-07-06T02:41:27.823Z",
-        "likes": 23,
-        "replies": [
-          {
-            "id": "ge1v1zlu9",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-01T22:34:27.823Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "7s6qzzmm3",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-28T18:35:27.823Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "9g5gcmrxl",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-22T09:02:27.823Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "3nxbul0g8",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-08T01:44:27.823Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "pa450u2ss",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-14T18:58:27.823Z",
-        "likes": 33,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ywd02mjx7",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-17T06:27:27.823Z",
-        "likes": 39,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2opin8x9y",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-25T16:40:27.823Z",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-21T10:37:13.191Z",
         "likes": 32,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "7fhwbjdi2",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "Has anyone tried combining this with RunwayML? Wondering if there's synergy there.",
-        "timestamp": "2025-07-19T20:50:27.823Z",
-        "likes": 10,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "fkhsvyl7k",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-15T17:26:27.823Z",
-        "likes": 30,
-        "replies": [
-          {
-            "id": "tyilcm3l9",
-            "username": "ReactDev_",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-31T14:35:27.823Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "j2q23b2qi",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-29T10:29:27.823Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "4muft352x",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-29T16:14:27.823Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "quality-assurance-automation": {
-    "postSlug": "quality-assurance-automation",
-    "comments": [
-      {
-        "id": "35b2yyu3o",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-21T23:16:27.928Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "fuhen6k3f",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-17T15:37:27.928Z",
-        "likes": 50,
-        "replies": [
-          {
-            "id": "4csn3m4n3",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-29T08:52:27.928Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "di9adimym",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-23T19:52:27.928Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "l0yhpzbz8",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-17T03:39:27.928Z",
-        "likes": 43,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "mywyq88xv",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-13T07:27:27.928Z",
-        "likes": 38,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "31eljsanq",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-06T23:04:27.928Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "gy66lq79t",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-26T06:23:27.928Z",
-        "likes": 29,
-        "replies": [
-          {
-            "id": "49g86mmik",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-28T06:48:27.928Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "fjv0v8xkk",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T23:12:27.928Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "bd3zxk30q",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-29T16:59:27.928Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "fbwddtr40",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-07T13:00:27.928Z",
-        "likes": 35,
-        "replies": [
-          {
-            "id": "qaqojd6fh",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-08-01T17:43:27.928Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "claude-4-vs-gpt-4-comparison": {
-    "postSlug": "claude-4-vs-gpt-4-comparison",
-    "comments": [
-      {
-        "id": "xbwcnfkbx",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-26T15:45:27.928Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "dh08bt9af",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Has anyone tried combining this with Jasper? Wondering if there's synergy there.",
-        "timestamp": "2025-07-29T06:07:27.928Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "zr2buueq4",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-23T16:34:27.928Z",
-        "likes": 18,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "8butvgpo4",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-23T16:57:27.928Z",
-        "likes": 46,
-        "replies": [
-          {
-            "id": "j0stdnbny",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-02T03:37:27.928Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "wc67gv82d",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "Quick question - what's the learning curve like for someone with zero AI experience?",
-        "timestamp": "2025-07-17T10:43:27.928Z",
-        "likes": 19,
-        "replies": [
-          {
-            "id": "fu85vqq87",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-30T01:26:27.928Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "wb06z593o",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-24T02:48:27.928Z",
-        "likes": 53,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "4losl9rl0",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-09T07:17:27.928Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "hpzui6xsj",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-08-02T15:45:27.928Z",
-        "likes": 12,
-        "replies": [
-          {
-            "id": "5kwmkr36a",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-29T05:56:27.928Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "qnwduo7v6",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-30T10:46:27.928Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "6ya794fzy",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-31T05:39:27.928Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "ai-automation-guide": {
-    "postSlug": "ai-automation-guide",
-    "comments": [
-      {
-        "id": "wp1fzatqr",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-15T03:04:27.928Z",
-        "likes": 11,
-        "replies": [
-          {
-            "id": "a63lthz8o",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-31T22:05:27.928Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ovoitedf3",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-08-01T06:39:27.929Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "0gda84uyl",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-29T12:09:27.929Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "7rljh3zgd",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "These AI solutions always look great in demos but struggle in real-world scenarios.",
-        "timestamp": "2025-07-31T16:43:27.929Z",
-        "likes": 18,
-        "replies": [
-          {
-            "id": "u7ulaprp0",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-31T09:34:27.929Z",
-            "likes": 6,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "qr4gpmqjr",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-30T03:00:27.929Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "qqksvaygj",
-        "username": "PytonPro",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-14T18:37:27.929Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "czp85oudy",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "Has anyone tried combining this with Claude? Wondering if there's synergy there.",
-        "timestamp": "2025-07-15T06:18:27.929Z",
-        "likes": 30,
-        "replies": [
-          {
-            "id": "ou9sdn013",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-30T18:22:27.929Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "m5r0snx52",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-30T00:38:27.929Z",
-        "likes": 33,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "0hxxx2sx5",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-20T06:31:27.929Z",
-        "likes": 25,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 12
-  },
-  "instagram-reels-guide": {
-    "postSlug": "instagram-reels-guide",
-    "comments": [
-      {
-        "id": "so7lucqv3",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-07T21:25:27.929Z",
-        "likes": 22,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "scf4zigl9",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-08-02T11:04:27.929Z",
-        "likes": 51,
-        "replies": [
-          {
-            "id": "8xmtoylsu",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T04:50:27.929Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "0hayps93p",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-26T10:48:27.929Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "700tnv9oo",
-        "username": "GrowthExpert",
-        "avatar": "",
-        "content": "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-        "timestamp": "2025-07-11T16:13:27.929Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "tupzwcikt",
-        "username": "EntrepreneurE",
-        "avatar": "",
-        "content": "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-        "timestamp": "2025-07-05T13:37:27.929Z",
-        "likes": 26,
         "replies": [],
         "isOP": false
       }
     ],
     "commentCount": 6
   },
-  "windsurf-ai-coding": {
-    "postSlug": "windsurf-ai-coding",
+  "ai-era-skills": {
+    "postSlug": "ai-era-skills",
     "comments": [
       {
-        "id": "n0virqbpa",
-        "username": "PassiveIncomeJoe",
+        "id": "l6kvwliyw",
+        "username": "Guest",
         "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with windsurf.",
-        "timestamp": "2025-07-30T17:11:27.929Z",
-        "likes": 37,
+        "content": "api integration looks solid but heads up - rate limiting with ai can be a pain",
+        "timestamp": "2025-07-07T07:21:13.191Z",
+        "likes": 21,
         "replies": [
           {
-            "id": "it1futogj",
-            "username": "DigitalNomadSarah",
+            "id": "i3wshc2bg",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-31T06:43:27.929Z",
-            "likes": 7,
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-31T18:06:13.191Z",
+            "likes": 8,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "pdq0nqedm",
-            "username": "PytonPro",
+            "id": "tid7mioxt",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T17:45:27.929Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "1d12bzvan",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-31T12:54:27.929Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "8xcac03zl",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-07-22T13:54:27.929Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "rw6nelxjm",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-13T11:51:27.929Z",
-        "likes": 50,
-        "replies": [
-          {
-            "id": "e6yd69fgn",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T19:13:27.929Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-29T12:21:13.191Z",
             "likes": 12,
             "replies": [],
             "isOP": false
+          },
+          {
+            "id": "lay92kra1",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-30T08:42:13.191Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
           }
         ],
         "isOP": false
       },
       {
-        "id": "gekqwgyfh",
-        "username": "MarketingMaven",
+        "id": "vq6xglu4k",
+        "username": "Guest",
         "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-05T11:23:27.929Z",
-        "likes": 54,
+        "content": "anyone tried mixing this with Jasper? wondering if they work together",
+        "timestamp": "2025-07-16T09:42:13.191Z",
+        "likes": 35,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "jg6sn4k6r",
-        "username": "ServerlessSteve",
+        "id": "yhthp520k",
+        "username": "Guest",
         "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-06T19:39:27.929Z",
-        "likes": 16,
+        "content": "anyone tried mixing this with RunwayML? wondering if they work together",
+        "timestamp": "2025-08-01T11:30:13.191Z",
+        "likes": 29,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "6mlj6cupc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-31T13:35:13.191Z",
+        "likes": 33,
         "replies": [
           {
-            "id": "5q323tipn",
-            "username": "DevOpsDaily",
+            "id": "gi25iex7p",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-27T22:22:27.929Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-29T14:21:13.191Z",
             "likes": 3,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "uteq5wogn",
-            "username": "APIGuru",
+            "id": "8niju5qso",
+            "username": "Guest",
             "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-07-23T06:36:27.929Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-31T20:22:13.191Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "2cu9wci81",
+        "username": "Guest",
+        "avatar": "",
+        "content": "api integration looks solid but heads up - rate limiting with ai can be a pain",
+        "timestamp": "2025-07-12T19:01:13.191Z",
+        "likes": 54,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "xdqggx83q",
+        "username": "Guest",
+        "avatar": "",
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-08-03T07:27:13.191Z",
+        "likes": 8,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "s065d0i38",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-16T16:07:13.191Z",
+        "likes": 53,
+        "replies": [
+          {
+            "id": "8ipy794gh",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T06:35:13.191Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "xc07u088i",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-29T01:02:13.191Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "1vhvg8q97",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-27T18:28:13.191Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "gqan3t0u5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-08-02T02:19:13.191Z",
+        "likes": 53,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 16
+  },
+  "quality-assurance-automation": {
+    "postSlug": "quality-assurance-automation",
+    "comments": [
+      {
+        "id": "hck9rb3v4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-24T01:57:13.292Z",
+        "likes": 49,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "bwh7bd1g6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-29T14:54:13.292Z",
+        "likes": 39,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "rzc3jlkyd",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-19T07:27:13.292Z",
+        "likes": 23,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "jnzt463sg",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-19T18:44:13.292Z",
+        "likes": 52,
+        "replies": [
+          {
+            "id": "fpb0vm8f3",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-08-01T02:59:13.292Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "xws64o061",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-28T17:33:13.292Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "km4x615o6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-07T20:48:13.292Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "n942juwzw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-16T17:25:13.292Z",
+        "likes": 10,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "vc0eykiec",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-15T02:08:13.292Z",
+        "likes": 37,
+        "replies": [
+          {
+            "id": "dgbvd1bwg",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-29T07:38:13.292Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "w4rr8mwv0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-29T13:47:13.292Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "8ic73muua",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-29T21:07:13.292Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 12
+  },
+  "claude-4-vs-gpt-4-comparison": {
+    "postSlug": "claude-4-vs-gpt-4-comparison",
+    "comments": [
+      {
+        "id": "8gf0oe03m",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-27T08:13:13.292Z",
+        "likes": 51,
+        "replies": [
+          {
+            "id": "f8shv6coo",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-29T05:45:13.292Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ofznv7185",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-27T16:59:13.292Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "nokxu40eb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-28T20:45:13.292Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "2wy5ez3lr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "that diagram finally made it click for me. was confused before",
+        "timestamp": "2025-07-19T21:05:13.292Z",
+        "likes": 24,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "s8sg35feb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "decent breakdown but watch out for token limits. they sneak up on you",
+        "timestamp": "2025-07-08T18:50:13.292Z",
+        "likes": 14,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "rk3w7cqlp",
+        "username": "Guest",
+        "avatar": "",
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-13T09:00:13.292Z",
+        "likes": 39,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "nfzr9n8ui",
+        "username": "Guest",
+        "avatar": "",
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-07-23T12:11:13.292Z",
+        "likes": 43,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "f3g22cru5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-07T04:16:13.292Z",
+        "likes": 14,
+        "replies": [
+          {
+            "id": "hs68hcml5",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-31T16:18:13.292Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "nb2lylap8",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T12:21:13.292Z",
+            "likes": 5,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "2des5xknq",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-27T12:05:13.292Z",
             "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 12
+  },
+  "ai-automation-guide": {
+    "postSlug": "ai-automation-guide",
+    "comments": [
+      {
+        "id": "q7qy51n4c",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how do yall handle the whole ai ethics thing? kinda struggling with it",
+        "timestamp": "2025-07-05T00:00:13.292Z",
+        "likes": 14,
+        "replies": [
+          {
+            "id": "061o5d4xu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T05:49:13.292Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "6mowb9r57",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-25T00:14:13.292Z",
+        "likes": 17,
+        "replies": [
+          {
+            "id": "9q2tvi4jc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-27T14:07:13.292Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "pef0h94bm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-29T11:42:13.292Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "3esk3zsol",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-23T09:33:13.292Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "kgfm6im9e",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-29T19:12:13.292Z",
+        "likes": 53,
+        "replies": [
+          {
+            "id": "yjkzxpd0a",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-08-01T15:28:13.292Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "instagram-reels-guide": {
+    "postSlug": "instagram-reels-guide",
+    "comments": [
+      {
+        "id": "ch9zzyncw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-05T14:50:13.292Z",
+        "likes": 46,
+        "replies": [
+          {
+            "id": "gamj16rwm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-29T08:52:13.292Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "b7tayzcqh",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-16T03:23:13.292Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "il6i3688p",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T13:00:13.292Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "5qnb8zih2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-30T09:43:13.292Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "kl5bv4pzn",
+        "username": "Guest",
+        "avatar": "",
+        "content": "how does this work for services vs products? seems different",
+        "timestamp": "2025-07-28T00:23:13.292Z",
+        "likes": 21,
+        "replies": [
+          {
+            "id": "xrivzax1x",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-28T12:23:13.292Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "57ee490xs",
+        "username": "Guest",
+        "avatar": "",
+        "content": "the ltv thing really hit me. most people just focus on getting customers",
+        "timestamp": "2025-07-05T16:28:13.292Z",
+        "likes": 26,
+        "replies": [
+          {
+            "id": "pz1bm8ugd",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-31T20:13:13.292Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "7knjitlz8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-18T22:30:13.292Z",
+        "likes": 48,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "c08fayvc8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "finally someone using actual data instead of just stories",
+        "timestamp": "2025-07-08T00:27:13.292Z",
+        "likes": 11,
+        "replies": [
+          {
+            "id": "x15egd8vp",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-28T17:35:13.292Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "oom8ybhgl",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-31T10:14:13.292Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "d64bpes6l",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-28T09:27:13.292Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "5jzpcp9lq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "started doing this 6 months ago and finally hit 10k/month. crazy",
+        "timestamp": "2025-07-19T19:01:13.292Z",
+        "likes": 12,
+        "replies": [
+          {
+            "id": "upv0ow8e6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-31T10:11:13.292Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "emzki0lh6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-01T23:02:13.292Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "eomwju155",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T01:51:13.292Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 18
+  },
+  "windsurf-ai-coding": {
+    "postSlug": "windsurf-ai-coding",
+    "comments": [
+      {
+        "id": "y8ckoked4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone tried mixing this with Midjourney? wondering if they work together",
+        "timestamp": "2025-07-24T22:13:13.292Z",
+        "likes": 24,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "x49rsuri8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-30T15:44:13.292Z",
+        "likes": 45,
+        "replies": [
+          {
+            "id": "vcrxmo8bi",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-28T17:46:13.292Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "6kin7eh4l",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T03:53:13.292Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "p76l3yfpm",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T00:06:13.292Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "x87kj6x12",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-25T13:56:13.292Z",
+        "likes": 15,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "fa24s7s5t",
+        "username": "Guest",
+        "avatar": "",
+        "content": "decent breakdown but watch out for token limits. they sneak up on you",
+        "timestamp": "2025-07-24T16:27:13.292Z",
+        "likes": 32,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "zdscq97my",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-25T13:33:13.292Z",
+        "likes": 23,
+        "replies": [
+          {
+            "id": "a8eeqimxb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-01T15:28:13.292Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "8num8eijb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-27T13:41:13.292Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "byg3ucldb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-27T22:36:13.292Z",
+            "likes": 6,
             "replies": [],
             "isOP": false
           }
@@ -13843,101 +13046,40 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "ai-image-generator-comparison-2025",
     "comments": [
       {
-        "id": "875k3ryl9",
-        "username": "DataScienceD",
+        "id": "rux1m20y7",
+        "username": "Guest",
         "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-17T19:52:27.929Z",
-        "likes": 11,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "yw42v8kut",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Has anyone tried combining this with Midjourney? Wondering if there's synergy there.",
-        "timestamp": "2025-07-10T09:50:27.929Z",
-        "likes": 16,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "52nv8iej0",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-19T08:30:27.929Z",
-        "likes": 46,
+        "content": "if ur getting setup errors check ur env variables first. learned that the hard way",
+        "timestamp": "2025-07-04T10:57:13.292Z",
+        "likes": 48,
         "replies": [
           {
-            "id": "rnsnkug5y",
-            "username": "DigitalNomadSarah",
+            "id": "i5kig665g",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-28T10:43:27.929Z",
-            "likes": 10,
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T09:51:13.292Z",
+            "likes": 8,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "s1dze5y1s",
-            "username": "MarketingMaven",
+            "id": "3mhskl07e",
+            "username": "Guest",
             "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-30T00:49:27.929Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "1zx38p77k",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert.",
-        "timestamp": "2025-07-27T13:43:27.929Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "z45rf6qe9",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-12T17:48:27.929Z",
-        "likes": 50,
-        "replies": [
-          {
-            "id": "3rxmzqy7u",
-            "username": "DevLife2024",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T10:38:27.929Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "hkp4bt2ix",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-31T22:02:27.929Z",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-28T14:59:13.292Z",
             "likes": 11,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "xsnvqlua6",
-            "username": "ScaleUpStudio",
+            "id": "xfsj6liem",
+            "username": "Guest",
             "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-28T02:56:27.929Z",
-            "likes": 10,
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-27T22:40:13.292Z",
+            "likes": 2,
             "replies": [],
             "isOP": false
           }
@@ -13945,118 +13087,180 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "2n9fgx3qb",
-        "username": "ContentKing_92",
+        "id": "sqlvi6rcc",
+        "username": "Guest",
         "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-10T20:08:27.929Z",
+        "content": "not trying to be negative but ive been burned by hyped tools before",
+        "timestamp": "2025-07-30T06:29:13.292Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "45ssm36e7",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found Jasper? mind = blown. cant work without it now",
+        "timestamp": "2025-07-28T08:23:13.292Z",
+        "likes": 42,
+        "replies": [
+          {
+            "id": "aocmsxh9j",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-30T01:44:13.292Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "1w098th6h",
+        "username": "Guest",
+        "avatar": "",
+        "content": "not trying to be negative but ive been burned by hyped tools before",
+        "timestamp": "2025-08-02T15:16:13.292Z",
         "likes": 32,
         "replies": [],
         "isOP": false
-      }
-    ],
-    "commentCount": 11
-  },
-  "create-faceless-youtube-channel": {
-    "postSlug": "create-faceless-youtube-channel",
-    "comments": [
-      {
-        "id": "xvoyv1adk",
-        "username": "SaaSFounder",
-        "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-22T04:24:27.929Z",
-        "likes": 32,
-        "replies": [
-          {
-            "id": "1njf207eb",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T21:06:27.929Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "c3xqjayso",
-            "username": "BusinessBuilder",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-28T21:08:27.929Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
       },
       {
-        "id": "b6wqf0arj",
-        "username": "ROI_Focused",
+        "id": "z0sg0ge9o",
+        "username": "Guest",
         "avatar": "",
-        "content": "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-        "timestamp": "2025-07-24T05:08:27.929Z",
+        "content": "decent breakdown but watch out for token limits. they sneak up on you",
+        "timestamp": "2025-07-15T02:56:13.292Z",
         "likes": 13,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "6z94fkz54",
-        "username": "DigitalBiz",
+        "id": "bdmkii2up",
+        "username": "Guest",
         "avatar": "",
-        "content": "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-        "timestamp": "2025-07-14T22:46:27.929Z",
-        "likes": 41,
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-05T14:49:13.292Z",
+        "likes": 27,
         "replies": [
           {
-            "id": "aznzwh8rq",
-            "username": "ProfitMaximizer",
+            "id": "v9709fsst",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-08-01T22:20:27.929Z",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-27T23:29:13.292Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "75nih9134",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-26T20:21:13.292Z",
             "likes": 11,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "chmqflefb",
-            "username": "CreatorLife",
+            "id": "02kwad407",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-28T17:26:27.929Z",
-            "likes": 3,
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-28T01:31:13.292Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "po53qbah1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-29T00:40:13.292Z",
+        "likes": 36,
+        "replies": [
+          {
+            "id": "l2giezqhy",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-30T23:39:13.292Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 15
+  },
+  "create-faceless-youtube-channel": {
+    "postSlug": "create-faceless-youtube-channel",
+    "comments": [
+      {
+        "id": "a7v8micw4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what should i track early on? theres so many metrics its confusing",
+        "timestamp": "2025-07-13T08:12:13.292Z",
+        "likes": 53,
+        "replies": [
+          {
+            "id": "z0ijaudew",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-08-02T00:07:13.292Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "uvahkgvzs",
+        "username": "Guest",
+        "avatar": "",
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-30T19:35:13.292Z",
+        "likes": 20,
+        "replies": [
+          {
+            "id": "0vvws716r",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T23:03:13.292Z",
+            "likes": 9,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "1c91dwjl2",
-            "username": "RevenueOptimizer",
+            "id": "tjlvob2ll",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-02T06:41:27.929Z",
-            "likes": 10,
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-27T14:52:13.292Z",
+            "likes": 2,
             "replies": [],
             "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ug34i8dkf",
-        "username": "BusinessHacks",
-        "avatar": "",
-        "content": "How long did it take you to see meaningful results with this strategy?",
-        "timestamp": "2025-07-14T12:35:27.929Z",
-        "likes": 9,
-        "replies": [
+          },
           {
-            "id": "z04332v16",
-            "username": "OnlineEmpire",
+            "id": "igtsd74jh",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-08-01T16:09:27.929Z",
-            "likes": 3,
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-29T09:33:13.292Z",
+            "likes": 9,
             "replies": [],
             "isOP": false
           }
@@ -14064,40 +13268,70 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "s736e2sbm",
-        "username": "PassiveIncomeJoe",
+        "id": "6zy8bslo8",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been running my online business for 5 years and wish I had this roadmap from day one.",
-        "timestamp": "2025-07-04T09:47:27.929Z",
-        "likes": 10,
+        "content": "the pricing mindset shift was huge. stopped undercharging immediately",
+        "timestamp": "2025-07-10T21:46:13.292Z",
+        "likes": 6,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "s1zwp8tnt",
-        "username": "BusinessBuilder",
+        "id": "yaenenxzd",
+        "username": "Guest",
         "avatar": "",
-        "content": "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately.",
-        "timestamp": "2025-07-28T13:32:27.929Z",
-        "likes": 5,
+        "content": "used these ideas for my product launch. made way more than expected",
+        "timestamp": "2025-07-14T10:10:13.292Z",
+        "likes": 20,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "mc73r8m4q",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-14T11:02:13.292Z",
+        "likes": 26,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "vr44xwn0w",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-08T01:11:13.292Z",
+        "likes": 49,
         "replies": [
           {
-            "id": "30to47i7g",
-            "username": "MonetizeThis",
+            "id": "jc9mwy78n",
+            "username": "Guest",
             "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-01T09:46:27.929Z",
-            "likes": 6,
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-09T10:44:13.292Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "tsphtii00",
-            "username": "BusinessBuilder",
+            "id": "9bvnj08fg",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-31T07:07:27.929Z",
-            "likes": 13,
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-27T18:29:13.292Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "embsd2faq",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-18T13:35:13.292Z",
+            "likes": 14,
             "replies": [],
             "isOP": false
           }
@@ -14105,12 +13339,22 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "8378emfs9",
-        "username": "SaaSFounder",
+        "id": "wk2t47p4n",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-        "timestamp": "2025-07-06T21:46:27.929Z",
-        "likes": 54,
+        "content": "love that its about systems not grinding 24/7. burnout is real",
+        "timestamp": "2025-07-18T10:37:13.292Z",
+        "likes": 23,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "4xpbszgcl",
+        "username": "Guest",
+        "avatar": "",
+        "content": "glad someone talks about the boring parts. building a business sucks sometimes",
+        "timestamp": "2025-07-13T08:19:13.292Z",
+        "likes": 17,
         "replies": [],
         "isOP": false
       }
@@ -14121,86 +13365,40 @@ export const blogComments: Record<string, PostComments> = {
     "postSlug": "seo-automation-tools",
     "comments": [
       {
-        "id": "v9lwya7vz",
-        "username": "AutomationAndy",
+        "id": "cwecyj7ac",
+        "username": "Guest",
         "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-09T20:26:27.929Z",
-        "likes": 10,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "upllwe3y8",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-20T05:32:27.929Z",
-        "likes": 24,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "i117fcfil",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-06T13:21:27.929Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "9jhs6g0tc",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-12T08:14:27.929Z",
-        "likes": 11,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "m09h3c34d",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-08T12:24:27.929Z",
-        "likes": 32,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 5
-  },
-  "ai-automation-guide-toxic-seo": {
-    "postSlug": "ai-automation-guide-toxic-seo",
-    "comments": [
-      {
-        "id": "olvroucx8",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Claude - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-09T01:26:27.929Z",
-        "likes": 11,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "yxpwmpygs",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Has anyone tried combining this with ChatGPT? Wondering if there's synergy there.",
-        "timestamp": "2025-07-16T06:01:27.929Z",
-        "likes": 19,
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-13T22:37:13.292Z",
+        "likes": 41,
         "replies": [
           {
-            "id": "dqe9hqo0p",
-            "username": "DigitalNomadSarah",
+            "id": "j5y0pshm6",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-31T08:47:27.929Z",
-            "likes": 14,
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-08-01T05:32:13.292Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "giz85so4i",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-02T06:31:13.292Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "545y62413",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-28T08:12:13.292Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           }
@@ -14208,178 +13406,110 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "ku8tygase",
-        "username": "CreatorCodex",
+        "id": "qng6llbfb",
+        "username": "Guest",
         "avatar": "",
-        "content": "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-        "timestamp": "2025-07-12T07:47:27.929Z",
-        "likes": 54,
-        "replies": [
-          {
-            "id": "5gxg3l7dx",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-31T06:47:27.929Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "08vdkr6xm",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-29T00:12:27.929Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "gfxk1caft",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-28T14:27:27.929Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "0elrn1a3l",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "The architecture diagram really helped me understand how all the pieces fit together.",
-        "timestamp": "2025-07-31T05:05:27.929Z",
-        "likes": 47,
-        "replies": [
-          {
-            "id": "tk4qy1oig",
-            "username": "DataScienceD",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-29T03:47:27.929Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "qym1n74c5",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-08-01T23:23:27.929Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "52x8dyewq",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T19:08:27.929Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "wezmlrthk",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Been using Jasper for my content creation and it's a total game changer. The time savings alone justify the cost.",
-        "timestamp": "2025-07-12T15:54:27.929Z",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-22T22:42:13.292Z",
         "likes": 13,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "gqaj9zikf",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-13T11:45:13.292Z",
+        "likes": 11,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "m3o4078ah",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on seo",
+        "timestamp": "2025-07-24T14:58:13.292Z",
+        "likes": 33,
         "replies": [
           {
-            "id": "p8xkz5beb",
-            "username": "APIGuru",
+            "id": "on7s0l4d1",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-08-01T08:46:27.929Z",
-            "likes": 8,
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-21T15:38:13.292Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "7wa595lyu",
-            "username": "MLEngineer99",
+            "id": "m4zx5387i",
+            "username": "Guest",
             "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-07-27T17:55:27.929Z",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-30T08:07:13.292Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "cub5ifm0l",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-16T19:16:13.292Z",
+        "likes": 21,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "lgf9arlav",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-09T05:50:13.292Z",
+        "likes": 14,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "85e2c7ob3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-09T16:51:13.292Z",
+        "likes": 6,
+        "replies": [
+          {
+            "id": "vsnn5ejgt",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-27T18:16:13.292Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "l5a8pqxfi",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-02T07:11:13.292Z",
             "likes": 15,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "j358c74k6",
-            "username": "PytonPro",
+            "id": "hpbejvrgz",
+            "username": "Guest",
             "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-08-02T06:10:27.929Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 15
-  },
-  "machine-learning-automation": {
-    "postSlug": "machine-learning-automation",
-    "comments": [
-      {
-        "id": "zraxbfcdy",
-        "username": "MobileFirst",
-        "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-24T19:20:27.929Z",
-        "likes": 37,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "ngrc09gyi",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-        "timestamp": "2025-07-27T15:19:27.929Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "rp0c1z12g",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "Has anyone tried combining this with Claude? Wondering if there's synergy there.",
-        "timestamp": "2025-07-22T00:06:27.929Z",
-        "likes": 23,
-        "replies": [
-          {
-            "id": "01diiq6xa",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-08-01T22:29:27.929Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "znoa2vymh",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "I tried something similar but struggled with {specific issue}. Any tips?",
-            "timestamp": "2025-08-01T22:49:27.929Z",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-07-30T22:29:13.292Z",
             "likes": 6,
             "replies": [],
             "isOP": false
@@ -14388,271 +13518,56 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "6u8z915av",
-        "username": "APIGuru",
+        "id": "lhe3a6p97",
+        "username": "Guest",
         "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-27T12:02:27.929Z",
-        "likes": 37,
-        "replies": [
-          {
-            "id": "i3b8h5bb7",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-31T13:02:27.929Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "icly9gfgz",
-            "username": "CreatorCodex",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-31T19:14:27.929Z",
-            "likes": 5,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "riemovlzh",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-08-02T23:24:27.929Z",
-        "likes": 12,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "zwzvoh57o",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-06T21:12:27.929Z",
-        "likes": 33,
-        "replies": [
-          {
-            "id": "jatmvwmnw",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-25T15:54:27.929Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "9ffnodcri",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-30T16:55:27.929Z",
-        "likes": 6,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "tjln83cfw",
-        "username": "ReactDev_",
-        "avatar": "",
-        "content": "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-        "timestamp": "2025-07-11T17:27:27.929Z",
-        "likes": 21,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "midjourney-business-automation": {
-    "postSlug": "midjourney-business-automation",
-    "comments": [
-      {
-        "id": "v8wvgrp56",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-10T23:45:28.031Z",
-        "likes": 17,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "i3i9cmhs5",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using midjourney, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-25T09:26:28.031Z",
-        "likes": 44,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "l26h9ic6h",
-        "username": "CloudArchitect",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using midjourney, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-14T18:18:28.031Z",
-        "likes": 38,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 3
-  },
-  "database-automation-systems": {
-    "postSlug": "database-automation-systems",
-    "comments": [
-      {
-        "id": "mo2fg9636",
-        "username": "DigitalNomadSarah",
-        "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-21T09:17:28.031Z",
-        "likes": 45,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "9ns9ukymu",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-11T15:56:28.031Z",
-        "likes": 29,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "gcg55ogtk",
-        "username": "CreativeHustle",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-15T13:25:28.031Z",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-05T00:07:13.292Z",
         "likes": 24,
         "replies": [],
         "isOP": false
-      },
-      {
-        "id": "e8bk6ctth",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-16T05:32:28.031Z",
-        "likes": 49,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "lfoj77juy",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-21T04:47:28.031Z",
-        "likes": 53,
-        "replies": [
-          {
-            "id": "shgnocidx",
-            "username": "MarketingMaven",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-29T02:58:28.031Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "58i6sqfeq",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-28T15:08:28.032Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "aypd9dhn9",
-            "username": "ServerlessSteve",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-31T06:35:28.032Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "1mlumbl30",
-        "username": "SoloPreneur23",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-28T07:15:28.032Z",
-        "likes": 24,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "yujk3leb0",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-15T05:06:28.032Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
       }
     ],
-    "commentCount": 10
+    "commentCount": 16
   },
-  "pinterest-automation-marketing": {
-    "postSlug": "pinterest-automation-marketing",
+  "ai-automation-guide-toxic-seo": {
+    "postSlug": "ai-automation-guide-toxic-seo",
     "comments": [
       {
-        "id": "798lk5km5",
-        "username": "DevLife2024",
+        "id": "zmo3jttbb",
+        "username": "Guest",
         "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-16T04:48:28.032Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "bv10w83hz",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-04T20:47:28.032Z",
-        "likes": 37,
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-17T00:04:13.292Z",
+        "likes": 15,
         "replies": [
           {
-            "id": "utqoxfuov",
-            "username": "AutomationAndy",
+            "id": "rrdrh2g6y",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-30T22:27:28.032Z",
-            "likes": 15,
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T02:52:13.292Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "gw9n2qrih",
-            "username": "ReactDev_",
+            "id": "jvnwbtbu4",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-31T06:50:28.032Z",
-            "likes": 10,
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-30T03:36:13.292Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "y9o138smc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-29T08:07:13.292Z",
+            "likes": 6,
             "replies": [],
             "isOP": false
           }
@@ -14660,19 +13575,50 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "bd2leacuy",
-        "username": "CloudArchitect",
+        "id": "p6lpfd8qt",
+        "username": "Guest",
         "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-06T20:34:28.032Z",
-        "likes": 21,
+        "content": "whats the learning curve like? complete noob here",
+        "timestamp": "2025-07-17T23:12:13.292Z",
+        "likes": 15,
         "replies": [
           {
-            "id": "ha5bjhhbp",
-            "username": "TechStack_",
+            "id": "ychwgv30i",
+            "username": "Guest",
             "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-08-01T18:14:28.032Z",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-28T18:20:13.292Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "s1r6nytmo",
+        "username": "Guest",
+        "avatar": "",
+        "content": "sounds too good to be true tbh. anyone actually getting these results?",
+        "timestamp": "2025-07-26T06:20:13.292Z",
+        "likes": 19,
+        "replies": [
+          {
+            "id": "4causy804",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-27T13:15:13.292Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "wavjgxtpv",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-02T06:06:13.292Z",
             "likes": 8,
             "replies": [],
             "isOP": false
@@ -14681,538 +13627,39 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "34q224cmx",
-        "username": "CodeMaster_X",
+        "id": "l1u5lkw95",
+        "username": "Guest",
         "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-08-02T06:20:28.032Z",
-        "likes": 27,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "cowzt3d0j",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using pinterest, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-11T03:22:28.032Z",
-        "likes": 54,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 8
-  },
-  "iot-automation-systems": {
-    "postSlug": "iot-automation-systems",
-    "comments": [
-      {
-        "id": "j8u263bha",
-        "username": "FullStackFred",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using iot, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-08-02T05:08:28.033Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "2alsjiv6j",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-24T16:49:28.033Z",
-        "likes": 36,
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-08T05:08:13.292Z",
+        "likes": 22,
         "replies": [
           {
-            "id": "1ori7c3ok",
-            "username": "DataScienceD",
+            "id": "madbv3wbk",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-29T16:59:28.033Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "sgb3twdt1",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "The learning curve was steep for me too, but totally worth pushing through.",
-            "timestamp": "2025-08-02T08:12:28.033Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "kwjcazrd5",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-08-02T08:45:28.033Z",
-        "likes": 23,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "64g3fwkt4",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-16T03:15:28.033Z",
-        "likes": 11,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "jbfje0hdf",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "How do you handle edge cases? Automation is great until something unexpected happens.",
-        "timestamp": "2025-08-02T17:24:28.033Z",
-        "likes": 31,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "tlq6d1hfl",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-08T08:42:28.033Z",
-        "likes": 5,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 8
-  },
-  "essential-n8n-workflows": {
-    "postSlug": "essential-n8n-workflows",
-    "comments": [
-      {
-        "id": "lax6ybbmp",
-        "username": "InfluencerMike",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-14T00:32:28.033Z",
-        "likes": 53,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "i0k9mz3qc",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-14T07:21:28.033Z",
-        "likes": 7,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "rmwzxrpsq",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-31T18:38:28.033Z",
-        "likes": 16,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 3
-  },
-  "gpt-4-1-vs-claude-sonnet-3-7-comparison": {
-    "postSlug": "gpt-4-1-vs-claude-sonnet-3-7-comparison",
-    "comments": [
-      {
-        "id": "6ofoe7fpr",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "Not trying to be negative but I've been burned by overhyped automation tools before.",
-        "timestamp": "2025-07-20T04:19:28.033Z",
-        "likes": 17,
-        "replies": [
-          {
-            "id": "iihlk8hhi",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-07-31T01:02:28.033Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ir3jccy7d",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-08-01T22:18:28.033Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "yuz8c3rtl",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-        "timestamp": "2025-07-05T03:45:28.033Z",
-        "likes": 28,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "e568f0zyy",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-        "timestamp": "2025-08-03T05:41:28.033Z",
-        "likes": 34,
-        "replies": [
-          {
-            "id": "0r69674wu",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T10:11:28.033Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "bf9pa2cf6",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "This reminds me of when I first discovered Midjourney - mind blown. Now I can't imagine working without AI.",
-        "timestamp": "2025-07-29T13:06:28.034Z",
-        "likes": 34,
-        "replies": [
-          {
-            "id": "vrlsmgp01",
-            "username": "PassiveIncomeJoe",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-30T03:45:28.034Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "coqozddav",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-29T02:25:28.034Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "6epws3yiu",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-28T23:29:28.034Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "wk1x0fau5",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-        "timestamp": "2025-07-23T00:44:28.034Z",
-        "likes": 20,
-        "replies": [
-          {
-            "id": "tegea22l3",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-31T23:02:28.034Z",
-            "likes": 13,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 12
-  },
-  "twitch-stream-automation": {
-    "postSlug": "twitch-stream-automation",
-    "comments": [
-      {
-        "id": "6k55fa6pg",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-25T08:56:28.036Z",
-        "likes": 35,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "4obw7o6lw",
-        "username": "DevLife2024",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-30T17:46:28.036Z",
-        "likes": 51,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "gy6ksohdk",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-24T01:53:28.036Z",
-        "likes": 49,
-        "replies": [
-          {
-            "id": "9hpws4tyg",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-29T00:28:28.036Z",
-            "likes": 10,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "en1taj6ka",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T11:23:28.037Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "vup08hhto",
-            "username": "BuildingMyEmpire",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-29T23:43:28.037Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "w79m1kw6m",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "How do you handle edge cases? Automation is great until something unexpected happens.",
-        "timestamp": "2025-08-02T13:52:28.037Z",
-        "likes": 14,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "b92c23skt",
-        "username": "DataScienceD",
-        "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-26T09:10:28.037Z",
-        "likes": 41,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "fhc27j7rx",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-07T03:27:28.037Z",
-        "likes": 32,
-        "replies": [
-          {
-            "id": "xurm2pq1z",
-            "username": "CloudArchitect",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-16T11:42:28.037Z",
-            "likes": 2,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "kuuv9b7on",
-        "username": "CodeMaster_X",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-07-18T15:42:28.037Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "u88t276ay",
-        "username": "MarketingMaven",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-07T21:07:28.037Z",
-        "likes": 48,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 12
-  },
-  "accounting-automation-tools": {
-    "postSlug": "accounting-automation-tools",
-    "comments": [
-      {
-        "id": "1uzrbogk3",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-25T14:32:28.037Z",
-        "likes": 32,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "w9c53ifyo",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-20T06:48:28.037Z",
-        "likes": 41,
-        "replies": [
-          {
-            "id": "cvn5so4e9",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T22:13:28.037Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "hpusdj7yw",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T19:35:28.037Z",
-            "likes": 15,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "9zyu4yle3",
-            "username": "PytonPro",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T06:52:28.037Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "nov1nkwlq",
-        "username": "AutomationAndy",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-10T23:53:28.037Z",
-        "likes": 29,
-        "replies": [
-          {
-            "id": "3zwnihrqn",
-            "username": "InfluencerMike",
-            "avatar": "",
-            "content": "This is why I love this community. Actual actionable insights, not just fluff.",
-            "timestamp": "2025-07-31T21:12:28.037Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "6j8429mat",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-29T21:24:28.037Z",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-08-01T22:39:13.292Z",
             "likes": 9,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "5qqkotjkb",
-            "username": "FrontendPhil",
+            "id": "0liumjt3n",
+            "username": "Guest",
             "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-30T07:19:28.037Z",
-            "likes": 4,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "ww2vz1tzw",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-26T20:11:28.037Z",
-        "likes": 47,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "uef8wtzwz",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-        "timestamp": "2025-07-17T15:32:28.037Z",
-        "likes": 17,
-        "replies": [
-          {
-            "id": "e6lp78jry",
-            "username": "BackendBeast",
-            "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-30T01:36:28.037Z",
-            "likes": 1,
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-29T12:49:13.292Z",
+            "likes": 7,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "ivr0bmtq9",
-            "username": "TechCreator",
+            "id": "heqk32qnm",
+            "username": "Guest",
             "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-29T23:43:28.037Z",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-29T13:17:13.292Z",
             "likes": 13,
             "replies": [],
             "isOP": false
@@ -15221,50 +13668,50 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "thgw7zihq",
-        "username": "DevLife2024",
+        "id": "w1lyutz18",
+        "username": "Guest",
         "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-08-01T23:13:28.037Z",
-        "likes": 49,
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-07-10T13:26:13.292Z",
+        "likes": 5,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "algeahmzc",
-        "username": "APIGuru",
+        "id": "7pu4wwt56",
+        "username": "Guest",
         "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-06T06:50:28.037Z",
-        "likes": 46,
+        "content": "api integration looks solid but heads up - rate limiting with ai can be a pain",
+        "timestamp": "2025-07-12T14:51:13.292Z",
+        "likes": 31,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "wnyqrggjr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-08-01T01:33:13.292Z",
+        "likes": 36,
         "replies": [
           {
-            "id": "ueese1ln8",
-            "username": "ContentKing_92",
+            "id": "0ztorwqzf",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-29T08:20:28.037Z",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-27T23:43:13.292Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "fq7ujb47o",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-23T18:49:13.292Z",
             "likes": 2,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "27o0eztgq",
-            "username": "GrowthHacker_",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-17T22:56:28.037Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ixs1vhnk5",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-31T15:00:28.037Z",
-            "likes": 12,
             "replies": [],
             "isOP": false
           }
@@ -15274,44 +13721,44 @@ export const blogComments: Record<string, PostComments> = {
     ],
     "commentCount": 18
   },
-  "llama-4-open-source-ai-powerhouse": {
-    "postSlug": "llama-4-open-source-ai-powerhouse",
+  "machine-learning-automation": {
+    "postSlug": "machine-learning-automation",
     "comments": [
       {
-        "id": "5mf328wqo",
-        "username": "TechStack_",
+        "id": "6wmsdpglm",
+        "username": "Guest",
         "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with llama.",
-        "timestamp": "2025-07-27T08:24:28.037Z",
-        "likes": 35,
+        "content": "these demos always look amazing then fall apart in real life",
+        "timestamp": "2025-07-31T16:34:13.292Z",
+        "likes": 28,
         "replies": [
           {
-            "id": "jwbmrfrxj",
-            "username": "MarketingMaven",
+            "id": "l8p0tp3l3",
+            "username": "Guest",
             "avatar": "",
-            "content": "Mind sharing what tools you used for this? Always looking for new solutions.",
-            "timestamp": "2025-07-28T21:07:28.037Z",
-            "likes": 4,
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-28T15:18:13.292Z",
+            "likes": 8,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "fy6bwa4t3",
-            "username": "CloudArchitect",
+            "id": "extq52ko0",
+            "username": "Guest",
             "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-07-30T09:15:28.037Z",
-            "likes": 4,
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T04:42:13.292Z",
+            "likes": 11,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "wxz2gtj6m",
-            "username": "DevLife2024",
+            "id": "sw0paparx",
+            "username": "Guest",
             "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-31T01:48:28.038Z",
-            "likes": 9,
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-30T00:47:13.292Z",
+            "likes": 3,
             "replies": [],
             "isOP": false
           }
@@ -15319,66 +13766,56 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "c4f9w6seg",
-        "username": "GrowthHacker_",
+        "id": "82cf6vmy2",
+        "username": "Guest",
         "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with llama.",
-        "timestamp": "2025-07-11T07:42:28.038Z",
-        "likes": 13,
+        "content": "been using Claude for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-07-06T06:19:13.292Z",
+        "likes": 22,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "vgemzhwqy",
-        "username": "SoloPreneur23",
+        "id": "em3faaqhn",
+        "username": "Guest",
         "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-08-01T12:15:28.038Z",
-        "likes": 24,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "fbgatu1hi",
-        "username": "ServerlessSteve",
-        "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-27T05:54:28.038Z",
-        "likes": 46,
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-21T12:38:13.292Z",
+        "likes": 50,
         "replies": [],
         "isOP": false
       }
     ],
-    "commentCount": 7
+    "commentCount": 6
   },
-  "whatsapp-automation-business": {
-    "postSlug": "whatsapp-automation-business",
+  "midjourney-business-automation": {
+    "postSlug": "midjourney-business-automation",
     "comments": [
       {
-        "id": "2dgard73u",
-        "username": "FullStackFred",
+        "id": "vt1oqiafb",
+        "username": "Guest",
         "avatar": "",
-        "content": "The upfront time investment is significant. How long before you see actual results?",
-        "timestamp": "2025-07-28T23:22:28.038Z",
-        "likes": 20,
+        "content": "webhook setup is annoying. test everything before going live trust me",
+        "timestamp": "2025-07-30T06:24:13.394Z",
+        "likes": 37,
         "replies": [
           {
-            "id": "xuxzhehh7",
-            "username": "StartupSally",
+            "id": "kjtbb815x",
+            "username": "Guest",
             "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-28T05:41:28.038Z",
-            "likes": 9,
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-01T21:35:13.394Z",
+            "likes": 13,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "4wxzn5xys",
-            "username": "ScaleUpStudio",
+            "id": "lua1bwofz",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-27T20:51:28.038Z",
-            "likes": 1,
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-07-27T19:56:13.394Z",
+            "likes": 12,
             "replies": [],
             "isOP": false
           }
@@ -15386,29 +13823,39 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "j6rs932mg",
-        "username": "SoloPreneur23",
+        "id": "9zmvuyc2l",
+        "username": "Guest",
         "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-13T07:23:28.038Z",
-        "likes": 30,
+        "content": "nice tutorial. btw theres an easier way to do triggers on midjourney",
+        "timestamp": "2025-07-08T01:04:13.394Z",
+        "likes": 6,
         "replies": [
           {
-            "id": "vpb50yyw1",
-            "username": "FrontendPhil",
+            "id": "y293ur0o5",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-15T18:48:28.038Z",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-08-01T20:50:13.394Z",
             "likes": 4,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "5cc91muie",
-            "username": "ContentKing_92",
+            "id": "f8hsc58y3",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T22:27:28.038Z",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-30T02:07:13.394Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "vnnlioguv",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-31T16:45:13.394Z",
             "likes": 13,
             "replies": [],
             "isOP": false
@@ -15417,19 +13864,158 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "5yo5kjf3v",
-        "username": "StartupSally",
+        "id": "8y5cs9yac",
+        "username": "Guest",
         "avatar": "",
-        "content": "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-        "timestamp": "2025-07-06T13:55:28.038Z",
-        "likes": 14,
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-19T16:39:13.394Z",
+        "likes": 8,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "nwafm35im",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-08T11:25:13.394Z",
+        "likes": 17,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "7x7louai1",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-09T21:47:13.394Z",
+        "likes": 38,
         "replies": [
           {
-            "id": "yphdw2v9i",
-            "username": "DevOpsDaily",
+            "id": "7qvrujicl",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-31T06:46:28.038Z",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-31T05:02:13.394Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "4du5vh6pf",
+            "username": "Guest",
+            "avatar": "",
+            "content": "100% agree. mindset is harder than the tech stuff",
+            "timestamp": "2025-08-01T14:54:13.394Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "dbddquy7f",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-30T00:11:13.394Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "wx2srzpda",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-08T18:07:13.394Z",
+        "likes": 47,
+        "replies": [
+          {
+            "id": "62pgjl9cc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-08-01T04:47:13.394Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "4y1e8k1oi",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-01T00:15:13.394Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "awxqyhwxw",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-27T22:10:13.394Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "wl1zarwl4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-24T02:39:13.394Z",
+        "likes": 7,
+        "replies": [
+          {
+            "id": "7yqerdrkf",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-01T01:20:13.394Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 19
+  },
+  "database-automation-systems": {
+    "postSlug": "database-automation-systems",
+    "comments": [
+      {
+        "id": "23t2s6d8c",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on database",
+        "timestamp": "2025-07-27T20:14:13.394Z",
+        "likes": 49,
+        "replies": [
+          {
+            "id": "tvtel3dxl",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-08-01T09:03:13.394Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "itqi0ludk",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-31T11:08:13.394Z",
             "likes": 12,
             "replies": [],
             "isOP": false
@@ -15438,50 +14024,30 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "rv5l3g9w6",
-        "username": "APIGuru",
+        "id": "h351vh8nc",
+        "username": "Guest",
         "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-31T04:42:28.038Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "7myjosxw4",
-        "username": "PassiveIncomeJoe",
-        "avatar": "",
-        "content": "Great tutorial! For anyone using whatsapp, there's a simpler way to set up the triggers.",
-        "timestamp": "2025-07-24T06:59:28.038Z",
-        "likes": 6,
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-31T12:28:13.394Z",
+        "likes": 20,
         "replies": [
           {
-            "id": "y5umnv5kb",
-            "username": "CreativeHustle",
+            "id": "8hsegf0ag",
+            "username": "Guest",
             "avatar": "",
-            "content": "Can relate to the struggles. Persistence pays off though.",
-            "timestamp": "2025-07-30T00:51:28.038Z",
-            "likes": 9,
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-27T11:23:13.394Z",
+            "likes": 14,
             "replies": [],
             "isOP": false
           },
           {
-            "id": "2tlj4yw8x",
-            "username": "GrowthHacker_",
+            "id": "1rxu0nmsm",
+            "username": "Guest",
             "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T18:34:28.038Z",
+            "content": "super helpful. got any good resources for this?",
+            "timestamp": "2025-07-27T18:46:13.394Z",
             "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "kzdu4s2k7",
-            "username": "DevLife2024",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-29T10:36:28.038Z",
-            "likes": 5,
             "replies": [],
             "isOP": false
           }
@@ -15489,35 +14055,930 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "lwe9rj2m4",
-        "username": "DigitalNomadSarah",
+        "id": "j3gv4qdr2",
+        "username": "Guest",
         "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-18T16:03:28.038Z",
-        "likes": 40,
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-14T19:42:13.394Z",
+        "likes": 12,
         "replies": [],
         "isOP": false
       }
     ],
-    "commentCount": 14
+    "commentCount": 7
+  },
+  "pinterest-automation-marketing": {
+    "postSlug": "pinterest-automation-marketing",
+    "comments": [
+      {
+        "id": "kaqy0d3wc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-06T16:56:13.394Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "muq6ac704",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-30T12:51:13.394Z",
+        "likes": 28,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "wl2y892aq",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-23T11:14:13.394Z",
+        "likes": 6,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "hdn0ctsbr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-09T00:59:13.394Z",
+        "likes": 45,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "2afi45dz2",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-14T07:11:13.394Z",
+        "likes": 41,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 5
+  },
+  "iot-automation-systems": {
+    "postSlug": "iot-automation-systems",
+    "comments": [
+      {
+        "id": "hmc055vx3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-05T20:48:13.394Z",
+        "likes": 22,
+        "replies": [
+          {
+            "id": "0ncnzjuhc",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-29T10:43:13.394Z",
+            "likes": 4,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "fyvnl1anp",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-23T19:12:13.394Z",
+            "likes": 2,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "3syw5la5s",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-08-01T07:12:13.394Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "pyiwf4kb6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-31T18:31:13.394Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "87ozoa5zm",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-27T00:54:13.394Z",
+        "likes": 11,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "eqpbhcqxb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-08-02T05:00:13.394Z",
+        "likes": 17,
+        "replies": [
+          {
+            "id": "anqzcs1vu",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-09T00:14:13.394Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 8
+  },
+  "essential-n8n-workflows": {
+    "postSlug": "essential-n8n-workflows",
+    "comments": [
+      {
+        "id": "vvwm4q30a",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-11T11:56:13.394Z",
+        "likes": 43,
+        "replies": [
+          {
+            "id": "4dl2mvw12",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-07-28T18:27:13.394Z",
+            "likes": 1,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "v1kg95p39",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-22T17:08:13.394Z",
+        "likes": 20,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "cm2xby76h",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-31T11:45:13.394Z",
+        "likes": 8,
+        "replies": [
+          {
+            "id": "5ejz1cdg6",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-08-01T05:25:13.394Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "vf0rnrqh3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-21T17:33:13.394Z",
+        "likes": 6,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "7bo37kzny",
+        "username": "Guest",
+        "avatar": "",
+        "content": "edge cases always break automation. how do you handle weird stuff?",
+        "timestamp": "2025-07-21T00:42:13.394Z",
+        "likes": 24,
+        "replies": [
+          {
+            "id": "sn2euwqas",
+            "username": "Guest",
+            "avatar": "",
+            "content": "can relate. persistence is key",
+            "timestamp": "2025-07-29T20:14:13.394Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "7gzu11u7y",
+            "username": "Guest",
+            "avatar": "",
+            "content": "thanks for sharing. how long till you saw results?",
+            "timestamp": "2025-08-02T02:32:13.394Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "8mslglg3e",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-18T17:40:13.394Z",
+        "likes": 12,
+        "replies": [
+          {
+            "id": "17ri9ygcs",
+            "username": "Guest",
+            "avatar": "",
+            "content": "tried something similar but hit {specific issue}. any tips?",
+            "timestamp": "2025-07-30T19:11:13.394Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "zta958v7a",
+            "username": "Guest",
+            "avatar": "",
+            "content": "bookmarking this. good stuff here",
+            "timestamp": "2025-07-14T09:34:13.394Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "mnmdonwb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-08-02T14:45:13.394Z",
+        "likes": 6,
+        "replies": [
+          {
+            "id": "ltihsjtfk",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-07-15T14:56:13.394Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "w4mcaxb0t",
+        "username": "Guest",
+        "avatar": "",
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-07-24T05:43:13.394Z",
+        "likes": 36,
+        "replies": [
+          {
+            "id": "fiqaokjfn",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-01T20:00:13.394Z",
+            "likes": 6,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "b3b8rvyp7",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-31T14:13:13.394Z",
+            "likes": 15,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "0h4jm7ty4",
+            "username": "Guest",
+            "avatar": "",
+            "content": "learning curve was brutal for me too but worth it",
+            "timestamp": "2025-07-16T19:01:13.394Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 18
+  },
+  "gpt-4-1-vs-claude-sonnet-3-7-comparison": {
+    "postSlug": "gpt-4-1-vs-claude-sonnet-3-7-comparison",
+    "comments": [
+      {
+        "id": "bnih7t4fb",
+        "username": "Guest",
+        "avatar": "",
+        "content": "tried similar stuff before and it was a disaster. why is this different",
+        "timestamp": "2025-07-30T13:56:13.394Z",
+        "likes": 50,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "hm2mzxun7",
+        "username": "Guest",
+        "avatar": "",
+        "content": "looks cool but is it worth it for small creators? seems like overkill maybe",
+        "timestamp": "2025-07-13T05:57:13.394Z",
+        "likes": 43,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "cz4vrzf7p",
+        "username": "Guest",
+        "avatar": "",
+        "content": "that diagram finally made it click for me. was confused before",
+        "timestamp": "2025-07-22T09:20:13.394Z",
+        "likes": 51,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "tipmlp41g",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-07-20T01:40:13.394Z",
+        "likes": 10,
+        "replies": [
+          {
+            "id": "46p40f0pr",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-27T09:55:13.394Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "up99slap0",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-01T05:19:13.394Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "twitch-stream-automation": {
+    "postSlug": "twitch-stream-automation",
+    "comments": [
+      {
+        "id": "k1nnn28l0",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-27T10:10:13.394Z",
+        "likes": 17,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "kwvhf69ar",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-08-03T08:07:13.394Z",
+        "likes": 40,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "wncvns6kj",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-09T17:40:13.394Z",
+        "likes": 31,
+        "replies": [
+          {
+            "id": "htncfoh1t",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-08-01T11:53:13.394Z",
+            "likes": 11,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "43zc4c6ae",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-31T01:55:13.394Z",
+            "likes": 10,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "gnv74ekor",
+            "username": "Guest",
+            "avatar": "",
+            "content": "what tools did you use? always looking for new stuff",
+            "timestamp": "2025-07-28T08:11:13.394Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "7upu8qcvw",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-09T22:32:13.394Z",
+        "likes": 23,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "7sej259eu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "use env variables for api keys. basic security stuff",
+        "timestamp": "2025-07-29T14:51:13.394Z",
+        "likes": 46,
+        "replies": [
+          {
+            "id": "s4xslghmo",
+            "username": "Guest",
+            "avatar": "",
+            "content": "different way but same results. multiple solutions work",
+            "timestamp": "2025-08-03T00:16:13.394Z",
+            "likes": 7,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "v9tunv8y3",
+        "username": "Guest",
+        "avatar": "",
+        "content": "webhook setup is annoying. test everything before going live trust me",
+        "timestamp": "2025-07-04T12:52:13.394Z",
+        "likes": 34,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
+  },
+  "accounting-automation-tools": {
+    "postSlug": "accounting-automation-tools",
+    "comments": [
+      {
+        "id": "72nqk96tz",
+        "username": "Guest",
+        "avatar": "",
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-22T14:45:13.394Z",
+        "likes": 26,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "4qjll3a5f",
+        "username": "Guest",
+        "avatar": "",
+        "content": "are there legal issues with automated posting? dont wanna get banned",
+        "timestamp": "2025-07-12T07:24:13.394Z",
+        "likes": 22,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "l4nvfi9ex",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-23T02:06:13.394Z",
+        "likes": 43,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 3
+  },
+  "llama-4-open-source-ai-powerhouse": {
+    "postSlug": "llama-4-open-source-ai-powerhouse",
+    "comments": [
+      {
+        "id": "wg9kxqk25",
+        "username": "Guest",
+        "avatar": "",
+        "content": "ai tools are getting insane lately. doing stuff i never thought possible lol",
+        "timestamp": "2025-08-01T12:08:13.394Z",
+        "likes": 36,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "j73jrutef",
+        "username": "Guest",
+        "avatar": "",
+        "content": "those roi numbers seem optimistic... got any real case studies?",
+        "timestamp": "2025-08-02T05:46:13.394Z",
+        "likes": 43,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "lc8tn77zp",
+        "username": "Guest",
+        "avatar": "",
+        "content": "remember when i first found Claude? mind = blown. cant work without it now",
+        "timestamp": "2025-07-17T16:51:13.394Z",
+        "likes": 30,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "aa3x0ysfe",
+        "username": "Guest",
+        "avatar": "",
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-15T04:38:13.394Z",
+        "likes": 28,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "wvppgdnfo",
+        "username": "Guest",
+        "avatar": "",
+        "content": "pro tip: async/await makes debugging way easier if ur having api issues",
+        "timestamp": "2025-07-30T10:14:13.394Z",
+        "likes": 27,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "whxv9y3mc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "anyone tried mixing this with Midjourney? wondering if they work together",
+        "timestamp": "2025-07-22T13:06:13.394Z",
+        "likes": 13,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 6
+  },
+  "whatsapp-automation-business": {
+    "postSlug": "whatsapp-automation-business",
+    "comments": [
+      {
+        "id": "hwgwuvu6u",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-11T21:44:13.394Z",
+        "likes": 33,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "mt7670i1n",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-05T21:26:13.394Z",
+        "likes": 45,
+        "replies": [
+          {
+            "id": "e33zvztgn",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-31T09:42:13.394Z",
+            "likes": 13,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "62twdc9qm",
+        "username": "Guest",
+        "avatar": "",
+        "content": "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+        "timestamp": "2025-07-21T23:25:13.394Z",
+        "likes": 52,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ghpx2tqab",
+        "username": "Guest",
+        "avatar": "",
+        "content": "takes forever to set up. how long till you actually see results?",
+        "timestamp": "2025-07-28T21:26:13.394Z",
+        "likes": 13,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "6vd5ukoct",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-20T13:35:13.394Z",
+        "likes": 51,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "xxg17eem5",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-16T12:21:13.394Z",
+        "likes": 42,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "dftqegqt6",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-12T23:02:13.394Z",
+        "likes": 12,
+        "replies": [
+          {
+            "id": "f5p411a2k",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-31T14:35:13.394Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "vc30vi288",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-31T04:46:13.394Z",
+            "likes": 3,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
   },
   "reddit-automation-marketing": {
     "postSlug": "reddit-automation-marketing",
     "comments": [
       {
-        "id": "phc5nm5pd",
-        "username": "AutomationAndy",
+        "id": "ptoc9nq6e",
+        "username": "Guest",
         "avatar": "",
-        "content": "How do you handle edge cases? Automation is great until something unexpected happens.",
-        "timestamp": "2025-07-25T04:36:28.139Z",
-        "likes": 36,
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-17T23:53:13.496Z",
+        "likes": 37,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "6cfoa0yo4",
+        "username": "Guest",
+        "avatar": "",
+        "content": "webhook setup is annoying. test everything before going live trust me",
+        "timestamp": "2025-07-04T10:34:13.496Z",
+        "likes": 37,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "dhoiokxb9",
+        "username": "Guest",
+        "avatar": "",
+        "content": "code looks good but youll want retry logic for production. just saying",
+        "timestamp": "2025-07-18T22:11:13.496Z",
+        "likes": 32,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "n3zn2gxhr",
+        "username": "Guest",
+        "avatar": "",
+        "content": "been saying this for years. glad people are finally catching on",
+        "timestamp": "2025-07-26T00:01:13.496Z",
+        "likes": 46,
+        "replies": [],
+        "isOP": false
+      }
+    ],
+    "commentCount": 4
+  },
+  "automation-agency-scaling": {
+    "postSlug": "automation-agency-scaling",
+    "comments": [
+      {
+        "id": "0e2khlaeu",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-06T05:20:13.496Z",
+        "likes": 22,
         "replies": [
           {
-            "id": "hr7wgb0jm",
-            "username": "DigitalNomadSarah",
+            "id": "0anw1e8b9",
+            "username": "Guest",
             "avatar": "",
-            "content": "This thread is better than most paid courses I've taken. Amazing insights.",
-            "timestamp": "2025-07-29T00:24:28.139Z",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-31T04:44:13.496Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "6sfe8az6p",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-07-15T22:13:13.496Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "refgpzgh2",
+            "username": "Guest",
+            "avatar": "",
+            "content": "this thread > most paid courses lol",
+            "timestamp": "2025-07-28T01:43:13.496Z",
+            "likes": 12,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      },
+      {
+        "id": "1lev6jult",
+        "username": "Guest",
+        "avatar": "",
+        "content": "what happens when they change the api? seems like constant maintenance",
+        "timestamp": "2025-07-20T12:02:13.496Z",
+        "likes": 42,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "8sswaf62m",
+        "username": "Guest",
+        "avatar": "",
+        "content": "nice tutorial. btw theres an easier way to do triggers on automation",
+        "timestamp": "2025-07-23T02:03:13.496Z",
+        "likes": 7,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "ehbm7kxc8",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-18T21:26:13.496Z",
+        "likes": 50,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "9h3pgv2wf",
+        "username": "Guest",
+        "avatar": "",
+        "content": "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+        "timestamp": "2025-07-22T00:33:13.496Z",
+        "likes": 20,
+        "replies": [
+          {
+            "id": "27bjr32te",
+            "username": "Guest",
+            "avatar": "",
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-01T03:57:13.496Z",
+            "likes": 9,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "lrjrq00rb",
+            "username": "Guest",
+            "avatar": "",
+            "content": "good point about {topic}. people miss this",
+            "timestamp": "2025-07-22T23:23:13.496Z",
+            "likes": 14,
+            "replies": [],
+            "isOP": false
+          }
+        ],
+        "isOP": false
+      }
+    ],
+    "commentCount": 10
+  },
+  "facebook-ads-automation": {
+    "postSlug": "facebook-ads-automation",
+    "comments": [
+      {
+        "id": "8ggqfdxmk",
+        "username": "Guest",
+        "avatar": "",
+        "content": "wish i had this guide when i started. would've saved me months of screwing around",
+        "timestamp": "2025-07-31T10:39:13.496Z",
+        "likes": 38,
+        "replies": [],
+        "isOP": false
+      },
+      {
+        "id": "t2yrlcuwc",
+        "username": "Guest",
+        "avatar": "",
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-13T04:35:13.496Z",
+        "likes": 49,
+        "replies": [
+          {
+            "id": "qm90asv1n",
+            "username": "Guest",
+            "avatar": "",
+            "content": "exactly! ive seen this work too",
+            "timestamp": "2025-08-01T23:02:13.496Z",
+            "likes": 8,
+            "replies": [],
+            "isOP": false
+          },
+          {
+            "id": "ds628lsas",
+            "username": "Guest",
+            "avatar": "",
+            "content": "appreciate the real example. theory vs practice is so different",
+            "timestamp": "2025-07-30T18:36:13.496Z",
             "likes": 10,
             "replies": [],
             "isOP": false
@@ -15526,317 +14987,51 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       },
       {
-        "id": "iw8k7k1vt",
-        "username": "DigitalNomadSarah",
+        "id": "00hasudke",
+        "username": "Guest",
         "avatar": "",
-        "content": "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-        "timestamp": "2025-07-21T20:12:28.139Z",
-        "likes": 29,
+        "content": "make sure you add error handling. learned that lesson the hard way when everything broke",
+        "timestamp": "2025-07-04T15:59:13.496Z",
+        "likes": 26,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "3c53s6s0q",
-        "username": "GrowthHacker_",
+        "id": "4xa264spk",
+        "username": "Guest",
         "avatar": "",
-        "content": "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-        "timestamp": "2025-07-04T17:48:28.139Z",
-        "likes": 28,
+        "content": "built something like this for my side hustle. been running for 8 months no issues",
+        "timestamp": "2025-08-02T00:31:13.496Z",
+        "likes": 10,
         "replies": [
           {
-            "id": "up2lj6v6v",
-            "username": "ReactDev_",
+            "id": "jqdjg1vdx",
+            "username": "Guest",
             "avatar": "",
-            "content": "Bookmarking this thread. So much value in these comments.",
-            "timestamp": "2025-08-01T03:07:28.139Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "ldb57jdrc",
-            "username": "ContentKing_92",
-            "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-31T18:20:28.139Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "v2uxsfgcz",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-23T17:04:28.139Z",
-        "likes": 8,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "yx640tg4d",
-        "username": "ContentKing_92",
-        "avatar": "",
-        "content": "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-        "timestamp": "2025-07-28T21:44:28.139Z",
-        "likes": 34,
-        "replies": [
-          {
-            "id": "4bj53k8ef",
-            "username": "SoloPreneur23",
-            "avatar": "",
-            "content": "Appreciate the real-world example. Theory is one thing, implementation is another.",
-            "timestamp": "2025-07-27T15:53:28.139Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "4gueka973",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-04T15:26:28.139Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "zafw0ua6f",
-            "username": "ScaleUpStudio",
-            "avatar": "",
-            "content": "Thanks for sharing your experience. How long did it take to see results?",
-            "timestamp": "2025-07-30T23:33:28.139Z",
-            "likes": 12,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "f22ws8t0b",
-        "username": "CreatorCodex",
-        "avatar": "",
-        "content": "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-        "timestamp": "2025-07-31T14:06:28.139Z",
-        "likes": 32,
-        "replies": [
-          {
-            "id": "pfg0yuczj",
-            "username": "TechStack_",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-29T13:06:28.139Z",
-            "likes": 7,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "y8o34alfk",
-            "username": "DigitalNomadSarah",
-            "avatar": "",
-            "content": "Exactly! I've seen this work in practice and the results speak for themselves.",
-            "timestamp": "2025-08-01T16:03:28.139Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      }
-    ],
-    "commentCount": 14
-  },
-  "automation-agency-scaling": {
-    "postSlug": "automation-agency-scaling",
-    "comments": [
-      {
-        "id": "1gwetdx7q",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-24T19:09:28.139Z",
-        "likes": 40,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "wry8jfnkp",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-30T12:44:28.139Z",
-        "likes": 20,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "134g59zn0",
-        "username": "TechCreator",
-        "avatar": "",
-        "content": "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-        "timestamp": "2025-07-12T16:33:28.139Z",
-        "likes": 5,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "38hn3tck3",
-        "username": "StartupSally",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-26T09:36:28.139Z",
-        "likes": 44,
-        "replies": [
-          {
-            "id": "gi2eggq7g",
-            "username": "DevOpsDaily",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-29T11:26:28.139Z",
+            "content": "this is why i love reddit. actual useful info",
+            "timestamp": "2025-07-30T14:27:13.496Z",
             "likes": 5,
             "replies": [],
             "isOP": false
-          },
-          {
-            "id": "fgg6taw4u",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-08-01T17:02:28.139Z",
-            "likes": 9,
-            "replies": [],
-            "isOP": false
           }
         ],
         "isOP": false
       },
       {
-        "id": "1vz1fncoh",
-        "username": "MobileFirst",
+        "id": "pic379jqw",
+        "username": "Guest",
         "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-17T01:15:28.139Z",
-        "likes": 9,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "q7rtp146j",
-        "username": "BuildingMyEmpire",
-        "avatar": "",
-        "content": "Pro tip: use environment variables for all your API keys. Security 101.",
-        "timestamp": "2025-07-25T21:53:28.139Z",
-        "likes": 50,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "r4d3wxfw2",
-        "username": "GrowthHacker_",
-        "avatar": "",
-        "content": "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-        "timestamp": "2025-08-02T06:07:28.139Z",
-        "likes": 47,
+        "content": "my biggest fear is losing the human touch. how do you keep it authentic?",
+        "timestamp": "2025-07-27T09:44:13.496Z",
+        "likes": 14,
         "replies": [
           {
-            "id": "ymnabjqyo",
-            "username": "MarketingMaven",
+            "id": "fjpvoxdk0",
+            "username": "Guest",
             "avatar": "",
-            "content": "100% agree. The mindset shift is often harder than the technical implementation.",
-            "timestamp": "2025-07-28T19:40:28.139Z",
-            "likes": 1,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "t8cgq7hhp",
-            "username": "CreatorLife",
-            "avatar": "",
-            "content": "This is super helpful. Do you have any resources you'd recommend for learning more?",
-            "timestamp": "2025-07-30T04:56:28.139Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "sjtlruzyx",
-            "username": "FullStackFred",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-28T23:17:28.139Z",
-            "likes": 3,
-            "replies": [],
-            "isOP": false
-          }
-        ],
-        "isOP": false
-      },
-      {
-        "id": "r2905d4gw",
-        "username": "BackendBeast",
-        "avatar": "",
-        "content": "The code examples are clean but you'll want to add retry logic for production use.",
-        "timestamp": "2025-07-23T13:48:28.139Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      }
-    ],
-    "commentCount": 13
-  },
-  "facebook-ads-automation": {
-    "postSlug": "facebook-ads-automation",
-    "comments": [
-      {
-        "id": "7p98wjj1f",
-        "username": "TechStack_",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-29T10:51:28.140Z",
-        "likes": 18,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "lvbnkqoo4",
-        "username": "ScaleUpStudio",
-        "avatar": "",
-        "content": "Been preaching automation for years. Finally seeing more creators catch on to the potential.",
-        "timestamp": "2025-07-05T00:54:28.140Z",
-        "likes": 46,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "wsl6qujds",
-        "username": "CreatorLife",
-        "avatar": "",
-        "content": "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-        "timestamp": "2025-07-15T21:20:28.140Z",
-        "likes": 23,
-        "replies": [
-          {
-            "id": "o07fbl4ma",
-            "username": "MLEngineer99",
-            "avatar": "",
-            "content": "Interesting perspective. Have you considered {alternative approach}?",
-            "timestamp": "2025-07-30T07:23:28.140Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "vtdz2k3m7",
-            "username": "AutomationAndy",
-            "avatar": "",
-            "content": "Great point about {topic}. Most people overlook this crucial detail.",
-            "timestamp": "2025-07-31T05:01:28.140Z",
-            "likes": 3,
+            "content": "interesting. did you try {alternative approach}?",
+            "timestamp": "2025-08-01T23:12:13.496Z",
+            "likes": 13,
             "replies": [],
             "isOP": false
           }
@@ -15844,124 +15039,53 @@ export const blogComments: Record<string, PostComments> = {
         "isOP": false
       }
     ],
-    "commentCount": 5
+    "commentCount": 9
   },
   "ai-content-income": {
     "postSlug": "ai-content-income",
     "comments": [
       {
-        "id": "9kfsf9m1z",
-        "username": "FrontendPhil",
+        "id": "91ppiv4f5",
+        "username": "Guest",
         "avatar": "",
-        "content": "How do you handle the ethical concerns around AI-generated content? Struggling with this.",
-        "timestamp": "2025-07-17T15:02:28.140Z",
-        "likes": 36,
+        "content": "remember when i first found RunwayML? mind = blown. cant work without it now",
+        "timestamp": "2025-07-09T17:31:13.496Z",
+        "likes": 43,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "nyvc9p55d",
-        "username": "TechCreator",
+        "id": "6mm6gl9ta",
+        "username": "Guest",
         "avatar": "",
-        "content": "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-        "timestamp": "2025-07-07T14:42:28.140Z",
-        "likes": 32,
+        "content": "was super skeptical about ai replacing humans but... yeah this stuff actually works",
+        "timestamp": "2025-07-27T13:00:13.496Z",
+        "likes": 48,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "q5m0vjfhf",
-        "username": "FrontendPhil",
+        "id": "ms7yl0nsu",
+        "username": "Guest",
         "avatar": "",
-        "content": "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-        "timestamp": "2025-07-20T13:57:28.140Z",
-        "likes": 37,
+        "content": "been using Claude for like 3 months now and honestly its pretty sick. saves me so much time",
+        "timestamp": "2025-07-04T16:22:13.496Z",
+        "likes": 48,
         "replies": [],
         "isOP": false
       },
       {
-        "id": "2sj6edvnc",
-        "username": "PassiveIncomeJoe",
+        "id": "zt1wfe14i",
+        "username": "Guest",
         "avatar": "",
-        "content": "The API integration section is solid. Though I'd add that rate limiting can be tricky with ai.",
-        "timestamp": "2025-07-29T04:09:28.140Z",
-        "likes": 35,
+        "content": "remember when i first found Claude? mind = blown. cant work without it now",
+        "timestamp": "2025-07-23T01:22:13.496Z",
+        "likes": 51,
         "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "v5ziz2tb9",
-        "username": "MLEngineer99",
-        "avatar": "",
-        "content": "Been using Midjourney for my content creation and it's a total game changer. The time savings alone justify the cost.",
-        "timestamp": "2025-07-14T18:27:28.140Z",
-        "likes": 14,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "jxldf3s6w",
-        "username": "FrontendPhil",
-        "avatar": "",
-        "content": "Has anyone tried combining this with ChatGPT? Wondering if there's synergy there.",
-        "timestamp": "2025-07-11T04:17:28.140Z",
-        "likes": 34,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "flqsf6vqg",
-        "username": "APIGuru",
-        "avatar": "",
-        "content": "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-        "timestamp": "2025-07-26T15:33:28.140Z",
-        "likes": 54,
-        "replies": [],
-        "isOP": false
-      },
-      {
-        "id": "jsczs25c5",
-        "username": "DevOpsDaily",
-        "avatar": "",
-        "content": "The promised ROI seems optimistic. Would love to see some actual case studies.",
-        "timestamp": "2025-07-15T14:28:28.140Z",
-        "likes": 17,
-        "replies": [
-          {
-            "id": "0qtr9t9mj",
-            "username": "StartupSally",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-29T20:20:28.140Z",
-            "likes": 11,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "axqmjkonq",
-            "username": "CreativeHustle",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-28T03:06:28.140Z",
-            "likes": 14,
-            "replies": [],
-            "isOP": false
-          },
-          {
-            "id": "on6kw4u81",
-            "username": "MobileFirst",
-            "avatar": "",
-            "content": "Different approach but similar results. There's definitely multiple paths to success.",
-            "timestamp": "2025-07-30T20:42:28.140Z",
-            "likes": 8,
-            "replies": [],
-            "isOP": false
-          }
-        ],
         "isOP": false
       }
     ],
-    "commentCount": 11
+    "commentCount": 4
   }
 };
 

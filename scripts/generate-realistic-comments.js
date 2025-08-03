@@ -3,174 +3,152 @@
 const fs = require('fs');
 const path = require('path');
 
-// Realistic usernames for different types of users
-const creatorUsernames = [
-  'ContentKing_92', 'CreatorLife', 'DigitalNomadSarah', 'BuildingMyEmpire', 'SoloPreneur23',
-  'CreativeHustle', 'GrowthHacker_', 'MarketingMaven', 'TechCreator', 'ScaleUpStudio',
-  'AutomationAndy', 'PassiveIncomeJoe', 'CreatorCodex', 'InfluencerMike', 'StartupSally'
-];
+// All users are "Guest" by default - real users can submit comments for approval
+const defaultUsername = 'Guest';
 
-const techUsernames = [
-  'DevLife2024', 'CodeMaster_X', 'APIGuru', 'FullStackFred', 'ReactDev_', 'PytonPro',
-  'CloudArchitect', 'DataScienceD', 'MLEngineer99', 'DevOpsDaily', 'TechStack_',
-  'BackendBeast', 'FrontendPhil', 'MobileFirst', 'ServerlessSteve'
-];
-
-const businessUsernames = [
-  'EntrepreneurE', 'BusinessBuilder', 'StartupSucc3ss', 'GrowthExpert', 'RevenueOptimizer',
-  'ScalingUp_', 'BusinessMinded', 'ROI_Focused', 'StrategySteve', 'ProfitMaximizer',
-  'DigitalBiz', 'OnlineEmpire', 'BusinessHacks', 'MonetizeThis', 'SaaSFounder'
-];
-
-const generalUsernames = [
-  'DigitalDreamer', 'FutureBuilder', 'TechEnthusiast', 'InnovationSeeker', 'SuccessPath',
-  'GrowthMindset', 'LearningDaily', 'NextLevel_', 'OnTheGrind', 'HustleHard24',
-  'GoalGetter_', 'MindsetMatters', 'SuccessDriven', 'AmbitionDaily', 'WinningFormula'
-];
-
-// Comment templates by category and type
+// Comment templates by category and type - Reddit/casual style
 const commentTemplates = {
   ai: {
     experience: [
-      "Been using {tool} for my content creation and it's a total game changer. The time savings alone justify the cost.",
-      "Started implementing AI workflows 6 months ago and my productivity has literally 3x'd. This article nails the key points.",
-      "Anyone else finding that AI tools are getting scary good? I'm automating things I never thought possible.",
-      "This reminds me of when I first discovered {tool} - mind blown. Now I can't imagine working without AI.",
-      "Real talk - I was skeptical about AI replacing creative work, but after trying these methods, I'm a convert."
+      "been using {tool} for like 3 months now and honestly its pretty sick. saves me so much time",
+      "tried this workflow thing and ngl my productivity went through the roof. worth checking out",
+      "ai tools are getting insane lately. doing stuff i never thought possible lol",
+      "remember when i first found {tool}? mind = blown. cant work without it now",
+      "was super skeptical about ai replacing humans but... yeah this stuff actually works"
     ],
     question: [
-      "Has anyone tried combining this with {tool}? Wondering if there's synergy there.",
-      "Quick question - what's the learning curve like for someone with zero AI experience?",
-      "This looks amazing but is it worth it for smaller creators? Seems like it might be overkill.",
-      "Which AI tool would you recommend starting with? The options are overwhelming tbh.",
-      "How do you handle the ethical concerns around AI-generated content? Struggling with this."
+      "anyone tried mixing this with {tool}? wondering if they work together",
+      "whats the learning curve like? complete noob here",
+      "looks cool but is it worth it for small creators? seems like overkill maybe",
+      "which tool should i start with? so many options its overwhelming af",
+      "how do yall handle the whole ai ethics thing? kinda struggling with it"
     ],
     technical: [
-      "The API integration section is solid. Though I'd add that rate limiting can be tricky with {platform}.",
-      "Pro tip: if you're getting errors with the setup, make sure your environment variables are properly configured.",
-      "Great breakdown of the technical implementation. One thing to watch out for is token limits.",
-      "For anyone struggling with the API calls, I found using async/await made debugging much easier.",
-      "The architecture diagram really helped me understand how all the pieces fit together."
+      "api integration looks solid but heads up - rate limiting with {platform} can be a pain",
+      "if ur getting setup errors check ur env variables first. learned that the hard way",
+      "decent breakdown but watch out for token limits. they sneak up on you",
+      "pro tip: async/await makes debugging way easier if ur having api issues",
+      "that diagram finally made it click for me. was confused before"
     ],
     skeptical: [
-      "Sounds too good to be true. Has anyone actually gotten these results consistently?",
-      "I've tried similar approaches before and hit major roadblocks. What makes this different?",
-      "The promised ROI seems optimistic. Would love to see some actual case studies.",
-      "Not trying to be negative but I've been burned by overhyped automation tools before.",
-      "These AI solutions always look great in demos but struggle in real-world scenarios."
+      "sounds too good to be true tbh. anyone actually getting these results?",
+      "tried similar stuff before and it was a disaster. why is this different",
+      "those roi numbers seem optimistic... got any real case studies?",
+      "not trying to be negative but ive been burned by hyped tools before",
+      "these demos always look amazing then fall apart in real life"
     ]
   },
   automation: {
     experience: [
-      "Built something similar for my agency and it's been running smoothly for 8 months. Total lifesaver.",
-      "This automation saved me 15+ hours per week. Now I can focus on actual strategy instead of busywork.",
-      "Started with manual processes, then gradually automated. This guide would have saved me months of trial and error.",
-      "The ROI on automation is insane once you get it dialed in. Initial setup time is worth it 100%.",
-      "Been preaching automation for years. Finally seeing more creators catch on to the potential."
+      "built something like this for my side hustle. been running for 8 months no issues",
+      "this saved me like 15 hrs a week lol. finally can focus on actual work instead of boring stuff",
+      "wish i had this guide when i started. would've saved me months of screwing around",
+      "roi on automation is nuts once you figure it out. setup sucks but totally worth it",
+      "been saying this for years. glad people are finally catching on"
     ],
     technical: [
-      "One thing to add - make sure you have proper error handling in place. Learned this the hard way.",
-      "The webhook configuration can be tricky. I recommend testing thoroughly before going live.",
-      "Great tutorial! For anyone using {platform}, there's a simpler way to set up the triggers.",
-      "The code examples are clean but you'll want to add retry logic for production use.",
-      "Pro tip: use environment variables for all your API keys. Security 101."
+      "make sure you add error handling. learned that lesson the hard way when everything broke",
+      "webhook setup is annoying. test everything before going live trust me",
+      "nice tutorial. btw theres an easier way to do triggers on {platform}",
+      "code looks good but youll want retry logic for production. just saying",
+      "use env variables for api keys. basic security stuff"
     ],
     concern: [
-      "My biggest worry with automation is losing that personal touch. How do you balance efficiency with authenticity?",
-      "What happens when the platform changes their API? Seems like a lot of maintenance overhead.",
-      "Are there legal considerations around automated posting/engagement? Don't want to violate ToS.",
-      "How do you handle edge cases? Automation is great until something unexpected happens.",
-      "The upfront time investment is significant. How long before you see actual results?"
+      "my biggest fear is losing the human touch. how do you keep it authentic?",
+      "what happens when they change the api? seems like constant maintenance",
+      "are there legal issues with automated posting? dont wanna get banned",
+      "edge cases always break automation. how do you handle weird stuff?",
+      "takes forever to set up. how long till you actually see results?"
     ]
   },
   business: {
     experience: [
-      "Implemented this strategy in my SaaS and saw 40% revenue increase in Q3. The framework is solid.",
-      "Been running my online business for 5 years and wish I had this roadmap from day one.",
-      "These principles work. Applied them to my digital product launch and exceeded projections by 200%.",
-      "Started following this approach 6 months ago and finally hit my first $10k month. Game changer.",
-      "The mindset shift around pricing was huge for me. Stopped undervaluing my work immediately."
+      "tried this on my saas and revenue went up 40% last quarter. actually works",
+      "been doing online biz for 5 years. wish i had this from the start",
+      "used these ideas for my product launch. made way more than expected",
+      "started doing this 6 months ago and finally hit 10k/month. crazy",
+      "the pricing mindset shift was huge. stopped undercharging immediately"
     ],
     strategy: [
-      "The key insight about customer lifetime value really resonated. Most people focus too much on acquisition cost.",
-      "Love the emphasis on systems over hustle. Sustainable growth beats burnout every time.",
-      "This aligns perfectly with what I learned from {book/course}. Consistency compounds.",
-      "The data-driven approach is refreshing. Too many 'gurus' rely on anecdotes instead of metrics.",
-      "Finally someone talking about the unglamorous side of building a business. Reality check needed."
+      "the ltv thing really hit me. most people just focus on getting customers",
+      "love that its about systems not grinding 24/7. burnout is real",
+      "this matches what i learned from {book/course}. consistency wins",
+      "finally someone using actual data instead of just stories",
+      "glad someone talks about the boring parts. building a business sucks sometimes"
     ],
     question: [
-      "How do you scale this approach for service-based businesses vs product-based?",
-      "What metrics should I track in the early stages? Feeling overwhelmed by all the KPIs.",
-      "This seems resource-intensive. Any advice for solo entrepreneurs just starting out?",
-      "How long did it take you to see meaningful results with this strategy?",
-      "What's the biggest mistake you see people make when implementing this?"
+      "how does this work for services vs products? seems different",
+      "what should i track early on? theres so many metrics its confusing",
+      "seems like it needs a lot of resources. what about solo people?",
+      "how long till you saw real results?",
+      "whats the biggest mistake people make with this?"
     ]
   },
   marketing: {
     experience: [
-      "Used this exact funnel structure for my course launch and converted at 12%. These principles work.",
-      "Been in marketing for 10 years and this is spot on. The psychology behind it is everything.",
-      "Tried this approach across 3 different niches and got consistent results. Well researched.",
-      "The content calendar framework saved my sanity. Finally have a system that works.",
-      "Applied these tactics to my client's campaign and saw 300% improvement in engagement."
+      "used this funnel for my course launch. got 12% conversion which is sick",
+      "been doing marketing for 10 years. this nails the psychology part",
+      "tried this on 3 different niches. worked every time",
+      "the content calendar thing saved my life. finally organized",
+      "used these tactics for a client. engagement went up 300%"
     ],
     practical: [
-      "For anyone implementing this - start small and test. Don't try to change everything at once.",
-      "The email sequence templates are gold. Saved me hours of copywriting time.",
-      "Pro tip: the timing of your posts matters more than most people realize. Test different windows.",
-      "A/B testing is crucial here. What works for one audience might flop for another.",
-      "Don't sleep on the organic strategies. Paid ads are great but organic builds long-term value."
+      "start small with this stuff. dont try to change everything at once",
+      "those email templates are amazing. saved me hours of writing",
+      "timing matters way more than people think. test different times",
+      "a/b test everything. what works for one audience fails for another",
+      "organic > paid ads for long term. ads are good but organic lasts"
     ],
     platforms: [
-      "Does this work equally well across all platforms? Instagram vs LinkedIn have such different dynamics.",
-      "TikTok's algorithm seems to change weekly. How do you adapt these strategies?",
-      "Anyone tried this on newer platforms like {emerging platform}? Wondering about first-mover advantage.",
-      "The platform-specific tips are helpful. Each one really does require a different approach.",
-      "Cross-platform consistency is harder than it looks. This framework helps streamline that."
+      "does this work on all platforms? instagram and linkedin are so different",
+      "tiktok algorithm changes every week lol. how do you keep up?",
+      "anyone try this on newer platforms? thinking about first mover advantage",
+      "platform specific tips are helpful. each one needs different approach",
+      "cross platform stuff is hard. this helps keep it consistent"
     ]
   },
   development: {
     technical: [
-      "Clean code examples. The error handling approach is particularly well thought out.",
-      "Been working with this stack for 2 years and these optimizations are legit. Performance gains are noticeable.",
-      "The architecture decisions make sense for scale. Would love to see load testing results.",
-      "Great use of design patterns. The separation of concerns is textbook perfect.",
-      "For production deployment, you'll want to add monitoring and logging. Otherwise solid foundation."
+      "clean code examples. error handling looks good",
+      "been using this stack for 2 years. these optimizations are solid",
+      "architecture makes sense for scaling. would love to see load tests",
+      "nice design patterns. separation of concerns is on point",
+      "add monitoring and logging for production. otherwise looks good"
     ],
     learning: [
-      "As someone new to {technology}, this breakdown was exactly what I needed. Thank you!",
-      "The step-by-step approach is perfect for intermediate developers. Not too basic, not overwhelming.",
-      "Coming from {other tech}, the mental model shift took some time but this guide helps bridge that gap.",
-      "Finally understand the why behind these patterns. Context makes all the difference.",
-      "This filled in gaps I didn't even know I had. The fundamentals are crucial."
+      "new to {technology} and this breakdown helped a lot. thanks",
+      "perfect for intermediate devs. not too basic but not overwhelming",
+      "coming from {other tech} and this helped bridge the gap",
+      "finally understand why we do these patterns. context helps",
+      "this filled gaps i didnt know i had. fundamentals matter"
     ],
     practical: [
-      "Implemented this in our production app last week. Deployment was smooth and performance improved.",
-      "The testing strategy section is gold. Too many developers skip this critical step.",
-      "Security considerations are spot on. See too many projects that ignore these basics.",
-      "Documentation quality matters more than most realize. This example sets a good standard.",
-      "The migration path from legacy systems is well thought out. Incremental changes > big bang."
+      "deployed this last week. worked smooth and performance improved",
+      "testing section is gold. too many devs skip testing",
+      "security stuff is important. see too many projects ignore basics",
+      "good docs matter more than people think. nice example",
+      "migration path is smart. incremental changes beat big rewrites"
     ]
   }
 };
 
-// Reply templates for threaded conversations
+// Reply templates for threaded conversations - casual Reddit style
 const replyTemplates = [
-  "Exactly! I've seen this work in practice and the results speak for themselves.",
-  "Interesting perspective. Have you considered {alternative approach}?",
-  "Thanks for sharing your experience. How long did it take to see results?",
-  "This is super helpful. Do you have any resources you'd recommend for learning more?",
-  "I tried something similar but struggled with {specific issue}. Any tips?",
-  "Great point about {topic}. Most people overlook this crucial detail.",
-  "Appreciate the real-world example. Theory is one thing, implementation is another.",
-  "100% agree. The mindset shift is often harder than the technical implementation.",
-  "This is why I love this community. Actual actionable insights, not just fluff.",
-  "Bookmarking this thread. So much value in these comments.",
-  "Different approach but similar results. There's definitely multiple paths to success.",
-  "The learning curve was steep for me too, but totally worth pushing through.",
-  "Mind sharing what tools you used for this? Always looking for new solutions.",
-  "This thread is better than most paid courses I've taken. Amazing insights.",
-  "Can relate to the struggles. Persistence pays off though."
+  "exactly! ive seen this work too",
+  "interesting. did you try {alternative approach}?",
+  "thanks for sharing. how long till you saw results?",
+  "super helpful. got any good resources for this?",
+  "tried something similar but hit {specific issue}. any tips?",
+  "good point about {topic}. people miss this",
+  "appreciate the real example. theory vs practice is so different",
+  "100% agree. mindset is harder than the tech stuff",
+  "this is why i love reddit. actual useful info",
+  "bookmarking this. good stuff here",
+  "different way but same results. multiple solutions work",
+  "learning curve was brutal for me too but worth it",
+  "what tools did you use? always looking for new stuff",
+  "this thread > most paid courses lol",
+  "can relate. persistence is key"
 ];
 
 // Get blog posts from data file
@@ -211,20 +189,9 @@ function getCommentCategory(slug, title) {
   return 'business';
 }
 
-// Get appropriate username pool based on category
+// All users are "Guest" by default
 function getUsernamePool(category) {
-  switch (category) {
-    case 'ai':
-    case 'automation':
-    case 'development':
-      return [...techUsernames, ...creatorUsernames];
-    case 'business':
-      return [...businessUsernames, ...creatorUsernames];
-    case 'marketing':
-      return [...creatorUsernames, ...businessUsernames];
-    default:
-      return generalUsernames;
-  }
+  return [defaultUsername];
 }
 
 // Generate realistic timestamp
