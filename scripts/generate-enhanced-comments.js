@@ -66,57 +66,161 @@ const personalityTypes = {
   }
 };
 
-// Enhanced topic-specific templates that use post context
+// Enhanced topic-specific templates that use detailed post context
 const contextualTemplates = {
+  // Content creation and social media posts - highly specific
+  content: {
+    professional: [
+      "The {specificTactic} methodology outlined here demonstrates advanced understanding of {specificPlatform} content optimization strategies.",
+      "This {specificStrategy} framework for achieving {specificGoal} follows proven content marketing principles.",
+      "The {specificNumber} {specificTimeframe} approach to {specificGoal} is well-researched and actionable.",
+      "From a content strategy perspective, this {specificTactic} implementation addresses key engagement metrics."
+    ],
+    casual_proper: [
+      "Been trying to crack {specificPlatform} {specificGoal} for months and this {specificStrategy} is exactly what I needed!",
+      "This {specificTactic} for getting {specificNumber} {specificGoal} actually works! Tried it last week 📈",
+      "Love how you break down {specificPlatform} {specificStrategy} without the usual fluff. Super practical!",
+      "Finally someone who gets real {specificPlatform} growth instead of fake follower tactics 💪"
+    ],
+    internet_native: [
+      "yooo this {specificTactic} for {specificPlatform} {specificGoal} is absolutely mental 🔥",
+      "finally!! been doing {specificPlatform} wrong this whole time... this {specificStrategy} hits different",
+      "tried this {specificNumber} {specificTimeframe} method and results are insane ngl",
+      "{specificPlatform} algorithm bout to get destroyed with this {specificTactic} lmao"
+    ],
+    emotional: [
+      "THIS {specificStrategy} is EXACTLY what I needed for {specificPlatform} {specificGoal}!",
+      "I'm literally crying because this {specificTactic} just solved my {specificPlatform} struggles!",
+      "FINALLY someone who understands real {specificPlatform} growth! This is life-changing!",
+      "This {specificNumber} {specificTimeframe} approach gives me hope I can actually make it!"
+    ],
+    technical_expert: [
+      "Solid {specificTactic} approach. Have you tested this {specificStrategy} across different {specificPlatform} niches?",
+      "The {specificGoal} optimization here is sound. Are you tracking engagement rates post-implementation?",
+      "Nice {specificPlatform} methodology. Consider A/B testing the {specificTactic} for better conversion data.",
+      "Interesting {specificStrategy}. What's your sample size for the {specificNumber} {specificTimeframe} results?"
+    ],
+    skeptical: [
+      "These {specificNumber} {specificGoal} claims seem high. What's the actual success rate for most people?",
+      "How sustainable is this {specificTactic} when {specificPlatform} changes their algorithm?",
+      "The {specificStrategy} looks good, but what about content saturation and competition?",
+      "Have you tested this {specificPlatform} approach with different account sizes and niches?"
+    ],
+    enthusiastic: [
+      "OMG! 🚀 This {specificTactic} for {specificNumber} {specificGoal} is INCREDIBLE!",
+      "YESSS! 🙌 Finally cracked {specificPlatform} {specificStrategy}! Already seeing results!",
+      "GAME CHANGER! 💯 This {specificNumber} {specificTimeframe} method is exactly what I needed!",
+      "AMAZING! ⚡ {specificPlatform} {specificGoal} here I come! Implementing right now!"
+    ],
+    brief: [
+      "{specificTactic} works",
+      "solid {specificPlatform} advice",
+      "helpful {specificStrategy}",
+      "this actually works"
+    ]
+  },
+
+  // Growth-focused posts - specific to platform and numbers
+  growth: {
+    professional: [
+      "The {specificStrategy} methodology for achieving {specificNumber} {specificGoal} demonstrates sophisticated understanding of {specificPlatform} growth dynamics.",
+      "This {specificTactic} framework addresses the core challenges in scaling {specificPlatform} presence effectively.",
+      "The systematic approach to {specificGoal} optimization outlined here follows proven growth marketing principles.",
+      "From a growth perspective, this {specificStrategy} implementation would be valuable for sustainable {specificPlatform} expansion."
+    ],
+    casual_proper: [
+      "Been stuck at the same follower count on {specificPlatform} and this {specificStrategy} gives me hope!",
+      "This {specificNumber} {specificTimeframe} {specificTactic} breakdown is gold! Way better than paid courses 💎",
+      "Love how realistic this {specificGoal} approach is. Not promising overnight success like others.",
+      "Finally a {specificPlatform} growth guide that doesn't involve buying fake followers! 🙌"
+    ],
+    internet_native: [
+      "growth game about to be unmatched with this {specificStrategy} fr 📈",
+      "been grinding {specificPlatform} for months and this {specificTactic} is the missing piece",
+      "yo this {specificNumber} {specificTimeframe} method actually works... follower count going brrrr",
+      "{specificPlatform} algorithm bout to get absolutely destroyed lol"
+    ],
+    emotional: [
+      "This {specificStrategy} is EXACTLY what I needed to break through my {specificPlatform} plateau!",
+      "I'm so grateful you shared this {specificTactic}! Been struggling with {specificGoal} forever!",
+      "FINALLY someone who shares real {specificNumber} {specificTimeframe} results! This gives me hope!",
+      "This {specificPlatform} {specificStrategy} is going to change everything for my content!"
+    ],
+    technical_expert: [
+      "Solid {specificTactic} implementation. Have you analyzed the {specificGoal} metrics across different posting schedules?",
+      "The {specificStrategy} logic is sound. Are you tracking engagement quality alongside {specificNumber} growth?",
+      "Interesting {specificPlatform} approach. Consider segmenting the {specificGoal} data by audience demographics.",
+      "Good {specificTactic}. What's your retention rate for the {specificNumber} {specificTimeframe} growth?"
+    ],
+    skeptical: [
+      "These {specificNumber} {specificGoal} numbers seem optimistic. What's the average result for most people?",
+      "How sustainable is this {specificStrategy} when {specificPlatform} updates their algorithm?",
+      "The {specificTactic} looks good, but what about the time investment vs actual {specificGoal}?",
+      "Have you factored in the competition increase as more people use this {specificStrategy}?"
+    ],
+    enthusiastic: [
+      "GROWTH EXPLOSION! 🚀 This {specificStrategy} for {specificNumber} {specificGoal} is INSANE!",
+      "OMG YES! 💯 Finally a {specificPlatform} {specificTactic} that actually works!",
+      "INCREDIBLE! 🔥 Already implementing this {specificNumber} {specificTimeframe} system!",
+      "GAME CHANGER! ⚡ {specificPlatform} {specificGoal} about to go through the roof!"
+    ],
+    brief: [
+      "this {specificStrategy} works",
+      "solid {specificPlatform} growth",
+      "helpful {specificTactic}",
+      "{specificGoal} tactics are good"
+    ]
+  },
+
   // AI-related posts - dynamically uses post specifics
   ai: {
     professional: [
-      "The {specific_ai_tool} implementation described here aligns with current industry best practices.",
-      "This analysis of {specific_topic} demonstrates sophisticated understanding of the technology stack.",
-      "The {specific_feature} approach outlined here would be valuable for enterprise adoption.",
-      "From a technical perspective, this {specific_approach} implementation follows proven patterns."
+      "The {specificTool} implementation described here aligns with current industry best practices for {specificFeature} development.",
+      "This analysis of {specificTool} demonstrates sophisticated understanding of the {specificBenefit} technology stack.",
+      "The {specificFeature} approach outlined here would be valuable for enterprise adoption of {specificTool}.",
+      "From a technical perspective, this {specificTool} implementation follows proven {specificFeature} patterns."
     ],
     casual_proper: [
-      "Been using {specific_ai_tool} for a few months and this guide really helps with {specific_challenge}.",
-      "This {specific_topic} breakdown is exactly what I needed! The examples are super helpful 😊",
-      "Love how you explain {specific_concept} without making it sound impossible to understand.",
-      "Finally someone who gets {specific_technology}! This matches my experience perfectly."
+      "Been using {specificTool} for a few months and this guide really helps with understanding {specificFeature}.",
+      "This {specificTool} breakdown is exactly what I needed! The {specificBenefit} examples are super helpful 😊",
+      "Love how you explain {specificFeature} without making it sound impossible to understand.",
+      "Finally someone who gets {specificTool}! This matches my experience with {specificBenefit} perfectly."
     ],
     internet_native: [
-      "{specific_ai_tool} absolutely destroys the competition ngl... this guide is fire 🔥",
-      "finally someone who understands {specific_topic} instead of the usual generic bs",
-      "this {specific_approach} setup is exactly what i needed... productivity through the roof",
-      "tried this {specific_method} and holy shit the results are insane"
+      "{specificTool} absolutely destroys the competition ngl... this {specificFeature} guide is fire 🔥",
+      "finally someone who understands {specificTool} instead of the usual generic ai bs",
+      "this {specificFeature} setup is exactly what i needed... {specificBenefit} through the roof",
+      "tried this {specificTool} method and holy shit the {specificBenefit} results are insane"
     ],
     emotional: [
-      "THIS is exactly what I've been trying to understand about {specific_technology}!",
-      "I'm getting emotional reading this because {specific_benefit} is life-changing!",
-      "FINALLY someone explains {specific_concept} in a way that actually makes sense!",
-      "This {specific_approach} is going to revolutionize how I work with {specific_domain}!"
+      "THIS is exactly what I've been trying to understand about {specificTool}!",
+      "I'm getting emotional reading this because {specificBenefit} {specificFeature} is life-changing!",
+      "FINALLY someone explains {specificTool} in a way that actually makes sense!",
+      "This {specificFeature} approach is going to revolutionize how I work with {specificTool}!"
     ],
     technical_expert: [
-      "The {specific_algorithm} approach here is solid, but consider {technical_suggestion} for production.",
-      "Interesting implementation of {specific_feature}. Have you tested {technical_consideration}?",
-      "Nice work on {specific_component}. You might want to add {technical_improvement} for scale.",
-      "The {specific_architecture} is well thought out. Are you handling {technical_edge_case}?"
+      "The {specificTool} approach here is solid, but consider implementing proper error handling for {specificFeature} in production.",
+      "Interesting implementation of {specificFeature}. Have you tested {specificTool} performance at scale?",
+      "Nice work on {specificTool}. You might want to add {specificBenefit} optimization for better results.",
+      "The {specificFeature} architecture is well thought out. Are you handling API rate limits for {specificTool}?"
     ],
     skeptical: [
-      "This {specific_claim} sounds impressive, but what's the actual performance in production?",
-      "Have you tested {specific_feature} with real-world data volumes and edge cases?",
-      "The {specific_benefit} claims seem optimistic. What about {realistic_concern}?",
-      "Looks good in theory, but {specific_limitation} could be a major issue at scale."
+      "This {specificTool} {specificBenefit} claim sounds impressive, but what's the actual performance in production?",
+      "Have you tested {specificFeature} with real-world data volumes and edge cases?",
+      "The {specificBenefit} claims seem optimistic. What about {specificTool} reliability issues?",
+      "Looks good in theory, but {specificFeature} limitations could be a major issue at scale."
     ],
     enthusiastic: [
-      "OMG this {specific_tool} guide is EXACTLY what I needed! 🚀 Already implementing it!",
-      "YESSS! 🙌 Finally someone who explains {specific_concept} properly! This is incredible!",
-      "AMAZING work on {specific_feature}! 💯 This is going to save me so much time!",
-      "PERFECT! 🎯 This {specific_approach} is exactly how I wanted to solve {specific_problem}!"
+      "OMG this {specificTool} guide is EXACTLY what I needed! 🚀 Already implementing {specificFeature}!",
+      "YESSS! 🙌 Finally someone who explains {specificTool} {specificBenefit} properly! This is incredible!",
+      "AMAZING work on {specificFeature}! 💯 This {specificTool} setup is going to save me so much time!",
+      "PERFECT! 🎯 This {specificTool} approach is exactly how I wanted to achieve {specificBenefit}!"
     ],
     brief: [
-      "{specific_tool} works great",
-      "solid {specific_approach}",
-      "this but for {specific_use_case}",
-      "helpful {specific_feature}"
+      "{specificTool} works great",
+      "solid {specificFeature}",
+      "helpful {specificTool}",
+      "{specificBenefit} approach"
     ]
   },
 
@@ -225,61 +329,105 @@ const contextualTemplates = {
   }
 };
 
-// Extract key context from blog post
+// Extract detailed context from blog post title and description
 function extractPostContext(slug, title, description = '') {
   const titleLower = title.toLowerCase();
   const slugLower = slug.toLowerCase();
   const descLower = description.toLowerCase();
   const fullText = `${titleLower} ${slugLower} ${descLower}`;
 
-  // Extract specific tools/technologies
-  const aiTools = ['claude', 'chatgpt', 'gpt-4', 'ai', 'machine learning', 'neural', 'llm'];
-  const automationTools = ['bot', 'automation', 'workflow', 'script', 'api', 'webhook'];
-  const platforms = ['instagram', 'twitter', 'linkedin', 'youtube', 'tiktok', 'telegram'];
-  const businessTerms = ['revenue', 'monetize', 'income', 'profit', 'sales', 'conversion'];
-  const devTerms = ['react', 'node', 'python', 'javascript', 'api', 'database'];
+  // Comprehensive extraction arrays
+  const aiTools = ['claude', 'chatgpt', 'gpt-4', 'gpt-4.1', 'gemini', 'perplexity', 'qwen', 'deepseek', 'llama', 'ai', 'machine learning', 'neural', 'llm'];
+  const automationTools = ['bot', 'automation', 'workflow', 'script', 'api', 'webhook', 'agent', 'pipeline'];
+  const platforms = ['instagram', 'twitter', 'linkedin', 'youtube', 'tiktok', 'telegram', 'facebook', 'reddit'];
+  const businessTerms = ['revenue', 'monetize', 'income', 'profit', 'sales', 'conversion', 'business', 'money'];
+  const devTerms = ['react', 'node', 'python', 'javascript', 'api', 'database', 'code', 'development', 'programming'];
+  const contentTerms = ['content', 'video', 'reels', 'shorts', 'posts', 'social media', 'viral', 'engagement'];
+  const growthTerms = ['growth', 'followers', 'views', 'subscribers', 'audience', 'reach', 'engagement'];
+  const marketingTerms = ['marketing', 'seo', 'email', 'funnel', 'conversion', 'optimization'];
 
   const context = {
     category: '',
     specificTool: '',
-    specificTopic: '',
+    specificPlatform: '',
+    specificNumber: '',
+    specificTimeframe: '',
+    specificGoal: '',
     specificFeature: '',
-    specificApproach: '',
-    specificChallenge: '',
+    specificStrategy: '',
+    specificTactic: '',
     specificBenefit: '',
-    specificDomain: ''
+    specificChallenge: '',
+    exactTitle: title, // Store the exact title for reference
+    exactDescription: description // Store exact description
   };
 
-  // Determine category and extract specific terms
-  if (aiTools.some(tool => fullText.includes(tool))) {
-    context.category = 'ai';
-    context.specificTool = aiTools.find(tool => fullText.includes(tool)) || 'AI tool';
-    context.specificTopic = extractKeyPhrase(title, ['integration', 'automation', 'optimization', 'development']);
-    context.specificFeature = extractKeyPhrase(title, ['feature', 'capability', 'function', 'system']);
-  } else if (automationTools.some(tool => fullText.includes(tool))) {
-    context.category = 'automation';
-    context.specificProcess = extractKeyPhrase(title, ['process', 'workflow', 'system', 'pipeline']);
-    context.specificAutomation = automationTools.find(tool => fullText.includes(tool)) || 'automation';
-    context.specificTask = extractKeyPhrase(title, ['posting', 'scheduling', 'management', 'generation']);
-  } else if (businessTerms.some(term => fullText.includes(term))) {
-    context.category = 'business';
-    context.specificStrategy = extractKeyPhrase(title, ['strategy', 'approach', 'method', 'system']);
-    context.specificMonetization = businessTerms.find(term => fullText.includes(term)) || 'monetization';
-    context.specificBusinessType = extractKeyPhrase(title, ['business', 'startup', 'company', 'venture']);
-  } else {
-    context.category = 'development';
-    context.specificTechnology = devTerms.find(term => fullText.includes(term)) || 'technology';
-    context.specificImplementation = extractKeyPhrase(title, ['implementation', 'solution', 'approach']);
+  // Extract specific numbers from title/description
+  const numberMatches = (title + ' ' + description).match(/(\d+[\w]*)/g);
+  if (numberMatches) {
+    context.specificNumber = numberMatches[0]; // First number found
   }
 
-  // Extract platform-specific context
-  const platform = platforms.find(p => fullText.includes(p));
-  if (platform) {
-    context.specificPlatform = platform;
-    context.specificDomain = platform + ' automation';
+  // Extract timeframes
+  const timeframes = ['30 days', '90 days', '24 hours', 'hours', 'minutes', 'days', 'weeks', 'months'];
+  context.specificTimeframe = timeframes.find(t => fullText.includes(t)) || '';
+
+  // Determine primary category and extract specific context
+  if (aiTools.some(tool => fullText.includes(tool))) {
+    context.category = 'ai';
+    context.specificTool = aiTools.find(tool => fullText.includes(tool)) || 'AI';
+    context.specificFeature = extractSpecificFromTitle(title, ['model', 'assistant', 'agent', 'tool', 'platform', 'framework']);
+    context.specificBenefit = extractSpecificFromTitle(title, ['free', 'powerful', 'revolutionary', 'game-changer', 'ultimate']);
+  } else if (contentTerms.some(term => fullText.includes(term))) {
+    context.category = 'content';
+    context.specificPlatform = platforms.find(p => fullText.includes(p)) || 'social media';
+    context.specificGoal = extractSpecificFromTitle(title, ['viral', 'engagement', 'views', 'followers', 'growth']);
+    context.specificTactic = extractSpecificFromTitle(title, ['strategy', 'guide', 'hacks', 'tips', 'secrets']);
+  } else if (growthTerms.some(term => fullText.includes(term))) {
+    context.category = 'growth';
+    context.specificPlatform = platforms.find(p => fullText.includes(p)) || 'platform';
+    context.specificGoal = extractSpecificFromTitle(title, ['followers', 'subscribers', 'views', 'growth', 'audience']);
+    context.specificStrategy = extractSpecificFromTitle(title, ['hacks', 'strategy', 'guide', 'blueprint', 'system']);
+  } else if (businessTerms.some(term => fullText.includes(term))) {
+    context.category = 'business';
+    context.specificGoal = extractSpecificFromTitle(title, ['revenue', 'income', 'sales', 'profit', 'monetization']);
+    context.specificStrategy = extractSpecificFromTitle(title, ['strategy', 'guide', 'system', 'empire', 'business']);
+    context.specificBenefit = extractSpecificFromTitle(title, ['passive', 'automated', 'scalable', 'profitable']);
+  } else if (automationTools.some(tool => fullText.includes(tool))) {
+    context.category = 'automation';
+    context.specificTool = automationTools.find(tool => fullText.includes(tool)) || 'automation';
+    context.specificGoal = extractSpecificFromTitle(title, ['automate', 'efficiency', 'productivity', 'scaling']);
+    context.specificBenefit = extractSpecificFromTitle(title, ['save time', 'increase', 'optimize', 'streamline']);
+  } else {
+    context.category = 'development';
+    context.specificTool = devTerms.find(term => fullText.includes(term)) || 'technology';
+    context.specificFeature = extractSpecificFromTitle(title, ['development', 'coding', 'programming', 'framework']);
   }
 
   return context;
+}
+
+// Extract specific terms from title with better context awareness
+function extractSpecificFromTitle(title, keywords) {
+  const titleWords = title.toLowerCase().split(/[\s-]+/);
+  
+  // Look for exact matches first
+  for (const keyword of keywords) {
+    if (titleWords.includes(keyword.toLowerCase())) {
+      return keyword;
+    }
+  }
+  
+  // Look for partial matches
+  for (const keyword of keywords) {
+    for (const word of titleWords) {
+      if (word.includes(keyword.toLowerCase()) || keyword.toLowerCase().includes(word)) {
+        return keyword;
+      }
+    }
+  }
+  
+  return keywords[0] || 'approach';
 }
 
 // Extract key phrases from title
