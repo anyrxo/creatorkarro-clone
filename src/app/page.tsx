@@ -301,12 +301,12 @@ export default function HomePage() {
 
       {/* Beautiful Stats Section */}
       <section className="relative py-20 bg-black">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center"
           >
             {[
               { value: 13000, suffix: '+', label: 'Active Students' },
@@ -320,10 +320,10 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group"
+                className="group px-2"
               >
                 <motion.div
-                  className="text-5xl md:text-6xl font-bold text-white flex items-center justify-center"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white flex items-center justify-center flex-wrap"
                   whileHover={{ scale: 1.1 }}
                 >
                   <span>{stat.prefix}</span>
