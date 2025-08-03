@@ -76,29 +76,29 @@ export default function BlogPage() {
 
           {/* Search and Filter with Beautiful Styling */}
           <ScrollAnimation animation="fade-up" delay={800}>
-            <div className="flex flex-col md:flex-row gap-6 mb-12">
-              <div className="relative flex-1">
-                <div className="relative bg-gray-800/90 border-2 border-gray-600/50 rounded-2xl overflow-hidden backdrop-blur-lg hover:border-blue-500/50 focus-within:border-blue-500 transition-all duration-300">
-                  <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 w-6 h-6 z-10 transition-colors duration-300" />
+            <div className="flex flex-col lg:flex-row gap-6 mb-12">
+              <div className="relative flex-1 max-w-2xl">
+                <div className="relative">
+                  <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 z-10" />
                   <input
                     type="text"
                     placeholder="Search articles, topics, or tags..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-16 pr-6 py-5 bg-transparent text-white placeholder-gray-400 focus:outline-none text-lg font-medium transition-all duration-300"
+                    className="w-full pl-14 pr-12 py-4 bg-gray-800/80 border border-gray-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 hover:border-gray-500/50 transition-all duration-300 text-base backdrop-blur-sm"
                   />
                   {searchTerm && (
                     <button
                       onClick={() => setSearchTerm('')}
-                      className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200"
+                      className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200 text-lg"
                     >
-                      ✕
+                      ×
                     </button>
                   )}
                 </div>
               </div>
               
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 lg:justify-start justify-center">
                 {displayCategories.map((category, index) => (
                   <ScrollAnimation 
                     key={category} 
@@ -108,10 +108,10 @@ export default function BlogPage() {
                   >
                     <button
                       onClick={() => setSelectedCategory(category)}
-                      className={`px-5 py-3 rounded-full transition-all duration-300 text-sm font-medium backdrop-blur-sm border transform hover:scale-105 ${
+                      className={`px-4 py-2.5 rounded-lg transition-all duration-300 text-sm font-medium border transform hover:scale-105 ${
                         selectedCategory === category
                           ? 'bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/25'
-                          : 'bg-gray-800/50 text-gray-300 hover:bg-gray-700/50 border-gray-600 hover:border-gray-500'
+                          : 'bg-gray-800/60 text-gray-300 hover:bg-gray-700/60 border-gray-600/50 hover:border-gray-500/50 backdrop-blur-sm'
                       }`}
                     >
                       {category}
