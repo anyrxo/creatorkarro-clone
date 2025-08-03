@@ -323,19 +323,21 @@ export default function HomePage() {
                 className="group px-2"
               >
                 <motion.div
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white flex items-center justify-center flex-wrap"
-                  whileHover={{ scale: 1.1 }}
+                  className="space-y-2"
+                  whileHover={{ scale: 1.05 }}
                 >
-                  <span>{stat.prefix}</span>
-                  <NumberTicker 
-                    value={stat.value} 
-                    delay={0.5 + index * 0.2}
-                    decimalPlaces={stat.decimals || 0}
-                    className="inline-block"
-                  />
-                  <span>{stat.suffix}</span>
+                  <div className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-white">
+                    <span>{stat.prefix}</span>
+                    <NumberTicker 
+                      value={stat.value} 
+                      delay={0.5 + index * 0.2}
+                      decimalPlaces={stat.decimals || 0}
+                      className="inline-block"
+                    />
+                    <span>{stat.suffix}</span>
+                  </div>
+                  <p className="text-sm sm:text-base text-zinc-500 font-medium">{stat.label}</p>
                 </motion.div>
-                <p className="text-zinc-500 mt-2">{stat.label}</p>
               </motion.div>
             ))}
           </motion.div>
