@@ -77,18 +77,26 @@ export default function BlogPage() {
           {/* Search and Filter with Beautiful Styling */}
           <ScrollAnimation animation="fade-up" delay={800}>
             <div className="flex flex-col md:flex-row gap-6 mb-12">
-              <SpotlightCard className="relative flex-1 bg-gray-800/80 border border-gray-600 rounded-xl overflow-hidden backdrop-blur-sm">
-                <div className="relative">
-                  <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-300 w-6 h-6 z-10" />
+              <div className="relative flex-1">
+                <div className="relative bg-gray-800/90 border-2 border-gray-600/50 rounded-2xl overflow-hidden backdrop-blur-lg hover:border-blue-500/50 focus-within:border-blue-500 transition-all duration-300">
+                  <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 w-6 h-6 z-10 transition-colors duration-300" />
                   <input
                     type="text"
                     placeholder="Search articles, topics, or tags..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-16 pr-6 py-6 bg-transparent text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl relative z-10 text-lg font-medium"
+                    className="w-full pl-16 pr-6 py-5 bg-transparent text-white placeholder-gray-400 focus:outline-none text-lg font-medium transition-all duration-300"
                   />
+                  {searchTerm && (
+                    <button
+                      onClick={() => setSearchTerm('')}
+                      className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200"
+                    >
+                      ✕
+                    </button>
+                  )}
                 </div>
-              </SpotlightCard>
+              </div>
               
               <div className="flex flex-wrap gap-3">
                 {displayCategories.map((category, index) => (
@@ -114,7 +122,7 @@ export default function BlogPage() {
             </div>
           </ScrollAnimation>
 
-          {/* Featured Posts with Beautiful TiltCard Animation */}
+          {/* Featured Posts with Beautiful TiltCard Animation - Only show when no search/filter */}
           {searchTerm === '' && selectedCategory === 'All' && featuredPosts.length > 0 && (
             <ScrollAnimation animation="fade-up" delay={1000}>
               <div className="mb-16">
@@ -122,9 +130,9 @@ export default function BlogPage() {
                   <div className="p-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg">
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
-                  <AnimatedGradientText className="text-3xl font-bold">
+                  <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
                     Featured Articles
-                  </AnimatedGradientText>
+                  </h2>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -219,7 +227,7 @@ export default function BlogPage() {
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-8">
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  {searchTerm || selectedCategory !== 'All' ? 'Search Results' : 'Latest Articles'}
+                  {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory} Articles` : 'All Articles'}
                 </h2>
                 <div className="px-3 py-1 bg-gray-800/50 rounded-full border border-gray-700">
                   <NumberTicker value={filteredPosts.length} className="text-sm font-medium text-blue-300" />
