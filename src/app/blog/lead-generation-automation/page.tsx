@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Lead Generation Automation",
+  description: "Complete guide to lead generation automation - proven strategies, tools, and techniques for 2025",
+  keywords: ["lead", "generation", "automation", "lead 2025", "lead generation automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Lead Generation Automation",
+    description: "Complete guide to lead generation automation - proven strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/lead-generation-automation",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.977Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["lead", "generation", "automation", "lead 2025", "lead generation automation", "AI tools", "business growth", "productivity"],
+    images: [{
+      url: "https://iimagined.ai/images/lead-generation-automation-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Lead Generation Automation",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Lead Generation Automation",
+    description: "Complete guide to lead generation automation - proven strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/lead-generation-automation-og.jpg",
+      alt: "Lead Generation Automation"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/lead-generation-automation"
+  }
+}
 
 export default function LeadGenerationAutomationPage() {
   return (

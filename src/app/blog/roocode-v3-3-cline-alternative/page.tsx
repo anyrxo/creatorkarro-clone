@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Roocode V3 3 Cline Alternative",
+  description: "Roocode V3 3 Cline Alternative - comprehensive strategies, tools, and techniques for 2025",
+  keywords: ["roocode", "cline", "alternative", "roocode 2025", "roocode cline alternative", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Roocode V3 3 Cline Alternative",
+    description: "Roocode V3 3 Cline Alternative - comprehensive strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/roocode-v3-3-cline-alternative",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.965Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["roocode", "cline", "alternative", "roocode 2025", "roocode cline alternative", "automation", "AI tools", "business growth"],
+    images: [{
+      url: "https://iimagined.ai/images/roocode-v3-3-cline-alternative-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Roocode V3 3 Cline Alternative",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Roocode V3 3 Cline Alternative",
+    description: "Roocode V3 3 Cline Alternative - comprehensive strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/roocode-v3-3-cline-alternative-og.jpg",
+      alt: "Roocode V3 3 Cline Alternative"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/roocode-v3-3-cline-alternative"
+  }
+}
 
 export default function RoocodeV33ClineAlternativePage() {
   return (

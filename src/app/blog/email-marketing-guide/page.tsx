@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Email Marketing Guide",
+  description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+  keywords: ["email", "marketing", "guide", "email 2025", "email marketing guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Email Marketing Guide",
+    description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    url: "https://iimagined.ai/blog/email-marketing-guide",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.986Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["email", "marketing", "guide", "email 2025", "email marketing guide", "automation", "AI tools", "business growth"],
+    images: [{
+      url: "https://iimagined.ai/images/email-marketing-guide-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Email Marketing Guide",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Email Marketing Guide",
+    description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/email-marketing-guide-og.jpg",
+      alt: "Email Marketing Guide"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/email-marketing-guide"
+  }
+}
 
 export default function EmailMarketingGuide() {
           

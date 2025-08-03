@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Llama 4 Open Source AI Powerhouse",
+  description: "Llama 4 Open Source AI Powerhouse comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+  keywords: ["llama", "open", "source", "powerhouse", "llama 2025", "llama open source powerhouse", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Llama 4 Open Source AI Powerhouse",
+    description: "Llama 4 Open Source AI Powerhouse comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    url: "https://iimagined.ai/blog/llama-4-open-source-ai-powerhouse",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.976Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["llama", "open", "source", "powerhouse", "llama 2025", "llama open source powerhouse", "automation", "AI tools"],
+    images: [{
+      url: "https://iimagined.ai/images/llama-4-open-source-ai-powerhouse-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Llama 4 Open Source AI Powerhouse",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Llama 4 Open Source AI Powerhouse",
+    description: "Llama 4 Open Source AI Powerhouse comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/llama-4-open-source-ai-powerhouse-og.jpg",
+      alt: "Llama 4 Open Source AI Powerhouse"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/llama-4-open-source-ai-powerhouse"
+  }
+}
 
 export default function Llama4OpenSourceAiPowerhousePage() {
   return (

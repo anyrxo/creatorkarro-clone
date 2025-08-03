@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Alpha Evolve AI Business Empire",
+  description: "Alpha Evolve AI Business Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+  keywords: ["alpha", "evolve", "business", "empire", "alpha 2025", "alpha evolve business empire", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Alpha Evolve AI Business Empire",
+    description: "Alpha Evolve AI Business Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    url: "https://iimagined.ai/blog/alpha-evolve-ai-business-empire",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.999Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["alpha", "evolve", "business", "empire", "alpha 2025", "alpha evolve business empire", "automation", "AI tools"],
+    images: [{
+      url: "https://iimagined.ai/images/alpha-evolve-ai-business-empire-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Alpha Evolve AI Business Empire",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Alpha Evolve AI Business Empire",
+    description: "Alpha Evolve AI Business Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/alpha-evolve-ai-business-empire-og.jpg",
+      alt: "Alpha Evolve AI Business Empire"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/alpha-evolve-ai-business-empire"
+  }
+}
 
 export default function AlphaEvolveAiBusinessEmpirePage() {
   return (

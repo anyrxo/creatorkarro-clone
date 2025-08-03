@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Vectorize All In One Rag Platform",
+  description: "Vectorize All In One Rag Platform - comprehensive strategies, tools, and techniques for 2025",
+  keywords: ["vectorize", "all", "one", "rag", "platform", "vectorize 2025", "vectorize all one rag platform", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Vectorize All In One Rag Platform",
+    description: "Vectorize All In One Rag Platform - comprehensive strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/vectorize-all-in-one-rag-platform",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.956Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["vectorize", "all", "one", "rag", "platform", "vectorize 2025", "vectorize all one rag platform", "automation"],
+    images: [{
+      url: "https://iimagined.ai/images/vectorize-all-in-one-rag-platform-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Vectorize All In One Rag Platform",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Vectorize All In One Rag Platform",
+    description: "Vectorize All In One Rag Platform - comprehensive strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/vectorize-all-in-one-rag-platform-og.jpg",
+      alt: "Vectorize All In One Rag Platform"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/vectorize-all-in-one-rag-platform"
+  }
+}
 
 export default function VectorizeAllInOneRagPlatformPage() {
   return (

@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "AI Automation Guide",
+  description: "Complete guide to ai automation guide - proven strategies, tools, and techniques for 2025",
+  keywords: ["automation", "guide", "automation 2025", "automation guide", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "AI Automation Guide",
+    description: "Complete guide to ai automation guide - proven strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/ai-automation-guide",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:30.004Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["automation", "guide", "automation 2025", "automation guide", "AI tools", "business growth", "productivity", "2025 strategies"],
+    images: [{
+      url: "https://iimagined.ai/images/ai-automation-guide-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "AI Automation Guide",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "AI Automation Guide",
+    description: "Complete guide to ai automation guide - proven strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/ai-automation-guide-og.jpg",
+      alt: "AI Automation Guide"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/ai-automation-guide"
+  }
+}
 
 export default function AIAutomationGuide() {
           

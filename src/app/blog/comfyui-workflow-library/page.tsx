@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "ComfyUI Workflow Library",
+  description: "ComfyUI Workflow Library - comprehensive strategies, tools, and techniques for 2025",
+  keywords: ["comfyui", "workflow", "library", "comfyui 2025", "comfyui workflow library", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "ComfyUI Workflow Library",
+    description: "ComfyUI Workflow Library - comprehensive strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/comfyui-workflow-library",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.995Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["comfyui", "workflow", "library", "comfyui 2025", "comfyui workflow library", "automation", "AI tools", "business growth"],
+    images: [{
+      url: "https://iimagined.ai/images/comfyui-workflow-library-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "ComfyUI Workflow Library",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "ComfyUI Workflow Library",
+    description: "ComfyUI Workflow Library - comprehensive strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/comfyui-workflow-library-og.jpg",
+      alt: "ComfyUI Workflow Library"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/comfyui-workflow-library"
+  }
+}
 
 export default function ComfyUIWorkflowLibrary() {
           

@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "AI Influencer Success",
+  description: "AI Influencer Success comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+  keywords: ["influencer", "success", "influencer 2025", "influencer success", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "AI Influencer Success",
+    description: "AI Influencer Success comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    url: "https://iimagined.ai/blog/ai-influencer-success",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:30.001Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["influencer", "success", "influencer 2025", "influencer success", "automation", "AI tools", "business growth", "productivity"],
+    images: [{
+      url: "https://iimagined.ai/images/ai-influencer-success-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "AI Influencer Success",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "AI Influencer Success",
+    description: "AI Influencer Success comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/ai-influencer-success-og.jpg",
+      alt: "AI Influencer Success"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/ai-influencer-success"
+  }
+}
 
 export default function AIInfluencerSuccess() {
           

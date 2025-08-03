@@ -238,6 +238,7 @@ export default function ResourcesPage() {
               href="https://anyrxo.gumroad.com/"
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-block"
             >
               <ShimmerButton
                 className="shadow-2xl"

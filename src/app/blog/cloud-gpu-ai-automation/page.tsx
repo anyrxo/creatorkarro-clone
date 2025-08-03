@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Cloud Gpu AI Automation",
+  description: "Complete guide to cloud gpu ai automation - proven strategies, tools, and techniques for 2025",
+  keywords: ["cloud", "gpu", "automation", "cloud 2025", "cloud gpu automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Cloud Gpu AI Automation",
+    description: "Complete guide to cloud gpu ai automation - proven strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/cloud-gpu-ai-automation",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.995Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["cloud", "gpu", "automation", "cloud 2025", "cloud gpu automation", "AI tools", "business growth", "productivity"],
+    images: [{
+      url: "https://iimagined.ai/images/cloud-gpu-ai-automation-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Cloud Gpu AI Automation",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Cloud Gpu AI Automation",
+    description: "Complete guide to cloud gpu ai automation - proven strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/cloud-gpu-ai-automation-og.jpg",
+      alt: "Cloud Gpu AI Automation"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/cloud-gpu-ai-automation"
+  }
+}
 
 export default function CloudGpuAiAutomationPage() {
   return (

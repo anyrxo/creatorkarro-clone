@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Pinterest Automation Marketing",
+  description: "Complete guide to pinterest automation marketing - proven strategies, tools, and techniques for 2025",
+  keywords: ["pinterest", "automation", "marketing", "pinterest 2025", "pinterest automation marketing", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Pinterest Automation Marketing",
+    description: "Complete guide to pinterest automation marketing - proven strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/pinterest-automation-marketing",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.969Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["pinterest", "automation", "marketing", "pinterest 2025", "pinterest automation marketing", "AI tools", "business growth", "productivity"],
+    images: [{
+      url: "https://iimagined.ai/images/pinterest-automation-marketing-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Pinterest Automation Marketing",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Pinterest Automation Marketing",
+    description: "Complete guide to pinterest automation marketing - proven strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/pinterest-automation-marketing-og.jpg",
+      alt: "Pinterest Automation Marketing"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/pinterest-automation-marketing"
+  }
+}
 
 export default function PinterestAutomationMarketingPage() {
   return (

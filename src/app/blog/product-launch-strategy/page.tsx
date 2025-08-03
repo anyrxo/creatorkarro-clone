@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Product Launch Strategy",
+  description: "Product Launch Strategy - comprehensive strategies, tools, and techniques for 2025",
+  keywords: ["product", "launch", "strategy", "product 2025", "product launch strategy", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Product Launch Strategy",
+    description: "Product Launch Strategy - comprehensive strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/product-launch-strategy",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.969Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["product", "launch", "strategy", "product 2025", "product launch strategy", "automation", "AI tools", "business growth"],
+    images: [{
+      url: "https://iimagined.ai/images/product-launch-strategy-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Product Launch Strategy",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Product Launch Strategy",
+    description: "Product Launch Strategy - comprehensive strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/product-launch-strategy-og.jpg",
+      alt: "Product Launch Strategy"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/product-launch-strategy"
+  }
+}
 
 export default function ProductLaunchStrategy() {
           

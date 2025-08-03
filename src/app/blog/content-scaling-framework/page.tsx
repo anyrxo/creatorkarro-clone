@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Content Scaling Framework",
+  description: "Content Scaling Framework - comprehensive strategies, tools, and techniques for 2025",
+  keywords: ["content", "scaling", "framework", "content 2025", "content scaling framework", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Content Scaling Framework",
+    description: "Content Scaling Framework - comprehensive strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/content-scaling-framework",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.994Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["content", "scaling", "framework", "content 2025", "content scaling framework", "automation", "AI tools", "business growth"],
+    images: [{
+      url: "https://iimagined.ai/images/content-scaling-framework-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Content Scaling Framework",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Content Scaling Framework",
+    description: "Content Scaling Framework - comprehensive strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/content-scaling-framework-og.jpg",
+      alt: "Content Scaling Framework"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/content-scaling-framework"
+  }
+}
 
 export default function ContentScalingFramework() {
           

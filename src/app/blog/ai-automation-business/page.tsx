@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "AI Automation Business",
+  description: "Complete guide to ai automation business - proven strategies, tools, and techniques for 2025",
+  keywords: ["automation", "business", "automation 2025", "automation business", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "AI Automation Business",
+    description: "Complete guide to ai automation business - proven strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/ai-automation-business",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:30.005Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["automation", "business", "automation 2025", "automation business", "AI tools", "business growth", "productivity", "2025 strategies"],
+    images: [{
+      url: "https://iimagined.ai/images/ai-automation-business-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "AI Automation Business",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "AI Automation Business",
+    description: "Complete guide to ai automation business - proven strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/ai-automation-business-og.jpg",
+      alt: "AI Automation Business"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/ai-automation-business"
+  }
+}
 
 export default function AIAutomationBusiness() {
           

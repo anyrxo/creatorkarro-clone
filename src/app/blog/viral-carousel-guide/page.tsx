@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Viral Carousel Guide",
+  description: "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
+  keywords: ["viral", "carousel", "guide", "viral 2025", "viral carousel guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Viral Carousel Guide",
+    description: "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
+    url: "https://iimagined.ai/blog/viral-carousel-guide",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.956Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["viral", "carousel", "guide", "viral 2025", "viral carousel guide", "automation", "AI tools", "business growth"],
+    images: [{
+      url: "https://iimagined.ai/images/viral-carousel-guide-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Viral Carousel Guide",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Viral Carousel Guide",
+    description: "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
+    images: [{
+      url: "https://iimagined.ai/images/viral-carousel-guide-og.jpg",
+      alt: "Viral Carousel Guide"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/viral-carousel-guide"
+  }
+}
 
 export default function ViralCarouselGuide() {
           

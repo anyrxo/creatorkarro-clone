@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Claude 4 Agentic Coding Revolution",
+  description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+  keywords: ["claude", "agentic", "coding", "revolution", "claude 2025", "claude agentic coding revolution", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Claude 4 Agentic Coding Revolution",
+    description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    url: "https://iimagined.ai/blog/claude-4-agentic-coding-revolution",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.997Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["claude", "agentic", "coding", "revolution", "claude 2025", "claude agentic coding revolution", "automation", "AI tools"],
+    images: [{
+      url: "https://iimagined.ai/images/claude-4-agentic-coding-revolution-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Claude 4 Agentic Coding Revolution",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Claude 4 Agentic Coding Revolution",
+    description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/claude-4-agentic-coding-revolution-og.jpg",
+      alt: "Claude 4 Agentic Coding Revolution"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/claude-4-agentic-coding-revolution"
+  }
+}
 
 import { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'

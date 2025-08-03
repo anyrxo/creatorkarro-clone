@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "Instagram Reels Guide",
+  description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
+  keywords: ["instagram", "reels", "guide", "instagram 2025", "instagram reels guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "Instagram Reels Guide",
+    description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
+    url: "https://iimagined.ai/blog/instagram-reels-guide",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.978Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["instagram", "reels", "guide", "instagram 2025", "instagram reels guide", "automation", "AI tools", "business growth"],
+    images: [{
+      url: "https://iimagined.ai/images/instagram-reels-guide-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Instagram Reels Guide",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "Instagram Reels Guide",
+    description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
+    images: [{
+      url: "https://iimagined.ai/images/instagram-reels-guide-og.jpg",
+      alt: "Instagram Reels Guide"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/instagram-reels-guide"
+  }
+}
 
 export default function InstagramReelsGuide() {
           

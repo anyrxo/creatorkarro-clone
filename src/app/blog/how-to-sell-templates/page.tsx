@@ -1,7 +1,60 @@
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
+
+// Comprehensive SEO Metadata
+export const metadata = {
+  title: "How To Sell Templates",
+  description: "How To Sell Templates - comprehensive strategies, tools, and techniques for 2025",
+  keywords: ["how", "sell", "templates", "how 2025", "how sell templates", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  creator: "IImagined.ai",
+  publisher: "IImagined.ai",
+  category: "Technology",
+  openGraph: {
+    title: "How To Sell Templates",
+    description: "How To Sell Templates - comprehensive strategies, tools, and techniques for 2025",
+    url: "https://iimagined.ai/blog/how-to-sell-templates",
+    siteName: "IImagined.ai",
+    type: "article",
+    publishedTime: "2025-01-15T10:00:00.000Z",
+    modifiedTime: "2025-08-03T06:14:29.980Z",
+    authors: ["IImagined.ai Team"],
+    tags: ["how", "sell", "templates", "how 2025", "how sell templates", "automation", "AI tools", "business growth"],
+    images: [{
+      url: "https://iimagined.ai/images/how-to-sell-templates-og.jpg",
+      width: 1200,
+      height: 630,
+      alt: "How To Sell Templates",
+      type: "image/jpeg"
+    }],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai", 
+    title: "How To Sell Templates",
+    description: "How To Sell Templates - comprehensive strategies, tools, and techniques for 2025",
+    images: [{
+      url: "https://iimagined.ai/images/how-to-sell-templates-og.jpg",
+      alt: "How To Sell Templates"
+    }]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  },
+  alternates: {
+    canonical: "https://iimagined.ai/blog/how-to-sell-templates"
+  }
+}
 
 export default function HowToSellTemplates() {
           
