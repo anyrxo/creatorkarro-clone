@@ -1,31 +1,32 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Machine Learning Automation: Build AI Systems That Learn & Improve Automatically | IImagined.ai',
-  description: 'Master ML automation with model training, deployment, and monitoring pipelines. Build self-improving AI systems that automate complex decision-making processes.',
+  title: 'Machine Learning Automation: Build Self-Improving Systems That Generate $100K+/Month | IImagined.ai',
+  description: 'Master automated ML pipelines that train, deploy, and optimize models without human intervention. Learn AutoML, MLOps, and production deployment strategies.',
   keywords: [
     'machine learning automation',
-    'ml automation pipeline',
+    'ml automation',
+    'automl pipeline',
     'automated machine learning',
     'mlops automation',
-    'model training automation',
-    'ai model deployment automation',
+    'ml pipeline automation',
+    'self training models',
+    'automated model deployment',
+    'ml automation tools',
+    'machine learning ops',
+    'ml workflow automation',
     'automated feature engineering',
-    'ml monitoring automation',
-    'automated model optimization',
-    'machine learning workflow automation',
-    'ai automation systems',
-    'automated data science',
-    'ml model automation',
-    'predictive analytics automation'
+    'model training automation',
+    'ml deployment automation',
+    'machine learning pipelines'
   ],
   openGraph: {
-    title: 'Machine Learning Automation: Build AI Systems That Learn & Improve Automatically',
-    description: 'Advanced ML automation with model training, deployment, and monitoring for self-improving AI systems.',
+    title: 'Machine Learning Automation: Build Self-Improving Systems That Generate $100K+/Month',
+    description: 'Master automated ML pipelines for training, deploying, and optimizing models without human intervention.',
     type: 'article',
-    publishedTime: '2024-05-05T10:00:00.000Z',
+    publishedTime: '2024-11-10T10:00:00.000Z',
     authors: ['Anyro'],
-    tags: ['Machine Learning', 'AI Automation', 'MLOps', 'Model Deployment', 'Data Science'],
+    tags: ['Machine Learning', 'ML Automation', 'AutoML', 'MLOps', 'AI Systems'],
     images: [
       {
         url: 'https://iimagined.ai/blog/machine-learning-automation/og-image.png',
@@ -37,6 +38,6 @@ export const metadata: Metadata = {
   }
 }
 
-export default function MachineLearningLayout({ children }: { children: React.ReactNode }) {
+export default function MLAutomationLayout({ children }: { children: React.ReactNode }) {
   return children
 }

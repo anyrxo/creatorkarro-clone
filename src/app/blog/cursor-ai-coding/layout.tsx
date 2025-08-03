@@ -1,42 +1,43 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cursor AI Coding: Master AI-Powered Development with Claude 4 Integration | IImagined.ai',
-  description: 'Master Cursor AI with Claude 4 integration for 10x faster coding. Learn advanced prompts, workflows, and techniques that professional developers use.',
+  title: 'Cursor AI Coding: Build Full-Stack Apps 100x Faster with AI Pair Programming | IImagined.ai',
+  description: 'Master Cursor AI IDE with Chat Mode, Cmd+K generation, Copilot++, and AI debugging. Learn how developers ship production apps in hours, not weeks.',
   keywords: [
     'cursor ai coding',
-    'cursor ai tutorial',
-    'cursor claude 4',
-    'ai coding tools',
-    'cursor ai development',
+    'cursor ide',
     'ai pair programming',
-    'cursor ai features',
-    'ai code generation',
+    'cursor chat mode',
+    'cursor cmd k',
+    'cursor copilot++',
+    'ai code editor',
+    'cursor codebase q&a',
+    'ai debugging tool',
+    'cursor terminal ai',
     'cursor vs github copilot',
-    'cursor ai workflow',
-    'ai assisted coding',
-    'cursor ai tips',
-    'development automation',
-    'cursor ai prompts'
+    'ai powered development',
+    'cursor tutorial',
+    'cursor ai features',
+    'automated coding assistant'
   ],
   openGraph: {
-    title: 'Cursor AI Coding: Master AI Development with Claude 4',
-    description: 'Learn Cursor AI with Claude 4 for 10x faster development. Advanced techniques and workflows for professional developers.',
+    title: 'Cursor AI Coding: Build Full-Stack Apps 100x Faster with AI Pair Programming',
+    description: 'Discover how developers are shipping production apps in hours using Cursor AI\'s revolutionary features.',
     type: 'article',
-    publishedTime: '2025-01-08T10:00:00.000Z',
+    publishedTime: '2024-12-20T10:00:00.000Z',
     authors: ['Anyro'],
-    tags: ['Cursor AI', 'AI Coding', 'Claude 4', 'Development Tools', 'Programming'],
+    tags: ['AI Coding', 'Cursor', 'Developer Tools', 'IDE', 'Pair Programming'],
     images: [
       {
         url: 'https://iimagined.ai/blog/cursor-ai-coding/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Cursor AI Coding - Master AI Development'
+        alt: 'Cursor AI Coding - Revolutionary AI IDE'
       }
     ]
   }
 }
 
-export default function CursorAICodingLayout({ children }: { children: React.ReactNode }) {
+export default function CursorAILayout({ children }: { children: React.ReactNode }) {
   return children
 }

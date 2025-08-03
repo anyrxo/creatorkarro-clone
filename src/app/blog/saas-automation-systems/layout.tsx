@@ -1,37 +1,38 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'SaaS Automation Systems: Build Software That Generates $1M+/Year ARR | IImagined.ai',
-  description: 'Master SaaS automation with customer onboarding, billing systems, and growth automation. Build software businesses that scale to massive recurring revenue.',
+  title: 'SaaS Automation Systems: Build $250K/Month Platforms with Zero Manual Work | IImagined.ai',
+  description: 'Transform your SaaS with complete automation: user onboarding, billing, support, analytics. Learn how to scale to 100K+ users without hiring.',
   keywords: [
-    'saas automation',
+    'saas automation systems',
+    'saas automation tools',
+    'automated saas platform',
     'saas business automation',
-    'software automation systems',
-    'saas scaling automation',
-    'saas customer automation',
-    'saas billing automation',
     'saas onboarding automation',
-    'saas marketing automation',
-    'automated saas systems',
-    'saas growth automation',
-    'saas revenue automation',
-    'software business automation',
+    'saas billing automation',
+    'saas support automation',
+    'saas analytics automation',
     'saas workflow automation',
-    'saas automation tools'
+    'saas infrastructure automation',
+    'saas marketing automation',
+    'saas revenue operations',
+    'automated saas scaling',
+    'saas productivity tools',
+    'saas automation strategy'
   ],
   openGraph: {
-    title: 'SaaS Automation Systems: Build Software Generating $1M+/Year ARR',
-    description: 'Advanced SaaS automation systems for customer onboarding, billing, and growth that scale to massive ARR.',
+    title: 'SaaS Automation Systems: Build $250K/Month Platforms with Zero Manual Work',
+    description: 'Scale your SaaS to 100K+ users with the same team using complete automation systems.',
     type: 'article',
-    publishedTime: '2024-10-10T10:00:00.000Z',
+    publishedTime: '2024-12-20T10:00:00.000Z',
     authors: ['Anyro'],
-    tags: ['SaaS Business', 'Software Automation', 'Business Scaling', 'Recurring Revenue', 'Tech Entrepreneurship'],
+    tags: ['SaaS Automation', 'Business Systems', 'Scaling', 'Revenue Operations', 'AI Automation'],
     images: [
       {
         url: 'https://iimagined.ai/blog/saas-automation-systems/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'SaaS Automation Systems - Software Revenue Scaling'
+        alt: 'SaaS Automation Systems - Scale Without Limits'
       }
     ]
   }

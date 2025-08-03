@@ -1,37 +1,38 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'IoT Automation Systems: Build Smart Networks That Generate $300K+/Year Revenue | IImagined.ai',
-  description: 'Master IoT automation with smart devices, sensor networks, and edge computing. Build intelligent systems that automate physical processes and generate revenue.',
+  title: 'IoT Automation Systems: Build Smart Cities & $500K Systems with Connected Devices | IImagined.ai',
+  description: 'Master IoT automation for smart cities, industrial systems, and connected devices. Learn to build intelligent infrastructure that operates 24/7.',
   keywords: [
-    'iot automation',
+    'iot automation systems',
     'internet of things automation',
-    'smart device automation',
-    'iot sensor automation',
-    'industrial iot automation',
-    'smart home automation',
-    'iot data automation',
-    'edge computing automation',
+    'smart city iot',
+    'industrial iot',
     'iot device management',
-    'automated iot systems',
-    'iot monitoring automation',
-    'smart city automation',
-    'iot analytics automation',
-    'connected device automation'
+    'connected device automation',
+    'iot infrastructure',
+    'smart home automation',
+    'iot analytics platform',
+    'edge computing automation',
+    'iot sensor networks',
+    'smart grid automation',
+    'iot data processing',
+    'connected vehicle systems',
+    'iot security automation'
   ],
   openGraph: {
-    title: 'IoT Automation Systems: Build Smart Networks Generating $300K+/Year Revenue',
-    description: 'Advanced IoT automation with smart devices and sensor networks for intelligent revenue-generating systems.',
+    title: 'IoT Automation Systems: Build Smart Cities & $500K Systems with Connected Devices',
+    description: 'Transform physical spaces with IoT automation - from smart cities to industrial systems.',
     type: 'article',
-    publishedTime: '2024-05-10T10:00:00.000Z',
+    publishedTime: '2024-12-20T10:00:00.000Z',
     authors: ['Anyro'],
-    tags: ['IoT', 'Smart Devices', 'Industrial Automation', 'Edge Computing', 'Connected Systems'],
+    tags: ['IoT Automation', 'Smart Cities', 'Industrial IoT', 'Connected Devices', 'Edge Computing'],
     images: [
       {
         url: 'https://iimagined.ai/blog/iot-automation-systems/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'IoT Automation Systems - Smart Device Networks'
+        alt: 'IoT Automation Systems - Connected Intelligence'
       }
     ]
   }

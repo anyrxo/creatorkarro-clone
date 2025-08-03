@@ -11553,12 +11553,12 @@ print(response)</code></pre>
                             <h4 className="text-lg font-semibold text-white mb-4">macOS Installation Commands</h4>
                             <div className="bg-gray-900/50 rounded-xl p-4 border border-gray-700/50">
                                 <pre className="text-sm text-gray-300 overflow-x-auto">
-                            # Install Homebrew if not already installed<br />
-                            /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;<br />
-                                    <br />
-                            # Install prerequisites<br />
-                            brew install --cask visual-studio-code<br />
-                            brew install python git<br />
+                            # Install Homebrew if not already installed
+                            /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+                                    
+                            # Install prerequisites
+                            brew install --cask visual-studio-code
+                            brew install python git
                             brew install --cask miniconda
                                 </pre>
                             </div>
@@ -11574,11 +11574,11 @@ print(response)</code></pre>
             </div>
             <div className="bg-gray-900/50 rounded-lg p-3 border border-gray-700/50">
                 <pre className="text-xs text-gray-300 overflow-x-auto">
-                        # Clone the repository<br />
-                        git clone https://github.com/automate-org/automate.git<br />
-                        cd automate<br />
-                    <br />
-                        # Verify the download<br />
+                        # Clone the repository
+                        git clone https://github.com/automate-org/automate.git
+                        cd automate
+                    
+                        # Verify the download
                         ls -la
                 </pre>
             </div>
@@ -11591,12 +11591,12 @@ print(response)</code></pre>
         </div>
         <div className="bg-gray-900/50 rounded-lg p-3 border border-gray-700/50">
             <pre className="text-xs text-gray-300 overflow-x-auto">
-                        # Create Conda environment<br />
-                        conda create -n automate python=3.9<br />
-                        conda activate automate<br />
-                <br />
-                        # Verify environment<br />
-                        python --version<br />
+                        # Create Conda environment
+                        conda create -n automate python=3.9
+                        conda activate automate
+                
+                        # Verify environment
+                        python --version
                         which python
             </pre>
         </div>
@@ -11609,13 +11609,13 @@ print(response)</code></pre>
     </div>
     <div className="bg-gray-900/50 rounded-lg p-3 border border-gray-700/50">
         <pre className="text-xs text-gray-300 overflow-x-auto">
-                        # Install Python dependencies<br />
-                        pip install -r requirements.txt<br />
-            <br />
-                        # Install additional packages if needed<br />
-                        pip install gradio torch torchvision<br />
-            <br />
-                        # Verify installation<br />
+                        # Install Python dependencies
+                        pip install -r requirements.txt
+            
+                        # Install additional packages if needed
+                        pip install gradio torch torchvision
+            
+                        # Verify installation
                         pip list | grep -E &quot;(gradio|torch)&quot;
         </pre>
     </div>
@@ -11629,12 +11629,12 @@ print(response)</code></pre>
 <p className="text-gray-300 text-sm mb-3">Create a <code className="bg-gray-800 px-2 py-1 rounded text-yellow-400">.env</code> file in the project root:</p>
 <div className="bg-gray-900/50 rounded-lg p-3 border border-gray-700/50">
     <pre className="text-xs text-gray-300 overflow-x-auto">
-                        # API Keys for AI Models<br />
-                        OPENAI_API_KEY=your_openai_key_here<br />
-                        ANTHROPIC_API_KEY=your_claude_key_here<br />
-                        GOOGLE_API_KEY=your_gemini_key_here<br />
-        <br />
-                        # Optional: Local model paths<br />
+                        # API Keys for AI Models
+                        OPENAI_API_KEY=your_openai_key_here
+                        ANTHROPIC_API_KEY=your_claude_key_here
+                        GOOGLE_API_KEY=your_gemini_key_here
+        
+                        # Optional: Local model paths
                         LOCAL_MODEL_PATH=/path/to/local/models
     </pre>
 </div>
@@ -11653,10 +11653,10 @@ print(response)</code></pre>
             <h4 className="text-lg font-semibold text-white mb-4">Start the Application</h4>
             <div className="bg-gray-900/50 rounded-xl p-4 border border-gray-700/50 mb-6">
                 <pre className="text-sm text-gray-300">
-                            # Start the application<br />
-                            python app.py<br />
-                    <br />
-                            # The Gradio interface will be available at:<br />
+                            # Start the application
+                            python app.py
+                    
+                            # The Gradio interface will be available at:
                             # http://localhost:7860
                 </pre>
             </div>
@@ -12641,26 +12641,26 @@ print(response)</code></pre>
             <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700/50 mb-6">
                 <h4 className="text-lg font-semibold text-purple-400 mb-3">Real-world Example:</h4>
                 <pre className="text-sm text-gray-300 overflow-x-auto">
-// Traditional AI: Generic React suggestion<br />
-function UserProfile() {<br />
-  return &lt;div&gt;User Profile&lt;/div&gt;<br />
-}<br />
-                    <br />
-// Augment Code: Context-aware suggestion based on your existing patterns<br />
-function UserProfile({ userId, onProfileUpdate }) {<br />
-  const { user, loading, error } = useUserData(userId); // Knows your custom hooks<br />
-  const theme = useAppTheme(); // Understands your theming system<br />
-                    <br />
-  if (loading) return &lt;LoadingSpinner /&gt;; // Uses your existing components<br />
-  if (error) return &lt;ErrorBoundary error={error} /&gt;; // Matches your error handling<br />
-                    <br />
+// Traditional AI: Generic React suggestion
+function UserProfile() {
+  return <div>User Profile</div>
+}
+                    
+// Augment Code: Context-aware suggestion based on your existing patterns
+function UserProfile({ userId, onProfileUpdate }) {
+  const { user, loading, error } = useUserData(userId); // Knows your custom hooks
+  const theme = useAppTheme(); // Understands your theming system
+                    
+  if (loading) return <LoadingSpinner />; // Uses your existing components
+  if (error) return <ErrorBoundary error={error} />; // Matches your error handling
+                    
   return (
-    <br />
-    &lt;ProfileContainer theme={theme}&gt;<br />
-      &lt;Avatar src={user.avatar} alt={user.name} /&gt;<br />
-      &lt;UserDetails user={user} onUpdate={onProfileUpdate} /&gt;<br />
-    &lt;/ProfileContainer&gt;<br />
-  );<br />
+    
+    <ProfileContainer theme={theme}>
+      <Avatar src={user.avatar} alt={user.name} />
+      <UserDetails user={user} onUpdate={onProfileUpdate} />
+    </ProfileContainer>
+  );
 }
 </pre>
 </div>
@@ -12694,15 +12694,15 @@ function UserProfile({ userId, onProfileUpdate }) {<br />
 <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700/50 mb-6">
     <h4 className="text-lg font-semibold text-purple-400 mb-3">Practical Use Cases:</h4>
     <pre className="text-sm text-gray-300 overflow-x-auto">
-# In Slack #dev-team channel:<br />
-@developer: "Where do we handle user authentication in our React app?"<br />
-        <br />
-@augment-code: "User authentication is handled in several layers:<br />
-1. Main auth context: \`src/contexts/AuthContext.jsx\` (lines 23-67)<br />
-2. Login component: \`src/components/auth/LoginForm.jsx\` <br />
-3. Protected routes: \`src/components/routing/ProtectedRoute.jsx\`<br />
-4. API integration: \`src/services/authService.js\` (handles tokens)<br />
-        <br />
+# In Slack #dev-team channel:
+@developer: "Where do we handle user authentication in our React app?"
+        
+@augment-code: "User authentication is handled in several layers:
+1. Main auth context: `src/contexts/AuthContext.jsx` (lines 23-67)
+2. Login component: `src/components/auth/LoginForm.jsx` 
+3. Protected routes: `src/components/routing/ProtectedRoute.jsx`
+4. API integration: `src/services/authService.js` (handles tokens)
+        
 The flow starts in AuthContext, uses Firebase Auth, and stores tokens in secure httpOnly cookies."
     </pre>
 </div>
@@ -12750,30 +12750,30 @@ The flow starts in AuthContext, uses Firebase Auth, and stores tokens in secure 
 <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700/50 mb-6">
     <h4 className="text-lg font-semibold text-purple-400 mb-3">Step-by-Step Example:</h4>
     <pre className="text-sm text-gray-300 overflow-x-auto">
-// Step 1: You rename a function in userService.ts<br />
-// OLD:<br />
-export const fetchUserProfile = async (userId: string) =&gt; {<br />
-  return api.get(\`/users/\\`);<br />
-}<br />
-        <br />
-// NEW:<br />
-export const getUserProfile = async (userId: string) =&gt; {<br />
-  return api.get(\`/users/\\`);<br />
-}<br />
-        <br />
-// Step 2: Augment Code immediately suggests updates across 12 files:<br />
-        <br />
-// In UserProfile.tsx:<br />
-- import { fetchUserProfile } from '../services/userService';<br />
-+ import { getUserProfile } from '../services/userService';<br />
-        <br />
-- const profile = await fetchUserProfile(userId);<br />
-+ const profile = await getUserProfile(userId);<br />
-        <br />
-// In userHooks.ts:<br />
-- const data = await fetchUserProfile(id);<br />
-+ const data = await getUserProfile(id);<br />
-        <br />
+// Step 1: You rename a function in userService.ts
+// OLD:
+export const fetchUserProfile = async (userId: string) => {
+  return api.get('/users/${userId}');
+}
+
+// NEW:
+export const getUserProfile = async (userId: string) => {
+  return api.get(`/users/\`);
+}
+        
+// Step 2: Augment Code immediately suggests updates across 12 files:
+        
+// In UserProfile.tsx:
+- import { fetchUserProfile } from '../services/userService';
++ import { getUserProfile } from '../services/userService';
+        
+- const profile = await fetchUserProfile(userId);
++ const profile = await getUserProfile(userId);
+        
+// In userHooks.ts:
+- const data = await fetchUserProfile(id);
++ const data = await getUserProfile(id);
+        
 // ... and 9 more files automatically identified
     </pre>
 </div>
@@ -12981,13 +12981,13 @@ export const getUserProfile = async (userId: string) =&gt; {<br />
     <div className="mb-6">
         <h5 className="text-lg font-semibold text-white mb-3">For VS Code Users:</h5>
         <pre className="text-sm text-gray-300 overflow-x-auto bg-gray-900/50 rounded-lg p-4 border border-gray-700/50">
-# Method 1: VS Code Marketplace<br />
-1. Open VS Code<br />
-2. Go to Extensions (Ctrl+Shift+X)<br />
-3. Search "Augment Code"<br />
-4. Click Install<br />
-            <br />
-# Method 2: Command Line<br />
+# Method 1: VS Code Marketplace
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X)
+3. Search "Augment Code"
+4. Click Install
+            
+# Method 2: Command Line
 code --install-extension augment.augment-code
         </pre>
     </div>
@@ -12995,14 +12995,14 @@ code --install-extension augment.augment-code
     <div>
         <h5 className="text-lg font-semibold text-white mb-3">For JetBrains IDEs (IntelliJ, PyCharm, WebStorm):</h5>
         <pre className="text-sm text-gray-300 overflow-x-auto bg-gray-900/50 rounded-lg p-4 border border-gray-700/50">
-# Method 1: Plugin Marketplace<br />
-1. Open your JetBrains IDE<br />
-2. File → Settings → Plugins<br />
-3. Search "Augment Code"<br />
-4. Install & Restart<br />
-            <br />
-# Method 2: Manual Installation<br />
-1. Download from JetBrains Plugin Repository<br />
+# Method 1: Plugin Marketplace
+1. Open your JetBrains IDE
+2. File → Settings → Plugins
+3. Search "Augment Code"
+4. Install & Restart
+            
+# Method 2: Manual Installation
+1. Download from JetBrains Plugin Repository
 2. Install from disk
         </pre>
     </div>
@@ -13011,10 +13011,10 @@ code --install-extension augment.augment-code
 <div className="bg-gradient-to-br from-green-900/20 to-teal-900/20 rounded-2xl p-6 border border-green-500/20 mb-8">
     <h4 className="text-xl font-bold text-green-400 mb-4">Step 2: Authentication & Setup</h4>
     <pre className="text-sm text-gray-300 overflow-x-auto bg-gray-900/50 rounded-lg p-4 border border-gray-700/50">
-# After installation, Augment Code will prompt:<br />
-1. Sign in with GitHub/Google/Email<br />
-2. Choose your workspace/organization<br />
-3. Grant repository access permissions<br />
+# After installation, Augment Code will prompt:
+1. Sign in with GitHub/Google/Email
+2. Choose your workspace/organization
+3. Grant repository access permissions
 4. Wait for initial codebase indexing (2-5 minutes for most projects)
     </pre>
 </div>
@@ -13053,7 +13053,7 @@ code --install-extension augment.augment-code
                 <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-gray-300">
                         <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
-                        <span>Small projects (&lt; 10k lines): 30 seconds - 2 minutes</span>
+                        <span>Small projects (< 10k lines): 30 seconds - 2 minutes</span>
                     </li>
                     <li className="flex items-start gap-2 text-gray-300">
                         <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
@@ -13488,15 +13488,15 @@ code --install-extension augment.augment-code
             <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700/50 mb-6">
                 <h4 className="text-lg font-semibold text-blue-400 mb-3">Speed Comparison (Average Response Time):</h4>
                 <pre className="text-sm text-gray-300 overflow-x-auto">
-# Benchmark: Generate 500-word article with code examples<br />
-Gemini 2.5 Flash:    1.2 seconds<br />
-GPT-4:               3.8 seconds<br />  
-Claude 3.5 Sonnet:   2.9 seconds<br />
-Gemini 2.0 Pro:      2.1 seconds<br />
-                    <br />
-# Benchmark: Complex reasoning task (10-step logic)<br />
-Gemini 2.5 Flash:    0.8 seconds<br />
-GPT-4:               4.2 seconds<br />
+# Benchmark: Generate 500-word article with code examples
+Gemini 2.5 Flash:    1.2 seconds
+GPT-4:               3.8 seconds  
+Claude 3.5 Sonnet:   2.9 seconds
+Gemini 2.0 Pro:      2.1 seconds
+                    
+# Benchmark: Complex reasoning task (10-step logic)
+Gemini 2.5 Flash:    0.8 seconds
+GPT-4:               4.2 seconds
 Claude 3.5 Sonnet:   3.1 seconds
                 </pre>
             </div>
@@ -13508,25 +13508,25 @@ Claude 3.5 Sonnet:   3.1 seconds
                     <h4 className="text-xl font-bold text-white mb-3">1. Real-Time Chatbots & Customer Service</h4>
                     <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700/50">
                         <pre className="text-sm text-gray-300 overflow-x-auto">
-// Example: Real-time customer service integration<br />
-const geminiFlash = new GoogleAI({<br />
-  model: "gemini-2.5-flash",<br />
-  apiKey: process.env.GOOGLE_AI_KEY<br />
-});<br />
-                            <br />
-async function handleCustomerQuery(userQuery, conversationHistory) {<br />
-  const response = await geminiFlash.generateContent({<br />
-    prompt: \`Customer Service Context: \<br />
-             Customer Query: \<br />
-                            <br />
-             Provide a helpful, empathetic response with specific solutions.<br />
-             Keep response under 150 words for chat interface.\`,<br />
-    maxTokens: 200,<br />
-    temperature: 0.3<br />
-  });<br />
-                            <br />
-  // Average response time: 1.2 seconds vs 3.8s with GPT-4<br />
-  return response.text;<br />
+// Example: Real-time customer service integration
+const geminiFlash = new GoogleAI({
+  model: "gemini-2.5-flash",
+  apiKey: process.env.GOOGLE_AI_KEY
+});
+                            
+async function handleCustomerQuery(userQuery, conversationHistory) {
+  const response = await geminiFlash.generateContent({
+    prompt: `Customer Service Context: \
+             Customer Query: \
+                            
+             Provide a helpful, empathetic response with specific solutions.
+             Keep response under 150 words for chat interface.`,
+    maxTokens: 200,
+    temperature: 0.3
+  });
+                            
+  // Average response time: 1.2 seconds vs 3.8s with GPT-4
+  return response.text;
             }
                     </pre>
                 </div>
@@ -13536,26 +13536,26 @@ async function handleCustomerQuery(userQuery, conversationHistory) {<br />
                 <h4 className="text-xl font-bold text-white mb-3">2. Dynamic Content Generation</h4>
                 <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700/50">
                     <pre className="text-sm text-gray-300 overflow-x-auto">
-# Example: Real-time blog post generation for news sites<br />
-import google.generativeai as genai<br />
-                        <br />
-def generate_breaking_news_article(headline, key_facts):<br />
-    flash_model = genai.GenerativeModel('gemini-2.5-flash')<br />
-                        <br />
-    prompt = f"""<br />
-    Write a 300-word breaking news article:<br />
-    Headline: {headline}<br />
-    Key Facts: {key_facts}<br />
-                        <br />
-    Requirements:<br />
-    - Lead with most important information<br />
-    - Include relevant quotes<br />
-    - SEO-optimized structure<br />
-    - Journalistic tone<br />
-    """<br />
-                        <br />
-    # Generates complete article in ~1.5 seconds<br />
-    response = flash_model.generate_content(prompt)<br />
+# Example: Real-time blog post generation for news sites
+import google.generativeai as genai
+                        
+def generate_breaking_news_article(headline, key_facts):
+    flash_model = genai.GenerativeModel('gemini-2.5-flash')
+                        
+    prompt = f"""
+    Write a 300-word breaking news article:
+    Headline: {headline}
+    Key Facts: {key_facts}
+                        
+    Requirements:
+    - Lead with most important information
+    - Include relevant quotes
+    - SEO-optimized structure
+    - Journalistic tone
+    """
+                        
+    # Generates complete article in ~1.5 seconds
+    response = flash_model.generate_content(prompt)
     return response.text
                     </pre>
                 </div>
@@ -13684,35 +13684,35 @@ def generate_breaking_news_article(headline, key_facts):<br />
           
             <h5 className="text-lg font-semibold text-blue-400 mb-3">1. Advanced Map Planner Application</h5>
             <pre className="text-sm text-gray-300 overflow-x-auto">
-// Featured Template: Intelligent Travel Planning<br />
-class MapPlannerApp {<br />
-  constructor() {<br />
-    this.geminiModel = "gemini-2.5-flash";<br />
-    this.mapsAPI = new GoogleMapsAPI();<br />
-    this.preferences = new UserPreferences();<br />
-  }<br />
-                <br />
-  async generateItinerary(destination, duration, interests) {<br />
-    const locationData = await this.mapsAPI.getPlaceDetails(destination);<br />
-                <br />
-    const itinerary = await this.callGemini({<br />
-      prompt: \`Create a \-day travel itinerary for \.<br />
-               User interests: \<br />
-                <br />
-               Include:<br />
-               - Daily schedules with timing<br />
-               - Restaurant recommendations<br />
-               - Transportation options<br />
-               - Budget estimates<br />
-               - Local insider tips\`,<br />
-      model: this.geminiModel<br />
-    });<br />
-                <br />
-    return this.formatItinerary(itinerary);<br />
-  }<br />
-}<br />
-                <br />
-// Deployment ready with Google Cloud Run integration<br />
+// Featured Template: Intelligent Travel Planning
+class MapPlannerApp {
+  constructor() {
+    this.geminiModel = "gemini-2.5-flash";
+    this.mapsAPI = new GoogleMapsAPI();
+    this.preferences = new UserPreferences();
+  }
+                
+  async generateItinerary(destination, duration, interests) {
+    const locationData = await this.mapsAPI.getPlaceDetails(destination);
+                
+    const itinerary = await this.callGemini({
+      prompt: `Create a \-day travel itinerary for \.
+               User interests: \
+                
+               Include:
+               - Daily schedules with timing
+               - Restaurant recommendations
+               - Transportation options
+               - Budget estimates
+               - Local insider tips`,
+      model: this.geminiModel
+    });
+                
+    return this.formatItinerary(itinerary);
+  }
+}
+                
+// Deployment ready with Google Cloud Run integration
 export default MapPlannerApp;
             </pre>
         </div>
@@ -13843,23 +13843,23 @@ export default MapPlannerApp;
             <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700/50">
                 <h4 className="text-xl font-bold text-white mb-3">Gemini 2.5 Flash - My Daily Driver (80% of use cases):</h4>
                 <pre className="text-sm text-gray-300 overflow-x-auto">
-// Perfect for these IImagined.ai automation patterns:<br />
-const flashUseCases = [<br />
-  "Real-time data processing",<br />
-  "API response generation", <br />
-  "Code review and suggestions",<br />
-  "Content optimization",<br />
-  "User query processing"<br />
-];<br />
-                    <br />
-// Example: Processing 1000+ automation requests per hour<br />
-async function processAutomationQueue(queue) {<br />
-  const flash = new GoogleAI('gemini-2.5-flash');<br />
-                    <br />
-  // Consistently sub-2-second responses<br />
-  return Promise.all(<br />
-    queue.map(request => flash.generateContent(request.prompt))<br />
-  );<br />
+// Perfect for these IImagined.ai automation patterns:
+const flashUseCases = [
+  "Real-time data processing",
+  "API response generation", 
+  "Code review and suggestions",
+  "Content optimization",
+  "User query processing"
+];
+                    
+// Example: Processing 1000+ automation requests per hour
+async function processAutomationQueue(queue) {
+  const flash = new GoogleAI('gemini-2.5-flash');
+                    
+  // Consistently sub-2-second responses
+  return Promise.all(
+    queue.map(request => flash.generateContent(request.prompt))
+  );
         }
             </pre>
         </div>
@@ -13873,17 +13873,17 @@ async function processAutomationQueue(queue) {<br />
         <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 rounded-2xl p-6 border border-blue-500/20">
             <h4 className="text-xl font-bold text-blue-400 mb-4">Step 1: Account Creation & Authentication</h4>
             <pre className="text-sm text-gray-300 overflow-x-auto bg-gray-900/50 rounded-lg p-4 border border-gray-700/50">
-# Navigate to Google AI Studio<br />
-URL: https://aistudio.google.com<br />
-                <br />
-# Authentication options:<br />
-1. Google Account (recommended)<br />
-2. GitHub integration<br />  
-3. Enterprise SSO (for organizations)<br />
-                <br />
-# Required permissions:<br />
-- Google Cloud Platform access<br />
-- API usage tracking<br />
+# Navigate to Google AI Studio
+URL: https://aistudio.google.com
+                
+# Authentication options:
+1. Google Account (recommended)
+2. GitHub integration  
+3. Enterprise SSO (for organizations)
+                
+# Required permissions:
+- Google Cloud Platform access
+- API usage tracking
 - Project collaboration (if working in teams)
             </pre>
         </div>
@@ -13891,23 +13891,23 @@ URL: https://aistudio.google.com<br />
         <div className="bg-gradient-to-br from-green-900/20 to-emerald-900/20 rounded-2xl p-6 border border-green-500/20">
             <h4 className="text-xl font-bold text-green-400 mb-4">Step 2: Project Initialization</h4>
             <pre className="text-sm text-gray-300 overflow-x-auto bg-gray-900/50 rounded-lg p-4 border border-gray-700/50">
-// Create your first project<br />
-const projectConfig = {<br />
-  name: "my-first-ai-app",<br />
-  description: "Learning Google AI Studio capabilities",<br />
-  primaryModel: "gemini-2.5-flash", // Start with Flash for speed<br />
-  enabledFeatures: [<br />
-    "code-generation",<br />
-    "image-analysis", <br />
-    "model-comparison",<br />
-    "api-deployment"<br />
-  ]<br />
-};<br />
-                <br />
-// Google AI Studio automatically:<br />
-// 1. Provisions cloud resources<br />
-// 2. Sets up development environment<br />
-// 3. Generates API keys<br />
+// Create your first project
+const projectConfig = {
+  name: "my-first-ai-app",
+  description: "Learning Google AI Studio capabilities",
+  primaryModel: "gemini-2.5-flash", // Start with Flash for speed
+  enabledFeatures: [
+    "code-generation",
+    "image-analysis", 
+    "model-comparison",
+    "api-deployment"
+  ]
+};
+                
+// Google AI Studio automatically:
+// 1. Provisions cloud resources
+// 2. Sets up development environment
+// 3. Generates API keys
 // 4. Creates starter templates
             </pre>
         </div>
@@ -14399,13 +14399,13 @@ const projectConfig = {<br />
 
                     <h3 className="text-2xl font-bold text-cyan-400 mb-4">General Questions</h3>
 
-                    <p className="text-gray-300 mb-4"><strong>Q: Is Dart AI really free?</strong><br />
+                    <p className="text-gray-300 mb-4"><strong>Q: Is Dart AI really free?</strong>
   A: Yes, Dart AI is completely free for unlimited users and projects. The company monetizes through enterprise consulting and custom integrations.</p>
 
-                    <p className="text-gray-300 mb-4"><strong>Q: How does Dart AI compare to traditional project managers?</strong><br />
+                    <p className="text-gray-300 mb-4"><strong>Q: How does Dart AI compare to traditional project managers?</strong>
   A: Dart AI handles routine project management tasks, freeing human project managers to focus on strategy, stakeholder management, and complex problem-solving.</p>
 
-                    <p className="text-gray-300 mb-4"><strong>Q: What integrations are available?</strong><br />
+                    <p className="text-gray-300 mb-4"><strong>Q: What integrations are available?</strong>
   A: Dart AI integrates with 200+ tools including Slack, GitHub, Figma, Google Workspace, Microsoft 365, and most major development and design platforms.</p>
 
                     <hr>
@@ -14665,9 +14665,9 @@ DeepAgent Architecture:
 
                             <p className="text-gray-300 mb-4"><strong>Real Example:</strong></p>
                             <blockquote className="border-l-4 border-purple-500 pl-4 italic text-gray-300 my-6">
-                                <p className="text-gray-300 mb-4"><strong>DeepAgent detected:</strong> "API response time increased to 2.3s (target: <500ms)"<br />
-                                <strong>Analysis:</strong> "Database query inefficiency in product search endpoint"<br />
-                                <strong>Action taken:</strong> "Added composite index on (category, price, availability), implemented Redis caching with 15min TTL, optimized query to reduce DB calls from 12 to 3"<br />
+                                <p className="text-gray-300 mb-4"><strong>DeepAgent detected:</strong> "API response time increased to 2.3s (target: <500ms)"
+                                <strong>Analysis:</strong> "Database query inefficiency in product search endpoint"
+                                <strong>Action taken:</strong> "Added composite index on (category, price, availability), implemented Redis caching with 15min TTL, optimized query to reduce DB calls from 12 to 3"
                                 <strong>Result:</strong> "Response time reduced to 180ms, 85% improvement"</p>
                             </blockquote>
 
@@ -14863,24 +14863,24 @@ preferences:
 
                                 <h3 className="text-2xl font-bold text-purple-400 mb-4">General Questions</h3>
 
-                                <p className="text-gray-300 mb-4"><strong>Q: How does DeepAgent pricing work?</strong><br />
+                                <p className="text-gray-300 mb-4"><strong>Q: How does DeepAgent pricing work?</strong>
   A: DeepAgent offers a free tier for small projects, with paid plans starting at $49/month for professional features and unlimited deployments.</p>
 
-                                <p className="text-gray-300 mb-4"><strong>Q: Can DeepAgent work with existing codebases?</strong><br />
+                                <p className="text-gray-300 mb-4"><strong>Q: Can DeepAgent work with existing codebases?</strong>
   A: Yes, DeepAgent can analyze and enhance existing applications, suggesting optimizations and automatically implementing improvements.</p>
 
-                                <p className="text-gray-300 mb-4"><strong>Q: How does DeepAgent ensure code quality?</strong><br />
+                                <p className="text-gray-300 mb-4"><strong>Q: How does DeepAgent ensure code quality?</strong>
   A: DeepAgent uses advanced static analysis, follows industry best practices, and includes comprehensive testing in all generated code.</p>
 
                                 <h3 className="text-2xl font-bold text-purple-400 mb-4">Technical Questions</h3>
 
-                                <p className="text-gray-300 mb-4"><strong>Q: What cloud providers does DeepAgent support?</strong><br />
+                                <p className="text-gray-300 mb-4"><strong>Q: What cloud providers does DeepAgent support?</strong>
   A: DeepAgent supports AWS, Google Cloud Platform, Microsoft Azure, and can deploy to any Kubernetes cluster.</p>
 
-                                <p className="text-gray-300 mb-4"><strong>Q: Can I customize DeepAgent's generated code?</strong><br />
+                                <p className="text-gray-300 mb-4"><strong>Q: Can I customize DeepAgent's generated code?</strong>
   A: Absolutely. DeepAgent generates clean, readable code that you can modify. It also learns from your changes to improve future generations.</p>
 
-                                <p className="text-gray-300 mb-4"><strong>Q: How secure is DeepAgent-generated code?</strong><br />
+                                <p className="text-gray-300 mb-4"><strong>Q: How secure is DeepAgent-generated code?</strong>
   A: DeepAgent implements security best practices by default, including OWASP Top 10 protection, secure authentication, and encrypted data storage.</p>
 
                                 <hr>
@@ -15227,7 +15227,7 @@ Cursor AI:             2.1 seconds</code></pre>
 
                                                     <h3 className="text-2xl font-bold text-blue-400 mb-4">The Context Switching Revolution</h3>
 
-                                                    <p className="text-gray-300 mb-4"><strong className="text-white">The Problem Windsurf Solves:</strong><br />
+                                                    <p className="text-gray-300 mb-4"><strong className="text-white">The Problem Windsurf Solves:</strong>
   As a developer building complex automation systems, I spend significant time researching APIs, debugging integration issues, and maintaining consistency across projects. Traditional IDEs force me to juggle multiple tools:</p>
 
                                                     <p className="text-gray-300 mb-4"><strong className="text-white">My Old Workflow (Pre-Windsurf):</strong></p>
@@ -15288,12 +15288,12 @@ export async function createStripeCustomer(
     });
 
     // AI adds error handling based on my patterns
-    console.log(\`Created Stripe customer: \\`);
+    console.log(`Created Stripe customer: \`);
     return customer;
     
   } catch (error) {
     console.error('Stripe customer creation failed:', error);
-    throw new Error(\`Failed to create customer: \\`);
+    throw new Error(`Failed to create customer: \`);
                       }
 }</code></pre>
 
@@ -15326,7 +15326,7 @@ export async function createStripeCustomer(
                                                 <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>VS Code: Free (but limited AI capabilities)</span></li>
                                             </ul>
 
-                                            <p className="text-gray-300 mb-4"><strong className="text-white">Value Analysis:</strong><br />
+                                            <p className="text-gray-300 mb-4"><strong className="text-white">Value Analysis:</strong>
   If Windsurf saves me 30 minutes per day (conservative estimate):</p>
                                             <ul className="space-y-2 mb-6 text-gray-300">
                                                 <li className="flex items-start gap-2 text-gray-300 mb-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div><span>30 minutes × 250 working days = 125 hours annually</span></li>
@@ -15338,24 +15338,24 @@ export async function createStripeCustomer(
 
                                             <h3 className="text-2xl font-bold text-blue-400 mb-4">General Questions</h3>
 
-                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: Is Windsurf Wave 2 free?</strong><br />
+                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: Is Windsurf Wave 2 free?</strong>
   A: Yes, Windsurf offers a comprehensive free tier with core AI features. The Pro plan ($10/month) adds advanced features like priority AI processing, enhanced memory, and team collaboration.</p>
 
-                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: How does Windsurf compare to GitHub Copilot?</strong><br />
+                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: How does Windsurf compare to GitHub Copilot?</strong>
   A: While Copilot focuses on code completion, Windsurf provides a complete AI-powered development environment with web search, automated learning, and contextual problem-solving.</p>
 
-                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: Can I use my existing VS Code extensions?</strong><br />
+                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: Can I use my existing VS Code extensions?</strong>
   A: Yes, Windsurf is built on VS Code OSS and supports the vast majority of VS Code extensions.</p>
 
                                             <h3 className="text-2xl font-bold text-blue-400 mb-4">Technical Questions</h3>
 
-                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: Does Windsurf work offline?</strong><br />
+                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: Does Windsurf work offline?</strong>
   A: Basic IDE functionality works offline, but AI features like web search, Cascade AI assistance, and automated memories require an internet connection.</p>
 
-                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: How does the automated memory feature work?</strong><br />
+                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: How does the automated memory feature work?</strong>
   A: Cascade AI analyzes your coding patterns, project structure, and preferences over time, then uses this knowledge to provide increasingly personalized suggestions and solutions.</p>
 
-                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: What programming languages are supported?</strong><br />
+                                            <p className="text-gray-300 mb-4"><strong className="text-white">Q: What programming languages are supported?</strong>
   A: Windsurf supports 30+ programming languages with first-class support for JavaScript/TypeScript, Python, Java, C#, Go, Rust, and more.</p>
 
                                             <h2 className="text-3xl font-bold text-white mb-6">Final Thoughts: The Future of Developer Productivity</h2>
@@ -15629,7 +15629,7 @@ interface GeminiCanvasSystem {
 
                                                                 <h3 className="text-2xl font-bold text-purple-400 mb-4">Revolutionary Features That Set Canvas Apart</h3>
 
-                                                                <p className="text-gray-300 mb-4"><strong>1. True Multi-Modal Understanding</strong><br />
+                                                                <p className="text-gray-300 mb-4"><strong>1. True Multi-Modal Understanding</strong>
   Unlike competitors that handle code in isolation, Gemini Canvas understands:</p>
                                                                 <ul className="space-y-2 mb-6">
                                                                     <li className="flex items-start gap-2 text-gray-300"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span><strong>Visual mockups</strong> → Generates matching code</span></li>
@@ -15731,7 +15731,7 @@ https://gemini.google.com
 
                                                                             <h3 className="text-2xl font-bold text-purple-400 mb-4">1. Intelligent Code Generation with Context</h3>
 
-                                                                            <p className="text-gray-300 mb-4"><strong>Beyond Simple Autocomplete:</strong><br />
+                                                                            <p className="text-gray-300 mb-4"><strong>Beyond Simple Autocomplete:</strong>
   Gemini Canvas doesn't just complete code—it understands your entire project architecture and generates contextually appropriate solutions.</p>
 
                                                                             <pre className="bg-gray-900/50 rounded-lg p-4 overflow-x-auto mb-6"><code className="text-sm text-gray-300">// Real Example: Building a Weather Dashboard
@@ -15786,12 +15786,12 @@ const WeatherWidget = ({ location = "San Francisco" }) => {
 
     <h3 className="text-2xl font-bold text-purple-400 mb-4">2. Real-Time Visual Development</h3>
 
-    <p className="text-gray-300 mb-4"><strong>Live Preview with Hot Reloading:</strong><br />
+    <p className="text-gray-300 mb-4"><strong>Live Preview with Hot Reloading:</strong>
   Every code change instantly reflects in the preview pane, with intelligent error boundaries that prevent crashes.</p>
 
     <h3 className="text-2xl font-bold text-purple-400 mb-4">3. Advanced AI-Powered Debugging</h3>
 
-    <p className="text-gray-300 mb-4"><strong>Intelligent Error Detection & Resolution:</strong><br />
+    <p className="text-gray-300 mb-4"><strong>Intelligent Error Detection & Resolution:</strong>
   Canvas doesn't just point out errors—it understands the root cause and provides comprehensive fixes.</p>
 
     <pre className="bg-gray-900/50 rounded-lg p-4 overflow-x-auto mb-6"><code className="text-sm text-gray-300">// Example: Complex debugging scenario
@@ -15889,7 +15889,7 @@ def process_user_data(users):
 
         <h3 className="text-2xl font-bold text-purple-400 mb-4">The Game-Changing Reality</h3>
 
-        <p className="text-gray-300 mb-4"><strong>Traditional Development Bottlenecks:</strong><br />
+        <p className="text-gray-300 mb-4"><strong>Traditional Development Bottlenecks:</strong>
   In my 15+ years of development, I've seen the same patterns repeatedly:</p>
         <ul className="space-y-2 mb-6">
             <li className="flex items-start gap-2 text-gray-300"><div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div><span>Hours spent on boilerplate code</span></li>
@@ -15913,13 +15913,13 @@ with_canvas:
 
             <h3 className="text-2xl font-bold text-purple-400 mb-4">Real Production Use Cases at IImagined.ai</h3>
 
-            <p className="text-gray-300 mb-4"><strong>1. Rapid Prototyping for Clients:</strong><br />
+            <p className="text-gray-300 mb-4"><strong>1. Rapid Prototyping for Clients:</strong>
   We use Canvas to create functional prototypes during client meetings. What used to take a week of back-and-forth now happens in real-time during a 1-hour call.</p>
 
-            <p className="text-gray-300 mb-4"><strong>2. Automating Repetitive Tasks:</strong><br />
+            <p className="text-gray-300 mb-4"><strong>2. Automating Repetitive Tasks:</strong>
   Canvas generates our boilerplate code, API integrations, and even documentation. This freed up our team to focus on unique business logic and innovation.</p>
 
-            <p className="text-gray-300 mb-4"><strong>3. Learning New Technologies:</strong><br />
+            <p className="text-gray-300 mb-4"><strong>3. Learning New Technologies:</strong>
   When exploring new frameworks or libraries, Canvas provides working examples instantly, accelerating our learning curve dramatically.</p>
 
             <h3 className="text-2xl font-bold text-purple-400 mb-4">When Canvas Falls Short</h3>
@@ -15934,35 +15934,35 @@ with_canvas:
 
             <h3 className="text-2xl font-bold text-purple-400 mb-4">General Questions</h3>
 
-            <p className="text-gray-300 mb-4"><strong>Q: Is Gemini Canvas really completely free?</strong><br />
+            <p className="text-gray-300 mb-4"><strong>Q: Is Gemini Canvas really completely free?</strong>
   A: Yes, Canvas is 100% free with no hidden costs. Google provides this as part of their Gemini ecosystem to encourage adoption of their AI platform.</p>
 
-            <p className="text-gray-300 mb-4"><strong>Q: What languages and frameworks does Canvas support?</strong><br />
+            <p className="text-gray-300 mb-4"><strong>Q: What languages and frameworks does Canvas support?</strong>
   A: Canvas supports all major languages including JavaScript, TypeScript, Python, Java, C#, Go, Rust, and more. It excels with modern frameworks like React, Vue, Angular, Next.js, Django, and FastAPI.</p>
 
-            <p className="text-gray-300 mb-4"><strong>Q: Can Canvas work with existing codebases?</strong><br />
+            <p className="text-gray-300 mb-4"><strong>Q: Can Canvas work with existing codebases?</strong>
   A: Absolutely. Canvas analyzes your existing code structure and maintains consistency with your patterns, making it perfect for adding features to established projects.</p>
 
             <h3 className="text-2xl font-bold text-purple-400 mb-4">Technical Questions</h3>
 
-            <p className="text-gray-300 mb-4"><strong>Q: How does Canvas handle sensitive data and security?</strong><br />
+            <p className="text-gray-300 mb-4"><strong>Q: How does Canvas handle sensitive data and security?</strong>
   A: Canvas processes code in secure Google Cloud environments. Your code is not used for model training, and enterprise options include on-premises deployment for sensitive projects.</p>
 
-            <p className="text-gray-300 mb-4"><strong>Q: What are the limitations on project size?</strong><br />
+            <p className="text-gray-300 mb-4"><strong>Q: What are the limitations on project size?</strong>
   A: Canvas can handle projects up to 100,000 lines of code effectively. For larger projects, it's best to work on individual modules or components.</p>
 
-            <p className="text-gray-300 mb-4"><strong>Q: Can I use Canvas offline?</strong><br />
+            <p className="text-gray-300 mb-4"><strong>Q: Can I use Canvas offline?</strong>
   A: Currently, Canvas requires an internet connection as it relies on Google's cloud infrastructure for AI processing.</p>
 
             <h3 className="text-2xl font-bold text-purple-400 mb-4">Comparison Questions</h3>
 
-            <p className="text-gray-300 mb-4"><strong>Q: How does Canvas compare to GitHub Copilot?</strong><br />
+            <p className="text-gray-300 mb-4"><strong>Q: How does Canvas compare to GitHub Copilot?</strong>
   A: While Copilot excels at code completion, Canvas provides complete application generation with visualization. Canvas is also free, making it more accessible for individual developers and startups.</p>
 
-            <p className="text-gray-300 mb-4"><strong>Q: Should I switch from my current IDE to Canvas?</strong><br />
+            <p className="text-gray-300 mb-4"><strong>Q: Should I switch from my current IDE to Canvas?</strong>
   A: Canvas complements rather than replaces your IDE. Use Canvas for rapid prototyping and initial development, then refine in your preferred IDE.</p>
 
-            <p className="text-gray-300 mb-4"><strong>Q: Is Canvas suitable for production applications?</strong><br />
+            <p className="text-gray-300 mb-4"><strong>Q: Is Canvas suitable for production applications?</strong>
   A: Yes, Canvas generates production-quality code. However, always review and test thoroughly before deploying to production environments.</p>
 
             <hr>

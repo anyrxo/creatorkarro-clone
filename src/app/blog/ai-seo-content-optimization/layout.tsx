@@ -1,42 +1,43 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'AI SEO Content Optimization: Generate 500+ Ranking Articles/Month with Claude 4 | IImagined.ai',
-  description: 'Master AI-powered SEO content optimization with Claude 4 and GPT-4.1. Learn to create hundreds of ranking articles that dominate Google search results.',
+  title: 'AI SEO Content Optimization: Rank #1 on Google with Automated Intelligence | IImagined.ai',
+  description: 'Master AI-powered SEO strategies to create content that dominates search results. Learn how to use AI tools for keyword research, content generation, and optimization to drive 10x organic traffic.',
   keywords: [
     'ai seo content optimization',
-    'ai seo writing',
-    'claude 4 seo content',
-    'ai content seo optimization',
+    'ai seo tools',
     'automated seo content',
-    'ai seo article generation',
-    'seo content automation',
-    'ai powered seo writing',
-    'bulk seo content creation',
-    'ai seo optimization tools',
+    'ai content generation seo',
+    'seo optimization with ai',
+    'ai powered seo',
+    'artificial intelligence seo',
+    'ai content writing seo',
+    'seo automation tools',
+    'ai seo strategy',
+    'machine learning seo',
+    'ai keyword research',
     'automated content optimization',
-    'ai seo content strategy',
-    'seo content scaling ai',
-    'ai google ranking content'
+    'ai seo software',
+    'seo content ai generator'
   ],
   openGraph: {
-    title: 'AI SEO Content Optimization: Generate 500+ Ranking Articles/Month',
-    description: 'Advanced AI-powered SEO content optimization with Claude 4 for creating hundreds of Google-ranking articles.',
+    title: 'AI SEO Content Optimization: Rank #1 on Google with Automated Intelligence',
+    description: 'Master AI-powered SEO strategies to dominate search results and drive 10x organic traffic with automated content optimization.',
     type: 'article',
-    publishedTime: '2024-11-05T10:00:00.000Z',
+    publishedTime: '2024-10-15T10:00:00.000Z',
     authors: ['Anyro'],
-    tags: ['AI SEO', 'Content Optimization', 'Claude 4', 'SEO Writing', 'Content Automation'],
+    tags: ['AI SEO', 'Content Optimization', 'Search Engine Optimization', 'AI Tools', 'Content Marketing'],
     images: [
       {
         url: 'https://iimagined.ai/blog/ai-seo-content-optimization/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'AI SEO Content Optimization - Ranking Article Generation'
+        alt: 'AI SEO Content Optimization - Automated Intelligence for Google Rankings'
       }
     ]
   }
 }
 
-export default function AISEOContentLayout({ children }: { children: React.ReactNode }) {
+export default function AISEOLayout({ children }: { children: React.ReactNode }) {
   return children
 }
