@@ -1,11 +1,557 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 
-export default function DisabledPage() {
+export default function MobileAppAutomationPage() {
   return (
-    <div className="min-h-screen bg-dark flex items-center justify-center">
-      <p className="text-gray-400">This page is temporarily disabled due to build issues.</p>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800"><section className="relative py-20 px-4 text-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-600/20" />
+        <div className="relative max-w-4xl mx-auto">
+          <div className="inline-flex items-center px-4 py-2 bg-blue-500/20 rounded-full text-blue-300 text-sm font-medium mb-6">
+            <span className="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse" />
+            MOBILE APP AUTOMATION
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6">
+            Build Apps That Make
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"> $80K+/Month</span>
+          </h1>
+          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Master mobile app automation with intelligent push notifications, automated revenue optimization, and user engagement systems that scale without manual intervention.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="#automation-tools" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl text-white font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105">
+              Explore App Automation Tools
+            </Link>
+            <Link href="#revenue-strategies" className="px-8 py-4 border border-gray-600 rounded-xl text-white font-semibold hover:bg-gray-800 transition-all duration-300 hover:scale-105">
+              View Revenue Strategies
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+              <div className="text-3xl font-bold text-blue-400 mb-2">$80K+</div>
+              <div className="text-gray-300">Monthly Revenue</div>
+            </div>
+            <div className="text-center p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+              <div className="text-3xl font-bold text-purple-400 mb-2">95%</div>
+              <div className="text-gray-300">Automation Rate</div>
+            </div>
+            <div className="text-center p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+              <div className="text-3xl font-bold text-green-400 mb-2">24/7</div>
+              <div className="text-gray-300">Operation Time</div>
+            </div>
+            <div className="text-center p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+              <div className="text-3xl font-bold text-cyan-400 mb-2">85%</div>
+              <div className="text-gray-300">User Retention</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="automation-tools" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">
+            Essential <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">App Automation Tools</span>
+          </h2>
+          <p className="text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto">
+            Professional-grade tools for automating every aspect of mobile app development, marketing, and revenue generation
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mr-4">
+                  <span className="text-blue-400 font-bold">🔔</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">Firebase Cloud Messaging</h3>
+                  <p className="text-gray-400">Push Notifications</p>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Automated push notification campaigns with user segmentation, A/B testing, and conversion tracking for maximum engagement.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Auto campaigns</span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">User targeting</span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">A/B testing</span>
+              </div>
+            </div>
+
+            <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-purple-500/50 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mr-4">
+                  <span className="text-purple-400 font-bold">📊</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">App Analytics Pro</h3>
+                  <p className="text-gray-400">User Behavior Analytics</p>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Advanced analytics automation with real-time user tracking, funnel analysis, and automated reports for data-driven decisions.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">Real-time tracking</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">Funnel analysis</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">Auto reports</span>
+              </div>
+            </div>
+
+            <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-green-500/50 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mr-4">
+                  <span className="text-green-400 font-bold">💳</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">Revenue Optimizer</h3>
+                  <p className="text-gray-400">Monetization Automation</p>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Automated in-app purchase optimization, dynamic pricing, and subscription management for maximum revenue per user.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm">Dynamic pricing</span>
+                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm">Auto upsells</span>
+                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm">Revenue tracking</span>
+              </div>
+            </div>
+
+            <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-cyan-500/50 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center mr-4">
+                  <span className="text-cyan-400 font-bold">🤖</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">Appium Mobile Testing</h3>
+                  <p className="text-gray-400">Automated Testing</p>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Cross-platform mobile testing automation with UI testing, performance monitoring, and automated bug detection.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm">Cross-platform</span>
+                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm">UI testing</span>
+                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm">Auto bug detection</span>
+              </div>
+            </div>
+
+            <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-yellow-500/50 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center mr-4">
+                  <span className="text-yellow-400 font-bold">🚀</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">App Store Optimization</h3>
+                  <p className="text-gray-400">ASO Automation</p>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Automated app store optimization with keyword research, review management, and ranking improvement strategies.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm">Keyword research</span>
+                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm">Review management</span>
+                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm">Ranking boost</span>
+              </div>
+            </div>
+
+            <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-red-500/50 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center mr-4">
+                  <span className="text-red-400 font-bold">👥</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">User Engagement Engine</h3>
+                  <p className="text-gray-400">Retention Automation</p>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Automated user engagement campaigns with personalized content, gamification systems, and churn prevention strategies.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-sm">Personalization</span>
+                <span className="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-sm">Gamification</span>
+                <span className="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-sm">Churn prevention</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="revenue-strategies" className="py-20 px-4 bg-gray-800/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">
+            Automated <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Revenue Strategies</span>
+          </h2>
+          <p className="text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto">
+            Proven automation strategies that generate consistent revenue from mobile apps without manual intervention
+          </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="p-8 bg-gray-800/50 rounded-xl border border-gray-700">
+              <h3 className="text-2xl font-bold text-white mb-4">Freemium Conversion Automation</h3>
+              <p className="text-gray-300 mb-6">
+                Automated freemium-to-premium conversion system with intelligent feature gating, usage tracking, and targeted upgrade prompts.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm mr-3">1</span>
+                  <span className="text-gray-300">User behavior analysis and segmentation</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm mr-3">2</span>
+                  <span className="text-gray-300">Automated feature limitation triggers</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm mr-3">3</span>
+                  <span className="text-gray-300">Personalized upgrade messaging</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm mr-3">4</span>
+                  <span className="text-gray-300">A/B test different pricing strategies</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm mr-3">5</span>
+                  <span className="text-gray-300">Automated follow-up campaigns</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm mr-3">6</span>
+                  <span className="text-gray-300">Revenue tracking and optimization</span>
+                </div>
+              </div>
+              <div className="mt-6 p-4 bg-blue-500/10 rounded-lg">
+                <p className="text-blue-300 text-sm">
+                  <strong>Results:</strong> 35% conversion rate, $12 average revenue per user, 80% user satisfaction
+                </p>
+              </div>
+            </div>
+
+            <div className="p-8 bg-gray-800/50 rounded-xl border border-gray-700">
+              <h3 className="text-2xl font-bold text-white mb-4">Subscription Revenue Maximization</h3>
+              <p className="text-gray-300 mb-6">
+                Advanced subscription automation with dynamic pricing, retention campaigns, and churn prediction to maximize lifetime value.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm mr-3">1</span>
+                  <span className="text-gray-300">AI-powered pricing optimization</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm mr-3">2</span>
+                  <span className="text-gray-300">Automated trial-to-paid conversion</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm mr-3">3</span>
+                  <span className="text-gray-300">Churn prediction and prevention</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm mr-3">4</span>
+                  <span className="text-gray-300">Win-back campaign automation</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm mr-3">5</span>
+                  <span className="text-gray-300">Tier upgrade recommendation engine</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm mr-3">6</span>
+                  <span className="text-gray-300">Payment failure recovery automation</span>
+                </div>
+              </div>
+              <div className="mt-6 p-4 bg-purple-500/10 rounded-lg">
+                <p className="text-purple-300 text-sm">
+                  <strong>Performance:</strong> 92% subscription retention, $89 average LTV, 15% monthly growth
+                </p>
+              </div>
+            </div>
+
+            <div className="p-8 bg-gray-800/50 rounded-xl border border-gray-700">
+              <h3 className="text-2xl font-bold text-white mb-4">In-App Purchase Optimization</h3>
+              <p className="text-gray-300 mb-6">
+                Smart in-app purchase automation with behavioral triggers, dynamic offers, and personalized recommendations.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm mr-3">1</span>
+                  <span className="text-gray-300">User engagement pattern analysis</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm mr-3">2</span>
+                  <span className="text-gray-300">Contextual purchase prompts</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm mr-3">3</span>
+                  <span className="text-gray-300">Limited-time offer automation</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm mr-3">4</span>
+                  <span className="text-gray-300">Bundle recommendation engine</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm mr-3">5</span>
+                  <span className="text-gray-300">Price sensitivity testing</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm mr-3">6</span>
+                  <span className="text-gray-300">Revenue attribution tracking</span>
+                </div>
+              </div>
+              <div className="mt-6 p-4 bg-green-500/10 rounded-lg">
+                <p className="text-green-300 text-sm">
+                  <strong>Impact:</strong> 280% increase in IAP revenue, $4.50 average purchase value, 45% buy rate
+                </p>
+              </div>
+            </div>
+
+            <div className="p-8 bg-gray-800/50 rounded-xl border border-gray-700">
+              <h3 className="text-2xl font-bold text-white mb-4">Ad Revenue Maximization</h3>
+              <p className="text-gray-300 mb-6">
+                Intelligent ad placement and optimization with user experience protection and revenue maximization algorithms.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center text-white text-sm mr-3">1</span>
+                  <span className="text-gray-300">Dynamic ad placement optimization</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center text-white text-sm mr-3">2</span>
+                  <span className="text-gray-300">User tolerance monitoring</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center text-white text-sm mr-3">3</span>
+                  <span className="text-gray-300">Rewarded ad integration automation</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center text-white text-sm mr-3">4</span>
+                  <span className="text-gray-300">Ad network waterfall optimization</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center text-white text-sm mr-3">5</span>
+                  <span className="text-gray-300">Fill rate and eCPM tracking</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center text-white text-sm mr-3">6</span>
+                  <span className="text-gray-300">A/B test ad formats and timing</span>
+                </div>
+              </div>
+              <div className="mt-6 p-4 bg-cyan-500/10 rounded-lg">
+                <p className="text-cyan-300 text-sm">
+                  <strong>Efficiency:</strong> $2.35 eCPM, 98% fill rate, 85% user retention maintained
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">
+            Development <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Automation Pipeline</span>
+          </h2>
+          <p className="text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto">
+            Streamlined development workflows that automate testing, deployment, and performance monitoring
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-xl border border-blue-500/30">
+              <h3 className="text-xl font-bold text-white mb-4">Automated Testing Suite</h3>
+              <p className="text-gray-300 mb-4">
+                Comprehensive automated testing with unit tests, UI tests, performance tests, and device compatibility checks.
+              </p>
+              <div className="space-y-2 text-sm">
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Cross-platform testing (iOS/Android)</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Device farm integration</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Performance benchmarking</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Regression test automation</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 bg-gradient-to-br from-purple-500/10 to-pink-600/10 rounded-xl border border-purple-500/30">
+              <h3 className="text-xl font-bold text-white mb-4">CI/CD Pipeline</h3>
+              <p className="text-gray-300 mb-4">
+                Automated build, test, and deployment pipeline with app store submission and rollback capabilities.
+              </p>
+              <div className="space-y-2 text-sm">
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Automated build processes</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Code signing automation</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Store submission workflows</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Rollback mechanisms</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 bg-gradient-to-br from-green-500/10 to-cyan-600/10 rounded-xl border border-green-500/30">
+              <h3 className="text-xl font-bold text-white mb-4">Performance Monitoring</h3>
+              <p className="text-gray-300 mb-4">
+                Real-time performance monitoring with crash detection, memory profiling, and user experience analytics.
+              </p>
+              <div className="space-y-2 text-sm">
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Real-time crash reporting</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Memory leak detection</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">Battery usage optimization</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                  <span className="text-gray-300">User flow analytics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gray-800/20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Success Stories</span>
+          </h2>
+
+          <div className="space-y-8">
+            <div className="p-8 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-xl border border-blue-500/30">
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xl">FG</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">FitnessGuru - From $0 to $85K/Month Revenue</h3>
+                  <p className="text-gray-300 mb-4">
+                    "Mobile app automation transformed our fitness app from zero revenue to $85K monthly recurring revenue. Automated push notifications increased user engagement by 340%, while dynamic pricing optimization boosted subscription conversions to 89%."
+                  </p>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <span className="text-blue-400">$85K monthly revenue</span>
+                    <span className="text-purple-400">340% engagement increase</span>
+                    <span className="text-green-400">89% conversion rate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-8 bg-gradient-to-r from-green-500/10 to-cyan-600/10 rounded-xl border border-green-500/30">
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-cyan-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xl">ST</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">StudyTracker - 2.5M Active Users with 95% Automation</h3>
+                  <p className="text-gray-300 mb-4">
+                    "Our study app scaled to 2.5M active users with 95% automated operations. Automated user onboarding, personalized study plans, and intelligent retention campaigns run completely hands-free while generating $45K monthly revenue."
+                  </p>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <span className="text-green-400">2.5M active users</span>
+                    <span className="text-cyan-400">95% automation</span>
+                    <span className="text-blue-400">$45K monthly revenue</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-8 bg-gradient-to-r from-purple-500/10 to-pink-600/10 rounded-xl border border-purple-500/30">
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xl">MS</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">MealSync - Food Delivery App Automation Success</h3>
+                  <p className="text-gray-300 mb-4">
+                    "Automation enabled our food delivery app to process 50K+ orders daily with minimal manual intervention. Automated driver matching, demand prediction, and dynamic pricing generate $120K monthly revenue across 15 cities."
+                  </p>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <span className="text-purple-400">50K+ daily orders</span>
+                    <span className="text-pink-400">15 cities</span>
+                    <span className="text-yellow-400">$120K monthly revenue</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-600/10 to-purple-600/10">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="p-8 bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-xl border border-blue-500/30 mb-8">
+            <h3 className="text-white text-2xl font-bold mb-4">Master Mobile App Automation</h3>
+            <p className="text-blue-100 mb-6">
+              Transform your mobile development workflow with our comprehensive automation course. Learn to build apps that generate consistent revenue while you sleep.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-300">15+</div>
+                <div className="text-blue-200 text-sm">Automation Tools</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-purple-300">$80K+</div>
+                <div className="text-purple-200 text-sm">Monthly Revenue Potential</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-green-300">24/7</div>
+                <div className="text-green-200 text-sm">Automated Operation</div>
+              </div>
+            </div>
+            <Link href="/ai-agents" className="inline-block bg-gray-900 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105">
+              Master Mobile App Automation →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-500/10 to-purple-600/10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">
+            Ready to Build <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Automated Mobile Apps?</span>
+          </h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Start building mobile apps that generate revenue automatically with intelligent automation, user engagement systems, and monetization optimization
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl text-white font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105">
+              Start Building Automated Apps
+            </Link>
+            <Link href="/blog" className="px-8 py-4 border border-gray-600 rounded-xl text-white font-semibold hover:bg-gray-800 transition-all duration-300 hover:scale-105">
+              Explore More Automation
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
