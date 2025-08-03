@@ -39,22 +39,27 @@ export function BeautifulHero() {
 
   // Text scramble effect
   const scrambleText = (text: string, duration: number = 1000) => {
+    if (!titleRef.current) return
+    
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-    let scrambled = text
     let currentIndex = 0
     
     const interval = setInterval(() => {
-      scrambled = text
+      if (!titleRef.current) {
+        clearInterval(interval)
+        return
+      }
+      
+      const scrambled = text
         .split('')
         .map((char, index) => {
           if (index < currentIndex) return text[index]
+          if (char === ' ') return ' ' // Keep spaces
           return chars[Math.floor(Math.random() * chars.length)]
         })
         .join('')
       
-      if (titleRef.current) {
-        titleRef.current.textContent = scrambled
-      }
+      titleRef.current.textContent = scrambled
       
       currentIndex++
       if (currentIndex > text.length) {
@@ -63,11 +68,13 @@ export function BeautifulHero() {
           titleRef.current.textContent = text
         }
       }
-    }, duration / text.length)
+    }, Math.max(duration / text.length, 50)) // Minimum 50ms per character
   }
 
   useEffect(() => {
     if (isInView && titleRef.current) {
+      // Ensure the text is set initially
+      titleRef.current.textContent = 'CREATE THE FUTURE'
       scrambleText('CREATE THE FUTURE', 1500)
     }
   }, [isInView])
@@ -143,7 +150,7 @@ export function BeautifulHero() {
           
           <h1 
             ref={titleRef}
-            className="mb-8 text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent"
+            className="mb-8 text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none"
             style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
           >
             CREATE THE FUTURE
