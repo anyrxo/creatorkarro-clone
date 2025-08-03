@@ -139,43 +139,70 @@ export default function BlogPage() {
                 </button>
               </div>
             ) : (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredPosts
                   .filter(post => !(searchTerm === '' && selectedCategory === 'All' && post.featured))
                   .map((post) => (
                   <Link key={post.slug} href={`/blog/${post.slug}`}>
-                    <article className="group bg-gray-800/30 rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-all cursor-pointer hover:bg-gray-800/50">
-                      <div className="flex items-center gap-2 mb-3">
-                        <Tag className="w-4 h-4 text-gray-400" />
-                        <span className="text-sm text-blue-300 font-medium">{post.category}</span>
+                    <article className="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 transition-all duration-300 cursor-pointer hover:bg-gradient-to-br hover:from-gray-800/70 hover:to-gray-900/70 hover:shadow-xl hover:shadow-blue-500/10 hover:scale-[1.02]">
+                      {/* Category Badge */}
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20">
+                          <Tag className="w-3 h-3 text-blue-400" />
+                          <span className="text-xs text-blue-300 font-semibold uppercase tracking-wide">{post.category}</span>
+                        </div>
+                        {post.featured && (
+                          <div className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/20">
+                            <TrendingUp className="w-3 h-3 text-yellow-400" />
+                            <span className="text-xs text-yellow-300 font-semibold">FEATURED</span>
+                          </div>
+                        )}
                       </div>
-                      <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-blue-300 transition-colors line-clamp-2">
+
+                      {/* Title */}
+                      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors line-clamp-2 leading-tight">
                         {post.title}
                       </h3>
-                      <p className="text-gray-300 text-sm mb-4 line-clamp-2">
+
+                      {/* Description */}
+                      <p className="text-gray-300 text-sm mb-6 line-clamp-3 leading-relaxed">
                         {post.description}
                       </p>
-                      <div className="flex items-center justify-between text-xs text-gray-400">
-                        <div className="flex items-center gap-3">
+
+                      {/* Meta Info */}
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-4 text-xs text-gray-400">
+                          <div className="flex items-center gap-1">
+                            <Calendar className="w-3 h-3" />
+                            <span>{post.date}</span>
+                          </div>
                           <div className="flex items-center gap-1">
                             <Clock className="w-3 h-3" />
-                            <span>{post.readTime} min</span>
+                            <span>{post.readTime} min read</span>
                           </div>
-                          <span>{post.date}</span>
                         </div>
-                        <ArrowRight className="w-3 h-3 text-blue-400 group-hover:text-blue-300 transition-colors" />
+                        <div className="flex items-center gap-2 text-blue-400 group-hover:text-blue-300 transition-colors">
+                          <span className="text-xs font-medium">Read Article</span>
+                          <ArrowRight className="w-3 h-3" />
+                        </div>
                       </div>
                       
                       {/* Tags */}
                       {post.tags.length > 0 && (
-                        <div className="flex flex-wrap gap-1 mt-3">
+                        <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-700/50">
                           {post.tags.slice(0, 3).map((tag, index) => (
-                            <span key={index} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
-                              {tag}
+                            <span key={index} className="text-xs bg-gray-700/50 text-gray-300 px-2 py-1 rounded-md hover:bg-gray-600/50 transition-colors">
+                              #{tag}
                             </span>
                           ))}
+                          {post.tags.length > 3 && (
+                            <span className="text-xs text-gray-500">+{post.tags.length - 3} more</span>
+                          )}
                         </div>
                       )}
+
+                      {/* Gradient Overlay Effect */}
+                      <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                     </article>
                   </Link>
                 ))}
