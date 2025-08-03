@@ -105,22 +105,22 @@ export default function BlogPage() {
               <div className="relative w-full max-w-2xl">
                 <div className="relative group">
                   {/* Gradient background that shows on focus */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 blur-sm"></div>
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 blur-sm z-0 pointer-events-none"></div>
                   
                   {/* Search input container */}
-                  <div className="relative bg-gray-900/90 backdrop-blur-sm rounded-xl border border-gray-700/50 group-focus-within:border-transparent transition-all duration-300">
-                    <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-400 w-6 h-6 z-10 transition-colors duration-300" />
+                  <div className="relative bg-gray-900/90 backdrop-blur-sm rounded-xl border border-gray-700/50 group-focus-within:border-transparent transition-all duration-300 z-10">
+                    <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-400 w-6 h-6 z-20 transition-colors duration-300 pointer-events-none" />
                     <input
                       type="text"
                       placeholder="Search articles, topics, or tags..."
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
-                      className="w-full pl-16 pr-14 py-5 bg-transparent text-white placeholder-gray-400 focus:outline-none text-lg rounded-xl"
+                      className="relative w-full pl-16 pr-14 py-5 bg-transparent text-white placeholder-gray-400 focus:outline-none text-lg rounded-xl z-30"
                     />
                     {searchTerm && (
                       <button
                         onClick={() => setSearchTerm('')}
-                        className="absolute right-5 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200 text-xl font-light w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-700/50"
+                        className="absolute right-5 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200 text-xl font-light w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-700/50 z-20"
                       >
                         ×
                       </button>
@@ -128,7 +128,7 @@ export default function BlogPage() {
                   </div>
                   
                   {/* Animated gradient border */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-20 transition-opacity duration-500"></div>
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-20 transition-opacity duration-500 z-0 pointer-events-none"></div>
                 </div>
               </div>
             </div>
