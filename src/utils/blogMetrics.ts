@@ -15,6 +15,26 @@ function seededRandom(seed: string): number {
   return (hash % 1000) / 1000
 }
 
+// Get comment count for a post
+function getCommentCount(slug: string): number {
+  try {
+    // In production, this would be imported properly
+    // For now, we'll calculate based on the same seeded approach
+    const seed = seededRandom(slug + 'comments')
+    
+    // Base comments (older posts tend to have more)
+    const baseComments = Math.floor(8 + seed * 12) // 8-20 base comments
+    
+    // Add some variation
+    const variation = Math.floor(seededRandom(slug + 'commentVar') * 6) // 0-5 extra
+    
+    return baseComments + variation
+  } catch (error) {
+    // Fallback to seeded random
+    return Math.floor(seededRandom(slug + 'commentsFallback') * 15) + 5
+  }
+}
+
 // Calculate dynamic metrics based on days since publication
 export function calculateBlogMetrics(publishDate: string, slug: string) {
   const publish = new Date(publishDate)
@@ -51,6 +71,9 @@ export function calculateBlogMetrics(publishDate: string, slug: string) {
   let shares = Math.floor(likes * shareRatio)
   shares += storedMetrics.additionalShares
   
+  // Get comment count (this stays consistent)
+  const comments = getCommentCount(slug)
+  
   // Format numbers for display
   const formatNumber = (num: number) => {
     if (num >= 1000) {
@@ -63,9 +86,11 @@ export function calculateBlogMetrics(publishDate: string, slug: string) {
     views: formatNumber(views),
     likes: formatNumber(likes),
     shares: formatNumber(shares),
+    comments: formatNumber(comments),
     rawViews: views,
     rawLikes: likes,
-    rawShares: shares
+    rawShares: shares,
+    rawComments: comments
   }
 }
 

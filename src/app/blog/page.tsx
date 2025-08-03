@@ -4,6 +4,7 @@ import React, { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { Search, Calendar, Clock, Tag, Filter, ArrowRight, TrendingUp, Eye, Heart, MessageCircle, Share2 } from 'lucide-react'
 import { allBlogPosts, categories, allTags, featuredPosts, type BlogPost } from '@/data/blog-posts'
+import { calculateBlogMetrics } from '@/utils/blogMetrics'
 
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -114,24 +115,29 @@ export default function BlogPage() {
 
                       {/* Featured Post Engagement Metrics */}
                       <div className="flex items-center justify-between pt-3 border-t border-gray-700/50">
-                        <div className="flex items-center gap-4 text-xs text-gray-400">
-                          <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer">
-                            <Eye className="w-3 h-3" />
-                            <span>{Math.floor(Math.random() * 5000) + 1000}</span>
-                          </div>
-                          <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer">
-                            <Heart className="w-3 h-3" />
-                            <span>{Math.floor(Math.random() * 300) + 50}</span>
-                          </div>
-                          <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer">
-                            <MessageCircle className="w-3 h-3" />
-                            <span>{Math.floor(Math.random() * 80) + 10}</span>
-                          </div>
-                        </div>
-                        <div className="flex items-center gap-1 text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
-                          <Share2 className="w-3 h-3" />
-                          <span className="text-xs">Share</span>
-                        </div>
+                        {(() => {
+                          const metrics = calculateBlogMetrics(post.date, post.slug)
+                          return (
+                            <div className="flex items-center gap-4 text-xs text-gray-400">
+                              <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer">
+                                <Eye className="w-3 h-3" />
+                                <span>{metrics.views}</span>
+                              </div>
+                              <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer">
+                                <Heart className="w-3 h-3" />
+                                <span>{metrics.likes}</span>
+                              </div>
+                              <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer">
+                                <MessageCircle className="w-3 h-3" />
+                                <span>{metrics.comments}</span>
+                              </div>
+                              <div className="flex items-center gap-1 hover:text-purple-400 transition-colors cursor-pointer">
+                                <Share2 className="w-3 h-3" />
+                                <span>{metrics.shares}</span>
+                              </div>
+                            </div>
+                          )
+                        })()}
                       </div>
                     </article>
                   </Link>
@@ -211,24 +217,31 @@ export default function BlogPage() {
 
                       {/* Engagement Metrics */}
                       <div className="flex items-center justify-between pt-3 border-t border-gray-700/50">
-                        <div className="flex items-center gap-4 text-xs text-gray-400">
-                          <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer">
-                            <Eye className="w-3 h-3" />
-                            <span>{Math.floor(Math.random() * 2000) + 500}</span>
-                          </div>
-                          <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer">
-                            <Heart className="w-3 h-3" />
-                            <span>{Math.floor(Math.random() * 150) + 25}</span>
-                          </div>
-                          <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer">
-                            <MessageCircle className="w-3 h-3" />
-                            <span>{Math.floor(Math.random() * 50) + 5}</span>
-                          </div>
-                        </div>
-                        <div className="flex items-center gap-1 text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
-                          <Share2 className="w-3 h-3" />
-                          <span className="text-xs">Share</span>
-                        </div>
+                        {(() => {
+                          const metrics = calculateBlogMetrics(post.date, post.slug)
+                          return (
+                            <>
+                              <div className="flex items-center gap-4 text-xs text-gray-400">
+                                <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer">
+                                  <Eye className="w-3 h-3" />
+                                  <span>{metrics.views}</span>
+                                </div>
+                                <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer">
+                                  <Heart className="w-3 h-3" />
+                                  <span>{metrics.likes}</span>
+                                </div>
+                                <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer">
+                                  <MessageCircle className="w-3 h-3" />
+                                  <span>{metrics.comments}</span>
+                                </div>
+                              </div>
+                              <div className="flex items-center gap-1 text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
+                                <Share2 className="w-3 h-3" />
+                                <span className="text-xs">{metrics.shares}</span>
+                              </div>
+                            </>
+                          )
+                        })()}
                       </div>
                       
                       {/* Tags */}
