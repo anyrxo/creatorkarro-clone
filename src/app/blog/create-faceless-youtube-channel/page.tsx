@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function CreateFacelessYouTubeChannel() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const processAnimation = useScrollAnimation({ threshold: 0.1 })
-  const monetizationAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function CreateFacelessYouTubeChannel() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 mb-6">
                     <span className="text-red-400 text-sm font-semibold">YOUTUBE</span>
@@ -34,7 +27,7 @@ export default function CreateFacelessYouTubeChannel() {
               The complete guide to building a <span className="text-white font-semibold">profitable faceless YouTube channel from scratch</span>
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-26" readTime="18 min" />
+                
             </div>
         </div>
     </section>
@@ -66,8 +59,8 @@ export default function CreateFacelessYouTubeChannel() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -164,8 +157,8 @@ export default function CreateFacelessYouTubeChannel() {
     </section>
 
       <section
-        ref={processAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">The 7-Day Launch Process</h2>
@@ -305,8 +298,8 @@ export default function CreateFacelessYouTubeChannel() {
 </section>
 
       <section
-        ref={monetizationAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Realistic Monetization Timeline</h2>
@@ -346,8 +339,8 @@ export default function CreateFacelessYouTubeChannel() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

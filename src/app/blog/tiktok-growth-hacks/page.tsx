@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function TikTokGrowthHacks() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const strategyAnimation = useScrollAnimation({ threshold: 0.1 })
-  const mistakesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function TikTokGrowthHacks() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-500/20 mb-6">
                     <span className="text-pink-400 text-sm font-semibold">GROWTH GUIDE</span>
@@ -34,7 +27,7 @@ export default function TikTokGrowthHacks() {
               The exact blueprint I used to explode on TikTok and <span className="text-white font-semibold">how you can replicate it</span>
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-12" readTime="13 min" />
+                
             </div>
         </div>
     </section>
@@ -70,8 +63,8 @@ export default function TikTokGrowthHacks() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -94,8 +87,8 @@ export default function TikTokGrowthHacks() {
     </section>
 
       <section
-        ref={strategyAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">The 90-Day Blueprint</h2>
@@ -186,7 +179,7 @@ export default function TikTokGrowthHacks() {
                 <p className="text-gray-400 mb-3">Quick-fire valuable tips</p>
                 <div className="bg-zinc-800 rounded p-4">
                     <p className="text-sm text-gray-300">
-                        <span className="text-white">Example:</span> "5 things I wish I knew..."
+                        <span className="text-white">Example:</span>"5 things I wish I knew..."
                     </p>
                     <p className="text-green-400 text-xs mt-2">Avg views: 1.7M</p>
                 </div>
@@ -197,7 +190,7 @@ export default function TikTokGrowthHacks() {
                 <p className="text-gray-400 mb-3">Start at climax, loop back</p>
                 <div className="bg-zinc-800 rounded p-4">
                     <p className="text-sm text-gray-300">
-                        <span className="text-white">Example:</span> "And that's when..." → Full story
+                        <span className="text-white">Example:</span>"And that's when..." → Full story
                     </p>
                     <p className="text-green-400 text-xs mt-2">Avg views: 3.1M</p>
                 </div>
@@ -219,7 +212,7 @@ export default function TikTokGrowthHacks() {
                 <p className="text-gray-400 mb-3">15-second how-to</p>
                 <div className="bg-zinc-800 rounded p-4">
                     <p className="text-sm text-gray-300">
-                        <span className="text-white">Example:</span> "How to X in 10 seconds"
+                        <span className="text-white">Example:</span>"How to X in 10 seconds"
                     </p>
                     <p className="text-green-400 text-xs mt-2">Avg views: 1.9M</p>
                 </div>
@@ -230,7 +223,7 @@ export default function TikTokGrowthHacks() {
                 <p className="text-gray-400 mb-3">Polarizing opinion (respectfully)</p>
                 <div className="bg-zinc-800 rounded p-4">
                     <p className="text-sm text-gray-300">
-                        <span className="text-white">Example:</span> "Unpopular opinion but..."
+                        <span className="text-white">Example:</span>"Unpopular opinion but..."
                     </p>
                     <p className="text-green-400 text-xs mt-2">Avg views: 4.2M</p>
                 </div>
@@ -279,7 +272,7 @@ export default function TikTokGrowthHacks() {
                     <div className="flex-1">
                         <h4 className="text-xl font-bold text-white mb-2">Re-watch Rate</h4>
                         <p className="text-gray-400">Multiple views = highly engaging</p>
-                        <p className="text-pink-400 text-sm mt-2">Hack: Hide text or add "wait for it" moments</p>
+                        <p className="text-pink-400 text-sm mt-2">Hack: Hide text or add"wait for it" moments</p>
                     </div>
                 </div>
             </div>
@@ -288,8 +281,8 @@ export default function TikTokGrowthHacks() {
 </section>
 
       <section
-        ref={mistakesAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">5 Mistakes That Kill Growth</h2>
@@ -311,7 +304,7 @@ export default function TikTokGrowthHacks() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6 border-l-4 border-pink-500">
-                <h3 className="text-lg font-bold text-pink-400 mb-2">❌ Deleting "Flop" Videos</h3>
+                <h3 className="text-lg font-bold text-pink-400 mb-2">❌ Deleting"Flop" Videos</h3>
                 <p className="text-gray-300">Videos can go viral weeks later. Never delete, just private if needed.</p>
             </div>
             
@@ -387,8 +380,8 @@ export default function TikTokGrowthHacks() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

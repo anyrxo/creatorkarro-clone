@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function InstagramMonetizationGuide() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const methodsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const calculatorAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function InstagramMonetizationGuide() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-500/20 mb-6">
                     <span className="text-pink-400 text-sm font-semibold">MONETIZATION</span>
@@ -34,7 +27,7 @@ export default function InstagramMonetizationGuide() {
               The complete guide to <span className="text-white font-semibold">Instagram monetization in 2025</span> (with real numbers)
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-02-15" readTime="18 min" />
+                
             </div>
         </div>
     </section>
@@ -78,8 +71,8 @@ export default function InstagramMonetizationGuide() {
     </section>
 
       <section
-        ref={methodsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">10 Ways to Monetize Instagram in 2025</h2>
@@ -303,8 +296,8 @@ export default function InstagramMonetizationGuide() {
 </section>
 
       <section
-        ref={calculatorAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Your Instagram Revenue Potential</h2>
@@ -370,8 +363,8 @@ export default function InstagramMonetizationGuide() {
 </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8">Your 30-Day Monetization Action Plan</h2>
@@ -473,8 +466,8 @@ export default function InstagramMonetizationGuide() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

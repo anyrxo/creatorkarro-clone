@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function HowToSellTemplates() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const stepsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const pricingAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function HowToSellTemplates() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-6">
                     <span className="text-green-400 text-sm font-semibold">GUIDE</span>
@@ -34,7 +27,7 @@ export default function HowToSellTemplates() {
               The exact blueprint to turn <span className="text-white font-semibold">2-hour projects into passive income machines</span>
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-02-25" readTime="17 min" />
+                
             </div>
         </div>
     </section>
@@ -70,8 +63,8 @@ export default function HowToSellTemplates() {
     </section>
 
       <section
-        ref={stepsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8">The 10 Template Types That Sell Like Crazy</h2>
@@ -287,8 +280,8 @@ export default function HowToSellTemplates() {
 </section>
 
       <section
-        ref={pricingAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Template Pricing Psychology</h2>
@@ -340,8 +333,8 @@ export default function HowToSellTemplates() {
 </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Marketing Strategies That Actually Work</h2>
@@ -500,8 +493,8 @@ export default function HowToSellTemplates() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

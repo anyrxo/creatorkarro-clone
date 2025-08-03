@@ -437,8 +437,7 @@ export default function AIAgentsBusinessAutomationPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">AutoCorp - $5M Revenue with 3 Employees</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Our AI agent workforce handles customer service, sales, operations, and finance. We generate $5M annually with just 3 human employees focusing on strategy and partnerships."
+                  <p className="text-gray-300 mb-4">"Our AI agent workforce handles customer service, sales, operations, and finance. We generate $5M annually with just 3 human employees focusing on strategy and partnerships."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-blue-400">$5M annual revenue</span>
@@ -456,8 +455,7 @@ export default function AIAgentsBusinessAutomationPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">SmartServices - 1000% Productivity Increase</h3>
-                  <p className="text-gray-300 mb-4">
-                    "AI agents transformed our consulting business. We now handle 10x more clients with the same team while delivering higher quality results and 24/7 availability."
+                  <p className="text-gray-300 mb-4">"AI agents transformed our consulting business. We now handle 10x more clients with the same team while delivering higher quality results and 24/7 availability."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-purple-400">1000% productivity</span>
@@ -475,8 +473,7 @@ export default function AIAgentsBusinessAutomationPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">AI-Industries - Zero Human Customer Service</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Our AI customer service agents handle 50,000+ inquiries monthly with 98% satisfaction. We eliminated our entire customer service department while improving quality."
+                  <p className="text-gray-300 mb-4">"Our AI customer service agents handle 50,000+ inquiries monthly with 98% satisfaction. We eliminated our entire customer service department while improving quality."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-green-400">50K+ monthly inquiries</span>

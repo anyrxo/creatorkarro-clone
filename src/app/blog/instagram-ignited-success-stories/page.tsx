@@ -4,18 +4,10 @@ import React from 'react'
 import Link from 'next/link'
 
 import Image from 'next/image'
-import Link from 'next/link'
-import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function InstagramIgnitedSuccessStories() {
   // Scroll animations
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const storyAnimation = useScrollAnimation({ threshold: 0.1 })
-  const resultsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const strategiesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -23,8 +15,8 @@ export default function InstagramIgnitedSuccessStories() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
                     <span className="text-purple-400 text-sm font-semibold">SUCCESS STORY</span>
@@ -38,7 +30,7 @@ export default function InstagramIgnitedSuccessStories() {
               How Marcus Rivera used <span className="text-white font-semibold">Instagram Ignited</span> to build a $15K/month business in just 8 months
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-08" readTime="12 min" />
+                
             </div>
         </div>
     </section>
@@ -67,8 +59,8 @@ export default function InstagramIgnitedSuccessStories() {
     </section>
 
       <section
-        ref={storyAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -118,8 +110,7 @@ export default function InstagramIgnitedSuccessStories() {
                     </div>
               
                     <div className="mt-8 p-6 bg-zinc-800 rounded-xl">
-                        <p className="text-gray-300 italic">
-                  "I was ready to give up on Instagram. I'd watch other creators blow up overnight while I couldn't even break 50 likes on my posts. That's when I found Anyro's Instagram Ignited program."
+                        <p className="text-gray-300 italic">"I was ready to give up on Instagram. I'd watch other creators blow up overnight while I couldn't even break 50 likes on my posts. That's when I found Anyro's Instagram Ignited program."
                         </p>
                         <p className="text-purple-400 mt-4 font-semibold">- Marcus Rivera</p>
                     </div>
@@ -204,8 +195,8 @@ export default function InstagramIgnitedSuccessStories() {
     </section>
 
       <section
-        ref={strategiesAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">The Exact Strategies That Generated 100K+ Views</h2>
@@ -243,8 +234,8 @@ export default function InstagramIgnitedSuccessStories() {
     </section>
 
       <section
-        ref={resultsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Why Instagram Ignited Worked When Other Courses Failed</h2>
@@ -298,8 +289,7 @@ export default function InstagramIgnitedSuccessStories() {
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
             
-                <p className="text-xl text-gray-300 mb-6 italic">
-              "The Instagram Ignited program gave me a clear roadmap. Instead of guessing what might work, I had a proven system to follow. The results speak for themselves."
+                <p className="text-xl text-gray-300 mb-6 italic">"The Instagram Ignited program gave me a clear roadmap. Instead of guessing what might work, I had a proven system to follow. The results speak for themselves."
                 </p>
             
                 <div className="flex items-center gap-4">
@@ -314,8 +304,8 @@ export default function InstagramIgnitedSuccessStories() {
     </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

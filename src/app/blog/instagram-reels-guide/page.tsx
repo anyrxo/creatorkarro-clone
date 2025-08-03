@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function InstagramReelsGuide() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const algorithmAnimation = useScrollAnimation({ threshold: 0.1 })
-  const monetizationAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function InstagramReelsGuide() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
                     <span className="text-purple-400 text-sm font-semibold">CONTENT STRATEGY</span>
@@ -34,7 +27,7 @@ export default function InstagramReelsGuide() {
               Master the art of creating Instagram Reels that <span className="text-white font-semibold">go viral and drive massive engagement</span>
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-11" readTime="14 min" />
+                
             </div>
         </div>
     </section>
@@ -66,8 +59,8 @@ export default function InstagramReelsGuide() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -112,10 +105,10 @@ export default function InstagramReelsGuide() {
                             <div className="bg-zinc-900 rounded-lg p-4">
                                 <h4 className="text-purple-400 font-semibold mb-2">Text Hooks:</h4>
                                 <ul className="space-y-1 text-sm text-gray-300">
-                                    <li>• "POV: You..."</li>
-                                    <li>• "Things I wish I knew..."</li>
-                                    <li>• "The truth about..."</li>
-                                    <li>• "Nobody talks about..."</li>
+                                    <li>•"POV: You..."</li>
+                                    <li>•"Things I wish I knew..."</li>
+                                    <li>•"The truth about..."</li>
+                                    <li>•"Nobody talks about..."</li>
                                 </ul>
                             </div>
                         </div>
@@ -197,8 +190,8 @@ export default function InstagramReelsGuide() {
 </section>
 
       <section
-        ref={algorithmAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Instagram Reels Algorithm Decoded</h2>
@@ -332,8 +325,8 @@ export default function InstagramReelsGuide() {
 </section>
 
       <section
-        ref={monetizationAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Turn Reels Views Into Revenue</h2>
@@ -406,8 +399,8 @@ export default function InstagramReelsGuide() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

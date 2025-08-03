@@ -2,43 +2,17 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function AIAutomationGuideToxicSEO() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const toolsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const workflowAnimation = useScrollAnimation({ threshold: 0.1 })
-  const faqAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
   // Schema markup for rich snippets
-  const toolsSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "AI Automation Tools",
-    "applicationCategory": "BusinessApplication",
-    "offers": {
-      "@type": "Offer",
-      "price": "850",
-      "priceCurrency": "USD"
-}
+  const toolsSchema = {"@context":"https://schema.org","@type":"SoftwareApplication","name":"AI Automation Tools","applicationCategory":"BusinessApplication","offers": {"@type":"Offer","price":"850","priceCurrency":"USD"}};
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What are AI automation tools?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "AI automation tools are software applications that use artificial intelligence to automate business processes, workflows, and tasks without human intervention. These tools can handle everything from content creation to customer service, saving businesses 70-90% of manual work time."
-}
-}
+  const faqSchema = {"@context":"https://schema.org","@type":"FAQPage","mainEntity": [
+      {"@type":"Question","name":"What are AI automation tools?","acceptedAnswer": {"@type":"Answer","text":"AI automation tools are software applications that use artificial intelligence to automate business processes, workflows, and tasks without human intervention. These tools can handle everything from content creation to customer service, saving businesses 70-90% of manual work time."
+        }
+      }
     ]
-}
+  };
 
   return (
     
@@ -50,10 +24,7 @@ export default function AIAutomationGuideToxicSEO() {
 
       <section className="section-spacing overflow-hidden">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div
-              ref={heroAnimation.elementRef}
-              className={`text-center max-w-5xl mx-auto scroll-fade-up `}
-            >
+                <div className="text-center max-w-5xl mx-auto">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
                         <span className="text-purple-400 text-sm font-semibold">COMPLETE AI AUTOMATION GUIDE 2025</span>
                     </div>
@@ -66,7 +37,7 @@ export default function AIAutomationGuideToxicSEO() {
                 The complete AI automation guide revealing <span className="text-white font-semibold">254 proven business automation software solutions</span> and exact workflows that generated $1.2M in automated revenue. Learn how to automate business with AI step-by-step.
                     </p>
 
-                    <BlogMetrics className="text-gray-400" publishDate="2025-01-18" readTime="22 min" />
+                    
                 </div>
             </div>
         </section>
@@ -128,8 +99,8 @@ export default function AIAutomationGuideToxicSEO() {
         </section>
 
       <section
-          ref={contentAnimation.elementRef}
-          className={`section-spacing scroll-fade-up `}
+          
+          className="section-spacing"
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
                 <h2 className="text-4xl font-bold text-white mb-8 text-center">The Complete Business Automation Software Stack</h2>
@@ -310,8 +281,8 @@ export default function AIAutomationGuideToxicSEO() {
 </section>
 
       <section
-          ref={toolsAnimation.elementRef}
-          className={`section-spacing scroll-fade-up `}
+          
+          className="section-spacing"
         >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <h2 className="text-4xl font-bold text-white mb-8 text-center">Best AI Automation Tools Comparison 2025</h2>
@@ -379,8 +350,8 @@ export default function AIAutomationGuideToxicSEO() {
 </section>
 
       <section
-          ref={workflowAnimation.elementRef}
-          className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+          
+          className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
         >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <h2 className="text-4xl font-bold text-white mb-8 text-center">How to Automate Business with AI: 30-Day Implementation Guide</h2>
@@ -528,8 +499,8 @@ export default function AIAutomationGuideToxicSEO() {
 </section>
 
       <section
-          ref={faqAnimation.elementRef}
-          className={`section-spacing scroll-fade-up `}
+          
+          className="section-spacing"
         >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-4xl font-bold text-white mb-12 text-center">AI Automation Tools FAQ</h2>
@@ -564,8 +535,8 @@ export default function AIAutomationGuideToxicSEO() {
 </section>
 
       <section
-          ref={ctaAnimation.elementRef}
-          className={`section-spacing bg-gradient-to-b from-purple-900/50 to-dark scroll-fade-up `}
+          
+          className="section-spacing bg-gradient-to-b from-purple-900/50 to-dark"
         >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">

@@ -562,8 +562,7 @@ export default function SecurityAutomationSystemsPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">CyberSecure Corp - Zero Successful Breaches</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Our security automation platform has prevented 50,000+ attack attempts this year alone. We've achieved zero successful breaches while reducing security staffing costs by 60%."
+                  <p className="text-gray-300 mb-4">"Our security automation platform has prevented 50,000+ attack attempts this year alone. We've achieved zero successful breaches while reducing security staffing costs by 60%."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-red-400">50K+ attacks blocked</span>
@@ -581,8 +580,7 @@ export default function SecurityAutomationSystemsPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">FinanceGuard - $100M Fraud Prevention</h3>
-                  <p className="text-gray-300 mb-4">
-                    "AI-powered fraud detection automation has saved us over $100M in potential losses. Our response time improved from hours to seconds with 99.9% accuracy."
+                  <p className="text-gray-300 mb-4">"AI-powered fraud detection automation has saved us over $100M in potential losses. Our response time improved from hours to seconds with 99.9% accuracy."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-purple-400">$100M saved</span>
@@ -600,8 +598,7 @@ export default function SecurityAutomationSystemsPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">HealthSecure - Perfect Compliance</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Automated compliance monitoring and incident response helped us achieve 100% HIPAA compliance while protecting 1M+ patient records from ransomware attacks."
+                  <p className="text-gray-300 mb-4">"Automated compliance monitoring and incident response helped us achieve 100% HIPAA compliance while protecting 1M+ patient records from ransomware attacks."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-green-400">100% HIPAA compliance</span>

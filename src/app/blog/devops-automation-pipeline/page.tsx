@@ -453,8 +453,7 @@ export default function DevOpsAutomationPipelinePage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">DevTech Corp - 1000% Deployment Frequency</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Our DevOps automation transformed our release cycle from monthly to 100+ deployments per day. We reduced deployment time from 6 hours to 15 minutes while achieving 99.9% success rate."
+                  <p className="text-gray-300 mb-4">"Our DevOps automation transformed our release cycle from monthly to 100+ deployments per day. We reduced deployment time from 6 hours to 15 minutes while achieving 99.9% success rate."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-green-400">1000% more deployments</span>
@@ -472,8 +471,7 @@ export default function DevOpsAutomationPipelinePage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">AgileScale - Zero-Downtime at Scale</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Automated CI/CD pipelines enabled us to serve 50M+ users with zero-downtime deployments. Our 20-service microarchitecture deploys seamlessly with blue-green strategies."
+                  <p className="text-gray-300 mb-4">"Automated CI/CD pipelines enabled us to serve 50M+ users with zero-downtime deployments. Our 20-service microarchitecture deploys seamlessly with blue-green strategies."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-blue-400">50M+ users served</span>
@@ -491,8 +489,7 @@ export default function DevOpsAutomationPipelinePage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">CloudStart - Infrastructure Automation</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Terraform automation reduced our infrastructure provisioning from weeks to hours. We now manage 500+ environments across AWS, Azure, and GCP with complete consistency."
+                  <p className="text-gray-300 mb-4">"Terraform automation reduced our infrastructure provisioning from weeks to hours. We now manage 500+ environments across AWS, Azure, and GCP with complete consistency."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-purple-400">500+ environments</span>

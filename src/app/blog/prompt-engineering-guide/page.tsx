@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function PromptEngineeringGuide() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const frameworksAnimation = useScrollAnimation({ threshold: 0.1 })
-  const examplesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function PromptEngineeringGuide() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
                     <span className="text-purple-400 text-sm font-semibold">AI MASTERY</span>
@@ -34,7 +27,7 @@ export default function PromptEngineeringGuide() {
               Master the art of AI communication with <span className="text-white font-semibold">battle-tested frameworks and 100+ examples</span>
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-03-03" readTime="28 min" />
+                
             </div>
         </div>
     </section>
@@ -70,8 +63,8 @@ export default function PromptEngineeringGuide() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8">The 5 Core Principles of Perfect Prompts</h2>
@@ -112,15 +105,15 @@ export default function PromptEngineeringGuide() {
                     <div className="bg-zinc-800 rounded-lg p-6">
                         <h4 className="text-purple-400 font-semibold mb-3">Power Phrases That Work:</h4>
                         <ul className="space-y-2 text-gray-300">
-                            <li>• "Act as a [specific expert] with [X years] of experience in [field]"</li>
-                            <li>• "You are a world-class [role] known for [specific traits]"</li>
-                            <li>• "Respond as if you were [famous person/character] who specializes in [skill]"</li>
-                            <li>• "Take on the persona of a [role] who has successfully [achievement]"</li>
+                            <li>•"Act as a [specific expert] with [X years] of experience in [field]"</li>
+                            <li>•"You are a world-class [role] known for [specific traits]"</li>
+                            <li>•"Respond as if you were [famous person/character] who specializes in [skill]"</li>
+                            <li>•"Take on the persona of a [role] who has successfully [achievement]"</li>
                         </ul>
                     
                         <div className="mt-4 p-4 bg-zinc-900 rounded">
                             <p className="text-sm text-gray-300">
-                                <span className="text-purple-400 font-semibold">Example:</span> "Act as a senior marketing strategist with 15 years of experience in SaaS growth..."
+                                <span className="text-purple-400 font-semibold">Example:</span>"Act as a senior marketing strategist with 15 years of experience in SaaS growth..."
                             </p>
                         </div>
                     </div>
@@ -137,16 +130,16 @@ export default function PromptEngineeringGuide() {
                     <h4 className="text-white font-semibold mb-3">Format Commands:</h4>
                     <div className="grid md:grid-cols-2 gap-4">
                         <ul className="space-y-2 text-gray-300">
-                            <li>• "Use bullet points for..."</li>
-                            <li>• "Structure as: [format]"</li>
-                            <li>• "Include these sections:..."</li>
-                            <li>• "Format as a table with..."</li>
+                            <li>•"Use bullet points for..."</li>
+                            <li>•"Structure as: [format]"</li>
+                            <li>•"Include these sections:..."</li>
+                            <li>•"Format as a table with..."</li>
                         </ul>
                         <ul className="space-y-2 text-gray-300">
-                            <li>• "Number each step..."</li>
-                            <li>• "Use H2 headings for..."</li>
-                            <li>• "Provide in JSON format"</li>
-                            <li>• "Create a markdown list"</li>
+                            <li>•"Number each step..."</li>
+                            <li>•"Use H2 headings for..."</li>
+                            <li>•"Provide in JSON format"</li>
+                            <li>•"Create a markdown list"</li>
                         </ul>
                     </div>
                 </div>
@@ -162,8 +155,7 @@ export default function PromptEngineeringGuide() {
             <div className="bg-zinc-800 rounded-lg p-6">
                 <p className="text-gray-300 mb-4">Few-shot prompting dramatically improves output quality:</p>
                 <div className="bg-zinc-900 rounded p-4">
-                    <code className="text-sm text-gray-300">
-                        "Generate product descriptions like these examples:<br/><br/>
+                    <code className="text-sm text-gray-300">"Generate product descriptions like these examples:<br/><br/>
                         Example 1: [Your example]<br/>
                         Example 2: [Your example]<br/><br/>
                         Now create one for: [Your product]"
@@ -182,11 +174,11 @@ export default function PromptEngineeringGuide() {
         <div className="bg-zinc-800 rounded-lg p-6">
             <h4 className="text-white font-semibold mb-3">Refinement Techniques:</h4>
             <ul className="space-y-2 text-gray-300">
-                <li>• "Make it more [adjective]"</li>
-                <li>• "Expand on point #3"</li>
-                <li>• "Rewrite in a more [tone] way"</li>
-                <li>• "Add specific examples for..."</li>
-                <li>• "Simplify the technical parts"</li>
+                <li>•"Make it more [adjective]"</li>
+                <li>•"Expand on point #3"</li>
+                <li>•"Rewrite in a more [tone] way"</li>
+                <li>•"Add specific examples for..."</li>
+                <li>•"Simplify the technical parts"</li>
             </ul>
         </div>
     </div>
@@ -197,8 +189,8 @@ export default function PromptEngineeringGuide() {
 </section>
 
       <section
-        ref={frameworksAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">7 Advanced Prompt Frameworks</h2>
@@ -230,7 +222,7 @@ export default function PromptEngineeringGuide() {
               
             <div className="mt-4 p-4 bg-zinc-900 rounded">
                 <p className="text-sm text-gray-300">
-                    <span className="text-purple-400 font-semibold">Example:</span> "Context: SaaS startup needs email sequence. Role: Expert email marketer. Instructions: Create 5-email onboarding series. Style: Friendly, conversational. Parameters: 150-200 words each, include one CTA."
+                    <span className="text-purple-400 font-semibold">Example:</span>"Context: SaaS startup needs email sequence. Role: Expert email marketer. Instructions: Create 5-email onboarding series. Style: Friendly, conversational. Parameters: 150-200 words each, include one CTA."
                 </p>
             </div>
         </div><div className="bg-zinc-800 rounded-xl p-6">
@@ -277,8 +269,7 @@ export default function PromptEngineeringGuide() {
 <h3 className="text-2xl font-bold text-red-400 mb-4">7. The Meta Prompt</h3>
 <p className="text-gray-300 mb-4">Ask AI to improve your prompts:</p>
 <div className="bg-zinc-900 rounded p-4">
-    <code className="text-sm text-gray-300">
-                  "I want you to become my Prompt Creator. Your goal is to help me craft the best possible prompt for my needs. The prompt will be used by ChatGPT. You will follow this process..."
+    <code className="text-sm text-gray-300">"I want you to become my Prompt Creator. Your goal is to help me craft the best possible prompt for my needs. The prompt will be used by ChatGPT. You will follow this process..."
     </code>
 </div>
 </div>
@@ -287,8 +278,8 @@ export default function PromptEngineeringGuide() {
 </section>
 
       <section
-        ref={examplesAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Real-World Prompt Templates</h2>
@@ -296,32 +287,28 @@ export default function PromptEngineeringGuide() {
         <div className="grid md:grid-cols-2 gap-6"><div className="bg-zinc-900 rounded-xl p-6">
             <h3 className="text-xl font-bold text-purple-400 mb-4">📝 Content Creation</h3>
             <div className="bg-zinc-800 rounded p-4 mb-4">
-                <p className="text-sm text-gray-300">
-                  "Write a [word count] [content type] about [topic] for [audience]. Include [specific elements]. Use a [tone] tone. Format with [structure]. Focus on [key message]."
+                <p className="text-sm text-gray-300">"Write a [word count] [content type] about [topic] for [audience]. Include [specific elements]. Use a [tone] tone. Format with [structure]. Focus on [key message]."
                 </p>
             </div>
             <p className="text-green-400 text-sm">Saves 2-3 hours per piece</p>
         </div><div className="bg-zinc-900 rounded-xl p-6">
         <h3 className="text-xl font-bold text-blue-400 mb-4">💻 Code Generation</h3>
         <div className="bg-zinc-800 rounded p-4 mb-4">
-            <p className="text-sm text-gray-300">
-                  "Create a [language] function that [purpose]. Input: [parameters]. Output: [expected result]. Include error handling for [edge cases]. Follow [style guide] conventions."
+            <p className="text-sm text-gray-300">"Create a [language] function that [purpose]. Input: [parameters]. Output: [expected result]. Include error handling for [edge cases]. Follow [style guide] conventions."
             </p>
         </div>
         <p className="text-green-400 text-sm">10x faster development</p>
     </div><div className="bg-zinc-900 rounded-xl p-6">
     <h3 className="text-xl font-bold text-green-400 mb-4">📊 Data Analysis</h3>
     <div className="bg-zinc-800 rounded p-4 mb-4">
-        <p className="text-sm text-gray-300">
-                  "Analyze this data: [paste data]. Identify [specific patterns]. Calculate [metrics]. Present findings as [format]. Include [visualizations]. Highlight [key insights]."
+        <p className="text-sm text-gray-300">"Analyze this data: [paste data]. Identify [specific patterns]. Calculate [metrics]. Present findings as [format]. Include [visualizations]. Highlight [key insights]."
         </p>
     </div>
     <p className="text-green-400 text-sm">Replace $200/hr analysts</p>
 </div><div className="bg-zinc-900 rounded-xl p-6">
 <h3 className="text-xl font-bold text-pink-400 mb-4">🎧 Customer Service</h3>
 <div className="bg-zinc-800 rounded p-4 mb-4">
-    <p className="text-sm text-gray-300">
-                  "Respond to this customer: [query]. Tone: [helpful, empathetic]. Include: [solution steps]. If unable to help, [escalation process]. Sign off with [closing]."
+    <p className="text-sm text-gray-300">"Respond to this customer: [query]. Tone: [helpful, empathetic]. Include: [solution steps]. If unable to help, [escalation process]. Sign off with [closing]."
     </p>
 </div>
 <p className="text-green-400 text-sm">Handle 100+ tickets/day</p>
@@ -333,8 +320,7 @@ export default function PromptEngineeringGuide() {
     <div>
         <h4 className="text-purple-400 font-semibold mb-2">🚀 Product Launch Strategy</h4>
         <div className="bg-zinc-800 rounded p-4">
-            <code className="text-sm text-gray-300">
-                    "Act as a product marketing expert who has launched 50+ successful SaaS products. Create a comprehensive 90-day product launch strategy for [product]. Include: pre-launch (30 days), launch week, post-launch (60 days). For each phase, provide: goals, tactics, channels, metrics, budget allocation, team responsibilities. Format as a detailed action plan with daily tasks. Consider market size of [size], competition like [competitors], and target audience of [audience]."
+            <code className="text-sm text-gray-300">"Act as a product marketing expert who has launched 50+ successful SaaS products. Create a comprehensive 90-day product launch strategy for [product]. Include: pre-launch (30 days), launch week, post-launch (60 days). For each phase, provide: goals, tactics, channels, metrics, budget allocation, team responsibilities. Format as a detailed action plan with daily tasks. Consider market size of [size], competition like [competitors], and target audience of [audience]."
             </code>
         </div>
     </div>
@@ -342,8 +328,7 @@ export default function PromptEngineeringGuide() {
     <div>
         <h4 className="text-blue-400 font-semibold mb-2">💰 Sales Copy That Converts</h4>
         <div className="bg-zinc-800 rounded p-4">
-            <code className="text-sm text-gray-300">
-                    "You are a direct response copywriter with a track record of generating $10M+ in sales. Write a sales page for [product] using the PAS (Problem-Agitate-Solution) framework. Target audience: [detailed persona]. Their main pain point: [specific problem]. Our unique solution: [USP]. Include: attention-grabbing headline, 3 emotional pain points, 5 benefit-focused bullet points, social proof section, risk reversal guarantee, 3 urgency triggers, clear CTA. Tone: conversational but persuasive. Length: 1500-2000 words."
+            <code className="text-sm text-gray-300">"You are a direct response copywriter with a track record of generating $10M+ in sales. Write a sales page for [product] using the PAS (Problem-Agitate-Solution) framework. Target audience: [detailed persona]. Their main pain point: [specific problem]. Our unique solution: [USP]. Include: attention-grabbing headline, 3 emotional pain points, 5 benefit-focused bullet points, social proof section, risk reversal guarantee, 3 urgency triggers, clear CTA. Tone: conversational but persuasive. Length: 1500-2000 words."
             </code>
         </div>
     </div>
@@ -424,8 +409,8 @@ export default function PromptEngineeringGuide() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

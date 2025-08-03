@@ -453,8 +453,7 @@ export default function MobileAppAutomationPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">FitnessGuru - From $0 to $85K/Month Revenue</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Mobile app automation transformed our fitness app from zero revenue to $85K monthly recurring revenue. Automated push notifications increased user engagement by 340%, while dynamic pricing optimization boosted subscription conversions to 89%."
+                  <p className="text-gray-300 mb-4">"Mobile app automation transformed our fitness app from zero revenue to $85K monthly recurring revenue. Automated push notifications increased user engagement by 340%, while dynamic pricing optimization boosted subscription conversions to 89%."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-blue-400">$85K monthly revenue</span>
@@ -472,8 +471,7 @@ export default function MobileAppAutomationPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">StudyTracker - 2.5M Active Users with 95% Automation</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Our study app scaled to 2.5M active users with 95% automated operations. Automated user onboarding, personalized study plans, and intelligent retention campaigns run completely hands-free while generating $45K monthly revenue."
+                  <p className="text-gray-300 mb-4">"Our study app scaled to 2.5M active users with 95% automated operations. Automated user onboarding, personalized study plans, and intelligent retention campaigns run completely hands-free while generating $45K monthly revenue."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-green-400">2.5M active users</span>
@@ -491,8 +489,7 @@ export default function MobileAppAutomationPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">MealSync - Food Delivery App Automation Success</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Automation enabled our food delivery app to process 50K+ orders daily with minimal manual intervention. Automated driver matching, demand prediction, and dynamic pricing generate $120K monthly revenue across 15 cities."
+                  <p className="text-gray-300 mb-4">"Automation enabled our food delivery app to process 50K+ orders daily with minimal manual intervention. Automated driver matching, demand prediction, and dynamic pricing generate $120K monthly revenue across 15 cities."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-purple-400">50K+ daily orders</span>

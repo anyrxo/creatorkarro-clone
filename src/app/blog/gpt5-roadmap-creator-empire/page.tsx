@@ -1,5 +1,6 @@
 'use client';
-import React from 'react';
+import React from 'react'
+import Link from 'next/link';
 
 export default function Gpt5RoadmapCreatorEmpirePage() {
   return (
@@ -53,7 +54,7 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
               <h2 className="text-3xl font-bold text-white mb-6">🚀 The $1 Trillion AI Revolution Timeline</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 OpenAI just revealed the most significant AI roadmap in history. GPT-5 isn't just another model upgrade—it's 
-                a complete paradigm shift toward "Magic Unified Intelligence" that will obsolete 90% of current AI tools. Smart 
+                a complete paradigm shift toward"Magic Unified Intelligence" that will obsolete 90% of current AI tools. Smart 
                 creators who position themselves NOW, before the masses catch on, will capture disproportionate market share 
                 in the $1 trillion creator economy transformation.
               </p>
@@ -94,7 +95,7 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
                     <li>• Chain-of-thought reasoning for complex tasks</li>
                     <li>• Automatic tool selection based on context</li>
                     <li>• Seamless integration across all platforms</li>
-                    <li>• GPT-4.5 "Orion" launching in weeks-months</li>
+                    <li>• GPT-4.5"Orion" launching in weeks-months</li>
                   </ul>
                 </div>
                 <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
@@ -121,7 +122,7 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
                 <div className="space-y-4">
                   <div className="border-l-4 border-blue-500 pl-4">
                     <h4 className="font-semibold text-white mb-2">1. Build Chain-of-Thought Service Businesses</h4>
-                    <p className="text-gray-300 text-sm">Offer complex problem-solving services that leverage advanced reasoning. Position as "AI Strategy Consulting."</p>
+                    <p className="text-gray-300 text-sm">Offer complex problem-solving services that leverage advanced reasoning. Position as"AI Strategy Consulting."</p>
                   </div>
                   <div className="border-l-4 border-blue-500 pl-4">
                     <h4 className="font-semibold text-white mb-2">2. Create Unified AI Automation Agencies</h4>
@@ -214,21 +215,21 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
                   <h4 className="text-lg font-semibold text-white mb-3">🧠 Rachel's AI Strategy Consultancy - $89K/Month Projected</h4>
                   <p className="text-gray-300 mb-4">Building business around chain-of-thought problem solving for 8 enterprise clients. Average retainer: $11,000/month.</p>
                   <div className="text-sm text-gray-400">
-                    <strong>Secret:</strong> Positioned as "AI Strategy Partner" focusing on complex business challenges that require advanced reasoning.
+                    <strong>Secret:</strong> Positioned as"AI Strategy Partner" focusing on complex business challenges that require advanced reasoning.
                   </div>
                 </div>
                 <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
                   <h4 className="text-lg font-semibold text-white mb-3">⚡ Miguel's Unified AI Agency - $127K/Month Pipeline</h4>
                   <p className="text-gray-300 mb-4">Pre-selling unified AI implementation services to 15 mid-size companies. Average project: $8,500/month ongoing.</p>
                   <div className="text-sm text-gray-400">
-                    <strong>Strategy:</strong> Sold "future-ready AI transformation" 6 months before GPT-5 launch, giving massive head start.
+                    <strong>Strategy:</strong> Sold"future-ready AI transformation" 6 months before GPT-5 launch, giving massive head start.
                   </div>
                 </div>
                 <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
                   <h4 className="text-lg font-semibold text-white mb-3">🎯 Jennifer's Pre-Launch Education Platform - $156K Revenue</h4>
                   <p className="text-gray-300 mb-4">Teaching businesses how to prepare for GPT-5 transition. 1,200+ students at $130/course, corporate workshops at $5K each.</p>
                   <div className="text-sm text-gray-400">
-                    <strong>Genius Move:</strong> Created "GPT-5 Readiness Certification" that companies pay premium for before competitors understand the need.
+                    <strong>Genius Move:</strong> Created"GPT-5 Readiness Certification" that companies pay premium for before competitors understand the need.
                   </div>
                 </div>
               </div>
@@ -348,7 +349,7 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
             <div className="space-y-6">
               <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-white mb-3">When exactly will GPT-5 launch?</h3>
-                <p className="text-gray-300">OpenAI indicates "weeks to months" for GPT-4.5, with GPT-5 following. The exact timeline is unclear, but smart creators are positioning NOW rather than waiting for official announcements.</p>
+                <p className="text-gray-300">OpenAI indicates"weeks to months" for GPT-4.5, with GPT-5 following. The exact timeline is unclear, but smart creators are positioning NOW rather than waiting for official announcements.</p>
               </div>
               
               <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">

@@ -2,23 +2,16 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function VoiceAIAutomation() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const processAnimation = useScrollAnimation({ threshold: 0.1 })
-  const toolsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     <div className="min-h-screen bg-dark">
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.inView ? 'in-view' : ''}`}
+            
+            className="text-center max-w-5xl mx-auto"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
               <span className="text-purple-400 text-sm font-semibold">VOICE AI</span>
@@ -32,7 +25,7 @@ export default function VoiceAIAutomation() {
               Transform your business with <span className="text-white font-semibold">AI-powered voice systems</span> that handle calls, create content, and scale customer interactions 24/7
             </p>
 
-            <BlogMetrics className="text-gray-400" publishDate="2024-09-20" readTime="18 min" />
+            
           </div>
         </div>
       </section>
@@ -64,8 +57,8 @@ export default function VoiceAIAutomation() {
       </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up ${contentAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8">Why Voice AI Is the Ultimate Business Automation</h2>
@@ -99,8 +92,7 @@ export default function VoiceAIAutomation() {
           </div>
 
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-8 text-center">
-            <p className="text-xl text-gray-300 mb-4">
-              "Our Voice AI system handles 10,000+ customer calls daily, reduced support costs by 87%, and generates $30K+ monthly through automated sales calls."
+            <p className="text-xl text-gray-300 mb-4">"Our Voice AI system handles 10,000+ customer calls daily, reduced support costs by 87%, and generates $30K+ monthly through automated sales calls."
             </p>
             <p className="text-white font-semibold">- Marcus Johnson, CEO of VoiceFirst Solutions</p>
           </div>
@@ -108,8 +100,8 @@ export default function VoiceAIAutomation() {
       </section>
 
       <section
-        ref={processAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up ${processAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">5 Voice AI Systems That Print Money</h2>
@@ -298,8 +290,8 @@ export default function VoiceAIAutomation() {
       </section>
 
       <section
-        ref={toolsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up ${toolsAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">The Voice AI Tech Stack</h2>
@@ -519,8 +511,8 @@ export default function VoiceAIAutomation() {
       </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up ${ctaAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">

@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function CreatingAIInfluencers() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const stepsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const toolsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function CreatingAIInfluencers() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-500/20 mb-6">
                     <span className="text-pink-400 text-sm font-semibold">AI STRATEGY</span>
@@ -34,7 +27,7 @@ export default function CreatingAIInfluencers() {
               Step-by-step guide to building <span className="text-white font-semibold">AI influencers that generate content and revenue</span> on autopilot
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-24" readTime="15 min" />
+                
             </div>
         </div>
     </section>
@@ -70,8 +63,8 @@ export default function CreatingAIInfluencers() {
     </section>
 
       <section
-        ref={stepsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8">The Complete AI Influencer Creation Process</h2>
@@ -211,8 +204,8 @@ export default function CreatingAIInfluencers() {
     </section>
 
       <section
-        ref={toolsAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Essential Tools & Costs</h2>
@@ -271,8 +264,8 @@ export default function CreatingAIInfluencers() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8">Pro Tips for AI Influencer Success</h2>
@@ -314,8 +307,8 @@ export default function CreatingAIInfluencers() {
     </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

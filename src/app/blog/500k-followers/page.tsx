@@ -4,18 +4,10 @@ import React from 'react'
 import Link from 'next/link'
 
 import Image from 'next/image'
-import Link from 'next/link'
-import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function BlogPost() {
   // Scroll animations
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const statsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const takeawaysAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -23,8 +15,8 @@ export default function BlogPost() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
                     <span className="text-blue-400 text-sm font-semibold">GROWTH GUIDE</span>
@@ -38,14 +30,14 @@ export default function BlogPost() {
               The complete Instagram blueprint that took me from zero to <span className="text-white font-semibold">half a million followers</span> and $15K/month
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-15" readTime="12 min" />
+                
             </div>
         </div>
     </section>
 
       <section
-        ref={statsAnimation.elementRef}
-        className={`py-16 px-4 border-y border-gray-800 scroll-fade-up `}
+        
+        className="py-16 px-4 border-y border-gray-800"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -70,8 +62,8 @@ export default function BlogPost() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -207,8 +199,8 @@ export default function BlogPost() {
     </section>
 
       <section
-        ref={takeawaysAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Key Takeaways</h2>
@@ -242,8 +234,8 @@ export default function BlogPost() {
     </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

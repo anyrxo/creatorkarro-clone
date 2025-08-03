@@ -482,8 +482,7 @@ export default function Claude4ComparisonPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Full-Stack Application Development</h3>
-                  <p className="text-gray-300 mb-4">
-                    "We tasked each model with building a complete e-commerce application. Claude 4 delivered the most production-ready code with proper error handling, security measures, and clean architecture. GPT-4.1 was fastest but required more refinement. DeepSeek R1 showed strong logic but lacked polish."
+                  <p className="text-gray-300 mb-4">"We tasked each model with building a complete e-commerce application. Claude 4 delivered the most production-ready code with proper error handling, security measures, and clean architecture. GPT-4.1 was fastest but required more refinement. DeepSeek R1 showed strong logic but lacked polish."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-blue-400">Winner: Claude 4</span>
@@ -501,8 +500,7 @@ export default function Claude4ComparisonPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Automation Script Generation</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Creating automation scripts for data processing, web scraping, and API integration. GPT-4.1 excelled at rapid prototyping and handling multiple data formats. Claude 4 produced more robust, maintainable code. DeepSeek R1 showed impressive logical flow but slower iteration."
+                  <p className="text-gray-300 mb-4">"Creating automation scripts for data processing, web scraping, and API integration. GPT-4.1 excelled at rapid prototyping and handling multiple data formats. Claude 4 produced more robust, maintainable code. DeepSeek R1 showed impressive logical flow but slower iteration."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-green-400">Winner: GPT-4.1</span>
@@ -520,8 +518,7 @@ export default function Claude4ComparisonPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Mathematical Problem Solving</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Complex mathematical proofs, optimization problems, and statistical analysis. DeepSeek R1 dominated with step-by-step reasoning and accurate solutions. Claude 4 showed strong analytical thinking. GPT-4.1 was competent but less systematic in approach."
+                  <p className="text-gray-300 mb-4">"Complex mathematical proofs, optimization problems, and statistical analysis. DeepSeek R1 dominated with step-by-step reasoning and accurate solutions. Claude 4 showed strong analytical thinking. GPT-4.1 was competent but less systematic in approach."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-purple-400">Winner: DeepSeek R1</span>

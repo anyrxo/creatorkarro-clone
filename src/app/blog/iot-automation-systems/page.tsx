@@ -362,8 +362,7 @@ export default function IoTAutomationSystemsPage() {
                     <p className="text-gray-400">Comprehensive IoT Infrastructure Implementation</p>
                   </div>
                 </div>
-                <blockquote className="text-gray-300 mb-6 italic">
-                  "Our IoT transformation saved €42.5 million annually while improving citizen satisfaction by 87%. We now manage 20,000+ sensors across transportation, energy, water, and waste systems with full automation."
+                <blockquote className="text-gray-300 mb-6 italic">"Our IoT transformation saved €42.5 million annually while improving citizen satisfaction by 87%. We now manage 20,000+ sensors across transportation, energy, water, and waste systems with full automation."
                 </blockquote>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="bg-gray-900 rounded-lg p-4 text-center">

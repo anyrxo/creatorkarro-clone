@@ -358,8 +358,7 @@ export default function SaaSAutomationSystemsPage() {
                     <p className="text-gray-400">Founder of TaskFlow (Project Management SaaS)</p>
                   </div>
                 </div>
-                <blockquote className="text-gray-300 mb-6 italic">
-                  "We went from struggling with 500 customers to smoothly handling 50,000+ in just 8 months. The automation systems literally saved our company. We're now at $3.2M ARR with the same 5-person team."
+                <blockquote className="text-gray-300 mb-6 italic">"We went from struggling with 500 customers to smoothly handling 50,000+ in just 8 months. The automation systems literally saved our company. We're now at $3.2M ARR with the same 5-person team."
                 </blockquote>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="bg-gray-900 rounded-lg p-4 text-center">

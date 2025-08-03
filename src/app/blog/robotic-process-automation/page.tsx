@@ -2,23 +2,16 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function RoboticProcessAutomation() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const processAnimation = useScrollAnimation({ threshold: 0.1 })
-  const toolsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     <div className="min-h-screen bg-dark">
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.inView ? 'in-view' : ''}`}
+            
+            className="text-center max-w-5xl mx-auto"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 mb-6">
               <span className="text-orange-400 text-sm font-semibold">RPA AUTOMATION</span>
@@ -32,7 +25,7 @@ export default function RoboticProcessAutomation() {
               Deploy <span className="text-white font-semibold">software robots that work 24/7</span>, eliminate human errors, and transform your business operations at enterprise scale
             </p>
 
-            <BlogMetrics className="text-gray-400" publishDate="2024-06-25" readTime="19 min" />
+            
           </div>
         </div>
       </section>
@@ -64,8 +57,8 @@ export default function RoboticProcessAutomation() {
       </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up ${contentAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8">Why Your Business Desperately Needs RPA</h2>
@@ -99,8 +92,7 @@ export default function RoboticProcessAutomation() {
           </div>
 
           <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-xl p-8 text-center">
-            <p className="text-xl text-gray-300 mb-4">
-              "RPA saved us $1.2M in the first year alone. Our 50 software robots now handle work that would require 200+ employees."
+            <p className="text-xl text-gray-300 mb-4">"RPA saved us $1.2M in the first year alone. Our 50 software robots now handle work that would require 200+ employees."
             </p>
             <p className="text-white font-semibold">- Jennifer Park, COO at GlobalFinance Corp</p>
           </div>
@@ -108,8 +100,8 @@ export default function RoboticProcessAutomation() {
       </section>
 
       <section
-        ref={processAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up ${processAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">10 Game-Changing RPA Use Cases</h2>
@@ -335,8 +327,8 @@ export default function RoboticProcessAutomation() {
       </section>
 
       <section
-        ref={toolsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up ${toolsAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Enterprise RPA Platform Comparison</h2>
@@ -621,8 +613,8 @@ export default function RoboticProcessAutomation() {
       </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up ${ctaAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">

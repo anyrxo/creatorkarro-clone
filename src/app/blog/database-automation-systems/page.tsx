@@ -2,23 +2,16 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function DatabaseAutomationSystems() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const processAnimation = useScrollAnimation({ threshold: 0.1 })
-  const toolsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     <div className="min-h-screen bg-dark">
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.inView ? 'in-view' : ''}`}
+            
+            className="text-center max-w-5xl mx-auto"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
               <span className="text-blue-400 text-sm font-semibold">DATABASE AUTOMATION</span>
@@ -32,7 +25,7 @@ export default function DatabaseAutomationSystems() {
               Transform your data operations with <span className="text-white font-semibold">intelligent automation systems</span> that handle backup, migration, optimization, and monitoring 24/7
             </p>
 
-            <BlogMetrics className="text-gray-400" publishDate="2024-06-10" readTime="16 min" />
+            
           </div>
         </div>
       </section>
@@ -64,8 +57,8 @@ export default function DatabaseAutomationSystems() {
       </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up ${contentAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8">Why Manual Database Management is Killing Your Business</h2>
@@ -99,8 +92,7 @@ export default function DatabaseAutomationSystems() {
           </div>
 
           <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-8 text-center">
-            <p className="text-xl text-gray-300 mb-4">
-              "After implementing database automation, we reduced errors by 95%, cut operational costs by 70%, and haven't had a single data incident in 18 months."
+            <p className="text-xl text-gray-300 mb-4">"After implementing database automation, we reduced errors by 95%, cut operational costs by 70%, and haven't had a single data incident in 18 months."
             </p>
             <p className="text-white font-semibold">- Sarah Chen, CTO at DataScale</p>
           </div>
@@ -108,8 +100,8 @@ export default function DatabaseAutomationSystems() {
       </section>
 
       <section
-        ref={processAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up ${processAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">The Complete Database Automation Framework</h2>
@@ -278,8 +270,8 @@ export default function DatabaseAutomationSystems() {
       </section>
 
       <section
-        ref={toolsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up ${toolsAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Enterprise Database Automation Stack</h2>
@@ -411,8 +403,8 @@ export default function DatabaseAutomationSystems() {
       </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up ${ctaAnimation.inView ? 'in-view' : ''}`}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">

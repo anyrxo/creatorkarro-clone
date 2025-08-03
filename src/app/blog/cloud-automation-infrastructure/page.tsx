@@ -474,8 +474,7 @@ export default function CloudAutomationInfrastructurePage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">TechCorp - $2M Infrastructure Savings</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Implementing cloud automation reduced our infrastructure costs by 65% while improving reliability. Our deployment time went from 6 hours to 6 minutes, and we achieved 99.99% uptime."
+                  <p className="text-gray-300 mb-4">"Implementing cloud automation reduced our infrastructure costs by 65% while improving reliability. Our deployment time went from 6 hours to 6 minutes, and we achieved 99.99% uptime."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-blue-400">65% cost reduction</span>
@@ -493,8 +492,7 @@ export default function CloudAutomationInfrastructurePage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">FinanceScale - Zero-Downtime Scaling</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Our automated infrastructure scales from 10 to 1000 instances seamlessly during market volatility. We process 100M+ transactions daily with complete reliability and regulatory compliance."
+                  <p className="text-gray-300 mb-4">"Our automated infrastructure scales from 10 to 1000 instances seamlessly during market volatility. We process 100M+ transactions daily with complete reliability and regulatory compliance."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-green-400">100x auto-scaling</span>
@@ -512,8 +510,7 @@ export default function CloudAutomationInfrastructurePage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">MediaStream - Global Scale</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Cloud automation enabled us to serve 10M concurrent users during our biggest live event. The infrastructure scaled automatically across 50+ regions without any manual intervention."
+                  <p className="text-gray-300 mb-4">"Cloud automation enabled us to serve 10M concurrent users during our biggest live event. The infrastructure scaled automatically across 50+ regions without any manual intervention."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-purple-400">10M concurrent users</span>

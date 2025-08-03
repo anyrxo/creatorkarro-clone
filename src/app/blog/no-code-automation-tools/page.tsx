@@ -437,8 +437,7 @@ export default function NoCodeAutomationToolsPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">StartupCorp - $2M Revenue with No-Code</h3>
-                  <p className="text-gray-300 mb-4">
-                    "We built our entire SaaS platform using Bubble and automated everything with Zapier. Reached $2M ARR without hiring a single developer, saving $500K+ in development costs."
+                  <p className="text-gray-300 mb-4">"We built our entire SaaS platform using Bubble and automated everything with Zapier. Reached $2M ARR without hiring a single developer, saving $500K+ in development costs."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-purple-400">$2M ARR achieved</span>
@@ -456,8 +455,7 @@ export default function NoCodeAutomationToolsPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">EcomAgency - 300% Efficiency Boost</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Automated our entire client onboarding and reporting process using Airtable and Make. We now handle 3x more clients with the same team while improving service quality."
+                  <p className="text-gray-300 mb-4">"Automated our entire client onboarding and reporting process using Airtable and Make. We now handle 3x more clients with the same team while improving service quality."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-blue-400">300% more clients</span>
@@ -475,8 +473,7 @@ export default function NoCodeAutomationToolsPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">NonProfitCare - 90% Admin Time Reduction</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Notion and Zapier transformed our volunteer management and donor relations. We reduced administrative work by 90% and increased donations by 150% through better automation."
+                  <p className="text-gray-300 mb-4">"Notion and Zapier transformed our volunteer management and donor relations. We reduced administrative work by 90% and increased donations by 150% through better automation."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-green-400">90% less admin work</span>

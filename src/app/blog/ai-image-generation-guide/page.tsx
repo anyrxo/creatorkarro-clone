@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function AIImageGenerationGuide() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const toolsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const workflowAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function AIImageGenerationGuide() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
                     <span className="text-blue-400 text-sm font-semibold">GUIDE</span>
@@ -34,7 +27,7 @@ export default function AIImageGenerationGuide() {
               Master every AI image tool and technique to <span className="text-white font-semibold">create viral content in minutes</span>
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-02-20" readTime="20 min" />
+                
             </div>
         </div>
     </section>
@@ -66,8 +59,8 @@ export default function AIImageGenerationGuide() {
     </section>
 
       <section
-        ref={toolsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">AI Image Tools Ranked by Use Case</h2>
@@ -214,7 +207,7 @@ export default function AIImageGenerationGuide() {
             <div className="space-y-6">
                 <div className="p-4 bg-zinc-900 rounded">
                     <p className="text-white font-mono mb-2">[Subject] + [Style] + [Lighting] + [Color] + [Mood] + [Composition] + [Quality]</p>
-                    <p className="text-gray-400 text-sm mt-2">Example: "Portrait of a woman, oil painting style, golden hour lighting, warm colors, serene mood, rule of thirds, masterpiece quality"</p>
+                    <p className="text-gray-400 text-sm mt-2">Example:"Portrait of a woman, oil painting style, golden hour lighting, warm colors, serene mood, rule of thirds, masterpiece quality"</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -245,8 +238,8 @@ export default function AIImageGenerationGuide() {
 </section>
 
       <section
-        ref={workflowAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Professional AI Image Workflow</h2>
@@ -296,8 +289,8 @@ export default function AIImageGenerationGuide() {
 </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Advanced Techniques for Pros</h2>
@@ -388,8 +381,8 @@ export default function AIImageGenerationGuide() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

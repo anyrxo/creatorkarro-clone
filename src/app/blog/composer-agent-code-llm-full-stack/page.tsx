@@ -3,37 +3,35 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { Metadata } from 'next'
-import Link from 'next/link'
+
 import Breadcrumbs from '@/components/Breadcrumbs'
 import NewsletterSignup from '@/components/NewsletterSignup'
 import { FAQCard } from '@/components/course/CourseLayout'
 const faqData = [
   {
-    question: "What is the Composer Agent and how does it work?",
-    answer: "Composer Agent is an AI-powered tool in Code LLM that can build full-stack applications from a single prompt. It uses advanced language models like DeepSeek R1 and Claude 3.5 Sonnet to autonomously write code, create project structures, and implement features without manual coding."
+    question:"What is the Composer Agent and how does it work?",
+    answer:"Composer Agent is an AI-powered tool in Code LLM that can build full-stack applications from a single prompt. It uses advanced language models like DeepSeek R1 and Claude 3.5 Sonnet to autonomously write code, create project structures, and implement features without manual coding."
   },
   {
-    question: "How does Composer Agent compare to Cursor and Windsurf?",
-    answer: "While Cursor and Windsurf focus on AI-assisted coding, Composer Agent goes further by building complete applications autonomously. It offers multi-model support, checkpoint management, and can create full-stack apps with backend, frontend, and styling from a single prompt."
+    question:"How does Composer Agent compare to Cursor and Windsurf?",
+    answer:"While Cursor and Windsurf focus on AI-assisted coding, Composer Agent goes further by building complete applications autonomously. It offers multi-model support, checkpoint management, and can create full-stack apps with backend, frontend, and styling from a single prompt."
   },
   {
-    question: "Is Composer Agent free to use?",
-    answer: "New users get a free month of access to Code LLM and Composer Agent. After the trial, pricing varies based on usage and features. The free trial provides full access to test all capabilities including multi-model AI support."
+    question:"Is Composer Agent free to use?",
+    answer:"New users get a free month of access to Code LLM and Composer Agent. After the trial, pricing varies based on usage and features. The free trial provides full access to test all capabilities including multi-model AI support."
   },
   {
-    question: "What types of applications can Composer Agent build?",
-    answer: "Composer Agent can build various applications including Flask web apps, interactive diagramming tools, CRUD applications, REST APIs, and full-stack projects with frontend and backend components. It handles project structure, styling, and database integration automatically."
+    question:"What types of applications can Composer Agent build?",
+    answer:"Composer Agent can build various applications including Flask web apps, interactive diagramming tools, CRUD applications, REST APIs, and full-stack projects with frontend and backend components. It handles project structure, styling, and database integration automatically."
   },
   {
-    question: "Which AI models does Composer Agent support?",
-    answer: "Composer Agent integrates with multiple state-of-the-art models including DeepSeek R1, Claude 3.5 Sonnet, and Ollama 3 Mini High. It features multi-model routing to select the best model for each specific task automatically."
-}
+    question:"Which AI models does Composer Agent support?",
+    answer:"Composer Agent integrates with multiple state-of-the-art models including DeepSeek R1, Claude 3.5 Sonnet, and Ollama 3 Mini High. It features multi-model routing to select the best model for each specific task automatically."
+    }
 ]
 
 export default function ComposerAgentPage() {
   return (
-    
     <div className="min-h-screen bg-dark">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <Breadcrumbs />
@@ -95,7 +93,7 @@ export default function ComposerAgentPage() {
                     <h3 className="text-2xl font-semibold mb-4">Why This Matters Now</h3>
             
                     <p className="mb-4">
-              The software development bottleneck isn't ideas—it's implementation. Every business needs custom applications, but most lack the development resources to build them. Composer Agent democratizes application development by reducing the barrier from "knowing how to code" to "knowing what you want."
+              The software development bottleneck isn't ideas—it's implementation. Every business needs custom applications, but most lack the development resources to build them. Composer Agent democratizes application development by reducing the barrier from"knowing how to code" to"knowing what you want."
                     </p>
 
                     <ul className="list-disc pl-6 space-y-2 mb-6">
@@ -143,8 +141,7 @@ export default function ComposerAgentPage() {
 
                     <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-6 my-8">
                         <h4 className="text-lg font-semibold mb-2">Real User Experience</h4>
-                        <p>
-                "I described a task management app in plain English, and Composer Agent built a complete Flask application with user authentication, database models, and a responsive frontend. What would have taken me days was done in 10 minutes."
+                        <p>"I described a task management app in plain English, and Composer Agent built a complete Flask application with user authentication, database models, and a responsive frontend. What would have taken me days was done in 10 minutes."
                         </p>
                         <p className="mt-2 text-sm text-gray-400">- Senior Developer, Tech Startup</p>
                     </div>
@@ -287,8 +284,7 @@ if __name__ == '__main__':
 
                     <div className="bg-zinc-800 rounded-lg p-6 my-8">
                         <h4 className="text-lg font-semibold mb-3">The Prompt</h4>
-                        <p className="text-blue-400 italic">
-                "Create a Flask web application that allows users to create interactive diagrams by adding nodes and edges. Include a user-friendly interface for customization and make it visually appealing."
+                        <p className="text-blue-400 italic">"Create a Flask web application that allows users to create interactive diagrams by adding nodes and edges. Include a user-friendly interface for customization and make it visually appealing."
                         </p>
                     </div>
 
@@ -574,9 +570,9 @@ if __name__ == '__main__':
                     <h4 className="text-lg font-semibold mb-3">Example: Config File Analysis</h4>
                     <pre className="text-sm overflow-x-auto">
 {`# Problematic configuration file
-DATABASE_URL = "postgresql://user:pass@localhost/db"
+DATABASE_URL ="postgresql://user:pass@localhost/db"
 DEBUG = True  # Should be False in production
-SECRET_KEY = "dev-key-123"  # Weak secret key
+SECRET_KEY ="dev-key-123"  # Weak secret key
 ALLOWED_HOSTS = ["*"]  # Too permissive
 
 # Composer Agent's analysis and fixes:
@@ -714,8 +710,7 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')`}
                     <div className="space-y-4">
                         <div>
                             <h5 className="font-semibold mb-2">1. The Prompt</h5>
-                            <p className="text-blue-400 italic text-sm">
-                    "Create a Flask web application for managing todos. Users should be able to add, edit, delete, and mark todos as complete. Include a clean, modern interface with basic styling."
+                            <p className="text-blue-400 italic text-sm">"Create a Flask web application for managing todos. Users should be able to add, edit, delete, and mark todos as complete. Include a clean, modern interface with basic styling."
                             </p>
                         </div>
                 
@@ -941,7 +936,7 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')`}
                 <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-6 my-8">
                     <h4 className="text-lg font-semibold mb-2">The New Development Paradigm</h4>
                     <p>
-                We're moving from "learning to code" to "learning to communicate with AI about code." The future belongs to those who can effectively describe what they want built, not necessarily those who can build it line by line.
+                We're moving from"learning to code" to"learning to communicate with AI about code." The future belongs to those who can effectively describe what they want built, not necessarily those who can build it line by line.
                     </p>
                 </div>
             </section>
@@ -959,7 +954,7 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')`}
                 className="bg-gray-900 text-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition duration-300 inline-block text-center"
               >
                 Try Composer Agent Free
-                    </Link>
+                    </a>
                     <Link href="/" className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-gray-300 transition duration-300 inline-block text-center">
                 Get Implementation Help
                     </Link>
@@ -987,6 +982,5 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')`}
             </article>
         </div>
     </div>
-  
-)
+  )
 }

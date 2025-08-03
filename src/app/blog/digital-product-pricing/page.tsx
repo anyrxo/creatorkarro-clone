@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function DigitalProductPricing() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const strategiesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const calculatorAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function DigitalProductPricing() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-6">
                     <span className="text-green-400 text-sm font-semibold">PRICING</span>
@@ -34,7 +27,7 @@ export default function DigitalProductPricing() {
               Discover the <span className="text-white font-semibold">pricing strategies that 6-figure creators use</span> to maximize revenue
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-02-01" readTime="11 min" />
+                
             </div>
         </div>
     </section>
@@ -72,8 +65,8 @@ export default function DigitalProductPricing() {
     </section>
 
       <section
-        ref={strategiesAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">The 5 Proven Pricing Strategies</h2>
@@ -88,7 +81,7 @@ export default function DigitalProductPricing() {
                         <div className="bg-zinc-800 rounded-lg p-6">
                             <h4 className="text-white font-semibold mb-3">The Science:</h4>
                             <ul className="space-y-2 text-gray-300">
-                                <li>• Left-digit bias makes $97 feel like "$90-something"</li>
+                                <li>• Left-digit bias makes $97 feel like"$90-something"</li>
                                 <li>• Signals value consciousness, not cheapness</li>
                                 <li>• 3.5% higher conversion than round numbers</li>
                                 <li>• Works best in $X7 and $X97 formats</li>
@@ -256,8 +249,8 @@ export default function DigitalProductPricing() {
 </section>
 
       <section
-        ref={calculatorAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Price Point Analysis</h2>
@@ -295,8 +288,8 @@ export default function DigitalProductPricing() {
 </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8">The 30-Day Price Testing Framework</h2>
@@ -346,8 +339,8 @@ export default function DigitalProductPricing() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

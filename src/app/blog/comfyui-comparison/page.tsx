@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function ComfyUIComparison() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const featuresAnimation = useScrollAnimation({ threshold: 0.1 })
-  const comparisonAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function ComfyUIComparison() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
                     <span className="text-purple-400 text-sm font-semibold">AI TOOLS</span>
@@ -34,7 +27,7 @@ export default function ComfyUIComparison() {
               The definitive comparison of <span className="text-white font-semibold">ComfyUI, Automatic1111, and Midjourney</span> for content creators
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-30" readTime="12 min" />
+                
             </div>
         </div>
     </section>
@@ -71,8 +64,8 @@ export default function ComfyUIComparison() {
     </section>
 
       <section
-        ref={comparisonAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Head-to-Head Comparison</h2>
@@ -204,8 +197,8 @@ export default function ComfyUIComparison() {
 </section>
 
       <section
-        ref={featuresAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Why ComfyUI is the Pro Choice</h2>
@@ -239,8 +232,8 @@ export default function ComfyUIComparison() {
 </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8">When to Use Each Tool</h2>
@@ -322,8 +315,8 @@ export default function ComfyUIComparison() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function AIInfluencerTrends() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const trendsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const futureAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function AIInfluencerTrends() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-500/20 mb-6">
                     <span className="text-pink-400 text-sm font-semibold">TRENDS</span>
@@ -34,7 +27,7 @@ export default function AIInfluencerTrends() {
               How virtual humans are reshaping <span className="text-white font-semibold">social media, marketing, and creator economy</span>
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-02-03" readTime="13 min" />
+                
             </div>
         </div>
     </section>
@@ -66,8 +59,8 @@ export default function AIInfluencerTrends() {
     </section>
 
       <section
-        ref={trendsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">The 7 Biggest AI Influencer Trends</h2>
@@ -269,7 +262,7 @@ export default function AIInfluencerTrends() {
                 <li>• Cross-promotion between AI accounts</li>
                 <li>• Virtual relationships and drama</li>
                 <li>• Collaborative product launches</li>
-                <li>• AI influencer "friend groups"</li>
+                <li>• AI influencer"friend groups"</li>
             </ul>
         </div>
     </div>
@@ -280,8 +273,8 @@ export default function AIInfluencerTrends() {
 </section>
 
       <section
-        ref={futureAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">What's Coming Next</h2>
@@ -313,8 +306,8 @@ export default function AIInfluencerTrends() {
 </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8">How to Capitalize on This Trend</h2>
@@ -356,8 +349,8 @@ export default function AIInfluencerTrends() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

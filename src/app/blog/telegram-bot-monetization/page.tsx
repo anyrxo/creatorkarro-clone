@@ -423,7 +423,7 @@ export default function TelegramBotMonetizationPage() {
                     <ul className="text-orange-200 space-y-1 text-sm">
                       <li>• Personal daily updates and behind-the-scenes content</li>
                       <li>• Automated birthday and milestone celebration messages</li>
-                      <li>• "Good morning" and "good night" message sequences</li>
+                      <li>•"Good morning" and"good night" message sequences</li>
                       <li>• Simulated personal conversations through AI chatbots</li>
                     </ul>
                   </div>
@@ -554,7 +554,7 @@ export default function TelegramBotMonetizationPage() {
                       AS
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white">Adult Content Creator "Sophia"</h4>
+                      <h4 className="text-lg font-semibold text-white">Adult Content Creator"Sophia"</h4>
                       <p className="text-emerald-200 text-sm">OnlyFans Alternative Strategy</p>
                     </div>
                   </div>
@@ -583,7 +583,7 @@ export default function TelegramBotMonetizationPage() {
                       MF
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white">Fitness Influencer "Marcus"</h4>
+                      <h4 className="text-lg font-semibold text-white">Fitness Influencer"Marcus"</h4>
                       <p className="text-purple-200 text-sm">Coaching & Digital Products</p>
                     </div>
                   </div>
@@ -612,7 +612,7 @@ export default function TelegramBotMonetizationPage() {
                       TC
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white">Crypto Trader "Alex"</h4>
+                      <h4 className="text-lg font-semibold text-white">Crypto Trader"Alex"</h4>
                       <p className="text-orange-200 text-sm">Trading Signals & Education</p>
                     </div>
                   </div>
@@ -641,7 +641,7 @@ export default function TelegramBotMonetizationPage() {
                       DE
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white">Dating Coach "Emma"</h4>
+                      <h4 className="text-lg font-semibold text-white">Dating Coach"Emma"</h4>
                       <p className="text-teal-200 text-sm">Coaching & Course Sales</p>
                     </div>
                   </div>

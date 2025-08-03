@@ -4,18 +4,10 @@ import React from 'react'
 import Link from 'next/link'
 
 import Image from 'next/image'
-import Link from 'next/link'
-import { useScrollAnimation, useScrollAnimations } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function WhopClippingGuide() {
   // Scroll animations
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const strategyAnimation = useScrollAnimation({ threshold: 0.1 })
-  const resultsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -23,8 +15,8 @@ export default function WhopClippingGuide() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
                     <span className="text-blue-400 text-sm font-semibold">MONETIZATION GUIDE</span>
@@ -38,7 +30,7 @@ export default function WhopClippingGuide() {
               Turn Twitch streams into a <span className="text-white font-semibold">$10K/month business</span> with this proven system used by 500+ successful clippers
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-22" readTime="15 min" />
+                
             </div>
         </div>
     </section>
@@ -67,8 +59,8 @@ export default function WhopClippingGuide() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -125,8 +117,7 @@ export default function WhopClippingGuide() {
                     <div className="bg-zinc-900 rounded-xl p-6">
                         <h3 className="text-xl font-bold text-white mb-3">Step 2: The Perfect Pitch Template</h3>
                         <div className="bg-zinc-800 rounded-lg p-4 mb-4">
-                            <p className="text-gray-300 italic">
-                    "Hey [Name], I've been watching your streams and your [specific moment] had me dying 😂 I specialize in turning moments like these into viral TikToks/Shorts. I work on a 50/50 revenue split - you keep creating, I handle all the clipping and posting. Here are 3 sample clips I made from your recent streams: [links]. Interested?"
+                            <p className="text-gray-300 italic">"Hey [Name], I've been watching your streams and your [specific moment] had me dying 😂 I specialize in turning moments like these into viral TikToks/Shorts. I work on a 50/50 revenue split - you keep creating, I handle all the clipping and posting. Here are 3 sample clips I made from your recent streams: [links]. Interested?"
                             </p>
                         </div>
                         <p className="text-gray-300">This pitch has a <span className="text-green-400 font-semibold">73% success rate</span> because it:</p>
@@ -206,8 +197,8 @@ export default function WhopClippingGuide() {
     </section>
 
       <section
-        ref={resultsAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Real Results From My Students</h2>
@@ -235,8 +226,8 @@ export default function WhopClippingGuide() {
     </section>
 
       <section
-        ref={strategyAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Advanced Strategies for Maximum Revenue</h2>
@@ -288,8 +279,8 @@ export default function WhopClippingGuide() {
     </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

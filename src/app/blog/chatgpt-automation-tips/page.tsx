@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function ChatGPTAutomationTips() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const automationAnimation = useScrollAnimation({ threshold: 0.1 })
-  const templatesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function ChatGPTAutomationTips() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-6">
                     <span className="text-green-400 text-sm font-semibold">AUTOMATION</span>
@@ -34,7 +27,7 @@ export default function ChatGPTAutomationTips() {
               Turn ChatGPT into your <span className="text-white font-semibold">24/7 content creation machine</span> with these pro strategies
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-02-21" readTime="18 min" />
+                
             </div>
         </div>
     </section>
@@ -66,8 +59,8 @@ export default function ChatGPTAutomationTips() {
     </section>
 
       <section
-        ref={automationAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8">Content Creation Automations</h2>
@@ -81,8 +74,7 @@ export default function ChatGPTAutomationTips() {
                   
                         <div className="bg-zinc-800 rounded-lg p-6">
                             <h4 className="text-white font-semibold mb-3">The Prompt Framework:</h4>
-                            <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300 mb-4">
-                      "Create a 30-day content calendar for [platform] about [topic]. Include:<br/>
+                            <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300 mb-4">"Create a 30-day content calendar for [platform] about [topic]. Include:<br/>
                       - Post ideas with hooks<br/>
                       - Content types (educational, entertaining, promotional)<br/>
                       - Hashtag suggestions<br/>
@@ -112,8 +104,7 @@ export default function ChatGPTAutomationTips() {
                   
                     <div className="bg-zinc-800 rounded-lg p-6">
                         <h4 className="text-white font-semibold mb-3">Master Prompt:</h4>
-                        <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300 mb-4">
-                      "Create a 7-email welcome sequence for [product/service]. Each email should:<br/>
+                        <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300 mb-4">"Create a 7-email welcome sequence for [product/service]. Each email should:<br/>
                       - Have a compelling subject line<br/>
                       - Follow the AIDA framework<br/>
                       - Include 1 story, 1 tip, 1 CTA<br/>
@@ -236,8 +227,8 @@ export default function ChatGPTAutomationTips() {
 </section>
 
       <section
-        ref={templatesAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Copy-Paste Workflow Templates</h2>
@@ -245,8 +236,7 @@ export default function ChatGPTAutomationTips() {
         <div className="space-y-6">
             <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-white mb-3">YouTube Video Script Generator</h3>
-                <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300">
-                "Create a YouTube script about [topic] following this structure:<br/>
+                <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300">"Create a YouTube script about [topic] following this structure:<br/>
                 1. Hook (0-15 seconds): Pattern interrupt + big promise<br/>
                 2. Intro (15-30 seconds): Establish credibility + preview<br/>
                 3. Main content (3-8 minutes): 3-5 key points with examples<br/>
@@ -257,8 +247,7 @@ export default function ChatGPTAutomationTips() {
             
             <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-white mb-3">Instagram Carousel Creator</h3>
-                <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300">
-                "Create a 10-slide Instagram carousel about [topic]:<br/>
+                <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300">"Create a 10-slide Instagram carousel about [topic]:<br/>
                 Slide 1: Hook with shocking stat or question<br/>
                 Slides 2-8: One tip/insight per slide (max 30 words)<br/>
                 Slide 9: Recap/summary<br/>
@@ -269,8 +258,7 @@ export default function ChatGPTAutomationTips() {
             
             <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-white mb-3">Lead Magnet Generator</h3>
-                <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300">
-                "Create a lead magnet about [topic]:<br/>
+                <div className="bg-zinc-900 rounded p-4 font-mono text-sm text-gray-300">"Create a lead magnet about [topic]:<br/>
                 - Title: [Number] + [Desired Outcome] + [Time Frame]<br/>
                 - 5-page PDF structure<br/>
                 - Actionable checklist<br/>
@@ -284,8 +272,8 @@ export default function ChatGPTAutomationTips() {
 </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Time-Saving Integration Hacks</h2>
@@ -378,8 +366,8 @@ export default function ChatGPTAutomationTips() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

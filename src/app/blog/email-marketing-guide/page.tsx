@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function EmailMarketingGuide() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const strategyAnimation = useScrollAnimation({ threshold: 0.1 })
-  const templatesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function EmailMarketingGuide() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
                     <span className="text-blue-400 text-sm font-semibold">MARKETING</span>
@@ -34,7 +27,7 @@ export default function EmailMarketingGuide() {
               The email sequences and strategies that <span className="text-white font-semibold">generate 40% of my total revenue</span>
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-20" readTime="14 min" />
+                
             </div>
         </div>
     </section>
@@ -66,8 +59,8 @@ export default function EmailMarketingGuide() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -90,8 +83,8 @@ export default function EmailMarketingGuide() {
     </section>
 
       <section
-        ref={strategyAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">The 5 Email Sequences That Print Money</h2>
@@ -163,9 +156,9 @@ export default function EmailMarketingGuide() {
                   
             <div className="bg-zinc-900 rounded-lg p-6">
                 <ol className="space-y-2 text-gray-300">
-                    <li>1. <span className="text-blue-400">1 hour:</span> "Did you forget something?"</li>
-                    <li>2. <span className="text-blue-400">24 hours:</span> "Still thinking about it?"</li>
-                    <li>3. <span className="text-blue-400">72 hours:</span> "10% discount inside"</li>
+                    <li>1. <span className="text-blue-400">1 hour:</span>"Did you forget something?"</li>
+                    <li>2. <span className="text-blue-400">24 hours:</span>"Still thinking about it?"</li>
+                    <li>3. <span className="text-blue-400">72 hours:</span>"10% discount inside"</li>
                 </ol>
                 <p className="text-green-400 text-sm mt-4">Recovers $3-5K/month</p>
             </div>
@@ -181,7 +174,7 @@ export default function EmailMarketingGuide() {
         <div className="bg-zinc-900 rounded-lg p-6">
             <h4 className="text-white font-semibold mb-3">The Win-Back Formula:</h4>
             <ul className="space-y-2 text-gray-300">
-                <li>• Subject: "Should I remove you?"</li>
+                <li>• Subject:"Should I remove you?"</li>
                 <li>• Acknowledge they've been quiet</li>
                 <li>• Offer best content/resource</li>
                 <li>• Give easy unsubscribe option</li>
@@ -196,8 +189,8 @@ export default function EmailMarketingGuide() {
 </section>
 
       <section
-        ref={templatesAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">High-Converting Email Templates</h2>
@@ -312,8 +305,8 @@ export default function EmailMarketingGuide() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

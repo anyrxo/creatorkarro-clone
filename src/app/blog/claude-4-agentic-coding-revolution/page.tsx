@@ -9,24 +9,24 @@ import NewsletterSignup from '@/components/NewsletterSignup'
 import { FAQCard } from '@/components/course/CourseLayout'
 const faqs = [
   {
-    question: "What makes Claude 4 different from previous AI models?",
-    answer: "Claude 4 represents a fundamental shift from chatbot interactions to agentic infrastructure. Unlike previous models focused on conversations, Claude 4 excels at long-horizon tasks spanning hours, with enhanced memory, parallel tool usage, and specialized coding capabilities."
+    question:"What makes Claude 4 different from previous AI models?",
+    answer:"Claude 4 represents a fundamental shift from chatbot interactions to agentic infrastructure. Unlike previous models focused on conversations, Claude 4 excels at long-horizon tasks spanning hours, with enhanced memory, parallel tool usage, and specialized coding capabilities."
   },
   {
-    question: "How does Claude 4's parallel tool usage work?",
-    answer: "Claude 4 can interact with multiple tools simultaneously rather than sequentially. This means it can access files, execute code, query databases, and communicate with external services all at once, dramatically improving efficiency for complex automation tasks."
+    question:"How does Claude 4's parallel tool usage work?",
+    answer:"Claude 4 can interact with multiple tools simultaneously rather than sequentially. This means it can access files, execute code, query databases, and communicate with external services all at once, dramatically improving efficiency for complex automation tasks."
   },
   {
-    question: "Is Claude 4 better than GPT-4 for coding tasks?",
-    answer: "Based on benchmarks, Claude Sonnet 4 scores 80.2% on SweBench (software engineering), beating OpenAI's latest Codex model at 72%. However, performance varies by specific use case - Claude 4 excels particularly in agentic workflows and long-term task execution."
+    question:"Is Claude 4 better than GPT-4 for coding tasks?",
+    answer:"Based on benchmarks, Claude Sonnet 4 scores 80.2% on SweBench (software engineering), beating OpenAI's latest Codex model at 72%. However, performance varies by specific use case - Claude 4 excels particularly in agentic workflows and long-term task execution."
   },
   {
-    question: "What is the pricing for Claude 4 Opus?",
-    answer: "Claude 4 Opus costs $15 per million input tokens and $75 per million output tokens, with a 50% discount for batch processing. It includes a 200K context window with potential future expansion."
+    question:"What is the pricing for Claude 4 Opus?",
+    answer:"Claude 4 Opus costs $15 per million input tokens and $75 per million output tokens, with a 50% discount for batch processing. It includes a 200K context window with potential future expansion."
   },
   {
-    question: "How can developers integrate Claude 4 into their workflows?",
-    answer: "Claude 4 offers multiple integration options: Claude Code for IDE integration (VS Code, JetBrains), MCP Connector for external toolchains, Files API for direct file access, and Python Code Execution Tool for testing and debugging."
+    question:"How can developers integrate Claude 4 into their workflows?",
+    answer:"Claude 4 offers multiple integration options: Claude Code for IDE integration (VS Code, JetBrains), MCP Connector for external toolchains, Files API for direct file access, and Python Code Execution Tool for testing and debugging."
 }
 ]
 
@@ -76,8 +76,7 @@ export default function Claude4AgenticCodingPage() {
             As Anyro from IImagined.ai, I've been tracking this shift for months. The chatbot market has become commoditized, with marginal improvements yielding diminishing returns. The real opportunity lies in AI that can <em>work autonomously</em> on complex, multi-hour tasks—exactly what Claude 4 delivers.
                 </p>
 
-                <blockquote className="border-l-4 border-purple-500 pl-6 my-8 italic text-gray-300">
-            "Claude is no longer trying to win mindshare as a chatbot... Instead, we're focusing on enabling complex, agentic tasks." - Anthropic Chief Scientific Officer
+                <blockquote className="border-l-4 border-purple-500 pl-6 my-8 italic text-gray-300">"Claude is no longer trying to win mindshare as a chatbot... Instead, we're focusing on enabling complex, agentic tasks." - Anthropic Chief Scientific Officer
                 </blockquote>
 
                 <h2 className="text-3xl font-bold text-white mb-6">Claude 4 Architecture: Hybrid Thinking Meets Parallel Processing</h2>
@@ -273,8 +272,7 @@ export default function Claude4AgenticCodingPage() {
                     <li>• <strong>Adapts to coding styles</strong> and organizational patterns</li>
                 </ul>
 
-                <blockquote className="border-l-4 border-purple-500 pl-6 my-8 italic text-gray-300">
-            "The 100th time you use Claude 4 should be much better than the first." - Anthropic
+                <blockquote className="border-l-4 border-purple-500 pl-6 my-8 italic text-gray-300">"The 100th time you use Claude 4 should be much better than the first." - Anthropic
                 </blockquote>
 
                 <h3 className="text-2xl font-bold text-white mb-4">🛡️ Safety-First Agentic Design</h3>
@@ -374,7 +372,7 @@ export default function Claude4AgenticCodingPage() {
                     <h4 className="text-xl font-bold text-purple-400 mb-4">1. Development Environment Setup</h4>
                     <pre className="bg-slate-900 p-4 rounded text-green-400 mb-4 overflow-x-auto">
 {`# Install Claude Code extension
-# VS Code: Search "Claude Code" in extensions
+# VS Code: Search"Claude Code" in extensions
 # JetBrains: Install from plugin marketplace
 
 # Configure API access
@@ -399,9 +397,9 @@ claude-cli test-mcp`}
                     <pre className="bg-slate-900 p-4 rounded text-green-400 mb-4 overflow-x-auto">
 {`# Create agentic workflow
 claude-cli create-workflow \\
-  --name "code-review-automation" \\
-  --triggers "pull_request" \\
-  --actions "analyze,test,suggest" \\
+  --name"code-review-automation" \\
+  --triggers"pull_request" \\
+  --actions"analyze,test,suggest" \\
   --parallel-tools enabled`}
                     </pre>
                 </div>

@@ -212,8 +212,8 @@ const openai = new OpenAI({
 async function generateResponse(prompt) {
   try {
     const completion = await openai.chat.completions.create({
-      model: "gpt-4",
-      messages: [{ role: "user", content: prompt }],
+      model:"gpt-4",
+      messages: [{ role:"user", content: prompt }],
       max_tokens: 1000,
       temperature: 0.7,
     });
@@ -249,9 +249,9 @@ async function generateResponse(prompt) {
                 <code className="text-blue-400 text-sm">
                   {`async function automateEmailResponse(email) {
   const context = \`
-    Email from: \${email.sender}
-    Subject: \${email.subject}
-    Content: \${email.body}
+    Email from: \
+    Subject: \
+    Content: \
     
     Generate a professional response that:
     - Addresses their main concern
@@ -260,10 +260,10 @@ async function generateResponse(prompt) {
   \`;
   
   const response = await openai.chat.completions.create({
-    model: "gpt-4",
+    model:"gpt-4",
     messages: [
-      { role: "system", content: "You are a helpful customer service assistant." },
-      { role: "user", content: context }
+      { role:"system", content:"You are a helpful customer service assistant." },
+      { role:"user", content: context }
     ]
   });
   
@@ -296,8 +296,8 @@ async function generateResponse(prompt) {
                 <code className="text-purple-400 text-sm">
                   {`async function generateBlogPost(topic, keywords) {
   const prompt = \`
-    Create a comprehensive blog post about: \${topic}
-    Target keywords: \${keywords.join(', ')}
+    Create a comprehensive blog post about: \
+    Target keywords: \
     
     Requirements:
     - 1500+ words
@@ -308,10 +308,10 @@ async function generateResponse(prompt) {
   \`;
   
   const response = await openai.chat.completions.create({
-    model: "gpt-4",
+    model:"gpt-4",
     messages: [
-      { role: "system", content: "You are an expert content writer and SEO specialist." },
-      { role: "user", content: prompt }
+      { role:"system", content:"You are an expert content writer and SEO specialist." },
+      { role:"user", content: prompt }
     ],
     max_tokens: 2000
   });
@@ -346,9 +346,9 @@ async function generateResponse(prompt) {
                   {`async function analyzeBusinessData(data) {
   const prompt = \`
     Analyze this business data and provide insights:
-    Revenue: \${data.revenue}
-    Costs: \${data.costs}
-    Customer metrics: \${JSON.stringify(data.customers)}
+    Revenue: \
+    Costs: \
+    Customer metrics: \
     
     Provide:
     - Key performance indicators
@@ -358,10 +358,10 @@ async function generateResponse(prompt) {
   \`;
   
   const analysis = await openai.chat.completions.create({
-    model: "gpt-4",
+    model:"gpt-4",
     messages: [
-      { role: "system", content: "You are a business intelligence analyst." },
-      { role: "user", content: prompt }
+      { role:"system", content:"You are a business intelligence analyst." },
+      { role:"user", content: prompt }
     ]
   });
   
@@ -505,8 +505,7 @@ async function generateResponse(prompt) {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">ContentScale - From $0 to $35K/Month with AI Content</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Our ChatGPT automation system generates 500+ SEO-optimized articles monthly for clients. We went from manual content creation to a fully automated content factory generating $35K monthly recurring revenue with 89% profit margins."
+                  <p className="text-gray-300 mb-4">"Our ChatGPT automation system generates 500+ SEO-optimized articles monthly for clients. We went from manual content creation to a fully automated content factory generating $35K monthly recurring revenue with 89% profit margins."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-emerald-400">$35K monthly revenue</span>
@@ -524,8 +523,7 @@ async function generateResponse(prompt) {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">AutoSupport - 24/7 Customer Service with 95% Resolution Rate</h3>
-                  <p className="text-gray-300 mb-4">
-                    "ChatGPT automation handles 10,000+ customer inquiries monthly with 95% resolution rate. Our support costs dropped 80% while customer satisfaction increased to 4.9/5 stars. The system pays for itself 15x over."
+                  <p className="text-gray-300 mb-4">"ChatGPT automation handles 10,000+ customer inquiries monthly with 95% resolution rate. Our support costs dropped 80% while customer satisfaction increased to 4.9/5 stars. The system pays for itself 15x over."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-blue-400">10K+ inquiries/month</span>
@@ -543,8 +541,7 @@ async function generateResponse(prompt) {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">LeadGenius - AI-Powered Sales Automation at Scale</h3>
-                  <p className="text-gray-300 mb-4">
-                    "Our ChatGPT lead qualification system processes 5,000+ leads daily, automatically scoring and routing high-value prospects. Sales team efficiency increased 300% while conversion rates improved to 28%."
+                  <p className="text-gray-300 mb-4">"Our ChatGPT lead qualification system processes 5,000+ leads daily, automatically scoring and routing high-value prospects. Sales team efficiency increased 300% while conversion rates improved to 28%."
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm">
                     <span className="text-purple-400">5K+ leads/day</span>

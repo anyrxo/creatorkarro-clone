@@ -227,7 +227,7 @@ export default function AlphaEvolveAiBusinessEmpirePage() {
                   <h4 className="text-lg font-semibold text-white mb-3">💻 Marcus's Algorithm Optimization Consultancy - $127K/Month</h4>
                   <p className="text-gray-300 mb-4">Helps e-commerce companies evolve recommendation algorithms. 8 clients paying $15,900/month each for 30%+ conversion improvements.</p>
                   <div className="text-sm text-gray-400">
-                    <strong>Secret:</strong> Positioned as "algorithmic evolution specialist" and guarantees measurable performance improvements or money back.</div>
+                    <strong>Secret:</strong> Positioned as"algorithmic evolution specialist" and guarantees measurable performance improvements or money back.</div>
                 </div>
                 <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
                   <h4 className="text-lg font-semibold text-white mb-3">⚡ Sarah's Performance Optimization Platform - $189K/Month</h4>

@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function ComfyUISuccessStory() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const workflowAnimation = useScrollAnimation({ threshold: 0.1 })
-  const resultsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function ComfyUISuccessStory() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
                     <span className="text-purple-400 text-sm font-semibold">AI TOOLS</span>
@@ -34,7 +27,7 @@ export default function ComfyUISuccessStory() {
               Learn how Ryan increased his client work rate by <span className="text-white font-semibold">500%</span> using AI-enhanced design workflows
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-16" readTime="13 min" />
+                
             </div>
         </div>
     </section>
@@ -78,15 +71,14 @@ export default function ComfyUISuccessStory() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8">The Game-Changing Discovery</h2>
           
             <div className="prose prose-invert prose-lg max-w-none">
-                <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              "I was about to quit design completely," Ryan recalls. "Then I discovered ComfyUI through Anyro's course, and everything changed overnight."
+                <p className="text-xl text-gray-300 leading-relaxed mb-8">"I was about to quit design completely," Ryan recalls."Then I discovered ComfyUI through Anyro's course, and everything changed overnight."
                 </p>
 
                 <div className="bg-purple-500/10 border border-purple-500/20 rounded-2xl p-8 mb-8">
@@ -115,8 +107,8 @@ export default function ComfyUISuccessStory() {
     </section>
 
       <section
-        ref={workflowAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Ryan's Million-Dollar Workflows</h2>
@@ -230,8 +222,8 @@ export default function ComfyUISuccessStory() {
     </section>
 
       <section
-        ref={resultsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Real Client Transformations</h2>
@@ -322,8 +314,7 @@ export default function ComfyUISuccessStory() {
                 <h3 className="text-2xl font-bold text-white mb-4">Ryan's Monthly Revenue</h3>
                 <div className="text-5xl font-bold text-purple-400 mb-2">$10,000+</div>
                 <p className="text-gray-400 mb-6">Working just 25 hours per week</p>
-                <blockquote className="text-xl text-gray-300 italic">
-              "ComfyUI didn't just save my business – it transformed it into something I never imagined possible. I'm now an AI-enhanced creative director, not just a designer."
+                <blockquote className="text-xl text-gray-300 italic">"ComfyUI didn't just save my business – it transformed it into something I never imagined possible. I'm now an AI-enhanced creative director, not just a designer."
                 </blockquote>
                 <div className="text-white font-semibold mt-4">- Ryan Blackwood</div>
             </div>
@@ -331,8 +322,8 @@ export default function ComfyUISuccessStory() {
     </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function AIContentOpportunity() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const opportunitiesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const strategyAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function AIContentOpportunity() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
                     <span className="text-purple-400 text-sm font-semibold">OPPORTUNITY</span>
@@ -34,7 +27,7 @@ export default function AIContentOpportunity() {
               Why the next 24 months will create more <span className="text-white font-semibold">content millionaires than the last 24 years</span>
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-02-19" readTime="16 min" />
+                
             </div>
         </div>
     </section>
@@ -66,8 +59,8 @@ export default function AIContentOpportunity() {
     </section>
 
       <section
-        ref={opportunitiesAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">10 Massive AI Content Opportunities</h2>
@@ -193,7 +186,7 @@ export default function AIContentOpportunity() {
                         <li>• Monetize with ads/affiliates</li>
                     </ul>
                     <ul className="space-y-2 text-gray-300">
-                        <li>• Example: "Left-handed guitar"</li>
+                        <li>• Example:"Left-handed guitar"</li>
                         <li>• 1000 articles in 1 week</li>
                         <li>• $500-5K/month per site</li>
                         <li>• Manage 50-100 sites</li>
@@ -279,7 +272,7 @@ export default function AIContentOpportunity() {
         <div>
             <h4 className="text-xl font-bold text-white mb-2">Local Business Domination</h4>
             <p className="text-gray-400 mb-3">Own local SEO in 1000s of cities</p>
-            <p className="text-sm text-gray-300">• "Best X in [City]" sites</p>
+            <p className="text-sm text-gray-300">•"Best X in [City]" sites</p>
             <p className="text-sm text-gray-300">• Lead generation</p>
             <p className="text-sm text-gray-300">• Sell leads to businesses</p>
             <p className="text-green-400 text-sm mt-3">$100-1K per lead</p>
@@ -292,8 +285,8 @@ export default function AIContentOpportunity() {
 </section>
 
       <section
-        ref={strategyAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Your AI Content Empire Strategy</h2>
@@ -347,8 +340,8 @@ export default function AIContentOpportunity() {
 </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Why The Next 24 Months Are Critical</h2>
@@ -423,8 +416,8 @@ export default function AIContentOpportunity() {
 </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">

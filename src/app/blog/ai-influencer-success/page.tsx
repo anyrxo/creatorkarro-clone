@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function AIInfluencerSuccess() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const processAnimation = useScrollAnimation({ threshold: 0.1 })
-  const resultsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function AIInfluencerSuccess() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-500/20 mb-6">
                     <span className="text-pink-400 text-sm font-semibold">AI STRATEGY</span>
@@ -34,7 +27,7 @@ export default function AIInfluencerSuccess() {
               Discover how Isabella created <span className="text-white font-semibold">AI models that generate content 24/7</span> and earn through partnerships
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-14" readTime="14 min" />
+                
             </div>
         </div>
     </section>
@@ -50,8 +43,7 @@ export default function AIInfluencerSuccess() {
                     <div className="grid md:grid-cols-2 gap-8">
                         <div>
                             <h3 className="text-xl font-bold text-pink-400 mb-3">The Breakthrough</h3>
-                            <p className="text-gray-400 mb-4">
-                    "I realized AI models never sleep, never complain, and can create content in multiple languages simultaneously. They're the perfect influencers."
+                            <p className="text-gray-400 mb-4">"I realized AI models never sleep, never complain, and can create content in multiple languages simultaneously. They're the perfect influencers."
                             </p>
                             <ul className="space-y-2 text-gray-400">
                                 <li>✓ No photo shoots needed</li>
@@ -84,8 +76,8 @@ export default function AIInfluencerSuccess() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Meet Isabella's AI Influencer Empire</h2>
@@ -137,8 +129,8 @@ export default function AIInfluencerSuccess() {
     </section>
 
       <section
-        ref={processAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">The 5-Step AI Influencer System</h2>
@@ -223,8 +215,8 @@ export default function AIInfluencerSuccess() {
     </section>
 
       <section
-        ref={resultsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8">Isabella's Top Tips for AI Influencer Success</h2>
@@ -256,8 +248,7 @@ export default function AIInfluencerSuccess() {
             </div>
 
             <div className="bg-zinc-900 rounded-2xl p-8 text-center">
-                <blockquote className="text-xl text-gray-300 italic mb-4">
-              "AI influencers aren't replacing humans – they're creating a new category of content. The key is authenticity in your artificiality. Be honest, provide value, and the followers (and money) will come."
+                <blockquote className="text-xl text-gray-300 italic mb-4">"AI influencers aren't replacing humans – they're creating a new category of content. The key is authenticity in your artificiality. Be honest, provide value, and the followers (and money) will come."
                 </blockquote>
                 <div className="text-white font-semibold">- Isabella Torres</div>
                 <div className="text-gray-400">AI Influencer Pioneer</div>
@@ -266,8 +257,8 @@ export default function AIInfluencerSuccess() {
     </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing bg-gradient-to-b from-zinc-900 to-dark scroll-fade-up `}
+        
+        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

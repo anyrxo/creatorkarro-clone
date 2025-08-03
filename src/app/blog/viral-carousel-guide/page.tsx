@@ -2,16 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import BlogMetrics from '@/components/BlogMetrics'
 
 export default function ViralCarouselGuide() {
-  const heroAnimation = useScrollAnimation({ threshold: 0.2 })
-  const contentAnimation = useScrollAnimation({ threshold: 0.1 })
-  const examplesAnimation = useScrollAnimation({ threshold: 0.1 })
-  const tipsAnimation = useScrollAnimation({ threshold: 0.1 })
-  const ctaAnimation = useScrollAnimation({ threshold: 0.2 })
-
+          
   return (
     
     <div className="min-h-screen bg-dark">
@@ -19,8 +12,8 @@ export default function ViralCarouselGuide() {
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div
-            ref={heroAnimation.elementRef}
-            className={`text-center max-w-5xl mx-auto scroll-fade-up `}
+            
+            className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
                     <span className="text-purple-400 text-sm font-semibold">CONTENT STRATEGY</span>
@@ -34,7 +27,7 @@ export default function ViralCarouselGuide() {
               Master the art of creating carousels that get <span className="text-white font-semibold">3-5x more engagement</span> and drive sales
                 </p>
 
-                <BlogMetrics className="text-gray-400" publishDate="2025-01-20" readTime="11 min" />
+                
             </div>
         </div>
     </section>
@@ -66,8 +59,8 @@ export default function ViralCarouselGuide() {
     </section>
 
       <section
-        ref={contentAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8">The Anatomy of a Viral Carousel</h2>
@@ -80,14 +73,14 @@ export default function ViralCarouselGuide() {
                         <li>✓ Make a bold promise or statement</li>
                         <li>✓ Use large, readable text (30+ pt)</li>
                         <li>✓ Create curiosity gap</li>
-                        <li>✓ Include "swipe →" indicator</li>
+                        <li>✓ Include"swipe →" indicator</li>
                     </ul>
                     <div className="bg-zinc-800 rounded-lg p-4 mt-4">
                         <p className="text-sm text-gray-300">
                             <span className="text-purple-400 font-semibold">Example hooks that work:</span><br/>
-                  • "The $10K/month side hustle no one talks about"<br/>
-                  • "I grew 100K followers in 90 days (here's how)"<br/>
-                  • "Stop doing these 5 things if you want to grow"
+                  •"The $10K/month side hustle no one talks about"<br/>
+                  •"I grew 100K followers in 90 days (here's how)"<br/>
+                  •"Stop doing these 5 things if you want to grow"
                         </p>
                     </div>
                 </div>
@@ -123,9 +116,9 @@ export default function ViralCarouselGuide() {
                     <p className="text-gray-400 mb-4">Convert attention into action:</p>
                     <ul className="space-y-2 text-gray-300">
                         <li>✓ Clear call-to-action</li>
-                        <li>✓ "Save this for later" prompt</li>
-                        <li>✓ "Follow for more" with benefit</li>
-                        <li>✓ "Comment [word] for link" strategy</li>
+                        <li>✓"Save this for later" prompt</li>
+                        <li>✓"Follow for more" with benefit</li>
+                        <li>✓"Comment [word] for link" strategy</li>
                     </ul>
                 </div>
             </div>
@@ -133,8 +126,8 @@ export default function ViralCarouselGuide() {
     </section>
 
       <section
-        ref={examplesAnimation.elementRef}
-        className={`section-spacing bg-zinc-900 scroll-fade-up `}
+        
+        className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">High-Converting Carousel Formats</h2>
@@ -144,10 +137,10 @@ export default function ViralCarouselGuide() {
                     <h3 className="text-xl font-bold text-purple-400 mb-4">🎯 The List Post</h3>
                     <div className="bg-zinc-900 rounded-lg p-4 mb-4">
                         <p className="text-sm text-gray-300">
-                            <strong>Slide 1:</strong> "7 AI Tools Making People $5K+/Month"<br/>
+                            <strong>Slide 1:</strong>"7 AI Tools Making People $5K+/Month"<br/>
                             <strong>Slides 2-8:</strong> One tool per slide with examples<br/>
-                            <strong>Slide 9:</strong> "Which one will you try first?"<br/>
-                            <strong>Slide 10:</strong> "Save this &amp; follow for daily AI tips"
+                            <strong>Slide 9:</strong>"Which one will you try first?"<br/>
+                            <strong>Slide 10:</strong>"Save this &amp; follow for daily AI tips"
                         </p>
                     </div>
                     <p className="text-gray-400">
@@ -159,11 +152,11 @@ export default function ViralCarouselGuide() {
                     <h3 className="text-xl font-bold text-blue-400 mb-4">📈 The Transformation</h3>
                     <div className="bg-zinc-900 rounded-lg p-4 mb-4">
                         <p className="text-sm text-gray-300">
-                            <strong>Slide 1:</strong> "0 to 100K followers (my journey)"<br/>
+                            <strong>Slide 1:</strong>"0 to 100K followers (my journey)"<br/>
                             <strong>Slides 2-4:</strong> The struggles and failures<br/>
                             <strong>Slides 5-7:</strong> The breakthrough moment<br/>
                             <strong>Slides 8-9:</strong> Results and proof<br/>
-                            <strong>Slide 10:</strong> "Comment 'GROW' for my guide"
+                            <strong>Slide 10:</strong>"Comment 'GROW' for my guide"
                         </p>
                     </div>
                     <p className="text-gray-400">
@@ -175,12 +168,12 @@ export default function ViralCarouselGuide() {
                     <h3 className="text-xl font-bold text-green-400 mb-4">🧠 The Mini-Course</h3>
                     <div className="bg-zinc-900 rounded-lg p-4 mb-4">
                         <p className="text-sm text-gray-300">
-                            <strong>Slide 1:</strong> "How to Price Digital Products"<br/>
+                            <strong>Slide 1:</strong>"How to Price Digital Products"<br/>
                             <strong>Slides 2-3:</strong> Common pricing mistakes<br/>
                             <strong>Slides 4-6:</strong> Psychology principles<br/>
                             <strong>Slides 7-8:</strong> Pricing formula<br/>
                             <strong>Slide 9:</strong> Real examples<br/>
-                            <strong>Slide 10:</strong> "DM 'PRICE' for calculator"
+                            <strong>Slide 10:</strong>"DM 'PRICE' for calculator"
                         </p>
                     </div>
                     <p className="text-gray-400">
@@ -192,12 +185,12 @@ export default function ViralCarouselGuide() {
                     <h3 className="text-xl font-bold text-yellow-400 mb-4">💡 The Comparison</h3>
                     <div className="bg-zinc-900 rounded-lg p-4 mb-4">
                         <p className="text-sm text-gray-300">
-                            <strong>Slide 1:</strong> "Freelancer vs Agency Owner"<br/>
+                            <strong>Slide 1:</strong>"Freelancer vs Agency Owner"<br/>
                             <strong>Slides 2-5:</strong> Side-by-side comparisons<br/>
                             <strong>Slides 6-7:</strong> Hidden benefits<br/>
                             <strong>Slide 8:</strong> How to transition<br/>
                             <strong>Slide 9:</strong> Success stories<br/>
-                            <strong>Slide 10:</strong> "Follow to scale your business"
+                            <strong>Slide 10:</strong>"Follow to scale your business"
                         </p>
                     </div>
                     <p className="text-gray-400">
@@ -209,8 +202,8 @@ export default function ViralCarouselGuide() {
     </section>
 
       <section
-        ref={tipsAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8">Advanced Carousel Hacks</h2>
@@ -243,7 +236,7 @@ export default function ViralCarouselGuide() {
                 <div className="bg-gradient-to-r from-green-500/10 to-yellow-500/10 rounded-xl p-6">
                     <h3 className="text-xl font-bold text-green-400 mb-3">💰 Conversion Hacks</h3>
                     <ul className="space-y-2 text-gray-300">
-                        <li>• Use "Comment [word]" for 10x more engagement</li>
+                        <li>• Use"Comment [word]" for 10x more engagement</li>
                         <li>• Add testimonials on slides 6-7</li>
                         <li>• Include subtle social proof throughout</li>
                         <li>• Use urgency on final slide ("This week only")</li>
@@ -339,8 +332,8 @@ export default function ViralCarouselGuide() {
     </section>
 
       <section
-        ref={ctaAnimation.elementRef}
-        className={`section-spacing scroll-fade-up `}
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
