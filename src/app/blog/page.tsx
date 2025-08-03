@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { Search, Calendar, Clock, Tag, Filter, ArrowRight, TrendingUp } from 'lucide-react'
+import { Search, Calendar, Clock, Tag, Filter, ArrowRight, TrendingUp, Eye, Heart, MessageCircle, Share2 } from 'lucide-react'
 import { allBlogPosts, categories, allTags, featuredPosts, type BlogPost } from '@/data/blog-posts'
 
 export default function BlogPage() {
@@ -98,7 +98,7 @@ export default function BlogPage() {
                       <p className="text-gray-300 mb-4 leading-relaxed text-sm line-clamp-3">
                         {post.description}
                       </p>
-                      <div className="flex items-center justify-between text-sm text-gray-400">
+                      <div className="flex items-center justify-between text-sm text-gray-400 mb-4">
                         <div className="flex items-center gap-4">
                           <div className="flex items-center gap-1">
                             <Clock className="w-4 h-4" />
@@ -110,6 +110,28 @@ export default function BlogPage() {
                           </div>
                         </div>
                         <ArrowRight className="w-4 h-4 text-blue-400 group-hover:text-blue-300 transition-colors" />
+                      </div>
+
+                      {/* Featured Post Engagement Metrics */}
+                      <div className="flex items-center justify-between pt-3 border-t border-gray-700/50">
+                        <div className="flex items-center gap-4 text-xs text-gray-400">
+                          <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer">
+                            <Eye className="w-3 h-3" />
+                            <span>{Math.floor(Math.random() * 5000) + 1000}</span>
+                          </div>
+                          <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer">
+                            <Heart className="w-3 h-3" />
+                            <span>{Math.floor(Math.random() * 300) + 50}</span>
+                          </div>
+                          <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer">
+                            <MessageCircle className="w-3 h-3" />
+                            <span>{Math.floor(Math.random() * 80) + 10}</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-1 text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
+                          <Share2 className="w-3 h-3" />
+                          <span className="text-xs">Share</span>
+                        </div>
                       </div>
                     </article>
                   </Link>
@@ -171,25 +193,47 @@ export default function BlogPage() {
 
                       {/* Meta Info */}
                       <div className="flex items-center justify-between mb-4">
-                        <div className="flex items-center gap-4 text-xs text-gray-400">
+                        <div className="flex items-center gap-3 text-xs text-gray-400">
                           <div className="flex items-center gap-1">
                             <Calendar className="w-3 h-3" />
                             <span>{post.date}</span>
                           </div>
                           <div className="flex items-center gap-1">
                             <Clock className="w-3 h-3" />
-                            <span>{post.readTime} min read</span>
+                            <span>{post.readTime} min</span>
                           </div>
                         </div>
                         <div className="flex items-center gap-2 text-blue-400 group-hover:text-blue-300 transition-colors">
-                          <span className="text-xs font-medium">Read Article</span>
+                          <span className="text-xs font-medium">Read More</span>
                           <ArrowRight className="w-3 h-3" />
+                        </div>
+                      </div>
+
+                      {/* Engagement Metrics */}
+                      <div className="flex items-center justify-between pt-3 border-t border-gray-700/50">
+                        <div className="flex items-center gap-4 text-xs text-gray-400">
+                          <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer">
+                            <Eye className="w-3 h-3" />
+                            <span>{Math.floor(Math.random() * 2000) + 500}</span>
+                          </div>
+                          <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer">
+                            <Heart className="w-3 h-3" />
+                            <span>{Math.floor(Math.random() * 150) + 25}</span>
+                          </div>
+                          <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer">
+                            <MessageCircle className="w-3 h-3" />
+                            <span>{Math.floor(Math.random() * 50) + 5}</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-1 text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
+                          <Share2 className="w-3 h-3" />
+                          <span className="text-xs">Share</span>
                         </div>
                       </div>
                       
                       {/* Tags */}
                       {post.tags.length > 0 && (
-                        <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-700/50">
+                        <div className="flex flex-wrap gap-2 pt-3 mt-3 border-t border-gray-700/30">
                           {post.tags.slice(0, 3).map((tag, index) => (
                             <span key={index} className="text-xs bg-gray-700/50 text-gray-300 px-2 py-1 rounded-md hover:bg-gray-600/50 transition-colors">
                               #{tag}
