@@ -2,8 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { allBlogPosts } from '@/data/blog-posts'
-import { getCommentsForPost } from '@/data/blog-comments'
-import BlogComments from '@/components/BlogComments'
 import { ArrowLeft, Calendar, Clock, Tag, Share, BookOpen } from 'lucide-react'
 
 interface BlogPostPageProps {
@@ -20,8 +18,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound()
   }
 
-  // Get comments for this post
-  const postComments = getCommentsForPost(slug)
 
   return (
     <div className="min-h-screen bg-dark">
@@ -260,14 +256,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </section>
 
-      {/* Comments Section */}
-      {postComments && (
-        <BlogComments 
-          postSlug={slug}
-          comments={postComments.comments}
-          commentCount={postComments.commentCount}
-        />
-      )}
 
       {/* Related posts */}
       <section className="py-16 px-4 bg-gray-900/50">
