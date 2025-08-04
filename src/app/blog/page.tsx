@@ -35,9 +35,6 @@ export default function BlogPage() {
       })
     }
 
-    // Note: When showing "All", we show all posts including featured ones
-    // The featured section is shown separately above, but users expect to see ALL posts in the main list
-
     return posts
   }, [searchTerm, selectedCategory])
 
@@ -70,7 +67,7 @@ export default function BlogPage() {
                 {/* Main Title with Magical Effects */}
                 <BlurIn 
                   word="Creator Blog"
-                  className="text-7xl md:text-8xl lg:text-9xl font-black bg-gradient-to-r from-blue-400 via-purple-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent mb-8 tracking-tight drop-shadow-2xl"
+                  className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight drop-shadow-2xl"
                   duration={1200}
                 />
                 
@@ -92,7 +89,7 @@ export default function BlogPage() {
                   className="text-2xl md:text-3xl text-white max-w-5xl mx-auto mb-8 leading-relaxed font-medium drop-shadow-lg"
                   stagger={20}
                 >
-                  🚀 Master Creator Entrepreneurship • AI Automation • Growth Strategies • Digital Business Mastery ✨
+                  Master Creator Entrepreneurship • AI Automation • Growth Strategies • Digital Business Mastery
                 </AnimatedText>
                 
                 {/* Subtitle Glow Effect */}
