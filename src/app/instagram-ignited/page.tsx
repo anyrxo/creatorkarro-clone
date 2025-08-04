@@ -25,7 +25,26 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, Target, Video, FileText, Users, BarChart3, Handshake, Zap, Flame, CheckCircle, XCircle, AlertTriangle } from 'lucide-react'
+
+// Icon mapping function
+const getIcon = (iconName: string, className?: string) => {
+  const iconProps = { className: className || "w-6 h-6", strokeWidth: 2 }
+  const icons: { [key: string]: JSX.Element } = {
+    target: <Target {...iconProps} />,
+    video: <Video {...iconProps} />,
+    fileText: <FileText {...iconProps} />,
+    users: <Users {...iconProps} />,
+    barChart3: <BarChart3 {...iconProps} />,
+    handshake: <Handshake {...iconProps} />,
+    zap: <Zap {...iconProps} />,
+    flame: <Flame {...iconProps} />,
+    checkCircle: <CheckCircle {...iconProps} />,
+    xCircle: <XCircle {...iconProps} />,
+    alertTriangle: <AlertTriangle {...iconProps} />
+  }
+  return icons[iconName] || <Target {...iconProps} />
+}
 
 export default function InstagramIgnitedPage() {
   // Crypto checkout state
@@ -202,11 +221,11 @@ export default function InstagramIgnitedPage() {
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef}>
         <HeroSection
-          badge="🔥 INSTAGRAM EMPIRE BUILDER 🔥"
+          badge="INSTAGRAM EMPIRE BUILDER"
           badgeColor="bg-gradient-to-r from-red-600/30 to-orange-600/30 text-red-300 border border-red-500/50"
           title="Your Complete <span className='text-blue-400'>System</span> to <span className='text-blue-400'>Grow an Audience</span> and Turn It Into <span className='text-blue-400'>Income</span>"
           description="The ONLY proven system that takes you from Instagram ghost to algorithm dominator in 90 days or less. Now includes Digital Product Academy and Viral Carousels Mastery in one bundle."
-          ctaText="🚀 Claim Instagram Ignited Bundle"
+          ctaText="Claim Instagram Ignited Bundle"
           ctaLink="#pricing"
           socialProof={{
             images: [
@@ -317,8 +336,8 @@ export default function InstagramIgnitedPage() {
                 Every year you struggle with Instagram, that's a potential $100K+ business that never gets built.
               </p>
               <div className="bg-zinc-900 border border-red-500 rounded-lg p-6">
-                <p className="text-xl font-bold text-red-400 mb-2">
-                  💔 You're not just losing followers... you're losing your dreams.
+                <p className="text-xl font-bold text-red-400 mb-2 flex items-center gap-2">
+                  {getIcon('xCircle', 'w-5 h-5')} You're not just losing followers... you're losing your dreams.
                 </p>
                 <p className="text-gray-300">
                   While others are quitting their jobs, traveling the world, and building empires... you're still stuck posting to crickets.
@@ -783,8 +802,8 @@ export default function InstagramIgnitedPage() {
 
           <div className="mb-12 text-center">
             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500 rounded-3xl p-8">
-              <h3 className="text-3xl md:text-5xl font-bold mb-4 text-yellow-400">
-                🔥 INSANE Bonuses Worth $8,879 🔥
+              <h3 className="text-3xl md:text-5xl font-bold mb-4 text-yellow-400 flex items-center justify-center gap-3">
+                {getIcon('flame', 'w-8 h-8')} INSANE Bonuses Worth $8,879 {getIcon('flame', 'w-8 h-8')}
               </h3>
               <p className="text-xl text-gray-300">
                 These bonuses alone are worth more than most courses. But you get them FREE when you join today.
@@ -795,32 +814,38 @@ export default function InstagramIgnitedPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "🎯 365 Days of Content Ideas",
+                title: "365 Days of Content Ideas",
+                icon: "target",
                 value: "$997",
                 description: "Never run out of content again! A full year of proven, viral-ready post ideas, hooks, and concepts. Just pick one and create - guaranteed engagement every single day."
               },
               {
-                title: "🎬 Viral Reel Templates",
+                title: "Viral Reel Templates",
+                icon: "video",
                 value: "$797",
                 description: "Copy-paste templates for the 25 highest-performing Reel formats. These templates have generated over 50M views combined - just plug in your content and watch it explode."
               },
               {
-                title: "📝 Caption Swipe File",
+                title: "Caption Swipe File",
+                icon: "fileText",
                 value: "$497",
                 description: "500+ high-converting captions that drive engagement, followers, and sales. Categorized by niche and goal - just copy, customize, and post for instant results."
               },
               {
-                title: "🤝 Influencer Outreach Scripts",
+                title: "Influencer Outreach Scripts",
+                icon: "handshake",
                 value: "$397",
                 description: "The exact DM templates that got me collaborations with 7-figure creators. These scripts have a 67% response rate and have led to millions in combined reach."
               },
               {
-                title: "📊 Monthly Algorithm Updates",
+                title: "Monthly Algorithm Updates",
+                icon: "barChart3",
                 value: "$1,997/year",
                 description: "Stay ahead of every Instagram change forever. Monthly reports on algorithm updates, new features, and strategy adjustments - so you're always winning while others struggle."
               },
               {
-                title: "👥 Private Mastermind Access",
+                title: "Private Mastermind Access",
+                icon: "users",
                 value: "$2,997",
                 description: "Join weekly live calls with me and other successful creators. Get your questions answered, strategies reviewed, and network with people actually getting results."
               }
@@ -834,7 +859,10 @@ export default function InstagramIgnitedPage() {
                   value={bonus.value}
                   className="absolute top-4 right-4 bg-yellow-500"
                 />
-                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400">{bonus.title}</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400 flex items-center gap-2">
+                  {bonus.icon && getIcon(bonus.icon, "w-5 h-5")}
+                  {bonus.title}
+                </h3>
                 <p className="text-gray-300 leading-relaxed">{bonus.description}</p>
               </div>
             ))}
@@ -932,7 +960,9 @@ export default function InstagramIgnitedPage() {
                   <li>• No guarantee of success</li>
                 </ul>
                 <div className="mt-6 bg-red-900/30 border border-red-500 rounded-lg p-3">
-                  <p className="text-red-400 font-bold text-sm">❌ NOT RECOMMENDED</p>
+                  <p className="text-red-400 font-bold text-sm flex items-center justify-center gap-2">
+                    {getIcon('xCircle', 'w-4 h-4')} NOT RECOMMENDED
+                  </p>
                 </div>
               </div>
 
@@ -997,8 +1027,8 @@ export default function InstagramIgnitedPage() {
           {/* Scarcity & Urgency */}
           <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
             <div className="bg-zinc-900 border border-red-500 rounded-3xl p-8 mb-8">
-              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400">
-                ⚠️ Limited Time Special Offer ⚠️
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400 flex items-center justify-center gap-3">
+                {getIcon('alertTriangle', 'w-8 h-8')} Limited Time Special Offer {getIcon('alertTriangle', 'w-8 h-8')}
               </h3>
               
               <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -1022,7 +1052,9 @@ export default function InstagramIgnitedPage() {
               </p>
               
               <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6 mb-8">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-3">🚨 Don't Wait - Here's Why:</h4>
+                <h4 className="text-2xl font-bold text-yellow-400 mb-3 flex items-center gap-2">
+                  {getIcon('alertTriangle', 'w-6 h-6')} Don't Wait - Here's Why:
+                </h4>
                 <div className="text-left space-y-2 text-gray-300">
                   <p>• Every day you wait, your competitors get further ahead</p>
                   <p>• Each month of delay = $5K-$20K in lost potential income</p>
@@ -1037,15 +1069,17 @@ export default function InstagramIgnitedPage() {
                 onClick={handleBuyNow}
                 className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse cursor-pointer"
               >
-                🔥 CLAIM INSTAGRAM IGNITED NOW - $147 🔥
+CLAIM INSTAGRAM IGNITED NOW - $147
               </button>
               
-              <p className="text-sm text-gray-400">
-                ✅ Instant Access • ✅ Lifetime Updates • ✅ 30-Day Money-Back Guarantee
+              <p className="text-sm text-gray-400 flex items-center justify-center gap-1">
+                {getIcon('checkCircle', 'w-4 h-4')} Instant Access • {getIcon('checkCircle', 'w-4 h-4')} Lifetime Updates • {getIcon('checkCircle', 'w-4 h-4')} 30-Day Money-Back Guarantee
               </p>
               
               <div className="bg-zinc-900 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
-                <h4 className="text-xl font-bold text-green-400 mb-3">💯 Zero-Risk Guarantee</h4>
+                <h4 className="text-xl font-bold text-green-400 mb-3 flex items-center gap-2">
+                  {getIcon('checkCircle', 'w-5 h-5')} Zero-Risk Guarantee
+                </h4>
                 <p className="text-gray-300">
                   Try Instagram Ignited for 30 days. If you don't see massive improvement in your growth, 
                   engagement, and content quality, I'll refund every penny. No questions asked.
@@ -1290,16 +1324,16 @@ export default function InstagramIgnitedPage() {
       <section className="relative py-12 bg-black overflow-hidden">
         <Marquee className="[--duration:50s]" pauseOnHover>
           {[
-            "Went from 800 to 125K followers using Anyro's techniques! 🚀",
-            "My first viral carousel got 2.3M views after this course 💥",
-            "Landed my first $25K brand partnership within 3 months! 💰",
-            "From 2% to 12% engagement rate - this system works! 📈",
-            "Made $35K/month from Instagram using these strategies 💸",
-            "240K followers in 10 months - no fluff, just results! ⭐",
-            "Secured $50K brand deals with major fashion brands! 👗",
-            "My tech videos now get 500K+ views regularly 📱",
-            "15%+ engagement rates and $28K/month from travel content ✈️",
-            "From 4K to 200K followers in under a year! 🎯"
+            "Went from 800 to 125K followers using Anyro's techniques!",
+            "My first viral carousel got 2.3M views after this course",
+            "Landed my first $25K brand partnership within 3 months!",
+            "From 2% to 12% engagement rate - this system works!",
+            "Made $35K/month from Instagram using these strategies",
+            "240K followers in 10 months - no fluff, just results!",
+            "Secured $50K brand deals with major fashion brands!",
+            "My tech videos now get 500K+ views regularly",
+            "15%+ engagement rates and $28K/month from travel content",
+            "From 4K to 200K followers in under a year!"
           ].map((story, index) => (
             <div
               key={index}
@@ -1346,7 +1380,9 @@ export default function InstagramIgnitedPage() {
             <p className="text-lg md:text-xl text-gray-400 mb-8">Join 2,000+ successful creators who transformed their Instagram into a money-making machine</p>
             
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-red-400 mb-3">⏰ FINAL WARNING</h3>
+              <h3 className="text-2xl font-bold text-red-400 mb-3 flex items-center justify-center gap-2">
+                {getIcon('alertTriangle', 'w-6 h-6')} FINAL WARNING
+              </h3>
               <p className="text-gray-300 mb-4">
                 This INSANE $147 price and $8,879 in bonuses expire at MIDNIGHT tonight. After that, you'll pay $297 without any bonuses.
               </p>
@@ -1356,11 +1392,11 @@ export default function InstagramIgnitedPage() {
             </div>
             
             <button onClick={handleBuyNow} className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 cursor-pointer">
-              🚀 TRANSFORM MY INSTAGRAM NOW - $147 🚀
+TRANSFORM MY INSTAGRAM NOW - $147
             </button>
             
-            <p className="text-sm text-gray-400 mb-6">
-              ✅ Instant Access • ✅ 30-Day Guarantee • ✅ Lifetime Updates • ✅ $8,879 in Bonuses
+            <p className="text-sm text-gray-400 mb-6 flex items-center justify-center gap-1">
+              {getIcon('checkCircle', 'w-4 h-4')} Instant Access • {getIcon('checkCircle', 'w-4 h-4')} 30-Day Guarantee • {getIcon('checkCircle', 'w-4 h-4')} Lifetime Updates • {getIcon('checkCircle', 'w-4 h-4')} $8,879 in Bonuses
             </p>
             
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">

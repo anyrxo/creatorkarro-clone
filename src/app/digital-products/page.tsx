@@ -400,7 +400,10 @@ export default function DigitalProductsPage() {
             
             <div className="text-center mt-12">
               <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-2">⚡ This System is BATTLE-TESTED</h4>
+                <h4 className="text-2xl font-bold text-yellow-400 mb-2 flex items-center gap-2">
+                  <Zap className="w-6 h-6" />
+                  This System is BATTLE-TESTED
+                </h4>
                 <p className="text-gray-300 text-lg">
                   No theory, no guesswork, no "hope this works." Every strategy has been proven across thousands of students 
                   and millions in digital product sales.
@@ -668,27 +671,32 @@ export default function DigitalProductsPage() {
                 description: "Done-for-you templates for courses, eBooks, worksheets, checklists, and more. Just customize with your content and launch immediately."
               },
               {
-                title: "💰 Pricing Calculator Tool",
+                title: "Pricing Calculator Tool",
+                icon: "dollarSign",
                 value: "$297",
                 description: "Scientific pricing calculator that determines the optimal price point for maximum revenue based on your niche, competition, and value proposition."
               },
               {
-                title: "📧 Email Sequence Library",
+                title: "Email Sequence Library",
+                icon: "mail",
                 value: "$697",
                 description: "100+ high-converting email templates for launches, nurturing, sales, and customer success. Copy, paste, and customize for instant results."
               },
               {
-                title: "🎯 Launch Checklist System",
+                title: "Launch Checklist System",
+                icon: "target",
                 value: "$197",
                 description: "Step-by-step launch checklists that ensure nothing falls through the cracks. From pre-launch to post-launch optimization - every detail covered."
               },
               {
-                title: "📊 Analytics & Tracking Templates",
+                title: "Analytics & Tracking Templates",
+                icon: "barChart3",
                 value: "$397",
                 description: "Spreadsheet templates and dashboard setups to track every metric that matters. Know exactly what's working and what needs improvement."
               },
               {
-                title: "👥 Private Mastermind Access",
+                title: "Private Mastermind Access",
+                icon: "users",
                 value: "$1,997/year",
                 description: "Exclusive access to our private community of successful digital product creators. Get feedback, ask questions, and network with winners."
               }
@@ -702,7 +710,10 @@ export default function DigitalProductsPage() {
                   value={bonus.value}
                   className="absolute top-4 right-4 bg-yellow-500"
                 />
-                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400">{bonus.title}</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400 flex items-center gap-2">
+                  {bonus.icon && getIcon(bonus.icon, "w-5 h-5")}
+                  {bonus.title}
+                </h3>
                 <p className="text-gray-300 leading-relaxed">{bonus.description}</p>
               </div>
             ))}
@@ -831,7 +842,7 @@ export default function DigitalProductsPage() {
           <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
             <div className="bg-zinc-900 border border-red-500 rounded-3xl p-8 mb-8">
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400">
-                ⚠️ Limited Time Founder's Offer ⚠️
+                LIMITED TIME FOUNDER'S OFFER
               </h3>
               
               <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -870,11 +881,11 @@ export default function DigitalProductsPage() {
                 href="#"
                 className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse"
               >
-                🚀 GET DIGITAL PRODUCTS ACADEMY - $189 🚀
+                GET DIGITAL PRODUCTS ACADEMY - $189
               </Link>
               
               <p className="text-sm text-gray-400">
-                ✅ Instant Access • ✅ Lifetime Updates • ✅ 30-Day Money-Back Guarantee
+                Instant Access • Lifetime Updates • 30-Day Money-Back Guarantee
               </p>
               
               <div className="bg-zinc-900 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
@@ -1098,11 +1109,11 @@ export default function DigitalProductsPage() {
             </div>
             
             <Link href="#pricing" className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-8 rounded-2xl text-xl md:text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 text-center">
-              🚀 BUILD MY DIGITAL EMPIRE<br className="md:hidden" /> - $189 🚀
+              BUILD MY DIGITAL EMPIRE<br className="md:hidden" /> - $189
             </Link>
             
             <p className="text-sm text-gray-400 mb-6">
-              ✅ Instant Access • ✅ 30-Day Guarantee • ✅ Lifetime Updates • ✅ $5,959 in Bonuses
+              Instant Access • 30-Day Guarantee • Lifetime Updates • $3,661 in Bonuses
             </p>
             
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
