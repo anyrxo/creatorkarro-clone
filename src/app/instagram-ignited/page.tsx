@@ -919,18 +919,21 @@ export default function InstagramIgnitedPage() {
             <h3 className="text-3xl md:text-4xl font-bold mb-12 text-center">Compare Your Options</h3>
             
             <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {/* Business Coach */}
-              <div className="bg-zinc-900 border border-red-500 rounded-2xl p-6 text-center">
-                <h4 className="text-lg font-bold mb-4 text-red-400">Business Coach</h4>
-                <div className="text-2xl font-black mb-4 text-red-400">$5,000+</div>
-                <div className="text-sm text-gray-400 mb-6">PER MONTH</div>
+              {/* Trial & Error Method - Disabled */}
+              <div className="bg-zinc-900 border border-red-500 rounded-2xl p-6 text-center opacity-60">
+                <h4 className="text-lg font-bold mb-4 text-red-400">Trial & Error Method</h4>
+                <div className="text-2xl font-black mb-4 text-red-400">$0</div>
+                <div className="text-sm text-gray-400 mb-6">BUT COSTS YOU EVERYTHING</div>
                 <ul className="text-left space-y-2 text-gray-300 text-sm">
-                  <li>• Generic advice</li>
-                  <li>• No proven strategies</li>
-                  <li>• Expensive ongoing costs</li>
-                  <li>• One-size-fits-all approach</li>
-                  <li>• No guarantee of results</li>
+                  <li>• Years of failed launches</li>
+                  <li>• Wasted time and money</li>
+                  <li>• No guidance or system</li>
+                  <li>• High stress and frustration</li>
+                  <li>• No guarantee of success</li>
                 </ul>
+                <div className="mt-6 bg-red-900/30 border border-red-500 rounded-lg p-3">
+                  <p className="text-red-400 font-bold text-sm">❌ NOT RECOMMENDED</p>
+                </div>
               </div>
 
               {/* Instagram Ignited - POPULAR */}

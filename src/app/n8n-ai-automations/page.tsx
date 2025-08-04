@@ -867,15 +867,15 @@ export default function N8NAutomationsPage() {
             <PricingComparison
               options={[
                 {
-                  name: "Business Coach",
-                  description: "PER MONTH",
-                  price: "$5,000+",
+                  name: "Trial & Error Method",
+                  description: "BUT COSTS YOU EVERYTHING",
+                  price: "$0",
                   features: [
-                    "Generic business advice",
-                    "No automation training", 
-                    "Expensive ongoing costs",
-                    "One-size-fits-all approach",
-                    "No technical implementation"
+                    "Years of failed launches",
+                    "Wasted time and money", 
+                    "No guidance or system",
+                    "High stress and frustration",
+                    "No guarantee of success"
                   ],
                   disabled: true
                 },

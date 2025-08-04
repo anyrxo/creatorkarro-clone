@@ -755,16 +755,17 @@ export default function DigitalProductsPage() {
             <PricingComparison
               options={[
                 {
-                  name: "Business Coach",
-                  description: "PER MONTH",
-                  price: "$5,000+",
+                  name: "Trial & Error Method",
+                  description: "LOST REVENUE",
+                  price: "$10,000+",
                   features: [
-                    "Generic business advice",
-                    "Not digital product specific",
-                    "Expensive ongoing costs",
-                    "Limited availability",
-                    "No proven system"
-                  ]
+                    "Years of failed launches",
+                    "Wasted time and money", 
+                    "No guidance or system",
+                    "High stress and frustration",
+                    "No guarantee of success"
+                  ],
+                  disabled: true
                 },
                 {
                   name: "Digital Products Academy",

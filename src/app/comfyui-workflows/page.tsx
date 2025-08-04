@@ -380,15 +380,15 @@ export default function ComfyUIWorkflowsPage() {
   // Define pricing options
   const pricingOptions = [
     {
-      name: "Business Coach",
-      description: "PER MONTH",
-      price: "$5,000+",
+      name: "Trial & Error Method",
+      description: "BUT COSTS YOU EVERYTHING",
+      price: "$0",
       features: [
-        "Generic business advice",
-        "No ComfyUI expertise",
-        "Expensive ongoing costs",
-        "One-size-fits-all approach",
-        "No technical workflows"
+        "Years of failed launches",
+        "Wasted time and money",
+        "No guidance or system",
+        "High stress and frustration",
+        "No guarantee of success"
       ],
       disabled: true
     },
