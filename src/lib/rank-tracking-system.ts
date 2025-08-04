@@ -243,11 +243,11 @@ export class RankTrackingEngine {
       trafficChange: 20
     }
 
-    console.log(`📊 Deploying Real-Time Rank Tracking System`)
+    console.log(` Deploying Real-Time Rank Tracking System`)
     console.log(`🌐 Domain: ${domain}`)
     console.log(`🔑 Keywords: ${keywords.length} tracked`)
-    console.log(`⚡ Update Frequency: ${updateFrequency}`)
-    console.log(`🏆 Competitors: ${competitors.length}`)
+    console.log(` Update Frequency: ${updateFrequency}`)
+    console.log(` Competitors: ${competitors.length}`)
     console.log(`📍 Locations: ${locations.join(', ')}`)
 
     // Perform initial ranking check
@@ -258,9 +258,9 @@ export class RankTrackingEngine {
     })
 
     console.log(`✅ Initial Rankings Captured`)
-    console.log(`🎯 Top 3: ${initialRankings.filter(r => r.position <= 3).length}`)
-    console.log(`📈 Top 10: ${initialRankings.filter(r => r.position <= 10).length}`)
-    console.log(`📊 Top 100: ${initialRankings.filter(r => r.position <= 100).length}`)
+    console.log(` Top 3: ${initialRankings.filter(r => r.position <= 3).length}`)
+    console.log(` Top 10: ${initialRankings.filter(r => r.position <= 10).length}`)
+    console.log(` Top 100: ${initialRankings.filter(r => r.position <= 100).length}`)
 
     // Analyze competitor rankings
     const competitorAnalysis = await this.analyzeCompetitors(keywords, competitors, {
@@ -268,14 +268,14 @@ export class RankTrackingEngine {
       devices
     })
 
-    console.log(`🏆 Competitor Analysis Complete`)
+    console.log(` Competitor Analysis Complete`)
     competitorAnalysis.forEach(comp => {
       console.log(`  ${comp.domain}: ${comp.keywords} keywords, ${comp.avgPosition.toFixed(1)} avg position`)
     })
 
     // Calculate visibility score
     const visibility = this.calculateVisibility(initialRankings)
-    console.log(`👁️ Visibility Score: ${visibility.score.toFixed(2)}`)
+    console.log(`👁 Visibility Score: ${visibility.score.toFixed(2)}`)
     console.log(`🚗 Estimated Traffic: ${visibility.estimatedTraffic.toLocaleString()}/month`)
 
     // Create rank tracker
@@ -309,7 +309,7 @@ export class RankTrackingEngine {
     await this.checkForAlerts(tracker.id, initialRankings, [], finalAlertThresholds)
 
     console.log(`✅ Rank Tracker Deployed Successfully`)
-    console.log(`📊 Tracking ID: ${tracker.id}`)
+    console.log(` Tracking ID: ${tracker.id}`)
 
     return tracker
   }
@@ -525,7 +525,7 @@ export class RankTrackingEngine {
     const interval = intervals[frequency as keyof typeof intervals] || intervals.daily
 
     // In production, this would set up actual scheduled checks
-    console.log(`⏰ Scheduled updates every ${frequency}`)
+    console.log(` Scheduled updates every ${frequency}`)
   }
 
   async updateRankings(trackerId: string): Promise<{
@@ -666,8 +666,8 @@ export class RankTrackingEngine {
     console.log(`📧 Sending ${alerts.length} alerts for ${tracker.domain}`)
 
     alerts.forEach(alert => {
-      const emoji = alert.type === 'ranking-drop' ? '📉' : 
-                    alert.type === 'ranking-gain' ? '📈' : '🔔'
+      const emoji = alert.type === 'ranking-drop' ? '' : 
+                    alert.type === 'ranking-gain' ? '' : '🔔'
       
       console.log(`${emoji} ${alert.keyword}: ${alert.details.previousPosition} → ${alert.details.currentPosition} (${alert.details.change > 0 ? '+' : ''}${alert.details.change})`)
     })

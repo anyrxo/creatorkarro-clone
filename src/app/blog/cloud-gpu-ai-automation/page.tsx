@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S 301 REDIRECT - CLOUD GPU AI AUTOMATION ELIMINATION
+// ⚔ ORYANA'S 301 REDIRECT - CLOUD GPU AI AUTOMATION ELIMINATION
 // Redirects cloud GPU automation traffic to comprehensive AI automation guide
 // Cloud infrastructure covered as part of complete automation stack
 

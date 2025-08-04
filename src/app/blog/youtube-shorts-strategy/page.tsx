@@ -181,7 +181,7 @@ export default function YouTubeShortsStrategy() {
                             <li>• Before/after reveals</li>
                             <li>• Seamless transition loops</li>
                         </ul>
-                        <p className="text-red-400 text-sm mt-4">⚡ Loops can 3x your watch time</p>
+                        <p className="text-red-400 text-sm mt-4"> Loops can 3x your watch time</p>
                     </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@ export default function YouTubeShortsStrategy() {
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-red-400 mb-4">🎯 Monday: How-To Content</h3>
+                <h3 className="text-xl font-bold text-red-400 mb-4"> Monday: How-To Content</h3>
                 <p className="text-gray-400 mb-3">Quick tutorials that solve problems</p>
                 <ul className="space-y-1 text-sm text-gray-300">
                     <li>• 3-step processes</li>
@@ -211,7 +211,7 @@ export default function YouTubeShortsStrategy() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">🔥 Tuesday: Trending Topics</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> Tuesday: Trending Topics</h3>
                 <p className="text-gray-400 mb-3">Ride the wave of current events</p>
                 <ul className="space-y-1 text-sm text-gray-300">
                     <li>• News reactions</li>
@@ -222,7 +222,7 @@ export default function YouTubeShortsStrategy() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-green-400 mb-4">💰 Wednesday: Value Bombs</h3>
+                <h3 className="text-xl font-bold text-green-400 mb-4"> Wednesday: Value Bombs</h3>
                 <p className="text-gray-400 mb-3">High-value content that gets saved</p>
                 <ul className="space-y-1 text-sm text-gray-300">
                     <li>• Industry secrets</li>
@@ -233,7 +233,7 @@ export default function YouTubeShortsStrategy() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">🎭 Thursday: Entertainment</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Thursday: Entertainment</h3>
                 <p className="text-gray-400 mb-3">Pure entertainment value</p>
                 <ul className="space-y-1 text-sm text-gray-300">
                     <li>• Funny observations</li>
@@ -244,7 +244,7 @@ export default function YouTubeShortsStrategy() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-pink-400 mb-4">📊 Friday: Data/Stats</h3>
+                <h3 className="text-xl font-bold text-pink-400 mb-4"> Friday: Data/Stats</h3>
                 <p className="text-gray-400 mb-3">Mind-blowing facts and figures</p>
                 <ul className="space-y-1 text-sm text-gray-300">
                     <li>• Surprising statistics</li>
@@ -255,7 +255,7 @@ export default function YouTubeShortsStrategy() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-yellow-400 mb-4">🚀 Weekend: Viral Formats</h3>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4"> Weekend: Viral Formats</h3>
                 <p className="text-gray-400 mb-3">Proven viral video formats</p>
                 <ul className="space-y-1 text-sm text-gray-300">
                     <li>• Before/after transformations</li>
@@ -292,7 +292,7 @@ export default function YouTubeShortsStrategy() {
             </div>
             
             <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-white mb-3">📱 Mobile Optimization Checklist</h3>
+                <h3 className="text-xl font-bold text-white mb-3"> Mobile Optimization Checklist</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>✅ Vertical video (9:16 ratio)</li>
                     <li>✅ Large text (readable on small screens)</li>
@@ -303,7 +303,7 @@ export default function YouTubeShortsStrategy() {
             </div>
             
             <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-white mb-3">⏰ Posting Schedule Science</h3>
+                <h3 className="text-xl font-bold text-white mb-3"> Posting Schedule Science</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                     <div>
                         <h4 className="text-green-400 font-semibold mb-2">Best Times (EST):</h4>
@@ -365,7 +365,7 @@ export default function YouTubeShortsStrategy() {
         <div className="bg-zinc-900 rounded-xl p-8">
             <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                    <h3 className="text-xl font-bold text-green-400 mb-4">💰 Direct Monetization</h3>
+                    <h3 className="text-xl font-bold text-green-400 mb-4"> Direct Monetization</h3>
                     <ul className="space-y-3 text-gray-300">
                         <li>
                             <span className="text-white font-semibold">Shorts Fund:</span> $100-10K/month
@@ -383,7 +383,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
               
                 <div>
-                    <h3 className="text-xl font-bold text-blue-400 mb-4">🚀 Indirect Revenue</h3>
+                    <h3 className="text-xl font-bold text-blue-400 mb-4"> Indirect Revenue</h3>
                     <ul className="space-y-3 text-gray-300">
                         <li>
                             <span className="text-white font-semibold">Course Sales:</span> $10-50K/month

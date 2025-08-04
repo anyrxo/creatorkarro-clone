@@ -667,12 +667,12 @@ response = model.generate_content(
             <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-6 my-8">
               <h4 className="text-lg font-semibold mb-3">Production Checklist</h4>
               <ul className="space-y-2">
-                <li>☑️ Implement retry logic with exponential backoff</li>
-                <li>☑️ Set up monitoring and alerting</li>
-                <li>☑️ Use environment variables for API keys</li>
-                <li>☑️ Implement rate limiting</li>
-                <li>☑️ Create fallback strategies</li>
-                <li>☑️ Log token usage for cost tracking</li>
+                <li>☑ Implement retry logic with exponential backoff</li>
+                <li>☑ Set up monitoring and alerting</li>
+                <li>☑ Use environment variables for API keys</li>
+                <li>☑ Implement rate limiting</li>
+                <li>☑ Create fallback strategies</li>
+                <li>☑ Log token usage for cost tracking</li>
               </ul>
             </div>
           </section>

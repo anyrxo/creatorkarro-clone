@@ -304,7 +304,7 @@ export class CTRManipulationNetworkEngine {
       dailyBudget?: number
     } = {}
   ): Promise<CTRCampaign> {
-    console.log(`🎯 Deploying CTR Manipulation Campaign: ${campaignName}`)
+    console.log(` Deploying CTR Manipulation Campaign: ${campaignName}`)
     console.log(`🌐 Target URL: ${targetUrl}`)
     console.log(`🔑 Keywords: ${targetKeywords.join(', ')}`)
     
@@ -320,7 +320,7 @@ export class CTRManipulationNetworkEngine {
 
     // Select optimal bots based on campaign requirements
     const selectedBots = this.selectOptimalBots(geographic.countries || [], intensity)
-    console.log(`🤖 Selected ${selectedBots.length} bots across ${new Set(selectedBots.map(b => b.location.country)).size} countries`)
+    console.log(` Selected ${selectedBots.length} bots across ${new Set(selectedBots.map(b => b.location.country)).size} countries`)
 
     // Calculate campaign schedule
     const schedule = this.generateCampaignSchedule(duration, targetCTR, selectedBots.length, pattern)
@@ -328,7 +328,7 @@ export class CTRManipulationNetworkEngine {
 
     // Generate search query variations
     const searchQueries = this.generateSearchQueries(targetKeywords)
-    console.log(`🔍 Generated ${searchQueries.length} search query variations`)
+    console.log(` Generated ${searchQueries.length} search query variations`)
 
     // Calculate click behavior parameters
     const selectedPattern = this.patterns.get(pattern) || this.patterns.get('natural-growth')!
@@ -371,11 +371,11 @@ export class CTRManipulationNetworkEngine {
     await this.initializeBotCoordination(campaign)
     
     console.log(`✅ CTR Campaign Deployed Successfully`)
-    console.log(`📊 Expected Results:`)
-    console.log(`  📈 CTR Improvement: ${(targetCTR * 100).toFixed(2)}%`)
-    console.log(`  🎯 Daily Clicks: ${schedule.dailyClicks}`)
-    console.log(`  🌍 Geographic Coverage: ${geographic.countries?.join(', ')}`)
-    console.log(`  💰 Estimated Cost: $${(dailyBudget * duration).toLocaleString()}`)
+    console.log(` Expected Results:`)
+    console.log(`   CTR Improvement: ${(targetCTR * 100).toFixed(2)}%`)
+    console.log(`   Daily Clicks: ${schedule.dailyClicks}`)
+    console.log(`   Geographic Coverage: ${geographic.countries?.join(', ')}`)
+    console.log(`   Estimated Cost: $${(dailyBudget * duration).toLocaleString()}`)
     
     return campaign
   }
@@ -585,7 +585,7 @@ export class CTRManipulationNetworkEngine {
 
   // Activate individual bot with safety protocols
   private async activateBot(bot: CTRBot, campaign: CTRCampaign): Promise<void> {
-    console.log(`🤖 Activating Bot: ${bot.id} (${bot.location.country})`)
+    console.log(` Activating Bot: ${bot.id} (${bot.location.country})`)
     
     // Update bot status
     bot.status = 'active'
@@ -654,14 +654,14 @@ export class CTRManipulationNetworkEngine {
     const activeBotsCount = campaign.bots.filter(bot => bot.status === 'active').length
     const averageDetectionRate = campaign.bots.reduce((sum, bot) => sum + bot.metrics.detectionRate, 0) / campaign.bots.length
     
-    console.log(`📊 Campaign Health Check: ${campaign.name}`)
+    console.log(` Campaign Health Check: ${campaign.name}`)
     console.log(`  Active Bots: ${activeBotsCount}/${campaign.bots.length}`)
     console.log(`  Detection Rate: ${(averageDetectionRate * 100).toFixed(2)}%`)
     console.log(`  Total Clicks: ${campaign.metrics.totalClicks}`)
     
     // Trigger safety protocols if detection rate is high
     if (averageDetectionRate > 0.1) {
-      console.log(`⚠️ High detection rate detected, implementing safety protocols`)
+      console.log(`⚠ High detection rate detected, implementing safety protocols`)
       this.implementSafetyProtocols(campaign)
     }
   }
@@ -675,7 +675,7 @@ export class CTRManipulationNetworkEngine {
     campaign.bots.forEach(bot => {
       if (bot.metrics.detectionRate > 0.15) {
         bot.status = 'cooldown'
-        console.log(`🔄 Bot ${bot.id} placed on cooldown`)
+        console.log(` Bot ${bot.id} placed on cooldown`)
       }
     })
     

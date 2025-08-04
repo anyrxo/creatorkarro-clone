@@ -322,11 +322,11 @@ export default function PersonalBrandBuilding() {
                     <span className="text-gray-300">Share value-packed content</span>
                 </div>
                 <div className="flex items-center gap-3">
-                    <span className="text-purple-400">☀️ Midday:</span>
+                    <span className="text-purple-400"> Midday:</span>
                     <span className="text-gray-300">Engage with your community</span>
                 </div>
                 <div className="flex items-center gap-3">
-                    <span className="text-purple-400">🌙 Evening:</span>
+                    <span className="text-purple-400"> Evening:</span>
                     <span className="text-gray-300">Share personal insights</span>
                 </div>
             </div>

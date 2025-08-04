@@ -502,9 +502,9 @@ Interested in seeing a detailed outline?
       mainDomain: string
     }
   ): Promise<GuestPostCampaign> {
-    console.log(`🚀 Deploying Guest Post Campaign: ${campaignName}`)
-    console.log(`🎯 Target Niches: ${options.targetNiches.join(', ')}`)
-    console.log(`📊 Content Goal: ${options.contentCount} guest posts`)
+    console.log(` Deploying Guest Post Campaign: ${campaignName}`)
+    console.log(` Target Niches: ${options.targetNiches.join(', ')}`)
+    console.log(` Content Goal: ${options.contentCount} guest posts`)
     
     // Filter targets by niche relevance
     const relevantTargets = Array.from(this.targets.values())
@@ -550,13 +550,13 @@ Interested in seeing a detailed outline?
     
     this.campaigns.set(campaign.id, campaign)
     
-    console.log(`🎯 Campaign Metrics:`)
-    console.log(`📊 Pitches Sent: ${metrics.pitchesSent}`)
-    console.log(`📈 Response Rate: ${metrics.responseRate}%`)
+    console.log(` Campaign Metrics:`)
+    console.log(` Pitches Sent: ${metrics.pitchesSent}`)
+    console.log(` Response Rate: ${metrics.responseRate}%`)
     console.log(`✅ Acceptance Rate: ${metrics.acceptanceRate}%`)
-    console.log(`📝 Published Posts: ${metrics.publishedPosts}`)
+    console.log(` Published Posts: ${metrics.publishedPosts}`)
     console.log(`🔗 Total Backlinks: ${metrics.totalBacklinks}`)
-    console.log(`⚡ Average Authority: ${metrics.averageAuthority}`)
+    console.log(` Average Authority: ${metrics.averageAuthority}`)
     
     return campaign
   }

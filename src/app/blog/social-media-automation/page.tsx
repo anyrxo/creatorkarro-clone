@@ -151,7 +151,7 @@ export default function SocialMediaAutomation() {
             <h2 className="text-3xl font-bold text-white mb-8 text-center">The Complete Automation Stack</h2>
           
             <div className="space-y-8"><div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-2xl font-bold text-blue-400 mb-4">🗓️ Content Scheduling (The Foundation)</h3>
+                <h3 className="text-2xl font-bold text-blue-400 mb-4">🗓 Content Scheduling (The Foundation)</h3>
               
                 <div className="grid md:grid-cols-2 gap-6">
                     <div>
@@ -174,7 +174,7 @@ export default function SocialMediaAutomation() {
                     </div>
                 </div>
             </div><div className="bg-zinc-800 rounded-xl p-6">
-            <h3 className="text-2xl font-bold text-green-400 mb-4">🎨 Content Creation Automation</h3>
+            <h3 className="text-2xl font-bold text-green-400 mb-4"> Content Creation Automation</h3>
               
             <div className="space-y-4">
                 <div className="bg-zinc-900 rounded-lg p-4">
@@ -292,7 +292,7 @@ export default function SocialMediaAutomation() {
                     <li>• Auto-follow: 20-30 targeted accounts</li>
                     <li>• Auto-unfollow: After 7 days if no follow back</li>
                 </ul>
-                <p className="text-yellow-400 text-sm mt-3">⚠️ Stay within platform limits</p>
+                <p className="text-yellow-400 text-sm mt-3">⚠ Stay within platform limits</p>
             </div>
         </div>
     </div>
@@ -351,7 +351,7 @@ export default function SocialMediaAutomation() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-600 mb-4">💼 LinkedIn</h3>
+                <h3 className="text-xl font-bold text-blue-600 mb-4"> LinkedIn</h3>
                 <ul className="space-y-2 text-sm text-gray-300">
                     <li>• Shield for analytics</li>
                     <li>• Taplio for content ideas</li>
@@ -373,7 +373,7 @@ export default function SocialMediaAutomation() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-red-500 mb-4">📺 YouTube</h3>
+                <h3 className="text-xl font-bold text-red-500 mb-4"> YouTube</h3>
                 <ul className="space-y-2 text-sm text-gray-300">
                     <li>• TubeBuddy for SEO</li>
                     <li>• VidIQ for research</li>

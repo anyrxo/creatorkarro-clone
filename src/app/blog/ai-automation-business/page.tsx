@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S 301 REDIRECT - CONSOLIDATING AUTHORITY TO PILLAR CONTENT
+// ⚔ ORYANA'S 301 REDIRECT - CONSOLIDATING AUTHORITY TO PILLAR CONTENT
 // This page permanently redirects to our authority AI automation guide
 // Preserves any backlinks while eliminating keyword cannibalization
 

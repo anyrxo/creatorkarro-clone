@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S HIGH-INTENT TRAFFIC HIJACK
+// ⚔ ORYANA'S HIGH-INTENT TRAFFIC HIJACK
 // "Digital products that sell" = HIGH commercial intent wanting proven products
 // Redirect to our $497 course that teaches exactly what sells and how to create it
 

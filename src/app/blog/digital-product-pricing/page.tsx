@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S PRICING STRATEGY HIJACK
+// ⚔ ORYANA'S PRICING STRATEGY HIJACK
 // "Digital product pricing" = Commercial intent wanting optimal pricing strategies
 // Redirect to our $497 course that includes comprehensive pricing psychology + strategies
 

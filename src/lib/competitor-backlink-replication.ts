@@ -290,7 +290,7 @@ Thanks,
 
   // Analyze competitors and identify backlink opportunities
   async analyzeCompetitors(competitors: string[]): Promise<CompetitorAnalysis[]> {
-    console.log(`🔍 Analyzing ${competitors.length} competitors for backlink opportunities...`)
+    console.log(` Analyzing ${competitors.length} competitors for backlink opportunities...`)
     
     const analyses: CompetitorAnalysis[] = []
     
@@ -326,8 +326,8 @@ Thanks,
       budget?: number
     } = {}
   ): Promise<BacklinkReplicationCampaign> {
-    console.log(`🚀 Deploying Backlink Replication Campaign: ${campaignName}`)
-    console.log(`🎯 Target Competitors: ${competitors.join(', ')}`)
+    console.log(` Deploying Backlink Replication Campaign: ${campaignName}`)
+    console.log(` Target Competitors: ${competitors.join(', ')}`)
     
     const {
       maxBacklinksPerCompetitor = 25,
@@ -390,11 +390,11 @@ Thanks,
     
     this.campaigns.set(campaign.id, campaign)
     
-    console.log(`🎯 Campaign Metrics:`)
-    console.log(`📊 Target Backlinks: ${targetBacklinks.length}`)
-    console.log(`⚡ Average Authority: ${metrics.averageAuthority}`)
-    console.log(`🚀 Traffic Potential: ${metrics.totalTrafficPotential.toLocaleString()}`)
-    console.log(`📈 Estimated Ranking Boost: +${metrics.estimatedRankingBoost} positions`)
+    console.log(` Campaign Metrics:`)
+    console.log(` Target Backlinks: ${targetBacklinks.length}`)
+    console.log(` Average Authority: ${metrics.averageAuthority}`)
+    console.log(` Traffic Potential: ${metrics.totalTrafficPotential.toLocaleString()}`)
+    console.log(` Estimated Ranking Boost: +${metrics.estimatedRankingBoost} positions`)
     console.log(`✅ Projected Success Rate: ${Math.round(metrics.completionRate)}%`)
     
     return campaign

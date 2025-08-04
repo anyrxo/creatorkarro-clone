@@ -138,19 +138,19 @@ export default function ComfyUISuccessStory() {
                     <h3 className="text-2xl font-bold text-purple-400 mb-4">What Made ComfyUI Different</h3>
                     <div className="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h4 className="text-white font-semibold mb-2">🎨 Visual Workflow</h4>
+                            <h4 className="text-white font-semibold mb-2"> Visual Workflow</h4>
                             <p className="text-gray-400">Node-based system that designers understand intuitively</p>
                         </div>
                         <div>
-                            <h4 className="text-white font-semibold mb-2">⚡ Lightning Fast</h4>
+                            <h4 className="text-white font-semibold mb-2"> Lightning Fast</h4>
                             <p className="text-gray-400">Generate hundreds of variations in minutes</p>
                         </div>
                         <div>
-                            <h4 className="text-white font-semibold mb-2">🔧 Total Control</h4>
+                            <h4 className="text-white font-semibold mb-2"> Total Control</h4>
                             <p className="text-gray-400">Fine-tune every aspect of the generation</p>
                         </div>
                         <div>
-                            <h4 className="text-white font-semibold mb-2">🚀 Professional Quality</h4>
+                            <h4 className="text-white font-semibold mb-2"> Professional Quality</h4>
                             <p className="text-gray-400">Client-ready outputs with minimal editing</p>
                         </div>
                     </div>
@@ -169,7 +169,7 @@ export default function ComfyUISuccessStory() {
             <div className="space-y-6">
                 <div className="bg-zinc-800 rounded-xl p-6">
                     <div className="flex items-start gap-4">
-                        <div className="text-3xl">🎨</div>
+                        <div className="text-3xl"></div>
                         <div className="flex-1">
                             <h3 className="text-xl font-bold text-white mb-3">Logo Generation System</h3>
                             <p className="text-gray-400 mb-4">Creates 50+ logo variations from a single text prompt</p>
@@ -195,7 +195,7 @@ export default function ComfyUISuccessStory() {
 
                 <div className="bg-zinc-800 rounded-xl p-6">
                     <div className="flex items-start gap-4">
-                        <div className="text-3xl">🖼️</div>
+                        <div className="text-3xl">🖼</div>
                         <div className="flex-1">
                             <h3 className="text-xl font-bold text-white mb-3">Product Mockup Magic</h3>
                             <p className="text-gray-400 mb-4">Generates photorealistic product mockups in any environment</p>
@@ -221,7 +221,7 @@ export default function ComfyUISuccessStory() {
 
                 <div className="bg-zinc-800 rounded-xl p-6">
                     <div className="flex items-start gap-4">
-                        <div className="text-3xl">🎭</div>
+                        <div className="text-3xl"></div>
                         <div className="flex-1">
                             <h3 className="text-xl font-bold text-white mb-3">Brand Character Creator</h3>
                             <p className="text-gray-400 mb-4">Develops consistent brand mascots and characters</p>
@@ -247,7 +247,7 @@ export default function ComfyUISuccessStory() {
 
                 <div className="bg-zinc-800 rounded-xl p-6">
                     <div className="flex items-start gap-4">
-                        <div className="text-3xl">📱</div>
+                        <div className="text-3xl"></div>
                         <div className="flex-1">
                             <h3 className="text-xl font-bold text-white mb-3">Social Media Content Factory</h3>
                             <p className="text-gray-400 mb-4">Produces month's worth of content in one session</p>
@@ -303,7 +303,7 @@ export default function ComfyUISuccessStory() {
                 </div>
 
                 <div className="bg-zinc-900 rounded-xl p-6">
-                    <div className="text-2xl mb-3">🎮</div>
+                    <div className="text-2xl mb-3"></div>
                     <h3 className="text-xl font-bold text-white mb-2">Gaming Startup</h3>
                     <p className="text-gray-400 mb-4">Designed complete visual identity</p>
                     <div className="space-y-2 text-sm">

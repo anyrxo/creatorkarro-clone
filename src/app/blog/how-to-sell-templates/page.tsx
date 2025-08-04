@@ -370,7 +370,7 @@ export default function HowToSellTemplates() {
                 </div>
               
                 <div className="bg-zinc-800 rounded-lg p-6">
-                    <h4 className="text-lg font-bold text-white mb-3">💎 Master Collection ($197-497)</h4>
+                    <h4 className="text-lg font-bold text-white mb-3"> Master Collection ($197-497)</h4>
                     <ul className="space-y-2 text-gray-300">
                         <li>• All templates (20+)</li>
                         <li>• Commercial license</li>
@@ -394,7 +394,7 @@ export default function HowToSellTemplates() {
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-green-400 mb-4">🎯 Pinterest Strategy</h3>
+                <h3 className="text-xl font-bold text-green-400 mb-4"> Pinterest Strategy</h3>
                 <ul className="space-y-3 text-gray-300">
                     <li>• Create 20-30 pins per template</li>
                     <li>• Use trending keywords</li>
@@ -418,7 +418,7 @@ export default function HowToSellTemplates() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">📱 Social Proof</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Social Proof</h3>
                 <ul className="space-y-3 text-gray-300">
                     <li>• Screenshot customer reviews</li>
                     <li>• Share user creations</li>
@@ -430,7 +430,7 @@ export default function HowToSellTemplates() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-pink-400 mb-4">🚀 Launch Strategy</h3>
+                <h3 className="text-xl font-bold text-pink-400 mb-4"> Launch Strategy</h3>
                 <ul className="space-y-3 text-gray-300">
                     <li>• Pre-launch to email list</li>
                     <li>• 48-hour special pricing</li>

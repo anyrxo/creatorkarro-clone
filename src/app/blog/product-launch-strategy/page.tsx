@@ -332,7 +332,7 @@ export default function ProductLaunchStrategy() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">📊 Revenue Distribution</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> Revenue Distribution</h3>
                 <div className="space-y-3">
                     <div className="flex justify-between items-center">
                         <span className="text-gray-300">Day 1</span>
@@ -447,7 +447,7 @@ export default function ProductLaunchStrategy() {
         <div className="bg-zinc-800 rounded-xl p-8">
             <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                    <h3 className="text-lg font-bold text-green-400 mb-4">Technical Setup ⚙️</h3>
+                    <h3 className="text-lg font-bold text-green-400 mb-4">Technical Setup </h3>
                     <div className="space-y-3">
                         <label className="flex items-center gap-3">
                             <input type="checkbox" className="rounded" />
@@ -473,7 +473,7 @@ export default function ProductLaunchStrategy() {
                 </div>
               
                 <div>
-                    <h3 className="text-lg font-bold text-blue-400 mb-4">Content Ready 📝</h3>
+                    <h3 className="text-lg font-bold text-blue-400 mb-4">Content Ready </h3>
                     <div className="space-y-3">
                         <label className="flex items-center gap-3">
                             <input type="checkbox" className="rounded" />
@@ -525,7 +525,7 @@ export default function ProductLaunchStrategy() {
                 </div>
               
                 <div>
-                    <h3 className="text-lg font-bold text-yellow-400 mb-4">Team Ready 👥</h3>
+                    <h3 className="text-lg font-bold text-yellow-400 mb-4">Team Ready </h3>
                     <div className="space-y-3">
                         <label className="flex items-center gap-3">
                             <input type="checkbox" className="rounded" />

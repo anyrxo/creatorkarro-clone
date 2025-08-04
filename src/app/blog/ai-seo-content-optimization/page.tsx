@@ -198,7 +198,7 @@ export default function AISEOContentOptimization() {
                   <p className="text-gray-400 mb-4">Leverage AI to understand and implement Google's entity-based search.</p>
                   <div className="bg-zinc-900 rounded-lg p-4 space-y-3">
                     <div className="flex items-start gap-3">
-                      <span className="text-green-400">🎯</span>
+                      <span className="text-green-400"></span>
                       <div>
                         <span className="text-white font-semibold">Entity Recognition:</span>
                         <span className="text-gray-400"> AI identifies and optimizes for people, places, things, concepts</span>
@@ -212,14 +212,14 @@ export default function AISEOContentOptimization() {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="text-green-400">📊</span>
+                      <span className="text-green-400"></span>
                       <div>
                         <span className="text-white font-semibold">Schema Automation:</span>
                         <span className="text-gray-400"> Auto-generate structured data markup</span>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="text-green-400">🤖</span>
+                      <span className="text-green-400"></span>
                       <div>
                         <span className="text-white font-semibold">Context Building:</span>
                         <span className="text-gray-400"> AI creates topically relevant content networks</span>
@@ -238,17 +238,17 @@ export default function AISEOContentOptimization() {
                   <p className="text-gray-400 mb-4">AI monitors and adapts content based on live search results.</p>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">📈</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">SERP Tracking</h4>
                       <p className="text-sm text-gray-400">Monitor top 100 results 24/7</p>
                     </div>
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">🔍</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">Gap Analysis</h4>
                       <p className="text-sm text-gray-400">Find content opportunities</p>
                     </div>
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">⚡</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">Auto Updates</h4>
                       <p className="text-sm text-gray-400">Content refreshed daily</p>
                     </div>
@@ -506,7 +506,7 @@ export default function AISEOContentOptimization() {
           <div className="space-y-8">
             <div className="bg-zinc-800 rounded-xl p-6">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">📈</div>
+                <div className="text-3xl"></div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">E-commerce Store: 847% Traffic Growth</h3>
                   <p className="text-gray-400 mb-3">
@@ -532,7 +532,7 @@ export default function AISEOContentOptimization() {
 
             <div className="bg-zinc-800 rounded-xl p-6">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">💰</div>
+                <div className="text-3xl"></div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Affiliate Site Network: $1.2M Annual Revenue</h3>
                   <p className="text-gray-400 mb-3">
@@ -550,7 +550,7 @@ export default function AISEOContentOptimization() {
 
             <div className="bg-zinc-800 rounded-xl p-6">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">🚀</div>
+                <div className="text-3xl"></div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">SaaS Company: 92% Organic Lead Increase</h3>
                   <p className="text-gray-400 mb-3">
@@ -681,7 +681,7 @@ export default function AISEOContentOptimization() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 border border-green-500/30 mb-6">
-              <span className="text-green-400 text-sm font-semibold">📝 AUTOMATE YOUR CONTENT DOMINATION</span>
+              <span className="text-green-400 text-sm font-semibold"> AUTOMATE YOUR CONTENT DOMINATION</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -766,7 +766,7 @@ export default function AISEOContentOptimization() {
             
             <div className="bg-zinc-800/50 rounded-xl p-6 mb-8">
               <div className="text-center mb-4">
-                <span className="text-orange-400 font-bold text-lg">⚠️ STOP Paying $500+ Monthly for Content Tools</span>
+                <span className="text-orange-400 font-bold text-lg">⚠ STOP Paying $500+ Monthly for Content Tools</span>
               </div>
               <div className="grid md:grid-cols-3 gap-4 text-sm">
                 <div className="text-center">
@@ -801,7 +801,7 @@ export default function AISEOContentOptimization() {
             </Link>
             
             <div className="mt-6 text-sm text-gray-400">
-              ⭐ 4.9/5 from 2,400+ content creators | 🔒 30-day money-back guarantee | 📝 Generate 500+ articles monthly
+               4.9/5 from 2,400+ content creators | 🔒 30-day money-back guarantee |  Generate 500+ articles monthly
             </div>
           </div>
         </div>

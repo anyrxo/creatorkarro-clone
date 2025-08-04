@@ -273,23 +273,23 @@ export class NegativeSEODefenseEngine {
       dashboard: alertsOptions?.dashboard ?? true
     }
 
-    console.log(`🛡️ Deploying Negative SEO Defense System`)
+    console.log(`🛡 Deploying Negative SEO Defense System`)
     console.log(`🌐 Domain: ${domain}`)
     console.log(`🔒 Protection Level: ${protectionLevel}`)
-    console.log(`📊 Monitoring: ${monitoringFrequency}`)
-    console.log(`💰 Budget: $${budget}/month`)
+    console.log(` Monitoring: ${monitoringFrequency}`)
+    console.log(` Budget: $${budget}/month`)
 
     // Select protocols based on protection level
     const selectedProtocols = this.selectProtocols(protectionLevel, budget, customProtocols)
-    console.log(`⚡ Active Protocols: ${selectedProtocols.length}`)
+    console.log(` Active Protocols: ${selectedProtocols.length}`)
 
     // Perform initial audit
     const initialAudit = await this.performSecurityAudit(domain)
-    console.log(`🔍 Initial Audit Complete: Health Score ${initialAudit.healthScore}/100`)
+    console.log(` Initial Audit Complete: Health Score ${initialAudit.healthScore}/100`)
 
     // Deploy monitoring systems
     const monitoringSystems = this.deployMonitoringSystems(domain, monitoringFrequency)
-    console.log(`📡 Monitoring Systems: ${Object.keys(monitoringSystems).length} active`)
+    console.log(` Monitoring Systems: ${Object.keys(monitoringSystems).length} active`)
 
     // Create defense system
     const defenseSystem: DefenseSystem = {
@@ -308,8 +308,8 @@ export class NegativeSEODefenseEngine {
     this.defenseSystems.set(defenseSystem.id, defenseSystem)
 
     console.log(`✅ Defense System Deployed Successfully`)
-    console.log(`🛡️ Protection Active: ${protectionLevel} level`)
-    console.log(`📊 Health Score: ${defenseSystem.healthScore}/100`)
+    console.log(`🛡 Protection Active: ${protectionLevel} level`)
+    console.log(` Health Score: ${defenseSystem.healthScore}/100`)
 
     return defenseSystem
   }

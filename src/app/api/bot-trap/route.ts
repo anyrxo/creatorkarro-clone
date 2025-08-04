@@ -103,7 +103,7 @@ export async function GET(request: NextRequest) {
     botAnalysis
   };
   
-  console.log('🕷️ BOT TRAP TRIGGERED:', {
+  console.log('🕷 BOT TRAP TRIGGERED:', {
     ip,
     userAgent: userAgent.substring(0, 100),
     confidence: botAnalysis.confidence,

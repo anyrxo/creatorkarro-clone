@@ -270,14 +270,14 @@ export default function InstagramIgnitedSuccessStories() {
                 </div>
             
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <div className="text-3xl mb-4">🔥</div>
+                    <div className="text-3xl mb-4"></div>
                     <h3 className="text-white font-semibold mb-3">Controversial Takes</h3>
                     <p className="text-gray-400 text-sm mb-4">Opinions that sparked debate and discussion</p>
                     <div className="text-pink-400 font-semibold">Avg. Comments: 500+</div>
                 </div>
             
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <div className="text-3xl mb-4">📚</div>
+                    <div className="text-3xl mb-4"></div>
                     <h3 className="text-white font-semibold mb-3">Tutorial Carousels</h3>
                     <p className="text-gray-400 text-sm mb-4">Step-by-step guides with immediate value</p>
                     <div className="text-green-400 font-semibold">Avg. Shares: 1.8K</div>

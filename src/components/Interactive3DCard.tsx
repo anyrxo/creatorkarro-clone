@@ -167,19 +167,19 @@ export function Example3DCards() {
     {
       title: 'AI Generation',
       description: 'Create stunning visuals with advanced AI models',
-      icon: '🎨',
+      icon: '',
       gradient: 'from-purple-600 to-blue-600'
     },
     {
       title: 'Real-time Rendering',
       description: 'Experience lightning-fast 3D graphics processing',
-      icon: '⚡',
+      icon: '',
       gradient: 'from-blue-600 to-cyan-600'
     },
     {
       title: 'Cloud Computing',
       description: 'Harness unlimited computational power',
-      icon: '☁️',
+      icon: '☁',
       gradient: 'from-pink-600 to-purple-600'
     }
   ]

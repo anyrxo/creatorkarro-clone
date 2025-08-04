@@ -83,7 +83,7 @@ export default function DeepSeekR2Page() {
         <article className="prose prose-lg max-w-none">
           {/* Introduction */}
           <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-xl border-l-4 border-emerald-400 mb-8">
-            <h2 className="text-2xl font-bold text-gray-300 mb-4">🚀 The Open-Source Revolution That Changes Everything</h2>
+            <h2 className="text-2xl font-bold text-gray-300 mb-4"> The Open-Source Revolution That Changes Everything</h2>
             <p className="text-gray-700 mb-4">
               In a move that could fundamentally reshape the AI landscape, DeepSeek has unveiled <strong>DeepSeek R2</strong>—an open-source model that doesn't just compete with industry giants like OpenAI and Google, it threatens to democratize high-performance AI entirely. This isn't another incremental improvement in the <strong>open source AI</strong> space; it's a revolutionary approach that challenges the very economics of artificial intelligence.
             </p>
@@ -128,7 +128,7 @@ export default function DeepSeekR2Page() {
             </div>
 
             <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-teal-600 mb-4">🎯 Strategic Market Position</h3>
+              <h3 className="text-2xl font-bold text-teal-600 mb-4"> Strategic Market Position</h3>
               <p className="text-gray-700 mb-4">
                 <strong>DeepSeek R2</strong> isn't positioned as just another alternative—it's designed as a direct challenge to the fundamental business models of OpenAI, Google, and other proprietary AI providers. The strategic implications are profound:
               </p>
@@ -154,7 +154,7 @@ export default function DeepSeekR2Page() {
             <div className="space-y-8">
               {/* GPU Optimization */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg border-l-4 border-blue-500">
-                <h3 className="text-2xl font-bold text-blue-600 mb-4">🔧 GPU-Optimized Architecture</h3>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4"> GPU-Optimized Architecture</h3>
                 <p className="text-gray-700 mb-4">
                   The foundation of R2's cost-efficiency lies in its revolutionary approach to GPU utilization. DeepSeek has developed proprietary <strong>GPU-optimized decoding kernels</strong> that extract maximum performance from available hardware, fundamentally changing the performance-to-cost equation.
                 </p>
@@ -188,7 +188,7 @@ export default function DeepSeekR2Page() {
 
               {/* Supercomputing Infrastructure */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg border-l-4 border-purple-500">
-                <h3 className="text-2xl font-bold text-purple-600 mb-4">🏗️ Advanced Supercomputing Infrastructure</h3>
+                <h3 className="text-2xl font-bold text-purple-600 mb-4">🏗 Advanced Supercomputing Infrastructure</h3>
                 <p className="text-gray-700 mb-4">
                   DeepSeek's strategic investments in <strong>AI supercomputing clusters</strong> have enabled breakthroughs that competitors struggle to match. This infrastructure advantage, combined with innovative approaches to hardware constraints, positions R2 as a formidable challenger to established players.
                 </p>
@@ -208,7 +208,7 @@ export default function DeepSeekR2Page() {
 
               {/* Communication & Efficiency Libraries */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg border-l-4 border-green-500">
-                <h3 className="text-2xl font-bold text-green-600 mb-4">📡 Advanced Communication Libraries</h3>
+                <h3 className="text-2xl font-bold text-green-600 mb-4"> Advanced Communication Libraries</h3>
                 <p className="text-gray-700 mb-4">
                   The R2 ecosystem includes sophisticated <strong>communication libraries</strong> designed to optimize model performance across distributed systems. These tools enable seamless scaling and efficient resource utilization, critical factors in achieving cost-effective high-performance AI.
                 </p>
@@ -235,7 +235,7 @@ export default function DeepSeekR2Page() {
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Performance Analysis: R2's Path to AI Leadership</h2>
             
             <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-indigo-600 mb-4">📊 Competitive Performance Metrics</h3>
+              <h3 className="text-2xl font-bold text-indigo-600 mb-4"> Competitive Performance Metrics</h3>
               <p className="text-gray-700 mb-6">
                 According to DeepSeek's internal benchmarks, R2 is positioned just 4.5 points away from claiming the top spot in global AI model rankings. This proximity to market leadership, combined with revolutionary cost-efficiency, creates a compelling value proposition that could reshape competitive dynamics.
               </p>
@@ -319,7 +319,7 @@ export default function DeepSeekR2Page() {
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Open-Source Week: Five Revolutionary AI Tools</h2>
             
             <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-emerald-600 mb-4">🛠️ The Complete Developer Ecosystem</h3>
+              <h3 className="text-2xl font-bold text-emerald-600 mb-4"> The Complete Developer Ecosystem</h3>
               <p className="text-gray-700 mb-6">
                 DeepSeek's Open-Source Week unveiled five groundbreaking tools that complement the R2 model, creating a comprehensive ecosystem for AI development. These tools address critical infrastructure needs that have historically required expensive proprietary solutions.
               </p>
@@ -400,7 +400,7 @@ export default function DeepSeekR2Page() {
             <div className="space-y-8">
               {/* Democratization of AI */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-bold text-emerald-600 mb-4">🌍 Global AI Democratization</h3>
+                <h3 className="text-2xl font-bold text-emerald-600 mb-4"> Global AI Democratization</h3>
                 <p className="text-gray-700 mb-4">
                   The most profound impact of <strong>DeepSeek R2</strong> extends beyond technical performance to fundamental accessibility. By drastically reducing the cost barrier to high-performance AI, R2 enables organizations and individuals worldwide to access capabilities previously reserved for well-funded corporations.
                 </p>
@@ -428,7 +428,7 @@ export default function DeepSeekR2Page() {
 
               {/* Competitive Response */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-bold text-blue-600 mb-4">⚔️ Forcing Competitive Evolution</h3>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">⚔ Forcing Competitive Evolution</h3>
                 <p className="text-gray-700 mb-4">
                   R2's market entry creates unprecedented pressure on established AI providers to justify their premium pricing models. This competitive dynamic could accelerate innovation while simultaneously reducing costs across the entire industry.
                 </p>
@@ -445,7 +445,7 @@ export default function DeepSeekR2Page() {
 
               {/* Innovation Catalyst */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-bold text-purple-600 mb-4">🚀 Innovation Acceleration</h3>
+                <h3 className="text-2xl font-bold text-purple-600 mb-4"> Innovation Acceleration</h3>
                 <p className="text-gray-700 mb-4">
                   By removing cost barriers, R2 enables experimentation and innovation that was previously economically unfeasible. This could lead to breakthrough applications and use cases that weren't viable under traditional AI pricing models.
                 </p>
@@ -472,7 +472,7 @@ export default function DeepSeekR2Page() {
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Implementation Strategy: Adopting DeepSeek R2</h2>
             
             <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-cyan-600 mb-4">📋 Strategic Adoption Framework</h3>
+              <h3 className="text-2xl font-bold text-cyan-600 mb-4"> Strategic Adoption Framework</h3>
               <p className="text-gray-700 mb-6">
                 Based on my analysis of successful <strong>open source AI</strong> implementations, here's the optimal approach for organizations considering DeepSeek R2 adoption:
               </p>

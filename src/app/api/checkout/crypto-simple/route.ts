@@ -264,10 +264,10 @@ export async function POST(request: NextRequest) {
           'You will receive email confirmation once verified'
         ],
         warnings: [
-          '⚠️ Send ONLY ' + body.cryptoCurrency.toUpperCase() + ' to this address',
-          '⚠️ Sending wrong currency will result in permanent loss',
-          '⚠️ Send exact amount - partial payments may not be processed',
-          '⚠️ Save your transaction hash for reference'
+          '⚠ Send ONLY ' + body.cryptoCurrency.toUpperCase() + ' to this address',
+          '⚠ Sending wrong currency will result in permanent loss',
+          '⚠ Send exact amount - partial payments may not be processed',
+          '⚠ Save your transaction hash for reference'
         ],
         technicalInfo: {
           network: cryptoConfig.network,

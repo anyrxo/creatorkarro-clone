@@ -166,9 +166,9 @@ export async function POST(request: NextRequest) {
     }
     
     console.log(`🔗 Deploying Link Wheel: ${wheelName}`)
-    console.log(`🎯 Money Site: ${moneysite}`)
+    console.log(` Money Site: ${moneysite}`)
     console.log(`🔑 Keywords: ${targetKeywords.join(', ')}`)
-    console.log(`🏗️ Type: ${wheelType}`)
+    console.log(`🏗 Type: ${wheelType}`)
     
     let wheel
     

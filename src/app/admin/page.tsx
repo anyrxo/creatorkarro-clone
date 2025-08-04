@@ -602,7 +602,7 @@ export default function AdminDashboard() {
                     onClick={() => window.open('/admin/expanded', '_blank')}
                     className="bg-purple-600 hover:bg-purple-700 w-full"
                   >
-                    🚀 Access Complete Admin Dashboard
+                     Access Complete Admin Dashboard
                   </Button>
                 </div>
               </CardContent>

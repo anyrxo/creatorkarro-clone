@@ -45,7 +45,7 @@ export default function CTA({ cta, countryCode, urgency }: CTAProps) {
         
         <div className="mt-12 p-6 bg-white/10 backdrop-blur-sm rounded-lg">
           <p className="text-purple-200 text-sm">
-            ⚠️ Warning: Due to high demand in {countryCode}, we may need to close registration at any time. 
+            ⚠ Warning: Due to high demand in {countryCode}, we may need to close registration at any time. 
             The current special price is only guaranteed for the next 24 hours.
           </p>
         </div>

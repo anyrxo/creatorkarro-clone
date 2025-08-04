@@ -505,8 +505,8 @@ export class PBNQuickDeployEngine {
       linkVelocity?: 'slow' | 'medium' | 'fast'
     } = {}
   ): Promise<PBNNetwork> {
-    console.log(`🚀 Deploying PBN Network: ${networkName}`)
-    console.log(`🎯 Money Site: ${moneysite.domain}`)
+    console.log(` Deploying PBN Network: ${networkName}`)
+    console.log(` Money Site: ${moneysite.domain}`)
     
     const {
       networkSize = 8,
@@ -527,7 +527,7 @@ export class PBNQuickDeployEngine {
     
     // Calculate diversification metrics
     const diversification = this.calculateDiversification(selectedDomains)
-    console.log(`🔍 Diversification Score: ${diversification.score}/100`)
+    console.log(` Diversification Score: ${diversification.score}/100`)
     
     // Build linking matrix
     const linkingMatrix = this.buildLinkingMatrix(selectedDomains, moneysite, linkVelocity)
@@ -535,7 +535,7 @@ export class PBNQuickDeployEngine {
     
     // Generate content strategy
     const contentStrategy = this.generateContentStrategy(selectedDomains, linkingMatrix)
-    console.log(`📝 Content Strategy: ${contentStrategy.totalPosts} posts planned`)
+    console.log(` Content Strategy: ${contentStrategy.totalPosts} posts planned`)
     
     const network: PBNNetwork = {
       id: `pbn-network-${Date.now()}`,
@@ -557,14 +557,14 @@ export class PBNQuickDeployEngine {
     
     // Analyze footprint risk
     const footprint = this.analyzeFootprint(network)
-    console.log(`⚠️ Risk Level: ${footprint.riskLevel.toUpperCase()}`)
-    console.log(`🛡️ Diversification Score: ${footprint.diversificationScore}/100`)
+    console.log(`⚠ Risk Level: ${footprint.riskLevel.toUpperCase()}`)
+    console.log(`🛡 Diversification Score: ${footprint.diversificationScore}/100`)
     
-    console.log(`\n🎯 Network Deployment Complete:`)
-    console.log(`📊 Total Authority: ${network.totalAuthority}`)
+    console.log(`\n Network Deployment Complete:`)
+    console.log(` Total Authority: ${network.totalAuthority}`)
     console.log(`🔗 Money Links: ${linkingMatrix.moneyLinks}`)
-    console.log(`📈 Projected Monthly Traffic: +${this.calculateTrafficProjection(network)}`)
-    console.log(`💰 Estimated Investment: $${this.calculateInvestment(network)}`)
+    console.log(` Projected Monthly Traffic: +${this.calculateTrafficProjection(network)}`)
+    console.log(` Estimated Investment: $${this.calculateInvestment(network)}`)
     
     return network
   }

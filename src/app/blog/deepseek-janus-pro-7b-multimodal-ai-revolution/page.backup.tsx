@@ -83,7 +83,7 @@ export default function DeepSeekJanusPage() {
         <article className="prose prose-lg max-w-none">
           {/* Introduction */}
           <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-xl border-l-4 border-purple-400 mb-8">
-            <h2 className="text-2xl font-bold text-gray-300 mb-4">🚀 The Multimodal AI Revolution Has Arrived</h2>
+            <h2 className="text-2xl font-bold text-gray-300 mb-4"> The Multimodal AI Revolution Has Arrived</h2>
             <p className="text-gray-700 mb-4">
               In the rapidly evolving landscape of <strong>multimodal AI</strong>, DeepSeek has just released what might be the most significant breakthrough since GPT-4 Vision. <strong>DeepSeek Janus Pro 7B</strong> isn't just another incremental improvement—it represents a fundamental reimagining of how AI systems should handle both visual understanding and image generation.
             </p>
@@ -97,7 +97,7 @@ export default function DeepSeekJanusPage() {
             <h2 className="text-3xl font-bold text-gray-300 mb-6">The Architectural Revolution: Why Decoupled Visual Encoding Changes Everything</h2>
             
             <div className="bg-gray-900 p-8 rounded-xl shadow-lg mb-8">
-              <h3 className="text-2xl font-bold text-purple-600 mb-4">🏗️ Breaking Free from Single-Encoder Limitations</h3>
+              <h3 className="text-2xl font-bold text-purple-600 mb-4">🏗 Breaking Free from Single-Encoder Limitations</h3>
               <p className="text-gray-700 mb-4">
                 Traditional <strong>multimodal AI models</strong> have been constrained by a fundamental architectural flaw: using a single visual encoder for both understanding and generation tasks. This creates inherent trade-offs where optimizing for one capability often diminishes the other.
               </p>
@@ -148,7 +148,7 @@ export default function DeepSeekJanusPage() {
             <div className="space-y-8">
               {/* Janus Pro 7B */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg border-l-4 border-purple-500">
-                <h3 className="text-2xl font-bold text-purple-600 mb-4">🏆 Janus Pro 7B - The Flagship Model</h3>
+                <h3 className="text-2xl font-bold text-purple-600 mb-4"> Janus Pro 7B - The Flagship Model</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-bold text-gray-800 mb-3">Core Specifications</h4>
@@ -179,7 +179,7 @@ export default function DeepSeekJanusPage() {
 
               {/* Janus Pro 1B */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg border-l-4 border-blue-500">
-                <h3 className="text-2xl font-bold text-blue-600 mb-4">⚡ Janus Pro 1B - The Efficiency Champion</h3>
+                <h3 className="text-2xl font-bold text-blue-600 mb-4"> Janus Pro 1B - The Efficiency Champion</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-bold text-gray-800 mb-3">Key Features</h4>
@@ -204,7 +204,7 @@ export default function DeepSeekJanusPage() {
 
               {/* Janus 1.3B */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg border-l-4 border-green-500">
-                <h3 className="text-2xl font-bold text-green-600 mb-4">🚀 Janus 1.3B - The Specialized Solution</h3>
+                <h3 className="text-2xl font-bold text-green-600 mb-4"> Janus 1.3B - The Specialized Solution</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-bold text-gray-800 mb-3">Design Philosophy</h4>
@@ -234,7 +234,7 @@ export default function DeepSeekJanusPage() {
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Benchmark Domination: How Janus Pro 7B Outperforms the Competition</h2>
             
             <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-indigo-600 mb-4">📊 Comprehensive Performance Analysis</h3>
+              <h3 className="text-2xl font-bold text-indigo-600 mb-4"> Comprehensive Performance Analysis</h3>
               <p className="text-gray-700 mb-6">
                 The benchmark results for <strong>DeepSeek Janus Pro 7B</strong> reveal a model that doesn't just compete with industry leaders—it systematically outperforms them across key metrics. Here's my detailed analysis of how it stacks up against the competition:
               </p>
@@ -327,7 +327,7 @@ export default function DeepSeekJanusPage() {
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-purple-50 p-6 rounded-lg">
-                    <h4 className="font-bold text-purple-800 mb-3">🎭 Meme Comprehension</h4>
+                    <h4 className="font-bold text-purple-800 mb-3"> Meme Comprehension</h4>
                     <p className="text-gray-700 mb-3">
                       The model accurately interprets internet memes, understanding both visual elements and cultural context. This includes recognizing popular meme formats, understanding humor patterns, and identifying referential content.
                     </p>
@@ -356,7 +356,7 @@ export default function DeepSeekJanusPage() {
 
               {/* Image Generation Excellence */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-bold text-green-600 mb-4">🎨 High-Quality Image Generation</h3>
+                <h3 className="text-2xl font-bold text-green-600 mb-4"> High-Quality Image Generation</h3>
                 <p className="text-gray-700 mb-4">
                   The generation capabilities of Janus Pro 7B represent a significant leap forward in <strong>AI image generation</strong>. The model produces remarkably detailed and accurate visuals across diverse categories:
                 </p>
@@ -397,7 +397,7 @@ export default function DeepSeekJanusPage() {
             <h2 className="text-3xl font-bold text-gray-300 mb-6">Technical Implementation: Bringing Janus Pro 7B to Your Infrastructure</h2>
             
             <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-blue-600 mb-4">🔧 Deployment Options & Requirements</h3>
+              <h3 className="text-2xl font-bold text-blue-600 mb-4"> Deployment Options & Requirements</h3>
               <p className="text-gray-700 mb-6">
                 One of the most appealing aspects of <strong>DeepSeek Janus Pro 7B</strong> is its accessibility for local deployment and integration. Despite its powerful capabilities, the model is designed with practical implementation in mind.
               </p>
@@ -587,7 +587,7 @@ export default function DeepSeekJanusPage() {
 
               {/* Creative Industries */}
               <div className="bg-gray-900 p-8 rounded-xl shadow-lg">
-                <h3 className="text-2xl font-bold text-purple-600 mb-4">🎨 Creative Industries</h3>
+                <h3 className="text-2xl font-bold text-purple-600 mb-4"> Creative Industries</h3>
                 <ul className="space-y-4">
                   <li className="flex gap-3">
                     <span className="text-purple-600 font-bold">•</span>
@@ -615,7 +615,7 @@ export default function DeepSeekJanusPage() {
             </div>
 
             <div className="bg-gradient-to-r from-teal-50 to-blue-50 p-8 rounded-xl mt-8">
-              <h3 className="text-2xl font-bold text-teal-600 mb-4">🎯 High-Impact Use Cases</h3>
+              <h3 className="text-2xl font-bold text-teal-600 mb-4"> High-Impact Use Cases</h3>
               <p className="text-gray-700 mb-4">
                 Based on my analysis, Janus Pro 7B shows exceptional promise in applications requiring:
               </p>

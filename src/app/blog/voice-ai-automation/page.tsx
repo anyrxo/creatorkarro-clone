@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S 301 REDIRECT - VOICE AI AUTOMATION CONSOLIDATION
+// ⚔ ORYANA'S 301 REDIRECT - VOICE AI AUTOMATION CONSOLIDATION
 // Redirects voice AI automation traffic to our comprehensive guide
 // Voice AI is covered as part of our complete automation strategy
 

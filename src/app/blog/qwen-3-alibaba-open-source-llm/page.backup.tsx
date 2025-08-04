@@ -666,22 +666,22 @@ response = model.generate(
             
             <div className="space-y-4 my-8">
               <div className="bg-zinc-800 rounded-lg p-4">
-                <h4 className="font-semibold mb-2">🏆 Competitive Programming: Qwen 3</h4>
+                <h4 className="font-semibold mb-2"> Competitive Programming: Qwen 3</h4>
                 <p className="text-sm">Superior algorithm generation and optimization</p>
               </div>
               
               <div className="bg-zinc-800 rounded-lg p-4">
-                <h4 className="font-semibold mb-2">🏆 Creative Writing: GPT-4</h4>
+                <h4 className="font-semibold mb-2"> Creative Writing: GPT-4</h4>
                 <p className="text-sm">More nuanced and engaging narrative generation</p>
               </div>
               
               <div className="bg-zinc-800 rounded-lg p-4">
-                <h4 className="font-semibold mb-2">🏆 Open Research: Qwen 3</h4>
+                <h4 className="font-semibold mb-2"> Open Research: Qwen 3</h4>
                 <p className="text-sm">Fully open weights enable research flexibility</p>
               </div>
               
               <div className="bg-zinc-800 rounded-lg p-4">
-                <h4 className="font-semibold mb-2">🏆 Enterprise Support: GPT-4</h4>
+                <h4 className="font-semibold mb-2"> Enterprise Support: GPT-4</h4>
                 <p className="text-sm">Better SLAs and commercial backing</p>
               </div>
             </div>

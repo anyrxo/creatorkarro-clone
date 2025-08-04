@@ -193,7 +193,7 @@ export default function SaaSAutomationSystemsPage() {
                   </ul>
                 </div>
                 <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4">
-                  <div className="font-semibold text-yellow-400 mb-2">💰 Cost Savings:</div>
+                  <div className="font-semibold text-yellow-400 mb-2"> Cost Savings:</div>
                   <p className="text-gray-300">Save $50K-200K/year on support staff while providing 24/7 instant responses</p>
                 </div>
               </div><div className="bg-gray-800 rounded-lg p-8 mb-8 hover:shadow-2xl transition-shadow">

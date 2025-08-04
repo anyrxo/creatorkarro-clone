@@ -187,7 +187,7 @@ export default function ViralCarouselGuide() {
           
             <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-purple-400 mb-4">🎯 The List Post</h3>
+                    <h3 className="text-xl font-bold text-purple-400 mb-4"> The List Post</h3>
                     <div className="bg-zinc-900 rounded-lg p-4 mb-4">
                         <p className="text-sm text-gray-300">
                             <strong>Slide 1:</strong>"7 AI Tools Making People $5K+/Month"<br/>
@@ -202,7 +202,7 @@ export default function ViralCarouselGuide() {
                 </div>
 
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-blue-400 mb-4">📈 The Transformation</h3>
+                    <h3 className="text-xl font-bold text-blue-400 mb-4"> The Transformation</h3>
                     <div className="bg-zinc-900 rounded-lg p-4 mb-4">
                         <p className="text-sm text-gray-300">
                             <strong>Slide 1:</strong>"0 to 100K followers (my journey)"<br/>
@@ -235,7 +235,7 @@ export default function ViralCarouselGuide() {
                 </div>
 
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-yellow-400 mb-4">💡 The Comparison</h3>
+                    <h3 className="text-xl font-bold text-yellow-400 mb-4"> The Comparison</h3>
                     <div className="bg-zinc-900 rounded-lg p-4 mb-4">
                         <p className="text-sm text-gray-300">
                             <strong>Slide 1:</strong>"Freelancer vs Agency Owner"<br/>
@@ -263,7 +263,7 @@ export default function ViralCarouselGuide() {
           
             <div className="space-y-6">
                 <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-purple-400 mb-3">🎨 Design Hacks</h3>
+                    <h3 className="text-xl font-bold text-purple-400 mb-3"> Design Hacks</h3>
                     <ul className="space-y-2 text-gray-300">
                         <li>• Use 1080x1350px for maximum screen real estate</li>
                         <li>• Stick to 2-3 colors max (brand colors)</li>
@@ -275,7 +275,7 @@ export default function ViralCarouselGuide() {
                 </div>
 
                 <div className="bg-gradient-to-r from-blue-500/10 to-green-500/10 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-blue-400 mb-3">📊 Algorithm Hacks</h3>
+                    <h3 className="text-xl font-bold text-blue-400 mb-3"> Algorithm Hacks</h3>
                     <ul className="space-y-2 text-gray-300">
                         <li>• Post between 6-9 AM or 5-7 PM (audience timezone)</li>
                         <li>• Use 3-5 niche hashtags in comments</li>
@@ -287,7 +287,7 @@ export default function ViralCarouselGuide() {
                 </div>
 
                 <div className="bg-gradient-to-r from-green-500/10 to-yellow-500/10 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-green-400 mb-3">💰 Conversion Hacks</h3>
+                    <h3 className="text-xl font-bold text-green-400 mb-3"> Conversion Hacks</h3>
                     <ul className="space-y-2 text-gray-300">
                         <li>• Use"Comment [word]" for 10x more engagement</li>
                         <li>• Add testimonials on slides 6-7</li>
@@ -303,17 +303,17 @@ export default function ViralCarouselGuide() {
                 <h3 className="text-2xl font-bold text-white mb-4">The Million-View Formula</h3>
                 <div className="grid md:grid-cols-3 gap-6 text-center">
                     <div>
-                        <div className="text-3xl mb-2">🎯</div>
+                        <div className="text-3xl mb-2"></div>
                         <h4 className="font-semibold text-white mb-2">Hook Power</h4>
                         <p className="text-gray-400">40% of success</p>
                     </div>
                     <div>
-                        <div className="text-3xl mb-2">💎</div>
+                        <div className="text-3xl mb-2"></div>
                         <h4 className="font-semibold text-white mb-2">Value Density</h4>
                         <p className="text-gray-400">35% of success</p>
                     </div>
                     <div>
-                        <div className="text-3xl mb-2">🎨</div>
+                        <div className="text-3xl mb-2"></div>
                         <h4 className="font-semibold text-white mb-2">Visual Appeal</h4>
                         <p className="text-gray-400">25% of success</p>
                     </div>

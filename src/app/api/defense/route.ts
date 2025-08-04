@@ -206,7 +206,7 @@ export async function POST(request: NextRequest) {
       )
     }
     
-    console.log(`🛡️ Deploying Negative SEO Defense System`)
+    console.log(`🛡 Deploying Negative SEO Defense System`)
     console.log(`🌐 Domain: ${domain}`)
     console.log(`🔒 Protection Level: ${protectionLevel}`)
     
@@ -240,7 +240,7 @@ export async function POST(request: NextRequest) {
     
     // Perform initial threat scan
     const initialThreats = await defenseEngine.detectThreats(defenseSystem.id)
-    console.log(`🔍 Initial Threat Scan: ${initialThreats.length} threats detected`)
+    console.log(` Initial Threat Scan: ${initialThreats.length} threats detected`)
     
     // Calculate deployment metrics
     const deploymentMetrics = {

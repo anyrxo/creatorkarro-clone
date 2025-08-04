@@ -268,12 +268,12 @@ export default function DatabaseAutomationSystems() {
                   <p className="text-gray-400 mb-4">Predictive monitoring that prevents issues before they occur.</p>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">📊</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">Performance Metrics</h4>
                       <p className="text-sm text-gray-400">Real-time query performance</p>
                     </div>
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">🔍</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">Anomaly Detection</h4>
                       <p className="text-sm text-gray-400">AI-powered issue prediction</p>
                     </div>
@@ -331,7 +331,7 @@ export default function DatabaseAutomationSystems() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-zinc-900 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-blue-400 mb-4">🛠️ Core Automation Tools</h3>
+              <h3 className="text-xl font-bold text-blue-400 mb-4"> Core Automation Tools</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-300">Terraform</span>
@@ -357,7 +357,7 @@ export default function DatabaseAutomationSystems() {
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-purple-400 mb-4">📊 Monitoring & Analytics</h3>
+              <h3 className="text-xl font-bold text-purple-400 mb-4"> Monitoring & Analytics</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-300">Datadog/New Relic</span>

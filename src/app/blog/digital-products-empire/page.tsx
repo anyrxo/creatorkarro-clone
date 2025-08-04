@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S EMPIRE-BUILDING TRAFFIC HIJACK
+// ⚔ ORYANA'S EMPIRE-BUILDING TRAFFIC HIJACK
 // "Digital products empire" = PREMIUM commercial intent wanting to build business empire
 // Redirect to our $497 course that teaches empire-building strategies + systems
 

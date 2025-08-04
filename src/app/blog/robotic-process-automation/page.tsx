@@ -198,14 +198,14 @@ export default function RoboticProcessAutomation() {
                   <p className="text-gray-400 mb-4">Automate entire customer onboarding from start to finish.</p>
                   <div className="bg-zinc-900 rounded-lg p-4 space-y-3">
                     <div className="flex items-start gap-3">
-                      <span className="text-orange-400">📋</span>
+                      <span className="text-orange-400"></span>
                       <div>
                         <span className="text-white font-semibold">KYC Verification:</span>
                         <span className="text-gray-400"> Automated document verification and background checks</span>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="text-orange-400">📊</span>
+                      <span className="text-orange-400"></span>
                       <div>
                         <span className="text-white font-semibold">Account Setup:</span>
                         <span className="text-gray-400"> Create accounts across multiple systems simultaneously</span>
@@ -219,7 +219,7 @@ export default function RoboticProcessAutomation() {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="text-orange-400">🔄</span>
+                      <span className="text-orange-400"></span>
                       <div>
                         <span className="text-white font-semibold">Integration:</span>
                         <span className="text-gray-400"> Sync data across CRM, ERP, and support systems</span>
@@ -238,17 +238,17 @@ export default function RoboticProcessAutomation() {
                   <p className="text-gray-400 mb-4">Transform HR operations with intelligent automation.</p>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">🎯</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">Recruitment</h4>
                       <p className="text-sm text-gray-400">Resume screening & interview scheduling</p>
                     </div>
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">💰</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">Payroll</h4>
                       <p className="text-sm text-gray-400">Automated calculations & disbursements</p>
                     </div>
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">📝</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">Leave Management</h4>
                       <p className="text-sm text-gray-400">Request processing & balance tracking</p>
                     </div>
@@ -670,7 +670,7 @@ export default function RoboticProcessAutomation() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/20 border border-orange-500/30 mb-6">
-              <span className="text-orange-400 text-sm font-semibold">🤖 FROM RPA TO INTELLIGENT AUTOMATION</span>
+              <span className="text-orange-400 text-sm font-semibold"> FROM RPA TO INTELLIGENT AUTOMATION</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -764,7 +764,7 @@ export default function RoboticProcessAutomation() {
             </Link>
             
             <div className="mt-6 text-sm text-gray-400">
-              ⭐ 4.9/5 from 2,400+ automation professionals | 🔒 30-day money-back guarantee | 🤖 Replace expensive RPA tools
+               4.9/5 from 2,400+ automation professionals | 🔒 30-day money-back guarantee |  Replace expensive RPA tools
             </div>
           </div>
         </div>

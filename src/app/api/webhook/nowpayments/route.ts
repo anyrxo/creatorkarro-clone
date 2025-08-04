@@ -133,7 +133,7 @@ async function handlePaymentSuccess(webhook: NOWPaymentsWebhook) {
 }
 
 async function handlePaymentConfirmed(webhook: NOWPaymentsWebhook) {
-  console.log(`🔄 Payment ${webhook.payment_id} confirmed, processing...`);
+  console.log(` Payment ${webhook.payment_id} confirmed, processing...`);
   
   // In a real implementation:
   // 1. Update payment status to "processing"
@@ -142,7 +142,7 @@ async function handlePaymentConfirmed(webhook: NOWPaymentsWebhook) {
 }
 
 async function handlePartialPayment(webhook: NOWPaymentsWebhook) {
-  console.log(`⚠️  Partial payment received for ${webhook.payment_id}`);
+  console.log(`⚠  Partial payment received for ${webhook.payment_id}`);
   
   const amountPaid = webhook.actually_paid;
   const amountRequired = webhook.pay_amount;
@@ -175,7 +175,7 @@ async function handlePaymentFailure(webhook: NOWPaymentsWebhook) {
 }
 
 async function handlePaymentRefund(webhook: NOWPaymentsWebhook) {
-  console.log(`🔄 Payment ${webhook.payment_id} refunded`);
+  console.log(` Payment ${webhook.payment_id} refunded`);
   
   // In a real implementation:
   // 1. Update order status to refunded
@@ -196,9 +196,9 @@ async function notifyAdmin(notification: any) {
   
   // Mock Slack notification
   if (notification.type === 'payment_success') {
-    console.log(`💰 New crypto payment: ${notification.amount} ${notification.currency} for ${notification.product}`);
+    console.log(` New crypto payment: ${notification.amount} ${notification.currency} for ${notification.product}`);
   } else if (notification.type === 'payment_failed') {
-    console.log(`⚠️  Failed crypto payment: ${notification.orderId} - ${notification.status}`);
+    console.log(`⚠  Failed crypto payment: ${notification.orderId} - ${notification.status}`);
   }
 }
 

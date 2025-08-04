@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S 301 REDIRECT - DEEPAGENT GOD-TIER CONSOLIDATION
+// ⚔ ORYANA'S 301 REDIRECT - DEEPAGENT GOD-TIER CONSOLIDATION
 // Redirects DeepAgent automation traffic to comprehensive guide
 // Advanced AI agent strategies covered in our authority pillar
 

@@ -240,7 +240,7 @@ export default function ExpandedAdminDashboard() {
       {
         id: 'camp_1',
         name: 'Instagram Growth Tips',
-        subject: '🔥 The Instagram Algorithm Secret That Changed Everything',
+        subject: ' The Instagram Algorithm Secret That Changed Everything',
         status: 'sent',
         recipients: 15847,
         openRate: 34.2,
@@ -250,7 +250,7 @@ export default function ExpandedAdminDashboard() {
       {
         id: 'camp_2',
         name: 'New Course Launch',
-        subject: '🚀 NEW: AI Automation Course (50% OFF)',
+        subject: ' NEW: AI Automation Course (50% OFF)',
         status: 'sent',
         recipients: 18234,
         openRate: 41.3,

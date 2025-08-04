@@ -383,7 +383,7 @@ export default function CryptoCheckout({ isOpen, onClose, product }: CryptoCheck
 
           {/* Important Warnings */}
           <div className="bg-red-500/10 border border-red-500 rounded-xl p-4">
-            <h4 className="font-bold text-red-400 mb-2">⚠️ Important Instructions</h4>
+            <h4 className="font-bold text-red-400 mb-2">⚠ Important Instructions</h4>
             <ul className="text-sm text-gray-300 space-y-1">
               <li>• Send ONLY {paymentDetails.cryptoCurrency} to this address</li>
               <li>• Send the EXACT amount shown above</li>

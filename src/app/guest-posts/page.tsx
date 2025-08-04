@@ -45,7 +45,7 @@ export default async function GuestPostsPage() {
       <section className="bg-gradient-to-r from-blue-900 to-gray-900 py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center space-x-3 mb-4">
-            <span className="text-4xl">📝</span>
+            <span className="text-4xl"></span>
             <h1 className="text-4xl font-bold">
               Guest Post Automation Dashboard
             </h1>
@@ -249,7 +249,7 @@ export default async function GuestPostsPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-blue-900 bg-opacity-20 border border-blue-500 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-2xl">👨‍💼</span>
+                <span className="text-2xl">👨‍</span>
                 <h3 className="text-xl font-bold text-blue-400">Authority Expert</h3>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm">
@@ -267,7 +267,7 @@ export default async function GuestPostsPage() {
             
             <div className="bg-green-900 bg-opacity-20 border border-green-500 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-2xl">📊</span>
+                <span className="text-2xl"></span>
                 <h3 className="text-xl font-bold text-green-400">Data-Driven</h3>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm">
@@ -285,7 +285,7 @@ export default async function GuestPostsPage() {
             
             <div className="bg-yellow-900 bg-opacity-20 border border-yellow-500 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-2xl">🎯</span>
+                <span className="text-2xl"></span>
                 <h3 className="text-xl font-bold text-yellow-400">Problem-Solution</h3>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm">

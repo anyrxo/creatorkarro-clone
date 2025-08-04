@@ -146,7 +146,7 @@ export function middleware(request: NextRequest) {
   
   // Check rate limiting
   if (isRateLimited(ip)) {
-    console.log(`⏱️ Rate limited: ${ip} - ${pathname}`);
+    console.log(`⏱ Rate limited: ${ip} - ${pathname}`);
     return new NextResponse('Too Many Requests', { 
       status: 429,
       headers: {
@@ -160,7 +160,7 @@ export function middleware(request: NextRequest) {
   // Bot detection
   const botDetection = detectBotPattern(request);
   if (botDetection.isBot) {
-    console.log(`🤖 Bot detected: ${ip} - ${userAgent.substring(0, 50)} - ${botDetection.reason}`);
+    console.log(` Bot detected: ${ip} - ${userAgent.substring(0, 50)} - ${botDetection.reason}`);
     
     // Log the violation
     try {
@@ -230,7 +230,7 @@ export function middleware(request: NextRequest) {
   ];
   
   if (suspiciousPaths.some(path => pathname.includes(path)) && pathname !== '/robots.txt') {
-    console.log(`🔍 Suspicious path accessed: ${ip} - ${pathname}`);
+    console.log(` Suspicious path accessed: ${ip} - ${pathname}`);
     
     // Redirect to bot trap
     return NextResponse.redirect(new URL('/api/bot-trap', request.url));

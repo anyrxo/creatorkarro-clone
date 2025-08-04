@@ -250,7 +250,7 @@ export default async function ParasitePage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-red-900 bg-opacity-20 border border-red-500 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-2xl">⚡</span>
+                <span className="text-2xl"></span>
                 <h3 className="text-xl font-bold text-red-400">Aggressive Tech</h3>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm">
@@ -268,7 +268,7 @@ export default async function ParasitePage() {
             
             <div className="bg-blue-900 bg-opacity-20 border border-blue-500 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-2xl">👥</span>
+                <span className="text-2xl"></span>
                 <h3 className="text-xl font-bold text-blue-400">Social Authority</h3>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm">
@@ -286,7 +286,7 @@ export default async function ParasitePage() {
             
             <div className="bg-green-900 bg-opacity-20 border border-green-500 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-2xl">📚</span>
+                <span className="text-2xl"></span>
                 <h3 className="text-xl font-bold text-green-400">Educational</h3>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm">
@@ -385,7 +385,7 @@ export default async function ParasitePage() {
             </div>
             
             <div className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-red-400 mb-3">⚠️ Risk Mitigation</h3>
+              <h3 className="text-lg font-semibold text-red-400 mb-3">⚠ Risk Mitigation</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Account diversification across platforms</li>
                 <li>• Content variation to avoid footprints</li>
@@ -398,7 +398,7 @@ export default async function ParasitePage() {
           </div>
           
           <div className="mt-8 p-6 bg-yellow-900 bg-opacity-20 border border-yellow-500 rounded-lg">
-            <h3 className="text-lg font-semibold text-yellow-400 mb-3">⚡ Expected Results</h3>
+            <h3 className="text-lg font-semibold text-yellow-400 mb-3"> Expected Results</h3>
             <div className="grid md:grid-cols-4 gap-4 text-center">
               <div>
                 <div className="text-2xl font-bold text-green-400">+{Math.round(totalTraffic * 0.3)}</div>

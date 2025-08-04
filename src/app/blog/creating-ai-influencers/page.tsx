@@ -265,7 +265,7 @@ export default function CreatingAIInfluencers() {
           
             <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-pink-400 mb-4">🎨 AI Generation Tools</h3>
+                    <h3 className="text-xl font-bold text-pink-400 mb-4"> AI Generation Tools</h3>
                     <div className="space-y-3">
                         <div className="flex justify-between">
                             <span className="text-gray-300">Stable Diffusion (Local)</span>
@@ -287,7 +287,7 @@ export default function CreatingAIInfluencers() {
                 </div>
 
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-blue-400 mb-4">🤖 Automation Tools</h3>
+                    <h3 className="text-xl font-bold text-blue-400 mb-4"> Automation Tools</h3>
                     <div className="space-y-3">
                         <div className="flex justify-between">
                             <span className="text-gray-300">ChatGPT Plus</span>
@@ -325,7 +325,7 @@ export default function CreatingAIInfluencers() {
           
             <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-zinc-900 rounded-xl p-6">
-                    <div className="text-2xl mb-3">🎯</div>
+                    <div className="text-2xl mb-3"></div>
                     <h3 className="text-xl font-bold text-white mb-2">Consistency is Everything</h3>
                     <p className="text-gray-400">
                 Use the same LoRA model, lighting setup, and style preferences. Even small variations break the illusion.
@@ -341,7 +341,7 @@ export default function CreatingAIInfluencers() {
                 </div>
             
                 <div className="bg-zinc-900 rounded-xl p-6">
-                    <div className="text-2xl mb-3">🌟</div>
+                    <div className="text-2xl mb-3"></div>
                     <h3 className="text-xl font-bold text-white mb-2">Quality Over Quantity</h3>
                     <p className="text-gray-400">
                 One high-quality AI influencer beats 10 mediocre ones. Perfect one before scaling.

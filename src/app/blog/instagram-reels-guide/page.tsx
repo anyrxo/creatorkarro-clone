@@ -122,7 +122,7 @@ export default function InstagramReelsGuide() {
                 </p>
 
                 <div className="bg-purple-500/10 border border-purple-500/20 rounded-2xl p-8 mb-8">
-                    <h2 className="text-2xl font-bold text-purple-400 mb-4">🎯 Why Reels Dominate Everything</h2>
+                    <h2 className="text-2xl font-bold text-purple-400 mb-4"> Why Reels Dominate Everything</h2>
                     <ul className="space-y-3 text-gray-300">
                         <li>• <span className="text-white font-semibold">5.4x more reach</span> than regular posts</li>
                         <li>• <span className="text-white font-semibold">67% more engagement</span> than carousel posts</li>
@@ -327,7 +327,7 @@ export default function InstagramReelsGuide() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <div className="text-3xl mb-4">😂</div>
+                <div className="text-3xl mb-4"></div>
                 <h3 className="text-xl font-bold text-pink-400 mb-3">Entertainment</h3>
                 <p className="text-gray-400 mb-4">Relatable, funny, trending</p>
                 <ul className="space-y-1 text-sm text-gray-300">
@@ -339,7 +339,7 @@ export default function InstagramReelsGuide() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <div className="text-3xl mb-4">💡</div>
+                <div className="text-3xl mb-4"></div>
                 <h3 className="text-xl font-bold text-blue-400 mb-3">Inspirational</h3>
                 <p className="text-gray-400 mb-4">Motivate and inspire action</p>
                 <ul className="space-y-1 text-sm text-gray-300">
@@ -363,7 +363,7 @@ export default function InstagramReelsGuide() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <div className="text-3xl mb-4">🔥</div>
+                <div className="text-3xl mb-4"></div>
                 <h3 className="text-xl font-bold text-yellow-400 mb-3">Controversial</h3>
                 <p className="text-gray-400 mb-4">Hot takes that spark debate</p>
                 <ul className="space-y-1 text-sm text-gray-300">
@@ -419,7 +419,7 @@ export default function InstagramReelsGuide() {
           
         <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">📱 Editing Apps</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Editing Apps</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• <span className="text-white">CapCut:</span> Best free editor</li>
                     <li>• <span className="text-white">InShot:</span> Quick edits</li>
@@ -439,7 +439,7 @@ export default function InstagramReelsGuide() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">📊 Analytics</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> Analytics</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• <span className="text-white">Insights:</span> Creator Studio</li>
                     <li>• <span className="text-white">Competitors:</span> Social Blade</li>

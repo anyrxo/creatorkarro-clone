@@ -163,9 +163,9 @@ export default function BlogPage() {
                                 {post.category}
                               </span>
                               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full text-xs font-medium shadow-lg animate-pulse flex items-center gap-1">
-                                <span className="text-xs">✨</span>
+                                <span className="text-xs"></span>
                                 <span className="hidden sm:inline">Featured</span>
-                                <span className="sm:hidden">✨</span>
+                                <span className="sm:hidden"></span>
                               </span>
                             </div>
 
@@ -286,7 +286,7 @@ export default function BlogPage() {
                                   <div className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border border-yellow-500/30 backdrop-blur-sm">
                                     <TrendingUp className="w-3 h-3 text-yellow-400 flex-shrink-0" />
                                     <span className="text-xs text-yellow-300 font-semibold hidden sm:inline">FEATURED</span>
-                                    <span className="text-xs text-yellow-300 sm:hidden">✨</span>
+                                    <span className="text-xs text-yellow-300 sm:hidden"></span>
                                   </div>
                                 )}
                               </div>

@@ -101,15 +101,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <div className="text-gray-300 text-sm">Fundamental principles and best practices</div>
                 </div>
                 <div className="bg-gray-900 rounded-lg p-4">
-                  <div className="text-purple-400 font-semibold mb-2">🚀 Implementation</div>
+                  <div className="text-purple-400 font-semibold mb-2"> Implementation</div>
                   <div className="text-gray-300 text-sm">Step-by-step implementation guide</div>
                 </div>
                 <div className="bg-gray-900 rounded-lg p-4">
-                  <div className="text-green-400 font-semibold mb-2">📊 Real Examples</div>
+                  <div className="text-green-400 font-semibold mb-2"> Real Examples</div>
                   <div className="text-gray-300 text-sm">Case studies and practical examples</div>
                 </div>
                 <div className="bg-gray-900 rounded-lg p-4">
-                  <div className="text-yellow-400 font-semibold mb-2">⚡ Pro Tips</div>
+                  <div className="text-yellow-400 font-semibold mb-2"> Pro Tips</div>
                   <div className="text-gray-300 text-sm">Advanced techniques and optimizations</div>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="bg-blue-600/10 border-l-4 border-blue-600 rounded-r-lg p-6 mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-sm font-bold">💡</span>
+                  <span className="text-white text-sm font-bold"></span>
                 </div>
                 <h3 className="text-blue-300 font-semibold">Pro Tip</h3>
               </div>
@@ -209,7 +209,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <h2 className="text-3xl font-bold text-white mb-6">Common Mistakes to Avoid</h2>
             
             <div className="bg-red-600/10 border border-red-600/20 rounded-xl p-6 mb-8">
-              <h3 className="text-red-300 font-semibold mb-4">⚠️ Warning: Avoid These Pitfalls</h3>
+              <h3 className="text-red-300 font-semibold mb-4">⚠ Warning: Avoid These Pitfalls</h3>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start gap-3">
                   <span className="text-red-400">×</span>

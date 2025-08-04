@@ -35,7 +35,7 @@ export default function AIInfluencersPage() {
       {/* Hero Section */}
       <div ref={heroAnimation.elementRef}>
         <HeroSection
-          badge="🎯 LIMITED TIME OFFER: Price increasing soon"
+          badge=" LIMITED TIME OFFER: Price increasing soon"
           badgeColor="bg-yellow-600/30 text-yellow-300"
           title={<>Build Your <span className="text-pink-400">AI Influencer Empire</span> And Make <span className="text-pink-400">$10K/Month</span> Without Showing Your Face</>}
           description={<>The complete system to create, grow, and monetize <span className="text-pink-300">AI-powered virtual models</span></>}
@@ -68,42 +68,42 @@ export default function AIInfluencersPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <ProblemCard
-              icon="😰"
+              icon=""
               title="Burnout From Face-To-Camera"
               description="Constantly showing your face, maintaining appearance, and being 'on' 24/7 is exhausting and unsustainable"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-1"
             />
             <ProblemCard
-              icon="⏰"
+              icon=""
               title="Time Prison"
               description="Your income is directly tied to your time. Can't scale beyond 24 hours in a day"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-2"
             />
             <ProblemCard
-              icon="💸"
+              icon=""
               title="High Overhead Costs"
               description="Expensive equipment, editing, photoshoots, and team members eating into profits"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-3"
             />
             <ProblemCard
-              icon="🎭"
+              icon=""
               title="Privacy Invasion"
               description="Your personal life becomes public content. No boundaries between work and private life"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-4"
             />
             <ProblemCard
-              icon="📉"
+              icon=""
               title="Inconsistent Content"
               description="Bad days, sick days, vacation days = no content = no income. One person can't be everywhere"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-5"
             />
             <ProblemCard
-              icon="🔄"
+              icon=""
               title="Platform Dependency"
               description="One algorithm change or account ban can destroy years of work instantly"
               isVisible={problemAnimation.isVisible}
@@ -612,7 +612,7 @@ export default function AIInfluencersPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="text-3xl mb-3">🚀</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-lg font-bold mb-3 text-gold-400">AI Model Library</h3>
               <p className="text-gray-400 mb-3 text-sm">50+ pre-trained AI models ready to use</p>
               <div className="text-sm font-bold text-gold-400">Value: $197</div>
@@ -624,25 +624,25 @@ export default function AIInfluencersPage() {
               <div className="text-sm font-bold text-gold-400">Value: $147</div>
             </div>
             <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <div className="text-3xl mb-3">🤖</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-lg font-bold mb-3 text-gold-400">Automation Scripts</h3>
               <p className="text-gray-400 mb-3 text-sm">Complete automation toolkit</p>
               <div className="text-sm font-bold text-gold-400">Value: $127</div>
             </div>
             <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <div className="text-3xl mb-3">👥</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-lg font-bold mb-3 text-gold-400">Private Mastermind</h3>
               <p className="text-gray-400 mb-3 text-sm">Exclusive community access</p>
               <div className="text-sm font-bold text-gold-400">Value: $147</div>
             </div>
             <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <div className="text-3xl mb-3">📞</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-lg font-bold mb-3 text-gold-400">1-on-1 Strategy Call</h3>
               <p className="text-gray-400 mb-3 text-sm">Personal consultation with me</p>
               <div className="text-sm font-bold text-gold-400">Value: $197</div>
             </div>
             <div className={`bg-gradient-to-br from-gold-900/20 to-yellow-900/20 border border-gold-500/30 rounded-lg p-6 text-center card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <div className="text-3xl mb-3">⚡</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-lg font-bold mb-3 text-gold-400">Fast-Track Checklist</h3>
               <p className="text-gray-400 mb-3 text-sm">30-day implementation roadmap</p>
               <div className="text-sm font-bold text-gold-400">Value: $97</div>
@@ -754,7 +754,7 @@ export default function AIInfluencersPage() {
             <div className={`bg-gradient-to-br from-pink-900/30 to-purple-900/30 border-2 border-pink-500 rounded-2xl p-8 text-center card-hover hover-lift scroll-fade-up relative ${pricingAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <div className="bg-red-500 text-white px-4 py-2 rounded-full font-bold text-sm animate-pulse">
-                  🔥 LIMITED TIME 🔥
+                   LIMITED TIME 
                 </div>
               </div>
 
@@ -779,17 +779,17 @@ export default function AIInfluencersPage() {
               </div>
 
               <Link href="#" className="cta-button inline-block w-full text-center mb-4 btn-animate animate-glow hover-lift">
-                🚀 Secure Your Spot NOW - $197
+                 Secure Your Spot NOW - $197
               </Link>
               
               <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4 mb-4">
-                <p className="text-sm text-pink-300 font-bold">🎯 Early Bird Special - Limited Time Offer</p>
+                <p className="text-sm text-pink-300 font-bold"> Early Bird Special - Limited Time Offer</p>
                 <p className="text-xs text-gray-400 mt-1">Join 847+ students who locked in this price</p>
               </div>
 
               <div className="text-center">
                 <div className="flex items-center justify-center space-x-2 mb-2">
-                  <div className="flex text-yellow-400">{'⭐'.repeat(5)}</div>
+                  <div className="flex text-yellow-400">{''.repeat(5)}</div>
                   <span className="text-sm text-gray-400">500+ success stories</span>
                 </div>
                 <p className="text-xs text-gray-400">💳 Secure payment • 🔒 SSL protected</p>
@@ -800,7 +800,7 @@ export default function AIInfluencersPage() {
           {/* Risk Reversal */}
           <div className={`text-center mt-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-8 max-w-3xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4 text-green-400">🛡️ 60-Day "Build Your Empire" Guarantee</h3>
+              <h3 className="text-2xl font-bold mb-4 text-green-400">🛡 60-Day "Build Your Empire" Guarantee</h3>
               <p className="text-gray-300 mb-4">
                 Try the AI Influencer Empire system for 60 full days. If you don't see real progress building your first AI influencer and generating income within 60 days, I'll refund every penny.
               </p>
@@ -1007,23 +1007,23 @@ export default function AIInfluencersPage() {
             className={`text-center scroll-fade-up ${urgencyAnimation.isVisible ? 'visible' : ''}`}
           >
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-400">⚠️ This Offer Won't Last Forever</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-400">⚠ This Offer Won't Last Forever</h2>
               
               <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 mb-8 card-hover">
                 <h3 className="text-2xl font-bold mb-4 text-red-300">Why I'm Limiting This Offer</h3>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
-                    <h4 className="font-bold text-white mb-2">🎯 Quality Control</h4>
+                    <h4 className="font-bold text-white mb-2"> Quality Control</h4>
                     <p className="text-gray-300 mb-4">I personally review every student's progress and provide 1-on-1 guidance. Too many students would compromise the quality of support.</p>
                     
-                    <h4 className="font-bold text-white mb-2">💎 Exclusivity Protection</h4>
+                    <h4 className="font-bold text-white mb-2"> Exclusivity Protection</h4>
                     <p className="text-gray-300">If everyone has access to these exact strategies, the market becomes saturated. Limited access keeps the advantage for our community.</p>
                   </div>
                   <div>
-                    <h4 className="font-bold text-white mb-2">🚀 Early Adopter Advantage</h4>
+                    <h4 className="font-bold text-white mb-2"> Early Adopter Advantage</h4>
                     <p className="text-gray-300 mb-4">AI influencers are still new. Early adopters get the biggest market share before mainstream adoption.</p>
                     
-                    <h4 className="font-bold text-white mb-2">📈 Rising Costs</h4>
+                    <h4 className="font-bold text-white mb-2"> Rising Costs</h4>
                     <p className="text-gray-300">As we add more content and tools, the value increases. Early members lock in the current price forever.</p>
                   </div>
                 </div>
@@ -1031,7 +1031,7 @@ export default function AIInfluencersPage() {
 
               <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
                 <div className="flex items-center justify-center space-x-4 mb-4">
-                  <div className="text-3xl">⏰</div>
+                  <div className="text-3xl"></div>
                   <div>
                     <h3 className="text-xl font-bold text-yellow-400">Limited Time Offer</h3>
                     <div className="text-lg text-yellow-300">Price increasing soon</div>
@@ -1064,7 +1064,7 @@ export default function AIInfluencersPage() {
               </p>
 
               <Link href="#packages" className="cta-button inline-block text-2xl py-4 px-12 btn-animate animate-glow hover-lift">
-                🔥 SECURE YOUR SPOT NOW - $197 🔥
+                 SECURE YOUR SPOT NOW - $197 
               </Link>
 
               <p className="text-sm text-green-400 mt-4 font-bold">

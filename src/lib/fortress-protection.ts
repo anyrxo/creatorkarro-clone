@@ -2,7 +2,7 @@
  * ORYANA FORTRESS MODE - Anti-Scraping & Anti-Cloning Protection System
  * Makes IImagined.ai literally impossible to clone or parse
  * 
- * ⚔️ PROTECTION LAYERS:
+ * ⚔ PROTECTION LAYERS:
  * 1. Browser Fingerprinting & Bot Detection
  * 2. DevTools Detection & Blocking
  * 3. Content Obfuscation & Dynamic Generation
@@ -469,7 +469,7 @@ export class FortressProtection {
         font-family: Arial, sans-serif;
       ">
         <div style="text-align: center; padding: 20px;">
-          <h2>🛡️ Security Protection Active</h2>
+          <h2>🛡 Security Protection Active</h2>
           <p>Unauthorized access detected.</p>
           <p>This site is protected by advanced anti-scraping technology.</p>
           <p>Please refresh the page to continue as a legitimate user.</p>

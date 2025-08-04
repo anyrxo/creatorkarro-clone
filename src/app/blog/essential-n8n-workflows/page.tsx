@@ -92,7 +92,7 @@ export default function EssentialN8NWorkflows() {
                 <div className="grid md:grid-cols-3 gap-8">
                     <div className="text-center">
                         <div className="bg-blue-500/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <span className="text-2xl">🔧</span>
+                            <span className="text-2xl"></span>
                         </div>
                         <h3 className="text-white font-semibold mb-2">No-Code Visual Builder</h3>
                         <p className="text-gray-400 text-sm">Drag and drop workflows anyone can build</p>
@@ -106,7 +106,7 @@ export default function EssentialN8NWorkflows() {
                     </div>
                     <div className="text-center">
                         <div className="bg-blue-500/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <span className="text-2xl">💰</span>
+                            <span className="text-2xl"></span>
                         </div>
                         <h3 className="text-white font-semibold mb-2">Self-Hosted Option</h3>
                         <p className="text-gray-400 text-sm">Free forever on your own server</p>

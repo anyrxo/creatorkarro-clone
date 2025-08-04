@@ -290,8 +290,8 @@ export class ParasiteSEOEngine {
     const strategy = this.strategies.get(strategyId)
     if (!strategy) throw new Error('Strategy not found')
     
-    console.log(`🚀 Deploying Parasite SEO Campaign: ${strategy.name}`)
-    console.log(`📊 Target: ${options.contentCount} pieces across ${strategy.platforms.length} platforms`)
+    console.log(` Deploying Parasite SEO Campaign: ${strategy.name}`)
+    console.log(` Target: ${options.contentCount} pieces across ${strategy.platforms.length} platforms`)
     
     const deployedContent: ParasiteContent[] = []
     
@@ -316,10 +316,10 @@ export class ParasiteSEOEngine {
     // Calculate projected metrics
     const projectedMetrics = this.calculateProjectedMetrics(deployedContent, strategy)
     
-    console.log(`🎯 Campaign Deployed: ${deployedContent.length} pieces`)
-    console.log(`📈 Projected Backlinks: ${projectedMetrics.totalBacklinks}`)
-    console.log(`⚡ Estimated Traffic: ${projectedMetrics.estimatedTraffic}`)
-    console.log(`📊 Average Authority: ${projectedMetrics.averageAuthority}`)
+    console.log(` Campaign Deployed: ${deployedContent.length} pieces`)
+    console.log(` Projected Backlinks: ${projectedMetrics.totalBacklinks}`)
+    console.log(` Estimated Traffic: ${projectedMetrics.estimatedTraffic}`)
+    console.log(` Average Authority: ${projectedMetrics.averageAuthority}`)
     
     return {
       deployed: deployedContent,

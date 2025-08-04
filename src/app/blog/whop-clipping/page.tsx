@@ -128,25 +128,25 @@ export default function WhopClippingGuide() {
               
                     <div className="grid md:grid-cols-2 gap-6">
                         <div className="bg-zinc-800 rounded-lg p-6">
-                            <div className="text-blue-400 text-2xl mb-3">📈</div>
+                            <div className="text-blue-400 text-2xl mb-3"></div>
                             <h3 className="text-white font-semibold mb-2">Low Startup Cost</h3>
                             <p className="text-gray-400">Start with just editing software and internet</p>
                         </div>
                 
                         <div className="bg-zinc-800 rounded-lg p-6">
-                            <div className="text-purple-400 text-2xl mb-3">⚡</div>
+                            <div className="text-purple-400 text-2xl mb-3"></div>
                             <h3 className="text-white font-semibold mb-2">Scalable Income</h3>
                             <p className="text-gray-400">Work with multiple creators simultaneously</p>
                         </div>
                 
                         <div className="bg-zinc-800 rounded-lg p-6">
-                            <div className="text-green-400 text-2xl mb-3">🎯</div>
+                            <div className="text-green-400 text-2xl mb-3"></div>
                             <h3 className="text-white font-semibold mb-2">In-Demand Service</h3>
                             <p className="text-gray-400">Streamers desperately need quality clips</p>
                         </div>
                 
                         <div className="bg-zinc-800 rounded-lg p-6">
-                            <div className="text-pink-400 text-2xl mb-3">💰</div>
+                            <div className="text-pink-400 text-2xl mb-3"></div>
                             <h3 className="text-white font-semibold mb-2">High Profit Margins</h3>
                             <p className="text-gray-400">50/50 revenue splits on viral content</p>
                         </div>
@@ -170,7 +170,7 @@ export default function WhopClippingGuide() {
                     <div className="bg-zinc-900 rounded-xl p-6">
                         <h3 className="text-xl font-bold text-white mb-3">Step 2: The Perfect Pitch Template</h3>
                         <div className="bg-zinc-800 rounded-lg p-4 mb-4">
-                            <p className="text-gray-300 italic">"Hey [Name], I've been watching your streams and your [specific moment] had me dying 😂 I specialize in turning moments like these into viral TikToks/Shorts. I work on a 50/50 revenue split - you keep creating, I handle all the clipping and posting. Here are 3 sample clips I made from your recent streams: [links]. Interested?"
+                            <p className="text-gray-300 italic">"Hey [Name], I've been watching your streams and your [specific moment] had me dying  I specialize in turning moments like these into viral TikToks/Shorts. I work on a 50/50 revenue split - you keep creating, I handle all the clipping and posting. Here are 3 sample clips I made from your recent streams: [links]. Interested?"
                             </p>
                         </div>
                         <p className="text-gray-300">This pitch has a <span className="text-green-400 font-semibold">73% success rate</span> because it:</p>
@@ -287,13 +287,13 @@ export default function WhopClippingGuide() {
           
             <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-zinc-900 rounded-xl p-6">
-                    <div className="text-blue-400 text-2xl mb-3">🎯</div>
+                    <div className="text-blue-400 text-2xl mb-3"></div>
                     <h3 className="text-white font-semibold mb-2">The Compilation Strategy</h3>
                     <p className="text-gray-400">Create longer YouTube videos (8-10 min) from best clips for higher ad revenue</p>
                 </div>
             
                 <div className="bg-zinc-900 rounded-xl p-6">
-                    <div className="text-purple-400 text-2xl mb-3">📊</div>
+                    <div className="text-purple-400 text-2xl mb-3"></div>
                     <h3 className="text-white font-semibold mb-2">Data-Driven Decisions</h3>
                     <p className="text-gray-400">Track every metric and double down on viral formats</p>
                 </div>
@@ -305,7 +305,7 @@ export default function WhopClippingGuide() {
                 </div>
             
                 <div className="bg-zinc-900 rounded-xl p-6">
-                    <div className="text-pink-400 text-2xl mb-3">💎</div>
+                    <div className="text-pink-400 text-2xl mb-3"></div>
                     <h3 className="text-white font-semibold mb-2">Premium Services</h3>
                     <p className="text-gray-400">Offer channel management and brand deals for extra revenue</p>
                 </div>

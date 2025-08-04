@@ -163,7 +163,7 @@ function getStatusMessage(status: OrderStatus['status']): { title: string; descr
       };
     case 'paid':
       return {
-        title: '🔄 Payment Confirming',
+        title: ' Payment Confirming',
         description: 'Payment received, waiting for blockchain confirmations',
         color: 'blue'
       };
@@ -181,7 +181,7 @@ function getStatusMessage(status: OrderStatus['status']): { title: string; descr
       };
     case 'expired':
       return {
-        title: '⏰ Payment Expired',
+        title: ' Payment Expired',
         description: 'Payment window has expired',
         color: 'red'
       };

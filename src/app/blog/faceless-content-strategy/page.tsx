@@ -349,7 +349,7 @@ export default function FacelessContentStrategy() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">🎙️ Audio & Voice</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4">🎙 Audio & Voice</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• ElevenLabs - AI voices</li>
                     <li>• Murf.ai - Voice cloning</li>
@@ -360,7 +360,7 @@ export default function FacelessContentStrategy() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-green-400 mb-4">🎨 Assets & Stock</h3>
+                <h3 className="text-xl font-bold text-green-400 mb-4"> Assets & Stock</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• Pexels - Free stock video</li>
                     <li>• Unsplash - Free images</li>
@@ -371,7 +371,7 @@ export default function FacelessContentStrategy() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-pink-400 mb-4">🤖 AI Tools</h3>
+                <h3 className="text-xl font-bold text-pink-400 mb-4"> AI Tools</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• ChatGPT - Scripts</li>
                     <li>• Claude - Research</li>
@@ -382,7 +382,7 @@ export default function FacelessContentStrategy() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-yellow-400 mb-4">📊 Analytics</h3>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4"> Analytics</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• TubeBuddy - YouTube</li>
                     <li>• VidIQ - Optimization</li>
@@ -393,7 +393,7 @@ export default function FacelessContentStrategy() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-red-400 mb-4">💰 Monetization</h3>
+                <h3 className="text-xl font-bold text-red-400 mb-4"> Monetization</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• AdSense - YouTube ads</li>
                     <li>• Creator funds - TikTok/IG</li>

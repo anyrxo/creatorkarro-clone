@@ -184,7 +184,7 @@ export default function AIInfluencerTrends() {
                     <h4 className="text-white font-semibold mb-3">Emerging niches:</h4>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                         <div className="bg-zinc-900 rounded p-3 text-center">
-                            <span className="text-2xl mb-1 block">🏋️</span>
+                            <span className="text-2xl mb-1 block">🏋</span>
                             <p className="text-sm text-gray-300">Fitness Coaches</p>
                         </div>
                         <div className="bg-zinc-900 rounded p-3 text-center">
@@ -192,11 +192,11 @@ export default function AIInfluencerTrends() {
                             <p className="text-sm text-gray-300">Cooking Experts</p>
                         </div>
                         <div className="bg-zinc-900 rounded p-3 text-center">
-                            <span className="text-2xl mb-1 block">💰</span>
+                            <span className="text-2xl mb-1 block"></span>
                             <p className="text-sm text-gray-300">Finance Advisors</p>
                         </div>
                         <div className="bg-zinc-900 rounded p-3 text-center">
-                            <span className="text-2xl mb-1 block">🎮</span>
+                            <span className="text-2xl mb-1 block"></span>
                             <p className="text-sm text-gray-300">Gaming Streamers</p>
                         </div>
                         <div className="bg-zinc-900 rounded p-3 text-center">
@@ -204,7 +204,7 @@ export default function AIInfluencerTrends() {
                             <p className="text-sm text-gray-300">Wellness Gurus</p>
                         </div>
                         <div className="bg-zinc-900 rounded p-3 text-center">
-                            <span className="text-2xl mb-1 block">📚</span>
+                            <span className="text-2xl mb-1 block"></span>
                             <p className="text-sm text-gray-300">Education Tutors</p>
                         </div>
                     </div>
@@ -334,7 +334,7 @@ export default function AIInfluencerTrends() {
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">🚀 2025 Predictions</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> 2025 Predictions</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• First AI influencer with 10M+ followers</li>
                     <li>• AI-generated Hollywood movie star</li>
@@ -370,30 +370,30 @@ export default function AIInfluencerTrends() {
                 <div>
                     <h3 className="text-xl font-bold text-white mb-3">For Content Creators:</h3>
                     <ul className="space-y-2 text-gray-300">
-                        <li>✨ Create your own AI influencer with unique personality</li>
-                        <li>✨ Build automated content systems for 24/7 posting</li>
-                        <li>✨ Target underserved niches with specialized AI personas</li>
-                        <li>✨ Offer AI influencer creation as a service</li>
+                        <li> Create your own AI influencer with unique personality</li>
+                        <li> Build automated content systems for 24/7 posting</li>
+                        <li> Target underserved niches with specialized AI personas</li>
+                        <li> Offer AI influencer creation as a service</li>
                     </ul>
                 </div>
               
                 <div>
                     <h3 className="text-xl font-bold text-white mb-3">For Businesses:</h3>
                     <ul className="space-y-2 text-gray-300">
-                        <li>💼 Develop brand-specific AI ambassadors</li>
-                        <li>💼 Test products with virtual focus groups</li>
-                        <li>💼 Create customer service AI personalities</li>
-                        <li>💼 Launch AI-powered marketing campaigns</li>
+                        <li> Develop brand-specific AI ambassadors</li>
+                        <li> Test products with virtual focus groups</li>
+                        <li> Create customer service AI personalities</li>
+                        <li> Launch AI-powered marketing campaigns</li>
                     </ul>
                 </div>
               
                 <div>
                     <h3 className="text-xl font-bold text-white mb-3">For Developers:</h3>
                     <ul className="space-y-2 text-gray-300">
-                        <li>🛠️ Build tools for AI influencer management</li>
-                        <li>🛠️ Create marketplaces for AI personas</li>
-                        <li>🛠️ Develop interaction automation platforms</li>
-                        <li>🛠️ Design analytics for virtual influencers</li>
+                        <li> Build tools for AI influencer management</li>
+                        <li> Create marketplaces for AI personas</li>
+                        <li> Develop interaction automation platforms</li>
+                        <li> Design analytics for virtual influencers</li>
                     </ul>
                 </div>
             </div>

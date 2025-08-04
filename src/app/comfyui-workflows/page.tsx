@@ -292,25 +292,25 @@ export default function ComfyUIWorkflowsPage() {
       value: "$197"
     },
     {
-      icon: "",
+      icon: "wand2",
       title: "Workflow Optimizer Tool",
       description: "Automated workflow performance optimization",
       value: "$127"
     },
     {
-      icon: "📚",
+      icon: "video",
       title: "Video Tutorial Library",
       description: "100+ step-by-step video tutorials",
       value: "$147"
     },
     {
-      icon: "",
+      icon: "layers",
       title: "Custom Node Pack",
       description: "Exclusive collection of custom nodes",
       value: "$97"
     },
     {
-      icon: "💼",
+      icon: "bookOpen",
       title: "Business Templates",
       description: "Client contracts and pricing templates",
       value: "$127"
@@ -502,42 +502,42 @@ export default function ComfyUIWorkflowsPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <ProblemCard
-              icon="🎲"
+              icon="palette"
               title="Inconsistent Results"
               description="You get amazing results sometimes, but can't reliably reproduce them. Every generation feels like rolling dice."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-1"
             />
             <ProblemCard
-              icon="⏰"
+              icon="wand2"
               title="Endless Tweaking"
               description="Hours spent adjusting parameters, trying different prompts, and still not getting what you envisioned."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-2"
             />
             <ProblemCard
-              icon="💸"
+              icon="layers"
               title="Wasted GPU Credits"
               description="Burning through expensive GPU time with failed generations and parameter testing."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-3"
             />
             <ProblemCard
-              icon="🤯"
+              icon="palette"
               title="Technical Overwhelm"
               description="Complex interfaces, confusing settings, and steep learning curves that kill your creativity."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-4"
             />
             <ProblemCard
-              icon="📉"
+              icon="wand2"
               title="Poor Quality Control"
               description="Artifacts, distortions, and unprofessional results that you can't use for client work."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-5"
             />
             <ProblemCard
-              icon="🔄"
+              icon="layers"
               title="Manual Repetition"
               description="Doing the same steps over and over manually instead of having automated, reliable workflows."
               isVisible={problemAnimation.isVisible}
@@ -914,7 +914,7 @@ export default function ComfyUIWorkflowsPage() {
             <div className={`text-center scroll-fade-up ${urgencyAnimation.isVisible ? 'visible' : ''}`}>
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-400">
-                  ⏰ <TypingAnimation
+                   <TypingAnimation
                     text="Early Bird Pricing Ends Soon"
                     className="text-4xl md:text-5xl font-bold text-red-400 inline"
                     duration={100}

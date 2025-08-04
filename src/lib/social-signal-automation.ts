@@ -325,11 +325,11 @@ export class SocialSignalAutomationEngine {
       },
       shareTexts: {
         twitter: [
-          "🔥 This is a game-changer! {url} #automation #productivity",
-          "💡 Brilliant insights on {topic} - must read! {url}",
-          "⚡ Just found this incredible resource: {url} #business #growth",
-          "🎯 Perfect solution for {problem} - check it out: {url}",
-          "📊 Data-driven approach to {topic}: {url} #analytics #strategy"
+          " This is a game-changer! {url} #automation #productivity",
+          " Brilliant insights on {topic} - must read! {url}",
+          " Just found this incredible resource: {url} #business #growth",
+          " Perfect solution for {problem} - check it out: {url}",
+          " Data-driven approach to {topic}: {url} #analytics #strategy"
         ],
         linkedin: [
           "Thought-provoking analysis on {topic}. The insights around {key_point} are particularly valuable. {url}",
@@ -400,8 +400,8 @@ export class SocialSignalAutomationEngine {
       budget?: number
     } = {}
   ): Promise<SocialSignalCampaign> {
-    console.log(`🚀 Deploying Social Signal Campaign: ${campaignName}`)
-    console.log(`🎯 Target URLs: ${targetUrls.length}`)
+    console.log(` Deploying Social Signal Campaign: ${campaignName}`)
+    console.log(` Target URLs: ${targetUrls.length}`)
     
     const {
       platforms = ['twitter', 'reddit', 'linkedin', 'facebook'],
@@ -454,12 +454,12 @@ export class SocialSignalAutomationEngine {
     
     this.campaigns.set(campaign.id, campaign)
     
-    console.log(`🎯 Campaign Metrics:`)
-    console.log(`📊 Total Actions: ${totalActions.toLocaleString()}`)
-    console.log(`⚡ Actions/Hour: ${actionsPerHour}`)
-    console.log(`🚀 Estimated Reach: ${metrics.estimatedReach.toLocaleString()}`)
-    console.log(`📈 Signal Strength: ${metrics.signalStrength}/100`)
-    console.log(`🔍 Indexing Boost: +${metrics.indexingBoost}%`)
+    console.log(` Campaign Metrics:`)
+    console.log(` Total Actions: ${totalActions.toLocaleString()}`)
+    console.log(` Actions/Hour: ${actionsPerHour}`)
+    console.log(` Estimated Reach: ${metrics.estimatedReach.toLocaleString()}`)
+    console.log(` Signal Strength: ${metrics.signalStrength}/100`)
+    console.log(` Indexing Boost: +${metrics.indexingBoost}%`)
     console.log(`✅ Account Network: ${campaign.totalAccounts} accounts`)
     
     return campaign

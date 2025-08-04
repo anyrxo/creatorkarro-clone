@@ -43,7 +43,7 @@ export default function ComfyUIWorkflowsPage() {
             </p>
 
             <div className="bg-zinc-900 border border-blue-600/30 rounded-lg p-4 mb-8 inline-block card-hover">
-              <p className="text-blue-300 font-semibold">🏆 COMPLETE SYSTEM: 50+ workflows + lifetime updates included</p>
+              <p className="text-blue-300 font-semibold"> COMPLETE SYSTEM: 50+ workflows + lifetime updates included</p>
             </div>
 
             <Link href="#packages" className="cta-button inline-block text-lg mb-8 btn-animate animate-glow hover-lift">
@@ -115,7 +115,7 @@ export default function ComfyUIWorkflowsPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">😤</div>
+              <div className="text-red-400 text-3xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-red-300">Midjourney Frustration</h3>
               <p className="text-gray-400 mb-4">
                 Spending hours tweaking prompts, getting random results, and never being able to recreate what worked. Basic tools giving you basic results while competitors are creating mind-blowing content.
@@ -126,7 +126,7 @@ export default function ComfyUIWorkflowsPage() {
             </div>
 
             <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">🎲</div>
+              <div className="text-red-400 text-3xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-red-300">Inconsistent Results</h3>
               <p className="text-gray-400 mb-4">
                 One day you get amazing results, the next day the same prompt produces garbage. No control over style, composition, or quality. Clients are getting frustrated with the unpredictability.
@@ -137,7 +137,7 @@ export default function ComfyUIWorkflowsPage() {
             </div>
 
             <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">⏰</div>
+              <div className="text-red-400 text-3xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-red-300">Time Hemorrhaging</h3>
               <p className="text-gray-400 mb-4">
                 Manual processes eating up your entire day. Spending more time fighting with AI tools than actually creating. Missing deadlines because the tools won't cooperate when you need them most.
@@ -148,7 +148,7 @@ export default function ComfyUIWorkflowsPage() {
             </div>
 
             <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">💸</div>
+              <div className="text-red-400 text-3xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-red-300">Lost Opportunities</h3>
               <p className="text-gray-400 mb-4">
                 Watching competitors land high-paying clients while you struggle with basic AI outputs. Missing out on lucrative projects because your AI skills aren't professional-level.
@@ -159,7 +159,7 @@ export default function ComfyUIWorkflowsPage() {
             </div>
 
             <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">🤯</div>
+              <div className="text-red-400 text-3xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-red-300">Technical Overwhelm</h3>
               <p className="text-gray-400 mb-4">
                 Advanced AI tools seem impossible to learn. Complex interfaces, technical jargon, and steep learning curves. You know these tools could transform your business but don't know where to start.
@@ -170,7 +170,7 @@ export default function ComfyUIWorkflowsPage() {
             </div>
 
             <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <div className="text-red-400 text-3xl mb-4">😩</div>
+              <div className="text-red-400 text-3xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-red-300">Falling Behind</h3>
               <p className="text-gray-400 mb-4">
                 Your competition is using advanced AI workflows while you're stuck with basic tools. Clients are expecting more sophisticated results and you can't deliver. The gap is widening every day.
@@ -688,7 +688,7 @@ export default function ComfyUIWorkflowsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Bonus 1 */}
             <div className={`bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="text-purple-400 text-4xl mb-4">🎁</div>
+              <div className="text-purple-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-purple-300">50+ Done-For-You Workflows</h3>
               <p className="text-gray-400 mb-4">
                 Professional workflows ready to import and use immediately. Created by industry experts and tested with real clients.
@@ -736,7 +736,7 @@ export default function ComfyUIWorkflowsPage() {
 
             {/* Bonus 5 */}
             <div className={`bg-gradient-to-br from-pink-900/30 to-purple-900/30 border border-pink-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-              <div className="text-pink-400 text-4xl mb-4">📋</div>
+              <div className="text-pink-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-pink-300">Client Proposal Templates</h3>
               <p className="text-gray-400 mb-4">
                 Professional proposal templates, contracts, and pricing guides used to land $10K+ projects.
@@ -892,7 +892,7 @@ export default function ComfyUIWorkflowsPage() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* DIY Learning */}
             <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-8 text-center scroll-fade-up ${comparisonAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="text-red-400 text-4xl mb-4">😰</div>
+              <div className="text-red-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-red-300">DIY Learning</h3>
               <div className="text-3xl font-bold text-red-400 mb-4">$5,000+</div>
               <p className="text-gray-400 mb-6">Piecing together free tutorials and courses</p>
@@ -927,7 +927,7 @@ export default function ComfyUIWorkflowsPage() {
 
             {/* Hiring Expert */}
             <div className={`bg-orange-900/30 border border-orange-600/30 rounded-lg p-8 text-center scroll-fade-up ${comparisonAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <div className="text-orange-400 text-4xl mb-4">💸</div>
+              <div className="text-orange-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-orange-300">Hiring Expert</h3>
               <div className="text-3xl font-bold text-orange-400 mb-4">$10,000+</div>
               <p className="text-gray-400 mb-6">Per month for professional services</p>
@@ -1076,7 +1076,7 @@ export default function ComfyUIWorkflowsPage() {
               </Link>
               
               <div className="space-y-2 text-sm">
-                <p className="text-orange-300 font-semibold">⏰ Limited time offer - Price increasing soon</p>
+                <p className="text-orange-300 font-semibold"> Limited time offer - Price increasing soon</p>
                 <p className="text-gray-400">Join 847+ creators earning $5-15K monthly</p>
                 <p className="text-green-400">Instant access • No recurring fees</p>
               </div>
@@ -1099,7 +1099,7 @@ export default function ComfyUIWorkflowsPage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
             <div className={`bg-zinc-900 border border-red-600/30 rounded-lg p-8 scroll-fade-up ${urgencyAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
-              <div className="text-red-400 text-4xl mb-4">⏰</div>
+              <div className="text-red-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-red-300">Limited Time Pricing</h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center pb-3 border-b border-red-600/20">
@@ -1122,7 +1122,7 @@ export default function ComfyUIWorkflowsPage() {
             </div>
 
             <div className={`bg-orange-900/30 border border-orange-600/30 rounded-lg p-8 scroll-fade-up ${urgencyAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-              <div className="text-orange-400 text-4xl mb-4">🎁</div>
+              <div className="text-orange-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-orange-300">Bonuses Disappearing</h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center pb-3 border-b border-orange-600/20">

@@ -44,7 +44,7 @@ export default function ComfyUIWorkflowLibrary() {
             <h2 className="text-2xl font-bold text-white text-center mb-8">Workflow Categories</h2>
             <div className="grid md:grid-cols-5 gap-4">
               <div className="text-center bg-zinc-900 rounded-xl p-4">
-                <div className="text-3xl mb-2">🎨</div>
+                <div className="text-3xl mb-2"></div>
                 <h3 className="text-white font-semibold">Art Generation</h3>
                 <p className="text-gray-400 text-sm">15 workflows</p>
               </div>
@@ -54,7 +54,7 @@ export default function ComfyUIWorkflowLibrary() {
                 <p className="text-gray-400 text-sm">10 workflows</p>
               </div>
               <div className="text-center bg-zinc-900 rounded-xl p-4">
-                <div className="text-3xl mb-2">🌟</div>
+                <div className="text-3xl mb-2"></div>
                 <h3 className="text-white font-semibold">Animation</h3>
                 <p className="text-gray-400 text-sm">8 workflows</p>
               </div>
@@ -64,7 +64,7 @@ export default function ComfyUIWorkflowLibrary() {
                 <p className="text-gray-400 text-sm">12 workflows</p>
               </div>
               <div className="text-center bg-zinc-900 rounded-xl p-4">
-                <div className="text-3xl mb-2">🚀</div>
+                <div className="text-3xl mb-2"></div>
                 <h3 className="text-white font-semibold">Advanced</h3>
                 <p className="text-gray-400 text-sm">5 workflows</p>
               </div>
@@ -79,7 +79,7 @@ export default function ComfyUIWorkflowLibrary() {
         className={`section-spacing scroll-fade-up ${workflowsAnimation.isVisible ? 'visible' : ''}`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">🎨 Art Generation Workflows</h2>
+          <h2 className="text-3xl font-bold text-white mb-8"> Art Generation Workflows</h2>
           
           <div className="space-y-6">
             {/* Workflow 1 */}
@@ -247,7 +247,7 @@ export default function ComfyUIWorkflowLibrary() {
         className={`section-spacing scroll-fade-up ${contentAnimation.isVisible ? 'visible' : ''}`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">🌟 Animation Workflows</h2>
+          <h2 className="text-3xl font-bold text-white mb-8"> Animation Workflows</h2>
           
           <div className="space-y-4">
             <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-6">
@@ -368,7 +368,7 @@ export default function ComfyUIWorkflowLibrary() {
       {/* Advanced Workflows Preview */}
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">🚀 Advanced Workflows (Game Changers)</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center"> Advanced Workflows (Game Changers)</h2>
           
           <div className="space-y-4">
             <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 rounded-xl p-6">

@@ -39,8 +39,8 @@ export class ContentAutomationEngine {
   ): Promise<AutomatedContent[]> {
     const results: AutomatedContent[] = []
     
-    console.log(`🚀 Starting automated content generation...`)
-    console.log(`📊 Scale: ${keywords.length} × ${locations.length} × ${modifiers.length} = ${keywords.length * locations.length * modifiers.length} potential pages`)
+    console.log(` Starting automated content generation...`)
+    console.log(` Scale: ${keywords.length} × ${locations.length} × ${modifiers.length} = ${keywords.length * locations.length * modifiers.length} potential pages`)
     
     let processed = 0
     const total = Math.min(keywords.length * locations.length * modifiers.length, pipeline.batchSize)
@@ -66,7 +66,7 @@ export class ContentAutomationEngine {
       if (processed >= pipeline.batchSize) break
     }
     
-    console.log(`🎯 Content generation completed: ${results.length} pieces`)
+    console.log(` Content generation completed: ${results.length} pieces`)
     return results
   }
   
@@ -216,7 +216,7 @@ export class ContentAutomationEngine {
     enhanced += '\n\nJoin thousands of successful entrepreneurs who have already achieved remarkable results with this proven system.'
     
     // Add urgency
-    enhanced += '\n\n⏰ Limited time access - don\'t miss this opportunity to transform your business.'
+    enhanced += '\n\n Limited time access - don\'t miss this opportunity to transform your business.'
     
     return enhanced
   }
@@ -348,14 +348,14 @@ ${urls}
     const allContent: AutomatedContent[] = []
     const totalChunks = Math.ceil(totalItems / chunkSize)
     
-    console.log(`🚀 Processing ${totalItems} items in ${totalChunks} chunks of ${chunkSize}`)
+    console.log(` Processing ${totalItems} items in ${totalChunks} chunks of ${chunkSize}`)
     
     for (let chunk = 0; chunk < totalChunks; chunk++) {
       const chunkStart = chunk * chunkSize
       const chunkEnd = Math.min(chunkStart + chunkSize, totalItems)
       const chunkItems = chunkEnd - chunkStart
       
-      console.log(`📊 Processing chunk ${chunk + 1}/${totalChunks} (${chunkItems} items)`)
+      console.log(` Processing chunk ${chunk + 1}/${totalChunks} (${chunkItems} items)`)
       
       // Generate basic keywords/locations for this chunk
       const keywords = ['ai-automation', 'instagram-growth', 'digital-marketing'].slice(0, Math.ceil(chunkItems / 100))
@@ -411,7 +411,7 @@ export async function generateMassContent(
     1000,
     pipeline,
     (progress, chunk) => {
-      console.log(`🎯 Progress: ${progress}% (Chunk ${chunk} completed)`)
+      console.log(` Progress: ${progress}% (Chunk ${chunk} completed)`)
     }
   )
 }
@@ -435,7 +435,7 @@ export async function quickContentTest(): Promise<void> {
   })
   
   console.log(`✅ Generated ${result.content.length} content pieces`)
-  console.log(`📊 Average Quality: ${result.summary.averageQuality}/100`)
-  console.log(`⏱️  Processing Time: ${result.summary.processingTime}ms`)
-  console.log(`🎯 Estimated Indexable: ${result.summary.estimatedIndexablePages}`)
+  console.log(` Average Quality: ${result.summary.averageQuality}/100`)
+  console.log(`⏱  Processing Time: ${result.summary.processingTime}ms`)
+  console.log(` Estimated Indexable: ${result.summary.estimatedIndexablePages}`)
 }

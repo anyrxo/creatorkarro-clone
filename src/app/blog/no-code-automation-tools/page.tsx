@@ -119,7 +119,7 @@ export default function NoCodeAutomationToolsPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-orange-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-orange-400 font-bold">⚡</span>
+                  <span className="text-orange-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Zapier</h3>
@@ -139,7 +139,7 @@ export default function NoCodeAutomationToolsPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-blue-400 font-bold">🔧</span>
+                  <span className="text-blue-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Make</h3>
@@ -159,7 +159,7 @@ export default function NoCodeAutomationToolsPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-yellow-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-yellow-400 font-bold">📊</span>
+                  <span className="text-yellow-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Airtable</h3>
@@ -179,7 +179,7 @@ export default function NoCodeAutomationToolsPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-gray-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-gray-8000/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-gray-400 font-bold">📝</span>
+                  <span className="text-gray-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Notion</h3>
@@ -219,7 +219,7 @@ export default function NoCodeAutomationToolsPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-green-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-green-400 font-bold">📱</span>
+                  <span className="text-green-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Adalo</h3>

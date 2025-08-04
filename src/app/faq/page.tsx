@@ -139,7 +139,7 @@ export default function FAQPage() {
               </div>
               
               <div className="bg-gray-700 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-white mb-3">📚 Help Center</h3>
+                <h3 className="text-xl font-semibold text-white mb-3"> Help Center</h3>
                 <p className="text-gray-300 mb-4">Comprehensive guides and tutorials</p>
                 <Link href="/help" className="text-blue-400 hover:text-blue-300">
                   Browse Help Center
@@ -203,7 +203,7 @@ export default function FAQPage() {
                   id="faq-search"
                 />
                 <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white">
-                  🔍
+                  
                 </button>
               </div>
               <div id="search-results" className="mt-4 space-y-2"></div>

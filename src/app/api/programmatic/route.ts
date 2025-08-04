@@ -206,7 +206,7 @@ function generateProgrammaticHTML(page: any, context: any) {
       <h1>${page.h1}</h1>
       <p>${page.description}</p>
       <div class="urgency">
-        🔥 Limited Time: ${location.replace('-', ' ').toUpperCase()} residents get exclusive access!
+         Limited Time: ${location.replace('-', ' ').toUpperCase()} residents get exclusive access!
       </div>
       <a href="/courses?utm_source=programmatic&utm_campaign=${keyword}-${location}" class="cta-button">
         ${abVariant.cta}
@@ -221,27 +221,27 @@ function generateProgrammaticHTML(page: any, context: any) {
       
       <div class="features">
         <div class="feature">
-          <h3>🎯 Location-Specific Strategies</h3>
+          <h3> Location-Specific Strategies</h3>
           <p>Our ${keyword.replace('-', ' ')} methods are specifically tailored for ${location.replace('-', ' ')} market conditions and regulations.</p>
         </div>
         
         <div class="feature">
-          <h3>⚡ Proven Results</h3>
+          <h3> Proven Results</h3>
           <p>Join 127K+ entrepreneurs worldwide who have transformed their businesses using our battle-tested strategies.</p>
         </div>
         
         <div class="feature">
-          <h3>🚀 Fast Implementation</h3>
+          <h3> Fast Implementation</h3>
           <p>Start seeing results within 7-14 days with our step-by-step ${keyword.replace('-', ' ')} blueprint.</p>
         </div>
         
         <div class="feature">
-          <h3>💰 Revenue Focus</h3>
+          <h3> Revenue Focus</h3>
           <p>Every strategy is designed to generate real revenue, not just vanity metrics or theoretical knowledge.</p>
         </div>
         
         <div class="feature">
-          <h3>🛡️ Risk-Free Guarantee</h3>
+          <h3>🛡 Risk-Free Guarantee</h3>
           <p>30-day money-back guarantee. If you don't see results, we'll refund every penny.</p>
         </div>
         
@@ -275,7 +275,7 @@ function generateProgrammaticHTML(page: any, context: any) {
       </div>
       
       <div class="urgency">
-        ⏰ Special ${location.replace('-', ' ')} Launch Pricing: Save $300 (Limited Time Only)
+         Special ${location.replace('-', ' ')} Launch Pricing: Save $300 (Limited Time Only)
       </div>
     </div>
   </section>

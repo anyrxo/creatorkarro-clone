@@ -119,7 +119,7 @@ export async function POST(request: NextRequest) {
     }
     
     console.log(`🌐 Deploying Doorway Network: ${networkName}`)
-    console.log(`🎯 Target URL: ${targetUrl}`)
+    console.log(` Target URL: ${targetUrl}`)
     console.log(`🔑 Keywords: ${mainKeywords.join(', ')}`)
     
     let network

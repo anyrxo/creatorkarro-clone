@@ -91,22 +91,22 @@ export default function PromptEngineeringGuide() {
                 <h2 className="text-2xl font-bold text-white text-center mb-8">Why Prompt Engineering = Money in 2025</h2>
                 <div className="grid md:grid-cols-4 gap-4">
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl mb-2">💰</div>
+                        <div className="text-3xl mb-2"></div>
                         <div className="text-white font-semibold">$75-200/hr</div>
                         <div className="text-gray-400 text-sm">Freelance rates</div>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl mb-2">🚀</div>
+                        <div className="text-3xl mb-2"></div>
                         <div className="text-white font-semibold">10x Productivity</div>
                         <div className="text-gray-400 text-sm">Output increase</div>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl mb-2">🎯</div>
+                        <div className="text-3xl mb-2"></div>
                         <div className="text-white font-semibold">95% Accuracy</div>
                         <div className="text-gray-400 text-sm">With right prompts</div>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl mb-2">📈</div>
+                        <div className="text-3xl mb-2"></div>
                         <div className="text-white font-semibold">2M+ Jobs</div>
                         <div className="text-gray-400 text-sm">By 2025</div>
                     </div>
@@ -338,21 +338,21 @@ export default function PromptEngineeringGuide() {
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Real-World Prompt Templates</h2>
           
         <div className="grid md:grid-cols-2 gap-6"><div className="bg-zinc-900 rounded-xl p-6">
-            <h3 className="text-xl font-bold text-purple-400 mb-4">📝 Content Creation</h3>
+            <h3 className="text-xl font-bold text-purple-400 mb-4"> Content Creation</h3>
             <div className="bg-zinc-800 rounded p-4 mb-4">
                 <p className="text-sm text-gray-300">"Write a [word count] [content type] about [topic] for [audience]. Include [specific elements]. Use a [tone] tone. Format with [structure]. Focus on [key message]."
                 </p>
             </div>
             <p className="text-green-400 text-sm">Saves 2-3 hours per piece</p>
         </div><div className="bg-zinc-900 rounded-xl p-6">
-        <h3 className="text-xl font-bold text-blue-400 mb-4">💻 Code Generation</h3>
+        <h3 className="text-xl font-bold text-blue-400 mb-4"> Code Generation</h3>
         <div className="bg-zinc-800 rounded p-4 mb-4">
             <p className="text-sm text-gray-300">"Create a [language] function that [purpose]. Input: [parameters]. Output: [expected result]. Include error handling for [edge cases]. Follow [style guide] conventions."
             </p>
         </div>
         <p className="text-green-400 text-sm">10x faster development</p>
     </div><div className="bg-zinc-900 rounded-xl p-6">
-    <h3 className="text-xl font-bold text-green-400 mb-4">📊 Data Analysis</h3>
+    <h3 className="text-xl font-bold text-green-400 mb-4"> Data Analysis</h3>
     <div className="bg-zinc-800 rounded p-4 mb-4">
         <p className="text-sm text-gray-300">"Analyze this data: [paste data]. Identify [specific patterns]. Calculate [metrics]. Present findings as [format]. Include [visualizations]. Highlight [key insights]."
         </p>
@@ -371,7 +371,7 @@ export default function PromptEngineeringGuide() {
             
 <div className="space-y-6">
     <div>
-        <h4 className="text-purple-400 font-semibold mb-2">🚀 Product Launch Strategy</h4>
+        <h4 className="text-purple-400 font-semibold mb-2"> Product Launch Strategy</h4>
         <div className="bg-zinc-800 rounded p-4">
             <code className="text-sm text-gray-300">"Act as a product marketing expert who has launched 50+ successful SaaS products. Create a comprehensive 90-day product launch strategy for [product]. Include: pre-launch (30 days), launch week, post-launch (60 days). For each phase, provide: goals, tactics, channels, metrics, budget allocation, team responsibilities. Format as a detailed action plan with daily tasks. Consider market size of [size], competition like [competitors], and target audience of [audience]."
             </code>
@@ -379,7 +379,7 @@ export default function PromptEngineeringGuide() {
     </div>
 
     <div>
-        <h4 className="text-blue-400 font-semibold mb-2">💰 Sales Copy That Converts</h4>
+        <h4 className="text-blue-400 font-semibold mb-2"> Sales Copy That Converts</h4>
         <div className="bg-zinc-800 rounded p-4">
             <code className="text-sm text-gray-300">"You are a direct response copywriter with a track record of generating $10M+ in sales. Write a sales page for [product] using the PAS (Problem-Agitate-Solution) framework. Target audience: [detailed persona]. Their main pain point: [specific problem]. Our unique solution: [USP]. Include: attention-grabbing headline, 3 emotional pain points, 5 benefit-focused bullet points, social proof section, risk reversal guarantee, 3 urgency triggers, clear CTA. Tone: conversational but persuasive. Length: 1500-2000 words."
             </code>
@@ -426,7 +426,7 @@ export default function PromptEngineeringGuide() {
           
         <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">🛠️ Essential Tools</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Essential Tools</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• PromptPerfect - Optimize prompts</li>
                     <li>• FlowGPT - Prompt marketplace</li>
@@ -437,7 +437,7 @@ export default function PromptEngineeringGuide() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">📚 Learning Resources</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> Learning Resources</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• OpenAI Cookbook</li>
                     <li>• Prompt Engineering Guide</li>
@@ -448,7 +448,7 @@ export default function PromptEngineeringGuide() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-green-400 mb-4">💼 Career Paths</h3>
+                <h3 className="text-xl font-bold text-green-400 mb-4"> Career Paths</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• AI Consultant ($150-300/hr)</li>
                     <li>• Prompt Engineer ($120-180K)</li>

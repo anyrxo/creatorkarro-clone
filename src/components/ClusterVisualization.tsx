@@ -137,7 +137,7 @@ function HierarchyView({
         `}
       >
         <div className="text-center">
-          <div className="font-semibold">📄 Pillar Page</div>
+          <div className="font-semibold"> Pillar Page</div>
           <div className="text-sm mt-1 max-w-48 truncate">{pillarTitle}</div>
         </div>
       </div>
@@ -173,7 +173,7 @@ function HierarchyView({
             `}
           >
             <div className="text-center">
-              <div className="text-xs font-semibold mb-1">📝 Cluster</div>
+              <div className="text-xs font-semibold mb-1"> Cluster</div>
               <div className="text-xs truncate">{page.title}</div>
               <div className="text-xs text-green-200 mt-1">
                 Vol: {page.searchVolume}

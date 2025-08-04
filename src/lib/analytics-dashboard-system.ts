@@ -158,30 +158,30 @@ export class AnalyticsDashboardEngine {
       exportFormats = ['pdf', 'csv', 'json']
     } = options
 
-    console.log(`📊 Deploying Comprehensive Analytics Dashboard`)
+    console.log(` Deploying Comprehensive Analytics Dashboard`)
     console.log(`🌐 Domain: ${domain}`)
-    console.log(`⏰ Refresh Interval: ${refreshInterval} minutes`)
-    console.log(`📈 Metrics Tracked: ${metricsToTrack.length}`)
-    console.log(`🚀 Real-time Updates: ${enableRealTime ? 'Enabled' : 'Disabled'}`)
+    console.log(` Refresh Interval: ${refreshInterval} minutes`)
+    console.log(` Metrics Tracked: ${metricsToTrack.length}`)
+    console.log(` Real-time Updates: ${enableRealTime ? 'Enabled' : 'Disabled'}`)
 
     // Collect metrics from all systems
     const systemsStatus = await this.collectSystemsStatus()
     console.log(`🔗 Integrated Systems: ${systemsStatus.length}`)
     systemsStatus.forEach(system => {
-      console.log(`  ${system.status === 'active' ? '✅' : '⚠️'} ${system.systemName}: ${system.health}% health`)
+      console.log(`  ${system.status === 'active' ? '✅' : '⚠'} ${system.systemName}: ${system.health}% health`)
     })
 
     // Gather all metrics
     const metrics = await this.gatherAllMetrics(domain, metricsToTrack)
-    console.log(`📊 Total Metrics Collected: ${this.countMetrics(metrics)}`)
+    console.log(` Total Metrics Collected: ${this.countMetrics(metrics)}`)
 
     // Calculate performance score
     const performanceScore = this.calculatePerformanceScore(metrics, systemsStatus)
-    console.log(`🏆 Overall Performance Score: ${performanceScore}/100`)
+    console.log(` Overall Performance Score: ${performanceScore}/100`)
 
     // Generate insights and recommendations
     const recommendations = this.generateRecommendations(metrics, systemsStatus, performanceScore)
-    console.log(`💡 Recommendations Generated: ${recommendations.length}`)
+    console.log(` Recommendations Generated: ${recommendations.length}`)
 
     // Check for alerts
     const alerts = this.checkForAlerts(metrics, alertThresholds)
@@ -227,7 +227,7 @@ export class AnalyticsDashboardEngine {
 
     console.log(`✅ Analytics Dashboard Deployed Successfully`)
     console.log(`🆔 Dashboard ID: ${dashboard.id}`)
-    console.log(`📄 Access at: /analytics-dashboard`)
+    console.log(` Access at: /analytics-dashboard`)
 
     return dashboard
   }
@@ -530,7 +530,7 @@ export class AnalyticsDashboardEngine {
     if (performanceScore < 60) {
       recommendations.push('🚨 URGENT: Overall performance is below acceptable levels. Immediate action required.')
     } else if (performanceScore < 80) {
-      recommendations.push('⚠️ Performance could be improved. Review underperforming metrics.')
+      recommendations.push('⚠ Performance could be improved. Review underperforming metrics.')
     } else {
       recommendations.push('✅ Performance is excellent. Maintain current strategies.')
     }
@@ -538,27 +538,27 @@ export class AnalyticsDashboardEngine {
     // Traffic recommendations
     const trafficGrowth = metrics.traffic[0]?.change || 0
     if (trafficGrowth < 0) {
-      recommendations.push('📉 Traffic is declining. Review content strategy and technical issues.')
+      recommendations.push(' Traffic is declining. Review content strategy and technical issues.')
     } else if (trafficGrowth < 5) {
-      recommendations.push('📈 Traffic growth is slow. Consider expanding content and link building.')
+      recommendations.push(' Traffic growth is slow. Consider expanding content and link building.')
     }
 
     // Rankings recommendations
     const avgPosition = Number(metrics.rankings.find(m => m.name === 'Average Position')?.value) || 20
     if (avgPosition > 10) {
-      recommendations.push('🎯 Improve average rankings by optimizing underperforming pages.')
+      recommendations.push(' Improve average rankings by optimizing underperforming pages.')
     }
 
     // Technical recommendations
     const crawlErrors = Number(metrics.technical.find(m => m.name === 'Crawl Errors')?.value) || 0
     if (crawlErrors > 50) {
-      recommendations.push('🔧 High number of crawl errors detected. Fix technical issues immediately.')
+      recommendations.push(' High number of crawl errors detected. Fix technical issues immediately.')
     }
 
     // Content recommendations
     const contentQuality = Number(metrics.content.find(m => m.name === 'Content Quality Score')?.value) || 0
     if (contentQuality < 70) {
-      recommendations.push('📝 Content quality needs improvement. Focus on E-E-A-T signals.')
+      recommendations.push(' Content quality needs improvement. Focus on E-E-A-T signals.')
     }
 
     // Link recommendations
@@ -570,7 +570,7 @@ export class AnalyticsDashboardEngine {
     // System health recommendations
     const unhealthySystems = systemsStatus.filter(s => s.health < 70)
     if (unhealthySystems.length > 0) {
-      recommendations.push(`🔧 ${unhealthySystems.length} systems need attention: ${unhealthySystems.map(s => s.systemName).join(', ')}`)
+      recommendations.push(` ${unhealthySystems.length} systems need attention: ${unhealthySystems.map(s => s.systemName).join(', ')}`)
     }
 
     return recommendations
@@ -649,7 +649,7 @@ export class AnalyticsDashboardEngine {
 
   private scheduleRefresh(dashboardId: string, intervalMinutes: number) {
     // In production, this would set up actual scheduled refreshes
-    console.log(`⏰ Scheduled refresh every ${intervalMinutes} minutes`)
+    console.log(` Scheduled refresh every ${intervalMinutes} minutes`)
   }
 
   async refreshDashboard(dashboardId: string): Promise<AnalyticsDashboard> {
@@ -658,7 +658,7 @@ export class AnalyticsDashboardEngine {
       throw new Error('Dashboard not found')
     }
 
-    console.log(`🔄 Refreshing dashboard for ${dashboard.domain}...`)
+    console.log(` Refreshing dashboard for ${dashboard.domain}...`)
 
     // Re-collect all data
     const config = this.configs.get(dashboardId)!
@@ -685,7 +685,7 @@ export class AnalyticsDashboardEngine {
       throw new Error('Dashboard not found')
     }
 
-    console.log(`📄 Generating ${type} report for ${dashboard.domain}...`)
+    console.log(` Generating ${type} report for ${dashboard.domain}...`)
 
     const report: AnalyticsReport = {
       id: `report-${Date.now()}`,
@@ -718,13 +718,13 @@ export class AnalyticsDashboardEngine {
     // Traffic insights
     const trafficGrowth = dashboard.metrics.traffic[0].change
     if (trafficGrowth > 10) {
-      insights.push(`🚀 Exceptional traffic growth of ${trafficGrowth}% indicates successful SEO strategies`)
+      insights.push(` Exceptional traffic growth of ${trafficGrowth}% indicates successful SEO strategies`)
     }
 
     // Revenue insights
     const revenueGrowth = dashboard.metrics.revenue[0].change
     const conversionRate = dashboard.metrics.revenue[1].value
-    insights.push(`💰 Revenue increased by ${revenueGrowth}% with ${conversionRate}% conversion rate`)
+    insights.push(` Revenue increased by ${revenueGrowth}% with ${conversionRate}% conversion rate`)
 
     // System insights
     const activeSystems = dashboard.systemsStatus.filter(s => s.status === 'active').length
@@ -733,7 +733,7 @@ export class AnalyticsDashboardEngine {
     // Content insights
     const totalPages = dashboard.metrics.content[0].value
     const engagementRate = dashboard.metrics.content[2].value
-    insights.push(`📝 ${totalPages} pages generating ${engagementRate}% engagement rate`)
+    insights.push(` ${totalPages} pages generating ${engagementRate}% engagement rate`)
 
     // Link insights
     const backlinks = dashboard.metrics.links[0].value

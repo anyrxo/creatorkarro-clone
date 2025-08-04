@@ -119,7 +119,7 @@ export default function DevOpsAutomationPipelinePage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-blue-400 font-bold">🔄</span>
+                  <span className="text-blue-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">GitHub Actions</h3>
@@ -139,7 +139,7 @@ export default function DevOpsAutomationPipelinePage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-orange-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-orange-400 font-bold">🚀</span>
+                  <span className="text-orange-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Jenkins</h3>
@@ -159,7 +159,7 @@ export default function DevOpsAutomationPipelinePage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-purple-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-purple-400 font-bold">🔧</span>
+                  <span className="text-purple-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">GitLab CI/CD</h3>
@@ -199,7 +199,7 @@ export default function DevOpsAutomationPipelinePage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-cyan-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-cyan-400 font-bold">⚙️</span>
+                  <span className="text-cyan-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Kubernetes</h3>
@@ -219,7 +219,7 @@ export default function DevOpsAutomationPipelinePage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-yellow-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-yellow-400 font-bold">🏗️</span>
+                  <span className="text-yellow-400 font-bold">🏗</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Terraform</h3>

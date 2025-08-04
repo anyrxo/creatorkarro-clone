@@ -126,7 +126,7 @@ export default function TikTokGrowthHacks() {
                 </p>
 
                 <div className="bg-pink-500/10 border border-pink-500/20 rounded-2xl p-8 mb-8">
-                    <h2 className="text-2xl font-bold text-pink-400 mb-4">🚀 Why TikTok Is Different</h2>
+                    <h2 className="text-2xl font-bold text-pink-400 mb-4"> Why TikTok Is Different</h2>
                     <ul className="space-y-3 text-gray-300">
                         <li>• <span className="text-white font-semibold">Zero follower requirement</span> for going viral</li>
                         <li>• <span className="text-white font-semibold">70% of content shown to non-followers</span> on FYP</li>
@@ -176,11 +176,11 @@ export default function TikTokGrowthHacks() {
                     <div className="bg-zinc-900 rounded-lg p-6">
                         <h4 className="text-white font-semibold mb-3">Key Focus Areas:</h4>
                         <ul className="space-y-2 text-gray-300">
-                            <li>🎯 Analyze top 10% performing content</li>
-                            <li>🎯 Create variations of viral videos</li>
-                            <li>🎯 Optimize posting times</li>
-                            <li>🎯 Build series/recurring content</li>
-                            <li>🎯 Start live streaming weekly</li>
+                            <li> Analyze top 10% performing content</li>
+                            <li> Create variations of viral videos</li>
+                            <li> Optimize posting times</li>
+                            <li> Build series/recurring content</li>
+                            <li> Start live streaming weekly</li>
                         </ul>
                         <p className="text-pink-400 text-sm mt-4">Goal: 10,000 followers by day 60</p>
                     </div>
@@ -196,11 +196,11 @@ export default function TikTokGrowthHacks() {
                 <div className="bg-zinc-900 rounded-lg p-6">
                     <h4 className="text-white font-semibold mb-3">Scaling Strategy:</h4>
                     <ul className="space-y-2 text-gray-300">
-                        <li>⚡ Post only proven content types</li>
-                        <li>⚡ Collaborate with other creators</li>
-                        <li>⚡ Jump on trends within 24 hours</li>
-                        <li>⚡ Create response videos</li>
-                        <li>⚡ Launch signature series</li>
+                        <li> Post only proven content types</li>
+                        <li> Collaborate with other creators</li>
+                        <li> Jump on trends within 24 hours</li>
+                        <li> Create response videos</li>
+                        <li> Launch signature series</li>
                     </ul>
                     <p className="text-pink-400 text-sm mt-4">Goal: 100,000+ followers by day 90</p>
                 </div>
@@ -217,7 +217,7 @@ export default function TikTokGrowthHacks() {
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-pink-400 mb-4">🎭 The Pattern Interrupt</h3>
+                <h3 className="text-xl font-bold text-pink-400 mb-4"> The Pattern Interrupt</h3>
                 <p className="text-gray-400 mb-3">Start with unexpected visual/audio</p>
                 <div className="bg-zinc-800 rounded p-4">
                     <p className="text-sm text-gray-300">
@@ -228,7 +228,7 @@ export default function TikTokGrowthHacks() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">📊 The List Format</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> The List Format</h3>
                 <p className="text-gray-400 mb-3">Quick-fire valuable tips</p>
                 <div className="bg-zinc-800 rounded p-4">
                     <p className="text-sm text-gray-300">
@@ -261,7 +261,7 @@ export default function TikTokGrowthHacks() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-yellow-400 mb-4">💡 The Quick Tutorial</h3>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4"> The Quick Tutorial</h3>
                 <p className="text-gray-400 mb-3">15-second how-to</p>
                 <div className="bg-zinc-800 rounded p-4">
                     <p className="text-sm text-gray-300">
@@ -272,7 +272,7 @@ export default function TikTokGrowthHacks() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-red-400 mb-4">😱 The Controversy</h3>
+                <h3 className="text-xl font-bold text-red-400 mb-4"> The Controversy</h3>
                 <p className="text-gray-400 mb-3">Polarizing opinion (respectfully)</p>
                 <div className="bg-zinc-800 rounded p-4">
                     <p className="text-sm text-gray-300">

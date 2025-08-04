@@ -119,7 +119,7 @@ export default function ChatGPTAutomationPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-emerald-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-emerald-400 font-bold">🤖</span>
+                  <span className="text-emerald-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Custom GPT Automation</h3>
@@ -159,7 +159,7 @@ export default function ChatGPTAutomationPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-purple-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-purple-400 font-bold">📝</span>
+                  <span className="text-purple-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Content Generation Engine</h3>
@@ -179,7 +179,7 @@ export default function ChatGPTAutomationPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-cyan-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-cyan-400 font-bold">🎯</span>
+                  <span className="text-cyan-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Lead Qualification System</h3>
@@ -199,7 +199,7 @@ export default function ChatGPTAutomationPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-yellow-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-yellow-400 font-bold">📊</span>
+                  <span className="text-yellow-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Data Analysis Automation</h3>
@@ -219,7 +219,7 @@ export default function ChatGPTAutomationPage() {
             <div className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-red-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center mr-4">
-                  <span className="text-red-400 font-bold">🛠️</span>
+                  <span className="text-red-400 font-bold"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Customer Support Automation</h3>

@@ -69,7 +69,7 @@ const getEmailCampaigns = async (): Promise<EmailCampaign[]> => {
     {
       id: 'camp_001',
       name: 'Instagram Growth Tips Newsletter #47',
-      subject: '🚀 3 Instagram Growth Hacks That Got Me 50K Followers',
+      subject: ' 3 Instagram Growth Hacks That Got Me 50K Followers',
       type: 'newsletter',
       status: 'sent',
       createdAt: '2025-01-15T08:00:00Z',
@@ -101,7 +101,7 @@ const getEmailCampaigns = async (): Promise<EmailCampaign[]> => {
     {
       id: 'camp_002',
       name: 'Digital Products Flash Sale',
-      subject: '⚡ 48-Hour Flash Sale: 50% Off All Courses',
+      subject: ' 48-Hour Flash Sale: 50% Off All Courses',
       type: 'promotional',
       status: 'sent',
       createdAt: '2025-01-12T14:00:00Z',
@@ -133,7 +133,7 @@ const getEmailCampaigns = async (): Promise<EmailCampaign[]> => {
     {
       id: 'camp_003',
       name: 'AI Automation Course Update',
-      subject: '🤖 New Module Added: ChatGPT Advanced Workflows',
+      subject: ' New Module Added: ChatGPT Advanced Workflows',
       type: 'course_update',
       status: 'sent',
       createdAt: '2025-01-10T11:00:00Z',

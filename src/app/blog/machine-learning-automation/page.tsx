@@ -205,7 +205,7 @@ export default function MachineLearningAutomation() {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="text-blue-400">🛍️</span>
+                      <span className="text-blue-400">🛍</span>
                       <div>
                         <span className="text-white font-semibold">Retail Analytics:</span>
                         <span className="text-gray-400"> Track customer behavior and optimize store layouts</span>
@@ -247,12 +247,12 @@ export default function MachineLearningAutomation() {
                       <p className="text-sm text-gray-400">Monitor brand perception 24/7</p>
                     </div>
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">📄</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">Document Processing</h4>
                       <p className="text-sm text-gray-400">Extract data from any format</p>
                     </div>
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                      <div className="text-2xl mb-2">🤖</div>
+                      <div className="text-2xl mb-2"></div>
                       <h4 className="text-white font-semibold mb-1">Chatbot Training</h4>
                       <p className="text-sm text-gray-400">Self-improving conversational AI</p>
                     </div>

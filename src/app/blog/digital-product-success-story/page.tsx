@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S SUCCESS STORY CONVERSION
+// ⚔ ORYANA'S SUCCESS STORY CONVERSION
 // "Digital product success story" searchers want proof + inspiration
 // Redirect to our $497 course with real student success stories + framework
 

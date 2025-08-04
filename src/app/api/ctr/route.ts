@@ -128,7 +128,7 @@ export async function POST(request: NextRequest) {
       )
     }
     
-    console.log(`🎯 Deploying CTR Campaign: ${campaignName}`)
+    console.log(` Deploying CTR Campaign: ${campaignName}`)
     console.log(`🌐 Target URL: ${targetUrl}`)
     console.log(`🔑 Keywords: ${targetKeywords.join(', ')}`)
     

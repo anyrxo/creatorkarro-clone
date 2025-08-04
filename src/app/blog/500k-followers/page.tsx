@@ -133,7 +133,7 @@ export default function BlogPost() {
               
                     <div className="grid md:grid-cols-3 gap-4 mb-6">
                         <div className="bg-zinc-800 rounded-lg p-4 text-center">
-                            <div className="text-2xl mb-2">🏋️</div>
+                            <div className="text-2xl mb-2">🏋</div>
                             <div className="text-gray-400">Workout videos</div>
                         </div>
                         <div className="bg-zinc-800 rounded-lg p-4 text-center">
@@ -260,7 +260,7 @@ export default function BlogPost() {
           
             <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-zinc-800 rounded-lg p-6">
-                    <div className="text-2xl mb-3">🎯</div>
+                    <div className="text-2xl mb-3"></div>
                     <h3 className="text-white font-semibold mb-2">Niche Focus</h3>
                     <p className="text-gray-400">Pick one specific audience and serve them deeply</p>
                 </div>
@@ -272,13 +272,13 @@ export default function BlogPost() {
                 </div>
             
                 <div className="bg-zinc-800 rounded-lg p-6">
-                    <div className="text-2xl mb-3">💎</div>
+                    <div className="text-2xl mb-3"></div>
                     <h3 className="text-white font-semibold mb-2">Value First</h3>
                     <p className="text-gray-400">Always lead with value before asking for anything</p>
                 </div>
             
                 <div className="bg-zinc-800 rounded-lg p-6">
-                    <div className="text-2xl mb-3">⚙️</div>
+                    <div className="text-2xl mb-3"></div>
                     <h3 className="text-white font-semibold mb-2">System Over Hustle</h3>
                     <p className="text-gray-400">Follow proven frameworks rather than random tactics</p>
                 </div>

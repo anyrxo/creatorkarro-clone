@@ -133,7 +133,7 @@ export async function POST(request: NextRequest) {
     }
     
     // Log violation for monitoring
-    console.log(`🛡️ Security Violation [${threatLevel.toUpperCase()}]:`, {
+    console.log(`🛡 Security Violation [${threatLevel.toUpperCase()}]:`, {
       ip,
       reason: violation.reason,
       userAgent: violation.userAgent.substring(0, 100),

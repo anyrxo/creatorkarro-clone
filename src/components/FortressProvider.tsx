@@ -158,7 +158,7 @@ export function FortressProvider({ children }: FortressProviderProps) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="max-w-md p-8 bg-white rounded-lg shadow-lg text-center">
-          <div className="text-6xl mb-4">🛡️</div>
+          <div className="text-6xl mb-4">🛡</div>
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Access Restricted</h1>
           <p className="text-gray-600 mb-4">
             Our security system has detected automated access patterns. 

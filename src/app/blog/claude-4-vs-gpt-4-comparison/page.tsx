@@ -392,7 +392,7 @@ export default function Claude4ComparisonPage() {
                   <td className="p-6 font-semibold">API Availability</td>
                   <td className="text-center p-6 text-blue-400">✅ Available</td>
                   <td className="text-center p-6 text-green-400">✅ Available</td>
-                  <td className="text-center p-6 text-purple-400">🔄 Limited</td>
+                  <td className="text-center p-6 text-purple-400"> Limited</td>
                 </tr>
                 <tr>
                   <td className="p-6 font-semibold">Open Source</td>
@@ -531,7 +531,7 @@ export default function Claude4ComparisonPage() {
             <div className="p-8 bg-gradient-to-r from-blue-500/10 to-cyan-600/10 rounded-xl border border-blue-500/30">
               <div className="flex items-start space-x-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-xl">💻</span>
+                  <span className="text-white font-bold text-xl"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Full-Stack Application Development</h3>
@@ -549,7 +549,7 @@ export default function Claude4ComparisonPage() {
             <div className="p-8 bg-gradient-to-r from-green-500/10 to-emerald-600/10 rounded-xl border border-green-500/30">
               <div className="flex items-start space-x-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-xl">🤖</span>
+                  <span className="text-white font-bold text-xl"></span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Automation Script Generation</h3>

@@ -100,8 +100,8 @@ export async function POST(request: NextRequest) {
       )
     }
     
-    console.log(`🚀 Deploying PBN Network: ${networkName}`)
-    console.log(`🎯 Money Site: ${moneysite}`)
+    console.log(` Deploying PBN Network: ${networkName}`)
+    console.log(` Money Site: ${moneysite}`)
     console.log(`🔑 Keywords: ${targetKeywords.join(', ')}`)
     
     let network

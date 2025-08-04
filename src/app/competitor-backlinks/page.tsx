@@ -48,7 +48,7 @@ export default async function CompetitorBacklinksPage() {
       <section className="bg-gradient-to-r from-purple-900 to-gray-900 py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center space-x-3 mb-4">
-            <span className="text-4xl">🔍</span>
+            <span className="text-4xl"></span>
             <h1 className="text-4xl font-bold">
               Competitor Backlink Replication
             </h1>
@@ -88,7 +88,7 @@ export default async function CompetitorBacklinksPage() {
             {[
               { 
                 name: 'Guest Post Outreach', 
-                icon: '📝', 
+                icon: '', 
                 success: '25%', 
                 timeframe: '14 days',
                 color: 'blue',
@@ -104,7 +104,7 @@ export default async function CompetitorBacklinksPage() {
               },
               { 
                 name: 'Skyscraper Technique', 
-                icon: '🏗️', 
+                icon: '🏗', 
                 success: '30%', 
                 timeframe: '21 days',
                 color: 'purple',
@@ -112,7 +112,7 @@ export default async function CompetitorBacklinksPage() {
               },
               { 
                 name: 'Resource Page Inclusion', 
-                icon: '📚', 
+                icon: '', 
                 success: '35%', 
                 timeframe: '10 days',
                 color: 'yellow',
@@ -327,7 +327,7 @@ export default async function CompetitorBacklinksPage() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">🎯 Smart Targeting</h3>
+              <h3 className="text-xl font-semibold text-purple-400 mb-4"> Smart Targeting</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Authority-weighted opportunity scoring</li>
                 <li>• Contextual relevance analysis</li>
@@ -339,7 +339,7 @@ export default async function CompetitorBacklinksPage() {
             </div>
             
             <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-blue-400 mb-4">🤖 Automation Engine</h3>
+              <h3 className="text-xl font-semibold text-blue-400 mb-4"> Automation Engine</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Personalized outreach templates</li>
                 <li>• Follow-up sequence automation</li>
@@ -351,7 +351,7 @@ export default async function CompetitorBacklinksPage() {
             </div>
             
             <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-green-400 mb-4">📊 Analytics & Insights</h3>
+              <h3 className="text-xl font-semibold text-green-400 mb-4"> Analytics & Insights</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Real-time campaign tracking</li>
                 <li>• Competitor intelligence updates</li>
@@ -363,7 +363,7 @@ export default async function CompetitorBacklinksPage() {
             </div>
             
             <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-yellow-400 mb-4">⚡ Scale & Efficiency</h3>
+              <h3 className="text-xl font-semibold text-yellow-400 mb-4"> Scale & Efficiency</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Bulk competitor analysis</li>
                 <li>• Multi-strategy campaigns</li>

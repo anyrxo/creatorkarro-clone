@@ -375,9 +375,9 @@ export class LinkWheelConstructionEngine {
     } = options
 
     console.log(`🔗 Constructing Link Wheel: ${wheelName}`)
-    console.log(`🎯 Money Site: ${moneysite}`)
-    console.log(`🏗️ Pattern: ${pattern}`)
-    console.log(`📊 Structure: T1:${tier1Sites}, T2:${tier2Sites}, T3:${tier3Sites}, Buffer:${bufferSites}`)
+    console.log(` Money Site: ${moneysite}`)
+    console.log(`🏗 Pattern: ${pattern}`)
+    console.log(` Structure: T1:${tier1Sites}, T2:${tier2Sites}, T3:${tier3Sites}, Buffer:${bufferSites}`)
 
     // Select optimal sites for each tier
     const tier1 = this.selectTierSites('tier1', tier1Sites, contentThemes)
@@ -442,8 +442,8 @@ export class LinkWheelConstructionEngine {
 
     console.log(`✅ Link Wheel Constructed Successfully`)
     console.log(`🌐 Total Sites: ${linkWheel.strategy.totalSites}`)
-    console.log(`⚡ Link Juice Flow: ${projectedImpact.linkJuiceFlow}`)
-    console.log(`🛡️ Safety Score: ${safetyProfile.qualityScore}/100`)
+    console.log(` Link Juice Flow: ${projectedImpact.linkJuiceFlow}`)
+    console.log(`🛡 Safety Score: ${safetyProfile.qualityScore}/100`)
 
     return linkWheel
   }

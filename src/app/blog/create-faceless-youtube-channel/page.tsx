@@ -122,7 +122,7 @@ export default function CreateFacelessYouTubeChannel() {
                 </p>
 
                 <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-8 mb-8">
-                    <h2 className="text-2xl font-bold text-red-400 mb-4">🎯 Why Faceless Channels Win</h2>
+                    <h2 className="text-2xl font-bold text-red-400 mb-4"> Why Faceless Channels Win</h2>
                     <ul className="space-y-3 text-gray-300">
                         <li>• <span className="text-white font-semibold">Privacy protected</span> - Stay anonymous forever</li>
                         <li>• <span className="text-white font-semibold">Scalable</span> - Run multiple channels simultaneously</li>
@@ -151,7 +151,7 @@ export default function CreateFacelessYouTubeChannel() {
                 </div>
             
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <div className="text-3xl mb-4">💰</div>
+                    <div className="text-3xl mb-4"></div>
                     <h3 className="text-xl font-bold text-green-400 mb-3">Finance/Investing</h3>
                     <div className="space-y-2 text-sm text-gray-300">
                         <p><span className="text-green-400">CPM:</span> $12-25</p>
@@ -161,7 +161,7 @@ export default function CreateFacelessYouTubeChannel() {
                 </div>
             
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <div className="text-3xl mb-4">🏋️</div>
+                    <div className="text-3xl mb-4">🏋</div>
                     <h3 className="text-xl font-bold text-blue-400 mb-3">Health/Fitness</h3>
                     <div className="space-y-2 text-sm text-gray-300">
                         <p><span className="text-green-400">CPM:</span> $6-12</p>
@@ -171,7 +171,7 @@ export default function CreateFacelessYouTubeChannel() {
                 </div>
             
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <div className="text-3xl mb-4">🎮</div>
+                    <div className="text-3xl mb-4"></div>
                     <h3 className="text-xl font-bold text-purple-400 mb-3">Gaming Content</h3>
                     <div className="space-y-2 text-sm text-gray-300">
                         <p><span className="text-green-400">CPM:</span> $2-8</p>
@@ -181,7 +181,7 @@ export default function CreateFacelessYouTubeChannel() {
                 </div>
             
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <div className="text-3xl mb-4">📚</div>
+                    <div className="text-3xl mb-4"></div>
                     <h3 className="text-xl font-bold text-pink-400 mb-3">Book Summaries</h3>
                     <div className="space-y-2 text-sm text-gray-300">
                         <p><span className="text-green-400">CPM:</span> $5-10</p>
@@ -191,7 +191,7 @@ export default function CreateFacelessYouTubeChannel() {
                 </div>
             
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <div className="text-3xl mb-4">🌍</div>
+                    <div className="text-3xl mb-4"></div>
                     <h3 className="text-xl font-bold text-yellow-400 mb-3">Travel/Geography</h3>
                     <div className="space-y-2 text-sm text-gray-300">
                         <p><span className="text-green-400">CPM:</span> $3-8</p>
@@ -308,7 +308,7 @@ export default function CreateFacelessYouTubeChannel() {
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-red-400 mb-4">🎙️ Voice &amp; Audio</h3>
+                <h3 className="text-xl font-bold text-red-400 mb-4">🎙 Voice &amp; Audio</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• <span className="text-white">ElevenLabs:</span> AI voices ($5/mo)</li>
                     <li>• <span className="text-white">Murf.ai:</span> Natural voices ($19/mo)</li>
@@ -338,7 +338,7 @@ export default function CreateFacelessYouTubeChannel() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">📊 Research &amp; SEO</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Research &amp; SEO</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• <span className="text-white">VidIQ:</span> Keyword research ($7/mo)</li>
                     <li>• <span className="text-white">TubeBuddy:</span> Optimization ($9/mo)</li>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S STRATEGIC REDIRECT - N8N TRAFFIC HIJACKING
+// ⚔ ORYANA'S STRATEGIC REDIRECT - N8N TRAFFIC HIJACKING
 // This page redirects directly to our $297 N8N course for maximum conversions
 // "n8n automation success" searchers want results → we give them the course that delivers results
 

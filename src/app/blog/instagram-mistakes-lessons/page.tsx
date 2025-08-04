@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S AUTHORITY CONSOLIDATION
+// ⚔ ORYANA'S AUTHORITY CONSOLIDATION
 // Instagram mistakes/lessons content consolidated into our comprehensive growth guide
 // Eliminates thin content while strengthening our Instagram authority pillar
 

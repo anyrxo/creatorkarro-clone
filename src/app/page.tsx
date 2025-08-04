@@ -161,7 +161,7 @@ export default function HomePage() {
           >
             <div className="flex justify-center mb-8">
               <AnimatedGradientText>
-                🚀 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+                 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
                 <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
                   Introducing our proven system
                 </span>
@@ -375,8 +375,8 @@ export default function HomePage() {
       <section className="relative py-12 bg-black overflow-hidden">
         <Marquee className="[--duration:40s]" pauseOnHover>
           {[
-            "Just hit 100K followers using these strategies! 🚀",
-            "Made my first $10K month with digital products 💰",
+            "Just hit 100K followers using these strategies! ",
+            "Made my first $10K month with digital products ",
             "The automation course saved me 40 hours per week!",
             "From 0 to 50K in 3 months - this system works!",
             "Best investment I've made in my creator journey",

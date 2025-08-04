@@ -142,8 +142,8 @@ export default function AIInfluencerSuccess() {
                     <p className="text-pink-400 mb-3">Fashion & Lifestyle</p>
                     <div className="space-y-2 text-sm text-gray-400">
                         <div>📍 128K followers</div>
-                        <div>💰 $3,500/month</div>
-                        <div>🎯 18-24 female audience</div>
+                        <div> $3,500/month</div>
+                        <div> 18-24 female audience</div>
                     </div>
                     <p className="text-gray-400 mt-4">
                 Trendy fashionista sharing daily outfits, beauty tips, and lifestyle content. Partners with fashion brands globally.
@@ -156,8 +156,8 @@ export default function AIInfluencerSuccess() {
                     <p className="text-blue-400 mb-3">Fitness & Wellness</p>
                     <div className="space-y-2 text-sm text-gray-400">
                         <div>📍 87K followers</div>
-                        <div>💰 $2,800/month</div>
-                        <div>🎯 25-35 health conscious</div>
+                        <div> $2,800/month</div>
+                        <div> 25-35 health conscious</div>
                     </div>
                     <p className="text-gray-400 mt-4">
                 Fitness coach sharing workout routines, meal prep ideas, and motivation. Works with supplement brands.
@@ -170,8 +170,8 @@ export default function AIInfluencerSuccess() {
                     <p className="text-green-400 mb-3">Tech & Gaming</p>
                     <div className="space-y-2 text-sm text-gray-400">
                         <div>📍 42K followers</div>
-                        <div>💰 $1,700/month</div>
-                        <div>🎯 16-25 gamers</div>
+                        <div> $1,700/month</div>
+                        <div> 16-25 gamers</div>
                     </div>
                     <p className="text-gray-400 mt-4">
                 Tech reviewer and gaming enthusiast. Partners with gaming peripherals and software companies.

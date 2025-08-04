@@ -109,7 +109,7 @@ export default function Claude4AgenticCodingPage() {
             <div className="prose prose-lg prose-invert max-w-4xl mx-auto">
           
                 <div className="bg-gradient-to-r from-purple-900/20 to-blue-900/20 p-6 rounded-lg border border-purple-500/20 mb-8">
-                    <h2 className="text-2xl font-bold text-purple-400 mb-4">⚡ Key Takeaways</h2>
+                    <h2 className="text-2xl font-bold text-purple-400 mb-4"> Key Takeaways</h2>
                     <ul className="text-gray-300 space-y-2">
                         <li>• Claude 4 abandons the chatbot race to focus on agentic coding infrastructure</li>
                         <li>• Hybrid thinking enables both instant responses and deep reasoning</li>
@@ -187,7 +187,7 @@ export default function Claude4AgenticCodingPage() {
 
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                     <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
-                        <h3 className="text-xl font-bold text-purple-400 mb-3">🔧 Claude Code (GA)</h3>
+                        <h3 className="text-xl font-bold text-purple-400 mb-3"> Claude Code (GA)</h3>
                         <p className="text-gray-300 mb-3">
                 Generally available IDE integration offering:
                         </p>
@@ -214,7 +214,7 @@ export default function Claude4AgenticCodingPage() {
                     </div>
 
                     <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
-                        <h3 className="text-xl font-bold text-purple-400 mb-3">📁 Files API</h3>
+                        <h3 className="text-xl font-bold text-purple-400 mb-3"> Files API</h3>
                         <p className="text-gray-300 mb-3">
                 Direct file system access featuring:
                         </p>
@@ -227,7 +227,7 @@ export default function Claude4AgenticCodingPage() {
                     </div>
 
                     <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
-                        <h3 className="text-xl font-bold text-purple-400 mb-3">🚀 Advanced Features</h3>
+                        <h3 className="text-xl font-bold text-purple-400 mb-3"> Advanced Features</h3>
                         <ul className="text-gray-300 space-y-1">
                             <li>• <strong>Prompt Caching:</strong> 1-hour cache reduces costs</li>
                             <li>• <strong>Python Execution:</strong> Live script testing</li>
@@ -244,7 +244,7 @@ export default function Claude4AgenticCodingPage() {
                 </p>
 
                 <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 p-6 rounded-lg border border-green-500/20 mb-8">
-                    <h3 className="text-2xl font-bold text-green-400 mb-4">🏆 Leading Benchmarks</h3>
+                    <h3 className="text-2xl font-bold text-green-400 mb-4"> Leading Benchmarks</h3>
                     <div className="grid md:grid-cols-3 gap-6">
                         <div className="text-center">
                             <div className="text-3xl font-bold text-green-400">80.2%</div>
@@ -265,7 +265,7 @@ export default function Claude4AgenticCodingPage() {
                 </div>
 
                 <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700 mb-8">
-                    <h3 className="text-xl font-bold text-white mb-4">📊 Competitive Analysis</h3>
+                    <h3 className="text-xl font-bold text-white mb-4"> Competitive Analysis</h3>
                     <div className="overflow-x-auto">
                         <table className="w-full text-gray-300">
                             <thead>
@@ -328,7 +328,7 @@ export default function Claude4AgenticCodingPage() {
                 <blockquote className="border-l-4 border-purple-500 pl-6 my-8 italic text-gray-300">"The 100th time you use Claude 4 should be much better than the first." - Anthropic
                 </blockquote>
 
-                <h3 className="text-2xl font-bold text-white mb-4">🛡️ Safety-First Agentic Design</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">🛡 Safety-First Agentic Design</h3>
 
                 <p className="text-gray-300 mb-6">
             Autonomous AI systems raise legitimate safety concerns. Claude 4 addresses these with measurable improvements:
@@ -350,7 +350,7 @@ export default function Claude4AgenticCodingPage() {
             The enterprise AI market moves fast, and Claude 4's adoption metrics reflect genuine industry confidence:
                 </p>
 
-                <h3 className="text-2xl font-bold text-white mb-4">🚀 Major Integrations</h3>
+                <h3 className="text-2xl font-bold text-white mb-4"> Major Integrations</h3>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                     <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
@@ -381,7 +381,7 @@ export default function Claude4AgenticCodingPage() {
                 </p>
 
                 <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 p-6 rounded-lg border border-blue-500/20 mb-8">
-                    <h3 className="text-2xl font-bold text-blue-400 mb-4">💰 Claude 4 Opus Pricing</h3>
+                    <h3 className="text-2xl font-bold text-blue-400 mb-4"> Claude 4 Opus Pricing</h3>
                     <div className="grid md:grid-cols-2 gap-6">
                         <div>
                             <h4 className="font-bold text-white mb-2">Standard Rates</h4>
@@ -419,7 +419,7 @@ export default function Claude4AgenticCodingPage() {
 
                 <h2 className="text-3xl font-bold text-white mb-6">Implementation Guide: Getting Started with Claude 4</h2>
 
-                <h3 className="text-2xl font-bold text-white mb-4">🛠️ Step-by-Step Integration</h3>
+                <h3 className="text-2xl font-bold text-white mb-4"> Step-by-Step Integration</h3>
 
                 <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700 mb-8">
                     <h4 className="text-xl font-bold text-purple-400 mb-4">1. Development Environment Setup</h4>
@@ -479,7 +479,7 @@ claude-cli create-workflow \\
                 </p>
 
                 <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700 mb-8">
-                    <h4 className="text-xl font-bold text-yellow-400 mb-3">⚡ Expected Market Reactions</h4>
+                    <h4 className="text-xl font-bold text-yellow-400 mb-3"> Expected Market Reactions</h4>
                     <ul className="text-gray-300 space-y-2">
                         <li>• <strong>OpenAI:</strong> Likely to enhance ChatGPT's coding capabilities and introduce agentic features</li>
                         <li>• <strong>Google:</strong> Gemini integration with Google Cloud services for enterprise workflows</li>
@@ -495,7 +495,7 @@ claude-cli create-workflow \\
                 </p>
 
                 <div className="bg-gradient-to-r from-purple-900/20 to-blue-900/20 p-6 rounded-lg border border-purple-500/20 mb-8">
-                    <h3 className="text-2xl font-bold text-purple-400 mb-4">🎯 Strategic Recommendations</h3>
+                    <h3 className="text-2xl font-bold text-purple-400 mb-4"> Strategic Recommendations</h3>
             
                     <h4 className="font-bold text-white mb-2">For Enterprise Leaders:</h4>
                     <ul className="text-gray-300 mb-4 space-y-1">
@@ -537,7 +537,7 @@ claude-cli create-workflow \\
                 </p>
 
                 <div className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 p-8 rounded-lg border border-purple-500/30 mb-8">
-                    <h3 className="text-2xl font-bold text-white mb-4">🚀 Ready to Implement Agentic AI?</h3>
+                    <h3 className="text-2xl font-bold text-white mb-4"> Ready to Implement Agentic AI?</h3>
                     <p className="text-gray-300 mb-6">
               At IImagined.ai, we specialize in enterprise AI implementation and automation strategy. Whether you're evaluating Claude 4 for your organization or planning a comprehensive agentic AI rollout, we can help you navigate this transformation.
                     </p>

@@ -92,28 +92,28 @@ export default function WhyN8NisDifferent() {
                 <div className="bg-zinc-900 rounded-xl p-8">
                     <div className="space-y-4">
                         <div className="flex items-start gap-3">
-                            <span className="text-red-400 mt-1">⚠️</span>
+                            <span className="text-red-400 mt-1">⚠</span>
                             <div>
                                 <p className="text-white font-semibold">Most platforms lock you in</p>
                                 <p className="text-gray-400 text-sm">Proprietary systems, no export options, vendor dependency</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-3">
-                            <span className="text-red-400 mt-1">⚠️</span>
+                            <span className="text-red-400 mt-1">⚠</span>
                             <div>
                                 <p className="text-white font-semibold">Pricing scales with success</p>
                                 <p className="text-gray-400 text-sm">The more you automate, the more you pay (forever)</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-3">
-                            <span className="text-red-400 mt-1">⚠️</span>
+                            <span className="text-red-400 mt-1">⚠</span>
                             <div>
                                 <p className="text-white font-semibold">Limited by their imagination</p>
                                 <p className="text-gray-400 text-sm">Can only do what they've pre-built, no custom code</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-3">
-                            <span className="text-red-400 mt-1">⚠️</span>
+                            <span className="text-red-400 mt-1">⚠</span>
                             <div>
                                 <p className="text-white font-semibold">Data lives on their servers</p>
                                 <p className="text-gray-400 text-sm">Privacy concerns, compliance issues, no control</p>
@@ -283,14 +283,14 @@ export default function WhyN8NisDifferent() {
                     <tr className="border-b border-gray-800">
                         <td className="py-3 px-4 text-gray-300">Visual workflow builder</td>
                         <td className="text-center py-3 px-4">✅ (Node-based)</td>
-                        <td className="text-center py-3 px-4">⚠️ (Linear)</td>
+                        <td className="text-center py-3 px-4">⚠ (Linear)</td>
                         <td className="text-center py-3 px-4">✅ (Scenario)</td>
                     </tr>
                     <tr className="border-b border-gray-800">
                         <td className="py-3 px-4 text-gray-300">Custom code support</td>
                         <td className="text-center py-3 px-4">✅ Full JS/Python</td>
-                        <td className="text-center py-3 px-4">⚠️ Limited</td>
-                        <td className="text-center py-3 px-4">⚠️ Limited</td>
+                        <td className="text-center py-3 px-4">⚠ Limited</td>
+                        <td className="text-center py-3 px-4">⚠ Limited</td>
                     </tr>
                     <tr className="border-b border-gray-800">
                         <td className="py-3 px-4 text-gray-300">Pricing for 100k executions</td>
@@ -308,7 +308,7 @@ export default function WhyN8NisDifferent() {
                         <td className="py-3 px-4 text-gray-300">Workflow export/import</td>
                         <td className="text-center py-3 px-4">✅</td>
                         <td className="text-center py-3 px-4">❌</td>
-                        <td className="text-center py-3 px-4">⚠️</td>
+                        <td className="text-center py-3 px-4">⚠</td>
                     </tr>
                     <tr>
                         <td className="py-3 px-4 text-gray-300">Community nodes</td>
@@ -342,7 +342,7 @@ export default function WhyN8NisDifferent() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <div className="text-3xl mb-3">🚀</div>
+                <div className="text-3xl mb-3"></div>
                 <h3 className="text-xl font-bold text-white mb-2">Startup Scale</h3>
                 <p className="text-gray-400 mb-3">When you need to move fast and cheap</p>
                 <ul className="space-y-1 text-sm text-gray-300">
@@ -353,7 +353,7 @@ export default function WhyN8NisDifferent() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <div className="text-3xl mb-3">💰</div>
+                <div className="text-3xl mb-3"></div>
                 <h3 className="text-xl font-bold text-white mb-2">Creator Business</h3>
                 <p className="text-gray-400 mb-3">When margins matter</p>
                 <ul className="space-y-1 text-sm text-gray-300">
@@ -364,7 +364,7 @@ export default function WhyN8NisDifferent() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <div className="text-3xl mb-3">🔧</div>
+                <div className="text-3xl mb-3"></div>
                 <h3 className="text-xl font-bold text-white mb-2">Developer Tools</h3>
                 <p className="text-gray-400 mb-3">When you need real programming</p>
                 <ul className="space-y-1 text-sm text-gray-300">
@@ -384,7 +384,7 @@ export default function WhyN8NisDifferent() {
         <div className="bg-zinc-800 rounded-xl p-8">
             <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                    <h3 className="text-xl font-bold text-blue-400 mb-4">🌥️ Cloud (Easiest)</h3>
+                    <h3 className="text-xl font-bold text-blue-400 mb-4">🌥 Cloud (Easiest)</h3>
                     <ol className="space-y-3 text-gray-300">
                         <li>1. Sign up at n8n.cloud</li>
                         <li>2. Create your first workflow</li>
@@ -395,7 +395,7 @@ export default function WhyN8NisDifferent() {
                 </div>
               
                 <div>
-                    <h3 className="text-xl font-bold text-green-400 mb-4">🖥️ Self-Host (Free)</h3>
+                    <h3 className="text-xl font-bold text-green-400 mb-4"> Self-Host (Free)</h3>
                     <div className="bg-zinc-900 rounded p-4 mb-3">
                         <code className="text-green-400 text-sm">
                     npx n8n

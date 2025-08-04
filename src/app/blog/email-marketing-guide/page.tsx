@@ -122,7 +122,7 @@ export default function EmailMarketingGuide() {
                 </p>
 
                 <div className="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-8 mb-8">
-                    <h2 className="text-2xl font-bold text-blue-400 mb-4">💰 Why Email Beats Everything</h2>
+                    <h2 className="text-2xl font-bold text-blue-400 mb-4"> Why Email Beats Everything</h2>
                     <ul className="space-y-3 text-gray-300">
                         <li>• <span className="text-white font-semibold">$42 ROI for every $1 spent</span></li>
                         <li>• <span className="text-white font-semibold">You own your list</span> (unlike social media)</li>
@@ -249,9 +249,9 @@ export default function EmailMarketingGuide() {
         <h2 className="text-3xl font-bold text-white mb-8 text-center">High-Converting Email Templates</h2>
           
         <div className="grid md:grid-cols-2 gap-6"><div className="bg-zinc-900 rounded-xl p-6">
-            <h3 className="text-xl font-bold text-blue-400 mb-4">🎉 Welcome Email Template</h3>
+            <h3 className="text-xl font-bold text-blue-400 mb-4"> Welcome Email Template</h3>
             <div className="bg-zinc-800 rounded p-4 font-mono text-sm text-gray-300">
-                <p className="mb-2">Subject: Your [free resource] is here! 🎁</p>
+                <p className="mb-2">Subject: Your [free resource] is here! </p>
                 <p className="mb-2">---</p>
                 <p className="mb-2">Hey [Name],</p>
                 <p className="mb-2">Welcome to the family!</p>
@@ -263,7 +263,7 @@ export default function EmailMarketingGuide() {
             </div>
             <p className="text-green-400 text-sm mt-3">47% open rate, 12% reply rate</p>
         </div><div className="bg-zinc-900 rounded-xl p-6">
-        <h3 className="text-xl font-bold text-green-400 mb-4">💰 Sales Email Template</h3>
+        <h3 className="text-xl font-bold text-green-400 mb-4"> Sales Email Template</h3>
         <div className="bg-zinc-800 rounded p-4 font-mono text-sm text-gray-300">
             <p className="mb-2">Subject: Last chance (closing at midnight)</p>
             <p className="mb-2">---</p>
@@ -299,7 +299,7 @@ export default function EmailMarketingGuide() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">🛠️ Optimization Tools</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Optimization Tools</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• <span className="text-white">Subject Line Tester:</span> CoSchedule</li>
                     <li>• <span className="text-white">Email Grader:</span> Mail Tester</li>
@@ -309,7 +309,7 @@ export default function EmailMarketingGuide() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-green-400 mb-4">💡 Growth Tactics</h3>
+                <h3 className="text-xl font-bold text-green-400 mb-4"> Growth Tactics</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>• <span className="text-white">Lead Magnets:</span> Templates, guides</li>
                     <li>• <span className="text-white">Quiz Funnels:</span> Bucket.io</li>

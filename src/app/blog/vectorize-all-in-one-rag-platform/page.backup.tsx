@@ -468,21 +468,21 @@ export default function VectorizeRAGPlatformPage() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔄</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-2">Auto-Sync</h4>
               <p className="text-gray-700 text-sm">Automatically detects and processes new content from connected sources</p>
             </div>
             <div className="text-center">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚡</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-2">Fast Processing</h4>
               <p className="text-gray-700 text-sm">Optimized processing speeds with intelligent resource allocation</p>
             </div>
             <div className="text-center">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🛡️</span>
+                <span className="text-2xl">🛡</span>
               </div>
               <h4 className="font-semibold mb-2">Secure Transfer</h4>
               <p className="text-gray-700 text-sm">Enterprise-grade security with encrypted data transmission</p>
@@ -607,7 +607,7 @@ export default function VectorizeRAGPlatformPage() {
           <div className="grid lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎯</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-2">Query Accuracy</h4>
               <p className="text-gray-700 text-sm">Measures how well retrieved documents match query intent</p>
@@ -615,7 +615,7 @@ export default function VectorizeRAGPlatformPage() {
 
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📊</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-2">Precision & Recall</h4>
               <p className="text-gray-700 text-sm">Evaluates relevance and completeness of search results</p>
@@ -623,7 +623,7 @@ export default function VectorizeRAGPlatformPage() {
 
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚡</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-2">Latency Analysis</h4>
               <p className="text-gray-700 text-sm">Monitors response times and system performance</p>
@@ -631,7 +631,7 @@ export default function VectorizeRAGPlatformPage() {
 
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🏆</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-2">Ranking Quality</h4>
               <p className="text-gray-700 text-sm">Assesses relevancy ranking and result ordering</p>
@@ -1652,7 +1652,7 @@ export default function VectorizeRAGPlatformPage() {
           <div className="grid lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🤖</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-3 text-center">Advanced AI Integration</h4>
               <ul className="text-sm text-gray-700 space-y-2">
@@ -1666,7 +1666,7 @@ export default function VectorizeRAGPlatformPage() {
 
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔧</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-3 text-center">Automation Enhancements</h4>
               <ul className="text-sm text-gray-700 space-y-2">

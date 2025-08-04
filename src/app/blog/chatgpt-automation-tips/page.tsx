@@ -255,7 +255,7 @@ export default function ChatGPTAutomationTips() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">🔄 Chain Prompting</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> Chain Prompting</h3>
                 <p className="text-gray-300 mb-3">Break complex tasks into steps</p>
                 <ul className="space-y-2 text-sm text-gray-300">
                     <li>• Research → Outline → Write</li>
@@ -266,7 +266,7 @@ export default function ChatGPTAutomationTips() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">📊 Data Processing</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Data Processing</h3>
                 <p className="text-gray-300 mb-3">Turn ChatGPT into a data analyst</p>
                 <ul className="space-y-2 text-sm text-gray-300">
                     <li>• CSV analysis & insights</li>

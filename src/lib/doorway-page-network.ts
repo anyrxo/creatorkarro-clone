@@ -584,7 +584,7 @@ export class DoorwayPageNetworkEngine {
     } = {}
   ): Promise<DoorwayNetwork> {
     console.log(`🌐 Deploying Doorway Page Network: ${networkName}`)
-    console.log(`🎯 Target URL: ${targetUrl}`)
+    console.log(` Target URL: ${targetUrl}`)
     console.log(`🔑 Main Keywords: ${mainKeywords.join(', ')}`)
     
     const {
@@ -597,11 +597,11 @@ export class DoorwayPageNetworkEngine {
       qualityLevel = 'premium'
     } = options
 
-    console.log(`📋 Template: ${template}`)
-    console.log(`🗺️ Strategy: ${strategy}`)
+    console.log(` Template: ${template}`)
+    console.log(`🗺 Strategy: ${strategy}`)
     console.log(`🔗 Linking: ${linkingPattern}`)
     console.log(`📍 Targets: ${geographicTargets.join(', ')}`)
-    console.log(`📄 Pages: ${pageCount}`)
+    console.log(` Pages: ${pageCount}`)
     
     // Generate doorway pages based on strategy
     const pages = await this.generateDoorwayPages(
@@ -622,7 +622,7 @@ export class DoorwayPageNetworkEngine {
     
     // Calculate safety profile
     const safetyProfile = this.calculateSafetyProfile(linkedPages, contentVariation)
-    console.log(`🛡️ Safety Profile: ${safetyProfile.penaltyRisk} risk`)
+    console.log(`🛡 Safety Profile: ${safetyProfile.penaltyRisk} risk`)
     
     // Configure automation features
     const automation = {
@@ -655,12 +655,12 @@ export class DoorwayPageNetworkEngine {
     // Calculate expected performance
     const projections = this.calculateNetworkProjections(network)
     
-    console.log(`\n📊 Network Deployment Complete:`)
+    console.log(`\n Network Deployment Complete:`)
     console.log(`🌐 Total Pages: ${network.pages.length}`)
-    console.log(`📈 Expected Traffic: +${projections.monthlyTraffic}/month`)
-    console.log(`🎯 Conversion Potential: ${projections.conversionPotential} leads`)
-    console.log(`💰 Revenue Projection: $${projections.revenueProjection}/month`)
-    console.log(`🔍 SEO Impact: ${projections.seoImpact}% visibility increase`)
+    console.log(` Expected Traffic: +${projections.monthlyTraffic}/month`)
+    console.log(` Conversion Potential: ${projections.conversionPotential} leads`)
+    console.log(` Revenue Projection: $${projections.revenueProjection}/month`)
+    console.log(` SEO Impact: ${projections.seoImpact}% visibility increase`)
     
     return network
   }

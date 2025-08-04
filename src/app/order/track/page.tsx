@@ -314,7 +314,7 @@ export default function OrderTrackingPage() {
             {/* Course Access */}
             {order.accessGranted && (
               <div className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border border-green-500 rounded-2xl p-8">
-                <h3 className="text-xl font-bold text-green-400 mb-4">🎉 Course Access Granted!</h3>
+                <h3 className="text-xl font-bold text-green-400 mb-4"> Course Access Granted!</h3>
                 
                 {order.accessUrl && (
                   <div className="mb-6">

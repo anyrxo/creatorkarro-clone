@@ -141,7 +141,7 @@ export default function AIAutomationGuideToxicSEO() {
               </p>
 
               <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-8 mb-12">
-                <h3 className="text-2xl font-bold text-purple-400 mb-6">🚀 Why AI Automation Tools Are Non-Negotiable in 2025</h3>
+                <h3 className="text-2xl font-bold text-purple-400 mb-6"> Why AI Automation Tools Are Non-Negotiable in 2025</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <ul className="space-y-3 text-gray-300">
@@ -191,7 +191,7 @@ export default function AIAutomationGuideToxicSEO() {
                         </ul>
                       </div>
                       <div className="bg-zinc-900 rounded-xl p-6">
-                        <h4 className="text-green-400 font-bold mb-4 text-xl">📊 Automated Results:</h4>
+                        <h4 className="text-green-400 font-bold mb-4 text-xl"> Automated Results:</h4>
                         <ul className="space-y-3 text-gray-300">
                           <li>• <strong>1,847 blog posts</strong> generated automatically</li>
                           <li>• <strong>12,000+ social media posts</strong> per month</li>
@@ -203,7 +203,7 @@ export default function AIAutomationGuideToxicSEO() {
                     </div>
                     
                     <div className="mt-6 p-4 bg-purple-500/10 rounded-lg">
-                      <p className="text-purple-400 font-semibold">💡 Pro Strategy:</p>
+                      <p className="text-purple-400 font-semibold"> Pro Strategy:</p>
                       <p className="text-gray-300 mt-2">Use different AI tools for different content types. ChatGPT for conversational content, Claude for research-heavy pieces, Jasper for marketing copy. This prevents AI detection while maximizing quality.</p>
                     </div>
                   </div>
@@ -219,13 +219,13 @@ export default function AIAutomationGuideToxicSEO() {
                     <p className="text-gray-400 mb-6 text-lg">Provide 24/7 customer support that never sleeps using intelligent chatbots and automated response systems</p>
                     
                     <div className="bg-zinc-900 rounded-xl p-6">
-                      <h4 className="text-white font-bold mb-4 text-xl">🤖 My Customer Service Automation Setup:</h4>
+                      <h4 className="text-white font-bold mb-4 text-xl"> My Customer Service Automation Setup:</h4>
                       <div className="grid md:grid-cols-2 gap-6">
                         <ul className="space-y-3 text-gray-300">
-                          <li>🎯 <strong>Intercom AI:</strong> Handles 91% of customer inquiries automatically</li>
+                          <li> <strong>Intercom AI:</strong> Handles 91% of customer inquiries automatically</li>
                           <li>📧 <strong>HelpScout AI:</strong> Smart email responses in under 30 seconds</li>
                           <li>💬 <strong>Drift Chatbot:</strong> Qualifies leads and books meetings</li>
-                          <li>📞 <strong>Synthflow AI:</strong> Phone support automation with human-like voice</li>
+                          <li> <strong>Synthflow AI:</strong> Phone support automation with human-like voice</li>
                         </ul>
                         <div className="bg-zinc-800 rounded-lg p-4">
                           <h5 className="text-blue-400 font-semibold mb-3">Key Metrics:</h5>
@@ -251,7 +251,7 @@ export default function AIAutomationGuideToxicSEO() {
                     <p className="text-gray-400 mb-6 text-lg">Convert leads into customers on complete autopilot with intelligent sales funnels and marketing workflows</p>
                     
                     <div className="bg-zinc-900 rounded-xl p-6">
-                      <h4 className="text-white font-bold mb-4 text-xl">🎯 Complete Sales Automation Funnel:</h4>
+                      <h4 className="text-white font-bold mb-4 text-xl"> Complete Sales Automation Funnel:</h4>
                       <div className="space-y-4">
                         <div className="flex items-center gap-4">
                           <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">1</div>
@@ -352,35 +352,35 @@ export default function AIAutomationGuideToxicSEO() {
                     <td className="p-4">Content Creation</td>
                     <td className="p-4 text-green-400">$200</td>
                     <td className="p-4">Blog posts, social media</td>
-                    <td className="p-4">⭐⭐⭐⭐⭐</td>
+                    <td className="p-4"></td>
                   </tr>
                   <tr className="border-t border-zinc-700">
                     <td className="p-4 font-semibold">Make.com</td>
                     <td className="p-4">Workflow Automation</td>
                     <td className="p-4 text-green-400">$29</td>
                     <td className="p-4">Process automation</td>
-                    <td className="p-4">⭐⭐⭐⭐⭐</td>
+                    <td className="p-4"></td>
                   </tr>
                   <tr className="border-t border-zinc-700">
                     <td className="p-4 font-semibold">Intercom AI</td>
                     <td className="p-4">Customer Service</td>
                     <td className="p-4 text-yellow-400">$99</td>
                     <td className="p-4">Support automation</td>
-                    <td className="p-4">⭐⭐⭐⭐</td>
+                    <td className="p-4"></td>
                   </tr>
                   <tr className="border-t border-zinc-700">
                     <td className="p-4 font-semibold">HubSpot AI</td>
                     <td className="p-4">Sales & Marketing</td>
                     <td className="p-4 text-yellow-400">$50</td>
                     <td className="p-4">Lead qualification</td>
-                    <td className="p-4">⭐⭐⭐⭐⭐</td>
+                    <td className="p-4"></td>
                   </tr>
                   <tr className="border-t border-zinc-700">
                     <td className="p-4 font-semibold">Midjourney</td>
                     <td className="p-4">Visual Content</td>
                     <td className="p-4 text-green-400">$30</td>
                     <td className="p-4">Image generation</td>
-                    <td className="p-4">⭐⭐⭐⭐</td>
+                    <td className="p-4"></td>
                   </tr>
                 </tbody>
               </table>
@@ -610,7 +610,7 @@ export default function AIAutomationGuideToxicSEO() {
               </p>
               
               <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6 mb-8">
-                <p className="text-red-400 font-bold text-lg">⚠️ Limited Time: 47% OFF Ending Soon</p>
+                <p className="text-red-400 font-bold text-lg">⚠ Limited Time: 47% OFF Ending Soon</p>
                 <p className="text-gray-400 mt-2">Only 23 spots remaining in this month's AI automation cohort</p>
               </div>
               

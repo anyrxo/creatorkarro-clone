@@ -250,11 +250,11 @@ export default function ComposerAgentCodeLlmFullStack() {
                     <span>5 min read</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span>👁️</span>
+                    <span>👁</span>
                     <span>Updated 03/08/2025</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span>🏷️</span>
+                    <span>🏷</span>
                     <span>Technology</span>
                   </div>
                 </div>
@@ -264,7 +264,7 @@ export default function ComposerAgentCodeLlmFullStack() {
               <div className="prose prose-lg prose-invert max-w-none">
                 <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
                   <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">🚀</span>
+                    <span className="mr-3"></span>
                     What You'll Learn
                   </h2>
                   <div className="grid md:grid-cols-2 gap-6">
@@ -301,7 +301,7 @@ export default function ComposerAgentCodeLlmFullStack() {
                 
                 <div className="bg-gray-800/50 p-8 rounded-lg mb-8">
                   <div className="flex items-center mb-4">
-                    <span className="text-2xl mr-3">📝</span>
+                    <span className="text-2xl mr-3"></span>
                     <h3 className="text-xl font-bold text-white">Comprehensive Guide in Development</h3>
                   </div>
                   <p className="text-gray-300 mb-6 leading-relaxed">

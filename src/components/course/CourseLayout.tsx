@@ -296,7 +296,7 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
               borderRadius="12px"
             >
               <span className="whitespace-nowrap font-bold px-6 py-3 text-base">
-                {option.popular ? '🚀 Secure Your Spot NOW' : 'Get Started'} - {option.price}
+                {option.popular ? ' Secure Your Spot NOW' : 'Get Started'} - {option.price}
               </span>
             </ShimmerButton>
           )}

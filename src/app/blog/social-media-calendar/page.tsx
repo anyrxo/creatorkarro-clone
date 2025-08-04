@@ -365,7 +365,7 @@ export default function SocialMediaCalendar() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <div className="text-3xl mb-4">❤️</div>
+                <div className="text-3xl mb-4">❤</div>
                 <h3 className="text-xl font-bold text-red-400 mb-3">Feature Friday</h3>
                 <p className="text-gray-400 mb-4">Spotlight community</p>
                 <ul className="space-y-2 text-sm text-gray-300">
@@ -400,7 +400,7 @@ export default function SocialMediaCalendar() {
           
         <div className="space-y-6">
             <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-white mb-4">📈 Growth Metrics</h3>
+                <h3 className="text-xl font-bold text-white mb-4"> Growth Metrics</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                     <div>
                         <h4 className="text-green-400 font-semibold mb-3">Before Calendar:</h4>
@@ -424,7 +424,7 @@ export default function SocialMediaCalendar() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-white mb-4">🎯 Key Success Factors</h3>
+                <h3 className="text-xl font-bold text-white mb-4"> Key Success Factors</h3>
                 <ul className="space-y-3 text-gray-300">
                     <li>✅ <span className="text-white font-semibold">Consistency</span> - Posted every single day without fail</li>
                     <li>✅ <span className="text-white font-semibold">Value First</span> - 80% value, 20% promotion ratio</li>
@@ -454,7 +454,7 @@ export default function SocialMediaCalendar() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">🎨 Creation Phase</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> Creation Phase</h3>
                 <ol className="space-y-3 text-gray-300">
                     <li><span className="text-white font-semibold">1.</span> Batch create weekly</li>
                     <li><span className="text-white font-semibold">2.</span> Use templates for speed</li>

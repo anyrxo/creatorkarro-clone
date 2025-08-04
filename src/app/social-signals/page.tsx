@@ -51,7 +51,7 @@ export default async function SocialSignalsPage() {
       <section className="bg-gradient-to-r from-indigo-900 to-gray-900 py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center space-x-3 mb-4">
-            <span className="text-4xl">📈</span>
+            <span className="text-4xl"></span>
             <h1 className="text-4xl font-bold">
               Social Signal Automation
             </h1>
@@ -285,7 +285,7 @@ export default async function SocialSignalsPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-green-900 bg-opacity-20 border border-green-500 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-2xl">🌱</span>
+                <span className="text-2xl"></span>
                 <h3 className="text-xl font-bold text-green-400">Conservative</h3>
               </div>
               <div className="space-y-3 mb-4">
@@ -313,7 +313,7 @@ export default async function SocialSignalsPage() {
             
             <div className="bg-yellow-900 bg-opacity-20 border border-yellow-500 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-2xl">⚡</span>
+                <span className="text-2xl"></span>
                 <h3 className="text-xl font-bold text-yellow-400">Moderate</h3>
               </div>
               <div className="space-y-3 mb-4">
@@ -341,7 +341,7 @@ export default async function SocialSignalsPage() {
             
             <div className="bg-red-900 bg-opacity-20 border border-red-500 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
-                <span className="text-2xl">🚀</span>
+                <span className="text-2xl"></span>
                 <h3 className="text-xl font-bold text-red-400">Aggressive</h3>
               </div>
               <div className="space-y-3 mb-4">
@@ -377,7 +377,7 @@ export default async function SocialSignalsPage() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-indigo-400 mb-4">🎯 Smart Distribution</h3>
+              <h3 className="text-xl font-semibold text-indigo-400 mb-4"> Smart Distribution</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Intelligent account rotation and load balancing</li>
                 <li>• Natural timing patterns based on platform analytics</li>
@@ -389,7 +389,7 @@ export default async function SocialSignalsPage() {
             </div>
             
             <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-green-400 mb-4">🤖 Content Intelligence</h3>
+              <h3 className="text-xl font-semibold text-green-400 mb-4"> Content Intelligence</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Contextual comment generation based on content</li>
                 <li>• Platform-specific share text optimization</li>
@@ -401,7 +401,7 @@ export default async function SocialSignalsPage() {
             </div>
             
             <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-yellow-400 mb-4">📊 Performance Optimization</h3>
+              <h3 className="text-xl font-semibold text-yellow-400 mb-4"> Performance Optimization</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Real-time engagement rate monitoring</li>
                 <li>• Automatic campaign adjustment based on metrics</li>
@@ -413,7 +413,7 @@ export default async function SocialSignalsPage() {
             </div>
             
             <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">🛡️ Safety & Compliance</h3>
+              <h3 className="text-xl font-semibold text-purple-400 mb-4">🛡 Safety & Compliance</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Rate limit adherence and account protection</li>
                 <li>• Platform TOS compliance monitoring</li>

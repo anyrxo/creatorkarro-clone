@@ -132,19 +132,19 @@ export default function IoTAutomationSystemsPage() {
                 <div className="text-2xl font-bold text-blue-400 mb-4">What Makes IoT Automation Powerful:</div>
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">⚡</span>
+                    <span className="text-blue-500 mr-2"></span>
                     <span>Real-time data from millions of sensors</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">⚡</span>
+                    <span className="text-blue-500 mr-2"></span>
                     <span>AI-powered predictive maintenance</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">⚡</span>
+                    <span className="text-blue-500 mr-2"></span>
                     <span>Edge computing for instant responses</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">⚡</span>
+                    <span className="text-blue-500 mr-2"></span>
                     <span>Cloud integration for global orchestration</span>
                   </li>
                 </ul>
@@ -197,7 +197,7 @@ export default function IoTAutomationSystemsPage() {
                   </ul>
                 </div>
                 <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4">
-                  <div className="font-semibold text-yellow-400 mb-2">💰 ROI Impact:</div>
+                  <div className="font-semibold text-yellow-400 mb-2"> ROI Impact:</div>
                   <p className="text-gray-300">Manufacturers see 15-30% productivity gains and $1M+ annual savings from reduced downtime</p>
                 </div>
               </div><div className="bg-gray-800 rounded-lg p-8 mb-8 hover:shadow-2xl transition-shadow">
@@ -243,7 +243,7 @@ export default function IoTAutomationSystemsPage() {
                   </ul>
                 </div>
                 <div className="bg-green-900/20 border border-green-700 rounded-lg p-4">
-                  <div className="font-semibold text-green-400 mb-2">🌱 Agricultural Impact:</div>
+                  <div className="font-semibold text-green-400 mb-2"> Agricultural Impact:</div>
                   <p className="text-gray-300">Farmers achieve 20-40% higher yields while reducing water usage by 30% and pesticide use by 50%</p>
                 </div>
               </div><div className="bg-gray-800 rounded-lg p-8 mb-8 hover:shadow-2xl transition-shadow">
@@ -448,11 +448,11 @@ export default function IoTAutomationSystemsPage() {
                   <p className="text-gray-300">Implement certificate-based authentication and regular security key rotation.</p>
                 </div>
                 <div className="bg-blue-900/20 border border-blue-700 rounded-lg p-6">
-                  <h3 className="text-lg font-bold text-blue-400 mb-2">🛡️ Network Segmentation</h3>
+                  <h3 className="text-lg font-bold text-blue-400 mb-2">🛡 Network Segmentation</h3>
                   <p className="text-gray-300">Isolate IoT devices on separate network segments with strict firewall rules.</p>
                 </div>
                 <div className="bg-green-900/20 border border-green-700 rounded-lg p-6">
-                  <h3 className="text-lg font-bold text-green-400 mb-2">📡 Over-the-Air Updates</h3>
+                  <h3 className="text-lg font-bold text-green-400 mb-2"> Over-the-Air Updates</h3>
                   <p className="text-gray-300">Enable secure OTA updates for patches and feature deployments.</p>
                 </div>
               </div>

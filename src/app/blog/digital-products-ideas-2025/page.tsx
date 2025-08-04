@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S PREMIUM TRAFFIC HIJACK
+// ⚔ ORYANA'S PREMIUM TRAFFIC HIJACK
 // "Digital product ideas" = HIGH commercial intent wanting to know what to create
 // Redirect to our $497 course that teaches 50+ proven product ideas + creation process
 

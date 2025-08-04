@@ -94,7 +94,7 @@ export default function ClustersPage() {
                 {/* Pillar Page Details */}
                 <div className="bg-gray-700 rounded-lg p-6 mb-6">
                   <h4 className="text-lg font-semibold text-blue-400 mb-3">
-                    🏛️ Pillar Page: {cluster.pillarPage.primaryKeyword}
+                    🏛 Pillar Page: {cluster.pillarPage.primaryKeyword}
                   </h4>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">
                     <div>
@@ -127,7 +127,7 @@ export default function ClustersPage() {
                 {/* Cluster Pages Grid */}
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-green-400 mb-3">
-                    📄 Cluster Pages ({cluster.clusterPages.length})
+                     Cluster Pages ({cluster.clusterPages.length})
                   </h4>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {cluster.clusterPages.slice(0, 9).map((page, i) => (
@@ -192,7 +192,7 @@ export default function ClustersPage() {
                 {cluster.competitorGap.length > 0 && (
                   <div className="mb-6">
                     <h4 className="text-lg font-semibold text-red-400 mb-3">
-                      ⚡ Content Opportunities (Top 5)
+                       Content Opportunities (Top 5)
                     </h4>
                     <div className="space-y-2">
                       {cluster.competitorGap.slice(0, 5).map((gap, i) => (
@@ -218,7 +218,7 @@ export default function ClustersPage() {
                 {/* Semantic Keywords */}
                 <div>
                   <h4 className="text-lg font-semibold text-cyan-400 mb-3">
-                    🎯 Semantic Keywords
+                     Semantic Keywords
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {cluster.semanticKeywords.slice(0, 12).map((keyword, i) => (
@@ -306,16 +306,16 @@ export default function ClustersPage() {
           <h2 className="text-2xl font-bold mb-6">Export Cluster Data</h2>
           <div className="flex flex-wrap justify-center gap-4">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">
-              📄 Export JSON
+               Export JSON
             </button>
             <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold">
-              🗺️ Generate Sitemap
+              🗺 Generate Sitemap
             </button>
             <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold">
-              📝 Export Markdown
+               Export Markdown
             </button>
             <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-lg font-semibold">
-              📊 Analytics Report
+               Analytics Report
             </button>
           </div>
           

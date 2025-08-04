@@ -72,7 +72,7 @@ export default function SecurityDashboard() {
     return (
       <div className="min-h-screen bg-gray-100 flex items-center justify-center">
         <Card className="w-full max-w-md p-6">
-          <h1 className="text-2xl font-bold mb-6 text-center">🛡️ Security Dashboard</h1>
+          <h1 className="text-2xl font-bold mb-6 text-center">🛡 Security Dashboard</h1>
           <div className="space-y-4">
             <div>
               <label htmlFor="token" className="block text-sm font-medium text-gray-700 mb-2">
@@ -126,7 +126,7 @@ export default function SecurityDashboard() {
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">🛡️ IImagined.ai Security Dashboard</h1>
+          <h1 className="text-3xl font-bold text-gray-900">🛡 IImagined.ai Security Dashboard</h1>
           <button
             onClick={refreshData}
             className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
@@ -247,7 +247,7 @@ export default function SecurityDashboard() {
 
         {/* Footer */}
         <div className="mt-8 text-center text-gray-500 text-sm">
-          <p>🛡️ ORYANA Fortress Protection System Active</p>
+          <p>🛡 ORYANA Fortress Protection System Active</p>
           <p>Last updated: {new Date().toLocaleString()}</p>
         </div>
       </div>

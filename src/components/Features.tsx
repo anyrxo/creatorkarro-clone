@@ -8,32 +8,32 @@ export default function Features({ countryCode, language }: FeaturesProps) {
     {
       title: "AI-Powered Automation",
       description: "Let artificial intelligence handle your business operations 24/7",
-      icon: "🤖"
+      icon: ""
     },
     {
       title: "Instant Setup",
       description: "Get started in minutes with our step-by-step guidance",
-      icon: "⚡"
+      icon: ""
     },
     {
       title: "Proven Results",
       description: "Join thousands who are already earning passive income",
-      icon: "📈"
+      icon: ""
     },
     {
       title: "Local Support",
       description: `Support available in ${language} for ${countryCode} market`,
-      icon: "🌍"
+      icon: ""
     },
     {
       title: "Money-Back Guarantee",
       description: "30-day guarantee if you don't see results",
-      icon: "💰"
+      icon: ""
     },
     {
       title: "Lifetime Updates",
       description: "Get all future updates and strategies for free",
-      icon: "🔄"
+      icon: ""
     }
   ]
 

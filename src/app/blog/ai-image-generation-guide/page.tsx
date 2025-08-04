@@ -350,7 +350,7 @@ export default function AIImageGenerationGuide() {
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">🎯 Consistent Characters</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> Consistent Characters</h3>
                 <ol className="space-y-2 text-gray-300">
                     <li>1. Create character sheet first</li>
                     <li>2. Use seed values for consistency</li>
@@ -361,7 +361,7 @@ export default function AIImageGenerationGuide() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">🎨 Style Mixing</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Style Mixing</h3>
                 <ol className="space-y-2 text-gray-300">
                     <li>1. Combine artist styles (legally)</li>
                     <li>2. Mix mediums creatively</li>
@@ -383,7 +383,7 @@ export default function AIImageGenerationGuide() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-pink-400 mb-4">⚡ Speed Optimization</h3>
+                <h3 className="text-xl font-bold text-pink-400 mb-4"> Speed Optimization</h3>
                 <ol className="space-y-2 text-gray-300">
                     <li>1. Batch similar prompts</li>
                     <li>2. Use API automation</li>

@@ -88,7 +88,7 @@ export default function N8nBeginnersGuide() {
 
                 {/* Course CTA */}
                 <div className="bg-gradient-to-r from-orange-600/20 to-purple-600/20 border border-orange-500/30 rounded-2xl p-6 mb-8">
-                  <p className="text-white font-semibold mb-3">🚀 Want the Complete N8N Mastery System?</p>
+                  <p className="text-white font-semibold mb-3"> Want the Complete N8N Mastery System?</p>
                   <p className="text-gray-300 mb-4">Skip the trial-and-error. Get our comprehensive N8N course with 20+ hours of training, templates, and 1-on-1 support.</p>
                   <Link href="/n8n-ai-automations" className="inline-block bg-gradient-to-r from-orange-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
                     Get Complete N8N Course →
@@ -455,7 +455,7 @@ export default function N8nBeginnersGuide() {
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-orange-400 mb-4">🚀 Performance Tips</h3>
+                <h3 className="text-xl font-bold text-orange-400 mb-4"> Performance Tips</h3>
                 <ul className="space-y-3 text-gray-300">
                     <li>• Use webhook triggers instead of polling</li>
                     <li>• Batch process data when possible</li>
@@ -488,7 +488,7 @@ export default function N8nBeginnersGuide() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-green-400 mb-4">💡 Workflow Design</h3>
+                <h3 className="text-xl font-bold text-green-400 mb-4"> Workflow Design</h3>
                 <ul className="space-y-3 text-gray-300">
                     <li>• Keep workflows simple and focused</li>
                     <li>• Use sub-workflows for reusability</li>

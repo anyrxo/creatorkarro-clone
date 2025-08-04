@@ -1574,7 +1574,7 @@ export default function DeepSeekR1BrowserUsePage() {
           <div className="grid lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🚀</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-2">Scale & Performance</h4>
               <p className="text-gray-700 text-sm">Handle 10,000+ concurrent research queries with sub-second response times</p>
@@ -1590,7 +1590,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚙️</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-2">Customization</h4>
               <p className="text-gray-700 text-sm">Fully customizable workflows, models, and integration points</p>
@@ -1598,7 +1598,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📊</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-2">Analytics & Insights</h4>
               <p className="text-gray-700 text-sm">Comprehensive analytics dashboard with real-time monitoring</p>
@@ -1809,7 +1809,7 @@ export default function DeepSeekR1BrowserUsePage() {
 
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚡</span>
+                <span className="text-2xl"></span>
               </div>
               <h4 className="font-semibold mb-3 text-center">Performance Optimization</h4>
               <ul className="text-sm text-gray-700 space-y-2">

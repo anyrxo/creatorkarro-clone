@@ -92,21 +92,21 @@ export default function ComfyUIComparison() {
                 <div className="grid md:grid-cols-3 gap-6">
                     <div className="text-center">
                         <div className="bg-purple-500/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <span className="text-2xl">🎨</span>
+                            <span className="text-2xl"></span>
                         </div>
                         <h3 className="text-white font-semibold mb-2">ComfyUI</h3>
                         <p className="text-gray-400 text-sm">Node-based workflow automation</p>
                     </div>
                     <div className="text-center">
                         <div className="bg-blue-500/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <span className="text-2xl">🖼️</span>
+                            <span className="text-2xl">🖼</span>
                         </div>
                         <h3 className="text-white font-semibold mb-2">Automatic1111</h3>
                         <p className="text-gray-400 text-sm">Traditional UI, community favorite</p>
                     </div>
                     <div className="text-center">
                         <div className="bg-green-500/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <span className="text-2xl">🌟</span>
+                            <span className="text-2xl"></span>
                         </div>
                         <h3 className="text-white font-semibold mb-2">Midjourney</h3>
                         <p className="text-gray-400 text-sm">Discord-based, subscription model</p>
@@ -155,7 +155,7 @@ export default function ComfyUIComparison() {
                     </div>
                 </div>
             </div><div className="bg-zinc-900 rounded-xl p-6">
-            <h3 className="text-xl font-bold text-white mb-4">🎮 Control & Flexibility</h3>
+            <h3 className="text-xl font-bold text-white mb-4"> Control & Flexibility</h3>
             <div className="space-y-4">
                 <div>
                     <div className="flex justify-between items-center mb-2">
@@ -186,7 +186,7 @@ export default function ComfyUIComparison() {
                 </div>
             </div>
         </div><div className="bg-zinc-900 rounded-xl p-6">
-        <h3 className="text-xl font-bold text-white mb-4">💰 Cost Analysis</h3>
+        <h3 className="text-xl font-bold text-white mb-4"> Cost Analysis</h3>
         <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-zinc-800 rounded-lg p-4">
                 <h4 className="text-purple-400 font-semibold mb-2">ComfyUI</h4>
@@ -205,7 +205,7 @@ export default function ComfyUIComparison() {
             </div>
         </div>
     </div><div className="bg-zinc-900 rounded-xl p-6">
-    <h3 className="text-xl font-bold text-white mb-4">⚡ Speed & Performance</h3>
+    <h3 className="text-xl font-bold text-white mb-4"> Speed & Performance</h3>
     <div className="overflow-x-auto">
         <table className="w-full">
             <thead>
@@ -219,26 +219,26 @@ export default function ComfyUIComparison() {
             <tbody>
                 <tr className="border-b border-gray-800">
                     <td className="py-3 px-4 text-gray-300">Generation Speed</td>
-                    <td className="text-center py-3 px-4">⭐⭐⭐⭐⭐</td>
-                    <td className="text-center py-3 px-4">⭐⭐⭐⭐</td>
-                    <td className="text-center py-3 px-4">⭐⭐⭐</td>
+                    <td className="text-center py-3 px-4"></td>
+                    <td className="text-center py-3 px-4"></td>
+                    <td className="text-center py-3 px-4"></td>
                 </tr>
                 <tr className="border-b border-gray-800">
                     <td className="py-3 px-4 text-gray-300">Batch Processing</td>
-                    <td className="text-center py-3 px-4">⭐⭐⭐⭐⭐</td>
-                    <td className="text-center py-3 px-4">⭐⭐⭐</td>
-                    <td className="text-center py-3 px-4">⭐⭐</td>
+                    <td className="text-center py-3 px-4"></td>
+                    <td className="text-center py-3 px-4"></td>
+                    <td className="text-center py-3 px-4"></td>
                 </tr>
                 <tr className="border-b border-gray-800">
                     <td className="py-3 px-4 text-gray-300">Memory Efficiency</td>
-                    <td className="text-center py-3 px-4">⭐⭐⭐⭐⭐</td>
-                    <td className="text-center py-3 px-4">⭐⭐⭐</td>
+                    <td className="text-center py-3 px-4"></td>
+                    <td className="text-center py-3 px-4"></td>
                     <td className="text-center py-3 px-4">N/A</td>
                 </tr>
                 <tr>
                     <td className="py-3 px-4 text-gray-300">GPU Optimization</td>
-                    <td className="text-center py-3 px-4">⭐⭐⭐⭐⭐</td>
-                    <td className="text-center py-3 px-4">⭐⭐⭐⭐</td>
+                    <td className="text-center py-3 px-4"></td>
+                    <td className="text-center py-3 px-4"></td>
                     <td className="text-center py-3 px-4">N/A</td>
                 </tr>
             </tbody>
@@ -258,19 +258,19 @@ export default function ComfyUIComparison() {
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">🔄 Workflow Automation</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Workflow Automation</h3>
                 <p className="text-gray-300 mb-3">Save and reuse complex workflows. What takes 20 clicks in A1111 becomes one button in ComfyUI.</p>
                 <p className="text-sm text-gray-400">Perfect for: Content creators needing consistency</p>
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">🎯 Precise Control</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Precise Control</h3>
                 <p className="text-gray-300 mb-3">Control every aspect of generation. Route different parts of your image through different models.</p>
                 <p className="text-sm text-gray-400">Perfect for: Professional quality requirements</p>
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">⚡ Speed Optimization</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Speed Optimization</h3>
                 <p className="text-gray-300 mb-3">Smart caching and efficient memory usage. Generate 100 variations in the time A1111 makes 20.</p>
                 <p className="text-sm text-gray-400">Perfect for: High-volume content production</p>
             </div>

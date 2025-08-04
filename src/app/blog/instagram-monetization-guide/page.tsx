@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S MONETIZATION TRAFFIC HIJACK
+// ⚔ ORYANA'S MONETIZATION TRAFFIC HIJACK
 // "Instagram monetization" searchers want to make money → send them to our $297 course
 // This is HIGH commercial intent traffic that converts at premium rates
 

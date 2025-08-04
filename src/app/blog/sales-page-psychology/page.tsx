@@ -96,22 +96,22 @@ export default function SalesPagePsychology() {
                         <p className="text-gray-400 text-sm">Give value first, ask for sale second</p>
                     </div>
                     <div className="text-center">
-                        <div className="text-3xl mb-3">⚡</div>
+                        <div className="text-3xl mb-3"></div>
                         <h3 className="text-white font-semibold mb-2">Urgency</h3>
                         <p className="text-gray-400 text-sm">Limited time creates action</p>
                     </div>
                     <div className="text-center">
-                        <div className="text-3xl mb-3">👥</div>
+                        <div className="text-3xl mb-3"></div>
                         <h3 className="text-white font-semibold mb-2">Social Proof</h3>
                         <p className="text-gray-400 text-sm">Others' success drives decisions</p>
                     </div>
                     <div className="text-center">
-                        <div className="text-3xl mb-3">🎯</div>
+                        <div className="text-3xl mb-3"></div>
                         <h3 className="text-white font-semibold mb-2">Authority</h3>
                         <p className="text-gray-400 text-sm">Expertise builds trust</p>
                     </div>
                     <div className="text-center">
-                        <div className="text-3xl mb-3">💎</div>
+                        <div className="text-3xl mb-3"></div>
                         <h3 className="text-white font-semibold mb-2">Scarcity</h3>
                         <p className="text-gray-400 text-sm">Limited availability increases desire</p>
                     </div>
@@ -232,7 +232,7 @@ export default function SalesPagePsychology() {
           
             <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-green-400 mb-4">🎯 Loss Aversion</h3>
+                    <h3 className="text-xl font-bold text-green-400 mb-4"> Loss Aversion</h3>
                     <p className="text-gray-400 mb-3">People fear losing more than they desire gaining.</p>
                     <div className="bg-zinc-900 rounded-lg p-4">
                         <p className="text-sm text-gray-300">
@@ -242,7 +242,7 @@ export default function SalesPagePsychology() {
                 </div>
 
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-blue-400 mb-4">🔥 FOMO Creation</h3>
+                    <h3 className="text-xl font-bold text-blue-400 mb-4"> FOMO Creation</h3>
                     <p className="text-gray-400 mb-3">Fear of missing out drives immediate action.</p>
                     <div className="bg-zinc-900 rounded-lg p-4">
                         <p className="text-sm text-gray-300">
@@ -252,7 +252,7 @@ export default function SalesPagePsychology() {
                 </div>
 
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-purple-400 mb-4">💡 Cognitive Ease</h3>
+                    <h3 className="text-xl font-bold text-purple-400 mb-4"> Cognitive Ease</h3>
                     <p className="text-gray-400 mb-3">Simple = trustworthy in our brains.</p>
                     <div className="bg-zinc-900 rounded-lg p-4">
                         <p className="text-sm text-gray-300">
@@ -262,7 +262,7 @@ export default function SalesPagePsychology() {
                 </div>
 
                 <div className="bg-zinc-800 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-yellow-400 mb-4">🎁 Anchoring Bias</h3>
+                    <h3 className="text-xl font-bold text-yellow-400 mb-4"> Anchoring Bias</h3>
                     <p className="text-gray-400 mb-3">First price seen becomes the reference point.</p>
                     <div className="bg-zinc-900 rounded-lg p-4">
                         <p className="text-sm text-gray-300">

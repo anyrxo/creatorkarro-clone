@@ -115,7 +115,7 @@ export default function ScaleContentCreation() {
                 <h2 className="text-3xl font-bold text-white mb-6">The Batch Creation Revolution</h2>
             
                 <div className="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-8 mb-8">
-                    <h3 className="text-2xl font-bold text-blue-400 mb-4">🚀 Why Batching Works</h3>
+                    <h3 className="text-2xl font-bold text-blue-400 mb-4"> Why Batching Works</h3>
                     <ul className="space-y-3 text-gray-300">
                         <li>• <span className="text-white font-semibold">Context switching kills productivity</span> - Stay in one mode</li>
                         <li>• <span className="text-white font-semibold">Templates save 80% of time</span> - Reuse what works</li>
@@ -262,7 +262,7 @@ export default function ScaleContentCreation() {
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">📝 Text Templates</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> Text Templates</h3>
                 <div className="space-y-3">
                     <div className="bg-zinc-800 rounded p-3">
                         <p className="text-sm font-semibold text-white mb-1">How-To Template:</p>
@@ -280,7 +280,7 @@ export default function ScaleContentCreation() {
             </div>
             
             <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">🎨 Visual Templates</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Visual Templates</h3>
                 <div className="space-y-3">
                     <div className="bg-zinc-800 rounded p-3">
                         <p className="text-sm font-semibold text-white mb-1">Quote Cards:</p>
@@ -306,7 +306,7 @@ export default function ScaleContentCreation() {
           
         <div className="grid md:grid-cols-4 gap-4">
             <div className="bg-zinc-800 rounded-xl p-4">
-                <h4 className="text-lg font-bold text-blue-400 mb-3">💡 Ideation</h4>
+                <h4 className="text-lg font-bold text-blue-400 mb-3"> Ideation</h4>
                 <ul className="space-y-1 text-sm text-gray-300">
                     <li>• AnswerThePublic</li>
                     <li>• BuzzSumo</li>
@@ -316,7 +316,7 @@ export default function ScaleContentCreation() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-4">
-                <h4 className="text-lg font-bold text-green-400 mb-3">✍️ Writing</h4>
+                <h4 className="text-lg font-bold text-green-400 mb-3">✍ Writing</h4>
                 <ul className="space-y-1 text-sm text-gray-300">
                     <li>• ChatGPT</li>
                     <li>• Jasper</li>
@@ -326,7 +326,7 @@ export default function ScaleContentCreation() {
             </div>
             
             <div className="bg-zinc-800 rounded-xl p-4">
-                <h4 className="text-lg font-bold text-purple-400 mb-3">🎨 Design</h4>
+                <h4 className="text-lg font-bold text-purple-400 mb-3"> Design</h4>
                 <ul className="space-y-1 text-sm text-gray-300">
                     <li>• Canva Bulk</li>
                     <li>• Figma</li>
@@ -355,7 +355,7 @@ export default function ScaleContentCreation() {
         <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-8">
             <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                    <h3 className="text-xl font-bold text-blue-400 mb-4">⏰ Before (Daily Creation)</h3>
+                    <h3 className="text-xl font-bold text-blue-400 mb-4"> Before (Daily Creation)</h3>
                     <ul className="space-y-2 text-gray-300">
                         <li>• 3-4 hours per day</li>
                         <li>• 20+ hours per week</li>
@@ -366,7 +366,7 @@ export default function ScaleContentCreation() {
                 </div>
               
                 <div>
-                    <h3 className="text-xl font-bold text-green-400 mb-4">🚀 After (Batch System)</h3>
+                    <h3 className="text-xl font-bold text-green-400 mb-4"> After (Batch System)</h3>
                     <ul className="space-y-2 text-gray-300">
                         <li>• 2 hours per month</li>
                         <li>• 30+ days of content ready</li>

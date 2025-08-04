@@ -250,11 +250,11 @@ export default function InstagramGrowth2025() {
                     <span>5 min read</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span>👁️</span>
+                    <span>👁</span>
                     <span>Updated 03/08/2025</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span>🏷️</span>
+                    <span>🏷</span>
                     <span>Technology</span>
                   </div>
                 </div>
@@ -264,7 +264,7 @@ export default function InstagramGrowth2025() {
               <div className="prose prose-lg prose-invert max-w-none">
                 <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
                   <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">🚀</span>
+                    <span className="mr-3"></span>
                     What You'll Learn
                   </h2>
                   <div className="grid md:grid-cols-2 gap-6">
@@ -301,7 +301,7 @@ export default function InstagramGrowth2025() {
                 
                 <div className="bg-gray-800/50 p-8 rounded-lg mb-8">
                   <div className="flex items-center mb-4">
-                    <span className="text-2xl mr-3">📝</span>
+                    <span className="text-2xl mr-3"></span>
                     <h3 className="text-xl font-bold text-white">Comprehensive Guide in Development</h3>
                   </div>
                   <p className="text-gray-300 mb-6 leading-relaxed">
@@ -347,7 +347,7 @@ export default function InstagramGrowth2025() {
               <div className="mt-16 pt-12 border-t border-gray-700">
                 <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-8">
                   <div className="text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">🚀 Ready to Transform Your Instagram?</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4"> Ready to Transform Your Instagram?</h3>
                     <p className="text-lg text-gray-300 mb-6">
                       Want the complete system behind growing from 0 to 500K+ followers? Get our proven Instagram growth course with viral content strategies, algorithm domination techniques, and monetization blueprints.
                     </p>

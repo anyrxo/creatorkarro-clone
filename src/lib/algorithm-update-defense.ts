@@ -412,18 +412,18 @@ export class AlgorithmUpdateDefenseEngine {
       recoveryMode = 'semi-auto'
     } = options
 
-    console.log(`🛡️ Deploying Algorithm Update Defense System`)
+    console.log(`🛡 Deploying Algorithm Update Defense System`)
     console.log(`🌐 Domain: ${domain}`)
     console.log(`🔒 Protection Level: ${protectionLevel}`)
-    console.log(`🤖 Auto-Mitigation: ${autoMitigation ? 'Enabled' : 'Disabled'}`)
+    console.log(` Auto-Mitigation: ${autoMitigation ? 'Enabled' : 'Disabled'}`)
 
     // Select defense strategies based on protection level
     const activeDefenses = this.selectDefenseStrategies(protectionLevel)
-    console.log(`⚔️ Active Defenses: ${activeDefenses.length} strategies`)
+    console.log(`⚔ Active Defenses: ${activeDefenses.length} strategies`)
 
     // Perform vulnerability assessment
     const vulnerabilities = await this.assessVulnerabilities(domain)
-    console.log(`🔍 Vulnerabilities Found: ${vulnerabilities.length}`)
+    console.log(` Vulnerabilities Found: ${vulnerabilities.length}`)
     vulnerabilities.forEach(vuln => {
       console.log(`  - ${vuln.type}: ${vuln.severity} severity`)
     })
@@ -434,7 +434,7 @@ export class AlgorithmUpdateDefenseEngine {
 
     // Analyze update history
     const updateHistory = this.analyzeUpdateHistory(domain)
-    console.log(`📊 Historical Update Impacts: ${updateHistory.length} recorded`)
+    console.log(` Historical Update Impacts: ${updateHistory.length} recorded`)
 
     // Create defense system
     const defenseSystem: DefenseSystem = {
@@ -638,9 +638,9 @@ export class AlgorithmUpdateDefenseEngine {
       throw new Error('Defense system not found')
     }
 
-    console.log(`🔍 Analyzing metrics for algorithm update detection...`)
-    console.log(`📉 Traffic Change: ${metrics.trafficChange}%`)
-    console.log(`📊 Ranking Change: ${metrics.rankingChange}%`)
+    console.log(` Analyzing metrics for algorithm update detection...`)
+    console.log(` Traffic Change: ${metrics.trafficChange}%`)
+    console.log(` Ranking Change: ${metrics.rankingChange}%`)
 
     // Detect significant changes
     const significantChange = Math.abs(metrics.trafficChange) > 20 || Math.abs(metrics.rankingChange) > 15
@@ -676,8 +676,8 @@ export class AlgorithmUpdateDefenseEngine {
       recommendations.push('Fix layout shift issues')
     }
 
-    console.log(`⚠️ Algorithm update detected!`)
-    console.log(`🎯 Suspected: ${suspectedUpdate}`)
+    console.log(`⚠ Algorithm update detected!`)
+    console.log(` Suspected: ${suspectedUpdate}`)
     console.log(`🔴 Severity: ${severity}`)
 
     // Create recovery plan
@@ -737,7 +737,7 @@ export class AlgorithmUpdateDefenseEngine {
     }
 
     system.recoveryPlans.push(plan)
-    console.log(`📋 Recovery plan created: ${plan.id}`)
+    console.log(` Recovery plan created: ${plan.id}`)
 
     return plan
   }
@@ -754,7 +754,7 @@ export class AlgorithmUpdateDefenseEngine {
       throw new Error('Defense system not found')
     }
 
-    console.log(`🔍 Running defense audit for ${system.domain}...`)
+    console.log(` Running defense audit for ${system.domain}...`)
 
     // Re-assess vulnerabilities
     const newVulnerabilities = await this.assessVulnerabilities(system.domain)
@@ -784,8 +784,8 @@ export class AlgorithmUpdateDefenseEngine {
     const recommendations = this.generateRecommendations(newVulnerabilities, system.activeDefenses)
 
     console.log(`✅ Audit completed`)
-    console.log(`🔧 Vulnerabilities fixed: ${fixedVulns}`)
-    console.log(`⚠️ New threats detected: ${newThreats}`)
+    console.log(` Vulnerabilities fixed: ${fixedVulns}`)
+    console.log(`⚠ New threats detected: ${newThreats}`)
     console.log(`💚 Health score change: ${healthScoreChange > 0 ? '+' : ''}${healthScoreChange}`)
 
     return {
@@ -803,7 +803,7 @@ export class AlgorithmUpdateDefenseEngine {
     // Check for critical vulnerabilities
     const criticalVulns = vulnerabilities.filter(v => v.severity === 'critical')
     if (criticalVulns.length > 0) {
-      recommendations.push('⚠️ URGENT: Address critical vulnerabilities immediately')
+      recommendations.push('⚠ URGENT: Address critical vulnerabilities immediately')
       criticalVulns.forEach(v => {
         recommendations.push(`- Fix ${v.type} (${v.area})`)
       })

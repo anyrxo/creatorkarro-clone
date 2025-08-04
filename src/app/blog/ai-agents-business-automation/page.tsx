@@ -1,7 +1,7 @@
 import React from 'react'
 import { redirect } from 'next/navigation'
 
-// ⚔️ ORYANA'S 301 REDIRECT - ELIMINATING AI AGENTS CANNIBALIZATION
+// ⚔ ORYANA'S 301 REDIRECT - ELIMINATING AI AGENTS CANNIBALIZATION
 // This weak page redirects to our comprehensive AI automation authority guide
 // Consolidates "ai agents automation" traffic to our pillar content
 

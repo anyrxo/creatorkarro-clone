@@ -80,7 +80,7 @@ export default function Pricing({ pricing, currency, countryCode, urgency }: Pri
         
         <div className="mt-12 text-center">
           <p className="text-gray-600">
-            🔒 Secure checkout • 🌍 Available in {countryCode} • 💳 All payment methods accepted
+            🔒 Secure checkout •  Available in {countryCode} • 💳 All payment methods accepted
           </p>
         </div>
       </div>
