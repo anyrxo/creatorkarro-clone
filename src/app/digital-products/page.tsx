@@ -21,7 +21,7 @@ import NumberTicker from '@/components/magicui/number-ticker'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import Marquee from '@/components/magicui/marquee'
-import { ChevronRight, Target, Flame, Zap, Rocket, DollarSign, Mail, BarChart3, Users, AlertTriangle, CheckCircle, Gem } from 'lucide-react'
+import { ChevronRight, Target, Flame, Zap, Rocket, DollarSign, Mail, BarChart3, Users, AlertTriangle, CheckCircle, Gem, XCircle } from 'lucide-react'
 
 // Icon mapping function
 const getIcon = (iconName: string, className?: string) => {
@@ -37,7 +37,8 @@ const getIcon = (iconName: string, className?: string) => {
     users: <Users {...iconProps} />,
     alertTriangle: <AlertTriangle {...iconProps} />,
     checkCircle: <CheckCircle {...iconProps} />,
-    gem: <Gem {...iconProps} />
+    gem: <Gem {...iconProps} />,
+    xCircle: <XCircle {...iconProps} />
   }
   return icons[iconName] || <Target {...iconProps} />
 }
@@ -221,22 +222,22 @@ export default function DigitalProductsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
             {[
               {
-                icon: "💸",
+                icon: "dollarSign",
                 title: "Working Harder, Earning Less",
                 description: "You're grinding 60+ hours a week but your income is still capped by your time. Every dollar requires your personal involvement - there's no scalability, no freedom."
               },
               {
-                icon: "📚",
+                icon: "target",
                 title: "Valuable Knowledge Going to Waste",
                 description: "You have incredible expertise and knowledge that could help thousands of people, but you have no idea how to package and monetize it profitably."
               },
               {
-                icon: "target",
+                icon: "alertTriangle",
                 title: "Confused by 'Digital Product' Gurus",
                 description: "Everyone's talking about courses and digital products, but all the advice is contradictory. You're overwhelmed by the options and don't know where to start."
               },
               {
-                icon: "💀",
+                icon: "xCircle",
                 title: "Failed Launches and Zero Sales",
                 description: "You've tried creating products before but they flopped. No one bought, no one engaged, and you wasted months building something nobody wanted."
               },
@@ -246,7 +247,7 @@ export default function DigitalProductsPage() {
                 description: "Competitors with worse knowledge are making millions selling products while you're stuck trading time for money. They figured out the system - you didn't."
               },
               {
-                icon: "⏰",
+                icon: "zap",
                 title: "No Time Freedom or Passive Income",
                 description: "Your income stops when you stop working. You can't take vacations, you can't scale, and you're building a glorified job instead of a real business."
               }
@@ -271,8 +272,8 @@ export default function DigitalProductsPage() {
                 building digital products, others get further ahead in the passive income game.
               </p>
               <div className="bg-zinc-900 border border-red-500 rounded-lg p-6">
-                <p className="text-xl font-bold text-red-400 mb-2">
-                  💔 You're not just missing money... you're missing the freedom to live life on your terms.
+                <p className="text-xl font-bold text-red-400 mb-2 flex items-center gap-2">
+                  {getIcon('xCircle', 'w-5 h-5')} You're not just missing money... you're missing the freedom to live life on your terms.
                 </p>
                 <p className="text-gray-300">
                   While others build products that sell while they sleep, you're stuck in the endless grind of manual work.
@@ -666,7 +667,8 @@ export default function DigitalProductsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "📚 50+ Product Templates",
+                title: "50+ Product Templates",
+                icon: "target",
                 value: "$797",
                 description: "Done-for-you templates for courses, eBooks, worksheets, checklists, and more. Just customize with your content and launch immediately."
               },
@@ -866,7 +868,9 @@ export default function DigitalProductsPage() {
               </p>
               
               <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6 mb-8">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-3">🚨 Don't Wait - Here's Why:</h4>
+                <h4 className="text-2xl font-bold text-yellow-400 mb-3 flex items-center gap-2">
+                  {getIcon('alertTriangle', 'w-6 h-6')} Don't Wait - Here's Why:
+                </h4>
                 <div className="text-left space-y-2 text-gray-300">
                   <p>• Every month you delay = $5K-$20K in lost potential passive income</p>
                   <p>• Digital products become more competitive every day - first movers win big</p>
@@ -889,7 +893,9 @@ export default function DigitalProductsPage() {
               </p>
               
               <div className="bg-zinc-900 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
-                <h4 className="text-xl font-bold text-green-400 mb-3">💯 Zero-Risk Guarantee</h4>
+                <h4 className="text-xl font-bold text-green-400 mb-3 flex items-center gap-2">
+                  {getIcon('checkCircle', 'w-5 h-5')} Zero-Risk Guarantee
+                </h4>
                 <p className="text-gray-300">
                   Try Digital Products Academy for 30 days. If you don't create a profitable product idea 
                   and clear launch plan, I'll refund every penny. No questions asked.
@@ -1099,7 +1105,9 @@ export default function DigitalProductsPage() {
             <p className="text-lg md:text-xl text-gray-400 mb-8">Join thousands of entrepreneurs who escaped the time-for-money trap and built scalable passive income streams</p>
             
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-red-400 mb-3">⏰ FINAL WARNING</h3>
+              <h3 className="text-2xl font-bold text-red-400 mb-3 flex items-center justify-center gap-2">
+                {getIcon('alertTriangle', 'w-6 h-6')} FINAL WARNING
+              </h3>
               <p className="text-gray-300 mb-4">
                 This INSANE $189 founder's price and $5,959 in bonuses expire at MIDNIGHT tonight. After that, you'll pay $389 without any bonuses.
               </p>
