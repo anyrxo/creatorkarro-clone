@@ -98,7 +98,7 @@ export function ModuleCard({
 
 // Bonus Card Component - Consistent design with corner badges
 interface BonusCardProps {
-  icon: string
+  icon: React.ReactNode
   title: string
   description: string
   value: string
