@@ -1016,7 +1016,7 @@ export default function InstagramIgnitedPage() {
                     <li>• Cancel anytime, keep what you downloaded</li>
                   </ul>
                   <Link
-                    href="https://whop.com/IImagined"
+                    href="https://whop.com/anyro/premium-monthly-0a/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 w-full focus:outline-none focus:ring-4 focus:ring-purple-500/50"

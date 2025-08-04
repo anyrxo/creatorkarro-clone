@@ -56,7 +56,7 @@ export default function Navigation() {
     { name: 'Contact', href: '/contact' },
   ]
 
-  const allNavigation: NavigationItem[] = [...mainNavigation, { name: 'Join', href: 'https://whop.com/anyrxo', external: true }]
+  const allNavigation: NavigationItem[] = [...mainNavigation, { name: 'Join', href: 'https://whop.com/anyro/premium-monthly-0a/', external: true }]
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-xl border-b border-zinc-800 glass-premium">
@@ -129,7 +129,7 @@ export default function Navigation() {
           {/* Whop Community - Far Right */}
           <div className="hidden md:block">
             <Link
-              href="https://whop.com/anyrxo"
+              href="https://whop.com/anyro/premium-monthly-0a/"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-pill px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] backdrop-blur-sm border-blue-500/50 hover:border-blue-400/50 font-semibold"

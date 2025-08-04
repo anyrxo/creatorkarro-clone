@@ -443,7 +443,7 @@ export default function ComfyUIWorkflowsPage() {
       popular: true,
       hoverEffect: true,
       buttonText: "Join Whop All-Access",
-      buttonLink: "https://whop.com/IImagined"
+      buttonLink: "https://whop.com/anyro/premium-monthly-0a/"
     }
   ]
 

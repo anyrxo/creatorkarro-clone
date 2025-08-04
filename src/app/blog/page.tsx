@@ -19,13 +19,24 @@ export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
 
   const filteredPosts = useMemo(() => {
-    return allBlogPosts.filter(post => {
-      const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           post.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
-      const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory
-      return matchesSearch && matchesCategory
-    })
+    let posts = allBlogPosts
+
+    // Apply category filter
+    if (selectedCategory !== 'All') {
+      posts = posts.filter(post => post.category === selectedCategory)
+    }
+
+    // Apply search filter
+    if (searchTerm.trim()) {
+      posts = posts.filter(post => {
+        const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                             post.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                             post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
+        return matchesSearch
+      })
+    }
+
+    return posts
   }, [searchTerm, selectedCategory])
 
   const displayCategories = ['All', ...categories]
@@ -39,7 +50,7 @@ export default function BlogPage() {
             <ScrollAnimation animation="fade-up" delay={200}>
               <BlurIn 
                 word="Creator Blog"
-                className="text-5xl md:text-6xl font-bold text-white mb-6"
+                className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6"
                 duration={1000}
               />
             </ScrollAnimation>

@@ -49,7 +49,7 @@ export default function Footer() {
             {/* Quick Access to Whop */}
             <div className="mb-6">
               <Link
-                href="https://whop.com/anyrxo"
+                href="https://whop.com/anyro/premium-monthly-0a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
@@ -143,7 +143,7 @@ export default function Footer() {
               </div>
               <span className="hidden sm:block">•</span>
               <Link
-                href="https://whop.com/anyrxo"
+                href="https://whop.com/anyro/premium-monthly-0a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 font-semibold hover:underline transition-all duration-200"
