@@ -31,7 +31,7 @@ export default function ComfyUIWorkflowsPage() {
             className={`text-center max-w-5xl mx-auto scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
             <div className="bg-zinc-900 border border-green-600/30 rounded-lg p-3 mb-6 inline-block card-hover">
-              <p className="text-green-300 font-semibold">🎯 EARLY BIRD SPECIAL: Professional ComfyUI mastery at an unbeatable price</p>
+              <p className="text-green-300 font-semibold">EARLY BIRD SPECIAL: Professional ComfyUI mastery at an unbeatable price</p>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -712,7 +712,7 @@ export default function ComfyUIWorkflowsPage() {
 
             {/* Bonus 3 */}
             <div className={`bg-gradient-to-br from-green-900/30 to-blue-900/30 border border-green-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-              <div className="text-green-400 text-4xl mb-4">🎯</div>
+              <div className="text-green-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-green-300">Weekly Workflow Workshops</h3>
               <p className="text-gray-400 mb-4">
                 Live workshops every week covering new techniques, trends, and advanced strategies. Recordings included.
@@ -724,7 +724,7 @@ export default function ComfyUIWorkflowsPage() {
 
             {/* Bonus 4 */}
             <div className={`bg-gradient-to-br from-orange-900/30 to-red-900/30 border border-orange-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-              <div className="text-orange-400 text-4xl mb-4">🔧</div>
+              <div className="text-orange-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-orange-300">Custom Node Pack</h3>
               <p className="text-gray-400 mb-4">
                 Exclusive collection of custom nodes developed specifically for our students. Not available anywhere else.
@@ -748,7 +748,7 @@ export default function ComfyUIWorkflowsPage() {
 
             {/* Bonus 6 */}
             <div className={`bg-gradient-to-br from-teal-900/30 to-green-900/30 border border-teal-600/30 rounded-lg p-8 card-hover hover-lift scroll-fade-up ${bonusAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-              <div className="text-teal-400 text-4xl mb-4">⚡</div>
+              <div className="text-teal-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-teal-300">Speed Optimization Pack</h3>
               <p className="text-gray-400 mb-4">
                 Advanced techniques to 10x your generation speed and optimize for maximum efficiency.
@@ -965,7 +965,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold">
                 BEST CHOICE
               </div>
-              <div className="text-green-400 text-4xl mb-4">🚀</div>
+              <div className="text-green-400 text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-4 text-green-300">This Course</h3>
               <div className="text-3xl font-bold text-green-400 mb-4">$147</div>
               <p className="text-gray-400 mb-6">One-time investment, lifetime value</p>
@@ -1020,7 +1020,7 @@ export default function ComfyUIWorkflowsPage() {
             className={`text-center mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}
           >
             <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-4 mb-6 inline-block">
-              <p className="text-red-300 font-semibold">⚠️ PRICE INCREASES TO $497 IN 48 HOURS - SECURE YOUR SPOT NOW</p>
+              <p className="text-red-300 font-semibold">PRICE INCREASES TO $497 IN 48 HOURS - SECURE YOUR SPOT NOW</p>
             </div>
             <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">EARLY BIRD PRICING</p>
             <h2 className="text-4xl md:text-5xl font-bold">Secure Your <span className="text-orange-400">Early Bird</span> Price</h2>
@@ -1030,7 +1030,7 @@ export default function ComfyUIWorkflowsPage() {
           <div className="max-w-lg mx-auto">
             <div className={`bg-gradient-to-br from-orange-900/30 to-red-900/30 border-2 border-orange-500/50 rounded-2xl p-8 text-center card-hover hover-lift scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
               <div className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-6 inline-block">
-                🔥 EARLY BIRD SPECIAL
+                EARLY BIRD SPECIAL
               </div>
               
               <div className="mb-8">
@@ -1072,13 +1072,13 @@ export default function ComfyUIWorkflowsPage() {
               </div>
 
               <Link href="#" className="cta-button inline-block w-full text-center mb-4 btn-animate animate-glow hover-lift text-lg font-bold">
-                🚀 SECURE YOUR EARLY BIRD PRICE →
+                SECURE YOUR EARLY BIRD PRICE →
               </Link>
               
               <div className="space-y-2 text-sm">
                 <p className="text-orange-300 font-semibold">⏰ Limited time offer - Price increasing soon</p>
                 <p className="text-gray-400">Join 847+ creators earning $5-15K monthly</p>
-                <p className="text-green-400">✅ Instant access • ✅ No recurring fees</p>
+                <p className="text-green-400">Instant access • No recurring fees</p>
               </div>
             </div>
           </div>
@@ -1353,7 +1353,7 @@ export default function ComfyUIWorkflowsPage() {
             className={`scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}
           >
             <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-4 mb-8 inline-block">
-              <p className="text-red-300 font-semibold">⚠️ Limited time offer - Early bird pricing available now</p>
+              <p className="text-red-300 font-semibold">Limited time offer - Early bird pricing available now</p>
             </div>
             
             <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -1368,17 +1368,17 @@ export default function ComfyUIWorkflowsPage() {
 
             <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-12">
               <div className="bg-zinc-900 border border-green-600/30 rounded-lg p-6">
-                <div className="text-green-400 text-3xl mb-2">✅</div>
+                <div className="text-green-400 text-3xl mb-2"></div>
                 <h3 className="font-bold text-green-300 mb-2">Get Started Today</h3>
                 <p className="text-gray-400 text-sm">Instant access to all 8 modules + bonuses</p>
               </div>
               <div className="bg-zinc-900 border border-blue-600/30 rounded-lg p-6">
-                <div className="text-blue-400 text-3xl mb-2">🚀</div>
+                <div className="text-blue-400 text-3xl mb-2"></div>
                 <h3 className="font-bold text-blue-300 mb-2">Master in 30 Days</h3>
                 <p className="text-gray-400 text-sm">Create professional workflows that work</p>
               </div>
               <div className="bg-purple-900/30 border border-purple-600/30 rounded-lg p-6">
-                <div className="text-purple-400 text-3xl mb-2">💰</div>
+                <div className="text-purple-400 text-3xl mb-2"></div>
                 <h3 className="font-bold text-purple-300 mb-2">Earn $5K+ Monthly</h3>
                 <p className="text-gray-400 text-sm">Turn skills into profitable AI services</p>
               </div>
@@ -1406,13 +1406,13 @@ export default function ComfyUIWorkflowsPage() {
             </div>
 
             <Link href="#packages" className="cta-button inline-block text-xl px-12 py-4 mb-8 btn-animate animate-glow hover-lift">
-              🔥 SECURE YOUR EARLY BIRD PRICE NOW →
+              SECURE YOUR EARLY BIRD PRICE NOW →
             </Link>
             
             <div className="space-y-2 mb-8">
-              <p className="text-green-400 font-semibold">✅ 30-Day Money-Back Guarantee</p>
-              <p className="text-blue-400 font-semibold">✅ Instant Access • No Waiting</p>
-              <p className="text-purple-400 font-semibold">✅ Join 847+ Successful Students</p>
+              <p className="text-green-400 font-semibold">30-Day Money-Back Guarantee</p>
+              <p className="text-blue-400 font-semibold">Instant Access • No Waiting</p>
+              <p className="text-purple-400 font-semibold">Join 847+ Successful Students</p>
             </div>
 
             <div className="bg-zinc-900 border border-red-600/30 rounded-lg p-6 max-w-3xl mx-auto">

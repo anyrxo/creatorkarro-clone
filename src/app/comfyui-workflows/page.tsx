@@ -20,6 +20,21 @@ import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
+import { Palette, Layers, Wand2, BookOpen, Video, Users } from 'lucide-react'
+
+// Icon mapping function
+const getIcon = (iconName: string, className?: string) => {
+  const iconProps = { className: className || "w-6 h-6", strokeWidth: 2 }
+  const icons: { [key: string]: JSX.Element } = {
+    palette: <Palette {...iconProps} />,
+    layers: <Layers {...iconProps} />,
+    wand2: <Wand2 {...iconProps} />,
+    bookOpen: <BookOpen {...iconProps} />,
+    video: <Video {...iconProps} />,
+    users: <Users {...iconProps} />
+  }
+  return icons[iconName] || <Palette {...iconProps} />
+}
 
 export default function ComfyUIWorkflowsPage() {
   // Scroll animations for different sections
@@ -271,13 +286,13 @@ export default function ComfyUIWorkflowsPage() {
   // Define bonuses data
   const bonuses = [
     {
-      icon: "🎨",
+      icon: "palette",
       title: "Premium Model Collection",
       description: "50+ high-quality models and checkpoints",
       value: "$197"
     },
     {
-      icon: "⚡",
+      icon: "",
       title: "Workflow Optimizer Tool",
       description: "Automated workflow performance optimization",
       value: "$127"
@@ -289,7 +304,7 @@ export default function ComfyUIWorkflowsPage() {
       value: "$147"
     },
     {
-      icon: "🔧",
+      icon: "",
       title: "Custom Node Pack",
       description: "Exclusive collection of custom nodes",
       value: "$97"
@@ -301,7 +316,7 @@ export default function ComfyUIWorkflowsPage() {
       value: "$127"
     },
     {
-      icon: "🎯",
+      icon: "",
       title: "1-on-1 Setup Session",
       description: "Personal optimization consultation",
       value: "$147"
@@ -448,7 +463,7 @@ export default function ComfyUIWorkflowsPage() {
       {/* Hero Section */}
       <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection
-          badge="🎯 EARLY BIRD SPECIAL: Professional ComfyUI mastery at an unbeatable price"
+          badge="EARLY BIRD SPECIAL: Professional ComfyUI mastery at an unbeatable price"
           badgeColor="bg-green-600/30 text-green-300"
           title={<>Stop Wasting Hours on <span className="text-red-400">Inconsistent AI Results</span> - Master <span className="text-orange-400">ComfyUI Workflows</span> That Actually Work</>}
           description={<>Transform from frustrated AI user to <span className="text-orange-300">workflow master</span> - Create professional content 10x faster with bulletproof systems that deliver <span className="text-green-400">consistent, stunning results</span> every single time</>}
@@ -792,7 +807,7 @@ export default function ComfyUIWorkflowsPage() {
           {/* Risk Reversal */}
           <div className={`text-center mt-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-8 max-w-3xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4 text-green-400">🛡️ 60-Day "Master ComfyUI" Guarantee</h3>
+              <h3 className="text-2xl font-bold mb-4 text-green-400">60-Day "Master ComfyUI" Guarantee</h3>
               <p className="text-gray-300 mb-4">
                 Try ComfyUI Workflow Mastery for 60 full days. If you don't achieve dramatically better, more consistent results, I'll refund every penny. No questions asked.
               </p>
@@ -910,17 +925,17 @@ export default function ComfyUIWorkflowsPage() {
                   <h3 className="text-2xl font-bold mb-4 text-red-300">Why This Price Won't Last</h3>
                   <div className="grid md:grid-cols-2 gap-6 text-left">
                     <div>
-                      <h4 className="font-bold text-white mb-2">📈 Increasing Value</h4>
+                      <h4 className="font-bold text-white mb-2">Increasing Value</h4>
                       <p className="text-gray-300 mb-4">We're constantly adding new workflows, techniques, and bonuses. Early adopters lock in the current price before it reflects the growing value.</p>
                       
-                      <h4 className="font-bold text-white mb-2">👥 Community Size</h4>
+                      <h4 className="font-bold text-white mb-2">Community Size</h4>
                       <p className="text-gray-300">Limited spots ensure quality support and community interaction. Too many members would compromise the experience.</p>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">🔥 AI Evolution</h4>
+                      <h4 className="font-bold text-white mb-2">AI Evolution</h4>
                       <p className="text-gray-300 mb-4">ComfyUI is becoming the industry standard. Get in now before it's mainstream and competition increases.</p>
                       
-                      <h4 className="font-bold text-white mb-2">💰 Market Demand</h4>
+                      <h4 className="font-bold text-white mb-2">Market Demand</h4>
                       <p className="text-gray-300">As more people discover ComfyUI's power, training costs will increase. Early bird pricing won't be available forever.</p>
                     </div>
                   </div>
@@ -939,13 +954,13 @@ export default function ComfyUIWorkflowsPage() {
                     borderRadius="9999px"
                   >
                     <span className="text-xl md:text-2xl font-bold px-8 py-4 text-center block">
-                      🚀 SECURE EARLY BIRD PRICING<br className="md:hidden" /> - $<NumberTicker value={247} className="inline" /> 🚀
+                      SECURE EARLY BIRD PRICING<br className="md:hidden" /> - $<NumberTicker value={247} className="inline" /> 
                     </span>
                   </ShimmerButton>
                 </Link>
 
                 <p className="text-sm text-green-400 mt-4 font-bold">
-                  ✅ Lifetime access + 60-day money-back guarantee
+                  Lifetime access + 60-day money-back guarantee
                 </p>
               </div>
             </div>

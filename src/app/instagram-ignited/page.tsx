@@ -473,7 +473,7 @@ export default function InstagramIgnitedPage() {
             
             <div className="text-center mt-12">
               <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-2">⚡ This System is BATTLE-TESTED</h4>
+                <h4 className="text-2xl font-bold text-yellow-400 mb-2">This System is BATTLE-TESTED</h4>
                 <p className="text-gray-300 text-lg">
                   No theory, no guesswork, no "try this and see what happens." Every strategy is proven to work 
                   across thousands of students and millions of dollars in results.

@@ -160,7 +160,7 @@ export default function InstagramIgnitedPage() {
                 description: "The creator economy is exploding. People with smaller followings than you are making $10K-$50K per month while you're making $0. You're watching millions slip away."
               },
               {
-                icon: "🔥",
+                icon: "",
                 title: "Burning Out from Zero Results",
                 description: "You're exhausted. Hours spent creating, editing, posting, engaging... for NOTHING. You're ready to quit but you know Instagram could change your life if you just knew what actually works."
               }
@@ -304,7 +304,7 @@ export default function InstagramIgnitedPage() {
             
             <div className="text-center mt-12">
               <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-2">⚡ This System is BATTLE-TESTED</h4>
+                <h4 className="text-2xl font-bold text-yellow-400 mb-2">This System is BATTLE-TESTED</h4>
                 <p className="text-gray-300 text-lg">
                   No theory, no guesswork, no "try this and see what happens." Every strategy is proven to work 
                   across thousands of students and millions of dollars in results.
@@ -563,7 +563,7 @@ export default function InstagramIgnitedPage() {
           <div className="mb-12 text-center">
             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500 rounded-3xl p-8">
               <h3 className="text-3xl md:text-5xl font-bold mb-4 text-yellow-400">
-                🔥 Amazing Bonuses Worth $1,962 🔥
+                Amazing Bonuses Worth $1,962 
               </h3>
               <p className="text-xl text-gray-300">
                 These bonuses alone are worth more than most courses. But you get them FREE when you join today.
@@ -574,32 +574,32 @@ export default function InstagramIgnitedPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "🎯 365 Days of Content Ideas",
+                title: "365 Days of Content Ideas",
                 value: "$247",
                 description: "Never run out of content again! A full year of proven, viral-ready post ideas, hooks, and concepts. Just pick one and create - guaranteed engagement every single day."
               },
               {
-                title: "🎬 Viral Reel Templates",
+                title: "Viral Reel Templates",
                 value: "$197",
                 description: "Copy-paste templates for the 25 highest-performing Reel formats. These templates have generated over 50M views combined - just plug in your content and watch it explode."
               },
               {
-                title: "📝 Caption Swipe File",
+                title: "Caption Swipe File",
                 value: "$127",
                 description: "500+ high-converting captions that drive engagement, followers, and sales. Categorized by niche and goal - just copy, customize, and post for instant results."
               },
               {
-                title: "🤝 Influencer Outreach Scripts",
+                title: "Influencer Outreach Scripts",
                 value: "$97",
                 description: "The exact DM templates that got me collaborations with 7-figure creators. These scripts have a 67% response rate and have led to millions in combined reach."
               },
               {
-                title: "📊 Monthly Algorithm Updates",
+                title: "Monthly Algorithm Updates",
                 value: "$497/year",
                 description: "Stay ahead of every Instagram change forever. Monthly reports on algorithm updates, new features, and strategy adjustments - so you're always winning while others struggle."
               },
               {
-                title: "👥 Private Mastermind Access",
+                title: "Private Mastermind Access",
                 value: "$797"
                 description: "Join weekly live calls with me and other successful creators. Get your questions answered, strategies reviewed, and network with people actually getting results."
               }
@@ -717,7 +717,7 @@ export default function InstagramIgnitedPage() {
               {/* Instagram Ignited */}
               <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 border-2 border-green-500 rounded-2xl p-6 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 bg-green-500 text-black text-sm font-bold py-2">
-                  🔥 BEST VALUE 🔥
+                  BEST VALUE 
                 </div>
                 <div className="mt-8">
                   <h4 className="text-xl font-bold mb-4 text-green-400">Instagram Ignited</h4>
@@ -742,7 +742,7 @@ export default function InstagramIgnitedPage() {
           <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
             <div className="bg-zinc-900 border border-red-500 rounded-3xl p-8 mb-8">
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400">
-                ⚠️ WARNING: This Deal EXPIRES Soon ⚠️
+                WARNING: This Deal EXPIRES Soon 
               </h3>
               
               <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -781,11 +781,11 @@ export default function InstagramIgnitedPage() {
                 href="#"
                 className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse"
               >
-                🔥 CLAIM INSTAGRAM IGNITED NOW - $247 🔥
+                CLAIM INSTAGRAM IGNITED NOW - $247 
               </Link>
               
               <p className="text-sm text-gray-400">
-                ✅ Instant Access • ✅ Lifetime Updates • ✅ 30-Day Money-Back Guarantee
+                Instant Access • Lifetime Updates • 30-Day Money-Back Guarantee
               </p>
               
               <div className="bg-zinc-900 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
@@ -1075,11 +1075,11 @@ export default function InstagramIgnitedPage() {
             </div>
             
             <Link href="#pricing" className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4">
-              🚀 TRANSFORM MY INSTAGRAM NOW - $247 🚀
+              TRANSFORM MY INSTAGRAM NOW - $247 
             </Link>
             
             <p className="text-sm text-gray-400 mb-6">
-              ✅ Instant Access • ✅ 30-Day Guarantee • ✅ Lifetime Updates • ✅ $1,962 in Bonuses
+              Instant Access • 30-Day Guarantee • Lifetime Updates • $1,962 in Bonuses
             </p>
             
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">

@@ -23,7 +23,31 @@ import NumberTicker from '@/components/magicui/number-ticker'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import Marquee from '@/components/magicui/marquee'
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, Target, Flame, Zap, Rocket, DollarSign, BarChart3, Users, AlertTriangle, CheckCircle, Clock, TrendingUp, TrendingDown, Skull, Settings, Bot, RefreshCw } from 'lucide-react'
+
+// Icon mapping function
+const getIcon = (iconName: string, className?: string) => {
+  const iconProps = { className: className || "w-6 h-6", strokeWidth: 2 }
+  const icons: { [key: string]: JSX.Element } = {
+    target: <Target {...iconProps} />,
+    flame: <Flame {...iconProps} />,
+    zap: <Zap {...iconProps} />,
+    rocket: <Rocket {...iconProps} />,
+    dollarSign: <DollarSign {...iconProps} />,
+    barChart3: <BarChart3 {...iconProps} />,
+    users: <Users {...iconProps} />,
+    alertTriangle: <AlertTriangle {...iconProps} />,
+    checkCircle: <CheckCircle {...iconProps} />,
+    clock: <Clock {...iconProps} />,
+    trendingUp: <TrendingUp {...iconProps} />,
+    trendingDown: <TrendingDown {...iconProps} />,
+    skull: <Skull {...iconProps} />,
+    settings: <Settings {...iconProps} />,
+    bot: <Bot {...iconProps} />,
+    refreshCw: <RefreshCw {...iconProps} />
+  }
+  return icons[iconName] || <Target {...iconProps} />
+}
 
 // SEO Schema markup for course domination
 const courseSchema = {
@@ -174,11 +198,11 @@ export default function N8NAutomationsPage() {
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection
-          badge="🚀 AI AUTOMATION EMPIRE 🚀"
+          badge="AI AUTOMATION EMPIRE"
           badgeColor="bg-gradient-to-r from-purple-600/30 to-blue-600/30 text-purple-300 border border-purple-500/50"
           title="Stop Trading <span className='text-red-400'>Time For Money</span> — Build <span className='text-purple-400'>AI-Powered Automation Empire</span> That Works While You Sleep"
           description="The complete N8N AI Automation System that lets non-technical entrepreneurs build million-dollar workflows without writing a single line of code. Save 40+ hours/week with intelligent automation."
-          ctaText="🔥 Get Complete N8N Mastery System"
+          ctaText="Get Complete N8N Mastery System"
           ctaLink="#pricing"
           socialProof={{
             images: [
@@ -217,32 +241,32 @@ export default function N8NAutomationsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
             {[
               {
-                icon: "⏰",
+                icon: "clock",
                 title: "80+ Hours/Week Manual Grinding",
                 description: "You're manually doing everything: email responses, data entry, social media posting, customer follow-ups. Your entire business depends on YOU being online 24/7."
               },
               {
-                icon: "💸",
+                icon: "dollarSign",
                 title: "Paying $5K+/Month for VA Teams",
                 description: "You're hemorrhaging money on virtual assistants who make mistakes, need constant supervision, and cost more than your revenue. It's unsustainable and you know it."
               },
               {
-                icon: "📈",
+                icon: "trendingUp",
                 title: "Missing 90% of Business Opportunities",
                 description: "While you're stuck doing busy work, leads go cold, customers churn, and opportunities slip away. Your competitors are moving 10x faster with automation."
               },
               {
-                icon: "😵",
+                icon: "skull",
                 title: "Burnout from Repetitive Hell",
                 description: "You didn't start a business to become a slave to it. But you're trapped doing the same mind-numbing tasks over and over, with no time for strategy or growth."
               },
               {
-                icon: "🔥",
+                icon: "flame",
                 title: "Zero Scalability Without You",
                 description: "Your business stops when you stop. Take a vacation? Revenue drops. Get sick? Everything breaks. You've built a job, not a business, and it's killing you."
               },
               {
-                icon: "📉",
+                icon: "trendingDown",
                 title: "Competitors Destroying You with AI",
                 description: "While you're manually processing orders, they're using AI to handle 1000x more customers with zero human intervention. You're being left in the dust."
               }
@@ -267,8 +291,8 @@ export default function N8NAutomationsPage() {
                 your competitors pull further ahead with AI systems that work 24/7.
               </p>
               <div className="bg-zinc-900 border border-red-500 rounded-lg p-6">
-                <p className="text-xl font-bold text-red-400 mb-2">
-                  💀 You're not just losing time... you're losing your business to AI-powered competitors.
+                <p className="text-xl font-bold text-red-400 mb-2 flex items-center gap-2">
+                  {getIcon('skull', 'w-5 h-5')} You're not just losing time... you're losing your business to AI-powered competitors.
                 </p>
                 <p className="text-gray-300">
                   While they scale effortlessly with automation, you're drowning in manual work that will never end.
@@ -406,7 +430,7 @@ export default function N8NAutomationsPage() {
             
             <div className="text-center mt-12">
               <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-2">⚡ This System is BATTLE-TESTED</h4>
+                <h4 className="text-2xl font-bold text-yellow-400 mb-2">This System is BATTLE-TESTED</h4>
                 <p className="text-gray-300 text-lg">
                   No theory, no guesswork, no "maybe this will work." Every workflow is proven across thousands of businesses 
                   and millions in automated revenue.
@@ -756,32 +780,38 @@ export default function N8NAutomationsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "🔧 100+ Ready-Made Workflow Templates",
+                title: "100+ Ready-Made Workflow Templates",
+                icon: "settings",
                 value: "$997",
                 description: "Copy-paste workflows for every business need. Lead generation, customer service, e-commerce, social media, analytics - just import and customize for instant results."
               },
               {
-                title: "🤖 AI Prompt Library (500+ Prompts)",
+                title: "AI Prompt Library (500+ Prompts)",
+                icon: "bot",
                 value: "$497",
                 description: "Proven AI prompts for every automation scenario. Customer service responses, content creation, data analysis, lead qualification - all optimized for maximum performance."
               },
               {
-                title: "🎯 Client Service Toolkit",
+                title: "Client Service Toolkit",
+                icon: "target",
                 value: "$1,297",
                 description: "Complete business-in-a-box for selling automation services. Contracts, proposals, pricing guides, delivery templates - start charging $5K+ per project immediately."
               },
               {
-                title: "📊 Advanced Analytics Dashboard",
+                title: "Advanced Analytics Dashboard",
+                icon: "barChart3",
                 value: "$697",
                 description: "Pre-built dashboard templates that automatically track your business metrics, ROI from automation, and performance analytics. See exactly how much time and money you're saving."
               },
               {
-                title: "🔄 Integration Setup Guides",
+                title: "Integration Setup Guides",
+                icon: "refreshCw",
                 value: "$397",
                 description: "Step-by-step guides for connecting N8N to 100+ popular tools. Shopify, WordPress, Stripe, Mailchimp, Slack, and more. Never get stuck on technical setup again."
               },
               {
-                title: "👥 Private Mastermind Community",
+                title: "Private Mastermind Community",
+                icon: "users",
                 value: "$1,997/year",
                 description: "Exclusive access to our private community of automation experts. Get help, share workflows, collaborate on projects, and network with successful entrepreneurs."
               }
@@ -795,7 +825,10 @@ export default function N8NAutomationsPage() {
                   value={bonus.value}
                   className="absolute top-4 right-4 bg-yellow-500"
                 />
-                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400">{bonus.title}</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400 flex items-center gap-2">
+                  {bonus.icon && getIcon(bonus.icon, "w-5 h-5")}
+                  {bonus.title}
+                </h3>
                 <p className="text-gray-300 leading-relaxed">{bonus.description}</p>
               </div>
             ))}
@@ -925,7 +958,7 @@ export default function N8NAutomationsPage() {
           <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
             <div className="bg-zinc-900 border border-red-500 rounded-3xl p-8 mb-8">
               <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400">
-                ⚠️ Limited Time Early Bird Offer ⚠️
+                Limited Time Early Bird Offer
               </h3>
               
               <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -949,7 +982,9 @@ export default function N8NAutomationsPage() {
               </p>
               
               <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6 mb-8">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-3">🚨 Don't Wait - Here's Why:</h4>
+                <h4 className="text-2xl font-bold text-yellow-400 mb-3 flex items-center gap-2">
+                  {getIcon('alertTriangle', 'w-6 h-6')} Don't Wait - Here's Why:
+                </h4>
                 <div className="text-left space-y-2 text-gray-300">
                   <p>• Every day you wait, competitors build stronger automation advantages</p>
                   <p>• Each month of manual work = $10K-$50K in lost productivity and opportunities</p>
@@ -964,15 +999,17 @@ export default function N8NAutomationsPage() {
                 href="#"
                 className="inline-block bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse"
               >
-                🚀 GET N8N MASTERY SYSTEM - $129 🚀
+                GET N8N MASTERY SYSTEM - $129
               </Link>
               
               <p className="text-sm text-gray-400">
-                ✅ Instant Access • ✅ Lifetime Updates • ✅ 30-Day Money-Back Guarantee
+                {getIcon('checkCircle', 'w-4 h-4')} Instant Access • {getIcon('checkCircle', 'w-4 h-4')} Lifetime Updates • {getIcon('checkCircle', 'w-4 h-4')} 30-Day Money-Back Guarantee
               </p>
               
               <div className="bg-zinc-900 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
-                <h4 className="text-xl font-bold text-green-400 mb-3">💯 Zero-Risk Guarantee</h4>
+                <h4 className="text-xl font-bold text-green-400 mb-3 flex items-center gap-2">
+                  {getIcon('checkCircle', 'w-5 h-5')} Zero-Risk Guarantee
+                </h4>
                 <p className="text-gray-300">
                   Try N8N AI Automations for 30 days. If you don't save at least 20 hours per week and see massive 
                   business improvements, I'll refund every penny. No questions asked.
@@ -1202,7 +1239,9 @@ export default function N8NAutomationsPage() {
             <p className="text-lg md:text-xl text-gray-400 mb-8">Join thousands of entrepreneurs who escaped manual labor hell and built automated businesses that scale infinitely</p>
             
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-red-400 mb-3">⏰ FINAL WARNING</h3>
+              <h3 className="text-2xl font-bold text-red-400 mb-3 flex items-center justify-center gap-2">
+                {getIcon('alertTriangle', 'w-6 h-6')} FINAL WARNING
+              </h3>
               <p className="text-gray-300 mb-4">
                 This INSANE $129 early bird price and $7,361 in bonuses expire at MIDNIGHT Sunday. After that, you'll pay $297 without any bonuses.
               </p>
@@ -1220,13 +1259,13 @@ export default function N8NAutomationsPage() {
                 borderRadius="1rem"
               >
                 <span className="text-xl md:text-2xl font-bold px-8 py-4 text-center block">
-                  🚀 BUILD MY AUTOMATION EMPIRE<br className="md:hidden" /> - $<NumberTicker value={297} className="inline" /> 🚀
+                  BUILD MY AUTOMATION EMPIRE<br className="md:hidden" /> - $<NumberTicker value={297} className="inline" /> 
                 </span>
               </ShimmerButton>
             </Link>
             
             <p className="text-sm text-gray-400 mb-6">
-              ✅ Instant Access • ✅ 30-Day Guarantee • ✅ Lifetime Updates • ✅ $7,361 in Bonuses
+              Instant Access • 30-Day Guarantee • Lifetime Updates • $7,361 in Bonuses
             </p>
             
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
@@ -1267,7 +1306,7 @@ export default function N8NAutomationsPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
-              <div className="text-2xl mb-4">🎯</div>
+              <div className="text-2xl mb-4"></div>
               <h3 className="text-xl font-bold text-white mb-3">Getting Started</h3>
               <div className="space-y-2">
                 <Link href="/blog/n8n-beginners-guide" className="block text-purple-400 hover:text-purple-300 transition-colors">
@@ -1280,7 +1319,7 @@ export default function N8NAutomationsPage() {
             </div>
 
             <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
-              <div className="text-2xl mb-4">⚡</div>
+              <div className="text-2xl mb-4"></div>
               <h3 className="text-xl font-bold text-white mb-3">Essential Workflows</h3>
               <div className="space-y-2">
                 <Link href="/blog/essential-n8n-workflows" className="block text-purple-400 hover:text-purple-300 transition-colors">
@@ -1293,7 +1332,7 @@ export default function N8NAutomationsPage() {
             </div>
 
             <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
-              <div className="text-2xl mb-4">💰</div>
+              <div className="text-2xl mb-4"></div>
               <h3 className="text-xl font-bold text-white mb-3">Success Stories</h3>
               <div className="space-y-2">
                 <Link href="/blog/n8n-automation-success" className="block text-purple-400 hover:text-purple-300 transition-colors">
@@ -1306,7 +1345,7 @@ export default function N8NAutomationsPage() {
             </div>
 
             <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
-              <div className="text-2xl mb-4">🚀</div>
+              <div className="text-2xl mb-4"></div>
               <h3 className="text-xl font-bold text-white mb-3">Advanced Training</h3>
               <div className="space-y-2">
                 <Link href="/digital-products" className="block text-purple-400 hover:text-purple-300 transition-colors">
