@@ -35,11 +35,8 @@ export default function BlogPage() {
       })
     }
 
-    // If showing "All" and no search, exclude featured posts from main list to avoid duplication
-    if (selectedCategory === 'All' && !searchTerm.trim()) {
-      const featuredSlugs = featuredPosts.map(post => post.slug)
-      posts = posts.filter(post => !featuredSlugs.includes(post.slug))
-    }
+    // Note: When showing "All", we show all posts including featured ones
+    // The featured section is shown separately above, but users expect to see ALL posts in the main list
 
     return posts
   }, [searchTerm, selectedCategory])
@@ -54,10 +51,13 @@ export default function BlogPage() {
           <div className="text-center mb-12">
             <ScrollAnimation animation="fade-up" delay={200}>
               <BlurIn 
-                word="Creator Blog"
-                className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6"
+                word="Creator Knowledge Hub"
+                className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4 tracking-tight"
                 duration={1000}
               />
+              <div className="text-lg md:text-xl text-zinc-400 font-medium tracking-wide mb-8">
+                INSIGHTS • STRATEGIES • TUTORIALS
+              </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fade-up" delay={400}>
@@ -259,7 +259,7 @@ export default function BlogPage() {
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-8">
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory} Articles` : 'All Articles'}
+                  {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory} Articles` : (searchTerm === '' ? 'Latest Articles' : 'All Articles')}
                 </h2>
                 <div className="px-3 py-1 bg-gray-800/50 rounded-full border border-gray-700">
                   <NumberTicker value={filteredPosts.length} className="text-sm font-medium text-blue-300" />
