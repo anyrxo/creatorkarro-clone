@@ -37,45 +37,13 @@ export function BeautifulHero() {
     return () => window.removeEventListener('mousemove', handleMouseMove)
   }, [])
 
-  // Text scramble effect
-  const scrambleText = (text: string, duration: number = 1000) => {
-    if (!titleRef.current) return
-    
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-    let currentIndex = 0
-    
-    const interval = setInterval(() => {
-      if (!titleRef.current) {
-        clearInterval(interval)
-        return
-      }
-      
-      const scrambled = text
-        .split('')
-        .map((char, index) => {
-          if (index < currentIndex) return text[index]
-          if (char === ' ') return ' ' // Keep spaces
-          return chars[Math.floor(Math.random() * chars.length)]
-        })
-        .join('')
-      
-      titleRef.current.textContent = scrambled
-      
-      currentIndex++
-      if (currentIndex > text.length) {
-        clearInterval(interval)
-        if (titleRef.current) {
-          titleRef.current.textContent = text
-        }
-      }
-    }, Math.max(duration / text.length, 50)) // Minimum 50ms per character
-  }
-
+  // Removed text scramble effect for better accessibility and performance
+  // Screen readers need consistent text content
+  
   useEffect(() => {
     if (isInView && titleRef.current) {
-      // Ensure the text is set initially
+      // Simply ensure the text is set for screen readers
       titleRef.current.textContent = 'CREATE THE FUTURE'
-      scrambleText('CREATE THE FUTURE', 1500)
     }
   }, [isInView])
 
@@ -172,13 +140,14 @@ export function BeautifulHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2.2 }}
           >
-            <Link href="/instagram-ignited">
+            <Link href="/instagram-ignited" className="inline-block">
               <motion.button
-                className="group relative px-8 py-4 bg-white text-black font-medium rounded-full overflow-hidden"
+                className="group relative px-8 py-4 bg-white text-black font-semibold rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-500/50"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                aria-label="Start learning with our courses today"
               >
-                <span className="relative z-10">Start Learning Today</span>
+                <span className="relative z-10 transition-opacity duration-300 group-hover:opacity-0">Start Learning Today</span>
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600"
                   initial={{ x: "-100%" }}
@@ -186,7 +155,7 @@ export function BeautifulHero() {
                   transition={{ duration: 0.3 }}
                 />
                 <motion.span
-                  className="absolute inset-0 flex items-center justify-center text-white font-medium"
+                  className="absolute inset-0 flex items-center justify-center text-white font-semibold"
                   initial={{ opacity: 0 }}
                   whileHover={{ opacity: 1 }}
                   transition={{ duration: 0.3 }}
@@ -196,11 +165,12 @@ export function BeautifulHero() {
               </motion.button>
             </Link>
 
-            <Link href="/story">
+            <Link href="/story" className="inline-block">
               <motion.button
-                className="px-8 py-4 border border-zinc-700 text-white font-medium rounded-full backdrop-blur-sm hover:bg-white/5 transition-colors"
+                className="px-8 py-4 border-2 border-zinc-600 text-white font-semibold rounded-full backdrop-blur-sm hover:bg-white/10 hover:border-zinc-500 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-zinc-500/50"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                aria-label="Read the founder's story"
               >
                 Read My Story
               </motion.button>
@@ -229,12 +199,12 @@ export function BeautifulHero() {
         </motion.div>
       </div>
 
-      {/* Floating particles */}
+      {/* Reduced floating particles for better performance */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-white/20 rounded-full"
+            className="absolute w-1 h-1 bg-white/10 rounded-full"
             initial={{
               x: `${Math.random() * 100}%`,
               y: '110%',
@@ -244,10 +214,10 @@ export function BeautifulHero() {
               x: `${Math.random() * 100}%`,
             }}
             transition={{
-              duration: Math.random() * 20 + 10,
+              duration: Math.random() * 15 + 8,
               repeat: Infinity,
               ease: "linear",
-              delay: Math.random() * 10,
+              delay: Math.random() * 8,
             }}
           />
         ))}

@@ -29,34 +29,35 @@ export default function HomePage() {
   const backgroundY = useSpring(useTransform(scrollYProgress, [0, 1], [0, -300]), springConfig)
 
   useEffect(() => {
-    // Initialize sounds
-    initInteractiveSounds()
-    
-    // Start ambient sound on first interaction
-    const startAmbient = () => {
-      soundManager.startAmbient()
-      window.removeEventListener('click', startAmbient)
-    }
-    window.addEventListener('click', startAmbient)
+    // Removed sound initialization for better performance and user experience
+    // Sounds can be enabled later with user opt-in
 
-    // Initialize reveal animations
+    // Initialize reveal animations with better performance
     const reveals = document.querySelectorAll('.reveal-animation')
-    createRevealAnimation(reveals)
+    if (reveals.length > 0) {
+      createRevealAnimation(reveals)
+    }
 
-    // Add magnetic hover to buttons
+    // Add magnetic hover with reduced intensity for better accessibility
     const buttons = document.querySelectorAll('.magnetic-button')
     buttons.forEach(button => {
-      createMagneticHover(button as HTMLElement, 0.3)
+      createMagneticHover(button as HTMLElement, 0.15) // Reduced from 0.3 to 0.15
     })
 
-    // Add reveal animation styles
-    const style = document.createElement('style')
-    style.textContent = revealAnimationStyles
-    document.head.appendChild(style)
+    // Add reveal animation styles efficiently
+    if (!document.getElementById('reveal-styles')) {
+      const style = document.createElement('style')
+      style.id = 'reveal-styles'
+      style.textContent = revealAnimationStyles
+      document.head.appendChild(style)
+    }
 
     return () => {
-      soundManager.stopAmbient()
-      window.removeEventListener('click', startAmbient)
+      // Cleanup any remaining event listeners
+      const styleElement = document.getElementById('reveal-styles')
+      if (styleElement) {
+        styleElement.remove()
+      }
     }
   }, [])
 
@@ -168,38 +169,30 @@ export default function HomePage() {
                 <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
               </AnimatedGradientText>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
               {features.map((feature, index) => (
                 <motion.div
                   key={feature.title}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.2 }}
-                  whileHover={{ y: -5 }}
-                  className="text-center"
+                  transition={{ delay: index * 0.15, duration: 0.6 }}
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  className="text-center group cursor-pointer"
                 >
                   <motion.div
-                    className="inline-block mb-4"
-                    animate={{ 
-                      rotate: [0, 10, -10, 0],
-                      scale: [1, 1.1, 1]
-                    }}
-                    transition={{ 
-                      duration: 3,
-                      repeat: Infinity,
-                      repeatDelay: index + 1
-                    }}
+                    className="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 group-hover:border-blue-400/40 group-hover:bg-blue-500/20 transition-all duration-300"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
                   >
                     <PainPointIcon 
                       type={feature.icon as any} 
-                      size={48} 
-                      className="text-blue-500" 
+                      size={32} 
+                      className="text-blue-400 group-hover:text-blue-300 transition-colors duration-300" 
                       color="currentColor"
                     />
                   </motion.div>
-                  <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
-                  <p className="text-zinc-400">{feature.description}</p>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">{feature.title}</h3>
+                  <p className="text-zinc-300 leading-relaxed text-sm md:text-base group-hover:text-zinc-200 transition-colors duration-300">{feature.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -340,7 +333,7 @@ export default function HomePage() {
                     )}
                     <span>{stat.suffix}</span>
                   </div>
-                  <p className="text-sm sm:text-base text-zinc-500 font-medium">{stat.label}</p>
+                  <p className="text-sm sm:text-base text-zinc-300 font-medium">{stat.label}</p>
                 </motion.div>
               </motion.div>
             ))}
@@ -360,7 +353,7 @@ export default function HomePage() {
             <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
               Success Stories
             </h2>
-            <p className="text-xl text-zinc-400">From our incredible community</p>
+            <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">From our incredible community of successful creators</p>
           </motion.div>
 
           <TestimonialCarousel 
@@ -415,8 +408,8 @@ export default function HomePage() {
               className="text-5xl md:text-7xl font-bold text-white mb-6"
               duration={150}
             />
-            <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-              From viral content creation to automated business systems
+            <p className="text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto leading-relaxed">
+              From viral content creation to automated business systems that scale
             </p>
           </motion.div>
 
@@ -472,22 +465,23 @@ export default function HomePage() {
                 whileHover={{ y: -5, scale: 1.02 }}
                 className="relative group"
               >
-                <div className="p-6 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-zinc-700 transition-all duration-300">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <motion.div 
-                    className="mb-4"
-                    animate={{ rotate: [0, 5, -5, 0] }}
-                    transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
-                  >
-                    <PainPointIcon 
-                      type={skill.icon as any} 
-                      size={40} 
-                      className="text-blue-400" 
-                      color="currentColor"
-                    />
-                  </motion.div>
-                  <h3 className="text-xl font-semibold text-white mb-2">{skill.title}</h3>
-                  <p className="text-sm text-zinc-400">{skill.description}</p>
+                <div className="p-6 lg:p-8 rounded-2xl bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 hover:border-blue-500/50 hover:bg-zinc-800/60 transition-all duration-300 h-full">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative z-10">
+                    <motion.div 
+                      className="inline-flex items-center justify-center w-14 h-14 mb-6 rounded-xl bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors duration-300"
+                      whileHover={{ scale: 1.1 }}
+                    >
+                      <PainPointIcon 
+                        type={skill.icon as any} 
+                        size={28} 
+                        className="text-blue-400 group-hover:text-blue-300 transition-colors duration-300" 
+                        color="currentColor"
+                      />
+                    </motion.div>
+                    <h3 className="text-lg lg:text-xl font-semibold text-white mb-3 group-hover:text-blue-200 transition-colors duration-300">{skill.title}</h3>
+                    <p className="text-sm lg:text-base text-zinc-300 leading-relaxed group-hover:text-zinc-200 transition-colors duration-300">{skill.description}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -677,8 +671,8 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <p className="text-2xl text-zinc-400 mb-12">
-              Join thousands of creators building their dream businesses
+            <p className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto">
+              Join 13,000+ creators who've already transformed their passion into profitable businesses
             </p>
             <motion.div
               className="inline-block"
