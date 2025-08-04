@@ -65,11 +65,9 @@ export default function BlogPage() {
             <ScrollAnimation animation="fade-up" delay={200}>
               <div className="relative inline-block">
                 {/* Main Title with Magical Effects */}
-                <BlurIn 
-                  word="Creator Blog"
-                  className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight drop-shadow-2xl"
-                  duration={1200}
-                />
+                <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
+                  Creator Blog
+                </h1>
                 
                 {/* Magical Glowing Border */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 via-pink-600 to-yellow-600 rounded-2xl opacity-20 blur-xl animate-pulse"></div>
@@ -316,9 +314,14 @@ export default function BlogPage() {
                   </div>
                 </div>
               ) : (
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <>
+                  {/* Debug info */}
+                  <div className="text-center mb-4 text-zinc-400 text-sm">
+                    Displaying {filteredPosts.length} articles in grid below
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {filteredPosts.map((post, index) => (
-                    <ScrollAnimation key={post.slug} animation="fade-up" delay={1400 + index * 100}>
+                    <div key={post.slug}>
                       <TiltCard className="h-full">
                         <Link href={`/blog/${post.slug}`}>
                           <SpotlightCard 
@@ -418,9 +421,10 @@ export default function BlogPage() {
                           </SpotlightCard>
                         </Link>
                       </TiltCard>
-                    </ScrollAnimation>
+                    </div>
                   ))}
                 </div>
+                </>
               )}
             </div>
           </ScrollAnimation>
