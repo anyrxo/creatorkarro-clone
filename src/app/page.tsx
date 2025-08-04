@@ -216,21 +216,27 @@ export default function HomePage() {
 
             {/* Main Headline */}
             <div className="mb-8">
-              <motion.h1
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 tracking-tight leading-tight"
-              >
-                Where Creators{' '}
-                <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <div className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 tracking-tight leading-tight">
+                <motion.span
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.8 }}
+                >
+                  Where Creators{' '}
+                </motion.span>
+                <motion.span
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.7, duration: 0.8 }}
+                  className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+                >
                   <WordRotate
                     words={["Become Empires", "Build Legacies", "Scale Dreams", "Make Millions"]}
                     className="text-5xl md:text-7xl lg:text-8xl font-black"
                     duration={3000}
                   />
-                </span>
-              </motion.h1>
+                </motion.span>
+              </div>
             </div>
 
             {/* Subtitle */}
@@ -238,11 +244,10 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.8 }}
-              className="text-xl md:text-2xl lg:text-3xl text-zinc-200 mb-12 leading-relaxed max-w-4xl mx-auto font-medium"
+              className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto font-medium"
             >
-              The ultimate creator education platform. Master AI automation, viral growth strategies, and digital business systems that turned 
-              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent font-bold"> 13,000+ students</span> into 
-              <span className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent font-bold"> profitable entrepreneurs</span>
+              Master AI automation and growth systems that built 
+              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent font-bold"> 6,000+ successful creators</span>
             </motion.p>
 
             {/* Key Stats */}
@@ -253,7 +258,7 @@ export default function HomePage() {
               className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 max-w-4xl mx-auto"
             >
               {[
-                { value: '13K+', label: 'Active Students' },
+                { value: '6K+', label: 'Active Students' },
                 { value: '10M+', label: 'Followers Built' },
                 { value: '$5M+', label: 'Student Revenue' },
                 { value: '4.9★', label: 'Average Rating' }
@@ -554,54 +559,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Beautiful Stats Section */}
-      <section className="relative py-20 bg-black overflow-hidden">
-        <div className="container mx-auto px-6 sm:px-8 max-w-7xl">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center"
-          >
-            {[
-              { value: 13000, suffix: '+', label: 'Active Students', displayValue: '13K' },
-              { value: 10000000, suffix: '+', label: 'Followers Built', displayValue: '10M' },
-              { value: 5000000, prefix: '$', suffix: '+', label: 'Student Revenue', displayValue: '5M' },
-              { value: 4.9, suffix: '★', label: 'Average Rating', decimals: 1 }
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group px-4 py-4"
-              >
-                <motion.div
-                  className="space-y-2"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <div className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-white">
-                    <span>{stat.prefix}</span>
-                    {stat.displayValue ? (
-                      <span>{stat.displayValue}</span>
-                    ) : (
-                      <NumberTicker 
-                        value={stat.value} 
-                        delay={0.5 + index * 0.2}
-                        decimalPlaces={stat.decimals || 0}
-                        className="inline-block"
-                      />
-                    )}
-                    <span>{stat.suffix}</span>
-                  </div>
-                  <p className="text-sm sm:text-base text-zinc-300 font-medium">{stat.label}</p>
-                </motion.div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
 
       {/* Testimonials with Beautiful Animation */}
       <section className="relative py-20 bg-gradient-to-b from-black via-zinc-900 to-black">
@@ -934,7 +891,7 @@ export default function HomePage() {
               </div>
             </div>
             <p className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Join 13,000+ creators who've already transformed their passion into profitable businesses
+              Join 6,000+ creators who've built profitable businesses
             </p>
             <motion.div
               className="inline-block"
