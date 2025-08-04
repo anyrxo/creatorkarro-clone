@@ -51,9 +51,9 @@ export default function FAQPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
       />
       
-      <div className="min-h-screen bg-gray-900">
+      <div className="min-h-screen bg-zinc-900">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-gray-800 to-gray-900 py-20">
+        <section className="bg-gradient-to-b from-zinc-800 to-zinc-900 py-20">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               <BlurIn
@@ -69,7 +69,7 @@ export default function FAQPage() {
             </h1>
             <TypingAnimation
               text="Get instant answers to all your questions about AI automation, Instagram growth, digital marketing, and building a successful online business."
-              className="text-xl text-gray-300 mb-8"
+              className="text-xl text-zinc-200 mb-8 leading-relaxed"
               duration={50}
             />
             <div className="flex flex-wrap justify-center gap-4">
@@ -77,7 +77,8 @@ export default function FAQPage() {
                 <a
                   key={topic}
                   href={`#${topic}`}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500/50 hover:scale-105 shadow-lg hover:shadow-blue-500/25"
+                  aria-label={`Jump to ${topic.replace('-', ' ')} questions`}
                 >
                   {topic.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}
                 </a>
@@ -95,7 +96,7 @@ export default function FAQPage() {
                   <h2 className="text-3xl font-bold text-white mb-4">
                     {system.name} FAQ
                   </h2>
-                  <p className="text-gray-300 text-lg">
+                  <p className="text-zinc-200 text-lg leading-relaxed">
                     {system.description}
                   </p>
                 </div>
@@ -111,37 +112,48 @@ export default function FAQPage() {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-gray-800 py-20">
+        <section className="bg-zinc-800 py-20">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <BlurIn
               word="Still Have Questions?"
               className="text-3xl font-bold text-white mb-6"
               duration={0.8}
             />
-            <p className="text-gray-300 text-lg mb-8">
+            <p className="text-zinc-200 text-lg mb-8 leading-relaxed">
               Can't find what you're looking for? Our expert support team is here to help 24/7.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gray-700 p-6 rounded-lg">
+              <div className="bg-zinc-700 p-6 rounded-lg hover:bg-zinc-600/50 transition-all duration-300 border border-zinc-600/50 hover:border-zinc-500/50">
                 <h3 className="text-xl font-semibold text-white mb-3">📧 Email Support</h3>
-                <p className="text-gray-300 mb-4">Get detailed answers within 24 hours</p>
-                <a href="mailto:support@iimagined.ai" className="text-blue-400 hover:text-blue-300">
+                <p className="text-zinc-200 mb-4">Get detailed answers within 24 hours</p>
+                <a 
+                  href="mailto:support@iimagined.ai" 
+                  className="text-blue-400 hover:text-blue-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded px-2 py-1"
+                  aria-label="Send email to support team"
+                >
                   support@iimagined.ai
                 </a>
               </div>
               
-              <div className="bg-gray-700 p-6 rounded-lg">
+              <div className="bg-zinc-700 p-6 rounded-lg hover:bg-zinc-600/50 transition-all duration-300 border border-zinc-600/50 hover:border-zinc-500/50">
                 <h3 className="text-xl font-semibold text-white mb-3">💬 Live Chat</h3>
-                <p className="text-gray-300 mb-4">Real-time support during business hours</p>
-                <button className="text-blue-400 hover:text-blue-300">
+                <p className="text-zinc-200 mb-4">Real-time support during business hours</p>
+                <button 
+                  className="text-blue-400 hover:text-blue-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded px-2 py-1"
+                  aria-label="Start live chat with support"
+                >
                   Start Live Chat
                 </button>
               </div>
               
-              <div className="bg-gray-700 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-white mb-3"> Help Center</h3>
-                <p className="text-gray-300 mb-4">Comprehensive guides and tutorials</p>
-                <Link href="/help" className="text-blue-400 hover:text-blue-300">
+              <div className="bg-zinc-700 p-6 rounded-lg hover:bg-zinc-600/50 transition-all duration-300 border border-zinc-600/50 hover:border-zinc-500/50">
+                <h3 className="text-xl font-semibold text-white mb-3">📚 Help Center</h3>
+                <p className="text-zinc-200 mb-4">Comprehensive guides and tutorials</p>
+                <Link 
+                  href="/help" 
+                  className="text-blue-400 hover:text-blue-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded px-2 py-1"
+                  aria-label="Browse help center articles"
+                >
                   Browse Help Center
                 </Link>
               </div>
@@ -150,7 +162,7 @@ export default function FAQPage() {
         </section>
 
         {/* Popular Questions */}
-        <section className="py-20 bg-gray-900">
+        <section className="py-20 bg-zinc-900">
           <div className="max-w-4xl mx-auto px-4">
             <BlurIn
               word="Most Popular Questions"
@@ -165,11 +177,11 @@ export default function FAQPage() {
                 .sort((a, b) => b.priority - a.priority)
                 .slice(0, 5)
                 .map((faq, index) => (
-                  <div key={faq.id} className="bg-gray-800 p-6 rounded-lg border-l-4 border-blue-500">
+                  <div key={faq.id} className="bg-zinc-800 p-6 rounded-lg border-l-4 border-blue-500 hover:bg-zinc-700/50 transition-all duration-300">
                     <h3 className="text-lg font-semibold text-white mb-3">
                       {index + 1}. {faq.question}
                     </h3>
-                    <p className="text-gray-300">
+                    <p className="text-zinc-200 leading-relaxed">
                       {faq.answer}
                     </p>
                     <div className="flex flex-wrap gap-2 mt-4">
@@ -189,9 +201,9 @@ export default function FAQPage() {
         </section>
 
         {/* FAQ Search */}
-        <section className="py-12 bg-gray-800">
+        <section className="py-12 bg-zinc-800">
           <div className="max-w-2xl mx-auto px-4">
-            <div className="bg-gray-700 p-8 rounded-lg">
+            <div className="bg-zinc-700 p-8 rounded-lg border border-zinc-600/50">
               <h3 className="text-2xl font-bold text-white text-center mb-6">
                 Search FAQ
               </h3>
@@ -199,11 +211,15 @@ export default function FAQPage() {
                 <input
                   type="text"
                   placeholder="Search for answers..."
-                  className="w-full p-4 bg-gray-600 text-white rounded-lg pr-12 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-4 bg-zinc-600 text-white rounded-lg pr-12 focus:outline-none focus:ring-4 focus:ring-blue-500/50 placeholder-zinc-300 transition-all duration-300"
                   id="faq-search"
+                  aria-label="Search frequently asked questions"
                 />
-                <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white">
-                  
+                <button 
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-zinc-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded"
+                  aria-label="Search FAQ"
+                >
+                  🔍
                 </button>
               </div>
               <div id="search-results" className="mt-4 space-y-2"></div>

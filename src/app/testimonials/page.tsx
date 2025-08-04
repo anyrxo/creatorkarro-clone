@@ -266,7 +266,7 @@ export default function TestimonialsPage() {
                 />
               </div>
             </h1>
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-zinc-200 max-w-3xl mx-auto leading-relaxed">
               Real creators sharing their transformation journeys. Every story started with a single decision to invest in themselves.
             </p>
           </div>
@@ -277,11 +277,13 @@ export default function TestimonialsPage() {
               <button
                 key={course}
                 onClick={() => setActiveFilter(course)}
-                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500/50 ${
                   activeFilter === course
-                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white'
-                    : 'bg-zinc-800 text-gray-400 hover:bg-zinc-700 hover:text-white'
+                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-blue-500/25'
+                    : 'bg-zinc-800 text-zinc-200 hover:bg-zinc-700 hover:text-white'
                 }`}
+                aria-label={`Filter testimonials by ${course === 'all' ? 'all courses' : course}`}
+                aria-pressed={activeFilter === course}
               >
                 {course === 'all' ? 'All Stories' : course}
               </button>
@@ -297,19 +299,19 @@ export default function TestimonialsPage() {
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent mb-2">
                 <NumberTicker value={13000} className="text-3xl md:text-4xl font-bold text-blue-400" />+
               </div>
-              <p className="text-gray-400 text-sm md:text-base">Happy Students</p>
+              <p className="text-zinc-300 text-sm md:text-base font-medium">Happy Students</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-green-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-2">
                 <NumberTicker value={125} className="text-3xl md:text-4xl font-bold text-green-400" />M+
               </div>
-              <p className="text-gray-400 text-sm md:text-base">Views Generated</p>
+              <p className="text-zinc-300 text-sm md:text-base font-medium">Views Generated</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-purple-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent mb-2">
                 <NumberTicker value={10} className="text-3xl md:text-4xl font-bold text-purple-400" />M+
               </div>
-              <p className="text-gray-400 text-sm md:text-base">Followers Gained</p>
+              <p className="text-zinc-300 text-sm md:text-base font-medium">Followers Gained</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-yellow-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent mb-2">
@@ -358,18 +360,18 @@ export default function TestimonialsPage() {
                   />
                   <div>
                     <h4 className="font-semibold text-white group-hover:text-blue-400 transition-colors duration-300">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-400">{testimonial.role}</p>
+                    <p className="text-sm text-zinc-300">{testimonial.role}</p>
                   </div>
                 </div>
                 
                 {/* Testimonial Content */}
-                <p className="text-gray-300 leading-relaxed mb-6 text-sm md:text-base">
+                <p className="text-zinc-200 leading-relaxed mb-6 text-sm md:text-base">
                   "{testimonial.content}"
                 </p>
                 
                 {/* Results */}
                 <div className="pt-4 border-t border-zinc-700">
-                  <p className="text-sm font-medium text-gray-400 mb-2">Key Results:</p>
+                  <p className="text-sm font-medium text-zinc-300 mb-2">Key Results:</p>
                   <p className="text-base font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                     {testimonial.results}
                   </p>
@@ -412,19 +414,19 @@ export default function TestimonialsPage() {
                     />
                     <div>
                       <h3 className="text-2xl md:text-3xl font-bold text-white">Houston's Instagram Journey</h3>
-                      <p className="text-gray-400">From Unknown to 80K+ Followers</p>
+                      <p className="text-zinc-300">From Unknown to 80K+ Followers</p>
                     </div>
                   </div>
                   
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
-                      <p className="text-sm text-gray-400 mb-1">Starting Point</p>
+                      <p className="text-sm text-zinc-300 mb-1 font-medium">Starting Point</p>
                       <p className="text-2xl font-bold text-blue-400">
                         <NumberTicker value={3} className="text-2xl font-bold text-blue-400" />K Followers
                       </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
-                      <p className="text-sm text-gray-400 mb-1">First Month</p>
+                      <p className="text-sm text-zinc-300 mb-1 font-medium">First Month</p>
                       <p className="text-2xl font-bold text-green-400">
                         <NumberTicker value={20} className="text-2xl font-bold text-green-400" />K Followers
                       </p>
@@ -437,7 +439,7 @@ export default function TestimonialsPage() {
                     </div>
                   </div>
                   
-                  <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  <p className="text-lg text-zinc-200 leading-relaxed mb-6">
                     "Instagram Ignited didn't just teach me how to grow followers - it showed me how to build a real business. 
                     The viral carousel strategies were a game-changer. My first carousel using Anyro's formula got 2.8M views! 
                     Now I'm consistently hitting 100K+ views and converting followers into paying customers."
@@ -465,19 +467,19 @@ export default function TestimonialsPage() {
                     />
                     <div>
                       <h3 className="text-2xl md:text-3xl font-bold text-white">Tochi's Complete Transformation</h3>
-                      <p className="text-gray-400">From 400 to 240K Followers + Digital Empire</p>
+                      <p className="text-zinc-300">From 400 to 240K Followers + Digital Empire</p>
                     </div>
                   </div>
                   
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
-                      <p className="text-sm text-gray-400 mb-1">Year 1 Growth</p>
+                      <p className="text-sm text-zinc-300 mb-1 font-medium">Year 1 Growth</p>
                       <p className="text-2xl font-bold text-purple-400">
                         <NumberTicker value={60000} className="text-2xl font-bold text-purple-400" />%
                       </p>
                     </div>
                     <div className="bg-zinc-800/50 rounded-xl p-4 text-center border border-zinc-700">
-                      <p className="text-sm text-gray-400 mb-1">Products Launched</p>
+                      <p className="text-sm text-zinc-300 mb-1 font-medium">Products Launched</p>
                       <p className="text-2xl font-bold text-pink-400">
                         <NumberTicker value={5} className="text-2xl font-bold text-pink-400" /> Courses
                       </p>
@@ -490,7 +492,7 @@ export default function TestimonialsPage() {
                     </div>
                   </div>
                   
-                  <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  <p className="text-lg text-zinc-200 leading-relaxed mb-6">
                     "I was completely lost with just 400 followers. Instagram Ignited gave me the exact blueprint I needed. 
                     But the real transformation came when I combined it with the Digital Products course. I went from struggling 
                     creator to running a multiple 6-figure education business. My students now achieve similar transformations!"
@@ -513,7 +515,7 @@ export default function TestimonialsPage() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 animate-pulse"></div>
             <div className="relative z-10">
-              <div className="inline-block px-4 py-2 bg-zinc-800 rounded-full text-sm text-gray-300 mb-6">
+              <div className="inline-block px-4 py-2 bg-zinc-800 rounded-full text-sm text-zinc-200 mb-6">
                 <span className="text-green-400">★</span> Join 13,000+ successful students
               </div>
               
@@ -533,13 +535,13 @@ export default function TestimonialsPage() {
                 </div>
               </h2>
               
-              <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-zinc-200 mb-8 max-w-3xl mx-auto leading-relaxed">
                 Every testimonial on this page started exactly where you are now. They took action, 
                 followed the proven systems, and transformed their lives. You have the same potential.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                <Link href="/instagram-ignited">
+                <Link href="/instagram-ignited" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full">
                   <ShimmerButton
                     className="shadow-2xl"
                     shimmerColor="#ffffff"
@@ -554,30 +556,31 @@ export default function TestimonialsPage() {
                 </Link>
                 <Link
                   href="/story"
-                  className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300"
+                  className="text-blue-400 hover:text-blue-300 font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded px-2 py-1"
+                  aria-label="Read Anyro's personal story and journey"
                 >
                   Read Anyro's Story →
                 </Link>
               </div>
               
-              <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-zinc-300">
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>Lifetime Access</span>
+                  <span className="font-medium">Lifetime Access</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>30-Day Guarantee</span>
+                  <span className="font-medium">30-Day Guarantee</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>Weekly Updates</span>
+                  <span className="font-medium">Weekly Updates</span>
                 </div>
               </div>
             </div>
