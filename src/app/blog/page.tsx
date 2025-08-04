@@ -50,23 +50,24 @@ export default function BlogPage() {
         <div className="container mx-auto max-w-6xl relative">
           <div className="text-center mb-12">
             <ScrollAnimation animation="fade-up" delay={200}>
-              <BlurIn 
-                word="Creator Knowledge Hub"
-                className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4 tracking-tight"
-                duration={1000}
-              />
-              <div className="text-lg md:text-xl text-zinc-400 font-medium tracking-wide mb-8">
-                INSIGHTS • STRATEGIES • TUTORIALS
+              <div className="relative">
+                <BlurIn 
+                  word="Creator Blog"
+                  className="text-6xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6 tracking-tight"
+                  duration={1000}
+                />
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-pulse opacity-60"></div>
+                <div className="absolute -bottom-2 -left-4 w-6 h-6 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full animate-pulse opacity-40" style={{animationDelay: '0.5s'}}></div>
               </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="fade-up" delay={400}>
               <AnimatedText
                 animation="reveal"
-                className="text-xl text-zinc-200 max-w-3xl mx-auto mb-6 leading-relaxed"
-                stagger={50}
+                className="text-xl md:text-2xl text-zinc-200 max-w-4xl mx-auto mb-6 leading-relaxed font-light"
+                stagger={30}
               >
-                Insights, strategies, and tutorials to help you build a thriving creator business with AI automation, digital products, and proven growth tactics.
+                Master the art of creator entrepreneurship with AI automation, proven growth strategies, and cutting-edge digital business insights.
               </AnimatedText>
             </ScrollAnimation>
 
@@ -259,10 +260,13 @@ export default function BlogPage() {
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-8">
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory} Articles` : (searchTerm === '' ? 'Latest Articles' : 'All Articles')}
+                  {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory} Articles` : 'All Articles'}
                 </h2>
-                <div className="px-3 py-1 bg-gray-800/50 rounded-full border border-gray-700">
-                  <NumberTicker value={filteredPosts.length} className="text-sm font-medium text-blue-300" />
+                <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full border border-blue-500/30 backdrop-blur-sm">
+                  <span className="text-sm font-semibold text-blue-300">
+                    <NumberTicker value={filteredPosts.length} className="text-lg font-bold text-blue-400" />
+                    <span className="ml-1 text-blue-300">articles</span>
+                  </span>
                 </div>
               </div>
               
