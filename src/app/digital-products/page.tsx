@@ -21,7 +21,26 @@ import NumberTicker from '@/components/magicui/number-ticker'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import Marquee from '@/components/magicui/marquee'
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, Target, Flame, Zap, Rocket, DollarSign, Mail, BarChart3, Users, AlertTriangle, CheckCircle, Gem } from 'lucide-react'
+
+// Icon mapping function
+const getIcon = (iconName: string, className?: string) => {
+  const iconProps = { className: className || "w-6 h-6", strokeWidth: 2 }
+  const icons: { [key: string]: JSX.Element } = {
+    target: <Target {...iconProps} />,
+    flame: <Flame {...iconProps} />,
+    zap: <Zap {...iconProps} />,
+    rocket: <Rocket {...iconProps} />,
+    dollarSign: <DollarSign {...iconProps} />,
+    mail: <Mail {...iconProps} />,
+    barChart3: <BarChart3 {...iconProps} />,
+    users: <Users {...iconProps} />,
+    alertTriangle: <AlertTriangle {...iconProps} />,
+    checkCircle: <CheckCircle {...iconProps} />,
+    gem: <Gem {...iconProps} />
+  }
+  return icons[iconName] || <Target {...iconProps} />
+}
 
 export default function DigitalProductsPage() {
   // Scroll animations for different sections
@@ -159,11 +178,11 @@ export default function DigitalProductsPage() {
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef}>
         <HeroSection
-          badge="💎 DIGITAL EMPIRE BUILDER 💎"
+          badge="DIGITAL EMPIRE BUILDER"
           badgeColor="bg-gradient-to-r from-green-600/30 to-emerald-600/30 text-green-300 border border-green-500/50"
           title="Turn Your <span className='text-green-400'>Knowledge</span> Into a <span className='text-green-400'>$500K+ Digital Empire</span> Without Ads or Followers"
           description="The complete Digital Products Academy that shows you how to create, launch, and scale high-converting digital products that generate consistent $10K-$50K months on autopilot."
-          ctaText="🚀 Get Digital Products Mastery"
+          ctaText="Get Digital Products Mastery"
           ctaLink="#pricing"
           socialProof={{
             images: [
@@ -212,7 +231,7 @@ export default function DigitalProductsPage() {
                 description: "You have incredible expertise and knowledge that could help thousands of people, but you have no idea how to package and monetize it profitably."
               },
               {
-                icon: "🎯",
+                icon: "target",
                 title: "Confused by 'Digital Product' Gurus",
                 description: "Everyone's talking about courses and digital products, but all the advice is contradictory. You're overwhelmed by the options and don't know where to start."
               },
@@ -222,7 +241,7 @@ export default function DigitalProductsPage() {
                 description: "You've tried creating products before but they flopped. No one bought, no one engaged, and you wasted months building something nobody wanted."
               },
               {
-                icon: "🔥",
+                icon: "flame",
                 title: "Watching Others Get Rich Off Your Ideas",
                 description: "Competitors with worse knowledge are making millions selling products while you're stuck trading time for money. They figured out the system - you didn't."
               },
