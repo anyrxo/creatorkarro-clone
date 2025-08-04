@@ -5,6 +5,19 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 
+interface DropdownItem {
+  name: string
+  href: string
+}
+
+interface NavigationItem {
+  name: string
+  href: string
+  hasDropdown?: boolean
+  dropdownItems?: DropdownItem[]
+  external?: boolean
+}
+
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isCoursesOpen, setIsCoursesOpen] = useState(false)
@@ -23,7 +36,7 @@ export default function Navigation() {
     }
   }, [isMenuOpen])
 
-  const mainNavigation = [
+  const mainNavigation: NavigationItem[] = [
     { name: 'Story', href: '/story' },
     {
       name: 'Courses',
@@ -43,7 +56,7 @@ export default function Navigation() {
     { name: 'Contact', href: '/contact' },
   ]
 
-  const allNavigation = [...mainNavigation, { name: 'Join Whop 🚀', href: 'https://whop.com/anyrxo', external: true }]
+  const allNavigation: NavigationItem[] = [...mainNavigation, { name: 'Join Whop 🚀', href: 'https://whop.com/anyrxo', external: true }]
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-xl border-b border-zinc-800 glass-premium">
@@ -210,7 +223,8 @@ export default function Navigation() {
                         : 'text-gray-300 hover:text-white'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
-                    {...(item.external && { target: '_blank', rel: 'noopener noreferrer' })}
+                    target={item.external ? '_blank' : undefined}
+                    rel={item.external ? 'noopener noreferrer' : undefined}
                   >
                     {item.name}
                   </Link>
