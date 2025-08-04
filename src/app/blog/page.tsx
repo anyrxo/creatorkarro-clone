@@ -187,8 +187,7 @@ export default function BlogPage() {
 
           {/* Featured Posts - Only show when All is selected and no search */}
           {searchTerm === '' && selectedCategory === 'All' && featuredPosts.length > 0 && (
-            <ScrollAnimation animation="fade-up" delay={1200}>
-              <div className="mb-16">
+            <div className="mb-16">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="p-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg">
                     <TrendingUp className="w-6 h-6 text-white" />
@@ -282,12 +281,10 @@ export default function BlogPage() {
                   ))}
                 </div>
               </div>
-            </ScrollAnimation>
-          )}
+            )}
 
           {/* All Posts with Beautiful Grid Layout */}
-          <ScrollAnimation animation="fade-up" delay={1400}>
-            <div className="mb-8">
+          <div className="mb-8">
               <div className="flex items-center gap-3 mb-8">
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory} Articles` : (featuredPosts.length > 0 && searchTerm === '' ? 'All Articles' : 'All Articles')}
@@ -382,7 +379,6 @@ export default function BlogPage() {
                 </>
               )}
             </div>
-          </ScrollAnimation>
 
           {/* Beautiful CTA Section */}
           <ScrollAnimation animation="fade-up" delay={1600}>
