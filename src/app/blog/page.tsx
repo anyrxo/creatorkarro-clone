@@ -320,14 +320,10 @@ export default function BlogPage() {
                     Displaying {filteredPosts.length} articles in grid below
                   </div>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {filteredPosts.map((post, index) => (
-                    <div key={post.slug}>
-                      <TiltCard className="h-full">
+                    {filteredPosts.map((post, index) => (
+                      <div key={post.slug}>
                         <Link href={`/blog/${post.slug}`}>
-                          <SpotlightCard 
-                            className="h-full bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10 group relative overflow-hidden"
-                            spotlightColor="rgba(59, 130, 246, 0.2)"
-                          >
+                          <div className="h-full bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10 group relative overflow-hidden">
                             <div className="h-full flex flex-col relative z-10">
                               {/* Category Badge */}
                               <div className="flex items-center justify-between mb-4">
@@ -418,11 +414,11 @@ export default function BlogPage() {
 
                             {/* Gradient Overlay Effect */}
                             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                          </SpotlightCard>
+                          </div>
                         </Link>
-                      </TiltCard>
-                    </div>
-                  ))}
+                      </div>
+                    ))}
+                  
                 </div>
                 </>
               )}
