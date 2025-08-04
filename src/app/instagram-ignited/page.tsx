@@ -269,7 +269,7 @@ export default function InstagramIgnitedPage() {
                 />
               </div>
             </div>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-zinc-200 mb-8 max-w-4xl mx-auto leading-relaxed">
               While your competitors are building million-dollar personal brands, you're stuck in Instagram hell...
             </p>
           </div>
@@ -321,7 +321,7 @@ export default function InstagramIgnitedPage() {
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-red-400">{problem.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{problem.description}</p>
+                <p className="text-zinc-200 leading-relaxed">{problem.description}</p>
               </div>
             ))}
           </div>
@@ -331,7 +331,7 @@ export default function InstagramIgnitedPage() {
               <h3 className="text-2xl md:text-4xl font-bold mb-4 text-red-400">
                 The Painful Reality...
               </h3>
-              <p className="text-lg md:text-xl text-gray-300 mb-6">
+              <p className="text-lg md:text-xl text-zinc-200 mb-6">
                 Every day you wait, your competitors get further ahead. Every month you stay stuck, that's $5K-$20K in lost income. 
                 Every year you struggle with Instagram, that's a potential $100K+ business that never gets built.
               </p>
@@ -339,7 +339,7 @@ export default function InstagramIgnitedPage() {
                 <p className="text-xl font-bold text-red-400 mb-2 flex items-center gap-2">
                   {getIcon('xCircle', 'w-5 h-5')} You're not just losing followers... you're losing your dreams.
                 </p>
-                <p className="text-gray-300">
+                <p className="text-zinc-200">
                   While others are quitting their jobs, traveling the world, and building empires... you're still stuck posting to crickets.
                 </p>
               </div>
@@ -377,7 +377,7 @@ export default function InstagramIgnitedPage() {
                 duration={3000}
               />
             </div>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-zinc-200 mb-8 max-w-4xl mx-auto">
               The ONLY proven system that takes you from Instagram ghost to algorithm dominator in 90 days or less.
             </p>
           </div>
@@ -403,7 +403,7 @@ export default function InstagramIgnitedPage() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-green-400 mb-2">Grew my following from 0 to 500K+</h4>
-                    <p className="text-gray-300">Starting with zero followers, this system built a massive, engaged audience that actually converts.</p>
+                    <p className="text-zinc-200">Starting with zero followers, this system built a massive, engaged audience that actually converts.</p>
                   </div>
                 </div>
                 
@@ -415,7 +415,7 @@ export default function InstagramIgnitedPage() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-green-400 mb-2">Generated over $2.5M in revenue</h4>
-                    <p className="text-gray-300">This isn't just about followers - it's about building a real business that pays you monthly.</p>
+                    <p className="text-zinc-200">This isn't just about followers - it's about building a real business that pays you monthly.</p>
                   </div>
                 </div>
                 
@@ -427,7 +427,7 @@ export default function InstagramIgnitedPage() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-green-400 mb-2">Created 100M+ views across platforms</h4>
-                    <p className="text-gray-300">These viral content strategies consistently generate massive reach and engagement.</p>
+                    <p className="text-zinc-200">These viral content strategies consistently generate massive reach and engagement.</p>
                   </div>
                 </div>
               </div>
@@ -441,7 +441,7 @@ export default function InstagramIgnitedPage() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-green-400 mb-2">Helped 2,000+ students get results</h4>
-                    <p className="text-gray-300">This system works for everyone - beginners to advanced creators across every niche.</p>
+                    <p className="text-zinc-200">This system works for everyone - beginners to advanced creators across every niche.</p>
                   </div>
                 </div>
                 
@@ -453,7 +453,7 @@ export default function InstagramIgnitedPage() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-green-400 mb-2">Built a 50K+ email list organically</h4>
-                    <p className="text-gray-300">Turn Instagram followers into owned audience that generates consistent monthly income.</p>
+                    <p className="text-zinc-200">Turn Instagram followers into owned audience that generates consistent monthly income.</p>
                   </div>
                 </div>
                 
@@ -465,7 +465,7 @@ export default function InstagramIgnitedPage() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-green-400 mb-2">Works in ANY niche, ANY audience size</h4>
-                    <p className="text-gray-300">Whether you have 0 or 10K followers, this system accelerates your growth immediately.</p>
+                    <p className="text-zinc-200">Whether you have 0 or 10K followers, this system accelerates your growth immediately.</p>
                   </div>
                 </div>
               </div>
@@ -474,7 +474,7 @@ export default function InstagramIgnitedPage() {
             <div className="text-center mt-12">
               <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6">
                 <h4 className="text-2xl font-bold text-yellow-400 mb-2">This System is BATTLE-TESTED</h4>
-                <p className="text-gray-300 text-lg">
+                <p className="text-zinc-200 text-lg">
                   No theory, no guesswork, no "try this and see what happens." Every strategy is proven to work 
                   across thousands of students and millions of dollars in results.
                 </p>
@@ -506,7 +506,7 @@ export default function InstagramIgnitedPage() {
                 />
               </div>
             </div>
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-zinc-200 max-w-3xl mx-auto">
               Look at what's happened since I committed to growing my audience. Everything I've learned and implemented is packed into this course.
             </p>
           </div>
@@ -522,7 +522,7 @@ export default function InstagramIgnitedPage() {
           </div>
 
           <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-            <p className="text-lg md:text-xl text-gray-400 mb-8">Ready to take your brand to the next level?</p>
+            <p className="text-lg md:text-xl text-zinc-200 mb-8">Ready to take your brand to the next level?</p>
             <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
               Claim Full Creator Bundle
             </button>
@@ -537,7 +537,7 @@ export default function InstagramIgnitedPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Master the <span className="text-blue-400">Instagram Creator Stack</span>
             </h2>
-            <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+            <p className="text-xl text-zinc-200 max-w-2xl mx-auto">
               Learn to create, grow, and monetize with the same tools successful creators use
             </p>
           </div>
@@ -579,9 +579,13 @@ export default function InstagramIgnitedPage() {
             <p className="text-zinc-400 mb-6">
               Plus content creation tools, analytics platforms, and scheduling software
             </p>
-            <button onClick={handleBuyNow} className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors cursor-pointer">
+            <button 
+              onClick={handleBuyNow} 
+              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors cursor-pointer focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+              aria-label="Master all Instagram platforms and tools"
+            >
               <span>Master All Platforms</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </button>
@@ -596,9 +600,9 @@ export default function InstagramIgnitedPage() {
             ref={whoForAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${whoForAnimation.isVisible ? 'visible' : ''}`}
           >
-            <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">IS THIS YOU?</p>
+            <p className="text-sm text-zinc-300 uppercase tracking-wider mb-4">IS THIS YOU?</p>
             <h2 className="text-3xl md:text-5xl font-bold">Who is this for?</h2>
-            <p className="text-lg md:text-xl text-gray-400 mt-4">See if you can relate.</p>
+            <p className="text-lg md:text-xl text-zinc-200 mt-4">See if you can relate.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -607,7 +611,7 @@ export default function InstagramIgnitedPage() {
               className={`testimonial-card text-center hover-lift scroll-fade-up ${whoForCards.visibleElements[0] ? 'visible scroll-stagger-1' : ''}`}
             >
               <h3 className="text-xl md:text-2xl font-bold mb-4">Total Beginners</h3>
-              <p className="text-gray-400">
+              <p className="text-zinc-200">
                 People who've never made a dollar online and want a bulletproof way to start earning consistently.
               </p>
             </div>
@@ -616,7 +620,7 @@ export default function InstagramIgnitedPage() {
               className={`testimonial-card text-center hover-lift scroll-fade-up ${whoForCards.visibleElements[1] ? 'visible scroll-stagger-2' : ''}`}
             >
               <h3 className="text-xl md:text-2xl font-bold mb-4">Content Creators</h3>
-              <p className="text-gray-400">
+              <p className="text-zinc-200">
                 Someone who's grown an audience but struggles to monetize it consistently and earn enough.
               </p>
             </div>
@@ -625,7 +629,7 @@ export default function InstagramIgnitedPage() {
               className={`testimonial-card text-center hover-lift scroll-fade-up ${whoForCards.visibleElements[2] ? 'visible scroll-stagger-3' : ''}`}
             >
               <h3 className="text-xl md:text-2xl font-bold mb-4">Small Businesses</h3>
-              <p className="text-gray-400">
+              <p className="text-zinc-200">
                 Want to grow your business without ads? Learn to use organic content to build your brand and drive sales.
               </p>
             </div>
@@ -640,9 +644,9 @@ export default function InstagramIgnitedPage() {
             ref={studentResultsAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible' : ''}`}
           >
-            <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">RESULTS</p>
+            <p className="text-sm text-zinc-300 uppercase tracking-wider mb-4">RESULTS</p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Real People, Real Results</h2>
-            <p className="text-lg md:text-xl text-gray-400">I don't brag, but my students do...</p>
+            <p className="text-lg md:text-xl text-zinc-200">I don't brag, but my students do...</p>
           </div>
 
           <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-16 scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
@@ -681,7 +685,7 @@ export default function InstagramIgnitedPage() {
 
           <div className={`text-center scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
             <h3 className="text-2xl md:text-4xl font-bold mb-4">Become my next success story</h3>
-            <p className="text-lg md:text-xl text-gray-400 mb-8">Join IImagined and turn content creation into a full-time career!</p>
+            <p className="text-lg md:text-xl text-zinc-200 mb-8">Join IImagined and turn content creation into a full-time career!</p>
             <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
               Join IImagined 4.0
             </button>
@@ -696,9 +700,9 @@ export default function InstagramIgnitedPage() {
             ref={modulesAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible' : ''}`}
           >
-            <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">MODULAR</p>
+            <p className="text-sm text-zinc-300 uppercase tracking-wider mb-4">MODULAR</p>
             <h2 className="text-3xl md:text-5xl font-bold">What to expect</h2>
-            <p className="text-lg md:text-xl text-gray-400 mt-4">We've split the course into a number of modules.</p>
+            <p className="text-lg md:text-xl text-zinc-200 mt-4">We've split the course into a number of modules.</p>
           </div>
 
           <div className={`max-w-4xl mx-auto mb-12 scroll-scale ${modulesAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
@@ -770,20 +774,20 @@ export default function InstagramIgnitedPage() {
                   className="absolute top-4 right-4"
                 />
                 <h3 className="text-lg md:text-xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: module.title }}></h3>
-                <p className="text-gray-400 leading-relaxed">{module.description}</p>
+                <p className="text-zinc-200 leading-relaxed">{module.description}</p>
               </div>
             ))}
           </div>
 
           <div className={`text-center mt-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Join & get a personalized page audit.</h3>
-            <p className="text-lg md:text-xl text-gray-400 mb-8">
+            <p className="text-lg md:text-xl text-zinc-200 mb-8">
               Access all recorded page audits, lessons, and our private community in the evergreen, constantly updated program.
             </p>
             <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
               Join IImagined 4.0
             </button>
-            <p className="text-sm text-gray-400 mt-4">And claim all the bonuses</p>
+            <p className="text-sm text-zinc-300 mt-4">And claim all the bonuses</p>
           </div>
         </div>
       </section>
@@ -795,9 +799,9 @@ export default function InstagramIgnitedPage() {
             ref={bonusAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}
           >
-            <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">BONUS</p>
+            <p className="text-sm text-zinc-300 uppercase tracking-wider mb-4">BONUS</p>
             <h2 className="text-3xl md:text-5xl font-bold">Comes with lifetime access.</h2>
-            <p className="text-lg md:text-xl text-gray-400 mt-4">Join now and get all these bonuses included.</p>
+            <p className="text-lg md:text-xl text-zinc-200 mt-4">Join now and get all these bonuses included.</p>
           </div>
 
           <div className="mb-12 text-center">
@@ -805,7 +809,7 @@ export default function InstagramIgnitedPage() {
               <h3 className="text-3xl md:text-5xl font-bold mb-4 text-yellow-400 flex items-center justify-center gap-3">
                 {getIcon('flame', 'w-8 h-8')} INSANE Bonuses Worth $8,879 {getIcon('flame', 'w-8 h-8')}
               </h3>
-              <p className="text-xl text-gray-300">
+              <p className="text-xl text-zinc-200">
                 These bonuses alone are worth more than most courses. But you get them FREE when you join today.
               </p>
             </div>
@@ -863,7 +867,7 @@ export default function InstagramIgnitedPage() {
                   {bonus.icon && getIcon(bonus.icon, "w-5 h-5")}
                   {bonus.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed">{bonus.description}</p>
+                <p className="text-zinc-200 leading-relaxed">{bonus.description}</p>
               </div>
             ))}
           </div>
@@ -894,7 +898,7 @@ export default function InstagramIgnitedPage() {
                 />
               </span>
             </div>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-zinc-200 mb-8 max-w-4xl mx-auto">
               Let's do the math on what you're actually getting today...
             </p>
           </div>
@@ -997,11 +1001,11 @@ export default function InstagramIgnitedPage() {
                 <div className="mt-8">
                   <h4 className="text-lg font-bold mb-4 text-purple-400">Whop All-Access</h4>
                   <div className="mb-2">
-                    <span className="text-sm text-gray-400 line-through">$99.99</span>
+                    <span className="text-sm text-zinc-300 line-through">$99.99</span>
                   </div>
                   <div className="text-3xl font-black mb-4 text-purple-400">$39.99</div>
-                  <div className="text-sm text-gray-400 mb-6">PER MONTH</div>
-                  <ul className="text-left space-y-2 text-gray-300 text-sm mb-6">
+                  <div className="text-sm text-zinc-300 mb-6">PER MONTH</div>
+                  <ul className="text-left space-y-2 text-zinc-200 text-sm mb-6">
                     <li>• Complete $88K/month business system</li>
                     <li>• Instagram: 0 to 500K followers proven method</li>
                     <li>• AI Influencers: $20K/month passive income</li>
@@ -1015,7 +1019,8 @@ export default function InstagramIgnitedPage() {
                     href="https://whop.com/IImagined"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 w-full"
+                    className="inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 w-full focus:outline-none focus:ring-4 focus:ring-purple-500/50"
+                    aria-label="Join Whop All-Access monthly subscription"
                   >
                     Join Whop All-Access
                   </Link>
@@ -1034,19 +1039,19 @@ export default function InstagramIgnitedPage() {
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-zinc-900 rounded-2xl p-6">
                   <div className="text-2xl font-bold text-red-400 mb-2">48 HOURS</div>
-                  <p className="text-gray-300">Price jumps to $697 after the weekend</p>
+                  <p className="text-zinc-200">Price jumps to $697 after the weekend</p>
                 </div>
                 <div className="bg-zinc-900 rounded-2xl p-6">
                   <div className="text-2xl font-bold text-red-400 mb-2">MIDNIGHT</div>
-                  <p className="text-gray-300">All bonuses expire at 11:59 PM tonight</p>
+                  <p className="text-zinc-200">All bonuses expire at 11:59 PM tonight</p>
                 </div>
                 <div className="bg-zinc-900 rounded-2xl p-6">
                   <div className="text-2xl font-bold text-red-400 mb-2">50 SPOTS</div>
-                  <p className="text-gray-300">Only accepting 50 students this round</p>
+                  <p className="text-zinc-200">Only accepting 50 students this round</p>
                 </div>
               </div>
               
-              <p className="text-xl text-gray-300 mb-6">
+              <p className="text-xl text-zinc-200 mb-6">
                 I'm keeping this group small so I can personally help everyone get results. 
                 Once we hit 50 students, enrollment closes and the price increases.
               </p>
@@ -1055,7 +1060,7 @@ export default function InstagramIgnitedPage() {
                 <h4 className="text-2xl font-bold text-yellow-400 mb-3 flex items-center gap-2">
                   {getIcon('alertTriangle', 'w-6 h-6')} Don't Wait - Here's Why:
                 </h4>
-                <div className="text-left space-y-2 text-gray-300">
+                <div className="text-left space-y-2 text-zinc-200">
                   <p>• Every day you wait, your competitors get further ahead</p>
                   <p>• Each month of delay = $5K-$20K in lost potential income</p>
                   <p>• The algorithm favors accounts with momentum (start NOW)</p>
@@ -1067,12 +1072,13 @@ export default function InstagramIgnitedPage() {
             <div className="space-y-6">
               <button
                 onClick={handleBuyNow}
-                className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse cursor-pointer"
+                className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-500/50"
+                aria-label="Claim Instagram Ignited course for $147"
               >
 CLAIM INSTAGRAM IGNITED NOW - $147
               </button>
               
-              <p className="text-sm text-gray-400 flex items-center justify-center gap-1">
+              <p className="text-sm text-zinc-300 flex items-center justify-center gap-1">
                 {getIcon('checkCircle', 'w-4 h-4')} Instant Access • {getIcon('checkCircle', 'w-4 h-4')} Lifetime Updates • {getIcon('checkCircle', 'w-4 h-4')} 30-Day Money-Back Guarantee
               </p>
               
@@ -1080,7 +1086,7 @@ CLAIM INSTAGRAM IGNITED NOW - $147
                 <h4 className="text-xl font-bold text-green-400 mb-3 flex items-center gap-2">
                   {getIcon('checkCircle', 'w-5 h-5')} Zero-Risk Guarantee
                 </h4>
-                <p className="text-gray-300">
+                <p className="text-zinc-200">
                   Try Instagram Ignited for 30 days. If you don't see massive improvement in your growth, 
                   engagement, and content quality, I'll refund every penny. No questions asked.
                 </p>
@@ -1098,7 +1104,7 @@ CLAIM INSTAGRAM IGNITED NOW - $147
             className={`text-center mb-16 scroll-fade-up ${faqAnimation.isVisible ? 'visible' : ''}`}
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Frequently Asked Questions</h2>
-            <p className="text-lg md:text-xl text-gray-400">Everything you need to know before joining Instagram Ignited</p>
+            <p className="text-lg md:text-xl text-zinc-200">Everything you need to know before joining Instagram Ignited</p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
@@ -1158,7 +1164,7 @@ CLAIM INSTAGRAM IGNITED NOW - $147
                 className={`bg-zinc-900 rounded-2xl p-6 md:p-8 hover-lift scroll-fade-up ${faqCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
                 <h3 className="text-xl md:text-2xl font-bold mb-4 text-blue-400">{faq.question}</h3>
-                <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                <p className="text-zinc-200 leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -1166,13 +1172,14 @@ CLAIM INSTAGRAM IGNITED NOW - $147
           <div className={`text-center mt-16 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
             <div className="bg-gradient-to-r from-blue-900/30 to-green-900/30 border border-blue-500/30 rounded-3xl p-8 max-w-3xl mx-auto">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Still Have Questions?</h3>
-              <p className="text-lg text-gray-300 mb-6">
+              <p className="text-lg text-zinc-200 mb-6">
                 Join the private mastermind and ask me directly on our weekly live calls. 
                 You'll get personalized answers and strategies specific to your situation.
               </p>
               <button
                 onClick={handleBuyNow}
-                className="cta-button inline-block text-lg cursor-pointer"
+                className="cta-button inline-block text-lg cursor-pointer focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+                aria-label="Join Instagram Ignited course and access Q&A"
               >
                 Join Instagram Ignited & Ask Me Anything
               </button>

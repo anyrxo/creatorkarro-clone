@@ -48,24 +48,34 @@ export default function StoryPage() {
           >
             <Image
               src="/anyro.png"
-              alt="Anyro"
+              alt="Anyro - Founder of IImagined, AI automation expert and content creator"
               width={300}
               height={300}
-              className="w-48 md:w-64 h-48 md:h-64 rounded-full mx-auto object-cover hover-lift hover:shadow-2xl hover:shadow-blue-500/20"
+              className="w-48 md:w-64 lg:w-72 h-48 md:h-64 lg:h-72 rounded-full mx-auto object-cover hover-lift hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 ring-4 ring-blue-500/20 hover:ring-blue-400/40"
+              priority
             />
           </div>
 
           {/* Story Content */}
           <div
             ref={storyAnimation.elementRef}
-            className={`space-y-6 md:space-y-8 text-base md:text-lg text-gray-300 leading-relaxed scroll-fade-up ${storyAnimation.isVisible ? 'visible' : ''}`}
+            className={`space-y-6 md:space-y-8 text-base md:text-lg lg:text-xl text-zinc-200 leading-relaxed scroll-fade-up ${storyAnimation.isVisible ? 'visible' : ''}`}
           >
+            <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-2xl p-6 md:p-8 border border-blue-500/20">
+              <p className="text-lg md:text-xl lg:text-2xl font-medium text-blue-200 mb-4">
+                "What started as me posting random stuff online has somehow turned into a 7-figure business."
+              </p>
+              <p className="text-base md:text-lg text-zinc-300 italic">
+                - From zero to millions, one system at a time
+              </p>
+            </div>
+
             <p>
-              Hey, I'm Anyro. I create content, build businesses, and teach others how to do the same. What started as me posting random stuff online has somehow turned into a 7-figure business. Wild, right?
+              Hey, I'm Anyro. I create content, build businesses, and teach others how to do the same. But here's the truth - I started out completely lost, just like you might be right now.
             </p>
 
             <p>
-              Like most people, I started out completely lost. I was watching every YouTube video, buying every course, trying to find my path. But instead of chasing quick wins, I went deep on what actually fascinated me - AI, automation, and content creation. That's when everything changed.
+              I was watching every YouTube video, buying every course, trying to find my path. But instead of chasing quick wins, I went deep on what actually fascinated me - AI, automation, and content creation. That obsession changed everything.
             </p>
 
             <p>
@@ -82,17 +92,23 @@ export default function StoryPage() {
                 duration={0.8}
               />
               <div className="grid md:grid-cols-3 gap-6 md:gap-8 text-center">
-                <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-                  <NumberTicker value={500} className="text-3xl md:text-4xl font-bold text-blue-400 mb-2" />K+
-                  <p className="text-gray-400">Total Followers</p>
+                <div className={`p-4 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 transition-all duration-300 hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
+                  <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
+                    <NumberTicker value={13} />K+
+                  </div>
+                  <p className="text-zinc-300 font-medium">Active Students</p>
                 </div>
-                <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-                  $<NumberTicker value={3} className="text-3xl md:text-4xl font-bold text-green-400 mb-2" />M+
-                  <p className="text-gray-400">Revenue Generated</p>
+                <div className={`p-4 rounded-xl bg-green-500/10 hover:bg-green-500/20 transition-all duration-300 hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
+                  <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">
+                    $<NumberTicker value={5} />M+
+                  </div>
+                  <p className="text-zinc-300 font-medium">Student Revenue</p>
                 </div>
-                <div className={`hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
-                  <NumberTicker value={500} className="text-3xl md:text-4xl font-bold text-purple-400 mb-2" />M+
-                  <p className="text-gray-400">Total Views</p>
+                <div className={`p-4 rounded-xl bg-purple-500/10 hover:bg-purple-500/20 transition-all duration-300 hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-5' : ''}`}>
+                  <div className="text-3xl md:text-4xl font-bold text-purple-400 mb-2">
+                    <NumberTicker value={4.9} decimalPlaces={1} />★
+                  </div>
+                  <p className="text-zinc-300 font-medium">Average Rating</p>
                 </div>
               </div>
             </div>
@@ -111,16 +127,22 @@ export default function StoryPage() {
 
             <div
               ref={missionAnimation.elementRef}
-              className={`bg-blue-600/10 border border-blue-600/30 rounded-lg p-6 md:p-8 text-center scroll-scale ${missionAnimation.isVisible ? 'visible' : ''}`}
+              className={`relative bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 md:p-10 text-center scroll-scale ${missionAnimation.isVisible ? 'visible' : ''} overflow-hidden`}
             >
-              <TypingAnimation
-                text="My Mission"
-                className="text-xl md:text-2xl font-bold mb-4"
-                duration={100}
-              />
-              <p className="text-lg md:text-xl">
-                To help as many people as possible escape the 9-5, build real wealth through content, and actually enjoy their life while doing it. Because making money online shouldn't feel like torture.
-              </p>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl"></div>
+              <div className="relative z-10">
+                <TypingAnimation
+                  text="My Mission"
+                  className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+                  duration={100}
+                />
+                <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-zinc-100 font-medium">
+                  To help as many people as possible escape the 9-5, build real wealth through content, and actually enjoy their life while doing it.
+                </p>
+                <p className="text-base md:text-lg text-zinc-300 mt-4 italic">
+                  Because making money online shouldn't feel like torture.
+                </p>
+              </div>
             </div>
 
             <p>
@@ -142,18 +164,32 @@ export default function StoryPage() {
               className="text-2xl md:text-3xl font-bold mb-4"
               duration={0.8}
             />
-            <p className="text-lg md:text-xl text-gray-400 mb-8">
-              Join thousands of creators who have transformed their lives with IImagined.
+            <p className="text-lg md:text-xl text-zinc-200 mb-8 leading-relaxed">
+              Join 13,000+ creators who have already transformed their passion into profitable businesses using my proven systems.
             </p>
-            <Link href="/instagram-ignited">
+            <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm md:text-base text-zinc-200">
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span>AI Automation Mastery</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span>Viral Content Systems</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span>Digital Product Empire</span>
+              </div>
+            </div>
+            <Link href="/instagram-ignited" className="inline-block focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full" aria-label="Start your transformation with Instagram Ignited course">
               <ShimmerButton
-                className="shadow-2xl"
+                className="shadow-2xl hover:shadow-blue-500/25 transition-all duration-300"
                 shimmerColor="#ffffff"
                 shimmerSize="0.1em"
                 background="linear-gradient(135deg, #2563eb, #9333ea)"
                 borderRadius="9999px"
               >
-                <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
+                <span className="whitespace-nowrap text-lg font-bold px-8 py-3">
                   Start Your Transformation
                 </span>
               </ShimmerButton>

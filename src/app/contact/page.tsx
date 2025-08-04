@@ -26,7 +26,7 @@ export default function ContactPage() {
           >
             <div className="flex justify-center mb-6">
               <AnimatedGradientText>
-                📬 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+                📬 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
                 <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
                   Let's Connect
                 </span>
@@ -53,11 +53,9 @@ export default function ContactPage() {
                   className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
                   duration={3000}
                 />
-                <TypingAnimation
-                  text="I'd love to hear from you! Whether you have questions about my courses, need support, or want to collaborate, feel free to reach out."
-                  className="text-lg md:text-xl text-gray-400 leading-relaxed"
-                  duration={50}
-                />
+                <p className="text-lg md:text-xl text-zinc-200 leading-relaxed">
+                  I'd love to hear from you! Whether you have questions about my courses, need support, or want to collaborate, feel free to reach out.
+                </p>
               </div>
 
               <div className="space-y-8">
@@ -72,7 +70,8 @@ export default function ContactPage() {
                     <h3 className="text-lg font-semibold">Email</h3>
                     <a
                       href="mailto:anyro@iimagined.ai"
-                      className="text-blue-400 hover:text-blue-300 transition-colors duration-300"
+                      className="text-blue-400 hover:text-blue-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded px-1"
+                      aria-label="Send email to anyro@iimagined.ai"
                     >
                       anyro@iimagined.ai
                     </a>
@@ -92,7 +91,8 @@ export default function ContactPage() {
                       href="https://anyro.net"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-purple-400 hover:text-purple-300 transition-colors duration-300"
+                      className="text-purple-400 hover:text-purple-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500/50 rounded px-1"
+                      aria-label="Visit Anyro's personal website (opens in new tab)"
                     >
                       anyro.net
                     </a>
@@ -112,7 +112,8 @@ export default function ContactPage() {
                       href="https://t.me/IImagined"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-green-400 hover:text-green-300 transition-colors duration-300"
+                      className="text-green-400 hover:text-green-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500/50 rounded px-1"
+                      aria-label="Join IImagined Telegram community (opens in new tab)"
                     >
                       /IImagined
                     </a>
@@ -160,9 +161,9 @@ export default function ContactPage() {
                       href="https://tiktok.com/@anyrxo"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-3 p-3 bg-gray-500/20 rounded-lg hover:bg-gray-500/30 transition-all duration-300 group"
+                      className="flex items-center space-x-3 p-3 bg-zinc-500/20 rounded-lg hover:bg-zinc-500/30 transition-all duration-300 group"
                     >
-                      <svg className="w-5 h-5 text-gray-400 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-zinc-400 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
                       </svg>
                       <span className="text-sm font-medium">TikTok</span>
@@ -178,13 +179,13 @@ export default function ContactPage() {
                     </svg>
                     <h3 className="text-lg font-semibold">Response Time</h3>
                   </div>
-                  <p className="text-gray-300">I typically respond within 12-24 hours during business days.</p>
+                  <p className="text-zinc-200 font-medium">I typically respond within 12-24 hours during business days.</p>
                 </div>
               </div>
             </div>
 
             {/* Right Column - Quick Links & Info */}
-            <div className={`bg-zinc-900/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 hover-lift scroll-fade-right border border-zinc-800/50 ${contentAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className={`bg-gradient-to-br from-zinc-900/60 to-zinc-800/40 backdrop-blur-sm rounded-2xl p-6 md:p-8 hover-lift scroll-fade-right border border-zinc-700/50 hover:border-zinc-600/50 transition-all duration-300 ${contentAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <BlurIn
                 word="Quick Links"
                 className="text-xl md:text-2xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent"
@@ -200,7 +201,7 @@ export default function ContactPage() {
                     </svg>
                     Course Access
                   </h4>
-                  <p className="text-sm text-gray-300 mb-3">All courses are hosted on my Whop community with lifetime access.</p>
+                  <p className="text-sm text-zinc-300 mb-3">All courses are hosted on my Whop community with lifetime access.</p>
                   <a
                     href="https://whop.com/anyrxo"
                     target="_blank"
@@ -228,7 +229,7 @@ export default function ContactPage() {
                     </svg>
                     Free Resources
                   </h4>
-                  <p className="text-sm text-gray-300 mb-3">Download free templates, workflows, and guides to get started.</p>
+                  <p className="text-sm text-zinc-300 mb-3">Download free templates, workflows, and guides to get started.</p>
                   <a
                     href="https://anyrxo.gumroad.com"
                     target="_blank"
@@ -256,7 +257,7 @@ export default function ContactPage() {
                     </svg>
                     Need Support?
                   </h4>
-                  <p className="text-sm text-gray-300 mb-3">Course members get priority support in our private community.</p>
+                  <p className="text-sm text-zinc-200 mb-3">Course members get priority support in our private community.</p>
                   <Link
                     href="/refund-policy"
                     className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors duration-300 text-sm font-medium"
@@ -273,7 +274,7 @@ export default function ContactPage() {
                     </svg>
                     Best Times to Reach Me
                   </h4>
-                  <div className="text-sm text-gray-300 space-y-1">
+                  <div className="text-sm text-zinc-200 space-y-1">
                     <p>Monday - Friday: 9 AM - 6 PM EST</p>
                     <p>Weekends: Limited availability</p>
                     <p>Emergency? DM me on Instagram</p>
@@ -296,13 +297,13 @@ export default function ContactPage() {
             <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
               <div className={`text-left scroll-fade-left ${faqAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
                 <h3 className="text-lg md:text-xl font-semibold mb-3">How do I access my course?</h3>
-                <p className="text-gray-400">
+                <p className="text-zinc-200">
                   All courses are hosted on Whop. You'll receive access details after purchase.
                 </p>
               </div>
               <div className={`text-left scroll-fade-right ${faqAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
                 <h3 className="text-lg md:text-xl font-semibold mb-3">Do you offer refunds?</h3>
-                <p className="text-gray-400">
+                <p className="text-zinc-200">
                   Yes! We offer a 365-day action-based money-back guarantee.
                   <Link href="/refund-policy" className="text-blue-400 hover:text-blue-300 ml-1">
                     Learn more
@@ -311,13 +312,13 @@ export default function ContactPage() {
               </div>
               <div className={`text-left scroll-fade-left ${faqAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
                 <h3 className="text-lg md:text-xl font-semibold mb-3">Can I get personalized help?</h3>
-                <p className="text-gray-400">
+                <p className="text-zinc-200">
                   Absolutely! All courses include access to our community and support.
                 </p>
               </div>
               <div className={`text-left scroll-fade-right ${faqAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
                 <h3 className="text-lg md:text-xl font-semibold mb-3">Are courses updated?</h3>
-                <p className="text-gray-400">
+                <p className="text-zinc-200">
                   Yes, all courses receive regular updates and you get lifetime access.
                 </p>
               </div>

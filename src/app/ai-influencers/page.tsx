@@ -602,11 +602,11 @@ export default function AIInfluencersPage() {
           <div className={`text-center mt-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 max-w-3xl mx-auto card-hover">
               <h3 className="text-2xl font-bold mb-4 text-red-400">The Real Cost of Traditional Content Creation</h3>
-              <p className="text-lg text-gray-300 mb-4">
+              <p className="text-lg text-zinc-200 mb-4">
                 Most creators spend <span className="text-red-400 font-bold">80% of their time</span> on content creation and only 
                 <span className="text-red-400 font-bold"> 20% on revenue generation</span>
               </p>
-              <p className="text-gray-400">
+              <p className="text-zinc-300">
                 This backwards approach keeps you trapped in a cycle of constant work with limited income potential
               </p>
             </div>
@@ -633,27 +633,27 @@ export default function AIInfluencersPage() {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Create multiple AI models that work 24/7 while you sleep</p>
+                  <p className="text-zinc-200">Create multiple AI models that work 24/7 while you sleep</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Generate unlimited content without ever showing your face</p>
+                  <p className="text-zinc-200">Generate unlimited content without ever showing your face</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Scale to multiple platforms simultaneously with zero extra effort</p>
+                  <p className="text-zinc-200">Scale to multiple platforms simultaneously with zero extra effort</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Keep 100% of your profits with virtually no overhead costs</p>
+                  <p className="text-zinc-200">Keep 100% of your profits with virtually no overhead costs</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Build a brand that's platform-independent and algorithm-proof</p>
+                  <p className="text-zinc-200">Build a brand that's platform-independent and algorithm-proof</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Maintain complete privacy while building massive influence</p>
+                  <p className="text-zinc-200">Maintain complete privacy while building massive influence</p>
                 </div>
               </div>
             </div>
@@ -665,7 +665,7 @@ export default function AIInfluencersPage() {
                     $<NumberTicker value={10} className="text-4xl font-bold text-pink-400 inline-block" />K-
                     $<NumberTicker value={50} className="text-4xl font-bold text-pink-400 inline-block" />K/Month
                   </div>
-                  <p className="text-gray-300">Per AI Influencer Model</p>
+                  <p className="text-zinc-200">Per AI Influencer Model</p>
                 </div>
                 <div className="space-y-3 text-sm">
                   <div className="bg-zinc-800/50 rounded-lg p-3">
@@ -733,7 +733,7 @@ export default function AIInfluencersPage() {
               <div className="text-5xl font-bold text-yellow-400 mb-2">
                 $<NumberTicker value={1397} className="text-5xl font-bold text-yellow-400" />
               </div>
-              <p className="text-gray-300">8 comprehensive modules + implementation guides</p>
+              <p className="text-zinc-200">8 comprehensive modules + implementation guides</p>
             </div>
           </div>
         </div>
@@ -778,7 +778,7 @@ export default function AIInfluencersPage() {
               <div className="text-4xl font-bold text-gold-400 mb-2">
                 $<NumberTicker value={1032} className="text-4xl font-bold text-gold-400" />
               </div>
-              <p className="text-gray-300">Free when you join today</p>
+              <p className="text-zinc-200">Free when you join today</p>
             </div>
           </div>
         </div>
@@ -802,40 +802,40 @@ export default function AIInfluencersPage() {
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 border-2 border-gold-500/50 rounded-2xl p-8 scroll-fade-up ${valueAnimation.isVisible ? 'visible' : ''}`}>
               <div className="text-center mb-8">
                 <h3 className="text-3xl font-bold mb-4 text-gold-400">Total Package Value Breakdown</h3>
-                <p className="text-gray-300">Everything you need to build a successful AI influencer empire</p>
+                <p className="text-zinc-200">Everything you need to build a successful AI influencer empire</p>
               </div>
 
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ 8 Complete Training Modules</span>
+                  <span className="text-zinc-200">✓ 8 Complete Training Modules</span>
                   <span className="text-gold-400 font-bold">$1,497</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ AI Model Library (50+ Models)</span>
+                  <span className="text-zinc-200">✓ AI Model Library (50+ Models)</span>
                   <span className="text-gold-400 font-bold">$397</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Content Template Vault (1000+ Templates)</span>
+                  <span className="text-zinc-200">✓ Content Template Vault (1000+ Templates)</span>
                   <span className="text-gold-400 font-bold">$297</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Complete Automation Scripts</span>
+                  <span className="text-zinc-200">✓ Complete Automation Scripts</span>
                   <span className="text-gold-400 font-bold">$247</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Private Mastermind Community</span>
+                  <span className="text-zinc-200">✓ Private Mastermind Community</span>
                   <span className="text-gold-400 font-bold">$297</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ 1-on-1 Strategy Call with Me</span>
+                  <span className="text-zinc-200">✓ 1-on-1 Strategy Call with Me</span>
                   <span className="text-gold-400 font-bold">$197</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ 30-Day Fast-Track Implementation</span>
+                  <span className="text-zinc-200">✓ 30-Day Fast-Track Implementation</span>
                   <span className="text-gold-400 font-bold">$97</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
-                  <span className="text-gray-300">✓ 60-Day Money-Back Guarantee</span>
+                  <span className="text-zinc-200">✓ 60-Day Money-Back Guarantee</span>
                   <span className="text-gold-400 font-bold">Priceless</span>
                 </div>
               </div>
@@ -866,10 +866,10 @@ export default function AIInfluencersPage() {
                 <Shield className="w-6 h-6" />
                 60-Day "Build Your Empire" Guarantee
               </h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-zinc-200 mb-4">
                 Try the AI Influencer Empire system for 60 full days. If you don't see real progress building your first AI influencer and generating income within 60 days, I'll refund every penny.
               </p>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-zinc-300">
                 That's how confident I am this works. You have ZERO risk.
               </p>
             </div>
@@ -920,10 +920,10 @@ export default function AIInfluencersPage() {
                 />
               </div>
             </h3>
-            <p className="text-xl text-gray-400 mb-8">
+            <p className="text-xl text-zinc-300 mb-8">
               Join creators building profitable virtual models with zero face-to-camera content
             </p>
-            <Link href="#packages" className="inline-block">
+            <Link href="#packages" className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full">
               <ShimmerButton
                 className="shadow-2xl"
                 shimmerColor="#ffffff"
@@ -992,35 +992,35 @@ export default function AIInfluencersPage() {
                         <Target className="w-5 h-5" />
                         Quality Control
                       </h4>
-                      <p className="text-gray-300 mb-4">I personally review every student's progress and provide 1-on-1 guidance. Too many students would compromise the quality of support.</p>
+                      <p className="text-zinc-200 mb-4">I personally review every student's progress and provide 1-on-1 guidance. Too many students would compromise the quality of support.</p>
                       
                       <h4 className="font-bold text-white mb-2 flex items-center gap-2">
                         <Gem className="w-5 h-5" />
                         Exclusivity Protection
                       </h4>
-                      <p className="text-gray-300">If everyone has access to these exact strategies, the market becomes saturated. Limited access keeps the advantage for our community.</p>
+                      <p className="text-zinc-200">If everyone has access to these exact strategies, the market becomes saturated. Limited access keeps the advantage for our community.</p>
                     </div>
                     <div>
                       <h4 className="font-bold text-white mb-2 flex items-center gap-2">
                         <Rocket className="w-5 h-5" />
                         Early Adopter Advantage
                       </h4>
-                      <p className="text-gray-300 mb-4">AI influencers are still new. Early adopters get the biggest market share before mainstream adoption.</p>
+                      <p className="text-zinc-200 mb-4">AI influencers are still new. Early adopters get the biggest market share before mainstream adoption.</p>
                       
                       <h4 className="font-bold text-white mb-2 flex items-center gap-2">
                         <TrendingUp className="w-5 h-5" />
                         Rising Costs
                       </h4>
-                      <p className="text-gray-300">As we add more content and tools, the value increases. Early members lock in the current price forever.</p>
+                      <p className="text-zinc-200">As we add more content and tools, the value increases. Early members lock in the current price forever.</p>
                     </div>
                   </div>
                 </div>
 
-                <p className="text-xl text-gray-300 mb-8">
+                <p className="text-xl text-zinc-200 mb-8">
                   Don't let this opportunity slip away. Every day you wait is money left on the table while others build their AI empires.
                 </p>
 
-                <Link href="#packages" className="inline-block">
+                <Link href="#packages" className="inline-block focus:outline-none focus:ring-4 focus:ring-red-500/50 rounded-full">
                   <ShimmerButton
                     className="shadow-2xl"
                     shimmerColor="#ffffff"
@@ -1065,10 +1065,10 @@ export default function AIInfluencersPage() {
                   />
                 </div>
               </h2>
-              <p className="text-xl text-gray-400 mb-8">
+              <p className="text-xl text-zinc-300 mb-8">
                 Join hundreds of creators who are already making $<NumberTicker value={10} className="text-pink-400 font-bold inline" />K+ per month with faceless AI brands
               </p>
-              <Link href="#packages" className="inline-block">
+              <Link href="#packages" className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full">
                 <ShimmerButton
                   className="shadow-2xl"
                   shimmerColor="#ffffff"
@@ -1081,7 +1081,7 @@ export default function AIInfluencersPage() {
                   </span>
                 </ShimmerButton>
               </Link>
-              <p className="text-sm text-gray-400 mt-4">60-day money-back guarantee</p>
+              <p className="text-sm text-zinc-300 mt-4">60-day money-back guarantee</p>
             </div>
           </div>
         </div>

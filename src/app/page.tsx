@@ -162,7 +162,7 @@ export default function HomePage() {
           >
             <div className="flex justify-center mb-8">
               <AnimatedGradientText>
-                 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+                 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
                 <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
                   Introducing our proven system
                 </span>
@@ -228,7 +228,7 @@ export default function HomePage() {
                 />
               </div>
             </h1>
-            <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+            <p className="text-xl text-zinc-200 max-w-2xl mx-auto">
               Master the tools and strategies that turned thousands of creators into successful entrepreneurs
             </p>
           </motion.div>
@@ -242,7 +242,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
               >
-                <Link href={course.link} className="block magnetic-button h-full">
+                <Link href={course.link} className="block magnetic-button h-full focus:outline-none focus:ring-4 focus:ring-blue-500/50" aria-label={`View ${course.title} course details`}>
                   <Interactive3DCard>
                     <div className="text-center space-y-4 h-full flex flex-col justify-between p-8">
                       <motion.div 
@@ -262,8 +262,8 @@ export default function HomePage() {
                         {course.icon === 'bot' && <Bot size={64} className="text-purple-400" />}
                       </motion.div>
                       <h3 className="text-2xl font-bold text-white">{course.title}</h3>
-                      <p className="text-sm text-zinc-400 uppercase tracking-wider">{course.subtitle}</p>
-                      <p className="text-zinc-400">{course.description}</p>
+                      <p className="text-sm text-zinc-300 uppercase tracking-wider">{course.subtitle}</p>
+                      <p className="text-zinc-200">{course.description}</p>
                       <div className="pt-4">
                         <motion.div
                           className={`h-1 bg-gradient-to-r ${course.gradient} rounded-full`}
@@ -272,7 +272,7 @@ export default function HomePage() {
                           viewport={{ once: true }}
                           transition={{ duration: 0.8, delay: 0.5 }}
                         />
-                        <p className="text-sm text-zinc-500 mt-4">{course.stats}</p>
+                        <p className="text-sm text-zinc-300 mt-4">{course.stats}</p>
                         {index === 0 && (
                           <div className="mt-4 flex justify-center">
                             <AnimatedGradientText className="text-xs">
@@ -381,7 +381,7 @@ export default function HomePage() {
               key={index}
               className="mx-4 flex items-center gap-2 rounded-lg bg-zinc-900/50 px-6 py-3 backdrop-blur-sm border border-zinc-800"
             >
-              <span className="text-zinc-400">{review}</span>
+              <span className="text-zinc-200">{review}</span>
             </div>
           ))}
         </Marquee>
@@ -408,7 +408,7 @@ export default function HomePage() {
               className="text-5xl md:text-7xl font-bold text-white mb-6"
               duration={150}
             />
-            <p className="text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-zinc-200 max-w-2xl mx-auto leading-relaxed">
               From viral content creation to automated business systems that scale
             </p>
           </motion.div>
@@ -559,7 +559,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <h3 className="text-xl font-semibold text-white mb-1">{point.title}</h3>
-                        <p className="text-zinc-400">{point.description}</p>
+                        <p className="text-zinc-200">{point.description}</p>
                       </div>
                     </motion.div>
                   ))}
@@ -593,7 +593,7 @@ export default function HomePage() {
                           <div className="text-3xl font-bold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">
                             {stat.value}
                           </div>
-                          <p className="text-sm text-zinc-500 mt-1">{stat.label}</p>
+                          <p className="text-sm text-zinc-300 mt-1">{stat.label}</p>
                         </motion.div>
                       ))}
                     </div>
@@ -679,7 +679,7 @@ export default function HomePage() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link href="/instagram-ignited">
+              <Link href="/instagram-ignited" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50" aria-label="Start your journey with Instagram Ignited course">
                 <ShimmerButton
                   className="shadow-2xl"
                   shimmerColor="#ffffff"

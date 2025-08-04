@@ -548,11 +548,11 @@ export default function ComfyUIWorkflowsPage() {
           <div className={`text-center mt-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 max-w-3xl mx-auto card-hover">
               <h3 className="text-2xl font-bold mb-4 text-red-400">The Hidden Cost of Inefficient AI Workflows</h3>
-              <p className="text-lg text-gray-300 mb-4">
+              <p className="text-lg text-zinc-200 mb-4">
                 Most creators spend <span className="text-red-400 font-bold">80% of their time</span> fighting with settings and only 
                 <span className="text-red-400 font-bold"> 20% creating</span>
               </p>
-              <p className="text-gray-400">
+              <p className="text-zinc-300">
                 This backwards approach kills creativity and makes profitable AI work nearly impossible
               </p>
             </div>
@@ -579,27 +579,27 @@ export default function ComfyUIWorkflowsPage() {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Generate professional results consistently, every single time</p>
+                  <p className="text-zinc-200">Generate professional results consistently, every single time</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Cut your creation time from hours to minutes with proven workflows</p>
+                  <p className="text-zinc-200">Cut your creation time from hours to minutes with proven workflows</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Scale your content production with automated batch processing</p>
+                  <p className="text-zinc-200">Scale your content production with automated batch processing</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Build a profitable AI image service with client-ready systems</p>
+                  <p className="text-zinc-200">Build a profitable AI image service with client-ready systems</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Master advanced techniques without technical complexity</p>
+                  <p className="text-zinc-200">Master advanced techniques without technical complexity</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="text-green-400 text-xl">✓</div>
-                  <p className="text-gray-300">Access cutting-edge AI capabilities before they go mainstream</p>
+                  <p className="text-zinc-200">Access cutting-edge AI capabilities before they go mainstream</p>
                 </div>
               </div>
             </div>
@@ -610,7 +610,7 @@ export default function ComfyUIWorkflowsPage() {
                   <div className="text-4xl font-bold text-orange-400 mb-2">
                     <NumberTicker value={10} className="text-4xl font-bold text-orange-400" />x Faster
                   </div>
-                  <p className="text-gray-300">Professional Content Creation</p>
+                  <p className="text-zinc-200">Professional Content Creation</p>
                 </div>
                 <div className="space-y-3 text-sm">
                   <div className="bg-zinc-800/50 rounded-lg p-3">
@@ -638,7 +638,7 @@ export default function ComfyUIWorkflowsPage() {
           <div ref={curriculumAnimation.elementRef}>
             <SectionHeader
               badge="COMPLETE SYSTEM"
-              badgeColor="text-gray-400"
+              badgeColor="text-zinc-200"
               title="The Complete ComfyUI Workflow Mastery System"
               description="6 comprehensive modules + 50+ professional workflows"
               isVisible={heroAnimation.isVisible}
@@ -678,7 +678,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="text-5xl font-bold text-yellow-400 mb-2">
                 $<NumberTicker value={1082} className="text-5xl font-bold text-yellow-400" />
               </div>
-              <p className="text-gray-300">6 comprehensive modules + 50+ workflows</p>
+              <p className="text-zinc-200">6 comprehensive modules + 50+ workflows</p>
             </div>
           </div>
         </div>
@@ -723,7 +723,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="text-4xl font-bold text-gold-400 mb-2">
                 $<NumberTicker value={842} className="text-4xl font-bold text-gold-400" />
               </div>
-              <p className="text-gray-300">Free when you join today</p>
+              <p className="text-zinc-200">Free when you join today</p>
             </div>
           </div>
         </div>
@@ -747,40 +747,40 @@ export default function ComfyUIWorkflowsPage() {
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 border-2 border-gold-500/50 rounded-2xl p-8 scroll-fade-up ${valueAnimation.isVisible ? 'visible' : ''}`}>
               <div className="text-center mb-8">
                 <h3 className="text-3xl font-bold mb-4 text-gold-400">Total Package Value Breakdown</h3>
-                <p className="text-gray-300">Everything you need to master ComfyUI workflows</p>
+                <p className="text-zinc-200">Everything you need to master ComfyUI workflows</p>
               </div>
 
               <div className="space-y-4 mb-8">
-                <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ 6 Complete Training Modules</span>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-zinc-200">✓ 6 Complete Training Modules</span>
                   <span className="text-gold-400 font-bold">$797</span>
                 </div>
-                <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ 50+ Professional Workflows</span>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-zinc-200">✓ 50+ Professional Workflows</span>
                   <span className="text-gold-400 font-bold">$197</span>
                 </div>
-                <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Premium Model Collection</span>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-zinc-200">✓ Premium Model Collection</span>
                   <span className="text-gold-400 font-bold">$147</span>
                 </div>
-                <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Video Tutorial Library</span>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-zinc-200">✓ Video Tutorial Library</span>
                   <span className="text-gold-400 font-bold">$97</span>
                 </div>
-                <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Custom Node Pack</span>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-zinc-200">✓ Custom Node Pack</span>
                   <span className="text-gold-400 font-bold">$69</span>
                 </div>
-                <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Business Templates</span>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-zinc-200">✓ Business Templates</span>
                   <span className="text-gold-400 font-bold">$97</span>
                 </div>
-                <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ 1-on-1 Setup Session</span>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-zinc-200">✓ 1-on-1 Setup Session</span>
                   <span className="text-gold-400 font-bold">$97</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
-                  <span className="text-gray-300">✓ 60-Day Money-Back Guarantee</span>
+                  <span className="text-zinc-200">✓ 60-Day Money-Back Guarantee</span>
                   <span className="text-gold-400 font-bold">Priceless</span>
                 </div>
               </div>
@@ -808,10 +808,10 @@ export default function ComfyUIWorkflowsPage() {
           <div className={`text-center mt-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-8 max-w-3xl mx-auto">
               <h3 className="text-2xl font-bold mb-4 text-green-400">60-Day "Master ComfyUI" Guarantee</h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-zinc-200 mb-4">
                 Try ComfyUI Workflow Mastery for 60 full days. If you don't achieve dramatically better, more consistent results, I'll refund every penny. No questions asked.
               </p>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-zinc-300">
                 That's how confident I am this will transform your AI workflow. You have ZERO risk.
               </p>
             </div>
@@ -825,7 +825,7 @@ export default function ComfyUIWorkflowsPage() {
           <div ref={testimonialsAnimation.elementRef}>
             <SectionHeader
               badge="SUCCESS STORIES"
-              badgeColor="text-gray-400"
+              badgeColor="text-zinc-200"
               title={<>Real <span className="text-orange-400">ComfyUI</span> Results</>}
               description="Students mastering professional AI workflows"
               isVisible={heroAnimation.isVisible}
@@ -862,8 +862,8 @@ export default function ComfyUIWorkflowsPage() {
                 />
               </div>
             </h3>
-            <p className="text-xl text-gray-400 mb-8">Join creators mastering professional AI workflows and building profitable services</p>
-            <Link href="#packages" className="inline-block">
+            <p className="text-xl text-zinc-200 mb-8">Join creators mastering professional AI workflows and building profitable services</p>
+            <Link href="#packages" className="inline-block focus:outline-none focus:ring-4 focus:ring-orange-500/50" aria-label="Start your ComfyUI journey - view pricing packages">
               <ShimmerButton
                 className="shadow-2xl"
                 shimmerColor="#ffffff"
@@ -886,7 +886,7 @@ export default function ComfyUIWorkflowsPage() {
           <div ref={faqAnimation.elementRef}>
             <SectionHeader
               badge="FREQUENTLY ASKED"
-              badgeColor="text-gray-400"
+              badgeColor="text-zinc-200"
               title="Got Questions? We Have Answers"
               description="Everything you need to know about mastering ComfyUI workflows"
               isVisible={heroAnimation.isVisible}
@@ -926,26 +926,26 @@ export default function ComfyUIWorkflowsPage() {
                   <div className="grid md:grid-cols-2 gap-6 text-left">
                     <div>
                       <h4 className="font-bold text-white mb-2">Increasing Value</h4>
-                      <p className="text-gray-300 mb-4">We're constantly adding new workflows, techniques, and bonuses. Early adopters lock in the current price before it reflects the growing value.</p>
+                      <p className="text-zinc-200 mb-4">We're constantly adding new workflows, techniques, and bonuses. Early adopters lock in the current price before it reflects the growing value.</p>
                       
                       <h4 className="font-bold text-white mb-2">Community Size</h4>
-                      <p className="text-gray-300">Limited spots ensure quality support and community interaction. Too many members would compromise the experience.</p>
+                      <p className="text-zinc-200">Limited spots ensure quality support and community interaction. Too many members would compromise the experience.</p>
                     </div>
                     <div>
                       <h4 className="font-bold text-white mb-2">AI Evolution</h4>
-                      <p className="text-gray-300 mb-4">ComfyUI is becoming the industry standard. Get in now before it's mainstream and competition increases.</p>
+                      <p className="text-zinc-200 mb-4">ComfyUI is becoming the industry standard. Get in now before it's mainstream and competition increases.</p>
                       
                       <h4 className="font-bold text-white mb-2">Market Demand</h4>
-                      <p className="text-gray-300">As more people discover ComfyUI's power, training costs will increase. Early bird pricing won't be available forever.</p>
+                      <p className="text-zinc-200">As more people discover ComfyUI's power, training costs will increase. Early bird pricing won't be available forever.</p>
                     </div>
                   </div>
                 </div>
 
-                <p className="text-xl text-gray-300 mb-8">
+                <p className="text-xl text-zinc-200 mb-8">
                   The AI revolution is happening now. Don't get left behind while others master the tools that will define the future.
                 </p>
 
-                <Link href="#packages">
+                <Link href="#packages" className="focus:outline-none focus:ring-4 focus:ring-red-500/50" aria-label="Secure early bird pricing for ComfyUI Workflows course">
                   <ShimmerButton
                     className="shadow-2xl"
                     shimmerColor="#ffffff"
@@ -987,10 +987,10 @@ export default function ComfyUIWorkflowsPage() {
                   />
                 </div>
               </h2>
-              <p className="text-xl text-gray-400 mb-8">
+              <p className="text-xl text-zinc-200 mb-8">
                 Join creators generating professional AI content <NumberTicker value={10} className="text-orange-400 font-bold inline" />x faster with proven workflows
               </p>
-              <Link href="#packages">
+              <Link href="#packages" className="focus:outline-none focus:ring-4 focus:ring-orange-500/50" aria-label="Start your ComfyUI journey - get instant access">
                 <ShimmerButton
                   className="shadow-2xl"
                   shimmerColor="#ffffff"
@@ -1003,7 +1003,7 @@ export default function ComfyUIWorkflowsPage() {
                   </span>
                 </ShimmerButton>
               </Link>
-              <p className="text-sm text-gray-400 mt-4">60-day money-back guarantee</p>
+              <p className="text-sm text-zinc-300 mt-4">60-day money-back guarantee</p>
             </div>
           </div>
         </div>
