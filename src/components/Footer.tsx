@@ -1,18 +1,17 @@
 import Link from 'next/link'
 import SocialIcon from './SocialIcon'
 import NumberTicker from './magicui/number-ticker'
-import ShimmerButton from './magicui/shimmer-button'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
   
   const footerLinks = {
     courses: [
-      { name: 'Instagram Ignited', href: '/instagram-ignited', students: '1,200+' },
-      { name: 'Digital Products', href: '/digital-products', students: '950+' },
-      { name: 'N8N AI Automations', href: '/n8n-ai-automations', students: '800+' },
-      { name: 'AI Influencers', href: '/ai-influencers', students: '650+' },
-      { name: 'ComfyUI & Workflows', href: '/comfyui-workflows', students: '400+' }
+      { name: 'Instagram Ignited', href: '/instagram-ignited' },
+      { name: 'Digital Products', href: '/digital-products' },
+      { name: 'N8N AI Automations', href: '/n8n-ai-automations' },
+      { name: 'AI Influencers', href: '/ai-influencers' },
+      { name: 'ComfyUI & Workflows', href: '/comfyui-workflows' }
     ],
     resources: [
       { name: 'Blog', href: '/blog' },
@@ -43,28 +42,19 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-white mb-4">
               IImagined<span className="text-blue-400">.ai</span>
             </h3>
-            <p className="text-zinc-200 mb-6 leading-relaxed">
-              Transform your passion into profit with AI automation, viral content systems, and digital product mastery. Join <NumberTicker value={4000} className="text-blue-400 font-bold" />+ students already building their creator empire.
+            <p className="text-zinc-300 mb-8 leading-relaxed text-lg">
+              Transform your passion into profit with AI automation, viral content systems, and digital product mastery. Join <NumberTicker value={4000} className="text-blue-400 font-semibold" />+ students building their creator empire.
             </p>
             
             {/* Quick Access to Whop */}
-            <div className="mb-4">
+            <div className="mb-6">
               <Link
                 href="https://whop.com/anyrxo"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
               >
-                <ShimmerButton
-                  className="shadow-lg mb-4"
-                  shimmerColor="#ffffff"
-                  shimmerSize="0.05em"
-                  background="linear-gradient(135deg, #3b82f6, #8b5cf6)"
-                  borderRadius="12px"
-                >
-                  <span className="font-semibold px-4 py-2 text-sm">
-                    🚀 Join Our Community
-                  </span>
-                </ShimmerButton>
+                Join Our Community
               </Link>
             </div>
             <div className="flex space-x-4">
@@ -87,16 +77,13 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Premium Courses</h4>
             <ul className="space-y-3">
               {footerLinks.courses.map((link) => (
-                <li key={link.name} className="flex items-center justify-between">
+                <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-zinc-300 hover:text-white transition-colors duration-200 hover:scale-105 transform"
+                    className="text-zinc-300 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
                   >
                     {link.name}
                   </Link>
-                  <span className="text-xs text-blue-400 font-medium bg-blue-500/10 px-2 py-1 rounded-full">
-                    {link.students}
-                  </span>
                 </li>
               ))}
             </ul>
@@ -105,12 +92,12 @@ export default function Footer() {
           {/* Resources */}
           <div>
             <h4 className="text-white font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-zinc-300 hover:text-white transition-colors duration-200 hover:scale-105 transform"
+                    className="text-zinc-300 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
                   >
                     {link.name}
                   </Link>
@@ -122,12 +109,12 @@ export default function Footer() {
           {/* Legal */}
           <div>
             <h4 className="text-white font-semibold mb-4">Legal</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-zinc-300 hover:text-white transition-colors duration-200 hover:scale-105 transform"
+                    className="text-zinc-300 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
                   >
                     {link.name}
                   </Link>
@@ -149,19 +136,19 @@ export default function Footer() {
             </div>
 
             {/* Community CTA */}
-            <div className="flex items-center gap-4 text-zinc-300 text-sm">
+            <div className="flex flex-col sm:flex-row items-center gap-4 text-zinc-300 text-sm">
               <div className="flex items-center gap-2">
-                <NumberTicker value={4000} className="text-blue-400 font-bold text-lg" />+ 
+                <NumberTicker value={4000} className="text-blue-400 font-semibold" />+ 
                 <span>students building their empire</span>
               </div>
-              <span>•</span>
+              <span className="hidden sm:block">•</span>
               <Link
                 href="https://whop.com/anyrxo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 font-semibold hover:scale-105 transition-transform duration-200"
+                className="text-blue-400 hover:text-blue-300 font-semibold hover:underline transition-all duration-200"
               >
-                Join Whop Community →
+                Join Community
               </Link>
             </div>
           </div>

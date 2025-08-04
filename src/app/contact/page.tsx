@@ -26,7 +26,7 @@ export default function ContactPage() {
           >
             <div className="flex justify-center mb-6">
               <AnimatedGradientText>
-                📬 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
+                <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
                 <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
                   Let's Connect
                 </span>
@@ -35,9 +35,16 @@ export default function ContactPage() {
             </div>
             <BlurIn
               word="CONTACT"
-              className="text-4xl md:text-6xl font-bold mb-8"
+              className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
               duration={0.8}
             />
+            <div className="max-w-2xl mx-auto">
+              <TypingAnimation
+                text="Ready to transform your creator journey? Let's connect and build something amazing together."
+                className="text-lg text-zinc-300 leading-relaxed"
+                duration={50}
+              />
+            </div>
           </div>
 
           {/* Contact Content */}

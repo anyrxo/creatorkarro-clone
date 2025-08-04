@@ -27,18 +27,27 @@ export default function StoryPage() {
             ref={heroAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-8">
-              <BlurIn
-                word="MY"
-                className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent inline-block mr-4"
-                duration={0.8}
-              />
-              <WordRotate
-                words={["STORY", "JOURNEY", "PATH", "VISION"]}
-                className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent inline-block"
-                duration={2500}
-              />
-            </h1>
+            <div className="relative">
+              <h1 className="text-4xl md:text-6xl font-bold mb-8">
+                <BlurIn
+                  word="MY"
+                  className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent inline-block mr-4"
+                  duration={0.8}
+                />
+                <WordRotate
+                  words={["STORY", "JOURNEY", "PATH", "VISION"]}
+                  className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent inline-block"
+                  duration={2500}
+                />
+              </h1>
+              <div className="max-w-3xl mx-auto mt-6">
+                <TypingAnimation
+                  text="From zero followers to building a multi-million dollar creator empire. This is how I transformed passion into profit using AI, automation, and proven systems."
+                  className="text-xl text-zinc-200 leading-relaxed"
+                  duration={40}
+                />
+              </div>
+            </div>
           </div>
 
           {/* Hero Image */}
@@ -61,13 +70,16 @@ export default function StoryPage() {
             ref={storyAnimation.elementRef}
             className={`space-y-6 md:space-y-8 text-base md:text-lg lg:text-xl text-zinc-200 leading-relaxed scroll-fade-up ${storyAnimation.isVisible ? 'visible' : ''}`}
           >
-            <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-2xl p-6 md:p-8 border border-blue-500/20">
-              <p className="text-lg md:text-xl lg:text-2xl font-medium text-blue-200 mb-4">
-                "What started as me posting random stuff online has somehow turned into a 7-figure business."
-              </p>
-              <p className="text-base md:text-lg text-zinc-300 italic">
-                - From zero to millions, one system at a time
-              </p>
+            <div className="relative bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-pink-600/10 rounded-2xl p-6 md:p-8 border border-blue-500/20 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl"></div>
+              <div className="relative z-10">
+                <p className="text-lg md:text-xl lg:text-2xl font-medium bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent mb-4">
+                  "What started as me posting random stuff online has somehow turned into a 7-figure business."
+                </p>
+                <p className="text-base md:text-lg text-zinc-300 italic">
+                  - From zero to millions, one system at a time
+                </p>
+              </div>
             </div>
 
             <p>
