@@ -502,42 +502,42 @@ export default function ComfyUIWorkflowsPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <ProblemCard
-              icon="palette"
+              icon={getIcon("palette")}
               title="Inconsistent Results"
               description="You get amazing results sometimes, but can't reliably reproduce them. Every generation feels like rolling dice."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-1"
             />
             <ProblemCard
-              icon="wand2"
+              icon={getIcon("wand2")}
               title="Endless Tweaking"
               description="Hours spent adjusting parameters, trying different prompts, and still not getting what you envisioned."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-2"
             />
             <ProblemCard
-              icon="layers"
+              icon={getIcon("layers")}
               title="Wasted GPU Credits"
               description="Burning through expensive GPU time with failed generations and parameter testing."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-3"
             />
             <ProblemCard
-              icon="palette"
+              icon={getIcon("palette")}
               title="Technical Overwhelm"
               description="Complex interfaces, confusing settings, and steep learning curves that kill your creativity."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-4"
             />
             <ProblemCard
-              icon="wand2"
+              icon={getIcon("wand2")}
               title="Poor Quality Control"
               description="Artifacts, distortions, and unprofessional results that you can't use for client work."
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-5"
             />
             <ProblemCard
-              icon="layers"
+              icon={getIcon("layers")}
               title="Manual Repetition"
               description="Doing the same steps over and over manually instead of having automated, reliable workflows."
               isVisible={problemAnimation.isVisible}

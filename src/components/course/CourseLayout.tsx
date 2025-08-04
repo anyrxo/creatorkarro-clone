@@ -123,7 +123,7 @@ export function BonusCard({ icon, title, description, value, isVisible, staggerC
 
 // Problem Card Component - Consistent 6-grid layout
 interface ProblemCardProps {
-  icon: string
+  icon: React.ReactNode
   title: string
   description: string
   isVisible: boolean

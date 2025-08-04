@@ -556,42 +556,42 @@ export default function AIInfluencersPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <ProblemCard
-              icon="alertTriangle"
+              icon={getIcon("alertTriangle")}
               title="Burnout From Face-To-Camera"
               description="Constantly showing your face, maintaining appearance, and being 'on' 24/7 is exhausting and unsustainable"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-1"
             />
             <ProblemCard
-              icon="target"
+              icon={getIcon("target")}
               title="Time Prison"
               description="Your income is directly tied to your time. Can't scale beyond 24 hours in a day"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-2"
             />
             <ProblemCard
-              icon="dollarSign"
+              icon={getIcon("dollarSign")}
               title="High Overhead Costs"
               description="Expensive equipment, editing, photoshoots, and team members eating into profits"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-3"
             />
             <ProblemCard
-              icon="shield"
+              icon={getIcon("shield")}
               title="Privacy Invasion"
               description="Your personal life becomes public content. No boundaries between work and private life"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-4"
             />
             <ProblemCard
-              icon="trendingUp"
+              icon={getIcon("trendingUp")}
               title="Inconsistent Content"
               description="Bad days, sick days, vacation days = no content = no income. One person can't be everywhere"
               isVisible={problemAnimation.isVisible}
               staggerClass="scroll-stagger-5"
             />
             <ProblemCard
-              icon="users"
+              icon={getIcon("users")}
               title="Platform Dependency"
               description="One algorithm change or account ban can destroy years of work instantly"
               isVisible={problemAnimation.isVisible}

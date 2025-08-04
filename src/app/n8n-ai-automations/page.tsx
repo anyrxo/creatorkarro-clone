@@ -241,32 +241,32 @@ export default function N8NAutomationsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
             {[
               {
-                icon: "clock",
+                icon: getIcon("clock"),
                 title: "80+ Hours/Week Manual Grinding",
                 description: "You're manually doing everything: email responses, data entry, social media posting, customer follow-ups. Your entire business depends on YOU being online 24/7."
               },
               {
-                icon: "dollarSign",
+                icon: getIcon("dollarSign"),
                 title: "Paying $5K+/Month for VA Teams",
                 description: "You're hemorrhaging money on virtual assistants who make mistakes, need constant supervision, and cost more than your revenue. It's unsustainable and you know it."
               },
               {
-                icon: "trendingUp",
+                icon: getIcon("trendingUp"),
                 title: "Missing 90% of Business Opportunities",
                 description: "While you're stuck doing busy work, leads go cold, customers churn, and opportunities slip away. Your competitors are moving 10x faster with automation."
               },
               {
-                icon: "skull",
+                icon: getIcon("skull"),
                 title: "Burnout from Repetitive Hell",
                 description: "You didn't start a business to become a slave to it. But you're trapped doing the same mind-numbing tasks over and over, with no time for strategy or growth."
               },
               {
-                icon: "flame",
+                icon: getIcon("flame"),
                 title: "Zero Scalability Without You",
                 description: "Your business stops when you stop. Take a vacation? Revenue drops. Get sick? Everything breaks. You've built a job, not a business, and it's killing you."
               },
               {
-                icon: "trendingDown",
+                icon: getIcon("trendingDown"),
                 title: "Competitors Destroying You with AI",
                 description: "While you're manually processing orders, they're using AI to handle 1000x more customers with zero human intervention. You're being left in the dust."
               }

@@ -222,32 +222,32 @@ export default function DigitalProductsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
             {[
               {
-                icon: "dollarSign",
+                icon: getIcon("dollarSign"),
                 title: "Working Harder, Earning Less",
                 description: "You're grinding 60+ hours a week but your income is still capped by your time. Every dollar requires your personal involvement - there's no scalability, no freedom."
               },
               {
-                icon: "target",
+                icon: getIcon("target"),
                 title: "Valuable Knowledge Going to Waste",
                 description: "You have incredible expertise and knowledge that could help thousands of people, but you have no idea how to package and monetize it profitably."
               },
               {
-                icon: "alertTriangle",
+                icon: getIcon("alertTriangle"),
                 title: "Confused by 'Digital Product' Gurus",
                 description: "Everyone's talking about courses and digital products, but all the advice is contradictory. You're overwhelmed by the options and don't know where to start."
               },
               {
-                icon: "xCircle",
+                icon: getIcon("xCircle"),
                 title: "Failed Launches and Zero Sales",
                 description: "You've tried creating products before but they flopped. No one bought, no one engaged, and you wasted months building something nobody wanted."
               },
               {
-                icon: "flame",
+                icon: getIcon("flame"),
                 title: "Watching Others Get Rich Off Your Ideas",
                 description: "Competitors with worse knowledge are making millions selling products while you're stuck trading time for money. They figured out the system - you didn't."
               },
               {
-                icon: "zap",
+                icon: getIcon("zap"),
                 title: "No Time Freedom or Passive Income",
                 description: "Your income stops when you stop working. You can't take vacations, you can't scale, and you're building a glorified job instead of a real business."
               }
