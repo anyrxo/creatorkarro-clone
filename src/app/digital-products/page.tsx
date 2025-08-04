@@ -771,7 +771,7 @@ export default function DigitalProductsPage() {
                   name: "Digital Products Academy",
                   description: "ONE-TIME",
                   price: "$189",
-                  badge: "🔥 LIFETIME ACCESS",
+                  badge: "LIFETIME ACCESS",
                   features: [
                     "Replace $50K consultant fees with DIY mastery",
                     "Launch your first $5K product in 30 days",
@@ -784,7 +784,8 @@ export default function DigitalProductsPage() {
                   name: "Whop All-Access",
                   description: "PER MONTH",
                   price: "$39.99",
-                  badge: "🚀 POPULAR - ALL 5 COURSES",
+                  originalPrice: "$99.99",
+                  badge: "POPULAR - ALL 5 COURSES",
                   badgeColor: "bg-purple-500",
                   popular: true,
                   features: [

@@ -236,8 +236,8 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
           }`}
         >
           {option.badge && (
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <div className={`${option.badgeColor || 'bg-red-500'} text-white px-4 py-2 rounded-full font-bold text-sm ${option.popular ? 'animate-pulse' : ''}`}>
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+              <div className={`${option.badgeColor || 'bg-red-500'} text-white px-3 py-1 rounded-full font-bold text-xs ${option.popular ? 'animate-pulse' : ''}`}>
                 {option.badge}
               </div>
             </div>

@@ -883,7 +883,7 @@ export default function N8NAutomationsPage() {
                   name: "N8N AI Automations",
                   description: "ONE-TIME",
                   price: "$129",
-                  badge: "🔥 LIFETIME ACCESS",
+                  badge: "LIFETIME ACCESS",
                   features: [
                     "Save 40+ hours/week with automated workflows",
                     "Build $10K/month automation agency",
@@ -897,7 +897,8 @@ export default function N8NAutomationsPage() {
                   name: "Whop All-Access",
                   description: "PER MONTH",
                   price: "$39.99",
-                  badge: "🚀 POPULAR - ALL 5 COURSES",
+                  originalPrice: "$99.99",
+                  badge: "POPULAR - ALL 5 COURSES",
                   badgeColor: "bg-purple-500",
                   popular: true,
                   features: [

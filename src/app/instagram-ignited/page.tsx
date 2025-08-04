@@ -939,7 +939,7 @@ export default function InstagramIgnitedPage() {
               {/* Instagram Ignited */}
               <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 border-2 border-green-500 rounded-2xl p-6 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 bg-green-500 text-black text-sm font-bold py-2">
-                  🔥 LIFETIME ACCESS 🔥
+                  LIFETIME ACCESS
                 </div>
                 <div className="mt-8">
                   <h4 className="text-lg font-bold mb-4 text-green-400">Instagram Ignited</h4>
@@ -962,12 +962,12 @@ export default function InstagramIgnitedPage() {
               {/* Whop All-Access */}
               <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-2 border-purple-500 rounded-2xl p-6 text-center relative overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer animate-pulse">
                 <div className="absolute top-0 left-0 right-0 bg-purple-500 text-white text-sm font-bold py-2">
-                  🚀 POPULAR - ALL 5 COURSES 🚀
+                  POPULAR - ALL 5 COURSES
                 </div>
                 <div className="mt-8">
                   <h4 className="text-lg font-bold mb-4 text-purple-400">Whop All-Access</h4>
                   <div className="mb-2">
-                    <span className="text-sm text-gray-400 line-through">$881 individual</span>
+                    <span className="text-sm text-gray-400 line-through">$99.99</span>
                   </div>
                   <div className="text-3xl font-black mb-4 text-purple-400">$39.99</div>
                   <div className="text-sm text-gray-400 mb-6">PER MONTH</div>

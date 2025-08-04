@@ -458,14 +458,14 @@ export default function AIInfluencersPage() {
         "Scale to multiple $10K+ virtual personalities",
         "$3,000 worth of AI tools & templates included"
       ],
-      badge: "🔥 LIFETIME ACCESS",
+      badge: "LIFETIME ACCESS",
       badgeColor: "bg-red-500"
     },
     {
       name: "Whop All-Access",
       description: "PER MONTH",
       price: "$39.99",
-      originalPrice: "$881",
+      originalPrice: "$99.99",
       features: [
         "Complete $88K/month business system",
         "Instagram: 0 to 500K followers proven method", 
@@ -476,7 +476,7 @@ export default function AIInfluencersPage() {
         "New courses added monthly (5+ planned)",
         "Cancel anytime, keep what you downloaded"
       ],
-      badge: "🚀 POPULAR - ALL 5 COURSES",
+      badge: "POPULAR - ALL 5 COURSES",
       badgeColor: "bg-purple-500",
       popular: true,
       hoverEffect: true,
