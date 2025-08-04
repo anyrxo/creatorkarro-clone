@@ -1,40 +1,25 @@
 import React from 'react'
 import Link from 'next/link'
 
-// ORYANA'S AUTHORITY WEAPON - METADATA DOMINATION
-export const metadata = {
-  title: "AI Automation Guide 2025: Complete Business Automation Masterclass (3000+ Words)",
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "AI Automation Guide 2025: Complete Business Automation Masterclass",
   description: "The ultimate AI automation guide for business owners. Learn N8N, workflow automation, and AI tools that save 40+ hours/week. Complete step-by-step implementation strategies.",
-  keywords: [
-    // PRIMARY AUTHORITY KEYWORDS
-    "ai automation guide", "business automation guide", "workflow automation tutorial", "ai automation tools 2025",
-    // N8N FUNNEL KEYWORDS  
-    "n8n automation", "n8n tutorial", "no code automation", "workflow automation tools",
-    // BUYER INTENT KEYWORDS
-    "ai automation course", "business automation training", "automation consultant", "save time with automation",
-    // SUPPORTING TERMS
-    "ai tools for business", "automation strategies", "productivity automation", "business process automation"
-  ],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
-  creator: "IImagined.ai",
-  publisher: "IImagined.ai",
-  category: "Technology",
   openGraph: {
-    title: "AI Automation Guide",
-    description: "Complete guide to ai automation guide - proven strategies, tools, and techniques for 2025",
+    title: "AI Automation Guide 2025",
+    description: "Complete guide to AI automation - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/ai-automation-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:30.004Z",
     authors: ["IImagined.ai Team"],
-    tags: ["automation", "guide", "automation 2025", "automation guide", "AI tools", "business growth", "productivity", "2025 strategies"],
     images: [{
       url: "https://iimagined.ai/images/ai-automation-guide-og.jpg",
       width: 1200,
       height: 630,
-      alt: "AI Automation Guide",
-      type: "image/jpeg"
+      alt: "AI Automation Guide"
     }],
     locale: "en_US"
   },
@@ -42,8 +27,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "AI Automation Guide",
-    description: "Complete guide to ai automation guide - proven strategies, tools, and techniques for 2025",
+    title: "AI Automation Guide 2025",
+    description: "Complete guide to AI automation - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/ai-automation-guide-og.jpg",
       alt: "AI Automation Guide"
