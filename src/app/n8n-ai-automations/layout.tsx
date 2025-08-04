@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'N8N AI Automations Course - Build Advanced AI Workflows & Systems | IImagined.ai',
-  description: 'Master N8N AI automations with 50+ advanced workflows. Build intelligent systems, automate complex processes, and scale your business with cutting-edge AI automation techniques.',
+  title: 'N8N AI Automations Course - Complete No-Code Workflow Builder Training | Business Process Automation Mastery | Advanced AI Integration & Systems | Save 40+ Hours Weekly',
+  description: 'Master N8N automation with 50+ proven workflows that save 40+ hours weekly. Complete business process automation training with AI integration, no coding required. Join 1,600+ successful students.',
   keywords: [
     'n8n automation',
     'n8n course',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     'no code automation'
   ],
   openGraph: {
-    title: 'N8N AI Automations Mastery - 50+ Advanced Workflows & Training',
-    description: 'Build intelligent automation systems with N8N and AI. Master advanced workflows that scale your business operations automatically.',
+    title: 'N8N AI Automations Course - Complete No-Code Workflow Builder Training | Business Process Automation Mastery',
+    description: 'Master N8N automation with 50+ proven workflows that save 40+ hours weekly. Complete business automation training with AI integration, no coding required.',
     type: 'website',
     images: [
       {
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'N8N AI Automations Course - Build Advanced AI Workflows',
-    description: 'Master N8N with 50+ AI automation workflows. Build intelligent systems that scale your business.',
+    title: 'N8N AI Automations Course - Complete No-Code Workflow Builder Training | Save 40+ Hours Weekly',
+    description: 'Master N8N automation with 50+ proven workflows that save 40+ hours weekly. Complete business automation training, no coding required.',
     creator: '@anyro'
   }
 }

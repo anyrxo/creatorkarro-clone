@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'ComfyUI Workflows Course - Ultimate AI Image Generation Training | Professional Workflows',
-  description: 'Master ComfyUI with professional workflows for AI image generation. Learn advanced techniques, custom nodes, and automated image systems. Perfect for beginners and professionals.',
+  title: 'ComfyUI Course 2025 - Master AI Image Generation Workflows | ComfyUI Tutorial Training | Stable Diffusion Custom Nodes | Professional AI Art Creation System',
+  description: 'Master ComfyUI workflows for professional AI image generation. Complete training course with custom nodes, Stable Diffusion techniques, and automated image systems. Perfect for beginners to professionals.',
   keywords: [
     'comfyui course',
     'comfyui workflows',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   category: 'Education',
   classification: 'AI Image Generation Training',
   openGraph: {
-    title: 'ComfyUI Workflows: Ultimate AI Image Generation Course',
-    description: 'Master ComfyUI with professional workflows for AI image generation. Learn advanced techniques, custom nodes, and automated image generation systems from industry experts.',
+    title: 'ComfyUI Course 2025 - Master AI Image Generation Workflows | ComfyUI Tutorial Training | Stable Diffusion Custom Nodes',
+    description: 'Master ComfyUI workflows for professional AI image generation. Complete training course with custom nodes, Stable Diffusion techniques, and automated systems.',
     url: 'https://iimagined.ai/comfyui-workflows',
     siteName: 'IImagined',
     type: 'website',
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@anyrxo',
     creator: '@anyrxo',
-    title: 'ComfyUI Workflows: Ultimate AI Image Generation Course',
-    description: 'Master ComfyUI with professional workflows for AI image generation. Learn advanced techniques and custom nodes from industry experts.',
+    title: 'ComfyUI Course 2025 - Master AI Image Generation Workflows | ComfyUI Tutorial Training | Stable Diffusion',
+    description: 'Master ComfyUI workflows for professional AI image generation. Complete training course with custom nodes and Stable Diffusion techniques.',
     images: ['https://iimagined.ai/images/comfyui-workflows-og.jpg']
   },
   robots: {

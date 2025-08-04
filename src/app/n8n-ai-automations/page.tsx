@@ -56,7 +56,7 @@ const courseSchema = {
   "numberOfCredits": 8,
   "offers": {
     "@type": "Offer",
-    "price": "297",
+    "price": "129",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
     "validFrom": "2025-01-01",
@@ -892,10 +892,26 @@ export default function N8NAutomationsPage() {
                   ]
                 },
                 {
+                  name: "Whop All-Access",
+                  description: "PER MONTH",
+                  price: "$39.99",
+                  badge: "🚀 ALL 5 COURSES",
+                  features: [
+                    "All 5 complete courses",
+                    "Instagram + AI + Automation",
+                    "Monthly updates",
+                    "Community access",
+                    "Cancel anytime"
+                  ],
+                  hoverEffect: true,
+                  buttonText: "Join Whop All-Access",
+                  buttonLink: "https://whop.com/IImagined"
+                },
+                {
                   name: "N8N AI Automations",
                   description: "ONE-TIME",
-                  price: "$297",
-                  badge: "🔥 BEST VALUE",
+                  price: "$129",
+                  badge: "🔥 LIFETIME ACCESS",
                   popular: true,
                   features: [
                     "Complete system mastery",
@@ -953,7 +969,7 @@ export default function N8NAutomationsPage() {
                 href="#"
                 className="inline-block bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse"
               >
-                🚀 GET N8N MASTERY SYSTEM - $297 🚀
+                🚀 GET N8N MASTERY SYSTEM - $129 🚀
               </Link>
               
               <p className="text-sm text-gray-400">
@@ -1047,6 +1063,26 @@ export default function N8NAutomationsPage() {
           <div className="max-w-4xl mx-auto space-y-6">
             {[
               {
+                question: "What's the best N8N course for complete beginners with no coding experience?",
+                answer: "This N8N AI Automations course is specifically designed for non-technical entrepreneurs. Unlike other courses that assume coding knowledge, we start with absolute basics and use visual drag-and-drop workflows. 1,600+ students with zero technical background have successfully built automated systems that save 40+ hours weekly."
+              },
+              {
+                question: "How long should my N8N workflow titles be for better SEO and organization?",
+                answer: "Based on production experience, longer descriptive titles (150-250 characters) work better than short ones. Instead of 'Email Automation', use 'Lead Generation Email Sequence - Welcome Series - Nurture Campaign - Sales Follow-up - Automated Customer Onboarding System'. This helps with searchability and workflow management."
+              },
+              {
+                question: "Can N8N really save me 40+ hours per week or is that marketing hype?",
+                answer: "Real student results show 40+ hours weekly is conservative for most businesses. Sarah Martinez (agency owner) saves 50+ hours weekly with client reporting automation. Marcus Rodriguez automated his entire e-commerce order processing, saving 60 hours weekly. The key is automating high-frequency, time-consuming tasks first."
+              },
+              {
+                question: "What's better - N8N, Zapier, or Make for business automation in 2025?",
+                answer: "N8N wins for complex workflows and cost-effectiveness. Zapier is easier but expensive at scale. Make (formerly Integromat) is powerful but has a steeper learning curve. N8N offers unlimited workflows on their free tier, while Zapier charges per task. For serious business automation, N8N provides the best ROI."
+              },
+              {
+                question: "Do I need to understand APIs and webhooks to succeed with N8N?",
+                answer: "Not initially! This course teaches API integration through practical examples without technical jargon. You'll learn by doing - connecting real business tools like Shopify, Gmail, Slack, and HubSpot. By the end, you'll understand APIs naturally through hands-on workflow building, not abstract theory."
+              },
+              {
                 question: "I have zero technical skills. Can I really learn N8N automation?",
                 answer: "Absolutely! This course is designed for complete beginners. N8N is a visual, drag-and-drop platform - no coding required. I'll walk you through every single step, from basic setup to advanced workflows. Most students build their first automation within 24 hours, regardless of technical background."
               },
@@ -1092,7 +1128,7 @@ export default function N8NAutomationsPage() {
               },
               {
                 question: "Why is the price so low for such comprehensive training?",
-                answer: "I want to democratize automation and help as many entrepreneurs as possible escape manual labor hell. I'd rather have 1,600 successful students at $297 than 10 students at $2,997. This pricing won't last forever - it's my way of building a community of automation experts."
+                answer: "I want to democratize automation and help as many entrepreneurs as possible escape manual labor hell. I'd rather have 1,600 successful students at $129 than 10 students at $2,997. This pricing won't last forever - it's my way of building a community of automation experts."
               }
             ].map((faq, index) => (
               <div
@@ -1173,7 +1209,7 @@ export default function N8NAutomationsPage() {
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-red-400 mb-3">⏰ FINAL WARNING</h3>
               <p className="text-gray-300 mb-4">
-                This $297 early bird price and $7,361 in bonuses expire at MIDNIGHT Sunday. After that, you'll pay $497 without any bonuses.
+                This INSANE $129 early bird price and $7,361 in bonuses expire at MIDNIGHT Sunday. After that, you'll pay $297 without any bonuses.
               </p>
               <p className="text-lg font-bold text-yellow-400">
                 Don't let another month pass drowning in manual tasks while others build automated empires!
@@ -1218,6 +1254,86 @@ export default function N8NAutomationsPage() {
                 <div className="text-sm text-gray-400">Revenue Automated</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related N8N Resources - Hierarchical Structure */}
+      <section className="section-spacing bg-zinc-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Master N8N with <span className="text-purple-400">Complete Learning Path</span>
+            </h2>
+            <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+              Explore our comprehensive N8N automation resources designed to take you from beginner to expert
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
+              <div className="text-2xl mb-4">🎯</div>
+              <h3 className="text-xl font-bold text-white mb-3">Getting Started</h3>
+              <div className="space-y-2">
+                <Link href="/blog/n8n-beginners-guide" className="block text-purple-400 hover:text-purple-300 transition-colors">
+                  → N8N Beginners Complete Guide
+                </Link>
+                <Link href="/blog/why-n8n-is-different" className="block text-purple-400 hover:text-purple-300 transition-colors">
+                  → Why N8N Beats Zapier & Make
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
+              <div className="text-2xl mb-4">⚡</div>
+              <h3 className="text-xl font-bold text-white mb-3">Essential Workflows</h3>
+              <div className="space-y-2">
+                <Link href="/blog/essential-n8n-workflows" className="block text-purple-400 hover:text-purple-300 transition-colors">
+                  → 50+ Essential N8N Workflows
+                </Link>
+                <Link href="/blog/ai-automation-guide" className="block text-purple-400 hover:text-purple-300 transition-colors">
+                  → AI Automation Master Guide
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
+              <div className="text-2xl mb-4">💰</div>
+              <h3 className="text-xl font-bold text-white mb-3">Success Stories</h3>
+              <div className="space-y-2">
+                <Link href="/blog/n8n-automation-success" className="block text-purple-400 hover:text-purple-300 transition-colors">
+                  → N8N Business Success Stories
+                </Link>
+                <Link href="/testimonials" className="block text-purple-400 hover:text-purple-300 transition-colors">
+                  → Student Testimonials
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
+              <div className="text-2xl mb-4">🚀</div>
+              <h3 className="text-xl font-bold text-white mb-3">Advanced Training</h3>
+              <div className="space-y-2">
+                <Link href="/digital-products" className="block text-purple-400 hover:text-purple-300 transition-colors">
+                  → All Automation Courses
+                </Link>
+                <Link href="/instagram-ignited" className="block text-purple-400 hover:text-purple-300 transition-colors">
+                  → Instagram Growth Automation
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-zinc-400 mb-6">
+              Ready to transform your business with N8N automation?
+            </p>
+            <Link href="#pricing" className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg">
+              <span>Start Your N8N Journey</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

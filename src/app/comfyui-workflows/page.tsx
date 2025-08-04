@@ -65,7 +65,7 @@ export default function ComfyUIWorkflowsPage() {
     ],
     "offers": {
       "@type": "Offer",
-      "price": "197",
+      "price": "247",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "category": "AI Education Course",
@@ -408,19 +408,37 @@ export default function ComfyUIWorkflowsPage() {
       disabled: true
     },
     {
+      name: "Whop All-Access",
+      description: "PER MONTH",
+      price: "$39.99",
+      originalPrice: "$881",
+      features: [
+        "All 5 complete courses",
+        "Instagram + AI + Automation",
+        "Monthly updates",
+        "Community access",
+        "Cancel anytime"
+      ],
+      badge: "🚀 ALL 5 COURSES",
+      badgeColor: "bg-purple-500",
+      hoverEffect: true,
+      buttonText: "Join Whop All-Access",
+      buttonLink: "https://whop.com/IImagined"
+    },
+    {
       name: "Complete Workflow Mastery",
       description: "Self-paced comprehensive training",
-      price: "$147",
-      originalPrice: "$497",
+      price: "$247",
+      originalPrice: "$1,500",
       features: [
         "50+ professional workflows ($197 value)",
-        "6 comprehensive modules ($1,297 value)",
-        "All exclusive bonuses ($842 value)",
+        "6 comprehensive modules ($797 value)",
+        "All exclusive bonuses ($506 value)",
         "Lifetime updates and new workflows",
         "Private community access",
         "60-day money-back guarantee"
       ],
-      badge: "🔥 EARLY BIRD SPECIAL 🔥",
+      badge: "🔥 LIFETIME ACCESS 🔥",
       badgeColor: "bg-green-500",
       popular: true
     }
@@ -732,7 +750,7 @@ export default function ComfyUIWorkflowsPage() {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ 6 Complete Training Modules</span>
-                  <span className="text-gold-400 font-bold">$1,082</span>
+                  <span className="text-gold-400 font-bold">$797</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ 50+ Professional Workflows</span>
@@ -740,23 +758,23 @@ export default function ComfyUIWorkflowsPage() {
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ Premium Model Collection</span>
-                  <span className="text-gold-400 font-bold">$197</span>
+                  <span className="text-gold-400 font-bold">$147</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ Video Tutorial Library</span>
-                  <span className="text-gold-400 font-bold">$147</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-gray-700">
-                  <span className="text-gray-300">✓ Custom Node Pack</span>
                   <span className="text-gold-400 font-bold">$97</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
+                  <span className="text-gray-300">✓ Custom Node Pack</span>
+                  <span className="text-gold-400 font-bold">$69</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ Business Templates</span>
-                  <span className="text-gold-400 font-bold">$127</span>
+                  <span className="text-gold-400 font-bold">$97</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ 1-on-1 Setup Session</span>
-                  <span className="text-gold-400 font-bold">$147</span>
+                  <span className="text-gold-400 font-bold">$97</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
                   <span className="text-gray-300">✓ 60-Day Money-Back Guarantee</span>
@@ -768,7 +786,7 @@ export default function ComfyUIWorkflowsPage() {
                 <div className="flex justify-between items-center text-2xl font-bold">
                   <span className="text-white">TOTAL VALUE:</span>
                   <span className="text-gold-400">
-                    $<NumberTicker value={1994} className="text-2xl font-bold text-gold-400" />
+                    $<NumberTicker value={1500} className="text-2xl font-bold text-gold-400" />
                   </span>
                 </div>
               </div>
@@ -933,7 +951,7 @@ export default function ComfyUIWorkflowsPage() {
                     borderRadius="9999px"
                   >
                     <span className="text-xl md:text-2xl font-bold px-8 py-4 text-center block">
-                      🚀 SECURE EARLY BIRD PRICING<br className="md:hidden" /> - $<NumberTicker value={147} className="inline" /> 🚀
+                      🚀 SECURE EARLY BIRD PRICING<br className="md:hidden" /> - $<NumberTicker value={247} className="inline" /> 🚀
                     </span>
                   </ShimmerButton>
                 </Link>

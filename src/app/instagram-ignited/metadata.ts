@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Instagram Ignited Course - 0 to 500K Followers | Complete Instagram Growth System',
-  description: 'Transform your Instagram into a money-making machine. Learn viral content strategies, algorithm domination, and monetization techniques. 2,000+ students grown from 0 to 500K+ followers.',
+  title: 'Instagram Growth Course 2025 - 0 to 500K Followers Fast | How To Grow Instagram Followers | Viral Content Strategy & Monetization | Complete Instagram Marketing Training System',
+  description: 'Learn how to grow Instagram followers from 0 to 500K with proven viral content strategies. Complete Instagram growth course with algorithm secrets, monetization techniques, and marketing mastery. 2,000+ students success stories.',
   keywords: [
     'instagram growth course',
     'instagram marketing course',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   category: 'Education',
   classification: 'Social Media Marketing Training',
   openGraph: {
-    title: 'Instagram Ignited: 0 to 500K Followers - Complete Growth System',
-    description: 'Complete Instagram growth system for entrepreneurs. Learn viral content strategies, algorithm domination, and monetization techniques from growing 0 to 500K followers.',
+    title: 'Instagram Growth Course 2025 - 0 to 500K Followers Fast | How To Grow Instagram Followers | Viral Content Strategy',
+    description: 'Learn how to grow Instagram followers from 0 to 500K with proven viral content strategies. Complete Instagram growth course with algorithm secrets and monetization techniques.',
     url: 'https://iimagined.ai/instagram-ignited',
     siteName: 'IImagined',
     type: 'website',
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@anyrxo',
     creator: '@anyrxo',
-    title: 'Instagram Ignited: 0 to 500K Followers - Complete Growth System',
-    description: 'Transform your Instagram into a money-making machine. Learn viral content strategies and monetization techniques from a proven 500K+ follower system.',
+    title: 'Instagram Growth Course 2025 - 0 to 500K Followers Fast | How To Grow Instagram Followers | Viral Content Strategy',
+    description: 'Learn how to grow Instagram followers from 0 to 500K with proven viral content strategies. Complete Instagram growth course with algorithm secrets.',
     images: ['https://iimagined.ai/images/instagram-ignited-og.jpg']
   },
   robots: {

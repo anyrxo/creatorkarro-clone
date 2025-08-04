@@ -26,7 +26,7 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 const courseStructuredData = generateCourseStructuredData(
   'AI Influencers Mastery Course',
   'Complete course on creating virtual AI influencers that generate passive income through automated content creation and brand partnerships.',
-  '997',
+  '169',
   'Anyro'
 )
 
@@ -74,7 +74,7 @@ export default function AIInfluencersPage() {
     ],
     "offers": {
       "@type": "Offer",
-      "price": "997",
+      "price": "169",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "category": "AI Business Course",
@@ -461,19 +461,37 @@ export default function AIInfluencersPage() {
       disabled: true
     },
     {
+      name: "Whop All-Access",
+      description: "PER MONTH",
+      price: "$39.99",
+      originalPrice: "$881",
+      features: [
+        "All 5 complete courses",
+        "Instagram + AI + Automation",
+        "Monthly updates",
+        "Community access",
+        "Cancel anytime"
+      ],
+      badge: "🚀 ALL 5 COURSES",
+      badgeColor: "bg-purple-500",
+      hoverEffect: true,
+      buttonText: "Join Whop All-Access",
+      buttonLink: "https://whop.com/IImagined"
+    },
+    {
       name: "Complete Course System",
       description: "Self-paced comprehensive training",
-      price: "$197",
-      originalPrice: "$1,497",
+      price: "$169",
+      originalPrice: "$3,000",
       features: [
-        "Complete 8-module system ($1,297 value)",
-        "All exclusive bonuses ($1,032 value)",
+        "Complete 8-module system ($1,997 value)",
+        "All exclusive bonuses ($1,003 value)",
         "Private community & 1-on-1 call",
         "Lifetime updates & new content",
         "60-day money-back guarantee",
         "Start making money in 30 days"
       ],
-      badge: "🔥 LIMITED TIME 🔥",
+      badge: "🔥 LIFETIME ACCESS 🔥",
       badgeColor: "bg-red-500",
       popular: true
     }
@@ -779,27 +797,27 @@ export default function AIInfluencersPage() {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ 8 Complete Training Modules</span>
-                  <span className="text-gold-400 font-bold">$1,297</span>
+                  <span className="text-gold-400 font-bold">$1,497</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ AI Model Library (50+ Models)</span>
-                  <span className="text-gold-400 font-bold">$197</span>
+                  <span className="text-gold-400 font-bold">$397</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ Content Template Vault (1000+ Templates)</span>
-                  <span className="text-gold-400 font-bold">$147</span>
+                  <span className="text-gold-400 font-bold">$297</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ Complete Automation Scripts</span>
-                  <span className="text-gold-400 font-bold">$127</span>
+                  <span className="text-gold-400 font-bold">$247</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ Private Mastermind Community</span>
-                  <span className="text-gold-400 font-bold">$147</span>
+                  <span className="text-gold-400 font-bold">$297</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ 1-on-1 Strategy Call with Me</span>
-                  <span className="text-gold-400 font-bold">$147</span>
+                  <span className="text-gold-400 font-bold">$197</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-700">
                   <span className="text-gray-300">✓ 30-Day Fast-Track Implementation</span>
@@ -815,7 +833,7 @@ export default function AIInfluencersPage() {
                 <div className="flex justify-between items-center text-2xl font-bold">
                   <span className="text-white">TOTAL VALUE:</span>
                   <span className="text-gold-400">
-                    $<NumberTicker value={2429} className="text-2xl font-bold text-gold-400" />
+                    $<NumberTicker value={3000} className="text-2xl font-bold text-gold-400" />
                   </span>
                 </div>
               </div>
@@ -982,7 +1000,7 @@ export default function AIInfluencersPage() {
                     borderRadius="9999px"
                   >
                     <span className="text-xl md:text-2xl font-bold px-8 py-4 text-center block">
-                      🔥 SECURE YOUR SPOT NOW<br className="md:hidden" /> - $<NumberTicker value={197} className="inline" /> 🔥
+                      🔥 SECURE YOUR SPOT NOW<br className="md:hidden" /> - $<NumberTicker value={169} className="inline" /> 🔥
                     </span>
                   </ShimmerButton>
                 </Link>

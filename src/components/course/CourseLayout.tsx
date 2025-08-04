@@ -207,6 +207,9 @@ interface PricingOption {
   badgeColor?: string
   disabled?: boolean
   popular?: boolean
+  hoverEffect?: boolean
+  buttonText?: string
+  buttonLink?: string
 }
 
 interface PricingComparisonProps {
@@ -228,6 +231,8 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
                 : 'bg-zinc-900 border border-zinc-700'
           } rounded-2xl p-8 text-center card-hover hover-lift scroll-fade-up relative ${
             isVisible ? `visible scroll-stagger-${index + 1}` : ''
+          } ${
+            option.hoverEffect ? 'hover:scale-105 transition-transform duration-300' : ''
           }`}
         >
           {option.badge && (
@@ -269,6 +274,15 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
             <div className="bg-gray-800 text-gray-500 py-3 px-6 rounded-lg font-bold">
               Not Available
             </div>
+          ) : option.buttonLink && option.buttonText ? (
+            <Link 
+              href={option.buttonLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 w-full"
+            >
+              {option.buttonText}
+            </Link>
           ) : (
             <ShimmerButton
               className="shadow-2xl w-full mb-4"

@@ -1,0 +1,301 @@
+{
+  "n8n_course_sequence": {
+    "sequence_name": "N8N AI Automations Masterclass Funnel",
+    "total_emails": 7,
+    "sequence_duration": "14 days",
+    "target_conversion": "15%",
+    "emails": [
+      {
+        "day": 1,
+        "subject": "Your N8N automation toolkit is here (+ $2,000 in bonuses)",
+        "content_preview": "Welcome! Here's your free automation checklist that's saved businesses 1,000+ hours...",
+        "cta": "Download Free Automation Checklist",
+        "goal": "Deliver immediate value and build trust"
+      },
+      {
+        "day": 3,
+        "subject": "How Sarah saved $50K/year with ONE automation workflow",
+        "content_preview": "Case study: Sarah's invoice automation workflow eliminated 20 hours of manual work weekly...",
+        "cta": "See the Complete Workflow Breakdown",
+        "goal": "Social proof and demonstrate value"
+      },
+      {
+        "day": 5,
+        "subject": "The 5 automation mistakes costing you thousands (avoid these)",
+        "content_preview": "Common automation failures that waste money and time - here's how to avoid them...",
+        "cta": "Get the Complete Mistake-Avoidance Guide",
+        "goal": "Build authority and create urgency"
+      },
+      {
+        "day": 7,
+        "subject": "🎯 STUDENT SPOTLIGHT: From 60-hour weeks to 20-hour weeks",
+        "content_preview": "Meet John, who automated his entire consulting business using our exact system...",
+        "cta": "Watch John's Success Story Video",
+        "goal": "Social proof and relatability"
+      },
+      {
+        "day": 10,
+        "subject": "Last chance: N8N Masterclass early bird pricing ends tonight",
+        "content_preview": "The N8N Masterclass enrollment closes in 24 hours. Here's what you get for $297...",
+        "cta": "Enroll Now - Save $200 (Limited Time)",
+        "goal": "Create urgency and drive enrollment"
+      },
+      {
+        "day": 12,
+        "subject": "Final 6 hours: Your automation breakthrough awaits",
+        "content_preview": "This is it - your final chance to join 2,500+ students who've transformed their businesses...",
+        "cta": "Secure Your Spot (Enrollment Closes Tonight)",
+        "goal": "Final urgency push"
+      },
+      {
+        "day": 14,
+        "subject": "Doors closed (but here's what's coming next)",
+        "content_preview": "N8N Masterclass enrollment is closed. Here's how to stay updated for the next opening...",
+        "cta": "Join the Waitlist for Next Cohort",
+        "goal": "Maintain engagement for future sales"
+      }
+    ]
+  },
+  "instagram_course_sequence": {
+    "sequence_name": "Instagram Ignited 500K System",
+    "total_emails": 5,
+    "sequence_duration": "10 days",
+    "target_conversion": "20%",
+    "emails": [
+      {
+        "day": 1,
+        "subject": "The 500K follower framework (exactly how I did it)",
+        "content_preview": "Here's the complete blueprint I used to grow from 0 to 500K Instagram followers...",
+        "cta": "Download the Complete Framework",
+        "goal": "Immediate value delivery"
+      },
+      {
+        "day": 3,
+        "subject": "Instagram algorithm changes (and how to profit from them)",
+        "content_preview": "Latest algorithm updates and how to adapt your strategy for maximum reach...",
+        "cta": "Get the Algorithm Adaptation Guide",
+        "goal": "Demonstrate ongoing value and expertise"
+      },
+      {
+        "day": 5,
+        "subject": "Content shortcuts that saved me 20 hours/week",
+        "content_preview": "Batch creation system and content repurposing strategies for maximum efficiency...",
+        "cta": "Access the Content Creation Shortcuts",
+        "goal": "Productivity and time-saving appeal"
+      },
+      {
+        "day": 7,
+        "subject": "How I make $50K/month from 500K followers (monetization secrets)",
+        "content_preview": "Revenue breakdown and monetization strategies that turn followers into customers...",
+        "cta": "Learn the Monetization Blueprint",
+        "goal": "Revenue potential demonstration"
+      },
+      {
+        "day": 10,
+        "subject": "Ready to replicate my 500K success? (Special invitation)",
+        "content_preview": "Instagram Ignited course enrollment is open. Join 1,200+ students already seeing results...",
+        "cta": "Enroll in Instagram Ignited (Limited Spots)",
+        "goal": "Course enrollment with scarcity"
+      }
+    ]
+  },
+  "ai_influencer_course_sequence": {
+    "sequence_name": "AI Influencer Creation Masterclass",
+    "total_emails": 6,
+    "sequence_duration": "12 days",
+    "target_conversion": "18%",
+    "emails": [
+      {
+        "day": 1,
+        "subject": "AI influencer making $5K/month (creation process revealed)",
+        "content_preview": "Step-by-step breakdown of how I created an AI influencer generating $5K monthly...",
+        "cta": "Get the AI Influencer Creation Guide",
+        "goal": "Hook with revenue potential"
+      },
+      {
+        "day": 3,
+        "subject": "ComfyUI workflows that create viral AI content",
+        "content_preview": "Advanced ComfyUI workflows for consistent, high-quality AI influencer content...",
+        "cta": "Download ComfyUI Workflow Pack",
+        "goal": "Technical value demonstration"
+      },
+      {
+        "day": 5,
+        "subject": "Legal and ethical AI influencer guidelines (stay compliant)",
+        "content_preview": "Complete compliance framework for ethical AI influencer creation and monetization...",
+        "cta": "Access Legal Compliance Checklist",
+        "goal": "Address concerns and build trust"
+      },
+      {
+        "day": 7,
+        "subject": "Case study: $15K in 3 months with AI influencer marketing",
+        "content_preview": "Detailed case study of successful AI influencer monetization across multiple platforms...",
+        "cta": "Read the Complete Case Study",
+        "goal": "Social proof and results demonstration"
+      },
+      {
+        "day": 9,
+        "subject": "The future of AI influencers (get ahead of the curve)",
+        "content_preview": "Industry trends and future opportunities in the AI influencer space...",
+        "cta": "Access Future Trends Report",
+        "goal": "Create FOMO and urgency"
+      },
+      {
+        "day": 12,
+        "subject": "Create your AI influencer empire (course enrollment now open)",
+        "content_preview": "AI Influencer Masterclass enrollment is live. Limited to 500 students for personalized support...",
+        "cta": "Enroll in AI Influencer Masterclass",
+        "goal": "Course enrollment with limited capacity"
+      }
+    ]
+  },
+  "comfyui_course_sequence": {
+    "sequence_name": "ComfyUI Workflows Mastery",
+    "total_emails": 5,
+    "sequence_duration": "8 days",
+    "target_conversion": "22%",
+    "emails": [
+      {
+        "day": 1,
+        "subject": "200+ ComfyUI workflows (instant download)",
+        "content_preview": "Complete collection of professional ComfyUI workflows for every use case...",
+        "cta": "Download ComfyUI Workflow Library",
+        "goal": "Immediate high-value delivery"
+      },
+      {
+        "day": 3,
+        "subject": "ComfyUI vs Automatic1111: Which should you choose?",
+        "content_preview": "Detailed comparison and when to use each platform for maximum results...",
+        "cta": "Get the Complete Comparison Guide",
+        "goal": "Educational value and positioning"
+      },
+      {
+        "day": 5,
+        "subject": "Advanced ComfyUI techniques (from beginner to pro)",
+        "content_preview": "Professional-level ComfyUI techniques used by top AI artists and creators...",
+        "cta": "Access Advanced Techniques Tutorial",
+        "goal": "Skill development appeal"
+      },
+      {
+        "day": 7,
+        "subject": "Monetize your ComfyUI skills (proven strategies)",
+        "content_preview": "How to turn ComfyUI expertise into consistent income streams...",
+        "cta": "Learn Monetization Strategies",
+        "goal": "Revenue potential demonstration"
+      },
+      {
+        "day": 8,
+        "subject": "Master ComfyUI workflows (course enrollment closing soon)",
+        "content_preview": "ComfyUI Workflows Mastery course - from basics to advanced monetization...",
+        "cta": "Enroll in ComfyUI Mastery Course",
+        "goal": "Course enrollment with urgency"
+      }
+    ]
+  },
+  "digital_products_course_sequence": {
+    "sequence_name": "Digital Products Empire Builder",
+    "total_emails": 8,
+    "sequence_duration": "16 days",
+    "target_conversion": "12%",
+    "emails": [
+      {
+        "day": 1,
+        "subject": "Digital product that generated $100K in 90 days (blueprint inside)",
+        "content_preview": "Complete breakdown of my highest-performing digital product launch...",
+        "cta": "Get the $100K Product Launch Blueprint",
+        "goal": "High-value hook with results"
+      },
+      {
+        "day": 3,
+        "subject": "7 digital product ideas that sell themselves (market research included)",
+        "content_preview": "Validated digital product ideas with built-in demand and pricing strategies...",
+        "cta": "Access Product Ideas + Market Research",
+        "goal": "Idea generation and validation"
+      },
+      {
+        "day": 5,
+        "subject": "Pricing psychology: Why $97 outsells $47 (counterintuitive data)",
+        "content_preview": "Pricing research and psychology behind optimal digital product pricing...",
+        "cta": "Download Pricing Psychology Guide",
+        "goal": "Strategic business knowledge"
+      },
+      {
+        "day": 7,
+        "subject": "Launch sequence that generated 1,247 sales in 7 days",
+        "content_preview": "Email sequence, social media strategy, and launch tactics that drove massive sales...",
+        "cta": "Get the Complete Launch Sequence",
+        "goal": "Tactical implementation guide"
+      },
+      {
+        "day": 10,
+        "subject": "Automation tools that sell your products 24/7 (while you sleep)",
+        "content_preview": "Complete automation setup for hands-off digital product sales...",
+        "cta": "Access Sales Automation Toolkit",
+        "goal": "Passive income appeal"
+      },
+      {
+        "day": 12,
+        "subject": "Customer success story: $0 to $50K in 6 months",
+        "content_preview": "Detailed case study of student who built successful digital product business...",
+        "cta": "Read the Complete Success Story",
+        "goal": "Social proof and inspiration"
+      },
+      {
+        "day": 14,
+        "subject": "Digital product empire mistakes (avoid these costly errors)",
+        "content_preview": "Common mistakes that kill digital product businesses and how to avoid them...",
+        "cta": "Get the Mistake Avoidance Checklist",
+        "goal": "Risk mitigation and authority"
+      },
+      {
+        "day": 16,
+        "subject": "Build your digital product empire (exclusive enrollment opportunity)",
+        "content_preview": "Digital Products Empire course enrollment now open for serious entrepreneurs...",
+        "cta": "Enroll in Digital Products Empire",
+        "goal": "Course enrollment with exclusivity"
+      }
+    ]
+  },
+  "automation_settings": {
+    "email_frequency": "Every 2-3 days",
+    "send_times": ["9:00 AM", "2:00 PM", "7:00 PM"],
+    "time_zones": ["EST", "PST", "GMT"],
+    "segmentation_rules": {
+      "engagement_based": "High, Medium, Low engagement segments",
+      "behavior_based": "Course interest, price sensitivity, urgency response",
+      "demographic_based": "Business type, experience level, revenue stage"
+    },
+    "a_b_testing": {
+      "subject_lines": "Test 2 variations per email",
+      "send_times": "Test optimal timing per segment",
+      "cta_buttons": "Test button copy and colors",
+      "email_length": "Test short vs detailed emails"
+    },
+    "personalization": {
+      "name_insertion": "First name in subject and greeting",
+      "course_relevance": "Match content to expressed interests",
+      "behavioral_triggers": "Send based on website behavior",
+      "geographic_relevance": "Time zone appropriate send times"
+    }
+  },
+  "tracking_metrics": {
+    "primary_kpis": {
+      "open_rate_target": "35%+",
+      "click_rate_target": "8%+", 
+      "conversion_rate_target": "15%+",
+      "unsubscribe_rate_limit": "<2%"
+    },
+    "revenue_tracking": {
+      "revenue_per_email": "$2.50+",
+      "customer_lifetime_value": "$500+",
+      "payback_period": "<30 days",
+      "roi_target": "300%+"
+    },
+    "behavioral_metrics": {
+      "email_engagement_score": "Track opens, clicks, replies",
+      "website_behavior": "Track course page visits post-email", 
+      "purchase_attribution": "Track revenue by email sequence",
+      "retention_rate": "Track repeat customers from sequences"
+    }
+  }
+}

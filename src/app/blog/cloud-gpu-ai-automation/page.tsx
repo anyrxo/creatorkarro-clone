@@ -1,82 +1,25 @@
 import React from 'react'
-import Link from 'next/link'
+import { redirect } from 'next/navigation'
 
-// Comprehensive SEO Metadata
+// ⚔️ ORYANA'S 301 REDIRECT - CLOUD GPU AI AUTOMATION ELIMINATION
+// Redirects cloud GPU automation traffic to comprehensive AI automation guide
+// Cloud infrastructure covered as part of complete automation stack
+
 export const metadata = {
-  title: "Cloud Gpu AI Automation",
-  description: "Complete guide to cloud gpu ai automation - proven strategies, tools, and techniques for 2025",
-  keywords: ["cloud", "gpu", "automation", "cloud 2025", "cloud gpu automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
-  creator: "IImagined.ai",
-  publisher: "IImagined.ai",
-  category: "Technology",
-  openGraph: {
-    title: "Cloud Gpu AI Automation",
-    description: "Complete guide to cloud gpu ai automation - proven strategies, tools, and techniques for 2025",
-    url: "https://iimagined.ai/blog/cloud-gpu-ai-automation",
-    siteName: "IImagined.ai",
-    type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.995Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["cloud", "gpu", "automation", "cloud 2025", "cloud gpu automation", "AI tools", "business growth", "productivity"],
-    images: [{
-      url: "https://iimagined.ai/images/cloud-gpu-ai-automation-og.jpg",
-      width: 1200,
-      height: 630,
-      alt: "Cloud Gpu AI Automation",
-      type: "image/jpeg"
-    }],
-    locale: "en_US"
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@iimagined_ai",
-    creator: "@iimagined_ai", 
-    title: "Cloud Gpu AI Automation",
-    description: "Complete guide to cloud gpu ai automation - proven strategies, tools, and techniques for 2025",
-    images: [{
-      url: "https://iimagined.ai/images/cloud-gpu-ai-automation-og.jpg",
-      alt: "Cloud Gpu AI Automation"
-    }]
-  },
+  title: "Cloud GPU AI Automation - Complete Infrastructure Guide",
+  description: "This content has been consolidated into our comprehensive AI automation guide featuring cloud GPU infrastructure, scalable automation systems, and enterprise deployment strategies.",
   robots: {
-    index: true,
+    index: false,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1
-    }
-  },
-  alternates: {
-    canonical: "https://iimagined.ai/blog/cloud-gpu-ai-automation"
+    noarchive: true
   }
 }
 
-export default function CloudGpuAiAutomationPage() {
-  return (
-    <div className="min-h-screen bg-dark">
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Cloud Gpu Ai Automation
-            </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              This page is being rebuilt with improved content. Please check back soon.
-            </p>
-            <Link 
-              href="/blog" 
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-            >
-              Back to Blog
-            </Link>
-          </div>
-        </div>
-      </section>
-    </div>
-  )
+// INSTANT 301 REDIRECT TO AUTHORITY PILLAR
+export default function CloudGPUAIAutomationRedirect() {
+  // Server-side redirect to authority page
+  redirect('/blog/ai-automation-guide')
+  
+  // This component will never render due to redirect
+  return null
 }

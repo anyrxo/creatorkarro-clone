@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'AI Influencers Course - Create Virtual Influencers That Make Money | AI Business Mastery',
-  description: 'Learn to create profitable AI influencers and virtual personalities. Complete course on virtual influencer business, automated content creation, and AI monetization strategies.',
+  title: 'AI Influencers Course 2025 - Create Virtual Influencers That Make Money | Virtual Personality Business | AI Content Creation & Monetization | Automated Digital Influencer System',
+  description: 'Create profitable AI influencers and virtual personalities that generate passive income. Complete course on virtual influencer business, automated content creation, AI monetization strategies, and digital brand building.',
   keywords: [
     'ai influencer course',
     'virtual influencer course',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   category: 'Education',
   classification: 'AI Business Training',
   openGraph: {
-    title: 'AI Influencers Mastery: Virtual Influencer Business Course',
-    description: 'Complete course on creating virtual AI influencers that generate passive income through automated content creation, brand partnerships, and virtual presence monetization.',
+    title: 'AI Influencers Course 2025 - Create Virtual Influencers That Make Money | Virtual Personality Business | AI Content Creation',
+    description: 'Create profitable AI influencers and virtual personalities that generate passive income. Complete course on virtual influencer business and automated content creation.',
     url: 'https://iimagined.ai/ai-influencers',
     siteName: 'IImagined',
     type: 'website',
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@anyrxo',
     creator: '@anyrxo',
-    title: 'AI Influencers Mastery: Virtual Influencer Business Course',
-    description: 'Learn to create profitable AI influencers and virtual personalities. Complete course on virtual influencer business and AI monetization strategies.',
+    title: 'AI Influencers Course 2025 - Create Virtual Influencers That Make Money | Virtual Personality Business | AI Content Creation',
+    description: 'Create profitable AI influencers and virtual personalities that generate passive income. Complete course on virtual influencer business and automated content creation.',
     images: ['https://iimagined.ai/images/ai-influencers-og.jpg']
   },
   robots: {

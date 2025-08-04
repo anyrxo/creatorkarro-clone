@@ -43,27 +43,32 @@ interface CryptoPaymentResponse {
 const PRODUCTS = {
   'instagram-ignited': {
     name: 'Instagram Ignited: 0 to 500K Followers',
-    price: 297,
+    price: 147,
     description: 'Complete Instagram growth system'
   },
   'digital-products': {
     name: 'Digital Products Masterclass',
-    price: 197,
+    price: 189,
     description: 'Learn to create profitable digital products'
   },
-  'ai-automation': {
-    name: 'AI Automation Suite',
-    price: 497,
-    description: 'Automate your workflow with AI'
+  'n8n-ai-automations': {
+    name: 'N8N AI Automations',
+    price: 129,
+    description: 'Advanced automation workflows with AI'
+  },
+  'ai-influencers': {
+    name: 'AI Influencers Mastery',
+    price: 169,
+    description: 'Create virtual AI influencers for passive income'
   },
   'comfyui': {
     name: 'ComfyUI Workflows',
-    price: 97,
+    price: 247,
     description: 'Master AI image generation'
   },
   'bundle-ig-dp': {
     name: 'Instagram + Digital Products Bundle',
-    price: 397,
+    price: 336,
     description: 'Complete growth and product creation bundle'
   }
 };

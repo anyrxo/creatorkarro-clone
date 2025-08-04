@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Digital Products Empire - AI Courses & Instagram Growth Systems | IImagined.ai',
-  description: 'Explore premium digital products including AI automation courses, Instagram growth systems, ComfyUI workflows, and N8N automation training. Build your digital product empire.',
+  title: 'Digital Products That Sell 2025 - Complete Course Ideas & Pricing Psychology | How To Create Profitable Digital Products Empire | 50+ Proven Ideas Making $10K+/Month',
+  description: 'Learn which digital products actually sell in 2025. Complete course with 50+ proven product ideas, pricing strategies, creation frameworks, and empire-building systems. Join 1,500+ successful students.',
   keywords: [
     'digital products',
     'ai courses',
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     'premium courses'
   ],
   openGraph: {
-    title: 'Digital Products Empire - Premium AI & Instagram Courses',
-    description: 'Premium digital products for AI automation, Instagram growth, and business scaling. Transform your skills and income.',
+    title: 'Digital Products That Sell 2025 - Complete Course Ideas & Pricing Psychology | 50+ Proven Ideas Making $10K+/Month',
+    description: 'Learn which digital products actually sell in 2025. Complete course with 50+ proven product ideas, pricing strategies, and empire-building systems.',
     type: 'website',
     images: [
       {
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Digital Products Empire - Premium AI & Instagram Courses',
-    description: 'Premium courses and systems for AI automation and Instagram growth mastery.',
+    title: 'Digital Products That Sell 2025 - Complete Course Ideas & Pricing Psychology | 50+ Proven Ideas',
+    description: 'Learn which digital products actually sell in 2025. Complete course with 50+ proven product ideas and pricing strategies.',
     creator: '@anyro'
   }
 }

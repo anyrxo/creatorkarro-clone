@@ -76,7 +76,7 @@ export default function DigitalProductsPage() {
     ],
     "offers": {
       "@type": "Offer",
-      "price": "497",
+      "price": "189",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "category": "Business Course",
@@ -723,7 +723,7 @@ export default function DigitalProductsPage() {
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Pricing Calculator Tool</span>
-                  <span className="text-xl font-bold text-green-400">$297</span>
+                  <span className="text-xl font-bold text-green-400">$189</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Email Sequence Library</span>
@@ -780,10 +780,26 @@ export default function DigitalProductsPage() {
                   ]
                 },
                 {
+                  name: "Whop All-Access",
+                  description: "PER MONTH",
+                  price: "$39.99",
+                  badge: "🚀 ALL 5 COURSES",
+                  features: [
+                    "All 5 complete courses",
+                    "Instagram + AI + Automation",
+                    "Monthly updates",
+                    "Community access",
+                    "Cancel anytime"
+                  ],
+                  hoverEffect: true,
+                  buttonText: "Join Whop All-Access",
+                  buttonLink: "https://whop.com/IImagined"
+                },
+                {
                   name: "Digital Products Academy",
                   description: "ONE-TIME",
-                  price: "$297",
-                  badge: "🔥 BEST VALUE",
+                  price: "$189",
+                  badge: "🔥 LIFETIME ACCESS",
                   popular: true,
                   features: [
                     "Complete proven system",
@@ -808,7 +824,7 @@ export default function DigitalProductsPage() {
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-zinc-900 rounded-2xl p-6">
                   <div className="text-2xl font-bold text-red-400 mb-2">48 HOURS</div>
-                  <p className="text-gray-300">Price increases to $497 this weekend</p>
+                  <p className="text-gray-300">Price increases to $389 this weekend</p>
                 </div>
                 <div className="bg-zinc-900 rounded-2xl p-6">
                   <div className="text-2xl font-bold text-red-400 mb-2">TONIGHT</div>
@@ -841,7 +857,7 @@ export default function DigitalProductsPage() {
                 href="#"
                 className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse"
               >
-                🚀 GET DIGITAL PRODUCTS ACADEMY - $297 🚀
+                🚀 GET DIGITAL PRODUCTS ACADEMY - $189 🚀
               </Link>
               
               <p className="text-sm text-gray-400">
@@ -1061,7 +1077,7 @@ export default function DigitalProductsPage() {
             <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-red-400 mb-3">⏰ FINAL WARNING</h3>
               <p className="text-gray-300 mb-4">
-                This $297 founder's price and $5,959 in bonuses expire at MIDNIGHT tonight. After that, you'll pay $497 without any bonuses.
+                This INSANE $189 founder's price and $5,959 in bonuses expire at MIDNIGHT tonight. After that, you'll pay $389 without any bonuses.
               </p>
               <p className="text-lg font-bold text-yellow-400">
                 Don't let another year pass trading time for money while others build digital empires!
@@ -1069,7 +1085,7 @@ export default function DigitalProductsPage() {
             </div>
             
             <Link href="#pricing" className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-8 rounded-2xl text-xl md:text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 text-center">
-              🚀 BUILD MY DIGITAL EMPIRE<br className="md:hidden" /> - $297 🚀
+              🚀 BUILD MY DIGITAL EMPIRE<br className="md:hidden" /> - $189 🚀
             </Link>
             
             <p className="text-sm text-gray-400 mb-6">
