@@ -10,7 +10,6 @@ import AnimatedText, { GradientText } from '@/components/AnimatedText'
 import ScrollAnimation, { StaggeredAnimation, CountUp } from '@/components/ScrollAnimation'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import NumberTicker from '@/components/magicui/number-ticker'
-import ShimmerButton from '@/components/magicui/shimmer-button'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
 
@@ -34,6 +33,12 @@ export default function BlogPage() {
                              post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
         return matchesSearch
       })
+    }
+
+    // If showing "All" and no search, exclude featured posts from main list to avoid duplication
+    if (selectedCategory === 'All' && !searchTerm.trim()) {
+      const featuredSlugs = featuredPosts.map(post => post.slug)
+      posts = posts.filter(post => !featuredSlugs.includes(post.slug))
     }
 
     return posts
@@ -269,15 +274,15 @@ export default function BlogPage() {
                     </div>
                     <h3 className="text-xl font-semibold text-zinc-200 mb-2">No articles found</h3>
                     <p className="text-zinc-300 mb-6">Try adjusting your search terms or filters</p>
-                    <ShimmerButton
+                    <button
                       onClick={() => {
                         setSearchTerm('')
                         setSelectedCategory('All')
                       }}
-                      className="bg-blue-600 text-white px-6 py-2 rounded-lg"
+                      className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
                     >
                       Clear filters
-                    </ShimmerButton>
+                    </button>
                   </div>
                 </div>
               ) : (
@@ -417,9 +422,9 @@ export default function BlogPage() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <ScrollAnimation animation="fade-up" delay={500}>
                     <Link href="/instagram-ignited" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-xl">
-                      <ShimmerButton className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300">
+                      <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 focus:outline-none">
                         Start Learning Today
-                      </ShimmerButton>
+                      </button>
                     </Link>
                   </ScrollAnimation>
                   
