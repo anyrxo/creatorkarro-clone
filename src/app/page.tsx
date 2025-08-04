@@ -65,31 +65,37 @@ export default function HomePage() {
     {
       id: 'instagram-ignited',
       title: 'Instagram Ignited',
-      subtitle: '0 to 500K Followers',
-      description: 'Transform your Instagram into a thriving business with viral strategies.',
+      subtitle: '0 to 500K Followers System',
+      description: 'Master the psychological triggers, viral content formulas, and growth automation that built our students over 10M followers. Turn your Instagram into a money-making machine.',
       gradient: 'from-blue-600 to-cyan-600',
       icon: 'smartphone',
-      stats: '6,000+ students',
+      stats: '6,000+ students • $2.1M+ student revenue',
+      price: '$147',
+      value: '$3,109',
       link: '/instagram-ignited'
     },
     {
       id: 'digital-products',
-      title: 'Digital Products',
-      subtitle: 'Passive Income Empire',
-      description: 'Create and sell digital products that generate income while you sleep.',
+      title: 'Digital Products Empire',
+      subtitle: 'Passive Income Mastery',
+      description: 'Create, launch, and scale digital products using our proven system. From idea to $100K/month automated business empires that work while you sleep.',
       gradient: 'from-green-600 to-emerald-600',
       icon: 'credit-card',
-      stats: '3,500+ students',
+      stats: '3,500+ students • $1.8M+ student revenue',
+      price: '$189',
+      value: '$5,959',
       link: '/digital-products'
     },
     {
       id: 'n8n-automations',
       title: 'N8N AI Automations',
-      subtitle: 'Automate Everything',
-      description: 'Build AI-powered systems that work 24/7 for your business.',
+      subtitle: 'Business Automation Mastery',
+      description: 'Build AI-powered workflows that handle everything from content creation to customer acquisition. Save 40+ hours per week with intelligent automation systems.',
       gradient: 'from-purple-600 to-pink-600',
       icon: 'bot',
-      stats: '2,000+ students',
+      stats: '2,000+ students • $1.2M+ student revenue',
+      price: '$129',
+      value: '$7,361',
       link: '/n8n-ai-automations'
     }
   ]
@@ -141,17 +147,199 @@ export default function HomePage() {
 
   return (
     <div ref={containerRef} className="bg-black overflow-hidden">
-      {/* Beautiful Hero Section */}
-      <BeautifulHero />
+      {/* Hero Section - What IImagined Is */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Animated Background */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
+          <motion.div
+            className="absolute inset-0"
+            animate={{
+              backgroundPosition: ['0% 0%', '100% 100%']
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: 'reverse'
+            }}
+            style={{
+              backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.1) 0%, transparent 50%), radial-gradient(circle at 40% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%)',
+              backgroundSize: '200% 200%'
+            }}
+          />
+          
+          {/* Floating Elements */}
+          <div className="absolute inset-0 overflow-hidden">
+            {[...Array(20)].map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-30"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                }}
+                animate={{
+                  y: [0, -100, 0],
+                  opacity: [0, 1, 0],
+                  scale: [0, 1, 0]
+                }}
+                transition={{
+                  duration: 3 + Math.random() * 2,
+                  repeat: Infinity,
+                  delay: Math.random() * 2
+                }}
+              />
+            ))}
+          </div>
+        </div>
 
-      {/* Key Features Section */}
-      <section className="relative py-20 bg-gradient-to-b from-black to-zinc-900">
-        <motion.div 
-          className="absolute inset-0"
-          style={{ y: backgroundY }}
-        >
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="max-w-6xl mx-auto"
+          >
+            {/* Brand Identity */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+              className="mb-8"
+            >
+              <div className="inline-flex items-center gap-4 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm border border-blue-500/30 mb-8">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">II</span>
+                </div>
+                <span className="text-white font-semibold tracking-wide">IIMAGINED</span>
+              </div>
+            </motion.div>
+
+            {/* Main Headline */}
+            <div className="mb-8">
+              <BlurIn
+                word="Where Creators"
+                className="text-6xl md:text-8xl lg:text-9xl font-black text-white mb-4 tracking-tight"
+                duration={1}
+              />
+              <div className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 tracking-tight">
+                <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  <WordRotate
+                    words={["Become Empires", "Build Legacies", "Scale Dreams", "Make Millions"]}
+                    className="text-6xl md:text-8xl lg:text-9xl font-black"
+                    duration={3000}
+                  />
+                </span>
+              </div>
+            </div>
+
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+              className="text-xl md:text-2xl lg:text-3xl text-zinc-200 mb-12 leading-relaxed max-w-4xl mx-auto font-medium"
+            >
+              The ultimate creator education platform. Master AI automation, viral growth strategies, and digital business systems that turned 
+              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent font-bold"> 13,000+ students</span> into 
+              <span className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent font-bold"> profitable entrepreneurs</span>
+            </motion.p>
+
+            {/* Key Stats */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 0.8 }}
+              className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 max-w-4xl mx-auto"
+            >
+              {[
+                { value: '13K+', label: 'Active Students' },
+                { value: '10M+', label: 'Followers Built' },
+                { value: '$5M+', label: 'Student Revenue' },
+                { value: '4.9★', label: 'Average Rating' }
+              ].map((stat, index) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 1.2 + index * 0.1, duration: 0.5 }}
+                  className="text-center"
+                >
+                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-zinc-400 font-medium">{stat.label}</div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.4, duration: 0.8 }}
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            >
+              <Link href="/instagram-ignited" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full">
+                <ShimmerButton
+                  className="shadow-2xl text-lg px-8 py-4"
+                  shimmerColor="#ffffff"
+                  shimmerSize="0.1em"
+                  background="linear-gradient(135deg, #2563eb, #9333ea, #ec4899)"
+                  borderRadius="9999px"
+                >
+                  <span className="font-bold flex items-center gap-2">
+                    Start Your Empire <ChevronRight className="w-5 h-5" />
+                  </span>
+                </ShimmerButton>
+              </Link>
+              
+              <Link href="/story" className="group flex items-center gap-2 text-zinc-300 hover:text-white transition-colors">
+                <span className="font-medium">Our Story</span>
+                <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </motion.div>
+
+            {/* Scroll Indicator */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 2, duration: 1 }}
+              className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            >
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="flex flex-col items-center gap-2 text-zinc-400"
+              >
+                <span className="text-sm font-medium">Discover More</span>
+                <ChevronRight className="w-5 h-5 rotate-90" />
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* What Makes IImagined Different */}
+      <section className="relative py-32 bg-gradient-to-b from-black to-zinc-900">
+        <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
-        </motion.div>
+          <motion.div
+            className="absolute inset-0"
+            animate={{
+              backgroundPosition: ['0% 0%', '100% 100%']
+            }}
+            transition={{
+              duration: 15,
+              repeat: Infinity,
+              repeatType: 'reverse'
+            }}
+            style={{
+              backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(59, 130, 246, 0.05) 0%, transparent 50%), radial-gradient(circle at 70% 60%, rgba(147, 51, 234, 0.05) 0%, transparent 50%)',
+              backgroundSize: '200% 200%'
+            }}
+          />
+        </div>
 
         <div className="relative z-10 container mx-auto px-4">
           <motion.div
@@ -160,39 +348,81 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="max-w-6xl mx-auto"
           >
-            <div className="flex justify-center mb-8">
-              <AnimatedGradientText>
-                 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
-                <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
-                  Introducing our proven system
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <div className="flex justify-center mb-8">
+                <AnimatedGradientText>
+                  <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
+                  <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
+                    The IImagined Difference
+                  </span>
+                  <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                </AnimatedGradientText>
+              </div>
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight">
+                Beyond Traditional
+                <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  Creator Education
                 </span>
-                <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-              </AnimatedGradientText>
+              </h2>
+              <p className="text-xl md:text-2xl text-zinc-300 max-w-4xl mx-auto leading-relaxed">
+                We don't just teach content creation. We build business empires through AI automation, 
+                advanced growth psychology, and systems that scale beyond what you ever imagined possible.
+              </p>
             </div>
+
+            {/* Core Pillars */}
             <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-              {features.map((feature, index) => (
+              {[
+                {
+                  icon: 'rocket',
+                  title: 'AI-Powered Automation',
+                  description: 'Master cutting-edge AI tools and automation systems that work 24/7, from content generation to customer acquisition',
+                  gradient: 'from-blue-500 to-cyan-500'
+                },
+                {
+                  icon: 'analytics',  
+                  title: 'Viral Psychology Mastery',
+                  description: 'Understand the deep psychological triggers that make content go viral and audiences convert into loyal customers',
+                  gradient: 'from-purple-500 to-pink-500'
+                },
+                {
+                  icon: 'diamond',
+                  title: 'Empire-Scale Systems',
+                  description: 'Build businesses that generate millions, not just followers. Real systems for real wealth creation',
+                  gradient: 'from-emerald-500 to-teal-500'
+                }
+              ].map((pillar, index) => (
                 <motion.div
-                  key={feature.title}
+                  key={pillar.title}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.15, duration: 0.6 }}
                   whileHover={{ y: -8, scale: 1.02 }}
-                  className="text-center group cursor-pointer"
+                  className="group cursor-pointer relative"
                 >
-                  <motion.div
-                    className="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 group-hover:border-blue-400/40 group-hover:bg-blue-500/20 transition-all duration-300"
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                  >
-                    <PainPointIcon 
-                      type={feature.icon as any} 
-                      size={32} 
-                      className="text-blue-400 group-hover:text-blue-300 transition-colors duration-300" 
-                      color="currentColor"
-                    />
-                  </motion.div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">{feature.title}</h3>
-                  <p className="text-zinc-300 leading-relaxed text-sm md:text-base group-hover:text-zinc-200 transition-colors duration-300">{feature.description}</p>
+                  {/* Background Glow */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${pillar.gradient} opacity-0 group-hover:opacity-10 rounded-3xl blur-xl transition-all duration-500`} />
+                  
+                  <div className="relative bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 group-hover:border-zinc-700 rounded-3xl p-8 h-full transition-all duration-300">
+                    <motion.div
+                      className={`inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-gradient-to-br ${pillar.gradient} bg-opacity-20 group-hover:scale-110 transition-all duration-300`}
+                    >
+                      <PainPointIcon 
+                        type={pillar.icon as any} 
+                        size={36} 
+                        className="text-white group-hover:scale-110 transition-transform duration-300" 
+                        color="currentColor"
+                      />
+                    </motion.div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-zinc-300 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                      {pillar.title}
+                    </h3>
+                    <p className="text-zinc-300 leading-relaxed text-base group-hover:text-zinc-200 transition-colors duration-300">
+                      {pillar.description}
+                    </p>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -214,22 +444,32 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+            <div className="flex justify-center mb-8">
+              <AnimatedGradientText>
+                <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
+                <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
+                  Our Flagship Programs
+                </span>
+                <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+              </AnimatedGradientText>
+            </div>
+            <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">
               <BlurIn
-                word="Transform Your"
-                className="text-5xl md:text-7xl font-bold text-white"
+                word="Choose Your"
+                className="text-5xl md:text-7xl font-black text-white tracking-tight"
                 duration={0.8}
               />
               <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 <WordRotate
-                  words={["Creative Journey", "Digital Empire", "Content Strategy", "Revenue Streams"]}
-                  className="text-5xl md:text-7xl font-bold"
+                  words={["Empire Path", "Success Route", "Growth Journey", "Wealth Strategy"]}
+                  className="text-5xl md:text-7xl font-black tracking-tight"
                   duration={3000}
                 />
               </div>
             </h1>
-            <p className="text-xl text-zinc-200 max-w-2xl mx-auto">
-              Master the tools and strategies that turned thousands of creators into successful entrepreneurs
+            <p className="text-xl md:text-2xl text-zinc-200 max-w-4xl mx-auto leading-relaxed">
+              Each program is designed to take you from where you are now to building a thriving, 
+              automated business empire. Choose your starting point.
             </p>
           </motion.div>
 
@@ -244,7 +484,8 @@ export default function HomePage() {
               >
                 <Link href={course.link} className="block magnetic-button h-full focus:outline-none focus:ring-4 focus:ring-blue-500/50" aria-label={`View ${course.title} course details`}>
                   <Interactive3DCard>
-                    <div className="text-center space-y-4 h-full flex flex-col justify-between p-8">
+                    <div className="text-center space-y-6 h-full flex flex-col justify-between p-8">
+                      {/* Icon */}
                       <motion.div 
                         className="flex justify-center"
                         animate={{ 
@@ -261,10 +502,30 @@ export default function HomePage() {
                         {course.icon === 'credit-card' && <CreditCard size={64} className="text-green-400" />}
                         {course.icon === 'bot' && <Bot size={64} className="text-purple-400" />}
                       </motion.div>
-                      <h3 className="text-2xl font-bold text-white">{course.title}</h3>
-                      <p className="text-sm text-zinc-300 uppercase tracking-wider">{course.subtitle}</p>
-                      <p className="text-zinc-200">{course.description}</p>
-                      <div className="pt-4">
+
+                      {/* Title & Subtitle */}
+                      <div>
+                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">{course.title}</h3>
+                        <p className="text-sm text-zinc-300 uppercase tracking-wider font-semibold">{course.subtitle}</p>
+                      </div>
+
+                      {/* Description */}
+                      <p className="text-zinc-200 text-sm leading-relaxed flex-grow">{course.description}</p>
+
+                      {/* Stats */}
+                      <div className="space-y-4">
+                        <p className="text-xs text-zinc-400 font-medium">{course.stats}</p>
+                        
+                        {/* Pricing */}
+                        <div className="flex items-center justify-center gap-3">
+                          <span className="text-3xl font-bold text-white">{course.price}</span>
+                          <div className="text-right">
+                            <span className="text-sm text-zinc-400 line-through">{course.value}</span>
+                            <div className="text-xs text-green-400 font-semibold">Save {Math.round((1 - parseInt(course.price.replace('$', '')) / parseInt(course.value.replace('$', ''))) * 100)}%</div>
+                          </div>
+                        </div>
+
+                        {/* Progress Bar */}
                         <motion.div
                           className={`h-1 bg-gradient-to-r ${course.gradient} rounded-full`}
                           initial={{ scaleX: 0 }}
@@ -272,12 +533,13 @@ export default function HomePage() {
                           viewport={{ once: true }}
                           transition={{ duration: 0.8, delay: 0.5 }}
                         />
-                        <p className="text-sm text-zinc-300 mt-4">{course.stats}</p>
+                        
+                        {/* Popular Badge */}
                         {index === 0 && (
-                          <div className="mt-4 flex justify-center">
+                          <div className="flex justify-center">
                             <AnimatedGradientText className="text-xs">
-                              <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
-                                Most Popular
+                              <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent font-semibold">
+                                🔥 Most Popular Choice
                               </span>
                             </AnimatedGradientText>
                           </div>
