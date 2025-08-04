@@ -381,8 +381,8 @@ export default function ComfyUIWorkflowsPage() {
   const pricingOptions = [
     {
       name: "Trial & Error Method",
-      description: "BUT COSTS YOU EVERYTHING",
-      price: "$0",
+      description: "LOST REVENUE",
+      price: "$10,000+",
       features: [
         "Years of failed launches",
         "Wasted time and money",
@@ -405,9 +405,8 @@ export default function ComfyUIWorkflowsPage() {
         "Private community access",
         "60-day money-back guarantee"
       ],
-      badge: "🔥 POPULAR - LIFETIME ACCESS 🔥",
-      badgeColor: "bg-green-500",
-      popular: true
+      badge: "🔥 LIFETIME ACCESS",
+      badgeColor: "bg-green-500"
     },
     {
       name: "Whop All-Access",
@@ -421,8 +420,9 @@ export default function ComfyUIWorkflowsPage() {
         "Community access",
         "Cancel anytime"
       ],
-      badge: "🚀 ALL 5 COURSES",
+      badge: "🚀 POPULAR - ALL 5 COURSES",
       badgeColor: "bg-purple-500",
+      popular: true,
       hoverEffect: true,
       buttonText: "Join Whop All-Access",
       buttonLink: "https://whop.com/IImagined"

@@ -868,8 +868,8 @@ export default function N8NAutomationsPage() {
               options={[
                 {
                   name: "Trial & Error Method",
-                  description: "BUT COSTS YOU EVERYTHING",
-                  price: "$0",
+                  description: "LOST REVENUE",
+                  price: "$10,000+",
                   features: [
                     "Years of failed launches",
                     "Wasted time and money", 
@@ -883,8 +883,7 @@ export default function N8NAutomationsPage() {
                   name: "N8N AI Automations",
                   description: "ONE-TIME",
                   price: "$129",
-                  badge: "🔥 POPULAR - LIFETIME ACCESS",
-                  popular: true,
+                  badge: "🔥 LIFETIME ACCESS",
                   features: [
                     "Complete system mastery",
                     "Unlimited workflow creation",
@@ -897,8 +896,9 @@ export default function N8NAutomationsPage() {
                   name: "Whop All-Access",
                   description: "PER MONTH",
                   price: "$39.99",
-                  badge: "🚀 ALL 5 COURSES",
+                  badge: "🚀 POPULAR - ALL 5 COURSES",
                   badgeColor: "bg-purple-500",
+                  popular: true,
                   features: [
                     "All 5 complete courses",
                     "Instagram + AI + Automation",

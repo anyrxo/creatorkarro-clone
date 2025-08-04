@@ -772,7 +772,6 @@ export default function DigitalProductsPage() {
                   description: "ONE-TIME",
                   price: "$189",
                   badge: "🔥 LIFETIME ACCESS",
-                  popular: true,
                   features: [
                     "Complete proven system",
                     "89% success rate",
@@ -785,8 +784,9 @@ export default function DigitalProductsPage() {
                   name: "Whop All-Access",
                   description: "PER MONTH",
                   price: "$39.99",
-                  badge: "🚀 ALL 5 COURSES",
+                  badge: "🚀 POPULAR - ALL 5 COURSES",
                   badgeColor: "bg-purple-500",
+                  popular: true,
                   features: [
                     "All 5 complete courses",
                     "Instagram + AI + Automation",

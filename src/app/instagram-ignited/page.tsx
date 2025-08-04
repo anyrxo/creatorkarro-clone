@@ -922,8 +922,8 @@ export default function InstagramIgnitedPage() {
               {/* Trial & Error Method - Disabled */}
               <div className="bg-zinc-900 border border-red-500 rounded-2xl p-6 text-center opacity-60">
                 <h4 className="text-lg font-bold mb-4 text-red-400">Trial & Error Method</h4>
-                <div className="text-2xl font-black mb-4 text-red-400">$0</div>
-                <div className="text-sm text-gray-400 mb-6">BUT COSTS YOU EVERYTHING</div>
+                <div className="text-2xl font-black mb-4 text-red-400">$10,000+</div>
+                <div className="text-sm text-gray-400 mb-6">LOST REVENUE</div>
                 <ul className="text-left space-y-2 text-gray-300 text-sm">
                   <li>• Years of failed launches</li>
                   <li>• Wasted time and money</li>
@@ -936,10 +936,10 @@ export default function InstagramIgnitedPage() {
                 </div>
               </div>
 
-              {/* Instagram Ignited - POPULAR */}
+              {/* Instagram Ignited */}
               <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 border-2 border-green-500 rounded-2xl p-6 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 bg-green-500 text-black text-sm font-bold py-2">
-                  🔥 POPULAR - LIFETIME ACCESS 🔥
+                  🔥 LIFETIME ACCESS 🔥
                 </div>
                 <div className="mt-8">
                   <h4 className="text-lg font-bold mb-4 text-green-400">Instagram Ignited</h4>
@@ -959,9 +959,9 @@ export default function InstagramIgnitedPage() {
               </div>
               
               {/* Whop All-Access */}
-              <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-2 border-purple-500 rounded-2xl p-6 text-center relative overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-2 border-purple-500 rounded-2xl p-6 text-center relative overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer animate-pulse">
                 <div className="absolute top-0 left-0 right-0 bg-purple-500 text-white text-sm font-bold py-2">
-                  🚀 ALL 5 COURSES 🚀
+                  🚀 POPULAR - ALL 5 COURSES 🚀
                 </div>
                 <div className="mt-8">
                   <h4 className="text-lg font-bold mb-4 text-purple-400">Whop All-Access</h4>
