@@ -18,6 +18,11 @@ export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
 
   const filteredPosts = useMemo(() => {
+    // Just return all posts for now to ensure they show
+    console.log('All blog posts:', allBlogPosts.length)
+    console.log('Selected category:', selectedCategory)
+    console.log('Search term:', searchTerm)
+    
     let posts = allBlogPosts
 
     // Apply category filter
@@ -35,6 +40,7 @@ export default function BlogPage() {
       })
     }
 
+    console.log('Final filtered posts:', posts.length)
     return posts
   }, [searchTerm, selectedCategory])
 
@@ -319,104 +325,57 @@ export default function BlogPage() {
                   <div className="text-center mb-4 text-zinc-400 text-sm">
                     Displaying {filteredPosts.length} articles in grid below
                   </div>
+                  
+                  {/* Force show first 10 posts as test */}
+                  <div className="text-center mb-4 text-red-400 text-sm">
+                    TEST: Total allBlogPosts: {allBlogPosts.length} | Filtered: {filteredPosts.length}
+                  </div>
+                  
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {filteredPosts.map((post, index) => (
-                      <div key={post.slug}>
-                        <Link href={`/blog/${post.slug}`}>
-                          <div className="h-full bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10 group relative overflow-hidden">
-                            <div className="h-full flex flex-col relative z-10">
-                              {/* Category Badge */}
-                              <div className="flex items-center justify-between mb-4">
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 backdrop-blur-sm">
-                                  <Tag className="w-3 h-3 text-blue-400" />
-                                  <span className="text-xs text-blue-300 font-semibold uppercase tracking-wide">{post.category}</span>
-                                </div>
-                                {post.featured && (
-                                  <div className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border border-yellow-500/30 backdrop-blur-sm">
-                                    <TrendingUp className="w-3 h-3 text-yellow-400 flex-shrink-0" />
-                                    <span className="text-xs text-yellow-300 font-semibold hidden sm:inline">FEATURED</span>
-                                    <span className="text-xs text-yellow-300 sm:hidden"></span>
-                                  </div>
-                                )}
-                              </div>
-
-                              {/* Title */}
-                              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors line-clamp-2 leading-tight">
-                                {post.title}
-                              </h3>
-
-                              {/* Description */}
-                              <p className="text-zinc-200 text-sm mb-6 line-clamp-3 leading-relaxed flex-grow">
-                                {post.description}
-                              </p>
-
-                              {/* Meta Info */}
-                              <div className="flex items-center justify-between mb-4">
-                                <div className="flex items-center gap-3 text-xs text-zinc-300">
-                                  <div className="flex items-center gap-1">
-                                    <Calendar className="w-3 h-3" />
-                                    <span>{post.date}</span>
-                                  </div>
-                                  <div className="flex items-center gap-1">
-                                    <Clock className="w-3 h-3" />
-                                    <span>{post.readTime} min</span>
-                                  </div>
-                                </div>
-                                <div className="flex items-center gap-1 text-blue-400 group-hover:text-blue-300 transition-colors">
-                                  <span className="text-xs font-medium">Read</span>
-                                  <ChevronRight className="w-3 h-3 transform group-hover:translate-x-1 transition-transform" />
-                                </div>
-                              </div>
-
-                              {/* Engagement Metrics */}
-                              <div className="flex items-center justify-between pt-3 border-t border-gray-700/50">
-                                {(() => {
-                                  const metrics = calculateBlogMetrics(post.date, post.slug)
-                                  return (
-                                    <>
-                                      <div className="flex items-center gap-4 text-xs text-zinc-300">
-                                        <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer">
-                                          <Eye className="w-3 h-3" />
-                                          <span>{metrics.views}</span>
-                                        </div>
-                                        <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer">
-                                          <Heart className="w-3 h-3" />
-                                          <span>{metrics.likes}</span>
-                                        </div>
-                                        <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer">
-                                          <MessageCircle className="w-3 h-3" />
-                                          <span>{metrics.comments}</span>
-                                        </div>
-                                      </div>
-                                      <div className="flex items-center gap-1 text-zinc-300 hover:text-purple-400 transition-colors cursor-pointer">
-                                        <Share2 className="w-3 h-3" />
-                                        <span className="text-xs">{metrics.shares}</span>
-                                      </div>
-                                    </>
-                                  )
-                                })()}
-                              </div>
-                              
-                              {/* Tags */}
-                              {post.tags.length > 0 && (
-                                <div className="flex flex-wrap gap-2 pt-3 mt-3 border-t border-zinc-700/30">
-                                  {post.tags.slice(0, 3).map((tag, tagIndex) => (
-                                    <span key={tagIndex} className="text-xs bg-zinc-700/30 text-zinc-200 px-2 py-1 rounded-md hover:bg-zinc-600/30 transition-colors border border-zinc-600/30">
-                                      #{tag}
-                                    </span>
-                                  ))}
-                                  {post.tags.length > 3 && (
-                                    <span className="text-xs text-zinc-400">+{post.tags.length - 3} more</span>
-                                  )}
-                                </div>
+                    {(filteredPosts.length > 0 ? filteredPosts : allBlogPosts.slice(0, 12)).map((post, index) => (
+                      <article key={post.slug} className="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:border-blue-500 transition-colors">
+                        <Link href={`/blog/${post.slug}`} className="block group">
+                          <div className="space-y-4">
+                            {/* Category */}
+                            <div className="flex items-center justify-between">
+                              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-500/30 text-xs text-blue-300 font-semibold">
+                                <Tag className="w-3 h-3" />
+                                {post.category}
+                              </span>
+                              {post.featured && (
+                                <span className="text-xs text-yellow-300 bg-yellow-500/20 px-2 py-1 rounded-full">FEATURED</span>
                               )}
                             </div>
 
-                            {/* Gradient Overlay Effect */}
-                            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                            {/* Title */}
+                            <h3 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                              {post.title}
+                            </h3>
+
+                            {/* Description */}
+                            <p className="text-zinc-300 text-sm line-clamp-3">
+                              {post.description}
+                            </p>
+
+                            {/* Meta */}
+                            <div className="flex items-center justify-between text-xs text-zinc-400">
+                              <div className="flex items-center gap-3">
+                                <span className="flex items-center gap-1">
+                                  <Calendar className="w-3 h-3" />
+                                  {post.date}
+                                </span>
+                                <span className="flex items-center gap-1">
+                                  <Clock className="w-3 h-3" />
+                                  {post.readTime} min
+                                </span>
+                              </div>
+                              <span className="text-blue-400 flex items-center gap-1">
+                                Read <ChevronRight className="w-3 h-3" />
+                              </span>
+                            </div>
                           </div>
                         </Link>
-                      </div>
+                      </article>
                     ))}
                   
                 </div>
