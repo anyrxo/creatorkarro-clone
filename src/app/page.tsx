@@ -207,11 +207,10 @@ export default function HomePage() {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="mb-8"
             >
-              <div className="inline-flex items-center gap-4 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm border border-blue-500/30 mb-8">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">II</span>
-                </div>
-                <span className="text-white font-semibold tracking-wide">MAGINED</span>
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm border border-blue-500/30 mb-8">
+                <span className="text-white font-semibold tracking-wide">
+                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined
+                </span>
               </div>
             </motion.div>
 
@@ -221,18 +220,17 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
-                className="text-6xl md:text-8xl lg:text-9xl font-black text-white mb-4 tracking-tight"
+                className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 tracking-tight leading-tight"
               >
-                Where Creators
+                Where Creators{' '}
+                <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  <WordRotate
+                    words={["Become Empires", "Build Legacies", "Scale Dreams", "Make Millions"]}
+                    className="text-5xl md:text-7xl lg:text-8xl font-black"
+                    duration={3000}
+                  />
+                </span>
               </motion.h1>
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7, duration: 0.8 }}
-                className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 tracking-tight bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
-              >
-                Become Empires
-              </motion.div>
             </div>
 
             {/* Subtitle */}
@@ -461,8 +459,12 @@ export default function HomePage() {
                 className="text-5xl md:text-7xl font-black text-white tracking-tight"
                 duration={0.8}
               />
-              <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent text-5xl md:text-7xl font-black tracking-tight">
-                Empire Path
+              <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <WordRotate
+                  words={["Empire Path", "Success Route", "Growth Journey", "Wealth Strategy"]}
+                  className="text-5xl md:text-7xl font-black tracking-tight"
+                  duration={3000}
+                />
               </div>
             </h1>
             <p className="text-xl md:text-2xl text-zinc-200 max-w-4xl mx-auto leading-relaxed">
@@ -923,8 +925,12 @@ export default function HomePage() {
                 className="text-6xl md:text-8xl font-bold text-white"
                 duration={1}
               />
-              <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent text-6xl md:text-8xl font-bold">
-                Create?
+              <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <WordRotate
+                  words={["Create?", "Scale?", "Grow?", "Succeed?"]}
+                  className="text-6xl md:text-8xl font-bold"
+                  duration={2500}
+                />
               </div>
             </div>
             <p className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto">
