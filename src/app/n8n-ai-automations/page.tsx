@@ -883,6 +883,7 @@ export default function N8NAutomationsPage() {
                   name: "N8N AI Automations",
                   description: "ONE-TIME",
                   price: "$129",
+                  originalPrice: "$7,490",
                   badge: "LIFETIME ACCESS",
                   features: [
                     "Save 40+ hours/week with automated workflows",

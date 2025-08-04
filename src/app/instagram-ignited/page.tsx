@@ -944,7 +944,7 @@ export default function InstagramIgnitedPage() {
                 <div className="mt-8">
                   <h4 className="text-lg font-bold mb-4 text-green-400">Instagram Ignited</h4>
                   <div className="mb-2">
-                    <span className="text-sm text-gray-400 line-through">$3,109</span>
+                    <span className="text-sm text-gray-400 line-through">$3,256</span>
                   </div>
                   <div className="text-3xl font-black mb-4 text-green-400">$147</div>
                   <div className="text-sm text-gray-400 mb-6">ONE-TIME PAYMENT</div>

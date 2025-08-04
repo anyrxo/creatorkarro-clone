@@ -771,6 +771,7 @@ export default function DigitalProductsPage() {
                   name: "Digital Products Academy",
                   description: "ONE-TIME",
                   price: "$189",
+                  originalPrice: "$6,148",
                   badge: "LIFETIME ACCESS",
                   features: [
                     "Replace $50K consultant fees with DIY mastery",

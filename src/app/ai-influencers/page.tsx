@@ -449,7 +449,7 @@ export default function AIInfluencersPage() {
       name: "Complete Course System",
       description: "Self-paced comprehensive training",
       price: "$169",
-      originalPrice: "$3,000",
+      originalPrice: "$3,169",
       features: [
         "Build your first AI model in 7 days",
         "Generate $5K/month without showing your face",

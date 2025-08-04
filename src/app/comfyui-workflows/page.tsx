@@ -396,7 +396,7 @@ export default function ComfyUIWorkflowsPage() {
       name: "Complete Workflow Mastery",
       description: "Self-paced comprehensive training",
       price: "$247",
-      originalPrice: "$1,500",
+      originalPrice: "$1,747",
       features: [
         "Cut image creation time from 4 hours to 15 minutes",
         "Build $12K/month AI image service business",
