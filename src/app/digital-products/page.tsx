@@ -180,7 +180,7 @@ export default function DigitalProductsPage() {
       <div ref={heroAnimation.elementRef}>
         <HeroSection
           badge="DIGITAL EMPIRE BUILDER"
-          badgeColor="bg-gradient-to-r from-green-600/30 to-emerald-600/30 text-green-300 border border-green-500/50"
+          badgeColor="bg-gradient-to-r from-green-600/20 to-emerald-600/20 text-green-300 px-4 py-2 rounded-full"
           title="Turn Your <span className='text-green-400'>Knowledge</span> Into a <span className='text-green-400'>$500K+ Digital Empire</span> Without Ads or Followers"
           description="The complete Digital Products Academy that shows you how to create, launch, and scale high-converting digital products that generate consistent $10K-$50K months on autopilot."
           ctaText="Get Digital Products Mastery"
@@ -212,7 +212,7 @@ export default function DigitalProductsPage() {
           >
             <SectionHeader
               badge="BRUTAL REALITY"
-              badgeColor="bg-zinc-900 border border-red-500 text-red-400"
+              badgeColor="bg-red-500/10 text-red-400 px-4 py-2 rounded-full"
               isVisible={problemAnimation.isVisible}
               title="You're Trapped in the <span className='text-red-400'>Trading Time for Money</span> Prison"
               subtitle="While others build digital empires that work 24/7, you're stuck in the outdated hustle..."
@@ -424,7 +424,7 @@ export default function DigitalProductsPage() {
           >
             <SectionHeader isVisible={resultsAnimation.isVisible}
               badge="PROVEN RESULTS"
-              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
               title="The Digital Product Revolution is <span className='text-green-400'>Here</span>"
               subtitle="While you're trading time for money, smart entrepreneurs are building passive income empires."
             />
@@ -469,7 +469,7 @@ export default function DigitalProductsPage() {
           >
             <SectionHeader
               badge="IS THIS YOU?"
-              badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
+              badgeColor="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full"
               isVisible={whoForAnimation.isVisible}
               title="Who This System is <span className='text-blue-400'>Perfect</span> For"
               subtitle="See if you match the profile of our most successful students."
@@ -513,7 +513,7 @@ export default function DigitalProductsPage() {
           >
             <SectionHeader
               badge="SUCCESS STORIES"
-              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
               title="Real People, <span className='text-green-400'>Real Results</span>"
               isVisible={studentResultsAnimation.isVisible}
               subtitle="These entrepreneurs went from broke to building digital empires..."
@@ -657,7 +657,7 @@ export default function DigitalProductsPage() {
           >
             <SectionHeader
               badge="INCREDIBLE BONUSES"
-              badgeColor="bg-zinc-900 border border-yellow-500 text-yellow-400"
+              badgeColor="bg-yellow-500/10 text-yellow-400 px-4 py-2 rounded-full"
               isVisible={bonusAnimation.isVisible}
               title="Get $3,794 in <span className='text-yellow-400'>Premium Bonuses</span> FREE"
               subtitle="These bonuses alone are worth more than most courses. But you get them FREE today."
@@ -732,7 +732,7 @@ export default function DigitalProductsPage() {
           >
             <SectionHeader
               badge="INSANE VALUE"
-              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
               isVisible={pricingAnimation.isVisible}
               title="This is <span className='text-green-400'>RIDICULOUS</span>"
               subtitle="Let's do the math on what you're actually getting today vs. learning this the hard way..."
@@ -915,7 +915,7 @@ export default function DigitalProductsPage() {
           >
             <SectionHeader
               badge="SUCCESS STORIES"
-              badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
+              badgeColor="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full"
               title="What <span className='text-blue-400'>Digital Product</span> Students Are Saying..."
               isVisible={testimonialsAnimation.isVisible}
               subtitle="Real entrepreneurs sharing their transformation stories."
@@ -971,7 +971,7 @@ export default function DigitalProductsPage() {
           >
             <SectionHeader
               badge="FAQ"
-              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
               isVisible={faqAnimation.isVisible}
               title="Frequently Asked <span className='text-green-400'>Questions</span>"
               subtitle="Everything you need to know about building digital product empires."

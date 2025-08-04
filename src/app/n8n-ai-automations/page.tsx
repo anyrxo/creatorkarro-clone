@@ -199,7 +199,7 @@ export default function N8NAutomationsPage() {
       <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection
           badge="AI AUTOMATION EMPIRE"
-          badgeColor="bg-gradient-to-r from-purple-600/30 to-blue-600/30 text-purple-300 border border-purple-500/50"
+          badgeColor="bg-gradient-to-r from-purple-600/20 to-blue-600/20 text-purple-300 px-4 py-2 rounded-full"
           title="Stop Trading <span className='text-red-400'>Time For Money</span> — Build <span className='text-purple-400'>AI-Powered Automation Empire</span> That Works While You Sleep"
           description="The complete N8N AI Automation System that lets non-technical entrepreneurs build million-dollar workflows without writing a single line of code. Save 40+ hours/week with intelligent automation."
           ctaText="Get Complete N8N Mastery System"
@@ -231,7 +231,7 @@ export default function N8NAutomationsPage() {
           >
             <SectionHeader
               badge="BRUTAL REALITY"
-              badgeColor="bg-zinc-900 border border-red-500 text-red-400"
+              badgeColor="bg-red-500/10 text-red-400 px-4 py-2 rounded-full"
               isVisible={problemAnimation.isVisible}
               title="You're Drowning in <span className='text-red-400'>Manual Tasks</span>"
               subtitle="While your competitors scale with AI automation, you're stuck in the stone age of manual labor..."
@@ -450,7 +450,7 @@ export default function N8NAutomationsPage() {
           >
             <SectionHeader
               badge="RESULTS"
-              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
               isVisible={resultsAnimation.isVisible}
               title="The Automation Revolution is <span className='text-green-400'>Happening NOW</span>"
               subtitle="While you're manually grinding, smart entrepreneurs are building AI empires that scale infinitely."
@@ -582,7 +582,7 @@ export default function N8NAutomationsPage() {
           >
             <SectionHeader
               badge="IS THIS YOU?"
-              badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
+              badgeColor="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full"
               isVisible={whoForAnimation.isVisible}
               title="Who This System is <span className='text-blue-400'>Perfect</span> For"
               subtitle="See if you match the profile of our most successful students."
@@ -684,7 +684,7 @@ export default function N8NAutomationsPage() {
           >
             <SectionHeader
               badge="COMPLETE SYSTEM"
-              badgeColor="bg-zinc-900 border border-purple-500 text-purple-400"
+              badgeColor="bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full"
               isVisible={modulesAnimation.isVisible}
               title="Everything You Need to Build <span className='text-purple-400'>Million-Dollar Workflows</span>"
               subtitle="The most comprehensive N8N automation training ever created."
@@ -770,7 +770,7 @@ export default function N8NAutomationsPage() {
           >
             <SectionHeader
               badge="INSANE BONUSES"
-              badgeColor="bg-zinc-900 border border-yellow-500 text-yellow-400"
+              badgeColor="bg-yellow-500/10 text-yellow-400 px-4 py-2 rounded-full"
               isVisible={bonusAnimation.isVisible}
               title="Get $4,291 in <span className='text-yellow-400'>Premium Bonuses</span> FREE"
               subtitle="These bonuses alone are worth more than most courses. But you get them FREE today."
@@ -845,7 +845,7 @@ export default function N8NAutomationsPage() {
           >
             <SectionHeader
               badge="INSANE VALUE"
-              badgeColor="bg-zinc-900 border border-green-500 text-green-400"
+              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
               isVisible={pricingAnimation.isVisible}
               title="This is <span className='text-green-400'>RIDICULOUS</span>"
               subtitle="Let's do the math on what you're actually getting today vs. hiring this expertise..."
@@ -1029,7 +1029,7 @@ export default function N8NAutomationsPage() {
           >
             <SectionHeader
               badge="SUCCESS STORIES"
-              badgeColor="bg-zinc-900 border border-blue-500 text-blue-400"
+              badgeColor="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full"
               isVisible={testimonialsAnimation.isVisible}
               title="What <span className='text-blue-400'>N8N Students</span> Are Saying..."
               subtitle="Real entrepreneurs sharing their automation transformation stories."
@@ -1085,7 +1085,7 @@ export default function N8NAutomationsPage() {
           >
             <SectionHeader
               badge="FAQ"
-              badgeColor="bg-zinc-900 border border-purple-500 text-purple-400"
+              badgeColor="bg-purple-500/10 text-purple-400 px-4 py-2 rounded-full"
               isVisible={faqAnimation.isVisible}
               title="Frequently Asked <span className='text-purple-400'>Questions</span>"
               subtitle="Everything you need to know about mastering N8N automation."

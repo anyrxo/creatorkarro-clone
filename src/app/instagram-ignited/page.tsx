@@ -222,7 +222,7 @@ export default function InstagramIgnitedPage() {
       <div ref={heroAnimation.elementRef}>
         <HeroSection
           badge="INSTAGRAM EMPIRE BUILDER"
-          badgeColor="bg-gradient-to-r from-red-600/30 to-orange-600/30 text-red-300 border border-red-500/50"
+          badgeColor="bg-gradient-to-r from-red-600/20 to-orange-600/20 text-red-300 px-4 py-2 rounded-full"
           title="Your Complete <span className='text-blue-400'>System</span> to <span className='text-blue-400'>Grow an Audience</span> and Turn It Into <span className='text-blue-400'>Income</span>"
           description="The ONLY proven system that takes you from Instagram ghost to algorithm dominator in 90 days or less. Now includes Digital Product Academy and Viral Carousels Mastery in one bundle."
           ctaText="Claim Instagram Ignited Bundle"

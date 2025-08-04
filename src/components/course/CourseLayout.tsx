@@ -425,7 +425,7 @@ interface SectionHeaderProps {
 export function SectionHeader({ badge, badgeColor = 'text-gray-400', title, description, subtitle, isVisible }: SectionHeaderProps) {
   return (
     <div className={`text-center mb-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
-      {badge && <p className={`text-sm ${badgeColor} uppercase tracking-wider mb-4`}>{badge}</p>}
+      {badge && <div className={`inline-block text-sm ${badgeColor} uppercase tracking-wider mb-4 font-semibold`}>{badge}</div>}
       <h2 
         className="text-4xl md:text-5xl font-bold mb-6"
         dangerouslySetInnerHTML={typeof title === 'string' ? { __html: title } : undefined}
