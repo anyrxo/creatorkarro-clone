@@ -451,12 +451,12 @@ export default function AIInfluencersPage() {
       price: "$169",
       originalPrice: "$3,000",
       features: [
-        "Complete 8-module system ($1,997 value)",
-        "All exclusive bonuses ($1,003 value)",
-        "Private community & 1-on-1 call",
-        "Lifetime updates & new content",
-        "60-day money-back guarantee",
-        "Start making money in 30 days"
+        "Build your first AI model in 7 days",
+        "Generate $5K/month without showing your face",
+        "Replace $2K/month content creator costs",
+        "Avoid $25K in failed AI experiments",
+        "Scale to multiple $10K+ virtual personalities",
+        "$3,000 worth of AI tools & templates included"
       ],
       badge: "🔥 LIFETIME ACCESS",
       badgeColor: "bg-red-500"
@@ -467,11 +467,14 @@ export default function AIInfluencersPage() {
       price: "$39.99",
       originalPrice: "$881",
       features: [
-        "All 5 complete courses",
-        "Instagram + AI + Automation",
-        "Monthly updates",
-        "Community access",
-        "Cancel anytime"
+        "Complete $88K/month business system",
+        "Instagram: 0 to 500K followers proven method", 
+        "AI Influencers: $20K/month passive income",
+        "Digital Products: $50K launch blueprints",
+        "ComfyUI: Professional AI image business",
+        "Live coaching calls + private community",
+        "New courses added monthly (5+ planned)",
+        "Cancel anytime, keep what you downloaded"
       ],
       badge: "🚀 POPULAR - ALL 5 COURSES",
       badgeColor: "bg-purple-500",

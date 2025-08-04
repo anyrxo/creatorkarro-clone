@@ -398,12 +398,12 @@ export default function ComfyUIWorkflowsPage() {
       price: "$247",
       originalPrice: "$1,500",
       features: [
-        "50+ professional workflows ($197 value)",
-        "6 comprehensive modules ($797 value)",
-        "All exclusive bonuses ($506 value)",
-        "Lifetime updates and new workflows",
-        "Private community access",
-        "60-day money-back guarantee"
+        "Cut image creation time from 4 hours to 15 minutes",
+        "Build $12K/month AI image service business",
+        "Replace $3K/month designer costs with automation",
+        "Avoid $8K in failed AI tool subscriptions",
+        "Generate 100+ images per hour with batch processing",
+        "$1,500 worth of workflows & models included"
       ],
       badge: "🔥 LIFETIME ACCESS",
       badgeColor: "bg-green-500"
@@ -414,11 +414,14 @@ export default function ComfyUIWorkflowsPage() {
       price: "$39.99",
       originalPrice: "$881",
       features: [
-        "All 5 complete courses",
-        "Instagram + AI + Automation",
-        "Monthly updates",
-        "Community access",
-        "Cancel anytime"
+        "Complete $88K/month business system",
+        "Instagram: 0 to 500K followers proven method", 
+        "AI Influencers: $20K/month passive income",
+        "Digital Products: $50K launch blueprints",
+        "ComfyUI: Professional AI image business",
+        "Live coaching calls + private community",
+        "New courses added monthly (5+ planned)",
+        "Cancel anytime, keep what you downloaded"
       ],
       badge: "🚀 POPULAR - ALL 5 COURSES",
       badgeColor: "bg-purple-500",

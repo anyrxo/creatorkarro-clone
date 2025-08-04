@@ -773,11 +773,11 @@ export default function DigitalProductsPage() {
                   price: "$189",
                   badge: "🔥 LIFETIME ACCESS",
                   features: [
-                    "Complete proven system",
-                    "89% success rate",
-                    "Lifetime access & updates",
-                    "$5,959 worth of bonuses",
-                    "Build scalable passive income"
+                    "Replace $50K consultant fees with DIY mastery",
+                    "Launch your first $5K product in 30 days",
+                    "Proven system saves 200+ hours of research",
+                    "Avoid $10K in costly launch mistakes",
+                    "$5,959 worth of templates & automation tools"
                   ]
                 },
                 {
@@ -788,11 +788,14 @@ export default function DigitalProductsPage() {
                   badgeColor: "bg-purple-500",
                   popular: true,
                   features: [
-                    "All 5 complete courses",
-                    "Instagram + AI + Automation",
-                    "Monthly updates",
-                    "Community access",
-                    "Cancel anytime"
+                    "Complete $88K/month business system",
+                    "Instagram: 0 to 500K followers proven method", 
+                    "AI Influencers: $20K/month passive income",
+                    "Digital Products: $50K launch blueprints",
+                    "ComfyUI: Professional AI image business",
+                    "Live coaching calls + private community",
+                    "New courses added monthly (5+ planned)",
+                    "Cancel anytime, keep what you downloaded"
                   ],
                   hoverEffect: true,
                   buttonText: "Join Whop All-Access",

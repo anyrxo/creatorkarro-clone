@@ -885,11 +885,12 @@ export default function N8NAutomationsPage() {
                   price: "$129",
                   badge: "🔥 LIFETIME ACCESS",
                   features: [
-                    "Complete system mastery",
-                    "Unlimited workflow creation",
-                    "Lifetime access & updates",
-                    "$7,361 worth of bonuses",
-                    "Build automation business"
+                    "Save 40+ hours/week with automated workflows",
+                    "Build $10K/month automation agency",
+                    "50+ proven templates that make money",
+                    "Zero-code system anyone can master",
+                    "Lifetime updates + $7,361 bonus vault",
+                    "Replace $5K/month virtual assistants"
                   ]
                 },
                 {
@@ -900,11 +901,14 @@ export default function N8NAutomationsPage() {
                   badgeColor: "bg-purple-500",
                   popular: true,
                   features: [
-                    "All 5 complete courses",
-                    "Instagram + AI + Automation",
-                    "Monthly updates",
-                    "Community access",
-                    "Cancel anytime"
+                    "Complete $88K/month business system",
+                    "Instagram: 0 to 500K followers proven method",
+                    "AI Influencers: $20K/month passive income",
+                    "Digital Products: $50K launch blueprints",
+                    "ComfyUI: Professional AI image business",
+                    "Live coaching calls + private community",
+                    "New courses added monthly (5+ planned)",
+                    "Cancel anytime, keep what you downloaded"
                   ],
                   hoverEffect: true,
                   buttonText: "Join Whop All-Access",

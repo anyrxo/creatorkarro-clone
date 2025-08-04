@@ -949,11 +949,12 @@ export default function InstagramIgnitedPage() {
                   <div className="text-3xl font-black mb-4 text-green-400">$147</div>
                   <div className="text-sm text-gray-400 mb-6">ONE-TIME PAYMENT</div>
                   <ul className="text-left space-y-2 text-gray-300 text-sm">
-                    <li>• Complete system education</li>
-                    <li>• Proven viral strategies</li>
-                    <li>• Lifetime access</li>
-                    <li>• $3,109 worth of bonuses</li>
-                    <li>• Results guaranteed</li>
+                    <li>• Skip 2+ years of trial & error</li>
+                    <li>• Gain 10K+ followers in 90 days or less</li>
+                    <li>• Replace $5K/month agency costs with DIY system</li>
+                    <li>• Avoid $15K in failed ad spend</li>
+                    <li>• Generate first $3K in brand deals within 60 days</li>
+                    <li>• $3,109 worth of templates & automation</li>
                   </ul>
                 </div>
               </div>
@@ -971,11 +972,14 @@ export default function InstagramIgnitedPage() {
                   <div className="text-3xl font-black mb-4 text-purple-400">$39.99</div>
                   <div className="text-sm text-gray-400 mb-6">PER MONTH</div>
                   <ul className="text-left space-y-2 text-gray-300 text-sm mb-6">
-                    <li>• All 5 complete courses</li>
-                    <li>• Instagram + AI + Automation</li>
-                    <li>• Monthly updates</li>
-                    <li>• Community access</li>
-                    <li>• Cancel anytime</li>
+                    <li>• Complete $88K/month business system</li>
+                    <li>• Instagram: 0 to 500K followers proven method</li>
+                    <li>• AI Influencers: $20K/month passive income</li>
+                    <li>• Digital Products: $50K launch blueprints</li>
+                    <li>• ComfyUI: Professional AI image business</li>
+                    <li>• Live coaching calls + private community</li>
+                    <li>• New courses added monthly (5+ planned)</li>
+                    <li>• Cancel anytime, keep what you downloaded</li>
                   </ul>
                   <Link
                     href="https://whop.com/IImagined"
