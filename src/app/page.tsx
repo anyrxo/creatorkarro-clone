@@ -211,17 +211,20 @@ export default function HomePage() {
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
                   <span className="text-white font-bold text-sm">II</span>
                 </div>
-                <span className="text-white font-semibold tracking-wide">IIMAGINED</span>
+                <span className="text-white font-semibold tracking-wide">MAGINED</span>
               </div>
             </motion.div>
 
             {/* Main Headline */}
             <div className="mb-8">
-              <BlurIn
-                word="Where Creators"
+              <motion.h1
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
                 className="text-6xl md:text-8xl lg:text-9xl font-black text-white mb-4 tracking-tight"
-                duration={1}
-              />
+              >
+                Where Creators
+              </motion.h1>
               <div className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 tracking-tight">
                 <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   <WordRotate
