@@ -94,7 +94,7 @@ export default function StoryPage() {
               <div className="grid md:grid-cols-3 gap-6 md:gap-8 text-center">
                 <div className={`p-4 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 transition-all duration-300 hover-lift scroll-fade-up ${statsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
                   <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
-                    <NumberTicker value={13} />K+
+                    <NumberTicker value={4} />K+
                   </div>
                   <p className="text-zinc-300 font-medium">Active Students</p>
                 </div>
@@ -165,7 +165,7 @@ export default function StoryPage() {
               duration={0.8}
             />
             <p className="text-lg md:text-xl text-zinc-200 mb-8 leading-relaxed">
-              Join 13,000+ creators who have already transformed their passion into profitable businesses using my proven systems.
+              Join 4,000+ students who have already transformed their passion into profitable businesses using my proven systems.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm md:text-base text-zinc-200">
               <div className="flex items-center gap-2">

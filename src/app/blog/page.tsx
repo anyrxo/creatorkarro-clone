@@ -400,7 +400,7 @@ export default function BlogPage() {
                   stagger={30}
                   delay={300}
                 >
-                  Join 12,000+ creators getting exclusive strategies, tools, and behind-the-scenes insights delivered straight to their inbox.
+                  Join our community of 4,000+ students getting exclusive strategies, tools, and behind-the-scenes insights for building profitable creator businesses.
                 </AnimatedText>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

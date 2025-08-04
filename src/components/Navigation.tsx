@@ -43,7 +43,7 @@ export default function Navigation() {
     { name: 'Contact', href: '/contact' },
   ]
 
-  const allNavigation = [...mainNavigation, { name: 'Login', href: '/login' }]
+  const allNavigation = [...mainNavigation, { name: 'Join Whop 🚀', href: 'https://whop.com/anyrxo', external: true }]
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-xl border-b border-zinc-800 glass-premium">
@@ -113,13 +113,15 @@ export default function Navigation() {
             </div>
           </nav>
 
-          {/* Member Login - Far Right */}
+          {/* Whop Community - Far Right */}
           <div className="hidden md:block">
             <Link
-              href="/login"
-              className="nav-pill px-6 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] backdrop-blur-sm border-zinc-700 hover:border-blue-500/50"
+              href="https://whop.com/anyrxo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-pill px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] backdrop-blur-sm border-blue-500/50 hover:border-blue-400/50 font-semibold"
             >
-              LOGIN
+              JOIN WHOP 🚀
             </Link>
           </div>
 
@@ -202,8 +204,13 @@ export default function Navigation() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200"
+                    className={`block px-4 py-2 text-sm font-medium transition-colors duration-200 ${
+                      item.external 
+                        ? 'text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-semibold text-center hover:from-blue-500 hover:to-purple-500' 
+                        : 'text-gray-300 hover:text-white'
+                    }`}
                     onClick={() => setIsMenuOpen(false)}
+                    {...(item.external && { target: '_blank', rel: 'noopener noreferrer' })}
                   >
                     {item.name}
                   </Link>
