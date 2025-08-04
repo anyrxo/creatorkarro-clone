@@ -224,18 +224,18 @@ export default function HomePage() {
                 >
                   Where Creators{' '}
                 </motion.span>
-                <motion.span
+                <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7, duration: 0.8 }}
-                  className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+                  className="inline-block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
                 >
                   <WordRotate
                     words={["Become Empires", "Build Legacies", "Scale Dreams", "Make Millions"]}
-                    className="text-5xl md:text-7xl lg:text-8xl font-black"
+                    className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
                     duration={3000}
                   />
-                </motion.span>
+                </motion.div>
               </div>
             </div>
 

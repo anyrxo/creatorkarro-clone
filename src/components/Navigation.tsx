@@ -71,7 +71,9 @@ export default function Navigation() {
               height={40}
               className="w-10 h-10 rounded-full"
             />
-            <span className="text-xl font-bold whitespace-nowrap">IImagined</span>
+            <span className="text-xl font-bold whitespace-nowrap">
+              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined
+            </span>
           </Link>
 
           {/* Desktop Navigation - Centered with flex-grow */}
