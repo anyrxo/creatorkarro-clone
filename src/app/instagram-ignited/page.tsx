@@ -878,37 +878,37 @@ export default function InstagramIgnitedPage() {
               
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">10 Core Modules</span>
-                  <span className="text-xl font-bold text-green-400">$1,297</span>
+                  <span className="text-lg">10 Core Modules ($97-147 each)</span>
+                  <span className="text-xl font-bold text-green-400">$1,217</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">365 Days Content Ideas</span>
-                  <span className="text-xl font-bold text-green-400">$247</span>
+                  <span className="text-xl font-bold text-green-400">$497</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Viral Reel Templates</span>
+                  <span className="text-lg">Viral Reel Templates (25 formats)</span>
+                  <span className="text-xl font-bold text-green-400">$297</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-lg">Caption Swipe File (500+ captions)</span>
                   <span className="text-xl font-bold text-green-400">$197</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Caption Swipe File</span>
+                  <span className="text-lg">Influencer Outreach Scripts</span>
                   <span className="text-xl font-bold text-green-400">$147</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Influencer Outreach Scripts</span>
-                  <span className="text-xl font-bold text-green-400">$127</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Monthly Algorithm Updates</span>
-                  <span className="text-xl font-bold text-green-400">$397</span>
+                  <span className="text-lg">Monthly Algorithm Updates (1 Year)</span>
+                  <span className="text-xl font-bold text-green-400">$597</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Private Mastermind Access</span>
-                  <span className="text-xl font-bold text-green-400">$697</span>
+                  <span className="text-xl font-bold text-green-400">$997</span>
                 </div>
                 
                 <div className="flex justify-between items-center py-6 bg-green-900/20 rounded-lg px-6 mt-6">
                   <span className="text-2xl font-bold">TOTAL VALUE:</span>
-                  <span className="text-3xl font-black text-green-400">$3,109</span>
+                  <span className="text-3xl font-black text-green-400">$3,949</span>
                 </div>
               </div>
             </div>
@@ -944,7 +944,7 @@ export default function InstagramIgnitedPage() {
                 <div className="mt-8">
                   <h4 className="text-lg font-bold mb-4 text-green-400">Instagram Ignited</h4>
                   <div className="mb-2">
-                    <span className="text-sm text-gray-400 line-through">$3,256</span>
+                    <span className="text-sm text-gray-400 line-through">$3,949</span>
                   </div>
                   <div className="text-3xl font-black mb-4 text-green-400">$147</div>
                   <div className="text-sm text-gray-400 mb-6">ONE-TIME PAYMENT</div>
@@ -954,7 +954,7 @@ export default function InstagramIgnitedPage() {
                     <li>• Replace $5K/month agency costs with DIY system</li>
                     <li>• Avoid $15K in failed ad spend</li>
                     <li>• Generate first $3K in brand deals within 60 days</li>
-                    <li>• $3,109 worth of templates & automation</li>
+                    <li>• Save $3,802! Complete $3,949 system for just $147</li>
                   </ul>
                 </div>
               </div>

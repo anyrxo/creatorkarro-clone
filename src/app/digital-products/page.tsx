@@ -714,37 +714,37 @@ export default function DigitalProductsPage() {
               
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">8 Core Modules</span>
-                  <span className="text-xl font-bold text-green-400">$1,577</span>
+                  <span className="text-lg">8 Core Modules ($97-197 each)</span>
+                  <span className="text-xl font-bold text-green-400">$1,168</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">50+ Product Templates</span>
-                  <span className="text-xl font-bold text-green-400">$797</span>
+                  <span className="text-xl font-bold text-green-400">$497</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Pricing Calculator Tool</span>
-                  <span className="text-xl font-bold text-green-400">$189</span>
+                  <span className="text-xl font-bold text-green-400">$297</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Email Sequence Library</span>
-                  <span className="text-xl font-bold text-green-400">$697</span>
+                  <span className="text-lg">Email Sequence Library (100+ templates)</span>
+                  <span className="text-xl font-bold text-green-400">$397</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">Launch Checklist System</span>
                   <span className="text-xl font-bold text-green-400">$197</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Analytics Templates</span>
-                  <span className="text-xl font-bold text-green-400">$397</span>
+                  <span className="text-lg">Analytics & Tracking Templates</span>
+                  <span className="text-xl font-bold text-green-400">$297</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Private Mastermind</span>
-                  <span className="text-xl font-bold text-green-400">$1,997</span>
+                  <span className="text-lg">Private Mastermind Access (1 Year)</span>
+                  <span className="text-xl font-bold text-green-400">$997</span>
                 </div>
                 
                 <div className="flex justify-between items-center py-6 bg-green-900/20 rounded-lg px-6 mt-6">
                   <span className="text-2xl font-bold">TOTAL VALUE:</span>
-                  <span className="text-3xl font-black text-green-400">$5,959</span>
+                  <span className="text-3xl font-black text-green-400">$3,850</span>
                 </div>
               </div>
             </div>
@@ -771,14 +771,14 @@ export default function DigitalProductsPage() {
                   name: "Digital Products Academy",
                   description: "ONE-TIME",
                   price: "$189",
-                  originalPrice: "$6,148",
+                  originalPrice: "$3,850",
                   badge: "LIFETIME ACCESS",
                   features: [
                     "Replace $50K consultant fees with DIY mastery",
                     "Launch your first $5K product in 30 days",
                     "Proven system saves 200+ hours of research",
                     "Avoid $10K in costly launch mistakes",
-                    "$5,959 worth of templates & automation tools"
+                    "Save $3,661! Complete $3,850 system for just $189"
                   ]
                 },
                 {

@@ -826,37 +826,37 @@ export default function N8NAutomationsPage() {
               
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">8 Core Modules</span>
-                  <span className="text-xl font-bold text-green-400">$1,479</span>
+                  <span className="text-lg">8 Core Modules ($97-197 each)</span>
+                  <span className="text-xl font-bold text-green-400">$1,168</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">100+ Workflow Templates</span>
-                  <span className="text-xl font-bold text-green-400">$997</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">AI Prompt Library</span>
+                  <span className="text-lg">100+ Ready-Made Workflow Templates</span>
                   <span className="text-xl font-bold text-green-400">$497</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Client Service Toolkit</span>
-                  <span className="text-xl font-bold text-green-400">$1,297</span>
+                  <span className="text-lg">AI Prompt Library (500+ prompts)</span>
+                  <span className="text-xl font-bold text-green-400">$297</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Analytics Dashboard</span>
+                  <span className="text-lg">Client Service Toolkit (Business-in-a-box)</span>
                   <span className="text-xl font-bold text-green-400">$697</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Integration Guides</span>
+                  <span className="text-lg">Advanced Analytics Dashboard</span>
                   <span className="text-xl font-bold text-green-400">$397</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Private Community</span>
-                  <span className="text-xl font-bold text-green-400">$1,997</span>
+                  <span className="text-lg">Integration Setup Guides (100+ tools)</span>
+                  <span className="text-xl font-bold text-green-400">$197</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
+                  <span className="text-lg">Private Mastermind Community (1 Year)</span>
+                  <span className="text-xl font-bold text-green-400">$797</span>
                 </div>
                 
                 <div className="flex justify-between items-center py-6 bg-green-900/20 rounded-lg px-6 mt-6">
                   <span className="text-2xl font-bold">TOTAL VALUE:</span>
-                  <span className="text-3xl font-black text-green-400">$7,361</span>
+                  <span className="text-3xl font-black text-green-400">$4,050</span>
                 </div>
               </div>
             </div>
@@ -883,14 +883,14 @@ export default function N8NAutomationsPage() {
                   name: "N8N AI Automations",
                   description: "ONE-TIME",
                   price: "$129",
-                  originalPrice: "$7,490",
+                  originalPrice: "$4,050",
                   badge: "LIFETIME ACCESS",
                   features: [
                     "Save 40+ hours/week with automated workflows",
                     "Build $10K/month automation agency",
                     "50+ proven templates that make money",
                     "Zero-code system anyone can master",
-                    "Lifetime updates + $7,361 bonus vault",
+                    "Save $3,921! Complete $4,050 system for just $129",
                     "Replace $5K/month virtual assistants"
                   ]
                 },
