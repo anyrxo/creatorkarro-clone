@@ -22,6 +22,29 @@ import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
+import { Rocket, Video, Bot, Users, Zap, Target, Shield, AlertTriangle, Gem, TrendingUp, Flame, CheckCircle, DollarSign, Phone } from 'lucide-react'
+
+// Icon mapping function
+const getIcon = (iconName: string, className?: string) => {
+  const iconProps = { className: className || "w-6 h-6", strokeWidth: 2 }
+  const icons: { [key: string]: JSX.Element } = {
+    rocket: <Rocket {...iconProps} />,
+    video: <Video {...iconProps} />,
+    bot: <Bot {...iconProps} />,
+    users: <Users {...iconProps} />,
+    zap: <Zap {...iconProps} />,
+    target: <Target {...iconProps} />,
+    shield: <Shield {...iconProps} />,
+    alertTriangle: <AlertTriangle {...iconProps} />,
+    gem: <Gem {...iconProps} />,
+    trendingUp: <TrendingUp {...iconProps} />,
+    flame: <Flame {...iconProps} />,
+    checkCircle: <CheckCircle {...iconProps} />,
+    dollarSign: <DollarSign {...iconProps} />,
+    phone: <Phone {...iconProps} />
+  }
+  return icons[iconName] || <Target {...iconProps} />
+}
 
 const courseStructuredData = generateCourseStructuredData(
   'AI Influencers Mastery Course',
@@ -324,37 +347,37 @@ export default function AIInfluencersPage() {
   // Define bonuses data
   const bonuses = [
     {
-      icon: "🚀",
+      icon: "rocket",
       title: "AI Model Library",
       description: "50+ pre-trained AI models ready to use",
       value: "$197"
     },
     {
-      icon: "🎬",
+      icon: "video",
       title: "Content Template Vault",
       description: "1000+ proven content templates",
       value: "$147"
     },
     {
-      icon: "🤖",
+      icon: "bot",
       title: "Automation Scripts",
       description: "Complete automation toolkit",
       value: "$127"
     },
     {
-      icon: "👥",
+      icon: "users",
       title: "Private Mastermind",
       description: "Exclusive community access",
       value: "$147"
     },
     {
-      icon: "📞",
+      icon: "phone",
       title: "1-on-1 Strategy Call",
       description: "Personal consultation with me",
       value: "$197"
     },
     {
-      icon: "⚡",
+      icon: "zap",
       title: "Fast-Track Checklist",
       description: "30-day implementation roadmap",
       value: "$97"
@@ -500,7 +523,7 @@ export default function AIInfluencersPage() {
       {/* Hero Section */}
       <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection
-          badge="🎯 LIMITED TIME OFFER: Price increasing soon"
+          badge="LIMITED TIME OFFER: Price increasing soon"
           badgeColor="bg-yellow-600/30 text-yellow-300"
           title={<>Build Your <span className="text-pink-400">AI Influencer Empire</span> And Make <span className="text-pink-400">$10K/Month</span> Without Showing Your Face</>}
           description={<>The complete system to create, grow, and monetize <span className="text-pink-300">AI-powered virtual models</span></>}
@@ -733,7 +756,7 @@ export default function AIInfluencersPage() {
             {bonuses.map((bonus, index) => (
               <BonusCard
                 key={index}
-                icon={bonus.icon}
+                icon={getIcon(bonus.icon)}
                 title={bonus.title}
                 description={bonus.description}
                 value={bonus.value}
@@ -839,7 +862,10 @@ export default function AIInfluencersPage() {
           {/* Risk Reversal */}
           <div className={`text-center mt-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-8 max-w-3xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4 text-green-400">🛡️ 60-Day "Build Your Empire" Guarantee</h3>
+              <h3 className="text-2xl font-bold mb-4 text-green-400 flex items-center justify-center gap-2">
+                <Shield className="w-6 h-6" />
+                60-Day "Build Your Empire" Guarantee
+              </h3>
               <p className="text-gray-300 mb-4">
                 Try the AI Influencer Empire system for 60 full days. If you don't see real progress building your first AI influencer and generating income within 60 days, I'll refund every penny.
               </p>
@@ -948,28 +974,43 @@ export default function AIInfluencersPage() {
             <div className={`text-center scroll-fade-up ${urgencyAnimation.isVisible ? 'visible' : ''}`}>
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-400">
-                  ⚠️ <TypingAnimation
-                    text="This Offer Won't Last Forever"
-                    className="text-4xl md:text-5xl font-bold text-red-400 inline"
-                    duration={100}
-                  />
+                  <div className="flex items-center justify-center gap-2">
+                    <AlertTriangle className="w-8 h-8 text-red-400" />
+                    <TypingAnimation
+                      text="This Offer Won't Last Forever"
+                      className="text-4xl md:text-5xl font-bold text-red-400 inline"
+                      duration={100}
+                    />
+                  </div>
                 </h2>
                 
                 <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 mb-8 card-hover">
                   <h3 className="text-2xl font-bold mb-4 text-red-300">Why I'm Limiting This Offer</h3>
                   <div className="grid md:grid-cols-2 gap-6 text-left">
                     <div>
-                      <h4 className="font-bold text-white mb-2">🎯 Quality Control</h4>
+                      <h4 className="font-bold text-white mb-2 flex items-center gap-2">
+                        <Target className="w-5 h-5" />
+                        Quality Control
+                      </h4>
                       <p className="text-gray-300 mb-4">I personally review every student's progress and provide 1-on-1 guidance. Too many students would compromise the quality of support.</p>
                       
-                      <h4 className="font-bold text-white mb-2">💎 Exclusivity Protection</h4>
+                      <h4 className="font-bold text-white mb-2 flex items-center gap-2">
+                        <Gem className="w-5 h-5" />
+                        Exclusivity Protection
+                      </h4>
                       <p className="text-gray-300">If everyone has access to these exact strategies, the market becomes saturated. Limited access keeps the advantage for our community.</p>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white mb-2">🚀 Early Adopter Advantage</h4>
+                      <h4 className="font-bold text-white mb-2 flex items-center gap-2">
+                        <Rocket className="w-5 h-5" />
+                        Early Adopter Advantage
+                      </h4>
                       <p className="text-gray-300 mb-4">AI influencers are still new. Early adopters get the biggest market share before mainstream adoption.</p>
                       
-                      <h4 className="font-bold text-white mb-2">📈 Rising Costs</h4>
+                      <h4 className="font-bold text-white mb-2 flex items-center gap-2">
+                        <TrendingUp className="w-5 h-5" />
+                        Rising Costs
+                      </h4>
                       <p className="text-gray-300">As we add more content and tools, the value increases. Early members lock in the current price forever.</p>
                     </div>
                   </div>
@@ -988,13 +1029,16 @@ export default function AIInfluencersPage() {
                     borderRadius="9999px"
                   >
                     <span className="text-xl md:text-2xl font-bold px-8 py-4 text-center block">
-                      🔥 SECURE YOUR SPOT NOW<br className="md:hidden" /> - $<NumberTicker value={169} className="inline" /> 🔥
+                      SECURE YOUR SPOT NOW<br className="md:hidden" /> - $<NumberTicker value={169} className="inline" />
                     </span>
                   </ShimmerButton>
                 </Link>
 
                 <p className="text-sm text-green-400 mt-4 font-bold">
-                  ✅ Lifetime access + 60-day money-back guarantee
+                  <div className="flex items-center justify-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    Lifetime access + 60-day money-back guarantee
+                  </div>
                 </p>
               </div>
             </div>
