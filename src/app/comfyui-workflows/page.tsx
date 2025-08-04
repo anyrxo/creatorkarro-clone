@@ -848,7 +848,7 @@ export default function ComfyUIWorkflowsPage() {
               </div>
             </h3>
             <p className="text-xl text-gray-400 mb-8">Join creators mastering professional AI workflows and building profitable services</p>
-            <Link href="#packages">
+            <Link href="#packages" className="inline-block">
               <ShimmerButton
                 className="shadow-2xl"
                 shimmerColor="#ffffff"

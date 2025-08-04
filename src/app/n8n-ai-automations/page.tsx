@@ -456,7 +456,7 @@ export default function N8NAutomationsPage() {
 
           <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
             <p className="text-lg md:text-xl text-gray-400 mb-8">Ready to join the automation revolution?</p>
-            <Link href="#pricing">
+            <Link href="#pricing" className="inline-block">
               <ShimmerButton
                 className="shadow-2xl"
                 shimmerColor="#ffffff"
@@ -1211,7 +1211,7 @@ export default function N8NAutomationsPage() {
               </p>
             </div>
             
-            <Link href="#pricing">
+            <Link href="#pricing" className="inline-block">
               <ShimmerButton
                 className="shadow-2xl mb-4"
                 shimmerColor="#ffffff"
