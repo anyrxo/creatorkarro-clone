@@ -259,7 +259,11 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
             <div className={`text-6xl font-bold mb-2 ${option.disabled ? 'text-gray-500' : option.popular ? 'text-pink-400' : 'text-white'}`}>
               {option.price}
             </div>
-            <p className={option.disabled ? 'text-gray-500' : 'text-gray-300'}>One-time payment, lifetime access</p>
+            <p className={option.disabled ? 'text-gray-500' : 'text-gray-300'}>
+              {option.disabled ? 'Lost time and money' : 
+               option.description === 'PER MONTH' ? 'Monthly subscription, cancel anytime' : 
+               'One-time payment, lifetime access'}
+            </p>
           </div>
 
           <div className="space-y-3 text-left mb-8">
