@@ -433,32 +433,34 @@ export default function AIInfluencersPage() {
   // Define pricing options
   const pricingOptions = [
     {
-      name: "Agency Service",
-      description: "Hire us to build your AI influencer",
-      price: "$5,000",
-      originalPrice: "$10,000",
+      name: "Business Coach",
+      description: "PER MONTH",
+      price: "$5,000+",
       features: [
-        "We build everything for you",
-        "Professional AI model creation",
-        "Complete content automation setup",
-        "Platform optimization & launch",
-        "3 months hands-on management"
+        "Generic business advice",
+        "No AI-specific knowledge",
+        "Expensive ongoing costs",
+        "One-size-fits-all approach",
+        "No technical implementation"
       ],
       disabled: true
     },
     {
-      name: "Done-With-You Program",
-      description: "1-on-1 coaching + implementation",
-      price: "$1,497",
-      originalPrice: "$2,997",
+      name: "Complete Course System",
+      description: "Self-paced comprehensive training",
+      price: "$169",
+      originalPrice: "$3,000",
       features: [
-        "Weekly 1-on-1 coaching calls",
-        "Personal implementation support",
-        "Custom strategy development",
-        "Direct access to me via Slack",
-        "Priority community support"
+        "Complete 8-module system ($1,997 value)",
+        "All exclusive bonuses ($1,003 value)",
+        "Private community & 1-on-1 call",
+        "Lifetime updates & new content",
+        "60-day money-back guarantee",
+        "Start making money in 30 days"
       ],
-      disabled: true
+      badge: "🔥 POPULAR - LIFETIME ACCESS 🔥",
+      badgeColor: "bg-red-500",
+      popular: true
     },
     {
       name: "Whop All-Access",
@@ -477,23 +479,6 @@ export default function AIInfluencersPage() {
       hoverEffect: true,
       buttonText: "Join Whop All-Access",
       buttonLink: "https://whop.com/IImagined"
-    },
-    {
-      name: "Complete Course System",
-      description: "Self-paced comprehensive training",
-      price: "$169",
-      originalPrice: "$3,000",
-      features: [
-        "Complete 8-module system ($1,997 value)",
-        "All exclusive bonuses ($1,003 value)",
-        "Private community & 1-on-1 call",
-        "Lifetime updates & new content",
-        "60-day money-back guarantee",
-        "Start making money in 30 days"
-      ],
-      badge: "🔥 LIFETIME ACCESS 🔥",
-      badgeColor: "bg-red-500",
-      popular: true
     }
   ]
 

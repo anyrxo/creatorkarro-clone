@@ -380,32 +380,34 @@ export default function ComfyUIWorkflowsPage() {
   // Define pricing options
   const pricingOptions = [
     {
-      name: "Done-For-You Service",
-      description: "We create custom workflows for you",
-      price: "$2,497",
-      originalPrice: "$5,000",
+      name: "Business Coach",
+      description: "PER MONTH",
+      price: "$5,000+",
       features: [
-        "Custom workflow development",
-        "Personal setup and optimization",
-        "3 months of implementation support",
-        "Direct access to workflow experts",
-        "Priority feature requests"
+        "Generic business advice",
+        "No ComfyUI expertise",
+        "Expensive ongoing costs",
+        "One-size-fits-all approach",
+        "No technical workflows"
       ],
       disabled: true
     },
     {
-      name: "VIP Mentorship",
-      description: "1-on-1 training + implementation",
-      price: "$997",
-      originalPrice: "$1,997",
+      name: "Complete Workflow Mastery",
+      description: "Self-paced comprehensive training",
+      price: "$247",
+      originalPrice: "$1,500",
       features: [
-        "Weekly 1-on-1 mentoring calls",
-        "Personal workflow customization",
-        "Business strategy development",
-        "Direct Slack access",
-        "Portfolio review and optimization"
+        "50+ professional workflows ($197 value)",
+        "6 comprehensive modules ($797 value)",
+        "All exclusive bonuses ($506 value)",
+        "Lifetime updates and new workflows",
+        "Private community access",
+        "60-day money-back guarantee"
       ],
-      disabled: true
+      badge: "🔥 POPULAR - LIFETIME ACCESS 🔥",
+      badgeColor: "bg-green-500",
+      popular: true
     },
     {
       name: "Whop All-Access",
@@ -424,23 +426,6 @@ export default function ComfyUIWorkflowsPage() {
       hoverEffect: true,
       buttonText: "Join Whop All-Access",
       buttonLink: "https://whop.com/IImagined"
-    },
-    {
-      name: "Complete Workflow Mastery",
-      description: "Self-paced comprehensive training",
-      price: "$247",
-      originalPrice: "$1,500",
-      features: [
-        "50+ professional workflows ($197 value)",
-        "6 comprehensive modules ($797 value)",
-        "All exclusive bonuses ($506 value)",
-        "Lifetime updates and new workflows",
-        "Private community access",
-        "60-day money-back guarantee"
-      ],
-      badge: "🔥 LIFETIME ACCESS 🔥",
-      badgeColor: "bg-green-500",
-      popular: true
     }
   ]
 

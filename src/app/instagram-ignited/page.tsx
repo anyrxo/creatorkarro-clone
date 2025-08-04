@@ -918,35 +918,43 @@ export default function InstagramIgnitedPage() {
           <div className={`mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
             <h3 className="text-3xl md:text-4xl font-bold mb-12 text-center">Compare Your Options</h3>
             
-            <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
-              {/* Instagram Growth Agency */}
+            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {/* Business Coach */}
               <div className="bg-zinc-900 border border-red-500 rounded-2xl p-6 text-center">
-                <h4 className="text-lg font-bold mb-4 text-red-400">Instagram Growth Agency</h4>
-                <div className="text-2xl font-black mb-4 text-red-400">$2,000-$5,000</div>
+                <h4 className="text-lg font-bold mb-4 text-red-400">Business Coach</h4>
+                <div className="text-2xl font-black mb-4 text-red-400">$5,000+</div>
                 <div className="text-sm text-gray-400 mb-6">PER MONTH</div>
                 <ul className="text-left space-y-2 text-gray-300 text-sm">
-                  <li>• Basic posting service</li>
-                  <li>• Generic content</li>
-                  <li>• No strategy education</li>
+                  <li>• Generic advice</li>
+                  <li>• No proven strategies</li>
                   <li>• Expensive ongoing costs</li>
+                  <li>• One-size-fits-all approach</li>
                   <li>• No guarantee of results</li>
                 </ul>
               </div>
-              
-              {/* Social Media Manager */}
-              <div className="bg-orange-900/20 border border-orange-500 rounded-2xl p-6 text-center">
-                <h4 className="text-lg font-bold mb-4 text-orange-400">Social Media Manager</h4>
-                <div className="text-2xl font-black mb-4 text-orange-400">$1,500+</div>
-                <div className="text-sm text-gray-400 mb-6">PER MONTH</div>
-                <ul className="text-left space-y-2 text-gray-300 text-sm">
-                  <li>• Content creation only</li>
-                  <li>• No viral strategies</li>
-                  <li>• Limited growth focus</li>
-                  <li>• Ongoing monthly fees</li>
-                  <li>• You don't learn anything</li>
-                </ul>
-              </div>
 
+              {/* Instagram Ignited - POPULAR */}
+              <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 border-2 border-green-500 rounded-2xl p-6 text-center relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 bg-green-500 text-black text-sm font-bold py-2">
+                  🔥 POPULAR - LIFETIME ACCESS 🔥
+                </div>
+                <div className="mt-8">
+                  <h4 className="text-lg font-bold mb-4 text-green-400">Instagram Ignited</h4>
+                  <div className="mb-2">
+                    <span className="text-sm text-gray-400 line-through">$3,109</span>
+                  </div>
+                  <div className="text-3xl font-black mb-4 text-green-400">$147</div>
+                  <div className="text-sm text-gray-400 mb-6">ONE-TIME PAYMENT</div>
+                  <ul className="text-left space-y-2 text-gray-300 text-sm">
+                    <li>• Complete system education</li>
+                    <li>• Proven viral strategies</li>
+                    <li>• Lifetime access</li>
+                    <li>• $3,109 worth of bonuses</li>
+                    <li>• Results guaranteed</li>
+                  </ul>
+                </div>
+              </div>
+              
               {/* Whop All-Access */}
               <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-2 border-purple-500 rounded-2xl p-6 text-center relative overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
                 <div className="absolute top-0 left-0 right-0 bg-purple-500 text-white text-sm font-bold py-2">
@@ -974,28 +982,6 @@ export default function InstagramIgnitedPage() {
                   >
                     Join Whop All-Access
                   </Link>
-                </div>
-              </div>
-              
-              {/* Instagram Ignited */}
-              <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 border-2 border-green-500 rounded-2xl p-6 text-center relative overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 bg-green-500 text-black text-sm font-bold py-2">
-                  🔥 LIFETIME ACCESS 🔥
-                </div>
-                <div className="mt-8">
-                  <h4 className="text-lg font-bold mb-4 text-green-400">Instagram Ignited</h4>
-                  <div className="mb-2">
-                    <span className="text-sm text-gray-400 line-through">$3,109</span>
-                  </div>
-                  <div className="text-3xl font-black mb-4 text-green-400">$147</div>
-                  <div className="text-sm text-gray-400 mb-6">ONE-TIME PAYMENT</div>
-                  <ul className="text-left space-y-2 text-gray-300 text-sm">
-                    <li>• Complete system education</li>
-                    <li>• Proven viral strategies</li>
-                    <li>• Lifetime access</li>
-                    <li>• $3,109 worth of bonuses</li>
-                    <li>• Results guaranteed</li>
-                  </ul>
                 </div>
               </div>
             </div>

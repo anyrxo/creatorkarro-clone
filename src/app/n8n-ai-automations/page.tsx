@@ -867,28 +867,30 @@ export default function N8NAutomationsPage() {
             <PricingComparison
               options={[
                 {
-                  name: "Hiring Automation Developer",
-                  description: "PER PROJECT",
-                  price: "$8,000-$15,000",
+                  name: "Business Coach",
+                  description: "PER MONTH",
+                  price: "$5,000+",
                   features: [
-                    "Single workflow only",
-                    "No training included", 
-                    "Expensive ongoing maintenance",
-                    "No business knowledge transfer",
-                    "Dependent on developer forever"
+                    "Generic business advice",
+                    "No automation training", 
+                    "Expensive ongoing costs",
+                    "One-size-fits-all approach",
+                    "No technical implementation"
                   ],
                   disabled: true
                 },
                 {
-                  name: "Automation Agency",
-                  description: "PER MONTH",
-                  price: "$3,000-$7,000",
+                  name: "N8N AI Automations",
+                  description: "ONE-TIME",
+                  price: "$129",
+                  badge: "🔥 POPULAR - LIFETIME ACCESS",
+                  popular: true,
                   features: [
-                    "Basic workflow setup",
-                    "No education or training",
-                    "Limited customization",
-                    "Expensive recurring costs",
-                    "No ownership of systems"
+                    "Complete system mastery",
+                    "Unlimited workflow creation",
+                    "Lifetime access & updates",
+                    "$7,361 worth of bonuses",
+                    "Build automation business"
                   ]
                 },
                 {
@@ -896,6 +898,7 @@ export default function N8NAutomationsPage() {
                   description: "PER MONTH",
                   price: "$39.99",
                   badge: "🚀 ALL 5 COURSES",
+                  badgeColor: "bg-purple-500",
                   features: [
                     "All 5 complete courses",
                     "Instagram + AI + Automation",
@@ -906,20 +909,6 @@ export default function N8NAutomationsPage() {
                   hoverEffect: true,
                   buttonText: "Join Whop All-Access",
                   buttonLink: "https://whop.com/IImagined"
-                },
-                {
-                  name: "N8N AI Automations",
-                  description: "ONE-TIME",
-                  price: "$129",
-                  badge: "🔥 LIFETIME ACCESS",
-                  popular: true,
-                  features: [
-                    "Complete system mastery",
-                    "Unlimited workflow creation",
-                    "Lifetime access & updates",
-                    "$7,361 worth of bonuses",
-                    "Build automation business"
-                  ]
                 }
               ]}
               isVisible={pricingAnimation.isVisible}

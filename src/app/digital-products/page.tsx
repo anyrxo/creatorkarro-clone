@@ -755,19 +755,6 @@ export default function DigitalProductsPage() {
             <PricingComparison
               options={[
                 {
-                  name: "Trial & Error Method",
-                  description: "LOST REVENUE",
-                  price: "$10,000+",
-                  features: [
-                    "Years of failed launches",
-                    "Wasted time and money", 
-                    "No guidance or system",
-                    "High stress and frustration",
-                    "No guarantee of success"
-                  ],
-                  disabled: true
-                },
-                {
                   name: "Business Coach",
                   description: "PER MONTH",
                   price: "$5,000+",
@@ -778,22 +765,6 @@ export default function DigitalProductsPage() {
                     "Limited availability",
                     "No proven system"
                   ]
-                },
-                {
-                  name: "Whop All-Access",
-                  description: "PER MONTH",
-                  price: "$39.99",
-                  badge: "🚀 ALL 5 COURSES",
-                  features: [
-                    "All 5 complete courses",
-                    "Instagram + AI + Automation",
-                    "Monthly updates",
-                    "Community access",
-                    "Cancel anytime"
-                  ],
-                  hoverEffect: true,
-                  buttonText: "Join Whop All-Access",
-                  buttonLink: "https://whop.com/IImagined"
                 },
                 {
                   name: "Digital Products Academy",
@@ -808,6 +779,23 @@ export default function DigitalProductsPage() {
                     "$5,959 worth of bonuses",
                     "Build scalable passive income"
                   ]
+                },
+                {
+                  name: "Whop All-Access",
+                  description: "PER MONTH",
+                  price: "$39.99",
+                  badge: "🚀 ALL 5 COURSES",
+                  badgeColor: "bg-purple-500",
+                  features: [
+                    "All 5 complete courses",
+                    "Instagram + AI + Automation",
+                    "Monthly updates",
+                    "Community access",
+                    "Cancel anytime"
+                  ],
+                  hoverEffect: true,
+                  buttonText: "Join Whop All-Access",
+                  buttonLink: "https://whop.com/IImagined"
                 }
               ]}
               isVisible={pricingAnimation.isVisible}
