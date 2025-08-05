@@ -15,6 +15,10 @@ export interface BlogPost {
   readTime: number;
   featured: boolean;
   tags: string[];
+  courseTarget?: string;
+  seoKeyword?: string;
+  targetRevenue?: string;
+  targetStudents?: string;
 }
 
 export const allBlogPosts: BlogPost[] = [
