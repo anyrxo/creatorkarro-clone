@@ -252,103 +252,48 @@ export default function HomePage() {
             transition={{ duration: 1 }}
             className="max-w-6xl mx-auto"
           >
-            {/* Enhanced Brand Identity */}
+            {/* Clean Brand Identity */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
               className="mb-8"
             >
-              <motion.div 
-                className="relative inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600/30 to-purple-600/30 backdrop-blur-md border border-blue-500/50 mb-8"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
-                {/* Glow Effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-500/20 rounded-full blur-xl" />
-                
-                {/* Animated Border */}
-                <motion.div
-                  className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
-                  style={{
-                    backgroundClip: 'padding-box',
-                    mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-                    maskComposite: 'xor'
-                  }}
-                  animate={{
-                    rotate: [0, 360]
-                  }}
-                  transition={{
-                    duration: 8,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                />
-                
-                <span className="relative text-white font-bold tracking-wide text-lg">
+              <AnimatedGradientText className="mb-8">
+                <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
+                <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
                   <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined
                 </span>
-                
-                {/* Sparkle Effects */}
-                {[...Array(3)].map((_, i) => (
-                  <motion.div
-                    key={i}
-                    className="absolute w-1 h-1 bg-white rounded-full"
-                    style={{
-                      top: `${20 + i * 20}%`,
-                      right: `${10 + i * 15}%`,
-                    }}
-                    animate={{
-                      opacity: [0, 1, 0],
-                      scale: [0, 1, 0]
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      delay: i * 0.5
-                    }}
-                  />
-                ))}
-              </motion.div>
+                <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />
+              </AnimatedGradientText>
             </motion.div>
 
-            {/* Main Headline */}
+            {/* Main Headline with MagicUI */}
             <div className="mb-8">
-              <div className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 tracking-tight leading-tight">
-                <motion.span
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.8 }}
-                >
-                  Where Creators{' '}
-                </motion.span>
-                <motion.div
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.7, duration: 0.8 }}
-                  className="inline-block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
-                >
-                  <WordRotate
-                    words={["Become Empires", "Build Legacies", "Scale Dreams", "Make Millions"]}
-                    className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
-                    duration={3000}
-                  />
-                </motion.div>
+              <BlurIn
+                word="Where Creators"
+                className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 tracking-tight leading-tight"
+                duration={1}
+              />
+              <div className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tight leading-tight">
+                <WordRotate
+                  words={["Become Empires", "Build Legacies", "Scale Dreams", "Make Millions"]}
+                  className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+                  duration={3000}
+                />
               </div>
             </div>
 
-            {/* Subtitle */}
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-              className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto font-medium"
-            >
-              Master AI automation and growth systems that built 
-              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent font-bold"> 4,000+ successful creators</span>
-            </motion.p>
+            {/* Enhanced Subtitle with MagicUI */}
+            <div className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto font-medium">
+              <TypingAnimation
+                text="Master AI automation and growth systems that built 4,000+ successful creators"
+                className="text-xl md:text-2xl text-zinc-200 font-medium"
+                duration={50}
+              />
+            </div>
 
-            {/* Key Stats */}
+            {/* Enhanced Stats with NumberTicker */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -356,10 +301,10 @@ export default function HomePage() {
               className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 max-w-4xl mx-auto"
             >
               {[
-                { value: '4K+', label: 'Active Students' },
-                { value: '10M+', label: 'Followers Built' },
-                { value: '$3M+', label: 'Student Revenue' },
-                { value: '4.9★', label: 'Average Rating' }
+                { value: 4000, suffix: '+', label: 'Active Students' },
+                { value: 10, suffix: 'M+', label: 'Followers Built' },
+                { prefix: '$', value: 3, suffix: 'M+', label: 'Student Revenue' },
+                { value: 4.9, suffix: '★', label: 'Average Rating', decimals: 1 }
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -369,7 +314,14 @@ export default function HomePage() {
                   className="text-center"
                 >
                   <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent mb-2">
-                    {stat.value}
+                    {stat.prefix}
+                    <NumberTicker 
+                      value={stat.value} 
+                      delay={1.5 + index * 0.2}
+                      decimalPlaces={stat.decimals || 0}
+                      className="inline-block"
+                    />
+                    {stat.suffix}
                   </div>
                   <div className="text-sm text-zinc-400 font-medium">{stat.label}</div>
                 </motion.div>
