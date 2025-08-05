@@ -12,6 +12,7 @@ import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import NumberTicker from '@/components/magicui/number-ticker'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
+import ScrambleText from '@/components/magicui/scramble-text'
 
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -44,12 +45,36 @@ export default function BlogPage() {
     <div className="min-h-screen bg-dark">
       {/* MAGICAL HEADER */}
       <section className="relative py-20 px-4 overflow-hidden">
-        {/* Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/10 to-pink-900/20"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        {/* Beautiful Pulsing Background - Same as Homepage */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black"></div>
+        <div className="absolute inset-0 overflow-hidden">
+          <div 
+            className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-purple-600/20 to-blue-600/20 blur-2xl animate-pulse opacity-60"
+            style={{ 
+              left: '15%', 
+              top: '5%',
+              animationDuration: '4s'
+            }}
+          />
+          <div 
+            className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-pink-600/15 to-purple-600/15 blur-2xl animate-pulse opacity-50"
+            style={{ 
+              right: '5%', 
+              bottom: '15%',
+              animationDuration: '6s',
+              animationDelay: '1s'
+            }}
+          />
+          <div 
+            className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-cyan-600/15 to-blue-600/15 blur-xl animate-pulse opacity-40"
+            style={{ 
+              left: '50%', 
+              top: '50%', 
+              transform: 'translate(-50%, -50%)',
+              animationDuration: '5s',
+              animationDelay: '2s'
+            }}
+          />
         </div>
         
         {/* Floating Elements */}
@@ -65,9 +90,14 @@ export default function BlogPage() {
             <ScrollAnimation animation="fade-up" delay={200}>
               <div className="relative inline-block">
                 {/* Main Title with Magical Effects */}
-                <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
-                  Creator Blog
-                </h1>
+                <div className="mb-8" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+                  <ScrambleText
+                    text="Creator Blog"
+                    className="text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight drop-shadow-2xl"
+                    scrambleSpeed={1}
+                    revealSpeed={1}
+                  />
+                </div>
                 
                 {/* Magical Glowing Border */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 via-pink-600 to-yellow-600 rounded-2xl opacity-20 blur-xl animate-pulse"></div>

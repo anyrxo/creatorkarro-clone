@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import SocialIcon from './SocialIcon'
 import NumberTicker from './magicui/number-ticker'
+import ScrambleText from './magicui/scramble-text'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -33,15 +34,52 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-zinc-900 border-t border-zinc-800">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="relative bg-zinc-900 border-t border-zinc-800 overflow-hidden">
+      {/* Beautiful Pulsing Background - Same as Homepage */}
+      <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-black to-zinc-900"></div>
+      <div className="absolute inset-0 overflow-hidden">
+        <div 
+          className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-purple-600/10 to-blue-600/10 blur-2xl animate-pulse opacity-40"
+          style={{ 
+            left: '10%', 
+            top: '20%',
+            animationDuration: '6s'
+          }}
+        />
+        <div 
+          className="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-r from-pink-600/8 to-purple-600/8 blur-2xl animate-pulse opacity-30"
+          style={{ 
+            right: '10%', 
+            bottom: '20%',
+            animationDuration: '8s',
+            animationDelay: '2s'
+          }}
+        />
+        <div 
+          className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-cyan-600/8 to-blue-600/8 blur-xl animate-pulse opacity-25"
+          style={{ 
+            left: '60%', 
+            top: '60%', 
+            transform: 'translate(-50%, -50%)',
+            animationDuration: '7s',
+            animationDelay: '4s'
+          }}
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
           {/* Brand Section */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined<span className="text-blue-400">.ai</span>
-            </h3>
+            <div className="mb-4" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+              <ScrambleText
+                text="IImagined.ai"
+                className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+                scrambleSpeed={1}
+                revealSpeed={1}
+              />
+            </div>
             <p className="text-zinc-300 mb-8 leading-relaxed text-lg">
               Transform your passion into profit with AI automation, viral content systems, and digital product mastery. Join <NumberTicker value={4000} className="text-blue-400 font-semibold" />+ students building their creator empire.
             </p>

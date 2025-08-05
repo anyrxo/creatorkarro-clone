@@ -7,6 +7,7 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import WordRotate from '@/components/magicui/word-rotate'
+import ScrambleText from '@/components/magicui/scramble-text'
 import { ChevronRight } from 'lucide-react'
 
 export default function ContactPage() {
@@ -19,12 +20,12 @@ export default function ContactPage() {
     <div className="min-h-screen bg-dark relative">
       {/* MAGICAL HEADER */}
       <section className="relative py-20 px-4 overflow-hidden">
-        {/* Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/10 to-pink-900/20"></div>
+        {/* Beautiful Pulsing Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/20 to-pink-900/30"></div>
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/4 left-1/4 w-[32rem] h-[32rem] bg-gradient-to-r from-blue-400/20 via-purple-500/30 to-pink-500/20 rounded-full blur-2xl animate-pulse opacity-60"></div>
+          <div className="absolute top-1/3 right-1/4 w-[28rem] h-[28rem] bg-gradient-to-r from-purple-400/25 via-pink-500/35 to-blue-500/25 rounded-full blur-2xl animate-pulse opacity-70" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-[24rem] h-[24rem] bg-gradient-to-r from-pink-400/30 via-blue-500/40 to-purple-500/30 rounded-full blur-2xl animate-pulse opacity-80" style={{animationDelay: '2s'}}></div>
         </div>
         
         {/* Floating Elements */}
@@ -42,9 +43,14 @@ export default function ContactPage() {
               className={`scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
             >
               <div className="relative inline-block">
-                {/* Main Title with Magical Effects */}
+                {/* Main Title with ScrambleText Morphing Effect */}
                 <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
-                  Contact
+                  <ScrambleText 
+                    text="Contact" 
+                    className="text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight drop-shadow-2xl" 
+                    scrambleSpeed={1} 
+                    revealSpeed={1} 
+                  />
                 </h1>
                 
                 {/* Magical Glowing Border */}
