@@ -123,50 +123,54 @@ export function BeautifulHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.8 }}
           >
-            Join 12,000+ creators who've built thriving businesses with our proven 
-            Instagram growth, digital products, and AI automation strategies.
+            Master the systems that built 4,000+ successful creators.
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-6 justify-center"
+            className="flex justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2.2 }}
           >
             <Link href="/instagram-ignited" className="inline-block">
-              <motion.button
-                className="group relative px-8 py-4 bg-white text-black font-semibold rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+              <motion.div
+                className="group relative"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                aria-label="Start learning with our courses today"
               >
-                <span className="relative z-10 transition-opacity duration-300 group-hover:opacity-0">Start Learning Today</span>
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600"
-                  initial={{ x: "-100%" }}
-                  whileHover={{ x: 0 }}
-                  transition={{ duration: 0.3 }}
-                />
-                <motion.span
-                  className="absolute inset-0 flex items-center justify-center text-white font-semibold"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
+                {/* Glow Effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
+                
+                <button
+                  className="relative z-10 px-10 py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-bold text-lg rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+                  aria-label="Start building your creator empire today"
                 >
-                  Start Learning Today
-                </motion.span>
-              </motion.button>
-            </Link>
-
-            <Link href="/story" className="inline-block">
-              <motion.button
-                className="px-8 py-4 border-2 border-zinc-600 text-white font-semibold rounded-full backdrop-blur-sm hover:bg-white/10 hover:border-zinc-500 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-zinc-500/50"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                aria-label="Read the founder's story"
-              >
-                Read My Story
-              </motion.button>
+                  <span className="flex items-center gap-3">
+                    🚀 Build Your Empire
+                  </span>
+                </button>
+                
+                {/* Floating Particles */}
+                {[...Array(6)].map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute w-1 h-1 bg-white rounded-full opacity-0 group-hover:opacity-60"
+                    style={{
+                      top: `${20 + Math.random() * 60}%`,
+                      left: `${20 + Math.random() * 60}%`,
+                    }}
+                    animate={{
+                      y: [0, -20, 0],
+                      opacity: [0, 0.6, 0],
+                    }}
+                    transition={{
+                      duration: 2 + Math.random(),
+                      repeat: Infinity,
+                      delay: i * 0.2
+                    }}
+                  />
+                ))}
+              </motion.div>
             </Link>
           </motion.div>
         </motion.div>
