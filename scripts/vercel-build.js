@@ -21,6 +21,10 @@ process.env.VERCEL_FORCE_NO_BUILD_CACHE = '1';
 process.env.NEXT_TELEMETRY_DISABLED = '1';
 process.env.DISABLE_ESLINT_PLUGIN = 'true';
 
+// Fix SSR issues
+process.env.NODE_ENV = 'production';
+process.env.NEXT_PHASE = 'phase-production-build';
+
 async function optimizedBuild() {
   try {
     console.log('📊 Blog Stats:');
