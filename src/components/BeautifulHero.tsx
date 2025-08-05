@@ -46,34 +46,79 @@ export function BeautifulHero() {
       className="relative min-h-screen overflow-hidden bg-gradient-to-b from-black via-zinc-900 to-black"
       style={{ y, opacity, scale }}
     >
-      {/* Animated gradient orbs */}
+      {/* Premium Animated gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-purple-600/20 to-blue-600/20 blur-3xl"
+          className="absolute w-[1000px] h-[1000px] rounded-full bg-gradient-to-r from-purple-600/30 to-blue-600/30 blur-3xl"
           animate={{
-            x: mousePosition.x * 100,
-            y: mousePosition.y * 100,
+            x: mousePosition.x * 120,
+            y: mousePosition.y * 120,
+            rotate: [0, 360],
           }}
-          transition={{ type: "spring", damping: 30 }}
-          style={{ left: '20%', top: '10%' }}
+          transition={{ 
+            x: { type: "spring", damping: 30 },
+            y: { type: "spring", damping: 30 },
+            rotate: { duration: 20, repeat: Infinity, ease: "linear" }
+          }}
+          style={{ left: '15%', top: '5%' }}
         />
         <motion.div
-          className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-pink-600/20 to-purple-600/20 blur-3xl"
+          className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-pink-600/25 to-purple-600/25 blur-3xl"
           animate={{
-            x: mousePosition.x * -80,
+            x: mousePosition.x * -100,
+            y: mousePosition.y * -100,
+            rotate: [360, 0],
+          }}
+          transition={{ 
+            x: { type: "spring", damping: 25 },
+            y: { type: "spring", damping: 25 },
+            rotate: { duration: 15, repeat: Infinity, ease: "linear" }
+          }}
+          style={{ right: '5%', bottom: '15%' }}
+        />
+        <motion.div
+          className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-cyan-600/20 to-blue-600/20 blur-3xl"
+          animate={{
+            x: mousePosition.x * 80,
             y: mousePosition.y * -80,
+            scale: [1, 1.2, 1],
           }}
-          transition={{ type: "spring", damping: 25 }}
-          style={{ right: '10%', bottom: '20%' }}
+          transition={{ 
+            x: { type: "spring", damping: 35 },
+            y: { type: "spring", damping: 35 },
+            scale: { duration: 8, repeat: Infinity, ease: "easeInOut" }
+          }}
+          style={{ left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}
+        />
+        
+        {/* Additional Premium Orbs */}
+        <motion.div
+          className="absolute w-[300px] h-[300px] rounded-full bg-gradient-to-r from-yellow-500/15 to-orange-500/15 blur-2xl"
+          animate={{
+            x: mousePosition.x * -50,
+            y: mousePosition.y * 70,
+            rotate: [0, 180, 360],
+          }}
+          transition={{ 
+            x: { type: "spring", damping: 40 },
+            y: { type: "spring", damping: 40 },
+            rotate: { duration: 12, repeat: Infinity, ease: "linear" }
+          }}
+          style={{ left: '80%', top: '20%' }}
         />
         <motion.div
-          className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-blue-600/20 to-cyan-600/20 blur-3xl"
+          className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-green-500/10 to-cyan-500/10 blur-2xl"
           animate={{
-            x: mousePosition.x * 60,
-            y: mousePosition.y * -60,
+            x: mousePosition.x * 90,
+            y: mousePosition.y * 90,
+            rotate: [180, 540],
           }}
-          transition={{ type: "spring", damping: 35 }}
-          style={{ left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}
+          transition={{ 
+            x: { type: "spring", damping: 20 },
+            y: { type: "spring", damping: 20 },
+            rotate: { duration: 18, repeat: Infinity, ease: "linear" }
+          }}
+          style={{ left: '10%', bottom: '10%' }}
         />
       </div>
 
@@ -134,42 +179,116 @@ export function BeautifulHero() {
           >
             <Link href="/instagram-ignited" className="inline-block">
               <motion.div
-                className="group relative"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                className="group relative cursor-pointer"
+                whileHover={{ scale: 1.08, y: -8 }}
+                whileTap={{ scale: 0.92 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                {/* Glow Effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
+                {/* Multiple Glow Layers */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-20 group-hover:opacity-60 transition-all duration-1000" />
+                <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-80 transition-all duration-700" />
+                <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 rounded-2xl blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500" />
                 
-                <button
-                  className="relative z-10 px-10 py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-bold text-lg rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-500/50"
-                  aria-label="Start building your creator empire today"
+                {/* Main Button */}
+                <motion.button
+                  className="relative z-10 px-12 py-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 hover:from-blue-500 hover:via-purple-500 hover:to-pink-400 text-white font-black text-xl rounded-2xl overflow-hidden transition-all duration-500 shadow-2xl"
+                  whileHover={{ 
+                    boxShadow: "0 25px 50px -12px rgba(59, 130, 246, 0.5)",
+                  }}
                 >
-                  <span className="flex items-center gap-3">
-                    🚀 Build Your Empire
-                  </span>
-                </button>
-                
-                {/* Floating Particles */}
-                {[...Array(6)].map((_, i) => (
+                  {/* Animated Background */}
                   <motion.div
-                    key={i}
-                    className="absolute w-1 h-1 bg-white rounded-full opacity-0 group-hover:opacity-60"
-                    style={{
-                      top: `${20 + Math.random() * 60}%`,
-                      left: `${20 + Math.random() * 60}%`,
-                    }}
-                    animate={{
-                      y: [0, -20, 0],
-                      opacity: [0, 0.6, 0],
-                    }}
-                    transition={{
-                      duration: 2 + Math.random(),
-                      repeat: Infinity,
-                      delay: i * 0.2
-                    }}
+                    className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100"
+                    initial={{ x: "-100%" }}
+                    whileHover={{ x: "100%" }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
                   />
-                ))}
+                  
+                  {/* Shimmer Effect */}
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100"
+                    initial={{ x: "-100%" }}
+                    whileHover={{ x: "100%" }}
+                    transition={{ duration: 1.2, ease: "easeInOut", delay: 0.1 }}
+                  />
+                  
+                  <span className="relative z-10 flex items-center gap-4">
+                    <motion.span
+                      className="text-2xl"
+                      animate={{ rotate: [0, 15, -15, 0] }}
+                      transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+                    >
+                      🚀
+                    </motion.span>
+                    Build Your Empire
+                    <motion.div
+                      className="w-2 h-2 bg-white rounded-full"
+                      animate={{ 
+                        scale: [0, 1, 0],
+                        opacity: [0, 1, 0]
+                      }}
+                      transition={{ 
+                        duration: 1.5, 
+                        repeat: Infinity,
+                        repeatDelay: 2
+                      }}
+                    />
+                  </span>
+                </motion.button>
+                
+                {/* Premium Floating Elements */}
+                <div className="absolute inset-0 pointer-events-none">
+                  {[...Array(12)].map((_, i) => (
+                    <motion.div
+                      key={i}
+                      className={`absolute w-1 h-1 rounded-full opacity-0 group-hover:opacity-80 ${
+                        i % 3 === 0 ? 'bg-blue-400' : 
+                        i % 3 === 1 ? 'bg-purple-400' : 
+                        'bg-pink-400'
+                      }`}
+                      style={{
+                        top: `${10 + Math.random() * 80}%`,
+                        left: `${10 + Math.random() * 80}%`,
+                      }}
+                      animate={{
+                        y: [0, -40, 0],
+                        x: [(Math.random() - 0.5) * 20, (Math.random() - 0.5) * 40, (Math.random() - 0.5) * 20],
+                        scale: [0, 1.5, 0],
+                        opacity: [0, 0.8, 0],
+                      }}
+                      transition={{
+                        duration: 3 + Math.random() * 2,
+                        repeat: Infinity,
+                        delay: Math.random() * 2,
+                        ease: "easeInOut"
+                      }}
+                    />
+                  ))}
+                </div>
+                
+                {/* Orbit Elements */}
+                <motion.div
+                  className="absolute -top-2 -right-2 w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-0 group-hover:opacity-100"
+                  animate={{
+                    rotate: [0, 360],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                />
+                <motion.div
+                  className="absolute -bottom-2 -left-2 w-3 h-3 bg-gradient-to-r from-green-400 to-cyan-500 rounded-full opacity-0 group-hover:opacity-100"
+                  animate={{
+                    rotate: [360, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                />
               </motion.div>
             </Link>
           </motion.div>
@@ -196,27 +315,68 @@ export function BeautifulHero() {
         </motion.div>
       </div>
 
-      {/* Reduced floating particles for better performance */}
+      {/* Premium floating particles with magic trails */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(8)].map((_, i) => (
+        {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-white/10 rounded-full"
+            className={`absolute rounded-full ${
+              i % 4 === 0 ? 'w-2 h-2 bg-gradient-to-r from-blue-400/60 to-cyan-400/60' :
+              i % 4 === 1 ? 'w-1.5 h-1.5 bg-gradient-to-r from-purple-400/50 to-pink-400/50' :
+              i % 4 === 2 ? 'w-1 h-1 bg-gradient-to-r from-yellow-400/40 to-orange-400/40' :
+              'w-0.5 h-0.5 bg-white/30'
+            } shadow-lg`}
             initial={{
               x: `${Math.random() * 100}%`,
               y: '110%',
+              scale: 0,
+              opacity: 0,
             }}
             animate={{
               y: '-10%',
               x: `${Math.random() * 100}%`,
+              scale: [0, 1, 1, 0],
+              opacity: [0, 0.8, 0.8, 0],
+              rotate: [0, 180, 360],
             }}
             transition={{
-              duration: Math.random() * 15 + 8,
+              duration: Math.random() * 20 + 15,
               repeat: Infinity,
-              ease: "linear",
-              delay: Math.random() * 8,
+              ease: "easeInOut",
+              delay: Math.random() * 10,
             }}
           />
+        ))}
+        
+        {/* Magical star bursts */}
+        {[...Array(6)].map((_, i) => (
+          <motion.div
+            key={`star-${i}`}
+            className="absolute"
+            style={{
+              left: `${20 + Math.random() * 60}%`,
+              top: `${20 + Math.random() * 60}%`,
+            }}
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{
+              scale: [0, 1, 0],
+              opacity: [0, 1, 0],
+              rotate: [0, 180],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              delay: Math.random() * 8,
+              ease: "easeInOut"
+            }}
+          >
+            <div className="relative">
+              <div className="w-1 h-6 bg-gradient-to-t from-transparent via-white/60 to-transparent rotate-0" />
+              <div className="w-1 h-6 bg-gradient-to-t from-transparent via-white/60 to-transparent rotate-45 absolute top-0" />
+              <div className="w-1 h-6 bg-gradient-to-t from-transparent via-white/60 to-transparent rotate-90 absolute top-0" />
+              <div className="w-1 h-6 bg-gradient-to-t from-transparent via-white/60 to-transparent rotate-135 absolute top-0" />
+            </div>
+          </motion.div>
         ))}
       </div>
     </motion.section>
