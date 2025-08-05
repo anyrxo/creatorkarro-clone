@@ -21,7 +21,7 @@ export default function StoryPage() {
   return (
     <div className="min-h-screen bg-dark">
       {/* MAGICAL HEADER */}
-      <section className="relative py-32 px-4 overflow-hidden">
+      <section className="relative py-20 px-4 overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/10 to-pink-900/20"></div>
         <div className="absolute inset-0">
