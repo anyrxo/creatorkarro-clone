@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-motion'
 import Link from 'next/link'
 import ScrambleText from '@/components/magicui/scramble-text'
+import ShimmerButton from '@/components/magicui/shimmer-button'
 
 export function BeautifulHero() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -105,8 +106,8 @@ export function BeautifulHero() {
             <ScrambleText
               text="CREATE THE FUTURE"
               className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none tracking-tight"
-              scrambleSpeed={30}
-              revealSpeed={150}
+              scrambleSpeed={20}
+              revealSpeed={80}
             />
           </div>
 
@@ -125,35 +126,20 @@ export function BeautifulHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2.2 }}
           >
-            <Link href="/instagram-ignited" className="inline-block">
-              <motion.div
-                className="group relative cursor-pointer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              >
-                {/* Glass Button */}
-                <motion.button
-                  className="relative px-12 py-6 bg-white/10 backdrop-blur-xl border border-white/20 text-white font-bold text-xl rounded-full shadow-2xl overflow-hidden transition-all duration-500 hover:bg-white/20 hover:border-white/30 hover:shadow-[0_20px_40px_rgba(59,130,246,0.4)]"
-                  whileHover={{ 
-                    boxShadow: "0 20px 40px rgba(59, 130, 246, 0.4)",
-                  }}
+            <motion.div
+              className="inline-block"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link href="/instagram-ignited" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50" aria-label="Build your empire with Instagram Ignited course">
+                <ShimmerButton
+                  className="shadow-2xl"
+                  shimmerColor="#ffffff"
+                  shimmerSize="0.1em"
+                  background="linear-gradient(135deg, #2563eb, #9333ea)"
+                  borderRadius="9999px"
                 >
-                  {/* Glass shimmer effect */}
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full"
-                    animate={{
-                      translateX: ['-100%', '200%']
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatDelay: 3,
-                      ease: "easeInOut"
-                    }}
-                  />
-                  
-                  <span className="relative z-10 flex items-center gap-3">
+                  <span className="whitespace-nowrap text-lg font-bold px-6 py-2 flex items-center gap-3">
                     <motion.span
                       className="text-2xl"
                       animate={{ 
@@ -170,9 +156,9 @@ export function BeautifulHero() {
                     </motion.span>
                     Build Your Empire
                   </span>
-                </motion.button>
-              </motion.div>
-            </Link>
+                </ShimmerButton>
+              </Link>
+            </motion.div>
           </motion.div>
         </motion.div>
 
@@ -200,39 +186,63 @@ export function BeautifulHero() {
       {/* Pulsing Hexagonal Nodes */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Slow breathing hex nodes */}
-        {[...Array(8)].map((_, i) => (
-          <motion.div
-            key={`hex-${i}`}
-            className="absolute"
-            style={{
-              left: `${10 + Math.random() * 80}%`,
-              top: `${10 + Math.random() * 80}%`,
-            }}
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{
-              scale: [0, 1, 1.2, 1, 0],
-              opacity: [0, 0.6, 0.8, 0.6, 0],
-              rotate: [0, 120, 240, 360],
-            }}
-            transition={{
-              duration: 6 + Math.random() * 4, // 6-10 second breathing
-              repeat: Infinity,
-              delay: Math.random() * 8,
-              ease: "easeInOut"
-            }}
-          >
-            {/* Hexagon shape */}
-            <div className={`relative w-6 h-6 ${
-              i % 3 === 0 ? 'bg-blue-400/40' :
-              i % 3 === 1 ? 'bg-purple-400/40' : 
-              'bg-cyan-400/40'
-            }`}
-            style={{
-              clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
-              boxShadow: '0 0 20px currentColor'
-            }} />
-          </motion.div>
-        ))}
+        {[...Array(8)].map((_, i) => {
+          const positions = [
+            { left: '15%', top: '20%' },
+            { left: '85%', top: '25%' },
+            { left: '25%', top: '70%' },
+            { left: '75%', top: '80%' },
+            { left: '50%', top: '15%' },
+            { left: '10%', top: '60%' },
+            { left: '90%', top: '65%' },
+            { left: '60%', top: '45%' }
+          ]
+          
+          return (
+            <motion.div
+              key={`hex-${i}`}
+              className="absolute"
+              style={positions[i]}
+              animate={{
+                scale: [0.8, 1.4, 0.8],
+                opacity: [0.3, 0.9, 0.3],
+                rotate: [0, 360],
+              }}
+              transition={{
+                duration: 4 + i * 0.5, // Staggered breathing
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: i * 0.8
+              }}
+            >
+              {/* Hexagon shape with stronger pulse */}
+              <motion.div 
+                className={`relative w-8 h-8 ${
+                  i % 3 === 0 ? 'bg-blue-400/60' :
+                  i % 3 === 1 ? 'bg-purple-400/60' : 
+                  'bg-cyan-400/60'
+                }`}
+                style={{
+                  clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+                  boxShadow: '0 0 30px currentColor, 0 0 60px currentColor',
+                  filter: 'brightness(1.2)'
+                }}
+                animate={{
+                  boxShadow: [
+                    '0 0 10px currentColor, 0 0 20px currentColor',
+                    '0 0 40px currentColor, 0 0 80px currentColor',
+                    '0 0 10px currentColor, 0 0 20px currentColor'
+                  ]
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
+            </motion.div>
+          )
+        })}
         
         {/* Quick zap hex nodes */}
         {[...Array(12)].map((_, i) => (
