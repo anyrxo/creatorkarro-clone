@@ -17,6 +17,13 @@ interface Props {
   params: Promise<{ country: string }>
 }
 
+// Generate static params for supported countries
+export async function generateStaticParams() {
+  return Object.keys(INTERNATIONAL_MARKETS).map((country) => ({
+    country: country.toLowerCase(),
+  }))
+}
+
 // Generate metadata for country-specific home pages
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params

@@ -3,6 +3,12 @@ import { siteConfig } from '@/config/seo'
 import { generateMassiveSitemaps } from '@/lib/sitemap-generator'
 
 // Blog posts slugs (updated with all 64 articles)
+
+
+// Required for static export
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 const blogPosts = [
   // Original posts
   'instagram-growth-2025',

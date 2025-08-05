@@ -2,6 +2,12 @@
 import { NextResponse } from 'next/server'
 import { siteConfig } from '@/config/seo'
 
+
+
+// Required for static export
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export async function GET() {
   // Blog posts from existing sitemap.ts
   const blogPosts = [

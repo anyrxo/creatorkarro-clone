@@ -1,6 +1,12 @@
 // ORYANA Video Sitemap - Multimedia SEO Domination
 import { siteConfig } from '@/config/seo'
 
+
+
+// Required for static export
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export async function GET() {
   // Video content for maximum multimedia search coverage
   const videos = [

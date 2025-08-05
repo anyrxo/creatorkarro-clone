@@ -1,20 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Absolutely minimal configuration for Vercel
-  experimental: {
-    forceSwcTransforms: true,
-  },
+  // FINAL SOLUTION: Static export with simplified routes
+  output: 'export',
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
   
-  // Essential settings only
-  compress: true,
-  poweredByHeader: false,
-  
-  // Timeout for large builds
-  staticPageGenerationTimeout: 600,
-  
-  // Basic image settings
   images: {
     unoptimized: true,
+  },
+  
+  // Remove problematic webpack configuration that causes navigator issues
+  experimental: {
+    // Remove forceSwcTransforms which was causing problems
   },
 };
 

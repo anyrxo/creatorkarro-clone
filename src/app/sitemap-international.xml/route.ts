@@ -2,6 +2,12 @@
 import { NextResponse } from 'next/server'
 import { INTERNATIONAL_MARKETS, generateInternationalSitemap } from '@/lib/international-seo'
 
+
+
+// Required for static export
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export async function GET() {
   const baseUrls = [
     '/',
