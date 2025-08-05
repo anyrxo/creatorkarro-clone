@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "node scripts/silent-build.js",
   "framework": "nextjs",
   "cleanUrls": true,
   "trailingSlash": false,
