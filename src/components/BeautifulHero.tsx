@@ -109,12 +109,11 @@ export function BeautifulHero() {
             TRANSFORM YOUR PASSION INTO PROFIT
           </motion.p>
           
-          <div className="mb-8">
+          <div className="mb-8" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
             <TypingAnimation
               text="CREATE THE FUTURE"
               className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none"
               duration={100}
-              style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
             />
           </div>
 
