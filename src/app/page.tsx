@@ -69,7 +69,7 @@ export default function HomePage() {
       description: 'Master the psychological triggers, viral content formulas, and growth automation that built our students over 10M followers. Turn your Instagram into a money-making machine.',
       gradient: 'from-blue-600 to-cyan-600',
       icon: 'smartphone',
-      stats: '6,000+ students • $2.1M+ student revenue',
+      stats: '4,000+ students • $2.1M+ student revenue',
       price: '$147',
       value: '$3,109',
       link: '/instagram-ignited'
@@ -149,9 +149,11 @@ export default function HomePage() {
     <div ref={containerRef} className="bg-black overflow-hidden">
       {/* Hero Section - What IImagined Is */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Animated Background */}
+        {/* Enhanced Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
+          
+          {/* Multiple Moving Gradients */}
           <motion.div
             className="absolute inset-0"
             animate={{
@@ -163,30 +165,80 @@ export default function HomePage() {
               repeatType: 'reverse'
             }}
             style={{
-              backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.1) 0%, transparent 50%), radial-gradient(circle at 40% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%)',
+              backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.15) 0%, transparent 50%), radial-gradient(circle at 40% 80%, rgba(236, 72, 153, 0.15) 0%, transparent 50%)',
               backgroundSize: '200% 200%'
             }}
           />
           
-          {/* Floating Elements */}
+          {/* Additional Moving Layer */}
+          <motion.div
+            className="absolute inset-0"
+            animate={{
+              backgroundPosition: ['100% 0%', '0% 100%']
+            }}
+            transition={{
+              duration: 25,
+              repeat: Infinity,
+              repeatType: 'reverse'
+            }}
+            style={{
+              backgroundImage: 'radial-gradient(circle at 60% 30%, rgba(34, 197, 94, 0.08) 0%, transparent 60%), radial-gradient(circle at 30% 70%, rgba(239, 68, 68, 0.08) 0%, transparent 60%)',
+              backgroundSize: '150% 150%'
+            }}
+          />
+          
+          {/* Enhanced Floating Elements */}
           <div className="absolute inset-0 overflow-hidden">
-            {[...Array(20)].map((_, i) => (
+            {[...Array(30)].map((_, i) => (
               <motion.div
                 key={i}
-                className="absolute w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-30"
+                className={`absolute rounded-full opacity-40 ${
+                  i % 3 === 0 ? 'bg-gradient-to-r from-blue-400 to-cyan-400' :
+                  i % 3 === 1 ? 'bg-gradient-to-r from-purple-400 to-pink-400' :
+                  'bg-gradient-to-r from-yellow-400 to-orange-400'
+                }`}
                 style={{
+                  width: `${2 + Math.random() * 4}px`,
+                  height: `${2 + Math.random() * 4}px`,
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
                 }}
                 animate={{
-                  y: [0, -100, 0],
-                  opacity: [0, 1, 0],
-                  scale: [0, 1, 0]
+                  y: [0, -150 - Math.random() * 100, 0],
+                  x: [0, (Math.random() - 0.5) * 100, 0],
+                  opacity: [0, 0.8, 0],
+                  scale: [0, 1 + Math.random() * 0.5, 0]
                 }}
                 transition={{
-                  duration: 3 + Math.random() * 2,
+                  duration: 4 + Math.random() * 3,
                   repeat: Infinity,
-                  delay: Math.random() * 2
+                  delay: Math.random() * 3,
+                  ease: "easeInOut"
+                }}
+              />
+            ))}
+          </div>
+          
+          {/* Magic Lines */}
+          <div className="absolute inset-0">
+            {[...Array(5)].map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent"
+                style={{
+                  top: `${20 + i * 15}%`,
+                  left: 0,
+                  right: 0,
+                }}
+                animate={{
+                  scaleX: [0, 1, 0],
+                  opacity: [0, 0.6, 0]
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  delay: i * 0.5,
+                  repeatDelay: 2
                 }}
               />
             ))}
@@ -200,18 +252,64 @@ export default function HomePage() {
             transition={{ duration: 1 }}
             className="max-w-6xl mx-auto"
           >
-            {/* Brand Identity */}
+            {/* Enhanced Brand Identity */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
               className="mb-8"
             >
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm border border-blue-500/30 mb-8">
-                <span className="text-white font-semibold tracking-wide">
+              <motion.div 
+                className="relative inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600/30 to-purple-600/30 backdrop-blur-md border border-blue-500/50 mb-8"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
+                {/* Glow Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-500/20 rounded-full blur-xl" />
+                
+                {/* Animated Border */}
+                <motion.div
+                  className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
+                  style={{
+                    backgroundClip: 'padding-box',
+                    mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                    maskComposite: 'xor'
+                  }}
+                  animate={{
+                    rotate: [0, 360]
+                  }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                />
+                
+                <span className="relative text-white font-bold tracking-wide text-lg">
                   <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined
                 </span>
-              </div>
+                
+                {/* Sparkle Effects */}
+                {[...Array(3)].map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute w-1 h-1 bg-white rounded-full"
+                    style={{
+                      top: `${20 + i * 20}%`,
+                      right: `${10 + i * 15}%`,
+                    }}
+                    animate={{
+                      opacity: [0, 1, 0],
+                      scale: [0, 1, 0]
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      delay: i * 0.5
+                    }}
+                  />
+                ))}
+              </motion.div>
             </motion.div>
 
             {/* Main Headline */}
@@ -247,7 +345,7 @@ export default function HomePage() {
               className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto font-medium"
             >
               Master AI automation and growth systems that built 
-              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent font-bold"> 6,000+ successful creators</span>
+              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent font-bold"> 4,000+ successful creators</span>
             </motion.p>
 
             {/* Key Stats */}
@@ -258,9 +356,9 @@ export default function HomePage() {
               className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 max-w-4xl mx-auto"
             >
               {[
-                { value: '6K+', label: 'Active Students' },
+                { value: '4K+', label: 'Active Students' },
                 { value: '10M+', label: 'Followers Built' },
-                { value: '$5M+', label: 'Student Revenue' },
+                { value: '$3M+', label: 'Student Revenue' },
                 { value: '4.9★', label: 'Average Rating' }
               ].map((stat, index) => (
                 <motion.div
@@ -278,31 +376,71 @@ export default function HomePage() {
               ))}
             </motion.div>
 
-            {/* CTA Buttons */}
+            {/* Enhanced CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4, duration: 0.8 }}
               className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
-              <Link href="/instagram-ignited" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full">
-                <ShimmerButton
-                  className="shadow-2xl text-lg px-8 py-4"
-                  shimmerColor="#ffffff"
-                  shimmerSize="0.1em"
-                  background="linear-gradient(135deg, #2563eb, #9333ea, #ec4899)"
-                  borderRadius="9999px"
-                >
-                  <span className="font-bold flex items-center gap-2">
-                    Start Your Empire <ChevronRight className="w-5 h-5" />
-                  </span>
-                </ShimmerButton>
-              </Link>
+              {/* Primary CTA with Enhanced Effects */}
+              <motion.div
+                whileHover={{ scale: 1.05, y: -5 }}
+                whileTap={{ scale: 0.95 }}
+                className="relative group"
+              >
+                {/* Glow Effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
+                
+                <Link href="/instagram-ignited" className="relative focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full">
+                  <ShimmerButton
+                    className="shadow-2xl text-lg px-10 py-5 relative z-10"
+                    shimmerColor="#ffffff"
+                    shimmerSize="0.1em"
+                    background="linear-gradient(135deg, #2563eb, #9333ea, #ec4899)"
+                    borderRadius="9999px"
+                  >
+                    <span className="font-bold flex items-center gap-3">
+                      🚀 Start Your Empire <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </ShimmerButton>
+                </Link>
+                
+                {/* Floating Particles */}
+                {[...Array(6)].map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute w-1 h-1 bg-white rounded-full opacity-0 group-hover:opacity-60"
+                    style={{
+                      top: `${20 + Math.random() * 60}%`,
+                      left: `${20 + Math.random() * 60}%`,
+                    }}
+                    animate={{
+                      y: [0, -20, 0],
+                      opacity: [0, 0.6, 0],
+                    }}
+                    transition={{
+                      duration: 2 + Math.random(),
+                      repeat: Infinity,
+                      delay: i * 0.2
+                    }}
+                  />
+                ))}
+              </motion.div>
               
-              <Link href="/story" className="group flex items-center gap-2 text-zinc-300 hover:text-white transition-colors">
-                <span className="font-medium">Our Story</span>
-                <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-              </Link>
+              {/* Secondary CTA with Hover Effect */}
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="relative group"
+              >
+                <Link href="/story" className="group flex items-center gap-3 px-6 py-3 rounded-full bg-zinc-800/50 border border-zinc-700/50 hover:border-zinc-600/50 backdrop-blur-sm text-zinc-300 hover:text-white transition-all duration-300">
+                  <span className="font-medium">Our Story</span>
+                  <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+                
+                {/* Subtle glow on hover */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
+              </motion.div>
             </motion.div>
 
             {/* Scroll Indicator */}
@@ -310,7 +448,7 @@ export default function HomePage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 2, duration: 1 }}
-              className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+              className="mt-16"
             >
               <motion.div
                 animate={{ y: [0, 10, 0] }}
@@ -891,7 +1029,7 @@ export default function HomePage() {
               </div>
             </div>
             <p className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Join 6,000+ creators who've built profitable businesses
+              Join 4,000+ creators who've built profitable businesses
             </p>
             <motion.div
               className="inline-block"
