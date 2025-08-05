@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "bunx tsc --noEmit && next lint",
-    "format": "bunx biome format --write"
+    "format": "bunx biome format --write",
+    "generate-blogs": "node src/scripts/simpleBlogGenerator.js",
+    "expand-blogs": "node src/scripts/expandBlogGeneration.js",
+    "generate-all-blogs": "npm run generate-blogs && npm run expand-blogs",
+    "generate-programmatic": "npx ts-node src/scripts/generateProgrammaticPages.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -38,6 +42,7 @@
     "glob": "^11.0.3",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
 }
