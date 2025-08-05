@@ -241,7 +241,7 @@ export default function {{COMPONENT_NAME}}() {
       })
       
       // Replace template variables
-      let pageContent = comparisonTemplate
+      const pageContent = comparisonTemplate
         .replace(/{{METADATA}}/g, JSON.stringify(metadata, null, 2))
         .replace(/{{COMPONENT_NAME}}/g, componentName)
         .replace(/{{COMPETITOR_DISPLAY}}/g, competitorDisplay)
@@ -264,7 +264,7 @@ export default function {{COMPONENT_NAME}}() {
       console.log(` Generated comparison: ${competitor}-vs-iimagined`)
     }
     
-    console.log(`<¯ Generated ${generatedCount} comparison pages`)
+    console.log(`<ï¿½ Generated ${generatedCount} comparison pages`)
   }
 
   // Generate "Best X for Y" pages
@@ -348,7 +348,7 @@ export default function {{COMPONENT_NAME}}() {
         })
         
         // Replace template variables
-        let pageContent = bestTemplate
+        const pageContent = bestTemplate
           .replace(/{{METADATA}}/g, JSON.stringify(metadata, null, 2))
           .replace(/{{COMPONENT_NAME}}/g, componentName)
           .replace(/{{CATEGORY_DISPLAY}}/g, categoryDisplay)
@@ -373,7 +373,7 @@ export default function {{COMPONENT_NAME}}() {
       if (generatedCount >= 9) break
     }
     
-    console.log(`<¯ Generated ${generatedCount} "best" pages`)
+    console.log(`<ï¿½ Generated ${generatedCount} "best" pages`)
   }
 
   // Generate tutorial and guide pages
@@ -470,7 +470,7 @@ export default function {{COMPONENT_NAME}}() {
       const contentData = this.generateTutorialContent(topic)
       
       // Replace template variables
-      let pageContent = tutorialTemplate
+      const pageContent = tutorialTemplate
         .replace(/{{METADATA}}/g, JSON.stringify(metadata, null, 2))
         .replace(/{{COMPONENT_NAME}}/g, componentName)
         .replace(/{{TITLE}}/g, contentData.title)
@@ -492,7 +492,7 @@ export default function {{COMPONENT_NAME}}() {
       console.log(` Generated tutorial: ${topic}`)
     }
     
-    console.log(`<¯ Generated ${generatedCount} tutorial pages`)
+    console.log(`<ï¿½ Generated ${generatedCount} tutorial pages`)
   }
 
   // Helper methods
@@ -624,13 +624,13 @@ export default function {{COMPONENT_NAME}}() {
 
   // Execute all content generation
   static async generateAllContent(): Promise<void> {
-    console.log('=€ ORYANA: Starting mass content generation...')
+    console.log('=ï¿½ ORYANA: Starting mass content generation...')
     
     await this.generateComparisonPages()
     await this.generateBestPages()
     await this.generateTutorialPages()
     
-    console.log('<¯ ORYANA: Mass content generation complete!')
+    console.log('<ï¿½ ORYANA: Mass content generation complete!')
   }
 }
 

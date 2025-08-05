@@ -1,4 +1,6 @@
+import React from 'react'
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { generateOptimizedMeta } from '@/utils/metaGenerator'
 import FAQSchema from '@/components/seo/FAQSchema'
 
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
 
 export default function AiAutomationBeginnersGuidePage() {
   const tableOfContents = ["Introduction","Fundamentals","Advanced Strategies"]
-  const faqs = []
+  const faqs: Array<{question: string, answer: string}> = []
 
   return (
     <div className="min-h-screen bg-dark text-white">
@@ -72,7 +74,7 @@ export default function AiAutomationBeginnersGuidePage() {
           </div>
           
           {/* Content sections would go here */}
-          /* Content would go here */
+          {/* Content would go here */}
           
           {/* FAQ Section */}
           <section className="mt-16">
@@ -86,12 +88,12 @@ export default function AiAutomationBeginnersGuidePage() {
             <p className="text-xl text-zinc-300 mb-6">
               Join 127K+ students who have transformed their results with our proven system.
             </p>
-            <a 
+            <Link 
               href="/courses"
               className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-xl text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
             >
               Get Started Today - 73% OFF
-            </a>
+            </Link>
           </section>
         </div>
       </article>

@@ -1,52 +1,54 @@
+import React from 'react'
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { generateOptimizedMeta } from '@/utils/metaGenerator'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 export const metadata: Metadata = {
-  "title": "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
-  "description": "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
-  "keywords": "artificial intelligence, machine learning, ai automation, ai tools, ai workflows, ai productivity, ai business solutions, ai integration, ai optimization, ai-powered systems, Content Creation With Ai, Content Creation With Ai course, Content Creation With Ai training, learn Content Creation With Ai, Content Creation With Ai mastery",
-  "openGraph": {
-    "title": "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
-    "description": "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
-    "images": [
+  title: "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
+  description: "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
+  keywords: "artificial intelligence, machine learning, ai automation, ai tools, ai workflows, ai productivity, ai business solutions, ai integration, ai optimization, ai-powered systems, Content Creation With Ai, Content Creation With Ai course, Content Creation With Ai training, learn Content Creation With Ai, Content Creation With Ai mastery",
+  openGraph: {
+    title: "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
+    description: "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
+    images: [
       {
-        "url": "/api/og?title=Content%20Creation%20With%20Ai%3A%20Complete%20Guide%20%5B2025%5D&urgency=true",
-        "width": 1200,
-        "height": 630,
-        "alt": "Content Creation With Ai: Complete Guide [2025] | IImagined.ai"
+        url: "/api/og?title=Content%20Creation%20With%20Ai%3A%20Complete%20Guide%20%5B2025%5D&urgency=true",
+        width: 1200,
+        height: 630,
+        alt: "Content Creation With Ai: Complete Guide [2025] | IImagined.ai"
       }
     ],
-    "type": "website",
-    "siteName": "IImagined.ai"
+    type: "website",
+    siteName: "IImagined.ai"
   },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
-    "description": "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
-    "images": [
+  twitter: {
+    card: "summary_large_image",
+    title: "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
+    description: "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
+    images: [
       "/api/og?title=Content%20Creation%20With%20Ai%3A%20Complete%20Guide%20%5B2025%5D&urgency=true"
     ]
   },
-  "robots": {
-    "index": true,
-    "follow": true,
-    "googleBot": {
-      "index": true,
-      "follow": true,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1
     }
   },
-  "alternates": {
-    "canonical": "https://iimagined.ai/content-creation-with-ai"
+  alternates: {
+    canonical: "https://iimagined.ai/content-creation-with-ai"
   }
 }
 
 export default function ContentCreationWithAiPage() {
   const tableOfContents = ["Introduction","Fundamentals","Advanced Strategies"]
-  const faqs = []
+  const faqs: Array<{question: string, answer: string}> = []
 
   return (
     <div className="min-h-screen bg-dark text-white">
@@ -72,7 +74,7 @@ export default function ContentCreationWithAiPage() {
           </div>
           
           {/* Content sections would go here */}
-          /* Content would go here */
+          {/* Content would go here */}
           
           {/* FAQ Section */}
           <section className="mt-16">
@@ -86,12 +88,12 @@ export default function ContentCreationWithAiPage() {
             <p className="text-xl text-zinc-300 mb-6">
               Join 127K+ students who have transformed their results with our proven system.
             </p>
-            <a 
+            <Link 
               href="/courses"
               className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-xl text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
             >
               Get Started Today - 73% OFF
-            </a>
+            </Link>
           </section>
         </div>
       </article>
