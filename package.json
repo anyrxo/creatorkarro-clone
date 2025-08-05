@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --turbopack",
-    "build": "node scripts/build-with-ignore.js",
-    "build-force": "./build.sh",
+    "build": "./build.sh",
+    "build-smart": "node scripts/build-with-ignore.js",
     "start": "next start",
     "lint": "bunx tsc --noEmit && next lint",
     "format": "bunx biome format --write",
