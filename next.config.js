@@ -13,5 +13,6 @@ const nextConfig = {
   experimental: {
     // Remove forceSwcTransforms which was causing problems
   },
+};
 
 module.exports = nextConfig
