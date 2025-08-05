@@ -1,5 +1,9 @@
 import { ImageResponse } from 'next/og'
 
+// Required for static export
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export const runtime = 'edge'
 
 export const alt = 'IImagined.ai - Master Instagram Growth & AI Automation'
