@@ -21,22 +21,7 @@ export function BeautifulHero() {
   const opacity = useSpring(useTransform(scrollYProgress, [0, 0.5], [1, 0]), springConfig)
   const scale = useSpring(useTransform(scrollYProgress, [0, 0.5], [1, 0.8]), springConfig)
 
-  // Floating animation for background elements
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const { clientX, clientY } = e
-      const { innerWidth, innerHeight } = window
-      setMousePosition({
-        x: (clientX - innerWidth / 2) / innerWidth,
-        y: (clientY - innerHeight / 2) / innerHeight
-      })
-    }
-
-    window.addEventListener('mousemove', handleMouseMove)
-    return () => window.removeEventListener('mousemove', handleMouseMove)
-  }, [])
+  // Remove mouse tracking - not needed anymore
 
   // TypingAnimation now provides the scramble effect
 
@@ -46,18 +31,16 @@ export function BeautifulHero() {
       className="relative min-h-screen overflow-hidden bg-gradient-to-b from-black via-zinc-900 to-black"
       style={{ y, opacity, scale }}
     >
-      {/* Premium Animated gradient orbs */}
+      {/* Static gradient orbs - no mouse following */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           className="absolute w-[1000px] h-[1000px] rounded-full bg-gradient-to-r from-purple-600/30 to-blue-600/30 blur-3xl"
           animate={{
-            x: mousePosition.x * 120,
-            y: mousePosition.y * 120,
+            scale: [1, 1.1, 1],
             rotate: [0, 360],
           }}
           transition={{ 
-            x: { type: "spring", damping: 30 },
-            y: { type: "spring", damping: 30 },
+            scale: { duration: 8, repeat: Infinity, ease: "easeInOut" },
             rotate: { duration: 20, repeat: Infinity, ease: "linear" }
           }}
           style={{ left: '15%', top: '5%' }}
@@ -65,13 +48,11 @@ export function BeautifulHero() {
         <motion.div
           className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-pink-600/25 to-purple-600/25 blur-3xl"
           animate={{
-            x: mousePosition.x * -100,
-            y: mousePosition.y * -100,
+            scale: [1, 1.2, 1],
             rotate: [360, 0],
           }}
           transition={{ 
-            x: { type: "spring", damping: 25 },
-            y: { type: "spring", damping: 25 },
+            scale: { duration: 12, repeat: Infinity, ease: "easeInOut" },
             rotate: { duration: 15, repeat: Infinity, ease: "linear" }
           }}
           style={{ right: '5%', bottom: '15%' }}
@@ -79,46 +60,12 @@ export function BeautifulHero() {
         <motion.div
           className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-cyan-600/20 to-blue-600/20 blur-3xl"
           animate={{
-            x: mousePosition.x * 80,
-            y: mousePosition.y * -80,
-            scale: [1, 1.2, 1],
+            scale: [1, 1.3, 1],
           }}
           transition={{ 
-            x: { type: "spring", damping: 35 },
-            y: { type: "spring", damping: 35 },
-            scale: { duration: 8, repeat: Infinity, ease: "easeInOut" }
+            scale: { duration: 10, repeat: Infinity, ease: "easeInOut" }
           }}
           style={{ left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}
-        />
-        
-        {/* Additional Premium Orbs */}
-        <motion.div
-          className="absolute w-[300px] h-[300px] rounded-full bg-gradient-to-r from-yellow-500/15 to-orange-500/15 blur-2xl"
-          animate={{
-            x: mousePosition.x * -50,
-            y: mousePosition.y * 70,
-            rotate: [0, 180, 360],
-          }}
-          transition={{ 
-            x: { type: "spring", damping: 40 },
-            y: { type: "spring", damping: 40 },
-            rotate: { duration: 12, repeat: Infinity, ease: "linear" }
-          }}
-          style={{ left: '80%', top: '20%' }}
-        />
-        <motion.div
-          className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-green-500/10 to-cyan-500/10 blur-2xl"
-          animate={{
-            x: mousePosition.x * 90,
-            y: mousePosition.y * 90,
-            rotate: [180, 540],
-          }}
-          transition={{ 
-            x: { type: "spring", damping: 20 },
-            y: { type: "spring", damping: 20 },
-            rotate: { duration: 18, repeat: Infinity, ease: "linear" }
-          }}
-          style={{ left: '10%', bottom: '10%' }}
         />
       </div>
 
@@ -250,68 +197,103 @@ export function BeautifulHero() {
         </motion.div>
       </div>
 
-      {/* Premium floating particles with magic trails */}
+      {/* Pulsing Hexagonal Nodes */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {/* Slow breathing hex nodes */}
+        {[...Array(8)].map((_, i) => (
           <motion.div
-            key={i}
-            className={`absolute rounded-full ${
-              i % 4 === 0 ? 'w-2 h-2 bg-gradient-to-r from-blue-400/60 to-cyan-400/60' :
-              i % 4 === 1 ? 'w-1.5 h-1.5 bg-gradient-to-r from-purple-400/50 to-pink-400/50' :
-              i % 4 === 2 ? 'w-1 h-1 bg-gradient-to-r from-yellow-400/40 to-orange-400/40' :
-              'w-0.5 h-0.5 bg-white/30'
-            } shadow-lg`}
-            initial={{
-              x: `${Math.random() * 100}%`,
-              y: '110%',
-              scale: 0,
-              opacity: 0,
-            }}
-            animate={{
-              y: '-10%',
-              x: `${Math.random() * 100}%`,
-              scale: [0, 1, 1, 0],
-              opacity: [0, 0.8, 0.8, 0],
-              rotate: [0, 180, 360],
-            }}
-            transition={{
-              duration: Math.random() * 20 + 15,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: Math.random() * 10,
-            }}
-          />
-        ))}
-        
-        {/* Magical star bursts */}
-        {[...Array(6)].map((_, i) => (
-          <motion.div
-            key={`star-${i}`}
+            key={`hex-${i}`}
             className="absolute"
             style={{
-              left: `${20 + Math.random() * 60}%`,
-              top: `${20 + Math.random() * 60}%`,
+              left: `${10 + Math.random() * 80}%`,
+              top: `${10 + Math.random() * 80}%`,
             }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{
-              scale: [0, 1, 0],
-              opacity: [0, 1, 0],
-              rotate: [0, 180],
+              scale: [0, 1, 1.2, 1, 0],
+              opacity: [0, 0.6, 0.8, 0.6, 0],
+              rotate: [0, 120, 240, 360],
             }}
             transition={{
-              duration: 4,
+              duration: 6 + Math.random() * 4, // 6-10 second breathing
               repeat: Infinity,
               delay: Math.random() * 8,
               ease: "easeInOut"
             }}
           >
-            <div className="relative">
-              <div className="w-1 h-6 bg-gradient-to-t from-transparent via-white/60 to-transparent rotate-0" />
-              <div className="w-1 h-6 bg-gradient-to-t from-transparent via-white/60 to-transparent rotate-45 absolute top-0" />
-              <div className="w-1 h-6 bg-gradient-to-t from-transparent via-white/60 to-transparent rotate-90 absolute top-0" />
-              <div className="w-1 h-6 bg-gradient-to-t from-transparent via-white/60 to-transparent rotate-135 absolute top-0" />
-            </div>
+            {/* Hexagon shape */}
+            <div className={`relative w-6 h-6 ${
+              i % 3 === 0 ? 'bg-blue-400/40' :
+              i % 3 === 1 ? 'bg-purple-400/40' : 
+              'bg-cyan-400/40'
+            }`}
+            style={{
+              clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+              boxShadow: '0 0 20px currentColor'
+            }} />
           </motion.div>
+        ))}
+        
+        {/* Quick zap hex nodes */}
+        {[...Array(12)].map((_, i) => (
+          <motion.div
+            key={`zap-${i}`}
+            className="absolute"
+            style={{
+              left: `${5 + Math.random() * 90}%`,
+              top: `${5 + Math.random() * 90}%`,
+            }}
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{
+              scale: [0, 1.5, 0],
+              opacity: [0, 1, 0],
+              rotate: [0, 60],
+            }}
+            transition={{
+              duration: 0.8, // Quick zap
+              repeat: Infinity,
+              delay: Math.random() * 15, // Random intervals
+              ease: "easeOut",
+              repeatDelay: 8 + Math.random() * 12 // 8-20 second gaps
+            }}
+          >
+            {/* Small hex with electric effect */}
+            <div className={`relative w-3 h-3 ${
+              i % 4 === 0 ? 'bg-yellow-300/80' :
+              i % 4 === 1 ? 'bg-cyan-300/80' :
+              i % 4 === 2 ? 'bg-purple-300/80' :
+              'bg-white/80'
+            }`}
+            style={{
+              clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+              boxShadow: '0 0 15px currentColor, 0 0 30px currentColor'
+            }} />
+          </motion.div>
+        ))}
+        
+        {/* Connecting lines between some nodes */}
+        {[...Array(4)].map((_, i) => (
+          <motion.div
+            key={`line-${i}`}
+            className="absolute w-px bg-gradient-to-b from-transparent via-blue-400/30 to-transparent"
+            style={{
+              left: `${20 + i * 20}%`,
+              top: '20%',
+              height: '60%',
+            }}
+            initial={{ scaleY: 0, opacity: 0 }}
+            animate={{
+              scaleY: [0, 1, 0],
+              opacity: [0, 0.5, 0],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              delay: i * 2,
+              ease: "easeInOut",
+              repeatDelay: 10
+            }}
+          />
         ))}
       </div>
     </motion.section>
