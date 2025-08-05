@@ -183,125 +183,126 @@ export function BeautifulHero() {
         </motion.div>
       </div>
 
-      {/* Pulsing Hexagonal Nodes */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Slow breathing hex nodes */}
-        {[...Array(8)].map((_, i) => {
-          const positions = [
-            { left: '15%', top: '20%' },
-            { left: '85%', top: '25%' },
-            { left: '25%', top: '70%' },
-            { left: '75%', top: '80%' },
-            { left: '50%', top: '15%' },
-            { left: '10%', top: '60%' },
-            { left: '90%', top: '65%' },
-            { left: '60%', top: '45%' }
-          ]
-          
-          return (
-            <motion.div
-              key={`hex-${i}`}
-              className="absolute"
-              style={positions[i]}
-              animate={{
-                scale: [0.8, 1.4, 0.8],
-                opacity: [0.3, 0.9, 0.3],
-                rotate: [0, 360],
-              }}
-              transition={{
-                duration: 4 + i * 0.5, // Staggered breathing
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: i * 0.8
-              }}
-            >
-              {/* Hexagon shape with stronger pulse */}
-              <motion.div 
-                className={`relative w-8 h-8 ${
-                  i % 3 === 0 ? 'bg-blue-400/60' :
-                  i % 3 === 1 ? 'bg-purple-400/60' : 
-                  'bg-cyan-400/60'
-                }`}
-                style={{
-                  clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
-                  boxShadow: '0 0 30px currentColor, 0 0 60px currentColor',
-                  filter: 'brightness(1.2)'
-                }}
-                animate={{
-                  boxShadow: [
-                    '0 0 10px currentColor, 0 0 20px currentColor',
-                    '0 0 40px currentColor, 0 0 80px currentColor',
-                    '0 0 10px currentColor, 0 0 20px currentColor'
-                  ]
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-            </motion.div>
-          )
-        })}
-        
-        {/* Quick zap hex nodes */}
+      {/* Pulsing Grid Lines */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Horizontal Grid Lines */}
         {[...Array(12)].map((_, i) => (
           <motion.div
-            key={`zap-${i}`}
-            className="absolute"
+            key={`h-line-${i}`}
+            className="absolute w-full h-px"
             style={{
-              left: `${5 + Math.random() * 90}%`,
-              top: `${5 + Math.random() * 90}%`,
+              top: `${8 + i * 8}%`,
+              background: 'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.4), transparent)'
             }}
-            initial={{ scale: 0, opacity: 0 }}
             animate={{
-              scale: [0, 1.5, 0],
-              opacity: [0, 1, 0],
-              rotate: [0, 60],
+              opacity: [0, 0.8, 0],
+              scaleX: [0, 1, 0],
+              background: [
+                'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)',
+                'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.8), transparent)',
+                'linear-gradient(90deg, transparent, rgba(147, 51, 234, 0.6), transparent)',
+                'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)'
+              ]
             }}
             transition={{
-              duration: 0.8, // Quick zap
+              duration: 4 + Math.random() * 2,
               repeat: Infinity,
-              delay: Math.random() * 15, // Random intervals
-              ease: "easeOut",
-              repeatDelay: 8 + Math.random() * 12 // 8-20 second gaps
+              delay: i * 0.3,
+              ease: "easeInOut"
             }}
-          >
-            {/* Small hex with electric effect */}
-            <div className={`relative w-3 h-3 ${
-              i % 4 === 0 ? 'bg-yellow-300/80' :
-              i % 4 === 1 ? 'bg-cyan-300/80' :
-              i % 4 === 2 ? 'bg-purple-300/80' :
-              'bg-white/80'
-            }`}
-            style={{
-              clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
-              boxShadow: '0 0 15px currentColor, 0 0 30px currentColor'
-            }} />
-          </motion.div>
+          />
         ))}
-        
-        {/* Connecting lines between some nodes */}
-        {[...Array(4)].map((_, i) => (
+
+        {/* Vertical Grid Lines */}
+        {[...Array(10)].map((_, i) => (
           <motion.div
-            key={`line-${i}`}
-            className="absolute w-px bg-gradient-to-b from-transparent via-blue-400/30 to-transparent"
+            key={`v-line-${i}`}
+            className="absolute h-full w-px"
             style={{
-              left: `${20 + i * 20}%`,
-              top: '20%',
-              height: '60%',
+              left: `${10 + i * 8}%`,
+              background: 'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.4), transparent)'
             }}
-            initial={{ scaleY: 0, opacity: 0 }}
             animate={{
+              opacity: [0, 0.6, 0],
               scaleY: [0, 1, 0],
-              opacity: [0, 0.5, 0],
+              background: [
+                'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)',
+                'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.7), transparent)',
+                'linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.5), transparent)',
+                'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)'
+              ]
+            }}
+            transition={{
+              duration: 5 + Math.random() * 2,
+              repeat: Infinity,
+              delay: i * 0.4 + 1,
+              ease: "easeInOut"
+            }}
+          />
+        ))}
+
+        {/* Pulse Wave Effect - Horizontal */}
+        <motion.div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(0deg, transparent 0%, rgba(59, 130, 246, 0.1) 50%, transparent 100%)'
+          }}
+          animate={{
+            y: ['-100%', '100%'],
+            opacity: [0, 1, 0]
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            repeatDelay: 4
+          }}
+        />
+
+        {/* Pulse Wave Effect - Vertical */}
+        <motion.div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(90deg, transparent 0%, rgba(147, 51, 234, 0.1) 50%, transparent 100%)'
+          }}
+          animate={{
+            x: ['-100%', '100%'],
+            opacity: [0, 1, 0]
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            repeatDelay: 6,
+            delay: 2
+          }}
+        />
+
+        {/* Grid Intersection Points */}
+        {[...Array(20)].map((_, i) => (
+          <motion.div
+            key={`dot-${i}`}
+            className="absolute w-1 h-1 rounded-full"
+            style={{
+              left: `${10 + (i % 8) * 10}%`,
+              top: `${20 + Math.floor(i / 8) * 15}%`,
+              background: 'rgba(59, 130, 246, 0.6)'
+            }}
+            animate={{
+              scale: [0, 2, 0],
+              opacity: [0, 1, 0],
+              boxShadow: [
+                '0 0 0px rgba(59, 130, 246, 0)',
+                '0 0 20px rgba(59, 130, 246, 0.8)',
+                '0 0 0px rgba(59, 130, 246, 0)'
+              ]
             }}
             transition={{
               duration: 3,
               repeat: Infinity,
-              delay: i * 2,
+              delay: Math.random() * 6,
               ease: "easeInOut",
-              repeatDelay: 10
+              repeatDelay: 8 + Math.random() * 4
             }}
           />
         ))}
