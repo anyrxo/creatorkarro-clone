@@ -1,6 +1,13 @@
 {
+  "buildCommand": "npm run build",
+  "framework": "nextjs",
   "cleanUrls": true,
   "trailingSlash": false,
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "headers": [
     {
       "source": "/(.*)",
@@ -10,6 +17,16 @@
           "value": "s-maxage=0"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/api/sitemap"
+    },
+    {
+      "source": "/robots.txt", 
+      "destination": "/api/robots"
     }
   ]
 }
