@@ -1,11 +1,29 @@
+// Load polyfills first
+require('./polyfills.js');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Performance optimizations
+  output: 'standalone',
+  // Force dynamic rendering to prevent SSR issues
   experimental: {
-    optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react', 'framer-motion'],
-    optimizeCss: true,
-    serverMinification: true,
+    forceSwcTransforms: true,
   },
+  
+  // Disable static optimization for problematic pages
+  staticPageGenerationTimeout: 1000,
+  
+  // Handle build errors more gracefully
+  onDemandEntries: {
+    maxInactiveAge: 25 * 1000,
+    pagesBufferLength: 2,
+  },
+  
+  // Performance optimizations (temporarily disabled for debugging)
+  // experimental: {
+  //   optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react', 'framer-motion'],
+  //   optimizeCss: true,
+  //   serverMinification: true,
+  // },
 
   // Turbopack configuration (now stable)
   turbopack: {
@@ -100,14 +118,10 @@ const nextConfig = {
             key: 'Strict-Transport-Security',
             value: 'max-age=31536000; includeSubDomains; preload'
           },
-          // Anti-scraping headers
+          // SEO Performance Headers (Modified for better crawling)
           {
             key: 'X-Robots-Tag',
-            value: 'noarchive, nosnippet, notranslate, noimageindex'
-          },
-          {
-            key: 'Cache-Control',
-            value: 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0'
+            value: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
           },
           // Performance headers
           {
@@ -266,7 +280,23 @@ const nextConfig = {
   },
 
   // Webpack optimizations for MAXIMUM performance
-  webpack: (config, { dev, isServer }) => {
+  webpack: (config, { dev, isServer, webpack }) => {
+    // Fix 'self is not defined' error during SSR
+    if (isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        'self': false,
+      };
+      
+      // Add global polyfill for 'self'
+      config.plugins.push(
+        new webpack.DefinePlugin({
+          'global.self': 'global',
+          'globalThis.self': 'globalThis',
+        })
+      );
+    }
+
     if (!dev) {
       // Dead code elimination
       config.optimization.usedExports = true

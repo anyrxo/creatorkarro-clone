@@ -1,4 +1,6 @@
 {
+  "buildCommand": "node scripts/silent-build.js",
+  "framework": "nextjs",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
@@ -10,6 +12,16 @@
           "value": "s-maxage=0"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/api/sitemap"
+    },
+    {
+      "source": "/robots.txt", 
+      "destination": "/api/robots"
     }
   ]
 }

@@ -22,7 +22,8 @@ export default function Footer() {
     legal: [
       { name: 'Refund Policy', href: '/refund-policy' },
       { name: 'Privacy Policy', href: '/privacy-policy' },
-      { name: 'Terms of Service', href: '/terms' }
+      { name: 'Terms of Service', href: '/terms' },
+      { name: 'Cookie Policy', href: '/cookie-policy' }
     ],
     social: [
       { name: 'Instagram', href: 'https://www.instagram.com/anyrxo/', platform: 'instagram' },

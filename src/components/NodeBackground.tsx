@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 interface Node {
   x: number
@@ -15,8 +15,14 @@ export default function NodeBackground() {
   const nodesRef = useRef<Node[]>([])
   const animationRef = useRef<number>()
   const mouseRef = useRef({ x: 0, y: 0 })
+  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isClient) return
     const canvas = canvasRef.current
     if (!canvas) return
 
@@ -193,7 +199,11 @@ export default function NodeBackground() {
         cancelAnimationFrame(animationRef.current)
       }
     }
-  }, [])
+  }, [isClient])
+
+  if (!isClient) {
+    return null
+  }
 
   return (
     <canvas

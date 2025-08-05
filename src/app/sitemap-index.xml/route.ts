@@ -1,39 +1,47 @@
+// Dynamic Sitemap Index Generator - Part of TOXIC SEO Strategy
+import { NextResponse } from 'next/server'
 import { siteConfig } from '@/config/seo'
 
 export async function GET() {
   const sitemaps = [
     {
       url: `${siteConfig.url}/sitemap.xml`,
-      lastModified: new Date(),
+      lastModified: new Date().toISOString(),
     },
     {
-      url: `${siteConfig.url}/news-sitemap.xml`,
-      lastModified: new Date(),
+      url: `${siteConfig.url}/blog-sitemap.xml`,
+      lastModified: new Date().toISOString(),
     },
     {
-      url: `${siteConfig.url}/sitemap-international.xml`,
-      lastModified: new Date(),
+      url: `${siteConfig.url}/pages-sitemap.xml`,
+      lastModified: new Date().toISOString(),
     },
     {
-      url: `${siteConfig.url}/rss.xml`,
-      lastModified: new Date(),
+      url: `${siteConfig.url}/products-sitemap.xml`,
+      lastModified: new Date().toISOString(),
+    },
+    {
+      url: `${siteConfig.url}/geo-sitemap.xml`,
+      lastModified: new Date().toISOString(),
     }
   ]
-  
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+
+  const sitemapIndexXml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${sitemaps.map(sitemap => `
-  <sitemap>
+${sitemaps
+  .map(
+    (sitemap) => `  <sitemap>
     <loc>${sitemap.url}</loc>
-    <lastmod>${sitemap.lastModified.toISOString()}</lastmod>
-  </sitemap>
-  `).join('')}
+    <lastmod>${sitemap.lastModified}</lastmod>
+  </sitemap>`
+  )
+  .join('\n')}
 </sitemapindex>`
 
-  return new Response(xml, {
+  return new NextResponse(sitemapIndexXml, {
     headers: {
       'Content-Type': 'application/xml',
-      'Cache-Control': 'public, max-age=7200' // 2 hours cache
-    }
+      'Cache-Control': 'public, max-age=3600, s-maxage=3600',
+    },
   })
 }
