@@ -950,83 +950,63 @@ export default function InstagramIgnitedPage() {
           <div className={`mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
             <h3 className="text-3xl md:text-4xl font-bold mb-12 text-center">Compare Your Options</h3>
             
-            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {/* Trial & Error Method - Disabled */}
-              <div className="bg-zinc-900 border border-red-500 rounded-2xl p-6 text-center opacity-60">
-                <h4 className="text-lg font-bold mb-4 text-red-400">Trial & Error Method</h4>
-                <div className="text-2xl font-black mb-4 text-red-400">$10,000+</div>
-                <div className="text-sm text-gray-400 mb-6">LOST REVENUE</div>
-                <ul className="text-left space-y-2 text-gray-300 text-sm">
-                  <li>• Years of failed launches</li>
-                  <li>• Wasted time and money</li>
-                  <li>• No guidance or system</li>
-                  <li>• High stress and frustration</li>
-                  <li>• No guarantee of success</li>
-                </ul>
-                <div className="mt-6 bg-red-900/30 border border-red-500 rounded-lg p-3">
-                  <p className="text-red-400 font-bold text-sm flex items-center justify-center gap-2">
-                    {getIcon('xCircle', 'w-4 h-4')} NOT RECOMMENDED
-                  </p>
-                </div>
-              </div>
-
-              {/* Instagram Ignited */}
-              <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 border-2 border-green-500 rounded-2xl p-6 text-center relative overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 bg-green-500 text-black text-sm font-bold py-2">
-                  LIFETIME ACCESS
-                </div>
-                <div className="mt-8">
-                  <h4 className="text-lg font-bold mb-4 text-green-400">Instagram Ignited</h4>
-                  <div className="mb-2">
-                    <span className="text-sm text-gray-400 line-through">$3,949</span>
-                  </div>
-                  <div className="text-3xl font-black mb-4 text-green-400">$147</div>
-                  <div className="text-sm text-gray-400 mb-6">ONE-TIME PAYMENT</div>
-                  <ul className="text-left space-y-2 text-gray-300 text-sm">
-                    <li>• Skip 2+ years of trial & error</li>
-                    <li>• Gain 10K+ followers in 90 days or less</li>
-                    <li>• Replace $5K/month agency costs with DIY system</li>
-                    <li>• Avoid $15K in failed ad spend</li>
-                    <li>• Generate first $3K in brand deals within 60 days</li>
-                    <li>• Save $3,802! Complete $3,949 system for just $147</li>
-                  </ul>
-                </div>
-              </div>
-              
-              {/* Whop All-Access */}
-              <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-2 border-purple-500 rounded-2xl p-6 text-center relative overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer animate-pulse">
-                <div className="absolute top-0 left-0 right-0 bg-purple-500 text-white text-sm font-bold py-2">
-                  POPULAR - ALL 5 COURSES
-                </div>
-                <div className="mt-8">
-                  <h4 className="text-lg font-bold mb-4 text-purple-400">Whop All-Access</h4>
-                  <div className="mb-2">
-                    <span className="text-sm text-zinc-300 line-through">$99.99</span>
-                  </div>
-                  <div className="text-3xl font-black mb-4 text-purple-400">$39.99</div>
-                  <div className="text-sm text-zinc-300 mb-6">PER MONTH</div>
-                  <ul className="text-left space-y-2 text-zinc-200 text-sm mb-6">
-                    <li>• Complete $88K/month business system</li>
-                    <li>• Instagram: 0 to 500K followers proven method</li>
-                    <li>• AI Influencers: $20K/month passive income</li>
-                    <li>• Digital Products: $50K launch blueprints</li>
-                    <li>• ComfyUI: Professional AI image business</li>
-                    <li>• Live coaching calls + private community</li>
-                    <li>• New courses added monthly (5+ planned)</li>
-                    <li>• Cancel anytime, keep what you downloaded</li>
-                  </ul>
-                  <Link
-                    href="https://whop.com/anyro/premium-monthly-0a/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 w-full focus:outline-none focus:ring-4 focus:ring-purple-500/50"
-                    aria-label="Join Whop All-Access monthly subscription"
-                  >
-                    Join Whop All-Access
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <PricingComparison 
+              options={[
+                {
+                  name: "Trial & Error Method",
+                  description: "LOST REVENUE",
+                  price: "$10,000+",
+                  features: [
+                    "Years of failed launches",
+                    "Wasted time and money", 
+                    "No guidance or system",
+                    "High stress and frustration",
+                    "No guarantee of success"
+                  ],
+                  badge: "⚠ NOT RECOMMENDED",
+                  badgeColor: "bg-red-500",
+                  disabled: true
+                },
+                {
+                  name: "Instagram Ignited",
+                  description: "ONE-TIME PAYMENT",
+                  price: "$147",
+                  originalPrice: "$3,949",
+                  features: [
+                    "Skip 2+ years of trial & error",
+                    "Gain 10K+ followers in 90 days or less",
+                    "Replace $5K/month agency costs with DIY system",
+                    "Avoid $15K in failed ad spend",
+                    "Generate first $3K in brand deals within 60 days",
+                    "Save $3,802! Complete $3,949 system for just $147"
+                  ],
+                  badge: "LIFETIME ACCESS",
+                  badgeColor: "bg-green-500"
+                },
+                {
+                  name: "Whop All-Access",
+                  description: "PER MONTH", 
+                  price: "$39.99",
+                  originalPrice: "$99.99",
+                  features: [
+                    "Complete $88K/month business system",
+                    "Instagram: 0 to 500K followers proven method",
+                    "AI Influencers: $20K/month passive income",
+                    "Digital Products: $50K launch blueprints",
+                    "ComfyUI: Professional AI image business",
+                    "Live coaching calls + private community",
+                    "New courses added monthly (5+ planned)",
+                    "Cancel anytime, keep what you downloaded"
+                  ],
+                  badge: "POPULAR - ALL 5 COURSES",
+                  badgeColor: "bg-purple-500",
+                  popular: true,
+                  buttonText: "Join Whop All-Access",
+                  buttonLink: "https://whop.com/anyro/premium-monthly-0a/"
+                }
+              ]}
+              isVisible={pricingAnimation.isVisible}
+            />
           </div>
 
           {/* Scarcity & Urgency */}

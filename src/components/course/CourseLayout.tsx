@@ -225,78 +225,94 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
           key={index}
           className={`${
             option.disabled 
-              ? 'bg-zinc-900 border border-zinc-700' 
+              ? 'bg-zinc-900/60 border border-red-500/30' 
               : option.popular 
-                ? 'bg-gradient-to-br from-pink-900/30 to-purple-900/30 border-2 border-pink-500' 
-                : 'bg-zinc-900 border border-zinc-700'
-          } rounded-2xl p-8 text-center card-hover hover-lift scroll-fade-up relative ${
+                ? 'bg-zinc-900/60 border border-purple-500/50' 
+                : 'bg-zinc-900/60 border border-green-500/50'
+          } backdrop-blur-sm rounded-2xl p-8 text-center hover:scale-105 transition-all duration-300 scroll-fade-up relative ${
             isVisible ? `visible scroll-stagger-${index + 1}` : ''
-          } ${
-            option.hoverEffect ? 'hover:scale-105 transition-transform duration-300' : ''
           }`}
         >
           {option.badge && (
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-              <div className={`${option.badgeColor || 'bg-red-500'} text-white px-3 py-1 rounded-full font-bold text-xs ${option.popular ? 'animate-pulse' : ''}`}>
+              <div className={`${option.badgeColor || 'bg-red-500'} text-white px-3 py-1 rounded-full font-bold text-xs`}>
                 {option.badge}
               </div>
             </div>
           )}
 
           <div className="mb-8">
-            <h3 className={`text-2xl font-bold mb-2 ${option.disabled ? 'text-gray-400' : option.popular ? 'text-pink-400' : 'text-white'}`}>
+            <h3 className={`text-2xl font-bold mb-2 ${
+              option.disabled ? 'text-red-400' : 
+              option.popular ? 'text-purple-400' : 
+              'text-green-400'
+            }`}>
               {option.name}
             </h3>
-            <p className={`${option.disabled ? 'text-gray-500' : 'text-gray-300'} mb-4`}>{option.description}</p>
+            <p className="text-gray-300 mb-4 text-sm">{option.description}</p>
             
             {option.originalPrice && (
               <div className="flex items-center justify-center space-x-3 mb-2">
-                <span className="text-gray-400 line-through text-2xl">{option.originalPrice}</span>
-                {!option.disabled && <span className="text-green-400 font-bold text-lg">Save {parseInt(option.originalPrice.replace('$', '').replace(',', '')) - parseInt(option.price.replace('$', '').replace(',', '')) > 0 ? `$${parseInt(option.originalPrice.replace('$', '').replace(',', '')) - parseInt(option.price.replace('$', '').replace(',', ''))}` : ''}!</span>}
+                <span className="text-gray-400 line-through text-lg">{option.originalPrice}</span>
+                {!option.disabled && <span className="text-green-400 font-bold text-sm">Save {parseInt(option.originalPrice.replace('$', '').replace(',', '')) - parseInt(option.price.replace('$', '').replace(',', '')) > 0 ? `$${parseInt(option.originalPrice.replace('$', '').replace(',', '')) - parseInt(option.price.replace('$', '').replace(',', ''))}` : ''}!</span>}
               </div>
             )}
             
-            <div className={`text-6xl font-bold mb-2 ${option.disabled ? 'text-gray-500' : option.popular ? 'text-pink-400' : 'text-white'}`}>
+            <div className={`text-4xl font-bold mb-2 ${
+              option.disabled ? 'text-red-400' : 
+              option.popular ? 'text-purple-400' : 
+              'text-green-400'
+            }`}>
               {option.price}
             </div>
-            <p className={option.disabled ? 'text-gray-500' : 'text-gray-300'}>
-              {option.disabled ? 'Lost time and money' : 
-               option.description === 'PER MONTH' ? 'Monthly subscription, cancel anytime' : 
-               'One-time payment, lifetime access'}
+            <p className="text-gray-400 text-sm">
+              {option.disabled ? 'LOST REVENUE' : 
+               option.description === 'PER MONTH' ? 'PER MONTH' : 
+               'ONE-TIME PAYMENT'}
             </p>
           </div>
 
-          <div className="space-y-3 text-left mb-8">
+          <div className="space-y-2 text-left mb-8 text-sm">
             {option.features.map((feature, featureIndex) => (
               <p key={featureIndex} className={option.disabled ? 'text-gray-500' : 'text-gray-300'}>
-                ✓ {feature}
+                {option.disabled ? '•' : '•'} {feature}
               </p>
             ))}
           </div>
 
           {option.disabled ? (
-            <div className="bg-gray-800 text-gray-500 py-3 px-6 rounded-lg font-bold">
-              Not Available
+            <div className="bg-red-500/10 border border-red-500/30 text-red-400 py-3 px-6 rounded-xl font-bold text-center">
+              ⚠ NOT RECOMMENDED
             </div>
           ) : option.buttonLink && option.buttonText ? (
             <Link 
               href={option.buttonLink} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 w-full"
+              className="block w-full"
             >
-              {option.buttonText}
+              <ShimmerButton
+                className="shadow-2xl w-full"
+                shimmerColor="#ffffff"
+                shimmerSize="0.1em"
+                background="linear-gradient(135deg, #a855f7, #ec4899)"
+                borderRadius="12px"
+              >
+                <span className="whitespace-nowrap font-bold px-6 py-3 text-base">
+                  {option.buttonText}
+                </span>
+              </ShimmerButton>
             </Link>
           ) : (
             <ShimmerButton
-              className="shadow-2xl w-full mb-4"
+              className="shadow-2xl w-full"
               shimmerColor="#ffffff"
               shimmerSize="0.1em"
-              background={option.popular ? "linear-gradient(135deg, #ec4899, #a855f7)" : "linear-gradient(135deg, #3b82f6, #10b981)"}
+              background={option.popular ? "linear-gradient(135deg, #a855f7, #ec4899)" : "linear-gradient(135deg, #10b981, #3b82f6)"}
               borderRadius="12px"
             >
               <span className="whitespace-nowrap font-bold px-6 py-3 text-base">
-                {option.popular ? ' Secure Your Spot NOW' : 'Get Started'} - {option.price}
+                {option.popular ? 'Get All 5 Courses' : 'Get Instagram Ignited'}
               </span>
             </ShimmerButton>
           )}
