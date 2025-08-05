@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { Search, Calendar, Clock, Tag, Filter, ArrowRight, TrendingUp, Eye, Heart, MessageCircle, Share2, ChevronRight } from 'lucide-react'
-import { allBlogPosts, categories, allTags, featuredPosts, type BlogPost } from '@/data/blog-posts'
+import { allBlogPosts, categories, tags, featuredPosts, type BlogPost } from '@/data/blog-posts'
 import { calculateBlogMetrics } from '@/utils/blogMetrics'
 import { TiltCard, SpotlightCard } from '@/components/HoverEffects'
 import AnimatedText, { GradientText } from '@/components/AnimatedText'
