@@ -485,5 +485,5 @@ export default function AlphaEvolveAiBusinessEmpirePage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

@@ -477,5 +477,5 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

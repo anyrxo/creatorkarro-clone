@@ -983,5 +983,5 @@ export default function TelegramBotMonetizationPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

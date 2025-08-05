@@ -456,5 +456,5 @@ export default function DeepseekMarketDisruptionPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

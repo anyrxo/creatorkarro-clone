@@ -990,5 +990,5 @@ export default function ShopifyAutomationAiPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }
