@@ -203,12 +203,12 @@ export default function RootLayout({
       <body className={montserrat.className}>
         {/* Google Analytics - Optimized Loading */}
         <Script
-          strategy="worker"
+          strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`} // Replace with actual GA ID
         />
         <Script
           id="google-analytics"
-          strategy="worker"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -222,7 +222,7 @@ export default function RootLayout({
         {/* Facebook Pixel - Deferred Loading */}
         <Script
           id="facebook-pixel"
-          strategy="worker"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
