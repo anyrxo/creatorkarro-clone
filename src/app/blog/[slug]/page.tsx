@@ -8,16 +8,10 @@ interface BlogPostPageProps {
   params: Promise<{ slug: string }>
 }
 
-// Generate static params for all blog posts
+// Generate static params for ALL blog posts
 export async function generateStaticParams() {
-  // For static export, generate params for first 50 posts to avoid routes-manifest.json size limits
-  const featuredPosts = allBlogPosts.filter(post => post.featured).slice(0, 20);
-  const recentPosts = allBlogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 30);
-  const importantPosts = [...featuredPosts, ...recentPosts]
-    .filter((post, index, arr) => arr.findIndex(p => p.slug === post.slug) === index)
-    .slice(0, 50);
-  
-  return importantPosts.map((post) => ({
+  // Generate params for ALL 550 blog posts to ensure no 404s
+  return allBlogPosts.map((post) => ({
     slug: post.slug,
   }))
 }
