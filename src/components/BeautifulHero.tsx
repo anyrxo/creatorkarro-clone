@@ -349,48 +349,6 @@ export function BeautifulHero() {
           />
         ))}
 
-        {/* Node intersection points - Color flow effect */}
-        {[...Array(24)].map((_, i) => {
-          const angle = (i * 360 / 24) * (Math.PI / 180)
-          const radius = 150 + (i % 3) * 50
-          const x = 50 + Math.cos(angle) * (radius / 10)
-          const y = 50 + Math.sin(angle) * (radius / 15)
-          
-          return (
-            <motion.div
-              key={`node-${i}`}
-              className="absolute w-2 h-2 rounded-full"
-              style={{
-                left: `${x}%`,
-                top: `${y}%`,
-                background: 'rgba(59, 130, 246, 0.6)'
-              }}
-              animate={{
-                scale: [0, 2, 0],
-                opacity: [0, 1, 0],
-                background: [
-                  'rgba(59, 130, 246, 0.6)',
-                  'rgba(147, 51, 234, 0.8)',
-                  'rgba(6, 182, 212, 0.7)',
-                  'rgba(236, 72, 153, 0.5)',
-                  'rgba(59, 130, 246, 0.6)'
-                ],
-                boxShadow: [
-                  '0 0 0px rgba(59, 130, 246, 0)',
-                  '0 0 30px rgba(59, 130, 246, 0.8)',
-                  '0 0 0px rgba(59, 130, 246, 0)'
-                ]
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                delay: (i * 0.1) + Math.random() * 2,
-                ease: "easeInOut",
-                repeatDelay: 4 + Math.random() * 2
-              }}
-            />
-          )
-        })}
       </div>
     </motion.section>
   )
