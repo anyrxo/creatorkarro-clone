@@ -201,8 +201,6 @@ export default function ResourcesPage() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 section-spacing">
         <div className="max-w-6xl mx-auto">
-          </div>
-
           {/* Resources Grid */}
           <div className="space-y-16">
             {resources.map((category, categoryIndex) => (
