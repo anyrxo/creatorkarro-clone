@@ -12,8 +12,16 @@ export function FortressProvider({ children }: FortressProviderProps) {
   const [fortress, setFortress] = useState<FortressProtection | null>(null);
   const [isBlocked, setIsBlocked] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // First useEffect to handle client-side mounting
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
+    if (!isMounted) return;
+    
     // Much more lenient bot detection - only block obvious bots
     const userAgent = navigator.userAgent.toLowerCase();
     
@@ -38,11 +46,11 @@ export function FortressProvider({ children }: FortressProviderProps) {
     // return () => {
     //   fortressInstance.destroy();
     // };
-  }, []);
+  }, [isMounted]);
 
   // Advanced anti-scraping measures
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (!isMounted || typeof window === 'undefined') return;
 
     // Minimal keyboard restrictions - only prevent page saving
     const disableKeyboardShortcuts = (e: KeyboardEvent) => {
@@ -84,11 +92,11 @@ export function FortressProvider({ children }: FortressProviderProps) {
       document.removeEventListener('selectstart', disableSelection);
       // clearInterval(automationCheck);
     };
-  }, []);
+  }, [isMounted]);
 
   // Content protection styles
   useEffect(() => {
-    if (typeof document === 'undefined') return;
+    if (!isMounted || typeof document === 'undefined') return;
 
     const style = document.createElement('style');
     style.textContent = `
@@ -146,11 +154,11 @@ export function FortressProvider({ children }: FortressProviderProps) {
       document.head.removeChild(style);
       // document.body.removeChild(overlay);
     };
-  }, []);
+  }, [isMounted]);
 
-  // Remove loading screen - let users access the site immediately
-  if (isLoading) {
-    // Show content immediately, security checks happen in background
+  // Always render during SSR and loading states
+  if (!isMounted || isLoading) {
+    // Show content immediately during SSR and loading, security checks happen in background
     return <>{children}</>;
   }
 

@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Performance optimizations
-  experimental: {
-    optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react', 'framer-motion'],
-    optimizeCss: true,
-    serverMinification: true,
-  },
+  // Performance optimizations (temporarily disabled for debugging)
+  // experimental: {
+  //   optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react', 'framer-motion'],
+  //   optimizeCss: true,
+  //   serverMinification: true,
+  // },
 
   // Turbopack configuration (now stable)
   turbopack: {

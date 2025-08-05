@@ -13,30 +13,40 @@
 
 // Browser fingerprinting for bot detection
 export const generateBrowserFingerprint = (): string => {
-  if (typeof window === 'undefined') return 'server';
-  
-  const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
-  if (ctx) {
-    ctx.textBaseline = 'top';
-    ctx.font = '14px Arial';
-    ctx.fillText('IImagined.ai Fortress Protection', 2, 2);
+  if (typeof window === 'undefined' || typeof document === 'undefined' || typeof navigator === 'undefined') {
+    return 'server';
   }
   
-  const fingerprint = [
-    navigator.userAgent,
-    navigator.language,
-    screen.width + 'x' + screen.height,
-    new Date().getTimezoneOffset(),
-    navigator.hardwareConcurrency,
-    (navigator as any).deviceMemory || 'unknown',
-    canvas.toDataURL(),
-    navigator.plugins.length,
-    Object.keys(window).length,
-    navigator.webdriver ? 'true' : 'false'
-  ].join('|');
-  
-  return btoa(fingerprint).slice(0, 32);
+  try {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    let canvasFingerprint = 'unknown';
+    
+    if (ctx) {
+      ctx.textBaseline = 'top';
+      ctx.font = '14px Arial';
+      ctx.fillText('IImagined.ai Fortress Protection', 2, 2);
+      canvasFingerprint = canvas.toDataURL();
+    }
+    
+    const fingerprint = [
+      navigator.userAgent || 'unknown',
+      navigator.language || 'unknown',
+      (typeof screen !== 'undefined' ? screen.width + 'x' + screen.height : 'unknown'),
+      new Date().getTimezoneOffset().toString(),
+      navigator.hardwareConcurrency?.toString() || 'unknown',
+      (navigator as any).deviceMemory?.toString() || 'unknown',
+      canvasFingerprint,
+      navigator.plugins?.length.toString() || 'unknown',
+      Object.keys(window).length.toString(),
+      (navigator as any).webdriver ? 'true' : 'false'
+    ].join('|');
+    
+    return btoa(fingerprint).slice(0, 32);
+  } catch (error) {
+    // Fallback for SSR or restricted environments
+    return 'fallback-' + Math.random().toString(36).substring(7);
+  }
 };
 
 // Advanced DevTools Detection
@@ -79,15 +89,15 @@ export class DevToolsDetector {
       return originalLog.apply(console, args);
     };
 
-    // Method 3: Debugger statement detection
-    const checkDebugger = () => {
-      const before = Date.now();
-      debugger;
-      const after = Date.now();
-      if (after - before > 100) {
-        this.triggerCallbacks();
-      }
-    };
+    // Method 3: Debugger statement detection (disabled for SSR compatibility)
+    // const checkDebugger = () => {
+    //   const before = Date.now();
+    //   debugger;
+    //   const after = Date.now();
+    //   if (after - before > 100) {
+    //     this.triggerCallbacks();
+    //   }
+    // };
 
     // Method 4: Right-click detection
     document.addEventListener('contextmenu', (e) => {
@@ -116,8 +126,8 @@ export class DevToolsDetector {
       }
     });
 
-    // Run debugger check periodically
-    this.checkInterval = setInterval(checkDebugger, 1000) as unknown as ReturnType<typeof setInterval>;
+    // Run debugger check periodically (disabled for SSR compatibility)
+    // this.checkInterval = setInterval(checkDebugger, 1000) as unknown as ReturnType<typeof setInterval>;
   }
 
   onDevToolsOpen(callback: () => void) {
@@ -195,37 +205,42 @@ export class RateLimiter {
 
 // Bot detection patterns
 export const detectBotPatterns = (userAgent: string, headers: Record<string, string | undefined>): boolean => {
-  const botPatterns = [
-    /bot/i, /crawler/i, /spider/i, /scraper/i,
-    /curl/i, /wget/i, /python/i, /requests/i,
-    /playwright/i, /puppeteer/i, /selenium/i,
-    /headless/i, /phantomjs/i, /jsdom/i
-  ];
-  
-  // Check user agent
-  if (botPatterns.some(pattern => pattern.test(userAgent))) {
-    return true;
-  }
-  
-  // Check for missing browser headers
-  const requiredHeaders = ['accept', 'accept-language', 'accept-encoding'];
-  if (!requiredHeaders.every(header => headers[header])) {
-    return true;
-  }
-  
-  // Check for automation indicators
-  if (typeof window !== 'undefined') {
-    if ((window.navigator as any).webdriver ||
-        (window as any).callPhantom ||
-        (window as any)._phantom ||
-        (window as any).Buffer ||
-        (window as any).emit ||
-        (window as any).spawn) {
+  try {
+    const botPatterns = [
+      /bot/i, /crawler/i, /spider/i, /scraper/i,
+      /curl/i, /wget/i, /python/i, /requests/i,
+      /playwright/i, /puppeteer/i, /selenium/i,
+      /headless/i, /phantomjs/i, /jsdom/i
+    ];
+    
+    // Check user agent
+    if (botPatterns.some(pattern => pattern.test(userAgent))) {
       return true;
     }
+    
+    // Check for missing browser headers
+    const requiredHeaders = ['accept', 'accept-language', 'accept-encoding'];
+    if (!requiredHeaders.every(header => headers[header])) {
+      return true;
+    }
+    
+    // Check for automation indicators (only in browser environment)
+    if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
+      if ((navigator as any).webdriver ||
+          (window as any).callPhantom ||
+          (window as any)._phantom ||
+          (window as any).Buffer ||
+          (window as any).emit ||
+          (window as any).spawn) {
+        return true;
+      }
+    }
+    
+    return false;
+  } catch (error) {
+    // Safe fallback for SSR
+    return false;
   }
-  
-  return false;
 };
 
 // Legal watermarking

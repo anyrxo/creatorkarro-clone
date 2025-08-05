@@ -5,7 +5,7 @@ import Script from "next/script";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { FortressProvider } from "@/components/FortressProvider";
+import ClientOnlyFortress from "@/components/ClientOnlyFortress";
 import ScrollProgressIndicator from "@/components/ScrollProgressIndicator";
 import LoadingBar from "@/components/LoadingBar";
 import PageTransition, { RouteLoader } from "@/components/PageTransition";
@@ -13,7 +13,7 @@ import { siteConfig, defaultSEO, schemas } from "@/config/seo";
 import { generateDynamicMeta } from "@/lib/meta-generator";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import NodeBackground from "@/components/NodeBackground";
+import ClientOnlyBackground from "@/components/ClientOnlyBackground";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -239,8 +239,8 @@ export default function RootLayout({
           }}
         />
         
-        <FortressProvider>
-          <NodeBackground />
+        <ClientOnlyFortress>
+          <ClientOnlyBackground />
           <LoadingBar />
           <RouteLoader />
           <ScrollProgressIndicator />
@@ -251,9 +251,9 @@ export default function RootLayout({
             </main>
           </PageTransition>
           <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </FortressProvider>
+          {/* <Analytics />
+          <SpeedInsights /> */}
+        </ClientOnlyFortress>
       </body>
     </html>
   );
