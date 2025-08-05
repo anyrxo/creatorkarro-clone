@@ -297,12 +297,33 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   )
 }
 
-// Generate static params for all blog posts
+// VERCEL OPTIMIZATION: Generate static params for only the most important posts
+// The rest will be generated on-demand (ISR)
 export async function generateStaticParams() {
-  return allBlogPosts.map((post) => ({
+  // Only pre-generate the first 50 most important/featured posts to avoid routes-manifest.json error
+  const featuredPosts = allBlogPosts
+    .filter(post => post.featured)
+    .slice(0, 20); // Featured posts first
+    
+  const recentPosts = allBlogPosts
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 30); // Most recent posts
+    
+  // Combine and deduplicate
+  const importantPosts = [...featuredPosts, ...recentPosts]
+    .filter((post, index, arr) => arr.findIndex(p => p.slug === post.slug) === index)
+    .slice(0, 50); // Maximum 50 pre-generated routes
+  
+  console.log(`🚀 Pre-generating ${importantPosts.length} most important blog posts for Vercel`);
+  
+  return importantPosts.map((post) => ({
     slug: post.slug,
   }))
 }
+
+// Force dynamic rendering for non-pre-generated posts
+export const dynamic = 'force-dynamic'
+export const dynamicParams = true // Enable ISR for other posts
 
 // Generate metadata for each blog post
 export async function generateMetadata({ params }: BlogPostPageProps) {

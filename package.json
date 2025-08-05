@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --turbopack",
-    "build": "node scripts/silent-build.js",
+    "build": "node scripts/vercel-build.js",
+    "build-original": "node scripts/silent-build.js",
     "build-bash": "./build.sh",
     "build-smart": "node scripts/build-with-ignore.js",
     "start": "next start",

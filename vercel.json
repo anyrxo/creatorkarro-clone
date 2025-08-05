@@ -1,15 +1,40 @@
 {
-  "buildCommand": "node scripts/silent-build.js",
+  "version": 2,
+  "buildCommand": "npm run build",
   "framework": "nextjs",
+  "installCommand": "npm install",
   "cleanUrls": true,
   "trailingSlash": false,
+  "functions": {
+    "src/app/blog/[slug]/page.tsx": {
+      "maxDuration": 30
+    },
+    "src/app/api/**": {
+      "maxDuration": 60
+    }
+  },
+  "build": {
+    "env": {
+      "VERCEL_FORCE_NO_BUILD_CACHE": "1",
+      "NODE_OPTIONS": "--max-old-space-size=8192"
+    }
+  },
   "headers": [
+    {
+      "source": "/blog/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=86400"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "s-maxage=0"
+          "value": "public, max-age=300, s-maxage=600"
         }
       ]
     }

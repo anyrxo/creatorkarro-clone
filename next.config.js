@@ -3,19 +3,35 @@ require('./polyfills.js');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
-  // Force dynamic rendering to prevent SSR issues
+  // VERCEL OPTIMIZATION - Handle 550 blog posts efficiently
   experimental: {
     forceSwcTransforms: true,
+    // Enable ISR with longer cache to reduce build time
+    isrMemoryCacheSize: 50,
+    // Use dynamic imports for better code splitting
+    esmExternals: true,
+    // Optimize server components
+    serverComponentsExternalPackages: ['@google/generative-ai'],
   },
   
-  // Disable static optimization for problematic pages
-  staticPageGenerationTimeout: 1000,
+  // CRITICAL: Use dynamic routing for blog posts to avoid route manifest bloat
+  trailingSlash: false,
   
-  // Handle build errors more gracefully
-  onDemandEntries: {
-    maxInactiveAge: 25 * 1000,
-    pagesBufferLength: 2,
+  // Increase timeout for large builds
+  staticPageGenerationTimeout: 600,
+  
+  // Generate build ID for cache busting
+  generateBuildId: async () => {
+    return `vercel-${Date.now()}`
+  },
+  
+  // Optimize Vercel deployment
+  compress: true,
+  poweredByHeader: false,
+  
+  // CRITICAL: Configure for Vercel Functions
+  env: {
+    VERCEL_FORCE_NO_BUILD_CACHE: '1',
   },
   
   // Performance optimizations (temporarily disabled for debugging)

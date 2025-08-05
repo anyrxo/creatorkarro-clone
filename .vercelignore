@@ -1,0 +1,58 @@
+# VERCEL BUILD OPTIMIZATION - Ignore unnecessary files for 550 blog posts
+
+# Development files
+*.log
+*.md
+!README.md
+*.sh
+*.py
+
+# Build output and temp files
+out/
+.next/
+build_output.txt
+server.log
+silent_test.log
+
+# Scripts and utilities (keep essential ones)
+scripts/analytics-*
+scripts/competitor-*
+scripts/ctr-*
+scripts/defense-*
+scripts/doorway-*
+scripts/link-*
+scripts/parasite-*
+scripts/pbn-*
+scripts/rank-*
+scripts/social-*
+
+# Test outputs
+*-output/
+*-test-output/
+
+# Backup and duplicate files
+*.backup*
+*.broken
+*.old
+
+# Large data files
+*.csv
+*.json.backup
+bun.lock
+
+# Development tools
+.biomejs/
+.eslintcache
+
+# Keep only essential files for build
+!src/
+!public/
+!package.json
+!package-lock.json
+!next.config.js
+!vercel.json
+!tsconfig.json
+!tailwind.config.ts
+!postcss.config.mjs
+!components.json
+!.env.local
