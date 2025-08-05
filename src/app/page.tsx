@@ -268,9 +268,9 @@ export default function HomePage() {
             {/* Enhanced Subtitle with MagicUI */}
             <div className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto font-medium">
               <TypingAnimation
-                text="From viral content creation to automated product empires - discover the exact courses, strategies, and systems that transformed 4,000+ creators into millionaires."
+                text="Master the systems that built 4,000+ successful creators"
                 className="text-xl md:text-2xl text-zinc-200 font-medium"
-                duration={30}
+                duration={50}
               />
             </div>
 
