@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/how-to-make-money-with-comfyui-ai-art-business-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.486Z",
-    modifiedTime: "2025-08-05T07:13:27.486Z",
+    publishedTime: "2025-08-05T08:10:02.990Z",
+    modifiedTime: "2025-08-05T08:10:02.990Z",
     authors: ["IImagined.ai Team"],
     tags: ["make money comfyui","ai art business","sell ai art","monetize ai images"],
     images: [{
@@ -72,8 +72,8 @@ export default function HowToMakeMoneyWithComfyuiAiArtBusinessGuide() {
         "@id": "https://iimagined.ai/blog/how-to-make-money-with-comfyui-ai-art-business-guide#article",
         "headline": "How to Make Money with ComfyUI: AI Art Business Guide",
         "description": "make money comfyui, ai art business, sell ai art - Expert guide from the creators of ComfyUI Mastery",
-        "datePublished": "2025-08-05T07:13:27.486Z",
-        "dateModified": "2025-08-05T07:13:27.486Z",
+        "datePublished": "2025-08-05T08:10:02.990Z",
+        "dateModified": "2025-08-05T08:10:02.990Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

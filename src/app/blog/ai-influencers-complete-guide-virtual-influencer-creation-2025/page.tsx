@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-influencers-complete-guide-virtual-influencer-creation-2025",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.471Z",
-    modifiedTime: "2025-08-05T07:13:27.471Z",
+    publishedTime: "2025-08-05T08:10:02.961Z",
+    modifiedTime: "2025-08-05T08:10:02.961Z",
     authors: ["IImagined.ai Team"],
     tags: ["ai influencers","virtual influencers","ai instagram influencer","create ai influencer"],
     images: [{
@@ -72,8 +72,8 @@ export default function AiInfluencersCompleteGuideToVirtualInfluencerCreation202
         "@id": "https://iimagined.ai/blog/ai-influencers-complete-guide-virtual-influencer-creation-2025#article",
         "headline": "AI Influencers: Complete Guide to Virtual Influencer Creation 2025",
         "description": "ai influencers, virtual influencers, ai instagram influencer - Expert guide from the creators of AI Influencers Academy",
-        "datePublished": "2025-08-05T07:13:27.471Z",
-        "dateModified": "2025-08-05T07:13:27.471Z",
+        "datePublished": "2025-08-05T08:10:02.961Z",
+        "dateModified": "2025-08-05T08:10:02.961Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

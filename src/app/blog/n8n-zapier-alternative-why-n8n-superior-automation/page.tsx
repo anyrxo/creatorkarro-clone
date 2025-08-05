@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/n8n-zapier-alternative-why-n8n-superior-automation",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.490Z",
-    modifiedTime: "2025-08-05T07:13:27.490Z",
+    publishedTime: "2025-08-05T08:10:02.993Z",
+    modifiedTime: "2025-08-05T08:10:02.993Z",
     authors: ["IImagined.ai Team"],
     tags: ["n8n zapier alternative","zapier vs n8n","automation tools comparison","workflow automation"],
     images: [{
@@ -72,8 +72,8 @@ export default function N8nZapierAlternativeWhyN8nIsSuperiorForAutomation() {
         "@id": "https://iimagined.ai/blog/n8n-zapier-alternative-why-n8n-superior-automation#article",
         "headline": "N8N Zapier Alternative: Why N8N is Superior for Automation",
         "description": "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations",
-        "datePublished": "2025-08-05T07:13:27.490Z",
-        "dateModified": "2025-08-05T07:13:27.490Z",
+        "datePublished": "2025-08-05T08:10:02.993Z",
+        "dateModified": "2025-08-05T08:10:02.993Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

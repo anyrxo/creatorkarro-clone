@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/virtual-influencer-marketing-strategy-dominate-social-media",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.485Z",
-    modifiedTime: "2025-08-05T07:13:27.485Z",
+    publishedTime: "2025-08-05T08:10:02.989Z",
+    modifiedTime: "2025-08-05T08:10:02.989Z",
     authors: ["IImagined.ai Team"],
     tags: ["virtual influencer marketing","ai marketing strategy","virtual influencer campaigns","ai social media"],
     images: [{
@@ -72,8 +72,8 @@ export default function VirtualInfluencerMarketingStrategyDominateSocialMedia() 
         "@id": "https://iimagined.ai/blog/virtual-influencer-marketing-strategy-dominate-social-media#article",
         "headline": "Virtual Influencer Marketing Strategy: Dominate Social Media",
         "description": "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy",
-        "datePublished": "2025-08-05T07:13:27.485Z",
-        "dateModified": "2025-08-05T07:13:27.485Z",
+        "datePublished": "2025-08-05T08:10:02.989Z",
+        "dateModified": "2025-08-05T08:10:02.989Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

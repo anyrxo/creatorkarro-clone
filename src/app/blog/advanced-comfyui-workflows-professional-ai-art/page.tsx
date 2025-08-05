@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.486Z",
-    modifiedTime: "2025-08-05T07:13:27.486Z",
+    publishedTime: "2025-08-05T08:10:02.990Z",
+    modifiedTime: "2025-08-05T08:10:02.990Z",
     authors: ["IImagined.ai Team"],
     tags: ["comfyui workflows","advanced comfyui","professional ai art","comfyui techniques"],
     images: [{
@@ -72,8 +72,8 @@ export default function AdvancedComfyuiWorkflowsForProfessionalAiArt() {
         "@id": "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art#article",
         "headline": "Advanced ComfyUI Workflows for Professional AI Art",
         "description": "comfyui workflows, advanced comfyui, professional ai art - Expert guide from the creators of ComfyUI Mastery",
-        "datePublished": "2025-08-05T07:13:27.486Z",
-        "dateModified": "2025-08-05T07:13:27.486Z",
+        "datePublished": "2025-08-05T08:10:02.990Z",
+        "dateModified": "2025-08-05T08:10:02.990Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

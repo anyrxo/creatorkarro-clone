@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/best-ai-content-creation-tools-virtual-influencers-2025",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.484Z",
-    modifiedTime: "2025-08-05T07:13:27.484Z",
+    publishedTime: "2025-08-05T08:10:02.988Z",
+    modifiedTime: "2025-08-05T08:10:02.988Z",
     authors: ["IImagined.ai Team"],
     tags: ["ai content creation","ai social media content","virtual influencer content","ai content tools"],
     images: [{
@@ -72,8 +72,8 @@ export default function BestAiContentCreationToolsForVirtualInfluencers2025() {
         "@id": "https://iimagined.ai/blog/best-ai-content-creation-tools-virtual-influencers-2025#article",
         "headline": "Best AI Content Creation Tools for Virtual Influencers 2025",
         "description": "ai content creation, ai social media content, virtual influencer content - Expert guide from the creators of AI Influencers Academy",
-        "datePublished": "2025-08-05T07:13:27.484Z",
-        "dateModified": "2025-08-05T07:13:27.484Z",
+        "datePublished": "2025-08-05T08:10:02.988Z",
+        "dateModified": "2025-08-05T08:10:02.988Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

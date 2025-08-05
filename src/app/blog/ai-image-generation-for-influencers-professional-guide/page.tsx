@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-image-generation-for-influencers-professional-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.485Z",
-    modifiedTime: "2025-08-05T07:13:27.485Z",
+    publishedTime: "2025-08-05T08:10:02.989Z",
+    modifiedTime: "2025-08-05T08:10:02.989Z",
     authors: ["IImagined.ai Team"],
     tags: ["ai image generation","ai images for influencers","ai photography","virtual influencer photos"],
     images: [{
@@ -72,8 +72,8 @@ export default function AiImageGenerationForInfluencersProfessionalGuide() {
         "@id": "https://iimagined.ai/blog/ai-image-generation-for-influencers-professional-guide#article",
         "headline": "AI Image Generation for Influencers: Professional Guide",
         "description": "ai image generation, ai images for influencers, ai photography - Expert guide from the creators of AI Influencers Academy",
-        "datePublished": "2025-08-05T07:13:27.485Z",
-        "dateModified": "2025-08-05T07:13:27.485Z",
+        "datePublished": "2025-08-05T08:10:02.989Z",
+        "dateModified": "2025-08-05T08:10:02.989Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

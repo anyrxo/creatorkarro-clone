@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/instagram-influencer-marketing-build-personal-brand",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.488Z",
-    modifiedTime: "2025-08-05T07:13:27.488Z",
+    publishedTime: "2025-08-05T08:10:02.991Z",
+    modifiedTime: "2025-08-05T08:10:02.991Z",
     authors: ["IImagined.ai Team"],
     tags: ["instagram influencer marketing","personal brand instagram","instagram influence","become instagram influencer"],
     images: [{
@@ -72,8 +72,8 @@ export default function InstagramInfluencerMarketingBuildYourPersonalBrand() {
         "@id": "https://iimagined.ai/blog/instagram-influencer-marketing-build-personal-brand#article",
         "headline": "Instagram Influencer Marketing: Build Your Personal Brand",
         "description": "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited",
-        "datePublished": "2025-08-05T07:13:27.488Z",
-        "dateModified": "2025-08-05T07:13:27.488Z",
+        "datePublished": "2025-08-05T08:10:02.991Z",
+        "dateModified": "2025-08-05T08:10:02.991Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

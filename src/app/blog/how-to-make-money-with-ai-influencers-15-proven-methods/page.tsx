@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/how-to-make-money-with-ai-influencers-15-proven-methods",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.483Z",
-    modifiedTime: "2025-08-05T07:13:27.483Z",
+    publishedTime: "2025-08-05T08:10:02.988Z",
+    modifiedTime: "2025-08-05T08:10:02.988Z",
     authors: ["IImagined.ai Team"],
     tags: ["make money ai influencers","ai influencer income","monetize virtual influencers","ai influencer business"],
     images: [{
@@ -72,8 +72,8 @@ export default function HowToMakeMoneyWithAiInfluencers15ProvenMethods() {
         "@id": "https://iimagined.ai/blog/how-to-make-money-with-ai-influencers-15-proven-methods#article",
         "headline": "How to Make Money with AI Influencers: 15 Proven Methods",
         "description": "make money ai influencers, ai influencer income, monetize virtual influencers - Expert guide from the creators of AI Influencers Academy",
-        "datePublished": "2025-08-05T07:13:27.483Z",
-        "dateModified": "2025-08-05T07:13:27.483Z",
+        "datePublished": "2025-08-05T08:10:02.988Z",
+        "dateModified": "2025-08-05T08:10:02.988Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

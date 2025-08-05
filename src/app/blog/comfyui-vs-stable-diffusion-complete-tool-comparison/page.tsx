@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/comfyui-vs-stable-diffusion-complete-tool-comparison",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.485Z",
-    modifiedTime: "2025-08-05T07:13:27.485Z",
+    publishedTime: "2025-08-05T08:10:02.989Z",
+    modifiedTime: "2025-08-05T08:10:02.989Z",
     authors: ["IImagined.ai Team"],
     tags: ["comfyui vs stable diffusion","ai image tools comparison","best ai art software","ai art tools"],
     images: [{
@@ -72,8 +72,8 @@ export default function ComfyuiVsStableDiffusionCompleteToolComparison() {
         "@id": "https://iimagined.ai/blog/comfyui-vs-stable-diffusion-complete-tool-comparison#article",
         "headline": "ComfyUI vs Stable Diffusion: Complete Tool Comparison",
         "description": "comfyui vs stable diffusion, ai image tools comparison, best ai art software - Expert guide from the creators of ComfyUI Mastery",
-        "datePublished": "2025-08-05T07:13:27.485Z",
-        "dateModified": "2025-08-05T07:13:27.485Z",
+        "datePublished": "2025-08-05T08:10:02.989Z",
+        "dateModified": "2025-08-05T08:10:02.989Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2025",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.487Z",
-    modifiedTime: "2025-08-05T07:13:27.487Z",
+    publishedTime: "2025-08-05T08:10:02.991Z",
+    modifiedTime: "2025-08-05T08:10:02.991Z",
     authors: ["IImagined.ai Team"],
     tags: ["instagram reels algorithm","viral reels","reels strategy","instagram viral content"],
     images: [{
@@ -72,8 +72,8 @@ export default function InstagramReelsAlgorithmViralContentStrategy2025() {
         "@id": "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2025#article",
         "headline": "Instagram Reels Algorithm: Viral Content Strategy 2025",
         "description": "instagram reels algorithm, viral reels, reels strategy - Expert guide from the creators of Instagram Ignited",
-        "datePublished": "2025-08-05T07:13:27.487Z",
-        "dateModified": "2025-08-05T07:13:27.487Z",
+        "datePublished": "2025-08-05T08:10:02.991Z",
+        "dateModified": "2025-08-05T08:10:02.991Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

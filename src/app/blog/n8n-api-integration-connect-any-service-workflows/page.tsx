@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/n8n-api-integration-connect-any-service-workflows",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.491Z",
-    modifiedTime: "2025-08-05T07:13:27.491Z",
+    publishedTime: "2025-08-05T08:10:02.993Z",
+    modifiedTime: "2025-08-05T08:10:02.993Z",
     authors: ["IImagined.ai Team"],
     tags: ["n8n api integration","api automation","n8n webhooks","api workflow automation"],
     images: [{
@@ -72,8 +72,8 @@ export default function N8nApiIntegrationConnectAnyServiceWithWorkflows() {
         "@id": "https://iimagined.ai/blog/n8n-api-integration-connect-any-service-workflows#article",
         "headline": "N8N API Integration: Connect Any Service with Workflows",
         "description": "n8n api integration, api automation, n8n webhooks - Expert guide from the creators of N8N AI Automations",
-        "datePublished": "2025-08-05T07:13:27.491Z",
-        "dateModified": "2025-08-05T07:13:27.491Z",
+        "datePublished": "2025-08-05T08:10:02.993Z",
+        "dateModified": "2025-08-05T08:10:02.993Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

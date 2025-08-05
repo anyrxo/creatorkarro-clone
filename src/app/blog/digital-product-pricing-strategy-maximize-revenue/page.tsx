@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/digital-product-pricing-strategy-maximize-revenue",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.490Z",
-    modifiedTime: "2025-08-05T07:13:27.490Z",
+    publishedTime: "2025-08-05T08:10:02.992Z",
+    modifiedTime: "2025-08-05T08:10:02.992Z",
     authors: ["IImagined.ai Team"],
     tags: ["digital product pricing","pricing strategy","digital product revenue","price digital products"],
     images: [{
@@ -72,8 +72,8 @@ export default function DigitalProductPricingStrategyMaximizeYourRevenue() {
         "@id": "https://iimagined.ai/blog/digital-product-pricing-strategy-maximize-revenue#article",
         "headline": "Digital Product Pricing Strategy: Maximize Your Revenue",
         "description": "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery",
-        "datePublished": "2025-08-05T07:13:27.490Z",
-        "dateModified": "2025-08-05T07:13:27.490Z",
+        "datePublished": "2025-08-05T08:10:02.992Z",
+        "dateModified": "2025-08-05T08:10:02.992Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/sell-digital-products-on-etsy-complete-success-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.489Z",
-    modifiedTime: "2025-08-05T07:13:27.489Z",
+    publishedTime: "2025-08-05T08:10:02.992Z",
+    modifiedTime: "2025-08-05T08:10:02.992Z",
     authors: ["IImagined.ai Team"],
     tags: ["sell digital products etsy","etsy digital products","etsy passive income","digital downloads etsy"],
     images: [{
@@ -72,8 +72,8 @@ export default function SellDigitalProductsOnEtsyCompleteSuccessGuide() {
         "@id": "https://iimagined.ai/blog/sell-digital-products-on-etsy-complete-success-guide#article",
         "headline": "Sell Digital Products on Etsy: Complete Success Guide",
         "description": "sell digital products etsy, etsy digital products, etsy passive income - Expert guide from the creators of Digital Products Mastery",
-        "datePublished": "2025-08-05T07:13:27.489Z",
-        "dateModified": "2025-08-05T07:13:27.489Z",
+        "datePublished": "2025-08-05T08:10:02.992Z",
+        "dateModified": "2025-08-05T08:10:02.992Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",

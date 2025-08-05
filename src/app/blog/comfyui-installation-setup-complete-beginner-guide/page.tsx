@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/comfyui-installation-setup-complete-beginner-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:13:27.487Z",
-    modifiedTime: "2025-08-05T07:13:27.487Z",
+    publishedTime: "2025-08-05T08:10:02.990Z",
+    modifiedTime: "2025-08-05T08:10:02.990Z",
     authors: ["IImagined.ai Team"],
     tags: ["comfyui installation","comfyui setup","install comfyui","comfyui getting started"],
     images: [{
@@ -72,8 +72,8 @@ export default function ComfyuiInstallationSetupCompleteBeginnerGuide() {
         "@id": "https://iimagined.ai/blog/comfyui-installation-setup-complete-beginner-guide#article",
         "headline": "ComfyUI Installation & Setup: Complete Beginner Guide",
         "description": "comfyui installation, comfyui setup, install comfyui - Expert guide from the creators of ComfyUI Mastery",
-        "datePublished": "2025-08-05T07:13:27.487Z",
-        "dateModified": "2025-08-05T07:13:27.487Z",
+        "datePublished": "2025-08-05T08:10:02.990Z",
+        "dateModified": "2025-08-05T08:10:02.990Z",
         "author": {
           "@type": "Organization",
           "@id": "https://iimagined.ai#organization",
