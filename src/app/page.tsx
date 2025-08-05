@@ -328,12 +328,12 @@ export default function HomePage() {
               ))}
             </motion.div>
 
-            {/* Enhanced CTA Buttons */}
+            {/* Enhanced Single CTA Button */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+              className="flex justify-center"
             >
               {/* Primary CTA with Enhanced Effects */}
               <motion.div
@@ -359,7 +359,7 @@ export default function HomePage() {
                 </Link>
                 
                 {/* Floating Particles */}
-                {[...Array(6)].map((_, i) => (
+                {[...Array(8)].map((_, i) => (
                   <motion.div
                     key={i}
                     className="absolute w-1 h-1 bg-white rounded-full opacity-0 group-hover:opacity-60"
@@ -378,20 +378,6 @@ export default function HomePage() {
                     }}
                   />
                 ))}
-              </motion.div>
-              
-              {/* Secondary CTA with Hover Effect */}
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                className="relative group"
-              >
-                <Link href="/story" className="group flex items-center gap-3 px-6 py-3 rounded-full bg-zinc-800/50 border border-zinc-700/50 hover:border-zinc-600/50 backdrop-blur-sm text-zinc-300 hover:text-white transition-all duration-300">
-                  <span className="font-medium">Our Story</span>
-                  <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-                </Link>
-                
-                {/* Subtle glow on hover */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
               </motion.div>
             </motion.div>
 
@@ -454,16 +440,27 @@ export default function HomePage() {
                   <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                 </AnimatedGradientText>
               </div>
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight">
-                Beyond Traditional
-                <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  Creator Education
-                </span>
-              </h2>
-              <p className="text-xl md:text-2xl text-zinc-300 max-w-4xl mx-auto leading-relaxed">
-                We don't just teach content creation. We build business empires through AI automation, 
-                advanced growth psychology, and systems that scale beyond what you ever imagined possible.
-              </p>
+              <div className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight">
+                <BlurIn
+                  word="Beyond Traditional"
+                  className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight"
+                  duration={0.8}
+                />
+                <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  <WordRotate
+                    words={["Creator Education", "Growth Systems", "Business Models", "Success Methods"]}
+                    className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight"
+                    duration={3500}
+                  />
+                </div>
+              </div>
+              <div className="text-xl md:text-2xl text-zinc-300 max-w-4xl mx-auto leading-relaxed">
+                <TypingAnimation
+                  text="We don't just teach content creation. We build business empires through AI automation, advanced growth psychology, and systems that scale beyond what you ever imagined possible."
+                  className="text-xl md:text-2xl text-zinc-300"
+                  duration={30}
+                />
+              </div>
             </div>
 
             {/* Core Pillars */}
@@ -659,10 +656,20 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Success Stories
-            </h2>
-            <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">From our incredible community of successful creators</p>
+            <div className="text-5xl md:text-7xl font-bold text-white mb-6">
+              <BlurIn
+                word="Success Stories"
+                className="text-5xl md:text-7xl font-bold text-white"
+                duration={0.8}
+              />
+            </div>
+            <div className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+              <TypingAnimation
+                text="From our incredible community of successful creators"
+                className="text-lg md:text-xl text-zinc-300"
+                duration={40}
+              />
+            </div>
           </motion.div>
 
           <TestimonialCarousel 
@@ -712,14 +719,27 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <TypingAnimation
-              text="Master Every Skill"
-              className="text-5xl md:text-7xl font-bold text-white mb-6"
-              duration={150}
-            />
-            <p className="text-lg md:text-xl text-zinc-200 max-w-2xl mx-auto leading-relaxed">
-              From viral content creation to automated business systems that scale
-            </p>
+            <div className="text-5xl md:text-7xl font-bold text-white mb-6">
+              <BlurIn
+                word="Master Every"
+                className="text-5xl md:text-7xl font-bold text-white"
+                duration={0.8}
+              />
+              <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <WordRotate
+                  words={["Skill", "Strategy", "System", "Secret"]}
+                  className="text-5xl md:text-7xl font-bold"
+                  duration={2800}
+                />
+              </div>
+            </div>
+            <div className="text-lg md:text-xl text-zinc-200 max-w-2xl mx-auto leading-relaxed">
+              <TypingAnimation
+                text="From viral content creation to automated business systems that scale"
+                className="text-lg md:text-xl text-zinc-200"
+                duration={35}
+              />
+            </div>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -828,12 +848,20 @@ export default function HomePage() {
           >
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
-                  Why Creators
-                  <span className="block bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                    Choose Us
-                  </span>
-                </h2>
+                <div className="text-5xl md:text-6xl font-bold text-white mb-8">
+                  <BlurIn
+                    word="Why Creators"
+                    className="text-5xl md:text-6xl font-bold text-white"
+                    duration={0.8}
+                  />
+                  <div className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    <WordRotate
+                      words={["Choose Us", "Trust Us", "Love Us", "Join Us"]}
+                      className="text-5xl md:text-6xl font-bold"
+                      duration={3200}
+                    />
+                  </div>
+                </div>
                 <div className="space-y-6">
                   {[
                     {
@@ -980,9 +1008,13 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <p className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Join 4,000+ creators who've built profitable businesses
-            </p>
+            <div className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto">
+              <TypingAnimation
+                text="Join 4,000+ creators who've built profitable businesses"
+                className="text-xl md:text-2xl text-zinc-200"
+                duration={40}
+              />
+            </div>
             <motion.div
               className="inline-block"
               whileHover={{ scale: 1.05 }}
