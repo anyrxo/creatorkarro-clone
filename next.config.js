@@ -100,14 +100,10 @@ const nextConfig = {
             key: 'Strict-Transport-Security',
             value: 'max-age=31536000; includeSubDomains; preload'
           },
-          // Anti-scraping headers
+          // SEO Performance Headers (Modified for better crawling)
           {
             key: 'X-Robots-Tag',
-            value: 'noarchive, nosnippet, notranslate, noimageindex'
-          },
-          {
-            key: 'Cache-Control',
-            value: 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0'
+            value: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
           },
           // Performance headers
           {
