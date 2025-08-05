@@ -106,8 +106,8 @@ export function BeautifulHero() {
             <ScrambleText
               text="CREATE THE FUTURE"
               className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none tracking-tight"
-              scrambleSpeed={20}
-              revealSpeed={80}
+              scrambleSpeed={7}
+              revealSpeed={27}
             />
           </div>
 
