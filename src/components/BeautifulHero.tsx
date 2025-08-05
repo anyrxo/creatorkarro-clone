@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-motion'
 import Link from 'next/link'
-import TypingAnimation from '@/components/magicui/typing-animation'
+import ScrambleText from '@/components/magicui/scramble-text'
 
 export function BeautifulHero() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -155,10 +155,11 @@ export function BeautifulHero() {
           </motion.p>
           
           <div className="mb-8" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-            <TypingAnimation
+            <ScrambleText
               text="CREATE THE FUTURE"
-              className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none"
-              duration={100}
+              className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none tracking-tight"
+              scrambleSpeed={30}
+              revealSpeed={150}
             />
           </div>
 
@@ -180,115 +181,49 @@ export function BeautifulHero() {
             <Link href="/instagram-ignited" className="inline-block">
               <motion.div
                 className="group relative cursor-pointer"
-                whileHover={{ scale: 1.08, y: -8 }}
-                whileTap={{ scale: 0.92 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                {/* Multiple Glow Layers */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-20 group-hover:opacity-60 transition-all duration-1000" />
-                <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-80 transition-all duration-700" />
-                <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 rounded-2xl blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500" />
-                
-                {/* Main Button */}
+                {/* Glass Button */}
                 <motion.button
-                  className="relative z-10 px-12 py-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 hover:from-blue-500 hover:via-purple-500 hover:to-pink-400 text-white font-black text-xl rounded-2xl overflow-hidden transition-all duration-500 shadow-2xl"
+                  className="relative px-12 py-6 bg-white/10 backdrop-blur-xl border border-white/20 text-white font-bold text-xl rounded-full shadow-2xl overflow-hidden transition-all duration-500 hover:bg-white/20 hover:border-white/30 hover:shadow-[0_20px_40px_rgba(59,130,246,0.4)]"
                   whileHover={{ 
-                    boxShadow: "0 25px 50px -12px rgba(59, 130, 246, 0.5)",
+                    boxShadow: "0 20px 40px rgba(59, 130, 246, 0.4)",
                   }}
                 >
-                  {/* Animated Background */}
+                  {/* Glass shimmer effect */}
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-100"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full"
+                    animate={{
+                      translateX: ['-100%', '200%']
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatDelay: 3,
+                      ease: "easeInOut"
+                    }}
                   />
                   
-                  {/* Shimmer Effect */}
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 1.2, ease: "easeInOut", delay: 0.1 }}
-                  />
-                  
-                  <span className="relative z-10 flex items-center gap-4">
+                  <span className="relative z-10 flex items-center gap-3">
                     <motion.span
                       className="text-2xl"
-                      animate={{ rotate: [0, 15, -15, 0] }}
-                      transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+                      animate={{ 
+                        rotate: [0, 10, -10, 0],
+                        scale: [1, 1.1, 1]
+                      }}
+                      transition={{ 
+                        duration: 3, 
+                        repeat: Infinity,
+                        repeatDelay: 2
+                      }}
                     >
                       🚀
                     </motion.span>
                     Build Your Empire
-                    <motion.div
-                      className="w-2 h-2 bg-white rounded-full"
-                      animate={{ 
-                        scale: [0, 1, 0],
-                        opacity: [0, 1, 0]
-                      }}
-                      transition={{ 
-                        duration: 1.5, 
-                        repeat: Infinity,
-                        repeatDelay: 2
-                      }}
-                    />
                   </span>
                 </motion.button>
-                
-                {/* Premium Floating Elements */}
-                <div className="absolute inset-0 pointer-events-none">
-                  {[...Array(12)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className={`absolute w-1 h-1 rounded-full opacity-0 group-hover:opacity-80 ${
-                        i % 3 === 0 ? 'bg-blue-400' : 
-                        i % 3 === 1 ? 'bg-purple-400' : 
-                        'bg-pink-400'
-                      }`}
-                      style={{
-                        top: `${10 + Math.random() * 80}%`,
-                        left: `${10 + Math.random() * 80}%`,
-                      }}
-                      animate={{
-                        y: [0, -40, 0],
-                        x: [(Math.random() - 0.5) * 20, (Math.random() - 0.5) * 40, (Math.random() - 0.5) * 20],
-                        scale: [0, 1.5, 0],
-                        opacity: [0, 0.8, 0],
-                      }}
-                      transition={{
-                        duration: 3 + Math.random() * 2,
-                        repeat: Infinity,
-                        delay: Math.random() * 2,
-                        ease: "easeInOut"
-                      }}
-                    />
-                  ))}
-                </div>
-                
-                {/* Orbit Elements */}
-                <motion.div
-                  className="absolute -top-2 -right-2 w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-0 group-hover:opacity-100"
-                  animate={{
-                    rotate: [0, 360],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                />
-                <motion.div
-                  className="absolute -bottom-2 -left-2 w-3 h-3 bg-gradient-to-r from-green-400 to-cyan-500 rounded-full opacity-0 group-hover:opacity-100"
-                  animate={{
-                    rotate: [360, 0],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                />
               </motion.div>
             </Link>
           </motion.div>
