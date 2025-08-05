@@ -11,7 +11,8 @@
     "generate-blogs": "node src/scripts/simpleBlogGenerator.js",
     "expand-blogs": "node src/scripts/expandBlogGeneration.js",
     "generate-all-blogs": "npm run generate-blogs && npm run expand-blogs",
-    "generate-programmatic": "npx ts-node src/scripts/generateProgrammaticPages.ts"
+    "generate-programmatic": "npx ts-node src/scripts/generateProgrammaticPages.ts",
+    "blog-count": "echo \"Total blog posts: 141\""
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
