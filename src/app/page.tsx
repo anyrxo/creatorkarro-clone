@@ -252,44 +252,33 @@ export default function HomePage() {
             transition={{ duration: 1 }}
             className="max-w-6xl mx-auto"
           >
-            {/* Clean Brand Identity */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="mb-8"
-            >
-              <AnimatedGradientText className="mb-8">
-                <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
-                <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined
-                </span>
-                <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />
-              </AnimatedGradientText>
-            </motion.div>
+            {/* Removed brand badge as requested */}
 
-            {/* Main Headline with MagicUI */}
+            {/* Epic IImagined Brand Integration */}
             <div className="mb-8">
+              <div className="text-4xl md:text-6xl lg:text-7xl font-black text-zinc-400 mb-2 tracking-tight leading-tight">
+                <TypingAnimation
+                  text="Build. Launch. Scale. Teach."
+                  className="text-4xl md:text-6xl lg:text-7xl font-black text-zinc-400 tracking-tight"
+                  duration={80}
+                />
+              </div>
               <BlurIn
-                word="Where Creators"
-                className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 tracking-tight leading-tight"
+                word="Master Every System"
+                className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-2 tracking-tight leading-tight"
                 duration={1}
               />
-              <div className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tight leading-tight">
-                <WordRotate
-                  words={["Become Empires", "Build Legacies", "Scale Dreams", "Make Millions"]}
-                  className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
-                  duration={3000}
-                />
+              <div className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tight leading-tight bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+                We've Ever <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined
               </div>
             </div>
 
             {/* Enhanced Subtitle with MagicUI */}
             <div className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto font-medium">
               <TypingAnimation
-                text="Master AI automation and growth systems that built 4,000+ successful creators"
+                text="From viral content creation to automated product empires - discover the exact courses, strategies, and systems that transformed 4,000+ creators into millionaires."
                 className="text-xl md:text-2xl text-zinc-200 font-medium"
-                duration={50}
+                duration={30}
               />
             </div>
 
@@ -435,20 +424,20 @@ export default function HomePage() {
                 <AnimatedGradientText>
                   <hr className="mx-2 h-4 w-[1px] shrink-0 bg-zinc-300" />{" "}
                   <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
-                    The IImagined Difference
+                    Beyond What You Ever IImagined
                   </span>
                   <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                 </AnimatedGradientText>
               </div>
               <div className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight">
                 <BlurIn
-                  word="Beyond Traditional"
+                  word="Systems That Scale"
                   className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight"
                   duration={0.8}
                 />
                 <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   <WordRotate
-                    words={["Creator Education", "Growth Systems", "Business Models", "Success Methods"]}
+                    words={["Beyond Limits", "Past Dreams", "Above Expectations", "Through Barriers"]}
                     className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight"
                     duration={3500}
                   />
