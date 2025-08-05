@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-motion'
 import Link from 'next/link'
+import TypingAnimation from '@/components/magicui/typing-animation'
 
 export function BeautifulHero() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -37,15 +38,7 @@ export function BeautifulHero() {
     return () => window.removeEventListener('mousemove', handleMouseMove)
   }, [])
 
-  // Removed text scramble effect for better accessibility and performance
-  // Screen readers need consistent text content
-  
-  useEffect(() => {
-    if (isInView && titleRef.current) {
-      // Simply ensure the text is set for screen readers
-      titleRef.current.textContent = 'CREATE THE FUTURE'
-    }
-  }, [isInView])
+  // TypingAnimation now provides the scramble effect
 
   return (
     <motion.section 
@@ -116,13 +109,14 @@ export function BeautifulHero() {
             TRANSFORM YOUR PASSION INTO PROFIT
           </motion.p>
           
-          <h1 
-            ref={titleRef}
-            className="mb-8 text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none"
-            style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
-          >
-            CREATE THE FUTURE
-          </h1>
+          <div className="mb-8">
+            <TypingAnimation
+              text="CREATE THE FUTURE"
+              className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none"
+              duration={100}
+              style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+            />
+          </div>
 
           <motion.p 
             className="mb-12 text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto"
