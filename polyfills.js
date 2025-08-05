@@ -30,6 +30,37 @@ if (typeof window !== 'undefined' && typeof window.self === 'undefined') {
   window.self = window;
 }
 
+// Fix navigator property SSR issues - More careful approach
+if (typeof global !== 'undefined') {
+  try {
+    if (typeof global.navigator === 'undefined') {
+      // Define a basic navigator object for SSR
+      Object.defineProperty(global, 'navigator', {
+        value: {
+          userAgent: 'SSR-Node',
+          platform: 'node',
+          language: 'en-US',
+          languages: ['en-US'],
+          cookieEnabled: false,
+          onLine: true,
+          doNotTrack: null,
+          maxTouchPoints: 0,
+          hardwareConcurrency: 1,
+          javaEnabled: () => false,
+          taintEnabled: () => false,
+          sendBeacon: () => false,
+        },
+        writable: false,
+        configurable: false,
+        enumerable: true
+      });
+    }
+  } catch (e) {
+    // If we can't define navigator, just ignore it
+    console.warn('Could not define navigator polyfill:', e.message);
+  }
+}
+
 // Prevent ReferenceError during SSR
 try {
   if (typeof self === 'undefined') {
