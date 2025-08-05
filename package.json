@@ -10,6 +10,7 @@
     "format": "bunx biome format --write"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@radix-ui/react-switch": "^1.2.5",
     "@tailwindcss/typography": "^0.5.16",
     "@vercel/analytics": "^1.5.0",

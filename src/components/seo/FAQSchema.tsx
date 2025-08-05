@@ -215,7 +215,7 @@ export default function FAQSchema({ faqs, displayType = 'hidden', maxDisplay }: 
               <summary className="flex items-center justify-between p-6 cursor-pointer font-semibold text-white hover:text-blue-400 transition-colors">
                 {faq.question}
                 <span className="ml-4 flex-shrink-0 transform group-open:rotate-180 transition-transform">
-                  ¼
+                  â–¼
                 </span>
               </summary>
               <div className="px-6 pb-6 text-zinc-300">
