@@ -177,6 +177,51 @@ export default function ResourcesPage() {
           />
         </div>
         
+        {/* Heartbeat Grid Pulsing from Center */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          {/* Center Point - Heart of the pulse */}
+          <div
+            className="absolute w-4 h-4 rounded-full"
+            style={{
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              background: 'rgba(59, 130, 246, 0.8)',
+              boxShadow: '0 0 20px rgba(59, 130, 246, 0.5)',
+              animation: 'pulse 2s infinite ease-in-out'
+            }}
+          />
+          
+          {/* Grid Lines radiating from center */}
+          <svg className="absolute inset-0 w-full h-full" style={{ opacity: 0.1 }}>
+            <defs>
+              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="1"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+          </svg>
+          
+          {/* Pulsing lines from center */}
+          <div className="absolute inset-0">
+            {[...Array(8)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"
+                style={{
+                  left: '50%',
+                  top: '50%',
+                  width: '200px',
+                  height: '1px',
+                  transformOrigin: '0 0',
+                  transform: `translate(-50%, -50%) rotate(${i * 45}deg)`,
+                  animation: `pulse 2s infinite ease-in-out ${i * 0.1}s`
+                }}
+              />
+            ))}
+          </div>
+        </div>
+        
         {/* Floating Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-20 w-4 h-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-bounce opacity-60" style={{animationDuration: '3s'}}></div>

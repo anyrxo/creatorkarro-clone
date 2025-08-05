@@ -66,6 +66,51 @@ export default function Footer() {
           }}
         />
       </div>
+
+      {/* Heartbeat Grid Pulsing from Center - Footer Version */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Center Point - Heart of the pulse */}
+        <div
+          className="absolute w-3 h-3 rounded-full"
+          style={{
+            left: '50%',
+            top: '40%',
+            transform: 'translate(-50%, -50%)',
+            background: 'rgba(59, 130, 246, 0.6)',
+            boxShadow: '0 0 15px rgba(59, 130, 246, 0.4)',
+            animation: 'pulse 3s infinite ease-in-out'
+          }}
+        />
+        
+        {/* Grid Lines radiating from center */}
+        <svg className="absolute inset-0 w-full h-full" style={{ opacity: 0.05 }}>
+          <defs>
+            <pattern id="footerGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(59, 130, 246, 0.2)" strokeWidth="1"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#footerGrid)" />
+        </svg>
+        
+        {/* Pulsing lines from center - Footer version */}
+        <div className="absolute inset-0">
+          {[...Array(6)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute bg-gradient-to-r from-transparent via-blue-500/10 to-transparent"
+              style={{
+                left: '50%',
+                top: '40%',
+                width: '150px',
+                height: '1px',
+                transformOrigin: '0 0',
+                transform: `translate(-50%, -50%) rotate(${i * 60}deg)`,
+                animation: `pulse 3s infinite ease-in-out ${i * 0.2}s`
+              }}
+            />
+          ))}
+        </div>
+      </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         {/* Main Footer Content */}
