@@ -59,7 +59,6 @@ export const metadata = {
 
 export default function BlogPost() {
   return (
-```jsx
 <div className="min-h-screen bg-dark">
   {/* SEO-OPTIMIZED HERO SECTION */}
   <section className="section-spacing overflow-hidden relative">
