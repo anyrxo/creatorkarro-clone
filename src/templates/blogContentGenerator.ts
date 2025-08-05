@@ -20,7 +20,8 @@ export class BlogContentFactory {
   static generateInstagramContent(variation: string): BlogTemplate {
     const variations = {
       'growth-strategies-2025': {
-        title: '=€ Instagram Growth Strategies 2025: 10 Proven Methods That Work',
+        title: '=ï¿½ Instagram Growth Strategies 2025: 10 Proven Methods That Work',
+        slug: 'growth-strategies-2025',
         description: 'Discover the top 10 Instagram growth strategies that are driving massive engagement in 2025. These proven methods helped our students gain 100K+ followers.',
         content: `
 # Instagram Growth Strategies 2025: The Complete Domination Guide
@@ -152,6 +153,7 @@ These methods are just the beginning. Our Instagram Ignited course provides the 
       
       'algorithm-mastery': {
         title: '=% Instagram Algorithm 2025: Master the System for Explosive Growth',
+        slug: 'algorithm-mastery',
         description: 'Crack the Instagram algorithm code with insider strategies. Learn how our students consistently reach 100K+ people with every post.',
         content: `
 # Instagram Algorithm 2025: The Ultimate Mastery Guide
@@ -189,7 +191,7 @@ This is where viral content is born or dies:
 ### 2. Engagement Velocity Hacking
 The algorithm measures engagement speed:
 
-**Formula**: (Likes + Comments + Shares) ÷ Minutes Since Posted = Velocity Score
+**Formula**: (Likes + Comments + Shares) ï¿½ Minutes Since Posted = Velocity Score
 
 **Optimization Tactics:**
 - Create anticipation with Stories before posting
@@ -296,7 +298,7 @@ Our Instagram Ignited course provides:
 - Personal account audits
 - Direct access to our team
 
-[Join 127K+ Students Mastering Instagram ’](https://iimagined.ai/instagram-ignited)
+[Join 127K+ Students Mastering Instagram ï¿½](https://iimagined.ai/instagram-ignited)
 
 *Transform your Instagram presence with algorithm-proven strategies.*
         `,
@@ -322,7 +324,8 @@ Our Instagram Ignited course provides:
   static generateAIContent(variation: string): BlogTemplate {
     const variations = {
       'profitable-workflows': {
-        title: '=° AI Automation Workflows That Generate $10K+ Monthly',
+        title: '=ï¿½ AI Automation Workflows That Generate $10K+ Monthly',
+        slug: 'profitable-workflows',
         description: 'Discover the exact AI automation workflows our students use to generate consistent $10K+ monthly revenue. Complete implementation guide included.',
         content: `
 # AI Automation Workflows: Your Path to $10K+ Monthly Revenue
@@ -488,7 +491,7 @@ The opportunity in AI automation is massive, but implementation is everything. O
 - Private community support
 - Client acquisition strategies
 
-[Start Building Profitable Automations ’](https://iimagined.ai/n8n-ai-automations)
+[Start Building Profitable Automations ï¿½](https://iimagined.ai/n8n-ai-automations)
 
 *Join students already generating $10K+ monthly with AI automation.*
         `,

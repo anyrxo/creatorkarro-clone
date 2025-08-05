@@ -2,7 +2,16 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-export function middleware(request: NextRequest) {
+// Extend NextRequest type to include geo
+interface ExtendedNextRequest extends NextRequest {
+  geo?: {
+    country?: string
+    city?: string
+    region?: string
+  }
+}
+
+export function middleware(request: ExtendedNextRequest) {
   const response = NextResponse.next()
   const { pathname, searchParams } = request.nextUrl
   

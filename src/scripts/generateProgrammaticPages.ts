@@ -314,7 +314,7 @@ export async function generateProgrammaticPages() {
         ].join(', ')
         
         // Generate the page content
-        let pageContent = geoPageTemplate
+        const pageContent = geoPageTemplate
           .replace(/{{SLUG}}/g, slug)
           .replace(/{{COMPONENT_NAME}}/g, componentName)
           .replace(/{{CITY_DISPLAY}}/g, cityDisplay)
