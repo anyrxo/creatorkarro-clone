@@ -1,3 +1,6 @@
+// SSR polyfill must be imported first
+import "@/lib/ssr-polyfill";
+
 import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
 // Professional icon system deployment
