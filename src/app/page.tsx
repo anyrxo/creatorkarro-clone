@@ -254,22 +254,14 @@ export default function HomePage() {
           >
             {/* Removed brand badge as requested */}
 
-            {/* Epic IImagined Brand Integration */}
+            {/* Morphing Letters Effect */}
             <div className="mb-8">
-              <div className="text-4xl md:text-6xl lg:text-7xl font-black text-zinc-400 mb-2 tracking-tight leading-tight">
+              <div className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tight leading-tight">
                 <TypingAnimation
-                  text="Build. Launch. Scale. Teach."
-                  className="text-4xl md:text-6xl lg:text-7xl font-black text-zinc-400 tracking-tight"
-                  duration={80}
+                  text="Create the Future"
+                  className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent tracking-tight"
+                  duration={100}
                 />
-              </div>
-              <BlurIn
-                word="Master Every System"
-                className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-2 tracking-tight leading-tight"
-                duration={1}
-              />
-              <div className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tight leading-tight bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-                We've Ever <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined
               </div>
             </div>
 
