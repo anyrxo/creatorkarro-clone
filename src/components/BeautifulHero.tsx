@@ -183,129 +183,214 @@ export function BeautifulHero() {
         </motion.div>
       </div>
 
-      {/* Pulsing Grid Lines */}
+      {/* Heartbeat Grid Pulsing from Center */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Horizontal Grid Lines */}
-        {[...Array(12)].map((_, i) => (
+        {/* Center Point - Heart of the pulse */}
+        <motion.div
+          className="absolute w-4 h-4 rounded-full"
+          style={{
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
+            background: 'rgba(59, 130, 246, 0.8)'
+          }}
+          animate={{
+            scale: [1, 3, 1],
+            opacity: [0.8, 1, 0.8],
+            boxShadow: [
+              '0 0 20px rgba(59, 130, 246, 0.5)',
+              '0 0 60px rgba(59, 130, 246, 1)',
+              '0 0 20px rgba(59, 130, 246, 0.5)'
+            ]
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+
+        {/* Horizontal Grid Lines - Pulse from center outward */}
+        {[...Array(14)].map((_, i) => {
+          const distanceFromCenter = Math.abs(i - 7)
+          const delay = distanceFromCenter * 0.1
+          
+          return (
+            <motion.div
+              key={`h-line-${i}`}
+              className="absolute w-full h-px"
+              style={{
+                top: `${5 + i * 7}%`,
+                left: '0%',
+                background: 'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)'
+              }}
+              animate={{
+                opacity: [0, 1, 0],
+                scaleX: [0, 1, 0],
+                background: [
+                  'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)',
+                  'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.8), transparent)',
+                  'linear-gradient(90deg, transparent, rgba(147, 51, 234, 0.6), transparent)',
+                  'linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.4), transparent)',
+                  'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)'
+                ]
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                delay: delay,
+                ease: "easeInOut",
+                repeatDelay: 1
+              }}
+            />
+          )
+        })}
+
+        {/* Vertical Grid Lines - Pulse from center outward */}
+        {[...Array(12)].map((_, i) => {
+          const distanceFromCenter = Math.abs(i - 6)
+          const delay = distanceFromCenter * 0.15
+          
+          return (
+            <motion.div
+              key={`v-line-${i}`}
+              className="absolute h-full w-px"
+              style={{
+                left: `${8 + i * 7}%`,
+                top: '0%',
+                background: 'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)'
+              }}
+              animate={{
+                opacity: [0, 1, 0],
+                scaleY: [0, 1, 0],
+                background: [
+                  'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)',
+                  'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.8), transparent)',
+                  'linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.6), transparent)',
+                  'linear-gradient(180deg, transparent, rgba(236, 72, 153, 0.4), transparent)',
+                  'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)'
+                ]
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                delay: delay + 0.3,
+                ease: "easeInOut",
+                repeatDelay: 1
+              }}
+            />
+          )
+        })}
+
+        {/* Diagonal Lines - Creating web effect */}
+        {[...Array(8)].map((_, i) => (
           <motion.div
-            key={`h-line-${i}`}
-            className="absolute w-full h-px"
+            key={`diag-${i}`}
+            className="absolute w-px origin-center"
             style={{
-              top: `${8 + i * 8}%`,
-              background: 'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.4), transparent)'
+              left: '50%',
+              top: '50%',
+              height: '70%',
+              transform: `translate(-50%, -50%) rotate(${i * 45}deg)`,
+              background: 'linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.3), transparent)'
             }}
             animate={{
               opacity: [0, 0.8, 0],
-              scaleX: [0, 1, 0],
-              background: [
-                'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)',
-                'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.8), transparent)',
-                'linear-gradient(90deg, transparent, rgba(147, 51, 234, 0.6), transparent)',
-                'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)'
-              ]
-            }}
-            transition={{
-              duration: 4 + Math.random() * 2,
-              repeat: Infinity,
-              delay: i * 0.3,
-              ease: "easeInOut"
-            }}
-          />
-        ))}
-
-        {/* Vertical Grid Lines */}
-        {[...Array(10)].map((_, i) => (
-          <motion.div
-            key={`v-line-${i}`}
-            className="absolute h-full w-px"
-            style={{
-              left: `${10 + i * 8}%`,
-              background: 'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.4), transparent)'
-            }}
-            animate={{
-              opacity: [0, 0.6, 0],
               scaleY: [0, 1, 0],
               background: [
-                'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)',
-                'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.7), transparent)',
-                'linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.5), transparent)',
-                'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)'
+                'linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.2), transparent)',
+                'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.8), transparent)',
+                'linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.6), transparent)',
+                'linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.2), transparent)'
               ]
             }}
             transition={{
-              duration: 5 + Math.random() * 2,
+              duration: 4,
               repeat: Infinity,
-              delay: i * 0.4 + 1,
-              ease: "easeInOut"
+              delay: i * 0.2 + 1,
+              ease: "easeInOut",
+              repeatDelay: 2
             }}
           />
         ))}
 
-        {/* Pulse Wave Effect - Horizontal */}
-        <motion.div
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(0deg, transparent 0%, rgba(59, 130, 246, 0.1) 50%, transparent 100%)'
-          }}
-          animate={{
-            y: ['-100%', '100%'],
-            opacity: [0, 1, 0]
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-            repeatDelay: 4
-          }}
-        />
-
-        {/* Pulse Wave Effect - Vertical */}
-        <motion.div
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(90deg, transparent 0%, rgba(147, 51, 234, 0.1) 50%, transparent 100%)'
-          }}
-          animate={{
-            x: ['-100%', '100%'],
-            opacity: [0, 1, 0]
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-            repeatDelay: 6,
-            delay: 2
-          }}
-        />
-
-        {/* Grid Intersection Points */}
-        {[...Array(20)].map((_, i) => (
+        {/* Concentric Circles - Heartbeat ripples */}
+        {[...Array(4)].map((_, i) => (
           <motion.div
-            key={`dot-${i}`}
-            className="absolute w-1 h-1 rounded-full"
+            key={`circle-${i}`}
+            className="absolute rounded-full border"
             style={{
-              left: `${10 + (i % 8) * 10}%`,
-              top: `${20 + Math.floor(i / 8) * 15}%`,
-              background: 'rgba(59, 130, 246, 0.6)'
+              left: '50%',
+              top: '50%',
+              width: `${(i + 1) * 200}px`,
+              height: `${(i + 1) * 200}px`,
+              transform: 'translate(-50%, -50%)',
+              borderColor: 'rgba(59, 130, 246, 0.2)',
+              borderWidth: '1px'
             }}
             animate={{
-              scale: [0, 2, 0],
-              opacity: [0, 1, 0],
-              boxShadow: [
-                '0 0 0px rgba(59, 130, 246, 0)',
-                '0 0 20px rgba(59, 130, 246, 0.8)',
-                '0 0 0px rgba(59, 130, 246, 0)'
+              scale: [0, 1.2, 0],
+              opacity: [0, 0.6, 0],
+              borderColor: [
+                'rgba(59, 130, 246, 0.2)',
+                'rgba(59, 130, 246, 0.8)',
+                'rgba(147, 51, 234, 0.6)',
+                'rgba(6, 182, 212, 0.4)',
+                'rgba(59, 130, 246, 0.2)'
               ]
             }}
             transition={{
-              duration: 3,
+              duration: 5,
               repeat: Infinity,
-              delay: Math.random() * 6,
-              ease: "easeInOut",
-              repeatDelay: 8 + Math.random() * 4
+              delay: i * 0.5,
+              ease: "easeOut",
+              repeatDelay: 3
             }}
           />
         ))}
+
+        {/* Node intersection points - Color flow effect */}
+        {[...Array(24)].map((_, i) => {
+          const angle = (i * 360 / 24) * (Math.PI / 180)
+          const radius = 150 + (i % 3) * 50
+          const x = 50 + Math.cos(angle) * (radius / 10)
+          const y = 50 + Math.sin(angle) * (radius / 15)
+          
+          return (
+            <motion.div
+              key={`node-${i}`}
+              className="absolute w-2 h-2 rounded-full"
+              style={{
+                left: `${x}%`,
+                top: `${y}%`,
+                background: 'rgba(59, 130, 246, 0.6)'
+              }}
+              animate={{
+                scale: [0, 2, 0],
+                opacity: [0, 1, 0],
+                background: [
+                  'rgba(59, 130, 246, 0.6)',
+                  'rgba(147, 51, 234, 0.8)',
+                  'rgba(6, 182, 212, 0.7)',
+                  'rgba(236, 72, 153, 0.5)',
+                  'rgba(59, 130, 246, 0.6)'
+                ],
+                boxShadow: [
+                  '0 0 0px rgba(59, 130, 246, 0)',
+                  '0 0 30px rgba(59, 130, 246, 0.8)',
+                  '0 0 0px rgba(59, 130, 246, 0)'
+                ]
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                delay: (i * 0.1) + Math.random() * 2,
+                ease: "easeInOut",
+                repeatDelay: 4 + Math.random() * 2
+              }}
+            />
+          )
+        })}
       </div>
     </motion.section>
   )
