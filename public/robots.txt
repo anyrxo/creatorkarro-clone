@@ -73,6 +73,8 @@ Disallow: /secret-admin-panel-do-not-access/
 # Site information
 Sitemap: https://iimagined.ai/sitemap.xml
 Sitemap: https://iimagined.ai/sitemap-index.xml
+Sitemap: https://iimagined.ai/blog-sitemap.xml
+Sitemap: https://iimagined.ai/geo-sitemap.xml
 Sitemap: https://iimagined.ai/news-sitemap.xml
 
 # Legal notice
