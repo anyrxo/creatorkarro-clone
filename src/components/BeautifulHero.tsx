@@ -32,41 +32,35 @@ export function BeautifulHero() {
       className="relative min-h-screen overflow-hidden bg-gradient-to-b from-black via-zinc-900 to-black"
       style={{ y, opacity, scale }}
     >
-      {/* Static gradient orbs - no mouse following */}
+      {/* Optimized gradient orbs - better mobile performance */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          className="absolute w-[1000px] h-[1000px] rounded-full bg-gradient-to-r from-purple-600/30 to-blue-600/30 blur-3xl"
-          animate={{
-            scale: [1, 1.1, 1],
-            rotate: [0, 360],
+        {/* Use CSS animations instead of JS for better performance */}
+        <div 
+          className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-purple-600/20 to-blue-600/20 blur-2xl animate-pulse opacity-60"
+          style={{ 
+            left: '15%', 
+            top: '5%',
+            animationDuration: '4s'
           }}
-          transition={{ 
-            scale: { duration: 8, repeat: Infinity, ease: "easeInOut" },
-            rotate: { duration: 20, repeat: Infinity, ease: "linear" }
-          }}
-          style={{ left: '15%', top: '5%' }}
         />
-        <motion.div
-          className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-pink-600/25 to-purple-600/25 blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [360, 0],
+        <div 
+          className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-pink-600/15 to-purple-600/15 blur-2xl animate-pulse opacity-50"
+          style={{ 
+            right: '5%', 
+            bottom: '15%',
+            animationDuration: '6s',
+            animationDelay: '1s'
           }}
-          transition={{ 
-            scale: { duration: 12, repeat: Infinity, ease: "easeInOut" },
-            rotate: { duration: 15, repeat: Infinity, ease: "linear" }
-          }}
-          style={{ right: '5%', bottom: '15%' }}
         />
-        <motion.div
-          className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-cyan-600/20 to-blue-600/20 blur-3xl"
-          animate={{
-            scale: [1, 1.3, 1],
+        <div 
+          className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-cyan-600/15 to-blue-600/15 blur-xl animate-pulse opacity-40"
+          style={{ 
+            left: '50%', 
+            top: '50%', 
+            transform: 'translate(-50%, -50%)',
+            animationDuration: '5s',
+            animationDelay: '2s'
           }}
-          transition={{ 
-            scale: { duration: 10, repeat: Infinity, ease: "easeInOut" }
-          }}
-          style={{ left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}
         />
       </div>
 
@@ -107,7 +101,7 @@ export function BeautifulHero() {
               text="CREATE THE FUTURE"
               className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none tracking-tight"
               scrambleSpeed={1}
-              revealSpeed={3}
+              revealSpeed={1}
             />
           </div>
 
