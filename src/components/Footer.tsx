@@ -40,7 +40,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold text-white mb-4">
-              IImagined<span className="text-blue-400">.ai</span>
+              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined<span className="text-blue-400">.ai</span>
             </h3>
             <p className="text-zinc-300 mb-8 leading-relaxed text-lg">
               Transform your passion into profit with AI automation, viral content systems, and digital product mastery. Join <NumberTicker value={4000} className="text-blue-400 font-semibold" />+ students building their creator empire.
@@ -129,7 +129,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-gray-400 text-sm">
-              © {currentYear} IImagined.ai. All rights reserved. Created by{' '}
+              © {currentYear} <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined.ai. All rights reserved. Created by{' '}
               <Link href="/about" className="text-blue-400 hover:text-blue-300">
                 Anyro
               </Link>
