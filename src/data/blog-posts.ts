@@ -2010,3 +2010,12 @@ export const allBlogPosts: BlogPost[] = [
     ]
   }
 ];
+
+// Generate categories from blog posts
+export const categories = Array.from(new Set(allBlogPosts.map(post => post.category))).sort();
+
+// Generate tags from blog posts
+export const tags = Array.from(new Set(allBlogPosts.flatMap(post => post.tags))).sort();
+
+// Featured posts
+export const featuredPosts = allBlogPosts.filter(post => post.featured);
