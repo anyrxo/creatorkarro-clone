@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FX Trading Mastery Course - Professional Forex Trading',
     description: 'Master profitable FX trading with proven strategies used by professional traders. Learn to build consistent income from forex markets.',
-    type: 'product',
+    type: 'website',
     images: [
       {
         url: `${siteConfig.url}/courses/fx-trading/og-image.png`,
