@@ -19,7 +19,8 @@
   "build": {
     "env": {
       "VERCEL_FORCE_NO_BUILD_CACHE": "1",
-      "NODE_OPTIONS": "--max-old-space-size=8192"
+      "NODE_OPTIONS": "--max-old-space-size=8192",
+      "DEPLOY_TIMESTAMP": "2025-01-05-17-15-00"
     }
   },
   "headers": [
