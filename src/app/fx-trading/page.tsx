@@ -461,10 +461,10 @@ export default function FXTradingPage() {
         {/* Hero Section */}
         <div ref={heroAnimation.elementRef} className="relative z-10">
           <HeroSection
-            badge="PROFESSIONAL FOREX EDUCATION"
+            badge="PROP FIRM CHALLENGE MASTERY"
             badgeColor="bg-green-600/30 text-green-300"
-            title={<>Master <span className="text-green-400">Professional FX Trading</span> And Build <span className="text-green-400">$10K/Month</span> Income From Currency Markets</>}
-            description={<>Learn the same strategies used by <span className="text-green-300">professional traders</span> to generate consistent profits</>}
+            title={<>Pass <span className="text-green-400">Prop Firm Challenges</span> And Get <span className="text-green-400">$100K+ Funded</span> Trading Accounts</>}
+            description={<>Learn the exact strategies to pass <span className="text-green-300">prop firm challenges</span> and build consistent income with funded accounts</>}
             ctaText="Start Your Trading Journey"
             ctaLink="#packages"
             socialProof={{

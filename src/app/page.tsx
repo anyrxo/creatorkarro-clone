@@ -101,8 +101,8 @@ export default function HomePage() {
     {
       id: 'fx-trading',
       title: 'FX Trading Mastery',
-      subtitle: 'Professional Forex Trading',
-      description: 'Master profitable forex trading with proven strategies used by professional traders. Learn risk management, technical analysis, and build consistent income.',
+      subtitle: 'Prop Firm Challenge Success',
+      description: 'Pass prop firm challenges and get $100K+ funded accounts. Learn the exact strategies to succeed with funded trading companies and build consistent income.',
       gradient: 'from-orange-600 to-red-600',
       icon: 'bot',
       stats: '2,000+ students • $1.2M+ student revenue',
