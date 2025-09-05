@@ -2153,7 +2153,36 @@ function ComprehensiveTradingCalculator({
             </CardContent>
           </Card>
         )}
+
+        {/* Main Trading Chart - Full Width at Bottom */}
+        <Card className="shadow-xl border border-purple-500/20 bg-slate-800/90 backdrop-blur-sm">
+          <CardHeader>
+            <CardTitle className="text-2xl flex items-center justify-between text-white">
+              <div className="flex items-center">
+                <BarChart3 className="mr-3 h-6 w-6 text-blue-400" />
+                Professional Trading Chart
+              </div>
+              <Badge variant="secondary" className="text-xs">
+                Full Space • Real-Time Data
+              </Badge>
+            </CardTitle>
+            <CardDescription className="text-purple-300">
+              Advanced chart with full space for detailed technical analysis
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="p-4">
+            <TradingViewChart 
+              selectedPair={currencyPair}
+              height={700}
+              showControls={true}
+              className="w-full"
+            />
+          </CardContent>
+        </Card>
       </div>
+
+      {/* Important Disclaimer */}
+      <Disclaimer />
     </div>
   )
 }
@@ -2656,34 +2685,6 @@ function ProContent() {
         </Card>
       </div>
 
-      {/* Main Trading Chart - Full Width at Bottom */}
-      <Card className="shadow-xl border border-purple-500/20 bg-slate-800/90 backdrop-blur-sm">
-        <CardHeader>
-          <CardTitle className="text-2xl flex items-center justify-between text-white">
-            <div className="flex items-center">
-              <BarChart3 className="mr-3 h-6 w-6 text-blue-400" />
-              Professional Trading Chart
-            </div>
-            <Badge variant="secondary" className="text-xs">
-              Full Space • Real-Time Data
-            </Badge>
-          </CardTitle>
-          <CardDescription className="text-purple-300">
-            Advanced chart with full space for detailed technical analysis
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="p-4">
-          <TradingViewChart 
-            selectedPair={currencyPair}
-            height={700}
-            showControls={true}
-            className="w-full"
-          />
-        </CardContent>
-      </Card>
-
-      {/* Important Disclaimer */}
-      <Disclaimer />
     </div>
   )
 }
