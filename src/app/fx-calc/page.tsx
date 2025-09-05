@@ -11,6 +11,8 @@ import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Textarea } from '@/components/ui/textarea'
+import { Slider } from '@/components/ui/slider'
+import { Switch } from '@/components/ui/switch'
 import { 
   Calculator, 
   TrendingUp, 
@@ -45,7 +47,18 @@ import {
   Wifi,
   WifiOff,
   Database,
-  Server
+  Server,
+  Settings,
+  Percent,
+  PieChart,
+  LineChart,
+  Layers,
+  Maximize,
+  Save,
+  Download,
+  Share2,
+  Sliders,
+  TrendingUp as TrendUp
 } from 'lucide-react'
 
 // Import custom components
@@ -58,7 +71,7 @@ import TradingViewChart from './components/TradingViewChart'
 // Import real-time hooks
 import { useRealTimePrice, useMarketAnalysis, useMarketNews } from './hooks/useRealTimePrice'
 
-// Enhanced prop firm configurations with accurate rules
+// Enhanced prop firm configurations with comprehensive rules
 const PROP_FIRMS = {
   fivepercenters: {
     name: 'The5ers',
@@ -68,7 +81,11 @@ const PROP_FIRMS = {
       funded: { name: 'Funded', target: 0, maxDailyloss: 5, maxTotalLoss: 8, timeLimit: null }
     },
     accountSizes: ['10000', '20000', '50000', '100000', '200000'],
-    profitSplit: { trader: 80, firm: 20 }
+    profitSplit: { trader: 80, firm: 20 },
+    minTradingDays: 4,
+    maxTradingDays: 30,
+    consistency: 'Max 5% daily loss on any single day',
+    restrictions: ['No weekend holding', 'No news trading 2min before/after high impact news']
   },
   ftmo: {
     name: 'FTMO',
@@ -78,7 +95,11 @@ const PROP_FIRMS = {
       funded: { name: 'Funded', target: 0, maxDailyloss: 5, maxTotalLoss: 10, timeLimit: null }
     },
     accountSizes: ['10000', '25000', '50000', '100000', '200000'],
-    profitSplit: { trader: 80, firm: 20 }
+    profitSplit: { trader: 80, firm: 20 },
+    minTradingDays: 10,
+    maxTradingDays: 30,
+    consistency: 'No single day loss > 5%',
+    restrictions: ['No weekend holding', 'No high-impact news trading', 'Min 10 trading days']
   },
   myforexfunds: {
     name: 'MyForexFunds',
@@ -88,7 +109,39 @@ const PROP_FIRMS = {
       funded: { name: 'Funded', target: 0, maxDailyloss: 4, maxTotalLoss: 8, timeLimit: null }
     },
     accountSizes: ['10000', '25000', '50000', '100000'],
-    profitSplit: { trader: 85, firm: 15 }
+    profitSplit: { trader: 85, firm: 15 },
+    minTradingDays: 5,
+    maxTradingDays: null,
+    consistency: 'Max 4% daily loss',
+    restrictions: ['No copy trading', 'EA allowed with conditions']
+  },
+  apex: {
+    name: 'Apex Trader Funding',
+    phases: {
+      evaluation: { name: 'Evaluation', target: 8, maxDailyloss: 4, maxTotalLoss: 8, timeLimit: 30 },
+      funded: { name: 'Funded', target: 0, maxDailyloss: 4, maxTotalLoss: 8, timeLimit: null }
+    },
+    accountSizes: ['25000', '50000', '100000', '150000', '300000'],
+    profitSplit: { trader: 90, firm: 10 },
+    minTradingDays: 7,
+    maxTradingDays: 30,
+    consistency: 'No single day loss > 4%',
+    restrictions: ['No weekend holding', 'No high leverage on news']
+  },
+  fundednext: {
+    name: 'FundedNext',
+    phases: {
+      express: { name: 'Express', target: 15, maxDailyloss: 5, maxTotalLoss: 8, timeLimit: 4 },
+      evaluation: { name: 'Evaluation', target: 10, maxDailyloss: 5, maxTotalLoss: 10, timeLimit: 30 },
+      consistency: { name: 'Consistency', target: 5, maxDailyloss: 5, maxTotalLoss: 10, timeLimit: 60 },
+      funded: { name: 'Funded', target: 0, maxDailyloss: 5, maxTotalLoss: 10, timeLimit: null }
+    },
+    accountSizes: ['6000', '15000', '25000', '50000', '100000', '200000'],
+    profitSplit: { trader: 80, firm: 20 },
+    minTradingDays: 5,
+    maxTradingDays: 30,
+    consistency: 'Consistent profit growth required',
+    restrictions: ['No weekend holding', 'Max 2 positions on news']
   }
 }
 
@@ -163,6 +216,82 @@ const RISK_LEVELS = {
   moderate: { percentage: 1.0, description: 'Balanced risk management' },
   aggressive: { percentage: 1.5, description: 'Higher risk for more rewards' },
   custom: { percentage: 1.5, description: 'Set your own risk level' }
+}
+
+// Advanced Position Sizing Methods
+const POSITION_SIZING_METHODS = {
+  fixed: { name: 'Fixed Risk %', description: 'Fixed percentage of account per trade', icon: Percent },
+  kelly: { name: 'Kelly Criterion', description: 'Optimal position size based on win rate and R:R', icon: Brain },
+  volatility: { name: 'Volatility-Based', description: 'Position size adjusted for market volatility', icon: Activity },
+  martingale: { name: 'Martingale', description: 'Increase position after losses (high risk)', icon: TrendingDown },
+  antiMartingale: { name: 'Anti-Martingale', description: 'Increase position after wins', icon: TrendingUp }
+}
+
+// Timeframe Risk Multipliers
+const TIMEFRAME_MULTIPLIERS = {
+  'M1': { volatility: 4.0, risk: 'Very High', multiplier: 2.0 },
+  'M5': { volatility: 2.5, risk: 'High', multiplier: 1.5 },
+  'M15': { volatility: 1.8, risk: 'Medium-High', multiplier: 1.2 },
+  'H1': { volatility: 1.2, risk: 'Medium', multiplier: 1.0 },
+  'H4': { volatility: 0.8, risk: 'Medium-Low', multiplier: 0.8 },
+  'D1': { volatility: 0.5, risk: 'Low', multiplier: 0.6 },
+  'W1': { volatility: 0.3, risk: 'Very Low', multiplier: 0.5 }
+}
+
+// Advanced Risk Calculation Functions
+const calculateKellyPosition = (winRate: number, avgWin: number, avgLoss: number, accountSize: number) => {
+  const winProbability = winRate / 100
+  const lossProbability = 1 - winProbability
+  const payoffRatio = avgWin / avgLoss
+  const kellyFraction = (winProbability * payoffRatio - lossProbability) / payoffRatio
+  return Math.max(0, Math.min(0.25, kellyFraction)) * accountSize // Cap at 25%
+}
+
+const calculateVolatilityAdjustedPosition = (basePosition: number, marketVolatility: number, timeframe: string) => {
+  const timeframeData = TIMEFRAME_MULTIPLIERS[timeframe as keyof typeof TIMEFRAME_MULTIPLIERS] || TIMEFRAME_MULTIPLIERS.H1
+  const volatilityAdjustment = 1 - (marketVolatility * timeframeData.multiplier)
+  return basePosition * Math.max(0.1, volatilityAdjustment)
+}
+
+const calculateAdvancedRiskMetrics = (trades: any[], accountSize: number) => {
+  if (!trades || trades.length === 0) return null
+  
+  const returns = trades.map(t => t.profit / accountSize)
+  const positiveReturns = returns.filter(r => r > 0)
+  const negativeReturns = returns.filter(r => r < 0)
+  
+  // Sharpe Ratio calculation
+  const avgReturn = returns.reduce((a, b) => a + b, 0) / returns.length
+  const returnVariance = returns.reduce((sum, r) => sum + Math.pow(r - avgReturn, 2), 0) / returns.length
+  const sharpeRatio = avgReturn / Math.sqrt(returnVariance)
+  
+  // Maximum Drawdown
+  let peak = 0
+  let maxDrawdown = 0
+  let runningSum = 0
+  
+  for (const ret of returns) {
+    runningSum += ret
+    if (runningSum > peak) peak = runningSum
+    const drawdown = peak - runningSum
+    if (drawdown > maxDrawdown) maxDrawdown = drawdown
+  }
+  
+  // Win Rate and Profit Factor
+  const winRate = (positiveReturns.length / trades.length) * 100
+  const totalProfit = positiveReturns.reduce((a, b) => a + b, 0)
+  const totalLoss = Math.abs(negativeReturns.reduce((a, b) => a + b, 0))
+  const profitFactor = totalLoss > 0 ? totalProfit / totalLoss : totalProfit > 0 ? 999 : 0
+  
+  return {
+    sharpeRatio: isFinite(sharpeRatio) ? sharpeRatio : 0,
+    maxDrawdown: maxDrawdown * 100,
+    winRate,
+    profitFactor,
+    avgWin: positiveReturns.length > 0 ? totalProfit / positiveReturns.length : 0,
+    avgLoss: negativeReturns.length > 0 ? totalLoss / negativeReturns.length : 0,
+    expectancy: (winRate/100 * (totalProfit/positiveReturns.length || 0)) - ((100-winRate)/100 * (totalLoss/negativeReturns.length || 0))
+  }
 }
 
 export default function FXCalculatorPage() {
@@ -298,6 +427,25 @@ export default function FXCalculatorPage() {
   const [tradeDirection, setTradeDirection] = useState('buy')
   const [riskLevel, setRiskLevel] = useState('moderate')
   const [customRisk, setCustomRisk] = useState('1.0')
+  
+  // Advanced Position Sizing State
+  const [positionSizingMethod, setPositionSizingMethod] = useState('fixed')
+  const [kellyWinRate, setKellyWinRate] = useState(60)
+  const [kellyAvgWin, setKellyAvgWin] = useState(150)
+  const [kellyAvgLoss, setKellyAvgLoss] = useState(100)
+  const [timeframe, setTimeframe] = useState('H1')
+  const [showAdvancedOptions, setShowAdvancedOptions] = useState(false)
+  
+  // Intelligent Suggestions State
+  const [suggestions, setSuggestions] = useState<Array<{
+    type: string;
+    severity: 'info' | 'warning' | 'error';
+    message: string;
+    action?: () => void;
+  }>>([])
+  
+  // Enhanced calculation results
+  const [calculationResults, setCalculationResults] = useState<any>(null)
   const [propFirm, setPropFirm] = useState('fivepercenters')
   const [challengePhase, setChallengePhase] = useState('phase1')
 
@@ -599,7 +747,217 @@ export default function FXCalculatorPage() {
     })
   }
 
+  // Enhanced calculation function with advanced position sizing
+  const calculateAdvancedTrade = () => {
+    const account = parseFloat(accountSize) || 10000
+    const balance = parseFloat(currentBalance) || account
+    const entry = parseFloat(entryPrice) || CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS].defaultPrice
+    const sl = parseFloat(stopLoss) || 0
+    const tp = parseFloat(takeProfit) || 0
+    const manualLotSize = parseFloat(lotSize) || 0
+
+    if (!entry || entry <= 0) return
+
+    // Determine risk percentage
+    let riskPercentage = RISK_LEVELS[riskLevel as keyof typeof RISK_LEVELS].percentage
+    if (riskLevel === 'custom') {
+      riskPercentage = parseFloat(customRisk) || 1.0
+    }
+
+    // Calculate pips and basic metrics
+    const pipSize = currencyPair.includes('JPY') ? 0.01 : 0.0001
+    const stopLossPips = sl > 0 ? Math.abs(entry - sl) / pipSize : 0
+    const takeProfitPips = tp > 0 ? Math.abs(tp - entry) / pipSize : 0
+    const pipValue = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS].pipValue
+    
+    // Base risk amount
+    const baseRiskAmount = balance * (riskPercentage / 100)
+    let finalRiskAmount = baseRiskAmount
+    let finalLotSize = manualLotSize
+
+    // Advanced Position Sizing Logic
+    switch (positionSizingMethod) {
+      case 'fixed':
+        finalRiskAmount = baseRiskAmount
+        break
+        
+      case 'kelly':
+        if (tradeHistory.length >= 10) {
+          const metrics = calculateAdvancedRiskMetrics(tradeHistory, account)
+          if (metrics && metrics.avgWin > 0 && metrics.avgLoss > 0) {
+            finalRiskAmount = calculateKellyPosition(metrics.winRate, metrics.avgWin, metrics.avgLoss, balance)
+          }
+        } else {
+          // Use manual Kelly inputs for new traders
+          finalRiskAmount = calculateKellyPosition(kellyWinRate, kellyAvgWin, kellyAvgLoss, balance)
+        }
+        break
+        
+      case 'volatility':
+        const pairData = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS]
+        const marketVolatility = {
+          'low': 0.02,
+          'medium': 0.05,
+          'high': 0.08,
+          'very_high': 0.12
+        }[pairData.volatility] || 0.05
+        
+        finalRiskAmount = calculateVolatilityAdjustedPosition(baseRiskAmount, marketVolatility, timeframe)
+        break
+        
+      case 'martingale':
+        // Increase position after losses (dangerous)
+        const recentTrades = tradeHistory.slice(-5)
+        const consecutiveLosses = recentTrades.reverse().findIndex(t => t.profit > 0)
+        const lossStreak = consecutiveLosses === -1 ? recentTrades.length : consecutiveLosses
+        finalRiskAmount = baseRiskAmount * Math.pow(1.5, Math.min(lossStreak, 3)) // Cap at 3x
+        break
+        
+      case 'antiMartingale':
+        // Increase position after wins
+        const recentWins = tradeHistory.slice(-5)
+        const consecutiveWins = recentWins.reverse().findIndex(t => t.profit <= 0)
+        const winStreak = consecutiveWins === -1 ? recentWins.length : consecutiveWins
+        finalRiskAmount = baseRiskAmount * Math.pow(1.2, Math.min(winStreak, 4)) // Cap at 2.07x
+        break
+        
+      default:
+        finalRiskAmount = baseRiskAmount
+    }
+
+    // Calculate lot size from risk amount
+    if (finalLotSize === 0 && stopLossPips > 0) {
+      finalLotSize = finalRiskAmount / (stopLossPips * pipValue)
+    }
+
+    // Calculate advanced metrics
+    const positionSize = finalLotSize * 100000
+    const potentialLoss = stopLossPips * pipValue * finalLotSize
+    const potentialProfit = takeProfitPips * pipValue * finalLotSize
+    const riskRewardRatio = potentialLoss > 0 ? potentialProfit / potentialLoss : 0
+
+    // Enhanced margin calculations with volatility adjustment
+    const baseMargin = positionSize / 100 // 1:100 leverage
+    const pairData = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS]
+    const volatilityMultiplier = {
+      'low': 1.0,
+      'medium': 1.1,
+      'high': 1.2,
+      'very_high': 1.3
+    }[pairData.volatility] || 1.0
+    
+    const adjustedMargin = baseMargin * volatilityMultiplier
+    const marginUtilization = (adjustedMargin / balance) * 100
+    const leverage = positionSize / balance
+    const accountRisk = (finalRiskAmount / balance) * 100
+
+    // Advanced risk metrics
+    const breakEven = entry + (pairData.spread * pipSize)
+    const maxDrawdownRisk = (finalRiskAmount / balance) * 100
+    const positionValue = entry * finalLotSize * 100000
+    
+    const results = {
+      lotSize: parseFloat(finalLotSize.toFixed(2)),
+      positionSize: Math.round(positionSize),
+      riskAmount: Math.round(finalRiskAmount * 100) / 100,
+      potentialProfit: Math.round(potentialProfit * 100) / 100,
+      potentialLoss: Math.round(potentialLoss * 100) / 100,
+      riskRewardRatio: Math.round(riskRewardRatio * 100) / 100,
+      pipValue: Math.round(pipValue * 100) / 100,
+      stopLossPips: Math.round(stopLossPips),
+      takeProfitPips: Math.round(takeProfitPips),
+      margin: Math.round(adjustedMargin * 100) / 100,
+      marginUtilization: Math.round(marginUtilization * 100) / 100,
+      leverage: Math.round(leverage * 100) / 100,
+      accountRisk: Math.round(accountRisk * 100) / 100,
+      breakEven: parseFloat(breakEven.toFixed(currencyPair.includes('JPY') ? 2 : 5)),
+      positionValue: Math.round(positionValue),
+      maxDrawdownRisk: Math.round(maxDrawdownRisk * 100) / 100
+    }
+
+    setCalculationResults(results)
+    generateIntelligentSuggestions(results)
+    calculatePropFirmStatus(balance, account, finalRiskAmount)
+  }
+  
+  // Generate intelligent trading suggestions
+  const generateIntelligentSuggestions = (results: any) => {
+    const newSuggestions = []
+    const pairData = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS]
+    
+    // Risk-based suggestions
+    if (results.accountRisk > 3) {
+      newSuggestions.push({
+        type: 'risk',
+        severity: 'warning' as const,
+        message: `High risk (${results.accountRisk.toFixed(1)}%) - Consider reducing to 1-2% for better long-term results`,
+        action: () => setCustomRisk('2')
+      })
+    }
+    
+    // R:R ratio optimization
+    if (results.riskRewardRatio < 1.5) {
+      const suggestedTP = parseFloat(entryPrice) + (Math.abs(parseFloat(stopLoss) - parseFloat(entryPrice)) * 2)
+      newSuggestions.push({
+        type: 'rratio',
+        severity: 'info' as const,
+        message: `Poor R:R ratio (${results.riskRewardRatio.toFixed(2)}:1). Consider TP at ${suggestedTP.toFixed(5)} for 2:1 ratio`,
+        action: () => setTakeProfit(suggestedTP.toString())
+      })
+    }
+    
+    // Market volatility warnings
+    if (pairData.volatility === 'very_high' && results.accountRisk > 1.5) {
+      newSuggestions.push({
+        type: 'market',
+        severity: 'warning' as const,
+        message: `High volatility pair (${pairData.symbol}) detected. Consider reducing position size by 50%`
+      })
+    }
+    
+    // Margin utilization warnings
+    if (results.marginUtilization > 30) {
+      newSuggestions.push({
+        type: 'margin',
+        severity: 'error' as const,
+        message: `High margin usage (${results.marginUtilization.toFixed(1)}%). Risk of margin call - reduce position size`
+      })
+    }
+    
+    // Position sizing method suggestions
+    if (positionSizingMethod === 'fixed' && tradeHistory.length >= 20) {
+      const metrics = calculateAdvancedRiskMetrics(tradeHistory, parseFloat(accountSize))
+      if (metrics && metrics.winRate > 55) {
+        newSuggestions.push({
+          type: 'optimization',
+          severity: 'info' as const,
+          message: `Good win rate (${metrics.winRate.toFixed(1)}%)! Consider Kelly Criterion for optimal position sizing`,
+          action: () => setPositionSizingMethod('kelly')
+        })
+      }
+    }
+    
+    // Prop firm specific suggestions
+    if (propFirm && results.accountRisk > 2) {
+      const firmData = PROP_FIRMS[propFirm as keyof typeof PROP_FIRMS]
+      newSuggestions.push({
+        type: 'propfirm',
+        severity: 'warning' as const,
+        message: `${firmData.name} challenge: High risk may violate daily loss limits. Recommended max 1.5% per trade`
+      })
+    }
+    
+    setSuggestions(newSuggestions)
+  }
+
   // Auto-calculate when inputs change
+  useEffect(() => {
+    if (entryPrice && (stopLoss || lotSize)) {
+      calculateAdvancedTrade()
+    }
+  }, [entryPrice, stopLoss, takeProfit, lotSize, accountSize, currentBalance, riskLevel, customRisk, propFirm, challengePhase, currencyPair, positionSizingMethod, kellyWinRate, kellyAvgWin, kellyAvgLoss, timeframe, tradeHistory])
+  
+  // Auto-calculate when inputs change (keep original for compatibility)
   useEffect(() => {
     if (entryPrice && (stopLoss || lotSize)) {
       calculateTrade()
@@ -1180,8 +1538,164 @@ function ComprehensiveTradingCalculator({
                 placeholder="Leave empty for auto-calculation"
               />
             </div>
+            
+            {/* Advanced Options Toggle */}
+            <div className="flex items-center justify-between">
+              <Label className="text-white">Advanced Position Sizing</Label>
+              <Switch
+                checked={showAdvancedOptions}
+                onCheckedChange={setShowAdvancedOptions}
+              />
+            </div>
+            
+            {showAdvancedOptions && (
+              <div className="space-y-4 p-4 border border-purple-500/30 rounded-lg bg-slate-900/50">
+                {/* Position Sizing Method */}
+                <div>
+                  <Label className="text-white flex items-center">
+                    <Brain className="mr-2 h-4 w-4 text-purple-400" />
+                    Position Sizing Method
+                  </Label>
+                  <Select value={positionSizingMethod} onValueChange={setPositionSizingMethod}>
+                    <SelectTrigger className="bg-zinc-800 border-zinc-700 mt-2">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {Object.entries(POSITION_SIZING_METHODS).map(([key, method]) => {
+                        const IconComponent = method.icon
+                        return (
+                          <SelectItem key={key} value={key}>
+                            <div className="flex items-center">
+                              <IconComponent className="mr-2 h-4 w-4" />
+                              <div>
+                                <div className="font-medium">{method.name}</div>
+                                <div className="text-xs text-gray-400">{method.description}</div>
+                              </div>
+                            </div>
+                          </SelectItem>
+                        )
+                      })}
+                    </SelectContent>
+                  </Select>
+                </div>
+                
+                {/* Kelly Criterion Inputs */}
+                {positionSizingMethod === 'kelly' && (
+                  <div className="grid grid-cols-1 gap-4">
+                    <div>
+                      <Label className="text-white flex items-center justify-between">
+                        Win Rate (%)
+                        <span className="text-purple-400 font-mono">{kellyWinRate}%</span>
+                      </Label>
+                      <Slider
+                        value={[kellyWinRate]}
+                        onValueChange={([value]) => setKellyWinRate(value)}
+                        max={90}
+                        min={10}
+                        step={5}
+                        className="mt-2"
+                      />
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <Label className="text-white">Avg Win ($)</Label>
+                        <Input
+                          type="number"
+                          value={kellyAvgWin}
+                          onChange={(e) => setKellyAvgWin(Number(e.target.value))}
+                          className="bg-zinc-800 border-zinc-700 text-white"
+                        />
+                      </div>
+                      <div>
+                        <Label className="text-white">Avg Loss ($)</Label>
+                        <Input
+                          type="number"
+                          value={kellyAvgLoss}
+                          onChange={(e) => setKellyAvgLoss(Number(e.target.value))}
+                          className="bg-zinc-800 border-zinc-700 text-white"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                )}
+                
+                {/* Timeframe Selection */}
+                <div>
+                  <Label className="text-white flex items-center">
+                    <Clock className="mr-2 h-4 w-4 text-blue-400" />
+                    Trading Timeframe
+                  </Label>
+                  <Select value={timeframe} onValueChange={setTimeframe}>
+                    <SelectTrigger className="bg-zinc-800 border-zinc-700 mt-2">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {Object.entries(TIMEFRAME_MULTIPLIERS).map(([tf, data]) => (
+                        <SelectItem key={tf} value={tf}>
+                          <div className="flex justify-between items-center w-full">
+                            <span>{tf}</span>
+                            <span className={`text-xs px-2 py-1 rounded ${
+                              data.risk === 'Very High' ? 'bg-red-900 text-red-200' :
+                              data.risk === 'High' ? 'bg-orange-900 text-orange-200' :
+                              data.risk === 'Medium-High' ? 'bg-yellow-900 text-yellow-200' :
+                              data.risk === 'Medium' ? 'bg-blue-900 text-blue-200' :
+                              data.risk === 'Medium-Low' ? 'bg-green-900 text-green-200' :
+                              'bg-green-900 text-green-200'
+                            }`}>
+                              {data.risk}
+                            </span>
+                          </div>
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+            )}
           </CardContent>
         </Card>
+        
+        {/* Intelligent Suggestions */}
+        {suggestions.length > 0 && (
+          <Card className="shadow-xl border border-yellow-500/20 bg-slate-800/90 backdrop-blur-sm">
+            <CardHeader>
+              <CardTitle className="text-lg flex items-center text-white">
+                <Lightbulb className="mr-2 h-5 w-5 text-yellow-400" />
+                Smart Suggestions
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {suggestions.map((suggestion, index) => (
+                <Alert key={index} className={`border ${
+                  suggestion.severity === 'error' ? 'border-red-500/50 bg-red-900/20' :
+                  suggestion.severity === 'warning' ? 'border-yellow-500/50 bg-yellow-900/20' :
+                  'border-blue-500/50 bg-blue-900/20'
+                }`}>
+                  <AlertTriangle className={`h-4 w-4 ${
+                    suggestion.severity === 'error' ? 'text-red-400' :
+                    suggestion.severity === 'warning' ? 'text-yellow-400' :
+                    'text-blue-400'
+                  }`} />
+                  <AlertDescription className="text-gray-200">
+                    <div className="flex justify-between items-start">
+                      <span>{suggestion.message}</span>
+                      {suggestion.action && (
+                        <Button
+                          onClick={suggestion.action}
+                          size="sm"
+                          variant="outline"
+                          className="ml-2 text-xs"
+                        >
+                          Apply
+                        </Button>
+                      )}
+                    </div>
+                  </AlertDescription>
+                </Alert>
+              ))}
+            </CardContent>
+          </Card>
+        )}
 
         {/* Missing Fields & Validation */}
         <MissingFieldsIndicator
@@ -1190,7 +1704,7 @@ function ComprehensiveTradingCalculator({
           takeProfit={takeProfit}
           riskPercentage={customRisk}
           accountBalance={currentBalance}
-          results={calculations}
+          results={calculationResults || calculations}
           intelligentSuggestions={[
             ...(calculations.accountRisk > 2 ? [{
               category: 'Risk Management',
@@ -1330,46 +1844,86 @@ function ComprehensiveTradingCalculator({
             </CardTitle>
           </CardHeader>
           <CardContent>
+            {/* Advanced Position Sizing Method Display */}
+            {showAdvancedOptions && (
+              <div className="mb-4 p-3 bg-purple-900/20 rounded-lg border border-purple-500/30">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-purple-400 font-medium">Position Sizing: {POSITION_SIZING_METHODS[positionSizingMethod as keyof typeof POSITION_SIZING_METHODS].name}</span>
+                  <Badge variant="outline" className="text-purple-400 border-purple-400">
+                    {timeframe} • {TIMEFRAME_MULTIPLIERS[timeframe as keyof typeof TIMEFRAME_MULTIPLIERS].risk} Risk
+                  </Badge>
+                </div>
+                <p className="text-xs text-gray-400">
+                  {POSITION_SIZING_METHODS[positionSizingMethod as keyof typeof POSITION_SIZING_METHODS].description}
+                </p>
+              </div>
+            )}
+            
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-zinc-900/50 rounded-lg p-3">
                 <p className="text-zinc-400 text-sm">Position Size</p>
-                <p className="text-xl font-bold text-white">{calculations.lotSize}</p>
+                <p className="text-xl font-bold text-white">{(calculationResults || calculations).lotSize}</p>
                 <p className="text-xs text-zinc-500">lots</p>
               </div>
               <div className="bg-zinc-900/50 rounded-lg p-3">
                 <p className="text-zinc-400 text-sm">Risk Amount</p>
-                <p className="text-xl font-bold text-red-400">${calculations.riskAmount}</p>
-                <p className="text-xs text-zinc-500">{calculations.accountRisk}% of account</p>
+                <p className="text-xl font-bold text-red-400">${(calculationResults || calculations).riskAmount}</p>
+                <p className="text-xs text-zinc-500">{(calculationResults || calculations).accountRisk}% of account</p>
               </div>
               <div className="bg-zinc-900/50 rounded-lg p-3">
                 <p className="text-zinc-400 text-sm">Potential Profit</p>
-                <p className="text-xl font-bold text-green-400">${calculations.potentialProfit}</p>
-                <p className="text-xs text-zinc-500">{calculations.takeProfitPips} pips</p>
+                <p className="text-xl font-bold text-green-400">${(calculationResults || calculations).potentialProfit}</p>
+                <p className="text-xs text-zinc-500">{(calculationResults || calculations).takeProfitPips} pips</p>
               </div>
               <div className="bg-zinc-900/50 rounded-lg p-3">
                 <p className="text-zinc-400 text-sm">Risk/Reward</p>
-                <p className="text-xl font-bold text-blue-400">1:{calculations.riskRewardRatio}</p>
+                <p className="text-xl font-bold text-blue-400">1:{(calculationResults || calculations).riskRewardRatio}</p>
                 <p className="text-xs text-zinc-500">ratio</p>
               </div>
             </div>
 
+            {/* Enhanced Metrics */}
             <div className="mt-4 space-y-2">
               <div className="flex justify-between text-sm">
                 <span className="text-zinc-400">Stop Loss Pips:</span>
-                <span className="text-white">{calculations.stopLossPips}</span>
+                <span className="text-white">{(calculationResults || calculations).stopLossPips}</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-zinc-400">Pip Value:</span>
-                <span className="text-white">${calculations.pipValue}</span>
+                <span className="text-white">${(calculationResults || calculations).pipValue}</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-zinc-400">Required Margin:</span>
-                <span className="text-white">${calculations.margin}</span>
+                <span className="text-white">${(calculationResults || calculations).margin}</span>
               </div>
+              {calculationResults?.marginUtilization && (
+                <div className="flex justify-between text-sm">
+                  <span className="text-zinc-400">Margin Utilization:</span>
+                  <span className={`text-white ${
+                    calculationResults.marginUtilization > 30 ? 'text-red-400' :
+                    calculationResults.marginUtilization > 20 ? 'text-yellow-400' :
+                    'text-green-400'
+                  }`}>
+                    {calculationResults.marginUtilization}%
+                  </span>
+                </div>
+              )}
               <div className="flex justify-between text-sm">
                 <span className="text-zinc-400">Effective Leverage:</span>
-                <span className="text-white">1:{calculations.leverage}</span>
+                <span className="text-white">1:{(calculationResults || calculations).leverage}</span>
               </div>
+              {calculationResults?.breakEven && (
+                <div className="flex justify-between text-sm">
+                  <span className="text-zinc-400">Break Even:</span>
+                  <span className="text-white">{calculationResults.breakEven}</span>
+                </div>
+              )}
+              {calculationResults?.positionValue && (
+                <div className="flex justify-between text-sm">
+                  <span className="text-zinc-400">Position Value:</span>
+                  <span className="text-white">${calculationResults.positionValue.toLocaleString()}</span>
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>
