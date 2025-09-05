@@ -51,6 +51,8 @@ import {
 // Import custom components
 import MarketClock from './components/MarketClock'
 import Disclaimer from './components/Disclaimer'
+import AdvancedAIAnalysis from './components/AdvancedAIAnalysis'
+import MissingFieldsIndicator from './components/MissingFieldsIndicator'
 
 // Enhanced prop firm configurations with accurate rules
 const PROP_FIRMS = {
@@ -1116,6 +1118,33 @@ function ComprehensiveTradingCalculator({
             </div>
           </CardContent>
         </Card>
+
+        {/* Missing Fields & Validation */}
+        <MissingFieldsIndicator
+          entryPrice={entryPrice}
+          stopLoss={stopLoss}
+          takeProfit={takeProfit}
+          riskPercentage={customRisk}
+          accountBalance={currentBalance}
+          results={calculations}
+          intelligentSuggestions={[
+            ...(calculations.accountRisk > 2 ? [{
+              category: 'Risk Management',
+              message: 'Your risk level is above 2%. Consider reducing position size.',
+              action: 'Reduce risk percentage to 1-2% for safer trading'
+            }] : []),
+            ...(calculations.riskRewardRatio > 0 && calculations.riskRewardRatio < 1.5 ? [{
+              category: 'Risk/Reward Optimization',
+              message: 'Current R:R ratio is below recommended 1.5:1.',
+              action: 'Increase take profit or tighten stop loss'
+            }] : []),
+            ...(parseFloat(entryPrice || '0') > 0 && parseFloat(stopLoss || '0') > 0 && Math.abs(parseFloat(entryPrice) - parseFloat(stopLoss)) < 0.001 ? [{
+              category: 'Stop Loss Warning',
+              message: 'Stop loss is very close to entry price.',
+              action: 'Consider wider stop loss or different entry level'
+            }] : [])
+          ]}
+        />
       </div>
 
       {/* Middle Column - Results & Analysis */}
@@ -1380,6 +1409,34 @@ function ComprehensiveTradingCalculator({
             </div>
           </CardContent>
         </Card>
+
+        {/* Advanced AI Analysis */}
+        <AdvancedAIAnalysis
+          currencyPair={currencyPair}
+          priceData={realTimeData}
+          marketAnalysisData={marketAnalysis}
+          userInputs={{
+            accountType: 'Prop Firm',
+            propFirm,
+            challengePhase,
+            accountSize,
+            currentEquity: currentBalance,
+            riskPercentage: customRisk,
+            entryPrice,
+            stopLoss,
+            takeProfit,
+            volume: lotSize
+          }}
+          propFirmRules={PROP_FIRMS}
+          results={calculations}
+          onApplyAnalysis={(recommendations) => {
+            if (recommendations.entryPrice) setEntryPrice(recommendations.entryPrice.toString())
+            if (recommendations.stopLoss) setStopLoss(recommendations.stopLoss.toString())
+            if (recommendations.takeProfit) setTakeProfit(recommendations.takeProfit.toString())
+            if (recommendations.lotSize) setLotSize(recommendations.lotSize.toString())
+            if (recommendations.riskPercentage) setCustomRisk(recommendations.riskPercentage.toString())
+          }}
+        />
       </div>
 
       {/* Right Column - Prop Firm Status & Actions */}
