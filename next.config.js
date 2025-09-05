@@ -1,29 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configured for Vercel deployment with proper routing
+  // FINAL SOLUTION: Static export with simplified routes
+  output: 'export',
   trailingSlash: true,
+  skipTrailingSlashRedirect: true,
   
   images: {
-    domains: ['images.unsplash.com', 'cdn.pixabay.com'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
+    unoptimized: true,
   },
   
-  // Optimize for production
-  swcMinify: true,
-  
-  // Ensure proper routing for Vercel
-  async rewrites() {
-    return [
-      {
-        source: '/fx-calc',
-        destination: '/fx-calc',
-      },
-    ];
+  // Remove problematic webpack configuration that causes navigator issues
+  experimental: {
+    // Remove forceSwcTransforms which was causing problems
   },
 };
 

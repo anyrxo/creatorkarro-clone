@@ -177,7 +177,13 @@ const RISK_LEVELS = {
 
 export default function FXCalculatorPage() {
   // Enhanced state management with real-time data
-  const [realTimeData, setRealTimeData] = useState({
+  const [realTimeData, setRealTimeData] = useState<{
+    price: number;
+    change: number;
+    changePercent: number;
+    lastUpdate: Date | null;
+    isLive: boolean;
+  }>({
     price: 0,
     change: 0,
     changePercent: 0,
@@ -186,7 +192,16 @@ export default function FXCalculatorPage() {
   })
   
   // Advanced market analysis
-  const [marketAnalysis, setMarketAnalysis] = useState({
+  const [marketAnalysis, setMarketAnalysis] = useState<{
+    trend: string;
+    strength: number;
+    support: number;
+    resistance: number;
+    signals: string[];
+    rsi: number;
+    macd: number;
+    bollinger: { upper: number; lower: number; middle: number };
+  }>({
     trend: 'neutral',
     strength: 50,
     support: 0,
@@ -197,7 +212,7 @@ export default function FXCalculatorPage() {
     bollinger: { upper: 0, lower: 0, middle: 0 }
   })
   
-  const [tradeHistory, setTradeHistory] = useState([])
+  const [tradeHistory, setTradeHistory] = useState<any[]>([])
   const [performanceMetrics, setPerformanceMetrics] = useState({
     winRate: 0,
     avgRisk: 0,
@@ -246,7 +261,19 @@ export default function FXCalculatorPage() {
   })
 
   // Enhanced prop firm tracking
-  const [propFirmStatus, setPropFirmStatus] = useState({
+  const [propFirmStatus, setPropFirmStatus] = useState<{
+    currentProfit: number;
+    dailyLoss: number;
+    totalLoss: number;
+    profitTarget: number;
+    maxDailyLoss: number;
+    maxTotalLoss: number;
+    progressToTarget: number;
+    isCompliant: boolean;
+    warnings: string[];
+    tradingDays: number;
+    avgDailyProfit: number;
+  }>({
     currentProfit: 0,
     dailyLoss: 0,
     totalLoss: 0,
@@ -265,7 +292,7 @@ export default function FXCalculatorPage() {
     if (!realTimeData.isLive) return
 
     const interval = setInterval(() => {
-      const pair = CURRENCY_PAIRS[currencyPair]
+      const pair = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS]
       const basePrice = parseFloat(entryPrice) || pair.defaultPrice
       const volatility = {
         'low': 0.0003,
@@ -300,7 +327,7 @@ export default function FXCalculatorPage() {
   const calculateTrade = () => {
     const account = parseFloat(accountSize) || 10000
     const balance = parseFloat(currentBalance) || account
-    const entry = parseFloat(entryPrice) || CURRENCY_PAIRS[currencyPair].defaultPrice
+    const entry = parseFloat(entryPrice) || CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS].defaultPrice
     const sl = parseFloat(stopLoss) || 0
     const tp = parseFloat(takeProfit) || 0
     const manualLotSize = parseFloat(lotSize) || 0
@@ -309,7 +336,7 @@ export default function FXCalculatorPage() {
     if (!entry || entry <= 0) return
 
     // Determine risk percentage
-    let riskPercentage = RISK_LEVELS[riskLevel].percentage
+    let riskPercentage = RISK_LEVELS[riskLevel as keyof typeof RISK_LEVELS].percentage
     if (riskLevel === 'custom') {
       riskPercentage = parseFloat(customRisk) || 1.0
     }
@@ -318,7 +345,7 @@ export default function FXCalculatorPage() {
     const pipSize = currencyPair.includes('JPY') ? 0.01 : 0.0001
     const stopLossPips = sl > 0 ? Math.abs(entry - sl) / pipSize : 0
     const takeProfitPips = tp > 0 ? Math.abs(tp - entry) / pipSize : 0
-    const pipValue = CURRENCY_PAIRS[currencyPair].pipValue
+    const pipValue = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS].pipValue
     
     // Calculate position size based on risk
     const riskAmount = balance * (riskPercentage / 100)
@@ -362,8 +389,8 @@ export default function FXCalculatorPage() {
 
   // Enhanced prop firm compliance calculation
   const calculatePropFirmStatus = (balance: number, account: number, riskAmount: number) => {
-    const firm = PROP_FIRMS[propFirm]
-    const phase = firm.phases[challengePhase]
+    const firm = PROP_FIRMS[propFirm as keyof typeof PROP_FIRMS]
+    const phase = firm.phases[challengePhase as keyof typeof firm.phases]
     
     const currentProfit = balance - account
     const profitTarget = account * (phase.target / 100)
@@ -375,7 +402,7 @@ export default function FXCalculatorPage() {
     
     const progressToTarget = phase.target > 0 ? Math.max(0, (currentProfit / profitTarget) * 100) : 100
     
-    const warnings = []
+    const warnings: string[] = []
     let isCompliant = true
     
     // Check daily loss limit
@@ -427,7 +454,7 @@ export default function FXCalculatorPage() {
 
   // Auto-populate default prices when currency pair changes
   useEffect(() => {
-    const pair = CURRENCY_PAIRS[currencyPair]
+    const pair = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS]
     if (pair) {
       setEntryPrice(pair.defaultPrice.toString())
       
@@ -453,7 +480,7 @@ export default function FXCalculatorPage() {
 
   // Quick suggestion generator
   const generateQuickSuggestion = () => {
-    const pair = CURRENCY_PAIRS[currencyPair]
+    const pair = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS]
     const currentPrice = parseFloat(entryPrice) || pair.defaultPrice
     
     // Generate suggestions based on market analysis simulation
@@ -464,9 +491,10 @@ export default function FXCalculatorPage() {
       'XAUUSD': { bias: 'bullish', confidence: 85, target: 200, stop: 100 }
     }
     
-    const suggestion = suggestions[currencyPair] || { bias: 'neutral', confidence: 50, target: 50, stop: 25 }
+    const suggestion = suggestions[currencyPair as keyof typeof suggestions] || { bias: 'neutral', confidence: 50, target: 50, stop: 25 }
     
-    setMarketAnalysis({
+    setMarketAnalysis(prev => ({
+      ...prev,
       trend: suggestion.bias,
       strength: suggestion.confidence,
       support: currentPrice - (currentPrice * 0.01),
@@ -477,7 +505,7 @@ export default function FXCalculatorPage() {
         `Target: ${suggestion.target} pips`,
         `Stop: ${suggestion.stop} pips`
       ]
-    })
+    }))
   }
 
   // Save trade to history
@@ -578,7 +606,7 @@ export default function FXCalculatorPage() {
                       <div className="text-center">
                         <p className="text-zinc-400 text-sm">Current Price</p>
                         <p className="text-2xl font-bold text-white">
-                          {realTimeData.price || CURRENCY_PAIRS[currencyPair].defaultPrice}
+                          {realTimeData.price || CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS].defaultPrice}
                         </p>
                       </div>
                       <div className="text-center">
@@ -596,7 +624,7 @@ export default function FXCalculatorPage() {
                       <div className="text-center">
                         <p className="text-zinc-400 text-sm">Spread</p>
                         <p className="text-lg font-semibold text-yellow-400">
-                          {CURRENCY_PAIRS[currencyPair].spread} pips
+                          {CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS].spread} pips
                         </p>
                       </div>
                     </div>
@@ -639,7 +667,7 @@ export default function FXCalculatorPage() {
                             <SelectValue />
                           </SelectTrigger>
                           <SelectContent>
-                            {Object.entries(PROP_FIRMS[propFirm].phases).map(([key, phase]) => (
+                            {Object.entries(PROP_FIRMS[propFirm as keyof typeof PROP_FIRMS].phases).map(([key, phase]) => (
                               <SelectItem key={key} value={key}>{phase.name}</SelectItem>
                             ))}
                           </SelectContent>
@@ -652,7 +680,7 @@ export default function FXCalculatorPage() {
                             <SelectValue />
                           </SelectTrigger>
                           <SelectContent>
-                            {PROP_FIRMS[propFirm].accountSizes.map(size => (
+                            {PROP_FIRMS[propFirm as keyof typeof PROP_FIRMS].accountSizes.map(size => (
                               <SelectItem key={size} value={size}>${parseInt(size).toLocaleString()}</SelectItem>
                             ))}
                           </SelectContent>
@@ -974,7 +1002,7 @@ export default function FXCalculatorPage() {
                     </Button>
                     <Button 
                       onClick={() => {
-                        const pair = CURRENCY_PAIRS[currencyPair]
+                        const pair = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS]
                         navigator.clipboard.writeText(`${pair.symbol} ${tradeDirection.toUpperCase()} @ ${entryPrice} | SL: ${stopLoss} | TP: ${takeProfit} | Size: ${calculations.lotSize}`)
                       }}
                       className="w-full bg-purple-600 hover:bg-purple-700"
