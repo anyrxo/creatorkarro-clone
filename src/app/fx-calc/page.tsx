@@ -429,12 +429,12 @@ export default function FXCalculatorPage() {
   const [customRisk, setCustomRisk] = useState('1.0')
   
   // Advanced Position Sizing State
-  const [positionSizingMethod, setPositionSizingMethod] = useState('fixed')
-  const [kellyWinRate, setKellyWinRate] = useState(60)
-  const [kellyAvgWin, setKellyAvgWin] = useState(150)
-  const [kellyAvgLoss, setKellyAvgLoss] = useState(100)
-  const [timeframe, setTimeframe] = useState('H1')
-  const [showAdvancedOptions, setShowAdvancedOptions] = useState(false)
+  const [positionSizingMethod, setPositionSizingMethod] = useState<string>('fixed')
+  const [kellyWinRate, setKellyWinRate] = useState<number>(60)
+  const [kellyAvgWin, setKellyAvgWin] = useState<number>(150)
+  const [kellyAvgLoss, setKellyAvgLoss] = useState<number>(100)
+  const [timeframe, setTimeframe] = useState<string>('H1')
+  const [showAdvancedOptions, setShowAdvancedOptions] = useState<boolean>(false)
   
   // Intelligent Suggestions State
   const [suggestions, setSuggestions] = useState<Array<{
@@ -1243,6 +1243,25 @@ export default function FXCalculatorPage() {
               setChatGptApiKey={setChatGptApiKey}
               showApiKey={showApiKey}
               setShowApiKey={setShowApiKey}
+              // Advanced Position Sizing Props
+              showAdvancedOptions={showAdvancedOptions}
+              setShowAdvancedOptions={setShowAdvancedOptions}
+              positionSizingMethod={positionSizingMethod}
+              setPositionSizingMethod={setPositionSizingMethod}
+              kellyWinRate={kellyWinRate}
+              setKellyWinRate={setKellyWinRate}
+              kellyAvgWin={kellyAvgWin}
+              setKellyAvgWin={setKellyAvgWin}
+              kellyAvgLoss={kellyAvgLoss}
+              setKellyAvgLoss={setKellyAvgLoss}
+              timeframe={timeframe}
+              setTimeframe={setTimeframe}
+              suggestions={suggestions}
+              calculationResults={calculationResults}
+              // Real-time data props
+              livePrice={livePrice}
+              priceData={priceData}
+              priceError={priceError}
             />
           </TabsContent>
 
@@ -1304,6 +1323,30 @@ interface ComprehensiveTradingCalculatorProps {
   setChatGptApiKey: (value: string) => void
   showApiKey: boolean
   setShowApiKey: (value: boolean) => void
+  // Advanced Position Sizing Props
+  showAdvancedOptions: boolean
+  setShowAdvancedOptions: (value: boolean) => void
+  positionSizingMethod: string
+  setPositionSizingMethod: (value: string) => void
+  kellyWinRate: number
+  setKellyWinRate: (value: number) => void
+  kellyAvgWin: number
+  setKellyAvgWin: (value: number) => void
+  kellyAvgLoss: number
+  setKellyAvgLoss: (value: number) => void
+  timeframe: string
+  setTimeframe: (value: string) => void
+  suggestions: Array<{
+    type: string;
+    severity: 'info' | 'warning' | 'error';
+    message: string;
+    action?: () => void;
+  }>
+  calculationResults: any
+  // Real-time data props
+  livePrice: number | null
+  priceData: any
+  priceError: string | null
 }
 
 function ComprehensiveTradingCalculator({
@@ -1313,7 +1356,13 @@ function ComprehensiveTradingCalculator({
   customRisk, setCustomRisk, propFirm, setPropFirm, challengePhase, setChallengePhase,
   calculations, propFirmStatus, realTimeData, setRealTimeData, marketAnalysis,
   generateMarketAnalysis, saveTradeToHistory, tradeHistory, apiStatus,
-  performAIAnalysis, aiAnalysis, chatGptApiKey, setChatGptApiKey, showApiKey, setShowApiKey
+  performAIAnalysis, aiAnalysis, chatGptApiKey, setChatGptApiKey, showApiKey, setShowApiKey,
+  // Advanced Position Sizing Props
+  showAdvancedOptions, setShowAdvancedOptions, positionSizingMethod, setPositionSizingMethod,
+  kellyWinRate, setKellyWinRate, kellyAvgWin, setKellyAvgWin, kellyAvgLoss, setKellyAvgLoss,
+  timeframe, setTimeframe, suggestions, calculationResults,
+  // Real-time data props
+  livePrice, priceData, priceError
 }: ComprehensiveTradingCalculatorProps) {
 
   return (
