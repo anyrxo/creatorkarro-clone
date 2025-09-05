@@ -76,24 +76,24 @@ export default function HomePage() {
     },
     {
       id: 'ai-influencers',
-      title: 'AI Influencers + ComfyUI',
+      title: 'AI Influencers',
       subtitle: 'Virtual Models & AI Content',
       description: 'Create photorealistic AI influencers using ComfyUI workflows. Build virtual models that generate content 24/7 and earn $10K+/month without showing your face.',
       gradient: 'from-pink-600 to-purple-600',
       icon: 'smartphone',
-      stats: '2,000+ students • $1.2M+ student revenue',
+      stats: '1,500+ students • $800K+ student revenue',
       price: '$169',
       value: '$3,169',
       link: '/ai-influencers'
     },
     {
       id: 'digital-products',
-      title: 'Digital Products + N8N',
+      title: 'Digital Products',
       subtitle: 'Automated Business Empire',
       description: 'Create, launch, and scale digital products with N8N automation. Build $100K/month automated business systems with complete sales funnel automation.',
       gradient: 'from-green-600 to-emerald-600',
       icon: 'credit-card',
-      stats: '2,000+ students • $1.2M+ student revenue',
+      stats: '1,200+ students • $750K+ student revenue',
       price: '$189',
       value: '$5,959',
       link: '/digital-products'
@@ -105,7 +105,7 @@ export default function HomePage() {
       description: 'Pass prop firm challenges and get $100K+ funded accounts. Learn the exact strategies to succeed with funded trading companies and build consistent income.',
       gradient: 'from-orange-600 to-red-600',
       icon: 'bot',
-      stats: '2,000+ students • $1.2M+ student revenue',
+      stats: '800+ students • $400K+ student revenue',
       price: '$197',
       value: '$2,197',
       link: '/fx-trading'

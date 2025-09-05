@@ -9,13 +9,13 @@ export default function Footer() {
   const footerLinks = {
     courses: [
       { name: 'Instagram Ignited', href: '/instagram-ignited' },
-      { name: 'Digital Products', href: '/digital-products' },
-      { name: 'N8N AI Automations', href: '/n8n-ai-automations' },
       { name: 'AI Influencers', href: '/ai-influencers' },
-      { name: 'ComfyUI & Workflows', href: '/comfyui-workflows' }
+      { name: 'Digital Products', href: '/digital-products' },
+      { name: 'FX Trading Mastery', href: '/fx-trading' }
     ],
     resources: [
       { name: 'Blog', href: '/blog' },
+      { name: 'FX Calculator', href: '/fx-calc' },
       { name: 'Free Resources', href: '/resources' },
       { name: 'About Anyro', href: '/about' }
     ],

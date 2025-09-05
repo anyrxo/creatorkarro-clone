@@ -44,8 +44,8 @@ export default function Navigation() {
       hasDropdown: true,
       dropdownItems: [
         { name: 'Instagram Ignited', href: '/instagram-ignited' },
-        { name: 'AI Influencers + ComfyUI', href: '/ai-influencers' },
-        { name: 'Digital Products + N8N', href: '/digital-products' },
+        { name: 'AI Influencers', href: '/ai-influencers' },
+        { name: 'Digital Products', href: '/digital-products' },
         { name: 'FX Trading Mastery', href: '/fx-trading' }
       ]
     },
