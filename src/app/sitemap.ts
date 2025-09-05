@@ -82,11 +82,9 @@ const blogPosts = [
 
 // Product/Course slugs
 const productPages = [
-  'instagram-ignited',
-  'digital-products',
   'ai-influencers',
-  'comfyui-workflows',
-  'n8n-ai-automations'
+  'digital-products', 
+  'fx-trading'
 ]
 
 // Tool pages

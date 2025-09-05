@@ -69,34 +69,46 @@ export default function HomePage() {
       description: 'Master the psychological triggers, viral content formulas, and growth automation that built our students over 10M followers. Turn your Instagram into a money-making machine.',
       gradient: 'from-blue-600 to-cyan-600',
       icon: 'smartphone',
-      stats: '4,000+ students • $2.1M+ student revenue',
+      stats: '2,000+ students • $1.2M+ student revenue',
       price: '$147',
       value: '$3,109',
       link: '/instagram-ignited'
     },
     {
+      id: 'ai-influencers',
+      title: 'AI Influencers + ComfyUI',
+      subtitle: 'Virtual Models & AI Content',
+      description: 'Create photorealistic AI influencers using ComfyUI workflows. Build virtual models that generate content 24/7 and earn $10K+/month without showing your face.',
+      gradient: 'from-pink-600 to-purple-600',
+      icon: 'smartphone',
+      stats: '2,000+ students • $1.2M+ student revenue',
+      price: '$169',
+      value: '$3,169',
+      link: '/ai-influencers'
+    },
+    {
       id: 'digital-products',
-      title: 'Digital Products Empire',
-      subtitle: 'Passive Income Mastery',
-      description: 'Create, launch, and scale digital products using our proven system. From idea to $100K/month automated business empires that work while you sleep.',
+      title: 'Digital Products + N8N',
+      subtitle: 'Automated Business Empire',
+      description: 'Create, launch, and scale digital products with N8N automation. Build $100K/month automated business systems with complete sales funnel automation.',
       gradient: 'from-green-600 to-emerald-600',
       icon: 'credit-card',
-      stats: '3,500+ students • $1.8M+ student revenue',
+      stats: '2,000+ students • $1.2M+ student revenue',
       price: '$189',
       value: '$5,959',
       link: '/digital-products'
     },
     {
-      id: 'n8n-automations',
-      title: 'N8N AI Automations',
-      subtitle: 'Business Automation Mastery',
-      description: 'Build AI-powered workflows that handle everything from content creation to customer acquisition. Save 40+ hours per week with intelligent automation systems.',
-      gradient: 'from-purple-600 to-pink-600',
+      id: 'fx-trading',
+      title: 'FX Trading Mastery',
+      subtitle: 'Professional Forex Trading',
+      description: 'Master profitable forex trading with proven strategies used by professional traders. Learn risk management, technical analysis, and build consistent income.',
+      gradient: 'from-orange-600 to-red-600',
       icon: 'bot',
       stats: '2,000+ students • $1.2M+ student revenue',
-      price: '$129',
-      value: '$7,361',
-      link: '/n8n-ai-automations'
+      price: '$197',
+      value: '$2,197',
+      link: '/fx-trading'
     }
   ]
 

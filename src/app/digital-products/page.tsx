@@ -609,9 +609,9 @@ export default function DigitalProductsPage() {
                 description: "Launch profitable products without spending a dime on ads. Organic marketing strategies, partnerships, and launch sequences that generate massive buzz and sales."
               },
               {
-                title: "<span className='text-green-400'>Module 5:</span> Sales Funnel Automation",
-                value: "$697",
-                description: "Build automated sales systems that work 24/7. Email sequences, landing pages, and sales funnels that convert cold traffic into paying customers while you sleep."
+                title: "<span className='text-green-400'>Module 5:</span> Sales Funnel Automation + N8N Workflows",
+                value: "$897",
+                description: "Build automated sales systems that work 24/7 using N8N workflows. Advanced email sequences, landing pages, customer segmentation, and complete sales automation systems that handle everything from lead capture to post-purchase follow-up without any manual intervention."
               },
               {
                 title: "<span className='text-green-400'>Module 6:</span> Customer Success Systems",
