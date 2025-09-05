@@ -1,16 +1,19 @@
 {
   "version": 2,
-  "buildCommand": "npm run build-original",
   "framework": "nextjs",
   "installCommand": "npm install",
+  "buildCommand": "next build",
   "cleanUrls": true,
-  "trailingSlash": false,
+  "trailingSlash": true,
   "functions": {
     "src/app/blog/[slug]/page.tsx": {
       "maxDuration": 30
     },
     "src/app/api/**": {
       "maxDuration": 60
+    },
+    "src/app/fx-calc/page.tsx": {
+      "maxDuration": 30
     }
   },
   "build": {
@@ -26,6 +29,15 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600, s-maxage=86400"
+        }
+      ]
+    },
+    {
+      "source": "/fx-calc",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=600"
         }
       ]
     },
