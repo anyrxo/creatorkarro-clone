@@ -53,6 +53,10 @@ import MarketClock from './components/MarketClock'
 import Disclaimer from './components/Disclaimer'
 import AdvancedAIAnalysis from './components/AdvancedAIAnalysis'
 import MissingFieldsIndicator from './components/MissingFieldsIndicator'
+import TradingViewChart from './components/TradingViewChart'
+
+// Import real-time hooks
+import { useRealTimePrice, useMarketAnalysis, useMarketNews } from './hooks/useRealTimePrice'
 
 // Enhanced prop firm configurations with accurate rules
 const PROP_FIRMS = {
@@ -296,6 +300,66 @@ export default function FXCalculatorPage() {
   const [customRisk, setCustomRisk] = useState('1.0')
   const [propFirm, setPropFirm] = useState('fivepercenters')
   const [challengePhase, setChallengePhase] = useState('phase1')
+
+  // Real-time data hooks
+  const { 
+    price: livePrice, 
+    priceData, 
+    loading: priceLoading, 
+    error: priceError 
+  } = useRealTimePrice(currencyPair, '1m', 1000)
+  
+  const { 
+    analysis, 
+    loading: analysisLoading, 
+    error: analysisError 
+  } = useMarketAnalysis(currencyPair, 5000)
+  
+  const { 
+    news: liveNews, 
+    loading: newsLoading, 
+    error: newsError 
+  } = useMarketNews(300000)
+
+  // Sync real-time hook data with existing state
+  useEffect(() => {
+    if (priceData && priceData.status === 'success') {
+      setRealTimeData({
+        price: priceData.price,
+        change: priceData.change,
+        changePercent: priceData.change_pct,
+        lastUpdate: new Date(),
+        isLive: true
+      })
+      
+      // Update API status
+      setApiStatus(prev => ({
+        ...prev,
+        connected: true,
+        lastCheck: new Date(),
+        error: null
+      }))
+      
+      // Auto-fill entry price if empty
+      if (!entryPrice) {
+        setEntryPrice(priceData.price.toString())
+      }
+    } else if (priceError) {
+      setApiStatus(prev => ({
+        ...prev,
+        connected: false,
+        error: priceError
+      }))
+    }
+  }, [priceData, priceError, entryPrice])
+
+  // Sync news data
+  useEffect(() => {
+    if (liveNews && liveNews.length > 0) {
+      setNewsData(liveNews)
+      setIsLoadingNews(newsLoading)
+    }
+  }, [liveNews, newsLoading])
   
   const [calculations, setCalculations] = useState({
     lotSize: 0,
@@ -825,7 +889,7 @@ export default function FXCalculatorPage() {
           </TabsContent>
 
           <TabsContent value="charts">
-            <TradingViewCharts />
+            <TradingViewCharts selectedPair={currencyPair} />
           </TabsContent>
 
           <TabsContent value="news">
@@ -1167,6 +1231,16 @@ function ComprehensiveTradingCalculator({
                   Live API
                 </Badge>
               )}
+              {priceData && priceData.status === 'streaming_simulation' && (
+                <Badge variant="outline" className="text-xs text-blue-400 border-blue-400 animate-pulse">
+                  Streaming ●
+                </Badge>
+              )}
+              {priceData && priceData.status === 'success' && !priceError && (
+                <Badge variant="outline" className="text-xs text-green-400 border-green-400 animate-pulse">
+                  Real-time ●
+                </Badge>
+              )}
               <Button
                 onClick={() => setRealTimeData((prev: any) => ({ ...prev, isLive: !prev.isLive }))}
                 size="sm"
@@ -1193,19 +1267,19 @@ function ComprehensiveTradingCalculator({
                 <div className="text-center">
                   <p className="text-zinc-400 text-sm">Current Price</p>
                   <p className="text-2xl font-bold text-white">
-                    {realTimeData.price || CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS].defaultPrice}
+                    {livePrice !== null ? livePrice.toFixed(5) : (realTimeData.price || CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS].defaultPrice)}
                   </p>
                 </div>
                 <div className="text-center">
                   <p className="text-zinc-400 text-sm">Change</p>
-                  <p className={`text-lg font-semibold ${realTimeData.change >= 0 ? 'text-green-400' : 'text-red-400'}`}>
-                    {realTimeData.change >= 0 ? '+' : ''}{realTimeData.change || '0.00000'}
+                  <p className={`text-lg font-semibold ${(priceData?.change || realTimeData.change) >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+                    {(priceData?.change || realTimeData.change) >= 0 ? '+' : ''}{(priceData?.change || realTimeData.change || 0).toFixed(5)}
                   </p>
                 </div>
                 <div className="text-center">
                   <p className="text-zinc-400 text-sm">Change %</p>
-                  <p className={`text-lg font-semibold ${realTimeData.changePercent >= 0 ? 'text-green-400' : 'text-red-400'}`}>
-                    {realTimeData.changePercent >= 0 ? '+' : ''}{realTimeData.changePercent || '0.00'}%
+                  <p className={`text-lg font-semibold ${(priceData?.change_pct || realTimeData.changePercent) >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+                    {(priceData?.change_pct || realTimeData.changePercent) >= 0 ? '+' : ''}{(priceData?.change_pct || realTimeData.changePercent || 0).toFixed(4)}%
                   </p>
                 </div>
                 <div className="text-center">
@@ -1221,6 +1295,29 @@ function ComprehensiveTradingCalculator({
                 </p>
               )}
             </div>
+          </CardContent>
+        </Card>
+
+        {/* Mini TradingView Chart */}
+        <Card className="shadow-xl border border-purple-500/20 bg-slate-800/90 backdrop-blur-sm">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center justify-between text-white">
+              <div className="flex items-center">
+                <BarChart3 className="mr-2 h-5 w-5 text-blue-400" />
+                Quick Chart
+              </div>
+              <Badge variant="secondary" className="text-xs">
+                Live
+              </Badge>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="p-2">
+            <TradingViewChart 
+              selectedPair={currencyPair}
+              height={300}
+              showControls={false}
+              className="w-full"
+            />
           </CardContent>
         </Card>
 
@@ -1587,48 +1684,66 @@ function ComprehensiveTradingCalculator({
   )
 }
 
-// TradingView Charts Component
-function TradingViewCharts() {
-  const [selectedSymbol, setSelectedSymbol] = useState('OANDA:EURUSD')
+// TradingView Charts Component - Enhanced with Real-Time Integration
+interface TradingViewChartsProps {
+  selectedPair?: string
+}
 
-  const popularSymbols = [
-    { symbol: 'OANDA:EURUSD', name: 'EUR/USD', category: 'Forex' },
-    { symbol: 'OANDA:GBPUSD', name: 'GBP/USD', category: 'Forex' },
-    { symbol: 'OANDA:USDJPY', name: 'USD/JPY', category: 'Forex' },
-    { symbol: 'OANDA:AUDUSD', name: 'AUD/USD', category: 'Forex' },
-    { symbol: 'TVC:NDX', name: 'NAS100', category: 'Indices' },
-    { symbol: 'CME:ES1!', name: 'S&P 500', category: 'Indices' },
-    { symbol: 'TVC:GOLD', name: 'Gold', category: 'Commodities' },
-    { symbol: 'BINANCE:BTCUSDT', name: 'Bitcoin', category: 'Crypto' }
+function TradingViewCharts({ selectedPair }: TradingViewChartsProps = {}) {
+  const [selectedSymbol, setSelectedSymbol] = useState(selectedPair || 'EURUSD')
+
+  // Convert display symbols to our internal format
+  const symbolCategories = {
+    forex: [
+      { symbol: 'EURUSD', name: 'EUR/USD', category: 'Major Pairs' },
+      { symbol: 'GBPUSD', name: 'GBP/USD', category: 'Major Pairs' },
+      { symbol: 'USDJPY', name: 'USD/JPY', category: 'Major Pairs' },
+      { symbol: 'USDCHF', name: 'USD/CHF', category: 'Major Pairs' },
+      { symbol: 'AUDUSD', name: 'AUD/USD', category: 'Major Pairs' },
+      { symbol: 'USDCAD', name: 'USD/CAD', category: 'Major Pairs' },
+      { symbol: 'NZDUSD', name: 'NZD/USD', category: 'Major Pairs' },
+      { symbol: 'EURJPY', name: 'EUR/JPY', category: 'Cross Pairs' },
+      { symbol: 'GBPJPY', name: 'GBP/JPY', category: 'Cross Pairs' },
+      { symbol: 'EURGBP', name: 'EUR/GBP', category: 'Cross Pairs' },
+    ],
+    indices: [
+      { symbol: 'NAS100', name: 'NASDAQ 100', category: 'US Indices' },
+      { symbol: 'SPX500', name: 'S&P 500', category: 'US Indices' },
+      { symbol: 'US30', name: 'Dow Jones 30', category: 'US Indices' },
+      { symbol: 'GER40', name: 'DAX 40', category: 'European Indices' },
+      { symbol: 'UK100', name: 'FTSE 100', category: 'European Indices' },
+      { symbol: 'JPN225', name: 'Nikkei 225', category: 'Asian Indices' },
+    ],
+    commodities: [
+      { symbol: 'XAUUSD', name: 'Gold', category: 'Precious Metals' },
+      { symbol: 'XAGUSD', name: 'Silver', category: 'Precious Metals' },
+      { symbol: 'USOIL', name: 'Crude Oil', category: 'Energy' },
+      { symbol: 'UKOIL', name: 'Brent Oil', category: 'Energy' },
+      { symbol: 'NATGAS', name: 'Natural Gas', category: 'Energy' },
+    ],
+    crypto: [
+      { symbol: 'BTCUSD', name: 'Bitcoin', category: 'Cryptocurrency' },
+      { symbol: 'ETHUSD', name: 'Ethereum', category: 'Cryptocurrency' },
+    ]
+  }
+
+  // Flatten all symbols for easy access
+  const allSymbols = [
+    ...symbolCategories.forex,
+    ...symbolCategories.indices, 
+    ...symbolCategories.commodities,
+    ...symbolCategories.crypto
   ]
 
+  // Update selected symbol when selectedPair prop changes
   useEffect(() => {
-    const script = document.createElement('script')
-    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js'
-    script.async = true
-    script.innerHTML = JSON.stringify({
-      autosize: true,
-      symbol: selectedSymbol,
-      interval: "D",
-      timezone: "Etc/UTC",
-      theme: "dark",
-      style: "1",
-      locale: "en",
-      enable_publishing: false,
-      backgroundColor: "rgba(19, 23, 34, 1)",
-      gridColor: "rgba(42, 46, 57, 0.06)",
-      hide_top_toolbar: false,
-      hide_legend: false,
-      save_image: false,
-      container_id: "tradingview_chart"
-    })
-
-    const container = document.getElementById("tradingview_chart")
-    if (container) {
-      container.innerHTML = ''
-      container.appendChild(script)
+    if (selectedPair) {
+      const mappedSymbol = selectedPair.replace('/', '').replace(/\s+/g, '').toUpperCase()
+      if (allSymbols.find(s => s.symbol === mappedSymbol)) {
+        setSelectedSymbol(mappedSymbol)
+      }
     }
-  }, [selectedSymbol])
+  }, [selectedPair])
 
   return (
     <div className="space-y-6">
@@ -1636,32 +1751,49 @@ function TradingViewCharts() {
         <CardHeader>
           <CardTitle className="text-2xl flex items-center text-white">
             <BarChart3 className="mr-3 h-6 w-6 text-purple-400" />
-            TradingView Charts
+            Advanced TradingView Charts
+            <Badge variant="secondary" className="ml-3 text-xs">
+              Real-Time Data
+            </Badge>
           </CardTitle>
+          <CardDescription className="text-purple-300">
+            Professional trading charts with real-time market data and technical analysis
+          </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="mb-4">
-            <Label className="text-white">Select Symbol</Label>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
-              {popularSymbols.map((item) => (
-                <Button
-                  key={item.symbol}
-                  onClick={() => setSelectedSymbol(item.symbol)}
-                  variant={selectedSymbol === item.symbol ? "default" : "outline"}
-                  size="sm"
-                  className={selectedSymbol === item.symbol ? 
-                    "bg-purple-600 hover:bg-purple-700" : 
-                    "bg-slate-700 border-slate-600 text-white hover:bg-slate-600"}
-                >
-                  {item.name}
-                </Button>
-              ))}
-            </div>
+          {/* Symbol Categories */}
+          <div className="space-y-4 mb-6">
+            {Object.entries(symbolCategories).map(([categoryKey, symbols]) => (
+              <div key={categoryKey}>
+                <h3 className="text-sm font-medium text-gray-300 mb-2 capitalize">
+                  {categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1)}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-2">
+                  {symbols.map((item) => (
+                    <Button
+                      key={item.symbol}
+                      onClick={() => setSelectedSymbol(item.symbol)}
+                      variant={selectedSymbol === item.symbol ? "default" : "outline"}
+                      size="sm"
+                      className={selectedSymbol === item.symbol ? 
+                        "bg-purple-600 hover:bg-purple-700 text-white" : 
+                        "bg-slate-700 border-slate-600 text-white hover:bg-slate-600"}
+                    >
+                      {item.name}
+                    </Button>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
           
-          <div className="tradingview-widget-container" style={{ height: '600px' }}>
-            <div id="tradingview_chart" style={{ height: '100%' }}></div>
-          </div>
+          {/* TradingView Chart Component */}
+          <TradingViewChart 
+            selectedPair={selectedSymbol}
+            height={600}
+            showControls={true}
+            className="w-full"
+          />
         </CardContent>
       </Card>
     </div>

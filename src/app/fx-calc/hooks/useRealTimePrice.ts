@@ -1,28 +1,54 @@
 import { useState, useEffect, useRef } from 'react'
 
-// Symbol mapping for our API
+// Symbol mapping for our API (matching Python server symbols)
 const SYMBOL_MAPPING: Record<string, string> = {
-  'EUR/USD': 'EUR/USD',
-  'GBP/USD': 'GBP/USD',
-  'USD/JPY': 'USD/JPY',
-  'AUD/USD': 'AUD/USD',
-  'USD/CAD': 'USD/CAD',
-  'USD/CHF': 'USD/CHF',
-  'NZD/USD': 'NZD/USD',
-  'EUR/GBP': 'EUR/GBP',
-  'EUR/JPY': 'EUR/JPY',
-  'GBP/JPY': 'GBP/JPY',
-  'NASDAQ 100': 'NASDAQ 100',
-  'S&P 500': 'S&P 500',
-  'Dow Jones 30': 'Dow Jones 30',
-  'DAX 40': 'DAX 40',
-  'FTSE 100': 'FTSE 100',
-  'Nikkei 225': 'Nikkei 225',
-  'Gold': 'Gold',
-  'Silver': 'Silver',
-  'Crude Oil': 'Crude Oil',
-  'Bitcoin': 'Bitcoin',
-  'Ethereum': 'Ethereum'
+  // Forex pairs
+  'EUR/USD': 'EURUSD',
+  'GBP/USD': 'GBPUSD',
+  'USD/JPY': 'USDJPY',
+  'USD/CHF': 'USDCHF',
+  'AUD/USD': 'AUDUSD',
+  'USD/CAD': 'USDCAD',
+  'NZD/USD': 'NZDUSD',
+  'EUR/GBP': 'EURGBP',
+  'EUR/JPY': 'EURJPY',
+  'GBP/JPY': 'GBPJPY',
+  'AUD/CAD': 'AUDCAD',
+  'AUD/CHF': 'AUDCHF',
+  'AUD/JPY': 'AUDJPY',
+  'CAD/JPY': 'CADJPY',
+  'CHF/JPY': 'CHFJPY',
+  'EUR/AUD': 'EURAUD',
+  'EUR/CAD': 'EURCAD',
+  'EUR/CHF': 'EURCHF',
+  'GBP/AUD': 'GBPAUD',
+  'GBP/CAD': 'GBPCAD',
+  'GBP/CHF': 'GBPCHF',
+  'GBP/NZD': 'GBPNZD',
+  'NZD/CAD': 'NZDCAD',
+  'NZD/CHF': 'NZDCHF',
+  'NZD/JPY': 'NZDJPY',
+  
+  // Indices  
+  'NASDAQ 100': 'NAS100',
+  'S&P 500': 'SPX500',
+  'Dow Jones 30': 'US30',
+  'DAX 40': 'GER40',
+  'FTSE 100': 'UK100',
+  'CAC 40': 'FRA40',
+  'Nikkei 225': 'JPN225',
+  'ASX 200': 'AUS200',
+  
+  // Commodities
+  'Gold': 'XAUUSD',
+  'Silver': 'XAGUSD',
+  'Crude Oil': 'USOIL',
+  'Brent Oil': 'UKOIL',
+  'Natural Gas': 'NATGAS',
+  
+  // Crypto
+  'Bitcoin': 'BTCUSD',
+  'Ethereum': 'ETHUSD'
 }
 
 interface PriceData {
@@ -40,7 +66,7 @@ interface PriceHistory {
   change_pct: number
 }
 
-export const useRealTimePrice = (symbol: string, interval = '1m', updateInterval = 30000) => {
+export const useRealTimePrice = (symbol: string, interval = '1m', updateInterval = 1000) => {
   const [price, setPrice] = useState<number | null>(null)
   const [priceData, setPriceData] = useState<PriceData | null>(null)
   const [priceHistory, setPriceHistory] = useState<PriceHistory[]>([])
@@ -56,7 +82,7 @@ export const useRealTimePrice = (symbol: string, interval = '1m', updateInterval
     
     try {
       const mappedSymbol = SYMBOL_MAPPING[symbol] || symbol
-      const response = await fetch(`http://localhost:5000/api/price/${encodeURIComponent(mappedSymbol)}`)
+      const response = await fetch(`http://localhost:5001/api/price/${encodeURIComponent(mappedSymbol)}`)
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
@@ -174,7 +200,7 @@ export const useRealTimePrice = (symbol: string, interval = '1m', updateInterval
 }
 
 // Hook for market analysis
-export const useMarketAnalysis = (symbol: string, updateInterval = 60000) => {
+export const useMarketAnalysis = (symbol: string, updateInterval = 5000) => {
   const [analysis, setAnalysis] = useState<any>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -188,7 +214,7 @@ export const useMarketAnalysis = (symbol: string, updateInterval = 60000) => {
     
     try {
       const mappedSymbol = SYMBOL_MAPPING[symbol] || symbol
-      const response = await fetch(`http://localhost:5000/api/analysis/${encodeURIComponent(mappedSymbol)}`)
+      const response = await fetch(`http://localhost:5001/api/analysis/${encodeURIComponent(mappedSymbol)}`)
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
@@ -262,7 +288,7 @@ export const useMarketNews = (updateInterval = 300000) => { // 5 minutes
     setError(null)
     
     try {
-      const response = await fetch('http://localhost:5000/api/news')
+      const response = await fetch('http://localhost:5001/api/news')
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
