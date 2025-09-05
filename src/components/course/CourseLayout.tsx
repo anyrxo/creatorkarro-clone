@@ -312,7 +312,7 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
               borderRadius="12px"
             >
               <span className="whitespace-nowrap font-bold px-6 py-3 text-base">
-                {option.popular ? 'Get All 5 Courses' : 'Get Instagram Ignited'}
+                {option.buttonText || (option.popular ? 'Get All 5 Courses' : 'Get Course')}
               </span>
             </ShimmerButton>
           )}
