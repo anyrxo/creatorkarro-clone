@@ -1,6 +1,6 @@
 {
   "name": "nextjs-shadcn",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "concurrently --kill-others \"npm run start-api\" \"next dev -H 0.0.0.0 --turbopack\"",
