@@ -1243,25 +1243,6 @@ export default function FXCalculatorPage() {
               setChatGptApiKey={setChatGptApiKey}
               showApiKey={showApiKey}
               setShowApiKey={setShowApiKey}
-              // Advanced Position Sizing Props
-              showAdvancedOptions={showAdvancedOptions}
-              setShowAdvancedOptions={setShowAdvancedOptions}
-              positionSizingMethod={positionSizingMethod}
-              setPositionSizingMethod={setPositionSizingMethod}
-              kellyWinRate={kellyWinRate}
-              setKellyWinRate={setKellyWinRate}
-              kellyAvgWin={kellyAvgWin}
-              setKellyAvgWin={setKellyAvgWin}
-              kellyAvgLoss={kellyAvgLoss}
-              setKellyAvgLoss={setKellyAvgLoss}
-              timeframe={timeframe}
-              setTimeframe={setTimeframe}
-              suggestions={suggestions}
-              calculationResults={calculationResults}
-              // Real-time data props
-              livePrice={livePrice}
-              priceData={priceData}
-              priceError={priceError}
             />
           </TabsContent>
 
@@ -1323,30 +1304,6 @@ interface ComprehensiveTradingCalculatorProps {
   setChatGptApiKey: (value: string) => void
   showApiKey: boolean
   setShowApiKey: (value: boolean) => void
-  // Advanced Position Sizing Props
-  showAdvancedOptions: boolean
-  setShowAdvancedOptions: (value: boolean) => void
-  positionSizingMethod: string
-  setPositionSizingMethod: (value: string) => void
-  kellyWinRate: number
-  setKellyWinRate: (value: number) => void
-  kellyAvgWin: number
-  setKellyAvgWin: (value: number) => void
-  kellyAvgLoss: number
-  setKellyAvgLoss: (value: number) => void
-  timeframe: string
-  setTimeframe: (value: string) => void
-  suggestions: Array<{
-    type: string;
-    severity: 'info' | 'warning' | 'error';
-    message: string;
-    action?: () => void;
-  }>
-  calculationResults: any
-  // Real-time data props
-  livePrice: number | null
-  priceData: any
-  priceError: string | null
 }
 
 function ComprehensiveTradingCalculator({
@@ -1356,13 +1313,7 @@ function ComprehensiveTradingCalculator({
   customRisk, setCustomRisk, propFirm, setPropFirm, challengePhase, setChallengePhase,
   calculations, propFirmStatus, realTimeData, setRealTimeData, marketAnalysis,
   generateMarketAnalysis, saveTradeToHistory, tradeHistory, apiStatus,
-  performAIAnalysis, aiAnalysis, chatGptApiKey, setChatGptApiKey, showApiKey, setShowApiKey,
-  // Advanced Position Sizing Props
-  showAdvancedOptions, setShowAdvancedOptions, positionSizingMethod, setPositionSizingMethod,
-  kellyWinRate, setKellyWinRate, kellyAvgWin, setKellyAvgWin, kellyAvgLoss, setKellyAvgLoss,
-  timeframe, setTimeframe, suggestions, calculationResults,
-  // Real-time data props
-  livePrice, priceData, priceError
+  performAIAnalysis, aiAnalysis, chatGptApiKey, setChatGptApiKey, showApiKey, setShowApiKey
 }: ComprehensiveTradingCalculatorProps) {
 
   return (
@@ -1861,7 +1812,123 @@ function ComprehensiveTradingCalculator({
           </CardContent>
         </Card>
 
-        {/* Market Analysis - Moved from below */}
+        {/* Mini TradingView Chart */}
+        <Card className="shadow-xl border border-purple-500/20 bg-slate-800/90 backdrop-blur-sm">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center justify-between text-white">
+              <div className="flex items-center">
+                <BarChart3 className="mr-2 h-5 w-5 text-blue-400" />
+                Quick Chart
+              </div>
+              <Badge variant="secondary" className="text-xs">
+                Live
+              </Badge>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="p-2">
+            <TradingViewChart 
+              selectedPair={currencyPair}
+              height={300}
+              showControls={false}
+              className="w-full"
+            />
+          </CardContent>
+        </Card>
+
+        {/* Trade Calculations */}
+        <Card className="shadow-xl border border-purple-500/20 bg-slate-800/90 backdrop-blur-sm">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center text-white">
+              <Target className="mr-2 h-5 w-5 text-purple-400" />
+              Trade Analysis
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            {/* Advanced Position Sizing Method Display */}
+            {showAdvancedOptions && (
+              <div className="mb-4 p-3 bg-purple-900/20 rounded-lg border border-purple-500/30">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-purple-400 font-medium">Position Sizing: {POSITION_SIZING_METHODS[positionSizingMethod as keyof typeof POSITION_SIZING_METHODS].name}</span>
+                  <Badge variant="outline" className="text-purple-400 border-purple-400">
+                    {timeframe} • {TIMEFRAME_MULTIPLIERS[timeframe as keyof typeof TIMEFRAME_MULTIPLIERS].risk} Risk
+                  </Badge>
+                </div>
+                <p className="text-xs text-gray-400">
+                  {POSITION_SIZING_METHODS[positionSizingMethod as keyof typeof POSITION_SIZING_METHODS].description}
+                </p>
+              </div>
+            )}
+            
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-zinc-900/50 rounded-lg p-3">
+                <p className="text-zinc-400 text-sm">Position Size</p>
+                <p className="text-xl font-bold text-white">{(calculationResults || calculations).lotSize}</p>
+                <p className="text-xs text-zinc-500">lots</p>
+              </div>
+              <div className="bg-zinc-900/50 rounded-lg p-3">
+                <p className="text-zinc-400 text-sm">Risk Amount</p>
+                <p className="text-xl font-bold text-red-400">${(calculationResults || calculations).riskAmount}</p>
+                <p className="text-xs text-zinc-500">{(calculationResults || calculations).accountRisk}% of account</p>
+              </div>
+              <div className="bg-zinc-900/50 rounded-lg p-3">
+                <p className="text-zinc-400 text-sm">Potential Profit</p>
+                <p className="text-xl font-bold text-green-400">${(calculationResults || calculations).potentialProfit}</p>
+                <p className="text-xs text-zinc-500">{(calculationResults || calculations).takeProfitPips} pips</p>
+              </div>
+              <div className="bg-zinc-900/50 rounded-lg p-3">
+                <p className="text-zinc-400 text-sm">Risk/Reward</p>
+                <p className="text-xl font-bold text-blue-400">1:{(calculationResults || calculations).riskRewardRatio}</p>
+                <p className="text-xs text-zinc-500">ratio</p>
+              </div>
+            </div>
+
+            {/* Enhanced Metrics */}
+            <div className="mt-4 space-y-2">
+              <div className="flex justify-between text-sm">
+                <span className="text-zinc-400">Stop Loss Pips:</span>
+                <span className="text-white">{(calculationResults || calculations).stopLossPips}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span className="text-zinc-400">Pip Value:</span>
+                <span className="text-white">${(calculationResults || calculations).pipValue}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span className="text-zinc-400">Required Margin:</span>
+                <span className="text-white">${(calculationResults || calculations).margin}</span>
+              </div>
+              {calculationResults?.marginUtilization && (
+                <div className="flex justify-between text-sm">
+                  <span className="text-zinc-400">Margin Utilization:</span>
+                  <span className={`text-white ${
+                    calculationResults.marginUtilization > 30 ? 'text-red-400' :
+                    calculationResults.marginUtilization > 20 ? 'text-yellow-400' :
+                    'text-green-400'
+                  }`}>
+                    {calculationResults.marginUtilization}%
+                  </span>
+                </div>
+              )}
+              <div className="flex justify-between text-sm">
+                <span className="text-zinc-400">Effective Leverage:</span>
+                <span className="text-white">1:{(calculationResults || calculations).leverage}</span>
+              </div>
+              {calculationResults?.breakEven && (
+                <div className="flex justify-between text-sm">
+                  <span className="text-zinc-400">Break Even:</span>
+                  <span className="text-white">{calculationResults.breakEven}</span>
+                </div>
+              )}
+              {calculationResults?.positionValue && (
+                <div className="flex justify-between text-sm">
+                  <span className="text-zinc-400">Position Value:</span>
+                  <span className="text-white">${calculationResults.positionValue.toLocaleString()}</span>
+                </div>
+              )}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Advanced Market Analysis */}
         <Card className="shadow-xl border border-purple-500/20 bg-slate-800/90 backdrop-blur-sm">
           <CardHeader className="flex flex-row items-center justify-between">
             <CardTitle className="text-lg flex items-center text-white">
@@ -1873,68 +1940,126 @@ function ComprehensiveTradingCalculator({
                 <Server className="ml-2 h-4 w-4 text-orange-400" />
               )}
             </CardTitle>
-            <Button
-              onClick={generateMarketAnalysis}
-              size="sm"
-              variant="outline"
-              className="text-pink-400 border-pink-400 hover:bg-pink-400/10"
-            >
-              <RefreshCw className="h-4 w-4 mr-1" />
-              Refresh
+            <Button onClick={generateMarketAnalysis} size="sm" variant="outline" className="bg-slate-700 border-slate-600 text-white hover:bg-slate-600">
+              <RefreshCw className="h-3 w-3 mr-1" />
+              {apiStatus.connected ? 'Analyze' : 'Simulate'}
             </Button>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-              <div className="bg-slate-900/50 rounded-lg p-3">
-                <p className="text-slate-400 text-xs mb-1">RSI (14)</p>
-                <p className="text-lg font-bold text-white">{marketAnalysis.rsi}</p>
-                <p className="text-xs text-slate-500">
-                  {marketAnalysis.rsi > 70 ? 'Overbought' : marketAnalysis.rsi < 30 ? 'Oversold' : 'Neutral'}
-                </p>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <span className="text-zinc-400">Market Trend:</span>
+                <Badge variant={marketAnalysis.trend === 'bullish' ? 'default' : marketAnalysis.trend === 'bearish' ? 'destructive' : 'secondary'}>
+                  {marketAnalysis.trend}
+                </Badge>
               </div>
-              <div className="bg-slate-900/50 rounded-lg p-3">
-                <p className="text-slate-400 text-xs mb-1">MACD</p>
-                <p className="text-lg font-bold text-white">{marketAnalysis.macd.toFixed(4)}</p>
-                <p className="text-xs text-slate-500">
-                  {marketAnalysis.macd > 0 ? 'Bullish' : 'Bearish'}
-                </p>
+              <div className="flex items-center justify-between">
+                <span className="text-zinc-400">Signal Strength:</span>
+                <div className="flex items-center space-x-2">
+                  <Progress value={marketAnalysis.strength} className="w-20" />
+                  <span className="text-white text-sm">{marketAnalysis.strength}%</span>
+                </div>
               </div>
-              <div className="bg-slate-900/50 rounded-lg p-3">
-                <p className="text-slate-400 text-xs mb-1">Bollinger</p>
-                <p className="text-lg font-bold text-white">
-                  {((livePrice || parseFloat(entryPrice)) > marketAnalysis.bollinger.upper) ? 'Above' :
-                   ((livePrice || parseFloat(entryPrice)) < marketAnalysis.bollinger.lower) ? 'Below' : 'Middle'}
-                </p>
-                <p className="text-xs text-slate-500">Band Position</p>
-              </div>
-            </div>
-            
-            {marketAnalysis.signals && marketAnalysis.signals.length > 0 && (
               <div className="space-y-2">
-                <p className="text-sm font-medium text-white">Trading Signals:</p>
-                {marketAnalysis.signals.slice(0, 3).map((signal: any, index: number) => (
-                  <div key={index} className={`p-2 rounded-lg border ${
-                    signal.type === 'buy' ? 'bg-green-900/20 border-green-500/30 text-green-400' : 
-                    'bg-red-900/20 border-red-500/30 text-red-400'
-                  }`}>
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-medium">
-                        {signal.type.toUpperCase()} • {signal.strength}
-                      </span>
-                      <Badge variant="outline" className={
-                        signal.type === 'buy' ? 'text-green-400 border-green-400' : 'text-red-400 border-red-400'
-                      }>
-                        {signal.type}
-                      </Badge>
-                    </div>
-                    <p className="text-xs mt-1">{signal.reason}</p>
+                <p className="text-zinc-400 text-sm">Key Signals:</p>
+                {marketAnalysis.signals.map((signal: string, index: number) => (
+                  <div key={index} className="flex items-center text-sm">
+                    <Lightbulb className="h-3 w-3 text-yellow-400 mr-2 flex-shrink-0" />
+                    <span className={`${signal.includes('⚠️') ? 'text-orange-400' : 'text-white'}`}>{signal}</span>
                   </div>
                 ))}
               </div>
-            )}
+              
+              {/* Advanced AI Analysis Section */}
+              <div className="mt-6 pt-4 border-t border-zinc-700">
+                <div className="flex items-center justify-between mb-3">
+                  <h4 className="text-sm font-medium text-purple-300 flex items-center">
+                    <Sparkles className="h-4 w-4 mr-2" />
+                    AI Analysis (ChatGPT)
+                  </h4>
+                  <Button
+                    onClick={performAIAnalysis}
+                    size="sm"
+                    disabled={aiAnalysis.isAnalyzing}
+                    className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700"
+                  >
+                    {aiAnalysis.isAnalyzing ? (
+                      <><Loader2 className="h-3 w-3 mr-1 animate-spin" />Analyzing...</>
+                    ) : (
+                      <><Brain className="h-3 w-3 mr-1" />Analyze</>
+                    )}
+                  </Button>
+                </div>
+                
+                {/* API Key Input */}
+                {!chatGptApiKey && (
+                  <div className="mb-3">
+                    <div className="flex gap-2">
+                      <div className="relative flex-1">
+                        <Input
+                          type={showApiKey ? 'text' : 'password'}
+                          value={chatGptApiKey}
+                          onChange={(e) => setChatGptApiKey(e.target.value)}
+                          placeholder="Enter ChatGPT API key (sk-...)"  
+                          className="bg-zinc-800 border-zinc-600 text-white text-xs pr-8"
+                        />
+                        <Button
+                          type="button"
+                          variant="ghost"
+                          size="sm"
+                          className="absolute right-1 top-1 h-6 w-6 p-0 text-zinc-400 hover:text-white"
+                          onClick={() => setShowApiKey(!showApiKey)}
+                        >
+                          {showApiKey ? <EyeOff className="h-3 w-3" /> : <Eye className="h-3 w-3" />}
+                        </Button>
+                      </div>
+                    </div>
+                    <p className="text-xs text-zinc-400 mt-1">
+                      Get your key from{' '}
+                      <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300">
+                        OpenAI Platform
+                      </a>
+                    </p>
+                  </div>
+                )}
+                
+                {/* AI Analysis Results */}
+                {aiAnalysis.error && (
+                  <Alert className="border-red-500/50 bg-red-500/10 mb-3">
+                    <AlertTriangle className="h-4 w-4 text-red-400" />
+                    <AlertDescription className="text-red-300 text-xs">
+                      {aiAnalysis.error}
+                    </AlertDescription>
+                  </Alert>
+                )}
+                
+                {aiAnalysis.content && (
+                  <div className="bg-zinc-900/50 rounded-lg p-3 max-h-32 overflow-y-auto">
+                    <div className="flex items-center justify-between mb-2">
+                      <Badge className="bg-green-600 text-white text-xs">
+                        <CheckCircle className="h-3 w-3 mr-1" />
+                        Analysis Complete
+                      </Badge>
+                      {aiAnalysis.timestamp && (
+                        <span className="text-xs text-zinc-400">
+                          {aiAnalysis.timestamp.toLocaleTimeString()}
+                        </span>
+                      )}
+                    </div>
+                    <pre className="text-xs text-white whitespace-pre-wrap font-mono leading-tight">
+                      {aiAnalysis.content.slice(0, 500)}{aiAnalysis.content.length > 500 ? '...' : ''}
+                    </pre>
+                    {aiAnalysis.dataPointsAnalyzed && (
+                      <p className="text-xs text-green-400 mt-2">
+                        ✓ {aiAnalysis.dataPointsAnalyzed.total_candles} candles analyzed across {aiAnalysis.dataPointsAnalyzed.timeframes?.length || 0} timeframes
+                      </p>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
           </CardContent>
         </Card>
-
 
         {/* Advanced AI Analysis */}
         <AdvancedAIAnalysis
@@ -2031,94 +2156,49 @@ function ComprehensiveTradingCalculator({
           </CardContent>
         </Card>
 
-        {/* Combined Trade Analysis & Actions */}
+        {/* Action Buttons */}
         <Card className="shadow-xl border border-purple-500/20 bg-slate-800/90 backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="text-lg flex items-center text-white">
-              <Target className="mr-2 h-5 w-5 text-purple-400" />
-              Trade Analysis & Actions
+              <Zap className="mr-2 h-5 w-5 text-yellow-400" />
+              Trade Actions
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-3">
+            <Button 
+              onClick={saveTradeToHistory}
+              disabled={!entryPrice || !stopLoss}
+              className="w-full bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Save Trade Plan
+            </Button>
             
-            {/* Advanced Position Sizing Method Display */}
-            {showAdvancedOptions && (
-              <div className="mb-4 p-3 bg-purple-900/20 rounded-lg border border-purple-500/30">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-purple-400 font-medium">Position Sizing: {POSITION_SIZING_METHODS[positionSizingMethod as keyof typeof POSITION_SIZING_METHODS].name}</span>
-                  <Badge variant="outline" className="text-purple-400 border-purple-400">
-                    {timeframe} • {TIMEFRAME_MULTIPLIERS[timeframe as keyof typeof TIMEFRAME_MULTIPLIERS].risk} Risk
-                  </Badge>
-                </div>
-                <p className="text-xs text-gray-400">
-                  {POSITION_SIZING_METHODS[positionSizingMethod as keyof typeof POSITION_SIZING_METHODS].description}
-                </p>
-              </div>
-            )}
+            <Button 
+              onClick={() => {
+                const pair = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS]
+                const tradeSetup = `${pair.symbol} ${tradeDirection.toUpperCase()} @ ${entryPrice} | SL: ${stopLoss} | TP: ${takeProfit} | Size: ${calculations.lotSize} | Risk: $${calculations.riskAmount} (${calculations.accountRisk}%)`
+                navigator.clipboard.writeText(tradeSetup)
+                // Could add toast notification here
+              }}
+              disabled={!entryPrice}
+              className="w-full bg-purple-600 hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Copy Trade Setup
+            </Button>
             
-            {/* Trade Analysis Grid */}
-            <div className="grid grid-cols-2 gap-4 mb-4">
-              <div className="bg-zinc-900/50 rounded-lg p-3">
-                <p className="text-zinc-400 text-sm">Position Size</p>
-                <p className="text-xl font-bold text-white">{(calculationResults || calculations).lotSize}</p>
-                <p className="text-xs text-zinc-500">lots</p>
-              </div>
-              <div className="bg-zinc-900/50 rounded-lg p-3">
-                <p className="text-zinc-400 text-sm">Risk Amount</p>
-                <p className="text-xl font-bold text-red-400">${(calculationResults || calculations).riskAmount}</p>
-                <p className="text-xs text-zinc-500">{(calculationResults || calculations).accountRisk}% of account</p>
-              </div>
-              <div className="bg-zinc-900/50 rounded-lg p-3">
-                <p className="text-zinc-400 text-sm">Potential Profit</p>
-                <p className="text-xl font-bold text-green-400">${(calculationResults || calculations).potentialProfit}</p>
-                <p className="text-xs text-zinc-500">Risk:Reward {(calculationResults || calculations).riskReward}</p>
-              </div>
-              <div className="bg-zinc-900/50 rounded-lg p-3">
-                <p className="text-zinc-400 text-sm">Break-Even</p>
-                <p className="text-xl font-bold text-yellow-400">{(calculationResults || calculations).breakEvenPips}</p>
-                <p className="text-xs text-zinc-500">pips to cover spread</p>
-              </div>
-            </div>
-            
-            {/* Action Buttons */}
-            <div className="space-y-3">
-              <Button 
-                onClick={saveTradeToHistory}
-                disabled={!entryPrice || !stopLoss}
-                className="w-full bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                <Zap className="h-4 w-4 mr-2" />
-                Save Trade Plan
-              </Button>
-              
-              <Button 
-                onClick={() => {
-                  const pair = CURRENCY_PAIRS[currencyPair as keyof typeof CURRENCY_PAIRS]
-                  const tradeSetup = `${pair.symbol} ${tradeDirection.toUpperCase()} @ ${entryPrice} | SL: ${stopLoss} | TP: ${takeProfit} | Size: ${calculations.lotSize} | Risk: $${calculations.riskAmount} (${calculations.accountRisk}%)`
-                  navigator.clipboard.writeText(tradeSetup)
-                  // Could add toast notification here
-                }}
-                disabled={!entryPrice}
-                className="w-full bg-purple-600 hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Copy Trade Setup
-              </Button>
-              
-              <Button 
-                onClick={() => {
-                  setEntryPrice('')
-                  setStopLoss('')
-                  setTakeProfit('')
-                  setLotSize('')
-                }}
-                variant="outline"
-                className="w-full bg-slate-700 border-slate-600 text-white hover:bg-slate-600"
-              >
-                <RotateCcw className="h-4 w-4 mr-2" />
-                Reset Calculator
-              </Button>
-            </div>
-            
+            <Button 
+              onClick={() => {
+                setEntryPrice('')
+                setStopLoss('')
+                setTakeProfit('')
+                setLotSize('')
+              }}
+              variant="outline"
+              className="w-full bg-slate-700 border-slate-600 text-white hover:bg-slate-600"
+            >
+              <RotateCcw className="h-4 w-4 mr-2" />
+              Reset Calculator
+            </Button>
           </CardContent>
         </Card>
 
@@ -2235,54 +2315,39 @@ function TradingViewCharts({ selectedPair }: TradingViewChartsProps = {}) {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          {/* Two Column Layout: Symbols Left, Chart Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            
-            {/* Left Sidebar - Symbol Dashboard */}
-            <div className="lg:col-span-3">
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-white mb-4">Market Symbols</h3>
-                {Object.entries(symbolCategories).map(([categoryKey, symbols]) => (
-                  <div key={categoryKey} className="mb-4">
-                    <h4 className="text-xs font-medium text-gray-300 mb-2 capitalize">
-                      {categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1)}
-                    </h4>
-                    <div className="grid grid-cols-1 gap-1">
-                      {symbols.map((item) => (
-                        <Button
-                          key={item.symbol}
-                          onClick={() => setSelectedSymbol(item.symbol)}
-                          variant={selectedSymbol === item.symbol ? "default" : "outline"}
-                          size="sm"
-                          className={selectedSymbol === item.symbol ? 
-                            "bg-purple-600 hover:bg-purple-700 text-white text-xs justify-start" : 
-                            "bg-slate-700 border-slate-600 text-white hover:bg-slate-600 text-xs justify-start"}
-                        >
-                          {item.name}
-                        </Button>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            {/* Right Side - Chart taking most space */}
-            <div className="lg:col-span-9">
-              <div className="bg-slate-900/50 rounded-lg p-4">
-                <h3 className="text-lg font-semibold text-white mb-4">
-                  {allSymbols.find(s => s.symbol === selectedSymbol)?.name || selectedSymbol} Chart
+          {/* Symbol Categories */}
+          <div className="space-y-4 mb-6">
+            {Object.entries(symbolCategories).map(([categoryKey, symbols]) => (
+              <div key={categoryKey}>
+                <h3 className="text-sm font-medium text-gray-300 mb-2 capitalize">
+                  {categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1)}
                 </h3>
-                <TradingViewChart 
-                  selectedPair={selectedSymbol}
-                  height={600}
-                  showControls={true}
-                  className="w-full"
-                />
+                <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-2">
+                  {symbols.map((item) => (
+                    <Button
+                      key={item.symbol}
+                      onClick={() => setSelectedSymbol(item.symbol)}
+                      variant={selectedSymbol === item.symbol ? "default" : "outline"}
+                      size="sm"
+                      className={selectedSymbol === item.symbol ? 
+                        "bg-purple-600 hover:bg-purple-700 text-white" : 
+                        "bg-slate-700 border-slate-600 text-white hover:bg-slate-600"}
+                    >
+                      {item.name}
+                    </Button>
+                  ))}
+                </div>
               </div>
-            </div>
-            
+            ))}
           </div>
+          
+          {/* TradingView Chart Component */}
+          <TradingViewChart 
+            selectedPair={selectedSymbol}
+            height={600}
+            showControls={true}
+            className="w-full"
+          />
         </CardContent>
       </Card>
     </div>
@@ -2655,32 +2720,6 @@ function ProContent() {
           </CardContent>
         </Card>
       </div>
-
-      {/* Main Trading Chart - Full Width at Bottom */}
-      <Card className="shadow-xl border border-purple-500/20 bg-slate-800/90 backdrop-blur-sm">
-        <CardHeader>
-          <CardTitle className="text-2xl flex items-center justify-between text-white">
-            <div className="flex items-center">
-              <BarChart3 className="mr-3 h-6 w-6 text-blue-400" />
-              Professional Trading Chart
-            </div>
-            <Badge variant="secondary" className="text-xs">
-              Full Space • Real-Time Data
-            </Badge>
-          </CardTitle>
-          <CardDescription className="text-purple-300">
-            Advanced chart with full space for detailed technical analysis
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="p-4">
-          <TradingViewChart 
-            selectedPair={currencyPair}
-            height={700}
-            showControls={true}
-            className="w-full"
-          />
-        </CardContent>
-      </Card>
 
       {/* Important Disclaimer */}
       <Disclaimer />

@@ -82,7 +82,7 @@ export const useRealTimePrice = (symbol: string, interval = '1m', updateInterval
     
     try {
       const mappedSymbol = SYMBOL_MAPPING[symbol] || symbol
-      const response = await fetch(`http://localhost:5001/api/price/${encodeURIComponent(mappedSymbol)}`)
+      const response = await fetch(`http://localhost:8000/api/price/${encodeURIComponent(mappedSymbol)}`)
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
@@ -214,7 +214,7 @@ export const useMarketAnalysis = (symbol: string, updateInterval = 5000) => {
     
     try {
       const mappedSymbol = SYMBOL_MAPPING[symbol] || symbol
-      const response = await fetch(`http://localhost:5001/api/analysis/${encodeURIComponent(mappedSymbol)}`)
+      const response = await fetch(`http://localhost:8000/api/analysis/${encodeURIComponent(mappedSymbol)}`)
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
@@ -288,7 +288,7 @@ export const useMarketNews = (updateInterval = 300000) => { // 5 minutes
     setError(null)
     
     try {
-      const response = await fetch('http://localhost:5001/api/news')
+      const response = await fetch('http://localhost:8000/api/news')
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
