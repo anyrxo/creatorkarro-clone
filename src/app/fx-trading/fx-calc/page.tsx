@@ -294,8 +294,8 @@ const calculateAdvancedRiskMetrics = (trades: any[], accountSize: number) => {
   }
 }
 
-export default function FXCalculatorPage() {
-  const [activeTab, setActiveTab] = useState('calculator')
+export default function FXChartsPage() {
+  const [activeTab, setActiveTab] = useState('charts')
   
   // API connection state
   const [apiStatus, setApiStatus] = useState<{
@@ -1148,8 +1148,8 @@ export default function FXCalculatorPage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">Professional FX Trading Calculator</h1>
-          <p className="text-xl text-gray-300">Advanced prop firm compliance & risk management</p>
+          <h1 className="text-4xl font-bold text-white mb-4">Professional FX Charts</h1>
+          <p className="text-xl text-gray-300">Real-time forex charts, market analysis & trading education</p>
         </div>
 
         {/* Global Market Clock */}
@@ -1183,11 +1183,7 @@ export default function FXCalculatorPage() {
         )}
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-4 mb-6 bg-slate-800 border-slate-700">
-            <TabsTrigger value="calculator" className="flex items-center space-x-2 data-[state=active]:bg-purple-600 data-[state=active]:text-white">
-              <Calculator className="h-4 w-4" />
-              <span>Calculator</span>
-            </TabsTrigger>
+          <TabsList className="grid w-full grid-cols-3 mb-6 bg-slate-800 border-slate-700">
             <TabsTrigger value="charts" className="flex items-center space-x-2 data-[state=active]:bg-purple-600 data-[state=active]:text-white">
               <BarChart3 className="h-4 w-4" />
               <span>Charts</span>
@@ -1202,71 +1198,117 @@ export default function FXCalculatorPage() {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="calculator">
-            <ComprehensiveTradingCalculator
-              currencyPair={currencyPair}
-              setCurrencyPair={setCurrencyPair}
-              accountSize={accountSize}
-              setAccountSize={setAccountSize}
-              currentBalance={currentBalance}
-              setCurrentBalance={setCurrentBalance}
-              entryPrice={entryPrice}
-              setEntryPrice={setEntryPrice}
-              stopLoss={stopLoss}
-              setStopLoss={setStopLoss}
-              takeProfit={takeProfit}
-              setTakeProfit={setTakeProfit}
-              lotSize={lotSize}
-              setLotSize={setLotSize}
-              tradeDirection={tradeDirection}
-              setTradeDirection={setTradeDirection}
-              riskLevel={riskLevel}
-              setRiskLevel={setRiskLevel}
-              customRisk={customRisk}
-              setCustomRisk={setCustomRisk}
-              propFirm={propFirm}
-              setPropFirm={setPropFirm}
-              challengePhase={challengePhase}
-              setChallengePhase={setChallengePhase}
-              calculations={calculations}
-              propFirmStatus={propFirmStatus}
-              realTimeData={realTimeData}
-              setRealTimeData={setRealTimeData}
-              marketAnalysis={marketAnalysis}
-              generateMarketAnalysis={generateMarketAnalysis}
-              saveTradeToHistory={saveTradeToHistory}
-              tradeHistory={tradeHistory}
-              apiStatus={apiStatus}
-              performAIAnalysis={performAIAnalysis}
-              aiAnalysis={aiAnalysis}
-              chatGptApiKey={chatGptApiKey}
-              setChatGptApiKey={setChatGptApiKey}
-              showApiKey={showApiKey}
-              setShowApiKey={setShowApiKey}
-              // Advanced Position Sizing Props
-              showAdvancedOptions={showAdvancedOptions}
-              setShowAdvancedOptions={setShowAdvancedOptions}
-              positionSizingMethod={positionSizingMethod}
-              setPositionSizingMethod={setPositionSizingMethod}
-              kellyWinRate={kellyWinRate}
-              setKellyWinRate={setKellyWinRate}
-              kellyAvgWin={kellyAvgWin}
-              setKellyAvgWin={setKellyAvgWin}
-              kellyAvgLoss={kellyAvgLoss}
-              setKellyAvgLoss={setKellyAvgLoss}
-              timeframe={timeframe}
-              setTimeframe={setTimeframe}
-              suggestions={suggestions}
-              calculationResults={calculationResults}
-              // Real-time data props
-              livePrice={livePrice}
-              priceData={priceData}
-              priceError={priceError}
-            />
-          </TabsContent>
 
           <TabsContent value="charts">
-            <TradingViewCharts selectedPair={currencyPair} />
+            <div className="space-y-6">
+              {/* Enhanced Charts Section */}
+              <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
+                
+                {/* Left Sidebar - Symbol Selection & Price Info */}
+                <div className="xl:col-span-1 space-y-4">
+                  
+                  {/* Current Price Card */}
+                  {priceData && (
+                    <Card className="bg-slate-800/50 border-slate-700">
+                      <CardHeader className="pb-3">
+                        <CardTitle className="text-lg text-white flex items-center gap-2">
+                          <Activity className="h-5 w-5" />
+                          Live Price - {currencyPair}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-3">
+                          <div className="text-center">
+                            <div className="text-2xl font-bold text-white">
+                              {priceData.price}
+                            </div>
+                            <div className={`flex items-center justify-center gap-1 ${
+                              priceData.change >= 0 ? 'text-green-400' : 'text-red-400'
+                            }`}>
+                              {priceData.change >= 0 ? (
+                                <TrendingUp className="h-4 w-4" />
+                              ) : (
+                                <TrendingDown className="h-4 w-4" />
+                              )}
+                              {priceData.change} ({priceData.change_pct}%)
+                            </div>
+                          </div>
+                          
+                          <div className="grid grid-cols-2 gap-2 text-sm">
+                            <div>
+                              <div className="text-gray-400">Bid</div>
+                              <div className="font-semibold text-white">{(priceData as any).bid || 'N/A'}</div>
+                            </div>
+                            <div>
+                              <div className="text-gray-400">Ask</div>
+                              <div className="font-semibold text-white">{(priceData as any).ask || 'N/A'}</div>
+                            </div>
+                            <div>
+                              <div className="text-gray-400">High</div>
+                              <div className="font-semibold text-green-400">{(priceData as any).high_24h || 'N/A'}</div>
+                            </div>
+                            <div>
+                              <div className="text-gray-400">Low</div>
+                              <div className="font-semibold text-red-400">{(priceData as any).low_24h || 'N/A'}</div>
+                            </div>
+                          </div>
+
+                          <Badge 
+                            variant={(priceData as any).market_state === 'open' ? 'default' : 'secondary'}
+                            className="w-full justify-center"
+                          >
+                            <Clock className="h-3 w-3 mr-1" />
+                            Market {(priceData as any).market_state || 'Unknown'}
+                          </Badge>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )}
+                  
+                  {/* Technical Analysis Summary */}
+                  {analysis && (
+                    <Card className="bg-slate-800/50 border-slate-700">
+                      <CardHeader className="pb-3">
+                        <CardTitle className="text-lg text-white flex items-center gap-2">
+                          <BarChart3 className="h-5 w-5" />
+                          Technical Analysis
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-3">
+                          <div className="text-center">
+                            <div className="text-sm text-gray-400">RSI (14)</div>
+                            <div className="text-lg font-semibold text-white">{(analysis as any).rsi?.toFixed(2) || 'N/A'}</div>
+                            <Badge variant={
+                              (analysis as any).rsi > 70 ? 'destructive' : 
+                              (analysis as any).rsi < 30 ? 'default' : 'secondary'
+                            }>
+                              {(analysis as any).rsi > 70 ? 'Overbought' : 
+                               (analysis as any).rsi < 30 ? 'Oversold' : 'Neutral'}
+                            </Badge>
+                          </div>
+                          <div className="text-center">
+                            <div className="text-sm text-gray-400">Trend</div>
+                            <div className="text-lg font-semibold text-white">{(analysis as any).trend || 'Neutral'}</div>
+                            <Badge variant={
+                              (analysis as any).trend === 'Bullish' ? 'default' :
+                              (analysis as any).trend === 'Bearish' ? 'destructive' : 'secondary'
+                            }>
+                              {(analysis as any).trend || 'Neutral'}
+                            </Badge>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )}
+                </div>
+
+                {/* Main Chart Area */}
+                <div className="xl:col-span-3">
+                  <TradingViewCharts selectedPair={currencyPair} />
+                </div>
+              </div>
+            </div>
           </TabsContent>
 
           <TabsContent value="news">
