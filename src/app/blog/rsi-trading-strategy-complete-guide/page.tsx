@@ -83,17 +83,41 @@ export default function BlogPost() {
             </div>
 
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight text-white">
-              RSI Trading Strategy: Complete Guide to Relative Strength Index
+              RSI Trading Strategy: Complete Guide to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Relative Strength Index</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-8">
-              Learn how to use RSI indicator for trading. Discover RSI divergence strategies, overbought/oversold signals, and advanced techniques for consistent profits.
+              Learn how to use <span className="text-white font-semibold">RSI indicator</span> for trading. Discover RSI divergence strategies, overbought/oversold signals, and <span className="text-blue-400">advanced</span> techniques for consistent profits.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      {/* Key Stats Section */}
+      <section className="py-16 px-4 border-y border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">14 Period</div>
+              <div className="text-gray-400">Default Setting</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-purple-400 mb-2">70/30</div>
+              <div className="text-gray-400">Buy/Sell Zones</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-pink-400 mb-2">All Markets</div>
+              <div className="text-gray-400">Universal Indicator</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">60-70%</div>
+              <div className="text-gray-400">Win Rate Potential</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="prose prose-invert prose-lg max-w-none">
             
