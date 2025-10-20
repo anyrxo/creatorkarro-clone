@@ -56,3 +56,6 @@ nul
 # Build outputs
 build_output.txt
 commit_message.txt
+
+# Claude Code settings (may contain sensitive permissions)
+.claude/settings.local.json
