@@ -105,8 +105,8 @@ export default function BlogPost() {
 
       <h3>Basic RSI Signals</h3>
       <ul>
-        <li>RSI > 70: Overbought (potential sell signal)</li>
-        <li>RSI < 30: Oversold (potential buy signal)</li>
+        <li>RSI &gt; 70: Overbought (potential sell signal)</li>
+        <li>RSI &lt; 30: Oversold (potential buy signal)</li>
         <li>RSI = 50: Neutral momentum</li>
       </ul>
 
@@ -118,7 +118,7 @@ export default function BlogPost() {
       <p>Price makes higher highs while RSI makes lower highs. This indicates weakening upside momentum and possible reversal.</p>
 
       <h3>RSI in Trending Markets</h3>
-      <p>In strong uptrends, RSI can stay overbought (>70) for extended periods. Use RSI dips to 50 as buy opportunities instead.</p>
+      <p>In strong uptrends, RSI can stay overbought (&gt;70) for extended periods. Use RSI dips to 50 as buy opportunities instead.</p>
 
       <h3>Advanced RSI Techniques</h3>
       <h4>RSI Trendlines</h4>
@@ -132,7 +132,7 @@ export default function BlogPost() {
 
       <h3>Common RSI Mistakes</h3>
       <ul>
-        <li>Shorting just because RSI > 70 in a strong uptrend</li>
+        <li>Shorting just because RSI &gt; 70 in a strong uptrend</li>
         <li>Ignoring price action and relying solely on RSI</li>
         <li>Not waiting for confirmation before entering</li>
       </ul>
