@@ -87,11 +87,11 @@ export default function TestimonialsPage() {
     },
     {
       name: "Devon Mitchell",
-      role: "Automation Specialist",
-      course: "N8N AI Automations",
+      role: "Trading Enthusiast",
+      course: "FX Trading",
       avatar: "https://i.pravatar.cc/150?img=67",
-      content: "N8N AI Automations saved me 40+ hours per week! I automated my entire content workflow - from research to posting across 5 platforms. My productivity skyrocketed and I can now focus on strategy instead of repetitive tasks. The workflows Anyro provides are incredibly detailed!",
-      results: "40+ hours saved weekly, 5x productivity increase"
+      content: "The FX Trading course transformed my understanding of forex markets! The real-time charts and analytical tools helped me develop profitable trading strategies. Within 3 months, I went from complete beginner to consistent profits. Anyro's technical analysis framework is incredibly detailed!",
+      results: "Consistent profitable trading, 40% portfolio growth"
     },
     {
       name: "Ashton Torres",
@@ -103,11 +103,11 @@ export default function TestimonialsPage() {
     },
     {
       name: "Ryan Blackwood",
-      role: "Visual Artist",
-      course: "ComfyUI & Workflows",
+      role: "Digital Entrepreneur",
+      course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=52",
-      content: "ComfyUI & Workflows turned me into an AI art powerhouse! I can now create stunning visuals in minutes instead of hours. My client work rate increased 500% and I'm charging premium prices for AI-enhanced designs. The workflow templates are incredibly professional!",
-      results: "500% productivity increase, premium pricing"
+      content: "The Digital Products course turned me into a digital business powerhouse! I can now launch profitable products in weeks instead of months. My client portfolio increased 500% and I'm charging premium prices for my expertise. The product validation framework is incredibly professional!",
+      results: "500% business growth, premium pricing"
     },
     {
       name: "Allan Rodriguez",
@@ -120,10 +120,10 @@ export default function TestimonialsPage() {
     {
       name: "Cameron Lee",
       role: "Tech Entrepreneur",
-      course: "N8N AI Automations",
+      course: "AI Influencers",
       avatar: "https://i.pravatar.cc/150?img=71",
-      content: "N8N AI Automations completely transformed my business operations! I automated lead generation, customer onboarding, and content distribution. My team productivity increased 300% and we're scaling without adding headcount. Incredible ROI!",
-      results: "300% team productivity, automated business operations"
+      content: "AI Influencers completely transformed my business operations! I created AI personas that handle customer engagement, content distribution, and brand partnerships. My team productivity increased 300% and we're scaling without adding headcount. Incredible ROI!",
+      results: "300% team productivity, AI-powered operations"
     },
     {
       name: "Alex Morgan",
@@ -135,11 +135,11 @@ export default function TestimonialsPage() {
     },
     {
       name: "Brendan Williams",
-      role: "AI Artist",
-      course: "ComfyUI & Workflows",
+      role: "Instagram Creator",
+      course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=65",
-      content: "ComfyUI & Workflows opened up endless creative possibilities! I went from basic Midjourney prompts to creating complex, professional AI art workflows. My art business revenue jumped 400% and I'm booked solid with client work!",
-      results: "400% revenue increase, booked solid"
+      content: "Instagram Ignited opened up endless growth possibilities! I went from basic posts to creating viral carousel strategies that converted like crazy. My follower count jumped 400% and I'm booked solid with brand partnerships!",
+      results: "400% follower increase, booked solid with brands"
     },
     {
       name: "Jack Connors",
@@ -168,10 +168,10 @@ export default function TestimonialsPage() {
     {
       name: "Lisa Thompson",
       role: "Travel Blogger",
-      course: "N8N AI Automations",
+      course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=17",
-      content: "Managing content across 6 platforms was killing me. N8N automations gave me my life back! Now everything posts automatically while I focus on creating.",
-      results: "6 platforms automated, 30 hours saved weekly"
+      content: "Managing content strategy across platforms was killing me. Instagram Ignited gave me my life back! Now I have a proven content system that works while I focus on creating amazing travel content.",
+      results: "Viral content system, 30 hours saved weekly"
     },
     {
       name: "James Wilson",
@@ -192,10 +192,10 @@ export default function TestimonialsPage() {
     {
       name: "Michael Brown",
       role: "Photographer",
-      course: "ComfyUI & Workflows",
+      course: "FX Trading",
       avatar: "https://i.pravatar.cc/150?img=76",
-      content: "AI art workflows transformed my photography business. I can now offer unique AI-enhanced portraits that clients pay premium for. Game changer!",
-      results: "3x pricing, fully booked 3 months out"
+      content: "FX Trading transformed my income diversification strategy. I can now generate passive income through smart forex trading while running my photography business. Game changer!",
+      results: "3x income streams, fully diversified portfolio"
     },
     {
       name: "Sarah Johnson",

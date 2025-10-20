@@ -13,14 +13,17 @@ export interface GtagEventParams {
 }
 
 // Declare gtag function for TypeScript
+// Note: gtag is loaded via Google Tag Manager script in layout.tsx
+type GtagCommand = 'config' | 'event' | 'js' | 'set'
+
 declare global {
   interface Window {
-    gtag: (
-      command: 'config' | 'event' | 'js' | 'set',
+    gtag?: (
+      command: GtagCommand,
       targetId: string | Date,
       config?: GtagEventParams
     ) => void
-    dataLayer: any[]
+    dataLayer?: any[]
   }
 }
 
@@ -35,17 +38,17 @@ export const initGA = () => {
 
   // Define gtag function
   function gtag(...args: any[]) {
-    window.dataLayer.push(args)
+    window.dataLayer?.push(args)
   }
 
   // Set gtag on window
   window.gtag = gtag as any
 
   // Initialize with current date
-  window.gtag('js', new Date())
+  window.gtag?.('js', new Date())
 
   // Configure GA4
-  window.gtag('config', GA_MEASUREMENT_ID, {
+  window.gtag?.('config', GA_MEASUREMENT_ID, {
     page_path: window.location.pathname,
     send_page_view: false, // We'll manually track page views
   })
@@ -64,7 +67,7 @@ export const isGALoaded = (): boolean => {
 export const pageview = (url: string, title?: string) => {
   if (!isGALoaded()) return
 
-  window.gtag('config', GA_MEASUREMENT_ID, {
+  window.gtag?.('config', GA_MEASUREMENT_ID, {
     page_path: url,
     page_title: title || document.title,
   })
@@ -79,7 +82,7 @@ export const event = (
 ) => {
   if (!isGALoaded()) return
 
-  window.gtag('event', eventName, params)
+  window.gtag?.('event', eventName, params)
 }
 
 /**
@@ -88,7 +91,7 @@ export const event = (
 export const setUserProperties = (properties: GtagEventParams) => {
   if (!isGALoaded()) return
 
-  window.gtag('set', 'user_properties', properties)
+  window.gtag?.('set', 'user_properties', properties)
 }
 
 /**
