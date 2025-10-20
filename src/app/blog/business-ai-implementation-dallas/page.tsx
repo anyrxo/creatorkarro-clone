@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Business Ai Implementation Dallas: Expert Guide 2025",
     description: "business ai implementation dallas guide, business ai implementation dallas tutorial, business ai implementation dallas course - Expert training from the creator",

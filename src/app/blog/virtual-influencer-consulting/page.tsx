@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Influencers Academy",
+  category: "Technology",
   openGraph: {
     title: "Virtual Influencer Consulting: Expert Guide 2025",
     description: "virtual influencer consulting guide, virtual influencer consulting tutorial, virtual influencer consulting course - Expert training from the creators of AI Infl",

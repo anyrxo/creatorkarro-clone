@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Market Research",
+  category: "Technology",
   openGraph: {
     title: "Most Profitable Digital Product Niches in 2025",
     description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery",

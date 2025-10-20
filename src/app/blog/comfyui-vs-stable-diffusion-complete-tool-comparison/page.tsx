@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Tool Comparison",
+  category: "Technology",
   openGraph: {
     title: "ComfyUI vs Stable Diffusion: Complete Tool Comparison",
     description: "comfyui vs stable diffusion, ai image tools comparison, best ai art software - Expert guide from the creators of ComfyUI Mastery",

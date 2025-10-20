@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "N8N Automation Hub",
+  category: "Technology",
   openGraph: {
     title: "Chatgpt Workflow Automation Houston: Expert Guide 2025",
     description: "chatgpt workflow automation houston guide, chatgpt workflow automation houston tutorial, chatgpt workflow automation houston course - Expert training from the c",

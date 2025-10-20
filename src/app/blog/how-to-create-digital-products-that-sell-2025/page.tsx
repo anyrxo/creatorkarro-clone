@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Digital Products",
+  category: "Digital Products & Business",
   openGraph: {
     title: "How to Create Digital Products That Sell: Complete 2025",
     description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery",

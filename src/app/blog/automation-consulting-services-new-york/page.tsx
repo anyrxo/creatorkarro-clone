@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Automation Consulting Services New York: Expert Guide 2025",
     description: "automation consulting services new york guide, automation consulting services new york tutorial, automation consulting services new york course - Expert trainin",

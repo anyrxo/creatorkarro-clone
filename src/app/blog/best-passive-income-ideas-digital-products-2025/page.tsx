@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Passive Income",
+  category: "Technology",
   openGraph: {
     title: "Best Passive Income Ideas: 20+ Digital Products That Work",
     description: "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery",

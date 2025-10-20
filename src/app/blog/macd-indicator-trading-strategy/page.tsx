@@ -9,7 +9,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
-  category: "Technical Analysis",
+  category: "Trading & Finance",
   openGraph: {
     title: "MACD Indicator: Complete Trading Strategy Guide 2025",
     description: "Master MACD indicator trading with this complete guide. Learn MACD crossover strategies, divergence trading, and histogram analysis for profitable trades.",

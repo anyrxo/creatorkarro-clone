@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Business Automation With Claude: Expert Guide 2025",
     description: "business automation with claude guide, business automation with claude tutorial, business automation with claude course - Expert training from the creators of A",

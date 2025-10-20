@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Claude Ai Business Integration Houston: Expert Guide 2025",
     description: "claude ai business integration houston guide, claude ai business integration houston tutorial, claude ai business integration houston course - Expert training f",

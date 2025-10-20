@@ -9,7 +9,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
-  category: "Prop Firms",
+  category: "Trading & Finance",
   openGraph: {
     title: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2025",
     description: "FTMO vs Topstep detailed comparison. Compare evaluation processes, profit splits, trading rules, and payout speeds to find the best funded trading program.",

@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Instagram Stories",
+  category: "Technology",
   openGraph: {
     title: "Instagram Story Marketing: Advanced Engagement Tactics",
     description: "instagram story marketing, instagram stories, story engagement - Expert guide from the creators of Instagram Ignited",

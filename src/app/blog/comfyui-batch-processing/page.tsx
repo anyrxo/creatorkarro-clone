@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "ComfyUI Pro Training",
+  category: "Technology",
   openGraph: {
     title: "Comfyui Batch Processing: Expert Guide 2025",
     description: "comfyui batch processing guide, comfyui batch processing tutorial, comfyui batch processing course - Expert training from the creators of ComfyUI Pro Training w",

@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Integration",
+  category: "Technology",
   openGraph: {
     title: "AI Automation Workflows: Integrate GPT with N8N",
     description: "ai automation, n8n ai integration, gpt automation - Expert guide from the creators of N8N AI Automations",

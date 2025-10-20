@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Virtual Brand Ambassador: Expert Guide 2025",
     description: "virtual brand ambassador guide, virtual brand ambassador tutorial, virtual brand ambassador course - Expert training from the creators of AI Automation Mastery ",

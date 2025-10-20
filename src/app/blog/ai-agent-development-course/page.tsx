@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Ai Agent Development Course: Expert Guide 2025",
     description: "ai agent development course guide, ai agent development course tutorial, ai agent development course course - Expert training from the creators of AI Automation",

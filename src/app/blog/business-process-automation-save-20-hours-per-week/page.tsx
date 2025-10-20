@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Business Automation",
+  category: "Technology",
   openGraph: {
     title: "Business Process Automation: Save 20+ Hours Per Week",
     description: "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations",

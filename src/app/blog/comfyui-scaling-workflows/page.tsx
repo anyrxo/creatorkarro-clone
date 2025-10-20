@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "N8N Automation Hub",
+  category: "Technology",
   openGraph: {
     title: "Comfyui Scaling Workflows: Expert Guide 2025",
     description: "comfyui scaling workflows guide, comfyui scaling workflows tutorial, comfyui scaling workflows course - Expert training from the creators of N8N Automation Hub ",

@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Influencers",
+  category: "Technology",
   openGraph: {
     title: "AI Influencers: Complete Guide to Virtual Influencer",
     description: "ai influencers, virtual influencers, ai instagram influencer - Expert guide from the creators of AI Influencers Academy",

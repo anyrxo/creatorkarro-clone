@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Automation Project Management Phoenix: Expert Guide 2025",
     description: "automation project management phoenix guide, automation project management phoenix tutorial, automation project management phoenix course - Expert training from",

@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Virtual Marketing",
+  category: "Technology",
   openGraph: {
     title: "Virtual Influencer Marketing Strategy: Dominate Social Media",
     description: "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy",

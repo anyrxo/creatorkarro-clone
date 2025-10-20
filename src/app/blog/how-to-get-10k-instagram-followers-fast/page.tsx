@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Instagram Growth",
+  category: "Instagram & Social Media",
   openGraph: {
     title: "How to Get 10K Instagram Followers Fast: Expert Guide",
     description: "get instagram followers, 10k followers, instagram growth - Expert guide from the creators of Instagram Ignited",

@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Ai Productivity Systems: Expert Guide 2025",
     description: "ai productivity systems guide, ai productivity systems tutorial, ai productivity systems course - Expert training from the creators of AI Automation Mastery wit",

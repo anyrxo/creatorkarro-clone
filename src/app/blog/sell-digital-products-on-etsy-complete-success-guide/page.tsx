@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Etsy Business",
+  category: "Technology",
   openGraph: {
     title: "Sell Digital Products on Etsy: Complete Success Guide",
     description: "sell digital products etsy, etsy digital products, etsy passive income - Expert guide from the creators of Digital Products Mastery",

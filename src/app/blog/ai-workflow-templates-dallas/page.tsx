@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "N8N Automation Hub",
+  category: "Technology",
   openGraph: {
     title: "Ai Workflow Templates Dallas: Expert Guide 2025",
     description: "ai workflow templates dallas guide, ai workflow templates dallas tutorial, ai workflow templates dallas course - Expert training from the creators of N8N Automa",

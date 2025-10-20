@@ -9,7 +9,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
-  category: "Futures Trading",
+  category: "Trading & Finance",
   openGraph: {
     title: "ES Futures Trading Strategy: Proven E-mini S&P 500 Techniques",
     description: "Master ES futures trading with proven strategies. Learn order flow, volume profile, and institutional setups to trade E-mini S&P 500 profitably.",

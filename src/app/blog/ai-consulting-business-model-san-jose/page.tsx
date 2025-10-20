@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Ai Consulting Business Model San Jose: Expert Guide 2025",
     description: "ai consulting business model san jose guide, ai consulting business model san jose tutorial, ai consulting business model san jose course - Expert training from",

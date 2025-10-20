@@ -9,7 +9,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
-  category: "Prop Firms",
+  category: "Trading & Finance",
   openGraph: {
     title: "Topstep vs MyFundedTrader: Complete 2025 Comparison",
     description: "Detailed comparison of Topstep and MyFundedTrader prop firms. Discover which funded trading program offers better profit splits, evaluation rules, and trader support.",

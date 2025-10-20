@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "ComfyUI Pro Training",
+  category: "Technology",
   openGraph: {
     title: "Comprehensive-training Comfyui Pro Training: Expert Guide",
     description: "comprehensive-training comfyui pro training guide, comprehensive-training comfyui pro training tutorial, comprehensive-training comfyui pro training course - Ex",

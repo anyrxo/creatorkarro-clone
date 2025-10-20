@@ -9,7 +9,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
-  category: "Futures Trading",
+  category: "Trading & Finance",
   openGraph: {
     title: "Futures Trading for Beginners: Complete 2025 Guide",
     description: "Learn futures trading from scratch. Understand contracts, margin requirements, tick values, and proven strategies to start trading futures profitably.",

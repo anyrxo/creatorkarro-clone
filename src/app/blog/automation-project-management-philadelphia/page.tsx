@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Automation Project Management Philadelphia: Expert Guide",
     description: "automation project management philadelphia guide, automation project management philadelphia tutorial, automation project management philadelphia course - Exper",

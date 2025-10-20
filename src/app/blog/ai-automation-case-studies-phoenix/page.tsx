@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Ai Automation Case Studies Phoenix: Expert Guide 2025",
     description: "ai automation case studies phoenix guide, ai automation case studies phoenix tutorial, ai automation case studies phoenix course - Expert training from the crea",

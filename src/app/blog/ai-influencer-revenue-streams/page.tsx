@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Influencers Academy",
+  category: "Technology",
   openGraph: {
     title: "Ai Influencer Revenue Streams: Expert Guide 2025",
     description: "ai influencer revenue streams guide, ai influencer revenue streams tutorial, ai influencer revenue streams course - Expert training from the creators of AI Infl",

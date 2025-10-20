@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI & Machine Learning",
+  category: "AI & Automation",
   openGraph: {
     title: "AI Automation Guide: Master Workflows & Boost Productivity",
     description: "Discover how ai automation guide can transform your business processes. Learn implementation strategies, best practices, and real-world applications for maximum efficiency.",

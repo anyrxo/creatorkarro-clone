@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Business",
+  category: "Technology",
   openGraph: {
     title: "How to Make Money with AI Influencers: 15 Proven Methods",
     description: "make money ai influencers, ai influencer income, monetize virtual influencers - Expert guide from the creators of AI Influencers Academy",

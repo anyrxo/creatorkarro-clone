@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Instagram Growth Academy",
+  category: "Technology",
   openGraph: {
     title: "Transformation-course Instagram Growth Academy: Expert Guide",
     description: "transformation-course instagram growth academy guide, transformation-course instagram growth academy tutorial, transformation-course instagram growth academy co",

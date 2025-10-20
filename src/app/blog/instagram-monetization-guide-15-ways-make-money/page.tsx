@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Instagram Business",
+  category: "Technology",
   openGraph: {
     title: "Instagram Monetization Guide: 15 Proven Ways to Make Money",
     description: "instagram monetization, make money instagram, instagram income - Expert guide from the creators of Instagram Ignited",

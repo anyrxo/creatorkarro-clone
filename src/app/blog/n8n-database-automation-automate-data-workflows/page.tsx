@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Database Automation",
+  category: "Technology",
   openGraph: {
     title: "N8N Database Automation: Automate Your Data Workflows",
     description: "n8n database automation, database workflows, automated data processing - Expert guide from the creators of N8N AI Automations",

@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Digital Product Scaling: Expert Guide 2025",
     description: "digital product scaling guide, digital product scaling tutorial, digital product scaling course - Expert training from the creators of AI Automation Mastery wit",

@@ -9,7 +9,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
-  category: "Technical Analysis",
+  category: "Trading & Finance",
   openGraph: {
     title: "RSI Trading Strategy: Complete Guide to Relative Strength Index",
     description: "Learn how to use RSI indicator for trading. Discover RSI divergence strategies, overbought/oversold signals, and advanced techniques for consistent profits.",

@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Ai Automation ROI Calculator Houston: Expert Guide 2025",
     description: "ai automation ROI calculator houston guide, ai automation ROI calculator houston tutorial, ai automation ROI calculator houston course - Expert training from th",

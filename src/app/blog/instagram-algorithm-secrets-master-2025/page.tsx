@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Instagram Algorithm",
+  category: "Technology",
   openGraph: {
     title: "Instagram Algorithm Secrets: Master the 2025 Algorithm",
     description: "instagram algorithm, instagram algorithm 2025, instagram reach - Expert guide from the creators of Instagram Ignited",

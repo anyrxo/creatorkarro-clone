@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Instagram Marketing",
+  category: "Instagram & Social Media",
   openGraph: {
     title: "Instagram Growth Hacks That Actually Work in 2025",
     description: "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited",

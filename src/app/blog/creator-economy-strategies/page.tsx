@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Creator Economy Strategies: Expert Guide 2025",
     description: "creator economy strategies guide, creator economy strategies tutorial, creator economy strategies course - Expert training from the creators of AI Automation Ma",

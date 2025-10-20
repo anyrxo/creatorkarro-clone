@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "N8N Automation Hub",
+  category: "Technology",
   openGraph: {
     title: "Step-by-step-guide N8n Automation Hub: Expert Guide 2025",
     description: "step-by-step-guide n8n automation hub guide, step-by-step-guide n8n automation hub tutorial, step-by-step-guide n8n automation hub course - Expert training from",

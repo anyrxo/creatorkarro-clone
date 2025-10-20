@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Automation Agency Setup Philadelphia: Expert Guide 2025",
     description: "automation agency setup philadelphia guide, automation agency setup philadelphia tutorial, automation agency setup philadelphia course - Expert training from th",

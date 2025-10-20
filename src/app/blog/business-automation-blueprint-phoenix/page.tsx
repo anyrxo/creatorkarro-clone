@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Business Automation Blueprint Phoenix: Expert Guide 2025",
     description: "business automation blueprint phoenix guide, business automation blueprint phoenix tutorial, business automation blueprint phoenix course - Expert training from",

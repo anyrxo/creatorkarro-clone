@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Business",
+  category: "Technology",
   openGraph: {
     title: "How to Make Money with ComfyUI: AI Art Business Guide",
     description: "make money comfyui, ai art business, sell ai art - Expert guide from the creators of ComfyUI Mastery",

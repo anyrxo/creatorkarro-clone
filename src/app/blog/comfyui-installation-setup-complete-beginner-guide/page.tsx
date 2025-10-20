@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Getting Started",
+  category: "Technology",
   openGraph: {
     title: "ComfyUI Installation & Setup: Complete Beginner Guide",
     description: "comfyui installation, comfyui setup, install comfyui - Expert guide from the creators of ComfyUI Mastery",

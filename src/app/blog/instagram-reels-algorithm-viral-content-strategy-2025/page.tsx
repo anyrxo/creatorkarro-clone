@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Instagram Reels",
+  category: "Technology",
   openGraph: {
     title: "Instagram Reels Algorithm: Viral Content Strategy 2025",
     description: "instagram reels algorithm, viral reels, reels strategy - Expert guide from the creators of Instagram Ignited",

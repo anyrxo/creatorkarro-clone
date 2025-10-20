@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Ai Automation For Entrepreneurs Los Angeles: Expert Guide",
     description: "ai automation for entrepreneurs los angeles guide, ai automation for entrepreneurs los angeles tutorial, ai automation for entrepreneurs los angeles course - Ex",

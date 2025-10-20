@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Pricing Strategy",
+  category: "Technology",
   openGraph: {
     title: "Digital Product Pricing Strategy: Maximize Your Revenue",
     description: "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery",

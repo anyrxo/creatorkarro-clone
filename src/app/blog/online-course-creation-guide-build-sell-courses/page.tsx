@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Course Creation",
+  category: "Technology",
   openGraph: {
     title: "Online Course Creation Guide: Build & Sell Courses That",
     description: "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery",

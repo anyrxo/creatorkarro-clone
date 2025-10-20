@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Email Marketing",
+  category: "SEO & Marketing",
   openGraph: {
     title: "Email Marketing Automation: Advanced N8N Sequences",
     description: "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations",

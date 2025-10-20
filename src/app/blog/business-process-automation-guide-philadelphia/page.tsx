@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Business Process Automation Guide Philadelphia: Expert Guide",
     description: "business process automation guide philadelphia guide, business process automation guide philadelphia tutorial, business process automation guide philadelphia co",

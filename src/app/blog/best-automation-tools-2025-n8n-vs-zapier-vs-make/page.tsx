@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Tool Comparison",
+  category: "Technology",
   openGraph: {
     title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
     description: "automation tools, n8n vs zapier, workflow automation - Expert guide from the creators of N8N AI Automations",

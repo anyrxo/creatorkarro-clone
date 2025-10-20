@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Business Ai Implementation Los Angeles: Expert Guide 2025",
     description: "business ai implementation los angeles guide, business ai implementation los angeles tutorial, business ai implementation los angeles course - Expert training f",

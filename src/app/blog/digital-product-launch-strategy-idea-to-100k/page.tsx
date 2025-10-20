@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "Product Launch",
+  category: "Digital Products & Business",
   openGraph: {
     title: "Digital Product Launch Strategy: From Idea to $100K",
     description: "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery",

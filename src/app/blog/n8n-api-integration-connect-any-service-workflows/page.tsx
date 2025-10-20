@@ -10,7 +10,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "API Integration",
+  category: "Technology",
   openGraph: {
     title: "N8N API Integration: Connect Any Service with Workflows",
     description: "n8n api integration, api automation, n8n webhooks - Expert guide from the creators of N8N AI Automations",

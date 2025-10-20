@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
-  category: "AI Automation Mastery",
+  category: "AI & Automation",
   openGraph: {
     title: "Digital Product Empire Building: Expert Guide 2025",
     description: "digital product empire building guide, digital product empire building tutorial, digital product empire building course - Expert training from the creators of A",
