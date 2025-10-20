@@ -1,46 +1,185 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IImagined.ai Website
 
-## Getting Started
+Professional e-learning platform built with Next.js 15, featuring 4 comprehensive courses, 546 blog posts, and advanced marketing automation.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Create environment files
+cp .env.example .env.local
+
+# Add your API keys to .env.local
+# See docs/security/QUICK_START.md for details
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+├── src/                    # Source code
+│   ├── app/               # Next.js App Router pages
+│   │   ├── blog/          # 546 blog posts
+│   │   ├── instagram-ignited/
+│   │   ├── ai-influencers/
+│   │   ├── digital-products/
+│   │   └── fx-trading/
+│   ├── components/        # React components (69 total)
+│   ├── lib/               # Utility libraries
+│   └── hooks/             # Custom React hooks
+│
+├── api/                   # Python Flask API (market data)
+├── public/                # Static assets
+├── scripts/               # Build and automation scripts
+│
+├── docs/                  # Documentation (organized)
+│   ├── deployment/        # Deployment guides
+│   ├── security/          # Security documentation
+│   ├── seo-strategy/      # SEO strategy documents
+│   ├── blog-system/       # Blog automation docs
+│   └── guides/            # General guides
+│
+├── tools/                 # Development tools
+│   ├── seo/               # SEO automation tools
+│   ├── blog-automation/   # Blog generation scripts
+│   └── build/             # Build utilities
+│
+└── archive/               # Archived files
+    ├── backups/           # Old backups
+    └── old-configs/       # Deprecated configs
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Features
 
-## Learn More
+### Courses
+- **Instagram Ignited** - 0-500K followers system ($147)
+- **AI Influencers** - Virtual model creation ($169)
+- **Digital Products** - Knowledge monetization ($189)
+- **FX Trading** - Professional forex trading ($197)
 
-To learn more about Next.js, take a look at the following resources:
+### Technology Stack
+- **Framework:** Next.js 15.3.2 (App Router)
+- **Language:** TypeScript 5.8.3
+- **Styling:** Tailwind CSS 3.4.17
+- **Animations:** Framer Motion 12.23.12
+- **AI Integration:** Google Gemini 2.0 Flash
+- **Backend API:** Python Flask (market data)
+- **Deployment:** Vercel (static export)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Key Metrics
+- **Total Pages:** 614
+- **Blog Posts:** 546
+- **Components:** 69
+- **Build Time:** 82 seconds
+- **Security Grade:** A-
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📚 Documentation
 
-## Deploy on Vercel
+### Getting Started
+- [Quick Start Guide](docs/security/QUICK_START.md) - 3-minute setup
+- [Deployment Guide](docs/deployment/DEPLOYMENT_GUIDE.md) - Complete deployment instructions
+- [Security Setup](docs/security/SECURITY_SETUP_GUIDE.md) - Environment configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Development
+- [API Management](docs/guides/API_MANAGEMENT_GUIDE.md) - API configuration
+- [Animation Features](docs/guides/ANIMATION_FEATURES.md) - Animation system
+- [Blog System](docs/blog-system/) - Blog automation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# FX Calculator - Live Deployment Test
+### Security
+- [Security Audit Report](docs/security/SECURITY_AUDIT_REPORT.md) - Detailed audit
+- [Security Changes](docs/security/SECURITY_CHANGES.md) - What changed
+- [Phase 1 Complete](docs/security/PHASE_1_COMPLETE.md) - Implementation summary
 
-## Live Production Deployment
-- FX Calculator: Enhanced real-time trading calculator
-- yfinance backend integration for live market data  
-- Advanced Kelly Criterion position sizing
-- MarketAux news integration
-- Professional trading features
+### SEO Strategy
+- [SEO Strategy Docs](docs/seo-strategy/) - Comprehensive SEO documentation
+- [Blog Agents](docs/seo-strategy/BLOG_AGENTS_README.md) - Content automation
 
-Deployment timestamp: 2025-01-05 16:45:00 UTC
+## 🔒 Security
+
+**Status:** Phase 1 security audit complete ✅
+
+- ✅ API keys migrated to environment variables
+- ✅ Rate limiting implemented (30/20/10 req/min)
+- ✅ Input validation active
+- ✅ Security headers configured
+- ✅ Flask debug mode disabled
+
+**Required Actions:**
+1. Revoke old exposed API keys (see [Security Guide](docs/security/SECURITY_SETUP_GUIDE.md))
+2. Generate new API keys
+3. Configure environment files
+
+## 🚀 Deployment
+
+### Prerequisites
+- Node.js 18+ installed
+- Python 3.11+ (for API)
+- Vercel account (or alternative hosting)
+
+### Deploy to Vercel
+```bash
+# 1. Set up environment files
+cp .env.example .env.local
+# Edit .env.local with your API keys
+
+# 2. Test build locally
+npm run build
+
+# 3. Push to GitHub
+git push origin master
+
+# 4. Deploy via Vercel dashboard
+# Add environment variables in Vercel settings
+```
+
+See [DEPLOYMENT_GUIDE.md](docs/deployment/DEPLOYMENT_GUIDE.md) for detailed instructions.
+
+## 🛠️ Development Scripts
+
+```bash
+npm run dev                 # Development server with hot reload
+npm run build              # Production build
+npm run start              # Start production server
+npm run lint               # TypeScript + ESLint check
+npm run format             # Format code with Biome
+```
+
+## 📊 Performance
+
+- **Build Time:** 82s (614 pages)
+- **Bundle Size:** Optimized for static export
+- **Target Lighthouse Scores:**
+  - Performance: 80+
+  - SEO: 95+
+  - Accessibility: 90+
+  - Best Practices: 90+
+
+## 🤝 Contributing
+
+This is a private project for IImagined.ai. Internal development only.
+
+## 📝 License
+
+Proprietary - All rights reserved
+
+## 📞 Support
+
+For deployment or technical issues:
+1. Check [Deployment Guide](docs/deployment/DEPLOYMENT_GUIDE.md)
+2. Review [Security Documentation](docs/security/)
+3. Contact development team
+
+---
+
+**Last Updated:** October 20, 2025
+**Version:** 1.0.0
+**Status:** Production-ready with security improvements
+
+Built with ❤️ using Next.js, TypeScript, and AI
