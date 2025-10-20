@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Database Automation Systems",
+  title: "Database Automation Systems: Complete Guide & Expert",
   description: "Complete guide to database automation systems - proven strategies, tools, and techniques for 2025",
   keywords: ["database", "automation", "systems", "database 2025", "database automation systems", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Database Automation Systems",
+    title: "Database Automation Systems: Complete Guide & Expert",
     description: "Complete guide to database automation systems - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/database-automation-systems",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Database Automation Systems",
+    title: "Database Automation Systems: Complete Guide & Expert",
     description: "Complete guide to database automation systems - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/database-automation-systems-og.jpg",

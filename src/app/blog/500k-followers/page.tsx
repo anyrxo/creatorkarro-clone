@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "500k Followers",
+    title: "500k Followers: Proven Instagram Growth Strategy Guide",
     description: "500k Followers - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/500k-followers",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "500k Followers",
+    title: "500k Followers: Proven Instagram Growth Strategy Guide",
     description: "500k Followers - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/500k-followers-og.jpg",

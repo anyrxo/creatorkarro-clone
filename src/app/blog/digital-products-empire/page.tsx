@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation'
 // Redirect to our $497 course that teaches empire-building strategies + systems
 
 export const metadata = {
-  title: "Build Your Digital Products Empire - Complete Business Course 2025",
+  title: "Build Your Digital Products Empire - Complete Business",
   description: "Ready to build a digital products empire? Get the complete course that teaches empire-building strategies, proven systems, and scalable business...",
   robots: {
     index: false,

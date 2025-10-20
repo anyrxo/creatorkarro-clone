@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Influencer Marketing: Build Your Personal Brand | IImagined.ai",
+  title: "Instagram Influencer Marketing: Build Your Personal Brand",
   description: "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited with 127K+ students...",
   keywords: ["instagram influencer marketing","personal brand instagram","instagram influence","become instagram influencer","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Influencer Marketing",
   openGraph: {
-    title: "Instagram Influencer Marketing: Build Your Personal Brand | IImagined.ai",
+    title: "Instagram Influencer Marketing: Build Your Personal Brand",
     description: "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited",
     url: "https://iimagined.ai/blog/instagram-influencer-marketing-build-personal-brand",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Influencer Marketing: Build Your Personal Brand | IImagined.ai",
+    title: "Instagram Influencer Marketing: Build Your Personal Brand",
     description: "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited",
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-influencer-marketing-build-personal-brand-og.jpg",

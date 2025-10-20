@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com | IImagined.ai",
+  title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
   description: "automation tools, n8n vs zapier, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
   keywords: ["automation tools","n8n vs zapier","workflow automation","best automation software","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Tool Comparison",
   openGraph: {
-    title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com | IImagined.ai",
+    title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
     description: "automation tools, n8n vs zapier, workflow automation - Expert guide from the creators of N8N AI Automations",
     url: "https://iimagined.ai/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com | IImagined.ai",
+    title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
     description: "automation tools, n8n vs zapier, workflow automation - Expert guide from the creators of N8N AI Automations",
     images: [{
       url: "https://iimagined.ai/images/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make-og.jpg",

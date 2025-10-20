@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Story Marketing: Advanced Engagement Tactics | IImagined.ai",
+  title: "Instagram Story Marketing: Advanced Engagement Tactics",
   description: "instagram story marketing, instagram stories, story engagement - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
   keywords: ["instagram story marketing","instagram stories","story engagement","instagram story strategy","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Instagram Stories",
   openGraph: {
-    title: "Instagram Story Marketing: Advanced Engagement Tactics | IImagined.ai",
+    title: "Instagram Story Marketing: Advanced Engagement Tactics",
     description: "instagram story marketing, instagram stories, story engagement - Expert guide from the creators of Instagram Ignited",
     url: "https://iimagined.ai/blog/instagram-story-marketing-advanced-engagement-tactics",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Story Marketing: Advanced Engagement Tactics | IImagined.ai",
+    title: "Instagram Story Marketing: Advanced Engagement Tactics",
     description: "instagram story marketing, instagram stories, story engagement - Expert guide from the creators of Instagram Ignited",
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-story-marketing-advanced-engagement-tactics-og.jpg",

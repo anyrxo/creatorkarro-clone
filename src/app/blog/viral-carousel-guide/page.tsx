@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Viral Carousel Guide",
+  title: "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
   description: "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
   keywords: ["viral", "carousel", "guide", "viral 2025", "viral carousel guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Viral Carousel Guide",
+    title: "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
     description: "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
     url: "https://iimagined.ai/blog/viral-carousel-guide",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Viral Carousel Guide",
+    title: "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
     description: "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
     images: [{
       url: "https://iimagined.ai/images/viral-carousel-guide-og.jpg",

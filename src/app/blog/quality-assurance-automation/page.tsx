@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Quality Assurance Automation",
+  title: "Quality Assurance Automation: Complete Guide & Expert",
   description: "Complete guide to quality assurance automation - proven strategies, tools, and techniques for 2025",
   keywords: ["quality", "assurance", "automation", "quality 2025", "quality assurance automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Quality Assurance Automation",
+    title: "Quality Assurance Automation: Complete Guide & Expert",
     description: "Complete guide to quality assurance automation - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/quality-assurance-automation",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Quality Assurance Automation",
+    title: "Quality Assurance Automation: Complete Guide & Expert",
     description: "Complete guide to quality assurance automation - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/quality-assurance-automation-og.jpg",

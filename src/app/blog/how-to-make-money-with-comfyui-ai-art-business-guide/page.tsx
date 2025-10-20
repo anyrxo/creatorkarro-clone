@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "How to Make Money with ComfyUI: AI Art Business Guide | IImagined.ai",
+  title: "How to Make Money with ComfyUI: AI Art Business Guide",
   description: "make money comfyui, ai art business, sell ai art - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
   keywords: ["make money comfyui","ai art business","sell ai art","monetize ai images","comfyui mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Business",
   openGraph: {
-    title: "How to Make Money with ComfyUI: AI Art Business Guide | IImagined.ai",
+    title: "How to Make Money with ComfyUI: AI Art Business Guide",
     description: "make money comfyui, ai art business, sell ai art - Expert guide from the creators of ComfyUI Mastery",
     url: "https://iimagined.ai/blog/how-to-make-money-with-comfyui-ai-art-business-guide",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "How to Make Money with ComfyUI: AI Art Business Guide | IImagined.ai",
+    title: "How to Make Money with ComfyUI: AI Art Business Guide",
     description: "make money comfyui, ai art business, sell ai art - Expert guide from the creators of ComfyUI Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/how-to-make-money-with-comfyui-ai-art-business-guide-og.jpg",

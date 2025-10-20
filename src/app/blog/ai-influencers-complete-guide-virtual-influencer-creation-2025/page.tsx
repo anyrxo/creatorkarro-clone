@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "AI Influencers: Complete Guide to Virtual Influencer Creation 2025 | IImagined.ai",
+  title: "AI Influencers: Complete Guide to Virtual Influencer",
   description: "ai influencers, virtual influencers, ai instagram influencer - Expert guide from the creators of AI Influencers Academy with 127K+ students and $2.7M+ in...",
   keywords: ["ai influencers","virtual influencers","ai instagram influencer","create ai influencer","ai influencers academy","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Influencers",
   openGraph: {
-    title: "AI Influencers: Complete Guide to Virtual Influencer Creation 2025 | IImagined.ai",
+    title: "AI Influencers: Complete Guide to Virtual Influencer",
     description: "ai influencers, virtual influencers, ai instagram influencer - Expert guide from the creators of AI Influencers Academy",
     url: "https://iimagined.ai/blog/ai-influencers-complete-guide-virtual-influencer-creation-2025",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "AI Influencers: Complete Guide to Virtual Influencer Creation 2025 | IImagined.ai",
+    title: "AI Influencers: Complete Guide to Virtual Influencer",
     description: "ai influencers, virtual influencers, ai instagram influencer - Expert guide from the creators of AI Influencers Academy",
     images: [{
       url: "https://iimagined.ai/images/blog/ai-influencers-complete-guide-virtual-influencer-creation-2025-og.jpg",

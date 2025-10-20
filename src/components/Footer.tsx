@@ -2,6 +2,7 @@ import Link from 'next/link'
 import SocialIcon from './SocialIcon'
 import NumberTicker from './magicui/number-ticker'
 import ScrambleText from './magicui/scramble-text'
+import * as analytics from '@/lib/analytics'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -137,21 +138,29 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+                onClick={() => {
+                  analytics.trackCTAClick('footer', 'Join Our Community', 'https://whop.com/anyro/premium-monthly-0a/')
+                  analytics.trackOutboundLink('https://whop.com/anyro/premium-monthly-0a/', 'Join Our Community', 'footer')
+                }}
               >
                 Join Our Community
               </Link>
             </div>
             <div className="flex space-x-4">
               {footerLinks.social.map((link) => (
-                <SocialIcon
+                <div
                   key={link.name}
-                  platform={link.platform as any}
-                  variant="color"
-                  size={24}
-                  href={link.href}
-                  target="_blank"
-                  className="hover:scale-110 transition-transform duration-200"
-                />
+                  onClick={() => analytics.trackSocialClick(link.platform, 'footer')}
+                >
+                  <SocialIcon
+                    platform={link.platform as any}
+                    variant="color"
+                    size={24}
+                    href={link.href}
+                    target="_blank"
+                    className="hover:scale-110 transition-transform duration-200"
+                  />
+                </div>
               ))}
             </div>
           </div>
@@ -165,6 +174,7 @@ export default function Footer() {
                   <Link
                     href={link.href}
                     className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
+                    onClick={() => analytics.trackNavigation(link.name, link.href, 'footer')}
                   >
                     {link.name}
                   </Link>
@@ -182,6 +192,7 @@ export default function Footer() {
                   <Link
                     href={link.href}
                     className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
+                    onClick={() => analytics.trackNavigation(link.name, link.href, 'footer')}
                   >
                     {link.name}
                   </Link>
@@ -199,6 +210,7 @@ export default function Footer() {
                   <Link
                     href={link.href}
                     className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
+                    onClick={() => analytics.trackNavigation(link.name, link.href, 'footer')}
                   >
                     {link.name}
                   </Link>
@@ -231,6 +243,10 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 font-semibold hover:underline transition-all duration-200"
+                onClick={() => {
+                  analytics.trackCTAClick('footer_bottom', 'Join Community', 'https://whop.com/anyro/premium-monthly-0a/')
+                  analytics.trackOutboundLink('https://whop.com/anyro/premium-monthly-0a/', 'Join Community', 'footer_bottom')
+                }}
               >
                 Join Community
               </Link>

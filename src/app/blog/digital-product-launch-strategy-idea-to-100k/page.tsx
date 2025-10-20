@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Digital Product Launch Strategy: From Idea to $100K | IImagined.ai",
+  title: "Digital Product Launch Strategy: From Idea to $100K",
   description: "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery with 127K+...",
   keywords: ["digital product launch","product launch strategy","digital product marketing","launch products","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Product Launch",
   openGraph: {
-    title: "Digital Product Launch Strategy: From Idea to $100K | IImagined.ai",
+    title: "Digital Product Launch Strategy: From Idea to $100K",
     description: "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery",
     url: "https://iimagined.ai/blog/digital-product-launch-strategy-idea-to-100k",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Digital Product Launch Strategy: From Idea to $100K | IImagined.ai",
+    title: "Digital Product Launch Strategy: From Idea to $100K",
     description: "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/digital-product-launch-strategy-idea-to-100k-og.jpg",

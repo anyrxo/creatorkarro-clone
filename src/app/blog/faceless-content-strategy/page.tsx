@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Faceless Content Strategy",
+  title: "Faceless Content Strategy: Complete Guide & Expert",
   description: "Faceless Content Strategy - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["faceless", "content", "strategy", "faceless 2025", "faceless content strategy", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Faceless Content Strategy",
+    title: "Faceless Content Strategy: Complete Guide & Expert",
     description: "Faceless Content Strategy - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/faceless-content-strategy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Faceless Content Strategy",
+    title: "Faceless Content Strategy: Complete Guide & Expert",
     description: "Faceless Content Strategy - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/faceless-content-strategy-og.jpg",

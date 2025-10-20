@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Lead Generation Automation",
+  title: "Lead Generation Automation: Complete Guide & Expert",
   description: "Complete guide to lead generation automation - proven strategies, tools, and techniques for 2025",
   keywords: ["lead", "generation", "automation", "lead 2025", "lead generation automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Lead Generation Automation",
+    title: "Lead Generation Automation: Complete Guide & Expert",
     description: "Complete guide to lead generation automation - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/lead-generation-automation",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Lead Generation Automation",
+    title: "Lead Generation Automation: Complete Guide & Expert",
     description: "Complete guide to lead generation automation - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/lead-generation-automation-og.jpg",

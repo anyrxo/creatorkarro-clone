@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Best Passive Income Ideas: 20+ Digital Products That Work | IImagined.ai",
+  title: "Best Passive Income Ideas: 20+ Digital Products That Work",
   description: "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery with 127K+ students...",
   keywords: ["passive income ideas","digital products passive income","make money online","passive income","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Passive Income",
   openGraph: {
-    title: "Best Passive Income Ideas: 20+ Digital Products That Work | IImagined.ai",
+    title: "Best Passive Income Ideas: 20+ Digital Products That Work",
     description: "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery",
     url: "https://iimagined.ai/blog/best-passive-income-ideas-digital-products-2025",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Best Passive Income Ideas: 20+ Digital Products That Work | IImagined.ai",
+    title: "Best Passive Income Ideas: 20+ Digital Products That Work",
     description: "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/best-passive-income-ideas-digital-products-2025-og.jpg",

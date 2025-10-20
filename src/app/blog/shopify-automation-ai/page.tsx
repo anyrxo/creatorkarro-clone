@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Shopify Automation AI",
+  title: "Shopify Automation AI: Complete Guide & Expert Strategies",
   description: "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2025",
   keywords: ["shopify", "automation", "shopify 2025", "shopify automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Shopify Automation AI",
+    title: "Shopify Automation AI: Complete Guide & Expert Strategies",
     description: "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/shopify-automation-ai",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Shopify Automation AI",
+    title: "Shopify Automation AI: Complete Guide & Expert Strategies",
     description: "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/shopify-automation-ai-og.jpg",

@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "N8N Zapier Alternative: Why N8N is Superior for Automation | IImagined.ai",
+  title: "N8N Zapier Alternative: Why N8N is Superior for Automation",
   description: "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+...",
   keywords: ["n8n zapier alternative","zapier vs n8n","automation tools comparison","workflow automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Tool Comparison",
   openGraph: {
-    title: "N8N Zapier Alternative: Why N8N is Superior for Automation | IImagined.ai",
+    title: "N8N Zapier Alternative: Why N8N is Superior for Automation",
     description: "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations",
     url: "https://iimagined.ai/blog/n8n-zapier-alternative-why-n8n-superior-automation",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "N8N Zapier Alternative: Why N8N is Superior for Automation | IImagined.ai",
+    title: "N8N Zapier Alternative: Why N8N is Superior for Automation",
     description: "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations",
     images: [{
       url: "https://iimagined.ai/images/blog/n8n-zapier-alternative-why-n8n-superior-automation-og.jpg",

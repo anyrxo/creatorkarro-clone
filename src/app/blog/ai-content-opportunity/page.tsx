@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "AI Content Opportunity",
+  title: "AI Content Opportunity: Complete Guide & Expert Strategies",
   description: "AI Content Opportunity comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
   keywords: ["content", "opportunity", "content 2025", "content opportunity", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "AI Content Opportunity",
+    title: "AI Content Opportunity: Complete Guide & Expert Strategies",
     description: "AI Content Opportunity comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     url: "https://iimagined.ai/blog/ai-content-opportunity",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "AI Content Opportunity",
+    title: "AI Content Opportunity: Complete Guide & Expert Strategies",
     description: "AI Content Opportunity comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     images: [{
       url: "https://iimagined.ai/images/ai-content-opportunity-og.jpg",

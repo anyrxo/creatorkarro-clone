@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Professional-certification Ai Automation Masterclass: Expert Guide 2025",
+  title: "Professional-certification Ai Automation Masterclass: Expert",
   description: "professional-certification ai automation masterclass guide, professional-certification ai automation masterclass tutorial, professional-certification ai automat",
   keywords: ["professional-certification ai automation masterclass","professional-certification ai automation masterclass guide","professional-certification ai automation masterclass 2025","professional-certification ai automation masterclass course","professional-certification ai automation masterclass training","professional-certification","professional-certification ai automation masterclass","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Professional-certification Ai Automation Masterclass: Expert Guide 2025",
+    title: "Professional-certification Ai Automation Masterclass: Expert",
     description: "professional-certification ai automation masterclass guide, professional-certification ai automation masterclass tutorial, professional-certification ai automat",
     url: "https://iimagined.ai/blog/professional-certification-ai-automation-masterclass",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Professional-certification Ai Automation Masterclass: Expert Guide 2025",
+    title: "Professional-certification Ai Automation Masterclass: Expert",
     description: "professional-certification ai automation masterclass guide, professional-certification ai automation masterclass tutorial, professional-certification ai automat",
     images: [{
       url: "https://iimagined.ai/images/professional-certification-ai-automation-masterclass-og.jpg",

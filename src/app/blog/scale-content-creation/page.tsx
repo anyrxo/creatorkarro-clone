@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Scale Content Creation",
+  title: "Scale Content Creation: Complete Guide & Expert Strategies",
   description: "Scale Content Creation - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["scale", "content", "creation", "scale 2025", "scale content creation", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Scale Content Creation",
+    title: "Scale Content Creation: Complete Guide & Expert Strategies",
     description: "Scale Content Creation - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/scale-content-creation",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Scale Content Creation",
+    title: "Scale Content Creation: Complete Guide & Expert Strategies",
     description: "Scale Content Creation - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/scale-content-creation-og.jpg",

@@ -5,7 +5,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "AI Automation Guide",
+  title: "AI Automation Guide: Master Workflows & Boost Productivity",
   description: "Master AI automation with proven strategies from 127K+ students. Save 40+ hours/week with implementation guides & real-world business applications.",
   keywords: ["ai","automation","guide","ai automation guide","course","training","guide","2025"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -13,7 +13,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI & Machine Learning",
   openGraph: {
-    title: "AI Automation Guide",
+    title: "AI Automation Guide: Master Workflows & Boost Productivity",
     description: "Discover how ai automation guide can transform your business processes. Learn implementation strategies, best practices, and real-world applications for maximum efficiency.",
     url: "https://iimagined.ai/blog/ai-automation-guide",
     siteName: "IImagined.ai",
@@ -35,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "AI Automation Guide",
+    title: "AI Automation Guide: Master Workflows & Boost Productivity",
     description: "Discover how ai automation guide can transform your business processes. Learn implementation strategies, best practices, and real-world applications for maximum efficiency.",
     images: [{
       url: "https://iimagined.ai/images/ai-automation-guide-og.jpg",

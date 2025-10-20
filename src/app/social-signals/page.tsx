@@ -6,7 +6,7 @@ import {
 } from '@/lib/social-signal-automation'
 
 export const metadata: Metadata = {
-  title: 'Social Signal Automation | Multi-Platform Engagement Amplification',
+  title: "Social Signal Automation | Multi-Platform Engagement",
   description: 'Deploy automated social signal campaigns across major platforms. Amplify content reach and accelerate search engine indexing through strategic engagement.',
   robots: 'noindex, nofollow' // Keep internal tool private
 }

@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Most Profitable Digital Product Niches in 2025 | IImagined.ai",
+  title: "Most Profitable Digital Product Niches in 2025",
   description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery with 127K+...",
   keywords: ["digital product niches","profitable digital products","digital product market","best niches","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Market Research",
   openGraph: {
-    title: "Most Profitable Digital Product Niches in 2025 | IImagined.ai",
+    title: "Most Profitable Digital Product Niches in 2025",
     description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery",
     url: "https://iimagined.ai/blog/most-profitable-digital-product-niches-2025",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Most Profitable Digital Product Niches in 2025 | IImagined.ai",
+    title: "Most Profitable Digital Product Niches in 2025",
     description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/most-profitable-digital-product-niches-2025-og.jpg",

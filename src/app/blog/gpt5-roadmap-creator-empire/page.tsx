@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "GPT-5 Roadmap Creator Empire",
+  title: "GPT-5 Roadmap Creator Empire: Complete Guide & Expert",
   description: "GPT-5 Roadmap Creator Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
   keywords: ["gpt5", "roadmap", "creator", "empire", "gpt5 2025", "gpt5 roadmap creator empire", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "GPT-5 Roadmap Creator Empire",
+    title: "GPT-5 Roadmap Creator Empire: Complete Guide & Expert",
     description: "GPT-5 Roadmap Creator Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     url: "https://iimagined.ai/blog/gpt5-roadmap-creator-empire",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "GPT-5 Roadmap Creator Empire",
+    title: "GPT-5 Roadmap Creator Empire: Complete Guide & Expert",
     description: "GPT-5 Roadmap Creator Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     images: [{
       url: "https://iimagined.ai/images/gpt5-roadmap-creator-empire-og.jpg",

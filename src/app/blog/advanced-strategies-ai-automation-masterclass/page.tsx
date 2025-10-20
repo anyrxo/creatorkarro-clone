@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Advanced-strategies Ai Automation Masterclass: Expert Guide 2025",
+  title: "Advanced-strategies Ai Automation Masterclass: Expert Guide",
   description: "advanced-strategies ai automation masterclass guide, advanced-strategies ai automation masterclass tutorial, advanced-strategies ai automation masterclass cours",
   keywords: ["advanced-strategies ai automation masterclass","advanced-strategies ai automation masterclass guide","advanced-strategies ai automation masterclass 2025","advanced-strategies ai automation masterclass course","advanced-strategies ai automation masterclass training","advanced-strategies","advanced-strategies ai automation masterclass","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Advanced-strategies Ai Automation Masterclass: Expert Guide 2025",
+    title: "Advanced-strategies Ai Automation Masterclass: Expert Guide",
     description: "advanced-strategies ai automation masterclass guide, advanced-strategies ai automation masterclass tutorial, advanced-strategies ai automation masterclass cours",
     url: "https://iimagined.ai/blog/advanced-strategies-ai-automation-masterclass",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Advanced-strategies Ai Automation Masterclass: Expert Guide 2025",
+    title: "Advanced-strategies Ai Automation Masterclass: Expert Guide",
     description: "advanced-strategies ai automation masterclass guide, advanced-strategies ai automation masterclass tutorial, advanced-strategies ai automation masterclass cours",
     images: [{
       url: "https://iimagined.ai/images/advanced-strategies-ai-automation-masterclass-og.jpg",

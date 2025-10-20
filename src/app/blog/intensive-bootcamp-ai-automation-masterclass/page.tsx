@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Intensive-bootcamp Ai Automation Masterclass: Expert Guide 2025",
+  title: "Intensive-bootcamp Ai Automation Masterclass: Expert Guide",
   description: "intensive-bootcamp ai automation masterclass guide, intensive-bootcamp ai automation masterclass tutorial, intensive-bootcamp ai automation masterclass course -",
   keywords: ["intensive-bootcamp ai automation masterclass","intensive-bootcamp ai automation masterclass guide","intensive-bootcamp ai automation masterclass 2025","intensive-bootcamp ai automation masterclass course","intensive-bootcamp ai automation masterclass training","intensive-bootcamp","intensive-bootcamp ai automation masterclass","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Intensive-bootcamp Ai Automation Masterclass: Expert Guide 2025",
+    title: "Intensive-bootcamp Ai Automation Masterclass: Expert Guide",
     description: "intensive-bootcamp ai automation masterclass guide, intensive-bootcamp ai automation masterclass tutorial, intensive-bootcamp ai automation masterclass course -",
     url: "https://iimagined.ai/blog/intensive-bootcamp-ai-automation-masterclass",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Intensive-bootcamp Ai Automation Masterclass: Expert Guide 2025",
+    title: "Intensive-bootcamp Ai Automation Masterclass: Expert Guide",
     description: "intensive-bootcamp ai automation masterclass guide, intensive-bootcamp ai automation masterclass tutorial, intensive-bootcamp ai automation masterclass course -",
     images: [{
       url: "https://iimagined.ai/images/intensive-bootcamp-ai-automation-masterclass-og.jpg",

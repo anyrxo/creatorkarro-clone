@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Sell Digital Products on Etsy: Complete Success Guide | IImagined.ai",
+  title: "Sell Digital Products on Etsy: Complete Success Guide",
   description: "sell digital products etsy, etsy digital products, etsy passive income - Expert guide from the creators of Digital Products Mastery with 127K+ students...",
   keywords: ["sell digital products etsy","etsy digital products","etsy passive income","digital downloads etsy","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Etsy Business",
   openGraph: {
-    title: "Sell Digital Products on Etsy: Complete Success Guide | IImagined.ai",
+    title: "Sell Digital Products on Etsy: Complete Success Guide",
     description: "sell digital products etsy, etsy digital products, etsy passive income - Expert guide from the creators of Digital Products Mastery",
     url: "https://iimagined.ai/blog/sell-digital-products-on-etsy-complete-success-guide",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Sell Digital Products on Etsy: Complete Success Guide | IImagined.ai",
+    title: "Sell Digital Products on Etsy: Complete Success Guide",
     description: "sell digital products etsy, etsy digital products, etsy passive income - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/sell-digital-products-on-etsy-complete-success-guide-og.jpg",

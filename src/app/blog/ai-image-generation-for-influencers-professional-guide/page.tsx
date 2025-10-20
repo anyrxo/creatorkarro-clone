@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "AI Image Generation for Influencers: Professional Guide | IImagined.ai",
+  title: "AI Image Generation for Influencers: Professional Guide",
   description: "ai image generation, ai images for influencers, ai photography - Expert guide from the creators of AI Influencers Academy with 127K+ students and $2.7M+...",
   keywords: ["ai image generation","ai images for influencers","ai photography","virtual influencer photos","ai influencers academy","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Images",
   openGraph: {
-    title: "AI Image Generation for Influencers: Professional Guide | IImagined.ai",
+    title: "AI Image Generation for Influencers: Professional Guide",
     description: "ai image generation, ai images for influencers, ai photography - Expert guide from the creators of AI Influencers Academy",
     url: "https://iimagined.ai/blog/ai-image-generation-for-influencers-professional-guide",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "AI Image Generation for Influencers: Professional Guide | IImagined.ai",
+    title: "AI Image Generation for Influencers: Professional Guide",
     description: "ai image generation, ai images for influencers, ai photography - Expert guide from the creators of AI Influencers Academy",
     images: [{
       url: "https://iimagined.ai/images/blog/ai-image-generation-for-influencers-professional-guide-og.jpg",

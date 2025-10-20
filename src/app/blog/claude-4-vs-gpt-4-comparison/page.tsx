@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Claude 4 Vs GPT 4 Comparison",
+  title: "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
   description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
   keywords: ["claude", "gpt", "comparison", "claude 2025", "claude gpt comparison", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Claude 4 Vs GPT 4 Comparison",
+    title: "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
     description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     url: "https://iimagined.ai/blog/claude-4-vs-gpt-4-comparison",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Claude 4 Vs GPT 4 Comparison",
+    title: "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
     description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     images: [{
       url: "https://iimagined.ai/images/claude-4-vs-gpt-4-comparison-og.jpg",

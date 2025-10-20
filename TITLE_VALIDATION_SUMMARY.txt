@@ -1,0 +1,25 @@
+TITLE VALIDATION SUMMARY
+Generated: 2025-10-20T08:43:28.505Z
+
+OVERVIEW
+========
+Total Pages: 616
+Valid: 577 (93.7%)
+Invalid: 39 (6.3%)
+
+ISSUES
+======
+Missing Titles: 39
+Too Short: 0
+Too Long: 0
+Duplicates: 0
+
+QUALITY
+=======
+Optimal Length (50-60): 412
+Average Length: 48.6 chars
+Average Quality Score: 92.3/100
+
+STATUS
+======
+❌ ISSUES FOUND - Review validation report

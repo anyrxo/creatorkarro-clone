@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Comprehensive-training Ai Influencers Academy: Expert Guide 2025",
+  title: "Comprehensive-training Ai Influencers Academy: Expert Guide",
   description: "comprehensive-training ai influencers academy guide, comprehensive-training ai influencers academy tutorial, comprehensive-training ai influencers academy cours",
   keywords: ["comprehensive-training ai influencers academy","comprehensive-training ai influencers academy guide","comprehensive-training ai influencers academy 2025","comprehensive-training ai influencers academy course","comprehensive-training ai influencers academy training","comprehensive-training","comprehensive-training ai influencers academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Influencers Academy",
   openGraph: {
-    title: "Comprehensive-training Ai Influencers Academy: Expert Guide 2025",
+    title: "Comprehensive-training Ai Influencers Academy: Expert Guide",
     description: "comprehensive-training ai influencers academy guide, comprehensive-training ai influencers academy tutorial, comprehensive-training ai influencers academy cours",
     url: "https://iimagined.ai/blog/comprehensive-training-ai-influencers-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Comprehensive-training Ai Influencers Academy: Expert Guide 2025",
+    title: "Comprehensive-training Ai Influencers Academy: Expert Guide",
     description: "comprehensive-training ai influencers academy guide, comprehensive-training ai influencers academy tutorial, comprehensive-training ai influencers academy cours",
     images: [{
       url: "https://iimagined.ai/images/comprehensive-training-ai-influencers-academy-og.jpg",

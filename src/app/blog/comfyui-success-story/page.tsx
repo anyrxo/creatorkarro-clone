@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "ComfyUI Success Story",
+  title: "ComfyUI Success Story: Complete Guide & Expert Strategies",
   description: "ComfyUI Success Story - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["comfyui", "success", "story", "comfyui 2025", "comfyui success story", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "ComfyUI Success Story",
+    title: "ComfyUI Success Story: Complete Guide & Expert Strategies",
     description: "ComfyUI Success Story - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/comfyui-success-story",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "ComfyUI Success Story",
+    title: "ComfyUI Success Story: Complete Guide & Expert Strategies",
     description: "ComfyUI Success Story - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/comfyui-success-story-og.jpg",

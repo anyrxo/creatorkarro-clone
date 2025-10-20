@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Claude Ai Business Integration Los Angeles: Expert Guide 2025",
+  title: "Claude Ai Business Integration Los Angeles: Expert Guide",
   description: "claude ai business integration los angeles guide, claude ai business integration los angeles tutorial, claude ai business integration los angeles course - Exper",
   keywords: ["claude ai business integration los angeles","claude ai business integration los angeles guide","claude ai business integration los angeles 2025","claude ai business integration los angeles course","claude ai business integration los angeles training","claude","claude ai business integration los angeles","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Claude Ai Business Integration Los Angeles: Expert Guide 2025",
+    title: "Claude Ai Business Integration Los Angeles: Expert Guide",
     description: "claude ai business integration los angeles guide, claude ai business integration los angeles tutorial, claude ai business integration los angeles course - Exper",
     url: "https://iimagined.ai/blog/claude-ai-business-integration-los-angeles",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Claude Ai Business Integration Los Angeles: Expert Guide 2025",
+    title: "Claude Ai Business Integration Los Angeles: Expert Guide",
     description: "claude ai business integration los angeles guide, claude ai business integration los angeles tutorial, claude ai business integration los angeles course - Exper",
     images: [{
       url: "https://iimagined.ai/images/claude-ai-business-integration-los-angeles-og.jpg",

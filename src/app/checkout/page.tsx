@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { CheckCircle, Lock, CreditCard } from 'lucide-react'
 import Link from 'next/link'
+import * as analytics from '@/lib/analytics'
 
 // Course data
 const COURSES = {
@@ -95,8 +96,69 @@ function CheckoutContent() {
   const [course, setCourse] = useState(COURSES[courseId as keyof typeof COURSES] || COURSES['ai-influencers'])
   const [isProcessing, setIsProcessing] = useState(false)
 
+  // Initialize analytics tracking on mount
+  useEffect(() => {
+    // Track page view
+    analytics.trackPageView('/checkout', 'Checkout Page')
+
+    // Track begin_checkout event
+    analytics.trackBeginCheckout(
+      course.id,
+      course.name,
+      course.price
+    )
+
+    // Track checkout step 1 (Review Order)
+    analytics.trackCheckoutStep(1, 'Review Order', course.id, course.name)
+
+    // Initialize scroll and time tracking
+    const scrollTracker = new analytics.ScrollDepthTracker('/checkout')
+    const timeTracker = new analytics.TimeOnPageTracker('/checkout')
+
+    // Cleanup on unmount
+    return () => {
+      scrollTracker.destroy()
+      timeTracker.destroy()
+    }
+  }, [course])
+
+  // Track course changes (if user switches courses)
+  useEffect(() => {
+    const newCourseId = searchParams.get('course') || 'ai-influencers'
+    const newCourse = COURSES[newCourseId as keyof typeof COURSES] || COURSES['ai-influencers']
+
+    if (newCourse.id !== course.id) {
+      setCourse(newCourse)
+
+      // Track course selection change
+      analytics.trackAddToCart(
+        newCourse.id,
+        newCourse.name,
+        newCourse.price
+      )
+    }
+  }, [searchParams, course.id])
+
   const handleWhopCheckout = () => {
     setIsProcessing(true)
+
+    // Track Complete Purchase button click
+    analytics.trackCTAClick(
+      'checkout_page',
+      `Complete Purchase - $${course.price}${course.isSubscription ? '/mo' : ''}`,
+      course.whopUrl
+    )
+
+    // Track checkout step 2 (Payment)
+    analytics.trackCheckoutStep(2, 'Payment', course.id, course.name)
+
+    // Track outbound link to Whop
+    analytics.trackOutboundLink(
+      course.whopUrl,
+      'Complete Purchase',
+      'checkout_page'
+    )
+
     // Redirect to Whop checkout
     window.location.href = course.whopUrl
   }
@@ -257,13 +319,25 @@ function CheckoutContent() {
 
               {/* FAQ Quick Links */}
               <div className="mt-6 space-y-2 text-sm">
-                <Link href="/faq" className="block text-blue-400 hover:text-blue-300">
+                <Link
+                  href="/faq"
+                  className="block text-blue-400 hover:text-blue-300"
+                  onClick={() => analytics.trackNavigation('FAQ', '/faq', 'main_nav')}
+                >
                   → Frequently Asked Questions
                 </Link>
-                <Link href="/testimonials" className="block text-blue-400 hover:text-blue-300">
+                <Link
+                  href="/testimonials"
+                  className="block text-blue-400 hover:text-blue-300"
+                  onClick={() => analytics.trackNavigation('Testimonials', '/testimonials', 'main_nav')}
+                >
                   → See Student Success Stories
                 </Link>
-                <Link href="/contact" className="block text-blue-400 hover:text-blue-300">
+                <Link
+                  href="/contact"
+                  className="block text-blue-400 hover:text-blue-300"
+                  onClick={() => analytics.trackNavigation('Contact', '/contact', 'main_nav')}
+                >
                   → Contact Support
                 </Link>
               </div>

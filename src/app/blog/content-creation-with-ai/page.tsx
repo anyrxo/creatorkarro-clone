@@ -5,11 +5,11 @@ import { generateOptimizedMeta } from '@/utils/metaGenerator'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 export const metadata: Metadata = {
-  title: "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
+  title: "Content Creation With Ai: Complete Guide [2025]",
   description: "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
   keywords: "artificial intelligence, machine learning, ai automation, ai tools, ai workflows, ai productivity, ai business solutions, ai integration, ai optimization, ai-powered systems, Content Creation With Ai, Content Creation With Ai course, Content Creation With Ai training, learn Content Creation With Ai, Content Creation With Ai mastery",
   openGraph: {
-    title: "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
+    title: "Content Creation With Ai: Complete Guide [2025]",
     description: "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
     images: [
       {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
+    title: "Content Creation With Ai: Complete Guide [2025]",
     description: "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
     images: [
       "/api/og?title=Content%20Creation%20With%20Ai%3A%20Complete%20Guide%20%5B2025%5D&urgency=true"

@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "AI Content Income",
+    title: "AI Content Income: Build Profitable Content Business 2025",
     description: "AI Content Income comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     url: "https://iimagined.ai/blog/ai-content-income",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "AI Content Income",
+    title: "AI Content Income: Build Profitable Content Business 2025",
     description: "AI Content Income comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     images: [{
       url: "https://iimagined.ai/images/ai-content-income-og.jpg",

@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "N8N Database Automation: Automate Your Data Workflows | IImagined.ai",
+  title: "N8N Database Automation: Automate Your Data Workflows",
   description: "n8n database automation, database workflows, automated data processing - Expert guide from the creators of N8N AI Automations with 127K+ students and...",
   keywords: ["n8n database automation","database workflows","automated data processing","n8n data automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Database Automation",
   openGraph: {
-    title: "N8N Database Automation: Automate Your Data Workflows | IImagined.ai",
+    title: "N8N Database Automation: Automate Your Data Workflows",
     description: "n8n database automation, database workflows, automated data processing - Expert guide from the creators of N8N AI Automations",
     url: "https://iimagined.ai/blog/n8n-database-automation-automate-data-workflows",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "N8N Database Automation: Automate Your Data Workflows | IImagined.ai",
+    title: "N8N Database Automation: Automate Your Data Workflows",
     description: "n8n database automation, database workflows, automated data processing - Expert guide from the creators of N8N AI Automations",
     images: [{
       url: "https://iimagined.ai/images/blog/n8n-database-automation-automate-data-workflows-og.jpg",

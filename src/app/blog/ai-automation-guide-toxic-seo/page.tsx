@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "AI Automation Guide Toxic SEO",
+  title: "AI Automation Guide Toxic SEO 2025",
   description: "Complete guide to ai automation guide toxic seo - proven strategies, tools, and techniques for 2025",
   keywords: ["automation", "guide", "toxic", "seo", "automation 2025", "automation guide toxic seo", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "AI Automation Guide Toxic SEO",
+    title: "AI Automation Guide Toxic SEO 2025",
     description: "Complete guide to ai automation guide toxic seo - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/ai-automation-guide-toxic-seo",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "AI Automation Guide Toxic SEO",
+    title: "AI Automation Guide Toxic SEO 2025",
     description: "Complete guide to ai automation guide toxic seo - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/ai-automation-guide-toxic-seo-og.jpg",

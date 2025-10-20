@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Professional-certification Ai Influencers Academy: Expert Guide 2025",
+  title: "Professional-certification Ai Influencers Academy: Expert",
   description: "professional-certification ai influencers academy guide, professional-certification ai influencers academy tutorial, professional-certification ai influencers a",
   keywords: ["professional-certification ai influencers academy","professional-certification ai influencers academy guide","professional-certification ai influencers academy 2025","professional-certification ai influencers academy course","professional-certification ai influencers academy training","professional-certification","professional-certification ai influencers academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Influencers Academy",
   openGraph: {
-    title: "Professional-certification Ai Influencers Academy: Expert Guide 2025",
+    title: "Professional-certification Ai Influencers Academy: Expert",
     description: "professional-certification ai influencers academy guide, professional-certification ai influencers academy tutorial, professional-certification ai influencers a",
     url: "https://iimagined.ai/blog/professional-certification-ai-influencers-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Professional-certification Ai Influencers Academy: Expert Guide 2025",
+    title: "Professional-certification Ai Influencers Academy: Expert",
     description: "professional-certification ai influencers academy guide, professional-certification ai influencers academy tutorial, professional-certification ai influencers a",
     images: [{
       url: "https://iimagined.ai/images/professional-certification-ai-influencers-academy-og.jpg",

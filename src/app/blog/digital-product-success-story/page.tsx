@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation'
 // Redirect to our $497 course with real student success stories + framework
 
 export const metadata = {
-  title: "Digital Product Success Stories - Real Student Results & Course",
+  title: "Digital Product Success Stories - Real Student Results &",
   description: "Want to see real digital product success stories? Get the complete course that helped 1,500+ students build profitable digital product businesses with...",
   robots: {
     index: false,

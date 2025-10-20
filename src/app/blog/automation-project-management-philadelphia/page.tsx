@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Automation Project Management Philadelphia: Expert Guide 2025",
+  title: "Automation Project Management Philadelphia: Expert Guide",
   description: "automation project management philadelphia guide, automation project management philadelphia tutorial, automation project management philadelphia course - Exper",
   keywords: ["automation project management philadelphia","automation project management philadelphia guide","automation project management philadelphia 2025","automation project management philadelphia course","automation project management philadelphia training","automation","automation project management philadelphia","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Automation Project Management Philadelphia: Expert Guide 2025",
+    title: "Automation Project Management Philadelphia: Expert Guide",
     description: "automation project management philadelphia guide, automation project management philadelphia tutorial, automation project management philadelphia course - Exper",
     url: "https://iimagined.ai/blog/automation-project-management-philadelphia",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Automation Project Management Philadelphia: Expert Guide 2025",
+    title: "Automation Project Management Philadelphia: Expert Guide",
     description: "automation project management philadelphia guide, automation project management philadelphia tutorial, automation project management philadelphia course - Exper",
     images: [{
       url: "https://iimagined.ai/images/automation-project-management-philadelphia-og.jpg",

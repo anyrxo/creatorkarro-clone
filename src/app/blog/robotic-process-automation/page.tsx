@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Robotic Process Automation",
+  title: "Robotic Process Automation: Complete Guide & Expert",
   description: "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2025",
   keywords: ["robotic", "process", "automation", "robotic 2025", "robotic process automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Robotic Process Automation",
+    title: "Robotic Process Automation: Complete Guide & Expert",
     description: "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/robotic-process-automation",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Robotic Process Automation",
+    title: "Robotic Process Automation: Complete Guide & Expert",
     description: "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/robotic-process-automation-og.jpg",

@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Automation Consulting Services San Antonio: Expert Guide 2025",
+  title: "Automation Consulting Services San Antonio: Expert Guide",
   description: "automation consulting services san antonio guide, automation consulting services san antonio tutorial, automation consulting services san antonio course - Exper",
   keywords: ["automation consulting services san antonio","automation consulting services san antonio guide","automation consulting services san antonio 2025","automation consulting services san antonio course","automation consulting services san antonio training","automation","automation consulting services san antonio","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Automation Consulting Services San Antonio: Expert Guide 2025",
+    title: "Automation Consulting Services San Antonio: Expert Guide",
     description: "automation consulting services san antonio guide, automation consulting services san antonio tutorial, automation consulting services san antonio course - Exper",
     url: "https://iimagined.ai/blog/automation-consulting-services-san-antonio",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Automation Consulting Services San Antonio: Expert Guide 2025",
+    title: "Automation Consulting Services San Antonio: Expert Guide",
     description: "automation consulting services san antonio guide, automation consulting services san antonio tutorial, automation consulting services san antonio course - Exper",
     images: [{
       url: "https://iimagined.ai/images/automation-consulting-services-san-antonio-og.jpg",

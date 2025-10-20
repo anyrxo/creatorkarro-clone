@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Transformation-course Comfyui Pro Training: Expert Guide 2025",
+  title: "Transformation-course Comfyui Pro Training: Expert Guide",
   description: "transformation-course comfyui pro training guide, transformation-course comfyui pro training tutorial, transformation-course comfyui pro training course - Exper",
   keywords: ["transformation-course comfyui pro training","transformation-course comfyui pro training guide","transformation-course comfyui pro training 2025","transformation-course comfyui pro training course","transformation-course comfyui pro training training","transformation-course","transformation-course comfyui pro training","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "ComfyUI Pro Training",
   openGraph: {
-    title: "Transformation-course Comfyui Pro Training: Expert Guide 2025",
+    title: "Transformation-course Comfyui Pro Training: Expert Guide",
     description: "transformation-course comfyui pro training guide, transformation-course comfyui pro training tutorial, transformation-course comfyui pro training course - Exper",
     url: "https://iimagined.ai/blog/transformation-course-comfyui-pro-training",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Transformation-course Comfyui Pro Training: Expert Guide 2025",
+    title: "Transformation-course Comfyui Pro Training: Expert Guide",
     description: "transformation-course comfyui pro training guide, transformation-course comfyui pro training tutorial, transformation-course comfyui pro training course - Exper",
     images: [{
       url: "https://iimagined.ai/images/transformation-course-comfyui-pro-training-og.jpg",

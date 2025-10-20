@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Transformation-course Ai Influencers Academy: Expert Guide 2025",
+  title: "Transformation-course Ai Influencers Academy: Expert Guide",
   description: "transformation-course ai influencers academy guide, transformation-course ai influencers academy tutorial, transformation-course ai influencers academy course -",
   keywords: ["transformation-course ai influencers academy","transformation-course ai influencers academy guide","transformation-course ai influencers academy 2025","transformation-course ai influencers academy course","transformation-course ai influencers academy training","transformation-course","transformation-course ai influencers academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Influencers Academy",
   openGraph: {
-    title: "Transformation-course Ai Influencers Academy: Expert Guide 2025",
+    title: "Transformation-course Ai Influencers Academy: Expert Guide",
     description: "transformation-course ai influencers academy guide, transformation-course ai influencers academy tutorial, transformation-course ai influencers academy course -",
     url: "https://iimagined.ai/blog/transformation-course-ai-influencers-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Transformation-course Ai Influencers Academy: Expert Guide 2025",
+    title: "Transformation-course Ai Influencers Academy: Expert Guide",
     description: "transformation-course ai influencers academy guide, transformation-course ai influencers academy tutorial, transformation-course ai influencers academy course -",
     images: [{
       url: "https://iimagined.ai/images/transformation-course-ai-influencers-academy-og.jpg",

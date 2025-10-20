@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Telegram Bot Monetization",
+  title: "Telegram Bot Monetization: Complete Guide & Expert",
   description: "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["telegram", "bot", "monetization", "telegram 2025", "telegram bot monetization", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Telegram Bot Monetization",
+    title: "Telegram Bot Monetization: Complete Guide & Expert",
     description: "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/telegram-bot-monetization",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Telegram Bot Monetization",
+    title: "Telegram Bot Monetization: Complete Guide & Expert",
     description: "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/telegram-bot-monetization-og.jpg",

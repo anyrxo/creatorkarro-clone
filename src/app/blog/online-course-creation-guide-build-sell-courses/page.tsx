@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Online Course Creation Guide: Build & Sell Courses That Convert | IImagined.ai",
+  title: "Online Course Creation Guide: Build & Sell Courses That",
   description: "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in...",
   keywords: ["course creation","create online course","sell online courses","online course business","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Course Creation",
   openGraph: {
-    title: "Online Course Creation Guide: Build & Sell Courses That Convert | IImagined.ai",
+    title: "Online Course Creation Guide: Build & Sell Courses That",
     description: "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery",
     url: "https://iimagined.ai/blog/online-course-creation-guide-build-sell-courses",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Online Course Creation Guide: Build & Sell Courses That Convert | IImagined.ai",
+    title: "Online Course Creation Guide: Build & Sell Courses That",
     description: "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/online-course-creation-guide-build-sell-courses-og.jpg",

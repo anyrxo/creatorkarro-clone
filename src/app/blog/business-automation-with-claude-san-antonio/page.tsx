@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Business Automation With Claude San Antonio: Expert Guide 2025",
+  title: "Business Automation With Claude San Antonio: Expert Guide",
   description: "business automation with claude san antonio guide, business automation with claude san antonio tutorial, business automation with claude san antonio course - Ex",
   keywords: ["business automation with claude san antonio","business automation with claude san antonio guide","business automation with claude san antonio 2025","business automation with claude san antonio course","business automation with claude san antonio training","business","business automation with claude san antonio","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Business Automation With Claude San Antonio: Expert Guide 2025",
+    title: "Business Automation With Claude San Antonio: Expert Guide",
     description: "business automation with claude san antonio guide, business automation with claude san antonio tutorial, business automation with claude san antonio course - Ex",
     url: "https://iimagined.ai/blog/business-automation-with-claude-san-antonio",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Business Automation With Claude San Antonio: Expert Guide 2025",
+    title: "Business Automation With Claude San Antonio: Expert Guide",
     description: "business automation with claude san antonio guide, business automation with claude san antonio tutorial, business automation with claude san antonio course - Ex",
     images: [{
       url: "https://iimagined.ai/images/business-automation-with-claude-san-antonio-og.jpg",

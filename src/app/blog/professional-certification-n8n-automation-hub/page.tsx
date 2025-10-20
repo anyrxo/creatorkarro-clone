@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Professional-certification N8n Automation Hub: Expert Guide 2025",
+  title: "Professional-certification N8n Automation Hub: Expert Guide",
   description: "professional-certification n8n automation hub guide, professional-certification n8n automation hub tutorial, professional-certification n8n automation hub cours",
   keywords: ["professional-certification n8n automation hub","professional-certification n8n automation hub guide","professional-certification n8n automation hub 2025","professional-certification n8n automation hub course","professional-certification n8n automation hub training","professional-certification","professional-certification n8n automation hub","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "N8N Automation Hub",
   openGraph: {
-    title: "Professional-certification N8n Automation Hub: Expert Guide 2025",
+    title: "Professional-certification N8n Automation Hub: Expert Guide",
     description: "professional-certification n8n automation hub guide, professional-certification n8n automation hub tutorial, professional-certification n8n automation hub cours",
     url: "https://iimagined.ai/blog/professional-certification-n8n-automation-hub",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Professional-certification N8n Automation Hub: Expert Guide 2025",
+    title: "Professional-certification N8n Automation Hub: Expert Guide",
     description: "professional-certification n8n automation hub guide, professional-certification n8n automation hub tutorial, professional-certification n8n automation hub cours",
     images: [{
       url: "https://iimagined.ai/images/professional-certification-n8n-automation-hub-og.jpg",

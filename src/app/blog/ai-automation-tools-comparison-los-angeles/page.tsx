@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users, BarChart3 } from 'lucide-react'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Ai Automation Tools Comparison Los Angeles: Expert Guide 2025",
+  title: "Ai Automation Tools Comparison Los Angeles: Expert Guide",
   description: "ai automation tools comparison los angeles guide, ai automation tools comparison los angeles tutorial, ai automation tools comparison los angeles course - Exper",
   keywords: ["ai automation tools comparison los angeles","ai automation tools comparison los angeles guide","ai automation tools comparison los angeles 2025","ai automation tools comparison los angeles course","ai automation tools comparison los angeles training","ai","ai automation tools comparison los angeles","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +13,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Ai Automation Tools Comparison Los Angeles: Expert Guide 2025",
+    title: "Ai Automation Tools Comparison Los Angeles: Expert Guide",
     description: "ai automation tools comparison los angeles guide, ai automation tools comparison los angeles tutorial, ai automation tools comparison los angeles course - Exper",
     url: "https://iimagined.ai/blog/ai-automation-tools-comparison-los-angeles",
     siteName: "IImagined.ai",
@@ -34,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Ai Automation Tools Comparison Los Angeles: Expert Guide 2025",
+    title: "Ai Automation Tools Comparison Los Angeles: Expert Guide",
     description: "ai automation tools comparison los angeles guide, ai automation tools comparison los angeles tutorial, ai automation tools comparison los angeles course - Exper",
     images: [{
       url: "https://iimagined.ai/images/ai-automation-tools-comparison-los-angeles-og.jpg",
@@ -58,8 +59,24 @@ export const metadata = {
 }
 
 export default function BlogPost() {
+
+const schema = generateBlogPostSchema({
+  title: metadata.title,
+  description: metadata.description,
+  slug: "ai-automation-tools-comparison-los-angeles",
+  publishedTime: metadata.openGraph.publishedTime,
+  modifiedTime: metadata.openGraph.modifiedTime,
+  category: metadata.category || "AI Automation Mastery",
+  keywords: metadata.keywords || [],
+  image: metadata.openGraph.images[0].url
+})
+
   return (
 <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
   {/* TOXIC SEO HERO - KEYWORD OPTIMIZED */}
   <section className="section-spacing overflow-hidden relative">
     {/* Beautiful Background Effects - Same as existing blogs */}

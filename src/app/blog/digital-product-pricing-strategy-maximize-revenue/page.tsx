@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Digital Product Pricing Strategy: Maximize Your Revenue | IImagined.ai",
+  title: "Digital Product Pricing Strategy: Maximize Your Revenue",
   description: "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
   keywords: ["digital product pricing","pricing strategy","digital product revenue","price digital products","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Pricing Strategy",
   openGraph: {
-    title: "Digital Product Pricing Strategy: Maximize Your Revenue | IImagined.ai",
+    title: "Digital Product Pricing Strategy: Maximize Your Revenue",
     description: "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery",
     url: "https://iimagined.ai/blog/digital-product-pricing-strategy-maximize-revenue",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Digital Product Pricing Strategy: Maximize Your Revenue | IImagined.ai",
+    title: "Digital Product Pricing Strategy: Maximize Your Revenue",
     description: "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/digital-product-pricing-strategy-maximize-revenue-og.jpg",

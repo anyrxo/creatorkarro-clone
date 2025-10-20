@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "How to Make Money with AI Influencers: 15 Proven Methods | IImagined.ai",
+  title: "How to Make Money with AI Influencers: 15 Proven Methods",
   description: "make money ai influencers, ai influencer income, monetize virtual influencers - Expert guide from the creators of AI Influencers Academy with 127K+...",
   keywords: ["make money ai influencers","ai influencer income","monetize virtual influencers","ai influencer business","ai influencers academy","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Business",
   openGraph: {
-    title: "How to Make Money with AI Influencers: 15 Proven Methods | IImagined.ai",
+    title: "How to Make Money with AI Influencers: 15 Proven Methods",
     description: "make money ai influencers, ai influencer income, monetize virtual influencers - Expert guide from the creators of AI Influencers Academy",
     url: "https://iimagined.ai/blog/how-to-make-money-with-ai-influencers-15-proven-methods",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "How to Make Money with AI Influencers: 15 Proven Methods | IImagined.ai",
+    title: "How to Make Money with AI Influencers: 15 Proven Methods",
     description: "make money ai influencers, ai influencer income, monetize virtual influencers - Expert guide from the creators of AI Influencers Academy",
     images: [{
       url: "https://iimagined.ai/images/blog/how-to-make-money-with-ai-influencers-15-proven-methods-og.jpg",

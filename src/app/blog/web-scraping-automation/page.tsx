@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Web Scraping Automation",
+  title: "Web Scraping Automation: Complete Guide & Expert Strategies",
   description: "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2025",
   keywords: ["web", "scraping", "automation", "web 2025", "web scraping automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Web Scraping Automation",
+    title: "Web Scraping Automation: Complete Guide & Expert Strategies",
     description: "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/web-scraping-automation",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Web Scraping Automation",
+    title: "Web Scraping Automation: Complete Guide & Expert Strategies",
     description: "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/web-scraping-automation-og.jpg",

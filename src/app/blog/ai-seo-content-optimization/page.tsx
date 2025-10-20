@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "AI SEO Content Optimization",
+  title: "AI SEO Content Optimization: Complete Guide & Expert",
   description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
   keywords: ["seo", "content", "optimization", "seo 2025", "seo content optimization", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "AI SEO Content Optimization",
+    title: "AI SEO Content Optimization: Complete Guide & Expert",
     description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     url: "https://iimagined.ai/blog/ai-seo-content-optimization",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "AI SEO Content Optimization",
+    title: "AI SEO Content Optimization: Complete Guide & Expert",
     description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     images: [{
       url: "https://iimagined.ai/images/ai-seo-content-optimization-og.jpg",

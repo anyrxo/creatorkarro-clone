@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Best AI Content Creation Tools for Virtual Influencers 2025 | IImagined.ai",
+  title: "Best AI Content Creation Tools for Virtual Influencers 2025",
   description: "ai content creation, ai social media content, virtual influencer content - Expert guide from the creators of AI Influencers Academy with 127K+ students...",
   keywords: ["ai content creation","ai social media content","virtual influencer content","ai content tools","ai influencers academy","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Content",
   openGraph: {
-    title: "Best AI Content Creation Tools for Virtual Influencers 2025 | IImagined.ai",
+    title: "Best AI Content Creation Tools for Virtual Influencers 2025",
     description: "ai content creation, ai social media content, virtual influencer content - Expert guide from the creators of AI Influencers Academy",
     url: "https://iimagined.ai/blog/best-ai-content-creation-tools-virtual-influencers-2025",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Best AI Content Creation Tools for Virtual Influencers 2025 | IImagined.ai",
+    title: "Best AI Content Creation Tools for Virtual Influencers 2025",
     description: "ai content creation, ai social media content, virtual influencer content - Expert guide from the creators of AI Influencers Academy",
     images: [{
       url: "https://iimagined.ai/images/blog/best-ai-content-creation-tools-virtual-influencers-2025-og.jpg",

@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Business Automation With Claude Philadelphia: Expert Guide 2025",
+  title: "Business Automation With Claude Philadelphia: Expert Guide",
   description: "business automation with claude philadelphia guide, business automation with claude philadelphia tutorial, business automation with claude philadelphia course -",
   keywords: ["business automation with claude philadelphia","business automation with claude philadelphia guide","business automation with claude philadelphia 2025","business automation with claude philadelphia course","business automation with claude philadelphia training","business","business automation with claude philadelphia","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Business Automation With Claude Philadelphia: Expert Guide 2025",
+    title: "Business Automation With Claude Philadelphia: Expert Guide",
     description: "business automation with claude philadelphia guide, business automation with claude philadelphia tutorial, business automation with claude philadelphia course -",
     url: "https://iimagined.ai/blog/business-automation-with-claude-philadelphia",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Business Automation With Claude Philadelphia: Expert Guide 2025",
+    title: "Business Automation With Claude Philadelphia: Expert Guide",
     description: "business automation with claude philadelphia guide, business automation with claude philadelphia tutorial, business automation with claude philadelphia course -",
     images: [{
       url: "https://iimagined.ai/images/business-automation-with-claude-philadelphia-og.jpg",

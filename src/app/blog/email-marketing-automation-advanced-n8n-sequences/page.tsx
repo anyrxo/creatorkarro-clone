@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Email Marketing Automation: Advanced N8N Sequences | IImagined.ai",
+  title: "Email Marketing Automation: Advanced N8N Sequences",
   description: "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations with 127K+ students and...",
   keywords: ["email marketing automation","automated email sequences","email automation","marketing automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Email Marketing",
   openGraph: {
-    title: "Email Marketing Automation: Advanced N8N Sequences | IImagined.ai",
+    title: "Email Marketing Automation: Advanced N8N Sequences",
     description: "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations",
     url: "https://iimagined.ai/blog/email-marketing-automation-advanced-n8n-sequences",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Email Marketing Automation: Advanced N8N Sequences | IImagined.ai",
+    title: "Email Marketing Automation: Advanced N8N Sequences",
     description: "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations",
     images: [{
       url: "https://iimagined.ai/images/blog/email-marketing-automation-advanced-n8n-sequences-og.jpg",

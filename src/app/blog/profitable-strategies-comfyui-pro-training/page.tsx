@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Profitable-strategies Comfyui Pro Training: Expert Guide 2025",
+  title: "Profitable-strategies Comfyui Pro Training: Expert Guide",
   description: "profitable-strategies comfyui pro training guide, profitable-strategies comfyui pro training tutorial, profitable-strategies comfyui pro training course - Exper",
   keywords: ["profitable-strategies comfyui pro training","profitable-strategies comfyui pro training guide","profitable-strategies comfyui pro training 2025","profitable-strategies comfyui pro training course","profitable-strategies comfyui pro training training","profitable-strategies","profitable-strategies comfyui pro training","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "ComfyUI Pro Training",
   openGraph: {
-    title: "Profitable-strategies Comfyui Pro Training: Expert Guide 2025",
+    title: "Profitable-strategies Comfyui Pro Training: Expert Guide",
     description: "profitable-strategies comfyui pro training guide, profitable-strategies comfyui pro training tutorial, profitable-strategies comfyui pro training course - Exper",
     url: "https://iimagined.ai/blog/profitable-strategies-comfyui-pro-training",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Profitable-strategies Comfyui Pro Training: Expert Guide 2025",
+    title: "Profitable-strategies Comfyui Pro Training: Expert Guide",
     description: "profitable-strategies comfyui pro training guide, profitable-strategies comfyui pro training tutorial, profitable-strategies comfyui pro training course - Exper",
     images: [{
       url: "https://iimagined.ai/images/profitable-strategies-comfyui-pro-training-og.jpg",

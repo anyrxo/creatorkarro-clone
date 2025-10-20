@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Professional-certification Comfyui Pro Training: Expert Guide 2025",
+  title: "Professional-certification Comfyui Pro Training: Expert",
   description: "professional-certification comfyui pro training guide, professional-certification comfyui pro training tutorial, professional-certification comfyui pro training",
   keywords: ["professional-certification comfyui pro training","professional-certification comfyui pro training guide","professional-certification comfyui pro training 2025","professional-certification comfyui pro training course","professional-certification comfyui pro training training","professional-certification","professional-certification comfyui pro training","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "ComfyUI Pro Training",
   openGraph: {
-    title: "Professional-certification Comfyui Pro Training: Expert Guide 2025",
+    title: "Professional-certification Comfyui Pro Training: Expert",
     description: "professional-certification comfyui pro training guide, professional-certification comfyui pro training tutorial, professional-certification comfyui pro training",
     url: "https://iimagined.ai/blog/professional-certification-comfyui-pro-training",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Professional-certification Comfyui Pro Training: Expert Guide 2025",
+    title: "Professional-certification Comfyui Pro Training: Expert",
     description: "professional-certification comfyui pro training guide, professional-certification comfyui pro training tutorial, professional-certification comfyui pro training",
     images: [{
       url: "https://iimagined.ai/images/professional-certification-comfyui-pro-training-og.jpg",

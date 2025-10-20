@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "AI Influencer Success",
+  title: "AI Influencer Success: Complete Guide & Expert Strategies",
   description: "AI Influencer Success comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
   keywords: ["influencer", "success", "influencer 2025", "influencer success", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "AI Influencer Success",
+    title: "AI Influencer Success: Complete Guide & Expert Strategies",
     description: "AI Influencer Success comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     url: "https://iimagined.ai/blog/ai-influencer-success",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "AI Influencer Success",
+    title: "AI Influencer Success: Complete Guide & Expert Strategies",
     description: "AI Influencer Success comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     images: [{
       url: "https://iimagined.ai/images/ai-influencer-success-og.jpg",

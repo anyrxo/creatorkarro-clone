@@ -1,0 +1,354 @@
+name: SEO Health Checks
+
+on:
+  pull_request:
+    branches: [ master, main ]
+    paths:
+      - 'src/app/blog/**/*.tsx'
+      - 'src/app/blog/**/*.ts'
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'src/app/blog/**/*.tsx'
+      - 'src/app/blog/**/*.ts'
+  schedule:
+    # Run daily at 6 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  seo-health-check:
+    name: SEO Health Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run SEO Health Check
+        id: health-check
+        run: |
+          node scripts/seo-health-check.js > seo-health-output.txt 2>&1 || true
+          cat seo-health-output.txt
+        continue-on-error: true
+
+      - name: Check if health check passed
+        run: |
+          if grep -q "HEALTH CHECK FAILED" seo-health-output.txt; then
+            echo "::error::SEO Health Check failed with critical issues"
+            exit 1
+          fi
+
+      - name: Upload health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-health-report-${{ github.sha }}
+          path: |
+            reports/seo-health/*.json
+            seo-health-output.txt
+          retention-days: 30
+
+      - name: Comment PR with health status
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            let healthData;
+            try {
+              healthData = JSON.parse(fs.readFileSync('reports/seo-health/latest.json', 'utf8'));
+            } catch (error) {
+              console.log('Could not read health report');
+              return;
+            }
+
+            const scoreEmoji = healthData.healthScore >= 90 ? '🟢' :
+                              healthData.healthScore >= 70 ? '🟡' : '🔴';
+
+            const body = `## ${scoreEmoji} SEO Health Check Report
+
+            **Health Score:** ${healthData.healthScore}/100
+            **Date:** ${new Date(healthData.timestamp).toLocaleString()}
+
+            ### Issues Summary
+            - ❌ Critical: ${healthData.issues.critical.length}
+            - ⚠️ High: ${healthData.issues.high.length}
+            - ⚡ Medium: ${healthData.issues.medium.length}
+            - ℹ️ Low: ${healthData.issues.low.length}
+
+            ### Compliance Rates
+            - Title Tags: ${healthData.metrics.titleCompliance.rate}%
+            - Meta Descriptions: ${healthData.metrics.descriptionCompliance.rate}%
+            - Schema Markup: ${healthData.metrics.schemaPresence.rate}%
+            - H1 Tags: ${healthData.metrics.h1Tags.rate}%
+
+            ${healthData.issues.critical.length > 0 ? `
+            ### ⚠️ Critical Issues (First 5)
+            ${healthData.issues.critical.slice(0, 5).map(i => `- **${i.post}**: ${i.message}`).join('\n')}
+            ` : ''}
+
+            ${healthData.healthScore < 70 ? '> ⚠️ **Action Required:** Health score is below 70. Please review and fix critical issues before merging.' : ''}
+
+            <details>
+            <summary>View Full Report</summary>
+
+            Download the full report artifact from the workflow run for detailed analysis.
+
+            </details>
+            `;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });
+
+  schema-validation:
+    name: Schema Validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate Schema Markup
+        id: schema-validation
+        run: |
+          node scripts/validate-all-schema.js > schema-validation-output.txt 2>&1 || true
+          cat schema-validation-output.txt
+        continue-on-error: true
+
+      - name: Check if validation passed
+        run: |
+          if grep -q "VALIDATION FAILED" schema-validation-output.txt; then
+            echo "::warning::Schema validation found critical issues"
+            # Don't fail the workflow, just warn
+          fi
+
+      - name: Upload schema validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: schema-validation-report-${{ github.sha }}
+          path: |
+            reports/schema-validation/*.json
+            schema-validation-output.txt
+          retention-days: 30
+
+  internal-links-check:
+    name: Internal Links Analysis
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Analyze Internal Links
+        id: links-analysis
+        run: |
+          node scripts/analyze-internal-links.js > internal-links-output.txt 2>&1 || true
+          cat internal-links-output.txt
+        continue-on-error: true
+
+      - name: Check for broken links
+        run: |
+          if grep -q "ANALYSIS FAILED" internal-links-output.txt; then
+            echo "::warning::Internal links analysis found critical issues"
+          fi
+
+      - name: Upload internal links report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: internal-links-report-${{ github.sha }}
+          path: |
+            reports/internal-links/*.json
+            internal-links-output.txt
+          retention-days: 30
+
+  generate-sitemap:
+    name: Generate Sitemap
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Sitemap
+        run: |
+          node scripts/generate-sitemap.js
+          echo "Sitemap generated successfully"
+
+      - name: Check if sitemap changed
+        id: sitemap-check
+        run: |
+          if [ -f public/sitemap.xml ]; then
+            echo "sitemap_exists=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push sitemap
+        if: steps.sitemap-check.outputs.sitemap_exists == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/sitemap*.xml public/robots.txt
+          git diff --staged --quiet || git commit -m "🗺️ Auto-update sitemap [skip ci]"
+          git push
+
+  performance-monitoring:
+    name: SEO Performance Monitoring
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Monitor SEO Performance
+        run: |
+          node scripts/monitor-seo-performance.js
+          echo "Performance monitoring complete"
+
+      - name: Generate Weekly Report
+        if: github.event_name == 'schedule'
+        run: |
+          node scripts/generate-seo-report.js
+          echo "Weekly report generated"
+
+      - name: Upload performance reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-performance-reports-${{ github.run_number }}
+          path: |
+            reports/seo-performance/*.json
+            reports/weekly-reports/*.json
+            reports/weekly-reports/*.html
+          retention-days: 90
+
+      - name: Send report notification
+        if: github.event_name == 'schedule'
+        run: |
+          echo "Weekly SEO report generated. Check artifacts for HTML version."
+          # TODO: Add email notification or Slack webhook here
+
+  seo-guard:
+    name: SEO Regression Prevention
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check for SEO regressions
+        run: |
+          # Get list of changed files
+          git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E 'src/app/blog/.*\.tsx$' > changed-files.txt || true
+
+          if [ -s changed-files.txt ]; then
+            echo "Checking SEO for changed blog files..."
+            node scripts/seo-guard.js
+          else
+            echo "No blog files changed, skipping SEO guard"
+          fi
+
+      - name: Block merge if critical SEO issues
+        if: failure()
+        run: |
+          echo "::error::Critical SEO issues detected. Please fix before merging."
+          exit 1
+
+  summary:
+    name: SEO Checks Summary
+    runs-on: ubuntu-latest
+    needs: [seo-health-check, schema-validation, internal-links-check]
+    if: always()
+
+    steps:
+      - name: Generate Summary
+        run: |
+          echo "# 📊 SEO Checks Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| SEO Health Check | ${{ needs.seo-health-check.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Schema Validation | ${{ needs.schema-validation.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Internal Links | ${{ needs.internal-links-check.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📄 **Reports:** Download artifacts for detailed analysis" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [[ "${{ needs.seo-health-check.result }}" == "failure" ]]; then
+            echo "⚠️ **Action Required:** Critical SEO issues detected" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ All SEO checks passed successfully" >> $GITHUB_STEP_SUMMARY
+          fi

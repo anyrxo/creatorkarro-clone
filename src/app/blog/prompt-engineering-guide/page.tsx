@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Prompt Engineering Guide",
+  title: "Prompt Engineering Guide: Master AI Prompts in 2025",
   description: "Complete prompt engineering guide - step-by-step instructions, best practices, and expert tips",
   keywords: ["prompt", "engineering", "guide", "prompt 2025", "prompt engineering guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Prompt Engineering Guide",
+    title: "Prompt Engineering Guide: Master AI Prompts in 2025",
     description: "Complete prompt engineering guide - step-by-step instructions, best practices, and expert tips",
     url: "https://iimagined.ai/blog/prompt-engineering-guide",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Prompt Engineering Guide",
+    title: "Prompt Engineering Guide: Master AI Prompts in 2025",
     description: "Complete prompt engineering guide - step-by-step instructions, best practices, and expert tips",
     images: [{
       url: "https://iimagined.ai/images/prompt-engineering-guide-og.jpg",

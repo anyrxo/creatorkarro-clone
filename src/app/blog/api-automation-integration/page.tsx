@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "API Automation Integration",
+  title: "API Automation Integration: Complete Guide & Expert",
   description: "Complete guide to api automation integration - proven strategies, tools, and techniques for 2025",
   keywords: ["api", "automation", "integration", "api 2025", "api automation integration", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "API Automation Integration",
+    title: "API Automation Integration: Complete Guide & Expert",
     description: "Complete guide to api automation integration - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/api-automation-integration",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "API Automation Integration",
+    title: "API Automation Integration: Complete Guide & Expert",
     description: "Complete guide to api automation integration - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/api-automation-integration-og.jpg",

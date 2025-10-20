@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Create Online Courses That Sell: Step-by-Step Blueprint | IImagined.ai",
+  title: "Create Online Courses That Sell: Step-by-Step Blueprint",
   description: "create online courses, online course creation, course business - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+...",
   keywords: ["create online courses","online course creation","course business","sell online courses","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Course Creation",
   openGraph: {
-    title: "Create Online Courses That Sell: Step-by-Step Blueprint | IImagined.ai",
+    title: "Create Online Courses That Sell: Step-by-Step Blueprint",
     description: "create online courses, online course creation, course business - Expert guide from the creators of Digital Products Mastery",
     url: "https://iimagined.ai/blog/create-online-courses-that-sell-step-by-step-blueprint",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Create Online Courses That Sell: Step-by-Step Blueprint | IImagined.ai",
+    title: "Create Online Courses That Sell: Step-by-Step Blueprint",
     description: "create online courses, online course creation, course business - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/create-online-courses-that-sell-step-by-step-blueprint-og.jpg",

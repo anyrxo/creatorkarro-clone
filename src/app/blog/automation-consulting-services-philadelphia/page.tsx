@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Automation Consulting Services Philadelphia: Expert Guide 2025",
+  title: "Automation Consulting Services Philadelphia: Expert Guide",
   description: "automation consulting services philadelphia guide, automation consulting services philadelphia tutorial, automation consulting services philadelphia course - Ex",
   keywords: ["automation consulting services philadelphia","automation consulting services philadelphia guide","automation consulting services philadelphia 2025","automation consulting services philadelphia course","automation consulting services philadelphia training","automation","automation consulting services philadelphia","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Automation Consulting Services Philadelphia: Expert Guide 2025",
+    title: "Automation Consulting Services Philadelphia: Expert Guide",
     description: "automation consulting services philadelphia guide, automation consulting services philadelphia tutorial, automation consulting services philadelphia course - Ex",
     url: "https://iimagined.ai/blog/automation-consulting-services-philadelphia",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Automation Consulting Services Philadelphia: Expert Guide 2025",
+    title: "Automation Consulting Services Philadelphia: Expert Guide",
     description: "automation consulting services philadelphia guide, automation consulting services philadelphia tutorial, automation consulting services philadelphia course - Ex",
     images: [{
       url: "https://iimagined.ai/images/automation-consulting-services-philadelphia-og.jpg",

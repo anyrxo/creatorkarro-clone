@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "YouTube Shorts Strategy",
+  title: "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
   description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2025",
   keywords: ["youtube", "shorts", "strategy", "youtube 2025", "youtube shorts strategy", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "YouTube Shorts Strategy",
+    title: "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
     description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2025",
     url: "https://iimagined.ai/blog/youtube-shorts-strategy",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "YouTube Shorts Strategy",
+    title: "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
     description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2025",
     images: [{
       url: "https://iimagined.ai/images/youtube-shorts-strategy-og.jpg",

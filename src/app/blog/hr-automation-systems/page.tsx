@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "HR Automation Systems",
+  title: "HR Automation Systems: Complete Guide & Expert Strategies",
   description: "Complete guide to hr automation systems - proven strategies, tools, and techniques for 2025",
   keywords: ["automation", "systems", "automation 2025", "automation systems", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "HR Automation Systems",
+    title: "HR Automation Systems: Complete Guide & Expert Strategies",
     description: "Complete guide to hr automation systems - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/hr-automation-systems",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "HR Automation Systems",
+    title: "HR Automation Systems: Complete Guide & Expert Strategies",
     description: "Complete guide to hr automation systems - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/hr-automation-systems-og.jpg",

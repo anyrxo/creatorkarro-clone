@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Intensive-bootcamp Instagram Growth Academy: Expert Guide 2025",
+  title: "Intensive-bootcamp Instagram Growth Academy: Expert Guide",
   description: "intensive-bootcamp instagram growth academy guide, intensive-bootcamp instagram growth academy tutorial, intensive-bootcamp instagram growth academy course - Ex",
   keywords: ["intensive-bootcamp instagram growth academy","intensive-bootcamp instagram growth academy guide","intensive-bootcamp instagram growth academy 2025","intensive-bootcamp instagram growth academy course","intensive-bootcamp instagram growth academy training","intensive-bootcamp","intensive-bootcamp instagram growth academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Instagram Growth Academy",
   openGraph: {
-    title: "Intensive-bootcamp Instagram Growth Academy: Expert Guide 2025",
+    title: "Intensive-bootcamp Instagram Growth Academy: Expert Guide",
     description: "intensive-bootcamp instagram growth academy guide, intensive-bootcamp instagram growth academy tutorial, intensive-bootcamp instagram growth academy course - Ex",
     url: "https://iimagined.ai/blog/intensive-bootcamp-instagram-growth-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Intensive-bootcamp Instagram Growth Academy: Expert Guide 2025",
+    title: "Intensive-bootcamp Instagram Growth Academy: Expert Guide",
     description: "intensive-bootcamp instagram growth academy guide, intensive-bootcamp instagram growth academy tutorial, intensive-bootcamp instagram growth academy course - Ex",
     images: [{
       url: "https://iimagined.ai/images/intensive-bootcamp-instagram-growth-academy-og.jpg",

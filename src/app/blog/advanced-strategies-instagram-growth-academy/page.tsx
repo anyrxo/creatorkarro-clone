@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Advanced-strategies Instagram Growth Academy: Expert Guide 2025",
+  title: "Advanced-strategies Instagram Growth Academy: Expert Guide",
   description: "advanced-strategies instagram growth academy guide, advanced-strategies instagram growth academy tutorial, advanced-strategies instagram growth academy course -",
   keywords: ["advanced-strategies instagram growth academy","advanced-strategies instagram growth academy guide","advanced-strategies instagram growth academy 2025","advanced-strategies instagram growth academy course","advanced-strategies instagram growth academy training","advanced-strategies","advanced-strategies instagram growth academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Instagram Growth Academy",
   openGraph: {
-    title: "Advanced-strategies Instagram Growth Academy: Expert Guide 2025",
+    title: "Advanced-strategies Instagram Growth Academy: Expert Guide",
     description: "advanced-strategies instagram growth academy guide, advanced-strategies instagram growth academy tutorial, advanced-strategies instagram growth academy course -",
     url: "https://iimagined.ai/blog/advanced-strategies-instagram-growth-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Advanced-strategies Instagram Growth Academy: Expert Guide 2025",
+    title: "Advanced-strategies Instagram Growth Academy: Expert Guide",
     description: "advanced-strategies instagram growth academy guide, advanced-strategies instagram growth academy tutorial, advanced-strategies instagram growth academy course -",
     images: [{
       url: "https://iimagined.ai/images/advanced-strategies-instagram-growth-academy-og.jpg",

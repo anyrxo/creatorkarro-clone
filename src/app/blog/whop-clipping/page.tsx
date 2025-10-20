@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Whop Clipping",
+    title: "Whop Clipping: Complete Guide to Content Monetization",
     description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/whop-clipping",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Whop Clipping",
+    title: "Whop Clipping: Complete Guide to Content Monetization",
     description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/whop-clipping-og.jpg",

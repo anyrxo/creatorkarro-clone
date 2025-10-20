@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "How To Sell Templates",
+  title: "How To Sell Templates: Complete Guide & Expert Strategies",
   description: "How To Sell Templates - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["how", "sell", "templates", "how 2025", "how sell templates", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "How To Sell Templates",
+    title: "How To Sell Templates: Complete Guide & Expert Strategies",
     description: "How To Sell Templates - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/how-to-sell-templates",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "How To Sell Templates",
+    title: "How To Sell Templates: Complete Guide & Expert Strategies",
     description: "How To Sell Templates - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/how-to-sell-templates-og.jpg",

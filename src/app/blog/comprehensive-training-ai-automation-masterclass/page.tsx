@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Comprehensive-training Ai Automation Masterclass: Expert Guide 2025",
+  title: "Comprehensive-training Ai Automation Masterclass: Expert",
   description: "comprehensive-training ai automation masterclass guide, comprehensive-training ai automation masterclass tutorial, comprehensive-training ai automation mastercl",
   keywords: ["comprehensive-training ai automation masterclass","comprehensive-training ai automation masterclass guide","comprehensive-training ai automation masterclass 2025","comprehensive-training ai automation masterclass course","comprehensive-training ai automation masterclass training","comprehensive-training","comprehensive-training ai automation masterclass","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Comprehensive-training Ai Automation Masterclass: Expert Guide 2025",
+    title: "Comprehensive-training Ai Automation Masterclass: Expert",
     description: "comprehensive-training ai automation masterclass guide, comprehensive-training ai automation masterclass tutorial, comprehensive-training ai automation mastercl",
     url: "https://iimagined.ai/blog/comprehensive-training-ai-automation-masterclass",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Comprehensive-training Ai Automation Masterclass: Expert Guide 2025",
+    title: "Comprehensive-training Ai Automation Masterclass: Expert",
     description: "comprehensive-training ai automation masterclass guide, comprehensive-training ai automation masterclass tutorial, comprehensive-training ai automation mastercl",
     images: [{
       url: "https://iimagined.ai/images/comprehensive-training-ai-automation-masterclass-og.jpg",

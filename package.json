@@ -28,7 +28,16 @@
     "generate-programmatic": "npx ts-node src/scripts/generateProgrammaticPages.ts",
     "validate-meta-descriptions": "node scripts/validate-meta-descriptions.js",
     "fix-meta-descriptions": "node scripts/fix-meta-descriptions.js",
-    "optimize-images": "node scripts/optimize-images.js"
+    "optimize-images": "node scripts/optimize-images.js",
+    "seo:health": "node scripts/seo-health-check.js",
+    "seo:guard": "node scripts/seo-guard.js",
+    "seo:schema": "node scripts/validate-all-schema.js",
+    "seo:links": "node scripts/analyze-internal-links.js",
+    "seo:sitemap": "node scripts/generate-sitemap.js",
+    "seo:performance": "node scripts/monitor-seo-performance.js",
+    "seo:report": "node scripts/generate-seo-report.js",
+    "seo:all": "npm run seo:health && npm run seo:schema && npm run seo:links && npm run seo:performance && npm run seo:report",
+    "seo:install-hook": "node scripts/seo-guard.js --install"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

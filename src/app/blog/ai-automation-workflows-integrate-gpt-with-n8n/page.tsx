@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "AI Automation Workflows: Integrate GPT with N8N | IImagined.ai",
+  title: "AI Automation Workflows: Integrate GPT with N8N",
   description: "ai automation, n8n ai integration, gpt automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
   keywords: ["ai automation","n8n ai integration","gpt automation","ai workflow automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Integration",
   openGraph: {
-    title: "AI Automation Workflows: Integrate GPT with N8N | IImagined.ai",
+    title: "AI Automation Workflows: Integrate GPT with N8N",
     description: "ai automation, n8n ai integration, gpt automation - Expert guide from the creators of N8N AI Automations",
     url: "https://iimagined.ai/blog/ai-automation-workflows-integrate-gpt-with-n8n",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "AI Automation Workflows: Integrate GPT with N8N | IImagined.ai",
+    title: "AI Automation Workflows: Integrate GPT with N8N",
     description: "ai automation, n8n ai integration, gpt automation - Expert guide from the creators of N8N AI Automations",
     images: [{
       url: "https://iimagined.ai/images/blog/ai-automation-workflows-integrate-gpt-with-n8n-og.jpg",

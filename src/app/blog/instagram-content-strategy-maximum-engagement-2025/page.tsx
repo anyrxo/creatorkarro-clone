@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Content Strategy for Maximum Engagement 2025 | IImagined.ai",
+  title: "Instagram Content Strategy for Maximum Engagement 2025",
   description: "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
   keywords: ["instagram content strategy","instagram content","instagram engagement","instagram posts","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Content Strategy",
   openGraph: {
-    title: "Instagram Content Strategy for Maximum Engagement 2025 | IImagined.ai",
+    title: "Instagram Content Strategy for Maximum Engagement 2025",
     description: "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited",
     url: "https://iimagined.ai/blog/instagram-content-strategy-maximum-engagement-2025",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Content Strategy for Maximum Engagement 2025 | IImagined.ai",
+    title: "Instagram Content Strategy for Maximum Engagement 2025",
     description: "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited",
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-content-strategy-maximum-engagement-2025-og.jpg",

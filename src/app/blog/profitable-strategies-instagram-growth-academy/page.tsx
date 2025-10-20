@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Profitable-strategies Instagram Growth Academy: Expert Guide 2025",
+  title: "Profitable-strategies Instagram Growth Academy: Expert Guide",
   description: "profitable-strategies instagram growth academy guide, profitable-strategies instagram growth academy tutorial, profitable-strategies instagram growth academy co",
   keywords: ["profitable-strategies instagram growth academy","profitable-strategies instagram growth academy guide","profitable-strategies instagram growth academy 2025","profitable-strategies instagram growth academy course","profitable-strategies instagram growth academy training","profitable-strategies","profitable-strategies instagram growth academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Instagram Growth Academy",
   openGraph: {
-    title: "Profitable-strategies Instagram Growth Academy: Expert Guide 2025",
+    title: "Profitable-strategies Instagram Growth Academy: Expert Guide",
     description: "profitable-strategies instagram growth academy guide, profitable-strategies instagram growth academy tutorial, profitable-strategies instagram growth academy co",
     url: "https://iimagined.ai/blog/profitable-strategies-instagram-growth-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Profitable-strategies Instagram Growth Academy: Expert Guide 2025",
+    title: "Profitable-strategies Instagram Growth Academy: Expert Guide",
     description: "profitable-strategies instagram growth academy guide, profitable-strategies instagram growth academy tutorial, profitable-strategies instagram growth academy co",
     images: [{
       url: "https://iimagined.ai/images/profitable-strategies-instagram-growth-academy-og.jpg",

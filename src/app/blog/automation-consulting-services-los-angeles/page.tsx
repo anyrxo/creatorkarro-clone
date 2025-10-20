@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Automation Consulting Services Los Angeles: Expert Guide 2025",
+  title: "Automation Consulting Services Los Angeles: Expert Guide",
   description: "automation consulting services los angeles guide, automation consulting services los angeles tutorial, automation consulting services los angeles course - Exper",
   keywords: ["automation consulting services los angeles","automation consulting services los angeles guide","automation consulting services los angeles 2025","automation consulting services los angeles course","automation consulting services los angeles training","automation","automation consulting services los angeles","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Automation Consulting Services Los Angeles: Expert Guide 2025",
+    title: "Automation Consulting Services Los Angeles: Expert Guide",
     description: "automation consulting services los angeles guide, automation consulting services los angeles tutorial, automation consulting services los angeles course - Exper",
     url: "https://iimagined.ai/blog/automation-consulting-services-los-angeles",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Automation Consulting Services Los Angeles: Expert Guide 2025",
+    title: "Automation Consulting Services Los Angeles: Expert Guide",
     description: "automation consulting services los angeles guide, automation consulting services los angeles tutorial, automation consulting services los angeles course - Exper",
     images: [{
       url: "https://iimagined.ai/images/automation-consulting-services-los-angeles-og.jpg",

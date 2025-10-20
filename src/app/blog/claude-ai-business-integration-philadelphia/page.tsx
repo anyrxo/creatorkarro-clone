@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Claude Ai Business Integration Philadelphia: Expert Guide 2025",
+  title: "Claude Ai Business Integration Philadelphia: Expert Guide",
   description: "claude ai business integration philadelphia guide, claude ai business integration philadelphia tutorial, claude ai business integration philadelphia course - Ex",
   keywords: ["claude ai business integration philadelphia","claude ai business integration philadelphia guide","claude ai business integration philadelphia 2025","claude ai business integration philadelphia course","claude ai business integration philadelphia training","claude","claude ai business integration philadelphia","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Claude Ai Business Integration Philadelphia: Expert Guide 2025",
+    title: "Claude Ai Business Integration Philadelphia: Expert Guide",
     description: "claude ai business integration philadelphia guide, claude ai business integration philadelphia tutorial, claude ai business integration philadelphia course - Ex",
     url: "https://iimagined.ai/blog/claude-ai-business-integration-philadelphia",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Claude Ai Business Integration Philadelphia: Expert Guide 2025",
+    title: "Claude Ai Business Integration Philadelphia: Expert Guide",
     description: "claude ai business integration philadelphia guide, claude ai business integration philadelphia tutorial, claude ai business integration philadelphia course - Ex",
     images: [{
       url: "https://iimagined.ai/images/claude-ai-business-integration-philadelphia-og.jpg",

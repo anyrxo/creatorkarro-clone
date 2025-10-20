@@ -5,7 +5,7 @@ import ExpertContentGenerator from '@/components/ExpertContentGenerator'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Expert Content Generator - AI-Powered Authority Building for Course Sales",
+  title: "Expert Content Generator - AI-Powered Authority Building for",
   description: "Generate expert-level content for social media platforms using Gemini AI. Build authority in N8N automation, AI models, and Fanvue monetization to drive course sales.",
   keywords: ["expert content generator", "ai content creation", "social media authority", "n8n expert content", "fanvue monetization", "ai automation", "course marketing", "thought leadership", "content marketing", "gemini ai"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -13,7 +13,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Expert Content Generator - AI-Powered Authority Building for Course Sales",
+    title: "Expert Content Generator - AI-Powered Authority Building for",
     description: "Generate expert-level content for social media platforms using Gemini AI. Build authority in N8N automation, AI models, and Fanvue monetization to drive course sales.",
     url: "https://iimagined.ai/expert-content-generator",
     siteName: "IImagined.ai",
@@ -35,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Expert Content Generator - AI-Powered Authority Building for Course Sales",
+    title: "Expert Content Generator - AI-Powered Authority Building for",
     description: "Generate expert-level content for social media platforms using Gemini AI. Build authority in N8N automation, AI models, and Fanvue monetization to drive course sales.",
     images: [{
       url: "https://iimagined.ai/images/expert-content-generator-og.jpg",

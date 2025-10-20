@@ -6,7 +6,7 @@ import {
 } from '@/lib/guest-post-automation'
 
 export const metadata: Metadata = {
-  title: 'Guest Post Automation Dashboard | Editorial Backlink Acquisition',
+  title: "Guest Post Automation Dashboard | Editorial Backlink",
   description: 'Automated guest posting campaigns for high-authority editorial backlinks. Scale your content marketing and link building.',
   robots: 'noindex, nofollow' // Keep internal tool private
 }

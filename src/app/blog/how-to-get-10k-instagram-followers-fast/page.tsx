@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "How to Get 10K Instagram Followers Fast: Expert Guide | IImagined.ai",
+  title: "How to Get 10K Instagram Followers Fast: Expert Guide",
   description: "get instagram followers, 10k followers, instagram growth - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
   keywords: ["get instagram followers","10k followers","instagram growth","instagram followers fast","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Instagram Growth",
   openGraph: {
-    title: "How to Get 10K Instagram Followers Fast: Expert Guide | IImagined.ai",
+    title: "How to Get 10K Instagram Followers Fast: Expert Guide",
     description: "get instagram followers, 10k followers, instagram growth - Expert guide from the creators of Instagram Ignited",
     url: "https://iimagined.ai/blog/how-to-get-10k-instagram-followers-fast",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "How to Get 10K Instagram Followers Fast: Expert Guide | IImagined.ai",
+    title: "How to Get 10K Instagram Followers Fast: Expert Guide",
     description: "get instagram followers, 10k followers, instagram growth - Expert guide from the creators of Instagram Ignited",
     images: [{
       url: "https://iimagined.ai/images/blog/how-to-get-10k-instagram-followers-fast-og.jpg",

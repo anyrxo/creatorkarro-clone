@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Premium-masterclass Instagram Growth Academy: Expert Guide 2025",
+  title: "Premium-masterclass Instagram Growth Academy: Expert Guide",
   description: "premium-masterclass instagram growth academy guide, premium-masterclass instagram growth academy tutorial, premium-masterclass instagram growth academy course -",
   keywords: ["premium-masterclass instagram growth academy","premium-masterclass instagram growth academy guide","premium-masterclass instagram growth academy 2025","premium-masterclass instagram growth academy course","premium-masterclass instagram growth academy training","premium-masterclass","premium-masterclass instagram growth academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Instagram Growth Academy",
   openGraph: {
-    title: "Premium-masterclass Instagram Growth Academy: Expert Guide 2025",
+    title: "Premium-masterclass Instagram Growth Academy: Expert Guide",
     description: "premium-masterclass instagram growth academy guide, premium-masterclass instagram growth academy tutorial, premium-masterclass instagram growth academy course -",
     url: "https://iimagined.ai/blog/premium-masterclass-instagram-growth-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Premium-masterclass Instagram Growth Academy: Expert Guide 2025",
+    title: "Premium-masterclass Instagram Growth Academy: Expert Guide",
     description: "premium-masterclass instagram growth academy guide, premium-masterclass instagram growth academy tutorial, premium-masterclass instagram growth academy course -",
     images: [{
       url: "https://iimagined.ai/images/premium-masterclass-instagram-growth-academy-og.jpg",

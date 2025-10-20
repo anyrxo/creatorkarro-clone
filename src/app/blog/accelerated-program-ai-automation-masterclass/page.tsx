@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Accelerated-program Ai Automation Masterclass: Expert Guide 2025",
+  title: "Accelerated-program Ai Automation Masterclass: Expert Guide",
   description: "accelerated-program ai automation masterclass guide, accelerated-program ai automation masterclass tutorial, accelerated-program ai automation masterclass cours",
   keywords: ["accelerated-program ai automation masterclass","accelerated-program ai automation masterclass guide","accelerated-program ai automation masterclass 2025","accelerated-program ai automation masterclass course","accelerated-program ai automation masterclass training","accelerated-program","accelerated-program ai automation masterclass","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Accelerated-program Ai Automation Masterclass: Expert Guide 2025",
+    title: "Accelerated-program Ai Automation Masterclass: Expert Guide",
     description: "accelerated-program ai automation masterclass guide, accelerated-program ai automation masterclass tutorial, accelerated-program ai automation masterclass cours",
     url: "https://iimagined.ai/blog/accelerated-program-ai-automation-masterclass",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Accelerated-program Ai Automation Masterclass: Expert Guide 2025",
+    title: "Accelerated-program Ai Automation Masterclass: Expert Guide",
     description: "accelerated-program ai automation masterclass guide, accelerated-program ai automation masterclass tutorial, accelerated-program ai automation masterclass cours",
     images: [{
       url: "https://iimagined.ai/images/accelerated-program-ai-automation-masterclass-og.jpg",

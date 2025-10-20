@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "ComfyUI Tutorial: Master AI Image Generation in 2025 | IImagined.ai",
+  title: "ComfyUI Tutorial: Master AI Image Generation in 2025",
   description: "comfyui tutorial, comfyui guide, ai image generation - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
   keywords: ["comfyui tutorial","comfyui guide","ai image generation","comfyui workflows","comfyui mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Tools",
   openGraph: {
-    title: "ComfyUI Tutorial: Master AI Image Generation in 2025 | IImagined.ai",
+    title: "ComfyUI Tutorial: Master AI Image Generation in 2025",
     description: "comfyui tutorial, comfyui guide, ai image generation - Expert guide from the creators of ComfyUI Mastery",
     url: "https://iimagined.ai/blog/comfyui-tutorial-master-ai-image-generation-2025",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "ComfyUI Tutorial: Master AI Image Generation in 2025 | IImagined.ai",
+    title: "ComfyUI Tutorial: Master AI Image Generation in 2025",
     description: "comfyui tutorial, comfyui guide, ai image generation - Expert guide from the creators of ComfyUI Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/comfyui-tutorial-master-ai-image-generation-2025-og.jpg",

@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Virtual Influencer Marketing Strategy: Dominate Social Media | IImagined.ai",
+  title: "Virtual Influencer Marketing Strategy: Dominate Social Media",
   description: "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy with 127K+...",
   keywords: ["virtual influencer marketing","ai marketing strategy","virtual influencer campaigns","ai social media","ai influencers academy","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Virtual Marketing",
   openGraph: {
-    title: "Virtual Influencer Marketing Strategy: Dominate Social Media | IImagined.ai",
+    title: "Virtual Influencer Marketing Strategy: Dominate Social Media",
     description: "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy",
     url: "https://iimagined.ai/blog/virtual-influencer-marketing-strategy-dominate-social-media",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Virtual Influencer Marketing Strategy: Dominate Social Media | IImagined.ai",
+    title: "Virtual Influencer Marketing Strategy: Dominate Social Media",
     description: "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy",
     images: [{
       url: "https://iimagined.ai/images/blog/virtual-influencer-marketing-strategy-dominate-social-media-og.jpg",

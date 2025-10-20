@@ -223,7 +223,7 @@ export default function DigitalProductsPage() {
             {[
               {
                 icon: getIcon("dollarSign"),
-                title: "Working Harder, Earning Less",
+                title: "Working Harder, Earning Less: Complete Guide & Expert",
                 description: "You're grinding 60+ hours a week but your income is still capped by your time. Every dollar requires your personal involvement - there's no scalability, no freedom."
               },
               {

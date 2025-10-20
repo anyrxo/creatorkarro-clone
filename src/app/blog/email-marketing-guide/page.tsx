@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Email Marketing Guide",
+  title: "Email Marketing Guide: Build Campaigns That Convert 2025",
   description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
   keywords: ["email", "marketing", "guide", "email 2025", "email marketing guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Email Marketing Guide",
+    title: "Email Marketing Guide: Build Campaigns That Convert 2025",
     description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     url: "https://iimagined.ai/blog/email-marketing-guide",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Email Marketing Guide",
+    title: "Email Marketing Guide: Build Campaigns That Convert 2025",
     description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     images: [{
       url: "https://iimagined.ai/images/email-marketing-guide-og.jpg",

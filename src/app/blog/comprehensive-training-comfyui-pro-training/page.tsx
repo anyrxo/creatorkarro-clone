@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Comprehensive-training Comfyui Pro Training: Expert Guide 2025",
+  title: "Comprehensive-training Comfyui Pro Training: Expert Guide",
   description: "comprehensive-training comfyui pro training guide, comprehensive-training comfyui pro training tutorial, comprehensive-training comfyui pro training course - Ex",
   keywords: ["comprehensive-training comfyui pro training","comprehensive-training comfyui pro training guide","comprehensive-training comfyui pro training 2025","comprehensive-training comfyui pro training course","comprehensive-training comfyui pro training training","comprehensive-training","comprehensive-training comfyui pro training","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "ComfyUI Pro Training",
   openGraph: {
-    title: "Comprehensive-training Comfyui Pro Training: Expert Guide 2025",
+    title: "Comprehensive-training Comfyui Pro Training: Expert Guide",
     description: "comprehensive-training comfyui pro training guide, comprehensive-training comfyui pro training tutorial, comprehensive-training comfyui pro training course - Ex",
     url: "https://iimagined.ai/blog/comprehensive-training-comfyui-pro-training",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Comprehensive-training Comfyui Pro Training: Expert Guide 2025",
+    title: "Comprehensive-training Comfyui Pro Training: Expert Guide",
     description: "comprehensive-training comfyui pro training guide, comprehensive-training comfyui pro training tutorial, comprehensive-training comfyui pro training course - Ex",
     images: [{
       url: "https://iimagined.ai/images/comprehensive-training-comfyui-pro-training-og.jpg",

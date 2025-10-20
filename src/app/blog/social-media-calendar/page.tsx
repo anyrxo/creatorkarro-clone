@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Social Media Calendar",
+  title: "Social Media Calendar: Complete Guide & Expert Strategies",
   description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2025",
   keywords: ["social", "media", "calendar", "social 2025", "social media calendar", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Social Media Calendar",
+    title: "Social Media Calendar: Complete Guide & Expert Strategies",
     description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2025",
     url: "https://iimagined.ai/blog/social-media-calendar",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Social Media Calendar",
+    title: "Social Media Calendar: Complete Guide & Expert Strategies",
     description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2025",
     images: [{
       url: "https://iimagined.ai/images/social-media-calendar-og.jpg",

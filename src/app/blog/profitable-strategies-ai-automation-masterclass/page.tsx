@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Profitable-strategies Ai Automation Masterclass: Expert Guide 2025",
+  title: "Profitable-strategies Ai Automation Masterclass: Expert",
   description: "profitable-strategies ai automation masterclass guide, profitable-strategies ai automation masterclass tutorial, profitable-strategies ai automation masterclass",
   keywords: ["profitable-strategies ai automation masterclass","profitable-strategies ai automation masterclass guide","profitable-strategies ai automation masterclass 2025","profitable-strategies ai automation masterclass course","profitable-strategies ai automation masterclass training","profitable-strategies","profitable-strategies ai automation masterclass","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Profitable-strategies Ai Automation Masterclass: Expert Guide 2025",
+    title: "Profitable-strategies Ai Automation Masterclass: Expert",
     description: "profitable-strategies ai automation masterclass guide, profitable-strategies ai automation masterclass tutorial, profitable-strategies ai automation masterclass",
     url: "https://iimagined.ai/blog/profitable-strategies-ai-automation-masterclass",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Profitable-strategies Ai Automation Masterclass: Expert Guide 2025",
+    title: "Profitable-strategies Ai Automation Masterclass: Expert",
     description: "profitable-strategies ai automation masterclass guide, profitable-strategies ai automation masterclass tutorial, profitable-strategies ai automation masterclass",
     images: [{
       url: "https://iimagined.ai/images/profitable-strategies-ai-automation-masterclass-og.jpg",

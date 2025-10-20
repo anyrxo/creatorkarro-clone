@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation'
 // Redirect to our $497 course that includes comprehensive pricing psychology + strategies
 
 export const metadata = {
-  title: "Digital Product Pricing Strategies - Complete Psychology Course 2025",
+  title: "Digital Product Pricing Strategies - Complete Psychology",
   description: "Master digital product pricing psychology that converts. Complete course with proven strategies, psychology techniques & optimization frameworks.",
   robots: {
     index: false,

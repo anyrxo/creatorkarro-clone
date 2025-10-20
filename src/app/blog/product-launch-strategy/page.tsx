@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Product Launch Strategy",
+  title: "Product Launch Strategy: Complete Guide & Expert Strategies",
   description: "Product Launch Strategy - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["product", "launch", "strategy", "product 2025", "product launch strategy", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Product Launch Strategy",
+    title: "Product Launch Strategy: Complete Guide & Expert Strategies",
     description: "Product Launch Strategy - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/product-launch-strategy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Product Launch Strategy",
+    title: "Product Launch Strategy: Complete Guide & Expert Strategies",
     description: "Product Launch Strategy - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/product-launch-strategy-og.jpg",

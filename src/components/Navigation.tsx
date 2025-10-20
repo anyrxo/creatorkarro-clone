@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
+import * as analytics from '@/lib/analytics'
 
 interface DropdownItem {
   name: string
@@ -62,7 +63,11 @@ export default function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-20">
           {/* Logo - Far Left */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link
+            href="/"
+            className="flex items-center space-x-2"
+            onClick={() => analytics.trackNavigation('Logo', '/', 'main_nav')}
+          >
             <Image
               src="/anyro.webp"
               alt="Anyro"
@@ -123,6 +128,7 @@ export default function Navigation() {
                               isCoursesOpen ? `opacity-100 delay-${index * 50}` : 'opacity-0'
                             }`}
                             style={{ transitionDelay: isCoursesOpen ? `${index * 50}ms` : '0ms' }}
+                            onClick={() => analytics.trackNavigation(dropdownItem.name, dropdownItem.href, 'dropdown')}
                           >
                             {dropdownItem.name}
                           </Link>
@@ -133,6 +139,7 @@ export default function Navigation() {
                     <Link
                       href={item.href}
                       className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 rounded-full hover:bg-zinc-700/50 hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] backdrop-blur-sm"
+                      onClick={() => analytics.trackNavigation(item.name, item.href, 'main_nav')}
                     >
                       {item.name}
                     </Link>
@@ -149,6 +156,10 @@ export default function Navigation() {
               target="_blank"
               rel="noopener noreferrer"
               className="nav-pill px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] backdrop-blur-sm border-blue-500/50 hover:border-blue-400/50 font-semibold"
+              onClick={() => {
+                analytics.trackCTAClick('header_nav', 'JOIN', 'https://whop.com/anyro/premium-monthly-0a/')
+                analytics.trackOutboundLink('https://whop.com/anyro/premium-monthly-0a/', 'JOIN', 'header_nav')
+              }}
             >
               JOIN
             </Link>
@@ -158,7 +169,12 @@ export default function Navigation() {
           <div className="md:hidden ml-auto">
             <button
               className="p-2 text-gray-300 hover:text-white transition-all duration-200 hover:scale-110 active:scale-95"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen)
+                if (!isMenuOpen) {
+                  analytics.trackEvent('mobile_menu_opened', { location: 'header' })
+                }
+              }}
               aria-label="Toggle navigation menu"
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
@@ -231,7 +247,10 @@ export default function Navigation() {
                               ? `transform translate-x-0 opacity-100 delay-${dropdownIndex * 50}`
                               : 'transform -translate-x-4 opacity-0'
                           }`}
-                          onClick={() => setIsMenuOpen(false)}
+                          onClick={() => {
+                            analytics.trackNavigation(dropdownItem.name, dropdownItem.href, 'mobile')
+                            setIsMenuOpen(false)
+                          }}
                         >
                           {dropdownItem.name}
                         </Link>
@@ -242,11 +261,19 @@ export default function Navigation() {
                   <Link
                     href={item.href}
                     className={`block px-4 py-2 text-sm font-medium transition-colors duration-200 ${
-                      item.external 
-                        ? 'text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-semibold text-center hover:from-blue-500 hover:to-purple-500' 
+                      item.external
+                        ? 'text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-semibold text-center hover:from-blue-500 hover:to-purple-500'
                         : 'text-gray-300 hover:text-white'
                     }`}
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={() => {
+                      if (item.external) {
+                        analytics.trackCTAClick('mobile_menu', item.name, item.href)
+                        analytics.trackOutboundLink(item.href, item.name, 'mobile_menu')
+                      } else {
+                        analytics.trackNavigation(item.name, item.href, 'mobile')
+                      }
+                      setIsMenuOpen(false)
+                    }}
                     target={item.external ? '_blank' : undefined}
                     rel={item.external ? 'noopener noreferrer' : undefined}
                   >

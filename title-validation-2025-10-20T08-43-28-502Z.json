@@ -1,0 +1,4870 @@
+{
+  "total": 616,
+  "valid": 577,
+  "invalid": 39,
+  "missing": 39,
+  "tooShort": 0,
+  "tooLong": 0,
+  "optimal": 412,
+  "duplicates": 0,
+  "titles": [
+    {
+      "file": "src\\app\\page.tsx",
+      "title": "Instagram Ignited: Master Growth & Engagement in 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-instagram-growth-training-new-york\\page.tsx",
+      "title": "Top Instagram Growth Training | New York | IImagined.ai",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-instagram-growth-training-los-angeles\\page.tsx",
+      "title": "Top Instagram Growth Training | Los Angeles | IImagined.ai",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-instagram-growth-training-houston\\page.tsx",
+      "title": "Top Instagram Growth Training | Houston | IImagined.ai",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-instagram-growth-training-chicago\\page.tsx",
+      "title": "Top Instagram Growth Training | Chicago | IImagined.ai",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-digital-products-course-new-york\\page.tsx",
+      "title": "Top Digital Products Course | New York | IImagined.ai",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-digital-products-course-los-angeles\\page.tsx",
+      "title": "Top Digital Products Course | Los Angeles | IImagined.ai",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-digital-products-course-chicago\\page.tsx",
+      "title": "Top Digital Products Course | Chicago | IImagined.ai",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-ai-automation-course-new-york\\page.tsx",
+      "title": "Top Ai Automation Course | New York | IImagined.ai",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-ai-automation-course-los-angeles\\page.tsx",
+      "title": "Top Ai Automation Course | Los Angeles | IImagined.ai",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\top-ai-automation-course-chicago\\page.tsx",
+      "title": "Top Ai Automation Course | Chicago | IImagined.ai",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\social-signals\\page.tsx",
+      "title": "Social Signal Automation | Multi-Platform Engagement",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\parasite\\page.tsx",
+      "title": "Parasite SEO Dashboard | High Authority Link Building",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\instagram-ignited\\page.tsx",
+      "title": "Posting Daily, Getting 10 Likes",
+      "length": 31,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\guest-posts\\page.tsx",
+      "title": "Guest Post Automation Dashboard | Editorial Backlink",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\fx-trading\\page.tsx",
+      "title": "Forex Fundamentals & Market Structure",
+      "length": 37,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\faq\\page.tsx",
+      "title": "Frequently Asked Questions | IImagined.ai",
+      "length": 41,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\expert-content-generator\\page.tsx",
+      "title": "Expert Content Generator - AI-Powered Authority Building for",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\digital-products\\page.tsx",
+      "title": "Working Harder, Earning Less: Complete Guide & Expert",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\competitor-backlinks\\page.tsx",
+      "title": "Competitor Backlink Replication | Advanced Link Intelligence",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\clusters\\page.tsx",
+      "title": "Content Cluster Architecture | SEO Domination Dashboard",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-instagram-growth-training-new-york\\page.tsx",
+      "title": "Best Instagram Growth Training | New York | IImagined.ai",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-instagram-growth-training-los-angeles\\page.tsx",
+      "title": "Best Instagram Growth Training | Los Angeles | IImagined.ai",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-instagram-growth-training-houston\\page.tsx",
+      "title": "Best Instagram Growth Training | Houston | IImagined.ai",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-instagram-growth-training-chicago\\page.tsx",
+      "title": "Best Instagram Growth Training | Chicago | IImagined.ai",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-digital-products-course-new-york\\page.tsx",
+      "title": "Best Digital Products Course | New York | IImagined.ai",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-digital-products-course-los-angeles\\page.tsx",
+      "title": "Best Digital Products Course | Los Angeles | IImagined.ai",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-digital-products-course-chicago\\page.tsx",
+      "title": "Best Digital Products Course | Chicago | IImagined.ai",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-ai-automation-course-new-york\\page.tsx",
+      "title": "Best Ai Automation Course | New York | IImagined.ai",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-ai-automation-course-los-angeles\\page.tsx",
+      "title": "Best Ai Automation Course | Los Angeles | IImagined.ai",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\best-ai-automation-course-chicago\\page.tsx",
+      "title": "Best Ai Automation Course | Chicago | IImagined.ai",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\ai-influencers\\page.tsx",
+      "title": "AI Character Creation Mastery: Complete Guide & Expert",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\fx-trading\\fx-calc\\page.tsx",
+      "title": "Federal Reserve Signals Potential Rate Changes",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\youtube-shorts-strategy\\page.tsx",
+      "title": "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\workflow-automation-guide\\page.tsx",
+      "title": "Workflow Automation Guide 2025",
+      "length": 30,
+      "quality": 90,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\windsurf-ai-coding\\page.tsx",
+      "title": "Windsurf AI: Revolutionary Coding Assistant",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\whop-clipping\\page.tsx",
+      "title": "Whop Clipping: Complete Creator Earnings Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\why-n8n-is-different\\page.tsx",
+      "title": "Why N8N Is Different: Complete Guide & Expert Strategies",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\web-scraping-automation\\page.tsx",
+      "title": "Web Scraping Automation: Complete Guide & Expert Strategies",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\voice-ai-automation\\page.tsx",
+      "title": "Voice AI Automation Guide - Complete Implementation",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-influencer-trends\\page.tsx",
+      "title": "Virtual Influencer Trends: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-influencer-strategy\\page.tsx",
+      "title": "Virtual Influencer Strategy: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-influencer-platforms\\page.tsx",
+      "title": "Virtual Influencer Platforms: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-influencer-marketing-strategy-dominate-social-media\\page.tsx",
+      "title": "Virtual Influencer Marketing Strategy: Dominate Social Media",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-influencer-engagement\\page.tsx",
+      "title": "Virtual Influencer Engagement: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-influencer-creation\\page.tsx",
+      "title": "Virtual Influencer Creation: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-influencer-scaling\\page.tsx",
+      "title": "Virtual Influencer Scaling: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-content-creation\\page.tsx",
+      "title": "Virtual Content Creation: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-brand-ambassador\\page.tsx",
+      "title": "Virtual Brand Ambassador: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-influencer-automation\\page.tsx",
+      "title": "Virtual Influencer Automation: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\viral-instagram-content-strategy\\page.tsx",
+      "title": "Viral Instagram Content Strategy: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\viral-carousel-guide\\page.tsx",
+      "title": "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\virtual-influencer-consulting\\page.tsx",
+      "title": "Virtual Influencer Consulting: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\vectorize-all-in-one-rag-platform\\page.tsx",
+      "title": "Vectorize All In One Rag Platform",
+      "length": 33,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ultimate-guide-n8n-automation-hub\\page.tsx",
+      "title": "Ultimate-guide N8n Automation Hub: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ultimate-guide-instagram-growth-academy\\page.tsx",
+      "title": "Ultimate-guide Instagram Growth Academy: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ultimate-guide-comfyui-pro-training\\page.tsx",
+      "title": "Ultimate-guide Comfyui Pro Training: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ultimate-guide-ai-influencers-academy\\page.tsx",
+      "title": "Ultimate-guide Ai Influencers Academy: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ultimate-guide-ai-automation-masterclass\\page.tsx",
+      "title": "Ultimate-guide Ai Automation Masterclass: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\transformation-course-n8n-automation-hub\\page.tsx",
+      "title": "Transformation-course N8n Automation Hub: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\transformation-course-instagram-growth-academy\\page.tsx",
+      "title": "Transformation-course Instagram Growth Academy: Expert Guide",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\transformation-course-comfyui-pro-training\\page.tsx",
+      "title": "Transformation-course Comfyui Pro Training: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\transformation-course-ai-influencers-academy\\page.tsx",
+      "title": "Transformation-course Ai Influencers Academy: Expert Guide",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\transformation-course-ai-automation-masterclass\\page.tsx",
+      "title": "Transformation-course Ai Automation Masterclass: Expert",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\tiktok-growth-hacks\\page.tsx",
+      "title": "TikTok Growth Hacks: Viral Content Strategies for 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\telegram-bot-monetization\\page.tsx",
+      "title": "Telegram Bot Monetization: Complete Guide & Expert",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\success-formula-n8n-automation-hub\\page.tsx",
+      "title": "Success-formula N8n Automation Hub: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\success-formula-instagram-growth-academy\\page.tsx",
+      "title": "Success-formula Instagram Growth Academy: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\success-formula-comfyui-pro-training\\page.tsx",
+      "title": "Success-formula Comfyui Pro Training: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\success-formula-ai-automation-masterclass\\page.tsx",
+      "title": "Success-formula Ai Automation Masterclass: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\step-by-step-guide-n8n-automation-hub\\page.tsx",
+      "title": "Step-by-step-guide N8n Automation Hub: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\success-formula-ai-influencers-academy\\page.tsx",
+      "title": "Success-formula Ai Influencers Academy: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\step-by-step-guide-instagram-growth-academy\\page.tsx",
+      "title": "Step-by-step-guide Instagram Growth Academy: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\step-by-step-guide-comfyui-pro-training\\page.tsx",
+      "title": "Step-by-step-guide Comfyui Pro Training: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\step-by-step-guide-ai-influencers-academy\\page.tsx",
+      "title": "Step-by-step-guide Ai Influencers Academy: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\step-by-step-guide-ai-automation-masterclass\\page.tsx",
+      "title": "Step-by-step-guide Ai Automation Masterclass: Expert Guide",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\social-media-calendar\\page.tsx",
+      "title": "Social Media Calendar: Complete Guide & Expert Strategies",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\social-media-automation\\page.tsx",
+      "title": "Social Media Automation: Complete Guide & Expert Strategies",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\shopify-automation-ai\\page.tsx",
+      "title": "Shopify Automation AI: Complete Guide & Expert Strategies",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\sell-digital-products-on-etsy-complete-success-guide\\page.tsx",
+      "title": "Sell Digital Products on Etsy: Complete Success Guide",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\security-automation-systems\\page.tsx",
+      "title": "Security Automation Systems: Complete Guide & Expert",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\scale-content-creation\\page.tsx",
+      "title": "Scale Content Creation: Complete Guide & Expert Strategies",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\sales-page-psychology\\page.tsx",
+      "title": "Sales Page Psychology: Complete Guide & Expert Strategies",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\roocode-v3-3-cline-alternative\\page.tsx",
+      "title": "Roocode V3 3 Cline Alternative",
+      "length": 30,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\saas-automation-systems\\page.tsx",
+      "title": "SaaS Automation Systems: Complete Guide & Expert Strategies",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\robotic-process-automation\\page.tsx",
+      "title": "Robotic Process Automation: Complete Guide & Expert",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\qwen-3-alibaba-open-source-llm\\page.tsx",
+      "title": "Qwen 3 Alibaba Open Source LLM",
+      "length": 30,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\quality-assurance-automation\\page.tsx",
+      "title": "Quality Assurance Automation: Complete Guide & Expert",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\proven-methods-n8n-automation-hub\\page.tsx",
+      "title": "Proven-methods N8n Automation Hub: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\proven-methods-comfyui-pro-training\\page.tsx",
+      "title": "Proven-methods Comfyui Pro Training: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\proven-methods-instagram-growth-academy\\page.tsx",
+      "title": "Proven-methods Instagram Growth Academy: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\proven-methods-ai-influencers-academy\\page.tsx",
+      "title": "Proven-methods Ai Influencers Academy: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\proven-methods-ai-automation-masterclass\\page.tsx",
+      "title": "Proven-methods Ai Automation Masterclass: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\prompt-engineering-guide\\page.tsx",
+      "title": "Prompt Engineering Guide: Master AI Prompts in 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\profitable-strategies-n8n-automation-hub\\page.tsx",
+      "title": "Profitable-strategies N8n Automation Hub: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\profitable-strategies-instagram-growth-academy\\page.tsx",
+      "title": "Profitable-strategies Instagram Growth Academy: Expert Guide",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\profitable-strategies-comfyui-pro-training\\page.tsx",
+      "title": "Profitable-strategies Comfyui Pro Training: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\profitable-strategies-ai-influencers-academy\\page.tsx",
+      "title": "Profitable-strategies Ai Influencers Academy: Expert Guide",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\profitable-strategies-ai-automation-masterclass\\page.tsx",
+      "title": "Profitable-strategies Ai Automation Masterclass: Expert",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\professional-certification-instagram-growth-academy\\page.tsx",
+      "title": "Professional-certification Instagram Growth Academy: Expert",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\professional-certification-n8n-automation-hub\\page.tsx",
+      "title": "Professional-certification N8n Automation Hub: Expert Guide",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\professional-certification-comfyui-pro-training\\page.tsx",
+      "title": "Professional-certification Comfyui Pro Training: Expert",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\professional-certification-ai-influencers-academy\\page.tsx",
+      "title": "Professional-certification Ai Influencers Academy: Expert",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\professional-certification-ai-automation-masterclass\\page.tsx",
+      "title": "Professional-certification Ai Automation Masterclass: Expert",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\product-launch-strategy\\page.tsx",
+      "title": "Product Launch Strategy: Complete Guide & Expert Strategies",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\premium-masterclass-instagram-growth-academy\\page.tsx",
+      "title": "Premium-masterclass Instagram Growth Academy: Expert Guide",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\premium-masterclass-comfyui-pro-training\\page.tsx",
+      "title": "Premium-masterclass Comfyui Pro Training: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\premium-masterclass-ai-influencers-academy\\page.tsx",
+      "title": "Premium-masterclass Ai Influencers Academy: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\premium-masterclass-ai-automation-masterclass\\page.tsx",
+      "title": "Premium-masterclass Ai Automation Masterclass: Expert Guide",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\pinterest-automation-marketing\\page.tsx",
+      "title": "Pinterest Automation Marketing",
+      "length": 30,
+      "quality": 90,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\premium-masterclass-n8n-automation-hub\\page.tsx",
+      "title": "Premium-masterclass N8n Automation Hub: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\personal-brand-building\\page.tsx",
+      "title": "Personal Brand Building: Complete Guide & Expert Strategies",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\passive-income-blueprint\\page.tsx",
+      "title": "Complete Passive Income Blueprint for 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\passive-income-automation\\page.tsx",
+      "title": "Passive Income Automation: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\online-course-creation-mastery\\page.tsx",
+      "title": "Online Course Creation Mastery: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\online-course-creation-guide-build-sell-courses\\page.tsx",
+      "title": "Online Course Creation Guide: Build & Sell Courses That",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\online-business-automation\\page.tsx",
+      "title": "Online Business Automation: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\no-code-automation-tools\\page.tsx",
+      "title": "No Code Automation Tools: Complete Guide & Expert Strategies",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-zapier-alternative-why-n8n-superior-automation\\page.tsx",
+      "title": "N8N Zapier Alternative: Why N8N is Superior for Automation",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-workflow-templates\\page.tsx",
+      "title": "N8n Workflow Templates: Expert Guide 2025",
+      "length": 41,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-workflow-optimization\\page.tsx",
+      "title": "N8n Workflow Optimization: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-webhook-automation\\page.tsx",
+      "title": "N8n Webhook Automation: Expert Guide 2025",
+      "length": 41,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-vs-zapier-comparison\\page.tsx",
+      "title": "N8n Vs Zapier Comparison: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-tutorial-complete-beginners-guide-automation-2025\\page.tsx",
+      "title": "N8N Tutorial: Complete Beginner",
+      "length": 31,
+      "quality": 90,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-social-media-automation\\page.tsx",
+      "title": "N8n Social Media Automation: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-integration-tutorials\\page.tsx",
+      "title": "N8n Integration Tutorials: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-scheduling-workflows\\page.tsx",
+      "title": "N8n Scheduling Workflows: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-enterprise-solutions\\page.tsx",
+      "title": "N8n Enterprise Solutions: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-email-automation\\page.tsx",
+      "title": "N8n Email Automation: Expert Guide 2025",
+      "length": 39,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-ecommerce-automation\\page.tsx",
+      "title": "N8n Ecommerce Automation: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-database-connections\\page.tsx",
+      "title": "N8n Database Connections: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-data-transformation\\page.tsx",
+      "title": "N8n Data Transformation: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-database-automation-automate-data-workflows\\page.tsx",
+      "title": "N8N Database Automation: Automate Your Data Workflows",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-crm-workflows\\page.tsx",
+      "title": "N8n Crm Workflows: Expert Guide 2025",
+      "length": 36,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-custom-nodes\\page.tsx",
+      "title": "N8n Custom Nodes: Expert Guide 2025",
+      "length": 35,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-business-workflows\\page.tsx",
+      "title": "N8n Business Workflows: Expert Guide 2025",
+      "length": 41,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-business-intelligence\\page.tsx",
+      "title": "N8n Business Intelligence: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-beginners-guide\\page.tsx",
+      "title": "N8N for Beginners 2025: Complete Course Guide to Business",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-automation-success\\page.tsx",
+      "title": "N8N Automation Success - Complete Course & Results",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-automation-examples\\page.tsx",
+      "title": "N8n Automation Examples: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-automation-consulting\\page.tsx",
+      "title": "N8n Automation Consulting: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-automation-agency\\page.tsx",
+      "title": "N8n Automation Agency: Expert Guide 2025",
+      "length": 40,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-api-integrations\\page.tsx",
+      "title": "N8n Api Integrations: Expert Guide 2025",
+      "length": 39,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-api-integration-connect-any-service-workflows\\page.tsx",
+      "title": "N8N API Integration: Connect Any Service with Workflows",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\n8n-advanced-workflows\\page.tsx",
+      "title": "N8n Advanced Workflows: Expert Guide 2025",
+      "length": 41,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\most-profitable-digital-product-niches-2025\\page.tsx",
+      "title": "Most Profitable Digital Product Niches in 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\monetize-with-ai\\page.tsx",
+      "title": "Monetize With AI: Passive Income Strategies for 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\mobile-app-automation\\page.tsx",
+      "title": "Mobile App Automation: Complete Guide & Expert Strategies",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\mastery-training-instagram-growth-academy\\page.tsx",
+      "title": "Mastery-training Instagram Growth Academy: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\mastery-training-n8n-automation-hub\\page.tsx",
+      "title": "Mastery-training N8n Automation Hub: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\mastery-training-comfyui-pro-training\\page.tsx",
+      "title": "Mastery-training Comfyui Pro Training: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\mastery-training-ai-influencers-academy\\page.tsx",
+      "title": "Mastery-training Ai Influencers Academy: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\mastery-training-ai-automation-masterclass\\page.tsx",
+      "title": "Mastery-training Ai Automation Masterclass: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\manus-ai-general-automation-agent\\page.tsx",
+      "title": "Manus AI General Automation Agent",
+      "length": 33,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\make-app-automation\\page.tsx",
+      "title": "Make App Automation: Complete Workflow Builder Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\machine-learning-automation\\page.tsx",
+      "title": "Machine Learning Automation: Complete Guide & Expert",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\llama-4-open-source-ai-powerhouse\\page.tsx",
+      "title": "Llama 4 Open Source AI Powerhouse",
+      "length": 33,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\lead-generation-automation\\page.tsx",
+      "title": "Lead Generation Automation: Complete Guide & Expert",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\iot-automation-systems\\page.tsx",
+      "title": "IOT Automation Systems: Complete Guide & Expert Strategies",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\inventory-management-automation\\page.tsx",
+      "title": "Inventory Management Automation",
+      "length": 31,
+      "quality": 90,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\intensive-bootcamp-n8n-automation-hub\\page.tsx",
+      "title": "Intensive-bootcamp N8n Automation Hub: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\intensive-bootcamp-instagram-growth-academy\\page.tsx",
+      "title": "Intensive-bootcamp Instagram Growth Academy: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\intensive-bootcamp-comfyui-pro-training\\page.tsx",
+      "title": "Intensive-bootcamp Comfyui Pro Training: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\intensive-bootcamp-ai-influencers-academy\\page.tsx",
+      "title": "Intensive-bootcamp Ai Influencers Academy: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\intensive-bootcamp-ai-automation-masterclass\\page.tsx",
+      "title": "Intensive-bootcamp Ai Automation Masterclass: Expert Guide",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-story-marketing-advanced-engagement-tactics\\page.tsx",
+      "title": "Instagram Story Marketing: Advanced Engagement Tactics",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-story-engagement\\page.tsx",
+      "title": "Instagram Story Engagement: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-viral-marketing\\page.tsx",
+      "title": "Instagram Viral Marketing: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-sponsored-content\\page.tsx",
+      "title": "Instagram Sponsored Content: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-reels-viral-formula\\page.tsx",
+      "title": "Instagram Reels Viral Formula: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-reels-guide\\page.tsx",
+      "title": "Instagram Reels Guide: Create Viral Content in 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-reels-algorithm-viral-content-strategy-2025\\page.tsx",
+      "title": "Instagram Reels Algorithm: Viral Content Strategy 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-monetization-guide-15-ways-make-money\\page.tsx",
+      "title": "Instagram Monetization Guide: 15 Proven Ways to Make Money",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-monetization-guide\\page.tsx",
+      "title": "Instagram Monetization Course - Make Money on Instagram 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-monetization-blueprint\\page.tsx",
+      "title": "Instagram Monetization Blueprint: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-mistakes-lessons\\page.tsx",
+      "title": "Instagram Mistakes & Lessons - Complete Growth Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-influence-building\\page.tsx",
+      "title": "Instagram Influence Building: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-influencer-marketing-build-personal-brand\\page.tsx",
+      "title": "Instagram Influencer Marketing: Build Your Personal Brand",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-ignited-success-stories\\page.tsx",
+      "title": "Instagram Ignited Success Stories",
+      "length": 33,
+      "quality": 90,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-hashtag-research\\page.tsx",
+      "title": "Instagram Hashtag Research: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-growth-for-business\\page.tsx",
+      "title": "Instagram Growth For Business: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-growth-automation\\page.tsx",
+      "title": "Instagram Growth Automation: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-growth-hacks-that-work-2025\\page.tsx",
+      "title": "Instagram Growth Hacks That Actually Work in 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-growth-2025\\page.tsx",
+      "title": "Instagram Growth Strategies That Actually Work in 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-follower-acquisition\\page.tsx",
+      "title": "Instagram Follower Acquisition: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-creator-tools\\page.tsx",
+      "title": "Instagram Creator Tools: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-engagement-pods\\page.tsx",
+      "title": "Instagram Engagement Pods: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-creator-economy\\page.tsx",
+      "title": "Instagram Creator Economy: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-content-strategy-maximum-engagement-2025\\page.tsx",
+      "title": "Instagram Content Strategy for Maximum Engagement 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-content-optimization\\page.tsx",
+      "title": "Instagram Content Optimization: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-content-creator-guide\\page.tsx",
+      "title": "Instagram Content Creator Guide: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-content-calendar-template\\page.tsx",
+      "title": "Instagram Content Calendar Template: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-brand-partnerships\\page.tsx",
+      "title": "Instagram Brand Partnerships: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-analytics-mastery\\page.tsx",
+      "title": "Instagram Analytics Mastery: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-algorithm-secrets-master-2025\\page.tsx",
+      "title": "Instagram Algorithm Secrets: Master the 2025 Algorithm",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-algorithm-hacks-2025\\page.tsx",
+      "title": "Instagram Algorithm Hacks 2025: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\instagram-business-strategy\\page.tsx",
+      "title": "Instagram Business Strategy: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\how-to-make-money-with-comfyui-ai-art-business-guide\\page.tsx",
+      "title": "How to Make Money with ComfyUI: AI Art Business Guide",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\how-to-make-money-with-ai-influencers-15-proven-methods\\page.tsx",
+      "title": "How to Make Money with AI Influencers: 15 Proven Methods",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\how-to-get-10k-instagram-followers-fast\\page.tsx",
+      "title": "How to Get 10K Instagram Followers Fast: Expert Guide",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\how-to-create-digital-products-that-sell-2025\\page.tsx",
+      "title": "How to Create Digital Products That Sell: Complete 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt5-roadmap-creator-empire\\page.tsx",
+      "title": "GPT-5 Roadmap Creator Empire: Complete Guide & Expert",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt4o-upgrade-creator-business\\page.tsx",
+      "title": "GPT-4o Upgrade Creator Business",
+      "length": 31,
+      "quality": 90,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-san-jose\\page.tsx",
+      "title": "Gpt Automation Workflows San Jose: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-san-diego\\page.tsx",
+      "title": "Gpt Automation Workflows San Diego: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-san-antonio\\page.tsx",
+      "title": "Gpt Automation Workflows San Antonio: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\how-to-sell-templates\\page.tsx",
+      "title": "How To Sell Templates: Complete Guide & Expert Strategies",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-phoenix\\page.tsx",
+      "title": "Gpt Automation Workflows Phoenix: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-new-york\\page.tsx",
+      "title": "Gpt Automation Workflows New York: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-philadelphia\\page.tsx",
+      "title": "Gpt Automation Workflows Philadelphia: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-los-angeles\\page.tsx",
+      "title": "Gpt Automation Workflows Los Angeles: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-houston\\page.tsx",
+      "title": "Gpt Automation Workflows Houston: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-dallas\\page.tsx",
+      "title": "Gpt Automation Workflows Dallas: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows-chicago\\page.tsx",
+      "title": "Gpt Automation Workflows Chicago: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-automation-workflows\\page.tsx",
+      "title": "Gpt Automation Workflows: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\hr-automation-systems\\page.tsx",
+      "title": "HR Automation Systems: Complete Guide & Expert Strategies",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\google-io-2025-creator-opportunities\\page.tsx",
+      "title": "Google Io 2025 Creator Opportunities",
+      "length": 36,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\google-deep-research-25-pro-business\\page.tsx",
+      "title": "Google Deep Research 25 Pro Business",
+      "length": 36,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gemini-2-pro-creator-tech-empire\\page.tsx",
+      "title": "Gemini 2 Pro Creator Tech Empire",
+      "length": 32,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gemini-2-pro-bolt-diy-full-stack-revolution\\page.tsx",
+      "title": "Gemini 2 Pro Bolt Diy Full Stack Revolution",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gemini-2-5-flash-budget-ai-model\\page.tsx",
+      "title": "Gemini 2 5 Flash Budget AI Model",
+      "length": 32,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\faceless-content-strategy\\page.tsx",
+      "title": "Faceless Content Strategy: Complete Guide & Expert",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\expert-blueprint-n8n-automation-hub\\page.tsx",
+      "title": "Expert-blueprint N8n Automation Hub: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\expert-blueprint-comfyui-pro-training\\page.tsx",
+      "title": "Expert-blueprint Comfyui Pro Training: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\expert-blueprint-instagram-growth-academy\\page.tsx",
+      "title": "Expert-blueprint Instagram Growth Academy: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\expert-blueprint-ai-influencers-academy\\page.tsx",
+      "title": "Expert-blueprint Ai Influencers Academy: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\essential-n8n-workflows\\page.tsx",
+      "title": "Essential N8N Workflows: Complete Guide & Expert Strategies",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\expert-blueprint-ai-automation-masterclass\\page.tsx",
+      "title": "Expert-blueprint Ai Automation Masterclass: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\email-marketing-guide\\page.tsx",
+      "title": "Email Marketing Guide: Build Campaigns That Convert 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\email-marketing-automation-advanced-n8n-sequences\\page.tsx",
+      "title": "Email Marketing Automation: Advanced N8N Sequences",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\elite-course-n8n-automation-hub\\page.tsx",
+      "title": "Elite-course N8n Automation Hub: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\elite-course-instagram-growth-academy\\page.tsx",
+      "title": "Elite-course Instagram Growth Academy: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\elite-course-comfyui-pro-training\\page.tsx",
+      "title": "Elite-course Comfyui Pro Training: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\elite-course-ai-influencers-academy\\page.tsx",
+      "title": "Elite-course Ai Influencers Academy: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\elite-course-ai-automation-masterclass\\page.tsx",
+      "title": "Elite-course Ai Automation Masterclass: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-products-that-sell\\page.tsx",
+      "title": "Digital Products That Sell - Complete Creation Course 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-products-ideas-2025\\page.tsx",
+      "title": "50+ Digital Product Ideas That Make Money - Complete Course",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-products-empire\\page.tsx",
+      "title": "Build Your Digital Products Empire - Complete Business",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-product-success-story\\page.tsx",
+      "title": "Digital Product Success Stories - Real Student Results &",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-product-scaling\\page.tsx",
+      "title": "Digital Product Scaling: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-product-sales-funnel\\page.tsx",
+      "title": "Digital Product Sales Funnel: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-product-pricing-strategy-maximize-revenue\\page.tsx",
+      "title": "Digital Product Pricing Strategy: Maximize Your Revenue",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-product-pricing\\page.tsx",
+      "title": "Digital Product Pricing Strategies - Complete Psychology",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\gpt-4-1-vs-claude-sonnet-3-7-comparison\\page.tsx",
+      "title": "GPT 4 1 Vs Claude Sonnet 3 7 Comparison",
+      "length": 39,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-product-marketing\\page.tsx",
+      "title": "Digital Product Marketing: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-product-launch-strategy-idea-to-100k\\page.tsx",
+      "title": "Digital Product Launch Strategy: From Idea to $100K",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-product-launch-strategy\\page.tsx",
+      "title": "Digital Product Launch Strategy: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-product-empire-building\\page.tsx",
+      "title": "Digital Product Empire Building: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-marketing-automation\\page.tsx",
+      "title": "Digital Marketing Automation: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\digital-business-optimization\\page.tsx",
+      "title": "Digital Business Optimization: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\devops-automation-pipeline\\page.tsx",
+      "title": "Devops Automation Pipeline: Complete Guide & Expert",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\deepseek-r2-open-source-ai-revolution\\page.tsx",
+      "title": "DeepSeek R2 Open Source AI Revolution",
+      "length": 37,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\deepseek-r1-open-source-ai-revolution\\page.tsx",
+      "title": "DeepSeek R1 Open Source AI Revolution",
+      "length": 37,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\deepseek-r1-browser-use-ai-research\\page.tsx",
+      "title": "DeepSeek R1 Browser Use AI Research",
+      "length": 35,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\deepseek-market-disruption\\page.tsx",
+      "title": "DeepSeek Market Disruption: Complete Guide & Expert",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\deepseek-janus-pro-7b-multimodal-ai-revolution\\page.tsx",
+      "title": "DeepSeek Janus Pro 7b Multimodal AI Revolution",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\deepagent-update-god-tier-ai-automation\\page.tsx",
+      "title": "DeepAgent God-Tier AI Automation - Advanced Implementation",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\database-automation-systems\\page.tsx",
+      "title": "Database Automation Systems: Complete Guide & Expert",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\dart-ai-free-agentic-project-manager\\page.tsx",
+      "title": "Dart AI Free Agentic Project Manager",
+      "length": 36,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\cursor-ai-coding\\page.tsx",
+      "title": "Cursor AI: The Future of Coding is Here",
+      "length": 39,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\creator-revenue-streams\\page.tsx",
+      "title": "Creator Revenue Streams: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\creator-entrepreneurship-guide\\page.tsx",
+      "title": "Creator Entrepreneurship Guide: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\creator-economy-strategies\\page.tsx",
+      "title": "Creator Economy Strategies: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\creator-economy-automation\\page.tsx",
+      "title": "Creator Economy Automation: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\creator-business-systems\\page.tsx",
+      "title": "Creator Business Systems: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\creator-business-automation\\page.tsx",
+      "title": "Creator Business Automation: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\creating-ai-influencers\\page.tsx",
+      "title": "Creating AI Influencers: Complete Guide & Expert Strategies",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\create-online-courses-that-sell-step-by-step-blueprint\\page.tsx",
+      "title": "Create Online Courses That Sell: Step-by-Step Blueprint",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\create-faceless-youtube-channel\\page.tsx",
+      "title": "Create Faceless YouTube Channel",
+      "length": 31,
+      "quality": 90,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\content-scaling-framework\\page.tsx",
+      "title": "Content Scaling Framework: Complete Guide & Expert",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\content-monetization-systems\\page.tsx",
+      "title": "Content Monetization Systems: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\content-scaling-automation\\page.tsx",
+      "title": "Content Scaling Automation: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\content-creator-business-model\\page.tsx",
+      "title": "Content Creator Business Model: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\content-creation-with-ai\\page.tsx",
+      "title": "Content Creation With Ai: Complete Guide [2025]",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comprehensive-training-n8n-automation-hub\\page.tsx",
+      "title": "Comprehensive-training N8n Automation Hub: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comprehensive-training-instagram-growth-academy\\page.tsx",
+      "title": "Comprehensive-training Instagram Growth Academy: Expert",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comprehensive-training-comfyui-pro-training\\page.tsx",
+      "title": "Comprehensive-training Comfyui Pro Training: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comprehensive-training-ai-influencers-academy\\page.tsx",
+      "title": "Comprehensive-training Ai Influencers Academy: Expert Guide",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comprehensive-training-ai-automation-masterclass\\page.tsx",
+      "title": "Comprehensive-training Ai Automation Masterclass: Expert",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\composer-agent-code-llm-full-stack\\page.tsx",
+      "title": "Composer Agent: Full-Stack Development with AI",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\complete-course-n8n-automation-hub\\page.tsx",
+      "title": "Complete-course N8n Automation Hub: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\complete-course-instagram-growth-academy\\page.tsx",
+      "title": "Complete-course Instagram Growth Academy: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\complete-course-comfyui-pro-training\\page.tsx",
+      "title": "Complete-course Comfyui Pro Training: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\complete-course-ai-automation-masterclass\\page.tsx",
+      "title": "Complete-course Ai Automation Masterclass: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\complete-course-ai-influencers-academy\\page.tsx",
+      "title": "Complete-course Ai Influencers Academy: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-workflow-optimization\\page.tsx",
+      "title": "Comfyui Workflow Optimization: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-workflow-library\\page.tsx",
+      "title": "ComfyUI Workflow Library: Complete Guide & Expert Strategies",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-vs-stable-diffusion-complete-tool-comparison\\page.tsx",
+      "title": "ComfyUI vs Stable Diffusion: Complete Tool Comparison",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-tutorial-master-ai-image-generation-2025\\page.tsx",
+      "title": "ComfyUI Tutorial: Master AI Image Generation in 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-success-story\\page.tsx",
+      "title": "ComfyUI Success Story: Complete Guide & Expert Strategies",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-scaling-workflows\\page.tsx",
+      "title": "Comfyui Scaling Workflows: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-roi-optimization\\page.tsx",
+      "title": "Comfyui Roi Optimization: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-lora-training\\page.tsx",
+      "title": "Comfyui Lora Training: Expert Guide 2025",
+      "length": 40,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-model-training\\page.tsx",
+      "title": "Comfyui Model Training: Expert Guide 2025",
+      "length": 41,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-professional-workflows\\page.tsx",
+      "title": "Comfyui Professional Workflows: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-installation-setup-complete-beginner-guide\\page.tsx",
+      "title": "ComfyUI Installation & Setup: Complete Beginner Guide",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-enterprise-solutions\\page.tsx",
+      "title": "Comfyui Enterprise Solutions: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-image-upscaling\\page.tsx",
+      "title": "Comfyui Image Upscaling: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-custom-workflows\\page.tsx",
+      "title": "Comfyui Custom Workflows: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-custom-nodes-development\\page.tsx",
+      "title": "Comfyui Custom Nodes Development: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-controlnet-guide\\page.tsx",
+      "title": "Comfyui Controlnet Guide: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-comparison\\page.tsx",
+      "title": "ComfyUI Comparison: Best AI Art Tools Reviewed 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-commercial-licensing\\page.tsx",
+      "title": "Comfyui Commercial Licensing: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-business-models\\page.tsx",
+      "title": "Comfyui Business Models: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-business-case-studies\\page.tsx",
+      "title": "Comfyui Business Case Studies: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-business-automation\\page.tsx",
+      "title": "Comfyui Business Automation: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-automation-systems\\page.tsx",
+      "title": "Comfyui Automation Systems: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-batch-processing\\page.tsx",
+      "title": "Comfyui Batch Processing: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-automation-consulting\\page.tsx",
+      "title": "Comfyui Automation Consulting: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-api-integration\\page.tsx",
+      "title": "Comfyui Api Integration: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-api-business-integration\\page.tsx",
+      "title": "Comfyui Api Business Integration: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\comfyui-advanced-techniques\\page.tsx",
+      "title": "Comfyui Advanced Techniques: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\cloud-gpu-ai-automation\\page.tsx",
+      "title": "Cloud GPU AI Automation - Complete Infrastructure Guide",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\cloud-automation-infrastructure\\page.tsx",
+      "title": "Cloud Automation Infrastructure",
+      "length": 31,
+      "quality": 90,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-san-jose\\page.tsx",
+      "title": "Claude Ai Business Integration San Jose: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-san-diego\\page.tsx",
+      "title": "Claude Ai Business Integration San Diego: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-san-antonio\\page.tsx",
+      "title": "Claude Ai Business Integration San Antonio: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-phoenix\\page.tsx",
+      "title": "Claude Ai Business Integration Phoenix: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-philadelphia\\page.tsx",
+      "title": "Claude Ai Business Integration Philadelphia: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-new-york\\page.tsx",
+      "title": "Claude Ai Business Integration New York: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-los-angeles\\page.tsx",
+      "title": "Claude Ai Business Integration Los Angeles: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-dallas\\page.tsx",
+      "title": "Claude Ai Business Integration Dallas: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-houston\\page.tsx",
+      "title": "Claude Ai Business Integration Houston: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration\\page.tsx",
+      "title": "Claude Ai Business Integration: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-ai-business-integration-chicago\\page.tsx",
+      "title": "Claude Ai Business Integration Chicago: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-4-agentic-coding-revolution\\page.tsx",
+      "title": "Claude 4 Agentic Coding Revolution",
+      "length": 34,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\claude-4-vs-gpt-4-comparison\\page.tsx",
+      "title": "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-san-diego\\page.tsx",
+      "title": "Chatgpt Workflow Automation San Diego: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-san-jose\\page.tsx",
+      "title": "Chatgpt Workflow Automation San Jose: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-san-antonio\\page.tsx",
+      "title": "Chatgpt Workflow Automation San Antonio: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-phoenix\\page.tsx",
+      "title": "Chatgpt Workflow Automation Phoenix: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-new-york\\page.tsx",
+      "title": "Chatgpt Workflow Automation New York: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-philadelphia\\page.tsx",
+      "title": "Chatgpt Workflow Automation Philadelphia: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-los-angeles\\page.tsx",
+      "title": "Chatgpt Workflow Automation Los Angeles: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-houston\\page.tsx",
+      "title": "Chatgpt Workflow Automation Houston: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-dallas\\page.tsx",
+      "title": "Chatgpt Workflow Automation Dallas: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation-chicago\\page.tsx",
+      "title": "Chatgpt Workflow Automation Chicago: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-automation-workflows\\page.tsx",
+      "title": "ChatGPT Automation Workflows: Complete Guide & Expert",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-workflow-automation\\page.tsx",
+      "title": "Chatgpt Workflow Automation: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\chatgpt-automation-tips\\page.tsx",
+      "title": "ChatGPT Automation Tips: Complete Guide & Expert Strategies",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-save-20-hours-per-week\\page.tsx",
+      "title": "Business Process Automation: Save 20+ Hours Per Week",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-san-jose\\page.tsx",
+      "title": "Business Process Automation Guide San Jose: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-san-diego\\page.tsx",
+      "title": "Business Process Automation Guide San Diego: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-san-antonio\\page.tsx",
+      "title": "Business Process Automation Guide San Antonio: Expert Guide",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-phoenix\\page.tsx",
+      "title": "Business Process Automation Guide Phoenix: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-philadelphia\\page.tsx",
+      "title": "Business Process Automation Guide Philadelphia: Expert Guide",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-new-york\\page.tsx",
+      "title": "Business Process Automation Guide New York: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-houston\\page.tsx",
+      "title": "Business Process Automation Guide Houston: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-los-angeles\\page.tsx",
+      "title": "Business Process Automation Guide Los Angeles: Expert Guide",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-chicago\\page.tsx",
+      "title": "Business Process Automation Guide Chicago: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide-dallas\\page.tsx",
+      "title": "Business Process Automation Guide Dallas: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-process-automation-guide\\page.tsx",
+      "title": "Business Process Automation Guide: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-san-diego\\page.tsx",
+      "title": "Business Automation With Claude San Diego: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-san-antonio\\page.tsx",
+      "title": "Business Automation With Claude San Antonio: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-san-jose\\page.tsx",
+      "title": "Business Automation With Claude San Jose: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-phoenix\\page.tsx",
+      "title": "Business Automation With Claude Phoenix: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-philadelphia\\page.tsx",
+      "title": "Business Automation With Claude Philadelphia: Expert Guide",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-new-york\\page.tsx",
+      "title": "Business Automation With Claude New York: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-los-angeles\\page.tsx",
+      "title": "Business Automation With Claude Los Angeles: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-houston\\page.tsx",
+      "title": "Business Automation With Claude Houston: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-dallas\\page.tsx",
+      "title": "Business Automation With Claude Dallas: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude-chicago\\page.tsx",
+      "title": "Business Automation With Claude Chicago: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-with-claude\\page.tsx",
+      "title": "Business Automation With Claude: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-san-jose\\page.tsx",
+      "title": "Business Automation Blueprint San Jose: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-tools\\page.tsx",
+      "title": "Business Automation Tools: Complete Guide & Expert",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-san-diego\\page.tsx",
+      "title": "Business Automation Blueprint San Diego: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-san-antonio\\page.tsx",
+      "title": "Business Automation Blueprint San Antonio: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-phoenix\\page.tsx",
+      "title": "Business Automation Blueprint Phoenix: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-philadelphia\\page.tsx",
+      "title": "Business Automation Blueprint Philadelphia: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-new-york\\page.tsx",
+      "title": "Business Automation Blueprint New York: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-los-angeles\\page.tsx",
+      "title": "Business Automation Blueprint Los Angeles: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-houston\\page.tsx",
+      "title": "Business Automation Blueprint Houston: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-dallas\\page.tsx",
+      "title": "Business Automation Blueprint Dallas: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint-chicago\\page.tsx",
+      "title": "Business Automation Blueprint Chicago: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-automation-blueprint\\page.tsx",
+      "title": "Business Automation Blueprint: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-san-jose\\page.tsx",
+      "title": "Business Ai Implementation San Jose: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-san-diego\\page.tsx",
+      "title": "Business Ai Implementation San Diego: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-san-antonio\\page.tsx",
+      "title": "Business Ai Implementation San Antonio: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-phoenix\\page.tsx",
+      "title": "Business Ai Implementation Phoenix: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-philadelphia\\page.tsx",
+      "title": "Business Ai Implementation Philadelphia: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-new-york\\page.tsx",
+      "title": "Business Ai Implementation New York: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-los-angeles\\page.tsx",
+      "title": "Business Ai Implementation Los Angeles: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-houston\\page.tsx",
+      "title": "Business Ai Implementation Houston: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-dallas\\page.tsx",
+      "title": "Business Ai Implementation Dallas: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation-chicago\\page.tsx",
+      "title": "Business Ai Implementation Chicago: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\business-ai-implementation\\page.tsx",
+      "title": "Business Ai Implementation: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\browser-automation-marketing\\page.tsx",
+      "title": "Browser Automation Marketing: Complete Guide & Expert",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\best-passive-income-ideas-digital-products-2025\\page.tsx",
+      "title": "Best Passive Income Ideas: 20+ Digital Products That Work",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\best-automation-tools-2025-n8n-vs-zapier-vs-make\\page.tsx",
+      "title": "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\best-ai-content-creation-tools-virtual-influencers-2025\\page.tsx",
+      "title": "Best AI Content Creation Tools for Virtual Influencers 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-san-jose\\page.tsx",
+      "title": "Automation Project Management San Jose: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-san-diego\\page.tsx",
+      "title": "Automation Project Management San Diego: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-san-antonio\\page.tsx",
+      "title": "Automation Project Management San Antonio: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-phoenix\\page.tsx",
+      "title": "Automation Project Management Phoenix: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-philadelphia\\page.tsx",
+      "title": "Automation Project Management Philadelphia: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-new-york\\page.tsx",
+      "title": "Automation Project Management New York: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-houston\\page.tsx",
+      "title": "Automation Project Management Houston: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-los-angeles\\page.tsx",
+      "title": "Automation Project Management Los Angeles: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-dallas\\page.tsx",
+      "title": "Automation Project Management Dallas: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management-chicago\\page.tsx",
+      "title": "Automation Project Management Chicago: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-project-management\\page.tsx",
+      "title": "Automation Project Management: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-for-creators\\page.tsx",
+      "title": "Automation For Creators: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-san-jose\\page.tsx",
+      "title": "Automation Consulting Services San Jose: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-san-diego\\page.tsx",
+      "title": "Automation Consulting Services San Diego: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-san-antonio\\page.tsx",
+      "title": "Automation Consulting Services San Antonio: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-phoenix\\page.tsx",
+      "title": "Automation Consulting Services Phoenix: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-new-york\\page.tsx",
+      "title": "Automation Consulting Services New York: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-los-angeles\\page.tsx",
+      "title": "Automation Consulting Services Los Angeles: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-philadelphia\\page.tsx",
+      "title": "Automation Consulting Services Philadelphia: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-houston\\page.tsx",
+      "title": "Automation Consulting Services Houston: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-dallas\\page.tsx",
+      "title": "Automation Consulting Services Dallas: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services-chicago\\page.tsx",
+      "title": "Automation Consulting Services Chicago: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-services\\page.tsx",
+      "title": "Automation Consulting Services: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-san-jose\\page.tsx",
+      "title": "Automation Agency Setup San Jose: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-consulting-business\\page.tsx",
+      "title": "Automation Consulting Business: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-san-diego\\page.tsx",
+      "title": "Automation Agency Setup San Diego: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-phoenix\\page.tsx",
+      "title": "Automation Agency Setup Phoenix: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-philadelphia\\page.tsx",
+      "title": "Automation Agency Setup Philadelphia: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-san-antonio\\page.tsx",
+      "title": "Automation Agency Setup San Antonio: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-new-york\\page.tsx",
+      "title": "Automation Agency Setup New York: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-houston\\page.tsx",
+      "title": "Automation Agency Setup Houston: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-los-angeles\\page.tsx",
+      "title": "Automation Agency Setup Los Angeles: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-dallas\\page.tsx",
+      "title": "Automation Agency Setup Dallas: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup-chicago\\page.tsx",
+      "title": "Automation Agency Setup Chicago: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-setup\\page.tsx",
+      "title": "Automation Agency Setup: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-san-jose\\page.tsx",
+      "title": "Automation Agency Pricing San Jose: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-san-diego\\page.tsx",
+      "title": "Automation Agency Pricing San Diego: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-san-antonio\\page.tsx",
+      "title": "Automation Agency Pricing San Antonio: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-phoenix\\page.tsx",
+      "title": "Automation Agency Pricing Phoenix: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-philadelphia\\page.tsx",
+      "title": "Automation Agency Pricing Philadelphia: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-new-york\\page.tsx",
+      "title": "Automation Agency Pricing New York: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-los-angeles\\page.tsx",
+      "title": "Automation Agency Pricing Los Angeles: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-houston\\page.tsx",
+      "title": "Automation Agency Pricing Houston: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-dallas\\page.tsx",
+      "title": "Automation Agency Pricing Dallas: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing-chicago\\page.tsx",
+      "title": "Automation Agency Pricing Chicago: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\api-automation-integration\\page.tsx",
+      "title": "API Automation Integration: Complete Guide & Expert",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\alpha-evolve-ai-business-empire\\page.tsx",
+      "title": "Alpha Evolve AI Business Empire",
+      "length": 31,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\automation-agency-pricing\\page.tsx",
+      "title": "Automation Agency Pricing: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-san-jose\\page.tsx",
+      "title": "Ai Workflow Templates San Jose: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-san-diego\\page.tsx",
+      "title": "Ai Workflow Templates San Diego: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-san-antonio\\page.tsx",
+      "title": "Ai Workflow Templates San Antonio: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-phoenix\\page.tsx",
+      "title": "Ai Workflow Templates Phoenix: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-philadelphia\\page.tsx",
+      "title": "Ai Workflow Templates Philadelphia: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-new-york\\page.tsx",
+      "title": "Ai Workflow Templates New York: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-los-angeles\\page.tsx",
+      "title": "Ai Workflow Templates Los Angeles: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-houston\\page.tsx",
+      "title": "Ai Workflow Templates Houston: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-dallas\\page.tsx",
+      "title": "Ai Workflow Templates Dallas: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates-chicago\\page.tsx",
+      "title": "Ai Workflow Templates Chicago: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-workflow-templates\\page.tsx",
+      "title": "Ai Workflow Templates: Expert Guide 2025",
+      "length": 40,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-seo-content-optimization\\page.tsx",
+      "title": "AI SEO Content Optimization: Complete Guide & Expert",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-research-content-marketing\\page.tsx",
+      "title": "AI Research Content Marketing: Complete Guide & Expert",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-san-jose\\page.tsx",
+      "title": "Ai Productivity Systems San Jose: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-san-antonio\\page.tsx",
+      "title": "Ai Productivity Systems San Antonio: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-san-diego\\page.tsx",
+      "title": "Ai Productivity Systems San Diego: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-phoenix\\page.tsx",
+      "title": "Ai Productivity Systems Phoenix: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-philadelphia\\page.tsx",
+      "title": "Ai Productivity Systems Philadelphia: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-new-york\\page.tsx",
+      "title": "Ai Productivity Systems New York: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-los-angeles\\page.tsx",
+      "title": "Ai Productivity Systems Los Angeles: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-houston\\page.tsx",
+      "title": "Ai Productivity Systems Houston: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-dallas\\page.tsx",
+      "title": "Ai Productivity Systems Dallas: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems-chicago\\page.tsx",
+      "title": "Ai Productivity Systems Chicago: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-personality-development\\page.tsx",
+      "title": "Ai Personality Development: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-productivity-systems\\page.tsx",
+      "title": "Ai Productivity Systems: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencers-complete-guide-virtual-influencer-creation-2025\\page.tsx",
+      "title": "AI Influencers: Complete Guide to Virtual Influencer",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-trends\\page.tsx",
+      "title": "AI Influencer Trends: Virtual Creator Success in 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-success\\page.tsx",
+      "title": "AI Influencer Success: Complete Guide & Expert Strategies",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-revenue-streams\\page.tsx",
+      "title": "Ai Influencer Revenue Streams: Expert Guide 2025",
+      "length": 48,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-marketing\\page.tsx",
+      "title": "Ai Influencer Marketing: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-monetization\\page.tsx",
+      "title": "Ai Influencer Monetization: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-management\\page.tsx",
+      "title": "Ai Influencer Management: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-case-studies\\page.tsx",
+      "title": "Ai Influencer Case Studies: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-business-model\\page.tsx",
+      "title": "Ai Influencer Business Model: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-brand-partnerships\\page.tsx",
+      "title": "Ai Influencer Brand Partnerships: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-influencer-analytics\\page.tsx",
+      "title": "Ai Influencer Analytics: Expert Guide 2025",
+      "length": 42,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-image-generation-guide\\page.tsx",
+      "title": "AI Image Generation Guide 2025",
+      "length": 30,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-image-generation-for-influencers-professional-guide\\page.tsx",
+      "title": "AI Image Generation for Influencers: Professional Guide",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-era-skills\\page.tsx",
+      "title": "AI Era Skills: Master Future-Ready Tech in 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-content-opportunity\\page.tsx",
+      "title": "AI Content Opportunity: Complete Guide & Expert Strategies",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-content-income\\page.tsx",
+      "title": "AI Content Income: Earn $10K/Month Creating Content",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-content-creation-tools\\page.tsx",
+      "title": "Ai Content Creation Tools: Expert Guide 2025",
+      "length": 44,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-san-jose\\page.tsx",
+      "title": "Ai Consulting Business Model San Jose: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-san-antonio\\page.tsx",
+      "title": "Ai Consulting Business Model San Antonio: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-san-diego\\page.tsx",
+      "title": "Ai Consulting Business Model San Diego: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-phoenix\\page.tsx",
+      "title": "Ai Consulting Business Model Phoenix: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-philadelphia\\page.tsx",
+      "title": "Ai Consulting Business Model Philadelphia: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-new-york\\page.tsx",
+      "title": "Ai Consulting Business Model New York: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-los-angeles\\page.tsx",
+      "title": "Ai Consulting Business Model Los Angeles: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-houston\\page.tsx",
+      "title": "Ai Consulting Business Model Houston: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-dallas\\page.tsx",
+      "title": "Ai Consulting Business Model Dallas: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model-chicago\\page.tsx",
+      "title": "Ai Consulting Business Model Chicago: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-consulting-business-model\\page.tsx",
+      "title": "Ai Consulting Business Model: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-character-development\\page.tsx",
+      "title": "Ai Character Development: Expert Guide 2025",
+      "length": 43,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-business-transformation\\page.tsx",
+      "title": "Ai Business Transformation: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-workflows-integrate-gpt-with-n8n\\page.tsx",
+      "title": "AI Automation Workflows: Integrate GPT with N8N",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-san-jose\\page.tsx",
+      "title": "Ai Automation Tools Comparison San Jose: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-san-diego\\page.tsx",
+      "title": "Ai Automation Tools Comparison San Diego: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-san-antonio\\page.tsx",
+      "title": "Ai Automation Tools Comparison San Antonio: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-phoenix\\page.tsx",
+      "title": "Ai Automation Tools Comparison Phoenix: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-philadelphia\\page.tsx",
+      "title": "Ai Automation Tools Comparison Philadelphia: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-new-york\\page.tsx",
+      "title": "Ai Automation Tools Comparison New York: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-los-angeles\\page.tsx",
+      "title": "Ai Automation Tools Comparison Los Angeles: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-houston\\page.tsx",
+      "title": "Ai Automation Tools Comparison Houston: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-dallas\\page.tsx",
+      "title": "Ai Automation Tools Comparison Dallas: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison-chicago\\page.tsx",
+      "title": "Ai Automation Tools Comparison Chicago: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-tools-comparison\\page.tsx",
+      "title": "Ai Automation Tools Comparison: Expert Guide 2025",
+      "length": 49,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-san-jose\\page.tsx",
+      "title": "Ai Automation ROI Calculator San Jose: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-san-diego\\page.tsx",
+      "title": "Ai Automation ROI Calculator San Diego: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-san-antonio\\page.tsx",
+      "title": "Ai Automation ROI Calculator San Antonio: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-phoenix\\page.tsx",
+      "title": "Ai Automation ROI Calculator Phoenix: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-philadelphia\\page.tsx",
+      "title": "Ai Automation ROI Calculator Philadelphia: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-new-york\\page.tsx",
+      "title": "Ai Automation ROI Calculator New York: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-los-angeles\\page.tsx",
+      "title": "Ai Automation ROI Calculator Los Angeles: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-houston\\page.tsx",
+      "title": "Ai Automation ROI Calculator Houston: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-dallas\\page.tsx",
+      "title": "Ai Automation ROI Calculator Dallas: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator-chicago\\page.tsx",
+      "title": "Ai Automation ROI Calculator Chicago: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-roi-calculator\\page.tsx",
+      "title": "Ai Automation ROI Calculator: Expert Guide 2025",
+      "length": 47,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-guide-toxic-seo\\page.tsx",
+      "title": "AI Automation Guide Toxic SEO 2025",
+      "length": 34,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-guide\\page.tsx",
+      "title": "AI Automation Guide: Master Workflows & Boost Productivity",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-san-jose\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs San Jose: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-san-antonio\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs San Antonio: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-san-diego\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs San Diego: Expert Guide 2025",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-phoenix\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs Phoenix: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-philadelphia\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs Philadelphia: Expert Guide",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-new-york\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs New York: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-los-angeles\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs Los Angeles: Expert Guide",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-houston\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs Houston: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-dallas\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs Dallas: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs-chicago\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs Chicago: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-for-entrepreneurs\\page.tsx",
+      "title": "Ai Automation For Entrepreneurs: Expert Guide 2025",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-san-jose\\page.tsx",
+      "title": "Ai Automation Certification San Jose: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-san-diego\\page.tsx",
+      "title": "Ai Automation Certification San Diego: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-san-antonio\\page.tsx",
+      "title": "Ai Automation Certification San Antonio: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-phoenix\\page.tsx",
+      "title": "Ai Automation Certification Phoenix: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-philadelphia\\page.tsx",
+      "title": "Ai Automation Certification Philadelphia: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-los-angeles\\page.tsx",
+      "title": "Ai Automation Certification Los Angeles: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-new-york\\page.tsx",
+      "title": "Ai Automation Certification New York: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-houston\\page.tsx",
+      "title": "Ai Automation Certification Houston: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-dallas\\page.tsx",
+      "title": "Ai Automation Certification Dallas: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification-chicago\\page.tsx",
+      "title": "Ai Automation Certification Chicago: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-certification\\page.tsx",
+      "title": "Ai Automation Certification: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-san-jose\\page.tsx",
+      "title": "Ai Automation Case Studies San Jose: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-san-diego\\page.tsx",
+      "title": "Ai Automation Case Studies San Diego: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-san-antonio\\page.tsx",
+      "title": "Ai Automation Case Studies San Antonio: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-phoenix\\page.tsx",
+      "title": "Ai Automation Case Studies Phoenix: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-philadelphia\\page.tsx",
+      "title": "Ai Automation Case Studies Philadelphia: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-new-york\\page.tsx",
+      "title": "Ai Automation Case Studies New York: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-los-angeles\\page.tsx",
+      "title": "Ai Automation Case Studies Los Angeles: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-dallas\\page.tsx",
+      "title": "Ai Automation Case Studies Dallas: Expert Guide 2025",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-houston\\page.tsx",
+      "title": "Ai Automation Case Studies Houston: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies-chicago\\page.tsx",
+      "title": "Ai Automation Case Studies Chicago: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-case-studies\\page.tsx",
+      "title": "Ai Automation Case Studies: Expert Guide 2025",
+      "length": 45,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-business-workflows\\page.tsx",
+      "title": "AI Automation Business Workflows: Expert Guide 2025",
+      "length": 51,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-business\\page.tsx",
+      "title": "AI Automation Business Guide - Comprehensive 2025 Strategies",
+      "length": 60,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agents-business-automation\\page.tsx",
+      "title": "AI Agents Business Automation - Complete Guide",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-san-jose\\page.tsx",
+      "title": "Ai Agent Development Course San Jose: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-san-diego\\page.tsx",
+      "title": "Ai Agent Development Course San Diego: Expert Guide 2025",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-san-antonio\\page.tsx",
+      "title": "Ai Agent Development Course San Antonio: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-phoenix\\page.tsx",
+      "title": "Ai Agent Development Course Phoenix: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-philadelphia\\page.tsx",
+      "title": "Ai Agent Development Course Philadelphia: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-new-york\\page.tsx",
+      "title": "Ai Agent Development Course New York: Expert Guide 2025",
+      "length": 55,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-los-angeles\\page.tsx",
+      "title": "Ai Agent Development Course Los Angeles: Expert Guide 2025",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-houston\\page.tsx",
+      "title": "Ai Agent Development Course Houston: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-dallas\\page.tsx",
+      "title": "Ai Agent Development Course Dallas: Expert Guide 2025",
+      "length": 53,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course-chicago\\page.tsx",
+      "title": "Ai Agent Development Course Chicago: Expert Guide 2025",
+      "length": 54,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\ai-agent-development-course\\page.tsx",
+      "title": "Ai Agent Development Course: Expert Guide 2025",
+      "length": 46,
+      "quality": 95,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\advanced-strategies-n8n-automation-hub\\page.tsx",
+      "title": "Advanced-strategies N8n Automation Hub: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\advanced-strategies-instagram-growth-academy\\page.tsx",
+      "title": "Advanced-strategies Instagram Growth Academy: Expert Guide",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\advanced-strategies-comfyui-pro-training\\page.tsx",
+      "title": "Advanced-strategies Comfyui Pro Training: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\advanced-strategies-ai-influencers-academy\\page.tsx",
+      "title": "Advanced-strategies Ai Influencers Academy: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\advanced-strategies-ai-automation-masterclass\\page.tsx",
+      "title": "Advanced-strategies Ai Automation Masterclass: Expert Guide",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\advanced-comfyui-workflows-professional-ai-art\\page.tsx",
+      "title": "Advanced ComfyUI Workflows for Professional AI Art",
+      "length": 50,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\accelerated-program-n8n-automation-hub\\page.tsx",
+      "title": "Accelerated-program N8n Automation Hub: Expert Guide 2025",
+      "length": 57,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\accelerated-program-instagram-growth-academy\\page.tsx",
+      "title": "Accelerated-program Instagram Growth Academy: Expert Guide",
+      "length": 58,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\accelerated-program-comfyui-pro-training\\page.tsx",
+      "title": "Accelerated-program Comfyui Pro Training: Expert Guide 2025",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\accelerated-program-ai-influencers-academy\\page.tsx",
+      "title": "Accelerated-program Ai Influencers Academy: Expert Guide",
+      "length": 56,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\accelerated-program-ai-automation-masterclass\\page.tsx",
+      "title": "Accelerated-program Ai Automation Masterclass: Expert Guide",
+      "length": 59,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    },
+    {
+      "file": "src\\app\\blog\\500k-followers\\page.tsx",
+      "title": "How to Gain 500k Instagram Followers: Complete Guide",
+      "length": 52,
+      "quality": 100,
+      "grade": "A",
+      "isValid": true
+    }
+  ],
+  "issues": [
+    {
+      "file": "src\\app\\[country]\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\udemy-vs-iimagined\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\testimonials\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\terms\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\teachable-vs-iimagined\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\story\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\skillshare-vs-iimagined\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\security-dashboard\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\resources\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\refund-policy\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\rank-tracking\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\pbn\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\privacy-policy\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\masterclass-vs-iimagined\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\login\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\link-wheel\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\defense\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\ctr\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\coursera-vs-iimagined\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\cookie-policy\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\contact\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\checkout\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\best-instagram-growth-course-for-small-business\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\best-instagram-growth-course-for-entrepreneurs\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\best-instagram-growth-course-for-beginners\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\best-digital-products-course-for-small-business\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\best-digital-products-course-for-entrepreneurs\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\best-digital-products-course-for-beginners\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\blog\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\best-ai-automation-course-for-small-business\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\best-ai-automation-course-for-entrepreneurs\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\best-ai-automation-course-for-beginners\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\algorithm-defense\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\analytics-dashboard\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\order\\track\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\dashboard\\seo\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\blog\\ai-automation-beginners-guide\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\geo\\[country]\\[...slug]\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    },
+    {
+      "file": "src\\app\\geo\\us\\[...slug]\\page.tsx",
+      "severity": "CRITICAL",
+      "issue": "Missing title",
+      "title": null
+    }
+  ],
+  "statistics": {
+    "avgLength": "48.6",
+    "minLength": 30,
+    "maxLength": 60,
+    "avgQualityScore": "92.3"
+  }
+}

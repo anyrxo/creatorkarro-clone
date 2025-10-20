@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "How to Create Digital Products That Sell: Complete 2025 Guide | IImagined.ai",
+  title: "How to Create Digital Products That Sell: Complete 2025",
   description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
   keywords: ["create digital products","digital product ideas","sell digital products","digital products business","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Digital Products",
   openGraph: {
-    title: "How to Create Digital Products That Sell: Complete 2025 Guide | IImagined.ai",
+    title: "How to Create Digital Products That Sell: Complete 2025",
     description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery",
     url: "https://iimagined.ai/blog/how-to-create-digital-products-that-sell-2025",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "How to Create Digital Products That Sell: Complete 2025 Guide | IImagined.ai",
+    title: "How to Create Digital Products That Sell: Complete 2025",
     description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/how-to-create-digital-products-that-sell-2025-og.jpg",

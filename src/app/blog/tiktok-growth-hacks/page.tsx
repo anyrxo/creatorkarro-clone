@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "TikTok Growth Hacks",
+  title: "TikTok Growth Hacks: Viral Content Strategies for 2025",
   description: "TikTok Growth Hacks - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["tiktok", "growth", "hacks", "tiktok 2025", "tiktok growth hacks", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "TikTok Growth Hacks",
+    title: "TikTok Growth Hacks: Viral Content Strategies for 2025",
     description: "TikTok Growth Hacks - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/tiktok-growth-hacks",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "TikTok Growth Hacks",
+    title: "TikTok Growth Hacks: Viral Content Strategies for 2025",
     description: "TikTok Growth Hacks - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/tiktok-growth-hacks-og.jpg",

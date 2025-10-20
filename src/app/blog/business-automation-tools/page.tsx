@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Business Automation Tools",
+  title: "Business Automation Tools: Complete Guide & Expert",
   description: "Complete guide to business automation tools - proven strategies, tools, and techniques for 2025",
   keywords: ["business", "automation", "tools", "business 2025", "business automation tools", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Business Automation Tools",
+    title: "Business Automation Tools: Complete Guide & Expert",
     description: "Complete guide to business automation tools - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/business-automation-tools",
     siteName: "IImagined.ai",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Business Automation Tools",
+    title: "Business Automation Tools: Complete Guide & Expert",
     description: "Complete guide to business automation tools - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/business-automation-tools-og.jpg",

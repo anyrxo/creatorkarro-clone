@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Accelerated-program Ai Influencers Academy: Expert Guide 2025",
+  title: "Accelerated-program Ai Influencers Academy: Expert Guide",
   description: "accelerated-program ai influencers academy guide, accelerated-program ai influencers academy tutorial, accelerated-program ai influencers academy course - Exper",
   keywords: ["accelerated-program ai influencers academy","accelerated-program ai influencers academy guide","accelerated-program ai influencers academy 2025","accelerated-program ai influencers academy course","accelerated-program ai influencers academy training","accelerated-program","accelerated-program ai influencers academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Influencers Academy",
   openGraph: {
-    title: "Accelerated-program Ai Influencers Academy: Expert Guide 2025",
+    title: "Accelerated-program Ai Influencers Academy: Expert Guide",
     description: "accelerated-program ai influencers academy guide, accelerated-program ai influencers academy tutorial, accelerated-program ai influencers academy course - Exper",
     url: "https://iimagined.ai/blog/accelerated-program-ai-influencers-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Accelerated-program Ai Influencers Academy: Expert Guide 2025",
+    title: "Accelerated-program Ai Influencers Academy: Expert Guide",
     description: "accelerated-program ai influencers academy guide, accelerated-program ai influencers academy tutorial, accelerated-program ai influencers academy course - Exper",
     images: [{
       url: "https://iimagined.ai/images/accelerated-program-ai-influencers-academy-og.jpg",

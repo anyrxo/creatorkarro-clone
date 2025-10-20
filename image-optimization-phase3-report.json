@@ -1,0 +1,362 @@
+{
+  "timestamp": "2025-10-20T08:25:47.621Z",
+  "summary": {
+    "totalImages": 58,
+    "optimized": 0,
+    "skipped": 58,
+    "failed": 0,
+    "totalOriginalSize": 0,
+    "totalOptimizedSize": 0,
+    "totalSavings": 0,
+    "totalSavingsPercent": 0
+  },
+  "byCategory": {
+    "root": {
+      "total": 30,
+      "optimized": 0,
+      "skipped": 30,
+      "failed": 0,
+      "totalSavings": 0
+    },
+    "partners": {
+      "total": 12,
+      "optimized": 0,
+      "skipped": 12,
+      "failed": 0,
+      "totalSavings": 0
+    },
+    "testimonials": {
+      "total": 16,
+      "optimized": 0,
+      "skipped": 16,
+      "failed": 0,
+      "totalSavings": 0
+    }
+  },
+  "details": [
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\anyro.jpeg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\anyro.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\anyro.png",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\anyro.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\claude.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\digitalocean.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\google-gemini.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\loom.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\make.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\manus-ai.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\n8n.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\nvidia.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\partner-1.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\partner-3.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\whop.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\zapier.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\ai-automation-business-success-story-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\ai-automation-business-success-story-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\ai-influencers-course-virtual-personality-success.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\ai-influencers-course-virtual-personality-success.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\comfyui-ai-image-generation-course-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\comfyui-ai-image-generation-course-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\course-student-success-automation-training-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\course-student-success-automation-training-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\digital-products-course-success-story-entrepreneur.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\digital-products-course-success-story-entrepreneur.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\instagram-growth-course-500k-followers-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\instagram-growth-course-500k-followers-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\n8n-automation-course-success-story-sarah.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\n8n-automation-course-success-story-sarah.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-1.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-1.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-2.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-2.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-3.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-3.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-4.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-4.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-5.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-5.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-6.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-6.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-7.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-7.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-8.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-8.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\workflow-automation-course-entrepreneur-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\workflow-automation-course-entrepreneur-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\claude.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\digitalocean.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\google-gemini.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\loom.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\make.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\manus-ai.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\n8n.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\nvidia.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\partner-1.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\partner-3.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\whop.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\partners\\zapier.png",
+      "status": "skipped",
+      "reason": "empty file"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\ai-automation-business-success-story-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\ai-automation-business-success-story-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\ai-influencers-course-virtual-personality-success.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\ai-influencers-course-virtual-personality-success.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\comfyui-ai-image-generation-course-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\comfyui-ai-image-generation-course-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\course-student-success-automation-training-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\course-student-success-automation-training-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\digital-products-course-success-story-entrepreneur.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\digital-products-course-success-story-entrepreneur.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\instagram-growth-course-500k-followers-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\instagram-growth-course-500k-followers-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\n8n-automation-course-success-story-sarah.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\n8n-automation-course-success-story-sarah.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-1.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-1.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-2.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-2.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-3.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-3.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-4.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-4.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-5.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-5.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-6.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-6.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-7.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-7.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-8.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\testimonial-8.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    },
+    {
+      "input": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\workflow-automation-course-entrepreneur-testimonial.jpg",
+      "output": "C:\\Users\\manna\\Downloads\\Website\\public\\testimonials\\workflow-automation-course-entrepreneur-testimonial.webp",
+      "status": "skipped",
+      "reason": "webp exists"
+    }
+  ]
+}

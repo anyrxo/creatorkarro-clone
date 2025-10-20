@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "ChatGPT Automation Tips",
+  title: "ChatGPT Automation Tips: Complete Guide & Expert Strategies",
   description: "Complete guide to chatgpt automation tips - proven strategies, tools, and techniques for 2025",
   keywords: ["chatgpt", "automation", "tips", "chatgpt 2025", "chatgpt automation tips", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "ChatGPT Automation Tips",
+    title: "ChatGPT Automation Tips: Complete Guide & Expert Strategies",
     description: "Complete guide to chatgpt automation tips - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/chatgpt-automation-tips",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "ChatGPT Automation Tips",
+    title: "ChatGPT Automation Tips: Complete Guide & Expert Strategies",
     description: "Complete guide to chatgpt automation tips - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/chatgpt-automation-tips-og.jpg",

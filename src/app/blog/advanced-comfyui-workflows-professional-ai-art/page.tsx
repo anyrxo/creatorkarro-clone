@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Advanced ComfyUI Workflows for Professional AI Art | IImagined.ai",
+  title: "Advanced ComfyUI Workflows for Professional AI Art",
   description: "comfyui workflows, advanced comfyui, professional ai art - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
   keywords: ["comfyui workflows","advanced comfyui","professional ai art","comfyui techniques","comfyui mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Advanced Techniques",
   openGraph: {
-    title: "Advanced ComfyUI Workflows for Professional AI Art | IImagined.ai",
+    title: "Advanced ComfyUI Workflows for Professional AI Art",
     description: "comfyui workflows, advanced comfyui, professional ai art - Expert guide from the creators of ComfyUI Mastery",
     url: "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Advanced ComfyUI Workflows for Professional AI Art | IImagined.ai",
+    title: "Advanced ComfyUI Workflows for Professional AI Art",
     description: "comfyui workflows, advanced comfyui, professional ai art - Expert guide from the creators of ComfyUI Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/advanced-comfyui-workflows-professional-ai-art-og.jpg",

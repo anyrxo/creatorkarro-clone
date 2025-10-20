@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "ComfyUI vs Stable Diffusion: Complete Tool Comparison | IImagined.ai",
+  title: "ComfyUI vs Stable Diffusion: Complete Tool Comparison",
   description: "comfyui vs stable diffusion, ai image tools comparison, best ai art software - Expert guide from the creators of ComfyUI Mastery with 127K+ students and...",
   keywords: ["comfyui vs stable diffusion","ai image tools comparison","best ai art software","ai art tools","comfyui mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Tool Comparison",
   openGraph: {
-    title: "ComfyUI vs Stable Diffusion: Complete Tool Comparison | IImagined.ai",
+    title: "ComfyUI vs Stable Diffusion: Complete Tool Comparison",
     description: "comfyui vs stable diffusion, ai image tools comparison, best ai art software - Expert guide from the creators of ComfyUI Mastery",
     url: "https://iimagined.ai/blog/comfyui-vs-stable-diffusion-complete-tool-comparison",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "ComfyUI vs Stable Diffusion: Complete Tool Comparison | IImagined.ai",
+    title: "ComfyUI vs Stable Diffusion: Complete Tool Comparison",
     description: "comfyui vs stable diffusion, ai image tools comparison, best ai art software - Expert guide from the creators of ComfyUI Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/comfyui-vs-stable-diffusion-complete-tool-comparison-og.jpg",

@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Essential N8N Workflows",
+  title: "Essential N8N Workflows: Complete Guide & Expert Strategies",
   description: "Essential N8N Workflows - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["essential", "n8n", "workflows", "essential 2025", "essential n8n workflows", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Essential N8N Workflows",
+    title: "Essential N8N Workflows: Complete Guide & Expert Strategies",
     description: "Essential N8N Workflows - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/essential-n8n-workflows",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Essential N8N Workflows",
+    title: "Essential N8N Workflows: Complete Guide & Expert Strategies",
     description: "Essential N8N Workflows - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/essential-n8n-workflows-og.jpg",

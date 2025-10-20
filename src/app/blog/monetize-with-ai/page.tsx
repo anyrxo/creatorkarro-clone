@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Monetize With AI",
+    title: "Monetize With AI: Complete Income Generation Guide 2025",
     description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     url: "https://iimagined.ai/blog/monetize-with-ai",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Monetize With AI",
+    title: "Monetize With AI: Complete Income Generation Guide 2025",
     description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     images: [{
       url: "https://iimagined.ai/images/monetize-with-ai-og.jpg",

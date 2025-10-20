@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Professional-certification Instagram Growth Academy: Expert Guide 2025",
+  title: "Professional-certification Instagram Growth Academy: Expert",
   description: "professional-certification instagram growth academy guide, professional-certification instagram growth academy tutorial, professional-certification instagram gr",
   keywords: ["professional-certification instagram growth academy","professional-certification instagram growth academy guide","professional-certification instagram growth academy 2025","professional-certification instagram growth academy course","professional-certification instagram growth academy training","professional-certification","professional-certification instagram growth academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Instagram Growth Academy",
   openGraph: {
-    title: "Professional-certification Instagram Growth Academy: Expert Guide 2025",
+    title: "Professional-certification Instagram Growth Academy: Expert",
     description: "professional-certification instagram growth academy guide, professional-certification instagram growth academy tutorial, professional-certification instagram gr",
     url: "https://iimagined.ai/blog/professional-certification-instagram-growth-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Professional-certification Instagram Growth Academy: Expert Guide 2025",
+    title: "Professional-certification Instagram Growth Academy: Expert",
     description: "professional-certification instagram growth academy guide, professional-certification instagram growth academy tutorial, professional-certification instagram gr",
     images: [{
       url: "https://iimagined.ai/images/professional-certification-instagram-growth-academy-og.jpg",

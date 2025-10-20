@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Mobile App Automation",
+  title: "Mobile App Automation: Complete Guide & Expert Strategies",
   description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2025",
   keywords: ["mobile", "app", "automation", "mobile 2025", "mobile app automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Mobile App Automation",
+    title: "Mobile App Automation: Complete Guide & Expert Strategies",
     description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/mobile-app-automation",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Mobile App Automation",
+    title: "Mobile App Automation: Complete Guide & Expert Strategies",
     description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/mobile-app-automation-og.jpg",

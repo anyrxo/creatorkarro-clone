@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Business Process Automation Guide Philadelphia: Expert Guide 2025",
+  title: "Business Process Automation Guide Philadelphia: Expert Guide",
   description: "business process automation guide philadelphia guide, business process automation guide philadelphia tutorial, business process automation guide philadelphia co",
   keywords: ["business process automation guide philadelphia","business process automation guide philadelphia guide","business process automation guide philadelphia 2025","business process automation guide philadelphia course","business process automation guide philadelphia training","business","business process automation guide philadelphia","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Business Process Automation Guide Philadelphia: Expert Guide 2025",
+    title: "Business Process Automation Guide Philadelphia: Expert Guide",
     description: "business process automation guide philadelphia guide, business process automation guide philadelphia tutorial, business process automation guide philadelphia co",
     url: "https://iimagined.ai/blog/business-process-automation-guide-philadelphia",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Business Process Automation Guide Philadelphia: Expert Guide 2025",
+    title: "Business Process Automation Guide Philadelphia: Expert Guide",
     description: "business process automation guide philadelphia guide, business process automation guide philadelphia tutorial, business process automation guide philadelphia co",
     images: [{
       url: "https://iimagined.ai/images/business-process-automation-guide-philadelphia-og.jpg",

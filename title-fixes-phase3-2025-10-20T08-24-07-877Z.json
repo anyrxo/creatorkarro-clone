@@ -1,0 +1,2111 @@
+{
+  "fixes": [
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-era-skills/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Era Skills",
+      "after": "AI Era Skills: Master Future-Ready Tech in 2025",
+      "length": {
+        "before": 13,
+        "after": 47
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/whop-clipping/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Whop Clipping",
+      "after": "Whop Clipping: Complete Guide to Content Monetization",
+      "length": {
+        "before": 13,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/500k-followers/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "500k Followers",
+      "after": "500k Followers: Proven Instagram Growth Strategy Guide",
+      "length": {
+        "before": 14,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/monetize-with-ai/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Monetize With AI",
+      "after": "Monetize With AI: Complete Income Generation Guide 2025",
+      "length": {
+        "before": 16,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-content-income/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Content Income",
+      "after": "AI Content Income: Build Profitable Content Business 2025",
+      "length": {
+        "before": 17,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Instagram Ignited",
+      "after": "Instagram Ignited: Master Growth & Engagement in 2025",
+      "length": {
+        "before": 17,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comfyui-comparison/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "ComfyUI Comparison",
+      "after": "ComfyUI Comparison: Best AI Art Tools Reviewed 2025",
+      "length": {
+        "before": 18,
+        "after": 51
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-guide/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Automation Guide",
+      "after": "AI Automation Guide: Master Workflows & Boost Productivity",
+      "length": {
+        "before": 19,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/make-app-automation/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Make App Automation",
+      "after": "Make App Automation: Complete Workflow Builder Guide 2025",
+      "length": {
+        "before": 19,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/tiktok-growth-hacks/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "TikTok Growth Hacks",
+      "after": "TikTok Growth Hacks: Viral Content Strategies for 2025",
+      "length": {
+        "before": 19,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-influencer-trends/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Influencer Trends",
+      "after": "AI Influencer Trends: Virtual Creator Success in 2025",
+      "length": {
+        "before": 20,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/viral-carousel-guide/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Viral Carousel Guide",
+      "after": "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
+      "length": {
+        "before": 20,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/why-n8n-is-different/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Why N8N Is Different",
+      "after": "Why N8N Is Different: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 20,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-influencer-success/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Influencer Success",
+      "after": "AI Influencer Success: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 21,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comfyui-success-story/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "ComfyUI Success Story",
+      "after": "ComfyUI Success Story: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 21,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/email-marketing-guide/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Email Marketing Guide",
+      "after": "Email Marketing Guide 2025",
+      "length": {
+        "before": 21,
+        "after": 26
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/how-to-sell-templates/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "How To Sell Templates",
+      "after": "How To Sell Templates: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 21,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/hr-automation-systems/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "HR Automation Systems",
+      "after": "HR Automation Systems: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 21,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/instagram-reels-guide/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Instagram Reels Guide",
+      "after": "Instagram Reels Guide 2025",
+      "length": {
+        "before": 21,
+        "after": 26
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/mobile-app-automation/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Mobile App Automation",
+      "after": "Mobile App Automation: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 21,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/sales-page-psychology/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Sales Page Psychology",
+      "after": "Sales Page Psychology: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 21,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/shopify-automation-ai/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Shopify Automation AI",
+      "after": "Shopify Automation AI: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 21,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/social-media-calendar/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Social Media Calendar",
+      "after": "Social Media Calendar: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 21,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-content-opportunity/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Content Opportunity",
+      "after": "AI Content Opportunity: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 22,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/iot-automation-systems/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "IOT Automation Systems",
+      "after": "IOT Automation Systems: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 22,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/scale-content-creation/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Scale Content Creation",
+      "after": "Scale Content Creation: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 22,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/chatgpt-automation-tips/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "ChatGPT Automation Tips",
+      "after": "ChatGPT Automation Tips: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 23,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/creating-ai-influencers/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Creating AI Influencers",
+      "after": "Creating AI Influencers: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 23,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/essential-n8n-workflows/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Essential N8N Workflows",
+      "after": "Essential N8N Workflows: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 23,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/personal-brand-building/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Personal Brand Building",
+      "after": "Personal Brand Building: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 23,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/product-launch-strategy/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Product Launch Strategy",
+      "after": "Product Launch Strategy: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 23,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/saas-automation-systems/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "SaaS Automation Systems",
+      "after": "SaaS Automation Systems: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 23,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/social-media-automation/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Social Media Automation",
+      "after": "Social Media Automation: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 23,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/web-scraping-automation/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Web Scraping Automation",
+      "after": "Web Scraping Automation: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 23,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/youtube-shorts-strategy/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "YouTube Shorts Strategy",
+      "after": "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 23,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comfyui-workflow-library/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "ComfyUI Workflow Library",
+      "after": "ComfyUI Workflow Library: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 24,
+        "after": 60
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/no-code-automation-tools/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "No Code Automation Tools",
+      "after": "No Code Automation Tools: Complete Guide & Expert Strategies",
+      "length": {
+        "before": 24,
+        "after": 60
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/prompt-engineering-guide/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Prompt Engineering Guide",
+      "after": "Prompt Engineering Guide 2025",
+      "length": {
+        "before": 24,
+        "after": 29
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-image-generation-guide/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Image Generation Guide",
+      "after": "AI Image Generation Guide 2025",
+      "length": {
+        "before": 25,
+        "after": 30
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-automation-tools/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Business Automation Tools",
+      "after": "Business Automation Tools: Complete Guide & Expert",
+      "length": {
+        "before": 25,
+        "after": 50
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/content-scaling-framework/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Content Scaling Framework",
+      "after": "Content Scaling Framework: Complete Guide & Expert",
+      "length": {
+        "before": 25,
+        "after": 50
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/faceless-content-strategy/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Faceless Content Strategy",
+      "after": "Faceless Content Strategy: Complete Guide & Expert",
+      "length": {
+        "before": 25,
+        "after": 50
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/telegram-bot-monetization/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Telegram Bot Monetization",
+      "after": "Telegram Bot Monetization: Complete Guide & Expert",
+      "length": {
+        "before": 25,
+        "after": 50
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/workflow-automation-guide/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Workflow Automation Guide",
+      "after": "Workflow Automation Guide 2025",
+      "length": {
+        "before": 25,
+        "after": 30
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/api-automation-integration/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "API Automation Integration",
+      "after": "API Automation Integration: Complete Guide & Expert",
+      "length": {
+        "before": 26,
+        "after": 51
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/deepseek-market-disruption/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "DeepSeek Market Disruption",
+      "after": "DeepSeek Market Disruption: Complete Guide & Expert",
+      "length": {
+        "before": 26,
+        "after": 51
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/devops-automation-pipeline/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Devops Automation Pipeline",
+      "after": "Devops Automation Pipeline: Complete Guide & Expert",
+      "length": {
+        "before": 26,
+        "after": 51
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/lead-generation-automation/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Lead Generation Automation",
+      "after": "Lead Generation Automation: Complete Guide & Expert",
+      "length": {
+        "before": 26,
+        "after": 51
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/robotic-process-automation/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Robotic Process Automation",
+      "after": "Robotic Process Automation: Complete Guide & Expert",
+      "length": {
+        "before": 26,
+        "after": 51
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-seo-content-optimization/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI SEO Content Optimization",
+      "after": "AI SEO Content Optimization: Complete Guide & Expert",
+      "length": {
+        "before": 27,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/database-automation-systems/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Database Automation Systems",
+      "after": "Database Automation Systems: Complete Guide & Expert",
+      "length": {
+        "before": 27,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/machine-learning-automation/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Machine Learning Automation",
+      "after": "Machine Learning Automation: Complete Guide & Expert",
+      "length": {
+        "before": 27,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/security-automation-systems/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Security Automation Systems",
+      "after": "Security Automation Systems: Complete Guide & Expert",
+      "length": {
+        "before": 27,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/browser-automation-marketing/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Browser Automation Marketing",
+      "after": "Browser Automation Marketing: Complete Guide & Expert",
+      "length": {
+        "before": 28,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/chatgpt-automation-workflows/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "ChatGPT Automation Workflows",
+      "after": "ChatGPT Automation Workflows: Complete Guide & Expert",
+      "length": {
+        "before": 28,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/claude-4-vs-gpt-4-comparison/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Claude 4 Vs GPT 4 Comparison",
+      "after": "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
+      "length": {
+        "before": 28,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/gpt5-roadmap-creator-empire/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "GPT-5 Roadmap Creator Empire",
+      "after": "GPT-5 Roadmap Creator Empire: Complete Guide & Expert",
+      "length": {
+        "before": 28,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/quality-assurance-automation/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Quality Assurance Automation",
+      "after": "Quality Assurance Automation: Complete Guide & Expert",
+      "length": {
+        "before": 28,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/digital-products/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "Working Harder, Earning Less",
+      "after": "Working Harder, Earning Less: Complete Guide & Expert",
+      "length": {
+        "before": 28,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/ai-influencers/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Character Creation Mastery",
+      "after": "AI Character Creation Mastery: Complete Guide & Expert",
+      "length": {
+        "before": 29,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-guide-toxic-seo/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Automation Guide Toxic SEO",
+      "after": "AI Automation Guide Toxic SEO 2025",
+      "length": {
+        "before": 29,
+        "after": 34
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-research-content-marketing/page.tsx",
+      "severity": "HIGH",
+      "issue": "Too Short",
+      "before": "AI Research Content Marketing",
+      "after": "AI Research Content Marketing: Complete Guide & Expert",
+      "length": {
+        "before": 29,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-influencers-complete-guide-virtual-influencer-creation-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "AI Influencers: Complete Guide to Virtual Influencer Creation 2025 | IImagined.ai",
+      "after": "AI Influencers: Complete Guide to Virtual Influencer",
+      "length": {
+        "before": 81,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/online-course-creation-guide-build-sell-courses/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Online Course Creation Guide: Build & Sell Courses That Convert | IImagined.ai",
+      "after": "Online Course Creation Guide: Build & Sell Courses That",
+      "length": {
+        "before": 78,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/masterclass-vs-iimagined/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Masterclass vs IImagined.ai: Which is Better? [2025 Comparison] | IImagined.ai",
+      "after": "Masterclass vs IImagined.ai: Which is Better?",
+      "length": {
+        "before": 78,
+        "after": 45
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/best-digital-products-course-for-small-business/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Digital Products Course for small business [2025 Updated] | IImagined.ai",
+      "after": "Best Digital Products Course for small business",
+      "length": {
+        "before": 77,
+        "after": 47
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/best-instagram-growth-course-for-small-business/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Instagram Growth Course for small business [2025 Updated] | IImagined.ai",
+      "after": "Best Instagram Growth Course for small business",
+      "length": {
+        "before": 77,
+        "after": 47
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/skillshare-vs-iimagined/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Skillshare vs IImagined.ai: Which is Better? [2025 Comparison] | IImagined.ai",
+      "after": "Skillshare vs IImagined.ai: Which is Better?",
+      "length": {
+        "before": 77,
+        "after": 44
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/best-digital-products-course-for-entrepreneurs/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Digital Products Course for entrepreneurs [2025 Updated] | IImagined.ai",
+      "after": "Best Digital Products Course for entrepreneurs",
+      "length": {
+        "before": 76,
+        "after": 46
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/best-instagram-growth-course-for-entrepreneurs/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Instagram Growth Course for entrepreneurs [2025 Updated] | IImagined.ai",
+      "after": "Best Instagram Growth Course for entrepreneurs",
+      "length": {
+        "before": 76,
+        "after": 46
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/how-to-create-digital-products-that-sell-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "How to Create Digital Products That Sell: Complete 2025 Guide | IImagined.ai",
+      "after": "How to Create Digital Products That Sell: Complete 2025",
+      "length": {
+        "before": 76,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/teachable-vs-iimagined/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Teachable vs IImagined.ai: Which is Better? [2025 Comparison] | IImagined.ai",
+      "after": "Teachable vs IImagined.ai: Which is Better?",
+      "length": {
+        "before": 76,
+        "after": 43
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/virtual-influencer-marketing-strategy-dominate-social-media/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Virtual Influencer Marketing Strategy: Dominate Social Media | IImagined.ai",
+      "after": "Virtual Influencer Marketing Strategy: Dominate Social Media",
+      "length": {
+        "before": 75,
+        "after": 60
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/coursera-vs-iimagined/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Coursera vs IImagined.ai: Which is Better? [2025 Comparison] | IImagined.ai",
+      "after": "Coursera vs IImagined.ai: Which is Better? [2025 Comparison]",
+      "length": {
+        "before": 75,
+        "after": 60
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/best-ai-automation-course-for-small-business/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Ai Automation Course for small business [2025 Updated] | IImagined.ai",
+      "after": "Best Ai Automation Course for small business [2025 Updated]",
+      "length": {
+        "before": 74,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/best-ai-content-creation-tools-virtual-influencers-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best AI Content Creation Tools for Virtual Influencers 2025 | IImagined.ai",
+      "after": "Best AI Content Creation Tools for Virtual Influencers 2025",
+      "length": {
+        "before": 74,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/best-ai-automation-course-for-entrepreneurs/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Ai Automation Course for entrepreneurs [2025 Updated] | IImagined.ai",
+      "after": "Best Ai Automation Course for entrepreneurs [2025 Updated]",
+      "length": {
+        "before": 73,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/instagram-monetization-guide-15-ways-make-money/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Instagram Monetization Guide: 15 Proven Ways to Make Money | IImagined.ai",
+      "after": "Instagram Monetization Guide: 15 Proven Ways to Make Money",
+      "length": {
+        "before": 73,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/n8n-zapier-alternative-why-n8n-superior-automation/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "N8N Zapier Alternative: Why N8N is Superior for Automation | IImagined.ai",
+      "after": "N8N Zapier Alternative: Why N8N is Superior for Automation",
+      "length": {
+        "before": 73,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/expert-content-generator/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Expert Content Generator - AI-Powered Authority Building for Course Sales",
+      "after": "Expert Content Generator - AI-Powered Authority Building for",
+      "length": {
+        "before": 73,
+        "after": 60
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/best-digital-products-course-for-beginners/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Digital Products Course for beginners [2025 Updated] | IImagined.ai",
+      "after": "Best Digital Products Course for beginners [2025 Updated]",
+      "length": {
+        "before": 72,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/best-instagram-growth-course-for-beginners/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Instagram Growth Course for beginners [2025 Updated] | IImagined.ai",
+      "after": "Best Instagram Growth Course for beginners [2025 Updated]",
+      "length": {
+        "before": 72,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/best-passive-income-ideas-digital-products-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Passive Income Ideas: 20+ Digital Products That Work | IImagined.ai",
+      "after": "Best Passive Income Ideas: 20+ Digital Products That Work",
+      "length": {
+        "before": 72,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/instagram-influencer-marketing-build-personal-brand/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Instagram Influencer Marketing: Build Your Personal Brand | IImagined.ai",
+      "after": "Instagram Influencer Marketing: Build Your Personal Brand",
+      "length": {
+        "before": 72,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/udemy-vs-iimagined/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Udemy vs IImagined.ai: Which is Better? [2025 Comparison] | IImagined.ai",
+      "after": "Udemy vs IImagined.ai: Which is Better? [2025 Comparison]",
+      "length": {
+        "before": 72,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/how-to-make-money-with-ai-influencers-15-proven-methods/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "How to Make Money with AI Influencers: 15 Proven Methods | IImagined.ai",
+      "after": "How to Make Money with AI Influencers: 15 Proven Methods",
+      "length": {
+        "before": 71,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/professional-certification-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Professional-certification Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Professional-certification Ai Automation Masterclass: Expert",
+      "length": {
+        "before": 71,
+        "after": 60
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-image-generation-for-influencers-professional-guide/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "AI Image Generation for Influencers: Professional Guide | IImagined.ai",
+      "after": "AI Image Generation for Influencers: Professional Guide",
+      "length": {
+        "before": 70,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/create-online-courses-that-sell-step-by-step-blueprint/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Create Online Courses That Sell: Step-by-Step Blueprint | IImagined.ai",
+      "after": "Create Online Courses That Sell: Step-by-Step Blueprint",
+      "length": {
+        "before": 70,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/digital-product-pricing-strategy-maximize-revenue/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Digital Product Pricing Strategy: Maximize Your Revenue | IImagined.ai",
+      "after": "Digital Product Pricing Strategy: Maximize Your Revenue",
+      "length": {
+        "before": 70,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/n8n-api-integration-connect-any-service-workflows/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "N8N API Integration: Connect Any Service with Workflows | IImagined.ai",
+      "after": "N8N API Integration: Connect Any Service with Workflows",
+      "length": {
+        "before": 70,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/professional-certification-instagram-growth-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Professional-certification Instagram Growth Academy: Expert Guide 2025",
+      "after": "Professional-certification Instagram Growth Academy: Expert",
+      "length": {
+        "before": 70,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/best-ai-automation-course-for-beginners/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Ai Automation Course for beginners [2025 Updated] | IImagined.ai",
+      "after": "Best Ai Automation Course for beginners [2025 Updated]",
+      "length": {
+        "before": 69,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/instagram-algorithm-secrets-master-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Instagram Algorithm Secrets: Master the 2025 Algorithm | IImagined.ai",
+      "after": "Instagram Algorithm Secrets: Master the 2025 Algorithm",
+      "length": {
+        "before": 69,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/instagram-content-strategy-maximum-engagement-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Instagram Content Strategy for Maximum Engagement 2025 | IImagined.ai",
+      "after": "Instagram Content Strategy for Maximum Engagement 2025",
+      "length": {
+        "before": 69,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/instagram-reels-algorithm-viral-content-strategy-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Instagram Reels Algorithm: Viral Content Strategy 2025 | IImagined.ai",
+      "after": "Instagram Reels Algorithm: Viral Content Strategy 2025",
+      "length": {
+        "before": 69,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/instagram-story-marketing-advanced-engagement-tactics/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Instagram Story Marketing: Advanced Engagement Tactics | IImagined.ai",
+      "after": "Instagram Story Marketing: Advanced Engagement Tactics",
+      "length": {
+        "before": 69,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Best Automation Tools 2025: N8N vs Zapier vs Make.com | IImagined.ai",
+      "after": "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
+      "length": {
+        "before": 68,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comfyui-installation-setup-complete-beginner-guide/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "ComfyUI Installation & Setup: Complete Beginner Guide | IImagined.ai",
+      "after": "ComfyUI Installation & Setup: Complete Beginner Guide",
+      "length": {
+        "before": 68,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comfyui-vs-stable-diffusion-complete-tool-comparison/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "ComfyUI vs Stable Diffusion: Complete Tool Comparison | IImagined.ai",
+      "after": "ComfyUI vs Stable Diffusion: Complete Tool Comparison",
+      "length": {
+        "before": 68,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/digital-product-pricing/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Digital Product Pricing Strategies - Complete Psychology Course 2025",
+      "after": "Digital Product Pricing Strategies - Complete Psychology",
+      "length": {
+        "before": 68,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/how-to-get-10k-instagram-followers-fast/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "How to Get 10K Instagram Followers Fast: Expert Guide | IImagined.ai",
+      "after": "How to Get 10K Instagram Followers Fast: Expert Guide",
+      "length": {
+        "before": 68,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/how-to-make-money-with-comfyui-ai-art-business-guide/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "How to Make Money with ComfyUI: AI Art Business Guide | IImagined.ai",
+      "after": "How to Make Money with ComfyUI: AI Art Business Guide",
+      "length": {
+        "before": 68,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/n8n-beginners-guide/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "N8N for Beginners 2025: Complete Course Guide to Business Automation",
+      "after": "N8N for Beginners 2025: Complete Course Guide to Business",
+      "length": {
+        "before": 68,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/n8n-database-automation-automate-data-workflows/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "N8N Database Automation: Automate Your Data Workflows | IImagined.ai",
+      "after": "N8N Database Automation: Automate Your Data Workflows",
+      "length": {
+        "before": 68,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/professional-certification-ai-influencers-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Professional-certification Ai Influencers Academy: Expert Guide 2025",
+      "after": "Professional-certification Ai Influencers Academy: Expert",
+      "length": {
+        "before": 68,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/sell-digital-products-on-etsy-complete-success-guide/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Sell Digital Products on Etsy: Complete Success Guide | IImagined.ai",
+      "after": "Sell Digital Products on Etsy: Complete Success Guide",
+      "length": {
+        "before": 68,
+        "after": 53
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-beginners-guide/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Ai Automation Beginners Guide: Complete Guide [2025] | IImagined.ai",
+      "after": "Ai Automation Beginners Guide: Complete Guide [2025]",
+      "length": {
+        "before": 67,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-process-automation-save-20-hours-per-week/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Process Automation: Save 20+ Hours Per Week | IImagined.ai",
+      "after": "Business Process Automation: Save 20+ Hours Per Week",
+      "length": {
+        "before": 67,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comfyui-tutorial-master-ai-image-generation-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "ComfyUI Tutorial: Master AI Image Generation in 2025 | IImagined.ai",
+      "after": "ComfyUI Tutorial: Master AI Image Generation in 2025",
+      "length": {
+        "before": 67,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comprehensive-training-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Comprehensive-training Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Comprehensive-training Ai Automation Masterclass: Expert",
+      "length": {
+        "before": 67,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comprehensive-training-instagram-growth-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Comprehensive-training Instagram Growth Academy: Expert Guide 2025",
+      "after": "Comprehensive-training Instagram Growth Academy: Expert",
+      "length": {
+        "before": 66,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/digital-product-launch-strategy-idea-to-100k/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Digital Product Launch Strategy: From Idea to $100K | IImagined.ai",
+      "after": "Digital Product Launch Strategy: From Idea to $100K",
+      "length": {
+        "before": 66,
+        "after": 51
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/digital-products-empire/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Build Your Digital Products Empire - Complete Business Course 2025",
+      "after": "Build Your Digital Products Empire - Complete Business",
+      "length": {
+        "before": 66,
+        "after": 54
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/professional-certification-comfyui-pro-training/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Professional-certification Comfyui Pro Training: Expert Guide 2025",
+      "after": "Professional-certification Comfyui Pro Training: Expert",
+      "length": {
+        "before": 66,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/profitable-strategies-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Profitable-strategies Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Profitable-strategies Ai Automation Masterclass: Expert",
+      "length": {
+        "before": 66,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/transformation-course-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Transformation-course Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Transformation-course Ai Automation Masterclass: Expert",
+      "length": {
+        "before": 66,
+        "after": 55
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/social-signals/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Social Signal Automation | Multi-Platform Engagement Amplification",
+      "after": "Social Signal Automation | Multi-Platform Engagement",
+      "length": {
+        "before": 66,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/advanced-comfyui-workflows-professional-ai-art/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Advanced ComfyUI Workflows for Professional AI Art | IImagined.ai",
+      "after": "Advanced ComfyUI Workflows for Professional AI Art",
+      "length": {
+        "before": 65,
+        "after": 50
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-process-automation-guide-philadelphia/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Process Automation Guide Philadelphia: Expert Guide 2025",
+      "after": "Business Process Automation Guide Philadelphia: Expert Guide",
+      "length": {
+        "before": 65,
+        "after": 60
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/email-marketing-automation-advanced-n8n-sequences/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Email Marketing Automation: Advanced N8N Sequences | IImagined.ai",
+      "after": "Email Marketing Automation: Advanced N8N Sequences",
+      "length": {
+        "before": 65,
+        "after": 50
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/profitable-strategies-instagram-growth-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Profitable-strategies Instagram Growth Academy: Expert Guide 2025",
+      "after": "Profitable-strategies Instagram Growth Academy: Expert Guide",
+      "length": {
+        "before": 65,
+        "after": 60
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/transformation-course-instagram-growth-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Transformation-course Instagram Growth Academy: Expert Guide 2025",
+      "after": "Transformation-course Instagram Growth Academy: Expert Guide",
+      "length": {
+        "before": 65,
+        "after": 60
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/accelerated-program-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Accelerated-program Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Accelerated-program Ai Automation Masterclass: Expert Guide",
+      "length": {
+        "before": 64,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/advanced-strategies-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Advanced-strategies Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Advanced-strategies Ai Automation Masterclass: Expert Guide",
+      "length": {
+        "before": 64,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-process-automation-guide-los-angeles/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Process Automation Guide Los Angeles: Expert Guide 2025",
+      "after": "Business Process Automation Guide Los Angeles: Expert Guide",
+      "length": {
+        "before": 64,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-process-automation-guide-san-antonio/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Process Automation Guide San Antonio: Expert Guide 2025",
+      "after": "Business Process Automation Guide San Antonio: Expert Guide",
+      "length": {
+        "before": 64,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comprehensive-training-ai-influencers-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Comprehensive-training Ai Influencers Academy: Expert Guide 2025",
+      "after": "Comprehensive-training Ai Influencers Academy: Expert Guide",
+      "length": {
+        "before": 64,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/digital-products-ideas-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "50+ Digital Product Ideas That Make Money - Complete Course 2025",
+      "after": "50+ Digital Product Ideas That Make Money - Complete Course",
+      "length": {
+        "before": 64,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/instagram-growth-hacks-that-work-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Instagram Growth Hacks That Actually Work in 2025 | IImagined.ai",
+      "after": "Instagram Growth Hacks That Actually Work in 2025",
+      "length": {
+        "before": 64,
+        "after": 49
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/premium-masterclass-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Premium-masterclass Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Premium-masterclass Ai Automation Masterclass: Expert Guide",
+      "length": {
+        "before": 64,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/professional-certification-n8n-automation-hub/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Professional-certification N8n Automation Hub: Expert Guide 2025",
+      "after": "Professional-certification N8n Automation Hub: Expert Guide",
+      "length": {
+        "before": 64,
+        "after": 59
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/guest-posts/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Guest Post Automation Dashboard | Editorial Backlink Acquisition",
+      "after": "Guest Post Automation Dashboard | Editorial Backlink",
+      "length": {
+        "before": 64,
+        "after": 52
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/accelerated-program-instagram-growth-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Accelerated-program Instagram Growth Academy: Expert Guide 2025",
+      "after": "Accelerated-program Instagram Growth Academy: Expert Guide",
+      "length": {
+        "before": 63,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/advanced-strategies-instagram-growth-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Advanced-strategies Instagram Growth Academy: Expert Guide 2025",
+      "after": "Advanced-strategies Instagram Growth Academy: Expert Guide",
+      "length": {
+        "before": 63,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-for-entrepreneurs-philadelphia/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Ai Automation For Entrepreneurs Philadelphia: Expert Guide 2025",
+      "after": "Ai Automation For Entrepreneurs Philadelphia: Expert Guide",
+      "length": {
+        "before": 63,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-automation-with-claude-philadelphia/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Automation With Claude Philadelphia: Expert Guide 2025",
+      "after": "Business Automation With Claude Philadelphia: Expert Guide",
+      "length": {
+        "before": 63,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/digital-product-success-story/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Digital Product Success Stories - Real Student Results & Course",
+      "after": "Digital Product Success Stories - Real Student Results &",
+      "length": {
+        "before": 63,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/intensive-bootcamp-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Intensive-bootcamp Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Intensive-bootcamp Ai Automation Masterclass: Expert Guide",
+      "length": {
+        "before": 63,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/premium-masterclass-instagram-growth-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Premium-masterclass Instagram Growth Academy: Expert Guide 2025",
+      "after": "Premium-masterclass Instagram Growth Academy: Expert Guide",
+      "length": {
+        "before": 63,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/profitable-strategies-ai-influencers-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Profitable-strategies Ai Influencers Academy: Expert Guide 2025",
+      "after": "Profitable-strategies Ai Influencers Academy: Expert Guide",
+      "length": {
+        "before": 63,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/step-by-step-guide-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Step-by-step-guide Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Step-by-step-guide Ai Automation Masterclass: Expert Guide",
+      "length": {
+        "before": 63,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/transformation-course-ai-influencers-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Transformation-course Ai Influencers Academy: Expert Guide 2025",
+      "after": "Transformation-course Ai Influencers Academy: Expert Guide",
+      "length": {
+        "before": 63,
+        "after": 58
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-for-entrepreneurs-los-angeles/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Ai Automation For Entrepreneurs Los Angeles: Expert Guide 2025",
+      "after": "Ai Automation For Entrepreneurs Los Angeles: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-for-entrepreneurs-san-antonio/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Ai Automation For Entrepreneurs San Antonio: Expert Guide 2025",
+      "after": "Ai Automation For Entrepreneurs San Antonio: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-tools-comparison-philadelphia/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Ai Automation Tools Comparison Philadelphia: Expert Guide 2025",
+      "after": "Ai Automation Tools Comparison Philadelphia: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-workflows-integrate-gpt-with-n8n/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "AI Automation Workflows: Integrate GPT with N8N | IImagined.ai",
+      "after": "AI Automation Workflows: Integrate GPT with N8N",
+      "length": {
+        "before": 62,
+        "after": 47
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/automation-consulting-services-philadelphia/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Automation Consulting Services Philadelphia: Expert Guide 2025",
+      "after": "Automation Consulting Services Philadelphia: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-automation-with-claude-los-angeles/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Automation With Claude Los Angeles: Expert Guide 2025",
+      "after": "Business Automation With Claude Los Angeles: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-automation-with-claude-san-antonio/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Automation With Claude San Antonio: Expert Guide 2025",
+      "after": "Business Automation With Claude San Antonio: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-process-automation-guide-san-diego/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Process Automation Guide San Diego: Expert Guide 2025",
+      "after": "Business Process Automation Guide San Diego: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/claude-ai-business-integration-philadelphia/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Claude Ai Business Integration Philadelphia: Expert Guide 2025",
+      "after": "Claude Ai Business Integration Philadelphia: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/comprehensive-training-comfyui-pro-training/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Comprehensive-training Comfyui Pro Training: Expert Guide 2025",
+      "after": "Comprehensive-training Comfyui Pro Training: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/content-creation-with-ai/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Content Creation With Ai: Complete Guide [2025] | IImagined.ai",
+      "after": "Content Creation With Ai: Complete Guide [2025]",
+      "length": {
+        "before": 62,
+        "after": 47
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/intensive-bootcamp-instagram-growth-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Intensive-bootcamp Instagram Growth Academy: Expert Guide 2025",
+      "after": "Intensive-bootcamp Instagram Growth Academy: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/step-by-step-guide-instagram-growth-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Step-by-step-guide Instagram Growth Academy: Expert Guide 2025",
+      "after": "Step-by-step-guide Instagram Growth Academy: Expert Guide",
+      "length": {
+        "before": 62,
+        "after": 57
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/accelerated-program-ai-influencers-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Accelerated-program Ai Influencers Academy: Expert Guide 2025",
+      "after": "Accelerated-program Ai Influencers Academy: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/advanced-strategies-ai-influencers-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Advanced-strategies Ai Influencers Academy: Expert Guide 2025",
+      "after": "Advanced-strategies Ai Influencers Academy: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-tools-comparison-los-angeles/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Ai Automation Tools Comparison Los Angeles: Expert Guide 2025",
+      "after": "Ai Automation Tools Comparison Los Angeles: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/ai-automation-tools-comparison-san-antonio/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Ai Automation Tools Comparison San Antonio: Expert Guide 2025",
+      "after": "Ai Automation Tools Comparison San Antonio: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/automation-consulting-services-los-angeles/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Automation Consulting Services Los Angeles: Expert Guide 2025",
+      "after": "Automation Consulting Services Los Angeles: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/automation-consulting-services-san-antonio/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Automation Consulting Services San Antonio: Expert Guide 2025",
+      "after": "Automation Consulting Services San Antonio: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/automation-project-management-philadelphia/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Automation Project Management Philadelphia: Expert Guide 2025",
+      "after": "Automation Project Management Philadelphia: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-automation-blueprint-philadelphia/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Automation Blueprint Philadelphia: Expert Guide 2025",
+      "after": "Business Automation Blueprint Philadelphia: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-process-automation-guide-new-york/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Process Automation Guide New York: Expert Guide 2025",
+      "after": "Business Process Automation Guide New York: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/business-process-automation-guide-san-jose/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Business Process Automation Guide San Jose: Expert Guide 2025",
+      "after": "Business Process Automation Guide San Jose: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/claude-ai-business-integration-los-angeles/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Claude Ai Business Integration Los Angeles: Expert Guide 2025",
+      "after": "Claude Ai Business Integration Los Angeles: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/claude-ai-business-integration-san-antonio/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Claude Ai Business Integration San Antonio: Expert Guide 2025",
+      "after": "Claude Ai Business Integration San Antonio: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/expert-blueprint-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Expert-blueprint Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Expert-blueprint Ai Automation Masterclass: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/mastery-training-ai-automation-masterclass/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Mastery-training Ai Automation Masterclass: Expert Guide 2025",
+      "after": "Mastery-training Ai Automation Masterclass: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/most-profitable-digital-product-niches-2025/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Most Profitable Digital Product Niches in 2025 | IImagined.ai",
+      "after": "Most Profitable Digital Product Niches in 2025",
+      "length": {
+        "before": 61,
+        "after": 46
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/premium-masterclass-ai-influencers-academy/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Premium-masterclass Ai Influencers Academy: Expert Guide 2025",
+      "after": "Premium-masterclass Ai Influencers Academy: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/profitable-strategies-comfyui-pro-training/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Profitable-strategies Comfyui Pro Training: Expert Guide 2025",
+      "after": "Profitable-strategies Comfyui Pro Training: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    },
+    {
+      "file": "C:/Users/manna/Downloads/Website/src/app/blog/transformation-course-comfyui-pro-training/page.tsx",
+      "severity": "MEDIUM",
+      "issue": "Too Long",
+      "before": "Transformation-course Comfyui Pro Training: Expert Guide 2025",
+      "after": "Transformation-course Comfyui Pro Training: Expert Guide",
+      "length": {
+        "before": 61,
+        "after": 56
+      },
+      "status": "success"
+    }
+  ],
+  "stats": {
+    "missing": {
+      "processed": 0,
+      "success": 0,
+      "failed": 0
+    },
+    "tooShort": {
+      "processed": 62,
+      "success": 62,
+      "failed": 0
+    },
+    "tooLong": {
+      "processed": 112,
+      "success": 112,
+      "failed": 0
+    },
+    "total": 174
+  },
+  "timestamp": "2025-10-20T08-24-07-877Z"
+}

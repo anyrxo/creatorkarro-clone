@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Step-by-step-guide Instagram Growth Academy: Expert Guide 2025",
+  title: "Step-by-step-guide Instagram Growth Academy: Expert Guide",
   description: "step-by-step-guide instagram growth academy guide, step-by-step-guide instagram growth academy tutorial, step-by-step-guide instagram growth academy course - Ex",
   keywords: ["step-by-step-guide instagram growth academy","step-by-step-guide instagram growth academy guide","step-by-step-guide instagram growth academy 2025","step-by-step-guide instagram growth academy course","step-by-step-guide instagram growth academy training","step-by-step-guide","step-by-step-guide instagram growth academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Instagram Growth Academy",
   openGraph: {
-    title: "Step-by-step-guide Instagram Growth Academy: Expert Guide 2025",
+    title: "Step-by-step-guide Instagram Growth Academy: Expert Guide",
     description: "step-by-step-guide instagram growth academy guide, step-by-step-guide instagram growth academy tutorial, step-by-step-guide instagram growth academy course - Ex",
     url: "https://iimagined.ai/blog/step-by-step-guide-instagram-growth-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Step-by-step-guide Instagram Growth Academy: Expert Guide 2025",
+    title: "Step-by-step-guide Instagram Growth Academy: Expert Guide",
     description: "step-by-step-guide instagram growth academy guide, step-by-step-guide instagram growth academy tutorial, step-by-step-guide instagram growth academy course - Ex",
     images: [{
       url: "https://iimagined.ai/images/step-by-step-guide-instagram-growth-academy-og.jpg",

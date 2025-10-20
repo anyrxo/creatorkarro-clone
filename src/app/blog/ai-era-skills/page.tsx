@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "AI Era Skills",
+    title: "AI Era Skills: Master Future-Ready Tech in 2025",
     description: "AI Era Skills comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     url: "https://iimagined.ai/blog/ai-era-skills",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "AI Era Skills",
+    title: "AI Era Skills: Master Future-Ready Tech in 2025",
     description: "AI Era Skills comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     images: [{
       url: "https://iimagined.ai/images/ai-era-skills-og.jpg",

@@ -4,7 +4,7 @@ import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users,
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Premium-masterclass Ai Influencers Academy: Expert Guide 2025",
+  title: "Premium-masterclass Ai Influencers Academy: Expert Guide",
   description: "premium-masterclass ai influencers academy guide, premium-masterclass ai influencers academy tutorial, premium-masterclass ai influencers academy course - Exper",
   keywords: ["premium-masterclass ai influencers academy","premium-masterclass ai influencers academy guide","premium-masterclass ai influencers academy 2025","premium-masterclass ai influencers academy course","premium-masterclass ai influencers academy training","premium-masterclass","premium-masterclass ai influencers academy","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Influencers Academy",
   openGraph: {
-    title: "Premium-masterclass Ai Influencers Academy: Expert Guide 2025",
+    title: "Premium-masterclass Ai Influencers Academy: Expert Guide",
     description: "premium-masterclass ai influencers academy guide, premium-masterclass ai influencers academy tutorial, premium-masterclass ai influencers academy course - Exper",
     url: "https://iimagined.ai/blog/premium-masterclass-ai-influencers-academy",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Premium-masterclass Ai Influencers Academy: Expert Guide 2025",
+    title: "Premium-masterclass Ai Influencers Academy: Expert Guide",
     description: "premium-masterclass ai influencers academy guide, premium-masterclass ai influencers academy tutorial, premium-masterclass ai influencers academy course - Exper",
     images: [{
       url: "https://iimagined.ai/images/premium-masterclass-ai-influencers-academy-og.jpg",

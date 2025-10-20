@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users, BarChart3 } from 'lucide-react'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
-  title: "Ai Automation For Entrepreneurs Los Angeles: Expert Guide 2025",
+  title: "Ai Automation For Entrepreneurs Los Angeles: Expert Guide",
   description: "ai automation for entrepreneurs los angeles guide, ai automation for entrepreneurs los angeles tutorial, ai automation for entrepreneurs los angeles course - Ex",
   keywords: ["ai automation for entrepreneurs los angeles","ai automation for entrepreneurs los angeles guide","ai automation for entrepreneurs los angeles 2025","ai automation for entrepreneurs los angeles course","ai automation for entrepreneurs los angeles training","ai","ai automation for entrepreneurs los angeles","guide","course","training","2025","expert","proven","strategies"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -12,7 +13,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "AI Automation Mastery",
   openGraph: {
-    title: "Ai Automation For Entrepreneurs Los Angeles: Expert Guide 2025",
+    title: "Ai Automation For Entrepreneurs Los Angeles: Expert Guide",
     description: "ai automation for entrepreneurs los angeles guide, ai automation for entrepreneurs los angeles tutorial, ai automation for entrepreneurs los angeles course - Ex",
     url: "https://iimagined.ai/blog/ai-automation-for-entrepreneurs-los-angeles",
     siteName: "IImagined.ai",
@@ -34,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Ai Automation For Entrepreneurs Los Angeles: Expert Guide 2025",
+    title: "Ai Automation For Entrepreneurs Los Angeles: Expert Guide",
     description: "ai automation for entrepreneurs los angeles guide, ai automation for entrepreneurs los angeles tutorial, ai automation for entrepreneurs los angeles course - Ex",
     images: [{
       url: "https://iimagined.ai/images/ai-automation-for-entrepreneurs-los-angeles-og.jpg",
@@ -58,8 +59,24 @@ export const metadata = {
 }
 
 export default function BlogPost() {
+
+const schema = generateBlogPostSchema({
+  title: metadata.title,
+  description: metadata.description,
+  slug: "ai-automation-for-entrepreneurs-los-angeles",
+  publishedTime: metadata.openGraph.publishedTime,
+  modifiedTime: metadata.openGraph.modifiedTime,
+  category: metadata.category || "AI Automation Mastery",
+  keywords: metadata.keywords || [],
+  image: metadata.openGraph.images[0].url
+})
+
   return (
 <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
   {/* TOXIC SEO HERO - KEYWORD OPTIMIZED */}
   <section className="section-spacing overflow-hidden relative">
     {/* Beautiful Background Effects - Same as existing blogs */}

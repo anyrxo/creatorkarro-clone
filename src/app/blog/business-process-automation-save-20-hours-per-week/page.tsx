@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Business Process Automation: Save 20+ Hours Per Week | IImagined.ai",
+  title: "Business Process Automation: Save 20+ Hours Per Week",
   description: "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+...",
   keywords: ["business process automation","automate business","workflow automation","business efficiency","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Business Automation",
   openGraph: {
-    title: "Business Process Automation: Save 20+ Hours Per Week | IImagined.ai",
+    title: "Business Process Automation: Save 20+ Hours Per Week",
     description: "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations",
     url: "https://iimagined.ai/blog/business-process-automation-save-20-hours-per-week",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Business Process Automation: Save 20+ Hours Per Week | IImagined.ai",
+    title: "Business Process Automation: Save 20+ Hours Per Week",
     description: "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations",
     images: [{
       url: "https://iimagined.ai/images/blog/business-process-automation-save-20-hours-per-week-og.jpg",

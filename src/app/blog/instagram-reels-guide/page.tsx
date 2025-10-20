@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Instagram Reels Guide",
+  title: "Instagram Reels Guide: Create Viral Content in 2025",
   description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
   keywords: ["instagram", "reels", "guide", "instagram 2025", "instagram reels guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Instagram Reels Guide",
+    title: "Instagram Reels Guide: Create Viral Content in 2025",
     description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
     url: "https://iimagined.ai/blog/instagram-reels-guide",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Instagram Reels Guide",
+    title: "Instagram Reels Guide: Create Viral Content in 2025",
     description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
     images: [{
       url: "https://iimagined.ai/images/instagram-reels-guide-og.jpg",

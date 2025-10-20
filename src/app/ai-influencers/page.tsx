@@ -5,15 +5,15 @@ import Link from 'next/link'
 import { generateCourseStructuredData } from '@/lib/structured-data'
 import { siteConfig } from '@/config/seo'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import { 
-  HeroSection, 
-  SectionHeader, 
-  ProblemCard, 
-  ModuleCard, 
-  BonusCard, 
-  TestimonialCard, 
-  FAQCard, 
-  PricingComparison 
+import {
+  HeroSection,
+  SectionHeader,
+  ProblemCard,
+  ModuleCard,
+  BonusCard,
+  TestimonialCard,
+  FAQCard,
+  PricingComparison
 } from '@/components/course/CourseLayout'
 import ScrollAnimation from '@/components/ScrollAnimation'
 import NumberTicker from '@/components/magicui/number-ticker'
@@ -23,6 +23,8 @@ import TypingAnimation from '@/components/magicui/typing-animation'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import { Rocket, Video, Bot, Users, Zap, Target, Shield, AlertTriangle, Gem, TrendingUp, Flame, CheckCircle, DollarSign, Phone } from 'lucide-react'
+import * as analytics from '@/lib/analytics'
+import { useEffect } from 'react'
 
 // Icon mapping function
 const getIcon = (iconName: string, className?: string) => {
@@ -66,6 +68,30 @@ export default function AIInfluencersPage() {
   const faqAnimation = useScrollAnimation({ threshold: 0.1 })
   const urgencyAnimation = useScrollAnimation({ threshold: 0.1 })
   const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
+
+  // Initialize analytics tracking on mount
+  useEffect(() => {
+    // Track page view
+    analytics.trackPageView('/ai-influencers', 'AI Influencers Mastery Course')
+
+    // Track product view
+    analytics.trackProductView(
+      'ai-influencers',
+      'AI Influencers Mastery Course',
+      169,
+      'Course'
+    )
+
+    // Initialize scroll and time tracking
+    const scrollTracker = new analytics.ScrollDepthTracker('/ai-influencers')
+    const timeTracker = new analytics.TimeOnPageTracker('/ai-influencers')
+
+    // Cleanup on unmount
+    return () => {
+      scrollTracker.destroy()
+      timeTracker.destroy()
+    }
+  }, [])
 
   // Enhanced Schema markup for AI Influencers Course
   const aiInfluencersSchema = {
@@ -168,7 +194,7 @@ export default function AIInfluencersPage() {
   const modules = [
     {
       number: 1,
-      title: "AI Character Creation Mastery",
+      title: "AI Character Creation Mastery: Complete Guide & Expert",
       description: "Learn to create photorealistic AI models that look and feel authentic",
       color: "text-pink-400",
       bgColor: "bg-gradient-to-r from-pink-900/20 to-purple-900/20",
@@ -923,7 +949,15 @@ export default function AIInfluencersPage() {
             <p className="text-xl text-zinc-300 mb-8">
               Join creators building profitable virtual models with zero face-to-camera content
             </p>
-            <Link href="/checkout?course=ai-influencers" className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full">
+            <Link
+              href="/checkout?course=ai-influencers"
+              className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full"
+              onClick={() => analytics.trackCTAClick(
+                'testimonials_section',
+                'Start Your AI Empire',
+                '/checkout?course=ai-influencers'
+              )}
+            >
               <ShimmerButton
                 className="shadow-2xl"
                 shimmerColor="#ffffff"
@@ -1020,7 +1054,15 @@ export default function AIInfluencersPage() {
                   Don't let this opportunity slip away. Every day you wait is money left on the table while others build their AI empires.
                 </p>
 
-                <Link href="/checkout?course=ai-influencers" className="inline-block focus:outline-none focus:ring-4 focus:ring-red-500/50 rounded-full">
+                <Link
+                  href="/checkout?course=ai-influencers"
+                  className="inline-block focus:outline-none focus:ring-4 focus:ring-red-500/50 rounded-full"
+                  onClick={() => analytics.trackCTAClick(
+                    'urgency_section',
+                    'Secure Your Spot Now - $169',
+                    '/checkout?course=ai-influencers'
+                  )}
+                >
                   <ShimmerButton
                     className="shadow-2xl"
                     shimmerColor="#ffffff"
@@ -1068,7 +1110,15 @@ export default function AIInfluencersPage() {
               <p className="text-xl text-zinc-300 mb-8">
                 Join hundreds of creators who are already making $<NumberTicker value={10} className="text-pink-400 font-bold inline" />K+ per month with faceless AI brands
               </p>
-              <Link href="/checkout?course=ai-influencers" className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full">
+              <Link
+                href="/checkout?course=ai-influencers"
+                className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full"
+                onClick={() => analytics.trackCTAClick(
+                  'final_cta_section',
+                  'Start Creating Today',
+                  '/checkout?course=ai-influencers'
+                )}
+              >
                 <ShimmerButton
                   className="shadow-2xl"
                   shimmerColor="#ffffff"

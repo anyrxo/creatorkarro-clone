@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "N8N for Beginners 2025: Complete Course Guide to Business Automation",
+  title: "N8N for Beginners 2025: Complete Course Guide to Business",
   description: "Master N8N automation with our complete beginner's guide. Learn workflow automation, save 40+ hours/week. Step-by-step tutorials & course recommendations.",
   keywords: [
     "n8n for beginners", "n8n course", "n8n tutorial", "n8n automation guide", 

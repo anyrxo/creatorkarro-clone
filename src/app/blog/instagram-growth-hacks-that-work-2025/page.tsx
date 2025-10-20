@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Growth Hacks That Actually Work in 2025 | IImagined.ai",
+  title: "Instagram Growth Hacks That Actually Work in 2025",
   description: "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
   keywords: ["instagram growth hacks","instagram marketing","grow instagram followers","instagram strategy","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Instagram Marketing",
   openGraph: {
-    title: "Instagram Growth Hacks That Actually Work in 2025 | IImagined.ai",
+    title: "Instagram Growth Hacks That Actually Work in 2025",
     description: "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited",
     url: "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2025",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Growth Hacks That Actually Work in 2025 | IImagined.ai",
+    title: "Instagram Growth Hacks That Actually Work in 2025",
     description: "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited",
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-growth-hacks-that-work-2025-og.jpg",

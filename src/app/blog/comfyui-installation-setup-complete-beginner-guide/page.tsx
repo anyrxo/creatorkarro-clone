@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "ComfyUI Installation & Setup: Complete Beginner Guide | IImagined.ai",
+  title: "ComfyUI Installation & Setup: Complete Beginner Guide",
   description: "comfyui installation, comfyui setup, install comfyui - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
   keywords: ["comfyui installation","comfyui setup","install comfyui","comfyui getting started","comfyui mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai", 
   category: "Getting Started",
   openGraph: {
-    title: "ComfyUI Installation & Setup: Complete Beginner Guide | IImagined.ai",
+    title: "ComfyUI Installation & Setup: Complete Beginner Guide",
     description: "comfyui installation, comfyui setup, install comfyui - Expert guide from the creators of ComfyUI Mastery",
     url: "https://iimagined.ai/blog/comfyui-installation-setup-complete-beginner-guide",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "ComfyUI Installation & Setup: Complete Beginner Guide | IImagined.ai",
+    title: "ComfyUI Installation & Setup: Complete Beginner Guide",
     description: "comfyui installation, comfyui setup, install comfyui - Expert guide from the creators of ComfyUI Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/comfyui-installation-setup-complete-beginner-guide-og.jpg",

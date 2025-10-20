@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation'
 // Redirect to our $497 course that teaches 50+ proven product ideas + creation process
 
 export const metadata = {
-  title: "50+ Digital Product Ideas That Make Money - Complete Course 2025",
+  title: "50+ Digital Product Ideas That Make Money - Complete Course",
   description: "50+ profitable digital product ideas generating $10K+/month. Complete course with proven concepts, step-by-step creation guides & launch strategies.",
   robots: {
     index: false,

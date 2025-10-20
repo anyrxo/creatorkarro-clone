@@ -64,7 +64,7 @@ export default function HomePage() {
   const courses = [
     {
       id: 'instagram-ignited',
-      title: 'Instagram Ignited',
+      title: "Instagram Ignited: Master Growth & Engagement in 2025",
       subtitle: '0 to 500K Followers System',
       description: 'Master the psychological triggers, viral content formulas, and growth automation that built our students over 10M followers. Turn your Instagram into a money-making machine.',
       gradient: 'from-blue-600 to-cyan-600',

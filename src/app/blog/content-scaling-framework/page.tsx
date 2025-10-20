@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Content Scaling Framework",
+  title: "Content Scaling Framework: Complete Guide & Expert",
   description: "Content Scaling Framework - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["content", "scaling", "framework", "content 2025", "content scaling framework", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -12,7 +12,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Content Scaling Framework",
+    title: "Content Scaling Framework: Complete Guide & Expert",
     description: "Content Scaling Framework - comprehensive strategies, tools, and techniques for 2025",
     url: "https://iimagined.ai/blog/content-scaling-framework",
     siteName: "IImagined.ai",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Content Scaling Framework",
+    title: "Content Scaling Framework: Complete Guide & Expert",
     description: "Content Scaling Framework - comprehensive strategies, tools, and techniques for 2025",
     images: [{
       url: "https://iimagined.ai/images/content-scaling-framework-og.jpg",
