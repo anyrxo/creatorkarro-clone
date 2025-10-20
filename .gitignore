@@ -60,3 +60,8 @@ commit_message.txt
 # Claude Code settings (may contain sensitive permissions)
 .claude/settings.local.json
 api/venv/
+
+# Backup files
+*.backup
+*.original-backup
+*.old
