@@ -1,6 +1,6 @@
 // Auto-generated from blog directories
-// Last updated: 2025-10-20T12:14:07.179Z
-// Total posts: 532
+// Last updated: 2025-10-20T12:45:24.516Z
+// Total posts: 522
 
 export interface BlogPost {
   id: number;
@@ -14,7 +14,7 @@ export interface BlogPost {
   tags: string[];
 }
 
-// All blog posts (532 posts)
+// All blog posts (522 posts)
 export const allBlogPosts: BlogPost[] = [
   {
     "id": 14,
@@ -2836,91 +2836,6 @@ export const allBlogPosts: BlogPost[] = [
       "monetization",
       "telegram 2025",
       "telegram bot monetization"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Accelerated-program Ai Automation Masterclass: Expert Guide",
-    "slug": "accelerated-program-ai-automation-masterclass",
-    "description": "accelerated-program ai automation masterclass guide, accelerated-program ai automation masterclass tutorial, accelerated-program ai automation masterclass cours",
-    "category": "AI Automation Mastery",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "accelerated-program ai automation masterclass",
-      "accelerated-program ai automation masterclass guide",
-      "accelerated-program ai automation masterclass 2025",
-      "accelerated-program ai automation masterclass course",
-      "accelerated-program ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Accelerated-program Ai Influencers Academy: Expert Guide",
-    "slug": "accelerated-program-ai-influencers-academy",
-    "description": "accelerated-program ai influencers academy guide, accelerated-program ai influencers academy tutorial, accelerated-program ai influencers academy course - Exper",
-    "category": "AI Influencers Academy",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "accelerated-program ai influencers academy",
-      "accelerated-program ai influencers academy guide",
-      "accelerated-program ai influencers academy 2025",
-      "accelerated-program ai influencers academy course",
-      "accelerated-program ai influencers academy training"
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Accelerated-program Comfyui Pro Training: Expert Guide 2025",
-    "slug": "accelerated-program-comfyui-pro-training",
-    "description": "accelerated-program comfyui pro training guide, accelerated-program comfyui pro training tutorial, accelerated-program comfyui pro training course - Expert trai",
-    "category": "ComfyUI Pro Training",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "accelerated-program comfyui pro training",
-      "accelerated-program comfyui pro training guide",
-      "accelerated-program comfyui pro training 2025",
-      "accelerated-program comfyui pro training course",
-      "accelerated-program comfyui pro training training"
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Accelerated-program Instagram Growth Academy: Expert Guide",
-    "slug": "accelerated-program-instagram-growth-academy",
-    "description": "accelerated-program instagram growth academy guide, accelerated-program instagram growth academy tutorial, accelerated-program instagram growth academy course -",
-    "category": "Instagram Growth Academy",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "accelerated-program instagram growth academy",
-      "accelerated-program instagram growth academy guide",
-      "accelerated-program instagram growth academy 2025",
-      "accelerated-program instagram growth academy course",
-      "accelerated-program instagram growth academy training"
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Accelerated-program N8n Automation Hub: Expert Guide 2025",
-    "slug": "accelerated-program-n8n-automation-hub",
-    "description": "accelerated-program n8n automation hub guide, accelerated-program n8n automation hub tutorial, accelerated-program n8n automation hub course - Expert training f",
-    "category": "N8N Automation Hub",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "accelerated-program n8n automation hub",
-      "accelerated-program n8n automation hub guide",
-      "accelerated-program n8n automation hub 2025",
-      "accelerated-program n8n automation hub course",
-      "accelerated-program n8n automation hub training"
     ]
   },
   {
@@ -7859,91 +7774,6 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 469,
-    "title": "Premium-masterclass Ai Automation Masterclass: Expert Guide",
-    "slug": "premium-masterclass-ai-automation-masterclass",
-    "description": "premium-masterclass ai automation masterclass guide, premium-masterclass ai automation masterclass tutorial, premium-masterclass ai automation masterclass cours",
-    "category": "AI Automation Mastery",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "premium-masterclass ai automation masterclass",
-      "premium-masterclass ai automation masterclass guide",
-      "premium-masterclass ai automation masterclass 2025",
-      "premium-masterclass ai automation masterclass course",
-      "premium-masterclass ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 470,
-    "title": "Premium-masterclass Ai Influencers Academy: Expert Guide",
-    "slug": "premium-masterclass-ai-influencers-academy",
-    "description": "premium-masterclass ai influencers academy guide, premium-masterclass ai influencers academy tutorial, premium-masterclass ai influencers academy course - Exper",
-    "category": "AI Influencers Academy",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "premium-masterclass ai influencers academy",
-      "premium-masterclass ai influencers academy guide",
-      "premium-masterclass ai influencers academy 2025",
-      "premium-masterclass ai influencers academy course",
-      "premium-masterclass ai influencers academy training"
-    ]
-  },
-  {
-    "id": 471,
-    "title": "Premium-masterclass Comfyui Pro Training: Expert Guide 2025",
-    "slug": "premium-masterclass-comfyui-pro-training",
-    "description": "premium-masterclass comfyui pro training guide, premium-masterclass comfyui pro training tutorial, premium-masterclass comfyui pro training course - Expert trai",
-    "category": "ComfyUI Pro Training",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "premium-masterclass comfyui pro training",
-      "premium-masterclass comfyui pro training guide",
-      "premium-masterclass comfyui pro training 2025",
-      "premium-masterclass comfyui pro training course",
-      "premium-masterclass comfyui pro training training"
-    ]
-  },
-  {
-    "id": 472,
-    "title": "Premium-masterclass Instagram Growth Academy: Expert Guide",
-    "slug": "premium-masterclass-instagram-growth-academy",
-    "description": "premium-masterclass instagram growth academy guide, premium-masterclass instagram growth academy tutorial, premium-masterclass instagram growth academy course -",
-    "category": "Instagram Growth Academy",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "premium-masterclass instagram growth academy",
-      "premium-masterclass instagram growth academy guide",
-      "premium-masterclass instagram growth academy 2025",
-      "premium-masterclass instagram growth academy course",
-      "premium-masterclass instagram growth academy training"
-    ]
-  },
-  {
-    "id": 473,
-    "title": "Premium-masterclass N8n Automation Hub: Expert Guide 2025",
-    "slug": "premium-masterclass-n8n-automation-hub",
-    "description": "premium-masterclass n8n automation hub guide, premium-masterclass n8n automation hub tutorial, premium-masterclass n8n automation hub course - Expert training f",
-    "category": "N8N Automation Hub",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "premium-masterclass n8n automation hub",
-      "premium-masterclass n8n automation hub guide",
-      "premium-masterclass n8n automation hub 2025",
-      "premium-masterclass n8n automation hub course",
-      "premium-masterclass n8n automation hub training"
-    ]
-  },
-  {
     "id": 474,
     "title": "Product Launch Strategy: Complete Guide & Expert Strategies",
     "slug": "product-launch-strategy",
@@ -9091,7 +8921,7 @@ export const categories: string[] = [
   "Virtual Marketing"
 ];
 
-// Tags (2478)
+// Tags (2428)
 export const tags: string[] = [
   "10k followers",
   "2025",
@@ -9099,31 +8929,6 @@ export const tags: string[] = [
   "500k 2025",
   "500k followers",
   "AI tools",
-  "accelerated-program ai automation masterclass",
-  "accelerated-program ai automation masterclass 2025",
-  "accelerated-program ai automation masterclass course",
-  "accelerated-program ai automation masterclass guide",
-  "accelerated-program ai automation masterclass training",
-  "accelerated-program ai influencers academy",
-  "accelerated-program ai influencers academy 2025",
-  "accelerated-program ai influencers academy course",
-  "accelerated-program ai influencers academy guide",
-  "accelerated-program ai influencers academy training",
-  "accelerated-program comfyui pro training",
-  "accelerated-program comfyui pro training 2025",
-  "accelerated-program comfyui pro training course",
-  "accelerated-program comfyui pro training guide",
-  "accelerated-program comfyui pro training training",
-  "accelerated-program instagram growth academy",
-  "accelerated-program instagram growth academy 2025",
-  "accelerated-program instagram growth academy course",
-  "accelerated-program instagram growth academy guide",
-  "accelerated-program instagram growth academy training",
-  "accelerated-program n8n automation hub",
-  "accelerated-program n8n automation hub 2025",
-  "accelerated-program n8n automation hub course",
-  "accelerated-program n8n automation hub guide",
-  "accelerated-program n8n automation hub training",
   "advanced comfyui",
   "advanced-strategies ai automation masterclass",
   "advanced-strategies ai automation masterclass 2025",
@@ -11198,31 +11003,6 @@ export const tags: string[] = [
   "pipeline",
   "platform",
   "powerhouse",
-  "premium-masterclass ai automation masterclass",
-  "premium-masterclass ai automation masterclass 2025",
-  "premium-masterclass ai automation masterclass course",
-  "premium-masterclass ai automation masterclass guide",
-  "premium-masterclass ai automation masterclass training",
-  "premium-masterclass ai influencers academy",
-  "premium-masterclass ai influencers academy 2025",
-  "premium-masterclass ai influencers academy course",
-  "premium-masterclass ai influencers academy guide",
-  "premium-masterclass ai influencers academy training",
-  "premium-masterclass comfyui pro training",
-  "premium-masterclass comfyui pro training 2025",
-  "premium-masterclass comfyui pro training course",
-  "premium-masterclass comfyui pro training guide",
-  "premium-masterclass comfyui pro training training",
-  "premium-masterclass instagram growth academy",
-  "premium-masterclass instagram growth academy 2025",
-  "premium-masterclass instagram growth academy course",
-  "premium-masterclass instagram growth academy guide",
-  "premium-masterclass instagram growth academy training",
-  "premium-masterclass n8n automation hub",
-  "premium-masterclass n8n automation hub 2025",
-  "premium-masterclass n8n automation hub course",
-  "premium-masterclass n8n automation hub guide",
-  "premium-masterclass n8n automation hub training",
   "price digital products",
   "pricing strategy",
   "pro",
