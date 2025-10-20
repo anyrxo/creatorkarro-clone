@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import SocialIcon from './SocialIcon'
 import NumberTicker from './magicui/number-ticker'

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users, DollarSign, BarChart3 } from 'lucide-react'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -58,8 +59,24 @@ export const metadata = {
 }
 
 export default function BlogPost() {
+
+const schema = generateBlogPostSchema({
+  title: metadata.title,
+  description: metadata.description,
+  slug: "comfyui-business-models",
+  publishedTime: metadata.openGraph.publishedTime,
+  modifiedTime: metadata.openGraph.modifiedTime,
+  category: metadata.category || "ComfyUI Pro Training",
+  keywords: metadata.keywords || [],
+  image: metadata.openGraph.images[0].url
+})
+
   return (
     <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       {/* Hero Section */}
       <section className="section-spacing overflow-hidden relative">
         {/* Beautiful Background Effects */}

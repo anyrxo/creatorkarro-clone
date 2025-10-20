@@ -40,6 +40,7 @@
   "exclude": [
     "node_modules",
     "src/scripts/**/*.js",
-    "src/scripts/**/*.ts"
+    "src/scripts/**/*.ts",
+    "backups/**/*"
   ]
 }

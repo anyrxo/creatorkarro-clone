@@ -58,6 +58,18 @@ export const metadata = {
 }
 
 export default function TikTokGrowthHacks() {
+
+  const schema = generateBlogPostSchema({
+  title: metadata.title,
+  description: metadata.description,
+  slug: "tiktok-growth-hacks",
+  publishedTime: metadata.openGraph.publishedTime,
+  modifiedTime: metadata.openGraph.modifiedTime,
+  category: metadata.category || "Technology",
+  keywords: metadata.keywords || [],
+  image: metadata.openGraph.images[0].url
+})
+
           
   return (
     

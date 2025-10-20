@@ -1,4 +1,5 @@
 import React from 'react'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -56,8 +57,24 @@ export const metadata = {
 }
 
 export default function DisabledPage() {
+
+const schema = generateBlogPostSchema({
+  title: metadata.title,
+  description: metadata.description,
+  slug: "google-deep-research-25-pro-business",
+  publishedTime: metadata.openGraph.publishedTime,
+  modifiedTime: metadata.openGraph.modifiedTime,
+  category: metadata.category || "Technology",
+  keywords: metadata.keywords || [],
+  image: metadata.openGraph.images[0].url
+})
+
   return (
     <div className="min-h-screen bg-dark flex items-center justify-center">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <p className="text-gray-400">This page is temporarily disabled due to build issues.</p>
     </div>
   )

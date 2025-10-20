@@ -1,13 +1,5 @@
 // Core Web Vitals Nuclear Optimization System
 
-declare global {
-  interface Window {
-    gtag?: (...args: any[]) => void;
-  }
-}
-
-declare const gtag: (...args: any[]) => void;
-
 export interface PerformanceConfig {
   enableImageOptimization: boolean
   enableCodeSplitting: boolean
@@ -240,13 +232,15 @@ export function optimizeFontLoading() {
 
 // Critical metrics tracking
 export function trackCoreWebVitals() {
+  if (typeof window === 'undefined' || !window.gtag) return;
+
   // Track Largest Contentful Paint (LCP)
   new PerformanceObserver((entryList) => {
     const entries = entryList.getEntries()
     const lastEntry = entries[entries.length - 1]
-    
+
     // Send to analytics
-    gtag('event', 'LCP', {
+    window.gtag?.('event', 'LCP', {
       event_category: 'Web Vitals',
       value: Math.round(lastEntry.startTime),
       non_interaction: true
@@ -256,7 +250,7 @@ export function trackCoreWebVitals() {
   // Track First Input Delay (FID)
   new PerformanceObserver((entryList) => {
     for (const entry of entryList.getEntries()) {
-      gtag('event', 'FID', {
+      window.gtag?.('event', 'FID', {
         event_category: 'Web Vitals',
         value: Math.round((entry as any).processingStart - entry.startTime),
         non_interaction: true
@@ -272,8 +266,8 @@ export function trackCoreWebVitals() {
         clsValue += (entry as any).value
       }
     }
-    
-    gtag('event', 'CLS', {
+
+    window.gtag?.('event', 'CLS', {
       event_category: 'Web Vitals',
       value: Math.round(clsValue * 1000),
       non_interaction: true

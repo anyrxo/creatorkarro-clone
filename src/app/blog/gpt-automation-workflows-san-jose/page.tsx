@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users, BarChart3 } from 'lucide-react'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // TOXIC SEO Metadata - RANK #1 OPTIMIZED
 export const metadata = {
@@ -58,8 +59,24 @@ export const metadata = {
 }
 
 export default function BlogPost() {
+
+const schema = generateBlogPostSchema({
+  title: metadata.title,
+  description: metadata.description,
+  slug: "gpt-automation-workflows-san-jose",
+  publishedTime: metadata.openGraph.publishedTime,
+  modifiedTime: metadata.openGraph.modifiedTime,
+  category: metadata.category || "N8N Automation Hub",
+  keywords: metadata.keywords || [],
+  image: metadata.openGraph.images[0].url
+})
+
   return (
 <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
   {/* TOXIC SEO HERO - KEYWORD OPTIMIZED */}
   <section className="section-spacing overflow-hidden relative">
     {/* Beautiful Background Effects - Same as existing blogs */}

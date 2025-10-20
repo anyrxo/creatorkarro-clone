@@ -50,8 +50,47 @@ export default function AiAutomationBeginnersGuidePage() {
   const tableOfContents = ["Introduction","Fundamentals","Advanced Strategies"]
   const faqs: Array<{question: string, answer: string}> = []
 
+  // Get the image URL safely
+  const imageUrl = Array.isArray(metadata.openGraph?.images)
+    ? (metadata.openGraph.images[0] as any)?.url
+    : (metadata.openGraph?.images as any)?.url || '/api/og';
+
+  // SEO Schema
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: metadata.title || 'Blog Post',
+    description: metadata.description || '',
+    image: imageUrl,
+    datePublished: '2025-01-15T00:00:00Z',
+    dateModified: new Date().toISOString(),
+    author: {
+      '@type': 'Organization',
+      name: 'IImagined.ai',
+      url: 'https://iimagined.ai'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'IImagined.ai',
+      url: 'https://iimagined.ai',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://iimagined.ai/logo.png'
+      }
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://iimagined.ai/blog/ai-automation-beginners-guide'
+    }
+  }
+
   return (
-    <div className="min-h-screen bg-dark text-white">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
+      <div className="min-h-screen bg-dark text-white">
       <FAQSchema faqs={faqs} displayType="accordion" />
       
       <article className="py-20 px-4">
@@ -98,5 +137,6 @@ export default function AiAutomationBeginnersGuidePage() {
         </div>
       </article>
     </div>
+  </>
   )
 }

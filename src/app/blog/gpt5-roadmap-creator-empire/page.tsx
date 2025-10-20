@@ -58,6 +58,18 @@ export const metadata = {
 }
 
 export default function Gpt5RoadmapCreatorEmpirePage() {
+
+  const schema = generateBlogPostSchema({
+  title: metadata.title,
+  description: metadata.description,
+  slug: "gpt5-roadmap-creator-empire",
+  publishedTime: metadata.openGraph.publishedTime,
+  modifiedTime: metadata.openGraph.modifiedTime,
+  category: metadata.category || "Technology",
+  keywords: metadata.keywords || [],
+  image: metadata.openGraph.images[0].url
+})
+
   return (
     <div className="min-h-screen bg-dark">
       <script

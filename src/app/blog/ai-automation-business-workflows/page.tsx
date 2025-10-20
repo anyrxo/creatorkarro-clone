@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users, BarChart3 } from 'lucide-react'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -58,8 +59,24 @@ export const metadata = {
 }
 
 export default function BlogPost() {
+
+const schema = generateBlogPostSchema({
+  title: metadata.title,
+  description: metadata.description,
+  slug: "ai-automation-business-workflows",
+  publishedTime: metadata.openGraph.publishedTime,
+  modifiedTime: metadata.openGraph.modifiedTime,
+  category: metadata.category || "AI Automation Mastery",
+  keywords: metadata.keywords || [],
+  image: metadata.openGraph.images[0].url
+})
+
   return (
 <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
   {/* SEO-OPTIMIZED HERO SECTION */}
   <section className="section-spacing overflow-hidden relative">
     <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black"></div>
