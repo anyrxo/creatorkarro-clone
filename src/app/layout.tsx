@@ -14,6 +14,7 @@ import { generateDynamicMeta } from "@/lib/meta-generator";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import ClientOnlyBackground from "@/components/ClientOnlyBackground";
+import SkipToContent from "@/components/SkipToContent";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -201,6 +202,7 @@ export default function RootLayout({
         }} />
       </head>
       <body className={montserrat.className}>
+        <SkipToContent />
         {/* Google Analytics - Optimized Loading */}
         <Script
           strategy="afterInteractive"
@@ -246,7 +248,7 @@ export default function RootLayout({
           <ScrollProgressIndicator />
           <Navigation />
           <PageTransition>
-            <main className="pt-20 page-enter relative z-10">
+            <main id="main-content" className="pt-20 page-enter relative z-10">
               {children}
             </main>
           </PageTransition>

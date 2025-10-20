@@ -82,7 +82,8 @@ export const useRealTimePrice = (symbol: string, interval = '1m', updateInterval
     
     try {
       const mappedSymbol = SYMBOL_MAPPING[symbol] || symbol
-      const response = await fetch(`http://localhost:8000/api/price/${encodeURIComponent(mappedSymbol)}`)
+      const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+      const response = await fetch(`${API_BASE_URL}/api/price/${encodeURIComponent(mappedSymbol)}`)
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
@@ -214,7 +215,8 @@ export const useMarketAnalysis = (symbol: string, updateInterval = 5000) => {
     
     try {
       const mappedSymbol = SYMBOL_MAPPING[symbol] || symbol
-      const response = await fetch(`http://localhost:8000/api/analysis/${encodeURIComponent(mappedSymbol)}`)
+      const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+      const response = await fetch(`${API_BASE_URL}/api/analysis/${encodeURIComponent(mappedSymbol)}`)
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
@@ -288,7 +290,8 @@ export const useMarketNews = (updateInterval = 300000) => { // 5 minutes
     setError(null)
     
     try {
-      const response = await fetch('http://localhost:8000/api/news')
+      const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+      const response = await fetch(`${API_BASE_URL}/api/news`)
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)

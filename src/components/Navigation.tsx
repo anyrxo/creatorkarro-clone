@@ -88,12 +88,27 @@ export default function Navigation() {
                       <button
                         className="flex items-center px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 rounded-full hover:bg-zinc-700/50 hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] backdrop-blur-sm"
                         onMouseEnter={() => setIsCoursesOpen(true)}
+                        onClick={() => setIsCoursesOpen(!isCoursesOpen)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault()
+                            setIsCoursesOpen(!isCoursesOpen)
+                          }
+                          if (e.key === 'Escape') {
+                            setIsCoursesOpen(false)
+                          }
+                        }}
+                        aria-expanded={isCoursesOpen}
+                        aria-haspopup="true"
+                        aria-label={`${item.name} menu`}
                       >
                         {item.name}
                         <ChevronDown size={16} className={`ml-1 transition-transform duration-300 ${isCoursesOpen ? 'rotate-180' : ''}`} />
                       </button>
 
                       <div
+                        role="menu"
+                        aria-label={`${item.name} dropdown menu`}
                         className={`absolute top-full left-0 mt-2 w-56 bg-zinc-900/95 backdrop-blur-xl border border-zinc-700/50 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.8)] py-2 z-50 transition-all duration-300 ease-out glass-premium ${
                           isCoursesOpen
                             ? 'opacity-100 visible transform translate-y-0 scale-100'

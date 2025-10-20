@@ -42,6 +42,10 @@ const nextConfig = {
           {
             key: 'Permissions-Policy',
             value: 'camera=(), microphone=(), geolocation=()'
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.marketaux.com https://*.google.com https://vercel.live wss://ws.pusher.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://beehiiv.com https://whop.com"
           }
         ],
       },

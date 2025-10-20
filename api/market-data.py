@@ -24,7 +24,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+
+# Configure CORS with specific allowed origins for production security
+allowed_origins = os.getenv(
+    'CORS_ORIGINS',
+    'http://localhost:3000,https://iimagined.ai,https://www.iimagined.ai,https://*.vercel.app'
+).split(',')
+
+CORS(app, origins=allowed_origins, supports_credentials=False, max_age=3600)
 
 # Configure rate limiting
 limiter = Limiter(

@@ -2,6 +2,35 @@ import { MetadataRoute } from 'next'
 import fs from 'fs'
 import path from 'path'
 
+// Get all blog post slugs by scanning the blog directory
+export function getAllBlogSlugs(): string[] {
+  try {
+    const blogDir = path.join(process.cwd(), 'src', 'app', 'blog')
+
+    if (!fs.existsSync(blogDir)) {
+      console.warn('Blog directory not found:', blogDir)
+      return []
+    }
+
+    const entries = fs.readdirSync(blogDir, { withFileTypes: true })
+
+    // Filter out directories that contain a page.tsx file
+    const slugs = entries
+      .filter(entry => entry.isDirectory())
+      .map(entry => entry.name)
+      .filter(slug => {
+        const pagePath = path.join(blogDir, slug, 'page.tsx')
+        return fs.existsSync(pagePath)
+      })
+
+    console.log(`Found ${slugs.length} blog posts`)
+    return slugs
+  } catch (error) {
+    console.error('Error scanning blog directory:', error)
+    return []
+  }
+}
+
 // Cities array used by multiple functions
 const cities = [
     'new-york', 'los-angeles', 'chicago', 'houston', 'phoenix', 'philadelphia', 
