@@ -208,10 +208,10 @@ export default function TestimonialsPage() {
     {
       name: "Robert Garcia",
       role: "Music Producer",
-      course: "N8N AI Automations",
+      course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=41",
-      content: "Automated my entire music promotion workflow. What used to take days now happens automatically. More time for creating, less time on admin!",
-      results: "80% time saved, 2x release schedule"
+      content: "Created and launched my music production course using the Digital Products framework. What used to be just beats is now a thriving educational business. More revenue streams, more impact!",
+      results: "New revenue stream, $8K/month passive income"
     },
     {
       name: "Amanda White",
@@ -419,8 +419,8 @@ export default function TestimonialsPage() {
                   <span className={`text-xs px-3 py-1 rounded-full ${
                     testimonial.course === 'Instagram Ignited' ? 'bg-blue-500/20 text-blue-400' :
                     testimonial.course === 'Digital Products' ? 'bg-green-500/20 text-green-400' :
-                    testimonial.course === 'N8N AI Automations' ? 'bg-purple-500/20 text-purple-400' :
                     testimonial.course === 'AI Influencers' ? 'bg-pink-500/20 text-pink-400' :
+                    testimonial.course === 'FX Trading' ? 'bg-purple-500/20 text-purple-400' :
                     'bg-orange-500/20 text-orange-400'
                   }`}>
                     {testimonial.course}
