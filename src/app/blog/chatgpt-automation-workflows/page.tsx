@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -57,8 +58,25 @@ export const metadata = {
 }
 
 export default function ChatGPTAutomationPage() {
+  const schema = generateBlogPostSchema({
+    title: metadata.title,
+    description: metadata.description,
+    slug: "chatgpt-automation-workflows",
+    publishedTime: metadata.openGraph.publishedTime,
+    modifiedTime: metadata.openGraph.modifiedTime,
+    category: metadata.category,
+    keywords: metadata.keywords,
+    image: metadata.openGraph.images[0].url
+  })
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800"><section className="relative py-20 px-4 text-center overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
+      <section className="relative py-20 px-4 text-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-blue-600/20" />
         <div className="relative max-w-4xl mx-auto">
           <div className="inline-flex items-center px-4 py-2 bg-emerald-500/20 rounded-full text-emerald-300 text-sm font-medium mb-6">

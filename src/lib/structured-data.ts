@@ -102,7 +102,7 @@ export function generateArticleStructuredData(
       name: siteConfig.name,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteConfig.url}/anyro.png`
+        url: `${siteConfig.url}/anyro.webp`
       }
     },
     datePublished: publishDate,
@@ -123,7 +123,7 @@ export function generateOrganizationStructuredData(): OrganizationStructuredData
     '@type': 'Organization',
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/anyro.png`,
+    logo: `${siteConfig.url}/anyro.webp`,
     description: siteConfig.description,
     sameAs: [
       'https://twitter.com/iimagined_ai',

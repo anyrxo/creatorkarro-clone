@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "AI Content Income",
+  title: "AI Content Income: Earn $10K/Month Creating Content",
   description: "AI Content Income comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
   keywords: ["content", "income", "content 2025", "content income", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],

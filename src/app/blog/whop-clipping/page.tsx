@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Whop Clipping",
+  title: "Whop Clipping: Complete Creator Earnings Guide 2025",
   description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["whop", "clipping", "whop 2025", "whop clipping", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],

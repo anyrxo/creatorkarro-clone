@@ -64,7 +64,7 @@ export default function Navigation() {
           {/* Logo - Far Left */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/anyro.png"
+              src="/anyro.webp"
               alt="Anyro"
               width={40}
               height={40}

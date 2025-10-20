@@ -137,7 +137,7 @@ export default function StoryPage() {
             className={`mb-16 text-center scroll-scale ${imageAnimation.isVisible ? 'visible' : ''}`}
           >
             <Image
-              src="/anyro.png"
+              src="/anyro.webp"
               alt="Anyro - Founder of IImagined, AI automation expert and content creator"
               width={300}
               height={300}

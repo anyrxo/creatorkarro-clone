@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Monetize With AI",
+  title: "Monetize With AI: Passive Income Strategies for 2025",
   description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
   keywords: ["monetize", "with", "monetize 2025", "monetize with", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
@@ -61,6 +62,11 @@ export default function MonetizeWithAI() {
   return (
     
     <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
 
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

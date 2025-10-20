@@ -1,0 +1,179 @@
+{
+  "totalPages": 615,
+  "complianceRate": "68.0%",
+  "criticalIssues": 23,
+  "highPriorityIssues": 62,
+  "mediumPriorityIssues": 112,
+  "estimatedImpact": {
+    "ctrlImprovement": "15-25%",
+    "rankingBoost": "5-10 positions",
+    "timeframe": "30-60 days"
+  },
+  "priorityFixes": [
+    {
+      "file": "algorithm-defense/page.tsx",
+      "action": "Add title tag",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "analytics-dashboard/page.tsx",
+      "action": "Add title tag",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "blog/page.tsx",
+      "action": "Add title tag",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "checkout/page.tsx",
+      "action": "Add title tag",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "contact/page.tsx",
+      "action": "Add title tag",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "blog/ai-era-skills/page.tsx",
+      "current": "AI Era Skills",
+      "length": 13,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "blog/whop-clipping/page.tsx",
+      "current": "Whop Clipping",
+      "length": 13,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "blog/500k-followers/page.tsx",
+      "current": "500k Followers",
+      "length": 14,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "blog/monetize-with-ai/page.tsx",
+      "current": "Monetize With AI",
+      "length": 16,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "blog/ai-content-income/page.tsx",
+      "current": "AI Content Income",
+      "length": 17,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "page.tsx",
+      "current": "Instagram Ignited",
+      "length": 17,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "blog/comfyui-comparison/page.tsx",
+      "current": "ComfyUI Comparison",
+      "length": 18,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "blog/ai-automation-guide/page.tsx",
+      "current": "AI Automation Guide",
+      "length": 19,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "blog/make-app-automation/page.tsx",
+      "current": "Make App Automation",
+      "length": 19,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "blog/tiktok-growth-hacks/page.tsx",
+      "current": "TikTok Growth Hacks",
+      "length": 19,
+      "action": "Expand to 50-60 chars",
+      "severity": "HIGH"
+    },
+    {
+      "file": "blog/ai-influencers-complete-guide-virtual-influencer-creation-2025/page.tsx",
+      "current": "AI Influencers: Complete Guide to Virtual Influencer Creation 2025 | IImagined.ai",
+      "length": 81,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "blog/online-course-creation-guide-build-sell-courses/page.tsx",
+      "current": "Online Course Creation Guide: Build & Sell Courses That Convert | IImagined.ai",
+      "length": 78,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "masterclass-vs-iimagined/page.tsx",
+      "current": "Masterclass vs IImagined.ai: Which is Better? [2025 Comparison] | IImagined.ai",
+      "length": 78,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "best-digital-products-course-for-small-business/page.tsx",
+      "current": "Best Digital Products Course for small business [2025 Updated] | IImagined.ai",
+      "length": 77,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "best-instagram-growth-course-for-small-business/page.tsx",
+      "current": "Best Instagram Growth Course for small business [2025 Updated] | IImagined.ai",
+      "length": 77,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "skillshare-vs-iimagined/page.tsx",
+      "current": "Skillshare vs IImagined.ai: Which is Better? [2025 Comparison] | IImagined.ai",
+      "length": 77,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "best-digital-products-course-for-entrepreneurs/page.tsx",
+      "current": "Best Digital Products Course for entrepreneurs [2025 Updated] | IImagined.ai",
+      "length": 76,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "best-instagram-growth-course-for-entrepreneurs/page.tsx",
+      "current": "Best Instagram Growth Course for entrepreneurs [2025 Updated] | IImagined.ai",
+      "length": 76,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "blog/how-to-create-digital-products-that-sell-2025/page.tsx",
+      "current": "How to Create Digital Products That Sell: Complete 2025 Guide | IImagined.ai",
+      "length": 76,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "teachable-vs-iimagined/page.tsx",
+      "current": "Teachable vs IImagined.ai: Which is Better? [2025 Comparison] | IImagined.ai",
+      "length": 76,
+      "action": "Trim to 50-60 chars",
+      "severity": "MEDIUM"
+    }
+  ]
+}

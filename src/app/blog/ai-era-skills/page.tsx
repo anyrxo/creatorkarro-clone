@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "AI Era Skills",
+  title: "AI Era Skills: Master Future-Ready Tech in 2025",
   description: "AI Era Skills comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
   keywords: ["era", "skills", "era 2025", "era skills", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],

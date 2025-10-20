@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "500k Followers",
+  title: "How to Gain 500k Instagram Followers: Complete Guide",
   description: "500k Followers - comprehensive strategies, tools, and techniques for 2025",
   keywords: ["500k", "followers", "500k 2025", "500k followers", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],

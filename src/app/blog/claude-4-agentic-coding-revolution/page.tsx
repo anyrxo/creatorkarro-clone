@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -84,9 +85,24 @@ const faqs = [
 ]
 
 export default function Claude4AgenticCodingPage() {
+  const schema = generateBlogPostSchema({
+    title: metadata.title,
+    description: metadata.description,
+    slug: "claude-4-agentic-coding-revolution",
+    publishedTime: metadata.openGraph.publishedTime,
+    modifiedTime: metadata.openGraph.modifiedTime,
+    category: metadata.category,
+    keywords: metadata.keywords,
+    image: metadata.openGraph.images[0].url
+  })
+
   return (
-    
+
     <article className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 px-4 py-8">
             <Breadcrumbs />
         

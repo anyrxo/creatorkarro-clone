@@ -1,5 +1,6 @@
 import React from 'react'
-import Link from 'next/link';
+import Link from 'next/link'
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -59,6 +60,11 @@ export const metadata = {
 export default function Gpt5RoadmapCreatorEmpirePage() {
   return (
     <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
       <section className="section-spacing bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">

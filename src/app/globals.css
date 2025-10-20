@@ -700,7 +700,177 @@ a:hover, button:hover, [role="button"]:hover, .interactive:hover {
   }
 }
 
-/* Enhanced Focus States for Accessibility */
+/* ============================================================================
+   ENHANCED FOCUS INDICATORS - WCAG 2.4.7 Level AA Compliance
+   ============================================================================
+
+   These styles ensure all interactive elements have visible focus indicators
+   with a minimum 3:1 contrast ratio against their background.
+
+   Focus states use:
+   - 3px solid outline for high visibility
+   - 2-4px offset for clear separation
+   - Blue color scheme (#3b82f6) that meets contrast requirements
+   - Lighter blue (#60a5fa) for dark backgrounds
+   - Box shadows for additional depth and visibility
+   ============================================================================ */
+
+/* Universal Focus Style - Applies to all focusable elements */
+*:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 4px;
+  transition: outline 0.2s ease-in-out, outline-offset 0.2s ease-in-out;
+}
+
+/* Remove default focus outline (we'll add back with :focus-visible) */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* High contrast focus for dark backgrounds */
+.bg-dark *:focus-visible,
+.bg-zinc-900 *:focus-visible,
+.bg-zinc-800 *:focus-visible,
+.bg-black *:focus-visible,
+[class*="bg-gradient"] *:focus-visible {
+  outline-color: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.2);
+}
+
+/* Focus for links - includes underline for additional visibility */
+a:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 4px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* Focus for buttons - enhanced with shadow ring */
+button:focus-visible,
+[type="button"]:focus-visible,
+[type="submit"]:focus-visible,
+[type="reset"]:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.15);
+}
+
+/* Focus for CTA buttons - extra prominent */
+.cta-button:focus-visible,
+.btn-primary:focus-visible,
+.btn-luxury:focus-visible,
+.shimmer-button:focus-visible {
+  outline: 4px solid #60a5fa;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.2), 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Focus for form inputs */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+  transform: scale(1.01);
+}
+
+/* Focus for cards and interactive containers */
+.card:focus-visible,
+.interactive-card:focus-visible,
+[class*="Interactive"]:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.15);
+}
+
+/* Focus for navigation items */
+nav a:focus-visible,
+nav button:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 3px;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 8px;
+}
+
+/* Focus for magnetic buttons (homepage) */
+.magnetic-button:focus-visible {
+  outline: 4px solid #60a5fa;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 8px rgba(96, 165, 250, 0.2), 0 0 25px rgba(96, 165, 250, 0.4);
+}
+
+/* Focus for dropdown items and menus */
+[role="menuitem"]:focus-visible,
+[role="option"]:focus-visible,
+.dropdown-item:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: -1px;
+  background-color: rgba(59, 130, 246, 0.15);
+}
+
+/* Focus for social icons */
+.social-icon:focus-visible,
+[class*="SocialIcon"]:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(96, 165, 250, 0.2);
+  transform: scale(1.15);
+}
+
+/* Focus for checkbox and radio inputs */
+input[type="checkbox"]:focus-visible,
+input[type="radio"]:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(59, 130, 246, 0.2);
+}
+
+/* Focus for footer links - lighter for dark footer background */
+footer a:focus-visible,
+footer button:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 3px;
+  background-color: rgba(96, 165, 250, 0.1);
+  border-radius: 4px;
+}
+
+/* Skip to main content link - visible only on focus */
+.skip-to-main:focus-visible {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  padding: 16px 24px;
+  background: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  outline: 4px solid #60a5fa;
+  outline-offset: 4px;
+  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.5);
+  text-decoration: none;
+}
+
+/* Focus for image links and cards with images */
+a:has(img):focus-visible {
+  outline: 4px solid #3b82f6;
+  outline-offset: 6px;
+  box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.15);
+}
+
+/* Ensure focus is visible on gradient backgrounds */
+.animated-gradient *:focus-visible,
+.btn-animate:focus-visible {
+  outline: 4px solid #ffffff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 7px rgba(59, 130, 246, 0.4);
+}
+
+/* Legacy support for older focus styles */
 input:focus, textarea:focus, select:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
