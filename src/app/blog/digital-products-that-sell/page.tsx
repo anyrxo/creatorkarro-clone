@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 
 export const metadata = {
   title: "Digital Products That Sell - Complete Creation Course 2025",
-  description: "Want to know which digital products actually sell? Get the complete course that reveals the exact products generating $10K+/month and how to create them step-by-step.",
+  description: "Discover which digital products actually sell. Complete course reveals exact products generating $10K+/month & step-by-step creation blueprints.",
   robots: {
     index: false,
     follow: true,

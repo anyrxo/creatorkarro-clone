@@ -923,7 +923,7 @@ export default function AIInfluencersPage() {
             <p className="text-xl text-zinc-300 mb-8">
               Join creators building profitable virtual models with zero face-to-camera content
             </p>
-            <Link href="#packages" className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full">
+            <Link href="/checkout?course=ai-influencers" className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full">
               <ShimmerButton
                 className="shadow-2xl"
                 shimmerColor="#ffffff"
@@ -1020,7 +1020,7 @@ export default function AIInfluencersPage() {
                   Don't let this opportunity slip away. Every day you wait is money left on the table while others build their AI empires.
                 </p>
 
-                <Link href="#packages" className="inline-block focus:outline-none focus:ring-4 focus:ring-red-500/50 rounded-full">
+                <Link href="/checkout?course=ai-influencers" className="inline-block focus:outline-none focus:ring-4 focus:ring-red-500/50 rounded-full">
                   <ShimmerButton
                     className="shadow-2xl"
                     shimmerColor="#ffffff"
@@ -1068,7 +1068,7 @@ export default function AIInfluencersPage() {
               <p className="text-xl text-zinc-300 mb-8">
                 Join hundreds of creators who are already making $<NumberTicker value={10} className="text-pink-400 font-bold inline" />K+ per month with faceless AI brands
               </p>
-              <Link href="#packages" className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full">
+              <Link href="/checkout?course=ai-influencers" className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full">
                 <ShimmerButton
                   className="shadow-2xl"
                   shimmerColor="#ffffff"

@@ -25,7 +25,10 @@
     "generate-blogs": "node src/scripts/simpleBlogGenerator.js",
     "expand-blogs": "node src/scripts/expandBlogGeneration.js",
     "generate-all-blogs": "npm run generate-blogs && npm run expand-blogs",
-    "generate-programmatic": "npx ts-node src/scripts/generateProgrammaticPages.ts"
+    "generate-programmatic": "npx ts-node src/scripts/generateProgrammaticPages.ts",
+    "validate-meta-descriptions": "node scripts/validate-meta-descriptions.js",
+    "fix-meta-descriptions": "node scripts/fix-meta-descriptions.js",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -45,6 +48,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^10.1.0",
+    "sharp": "^0.34.4",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7"
   },

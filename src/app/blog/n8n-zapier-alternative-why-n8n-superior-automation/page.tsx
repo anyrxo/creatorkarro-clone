@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "N8N Zapier Alternative: Why N8N is Superior for Automation | IImagined.ai",
-  description: "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
+  description: "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+...",
   keywords: ["n8n zapier alternative","zapier vs n8n","automation tools comparison","workflow automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

@@ -1432,6 +1432,6 @@ body {
 }
 
 .text-gray-400 {
-  color: #888888;
+  color: #a1a1aa; /* Improved contrast: gray-300 equivalent for better WCAG compliance */
 }
 

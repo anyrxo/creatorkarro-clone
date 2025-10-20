@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 
 export const metadata = {
   title: "DeepAgent God-Tier AI Automation - Advanced Implementation",
-  description: "This content has been consolidated into our comprehensive AI automation guide featuring god-tier automation strategies, advanced AI agents, and enterprise-level implementation frameworks.",
+  description: "This content has been consolidated into our comprehensive AI automation guide featuring god-tier automation strategies, advanced AI agents, and...",
   robots: {
     index: false,
     follow: true,

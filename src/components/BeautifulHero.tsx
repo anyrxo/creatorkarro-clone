@@ -87,7 +87,7 @@ export function BeautifulHero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="text-center"
         >
-          <motion.p 
+          <motion.p
             className="mb-4 text-sm font-light tracking-[0.2em] text-zinc-400"
             initial={{ opacity: 0, letterSpacing: "0.5em" }}
             animate={{ opacity: 1, letterSpacing: "0.2em" }}
@@ -95,15 +95,15 @@ export function BeautifulHero() {
           >
             TRANSFORM YOUR PASSION INTO PROFIT
           </motion.p>
-          
-          <div className="mb-8" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+
+          <h1 className="mb-8" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
             <ScrambleText
               text="CREATE THE FUTURE"
               className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-none tracking-tight"
               scrambleSpeed={1}
               revealSpeed={1}
             />
-          </div>
+          </h1>
 
           <motion.p 
             className="mb-12 text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto"

@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 
 export const metadata = {
   title: "Voice AI Automation Guide - Complete Implementation",
-  description: "This content has been consolidated into our comprehensive AI automation guide which includes advanced voice AI automation strategies and implementation techniques.",
+  description: "This content has been consolidated into our comprehensive AI automation guide which includes advanced voice AI automation strategies and implementation...",
   robots: {
     index: false,
     follow: true,

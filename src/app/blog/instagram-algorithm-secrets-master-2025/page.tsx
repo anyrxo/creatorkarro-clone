@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Instagram Algorithm Secrets: Master the 2025 Algorithm | IImagined.ai",
-  description: "instagram algorithm, instagram algorithm 2025, instagram reach - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
+  description: "instagram algorithm, instagram algorithm 2025, instagram reach - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
   keywords: ["instagram algorithm","instagram algorithm 2025","instagram reach","instagram engagement","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

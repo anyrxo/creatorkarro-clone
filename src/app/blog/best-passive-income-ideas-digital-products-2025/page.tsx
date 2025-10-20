@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Best Passive Income Ideas: 20+ Digital Products That Work | IImagined.ai",
-  description: "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in student revenue",
+  description: "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery with 127K+ students...",
   keywords: ["passive income ideas","digital products passive income","make money online","passive income","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

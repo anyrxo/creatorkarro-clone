@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 
 export const metadata = {
   title: "Digital Product Pricing Strategies - Complete Psychology Course 2025",
-  description: "Master digital product pricing psychology that converts. Get the complete course with proven pricing strategies, psychology techniques, and optimization frameworks.",
+  description: "Master digital product pricing psychology that converts. Complete course with proven strategies, psychology techniques & optimization frameworks.",
   robots: {
     index: false,
     follow: true,

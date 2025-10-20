@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Instagram Monetization Guide: 15 Proven Ways to Make Money | IImagined.ai",
-  description: "instagram monetization, make money instagram, instagram income - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
+  description: "instagram monetization, make money instagram, instagram income - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
   keywords: ["instagram monetization","make money instagram","instagram income","monetize instagram","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

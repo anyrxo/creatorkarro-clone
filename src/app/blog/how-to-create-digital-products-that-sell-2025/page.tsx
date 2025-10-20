@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "How to Create Digital Products That Sell: Complete 2025 Guide | IImagined.ai",
-  description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in student revenue",
+  description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
   keywords: ["create digital products","digital product ideas","sell digital products","digital products business","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

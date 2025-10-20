@@ -126,7 +126,7 @@ export default function Footer() {
                 revealSpeed={1}
               />
             </div>
-            <p className="text-zinc-300 mb-8 leading-relaxed text-lg">
+            <p className="text-zinc-200 mb-8 leading-relaxed text-lg">
               Transform your passion into profit with AI automation, viral content systems, and digital product mastery. Join <NumberTicker value={4000} className="text-blue-400 font-semibold" />+ students building their creator empire.
             </p>
             
@@ -164,7 +164,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-zinc-300 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
+                    className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
                   >
                     {link.name}
                   </Link>
@@ -181,7 +181,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-zinc-300 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
+                    className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
                   >
                     {link.name}
                   </Link>
@@ -198,7 +198,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-zinc-300 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
+                    className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
                   >
                     {link.name}
                   </Link>
@@ -220,9 +220,9 @@ export default function Footer() {
             </div>
 
             {/* Community CTA */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 text-zinc-300 text-sm">
+            <div className="flex flex-col sm:flex-row items-center gap-4 text-zinc-200 text-sm">
               <div className="flex items-center gap-2">
-                <NumberTicker value={4000} className="text-blue-400 font-semibold" />+ 
+                <NumberTicker value={4000} className="text-blue-400 font-semibold" />+
                 <span>students building their empire</span>
               </div>
               <span className="hidden sm:block">•</span>

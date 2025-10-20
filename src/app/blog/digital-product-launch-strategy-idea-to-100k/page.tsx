@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Digital Product Launch Strategy: From Idea to $100K | IImagined.ai",
-  description: "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in student revenue",
+  description: "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery with 127K+...",
   keywords: ["digital product launch","product launch strategy","digital product marketing","launch products","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

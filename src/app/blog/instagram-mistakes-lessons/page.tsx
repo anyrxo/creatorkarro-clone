@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 
 export const metadata = {
   title: "Instagram Mistakes & Lessons - Complete Growth Guide 2025",
-  description: "This content has been consolidated into our comprehensive Instagram growth guide featuring common mistakes, lessons learned, and advanced strategies for 2025 growth.",
+  description: "This content has been consolidated into our comprehensive Instagram growth guide featuring common mistakes, lessons learned, and advanced strategies for...",
   robots: {
     index: false,
     follow: true,

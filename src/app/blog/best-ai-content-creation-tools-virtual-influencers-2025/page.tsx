@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Best AI Content Creation Tools for Virtual Influencers 2025 | IImagined.ai",
-  description: "ai content creation, ai social media content, virtual influencer content - Expert guide from the creators of AI Influencers Academy with 127K+ students and $2.7M+ in student revenue",
+  description: "ai content creation, ai social media content, virtual influencer content - Expert guide from the creators of AI Influencers Academy with 127K+ students...",
   keywords: ["ai content creation","ai social media content","virtual influencer content","ai content tools","ai influencers academy","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

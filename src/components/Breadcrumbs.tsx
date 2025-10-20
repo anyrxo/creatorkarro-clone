@@ -46,7 +46,9 @@ export default function Breadcrumbs() {
             <li key={crumb.href} className="flex items-center">
               {index > 0 && <span className="mx-2">/</span>}
               {index === breadcrumbs.length - 1 ? (
-                <span className="text-white font-medium">{crumb.name}</span>
+                <span className="text-white font-medium" aria-current="page">
+                  {crumb.name}
+                </span>
               ) : (
                 <Link
                   href={crumb.href}

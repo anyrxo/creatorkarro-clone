@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 
 export const metadata = {
   title: "Cloud GPU AI Automation - Complete Infrastructure Guide",
-  description: "This content has been consolidated into our comprehensive AI automation guide featuring cloud GPU infrastructure, scalable automation systems, and enterprise deployment strategies.",
+  description: "This content has been consolidated into our comprehensive AI automation guide featuring cloud GPU infrastructure, scalable automation systems, and...",
   robots: {
     index: false,
     follow: true,

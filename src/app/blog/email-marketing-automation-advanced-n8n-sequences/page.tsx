@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Email Marketing Automation: Advanced N8N Sequences | IImagined.ai",
-  description: "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
+  description: "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations with 127K+ students and...",
   keywords: ["email marketing automation","automated email sequences","email automation","marketing automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

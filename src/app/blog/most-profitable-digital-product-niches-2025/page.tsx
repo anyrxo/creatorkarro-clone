@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Most Profitable Digital Product Niches in 2025 | IImagined.ai",
-  description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in student revenue",
+  description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery with 127K+...",
   keywords: ["digital product niches","profitable digital products","digital product market","best niches","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

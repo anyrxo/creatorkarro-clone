@@ -103,7 +103,7 @@ export default async function CountryHomePage({ params }: Props) {
           const match = testimonial.match(/^([^:]+):\s*"([^"]+)"$/)
           // Use different testimonial images for variety
           const imageIndex = (index % 8) + 1
-          const testimonialImage = `/testimonials/testimonial-${imageIndex}.jpg`
+          const testimonialImage = `/testimonials/testimonial-${imageIndex}.webp`
           
           if (match) {
             const [, nameLocation, result] = match

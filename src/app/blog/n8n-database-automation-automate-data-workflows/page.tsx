@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "N8N Database Automation: Automate Your Data Workflows | IImagined.ai",
-  description: "n8n database automation, database workflows, automated data processing - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
+  description: "n8n database automation, database workflows, automated data processing - Expert guide from the creators of N8N AI Automations with 127K+ students and...",
   keywords: ["n8n database automation","database workflows","automated data processing","n8n data automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

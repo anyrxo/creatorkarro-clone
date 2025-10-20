@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Virtual Influencer Marketing Strategy: Dominate Social Media | IImagined.ai",
-  description: "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy with 127K+ students and $2.7M+ in student revenue",
+  description: "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy with 127K+...",
   keywords: ["virtual influencer marketing","ai marketing strategy","virtual influencer campaigns","ai social media","ai influencers academy","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

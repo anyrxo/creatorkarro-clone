@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Quote, Pause, Play, Star } from 'lucide-react'
 
 interface Testimonial {
   name: string
@@ -20,13 +20,14 @@ interface TestimonialCarouselProps {
   interval?: number
 }
 
-export default function TestimonialCarousel({ 
-  testimonials, 
-  autoPlay = true, 
-  interval = 5000 
+export default function TestimonialCarousel({
+  testimonials,
+  autoPlay = true,
+  interval = 5000
 }: TestimonialCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
+  const [isAutoPlaying, setIsAutoPlaying] = useState(autoPlay)
   const intervalRef = useRef<NodeJS.Timeout>()
 
   const goToNext = useCallback(() => {
@@ -57,18 +58,24 @@ export default function TestimonialCarousel({
   }
 
   useEffect(() => {
-    if (autoPlay) {
+    if (isAutoPlaying) {
       intervalRef.current = setInterval(goToNext, interval)
       return () => {
         if (intervalRef.current) clearInterval(intervalRef.current)
       }
     }
-  }, [currentIndex, autoPlay, interval, goToNext])
+  }, [currentIndex, isAutoPlaying, interval, goToNext])
 
   const current = testimonials[currentIndex]
 
   return (
-    <div className="relative max-w-4xl mx-auto">
+    <div
+      className="relative max-w-4xl mx-auto"
+      role="region"
+      aria-label="Customer testimonials carousel"
+      aria-live="polite"
+      aria-atomic="true"
+    >
       {/* Main testimonial card */}
       <div className="relative bg-zinc-900/50 backdrop-blur-xl rounded-2xl p-8 md:p-12 border border-zinc-800 overflow-hidden">
         {/* Background gradient */}
@@ -76,6 +83,19 @@ export default function TestimonialCarousel({
         
         {/* Quote icon */}
         <Quote className="absolute top-8 right-8 w-24 h-24 text-zinc-800/30 rotate-180" />
+
+        {/* Pause/Play Button */}
+        <button
+          onClick={() => setIsAutoPlaying(!isAutoPlaying)}
+          className="absolute top-4 right-4 z-20 p-3 bg-zinc-800/80 hover:bg-zinc-700 rounded-full transition-all duration-200 backdrop-blur-sm"
+          aria-label={isAutoPlaying ? "Pause carousel" : "Play carousel"}
+        >
+          {isAutoPlaying ? (
+            <Pause className="w-5 h-5 text-white" />
+          ) : (
+            <Play className="w-5 h-5 text-white" />
+          )}
+        </button>
 
         {/* Content */}
         <div className="relative z-10">
@@ -102,18 +122,20 @@ export default function TestimonialCarousel({
 
             {/* Rating */}
             {current.rating && (
-              <div className="flex gap-1 mb-4">
+              <div
+                className="flex gap-1 mb-4"
+                role="img"
+                aria-label={`Rated ${current.rating} out of 5 stars`}
+              >
                 {[...Array(5)].map((_, i) => (
-                  <svg
+                  <Star
                     key={i}
                     className={cn(
                       "w-5 h-5",
-                      i < current.rating! ? "text-yellow-400 fill-current" : "text-zinc-700"
+                      i < current.rating! ? "fill-yellow-400 text-yellow-400" : "text-zinc-700"
                     )}
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
+                    aria-hidden="true"
+                  />
                 ))}
               </div>
             )}

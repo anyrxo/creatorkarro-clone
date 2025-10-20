@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 
 export const metadata = {
   title: "Digital Product Success Stories - Real Student Results & Course",
-  description: "Want to see real digital product success stories? Get the complete course that helped 1,500+ students build profitable digital product businesses with proven case studies.",
+  description: "Want to see real digital product success stories? Get the complete course that helped 1,500+ students build profitable digital product businesses with...",
   robots: {
     index: false,
     follow: true,

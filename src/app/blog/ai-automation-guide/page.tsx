@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import { Calendar, Clock, Tag, TrendingUp, ArrowRight, CheckCircle, Star, Users, DollarSign, BarChart3 } from 'lucide-react'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "AI Automation Guide",
-  description: "Discover how ai automation guide can transform your business processes. Learn implementation strategies, best practices, and real-world applications for maximum efficiency.",
+  description: "Master AI automation with proven strategies from 127K+ students. Save 40+ hours/week with implementation guides & real-world business applications.",
   keywords: ["ai","automation","guide","ai automation guide","course","training","guide","2025"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
@@ -58,8 +59,23 @@ export const metadata = {
 }
 
 export default function BlogPost() {
+  const schema = generateBlogPostSchema({
+    title: metadata.title,
+    description: metadata.description,
+    slug: "ai-automation-guide",
+    publishedTime: metadata.openGraph.publishedTime,
+    modifiedTime: metadata.openGraph.modifiedTime,
+    category: metadata.category,
+    keywords: metadata.keywords,
+    image: metadata.openGraph.images[0].url
+  })
+
   return (
     <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       {/* Hero Section */}
       <section className="section-spacing overflow-hidden relative">
         {/* Beautiful Background Effects */}

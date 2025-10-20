@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Online Course Creation Guide: Build & Sell Courses That Convert | IImagined.ai",
-  description: "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in student revenue",
+  description: "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in...",
   keywords: ["course creation","create online course","sell online courses","online course business","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

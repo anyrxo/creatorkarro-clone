@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Instagram Influencer Marketing: Build Your Personal Brand | IImagined.ai",
-  description: "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
+  description: "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited with 127K+ students...",
   keywords: ["instagram influencer marketing","personal brand instagram","instagram influence","become instagram influencer","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

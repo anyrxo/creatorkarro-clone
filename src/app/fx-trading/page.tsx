@@ -650,7 +650,7 @@ export default function FXTradingPage() {
                 <p className="text-xl text-zinc-300 mb-8">
                   Join <NumberTicker value={650} className="text-green-400 font-bold inline" />+ traders building consistent income from forex markets
                 </p>
-                <Link href="#packages" className="inline-block focus:outline-none focus:ring-4 focus:ring-green-500/50 rounded-full">
+                <Link href="/checkout?course=fx-trading" className="inline-block focus:outline-none focus:ring-4 focus:ring-green-500/50 rounded-full">
                   <ShimmerButton
                     className="shadow-2xl"
                     shimmerColor="#ffffff"

@@ -159,6 +159,9 @@ export default function Navigation() {
             <button
               className="p-2 text-gray-300 hover:text-white transition-all duration-200 hover:scale-110 active:scale-95"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle navigation menu"
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
             >
               <div className="relative w-6 h-6">
                 <Menu
@@ -187,11 +190,16 @@ export default function Navigation() {
         />
 
         {/* Mobile Navigation */}
-        <div className={`lg:hidden absolute top-full left-0 right-0 bg-zinc-900/95 backdrop-blur-md border-b border-zinc-800 transition-all duration-300 ease-in-out z-50 shadow-2xl ${
-          isMenuOpen
-            ? 'opacity-100 transform translate-y-0 visible'
-            : 'opacity-0 transform -translate-y-4 invisible'
-        }`}>
+        <div
+          id="mobile-menu"
+          role="navigation"
+          aria-label="Mobile navigation"
+          className={`lg:hidden absolute top-full left-0 right-0 bg-zinc-900/95 backdrop-blur-md border-b border-zinc-800 transition-all duration-300 ease-in-out z-50 shadow-2xl ${
+            isMenuOpen
+              ? 'opacity-100 transform translate-y-0 visible'
+              : 'opacity-0 transform -translate-y-4 invisible'
+          }`}
+        >
           <div className="px-4 py-6 space-y-4">
             {allNavigation.map((item, index) => (
               <div

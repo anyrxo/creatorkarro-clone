@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Sell Digital Products on Etsy: Complete Success Guide | IImagined.ai",
-  description: "sell digital products etsy, etsy digital products, etsy passive income - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in student revenue",
+  description: "sell digital products etsy, etsy digital products, etsy passive income - Expert guide from the creators of Digital Products Mastery with 127K+ students...",
   keywords: ["sell digital products etsy","etsy digital products","etsy passive income","digital downloads etsy","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

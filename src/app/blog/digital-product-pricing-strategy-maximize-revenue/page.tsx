@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Digital Product Pricing Strategy: Maximize Your Revenue | IImagined.ai",
-  description: "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in student revenue",
+  description: "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
   keywords: ["digital product pricing","pricing strategy","digital product revenue","price digital products","digital products mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

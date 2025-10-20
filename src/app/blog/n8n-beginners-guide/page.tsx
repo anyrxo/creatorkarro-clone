@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "N8N for Beginners 2025: Complete Course Guide to Business Automation",
-  description: "Master N8N automation with our complete beginner's guide. Learn workflow automation, save 40+ hours/week, and transform your business. Step-by-step tutorial + course recommendations.",
+  description: "Master N8N automation with our complete beginner's guide. Learn workflow automation, save 40+ hours/week. Step-by-step tutorials & course recommendations.",
   keywords: [
     "n8n for beginners", "n8n course", "n8n tutorial", "n8n automation guide", 
     "business automation course", "workflow automation tutorial", "n8n vs zapier", 
@@ -63,10 +64,24 @@ export const metadata = {
 }
 
 export default function N8nBeginnersGuide() {
-          
+  const schema = generateBlogPostSchema({
+    title: metadata.title,
+    description: metadata.description,
+    slug: "n8n-beginners-guide",
+    publishedTime: metadata.openGraph.publishedTime,
+    modifiedTime: metadata.openGraph.modifiedTime,
+    category: metadata.category,
+    keywords: metadata.keywords,
+    image: metadata.openGraph.images[0].url
+  })
+
   return (
-    
+
     <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
 
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

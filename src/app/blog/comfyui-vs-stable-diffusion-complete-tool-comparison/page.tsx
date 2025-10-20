@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "ComfyUI vs Stable Diffusion: Complete Tool Comparison | IImagined.ai",
-  description: "comfyui vs stable diffusion, ai image tools comparison, best ai art software - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
+  description: "comfyui vs stable diffusion, ai image tools comparison, best ai art software - Expert guide from the creators of ComfyUI Mastery with 127K+ students and...",
   keywords: ["comfyui vs stable diffusion","ai image tools comparison","best ai art software","ai art tools","comfyui mastery","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

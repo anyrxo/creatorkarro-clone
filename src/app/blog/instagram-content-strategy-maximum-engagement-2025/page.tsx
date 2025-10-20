@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Instagram Content Strategy for Maximum Engagement 2025 | IImagined.ai",
-  description: "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
+  description: "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
   keywords: ["instagram content strategy","instagram content","instagram engagement","instagram posts","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

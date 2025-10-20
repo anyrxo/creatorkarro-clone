@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 
 export const metadata = {
   title: "Instagram Monetization Course - Make Money on Instagram 2025",
-  description: "Ready to monetize your Instagram? Get the complete system that helped 1,800+ creators build profitable Instagram businesses. Proven monetization strategies and growth techniques.",
+  description: "Ready to monetize your Instagram? Get the complete system that helped 1,800+ creators build profitable Instagram businesses. Proven monetization...",
   robots: {
     index: false,
     follow: true,

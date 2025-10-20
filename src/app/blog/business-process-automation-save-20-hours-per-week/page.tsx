@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Business Process Automation: Save 20+ Hours Per Week | IImagined.ai",
-  description: "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
+  description: "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+...",
   keywords: ["business process automation","automate business","workflow automation","business efficiency","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",

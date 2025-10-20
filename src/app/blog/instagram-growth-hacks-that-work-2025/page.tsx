@@ -5,7 +5,7 @@ import Head from 'next/head'
 // Advanced SEO Metadata Export
 export const metadata = {
   title: "Instagram Growth Hacks That Actually Work in 2025 | IImagined.ai",
-  description: "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
+  description: "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
   keywords: ["instagram growth hacks","instagram marketing","grow instagram followers","instagram strategy","instagram ignited","iimagined.ai","expert guide","proven strategies"],
   authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
