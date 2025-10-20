@@ -1,15 +1,21 @@
 // ORYANA Gemini Flash 2.0 Integration - AI-Powered Expert Content Generation
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
-const GEMINI_API_KEY = 'AIzaSyCq7wXLaqA5Yl2gPY6KdThRavlN_aGmznI'
+// Load API key from environment variable
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || ''
 
 class GeminiContentGenerator {
   private genAI: GoogleGenerativeAI
   private model: any
 
   constructor() {
+    // Validate API key exists
+    if (!GEMINI_API_KEY) {
+      throw new Error('GEMINI_API_KEY environment variable is not set. Please configure it in your .env.local file.')
+    }
+
     this.genAI = new GoogleGenerativeAI(GEMINI_API_KEY)
-    this.model = this.genAI.getGenerativeModel({ 
+    this.model = this.genAI.getGenerativeModel({
       model: "gemini-2.0-flash-exp",
       generationConfig: {
         temperature: 0.9,

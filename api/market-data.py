@@ -12,16 +12,34 @@ import pandas as pd
 import numpy as np
 from flask import Flask, jsonify, request, make_response
 from flask_cors import CORS
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 import threading
 import time
 import requests
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
 
-# MarketAux News API configuration
-MARKETAUX_API_KEY = "YyMOg6d7FLII9LwKjwbyVNbmcNI1LrYJjoEjpcNS"
+# Configure rate limiting
+limiter = Limiter(
+    app=app,
+    key_func=get_remote_address,
+    default_limits=["200 per day", "50 per hour"],
+    storage_uri="memory://"
+)
+
+# MarketAux News API configuration from environment
+MARKETAUX_API_KEY = os.getenv("MARKETAUX_API_KEY")
 MARKETAUX_BASE_URL = "https://api.marketaux.com/v1/news"
+
+if not MARKETAUX_API_KEY:
+    print("WARNING: MARKETAUX_API_KEY environment variable is not set. News features will be disabled.", file=sys.stderr)
 
 # Global cache for real-time data
 price_cache = {}
@@ -49,9 +67,18 @@ CURRENCY_MAPPING = {
     'XAGUSD': 'SI=F'
 }
 
+def validate_symbol(symbol):
+    """Validate symbol is in our allowed list"""
+    if not symbol:
+        return False
+    return symbol.upper() in CURRENCY_MAPPING
+
 def get_symbol_for_yfinance(symbol):
     """Convert our symbol format to yfinance format"""
-    return CURRENCY_MAPPING.get(symbol.upper(), f"{symbol}=X")
+    symbol_upper = symbol.upper()
+    if not validate_symbol(symbol_upper):
+        return None
+    return CURRENCY_MAPPING.get(symbol_upper, f"{symbol}=X")
 
 def calculate_technical_indicators(data):
     """Calculate advanced technical indicators"""
@@ -113,20 +140,34 @@ def calculate_technical_indicators(data):
     }
 
 @app.route('/api/price/<symbol>')
+@limiter.limit("30 per minute")
 def get_price(symbol):
     """Get real-time price for a symbol"""
     try:
+        # Validate symbol first
+        if not validate_symbol(symbol):
+            return jsonify({
+                'status': 'error',
+                'message': f'Invalid symbol: {symbol}. Please use a valid currency pair or instrument.'
+            }), 400
+
         # Check cache first
         cache_key = symbol.upper()
         current_time = time.time()
-        
-        if (cache_key in price_cache and 
-            cache_key in cache_timestamps and 
+
+        if (cache_key in price_cache and
+            cache_key in cache_timestamps and
             current_time - cache_timestamps[cache_key] < CACHE_DURATION):
             return jsonify(price_cache[cache_key])
-        
+
         # Get yfinance symbol
         yf_symbol = get_symbol_for_yfinance(symbol)
+
+        if not yf_symbol:
+            return jsonify({
+                'status': 'error',
+                'message': f'Could not map symbol: {symbol}'
+            }), 400
         
         # Fetch data
         ticker = yf.Ticker(yf_symbol)
@@ -177,10 +218,24 @@ def get_price(symbol):
         }), 500
 
 @app.route('/api/analysis/<symbol>')
+@limiter.limit("20 per minute")
 def get_analysis(symbol):
     """Get technical analysis for a symbol"""
     try:
+        # Validate symbol first
+        if not validate_symbol(symbol):
+            return jsonify({
+                'status': 'error',
+                'message': f'Invalid symbol: {symbol}. Please use a valid currency pair or instrument.'
+            }), 400
+
         yf_symbol = get_symbol_for_yfinance(symbol)
+        if not yf_symbol:
+            return jsonify({
+                'status': 'error',
+                'message': f'Could not map symbol: {symbol}'
+            }), 400
+
         ticker = yf.Ticker(yf_symbol)
         
         # Get historical data for analysis
@@ -262,6 +317,7 @@ def get_analysis(symbol):
         }), 500
 
 @app.route('/api/news')
+@limiter.limit("10 per minute")
 def get_news():
     """Get market news from MarketAux API"""
     try:
@@ -381,4 +437,7 @@ if __name__ == '__main__':
         print("Run: pip install yfinance flask flask-cors pandas numpy requests")
         sys.exit(1)
     
-    app.run(host='0.0.0.0', port=8000, debug=True, threaded=True)
+    # Production-safe configuration
+    debug_mode = os.getenv('FLASK_ENV') == 'development'
+    port = int(os.getenv('PORT', 5001))
+    app.run(host='0.0.0.0', port=port, debug=debug_mode, threaded=True)

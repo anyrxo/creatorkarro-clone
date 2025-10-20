@@ -96,6 +96,7 @@ module.exports = nextConfig;
     
     const buildProcess = spawn('npx', ['next', 'build'], {
       stdio: 'inherit',
+      shell: true,
       env: {
         ...process.env,
         NODE_OPTIONS: '--max-old-space-size=8192',

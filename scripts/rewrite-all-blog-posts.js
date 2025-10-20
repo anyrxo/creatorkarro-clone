@@ -8,9 +8,18 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const fs = require('fs').promises;
 const path = require('path');
+require('dotenv').config();
 
-// Initialize Gemini 2.0 Flash Lite with provided API key
-const genAI = new GoogleGenerativeAI('AIzaSyBgIXV2g4ViSXgtNTGqckeKzIJrrkmZ_9E');
+// Initialize Gemini 2.0 Flash Lite with API key from environment
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
+if (!GEMINI_API_KEY) {
+  console.error('ERROR: GEMINI_API_KEY environment variable is not set.');
+  console.error('Please create a .env file with GEMINI_API_KEY=your_key_here');
+  process.exit(1);
+}
+
+const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
 
 class ToxicSEOBlogRewriter {
