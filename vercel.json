@@ -1,17 +1,9 @@
 {
-  "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": "out",
   "cleanUrls": true,
   "trailingSlash": true,
-  "github": {
-    "silent": true
-  },
   "build": {
     "env": {
-      "NODE_ENV": "production",
-      "NODE_OPTIONS": "--max-old-space-size=8192",
-      "NEXT_TELEMETRY_DISABLED": "1"
+      "NODE_OPTIONS": "--max-old-space-size=8192"
     }
   }
 }
