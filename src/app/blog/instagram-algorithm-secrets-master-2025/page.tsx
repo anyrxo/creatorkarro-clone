@@ -334,6 +334,5 @@ export default function InstagramAlgorithmSecretsMasterThe2025Algorithm() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

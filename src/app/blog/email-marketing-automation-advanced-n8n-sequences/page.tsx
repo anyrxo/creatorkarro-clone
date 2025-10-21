@@ -334,6 +334,5 @@ export default function EmailMarketingAutomationAdvancedN8nSequences() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

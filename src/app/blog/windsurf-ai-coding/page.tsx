@@ -370,6 +370,5 @@ export default function WindsurfAiCoding() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

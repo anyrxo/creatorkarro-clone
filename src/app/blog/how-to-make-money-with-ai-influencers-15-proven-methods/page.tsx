@@ -357,6 +357,5 @@ export default function HowToMakeMoneyWithAiInfluencers15ProvenMethods() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

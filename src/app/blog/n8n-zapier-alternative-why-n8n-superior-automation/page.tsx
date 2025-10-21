@@ -357,6 +357,5 @@ export default function N8nZapierAlternativeWhyN8nIsSuperiorForAutomation() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -157,20 +156,12 @@ export default function CursorAiCoding() {
   };
 
   return (
-    <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
-      
-      <div className="min-h-screen bg-dark">
-        {/* Advanced SEO Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
+    <div className="min-h-screen bg-dark">
+      {/* Advanced SEO Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
         
         {/* Article Content */}
         <article className="py-16">
@@ -370,6 +361,5 @@ export default function CursorAiCoding() {
           </div>
         </article>
       </div>
-    </>
   )
 }

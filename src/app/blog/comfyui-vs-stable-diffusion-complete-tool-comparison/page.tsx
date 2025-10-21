@@ -357,6 +357,5 @@ export default function ComfyuiVsStableDiffusionCompleteToolComparison() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

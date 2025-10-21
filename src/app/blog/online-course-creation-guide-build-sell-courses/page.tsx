@@ -334,6 +334,5 @@ export default function OnlineCourseCreationGuideBuildSellCoursesThatConvert() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

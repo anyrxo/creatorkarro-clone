@@ -334,6 +334,5 @@ export default function HowToCreateDigitalProductsThatSellComplete2025Guide() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

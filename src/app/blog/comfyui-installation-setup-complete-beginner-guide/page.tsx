@@ -357,6 +357,5 @@ export default function ComfyuiInstallationSetupCompleteBeginnerGuide() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

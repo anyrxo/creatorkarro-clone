@@ -357,6 +357,5 @@ export default function N8nDatabaseAutomationAutomateYourDataWorkflows() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

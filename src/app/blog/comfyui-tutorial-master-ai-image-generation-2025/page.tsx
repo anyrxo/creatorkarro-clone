@@ -357,6 +357,5 @@ export default function ComfyuiTutorialMasterAiImageGenerationIn2025() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

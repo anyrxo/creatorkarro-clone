@@ -357,6 +357,5 @@ export default function SellDigitalProductsOnEtsyCompleteSuccessGuide() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

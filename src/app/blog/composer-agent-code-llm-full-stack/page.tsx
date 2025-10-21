@@ -370,6 +370,5 @@ export default function ComposerAgentCodeLlmFullStack() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

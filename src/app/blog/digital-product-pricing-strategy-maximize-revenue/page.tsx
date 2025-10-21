@@ -357,6 +357,5 @@ export default function DigitalProductPricingStrategyMaximizeYourRevenue() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

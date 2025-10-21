@@ -16,6 +16,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import ClientOnlyBackground from "@/components/ClientOnlyBackground";
 import SkipToContent from "@/components/SkipToContent";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import { WebVitals } from "./web-vitals";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -204,10 +205,17 @@ export default function RootLayout({
       </head>
       <body className={montserrat.className}>
         <SkipToContent />
-        {/* Google Analytics - Optimized Loading */}
+
+        {/* ===== ANALYTICS CONFIGURATION ===== */}
+        {/* TODO: Add your tracking IDs below to enable analytics */}
+
+        {/* Google Analytics 4 (GA4) */}
+        {/* TODO: Replace 'G-XXXXXXXXXX' with your actual GA4 measurement ID */}
+        {/* Get your GA4 ID from: https://analytics.google.com/analytics/web/ */}
+        {/* Format: G-XXXXXXXXXX (starts with 'G-', followed by 10 characters) */}
         <Script
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`} // Replace with actual GA ID
+          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
         />
         <Script
           id="google-analytics"
@@ -217,12 +225,15 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX'); // Replace with actual GA ID
+              gtag('config', 'G-XXXXXXXXXX');
             `,
           }}
         />
-        
-        {/* Facebook Pixel - Deferred Loading */}
+
+        {/* Facebook Pixel */}
+        {/* TODO: Replace 'YOUR_PIXEL_ID' with your actual Facebook Pixel ID */}
+        {/* Get your Pixel ID from: https://business.facebook.com/events_manager2 */}
+        {/* Format: 15-16 digit number */}
         <Script
           id="facebook-pixel"
           strategy="afterInteractive"
@@ -236,7 +247,7 @@ export default function RootLayout({
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', 'YOUR_PIXEL_ID'); // Replace with actual Pixel ID
+              fbq('init', 'YOUR_PIXEL_ID');
               fbq('track', 'PageView');
             `,
           }}
@@ -255,10 +266,14 @@ export default function RootLayout({
               </main>
             </PageTransition>
             <Footer />
+            {/* Vercel Analytics - Disabled to reduce client-side JS */}
             {/* <Analytics />
             <SpeedInsights /> */}
           </ClientOnlyFortress>
         </ErrorBoundary>
+
+        {/* Web Vitals Performance Monitoring */}
+        <WebVitals />
       </body>
     </html>
   );

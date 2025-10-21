@@ -357,6 +357,5 @@ export default function InstagramStoryMarketingAdvancedEngagementTactics() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

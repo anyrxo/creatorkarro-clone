@@ -357,6 +357,5 @@ export default function AiInfluencersCompleteGuideToVirtualInfluencerCreation202
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

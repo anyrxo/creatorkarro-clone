@@ -334,6 +334,5 @@ export default function AiAutomationWorkflowsIntegrateGptWithN8n() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

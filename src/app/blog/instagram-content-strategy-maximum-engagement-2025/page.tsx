@@ -334,6 +334,5 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

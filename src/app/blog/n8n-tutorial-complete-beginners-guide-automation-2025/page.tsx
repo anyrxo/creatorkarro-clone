@@ -336,6 +336,5 @@ export default function N8nTutorialCompleteBeginnersGuideToAutomation2025() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

@@ -334,6 +334,5 @@ export default function BusinessProcessAutomationSave20HoursPerWeek() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

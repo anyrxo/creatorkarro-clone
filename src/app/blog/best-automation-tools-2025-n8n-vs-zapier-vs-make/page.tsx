@@ -334,6 +334,5 @@ export default function BestAutomationTools2025N8nVsZapierVsMakecom() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

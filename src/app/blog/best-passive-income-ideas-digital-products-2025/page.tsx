@@ -334,6 +334,5 @@ export default function BestPassiveIncomeIdeas20DigitalProductsThatWork() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

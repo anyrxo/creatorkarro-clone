@@ -357,6 +357,5 @@ export default function InstagramReelsAlgorithmViralContentStrategy2025() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

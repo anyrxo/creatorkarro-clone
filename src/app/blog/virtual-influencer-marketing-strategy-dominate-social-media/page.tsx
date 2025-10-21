@@ -357,6 +357,5 @@ export default function VirtualInfluencerMarketingStrategyDominateSocialMedia() 
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

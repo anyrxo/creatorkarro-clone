@@ -334,6 +334,5 @@ export default function MostProfitableDigitalProductNichesIn2025() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

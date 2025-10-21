@@ -357,6 +357,5 @@ export default function AdvancedComfyuiWorkflowsForProfessionalAiArt() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

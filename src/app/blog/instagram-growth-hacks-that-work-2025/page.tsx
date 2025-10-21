@@ -334,6 +334,5 @@ export default function InstagramGrowthHacksThatActuallyWorkIn2025() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

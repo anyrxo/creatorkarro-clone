@@ -357,6 +357,5 @@ export default function HowToMakeMoneyWithComfyuiAiArtBusinessGuide() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

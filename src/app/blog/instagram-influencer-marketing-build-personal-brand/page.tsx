@@ -357,6 +357,5 @@ export default function InstagramInfluencerMarketingBuildYourPersonalBrand() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

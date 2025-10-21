@@ -357,6 +357,5 @@ export default function N8nApiIntegrationConnectAnyServiceWithWorkflows() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

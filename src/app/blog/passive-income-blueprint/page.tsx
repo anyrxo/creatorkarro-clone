@@ -370,6 +370,5 @@ export default function PassiveIncomeBlueprint() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

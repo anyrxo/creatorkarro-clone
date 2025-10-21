@@ -357,6 +357,5 @@ export default function CreateOnlineCoursesThatSellStepbystepBlueprint() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

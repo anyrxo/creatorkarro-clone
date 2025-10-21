@@ -334,6 +334,5 @@ export default function HowToGet10kInstagramFollowersFastExpertGuide() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

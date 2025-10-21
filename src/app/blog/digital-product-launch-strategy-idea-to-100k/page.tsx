@@ -334,6 +334,5 @@ export default function DigitalProductLaunchStrategyFromIdeaTo100k() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }

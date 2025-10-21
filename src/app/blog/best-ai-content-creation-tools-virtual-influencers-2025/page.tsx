@@ -357,6 +357,5 @@ export default function BestAiContentCreationToolsForVirtualInfluencers2025() {
           </div>
         </article>
       </div>
-    </>
-  )
+      )
 }
