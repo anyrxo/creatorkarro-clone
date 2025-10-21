@@ -64,8 +64,9 @@ export default function HomePage() {
   const courses = [
     {
       id: 'instagram-ignited',
-      title: "Instagram Ignited: Master Growth & Engagement in 2025",
-      subtitle: '0 to 500K Followers System',
+      title: "Instagram Ignited",
+      tagline: "Master Growth & Engagement in 2025",
+      subtitle: '0 TO 500K FOLLOWERS SYSTEM',
       description: 'Master the psychological triggers, viral content formulas, and growth automation that built our students over 10M followers. Turn your Instagram into a money-making machine.',
       gradient: 'from-blue-600 to-cyan-600',
       icon: 'smartphone',
@@ -77,7 +78,8 @@ export default function HomePage() {
     {
       id: 'ai-influencers',
       title: 'AI Influencers',
-      subtitle: 'Virtual Models & AI Content',
+      tagline: "Virtual Models & AI Content",
+      subtitle: 'VIRTUAL MODELS & AI CONTENT',
       description: 'Create photorealistic AI influencers using ComfyUI workflows. Build virtual models that generate content 24/7 and earn $10K+/month without showing your face.',
       gradient: 'from-pink-600 to-purple-600',
       icon: 'smartphone',
@@ -89,7 +91,8 @@ export default function HomePage() {
     {
       id: 'digital-products',
       title: 'Digital Products',
-      subtitle: 'Automated Business Empire',
+      tagline: "Automated Business Empire",
+      subtitle: 'AUTOMATED BUSINESS EMPIRE',
       description: 'Create, launch, and scale digital products with N8N automation. Build $100K/month automated business systems with complete sales funnel automation.',
       gradient: 'from-green-600 to-emerald-600',
       icon: 'credit-card',
@@ -101,7 +104,8 @@ export default function HomePage() {
     {
       id: 'fx-trading',
       title: 'FX Trading Mastery',
-      subtitle: 'Prop Firm Challenge Success',
+      tagline: "Prop Firm Challenge Success",
+      subtitle: 'PROP FIRM CHALLENGE SUCCESS',
       description: 'Pass prop firm challenges and get $100K+ funded accounts. Learn the exact strategies to succeed with funded trading companies and build consistent income.',
       gradient: 'from-orange-600 to-red-600',
       icon: 'bot',
@@ -326,69 +330,59 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {courses.map((course, index) => (
               <motion.div
                 key={course.id}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
+                transition={{ delay: index * 0.15 }}
               >
                 <Link href={course.link} className="block magnetic-button h-full focus:outline-none focus:ring-4 focus:ring-blue-500/50" aria-label={`View ${course.title} course details`}>
                   <Interactive3DCard>
-                    <div className="text-center space-y-6 h-full flex flex-col justify-between p-8">
+                    <div className="h-full flex flex-col p-10 space-y-6">
                       {/* Icon */}
-                      <motion.div 
+                      <motion.div
                         className="flex justify-center"
-                        animate={{ 
-                          rotate: [0, 10, -10, 0],
-                          scale: [1, 1.1, 1]
+                        animate={{
+                          rotate: [0, 5, -5, 0],
+                          scale: [1, 1.05, 1]
                         }}
-                        transition={{ 
-                          duration: 4,
+                        transition={{
+                          duration: 5,
                           repeat: Infinity,
-                          repeatDelay: 2
+                          repeatDelay: 3
                         }}
                       >
-                        {course.icon === 'smartphone' && <Smartphone size={64} className="text-blue-400" />}
-                        {course.icon === 'credit-card' && <CreditCard size={64} className="text-green-400" />}
-                        {course.icon === 'bot' && <Bot size={64} className="text-purple-400" />}
+                        <div className={`p-4 rounded-2xl bg-gradient-to-br ${course.gradient} bg-opacity-10`}>
+                          {course.icon === 'smartphone' && <Smartphone size={48} className={`bg-gradient-to-r ${course.gradient} bg-clip-text text-transparent`} strokeWidth={2} />}
+                          {course.icon === 'credit-card' && <CreditCard size={48} className={`bg-gradient-to-r ${course.gradient} bg-clip-text text-transparent`} strokeWidth={2} />}
+                          {course.icon === 'bot' && <Bot size={48} className={`bg-gradient-to-r ${course.gradient} bg-clip-text text-transparent`} strokeWidth={2} />}
+                        </div>
                       </motion.div>
 
-                      {/* Title & Subtitle */}
-                      <div>
-                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">{course.title}</h3>
-                        <p className="text-sm text-zinc-300 uppercase tracking-wider font-semibold">{course.subtitle}</p>
+                      {/* Title */}
+                      <div className="text-center">
+                        <h3 className="text-3xl font-bold text-white mb-2">{course.title}</h3>
+                        <p className="text-xs text-zinc-400 uppercase tracking-widest font-bold">{course.subtitle}</p>
                       </div>
 
                       {/* Description */}
-                      <p className="text-zinc-200 text-sm leading-relaxed flex-grow">{course.description}</p>
+                      <p className="text-zinc-300 text-base leading-relaxed text-center flex-grow">{course.description}</p>
 
                       {/* Stats */}
-                      <div className="space-y-4">
-                        <p className="text-xs text-zinc-400 font-medium">{course.stats}</p>
-                        
+                      <div className="space-y-3 text-center">
+                        <p className="text-sm text-zinc-400 font-medium">{course.stats}</p>
 
                         {/* Progress Bar */}
                         <motion.div
-                          className={`h-1 bg-gradient-to-r ${course.gradient} rounded-full`}
+                          className={`h-1.5 bg-gradient-to-r ${course.gradient} rounded-full`}
                           initial={{ scaleX: 0 }}
                           whileInView={{ scaleX: 1 }}
                           viewport={{ once: true }}
-                          transition={{ duration: 0.8, delay: 0.5 }}
+                          transition={{ duration: 1, delay: 0.3 }}
                         />
-                        
-                        {/* Popular Badge */}
-                        {index === 0 && (
-                          <div className="flex justify-center">
-                            <AnimatedGradientText className="text-xs">
-                              <span className="inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent font-semibold">
-                                🔥 Most Popular Choice
-                              </span>
-                            </AnimatedGradientText>
-                          </div>
-                        )}
                       </div>
                     </div>
                   </Interactive3DCard>
