@@ -24,8 +24,8 @@ export default function Testimonials({ testimonials, countryCode, country }: Tes
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.name} className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
               <div className="flex items-center mb-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                   <Image

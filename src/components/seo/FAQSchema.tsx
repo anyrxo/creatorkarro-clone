@@ -210,8 +210,8 @@ export default function FAQSchema({ faqs, displayType = 'hidden', maxDisplay }: 
     if (displayType === 'accordion') {
       return (
         <div className="faq-accordion space-y-4">
-          {displayFAQs.map((faq, index) => (
-            <details key={index} className="group bg-zinc-900/50 rounded-xl border border-zinc-800">
+          {displayFAQs.map((faq) => (
+            <details key={faq.question} className="group bg-zinc-900/50 rounded-xl border border-zinc-800">
               <summary className="flex items-center justify-between p-6 cursor-pointer font-semibold text-white hover:text-blue-400 transition-colors">
                 {faq.question}
                 <span className="ml-4 flex-shrink-0 transform group-open:rotate-180 transition-transform">
@@ -230,8 +230,8 @@ export default function FAQSchema({ faqs, displayType = 'hidden', maxDisplay }: 
     if (displayType === 'list') {
       return (
         <div className="faq-list space-y-6">
-          {displayFAQs.map((faq, index) => (
-            <div key={index} className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-800">
+          {displayFAQs.map((faq) => (
+            <div key={faq.question} className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-800">
               <h3 className="font-semibold text-white mb-3 text-lg">{faq.question}</h3>
               <p className="text-zinc-300 leading-relaxed">{faq.answer}</p>
             </div>

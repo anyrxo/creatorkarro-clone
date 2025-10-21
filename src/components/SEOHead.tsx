@@ -61,8 +61,8 @@ export default function SEOHead({
         <>
           <meta property="article:published_time" content={article.publishedTime} />
           <meta property="article:author" content={article.author} />
-          {article.tags.map((tag, index) => (
-            <meta key={index} property="article:tag" content={tag} />
+          {article.tags.map((tag) => (
+            <meta key={tag} property="article:tag" content={tag} />
           ))}
         </>
       )}
