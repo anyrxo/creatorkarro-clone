@@ -1,6 +1,6 @@
 // Auto-generated from blog directories
-// Last updated: 2025-10-20T14:23:01.540Z
-// Total posts: 329
+// Last updated: 2025-10-21T04:56:52.625Z
+// Total posts: 131
 
 export interface BlogPost {
   id: number;
@@ -14,10 +14,10 @@ export interface BlogPost {
   tags: string[];
 }
 
-// All blog posts (329 posts)
+// All blog posts (131 posts)
 export const allBlogPosts: BlogPost[] = [
   {
-    "id": 22,
+    "id": 11,
     "title": "AI Automation Guide Toxic SEO 2025",
     "slug": "ai-automation-guide-toxic-seo",
     "description": "Complete guide to ai automation guide toxic seo - proven strategies, tools, and techniques for 2025",
@@ -34,7 +34,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 49,
+    "id": 22,
     "title": "AI SEO Content Optimization: Complete Guide & Expert",
     "slug": "ai-seo-content-optimization",
     "description": "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -51,7 +51,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 51,
+    "id": 23,
     "title": "Alpha Evolve AI Business Empire",
     "slug": "alpha-evolve-ai-business-empire",
     "description": "Alpha Evolve AI Business Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -68,7 +68,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 70,
+    "id": 32,
     "title": "ChatGPT Automation Workflows: Complete Guide & Expert",
     "slug": "chatgpt-automation-workflows",
     "description": "Complete guide to chatgpt automation workflows - proven strategies, tools, and techniques for 2025",
@@ -85,7 +85,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 72,
+    "id": 33,
     "title": "Claude 4 Agentic Coding Revolution",
     "slug": "claude-4-agentic-coding-revolution",
     "description": "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -102,7 +102,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 73,
+    "id": 34,
     "title": "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
     "slug": "claude-4-vs-gpt-4-comparison",
     "description": "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -119,7 +119,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 75,
+    "id": 35,
     "title": "Cloud Automation Infrastructure",
     "slug": "cloud-automation-infrastructure",
     "description": "Complete guide to cloud automation infrastructure - proven strategies, tools, and techniques for 2025",
@@ -136,7 +136,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 134,
+    "id": 54,
     "title": "DeepSeek Market Disruption: Complete Guide & Expert",
     "slug": "deepseek-market-disruption",
     "description": "DeepSeek Market Disruption - comprehensive strategies, tools, and techniques for 2025",
@@ -153,7 +153,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 138,
+    "id": 58,
     "title": "Devops Automation Pipeline: Complete Guide & Expert",
     "slug": "devops-automation-pipeline",
     "description": "Complete guide to devops automation pipeline - proven strategies, tools, and techniques for 2025",
@@ -170,7 +170,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 178,
+    "id": 80,
     "title": "GPT-5 Roadmap Creator Empire: Complete Guide & Expert",
     "slug": "gpt5-roadmap-creator-empire",
     "description": "GPT-5 Roadmap Creator Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -187,7 +187,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 223,
+    "id": 100,
     "title": "IOT Automation Systems: Complete Guide & Expert Strategies",
     "slug": "iot-automation-systems",
     "description": "Complete guide to iot automation systems - proven strategies, tools, and techniques for 2025",
@@ -204,7 +204,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 227,
+    "id": 104,
     "title": "Machine Learning Automation: Complete Guide & Expert",
     "slug": "machine-learning-automation",
     "description": "Complete guide to machine learning automation - proven strategies, tools, and techniques for 2025",
@@ -221,7 +221,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 235,
+    "id": 107,
     "title": "Mobile App Automation: Complete Guide & Expert Strategies",
     "slug": "mobile-app-automation",
     "description": "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2025",
@@ -238,7 +238,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 245,
+    "id": 112,
     "title": "N8N for Beginners 2025: Complete Course Guide to Business",
     "slug": "n8n-beginners-guide",
     "description": "Master N8N automation with our complete beginner",
@@ -255,7 +255,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 265,
+    "id": 116,
     "title": "No Code Automation Tools: Complete Guide & Expert Strategies",
     "slug": "no-code-automation-tools",
     "description": "Complete guide to no code automation tools - proven strategies, tools, and techniques for 2025",
@@ -272,7 +272,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 289,
+    "id": 127,
     "title": "Prompt Engineering Guide: Master AI Prompts in 2025",
     "slug": "prompt-engineering-guide",
     "description": "Complete prompt engineering guide - step-by-step instructions, best practices, and expert tips",
@@ -289,7 +289,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 297,
+    "id": 130,
     "title": "Robotic Process Automation: Complete Guide & Expert",
     "slug": "robotic-process-automation",
     "description": "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2025",
@@ -306,7 +306,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 300,
+    "id": 133,
     "title": "SaaS Automation Systems: Complete Guide & Expert Strategies",
     "slug": "saas-automation-systems",
     "description": "Complete guide to saas automation systems - proven strategies, tools, and techniques for 2025",
@@ -323,7 +323,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 303,
+    "id": 136,
     "title": "Security Automation Systems: Complete Guide & Expert",
     "slug": "security-automation-systems",
     "description": "Complete guide to security automation systems - proven strategies, tools, and techniques for 2025",
@@ -340,7 +340,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 305,
+    "id": 138,
     "title": "Shopify Automation AI: Complete Guide & Expert Strategies",
     "slug": "shopify-automation-ai",
     "description": "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2025",
@@ -357,7 +357,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 318,
+    "id": 141,
     "title": "Telegram Bot Monetization: Complete Guide & Expert",
     "slug": "telegram-bot-monetization",
     "description": "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2025",
@@ -391,109 +391,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 8,
-    "title": "Advanced-strategies Ai Automation Masterclass: Expert Guide",
-    "slug": "advanced-strategies-ai-automation-masterclass",
-    "description": "advanced-strategies ai automation masterclass guide, advanced-strategies ai automation masterclass tutorial, advanced-strategies ai automation masterclass cours",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "advanced-strategies ai automation masterclass",
-      "advanced-strategies ai automation masterclass guide",
-      "advanced-strategies ai automation masterclass 2025",
-      "advanced-strategies ai automation masterclass course",
-      "advanced-strategies ai automation masterclass training"
-    ]
-  },
-  {
     "id": 9,
-    "title": "Advanced-strategies Ai Influencers Academy: Expert Guide",
-    "slug": "advanced-strategies-ai-influencers-academy",
-    "description": "advanced-strategies ai influencers academy guide, advanced-strategies ai influencers academy tutorial, advanced-strategies ai influencers academy course - Exper",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "advanced-strategies ai influencers academy",
-      "advanced-strategies ai influencers academy guide",
-      "advanced-strategies ai influencers academy 2025",
-      "advanced-strategies ai influencers academy course",
-      "advanced-strategies ai influencers academy training"
-    ]
-  },
-  {
-    "id": 10,
-    "title": "Advanced-strategies Comfyui Pro Training: Expert Guide 2025",
-    "slug": "advanced-strategies-comfyui-pro-training",
-    "description": "advanced-strategies comfyui pro training guide, advanced-strategies comfyui pro training tutorial, advanced-strategies comfyui pro training course - Expert trai",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "advanced-strategies comfyui pro training",
-      "advanced-strategies comfyui pro training guide",
-      "advanced-strategies comfyui pro training 2025",
-      "advanced-strategies comfyui pro training course",
-      "advanced-strategies comfyui pro training training"
-    ]
-  },
-  {
-    "id": 11,
-    "title": "Advanced-strategies Instagram Growth Academy: Expert Guide",
-    "slug": "advanced-strategies-instagram-growth-academy",
-    "description": "advanced-strategies instagram growth academy guide, advanced-strategies instagram growth academy tutorial, advanced-strategies instagram growth academy course -",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "advanced-strategies instagram growth academy",
-      "advanced-strategies instagram growth academy guide",
-      "advanced-strategies instagram growth academy 2025",
-      "advanced-strategies instagram growth academy course",
-      "advanced-strategies instagram growth academy training"
-    ]
-  },
-  {
-    "id": 12,
-    "title": "Advanced-strategies N8n Automation Hub: Expert Guide 2025",
-    "slug": "advanced-strategies-n8n-automation-hub",
-    "description": "advanced-strategies n8n automation hub guide, advanced-strategies n8n automation hub tutorial, advanced-strategies n8n automation hub course - Expert training f",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "advanced-strategies n8n automation hub",
-      "advanced-strategies n8n automation hub guide",
-      "advanced-strategies n8n automation hub 2025",
-      "advanced-strategies n8n automation hub course",
-      "advanced-strategies n8n automation hub training"
-    ]
-  },
-  {
-    "id": 13,
-    "title": "Ai Agent Development Course: Expert Guide 2025",
-    "slug": "ai-agent-development-course",
-    "description": "ai agent development course guide, ai agent development course tutorial, ai agent development course course - Expert training from the creators of AI Automation",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai agent development course",
-      "ai agent development course guide",
-      "ai agent development course 2025",
-      "ai agent development course course",
-      "ai agent development course training"
-    ]
-  },
-  {
-    "id": 15,
     "title": "Ai Automation Beginners Guide",
     "slug": "ai-automation-beginners-guide",
     "description": "",
@@ -504,126 +402,7 @@ export const allBlogPosts: BlogPost[] = [
     "tags": []
   },
   {
-    "id": 17,
-    "title": "AI Automation Business Workflows: Expert Guide 2025",
-    "slug": "ai-automation-business-workflows",
-    "description": "Transform your business with AI automation workflows that increase productivity, reduce costs, and scale operations efficiently.",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 8,
-    "featured": false,
-    "tags": [
-      "ai automation",
-      "business workflows",
-      "productivity",
-      "scaling",
-      "efficiency"
-    ]
-  },
-  {
-    "id": 18,
-    "title": "Ai Automation Case Studies: Expert Guide 2025",
-    "slug": "ai-automation-case-studies",
-    "description": "ai automation case studies guide, ai automation case studies tutorial, ai automation case studies course - Expert training from the creators of AI Automation Ma",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai automation case studies",
-      "ai automation case studies guide",
-      "ai automation case studies 2025",
-      "ai automation case studies course",
-      "ai automation case studies training"
-    ]
-  },
-  {
-    "id": 19,
-    "title": "Ai Automation Certification: Expert Guide 2025",
-    "slug": "ai-automation-certification",
-    "description": "ai automation certification guide, ai automation certification tutorial, ai automation certification course - Expert training from the creators of AI Automation",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai automation certification",
-      "ai automation certification guide",
-      "ai automation certification 2025",
-      "ai automation certification course",
-      "ai automation certification training"
-    ]
-  },
-  {
-    "id": 20,
-    "title": "Ai Automation For Entrepreneurs: Expert Guide 2025",
-    "slug": "ai-automation-for-entrepreneurs",
-    "description": "ai automation for entrepreneurs guide, ai automation for entrepreneurs tutorial, ai automation for entrepreneurs course - Expert training from the creators of A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai automation for entrepreneurs",
-      "ai automation for entrepreneurs guide",
-      "ai automation for entrepreneurs 2025",
-      "ai automation for entrepreneurs course",
-      "ai automation for entrepreneurs training"
-    ]
-  },
-  {
-    "id": 21,
-    "title": "AI Automation Guide: Master Workflows & Boost Productivity",
-    "slug": "ai-automation-guide",
-    "description": "Master AI automation with proven strategies from 127K+ students. Save 40+ hours/week with implementation guides & real-world business applications.",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai",
-      "automation",
-      "guide",
-      "ai automation guide",
-      "course"
-    ]
-  },
-  {
-    "id": 23,
-    "title": "Ai Automation ROI Calculator: Expert Guide 2025",
-    "slug": "ai-automation-roi-calculator",
-    "description": "ai automation ROI calculator guide, ai automation ROI calculator tutorial, ai automation ROI calculator course - Expert training from the creators of AI Automat",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai automation ROI calculator",
-      "ai automation ROI calculator guide",
-      "ai automation ROI calculator 2025",
-      "ai automation ROI calculator course",
-      "ai automation ROI calculator training"
-    ]
-  },
-  {
-    "id": 24,
-    "title": "Ai Automation Tools Comparison: Expert Guide 2025",
-    "slug": "ai-automation-tools-comparison",
-    "description": "ai automation tools comparison guide, ai automation tools comparison tutorial, ai automation tools comparison course - Expert training from the creators of AI A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai automation tools comparison",
-      "ai automation tools comparison guide",
-      "ai automation tools comparison 2025",
-      "ai automation tools comparison course",
-      "ai automation tools comparison training"
-    ]
-  },
-  {
-    "id": 25,
+    "id": 12,
     "title": "AI Automation Workflows: Integrate GPT with N8N",
     "slug": "ai-automation-workflows-integrate-gpt-with-n8n",
     "description": "ai automation, n8n ai integration, gpt automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
@@ -640,75 +419,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 26,
-    "title": "Ai Business Transformation: Expert Guide 2025",
-    "slug": "ai-business-transformation",
-    "description": "ai business transformation guide, ai business transformation tutorial, ai business transformation course - Expert training from the creators of AI Automation Ma",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai business transformation",
-      "ai business transformation guide",
-      "ai business transformation 2025",
-      "ai business transformation course",
-      "ai business transformation training"
-    ]
-  },
-  {
-    "id": 27,
-    "title": "Ai Character Development: Expert Guide 2025",
-    "slug": "ai-character-development",
-    "description": "ai character development guide, ai character development tutorial, ai character development course - Expert training from the creators of AI Influencers Academy",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai character development",
-      "ai character development guide",
-      "ai character development 2025",
-      "ai character development course",
-      "ai character development training"
-    ]
-  },
-  {
-    "id": 28,
-    "title": "Ai Consulting Business Model: Expert Guide 2025",
-    "slug": "ai-consulting-business-model",
-    "description": "ai consulting business model guide, ai consulting business model tutorial, ai consulting business model course - Expert training from the creators of AI Automat",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai consulting business model",
-      "ai consulting business model guide",
-      "ai consulting business model 2025",
-      "ai consulting business model course",
-      "ai consulting business model training"
-    ]
-  },
-  {
-    "id": 29,
-    "title": "Ai Content Creation Tools: Expert Guide 2025",
-    "slug": "ai-content-creation-tools",
-    "description": "ai content creation tools guide, ai content creation tools tutorial, ai content creation tools course - Expert training from the creators of AI Automation Maste",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai content creation tools",
-      "ai content creation tools guide",
-      "ai content creation tools 2025",
-      "ai content creation tools course",
-      "ai content creation tools training"
-    ]
-  },
-  {
-    "id": 30,
+    "id": 13,
     "title": "AI Content Income: Earn $10K/Month Creating Content",
     "slug": "ai-content-income",
     "description": "AI Content Income comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -725,7 +436,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 31,
+    "id": 14,
     "title": "AI Content Opportunity: Complete Guide & Expert Strategies",
     "slug": "ai-content-opportunity",
     "description": "AI Content Opportunity comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -742,7 +453,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 32,
+    "id": 15,
     "title": "AI Era Skills: Master Future-Ready Tech in 2025",
     "slug": "ai-era-skills",
     "description": "AI Era Skills comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -759,7 +470,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 33,
+    "id": 16,
     "title": "AI Image Generation for Influencers: Professional Guide",
     "slug": "ai-image-generation-for-influencers-professional-guide",
     "description": "ai image generation, ai images for influencers, ai photography - Expert guide from the creators of AI Influencers Academy with 127K+ students and $2.7M+...",
@@ -776,7 +487,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 34,
+    "id": 17,
     "title": "AI Image Generation Guide 2025",
     "slug": "ai-image-generation-guide",
     "description": "AI Image Generation Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -793,143 +504,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 35,
-    "title": "Ai Influencer Analytics: Expert Guide 2025",
-    "slug": "ai-influencer-analytics",
-    "description": "ai influencer analytics guide, ai influencer analytics tutorial, ai influencer analytics course - Expert training from the creators of AI Influencers Academy wi",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai influencer analytics",
-      "ai influencer analytics guide",
-      "ai influencer analytics 2025",
-      "ai influencer analytics course",
-      "ai influencer analytics training"
-    ]
-  },
-  {
-    "id": 36,
-    "title": "Ai Influencer Brand Partnerships: Expert Guide 2025",
-    "slug": "ai-influencer-brand-partnerships",
-    "description": "ai influencer brand partnerships guide, ai influencer brand partnerships tutorial, ai influencer brand partnerships course - Expert training from the creators o",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai influencer brand partnerships",
-      "ai influencer brand partnerships guide",
-      "ai influencer brand partnerships 2025",
-      "ai influencer brand partnerships course",
-      "ai influencer brand partnerships training"
-    ]
-  },
-  {
-    "id": 37,
-    "title": "Ai Influencer Business Model: Expert Guide 2025",
-    "slug": "ai-influencer-business-model",
-    "description": "ai influencer business model guide, ai influencer business model tutorial, ai influencer business model course - Expert training from the creators of AI Influen",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai influencer business model",
-      "ai influencer business model guide",
-      "ai influencer business model 2025",
-      "ai influencer business model course",
-      "ai influencer business model training"
-    ]
-  },
-  {
-    "id": 38,
-    "title": "Ai Influencer Case Studies: Expert Guide 2025",
-    "slug": "ai-influencer-case-studies",
-    "description": "ai influencer case studies guide, ai influencer case studies tutorial, ai influencer case studies course - Expert training from the creators of AI Influencers A",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai influencer case studies",
-      "ai influencer case studies guide",
-      "ai influencer case studies 2025",
-      "ai influencer case studies course",
-      "ai influencer case studies training"
-    ]
-  },
-  {
-    "id": 39,
-    "title": "Ai Influencer Management: Expert Guide 2025",
-    "slug": "ai-influencer-management",
-    "description": "ai influencer management guide, ai influencer management tutorial, ai influencer management course - Expert training from the creators of AI Influencers Academy",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai influencer management",
-      "ai influencer management guide",
-      "ai influencer management 2025",
-      "ai influencer management course",
-      "ai influencer management training"
-    ]
-  },
-  {
-    "id": 40,
-    "title": "Ai Influencer Marketing: Expert Guide 2025",
-    "slug": "ai-influencer-marketing",
-    "description": "ai influencer marketing guide, ai influencer marketing tutorial, ai influencer marketing course - Expert training from the creators of AI Influencers Academy wi",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai influencer marketing",
-      "ai influencer marketing guide",
-      "ai influencer marketing 2025",
-      "ai influencer marketing course",
-      "ai influencer marketing training"
-    ]
-  },
-  {
-    "id": 41,
-    "title": "Ai Influencer Monetization: Expert Guide 2025",
-    "slug": "ai-influencer-monetization",
-    "description": "ai influencer monetization guide, ai influencer monetization tutorial, ai influencer monetization course - Expert training from the creators of AI Influencers A",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai influencer monetization",
-      "ai influencer monetization guide",
-      "ai influencer monetization 2025",
-      "ai influencer monetization course",
-      "ai influencer monetization training"
-    ]
-  },
-  {
-    "id": 42,
-    "title": "Ai Influencer Revenue Streams: Expert Guide 2025",
-    "slug": "ai-influencer-revenue-streams",
-    "description": "ai influencer revenue streams guide, ai influencer revenue streams tutorial, ai influencer revenue streams course - Expert training from the creators of AI Infl",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai influencer revenue streams",
-      "ai influencer revenue streams guide",
-      "ai influencer revenue streams 2025",
-      "ai influencer revenue streams course",
-      "ai influencer revenue streams training"
-    ]
-  },
-  {
-    "id": 43,
+    "id": 18,
     "title": "AI Influencer Success: Complete Guide & Expert Strategies",
     "slug": "ai-influencer-success",
     "description": "AI Influencer Success comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -946,7 +521,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 44,
+    "id": 19,
     "title": "AI Influencer Trends: Virtual Creator Success in 2025",
     "slug": "ai-influencer-trends",
     "description": "AI Influencer Trends comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -963,7 +538,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 45,
+    "id": 20,
     "title": "AI Influencers: Complete Guide to Virtual Influencer",
     "slug": "ai-influencers-complete-guide-virtual-influencer-creation-2025",
     "description": "ai influencers, virtual influencers, ai instagram influencer - Expert guide from the creators of AI Influencers Academy with 127K+ students and $2.7M+ in...",
@@ -980,41 +555,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 46,
-    "title": "Ai Personality Development: Expert Guide 2025",
-    "slug": "ai-personality-development",
-    "description": "ai personality development guide, ai personality development tutorial, ai personality development course - Expert training from the creators of AI Automation Ma",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai personality development",
-      "ai personality development guide",
-      "ai personality development 2025",
-      "ai personality development course",
-      "ai personality development training"
-    ]
-  },
-  {
-    "id": 47,
-    "title": "Ai Productivity Systems: Expert Guide 2025",
-    "slug": "ai-productivity-systems",
-    "description": "ai productivity systems guide, ai productivity systems tutorial, ai productivity systems course - Expert training from the creators of AI Automation Mastery wit",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai productivity systems",
-      "ai productivity systems guide",
-      "ai productivity systems 2025",
-      "ai productivity systems course",
-      "ai productivity systems training"
-    ]
-  },
-  {
-    "id": 48,
+    "id": 21,
     "title": "AI Research Content Marketing: Complete Guide & Expert",
     "slug": "ai-research-content-marketing",
     "description": "AI Research Content Marketing comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -1031,24 +572,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 50,
-    "title": "Ai Workflow Templates: Expert Guide 2025",
-    "slug": "ai-workflow-templates",
-    "description": "ai workflow templates guide, ai workflow templates tutorial, ai workflow templates course - Expert training from the creators of N8N Automation Hub with 45K+ st",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ai workflow templates",
-      "ai workflow templates guide",
-      "ai workflow templates 2025",
-      "ai workflow templates course",
-      "ai workflow templates training"
-    ]
-  },
-  {
-    "id": 52,
+    "id": 24,
     "title": "API Automation Integration: Complete Guide & Expert",
     "slug": "api-automation-integration",
     "description": "Complete guide to api automation integration - proven strategies, tools, and techniques for 2025",
@@ -1065,109 +589,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 53,
-    "title": "Automation Agency Pricing: Expert Guide 2025",
-    "slug": "automation-agency-pricing",
-    "description": "automation agency pricing guide, automation agency pricing tutorial, automation agency pricing course - Expert training from the creators of AI Automation Maste",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "automation agency pricing",
-      "automation agency pricing guide",
-      "automation agency pricing 2025",
-      "automation agency pricing course",
-      "automation agency pricing training"
-    ]
-  },
-  {
-    "id": 54,
-    "title": "Automation Agency Setup: Expert Guide 2025",
-    "slug": "automation-agency-setup",
-    "description": "automation agency setup guide, automation agency setup tutorial, automation agency setup course - Expert training from the creators of AI Automation Mastery wit",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "automation agency setup",
-      "automation agency setup guide",
-      "automation agency setup 2025",
-      "automation agency setup course",
-      "automation agency setup training"
-    ]
-  },
-  {
-    "id": 55,
-    "title": "Automation Consulting Business: Expert Guide 2025",
-    "slug": "automation-consulting-business",
-    "description": "automation consulting business guide, automation consulting business tutorial, automation consulting business course - Expert training from the creators of AI A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "automation consulting business",
-      "automation consulting business guide",
-      "automation consulting business 2025",
-      "automation consulting business course",
-      "automation consulting business training"
-    ]
-  },
-  {
-    "id": 56,
-    "title": "Automation Consulting Services: Expert Guide 2025",
-    "slug": "automation-consulting-services",
-    "description": "automation consulting services guide, automation consulting services tutorial, automation consulting services course - Expert training from the creators of AI A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "automation consulting services",
-      "automation consulting services guide",
-      "automation consulting services 2025",
-      "automation consulting services course",
-      "automation consulting services training"
-    ]
-  },
-  {
-    "id": 57,
-    "title": "Automation For Creators: Expert Guide 2025",
-    "slug": "automation-for-creators",
-    "description": "automation for creators guide, automation for creators tutorial, automation for creators course - Expert training from the creators of AI Automation Mastery wit",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "automation for creators",
-      "automation for creators guide",
-      "automation for creators 2025",
-      "automation for creators course",
-      "automation for creators training"
-    ]
-  },
-  {
-    "id": 58,
-    "title": "Automation Project Management: Expert Guide 2025",
-    "slug": "automation-project-management",
-    "description": "automation project management guide, automation project management tutorial, automation project management course - Expert training from the creators of AI Auto",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "automation project management",
-      "automation project management guide",
-      "automation project management 2025",
-      "automation project management course",
-      "automation project management training"
-    ]
-  },
-  {
-    "id": 59,
+    "id": 25,
     "title": "Best AI Content Creation Tools for Virtual Influencers 2025",
     "slug": "best-ai-content-creation-tools-virtual-influencers-2025",
     "description": "ai content creation, ai social media content, virtual influencer content - Expert guide from the creators of AI Influencers Academy with 127K+ students...",
@@ -1184,7 +606,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 60,
+    "id": 26,
     "title": "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
     "slug": "best-automation-tools-2025-n8n-vs-zapier-vs-make",
     "description": "automation tools, n8n vs zapier, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
@@ -1201,7 +623,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 61,
+    "id": 27,
     "title": "Best Passive Income Ideas: 20+ Digital Products That Work",
     "slug": "best-passive-income-ideas-digital-products-2025",
     "description": "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery with 127K+ students...",
@@ -1218,7 +640,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 62,
+    "id": 28,
     "title": "Browser Automation Marketing: Complete Guide & Expert",
     "slug": "browser-automation-marketing",
     "description": "Complete guide to browser automation marketing - proven strategies, tools, and techniques for 2025",
@@ -1235,41 +657,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 63,
-    "title": "Business Ai Implementation: Expert Guide 2025",
-    "slug": "business-ai-implementation",
-    "description": "business ai implementation guide, business ai implementation tutorial, business ai implementation course - Expert training from the creators of AI Automation Ma",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "business ai implementation",
-      "business ai implementation guide",
-      "business ai implementation 2025",
-      "business ai implementation course",
-      "business ai implementation training"
-    ]
-  },
-  {
-    "id": 64,
-    "title": "Business Automation Blueprint: Expert Guide 2025",
-    "slug": "business-automation-blueprint",
-    "description": "business automation blueprint guide, business automation blueprint tutorial, business automation blueprint course - Expert training from the creators of AI Auto",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "business automation blueprint",
-      "business automation blueprint guide",
-      "business automation blueprint 2025",
-      "business automation blueprint course",
-      "business automation blueprint training"
-    ]
-  },
-  {
-    "id": 65,
+    "id": 29,
     "title": "Business Automation Tools: Complete Guide & Expert",
     "slug": "business-automation-tools",
     "description": "Complete guide to business automation tools - proven strategies, tools, and techniques for 2025",
@@ -1286,41 +674,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 66,
-    "title": "Business Automation With Claude: Expert Guide 2025",
-    "slug": "business-automation-with-claude",
-    "description": "business automation with claude guide, business automation with claude tutorial, business automation with claude course - Expert training from the creators of A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "business automation with claude",
-      "business automation with claude guide",
-      "business automation with claude 2025",
-      "business automation with claude course",
-      "business automation with claude training"
-    ]
-  },
-  {
-    "id": 67,
-    "title": "Business Process Automation Guide: Expert Guide 2025",
-    "slug": "business-process-automation-guide",
-    "description": "business process automation guide guide, business process automation guide tutorial, business process automation guide course - Expert training from the creator",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "business process automation guide",
-      "business process automation guide guide",
-      "business process automation guide 2025",
-      "business process automation guide course",
-      "business process automation guide training"
-    ]
-  },
-  {
-    "id": 68,
+    "id": 30,
     "title": "Business Process Automation: Save 20+ Hours Per Week",
     "slug": "business-process-automation-save-20-hours-per-week",
     "description": "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+...",
@@ -1337,7 +691,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 69,
+    "id": 31,
     "title": "ChatGPT Automation Tips: Complete Guide & Expert Strategies",
     "slug": "chatgpt-automation-tips",
     "description": "Complete guide to chatgpt automation tips - proven strategies, tools, and techniques for 2025",
@@ -1354,211 +708,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 71,
-    "title": "Chatgpt Workflow Automation: Expert Guide 2025",
-    "slug": "chatgpt-workflow-automation",
-    "description": "chatgpt workflow automation guide, chatgpt workflow automation tutorial, chatgpt workflow automation course - Expert training from the creators of N8N Automatio",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "chatgpt workflow automation",
-      "chatgpt workflow automation guide",
-      "chatgpt workflow automation 2025",
-      "chatgpt workflow automation course",
-      "chatgpt workflow automation training"
-    ]
-  },
-  {
-    "id": 74,
-    "title": "Claude Ai Business Integration: Expert Guide 2025",
-    "slug": "claude-ai-business-integration",
-    "description": "claude ai business integration guide, claude ai business integration tutorial, claude ai business integration course - Expert training from the creators of AI A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "claude ai business integration",
-      "claude ai business integration guide",
-      "claude ai business integration 2025",
-      "claude ai business integration course",
-      "claude ai business integration training"
-    ]
-  },
-  {
-    "id": 77,
-    "title": "Comfyui Advanced Techniques: Expert Guide 2025",
-    "slug": "comfyui-advanced-techniques",
-    "description": "comfyui advanced techniques guide, comfyui advanced techniques tutorial, comfyui advanced techniques course - Expert training from the creators of ComfyUI Pro T",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui advanced techniques",
-      "comfyui advanced techniques guide",
-      "comfyui advanced techniques 2025",
-      "comfyui advanced techniques course",
-      "comfyui advanced techniques training"
-    ]
-  },
-  {
-    "id": 78,
-    "title": "Comfyui Api Business Integration: Expert Guide 2025",
-    "slug": "comfyui-api-business-integration",
-    "description": "comfyui api business integration guide, comfyui api business integration tutorial, comfyui api business integration course - Expert training from the creators o",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui api business integration",
-      "comfyui api business integration guide",
-      "comfyui api business integration 2025",
-      "comfyui api business integration course",
-      "comfyui api business integration training"
-    ]
-  },
-  {
-    "id": 79,
-    "title": "Comfyui Api Integration: Expert Guide 2025",
-    "slug": "comfyui-api-integration",
-    "description": "comfyui api integration guide, comfyui api integration tutorial, comfyui api integration course - Expert training from the creators of ComfyUI Pro Training with",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui api integration",
-      "comfyui api integration guide",
-      "comfyui api integration 2025",
-      "comfyui api integration course",
-      "comfyui api integration training"
-    ]
-  },
-  {
-    "id": 80,
-    "title": "Comfyui Automation Consulting: Expert Guide 2025",
-    "slug": "comfyui-automation-consulting",
-    "description": "comfyui automation consulting guide, comfyui automation consulting tutorial, comfyui automation consulting course - Expert training from the creators of ComfyUI",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui automation consulting",
-      "comfyui automation consulting guide",
-      "comfyui automation consulting 2025",
-      "comfyui automation consulting course",
-      "comfyui automation consulting training"
-    ]
-  },
-  {
-    "id": 81,
-    "title": "Comfyui Automation Systems: Expert Guide 2025",
-    "slug": "comfyui-automation-systems",
-    "description": "comfyui automation systems guide, comfyui automation systems tutorial, comfyui automation systems course - Expert training from the creators of ComfyUI Pro Trai",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui automation systems",
-      "comfyui automation systems guide",
-      "comfyui automation systems 2025",
-      "comfyui automation systems course",
-      "comfyui automation systems training"
-    ]
-  },
-  {
-    "id": 82,
-    "title": "Comfyui Batch Processing: Expert Guide 2025",
-    "slug": "comfyui-batch-processing",
-    "description": "comfyui batch processing guide, comfyui batch processing tutorial, comfyui batch processing course - Expert training from the creators of ComfyUI Pro Training w",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui batch processing",
-      "comfyui batch processing guide",
-      "comfyui batch processing 2025",
-      "comfyui batch processing course",
-      "comfyui batch processing training"
-    ]
-  },
-  {
-    "id": 83,
-    "title": "Comfyui Business Automation: Expert Guide 2025",
-    "slug": "comfyui-business-automation",
-    "description": "comfyui business automation guide, comfyui business automation tutorial, comfyui business automation course - Expert training from the creators of ComfyUI Pro T",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui business automation",
-      "comfyui business automation guide",
-      "comfyui business automation 2025",
-      "comfyui business automation course",
-      "comfyui business automation training"
-    ]
-  },
-  {
-    "id": 84,
-    "title": "Comfyui Business Case Studies: Expert Guide 2025",
-    "slug": "comfyui-business-case-studies",
-    "description": "comfyui business case studies guide, comfyui business case studies tutorial, comfyui business case studies course - Expert training from the creators of ComfyUI",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui business case studies",
-      "comfyui business case studies guide",
-      "comfyui business case studies 2025",
-      "comfyui business case studies course",
-      "comfyui business case studies training"
-    ]
-  },
-  {
-    "id": 85,
-    "title": "Comfyui Business Models: Expert Guide 2025",
-    "slug": "comfyui-business-models",
-    "description": "comfyui business models guide, comfyui business models tutorial, comfyui business models course - Expert training from the creators of ComfyUI Pro Training with",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui business models",
-      "comfyui business models guide",
-      "comfyui business models 2025",
-      "comfyui business models course",
-      "comfyui business models training"
-    ]
-  },
-  {
-    "id": 86,
-    "title": "Comfyui Commercial Licensing: Expert Guide 2025",
-    "slug": "comfyui-commercial-licensing",
-    "description": "comfyui commercial licensing guide, comfyui commercial licensing tutorial, comfyui commercial licensing course - Expert training from the creators of ComfyUI Pr",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui commercial licensing",
-      "comfyui commercial licensing guide",
-      "comfyui commercial licensing 2025",
-      "comfyui commercial licensing course",
-      "comfyui commercial licensing training"
-    ]
-  },
-  {
-    "id": 87,
+    "id": 37,
     "title": "ComfyUI Comparison: Best AI Art Tools Reviewed 2025",
     "slug": "comfyui-comparison",
     "description": "ComfyUI Comparison - comprehensive strategies, tools, and techniques for 2025",
@@ -1575,92 +725,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 88,
-    "title": "Comfyui Controlnet Guide: Expert Guide 2025",
-    "slug": "comfyui-controlnet-guide",
-    "description": "comfyui controlnet guide guide, comfyui controlnet guide tutorial, comfyui controlnet guide course - Expert training from the creators of ComfyUI Pro Training w",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui controlnet guide",
-      "comfyui controlnet guide guide",
-      "comfyui controlnet guide 2025",
-      "comfyui controlnet guide course",
-      "comfyui controlnet guide training"
-    ]
-  },
-  {
-    "id": 89,
-    "title": "Comfyui Custom Nodes Development: Expert Guide 2025",
-    "slug": "comfyui-custom-nodes-development",
-    "description": "comfyui custom nodes development guide, comfyui custom nodes development tutorial, comfyui custom nodes development course - Expert training from the creators o",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui custom nodes development",
-      "comfyui custom nodes development guide",
-      "comfyui custom nodes development 2025",
-      "comfyui custom nodes development course",
-      "comfyui custom nodes development training"
-    ]
-  },
-  {
-    "id": 90,
-    "title": "Comfyui Custom Workflows: Expert Guide 2025",
-    "slug": "comfyui-custom-workflows",
-    "description": "comfyui custom workflows guide, comfyui custom workflows tutorial, comfyui custom workflows course - Expert training from the creators of N8N Automation Hub wit",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui custom workflows",
-      "comfyui custom workflows guide",
-      "comfyui custom workflows 2025",
-      "comfyui custom workflows course",
-      "comfyui custom workflows training"
-    ]
-  },
-  {
-    "id": 91,
-    "title": "Comfyui Enterprise Solutions: Expert Guide 2025",
-    "slug": "comfyui-enterprise-solutions",
-    "description": "comfyui enterprise solutions guide, comfyui enterprise solutions tutorial, comfyui enterprise solutions course - Expert training from the creators of ComfyUI Pr",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui enterprise solutions",
-      "comfyui enterprise solutions guide",
-      "comfyui enterprise solutions 2025",
-      "comfyui enterprise solutions course",
-      "comfyui enterprise solutions training"
-    ]
-  },
-  {
-    "id": 92,
-    "title": "Comfyui Image Upscaling: Expert Guide 2025",
-    "slug": "comfyui-image-upscaling",
-    "description": "comfyui image upscaling guide, comfyui image upscaling tutorial, comfyui image upscaling course - Expert training from the creators of ComfyUI Pro Training with",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui image upscaling",
-      "comfyui image upscaling guide",
-      "comfyui image upscaling 2025",
-      "comfyui image upscaling course",
-      "comfyui image upscaling training"
-    ]
-  },
-  {
-    "id": 93,
+    "id": 38,
     "title": "ComfyUI Installation & Setup: Complete Beginner Guide",
     "slug": "comfyui-installation-setup-complete-beginner-guide",
     "description": "comfyui installation, comfyui setup, install comfyui - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
@@ -1677,92 +742,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 94,
-    "title": "Comfyui Lora Training: Expert Guide 2025",
-    "slug": "comfyui-lora-training",
-    "description": "comfyui lora training guide, comfyui lora training tutorial, comfyui lora training course - Expert training from the creators of ComfyUI Pro Training with 32K+ ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui lora training",
-      "comfyui lora training guide",
-      "comfyui lora training 2025",
-      "comfyui lora training course",
-      "comfyui lora training training"
-    ]
-  },
-  {
-    "id": 95,
-    "title": "Comfyui Model Training: Expert Guide 2025",
-    "slug": "comfyui-model-training",
-    "description": "comfyui model training guide, comfyui model training tutorial, comfyui model training course - Expert training from the creators of ComfyUI Pro Training with 32",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui model training",
-      "comfyui model training guide",
-      "comfyui model training 2025",
-      "comfyui model training course",
-      "comfyui model training training"
-    ]
-  },
-  {
-    "id": 96,
-    "title": "Comfyui Professional Workflows: Expert Guide 2025",
-    "slug": "comfyui-professional-workflows",
-    "description": "comfyui professional workflows guide, comfyui professional workflows tutorial, comfyui professional workflows course - Expert training from the creators of N8N ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui professional workflows",
-      "comfyui professional workflows guide",
-      "comfyui professional workflows 2025",
-      "comfyui professional workflows course",
-      "comfyui professional workflows training"
-    ]
-  },
-  {
-    "id": 97,
-    "title": "Comfyui Roi Optimization: Expert Guide 2025",
-    "slug": "comfyui-roi-optimization",
-    "description": "comfyui roi optimization guide, comfyui roi optimization tutorial, comfyui roi optimization course - Expert training from the creators of ComfyUI Pro Training w",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui roi optimization",
-      "comfyui roi optimization guide",
-      "comfyui roi optimization 2025",
-      "comfyui roi optimization course",
-      "comfyui roi optimization training"
-    ]
-  },
-  {
-    "id": 98,
-    "title": "Comfyui Scaling Workflows: Expert Guide 2025",
-    "slug": "comfyui-scaling-workflows",
-    "description": "comfyui scaling workflows guide, comfyui scaling workflows tutorial, comfyui scaling workflows course - Expert training from the creators of N8N Automation Hub ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui scaling workflows",
-      "comfyui scaling workflows guide",
-      "comfyui scaling workflows 2025",
-      "comfyui scaling workflows course",
-      "comfyui scaling workflows training"
-    ]
-  },
-  {
-    "id": 99,
+    "id": 39,
     "title": "ComfyUI Success Story: Complete Guide & Expert Strategies",
     "slug": "comfyui-success-story",
     "description": "ComfyUI Success Story - comprehensive strategies, tools, and techniques for 2025",
@@ -1779,7 +759,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 100,
+    "id": 40,
     "title": "ComfyUI Tutorial: Master AI Image Generation in 2025",
     "slug": "comfyui-tutorial-master-ai-image-generation-2025",
     "description": "comfyui tutorial, comfyui guide, ai image generation - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
@@ -1796,7 +776,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 101,
+    "id": 41,
     "title": "ComfyUI vs Stable Diffusion: Complete Tool Comparison",
     "slug": "comfyui-vs-stable-diffusion-complete-tool-comparison",
     "description": "comfyui vs stable diffusion, ai image tools comparison, best ai art software - Expert guide from the creators of ComfyUI Mastery with 127K+ students and...",
@@ -1813,7 +793,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 102,
+    "id": 42,
     "title": "ComfyUI Workflow Library: Complete Guide & Expert Strategies",
     "slug": "comfyui-workflow-library",
     "description": "ComfyUI Workflow Library - comprehensive strategies, tools, and techniques for 2025",
@@ -1830,24 +810,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 103,
-    "title": "Comfyui Workflow Optimization: Expert Guide 2025",
-    "slug": "comfyui-workflow-optimization",
-    "description": "comfyui workflow optimization guide, comfyui workflow optimization tutorial, comfyui workflow optimization course - Expert training from the creators of N8N Aut",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comfyui workflow optimization",
-      "comfyui workflow optimization guide",
-      "comfyui workflow optimization 2025",
-      "comfyui workflow optimization course",
-      "comfyui workflow optimization training"
-    ]
-  },
-  {
-    "id": 270,
+    "id": 118,
     "title": "Complete Passive Income Blueprint for 2025",
     "slug": "passive-income-blueprint",
     "description": "Learn proven strategies to build passive income streams that work while you sleep - from $0 to $10K/month",
@@ -1864,92 +827,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 104,
-    "title": "Complete-course Ai Automation Masterclass: Expert Guide 2025",
-    "slug": "complete-course-ai-automation-masterclass",
-    "description": "complete-course ai automation masterclass guide, complete-course ai automation masterclass tutorial, complete-course ai automation masterclass course - Expert t",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "complete-course ai automation masterclass",
-      "complete-course ai automation masterclass guide",
-      "complete-course ai automation masterclass 2025",
-      "complete-course ai automation masterclass course",
-      "complete-course ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 105,
-    "title": "Complete-course Ai Influencers Academy: Expert Guide 2025",
-    "slug": "complete-course-ai-influencers-academy",
-    "description": "complete-course ai influencers academy guide, complete-course ai influencers academy tutorial, complete-course ai influencers academy course - Expert training f",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "complete-course ai influencers academy",
-      "complete-course ai influencers academy guide",
-      "complete-course ai influencers academy 2025",
-      "complete-course ai influencers academy course",
-      "complete-course ai influencers academy training"
-    ]
-  },
-  {
-    "id": 106,
-    "title": "Complete-course Comfyui Pro Training: Expert Guide 2025",
-    "slug": "complete-course-comfyui-pro-training",
-    "description": "complete-course comfyui pro training guide, complete-course comfyui pro training tutorial, complete-course comfyui pro training course - Expert training from th",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "complete-course comfyui pro training",
-      "complete-course comfyui pro training guide",
-      "complete-course comfyui pro training 2025",
-      "complete-course comfyui pro training course",
-      "complete-course comfyui pro training training"
-    ]
-  },
-  {
-    "id": 107,
-    "title": "Complete-course Instagram Growth Academy: Expert Guide 2025",
-    "slug": "complete-course-instagram-growth-academy",
-    "description": "complete-course instagram growth academy guide, complete-course instagram growth academy tutorial, complete-course instagram growth academy course - Expert trai",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "complete-course instagram growth academy",
-      "complete-course instagram growth academy guide",
-      "complete-course instagram growth academy 2025",
-      "complete-course instagram growth academy course",
-      "complete-course instagram growth academy training"
-    ]
-  },
-  {
-    "id": 108,
-    "title": "Complete-course N8n Automation Hub: Expert Guide 2025",
-    "slug": "complete-course-n8n-automation-hub",
-    "description": "complete-course n8n automation hub guide, complete-course n8n automation hub tutorial, complete-course n8n automation hub course - Expert training from the crea",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "complete-course n8n automation hub",
-      "complete-course n8n automation hub guide",
-      "complete-course n8n automation hub 2025",
-      "complete-course n8n automation hub course",
-      "complete-course n8n automation hub training"
-    ]
-  },
-  {
-    "id": 109,
+    "id": 43,
     "title": "Composer Agent: Full-Stack Development with AI",
     "slug": "composer-agent-code-llm-full-stack",
     "description": "Complete guide to using Composer Agent for full-stack development with LLMs and advanced coding automation",
@@ -1966,92 +844,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 110,
-    "title": "Comprehensive-training Ai Automation Masterclass: Expert",
-    "slug": "comprehensive-training-ai-automation-masterclass",
-    "description": "comprehensive-training ai automation masterclass guide, comprehensive-training ai automation masterclass tutorial, comprehensive-training ai automation mastercl",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comprehensive-training ai automation masterclass",
-      "comprehensive-training ai automation masterclass guide",
-      "comprehensive-training ai automation masterclass 2025",
-      "comprehensive-training ai automation masterclass course",
-      "comprehensive-training ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 111,
-    "title": "Comprehensive-training Ai Influencers Academy: Expert Guide",
-    "slug": "comprehensive-training-ai-influencers-academy",
-    "description": "comprehensive-training ai influencers academy guide, comprehensive-training ai influencers academy tutorial, comprehensive-training ai influencers academy cours",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comprehensive-training ai influencers academy",
-      "comprehensive-training ai influencers academy guide",
-      "comprehensive-training ai influencers academy 2025",
-      "comprehensive-training ai influencers academy course",
-      "comprehensive-training ai influencers academy training"
-    ]
-  },
-  {
-    "id": 112,
-    "title": "Comprehensive-training Comfyui Pro Training: Expert Guide",
-    "slug": "comprehensive-training-comfyui-pro-training",
-    "description": "comprehensive-training comfyui pro training guide, comprehensive-training comfyui pro training tutorial, comprehensive-training comfyui pro training course - Ex",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comprehensive-training comfyui pro training",
-      "comprehensive-training comfyui pro training guide",
-      "comprehensive-training comfyui pro training 2025",
-      "comprehensive-training comfyui pro training course",
-      "comprehensive-training comfyui pro training training"
-    ]
-  },
-  {
-    "id": 113,
-    "title": "Comprehensive-training Instagram Growth Academy: Expert",
-    "slug": "comprehensive-training-instagram-growth-academy",
-    "description": "comprehensive-training instagram growth academy guide, comprehensive-training instagram growth academy tutorial, comprehensive-training instagram growth academy",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comprehensive-training instagram growth academy",
-      "comprehensive-training instagram growth academy guide",
-      "comprehensive-training instagram growth academy 2025",
-      "comprehensive-training instagram growth academy course",
-      "comprehensive-training instagram growth academy training"
-    ]
-  },
-  {
-    "id": 114,
-    "title": "Comprehensive-training N8n Automation Hub: Expert Guide 2025",
-    "slug": "comprehensive-training-n8n-automation-hub",
-    "description": "comprehensive-training n8n automation hub guide, comprehensive-training n8n automation hub tutorial, comprehensive-training n8n automation hub course - Expert t",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "comprehensive-training n8n automation hub",
-      "comprehensive-training n8n automation hub guide",
-      "comprehensive-training n8n automation hub 2025",
-      "comprehensive-training n8n automation hub course",
-      "comprehensive-training n8n automation hub training"
-    ]
-  },
-  {
-    "id": 115,
+    "id": 44,
     "title": "Content Creation With Ai: Complete Guide [2025]",
     "slug": "content-creation-with-ai",
     "description": "Master Content Creation With Ai with this comprehensive guide. Step-by-step tutorials, expert tips, and proven strategies for real results.",
@@ -2062,58 +855,7 @@ export const allBlogPosts: BlogPost[] = [
     "tags": []
   },
   {
-    "id": 116,
-    "title": "Content Creator Business Model: Expert Guide 2025",
-    "slug": "content-creator-business-model",
-    "description": "content creator business model guide, content creator business model tutorial, content creator business model course - Expert training from the creators of AI A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "content creator business model",
-      "content creator business model guide",
-      "content creator business model 2025",
-      "content creator business model course",
-      "content creator business model training"
-    ]
-  },
-  {
-    "id": 117,
-    "title": "Content Monetization Systems: Expert Guide 2025",
-    "slug": "content-monetization-systems",
-    "description": "content monetization systems guide, content monetization systems tutorial, content monetization systems course - Expert training from the creators of AI Automat",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "content monetization systems",
-      "content monetization systems guide",
-      "content monetization systems 2025",
-      "content monetization systems course",
-      "content monetization systems training"
-    ]
-  },
-  {
-    "id": 118,
-    "title": "Content Scaling Automation: Expert Guide 2025",
-    "slug": "content-scaling-automation",
-    "description": "content scaling automation guide, content scaling automation tutorial, content scaling automation course - Expert training from the creators of AI Automation Ma",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "content scaling automation",
-      "content scaling automation guide",
-      "content scaling automation 2025",
-      "content scaling automation course",
-      "content scaling automation training"
-    ]
-  },
-  {
-    "id": 119,
+    "id": 45,
     "title": "Content Scaling Framework: Complete Guide & Expert",
     "slug": "content-scaling-framework",
     "description": "Content Scaling Framework - comprehensive strategies, tools, and techniques for 2025",
@@ -2130,7 +872,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 120,
+    "id": 46,
     "title": "Create Faceless YouTube Channel",
     "slug": "create-faceless-youtube-channel",
     "description": "Create Faceless YouTube Channel strategies that work - proven tactics for growth, engagement, and monetization in 2025",
@@ -2147,7 +889,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 121,
+    "id": 47,
     "title": "Create Online Courses That Sell: Step-by-Step Blueprint",
     "slug": "create-online-courses-that-sell-step-by-step-blueprint",
     "description": "create online courses, online course creation, course business - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+...",
@@ -2164,7 +906,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 122,
+    "id": 48,
     "title": "Creating AI Influencers: Complete Guide & Expert Strategies",
     "slug": "creating-ai-influencers",
     "description": "Creating AI Influencers comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2181,109 +923,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 123,
-    "title": "Creator Business Automation: Expert Guide 2025",
-    "slug": "creator-business-automation",
-    "description": "creator business automation guide, creator business automation tutorial, creator business automation course - Expert training from the creators of AI Automation",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "creator business automation",
-      "creator business automation guide",
-      "creator business automation 2025",
-      "creator business automation course",
-      "creator business automation training"
-    ]
-  },
-  {
-    "id": 124,
-    "title": "Creator Business Systems: Expert Guide 2025",
-    "slug": "creator-business-systems",
-    "description": "creator business systems guide, creator business systems tutorial, creator business systems course - Expert training from the creators of AI Automation Mastery ",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "creator business systems",
-      "creator business systems guide",
-      "creator business systems 2025",
-      "creator business systems course",
-      "creator business systems training"
-    ]
-  },
-  {
-    "id": 125,
-    "title": "Creator Economy Automation: Expert Guide 2025",
-    "slug": "creator-economy-automation",
-    "description": "creator economy automation guide, creator economy automation tutorial, creator economy automation course - Expert training from the creators of AI Automation Ma",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "creator economy automation",
-      "creator economy automation guide",
-      "creator economy automation 2025",
-      "creator economy automation course",
-      "creator economy automation training"
-    ]
-  },
-  {
-    "id": 126,
-    "title": "Creator Economy Strategies: Expert Guide 2025",
-    "slug": "creator-economy-strategies",
-    "description": "creator economy strategies guide, creator economy strategies tutorial, creator economy strategies course - Expert training from the creators of AI Automation Ma",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "creator economy strategies",
-      "creator economy strategies guide",
-      "creator economy strategies 2025",
-      "creator economy strategies course",
-      "creator economy strategies training"
-    ]
-  },
-  {
-    "id": 127,
-    "title": "Creator Entrepreneurship Guide: Expert Guide 2025",
-    "slug": "creator-entrepreneurship-guide",
-    "description": "creator entrepreneurship guide guide, creator entrepreneurship guide tutorial, creator entrepreneurship guide course - Expert training from the creators of AI A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "creator entrepreneurship guide",
-      "creator entrepreneurship guide guide",
-      "creator entrepreneurship guide 2025",
-      "creator entrepreneurship guide course",
-      "creator entrepreneurship guide training"
-    ]
-  },
-  {
-    "id": 128,
-    "title": "Creator Revenue Streams: Expert Guide 2025",
-    "slug": "creator-revenue-streams",
-    "description": "creator revenue streams guide, creator revenue streams tutorial, creator revenue streams course - Expert training from the creators of AI Automation Mastery wit",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "creator revenue streams",
-      "creator revenue streams guide",
-      "creator revenue streams 2025",
-      "creator revenue streams course",
-      "creator revenue streams training"
-    ]
-  },
-  {
-    "id": 129,
+    "id": 49,
     "title": "Cursor AI: The Future of Coding is Here",
     "slug": "cursor-ai-coding",
     "description": "Complete guide to Cursor AI - the revolutionary coding assistant that increases developer productivity by 300%",
@@ -2300,7 +940,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 130,
+    "id": 50,
     "title": "Dart AI Free Agentic Project Manager",
     "slug": "dart-ai-free-agentic-project-manager",
     "description": "Dart AI Free Agentic Project Manager comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2317,7 +957,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 131,
+    "id": 51,
     "title": "Database Automation Systems: Complete Guide & Expert",
     "slug": "database-automation-systems",
     "description": "Complete guide to database automation systems - proven strategies, tools, and techniques for 2025",
@@ -2334,7 +974,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 133,
+    "id": 53,
     "title": "DeepSeek Janus Pro 7b Multimodal AI Revolution",
     "slug": "deepseek-janus-pro-7b-multimodal-ai-revolution",
     "description": "DeepSeek Janus Pro 7b Multimodal AI Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2351,7 +991,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 135,
+    "id": 55,
     "title": "DeepSeek R1 Browser Use AI Research",
     "slug": "deepseek-r1-browser-use-ai-research",
     "description": "DeepSeek R1 Browser Use AI Research comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2368,7 +1008,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 136,
+    "id": 56,
     "title": "DeepSeek R1 Open Source AI Revolution",
     "slug": "deepseek-r1-open-source-ai-revolution",
     "description": "DeepSeek R1 Open Source AI Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2385,7 +1025,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 137,
+    "id": 57,
     "title": "DeepSeek R2 Open Source AI Revolution",
     "slug": "deepseek-r2-open-source-ai-revolution",
     "description": "DeepSeek R2 Open Source AI Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2402,75 +1042,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 139,
-    "title": "Digital Business Optimization: Expert Guide 2025",
-    "slug": "digital-business-optimization",
-    "description": "digital business optimization guide, digital business optimization tutorial, digital business optimization course - Expert training from the creators of AI Auto",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "digital business optimization",
-      "digital business optimization guide",
-      "digital business optimization 2025",
-      "digital business optimization course",
-      "digital business optimization training"
-    ]
-  },
-  {
-    "id": 140,
-    "title": "Digital Marketing Automation: Expert Guide 2025",
-    "slug": "digital-marketing-automation",
-    "description": "digital marketing automation guide, digital marketing automation tutorial, digital marketing automation course - Expert training from the creators of AI Automat",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "digital marketing automation",
-      "digital marketing automation guide",
-      "digital marketing automation 2025",
-      "digital marketing automation course",
-      "digital marketing automation training"
-    ]
-  },
-  {
-    "id": 141,
-    "title": "Digital Product Empire Building: Expert Guide 2025",
-    "slug": "digital-product-empire-building",
-    "description": "digital product empire building guide, digital product empire building tutorial, digital product empire building course - Expert training from the creators of A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "digital product empire building",
-      "digital product empire building guide",
-      "digital product empire building 2025",
-      "digital product empire building course",
-      "digital product empire building training"
-    ]
-  },
-  {
-    "id": 142,
-    "title": "Digital Product Launch Strategy: Expert Guide 2025",
-    "slug": "digital-product-launch-strategy",
-    "description": "digital product launch strategy guide, digital product launch strategy tutorial, digital product launch strategy course - Expert training from the creators of A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "digital product launch strategy",
-      "digital product launch strategy guide",
-      "digital product launch strategy 2025",
-      "digital product launch strategy course",
-      "digital product launch strategy training"
-    ]
-  },
-  {
-    "id": 143,
+    "id": 59,
     "title": "Digital Product Launch Strategy: From Idea to $100K",
     "slug": "digital-product-launch-strategy-idea-to-100k",
     "description": "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery with 127K+...",
@@ -2487,24 +1059,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 144,
-    "title": "Digital Product Marketing: Expert Guide 2025",
-    "slug": "digital-product-marketing",
-    "description": "digital product marketing guide, digital product marketing tutorial, digital product marketing course - Expert training from the creators of AI Automation Maste",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "digital product marketing",
-      "digital product marketing guide",
-      "digital product marketing 2025",
-      "digital product marketing course",
-      "digital product marketing training"
-    ]
-  },
-  {
-    "id": 146,
+    "id": 61,
     "title": "Digital Product Pricing Strategy: Maximize Your Revenue",
     "slug": "digital-product-pricing-strategy-maximize-revenue",
     "description": "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
@@ -2521,126 +1076,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 147,
-    "title": "Digital Product Sales Funnel: Expert Guide 2025",
-    "slug": "digital-product-sales-funnel",
-    "description": "digital product sales funnel guide, digital product sales funnel tutorial, digital product sales funnel course - Expert training from the creators of AI Automat",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "digital product sales funnel",
-      "digital product sales funnel guide",
-      "digital product sales funnel 2025",
-      "digital product sales funnel course",
-      "digital product sales funnel training"
-    ]
-  },
-  {
-    "id": 148,
-    "title": "Digital Product Scaling: Expert Guide 2025",
-    "slug": "digital-product-scaling",
-    "description": "digital product scaling guide, digital product scaling tutorial, digital product scaling course - Expert training from the creators of AI Automation Mastery wit",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "digital product scaling",
-      "digital product scaling guide",
-      "digital product scaling 2025",
-      "digital product scaling course",
-      "digital product scaling training"
-    ]
-  },
-  {
-    "id": 153,
-    "title": "Elite-course Ai Automation Masterclass: Expert Guide 2025",
-    "slug": "elite-course-ai-automation-masterclass",
-    "description": "elite-course ai automation masterclass guide, elite-course ai automation masterclass tutorial, elite-course ai automation masterclass course - Expert training f",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "elite-course ai automation masterclass",
-      "elite-course ai automation masterclass guide",
-      "elite-course ai automation masterclass 2025",
-      "elite-course ai automation masterclass course",
-      "elite-course ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 154,
-    "title": "Elite-course Ai Influencers Academy: Expert Guide 2025",
-    "slug": "elite-course-ai-influencers-academy",
-    "description": "elite-course ai influencers academy guide, elite-course ai influencers academy tutorial, elite-course ai influencers academy course - Expert training from the c",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "elite-course ai influencers academy",
-      "elite-course ai influencers academy guide",
-      "elite-course ai influencers academy 2025",
-      "elite-course ai influencers academy course",
-      "elite-course ai influencers academy training"
-    ]
-  },
-  {
-    "id": 155,
-    "title": "Elite-course Comfyui Pro Training: Expert Guide 2025",
-    "slug": "elite-course-comfyui-pro-training",
-    "description": "elite-course comfyui pro training guide, elite-course comfyui pro training tutorial, elite-course comfyui pro training course - Expert training from the creator",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "elite-course comfyui pro training",
-      "elite-course comfyui pro training guide",
-      "elite-course comfyui pro training 2025",
-      "elite-course comfyui pro training course",
-      "elite-course comfyui pro training training"
-    ]
-  },
-  {
-    "id": 156,
-    "title": "Elite-course Instagram Growth Academy: Expert Guide 2025",
-    "slug": "elite-course-instagram-growth-academy",
-    "description": "elite-course instagram growth academy guide, elite-course instagram growth academy tutorial, elite-course instagram growth academy course - Expert training from",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "elite-course instagram growth academy",
-      "elite-course instagram growth academy guide",
-      "elite-course instagram growth academy 2025",
-      "elite-course instagram growth academy course",
-      "elite-course instagram growth academy training"
-    ]
-  },
-  {
-    "id": 157,
-    "title": "Elite-course N8n Automation Hub: Expert Guide 2025",
-    "slug": "elite-course-n8n-automation-hub",
-    "description": "elite-course n8n automation hub guide, elite-course n8n automation hub tutorial, elite-course n8n automation hub course - Expert training from the creators of N",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "elite-course n8n automation hub",
-      "elite-course n8n automation hub guide",
-      "elite-course n8n automation hub 2025",
-      "elite-course n8n automation hub course",
-      "elite-course n8n automation hub training"
-    ]
-  },
-  {
-    "id": 158,
+    "id": 66,
     "title": "Email Marketing Automation: Advanced N8N Sequences",
     "slug": "email-marketing-automation-advanced-n8n-sequences",
     "description": "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations with 127K+ students and...",
@@ -2657,7 +1093,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 159,
+    "id": 67,
     "title": "Email Marketing Guide: Build Campaigns That Convert 2025",
     "slug": "email-marketing-guide",
     "description": "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2674,7 +1110,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 160,
+    "id": 68,
     "title": "ES Futures Trading Strategy: Proven E-mini S&P 500 Techniques",
     "slug": "es-futures-trading-strategy",
     "description": "Master ES futures trading with proven strategies. Learn order flow, volume profile, and institutional setups to trade E-mini S&P 500 profitably.",
@@ -2691,7 +1127,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 161,
+    "id": 69,
     "title": "Essential N8N Workflows: Complete Guide & Expert Strategies",
     "slug": "essential-n8n-workflows",
     "description": "Essential N8N Workflows - comprehensive strategies, tools, and techniques for 2025",
@@ -2708,92 +1144,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 162,
-    "title": "Expert-blueprint Ai Automation Masterclass: Expert Guide",
-    "slug": "expert-blueprint-ai-automation-masterclass",
-    "description": "expert-blueprint ai automation masterclass guide, expert-blueprint ai automation masterclass tutorial, expert-blueprint ai automation masterclass course - Exper",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "expert-blueprint ai automation masterclass",
-      "expert-blueprint ai automation masterclass guide",
-      "expert-blueprint ai automation masterclass 2025",
-      "expert-blueprint ai automation masterclass course",
-      "expert-blueprint ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 163,
-    "title": "Expert-blueprint Ai Influencers Academy: Expert Guide 2025",
-    "slug": "expert-blueprint-ai-influencers-academy",
-    "description": "expert-blueprint ai influencers academy guide, expert-blueprint ai influencers academy tutorial, expert-blueprint ai influencers academy course - Expert trainin",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "expert-blueprint ai influencers academy",
-      "expert-blueprint ai influencers academy guide",
-      "expert-blueprint ai influencers academy 2025",
-      "expert-blueprint ai influencers academy course",
-      "expert-blueprint ai influencers academy training"
-    ]
-  },
-  {
-    "id": 164,
-    "title": "Expert-blueprint Comfyui Pro Training: Expert Guide 2025",
-    "slug": "expert-blueprint-comfyui-pro-training",
-    "description": "expert-blueprint comfyui pro training guide, expert-blueprint comfyui pro training tutorial, expert-blueprint comfyui pro training course - Expert training from",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "expert-blueprint comfyui pro training",
-      "expert-blueprint comfyui pro training guide",
-      "expert-blueprint comfyui pro training 2025",
-      "expert-blueprint comfyui pro training course",
-      "expert-blueprint comfyui pro training training"
-    ]
-  },
-  {
-    "id": 165,
-    "title": "Expert-blueprint Instagram Growth Academy: Expert Guide 2025",
-    "slug": "expert-blueprint-instagram-growth-academy",
-    "description": "expert-blueprint instagram growth academy guide, expert-blueprint instagram growth academy tutorial, expert-blueprint instagram growth academy course - Expert t",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "expert-blueprint instagram growth academy",
-      "expert-blueprint instagram growth academy guide",
-      "expert-blueprint instagram growth academy 2025",
-      "expert-blueprint instagram growth academy course",
-      "expert-blueprint instagram growth academy training"
-    ]
-  },
-  {
-    "id": 166,
-    "title": "Expert-blueprint N8n Automation Hub: Expert Guide 2025",
-    "slug": "expert-blueprint-n8n-automation-hub",
-    "description": "expert-blueprint n8n automation hub guide, expert-blueprint n8n automation hub tutorial, expert-blueprint n8n automation hub course - Expert training from the c",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "expert-blueprint n8n automation hub",
-      "expert-blueprint n8n automation hub guide",
-      "expert-blueprint n8n automation hub 2025",
-      "expert-blueprint n8n automation hub course",
-      "expert-blueprint n8n automation hub training"
-    ]
-  },
-  {
-    "id": 167,
+    "id": 70,
     "title": "Faceless Content Strategy: Complete Guide & Expert",
     "slug": "faceless-content-strategy",
     "description": "Faceless Content Strategy - comprehensive strategies, tools, and techniques for 2025",
@@ -2810,7 +1161,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 168,
+    "id": 71,
     "title": "FTMO vs Topstep: Ultimate Prop Firm Showdown 2025",
     "slug": "ftmo-vs-topstep-prop-firm-review",
     "description": "FTMO vs Topstep detailed comparison. Compare evaluation processes, profit splits, trading rules, and payout speeds to find the best funded trading program.",
@@ -2827,7 +1178,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 169,
+    "id": 72,
     "title": "Futures Trading for Beginners: Complete 2025 Guide",
     "slug": "futures-trading-for-beginners-guide",
     "description": "Learn futures trading from scratch. Understand contracts, margin requirements, tick values, and proven strategies to start trading futures profitably.",
@@ -2844,7 +1195,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 170,
+    "id": 73,
     "title": "Gemini 2 5 Flash Budget AI Model",
     "slug": "gemini-2-5-flash-budget-ai-model",
     "description": "Gemini 2 5 Flash Budget AI Model comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2861,7 +1212,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 171,
+    "id": 74,
     "title": "Gemini 2 Pro Bolt Diy Full Stack Revolution",
     "slug": "gemini-2-pro-bolt-diy-full-stack-revolution",
     "description": "Gemini 2 Pro Bolt Diy Full Stack Revolution - comprehensive strategies, tools, and techniques for 2025",
@@ -2878,7 +1229,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 172,
+    "id": 75,
     "title": "Gemini 2 Pro Creator Tech Empire",
     "slug": "gemini-2-pro-creator-tech-empire",
     "description": "Gemini 2 Pro Creator Tech Empire - comprehensive strategies, tools, and techniques for 2025",
@@ -2895,7 +1246,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 173,
+    "id": 76,
     "title": "Google Deep Research 25 Pro Business",
     "slug": "google-deep-research-25-pro-business",
     "description": "Google Deep Research 25 Pro Business - proven business strategies and monetization techniques for entrepreneurs in 2025",
@@ -2912,7 +1263,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 174,
+    "id": 77,
     "title": "Google Io 2025 Creator Opportunities",
     "slug": "google-io-2025-creator-opportunities",
     "description": "Google Io 2025 Creator Opportunities - comprehensive strategies, tools, and techniques for 2025",
@@ -2929,7 +1280,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 175,
+    "id": 78,
     "title": "GPT 4 1 Vs Claude Sonnet 3 7 Comparison",
     "slug": "gpt-4-1-vs-claude-sonnet-3-7-comparison",
     "description": "GPT 4 1 Vs Claude Sonnet 3 7 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2946,24 +1297,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 176,
-    "title": "Gpt Automation Workflows: Expert Guide 2025",
-    "slug": "gpt-automation-workflows",
-    "description": "gpt automation workflows guide, gpt automation workflows tutorial, gpt automation workflows course - Expert training from the creators of N8N Automation Hub wit",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "gpt automation workflows",
-      "gpt automation workflows guide",
-      "gpt automation workflows 2025",
-      "gpt automation workflows course",
-      "gpt automation workflows training"
-    ]
-  },
-  {
-    "id": 177,
+    "id": 79,
     "title": "GPT-4o Upgrade Creator Business",
     "slug": "gpt4o-upgrade-creator-business",
     "description": "GPT-4o Upgrade Creator Business comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2980,7 +1314,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 179,
+    "id": 81,
     "title": "How to Create Digital Products That Sell: Complete 2025",
     "slug": "how-to-create-digital-products-that-sell-2025",
     "description": "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
@@ -3014,7 +1348,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 180,
+    "id": 82,
     "title": "How to Get 10K Instagram Followers Fast: Expert Guide",
     "slug": "how-to-get-10k-instagram-followers-fast",
     "description": "get instagram followers, 10k followers, instagram growth - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
@@ -3031,7 +1365,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 181,
+    "id": 83,
     "title": "How to Make Money with AI Influencers: 15 Proven Methods",
     "slug": "how-to-make-money-with-ai-influencers-15-proven-methods",
     "description": "make money ai influencers, ai influencer income, monetize virtual influencers - Expert guide from the creators of AI Influencers Academy with 127K+...",
@@ -3048,7 +1382,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 182,
+    "id": 84,
     "title": "How to Make Money with ComfyUI: AI Art Business Guide",
     "slug": "how-to-make-money-with-comfyui-ai-art-business-guide",
     "description": "make money comfyui, ai art business, sell ai art - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
@@ -3065,7 +1399,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 183,
+    "id": 85,
     "title": "How To Sell Templates: Complete Guide & Expert Strategies",
     "slug": "how-to-sell-templates",
     "description": "How To Sell Templates - comprehensive strategies, tools, and techniques for 2025",
@@ -3082,7 +1416,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 184,
+    "id": 86,
     "title": "HR Automation Systems: Complete Guide & Expert Strategies",
     "slug": "hr-automation-systems",
     "description": "Complete guide to hr automation systems - proven strategies, tools, and techniques for 2025",
@@ -3099,24 +1433,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 185,
-    "title": "Instagram Algorithm Hacks 2025: Expert Guide 2025",
-    "slug": "instagram-algorithm-hacks-2025",
-    "description": "instagram algorithm hacks 2025 guide, instagram algorithm hacks 2025 tutorial, instagram algorithm hacks 2025 course - Expert training from the creators of Inst",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram algorithm hacks 2025",
-      "instagram algorithm hacks 2025 guide",
-      "instagram algorithm hacks 2025 2025",
-      "instagram algorithm hacks 2025 course",
-      "instagram algorithm hacks 2025 training"
-    ]
-  },
-  {
-    "id": 186,
+    "id": 87,
     "title": "Instagram Algorithm Secrets: Master the 2025 Algorithm",
     "slug": "instagram-algorithm-secrets-master-2025",
     "description": "instagram algorithm, instagram algorithm 2025, instagram reach - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
@@ -3133,109 +1450,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 187,
-    "title": "Instagram Analytics Mastery: Expert Guide 2025",
-    "slug": "instagram-analytics-mastery",
-    "description": "instagram analytics mastery guide, instagram analytics mastery tutorial, instagram analytics mastery course - Expert training from the creators of Instagram Gro",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram analytics mastery",
-      "instagram analytics mastery guide",
-      "instagram analytics mastery 2025",
-      "instagram analytics mastery course",
-      "instagram analytics mastery training"
-    ]
-  },
-  {
-    "id": 188,
-    "title": "Instagram Brand Partnerships: Expert Guide 2025",
-    "slug": "instagram-brand-partnerships",
-    "description": "instagram brand partnerships guide, instagram brand partnerships tutorial, instagram brand partnerships course - Expert training from the creators of Instagram ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram brand partnerships",
-      "instagram brand partnerships guide",
-      "instagram brand partnerships 2025",
-      "instagram brand partnerships course",
-      "instagram brand partnerships training"
-    ]
-  },
-  {
-    "id": 189,
-    "title": "Instagram Business Strategy: Expert Guide 2025",
-    "slug": "instagram-business-strategy",
-    "description": "instagram business strategy guide, instagram business strategy tutorial, instagram business strategy course - Expert training from the creators of Instagram Gro",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram business strategy",
-      "instagram business strategy guide",
-      "instagram business strategy 2025",
-      "instagram business strategy course",
-      "instagram business strategy training"
-    ]
-  },
-  {
-    "id": 190,
-    "title": "Instagram Content Calendar Template: Expert Guide 2025",
-    "slug": "instagram-content-calendar-template",
-    "description": "instagram content calendar template guide, instagram content calendar template tutorial, instagram content calendar template course - Expert training from the c",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram content calendar template",
-      "instagram content calendar template guide",
-      "instagram content calendar template 2025",
-      "instagram content calendar template course",
-      "instagram content calendar template training"
-    ]
-  },
-  {
-    "id": 191,
-    "title": "Instagram Content Creator Guide: Expert Guide 2025",
-    "slug": "instagram-content-creator-guide",
-    "description": "instagram content creator guide guide, instagram content creator guide tutorial, instagram content creator guide course - Expert training from the creators of I",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram content creator guide",
-      "instagram content creator guide guide",
-      "instagram content creator guide 2025",
-      "instagram content creator guide course",
-      "instagram content creator guide training"
-    ]
-  },
-  {
-    "id": 192,
-    "title": "Instagram Content Optimization: Expert Guide 2025",
-    "slug": "instagram-content-optimization",
-    "description": "instagram content optimization guide, instagram content optimization tutorial, instagram content optimization course - Expert training from the creators of Inst",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram content optimization",
-      "instagram content optimization guide",
-      "instagram content optimization 2025",
-      "instagram content optimization course",
-      "instagram content optimization training"
-    ]
-  },
-  {
-    "id": 193,
+    "id": 88,
     "title": "Instagram Content Strategy for Maximum Engagement 2025",
     "slug": "instagram-content-strategy-maximum-engagement-2025",
     "description": "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
@@ -3252,109 +1467,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 194,
-    "title": "Instagram Creator Economy: Expert Guide 2025",
-    "slug": "instagram-creator-economy",
-    "description": "instagram creator economy guide, instagram creator economy tutorial, instagram creator economy course - Expert training from the creators of Instagram Growth Ac",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram creator economy",
-      "instagram creator economy guide",
-      "instagram creator economy 2025",
-      "instagram creator economy course",
-      "instagram creator economy training"
-    ]
-  },
-  {
-    "id": 195,
-    "title": "Instagram Creator Tools: Expert Guide 2025",
-    "slug": "instagram-creator-tools",
-    "description": "instagram creator tools guide, instagram creator tools tutorial, instagram creator tools course - Expert training from the creators of Instagram Growth Academy ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram creator tools",
-      "instagram creator tools guide",
-      "instagram creator tools 2025",
-      "instagram creator tools course",
-      "instagram creator tools training"
-    ]
-  },
-  {
-    "id": 196,
-    "title": "Instagram Engagement Pods: Expert Guide 2025",
-    "slug": "instagram-engagement-pods",
-    "description": "instagram engagement pods guide, instagram engagement pods tutorial, instagram engagement pods course - Expert training from the creators of Instagram Growth Ac",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram engagement pods",
-      "instagram engagement pods guide",
-      "instagram engagement pods 2025",
-      "instagram engagement pods course",
-      "instagram engagement pods training"
-    ]
-  },
-  {
-    "id": 197,
-    "title": "Instagram Follower Acquisition: Expert Guide 2025",
-    "slug": "instagram-follower-acquisition",
-    "description": "instagram follower acquisition guide, instagram follower acquisition tutorial, instagram follower acquisition course - Expert training from the creators of Inst",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram follower acquisition",
-      "instagram follower acquisition guide",
-      "instagram follower acquisition 2025",
-      "instagram follower acquisition course",
-      "instagram follower acquisition training"
-    ]
-  },
-  {
-    "id": 199,
-    "title": "Instagram Growth Automation: Expert Guide 2025",
-    "slug": "instagram-growth-automation",
-    "description": "instagram growth automation guide, instagram growth automation tutorial, instagram growth automation course - Expert training from the creators of Instagram Gro",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram growth automation",
-      "instagram growth automation guide",
-      "instagram growth automation 2025",
-      "instagram growth automation course",
-      "instagram growth automation training"
-    ]
-  },
-  {
-    "id": 200,
-    "title": "Instagram Growth For Business: Expert Guide 2025",
-    "slug": "instagram-growth-for-business",
-    "description": "instagram growth for business guide, instagram growth for business tutorial, instagram growth for business course - Expert training from the creators of Instagr",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram growth for business",
-      "instagram growth for business guide",
-      "instagram growth for business 2025",
-      "instagram growth for business course",
-      "instagram growth for business training"
-    ]
-  },
-  {
-    "id": 201,
+    "id": 90,
     "title": "Instagram Growth Hacks That Actually Work in 2025",
     "slug": "instagram-growth-hacks-that-work-2025",
     "description": "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
@@ -3371,7 +1484,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 198,
+    "id": 89,
     "title": "Instagram Growth Strategies That Actually Work in 2025",
     "slug": "instagram-growth-2025",
     "description": "Latest tactics and techniques to grow your Instagram following organically - proven methods used by top creators",
@@ -3388,24 +1501,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 202,
-    "title": "Instagram Hashtag Research: Expert Guide 2025",
-    "slug": "instagram-hashtag-research",
-    "description": "instagram hashtag research guide, instagram hashtag research tutorial, instagram hashtag research course - Expert training from the creators of Instagram Growth",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram hashtag research",
-      "instagram hashtag research guide",
-      "instagram hashtag research 2025",
-      "instagram hashtag research course",
-      "instagram hashtag research training"
-    ]
-  },
-  {
-    "id": 203,
+    "id": 91,
     "title": "Instagram Ignited Success Stories",
     "slug": "instagram-ignited-success-stories",
     "description": "Instagram Ignited Success Stories strategies that work - proven tactics for growth, engagement, and monetization in 2025",
@@ -3422,24 +1518,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 204,
-    "title": "Instagram Influence Building: Expert Guide 2025",
-    "slug": "instagram-influence-building",
-    "description": "instagram influence building guide, instagram influence building tutorial, instagram influence building course - Expert training from the creators of Instagram ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram influence building",
-      "instagram influence building guide",
-      "instagram influence building 2025",
-      "instagram influence building course",
-      "instagram influence building training"
-    ]
-  },
-  {
-    "id": 205,
+    "id": 92,
     "title": "Instagram Influencer Marketing: Build Your Personal Brand",
     "slug": "instagram-influencer-marketing-build-personal-brand",
     "description": "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited with 127K+ students...",
@@ -3456,24 +1535,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 207,
-    "title": "Instagram Monetization Blueprint: Expert Guide 2025",
-    "slug": "instagram-monetization-blueprint",
-    "description": "instagram monetization blueprint guide, instagram monetization blueprint tutorial, instagram monetization blueprint course - Expert training from the creators o",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram monetization blueprint",
-      "instagram monetization blueprint guide",
-      "instagram monetization blueprint 2025",
-      "instagram monetization blueprint course",
-      "instagram monetization blueprint training"
-    ]
-  },
-  {
-    "id": 209,
+    "id": 95,
     "title": "Instagram Monetization Guide: 15 Proven Ways to Make Money",
     "slug": "instagram-monetization-guide-15-ways-make-money",
     "description": "instagram monetization, make money instagram, instagram income - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
@@ -3490,7 +1552,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 210,
+    "id": 96,
     "title": "Instagram Reels Algorithm: Viral Content Strategy 2025",
     "slug": "instagram-reels-algorithm-viral-content-strategy-2025",
     "description": "instagram reels algorithm, viral reels, reels strategy - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
@@ -3507,7 +1569,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 211,
+    "id": 97,
     "title": "Instagram Reels Guide: Create Viral Content in 2025",
     "slug": "instagram-reels-guide",
     "description": "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
@@ -3524,58 +1586,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 212,
-    "title": "Instagram Reels Viral Formula: Expert Guide 2025",
-    "slug": "instagram-reels-viral-formula",
-    "description": "instagram reels viral formula guide, instagram reels viral formula tutorial, instagram reels viral formula course - Expert training from the creators of Instagr",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram reels viral formula",
-      "instagram reels viral formula guide",
-      "instagram reels viral formula 2025",
-      "instagram reels viral formula course",
-      "instagram reels viral formula training"
-    ]
-  },
-  {
-    "id": 213,
-    "title": "Instagram Sponsored Content: Expert Guide 2025",
-    "slug": "instagram-sponsored-content",
-    "description": "instagram sponsored content guide, instagram sponsored content tutorial, instagram sponsored content course - Expert training from the creators of Instagram Gro",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram sponsored content",
-      "instagram sponsored content guide",
-      "instagram sponsored content 2025",
-      "instagram sponsored content course",
-      "instagram sponsored content training"
-    ]
-  },
-  {
-    "id": 214,
-    "title": "Instagram Story Engagement: Expert Guide 2025",
-    "slug": "instagram-story-engagement",
-    "description": "instagram story engagement guide, instagram story engagement tutorial, instagram story engagement course - Expert training from the creators of Instagram Growth",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram story engagement",
-      "instagram story engagement guide",
-      "instagram story engagement 2025",
-      "instagram story engagement course",
-      "instagram story engagement training"
-    ]
-  },
-  {
-    "id": 215,
+    "id": 98,
     "title": "Instagram Story Marketing: Advanced Engagement Tactics",
     "slug": "instagram-story-marketing-advanced-engagement-tactics",
     "description": "instagram story marketing, instagram stories, story engagement - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
@@ -3592,109 +1603,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 216,
-    "title": "Instagram Viral Marketing: Expert Guide 2025",
-    "slug": "instagram-viral-marketing",
-    "description": "instagram viral marketing guide, instagram viral marketing tutorial, instagram viral marketing course - Expert training from the creators of Instagram Growth Ac",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "instagram viral marketing",
-      "instagram viral marketing guide",
-      "instagram viral marketing 2025",
-      "instagram viral marketing course",
-      "instagram viral marketing training"
-    ]
-  },
-  {
-    "id": 217,
-    "title": "Intensive-bootcamp Ai Automation Masterclass: Expert Guide",
-    "slug": "intensive-bootcamp-ai-automation-masterclass",
-    "description": "intensive-bootcamp ai automation masterclass guide, intensive-bootcamp ai automation masterclass tutorial, intensive-bootcamp ai automation masterclass course -",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "intensive-bootcamp ai automation masterclass",
-      "intensive-bootcamp ai automation masterclass guide",
-      "intensive-bootcamp ai automation masterclass 2025",
-      "intensive-bootcamp ai automation masterclass course",
-      "intensive-bootcamp ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 218,
-    "title": "Intensive-bootcamp Ai Influencers Academy: Expert Guide 2025",
-    "slug": "intensive-bootcamp-ai-influencers-academy",
-    "description": "intensive-bootcamp ai influencers academy guide, intensive-bootcamp ai influencers academy tutorial, intensive-bootcamp ai influencers academy course - Expert t",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "intensive-bootcamp ai influencers academy",
-      "intensive-bootcamp ai influencers academy guide",
-      "intensive-bootcamp ai influencers academy 2025",
-      "intensive-bootcamp ai influencers academy course",
-      "intensive-bootcamp ai influencers academy training"
-    ]
-  },
-  {
-    "id": 219,
-    "title": "Intensive-bootcamp Comfyui Pro Training: Expert Guide 2025",
-    "slug": "intensive-bootcamp-comfyui-pro-training",
-    "description": "intensive-bootcamp comfyui pro training guide, intensive-bootcamp comfyui pro training tutorial, intensive-bootcamp comfyui pro training course - Expert trainin",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "intensive-bootcamp comfyui pro training",
-      "intensive-bootcamp comfyui pro training guide",
-      "intensive-bootcamp comfyui pro training 2025",
-      "intensive-bootcamp comfyui pro training course",
-      "intensive-bootcamp comfyui pro training training"
-    ]
-  },
-  {
-    "id": 220,
-    "title": "Intensive-bootcamp Instagram Growth Academy: Expert Guide",
-    "slug": "intensive-bootcamp-instagram-growth-academy",
-    "description": "intensive-bootcamp instagram growth academy guide, intensive-bootcamp instagram growth academy tutorial, intensive-bootcamp instagram growth academy course - Ex",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "intensive-bootcamp instagram growth academy",
-      "intensive-bootcamp instagram growth academy guide",
-      "intensive-bootcamp instagram growth academy 2025",
-      "intensive-bootcamp instagram growth academy course",
-      "intensive-bootcamp instagram growth academy training"
-    ]
-  },
-  {
-    "id": 221,
-    "title": "Intensive-bootcamp N8n Automation Hub: Expert Guide 2025",
-    "slug": "intensive-bootcamp-n8n-automation-hub",
-    "description": "intensive-bootcamp n8n automation hub guide, intensive-bootcamp n8n automation hub tutorial, intensive-bootcamp n8n automation hub course - Expert training from",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "intensive-bootcamp n8n automation hub",
-      "intensive-bootcamp n8n automation hub guide",
-      "intensive-bootcamp n8n automation hub 2025",
-      "intensive-bootcamp n8n automation hub course",
-      "intensive-bootcamp n8n automation hub training"
-    ]
-  },
-  {
-    "id": 222,
+    "id": 99,
     "title": "Inventory Management Automation",
     "slug": "inventory-management-automation",
     "description": "Complete guide to inventory management automation - proven strategies, tools, and techniques for 2025",
@@ -3711,7 +1620,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 224,
+    "id": 101,
     "title": "Lead Generation Automation: Complete Guide & Expert",
     "slug": "lead-generation-automation",
     "description": "Complete guide to lead generation automation - proven strategies, tools, and techniques for 2025",
@@ -3728,7 +1637,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 225,
+    "id": 102,
     "title": "Llama 4 Open Source AI Powerhouse",
     "slug": "llama-4-open-source-ai-powerhouse",
     "description": "Llama 4 Open Source AI Powerhouse comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -3745,7 +1654,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 226,
+    "id": 103,
     "title": "MACD Indicator: Complete Trading Strategy Guide 2025",
     "slug": "macd-indicator-trading-strategy",
     "description": "Master MACD indicator trading with this complete guide. Learn MACD crossover strategies, divergence trading, and histogram analysis for profitable trades.",
@@ -3762,7 +1671,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 228,
+    "id": 105,
     "title": "Make App Automation: Complete Workflow Builder Guide 2025",
     "slug": "make-app-automation",
     "description": "Complete guide to make app automation - proven strategies, tools, and techniques for 2025",
@@ -3779,7 +1688,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 229,
+    "id": 106,
     "title": "Manus AI General Automation Agent",
     "slug": "manus-ai-general-automation-agent",
     "description": "Complete guide to manus ai general automation agent - proven strategies, tools, and techniques for 2025",
@@ -3796,92 +1705,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 230,
-    "title": "Mastery-training Ai Automation Masterclass: Expert Guide",
-    "slug": "mastery-training-ai-automation-masterclass",
-    "description": "mastery-training ai automation masterclass guide, mastery-training ai automation masterclass tutorial, mastery-training ai automation masterclass course - Exper",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "mastery-training ai automation masterclass",
-      "mastery-training ai automation masterclass guide",
-      "mastery-training ai automation masterclass 2025",
-      "mastery-training ai automation masterclass course",
-      "mastery-training ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 231,
-    "title": "Mastery-training Ai Influencers Academy: Expert Guide 2025",
-    "slug": "mastery-training-ai-influencers-academy",
-    "description": "mastery-training ai influencers academy guide, mastery-training ai influencers academy tutorial, mastery-training ai influencers academy course - Expert trainin",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "mastery-training ai influencers academy",
-      "mastery-training ai influencers academy guide",
-      "mastery-training ai influencers academy 2025",
-      "mastery-training ai influencers academy course",
-      "mastery-training ai influencers academy training"
-    ]
-  },
-  {
-    "id": 232,
-    "title": "Mastery-training Comfyui Pro Training: Expert Guide 2025",
-    "slug": "mastery-training-comfyui-pro-training",
-    "description": "mastery-training comfyui pro training guide, mastery-training comfyui pro training tutorial, mastery-training comfyui pro training course - Expert training from",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "mastery-training comfyui pro training",
-      "mastery-training comfyui pro training guide",
-      "mastery-training comfyui pro training 2025",
-      "mastery-training comfyui pro training course",
-      "mastery-training comfyui pro training training"
-    ]
-  },
-  {
-    "id": 233,
-    "title": "Mastery-training Instagram Growth Academy: Expert Guide 2025",
-    "slug": "mastery-training-instagram-growth-academy",
-    "description": "mastery-training instagram growth academy guide, mastery-training instagram growth academy tutorial, mastery-training instagram growth academy course - Expert t",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "mastery-training instagram growth academy",
-      "mastery-training instagram growth academy guide",
-      "mastery-training instagram growth academy 2025",
-      "mastery-training instagram growth academy course",
-      "mastery-training instagram growth academy training"
-    ]
-  },
-  {
-    "id": 234,
-    "title": "Mastery-training N8n Automation Hub: Expert Guide 2025",
-    "slug": "mastery-training-n8n-automation-hub",
-    "description": "mastery-training n8n automation hub guide, mastery-training n8n automation hub tutorial, mastery-training n8n automation hub course - Expert training from the c",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "mastery-training n8n automation hub",
-      "mastery-training n8n automation hub guide",
-      "mastery-training n8n automation hub 2025",
-      "mastery-training n8n automation hub course",
-      "mastery-training n8n automation hub training"
-    ]
-  },
-  {
-    "id": 236,
+    "id": 108,
     "title": "Monetize With AI: Passive Income Strategies for 2025",
     "slug": "monetize-with-ai",
     "description": "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -3898,7 +1722,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 237,
+    "id": 109,
     "title": "Most Profitable Digital Product Niches in 2025",
     "slug": "most-profitable-digital-product-niches-2025",
     "description": "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery with 127K+...",
@@ -3915,24 +1739,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 238,
-    "title": "N8n Advanced Workflows: Expert Guide 2025",
-    "slug": "n8n-advanced-workflows",
-    "description": "n8n advanced workflows guide, n8n advanced workflows tutorial, n8n advanced workflows course - Expert training from the creators of N8N Automation Hub with 45K+",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n advanced workflows",
-      "n8n advanced workflows guide",
-      "n8n advanced workflows 2025",
-      "n8n advanced workflows course",
-      "n8n advanced workflows training"
-    ]
-  },
-  {
-    "id": 239,
+    "id": 110,
     "title": "N8N API Integration: Connect Any Service with Workflows",
     "slug": "n8n-api-integration-connect-any-service-workflows",
     "description": "n8n api integration, api automation, n8n webhooks - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
@@ -3949,160 +1756,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 240,
-    "title": "N8n Api Integrations: Expert Guide 2025",
-    "slug": "n8n-api-integrations",
-    "description": "n8n api integrations guide, n8n api integrations tutorial, n8n api integrations course - Expert training from the creators of N8N Automation Hub with 45K+ stude",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n api integrations",
-      "n8n api integrations guide",
-      "n8n api integrations 2025",
-      "n8n api integrations course",
-      "n8n api integrations training"
-    ]
-  },
-  {
-    "id": 241,
-    "title": "N8n Automation Agency: Expert Guide 2025",
-    "slug": "n8n-automation-agency",
-    "description": "n8n automation agency guide, n8n automation agency tutorial, n8n automation agency course - Expert training from the creators of N8N Automation Hub with 45K+ st",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n automation agency",
-      "n8n automation agency guide",
-      "n8n automation agency 2025",
-      "n8n automation agency course",
-      "n8n automation agency training"
-    ]
-  },
-  {
-    "id": 242,
-    "title": "N8n Automation Consulting: Expert Guide 2025",
-    "slug": "n8n-automation-consulting",
-    "description": "n8n automation consulting guide, n8n automation consulting tutorial, n8n automation consulting course - Expert training from the creators of N8N Automation Hub ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n automation consulting",
-      "n8n automation consulting guide",
-      "n8n automation consulting 2025",
-      "n8n automation consulting course",
-      "n8n automation consulting training"
-    ]
-  },
-  {
-    "id": 243,
-    "title": "N8n Automation Examples: Expert Guide 2025",
-    "slug": "n8n-automation-examples",
-    "description": "n8n automation examples guide, n8n automation examples tutorial, n8n automation examples course - Expert training from the creators of N8N Automation Hub with 4",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n automation examples",
-      "n8n automation examples guide",
-      "n8n automation examples 2025",
-      "n8n automation examples course",
-      "n8n automation examples training"
-    ]
-  },
-  {
-    "id": 246,
-    "title": "N8n Business Intelligence: Expert Guide 2025",
-    "slug": "n8n-business-intelligence",
-    "description": "n8n business intelligence guide, n8n business intelligence tutorial, n8n business intelligence course - Expert training from the creators of N8N Automation Hub ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n business intelligence",
-      "n8n business intelligence guide",
-      "n8n business intelligence 2025",
-      "n8n business intelligence course",
-      "n8n business intelligence training"
-    ]
-  },
-  {
-    "id": 247,
-    "title": "N8n Business Workflows: Expert Guide 2025",
-    "slug": "n8n-business-workflows",
-    "description": "n8n business workflows guide, n8n business workflows tutorial, n8n business workflows course - Expert training from the creators of N8N Automation Hub with 45K+",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n business workflows",
-      "n8n business workflows guide",
-      "n8n business workflows 2025",
-      "n8n business workflows course",
-      "n8n business workflows training"
-    ]
-  },
-  {
-    "id": 248,
-    "title": "N8n Crm Workflows: Expert Guide 2025",
-    "slug": "n8n-crm-workflows",
-    "description": "n8n crm workflows guide, n8n crm workflows tutorial, n8n crm workflows course - Expert training from the creators of N8N Automation Hub with 45K+ students and $",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n crm workflows",
-      "n8n crm workflows guide",
-      "n8n crm workflows 2025",
-      "n8n crm workflows course",
-      "n8n crm workflows training"
-    ]
-  },
-  {
-    "id": 249,
-    "title": "N8n Custom Nodes: Expert Guide 2025",
-    "slug": "n8n-custom-nodes",
-    "description": "n8n custom nodes guide, n8n custom nodes tutorial, n8n custom nodes course - Expert training from the creators of N8N Automation Hub with 45K+ students and $890",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n custom nodes",
-      "n8n custom nodes guide",
-      "n8n custom nodes 2025",
-      "n8n custom nodes course",
-      "n8n custom nodes training"
-    ]
-  },
-  {
-    "id": 250,
-    "title": "N8n Data Transformation: Expert Guide 2025",
-    "slug": "n8n-data-transformation",
-    "description": "n8n data transformation guide, n8n data transformation tutorial, n8n data transformation course - Expert training from the creators of N8N Automation Hub with 4",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n data transformation",
-      "n8n data transformation guide",
-      "n8n data transformation 2025",
-      "n8n data transformation course",
-      "n8n data transformation training"
-    ]
-  },
-  {
-    "id": 251,
+    "id": 113,
     "title": "N8N Database Automation: Automate Your Data Workflows",
     "slug": "n8n-database-automation-automate-data-workflows",
     "description": "n8n database automation, database workflows, automated data processing - Expert guide from the creators of N8N AI Automations with 127K+ students and...",
@@ -4119,126 +1773,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 252,
-    "title": "N8n Database Connections: Expert Guide 2025",
-    "slug": "n8n-database-connections",
-    "description": "n8n database connections guide, n8n database connections tutorial, n8n database connections course - Expert training from the creators of N8N Automation Hub wit",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n database connections",
-      "n8n database connections guide",
-      "n8n database connections 2025",
-      "n8n database connections course",
-      "n8n database connections training"
-    ]
-  },
-  {
-    "id": 253,
-    "title": "N8n Ecommerce Automation: Expert Guide 2025",
-    "slug": "n8n-ecommerce-automation",
-    "description": "n8n ecommerce automation guide, n8n ecommerce automation tutorial, n8n ecommerce automation course - Expert training from the creators of N8N Automation Hub wit",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n ecommerce automation",
-      "n8n ecommerce automation guide",
-      "n8n ecommerce automation 2025",
-      "n8n ecommerce automation course",
-      "n8n ecommerce automation training"
-    ]
-  },
-  {
-    "id": 254,
-    "title": "N8n Email Automation: Expert Guide 2025",
-    "slug": "n8n-email-automation",
-    "description": "n8n email automation guide, n8n email automation tutorial, n8n email automation course - Expert training from the creators of N8N Automation Hub with 45K+ stude",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n email automation",
-      "n8n email automation guide",
-      "n8n email automation 2025",
-      "n8n email automation course",
-      "n8n email automation training"
-    ]
-  },
-  {
-    "id": 255,
-    "title": "N8n Enterprise Solutions: Expert Guide 2025",
-    "slug": "n8n-enterprise-solutions",
-    "description": "n8n enterprise solutions guide, n8n enterprise solutions tutorial, n8n enterprise solutions course - Expert training from the creators of N8N Automation Hub wit",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n enterprise solutions",
-      "n8n enterprise solutions guide",
-      "n8n enterprise solutions 2025",
-      "n8n enterprise solutions course",
-      "n8n enterprise solutions training"
-    ]
-  },
-  {
-    "id": 256,
-    "title": "N8n Integration Tutorials: Expert Guide 2025",
-    "slug": "n8n-integration-tutorials",
-    "description": "n8n integration tutorials guide, n8n integration tutorials tutorial, n8n integration tutorials course - Expert training from the creators of N8N Automation Hub ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n integration tutorials",
-      "n8n integration tutorials guide",
-      "n8n integration tutorials 2025",
-      "n8n integration tutorials course",
-      "n8n integration tutorials training"
-    ]
-  },
-  {
-    "id": 257,
-    "title": "N8n Scheduling Workflows: Expert Guide 2025",
-    "slug": "n8n-scheduling-workflows",
-    "description": "n8n scheduling workflows guide, n8n scheduling workflows tutorial, n8n scheduling workflows course - Expert training from the creators of N8N Automation Hub wit",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n scheduling workflows",
-      "n8n scheduling workflows guide",
-      "n8n scheduling workflows 2025",
-      "n8n scheduling workflows course",
-      "n8n scheduling workflows training"
-    ]
-  },
-  {
-    "id": 258,
-    "title": "N8n Social Media Automation: Expert Guide 2025",
-    "slug": "n8n-social-media-automation",
-    "description": "n8n social media automation guide, n8n social media automation tutorial, n8n social media automation course - Expert training from the creators of Instagram Gro",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n social media automation",
-      "n8n social media automation guide",
-      "n8n social media automation 2025",
-      "n8n social media automation course",
-      "n8n social media automation training"
-    ]
-  },
-  {
-    "id": 259,
+    "id": 114,
     "title": "N8N Tutorial: Complete Beginner",
     "slug": "n8n-tutorial-complete-beginners-guide-automation-2025",
     "description": "n8n tutorial, n8n guide, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
@@ -4255,75 +1790,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 260,
-    "title": "N8n Vs Zapier Comparison: Expert Guide 2025",
-    "slug": "n8n-vs-zapier-comparison",
-    "description": "n8n vs zapier comparison guide, n8n vs zapier comparison tutorial, n8n vs zapier comparison course - Expert training from the creators of N8N Automation Hub wit",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n vs zapier comparison",
-      "n8n vs zapier comparison guide",
-      "n8n vs zapier comparison 2025",
-      "n8n vs zapier comparison course",
-      "n8n vs zapier comparison training"
-    ]
-  },
-  {
-    "id": 261,
-    "title": "N8n Webhook Automation: Expert Guide 2025",
-    "slug": "n8n-webhook-automation",
-    "description": "n8n webhook automation guide, n8n webhook automation tutorial, n8n webhook automation course - Expert training from the creators of N8N Automation Hub with 45K+",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n webhook automation",
-      "n8n webhook automation guide",
-      "n8n webhook automation 2025",
-      "n8n webhook automation course",
-      "n8n webhook automation training"
-    ]
-  },
-  {
-    "id": 262,
-    "title": "N8n Workflow Optimization: Expert Guide 2025",
-    "slug": "n8n-workflow-optimization",
-    "description": "n8n workflow optimization guide, n8n workflow optimization tutorial, n8n workflow optimization course - Expert training from the creators of N8N Automation Hub ",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n workflow optimization",
-      "n8n workflow optimization guide",
-      "n8n workflow optimization 2025",
-      "n8n workflow optimization course",
-      "n8n workflow optimization training"
-    ]
-  },
-  {
-    "id": 263,
-    "title": "N8n Workflow Templates: Expert Guide 2025",
-    "slug": "n8n-workflow-templates",
-    "description": "n8n workflow templates guide, n8n workflow templates tutorial, n8n workflow templates course - Expert training from the creators of N8N Automation Hub with 45K+",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "n8n workflow templates",
-      "n8n workflow templates guide",
-      "n8n workflow templates 2025",
-      "n8n workflow templates course",
-      "n8n workflow templates training"
-    ]
-  },
-  {
-    "id": 264,
+    "id": 115,
     "title": "N8N Zapier Alternative: Why N8N is Superior for Automation",
     "slug": "n8n-zapier-alternative-why-n8n-superior-automation",
     "description": "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+...",
@@ -4340,24 +1807,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 266,
-    "title": "Online Business Automation: Expert Guide 2025",
-    "slug": "online-business-automation",
-    "description": "online business automation guide, online business automation tutorial, online business automation course - Expert training from the creators of AI Automation Ma",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "online business automation",
-      "online business automation guide",
-      "online business automation 2025",
-      "online business automation course",
-      "online business automation training"
-    ]
-  },
-  {
-    "id": 267,
+    "id": 117,
     "title": "Online Course Creation Guide: Build & Sell Courses That",
     "slug": "online-course-creation-guide-build-sell-courses",
     "description": "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in...",
@@ -4374,41 +1824,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 268,
-    "title": "Online Course Creation Mastery: Expert Guide 2025",
-    "slug": "online-course-creation-mastery",
-    "description": "online course creation mastery guide, online course creation mastery tutorial, online course creation mastery course - Expert training from the creators of AI A",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "online course creation mastery",
-      "online course creation mastery guide",
-      "online course creation mastery 2025",
-      "online course creation mastery course",
-      "online course creation mastery training"
-    ]
-  },
-  {
-    "id": 269,
-    "title": "Passive Income Automation: Expert Guide 2025",
-    "slug": "passive-income-automation",
-    "description": "passive income automation guide, passive income automation tutorial, passive income automation course - Expert training from the creators of AI Automation Maste",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "passive income automation",
-      "passive income automation guide",
-      "passive income automation 2025",
-      "passive income automation course",
-      "passive income automation training"
-    ]
-  },
-  {
-    "id": 271,
+    "id": 119,
     "title": "Personal Brand Building: Complete Guide & Expert Strategies",
     "slug": "personal-brand-building",
     "description": "Personal Brand Building - comprehensive strategies, tools, and techniques for 2025",
@@ -4425,7 +1841,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 272,
+    "id": 120,
     "title": "Pinterest Automation Marketing",
     "slug": "pinterest-automation-marketing",
     "description": "Complete guide to pinterest automation marketing - proven strategies, tools, and techniques for 2025",
@@ -4442,7 +1858,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 278,
+    "id": 126,
     "title": "Product Launch Strategy: Complete Guide & Expert Strategies",
     "slug": "product-launch-strategy",
     "description": "Product Launch Strategy - comprehensive strategies, tools, and techniques for 2025",
@@ -4459,262 +1875,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 279,
-    "title": "Professional-certification Ai Automation Masterclass: Expert",
-    "slug": "professional-certification-ai-automation-masterclass",
-    "description": "professional-certification ai automation masterclass guide, professional-certification ai automation masterclass tutorial, professional-certification ai automat",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "professional-certification ai automation masterclass",
-      "professional-certification ai automation masterclass guide",
-      "professional-certification ai automation masterclass 2025",
-      "professional-certification ai automation masterclass course",
-      "professional-certification ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 280,
-    "title": "Professional-certification Ai Influencers Academy: Expert",
-    "slug": "professional-certification-ai-influencers-academy",
-    "description": "professional-certification ai influencers academy guide, professional-certification ai influencers academy tutorial, professional-certification ai influencers a",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "professional-certification ai influencers academy",
-      "professional-certification ai influencers academy guide",
-      "professional-certification ai influencers academy 2025",
-      "professional-certification ai influencers academy course",
-      "professional-certification ai influencers academy training"
-    ]
-  },
-  {
-    "id": 281,
-    "title": "Professional-certification Comfyui Pro Training: Expert",
-    "slug": "professional-certification-comfyui-pro-training",
-    "description": "professional-certification comfyui pro training guide, professional-certification comfyui pro training tutorial, professional-certification comfyui pro training",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "professional-certification comfyui pro training",
-      "professional-certification comfyui pro training guide",
-      "professional-certification comfyui pro training 2025",
-      "professional-certification comfyui pro training course",
-      "professional-certification comfyui pro training training"
-    ]
-  },
-  {
-    "id": 282,
-    "title": "Professional-certification Instagram Growth Academy: Expert",
-    "slug": "professional-certification-instagram-growth-academy",
-    "description": "professional-certification instagram growth academy guide, professional-certification instagram growth academy tutorial, professional-certification instagram gr",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "professional-certification instagram growth academy",
-      "professional-certification instagram growth academy guide",
-      "professional-certification instagram growth academy 2025",
-      "professional-certification instagram growth academy course",
-      "professional-certification instagram growth academy training"
-    ]
-  },
-  {
-    "id": 283,
-    "title": "Professional-certification N8n Automation Hub: Expert Guide",
-    "slug": "professional-certification-n8n-automation-hub",
-    "description": "professional-certification n8n automation hub guide, professional-certification n8n automation hub tutorial, professional-certification n8n automation hub cours",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "professional-certification n8n automation hub",
-      "professional-certification n8n automation hub guide",
-      "professional-certification n8n automation hub 2025",
-      "professional-certification n8n automation hub course",
-      "professional-certification n8n automation hub training"
-    ]
-  },
-  {
-    "id": 284,
-    "title": "Profitable-strategies Ai Automation Masterclass: Expert",
-    "slug": "profitable-strategies-ai-automation-masterclass",
-    "description": "profitable-strategies ai automation masterclass guide, profitable-strategies ai automation masterclass tutorial, profitable-strategies ai automation masterclass",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "profitable-strategies ai automation masterclass",
-      "profitable-strategies ai automation masterclass guide",
-      "profitable-strategies ai automation masterclass 2025",
-      "profitable-strategies ai automation masterclass course",
-      "profitable-strategies ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 285,
-    "title": "Profitable-strategies Ai Influencers Academy: Expert Guide",
-    "slug": "profitable-strategies-ai-influencers-academy",
-    "description": "profitable-strategies ai influencers academy guide, profitable-strategies ai influencers academy tutorial, profitable-strategies ai influencers academy course -",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "profitable-strategies ai influencers academy",
-      "profitable-strategies ai influencers academy guide",
-      "profitable-strategies ai influencers academy 2025",
-      "profitable-strategies ai influencers academy course",
-      "profitable-strategies ai influencers academy training"
-    ]
-  },
-  {
-    "id": 286,
-    "title": "Profitable-strategies Comfyui Pro Training: Expert Guide",
-    "slug": "profitable-strategies-comfyui-pro-training",
-    "description": "profitable-strategies comfyui pro training guide, profitable-strategies comfyui pro training tutorial, profitable-strategies comfyui pro training course - Exper",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "profitable-strategies comfyui pro training",
-      "profitable-strategies comfyui pro training guide",
-      "profitable-strategies comfyui pro training 2025",
-      "profitable-strategies comfyui pro training course",
-      "profitable-strategies comfyui pro training training"
-    ]
-  },
-  {
-    "id": 287,
-    "title": "Profitable-strategies Instagram Growth Academy: Expert Guide",
-    "slug": "profitable-strategies-instagram-growth-academy",
-    "description": "profitable-strategies instagram growth academy guide, profitable-strategies instagram growth academy tutorial, profitable-strategies instagram growth academy co",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "profitable-strategies instagram growth academy",
-      "profitable-strategies instagram growth academy guide",
-      "profitable-strategies instagram growth academy 2025",
-      "profitable-strategies instagram growth academy course",
-      "profitable-strategies instagram growth academy training"
-    ]
-  },
-  {
-    "id": 288,
-    "title": "Profitable-strategies N8n Automation Hub: Expert Guide 2025",
-    "slug": "profitable-strategies-n8n-automation-hub",
-    "description": "profitable-strategies n8n automation hub guide, profitable-strategies n8n automation hub tutorial, profitable-strategies n8n automation hub course - Expert trai",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "profitable-strategies n8n automation hub",
-      "profitable-strategies n8n automation hub guide",
-      "profitable-strategies n8n automation hub 2025",
-      "profitable-strategies n8n automation hub course",
-      "profitable-strategies n8n automation hub training"
-    ]
-  },
-  {
-    "id": 290,
-    "title": "Proven-methods Ai Automation Masterclass: Expert Guide 2025",
-    "slug": "proven-methods-ai-automation-masterclass",
-    "description": "proven-methods ai automation masterclass guide, proven-methods ai automation masterclass tutorial, proven-methods ai automation masterclass course - Expert trai",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "proven-methods ai automation masterclass",
-      "proven-methods ai automation masterclass guide",
-      "proven-methods ai automation masterclass 2025",
-      "proven-methods ai automation masterclass course",
-      "proven-methods ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 291,
-    "title": "Proven-methods Ai Influencers Academy: Expert Guide 2025",
-    "slug": "proven-methods-ai-influencers-academy",
-    "description": "proven-methods ai influencers academy guide, proven-methods ai influencers academy tutorial, proven-methods ai influencers academy course - Expert training from",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "proven-methods ai influencers academy",
-      "proven-methods ai influencers academy guide",
-      "proven-methods ai influencers academy 2025",
-      "proven-methods ai influencers academy course",
-      "proven-methods ai influencers academy training"
-    ]
-  },
-  {
-    "id": 292,
-    "title": "Proven-methods Comfyui Pro Training: Expert Guide 2025",
-    "slug": "proven-methods-comfyui-pro-training",
-    "description": "proven-methods comfyui pro training guide, proven-methods comfyui pro training tutorial, proven-methods comfyui pro training course - Expert training from the c",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "proven-methods comfyui pro training",
-      "proven-methods comfyui pro training guide",
-      "proven-methods comfyui pro training 2025",
-      "proven-methods comfyui pro training course",
-      "proven-methods comfyui pro training training"
-    ]
-  },
-  {
-    "id": 293,
-    "title": "Proven-methods Instagram Growth Academy: Expert Guide 2025",
-    "slug": "proven-methods-instagram-growth-academy",
-    "description": "proven-methods instagram growth academy guide, proven-methods instagram growth academy tutorial, proven-methods instagram growth academy course - Expert trainin",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "proven-methods instagram growth academy",
-      "proven-methods instagram growth academy guide",
-      "proven-methods instagram growth academy 2025",
-      "proven-methods instagram growth academy course",
-      "proven-methods instagram growth academy training"
-    ]
-  },
-  {
-    "id": 294,
-    "title": "Proven-methods N8n Automation Hub: Expert Guide 2025",
-    "slug": "proven-methods-n8n-automation-hub",
-    "description": "proven-methods n8n automation hub guide, proven-methods n8n automation hub tutorial, proven-methods n8n automation hub course - Expert training from the creator",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "proven-methods n8n automation hub",
-      "proven-methods n8n automation hub guide",
-      "proven-methods n8n automation hub 2025",
-      "proven-methods n8n automation hub course",
-      "proven-methods n8n automation hub training"
-    ]
-  },
-  {
-    "id": 295,
+    "id": 128,
     "title": "Quality Assurance Automation: Complete Guide & Expert",
     "slug": "quality-assurance-automation",
     "description": "Complete guide to quality assurance automation - proven strategies, tools, and techniques for 2025",
@@ -4731,7 +1892,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 296,
+    "id": 129,
     "title": "Qwen 3 Alibaba Open Source LLM",
     "slug": "qwen-3-alibaba-open-source-llm",
     "description": "Qwen 3 Alibaba Open Source LLM - comprehensive strategies, tools, and techniques for 2025",
@@ -4748,7 +1909,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 298,
+    "id": 131,
     "title": "Roocode V3 3 Cline Alternative",
     "slug": "roocode-v3-3-cline-alternative",
     "description": "Roocode V3 3 Cline Alternative - comprehensive strategies, tools, and techniques for 2025",
@@ -4765,7 +1926,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 299,
+    "id": 132,
     "title": "RSI Trading Strategy: Complete Guide to Relative Strength Index",
     "slug": "rsi-trading-strategy-complete-guide",
     "description": "Learn how to use RSI indicator for trading. Discover RSI divergence strategies, overbought/oversold signals, and advanced techniques for consistent profits.",
@@ -4782,7 +1943,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 301,
+    "id": 134,
     "title": "Sales Page Psychology: Complete Guide & Expert Strategies",
     "slug": "sales-page-psychology",
     "description": "Sales Page Psychology - comprehensive strategies, tools, and techniques for 2025",
@@ -4799,7 +1960,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 302,
+    "id": 135,
     "title": "Scale Content Creation: Complete Guide & Expert Strategies",
     "slug": "scale-content-creation",
     "description": "Scale Content Creation - comprehensive strategies, tools, and techniques for 2025",
@@ -4816,7 +1977,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 304,
+    "id": 137,
     "title": "Sell Digital Products on Etsy: Complete Success Guide",
     "slug": "sell-digital-products-on-etsy-complete-success-guide",
     "description": "sell digital products etsy, etsy digital products, etsy passive income - Expert guide from the creators of Digital Products Mastery with 127K+ students...",
@@ -4833,7 +1994,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 306,
+    "id": 139,
     "title": "Social Media Automation: Complete Guide & Expert Strategies",
     "slug": "social-media-automation",
     "description": "Complete guide to social media automation - proven strategies, tools, and techniques for 2025",
@@ -4850,7 +2011,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 307,
+    "id": 140,
     "title": "Social Media Calendar: Complete Guide & Expert Strategies",
     "slug": "social-media-calendar",
     "description": "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2025",
@@ -4867,177 +2028,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 308,
-    "title": "Step-by-step-guide Ai Automation Masterclass: Expert Guide",
-    "slug": "step-by-step-guide-ai-automation-masterclass",
-    "description": "step-by-step-guide ai automation masterclass guide, step-by-step-guide ai automation masterclass tutorial, step-by-step-guide ai automation masterclass course -",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "step-by-step-guide ai automation masterclass",
-      "step-by-step-guide ai automation masterclass guide",
-      "step-by-step-guide ai automation masterclass 2025",
-      "step-by-step-guide ai automation masterclass course",
-      "step-by-step-guide ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 309,
-    "title": "Step-by-step-guide Ai Influencers Academy: Expert Guide 2025",
-    "slug": "step-by-step-guide-ai-influencers-academy",
-    "description": "step-by-step-guide ai influencers academy guide, step-by-step-guide ai influencers academy tutorial, step-by-step-guide ai influencers academy course - Expert t",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "step-by-step-guide ai influencers academy",
-      "step-by-step-guide ai influencers academy guide",
-      "step-by-step-guide ai influencers academy 2025",
-      "step-by-step-guide ai influencers academy course",
-      "step-by-step-guide ai influencers academy training"
-    ]
-  },
-  {
-    "id": 310,
-    "title": "Step-by-step-guide Comfyui Pro Training: Expert Guide 2025",
-    "slug": "step-by-step-guide-comfyui-pro-training",
-    "description": "step-by-step-guide comfyui pro training guide, step-by-step-guide comfyui pro training tutorial, step-by-step-guide comfyui pro training course - Expert trainin",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "step-by-step-guide comfyui pro training",
-      "step-by-step-guide comfyui pro training guide",
-      "step-by-step-guide comfyui pro training 2025",
-      "step-by-step-guide comfyui pro training course",
-      "step-by-step-guide comfyui pro training training"
-    ]
-  },
-  {
-    "id": 311,
-    "title": "Step-by-step-guide Instagram Growth Academy: Expert Guide",
-    "slug": "step-by-step-guide-instagram-growth-academy",
-    "description": "step-by-step-guide instagram growth academy guide, step-by-step-guide instagram growth academy tutorial, step-by-step-guide instagram growth academy course - Ex",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "step-by-step-guide instagram growth academy",
-      "step-by-step-guide instagram growth academy guide",
-      "step-by-step-guide instagram growth academy 2025",
-      "step-by-step-guide instagram growth academy course",
-      "step-by-step-guide instagram growth academy training"
-    ]
-  },
-  {
-    "id": 312,
-    "title": "Step-by-step-guide N8n Automation Hub: Expert Guide 2025",
-    "slug": "step-by-step-guide-n8n-automation-hub",
-    "description": "step-by-step-guide n8n automation hub guide, step-by-step-guide n8n automation hub tutorial, step-by-step-guide n8n automation hub course - Expert training from",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "step-by-step-guide n8n automation hub",
-      "step-by-step-guide n8n automation hub guide",
-      "step-by-step-guide n8n automation hub 2025",
-      "step-by-step-guide n8n automation hub course",
-      "step-by-step-guide n8n automation hub training"
-    ]
-  },
-  {
-    "id": 313,
-    "title": "Success-formula Ai Automation Masterclass: Expert Guide 2025",
-    "slug": "success-formula-ai-automation-masterclass",
-    "description": "success-formula ai automation masterclass guide, success-formula ai automation masterclass tutorial, success-formula ai automation masterclass course - Expert t",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "success-formula ai automation masterclass",
-      "success-formula ai automation masterclass guide",
-      "success-formula ai automation masterclass 2025",
-      "success-formula ai automation masterclass course",
-      "success-formula ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 314,
-    "title": "Success-formula Ai Influencers Academy: Expert Guide 2025",
-    "slug": "success-formula-ai-influencers-academy",
-    "description": "success-formula ai influencers academy guide, success-formula ai influencers academy tutorial, success-formula ai influencers academy course - Expert training f",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "success-formula ai influencers academy",
-      "success-formula ai influencers academy guide",
-      "success-formula ai influencers academy 2025",
-      "success-formula ai influencers academy course",
-      "success-formula ai influencers academy training"
-    ]
-  },
-  {
-    "id": 315,
-    "title": "Success-formula Comfyui Pro Training: Expert Guide 2025",
-    "slug": "success-formula-comfyui-pro-training",
-    "description": "success-formula comfyui pro training guide, success-formula comfyui pro training tutorial, success-formula comfyui pro training course - Expert training from th",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "success-formula comfyui pro training",
-      "success-formula comfyui pro training guide",
-      "success-formula comfyui pro training 2025",
-      "success-formula comfyui pro training course",
-      "success-formula comfyui pro training training"
-    ]
-  },
-  {
-    "id": 316,
-    "title": "Success-formula Instagram Growth Academy: Expert Guide 2025",
-    "slug": "success-formula-instagram-growth-academy",
-    "description": "success-formula instagram growth academy guide, success-formula instagram growth academy tutorial, success-formula instagram growth academy course - Expert trai",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "success-formula instagram growth academy",
-      "success-formula instagram growth academy guide",
-      "success-formula instagram growth academy 2025",
-      "success-formula instagram growth academy course",
-      "success-formula instagram growth academy training"
-    ]
-  },
-  {
-    "id": 317,
-    "title": "Success-formula N8n Automation Hub: Expert Guide 2025",
-    "slug": "success-formula-n8n-automation-hub",
-    "description": "success-formula n8n automation hub guide, success-formula n8n automation hub tutorial, success-formula n8n automation hub course - Expert training from the crea",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "success-formula n8n automation hub",
-      "success-formula n8n automation hub guide",
-      "success-formula n8n automation hub 2025",
-      "success-formula n8n automation hub course",
-      "success-formula n8n automation hub training"
-    ]
-  },
-  {
-    "id": 319,
+    "id": 142,
     "title": "TikTok Growth Hacks: Viral Content Strategies for 2025",
     "slug": "tiktok-growth-hacks",
     "description": "TikTok Growth Hacks - comprehensive strategies, tools, and techniques for 2025",
@@ -5054,7 +2045,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 320,
+    "id": 143,
     "title": "Topstep vs MyFundedTrader: Complete 2025 Comparison",
     "slug": "topstep-vs-myfundedtrader-comparison",
     "description": "Detailed comparison of Topstep and MyFundedTrader prop firms. Discover which funded trading program offers better profit splits, evaluation rules, and trader support.",
@@ -5071,7 +2062,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 321,
+    "id": 144,
     "title": "Trading Psychology: Master Your Emotions for Consistent Profits",
     "slug": "trading-psychology-master-your-emotions",
     "description": "Master trading psychology to overcome fear, greed, and revenge trading. Learn proven mental strategies used by professional traders to stay disciplined.",
@@ -5088,177 +2079,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 322,
-    "title": "Transformation-course Ai Automation Masterclass: Expert",
-    "slug": "transformation-course-ai-automation-masterclass",
-    "description": "transformation-course ai automation masterclass guide, transformation-course ai automation masterclass tutorial, transformation-course ai automation masterclass",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "transformation-course ai automation masterclass",
-      "transformation-course ai automation masterclass guide",
-      "transformation-course ai automation masterclass 2025",
-      "transformation-course ai automation masterclass course",
-      "transformation-course ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 323,
-    "title": "Transformation-course Ai Influencers Academy: Expert Guide",
-    "slug": "transformation-course-ai-influencers-academy",
-    "description": "transformation-course ai influencers academy guide, transformation-course ai influencers academy tutorial, transformation-course ai influencers academy course -",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "transformation-course ai influencers academy",
-      "transformation-course ai influencers academy guide",
-      "transformation-course ai influencers academy 2025",
-      "transformation-course ai influencers academy course",
-      "transformation-course ai influencers academy training"
-    ]
-  },
-  {
-    "id": 324,
-    "title": "Transformation-course Comfyui Pro Training: Expert Guide",
-    "slug": "transformation-course-comfyui-pro-training",
-    "description": "transformation-course comfyui pro training guide, transformation-course comfyui pro training tutorial, transformation-course comfyui pro training course - Exper",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "transformation-course comfyui pro training",
-      "transformation-course comfyui pro training guide",
-      "transformation-course comfyui pro training 2025",
-      "transformation-course comfyui pro training course",
-      "transformation-course comfyui pro training training"
-    ]
-  },
-  {
-    "id": 325,
-    "title": "Transformation-course Instagram Growth Academy: Expert Guide",
-    "slug": "transformation-course-instagram-growth-academy",
-    "description": "transformation-course instagram growth academy guide, transformation-course instagram growth academy tutorial, transformation-course instagram growth academy co",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "transformation-course instagram growth academy",
-      "transformation-course instagram growth academy guide",
-      "transformation-course instagram growth academy 2025",
-      "transformation-course instagram growth academy course",
-      "transformation-course instagram growth academy training"
-    ]
-  },
-  {
-    "id": 326,
-    "title": "Transformation-course N8n Automation Hub: Expert Guide 2025",
-    "slug": "transformation-course-n8n-automation-hub",
-    "description": "transformation-course n8n automation hub guide, transformation-course n8n automation hub tutorial, transformation-course n8n automation hub course - Expert trai",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "transformation-course n8n automation hub",
-      "transformation-course n8n automation hub guide",
-      "transformation-course n8n automation hub 2025",
-      "transformation-course n8n automation hub course",
-      "transformation-course n8n automation hub training"
-    ]
-  },
-  {
-    "id": 327,
-    "title": "Ultimate-guide Ai Automation Masterclass: Expert Guide 2025",
-    "slug": "ultimate-guide-ai-automation-masterclass",
-    "description": "ultimate-guide ai automation masterclass guide, ultimate-guide ai automation masterclass tutorial, ultimate-guide ai automation masterclass course - Expert trai",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ultimate-guide ai automation masterclass",
-      "ultimate-guide ai automation masterclass guide",
-      "ultimate-guide ai automation masterclass 2025",
-      "ultimate-guide ai automation masterclass course",
-      "ultimate-guide ai automation masterclass training"
-    ]
-  },
-  {
-    "id": 328,
-    "title": "Ultimate-guide Ai Influencers Academy: Expert Guide 2025",
-    "slug": "ultimate-guide-ai-influencers-academy",
-    "description": "ultimate-guide ai influencers academy guide, ultimate-guide ai influencers academy tutorial, ultimate-guide ai influencers academy course - Expert training from",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ultimate-guide ai influencers academy",
-      "ultimate-guide ai influencers academy guide",
-      "ultimate-guide ai influencers academy 2025",
-      "ultimate-guide ai influencers academy course",
-      "ultimate-guide ai influencers academy training"
-    ]
-  },
-  {
-    "id": 329,
-    "title": "Ultimate-guide Comfyui Pro Training: Expert Guide 2025",
-    "slug": "ultimate-guide-comfyui-pro-training",
-    "description": "ultimate-guide comfyui pro training guide, ultimate-guide comfyui pro training tutorial, ultimate-guide comfyui pro training course - Expert training from the c",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ultimate-guide comfyui pro training",
-      "ultimate-guide comfyui pro training guide",
-      "ultimate-guide comfyui pro training 2025",
-      "ultimate-guide comfyui pro training course",
-      "ultimate-guide comfyui pro training training"
-    ]
-  },
-  {
-    "id": 330,
-    "title": "Ultimate-guide Instagram Growth Academy: Expert Guide 2025",
-    "slug": "ultimate-guide-instagram-growth-academy",
-    "description": "ultimate-guide instagram growth academy guide, ultimate-guide instagram growth academy tutorial, ultimate-guide instagram growth academy course - Expert trainin",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ultimate-guide instagram growth academy",
-      "ultimate-guide instagram growth academy guide",
-      "ultimate-guide instagram growth academy 2025",
-      "ultimate-guide instagram growth academy course",
-      "ultimate-guide instagram growth academy training"
-    ]
-  },
-  {
-    "id": 331,
-    "title": "Ultimate-guide N8n Automation Hub: Expert Guide 2025",
-    "slug": "ultimate-guide-n8n-automation-hub",
-    "description": "ultimate-guide n8n automation hub guide, ultimate-guide n8n automation hub tutorial, ultimate-guide n8n automation hub course - Expert training from the creator",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "ultimate-guide n8n automation hub",
-      "ultimate-guide n8n automation hub guide",
-      "ultimate-guide n8n automation hub 2025",
-      "ultimate-guide n8n automation hub course",
-      "ultimate-guide n8n automation hub training"
-    ]
-  },
-  {
-    "id": 332,
+    "id": 145,
     "title": "Vectorize All In One Rag Platform",
     "slug": "vectorize-all-in-one-rag-platform",
     "description": "Vectorize All In One Rag Platform - comprehensive strategies, tools, and techniques for 2025",
@@ -5275,7 +2096,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 333,
+    "id": 146,
     "title": "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
     "slug": "viral-carousel-guide",
     "description": "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
@@ -5292,126 +2113,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 334,
-    "title": "Viral Instagram Content Strategy: Expert Guide 2025",
-    "slug": "viral-instagram-content-strategy",
-    "description": "viral instagram content strategy guide, viral instagram content strategy tutorial, viral instagram content strategy course - Expert training from the creators o",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "viral instagram content strategy",
-      "viral instagram content strategy guide",
-      "viral instagram content strategy 2025",
-      "viral instagram content strategy course",
-      "viral instagram content strategy training"
-    ]
-  },
-  {
-    "id": 335,
-    "title": "Virtual Brand Ambassador: Expert Guide 2025",
-    "slug": "virtual-brand-ambassador",
-    "description": "virtual brand ambassador guide, virtual brand ambassador tutorial, virtual brand ambassador course - Expert training from the creators of AI Automation Mastery ",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual brand ambassador",
-      "virtual brand ambassador guide",
-      "virtual brand ambassador 2025",
-      "virtual brand ambassador course",
-      "virtual brand ambassador training"
-    ]
-  },
-  {
-    "id": 336,
-    "title": "Virtual Content Creation: Expert Guide 2025",
-    "slug": "virtual-content-creation",
-    "description": "virtual content creation guide, virtual content creation tutorial, virtual content creation course - Expert training from the creators of AI Automation Mastery ",
-    "category": "AI & Automation",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual content creation",
-      "virtual content creation guide",
-      "virtual content creation 2025",
-      "virtual content creation course",
-      "virtual content creation training"
-    ]
-  },
-  {
-    "id": 337,
-    "title": "Virtual Influencer Automation: Expert Guide 2025",
-    "slug": "virtual-influencer-automation",
-    "description": "virtual influencer automation guide, virtual influencer automation tutorial, virtual influencer automation course - Expert training from the creators of AI Infl",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual influencer automation",
-      "virtual influencer automation guide",
-      "virtual influencer automation 2025",
-      "virtual influencer automation course",
-      "virtual influencer automation training"
-    ]
-  },
-  {
-    "id": 338,
-    "title": "Virtual Influencer Consulting: Expert Guide 2025",
-    "slug": "virtual-influencer-consulting",
-    "description": "virtual influencer consulting guide, virtual influencer consulting tutorial, virtual influencer consulting course - Expert training from the creators of AI Infl",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual influencer consulting",
-      "virtual influencer consulting guide",
-      "virtual influencer consulting 2025",
-      "virtual influencer consulting course",
-      "virtual influencer consulting training"
-    ]
-  },
-  {
-    "id": 339,
-    "title": "Virtual Influencer Creation: Expert Guide 2025",
-    "slug": "virtual-influencer-creation",
-    "description": "virtual influencer creation guide, virtual influencer creation tutorial, virtual influencer creation course - Expert training from the creators of AI Influencer",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual influencer creation",
-      "virtual influencer creation guide",
-      "virtual influencer creation 2025",
-      "virtual influencer creation course",
-      "virtual influencer creation training"
-    ]
-  },
-  {
-    "id": 340,
-    "title": "Virtual Influencer Engagement: Expert Guide 2025",
-    "slug": "virtual-influencer-engagement",
-    "description": "virtual influencer engagement guide, virtual influencer engagement tutorial, virtual influencer engagement course - Expert training from the creators of AI Infl",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual influencer engagement",
-      "virtual influencer engagement guide",
-      "virtual influencer engagement 2025",
-      "virtual influencer engagement course",
-      "virtual influencer engagement training"
-    ]
-  },
-  {
-    "id": 341,
+    "id": 147,
     "title": "Virtual Influencer Marketing Strategy: Dominate Social Media",
     "slug": "virtual-influencer-marketing-strategy-dominate-social-media",
     "description": "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy with 127K+...",
@@ -5428,75 +2130,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 342,
-    "title": "Virtual Influencer Platforms: Expert Guide 2025",
-    "slug": "virtual-influencer-platforms",
-    "description": "virtual influencer platforms guide, virtual influencer platforms tutorial, virtual influencer platforms course - Expert training from the creators of AI Influen",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual influencer platforms",
-      "virtual influencer platforms guide",
-      "virtual influencer platforms 2025",
-      "virtual influencer platforms course",
-      "virtual influencer platforms training"
-    ]
-  },
-  {
-    "id": 343,
-    "title": "Virtual Influencer Scaling: Expert Guide 2025",
-    "slug": "virtual-influencer-scaling",
-    "description": "virtual influencer scaling guide, virtual influencer scaling tutorial, virtual influencer scaling course - Expert training from the creators of AI Influencers A",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual influencer scaling",
-      "virtual influencer scaling guide",
-      "virtual influencer scaling 2025",
-      "virtual influencer scaling course",
-      "virtual influencer scaling training"
-    ]
-  },
-  {
-    "id": 344,
-    "title": "Virtual Influencer Strategy: Expert Guide 2025",
-    "slug": "virtual-influencer-strategy",
-    "description": "virtual influencer strategy guide, virtual influencer strategy tutorial, virtual influencer strategy course - Expert training from the creators of AI Influencer",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual influencer strategy",
-      "virtual influencer strategy guide",
-      "virtual influencer strategy 2025",
-      "virtual influencer strategy course",
-      "virtual influencer strategy training"
-    ]
-  },
-  {
-    "id": 345,
-    "title": "Virtual Influencer Trends: Expert Guide 2025",
-    "slug": "virtual-influencer-trends",
-    "description": "virtual influencer trends guide, virtual influencer trends tutorial, virtual influencer trends course - Expert training from the creators of AI Influencers Acad",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 10,
-    "featured": false,
-    "tags": [
-      "virtual influencer trends",
-      "virtual influencer trends guide",
-      "virtual influencer trends 2025",
-      "virtual influencer trends course",
-      "virtual influencer trends training"
-    ]
-  },
-  {
-    "id": 347,
+    "id": 149,
     "title": "Web Scraping Automation: Complete Guide & Expert Strategies",
     "slug": "web-scraping-automation",
     "description": "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2025",
@@ -5513,7 +2147,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 348,
+    "id": 150,
     "title": "Whop Clipping: Complete Creator Earnings Guide 2025",
     "slug": "whop-clipping",
     "description": "Whop Clipping - comprehensive strategies, tools, and techniques for 2025",
@@ -5530,7 +2164,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 349,
+    "id": 151,
     "title": "Why N8N Is Different: Complete Guide & Expert Strategies",
     "slug": "why-n8n-is-different",
     "description": "Why N8N Is Different - comprehensive strategies, tools, and techniques for 2025",
@@ -5547,7 +2181,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 350,
+    "id": 152,
     "title": "Windsurf AI: Revolutionary Coding Assistant",
     "slug": "windsurf-ai-coding",
     "description": "Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools",
@@ -5564,7 +2198,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 351,
+    "id": 153,
     "title": "Workflow Automation Guide 2025",
     "slug": "workflow-automation-guide",
     "description": "Complete guide to workflow automation guide - proven strategies, tools, and techniques for 2025",
@@ -5581,7 +2215,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 352,
+    "id": 154,
     "title": "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
     "slug": "youtube-shorts-strategy",
     "description": "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2025",
@@ -5609,7 +2243,7 @@ export const categories: string[] = [
   "Trading & Finance"
 ];
 
-// Tags (1460)
+// Tags (475)
 export const tags: string[] = [
   "10k followers",
   "2025",
@@ -5618,162 +2252,30 @@ export const tags: string[] = [
   "500k followers",
   "AI tools",
   "advanced comfyui",
-  "advanced-strategies ai automation masterclass",
-  "advanced-strategies ai automation masterclass 2025",
-  "advanced-strategies ai automation masterclass course",
-  "advanced-strategies ai automation masterclass guide",
-  "advanced-strategies ai automation masterclass training",
-  "advanced-strategies ai influencers academy",
-  "advanced-strategies ai influencers academy 2025",
-  "advanced-strategies ai influencers academy course",
-  "advanced-strategies ai influencers academy guide",
-  "advanced-strategies ai influencers academy training",
-  "advanced-strategies comfyui pro training",
-  "advanced-strategies comfyui pro training 2025",
-  "advanced-strategies comfyui pro training course",
-  "advanced-strategies comfyui pro training guide",
-  "advanced-strategies comfyui pro training training",
-  "advanced-strategies instagram growth academy",
-  "advanced-strategies instagram growth academy 2025",
-  "advanced-strategies instagram growth academy course",
-  "advanced-strategies instagram growth academy guide",
-  "advanced-strategies instagram growth academy training",
-  "advanced-strategies n8n automation hub",
-  "advanced-strategies n8n automation hub 2025",
-  "advanced-strategies n8n automation hub course",
-  "advanced-strategies n8n automation hub guide",
-  "advanced-strategies n8n automation hub training",
   "agent",
   "agentic",
-  "ai",
-  "ai agent development course",
-  "ai agent development course 2025",
-  "ai agent development course course",
-  "ai agent development course guide",
-  "ai agent development course training",
   "ai art business",
   "ai art tools",
   "ai automation",
-  "ai automation ROI calculator",
-  "ai automation ROI calculator 2025",
-  "ai automation ROI calculator course",
-  "ai automation ROI calculator guide",
-  "ai automation ROI calculator training",
-  "ai automation case studies",
-  "ai automation case studies 2025",
-  "ai automation case studies course",
-  "ai automation case studies guide",
-  "ai automation case studies training",
-  "ai automation certification",
-  "ai automation certification 2025",
-  "ai automation certification course",
-  "ai automation certification guide",
-  "ai automation certification training",
-  "ai automation for entrepreneurs",
-  "ai automation for entrepreneurs 2025",
-  "ai automation for entrepreneurs course",
-  "ai automation for entrepreneurs guide",
-  "ai automation for entrepreneurs training",
-  "ai automation guide",
-  "ai automation tools comparison",
-  "ai automation tools comparison 2025",
-  "ai automation tools comparison course",
-  "ai automation tools comparison guide",
-  "ai automation tools comparison training",
-  "ai business transformation",
-  "ai business transformation 2025",
-  "ai business transformation course",
-  "ai business transformation guide",
-  "ai business transformation training",
-  "ai character development",
-  "ai character development 2025",
-  "ai character development course",
-  "ai character development guide",
-  "ai character development training",
   "ai coding",
   "ai coding assistant",
   "ai coding tools",
-  "ai consulting business model",
-  "ai consulting business model 2025",
-  "ai consulting business model course",
-  "ai consulting business model guide",
-  "ai consulting business model training",
   "ai content creation",
-  "ai content creation tools",
-  "ai content creation tools 2025",
-  "ai content creation tools course",
-  "ai content creation tools guide",
-  "ai content creation tools training",
   "ai content tools",
   "ai image generation",
   "ai image tools comparison",
   "ai images for influencers",
-  "ai influencer analytics",
-  "ai influencer analytics 2025",
-  "ai influencer analytics course",
-  "ai influencer analytics guide",
-  "ai influencer analytics training",
-  "ai influencer brand partnerships",
-  "ai influencer brand partnerships 2025",
-  "ai influencer brand partnerships course",
-  "ai influencer brand partnerships guide",
-  "ai influencer brand partnerships training",
   "ai influencer business",
-  "ai influencer business model",
-  "ai influencer business model 2025",
-  "ai influencer business model course",
-  "ai influencer business model guide",
-  "ai influencer business model training",
-  "ai influencer case studies",
-  "ai influencer case studies 2025",
-  "ai influencer case studies course",
-  "ai influencer case studies guide",
-  "ai influencer case studies training",
   "ai influencer income",
-  "ai influencer management",
-  "ai influencer management 2025",
-  "ai influencer management course",
-  "ai influencer management guide",
-  "ai influencer management training",
-  "ai influencer marketing",
-  "ai influencer marketing 2025",
-  "ai influencer marketing course",
-  "ai influencer marketing guide",
-  "ai influencer marketing training",
-  "ai influencer monetization",
-  "ai influencer monetization 2025",
-  "ai influencer monetization course",
-  "ai influencer monetization guide",
-  "ai influencer monetization training",
-  "ai influencer revenue streams",
-  "ai influencer revenue streams 2025",
-  "ai influencer revenue streams course",
-  "ai influencer revenue streams guide",
-  "ai influencer revenue streams training",
   "ai influencers",
   "ai influencers academy",
   "ai instagram influencer",
   "ai marketing strategy",
-  "ai personality development",
-  "ai personality development 2025",
-  "ai personality development course",
-  "ai personality development guide",
-  "ai personality development training",
   "ai photography",
-  "ai productivity systems",
-  "ai productivity systems 2025",
-  "ai productivity systems course",
-  "ai productivity systems guide",
-  "ai productivity systems training",
   "ai programming",
   "ai social media",
   "ai social media content",
   "ai workflow automation",
-  "ai workflow templates",
-  "ai workflow templates 2025",
-  "ai workflow templates course",
-  "ai workflow templates guide",
-  "ai workflow templates training",
   "alibaba",
   "all",
   "alpha",
@@ -5792,36 +2294,6 @@ export const tags: string[] = [
   "automated programming",
   "automation",
   "automation 2025",
-  "automation agency pricing",
-  "automation agency pricing 2025",
-  "automation agency pricing course",
-  "automation agency pricing guide",
-  "automation agency pricing training",
-  "automation agency setup",
-  "automation agency setup 2025",
-  "automation agency setup course",
-  "automation agency setup guide",
-  "automation agency setup training",
-  "automation consulting business",
-  "automation consulting business 2025",
-  "automation consulting business course",
-  "automation consulting business guide",
-  "automation consulting business training",
-  "automation consulting services",
-  "automation consulting services 2025",
-  "automation consulting services course",
-  "automation consulting services guide",
-  "automation consulting services training",
-  "automation for creators",
-  "automation for creators 2025",
-  "automation for creators course",
-  "automation for creators guide",
-  "automation for creators training",
-  "automation project management",
-  "automation project management 2025",
-  "automation project management course",
-  "automation project management guide",
-  "automation project management training",
   "automation systems",
   "automation tools",
   "automation tools comparison",
@@ -5839,31 +2311,10 @@ export const tags: string[] = [
   "building",
   "business",
   "business 2025",
-  "business ai implementation",
-  "business ai implementation 2025",
-  "business ai implementation course",
-  "business ai implementation guide",
-  "business ai implementation training",
-  "business automation blueprint",
-  "business automation blueprint 2025",
-  "business automation blueprint course",
-  "business automation blueprint guide",
-  "business automation blueprint training",
   "business automation course",
   "business automation tools",
-  "business automation with claude",
-  "business automation with claude 2025",
-  "business automation with claude course",
-  "business automation with claude guide",
-  "business automation with claude training",
   "business efficiency",
   "business process automation",
-  "business process automation guide",
-  "business process automation guide 2025",
-  "business process automation guide course",
-  "business process automation guide guide",
-  "business process automation guide training",
-  "business workflows",
   "calendar",
   "carousel",
   "channel",
@@ -5871,18 +2322,8 @@ export const tags: string[] = [
   "chatgpt 2025",
   "chatgpt automation tips",
   "chatgpt automation workflows",
-  "chatgpt workflow automation",
-  "chatgpt workflow automation 2025",
-  "chatgpt workflow automation course",
-  "chatgpt workflow automation guide",
-  "chatgpt workflow automation training",
   "claude",
   "claude 2025",
-  "claude ai business integration",
-  "claude ai business integration 2025",
-  "claude ai business integration course",
-  "claude ai business integration guide",
-  "claude ai business integration training",
   "claude gpt comparison",
   "cline",
   "clipping",
@@ -5897,196 +2338,25 @@ export const tags: string[] = [
   "coding productivity",
   "comfyui",
   "comfyui 2025",
-  "comfyui advanced techniques",
-  "comfyui advanced techniques 2025",
-  "comfyui advanced techniques course",
-  "comfyui advanced techniques guide",
-  "comfyui advanced techniques training",
-  "comfyui api business integration",
-  "comfyui api business integration 2025",
-  "comfyui api business integration course",
-  "comfyui api business integration guide",
-  "comfyui api business integration training",
-  "comfyui api integration",
-  "comfyui api integration 2025",
-  "comfyui api integration course",
-  "comfyui api integration guide",
-  "comfyui api integration training",
-  "comfyui automation consulting",
-  "comfyui automation consulting 2025",
-  "comfyui automation consulting course",
-  "comfyui automation consulting guide",
-  "comfyui automation consulting training",
-  "comfyui automation systems",
-  "comfyui automation systems 2025",
-  "comfyui automation systems course",
-  "comfyui automation systems guide",
-  "comfyui automation systems training",
-  "comfyui batch processing",
-  "comfyui batch processing 2025",
-  "comfyui batch processing course",
-  "comfyui batch processing guide",
-  "comfyui batch processing training",
-  "comfyui business automation",
-  "comfyui business automation 2025",
-  "comfyui business automation course",
-  "comfyui business automation guide",
-  "comfyui business automation training",
-  "comfyui business case studies",
-  "comfyui business case studies 2025",
-  "comfyui business case studies course",
-  "comfyui business case studies guide",
-  "comfyui business case studies training",
-  "comfyui business models",
-  "comfyui business models 2025",
-  "comfyui business models course",
-  "comfyui business models guide",
-  "comfyui business models training",
-  "comfyui commercial licensing",
-  "comfyui commercial licensing 2025",
-  "comfyui commercial licensing course",
-  "comfyui commercial licensing guide",
-  "comfyui commercial licensing training",
   "comfyui comparison",
-  "comfyui controlnet guide",
-  "comfyui controlnet guide 2025",
-  "comfyui controlnet guide course",
-  "comfyui controlnet guide guide",
-  "comfyui controlnet guide training",
-  "comfyui custom nodes development",
-  "comfyui custom nodes development 2025",
-  "comfyui custom nodes development course",
-  "comfyui custom nodes development guide",
-  "comfyui custom nodes development training",
-  "comfyui custom workflows",
-  "comfyui custom workflows 2025",
-  "comfyui custom workflows course",
-  "comfyui custom workflows guide",
-  "comfyui custom workflows training",
-  "comfyui enterprise solutions",
-  "comfyui enterprise solutions 2025",
-  "comfyui enterprise solutions course",
-  "comfyui enterprise solutions guide",
-  "comfyui enterprise solutions training",
   "comfyui getting started",
   "comfyui guide",
-  "comfyui image upscaling",
-  "comfyui image upscaling 2025",
-  "comfyui image upscaling course",
-  "comfyui image upscaling guide",
-  "comfyui image upscaling training",
   "comfyui installation",
-  "comfyui lora training",
-  "comfyui lora training 2025",
-  "comfyui lora training course",
-  "comfyui lora training guide",
-  "comfyui lora training training",
   "comfyui mastery",
-  "comfyui model training",
-  "comfyui model training 2025",
-  "comfyui model training course",
-  "comfyui model training guide",
-  "comfyui model training training",
-  "comfyui professional workflows",
-  "comfyui professional workflows 2025",
-  "comfyui professional workflows course",
-  "comfyui professional workflows guide",
-  "comfyui professional workflows training",
-  "comfyui roi optimization",
-  "comfyui roi optimization 2025",
-  "comfyui roi optimization course",
-  "comfyui roi optimization guide",
-  "comfyui roi optimization training",
-  "comfyui scaling workflows",
-  "comfyui scaling workflows 2025",
-  "comfyui scaling workflows course",
-  "comfyui scaling workflows guide",
-  "comfyui scaling workflows training",
   "comfyui setup",
   "comfyui success story",
   "comfyui techniques",
   "comfyui tutorial",
   "comfyui vs stable diffusion",
   "comfyui workflow library",
-  "comfyui workflow optimization",
-  "comfyui workflow optimization 2025",
-  "comfyui workflow optimization course",
-  "comfyui workflow optimization guide",
-  "comfyui workflow optimization training",
   "comfyui workflows",
   "comparison",
-  "complete-course ai automation masterclass",
-  "complete-course ai automation masterclass 2025",
-  "complete-course ai automation masterclass course",
-  "complete-course ai automation masterclass guide",
-  "complete-course ai automation masterclass training",
-  "complete-course ai influencers academy",
-  "complete-course ai influencers academy 2025",
-  "complete-course ai influencers academy course",
-  "complete-course ai influencers academy guide",
-  "complete-course ai influencers academy training",
-  "complete-course comfyui pro training",
-  "complete-course comfyui pro training 2025",
-  "complete-course comfyui pro training course",
-  "complete-course comfyui pro training guide",
-  "complete-course comfyui pro training training",
-  "complete-course instagram growth academy",
-  "complete-course instagram growth academy 2025",
-  "complete-course instagram growth academy course",
-  "complete-course instagram growth academy guide",
-  "complete-course instagram growth academy training",
-  "complete-course n8n automation hub",
-  "complete-course n8n automation hub 2025",
-  "complete-course n8n automation hub course",
-  "complete-course n8n automation hub guide",
-  "complete-course n8n automation hub training",
   "composer agent",
-  "comprehensive-training ai automation masterclass",
-  "comprehensive-training ai automation masterclass 2025",
-  "comprehensive-training ai automation masterclass course",
-  "comprehensive-training ai automation masterclass guide",
-  "comprehensive-training ai automation masterclass training",
-  "comprehensive-training ai influencers academy",
-  "comprehensive-training ai influencers academy 2025",
-  "comprehensive-training ai influencers academy course",
-  "comprehensive-training ai influencers academy guide",
-  "comprehensive-training ai influencers academy training",
-  "comprehensive-training comfyui pro training",
-  "comprehensive-training comfyui pro training 2025",
-  "comprehensive-training comfyui pro training course",
-  "comprehensive-training comfyui pro training guide",
-  "comprehensive-training comfyui pro training training",
-  "comprehensive-training instagram growth academy",
-  "comprehensive-training instagram growth academy 2025",
-  "comprehensive-training instagram growth academy course",
-  "comprehensive-training instagram growth academy guide",
-  "comprehensive-training instagram growth academy training",
-  "comprehensive-training n8n automation hub",
-  "comprehensive-training n8n automation hub 2025",
-  "comprehensive-training n8n automation hub course",
-  "comprehensive-training n8n automation hub guide",
-  "comprehensive-training n8n automation hub training",
   "content",
   "content 2025",
-  "content creator business model",
-  "content creator business model 2025",
-  "content creator business model course",
-  "content creator business model guide",
-  "content creator business model training",
   "content income",
-  "content monetization systems",
-  "content monetization systems 2025",
-  "content monetization systems course",
-  "content monetization systems guide",
-  "content monetization systems training",
   "content opportunity",
-  "content scaling automation",
-  "content scaling automation 2025",
-  "content scaling automation course",
-  "content scaling automation guide",
-  "content scaling automation training",
   "content scaling framework",
-  "course",
   "course business",
   "course creation",
   "create",
@@ -6100,36 +2370,6 @@ export const tags: string[] = [
   "creating influencers",
   "creation",
   "creator",
-  "creator business automation",
-  "creator business automation 2025",
-  "creator business automation course",
-  "creator business automation guide",
-  "creator business automation training",
-  "creator business systems",
-  "creator business systems 2025",
-  "creator business systems course",
-  "creator business systems guide",
-  "creator business systems training",
-  "creator economy automation",
-  "creator economy automation 2025",
-  "creator economy automation course",
-  "creator economy automation guide",
-  "creator economy automation training",
-  "creator economy strategies",
-  "creator economy strategies 2025",
-  "creator economy strategies course",
-  "creator economy strategies guide",
-  "creator economy strategies training",
-  "creator entrepreneurship guide",
-  "creator entrepreneurship guide 2025",
-  "creator entrepreneurship guide course",
-  "creator entrepreneurship guide guide",
-  "creator entrepreneurship guide training",
-  "creator revenue streams",
-  "creator revenue streams 2025",
-  "creator revenue streams course",
-  "creator revenue streams guide",
-  "creator revenue streams training",
   "cursor ai",
   "dart",
   "database",
@@ -6146,80 +2386,20 @@ export const tags: string[] = [
   "devops 2025",
   "devops automation pipeline",
   "different",
-  "digital business optimization",
-  "digital business optimization 2025",
-  "digital business optimization course",
-  "digital business optimization guide",
-  "digital business optimization training",
   "digital downloads etsy",
-  "digital marketing automation",
-  "digital marketing automation 2025",
-  "digital marketing automation course",
-  "digital marketing automation guide",
-  "digital marketing automation training",
   "digital passive income streams",
-  "digital product empire building",
-  "digital product empire building 2025",
-  "digital product empire building course",
-  "digital product empire building guide",
-  "digital product empire building training",
   "digital product ideas",
   "digital product launch",
-  "digital product launch strategy",
-  "digital product launch strategy 2025",
-  "digital product launch strategy course",
-  "digital product launch strategy guide",
-  "digital product launch strategy training",
   "digital product market",
   "digital product marketing",
-  "digital product marketing 2025",
-  "digital product marketing course",
-  "digital product marketing guide",
-  "digital product marketing training",
   "digital product niches",
   "digital product pricing",
   "digital product revenue",
-  "digital product sales funnel",
-  "digital product sales funnel 2025",
-  "digital product sales funnel course",
-  "digital product sales funnel guide",
-  "digital product sales funnel training",
-  "digital product scaling",
-  "digital product scaling 2025",
-  "digital product scaling course",
-  "digital product scaling guide",
-  "digital product scaling training",
   "digital products business",
   "digital products mastery",
   "digital products passive income",
   "disruption",
   "diy",
-  "efficiency",
-  "elite-course ai automation masterclass",
-  "elite-course ai automation masterclass 2025",
-  "elite-course ai automation masterclass course",
-  "elite-course ai automation masterclass guide",
-  "elite-course ai automation masterclass training",
-  "elite-course ai influencers academy",
-  "elite-course ai influencers academy 2025",
-  "elite-course ai influencers academy course",
-  "elite-course ai influencers academy guide",
-  "elite-course ai influencers academy training",
-  "elite-course comfyui pro training",
-  "elite-course comfyui pro training 2025",
-  "elite-course comfyui pro training course",
-  "elite-course comfyui pro training guide",
-  "elite-course comfyui pro training training",
-  "elite-course instagram growth academy",
-  "elite-course instagram growth academy 2025",
-  "elite-course instagram growth academy course",
-  "elite-course instagram growth academy guide",
-  "elite-course instagram growth academy training",
-  "elite-course n8n automation hub",
-  "elite-course n8n automation hub 2025",
-  "elite-course n8n automation hub course",
-  "elite-course n8n automation hub guide",
-  "elite-course n8n automation hub training",
   "email",
   "email 2025",
   "email automation",
@@ -6240,31 +2420,6 @@ export const tags: string[] = [
   "etsy digital products",
   "etsy passive income",
   "evolve",
-  "expert-blueprint ai automation masterclass",
-  "expert-blueprint ai automation masterclass 2025",
-  "expert-blueprint ai automation masterclass course",
-  "expert-blueprint ai automation masterclass guide",
-  "expert-blueprint ai automation masterclass training",
-  "expert-blueprint ai influencers academy",
-  "expert-blueprint ai influencers academy 2025",
-  "expert-blueprint ai influencers academy course",
-  "expert-blueprint ai influencers academy guide",
-  "expert-blueprint ai influencers academy training",
-  "expert-blueprint comfyui pro training",
-  "expert-blueprint comfyui pro training 2025",
-  "expert-blueprint comfyui pro training course",
-  "expert-blueprint comfyui pro training guide",
-  "expert-blueprint comfyui pro training training",
-  "expert-blueprint instagram growth academy",
-  "expert-blueprint instagram growth academy 2025",
-  "expert-blueprint instagram growth academy course",
-  "expert-blueprint instagram growth academy guide",
-  "expert-blueprint instagram growth academy training",
-  "expert-blueprint n8n automation hub",
-  "expert-blueprint n8n automation hub 2025",
-  "expert-blueprint n8n automation hub course",
-  "expert-blueprint n8n automation hub guide",
-  "expert-blueprint n8n automation hub training",
   "faceless",
   "faceless 2025",
   "faceless content strategy",
@@ -6292,11 +2447,6 @@ export const tags: string[] = [
   "gpt",
   "gpt 2025",
   "gpt automation",
-  "gpt automation workflows",
-  "gpt automation workflows 2025",
-  "gpt automation workflows course",
-  "gpt automation workflows guide",
-  "gpt automation workflows training",
   "gpt4o",
   "gpt4o 2025",
   "gpt5",
@@ -6324,155 +2474,30 @@ export const tags: string[] = [
   "instagram 2025",
   "instagram algorithm",
   "instagram algorithm 2025",
-  "instagram algorithm hacks 2025",
-  "instagram algorithm hacks 2025 2025",
-  "instagram algorithm hacks 2025 course",
-  "instagram algorithm hacks 2025 guide",
-  "instagram algorithm hacks 2025 training",
-  "instagram analytics mastery",
-  "instagram analytics mastery 2025",
-  "instagram analytics mastery course",
-  "instagram analytics mastery guide",
-  "instagram analytics mastery training",
-  "instagram brand partnerships",
-  "instagram brand partnerships 2025",
-  "instagram brand partnerships course",
-  "instagram brand partnerships guide",
-  "instagram brand partnerships training",
-  "instagram business strategy",
-  "instagram business strategy 2025",
-  "instagram business strategy course",
-  "instagram business strategy guide",
-  "instagram business strategy training",
   "instagram content",
-  "instagram content calendar template",
-  "instagram content calendar template 2025",
-  "instagram content calendar template course",
-  "instagram content calendar template guide",
-  "instagram content calendar template training",
-  "instagram content creator guide",
-  "instagram content creator guide 2025",
-  "instagram content creator guide course",
-  "instagram content creator guide guide",
-  "instagram content creator guide training",
-  "instagram content optimization",
-  "instagram content optimization 2025",
-  "instagram content optimization course",
-  "instagram content optimization guide",
-  "instagram content optimization training",
   "instagram content strategy",
-  "instagram creator economy",
-  "instagram creator economy 2025",
-  "instagram creator economy course",
-  "instagram creator economy guide",
-  "instagram creator economy training",
-  "instagram creator tools",
-  "instagram creator tools 2025",
-  "instagram creator tools course",
-  "instagram creator tools guide",
-  "instagram creator tools training",
   "instagram engagement",
-  "instagram engagement pods",
-  "instagram engagement pods 2025",
-  "instagram engagement pods course",
-  "instagram engagement pods guide",
-  "instagram engagement pods training",
-  "instagram follower acquisition",
-  "instagram follower acquisition 2025",
-  "instagram follower acquisition course",
-  "instagram follower acquisition guide",
-  "instagram follower acquisition training",
   "instagram followers fast",
   "instagram growth",
   "instagram growth 2025",
-  "instagram growth automation",
-  "instagram growth automation 2025",
-  "instagram growth automation course",
-  "instagram growth automation guide",
-  "instagram growth automation training",
-  "instagram growth for business",
-  "instagram growth for business 2025",
-  "instagram growth for business course",
-  "instagram growth for business guide",
-  "instagram growth for business training",
   "instagram growth hacks",
-  "instagram hashtag research",
-  "instagram hashtag research 2025",
-  "instagram hashtag research course",
-  "instagram hashtag research guide",
-  "instagram hashtag research training",
   "instagram ignited",
   "instagram income",
   "instagram influence",
-  "instagram influence building",
-  "instagram influence building 2025",
-  "instagram influence building course",
-  "instagram influence building guide",
-  "instagram influence building training",
   "instagram influencer marketing",
   "instagram marketing",
   "instagram monetization",
-  "instagram monetization blueprint",
-  "instagram monetization blueprint 2025",
-  "instagram monetization blueprint course",
-  "instagram monetization blueprint guide",
-  "instagram monetization blueprint training",
   "instagram posts",
   "instagram reach",
   "instagram reels algorithm",
   "instagram reels guide",
-  "instagram reels viral formula",
-  "instagram reels viral formula 2025",
-  "instagram reels viral formula course",
-  "instagram reels viral formula guide",
-  "instagram reels viral formula training",
-  "instagram sponsored content",
-  "instagram sponsored content 2025",
-  "instagram sponsored content course",
-  "instagram sponsored content guide",
-  "instagram sponsored content training",
   "instagram stories",
-  "instagram story engagement",
-  "instagram story engagement 2025",
-  "instagram story engagement course",
-  "instagram story engagement guide",
-  "instagram story engagement training",
   "instagram story marketing",
   "instagram story strategy",
   "instagram strategy",
   "instagram viral content",
-  "instagram viral marketing",
-  "instagram viral marketing 2025",
-  "instagram viral marketing course",
-  "instagram viral marketing guide",
-  "instagram viral marketing training",
   "install comfyui",
   "integration",
-  "intensive-bootcamp ai automation masterclass",
-  "intensive-bootcamp ai automation masterclass 2025",
-  "intensive-bootcamp ai automation masterclass course",
-  "intensive-bootcamp ai automation masterclass guide",
-  "intensive-bootcamp ai automation masterclass training",
-  "intensive-bootcamp ai influencers academy",
-  "intensive-bootcamp ai influencers academy 2025",
-  "intensive-bootcamp ai influencers academy course",
-  "intensive-bootcamp ai influencers academy guide",
-  "intensive-bootcamp ai influencers academy training",
-  "intensive-bootcamp comfyui pro training",
-  "intensive-bootcamp comfyui pro training 2025",
-  "intensive-bootcamp comfyui pro training course",
-  "intensive-bootcamp comfyui pro training guide",
-  "intensive-bootcamp comfyui pro training training",
-  "intensive-bootcamp instagram growth academy",
-  "intensive-bootcamp instagram growth academy 2025",
-  "intensive-bootcamp instagram growth academy course",
-  "intensive-bootcamp instagram growth academy guide",
-  "intensive-bootcamp instagram growth academy training",
-  "intensive-bootcamp n8n automation hub",
-  "intensive-bootcamp n8n automation hub 2025",
-  "intensive-bootcamp n8n automation hub course",
-  "intensive-bootcamp n8n automation hub guide",
-  "intensive-bootcamp n8n automation hub training",
   "inventory",
   "inventory 2025",
   "inventory management automation",
@@ -6513,31 +2538,6 @@ export const tags: string[] = [
   "market",
   "marketing",
   "marketing automation",
-  "mastery-training ai automation masterclass",
-  "mastery-training ai automation masterclass 2025",
-  "mastery-training ai automation masterclass course",
-  "mastery-training ai automation masterclass guide",
-  "mastery-training ai automation masterclass training",
-  "mastery-training ai influencers academy",
-  "mastery-training ai influencers academy 2025",
-  "mastery-training ai influencers academy course",
-  "mastery-training ai influencers academy guide",
-  "mastery-training ai influencers academy training",
-  "mastery-training comfyui pro training",
-  "mastery-training comfyui pro training 2025",
-  "mastery-training comfyui pro training course",
-  "mastery-training comfyui pro training guide",
-  "mastery-training comfyui pro training training",
-  "mastery-training instagram growth academy",
-  "mastery-training instagram growth academy 2025",
-  "mastery-training instagram growth academy course",
-  "mastery-training instagram growth academy guide",
-  "mastery-training instagram growth academy training",
-  "mastery-training n8n automation hub",
-  "mastery-training n8n automation hub 2025",
-  "mastery-training n8n automation hub course",
-  "mastery-training n8n automation hub guide",
-  "mastery-training n8n automation hub training",
   "media",
   "mobile",
   "mobile 2025",
@@ -6554,138 +2554,23 @@ export const tags: string[] = [
   "multimodal",
   "myfundedtrader",
   "n8n",
-  "n8n advanced workflows",
-  "n8n advanced workflows 2025",
-  "n8n advanced workflows course",
-  "n8n advanced workflows guide",
-  "n8n advanced workflows training",
   "n8n ai automations",
   "n8n ai integration",
   "n8n api integration",
-  "n8n api integrations",
-  "n8n api integrations 2025",
-  "n8n api integrations course",
-  "n8n api integrations guide",
-  "n8n api integrations training",
-  "n8n automation agency",
-  "n8n automation agency 2025",
-  "n8n automation agency course",
-  "n8n automation agency guide",
-  "n8n automation agency training",
-  "n8n automation consulting",
-  "n8n automation consulting 2025",
-  "n8n automation consulting course",
-  "n8n automation consulting guide",
-  "n8n automation consulting training",
-  "n8n automation examples",
-  "n8n automation examples 2025",
-  "n8n automation examples course",
-  "n8n automation examples guide",
-  "n8n automation examples training",
   "n8n automation guide",
-  "n8n business intelligence",
-  "n8n business intelligence 2025",
-  "n8n business intelligence course",
-  "n8n business intelligence guide",
-  "n8n business intelligence training",
-  "n8n business workflows",
-  "n8n business workflows 2025",
-  "n8n business workflows course",
-  "n8n business workflows guide",
-  "n8n business workflows training",
   "n8n course",
-  "n8n crm workflows",
-  "n8n crm workflows 2025",
-  "n8n crm workflows course",
-  "n8n crm workflows guide",
-  "n8n crm workflows training",
-  "n8n custom nodes",
-  "n8n custom nodes 2025",
-  "n8n custom nodes course",
-  "n8n custom nodes guide",
-  "n8n custom nodes training",
   "n8n data automation",
-  "n8n data transformation",
-  "n8n data transformation 2025",
-  "n8n data transformation course",
-  "n8n data transformation guide",
-  "n8n data transformation training",
   "n8n database automation",
-  "n8n database connections",
-  "n8n database connections 2025",
-  "n8n database connections course",
-  "n8n database connections guide",
-  "n8n database connections training",
-  "n8n ecommerce automation",
-  "n8n ecommerce automation 2025",
-  "n8n ecommerce automation course",
-  "n8n ecommerce automation guide",
-  "n8n ecommerce automation training",
-  "n8n email automation",
-  "n8n email automation 2025",
-  "n8n email automation course",
-  "n8n email automation guide",
-  "n8n email automation training",
-  "n8n enterprise solutions",
-  "n8n enterprise solutions 2025",
-  "n8n enterprise solutions course",
-  "n8n enterprise solutions guide",
-  "n8n enterprise solutions training",
   "n8n for beginners",
   "n8n guide",
-  "n8n integration tutorials",
-  "n8n integration tutorials 2025",
-  "n8n integration tutorials course",
-  "n8n integration tutorials guide",
-  "n8n integration tutorials training",
-  "n8n scheduling workflows",
-  "n8n scheduling workflows 2025",
-  "n8n scheduling workflows course",
-  "n8n scheduling workflows guide",
-  "n8n scheduling workflows training",
-  "n8n social media automation",
-  "n8n social media automation 2025",
-  "n8n social media automation course",
-  "n8n social media automation guide",
-  "n8n social media automation training",
   "n8n tutorial",
   "n8n vs zapier",
-  "n8n vs zapier comparison",
-  "n8n vs zapier comparison 2025",
-  "n8n vs zapier comparison course",
-  "n8n vs zapier comparison guide",
-  "n8n vs zapier comparison training",
-  "n8n webhook automation",
-  "n8n webhook automation 2025",
-  "n8n webhook automation course",
-  "n8n webhook automation guide",
-  "n8n webhook automation training",
   "n8n webhooks",
-  "n8n workflow optimization",
-  "n8n workflow optimization 2025",
-  "n8n workflow optimization course",
-  "n8n workflow optimization guide",
-  "n8n workflow optimization training",
-  "n8n workflow templates",
-  "n8n workflow templates 2025",
-  "n8n workflow templates course",
-  "n8n workflow templates guide",
-  "n8n workflow templates training",
   "n8n workflows",
   "n8n zapier alternative",
   "one",
-  "online business automation",
-  "online business automation 2025",
-  "online business automation course",
-  "online business automation guide",
-  "online business automation training",
   "online course business",
   "online course creation",
-  "online course creation mastery",
-  "online course creation mastery 2025",
-  "online course creation mastery course",
-  "online course creation mastery guide",
-  "online course creation mastery training",
   "online passive income",
   "open",
   "opportunities",
@@ -6696,11 +2581,6 @@ export const tags: string[] = [
   "page",
   "passive income",
   "passive income 2025",
-  "passive income automation",
-  "passive income automation 2025",
-  "passive income automation course",
-  "passive income automation guide",
-  "passive income automation training",
   "passive income ideas",
   "personal",
   "personal 2025",
@@ -6719,59 +2599,8 @@ export const tags: string[] = [
   "product",
   "product 2025",
   "product launch strategy",
-  "productivity",
   "professional ai art",
-  "professional-certification ai automation masterclass",
-  "professional-certification ai automation masterclass 2025",
-  "professional-certification ai automation masterclass course",
-  "professional-certification ai automation masterclass guide",
-  "professional-certification ai automation masterclass training",
-  "professional-certification ai influencers academy",
-  "professional-certification ai influencers academy 2025",
-  "professional-certification ai influencers academy course",
-  "professional-certification ai influencers academy guide",
-  "professional-certification ai influencers academy training",
-  "professional-certification comfyui pro training",
-  "professional-certification comfyui pro training 2025",
-  "professional-certification comfyui pro training course",
-  "professional-certification comfyui pro training guide",
-  "professional-certification comfyui pro training training",
-  "professional-certification instagram growth academy",
-  "professional-certification instagram growth academy 2025",
-  "professional-certification instagram growth academy course",
-  "professional-certification instagram growth academy guide",
-  "professional-certification instagram growth academy training",
-  "professional-certification n8n automation hub",
-  "professional-certification n8n automation hub 2025",
-  "professional-certification n8n automation hub course",
-  "professional-certification n8n automation hub guide",
-  "professional-certification n8n automation hub training",
   "profitable digital products",
-  "profitable-strategies ai automation masterclass",
-  "profitable-strategies ai automation masterclass 2025",
-  "profitable-strategies ai automation masterclass course",
-  "profitable-strategies ai automation masterclass guide",
-  "profitable-strategies ai automation masterclass training",
-  "profitable-strategies ai influencers academy",
-  "profitable-strategies ai influencers academy 2025",
-  "profitable-strategies ai influencers academy course",
-  "profitable-strategies ai influencers academy guide",
-  "profitable-strategies ai influencers academy training",
-  "profitable-strategies comfyui pro training",
-  "profitable-strategies comfyui pro training 2025",
-  "profitable-strategies comfyui pro training course",
-  "profitable-strategies comfyui pro training guide",
-  "profitable-strategies comfyui pro training training",
-  "profitable-strategies instagram growth academy",
-  "profitable-strategies instagram growth academy 2025",
-  "profitable-strategies instagram growth academy course",
-  "profitable-strategies instagram growth academy guide",
-  "profitable-strategies instagram growth academy training",
-  "profitable-strategies n8n automation hub",
-  "profitable-strategies n8n automation hub 2025",
-  "profitable-strategies n8n automation hub course",
-  "profitable-strategies n8n automation hub guide",
-  "profitable-strategies n8n automation hub training",
   "programming assistant",
   "project",
   "prompt",
@@ -6779,31 +2608,6 @@ export const tags: string[] = [
   "prompt engineering guide",
   "prop firm",
   "prop firm comparison",
-  "proven-methods ai automation masterclass",
-  "proven-methods ai automation masterclass 2025",
-  "proven-methods ai automation masterclass course",
-  "proven-methods ai automation masterclass guide",
-  "proven-methods ai automation masterclass training",
-  "proven-methods ai influencers academy",
-  "proven-methods ai influencers academy 2025",
-  "proven-methods ai influencers academy course",
-  "proven-methods ai influencers academy guide",
-  "proven-methods ai influencers academy training",
-  "proven-methods comfyui pro training",
-  "proven-methods comfyui pro training 2025",
-  "proven-methods comfyui pro training course",
-  "proven-methods comfyui pro training guide",
-  "proven-methods comfyui pro training training",
-  "proven-methods instagram growth academy",
-  "proven-methods instagram growth academy 2025",
-  "proven-methods instagram growth academy course",
-  "proven-methods instagram growth academy guide",
-  "proven-methods instagram growth academy training",
-  "proven-methods n8n automation hub",
-  "proven-methods n8n automation hub 2025",
-  "proven-methods n8n automation hub course",
-  "proven-methods n8n automation hub guide",
-  "proven-methods n8n automation hub training",
   "psychology",
   "quality",
   "quality 2025",
@@ -6860,61 +2664,11 @@ export const tags: string[] = [
   "social media growth",
   "sonnet",
   "source",
-  "step-by-step-guide ai automation masterclass",
-  "step-by-step-guide ai automation masterclass 2025",
-  "step-by-step-guide ai automation masterclass course",
-  "step-by-step-guide ai automation masterclass guide",
-  "step-by-step-guide ai automation masterclass training",
-  "step-by-step-guide ai influencers academy",
-  "step-by-step-guide ai influencers academy 2025",
-  "step-by-step-guide ai influencers academy course",
-  "step-by-step-guide ai influencers academy guide",
-  "step-by-step-guide ai influencers academy training",
-  "step-by-step-guide comfyui pro training",
-  "step-by-step-guide comfyui pro training 2025",
-  "step-by-step-guide comfyui pro training course",
-  "step-by-step-guide comfyui pro training guide",
-  "step-by-step-guide comfyui pro training training",
-  "step-by-step-guide instagram growth academy",
-  "step-by-step-guide instagram growth academy 2025",
-  "step-by-step-guide instagram growth academy course",
-  "step-by-step-guide instagram growth academy guide",
-  "step-by-step-guide instagram growth academy training",
-  "step-by-step-guide n8n automation hub",
-  "step-by-step-guide n8n automation hub 2025",
-  "step-by-step-guide n8n automation hub course",
-  "step-by-step-guide n8n automation hub guide",
-  "step-by-step-guide n8n automation hub training",
   "stories",
   "story",
   "story engagement",
   "strategy",
   "success",
-  "success-formula ai automation masterclass",
-  "success-formula ai automation masterclass 2025",
-  "success-formula ai automation masterclass course",
-  "success-formula ai automation masterclass guide",
-  "success-formula ai automation masterclass training",
-  "success-formula ai influencers academy",
-  "success-formula ai influencers academy 2025",
-  "success-formula ai influencers academy course",
-  "success-formula ai influencers academy guide",
-  "success-formula ai influencers academy training",
-  "success-formula comfyui pro training",
-  "success-formula comfyui pro training 2025",
-  "success-formula comfyui pro training course",
-  "success-formula comfyui pro training guide",
-  "success-formula comfyui pro training training",
-  "success-formula instagram growth academy",
-  "success-formula instagram growth academy 2025",
-  "success-formula instagram growth academy course",
-  "success-formula instagram growth academy guide",
-  "success-formula instagram growth academy training",
-  "success-formula n8n automation hub",
-  "success-formula n8n automation hub 2025",
-  "success-formula n8n automation hub course",
-  "success-formula n8n automation hub guide",
-  "success-formula n8n automation hub training",
   "systems",
   "tech",
   "technical indicators",
@@ -6932,123 +2686,18 @@ export const tags: string[] = [
   "trader mindset",
   "trading discipline",
   "trading psychology",
-  "transformation-course ai automation masterclass",
-  "transformation-course ai automation masterclass 2025",
-  "transformation-course ai automation masterclass course",
-  "transformation-course ai automation masterclass guide",
-  "transformation-course ai automation masterclass training",
-  "transformation-course ai influencers academy",
-  "transformation-course ai influencers academy 2025",
-  "transformation-course ai influencers academy course",
-  "transformation-course ai influencers academy guide",
-  "transformation-course ai influencers academy training",
-  "transformation-course comfyui pro training",
-  "transformation-course comfyui pro training 2025",
-  "transformation-course comfyui pro training course",
-  "transformation-course comfyui pro training guide",
-  "transformation-course comfyui pro training training",
-  "transformation-course instagram growth academy",
-  "transformation-course instagram growth academy 2025",
-  "transformation-course instagram growth academy course",
-  "transformation-course instagram growth academy guide",
-  "transformation-course instagram growth academy training",
-  "transformation-course n8n automation hub",
-  "transformation-course n8n automation hub 2025",
-  "transformation-course n8n automation hub course",
-  "transformation-course n8n automation hub guide",
-  "transformation-course n8n automation hub training",
   "trends",
-  "ultimate-guide ai automation masterclass",
-  "ultimate-guide ai automation masterclass 2025",
-  "ultimate-guide ai automation masterclass course",
-  "ultimate-guide ai automation masterclass guide",
-  "ultimate-guide ai automation masterclass training",
-  "ultimate-guide ai influencers academy",
-  "ultimate-guide ai influencers academy 2025",
-  "ultimate-guide ai influencers academy course",
-  "ultimate-guide ai influencers academy guide",
-  "ultimate-guide ai influencers academy training",
-  "ultimate-guide comfyui pro training",
-  "ultimate-guide comfyui pro training 2025",
-  "ultimate-guide comfyui pro training course",
-  "ultimate-guide comfyui pro training guide",
-  "ultimate-guide comfyui pro training training",
-  "ultimate-guide instagram growth academy",
-  "ultimate-guide instagram growth academy 2025",
-  "ultimate-guide instagram growth academy course",
-  "ultimate-guide instagram growth academy guide",
-  "ultimate-guide instagram growth academy training",
-  "ultimate-guide n8n automation hub",
-  "ultimate-guide n8n automation hub 2025",
-  "ultimate-guide n8n automation hub course",
-  "ultimate-guide n8n automation hub guide",
-  "ultimate-guide n8n automation hub training",
   "upgrade",
   "use",
   "vectorize",
   "viral",
   "viral 2025",
   "viral carousel guide",
-  "viral instagram content strategy",
-  "viral instagram content strategy 2025",
-  "viral instagram content strategy course",
-  "viral instagram content strategy guide",
-  "viral instagram content strategy training",
   "viral reels",
-  "virtual brand ambassador",
-  "virtual brand ambassador 2025",
-  "virtual brand ambassador course",
-  "virtual brand ambassador guide",
-  "virtual brand ambassador training",
-  "virtual content creation",
-  "virtual content creation 2025",
-  "virtual content creation course",
-  "virtual content creation guide",
-  "virtual content creation training",
-  "virtual influencer automation",
-  "virtual influencer automation 2025",
-  "virtual influencer automation course",
-  "virtual influencer automation guide",
-  "virtual influencer automation training",
   "virtual influencer campaigns",
-  "virtual influencer consulting",
-  "virtual influencer consulting 2025",
-  "virtual influencer consulting course",
-  "virtual influencer consulting guide",
-  "virtual influencer consulting training",
   "virtual influencer content",
-  "virtual influencer creation",
-  "virtual influencer creation 2025",
-  "virtual influencer creation course",
-  "virtual influencer creation guide",
-  "virtual influencer creation training",
-  "virtual influencer engagement",
-  "virtual influencer engagement 2025",
-  "virtual influencer engagement course",
-  "virtual influencer engagement guide",
-  "virtual influencer engagement training",
   "virtual influencer marketing",
   "virtual influencer photos",
-  "virtual influencer platforms",
-  "virtual influencer platforms 2025",
-  "virtual influencer platforms course",
-  "virtual influencer platforms guide",
-  "virtual influencer platforms training",
-  "virtual influencer scaling",
-  "virtual influencer scaling 2025",
-  "virtual influencer scaling course",
-  "virtual influencer scaling guide",
-  "virtual influencer scaling training",
-  "virtual influencer strategy",
-  "virtual influencer strategy 2025",
-  "virtual influencer strategy course",
-  "virtual influencer strategy guide",
-  "virtual influencer strategy training",
-  "virtual influencer trends",
-  "virtual influencer trends 2025",
-  "virtual influencer trends course",
-  "virtual influencer trends guide",
-  "virtual influencer trends training",
   "virtual influencers",
   "volume profile",
   "web",
