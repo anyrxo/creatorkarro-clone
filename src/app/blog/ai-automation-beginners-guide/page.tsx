@@ -103,7 +103,7 @@ export default function AiAutomationBeginnersGuidePage() {
             <h2 className="text-2xl font-bold mb-4">Table of Contents</h2>
             <ul className="space-y-2">
               {tableOfContents.map((item, index) => (
-                <li key={index}>
+                <li key={item}>
                   <a href={`#section-${index + 1}`} className="text-blue-400 hover:text-blue-300">
                     {item}
                   </a>

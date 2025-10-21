@@ -267,8 +267,8 @@ export default function BlogPage() {
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {featuredPosts.map((post, index) => (
-                    <ScrollAnimation key={post.slug} animation="fade-up" delay={1000 + index * 150}>
+                  {featuredPosts.map((post) => (
+                    <ScrollAnimation key={post.slug} animation="fade-up" delay={1000}>
                       <TiltCard className="h-full">
                       <Link href={`/blog/${post.slug}`}>
                         <SpotlightCard 

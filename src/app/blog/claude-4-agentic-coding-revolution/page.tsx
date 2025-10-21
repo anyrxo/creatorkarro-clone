@@ -572,9 +572,9 @@ claude-cli create-workflow \\
               Frequently Asked Questions
                     </h2>
                     <div className="grid gap-6 max-w-4xl mx-auto">
-              {faqs.map((faq, index) => (
+              {faqs.map((faq) => (
                         <FAQCard
-                  key={index}
+                  key={faq.question}
                   question={faq.question}
                   answer={faq.answer}
                   isVisible={true}

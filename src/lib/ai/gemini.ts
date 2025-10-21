@@ -1,8 +1,12 @@
 // ORYANA Gemini Flash 2.0 Integration - AI-Powered Expert Content Generation
 import { GoogleGenerativeAI } from '@google/generative-ai'
+import { createLogger } from '@/lib/logger'
 
 // Load API key from environment variable
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || ''
+
+// Production-safe logger
+const logger = createLogger('Gemini')
 
 class GeminiContentGenerator {
   private genAI: GoogleGenerativeAI
@@ -86,7 +90,7 @@ class GeminiContentGenerator {
       const result = await this.model.generateContent(prompt)
       return result.response.text()
     } catch (error) {
-      console.error('Gemini generation error:', error)
+      logger.error('Social media content generation failed', error)
       return 'Error generating content'
     }
   }
@@ -147,7 +151,7 @@ class GeminiContentGenerator {
       const result = await this.model.generateContent(fullPrompt)
       return result.response.text()
     } catch (error) {
-      console.error('Gemini generation error:', error)
+      logger.error('N8N content generation failed', error)
       return 'Error generating N8N content'
     }
   }
@@ -208,7 +212,7 @@ class GeminiContentGenerator {
       const result = await this.model.generateContent(fullPrompt)
       return result.response.text()
     } catch (error) {
-      console.error('Gemini generation error:', error)
+      logger.error('Fanvue content generation failed', error)
       return 'Error generating Fanvue content'
     }
   }

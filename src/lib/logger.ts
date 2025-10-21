@@ -1,11 +1,15 @@
 /**
  * Production-safe logger
  * Logs to console in development, silent in production
+ *
+ * SECURITY: This logger prevents console.log leaks in production builds
+ * Only errors are logged in production for critical debugging
  */
 
 type LogLevel = 'log' | 'info' | 'warn' | 'error' | 'debug'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
+const isClient = typeof window !== 'undefined'
 
 class Logger {
   private prefix: string
@@ -16,11 +20,13 @@ class Logger {
 
   private formatMessage(level: LogLevel, message: string, ...args: any[]): string {
     const timestamp = new Date().toISOString()
-    return `${timestamp} ${level.toUpperCase()} ${this.prefix} ${message}`
+    const environment = isClient ? 'CLIENT' : 'SERVER'
+    return `[${timestamp}] [${environment}] ${level.toUpperCase()} ${this.prefix} ${message}`
   }
 
   /**
    * General log - only in development
+   * SECURITY: Suppressed in production to prevent information leakage
    */
   log(message: string, ...args: any[]): void {
     if (isDevelopment) {
@@ -30,6 +36,7 @@ class Logger {
 
   /**
    * Info log - only in development
+   * SECURITY: Suppressed in production to prevent information leakage
    */
   info(message: string, ...args: any[]): void {
     if (isDevelopment) {
@@ -39,6 +46,7 @@ class Logger {
 
   /**
    * Warning log - only in development
+   * SECURITY: Suppressed in production to prevent information leakage
    */
   warn(message: string, ...args: any[]): void {
     if (isDevelopment) {
@@ -48,14 +56,23 @@ class Logger {
 
   /**
    * Error log - ALWAYS logged (even in production)
+   * SECURITY: Sanitize error messages before logging in production
    */
   error(message: string, ...args: any[]): void {
-    // Errors are always logged for debugging
-    console.error(this.formatMessage('error', message), ...args)
+    if (isDevelopment) {
+      // Full error details in development
+      console.error(this.formatMessage('error', message), ...args)
+    } else {
+      // Sanitized errors in production - no stack traces or sensitive data
+      console.error(this.formatMessage('error', message))
+      // In production, you might want to send errors to a monitoring service
+      // e.g., Sentry, LogRocket, etc.
+    }
   }
 
   /**
    * Debug log - only in development
+   * SECURITY: Completely suppressed in production
    */
   debug(message: string, ...args: any[]): void {
     if (isDevelopment) {
@@ -68,6 +85,46 @@ class Logger {
    */
   child(childPrefix: string): Logger {
     return new Logger(`${this.prefix}:${childPrefix}`)
+  }
+
+  /**
+   * Performance timing - only in development
+   * SECURITY: Suppressed in production
+   */
+  time(label: string): void {
+    if (isDevelopment) {
+      console.time(`${this.prefix} ${label}`)
+    }
+  }
+
+  /**
+   * End performance timing - only in development
+   * SECURITY: Suppressed in production
+   */
+  timeEnd(label: string): void {
+    if (isDevelopment) {
+      console.timeEnd(`${this.prefix} ${label}`)
+    }
+  }
+
+  /**
+   * Group logs - only in development
+   * SECURITY: Suppressed in production
+   */
+  group(label: string): void {
+    if (isDevelopment) {
+      console.group(`${this.prefix} ${label}`)
+    }
+  }
+
+  /**
+   * End group - only in development
+   * SECURITY: Suppressed in production
+   */
+  groupEnd(): void {
+    if (isDevelopment) {
+      console.groupEnd()
+    }
   }
 }
 

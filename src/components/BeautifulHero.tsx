@@ -5,32 +5,40 @@ import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-mo
 import Link from 'next/link'
 import ScrambleText from '@/components/magicui/scramble-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
+import StandardCTA from '@/components/StandardCTA'
 
 export function BeautifulHero() {
   const containerRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
   const isInView = useInView(titleRef, { once: true })
-  
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    // Detect mobile devices for performance optimization
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"]
   })
 
-  // Smooth spring animations
+  // Disable heavy animations on mobile for better performance
   const springConfig = { damping: 15, stiffness: 100 }
-  const y = useSpring(useTransform(scrollYProgress, [0, 1], [0, -200]), springConfig)
+  const y = useSpring(useTransform(scrollYProgress, [0, 1], [0, isMobile ? -100 : -200]), springConfig)
   const opacity = useSpring(useTransform(scrollYProgress, [0, 0.5], [1, 0]), springConfig)
-  const scale = useSpring(useTransform(scrollYProgress, [0, 0.5], [1, 0.8]), springConfig)
-
-  // Remove mouse tracking - not needed anymore
-
-  // TypingAnimation now provides the scramble effect
+  const scale = useSpring(useTransform(scrollYProgress, [0, 0.5], [1, isMobile ? 0.95 : 0.8]), springConfig)
 
   return (
-    <motion.section 
+    <motion.section
       ref={containerRef}
       className="relative min-h-screen overflow-hidden bg-gradient-to-b from-black via-zinc-900 to-black"
-      style={{ y, opacity, scale }}
+      style={{ y: isMobile ? 0 : y, opacity, scale: isMobile ? 1 : scale }}
     >
       {/* Optimized gradient orbs - better mobile performance */}
       <div className="absolute inset-0 overflow-hidden">
@@ -120,39 +128,12 @@ export function BeautifulHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2.2 }}
           >
-            <motion.div
-              className="inline-block"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link href="/instagram-ignited" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50" aria-label="Build your empire with Instagram Ignited course">
-                <ShimmerButton
-                  className="shadow-2xl"
-                  shimmerColor="#ffffff"
-                  shimmerSize="0.1em"
-                  background="linear-gradient(135deg, #2563eb, #9333ea)"
-                  borderRadius="9999px"
-                >
-                  <span className="whitespace-nowrap text-lg font-bold px-6 py-2 flex items-center gap-3">
-                    <motion.span
-                      className="text-2xl"
-                      animate={{ 
-                        rotate: [0, 10, -10, 0],
-                        scale: [1, 1.1, 1]
-                      }}
-                      transition={{ 
-                        duration: 3, 
-                        repeat: Infinity,
-                        repeatDelay: 2
-                      }}
-                    >
-                      🚀
-                    </motion.span>
-                    Build Your Empire
-                  </span>
-                </ShimmerButton>
-              </Link>
-            </motion.div>
+            <StandardCTA
+              variant="primary"
+              text="Get Started"
+              href="/instagram-ignited"
+              size="lg"
+            />
           </motion.div>
         </motion.div>
 
@@ -177,35 +158,36 @@ export function BeautifulHero() {
         </motion.div>
       </div>
 
-      {/* Heartbeat Grid Pulsing from Center */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Center Point - Heart of the pulse */}
-        <motion.div
-          className="absolute w-4 h-4 rounded-full"
-          style={{
-            left: '50%',
-            top: '50%',
-            transform: 'translate(-50%, -50%)',
-            background: 'rgba(59, 130, 246, 0.8)'
-          }}
-          animate={{
-            scale: [1, 3, 1],
-            opacity: [0.8, 1, 0.8],
-            boxShadow: [
-              '0 0 20px rgba(59, 130, 246, 0.5)',
-              '0 0 60px rgba(59, 130, 246, 1)',
-              '0 0 20px rgba(59, 130, 246, 0.5)'
-            ]
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
+      {/* Heartbeat Grid Pulsing from Center - Simplified on mobile */}
+      {!isMobile && (
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          {/* Center Point - Heart of the pulse */}
+          <motion.div
+            className="absolute w-4 h-4 rounded-full"
+            style={{
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              background: 'rgba(59, 130, 246, 0.8)'
+            }}
+            animate={{
+              scale: [1, 3, 1],
+              opacity: [0.8, 1, 0.8],
+              boxShadow: [
+                '0 0 20px rgba(59, 130, 246, 0.5)',
+                '0 0 60px rgba(59, 130, 246, 1)',
+                '0 0 20px rgba(59, 130, 246, 0.5)'
+              ]
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
 
-        {/* Horizontal Grid Lines - Pulse from center outward */}
-        {[...Array(14)].map((_, i) => {
+          {/* Horizontal Grid Lines - Pulse from center outward */}
+          {[...Array(14)].map((_, i) => {
           const distanceFromCenter = Math.abs(i - 7)
           const delay = distanceFromCenter * 0.1
           
@@ -342,8 +324,8 @@ export function BeautifulHero() {
             }}
           />
         ))}
-
-      </div>
+        </div>
+      )}
     </motion.section>
   )
 }

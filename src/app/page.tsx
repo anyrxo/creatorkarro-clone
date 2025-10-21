@@ -18,6 +18,7 @@ import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import PainPointIcon from '@/components/PainPointIcon'
+import StandardCTA from '@/components/StandardCTA'
 import { ChevronRight, Smartphone, CreditCard, Bot } from 'lucide-react'
 
 export default function HomePage() {
@@ -249,13 +250,13 @@ export default function HomePage() {
                   description: 'Build businesses that generate millions, not just followers. Real systems for real wealth creation',
                   gradient: 'from-emerald-500 to-teal-500'
                 }
-              ].map((pillar, index) => (
+              ].map((pillar) => (
                 <motion.div
                   key={pillar.title}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.15, duration: 0.6 }}
+                  transition={{ duration: 0.6 }}
                   whileHover={{ y: -8, scale: 1.02 }}
                   className="group cursor-pointer relative"
                 >
@@ -331,13 +332,13 @@ export default function HomePage() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {courses.map((course, index) => (
+            {courses.map((course) => (
               <motion.div
                 key={course.id}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.15 }}
+                transition={{ duration: 0.6 }}
               >
                 <Link href={course.link} className="block magnetic-button h-full focus:outline-none focus:ring-4 focus:ring-blue-500/50" aria-label={`View ${course.title} course details`}>
                   <Interactive3DCard>
@@ -439,9 +440,9 @@ export default function HomePage() {
             "The community support is incredible!",
             "Already seeing massive growth in week 1",
             "These strategies actually work - 250K followers now!"
-          ].map((review, index) => (
+          ].map((review) => (
             <div
-              key={index}
+              key={review}
               className="mx-4 flex items-center gap-2 rounded-lg bg-zinc-900/50 px-6 py-3 backdrop-blur-sm border border-zinc-800"
             >
               <span className="text-zinc-200">{review}</span>
@@ -531,13 +532,13 @@ export default function HomePage() {
                 title: 'AI Psychology',
                 description: 'Understand what makes content viral and audiences engage'
               }
-            ].map((skill, index) => (
+            ].map((skill) => (
               <motion.div
                 key={skill.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ duration: 0.5 }}
                 whileHover={{ y: -5, scale: 1.02 }}
                 className="relative group"
               >
@@ -627,13 +628,13 @@ export default function HomePage() {
                       title: 'Community Support',
                       description: 'Join a thriving community of creators who support and inspire each other daily'
                     }
-                  ].map((point, index) => (
+                  ].map((point) => (
                     <motion.div
                       key={point.title}
                       initial={{ opacity: 0, x: -30 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
+                      transition={{ duration: 0.5 }}
                       className="flex gap-4"
                     >
                       <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
@@ -665,13 +666,13 @@ export default function HomePage() {
                         { value: '24/7', label: 'Support' },
                         { value: '30+', label: 'Hours of Content' },
                         { value: '100+', label: 'Templates' }
-                      ].map((stat, index) => (
+                      ].map((stat) => (
                         <motion.div
                           key={stat.label}
                           initial={{ opacity: 0, y: 20 }}
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
-                          transition={{ delay: 0.5 + index * 0.1 }}
+                          transition={{ duration: 0.5 }}
                           className="text-center"
                         >
                           <div className="text-3xl font-bold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">
@@ -762,25 +763,12 @@ export default function HomePage() {
                 duration={40}
               />
             </div>
-            <motion.div
-              className="inline-block"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link href="/instagram-ignited" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50" aria-label="Start your journey with Instagram Ignited course">
-                <ShimmerButton
-                  className="shadow-2xl"
-                  shimmerColor="#ffffff"
-                  shimmerSize="0.1em"
-                  background="linear-gradient(135deg, #2563eb, #9333ea)"
-                  borderRadius="9999px"
-                >
-                  <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
-                    Start Your Journey
-                  </span>
-                </ShimmerButton>
-              </Link>
-            </motion.div>
+            <StandardCTA
+              variant="primary"
+              text="Get Started"
+              href="/instagram-ignited"
+              size="lg"
+            />
           </motion.div>
         </div>
       </section>

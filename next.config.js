@@ -51,7 +51,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.marketaux.com https://*.google.com https://vercel.live wss://ws.pusher.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://beehiiv.com https://whop.com"
+            value: "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://vercel.live https://va.vercel-scripts.com; style-src 'self' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.marketaux.com https://*.google.com https://www.google-analytics.com https://vercel.live wss://ws.pusher.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://beehiiv.com https://whop.com; object-src 'none'; upgrade-insecure-requests"
           }
         ],
       },
@@ -61,6 +61,13 @@ const nextConfig = {
   // Remove problematic webpack configuration that causes navigator issues
   experimental: {
     // Remove forceSwcTransforms which was causing problems
+  },
+
+  // Production optimizations - Remove console statements in production builds
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production' ? {
+      exclude: ['error'], // Keep console.error for critical debugging
+    } : false,
   },
 };
 

@@ -117,9 +117,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }))
 
-  // Get first chunk of massive sitemap (limited to 50,000 for main sitemap)
-  const massiveSitemaps = await generateMassiveSitemaps()
-  const firstChunk = massiveSitemaps[0] || []
+  // REMOVED: Spammy massive sitemaps that pollute the sitemap with non-existent pages
+  // Focus on REAL pages that actually exist
 
-  return [...staticPages, ...blogPages, ...productPageUrls, ...toolPageUrls, ...firstChunk.slice(0, 40000)]
+  console.log(`✅ Sitemap generated with ${staticPages.length + blogPages.length + productPageUrls.length + toolPageUrls.length} real pages`)
+  console.log(`📝 Blog posts included: ${blogPages.length}`)
+
+  return [...staticPages, ...blogPages, ...productPageUrls, ...toolPageUrls]
 }

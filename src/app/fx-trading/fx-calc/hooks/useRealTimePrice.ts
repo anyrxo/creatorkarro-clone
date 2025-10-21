@@ -1,4 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
+import { createLogger } from '@/lib/logger'
+
+// Production-safe logger
+const logger = createLogger('FXCalc')
 
 // Symbol mapping for our API (matching Python server symbols)
 const SYMBOL_MAPPING: Record<string, string> = {
@@ -113,7 +117,7 @@ export const useRealTimePrice = (symbol: string, interval = '1m', updateInterval
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Unknown error'
       setError(errorMessage)
-      console.error('Error fetching price:', err)
+      logger.error('Price fetch failed', err)
       
       // Fallback to mock data if API fails
       const mockPrices: Record<string, number> = {
@@ -233,7 +237,7 @@ export const useMarketAnalysis = (symbol: string, updateInterval = 5000) => {
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Unknown error'
       setError(errorMessage)
-      console.error('Error fetching analysis:', err)
+      logger.error('Analysis fetch failed', err)
       
       // Fallback analysis
       setAnalysis({
@@ -308,7 +312,7 @@ export const useMarketNews = (updateInterval = 300000) => { // 5 minutes
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Unknown error'
       setError(errorMessage)
-      console.error('Error fetching news:', err)
+      logger.error('News fetch failed', err)
       
       // Fallback news
       setNews([
