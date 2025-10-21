@@ -70,10 +70,3 @@ export function WebVitals() {
 
   return null
 }
-
-// Extend Window interface for TypeScript
-declare global {
-  interface Window {
-    gtag?: (...args: any[]) => void
-  }
-}

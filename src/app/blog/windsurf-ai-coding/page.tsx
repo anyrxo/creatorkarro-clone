@@ -156,16 +156,7 @@ export default function WindsurfAiCoding() {
     ]
   };
 
-  return (
-    <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
-      
-      <div className="min-h-screen bg-dark">
+  return (<div className="min-h-screen bg-dark">
         {/* Advanced SEO Schema */}
         <script
           type="application/ld+json"

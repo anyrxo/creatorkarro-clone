@@ -109,16 +109,7 @@ export default function MostProfitableDigitalProductNichesIn2025() {
     ]
   };
 
-  return (
-    <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
-      
-      <div className="min-h-screen bg-dark">
+  return (<div className="min-h-screen bg-dark">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
