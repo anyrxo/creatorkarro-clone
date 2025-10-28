@@ -1,4 +1,5 @@
 import React from 'react'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { redirect } from 'next/navigation'
 
 // ⚔ ORYANA'S 301 REDIRECT - CONSOLIDATING AUTHORITY TO PILLAR CONTENT
@@ -14,6 +15,18 @@ export const metadata = {
     noarchive: true
   }
 }
+
+const schema = generateBlogPostSchema({
+  title: metadata.title,
+  description: metadata.description,
+  slug: "ai-automation-business",
+  publishedTime: metadata.openGraph.publishedTime,
+  modifiedTime: metadata.openGraph.modifiedTime,
+  category: metadata.category || "Blog",
+  keywords: metadata.keywords || [],
+  image: metadata.openGraph.images[0].url
+})
+
 
 // INSTANT 301 REDIRECT TO AUTHORITY PILLAR
 export default function AIAutomationBusinessRedirect() {
