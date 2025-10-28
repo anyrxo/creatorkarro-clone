@@ -1,15 +1,8 @@
 'use client'
 
-import dynamic from 'next/dynamic'
-
-const NodeBackground = dynamic(
-  () => import('./NodeBackground'),
-  {
-    ssr: false,
-    loading: () => null
-  }
-)
+// Temporarily disabled heavy canvas animations for debugging
+// Will re-enable once site loads properly
 
 export default function ClientOnlyBackground() {
-  return <NodeBackground />
+  return null
 }
