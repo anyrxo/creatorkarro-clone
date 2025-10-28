@@ -1,4 +1,3 @@
-import React from 'react'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { redirect } from 'next/navigation'
 
@@ -16,16 +15,6 @@ export const metadata = {
   }
 }
 
-const schema = generateBlogPostSchema({
-  title: metadata.title,
-  description: metadata.description,
-  slug: "digital-products-ideas-2025",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
-  category: metadata.category || "Blog",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
-})
 
 
 // INSTANT REDIRECT TO $497 DIGITAL PRODUCTS COURSE
