@@ -129,30 +129,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://connect.facebook.net" />
         
-        {/* Non-blocking font loading */}
+        {/* Font loading - simplified for static export */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-          media="print"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                var link = document.querySelector('link[href*="fonts.googleapis.com"]');
-                if (link) {
-                  link.media = 'all';
-                }
-              })();
-            `
-          }}
-        />
-        <noscript>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-          />
-        </noscript>
         
         {/* Preload critical images */}
         <link rel="preload" href="/hero-bg.webp" as="image" type="image/webp" />
