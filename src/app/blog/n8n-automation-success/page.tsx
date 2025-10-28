@@ -1,5 +1,3 @@
-import React from 'react'
-import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { redirect } from 'next/navigation'
 
 // ⚔ ORYANA'S STRATEGIC REDIRECT - N8N TRAFFIC HIJACKING
@@ -15,17 +13,6 @@ export const metadata = {
     noarchive: true
   }
 }
-
-const schema = generateBlogPostSchema({
-  title: metadata.title,
-  description: metadata.description,
-  slug: "n8n-automation-success",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
-  category: metadata.category || "Blog",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
-})
 
 
 // INSTANT REDIRECT TO N8N COURSE - MAXIMUM CONVERSION FOCUS

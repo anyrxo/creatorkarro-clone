@@ -1,5 +1,3 @@
-import React from 'react'
-import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { redirect } from 'next/navigation'
 
 // ⚔ ORYANA'S MONETIZATION TRAFFIC HIJACK
@@ -15,17 +13,6 @@ export const metadata = {
     noarchive: true
   }
 }
-
-const schema = generateBlogPostSchema({
-  title: metadata.title,
-  description: metadata.description,
-  slug: "instagram-monetization-guide",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
-  category: metadata.category || "Blog",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
-})
 
 
 // DIRECT TRAFFIC HIJACK TO INSTAGRAM COURSE
