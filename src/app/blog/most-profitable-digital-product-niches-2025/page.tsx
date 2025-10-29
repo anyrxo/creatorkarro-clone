@@ -387,7 +387,7 @@ export default function MostProfitableDigitalProductNichesIn2025() {
                           </ul>
                         </div>
                       </div>
-                      <p className="text-gray-400 text-sm mt-4 border-t border-gray-700 pt-4">Top competitors: Ali Abdaal, Amy Porterfield, Russell Brunson (all >$5M/year)</p>
+                      <p className="text-gray-400 text-sm mt-4 border-t border-gray-700 pt-4">Top competitors: Ali Abdaal, Amy Porterfield, Russell Brunson (all &gt;$5M/year)</p>
                     </div>
 
                     <div className="bg-zinc-900 rounded-xl p-6 border border-blue-500/30">
