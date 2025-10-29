@@ -1,15 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
-  "git": {
-    "deploymentEnabled": {
-      "main": true,
-      "master": true
-    }
+  "github": {
+    "silent": true
   },
   "build": {
     "env": {
-      "NODE_OPTIONS": "--max-old-space-size=8192"
+      "NODE_OPTIONS": "--max-old-space-size=8192",
+      "NODE_ENV": "production"
     }
   }
 }
