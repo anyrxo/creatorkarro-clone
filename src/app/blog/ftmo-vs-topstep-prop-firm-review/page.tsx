@@ -333,19 +333,20 @@ export default function FTMOvsTopstep() {
                 <div>
                   <p className="font-semibold text-orange-400 mb-2">✅ Allowed:</p>
                   <ul className="space-y-1 ml-4">
-                    <li>• Overnight positions</li>
                     <li>• News trading</li>
-                    <li>• All futures contracts</li>
-                    <li>• Multiple strategies</li>
+                    <li>• All futures contracts (E-mini, Micro, commodities)</li>
+                    <li>• Multiple strategies (scalping, swing, day trading)</li>
+                    <li>• Trading during RTH and ETH sessions</li>
                   </ul>
                 </div>
                 <div>
                   <p className="font-semibold text-red-400 mb-2">❌ Prohibited:</p>
                   <ul className="space-y-1 ml-4">
-                    <li>• Weekend trading</li>
-                    <li>• Exceeding daily loss limits</li>
-                    <li>• Violating max trailing drawdown</li>
-                    <li>• Hedging/locked positions</li>
+                    <li className="font-bold">• Overnight holds (positions must be closed before 4:15 PM ET)</li>
+                    <li>• Weekend trading (no positions into weekends)</li>
+                    <li>• Exceeding daily loss limits ($1,000-$3,000 depending on account)</li>
+                    <li>• Violating max trailing drawdown ($3,000-$6,000)</li>
+                    <li>• Hedging/locked positions across accounts</li>
                   </ul>
                 </div>
               </div>
