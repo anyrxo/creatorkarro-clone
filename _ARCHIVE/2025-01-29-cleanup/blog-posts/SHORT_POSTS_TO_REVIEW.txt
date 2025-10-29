@@ -1,0 +1,31 @@
+SHORT POSTS FOR MANUAL REVIEW (<300 lines):
+
+1. ai-automation-beginners-guide
+2. ai-research-content-marketing
+3. api-automation-integration
+4. browser-automation-marketing
+5. business-automation-tools
+6. content-creation-with-ai
+7. dart-ai-free-agentic-project-manager
+8. deepseek-janus-pro-7b-multimodal-ai-revolution
+9. deepseek-r1-browser-use-ai-research
+10. deepseek-r1-open-source-ai-revolution
+11. deepseek-r2-open-source-ai-revolution
+12. gemini-2-5-flash-budget-ai-model
+13. gemini-2-pro-bolt-diy-full-stack-revolution
+14. gpt-4-1-vs-claude-sonnet-3-7-comparison
+15. hr-automation-systems
+16. inventory-management-automation
+17. lead-generation-automation
+18. llama-4-open-source-ai-powerhouse
+19. make-app-automation
+20. manus-ai-general-automation-agent
+21. pinterest-automation-marketing
+22. quality-assurance-automation
+23. qwen-3-alibaba-open-source-llm
+24. roocode-v3-3-cline-alternative
+25. vectorize-all-in-one-rag-platform
+26. web-scraping-automation
+27. workflow-automation-guide
+
+These posts are short but may still be valuable. Review manually before archiving.

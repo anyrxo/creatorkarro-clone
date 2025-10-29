@@ -1,6 +1,6 @@
 // Auto-generated from blog directories
-// Last updated: 2025-10-29T10:15:27.519Z
-// Total posts: 160
+// Last updated: 2025-10-29T11:23:31.397Z
+// Total posts: 151
 
 export interface BlogPost {
   id: number;
@@ -14,10 +14,10 @@ export interface BlogPost {
   tags: string[];
 }
 
-// All blog posts (160 posts)
+// All blog posts (151 posts)
 export const allBlogPosts: BlogPost[] = [
   {
-    "id": 141,
+    "id": 132,
     "title": "5 Proven ES Futures Scalping Strategies 2025 | Complete Entry/Exit Rules",
     "slug": "scalping-strategies-es-futures-5-proven-methods",
     "description": "Master 5 complete ES scalping strategies with entry rules, stop loss, profit targets, and backtesting results. Opening Range Breakout (68% win rate), VWAP Bounce (72%), Market Profile, Volume Spike, and Fibonacci scalps.",
@@ -108,7 +108,7 @@ export const allBlogPosts: BlogPost[] = [
     "description": "12 proven revenue streams for AI influencers. Pricing strategies, platform-specific tactics, and real case studies of influencers earning $10K-$100K monthly.",
     "category": "AI Influencers",
     "date": "Jan 15, 2025",
-    "readTime": 23,
+    "readTime": 27,
     "featured": true,
     "tags": [
       "AI influencer monetization",
@@ -227,7 +227,7 @@ export const allBlogPosts: BlogPost[] = [
     "description": "Master advanced ComfyUI workflows for AI influencer creation. Custom nodes, batch automation, ControlNet mastery, and 10-second render optimization techniques.",
     "category": "AI Influencers",
     "date": "Jan 15, 2025",
-    "readTime": 23,
+    "readTime": 26,
     "featured": true,
     "tags": [
       "ComfyUI",
@@ -244,7 +244,7 @@ export const allBlogPosts: BlogPost[] = [
     "description": "Creating AI Influencers comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
     "category": "Technology",
     "date": "Jan 15, 2025",
-    "readTime": 18,
+    "readTime": 22,
     "featured": true,
     "tags": [
       "creating",
@@ -289,30 +289,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 56,
-    "title": "Digital Product Launch Checklist: 30-Day Timeline for $100K+ Launches",
-    "slug": "digital-product-launch-checklist-30-day-timeline-2025",
-    "description": "Complete 30-day digital product launch checklist with day-by-day timeline, proven strategies, and case study of $104K launch in 2025",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 27,
-    "featured": true,
-    "tags": [
-      "digital product launch",
-      "launch checklist",
-      "30-day timeline",
-      "product launch strategy",
-      "digital product 2025"
-    ]
-  },
-  {
-    "id": 59,
+    "id": 58,
     "title": "Digital Product Validation: Test Your Idea Before Building (2025 Guide)",
     "slug": "digital-product-validation-test-idea-before-building",
     "description": "digital product validation, validate product idea, pre-sell validation, MVP testing - Expert guide from Digital Products Mastery with proven validation strategies that helped students generate $2.7M+",
     "category": "Digital Products & Business",
     "date": "Jan 15, 2025",
-    "readTime": 25,
+    "readTime": 26,
     "featured": true,
     "tags": [
       "digital product validation",
@@ -323,7 +306,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 62,
+    "id": 61,
     "title": "ES Futures Trading Strategy: Proven E-mini S&P 500 Techniques",
     "slug": "es-futures-trading-strategy",
     "description": "Master ES futures trading with proven strategies. Learn order flow, volume profile, and institutional setups to trade E-mini S&P 500 profitably.",
@@ -340,13 +323,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 65,
+    "id": 64,
     "title": "FTMO Challenge Guide: Pass on First Attempt 2025 | Proven Strategy",
     "slug": "ftmo-challenge-guide-pass-first-attempt-2025",
     "description": "Complete FTMO Challenge guide with Phase 1 & 2 breakdown, risk management rules, daily trading routines, and 3 real case studies of traders passing in 10-30 days. Master the 1% rule.",
     "category": "Futures Trading",
     "date": "Jan 15, 2025",
-    "readTime": 20,
+    "readTime": 23,
     "featured": true,
     "tags": [
       "FTMO challenge",
@@ -357,7 +340,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 66,
+    "id": 65,
     "title": "FTMO vs Topstep: Ultimate Prop Firm Showdown 2025",
     "slug": "ftmo-vs-topstep-prop-firm-review",
     "description": "FTMO vs Topstep detailed comparison. Compare evaluation processes, profit splits, trading rules, and payout speeds to find the best funded trading program.",
@@ -374,7 +357,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 67,
+    "id": 66,
     "title": "Futures Trading for Beginners: Complete 2025 Guide",
     "slug": "futures-trading-for-beginners-guide",
     "description": "Learn futures trading from scratch. Understand contracts, margin requirements, tick values, and proven strategies to start trading futures profitably.",
@@ -391,7 +374,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 68,
+    "id": 67,
     "title": "Futures Trading Psychology: Master Your Emotions & Win Consistently 2025",
     "slug": "futures-trading-psychology-master-emotions-win",
     "description": "Master trading psychology with proven mental frameworks, daily routines, and strategies to overcome revenge trading, FOMO, and drawdowns. Real case study: trader overcame $10K loss to profitability.",
@@ -408,7 +391,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 76,
+    "id": 71,
     "title": "GPT-5 Roadmap Creator Empire: Complete Guide & Expert",
     "slug": "gpt5-roadmap-creator-empire",
     "description": "GPT-5 Roadmap Creator Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -442,13 +425,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 81,
+    "id": 76,
     "title": "How To Sell Templates: Complete Guide & Expert Strategies",
     "slug": "how-to-sell-templates",
     "description": "How To Sell Templates - comprehensive strategies, tools, and techniques for 2025",
     "category": "Technology",
     "date": "Jan 15, 2025",
-    "readTime": 18,
+    "readTime": 21,
     "featured": true,
     "tags": [
       "how",
@@ -459,7 +442,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 84,
+    "id": 79,
     "title": "Instagram Collab Feature: Double Your Reach Overnight in 2025",
     "slug": "instagram-collab-feature-double-reach-overnight",
     "description": "Master Instagram Collabs to double your feed post reach overnight. Learn how to find partners, create viral collab content, and gain 5K+ followers from one post.",
@@ -476,13 +459,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 85,
+    "id": 80,
     "title": "Instagram Content Pillars: How to Build a Highly Engaged Audience in 2025",
     "slug": "instagram-content-pillars-build-engaged-audience",
     "description": "Master content pillars to create consistent, engaging Instagram content that builds loyal followers. Complete framework with examples from 100K+ accounts.",
     "category": "Instagram Growth",
     "date": "Jan 15, 2025",
-    "readTime": 20,
+    "readTime": 23,
     "featured": true,
     "tags": [
       "instagram content pillars",
@@ -493,13 +476,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 87,
+    "id": 82,
     "title": "Instagram Growth Strategies That Actually Work in 2025",
     "slug": "instagram-growth-2025",
     "description": "Latest tactics and techniques to grow your Instagram following organically - proven methods used by top creators",
     "category": "Technology",
     "date": "Jan 15, 2025",
-    "readTime": 19,
+    "readTime": 20,
     "featured": true,
     "tags": [
       "instagram growth 2025",
@@ -510,13 +493,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 89,
+    "id": 84,
     "title": "Instagram Hashtag Strategy 2025: What Actually Works (Data-Backed)",
     "slug": "instagram-hashtag-strategy-2025-what-actually-works",
     "description": "The Instagram hashtag algorithm changed. Discover the new hashtag strategy that",
     "category": "Instagram Growth",
     "date": "Jan 15, 2025",
-    "readTime": 19,
+    "readTime": 21,
     "featured": true,
     "tags": [
       "instagram hashtags",
@@ -527,7 +510,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 92,
+    "id": 87,
     "title": "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2025",
     "slug": "instagram-monetization-beyond-sponsored-posts-2025",
     "description": "Discover 10 proven Instagram monetization strategies beyond sponsored posts. Learn how to make $21,500/month with 48K followers through diversified income streams.",
@@ -544,7 +527,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 96,
+    "id": 91,
     "title": "Instagram Reels Viral Formula: How to Get 10M+ Views in 2025",
     "slug": "instagram-reels-viral-formula-10m-views-2025",
     "description": "Master the exact viral Reels formula used by top creators to hit 10M+ views. Algorithm insights, hook strategies, and proven editing techniques that guarantee results.",
@@ -561,24 +544,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 97,
-    "title": "Instagram Story Engagement Strategies: Double Your Interactions in 2025",
-    "slug": "instagram-story-engagement-strategies-double-interactions",
-    "description": "Master Instagram Stories with 12 interactive features ranked by engagement rate. Learn the exact strategies to double your story interactions and boost overall reach.",
-    "category": "Instagram Growth",
-    "date": "Jan 15, 2025",
-    "readTime": 19,
-    "featured": true,
-    "tags": [
-      "instagram stories",
-      "story engagement",
-      "instagram stickers",
-      "story features",
-      "instagram growth"
-    ]
-  },
-  {
-    "id": 100,
+    "id": 94,
     "title": "IOT Automation Systems: Complete Guide & Expert Strategies",
     "slug": "iot-automation-systems",
     "description": "Complete guide to iot automation systems - proven strategies, tools, and techniques for 2025",
@@ -595,7 +561,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 103,
+    "id": 97,
     "title": "LoRA Training Guide: Create 98% Consistent AI Influencer Faces in 2025 | IImagined",
     "slug": "lora-training-guide-consistent-ai-influencer-faces",
     "description": "Complete LoRA training workflow for AI influencer character consistency. Dataset prep, training parameters, quality control, and troubleshooting guide.",
@@ -612,7 +578,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 104,
+    "id": 98,
     "title": "MACD Indicator: Complete Trading Strategy Guide 2025",
     "slug": "macd-indicator-trading-strategy",
     "description": "Master MACD indicator trading with this complete guide. Learn MACD crossover strategies, divergence trading, and histogram analysis for profitable trades.",
@@ -629,7 +595,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 105,
+    "id": 99,
     "title": "Machine Learning Automation: Complete Guide & Expert",
     "slug": "machine-learning-automation",
     "description": "Complete guide to machine learning automation - proven strategies, tools, and techniques for 2025",
@@ -646,24 +612,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 108,
-    "title": "Membership Site Strategy: Build $50K/Month Recurring Revenue in 2025",
-    "slug": "membership-site-strategy-recurring-revenue-model-2025",
-    "description": "Complete membership site strategy guide with tier structures, retention tactics, and case study of $43,700/month recurring revenue model",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 24,
-    "featured": true,
-    "tags": [
-      "membership site",
-      "recurring revenue",
-      "subscription model",
-      "membership strategy",
-      "retention tactics"
-    ]
-  },
-  {
-    "id": 109,
+    "id": 102,
     "title": "Mobile App Automation: Complete Guide & Expert Strategies",
     "slug": "mobile-app-automation",
     "description": "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2025",
@@ -680,7 +629,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 112,
+    "id": 105,
     "title": "Multi-Platform AI Influencer Strategy 2025: 500K Combined Followers Playbook | IImagined",
     "slug": "multi-platform-ai-influencer-strategy-2025",
     "description": "Complete cross-platform strategy for AI influencers. Content adaptation, platform optimization, repurposing workflows, and growth tactics for Instagram, TikTok, YouTube, and Twitter.",
@@ -697,7 +646,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 113,
+    "id": 106,
     "title": "N8N AI Integration 2025: OpenAI GPT & ChatGPT Complete Workflows - $12K/mo Savings",
     "slug": "n8n-ai-integration-openai-gpt-chatgpt-complete-workflows",
     "description": "Master AI automation with N8N, OpenAI GPT & ChatGPT. Content generation, customer support automation, data analysis workflows. Case study: Agency saving $12K/month on writing costs.",
@@ -714,13 +663,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 116,
+    "id": 109,
     "title": "N8N CRM Automation 2025: Pipedrive, HubSpot, Salesforce Integration - Save 15 Hours/Week",
     "slug": "n8n-crm-automation-pipedrive-hubspot-salesforce",
     "description": "Master CRM automation with N8N. Lead capture, automated scoring, email sequences, deal pipeline automation. Complete workflows for Pipedrive, HubSpot, Salesforce. Sales team case study.",
     "category": "Technology",
     "date": "Jan 15, 2025",
-    "readTime": 30,
+    "readTime": 33,
     "featured": true,
     "tags": [
       "n8n crm automation",
@@ -731,30 +680,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 118,
-    "title": "N8N Ecommerce Automation 2025: Shopify & WooCommerce Complete Guide - 90% Automation",
-    "slug": "n8n-ecommerce-automation-shopify-woocommerce-complete-guide",
-    "description": "Master ecommerce automation with N8N for Shopify & WooCommerce. Order processing, inventory management, abandoned cart recovery, customer segmentation. Case study: 500 orders/month, 90% automated.",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 22,
-    "featured": true,
-    "tags": [
-      "n8n ecommerce automation",
-      "shopify automation n8n",
-      "woocommerce automation n8n",
-      "n8n order processing",
-      "inventory automation n8n"
-    ]
-  },
-  {
-    "id": 115,
+    "id": 108,
     "title": "N8N for Beginners 2025: Complete Course Guide to Business Automation - 40+ Hours Saved Weekly",
     "slug": "n8n-beginners-guide",
     "description": "Master N8N automation with our complete beginner",
     "category": "Technology",
     "date": "Jan 15, 2025",
-    "readTime": 27,
+    "readTime": 29,
     "featured": true,
     "tags": [
       "n8n for beginners",
@@ -765,13 +697,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 119,
+    "id": 111,
     "title": "N8N Instagram Automation 2025: Complete Growth Workflow - Auto-Post, DM, Analytics & More",
     "slug": "n8n-instagram-automation-complete-growth-workflow",
     "description": "Master Instagram automation with N8N. Auto-posting from Airtable, comment monitoring, DM automation, analytics tracking. Case study: Agency managing 10 accounts saving 35 hours/week.",
     "category": "Technology",
     "date": "Jan 15, 2025",
-    "readTime": 42,
+    "readTime": 44,
     "featured": true,
     "tags": [
       "n8n instagram automation",
@@ -782,7 +714,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 122,
+    "id": 114,
     "title": "No Code Automation Tools: Complete Guide & Expert Strategies",
     "slug": "no-code-automation-tools",
     "description": "Complete guide to no code automation tools - proven strategies, tools, and techniques for 2025",
@@ -799,24 +731,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 123,
-    "title": "Notion Template Business: Create, Sell & Scale to $10K/Month in 2025",
-    "slug": "notion-template-business-create-sell-scale-2025",
-    "description": "Complete guide to building a Notion template business with high-demand niches, design principles, and case study of $15,400/month revenue",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 23,
-    "featured": true,
-    "tags": [
-      "notion templates",
-      "notion business",
-      "sell notion templates",
-      "notion template niches",
-      "gumroad templates"
-    ]
-  },
-  {
-    "id": 125,
+    "id": 116,
     "title": "Online Course Platform Comparison 2025: Teachable vs Gumroad vs Thinkific vs Kajabi vs Podia vs Systeme.io",
     "slug": "online-course-platform-comparison-teachable-gumroad-thinkific",
     "description": "course platform comparison, teachable vs gumroad, best course platform, online course hosting - Expert comparison from Digital Products Mastery creators with 127K+ students. See which platform generates the most revenue.",
@@ -833,7 +748,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 126,
+    "id": 117,
     "title": "Order Flow Trading Strategy: Complete Guide 2025 | Volume Profile & Footprint Charts",
     "slug": "order-flow-trading-strategy-complete-guide",
     "description": "Master order flow trading with Volume Profile, Delta, and Footprint charts. Learn 3 proven setups with entry/exit rules, compare Sierra Chart vs ATAS vs Bookmap, and see $50K funded account case study.",
@@ -850,7 +765,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 131,
+    "id": 122,
     "title": "Prompt Engineering Guide: Master AI Prompts in 2025",
     "slug": "prompt-engineering-guide",
     "description": "Complete prompt engineering guide - step-by-step instructions, best practices, and expert tips",
@@ -867,7 +782,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 132,
+    "id": 123,
     "title": "Prop Firm Comparison 2025: FTMO vs Topstep vs MFF vs FundedTrading+ | Complete Review",
     "slug": "prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2025",
     "description": "Compare top 4 prop firms across 12 dimensions: evaluation fees ($155-$600), profit splits (50%-90%), rules, payout speed, and best fit. See which firm matches your trading style with real case studies.",
@@ -884,7 +799,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 135,
+    "id": 126,
     "title": "Robotic Process Automation: Complete Guide & Expert",
     "slug": "robotic-process-automation",
     "description": "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2025",
@@ -901,13 +816,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 137,
+    "id": 128,
     "title": "RSI Trading Strategy 2025: Complete Guide to Mastering Relative Strength Index",
     "slug": "rsi-trading-strategy-complete-guide",
     "description": "Master RSI indicator trading with proven strategies. Learn RSI divergence, overbought/oversold signals, hidden divergence, and advanced techniques for 65%+ win rates.",
     "category": "Trading & Finance",
     "date": "Jan 15, 2025",
-    "readTime": 19,
+    "readTime": 20,
     "featured": true,
     "tags": [
       "rsi indicator",
@@ -918,7 +833,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 138,
+    "id": 129,
     "title": "SaaS Automation Systems: Complete Guide & Expert Strategies",
     "slug": "saas-automation-systems",
     "description": "Complete guide to saas automation systems - proven strategies, tools, and techniques for 2025",
@@ -935,13 +850,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 139,
+    "id": 130,
     "title": "Sales Page Psychology: Complete Guide & Expert Strategies",
     "slug": "sales-page-psychology",
     "description": "Sales Page Psychology - comprehensive strategies, tools, and techniques for 2025",
     "category": "Technology",
     "date": "Jan 15, 2025",
-    "readTime": 19,
+    "readTime": 21,
     "featured": true,
     "tags": [
       "sales",
@@ -952,7 +867,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 142,
+    "id": 133,
     "title": "Security Automation Systems: Complete Guide & Expert",
     "slug": "security-automation-systems",
     "description": "Complete guide to security automation systems - proven strategies, tools, and techniques for 2025",
@@ -969,7 +884,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 144,
+    "id": 135,
     "title": "Shopify Automation AI: Complete Guide & Expert Strategies",
     "slug": "shopify-automation-ai",
     "description": "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2025",
@@ -986,7 +901,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 147,
+    "id": 138,
     "title": "Stable Diffusion vs Midjourney for AI Influencer Creation: Complete 2025 Comparison | IImagined",
     "slug": "stable-diffusion-vs-midjourney-ai-influencer-creation",
     "description": "Side-by-side comparison of Stable Diffusion vs Midjourney for creating AI influencers. Cost analysis, workflow examples, and when to use each tool in 2025.",
@@ -1003,7 +918,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 148,
+    "id": 139,
     "title": "Telegram Bot Monetization: Complete Guide & Expert",
     "slug": "telegram-bot-monetization",
     "description": "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2025",
@@ -1020,13 +935,13 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 150,
+    "id": 141,
     "title": "Topstep vs MyFundedTrader: Complete 2025 Comparison",
     "slug": "topstep-vs-myfundedtrader-comparison",
     "description": "Detailed comparison of Topstep and MyFundedTrader prop firms. Discover which funded trading program offers better profit splits, evaluation rules, and trader support.",
     "category": "Trading & Finance",
     "date": "Jan 15, 2025",
-    "readTime": 25,
+    "readTime": 27,
     "featured": true,
     "tags": [
       "topstep",
@@ -1037,7 +952,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 151,
+    "id": 142,
     "title": "Trading Psychology: Master Your Emotions for Consistent Profits",
     "slug": "trading-psychology-master-your-emotions",
     "description": "Master trading psychology to overcome fear, greed, and revenge trading. Learn proven mental strategies used by professional traders to stay disciplined.",
@@ -1490,7 +1405,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 127,
+    "id": 118,
     "title": "Complete Passive Income Blueprint for 2025",
     "slug": "passive-income-blueprint",
     "description": "Learn proven strategies to build passive income streams that work while you sleep - from $0 to $10K/month",
@@ -1705,7 +1620,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 57,
+    "id": 56,
     "title": "Digital Product Launch Strategy: From Idea to $100K",
     "slug": "digital-product-launch-strategy-idea-to-100k",
     "description": "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery with 127K+...",
@@ -1722,7 +1637,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 58,
+    "id": 57,
     "title": "Digital Product Pricing Strategy: Maximize Your Revenue",
     "slug": "digital-product-pricing-strategy-maximize-revenue",
     "description": "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
@@ -1739,7 +1654,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 60,
+    "id": 59,
     "title": "Email Marketing Automation: Advanced N8N Sequences",
     "slug": "email-marketing-automation-advanced-n8n-sequences",
     "description": "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations with 127K+ students and...",
@@ -1756,7 +1671,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 61,
+    "id": 60,
     "title": "Email Marketing Guide: Build Campaigns That Convert 2025",
     "slug": "email-marketing-guide",
     "description": "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -1773,7 +1688,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 63,
+    "id": 62,
     "title": "Essential N8N Workflows: Complete Guide & Expert Strategies",
     "slug": "essential-n8n-workflows",
     "description": "Essential N8N Workflows - comprehensive strategies, tools, and techniques for 2025",
@@ -1790,7 +1705,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 64,
+    "id": 63,
     "title": "Faceless Content Strategy: Complete Guide & Expert",
     "slug": "faceless-content-strategy",
     "description": "Faceless Content Strategy - comprehensive strategies, tools, and techniques for 2025",
@@ -1807,7 +1722,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 69,
+    "id": 68,
     "title": "Gemini 2 5 Flash Budget AI Model",
     "slug": "gemini-2-5-flash-budget-ai-model",
     "description": "Gemini 2 5 Flash Budget AI Model comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -1824,7 +1739,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 70,
+    "id": 69,
     "title": "Gemini 2 Pro Bolt Diy Full Stack Revolution",
     "slug": "gemini-2-pro-bolt-diy-full-stack-revolution",
     "description": "Gemini 2 Pro Bolt Diy Full Stack Revolution - comprehensive strategies, tools, and techniques for 2025",
@@ -1841,58 +1756,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 71,
-    "title": "Gemini 2 Pro Creator Tech Empire",
-    "slug": "gemini-2-pro-creator-tech-empire",
-    "description": "Gemini 2 Pro Creator Tech Empire - comprehensive strategies, tools, and techniques for 2025",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 3,
-    "featured": false,
-    "tags": [
-      "gemini",
-      "pro",
-      "creator",
-      "tech",
-      "empire"
-    ]
-  },
-  {
-    "id": 72,
-    "title": "Google Deep Research 25 Pro Business",
-    "slug": "google-deep-research-25-pro-business",
-    "description": "Google Deep Research 25 Pro Business - proven business strategies and monetization techniques for entrepreneurs in 2025",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 3,
-    "featured": false,
-    "tags": [
-      "google",
-      "deep",
-      "research",
-      "pro",
-      "business"
-    ]
-  },
-  {
-    "id": 73,
-    "title": "Google Io 2025 Creator Opportunities",
-    "slug": "google-io-2025-creator-opportunities",
-    "description": "Google Io 2025 Creator Opportunities - comprehensive strategies, tools, and techniques for 2025",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 3,
-    "featured": false,
-    "tags": [
-      "google",
-      "2025",
-      "creator",
-      "opportunities",
-      "google 2025"
-    ]
-  },
-  {
-    "id": 74,
+    "id": 70,
     "title": "GPT 4 1 Vs Claude Sonnet 3 7 Comparison",
     "slug": "gpt-4-1-vs-claude-sonnet-3-7-comparison",
     "description": "GPT 4 1 Vs Claude Sonnet 3 7 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -1909,24 +1773,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 75,
-    "title": "GPT-4o Upgrade Creator Business",
-    "slug": "gpt4o-upgrade-creator-business",
-    "description": "GPT-4o Upgrade Creator Business comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-    "category": "Technology",
-    "date": "Jan 15, 2025",
-    "readTime": 3,
-    "featured": false,
-    "tags": [
-      "gpt4o",
-      "upgrade",
-      "creator",
-      "business",
-      "gpt4o 2025"
-    ]
-  },
-  {
-    "id": 77,
+    "id": 72,
     "title": "How to Create Digital Products That Sell: Complete 2025",
     "slug": "how-to-create-digital-products-that-sell-2025",
     "description": "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
@@ -1960,7 +1807,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 78,
+    "id": 73,
     "title": "How to Get 10K Instagram Followers Fast: Expert Guide",
     "slug": "how-to-get-10k-instagram-followers-fast",
     "description": "get instagram followers, 10k followers, instagram growth - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
@@ -1977,7 +1824,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 79,
+    "id": 74,
     "title": "How to Make Money with AI Influencers: 15 Proven Methods",
     "slug": "how-to-make-money-with-ai-influencers-15-proven-methods",
     "description": "make money ai influencers, ai influencer income, monetize virtual influencers - Expert guide from the creators of AI Influencers Academy with 127K+...",
@@ -1994,7 +1841,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 80,
+    "id": 75,
     "title": "How to Make Money with ComfyUI: AI Art Business Guide",
     "slug": "how-to-make-money-with-comfyui-ai-art-business-guide",
     "description": "make money comfyui, ai art business, sell ai art - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
@@ -2011,7 +1858,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 82,
+    "id": 77,
     "title": "HR Automation Systems: Complete Guide & Expert Strategies",
     "slug": "hr-automation-systems",
     "description": "Complete guide to hr automation systems - proven strategies, tools, and techniques for 2025",
@@ -2028,7 +1875,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 83,
+    "id": 78,
     "title": "Instagram Algorithm Secrets: Master the 2025 Algorithm",
     "slug": "instagram-algorithm-secrets-master-2025",
     "description": "instagram algorithm, instagram algorithm 2025, instagram reach - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
@@ -2045,7 +1892,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 86,
+    "id": 81,
     "title": "Instagram Content Strategy for Maximum Engagement 2025",
     "slug": "instagram-content-strategy-maximum-engagement-2025",
     "description": "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
@@ -2062,7 +1909,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 88,
+    "id": 83,
     "title": "Instagram Growth Hacks That Actually Work in 2025",
     "slug": "instagram-growth-hacks-that-work-2025",
     "description": "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
@@ -2079,7 +1926,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 90,
+    "id": 85,
     "title": "Instagram Ignited Success Stories",
     "slug": "instagram-ignited-success-stories",
     "description": "Instagram Ignited Success Stories strategies that work - proven tactics for growth, engagement, and monetization in 2025",
@@ -2096,7 +1943,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 91,
+    "id": 86,
     "title": "Instagram Influencer Marketing: Build Your Personal Brand",
     "slug": "instagram-influencer-marketing-build-personal-brand",
     "description": "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited with 127K+ students...",
@@ -2113,7 +1960,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 93,
+    "id": 88,
     "title": "Instagram Monetization Guide: 15 Proven Ways to Make Money",
     "slug": "instagram-monetization-guide-15-ways-make-money",
     "description": "instagram monetization, make money instagram, instagram income - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
@@ -2130,7 +1977,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 94,
+    "id": 89,
     "title": "Instagram Reels Algorithm: Viral Content Strategy 2025",
     "slug": "instagram-reels-algorithm-viral-content-strategy-2025",
     "description": "instagram reels algorithm, viral reels, reels strategy - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
@@ -2147,7 +1994,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 95,
+    "id": 90,
     "title": "Instagram Reels Guide: Create Viral Content in 2025",
     "slug": "instagram-reels-guide",
     "description": "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
@@ -2164,7 +2011,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 98,
+    "id": 92,
     "title": "Instagram Story Marketing: Advanced Engagement Tactics",
     "slug": "instagram-story-marketing-advanced-engagement-tactics",
     "description": "instagram story marketing, instagram stories, story engagement - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
@@ -2181,7 +2028,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 99,
+    "id": 93,
     "title": "Inventory Management Automation",
     "slug": "inventory-management-automation",
     "description": "Complete guide to inventory management automation - proven strategies, tools, and techniques for 2025",
@@ -2198,7 +2045,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 101,
+    "id": 95,
     "title": "Lead Generation Automation: Complete Guide & Expert",
     "slug": "lead-generation-automation",
     "description": "Complete guide to lead generation automation - proven strategies, tools, and techniques for 2025",
@@ -2215,7 +2062,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 102,
+    "id": 96,
     "title": "Llama 4 Open Source AI Powerhouse",
     "slug": "llama-4-open-source-ai-powerhouse",
     "description": "Llama 4 Open Source AI Powerhouse comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2232,7 +2079,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 106,
+    "id": 100,
     "title": "Make App Automation: Complete Workflow Builder Guide 2025",
     "slug": "make-app-automation",
     "description": "Complete guide to make app automation - proven strategies, tools, and techniques for 2025",
@@ -2249,7 +2096,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 107,
+    "id": 101,
     "title": "Manus AI General Automation Agent",
     "slug": "manus-ai-general-automation-agent",
     "description": "Complete guide to manus ai general automation agent - proven strategies, tools, and techniques for 2025",
@@ -2266,7 +2113,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 110,
+    "id": 103,
     "title": "Monetize With AI: Passive Income Strategies for 2025",
     "slug": "monetize-with-ai",
     "description": "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
@@ -2283,7 +2130,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 111,
+    "id": 104,
     "title": "Most Profitable Digital Product Niches in 2025",
     "slug": "most-profitable-digital-product-niches-2025",
     "description": "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery with 127K+...",
@@ -2300,7 +2147,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 114,
+    "id": 107,
     "title": "N8N API Integration: Connect Any Service with Workflows",
     "slug": "n8n-api-integration-connect-any-service-workflows",
     "description": "n8n api integration, api automation, n8n webhooks - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
@@ -2317,7 +2164,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 117,
+    "id": 110,
     "title": "N8N Database Automation: Automate Your Data Workflows",
     "slug": "n8n-database-automation-automate-data-workflows",
     "description": "n8n database automation, database workflows, automated data processing - Expert guide from the creators of N8N AI Automations with 127K+ students and...",
@@ -2334,7 +2181,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 120,
+    "id": 112,
     "title": "N8N Tutorial: Complete Beginner",
     "slug": "n8n-tutorial-complete-beginners-guide-automation-2025",
     "description": "n8n tutorial, n8n guide, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
@@ -2351,7 +2198,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 121,
+    "id": 113,
     "title": "N8N Zapier Alternative: Why N8N is Superior for Automation",
     "slug": "n8n-zapier-alternative-why-n8n-superior-automation",
     "description": "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+...",
@@ -2368,7 +2215,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 124,
+    "id": 115,
     "title": "Online Course Creation Guide: Build & Sell Courses That",
     "slug": "online-course-creation-guide-build-sell-courses",
     "description": "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in...",
@@ -2385,7 +2232,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 128,
+    "id": 119,
     "title": "Personal Brand Building: Complete Guide & Expert Strategies",
     "slug": "personal-brand-building",
     "description": "Personal Brand Building - comprehensive strategies, tools, and techniques for 2025",
@@ -2402,7 +2249,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 129,
+    "id": 120,
     "title": "Pinterest Automation Marketing",
     "slug": "pinterest-automation-marketing",
     "description": "Complete guide to pinterest automation marketing - proven strategies, tools, and techniques for 2025",
@@ -2419,7 +2266,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 130,
+    "id": 121,
     "title": "Product Launch Strategy: Complete Guide & Expert Strategies",
     "slug": "product-launch-strategy",
     "description": "Product Launch Strategy - comprehensive strategies, tools, and techniques for 2025",
@@ -2436,7 +2283,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 133,
+    "id": 124,
     "title": "Quality Assurance Automation: Complete Guide & Expert",
     "slug": "quality-assurance-automation",
     "description": "Complete guide to quality assurance automation - proven strategies, tools, and techniques for 2025",
@@ -2453,7 +2300,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 134,
+    "id": 125,
     "title": "Qwen 3 Alibaba Open Source LLM",
     "slug": "qwen-3-alibaba-open-source-llm",
     "description": "Qwen 3 Alibaba Open Source LLM - comprehensive strategies, tools, and techniques for 2025",
@@ -2470,7 +2317,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 136,
+    "id": 127,
     "title": "Roocode V3 3 Cline Alternative",
     "slug": "roocode-v3-3-cline-alternative",
     "description": "Roocode V3 3 Cline Alternative - comprehensive strategies, tools, and techniques for 2025",
@@ -2487,7 +2334,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 140,
+    "id": 131,
     "title": "Scale Content Creation: Complete Guide & Expert Strategies",
     "slug": "scale-content-creation",
     "description": "Scale Content Creation - comprehensive strategies, tools, and techniques for 2025",
@@ -2504,7 +2351,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 143,
+    "id": 134,
     "title": "Sell Digital Products on Etsy: Complete Success Guide",
     "slug": "sell-digital-products-on-etsy-complete-success-guide",
     "description": "sell digital products etsy, etsy digital products, etsy passive income - Expert guide from the creators of Digital Products Mastery with 127K+ students...",
@@ -2521,7 +2368,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 145,
+    "id": 136,
     "title": "Social Media Automation: Complete Guide & Expert Strategies",
     "slug": "social-media-automation",
     "description": "Complete guide to social media automation - proven strategies, tools, and techniques for 2025",
@@ -2538,7 +2385,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 146,
+    "id": 137,
     "title": "Social Media Calendar: Complete Guide & Expert Strategies",
     "slug": "social-media-calendar",
     "description": "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2025",
@@ -2555,7 +2402,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 149,
+    "id": 140,
     "title": "TikTok Growth Hacks: Viral Content Strategies for 2025",
     "slug": "tiktok-growth-hacks",
     "description": "TikTok Growth Hacks - comprehensive strategies, tools, and techniques for 2025",
@@ -2572,7 +2419,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 152,
+    "id": 143,
     "title": "Vectorize All In One Rag Platform",
     "slug": "vectorize-all-in-one-rag-platform",
     "description": "Vectorize All In One Rag Platform - comprehensive strategies, tools, and techniques for 2025",
@@ -2589,7 +2436,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 153,
+    "id": 144,
     "title": "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
     "slug": "viral-carousel-guide",
     "description": "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
@@ -2606,7 +2453,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 154,
+    "id": 145,
     "title": "Virtual Influencer Marketing Strategy: Dominate Social Media",
     "slug": "virtual-influencer-marketing-strategy-dominate-social-media",
     "description": "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy with 127K+...",
@@ -2623,7 +2470,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 155,
+    "id": 146,
     "title": "Web Scraping Automation: Complete Guide & Expert Strategies",
     "slug": "web-scraping-automation",
     "description": "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2025",
@@ -2640,7 +2487,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 156,
+    "id": 147,
     "title": "Whop Clipping: Complete Creator Earnings Guide 2025",
     "slug": "whop-clipping",
     "description": "Whop Clipping - comprehensive strategies, tools, and techniques for 2025",
@@ -2657,7 +2504,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 157,
+    "id": 148,
     "title": "Why N8N Is Different: Complete Guide & Expert Strategies",
     "slug": "why-n8n-is-different",
     "description": "Why N8N Is Different - comprehensive strategies, tools, and techniques for 2025",
@@ -2674,7 +2521,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 158,
+    "id": 149,
     "title": "Windsurf AI: Revolutionary Coding Assistant",
     "slug": "windsurf-ai-coding",
     "description": "Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools",
@@ -2691,7 +2538,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 159,
+    "id": 150,
     "title": "Workflow Automation Guide 2025",
     "slug": "workflow-automation-guide",
     "description": "Complete guide to workflow automation guide - proven strategies, tools, and techniques for 2025",
@@ -2708,7 +2555,7 @@ export const allBlogPosts: BlogPost[] = [
     ]
   },
   {
-    "id": 160,
+    "id": 151,
     "title": "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
     "slug": "youtube-shorts-strategy",
     "description": "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2025",
@@ -2740,11 +2587,9 @@ export const categories: string[] = [
   "Trading & Finance"
 ];
 
-// Tags (598)
+// Tags (569)
 export const tags: string[] = [
   "10k followers",
-  "2025",
-  "30-day timeline",
   "500k",
   "500k 2025",
   "500k followers",
@@ -2925,7 +2770,6 @@ export const tags: string[] = [
   "database 2025",
   "database automation systems",
   "database workflows",
-  "deep",
   "deepseek",
   "deepseek 2025",
   "deepseek market disruption",
@@ -2938,7 +2782,6 @@ export const tags: string[] = [
   "different",
   "digital downloads etsy",
   "digital passive income streams",
-  "digital product 2025",
   "digital product ideas",
   "digital product launch",
   "digital product market",
@@ -2999,20 +2842,15 @@ export const tags: string[] = [
   "general",
   "generation",
   "get instagram followers",
-  "google",
-  "google 2025",
   "gpt",
   "gpt 2025",
   "gpt automation",
   "gpt workflow automation",
-  "gpt4o",
-  "gpt4o 2025",
   "gpt5",
   "gpt5 2025",
   "grow instagram followers",
   "growth",
   "guide",
-  "gumroad templates",
   "hacks",
   "hashtag algorithm 2025",
   "hashtag strategy",
@@ -3065,7 +2903,6 @@ export const tags: string[] = [
   "instagram reels algorithm",
   "instagram reels guide",
   "instagram revenue streams",
-  "instagram stickers",
   "instagram stories",
   "instagram story marketing",
   "instagram story strategy",
@@ -3075,14 +2912,12 @@ export const tags: string[] = [
   "integration",
   "inventory",
   "inventory 2025",
-  "inventory automation n8n",
   "inventory management automation",
   "iot",
   "iot 2025",
   "iot automation systems",
   "janus",
   "launch",
-  "launch checklist",
   "launch products",
   "lead",
   "lead 2025",
@@ -3117,8 +2952,6 @@ export const tags: string[] = [
   "marketing",
   "marketing automation",
   "media",
-  "membership site",
-  "membership strategy",
   "mobile",
   "mobile 2025",
   "mobile app automation",
@@ -3145,21 +2978,16 @@ export const tags: string[] = [
   "n8n crm automation",
   "n8n data automation",
   "n8n database automation",
-  "n8n ecommerce automation",
   "n8n for beginners",
   "n8n guide",
   "n8n instagram automation",
   "n8n openai integration",
-  "n8n order processing",
   "n8n social media automation",
   "n8n tutorial",
   "n8n vs zapier",
   "n8n webhooks",
   "n8n workflows",
   "n8n zapier alternative",
-  "notion business",
-  "notion template niches",
-  "notion templates",
   "one",
   "online course business",
   "online course creation",
@@ -3168,7 +2996,6 @@ export const tags: string[] = [
   "open",
   "openai api n8n",
   "opening range breakout",
-  "opportunities",
   "opportunity",
   "optimization",
   "order flow setups",
@@ -3216,14 +3043,12 @@ export const tags: string[] = [
   "quality assurance automation",
   "qwen",
   "rag",
-  "recurring revenue",
   "reels",
   "reels strategy",
   "reels views",
   "research",
   "research 2025",
   "research content marketing",
-  "retention tactics",
   "revolution",
   "roadmap",
   "robotic",
@@ -3255,7 +3080,6 @@ export const tags: string[] = [
   "sell ai art",
   "sell digital products",
   "sell digital products etsy",
-  "sell notion templates",
   "sell online courses",
   "seo",
   "seo 2025",
@@ -3263,7 +3087,6 @@ export const tags: string[] = [
   "shopify",
   "shopify 2025",
   "shopify automation",
-  "shopify automation n8n",
   "shorts",
   "skills",
   "social",
@@ -3280,13 +3103,10 @@ export const tags: string[] = [
   "stories",
   "story",
   "story engagement",
-  "story features",
   "strategy",
-  "subscription model",
   "success",
   "systems",
   "teachable vs gumroad",
-  "tech",
   "technical indicators",
   "telegram",
   "telegram 2025",
@@ -3304,7 +3124,6 @@ export const tags: string[] = [
   "trading discipline",
   "trading psychology",
   "trends",
-  "upgrade",
   "use",
   "validate product idea",
   "vectorize",
@@ -3330,7 +3149,6 @@ export const tags: string[] = [
   "why n8n different",
   "windsurf ai",
   "with",
-  "woocommerce automation n8n",
   "workflow",
   "workflow 2025",
   "workflow automation",
@@ -3342,29 +3160,5 @@ export const tags: string[] = [
   "zapier vs n8n"
 ];
 
-undefined
-
-// Featured posts - Manually curated high-quality posts (19 premium agent-created posts)
-export const featuredPosts: BlogPost[] = allBlogPosts.filter(post =>
-  [
-    "creating-ai-influencers",
-    "topstep-vs-myfundedtrader-comparison",
-    "rsi-trading-strategy-complete-guide",
-    "instagram-growth-2025",
-    "n8n-beginners-guide",
-    "sales-page-psychology",
-    "how-to-sell-templates",
-    "comfyui-advanced-techniques-professional-workflows",
-    "ai-influencer-monetization-complete-guide-2025",
-    "ftmo-challenge-guide-pass-first-attempt-2025",
-    "order-flow-trading-strategy-complete-guide",
-    "futures-trading-psychology-master-emotions-win",
-    "instagram-reels-viral-formula-10m-views-2025",
-    "instagram-hashtag-strategy-2025-what-actually-works",
-    "instagram-content-pillars-build-engaged-audience",
-    "n8n-instagram-automation-complete-growth-workflow",
-    "n8n-crm-automation-pipedrive-hubspot-salesforce",
-    "digital-product-validation-test-idea-before-building",
-    "online-course-platform-comparison-teachable-gumroad-thinkific"
-  ].includes(post.slug)
-);
+// Featured posts (6)
+export const featuredPosts: BlogPost[] = allBlogPosts.filter(post => post.featured).slice(0, 6);
