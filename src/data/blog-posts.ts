@@ -3343,3 +3343,28 @@ export const tags: string[] = [
 ];
 
 undefined
+
+// Featured posts - Manually curated high-quality posts (19 premium agent-created posts)
+export const featuredPosts: BlogPost[] = allBlogPosts.filter(post =>
+  [
+    "creating-ai-influencers",
+    "topstep-vs-myfundedtrader-comparison",
+    "rsi-trading-strategy-complete-guide",
+    "instagram-growth-2025",
+    "n8n-beginners-guide",
+    "sales-page-psychology",
+    "how-to-sell-templates",
+    "comfyui-advanced-techniques-professional-workflows",
+    "ai-influencer-monetization-complete-guide-2025",
+    "ftmo-challenge-guide-pass-first-attempt-2025",
+    "order-flow-trading-strategy-complete-guide",
+    "futures-trading-psychology-master-emotions-win",
+    "instagram-reels-viral-formula-10m-views-2025",
+    "instagram-hashtag-strategy-2025-what-actually-works",
+    "instagram-content-pillars-build-engaged-audience",
+    "n8n-instagram-automation-complete-growth-workflow",
+    "n8n-crm-automation-pipedrive-hubspot-salesforce",
+    "digital-product-validation-test-idea-before-building",
+    "online-course-platform-comparison-teachable-gumroad-thinkific"
+  ].includes(post.slug)
+);

@@ -566,7 +566,7 @@ Source: {{$json["leadSource"]}}
 
 Company Size: {{$json["company"]["employees"]}} employees
 Industry: {{$json["company"]["industry"]}}
-Revenue: ${{$json["company"]["revenue"]}}M
+Revenue: \${{$json["company"]["revenue"]}}M
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 🎯 ACTION REQUIRED
@@ -765,9 +765,9 @@ const newCategory =
 const thresholdCrossed = oldCategory !== newCategory;
 
 // Build activity description
-const activityDescriptions = {
-  'email_open': 'Opened email: ${event.emailSubject}',
-  'email_click': 'Clicked link in email: ${event.linkUrl}',
+const activityDescriptions: Record<string, string> = {
+  'email_open': 'Opened email: [email subject]',
+  'email_click': 'Clicked link in email: [link url]',
   'page_view_pricing': 'Visited pricing page',
   'demo_request': '🔥 REQUESTED DEMO! (Calendly)'
 };
@@ -1260,7 +1260,7 @@ Found {{$input.all().length}} deals stuck in pipeline!
 {{#each $input.all()}}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 Deal: {{this.json.dealName}}
-Value: ${{this.json.value}}
+Value: \${{this.json.value}}
 Stage: {{this.json.stage}} ({{this.json.daysInStage}} days - threshold: {{this.json.threshold}})
 Owner: @{{this.json.assignedTo}}
 Last Activity: {{this.json.daysSinceActivity}} days ago
