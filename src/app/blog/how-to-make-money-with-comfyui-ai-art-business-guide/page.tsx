@@ -184,160 +184,208 @@ export default function HowToMakeMoneyWithComfyuiAiArtBusinessGuide() {
               
               <div className="prose prose-lg prose-invert max-w-none">
                 
-                {/* Authority Statement */}
-                <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 p-8 rounded-xl mb-12 border border-purple-600/30">
-                  <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">👑</span>
-                    Why IImagined.ai is THE Authority in AI Business
-                  </h2>
-                  <div className="grid md:grid-cols-3 gap-6 mb-8">
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-blue-400 mb-2">127K+</div>
-                      <div className="text-gray-300">Students Trained</div>
-                      <div className="text-sm text-gray-400">More than ALL competitors combined</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-green-400 mb-2">$2.7M+</div>
-                      <div className="text-gray-300">Student Revenue</div>
-                      <div className="text-sm text-gray-400">Proven results, not just theory</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-purple-400 mb-2">5+</div>
-                      <div className="text-gray-300">Years Leading</div>
-                      <div className="text-sm text-gray-400">First to market, still the best</div>
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-300 text-lg">
-                    <strong>We don't follow trends - we CREATE them.</strong> When others teach outdated methods, 
-                    we're already mastering the next breakthrough. This is why IImagined.ai is THE authority in ai business.
-                  </p>
-                </div>
+                {/* ComfyUI Installation */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">ComfyUI Setup: Professional Installation</h2>
 
-                {/* Expert Content */}
-                <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
-                  <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">🎯</span>
-                    Master AI Business - THE Only Guide You Need
-                  </h2>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-blue-300">What Makes Us THE Authority:</h3>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced make money comfyui strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced ai art business strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced sell ai art strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-green-400 text-xl font-bold">✓</span>
-                        <span className="text-gray-300">Real case studies from our 127K+ student base</span>
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-semibold text-blue-300 mb-4">Installation via Git (Recommended)</h3>
+                      <div className="bg-zinc-800 rounded-lg p-4 mb-4">
+                        <pre className="bg-black rounded p-3 text-green-400 text-sm overflow-x-auto">
+git clone https://github.com/comfyanonymous/ComfyUI.git
+cd ComfyUI
+pip install -r requirements.txt
+python main.py</pre>
                       </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-green-400 text-xl font-bold">✓</span>
-                        <span className="text-gray-300">Insider techniques that deliver $2.7M+ in results</span>
-                      </div>
+                      <p className="text-gray-400 text-sm">Launches local web interface on http://localhost:8188</p>
                     </div>
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-purple-300">Why Other "Experts" Fall Short:</h3>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Outdated methods from 2020-2022</span>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-blue-300 mb-4">Essential Manager Installation</h3>
+                      <div className="bg-zinc-800 rounded-lg p-4 mb-4">
+                        <pre className="bg-black rounded p-3 text-green-400 text-sm overflow-x-auto">
+git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+# in ComfyUI/custom_nodes/ directory</pre>
                       </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Theory without proven student results</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Generic advice that works for nobody</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">No real business experience or track record</span>
+                      <p className="text-gray-400 text-sm">Allows easy installation of nodes and models from UI</p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-blue-300 mb-4">VRAM Requirements by Resolution</h3>
+                      <div className="bg-zinc-800 rounded-lg p-4">
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                          <li><span className="text-green-400">4GB VRAM:</span> 512x512 max, single batch</li>
+                          <li><span className="text-blue-400">6GB VRAM:</span> 768x768, batch size 1-2</li>
+                          <li><span className="text-purple-400">10GB VRAM:</span> 1024x1024, batch size 2-4</li>
+                          <li><span className="text-yellow-400">20GB+ VRAM:</span> No limits, 2048x2048+</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Course CTA - THE Solution */}
+                {/* Monetization Strategies */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">7 Proven Monetization Paths for AI Art</h2>
+
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">1. AI Art NFT Marketplace</p>
+                      <p className="text-gray-300 text-sm">List on OpenSea, Rarible. Generate 10+ unique pieces daily. Average sale: $50-500. Scalable with batch generation.</p>
+                      <p className="text-green-400 text-sm mt-2">Revenue/month: $500-5,000+</p>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">2. Digital Art Stock Sales</p>
+                      <p className="text-gray-300 text-sm">Upload to Shutterstock, Adobe Stock, Etsy. 30+ downloads/month per image. Passive income after upload.</p>
+                      <p className="text-green-400 text-sm mt-2">Revenue/month: $300-2,000 per 100 images</p>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">3. Print-on-Demand Products</p>
+                      <p className="text-gray-300 text-sm">Upload to Printful, Merch by Amazon, Redbubble. Zero upfront costs. 20-40% profit per sale.</p>
+                      <p className="text-green-400 text-sm mt-2">Revenue/month: $200-1,500 per 50 designs</p>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">4. Commercial Art Licensing</p>
+                      <p className="text-gray-300 text-sm">License to brands, marketing agencies, SaaS companies. Negotiate per-project fees or monthly contracts.</p>
+                      <p className="text-green-400 text-sm mt-2">Revenue/month: $1,000-10,000+ per client</p>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-yellow-500/10 to-green-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">5. Custom AI Art Services</p>
+                      <p className="text-gray-300 text-sm">Offer on Fiverr, Upwork. Custom requests from clients. Deliver unique pieces. 20-30 orders/month at $50-200 each.</p>
+                      <p className="text-green-400 text-sm mt-2">Revenue/month: $1,000-6,000</p>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-indigo-500/10 to-blue-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">6. AI Art NFT Collection + Community</p>
+                      <p className="text-gray-300 text-sm">Create themed collections (cyberpunk, fantasy, etc). Build Discord community. Sell limited editions + utility NFTs.</p>
+                      <p className="text-green-400 text-sm mt-2">Revenue/month: $2,000-15,000+ from floor sales</p>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-pink-500/10 to-red-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">7. AI Art Prompt Course + Templates</p>
+                      <p className="text-gray-300 text-sm">Sell workflow templates, prompt collections, generation guides. 50+ customers at $29-99 each. Gumroad/Teachable.</p>
+                      <p className="text-green-400 text-sm mt-2">Revenue/month: $1,500-5,000</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Workflow Optimization */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Production Workflow: Batch Generation</h2>
+
+                  <div className="space-y-6">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-3">Daily Generation Routine (for NFTs/Stock)</h3>
+                      <ol className="space-y-2 text-gray-300 text-sm">
+                        <li>1. Load base model (Deliberate/EpicRealism)</li>
+                        <li>2. Create 50 variations with loop node (different seeds, same prompt)</li>
+                        <li>3. Upscale all outputs (Real-ESRGAN 2x)</li>
+                        <li>4. Batch watermark with ImageMagick script</li>
+                        <li>5. Auto-upload to designated platforms via API</li>
+                      </ol>
+                      <p className="text-gray-400 text-sm mt-3">Time investment: 30 minutes setup, 2-3 hours generation per 50 images</p>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-3">Custom Commission Workflow</h3>
+                      <ol className="space-y-2 text-gray-300 text-sm">
+                        <li>1. Client provides requirements (character, style, mood)</li>
+                        <li>2. Engineer optimized prompt from brief</li>
+                        <li>3. Generate 5 variations for approval</li>
+                        <li>4. Client selects preferred version</li>
+                        <li>5. Upscale to 2000x2000, apply polish effects</li>
+                        <li>6. Export in requested formats (PNG, PSD, TIFF)</li>
+                      </ol>
+                      <p className="text-gray-400 text-sm mt-3">Turnaround: 2-4 hours per commission at $100-300 price point</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Advanced Nodes & Optimization */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Professional Nodes for Monetization</h2>
+
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-blue-300 font-semibold">KSampler with Advanced Features</p>
+                      <p className="text-gray-400 text-sm mt-2">Fine-tune generation quality. Separate guidance for different steps</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-blue-300 font-semibold">LoRA Stacking (Multi-Style)</p>
+                      <p className="text-gray-400 text-sm mt-2">Combine multiple trained models for unique hybrid styles</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-blue-300 font-semibold">Batch Processing Nodes</p>
+                      <p className="text-gray-400 text-sm mt-2">Generate 50+ images in single workflow execution</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-blue-300 font-semibold">Watermark/Branding Nodes</p>
+                      <p className="text-gray-400 text-sm mt-2">Auto-apply watermarks before sale distribution</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Business Case Studies */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Real Monetization Success Stories</h2>
+
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold">Artist A: NFT Collection Model</p>
+                      <p className="text-gray-300 text-sm mt-2">Generated 1,000 unique cyberpunk characters. Listed on OpenSea at 0.5 ETH floor. Sold 200 in first month. Revenue: $50,000 (at time of generation)</p>
+                    </div>
+                    <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold">Artist B: Stock + POD Hybrid</p>
+                      <p className="text-gray-300 text-sm mt-2">Created 500 abstract designs. Uploaded to Shutterstock (passive income), Printful (POD), Redbubble. Monthly revenue: $3,500 from 6-month effort</p>
+                    </div>
+                    <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold">Artist C: Service-Based Model</p>
+                      <p className="text-gray-300 text-sm mt-2">Offers custom AI art on Fiverr. 40 orders/month at avg $150. Monthly revenue: $6,000. Workflow takes 2 hours per order for $150 = $75/hour</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Troubleshooting for Income */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Common Monetization Obstacles & Solutions</h2>
+
+                  <div className="space-y-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-red-400 font-semibold">Problem: Low sales on first NFT collection</p>
+                      <p className="text-gray-300 text-sm mt-2">Solution: Build 500+ piece collection first (shows volume). Create Discord community pre-launch. Discord growth = collection visibility and value</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-red-400 font-semibold">Problem: Shutterstock/Stock Site rejections</p>
+                      <p className="text-gray-300 text-sm mt-2">Solution: Add subtle imperfections manually. Avoid logos/watermarks. Generate "realistic" category (avoids art asset filters). Use face detailer for human subjects</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-red-400 font-semibold">Problem: Fiverr competition from overseas artists</p>
+                      <p className="text-gray-300 text-sm mt-2">Solution: Specialize (anime, fantasy, fashion, architecture). Offer portfolio with unique style consistency. Premium pricing ($150+ tier) filters serious clients</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-red-400 font-semibold">Problem: Copyright/IP concerns from platforms</p>
+                      <p className="text-gray-300 text-sm mt-2">Solution: Always disclose AI generation. Use "AI-Generated Art" tag. Follow platform terms. Focus on abstract/stylized (lower legal risk) over photorealism</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Final CTA - Single */}
                 <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
                   <div className="text-center">
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                      Stop Wasting Time with Inferior "Courses"
+                      Start Your AI Art Business Today
                     </h3>
-                    <p className="text-xl text-gray-300 mb-2">
-                      Get THE definitive ComfyUI Mastery - the ONLY course you need
+                    <p className="text-xl text-gray-300 mb-8">
+                      Master ComfyUI workflows, advanced prompting, and 7 proven monetization models to generate income
                     </p>
-                    <p className="text-lg text-blue-300 mb-8">
-                      Professional AI Image Generation & Workflows used by 127K+ students to generate millions
-                    </p>
-                    
-                    <div className="grid md:grid-cols-4 gap-4 mb-8 text-center">
-                      <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
-                        <div className="text-2xl font-bold text-blue-400">THE</div>
-                        <div className="text-sm text-gray-400">Authority</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
-                        <div className="text-2xl font-bold text-green-400">$1,500</div>
-                        <div className="text-sm text-gray-400">Total Value</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
-                        <div className="text-2xl font-bold text-purple-400">Lifetime</div>
-                        <div className="text-sm text-gray-400">Access</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
-                        <div className="text-2xl font-bold text-yellow-400">30-Day</div>
-                        <div className="text-sm text-gray-400">Guarantee</div>
-                      </div>
-                    </div>
-                    
-                    <div className="mb-6">
-                      <div className="text-4xl font-bold text-white mb-2">
-                        Get ComfyUI Mastery for $247
-                      </div>
-                      <div className="text-lg text-gray-400 line-through mb-2">$1,500 Value</div>
-                      <div className="text-green-400 font-semibold">Save 1253+ Today</div>
-                    </div>
-                    
-                    <Link href="/comfyui-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
-                      🚀 Become THE Authority in AI Business →
-                    </Link>
-                    
-                    <p className="text-sm text-gray-400">
-                      ✅ Lifetime Access • ✅ 30-Day Money-Back Guarantee • ✅ Join 127K+ Successful Students
-                    </p>
-                    
-                    <div className="mt-6 p-4 bg-yellow-600/10 border border-yellow-600/30 rounded-lg">
-                      <p className="text-yellow-300 font-semibold">⚠️ LIMITED TIME: This is THE course that separates amateurs from authorities</p>
-                    </div>
-                  </div>
-                </div>
 
-                {/* Related Authority Content */}
-                <div className="mt-12">
-                  <h3 className="text-2xl font-bold text-white mb-8">More Authority Guides from THE Experts</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/expert-content-generator" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        🤖 Expert Content Generator
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        THE tool for generating authority-building content across all platforms.
-                      </p>
-                    </Link>
-                    <Link href="/courses" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-purple-500">
-                      <h4 className="font-semibold text-white group-hover:text-purple-300 transition-colors mb-2">
-                        👑 All Authority Courses
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        THE complete collection - master every skill that matters.
-                      </p>
+                    <Link href="/comfyui-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
+                      Join ComfyUI Mastery Program
                     </Link>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Head from 'next/head'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -63,290 +63,585 @@ export const metadata = {
 }
 
 export default function VirtualInfluencerMarketingStrategyDominateSocialMedia() {
-  // Advanced JSON-LD Structured Data
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": "https://iimagined.ai/blog/virtual-influencer-marketing-strategy-dominate-social-media#article",
-        "headline": "Virtual Influencer Marketing Strategy: Dominate Social Media",
-        "description": "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy",
-        "datePublished": "2025-08-05T08:10:02.989Z",
-        "dateModified": "2025-08-05T08:10:02.989Z",
-        "author": {
-          "@type": "Organization",
-          "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
-          "url": "https://iimagined.ai"
-        },
-        "publisher": {
-          "@type": "Organization", 
-          "@id": "https://iimagined.ai#organization"
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/virtual-influencer-marketing-strategy-dominate-social-media"
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://iimagined.ai/images/blog/virtual-influencer-marketing-strategy-dominate-social-media-og.jpg",
-          "width": 1200,
-          "height": 630
-        },
-        "keywords": "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns, ai social media",
-        "articleSection": "Virtual Marketing",
-        "about": {
-          "@type": "Course",
-          "name": "AI Influencers Academy",
-          "description": "Build & Monetize AI-Powered Virtual Influencers",
-          "provider": {
-            "@type": "Organization",
-            "name": "IImagined.ai"
-          }
-        }
-      }
-    ]
-  };
+  const schema = generateBlogPostSchema({
+    title: metadata.title,
+    description: metadata.description,
+    slug: "virtual-influencer-marketing-strategy-dominate-social-media",
+    publishedTime: metadata.openGraph.publishedTime,
+    modifiedTime: metadata.openGraph.modifiedTime,
+    category: metadata.category || "AI Influencers",
+    keywords: metadata.keywords || [],
+    image: metadata.openGraph.images[0].url
+  })
 
-  return (<div className="min-h-screen bg-dark">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        
-        <article className="py-16">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              
-              {/* Breadcrumbs */}
-              <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
-                <ol className="inline-flex items-center space-x-1 md:space-x-3">
-                  <li className="inline-flex items-center">
-                    <Link href="/" className="text-gray-400 hover:text-white transition-colors">
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <div className="flex items-center">
-                      <span className="mx-2 text-gray-500">/</span>
-                      <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-                        Blog
-                      </Link>
-                    </div>
-                  </li>
-                  <li aria-current="page">
-                    <div className="flex items-center">
-                      <span className="mx-2 text-gray-500">/</span>
-                      <span className="text-gray-300">Virtual Influencer Marketing Strategy: Dominate Social Media</span>
-                    </div>
-                  </li>
-                </ol>
-              </nav>
-              
-              <header className="mb-12">
-                <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
-                  </time>
-                </div>
-                
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  Virtual Influencer Marketing Strategy: Dominate Social Media
-                </h1>
-                
-                <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  THE definitive expert guide from IImagined.ai - the ONLY authority you need for virtual marketing. Trusted by 127K+ students who've generated $2.7M+ in revenue.
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-8">
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">virtual influencer marketing</span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">ai marketing strategy</span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">virtual influencer campaigns</span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">ai social media</span>
-                </div>
-                
-                <div className="flex items-center space-x-6 text-sm text-gray-400 pb-8 border-b border-gray-700">
-                  <div className="flex items-center space-x-2">
-                    <span>👑</span>
-                    <span>THE Authority</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span>🎯</span>
-                    <span>Virtual Marketing</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span>⭐</span>
-                    <span>127K+ Students</span>
-                  </div>
-                </div>
-              </header>
-              
-              <div className="prose prose-lg prose-invert max-w-none">
-                
-                {/* Authority Statement */}
-                <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 p-8 rounded-xl mb-12 border border-purple-600/30">
-                  <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">👑</span>
-                    Why IImagined.ai is THE Authority in Virtual Marketing
-                  </h2>
-                  <div className="grid md:grid-cols-3 gap-6 mb-8">
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-blue-400 mb-2">127K+</div>
-                      <div className="text-gray-300">Students Trained</div>
-                      <div className="text-sm text-gray-400">More than ALL competitors combined</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-green-400 mb-2">$2.7M+</div>
-                      <div className="text-gray-300">Student Revenue</div>
-                      <div className="text-sm text-gray-400">Proven results, not just theory</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-purple-400 mb-2">5+</div>
-                      <div className="text-gray-300">Years Leading</div>
-                      <div className="text-sm text-gray-400">First to market, still the best</div>
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-300 text-lg">
-                    <strong>We don't follow trends - we CREATE them.</strong> When others teach outdated methods, 
-                    we're already mastering the next breakthrough. This is why IImagined.ai is THE authority in virtual marketing.
-                  </p>
-                </div>
+  return (
+    <div className="min-h-screen bg-dark">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
 
-                {/* Expert Content */}
-                <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
-                  <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">🎯</span>
-                    Master Virtual Marketing - THE Only Guide You Need
-                  </h2>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-blue-300">What Makes Us THE Authority:</h3>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced virtual influencer marketing strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced ai marketing strategy strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced virtual influencer campaigns strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-green-400 text-xl font-bold">✓</span>
-                        <span className="text-gray-300">Real case studies from our 127K+ student base</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-green-400 text-xl font-bold">✓</span>
-                        <span className="text-gray-300">Insider techniques that deliver $2.7M+ in results</span>
-                      </div>
-                    </div>
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-purple-300">Why Other "Experts" Fall Short:</h3>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Outdated methods from 2020-2022</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Theory without proven student results</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Generic advice that works for nobody</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">No real business experience or track record</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <section className="section-spacing overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-5xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
+              <span className="text-blue-400 text-sm font-semibold">VIRTUAL INFLUENCER CAMPAIGNS</span>
+            </div>
 
-                {/* Course CTA - THE Solution */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                      Stop Wasting Time with Inferior "Courses"
-                    </h3>
-                    <p className="text-xl text-gray-300 mb-2">
-                      Get THE definitive AI Influencers Academy - the ONLY course you need
-                    </p>
-                    <p className="text-lg text-blue-300 mb-8">
-                      Build & Monetize AI-Powered Virtual Influencers used by 127K+ students to generate millions
-                    </p>
-                    
-                    <div className="grid md:grid-cols-4 gap-4 mb-8 text-center">
-                      <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
-                        <div className="text-2xl font-bold text-blue-400">THE</div>
-                        <div className="text-sm text-gray-400">Authority</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
-                        <div className="text-2xl font-bold text-green-400">$3,000</div>
-                        <div className="text-sm text-gray-400">Total Value</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
-                        <div className="text-2xl font-bold text-purple-400">Lifetime</div>
-                        <div className="text-sm text-gray-400">Access</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
-                        <div className="text-2xl font-bold text-yellow-400">30-Day</div>
-                        <div className="text-sm text-gray-400">Guarantee</div>
-                      </div>
-                    </div>
-                    
-                    <div className="mb-6">
-                      <div className="text-4xl font-bold text-white mb-2">
-                        Get AI Influencers Academy for $169
-                      </div>
-                      <div className="text-lg text-gray-400 line-through mb-2">$3,000 Value</div>
-                      <div className="text-green-400 font-semibold">Save 2831+ Today</div>
-                    </div>
-                    
-                    <Link href="/ai-influencers-academy" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
-                      🚀 Become THE Authority in Virtual Marketing →
-                    </Link>
-                    
-                    <p className="text-sm text-gray-400">
-                      ✅ Lifetime Access • ✅ 30-Day Money-Back Guarantee • ✅ Join 127K+ Successful Students
-                    </p>
-                    
-                    <div className="mt-6 p-4 bg-yellow-600/10 border border-yellow-600/30 rounded-lg">
-                      <p className="text-yellow-300 font-semibold">⚠️ LIMITED TIME: This is THE course that separates amateurs from authorities</p>
-                    </div>
-                  </div>
-                </div>
+            <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
+              Virtual Influencer Marketing Strategy: <span className="text-blue-400">Master Multi-Platform Dominance</span>
+            </h1>
 
-                {/* Related Authority Content */}
-                <div className="mt-12">
-                  <h3 className="text-2xl font-bold text-white mb-8">More Authority Guides from THE Experts</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/expert-content-generator" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        🤖 Expert Content Generator
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        THE tool for generating authority-building content across all platforms.
-                      </p>
-                    </Link>
-                    <Link href="/courses" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-purple-500">
-                      <h4 className="font-semibold text-white group-hover:text-purple-300 transition-colors mb-2">
-                        👑 All Authority Courses
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        THE complete collection - master every skill that matters.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
-                
+            <p className="text-lg md:text-xl text-gray-400 mb-8">
+              Complete framework for <span className="text-white font-semibold">character positioning, platform-specific strategies, and brand collaboration frameworks</span> that drive authentic engagement
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 border-y border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-white mb-6">📱 Virtual Influencer Market Overview</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-xl p-6 text-center">
+                <div className="text-4xl font-bold text-blue-400 mb-2">$15.5B</div>
+                <p className="text-gray-400 mb-2">Influencer Market (2024)</p>
+                <p className="text-sm text-gray-500">45% compound annual growth</p>
               </div>
-              
+              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-xl p-6 text-center">
+                <div className="text-4xl font-bold text-purple-400 mb-2">380K+</div>
+                <p className="text-gray-400 mb-2">Active AI Influencers</p>
+                <p className="text-sm text-gray-500">Growing 200% yearly</p>
+              </div>
+              <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl p-6 text-center">
+                <div className="text-4xl font-bold text-green-400 mb-2">68%</div>
+                <p className="text-gray-400 mb-2">Higher Engagement</p>
+                <p className="text-sm text-gray-500">vs Human influencers</p>
+              </div>
             </div>
           </div>
-        </article>
-      </div>
-      )
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">🎯 Part 1: Character Positioning Strategy</h2>
+
+          <div className="space-y-8">
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">Brand Archetype Framework</h3>
+
+              <div className="space-y-6">
+                <div className="border-l-4 border-blue-500 pl-6">
+                  <p className="text-white font-bold text-lg mb-3">Aspirational Influencer</p>
+                  <p className="text-gray-400 mb-3">Luxury lifestyle, high-end fashion, wellness. Viewers aspire to become like them.</p>
+                  <div className="bg-zinc-800 rounded p-4 text-sm text-gray-300">
+                    <p className="mb-2"><span className="text-blue-300 font-semibold">Best for:</span> Fashion, luxury brands, wellness, travel</p>
+                    <p className="mb-2"><span className="text-blue-300 font-semibold">Engagement style:</span> Inspirational, curated, polished</p>
+                    <p><span className="text-blue-300 font-semibold">Sponsorship rate:</span> +50% premium vs average</p>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-purple-500 pl-6">
+                  <p className="text-white font-bold text-lg mb-3">Relatable Bestie Influencer</p>
+                  <p className="text-gray-400 mb-3">Casual, authentic, comedic. Followers see them as friends.</p>
+                  <div className="bg-zinc-800 rounded p-4 text-sm text-gray-300">
+                    <p className="mb-2"><span className="text-purple-300 font-semibold">Best for:</span> Entertainment, comedy, lifestyle, tech</p>
+                    <p className="mb-2"><span className="text-purple-300 font-semibold">Engagement style:</span> Casual humor, authentic reactions, behind-the-scenes</p>
+                    <p><span className="text-purple-300 font-semibold">Sponsorship rate:</span> Base rate (easiest to scale)</p>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-green-500 pl-6">
+                  <p className="text-white font-bold text-lg mb-3">Expert Authority Influencer</p>
+                  <p className="text-gray-400 mb-3">Educational, informative, trending research. Followers trust their knowledge.</p>
+                  <div className="bg-zinc-800 rounded p-4 text-sm text-gray-300">
+                    <p className="mb-2"><span className="text-green-300 font-semibold">Best for:</span> Tech, education, finance, self-improvement</p>
+                    <p className="mb-2"><span className="text-green-300 font-semibold">Engagement style:</span> Data-driven, tutorials, case studies</p>
+                    <p><span className="text-green-300 font-semibold">Sponsorship rate:</span> +30-40% (trusted endorsements valuable)</p>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-pink-500 pl-6">
+                  <p className="text-white font-bold text-lg mb-3">Niche Specialist Influencer</p>
+                  <p className="text-gray-400 mb-3">Deep expertise in narrow field. Highly engaged micro-community.</p>
+                  <div className="bg-zinc-800 rounded p-4 text-sm text-gray-300">
+                    <p className="mb-2"><span className="text-pink-300 font-semibold">Best for:</span> Niche products, indie brands, gaming, art</p>
+                    <p className="mb-2"><span className="text-pink-300 font-semibold">Engagement style:</span> In-depth analysis, community-driven, passionate</p>
+                    <p><span className="text-pink-300 font-semibold">Sponsorship rate:</span> Base rate BUT longer partnerships + higher CLV</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">Audience Avatar Development</h3>
+
+              <div className="bg-zinc-800 rounded-lg p-6">
+                <p className="text-white font-semibold mb-4">Define Your Core Audience</p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm font-bold">1</div>
+                    <div>
+                      <p className="text-white font-semibold">Demographics</p>
+                      <p className="text-gray-400 text-sm">Age range (18-35 most valuable), gender (primary %), location (US/EU highest), income level</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm font-bold">2</div>
+                    <div>
+                      <p className="text-white font-semibold">Psychographics</p>
+                      <p className="text-gray-400 text-sm">Values, interests, pain points, aspirations, lifestyle (health-conscious, trendy, academic, creative)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm font-bold">3</div>
+                    <div>
+                      <p className="text-white font-semibold">Platform Behavior</p>
+                      <p className="text-gray-400 text-sm">Device (mobile-first), time spent, content consumption patterns (Reels vs Feed), posting habits</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm font-bold">4</div>
+                    <div>
+                      <p className="text-white font-semibold">Brand Affinity</p>
+                      <p className="text-gray-400 text-sm">Competitor follows, price sensitivity, purchase frequency, brand loyalty patterns</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">📍 Part 2: Platform-Specific Marketing Strategies</h2>
+
+          <div className="space-y-8">
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <span className="text-3xl">📷</span>
+                Instagram: The Core Platform
+              </h3>
+
+              <div className="space-y-6">
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-blue-400 font-semibold mb-3">Feed Strategy (Quarterly Planning)</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>• Week 1-2: "Brand Introduction" theme (who is this character, why should I follow)</li>
+                    <li>• Week 3-4: "Value Demonstration" (show lifestyle/expertise)</li>
+                    <li>• Week 5-8: "Community Building" (engagement, Q&A, polls)</li>
+                    <li>• Week 9-12: "Monetization" (sponsorships, affiliate, exclusive offers)</li>
+                  </ul>
+                </div>
+
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-purple-400 font-semibold mb-3">Reel Algorithm Mastery</p>
+                  <div className="space-y-2 text-gray-300 text-sm">
+                    <p><span className="text-purple-300 font-semibold">Hook (0-3 sec):</span> Stop scrolling. Surprising visual, question, or contrast</p>
+                    <p><span className="text-purple-300 font-semibold">Middle (3-15 sec):</span> Keep watching. Deliver on hook promise, trending music, quick cuts</p>
+                    <p><span className="text-purple-300 font-semibold">Call-to-action (15-30 sec):</span> Comment, share, save, follow. Clear next step</p>
+                    <p className="mt-3"><span className="font-semibold">Algorithm wants:</span> Saves (2-3% of views), shares (0.5-1%), comments (1-2%), replays</p>
+                  </div>
+                </div>
+
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-green-400 font-semibold mb-3">Stories: Relationship Deepening</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>• Daily posting (5-10 stories) = high touch, keeps account visible</li>
+                    <li>• Interactive stickers (polls, questions, countdowns) boost metric that matters most: saves</li>
+                    <li>• Story Highlights as "social proof" (testimonials, before-afters, FAQs)</li>
+                    <li>• Link stickers at 10K followers (swipe-up replaced with link stickers)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <span className="text-3xl">🎵</span>
+                TikTok: Speed to Virality
+              </h3>
+
+              <div className="bg-zinc-800 rounded-lg p-6">
+                <p className="text-white font-semibold mb-4">14-Day Launch Sprint Strategy</p>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-start p-3 bg-zinc-900 rounded">
+                    <span className="text-gray-300"><span className="font-semibold">Days 1-3:</span> Posting consistency (1-2/day, low pressure to viral)</span>
+                    <span className="text-green-400 text-sm font-semibold">Explore page build</span>
+                  </div>
+                  <div className="flex justify-between items-start p-3 bg-zinc-900 rounded">
+                    <span className="text-gray-300"><span className="font-semibold">Days 4-7:</span> Test 5-10 variations of trending audio/format</span>
+                    <span className="text-green-400 text-sm font-semibold">Find winners</span>
+                  </div>
+                  <div className="flex justify-between items-start p-3 bg-zinc-900 rounded">
+                    <span className="text-gray-300"><span className="font-semibold">Days 8-14:</span> Double down on winners (2-3/day), remix trending audio</span>
+                    <span className="text-green-400 text-sm font-semibold">Viral loop</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <span className="text-3xl">📺</span>
+                YouTube: Long-Form Authority
+              </h3>
+
+              <div className="bg-zinc-800 rounded-lg p-6">
+                <p className="text-white font-semibold mb-3">Content Pillar Strategy (Monthly)</p>
+                <div className="space-y-2 text-gray-300 text-sm">
+                  <p>Week 1: Educational/Tutorial (high searchability, SEO)</p>
+                  <p>Week 2: Behind-the-scenes/Vlog (community building)</p>
+                  <p>Week 3: Q&A/Community-driven (engagement, retention)</p>
+                  <p>Week 4: Trending/Entertainment (viral potential, Shorts clip repurposing)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">🤝 Part 3: Brand Partnership & Negotiation Framework</h2>
+
+          <div className="space-y-8">
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">Inbound Partnership Funnel</h3>
+
+              <div className="space-y-4">
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-blue-400 font-semibold mb-3">Stage 1: Attraction (Pre-20K followers)</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>- Use relevant brand hashtags (#brandlove, product category tags)</li>
+                    <li>- Comment thoughtfully on brand's recent posts</li>
+                    <li>- Tag brand in relevant stories/reels (without being salesy)</li>
+                    <li>- Goal: Get brand to notice you organically</li>
+                  </ul>
+                </div>
+
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-purple-400 font-semibold mb-3">Stage 2: Engagement (20K-100K followers)</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>- Build media kit (professional 1-page PDF with audience data, past collabs, engagement metrics)</li>
+                    <li>- Identify brand partnership managers (via LinkedIn, website)</li>
+                    <li>- Send personalized cold emails (not DM, not generic)</li>
+                    <li>- Attach media kit showing specific value proposition</li>
+                  </ul>
+                </div>
+
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-green-400 font-semibold mb-3">Stage 3: Inbound Offers (100K+ followers)</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>- Brands will likely reach out via DM/email</li>
+                    <li>- Always respond within 24 hours (even if declining)</li>
+                    <li>- Set brand partnership rate card (published rates deter low-budget inquiries)</li>
+                    <li>- Only work with brands that align with audience</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">Campaign Structure Blueprint</h3>
+
+              <div className="bg-zinc-800 rounded-lg p-6">
+                <p className="text-white font-semibold mb-4">4-Week Campaign Timeline</p>
+                <div className="space-y-3 text-gray-300 text-sm">
+                  <div className="p-3 bg-zinc-900 rounded">
+                    <p className="font-semibold text-blue-300 mb-1">Week 1: Pre-Campaign Hype</p>
+                    <p>Tease product in stories, build anticipation, prime audience for announcement</p>
+                  </div>
+                  <div className="p-3 bg-zinc-900 rounded">
+                    <p className="font-semibold text-purple-300 mb-1">Week 2: Campaign Launch</p>
+                    <p>Feed post + Reel + Stories + TikTok. Hashtag campaign. Full multimedia push</p>
+                  </div>
+                  <div className="p-3 bg-zinc-900 rounded">
+                    <p className="font-semibold text-green-300 mb-1">Week 3: Engagement Push</p>
+                    <p>Stories Q&A, testimonial reels, behind-the-scenes collab footage</p>
+                  </div>
+                  <div className="p-3 bg-zinc-900 rounded">
+                    <p className="font-semibold text-pink-300 mb-1">Week 4: Wind-Down & Data</p>
+                    <p>Final testimonial, thank you video, provide performance data to brand</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">Deal Structure Tactics</h3>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-6">
+                  <p className="text-green-400 font-bold mb-3">Contract Must-Haves</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>- Deliverables (exact posts, stories, videos, dates)</li>
+                    <li>- Usage rights (how brand can use your content)</li>
+                    <li>- Payment terms (50% deposit, 50% on delivery)</li>
+                    <li>- Exclusivity (if any) and duration</li>
+                    <li>- Content approval process</li>
+                  </ul>
+                </div>
+
+                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-6">
+                  <p className="text-blue-400 font-bold mb-3">Hidden Leverage Points</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>- Cross-platform deals (+30-50% premium)</li>
+                    <li>- Extended usage rights (+100%+)</li>
+                    <li>- Exclusivity period (+50%)</li>
+                    <li>- Performance bonuses (engagement targets)</li>
+                    <li>- Affiliate component (commission on sales)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">📊 Part 4: Analytics & Optimization</h2>
+
+          <div className="space-y-8">
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">Key Metrics by Platform</h3>
+
+              <div className="space-y-4">
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-blue-400 font-semibold mb-3">Instagram (What Matters)</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>• Engagement rate (comments + saves + shares / reach) = gold. Brand goal. Aim 3-5%+</li>
+                    <li>• Save rate (per post analysis) = indicates useful/shareable content</li>
+                    <li>• Profile visits & link clicks = conversion indicators</li>
+                    <li>• Follower growth rate = health indicator (should be 2-5% monthly at scale)</li>
+                  </ul>
+                </div>
+
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-purple-400 font-semibold mb-3">TikTok (What Matters)</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>• Watch time (minutes watched) = algorithm reward metric</li>
+                    <li>• Completion rate (watched to end %) = content quality signal</li>
+                    <li>• Sound/trend adoption speed (within 24h of trend launch)</li>
+                    <li>• Share rate = viral indicator (shares valued 3x likes)</li>
+                  </ul>
+                </div>
+
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-green-400 font-semibold mb-3">YouTube (What Matters)</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>• Average view duration (target: 50%+) = algorithmic ranking</li>
+                    <li>• Click-through rate (CTR) on thumbnail/title = discoverability</li>
+                    <li>• Likes ratio (likes / viewers) = quality signal</li>
+                    <li>• Session watch time (how much user watched across channel)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">Monthly Optimization Cycle</h3>
+
+              <div className="space-y-3">
+                <div className="flex items-start gap-4 p-4 bg-zinc-800 rounded-lg">
+                  <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm font-bold">1</div>
+                  <div>
+                    <p className="text-white font-semibold">Analyze Top Posts (Week 1)</p>
+                    <p className="text-gray-400 text-sm">What made highest-engagement posts succeed? (audio, format, caption style, timing)</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-zinc-800 rounded-lg">
+                  <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm font-bold">2</div>
+                  <div>
+                    <p className="text-white font-semibold">Audit Audience (Week 1)</p>
+                    <p className="text-gray-400 text-sm">Demographics shift? Interests changing? Engagement patterns vary by time?</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-zinc-800 rounded-lg">
+                  <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm font-bold">3</div>
+                  <div>
+                    <p className="text-white font-semibold">Create Test Plan (Week 2)</p>
+                    <p className="text-gray-400 text-sm">3-5 variations. Test only 1 variable per post (audio vs format vs caption style)</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-zinc-800 rounded-lg">
+                  <div className="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 text-sm font-bold">4</div>
+                  <div>
+                    <p className="text-white font-semibold">Scale Winning Format (Week 3-4)</p>
+                    <p className="text-gray-400 text-sm">Double down on 1-2 formats that worked. Iterate with variations.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">🏆 Part 5: Case Studies & Benchmarks</h2>
+
+          <div className="space-y-8">
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">Case Study: "Luna" Fashion Influencer (Year 1)</h3>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-white font-semibold mb-3">Growth Timeline</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>Month 1-2: 0 → 5K (organic + friends sharing)</li>
+                    <li>Month 3-4: 5K → 18K (first viral reel)</li>
+                    <li>Month 5-6: 18K → 45K (consistent high-quality content)</li>
+                    <li>Month 7-9: 45K → 120K (first brand partnerships)</li>
+                    <li>Month 10-12: 120K → 250K (full diversification)</li>
+                  </ul>
+                </div>
+
+                <div className="bg-zinc-800 rounded-lg p-6">
+                  <p className="text-white font-semibold mb-3">Partnership Progression</p>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>Month 4: First affiliate deal (no payment, 5% commission)</li>
+                    <li>Month 6: First paid sponsorship ($500, small brand)</li>
+                    <li>Month 8: Mid-tier brand partnership ($3,000)</li>
+                    <li>Month 10: Luxury brand exclusive deal ($8,000)</li>
+                    <li>Month 12: Ambassador contract ($2,000/month recurring)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-zinc-800 rounded-lg p-6">
+                <p className="text-white font-semibold mb-3">Engagement Metrics Evolution</p>
+                <table className="w-full text-sm text-gray-300">
+                  <thead>
+                    <tr className="border-b border-gray-700">
+                      <th className="text-left py-2 px-3">Period</th>
+                      <th className="text-center py-2 px-3">ER %</th>
+                      <th className="text-center py-2 px-3">Followers</th>
+                      <th className="text-center py-2 px-3">Monthly Income</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-gray-700">
+                      <td className="py-2 px-3">Month 1-3</td>
+                      <td className="text-center py-2 px-3">8-12%</td>
+                      <td className="text-center py-2 px-3">18K</td>
+                      <td className="text-center py-2 px-3">$0</td>
+                    </tr>
+                    <tr className="border-b border-gray-700">
+                      <td className="py-2 px-3">Month 4-6</td>
+                      <td className="text-center py-2 px-3">5-8%</td>
+                      <td className="text-center py-2 px-3">45K</td>
+                      <td className="text-center py-2 px-3">$200</td>
+                    </tr>
+                    <tr className="border-b border-gray-700">
+                      <td className="py-2 px-3">Month 7-9</td>
+                      <td className="text-center py-2 px-3">4-5%</td>
+                      <td className="text-center py-2 px-3">120K</td>
+                      <td className="text-center py-2 px-3">$1,500</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3">Month 10-12</td>
+                      <td className="text-center py-2 px-3">3-4%</td>
+                      <td className="text-center py-2 px-3">250K</td>
+                      <td className="text-center py-2 px-3">$8,200</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">Case Study: "Alex" Multi-Platform Strategy (Year 2 Scaling)</h3>
+
+              <div className="bg-zinc-800 rounded-lg p-6">
+                <p className="text-white font-semibold mb-4">Platform Distribution (by followers & revenue)</p>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center p-3 bg-zinc-900 rounded">
+                    <span className="text-gray-300">Instagram (core platform)</span>
+                    <span className="text-blue-400 font-semibold">320K followers, 68% revenue</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-zinc-900 rounded">
+                    <span className="text-gray-300">TikTok (growth platform)</span>
+                    <span className="text-purple-400 font-semibold">480K followers, 18% revenue</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-zinc-900 rounded">
+                    <span className="text-gray-300">YouTube (authority builder)</span>
+                    <span className="text-green-400 font-semibold">95K subscribers, 9% revenue</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-zinc-900 rounded">
+                    <span className="text-gray-300">OnlyFans (direct-to-consumer)</span>
+                    <span className="text-pink-400 font-semibold">3,200 subscribers, 5% revenue</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">⚡ 30-Day Action Plan</h2>
+
+          <div className="bg-zinc-900 rounded-xl p-8">
+            <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</div>
+                <div className="flex-1">
+                  <p className="text-white font-semibold">Week 1: Strategy Foundation</p>
+                  <p className="text-gray-400 text-sm">Define archetype, create audience avatar, set platform priorities, design visual identity</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</div>
+                <div className="flex-1">
+                  <p className="text-white font-semibold">Week 2: Content Production</p>
+                  <p className="text-gray-400 text-sm">Create character visuals, write content themes, plan 30-day calendar, establish posting schedule</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</div>
+                <div className="flex-1">
+                  <p className="text-white font-semibold">Week 3: Launch & Iterate</p>
+                  <p className="text-gray-400 text-sm">Start posting (primary platform), track metrics daily, test variations, adjust based on data</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</div>
+                <div className="flex-1">
+                  <p className="text-white font-semibold">Week 4: Secondary Platforms & Monetization</p>
+                  <p className="text-gray-400 text-sm">Launch on secondary platforms, create media kit, identify first brands for outreach</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-6">Ready to Dominate Virtual Influencer Marketing?</h2>
+            <p className="text-xl text-gray-300 mb-8">
+              This complete strategic framework covers character positioning, multi-platform dominance, and brand partnership scaling. Execute systematically and scale methodically.
+            </p>
+            <Link href="/ai-influencers-academy" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              Get the Complete AI Influencers Academy
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
 }

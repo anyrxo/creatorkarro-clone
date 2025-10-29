@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Head from 'next/head'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Advanced SEO Metadata Export
 export const metadata = {

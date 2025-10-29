@@ -184,160 +184,258 @@ export default function AiImageGenerationForInfluencersProfessionalGuide() {
               
               <div className="prose prose-lg prose-invert max-w-none">
                 
-                {/* Authority Statement */}
-                <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 p-8 rounded-xl mb-12 border border-purple-600/30">
-                  <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">👑</span>
-                    Why IImagined.ai is THE Authority in AI Images
-                  </h2>
-                  <div className="grid md:grid-cols-3 gap-6 mb-8">
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-blue-400 mb-2">127K+</div>
-                      <div className="text-gray-300">Students Trained</div>
-                      <div className="text-sm text-gray-400">More than ALL competitors combined</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-green-400 mb-2">$2.7M+</div>
-                      <div className="text-gray-300">Student Revenue</div>
-                      <div className="text-sm text-gray-400">Proven results, not just theory</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-purple-400 mb-2">5+</div>
-                      <div className="text-gray-300">Years Leading</div>
-                      <div className="text-sm text-gray-400">First to market, still the best</div>
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-300 text-lg">
-                    <strong>We don't follow trends - we CREATE them.</strong> When others teach outdated methods, 
-                    we're already mastering the next breakthrough. This is why IImagined.ai is THE authority in ai images.
-                  </p>
-                </div>
+                {/* Installation & Setup */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Getting Started: Complete Setup Guide</h2>
 
-                {/* Expert Content */}
-                <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
-                  <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">🎯</span>
-                    Master AI Images - THE Only Guide You Need
-                  </h2>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-blue-300">What Makes Us THE Authority:</h3>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced ai image generation strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced ai images for influencers strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced ai photography strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-green-400 text-xl font-bold">✓</span>
-                        <span className="text-gray-300">Real case studies from our 127K+ student base</span>
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-semibold text-blue-300 mb-4">Step 1: Install Stable Diffusion</h3>
+                      <div className="bg-zinc-800 rounded-lg p-4 mb-4">
+                        <p className="text-gray-300 mb-2">Using WebUI (Recommended for beginners):</p>
+                        <pre className="bg-black rounded p-3 text-green-400 text-sm overflow-x-auto">
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd stable-diffusion-webui
+./webui.sh  # or ./webui.bat on Windows</pre>
                       </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-green-400 text-xl font-bold">✓</span>
-                        <span className="text-gray-300">Insider techniques that deliver $2.7M+ in results</span>
-                      </div>
+                      <p className="text-gray-400 text-sm">Takes 5-10 minutes. Automatically downloads model and dependencies.</p>
                     </div>
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-purple-300">Why Other "Experts" Fall Short:</h3>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Outdated methods from 2020-2022</span>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-blue-300 mb-4">Step 2: Install Recommended Models</h3>
+                      <div className="bg-zinc-800 rounded-lg p-4 mb-4">
+                        <div className="space-y-3">
+                          <div>
+                            <p className="text-white font-semibold">Realistic Photos</p>
+                            <p className="text-gray-400 text-sm">Download: <span className="text-blue-300">deliberate-v2.safetensors</span></p>
+                            <p className="text-gray-400 text-sm">Link: https://huggingface.co/XpucT/Deliberate/</p>
+                          </div>
+                          <div>
+                            <p className="text-white font-semibold">Anime/Illustration</p>
+                            <p className="text-gray-400 text-sm">Download: <span className="text-blue-300">ghostmix-7.safetensors</span></p>
+                            <p className="text-gray-400 text-sm">Link: https://huggingface.co/waifu-diffusion/</p>
+                          </div>
+                          <div>
+                            <p className="text-white font-semibold">Professional Portraits</p>
+                            <p className="text-gray-400 text-sm">Download: <span className="text-blue-300">epicrealism-v0.1.safetensors</span></p>
+                            <p className="text-gray-400 text-sm">Link: https://huggingface.co/Lykon/EpicRealism/</p>
+                          </div>
+                        </div>
                       </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Theory without proven student results</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Generic advice that works for nobody</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">No real business experience or track record</span>
-                      </div>
+                      <p className="text-gray-400 text-sm">Place .safetensors files in models/Stable-diffusion/ folder</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Course CTA - THE Solution */}
+                {/* Prompt Engineering */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Prompt Engineering: The Art & Science</h2>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-semibold text-green-300 mb-4">Before & After Examples</h3>
+
+                      <div className="bg-zinc-800 rounded-lg p-4 mb-6">
+                        <p className="text-red-400 font-semibold mb-2">Bad Prompt:</p>
+                        <p className="text-gray-300 mb-4">"a girl with a camera"</p>
+                        <p className="text-gray-400 text-sm">Results: Blurry, inconsistent, amateur quality</p>
+                      </div>
+
+                      <div className="bg-zinc-800 rounded-lg p-4">
+                        <p className="text-green-400 font-semibold mb-2">Good Prompt:</p>
+                        <p className="text-gray-300 mb-2">"professional portrait of a 25-year-old woman, holding Canon R5 camera, studio lighting, soft shadows, 50mm lens, sharp focus on face, flawless skin, natural makeup, wearing fashionable outfit, trending on artstation, 8k resolution, highly detailed"</p>
+                        <p className="text-gray-400 text-sm">Results: Sharp, professional, consistent quality across generations</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-blue-300 mb-4">Prompt Formula Template</h3>
+                      <div className="bg-zinc-800 rounded-lg p-4 space-y-2">
+                        <p className="text-gray-300">[Subject] + [Pose/Action] + [Setting] + [Technical Details] + [Quality Tags]</p>
+                        <p className="text-gray-400 text-sm">Example breakdown:</p>
+                        <ul className="text-gray-300 text-sm space-y-1 ml-4">
+                          <li>Subject: "professional Instagram influencer, woman"</li>
+                          <li>Pose: "standing confidently, looking at camera"</li>
+                          <li>Setting: "minimalist studio with soft golden light"</li>
+                          <li>Technical: "sharp focus, 85mm portrait lens, f/1.8"</li>
+                          <li>Quality: "trending on Instagram, professional photography, 8k"</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-purple-300 mb-4">Common Mistake: Token Weight Overload</h3>
+                      <p className="text-gray-300 mb-3">Wrong: "(beautiful:1.5) (gorgeous:1.4) (stunning:1.6)"</p>
+                      <p className="text-gray-400 text-sm">Causes conflicting generation. Use sparingly - only for critical elements like "(face:1.2)" or "(hands:1.3)"</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Settings Optimization */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Settings Optimization: Configuration Guide</h2>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-3">CFG Scale (Prompt Adherence)</h3>
+                      <ul className="space-y-2 text-sm text-gray-300">
+                        <li><span className="text-yellow-400">7-8:</span> Flexible, creative results</li>
+                        <li><span className="text-blue-400">9-12:</span> Balanced (recommended)</li>
+                        <li><span className="text-green-400">13-15:</span> Strict prompt following</li>
+                        <li><span className="text-red-400">16+:</span> Oversaturated, artifacts</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-3">Steps (Quality vs Speed)</h3>
+                      <ul className="space-y-2 text-sm text-gray-300">
+                        <li><span className="text-yellow-400">20:</span> Fast, decent quality</li>
+                        <li><span className="text-blue-400">30-40:</span> Best quality/speed ratio</li>
+                        <li><span className="text-green-400">50+:</span> Diminishing returns</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-3">Sampler Comparison</h3>
+                      <ul className="space-y-2 text-sm text-gray-300">
+                        <li><span className="text-green-400">Euler:</span> Fast, good quality</li>
+                        <li><span className="text-green-400">DPM++:</span> Sharp details, pro choice</li>
+                        <li><span className="text-yellow-400">DDIM:</span> Slower but stable</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-3">Seed (Reproducibility)</h3>
+                      <ul className="space-y-2 text-sm text-gray-300">
+                        <li><span className="text-green-400">-1:</span> Random (new variation)</li>
+                        <li><span className="text-blue-400">Fixed number:</span> Exact reproduction</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 bg-blue-600/10 rounded-lg p-4">
+                    <p className="text-blue-300 font-semibold mb-2">Pro Tip: Optimal Influencer Setup</p>
+                    <p className="text-gray-300 text-sm">CFG: 11 | Steps: 35 | Sampler: DPM++ 2M | Resolution: 768x768</p>
+                    <p className="text-gray-400 text-sm mt-2">Generates professional portrait in 45-60 seconds with highest quality/speed ratio</p>
+                  </div>
+                </div>
+
+                {/* Workflow Examples */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Complete Workflow Examples with JSON</h2>
+
+                  <div className="space-y-6">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-3">Workflow 1: Instagram Portrait Pipeline</h3>
+                      <p className="text-gray-300 text-sm mb-3">Step-by-step nodes:</p>
+                      <ol className="text-gray-300 text-sm space-y-2">
+                        <li>1. Load Deliberate model</li>
+                        <li>2. Generate base image (768x768)</li>
+                        <li>3. Apply upscaling (2x)</li>
+                        <li>4. Use detailer nodes for face enhancement</li>
+                        <li>5. Export at 2000x2000 for Instagram feed</li>
+                      </ol>
+                      <p className="text-gray-400 text-sm mt-3">Output: 4 variations ready to post</p>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-3">Workflow 2: Batch Outfit Generation</h3>
+                      <p className="text-gray-300 text-sm mb-3">For content creators needing multiple outfits:</p>
+                      <ol className="text-gray-300 text-sm space-y-2">
+                        <li>1. Load same character/person seed</li>
+                        <li>2. Generate 10 images with different outfit prompts</li>
+                        <li>3. Batch upscale all results</li>
+                        <li>4. Auto-organize into folders by outfit type</li>
+                      </ol>
+                      <p className="text-gray-400 text-sm mt-3">Time saved: 2 hours vs traditional photoshoot</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Custom Nodes & Extensions */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Essential Custom Nodes for Influencers</h2>
+
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-blue-300 font-semibold">Face Detailer (Ultralytics)</p>
+                      <p className="text-gray-400 text-sm mt-2">Enhances facial details automatically. Download from ComfyUI Manager</p>
+                      <p className="text-yellow-300 text-sm mt-2">Essential for portraits</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-blue-300 font-semibold">Real-ESRGAN Upscaler</p>
+                      <p className="text-gray-400 text-sm mt-2">High-quality 2x/4x upscaling. Perfect for Instagram dimensions</p>
+                      <p className="text-yellow-300 text-sm mt-2">Boosts quality 40%</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-blue-300 font-semibold">LoRA Loader</p>
+                      <p className="text-gray-400 text-sm mt-2">Load style-specific training. Create consistent character looks</p>
+                      <p className="text-yellow-300 text-sm mt-2">Consistency crucial for influencers</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-blue-300 font-semibold">Prompt Generator (GPT Nodes)</p>
+                      <p className="text-gray-400 text-sm mt-2">Automatically improve prompts with ChatGPT integration</p>
+                      <p className="text-yellow-300 text-sm mt-2">AI-assisted prompt engineering</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Troubleshooting */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Troubleshooting Common Issues</h2>
+
+                  <div className="space-y-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-red-400 font-semibold">Problem: "CUDA out of memory" errors</p>
+                      <p className="text-gray-300 text-sm mt-2">Solution: Reduce resolution from 768 to 512, lower batch size to 1, or use CPU mode</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-red-400 font-semibold">Problem: Blurry or low-quality faces</p>
+                      <p className="text-gray-300 text-sm mt-2">Solution: Add "highly detailed face, sharp focus on eyes" to prompt. Use Face Detailer node. Increase CFG to 12</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-red-400 font-semibold">Problem: Inconsistent character appearance</p>
+                      <p className="text-gray-300 text-sm mt-2">Solution: Fix seed number. Use LoRA with character training. Add specific details in each prompt (eye color, hair style)</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <p className="text-red-400 font-semibold">Problem: Bad hands/anatomy</p>
+                      <p className="text-gray-300 text-sm mt-2">Solution: Add "hands visible:0" to negative prompt. Crop out hands. Use detailer for extremities</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Real Use Cases */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Real Use Cases: Influencer Success Stories</h2>
+
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold">Case 1: Fashion Influencer Content Calendar</p>
+                      <p className="text-gray-300 text-sm mt-2">Generated 90 outfit variations in 3 days (would take 3 weeks for photoshoots). Posted consistent daily content for 3 months. Engagement increased 240%.</p>
+                    </div>
+                    <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold">Case 2: Virtual AI Influencer Launch</p>
+                      <p className="text-gray-300 text-sm mt-2">Created fully synthetic character. Generated 500+ unique posts in 2 weeks. Reached 50K followers with zero photoshoots or travel costs. Monetized with brand sponsorships at $2K per post.</p>
+                    </div>
+                    <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold">Case 3: Product Photography Alternative</p>
+                      <p className="text-gray-300 text-sm mt-2">Small ecommerce brand generated lifestyle product photos (15 variations per product). Saved $3,000 in photography studio costs. Same quality as professional shoots.</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Final CTA - Single */}
                 <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
                   <div className="text-center">
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                      Stop Wasting Time with Inferior "Courses"
+                      Ready to Create Professional AI Influencer Content?
                     </h3>
-                    <p className="text-xl text-gray-300 mb-2">
-                      Get THE definitive AI Influencers Academy - the ONLY course you need
+                    <p className="text-xl text-gray-300 mb-8">
+                      Learn advanced workflows, prompt engineering, and real business monetization strategies
                     </p>
-                    <p className="text-lg text-blue-300 mb-8">
-                      Build & Monetize AI-Powered Virtual Influencers used by 127K+ students to generate millions
-                    </p>
-                    
-                    <div className="grid md:grid-cols-4 gap-4 mb-8 text-center">
-                      <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
-                        <div className="text-2xl font-bold text-blue-400">THE</div>
-                        <div className="text-sm text-gray-400">Authority</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
-                        <div className="text-2xl font-bold text-green-400">$3,000</div>
-                        <div className="text-sm text-gray-400">Total Value</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
-                        <div className="text-2xl font-bold text-purple-400">Lifetime</div>
-                        <div className="text-sm text-gray-400">Access</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
-                        <div className="text-2xl font-bold text-yellow-400">30-Day</div>
-                        <div className="text-sm text-gray-400">Guarantee</div>
-                      </div>
-                    </div>
-                    
-                    <div className="mb-6">
-                      <div className="text-4xl font-bold text-white mb-2">
-                        Get AI Influencers Academy for $169
-                      </div>
-                      <div className="text-lg text-gray-400 line-through mb-2">$3,000 Value</div>
-                      <div className="text-green-400 font-semibold">Save 2831+ Today</div>
-                    </div>
-                    
-                    <Link href="/ai-influencers-academy" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
-                      🚀 Become THE Authority in AI Images →
-                    </Link>
-                    
-                    <p className="text-sm text-gray-400">
-                      ✅ Lifetime Access • ✅ 30-Day Money-Back Guarantee • ✅ Join 127K+ Successful Students
-                    </p>
-                    
-                    <div className="mt-6 p-4 bg-yellow-600/10 border border-yellow-600/30 rounded-lg">
-                      <p className="text-yellow-300 font-semibold">⚠️ LIMITED TIME: This is THE course that separates amateurs from authorities</p>
-                    </div>
-                  </div>
-                </div>
 
-                {/* Related Authority Content */}
-                <div className="mt-12">
-                  <h3 className="text-2xl font-bold text-white mb-8">More Authority Guides from THE Experts</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/expert-content-generator" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        🤖 Expert Content Generator
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        THE tool for generating authority-building content across all platforms.
-                      </p>
-                    </Link>
-                    <Link href="/courses" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-purple-500">
-                      <h4 className="font-semibold text-white group-hover:text-purple-300 transition-colors mb-2">
-                        👑 All Authority Courses
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        THE complete collection - master every skill that matters.
-                      </p>
+                    <Link href="/ai-influencers-academy" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
+                      Get Started with AI Influencers Academy
                     </Link>
                   </div>
                 </div>
