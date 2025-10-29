@@ -115,7 +115,7 @@ export default function StoryPage() {
             <div className="relative">
               <div className="max-w-5xl mx-auto mt-6">
                 <TypingAnimation
-                  text="From zero followers to building a multi-million dollar creator empire. This is how I transformed passion into profit using AI, automation, and proven systems."
+                  text="From marketing agency grunt work to AI influencer empire, futures trader, and digital product mogul. This is the unconventional path nobody talks about."
                   className="text-2xl md:text-3xl text-white leading-relaxed font-medium drop-shadow-lg"
                   duration={40}
                 />
@@ -155,24 +155,32 @@ export default function StoryPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl"></div>
               <div className="relative z-10">
                 <p className="text-lg md:text-xl lg:text-2xl font-medium bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent mb-4">
-                  "What started as me posting random stuff online has somehow turned into a 7-figure business."
+                  "I went from managing Instagram accounts for influencers to creating AI influencers that outperform real ones. Then I started trading S&P 500 futures. Now I teach all of it."
                 </p>
                 <p className="text-base md:text-lg text-zinc-300 italic">
-                  - From zero to millions, one system at a time
+                  - The evolution nobody expected
                 </p>
               </div>
             </div>
 
             <p>
-              Hey, I'm Anyro. I create content, build businesses, and teach others how to do the same. But here's the truth - I started out completely lost, just like you might be right now.
+              Hey, I'm Anyro. Most people try to sell you one thing. I'm going to tell you the truth: <strong className="text-blue-400">you need to pick something and actually get good at it.</strong> Not dabble. Not "try it out." Get obsessed.
             </p>
 
             <p>
-              I was watching every YouTube video, buying every course, trying to find my path. But instead of chasing quick wins, I went deep on what actually fascinated me - AI, automation, and content creation. That obsession changed everything.
+              I started running a marketing agency for influencers. Real humans with real egos and real drama. I was scheduling posts, negotiating brand deals, managing DMs. The margins were shit and the headaches were constant. But I learned <em className="text-purple-400">how the game actually works</em> - what makes content pop, how algorithms reward consistency, why certain accounts blow up overnight.
             </p>
 
             <p>
-              I started experimenting with everything - building AI influencers that generate income 24/7, automating entire businesses with N8N, creating viral content with ComfyUI, mastering the algorithm on every platform, and packaging my knowledge into digital products. Each success built on the last, and suddenly I wasn't just learning - I was earning.
+              Then I asked myself: <strong className="text-yellow-400">"What if I could remove the human?"</strong> That's when AI influencers clicked. ComfyUI, SDXL, graphic cards rendering 24/7, Hunyuan, Wan - I dove deep into the tech stack. Built virtual influencers that never complained, never asked for more money, and generated content on command. <span className="text-green-400 font-semibold">Higher profit margins. Zero drama.</span>
+            </p>
+
+            <p>
+              While that was running, I got curious about futures trading. Started with S&P 500, added Nasdaq and gold. Learned how to read order flow, not just stare at candlesticks like an idiot. Started with my own capital, then moved into prop firms for leverage. Built enough consistency that I launched <strong className="text-blue-400">FuturesHive.com</strong> to teach others the exact process.
+            </p>
+
+            <p>
+              Then came the obvious move: <strong className="text-purple-400">digital products.</strong> I had knowledge people wanted. Why not package it? I turned everything I learned - AI workflows, trading strategies, content systems - into courses that sell while I sleep. That led to launching <strong className="text-pink-400">1abel.com</strong>, a clothing brand, because why not test another vertical?
             </p>
 
             <div
@@ -207,15 +215,23 @@ export default function StoryPage() {
             </div>
 
             <p>
-              Here's what I discovered: success isn't about picking one thing - it's about stacking skills that multiply each other. My AI influencers drive traffic to my digital products. My N8N automations handle the backend while I sleep. ComfyUI lets me create content at scale. Going viral brings in the audience. And digital products turn that audience into revenue. It's all connected.
+              Here's the pattern I see everywhere: <strong className="text-red-400">people fail because they're lazy, not because they're stupid.</strong> They want the result without the reps. They want to "try" five things instead of mastering one. They watch YouTube for 6 hours but won't spend 30 minutes actually building something.
             </p>
 
             <p>
-              IImagined isn't just another course. It's the exact blueprint for all 5 systems that built my empire. No fluff, no theory - just proven methods: AI influencers, N8N automations, ComfyUI workflows, viral content strategies, and digital product funnels. Everything that took me to $3M+, and everything my students are using to build their own success.
+              <span className="text-2xl font-bold text-yellow-400">The truth?</span> You can make money with ANY of this stuff - AI influencers, content creation, trading, digital products, e-commerce, whatever. But you have to <em className="text-purple-400 font-semibold">pick one and go insane on it.</em> Not for a week. Not for a month. Until you're better than 95% of people talking about it.
             </p>
 
             <p>
-              Look, I'm not special. I don't have some secret talent. I just found what works and went all in. These 5 methods aren't random - they're the future of online business. Master them now while most people are still figuring out basic social media.
+              That's what IImagined is: <strong className="text-blue-400">the condensed version of everything that actually worked.</strong> No fluff about "finding your why" or "mindset hacks." Just the technical breakdowns, the exact workflows, the tools I use daily. AI influencer creation with ComfyUI and SDXL. Trading futures with real order flow strategies. Building digital products that convert. Instagram growth that isn't just posting pretty pictures.
+            </p>
+
+            <p className="text-xl font-semibold text-green-400">
+              Pick one. Master it. Stack money. Then pick the next one.
+            </p>
+
+            <p>
+              Look, I'm not here to motivate you with quotes and morning routines. I'm here to show you what's possible when you stop being lazy and actually commit to one path. There are <span className="text-yellow-400 font-bold">infinite ways to make money</span> - but only if you're willing to do the actual work.
             </p>
 
             <div
@@ -230,20 +246,24 @@ export default function StoryPage() {
                   duration={100}
                 />
                 <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-zinc-100 font-medium">
-                  To help as many people as possible escape the 9-5, build real wealth through content, and actually enjoy their life while doing it.
+                  To prove that you can start with nothing, pick literally anything, go all in, and build a life most people only dream about.
                 </p>
                 <p className="text-base md:text-lg text-zinc-300 mt-4 italic">
-                  Because making money online shouldn't feel like torture.
+                  Stop dabbling. Start dominating.
                 </p>
               </div>
             </div>
 
             <p>
-              When I'm not working (which is rare because I'm obsessed with this stuff), I'm probably traveling somewhere random, trying weird foods, or deep in a YouTube rabbit hole learning something new. Living an interesting life makes creating content way easier.
+              When I'm not working on one of these businesses, I'm probably testing a new vertical, diving into some random technical rabbit hole, or figuring out how to optimize something nobody else is paying attention to. <strong className="text-blue-400">Obsession is the cheat code.</strong>
             </p>
 
             <p>
-              Whether you're at zero or already making money, there's always another level. I'm here to help you hit it. Let's get after it.
+              Bottom line: <span className="text-yellow-400 font-bold">you don't need permission, you don't need "the perfect idea," and you don't need more information.</span> You need to pick something real - AI, trading, content, products, whatever - and execute until you're undeniable. That's what I did. That's what my students are doing. That's what you can do if you stop being lazy.
+            </p>
+
+            <p className="text-xl font-semibold text-purple-400">
+              Whether you're at zero or already making money, there's always another level. Let's get after it.
             </p>
           </div>
 
@@ -253,28 +273,32 @@ export default function StoryPage() {
             className={`mt-16 text-center bg-zinc-900/50 rounded-2xl p-6 md:p-8 scroll-fade-up ${ctaAnimation.isVisible ? 'visible' : ''}`}
           >
             <BlurIn
-              word="Ready to start your journey?"
+              word="Ready to pick your path?"
               className="text-2xl md:text-3xl font-bold mb-4"
               duration={0.8}
             />
             <p className="text-lg md:text-xl text-zinc-200 mb-8 leading-relaxed">
-              Join 4,000+ students who have already transformed their passion into profitable businesses using my proven systems.
+              Join 4,000+ students who stopped dabbling and started dominating. Pick one. Master it. Stack money.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm md:text-base text-zinc-200">
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✓</span>
-                <span>AI Automation Mastery</span>
+                <span>AI Influencer Systems</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✓</span>
-                <span>Viral Content Systems</span>
+                <span>Futures Trading Strategies</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✓</span>
-                <span>Digital Product Empire</span>
+                <span>Digital Product Funnels</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span>Content That Converts</span>
               </div>
             </div>
-            <Link href="/instagram-ignited" className="inline-block focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full" aria-label="Start your transformation with Instagram Ignited course">
+            <Link href="/instagram-ignited" className="inline-block focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full" aria-label="Stop being lazy and start your transformation">
               <ShimmerButton
                 className="shadow-2xl hover:shadow-blue-500/25 transition-all duration-300"
                 shimmerColor="#ffffff"
@@ -283,7 +307,7 @@ export default function StoryPage() {
                 borderRadius="9999px"
               >
                 <span className="whitespace-nowrap text-lg font-bold px-8 py-3">
-                  Start Your Transformation
+                  Stop Being Lazy. Start Here
                 </span>
               </ShimmerButton>
             </Link>
