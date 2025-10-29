@@ -155,10 +155,10 @@ export default function StoryPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl"></div>
               <div className="relative z-10">
                 <p className="text-lg md:text-xl lg:text-2xl font-medium bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent mb-4">
-                  "I manage real influencers AND create AI influencers. I trade prop firms AND my own capital. I run agencies AND teach digital products. Seven years of mastery, packaged for anyone willing to work."
+                  "Most people pick one thing. I mastered four. Instagram growth for real influencers. AI influencer systems that scale infinitely. Futures trading that compounds capital. Digital products that sell on autopilot. Seven years of mistakes, wins, and systems—now yours."
                 </p>
                 <p className="text-base md:text-lg text-zinc-300 italic">
-                  - Real + AI = Unfair Advantage
+                  - Four income streams. One unfair advantage.
                 </p>
               </div>
             </div>
@@ -291,19 +291,19 @@ export default function StoryPage() {
             <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm md:text-base text-zinc-200">
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✓</span>
-                <span>Real + AI Influencer Systems</span>
+                <span>Instagram Ignited (Growth & Monetization)</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✓</span>
-                <span>Prop Firm + Personal Trading</span>
+                <span>AI Influencers (ComfyUI & Virtual Content)</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✓</span>
-                <span>Digital Product Creation</span>
+                <span>Futures Trading (Prop Firms & Personal Capital)</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✓</span>
-                <span>Agency Management + Brand Deals</span>
+                <span>Digital Products (Creation & Launch Systems)</span>
               </div>
             </div>
             <Link href="/instagram-ignited" className="inline-block focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full" aria-label="Stop being lazy and start your transformation">

@@ -376,19 +376,490 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Technical Deep Dive: ComfyUI Workflows for AI Influencers</h2>
+
+            <div className="bg-zinc-900 rounded-xl p-8 mb-8">
+                <h3 className="text-2xl font-bold text-purple-400 mb-6">Workflow #1: Character Consistency System</h3>
+
+                <div className="bg-zinc-800 rounded-lg p-6 mb-6">
+                    <h4 className="text-white font-semibold mb-4">Node Setup for Perfect Face Consistency</h4>
+                    <div className="bg-dark rounded p-4 font-mono text-sm text-gray-300 overflow-x-auto">
+                        <pre>{`// ComfyUI Workflow Structure
+LoadCheckpoint → SDXL 1.0 Base
+  ↓
+LoadLoRA → Your Character LoRA (weight: 0.8-1.0)
+  ↓
+CLIPTextEncode (Positive) → "Professional photo of [character name],
+high quality portrait, detailed face, consistent features,
+studio lighting, 8k resolution"
+  ↓
+CLIPTextEncode (Negative) → "deformed face, inconsistent features,
+blurry, low quality, different person, mutations"
+  ↓
+KSampler → Steps: 30-40, CFG: 7-8, Sampler: DPM++ 2M Karras
+  ↓
+VAEDecode → Output Image
+
+Advanced Nodes:
++ IPAdapter (for reference image consistency)
++ ControlNet (for pose control)
++ FaceDetailer (for enhanced facial features)
++ Ultimate SD Upscale (for 4K output)`}</pre>
+                    </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-zinc-800 rounded-lg p-6">
+                        <h4 className="text-blue-400 font-semibold mb-3">Critical Settings</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>Seed: Fix seed for consistent results</li>
+                            <li>LoRA Weight: 0.8-1.0 for strong character lock</li>
+                            <li>CFG Scale: 7-8 (higher = more prompt adherence)</li>
+                            <li>Steps: 30-40 (quality vs speed balance)</li>
+                            <li>Sampler: DPM++ 2M Karras or Euler a</li>
+                            <li>Resolution: 512x768 → upscale to 2048x3072</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-6">
+                        <h4 className="text-green-400 font-semibold mb-3">Pro Tips</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>Generate 50+ images before training LoRA</li>
+                            <li>Use same lighting keywords in every prompt</li>
+                            <li>Keep background simple during training</li>
+                            <li>Test LoRA at different weights (0.6-1.0)</li>
+                            <li>Combine with FaceID for ultimate consistency</li>
+                            <li>Always use negative embeddings (EasyNegative)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-purple-400 mb-6">Workflow #2: Batch Content Generator</h3>
+
+                <div className="bg-zinc-800 rounded-lg p-6 mb-6">
+                    <h4 className="text-white font-semibold mb-4">Generate 30 Days of Content in 1 Hour</h4>
+                    <div className="bg-dark rounded p-4 font-mono text-sm text-gray-300 overflow-x-auto">
+                        <pre>{`// Automated Batch Workflow
+LoadCheckpoint → SDXL Turbo (for speed)
+  ↓
+LoadLoRA → Character LoRA
+  ↓
+PromptSchedule → CSV with 30 different scenarios:
+  - "at coffee shop, casual outfit, morning light"
+  - "gym workout, athletic wear, motivated expression"
+  - "beach sunset, summer dress, relaxed vibe"
+  - "office setting, professional attire, confident"
+  - ... (26 more scenarios)
+  ↓
+LoopExecutor → Batch Size: 30
+  ↓
+ControlNet → Pose guidance from stock photos
+  ↓
+RandomSeedGenerator → Unique variations
+  ↓
+SaveImage → Auto-numbering: influencer_001.png
+  ↓
+PNGInfo Saver → Embed metadata for tracking`}</pre>
+                    </div>
+                </div>
+
+                <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6">
+                    <h4 className="text-xl font-bold text-blue-400 mb-3">Automation Stack</h4>
+                    <p className="text-gray-300 mb-4">Connect ComfyUI to your complete content pipeline:</p>
+                    <div className="space-y-3 text-gray-300">
+                        <div className="flex items-start gap-3">
+                            <span className="text-blue-400">1.</span>
+                            <div>
+                                <span className="font-semibold">ComfyUI API</span> → Generate images via API calls
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <span className="text-blue-400">2.</span>
+                            <div>
+                                <span className="font-semibold">N8N Workflow</span> → Trigger generation daily at 6 AM
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <span className="text-blue-400">3.</span>
+                            <div>
+                                <span className="font-semibold">GPT-4 Integration</span> → Generate captions matching your character voice
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <span className="text-blue-400">4.</span>
+                            <div>
+                                <span className="font-semibold">Buffer/Later</span> → Auto-schedule to Instagram, TikTok, Twitter
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <span className="text-blue-400">5.</span>
+                            <div>
+                                <span className="font-semibold">Analytics Tracking</span> → Monitor engagement, optimize timing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Complete Tool Comparison: Building Your Tech Stack</h2>
+
+            <div className="overflow-x-auto mb-8">
+                <table className="w-full border-collapse bg-zinc-800 rounded-xl overflow-hidden">
+                    <thead>
+                        <tr className="bg-zinc-700">
+                            <th className="text-left py-4 px-6 text-white font-bold">Tool</th>
+                            <th className="text-left py-4 px-6 text-white font-bold">Purpose</th>
+                            <th className="text-center py-4 px-6 text-white font-bold">Cost</th>
+                            <th className="text-center py-4 px-6 text-white font-bold">Difficulty</th>
+                            <th className="text-left py-4 px-6 text-white font-bold">Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr className="border-t border-zinc-700">
+                            <td className="py-4 px-6 text-white font-semibold">ComfyUI + SDXL</td>
+                            <td className="py-4 px-6 text-gray-300">Image generation</td>
+                            <td className="py-4 px-6 text-center text-green-400">Free</td>
+                            <td className="py-4 px-6 text-center text-orange-400">Hard</td>
+                            <td className="py-4 px-6 text-gray-300">Full control, consistency</td>
+                        </tr>
+                        <tr className="border-t border-zinc-700 bg-zinc-800/50">
+                            <td className="py-4 px-6 text-white font-semibold">Midjourney</td>
+                            <td className="py-4 px-6 text-gray-300">Quick variations</td>
+                            <td className="py-4 px-6 text-center text-yellow-400">$30/mo</td>
+                            <td className="py-4 px-6 text-center text-green-400">Easy</td>
+                            <td className="py-4 px-6 text-gray-300">Artistic backgrounds</td>
+                        </tr>
+                        <tr className="border-t border-zinc-700">
+                            <td className="py-4 px-6 text-white font-semibold">ChatGPT Plus</td>
+                            <td className="py-4 px-6 text-gray-300">Caption writing</td>
+                            <td className="py-4 px-6 text-center text-yellow-400">$20/mo</td>
+                            <td className="py-4 px-6 text-center text-green-400">Easy</td>
+                            <td className="py-4 px-6 text-gray-300">Consistent voice</td>
+                        </tr>
+                        <tr className="border-t border-zinc-700 bg-zinc-800/50">
+                            <td className="py-4 px-6 text-white font-semibold">N8N</td>
+                            <td className="py-4 px-6 text-gray-300">Workflow automation</td>
+                            <td className="py-4 px-6 text-center text-green-400">$20/mo</td>
+                            <td className="py-4 px-6 text-center text-yellow-400">Medium</td>
+                            <td className="py-4 px-6 text-gray-300">End-to-end automation</td>
+                        </tr>
+                        <tr className="border-t border-zinc-700">
+                            <td className="py-4 px-6 text-white font-semibold">ElevenLabs</td>
+                            <td className="py-4 px-6 text-gray-300">Voice generation</td>
+                            <td className="py-4 px-6 text-center text-yellow-400">$11/mo</td>
+                            <td className="py-4 px-6 text-center text-green-400">Easy</td>
+                            <td className="py-4 px-6 text-gray-300">Audio content, reels</td>
+                        </tr>
+                        <tr className="border-t border-zinc-700 bg-zinc-800/50">
+                            <td className="py-4 px-6 text-white font-semibold">D-ID / HeyGen</td>
+                            <td className="py-4 px-6 text-gray-300">Talking head videos</td>
+                            <td className="py-4 px-6 text-center text-red-400">$50/mo</td>
+                            <td className="py-4 px-6 text-center text-green-400">Easy</td>
+                            <td className="py-4 px-6 text-gray-300">Video influencers</td>
+                        </tr>
+                        <tr className="border-t border-zinc-700">
+                            <td className="py-4 px-6 text-white font-semibold">RunPod</td>
+                            <td className="py-4 px-6 text-gray-300">Cloud GPU</td>
+                            <td className="py-4 px-6 text-center text-green-400">$0.50/hr</td>
+                            <td className="py-4 px-6 text-center text-yellow-400">Medium</td>
+                            <td className="py-4 px-6 text-gray-300">No local GPU needed</td>
+                        </tr>
+                        <tr className="border-t border-zinc-700 bg-zinc-800/50">
+                            <td className="py-4 px-6 text-white font-semibold">Buffer</td>
+                            <td className="py-4 px-6 text-gray-300">Social scheduling</td>
+                            <td className="py-4 px-6 text-center text-yellow-400">$15/mo</td>
+                            <td className="py-4 px-6 text-center text-green-400">Easy</td>
+                            <td className="py-4 px-6 text-gray-300">Multi-platform posting</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-white mb-3">Recommended Starter Stack ($50/month)</h3>
+                <div className="grid md:grid-cols-3 gap-4">
+                    <div className="text-gray-300">
+                        <span className="font-semibold text-purple-400">Essential:</span> ComfyUI (free), ChatGPT ($20), N8N ($20)
+                    </div>
+                    <div className="text-gray-300">
+                        <span className="font-semibold text-blue-400">Intermediate:</span> + ElevenLabs ($11), Buffer ($15)
+                    </div>
+                    <div className="text-gray-300">
+                        <span className="font-semibold text-green-400">Professional:</span> + D-ID ($50), Midjourney ($30)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Real Success Stories & Revenue Breakdown</h2>
+
+            <div className="space-y-8">
+                <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-xl p-8">
+                    <div className="flex items-start gap-6">
+                        <div className="w-24 h-24 bg-gradient-to-br from-pink-400 to-purple-600 rounded-full flex-shrink-0"></div>
+                        <div className="flex-1">
+                            <h3 className="text-2xl font-bold text-white mb-2">@AvaAIOfficial - Fashion Influencer</h3>
+                            <p className="text-pink-400 mb-4">127K followers • Created in June 2024</p>
+                            <div className="grid md:grid-cols-2 gap-6 mb-4">
+                                <div>
+                                    <h4 className="text-white font-semibold mb-2">Monthly Revenue</h4>
+                                    <ul className="space-y-2 text-gray-300 text-sm">
+                                        <li>Brand partnerships: $4,200</li>
+                                        <li>Affiliate commissions: $1,800</li>
+                                        <li>Patreon subscribers: $950</li>
+                                        <li>Product placement: $1,500</li>
+                                        <li className="text-green-400 font-bold pt-2 border-t border-gray-700">Total: $8,450/month</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="text-white font-semibold mb-2">Time Investment</h4>
+                                    <ul className="space-y-2 text-gray-300 text-sm">
+                                        <li>Content generation: 2 hrs/week</li>
+                                        <li>Community management: 5 hrs/week</li>
+                                        <li>Brand negotiations: 3 hrs/week</li>
+                                        <li className="text-purple-400 font-bold pt-2 border-t border-gray-700">Total: 10 hrs/week = $212/hour</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="bg-zinc-900/50 rounded-lg p-4">
+                                <p className="text-gray-300 italic">"The key was posting 3x daily with perfect consistency. My AI never gets tired, never has a bad hair day, and never misses a posting schedule."</p>
+                                <p className="text-white font-semibold mt-2">- Creator behind @AvaAIOfficial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl p-8">
+                    <div className="flex items-start gap-6">
+                        <div className="w-24 h-24 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-full flex-shrink-0"></div>
+                        <div className="flex-1">
+                            <h3 className="text-2xl font-bold text-white mb-2">@FitAI_Marcus - Fitness Coach</h3>
+                            <p className="text-blue-400 mb-4">89K followers • Created in August 2024</p>
+                            <div className="grid md:grid-cols-2 gap-6 mb-4">
+                                <div>
+                                    <h4 className="text-white font-semibold mb-2">Monthly Revenue</h4>
+                                    <ul className="space-y-2 text-gray-300 text-sm">
+                                        <li>Supplement sponsors: $3,500</li>
+                                        <li>Workout plans (digital): $2,200</li>
+                                        <li>Gym equipment affiliate: $1,100</li>
+                                        <li>YouTube ad revenue: $650</li>
+                                        <li className="text-green-400 font-bold pt-2 border-t border-gray-700">Total: $7,450/month</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="text-white font-semibold mb-2">Growth Strategy</h4>
+                                    <ul className="space-y-2 text-gray-300 text-sm">
+                                        <li>Posted workout videos via D-ID</li>
+                                        <li>Engaged fitness community daily</li>
+                                        <li>Collaborated with real trainers</li>
+                                        <li>Transparent about AI nature in bio</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl p-8">
+                    <div className="flex items-start gap-6">
+                        <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex-shrink-0"></div>
+                        <div className="flex-1">
+                            <h3 className="text-2xl font-bold text-white mb-2">@TechGuru_AI - Tech Reviewer</h3>
+                            <p className="text-green-400 mb-4">156K followers • Created in May 2024</p>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 className="text-white font-semibold mb-2">Monthly Revenue</h4>
+                                    <ul className="space-y-2 text-gray-300 text-sm">
+                                        <li>Tech company sponsors: $6,800</li>
+                                        <li>Amazon affiliate: $2,400</li>
+                                        <li>Course sales: $3,200</li>
+                                        <li>Newsletter sponsors: $1,100</li>
+                                        <li className="text-green-400 font-bold pt-2 border-t border-gray-700">Total: $13,500/month</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="text-white font-semibold mb-2">Secret Sauce</h4>
+                                    <ul className="space-y-2 text-gray-300 text-sm">
+                                        <li>Mixed AI + real product photos</li>
+                                        <li>Built authority through consistency</li>
+                                        <li>Diversified to newsletter & courses</li>
+                                        <li>Highest revenue per follower</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8 mt-8">
+                <h3 className="text-2xl font-bold text-white mb-6 text-center">Average AI Influencer Economics</h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                    <div className="text-center">
+                        <div className="text-4xl font-bold text-purple-400 mb-2">$0.05-0.15</div>
+                        <p className="text-gray-400">Revenue per follower/month</p>
+                    </div>
+                    <div className="text-center">
+                        <div className="text-4xl font-bold text-blue-400 mb-2">6-9 months</div>
+                        <p className="text-gray-400">To reach 100K followers</p>
+                    </div>
+                    <div className="text-center">
+                        <div className="text-4xl font-bold text-green-400 mb-2">$150-350</div>
+                        <p className="text-gray-400">Monthly operating costs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Frequently Asked Questions</h2>
+
+            <div className="space-y-4">
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">Is it legal to create and monetize AI influencers?</h3>
+                    <p className="text-gray-300">Yes, it's completely legal as long as you disclose the AI nature of your influencer. Instagram, TikTok, and other platforms allow virtual influencers. Many successful AI influencers include "AI-powered" or "Digital persona" in their bios. Transparency actually builds trust with both audiences and brand partners.</p>
+                </div>
+
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">How long does it take to create a consistent AI influencer character?</h3>
+                    <p className="text-gray-300">Initial setup takes 2-3 weeks: 1 week for character design and personality development, 3-5 days generating training images, 2-3 days training your LoRA model, then testing for consistency. After that, content generation is automated and takes just 2-3 hours per week.</p>
+                </div>
+
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">Do I need a powerful GPU to run ComfyUI?</h3>
+                    <p className="text-gray-300">Not necessarily. While a local GPU (RTX 3060+ with 12GB VRAM) is ideal for speed, you can use cloud services like RunPod ($0.50/hour) or Vast.ai. Many creators generate a week's content in 1-2 hours of cloud GPU time, costing only $1-2. For testing, you can even use free Google Colab notebooks.</p>
+                </div>
+
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">How do brands feel about partnering with AI influencers?</h3>
+                    <p className="text-gray-300">Increasingly positive! Brands love the consistency, availability, and lack of controversy. Major companies like Samsung, Prada, and KFC have already partnered with AI influencers. The key is professional communication, meeting deliverables, and transparent disclosure. Some brands specifically seek AI influencers for innovative campaigns.</p>
+                </div>
+
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">Can I create multiple AI influencers?</h3>
+                    <p className="text-gray-300">Absolutely! Many successful creators run 2-5 AI influencers in different niches. Each requires separate training and management, but automation handles most work. Strategy: Master one influencer first (3-6 months), then scale to others. Multiple influencers = diversified income and reduced risk.</p>
+                </div>
+
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">What's the biggest challenge in maintaining an AI influencer?</h3>
+                    <p className="text-gray-300">Maintaining consistency in both appearance and personality. Solutions: Document everything (detailed character bible, prompt templates, engagement guidelines), use fixed seeds and settings in ComfyUI, test all content before posting, and keep detailed logs. The automation handles repetition; you provide creative direction.</p>
+                </div>
+
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">How much can I realistically earn in the first 6 months?</h3>
+                    <p className="text-gray-300">Timeline: Months 1-2: $0 (building follower base). Months 3-4: $200-500 (small brand deals, affiliate). Months 5-6: $1,000-3,000 (consistent sponsorships). By month 12, successful influencers typically earn $5,000-15,000/month. Growth depends on niche, consistency, engagement, and networking.</p>
+                </div>
+
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">Should I focus on Instagram, TikTok, or both?</h3>
+                    <p className="text-gray-300">Start with Instagram for image-based influencers (easier to manage). Add TikTok once you're comfortable (requires more dynamic content). Cross-posting tools help manage both. Fashion/lifestyle = Instagram first. Entertainment/comedy = TikTok first. Tech/education = YouTube + Instagram. Most successful AI influencers are on 2-3 platforms by month 6.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Common Mistakes to Avoid</h2>
+
+            <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-red-400 mb-4">AVOID These Fatal Errors</h3>
+                    <ul className="space-y-3 text-gray-300">
+                        <li className="flex items-start gap-2">
+                            <span className="text-red-400 flex-shrink-0">✗</span>
+                            <span>Inconsistent face/body - kills believability instantly</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-red-400 flex-shrink-0">✗</span>
+                            <span>Posting irregularly - algorithm hates inconsistency</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-red-400 flex-shrink-0">✗</span>
+                            <span>Ignoring comments - engagement is 50% of success</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-red-400 flex-shrink-0">✗</span>
+                            <span>Using celebrity faces - legal nightmare</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-red-400 flex-shrink-0">✗</span>
+                            <span>No personality - boring AI equals zero followers</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-red-400 flex-shrink-0">✗</span>
+                            <span>Hiding AI status - transparency builds trust</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-red-400 flex-shrink-0">✗</span>
+                            <span>Skipping analytics - data drives optimization</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-green-400 mb-4">DO These Success Habits</h3>
+                    <ul className="space-y-3 text-gray-300">
+                        <li className="flex items-start gap-2">
+                            <span className="text-green-400 flex-shrink-0">✓</span>
+                            <span>Train a strong LoRA for perfect consistency</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-green-400 flex-shrink-0">✓</span>
+                            <span>Post 2-3x daily at optimal times</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-green-400 flex-shrink-0">✓</span>
+                            <span>Respond to all comments within 2 hours</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-green-400 flex-shrink-0">✓</span>
+                            <span>Create original, unique characters</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-green-400 flex-shrink-0">✓</span>
+                            <span>Develop deep character bible & voice</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-green-400 flex-shrink-0">✓</span>
+                            <span>Disclose AI in bio and partnerships</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-green-400 flex-shrink-0">✓</span>
+                            <span>Track metrics and iterate constantly</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
       <section
-        
+
         className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Master AI Influencer Creation
             </h2>
-          
+
             <p className="text-xl text-gray-400 mb-8">
             Get the complete system with templates, workflows, and live support
             </p>
-          
+
             <Link
             href="/ai-influencer"
             className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all"

@@ -563,19 +563,424 @@ export default function HowToSellTemplates() {
     </div>
 </section>
 
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Advanced Template Business Strategies</h2>
+
+            <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-zinc-900 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-green-400 mb-4">Build a Template Empire</h3>
+                    <ul className="space-y-3 text-gray-300">
+                        <li className="flex items-start gap-3">
+                            <span className="text-green-400 font-bold">1.</span>
+                            <div>
+                                <p className="font-semibold">Create template collections</p>
+                                <p className="text-sm text-gray-400">Bundle 10-20 related templates for higher prices</p>
+                            </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="text-green-400 font-bold">2.</span>
+                            <div>
+                                <p className="font-semibold">Launch seasonal templates</p>
+                                <p className="text-sm text-gray-400">Holiday, tax season, New Year planning</p>
+                            </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="text-green-400 font-bold">3.</span>
+                            <div>
+                                <p className="font-semibold">Offer customization services</p>
+                                <p className="text-sm text-gray-400">Charge $200-500 for custom versions</p>
+                            </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="text-green-400 font-bold">4.</span>
+                            <div>
+                                <p className="font-semibold">Create membership site</p>
+                                <p className="text-sm text-gray-400">$27-47/month for unlimited templates</p>
+                            </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="text-green-400 font-bold">5.</span>
+                            <div>
+                                <p className="font-semibold">License to businesses</p>
+                                <p className="text-sm text-gray-400">$997-2,997 for commercial rights</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-blue-400 mb-4">Scaling to $100K/Month</h3>
+                    <div className="space-y-4">
+                        <div className="bg-zinc-800 rounded-lg p-4">
+                            <h4 className="text-white font-semibold mb-2">Month 1-3: Foundation</h4>
+                            <ul className="space-y-1 text-sm text-gray-300">
+                                <li>• Create 20-30 templates</li>
+                                <li>• List on Etsy + Gumroad</li>
+                                <li>• Build email list (1,000+)</li>
+                                <li>• Goal: $5-10K/month</li>
+                            </ul>
+                        </div>
+                        <div className="bg-zinc-800 rounded-lg p-4">
+                            <h4 className="text-white font-semibold mb-2">Month 4-6: Growth</h4>
+                            <ul className="space-y-1 text-sm text-gray-300">
+                                <li>• Launch template bundles</li>
+                                <li>• Start paid ads ($500-1K/mo)</li>
+                                <li>• Email list to 5,000+</li>
+                                <li>• Goal: $20-30K/month</li>
+                            </ul>
+                        </div>
+                        <div className="bg-zinc-800 rounded-lg p-4">
+                            <h4 className="text-white font-semibold mb-2">Month 7-12: Scale</h4>
+                            <ul className="space-y-1 text-sm text-gray-300">
+                                <li>• Launch membership ($47/mo)</li>
+                                <li>• Hire virtual assistants</li>
+                                <li>• Affiliate program live</li>
+                                <li>• Goal: $50-100K/month</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Template Business Case Studies</h2>
+
+            <div className="space-y-6">
+                <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-white mb-3">Case Study: Sarah's Notion Template Empire - $18K/Month</h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 className="text-green-400 font-semibold mb-3">Her Strategy:</h4>
+                            <ul className="space-y-2 text-gray-300 text-sm">
+                                <li>• Created Life OS template ($67)</li>
+                                <li>• Built Instagram to 47K followers</li>
+                                <li>• Posted daily template tips</li>
+                                <li>• Email list: 12,400 subscribers</li>
+                                <li>• Weekly newsletter with tips</li>
+                                <li>• Launched 6 template variations</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="text-green-400 font-semibold mb-3">Results After 8 Months:</h4>
+                            <ul className="space-y-2 text-gray-300 text-sm">
+                                <li>• 268 sales per month average</li>
+                                <li>• $17,956/month revenue</li>
+                                <li>• 97% profit margin</li>
+                                <li>• 4.8/5 star rating (890 reviews)</li>
+                                <li>• 47% came from Pinterest</li>
+                                <li>• Works 10 hours/week now</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-white mb-3">Case Study: Mike's Canva Template Store - $31K/Month</h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 className="text-blue-400 font-semibold mb-3">What He Sells:</h4>
+                            <ul className="space-y-2 text-gray-300 text-sm">
+                                <li>• Instagram post bundles (50 templates)</li>
+                                <li>• Priced at $27 each bundle</li>
+                                <li>• 24 different niches covered</li>
+                                <li>• Also offers custom design ($197)</li>
+                                <li>• Membership: $37/mo unlimited</li>
+                                <li>• Affiliate program: 30% commission</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="text-blue-400 font-semibold mb-3">The Numbers:</h4>
+                            <ul className="space-y-2 text-gray-300 text-sm">
+                                <li>• 847 template sales/month ($22,869)</li>
+                                <li>• 234 membership subscribers ($8,658)</li>
+                                <li>• Affiliates bring 38% of sales</li>
+                                <li>• Total: $31,527/month</li>
+                                <li>• Started with $0 budget</li>
+                                <li>• Now makes more than his old job</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-white mb-3">Case Study: Jennifer's Email Template Business - $9.7K/Month</h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 className="text-purple-400 font-semibold mb-3">Her Approach:</h4>
+                            <ul className="space-y-2 text-gray-300 text-sm">
+                                <li>• Cold email templates for sales ($47)</li>
+                                <li>• Welcome sequence bundle ($37)</li>
+                                <li>• Abandoned cart emails ($27)</li>
+                                <li>• All include subject lines & copy</li>
+                                <li>• Free template as lead magnet</li>
+                                <li>• Weekly email marketing tips</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="text-purple-400 font-semibold mb-3">Monthly Performance:</h4>
+                            <ul className="space-y-2 text-gray-300 text-sm">
+                                <li>• 207 total sales per month</li>
+                                <li>• Average order value: $47</li>
+                                <li>• $9,729 monthly revenue</li>
+                                <li>• Email list: 8,900 subscribers</li>
+                                <li>• 18% email-to-sale conversion</li>
+                                <li>• Created all templates in 3 weeks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Common Template Business Mistakes to Avoid</h2>
+
+            <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-red-400 mb-4">Mistake #1: Creating Too Many Templates at Once</h3>
+                    <p className="text-gray-300 mb-3">
+                        New creators make 50 templates before testing the market. Result: wasted time on templates nobody wants.
+                    </p>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <p className="text-green-400 font-semibold mb-2">Do This Instead:</p>
+                        <p className="text-gray-400 text-sm">
+                            Create 5 templates, test which sells best, make 10 variations of the winner. Scale what works.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-red-400 mb-4">Mistake #2: Pricing Too Low</h3>
+                    <p className="text-gray-300 mb-3">
+                        Charging $5 for a template means you need 1,000 sales to make $5K. That's exhausting.
+                    </p>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <p className="text-green-400 font-semibold mb-2">Do This Instead:</p>
+                        <p className="text-gray-400 text-sm">
+                            Bundle templates together for $47-97. You only need 100 sales for $5K. Much more achievable.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-red-400 mb-4">Mistake #3: No Email List</h3>
+                    <p className="text-gray-300 mb-3">
+                        Relying 100% on marketplace traffic means you're building on rented land. Algorithm changes = dead business.
+                    </p>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <p className="text-green-400 font-semibold mb-2">Do This Instead:</p>
+                        <p className="text-gray-400 text-sm">
+                            Offer a free template in exchange for email. Build to 1,000+ subscribers. Launch new templates to your list first.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-red-400 mb-4">Mistake #4: Generic Templates</h3>
+                    <p className="text-gray-300 mb-3">
+                        "Social Media Template" is too broad. You're competing with thousands of creators.
+                    </p>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <p className="text-green-400 font-semibold mb-2">Do This Instead:</p>
+                        <p className="text-gray-400 text-sm">
+                            "Instagram Reels Templates for Real Estate Agents" is specific. You own that micro-niche and charge premium prices.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-red-400 mb-4">Mistake #5: Poor Product Photography</h3>
+                    <p className="text-gray-300 mb-3">
+                        Low-quality mockups scream "amateur." People judge your template quality by your presentation.
+                    </p>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <p className="text-green-400 font-semibold mb-2">Do This Instead:</p>
+                        <p className="text-gray-400 text-sm">
+                            Invest $20 in mockup templates from Creative Market. Professional presentation = 3x higher conversion rates.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-red-400 mb-4">Mistake #6: Ignoring Customer Support</h3>
+                    <p className="text-gray-300 mb-3">
+                        Not responding to questions = negative reviews = dead sales. One bad review tanks your ranking.
+                    </p>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <p className="text-green-400 font-semibold mb-2">Do This Instead:</p>
+                        <p className="text-gray-400 text-sm">
+                            Respond within 24 hours. Include video tutorials. Over-deliver on support. Happy customers leave 5-star reviews.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Template Business Tools & Resources</h2>
+
+            <div className="space-y-6">
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-green-400 mb-4">Essential Design Tools</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-zinc-900 rounded-lg p-4">
+                            <h4 className="text-white font-semibold mb-2">Canva Pro ($12.99/mo)</h4>
+                            <p className="text-gray-400 text-sm mb-2">Best for: Social media templates, graphics, presentations</p>
+                            <p className="text-green-400 text-sm">Why: Easiest tool, 420K+ templates to customize</p>
+                        </div>
+                        <div className="bg-zinc-900 rounded-lg p-4">
+                            <h4 className="text-white font-semibold mb-2">Notion (Free)</h4>
+                            <p className="text-gray-400 text-sm mb-2">Best for: Productivity templates, dashboards, databases</p>
+                            <p className="text-green-400 text-sm">Why: Huge market, easy to duplicate & sell</p>
+                        </div>
+                        <div className="bg-zinc-900 rounded-lg p-4">
+                            <h4 className="text-white font-semibold mb-2">Google Sheets (Free)</h4>
+                            <p className="text-gray-400 text-sm mb-2">Best for: Calculators, trackers, business templates</p>
+                            <p className="text-green-400 text-sm">Why: Everyone uses it, easy to share</p>
+                        </div>
+                        <div className="bg-zinc-900 rounded-lg p-4">
+                            <h4 className="text-white font-semibold mb-2">Figma (Free)</h4>
+                            <p className="text-gray-400 text-sm mb-2">Best for: UI kits, design systems, wireframes</p>
+                            <p className="text-green-400 text-sm">Why: Professional tool, designers pay premium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-blue-400 mb-4">Marketing Tools</h3>
+                    <div className="space-y-3">
+                        <div className="flex items-center justify-between bg-zinc-900 rounded-lg p-3">
+                            <div>
+                                <p className="text-white font-semibold">ConvertKit</p>
+                                <p className="text-gray-400 text-sm">Email marketing & automation</p>
+                            </div>
+                            <span className="text-gray-400 text-sm">Free up to 1K</span>
+                        </div>
+                        <div className="flex items-center justify-between bg-zinc-900 rounded-lg p-3">
+                            <div>
+                                <p className="text-white font-semibold">Tailwind</p>
+                                <p className="text-gray-400 text-sm">Pinterest scheduling & analytics</p>
+                            </div>
+                            <span className="text-gray-400 text-sm">$14.99/mo</span>
+                        </div>
+                        <div className="flex items-center justify-between bg-zinc-900 rounded-lg p-3">
+                            <div>
+                                <p className="text-white font-semibold">Loom</p>
+                                <p className="text-gray-400 text-sm">Video tutorials for customers</p>
+                            </div>
+                            <span className="text-gray-400 text-sm">Free</span>
+                        </div>
+                        <div className="flex items-center justify-between bg-zinc-900 rounded-lg p-3">
+                            <div>
+                                <p className="text-white font-semibold">Hotjar</p>
+                                <p className="text-gray-400 text-sm">See how visitors use your sales page</p>
+                            </div>
+                            <span className="text-gray-400 text-sm">Free tier</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-zinc-800 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-purple-400 mb-4">Recommended Learning Resources</h3>
+                    <ul className="space-y-3 text-gray-300">
+                        <li className="flex items-start gap-3">
+                            <span className="text-purple-400">•</span>
+                            <div>
+                                <p className="font-semibold">Etsy Seller Handbook (Free)</p>
+                                <p className="text-sm text-gray-400">Learn SEO, photography, and selling strategies</p>
+                            </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="text-purple-400">•</span>
+                            <div>
+                                <p className="font-semibold">Skillshare: Template Design Courses</p>
+                                <p className="text-sm text-gray-400">Learn Canva, Notion, and template creation</p>
+                            </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="text-purple-400">•</span>
+                            <div>
+                                <p className="font-semibold">YouTube: "passive income templates" search</p>
+                                <p className="text-sm text-gray-400">Free tutorials from successful template sellers</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Frequently Asked Questions</h2>
+
+            <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-zinc-900 rounded-xl p-6">
+                    <h3 className="text-lg font-bold text-white mb-3">How much money can I realistically make?</h3>
+                    <p className="text-gray-400 text-sm">
+                        Beginners: $500-2,000/month in first 3 months. Intermediate: $5-10K/month after 6 months. Advanced: $20-50K/month after 12+ months with multiple products and email list.
+                    </p>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                    <h3 className="text-lg font-bold text-white mb-3">Do I need design skills?</h3>
+                    <p className="text-gray-400 text-sm">
+                        No. Most successful template sellers use Canva or Notion which require zero design skills. You're solving problems, not creating art.
+                    </p>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                    <h3 className="text-lg font-bold text-white mb-3">How long does it take to create a template?</h3>
+                    <p className="text-gray-400 text-sm">
+                        Simple template: 1-2 hours. Complex template bundle: 4-8 hours. Most templates can be created in a weekend and sold for months.
+                    </p>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                    <h3 className="text-lg font-bold text-white mb-3">What's the best platform to start on?</h3>
+                    <p className="text-gray-400 text-sm">
+                        Etsy for built-in traffic. Gumroad for keeping more profit. Start with Etsy, build email list, transition to own site + Gumroad.
+                    </p>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                    <h3 className="text-lg font-bold text-white mb-3">How do I handle copycats?</h3>
+                    <p className="text-gray-400 text-sm">
+                        They'll copy. Focus on building your brand and email list. Your relationship with customers is what they can't steal. Keep innovating.
+                    </p>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                    <h3 className="text-lg font-bold text-white mb-3">Should I offer refunds?</h3>
+                    <p className="text-gray-400 text-sm">
+                        Yes. 30-day money-back guarantee increases sales by 40%. Most people won't ask (2-3% refund rate). The extra sales are worth it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
       <section
-        
+
         className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Template Business?
         </h2>
-          
+
         <p className="text-xl text-gray-400 mb-8">
             Get my complete template creation system + 50 done-for-you templates
         </p>
-          
+
         <Link
             href="/digital-products-empire"
             className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all"
