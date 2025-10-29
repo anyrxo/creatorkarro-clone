@@ -96,7 +96,7 @@ export default function DigitalProductsPage() {
     ],
     "offers": {
       "@type": "Offer",
-      "price": "189",
+      "price": "399",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "category": "Business Course",
@@ -813,17 +813,20 @@ export default function DigitalProductsPage() {
                 },
                 {
                   name: "Digital Products Academy",
-                  description: "ONE-TIME",
-                  price: "$189",
+                  description: "ONE-TIME PAYMENT",
+                  price: "$399",
                   originalPrice: "$3,850",
                   badge: "LIFETIME ACCESS",
+                  badgeColor: "bg-green-500",
                   features: [
                     "Replace $50K consultant fees with DIY mastery",
                     "Launch your first $5K product in 30 days",
                     "Proven system saves 200+ hours of research",
                     "Avoid $10K in costly launch mistakes",
-                    "Save $3,661! Complete $3,850 system for just $189"
-                  ]
+                    "Save $3,451! Complete $3,850 system for just $399"
+                  ],
+                  buttonText: "Get Digital Products Course",
+                  buttonLink: "https://whop.com/iimagined/digital-products-reimagined/"
                 },
                 {
                   name: "All Access Reimagined",
@@ -894,11 +897,11 @@ export default function DigitalProductsPage() {
             
             <div className="space-y-6">
               <Link
-                href="#"
+                href="https://whop.com/iimagined/digital-products-reimagined/"
                 className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse focus:outline-none focus:ring-4 focus:ring-green-500/50"
-                aria-label="Get Digital Products Academy course for $189"
+                aria-label="Get Digital Products Academy course for $399"
               >
-                GET DIGITAL PRODUCTS ACADEMY - $189
+                GET DIGITAL PRODUCTS ACADEMY - $399
               </Link>
               
               <p className="text-sm text-zinc-300">
@@ -1123,23 +1126,23 @@ export default function DigitalProductsPage() {
                 {getIcon('alertTriangle', 'w-6 h-6')} FINAL WARNING
               </h3>
               <p className="text-zinc-200 mb-4">
-                This INSANE $189 founder's price and $5,959 in bonuses expire at MIDNIGHT tonight. After that, you'll pay $389 without any bonuses.
+                This INSANE $399 founder's price and $3,451 in savings expire at MIDNIGHT tonight. After that, you'll pay full price without any bonuses.
               </p>
               <p className="text-lg font-bold text-yellow-400">
                 Don't let another year pass trading time for money while others build digital empires!
               </p>
             </div>
             
-            <Link 
-              href="#pricing" 
+            <Link
+              href="https://whop.com/iimagined/digital-products-reimagined/"
               className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-8 rounded-2xl text-xl md:text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 text-center focus:outline-none focus:ring-4 focus:ring-green-500/50"
-              aria-label="Build my digital empire for $189"
+              aria-label="Build my digital empire for $399"
             >
-              BUILD MY DIGITAL EMPIRE<br className="md:hidden" /> - $189
+              BUILD MY DIGITAL EMPIRE<br className="md:hidden" /> - $399
             </Link>
-            
+
             <p className="text-sm text-zinc-300 mb-6">
-              Instant Access • 30-Day Guarantee • Lifetime Updates • $3,661 in Bonuses
+              Instant Access • 30-Day Guarantee • Lifetime Updates • $3,451 in Savings
             </p>
             
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
