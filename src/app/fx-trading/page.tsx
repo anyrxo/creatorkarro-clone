@@ -55,12 +55,12 @@ export default function FXTradingPage() {
   const urgencyAnimation = useScrollAnimation({ threshold: 0.1 })
   const ctaAnimation = useScrollAnimation({ threshold: 0.3 })
 
-  // Schema markup for FX Trading Course
-  const fxTradingSchema = {
+  // Schema markup for Futures Trading Course
+  const futuresTradingSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
-    "name": "FX Trading Mastery: Professional Forex Trading Course",
-    "description": "Master profitable FX trading with proven strategies used by professional traders. Learn risk management, technical analysis, and how to build consistent income from forex markets.",
+    "name": "Futures Trading Reimagined: Pass Prop Firm Challenges & Get Funded",
+    "description": "Master profitable futures trading with proven strategies for Nasdaq, S&P 500 ES, and Gold. Learn to pass prop firm challenges like TopStep and build consistent income with funded accounts.",
     "provider": {
       "@type": "Organization",
       "name": "IImagined",
@@ -70,22 +70,22 @@ export default function FXTradingPage() {
       "@type": "Person",
       "name": "Anyro",
       "url": "https://iimagined.ai/story",
-      "jobTitle": "Professional FX Trader & Educator",
-      "alumniOf": "Professional Forex Trading"
+      "jobTitle": "Professional Futures Trader & Prop Firm Expert",
+      "alumniOf": "Professional Futures Trading"
     },
     "courseMode": "online",
     "educationalLevel": "Beginner to Advanced",
     "teaches": [
-      "Forex Trading Fundamentals",
+      "Futures Trading Fundamentals",
+      "Prop Firm Challenge Strategies",
+      "ES, NQ, Gold Trading",
+      "Risk Management for Funded Accounts",
       "Technical Analysis",
-      "Risk Management",
-      "Trading Psychology",
-      "Market Analysis",
-      "Trading Systems Development"
+      "Trading Psychology"
     ],
     "offers": {
       "@type": "Offer",
-      "price": "197",
+      "price": "399",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "category": "Financial Education Course",
@@ -98,17 +98,17 @@ export default function FXTradingPage() {
     },
     "totalTime": "PT30H",
     "numberOfCredits": 15,
-    "educationalCredentialAwarded": "Professional FX Trading Certificate",
+    "educationalCredentialAwarded": "Professional Futures Trading Certificate",
     "audience": {
       "@type": "EducationalAudience",
       "educationalRole": "student",
-      "audienceType": ["Traders", "Investors", "Financial Professionals", "Entrepreneurs"]
+      "audienceType": ["Traders", "Investors", "Prop Firm Aspirants", "Financial Professionals"]
     },
     "coursePrerequisites": "Basic understanding of financial markets recommended",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "650",
+      "ratingValue": "4.9",
+      "reviewCount": "850",
       "bestRating": "5"
     }
   }
@@ -117,23 +117,23 @@ export default function FXTradingPage() {
   const modules = [
     {
       number: 1,
-      title: "Forex Fundamentals & Market Structure",
-      description: "Master the foundation of forex trading and market mechanics",
+      title: "Futures Trading Fundamentals & Market Structure",
+      description: "Master ES, NQ, Gold futures and prop firm requirements",
       color: "text-green-400",
       bgColor: "bg-gradient-to-r from-green-900/20 to-emerald-900/20",
       borderColor: "border-green-500/30",
       whatYouLearn: [
-        "Currency pairs and market sessions",
-        "Bid/ask spreads and pip calculations",
-        "Market makers vs ECN brokers",
-        "Economic calendar and news impact",
-        "Central bank policies and interest rates"
+        "ES (S&P 500), NQ (Nasdaq), Gold contract specs",
+        "Tick value, margins, and contract sizing",
+        "Market hours and liquidity zones",
+        "Understanding prop firm rules (TopStep, FTMO, etc.)",
+        "Order flow and volume analysis"
       ],
       deliverables: [
-        "Market session timing charts",
-        "Currency correlation matrix",
-        "Economic calendar templates",
-        "Broker comparison checklist"
+        "Contract specifications cheat sheet",
+        "Prop firm comparison guide",
+        "Market session trading windows",
+        "Futures broker setup guide"
       ],
       value: "$197"
     },
@@ -339,7 +339,7 @@ export default function FXTradingPage() {
       name: "Marcus Johnson",
       role: "Professional Trader",
       image: "https://i.pravatar.cc/150?img=12",
-      testimonial: "This FX course completely transformed my trading. I went from losing money consistently to making $15K per month within 6 months. The risk management section alone saved me thousands in potential losses.",
+      testimonial: "This Futures course completely transformed my trading. I went from losing money consistently to making $15K per month within 6 months. The risk management section alone saved me thousands in potential losses.",
       result: "$15K/month trading profit"
     },
     {
@@ -373,16 +373,16 @@ export default function FXTradingPage() {
       answer: "You can trade part-time with just 1-2 hours per day. Our strategies work across different timeframes, so you can find an approach that fits your schedule. Full-time traders can obviously dedicate more time for potentially higher returns."
     },
     {
-      question: "Is forex trading risky?",
-      answer: "All trading involves risk, but with proper education and risk management, you can minimize risks significantly. Our course focuses heavily on capital preservation and risk management - this is what separates professional traders from gamblers."
+      question: "Is futures trading risky?",
+      answer: "All trading involves risk, but with proper education and risk management, you can minimize risks significantly. Our course focuses heavily on capital preservation and risk management - this is what separates professional traders from gamblers. Prop firms like TopStep also have strict risk management rules that protect your capital."
     },
     {
-      question: "What's the difference between forex and stocks?",
-      answer: "Forex offers 24/5 trading hours, higher leverage, lower transaction costs, and greater liquidity than stocks. The currency market is the largest financial market in the world with $6+ trillion daily volume."
+      question: "What's the difference between futures and stocks?",
+      answer: "Futures offer 23+ hour trading, leverage through margin, lower transaction costs, and the ability to profit from both directions. ES (S&P 500), NQ (Nasdaq), and Gold futures provide exceptional liquidity. Plus, prop firms fund your trading so you don't risk your own capital!"
     },
     {
       question: "Will this work in any country?",
-      answer: "Yes! Forex is a global market accessible from anywhere with internet connection. However, you should verify that forex trading is legal in your jurisdiction and choose a regulated broker."
+      answer: "Yes! Futures trading is accessible globally, and many prop firms accept traders from around the world. However, you should verify regulations in your jurisdiction. TopStep, FTMO, and other prop firms have international eligibility."
     },
     {
       question: "Do you provide ongoing support?",
@@ -397,8 +397,8 @@ export default function FXTradingPage() {
   // Define pricing options
   const pricingOptions = [
     {
-      name: "Learn Alone Method",
-      description: "LOST PROFITS",
+      name: "Trial & Error Method",
+      description: "LOST CAPITAL",
       price: "$25,000+",
       features: [
         "Years of trial and error",
@@ -410,20 +410,22 @@ export default function FXTradingPage() {
       disabled: true
     },
     {
-      name: "Complete Trading System",
-      description: "Professional forex education",
-      price: "$197",
+      name: "Futures Trading Mastery",
+      description: "ONE-TIME PAYMENT",
+      price: "$399",
       originalPrice: "$2,197",
       features: [
-        "Master profitable trading in 90 days",
-        "Build consistent $5K/month income",
-        "Save $10K+ in trading losses",
-        "Avoid $50K+ in common mistakes",
+        "Master ES, NQ, Gold futures trading",
+        "Pass TopStep/FTMO prop firm challenges",
+        "Build consistent $10K+/month funded income",
+        "Save $10K+ in trading losses & fees",
         "Professional trading tools included",
         "Lifetime access + updates"
       ],
-      badge: "MOST POPULAR",
-      badgeColor: "bg-green-500"
+      badge: "LIFETIME ACCESS",
+      badgeColor: "bg-green-500",
+      buttonText: "Get Futures Trading Course",
+      buttonLink: "https://whop.com/iimagined/futures-trading-reimagined/"
     },
     {
       name: "All Access Reimagined",
@@ -435,7 +437,7 @@ export default function FXTradingPage() {
         "Instagram: 0 to 500K followers method", 
         "AI Influencers: $20K/month passive income",
         "Digital Products: $50K launch blueprints",
-        "FX Trading: Professional forex mastery",
+        "Futures Trading: ES, NQ, Gold mastery",
         "Live coaching calls + private community",
         "New courses added monthly (5+ planned)",
         "Cancel anytime, keep what you downloaded"
@@ -454,7 +456,7 @@ export default function FXTradingPage() {
       {/* Schema Markup */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(fxTradingSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(futuresTradingSchema) }}
       />
       
       <div className="min-h-screen bg-dark relative">
@@ -473,7 +475,7 @@ export default function FXTradingPage() {
                 "https://i.pravatar.cc/150?img=25"
               ],
               rating: 5,
-              text: "650+ successful forex traders"
+              text: "650+ successful futures traders"
             }}
             isVisible={heroAnimation.isVisible}
           />
@@ -484,9 +486,9 @@ export default function FXTradingPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div ref={problemAnimation.elementRef}>
               <SectionHeader
-                badge="THE FOREX REALITY"
+                badge="THE FUTURES REALITY"
                 badgeColor="text-red-400"
-                title="Why 90% of Forex Traders Fail"
+                title="Why 90% of Futures Traders Fail"
                 description="The hidden mistakes that destroy trading accounts"
                 isVisible={problemAnimation.isVisible}
               />
@@ -561,7 +563,7 @@ export default function FXTradingPage() {
               <SectionHeader
                 badge="COMPLETE CURRICULUM"
                 badgeColor="text-gray-400"
-                title="The Complete FX Trading Mastery System"
+                title="The Complete Futures Trading Mastery System"
                 description="8 comprehensive modules + bonuses worth over $1,500"
                 isVisible={curriculumAnimation.isVisible}
               />
@@ -613,8 +615,8 @@ export default function FXTradingPage() {
               <SectionHeader
                 badge="LIMITED TIME OFFER"
                 badgeColor="text-red-400"
-                title="Master Professional FX Trading"
-                description="Complete trading education + professional tools"
+                title="Master Professional Futures Trading"
+                description="Pass prop firm challenges & get funded"
                 isVisible={pricingAnimation.isVisible}
               />
             </div>
@@ -641,14 +643,14 @@ export default function FXTradingPage() {
                   />
                   <div className="text-green-400">
                     <WordRotate
-                      words={["forex trader?", "currency master?", "trading pro?", "market expert?"]}
+                      words={["futures trader?", "futures master?", "trading pro?", "market expert?"]}
                       className="text-4xl md:text-5xl font-bold"
                       duration={2500}
                     />
                   </div>
                 </h2>
                 <p className="text-xl text-zinc-300 mb-8">
-                  Join <NumberTicker value={650} className="text-green-400 font-bold inline" />+ traders building consistent income from forex markets
+                  Join <NumberTicker value={650} className="text-green-400 font-bold inline" />+ traders building consistent income from futures markets
                 </p>
                 <Link href="/checkout?course=fx-trading" className="inline-block focus:outline-none focus:ring-4 focus:ring-green-500/50 rounded-full">
                   <ShimmerButton
