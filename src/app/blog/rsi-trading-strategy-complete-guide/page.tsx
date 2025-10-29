@@ -121,9 +121,45 @@ export default function RSITradingStrategy() {
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">What Is RSI? Understanding the Foundation</h2>
 
-          <div className="mb-12">
+          {/* Course CTA #1 - Top 25% */}
+          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
+            <div className="text-center">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Master Futures Trading
+              </h3>
+              <p className="text-xl text-gray-300 mb-8">
+                Join our Futures Trading Mastery course - Pass prop firm challenges & scale to $100K+
+              </p>
+
+              <div className="grid md:grid-cols-4 gap-4 mb-8">
+                <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
+                  <div className="text-2xl font-bold text-blue-400">THE</div>
+                  <div className="text-sm text-gray-400">Authority</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
+                  <div className="text-2xl font-bold text-green-400">$3,500</div>
+                  <div className="text-sm text-gray-400">Value</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
+                  <div className="text-2xl font-bold text-purple-400">Lifetime</div>
+                  <div className="text-sm text-gray-400">Access</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
+                  <div className="text-2xl font-bold text-yellow-400">30-Day</div>
+                  <div className="text-sm text-gray-400">Guarantee</div>
+                </div>
+              </div>
+
+              <Link href="/futures-trading" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                🚀 Start Trading Profitably →
+              </Link>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-bold text-white mb-8">🎯 What Is RSI? Understanding the Foundation</h2>
+
+          <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
               The Relative Strength Index (RSI) is a <span className="text-white font-semibold">momentum oscillator</span> that measures the speed and magnitude of price movements. Developed by J. Welles Wilder in 1978, RSI oscillates between 0 and 100, helping traders identify overbought and oversold conditions.
             </p>
@@ -148,7 +184,7 @@ export default function RSITradingStrategy() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">RSI Optimal Settings for Different Trading Styles</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">⚙️ RSI Optimal Settings for Different Trading Styles</h2>
 
           <div className="overflow-x-auto mb-12">
             <table className="w-full text-left border-collapse">
@@ -204,9 +240,10 @@ export default function RSITradingStrategy() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Strategy #1: RSI Divergence Trading (65-75% Win Rate)</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🎯 Strategy #1: RSI Divergence Trading (65-75% Win Rate)</h2>
 
-          <div className="space-y-8 mb-12">
+          <div className="bg-gradient-to-r from-green-600/10 to-emerald-600/10 p-8 rounded-xl mb-12 border border-green-600/20">
+          <div className="space-y-8">
             <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-500/30 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-green-400 mb-4">📈 Bullish Divergence Setup</h3>
 
@@ -309,8 +346,9 @@ export default function RSITradingStrategy() {
               </div>
             </div>
           </div>
+          </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Strategy #2: RSI Mean Reversion (60-70% Win Rate)</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🎯 Strategy #2: RSI Mean Reversion (60-70% Win Rate)</h2>
 
           <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6 mb-12">
             <h3 className="text-xl font-bold text-blue-400 mb-4">Concept: Fade the Extremes</h3>
@@ -353,7 +391,7 @@ export default function RSITradingStrategy() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Strategy #3: Hidden RSI Divergence (Advanced)</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🎯 Strategy #3: Hidden RSI Divergence (Advanced)</h2>
 
           <div className="space-y-6 mb-12">
             <div className="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6">
@@ -397,7 +435,7 @@ export default function RSITradingStrategy() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Strategy #4: RSI Trendline Breaks</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">📈 Strategy #4: RSI Trendline Breaks</h2>
 
           <div className="bg-gradient-to-r from-orange-900/20 to-red-900/20 border border-orange-500/30 rounded-xl p-6 mb-12">
             <h3 className="text-xl font-bold text-orange-400 mb-4">📐 Drawing Trendlines on RSI Itself</h3>
@@ -426,7 +464,7 @@ export default function RSITradingStrategy() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Combining RSI with Other Indicators</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🔗 Combining RSI with Other Indicators</h2>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-zinc-900 rounded-xl p-6">
@@ -462,9 +500,10 @@ export default function RSITradingStrategy() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Common RSI Mistakes to Avoid</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">⚠️ Common RSI Mistakes to Avoid</h2>
 
-          <div className="space-y-4 mb-12">
+          <div className="bg-gradient-to-r from-red-600/10 to-orange-600/10 p-8 rounded-xl mb-12 border border-red-600/20">
+          <div className="space-y-4">
             <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
               <h3 className="text-red-400 font-bold mb-2">❌ Mistake #1: Shorting Strong Uptrends at RSI 70</h3>
               <p className="text-gray-300">
@@ -500,8 +539,9 @@ export default function RSITradingStrategy() {
               </p>
             </div>
           </div>
+          </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Advanced RSI Techniques</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🚀 Advanced RSI Techniques</h2>
 
           <div className="space-y-6 mb-12">
             <div className="bg-zinc-900 rounded-xl p-6">
@@ -541,7 +581,7 @@ export default function RSITradingStrategy() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">RSI Backtesting Results</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">📊 RSI Backtesting Results</h2>
 
           <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-500/30 rounded-xl p-6 mb-12">
             <h3 className="text-xl font-bold text-green-400 mb-4">6-Month Strategy Performance (ES Futures)</h3>
@@ -586,7 +626,7 @@ export default function RSITradingStrategy() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">❓ Frequently Asked Questions</h2>
 
           <div className="space-y-4 mb-12">
             <div className="bg-zinc-900 rounded-xl p-6">
@@ -630,7 +670,7 @@ export default function RSITradingStrategy() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">RSI Trading Checklist</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">✅ RSI Trading Checklist</h2>
 
           <div className="bg-gradient-to-r from-purple-900/20 to-blue-900/20 border border-purple-500/30 rounded-xl p-8 mb-12">
             <h3 className="text-xl font-bold text-purple-400 mb-4">Before Every RSI Trade, Verify:</h3>
@@ -666,17 +706,62 @@ export default function RSITradingStrategy() {
             </div>
           </div>
 
-          <div className="mt-16 p-8 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-2xl border border-blue-500/30">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Master RSI Trading?</h3>
-            <p className="text-gray-300 mb-6 text-lg">
-              The RSI strategies in this guide are used by professional traders managing millions in capital. But reading isn't enough—you need practice, live markets, and real-time analysis.
-            </p>
-            <p className="text-gray-300 mb-6">
-              Our <span className="text-white font-semibold">FX Trading Mastery course</span> includes daily RSI setups, live chart breakdowns, and proven entry/exit systems. Learn to identify high-probability RSI divergences before they play out.
-            </p>
-            <Link href="/fx-trading" className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-semibold text-white hover:from-blue-500 hover:to-purple-500 transition-all text-lg">
-              Explore FX Trading Course →
-            </Link>
+          {/* Course CTA #2 - Bottom 25% */}
+          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
+            <div className="text-center">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Master Futures Trading
+              </h3>
+              <p className="text-xl text-gray-300 mb-8">
+                Join our Futures Trading Mastery course - Pass prop firm challenges & scale to $100K+
+              </p>
+
+              <div className="grid md:grid-cols-4 gap-4 mb-8">
+                <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
+                  <div className="text-2xl font-bold text-blue-400">THE</div>
+                  <div className="text-sm text-gray-400">Authority</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
+                  <div className="text-2xl font-bold text-green-400">$3,500</div>
+                  <div className="text-sm text-gray-400">Value</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
+                  <div className="text-2xl font-bold text-purple-400">Lifetime</div>
+                  <div className="text-sm text-gray-400">Access</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
+                  <div className="text-2xl font-bold text-yellow-400">30-Day</div>
+                  <div className="text-sm text-gray-400">Guarantee</div>
+                </div>
+              </div>
+
+              <Link href="/futures-trading" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                🚀 Start Trading Profitably →
+              </Link>
+            </div>
+          </div>
+
+          {/* Related Articles Section */}
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-white mb-8">📚 Related Articles</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Link href="/blog/topstep-vs-myfundedtrader-comparison" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
+                  Topstep vs MyFundedTrader: Complete Comparison
+                </h4>
+                <p className="text-gray-400 text-sm">
+                  Discover which funded trading program offers better profit splits, evaluation rules, and trader support for futures traders.
+                </p>
+              </Link>
+              <Link href="/blog/ftmo-vs-topstep-prop-firm-review" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
+                  FTMO vs Topstep: Prop Firm Review
+                </h4>
+                <p className="text-gray-400 text-sm">
+                  Compare FTMO and Topstep evaluation rules, profit splits, and which prop firm is best for your trading style.
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

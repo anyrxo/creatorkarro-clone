@@ -163,7 +163,7 @@ export default function N8nCRMAutomation() {
       {/* CRM Platform Comparison */}
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">CRM Platform Comparison: N8N Integration</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">📊 CRM Platform Comparison: N8N Integration</h2>
 
           <div className="bg-zinc-800 rounded-xl p-6 overflow-x-auto">
             <table className="w-full text-sm text-gray-300">
@@ -268,7 +268,7 @@ export default function N8nCRMAutomation() {
       {/* Workflow 1: Lead Capture */}
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Workflow 1: Multi-Source Lead Capture</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🎯 Workflow 1: Multi-Source Lead Capture</h2>
 
           <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6 mb-8">
             <h3 className="text-xl font-bold text-white mb-3">What This Workflow Does</h3>
@@ -619,7 +619,7 @@ Good luck!`}</pre>
       {/* Workflow 2: Automated Lead Scoring */}
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Workflow 2: Dynamic Lead Scoring & Re-scoring</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">⭐ Workflow 2: Dynamic Lead Scoring & Re-scoring</h2>
 
           <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6 mb-8">
             <h3 className="text-xl font-bold text-white mb-3">What This Workflow Does</h3>
@@ -794,10 +794,52 @@ return [{
         </div>
       </section>
 
+      {/* Course CTA #1 */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-600/20 via-green-600/20 to-purple-600/20 rounded-2xl p-8 md:p-12 border border-blue-500/30">
+            <div className="text-center">
+              <div className="inline-block bg-green-500/10 border border-green-500/30 rounded-full px-4 py-2 mb-4">
+                <span className="text-green-400 font-semibold text-sm">⚡ AUTOMATION MASTERY</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Master N8N CRM Automation Today
+              </h3>
+              <p className="text-gray-300 mb-6 text-lg">
+                Get the complete system for automating your CRM with professional workflows, templates, and step-by-step training
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-400">$189</div>
+                  <div className="text-sm text-gray-400">Full course access</div>
+                </div>
+                <div className="hidden sm:block text-gray-600">•</div>
+                <div className="text-center">
+                  <div className="text-xl text-gray-400"><span className="line-through">$5,959</span></div>
+                  <div className="text-sm text-blue-400 font-semibold">97% Off Today</div>
+                </div>
+              </div>
+              <Link
+                href="/automation-empire"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
+              >
+                Start Automating Your CRM
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+              <p className="text-gray-500 text-sm mt-4">
+                ✓ Complete CRM workflows ✓ JSON templates ✓ Video training ✓ 24/7 support
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Workflow 3: Email Sequences */}
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Workflow 3: Automated Email Sequences</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">📧 Workflow 3: Automated Email Sequences</h2>
 
           <div className="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6 mb-8">
             <h3 className="text-xl font-bold text-white mb-3">What This Workflow Does</h3>
@@ -994,7 +1036,7 @@ return [{
       {/* Deal Pipeline Automation */}
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Workflow 4: Deal Pipeline Automation</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">💼 Workflow 4: Deal Pipeline Automation</h2>
 
           <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6 mb-8">
             <h3 className="text-xl font-bold text-white mb-3">What This Workflow Does</h3>
@@ -1306,7 +1348,7 @@ return [{
       {/* Business Type Workflows */}
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">3 Complete CRM Workflows for Different Business Types</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🎯 3 Complete CRM Workflows for Different Business Types</h2>
 
           <div className="space-y-8">
             {/* E-commerce */}
@@ -1474,7 +1516,7 @@ return [{
       {/* FAQ Section */}
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">❓ Frequently Asked Questions</h2>
 
           <div className="space-y-4">
             <div className="bg-zinc-900 rounded-xl p-6">
@@ -1518,6 +1560,104 @@ return [{
                 Track: 1) Time saved (hours/week), 2) Lead response speed improvement, 3) Conversion rate increases, 4) Additional revenue from better follow-up, 5) Reduced lead leakage. Build a dashboard in Google Sheets tracking these metrics.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Course CTA #2 */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-green-600/20 via-blue-600/20 to-purple-600/20 rounded-2xl p-8 md:p-12 border border-green-500/30">
+            <div className="text-center">
+              <div className="inline-block bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-4">
+                <span className="text-blue-400 font-semibold text-sm">⚡ LIMITED TIME OFFER</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Build Your Automation Empire
+              </h3>
+              <p className="text-gray-300 mb-6 text-lg">
+                Master CRM automation and save 15+ hours per week with our complete N8N training system
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-400">$189</div>
+                  <div className="text-sm text-gray-400">Full course access</div>
+                </div>
+                <div className="hidden sm:block text-gray-600">•</div>
+                <div className="text-center">
+                  <div className="text-xl text-gray-400"><span className="line-through">$5,959</span></div>
+                  <div className="text-sm text-green-400 font-semibold">97% Off Today</div>
+                </div>
+              </div>
+              <Link
+                href="/automation-empire"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
+              >
+                Master CRM Automation Now
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+              <p className="text-gray-500 text-sm mt-4">
+                ✓ 50+ automation workflows ✓ CRM integration guides ✓ JSON templates ✓ Lifetime updates
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">📚 Related Articles</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog/n8n-beginners-guide" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-blue-500/50">
+              <div className="text-blue-400 text-3xl mb-3">🚀</div>
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                N8N Beginner's Guide
+              </h3>
+              <p className="text-gray-400 text-sm mb-3">
+                Start with the basics before diving into advanced CRM automation
+              </p>
+              <div className="text-blue-400 text-sm font-semibold flex items-center gap-2">
+                Read More
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
+
+            <Link href="/blog/essential-n8n-workflows" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-green-500/50">
+              <div className="text-green-400 text-3xl mb-3">⚡</div>
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400 transition-colors">
+                Essential N8N Workflows
+              </h3>
+              <p className="text-gray-400 text-sm mb-3">
+                20+ must-have automation workflows for every business
+              </p>
+              <div className="text-green-400 text-sm font-semibold flex items-center gap-2">
+                Read More
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
+
+            <Link href="/blog/email-marketing-automation-advanced-n8n-sequences" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-purple-500/50">
+              <div className="text-purple-400 text-3xl mb-3">📧</div>
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                Advanced Email Automation
+              </h3>
+              <p className="text-gray-400 text-sm mb-3">
+                Build sophisticated email sequences that convert
+              </p>
+              <div className="text-purple-400 text-sm font-semibold flex items-center gap-2">
+                Read More
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

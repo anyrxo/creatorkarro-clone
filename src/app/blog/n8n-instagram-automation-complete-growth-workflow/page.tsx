@@ -164,35 +164,74 @@ export default function N8nInstagramAutomation() {
       {/* Instagram API Limitations Warning */}
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6 mb-8">
+          <div className="bg-gradient-to-r from-red-600/10 to-orange-600/10 border border-red-500/30 rounded-xl p-6 mb-8">
             <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
               <span className="text-red-400">⚠️</span> Critical: Instagram API Limits & Restrictions
             </h3>
             <div className="space-y-3 text-gray-300">
               <p className="font-semibold text-white">You MUST understand these limitations before building automation:</p>
               <ul className="space-y-2 ml-4">
-                <li>• <span className="text-white font-semibold">Business/Creator Account Required:</span> Personal accounts don't have API access</li>
-                <li>• <span className="text-white font-semibold">Facebook Page Connection:</span> Instagram must be linked to a Facebook Business Page</li>
-                <li>• <span className="text-white font-semibold">API Rate Limits:</span> 200 calls/hour per user, 4800 calls/hour per app</li>
-                <li>• <span className="text-white font-semibold">Content Publishing Limits:</span> 25 posts per day, 50 comments per day</li>
-                <li>• <span className="text-white font-semibold">Messaging Limitations:</span> Can only respond to incoming messages (no cold DMs via API)</li>
-                <li>• <span className="text-white font-semibold">Story Publishing:</span> Limited to 100 stories per day</li>
-                <li>• <span className="text-white font-semibold">Hashtag Limits:</span> Maximum 30 hashtags per post</li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Business/Creator Account Required:</span> Personal accounts don't have API access</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Facebook Page Connection:</span> Instagram must be linked to a Facebook Business Page</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">API Rate Limits:</span> 200 calls/hour per user, 4800 calls/hour per app</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Content Publishing Limits:</span> 25 posts per day, 50 comments per day</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Messaging Limitations:</span> Can only respond to incoming messages (no cold DMs via API)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Story Publishing:</span> Limited to 100 stories per day</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Hashtag Limits:</span> Maximum 30 hashtags per post</span>
+                </li>
               </ul>
             </div>
           </div>
 
-          <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6">
+          <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-500/30 rounded-xl p-6">
             <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
               <span className="text-blue-400">💡</span> Pro Tips for Staying Within Limits
             </h3>
             <ul className="space-y-2 text-gray-300 ml-4">
-              <li>• Use scheduling to spread posts evenly throughout the day</li>
-              <li>• Implement exponential backoff for rate limit handling</li>
-              <li>• Cache data to minimize API calls</li>
-              <li>• Use webhooks instead of polling when possible</li>
-              <li>• Monitor your rate limit usage in N8N workflows</li>
-              <li>• Consider third-party tools like Apify for scraping (use carefully)</li>
+              <li className="flex items-start gap-3">
+                <span className="text-blue-400 mt-1">✓</span>
+                <span>Use scheduling to spread posts evenly throughout the day</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-blue-400 mt-1">✓</span>
+                <span>Implement exponential backoff for rate limit handling</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-blue-400 mt-1">✓</span>
+                <span>Cache data to minimize API calls</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-blue-400 mt-1">✓</span>
+                <span>Use webhooks instead of polling when possible</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-blue-400 mt-1">✓</span>
+                <span>Monitor your rate limit usage in N8N workflows</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-blue-400 mt-1">✓</span>
+                <span>Consider third-party tools like Apify for scraping (use carefully)</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -201,7 +240,10 @@ export default function N8nInstagramAutomation() {
       {/* Complete Workflow Architecture */}
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Complete Instagram Automation Architecture</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+            <span>🏗️</span>
+            Complete Instagram Automation Architecture
+          </h2>
 
           <div className="bg-zinc-800 rounded-xl p-6 mb-8">
             <h3 className="text-xl font-bold text-pink-400 mb-4">System Overview</h3>
@@ -292,7 +334,10 @@ export default function N8nInstagramAutomation() {
       {/* Workflow 1: Auto-Posting from Airtable */}
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Workflow 1: Auto-Posting from Airtable/Google Sheets</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+            <span>📅</span>
+            Workflow 1: Auto-Posting from Airtable/Google Sheets
+          </h2>
 
           <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6 mb-8">
             <h3 className="text-xl font-bold text-white mb-3">What This Workflow Does</h3>
@@ -824,10 +869,59 @@ Published: {{$now.format('MM/DD/YYYY HH:mm')}}`}</pre>
         </div>
       </section>
 
+      {/* First CTA */}
+      <section className="section-spacing bg-gradient-to-b from-dark to-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Master Automation & Scale Your Growth
+            </h2>
+
+            <p className="text-xl text-gray-400 mb-6">
+              Learn how to build powerful automation workflows with N8N, Make, and Zapier. Complete courses on automation strategies for creators and businesses.
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">N8N masterclass</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Workflow templates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">API integration guides</span>
+              </div>
+            </div>
+
+            <Link
+              href="https://n8n.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
+            >
+              Learn N8N Automation
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+
+            <p className="text-gray-500 mt-6 text-sm">
+              Save 35+ hours per week with automation
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Workflow 2: Comment Monitoring */}
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Workflow 2: Comment Monitoring & Auto-Responses</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+            <span>💬</span>
+            Workflow 2: Comment Monitoring & Auto-Responses
+          </h2>
 
           <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6 mb-8">
             <h3 className="text-xl font-bold text-white mb-3">What This Workflow Does</h3>
@@ -2311,39 +2405,97 @@ Engagement Rate: {{$json["bestPost"]["engagementRate"]}}%
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Second CTA */}
       <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Automate Your Instagram Growth?
-          </h2>
+          <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Automate Your Instagram Growth?
+            </h2>
 
-          <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-            Get all 4 workflow JSONs, video tutorials, and our Instagram automation blueprint. Start automating today and save 35+ hours per week.
-          </p>
+            <p className="text-xl text-gray-400 mb-6">
+              Get all 4 workflow JSONs, video tutorials, and our Instagram automation blueprint. Start automating today and save 35+ hours per week.
+            </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">4 Complete workflows</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">JSON templates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Video tutorials</span>
+              </div>
+            </div>
+
             <Link
-              href="/automation-empire"
-              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 transition-all"
+              href="https://n8n.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
             >
-              Get Instagram Automation Course
+              Master N8N Automation
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </Link>
 
-            <Link
-              href="/blog/n8n-beginners-guide"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gray-600 text-white hover:bg-zinc-800 transition-all"
-            >
-              Start with N8N Basics
+            <p className="text-gray-500 mt-6 text-sm">
+              Save 35+ hours per week with automation
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>📚</span>
+            Related Articles
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog/instagram-hashtag-strategy-2025-what-actually-works" className="group">
+              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
+                <div className="text-3xl mb-4">🎯</div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                  Instagram Hashtag Strategy 2025
+                </h3>
+                <p className="text-gray-400">
+                  What actually works for hashtags in 2025
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/blog/instagram-content-pillars-build-engaged-audience" className="group">
+              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
+                <div className="text-3xl mb-4">🎨</div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                  Instagram Content Pillars
+                </h3>
+                <p className="text-gray-400">
+                  Build a highly engaged audience with strategic content
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/blog/automation-tools-comparison" className="group">
+              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
+                <div className="text-3xl mb-4">⚡</div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                  Automation Tools Comparison
+                </h3>
+                <p className="text-gray-400">
+                  N8N vs Make vs Zapier - Which is best for you?
+                </p>
+              </div>
             </Link>
           </div>
-
-          <p className="text-sm text-gray-500 mt-6">
-            ✓ 4 Complete Workflows  ✓ JSON Templates  ✓ Video Walkthrough  ✓ Lifetime Updates
-          </p>
         </div>
       </section>
     </div>

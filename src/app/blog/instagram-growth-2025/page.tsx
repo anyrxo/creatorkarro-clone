@@ -254,25 +254,77 @@ export default function InstagramGrowth2025() {
               {/* Rich Article Content */}
               <div className="prose prose-lg prose-invert max-w-none">
 
+                {/* Course CTA #1 - Top 25% */}
+                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
+                  <div className="text-center">
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                      Master Instagram Growth
+                    </h3>
+                    <p className="text-xl text-gray-300 mb-8">
+                      Join Instagram Ignited - Grow from 0 to 100K+ followers with our proven viral content system
+                    </p>
+
+                    <div className="grid md:grid-cols-4 gap-4 mb-8">
+                      <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
+                        <div className="text-2xl font-bold text-blue-400">500K+</div>
+                        <div className="text-sm text-gray-400">Followers Grown</div>
+                      </div>
+                      <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
+                        <div className="text-2xl font-bold text-green-400">$2.5M+</div>
+                        <div className="text-sm text-gray-400">Revenue</div>
+                      </div>
+                      <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
+                        <div className="text-2xl font-bold text-purple-400">2,000+</div>
+                        <div className="text-sm text-gray-400">Students</div>
+                      </div>
+                      <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
+                        <div className="text-2xl font-bold text-yellow-400">30-Day</div>
+                        <div className="text-sm text-gray-400">Guarantee</div>
+                      </div>
+                    </div>
+
+                    <Link href="/instagram-ignited" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                      🚀 Get Instagram Ignited →
+                    </Link>
+                  </div>
+                </div>
+
                 {/* Introduction */}
+                <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
                 <p className="text-xl text-gray-300 leading-relaxed mb-8">
                   Instagram isn't what it was in 2020, 2022, or even 2024. The algorithm has evolved into something far more sophisticated. If you're still posting pretty pictures and hoping for growth, you're already losing. This guide reveals the exact strategies creators are using RIGHT NOW to grow from 0 to 100K+ followers in 2025.
                 </p>
+                </div>
 
                 <div className="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6 mb-8">
                   <h3 className="text-2xl font-bold text-purple-400 mb-4">🎯 2025 Instagram Algorithm Reality Check</h3>
                   <p className="text-gray-300 mb-4">Instagram's algorithm changed dramatically in January 2025. Here's what the data shows:</p>
-                  <ul className="space-y-2 text-gray-300">
-                    <li>• Reels now receive 52% more distribution than in 2024</li>
-                    <li>• Carousel posts get 3.2x more saves than single images</li>
-                    <li>• Stories with interactive stickers boost Reel reach by 34%</li>
-                    <li>• Accounts posting 4-7x per week grow 67% faster</li>
-                    <li>• Comments in first 60 minutes determine 73% of reach</li>
-                  </ul>
+                  <div className="space-y-2">
+                    <div className="flex items-start space-x-3">
+                      <span className="text-green-400 text-xl font-bold">✓</span>
+                      <span className="text-gray-300">Reels now receive 52% more distribution than in 2024</span>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-green-400 text-xl font-bold">✓</span>
+                      <span className="text-gray-300">Carousel posts get 3.2x more saves than single images</span>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-green-400 text-xl font-bold">✓</span>
+                      <span className="text-gray-300">Stories with interactive stickers boost Reel reach by 34%</span>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-green-400 text-xl font-bold">✓</span>
+                      <span className="text-gray-300">Accounts posting 4-7x per week grow 67% faster</span>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-green-400 text-xl font-bold">✓</span>
+                      <span className="text-gray-300">Comments in first 60 minutes determine 73% of reach</span>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Growth Statistics Dashboard */}
-                <h2 className="text-3xl font-bold text-white mb-6">What Real Growth Looks Like in 2025</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">📊 What Real Growth Looks Like in 2025</h2>
 
                 <div className="grid md:grid-cols-4 gap-4 mb-12">
                   <div className="bg-zinc-900 p-6 rounded-xl text-center">
@@ -293,7 +345,7 @@ export default function InstagramGrowth2025() {
                   </div>
                 </div>
 
-                <h2 className="text-3xl font-bold text-white mb-6">The 2025 Instagram Growth Framework</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">🚀 The 2025 Instagram Growth Framework</h2>
 
                 {/* Strategy 1 */}
                 <div className="bg-zinc-900 rounded-xl p-8 mb-8">
@@ -564,7 +616,7 @@ export default function InstagramGrowth2025() {
                 </div>
 
                 {/* Advanced Tactics */}
-                <h2 className="text-3xl font-bold text-white mb-6">Advanced Growth Tactics for 2025</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">💡 Advanced Growth Tactics for 2025</h2>
 
                 <div className="space-y-6 mb-8">
                   <div className="bg-zinc-900 rounded-xl p-6">
@@ -628,6 +680,7 @@ export default function InstagramGrowth2025() {
                 </div>
 
                 {/* Common Mistakes */}
+                <div className="bg-gradient-to-r from-red-600/10 to-orange-600/10 p-8 rounded-xl mb-12 border border-red-600/20">
                 <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6 mb-8">
                   <h3 className="text-2xl font-bold text-red-400 mb-4">🚫 7 Mistakes Killing Your Growth</h3>
                   <div className="space-y-4">
@@ -682,9 +735,10 @@ export default function InstagramGrowth2025() {
                     </div>
                   </div>
                 </div>
+                </div>
 
                 {/* Tools Section */}
-                <h2 className="text-3xl font-bold text-white mb-6">Essential Tools for Instagram Growth</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">🛠️ Essential Tools for Instagram Growth</h2>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                   <div className="bg-zinc-900 rounded-xl p-6">
@@ -778,7 +832,7 @@ export default function InstagramGrowth2025() {
 
                 {/* FAQ Section */}
                 <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/30 rounded-xl p-8 mb-8">
-                  <h2 className="text-3xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+                  <h2 className="text-3xl font-bold text-white mb-6">❓ Frequently Asked Questions</h2>
 
                   <div className="space-y-6">
                     <div>
@@ -813,77 +867,60 @@ export default function InstagramGrowth2025() {
                   </div>
                 </div>
 
-                {/* Final CTA */}
-                <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 p-8 rounded-xl border border-purple-600/30 text-center">
-                  <h3 className="text-2xl font-bold text-white mb-4">Ready to Implement These Strategies?</h3>
-                  <p className="text-gray-300 mb-6">
-                    This guide gives you the framework. Want the complete system with templates, scripts, and personal support? Get the Instagram Ignited course.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Link
-                      href="/instagram-ignited"
-                      className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-                    >
-                      Get Instagram Ignited Course
-                    </Link>
-                    <Link
-                      href="/blog/instagram-reels-guide"
-                      className="border border-blue-600 text-blue-300 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600/10 transition-colors"
-                    >
-                      Read Reels Guide Next
+                {/* Course CTA #2 - Bottom 25% */}
+                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
+                  <div className="text-center">
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                      Master Instagram Growth
+                    </h3>
+                    <p className="text-xl text-gray-300 mb-8">
+                      Join Instagram Ignited - Grow from 0 to 100K+ followers with our proven viral content system
+                    </p>
+
+                    <div className="grid md:grid-cols-4 gap-4 mb-8">
+                      <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
+                        <div className="text-2xl font-bold text-blue-400">500K+</div>
+                        <div className="text-sm text-gray-400">Followers Grown</div>
+                      </div>
+                      <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
+                        <div className="text-2xl font-bold text-green-400">$2.5M+</div>
+                        <div className="text-sm text-gray-400">Revenue</div>
+                      </div>
+                      <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
+                        <div className="text-2xl font-bold text-purple-400">2,000+</div>
+                        <div className="text-sm text-gray-400">Students</div>
+                      </div>
+                      <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
+                        <div className="text-2xl font-bold text-yellow-400">30-Day</div>
+                        <div className="text-sm text-gray-400">Guarantee</div>
+                      </div>
+                    </div>
+
+                    <Link href="/instagram-ignited" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                      🚀 Get Instagram Ignited →
                     </Link>
                   </div>
                 </div>
               </div>
               
-              {/* Instagram Ignited Course CTA */}
-              <div className="mt-16 pt-12 border-t border-gray-700">
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-8">
-                  <div className="text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4"> Ready to Transform Your Instagram?</h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Want the complete system behind growing from 0 to 500K+ followers? Get our proven Instagram growth course with viral content strategies, algorithm domination techniques, and monetization blueprints.
-                    </p>
-                    <div className="grid md:grid-cols-3 gap-4 mb-6 text-center">
-                      <div className="bg-black/30 rounded-lg p-4">
-                        <div className="text-2xl font-bold text-blue-400">500K+</div>
-                        <div className="text-sm text-gray-400">Followers Grown</div>
-                      </div>
-                      <div className="bg-black/30 rounded-lg p-4">
-                        <div className="text-2xl font-bold text-green-400">$2.5M+</div>
-                        <div className="text-sm text-gray-400">Revenue Generated</div>
-                      </div>
-                      <div className="bg-black/30 rounded-lg p-4">
-                        <div className="text-2xl font-bold text-purple-400">2,000+</div>
-                        <div className="text-sm text-gray-400">Students Transformed</div>
-                      </div>
-                    </div>
-                    <Link href="/instagram-ignited" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                      Get Instagram Ignited Course →
-                    </Link>
-                    <p className="text-sm text-gray-400 mt-3">✅ 10+ Modules • ✅ Lifetime Access • ✅ 30-Day Guarantee</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Related Articles */}
-              <div className="mt-8">
-                <h3 className="text-2xl font-bold text-white mb-8">Related Articles</h3>
+              {/* Related Articles Section */}
+              <div className="mt-16">
+                <h2 className="text-3xl font-bold text-white mb-8">📚 Related Articles</h2>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <Link href="/blog/n8n-beginners-guide" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                  <Link href="/blog/ai-influencer-agency-model-scale-to-100k-month" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
                     <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                      N8N Automation Guide
+                      AI Influencer Agency Model: Scale to $100K/Month
                     </h4>
                     <p className="text-gray-400 text-sm">
-                      Automate your Instagram content and scheduling with N8N workflows.
+                      Build and scale an AI influencer agency leveraging Instagram growth strategies and automation.
                     </p>
                   </Link>
-                  <Link href="/blog/social-media-automation" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                  <Link href="/blog/ai-influencer-content-calendar-automation-strategy" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
                     <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                      Social Media Automation
+                      AI Influencer Content Calendar & Automation Strategy
                     </h4>
                     <p className="text-gray-400 text-sm">
-                      Scale your social media presence with intelligent automation systems.
+                      Automate your Instagram content calendar with AI-powered planning and scheduling tools.
                     </p>
                   </Link>
                 </div>

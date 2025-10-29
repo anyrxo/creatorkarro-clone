@@ -126,20 +126,38 @@ export default function InstagramContentPillars() {
               Most creators struggle with consistency because they're <span className="text-white font-semibold">creating content reactively</span> instead of strategically. Content pillars fix this forever.
             </p>
 
-            <div className="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-8 mb-8">
-              <h2 className="text-2xl font-bold text-blue-400 mb-4">💡 What Are Content Pillars?</h2>
+            <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-500/20 rounded-2xl p-8 mb-8">
+              <h2 className="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-3">
+                <span>💡</span>
+                What Are Content Pillars?
+              </h2>
               <p className="text-gray-300 mb-4">
                 Content pillars are 4-6 core topics or themes that define what you create content about. They give your account <span className="text-white font-semibold">clear identity and structure</span>.
               </p>
               <ul className="space-y-3 text-gray-300">
-                <li>• <span className="text-white font-semibold">Consistency:</span> Your audience knows what to expect</li>
-                <li>• <span className="text-white font-semibold">Authority:</span> Deep focus builds expertise perception</li>
-                <li>• <span className="text-white font-semibold">Clarity:</span> Instagram's algorithm understands your niche</li>
-                <li>• <span className="text-white font-semibold">Creativity:</span> Infinite content ideas within each pillar</li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-400 mt-1">✓</span>
+                  <span><span className="text-white font-semibold">Consistency:</span> Your audience knows what to expect</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-400 mt-1">✓</span>
+                  <span><span className="text-white font-semibold">Authority:</span> Deep focus builds expertise perception</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-400 mt-1">✓</span>
+                  <span><span className="text-white font-semibold">Clarity:</span> Instagram's algorithm understands your niche</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-400 mt-1">✓</span>
+                  <span><span className="text-white font-semibold">Creativity:</span> Infinite content ideas within each pillar</span>
+                </li>
               </ul>
             </div>
 
-            <h2 className="text-3xl font-bold text-white mb-6">🎯 Why Content Pillars Matter More Than Ever</h2>
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+              <span>🎯</span>
+              Why Content Pillars Matter More Than Ever
+            </h2>
 
             <p className="text-gray-300 mb-6">
               Instagram's 2024-2025 algorithm prioritizes <span className="text-white font-semibold">topical authority</span>. Accounts that consistently create content around specific themes get more reach.
@@ -190,14 +208,29 @@ export default function InstagramContentPillars() {
               </div>
             </div>
 
-            <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-2xl p-6 mb-8">
-              <h3 className="text-xl font-bold text-yellow-400 mb-3">⚠️ The Random Content Trap</h3>
+            <div className="bg-gradient-to-r from-yellow-600/10 to-orange-600/10 border border-yellow-500/20 rounded-2xl p-6 mb-8">
+              <h3 className="text-xl font-bold text-yellow-400 mb-3 flex items-center gap-3">
+                <span>⚠️</span>
+                The Random Content Trap
+              </h3>
               <p className="text-gray-300 mb-3">Posting whatever comes to mind creates these problems:</p>
               <ul className="text-gray-300 space-y-2">
-                <li>• Audience confusion: "What is this account even about?"</li>
-                <li>• Algorithm confusion: Instagram can't categorize you</li>
-                <li>• Inconsistent engagement: Some posts pop, most flop</li>
-                <li>• Content burnout: Always starting from scratch</li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">✗</span>
+                  <span>Audience confusion: "What is this account even about?"</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">✗</span>
+                  <span>Algorithm confusion: Instagram can't categorize you</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">✗</span>
+                  <span>Inconsistent engagement: Some posts pop, most flop</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">✗</span>
+                  <span>Content burnout: Always starting from scratch</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -206,7 +239,10 @@ export default function InstagramContentPillars() {
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">📋 How to Identify Your Content Pillars</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>📋</span>
+            How to Identify Your Content Pillars
+          </h2>
 
           <p className="text-gray-300 text-center mb-8 max-w-3xl mx-auto">
             Follow this step-by-step framework to discover the <span className="text-white font-semibold">perfect content pillars</span> for your brand.
@@ -417,9 +453,56 @@ export default function InstagramContentPillars() {
         </div>
       </section>
 
+      {/* First CTA */}
+      <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="bg-gradient-to-r from-green-600/20 to-blue-600/20 border border-green-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Master Instagram Growth with Proven Content Strategies
+            </h2>
+
+            <p className="text-xl text-gray-400 mb-6">
+              Access content pillar templates, 90-day content calendars, and the full strategy that's helped 12,000+ creators build engaged audiences
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Content pillar templates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">90-day calendars</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Growth frameworks</span>
+              </div>
+            </div>
+
+            <Link
+              href="/instagram-ignited"
+              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
+            >
+              Get Instagram Ignited - $189
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+
+            <p className="text-gray-500 mt-6 text-sm">
+              Never run out of content ideas again
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">🎨 Real Content Pillar Examples from Top Creators</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>🎨</span>
+            Real Content Pillar Examples from Top Creators
+          </h2>
 
           <div className="space-y-8">
             <div className="bg-zinc-900 rounded-xl p-8 border-2 border-green-500/30">
@@ -577,7 +660,10 @@ export default function InstagramContentPillars() {
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">📅 Creating Your Content Calendar with Pillars</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>📅</span>
+            Creating Your Content Calendar with Pillars
+          </h2>
 
           <p className="text-gray-300 text-center mb-8 max-w-3xl mx-auto">
             Once you have your pillars, organize them into a <span className="text-white font-semibold">consistent posting schedule</span>.
@@ -722,7 +808,10 @@ export default function InstagramContentPillars() {
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">📈 Case Study: 100K Followers Using Content Pillars</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>📈</span>
+            Case Study: 100K Followers Using Content Pillars
+          </h2>
 
           <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-xl p-8 border border-green-500/20">
             <div className="flex items-start justify-between mb-6">
@@ -865,7 +954,10 @@ export default function InstagramContentPillars() {
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">❓ Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>❓</span>
+            Frequently Asked Questions
+          </h2>
 
           <div className="space-y-4">
             <div className="bg-zinc-800 rounded-xl p-6">
@@ -920,29 +1012,95 @@ export default function InstagramContentPillars() {
         </div>
       </section>
 
+      {/* Second CTA */}
       <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Get the Complete Instagram Growth System
+          <div className="bg-gradient-to-r from-green-600/20 to-blue-600/20 border border-green-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Get the Complete Instagram Growth System
+            </h2>
+
+            <p className="text-xl text-gray-400 mb-6">
+              Access content pillar templates, 90-day content calendars, and the full strategy that's helped 12,000+ creators build engaged audiences
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Content systems</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Calendar templates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Strategy guides</span>
+              </div>
+            </div>
+
+            <Link
+              href="/instagram-ignited"
+              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
+            >
+              Get Instagram Ignited - $189
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+
+            <p className="text-gray-500 mt-6 text-sm">
+              Never run out of content ideas again
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>📚</span>
+            Related Articles
           </h2>
 
-          <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Access content pillar templates, 90-day content calendars, and the full strategy that's helped 12,000+ creators build engaged audiences
-          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog/instagram-hashtag-strategy-2025-what-actually-works" className="group">
+              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
+                <div className="text-3xl mb-4">🎯</div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
+                  Instagram Hashtag Strategy 2025
+                </h3>
+                <p className="text-gray-400">
+                  What actually works for hashtags in 2025
+                </p>
+              </div>
+            </Link>
 
-          <Link
-            href="/instagram-ignited"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 transition-all"
-          >
-            Join Instagram Ignited
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
+            <Link href="/blog/instagram-reels-strategy" className="group">
+              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
+                <div className="text-3xl mb-4">🎬</div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
+                  Instagram Reels Strategy
+                </h3>
+                <p className="text-gray-400">
+                  Master Reels and grow your account exponentially
+                </p>
+              </div>
+            </Link>
 
-          <p className="text-gray-500 mt-6 text-sm">
-            Never run out of content ideas again
-          </p>
+            <Link href="/blog/instagram-growth-automation" className="group">
+              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
+                <div className="text-3xl mb-4">⚡</div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
+                  Instagram Growth Automation
+                </h3>
+                <p className="text-gray-400">
+                  Automate your Instagram growth with proven tools
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

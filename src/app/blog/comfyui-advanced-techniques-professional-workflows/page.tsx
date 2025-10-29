@@ -96,26 +96,56 @@ export default function ComfyUIAdvancedTechniques() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white mb-6">Why Advanced ComfyUI Matters for AI Influencers</h2>
+            <h2 className="text-2xl font-bold text-white mb-6">⚡ Why Advanced ComfyUI Matters for AI Influencers</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-red-400 mb-4">Basic ComfyUI Limitations</h3>
+              <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-red-400 mb-4">❌ Basic ComfyUI Limitations</h3>
                 <ul className="space-y-3 text-gray-400">
-                  <li>• 30-60 seconds per image</li>
-                  <li>• Inconsistent facial features</li>
-                  <li>• Manual workflow for each image</li>
-                  <li>• Limited pose control</li>
-                  <li>• No batch processing capabilities</li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span>30-60 seconds per image</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span>Inconsistent facial features</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span>Manual workflow for each image</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span>Limited pose control</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span>No batch processing capabilities</span>
+                  </li>
                 </ul>
               </div>
-              <div className="bg-zinc-900 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-green-400 mb-4">Professional Workflow Power</h3>
+              <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">✓ Professional Workflow Power</h3>
                 <ul className="space-y-3 text-gray-400">
-                  <li>• 8-12 seconds per image</li>
-                  <li>• 99% facial consistency</li>
-                  <li>• Automated batch generation</li>
-                  <li>• Precise pose/composition control</li>
-                  <li>• Generate 100+ images unattended</li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>8-12 seconds per image</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>99% facial consistency</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>Automated batch generation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>Precise pose/composition control</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>Generate 100+ images unattended</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -125,10 +155,10 @@ export default function ComfyUIAdvancedTechniques() {
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Custom Node Creation: Build Your Competitive Advantage</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🎨 Custom Node Creation: Build Your Competitive Advantage</h2>
 
-          <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6 mb-8">
-            <h3 className="text-xl font-bold text-blue-400 mb-4">Why Custom Nodes Matter</h3>
+          <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-6 mb-8">
+            <h3 className="text-xl font-bold text-blue-400 mb-4">💡 Why Custom Nodes Matter</h3>
             <p className="text-gray-300 mb-4">
               Custom nodes automate repetitive workflows and create functionality that doesn't exist in standard ComfyUI.
               Agencies managing 50+ AI influencers save 30+ hours weekly with custom automation nodes.
@@ -360,9 +390,51 @@ NODE_DISPLAY_NAME_MAPPINGS = {
         </div>
       </section>
 
+      {/* Course CTA #1 */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-purple-600/20 via-pink-600/20 to-blue-600/20 rounded-2xl p-8 md:p-12 border border-purple-500/30">
+            <div className="text-center">
+              <div className="inline-block bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-4">
+                <span className="text-purple-400 font-semibold text-sm">🎓 MASTER AI INFLUENCERS</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Ready to Master Professional ComfyUI Workflows?
+              </h3>
+              <p className="text-gray-300 mb-6 text-lg">
+                Learn custom nodes, batch automation, and agency-level workflows in our complete AI Influencer course
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-400">$189</div>
+                  <div className="text-sm text-gray-400">One-time payment</div>
+                </div>
+                <div className="hidden sm:block text-gray-600">•</div>
+                <div className="text-center">
+                  <div className="text-xl text-gray-400"><span className="line-through">$5,959</span></div>
+                  <div className="text-sm text-purple-400 font-semibold">Save $5,770</div>
+                </div>
+              </div>
+              <Link
+                href="/ai-influencers"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
+              >
+                Get Instant Access Now
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+              <p className="text-gray-500 text-sm mt-4">
+                ✓ Lifetime access ✓ 50+ hours of content ✓ Custom node library included
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">Advanced ControlNet Workflows: Perfect Pose Control</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">🎯 Advanced ControlNet Workflows: Perfect Pose Control</h2>
 
           <div className="space-y-8">
             <div className="bg-zinc-800 rounded-xl p-8">
@@ -503,7 +575,7 @@ SaveImage → Auto-naming: {character}_{date}_{scenario}.png`}</pre>
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Prompt Engineering for Perfect Consistency</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">✍️ Prompt Engineering for Perfect Consistency</h2>
 
           <div className="space-y-6">
             <div className="bg-zinc-900 rounded-xl p-8">
@@ -632,7 +704,7 @@ SaveImage → Auto-naming: {character}_{date}_{scenario}.png`}</pre>
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">Workflow Optimization: 10-Second Renders</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">⚡ Workflow Optimization: 10-Second Renders</h2>
 
           <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-8 mb-8">
             <h3 className="text-2xl font-bold text-white mb-6">Speed Optimization Techniques</h3>
@@ -748,7 +820,7 @@ SaveImageBatch → Final output`}</pre>
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">Case Study: Agency Managing 50 AI Influencers</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">📊 Case Study: Agency Managing 50 AI Influencers</h2>
 
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-8 mb-8">
             <div className="flex items-start gap-6 mb-6">
@@ -987,9 +1059,51 @@ SaveImageBatch → Final output`}</pre>
         </div>
       </section>
 
+      {/* Course CTA #2 */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 rounded-2xl p-8 md:p-12 border border-blue-500/30">
+            <div className="text-center">
+              <div className="inline-block bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-4">
+                <span className="text-blue-400 font-semibold text-sm">⚡ LIMITED TIME OFFER</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Build Your AI Influencer Agency Today
+              </h3>
+              <p className="text-gray-300 mb-6 text-lg">
+                Get the complete system for creating and scaling multiple AI influencers with professional workflows
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-400">$189</div>
+                  <div className="text-sm text-gray-400">Full course access</div>
+                </div>
+                <div className="hidden sm:block text-gray-600">•</div>
+                <div className="text-center">
+                  <div className="text-xl text-gray-400"><span className="line-through">$5,959</span></div>
+                  <div className="text-sm text-blue-400 font-semibold">97% Off Today</div>
+                </div>
+              </div>
+              <Link
+                href="/ai-influencers"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
+              >
+                Start Building Your Empire
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+              <p className="text-gray-500 text-sm mt-4">
+                ✓ Custom node templates ✓ Agency workflow blueprints ✓ 24/7 support
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">❓ Frequently Asked Questions</h2>
 
           <div className="space-y-4">
             <div className="bg-zinc-800 rounded-xl p-6">
@@ -1069,6 +1183,62 @@ SaveImageBatch → Final output`}</pre>
                 of nodes you've based yours on.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">📚 Related Articles</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog/ai-influencer-monetization-complete-guide-2025" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-purple-500/50">
+              <div className="text-purple-400 text-3xl mb-3">💰</div>
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                AI Influencer Monetization Guide
+              </h3>
+              <p className="text-gray-400 text-sm mb-3">
+                12 revenue streams to earn $10K-$100K/month with AI influencers
+              </p>
+              <div className="text-purple-400 text-sm font-semibold flex items-center gap-2">
+                Read More
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
+
+            <Link href="/blog/ai-influencers-complete-guide-virtual-influencer-creation-2025" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-blue-500/50">
+              <div className="text-blue-400 text-3xl mb-3">🎨</div>
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                Complete AI Influencer Creation Guide
+              </h3>
+              <p className="text-gray-400 text-sm mb-3">
+                Step-by-step guide to creating your first AI influencer from scratch
+              </p>
+              <div className="text-blue-400 text-sm font-semibold flex items-center gap-2">
+                Read More
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
+
+            <Link href="/blog/comfyui-tutorial-master-ai-image-generation-2025" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-green-500/50">
+              <div className="text-green-400 text-3xl mb-3">🚀</div>
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400 transition-colors">
+                ComfyUI Beginner Tutorial
+              </h3>
+              <p className="text-gray-400 text-sm mb-3">
+                Master the basics before diving into advanced techniques
+              </p>
+              <div className="text-green-400 text-sm font-semibold flex items-center gap-2">
+                Read More
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

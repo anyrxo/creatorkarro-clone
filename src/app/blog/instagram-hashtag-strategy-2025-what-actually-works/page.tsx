@@ -126,18 +126,36 @@ export default function InstagramHashtagStrategy() {
               Everything you know about hashtags is probably wrong. Instagram fundamentally changed how hashtags work in 2024, and <span className="text-white font-semibold">most creators still haven't adapted</span>.
             </p>
 
-            <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-8 mb-8">
-              <h2 className="text-2xl font-bold text-red-400 mb-4">🚨 The Old Hashtag Strategy Is Dead</h2>
+            <div className="bg-gradient-to-r from-red-600/10 to-orange-600/10 border border-red-500/20 rounded-2xl p-8 mb-8">
+              <h2 className="text-2xl font-bold text-red-400 mb-4 flex items-center gap-3">
+                <span>🚨</span>
+                The Old Hashtag Strategy Is Dead
+              </h2>
               <p className="text-gray-300 mb-4">Here's what doesn't work anymore:</p>
               <ul className="space-y-3 text-gray-300">
-                <li>• <span className="text-white font-semibold">Using 30 hashtags:</span> Instagram now prioritizes 3-5 relevant tags</li>
-                <li>• <span className="text-white font-semibold">Small + Medium + Large mix:</span> Size is no longer the ranking factor</li>
-                <li>• <span className="text-white font-semibold">Generic hashtags:</span> #instagood and #love are worthless</li>
-                <li>• <span className="text-white font-semibold">Hashtag placement in comments:</span> Makes zero difference now</li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Using 30 hashtags:</span> Instagram now prioritizes 3-5 relevant tags</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Small + Medium + Large mix:</span> Size is no longer the ranking factor</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Generic hashtags:</span> #instagood and #love are worthless</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-red-400 mt-1">✗</span>
+                  <span><span className="text-white font-semibold">Hashtag placement in comments:</span> Makes zero difference now</span>
+                </li>
               </ul>
             </div>
 
-            <h2 className="text-3xl font-bold text-white mb-6">🎯 How Instagram's Hashtag Algorithm Actually Works (2025)</h2>
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+              <span>🎯</span>
+              How Instagram's Hashtag Algorithm Actually Works (2025)
+            </h2>
 
             <p className="text-gray-300 mb-6">
               Instagram's Adam Mosseri confirmed this in late 2024: The platform no longer uses hashtags primarily for <span className="text-white font-semibold">reach</span>. They use them for <span className="text-white font-semibold">relevance and categorization</span>.
@@ -188,14 +206,20 @@ export default function InstagramHashtagStrategy() {
               </div>
             </div>
 
-            <div className="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-6 mb-8">
-              <h3 className="text-xl font-bold text-blue-400 mb-3">💡 The Core Insight</h3>
+            <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-500/20 rounded-2xl p-6 mb-8">
+              <h3 className="text-xl font-bold text-blue-400 mb-3 flex items-center gap-3">
+                <span>💡</span>
+                The Core Insight
+              </h3>
               <p className="text-gray-300">
                 Hashtags are now a <span className="text-white font-semibold">recommendation signal</span>, not a distribution channel. Instagram uses them to understand your content and match it with interested users. Quality of hashtag selection matters infinitely more than quantity.
               </p>
             </div>
 
-            <h2 className="text-3xl font-bold text-white mb-6">📊 The Data: 3-5 Hashtags vs 30 Hashtags</h2>
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+              <span>📊</span>
+              The Data: 3-5 Hashtags vs 30 Hashtags
+            </h2>
 
             <p className="text-gray-300 mb-6">
               I ran a 60-day experiment testing different hashtag counts across 180 posts. Here are the results:
@@ -246,34 +270,111 @@ export default function InstagramHashtagStrategy() {
                 </table>
               </div>
 
-              <div className="mt-6 bg-green-500/10 border border-green-500/20 rounded-lg p-5">
-                <h4 className="text-green-400 font-semibold mb-3">✅ Key Findings:</h4>
+              <div className="mt-6 bg-gradient-to-r from-green-600/10 to-emerald-600/10 border border-green-500/20 rounded-lg p-5">
+                <h4 className="text-green-400 font-semibold mb-3 flex items-center gap-2">
+                  <span>✅</span>
+                  Key Findings:
+                </h4>
                 <ul className="text-gray-300 space-y-2 text-sm">
-                  <li>• 3-5 highly relevant hashtags outperformed all other strategies</li>
-                  <li>• Posts with 30 hashtags saw 56% lower reach than 3-5 hashtags</li>
-                  <li>• Engagement rate decreased as hashtag count increased</li>
-                  <li>• Follower conversion was 5x higher with targeted hashtags</li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <span>3-5 highly relevant hashtags outperformed all other strategies</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <span>Posts with 30 hashtags saw 56% lower reach than 3-5 hashtags</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <span>Engagement rate decreased as hashtag count increased</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-400 mt-1">✓</span>
+                    <span>Follower conversion was 5x higher with targeted hashtags</span>
+                  </li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-2xl p-6 mb-8">
-              <h3 className="text-xl font-bold text-yellow-400 mb-3">⚠️ Why 30 Hashtags Hurts You</h3>
+            <div className="bg-gradient-to-r from-yellow-600/10 to-orange-600/10 border border-yellow-500/20 rounded-2xl p-6 mb-8">
+              <h3 className="text-xl font-bold text-yellow-400 mb-3 flex items-center gap-3">
+                <span>⚠️</span>
+                Why 30 Hashtags Hurts You
+              </h3>
               <p className="text-gray-300 mb-3">Using max hashtags signals to Instagram that you're:</p>
               <ul className="text-gray-300 space-y-2">
-                <li>• Trying to game the system (spam behavior)</li>
-                <li>• Not clear on your content's topic (lack of focus)</li>
-                <li>• Using low-quality engagement tactics</li>
-                <li>• Potentially violating community guidelines</li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">✗</span>
+                  <span>Trying to game the system (spam behavior)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">✗</span>
+                  <span>Not clear on your content's topic (lack of focus)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">✗</span>
+                  <span>Using low-quality engagement tactics</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-yellow-400 mt-1">✗</span>
+                  <span>Potentially violating community guidelines</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
+      {/* First CTA */}
+      <section className="section-spacing bg-gradient-to-b from-dark to-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Master Instagram Growth with the Complete System
+            </h2>
+
+            <p className="text-xl text-gray-400 mb-6">
+              Get the full Instagram growth playbook including hashtag research tools, content templates, and the exact strategies used by top creators
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Hashtag research frameworks</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Content templates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Growth strategies</span>
+              </div>
+            </div>
+
+            <Link
+              href="/instagram-ignited"
+              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
+            >
+              Get Instagram Ignited - $189
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+
+            <p className="text-gray-500 mt-6 text-sm">
+              Join 12,000+ creators growing with proven strategies
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">🎯 The Relevance vs Reach Framework</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>🎯</span>
+            The Relevance vs Reach Framework
+          </h2>
 
           <p className="text-gray-300 text-center mb-8 max-w-3xl mx-auto">
             Stop choosing hashtags based on size. Start choosing them based on <span className="text-white font-semibold">relevance to your content and audience</span>.
@@ -399,7 +500,10 @@ export default function InstagramHashtagStrategy() {
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">🔍 How to Research Hashtags That Actually Work</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>🔍</span>
+            How to Research Hashtags That Actually Work
+          </h2>
 
           <div className="space-y-6">
             <div className="bg-zinc-900 rounded-xl p-8">
@@ -555,7 +659,10 @@ export default function InstagramHashtagStrategy() {
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">🎨 Creating Branded Hashtags That Trend</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>🎨</span>
+            Creating Branded Hashtags That Trend
+          </h2>
 
           <p className="text-gray-300 text-center mb-8 max-w-3xl mx-auto">
             Branded hashtags build community and make your content <span className="text-white font-semibold">easily discoverable</span>. Here's how to create one that actually gets used.
@@ -680,7 +787,10 @@ export default function InstagramHashtagStrategy() {
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">📈 Case Study: 10K Followers in 60 Days with Hashtag Strategy</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>📈</span>
+            Case Study: 10K Followers in 60 Days with Hashtag Strategy
+          </h2>
 
           <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-8 border border-blue-500/20">
             <div className="flex items-start justify-between mb-6">
@@ -809,7 +919,10 @@ export default function InstagramHashtagStrategy() {
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">❓ Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>❓</span>
+            Frequently Asked Questions
+          </h2>
 
           <div className="space-y-4">
             <div className="bg-zinc-800 rounded-xl p-6">
@@ -871,29 +984,95 @@ export default function InstagramHashtagStrategy() {
         </div>
       </section>
 
+      {/* Second CTA */}
       <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Master Instagram Growth with the Complete System
+          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Master Instagram Growth with the Complete System
+            </h2>
+
+            <p className="text-xl text-gray-400 mb-6">
+              Get the full Instagram growth playbook including hashtag research tools, content templates, and the exact strategies used by top creators
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Proven growth frameworks</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Content strategies</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span className="text-gray-300">Analytics templates</span>
+              </div>
+            </div>
+
+            <Link
+              href="/instagram-ignited"
+              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
+            >
+              Get Instagram Ignited - $189
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+
+            <p className="text-gray-500 mt-6 text-sm">
+              Join 12,000+ creators growing with proven strategies
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+            <span>📚</span>
+            Related Articles
           </h2>
 
-          <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Get the full Instagram growth playbook including hashtag research tools, content templates, and the exact strategies used by top creators
-          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog/instagram-content-pillars-build-engaged-audience" className="group">
+              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
+                <div className="text-3xl mb-4">🎨</div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  Instagram Content Pillars
+                </h3>
+                <p className="text-gray-400">
+                  Build a highly engaged audience with strategic content pillars
+                </p>
+              </div>
+            </Link>
 
-          <Link
-            href="/instagram-ignited"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all"
-          >
-            Join Instagram Ignited
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
+            <Link href="/blog/instagram-reels-strategy" className="group">
+              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
+                <div className="text-3xl mb-4">🎬</div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  Instagram Reels Strategy
+                </h3>
+                <p className="text-gray-400">
+                  Master Reels and grow your account exponentially
+                </p>
+              </div>
+            </Link>
 
-          <p className="text-gray-500 mt-6 text-sm">
-            Join 12,000+ creators growing with proven strategies
-          </p>
+            <Link href="/blog/instagram-growth-automation" className="group">
+              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
+                <div className="text-3xl mb-4">⚡</div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  Instagram Growth Automation
+                </h3>
+                <p className="text-gray-400">
+                  Automate your Instagram growth with proven tools
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

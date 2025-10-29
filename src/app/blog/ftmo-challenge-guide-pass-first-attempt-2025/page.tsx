@@ -100,21 +100,21 @@ const schema = generateBlogPostSchema({
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold text-white mb-4">The FTMO Challenge Reality Check</h2>
+                <h2 className="text-2xl font-bold text-white mb-4">⚠️ The FTMO Challenge Reality Check</h2>
                 <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 rounded-2xl p-8 border border-red-500/20">
                     <p className="text-lg text-gray-300 mb-6">
                 Only <span className="text-red-400 font-bold">23% of traders pass</span> the FTMO Challenge on their first attempt. The remaining 77% fail due to rule violations, poor risk management, or psychological pressure. This guide reveals exactly what the successful 23% do differently.
                     </p>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <div className="bg-zinc-900 rounded-lg p-4 text-center">
+                        <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4 text-center">
                             <div className="text-3xl font-bold text-red-400 mb-2">77%</div>
                             <div className="text-gray-400 text-sm">Fail First Attempt</div>
                         </div>
-                        <div className="bg-zinc-900 rounded-lg p-4 text-center">
+                        <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4 text-center">
                             <div className="text-3xl font-bold text-green-400 mb-2">23%</div>
                             <div className="text-gray-400 text-sm">Pass First Try</div>
                         </div>
-                        <div className="bg-zinc-900 rounded-lg p-4 text-center">
+                        <div className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/20 rounded-lg p-4 text-center">
                             <div className="text-3xl font-bold text-yellow-400 mb-2">15-30</div>
                             <div className="text-gray-400 text-sm">Days to Pass (Average)</div>
                         </div>
@@ -126,7 +126,7 @@ const schema = generateBlogPostSchema({
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold text-white mb-8">FTMO Challenge Rules Breakdown: Phase 1 & Phase 2</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">📋 FTMO Challenge Rules Breakdown: Phase 1 & Phase 2</h2>
 
             <div className="bg-zinc-900 rounded-2xl p-8 mb-8">
                 <h3 className="text-2xl font-bold text-green-400 mb-6">Phase 1: The Evaluation Phase</h3>
@@ -239,9 +239,51 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
+      {/* Course CTA #1 */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-green-600/20 via-blue-600/20 to-purple-600/20 rounded-2xl p-8 md:p-12 border border-green-500/30">
+            <div className="text-center">
+              <div className="inline-block bg-green-500/10 border border-green-500/30 rounded-full px-4 py-2 mb-4">
+                <span className="text-green-400 font-semibold text-sm">📈 PASS FTMO CHALLENGE</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Master Prop Firm Trading & Get Funded
+              </h3>
+              <p className="text-gray-300 mb-6 text-lg">
+                Complete course with Phase 1 & 2 strategies, risk management systems, and proven trading psychology
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-400">$189</div>
+                  <div className="text-sm text-gray-400">One-time payment</div>
+                </div>
+                <div className="hidden sm:block text-gray-600">•</div>
+                <div className="text-center">
+                  <div className="text-xl text-gray-400"><span className="line-through">$3,500</span></div>
+                  <div className="text-sm text-green-400 font-semibold">Save $3,311</div>
+                </div>
+              </div>
+              <Link
+                href="/futures-trading"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
+              >
+                Get The Complete Trading Course
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+              <p className="text-gray-500 text-sm mt-4">
+                ✓ FTMO Phase 1 & 2 blueprints ✓ Risk calculators ✓ Daily routines
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold text-white mb-8">The 1% Risk Rule: Your Safety Net</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">🛡️ The 1% Risk Rule: Your Safety Net</h2>
 
             <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-zinc-800 rounded-xl p-6">
@@ -294,7 +336,7 @@ const schema = generateBlogPostSchema({
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold text-white mb-8">Daily Trading Routine for Consistency</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">⏰ Daily Trading Routine for Consistency</h2>
 
             <div className="space-y-6">
                 <div className="bg-zinc-900 rounded-xl p-6">
@@ -396,7 +438,7 @@ const schema = generateBlogPostSchema({
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold text-white mb-8">Psychological Strategies for Pressure Trading</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">🧠 Psychological Strategies for Pressure Trading</h2>
 
             <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-xl p-6 border border-purple-500/20">
@@ -466,7 +508,7 @@ const schema = generateBlogPostSchema({
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold text-white mb-8">3 Real Case Studies: Passing FTMO in 10-30 Days</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">🎯 3 Real Case Studies: Passing FTMO in 10-30 Days</h2>
 
             <div className="space-y-8">
                 <div className="bg-gradient-to-r from-green-500/5 to-emerald-500/5 rounded-2xl p-8 border border-green-500/20">
@@ -669,9 +711,51 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
+      {/* Course CTA #2 */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-600/20 via-green-600/20 to-emerald-600/20 rounded-2xl p-8 md:p-12 border border-blue-500/30">
+            <div className="text-center">
+              <div className="inline-block bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-4">
+                <span className="text-blue-400 font-semibold text-sm">💪 GET FUNDED NOW</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Pass FTMO & Start Trading with $100K+
+              </h3>
+              <p className="text-gray-300 mb-6 text-lg">
+                Learn the exact strategies, routines, and psychology used by the 23% who pass first time
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-400">$189</div>
+                  <div className="text-sm text-gray-400">Complete course</div>
+                </div>
+                <div className="hidden sm:block text-gray-600">•</div>
+                <div className="text-center">
+                  <div className="text-xl text-gray-400"><span className="line-through">$3,500</span></div>
+                  <div className="text-sm text-blue-400 font-semibold">95% Off Today</div>
+                </div>
+              </div>
+              <Link
+                href="/futures-trading"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
+              >
+                Get Funded Faster
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+              <p className="text-gray-500 text-sm mt-4">
+                ✓ Phase 1 & 2 strategies ✓ Trading psychology modules ✓ Risk calculators
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold text-white mb-8">Common Mistakes & How to Avoid Them</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">⚠️ Common Mistakes & How to Avoid Them</h2>
 
             <div className="overflow-x-auto">
                 <table className="w-full text-left">
@@ -726,7 +810,7 @@ const schema = generateBlogPostSchema({
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-            <h2 className="text-3xl font-bold text-white mb-8">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">❓ Frequently Asked Questions</h2>
 
             <div className="space-y-6">
                 <div className="bg-zinc-900 rounded-xl p-6">
@@ -773,6 +857,62 @@ const schema = generateBlogPostSchema({
             </div>
         </div>
     </section>
+
+      {/* Related Articles */}
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">📚 Related Articles</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog/best-passive-income-ideas-digital-products-2025" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-green-500/50">
+              <div className="text-green-400 text-3xl mb-3">💰</div>
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400 transition-colors">
+                Passive Income Ideas 2025
+              </h3>
+              <p className="text-gray-400 text-sm mb-3">
+                Build multiple income streams beyond trading with digital products
+              </p>
+              <div className="text-green-400 text-sm font-semibold flex items-center gap-2">
+                Read More
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
+
+            <Link href="/blog/workflow-automation-guide" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-blue-500/50">
+              <div className="text-blue-400 text-3xl mb-3">⚡</div>
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                Trading Workflow Automation
+              </h3>
+              <p className="text-gray-400 text-sm mb-3">
+                Automate your trading analysis and reporting workflows
+              </p>
+              <div className="text-blue-400 text-sm font-semibold flex items-center gap-2">
+                Read More
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
+
+            <Link href="/blog/business-automation-tools" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-purple-500/50">
+              <div className="text-purple-400 text-3xl mb-3">🚀</div>
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                Business Automation Tools
+              </h3>
+              <p className="text-gray-400 text-sm mb-3">
+                Scale your trading business with automation systems
+              </p>
+              <div className="text-purple-400 text-sm font-semibold flex items-center gap-2">
+                Read More
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">

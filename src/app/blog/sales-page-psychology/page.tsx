@@ -102,10 +102,53 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
+      {/* Course CTA #1 */}
+      <section className="py-12 px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-8 border border-blue-500/20">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-3xl">💎</span>
+              <h3 className="text-2xl font-bold text-white">Master Digital Products</h3>
+            </div>
+            <p className="text-gray-300 mb-6">Transform your sales pages with psychology-backed templates, proven copywriting formulas, and conversion optimization tools used by 6-figure creators.</p>
+
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-400">$5,959</div>
+                <div className="text-sm text-gray-400">Total Value</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-400">50+</div>
+                <div className="text-sm text-gray-400">Templates Included</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-purple-400">$189</div>
+                <div className="text-sm text-gray-400">Today Only</div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <Link href="/digital-products" className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition-all">
+                Get Complete Digital Products Course - Just $189
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+              <p className="text-sm text-gray-400 mt-3">
+                Lifetime Access • 30-Day Money-Back Guarantee • Join 18,900+ Students
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold text-white text-center mb-8">The 6 Core Psychological Principles</h2>
+                <h2 className="text-2xl font-bold text-white text-center mb-8 flex items-center justify-center">
+                  <span className="mr-3">🧠</span>
+                  The 6 Core Psychological Principles
+                </h2>
                 <div className="grid md:grid-cols-3 gap-6">
                     <div className="text-center">
                         <div className="text-3xl mb-3">🧠</div>
@@ -143,11 +186,14 @@ const schema = generateBlogPostSchema({
     </section>
 
       <section
-        
+
         className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-            <h2 className="text-3xl font-bold text-white mb-8">The $10K Sales Page Formula</h2>
+            <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+              <span className="mr-3">💰</span>
+              The $10K Sales Page Formula
+            </h2>
           
             <div className="space-y-6">
                 <div className="bg-zinc-900 rounded-xl p-6">
@@ -1010,30 +1056,80 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section
+      {/* Course CTA #2 */}
+      <section className="section-spacing bg-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-xl p-8 border border-green-500/20">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-3xl">🚀</span>
+              <h3 className="text-2xl font-bold text-white">Master Digital Products</h3>
+            </div>
+            <p className="text-gray-300 mb-6">Get my complete sales page templates, psychology-backed swipe files, and conversion optimization toolkit that's generated millions in sales.</p>
 
-        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
-      >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Write Sales Pages That Convert?
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              <div className="bg-zinc-800 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-green-400 mb-1">$5,959</div>
+                <div className="text-sm text-gray-400">Total Value</div>
+              </div>
+              <div className="bg-zinc-800 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-blue-400 mb-1">50+</div>
+                <div className="text-sm text-gray-400">Templates Included</div>
+              </div>
+              <div className="bg-zinc-800 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-purple-400 mb-1">$189</div>
+                <div className="text-sm text-gray-400">Today Only</div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <Link
+                href="/digital-products"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all"
+              >
+                Get Complete Digital Products Course - Just $189
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+              <p className="text-sm text-gray-400 mt-3">
+                Lifetime Access • 30-Day Money-Back Guarantee • Join 18,900+ Students
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section className="section-spacing">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="bg-gradient-to-r from-purple-600/10 to-pink-600/10 p-8 rounded-xl mb-12 border border-purple-600/20">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center">
+              <span className="mr-3">📚</span>
+              Related Articles
             </h2>
 
-            <p className="text-xl text-gray-400 mb-8">
-            Get my complete sales page templates and swipe file
-            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link href="/blog/how-to-sell-templates" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
+                <h3 className="text-lg font-bold text-white mb-2">How To Sell Templates</h3>
+                <p className="text-gray-400 text-sm mb-3">Turn 2-hour projects into $47K/month passive income</p>
+                <span className="text-purple-400 text-sm font-semibold">Read More →</span>
+              </Link>
 
-            <Link
-            href="/digital-products-empire"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all"
-          >
-            Get Sales Page Templates
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-            </Link>
+              <Link href="/blog/digital-products-that-sell-2025" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
+                <h3 className="text-lg font-bold text-white mb-2">Digital Products That Sell</h3>
+                <p className="text-gray-400 text-sm mb-3">17 profitable digital product ideas for 2025</p>
+                <span className="text-purple-400 text-sm font-semibold">Read More →</span>
+              </Link>
+
+              <Link href="/blog/passive-income-blueprint-digital-products" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
+                <h3 className="text-lg font-bold text-white mb-2">Passive Income Blueprint</h3>
+                <p className="text-gray-400 text-sm mb-3">Build a 6-figure digital products business</p>
+                <span className="text-purple-400 text-sm font-semibold">Read More →</span>
+              </Link>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 </div>
 )
 }

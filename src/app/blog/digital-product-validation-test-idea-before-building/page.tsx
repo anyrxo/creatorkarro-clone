@@ -595,6 +595,46 @@ export default function DigitalProductValidationTestYourIdeaBeforeBuilding() {
                   </div>
                 </div>
 
+                {/* Course CTA #1 */}
+                <div className="my-12">
+                  <div className="max-w-4xl mx-auto bg-gradient-to-br from-purple-600/20 via-blue-600/20 to-green-600/20 rounded-2xl p-8 md:p-12 border border-purple-500/30">
+                    <div className="text-center">
+                      <div className="inline-block bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-4">
+                        <span className="text-purple-400 font-semibold text-sm">⚡ VALIDATION MASTERY</span>
+                      </div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                        Master Digital Product Validation
+                      </h3>
+                      <p className="text-gray-300 mb-6 text-lg">
+                        Get the complete validation system with templates, frameworks, and case studies proven by 127K+ students
+                      </p>
+                      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+                        <div className="text-center">
+                          <div className="text-3xl font-bold text-green-400">$189</div>
+                          <div className="text-sm text-gray-400">Full course access</div>
+                        </div>
+                        <div className="hidden sm:block text-gray-600">•</div>
+                        <div className="text-center">
+                          <div className="text-xl text-gray-400"><span className="line-through">$5,959</span></div>
+                          <div className="text-sm text-purple-400 font-semibold">97% Off Today</div>
+                        </div>
+                      </div>
+                      <Link
+                        href="/digital-products"
+                        className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
+                      >
+                        Start Validating Your Ideas
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                      </Link>
+                      <p className="text-gray-500 text-sm mt-4">
+                        ✓ Pre-sell templates ✓ Survey frameworks ✓ MVP blueprints ✓ Lifetime access
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Strategy 4: MVP Approach */}
                 <div className="bg-gray-800/50 p-8 rounded-lg mb-8">
                   <h2 className="text-3xl font-bold text-white mb-4 flex items-center">

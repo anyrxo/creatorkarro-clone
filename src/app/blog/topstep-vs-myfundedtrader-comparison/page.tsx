@@ -121,9 +121,45 @@ export default function TopstepVsMyFundedTrader() {
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8">Topstep vs MyFundedTrader: The Ultimate Showdown</h2>
 
-          <div className="mb-12">
+          {/* Course CTA #1 - Top 25% */}
+          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
+            <div className="text-center">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Master Futures Trading
+              </h3>
+              <p className="text-xl text-gray-300 mb-8">
+                Join our Futures Trading Mastery course - Pass prop firm challenges & scale to $100K+
+              </p>
+
+              <div className="grid md:grid-cols-4 gap-4 mb-8">
+                <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
+                  <div className="text-2xl font-bold text-blue-400">THE</div>
+                  <div className="text-sm text-gray-400">Authority</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
+                  <div className="text-2xl font-bold text-green-400">$3,500</div>
+                  <div className="text-sm text-gray-400">Value</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
+                  <div className="text-2xl font-bold text-purple-400">Lifetime</div>
+                  <div className="text-sm text-gray-400">Access</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
+                  <div className="text-2xl font-bold text-yellow-400">30-Day</div>
+                  <div className="text-sm text-gray-400">Guarantee</div>
+                </div>
+              </div>
+
+              <Link href="/futures-trading" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                🚀 Start Trading Profitably →
+              </Link>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-bold text-white mb-8">🎯 Topstep vs MyFundedTrader: The Ultimate Showdown</h2>
+
+          <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
               Choosing the right prop firm is one of the most critical decisions you'll make as a trader. Get it right, and you could be trading six-figure accounts within months. Get it wrong, and you'll waste thousands on evaluation fees with nothing to show for it.
             </p>
@@ -135,28 +171,70 @@ export default function TopstepVsMyFundedTrader() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-zinc-900 rounded-xl p-6 border border-blue-500/30">
               <h3 className="text-xl font-bold text-blue-400 mb-4">Topstep</h3>
-              <ul className="space-y-3 text-gray-300">
-                <li>✅ Established in 2012 (13+ years)</li>
-                <li>✅ 50K+ funded traders to date</li>
-                <li>✅ Conservative, rule-based approach</li>
-                <li>✅ Daily loss limits enforced</li>
-                <li>✅ Best for disciplined traders</li>
-                <li>✅ Strong educational resources</li>
-                <li>✅ Monthly subscription model</li>
-              </ul>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Established in 2012 (13+ years)</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">50K+ funded traders to date</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Conservative, rule-based approach</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Daily loss limits enforced</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Best for disciplined traders</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Strong educational resources</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Monthly subscription model</span>
+                </div>
+              </div>
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-6 border border-green-500/30">
               <h3 className="text-xl font-bold text-green-400 mb-4">MyFundedTrader</h3>
-              <ul className="space-y-3 text-gray-300">
-                <li>✅ Newer but rapidly growing</li>
-                <li>✅ More flexible rules</li>
-                <li>✅ One-time payment options</li>
-                <li>✅ Faster payout processing</li>
-                <li>✅ Higher leverage available</li>
-                <li>✅ Weekend trading allowed</li>
-                <li>✅ Aggressive scaling programs</li>
-              </ul>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Newer but rapidly growing</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">More flexible rules</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">One-time payment options</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Faster payout processing</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Higher leverage available</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Weekend trading allowed</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-green-400 text-xl font-bold">✓</span>
+                  <span className="text-gray-300">Aggressive scaling programs</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -167,9 +245,10 @@ export default function TopstepVsMyFundedTrader() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Account Sizes & Profit Targets: Side-by-Side Comparison</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">📊 Account Sizes & Profit Targets: Side-by-Side Comparison</h2>
 
-          <div className="overflow-x-auto mb-12">
+          <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
+          <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b border-gray-700">
@@ -197,6 +276,7 @@ export default function TopstepVsMyFundedTrader() {
               </tbody>
             </table>
           </div>
+          </div>
 
           <div className="bg-zinc-900 rounded-xl p-6 mb-12">
             <h3 className="text-xl font-bold text-white mb-4">🎯 Which Account Size is Right for You?</h3>
@@ -216,9 +296,10 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Evaluation Process: How to Get Funded</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">✅ Evaluation Process: How to Get Funded</h2>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-gradient-to-r from-green-600/10 to-emerald-600/10 p-8 rounded-xl mb-12 border border-green-600/20">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-blue-400 mb-4">Topstep Evaluation</h3>
               <div className="space-y-4 text-gray-300">
@@ -285,6 +366,7 @@ export default function TopstepVsMyFundedTrader() {
               </div>
             </div>
           </div>
+          </div>
 
           <div className="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6 mb-12">
             <h3 className="text-xl font-bold text-purple-400 mb-3">🧠 Pro Tip: The 50% Consistency Rule</h3>
@@ -293,9 +375,10 @@ export default function TopstepVsMyFundedTrader() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Profit Splits & Payout Structures</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">💰 Profit Splits & Payout Structures</h2>
 
-          <div className="mb-12">
+          <div className="bg-gradient-to-r from-green-600/10 to-emerald-600/10 p-8 rounded-xl mb-12 border border-green-600/20">
+          <div>
             <div className="bg-zinc-900 rounded-xl p-6 mb-6">
               <h3 className="text-2xl font-bold text-blue-400 mb-4">Topstep Profit Split Tiers</h3>
               <div className="space-y-4">
@@ -342,8 +425,9 @@ export default function TopstepVsMyFundedTrader() {
               </div>
             </div>
           </div>
+          </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Trading Rules & Restrictions: The Fine Print</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">📋 Trading Rules & Restrictions: The Fine Print</h2>
 
           <div className="space-y-6 mb-12">
             <div className="bg-zinc-900 rounded-xl p-6">
@@ -395,7 +479,7 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Platform & Tools: Where You'll Execute Trades</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🚀 Platform & Tools: Where You'll Execute Trades</h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-zinc-900 rounded-xl p-6">
@@ -453,7 +537,7 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Cost Comparison: Total Investment Required</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">💰 Cost Comparison: Total Investment Required</h2>
 
           <div className="overflow-x-auto mb-12">
             <table className="w-full text-left border-collapse">
@@ -596,7 +680,7 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Trading Strategies That Pass Evaluations</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">📊 Trading Strategies That Pass Evaluations</h2>
 
           <div className="mb-12">
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
@@ -669,9 +753,10 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Common Mistakes That Fail Evaluations</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">⚠️ Common Mistakes That Fail Evaluations</h2>
 
-          <div className="space-y-6 mb-12">
+          <div className="bg-gradient-to-r from-red-600/10 to-orange-600/10 p-8 rounded-xl mb-12 border border-red-600/20">
+          <div className="space-y-6">
             <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
               <h3 className="text-xl font-bold text-red-400 mb-3">❌ Mistake #1: Overtrading to Hit Profit Targets</h3>
               <p className="text-gray-300 mb-3">
@@ -722,8 +807,9 @@ export default function TopstepVsMyFundedTrader() {
               </p>
             </div>
           </div>
+          </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Real Trader Success Stories</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🏆 Real Trader Success Stories</h2>
 
           <div className="space-y-6 mb-12">
             <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-500/30 rounded-xl p-8">
@@ -771,7 +857,7 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Advanced Tips for Consistent Profitability</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">💡 Advanced Tips for Consistent Profitability</h2>
 
           <div className="space-y-6 mb-12">
             <div className="bg-zinc-900 rounded-xl p-6">
@@ -835,7 +921,7 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Scaling Your Funded Account</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">🚀 Scaling Your Funded Account</h2>
 
           <div className="mb-12">
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
@@ -897,7 +983,7 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">❓ Frequently Asked Questions</h2>
 
           <div className="space-y-4 mb-12">
             <div className="bg-zinc-900 rounded-xl p-6">
@@ -951,17 +1037,62 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          <div className="mt-16 p-8 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-2xl border border-blue-500/30">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Start Your Funded Trading Journey?</h3>
-            <p className="text-gray-300 mb-6 text-lg">
-              Whether you choose Topstep or MyFundedTrader, success requires more than just picking the right firm. You need proven strategies, disciplined risk management, and the psychological edge to trade with six-figure accounts.
-            </p>
-            <p className="text-gray-300 mb-6">
-              Our <span className="text-white font-semibold">FX Trading Mastery course</span> teaches you the exact systems professional traders use to pass prop firm evaluations and maintain funded accounts. Get access to live market analysis, real-time charts, and battle-tested strategies.
-            </p>
-            <Link href="/fx-trading" className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-semibold text-white hover:from-blue-500 hover:to-purple-500 transition-all text-lg">
-              Explore FX Trading Course →
-            </Link>
+          {/* Course CTA #2 - Bottom 25% */}
+          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
+            <div className="text-center">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Master Futures Trading
+              </h3>
+              <p className="text-xl text-gray-300 mb-8">
+                Join our Futures Trading Mastery course - Pass prop firm challenges & scale to $100K+
+              </p>
+
+              <div className="grid md:grid-cols-4 gap-4 mb-8">
+                <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
+                  <div className="text-2xl font-bold text-blue-400">THE</div>
+                  <div className="text-sm text-gray-400">Authority</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
+                  <div className="text-2xl font-bold text-green-400">$3,500</div>
+                  <div className="text-sm text-gray-400">Value</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
+                  <div className="text-2xl font-bold text-purple-400">Lifetime</div>
+                  <div className="text-sm text-gray-400">Access</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
+                  <div className="text-2xl font-bold text-yellow-400">30-Day</div>
+                  <div className="text-sm text-gray-400">Guarantee</div>
+                </div>
+              </div>
+
+              <Link href="/futures-trading" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                🚀 Start Trading Profitably →
+              </Link>
+            </div>
+          </div>
+
+          {/* Related Articles Section */}
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-white mb-8">📚 Related Articles</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Link href="/blog/rsi-trading-strategy-complete-guide" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
+                  RSI Trading Strategy: Complete Guide
+                </h4>
+                <p className="text-gray-400 text-sm">
+                  Master RSI divergence, overbought/oversold signals, and advanced techniques for 65%+ win rates in futures trading.
+                </p>
+              </Link>
+              <Link href="/blog/ftmo-vs-topstep-prop-firm-review" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
+                  FTMO vs Topstep: Prop Firm Review
+                </h4>
+                <p className="text-gray-400 text-sm">
+                  Compare FTMO and Topstep evaluation rules, profit splits, and which prop firm is best for your trading style.
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
