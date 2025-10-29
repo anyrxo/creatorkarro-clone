@@ -30,34 +30,45 @@ export default function HomePage() {
   const backgroundY = useSpring(useTransform(scrollYProgress, [0, 1], [0, -300]), springConfig)
 
   useEffect(() => {
-    // Removed sound initialization for better performance and user experience
-    // Sounds can be enabled later with user opt-in
+    // Simplified initialization to prevent crashes on static export
+    try {
+      // Initialize reveal animations with better performance
+      const reveals = document.querySelectorAll('.reveal-animation')
+      if (reveals.length > 0) {
+        createRevealAnimation(reveals)
+      }
 
-    // Initialize reveal animations with better performance
-    const reveals = document.querySelectorAll('.reveal-animation')
-    if (reveals.length > 0) {
-      createRevealAnimation(reveals)
-    }
+      // Add magnetic hover with reduced intensity for better accessibility
+      const buttons = document.querySelectorAll('.magnetic-button')
+      buttons.forEach(button => {
+        try {
+          createMagneticHover(button as HTMLElement, 0.15)
+        } catch (e) {
+          // Fail silently if hover effect fails
+        }
+      })
 
-    // Add magnetic hover with reduced intensity for better accessibility
-    const buttons = document.querySelectorAll('.magnetic-button')
-    buttons.forEach(button => {
-      createMagneticHover(button as HTMLElement, 0.15) // Reduced from 0.3 to 0.15
-    })
-
-    // Add reveal animation styles efficiently
-    if (!document.getElementById('reveal-styles')) {
-      const style = document.createElement('style')
-      style.id = 'reveal-styles'
-      style.textContent = revealAnimationStyles
-      document.head.appendChild(style)
+      // Add reveal animation styles efficiently
+      if (!document.getElementById('reveal-styles')) {
+        const style = document.createElement('style')
+        style.id = 'reveal-styles'
+        style.textContent = revealAnimationStyles
+        document.head.appendChild(style)
+      }
+    } catch (error) {
+      // Fail gracefully if animations can't initialize
+      console.error('Animation initialization failed:', error)
     }
 
     return () => {
-      // Cleanup any remaining event listeners
-      const styleElement = document.getElementById('reveal-styles')
-      if (styleElement) {
-        styleElement.remove()
+      try {
+        // Cleanup any remaining event listeners
+        const styleElement = document.getElementById('reveal-styles')
+        if (styleElement) {
+          styleElement.remove()
+        }
+      } catch (e) {
+        // Ignore cleanup errors
       }
     }
   }, [])
