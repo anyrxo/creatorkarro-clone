@@ -51,7 +51,7 @@ const getIcon = (iconName: string, className?: string) => {
 const courseStructuredData = generateCourseStructuredData(
   'AI Influencers Mastery Course',
   'Complete course on creating virtual AI influencers that generate passive income through automated content creation and brand partnerships.',
-  '169',
+  '399',
   'Anyro'
 )
 
@@ -123,7 +123,7 @@ export default function AIInfluencersPage() {
     ],
     "offers": {
       "@type": "Offer",
-      "price": "169",
+      "price": '399',
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "category": "AI Business Course",
@@ -497,7 +497,7 @@ export default function AIInfluencersPage() {
     {
       name: "Complete Course System",
       description: "Self-paced comprehensive training",
-      price: "$169",
+      price: "$399",
       originalPrice: "$3,169",
       features: [
         "Build your first AI model in 7 days",
@@ -508,13 +508,15 @@ export default function AIInfluencersPage() {
         "$3,000 worth of AI tools & templates included"
       ],
       badge: "LIFETIME ACCESS",
-      badgeColor: "bg-red-500"
+      badgeColor: "bg-red-500",
+      buttonText: "Get AI Influencers Course",
+      buttonLink: "https://whop.com/iimagined/ai-influencers-reimagined/"
     },
     {
-      name: "Whop All-Access",
+      name: "All Access Reimagined",
       description: "PER MONTH",
-      price: "$39.99",
-      originalPrice: "$99.99",
+      price: "$99",
+      originalPrice: "$199",
       features: [
         "Complete $88K/month business system",
         "Instagram: 0 to 500K followers proven method", 
@@ -525,12 +527,12 @@ export default function AIInfluencersPage() {
         "New courses added monthly (5+ planned)",
         "Cancel anytime, keep what you downloaded"
       ],
-      badge: "POPULAR - ALL 5 COURSES",
+      badge: "POPULAR - ALL 4 COURSES",
       badgeColor: "bg-purple-500",
       popular: true,
       hoverEffect: true,
       buttonText: "Join Whop All-Access",
-      buttonLink: "https://whop.com/anyro/premium-monthly-0a/"
+      buttonLink: "https://whop.com/iimagined/all-access-reimagined/"
     }
   ]
 

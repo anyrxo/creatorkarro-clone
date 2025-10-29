@@ -426,10 +426,10 @@ export default function FXTradingPage() {
       badgeColor: "bg-green-500"
     },
     {
-      name: "Whop All-Access",
+      name: "All Access Reimagined",
       description: "PER MONTH",
-      price: "$39.99",
-      originalPrice: "$99.99",
+      price: "$99",
+      originalPrice: "$199",
       features: [
         "Complete $88K/month business system",
         "Instagram: 0 to 500K followers method", 
@@ -440,12 +440,12 @@ export default function FXTradingPage() {
         "New courses added monthly (5+ planned)",
         "Cancel anytime, keep what you downloaded"
       ],
-      badge: "ALL 5 COURSES",
+      badge: "ALL 4 COURSES",
       badgeColor: "bg-purple-500",
       popular: true,
       hoverEffect: true,
       buttonText: "Join Whop All-Access",
-      buttonLink: "https://whop.com/anyro/premium-monthly-0a/"
+      buttonLink: "https://whop.com/iimagined/all-access-reimagined/"
     }
   ]
 

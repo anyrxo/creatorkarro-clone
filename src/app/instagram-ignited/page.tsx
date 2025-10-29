@@ -54,7 +54,7 @@ export default function InstagramIgnitedPage() {
   const product = {
     id: 'instagram-ignited',
     name: 'Instagram Ignited: 0 to 500K Followers',
-    price: 147,
+    price: 399,
     description: 'Complete Instagram growth system with 10+ modules, 100+ lessons, and $8,879 worth of bonuses'
   }
 
@@ -88,7 +88,7 @@ export default function InstagramIgnitedPage() {
     ],
     "offers": {
       "@type": "Offer",
-      "price": "147",
+      "price": "399",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "category": "Instagram Marketing Course",
@@ -970,7 +970,7 @@ export default function InstagramIgnitedPage() {
                 {
                   name: "Instagram Ignited",
                   description: "ONE-TIME PAYMENT",
-                  price: "$147",
+                  price: "$399",
                   originalPrice: "$3,949",
                   features: [
                     "Skip 2+ years of trial & error",
@@ -978,31 +978,33 @@ export default function InstagramIgnitedPage() {
                     "Replace $5K/month agency costs with DIY system",
                     "Avoid $15K in failed ad spend",
                     "Generate first $3K in brand deals within 60 days",
-                    "Save $3,802! Complete $3,949 system for just $147"
+                    "Save $3,550! Complete $3,949 system for just $399"
                   ],
                   badge: "LIFETIME ACCESS",
-                  badgeColor: "bg-green-500"
+                  badgeColor: "bg-green-500",
+                  buttonText: "Get Instagram Ignited",
+                  buttonLink: "https://whop.com/iimagined/instagram-reimagined/"
                 },
                 {
-                  name: "Whop All-Access",
-                  description: "PER MONTH", 
-                  price: "$39.99",
-                  originalPrice: "$99.99",
+                  name: "All Access Reimagined",
+                  description: "PER MONTH",
+                  price: "$99",
+                  originalPrice: "$199",
                   features: [
                     "Complete $88K/month business system",
                     "Instagram: 0 to 500K followers proven method",
                     "AI Influencers: $20K/month passive income",
                     "Digital Products: $50K launch blueprints",
-                    "ComfyUI: Professional AI image business",
+                    "Futures Trading: Professional prop firm strategies",
                     "Live coaching calls + private community",
                     "New courses added monthly (5+ planned)",
                     "Cancel anytime, keep what you downloaded"
                   ],
-                  badge: "POPULAR - ALL 5 COURSES",
+                  badge: "POPULAR - ALL 4 COURSES",
                   badgeColor: "bg-purple-500",
                   popular: true,
-                  buttonText: "Join Whop All-Access",
-                  buttonLink: "https://whop.com/anyro/premium-monthly-0a/"
+                  buttonText: "Join All Access Reimagined",
+                  buttonLink: "https://whop.com/iimagined/all-access-reimagined/"
                 }
               ]}
               isVisible={pricingAnimation.isVisible}
@@ -1053,9 +1055,9 @@ export default function InstagramIgnitedPage() {
               <button
                 onClick={handleBuyNow}
                 className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-500/50"
-                aria-label="Claim Instagram Ignited course for $147"
+                aria-label="Claim Instagram Ignited course for $399"
               >
-CLAIM INSTAGRAM IGNITED NOW - $147
+CLAIM INSTAGRAM IGNITED NOW - $399
               </button>
               
               <p className="text-sm text-zinc-300 flex items-center justify-center gap-1">

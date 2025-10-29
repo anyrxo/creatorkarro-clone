@@ -826,11 +826,11 @@ export default function DigitalProductsPage() {
                   ]
                 },
                 {
-                  name: "Whop All-Access",
+                  name: "All Access Reimagined",
                   description: "PER MONTH",
-                  price: "$39.99",
-                  originalPrice: "$99.99",
-                  badge: "POPULAR - ALL 5 COURSES",
+                  price: "$99",
+                  originalPrice: "$199",
+                  badge: "POPULAR - ALL 4 COURSES",
                   badgeColor: "bg-purple-500",
                   popular: true,
                   features: [
@@ -845,7 +845,7 @@ export default function DigitalProductsPage() {
                   ],
                   hoverEffect: true,
                   buttonText: "Join Whop All-Access",
-                  buttonLink: "https://whop.com/anyro/premium-monthly-0a/"
+                  buttonLink: "https://whop.com/iimagined/all-access-reimagined/"
                 }
               ]}
               isVisible={pricingAnimation.isVisible}
