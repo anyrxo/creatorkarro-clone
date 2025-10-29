@@ -1,6 +1,12 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "master": true
+    }
+  },
   "build": {
     "env": {
       "NODE_OPTIONS": "--max-old-space-size=8192"
