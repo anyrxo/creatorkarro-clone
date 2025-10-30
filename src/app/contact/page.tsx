@@ -176,13 +176,13 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold">Website</h3>
                     <a
-                      href="https://anyro.net"
+                      href="https://anyrxo.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-purple-400 hover:text-purple-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500/50 rounded px-1"
                       aria-label="Visit Anyro's personal website (opens in new tab)"
                     >
-                      anyro.net
+                      anyrxo.com
                     </a>
                   </div>
                 </div>

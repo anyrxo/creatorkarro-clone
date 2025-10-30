@@ -57,7 +57,7 @@ export default function StoryPage() {
             <div className="relative">
               <div className="max-w-5xl mx-auto mt-6">
                 <TypingAnimation
-                  text="From marketing agency grunt work to AI influencer empire, futures trader, and digital product mogul. This is the unconventional path nobody talks about."
+                  text="From marketing influencers and brands to AI influencers, launching IImagined, mastering futures trading, building 1abel, and now revolutionizing business growth with seology.ai. This is the path nobody talks about."
                   className="text-2xl md:text-3xl text-white leading-relaxed font-medium drop-shadow-lg"
                   duration={40}
                 />
@@ -97,10 +97,10 @@ export default function StoryPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl"></div>
               <div className="relative z-10">
                 <p className="text-lg md:text-xl lg:text-2xl font-medium bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent mb-4">
-                  "Most people pick one thing. I mastered four. Instagram growth for real influencers. AI influencer systems that scale infinitely. Futures trading that compounds capital. Digital products that sell on autopilot. Seven years of mistakes, wins, and systems—now yours."
+                  "Started marketing influencers and brands to millions in reach and millions in revenue. Then AI influencers. Then launched IImagined to teach it all. Then futures trading. Then 1abel clothing. Now seology.ai - helping businesses scale with AI. Pick one thing. Master it. Stack the next."
                 </p>
                 <p className="text-base md:text-lg text-zinc-300 italic">
-                  - Four income streams. One unfair advantage.
+                  - Multiple ventures. One obsessive mindset.
                 </p>
               </div>
             </div>
@@ -110,27 +110,27 @@ export default function StoryPage() {
             </p>
 
             <p>
-              I started running a marketing agency for influencers. <strong className="text-white">Real humans. Real brands. Real results.</strong> I was scheduling posts, negotiating brand deals, managing campaigns - and I still work with them today. But I learned <em className="text-purple-400">how the game actually works</em> - what makes content pop, how algorithms reward consistency, why certain accounts blow up overnight.
+              I started by marketing influencers, brands, and streamers - helping them grow their social media presence. <strong className="text-white">Real humans. Real brands. Real results.</strong> Combined reach in the millions. Combined revenue in the millions of dollars. I was managing campaigns, negotiating deals, and learning <em className="text-purple-400">how the game actually works</em> - what makes content explode, how algorithms reward consistency, why certain accounts blow up overnight.
             </p>
 
             <p>
-              Then I added something nobody else was doing: <strong className="text-yellow-400">AI influencers.</strong> ComfyUI, SDXL, graphic cards rendering 24/7, Hunyuan, Wan - the full tech stack. Here's the thing: <span className="text-green-400 font-semibold">AI influencers = higher profit margins + complete control over every detail.</span> I can optimize facial expressions, lighting, poses, aesthetics down to the pixel. That level of control means I can grow people's earnings and social media reach to levels they couldn't hit before. I've landed brand deals for clients they never could have gotten on their own.
+              Then I discovered something nobody else was doing at scale: <strong className="text-yellow-400">AI influencers.</strong> ComfyUI, SDXL, GPUs rendering 24/7, Hunyuan, Wan - the full tech stack. Here's the thing: <span className="text-green-400 font-semibold">AI influencers = higher profit margins + complete control over every detail.</span> I could optimize facial expressions, lighting, poses, aesthetics down to the pixel. That level of control means I could grow people's earnings and social media reach to levels they couldn't hit before.
             </p>
 
             <p>
-              <strong className="text-blue-400">Both work. Real + AI = unfair advantage.</strong> Real influencers bring authenticity and relatability. AI influencers bring consistency and scalability. Use both, dominate harder.
+              That's when I launched <strong className="text-blue-400">IImagined</strong> - to help others master what I'd learned. Instagram growth, AI influencer creation, automation systems, content strategies. <strong className="text-white">People wanted to learn.</strong> So I packaged everything - AI workflows, social media systems, monetization strategies - into courses anyone could start with and actually make money from. <span className="text-yellow-400 font-semibold">Years of trial, error, and mastery, condensed into actionable systems.</span>
             </p>
 
             <p>
-              While building that, I got into futures trading. Started with <strong className="text-orange-400">prop firms</strong> (FTMO, Topstep) to learn with funded capital - less risk, more upside. Once I figured out order flow and actual market structure (not YouTube candlestick BS), I moved into trading with my own funds. S&P 500, Nasdaq, Gold. Built enough consistency that I launched <strong className="text-blue-400">FuturesHive.com</strong> to teach the exact prop firm process and funded trading strategies.
+              While building IImagined, I got into futures trading. Started with <strong className="text-orange-400">prop firms</strong> (FTMO, Topstep) to learn with funded capital - less risk, more upside. Once I figured out order flow and actual market structure (not YouTube candlestick BS), I moved into trading with my own funds. ES, NQ, Gold. Built enough consistency to add futures trading courses to IImagined - teaching the exact prop firm process and funded trading strategies.
             </p>
 
             <p>
-              Then came <strong className="text-purple-400">digital products.</strong> Communities on Discord, Telegram, even IRL were asking me non-stop: <em>"How do you do this? Can you teach me?"</em> The demand was insane. So I sat down and packaged everything - AI workflows, trading strategies, Instagram systems, automation - into courses anyone can start with and actually make money from. <span className="text-yellow-400 font-semibold">Seven years of trial, error, and mastery, condensed into actionable systems.</span>
+              Then came <strong className="text-pink-400">1abel</strong> - my clothing brand. Minimalist designs. Quality materials. Pieces I'd actually wear in a busy life. Simple, clean, functional. Because even side projects should align with who you are and what you believe in.
             </p>
 
             <p>
-              As for <strong className="text-pink-400">1abel.com</strong>? That's my side project. Clothing I'd actually wear. Stuff I don't have to think twice about in a busy life. Simple, clean, functional. Currently working on it in my spare time because even side hustles should align with who you are.
+              And now? <strong className="text-cyan-400">seology.ai</strong> - my newest venture. An AI-powered SaaS platform helping businesses reach better, further, faster. Taking everything I learned about growth, automation, and AI - and packaging it into a tool that scales. <span className="text-green-400 font-semibold">From influencer marketing to AI automation to futures trading to SaaS - it's all connected.</span>
             </p>
 
             <div
@@ -169,11 +169,11 @@ export default function StoryPage() {
             </p>
 
             <p>
-              <span className="text-2xl font-bold text-yellow-400">The truth?</span> You can make money with ANY of this stuff - AI influencers, real influencers, prop firm trading, content creation, digital products, whatever. But you have to <em className="text-purple-400 font-semibold">pick one and go insane on it.</em> Not for a week. Not for a month. Until you're better than 95% of people talking about it.
+              <span className="text-2xl font-bold text-yellow-400">The truth?</span> You can make money with ANY of this stuff - influencer marketing, AI influencers, prop firm trading, content creation, digital products, SaaS, whatever. But you have to <em className="text-purple-400 font-semibold">pick one and go insane on it.</em> Not for a week. Not for a month. Until you're better than 95% of people talking about it.
             </p>
 
             <p>
-              That's what IImagined is: <strong className="text-blue-400">seven years of mastery, packaged into systems anyone can start with.</strong> No fluff about "finding your why" or "mindset hacks." Just the technical breakdowns, the exact workflows, the tools I use daily. Real influencer management + AI influencer creation with ComfyUI and SDXL. Prop firm funded trading strategies with real order flow. Building digital products that convert. Instagram growth with real brand deals.
+              That's what IImagined is: <strong className="text-blue-400">years of mastery, packaged into systems anyone can start with.</strong> No fluff about "finding your why" or "mindset hacks." Just the technical breakdowns, the exact workflows, the tools I use daily. Influencer growth strategies. AI influencer creation with ComfyUI and SDXL. Prop firm funded trading strategies with real order flow. Building digital products that convert. Instagram monetization with real brand deals.
             </p>
 
             <p className="text-xl font-semibold text-green-400">
@@ -181,7 +181,7 @@ export default function StoryPage() {
             </p>
 
             <p>
-              Look, I'm not here to motivate you with quotes and morning routines. I'm here to show you what's possible when you commit to one path for years, not days. There are <span className="text-yellow-400 font-bold">infinite ways to make money</span> - I've spent seven years proving it across AI, trading, agencies, and digital products. Now I'm handing you the shortcuts.
+              Look, I'm not here to motivate you with quotes and morning routines. I'm here to show you what's possible when you commit to one path for years, not days. There are <span className="text-yellow-400 font-bold">infinite ways to make money</span> - I've spent years proving it across influencer marketing, AI, trading, digital products, and now SaaS. From helping influencers reach millions to building AI systems to launching seology.ai - it's all about execution. Now I'm handing you the shortcuts.
             </p>
 
             <div
