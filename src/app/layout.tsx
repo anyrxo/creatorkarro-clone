@@ -85,17 +85,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'google-site-verification-code',
-    yandex: 'yandex-verification-code',
-    yahoo: 'yahoo-site-verification-code'
-  },
-  other: {
-    'msvalidate.01': 'bing-site-verification-code',
-    'facebook-domain-verification': 'facebook-domain-verification-code',
-    'pinterest-verification': 'pinterest-site-verification-code',
-    'p:domain_verify': 'pinterest-domain-verification-code'
-  },
 };
 
 export const viewport: Viewport = {
@@ -171,68 +160,55 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.website) }}
         />
         
-        {/* Critical CSS - Inline for immediate rendering */}
-        <style dangerouslySetInnerHTML={{
-          __html: `
-            /* Critical above-the-fold styles */
-            body { margin: 0; padding: 0; background: #0a0a0a; color: #f9fafb; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif; }
-            .hero-section { min-height: 100vh; background: radial-gradient(ellipse at center, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.8) 70%, rgba(15, 23, 42, 1) 100%); }
-            h1, h2 { font-weight: 700; line-height: 1.2; }
-            .nav-fixed { position: fixed; top: 0; width: 100%; z-index: 50; backdrop-filter: blur(10px); }
-            .gradient-text { background: linear-gradient(to right, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-            @media (max-width: 768px) { h1 { font-size: 2.25rem; } }
-          `
-        }} />
       </head>
       <body className={montserrat.className}>
         <SkipToContent />
 
         {/* ===== ANALYTICS CONFIGURATION ===== */}
-        {/* TODO: Add your tracking IDs below to enable analytics */}
 
         {/* Google Analytics 4 (GA4) */}
-        {/* TODO: Replace 'G-XXXXXXXXXX' with your actual GA4 measurement ID */}
-        {/* Get your GA4 ID from: https://analytics.google.com/analytics/web/ */}
-        {/* Format: G-XXXXXXXXXX (starts with 'G-', followed by 10 characters) */}
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
-        />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
-            `,
-          }}
-        />
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+            />
+            <Script
+              id="google-analytics"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
 
         {/* Facebook Pixel */}
-        {/* TODO: Replace 'YOUR_PIXEL_ID' with your actual Facebook Pixel ID */}
-        {/* Get your Pixel ID from: https://business.facebook.com/events_manager2 */}
-        {/* Format: 15-16 digit number */}
-        <Script
-          id="facebook-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', 'YOUR_PIXEL_ID');
-              fbq('track', 'PageView');
-            `,
-          }}
-        />
+        {process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID && (
+          <Script
+            id="facebook-pixel"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID}');
+                fbq('track', 'PageView');
+              `,
+            }}
+          />
+        )}
         
         <ErrorBoundary>
           <ClientOnlyFortress>

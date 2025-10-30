@@ -13,6 +13,7 @@ import NumberTicker from '@/components/magicui/number-ticker'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
 import ScrambleText from '@/components/magicui/scramble-text'
+import HeroBackground from '@/components/HeroBackground'
 
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -45,90 +46,7 @@ export default function BlogPage() {
     <div className="min-h-screen bg-dark">
       {/* MAGICAL HEADER */}
       <section className="relative py-20 px-4 overflow-hidden">
-        {/* Beautiful Pulsing Background - Same as Homepage */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black"></div>
-        <div className="absolute inset-0 overflow-hidden">
-          <div 
-            className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-purple-600/20 to-blue-600/20 blur-2xl animate-pulse opacity-60"
-            style={{ 
-              left: '15%', 
-              top: '5%',
-              animationDuration: '4s'
-            }}
-          />
-          <div 
-            className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-pink-600/15 to-purple-600/15 blur-2xl animate-pulse opacity-50"
-            style={{ 
-              right: '5%', 
-              bottom: '15%',
-              animationDuration: '6s',
-              animationDelay: '1s'
-            }}
-          />
-          <div 
-            className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-cyan-600/15 to-blue-600/15 blur-xl animate-pulse opacity-40"
-            style={{ 
-              left: '50%', 
-              top: '50%', 
-              transform: 'translate(-50%, -50%)',
-              animationDuration: '5s',
-              animationDelay: '2s'
-            }}
-          />
-        </div>
-
-        {/* Heartbeat Grid Pulsing from Center */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          {/* Center Point - Heart of the pulse */}
-          <div
-            className="absolute w-4 h-4 rounded-full"
-            style={{
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%, -50%)',
-              background: 'rgba(59, 130, 246, 0.8)',
-              boxShadow: '0 0 20px rgba(59, 130, 246, 0.5)',
-              animation: 'pulse 2s infinite ease-in-out'
-            }}
-          />
-          
-          {/* Grid Lines radiating from center */}
-          <svg className="absolute inset-0 w-full h-full" style={{ opacity: 0.1 }}>
-            <defs>
-              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
-          
-          {/* Pulsing lines from center */}
-          <div className="absolute inset-0">
-            {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className="absolute bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"
-                style={{
-                  left: '50%',
-                  top: '50%',
-                  width: '200px',
-                  height: '1px',
-                  transformOrigin: '0 0',
-                  transform: `translate(-50%, -50%) rotate(${i * 45}deg)`,
-                  animation: `pulse 2s infinite ease-in-out ${i * 0.1}s`
-                }}
-              />
-            ))}
-          </div>
-        </div>
-        
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-20 w-4 h-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-bounce opacity-60" style={{animationDuration: '3s'}}></div>
-          <div className="absolute top-32 right-32 w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce opacity-50" style={{animationDuration: '4s', animationDelay: '0.5s'}}></div>
-          <div className="absolute bottom-40 left-16 w-5 h-5 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-bounce opacity-70" style={{animationDuration: '3.5s', animationDelay: '1s'}}></div>
-          <div className="absolute bottom-32 right-20 w-2 h-2 bg-gradient-to-r from-green-400 to-teal-400 rounded-full animate-bounce opacity-60" style={{animationDuration: '4.5s', animationDelay: '1.5s'}}></div>
-        </div>
+        <HeroBackground variant="default" />
 
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-16">

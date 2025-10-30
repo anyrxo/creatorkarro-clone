@@ -34,6 +34,7 @@ export default function Navigation() {
     // Cleanup on unmount
     return () => {
       document.body.style.overflow = 'unset'
+      setIsMenuOpen(false)
     }
   }, [isMenuOpen])
 
