@@ -15,12 +15,14 @@ import {
   SectionHeader
 } from '@/components/course/CourseLayout'
 import WordRotate from '@/components/magicui/word-rotate'
-import BlurIn from '@/components/magicui/blur-in'  
+import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import NumberTicker from '@/components/magicui/number-ticker'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import Marquee from '@/components/magicui/marquee'
+import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
+import SocialProof from '@/components/seo/SocialProof'
 import { ChevronRight, Target, Flame, Zap, Rocket, DollarSign, Mail, BarChart3, Users, AlertTriangle, CheckCircle, Gem, XCircle } from 'lucide-react'
 
 // Icon mapping function
@@ -165,6 +167,37 @@ export default function DigitalProductsPage() {
 
   return (
     <>
+      {/* SEO: AI Content Declaration for Digital Products Course */}
+      <AIContentDeclaration
+        title="Digital Products Academy: Build $500K+ Digital Empire with Automated Funnels"
+        description="Complete system for creating, launching, and scaling digital products. Learn product creation, N8N automation, sales funnels, and systems that generate $10K-$50K monthly on autopilot."
+        contentType="course"
+        primaryTopic="Digital Product Creation & Business Automation"
+        keywords={[
+          'digital products',
+          'online course creation',
+          'N8N automation',
+          'sales funnels',
+          'passive income',
+          'product launch',
+          'email marketing',
+          'business automation',
+          'automated sales',
+          'digital empire',
+          'online business',
+          'info products',
+          'content monetization',
+          'marketing automation',
+          'creator economy'
+        ]}
+        author="Anyro"
+        datePublished="2024-03-01"
+        dateModified="2025-10-31"
+        readingTime={15}
+        isAccessibleForFree={false}
+        expertiseLevel="beginner"
+      />
+
       {/* Schema Markup */}
       <script
         type="application/ld+json"
@@ -203,6 +236,18 @@ export default function DigitalProductsPage() {
             { value: "89%", label: "Success Rate", color: "text-purple-400" }
           ]}
           isVisible={heroAnimation.isVisible}
+        />
+      </div>
+
+      {/* SEO: Social Proof Component */}
+      <div className="container mx-auto px-4">
+        <SocialProof
+          students={1200}
+          revenue="$5M+"
+          rating={4.9}
+          reviews={950}
+          companies={30}
+          showAll={true}
         />
       </div>
 

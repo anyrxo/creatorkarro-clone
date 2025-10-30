@@ -19,6 +19,7 @@ import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import PainPointIcon from '@/components/PainPointIcon'
 import StandardCTA from '@/components/StandardCTA'
+import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
 import { ChevronRight, Smartphone, CreditCard, Bot } from 'lucide-react'
 
 export default function HomePage() {
@@ -175,6 +176,37 @@ export default function HomePage() {
 
   return (
     <div ref={containerRef} className="bg-black overflow-hidden">
+      {/* SEO: AI Content Declaration for maximum discoverability */}
+      <AIContentDeclaration
+        title="Build Your Creator Empire: Master Instagram Growth, AI Influencers, Futures Trading & Digital Products"
+        description="IImagined.ai teaches proven systems for Instagram growth (0-500K followers), AI influencer creation, futures trading, and digital products. Join 4,000+ successful students."
+        contentType="course"
+        primaryTopic="Creator Economy & Digital Business Education"
+        keywords={[
+          'Instagram growth',
+          'AI influencers',
+          'ComfyUI',
+          'futures trading',
+          'digital products',
+          'content creation',
+          'social media marketing',
+          'passive income',
+          'online courses',
+          'creator economy',
+          'N8N automation',
+          'prop firm trading',
+          'Instagram monetization',
+          'viral content',
+          'business automation'
+        ]}
+        author="Anyro"
+        datePublished="2024-01-01"
+        dateModified="2025-10-31"
+        readingTime={5}
+        isAccessibleForFree={true}
+        expertiseLevel="beginner"
+      />
+
       <h1 className="sr-only">
         Build Your Creator Empire: Master Instagram Growth, AI Influencers, Futures Trading & Digital Products
       </h1>

@@ -22,6 +22,8 @@ import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
+import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
+import SocialProof from '@/components/seo/SocialProof'
 import { Rocket, Video, Bot, Users, Zap, Target, Shield, AlertTriangle, Gem, TrendingUp, Flame, CheckCircle, DollarSign, Phone } from 'lucide-react'
 import * as analytics from '@/lib/analytics'
 import { useEffect } from 'react'
@@ -538,6 +540,37 @@ export default function AIInfluencersPage() {
 
   return (
     <>
+      {/* SEO: AI Content Declaration for AI Influencers Course */}
+      <AIContentDeclaration
+        title="AI Influencers Mastery: Create Photorealistic Virtual Models & Earn $10K/Month"
+        description="Master ComfyUI, SDXL, and AI workflows to create photorealistic AI influencers. Build virtual models that generate content 24/7 without showing your face. Complete training system."
+        contentType="course"
+        primaryTopic="AI Influencer Creation & Monetization"
+        keywords={[
+          'AI influencers',
+          'ComfyUI',
+          'SDXL',
+          'virtual models',
+          'AI image generation',
+          'stable diffusion',
+          'AI content creation',
+          'faceless income',
+          'digital models',
+          'AI automation',
+          'passive income',
+          'virtual influencers',
+          'AI workflows',
+          'GPU rendering',
+          'creator economy'
+        ]}
+        author="Anyro"
+        datePublished="2024-02-01"
+        dateModified="2025-10-31"
+        readingTime={15}
+        isAccessibleForFree={false}
+        expertiseLevel="intermediate"
+      />
+
       {/* Enhanced Schema Markup */}
       <script
         type="application/ld+json"
@@ -569,6 +602,18 @@ export default function AIInfluencersPage() {
             text: "500+ students creating AI influencers"
           }}
           isVisible={heroAnimation.isVisible}
+        />
+      </div>
+
+      {/* SEO: Social Proof Component */}
+      <div className="container mx-auto px-4">
+        <SocialProof
+          students={1500}
+          revenue="$800K+"
+          rating={4.9}
+          reviews={800}
+          companies={25}
+          showAll={true}
         />
       </div>
 

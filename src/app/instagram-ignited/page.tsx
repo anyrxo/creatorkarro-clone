@@ -25,6 +25,8 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
+import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
+import SocialProof from '@/components/seo/SocialProof'
 import { ChevronRight, Target, Video, FileText, Users, BarChart3, Handshake, Zap, Flame, CheckCircle, XCircle, AlertTriangle } from 'lucide-react'
 
 // Icon mapping function
@@ -203,6 +205,37 @@ export default function InstagramIgnitedPage() {
 
   return (
     <>
+      {/* SEO: AI Content Declaration for Instagram Ignited Course Page */}
+      <AIContentDeclaration
+        title="Instagram Ignited: 0 to 500K Followers System - Complete Instagram Growth Course"
+        description="Master Instagram growth with proven strategies that built 10M+ followers for students. Learn viral content, algorithm domination, monetization, and scaling from 0 to 500K followers."
+        contentType="course"
+        primaryTopic="Instagram Growth & Monetization Training"
+        keywords={[
+          'Instagram growth',
+          'Instagram marketing',
+          'social media marketing',
+          'Instagram algorithm',
+          'viral content',
+          'Instagram monetization',
+          'content creation',
+          'Instagram reels',
+          'engagement strategies',
+          'Instagram followers',
+          'social media strategy',
+          'influencer marketing',
+          'Instagram course',
+          'brand partnerships',
+          'creator economy'
+        ]}
+        author="Anyro"
+        datePublished="2024-01-01"
+        dateModified="2025-10-31"
+        readingTime={15}
+        isAccessibleForFree={false}
+        expertiseLevel="beginner"
+      />
+
       {/* Schema Markup */}
       <script
         type="application/ld+json"
@@ -245,6 +278,18 @@ export default function InstagramIgnitedPage() {
             { value: "250M+", label: "Views Created", color: "text-purple-400" }
           ]}
           isVisible={heroAnimation.isVisible}
+        />
+      </div>
+
+      {/* SEO: Social Proof Component */}
+      <div className="container mx-auto px-4">
+        <SocialProof
+          students={6000}
+          revenue="$2.5M+"
+          rating={4.9}
+          reviews={2000}
+          companies={50}
+          showAll={true}
         />
       </div>
 

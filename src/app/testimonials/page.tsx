@@ -12,6 +12,7 @@ import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import ScrambleText from '@/components/magicui/scramble-text'
 import HeroBackground from '@/components/HeroBackground'
+import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
 
 // Review Schema.org markup for testimonials
 const testimonialsSchema = {
@@ -263,6 +264,32 @@ export default function TestimonialsPage() {
 
   return (
     <>
+      {/* SEO: AI Content Declaration for Testimonials Page */}
+      <AIContentDeclaration
+        title="Student Success Stories & Testimonials - IImagined.ai"
+        description="Real success stories from 4,000+ students who transformed their lives through Instagram growth, AI influencers, futures trading, and digital products courses. Verified results and testimonials."
+        contentType="review"
+        primaryTopic="Student Success Stories & Course Reviews"
+        keywords={[
+          'student success stories',
+          'course testimonials',
+          'Instagram growth results',
+          'AI influencer success',
+          'digital product sales',
+          'futures trading wins',
+          'online course reviews',
+          'creator economy',
+          'business transformation',
+          'verified testimonials'
+        ]}
+        author="Anyro"
+        datePublished="2024-01-01"
+        dateModified="2025-10-31"
+        readingTime={10}
+        isAccessibleForFree={true}
+        expertiseLevel="beginner"
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

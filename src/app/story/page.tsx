@@ -10,6 +10,8 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import WordRotate from '@/components/magicui/word-rotate'
 import ScrambleText from '@/components/magicui/scramble-text'
 import HeroBackground from '@/components/HeroBackground'
+import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
+import PersonSchema, { personSchemas } from '@/components/seo/PersonSchema'
 
 export default function StoryPage() {
   // Scroll animations for different sections
@@ -22,6 +24,37 @@ export default function StoryPage() {
 
   return (
     <div className="min-h-screen bg-dark">
+      {/* SEO: AI Content Declaration & Person Schema for Anyro */}
+      <AIContentDeclaration
+        title="My Story - Anyro: From Influencer Marketing to AI Automation Empire"
+        description="Learn how Anyro built multiple 7-figure businesses through influencer marketing, AI influencers, futures trading, digital products, and now seology.ai. The journey from 0 to helping 4,000+ students succeed."
+        contentType="article"
+        primaryTopic="Entrepreneurship & Business Journey"
+        keywords={[
+          'entrepreneurship',
+          'influencer marketing',
+          'AI influencers',
+          'futures trading',
+          'digital products',
+          'business growth',
+          'content creation',
+          'Instagram marketing',
+          'ComfyUI',
+          'prop firm trading',
+          'online business',
+          'creator economy',
+          'seology.ai',
+          '1abel clothing'
+        ]}
+        author="Anyro"
+        datePublished="2024-01-15"
+        dateModified="2025-10-31"
+        readingTime={8}
+        isAccessibleForFree={true}
+        expertiseLevel="intermediate"
+      />
+      <PersonSchema {...personSchemas.anyro} />
+
       {/* MAGICAL HEADER */}
       <section className="relative py-20 px-4 overflow-hidden">
         <HeroBackground variant="default" />

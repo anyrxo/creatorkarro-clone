@@ -19,6 +19,8 @@ import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
+import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
+import SocialProof from '@/components/seo/SocialProof'
 import { TrendingUp, DollarSign, BarChart3, Shield, Target, AlertTriangle, Zap, Users, CheckCircle, Phone, BookOpen, Calculator } from 'lucide-react'
 
 // Icon mapping function
@@ -453,12 +455,43 @@ export default function FXTradingPage() {
 
   return (
     <>
+      {/* SEO: AI Content Declaration for Futures Trading Course */}
+      <AIContentDeclaration
+        title="Futures Trading Reimagined: Pass Prop Firm Challenges & Build $100K+ Funded Accounts"
+        description="Learn proven strategies to pass TopStep, FTMO prop firm challenges and build consistent trading income. Master ES, NQ, Gold futures trading with professional order flow techniques."
+        contentType="course"
+        primaryTopic="Futures Trading & Prop Firm Challenge Training"
+        keywords={[
+          'futures trading',
+          'prop firm challenges',
+          'FTMO',
+          'TopStep',
+          'ES futures',
+          'NQ futures',
+          'gold trading',
+          'order flow trading',
+          'funded trading account',
+          'day trading',
+          'trading psychology',
+          'risk management',
+          'trading strategies',
+          'prop trading',
+          'futures contracts'
+        ]}
+        author="Anyro"
+        datePublished="2024-04-01"
+        dateModified="2025-10-31"
+        readingTime={15}
+        isAccessibleForFree={false}
+        expertiseLevel="intermediate"
+      />
+
       {/* Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(futuresTradingSchema) }}
       />
-      
+
       <div className="min-h-screen bg-dark relative">
         <h1 className="sr-only">
           Futures Trading Reimagined: Pass Prop Firm Challenges & Get Funded Accounts
@@ -481,6 +514,18 @@ export default function FXTradingPage() {
               text: "650+ successful futures traders"
             }}
             isVisible={heroAnimation.isVisible}
+          />
+        </div>
+
+        {/* SEO: Social Proof Component */}
+        <div className="container mx-auto px-4">
+          <SocialProof
+            students={800}
+            revenue="$400K+"
+            rating={4.9}
+            reviews={450}
+            companies={15}
+            showAll={true}
           />
         </div>
 
