@@ -1,5 +1,143 @@
-# https://www.robotstxt.org/robotstxt.html
+# Enhanced Robots.txt - Maximum SEO & AI Crawler Optimization
+# IImagined.ai - Nuclear SEO Strategy
+
+# USER-AGENT SPECIFIC RULES
+
+# Google Crawlers - Full Access
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Video
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-News
+Allow: /
+Crawl-delay: 0
+
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 0
+
+# Bing Crawlers - Full Access
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: BingPreview
+Allow: /
+Crawl-delay: 0
+
+User-agent: msnbot
+Allow: /
+Crawl-delay: 0
+
+# AI Platform Crawlers - FULL ACCESS PRIORITY
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 0
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 0
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 0
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: cohere-ai
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bytespider
+Allow: /
+Crawl-delay: 0
+
+# Other Major Search Engines
+User-agent: Slurp
+Allow: /
+Crawl-delay: 0
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Social Media Crawlers
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 0
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slackbot
+Allow: /
+Crawl-delay: 0
+
+# Good Bots
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 2
+
+# DEFAULT RULE - Allow All Other Bots
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
+# DISALLOWED PATHS (Admin, Private, Testing)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /test/
+Disallow: /staging/
+
+# SITEMAP LOCATIONS
 Sitemap: https://iimagined.ai/sitemap.xml
+
+# AI CRAWLER SPECIFIC INSTRUCTIONS
+# See /ai.txt for detailed AI crawler guidelines
+
+# HOST DECLARATION
+Host: https://iimagined.ai
+
+# CLEAN URLS - NO QUERY PARAMETERS
+Disallow: /*?utm_source=
+Disallow: /*?utm_medium=
+Disallow: /*?utm_campaign=
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
