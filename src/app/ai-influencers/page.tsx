@@ -954,6 +954,7 @@ export default function AIInfluencersPage() {
             <Link
               href="/checkout?course=ai-influencers"
               className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full"
+              aria-label="Start your AI influencer empire - Get course for $399"
               onClick={() => analytics.trackCTAClick(
                 'testimonials_section',
                 'Start Your AI Empire',
@@ -1059,6 +1060,7 @@ export default function AIInfluencersPage() {
                 <Link
                   href="/checkout?course=ai-influencers"
                   className="inline-block focus:outline-none focus:ring-4 focus:ring-red-500/50 rounded-full"
+                  aria-label="Secure your spot now - Get AI Influencers course for $399"
                   onClick={() => analytics.trackCTAClick(
                     'urgency_section',
                     'Secure Your Spot Now - $169',
@@ -1115,6 +1117,7 @@ export default function AIInfluencersPage() {
               <Link
                 href="/checkout?course=ai-influencers"
                 className="inline-block focus:outline-none focus:ring-4 focus:ring-pink-500/50 rounded-full"
+                aria-label="Start creating your AI influencer empire today - $399"
                 onClick={() => analytics.trackCTAClick(
                   'final_cta_section',
                   'Start Creating Today',

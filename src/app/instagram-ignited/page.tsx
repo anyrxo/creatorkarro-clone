@@ -257,7 +257,7 @@ export default function InstagramIgnitedPage() {
             </div>
             <div className="text-3xl md:text-6xl font-bold mb-6 text-red-400">
               <BlurIn
-                word="You're Getting DESTROYED by"
+                word="Your Growth is Being Limited by"
                 className="text-3xl md:text-6xl font-bold text-red-400"
                 duration={0.8}
               />
@@ -270,7 +270,7 @@ export default function InstagramIgnitedPage() {
               </div>
             </div>
             <p className="text-xl md:text-2xl text-zinc-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-              While your competitors are building million-dollar personal brands, you're stuck in Instagram hell...
+              While your competitors are building million-dollar personal brands, you're struggling with inconsistent growth...
             </p>
           </div>
 
@@ -279,7 +279,7 @@ export default function InstagramIgnitedPage() {
               {
                 icon: "chart-down",
                 title: "Posting Daily, Getting 10 Likes",
-                description: "You're grinding every single day, creating content, writing captions... and getting the same pathetic 8-15 likes from your mom and closest friends. Your reach is DEAD."
+                description: "You're grinding every single day, creating content, writing captions... and getting minimal engagement with 8-15 likes per post. Your reach needs growth."
               },
               {
                 icon: "fire",
@@ -289,12 +289,12 @@ export default function InstagramIgnitedPage() {
               {
                 icon: "skull",
                 title: "Algorithm Changes Killing You",
-                description: "Every time Instagram updates, your already terrible reach gets even worse. You have ZERO control over your visibility and you're at the mercy of a broken system."
+                description: "Every time Instagram updates, your reach doesn't improve as much as expected. You have ZERO control over your visibility and you're at the mercy of a broken system."
               },
               {
                 icon: "ghost",
                 title: "You're Completely Invisible",
-                description: "Despite posting quality content, you might as well not exist. No one sees your posts, no one engages, no one cares. You're screaming into the void."
+                description: "Despite posting quality content, you might as well not exist. No one sees your posts, no one engages, no one cares. Your content visibility needs improvement."
               },
               {
                 icon: "money-off",
@@ -523,7 +523,7 @@ export default function InstagramIgnitedPage() {
 
           <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
             <p className="text-lg md:text-xl text-zinc-200 mb-8">Ready to take your brand to the next level?</p>
-            <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
+            <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer" aria-label="Claim Instagram Ignited Full Creator Bundle for $399">
               Claim Full Creator Bundle
             </button>
           </div>
@@ -784,7 +784,7 @@ export default function InstagramIgnitedPage() {
             <p className="text-lg md:text-xl text-zinc-200 mb-8">
               Access all recorded page audits, lessons, and our private community in the evergreen, constantly updated program.
             </p>
-            <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
+            <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer" aria-label="Join Instagram Ignited 4.0 with personalized audit and bonuses">
               Join IImagined 4.0
             </button>
             <p className="text-sm text-zinc-300 mt-4">And claim all the bonuses</p>
@@ -1189,7 +1189,7 @@ CLAIM INSTAGRAM IGNITED NOW - $399
                 <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
                   {story.story}
                 </p>
-                <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer">
+                <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer" aria-label="Get started with Instagram Ignited course">
                   Get Started
                 </button>
               </div>

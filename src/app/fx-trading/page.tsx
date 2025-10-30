@@ -184,7 +184,7 @@ export default function FXTradingPage() {
     {
       number: 4,
       title: "Trading Psychology & Discipline",
-      description: "Master the mental game that separates winners from losers",
+      description: "Master the mental game that distinguishes profitable traders from unprofitable ones",
       color: "text-purple-400",
       bgColor: "bg-gradient-to-r from-purple-900/20 to-indigo-900/20",
       borderColor: "border-purple-500/30",
@@ -489,7 +489,7 @@ export default function FXTradingPage() {
                 badge="THE FUTURES REALITY"
                 badgeColor="text-red-400"
                 title="Why 90% of Futures Traders Fail"
-                description="The hidden mistakes that destroy trading accounts"
+                description="The hidden mistakes that derail trading accounts"
                 isVisible={problemAnimation.isVisible}
               />
             </div>
@@ -685,7 +685,7 @@ export default function FXTradingPage() {
                 <p className="text-xl text-zinc-300 mb-8">
                   Join <NumberTicker value={650} className="text-green-400 font-bold inline" />+ traders building consistent income from futures markets
                 </p>
-                <Link href="/checkout?course=fx-trading" className="inline-block focus:outline-none focus:ring-4 focus:ring-green-500/50 rounded-full">
+                <Link href="/checkout?course=fx-trading" className="inline-block focus:outline-none focus:ring-4 focus:ring-green-500/50 rounded-full" aria-label="Start trading profitably - Get Futures Trading course for $399">
                   <ShimmerButton
                     className="shadow-2xl"
                     shimmerColor="#ffffff"

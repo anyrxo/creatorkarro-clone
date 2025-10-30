@@ -215,7 +215,7 @@ export default function DigitalProductsPage() {
               badgeColor="bg-red-500/10 text-red-400 px-4 py-2 rounded-full"
               isVisible={problemAnimation.isVisible}
               title="You're Trapped in the <span className='text-red-400'>Trading Time for Money</span> Prison"
-              subtitle="While others build digital empires that work 24/7, you're stuck in the outdated hustle..."
+              subtitle="While others build digital empires that work 24/7, you're managing limited growth with traditional methods..."
             />
           </div>
 
@@ -244,7 +244,7 @@ export default function DigitalProductsPage() {
               {
                 icon: getIcon("flame"),
                 title: "Watching Others Get Rich Off Your Ideas",
-                description: "Competitors with worse knowledge are making millions selling products while you're stuck trading time for money. They figured out the system - you didn't."
+                description: "Competitors with worse knowledge are making millions selling products while you're limited by trading time for money. They discovered the right approach - and you can too."
               },
               {
                 icon: getIcon("zap"),
@@ -276,7 +276,7 @@ export default function DigitalProductsPage() {
                   {getIcon('xCircle', 'w-5 h-5')} You're not just missing money... you're missing the freedom to live life on your terms.
                 </p>
                 <p className="text-zinc-200">
-                  While others build products that sell while they sleep, you're stuck in the endless grind of manual work.
+                  While others build products that sell while they sleep, you're limited by the continuous demands of manual work.
                 </p>
               </div>
             </div>
@@ -520,7 +520,7 @@ export default function DigitalProductsPage() {
               badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
               title="Real People, <span className='text-green-400'>Real Results</span>"
               isVisible={studentResultsAnimation.isVisible}
-              subtitle="These entrepreneurs went from broke to building digital empires..."
+              subtitle="These entrepreneurs went from financial constraint to building digital empires..."
             />
           </div>
 
