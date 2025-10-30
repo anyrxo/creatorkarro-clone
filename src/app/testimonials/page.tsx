@@ -35,10 +35,10 @@ export default function TestimonialsPage() {
       const interval = duration / steps
       
       const targets = {
-        students: 13000,
-        views: 125,
-        followers: 10,
-        revenue: 5.0
+        students: 4000,
+        views: 50,
+        followers: 3,
+        revenue: 2.5
       }
       
       let currentStep = 0
@@ -87,11 +87,11 @@ export default function TestimonialsPage() {
     },
     {
       name: "Devon Mitchell",
-      role: "Trading Enthusiast",
-      course: "FX Trading",
+      role: "Futures Trader",
+      course: "Futures Trading",
       avatar: "https://i.pravatar.cc/150?img=67",
-      content: "The FX Trading course transformed my understanding of forex markets! The real-time charts and analytical tools helped me develop profitable trading strategies. Within 3 months, I went from complete beginner to consistent profits. Anyro's technical analysis framework is incredibly detailed!",
-      results: "Consistent profitable trading, 40% portfolio growth"
+      content: "The Futures Trading course helped me pass my TopStep evaluation! Went from never trading futures to getting a $50K funded account in 4 months. The ES and NQ strategies are solid, and the risk management section is what got me through the challenge.",
+      results: "TopStep funded, $50K account"
     },
     {
       name: "Ashton Torres",
@@ -191,11 +191,11 @@ export default function TestimonialsPage() {
     },
     {
       name: "Michael Brown",
-      role: "Photographer",
-      course: "FX Trading",
+      role: "Photographer & Trader",
+      course: "Futures Trading",
       avatar: "https://i.pravatar.cc/150?img=76",
-      content: "FX Trading transformed my income diversification strategy. I can now generate passive income through smart forex trading while running my photography business. Game changer!",
-      results: "3x income streams, fully diversified portfolio"
+      content: "Passed my FTMO challenge using the strategies from the Futures course! Now I trade Gold futures with a funded account while running my photography business. Finally diversified my income beyond just client work.",
+      results: "FTMO funded, diversified income"
     },
     {
       name: "Sarah Johnson",
@@ -382,27 +382,27 @@ export default function TestimonialsPage() {
           >
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-blue-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent mb-2">
-                <NumberTicker value={13000} className="text-3xl md:text-4xl font-bold text-blue-400" />+
+                <NumberTicker value={4000} className="text-3xl md:text-4xl font-bold text-blue-400" />+
               </div>
-              <p className="text-zinc-300 text-sm md:text-base font-medium">Happy Students</p>
+              <p className="text-zinc-300 text-sm md:text-base font-medium">Students Enrolled</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-green-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-2">
-                <NumberTicker value={125} className="text-3xl md:text-4xl font-bold text-green-400" />M+
+                <NumberTicker value={50} className="text-3xl md:text-4xl font-bold text-green-400" />M+
               </div>
-              <p className="text-zinc-300 text-sm md:text-base font-medium">Views Generated</p>
+              <p className="text-zinc-300 text-sm md:text-base font-medium">Total Views Generated</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-purple-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent mb-2">
-                <NumberTicker value={10} className="text-3xl md:text-4xl font-bold text-purple-400" />M+
+                <NumberTicker value={3} className="text-3xl md:text-4xl font-bold text-purple-400" />M+
               </div>
-              <p className="text-zinc-300 text-sm md:text-base font-medium">Followers Gained</p>
+              <p className="text-zinc-300 text-sm md:text-base font-medium">Combined Followers</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-yellow-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent mb-2">
-                $<NumberTicker value={5} className="text-3xl md:text-4xl font-bold text-orange-400" />M+
+                $<NumberTicker value={2.5} className="text-3xl md:text-4xl font-bold text-orange-400" />M+
               </div>
-              <p className="text-gray-400 text-sm md:text-base">Student Revenue</p>
+              <p className="text-gray-400 text-sm md:text-base">Student Revenue Generated</p>
             </div>
           </div>
 
@@ -420,7 +420,7 @@ export default function TestimonialsPage() {
                     testimonial.course === 'Instagram Ignited' ? 'bg-blue-500/20 text-blue-400' :
                     testimonial.course === 'Digital Products' ? 'bg-green-500/20 text-green-400' :
                     testimonial.course === 'AI Influencers' ? 'bg-pink-500/20 text-pink-400' :
-                    testimonial.course === 'FX Trading' ? 'bg-purple-500/20 text-purple-400' :
+                    testimonial.course === 'Futures Trading' ? 'bg-purple-500/20 text-purple-400' :
                     'bg-orange-500/20 text-orange-400'
                   }`}>
                     {testimonial.course}
@@ -601,7 +601,7 @@ export default function TestimonialsPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 animate-pulse"></div>
             <div className="relative z-10">
               <div className="inline-block px-4 py-2 bg-zinc-800 rounded-full text-sm text-zinc-200 mb-6">
-                <span className="text-green-400">★</span> Join 13,000+ successful students
+                <span className="text-green-400">★</span> Join 4,000+ students
               </div>
               
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
