@@ -223,7 +223,7 @@ export default function StoryPage() {
             </div>
 
             <p>
-              Here's the pattern I see everywhere: <strong className="text-red-400">people fail because they're lazy, not because they're stupid.</strong> They want the result without the reps. They want to "try" five things instead of mastering one. They watch YouTube for 6 hours but won't spend 30 minutes actually building something.
+              Here's the pattern I see everywhere: <strong className="text-red-400">people struggle because they lack focus, not because they lack talent.</strong> They want the result without the reps. They want to "try" five things instead of mastering one. They consume content for hours but won't spend 30 minutes actually building something.
             </p>
 
             <p>
@@ -267,7 +267,7 @@ export default function StoryPage() {
             </p>
 
             <p>
-              Bottom line: <span className="text-yellow-400 font-bold">you don't need permission, you don't need "the perfect idea," and you don't need more information.</span> You need to pick something real - AI, trading, content, products, whatever - and execute until you're undeniable. That's what I did. That's what my students are doing. That's what you can do if you stop being lazy.
+              Bottom line: <span className="text-yellow-400 font-bold">you don't need permission, you don't need "the perfect idea," and you don't need more information.</span> You need to pick something real - AI, trading, content, products, whatever - and execute until you're undeniable. That's what I did. That's what my students are doing. That's what you can do when you commit to focused action.
             </p>
 
             <p className="text-xl font-semibold text-purple-400">
@@ -306,7 +306,7 @@ export default function StoryPage() {
                 <span>Digital Products (Creation & Launch Systems)</span>
               </div>
             </div>
-            <Link href="/instagram-ignited" className="inline-block focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full" aria-label="Stop being lazy and start your transformation">
+            <Link href="/instagram-ignited" className="inline-block focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full" aria-label="Start your transformation with focused action">
               <ShimmerButton
                 className="shadow-2xl hover:shadow-blue-500/25 transition-all duration-300"
                 shimmerColor="#ffffff"
@@ -315,7 +315,7 @@ export default function StoryPage() {
                 borderRadius="9999px"
               >
                 <span className="whitespace-nowrap text-lg font-bold px-8 py-3">
-                  Stop Being Lazy. Start Here
+                  Start Your Transformation Here
                 </span>
               </ShimmerButton>
             </Link>
