@@ -630,6 +630,39 @@ export default function FXTradingPage() {
           </div>
         </section>
 
+        {/* Trading Risk Disclaimer */}
+        <section className="section-spacing bg-zinc-950/50 border-t border-zinc-800">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <div className="bg-red-950/20 border-2 border-red-500/30 rounded-2xl p-8">
+                <div className="flex items-start gap-4 mb-4">
+                  <AlertTriangle className="w-8 h-8 text-red-400 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-2xl font-bold text-red-400 mb-4">Important Trading Risk Disclosure</h3>
+                    <div className="text-zinc-300 space-y-3 text-sm leading-relaxed">
+                      <p>
+                        <strong className="text-white">FUTURES TRADING INVOLVES SUBSTANTIAL RISK OF LOSS.</strong> Futures and options trading is not suitable for all investors. The risk of loss in trading futures contracts or commodity options can be substantial, and therefore investors should understand the risks involved and must assume responsibility for the risks associated with trading futures and be financially able to assume the risk of loss.
+                      </p>
+                      <p>
+                        <strong className="text-white">Past performance is not indicative of future results.</strong> This course provides educational information only. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown in testimonials or examples. All trading involves risk, and losses can exceed deposits.
+                      </p>
+                      <p>
+                        <strong className="text-white">Hypothetical performance results have many inherent limitations.</strong> No representation is being made that any account will or is likely to achieve profits or losses similar to those shown. There are frequently sharp differences between hypothetical performance results and the actual results subsequently achieved by any particular trading program.
+                      </p>
+                      <p>
+                        <strong className="text-white">Prop firm challenges are difficult.</strong> Most traders do not pass funded account challenges on their first attempt. Success requires discipline, proper risk management, and consistent application of strategies taught in this educational course.
+                      </p>
+                      <p className="text-xs text-zinc-400 mt-4 pt-4 border-t border-zinc-700">
+                        This course is for educational purposes only. We are not registered investment advisors, broker-dealers, or financial planners. Consult with a licensed financial professional before making any investment decisions. By purchasing this course, you acknowledge you understand these risks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="section-spacing bg-zinc-900/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
