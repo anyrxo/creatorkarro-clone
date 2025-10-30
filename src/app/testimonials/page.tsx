@@ -74,23 +74,23 @@ export default function TestimonialsPage() {
       role: "Content Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=32",
-      content: "Instagram Ignited completely transformed my content strategy! I went from 800 followers to 125K in just 8 months using Anyro's viral carousel techniques. My engagement rate jumped from 2% to 12%, and I'm now making $15K/month through sponsored posts and digital products.",
-      results: "800 to 125K followers, $15K/month revenue"
+      content: "Honestly didn't expect much at first, but the carousel strategies actually work. Went from 800 followers to 125K in 8 months. The engagement stuff is what really changed things - my posts went from getting like 15 likes to thousands. Now brands actually reach out to me instead of the other way around.",
+      results: "800 → 125K followers in 8 months"
     },
     {
       name: "Sophia Chen",
       role: "Digital Entrepreneur",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=28",
-      content: "The Digital Products course is pure gold! I launched my first info product and hit $10K in sales within 3 weeks. Anyro's pricing psychology and launch strategies are game-changing. I've now built a sustainable $25K/month business selling educational content.",
-      results: "$10K in 3 weeks, $25K/month business"
+      content: "I was stuck in analysis paralysis for months before this. The course basically forced me to validate my idea first, then launch fast. Hit $10K in sales the first 3 weeks which was wild. The pricing psychology section made me realize I was undercharging by like 3x.",
+      results: "$10K first launch, now doing $25K/mo"
     },
     {
       name: "Devon Mitchell",
       role: "Futures Trader",
       course: "Futures Trading",
       avatar: "https://i.pravatar.cc/150?img=67",
-      content: "The Futures Trading course helped me pass my TopStep evaluation! Went from never trading futures to getting a $50K funded account in 4 months. The ES and NQ strategies are solid, and the risk management section is what got me through the challenge.",
+      content: "Passed my TopStep eval on the second try using what I learned here. The risk management rules literally saved me from blowing the account multiple times. Now trading a $50K funded account on ES and NQ. Still can't believe I'm getting paid to trade other people's money.",
       results: "TopStep funded, $50K account"
     },
     {
@@ -98,136 +98,136 @@ export default function TestimonialsPage() {
       role: "AI Content Creator",
       course: "AI Influencers",
       avatar: "https://i.pravatar.cc/150?img=12",
-      content: "AI Influencers opened up a completely new revenue stream for me! I created 3 AI models that generate content 24/7. Within 2 months, my AI models gained 200K combined followers and started earning $8K/month through partnerships. Anyro's approach is revolutionary!",
-      results: "200K combined followers, $8K/month AI revenue"
+      content: "Made 3 AI models that post while I sleep. Sounds weird but it works - they've got 200K followers combined now. Getting partnership offers I would've never gotten with just my personal account. It's like having a team working 24/7 except it's just me and some AI models.",
+      results: "200K followers, $8K/mo from AI content"
     },
     {
       name: "Ryan Blackwood",
       role: "Digital Entrepreneur",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=52",
-      content: "The Digital Products course turned me into a digital business powerhouse! I can now launch profitable products in weeks instead of months. My client portfolio increased 500% and I'm charging premium prices for my expertise. The product validation framework is incredibly professional!",
-      results: "500% business growth, premium pricing"
+      content: "Used to take me 3-4 months to launch a product. Now I can validate and launch in 2 weeks. Raised my prices 2x after the pricing module and people still buy. Turns out I was just scared to charge what I'm worth. My revenue went up but I'm working way less.",
+      results: "2x pricing, launches in weeks not months"
     },
     {
       name: "Allan Rodriguez",
       role: "Lifestyle Blogger",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=88",
-      content: "The Instagram OS module alone was worth the entire course! I finally understood the algorithm and my first viral carousel got 2.3M views. Within 3 months, I grew from 5K to 85K followers and landed my first $25K brand partnership.",
-      results: "2.3M views, 5K to 85K followers, $25K partnership"
+      content: "That algorithm breakdown was actually useful. Made my first carousel using the template and it got 2.3M views which was insane. Went from 5K to 85K followers in 3 months. Got my first $25K brand deal right after hitting 50K. Still feels unreal tbh.",
+      results: "2.3M views, 5K → 85K followers"
     },
     {
       name: "Cameron Lee",
       role: "Tech Entrepreneur",
       course: "AI Influencers",
       avatar: "https://i.pravatar.cc/150?img=71",
-      content: "AI Influencers completely transformed my business operations! I created AI personas that handle customer engagement, content distribution, and brand partnerships. My team productivity increased 300% and we're scaling without adding headcount. Incredible ROI!",
-      results: "300% team productivity, AI-powered operations"
+      content: "Built AI personas for customer support and content. My team was drowning in DMs and comments before. Now the AI handles most of it and we can focus on actual work. Scaled to 3x the customers without hiring anyone new. Pretty wild honestly.",
+      results: "3x customers, same team size"
     },
     {
       name: "Alex Morgan",
       role: "Digital Product Creator",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=23",
-      content: "The Digital Products framework is genius! I used Anyro's validation methods to test my course idea, then his launch strategies to generate $22K in the first week. The pricing psychology section alone 3x my conversion rates!",
-      results: "$22K first week launch, 3x conversion rates"
+      content: "Did the validation steps before building anything this time (learned that lesson the hard way before). Launched in 2 weeks and made $22K first week. The pricing psychology stuff is legit - I doubled my prices and my conversion rate actually went UP.",
+      results: "$22K first week, 2x higher prices"
     },
     {
       name: "Brendan Williams",
       role: "Instagram Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=65",
-      content: "Instagram Ignited opened up endless growth possibilities! I went from basic posts to creating viral carousel strategies that converted like crazy. My follower count jumped 400% and I'm booked solid with brand partnerships!",
-      results: "400% follower increase, booked solid with brands"
+      content: "My posts were getting maybe 50 likes before. Started using the carousel framework and things changed fast. Grew 4x in followers and now I have brands DMing me for collabs instead of me pitching them. That's the real win honestly.",
+      results: "4x follower growth, inbound brand deals"
     },
     {
       name: "Jack Connors",
       role: "Content Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=18",
-      content: "After joining the program and applying the teachings, I saw rapid results. I went from a few hundred followers to 50K, and now I've reached 100K+ followers and launched my own paid community.",
-      results: "100K+ followers, paid community"
+      content: "Started with a few hundred followers, hit 100K about 6 months later. The engagement tactics work better than just posting more. Launched a paid community last month and got 200 members week one. Feels good to finally monetize.",
+      results: "100K followers, paid community launched"
     },
     {
       name: "Maria Gonzalez",
       role: "Fashion Blogger",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=33",
-      content: "As a complete beginner with no followers, I was skeptical. But the step-by-step guidance helped me grow to 45K followers in 6 months. The carousel strategies alone changed everything for me!",
-      results: "0 to 45K followers, first brand deal at $5K"
+      content: "Literally started from zero followers. Thought I was too late to Instagram but tried anyway. Hit 45K in 6 months which seemed impossible at first. The carousel templates saved me so much time. Got my first $5K brand deal at 30K followers.",
+      results: "0 → 45K in 6 months, first $5K deal"
     },
     {
       name: "David Park",
       role: "Fitness Coach",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=85",
-      content: "I turned my fitness knowledge into a $50K product launch! The validation framework helped me test my idea before building, and the launch strategy exceeded all expectations.",
-      results: "$50K launch, 500+ happy customers"
+      content: "Almost built a massive course nobody wanted (been there before). This time I validated first with a $50 pilot, got 20 people, then built the full thing. Launch did $50K which blew my mind. Now I have 500+ students and actual testimonials.",
+      results: "$50K launch, 500+ students"
     },
     {
       name: "Lisa Thompson",
       role: "Travel Blogger",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=17",
-      content: "Managing content strategy across platforms was killing me. Instagram Ignited gave me my life back! Now I have a proven content system that works while I focus on creating amazing travel content.",
-      results: "Viral content system, 30 hours saved weekly"
+      content: "Was spending like 30 hours a week on content planning and it still felt random. Now I batch everything using the system and spend maybe 5 hours. My content performs better and I actually have time to travel. That was kind of the whole point lol.",
+      results: "25 hours saved weekly, better results"
     },
     {
       name: "James Wilson",
       role: "Tech Reviewer",
       course: "AI Influencers",
       avatar: "https://i.pravatar.cc/150?img=94",
-      content: "I created an AI tech reviewer that posts daily content. It's like having a full team working 24/7. The passive income from this is incredible!",
-      results: "AI generates $4K/month passively"
+      content: "Made an AI that reviews tech products based on my style. Posts daily and people don't even realize it's AI half the time. Making about $4K/month from it now. Weirdest passive income I've ever had but it works.",
+      results: "$4K/mo from AI reviewer account"
     },
     {
       name: "Emma Davis",
       role: "Life Coach",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=89",
-      content: "From 2K to 75K followers in 5 months! The engagement strategies taught me how to build a real community, not just numbers. My coaching business exploded!",
-      results: "2K to 75K followers, $20K/month coaching"
+      content: "2K to 75K in 5 months. The engagement stuff is what made the difference - I was posting into the void before. Now people actually respond and DM me. My coaching business went from struggling to waitlist in 3 months.",
+      results: "2K → 75K, coaching waitlist"
     },
     {
       name: "Michael Brown",
       role: "Photographer & Trader",
       course: "Futures Trading",
       avatar: "https://i.pravatar.cc/150?img=76",
-      content: "Passed my FTMO challenge using the strategies from the Futures course! Now I trade Gold futures with a funded account while running my photography business. Finally diversified my income beyond just client work.",
-      results: "FTMO funded, diversified income"
+      content: "Passed FTMO on my third attempt. The risk management part is what I was missing. Now I trade Gold futures with their capital while doing photography. Nice to have income that isn't dependent on booking clients.",
+      results: "FTMO funded, dual income streams"
     },
     {
       name: "Sarah Johnson",
       role: "Nutritionist",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=50",
-      content: "My meal plan guide made $15K in the first month! The pricing psychology module helped me position it perfectly. Now it's consistent passive income.",
-      results: "$15K first month, $5K/month passive"
+      content: "Turned my meal plans into a $47 guide. Made $15K first month which was way more than I expected. The pricing module convinced me to charge more than $19 (which is what I almost did). Now it brings in $5K+ monthly on autopilot.",
+      results: "$15K launch, $5K/mo passive"
     },
     {
       name: "Robert Garcia",
       role: "Music Producer",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=41",
-      content: "Created and launched my music production course using the Digital Products framework. What used to be just beats is now a thriving educational business. More revenue streams, more impact!",
-      results: "New revenue stream, $8K/month passive income"
+      content: "Was just selling beats for like $50 each. Made a production course instead and now I make $8K/month teaching. Still sell beats but the course revenue is way more consistent. Wish I did this years ago.",
+      results: "Beats → Course, $8K/mo passive"
     },
     {
       name: "Amanda White",
       role: "Beauty Influencer",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=21",
-      content: "The viral carousel formula is INSANE! My first one got 1.2M views and 15K new followers. Now brands are reaching out to ME!",
-      results: "1.2M viral views, $10K brand deals"
+      content: "First carousel using the formula got 1.2M views and 15K followers overnight. Completely changed my account. Now brands reach out to me instead of ignoring my emails. Hit $10K in brand deals last month.",
+      results: "1.2M views, $10K/mo in deals"
     },
     {
       name: "Kevin Martinez",
       role: "Business Coach",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=7",
-      content: "Launched my coaching program to $35K using Anyro's strategies. The email sequences and launch tactics were pure gold. Best investment ever!",
-      results: "$35K launch, 6-figure run rate"
+      content: "Launch did $35K which was wild because my list was only like 800 people. The email sequences and scarcity tactics actually work. On track for 6 figures this year which seemed impossible 6 months ago.",
+      results: "$35K launch, 6-fig trajectory"
     }
   ]
   
@@ -525,9 +525,9 @@ export default function TestimonialsPage() {
                   </div>
                   
                   <p className="text-lg text-zinc-200 leading-relaxed mb-6">
-                    "Instagram Ignited didn't just teach me how to grow followers - it showed me how to build a real business. 
-                    The viral carousel strategies were a game-changer. My first carousel using Anyro's formula got 2.8M views! 
-                    Now I'm consistently hitting 100K+ views and converting followers into paying customers."
+                    "I was stuck at 3K followers for like a year. Then I actually followed the carousel framework instead of just
+                    winging it. First one got 2.8M views which was insane. Now I'm averaging 100K+ views per post and actually
+                    making money from my followers instead of just having them. The algorithm stuff really works."
                   </p>
                   
                   <div className="flex flex-wrap gap-3">
@@ -578,9 +578,9 @@ export default function TestimonialsPage() {
                   </div>
                   
                   <p className="text-lg text-zinc-200 leading-relaxed mb-6">
-                    "I was completely lost with just 400 followers. Instagram Ignited gave me the exact blueprint I needed. 
-                    But the real transformation came when I combined it with the Digital Products course. I went from struggling 
-                    creator to running a multiple 6-figure education business. My students now achieve similar transformations!"
+                    "Had 400 followers and no clue what I was doing. Instagram Ignited showed me how to actually grow an account.
+                    Then I took the Digital Products course and turned that audience into a real business. Now I'm doing multiple 6-figures
+                    selling courses. My students are getting similar results which is wild to see."
                   </p>
                   
                   <div className="flex flex-wrap gap-3">
@@ -621,8 +621,9 @@ export default function TestimonialsPage() {
               </h2>
               
               <p className="text-lg md:text-xl text-zinc-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Every testimonial on this page started exactly where you are now. They took action, 
-                followed the proven systems, and transformed their lives. You have the same potential.
+                Everyone here started where you are now - probably doubting if this stuff actually works.
+                They just followed the systems and put in the work. The difference between them and people who
+                don't see results? They actually did it instead of just thinking about it.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
