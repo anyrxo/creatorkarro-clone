@@ -460,6 +460,9 @@ export default function FXTradingPage() {
       />
       
       <div className="min-h-screen bg-dark relative">
+        <h1 className="sr-only">
+          Futures Trading Reimagined: Pass Prop Firm Challenges & Get Funded Accounts
+        </h1>
         {/* Hero Section */}
         <div ref={heroAnimation.elementRef} className="relative z-10">
           <HeroSection

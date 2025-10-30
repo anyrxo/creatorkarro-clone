@@ -159,7 +159,8 @@ export default function SocialIcon({
         href={defaultHref}
         target={target}
         rel={target === '_blank' ? 'noopener noreferrer' : undefined}
-        className="inline-block hover:opacity-75 transition-opacity"
+        className="inline-block hover:opacity-75 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 rounded-lg"
+        aria-label={`Visit ${platform}`}
       >
         {iconElement}
       </a>

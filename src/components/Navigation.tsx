@@ -38,6 +38,19 @@ export default function Navigation() {
     }
   }, [isMenuOpen])
 
+  // Keyboard shortcut for closing menu and dropdowns (Escape key)
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsMenuOpen(false)
+        setIsCoursesOpen(false)
+      }
+    }
+
+    window.addEventListener('keydown', handleEscape)
+    return () => window.removeEventListener('keydown', handleEscape)
+  }, [])
+
   const mainNavigation: NavigationItem[] = [
     { name: 'Story', href: '/story' },
     {
@@ -92,7 +105,7 @@ export default function Navigation() {
                       onMouseLeave={() => setIsCoursesOpen(false)}
                     >
                       <button
-                        className="flex items-center px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 rounded-full hover:bg-zinc-700/50 hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] backdrop-blur-sm"
+                        className="flex items-center px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 rounded-full hover:bg-zinc-700/50 hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
                         onMouseEnter={() => setIsCoursesOpen(true)}
                         onClick={() => setIsCoursesOpen(!isCoursesOpen)}
                         onKeyDown={(e) => {
@@ -125,7 +138,7 @@ export default function Navigation() {
                           <Link
                             key={dropdownItem.name}
                             href={dropdownItem.href}
-                            className={`block px-5 py-3 text-sm text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20 transition-all duration-300 hover:transform hover:translate-x-2 rounded-lg mx-2 ${
+                            className={`block px-5 py-3 text-sm text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20 transition-all duration-300 hover:transform hover:translate-x-2 rounded-lg mx-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset ${
                               isCoursesOpen ? `opacity-100 delay-${index * 50}` : 'opacity-0'
                             }`}
                             style={{ transitionDelay: isCoursesOpen ? `${index * 50}ms` : '0ms' }}
@@ -139,7 +152,7 @@ export default function Navigation() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 rounded-full hover:bg-zinc-700/50 hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] backdrop-blur-sm"
+                      className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-all duration-300 rounded-full hover:bg-zinc-700/50 hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
                       onClick={() => analytics.trackNavigation(item.name, item.href, 'main_nav')}
                     >
                       {item.name}
@@ -156,7 +169,7 @@ export default function Navigation() {
               href="https://whop.com/iimagined/all-access-reimagined/"
               target="_blank"
               rel="noopener noreferrer"
-              className="nav-pill px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] backdrop-blur-sm border-blue-500/50 hover:border-blue-400/50 font-semibold"
+              className="nav-pill px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] backdrop-blur-sm border-blue-500/50 hover:border-blue-400/50 font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
               onClick={() => {
                 analytics.trackCTAClick('header_nav', 'JOIN', 'https://whop.com/iimagined/all-access-reimagined/')
                 analytics.trackOutboundLink('https://whop.com/iimagined/all-access-reimagined/', 'JOIN', 'header_nav')
@@ -169,7 +182,7 @@ export default function Navigation() {
           {/* Mobile menu button - positioned to the right */}
           <div className="md:hidden ml-auto">
             <button
-              className="p-2 text-gray-300 hover:text-white transition-all duration-200 hover:scale-110 active:scale-95"
+              className="p-2 text-gray-300 hover:text-white transition-all duration-200 hover:scale-110 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 rounded-lg"
               onClick={() => {
                 setIsMenuOpen(!isMenuOpen)
                 if (!isMenuOpen) {
@@ -230,7 +243,7 @@ export default function Navigation() {
                 {item.hasDropdown ? (
                   <div>
                     <button
-                      className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200"
+                      className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg"
                       onClick={() => setIsCoursesOpen(!isCoursesOpen)}
                     >
                       {item.name}
@@ -243,7 +256,7 @@ export default function Navigation() {
                         <Link
                           key={dropdownItem.name}
                           href={dropdownItem.href}
-                          className={`block px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-all duration-200 ${
+                          className={`block px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg ${
                             isCoursesOpen
                               ? `transform translate-x-0 opacity-100 delay-${dropdownIndex * 50}`
                               : 'transform -translate-x-4 opacity-0'
@@ -261,9 +274,9 @@ export default function Navigation() {
                 ) : (
                   <Link
                     href={item.href}
-                    className={`block px-4 py-2 text-sm font-medium transition-colors duration-200 ${
+                    className={`block px-4 py-2 text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg ${
                       item.external
-                        ? 'text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-semibold text-center hover:from-blue-500 hover:to-purple-500'
+                        ? 'text-white bg-gradient-to-r from-blue-600 to-purple-600 font-semibold text-center hover:from-blue-500 hover:to-purple-500'
                         : 'text-gray-300 hover:text-white'
                     }`}
                     onClick={() => {

@@ -65,7 +65,7 @@ export default function Footer() {
                 href="https://whop.com/anyro/premium-monthly-0a/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+                className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
                 onClick={() => {
                   analytics.trackCTAClick('footer', 'Join Our Community', 'https://whop.com/anyro/premium-monthly-0a/')
                   analytics.trackOutboundLink('https://whop.com/anyro/premium-monthly-0a/', 'Join Our Community', 'footer')
@@ -79,6 +79,7 @@ export default function Footer() {
                 <div
                   key={link.name}
                   onClick={() => analytics.trackSocialClick(link.platform, 'footer')}
+                  className="rounded-lg focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-zinc-900"
                 >
                   <SocialIcon
                     platform={link.platform as any}
@@ -86,7 +87,7 @@ export default function Footer() {
                     size={24}
                     href={link.href}
                     target="_blank"
-                    className="hover:scale-110 transition-transform duration-200"
+                    className="hover:scale-110 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 rounded-lg"
                   />
                 </div>
               ))}
@@ -101,7 +102,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
+                    className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg"
                     onClick={() => analytics.trackNavigation(link.name, link.href, 'footer')}
                   >
                     {link.name}
@@ -119,7 +120,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
+                    className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg"
                     onClick={() => analytics.trackNavigation(link.name, link.href, 'footer')}
                   >
                     {link.name}
@@ -137,7 +138,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4"
+                    className="text-zinc-200 hover:text-white transition-all duration-200 hover:translate-x-1 block py-1 border-l-2 border-transparent hover:border-blue-400 pl-3 hover:pl-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg"
                     onClick={() => analytics.trackNavigation(link.name, link.href, 'footer')}
                   >
                     {link.name}
@@ -172,7 +173,7 @@ export default function Footer() {
             {/* Copyright */}
             <div className="text-gray-400 text-sm">
               © {currentYear} <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined.ai. All rights reserved. Created by{' '}
-              <Link href="/about" className="text-blue-400 hover:text-blue-300">
+              <Link href="/about" className="text-blue-400 hover:text-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg">
                 Anyro
               </Link>
             </div>
@@ -188,7 +189,7 @@ export default function Footer() {
                 href="https://whop.com/anyro/premium-monthly-0a/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 font-semibold hover:underline transition-all duration-200"
+                className="text-blue-400 hover:text-blue-300 font-semibold hover:underline transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg"
                 onClick={() => {
                   analytics.trackCTAClick('footer_bottom', 'Join Community', 'https://whop.com/anyro/premium-monthly-0a/')
                   analytics.trackOutboundLink('https://whop.com/anyro/premium-monthly-0a/', 'Join Community', 'footer_bottom')

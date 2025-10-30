@@ -218,6 +218,9 @@ export default function InstagramIgnitedPage() {
       />
 
       <div className="min-h-screen bg-dark relative">
+      <h1 className="sr-only">
+        Instagram Ignited: Complete Instagram Growth & Monetization Course
+      </h1>
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef}>
         <HeroSection

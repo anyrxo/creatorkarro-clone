@@ -81,8 +81,16 @@ export default function FAQSection({
           className="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden"
         >
           <div
-            className={`p-6 ${collapsible ? 'cursor-pointer hover:bg-gray-750' : ''}`}
+            className={`p-6 ${collapsible ? 'cursor-pointer hover:bg-gray-750' : ''} focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 rounded-lg`}
             onClick={() => toggleItem(faq.id)}
+            role={collapsible ? 'button' : undefined}
+            tabIndex={collapsible ? 0 : undefined}
+            onKeyDown={(e) => {
+              if (collapsible && (e.key === 'Enter' || e.key === ' ')) {
+                e.preventDefault()
+                toggleItem(faq.id)
+              }
+            }}
           >
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-semibold text-white faq-question pr-4">

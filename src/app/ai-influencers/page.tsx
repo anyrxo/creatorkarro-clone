@@ -548,6 +548,9 @@ export default function AIInfluencersPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="min-h-screen bg-dark relative">
+      <h1 className="sr-only">
+        AI Influencers Mastery: Build Your AI-Powered Virtual Influencer Empire
+      </h1>
       {/* Hero Section */}
       <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection

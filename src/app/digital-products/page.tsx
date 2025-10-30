@@ -176,6 +176,9 @@ export default function DigitalProductsPage() {
       />
 
       <div className="min-h-screen bg-dark relative">
+      <h1 className="sr-only">
+        Digital Products Academy: Create, Launch & Scale Profitable Digital Products
+      </h1>
       {/* 1. Hero Section */}
       <div ref={heroAnimation.elementRef}>
         <HeroSection

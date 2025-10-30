@@ -175,6 +175,9 @@ export default function HomePage() {
 
   return (
     <div ref={containerRef} className="bg-black overflow-hidden">
+      <h1 className="sr-only">
+        Build Your Creator Empire: Master Instagram Growth, AI Influencers, Futures Trading & Digital Products
+      </h1>
       {/* Beautiful Hero Section */}
       <BeautifulHero />
 

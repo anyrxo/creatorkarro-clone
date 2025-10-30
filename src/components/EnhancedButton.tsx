@@ -56,7 +56,7 @@ export default function EnhancedButton({
   const baseStyles = cn(
     'relative overflow-hidden font-semibold transition-all duration-300 transform-gpu',
     'disabled:opacity-50 disabled:cursor-not-allowed',
-    'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500',
+    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 focus-visible:ring-offset-zinc-900',
     {
       // Variants
       'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-purple-700 hover:-translate-y-1 hover:scale-105': variant === 'primary',

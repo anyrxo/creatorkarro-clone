@@ -13,6 +13,22 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import ScrambleText from '@/components/magicui/scramble-text'
 import HeroBackground from '@/components/HeroBackground'
 
+// Review Schema.org markup for testimonials
+const testimonialsSchema = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "IImagined.ai",
+  "url": "https://iimagined.ai",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "4000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": []
+}
+
 export default function TestimonialsPage() {
   // Scroll animations for different sections
   const heroAnimation = useScrollAnimation({ threshold: 0.3 })
@@ -246,54 +262,85 @@ export default function TestimonialsPage() {
   console.log('Active filter:', activeFilter)
 
   return (
-    <div className="min-h-screen bg-dark">
-      {/* MAGICAL HEADER */}
-      <section className="relative py-20 px-4 overflow-hidden">
-        <HeroBackground variant="default" />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            ...testimonialsSchema,
+            review: testimonials.map(t => ({
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": t.name
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "reviewBody": t.content,
+              "itemReviewed": {
+                "@type": "Course",
+                "name": t.course,
+                "provider": {
+                  "@type": "Organization",
+                  "name": "IImagined.ai"
+                }
+              }
+            }))
+          })
+        }}
+      />
 
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-16">
-            <div
-              ref={heroAnimation.elementRef}
-              className={`scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
-            >
-              <div className="relative inline-block">
-                {/* Main Title with ScrambleText Morphing Effect */}
-                <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
-                  <ScrambleText 
-                    text="Testimonials" 
-                    className="text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight drop-shadow-2xl" 
-                    scrambleSpeed={1} 
-                    revealSpeed={1} 
+      <div className="min-h-screen bg-dark">
+        {/* MAGICAL HEADER */}
+        <section className="relative py-20 px-4 overflow-hidden">
+          <HeroBackground variant="default" />
+
+          <div className="container mx-auto max-w-6xl relative z-10">
+            <div className="text-center mb-16">
+              <div
+                ref={heroAnimation.elementRef}
+                className={`scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
+              >
+                <div className="relative inline-block">
+                  {/* Main Title with ScrambleText Morphing Effect */}
+                  <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
+                    <ScrambleText
+                      text="Testimonials"
+                      className="text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight drop-shadow-2xl"
+                      scrambleSpeed={1}
+                      revealSpeed={1}
+                    />
+                  </h1>
+
+                  {/* Magical Glowing Border */}
+                  <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 via-pink-600 to-yellow-600 rounded-2xl opacity-20 blur-xl animate-pulse"></div>
+
+                  {/* Floating Magic Elements Around Title */}
+                  <div className="absolute -top-8 -left-8 w-6 h-6 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-spin opacity-80" style={{animationDuration: '8s'}}></div>
+                  <div className="absolute -top-4 -right-12 w-4 h-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-spin opacity-70" style={{animationDuration: '10s', animationDirection: 'reverse'}}></div>
+                  <div className="absolute -bottom-6 -left-12 w-5 h-5 bg-gradient-to-r from-pink-400 to-red-400 rounded-full animate-spin opacity-75" style={{animationDuration: '12s'}}></div>
+                  <div className="absolute -bottom-8 -right-8 w-3 h-3 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-spin opacity-90" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="max-w-5xl mx-auto mt-6">
+                  <TypingAnimation
+                    text="Real creators sharing their transformation journeys. Every story started with a single decision to invest in themselves."
+                    className="text-2xl md:text-3xl text-white leading-relaxed font-medium drop-shadow-lg"
+                    duration={50}
                   />
-                </h1>
-                
-                {/* Magical Glowing Border */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 via-pink-600 to-yellow-600 rounded-2xl opacity-20 blur-xl animate-pulse"></div>
-                
-                {/* Floating Magic Elements Around Title */}
-                <div className="absolute -top-8 -left-8 w-6 h-6 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-spin opacity-80" style={{animationDuration: '8s'}}></div>
-                <div className="absolute -top-4 -right-12 w-4 h-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-spin opacity-70" style={{animationDuration: '10s', animationDirection: 'reverse'}}></div>
-                <div className="absolute -bottom-6 -left-12 w-5 h-5 bg-gradient-to-r from-pink-400 to-red-400 rounded-full animate-spin opacity-75" style={{animationDuration: '12s'}}></div>
-                <div className="absolute -bottom-8 -right-8 w-3 h-3 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-spin opacity-90" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
+                </div>
+
+                {/* Subtitle Glow Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent blur-sm"></div>
               </div>
-            </div>
-            
-            <div className="relative">
-              <div className="max-w-5xl mx-auto mt-6">
-                <TypingAnimation
-                  text="Real creators sharing their transformation journeys. Every story started with a single decision to invest in themselves."
-                  className="text-2xl md:text-3xl text-white leading-relaxed font-medium drop-shadow-lg"
-                  duration={50}
-                />
-              </div>
-              
-              {/* Subtitle Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent blur-sm"></div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 section-spacing">
         <div className="max-w-7xl mx-auto">
@@ -615,6 +662,7 @@ export default function TestimonialsPage() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

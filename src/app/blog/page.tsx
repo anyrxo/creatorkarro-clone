@@ -1,7 +1,8 @@
 'use client'
 
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import { useSearchParams, useRouter } from 'next/navigation'
 import { Search, Calendar, Clock, Tag, Filter, ArrowRight, TrendingUp, Eye, Heart, MessageCircle, Share2, ChevronRight } from 'lucide-react'
 import { allBlogPosts, categories, tags, featuredPosts, type BlogPost } from '@/data/blog-posts'
 import { calculateBlogMetrics } from '@/utils/blogMetrics'
@@ -16,8 +17,82 @@ import ScrambleText from '@/components/magicui/scramble-text'
 import HeroBackground from '@/components/HeroBackground'
 
 export default function BlogPage() {
+  const searchParams = useSearchParams()
+  const router = useRouter()
   const [searchTerm, setSearchTerm] = useState('')
-  const [selectedCategory, setSelectedCategory] = useState('All')
+  const searchInputRef = useRef<HTMLInputElement>(null)
+
+  // Get category from URL params or default to 'All'
+  const selectedCategory = searchParams.get('category') || 'All'
+
+  // Initialize search from URL on mount
+  useEffect(() => {
+    const search = searchParams.get('search')
+    if (search) {
+      setSearchTerm(search)
+    }
+  }, [])
+
+  // Update category in URL
+  const updateCategory = (category: string) => {
+    const params = new URLSearchParams(searchParams.toString())
+
+    if (category === 'All') {
+      params.delete('category')
+    } else {
+      params.set('category', category)
+    }
+
+    // Preserve search if it exists
+    const search = searchParams.get('search')
+    if (search) {
+      params.set('search', search)
+    }
+
+    router.push(`/blog?${params.toString()}`, { scroll: false })
+  }
+
+  // Update search in URL with debounce
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const params = new URLSearchParams(searchParams.toString())
+
+      if (searchTerm.trim()) {
+        params.set('search', searchTerm)
+      } else {
+        params.delete('search')
+      }
+
+      // Preserve category if it exists
+      const category = searchParams.get('category')
+      if (category) {
+        params.set('category', category)
+      }
+
+      router.push(`/blog?${params.toString()}`, { scroll: false })
+    }, 500) // 500ms debounce
+
+    return () => clearTimeout(timer)
+  }, [searchTerm, searchParams, router])
+
+  // Keyboard shortcut for search focus (Cmd+K / Ctrl+K)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Cmd+K (Mac) or Ctrl+K (Windows/Linux)
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault()
+        searchInputRef.current?.focus()
+      }
+      // Alternative: / for search (but only when not in input/textarea)
+      if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement).tagName)) {
+        e.preventDefault()
+        searchInputRef.current?.focus()
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [])
 
   const filteredPosts = useMemo(() => {
     let posts = allBlogPosts
@@ -119,7 +194,7 @@ export default function BlogPage() {
                   className="inline-block"
                 >
                   <button
-                    onClick={() => setSelectedCategory(category)}
+                    onClick={() => updateCategory(category)}
                     className={`px-6 py-3 rounded-xl transition-all duration-300 text-sm font-medium border transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500/50 ${
                       selectedCategory === category
                         ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white border-blue-500/50 shadow-lg shadow-blue-500/25'
@@ -147,13 +222,17 @@ export default function BlogPage() {
                   <div className="relative bg-zinc-900/90 backdrop-blur-sm rounded-xl border border-zinc-700/50 group-focus-within:border-transparent transition-all duration-300 z-10">
                     <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-zinc-400 group-focus-within:text-blue-400 w-6 h-6 z-20 transition-colors duration-300 pointer-events-none" />
                     <input
+                      ref={searchInputRef}
                       type="text"
                       placeholder="Search articles, topics, or tags..."
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
-                      className="relative w-full pl-16 pr-14 py-5 bg-transparent text-white placeholder-zinc-400 focus:outline-none text-lg rounded-xl z-30"
+                      className="relative w-full pl-16 pr-24 py-5 bg-transparent text-white placeholder-zinc-400 focus:outline-none text-lg rounded-xl z-30"
                       aria-label="Search blog articles by title, description, or tags"
                     />
+                    <kbd className="absolute right-4 top-1/2 transform -translate-y-1/2 px-3 py-1.5 text-xs font-medium bg-zinc-800/60 border border-zinc-600/50 rounded-lg text-zinc-400 pointer-events-none z-20 whitespace-nowrap">
+                      Cmd+K
+                    </kbd>
                     {searchTerm && (
                       <button
                         onClick={() => setSearchTerm('')}
@@ -295,7 +374,7 @@ export default function BlogPage() {
                     <button
                       onClick={() => {
                         setSearchTerm('')
-                        setSelectedCategory('All')
+                        router.push('/blog', { scroll: false })
                       }}
                       className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
                     >
