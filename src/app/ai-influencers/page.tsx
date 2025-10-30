@@ -551,8 +551,8 @@ export default function AIInfluencersPage() {
       {/* Hero Section */}
       <div ref={heroAnimation.elementRef} className="relative z-10">
         <HeroSection
-          badge="LIMITED TIME OFFER: Price increasing soon"
-          badgeColor="bg-yellow-600/30 text-yellow-300"
+          badge="AI INFLUENCER MASTERY"
+          badgeColor="bg-pink-600/30 text-pink-300"
           title={<>Build Your <span className="text-pink-400">AI Influencer Empire</span> And Make <span className="text-pink-400">$10K/Month</span> Without Showing Your Face</>}
           description={<>The complete system to create, grow, and monetize <span className="text-pink-300">AI-powered virtual models</span></>}
           ctaText="Start Building Your AI Influencer"
@@ -817,8 +817,8 @@ export default function AIInfluencersPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div ref={valueAnimation.elementRef}>
             <SectionHeader
-              badge="LIMITED TIME OFFER"
-              badgeColor="text-red-400"
+              badge="COMPLETE PACKAGE"
+              badgeColor="text-pink-400"
               title="Here's Everything You Get"
               description="Complete AI Influencer Empire System + Bonuses"
               isVisible={valueAnimation.isVisible}

@@ -855,42 +855,27 @@ export default function DigitalProductsPage() {
             />
           </div>
 
-          {/* Scarcity & Urgency */}
+          {/* Ready to Start */}
           <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-            <div className="bg-zinc-900 border border-red-500 rounded-3xl p-8 mb-8">
-              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400">
-                LIMITED TIME FOUNDER'S OFFER
+            <div className="bg-zinc-900 border border-green-500/30 rounded-3xl p-8 mb-8">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+                Ready to Build Your Digital Product Business?
               </h3>
-              
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-zinc-900 rounded-2xl p-6">
-                  <div className="text-2xl font-bold text-red-400 mb-2">48 HOURS</div>
-                  <p className="text-zinc-200">Price increases to $389 this weekend</p>
-                </div>
-                <div className="bg-zinc-900 rounded-2xl p-6">
-                  <div className="text-2xl font-bold text-red-400 mb-2">TONIGHT</div>
-                  <p className="text-zinc-200">All bonuses expire at midnight</p>
-                </div>
-                <div className="bg-zinc-900 rounded-2xl p-6">
-                  <div className="text-2xl font-bold text-red-400 mb-2">100 SPOTS</div>
-                  <p className="text-zinc-200">Limited to 100 founding members</p>
-                </div>
-              </div>
-              
+
               <p className="text-xl text-zinc-200 mb-6">
-                I'm keeping this founding group small so I can personally ensure everyone succeeds. 
-                Once we hit 100 members, the price doubles and bonuses disappear forever.
+                Join 1,200+ students who've used Digital Products Academy to validate, launch, and scale profitable digital products. Get lifetime access to everything you need.
               </p>
-              
-              <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6 mb-8">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-3 flex items-center gap-2">
-                  {getIcon('alertTriangle', 'w-6 h-6')} Don't Wait - Here's Why:
+
+              <div className="bg-green-500/10 border border-green-500/30 rounded-2xl p-6 mb-8">
+                <h4 className="text-2xl font-bold text-green-400 mb-3">
+                  What You Get Today:
                 </h4>
-                <div className="text-left space-y-2 text-zinc-200">
-                  <p>• Every month you delay = $5K-$20K in lost potential passive income</p>
-                  <p>• Digital products become more competitive every day - first movers win big</p>
-                  <p>• The economy is shifting toward knowledge-based businesses</p>
-                  <p>• These founder bonuses will NEVER be offered at this price again</p>
+                <div className="text-left space-y-2 text-zinc-200 max-w-2xl mx-auto">
+                  <p>• Complete validation framework to test ideas before building</p>
+                  <p>• Step-by-step launch system with proven templates</p>
+                  <p>• Pricing psychology training to charge what you're worth</p>
+                  <p>• $3,451 in bonuses + lifetime updates</p>
+                  <p>• 30-day money-back guarantee if not satisfied</p>
                 </div>
               </div>
             </div>
@@ -1121,15 +1106,15 @@ export default function DigitalProductsPage() {
             </div>
             <p className="text-lg md:text-xl text-zinc-200 mb-8">Join thousands of entrepreneurs who escaped the time-for-money trap and built scalable passive income streams</p>
             
-            <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-red-400 mb-3 flex items-center justify-center gap-2">
-                {getIcon('alertTriangle', 'w-6 h-6')} FINAL WARNING
+            <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-500/30 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-white mb-3">
+                Your Digital Product Journey Starts Here
               </h3>
               <p className="text-zinc-200 mb-4">
-                This INSANE $399 founder's price and $3,451 in savings expire at MIDNIGHT tonight. After that, you'll pay full price without any bonuses.
+                Get instant access to the complete Digital Products Academy for $399. Includes all modules, templates, bonuses worth $3,451, and lifetime updates.
               </p>
-              <p className="text-lg font-bold text-yellow-400">
-                Don't let another year pass trading time for money while others build digital empires!
+              <p className="text-lg font-semibold text-green-400">
+                Join 1,200+ entrepreneurs building scalable digital product businesses today.
               </p>
             </div>
             
