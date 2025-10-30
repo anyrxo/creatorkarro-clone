@@ -14,7 +14,7 @@ export default function Footer() {
       { name: 'Instagram Ignited', href: '/instagram-ignited' },
       { name: 'AI Influencers', href: '/ai-influencers' },
       { name: 'Digital Products', href: '/digital-products' },
-      { name: 'FX Trading Mastery', href: '/fx-trading' }
+      { name: 'Futures Trading', href: '/fx-trading' }
     ],
     resources: [
       { name: 'Blog', href: '/blog' },
@@ -219,6 +219,24 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+
+        {/* Disclaimers */}
+        <div className="pt-6 border-t border-zinc-800 mb-6">
+          <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 max-w-5xl mx-auto">
+            <h4 className="text-white font-semibold mb-3 text-sm">Income & Results Disclaimer</h4>
+            <div className="text-zinc-400 text-xs leading-relaxed space-y-2">
+              <p>
+                <strong>Individual results vary.</strong> Any income examples, earnings, or testimonials shown on this site represent exceptional results and do not guarantee that you or others will achieve the same or similar outcomes. Your results depend on many factors including your effort, skill level, background, market conditions, and other variables beyond our control.
+              </p>
+              <p>
+                <strong>Trading Disclosure:</strong> Futures trading involves substantial risk of loss and is not suitable for all investors. Past performance is not indicative of future results. All trading strategies discussed are for educational purposes only.
+              </p>
+              <p>
+                <strong>Educational Content:</strong> Our courses provide educational information and strategies. Success requires dedication, consistent effort, and the application of taught principles. We do not guarantee specific results or income levels. The purchase of any product or service should be made based on your own evaluation and judgment.
+              </p>
+            </div>
           </div>
         </div>
 
