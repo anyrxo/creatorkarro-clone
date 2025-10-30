@@ -57,7 +57,7 @@ export default function StoryPage() {
             <div className="relative">
               <div className="max-w-5xl mx-auto mt-6">
                 <TypingAnimation
-                  text="From marketing influencers and brands to AI influencers, launching IImagined, mastering futures trading, building 1abel, and now revolutionizing business growth with seology.ai. This is the path nobody talks about."
+                  text="From growing influencers to millions in reach, to AI systems, to IImagined, to futures trading, to 1abel, to seology.ai. This is how you stack wins."
                   className="text-2xl md:text-3xl text-white leading-relaxed font-medium drop-shadow-lg"
                   duration={40}
                 />
