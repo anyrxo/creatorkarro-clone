@@ -1013,40 +1013,24 @@ export default function InstagramIgnitedPage() {
 
           {/* Scarcity & Urgency */}
           <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-            <div className="bg-zinc-900 border border-red-500 rounded-3xl p-8 mb-8">
-              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-red-400 flex items-center justify-center gap-3">
-                {getIcon('alertTriangle', 'w-8 h-8')} Limited Time Special Offer {getIcon('alertTriangle', 'w-8 h-8')}
+            <div className="bg-zinc-900 border border-blue-500/30 rounded-3xl p-8 mb-8">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+                Ready to Start Growing?
               </h3>
-              
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-zinc-900 rounded-2xl p-6">
-                  <div className="text-2xl font-bold text-red-400 mb-2">48 HOURS</div>
-                  <p className="text-zinc-200">Price jumps to $697 after the weekend</p>
-                </div>
-                <div className="bg-zinc-900 rounded-2xl p-6">
-                  <div className="text-2xl font-bold text-red-400 mb-2">MIDNIGHT</div>
-                  <p className="text-zinc-200">All bonuses expire at 11:59 PM tonight</p>
-                </div>
-                <div className="bg-zinc-900 rounded-2xl p-6">
-                  <div className="text-2xl font-bold text-red-400 mb-2">50 SPOTS</div>
-                  <p className="text-zinc-200">Only accepting 50 students this round</p>
-                </div>
-              </div>
-              
+
               <p className="text-xl text-zinc-200 mb-6">
-                I'm keeping this group small so I can personally help everyone get results. 
-                Once we hit 50 students, enrollment closes and the price increases.
+                Join 2,000+ students who've used Instagram Ignited to build real followings and turn their accounts into income streams.
               </p>
-              
-              <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6 mb-8">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-3 flex items-center gap-2">
-                  {getIcon('alertTriangle', 'w-6 h-6')} Don't Wait - Here's Why:
+
+              <div className="bg-blue-500/10 border border-blue-500/30 rounded-2xl p-6 mb-8">
+                <h4 className="text-2xl font-bold text-blue-400 mb-3">
+                  What You Get Today:
                 </h4>
-                <div className="text-left space-y-2 text-zinc-200">
-                  <p>• Every day you wait, your competitors get further ahead</p>
-                  <p>• Each month of delay = $5K-$20K in lost potential income</p>
-                  <p>• The algorithm favors accounts with momentum (start NOW)</p>
-                  <p>• These bonuses will NEVER be offered at this price again</p>
+                <div className="text-left space-y-2 text-zinc-200 max-w-2xl mx-auto">
+                  <p>• Lifetime access to all course materials and updates</p>
+                  <p>• 10 comprehensive modules + $8,879 in bonuses</p>
+                  <p>• Private community access for ongoing support</p>
+                  <p>• 30-day money-back guarantee if not satisfied</p>
                 </div>
               </div>
             </div>
@@ -1368,20 +1352,20 @@ CLAIM INSTAGRAM IGNITED NOW - $399
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Your Instagram Empire Starts TODAY</h2>
             <p className="text-lg md:text-xl text-gray-400 mb-8">Join 2,000+ successful creators who transformed their Instagram into a money-making machine</p>
             
-            <div className="bg-gradient-to-r from-red-900/30 to-orange-900/30 border border-red-500 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-red-400 mb-3 flex items-center justify-center gap-2">
-                {getIcon('alertTriangle', 'w-6 h-6')} FINAL WARNING
+            <div className="bg-gradient-to-r from-blue-900/20 to-green-900/20 border border-blue-500/30 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-white mb-3">
+                Your Growth Journey Starts Here
               </h3>
-              <p className="text-gray-300 mb-4">
-                This INSANE $147 price and $8,879 in bonuses expire at MIDNIGHT tonight. After that, you'll pay $297 without any bonuses.
+              <p className="text-zinc-200 mb-4">
+                Get instant access to the complete Instagram Ignited system for $399. Includes all 10 modules, $8,879 in bonuses, and lifetime updates.
               </p>
-              <p className="text-lg font-bold text-yellow-400">
-                Don't let another month pass watching others succeed while you stay stuck!
+              <p className="text-lg font-semibold text-blue-400">
+                Join 2,000+ students building real Instagram businesses today.
               </p>
             </div>
-            
-            <button onClick={handleBuyNow} className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 cursor-pointer">
-TRANSFORM MY INSTAGRAM NOW - $147
+
+            <button onClick={handleBuyNow} className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-500/50" aria-label="Get Instagram Ignited for $399">
+TRANSFORM MY INSTAGRAM NOW - $399
             </button>
             
             <p className="text-sm text-gray-400 mb-6 flex items-center justify-center gap-1">
