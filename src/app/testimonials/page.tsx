@@ -56,7 +56,7 @@ export default function TestimonialsPage() {
         students: 4000,
         views: 50,
         followers: 3,
-        revenue: 2.5
+        revenue: 5
       }
       
       let currentStep = 0
@@ -416,9 +416,9 @@ export default function TestimonialsPage() {
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-yellow-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent mb-2">
-                $<NumberTicker value={2.5} className="text-3xl md:text-4xl font-bold text-orange-400" />M+
+                $<NumberTicker value={5} className="text-3xl md:text-4xl font-bold text-orange-400" />M+
               </div>
-              <p className="text-gray-400 text-sm md:text-base">Student Revenue Generated</p>
+              <p className="text-gray-400 text-sm md:text-base">Combined Student Earnings</p>
             </div>
           </div>
 

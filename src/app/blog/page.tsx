@@ -31,7 +31,7 @@ export default function BlogPage() {
     if (search) {
       setSearchTerm(search)
     }
-  }, [])
+  }, [searchParams])
 
   // Update category in URL
   const updateCategory = (category: string) => {
