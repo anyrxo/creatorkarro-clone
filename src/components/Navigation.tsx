@@ -182,8 +182,10 @@ export default function Navigation() {
           {/* Mobile menu button - SIMPLIFIED FOR GUARANTEED MOBILE FUNCTIONALITY */}
           <button
             type="button"
-            className="md:hidden ml-auto p-4 text-gray-300 hover:text-white transition-colors rounded-lg bg-zinc-800/50 hover:bg-zinc-700/50 active:bg-zinc-600 min-w-[48px] min-h-[48px] flex items-center justify-center"
-            onClick={() => {
+            className="md:hidden ml-auto p-4 text-gray-300 hover:text-white transition-colors rounded-lg bg-zinc-800/50 hover:bg-zinc-700/50 active:bg-zinc-600 min-w-[48px] min-h-[48px] flex items-center justify-center relative z-[70]"
+            onClick={(e) => {
+              e.preventDefault()
+              e.stopPropagation()
               console.log('Menu button clicked - current state:', isMenuOpen)
               setIsMenuOpen(prev => !prev)
               analytics.trackEvent('mobile_menu_toggled', {
@@ -217,7 +219,8 @@ export default function Navigation() {
             id="mobile-menu"
             role="navigation"
             aria-label="Mobile navigation"
-            className="md:hidden absolute top-full left-0 right-0 bg-zinc-900 border-b border-zinc-800 z-50 shadow-2xl"
+            className="md:hidden absolute top-full left-0 right-0 bg-zinc-900 border-b border-zinc-800 z-[60] shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
           >
           <div className="px-4 py-6 space-y-4">
             {allNavigation.map((item) => (
