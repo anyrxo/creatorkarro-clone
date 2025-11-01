@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import { siteConfig, getCourseSEO } from '@/config/seo'
 
 export const metadata: Metadata = {
-  title: 'FX Trading Mastery Course - Pass Prop Firm Challenges & Get Funded',
+  title: 'Futures Trading Course - Pass Prop Firm Challenges & Get Funded',
   description: 'Master prop firm challenges and get $100K+ funded trading accounts. Learn the exact strategies to pass challenges and build consistent income with funded trading companies.',
   keywords: [
     'prop firm challenge',
     'funded trading account',
     'prop trading course',
-    'forex prop firm',
+    'futures trading',
     'trading challenge',
     'funded trader',
     'prop firm strategies',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'prop trading rules'
   ],
   openGraph: {
-    title: 'FX Trading Mastery Course - Pass Prop Firm Challenges & Get Funded',
+    title: 'Futures Trading Course - Pass Prop Firm Challenges & Get Funded',
     description: 'Master prop firm challenges and get $100K+ funded trading accounts. Learn the exact strategies to pass challenges and succeed with prop firms.',
     type: 'website',
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: `${siteConfig.url}/courses/fx-trading/og-image.png`,
         width: 1200,
         height: 630,
-        alt: 'FX Trading Mastery Course'
+        alt: 'Futures Trading Course'
       }
     ]
   }
