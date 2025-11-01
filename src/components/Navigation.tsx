@@ -33,7 +33,7 @@ export default function Navigation() {
         { name: 'Instagram Ignited', href: '/instagram-ignited' },
         { name: 'AI Influencers', href: '/ai-influencers' },
         { name: 'Digital Products', href: '/digital-products' },
-        { name: 'FX Trading Mastery', href: '/fx-trading' }
+        { name: 'Futures Trading', href: '/fx-trading' }
       ]
     },
     { name: 'Resources', href: '/resources' },
