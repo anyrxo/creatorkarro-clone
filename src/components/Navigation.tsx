@@ -204,24 +204,25 @@ export default function Navigation() {
             )}
           </button>
         </div>
+      </div>
 
-        {/* Mobile menu backdrop */}
-        {isMenuOpen && (
-          <div
-            className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40"
-            onClick={() => setIsMenuOpen(false)}
-          />
-        )}
+      {/* Mobile menu backdrop - MOVED OUTSIDE header container */}
+      {isMenuOpen && (
+        <div
+          className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 top-20"
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div
-            id="mobile-menu"
-            role="navigation"
-            aria-label="Mobile navigation"
-            className="md:hidden absolute top-full left-0 right-0 bg-zinc-900 border-b border-zinc-800 z-[60] shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
+      {/* Mobile Navigation - MOVED OUTSIDE header container */}
+      {isMenuOpen && (
+        <div
+          id="mobile-menu"
+          role="navigation"
+          aria-label="Mobile navigation"
+          className="md:hidden fixed top-20 left-0 right-0 bg-zinc-900 border-b border-zinc-800 z-[60] shadow-2xl max-h-[calc(100vh-80px)] overflow-y-auto"
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className="px-4 py-6 space-y-4">
             {allNavigation.map((item) => (
               <div key={item.name}>
@@ -278,9 +279,8 @@ export default function Navigation() {
               </div>
             ))}
           </div>
-          </div>
-        )}
-      </div>
+        </div>
+      )}
     </header>
   )
 }
