@@ -101,7 +101,7 @@ export function BeautifulHero() {
             animate={{ opacity: 1, letterSpacing: "0.2em" }}
             transition={{ duration: 1.5, delay: 0.5 }}
           >
-            $3.15M IN VERIFIED STUDENT REVENUE
+            $5M+ IN COMBINED STUDENT EARNINGS
           </motion.p>
 
           <h1 className="mb-8" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
@@ -119,7 +119,7 @@ export function BeautifulHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.8 }}
           >
-            The exact systems used by 5,500+ creators to build profitable businesses. From zero to first revenue in 45 days.
+            The exact systems used by 4,000+ students to build profitable businesses. From zero to first revenue in 45 days.
           </motion.p>
 
           <motion.div

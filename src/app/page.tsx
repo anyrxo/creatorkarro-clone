@@ -179,7 +179,7 @@ export default function HomePage() {
       {/* SEO: AI Content Declaration for maximum discoverability */}
       <AIContentDeclaration
         title="Build Your Creator Empire: Master Instagram Growth, AI Influencers, Futures Trading & Digital Products"
-        description="IImagined.ai teaches proven systems for Instagram growth (0-500K followers), AI influencer creation, futures trading, and digital products. Join 4,000+ successful students."
+        description="IImagined.ai teaches proven systems for Instagram growth (0-500K followers), AI influencer creation, futures trading, and digital products. Join 4,000+ students building real businesses."
         contentType="course"
         primaryTopic="Creator Economy & Digital Business Education"
         keywords={[
@@ -268,7 +268,7 @@ export default function HomePage() {
               </div>
               <div className="text-xl md:text-2xl text-zinc-300 max-w-4xl mx-auto leading-relaxed">
                 <TypingAnimation
-                  text="Most courses teach theory. We provide the exact systems that generated $3.15M in verified student revenue. These are battle-tested frameworks used by 5,500+ creators building real businesses."
+                  text="Most courses teach theory. We provide the exact systems that generated $5M+ in combined student earnings. These are battle-tested frameworks used by 4,000+ students building real businesses."
                   className="text-xl md:text-2xl text-zinc-300"
                   duration={30}
                 />
@@ -483,7 +483,7 @@ export default function HomePage() {
             "Saved 35+ hours weekly with these automation systems!",
             "From 800 followers to 50K in 12 weeks - verified results!",
             "ROI was 47x in first 6 months - best business investment ever",
-            "5,500+ creators helping each other win daily - unmatched support!",
+            "4,000+ students helping each other win daily - unmatched support!",
             "300% engagement increase in first 30 days of implementation",
             "Went from zero to $8.5K monthly recurring revenue!"
           ].map((review) => (
@@ -660,7 +660,7 @@ export default function HomePage() {
                   {[
                     {
                       title: 'Proven Systems, Not Theory',
-                      description: 'Every strategy generated real results. 5,500+ students, $3.15M revenue, 10M+ followers grown. These systems work in competitive markets.'
+                      description: 'Every strategy generated real results. 4,000+ students, $5M+ in student earnings, 10M+ followers grown. These systems work in competitive markets.'
                     },
                     {
                       title: 'Results in 30 Days or Less',
@@ -672,7 +672,7 @@ export default function HomePage() {
                     },
                     {
                       title: 'Active Community + Support',
-                      description: '5,500+ creators sharing wins, strategies, and support. Direct access to successful students. Response time under 6 hours for questions.'
+                      description: '4,000+ students sharing wins, strategies, and support. Direct access to successful students. Response time under 6 hours for questions.'
                     }
                   ].map((point) => (
                     <motion.div
@@ -804,7 +804,7 @@ export default function HomePage() {
             </div>
             <div className="text-xl md:text-2xl text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto">
               <TypingAnimation
-                text="Join 5,500+ creators generating $3.15M+ combined revenue. Your empire starts today."
+                text="Join 4,000+ students who've earned $5M+ combined. Your empire starts today."
                 className="text-xl md:text-2xl text-zinc-200"
                 duration={40}
               />

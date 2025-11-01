@@ -6,11 +6,11 @@
 
 export const siteStats = {
   // Student metrics
-  totalStudents: 127000,
-  activeStudents: 127000,
+  totalStudents: 4000,
+  activeStudents: 4000,
 
   // Revenue metrics (in USD)
-  studentRevenue: 2300000, // $2.3M total student revenue
+  studentRevenue: 5000000, // $5M+ in combined student earnings
 
   // Social metrics
   totalViews: 50000000, // 50M total views
@@ -23,10 +23,10 @@ export const siteStats = {
   totalReviews: 3247,
 
   // Course-specific student counts
-  instagramStudents: 45000,
-  aiInfluencersStudents: 35000,
-  digitalProductsStudents: 28000,
-  futuresTradingStudents: 19000,
+  instagramStudents: 2000,
+  aiInfluencersStudents: 1500,
+  digitalProductsStudents: 1200,
+  futuresTradingStudents: 800,
 
   // Business metrics
   yearsActive: 2, // Since 2023
@@ -86,10 +86,10 @@ export function getStat(key: keyof typeof siteStats, type?: 'currency' | 'number
  * Statistics descriptions for marketing copy
  */
 export const statsDescriptions = {
-  totalStudents: 'students learning to build profitable businesses',
+  totalStudents: 'students building profitable businesses',
   totalViews: 'total views across all platforms',
   combinedFollowers: 'combined followers',
-  studentRevenue: 'in total student revenue generated',
+  studentRevenue: 'in combined student earnings',
   averageRating: 'average course rating',
   satisfactionRate: 'student satisfaction rate',
   instagramFollowers: 'Instagram followers',
