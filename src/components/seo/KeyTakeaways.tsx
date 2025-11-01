@@ -1,6 +1,8 @@
 // Key Takeaways Component - AI Summary Optimization
 'use client'
 
+import { Lightbulb } from 'lucide-react'
+
 interface KeyTakeawaysProps {
   takeaways: string[]
   title?: string
@@ -38,7 +40,7 @@ export default function KeyTakeaways({
         className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 my-8 rounded-lg border-2 border-purple-200 dark:border-purple-800"
       >
         <h3 className="text-2xl font-bold text-purple-900 dark:text-purple-100 mb-4 flex items-center gap-2">
-          <span aria-hidden="true">💡</span>
+          <Lightbulb className="w-6 h-6 text-purple-600 dark:text-purple-400" aria-hidden="true" />
           {title}
         </h3>
 

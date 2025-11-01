@@ -180,9 +180,9 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button - positioned to the right */}
-          <div className="md:hidden ml-auto">
+          <div className="md:hidden ml-auto relative z-[60]">
             <button
-              className="p-2 text-gray-300 hover:text-white transition-all duration-200 hover:scale-110 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 rounded-lg"
+              className="p-2 text-gray-300 hover:text-white transition-all duration-200 hover:scale-110 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 rounded-lg relative z-[60] touch-manipulation"
               onClick={() => {
                 setIsMenuOpen(!isMenuOpen)
                 if (!isMenuOpen) {

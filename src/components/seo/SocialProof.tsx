@@ -1,6 +1,8 @@
 // Social Proof Component - Trust & Authority Signals
 'use client'
 
+import { GraduationCap, DollarSign, Star, Building2, Shield, Lock, Award } from 'lucide-react'
+
 interface SocialProofProps {
   students?: number
   revenue?: string
@@ -37,28 +39,39 @@ export default function SocialProof({
     {
       value: `${(students / 1000).toFixed(0)}K+`,
       label: 'Students Enrolled',
-      icon: '👨‍🎓',
+      icon: 'graduationCap',
       show: true
     },
     {
       value: revenue,
       label: 'Student Revenue',
-      icon: '💰',
+      icon: 'dollarSign',
       show: showAll
     },
     {
       value: rating.toFixed(1),
       label: `Rating (${reviews.toLocaleString()} reviews)`,
-      icon: '⭐',
+      icon: 'star',
       show: true
     },
     {
       value: `${companies}+`,
       label: 'Partner Companies',
-      icon: '🏢',
+      icon: 'building',
       show: showAll
     }
   ]
+
+  const getIconComponent = (iconName: string) => {
+    const iconProps = { className: "w-10 h-10 text-purple-600 dark:text-purple-400", strokeWidth: 2 }
+    const icons: { [key: string]: JSX.Element } = {
+      graduationCap: <GraduationCap {...iconProps} />,
+      dollarSign: <DollarSign {...iconProps} />,
+      star: <Star {...iconProps} fill="currentColor" />,
+      building: <Building2 {...iconProps} />
+    }
+    return icons[iconName] || <Star {...iconProps} />
+  }
 
   const visibleStats = statsItems.filter(item => item.show)
 
@@ -83,10 +96,10 @@ export default function SocialProof({
               data-stat={stat.label}
             >
               <div
-                className="text-4xl mb-2"
+                className="mb-2 flex justify-center"
                 aria-hidden="true"
               >
-                {stat.icon}
+                {getIconComponent(stat.icon)}
               </div>
               <div className="text-3xl font-bold text-purple-900 dark:text-purple-100 mb-1">
                 {stat.value}
@@ -126,11 +139,11 @@ export function SocialProofBadge({
       data-social-proof-badge="true"
     >
       <span className="flex items-center gap-1 text-sm font-semibold text-purple-900 dark:text-purple-100">
-        <span aria-hidden="true">👨‍🎓</span>
+        <GraduationCap className="w-4 h-4" aria-hidden="true" />
         {(students / 1000).toFixed(0)}K+ Students
       </span>
       <span className="flex items-center gap-1 text-sm font-semibold text-purple-900 dark:text-purple-100">
-        <span aria-hidden="true">⭐</span>
+        <Star className="w-4 h-4" fill="currentColor" aria-hidden="true" />
         {rating.toFixed(1)} Rating
       </span>
     </div>
@@ -140,11 +153,22 @@ export function SocialProofBadge({
 // Trust Indicators Bar
 export function TrustIndicators() {
   const indicators = [
-    { icon: '✓', text: 'Expert-Verified Content' },
-    { icon: '🔒', text: 'Secure Payment' },
-    { icon: '🎓', text: 'Lifetime Access' },
-    { icon: '💯', text: 'Money-Back Guarantee' }
+    { icon: 'shield', text: 'Expert-Verified Content' },
+    { icon: 'lock', text: 'Secure Payment' },
+    { icon: 'graduationCap', text: 'Lifetime Access' },
+    { icon: 'award', text: 'Money-Back Guarantee' }
   ]
+
+  const getTrustIcon = (iconName: string) => {
+    const iconProps = { className: "w-4 h-4", strokeWidth: 2 }
+    const icons: { [key: string]: JSX.Element } = {
+      shield: <Shield {...iconProps} />,
+      lock: <Lock {...iconProps} />,
+      graduationCap: <GraduationCap {...iconProps} />,
+      award: <Award {...iconProps} />
+    }
+    return icons[iconName] || <Shield {...iconProps} />
+  }
 
   return (
     <div
@@ -156,7 +180,7 @@ export function TrustIndicators() {
           key={index}
           className="flex items-center gap-2 text-sm font-medium text-green-800 dark:text-green-200"
         >
-          <span aria-hidden="true">{indicator.icon}</span>
+          {getTrustIcon(indicator.icon)}
           <span>{indicator.text}</span>
         </div>
       ))}

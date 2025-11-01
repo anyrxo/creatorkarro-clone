@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import { Bot, Rocket, CheckCircle, XCircle, Copy, Lightbulb } from 'lucide-react'
 
 interface ContentRequest {
   contentType: 'social-media' | 'n8n' | 'fanvue'
@@ -83,7 +84,7 @@ export default function ExpertContentGenerator() {
   return (
     <div className="bg-gray-800/50 p-8 rounded-lg mb-8">
       <div className="flex items-center mb-6">
-        <span className="text-2xl mr-3">🤖</span>
+        <Bot className="w-6 h-6 mr-3 text-blue-400" />
         <h3 className="text-xl font-bold text-white">Generate Expert Content</h3>
       </div>
 
@@ -204,7 +205,10 @@ export default function ExpertContentGenerator() {
             <span>Generating Expert Content...</span>
           </div>
         ) : (
-          '🚀 Generate Expert Content'
+          <span className="flex items-center justify-center gap-2">
+            <Rocket className="w-5 h-5" />
+            Generate Expert Content
+          </span>
         )}
       </button>
 
@@ -212,7 +216,7 @@ export default function ExpertContentGenerator() {
       {error && (
         <div className="mt-4 p-4 bg-red-600/20 border border-red-600 rounded-lg">
           <div className="flex items-center space-x-2">
-            <span className="text-red-400">❌</span>
+            <XCircle className="w-5 h-5 text-red-400" />
             <span className="text-red-300 font-medium">Error:</span>
           </div>
           <p className="text-red-200 mt-1">{error}</p>
@@ -224,14 +228,15 @@ export default function ExpertContentGenerator() {
         <div className="mt-6 p-6 bg-gray-900/50 border border-gray-600 rounded-lg">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center space-x-2">
-              <span className="text-green-400">✅</span>
+              <CheckCircle className="w-5 h-5 text-green-400" />
               <span className="text-green-300 font-medium">Expert Content Generated</span>
             </div>
             <button
               onClick={() => copyToClipboard(generatedContent.content)}
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors flex items-center gap-2"
             >
-              📋 Copy
+              <Copy className="w-4 h-4" />
+              Copy
             </button>
           </div>
           
@@ -267,7 +272,10 @@ export default function ExpertContentGenerator() {
 
       {/* Usage Tips */}
       <div className="mt-6 p-4 bg-blue-600/10 border border-blue-600/20 rounded-lg">
-        <h4 className="font-semibold text-blue-300 mb-2">💡 Expert Content Tips:</h4>
+        <h4 className="font-semibold text-blue-300 mb-2 flex items-center gap-2">
+          <Lightbulb className="w-5 h-5" />
+          Expert Content Tips:
+        </h4>
         <ul className="space-y-1 text-sm text-gray-300">
           <li>• Use generated content as your expert foundation, then add personal insights</li>
           <li>• Share student success stories and metrics to build credibility</li>
