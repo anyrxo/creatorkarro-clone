@@ -204,35 +204,24 @@ export default function Navigation() {
         </div>
 
         {/* Mobile menu backdrop */}
-        <div
-          className={`lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm transition-all duration-300 z-40 ${
-            isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
-          }`}
-          onClick={() => setIsMenuOpen(false)}
-          style={{ pointerEvents: isMenuOpen ? 'auto' : 'none' }}
-        />
+        {isMenuOpen && (
+          <div
+            className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40"
+            onClick={() => setIsMenuOpen(false)}
+          />
+        )}
 
         {/* Mobile Navigation */}
-        <div
-          id="mobile-menu"
-          role="navigation"
-          aria-label="Mobile navigation"
-          className={`lg:hidden absolute top-full left-0 right-0 bg-zinc-900/95 backdrop-blur-md border-b border-zinc-800 transition-all duration-300 ease-in-out z-50 shadow-2xl ${
-            isMenuOpen
-              ? 'opacity-100 transform translate-y-0 visible'
-              : 'opacity-0 transform -translate-y-4 invisible'
-          }`}
-        >
+        {isMenuOpen && (
+          <div
+            id="mobile-menu"
+            role="navigation"
+            aria-label="Mobile navigation"
+            className="md:hidden absolute top-full left-0 right-0 bg-zinc-900 border-b border-zinc-800 z-50 shadow-2xl"
+          >
           <div className="px-4 py-6 space-y-4">
-            {allNavigation.map((item, index) => (
-              <div
-                key={item.name}
-                className={`transition-all duration-300 ease-in-out ${
-                  isMenuOpen
-                    ? `transform translate-x-0 opacity-100 delay-${index * 75}`
-                    : 'transform -translate-x-8 opacity-0'
-                }`}
-              >
+            {allNavigation.map((item) => (
+              <div key={item.name}>
                 {item.hasDropdown ? (
                   <div>
                     <button
@@ -242,18 +231,13 @@ export default function Navigation() {
                       {item.name}
                       <ChevronDown size={16} className={`transform transition-transform ${isCoursesOpen ? 'rotate-180' : ''}`} />
                     </button>
-                    <div className={`ml-4 mt-2 space-y-2 transition-all duration-300 ease-in-out overflow-hidden ${
-                      isCoursesOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                    }`}>
-                      {item.dropdownItems?.map((dropdownItem, dropdownIndex) => (
-                        <Link
-                          key={dropdownItem.name}
-                          href={dropdownItem.href}
-                          className={`block px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg ${
-                            isCoursesOpen
-                              ? `transform translate-x-0 opacity-100 delay-${dropdownIndex * 50}`
-                              : 'transform -translate-x-4 opacity-0'
-                          }`}
+                    {isCoursesOpen && (
+                      <div className="ml-4 mt-2 space-y-2">
+                        {item.dropdownItems?.map((dropdownItem) => (
+                          <Link
+                            key={dropdownItem.name}
+                            href={dropdownItem.href}
+                            className="block px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg"
                           onClick={() => {
                             analytics.trackNavigation(dropdownItem.name, dropdownItem.href, 'mobile')
                             setIsMenuOpen(false)
@@ -262,7 +246,8 @@ export default function Navigation() {
                           {dropdownItem.name}
                         </Link>
                       ))}
-                    </div>
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <Link
@@ -290,7 +275,8 @@ export default function Navigation() {
               </div>
             ))}
           </div>
-        </div>
+          </div>
+        )}
       </div>
     </header>
   )
