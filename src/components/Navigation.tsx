@@ -180,10 +180,13 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button - positioned to the right */}
-          <div className="md:hidden ml-auto relative z-[60]">
+          <div className="md:hidden ml-auto relative z-[60]" style={{ pointerEvents: 'auto' }}>
             <button
+              type="button"
               className="p-2 text-gray-300 hover:text-white transition-all duration-200 hover:scale-110 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 rounded-lg relative z-[60] touch-manipulation"
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault()
+                e.stopPropagation()
                 setIsMenuOpen(!isMenuOpen)
                 if (!isMenuOpen) {
                   analytics.trackEvent('mobile_menu_opened', { location: 'header' })
@@ -193,7 +196,7 @@ export default function Navigation() {
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
             >
-              <div className="relative w-6 h-6">
+              <div className="relative w-6 h-6" style={{ pointerEvents: 'none' }}>
                 <Menu
                   size={24}
                   className={`absolute inset-0 transition-all duration-300 ${
@@ -214,9 +217,10 @@ export default function Navigation() {
         {/* Mobile menu backdrop */}
         <div
           className={`lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm transition-all duration-300 z-40 ${
-            isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+            isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
           }`}
           onClick={() => setIsMenuOpen(false)}
+          style={{ pointerEvents: isMenuOpen ? 'auto' : 'none' }}
         />
 
         {/* Mobile Navigation */}
