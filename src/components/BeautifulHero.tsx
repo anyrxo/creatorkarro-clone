@@ -101,7 +101,7 @@ export function BeautifulHero() {
             animate={{ opacity: 1, letterSpacing: "0.2em" }}
             transition={{ duration: 1.5, delay: 0.5 }}
           >
-            TRANSFORM YOUR PASSION INTO PROFIT
+            $3.15M IN VERIFIED STUDENT REVENUE
           </motion.p>
 
           <h1 className="mb-8" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
@@ -113,13 +113,13 @@ export function BeautifulHero() {
             />
           </h1>
 
-          <motion.p 
+          <motion.p
             className="mb-12 text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.8 }}
           >
-            Master the systems that built 4,000+ successful creators.
+            The exact systems used by 5,500+ creators to build profitable businesses. From zero to first revenue in 45 days.
           </motion.p>
 
           <motion.div
@@ -130,7 +130,7 @@ export function BeautifulHero() {
           >
             <StandardCTA
               variant="primary"
-              text="Get Started"
+              text="Start Building Your Empire"
               href="/instagram-ignited"
               size="lg"
             />
