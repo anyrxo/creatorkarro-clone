@@ -18,7 +18,7 @@ const Disclaimer = () => {
             
             <div className="text-gray-300 space-y-2 leading-relaxed">
               <p>
-                <strong className="text-orange-300">Risk Warning:</strong> This CreatorKarro FX Trading Calculator is provided for <strong>educational purposes only</strong>. 
+                <strong className="text-orange-300">Risk Warning:</strong> This Futures Trading Calculator is provided for <strong>educational purposes only</strong>. 
                 The data, calculations, and analysis provided may or may not be accurate and can break, malfunction, or become unavailable at any time.
               </p>
               

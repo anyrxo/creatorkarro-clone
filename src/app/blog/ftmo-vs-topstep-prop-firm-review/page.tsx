@@ -523,10 +523,10 @@ export default function FTMOvsTopstep() {
               Whether you choose FTMO's forex empire or Topstep's futures kingdom, success requires battle-tested strategies, iron discipline, and proper risk management.
             </p>
             <p className="text-gray-300 mb-6">
-              Our <span className="text-white font-semibold">FX Trading Mastery course</span> teaches you the exact systems to pass prop firm evaluations and build sustainable trading income. Get live market analysis, proven strategies, and the psychological edge you need.
+              Our <span className="text-white font-semibold">Futures Trading course</span> teaches you the exact systems to pass prop firm evaluations and build sustainable trading income. Get live market analysis, proven strategies, and the psychological edge you need.
             </p>
             <Link href="/fx-trading" className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-semibold text-white hover:from-blue-500 hover:to-purple-500 transition-all text-lg">
-              Master FX Trading →
+              Master Futures Trading →
             </Link>
           </div>
         </div>

@@ -58,7 +58,7 @@ const COURSES = {
   },
   'fx-trading': {
     id: 'fx-trading',
-    name: 'FX Trading Mastery',
+    name: 'Futures Trading',
     price: 197,
     originalPrice: 2197,
     isSubscription: false,
