@@ -117,13 +117,11 @@ export default function Navigation() {
               </Link>
             </div>
 
-            {/* ULTRA SIMPLE Mobile menu button */}
+            {/* Mobile menu button */}
             <button
-              className="md:hidden p-3 text-white bg-blue-600 rounded-lg"
-              onClick={() => {
-                console.log('CLICKED! Current state:', isMenuOpen)
-                setIsMenuOpen(!isMenuOpen)
-              }}
+              className="md:hidden p-3 text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-zinc-800/50"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
