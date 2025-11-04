@@ -20,18 +20,22 @@ export default function BlogPage() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const [searchTerm, setSearchTerm] = useState('')
+  const [isInitialized, setIsInitialized] = useState(false)
   const searchInputRef = useRef<HTMLInputElement>(null)
 
   // Get category from URL params or default to 'All'
   const selectedCategory = searchParams.get('category') || 'All'
 
-  // Initialize search from URL on mount
+  // Initialize search from URL on mount ONCE
   useEffect(() => {
     const search = searchParams.get('search')
-    if (search) {
+    if (search && !isInitialized) {
       setSearchTerm(search)
+      setIsInitialized(true)
+    } else if (!isInitialized) {
+      setIsInitialized(true)
     }
-  }, [searchParams])
+  }, [searchParams, isInitialized])
 
   // Update category in URL
   const updateCategory = (category: string) => {
@@ -52,8 +56,10 @@ export default function BlogPage() {
     router.push(`/blog?${params.toString()}`, { scroll: false })
   }
 
-  // Update search in URL with debounce
+  // Update search in URL with debounce (only after initialized)
   useEffect(() => {
+    if (!isInitialized) return
+
     const timer = setTimeout(() => {
       const params = new URLSearchParams(searchParams.toString())
 
@@ -73,7 +79,7 @@ export default function BlogPage() {
     }, 500) // 500ms debounce
 
     return () => clearTimeout(timer)
-  }, [searchTerm, searchParams, router])
+  }, [searchTerm, searchParams, router, isInitialized])
 
   // Keyboard shortcut for search focus (Cmd+K / Ctrl+K)
   useEffect(() => {
