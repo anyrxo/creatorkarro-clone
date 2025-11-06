@@ -20,7 +20,6 @@ export default function BlogPage() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const [searchTerm, setSearchTerm] = useState('')
-  const [isInitialized, setIsInitialized] = useState(false)
   const searchInputRef = useRef<HTMLInputElement>(null)
 
   // Get category from URL params or default to 'All'
@@ -29,13 +28,11 @@ export default function BlogPage() {
   // Initialize search from URL on mount ONCE
   useEffect(() => {
     const search = searchParams.get('search')
-    if (search && !isInitialized) {
+    if (search) {
       setSearchTerm(search)
-      setIsInitialized(true)
-    } else if (!isInitialized) {
-      setIsInitialized(true)
     }
-  }, [searchParams, isInitialized])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   // Update category in URL
   const updateCategory = (category: string) => {
@@ -56,10 +53,8 @@ export default function BlogPage() {
     router.push(`/blog?${params.toString()}`, { scroll: false })
   }
 
-  // Update search in URL with debounce (only after initialized)
+  // Update search in URL with debounce
   useEffect(() => {
-    if (!isInitialized) return
-
     const timer = setTimeout(() => {
       const currentSearch = searchParams.get('search') || ''
       const currentCategory = searchParams.get('category')
@@ -83,7 +78,8 @@ export default function BlogPage() {
     }, 500) // 500ms debounce
 
     return () => clearTimeout(timer)
-  }, [searchTerm, isInitialized])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchTerm])
 
   // Keyboard shortcut for search focus (Cmd+K / Ctrl+K)
   useEffect(() => {
