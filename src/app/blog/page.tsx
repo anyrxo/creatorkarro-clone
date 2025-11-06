@@ -61,25 +61,29 @@ export default function BlogPage() {
     if (!isInitialized) return
 
     const timer = setTimeout(() => {
-      const params = new URLSearchParams(searchParams.toString())
+      const currentSearch = searchParams.get('search') || ''
+      const currentCategory = searchParams.get('category')
+
+      // Only update if search term actually changed
+      if (currentSearch === searchTerm.trim()) return
+
+      const params = new URLSearchParams()
 
       if (searchTerm.trim()) {
         params.set('search', searchTerm)
-      } else {
-        params.delete('search')
       }
 
       // Preserve category if it exists
-      const category = searchParams.get('category')
-      if (category) {
-        params.set('category', category)
+      if (currentCategory) {
+        params.set('category', currentCategory)
       }
 
-      router.push(`/blog?${params.toString()}`, { scroll: false })
+      const newUrl = params.toString() ? `/blog?${params.toString()}` : '/blog'
+      router.push(newUrl, { scroll: false })
     }, 500) // 500ms debounce
 
     return () => clearTimeout(timer)
-  }, [searchTerm, searchParams, router, isInitialized])
+  }, [searchTerm, isInitialized])
 
   // Keyboard shortcut for search focus (Cmd+K / Ctrl+K)
   useEffect(() => {

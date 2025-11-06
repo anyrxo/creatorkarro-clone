@@ -19,7 +19,6 @@ export default function Footer() {
     ],
     resources: [
       { name: 'Blog', href: '/blog' },
-      { name: 'FX Calculator', href: '/fx-calc' },
       { name: 'Free Resources', href: '/resources' },
       { name: 'About Anyro', href: '/about' }
     ],
