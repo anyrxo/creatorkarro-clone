@@ -115,17 +115,17 @@ export default function HomePage() {
       link: '/digital-products'
     },
     {
-      id: 'fx-trading',
-      title: 'Futures Trading',
-      tagline: "Prop Firm Challenge Success",
-      subtitle: 'PROP FIRM CHALLENGE SUCCESS',
-      description: 'Pass TopStep, FTMO, and other prop firm challenges to manage $200K+ funded accounts. Students securing funded accounts within 60 days using proven risk management and strategies for ES, NQ, and Gold futures. 143 students now trading with firm capital.',
+      id: 'ai-automations',
+      title: 'AI Automations',
+      tagline: "AI-Powered Automation Agency",
+      subtitle: 'AI AUTOMATION AGENCY & AI CONSULTING',
+      description: 'Build a profitable AI automation agency offering AI-powered services to businesses. Master n8n, Zapier, Make + AI integrations (ChatGPT, Claude, Midjourney). Build AI chatbots, AI workflows, intelligent automation. Land $2K-$10K monthly AI service retainers serving 5-15 clients generating $8K-$35K monthly with AI automation.',
       gradient: 'from-orange-600 to-red-600',
       icon: 'bot',
       stats: '800+ students • $400K+ student revenue',
       price: '$399',
       value: '$2,197',
-      link: '/fx-trading'
+      link: '/ai-automations'
     }
   ]
 
@@ -178,15 +178,15 @@ export default function HomePage() {
     <div ref={containerRef} className="bg-black overflow-hidden">
       {/* SEO: AI Content Declaration for maximum discoverability */}
       <AIContentDeclaration
-        title="Build Your Creator Empire: Master Instagram Growth, AI Influencers, Futures Trading & Digital Products"
-        description="IImagined.ai teaches proven systems for Instagram growth (0-500K followers), AI influencer creation, futures trading, and digital products. Join 4,000+ students building real businesses."
+        title="Build Your Creator Empire: Master Instagram Growth, AI Influencers, AI Automation & Digital Products"
+        description="IImagined.ai teaches proven systems for Instagram growth (0-500K followers), AI influencer creation, AI automation agencies, and digital products. Join 4,000+ students building real businesses."
         contentType="course"
         primaryTopic="Creator Economy & Digital Business Education"
         keywords={[
           'Instagram growth',
           'AI influencers',
           'ComfyUI',
-          'futures trading',
+          'AI automation',
           'digital products',
           'content creation',
           'social media marketing',
@@ -194,7 +194,7 @@ export default function HomePage() {
           'online courses',
           'creator economy',
           'N8N automation',
-          'prop firm trading',
+          'AI chatbots',
           'Instagram monetization',
           'viral content',
           'business automation'
@@ -208,7 +208,7 @@ export default function HomePage() {
       />
 
       <h1 className="sr-only">
-        Build Your Creator Empire: Master Instagram Growth, AI Influencers, Futures Trading & Digital Products
+        Build Your Creator Empire: Master Instagram Growth, AI Influencers, AI Automation & Digital Products
       </h1>
       {/* Beautiful Hero Section */}
       <BeautifulHero />

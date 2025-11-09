@@ -52,14 +52,14 @@ export const courses = [
     color: '#00C853',
   },
   {
-    name: 'Futures Trading',
-    href: '/futures-trading',
-    slug: 'futures-trading',
-    description: 'Master prop firm challenges and get funded trading ES, NQ, and Gold',
-    shortDescription: 'Futures & prop firm trading',
+    name: 'AI Automations',
+    href: '/ai-automations',
+    slug: 'ai-automations',
+    description: 'Build AI-powered automation agency with ChatGPT, Claude & AI services. Offer AI consulting, AI chatbots, intelligent automation using n8n, Zapier, Make',
+    shortDescription: 'AI automation agency & AI consulting',
     price: 399,
     priceFormatted: '$399',
-    icon: 'chart',
+    icon: 'automation',
     color: '#FF6B6B',
   },
 ] as const
@@ -69,7 +69,6 @@ export const courses = [
  */
 export const resourceLinks = [
   { name: 'Blog', href: '/blog' },
-  { name: 'FX Calculator', href: '/fx-calc' },
   { name: 'Free Resources', href: '/resources' },
   { name: 'About Anyro', href: '/about' },
 ] as const

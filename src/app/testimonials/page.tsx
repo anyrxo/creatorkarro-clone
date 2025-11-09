@@ -105,11 +105,11 @@ export default function TestimonialsPage() {
     },
     {
       name: "Devon Mitchell",
-      role: "Futures Trader",
-      course: "Futures Trading",
+      role: "Automation Consultant",
+      course: "AI Automations",
       avatar: "https://i.pravatar.cc/150?img=67",
-      content: "Passed my TopStep eval on the second try using what I learned here. The risk management rules literally saved me from blowing the account multiple times. Now trading a $50K funded account on ES and NQ. Still can't believe I'm getting paid to trade other people's money.",
-      results: "TopStep funded, $50K account"
+      content: "Went from zero automation knowledge to landing 5 clients in 90 days. Built n8n workflows that save my clients 40+ hours weekly. Now making $12K/month with monthly retainers. The client acquisition templates were game-changing.",
+      results: "5 clients, $12K/mo recurring"
     },
     {
       name: "Ashton Torres",
@@ -209,11 +209,11 @@ export default function TestimonialsPage() {
     },
     {
       name: "Michael Brown",
-      role: "Photographer & Trader",
-      course: "Futures Trading",
+      role: "Photographer & Automation Specialist",
+      course: "AI Automations",
       avatar: "https://i.pravatar.cc/150?img=76",
-      content: "Passed FTMO on my third attempt. The risk management part is what I was missing. Now I trade Gold futures with their capital while doing photography. Nice to have income that isn't dependent on booking clients.",
-      results: "FTMO funded, dual income streams"
+      content: "Added automation services to my photography business. Built AI chatbots and workflow automations for 8 clients. Now have dual income streams - photography and $8K monthly from automation retainers. Best decision ever.",
+      results: "8 clients, dual income streams"
     },
     {
       name: "Sarah Johnson",
@@ -267,7 +267,7 @@ export default function TestimonialsPage() {
       {/* SEO: AI Content Declaration for Testimonials Page */}
       <AIContentDeclaration
         title="Student Success Stories & Testimonials - IImagined.ai"
-        description="Real success stories from 4,000+ students who transformed their lives through Instagram growth, AI influencers, futures trading, and digital products courses. Verified results and testimonials."
+        description="Real success stories from 4,000+ students who transformed their lives through Instagram growth, AI influencers, AI automation agencies, and digital products courses. Verified results and testimonials."
         contentType="review"
         primaryTopic="Student Success Stories & Course Reviews"
         keywords={[
@@ -276,7 +276,7 @@ export default function TestimonialsPage() {
           'Instagram growth results',
           'AI influencer success',
           'digital product sales',
-          'futures trading wins',
+          'AI automation wins',
           'online course reviews',
           'creator economy',
           'business transformation',
@@ -436,8 +436,8 @@ export default function TestimonialsPage() {
                     testimonial.course === 'Instagram Ignited' ? 'bg-blue-500/20 text-blue-400' :
                     testimonial.course === 'Digital Products' ? 'bg-green-500/20 text-green-400' :
                     testimonial.course === 'AI Influencers' ? 'bg-pink-500/20 text-pink-400' :
-                    testimonial.course === 'Futures Trading' ? 'bg-purple-500/20 text-purple-400' :
-                    'bg-orange-500/20 text-orange-400'
+                    testimonial.course === 'AI Automations' ? 'bg-orange-500/20 text-orange-400' :
+                    'bg-purple-500/20 text-purple-400'
                   }`}>
                     {testimonial.course}
                   </span>

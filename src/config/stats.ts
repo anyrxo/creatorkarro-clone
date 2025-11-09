@@ -26,7 +26,7 @@ export const siteStats = {
   instagramStudents: 2000,
   aiInfluencersStudents: 1500,
   digitalProductsStudents: 1200,
-  futuresTradingStudents: 800,
+  aiAutomationsStudents: 800,
 
   // Business metrics
   yearsActive: 2, // Since 2023

@@ -9,8 +9,9 @@ export const revalidate = false;
 // Product/Course slugs
 const productPages = [
   'ai-influencers',
-  'digital-products', 
-  'fx-trading'
+  'digital-products',
+  'ai-automations',
+  'instagram-ignited'
 ]
 
 // Tool pages

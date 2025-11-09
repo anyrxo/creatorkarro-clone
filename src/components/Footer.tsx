@@ -15,7 +15,7 @@ export default function Footer() {
       { name: 'Instagram Ignited', href: '/instagram-ignited' },
       { name: 'AI Influencers', href: '/ai-influencers' },
       { name: 'Digital Products', href: '/digital-products' },
-      { name: 'Futures Trading', href: '/fx-trading' }
+      { name: 'AI Automations', href: '/ai-automations' }
     ],
     resources: [
       { name: 'Blog', href: '/blog' },
@@ -157,10 +157,10 @@ export default function Footer() {
                 <strong>Individual results vary.</strong> Any income examples, earnings, or testimonials shown on this site represent exceptional results and do not guarantee that you or others will achieve the same or similar outcomes. Your results depend on many factors including your effort, skill level, background, market conditions, and other variables beyond our control.
               </p>
               <p>
-                <strong>Trading Disclosure:</strong> Futures trading involves substantial risk of loss and is not suitable for all investors. Past performance is not indicative of future results. All trading strategies discussed are for educational purposes only.
+                <strong>Educational Content:</strong> Our courses provide educational information and strategies for building online businesses, automation agencies, and digital products. Success requires dedication, consistent effort, and the application of taught principles. We do not guarantee specific results or income levels. The purchase of any product or service should be made based on your own evaluation and judgment.
               </p>
               <p>
-                <strong>Educational Content:</strong> Our courses provide educational information and strategies. Success requires dedication, consistent effort, and the application of taught principles. We do not guarantee specific results or income levels. The purchase of any product or service should be made based on your own evaluation and judgment.
+                <strong>AI & Automation Services:</strong> Building an AI automation agency or consulting business requires learning technical skills, client acquisition, and business development. Results depend on your ability to acquire clients, deliver services, and scale your business effectively.
               </p>
             </div>
           </div>
