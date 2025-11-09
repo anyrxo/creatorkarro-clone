@@ -257,7 +257,7 @@ export default function HelpPage() {
                 title: 'Course Access',
                 description: 'Access all your courses, modules, and exclusive content on our platform.',
                 cta: 'Go to Courses',
-                href: 'https://whop.com/anyro/premium-monthly-0a/',
+                href: 'https://whop.com/iimagined/all-access-reimagined/',
                 external: true,
                 gradient: 'from-blue-500 to-cyan-500'
               },

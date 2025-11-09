@@ -124,8 +124,8 @@ export const socialLinks = [
  */
 export const ctaLinks = {
   allAccess: 'https://whop.com/iimagined/all-access-reimagined/',
-  communityMonthly: 'https://whop.com/anyro/premium-monthly-0a/',
-  communityYearly: 'https://whop.com/anyro/premium-yearly-0a/',
+  communityMonthly: 'https://whop.com/iimagined/all-access-reimagined/',
+  communityYearly: 'https://whop.com/iimagined/all-access-reimagined/',
 } as const
 
 /**

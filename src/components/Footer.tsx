@@ -6,6 +6,7 @@ import NumberTicker from './magicui/number-ticker'
 import ScrambleText from './magicui/scramble-text'
 import * as analytics from '@/lib/analytics'
 import HeroBackground from './HeroBackground'
+import { ctaLinks } from '@/config/navigation'
 
 export default function Footer() {
   const currentYear = 2025
@@ -61,13 +62,13 @@ export default function Footer() {
             {/* Quick Access to Whop */}
             <div className="mb-6">
               <Link
-                href="https://whop.com/anyro/premium-monthly-0a/"
+                href={ctaLinks.allAccess}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
                 onClick={() => {
-                  analytics.trackCTAClick('footer', 'Join Our Community', 'https://whop.com/anyro/premium-monthly-0a/')
-                  analytics.trackOutboundLink('https://whop.com/anyro/premium-monthly-0a/', 'Join Our Community', 'footer')
+                  analytics.trackCTAClick('footer', 'Join Our Community', ctaLinks.allAccess)
+                  analytics.trackOutboundLink(ctaLinks.allAccess, 'Join Our Community', 'footer')
                 }}
               >
                 Join Our Community
@@ -185,13 +186,13 @@ export default function Footer() {
               </div>
               <span className="hidden sm:block">•</span>
               <Link
-                href="https://whop.com/anyro/premium-monthly-0a/"
+                href={ctaLinks.allAccess}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 font-semibold hover:underline transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset rounded-lg"
                 onClick={() => {
-                  analytics.trackCTAClick('footer_bottom', 'Join Community', 'https://whop.com/anyro/premium-monthly-0a/')
-                  analytics.trackOutboundLink('https://whop.com/anyro/premium-monthly-0a/', 'Join Community', 'footer_bottom')
+                  analytics.trackCTAClick('footer_bottom', 'Join Community', ctaLinks.allAccess)
+                  analytics.trackOutboundLink(ctaLinks.allAccess, 'Join Community', 'footer_bottom')
                 }}
               >
                 Join Community

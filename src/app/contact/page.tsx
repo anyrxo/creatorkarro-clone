@@ -291,7 +291,7 @@ export default function ContactPage() {
                   </h4>
                   <p className="text-sm text-zinc-300 mb-3">All courses are hosted on my Whop community with lifetime access.</p>
                   <a
-                    href="https://whop.com/anyro/premium-monthly-0a/"
+                    href="https://whop.com/iimagined/all-access-reimagined/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -21,7 +21,7 @@ const COURSES = {
       'Lifetime Access + Updates',
       '60-Day Money-Back Guarantee'
     ],
-    whopUrl: 'https://whop.com/anyro/premium-monthly-0a/',
+    whopUrl: 'https://whop.com/iimagined/ai-influencers-reimagined/',
     image: '/courses/ai-influencers.jpg'
   },
   'digital-products': {
@@ -37,7 +37,7 @@ const COURSES = {
       'Lifetime Access + Updates',
       '60-Day Money-Back Guarantee'
     ],
-    whopUrl: 'https://whop.com/anyro/premium-monthly-0a/',
+    whopUrl: 'https://whop.com/iimagined/digital-products-reimagined/',
     image: '/courses/digital-products.jpg'
   },
   'instagram-ignited': {
@@ -53,7 +53,7 @@ const COURSES = {
       'Lifetime Access + Updates',
       '60-Day Money-Back Guarantee'
     ],
-    whopUrl: 'https://whop.com/anyro/premium-monthly-0a/',
+    whopUrl: 'https://whop.com/iimagined/instagram-reimagined/',
     image: '/courses/instagram.jpg'
   },
   'fx-trading': {
@@ -69,7 +69,7 @@ const COURSES = {
       'Lifetime Access + Updates',
       '60-Day Money-Back Guarantee'
     ],
-    whopUrl: 'https://whop.com/anyro/premium-monthly-0a/',
+    whopUrl: 'https://whop.com/iimagined/all-access-reimagined/',
     image: '/courses/fx-trading.jpg'
   },
   'all-access': {
@@ -85,7 +85,7 @@ const COURSES = {
       'Monthly Live Q&A Sessions',
       'Cancel Anytime'
     ],
-    whopUrl: 'https://whop.com/anyro/premium-monthly-0a/',
+    whopUrl: 'https://whop.com/iimagined/all-access-reimagined/',
     image: '/courses/all-access.jpg'
   }
 }
