@@ -280,7 +280,7 @@ export default function AIAutomationsPage() {
   }
 
   const handleBuyNow = () => {
-    setIsCheckoutOpen(true)
+    window.open('https://whop.com/iimagined/ai-automations-reimagined/', '_blank', 'noopener,noreferrer')
   }
 
   // Scroll animations for different sections
