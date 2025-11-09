@@ -24,7 +24,7 @@ import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
 import SocialProof from '@/components/seo/SocialProof'
-import { Rocket, Video, Bot, Users, Zap, Target, Shield, AlertTriangle, Gem, TrendingUp, Flame, CheckCircle, DollarSign, Phone } from 'lucide-react'
+import { Rocket, Video, Bot, Users, Zap, Target, Shield, AlertTriangle, Gem, TrendingUp, Flame, CheckCircle, DollarSign, Phone, ChevronRight, XCircle } from 'lucide-react'
 import * as analytics from '@/lib/analytics'
 import { useEffect } from 'react'
 
@@ -62,8 +62,12 @@ export default function AIInfluencersPage() {
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const problemAnimation = useScrollAnimation({ threshold: 0.1 })
   const solutionAnimation = useScrollAnimation({ threshold: 0.1 })
+  const toolsAnimation = useScrollAnimation({ threshold: 0.1 })
   const curriculumAnimation = useScrollAnimation({ threshold: 0.1 })
   const bonusAnimation = useScrollAnimation({ threshold: 0.1 })
+  const journeyAnimation = useScrollAnimation({ threshold: 0.1 })
+  const learningAnimation = useScrollAnimation({ threshold: 0.1 })
+  const comparisonAnimation = useScrollAnimation({ threshold: 0.1 })
   const valueAnimation = useScrollAnimation({ threshold: 0.1 })
   const pricingAnimation = useScrollAnimation({ threshold: 0.2 })
   const testimonialsAnimation = useScrollAnimation({ threshold: 0.1 })
@@ -166,7 +170,7 @@ export default function AIInfluencersPage() {
         }
       },
       {
-        "@type": "Question", 
+        "@type": "Question",
         "name": "Can AI influencers really make money?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -521,7 +525,7 @@ export default function AIInfluencersPage() {
       originalPrice: "$199",
       features: [
         "Complete $88K/month business system",
-        "Instagram: 0 to 500K followers proven method", 
+        "Instagram: 0 to 500K followers proven method",
         "AI Influencers: $20K/month passive income",
         "Digital Products: $50K launch blueprints",
         "ComfyUI: Professional AI image business",
@@ -679,7 +683,7 @@ export default function AIInfluencersPage() {
             <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 max-w-3xl mx-auto card-hover">
               <h3 className="text-2xl font-bold mb-4 text-red-400">The Real Cost of Traditional Content Creation</h3>
               <p className="text-lg text-zinc-200 mb-4">
-                Most creators spend <span className="text-red-400 font-bold">80% of their time</span> on content creation and only 
+                Most creators spend <span className="text-red-400 font-bold">80% of their time</span> on content creation and only
                 <span className="text-red-400 font-bold"> 20% on revenue generation</span>
               </p>
               <p className="text-zinc-300">
@@ -758,6 +762,63 @@ export default function AIInfluencersPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 1: TOOLS & PLATFORMS GRID */}
+      <section className="section-spacing bg-gradient-to-b from-black to-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div ref={toolsAnimation.elementRef}>
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-pink-500/10 border border-pink-500/30 rounded-full px-6 py-2 mb-6">
+                <Bot className="w-5 h-5 text-pink-400" />
+                <span className="text-pink-300 font-semibold">AI TOOLS & PLATFORMS</span>
+              </div>
+              <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                Master the <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Complete AI Influencer Stack</span>
+              </h2>
+              <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
+                Create photorealistic AI influencers using professional-grade AI and ComfyUI tools
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {[
+                { name: 'ComfyUI', category: 'Workflow Engine', icon: '🎨' },
+                { name: 'Stable Diffusion', category: 'AI Generator', icon: '🤖' },
+                { name: 'Midjourney', category: 'AI Art', icon: '✨' },
+                { name: 'DALL-E', category: 'OpenAI Image', icon: '🧠' },
+                { name: 'ChatGPT', category: 'AI Writing', icon: '💬' },
+                { name: 'Claude', category: 'AI Assistant', icon: '🎯' },
+                { name: 'RunwayML', category: 'AI Video', icon: '🎬' },
+                { name: 'Fooocus', category: 'AI Generator', icon: '⚡' },
+                { name: 'Leonardo.AI', category: 'AI Creation', icon: '🖼️' },
+                { name: 'Adobe Firefly', category: 'Creative AI', icon: '🔥' },
+                { name: 'Photoshop', category: 'Editing', icon: '🎨' },
+                { name: 'After Effects', category: 'Video/Motion', icon: '🎥' }
+              ].map((tool, index) => (
+                <div
+                  key={tool.name}
+                  className="group relative bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-zinc-800 hover:border-pink-500/50 transition-all duration-300 hover:scale-105"
+                >
+                  <div className="flex flex-col items-center text-center">
+                    <span className="text-4xl mb-3 group-hover:scale-110 transition-transform">{tool.icon}</span>
+                    <h3 className="font-semibold text-white text-sm mb-1">{tool.name}</h3>
+                    <p className="text-xs text-zinc-400">{tool.category}</p>
+                  </div>
+
+                  {/* Hover effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-600/10 to-purple-600/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-zinc-300 mb-6">
+                Plus LoRA training, FaceSwap, upscaling tools, and 50+ custom ComfyUI workflows
+              </p>
             </div>
           </div>
         </div>
@@ -855,6 +916,292 @@ export default function AIInfluencersPage() {
                 $<NumberTicker value={1032} className="text-4xl font-bold text-gold-400" />
               </div>
               <p className="text-zinc-200">Free when you join today</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2: 90-DAY TRANSFORMATION JOURNEY */}
+      <section className="section-spacing bg-gradient-to-b from-black to-zinc-900 border-t border-pink-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div ref={journeyAnimation.elementRef}>
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-pink-500/10 border border-pink-500/30 rounded-full px-6 py-2 mb-6">
+                <Zap className="w-5 h-5 text-pink-400" />
+                <span className="text-pink-300 font-semibold">YOUR TRANSFORMATION</span>
+              </div>
+              <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                From <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">$10K/Month</span> in 90 Days
+              </h2>
+              <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
+                Follow the exact roadmap 500+ students used to build profitable AI influencer empires
+              </p>
+            </div>
+
+            <div className="max-w-5xl mx-auto space-y-8">
+              {[
+                {
+                  phase: "Week 1-2",
+                  title: "ComfyUI Foundations",
+                  description: "Master ComfyUI interface, basic workflows, and create your first AI character with consistent features and personality.",
+                  outcomes: ["Master ComfyUI workflow builder", "Create first AI character", "Build foundational automation"]
+                },
+                {
+                  phase: "Week 3-4",
+                  title: "Character Consistency",
+                  description: "LoRA training for perfect face consistency, FaceSwap techniques, and develop complete brand identity for your AI influencer.",
+                  outcomes: ["Train custom LoRA models", "Perfect character consistency", "Build complete brand identity"]
+                },
+                {
+                  phase: "Week 5-8",
+                  title: "Content Production",
+                  description: "Automated content creation systems. Generate Reels, Stories, carousels. Scale to 100+ posts across platforms.",
+                  outcomes: ["Automate content generation", "Create 100+ posts", "Master platform strategies"]
+                },
+                {
+                  phase: "Week 9-12",
+                  title: "Monetization & Scale",
+                  description: "Land brand deals, launch digital products, scale to 100K followers. Build sustainable income streams.",
+                  outcomes: ["Land first brand deals", "Launch monetization", "Scale to 100K followers"]
+                }
+              ].map((phase, index) => (
+                <div key={index} className="relative">
+                  {/* Connection line */}
+                  {index < 3 && (
+                    <div className="absolute left-12 top-full h-8 w-0.5 bg-gradient-to-b from-pink-500 to-pink-500/0 hidden md:block" />
+                  )}
+
+                  <div className="flex items-start gap-6">
+                    {/* Phase number */}
+                    <div className="flex-shrink-0 w-24 h-24 rounded-full bg-gradient-to-br from-pink-600 to-purple-600 flex items-center justify-center text-2xl font-bold text-white border-4 border-zinc-900">
+                      {index + 1}
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1 bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+                      <div className="flex items-center justify-between mb-4">
+                        <h3 className="text-3xl font-bold text-white">{phase.title}</h3>
+                        <span className="text-pink-400 font-semibold px-4 py-2 bg-pink-500/10 rounded-full">{phase.phase}</span>
+                      </div>
+                      <p className="text-zinc-200 text-lg mb-6">{phase.description}</p>
+                      <div className="space-y-2">
+                        {phase.outcomes.map((outcome, i) => (
+                          <div key={i} className="flex items-center gap-3">
+                            <CheckCircle className="w-5 h-5 text-pink-400" />
+                            <span className="text-zinc-300">{outcome}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-16">
+              <p className="text-xl text-zinc-200 mb-8">
+                Ready to start your AI influencer journey?
+              </p>
+              <Link
+                href="#packages"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-semibold text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-pink-500/25"
+              >
+                Start Your Journey Today
+                <ChevronRight className="w-5 h-5" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: WHAT YOU'LL ACTUALLY LEARN */}
+      <section className="section-spacing bg-zinc-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div ref={learningAnimation.elementRef}>
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-pink-500/10 border border-pink-500/30 rounded-full px-6 py-2 mb-6">
+                <Target className="w-5 h-5 text-pink-400" />
+                <span className="text-pink-300 font-semibold">SPECIFIC OUTCOMES</span>
+              </div>
+              <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                What You'll <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Actually Learn</span>
+              </h2>
+              <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
+                Not theory. Practical skills that generate revenue from day one.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              {[
+                {
+                  category: "Technical Skills",
+                  skills: [
+                    "Master ComfyUI workflow builder for AI image generation",
+                    "Train LoRA models for perfect character consistency",
+                    "Use FaceSwap and face-fixing techniques professionally",
+                    "Build automated content generation workflows",
+                    "Implement batch processing and upscaling automation",
+                    "Master Stable Diffusion, SDXL, and Flux models",
+                    "Create custom ComfyUI nodes and extensions"
+                  ]
+                },
+                {
+                  category: "Character Creation",
+                  skills: [
+                    "Create photorealistic AI characters with unique features",
+                    "Develop consistent character style and branding",
+                    "Generate unlimited poses, expressions, and scenarios",
+                    "Build character personality and storytelling",
+                    "Master lighting, composition, and aesthetics",
+                    "Create seasonal and themed content variations",
+                    "Maintain brand consistency across platforms"
+                  ]
+                },
+                {
+                  category: "Content Strategy",
+                  skills: [
+                    "Create viral Instagram Reels and TikTok content",
+                    "Design engaging carousels and static posts",
+                    "Write compelling hooks and captions that convert",
+                    "Master hashtag research and SEO optimization",
+                    "Implement posting timing and frequency strategies",
+                    "Build engagement loops and community interaction",
+                    "Analyze analytics and optimize performance"
+                  ]
+                },
+                {
+                  category: "Monetization",
+                  skills: [
+                    "Land brand deals and sponsorship partnerships",
+                    "Create and sell digital products and merchandise",
+                    "Build subscription-based revenue streams",
+                    "Master affiliate marketing with AI influencers",
+                    "License AI character usage and content",
+                    "Scale to multiple income streams simultaneously",
+                    "Automate sales funnels and customer journeys"
+                  ]
+                }
+              ].map((category, index) => (
+                <div key={index} className="bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+                  <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <CheckCircle className="w-8 h-8 text-pink-400" />
+                    {category.category}
+                  </h3>
+                  <ul className="space-y-4">
+                    {category.skills.map((skill, i) => (
+                      <li key={i} className="flex items-start gap-3 text-zinc-200">
+                        <ChevronRight className="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" />
+                        <span>{skill}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4: COMPARISON TABLE */}
+      <section className="section-spacing bg-gradient-to-b from-black to-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div ref={comparisonAnimation.elementRef}>
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-pink-500/10 border border-pink-500/30 rounded-full px-6 py-2 mb-6">
+                <TrendingUp className="w-5 h-5 text-pink-400" />
+                <span className="text-pink-300 font-semibold">THE DIFFERENCE</span>
+              </div>
+              <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                AI Influencer vs <span className="bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">Traditional Influencer</span>
+              </h2>
+              <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
+                Why AI influencers are the future of content creation in 2025
+              </p>
+            </div>
+
+            <div className="max-w-5xl mx-auto bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl overflow-hidden">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-zinc-800/50">
+                    <th className="px-6 py-4 text-left text-zinc-400 font-semibold">Factor</th>
+                    <th className="px-6 py-4 text-left text-pink-400 font-semibold">AI Influencer</th>
+                    <th className="px-6 py-4 text-left text-red-400 font-semibold">Traditional Influencer</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-zinc-800">
+                  {[
+                    {
+                      factor: "Content Creation Time",
+                      ai: "Generate 100+ posts in hours with automation",
+                      traditional: "Days/weeks for photoshoots, editing, planning"
+                    },
+                    {
+                      factor: "Production Costs",
+                      ai: "$50-$200/month for tools and hosting",
+                      traditional: "$2K-$10K/month for equipment, crew, editing"
+                    },
+                    {
+                      factor: "Scalability",
+                      ai: "Create unlimited characters, unlimited content",
+                      traditional: "Limited by time, energy, and physical constraints"
+                    },
+                    {
+                      factor: "Creative Control",
+                      ai: "100% control over appearance, personality, content",
+                      traditional: "Limited by reality, mood, physical changes"
+                    },
+                    {
+                      factor: "Privacy",
+                      ai: "Complete anonymity, no personal exposure",
+                      traditional: "Public life, privacy invasion, personal scrutiny"
+                    },
+                    {
+                      factor: "Consistency",
+                      ai: "Perfect consistency 24/7, never sick or tired",
+                      traditional: "Inconsistent, affected by mood, health, life events"
+                    },
+                    {
+                      factor: "Revenue Potential",
+                      ai: "$10K-$50K+ monthly per character",
+                      traditional: "$3K-$20K monthly with burnout risk"
+                    },
+                    {
+                      factor: "Longevity",
+                      ai: "Infinite lifespan, never ages or changes",
+                      traditional: "Limited by age, trends, platform changes"
+                    }
+                  ].map((row, index) => (
+                    <tr key={index} className="hover:bg-zinc-800/30 transition-colors">
+                      <td className="px-6 py-4 text-zinc-300 font-semibold">{row.factor}</td>
+                      <td className="px-6 py-4 text-green-400">
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                          <span>{row.ai}</span>
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 text-zinc-400">
+                        <div className="flex items-start gap-2">
+                          <XCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-red-400" />
+                          <span>{row.traditional}</span>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-xl text-zinc-200 mb-6">
+                The choice is clear. Start building your AI influencer empire today.
+              </p>
+              <Link
+                href="#packages"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-semibold text-lg rounded-xl transition-all duration-300 transform hover:scale-105"
+              >
+                Join AI Influencers Course
+                <ChevronRight className="w-5 h-5" />
+              </Link>
             </div>
           </div>
         </div>
@@ -1068,7 +1415,7 @@ export default function AIInfluencersPage() {
                     />
                   </div>
                 </h2>
-                
+
                 <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 mb-8 card-hover">
                   <h3 className="text-2xl font-bold mb-4 text-red-300">Why I'm Limiting This Offer</h3>
                   <div className="grid md:grid-cols-2 gap-6 text-left">
@@ -1078,7 +1425,7 @@ export default function AIInfluencersPage() {
                         Quality Control
                       </h4>
                       <p className="text-zinc-200 mb-4">I personally review every student's progress and provide 1-on-1 guidance. Too many students would compromise the quality of support.</p>
-                      
+
                       <h4 className="font-bold text-white mb-2 flex items-center gap-2">
                         <Gem className="w-5 h-5" />
                         Exclusivity Protection
@@ -1091,7 +1438,7 @@ export default function AIInfluencersPage() {
                         Early Adopter Advantage
                       </h4>
                       <p className="text-zinc-200 mb-4">AI influencers are still new. Early adopters get the biggest market share before mainstream adoption.</p>
-                      
+
                       <h4 className="font-bold text-white mb-2 flex items-center gap-2">
                         <TrendingUp className="w-5 h-5" />
                         Rising Costs

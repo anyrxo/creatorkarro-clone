@@ -27,7 +27,7 @@ import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
 import SocialProof from '@/components/seo/SocialProof'
-import { ChevronRight, Target, Video, FileText, Users, BarChart3, Handshake, Zap, Flame, CheckCircle, XCircle, AlertTriangle } from 'lucide-react'
+import { ChevronRight, Target, Video, FileText, Users, BarChart3, Handshake, Zap, Flame, CheckCircle, XCircle, AlertTriangle, Instagram } from 'lucide-react'
 
 // Icon mapping function
 const getIcon = (iconName: string, className?: string) => {
@@ -43,7 +43,8 @@ const getIcon = (iconName: string, className?: string) => {
     flame: <Flame {...iconProps} />,
     checkCircle: <CheckCircle {...iconProps} />,
     xCircle: <XCircle {...iconProps} />,
-    alertTriangle: <AlertTriangle {...iconProps} />
+    alertTriangle: <AlertTriangle {...iconProps} />,
+    instagram: <Instagram {...iconProps} />
   }
   return icons[iconName] || <Target {...iconProps} />
 }
@@ -131,7 +132,7 @@ export default function InstagramIgnitedPage() {
         }
       },
       {
-        "@type": "Question", 
+        "@type": "Question",
         "name": "How quickly will I see Instagram growth results?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -184,11 +185,15 @@ export default function InstagramIgnitedPage() {
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const problemAnimation = useScrollAnimation({ threshold: 0.1 })
   const solutionAnimation = useScrollAnimation({ threshold: 0.1 })
+  const toolsAnimation = useScrollAnimation({ threshold: 0.1 })
   const resultsAnimation = useScrollAnimation({ threshold: 0.1 })
   const whoForAnimation = useScrollAnimation({ threshold: 0.1 })
   const studentResultsAnimation = useScrollAnimation({ threshold: 0.1 })
   const modulesAnimation = useScrollAnimation({ threshold: 0.1 })
   const bonusAnimation = useScrollAnimation({ threshold: 0.1 })
+  const journeyAnimation = useScrollAnimation({ threshold: 0.1 })
+  const skillsAnimation = useScrollAnimation({ threshold: 0.1 })
+  const comparisonAnimation = useScrollAnimation({ threshold: 0.1 })
   const pricingAnimation = useScrollAnimation({ threshold: 0.1 })
   const testimonialsAnimation = useScrollAnimation({ threshold: 0.1 })
   const faqAnimation = useScrollAnimation({ threshold: 0.1 })
@@ -361,10 +366,10 @@ export default function InstagramIgnitedPage() {
                 className={`bg-zinc-900 border border-red-900/30 rounded-2xl p-6 hover:bg-red-900/20 transition-all duration-300 hover-lift scroll-fade-up ${problemCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
                 <div className="mb-4">
-                  <PainPointIcon 
-                    type={problem.icon as any} 
-                    size={48} 
-                    className="text-red-500" 
+                  <PainPointIcon
+                    type={problem.icon as any}
+                    size={48}
+                    className="text-red-500"
                     color="currentColor"
                   />
                 </div>
@@ -380,7 +385,7 @@ export default function InstagramIgnitedPage() {
                 The Painful Reality...
               </h3>
               <p className="text-lg md:text-xl text-zinc-200 mb-6">
-                Every day you wait, your competitors get further ahead. Every month you stay stuck, that's $5K-$20K in lost income. 
+                Every day you wait, your competitors get further ahead. Every month you stay stuck, that's $5K-$20K in lost income.
                 Every year you struggle with Instagram, that's a potential $100K+ business that never gets built.
               </p>
               <div className="bg-zinc-900 border border-red-500 rounded-lg p-6">
@@ -440,7 +445,7 @@ export default function InstagramIgnitedPage() {
                 />
               </div>
             </div>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -454,7 +459,7 @@ export default function InstagramIgnitedPage() {
                     <p className="text-zinc-200">Starting with zero followers, this system built a massive, engaged audience that actually converts.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="bg-green-500 rounded-full p-2 mt-1">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -466,7 +471,7 @@ export default function InstagramIgnitedPage() {
                     <p className="text-zinc-200">This isn't just about followers - it's about building a real business that pays you monthly.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="bg-green-500 rounded-full p-2 mt-1">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -479,7 +484,7 @@ export default function InstagramIgnitedPage() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-green-500 rounded-full p-2 mt-1">
@@ -492,7 +497,7 @@ export default function InstagramIgnitedPage() {
                     <p className="text-zinc-200">This system works for everyone - beginners to advanced creators across every niche.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="bg-green-500 rounded-full p-2 mt-1">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -504,7 +509,7 @@ export default function InstagramIgnitedPage() {
                     <p className="text-zinc-200">Turn Instagram followers into owned audience that generates consistent monthly income.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="bg-green-500 rounded-full p-2 mt-1">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -518,16 +523,71 @@ export default function InstagramIgnitedPage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="text-center mt-12">
               <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6">
                 <h4 className="text-2xl font-bold text-yellow-400 mb-2">This System is BATTLE-TESTED</h4>
                 <p className="text-zinc-200 text-lg">
-                  No theory, no guesswork, no "try this and see what happens." Every strategy is proven to work 
+                  No theory, no guesswork, no "try this and see what happens." Every strategy is proven to work
                   across thousands of students and millions of dollars in results.
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TOOLS & PLATFORMS GRID Section */}
+      <section className="section-spacing bg-gradient-to-b from-black to-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-6 py-2 mb-6">
+              <Instagram className="w-5 h-5 text-blue-400" />
+              <span className="text-blue-300 font-semibold">INSTAGRAM TOOLS & PLATFORMS</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              Master the <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Instagram Creator Stack</span>
+            </h2>
+            <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
+              Create stunning content and dominate Instagram using these essential creator tools
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {[
+              { name: 'Instagram', category: 'Core Platform', icon: '📸' },
+              { name: 'Reels', category: 'Video Content', icon: '🎬' },
+              { name: 'Stories', category: 'Engagement', icon: '📱' },
+              { name: 'CapCut', category: 'Video Editing', icon: '✂️' },
+              { name: 'Canva', category: 'Design', icon: '🎨' },
+              { name: 'InShot', category: 'Mobile Editing', icon: '📹' },
+              { name: 'VSCO', category: 'Photo Editing', icon: '🖼️' },
+              { name: 'Lightroom', category: 'Photo Edit', icon: '💡' },
+              { name: 'Later', category: 'Scheduling', icon: '📅' },
+              { name: 'Buffer', category: 'Analytics', icon: '📊' },
+              { name: 'Hootsuite', category: 'Management', icon: '🔄' },
+              { name: 'Linktree', category: 'Link Manager', icon: '🔗' }
+            ].map((tool, index) => (
+              <div
+                key={tool.name}
+                className="group relative bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-zinc-800 hover:border-blue-500/50 transition-all duration-300 hover:scale-105"
+              >
+                <div className="flex flex-col items-center text-center">
+                  <span className="text-4xl mb-3 group-hover:scale-110 transition-transform">{tool.icon}</span>
+                  <h3 className="font-semibold text-white text-sm mb-1">{tool.name}</h3>
+                  <p className="text-xs text-zinc-400">{tool.category}</p>
+                </div>
+
+                {/* Hover effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-zinc-300 mb-6">
+              Plus hashtag research tools, analytics platforms, and content scheduling software
+            </p>
           </div>
         </div>
       </section>
@@ -578,71 +638,465 @@ export default function InstagramIgnitedPage() {
         </div>
       </section>
 
-      {/* Instagram Content Tools Section */}
-      <section className="py-16 bg-gradient-to-b from-zinc-900/30 to-black border-t border-zinc-700/50">
+      {/* MODULES Section */}
+      <section className="section-spacing border-t border-blue-900/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Master the <span className="text-blue-400">Instagram Creator Stack</span>
-            </h2>
-            <p className="text-xl text-zinc-200 max-w-2xl mx-auto">
-              Learn to create, grow, and monetize with the same tools successful creators use
-            </p>
+          <div
+            ref={modulesAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <p className="text-sm text-zinc-300 uppercase tracking-wider mb-4">MODULAR</p>
+            <h2 className="text-3xl md:text-5xl font-bold">What to expect</h2>
+            <p className="text-lg md:text-xl text-zinc-200 mt-4">We've split the course into a number of modules.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div className={`max-w-4xl mx-auto mb-12 scroll-scale ${modulesAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+            <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">10+ Modules<br />100+ Lessons</h3>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
             {[
-              { platform: 'instagram', name: 'Instagram', category: 'Core Platform' },
-              { platform: 'tiktok', name: 'TikTok', category: 'Content Creation' },
-              { platform: 'youtube', name: 'YouTube', category: 'Long-form Content' },
-              { platform: 'facebook', name: 'Facebook', category: 'Cross-posting' },
-              { platform: 'linkedin', name: 'LinkedIn', category: 'Professional' },
-              { platform: 'beehiiv', name: 'Beehiiv', category: 'Email Marketing' },
-              { platform: 'fanvue', name: 'Fanvue', category: 'Monetization' },
-              { platform: 'loom', name: 'Loom', category: 'Video Content' }
-            ].map((tool, index) => (
+              {
+                title: "<span className='text-blue-400'>Module 1:</span> Algorithm Domination Blueprint",
+                value: "$697",
+                description: "Master Instagram's algorithm from the inside out. Learn the exact content patterns, posting times, and engagement strategies that force the algorithm to show your content to thousands of new people daily."
+              },
+              {
+                title: "<span className='text-blue-400'>Module 2:</span> Viral Content Formula",
+                value: "$897",
+                description: "The proven 7-step formula behind every viral post. Discover the psychological triggers, visual patterns, and storytelling frameworks that guarantee viral content every single time."
+              },
+              {
+                title: "<span className='text-blue-400'>Module 3:</span> Reel Psychology Mastery",
+                value: "$797",
+                description: "The neuroscience behind addictive Reels. Learn the exact hooks, transitions, and psychological triggers that force people to watch, share, and follow you instantly."
+              },
+              {
+                title: "<span className='text-blue-400'>Module 4:</span> Story Engagement Systems",
+                value: "$597",
+                description: "Turn your Stories into a conversion machine. Master polls, questions, stickers, and interactive features that build deeper relationships and drive massive engagement."
+              },
+              {
+                title: "<span className='text-blue-400'>Module 5:</span> Hashtag Research Automation",
+                value: "$497",
+                description: "Never guess hashtags again. Get the exact tools and strategies to find high-converting hashtags that put your content in front of your ideal audience automatically."
+              },
+              {
+                title: "<span className='text-blue-400'>Module 6:</span> DM Automation & Outreach",
+                value: "$697",
+                description: "Scale your reach beyond your followers. Learn the art of strategic DMs, collaboration outreach, and relationship building that leads to exponential growth."
+              },
+              {
+                title: "<span className='text-blue-400'>Module 7:</span> Monetization Frameworks",
+                value: "$997",
+                description: "Turn followers into dollars with 12 different revenue streams. From affiliate marketing to digital products, discover how to monetize any size audience profitably."
+              },
+              {
+                title: "<span className='text-blue-400'>Module 8:</span> Collaboration Networks",
+                value: "$597",
+                description: "Build powerful relationships with other creators. Learn how to find, approach, and collaborate with influencers to multiply your reach and credibility instantly."
+              },
+              {
+                title: "<span className='text-blue-400'>Module 9:</span> Analytics & Optimization",
+                value: "$497",
+                description: "Data-driven growth that never stops. Master Instagram analytics, A/B testing, and optimization strategies that consistently improve your results month after month."
+              },
+              {
+                title: "<span className='text-blue-400'>Module 10:</span> Scaling to 100K+",
+                value: "$897",
+                description: "The advanced strategies that take you from 10K to 100K+ followers. Content systems, team building, and business frameworks for serious creators ready to go pro."
+              }
+            ].map((module, index) => (
               <div
-                key={tool.platform}
-                className="group relative bg-zinc-800/50 backdrop-blur-sm rounded-xl p-4 border border-zinc-700/50 hover:border-blue-500/50 transition-all duration-300 hover:scale-105"
+                key={index}
+                ref={moduleCards.setElementRef(index)}
+                className={`testimonial-card hover-lift scroll-fade-up relative ${moduleCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
               >
-                <div className="flex flex-col items-center text-center">
-                  <SocialIcon 
-                    platform={tool.platform as any}
-                    variant="color"
-                    size={40}
-                    href={undefined}
-                    className="mb-3 group-hover:scale-110 transition-transform"
-                  />
-                  <h3 className="font-semibold text-white text-sm mb-1">{tool.name}</h3>
-                  <p className="text-xs text-zinc-400">{tool.category}</p>
-                </div>
-                
-                {/* Hover effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <ValueBadge
+                  value={module.value}
+                  className="absolute top-4 right-4"
+                />
+                <h3 className="text-lg md:text-xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: module.title }}></h3>
+                <p className="text-zinc-200 leading-relaxed">{module.description}</p>
               </div>
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <p className="text-zinc-400 mb-6">
-              Plus content creation tools, analytics platforms, and scheduling software
+          <div className={`text-center mt-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Join & get a personalized page audit.</h3>
+            <p className="text-lg md:text-xl text-zinc-200 mb-8">
+              Access all recorded page audits, lessons, and our private community in the evergreen, constantly updated program.
             </p>
-            <button 
-              onClick={handleBuyNow} 
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors cursor-pointer focus:outline-none focus:ring-4 focus:ring-blue-500/50"
-              aria-label="Master all Instagram platforms and tools"
-            >
-              <span>Master All Platforms</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
+            <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer" aria-label="Join Instagram Ignited 4.0 with personalized audit and bonuses">
+              Join IImagined 4.0
             </button>
+            <p className="text-sm text-zinc-300 mt-4">And claim all the bonuses</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Bonus Section */}
+      <section className="section-spacing bg-zinc-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            ref={bonusAnimation.elementRef}
+            className={`text-center mb-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}
+          >
+            <p className="text-sm text-zinc-300 uppercase tracking-wider mb-4">BONUS</p>
+            <h2 className="text-3xl md:text-5xl font-bold">Comes with lifetime access.</h2>
+            <p className="text-lg md:text-xl text-zinc-200 mt-4">Join now and get all these bonuses included.</p>
+          </div>
+
+          <div className="mb-12 text-center">
+            <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500 rounded-3xl p-8">
+              <h3 className="text-3xl md:text-5xl font-bold mb-4 text-yellow-400 flex items-center justify-center gap-3">
+                {getIcon('flame', 'w-8 h-8')} INSANE Bonuses Worth $8,879 {getIcon('flame', 'w-8 h-8')}
+              </h3>
+              <p className="text-xl text-zinc-200">
+                These bonuses alone are worth more than most courses. But you get them FREE when you join today.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                title: "365 Days of Content Ideas",
+                icon: "target",
+                value: "$997",
+                description: "Never run out of content again! A full year of proven, viral-ready post ideas, hooks, and concepts. Just pick one and create - guaranteed engagement every single day."
+              },
+              {
+                title: "Viral Reel Templates",
+                icon: "video",
+                value: "$797",
+                description: "Copy-paste templates for the 25 highest-performing Reel formats. These templates have generated over 50M views combined - just plug in your content and watch it explode."
+              },
+              {
+                title: "Caption Swipe File",
+                icon: "fileText",
+                value: "$497",
+                description: "500+ high-converting captions that drive engagement, followers, and sales. Categorized by niche and goal - just copy, customize, and post for instant results."
+              },
+              {
+                title: "Influencer Outreach Scripts",
+                icon: "handshake",
+                value: "$397",
+                description: "The exact DM templates that got me collaborations with 7-figure creators. These scripts have a 67% response rate and have led to millions in combined reach."
+              },
+              {
+                title: "Monthly Algorithm Updates",
+                icon: "barChart3",
+                value: "$1,997/year",
+                description: "Stay ahead of every Instagram change forever. Monthly reports on algorithm updates, new features, and strategy adjustments - so you're always winning while others struggle."
+              },
+              {
+                title: "Private Mastermind Access",
+                icon: "users",
+                value: "$2,997",
+                description: "Join weekly live calls with me and other successful creators. Get your questions answered, strategies reviewed, and network with people actually getting results."
+              }
+            ].map((bonus, index) => (
+              <div
+                key={index}
+                ref={bonusCards.setElementRef(index)}
+                className={`bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-2xl p-6 hover:from-yellow-500/20 hover:to-orange-500/20 transition-all duration-300 hover-lift scroll-fade-up relative ${bonusCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
+              >
+                <ValueBadge
+                  value={bonus.value}
+                  className="absolute top-4 right-4 bg-yellow-500"
+                />
+                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400 flex items-center gap-2">
+                  {bonus.icon && getIcon(bonus.icon, "w-5 h-5")}
+                  {bonus.title}
+                </h3>
+                <p className="text-zinc-200 leading-relaxed">{bonus.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 90-DAY TRANSFORMATION JOURNEY Section */}
+      <section className="section-spacing bg-gradient-to-b from-black to-zinc-900 border-t border-blue-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-6 py-2 mb-6">
+              <Zap className="w-5 h-5 text-blue-400" />
+              <span className="text-blue-300 font-semibold">YOUR JOURNEY</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              From <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">10K+ Followers</span> in 90 Days
+            </h2>
+            <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
+              Follow the exact roadmap 2,000+ students used to build massive Instagram followings
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto space-y-8">
+            {[
+              {
+                phase: "Week 1-2",
+                title: "Content Foundation",
+                description: "Learn algorithm fundamentals, create your first 10 high-quality posts, and optimize your profile for maximum conversion and discoverability.",
+                outcomes: ["Master Instagram algorithm basics", "Create first 10 posts with viral potential", "Optimize profile bio, highlights, and aesthetics"]
+              },
+              {
+                phase: "Week 3-4",
+                title: "Viral Content Mastery",
+                description: "Master Reels creation, Stories engagement tactics, and psychological hooks that make people stop scrolling and start following you.",
+                outcomes: ["Create 5-10 viral-ready Reels", "Master Story features and engagement tactics", "Implement proven psychological hooks"]
+              },
+              {
+                phase: "Week 5-8",
+                title: "Growth Acceleration",
+                description: "Implement hashtag strategy, collaboration posts, and DM outreach to rapidly scale to 10K followers with authentic engagement.",
+                outcomes: ["Launch strategic hashtag campaigns", "Secure 3-5 creator collaborations", "Reach 10K followers milestone"]
+              },
+              {
+                phase: "Week 9-12",
+                title: "Monetization & Scale",
+                description: "Launch first brand deals, create digital products, and scale content systems to reach 50K-100K followers while earning income.",
+                outcomes: ["Land first brand partnerships", "Launch monetization strategies", "Scale to 50K-100K followers"]
+              }
+            ].map((phase, index) => (
+              <div key={index} className="relative">
+                {/* Connection line */}
+                {index < 3 && (
+                  <div className="absolute left-12 top-full h-8 w-0.5 bg-gradient-to-b from-blue-500 to-blue-500/0 hidden md:block" />
+                )}
+
+                <div className="flex items-start gap-6">
+                  {/* Phase number */}
+                  <div className="flex-shrink-0 w-24 h-24 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-2xl font-bold text-white border-4 border-zinc-900">
+                    {index + 1}
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-3xl font-bold text-white">{phase.title}</h3>
+                      <span className="text-blue-400 font-semibold px-4 py-2 bg-blue-500/10 rounded-full">{phase.phase}</span>
+                    </div>
+                    <p className="text-zinc-200 text-lg mb-6">{phase.description}</p>
+                    <div className="space-y-2">
+                      {phase.outcomes.map((outcome, i) => (
+                        <div key={i} className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-400" />
+                          <span className="text-zinc-300">{outcome}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-16">
+            <p className="text-xl text-zinc-200 mb-8">
+              Ready to start your transformation?
+            </p>
+            <Link
+              href="#pricing"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+            >
+              Start Your Journey Today
+              <ChevronRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT YOU'LL ACTUALLY LEARN Section */}
+      <section className="section-spacing bg-zinc-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-6 py-2 mb-6">
+              <Target className="w-5 h-5 text-blue-400" />
+              <span className="text-blue-300 font-semibold">SPECIFIC OUTCOMES</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              What You'll <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Actually Learn</span>
+            </h2>
+            <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
+              Not theory. Practical skills that grow your following from day one.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            {[
+              {
+                category: "Content Creation Skills",
+                skills: [
+                  "Create viral Reels using psychological hooks and transitions",
+                  "Design scroll-stopping carousel posts with proven templates",
+                  "Write captions that drive engagement and conversions",
+                  "Master lighting, angles, and editing for pro-quality content",
+                  "Build content batching systems for consistent posting",
+                  "Use Stories features to maximize daily engagement",
+                  "Create branded aesthetics that attract ideal followers"
+                ]
+              },
+              {
+                category: "Algorithm Mastery",
+                skills: [
+                  "Understand exactly how Instagram's algorithm ranks content",
+                  "Optimize posting times for maximum reach and engagement",
+                  "Use hashtag research tools to reach ideal audience",
+                  "Trigger algorithmic boosts with engagement tactics",
+                  "Leverage trending audio and formats for viral potential",
+                  "Master Explore page and Reels tab optimization",
+                  "Analyze insights to double down on what works"
+                ]
+              },
+              {
+                category: "Engagement Tactics",
+                skills: [
+                  "Build authentic relationships through strategic DMs",
+                  "Use polls, questions, and interactive features effectively",
+                  "Create engagement loops that turn viewers into followers",
+                  "Master collaboration strategies with other creators",
+                  "Build a loyal community that comments and shares",
+                  "Turn followers into email subscribers and customers",
+                  "Handle negative comments and maintain positive brand image"
+                ]
+              },
+              {
+                category: "Monetization Strategies",
+                skills: [
+                  "Land first brand deals even with small following",
+                  "Create and sell digital products to your audience",
+                  "Build affiliate marketing systems that earn daily",
+                  "Launch coaching or consulting services via Instagram",
+                  "Set up automated sales funnels from Instagram bio",
+                  "Negotiate rates and contracts with brands",
+                  "Scale to $5K-$50K monthly income streams"
+                ]
+              }
+            ].map((category, index) => (
+              <div key={index} className="bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300">
+                <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                  <CheckCircle className="w-8 h-8 text-blue-400" />
+                  {category.category}
+                </h3>
+                <ul className="space-y-4">
+                  {category.skills.map((skill, i) => (
+                    <li key={i} className="flex items-start gap-3 text-zinc-200">
+                      <ChevronRight className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                      <span>{skill}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* COMPARISON TABLE Section */}
+      <section className="section-spacing bg-gradient-to-b from-black to-zinc-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-6 py-2 mb-6">
+              <BarChart3 className="w-5 h-5 text-blue-400" />
+              <span className="text-blue-300 font-semibold">THE DIFFERENCE</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              Instagram Ignited System vs <span className="bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent">Trial & Error</span>
+            </h2>
+            <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
+              Why learning from proven strategies beats guessing
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl overflow-hidden">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-zinc-800/50">
+                  <th className="px-6 py-4 text-left text-zinc-400 font-semibold">Factor</th>
+                  <th className="px-6 py-4 text-left text-blue-400 font-semibold">Instagram Ignited</th>
+                  <th className="px-6 py-4 text-left text-red-400 font-semibold">Trial & Error</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-zinc-800">
+                {[
+                  {
+                    factor: "Learning Curve",
+                    ignited: "90 days to 10K+ followers with proven system",
+                    trialerror: "1-2 years of frustration and inconsistent results"
+                  },
+                  {
+                    factor: "Growth Speed",
+                    ignited: "Predictable growth from day one",
+                    trialerror: "Random spikes with no consistency"
+                  },
+                  {
+                    factor: "Content Quality",
+                    ignited: "Pro-level content from week 1 with templates",
+                    trialerror: "Years to figure out what actually works"
+                  },
+                  {
+                    factor: "Algorithm Understanding",
+                    ignited: "Master how it works and leverage it",
+                    trialerror: "Constant confusion and algorithm changes"
+                  },
+                  {
+                    factor: "Monetization Timeline",
+                    ignited: "First income within 30-60 days",
+                    trialerror: "May never figure out monetization"
+                  },
+                  {
+                    factor: "Follower Retention",
+                    ignited: "High-quality engaged followers who buy",
+                    trialerror: "Ghost followers and poor engagement"
+                  },
+                  {
+                    factor: "Burnout Risk",
+                    ignited: "Sustainable systems with batching",
+                    trialerror: "High burnout from daily grinding"
+                  },
+                  {
+                    factor: "ROI",
+                    ignited: "$399 course pays for itself in first month",
+                    trialerror: "Years of lost time and opportunity cost"
+                  }
+                ].map((row, index) => (
+                  <tr key={index} className="hover:bg-zinc-800/30 transition-colors">
+                    <td className="px-6 py-4 text-zinc-300 font-semibold">{row.factor}</td>
+                    <td className="px-6 py-4 text-green-400 flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                      <span>{row.ignited}</span>
+                    </td>
+                    <td className="px-6 py-4 text-zinc-400 flex items-start gap-2">
+                      <XCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-red-400" />
+                      <span>{row.trialerror}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-xl text-zinc-200 mb-6">
+              The choice is clear. Start building your Instagram empire today.
+            </p>
+            <Link
+              href="#pricing"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold text-lg rounded-xl transition-all duration-300 transform hover:scale-105"
+            >
+              Join Instagram Ignited Course
+              <ChevronRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Who is this for Section */}
-      <section className="section-spacing">
+      <section className="section-spacing border-t border-blue-900/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div
             ref={whoForAnimation.elementRef}
@@ -741,187 +1195,6 @@ export default function InstagramIgnitedPage() {
         </div>
       </section>
 
-      {/* What to Expect Section */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={modulesAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-zinc-300 uppercase tracking-wider mb-4">MODULAR</p>
-            <h2 className="text-3xl md:text-5xl font-bold">What to expect</h2>
-            <p className="text-lg md:text-xl text-zinc-200 mt-4">We've split the course into a number of modules.</p>
-          </div>
-
-          <div className={`max-w-4xl mx-auto mb-12 scroll-scale ${modulesAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-            <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">10+ Modules<br />100+ Lessons</h3>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                title: "<span className='text-blue-400'>Module 1:</span> Algorithm Domination Blueprint",
-                value: "$697",
-                description: "Master Instagram's algorithm from the inside out. Learn the exact content patterns, posting times, and engagement strategies that force the algorithm to show your content to thousands of new people daily."
-              },
-              {
-                title: "<span className='text-blue-400'>Module 2:</span> Viral Content Formula",
-                value: "$897",
-                description: "The proven 7-step formula behind every viral post. Discover the psychological triggers, visual patterns, and storytelling frameworks that guarantee viral content every single time."
-              },
-              {
-                title: "<span className='text-blue-400'>Module 3:</span> Reel Psychology Mastery",
-                value: "$797",
-                description: "The neuroscience behind addictive Reels. Learn the exact hooks, transitions, and psychological triggers that force people to watch, share, and follow you instantly."
-              },
-              {
-                title: "<span className='text-blue-400'>Module 4:</span> Story Engagement Systems",
-                value: "$597",
-                description: "Turn your Stories into a conversion machine. Master polls, questions, stickers, and interactive features that build deeper relationships and drive massive engagement."
-              },
-              {
-                title: "<span className='text-blue-400'>Module 5:</span> Hashtag Research Automation",
-                value: "$497",
-                description: "Never guess hashtags again. Get the exact tools and strategies to find high-converting hashtags that put your content in front of your ideal audience automatically."
-              },
-              {
-                title: "<span className='text-blue-400'>Module 6:</span> DM Automation & Outreach",
-                value: "$697",
-                description: "Scale your reach beyond your followers. Learn the art of strategic DMs, collaboration outreach, and relationship building that leads to exponential growth."
-              },
-              {
-                title: "<span className='text-blue-400'>Module 7:</span> Monetization Frameworks",
-                value: "$997",
-                description: "Turn followers into dollars with 12 different revenue streams. From affiliate marketing to digital products, discover how to monetize any size audience profitably."
-              },
-              {
-                title: "<span className='text-blue-400'>Module 8:</span> Collaboration Networks",
-                value: "$597",
-                description: "Build powerful relationships with other creators. Learn how to find, approach, and collaborate with influencers to multiply your reach and credibility instantly."
-              },
-              {
-                title: "<span className='text-blue-400'>Module 9:</span> Analytics & Optimization",
-                value: "$497",
-                description: "Data-driven growth that never stops. Master Instagram analytics, A/B testing, and optimization strategies that consistently improve your results month after month."
-              },
-              {
-                title: "<span className='text-blue-400'>Module 10:</span> Scaling to 100K+",
-                value: "$897",
-                description: "The advanced strategies that take you from 10K to 100K+ followers. Content systems, team building, and business frameworks for serious creators ready to go pro."
-              }
-            ].map((module, index) => (
-              <div
-                key={index}
-                ref={moduleCards.setElementRef(index)}
-                className={`testimonial-card hover-lift scroll-fade-up relative ${moduleCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
-              >
-                <ValueBadge 
-                  value={module.value}
-                  className="absolute top-4 right-4"
-                />
-                <h3 className="text-lg md:text-xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: module.title }}></h3>
-                <p className="text-zinc-200 leading-relaxed">{module.description}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className={`text-center mt-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Join & get a personalized page audit.</h3>
-            <p className="text-lg md:text-xl text-zinc-200 mb-8">
-              Access all recorded page audits, lessons, and our private community in the evergreen, constantly updated program.
-            </p>
-            <button onClick={handleBuyNow} className="cta-button inline-block cursor-pointer" aria-label="Join Instagram Ignited 4.0 with personalized audit and bonuses">
-              Join IImagined 4.0
-            </button>
-            <p className="text-sm text-zinc-300 mt-4">And claim all the bonuses</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Bonus Section */}
-      <section className="section-spacing bg-zinc-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={bonusAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-zinc-300 uppercase tracking-wider mb-4">BONUS</p>
-            <h2 className="text-3xl md:text-5xl font-bold">Comes with lifetime access.</h2>
-            <p className="text-lg md:text-xl text-zinc-200 mt-4">Join now and get all these bonuses included.</p>
-          </div>
-
-          <div className="mb-12 text-center">
-            <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500 rounded-3xl p-8">
-              <h3 className="text-3xl md:text-5xl font-bold mb-4 text-yellow-400 flex items-center justify-center gap-3">
-                {getIcon('flame', 'w-8 h-8')} INSANE Bonuses Worth $8,879 {getIcon('flame', 'w-8 h-8')}
-              </h3>
-              <p className="text-xl text-zinc-200">
-                These bonuses alone are worth more than most courses. But you get them FREE when you join today.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                title: "365 Days of Content Ideas",
-                icon: "target",
-                value: "$997",
-                description: "Never run out of content again! A full year of proven, viral-ready post ideas, hooks, and concepts. Just pick one and create - guaranteed engagement every single day."
-              },
-              {
-                title: "Viral Reel Templates",
-                icon: "video",
-                value: "$797",
-                description: "Copy-paste templates for the 25 highest-performing Reel formats. These templates have generated over 50M views combined - just plug in your content and watch it explode."
-              },
-              {
-                title: "Caption Swipe File",
-                icon: "fileText",
-                value: "$497",
-                description: "500+ high-converting captions that drive engagement, followers, and sales. Categorized by niche and goal - just copy, customize, and post for instant results."
-              },
-              {
-                title: "Influencer Outreach Scripts",
-                icon: "handshake",
-                value: "$397",
-                description: "The exact DM templates that got me collaborations with 7-figure creators. These scripts have a 67% response rate and have led to millions in combined reach."
-              },
-              {
-                title: "Monthly Algorithm Updates",
-                icon: "barChart3",
-                value: "$1,997/year",
-                description: "Stay ahead of every Instagram change forever. Monthly reports on algorithm updates, new features, and strategy adjustments - so you're always winning while others struggle."
-              },
-              {
-                title: "Private Mastermind Access",
-                icon: "users",
-                value: "$2,997",
-                description: "Join weekly live calls with me and other successful creators. Get your questions answered, strategies reviewed, and network with people actually getting results."
-              }
-            ].map((bonus, index) => (
-              <div
-                key={index}
-                ref={bonusCards.setElementRef(index)}
-                className={`bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-2xl p-6 hover:from-yellow-500/20 hover:to-orange-500/20 transition-all duration-300 hover-lift scroll-fade-up relative ${bonusCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
-              >
-                <ValueBadge 
-                  value={bonus.value}
-                  className="absolute top-4 right-4 bg-yellow-500"
-                />
-                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400 flex items-center gap-2">
-                  {bonus.icon && getIcon(bonus.icon, "w-5 h-5")}
-                  {bonus.title}
-                </h3>
-                <p className="text-zinc-200 leading-relaxed">{bonus.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* PRICING & SCARCITY Section */}
       <section className="section-spacing bg-gradient-to-b from-green-900/20 to-blue-900/20 border-t border-green-500/30" id="pricing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -955,7 +1228,7 @@ export default function InstagramIgnitedPage() {
           <div className={`max-w-4xl mx-auto mb-16 scroll-scale ${pricingAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
             <div className="bg-zinc-900 border border-green-500/30 rounded-3xl p-8 md:p-12">
               <h3 className="text-3xl font-bold mb-8 text-center text-green-400">Total Value Breakdown</h3>
-              
+
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-zinc-700">
                   <span className="text-lg">10 Core Modules ($97-147 each)</span>
@@ -985,7 +1258,7 @@ export default function InstagramIgnitedPage() {
                   <span className="text-lg">Private Mastermind Access</span>
                   <span className="text-xl font-bold text-green-400">$997</span>
                 </div>
-                
+
                 <div className="flex justify-between items-center py-6 bg-green-900/20 rounded-lg px-6 mt-6">
                   <span className="text-2xl font-bold">TOTAL VALUE:</span>
                   <span className="text-3xl font-black text-green-400">$3,949</span>
@@ -997,8 +1270,8 @@ export default function InstagramIgnitedPage() {
           {/* Pricing Comparison */}
           <div className={`mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
             <h3 className="text-3xl md:text-4xl font-bold mb-12 text-center">Compare Your Options</h3>
-            
-            <PricingComparison 
+
+            <PricingComparison
               options={[
                 {
                   name: "Trial & Error Method",
@@ -1006,7 +1279,7 @@ export default function InstagramIgnitedPage() {
                   price: "$10,000+",
                   features: [
                     "Years of failed launches",
-                    "Wasted time and money", 
+                    "Wasted time and money",
                     "No guidance or system",
                     "High stress and frustration",
                     "No guarantee of success"
@@ -1082,7 +1355,7 @@ export default function InstagramIgnitedPage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-6">
               <button
                 onClick={handleBuyNow}
@@ -1091,17 +1364,17 @@ export default function InstagramIgnitedPage() {
               >
 CLAIM INSTAGRAM IGNITED NOW - $399
               </button>
-              
+
               <p className="text-sm text-zinc-300 flex items-center justify-center gap-1">
                 {getIcon('checkCircle', 'w-4 h-4')} Instant Access • {getIcon('checkCircle', 'w-4 h-4')} Lifetime Updates • {getIcon('checkCircle', 'w-4 h-4')} 30-Day Money-Back Guarantee
               </p>
-              
+
               <div className="bg-zinc-900 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
                 <h4 className="text-xl font-bold text-green-400 mb-3 flex items-center gap-2">
                   {getIcon('checkCircle', 'w-5 h-5')} Zero-Risk Guarantee
                 </h4>
                 <p className="text-zinc-200">
-                  Try Instagram Ignited for 30 days. If you don't see massive improvement in your growth, 
+                  Try Instagram Ignited for 30 days. If you don't see massive improvement in your growth,
                   engagement, and content quality, I'll refund every penny. No questions asked.
                 </p>
               </div>
@@ -1187,7 +1460,7 @@ CLAIM INSTAGRAM IGNITED NOW - $399
             <div className="bg-gradient-to-r from-blue-900/30 to-green-900/30 border border-blue-500/30 rounded-3xl p-8 max-w-3xl mx-auto">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Still Have Questions?</h3>
               <p className="text-lg text-zinc-200 mb-6">
-                Join the private mastermind and ask me directly on our weekly live calls. 
+                Join the private mastermind and ask me directly on our weekly live calls.
                 You'll get personalized answers and strategies specific to your situation.
               </p>
               <button
@@ -1399,7 +1672,7 @@ CLAIM INSTAGRAM IGNITED NOW - $399
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Your Instagram Empire Starts TODAY</h2>
             <p className="text-lg md:text-xl text-gray-400 mb-8">Join 2,000+ successful creators who transformed their Instagram into a money-making machine</p>
-            
+
             <div className="bg-gradient-to-r from-blue-900/20 to-green-900/20 border border-blue-500/30 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-white mb-3">
                 Your Growth Journey Starts Here
@@ -1415,11 +1688,11 @@ CLAIM INSTAGRAM IGNITED NOW - $399
             <button onClick={handleBuyNow} className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-500/50" aria-label="Get Instagram Ignited for $399">
 TRANSFORM MY INSTAGRAM NOW - $399
             </button>
-            
+
             <p className="text-sm text-gray-400 mb-6 flex items-center justify-center gap-1">
               {getIcon('checkCircle', 'w-4 h-4')} Instant Access • {getIcon('checkCircle', 'w-4 h-4')} 30-Day Guarantee • {getIcon('checkCircle', 'w-4 h-4')} Lifetime Updates • {getIcon('checkCircle', 'w-4 h-4')} $8,879 in Bonuses
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
               <div className="bg-zinc-900 rounded-lg p-4">
                 <div className="text-2xl font-bold text-green-400">
@@ -1443,7 +1716,7 @@ TRANSFORM MY INSTAGRAM NOW - $399
           </div>
         </div>
       </section>
-      
+
       {/* Crypto Checkout Modal */}
       <CryptoCheckout
         isOpen={isCheckoutOpen}
