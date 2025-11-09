@@ -931,38 +931,38 @@ export default function AIInfluencersPage() {
                 <span className="text-pink-300 font-semibold">YOUR TRANSFORMATION</span>
               </div>
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                From <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">$10K/Month</span> in 90 Days
+                From <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">$10K/Month</span> in 30 Days
               </h2>
               <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                Follow the exact roadmap 500+ students used to build profitable AI influencer empires
+                The ruthlessly efficient playbook 1,500+ students used to monetize AI influencers FAST
               </p>
             </div>
 
             <div className="max-w-5xl mx-auto space-y-8">
               {[
                 {
-                  phase: "Week 1-2",
-                  title: "ComfyUI Foundations",
-                  description: "Master ComfyUI interface, basic workflows, and create your first AI character with consistent features and personality.",
-                  outcomes: ["Master ComfyUI workflow builder", "Create first AI character", "Build foundational automation"]
+                  phase: "Days 1-7",
+                  title: "AI Character Creation Blitz",
+                  description: "Install ComfyUI, generate 500+ images, and lock in your AI influencer's face in under 7 days. No theory—just pure character creation.",
+                  outcomes: ["Install ComfyUI + 20 models in 24 hours", "Generate 500+ character images", "Lock 99% face consistency"]
                 },
                 {
-                  phase: "Week 3-4",
-                  title: "Character Consistency",
-                  description: "LoRA training for perfect face consistency, FaceSwap techniques, and develop complete brand identity for your AI influencer.",
-                  outcomes: ["Train custom LoRA models", "Perfect character consistency", "Build complete brand identity"]
+                  phase: "Days 8-14",
+                  title: "Content Arsenal Build",
+                  description: "Create 100+ professional-grade images, build a 30-day content calendar, and launch your AI influencer with a bang. First 1K followers incoming.",
+                  outcomes: ["Create 100+ viral-ready images", "Launch Instagram account", "Hit 1K followers in 7 days"]
                 },
                 {
-                  phase: "Week 5-8",
-                  title: "Content Production",
-                  description: "Automated content creation systems. Generate Reels, Stories, carousels. Scale to 100+ posts across platforms.",
-                  outcomes: ["Automate content generation", "Create 100+ posts", "Master platform strategies"]
+                  phase: "Days 15-21",
+                  title: "Viral Growth Explosion",
+                  description: "Post 3x daily, collab with other AI creators, and trigger Explore page features. Watch your following explode to 10K+ as people discover your AI character.",
+                  outcomes: ["Post 60+ images (3x daily)", "Get featured on Explore 5+ times", "Reach 10K followers"]
                 },
                 {
-                  phase: "Week 9-12",
-                  title: "Monetization & Scale",
-                  description: "Land brand deals, launch digital products, scale to 100K followers. Build sustainable income streams.",
-                  outcomes: ["Land first brand deals", "Launch monetization", "Scale to 100K followers"]
+                  phase: "Days 22-30",
+                  title: "Monetization Ignition",
+                  description: "Close 3+ brand deals ($500-$2K each), launch digital products, and hit your first $10K month. While others are still learning ComfyUI, you're cashing checks.",
+                  outcomes: ["Land 3+ brand partnerships", "Launch products/subscriptions", "Generate $10K+ first month"]
                 }
               ].map((phase, index) => (
                 <div key={index} className="relative">
@@ -1112,10 +1112,10 @@ export default function AIInfluencersPage() {
                 <span className="text-pink-300 font-semibold">THE DIFFERENCE</span>
               </div>
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                AI Influencer vs <span className="bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">Traditional Influencer</span>
+                AI Influencer vs <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">Broke Traditional Influencer</span>
               </h2>
               <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                Why AI influencers are the future of content creation in 2025
+                Why showing your face and burning out is the dumbest way to make money online
               </p>
             </div>
 
@@ -1131,44 +1131,44 @@ export default function AIInfluencersPage() {
                 <tbody className="divide-y divide-zinc-800">
                   {[
                     {
-                      factor: "Content Creation Time",
-                      ai: "Generate 100+ posts in hours with automation",
-                      traditional: "Days/weeks for photoshoots, editing, planning"
+                      factor: "Content Creation Speed",
+                      ai: "500+ posts in 24 hours on autopilot",
+                      traditional: "10 posts per week if you grind 40 hours"
                     },
                     {
-                      factor: "Production Costs",
-                      ai: "$50-$200/month for tools and hosting",
-                      traditional: "$2K-$10K/month for equipment, crew, editing"
+                      factor: "Monthly Costs",
+                      ai: "$100/month (ComfyUI, hosting, tools)",
+                      traditional: "$5K-$15K (camera, crew, props, editing, travel)"
                     },
                     {
                       factor: "Scalability",
-                      ai: "Create unlimited characters, unlimited content",
-                      traditional: "Limited by time, energy, and physical constraints"
+                      ai: "Run 10 AI influencers at once = 10x revenue",
+                      traditional: "1 face, 1 brand, stuck at $20K/month max"
                     },
                     {
-                      factor: "Creative Control",
-                      ai: "100% control over appearance, personality, content",
-                      traditional: "Limited by reality, mood, physical changes"
+                      factor: "Privacy & Safety",
+                      ai: "100% anonymous. No stalkers, no doxxing",
+                      traditional: "Your face everywhere. Stalkers. Burnout. No life."
                     },
                     {
-                      factor: "Privacy",
-                      ai: "Complete anonymity, no personal exposure",
-                      traditional: "Public life, privacy invasion, personal scrutiny"
+                      factor: "Appearance Control",
+                      ai: "Perfect body, perfect face, ANY style imaginable",
+                      traditional: "Stuck with genetics. Age 30+ = irrelevant"
                     },
                     {
-                      factor: "Consistency",
-                      ai: "Perfect consistency 24/7, never sick or tired",
-                      traditional: "Inconsistent, affected by mood, health, life events"
+                      factor: "Work-Life Balance",
+                      ai: "2 hours/day generating content. Rest = chill",
+                      traditional: "60+ hours/week. No vacations. Constant stress."
                     },
                     {
-                      factor: "Revenue Potential",
-                      ai: "$10K-$50K+ monthly per character",
-                      traditional: "$3K-$20K monthly with burnout risk"
+                      factor: "Income Ceiling",
+                      ai: "$50K-$200K/month running multiple AI characters",
+                      traditional: "$10K-$30K/month if you're lucky + dying inside"
                     },
                     {
-                      factor: "Longevity",
-                      ai: "Infinite lifespan, never ages or changes",
-                      traditional: "Limited by age, trends, platform changes"
+                      factor: "Business Longevity",
+                      ai: "Forever. AI never ages, quits, or has drama",
+                      traditional: "5-7 years max before burnout or irrelevance"
                     }
                   ].map((row, index) => (
                     <tr key={index} className="hover:bg-zinc-800/30 transition-colors">

@@ -828,38 +828,38 @@ export default function InstagramIgnitedPage() {
               <span className="text-blue-300 font-semibold">YOUR JOURNEY</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              From <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">10K+ Followers</span> in 90 Days
+              From <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">10K+ Followers</span> in 30 Days
             </h2>
             <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-              Follow the exact roadmap 2,000+ students used to build massive Instagram followings
+              The aggressive growth roadmap 2,000+ students used to explode their Instagram following
             </p>
           </div>
 
           <div className="max-w-5xl mx-auto space-y-8">
             {[
               {
-                phase: "Week 1-2",
-                title: "Content Foundation",
-                description: "Learn algorithm fundamentals, create your first 10 high-quality posts, and optimize your profile for maximum conversion and discoverability.",
-                outcomes: ["Master Instagram algorithm basics", "Create first 10 posts with viral potential", "Optimize profile bio, highlights, and aesthetics"]
+                phase: "Days 1-7",
+                title: "Viral Foundation Blitz",
+                description: "Install the algorithm blueprint, create 20 high-impact posts, and optimize your profile to convert EVERY visitor into a follower. No fluff—just pure execution.",
+                outcomes: ["Crack the Instagram algorithm in 48 hours", "Create 20 viral-ready posts in 7 days", "Build a profile that converts 40%+ visitors"]
               },
               {
-                phase: "Week 3-4",
-                title: "Viral Content Mastery",
-                description: "Master Reels creation, Stories engagement tactics, and psychological hooks that make people stop scrolling and start following you.",
-                outcomes: ["Create 5-10 viral-ready Reels", "Master Story features and engagement tactics", "Implement proven psychological hooks"]
+                phase: "Days 8-14",
+                title: "Content Explosion",
+                description: "Deploy 10 viral Reels, master Story hooks that drive DMs, and implement psychological triggers that force people to follow. Your first 1K followers start here.",
+                outcomes: ["Post 10 Reels with 10K+ views each", "Get 500+ Story views daily", "Hit your first 1K followers"]
               },
               {
-                phase: "Week 5-8",
-                title: "Growth Acceleration",
-                description: "Implement hashtag strategy, collaboration posts, and DM outreach to rapidly scale to 10K followers with authentic engagement.",
-                outcomes: ["Launch strategic hashtag campaigns", "Secure 3-5 creator collaborations", "Reach 10K followers milestone"]
+                phase: "Days 15-21",
+                title: "Algorithmic Takeover",
+                description: "Trigger the Explore page, collab with 5+ creators, and run aggressive DM campaigns. Watch your growth 5x overnight as the algorithm pushes your content to millions.",
+                outcomes: ["Get featured on Explore page 3+ times", "Land 5 high-impact collaborations", "Reach 5K followers through viral loops"]
               },
               {
-                phase: "Week 9-12",
-                title: "Monetization & Scale",
-                description: "Launch first brand deals, create digital products, and scale content systems to reach 50K-100K followers while earning income.",
-                outcomes: ["Land first brand partnerships", "Launch monetization strategies", "Scale to 50K-100K followers"]
+                phase: "Days 22-30",
+                title: "Monetization Ignition",
+                description: "Land your first brand deal, launch your product/service, and scale to 10K+ followers. Start earning $1K-$5K while others are still figuring out hashtags.",
+                outcomes: ["Close your first $500-$2K brand deal", "Launch monetization systems", "Cross 10K followers + make first $$$"]
               }
             ].map((phase, index) => (
               <div key={index} className="relative">
@@ -1005,10 +1005,10 @@ export default function InstagramIgnitedPage() {
               <span className="text-blue-300 font-semibold">THE DIFFERENCE</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Instagram Ignited System vs <span className="bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent">Trial & Error</span>
+              Instagram Ignited System vs <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">Winging It Like An Idiot</span>
             </h2>
             <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-              Why learning from proven strategies beats guessing
+              Stop wasting years. Get the cheat codes or stay broke.
             </p>
           </div>
 
@@ -1024,44 +1024,44 @@ export default function InstagramIgnitedPage() {
               <tbody className="divide-y divide-zinc-800">
                 {[
                   {
-                    factor: "Learning Curve",
-                    ignited: "90 days to 10K+ followers with proven system",
-                    trialerror: "1-2 years of frustration and inconsistent results"
+                    factor: "Time to 10K Followers",
+                    ignited: "30 days using proven viral systems",
+                    trialerror: "2-3 years posting random shit hoping it works"
                   },
                   {
-                    factor: "Growth Speed",
-                    ignited: "Predictable growth from day one",
-                    trialerror: "Random spikes with no consistency"
+                    factor: "First Dollar Earned",
+                    ignited: "Within 30 days (brand deals + products)",
+                    trialerror: "Never. Most people quit before making $1"
+                  },
+                  {
+                    factor: "Algorithm Mastery",
+                    ignited: "Know exactly how to trigger viral loops",
+                    trialerror: "Posting at random times with zero strategy"
                   },
                   {
                     factor: "Content Quality",
-                    ignited: "Pro-level content from week 1 with templates",
-                    trialerror: "Years to figure out what actually works"
+                    ignited: "Pro-level Reels from Day 1 with templates",
+                    trialerror: "Cringe content that makes people unfollow"
                   },
                   {
-                    factor: "Algorithm Understanding",
-                    ignited: "Master how it works and leverage it",
-                    trialerror: "Constant confusion and algorithm changes"
+                    factor: "Follower Quality",
+                    ignited: "Engaged fans who buy your products",
+                    trialerror: "Dead accounts and bots that do nothing"
                   },
                   {
-                    factor: "Monetization Timeline",
-                    ignited: "First income within 30-60 days",
-                    trialerror: "May never figure out monetization"
+                    factor: "Burnout Factor",
+                    ignited: "2 hours/day with batching systems",
+                    trialerror: "8 hours/day for 10 likes and depression"
                   },
                   {
-                    factor: "Follower Retention",
-                    ignited: "High-quality engaged followers who buy",
-                    trialerror: "Ghost followers and poor engagement"
-                  },
-                  {
-                    factor: "Burnout Risk",
-                    ignited: "Sustainable systems with batching",
-                    trialerror: "High burnout from daily grinding"
+                    factor: "Income Potential",
+                    ignited: "$5K-$50K/month selling products/services",
+                    trialerror: "$0/month while watching others win"
                   },
                   {
                     factor: "ROI",
-                    ignited: "$399 course pays for itself in first month",
-                    trialerror: "Years of lost time and opportunity cost"
+                    ignited: "$399 investment = $10K+ return in 90 days",
+                    trialerror: "Wasted years = $100K+ in lost opportunity"
                   }
                 ].map((row, index) => (
                   <tr key={index} className="hover:bg-zinc-800/30 transition-colors">

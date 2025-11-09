@@ -855,38 +855,38 @@ export default function DigitalProductsPage() {
                 <span className="text-green-300 font-semibold">YOUR JOURNEY</span>
               </div>
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                From <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Idea</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">$10K/Month</span> in 90 Days
+                From <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">$10K/Month</span> in 30 Days
               </h2>
               <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                Follow the exact roadmap 1,200+ students used to build profitable digital product businesses
+                The ruthlessly efficient playbook students used to hit $10K/month FAST
               </p>
             </div>
 
             <div className="max-w-5xl mx-auto space-y-8">
               {[
                 {
-                  phase: "Week 1-2",
-                  title: "Product Validation",
-                  description: "Market research, audience analysis, first product idea. Validate your concept before building anything.",
-                  outcomes: ["Identify your profitable niche", "Research audience pain points", "Validate product idea with potential buyers"]
+                  phase: "Days 1-7",
+                  title: "Product Validation Blitz",
+                  description: "Find 3 winning product ideas in 48 hours. Rapid-fire market research and validation sprints that identify profit opportunities instantly.",
+                  outcomes: ["Identify 3 profitable niches in 48 hours", "Spy on competitors and steal what works", "Get 10+ buyers to pre-commit before you build anything"]
                 },
                 {
-                  phase: "Week 3-4",
-                  title: "Product Creation",
-                  description: "Build your first digital product: course, template, guide, or ebook. Create sales page and funnel.",
-                  outcomes: ["Create your first digital product", "Design compelling sales page", "Set up payment processing"]
+                  phase: "Days 8-14",
+                  title: "Creation Sprint - Ship in 7 Days",
+                  description: "Build and launch your first product in ONE WEEK. No perfectionism, no delays - just ruthless execution and speed to market.",
+                  outcomes: ["Create your MVP product in 4 days flat", "Build high-converting sales page in 48 hours", "Go live and start collecting money Day 7"]
                 },
                 {
-                  phase: "Week 5-8",
-                  title: "Launch & Sales",
-                  description: "Email sequence setup, launch campaign execution. Generate your first $1K-$5K in revenue.",
-                  outcomes: ["Build email marketing sequence", "Launch to your audience", "Make first $1K-$5K in sales"]
+                  phase: "Days 15-21",
+                  title: "Traffic Explosion - 10K+ Visitors",
+                  description: "Drive massive traffic with viral marketing tactics. Zero-cost strategies that flood your funnel with hungry buyers immediately.",
+                  outcomes: ["Drive 10,000+ targeted visitors using free tactics", "Build email list of 500+ hot prospects", "Generate $2K-$5K in first sales week"]
                 },
                 {
-                  phase: "Week 9-12",
-                  title: "Scale to $10K/Month",
-                  description: "Add upsells, automation, evergreen funnel. Scale to consistent $10K monthly revenue.",
-                  outcomes: ["Implement upsells & cross-sells", "Automate sales funnel", "Hit $10K monthly recurring"]
+                  phase: "Days 22-30",
+                  title: "$10K Month - Revenue Multiplication",
+                  description: "Scale to $10K through multiple revenue streams. Add upsells, automate everything, and maximize every dollar from your traffic.",
+                  outcomes: ["Add high-ticket upsells ($297-$997 offers)", "Automate entire funnel with N8N workflows", "Hit $10K/month with proven scaling systems"]
                 }
               ].map((phase, index) => (
                 <div key={index} className="relative">
@@ -1036,10 +1036,10 @@ export default function DigitalProductsPage() {
                 <span className="text-green-300 font-semibold">THE DIFFERENCE</span>
               </div>
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Digital Products Empire vs <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">One-Off Products</span>
+                Digital Products Empire vs <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">Broke One-Off Sellers</span>
               </h2>
               <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                Why building a complete product ecosystem is the path to real wealth
+                Why building an empire beats one-off hustling every single time
               </p>
             </div>
 
@@ -1049,50 +1049,50 @@ export default function DigitalProductsPage() {
                   <tr className="bg-zinc-800/50">
                     <th className="px-6 py-4 text-left text-zinc-400 font-semibold">Factor</th>
                     <th className="px-6 py-4 text-left text-green-400 font-semibold">Digital Products Empire</th>
-                    <th className="px-6 py-4 text-left text-red-400 font-semibold">One-Off Products</th>
+                    <th className="px-6 py-4 text-left text-red-400 font-semibold">Broke One-Off Sellers</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-zinc-800">
                   {[
                     {
                       factor: "Income Model",
-                      empire: "Multiple revenue streams + recurring income",
-                      oneoff: "Single product sales only"
+                      empire: "7-figure ecosystem with recurring subscriptions + upsells",
+                      oneoff: "Broke hustler selling one product over and over"
                     },
                     {
-                      factor: "Scalability",
-                      empire: "Product suite with upsells, $10K-$100K+ monthly",
-                      oneoff: "Limited to one product, $1K-$5K monthly"
+                      factor: "Monthly Revenue",
+                      empire: "$10K-$100K+ from multiple income streams on autopilot",
+                      oneoff: "$500-$2K from grinding manual sales (if lucky)"
                     },
                     {
                       factor: "Time Freedom",
-                      empire: "Fully automated funnels sell 24/7",
-                      oneoff: "Manual launches and constant promotion"
+                      empire: "Fully automated - make money while sleeping/traveling",
+                      oneoff: "Slave to manual launches and constant promotion"
                     },
                     {
-                      factor: "Revenue Ceiling",
-                      empire: "Unlimited - multiple products, tiers, upsells",
-                      oneoff: "Capped by single product pricing"
+                      factor: "Growth Potential",
+                      empire: "Infinite scaling with product suite + backend offers",
+                      oneoff: "Dead-end capped by single product price point"
                     },
                     {
-                      factor: "Customer LTV",
-                      empire: "$500-$5,000+ per customer with product suite",
-                      oneoff: "$50-$300 average, one-time purchase"
+                      factor: "Customer Value",
+                      empire: "$1,000-$10,000+ lifetime value per customer",
+                      oneoff: "$50-$200 one-time purchase, then gone forever"
                     },
                     {
-                      factor: "Automation Potential",
-                      empire: "Evergreen funnels with N8N automation",
-                      oneoff: "Requires manual effort for each sale"
+                      factor: "Leverage",
+                      empire: "N8N automation + evergreen funnels = zero manual work",
+                      oneoff: "Trading hours for dollars, manual effort for every sale"
                     },
                     {
-                      factor: "Business Valuation",
-                      empire: "3-5x annual revenue (sellable asset)",
-                      oneoff: "0.5-1x revenue (hard to sell)"
+                      factor: "Business Equity",
+                      empire: "Real asset worth 3-5x revenue ($500K-$5M+ valuation)",
+                      oneoff: "Worthless side hustle - nobody wants to buy it"
                     },
                     {
                       factor: "Exit Strategy",
-                      empire: "Sell for $500K-$5M+ as established brand",
-                      oneoff: "Limited exit options, low value"
+                      empire: "Sell empire for life-changing $1M-$10M payday",
+                      oneoff: "No exit - stuck hustling until you burn out"
                     }
                   ].map((row, index) => (
                     <tr key={index} className="hover:bg-zinc-800/30 transition-colors">

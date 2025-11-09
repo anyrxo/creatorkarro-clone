@@ -795,38 +795,38 @@ export default function AIAutomationsPage() {
               <span className="text-orange-300 font-semibold">YOUR JOURNEY</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              From <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">$10K/Month</span> in 90 Days
+              From <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">$10K/Month</span> in 30 Days
             </h2>
             <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-              Follow the exact roadmap 800+ students used to build profitable AI automation agencies
+              The aggressive playbook 800+ students used to land clients and hit $10K/month FAST
             </p>
           </div>
 
           <div className="max-w-5xl mx-auto space-y-8">
             {[
               {
-                phase: "Week 1-2",
-                title: "Foundation & Setup",
-                description: "Master n8n, Zapier, Make fundamentals. Build your first 5 automation workflows. Set up your automation agency foundation.",
-                outcomes: ["Complete 5 automation workflows", "Set up agency infrastructure", "Build portfolio pieces"]
+                phase: "Days 1-7",
+                title: "Automation Mastery Sprint",
+                description: "Learn n8n, Zapier, Make in 48 hours. Build 10 sellable workflows in 7 days. Build your portfolio faster than competitors can say 'Zapier'.",
+                outcomes: ["Master 3 automation tools in 48 hours", "Build 10 sellable workflows in 7 days", "Create killer portfolio that closes deals"]
               },
               {
-                phase: "Week 3-4",
-                title: "AI Integration Mastery",
-                description: "Integrate ChatGPT, Claude, Midjourney into workflows. Build AI chatbots, content generators, and intelligent automation systems.",
-                outcomes: ["Build 3 AI-powered automations", "Master AI API integrations", "Create client demo workflows"]
+                phase: "Days 8-14",
+                title: "AI Integration Blitz",
+                description: "Integrate ChatGPT, Claude, Midjourney into workflows. Build 5 AI chatbots and automation systems that command $3K-$10K project fees.",
+                outcomes: ["Build 5 AI-powered automations", "Master AI API integrations", "Create demos that make clients say 'TAKE MY MONEY'"]
               },
               {
-                phase: "Week 5-8",
-                title: "Client Acquisition",
-                description: "Launch cold email campaigns, LinkedIn outreach. Book 10+ discovery calls. Close your first 2-3 clients at $2K-$5K monthly retainers.",
-                outcomes: ["Send 500+ cold emails", "Book 10+ discovery calls", "Land first 2-3 paying clients"]
+                phase: "Days 15-21",
+                title: "Client Acquisition Blitz",
+                description: "Send 500 cold emails. Run LinkedIn outreach. Book 15+ discovery calls. Close your first 3-5 clients at $2K-$5K monthly retainers using proven scripts.",
+                outcomes: ["Send 500+ cold emails with 80% open rates", "Book 15+ discovery calls", "Close 3-5 clients at $2K-$5K/month each"]
               },
               {
-                phase: "Week 9-12",
-                title: "Scale to $10K/Month",
-                description: "Deliver exceptional results. Get referrals and testimonials. Scale to 5-10 clients. Build systems and potentially hire VAs.",
-                outcomes: ["Grow to 5-10 clients", "Generate $10K-$30K monthly", "Build scalable systems"]
+                phase: "Days 22-30",
+                title: "Scale to $10K-$30K/Month",
+                description: "Deliver killer results. Get referrals and testimonials. Scale to 5-10 clients. Hire VAs and delegate. Build a real automation agency, not a freelance gig.",
+                outcomes: ["Scale to 5-10 clients", "Generate $10K-$30K monthly recurring revenue", "Hire and delegate to build scalable agency"]
               }
             ].map((phase, index) => (
               <div key={index} className="relative">
@@ -972,10 +972,10 @@ export default function AIAutomationsPage() {
               <span className="text-orange-300 font-semibold">THE DIFFERENCE</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              AI Automation Agency vs <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">Traditional Dev Work</span>
+              AI Automation Agency vs <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">Broke Traditional Dev/Freelancer</span>
             </h2>
             <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-              Why automation consulting is the smarter path in 2025
+              Why coding for $50/hour is for suckers. Build an agency instead.
             </p>
           </div>
 
@@ -991,44 +991,44 @@ export default function AIAutomationsPage() {
               <tbody className="divide-y divide-zinc-800">
                 {[
                   {
-                    factor: "Learning Curve",
-                    automation: "2-4 weeks to build sellable workflows",
-                    traditional: "6-12 months to learn coding/frameworks"
+                    factor: "Time to First Dollar",
+                    automation: "Land first client in 30 days, $2K-$5K/month",
+                    traditional: "6-12 months building portfolio for $500 gigs"
                   },
                   {
                     factor: "Revenue Model",
-                    automation: "$2K-$10K monthly retainers per client",
-                    traditional: "One-time project fees ($3K-$15K)"
+                    automation: "$2K-$10K MONTHLY RETAINERS (recurring $$)",
+                    traditional: "One-time $3K projects, then beg for more work"
+                  },
+                  {
+                    factor: "Learning Curve",
+                    automation: "7 days to master n8n and start selling",
+                    traditional: "12+ months learning code, frameworks, debugging hell"
                   },
                   {
                     factor: "Income Stability",
-                    automation: "Predictable recurring revenue",
-                    traditional: "Feast or famine project cycles"
+                    automation: "Predictable $10K-$50K/month from retainers",
+                    traditional: "Feast or famine. $10K one month, $0 the next."
                   },
                   {
-                    factor: "Client Demand",
-                    automation: "$200B market growing 40% yearly",
-                    traditional: "Saturated, competitive market"
-                  },
-                  {
-                    factor: "Delivery Time",
-                    automation: "1-2 weeks to deliver automation",
-                    traditional: "2-6 months for custom development"
+                    factor: "Delivery Speed",
+                    automation: "1-2 weeks to deliver. Fast = more clients.",
+                    traditional: "2-6 months custom dev. Slow = broke."
                   },
                   {
                     factor: "Profit Margins",
-                    automation: "70-90% profit margins",
-                    traditional: "40-60% profit margins"
+                    automation: "80-90% margins (low costs, high prices)",
+                    traditional: "30-50% margins competing with offshore devs"
                   },
                   {
                     factor: "Scalability",
-                    automation: "Easy to hire VAs, scale to team",
-                    traditional: "Hard to find/afford skilled developers"
+                    automation: "Hire VAs for $15/hr, scale to $100K/month agency",
+                    traditional: "Can't afford devs. Stuck trading time for money."
                   },
                   {
-                    factor: "Client Results",
-                    automation: "Save clients 40+ hours/week immediately",
-                    traditional: "Unclear ROI, harder to prove value"
+                    factor: "Client ROI",
+                    automation: "Save 40+ hours/week = easy $5K-$10K retainers",
+                    traditional: "Unclear value = hard to justify high prices"
                   }
                 ].map((row, index) => (
                   <tr key={index} className="hover:bg-zinc-800/30 transition-colors">
