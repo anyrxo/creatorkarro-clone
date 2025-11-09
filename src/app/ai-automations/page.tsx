@@ -1172,88 +1172,76 @@ export default function AIAutomationsPage() {
             <SectionHeader
               badge="LIMITED TIME OFFER"
               title="Build Your Automation Agency Today"
-              subtitle="Complete course + bonuses + lifetime updates"
+              subtitle="Choose the plan that fits your goals"
               isVisible={pricingAnimation.isVisible}
             />
           </div>
 
-          <div className={`mt-16 max-w-4xl mx-auto transition-all duration-700 ${pricingAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="relative">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-red-600/20 rounded-3xl blur-xl" />
+          {/* 3-Tier Pricing Comparison */}
+          <div className={`mt-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
+            <h3 className="text-3xl md:text-4xl font-bold mb-12 text-center">Compare Your Options</h3>
 
-              <div className="relative bg-zinc-900/80 backdrop-blur-sm border-2 border-orange-500/50 rounded-3xl p-10 lg:p-12">
-                <div className="text-center mb-10">
-                  <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 rounded-full px-6 py-2 mb-6">
-                    <Flame className="w-5 h-5 text-orange-400" />
-                    <span className="text-orange-300 font-semibold">Launch Special - 50% Off</span>
-                  </div>
-                  <h3 className="text-4xl lg:text-5xl font-black text-white mb-4">AI Automations Complete</h3>
-                  <p className="text-xl text-zinc-300">12 Modules • 150+ Lessons • $3,479 in Bonuses</p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-8 mb-10">
-                  <div>
-                    <h4 className="text-lg font-bold text-white mb-4">What's Included:</h4>
-                    <ul className="space-y-3">
-                      {[
-                        '12 comprehensive modules (25+ hours)',
-                        'n8n, Zapier, Make mastery',
-                        '50+ workflow templates',
-                        'Client acquisition system',
-                        'AI integration blueprints',
-                        'Pricing & proposal templates'
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start gap-2 text-zinc-200">
-                          <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-white mb-4">Exclusive Bonuses:</h4>
-                    <ul className="space-y-3">
-                      {[
-                        'Agency legal pack ($397 value)',
-                        'Private community access (lifetime)',
-                        'Weekly Q&A calls',
-                        'Workflow swipe files',
-                        'Lifetime updates',
-                        '30-day money-back guarantee'
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start gap-2 text-zinc-200">
-                          <CheckCircle className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="text-center border-t border-zinc-700 pt-10">
-                  <div className="mb-6">
-                    <div className="flex items-center justify-center gap-4 mb-2">
-                      <span className="text-3xl text-zinc-400 line-through">$797</span>
-                      <span className="text-6xl font-black bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">$399</span>
-                    </div>
-                    <p className="text-zinc-300">One-time payment • Lifetime access</p>
-                  </div>
-
-                  <button
-                    onClick={handleBuyNow}
-                    className="w-full md:w-auto px-12 py-5 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 text-white text-xl font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/50"
-                  >
-                    Start Building Your Agency Now →
-                  </button>
-
-                  <p className="mt-6 text-sm text-zinc-400">
-                    <CheckCircle className="w-4 h-4 inline text-green-400 mr-1" />
-                    30-day money-back guarantee • Secure checkout
-                  </p>
-                </div>
-              </div>
-            </div>
+            <PricingComparison
+              options={[
+                {
+                  name: "DIY / Freelance Hustle",
+                  description: "LOST OPPORTUNITY",
+                  price: "$50K+",
+                  features: [
+                    "6-12 months learning alone",
+                    "Trial & error wasting time",
+                    "No client acquisition system",
+                    "Competing with offshore freelancers",
+                    "$50K+ in lost income while figuring it out"
+                  ],
+                  badge: "⚠ NOT RECOMMENDED",
+                  badgeColor: "bg-red-500",
+                  disabled: true
+                },
+                {
+                  name: "AI Automations Course",
+                  description: "ONE-TIME PAYMENT",
+                  price: "$399",
+                  originalPrice: "$797",
+                  features: [
+                    "Complete 12-module agency system",
+                    "n8n, Zapier, Make mastery (25+ hours)",
+                    "50+ workflow templates to sell immediately",
+                    "Client acquisition blueprints ($2K-$10K retainers)",
+                    "AI integration training (ChatGPT, Claude)",
+                    "Agency legal pack + contracts",
+                    "Private community + weekly Q&A calls",
+                    "Lifetime access + updates"
+                  ],
+                  badge: "LIFETIME ACCESS",
+                  badgeColor: "bg-green-500",
+                  buttonText: "Get AI Automations Course",
+                  buttonLink: "https://whop.com/iimagined/ai-automations-reimagined/"
+                },
+                {
+                  name: "All Access Reimagined",
+                  description: "PER MONTH",
+                  price: "$99",
+                  originalPrice: "$199",
+                  features: [
+                    "Complete $88K/month business system",
+                    "AI Automations: $10K-$50K/month agency",
+                    "Instagram: 0 to 500K followers method",
+                    "AI Influencers: $20K/month passive income",
+                    "Digital Products: $50K launch blueprints",
+                    "Live coaching calls + private community",
+                    "New courses added monthly (5+ planned)",
+                    "Cancel anytime, keep what you downloaded"
+                  ],
+                  badge: "POPULAR - ALL 4 COURSES",
+                  badgeColor: "bg-purple-500",
+                  popular: true,
+                  buttonText: "Join All Access Reimagined",
+                  buttonLink: "https://whop.com/iimagined/all-access-reimagined/"
+                }
+              ]}
+              isVisible={pricingAnimation.isVisible}
+            />
           </div>
 
         </div>
