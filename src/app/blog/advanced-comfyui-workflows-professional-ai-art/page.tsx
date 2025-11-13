@@ -5,15 +5,15 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Advanced ComfyUI Workflows for Professional AI Art: Complete 2025 Guide | AI Influencers",
+  title: "Advanced ComfyUI Workflows for Professional AI Art: Complete 2026 Guide | AI Influencers",
   description: "Master advanced ComfyUI workflows used by professionals. SDXL refiner setups, LoRA stacking, ControlNet mastery, multi-model workflows, and optimization techniques. 127K+ students trust our training.",
-  keywords: ["comfyui workflows", "advanced comfyui", "professional ai art", "comfyui techniques", "sdxl refiner workflow", "controlnet comfyui", "lora stacking", "img2img advanced", "ai image generation", "comfyui tutorial 2025"],
+  keywords: ["comfyui workflows", "advanced comfyui", "professional ai art", "comfyui techniques", "sdxl refiner workflow", "controlnet comfyui", "lora stacking", "img2img advanced", "ai image generation", "comfyui tutorial 2026"],
   authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
   openGraph: {
-    title: "Advanced ComfyUI Workflows: Professional AI Art Guide 2025",
+    title: "Advanced ComfyUI Workflows: Professional AI Art Guide 2026",
     description: "Master SDXL, LoRA stacking, ControlNet & advanced workflows. Complete guide from ComfyUI experts.",
     url: "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art",
     siteName: "IImagined.ai",
@@ -35,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Advanced ComfyUI Workflows Guide 2025",
+    title: "Advanced ComfyUI Workflows Guide 2026",
     description: "Master professional AI art workflows with ComfyUI",
     images: [{
       url: "https://iimagined.ai/images/blog/advanced-comfyui-workflows-professional-ai-art-og.jpg",
@@ -72,14 +72,14 @@ export default function AdvancedComfyUIWorkflows() {
 
   const relatedPosts = [
     {
-      title: "ComfyUI Tutorial: Master AI Image Generation in 2025",
-      slug: "comfyui-tutorial-master-ai-image-generation-2025",
+      title: "ComfyUI Tutorial: Master AI Image Generation in 2026",
+      slug: "comfyui-tutorial-master-ai-image-generation-2026",
       description: "Complete beginner to advanced ComfyUI tutorial with real examples",
       readTime: 25
     },
     {
-      title: "Best AI Content Creation Tools for Virtual Influencers 2025",
-      slug: "best-ai-content-creation-tools-virtual-influencers-2025",
+      title: "Best AI Content Creation Tools for Virtual Influencers 2026",
+      slug: "best-ai-content-creation-tools-virtual-influencers-2026",
       description: "Top AI tools for creating stunning virtual influencer content",
       readTime: 18
     },
@@ -102,7 +102,7 @@ export default function AdvancedComfyUIWorkflows() {
         category="AI Influencers"
         title="Advanced ComfyUI Workflows for Professional AI Art"
         description="Master the advanced ComfyUI workflows used by professional AI artists. SDXL refiner setups, LoRA stacking strategies, ControlNet mastery, and production optimization techniques."
-        date="Jan 20, 2025"
+        date="Jan 20, 2026"
         readTime={28}
         author={{
           name: "Anyro",

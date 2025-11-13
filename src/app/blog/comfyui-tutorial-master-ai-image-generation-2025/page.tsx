@@ -4,28 +4,28 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "ComfyUI Tutorial: Master AI Image Generation in 2025",
+  title: "ComfyUI Tutorial: Master AI Image Generation in 2026",
   description: "comfyui tutorial, comfyui guide, ai image generation - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
   keywords: ["comfyui tutorial","comfyui guide","ai image generation","comfyui workflows","comfyui mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "AI & Automation",
   openGraph: {
-    title: "ComfyUI Tutorial: Master AI Image Generation in 2025",
+    title: "ComfyUI Tutorial: Master AI Image Generation in 2026",
     description: "comfyui tutorial, comfyui guide, ai image generation - Expert guide from the creators of ComfyUI Mastery",
-    url: "https://iimagined.ai/blog/comfyui-tutorial-master-ai-image-generation-2025",
+    url: "https://iimagined.ai/blog/comfyui-tutorial-master-ai-image-generation-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T08:10:02.989Z",
-    modifiedTime: "2025-08-05T08:10:02.989Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-12T10:00:00.000Z",
+    modifiedTime: "2026-02-12T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["comfyui tutorial","comfyui guide","ai image generation","comfyui workflows"],
     images: [{
       url: "https://iimagined.ai/images/blog/comfyui-tutorial-master-ai-image-generation-2025-og.jpg",
       width: 1200,
       height: 630,
-      alt: "ComfyUI Tutorial: Master AI Image Generation in 2025",
+      alt: "ComfyUI Tutorial: Master AI Image Generation in 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +34,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "ComfyUI Tutorial: Master AI Image Generation in 2025",
+    title: "ComfyUI Tutorial: Master AI Image Generation in 2026",
     description: "comfyui tutorial, comfyui guide, ai image generation - Expert guide from the creators of ComfyUI Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/comfyui-tutorial-master-ai-image-generation-2025-og.jpg",
-      alt: "ComfyUI Tutorial: Master AI Image Generation in 2025"
+      alt: "ComfyUI Tutorial: Master AI Image Generation in 2026"
     }]
   },
   robots: {
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/comfyui-tutorial-master-ai-image-generation-2025",
+    canonical: "https://iimagined.ai/blog/comfyui-tutorial-master-ai-image-generation-2026",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -70,23 +70,23 @@ export default function ComfyuiTutorialMasterAiImageGenerationIn2025() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/comfyui-tutorial-master-ai-image-generation-2025#article",
-        "headline": "ComfyUI Tutorial: Master AI Image Generation in 2025",
+        "headline": "ComfyUI Tutorial: Master AI Image Generation in 2026",
         "description": "comfyui tutorial, comfyui guide, ai image generation - Expert guide from the creators of ComfyUI Mastery",
-        "datePublished": "2025-08-05T08:10:02.989Z",
-        "dateModified": "2025-08-05T08:10:02.989Z",
+        "datePublished": "2026-02-12T10:00:00.000Z",
+        "dateModified": "2026-02-12T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/comfyui-tutorial-master-ai-image-generation-2025"
+          "@id": "https://iimagined.ai/blog/comfyui-tutorial-master-ai-image-generation-2026"
         },
         "image": {
           "@type": "ImageObject",
@@ -101,7 +101,7 @@ export default function ComfyuiTutorialMasterAiImageGenerationIn2025() {
           "name": "ComfyUI Mastery",
           "description": "Professional AI Image Generation & Workflows",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }

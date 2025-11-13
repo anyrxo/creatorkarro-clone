@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "ComfyUI Comparison: Best AI Art Tools Reviewed 2025",
-  description: "ComfyUI Comparison - comprehensive strategies, tools, and techniques for 2025",
-  keywords: ["comfyui", "comparison", "comfyui 2025", "comfyui comparison", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "ComfyUI Comparison: Best AI Art Tools Reviewed 2026",
+  description: "ComfyUI Comparison - comprehensive strategies, tools, and techniques for 2026",
+  keywords: ["comfyui", "comparison", "comfyui 2026", "comfyui comparison", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "ComfyUI Comparison: Best AI Art Tools Reviewed 2025",
-    description: "ComfyUI Comparison - comprehensive strategies, tools, and techniques for 2025",
+    title: "ComfyUI Comparison: Best AI Art Tools Reviewed 2026",
+    description: "ComfyUI Comparison - comprehensive strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/comfyui-comparison",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.995Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["comfyui", "comparison", "comfyui 2025", "comfyui comparison", "automation", "AI tools", "business growth", "productivity"],
+    authors: ["Anyro"],
+    tags: ["comfyui", "comparison", "comfyui 2026", "comfyui comparison", "automation", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/comfyui-comparison-og.jpg",
       width: 1200,
@@ -34,8 +34,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "ComfyUI Comparison: Best AI Art Tools Reviewed 2025",
-    description: "ComfyUI Comparison - comprehensive strategies, tools, and techniques for 2025",
+    title: "ComfyUI Comparison: Best AI Art Tools Reviewed 2026",
+    description: "ComfyUI Comparison - comprehensive strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/comfyui-comparison-og.jpg",
       alt: "ComfyUI Comparison"
