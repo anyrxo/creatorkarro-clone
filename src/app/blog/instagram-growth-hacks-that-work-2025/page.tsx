@@ -4,23 +4,23 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Growth Hacks That Actually Work in 2025",
-  description: "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
-  keywords: ["instagram growth hacks","instagram marketing","grow instagram followers","instagram strategy","instagram ignited","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "15 Instagram Growth Hacks That Actually Work in 2026 | Proven Strategies from 127K+ Students",
+  description: "Master Instagram growth with 15 proven hacks used by successful creators to gain 10K-500K followers. Expert strategies covering carousels, hashtags, Reels, engagement tactics, and monetization. Tested by 127K+ students.",
+  keywords: ["instagram growth hacks 2026","instagram marketing","grow instagram followers","instagram strategy","instagram growth tips","instagram engagement","instagram reels strategy","instagram carousel tips","instagram algorithm 2026","get more followers"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
-  publisher: "IImagined.ai", 
-  category: "Instagram & Social Media",
+  publisher: "IImagined.ai",
+  category: "Instagram Growth",
   openGraph: {
-    title: "Instagram Growth Hacks That Actually Work in 2025",
-    description: "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited",
+    title: "15 Instagram Growth Hacks That Actually Work in 2026",
+    description: "Proven Instagram growth strategies from 127K+ students. Master carousels, Reels, hashtags & engagement tactics to gain 10K-500K followers.",
     url: "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2025",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.566Z",
-    modifiedTime: "2025-08-05T07:10:42.566Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["instagram growth hacks","instagram marketing","grow instagram followers","instagram strategy"],
+    publishedTime: "2026-01-28T10:00:00.000Z",
+    modifiedTime: new Date().toISOString(),
+    authors: ["Anyro"],
+    tags: ["Instagram Growth","Instagram Marketing","Social Media Strategy","Instagram Hacks","Follower Growth"],
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-growth-hacks-that-work-2025-og.jpg",
       width: 1200,
@@ -34,8 +34,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Growth Hacks That Actually Work in 2025",
-    description: "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited",
+    title: "15 Instagram Growth Hacks That Actually Work in 2026",
+    description: "Proven strategies from 127K+ students to gain 10K-500K followers with carousels, Reels & engagement tactics",
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-growth-hacks-that-work-2025-og.jpg",
       alt: "Instagram Growth Hacks That Actually Work in 2025"
@@ -70,15 +70,15 @@ export default function InstagramGrowthHacksThatActuallyWorkIn2025() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2025#article",
-        "headline": "Instagram Growth Hacks That Actually Work in 2025",
-        "description": "instagram growth hacks, instagram marketing, grow instagram followers - Expert guide from the creators of Instagram Ignited",
-        "datePublished": "2025-08-05T07:10:42.566Z",
-        "dateModified": "2025-08-05T07:10:42.566Z",
+        "headline": "15 Instagram Growth Hacks That Actually Work in 2026",
+        "description": "Master Instagram growth with 15 proven hacks used by successful creators to gain 10K-500K followers. Expert strategies covering carousels, hashtags, Reels, and engagement tactics.",
+        "datePublished": "2026-01-28T10:00:00.000Z",
+        "dateModified": new Date().toISOString(),
         "author": {
-          "@type": "Organization",
-          "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
-          "url": "https://iimagined.ai"
+          "@type": "Person",
+          "name": "Anyro",
+          "url": "https://iimagined.ai",
+          "jobTitle": "Instagram Growth Strategist & Creator Educator"
         },
         "publisher": {
           "@type": "Organization", 
