@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
+  title: "Viral Carousel Guide: Create Engaging Instagram Posts 2026",
   description: "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
-  keywords: ["viral", "carousel", "guide", "viral 2025", "viral carousel guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  keywords: ["viral", "carousel", "guide", "viral 2026", "viral carousel guide", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
+    title: "Viral Carousel Guide: Create Engaging Instagram Posts 2026",
     description: "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
     url: "https://iimagined.ai/blog/viral-carousel-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.956Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["viral", "carousel", "guide", "viral 2025", "viral carousel guide", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["viral", "carousel", "guide", "viral 2026", "viral carousel guide", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/viral-carousel-guide-og.jpg",
       width: 1200,
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Viral Carousel Guide: Create Engaging Instagram Posts 2025",
+    title: "Viral Carousel Guide: Create Engaging Instagram Posts 2026",
     description: "Complete viral carousel guide - step-by-step instructions, best practices, and expert tips",
     images: [{
       url: "https://iimagined.ai/images/viral-carousel-guide-og.jpg",

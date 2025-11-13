@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Social Media Calendar: Complete Guide & Expert Strategies",
-  description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2025",
-  keywords: ["social", "media", "calendar", "social 2025", "social media calendar", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2026",
+  keywords: ["social", "media", "calendar", "social 2026", "social media calendar", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Social Media Calendar: Complete Guide & Expert Strategies",
-    description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2025",
+    description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2026",
     url: "https://iimagined.ai/blog/social-media-calendar",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.959Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["social", "media", "calendar", "social 2025", "social media calendar", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["social", "media", "calendar", "social 2026", "social media calendar", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/social-media-calendar-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Social Media Calendar: Complete Guide & Expert Strategies",
-    description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2025",
+    description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2026",
     images: [{
       url: "https://iimagined.ai/images/social-media-calendar-og.jpg",
       alt: "Social Media Calendar"
