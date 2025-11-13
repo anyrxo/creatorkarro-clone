@@ -4,23 +4,23 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
-  description: "automation tools, n8n vs zapier, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
-  keywords: ["automation tools","n8n vs zapier","workflow automation","best automation software","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "Best Automation Tools 2026: N8N vs Zapier vs Make.com - Complete Comparison | 127K+ Students",
+  description: "Comprehensive comparison of N8N, Zapier, and Make.com for 2026. Expert analysis of pricing, features, integrations, AI capabilities, and use cases. Tested by 127K+ automation students. Find the perfect tool for your workflow automation needs.",
+  keywords: ["automation tools 2026","n8n vs zapier","n8n vs make","workflow automation","best automation software","zapier alternative","make.com review","automation platform comparison","no-code automation","ai automation tools"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
-  publisher: "IImagined.ai", 
-  category: "Technology",
+  publisher: "IImagined.ai",
+  category: "AI Automation",
   openGraph: {
-    title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
-    description: "automation tools, n8n vs zapier, workflow automation - Expert guide from the creators of N8N AI Automations",
+    title: "Best Automation Tools 2026: N8N vs Zapier vs Make.com - Complete Comparison",
+    description: "Expert comparison of N8N, Zapier & Make.com. Pricing, features, AI capabilities & use cases tested by 127K+ students.",
     url: "https://iimagined.ai/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.597Z",
-    modifiedTime: "2025-08-05T07:10:42.597Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["automation tools","n8n vs zapier","workflow automation","best automation software"],
+    publishedTime: "2026-01-30T10:00:00.000Z",
+    modifiedTime: new Date().toISOString(),
+    authors: ["Anyro"],
+    tags: ["Automation Tools","N8N","Zapier","Make.com","Workflow Automation","AI Automation"],
     images: [{
       url: "https://iimagined.ai/images/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make-og.jpg",
       width: 1200,
@@ -34,8 +34,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
-    description: "automation tools, n8n vs zapier, workflow automation - Expert guide from the creators of N8N AI Automations",
+    title: "Best Automation Tools 2026: N8N vs Zapier vs Make.com",
+    description: "Expert comparison: N8N, Zapier & Make.com pricing, features & AI capabilities tested by 127K+ students",
     images: [{
       url: "https://iimagined.ai/images/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make-og.jpg",
       alt: "Best Automation Tools 2025: N8N vs Zapier vs Make.com"
@@ -70,14 +70,13 @@ export default function BestAutomationTools2025N8nVsZapierVsMakecom() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make#article",
-        "headline": "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
-        "description": "automation tools, n8n vs zapier, workflow automation - Expert guide from the creators of N8N AI Automations",
-        "datePublished": "2025-08-05T07:10:42.597Z",
-        "dateModified": "2025-08-05T07:10:42.597Z",
+        "headline": "Best Automation Tools 2026: N8N vs Zapier vs Make.com - Complete Comparison",
+        "description": "Comprehensive comparison of N8N, Zapier, and Make.com for 2026. Expert analysis of pricing, features, integrations, AI capabilities, and use cases tested by 127K+ students.",
+        "datePublished": "2026-01-30T10:00:00.000Z",
+        "dateModified": new Date().toISOString(),
         "author": {
-          "@type": "Organization",
-          "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "@type": "Person",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
