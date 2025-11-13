@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "N8N AI Integration 2025: OpenAI GPT & ChatGPT Complete Workflows - $12K/mo Savings",
+  title: "N8N AI Integration 2026: OpenAI GPT & ChatGPT Complete Workflows - $12K/mo Savings",
   description: "Master AI automation with N8N, OpenAI GPT & ChatGPT. Content generation, customer support automation, data analysis workflows. Case study: Agency saving $12K/month on writing costs.",
   keywords: [
     "n8n openai integration", "n8n chatgpt automation", "gpt workflow automation",
@@ -13,19 +13,19 @@ export const metadata = {
     "ai content creation n8n", "gpt email automation", "n8n ai workflows",
     "openai n8n tutorial", "chatgpt business automation", "ai workflow builder"
   ],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "N8N AI Integration 2025: OpenAI GPT & ChatGPT Complete Workflows",
+    title: "N8N AI Integration 2026: OpenAI GPT & ChatGPT Complete Workflows",
     description: "Complete AI automation with N8N and OpenAI - content generation, customer support, data analysis. Save $12K/month on writing costs.",
     url: "https://iimagined.ai/blog/n8n-ai-integration-openai-gpt-chatgpt-complete-workflows",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-16T10:00:00.000Z",
     modifiedTime: new Date().toISOString(),
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["n8n", "ai automation", "openai", "chatgpt", "gpt workflows", "ai content generation"],
     images: [{
       url: "https://iimagined.ai/images/n8n-ai-integration-og.jpg",

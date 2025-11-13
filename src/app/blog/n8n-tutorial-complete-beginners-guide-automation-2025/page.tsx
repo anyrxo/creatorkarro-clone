@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: "N8N Tutorial 2026: Complete Beginner's Guide to Workflow Automation",
     description: "Master N8N from scratch. Installation, nodes, AI integrations & real workflows tested by 127K+ students.",
-    url: "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2025",
+    url: "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-01T10:00:00.000Z",
@@ -25,7 +25,7 @@ export const metadata = {
       url: "https://iimagined.ai/images/blog/n8n-tutorial-complete-beginners-guide-automation-2025-og.jpg",
       width: 1200,
       height: 630,
-      alt: "N8N Tutorial: Complete Beginner's Guide to Automation 2025",
+      alt: "N8N Tutorial: Complete Beginner's Guide to Automation 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -38,7 +38,7 @@ export const metadata = {
     description: "Master N8N from scratch: Installation, nodes, AI integrations tested by 127K+ students",
     images: [{
       url: "https://iimagined.ai/images/blog/n8n-tutorial-complete-beginners-guide-automation-2025-og.jpg",
-      alt: "N8N Tutorial: Complete Beginner's Guide to Automation 2025"
+      alt: "N8N Tutorial: Complete Beginner's Guide to Automation 2026"
     }]
   },
   robots: {
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2025",
+    canonical: "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2026",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -70,7 +70,7 @@ export default function N8nTutorialCompleteBeginnersGuideToAutomation2025() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2025#article",
-        "headline": "N8N Tutorial: Complete Beginner's Guide to Automation 2025",
+        "headline": "N8N Tutorial: Complete Beginner's Guide to Automation 2026",
         "description": "Master N8N from scratch: Installation, nodes, AI integrations tested by 127K+ students",
         "datePublished": "2026-02-01T10:00:00.000Z",
         "dateModified": "2026-02-01T10:00:00.000Z",
@@ -86,7 +86,7 @@ export default function N8nTutorialCompleteBeginnersGuideToAutomation2025() {
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2025"
+          "@id": "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2026"
         },
         "image": {
           "@type": "ImageObject",

@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "N8N for Beginners 2025: Complete Course Guide to Business Automation - 40+ Hours Saved Weekly",
+  title: "N8N for Beginners 2026: Complete Course Guide to Business Automation - 40+ Hours Saved Weekly",
   description: "Master N8N automation with our complete beginner's guide. Learn workflow automation, save 40+ hours/week. Step-by-step tutorials, 25+ real workflows & course recommendations.",
   keywords: [
     "n8n for beginners", "n8n course", "n8n tutorial", "n8n automation guide",
@@ -14,20 +14,20 @@ export const metadata = {
     "n8n workflow examples", "automation training", "n8n certification",
     "n8n nodes", "n8n webhooks", "n8n javascript", "n8n integrations"
   ],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "N8N for Beginners 2025: Complete Course Guide",
+    title: "N8N for Beginners 2026: Complete Course Guide",
     description: "Complete n8n beginners guide - step-by-step instructions, 25+ workflows, best practices, and expert tips",
     url: "https://iimagined.ai/blog/n8n-beginners-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: new Date().toISOString(),
-    authors: ["IImagined.ai Team"],
-    tags: ["n8n", "beginners", "guide", "n8n 2025", "n8n beginners guide", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["n8n", "beginners", "guide", "n8n 2026", "n8n beginners guide", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/n8n-beginners-guide-og.jpg",
       width: 1200,
@@ -41,7 +41,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "N8N Beginners Guide - Complete 2025 Course",
+    title: "N8N Beginners Guide - Complete 2026 Course",
     description: "Complete n8n beginners guide - step-by-step instructions, 25+ workflows, best practices, and expert tips",
     images: [{
       url: "https://iimagined.ai/images/n8n-beginners-guide-og.jpg",
@@ -92,7 +92,7 @@ export default function N8nBeginnersGuide() {
             </div>
 
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              N8N for Beginners 2025: Complete <span className="text-orange-400">Course Guide</span> to Business Automation
+              N8N for Beginners 2026: Complete <span className="text-orange-400">Course Guide</span> to Business Automation
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-8">
