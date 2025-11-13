@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "MACD Indicator: Complete Trading Strategy Guide 2025",
+  title: "MACD Indicator: Complete Trading Strategy Guide 2026",
   description: "Master MACD indicator trading with this complete guide. Learn MACD crossover strategies, divergence trading, and histogram analysis for profitable trades.",
   keywords: ["macd indicator","macd strategy","macd crossover","macd divergence","moving average convergence divergence"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Trading & Finance",
   openGraph: {
-    title: "MACD Indicator: Complete Trading Strategy Guide 2025",
+    title: "MACD Indicator: Complete Trading Strategy Guide 2026",
     description: "Master MACD indicator trading with this complete guide. Learn MACD crossover strategies, divergence trading, and histogram analysis for profitable trades.",
     url: "https://iimagined.ai/blog/macd-indicator-trading-strategy",
     siteName: "IImagined.ai",
@@ -24,7 +24,7 @@ export const metadata = {
       url: "https://iimagined.ai/images/macd-indicator-trading-strategy-og.jpg",
       width: 1200,
       height: 630,
-      alt: "MACD Indicator: Complete Trading Strategy Guide 2025",
+      alt: "MACD Indicator: Complete Trading Strategy Guide 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -33,11 +33,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "MACD Indicator: Complete Trading Strategy Guide 2025",
+    title: "MACD Indicator: Complete Trading Strategy Guide 2026",
     description: "Master MACD indicator trading with this complete guide. Learn MACD crossover strategies, divergence trading, and histogram analysis for profitable trades.",
     images: [{
       url: "https://iimagined.ai/images/macd-indicator-trading-strategy-og.jpg",
-      alt: "MACD Indicator: Complete Trading Strategy Guide 2025"
+      alt: "MACD Indicator: Complete Trading Strategy Guide 2026"
     }]
   },
   robots: {

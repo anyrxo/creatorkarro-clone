@@ -4,22 +4,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Order Flow Trading Strategy: Complete Guide 2025 | Volume Profile & Footprint Charts",
+  title: "Order Flow Trading Strategy: Complete Guide 2026 | Volume Profile & Footprint Charts",
   description: "Master order flow trading with Volume Profile, Delta, and Footprint charts. Learn 3 proven setups with entry/exit rules, compare Sierra Chart vs ATAS vs Bookmap, and see $50K funded account case study.",
   keywords: ["order flow trading", "volume profile", "footprint charts", "delta trading", "order flow setups", "Sierra Chart", "ATAS", "Bookmap", "institutional trading", "smart money", "futures order flow"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Futures Trading",
   openGraph: {
-    title: "Order Flow Trading Strategy: Complete Guide 2025",
+    title: "Order Flow Trading Strategy: Complete Guide 2026",
     description: "Master order flow trading with Volume Profile, Delta, and Footprint charts. Learn 3 proven setups and compare the best order flow tools.",
     url: "https://iimagined.ai/blog/order-flow-trading-strategy-complete-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-21T09:00:00.000Z",
     modifiedTime: "2025-01-21T09:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["order flow", "volume profile", "futures trading", "institutional trading", "trading software"],
     images: [{
       url: "https://iimagined.ai/images/order-flow-trading-og.jpg",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Order Flow Trading Strategy: Complete Guide 2025",
+    title: "Order Flow Trading Strategy: Complete Guide 2026",
     description: "Master order flow trading with Volume Profile, Delta, and Footprint charts. Learn proven setups and compare order flow tools.",
     images: [{
       url: "https://iimagined.ai/images/order-flow-trading-og.jpg",

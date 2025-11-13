@@ -4,22 +4,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "5 Proven ES Futures Scalping Strategies 2025 | Complete Entry/Exit Rules",
+  title: "5 Proven ES Futures Scalping Strategies 2026 | Complete Entry/Exit Rules",
   description: "Master 5 complete ES scalping strategies with entry rules, stop loss, profit targets, and backtesting results. Opening Range Breakout (68% win rate), VWAP Bounce (72%), Market Profile, Volume Spike, and Fibonacci scalps.",
   keywords: ["ES scalping", "E-mini S&P scalping", "futures scalping strategies", "opening range breakout", "VWAP scalping", "market profile trading", "ES day trading", "scalping entry rules", "futures strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Futures Trading",
   openGraph: {
-    title: "5 Proven ES Futures Scalping Strategies 2025 | Complete Entry/Exit Rules",
+    title: "5 Proven ES Futures Scalping Strategies 2026 | Complete Entry/Exit Rules",
     description: "Master ES scalping with 5 proven strategies: Opening Range Breakout, VWAP Bounce, Market Profile, Volume Spike, and Fibonacci scalps.",
     url: "https://iimagined.ai/blog/scalping-strategies-es-futures-5-proven-methods",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-23T09:00:00.000Z",
     modifiedTime: "2025-01-23T09:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["ES futures", "scalping", "day trading", "futures strategies", "trading strategies"],
     images: [{
       url: "https://iimagined.ai/images/es-scalping-strategies-og.jpg",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "5 Proven ES Futures Scalping Strategies 2025",
+    title: "5 Proven ES Futures Scalping Strategies 2026",
     description: "Master ES scalping with complete entry/exit rules and backtesting results for 5 proven strategies.",
     images: [{
       url: "https://iimagined.ai/images/es-scalping-strategies-og.jpg",

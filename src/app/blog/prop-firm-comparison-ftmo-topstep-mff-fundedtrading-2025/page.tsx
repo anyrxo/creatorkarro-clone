@@ -4,28 +4,28 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Prop Firm Comparison 2025: FTMO vs Topstep vs MFF vs FundedTrading+ | Complete Review",
+  title: "Prop Firm Comparison 2026: FTMO vs Topstep vs MFF vs FundedTrading+ | Complete Review",
   description: "Compare top 4 prop firms across 12 dimensions: evaluation fees ($155-$600), profit splits (50%-90%), rules, payout speed, and best fit. See which firm matches your trading style with real case studies.",
-  keywords: ["prop firm comparison", "FTMO vs Topstep", "MyFundedFutures", "FundedTrading Plus", "prop trading", "funded account", "evaluation fees", "profit split", "trading rules", "best prop firm 2025"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  keywords: ["prop firm comparison", "FTMO vs Topstep", "MyFundedFutures", "FundedTrading Plus", "prop trading", "funded account", "evaluation fees", "profit split", "trading rules", "best prop firm 2026"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Futures Trading",
   openGraph: {
-    title: "Prop Firm Comparison 2025: FTMO vs Topstep vs MFF vs FundedTrading+",
+    title: "Prop Firm Comparison 2026: FTMO vs Topstep vs MFF vs FundedTrading+",
     description: "Complete comparison of top 4 prop firms: fees, profit splits, rules, and best fit for your trading style.",
-    url: "https://iimagined.ai/blog/prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2025",
+    url: "https://iimagined.ai/blog/prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-22T09:00:00.000Z",
     modifiedTime: "2025-01-22T09:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["prop trading", "FTMO", "Topstep", "funded account", "trading comparison"],
     images: [{
       url: "https://iimagined.ai/images/prop-firm-comparison-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Prop Firm Comparison 2025",
+      alt: "Prop Firm Comparison 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +34,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Prop Firm Comparison 2025: FTMO vs Topstep vs MFF vs FundedTrading+",
+    title: "Prop Firm Comparison 2026: FTMO vs Topstep vs MFF vs FundedTrading+",
     description: "Complete comparison of top 4 prop firms with fees, rules, and best fit analysis.",
     images: [{
       url: "https://iimagined.ai/images/prop-firm-comparison-og.jpg",
-      alt: "Prop Firm Comparison 2025"
+      alt: "Prop Firm Comparison 2026"
     }]
   },
   robots: {
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2025"
+    canonical: "https://iimagined.ai/blog/prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2026"
   }
 }
 
@@ -62,7 +62,7 @@ export default function PropFirmComparison() {
 const schema = generateBlogPostSchema({
   title: metadata.title,
   description: metadata.description,
-  slug: "prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2025",
+  slug: "prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2026",
   publishedTime: metadata.openGraph.publishedTime,
   modifiedTime: metadata.openGraph.modifiedTime,
   category: metadata.category || "Futures Trading",
