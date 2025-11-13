@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Dart AI Free Agentic Project Manager",
-  description: "Dart AI Free Agentic Project Manager comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["dart", "free", "agentic", "project", "manager", "dart 2025", "dart free agentic project manager", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Dart AI Free Agentic Project Manager comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["dart", "free", "agentic", "project", "manager", "dart 2026", "dart free agentic project manager", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Dart AI Free Agentic Project Manager",
-    description: "Dart AI Free Agentic Project Manager comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "Dart AI Free Agentic Project Manager comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/dart-ai-free-agentic-project-manager",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.991Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["dart", "free", "agentic", "project", "manager", "dart 2025", "dart free agentic project manager", "automation"],
+    authors: ["Anyro"],
+    tags: ["dart", "free", "agentic", "project", "manager", "dart 2026", "dart free agentic project manager", "automation"],
     images: [{
       url: "https://iimagined.ai/images/dart-ai-free-agentic-project-manager-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Dart AI Free Agentic Project Manager",
-    description: "Dart AI Free Agentic Project Manager comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "Dart AI Free Agentic Project Manager comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/dart-ai-free-agentic-project-manager-og.jpg",
       alt: "Dart AI Free Agentic Project Manager"

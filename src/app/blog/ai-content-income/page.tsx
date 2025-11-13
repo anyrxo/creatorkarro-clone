@@ -94,7 +94,7 @@ export default function AIContentIncome() {
   const relatedPosts = [
     {
       title: "How to Create Digital Products That Sell in 2026",
-      slug: "how-to-create-digital-products-that-sell-2025",
+      slug: "how-to-create-digital-products-that-sell-2026",
       description: "Step-by-step guide to creating and selling profitable digital products from idea validation to $100K in revenue.",
       readTime: 22
     },
@@ -106,7 +106,7 @@ export default function AIContentIncome() {
     },
     {
       title: "Most Profitable Digital Product Niches 2026",
-      slug: "most-profitable-digital-product-niches-2025",
+      slug: "most-profitable-digital-product-niches-2026",
       description: "Data-driven analysis of the highest-earning digital product niches and how to position yourself in them.",
       readTime: 20
     }
@@ -381,7 +381,7 @@ export default function AIContentIncome() {
               number: 4,
               title: "Multiple Income Streams = Stability",
               description: "No single source exceeds 40% of income. If one stream dries up, the business remains profitable.",
-              insight: "When this creator lost a $1,200/month retainer client in Q4 2025, they only saw a 20% revenue drop because of diversification.",
+              insight: "When this creator lost a $1,200/month retainer client in Q4 2026, they only saw a 20% revenue drop because of diversification.",
               color: "orange"
             },
             {

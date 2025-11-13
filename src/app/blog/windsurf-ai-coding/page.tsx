@@ -7,7 +7,7 @@ export const metadata = {
   title: "Windsurf AI: Revolutionary Coding Assistant",
   description: "Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools",
   keywords: ["windsurf ai", "ai coding tools", "programming assistant", "development productivity", "coding ai", "code generation", "automated refactoring", "intelligent suggestions"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
@@ -19,7 +19,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:08:37.197Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["windsurf ai", "ai coding tools", "programming assistant", "development productivity", "coding ai", "code generation", "automated refactoring", "intelligent suggestions"],
     images: [{
       url: "https://iimagined.ai/images/windsurf-ai-coding-og.jpg",
@@ -80,9 +80,9 @@ export default function WindsurfAiCoding() {
         "datePublished": "2025-01-28T10:00:00.000Z",
         "dateModified": "2025-08-03T06:08:37.198Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai",
           "logo": {
             "@type": "ImageObject",
@@ -92,7 +92,7 @@ export default function WindsurfAiCoding() {
           }
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -149,7 +149,7 @@ export default function WindsurfAiCoding() {
           "query-input": "required name=search_term_string"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         }
       }

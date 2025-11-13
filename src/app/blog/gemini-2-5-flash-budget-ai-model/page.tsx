@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Gemini 2 5 Flash Budget AI Model",
-  description: "Gemini 2 5 Flash Budget AI Model comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["gemini", "flash", "budget", "model", "gemini 2025", "gemini flash budget model", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Gemini 2 5 Flash Budget AI Model comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["gemini", "flash", "budget", "model", "gemini 2026", "gemini flash budget model", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Gemini 2 5 Flash Budget AI Model",
-    description: "Gemini 2 5 Flash Budget AI Model comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "Gemini 2 5 Flash Budget AI Model comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/gemini-2-5-flash-budget-ai-model",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.982Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["gemini", "flash", "budget", "model", "gemini 2025", "gemini flash budget model", "automation", "AI tools"],
+    authors: ["Anyro"],
+    tags: ["gemini", "flash", "budget", "model", "gemini 2026", "gemini flash budget model", "automation", "AI tools"],
     images: [{
       url: "https://iimagined.ai/images/gemini-2-5-flash-budget-ai-model-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Gemini 2 5 Flash Budget AI Model",
-    description: "Gemini 2 5 Flash Budget AI Model comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "Gemini 2 5 Flash Budget AI Model comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/gemini-2-5-flash-budget-ai-model-og.jpg",
       alt: "Gemini 2 5 Flash Budget AI Model"

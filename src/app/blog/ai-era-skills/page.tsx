@@ -100,7 +100,7 @@ export default function AIEraSkills() {
     },
     {
       title: "How to Create Digital Products That Sell in 2026",
-      slug: "how-to-create-digital-products-that-sell-2025",
+      slug: "how-to-create-digital-products-that-sell-2026",
       description: "Step-by-step guide to creating and selling profitable digital products from validation to $100K.",
       readTime: 22
     },

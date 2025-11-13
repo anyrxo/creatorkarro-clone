@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "AI Research Content Marketing: Complete Guide & Expert",
-  description: "AI Research Content Marketing comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["research", "content", "marketing", "research 2025", "research content marketing", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "AI Research Content Marketing comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["research", "content", "marketing", "research 2026", "research content marketing", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "AI Research Content Marketing: Complete Guide & Expert",
-    description: "AI Research Content Marketing comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "AI Research Content Marketing comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/ai-research-content-marketing",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:30.000Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["research", "content", "marketing", "research 2025", "research content marketing", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["research", "content", "marketing", "research 2026", "research content marketing", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/ai-research-content-marketing-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "AI Research Content Marketing: Complete Guide & Expert",
-    description: "AI Research Content Marketing comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "AI Research Content Marketing comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/ai-research-content-marketing-og.jpg",
       alt: "AI Research Content Marketing"

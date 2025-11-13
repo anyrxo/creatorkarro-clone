@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Workflow Automation Guide 2025",
-  description: "Complete guide to workflow automation guide - proven strategies, tools, and techniques for 2025",
-  keywords: ["workflow", "automation", "guide", "workflow 2025", "workflow automation guide", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "Workflow Automation Guide 2026",
+  description: "Complete guide to workflow automation guide - proven strategies, tools, and techniques for 2026",
+  keywords: ["workflow", "automation", "guide", "workflow 2026", "workflow automation guide", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Workflow Automation Guide 2025",
-    description: "Complete guide to workflow automation guide - proven strategies, tools, and techniques for 2025",
+    title: "Workflow Automation Guide 2026",
+    description: "Complete guide to workflow automation guide - proven strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/workflow-automation-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.953Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["workflow", "automation", "guide", "workflow 2025", "workflow automation guide", "AI tools", "business growth", "productivity"],
+    authors: ["Anyro"],
+    tags: ["workflow", "automation", "guide", "workflow 2026", "workflow automation guide", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/workflow-automation-guide-og.jpg",
       width: 1200,
@@ -34,8 +34,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Workflow Automation Guide 2025",
-    description: "Complete guide to workflow automation guide - proven strategies, tools, and techniques for 2025",
+    title: "Workflow Automation Guide 2026",
+    description: "Complete guide to workflow automation guide - proven strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/workflow-automation-guide-og.jpg",
       alt: "Workflow Automation Guide"

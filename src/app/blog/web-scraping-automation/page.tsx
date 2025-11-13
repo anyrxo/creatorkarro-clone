@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Web Scraping Automation: Complete Guide & Expert Strategies",
-  description: "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2025",
-  keywords: ["web", "scraping", "automation", "web 2025", "web scraping automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2026",
+  keywords: ["web", "scraping", "automation", "web 2026", "web scraping automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Web Scraping Automation: Complete Guide & Expert Strategies",
-    description: "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/web-scraping-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.955Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["web", "scraping", "automation", "web 2025", "web scraping automation", "AI tools", "business growth", "productivity"],
+    authors: ["Anyro"],
+    tags: ["web", "scraping", "automation", "web 2026", "web scraping automation", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/web-scraping-automation-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Web Scraping Automation: Complete Guide & Expert Strategies",
-    description: "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to web scraping automation - proven strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/web-scraping-automation-og.jpg",
       alt: "Web Scraping Automation"

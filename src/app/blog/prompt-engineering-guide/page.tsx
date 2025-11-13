@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Prompt Engineering Guide: Master AI Prompts in 2025",
+  title: "Prompt Engineering Guide: Master AI Prompts in 2026",
   description: "Complete prompt engineering guide - step-by-step instructions, best practices, and expert tips",
-  keywords: ["prompt", "engineering", "guide", "prompt 2025", "prompt engineering guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  keywords: ["prompt", "engineering", "guide", "prompt 2026", "prompt engineering guide", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Prompt Engineering Guide: Master AI Prompts in 2025",
+    title: "Prompt Engineering Guide: Master AI Prompts in 2026",
     description: "Complete prompt engineering guide - step-by-step instructions, best practices, and expert tips",
     url: "https://iimagined.ai/blog/prompt-engineering-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.967Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["prompt", "engineering", "guide", "prompt 2025", "prompt engineering guide", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["prompt", "engineering", "guide", "prompt 2026", "prompt engineering guide", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/prompt-engineering-guide-og.jpg",
       width: 1200,
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Prompt Engineering Guide: Master AI Prompts in 2025",
+    title: "Prompt Engineering Guide: Master AI Prompts in 2026",
     description: "Complete prompt engineering guide - step-by-step instructions, best practices, and expert tips",
     images: [{
       url: "https://iimagined.ai/images/prompt-engineering-guide-og.jpg",

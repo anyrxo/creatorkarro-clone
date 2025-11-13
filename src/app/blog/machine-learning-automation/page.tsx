@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Machine Learning Automation: Complete Guide & Expert",
-  description: "Complete guide to machine learning automation - proven strategies, tools, and techniques for 2025",
-  keywords: ["machine", "learning", "automation", "machine 2025", "machine learning automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Complete guide to machine learning automation - proven strategies, tools, and techniques for 2026",
+  keywords: ["machine", "learning", "automation", "machine 2026", "machine learning automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Machine Learning Automation: Complete Guide & Expert",
-    description: "Complete guide to machine learning automation - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to machine learning automation - proven strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/machine-learning-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.976Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["machine", "learning", "automation", "machine 2025", "machine learning automation", "AI tools", "business growth", "productivity"],
+    authors: ["Anyro"],
+    tags: ["machine", "learning", "automation", "machine 2026", "machine learning automation", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/machine-learning-automation-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Machine Learning Automation: Complete Guide & Expert",
-    description: "Complete guide to machine learning automation - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to machine learning automation - proven strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/machine-learning-automation-og.jpg",
       alt: "Machine Learning Automation"

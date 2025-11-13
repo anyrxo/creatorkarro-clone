@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "DeepSeek R1 Open Source AI Revolution",
-  description: "DeepSeek R1 Open Source AI Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["deepseek", "open", "source", "revolution", "deepseek 2025", "deepseek open source revolution", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "DeepSeek R1 Open Source AI Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["deepseek", "open", "source", "revolution", "deepseek 2026", "deepseek open source revolution", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "DeepSeek R1 Open Source AI Revolution",
-    description: "DeepSeek R1 Open Source AI Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "DeepSeek R1 Open Source AI Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/deepseek-r1-open-source-ai-revolution",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.989Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["deepseek", "open", "source", "revolution", "deepseek 2025", "deepseek open source revolution", "automation", "AI tools"],
+    authors: ["Anyro"],
+    tags: ["deepseek", "open", "source", "revolution", "deepseek 2026", "deepseek open source revolution", "automation", "AI tools"],
     images: [{
       url: "https://iimagined.ai/images/deepseek-r1-open-source-ai-revolution-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "DeepSeek R1 Open Source AI Revolution",
-    description: "DeepSeek R1 Open Source AI Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "DeepSeek R1 Open Source AI Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/deepseek-r1-open-source-ai-revolution-og.jpg",
       alt: "DeepSeek R1 Open Source AI Revolution"

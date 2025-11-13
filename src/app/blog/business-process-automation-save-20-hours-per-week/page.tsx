@@ -7,7 +7,7 @@ export const metadata = {
   title: "Business Process Automation: Save 20+ Hours Per Week",
   description: "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+...",
   keywords: ["business process automation","automate business","workflow automation","business efficiency","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/business-process-automation-save-20-hours-per-week",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.598Z",
-    modifiedTime: "2025-08-05T07:10:42.598Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-15T10:00:00.000Z",
+    modifiedTime: "2026-02-15T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["business process automation","automate business","workflow automation","business efficiency"],
     images: [{
       url: "https://iimagined.ai/images/blog/business-process-automation-save-20-hours-per-week-og.jpg",
@@ -72,16 +72,16 @@ export default function BusinessProcessAutomationSave20HoursPerWeek() {
         "@id": "https://iimagined.ai/blog/business-process-automation-save-20-hours-per-week#article",
         "headline": "Business Process Automation: Save 20+ Hours Per Week",
         "description": "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations",
-        "datePublished": "2025-08-05T07:10:42.598Z",
-        "dateModified": "2025-08-05T07:10:42.598Z",
+        "datePublished": "2026-02-15T10:00:00.000Z",
+        "dateModified": "2026-02-15T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function BusinessProcessAutomationSave20HoursPerWeek() {
           "name": "N8N AI Automations",
           "description": "Advanced Workflow Automation with AI Integration",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }

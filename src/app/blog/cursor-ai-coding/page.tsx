@@ -6,7 +6,7 @@ export const metadata = {
   title: "Cursor AI: The Future of Coding is Here",
   description: "Complete guide to Cursor AI - the revolutionary coding assistant that increases developer productivity by 300%",
   keywords: ["cursor ai", "ai coding assistant", "coding productivity", "developer tools", "ai programming", "code completion", "intelligent debugging", "pair programming", "software development"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
@@ -18,7 +18,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-25T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:08:37.210Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["cursor ai", "ai coding assistant", "coding productivity", "developer tools", "ai programming", "code completion", "intelligent debugging", "pair programming"],
     images: [{
       url: "https://iimagined.ai/images/cursor-ai-coding-og.jpg",
@@ -79,9 +79,9 @@ export default function CursorAiCoding() {
         "datePublished": "2025-01-25T10:00:00.000Z",
         "dateModified": "2025-08-03T06:08:37.210Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai",
           "logo": {
             "@type": "ImageObject",
@@ -91,7 +91,7 @@ export default function CursorAiCoding() {
           }
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -148,7 +148,7 @@ export default function CursorAiCoding() {
           "query-input": "required name=search_term_string"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         }
       }

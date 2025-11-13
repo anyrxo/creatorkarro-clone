@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Browser Automation Marketing: Complete Guide & Expert",
-  description: "Complete guide to browser automation marketing - proven strategies, tools, and techniques for 2025",
-  keywords: ["browser", "automation", "marketing", "browser 2025", "browser automation marketing", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Complete guide to browser automation marketing - proven strategies, tools, and techniques for 2026",
+  keywords: ["browser", "automation", "marketing", "browser 2026", "browser automation marketing", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Browser Automation Marketing: Complete Guide & Expert",
-    description: "Complete guide to browser automation marketing - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to browser automation marketing - proven strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/browser-automation-marketing",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.998Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["browser", "automation", "marketing", "browser 2025", "browser automation marketing", "AI tools", "business growth", "productivity"],
+    authors: ["Anyro"],
+    tags: ["browser", "automation", "marketing", "browser 2026", "browser automation marketing", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/browser-automation-marketing-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Browser Automation Marketing: Complete Guide & Expert",
-    description: "Complete guide to browser automation marketing - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to browser automation marketing - proven strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/browser-automation-marketing-og.jpg",
       alt: "Browser Automation Marketing"

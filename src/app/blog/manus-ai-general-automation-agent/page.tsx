@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Manus AI General Automation Agent",
-  description: "Complete guide to manus ai general automation agent - proven strategies, tools, and techniques for 2025",
-  keywords: ["manus", "general", "automation", "agent", "manus 2025", "manus general automation agent", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Complete guide to manus ai general automation agent - proven strategies, tools, and techniques for 2026",
+  keywords: ["manus", "general", "automation", "agent", "manus 2026", "manus general automation agent", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Manus AI General Automation Agent",
-    description: "Complete guide to manus ai general automation agent - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to manus ai general automation agent - proven strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/manus-ai-general-automation-agent",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.974Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["manus", "general", "automation", "agent", "manus 2025", "manus general automation agent", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["manus", "general", "automation", "agent", "manus 2026", "manus general automation agent", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/manus-ai-general-automation-agent-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Manus AI General Automation Agent",
-    description: "Complete guide to manus ai general automation agent - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to manus ai general automation agent - proven strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/manus-ai-general-automation-agent-og.jpg",
       alt: "Manus AI General Automation Agent"
