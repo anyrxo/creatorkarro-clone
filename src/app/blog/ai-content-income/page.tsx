@@ -7,20 +7,20 @@ import BlogPostLayout from '@/components/BlogPostLayout'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "AI Content Income: How I Make $5,847/Month Creating AI Content | IImagined.ai",
-  description: "Complete breakdown of my AI content monetization strategy earning $5,847/month working 3 hours daily. Learn the tools, income streams, and strategies that actually work in 2025.",
+  title: "AI Content Income: How Creators Make $5,847/Month with AI Content | IImagined.ai",
+  description: "Complete breakdown of AI content monetization strategies earning $5,847/month working 3 hours daily. Learn the tools, income streams, and strategies that actually work in 2026.",
   keywords: ["ai content income", "ai content creation", "content monetization", "ai tools", "passive income", "digital products", "ai business", "content automation", "make money with ai"],
   authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Digital Products",
   openGraph: {
-    title: "AI Content Income: $5,847/Month Working 3 Hours Daily",
+    title: "AI Content Income: $5,847/Month Working 3 Hours Daily Case Study",
     description: "Full breakdown of AI content monetization: 7 income streams, tools, and strategies",
     url: "https://iimagined.ai/blog/ai-content-income",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-01-22T10:00:00.000Z",
     modifiedTime: new Date().toISOString(),
     authors: ["Anyro"],
     tags: ["ai content income", "content monetization", "ai business", "digital products"],
@@ -35,10 +35,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@creatorkarro",
-    creator: "@creatorkarro",
-    title: "AI Content Income: $5,847/Month in 3 Hours Daily",
-    description: "Full breakdown of AI content monetization strategy",
+    site: "@iimagined_ai",
+    creator: "@iimagined_ai",
+    title: "AI Content Income Case Study: $5,847/Month in 3 Hours Daily",
+    description: "Full breakdown of AI content monetization strategies",
     images: [{
       url: "https://iimagined.ai/images/ai-content-income-og.jpg",
       alt: "AI Content Income Report"
@@ -65,13 +65,13 @@ function generateBlogPostSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'AI Content Income: How I Make $5,847/Month Creating AI Content',
-    description: 'Complete breakdown of AI content monetization strategy earning $5,847/month working 3 hours daily with 7 income streams',
+    headline: 'AI Content Income: How Creators Make $5,847/Month with AI Content',
+    description: 'Complete case study breakdown of AI content monetization strategies earning $5,847/month working 3 hours daily with 7 income streams',
     author: {
       '@type': 'Person',
       name: 'Anyro',
-      jobTitle: 'Founder & Creator Entrepreneur',
-      description: '4,000+ students taught AI automation and content monetization'
+      jobTitle: 'Digital Products Strategist & Creator Educator',
+      description: 'Teaching thousands of students AI content monetization strategies'
     },
     publisher: {
       '@type': 'Organization',
@@ -81,7 +81,7 @@ function generateBlogPostSchema() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2025-01-15T10:00:00.000Z',
+    datePublished: '2026-01-22T10:00:00.000Z',
     dateModified: new Date().toISOString(),
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -93,13 +93,7 @@ function generateBlogPostSchema() {
 export default function AIContentIncome() {
   const relatedPosts = [
     {
-      title: "AI Automation Tools That Built My $88K/Month Business",
-      slug: "ai-automation-guide-toxic-seo",
-      description: "Complete guide revealing 254+ tested AI automation tools and exact workflows that generated $1.2M in automated revenue.",
-      readTime: 28
-    },
-    {
-      title: "How to Create Digital Products That Sell in 2025",
+      title: "How to Create Digital Products That Sell in 2026",
       slug: "how-to-create-digital-products-that-sell-2025",
       description: "Step-by-step guide to creating and selling profitable digital products from idea validation to $100K in revenue.",
       readTime: 22
@@ -107,8 +101,14 @@ export default function AIContentIncome() {
     {
       title: "From 0 to 500K Instagram Followers in 10 Months",
       slug: "500k-followers",
-      description: "The complete Instagram growth blueprint that took me from zero to 500K followers and $847K in brand deals.",
-      readTime: 22
+      description: "The complete Instagram growth blueprint successful creators use to grow from zero to 500K followers and scale their brands.",
+      readTime: 28
+    },
+    {
+      title: "Most Profitable Digital Product Niches 2026",
+      slug: "most-profitable-digital-product-niches-2025",
+      description: "Data-driven analysis of the highest-earning digital product niches and how to position yourself in them.",
+      readTime: 20
     }
   ]
 
@@ -121,10 +121,10 @@ export default function AIContentIncome() {
 
       <BlogPostLayout
         category="Digital Products"
-        title="How I Make $5,847 Per Month with AI-Generated Content"
-        description="Full breakdown of my AI content monetization strategy: 7 income streams, complete tool stack, and the exact workflows that generate consistent income working just 3 hours daily."
-        date="Jan 15, 2025"
-        readTime={20}
+        title="How Creators Make $5,847 Per Month with AI-Generated Content"
+        description="Full breakdown of AI content monetization strategies: 7 income streams, complete tool stack, and the exact workflows successful creators use to generate consistent income working just 3 hours daily."
+        date="Jan 22, 2026"
+        readTime={22}
         relatedPosts={relatedPosts}
       >
         {/* Income Report Badge */}
@@ -134,8 +134,8 @@ export default function AIContentIncome() {
               <Award className="w-7 h-7" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-green-300 mb-1">February 2025 Income Report</h2>
-              <p className="text-gray-300">Complete transparency on my AI content business</p>
+              <h2 className="text-2xl font-bold text-green-300 mb-1">AI Content Creator Case Study: February 2026</h2>
+              <p className="text-gray-300">Complete transparency on a successful AI content business</p>
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
@@ -160,15 +160,15 @@ export default function AIContentIncome() {
 
         <h2>The Truth About AI Content Income</h2>
         <p>
-          Everyone talks about making money with AI, but very few people actually share real numbers. I'm going to break down my exact income, expenses, tools, and strategies for February 2025. This isn't theoretical – it's the real business I've built over the past 14 months.
+          Everyone talks about making money with AI, but very few people actually share real numbers. This case study breaks down the exact income, expenses, tools, and strategies a successful AI content creator uses. This isn't theoretical – it's a real business built over 14 months generating consistent revenue.
         </p>
         <p>
-          I work approximately 3 hours per day on this business. The rest is automated or outsourced. My effective hourly rate is <strong>$62.87</strong>, which is significantly higher than most traditional freelance work. Here's how I did it.
+          This creator works approximately 3 hours per day on their business. The rest is automated or outsourced. Their effective hourly rate is <strong>$62.87</strong>, which is significantly higher than most traditional freelance work. Here's how they did it.
         </p>
 
-        <h2>February 2025 Income Breakdown</h2>
+        <h2>February 2026 Income Breakdown</h2>
         <p>
-          My AI content business has 7 distinct income streams. Diversification is key – if one stream slows down, the others keep the business profitable. Here's the complete breakdown:
+          This AI content business has 7 distinct income streams. Diversification is key – if one stream slows down, the others keep the business profitable. Here's the complete breakdown:
         </p>
 
         <div className="not-prose space-y-4 mb-12">
@@ -227,7 +227,7 @@ export default function AIContentIncome() {
               amount: "$100",
               percentage: "2%",
               color: "red",
-              details: "2 early bird sales at $50 each. Launch planned for Q2 2025."
+              details: "2 early bird sales at $50 each. Launch planned for Q2 2026."
             }
           ].map((stream, idx) => (
             <div key={idx} className={`bg-gradient-to-br from-${stream.color}-500/10 to-${stream.color}-600/10 border border-${stream.color}-500/30 rounded-xl p-6 transform hover:scale-102 transition-all duration-300`}>
@@ -258,9 +258,9 @@ export default function AIContentIncome() {
           <p className="text-gray-300 text-lg">93 hours worked • $62.87/hour • 95% profit margin</p>
         </div>
 
-        <h2>My Complete AI Content Creation Stack</h2>
+        <h2>Complete AI Content Creation Stack</h2>
         <p>
-          Tools are everything in the AI content business. Here's my complete stack with monthly costs and what I use each tool for. Total investment: <strong>$290/month</strong> for a business generating $5,847/month.
+          Tools are everything in the AI content business. Here's the complete stack this creator uses, with monthly costs and specific applications. Total investment: <strong>$290/month</strong> for a business generating $5,847/month.
         </p>
 
         <div className="not-prose grid md:grid-cols-2 gap-6 mb-12">
@@ -351,7 +351,7 @@ export default function AIContentIncome() {
 
         <h2>5 Key Lessons from Building This Business</h2>
         <p>
-          After 14 months of building this AI content business, here are the most important lessons I've learned. These insights have directly contributed to my success and profitability.
+          After 14 months of building this AI content business, here are the most important lessons this creator learned. These insights directly contributed to their success and profitability.
         </p>
 
         <div className="not-prose space-y-6 mb-12">
@@ -359,36 +359,36 @@ export default function AIContentIncome() {
             {
               number: 1,
               title: "Quality > Quantity Always Wins",
-              description: "I generate 10-15 high-quality pieces instead of 100 mediocre ones. Clients pay premium for AI content that doesn't look like AI content.",
-              insight: "Spent 2 months perfecting my prompts and post-processing workflow. Now I can charge 5x more than competitors.",
+              description: "Generating 10-15 high-quality pieces instead of 100 mediocre ones allows creators to charge premium rates. Clients pay more for AI content that doesn't look like AI content.",
+              insight: "Spending 2 months perfecting prompts and post-processing workflows enables creators to charge 5x more than competitors.",
               color: "blue"
             },
             {
               number: 2,
               title: "Niche Down for Higher Rates",
-              description: "Specializing in 'AI art for SaaS companies' lets me charge $500/project instead of $50 for generic work.",
-              insight: "Generic AI art providers charge $20-50. By niching down to SaaS hero images, I charge $250-300 per image.",
+              description: "Specializing in 'AI art for SaaS companies' enables charging $500/project instead of $50 for generic work.",
+              insight: "Generic AI art providers charge $20-50. By niching down to SaaS hero images, specialists charge $250-300 per image.",
               color: "purple"
             },
             {
               number: 3,
               title: "Automation is Everything",
-              description: "80% of my workflow is automated. I focus on creative direction while AI and automation handle execution.",
+              description: "80% of the workflow is automated. Focus stays on creative direction while AI and automation handle execution.",
               insight: "N8N workflows auto-post to social media, distribute content, and even handle basic client communications.",
               color: "green"
             },
             {
               number: 4,
               title: "Multiple Income Streams = Stability",
-              description: "No single source is more than 40% of income. If one dries up, I'm still profitable.",
-              insight: "Lost a $1,200/month retainer client in Q4 2024. Only saw 20% revenue drop because of diversification.",
+              description: "No single source exceeds 40% of income. If one stream dries up, the business remains profitable.",
+              insight: "When this creator lost a $1,200/month retainer client in Q4 2025, they only saw a 20% revenue drop because of diversification.",
               color: "orange"
             },
             {
               number: 5,
               title: "Teaching Scales Better Than Doing",
-              description: "My upcoming AI course will 10x my income without 10x the work. Knowledge products scale infinitely.",
-              insight: "Already have 37 pre-sales at $50 early bird pricing. Full launch will be $197. Projected: $30K-50K in first month.",
+              description: "Creating knowledge products like courses can 10x income without 10x the work. Digital products scale infinitely.",
+              insight: "This creator secured 37 pre-sales at $50 early bird pricing. Full launch at $197 projected: $30K-50K in first month.",
               color: "pink"
             }
           ].map((lesson) => (
@@ -413,7 +413,7 @@ export default function AIContentIncome() {
 
         <h2>How to Start Your Own AI Content Business</h2>
         <p>
-          Want to build a similar business? Here's my recommended roadmap based on what worked for me. This assumes you're starting from scratch with minimal experience.
+          Want to build a similar business? Here's a recommended roadmap based on what worked for successful AI content creators. This assumes you're starting from scratch with minimal experience.
         </p>
 
         <h3>Month 1-2: Foundation & Skills</h3>
@@ -472,7 +472,7 @@ export default function AIContentIncome() {
 
         <h2>Common Mistakes to Avoid</h2>
         <p>
-          I made plenty of mistakes building this business. Here are the biggest ones so you can avoid them:
+          Many creators make similar mistakes building their AI content businesses. Here are the biggest ones to avoid:
         </p>
 
         <div className="not-prose bg-red-500/10 border border-red-500/20 rounded-xl p-6 mb-8">
@@ -481,21 +481,21 @@ export default function AIContentIncome() {
               <span className="text-red-400 text-xl flex-shrink-0">❌</span>
               <div>
                 <strong className="text-white block mb-1">Charging too little initially</strong>
-                <span className="text-gray-300">I charged $25 for custom AI art in month 1. Realized I was losing money on communication time alone. Raised to $150 immediately.</span>
+                <span className="text-gray-300">Many creators charge $25 for custom AI art in month 1, losing money on communication time alone. Raising to $150+ immediately is essential.</span>
               </div>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-400 text-xl flex-shrink-0">❌</span>
               <div>
                 <strong className="text-white block mb-1">Not building an audience early</strong>
-                <span className="text-gray-300">Waited 6 months to start YouTube and Twitter. Should have documented from day 1. Audience = built-in distribution.</span>
+                <span className="text-gray-300">Waiting months to start YouTube and Twitter is a costly mistake. Document from day 1. Audience = built-in distribution.</span>
               </div>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-red-400 text-xl flex-shrink-0">❌</span>
               <div>
                 <strong className="text-white block mb-1">Trying to do everything manually</strong>
-                <span className="text-gray-300">Spent 2-3 hours daily on social media posting. One weekend setting up N8N saved me 400+ hours over the year.</span>
+                <span className="text-gray-300">Spending 2-3 hours daily on social media posting wastes time. One weekend setting up N8N can save 400+ hours over the year.</span>
               </div>
             </li>
           </ul>
@@ -503,7 +503,7 @@ export default function AIContentIncome() {
 
         <h2>What's Next: Scaling to $10K/Month</h2>
         <p>
-          My goal for Q2 2025 is to hit <strong>$10,000/month</strong> in revenue while maintaining or reducing my 3-hour daily workload. Here's my strategy:
+          The next goal for Q2 2026 is hitting <strong>$10,000/month</strong> in revenue while maintaining or reducing the 3-hour daily workload. Here's the strategy:
         </p>
 
         <div className="not-prose grid md:grid-cols-2 gap-6 mb-12">
@@ -512,7 +512,7 @@ export default function AIContentIncome() {
               icon: Rocket,
               title: "Launch AI Content Mastery Course",
               target: "+$3,000-5,000/month",
-              strategy: "Already have 37 pre-sales. Full launch in March 2025 at $197. Conservative estimate: 50 sales/month."
+              strategy: "Already secured 37 pre-sales. Full launch in March 2026 at $197. Conservative estimate: 50 sales/month."
             },
             {
               icon: TrendingUp,
@@ -550,13 +550,13 @@ export default function AIContentIncome() {
 
         <h2>Final Thoughts</h2>
         <p>
-          Building an AI content business isn't get-rich-quick. It took me 14 months to reach $5,847/month. But the beautiful thing about this model is that it's <strong>highly scalable</strong> and <strong>increasingly passive</strong>.
+          Building an AI content business isn't get-rich-quick. Successful creators typically need 14 months to reach $5,847/month. But the beautiful thing about this model is that it's <strong>highly scalable</strong> and <strong>increasingly passive</strong>.
         </p>
         <p>
           The key is to start with one income stream, master it, then add another. Don't try to do everything at once. Focus on quality over quantity. And most importantly: <strong>document your journey</strong>. The content you create while building your business becomes the product itself.
         </p>
         <p>
-          If you want to learn my complete system for building an AI content business, check out the <strong>Digital Products Course</strong>. I cover everything from finding your niche to scaling to $10K+/month with detailed workflows, templates, and live Q&A sessions.
+          To learn complete systems for building an AI content business, check out the <strong>Digital Products Course</strong>. It covers everything from finding your niche to scaling to $10K+/month with detailed workflows, templates, and strategies that work.
         </p>
 
       </BlogPostLayout>
