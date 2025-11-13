@@ -100,7 +100,7 @@ export default function AIInfluencerTrends() {
     },
     {
       title: "AI Influencers Complete Guide: Virtual Influencer Creation 2026",
-      slug: "ai-influencers-complete-guide-virtual-influencer-creation-2025",
+      slug: "ai-influencers-complete-guide-virtual-influencer-creation-2026",
       description: "Complete guide to creating, launching, and monetizing AI influencers from scratch.",
       readTime: 30
     },

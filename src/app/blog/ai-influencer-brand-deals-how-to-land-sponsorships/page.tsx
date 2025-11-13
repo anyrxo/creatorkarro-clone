@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "How AI Influencers Land Brand Deals: $500-$50K Sponsorships in 2025 | IImagined",
+  title: "How AI Influencers Land Brand Deals: $500-$50K Sponsorships in 2026 | IImagined",
   description: "Complete guide to landing brand deals for AI influencers. Outreach templates, rate cards, negotiation tactics, and real case studies of $3K-$50K deals.",
   keywords: ["AI influencer brand deals", "sponsorship rates", "influencer marketing", "brand partnerships", "sponsored posts", "AI influencer income", "negotiation tactics"],
   authors: [{ name: "Anyro", url: "https://iimagined.ai" }],

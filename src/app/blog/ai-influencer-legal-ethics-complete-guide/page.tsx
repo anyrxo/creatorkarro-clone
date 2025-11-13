@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "AI Influencer Legal & Ethics Guide 2025: FTC Rules, Copyright, Platform Policies | IImagined",
+  title: "AI Influencer Legal & Ethics Guide 2026: FTC Rules, Copyright, Platform Policies | IImagined",
   description: "Complete legal and ethical guide for AI influencers. FTC disclosure requirements, copyright considerations, platform policies, and case studies of banned accounts.",
   keywords: ["AI influencer legal", "FTC disclosure", "AI content ethics", "copyright AI images", "platform policies", "AI influencer rules", "legal compliance"],
   authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "AI Influencers",
   openGraph: {
-    title: "AI Influencer Legal & Ethics: Complete Compliance Guide 2025",
+    title: "AI Influencer Legal & Ethics: Complete Compliance Guide 2026",
     description: "FTC rules, copyright law, platform policies, and ethical boundaries for AI influencers.",
     url: "https://iimagined.ai/blog/ai-influencer-legal-ethics-complete-guide",
     siteName: "IImagined.ai",
