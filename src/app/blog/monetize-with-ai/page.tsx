@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Monetize With AI: Passive Income Strategies for 2025",
-  description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["monetize", "with", "monetize 2025", "monetize with", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "Monetize With AI: Passive Income Strategies for 2026",
+  description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["monetize", "with", "monetize 2026", "monetize with", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Monetize With AI: Complete Income Generation Guide 2025",
-    description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    title: "Monetize With AI: Complete Income Generation Guide 2026",
+    description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/monetize-with-ai",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.973Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["monetize", "with", "monetize 2025", "monetize with", "automation", "AI tools", "business growth", "productivity"],
+    authors: ["Anyro"],
+    tags: ["monetize", "with", "monetize 2026", "monetize with", "automation", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/monetize-with-ai-og.jpg",
       width: 1200,
@@ -34,8 +34,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Monetize With AI: Complete Income Generation Guide 2025",
-    description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    title: "Monetize With AI: Complete Income Generation Guide 2026",
+    description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/monetize-with-ai-og.jpg",
       alt: "Monetize With AI"

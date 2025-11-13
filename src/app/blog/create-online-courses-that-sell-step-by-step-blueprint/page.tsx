@@ -7,7 +7,7 @@ export const metadata = {
   title: "Create Online Courses That Sell: Step-by-Step Blueprint",
   description: "create online courses, online course creation, course business - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+...",
   keywords: ["create online courses","online course creation","course business","sell online courses","digital products mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/create-online-courses-that-sell-step-by-step-blueprint",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T08:10:02.992Z",
-    modifiedTime: "2025-08-05T08:10:02.992Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-22T10:00:00.000Z",
+    modifiedTime: "2026-02-22T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["create online courses","online course creation","course business","sell online courses"],
     images: [{
       url: "https://iimagined.ai/images/blog/create-online-courses-that-sell-step-by-step-blueprint-og.jpg",
@@ -72,16 +72,16 @@ export default function CreateOnlineCoursesThatSellStepbystepBlueprint() {
         "@id": "https://iimagined.ai/blog/create-online-courses-that-sell-step-by-step-blueprint#article",
         "headline": "Create Online Courses That Sell: Step-by-Step Blueprint",
         "description": "create online courses, online course creation, course business - Expert guide from the creators of Digital Products Mastery",
-        "datePublished": "2025-08-05T08:10:02.992Z",
-        "dateModified": "2025-08-05T08:10:02.992Z",
+        "datePublished": "2026-02-22T10:00:00.000Z",
+        "dateModified": "2026-02-22T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function CreateOnlineCoursesThatSellStepbystepBlueprint() {
           "name": "Digital Products Mastery",
           "description": "Complete Digital Product Creation & Sales System",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }

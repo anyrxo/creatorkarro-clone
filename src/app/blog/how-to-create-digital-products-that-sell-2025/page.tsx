@@ -190,7 +190,7 @@ export default function HowToCreateDigitalProductsThatSellComplete2025Guide() {
                     Creating digital products that actually sell requires more than just producing content. It's a systematic process of market research, strategic planning, quality creation, and effective marketing. The creators who succeed follow proven frameworks that eliminate guesswork and maximize their chances of success.
                   </p>
                   <p className="text-gray-300 mb-4 leading-relaxed">
-                    In 2025, the digital products market is more competitive than ever, but also more accessible. The creators making $5,000-50,000/month aren't just creating better products—they're following strategic processes from validation to launch. This guide walks you through the exact steps used by successful creators.
+                    In 2026, the digital products market is more competitive than ever, but also more accessible. The creators making $5,000-50,000/month aren't just creating better products—they're following strategic processes from validation to launch. This guide walks you through the exact steps used by successful creators.
                   </p>
                 </section>
 

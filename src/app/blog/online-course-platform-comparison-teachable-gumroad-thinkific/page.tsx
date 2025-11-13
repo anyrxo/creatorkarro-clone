@@ -4,28 +4,28 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Online Course Platform Comparison 2025: Teachable vs Gumroad vs Thinkific vs Kajabi vs Podia vs Systeme.io",
+  title: "Online Course Platform Comparison 2026: Teachable vs Gumroad vs Thinkific vs Kajabi vs Podia vs Systeme.io",
   description: "course platform comparison, teachable vs gumroad, best course platform, online course hosting - Expert comparison from Digital Products Mastery creators with 127K+ students. See which platform generates the most revenue.",
   keywords: ["course platform comparison","teachable vs gumroad","best course platform","online course hosting","thinkific review","kajabi pricing","podia platform","systeme.io","iimagined.ai","expert guide"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Digital Products & Business",
   openGraph: {
-    title: "Online Course Platform Comparison 2025: Teachable vs Gumroad vs Thinkific",
+    title: "Online Course Platform Comparison 2026: Teachable vs Gumroad vs Thinkific",
     description: "course platform comparison, teachable vs gumroad, best course platform - Expert guide from Digital Products Mastery",
     url: "https://iimagined.ai/blog/online-course-platform-comparison-teachable-gumroad-thinkific",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-10-29T11:00:00.000Z",
     modifiedTime: "2025-10-29T11:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["course platform comparison","teachable vs gumroad","best course platform","online course hosting"],
     images: [{
       url: "https://iimagined.ai/images/blog/online-course-platform-comparison-teachable-gumroad-thinkific-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Online Course Platform Comparison 2025",
+      alt: "Online Course Platform Comparison 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +34,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Online Course Platform Comparison 2025: Teachable vs Gumroad vs Thinkific",
+    title: "Online Course Platform Comparison 2026: Teachable vs Gumroad vs Thinkific",
     description: "course platform comparison, teachable vs gumroad, best course platform - Expert guide from Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/online-course-platform-comparison-teachable-gumroad-thinkific-og.jpg",
-      alt: "Online Course Platform Comparison 2025"
+      alt: "Online Course Platform Comparison 2026"
     }]
   },
   robots: {
@@ -70,18 +70,18 @@ export default function OnlineCoursePlatformComparison() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/online-course-platform-comparison-teachable-gumroad-thinkific#article",
-        "headline": "Online Course Platform Comparison 2025: Teachable vs Gumroad vs Thinkific",
+        "headline": "Online Course Platform Comparison 2026: Teachable vs Gumroad vs Thinkific",
         "description": "course platform comparison, teachable vs gumroad, best course platform - Expert guide from Digital Products Mastery",
         "datePublished": "2025-10-29T11:00:00.000Z",
         "dateModified": "2025-10-29T11:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function OnlineCoursePlatformComparison() {
           "name": "Digital Products Mastery",
           "description": "Complete Digital Product Creation & Sales System",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -152,7 +152,7 @@ export default function OnlineCoursePlatformComparison() {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  Online Course Platform Comparison 2025: Teachable vs Gumroad vs Thinkific vs Kajabi vs Podia vs Systeme.io
+                  Online Course Platform Comparison 2026: Teachable vs Gumroad vs Thinkific vs Kajabi vs Podia vs Systeme.io
                 </h1>
 
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -1102,9 +1102,9 @@ export default function OnlineCoursePlatformComparison() {
                 <div className="mt-12">
                   <h3 className="text-2xl font-bold text-white mb-8">Related Expert Guides</h3>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/blog/how-to-create-digital-products-that-sell-2025" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
+                    <Link href="/blog/how-to-create-digital-products-that-sell-2026" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
                       <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        How to Create Digital Products That Sell: Complete 2025 Guide
+                        How to Create Digital Products That Sell: Complete 2026 Guide
                       </h4>
                       <p className="text-gray-400 text-sm">
                         Complete guide to creating profitable digital products from scratch.
