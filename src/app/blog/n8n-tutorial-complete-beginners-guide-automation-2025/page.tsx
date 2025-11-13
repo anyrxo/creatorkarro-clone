@@ -4,23 +4,23 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "N8N Tutorial: Complete Beginner's Guide to Automation 2025 | IImagined.ai",
-  description: "n8n tutorial, n8n guide, workflow automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
-  keywords: ["n8n tutorial","n8n guide","workflow automation","n8n workflows","automation tools","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "N8N Tutorial 2026: Complete Beginner's Guide to Workflow Automation | 127K+ Students",
+  description: "Master N8N automation from scratch in 2026. Complete tutorial covering installation, node configuration, AI integrations, advanced workflows, and real-world automations. Step-by-step guide tested by 127K+ students. Build powerful no-code workflows.",
+  keywords: ["n8n tutorial 2026","n8n beginner guide","workflow automation","n8n workflows","n8n installation","automation tools","n8n ai integration","no-code automation","n8n nodes","automation tutorial"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
-  publisher: "IImagined.ai", 
-  category: "AI & Automation",
+  publisher: "IImagined.ai",
+  category: "AI Automation",
   openGraph: {
-    title: "N8N Tutorial: Complete Beginner's Guide to Automation 2025 | IImagined.ai",
-    description: "n8n tutorial, n8n guide, workflow automation - Expert guide from the creators of N8N AI Automations",
+    title: "N8N Tutorial 2026: Complete Beginner's Guide to Workflow Automation",
+    description: "Master N8N from scratch. Installation, nodes, AI integrations & real workflows tested by 127K+ students.",
     url: "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2025",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.597Z",
-    modifiedTime: "2025-08-05T07:10:42.597Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["n8n tutorial","n8n guide","workflow automation","n8n workflows","automation tools"],
+    publishedTime: "2026-02-01T10:00:00.000Z",
+    modifiedTime: new Date().toISOString(),
+    authors: ["Anyro"],
+    tags: ["N8N Tutorial","Workflow Automation","No-Code Automation","AI Automation","N8N Guide"],
     images: [{
       url: "https://iimagined.ai/images/blog/n8n-tutorial-complete-beginners-guide-automation-2025-og.jpg",
       width: 1200,
@@ -34,8 +34,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "N8N Tutorial: Complete Beginner's Guide to Automation 2025 | IImagined.ai",
-    description: "n8n tutorial, n8n guide, workflow automation - Expert guide from the creators of N8N AI Automations",
+    title: "N8N Tutorial 2026: Complete Beginner's Guide to Workflow Automation",
+    description: "Master N8N from scratch: Installation, nodes, AI integrations tested by 127K+ students",
     images: [{
       url: "https://iimagined.ai/images/blog/n8n-tutorial-complete-beginners-guide-automation-2025-og.jpg",
       alt: "N8N Tutorial: Complete Beginner's Guide to Automation 2025"
@@ -71,17 +71,17 @@ export default function N8nTutorialCompleteBeginnersGuideToAutomation2025() {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2025#article",
         "headline": "N8N Tutorial: Complete Beginner's Guide to Automation 2025",
-        "description": "n8n tutorial, n8n guide, workflow automation - Expert guide from the creators of N8N AI Automations",
-        "datePublished": "2025-08-05T07:10:42.597Z",
-        "dateModified": "2025-08-05T07:10:42.597Z",
+        "description": "Master N8N from scratch: Installation, nodes, AI integrations tested by 127K+ students",
+        "datePublished": "2026-02-01T10:00:00.000Z",
+        "dateModified": "2026-02-01T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function N8nTutorialCompleteBeginnersGuideToAutomation2025() {
           "name": "N8N AI Automations",
           "description": "Advanced Workflow Automation with AI Integration",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
