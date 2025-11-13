@@ -4,21 +4,21 @@ import BlogPostLayout from '@/components/BlogPostLayout'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "AI Automation for Beginners: Complete 2025 Guide to Save 20+ Hours/Week | AI Automations",
+  title: "AI Automation for Beginners: Complete 2026 Guide to Save 20+ Hours/Week | AI Automations",
   description: "Learn AI automation from scratch. Master N8N, ChatGPT workflows, automation tools, and real-world use cases. Complete beginner's guide with step-by-step tutorials and proven strategies to save 20+ hours per week.",
-  keywords: ["ai automation", "ai automation for beginners", "n8n tutorials", "chatgpt automation", "workflow automation", "business automation ai", "ai tools 2025", "automation workflows", "no-code automation", "zapier alternatives", "make.com tutorial", "ai productivity"],
+  keywords: ["ai automation", "ai automation for beginners", "n8n tutorials", "chatgpt automation", "workflow automation", "business automation ai", "ai tools 2026", "automation workflows", "no-code automation", "zapier alternatives", "make.com tutorial", "ai productivity"],
   authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Automation",
   openGraph: {
-    title: "AI Automation for Beginners: Complete Guide 2025",
+    title: "AI Automation for Beginners: Complete Guide 2026",
     description: "Master AI automation with N8N, ChatGPT & more. Save 20+ hours/week with proven workflows.",
     url: "https://iimagined.ai/blog/ai-automation-beginners-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T00:00:00.000Z",
-    modifiedTime: "2025-01-15T00:00:00.000Z",
+    publishedTime: "2026-01-20T00:00:00.000Z",
+    modifiedTime: "2026-01-20T00:00:00.000Z",
     authors: ["Anyro"],
     tags: ["AI Automation", "N8N", "ChatGPT", "Workflow Automation", "Business Automation"],
     images: [{
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "AI Automation Beginner's Guide 2025",
+    title: "AI Automation Beginner's Guide 2026",
     description: "Save 20+ hours/week with AI automation",
     images: [{
       url: "https://iimagined.ai/images/ai-automation-beginners-guide-og.jpg",
@@ -71,7 +71,7 @@ export default function AIAutomationBeginnersGuide() {
 
   const relatedPosts = [
     {
-      title: "N8N vs Zapier vs Make: Best Automation Tool 2025",
+      title: "N8N vs Zapier vs Make: Best Automation Tool 2026",
       slug: "best-automation-tools-2025-n8n-vs-zapier-vs-make",
       description: "Complete comparison of top automation platforms with pricing and features",
       readTime: 15
@@ -101,11 +101,11 @@ export default function AIAutomationBeginnersGuide() {
         category="AI Automation"
         title="AI Automation for Beginners: Complete Guide to Save 20+ Hours Every Week"
         description="Master AI automation from scratch with this complete beginner's guide. Learn N8N, ChatGPT workflows, automation tools, and real-world use cases that will transform your productivity."
-        date="Jan 15, 2025"
-        readTime={25}
+        date="Jan 20, 2026"
+        readTime={26}
         author={{
           name: "Anyro",
-          role: "AI Automation Expert & Productivity Specialist"
+          role: "AI Automation Strategist & Workflow Architect"
         }}
         relatedPosts={relatedPosts}
       >
@@ -139,7 +139,7 @@ export default function AIAutomationBeginnersGuide() {
         <div className="not-prose bg-blue-900/20 border-l-4 border-blue-500 rounded-lg p-6 mb-12">
           <p className="text-blue-200 font-medium mb-2">💡 Why This Matters Now</p>
           <p className="text-gray-300">
-            The automation economy is exploding. Businesses using AI automation are <strong className="text-white">3x more productive</strong> than competitors. More importantly, automation skills are becoming <strong className="text-white">the most in-demand skillset for 2025</strong>, with automation specialists earning $80K-$150K+ annually.
+            The automation economy is exploding. Businesses using AI automation are <strong className="text-white">3x more productive</strong> than competitors. More importantly, automation skills are becoming <strong className="text-white">the most in-demand skillset for 2026</strong>, with automation specialists earning $80K-$150K+ annually.
           </p>
         </div>
 
@@ -211,10 +211,10 @@ export default function AIAutomationBeginnersGuide() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-white mb-6 mt-12">Essential AI Automation Tools (2025 Stack)</h2>
+        <h2 className="text-3xl font-bold text-white mb-6 mt-12">Essential AI Automation Tools (2026 Stack)</h2>
 
         <p className="text-gray-300 mb-6 text-lg">
-          You don't need dozens of tools. Here's the <strong className="text-white">essential stack</strong> that powers 90% of AI automation workflows:
+          You don't need dozens of tools. Here's the <strong className="text-white">essential stack</strong> that powers 90% of AI automation workflows in 2026:
         </p>
 
         <div className="not-prose space-y-6 mb-12">
@@ -617,7 +617,7 @@ Respond with ONLY the category word."`}</pre>
             Ready to Build Production-Grade Automations?
           </h3>
           <p className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto">
-            This guide covers the basics. In the <strong className="text-white">AI Automations Course</strong>, you'll get <strong className="text-white">50+ pre-built N8N workflows</strong>, live automation breakdowns, and the exact systems I use to save 40+ hours per week while scaling to $100K+/month.
+            This guide covers the basics. In the <strong className="text-white">AI Automations Course</strong>, you'll get <strong className="text-white">50+ pre-built N8N workflows</strong>, live automation breakdowns, and the exact systems successful automation specialists use to save 40+ hours per week while scaling their businesses to $100K+/month.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/ai-automations">
