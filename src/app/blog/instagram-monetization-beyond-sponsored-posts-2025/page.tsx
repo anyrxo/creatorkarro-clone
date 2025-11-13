@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-24T10:00:00.000Z",
-    modifiedTime: "2025-01-24T10:00:00.000Z",
+    publishedTime: "2026-01-24T10:00:00.000Z",
+    modifiedTime: "2026-01-24T10:00:00.000Z",
     authors: ["Anyro"],
     tags: ["instagram monetization", "make money on instagram", "instagram income", "instagram revenue streams", "instagram business"],
     images: [{
@@ -65,8 +65,8 @@ export default function InstagramMonetization() {
         "@id": "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2025#article",
         "headline": "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2026",
         "description": "Discover 10 proven Instagram monetization strategies beyond sponsored posts. Learn how to make $21,500/month with 48K followers through diversified income streams.",
-        "datePublished": "2025-01-24T10:00:00.000Z",
-        "dateModified": "2025-01-24T10:00:00.000Z",
+        "datePublished": "2026-01-24T10:00:00.000Z",
+        "dateModified": "2026-01-24T10:00:00.000Z",
         "author": {
           "@type": "Person",
           "@id": "https://iimagined.ai#organization",
@@ -132,15 +132,15 @@ export default function InstagramMonetization() {
             <header className="mb-12">
               <div className="mb-6">
                 <time
-                  dateTime="2025-01-24"
+                  dateTime="2026-01-24"
                   className="text-sm text-green-400 font-medium"
                 >
-                  January 24, 2025
+                  January 24, 2026
                 </time>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2025
+                Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2026
               </h1>
 
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
