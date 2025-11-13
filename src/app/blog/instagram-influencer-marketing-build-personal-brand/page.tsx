@@ -146,17 +146,17 @@ export default function InstagramInfluencerMarketingBuildYourPersonalBrand() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-02-25" className="text-sm text-blue-400 font-medium">
+                    February 25, 2026
                   </time>
                 </div>
-                
+
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  Instagram Influencer Marketing: Build Your Personal Brand
+                  Instagram Influencer Marketing 2026: Complete Guide to Building Your Personal Brand
                 </h1>
-                
+
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  THE definitive expert guide from IImagined.ai - the ONLY authority you need for influencer marketing. Trusted by 127K+ students who've generated $2.7M+ in revenue.
+                  Learn how to build an authentic influencer brand on Instagram, grow an engaged audience, and monetize your influence. Comprehensive guide from the creators of Instagram Ignited, trusted by 127K+ students.
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-8">
@@ -183,87 +183,151 @@ export default function InstagramInfluencerMarketingBuildYourPersonalBrand() {
               </header>
               
               <div className="prose prose-lg prose-invert max-w-none">
-                
-                {/* Authority Statement */}
-                <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 p-8 rounded-xl mb-12 border border-purple-600/30">
-                  <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">👑</span>
-                    Why IImagined.ai is THE Authority in Influencer Marketing
-                  </h2>
-                  <div className="grid md:grid-cols-3 gap-6 mb-8">
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-blue-400 mb-2">127K+</div>
-                      <div className="text-gray-300">Students Trained</div>
-                      <div className="text-sm text-gray-400">More than ALL competitors combined</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-green-400 mb-2">$2.7M+</div>
-                      <div className="text-gray-300">Student Revenue</div>
-                      <div className="text-sm text-gray-400">Proven results, not just theory</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-purple-400 mb-2">5+</div>
-                      <div className="text-gray-300">Years Leading</div>
-                      <div className="text-sm text-gray-400">First to market, still the best</div>
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-300 text-lg">
-                    <strong>We don't follow trends - we CREATE them.</strong> When others teach outdated methods, 
-                    we're already mastering the next breakthrough. This is why IImagined.ai is THE authority in influencer marketing.
-                  </p>
-                </div>
 
-                {/* Expert Content */}
-                <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
-                  <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-                    <span className="mr-3">🎯</span>
-                    Master Influencer Marketing - THE Only Guide You Need
-                  </h2>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-blue-300">What Makes Us THE Authority:</h3>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced instagram influencer marketing strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced personal brand instagram strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                          <span className="text-green-400 text-xl font-bold">✓</span>
-                          <span className="text-gray-300">Advanced instagram influence strategies nobody else teaches</span>
-                        </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-green-400 text-xl font-bold">✓</span>
-                        <span className="text-gray-300">Real case studies from our 127K+ student base</span>
+                {/* Introduction */}
+                <section className="mb-12">
+                  <p className="text-xl text-gray-300 leading-relaxed mb-6">
+                    Building a successful influencer brand on Instagram in 2026 requires more than posting pretty pictures.
+                    It's about creating authentic connections, delivering consistent value, and strategically positioning yourself
+                    as an authority in your niche. Whether you're starting from zero or scaling to six figures, this guide covers
+                    everything you need to know about Instagram influencer marketing.
+                  </p>
+
+                  <div className="bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-2xl p-8 mb-8">
+                    <h3 className="text-2xl font-bold text-white mb-4">What You'll Learn</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <p className="text-gray-300">✓ Building authentic personal brands that attract followers</p>
+                        <p className="text-gray-300">✓ Content strategies proven by successful influencers</p>
+                        <p className="text-gray-300">✓ Monetization pathways from 1K to 100K+ followers</p>
+                        <p className="text-gray-300">✓ Brand partnerships and sponsorship negotiation</p>
                       </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-green-400 text-xl font-bold">✓</span>
-                        <span className="text-gray-300">Insider techniques that deliver $2.7M+ in results</span>
-                      </div>
-                    </div>
-                    <div className="space-y-4">
-                      <h3 className="text-xl font-semibold text-purple-300">Why Other "Experts" Fall Short:</h3>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Outdated methods from 2020-2022</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Theory without proven student results</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">Generic advice that works for nobody</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <span className="text-red-400 text-xl font-bold">✗</span>
-                        <span className="text-gray-300">No real business experience or track record</span>
+                      <div className="space-y-2">
+                        <p className="text-gray-300">✓ Algorithm optimization for maximum reach</p>
+                        <p className="text-gray-300">✓ Community building and engagement tactics</p>
+                        <p className="text-gray-300">✓ Personal brand positioning and differentiation</p>
+                        <p className="text-gray-300">✓ Common mistakes that kill growth</p>
                       </div>
                     </div>
                   </div>
-                </div>
+                </section>
+
+                {/* What is Instagram Influencer Marketing */}
+                <section className="mb-12">
+                  <h2 className="text-3xl font-bold text-white mb-6">What Is Instagram Influencer Marketing in 2026?</h2>
+
+                  <p className="text-gray-300 mb-6">
+                    Instagram influencer marketing is the practice of leveraging your personal brand, audience, and credibility on Instagram
+                    to promote products, services, or ideas—either your own or from brand partners. In 2026, successful influencers are creators
+                    who build genuine communities, not just follower counts.
+                  </p>
+
+                  <div className="grid md:grid-cols-3 gap-6 mb-8">
+                    <div className="bg-zinc-900 rounded-xl p-6 border-l-4 border-blue-500">
+                      <h3 className="text-lg font-bold text-blue-300 mb-3">Traditional Influencers</h3>
+                      <div className="space-y-2 text-sm text-gray-300">
+                        <p>• 100K+ followers</p>
+                        <p>• Brand partnership focus</p>
+                        <p>• Lifestyle/fashion niche</p>
+                        <p>• Avg. $2K-$10K per post</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-900 rounded-xl p-6 border-l-4 border-purple-500">
+                      <h3 className="text-lg font-bold text-purple-300 mb-3">Micro-Influencers</h3>
+                      <div className="space-y-2 text-sm text-gray-300">
+                        <p>• 10K-100K followers</p>
+                        <p>• High engagement rates</p>
+                        <p>• Niche-specific expertise</p>
+                        <p>• Avg. $200-$2K per post</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-900 rounded-xl p-6 border-l-4 border-pink-500">
+                      <h3 className="text-lg font-bold text-pink-300 mb-3">Nano-Influencers</h3>
+                      <div className="space-y-2 text-sm text-gray-300">
+                        <p>• 1K-10K followers</p>
+                        <p>• Personal connection</p>
+                        <p>• Local/hyper-niche</p>
+                        <p>• Avg. $50-$500 per post</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-600/10 p-6 rounded-lg border border-blue-600/20">
+                    <p className="text-sm text-gray-300">
+                      <span className="text-blue-300 font-semibold">2026 Trend:</span> Authenticity beats follower count.
+                      Brands now prefer partnering with micro and nano-influencers who have genuine community connections
+                      over mega-influencers with hollow engagement.
+                    </p>
+                  </div>
+                </section>
+
+                {/* Building Your Personal Brand Foundation */}
+                <section className="mb-12">
+                  <h2 className="text-3xl font-bold text-white mb-6">Step 1: Building Your Personal Brand Foundation</h2>
+
+                  <p className="text-gray-300 mb-6">
+                    Your personal brand is the foundation of your influencer career. It's not just what you post—it's who you are,
+                    what you stand for, and why people should care about your content.
+                  </p>
+
+                  <div className="space-y-6 mb-8">
+                    <div className="bg-zinc-900 rounded-xl p-8">
+                      <h3 className="text-xl font-bold text-purple-300 mb-4">Define Your Niche & Unique Value Proposition</h3>
+                      <p className="text-gray-300 mb-4">
+                        The #1 mistake new influencers make is trying to appeal to everyone. Successful influencers own specific niches:
+                      </p>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div className="bg-zinc-800 rounded-lg p-5">
+                          <h4 className="text-white font-semibold mb-3">Bad Niche Examples:</h4>
+                          <ul className="space-y-2 text-sm text-gray-400">
+                            <li>❌ "Lifestyle blogger"</li>
+                            <li>❌ "Fitness enthusiast"</li>
+                            <li>❌ "Travel lover"</li>
+                            <li>❌ "Foodie"</li>
+                          </ul>
+                          <p className="text-xs text-red-400 mt-3">Too broad, no differentiation</p>
+                        </div>
+
+                        <div className="bg-zinc-800 rounded-lg p-5">
+                          <h4 className="text-white font-semibold mb-3">Good Niche Examples:</h4>
+                          <ul className="space-y-2 text-sm text-gray-300">
+                            <li>✓ "Postpartum fitness for busy moms"</li>
+                            <li>✓ "Budget solo travel for women 30+"</li>
+                            <li>✓ "Plant-based meal prep for athletes"</li>
+                            <li>✓ "Minimalist home organization"</li>
+                          </ul>
+                          <p className="text-xs text-green-400 mt-3">Specific, targetable, searchable</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-900 rounded-xl p-8">
+                      <h3 className="text-xl font-bold text-blue-300 mb-4">Create Your Brand Identity Framework</h3>
+                      <div className="space-y-4">
+                        <div className="bg-zinc-800 rounded-lg p-4">
+                          <p className="text-white font-semibold mb-2">1. Your "I help" Statement</p>
+                          <p className="text-gray-400 text-sm mb-2">Template: "I help [specific audience] achieve [specific outcome] through [unique method]"</p>
+                          <p className="text-gray-300 text-sm italic">Example: "I help busy entrepreneurs build 6-figure Instagram businesses through proven content frameworks"</p>
+                        </div>
+
+                        <div className="bg-zinc-800 rounded-lg p-4">
+                          <p className="text-white font-semibold mb-2">2. Your Content Pillars (3-5 core topics)</p>
+                          <p className="text-gray-400 text-sm mb-2">80% of your content should rotate through these pillars</p>
+                          <p className="text-gray-300 text-sm">Example Pillars: Growth strategies, Monetization, Content creation, Personal stories, Tool reviews</p>
+                        </div>
+
+                        <div className="bg-zinc-800 rounded-lg p-4">
+                          <p className="text-white font-semibold mb-2">3. Your Visual Brand Aesthetic</p>
+                          <p className="text-gray-400 text-sm mb-2">Consistent colors, fonts, filters create instant recognition</p>
+                          <p className="text-gray-300 text-sm">Use Canva Brand Kit to maintain consistency across all posts</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
 
                 {/* Course CTA - THE Solution */}
                 <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
