@@ -3,28 +3,28 @@ import Link from 'next/link'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2025",
+  title: "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2026",
   description: "Discover 10 proven Instagram monetization strategies beyond sponsored posts. Learn how to make $21,500/month with 48K followers through diversified income streams.",
-  keywords: ["instagram monetization", "make money on instagram", "instagram income", "instagram revenue streams", "instagram business", "influencer income", "instagram earnings 2025", "instagram shop", "digital products instagram", "instagram affiliate marketing"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  keywords: ["instagram monetization", "make money on instagram", "instagram income", "instagram revenue streams", "instagram business", "influencer income", "instagram earnings 2026", "instagram shop", "digital products instagram", "instagram affiliate marketing"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Instagram Monetization",
   openGraph: {
-    title: "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2025",
+    title: "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2026",
     description: "Discover 10 proven Instagram monetization strategies beyond sponsored posts. Learn how to make $21,500/month with 48K followers through diversified income streams.",
-    url: "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2025",
+    url: "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-24T10:00:00.000Z",
     modifiedTime: "2025-01-24T10:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["instagram monetization", "make money on instagram", "instagram income", "instagram revenue streams", "instagram business"],
     images: [{
       url: "https://iimagined.ai/images/instagram-monetization-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Instagram Monetization Strategies 2025",
+      alt: "Instagram Monetization Strategies 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -33,11 +33,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2025",
+    title: "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2026",
     description: "Discover 10 proven Instagram monetization strategies beyond sponsored posts. Learn how to make $21,500/month with 48K followers through diversified income streams.",
     images: [{
       url: "https://iimagined.ai/images/instagram-monetization-og.jpg",
-      alt: "Instagram Monetization Strategies 2025"
+      alt: "Instagram Monetization Strategies 2026"
     }]
   },
   robots: {
@@ -52,7 +52,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2025"
+    canonical: "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2026"
   }
 }
 
@@ -63,23 +63,23 @@ export default function InstagramMonetization() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2025#article",
-        "headline": "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2025",
+        "headline": "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2026",
         "description": "Discover 10 proven Instagram monetization strategies beyond sponsored posts. Learn how to make $21,500/month with 48K followers through diversified income streams.",
         "datePublished": "2025-01-24T10:00:00.000Z",
         "dateModified": "2025-01-24T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2025"
+          "@id": "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2026"
         },
         "image": {
           "@type": "ImageObject",
@@ -181,11 +181,11 @@ export default function InstagramMonetization() {
 
               {/* Introduction */}
               <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                Sponsored posts are unreliable. Brands ghost you. Rates fluctuate. You need 50K+ followers for consistent deals. Smart creators in 2025 are building diversified income portfolios that generate $10K-$30K monthly WITHOUT depending on brand deals. This guide reveals the 10 revenue streams that transformed my Instagram from hobby to $21,500/month business with just 48K followers.
+                Sponsored posts are unreliable. Brands ghost you. Rates fluctuate. You need 50K+ followers for consistent deals. Smart creators in 2026 are building diversified income portfolios that generate $10K-$30K monthly WITHOUT depending on brand deals. This guide reveals the 10 revenue streams that transformed my Instagram from hobby to $21,500/month business with just 48K followers.
               </p>
 
               <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6 mb-8">
-                <h3 className="text-2xl font-bold text-green-400 mb-4">💰 2025 Instagram Monetization Reality</h3>
+                <h3 className="text-2xl font-bold text-green-400 mb-4">💰 2026 Instagram Monetization Reality</h3>
                 <p className="text-gray-300 mb-4">The income landscape has shifted dramatically:</p>
                 <ul className="space-y-2 text-gray-300">
                   <li>• Average creator earns from 3-5 different revenue streams simultaneously</li>
@@ -872,7 +872,7 @@ export default function InstagramMonetization() {
             <div className="mt-8">
               <h3 className="text-2xl font-bold text-white mb-8">Related Articles</h3>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link href="/blog/instagram-growth-2025" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                <Link href="/blog/instagram-growth-2026" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
                   <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
                     Instagram Growth Strategies 2025
                   </h4>

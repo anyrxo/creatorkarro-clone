@@ -4,28 +4,28 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Content Strategy for Maximum Engagement 2025",
+  title: "Instagram Content Strategy for Maximum Engagement 2026",
   description: "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+...",
   keywords: ["instagram content strategy","instagram content","instagram engagement","instagram posts","instagram ignited","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Instagram & Social Media",
   openGraph: {
-    title: "Instagram Content Strategy for Maximum Engagement 2025",
+    title: "Instagram Content Strategy for Maximum Engagement 2026",
     description: "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited",
-    url: "https://iimagined.ai/blog/instagram-content-strategy-maximum-engagement-2025",
+    url: "https://iimagined.ai/blog/instagram-content-strategy-maximum-engagement-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.594Z",
-    modifiedTime: "2025-08-05T07:10:42.594Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-05T10:00:00.000Z",
+    modifiedTime: "2026-02-05T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["instagram content strategy","instagram content","instagram engagement","instagram posts"],
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-content-strategy-maximum-engagement-2025-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Instagram Content Strategy for Maximum Engagement 2025",
+      alt: "Instagram Content Strategy for Maximum Engagement 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +34,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Content Strategy for Maximum Engagement 2025",
+    title: "Instagram Content Strategy for Maximum Engagement 2026",
     description: "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited",
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-content-strategy-maximum-engagement-2025-og.jpg",
-      alt: "Instagram Content Strategy for Maximum Engagement 2025"
+      alt: "Instagram Content Strategy for Maximum Engagement 2026"
     }]
   },
   robots: {
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/instagram-content-strategy-maximum-engagement-2025",
+    canonical: "https://iimagined.ai/blog/instagram-content-strategy-maximum-engagement-2026",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -70,23 +70,23 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/instagram-content-strategy-maximum-engagement-2025#article",
-        "headline": "Instagram Content Strategy for Maximum Engagement 2025",
+        "headline": "Instagram Content Strategy for Maximum Engagement 2026",
         "description": "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited",
-        "datePublished": "2025-08-05T07:10:42.594Z",
-        "dateModified": "2025-08-05T07:10:42.594Z",
+        "datePublished": "2026-02-05T10:00:00.000Z",
+        "dateModified": "2026-02-05T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/instagram-content-strategy-maximum-engagement-2025"
+          "@id": "https://iimagined.ai/blog/instagram-content-strategy-maximum-engagement-2026"
         },
         "image": {
           "@type": "ImageObject",
@@ -101,7 +101,7 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
           "name": "Instagram Ignited",
           "description": "Ultimate Instagram Growth & Monetization Course",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -274,7 +274,7 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
                 {/* Instagram Hashtag Research System */}
                 <section className="mb-12">
                   <h2 className="text-3xl font-bold text-white mb-6">Hashtag Research & Strategy System</h2>
-                  <p className="text-gray-300 mb-6">Meta's 2025 algorithm change increased hashtag relevance by 47%. Use this three-tier system:</p>
+                  <p className="text-gray-300 mb-6">Meta's 2026 algorithm change increased hashtag relevance by 47%. Use this three-tier system:</p>
 
                   <div className="bg-zinc-900 rounded-xl p-6 mb-6">
                     <h3 className="text-xl font-bold text-blue-300 mb-4">Tier 1: Mega Hashtags (500K-2M posts)</h3>
@@ -310,7 +310,7 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
 
                 {/* Posting Schedule with Metrics */}
                 <section className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">The Optimal Instagram Posting Schedule (2025 Data)</h2>
+                  <h2 className="text-3xl font-bold text-white mb-6">The Optimal Instagram Posting Schedule (2026 Data)</h2>
                   <p className="text-gray-300 mb-6">Instagram's algorithm now prioritizes consistency over time. Here's what 127K+ students found effective:</p>
 
                   <div className="grid md:grid-cols-5 gap-4 mb-8">
