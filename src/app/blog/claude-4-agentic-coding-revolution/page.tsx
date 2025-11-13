@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/claude-4-agentic-coding-revolution",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.997Z",
     authors: ["Anyro"],
     tags: ["claude", "agentic", "coding", "revolution", "claude 2026", "claude agentic coding revolution", "automation", "AI tools"],

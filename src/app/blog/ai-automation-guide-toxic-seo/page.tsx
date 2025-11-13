@@ -20,7 +20,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-automation-guide-toxic-seo",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: new Date().toISOString(),
     authors: ["Anyro"],
     tags: ["ai automation", "business automation", "ai tools", "workflow automation", "ChatGPT", "N8N"],
@@ -81,7 +81,7 @@ function generateBlogPostSchema() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2025-01-15T10:00:00.000Z',
+    datePublished: '2026-02-28T10:00:00.000Z',
     dateModified: new Date().toISOString(),
     mainEntityOfPage: {
       '@type': 'WebPage',

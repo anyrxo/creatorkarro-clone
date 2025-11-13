@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-research-content-marketing",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:30.000Z",
     authors: ["Anyro"],
     tags: ["research", "content", "marketing", "research 2026", "research content marketing", "automation", "AI tools", "business growth"],

@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/viral-carousel-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.956Z",
     authors: ["Anyro"],
     tags: ["viral", "carousel", "guide", "viral 2026", "viral carousel guide", "automation", "AI tools", "business growth"],

@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/robotic-process-automation",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.966Z",
     authors: ["Anyro"],
     tags: ["robotic", "process", "automation", "robotic 2026", "robotic process automation", "AI tools", "business growth", "productivity"],

@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/qwen-3-alibaba-open-source-llm",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.966Z",
     authors: ["Anyro"],
     tags: ["qwen", "alibaba", "open", "source", "llm", "qwen 2026", "qwen alibaba open source llm", "automation"],

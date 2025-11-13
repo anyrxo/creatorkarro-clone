@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/quality-assurance-automation",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.967Z",
     authors: ["Anyro"],
     tags: ["quality", "assurance", "automation", "quality 2026", "quality assurance automation", "AI tools", "business growth", "productivity"],

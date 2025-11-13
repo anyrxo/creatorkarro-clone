@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/llama-4-open-source-ai-powerhouse",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.976Z",
     authors: ["Anyro"],
     tags: ["llama", "open", "source", "powerhouse", "llama 2026", "llama open source powerhouse", "automation", "AI tools"],

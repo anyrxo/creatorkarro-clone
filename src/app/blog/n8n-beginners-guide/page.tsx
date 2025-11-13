@@ -24,7 +24,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/n8n-beginners-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: new Date().toISOString(),
     authors: ["Anyro"],
     tags: ["n8n", "beginners", "guide", "n8n 2026", "n8n beginners guide", "automation", "AI tools", "business growth"],

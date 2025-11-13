@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/manus-ai-general-automation-agent",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.974Z",
     authors: ["Anyro"],
     tags: ["manus", "general", "automation", "agent", "manus 2026", "manus general automation agent", "AI tools", "business growth"],

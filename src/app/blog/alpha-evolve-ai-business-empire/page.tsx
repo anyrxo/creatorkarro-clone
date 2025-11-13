@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/alpha-evolve-ai-business-empire",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.999Z",
     authors: ["Anyro"],
     tags: ["alpha", "evolve", "business", "empire", "alpha 2026", "alpha evolve business empire", "automation", "AI tools"],

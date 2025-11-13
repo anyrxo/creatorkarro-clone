@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/pinterest-automation-marketing",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.969Z",
     authors: ["Anyro"],
     tags: ["pinterest", "automation", "marketing", "pinterest 2026", "pinterest automation marketing", "AI tools", "business growth", "productivity"],

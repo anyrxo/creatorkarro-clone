@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/deepseek-r1-open-source-ai-revolution",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.989Z",
     authors: ["Anyro"],
     tags: ["deepseek", "open", "source", "revolution", "deepseek 2026", "deepseek open source revolution", "automation", "AI tools"],

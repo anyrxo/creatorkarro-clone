@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/deepseek-janus-pro-7b-multimodal-ai-revolution",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.990Z",
     authors: ["Anyro"],
     tags: ["deepseek", "janus", "pro", "multimodal", "revolution", "deepseek 2026", "deepseek janus pro multimodal revolution", "automation"],

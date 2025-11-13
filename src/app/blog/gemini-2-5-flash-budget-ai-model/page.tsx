@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/gemini-2-5-flash-budget-ai-model",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.982Z",
     authors: ["Anyro"],
     tags: ["gemini", "flash", "budget", "model", "gemini 2026", "gemini flash budget model", "automation", "AI tools"],

@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/workflow-automation-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
+    publishedTime: "2026-02-28T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.953Z",
     authors: ["Anyro"],
     tags: ["workflow", "automation", "guide", "workflow 2026", "workflow automation guide", "AI tools", "business growth", "productivity"],
