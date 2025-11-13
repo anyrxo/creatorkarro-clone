@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Creating AI Influencers: Complete Guide & Expert Strategies",
-  description: "Creating AI Influencers comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["creating", "influencers", "creating 2025", "creating influencers", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "Creating AI Influencers 2026: Complete Step-by-Step Guide to Virtual Personas | IImagined.ai",
+  description: "Master creating AI influencers in 2026. Complete guide covering Midjourney character design, consistent personas, content automation, monetization strategies, and building revenue-generating virtual influencers. 127K+ students trust our methods.",
+  keywords: ["creating ai influencers", "ai influencer creation", "virtual influencer guide", "ai persona development", "midjourney ai influencer", "ai influencer monetization", "create virtual influencer", "ai content creator", "digital influencer business", "ai influencer 2026"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
-  category: "Technology",
+  category: "AI Influencers",
   openGraph: {
-    title: "Creating AI Influencers: Complete Guide & Expert Strategies",
-    description: "Creating AI Influencers comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    title: "Creating AI Influencers 2026: Complete Step-by-Step Guide to Virtual Personas",
+    description: "Master creating AI influencers with Midjourney, consistent personas, content automation & monetization strategies",
     url: "https://iimagined.ai/blog/creating-ai-influencers",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.991Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["creating", "influencers", "creating 2025", "creating influencers", "automation", "AI tools", "business growth", "productivity"],
+    publishedTime: "2026-01-26T10:00:00.000Z",
+    modifiedTime: new Date().toISOString(),
+    authors: ["Anyro"],
+    tags: ["AI Influencers", "Virtual Influencer", "AI Content Creation", "Midjourney", "Character Design", "Content Automation", "Influencer Monetization"],
     images: [{
       url: "https://iimagined.ai/images/creating-ai-influencers-og.jpg",
       width: 1200,
@@ -33,9 +33,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@iimagined_ai",
-    creator: "@iimagined_ai", 
-    title: "Creating AI Influencers: Complete Guide & Expert Strategies",
-    description: "Creating AI Influencers comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    creator: "@iimagined_ai",
+    title: "Creating AI Influencers 2026: Complete Step-by-Step Guide",
+    description: "Master creating AI influencers with Midjourney, consistent personas & monetization strategies",
     images: [{
       url: "https://iimagined.ai/images/creating-ai-influencers-og.jpg",
       alt: "Creating AI Influencers"
