@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/composer-agent-code-llm-full-stack",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-30T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:08:37.210Z",
+    publishedTime: "2026-01-30T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:08:37.210Z",
     authors: ["Anyro"],
     tags: ["composer agent", "full stack development", "ai coding", "llm development", "automated programming", "web development", "backend automation", "frontend generation"],
     images: [{
@@ -77,8 +77,8 @@ export default function ComposerAgentCodeLlmFullStack() {
         "@id": "https://iimagined.ai/blog/composer-agent-code-llm-full-stack#article",
         "headline": "Composer Agent: Full-Stack Development with AI",
         "description": "Complete guide to using Composer Agent for full-stack development with LLMs and advanced coding automation",
-        "datePublished": "2025-01-30T10:00:00.000Z",
-        "dateModified": "2025-08-03T06:08:37.210Z",
+        "datePublished": "2026-01-30T10:00:00.000Z",
+        "dateModified": "2026-08-03T06:08:37.210Z",
         "author": {
           "@type": "Person",
           "@id": "https://iimagined.ai#organization",
@@ -197,10 +197,10 @@ export default function ComposerAgentCodeLlmFullStack() {
               <header className="mb-12">
                 <div className="mb-6">
                   <time 
-                    dateTime="2025-01-30" 
+                    dateTime="2026-01-30" 
                     className="text-sm text-blue-400 font-medium"
                   >
-                    January 30, 2025
+                    January 2026
                   </time>
                 </div>
                 

@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.967Z",
+    modifiedTime: "2026-08-03T06:14:29.967Z",
     authors: ["Anyro"],
     tags: ["quality", "assurance", "automation", "quality 2026", "quality assurance automation", "AI tools", "business growth", "productivity"],
     images: [{

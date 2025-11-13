@@ -146,8 +146,8 @@ export default function InstagramAlgorithmSecretsMasterThe2025Algorithm() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
@@ -186,7 +186,7 @@ export default function InstagramAlgorithmSecretsMasterThe2025Algorithm() {
 
                 {/* Introduction */}
                 <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Understanding the Instagram Algorithm in 2025</h2>
+                  <h2 className="text-3xl font-bold text-white mb-6">Understanding the Instagram Algorithm in 2026</h2>
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     The Instagram algorithm in 2026 is the most sophisticated version yet, powered by advanced machine learning that analyzes over 10,000 signals per post to determine its distribution. Unlike previous years where chronological feeds dominated, Instagram now uses a complex ranking system that prioritizes content based on predicted engagement, user relationships, and content quality. Understanding how this algorithm works is the difference between reaching 500 people and reaching 50,000.
                   </p>

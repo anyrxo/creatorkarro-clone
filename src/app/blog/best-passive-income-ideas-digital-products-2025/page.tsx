@@ -146,8 +146,8 @@ export default function BestPassiveIncomeIdeas20DigitalProductsThatWork() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
@@ -185,7 +185,7 @@ export default function BestPassiveIncomeIdeas20DigitalProductsThatWork() {
               <div className="prose prose-lg prose-invert max-w-none">
 
                 <section className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">The Digital Products Passive Income Landscape in 2025</h2>
+                  <h2 className="text-3xl font-bold text-white mb-6">The Digital Products Passive Income Landscape in 2026</h2>
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     The digital products market has reached $331 billion in 2026, growing 47% year-over-year. Unlike traditional income streams that require constant time investment, digital products offer true passive income potential. Once created, they can generate revenue 24/7 without additional effort.
                   </p>

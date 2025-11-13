@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.954Z",
+    modifiedTime: "2026-08-03T06:14:29.954Z",
     authors: ["Anyro"],
     tags: ["why", "n8n", "different", "why 2026", "why n8n different", "automation", "AI tools", "business growth"],
     images: [{

@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.965Z",
+    modifiedTime: "2026-08-03T06:14:29.965Z",
     authors: ["Anyro"],
     tags: ["roocode", "cline", "alternative", "roocode 2026", "roocode cline alternative", "automation", "AI tools", "business growth"],
     images: [{

@@ -145,8 +145,8 @@ export default function BestAutomationTools2025N8nVsZapierVsMakecom() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
@@ -185,7 +185,7 @@ export default function BestAutomationTools2025N8nVsZapierVsMakecom() {
 
                 {/* Introduction */}
                 <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Introduction: The Automation Tools Landscape in 2025</h2>
+                  <h2 className="text-3xl font-bold text-white mb-6">Introduction: The Automation Tools Landscape in 2026</h2>
                   <p className="text-gray-300 leading-relaxed mb-4">
                     Choosing the right automation platform can make or break your workflow strategy. In 2026, three platforms
                     dominate the workflow automation space: N8N, Zapier, and Make.com (formerly Integromat). Each has distinct

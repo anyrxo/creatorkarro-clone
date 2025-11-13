@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/topstep-vs-myfundedtrader-comparison",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-10-21T13:00:00.000Z",
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-10-21T13:00:00.000Z",
     authors: ["IImagined.ai Expert Team"],
     tags: ["topstep","myfundedtrader","prop firm comparison","funded trading","futures trading","prop firm review"],
     images: [{
@@ -83,7 +83,7 @@ export default function TopstepVsMyFundedTrader() {
             </div>
 
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              Topstep vs MyFundedTrader: <span className="text-green-400">Which Funded Trading Program</span> Will Make You Profitable in 2025?
+              Topstep vs MyFundedTrader: <span className="text-green-400">Which Funded Trading Program</span> Will Make You Profitable in 2026?
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-8">

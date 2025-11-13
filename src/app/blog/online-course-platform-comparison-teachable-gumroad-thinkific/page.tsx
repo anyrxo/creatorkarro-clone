@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/online-course-platform-comparison-teachable-gumroad-thinkific",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-10-29T11:00:00.000Z",
-    modifiedTime: "2025-10-29T11:00:00.000Z",
+    publishedTime: "2026-10-29T11:00:00.000Z",
+    modifiedTime: "2026-10-29T11:00:00.000Z",
     authors: ["Anyro"],
     tags: ["course platform comparison","teachable vs gumroad","best course platform","online course hosting"],
     images: [{
@@ -72,8 +72,8 @@ export default function OnlineCoursePlatformComparison() {
         "@id": "https://iimagined.ai/blog/online-course-platform-comparison-teachable-gumroad-thinkific#article",
         "headline": "Online Course Platform Comparison 2026: Teachable vs Gumroad vs Thinkific",
         "description": "course platform comparison, teachable vs gumroad, best course platform - Expert guide from Digital Products Mastery",
-        "datePublished": "2025-10-29T11:00:00.000Z",
-        "dateModified": "2025-10-29T11:00:00.000Z",
+        "datePublished": "2026-10-29T11:00:00.000Z",
+        "dateModified": "2026-10-29T11:00:00.000Z",
         "author": {
           "@type": "Person",
           "@id": "https://iimagined.ai#organization",
@@ -146,8 +146,8 @@ export default function OnlineCoursePlatformComparison() {
 
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-10-29" className="text-sm text-blue-400 font-medium">
-                    October 29, 2025
+                  <time dateTime="2026-10-29" className="text-sm text-blue-400 font-medium">
+                    October 2026
                   </time>
                 </div>
 

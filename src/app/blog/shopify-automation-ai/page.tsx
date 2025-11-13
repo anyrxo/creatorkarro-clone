@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.961Z",
+    modifiedTime: "2026-08-03T06:14:29.961Z",
     authors: ["Anyro"],
     tags: ["shopify", "automation", "shopify 2026", "shopify automation", "AI tools", "business growth", "productivity", "2026 strategies"],
     images: [{
@@ -936,7 +936,7 @@ export default function ShopifyAutomationAiPage() {
               </div>
               
               <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-white mb-3">What Shopify automation AI skills do I need to learn in 2025?</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">What Shopify automation AI skills do I need to learn in 2026?</h3>
                 <p className="text-gray-300">No coding required for 80% of implementations. Focus on: workflow design, customer segmentation, basic analytics interpretation, and AI tool configuration. Advanced users benefit from understanding APIs and Shopify Liquid templating. Most successful implementations require business strategy skills rather than technical expertise.</p>
               </div>
               

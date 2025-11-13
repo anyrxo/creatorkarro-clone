@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/futures-trading-psychology-master-emotions-win",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T09:00:00.000Z",
-    modifiedTime: "2025-01-22T09:00:00.000Z",
+    publishedTime: "2026-01-22T09:00:00.000Z",
+    modifiedTime: "2026-01-22T09:00:00.000Z",
     authors: ["Anyro"],
     tags: ["trading psychology", "mental game", "futures trading", "discipline", "emotions"],
     images: [{

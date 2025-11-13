@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.956Z",
+    modifiedTime: "2026-08-03T06:14:29.956Z",
     authors: ["Anyro"],
     tags: ["viral", "carousel", "guide", "viral 2026", "viral carousel guide", "automation", "AI tools", "business growth"],
     images: [{
@@ -105,7 +105,7 @@ const schema = generateBlogPostSchema({
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold text-white text-center mb-8">Why Carousels Dominate Instagram in 2025</h2>
+                <h2 className="text-2xl font-bold text-white text-center mb-8">Why Carousels Dominate Instagram in 2026</h2>
                 <div className="grid md:grid-cols-4 gap-6">
                     <div className="text-center">
                         <div className="text-4xl font-bold text-purple-400 mb-2">4.5x</div>

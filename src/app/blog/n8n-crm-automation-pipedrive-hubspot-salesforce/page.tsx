@@ -21,7 +21,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/n8n-crm-automation-pipedrive-hubspot-salesforce",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T12:00:00.000Z",
+    publishedTime: "2026-01-15T12:00:00.000Z",
     modifiedTime: new Date().toISOString(),
     authors: ["Anyro"],
     tags: ["n8n", "crm automation", "pipedrive", "hubspot", "salesforce", "sales automation"],

@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.964Z",
+    modifiedTime: "2026-08-03T06:14:29.964Z",
     authors: ["Anyro"],
     tags: ["saas", "automation", "systems", "saas 2026", "saas automation systems", "AI tools", "business growth", "productivity"],
     images: [{

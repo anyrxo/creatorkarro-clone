@@ -18,8 +18,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T08:00:00.000Z",
-    modifiedTime: "2025-01-20T08:00:00.000Z",
+    publishedTime: "2026-01-20T08:00:00.000Z",
+    modifiedTime: "2026-01-20T08:00:00.000Z",
     authors: ["Anyro"],
     tags: ["ComfyUI", "AI Art", "Image Generation", "SDXL", "ControlNet", "Advanced Workflows"],
     images: [{

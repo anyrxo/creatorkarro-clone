@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.957Z",
+    modifiedTime: "2026-08-03T06:14:29.957Z",
     authors: ["Anyro"],
     tags: ["tiktok", "growth", "hacks", "tiktok 2026", "tiktok growth hacks", "automation", "AI tools", "business growth"],
     images: [{
@@ -140,7 +140,7 @@ export default function TikTokGrowthHacks() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
                 <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              TikTok isn't just another social platform - it's <span className="text-white font-semibold">the fastest growing opportunity for creators in 2025</span>. And the algorithm? It's actually on your side.
+              TikTok isn't just another social platform - it's <span className="text-white font-semibold">the fastest growing opportunity for creators in 2026</span>. And the algorithm? It's actually on your side.
                 </p>
 
                 <div className="bg-pink-500/10 border border-pink-500/20 rounded-2xl p-8 mb-8">

@@ -146,8 +146,8 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
@@ -498,7 +498,7 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
                       <p className="text-xs text-gray-400 mt-2">Target: Reach 40% higher than followers count. If you have 10K followers, aim for 4,000+ reach per post</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-6">
-                      <h3 className="text-lg font-bold text-purple-300 mb-2">Saves Rate (New in 2025)</h3>
+                      <h3 className="text-lg font-bold text-purple-300 mb-2">Saves Rate (New in 2026)</h3>
                       <p className="text-gray-300">Posts with 15+ saves get 5x boost to Explore page. Saves indicate "useful content" to the algorithm</p>
                       <p className="text-xs text-gray-400 mt-2">Industry standard: 3-5% save rate. Excellent: 10%+ saves. Call to action: "Save this for later"</p>
                     </div>

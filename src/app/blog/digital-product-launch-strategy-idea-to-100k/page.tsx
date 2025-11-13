@@ -146,8 +146,8 @@ export default function DigitalProductLaunchStrategyFromIdeaTo100k() {
 
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
 
@@ -280,7 +280,7 @@ export default function DigitalProductLaunchStrategyFromIdeaTo100k() {
                           <li>• Current price: $97</li>
                           <li>• Annual revenue potential: $100K+ at 30 sales/month</li>
                           <li>• Profit margin: 95% (digital)</li>
-                          <li>• Sold since: January 2025</li>
+                          <li>• Sold since: January 2026</li>
                         </ul>
                       </div>
                     </div>

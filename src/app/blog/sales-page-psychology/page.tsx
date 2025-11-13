@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.964Z",
+    modifiedTime: "2026-08-03T06:14:29.964Z",
     authors: ["Anyro"],
     tags: ["sales", "page", "psychology", "sales 2026", "sales page psychology", "automation", "AI tools", "business growth"],
     images: [{

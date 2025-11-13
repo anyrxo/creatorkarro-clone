@@ -146,8 +146,8 @@ export default function N8nTutorialCompleteBeginnersGuideToAutomation2025() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
@@ -736,8 +736,8 @@ return items;`}</pre>
                         <h4 className="text-blue-300 font-semibold mb-3">Built-in Variables and Functions</h4>
                         <div className="text-gray-300 font-mono text-sm space-y-2">
                           <div><code>{'{{ $now }}'}</code> → Current timestamp (Luxon DateTime)</div>
-                          <div><code>{'{{ $now.toISO() }}'}</code> → ISO format: 2025-01-15T10:30:00</div>
-                          <div><code>{'{{ $now.toFormat("yyyy-MM-dd") }}'}</code> → 2025-01-15</div>
+                          <div><code>{'{{ $now.toISO() }}'}</code> → ISO format: 2026-01-15T10:30:00</div>
+                          <div><code>{'{{ $now.toFormat("yyyy-MM-dd") }}'}</code> → 2026-01-15</div>
                           <div><code>{'{{ $workflow.id }}'}</code> → Current workflow ID</div>
                           <div><code>{'{{ $execution.id }}'}</code> → Current execution ID</div>
                         </div>

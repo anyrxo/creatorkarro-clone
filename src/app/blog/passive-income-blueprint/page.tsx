@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/passive-income-blueprint",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:08:37.208Z",
+    publishedTime: "2026-01-22T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:08:37.208Z",
     authors: ["Anyro"],
     tags: ["passive income 2026", "passive income ideas", "make money while sleeping", "online passive income", "digital passive income streams", "automated income", "recurring revenue", "investment income"],
     images: [{
@@ -77,8 +77,8 @@ export default function PassiveIncomeBlueprint() {
         "@id": "https://iimagined.ai/blog/passive-income-blueprint#article",
         "headline": "Complete Passive Income Blueprint for 2026",
         "description": "Learn proven strategies to build passive income streams that work while you sleep - from $0 to $10K/month",
-        "datePublished": "2025-01-22T10:00:00.000Z",
-        "dateModified": "2025-08-03T06:08:37.208Z",
+        "datePublished": "2026-01-22T10:00:00.000Z",
+        "dateModified": "2026-08-03T06:08:37.208Z",
         "author": {
           "@type": "Person",
           "@id": "https://iimagined.ai#organization",
@@ -197,10 +197,10 @@ export default function PassiveIncomeBlueprint() {
               <header className="mb-12">
                 <div className="mb-6">
                   <time 
-                    dateTime="2025-01-22" 
+                    dateTime="2026-01-22" 
                     className="text-sm text-blue-400 font-medium"
                   >
-                    January 22, 2025
+                    January 2026
                   </time>
                 </div>
                 

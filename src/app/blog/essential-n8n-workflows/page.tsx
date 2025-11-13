@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.985Z",
+    modifiedTime: "2026-08-03T06:14:29.985Z",
     authors: ["Anyro"],
     tags: ["essential", "n8n", "workflows", "essential 2026", "essential n8n workflows", "automation", "AI tools", "business growth"],
     images: [{

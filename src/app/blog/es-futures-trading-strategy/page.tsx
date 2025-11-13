@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/es-futures-trading-strategy",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-10-20T12:50:48.607Z",
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-10-20T12:50:48.607Z",
     authors: ["IImagined.ai Expert Team"],
     tags: ["es futures","emini sp500","es trading strategy","order flow trading","volume profile"],
     images: [{

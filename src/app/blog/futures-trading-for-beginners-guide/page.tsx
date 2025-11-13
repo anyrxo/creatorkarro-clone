@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/futures-trading-for-beginners-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-10-20T12:50:48.606Z",
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-10-20T12:50:48.606Z",
     authors: ["IImagined.ai Expert Team"],
     tags: ["futures trading","how to trade futures","futures contracts","futures for beginners","es futures","nq futures"],
     images: [{

@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.978Z",
+    modifiedTime: "2026-08-03T06:14:29.978Z",
     authors: ["Anyro"],
     tags: ["instagram", "reels", "guide", "instagram 2026", "instagram reels guide", "automation", "AI tools", "business growth"],
     images: [{

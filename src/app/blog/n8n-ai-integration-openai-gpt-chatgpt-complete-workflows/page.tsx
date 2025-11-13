@@ -23,7 +23,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/n8n-ai-integration-openai-gpt-chatgpt-complete-workflows",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-16T10:00:00.000Z",
+    publishedTime: "2026-01-16T10:00:00.000Z",
     modifiedTime: new Date().toISOString(),
     authors: ["Anyro"],
     tags: ["n8n", "ai automation", "openai", "chatgpt", "gpt workflows", "ai content generation"],

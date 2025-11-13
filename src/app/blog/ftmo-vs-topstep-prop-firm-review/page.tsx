@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ftmo-vs-topstep-prop-firm-review",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-10-21T14:00:00.000Z",
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-10-21T14:00:00.000Z",
     authors: ["IImagined.ai Expert Team"],
     tags: ["ftmo","topstep","prop firm","funded trader","forex prop firm","futures prop firm"],
     images: [{

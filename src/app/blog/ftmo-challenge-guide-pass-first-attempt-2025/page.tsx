@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ftmo-challenge-guide-pass-first-attempt-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T09:00:00.000Z",
-    modifiedTime: "2025-01-20T09:00:00.000Z",
+    publishedTime: "2026-01-20T09:00:00.000Z",
+    modifiedTime: "2026-01-20T09:00:00.000Z",
     authors: ["Anyro"],
     tags: ["FTMO", "prop trading", "funded account", "futures trading", "risk management", "trading psychology"],
     images: [{

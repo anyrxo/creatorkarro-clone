@@ -201,7 +201,7 @@ export default function AIAutomationGuidePage() {
         <div className="not-prose bg-zinc-900/60 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-8 mb-12">
           <h2 className="text-3xl font-bold text-blue-300 mb-6 flex items-center gap-3">
             <Rocket className="w-8 h-8" />
-            Why AI Automation Tools Are Non-Negotiable in 2025
+            Why AI Automation Tools Are Non-Negotiable in 2026
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>

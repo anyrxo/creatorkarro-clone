@@ -138,7 +138,7 @@ export default function ComfyuiTutorialMasterAiImageGenerationIn2025() {
                   <li aria-current="page">
                     <div className="flex items-center">
                       <span className="mx-2 text-gray-500">/</span>
-                      <span className="text-gray-300">ComfyUI Tutorial: Master AI Image Generation in 2025</span>
+                      <span className="text-gray-300">ComfyUI Tutorial: Master AI Image Generation in 2026</span>
                     </div>
                   </li>
                 </ol>
@@ -146,13 +146,13 @@ export default function ComfyuiTutorialMasterAiImageGenerationIn2025() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  ComfyUI Tutorial: Master AI Image Generation in 2025
+                  ComfyUI Tutorial: Master AI Image Generation in 2026
                 </h1>
                 
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">

@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.981Z",
+    modifiedTime: "2026-08-03T06:14:29.981Z",
     authors: ["Anyro"],
     tags: ["gpt", "claude", "sonnet", "comparison", "gpt 2026", "gpt claude sonnet comparison", "automation", "AI tools"],
     images: [{

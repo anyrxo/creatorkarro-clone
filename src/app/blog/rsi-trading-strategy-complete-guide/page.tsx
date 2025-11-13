@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/rsi-trading-strategy-complete-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-10-29T19:00:00.000Z",
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-10-29T19:00:00.000Z",
     authors: ["IImagined.ai Expert Team"],
     tags: ["rsi indicator","rsi trading strategy","rsi divergence","oversold overbought","technical indicators"],
     images: [{

@@ -146,8 +146,8 @@ export default function N8nDatabaseAutomationAutomateYourDataWorkflows() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
@@ -186,7 +186,7 @@ export default function N8nDatabaseAutomationAutomateYourDataWorkflows() {
 
                 {/* Introduction */}
                 <section className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Why Database Automation Matters in 2025</h2>
+                  <h2 className="text-3xl font-bold text-white mb-6">Why Database Automation Matters in 2026</h2>
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     Database automation with N8N transforms how businesses handle data workflows. Instead of manually
                     copying data between systems, running SQL queries, or exporting reports, you can automate these

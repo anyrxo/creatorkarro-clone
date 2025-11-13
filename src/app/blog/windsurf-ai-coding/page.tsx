@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/windsurf-ai-coding",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:08:37.197Z",
+    publishedTime: "2026-01-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:08:37.197Z",
     authors: ["Anyro"],
     tags: ["windsurf ai", "ai coding tools", "programming assistant", "development productivity", "coding ai", "code generation", "automated refactoring", "intelligent suggestions"],
     images: [{
@@ -77,8 +77,8 @@ export default function WindsurfAiCoding() {
         "@id": "https://iimagined.ai/blog/windsurf-ai-coding#article",
         "headline": "Windsurf AI: Revolutionary Coding Assistant",
         "description": "Comprehensive review of Windsurf AI coding capabilities and how it compares to other AI development tools",
-        "datePublished": "2025-01-28T10:00:00.000Z",
-        "dateModified": "2025-08-03T06:08:37.198Z",
+        "datePublished": "2026-01-28T10:00:00.000Z",
+        "dateModified": "2026-08-03T06:08:37.198Z",
         "author": {
           "@type": "Person",
           "@id": "https://iimagined.ai#organization",
@@ -197,10 +197,10 @@ export default function WindsurfAiCoding() {
               <header className="mb-12">
                 <div className="mb-6">
                   <time 
-                    dateTime="2025-01-28" 
+                    dateTime="2026-01-28" 
                     className="text-sm text-blue-400 font-medium"
                   >
-                    January 28, 2025
+                    January 2026
                   </time>
                 </div>
                 

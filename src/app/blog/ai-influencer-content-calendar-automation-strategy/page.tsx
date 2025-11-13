@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-influencer-content-calendar-automation-strategy",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T11:00:00.000Z",
-    modifiedTime: "2025-01-22T11:00:00.000Z",
+    publishedTime: "2026-01-22T11:00:00.000Z",
+    modifiedTime: "2026-01-22T11:00:00.000Z",
     authors: ["Anyro"],
     tags: ["AI Influencers", "Automation", "N8N", "Content Calendar", "Social Media Marketing"],
     images: [{

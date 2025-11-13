@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/instagram-reels-viral-formula-10m-views-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-01-20T10:00:00.000Z",
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-01-20T10:00:00.000Z",
     authors: ["Anyro"],
     tags: ["instagram reels", "viral reels", "instagram algorithm", "reels views", "instagram growth", "content creation"],
     images: [{
@@ -338,7 +338,7 @@ export default function InstagramReelsViralFormula() {
                     <div className="text-green-400 font-semibold mb-3">Controversial angles:</div>
                     <ul className="space-y-2 text-gray-300">
                       <li>• "Posting daily is killing your growth (here's why)"</li>
-                      <li>• "Hashtags are dead in 2025—do this instead"</li>
+                      <li>• "Hashtags are dead in 2026—do this instead"</li>
                       <li>• "Why 90% of Instagram advice is making you fail"</li>
                       <li>• "Instagram doesn't want you to know this..."</li>
                     </ul>

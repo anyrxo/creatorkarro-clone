@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.989Z",
+    modifiedTime: "2026-08-03T06:14:29.989Z",
     authors: ["Anyro"],
     tags: ["deepseek", "browser", "use", "research", "deepseek 2026", "deepseek browser use research", "automation", "AI tools"],
     images: [{

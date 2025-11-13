@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/trading-psychology-master-your-emotions",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-10-20T12:50:48.601Z",
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-10-20T12:50:48.601Z",
     authors: ["IImagined.ai Expert Team"],
     tags: ["trading psychology","trader mindset","emotional trading","trading discipline","fear and greed"],
     images: [{

@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T09:00:00.000Z",
-    modifiedTime: "2025-01-22T09:00:00.000Z",
+    publishedTime: "2026-01-22T09:00:00.000Z",
+    modifiedTime: "2026-01-22T09:00:00.000Z",
     authors: ["Anyro"],
     tags: ["prop trading", "FTMO", "Topstep", "funded account", "trading comparison"],
     images: [{

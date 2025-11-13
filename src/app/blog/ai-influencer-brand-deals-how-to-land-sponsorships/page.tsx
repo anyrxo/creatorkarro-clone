@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-influencer-brand-deals-how-to-land-sponsorships",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T13:00:00.000Z",
-    modifiedTime: "2025-01-22T13:00:00.000Z",
+    publishedTime: "2026-01-22T13:00:00.000Z",
+    modifiedTime: "2026-01-22T13:00:00.000Z",
     authors: ["Anyro"],
     tags: ["AI Influencers", "Brand Deals", "Sponsorships", "Influencer Marketing", "Revenue"],
     images: [{
@@ -83,7 +83,7 @@ export default function AIInfluencerBrandDeals() {
             </div>
 
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              How AI Influencers Land <span className="text-green-400">$500-$50K Brand Deals</span> in 2025
+              How AI Influencers Land <span className="text-green-400">$500-$50K Brand Deals</span> in 2026
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-8">

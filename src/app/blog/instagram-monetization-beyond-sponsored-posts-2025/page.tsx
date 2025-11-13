@@ -877,7 +877,7 @@ export default function InstagramMonetization() {
                     Instagram Growth Strategies 2025
                   </h4>
                   <p className="text-gray-400 text-sm">
-                    Complete guide to growing your Instagram organically in 2025.
+                    Complete guide to growing your Instagram organically in 2026.
                   </p>
                 </Link>
                 <Link href="/blog/instagram-content-pillars-build-engaged-audience" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">

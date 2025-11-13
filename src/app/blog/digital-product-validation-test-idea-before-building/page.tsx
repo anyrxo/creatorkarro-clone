@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/digital-product-validation-test-idea-before-building",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-10-29T10:00:00.000Z",
-    modifiedTime: "2025-10-29T10:00:00.000Z",
+    publishedTime: "2026-10-29T10:00:00.000Z",
+    modifiedTime: "2026-10-29T10:00:00.000Z",
     authors: ["Anyro"],
     tags: ["digital product validation","validate product idea","pre-sell validation","MVP testing","product validation"],
     images: [{
@@ -72,8 +72,8 @@ export default function DigitalProductValidationTestYourIdeaBeforeBuilding() {
         "@id": "https://iimagined.ai/blog/digital-product-validation-test-idea-before-building#article",
         "headline": "Digital Product Validation: Test Your Idea Before Building (2026 Guide)",
         "description": "digital product validation, validate product idea, pre-sell validation, MVP testing - Expert guide from Digital Products Mastery",
-        "datePublished": "2025-10-29T10:00:00.000Z",
-        "dateModified": "2025-10-29T10:00:00.000Z",
+        "datePublished": "2026-10-29T10:00:00.000Z",
+        "dateModified": "2026-10-29T10:00:00.000Z",
         "author": {
           "@type": "Person",
           "@id": "https://iimagined.ai#organization",
@@ -146,8 +146,8 @@ export default function DigitalProductValidationTestYourIdeaBeforeBuilding() {
 
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-10-29" className="text-sm text-blue-400 font-medium">
-                    October 29, 2025
+                  <time dateTime="2026-10-29" className="text-sm text-blue-400 font-medium">
+                    October 2026
                   </time>
                 </div>
 

@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-influencer-monetization-complete-guide-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-21T10:00:00.000Z",
-    modifiedTime: "2025-01-21T10:00:00.000Z",
+    publishedTime: "2026-01-21T10:00:00.000Z",
+    modifiedTime: "2026-01-21T10:00:00.000Z",
     authors: ["Anyro"],
     tags: ["AI Influencers", "Monetization", "Revenue Streams", "Brand Deals", "Digital Products"],
     images: [{

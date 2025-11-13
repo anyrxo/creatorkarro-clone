@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-influencer-legal-ethics-complete-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T15:00:00.000Z",
-    modifiedTime: "2025-01-22T15:00:00.000Z",
+    publishedTime: "2026-01-22T15:00:00.000Z",
+    modifiedTime: "2026-01-22T15:00:00.000Z",
     authors: ["Anyro"],
     tags: ["AI Influencers", "Legal Compliance", "Ethics", "FTC Rules", "Copyright Law"],
     images: [{

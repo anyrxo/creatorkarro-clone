@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.997Z",
+    modifiedTime: "2026-08-03T06:14:29.997Z",
     authors: ["Anyro"],
     tags: ["claude", "agentic", "coding", "revolution", "claude 2026", "claude agentic coding revolution", "automation", "AI tools"],
     images: [{
@@ -116,7 +116,7 @@ export default function Claude4AgenticCodingPage() {
                 <div className="flex items-center justify-center gap-4 text-gray-400">
                     <span>By Anyro</span>
                     <span>•</span>
-                    <span>January 1, 2025</span>
+                    <span>January 2026</span>
                     <span>•</span>
                     <span>12 min read</span>
                 </div>

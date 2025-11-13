@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/cursor-ai-coding",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-25T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:08:37.210Z",
+    publishedTime: "2026-01-25T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:08:37.210Z",
     authors: ["Anyro"],
     tags: ["cursor ai", "ai coding assistant", "coding productivity", "developer tools", "ai programming", "code completion", "intelligent debugging", "pair programming"],
     images: [{
@@ -76,8 +76,8 @@ export default function CursorAiCoding() {
         "@id": "https://iimagined.ai/blog/cursor-ai-coding#article",
         "headline": "Cursor AI: The Future of Coding is Here",
         "description": "Complete guide to Cursor AI - the revolutionary coding assistant that increases developer productivity by 300%",
-        "datePublished": "2025-01-25T10:00:00.000Z",
-        "dateModified": "2025-08-03T06:08:37.210Z",
+        "datePublished": "2026-01-25T10:00:00.000Z",
+        "dateModified": "2026-08-03T06:08:37.210Z",
         "author": {
           "@type": "Person",
           "@id": "https://iimagined.ai#organization",
@@ -197,10 +197,10 @@ export default function CursorAiCoding() {
               <header className="mb-12">
                 <div className="mb-6">
                   <time 
-                    dateTime="2025-01-25" 
+                    dateTime="2026-01-25" 
                     className="text-sm text-blue-400 font-medium"
                   >
-                    January 25, 2025
+                    January 2026
                   </time>
                 </div>
                 

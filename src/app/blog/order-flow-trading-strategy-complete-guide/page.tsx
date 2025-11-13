@@ -17,8 +17,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/order-flow-trading-strategy-complete-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-21T09:00:00.000Z",
-    modifiedTime: "2025-01-21T09:00:00.000Z",
+    publishedTime: "2026-01-21T09:00:00.000Z",
+    modifiedTime: "2026-01-21T09:00:00.000Z",
     authors: ["Anyro"],
     tags: ["order flow", "volume profile", "futures trading", "institutional trading", "trading software"],
     images: [{

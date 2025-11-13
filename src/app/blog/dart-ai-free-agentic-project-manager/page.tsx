@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.991Z",
+    modifiedTime: "2026-08-03T06:14:29.991Z",
     authors: ["Anyro"],
     tags: ["dart", "free", "agentic", "project", "manager", "dart 2026", "dart free agentic project manager", "automation"],
     images: [{

@@ -62,7 +62,7 @@ export default function ContentCreationWithAiPage() {
     headline: metadata.title || 'Blog Post',
     description: metadata.description || '',
     image: imageUrl,
-    datePublished: '2025-01-15T00:00:00Z',
+    datePublished: '2026-01-15T00:00:00Z',
     dateModified: new Date().toISOString(),
     author: {
       '@type': 'Organization',

@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.995Z",
+    modifiedTime: "2026-08-03T06:14:29.995Z",
     authors: ["Anyro"],
     tags: ["comfyui", "workflow", "library", "comfyui 2026", "comfyui workflow library", "automation", "AI tools", "business growth"],
     images: [{

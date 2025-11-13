@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/instagram-content-pillars-build-engaged-audience",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T10:00:00.000Z",
-    modifiedTime: "2025-01-22T10:00:00.000Z",
+    publishedTime: "2026-01-22T10:00:00.000Z",
+    modifiedTime: "2026-01-22T10:00:00.000Z",
     authors: ["Anyro"],
     tags: ["instagram content pillars", "content strategy", "instagram growth", "social media marketing"],
     images: [{
@@ -1072,7 +1072,7 @@ export default function InstagramContentPillars() {
                   Instagram Hashtag Strategy 2025
                 </h3>
                 <p className="text-gray-400">
-                  What actually works for hashtags in 2025
+                  What actually works for hashtags in 2026
                 </p>
               </div>
             </Link>

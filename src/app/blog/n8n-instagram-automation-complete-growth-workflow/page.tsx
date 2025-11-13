@@ -23,7 +23,7 @@ export const metadata = {
     url: "https://iimagined.ai/blog/n8n-instagram-automation-complete-growth-workflow",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T11:00:00.000Z",
+    publishedTime: "2026-01-15T11:00:00.000Z",
     modifiedTime: new Date().toISOString(),
     authors: ["Anyro"],
     tags: ["n8n", "instagram automation", "social media automation", "marketing automation", "n8n workflows"],
@@ -1807,14 +1807,14 @@ Response Format:
       "name": "follower_count",
       "period": "day",
       "values": [
-        {"value": 10523, "end_time": "2025-01-15T08:00:00+0000"}
+        {"value": 10523, "end_time": "2026-01-15T08:00:00+0000"}
       ]
     },
     {
       "name": "impressions",
       "period": "day",
       "values": [
-        {"value": 45782, "end_time": "2025-01-15T08:00:00+0000"}
+        {"value": 45782, "end_time": "2026-01-15T08:00:00+0000"}
       ]
     }
   ]
@@ -1954,7 +1954,7 @@ return [{
                     </thead>
                     <tbody>
                       <tr className="text-center">
-                        <td className="p-2 border border-zinc-700">2025-01-15</td>
+                        <td className="p-2 border border-zinc-700">2026-01-15</td>
                         <td className="p-2 border border-zinc-700">10,523</td>
                         <td className="p-2 border border-zinc-700">45,782</td>
                         <td className="p-2 border border-zinc-700">32,144</td>
@@ -2467,7 +2467,7 @@ Engagement Rate: {{$json["bestPost"]["engagementRate"]}}%
                   Instagram Hashtag Strategy 2025
                 </h3>
                 <p className="text-gray-400">
-                  What actually works for hashtags in 2025
+                  What actually works for hashtags in 2026
                 </p>
               </div>
             </Link>

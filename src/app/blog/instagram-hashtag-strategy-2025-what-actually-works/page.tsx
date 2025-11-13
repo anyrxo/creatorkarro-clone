@@ -4,7 +4,7 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
   title: "Instagram Hashtag Strategy 2026: What Actually Works (Data-Backed)",
-  description: "The Instagram hashtag algorithm changed. Discover the new hashtag strategy that's generating 10K+ followers for creators in 2025. Size doesn't matter anymore.",
+  description: "The Instagram hashtag algorithm changed. Discover the new hashtag strategy that's generating 10K+ followers for creators in 2026. Size doesn't matter anymore.",
   keywords: ["instagram hashtags", "hashtag strategy", "instagram growth", "hashtag algorithm 2026", "instagram reach", "hashtag research", "social media growth", "instagram tips", "content strategy"],
   authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
@@ -12,7 +12,7 @@ export const metadata = {
   category: "Instagram Growth",
   openGraph: {
     title: "Instagram Hashtag Strategy 2026: What Actually Works (Data-Backed)",
-    description: "The Instagram hashtag algorithm changed. Discover the new hashtag strategy that's generating 10K+ followers for creators in 2025. Size doesn't matter anymore.",
+    description: "The Instagram hashtag algorithm changed. Discover the new hashtag strategy that's generating 10K+ followers for creators in 2026. Size doesn't matter anymore.",
     url: "https://iimagined.ai/blog/instagram-hashtag-strategy-2025-what-actually-works",
     siteName: "IImagined.ai",
     type: "article",
@@ -34,7 +34,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
     title: "Instagram Hashtag Strategy 2026: What Actually Works (Data-Backed)",
-    description: "The Instagram hashtag algorithm changed. Discover the new hashtag strategy that's generating 10K+ followers for creators in 2025. Size doesn't matter anymore.",
+    description: "The Instagram hashtag algorithm changed. Discover the new hashtag strategy that's generating 10K+ followers for creators in 2026. Size doesn't matter anymore.",
     images: [{
       url: "https://iimagined.ai/images/instagram-hashtag-strategy-og.jpg",
       alt: "Instagram Hashtag Strategy 2026"
@@ -158,7 +158,7 @@ export default function InstagramHashtagStrategy() {
             </h2>
 
             <p className="text-gray-300 mb-6">
-              Instagram's Adam Mosseri confirmed this in late 2025: The platform no longer uses hashtags primarily for <span className="text-white font-semibold">reach</span>. They use them for <span className="text-white font-semibold">relevance and categorization</span>.
+              Instagram's Adam Mosseri confirmed this in late 2026: The platform no longer uses hashtags primarily for <span className="text-white font-semibold">reach</span>. They use them for <span className="text-white font-semibold">relevance and categorization</span>.
             </p>
 
             <div className="bg-zinc-900 rounded-xl p-8 mb-8">

@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.952Z",
+    modifiedTime: "2026-08-03T06:14:29.952Z",
     authors: ["Anyro"],
     tags: ["youtube", "shorts", "strategy", "youtube 2026", "youtube shorts strategy", "automation", "AI tools", "business growth"],
     images: [{

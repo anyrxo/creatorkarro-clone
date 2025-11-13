@@ -16,8 +16,8 @@ export const metadata = {
     url: "https://iimagined.ai/blog/instagram-collab-feature-double-reach-overnight",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-23T10:00:00.000Z",
-    modifiedTime: "2025-01-23T10:00:00.000Z",
+    publishedTime: "2026-01-23T10:00:00.000Z",
+    modifiedTime: "2026-01-23T10:00:00.000Z",
     authors: ["Anyro"],
     tags: ["instagram collabs", "instagram collaboration", "instagram growth", "collab feature", "instagram reach"],
     images: [{
@@ -65,8 +65,8 @@ export default function InstagramCollabFeature() {
         "@id": "https://iimagined.ai/blog/instagram-collab-feature-double-reach-overnight#article",
         "headline": "Instagram Collab Feature: Double Your Reach Overnight in 2026",
         "description": "Master Instagram Collabs to double your feed post reach overnight. Learn how to find partners, create viral collab content, and gain 5K+ followers from one post.",
-        "datePublished": "2025-01-23T10:00:00.000Z",
-        "dateModified": "2025-01-23T10:00:00.000Z",
+        "datePublished": "2026-01-23T10:00:00.000Z",
+        "dateModified": "2026-01-23T10:00:00.000Z",
         "author": {
           "@type": "Person",
           "@id": "https://iimagined.ai#organization",
@@ -132,15 +132,15 @@ export default function InstagramCollabFeature() {
             <header className="mb-12">
               <div className="mb-6">
                 <time
-                  dateTime="2025-01-23"
+                  dateTime="2026-01-23"
                   className="text-sm text-blue-400 font-medium"
                 >
-                  January 23, 2025
+                  January 2026
                 </time>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Instagram Collab Feature: Double Your Reach Overnight in 2025
+                Instagram Collab Feature: Double Your Reach Overnight in 2026
               </h1>
 
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -725,7 +725,7 @@ export default function InstagramCollabFeature() {
                     Instagram Growth Strategies 2025
                   </h4>
                   <p className="text-gray-400 text-sm">
-                    Complete guide to growing your Instagram organically in 2025.
+                    Complete guide to growing your Instagram organically in 2026.
                   </p>
                 </Link>
                 <Link href="/blog/instagram-content-pillars-build-engaged-audience" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">

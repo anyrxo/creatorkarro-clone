@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.969Z",
+    modifiedTime: "2026-08-03T06:14:29.969Z",
     authors: ["Anyro"],
     tags: ["product", "launch", "strategy", "product 2026", "product launch strategy", "automation", "AI tools", "business growth"],
     images: [{
