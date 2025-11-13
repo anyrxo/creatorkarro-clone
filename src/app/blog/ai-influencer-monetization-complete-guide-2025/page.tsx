@@ -6,7 +6,7 @@ export const metadata = {
   title: "AI Influencer Monetization: Complete Guide to Making $10K-$100K/Month in 2025 | IImagined",
   description: "12 proven revenue streams for AI influencers. Pricing strategies, platform-specific tactics, and real case studies of influencers earning $10K-$100K monthly.",
   keywords: ["AI influencer monetization", "virtual influencer revenue", "sponsored posts pricing", "AI influencer income", "OnlyFans AI", "Patreon AI creator", "brand deals"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -18,7 +18,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-21T10:00:00.000Z",
     modifiedTime: "2025-01-21T10:00:00.000Z",
-    authors: ["Karro"],
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Monetization", "Revenue Streams", "Brand Deals", "Digital Products"],
     images: [{
       url: "https://iimagined.ai/images/ai-influencer-monetization-og.jpg",

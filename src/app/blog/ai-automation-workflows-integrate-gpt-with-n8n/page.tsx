@@ -1,44 +1,47 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
-import Head from 'next/head'
+import { Workflow, GitBranch, Zap, Code, AlertCircle, CheckCircle, TrendingUp, Cpu, Database, Lock, Gauge, Wrench, Lightbulb, Rocket, Star, ArrowRight } from 'lucide-react'
+import BlogPostLayout from '@/components/BlogPostLayout'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "AI Automation Workflows: Integrate GPT with N8N",
-  description: "ai automation, n8n ai integration, gpt automation - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+ in student revenue",
-  keywords: ["ai automation","n8n ai integration","gpt automation","ai workflow automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "AI Automation Workflows: Integrate GPT with N8N | Complete Technical Guide 2025",
+  description: "Expert guide on integrating GPT and AI models with N8N workflows. Learn production-ready patterns, error handling, cost optimization, and advanced techniques from 4,000+ successful students.",
+  keywords: ["ai automation", "n8n ai integration", "gpt automation", "ai workflow automation", "n8n workflows", "chatgpt api", "workflow builder", "business automation"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
-  publisher: "IImagined.ai", 
-  category: "Technology",
+  publisher: "IImagined.ai",
+  category: "AI Automations",
   openGraph: {
-    title: "AI Automation Workflows: Integrate GPT with N8N",
-    description: "ai automation, n8n ai integration, gpt automation - Expert guide from the creators of N8N AI Automations",
+    title: "AI Automation Workflows: Integrate GPT with N8N - Technical Guide",
+    description: "Expert guide on production-ready GPT + N8N workflows with code examples and best practices",
     url: "https://iimagined.ai/blog/ai-automation-workflows-integrate-gpt-with-n8n",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-08-05T07:10:42.598Z",
-    modifiedTime: "2025-08-05T07:10:42.598Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["ai automation","n8n ai integration","gpt automation","ai workflow automation"],
+    modifiedTime: new Date().toISOString(),
+    authors: ["Anyro"],
+    tags: ["ai automation", "n8n ai integration", "gpt automation", "workflow automation"],
     images: [{
-      url: "https://iimagined.ai/images/blog/ai-automation-workflows-integrate-gpt-with-n8n-og.jpg",
+      url: "https://iimagined.ai/images/blog/n8n-gpt-integration-og.jpg",
       width: 1200,
       height: 630,
-      alt: "AI Automation Workflows: Integrate GPT with N8N",
+      alt: "N8N GPT Integration Technical Guide",
       type: "image/jpeg"
     }],
     locale: "en_US"
   },
   twitter: {
     card: "summary_large_image",
-    site: "@iimagined_ai",
-    creator: "@iimagined_ai",
+    site: "@creatorkarro",
+    creator: "@creatorkarro",
     title: "AI Automation Workflows: Integrate GPT with N8N",
-    description: "ai automation, n8n ai integration, gpt automation - Expert guide from the creators of N8N AI Automations",
+    description: "Production-ready GPT + N8N workflows with code examples",
     images: [{
-      url: "https://iimagined.ai/images/blog/ai-automation-workflows-integrate-gpt-with-n8n-og.jpg",
-      alt: "AI Automation Workflows: Integrate GPT with N8N"
+      url: "https://iimagined.ai/images/blog/n8n-gpt-integration-og.jpg",
+      alt: "N8N GPT Integration Guide"
     }]
   },
   robots: {
@@ -48,211 +51,203 @@ export const metadata = {
       index: true,
       follow: true,
       "max-video-preview": -1,
-      "max-image-preview": "large", 
+      "max-image-preview": "large",
       "max-snippet": -1
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/ai-automation-workflows-integrate-gpt-with-n8n",
-    types: {
-      "application/rss+xml": [
-        { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
-      ]
+    canonical: "https://iimagined.ai/blog/ai-automation-workflows-integrate-gpt-with-n8n"
+  }
+}
+
+// Generate structured data for SEO
+function generateBlogPostSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: 'AI Automation Workflows: Integrate GPT with N8N',
+    description: 'Complete technical guide on integrating GPT and AI models with N8N workflows including production-ready patterns and code examples',
+    author: {
+      '@type': 'Person',
+      name: 'Anyro',
+      jobTitle: 'Founder & Creator Entrepreneur',
+      description: '4,000+ students taught AI automation and business growth'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'IImagined.ai',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://iimagined.ai/logo.png'
+      }
+    },
+    datePublished: '2025-08-05T07:10:42.598Z',
+    dateModified: new Date().toISOString(),
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://iimagined.ai/blog/ai-automation-workflows-integrate-gpt-with-n8n'
+    },
+    about: {
+      '@type': 'SoftwareApplication',
+      name: 'N8N Workflow Automation',
+      applicationCategory: 'BusinessApplication'
     }
   }
 }
 
 export default function AiAutomationWorkflowsIntegrateGptWithN8n() {
-  // Advanced JSON-LD Structured Data
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": "https://iimagined.ai/blog/ai-automation-workflows-integrate-gpt-with-n8n#article",
-        "headline": "AI Automation Workflows: Integrate GPT with N8N",
-        "description": "ai automation, n8n ai integration, gpt automation - Expert guide from the creators of N8N AI Automations",
-        "datePublished": "2025-08-05T07:10:42.598Z",
-        "dateModified": "2025-08-05T07:10:42.598Z",
-        "author": {
-          "@type": "Organization",
-          "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
-          "url": "https://iimagined.ai"
-        },
-        "publisher": {
-          "@type": "Organization", 
-          "@id": "https://iimagined.ai#organization"
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/ai-automation-workflows-integrate-gpt-with-n8n"
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://iimagined.ai/images/blog/ai-automation-workflows-integrate-gpt-with-n8n-og.jpg",
-          "width": 1200,
-          "height": 630
-        },
-        "keywords": "ai automation, n8n ai integration, gpt automation, ai workflow automation",
-        "articleSection": "AI Integration",
-        "about": {
-          "@type": "Course",
-          "name": "N8N AI Automations",
-          "description": "Advanced Workflow Automation with AI Integration",
-          "provider": {
-            "@type": "Organization",
-            "name": "IImagined.ai"
-          }
-        }
-      }
-    ]
-  };
+  const relatedPosts = [
+    {
+      title: "AI Automation for Beginners: Your Complete 30-Day Roadmap",
+      slug: "ai-automation-beginners-guide",
+      description: "Start your AI automation journey with this comprehensive beginner's guide covering N8N, ChatGPT, and essential workflows.",
+      readTime: 18
+    },
+    {
+      title: "AI Automation Tools That Built My $88K/Month Business",
+      slug: "ai-automation-guide-toxic-seo",
+      description: "Complete guide revealing 254+ tested AI automation tools and exact workflows that generated $1.2M in automated revenue.",
+      readTime: 28
+    },
+    {
+      title: "Advanced ComfyUI Workflows for Professional AI Art",
+      slug: "advanced-comfyui-workflows-professional-ai-art",
+      description: "Master advanced ComfyUI techniques including SDXL workflows, LoRA stacking, and ControlNet for professional AI art.",
+      readTime: 25
+    }
+  ]
 
-  return (<div className="min-h-screen bg-dark">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        
-        <article className="py-16">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              
-              {/* Breadcrumbs */}
-              <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
-                <ol className="inline-flex items-center space-x-1 md:space-x-3">
-                  <li className="inline-flex items-center">
-                    <Link href="/" className="text-gray-400 hover:text-white transition-colors">
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <div className="flex items-center">
-                      <span className="mx-2 text-gray-500">/</span>
-                      <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-                        Blog
-                      </Link>
-                    </div>
-                  </li>
-                  <li aria-current="page">
-                    <div className="flex items-center">
-                      <span className="mx-2 text-gray-500">/</span>
-                      <span className="text-gray-300">AI Automation Workflows: Integrate GPT with N8N</span>
-                    </div>
-                  </li>
-                </ol>
-              </nav>
-              
-              <header className="mb-12">
-                <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
-                  </time>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBlogPostSchema()) }}
+      />
+
+      <BlogPostLayout
+        category="AI Automations"
+        title="AI Automation Workflows: Integrate GPT with N8N"
+        description="Expert technical guide on integrating GPT and AI models with N8N workflows. Learn production-ready patterns, error handling, cost optimization, and advanced techniques with complete code examples."
+        date="Aug 5, 2025"
+        readTime={35}
+        relatedPosts={relatedPosts}
+      >
+        {/* Introduction */}
+        <div className="not-prose bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-8 mb-12">
+          <h2 className="text-3xl font-bold text-blue-300 mb-4 flex items-center gap-3">
+            <Rocket className="w-8 h-8" />
+            The Power of AI-Driven Automation
+          </h2>
+          <p className="text-lg text-gray-200 mb-4 leading-relaxed">
+            In 2025, the automation landscape has fundamentally shifted. Gone are the days when automation meant simple trigger-action sequences. Today's businesses require <strong className="text-white">intelligent systems that can make decisions</strong>, understand context, and adapt to changing conditions.
+          </p>
+          <p className="text-lg text-gray-200 leading-relaxed">
+            This is where integrating <strong className="text-blue-300">GPT with N8N</strong> creates unprecedented opportunities. N8N's visual workflow builder combined with GPT's natural language understanding creates a powerful automation platform that can handle complex business logic, customer interactions, content generation, data analysis, and much more.
+          </p>
+        </div>
+
+        <h2>What You'll Learn in This Guide</h2>
+        <p>
+          Throughout this comprehensive technical guide, you'll learn how to build production-ready AI workflows that solve real business problems:
+        </p>
+
+        <div className="not-prose grid md:grid-cols-2 gap-4 mb-12">
+          {[
+            { icon: Workflow, text: "Architecture patterns for AI + N8N integration" },
+            { icon: Code, text: "Production-ready code examples and workflows" },
+            { icon: Lock, text: "Security best practices and error handling" },
+            { icon: Gauge, text: "Cost optimization and performance tuning" },
+            { icon: Lightbulb, text: "Real-world use cases with full implementations" },
+            { icon: Wrench, text: "Troubleshooting common integration issues" }
+          ].map((item, idx) => (
+            <div key={idx} className="flex items-center gap-3 bg-zinc-800/60 p-4 rounded-xl border border-blue-500/20">
+              <item.icon className="w-6 h-6 text-blue-400 flex-shrink-0" />
+              <span className="text-gray-200">{item.text}</span>
+            </div>
+          ))}
+        </div>
+
+        <h2>Understanding AI + N8N Architecture</h2>
+        <p>
+          Before diving into implementations, let's understand how N8N communicates with AI services and the different integration methods available.
+        </p>
+
+        <h3>N8N Integration Methods</h3>
+        <p>
+          N8N provides several methods to integrate with AI services like OpenAI's GPT, Anthropic's Claude, and other LLMs:
+        </p>
+
+        <div className="not-prose space-y-4 mb-10">
+          {[
+            { method: "HTTP Request Node", desc: "Direct API calls to AI providers (most flexible)", best: "Custom implementations, multiple AI providers" },
+            { method: "OpenAI Node", desc: "Pre-built integration for OpenAI services (easiest to start)", best: "Quick prototypes, standard use cases" },
+            { method: "AI Agent Nodes", desc: "Advanced nodes that combine multiple AI capabilities", best: "Complex reasoning, tool-using agents" },
+            { method: "Custom Code Nodes", desc: "JavaScript/Python for complex AI orchestration", best: "Advanced logic, custom data processing" }
+          ].map((item, idx) => (
+            <div key={idx} className="bg-zinc-800/60 rounded-xl p-6 border border-cyan-500/20">
+              <div className="flex items-start gap-4">
+                <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">{idx + 1}</div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-white mb-2">{item.method}</h4>
+                  <p className="text-gray-200 mb-3">{item.desc}</p>
+                  <p className="text-sm text-cyan-300"><strong>Best for:</strong> {item.best}</p>
                 </div>
-                
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  AI Automation Workflows: Integrate GPT with N8N
-                </h1>
-                
-                <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  Expert guide from the creators of N8N AI Automations - trusted by 127K+ students who've generated $2.7M+ in revenue.
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-8">
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">ai automation</span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">n8n ai integration</span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">gpt automation</span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">ai workflow automation</span>
-                </div>
-                
-                <div className="flex items-center space-x-6 text-sm text-gray-400 pb-8 border-b border-gray-700">
-                  <div className="flex items-center space-x-2">
-                    <span>📚</span>
-                    <span>Expert Guide</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span>🎯</span>
-                    <span>AI Integration</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span>⭐</span>
-                    <span>127K+ Students</span>
-                  </div>
-                </div>
-              </header>
-              
-              <div className="prose prose-lg prose-invert max-w-none">
+              </div>
+            </div>
+          ))}
+        </div>
 
-                {/* Introduction */}
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Introduction: The Power of AI-Driven Automation</h2>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    In 2025, the automation landscape has fundamentally shifted. Gone are the days when automation meant simple trigger-action sequences.
-                    Today's businesses require intelligent systems that can make decisions, understand context, and adapt to changing conditions.
-                    This is where integrating GPT (and other AI models) with N8N creates unprecedented opportunities.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    N8N's visual workflow builder combined with GPT's natural language understanding creates a powerful automation platform that can
-                    handle complex business logic, customer interactions, content generation, data analysis, and much more. Throughout this guide,
-                    you'll learn how to build production-ready AI workflows that solve real business problems.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    Whether you're automating customer support, generating personalized content, analyzing data patterns, or building intelligent
-                    routing systems, this comprehensive tutorial will give you the technical knowledge and practical examples you need to succeed.
-                  </p>
-                </div>
-
-                {/* Understanding the Architecture */}
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Understanding AI + N8N Architecture</h2>
-
-                  <h3 className="text-2xl font-bold text-white mb-4">How N8N Communicates with AI Models</h3>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    N8N provides several methods to integrate with AI services like OpenAI's GPT, Anthropic's Claude, and other LLMs:
-                  </p>
-
-                  <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
-                    <li><strong>HTTP Request Node:</strong> Direct API calls to AI providers (most flexible)</li>
-                    <li><strong>OpenAI Node:</strong> Pre-built integration for OpenAI services (easiest to start)</li>
-                    <li><strong>AI Agent Nodes:</strong> Advanced nodes that combine multiple AI capabilities</li>
-                    <li><strong>Custom Code Nodes:</strong> JavaScript/Python for complex AI orchestration</li>
-                  </ul>
-
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">Workflow Architecture Pattern:</h4>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        {/* Architecture Pattern */}
+        <div className="not-prose bg-black/50 border border-blue-500/30 rounded-xl p-6 mb-12">
+          <h3 className="text-2xl font-bold text-blue-300 mb-4 flex items-center gap-2">
+            <GitBranch className="w-6 h-6" />
+            Workflow Architecture Pattern
+          </h3>
+          <pre className="text-sm text-gray-300 overflow-x-auto font-mono">
 {`Trigger → Data Preparation → AI Processing → Response Handling → Action
 
 Example Flow:
-Webhook Trigger
-  ↓ (receives customer email)
-Extract/Clean Data
-  ↓ (parse email content, metadata)
-GPT Analysis
-  ↓ (classify intent, generate response)
-Decision Logic
-  ↓ (route based on AI output)
-Multiple Actions
-  ↓ (send email, update CRM, log data)`}
-                    </pre>
-                  </div>
-                </div>
+┌──────────────────┐
+│ Webhook Trigger  │  (receives customer email)
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ Extract/Clean    │  (parse email content, metadata)
+│ Data Node        │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ GPT Analysis     │  (classify intent, generate response)
+│ API Call         │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ Decision Logic   │  (route based on AI output)
+│ Switch Node      │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ Multiple Actions │  (send email, update CRM, log data)
+└──────────────────┘`}
+          </pre>
+        </div>
 
-                {/* Tutorial 1: Basic GPT Integration */}
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Tutorial 1: Your First GPT + N8N Workflow</h2>
+        <h2>Tutorial 1: Your First GPT + N8N Workflow</h2>
+        <p>
+          Let's build a practical workflow that receives customer inquiries via webhook, uses GPT to classify the intent and urgency, then routes the ticket appropriately. This is a real-world pattern used in production support systems.
+        </p>
 
-                  <h3 className="text-2xl font-bold text-white mb-4">Building an Intelligent Customer Support Classifier</h3>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    Let's build a practical workflow that receives customer inquiries via webhook, uses GPT to classify the intent
-                    and urgency, then routes the ticket appropriately.
-                  </p>
+        <h3>Building an Intelligent Customer Support Classifier</h3>
 
-                  <h4 className="text-xl font-semibold text-blue-300 mb-3">Step 1: Set Up the Webhook Trigger</h4>
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <p className="text-gray-300 mb-4">In N8N, add a Webhook node with these settings:</p>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <div className="not-prose mb-10">
+          <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-2xl p-8">
+            <h4 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <Workflow className="w-7 h-7 text-blue-400" />
+              Step 1: Set Up the Webhook Trigger
+            </h4>
+            <p className="text-gray-200 mb-4">In N8N, add a Webhook node with these settings:</p>
+            <div className="bg-black/50 rounded-xl p-6 border border-blue-500/20">
+              <pre className="text-sm text-green-300 overflow-x-auto font-mono">
 {`{
   "httpMethod": "POST",
   "path": "customer-support",
@@ -261,17 +256,23 @@ Multiple Actions
     "rawBody": false
   }
 }`}
-                    </pre>
-                    <p className="text-gray-400 text-sm mt-4">
-                      This webhook will receive POST requests with customer inquiry data at:
-                      https://your-n8n-instance.com/webhook/customer-support
-                    </p>
-                  </div>
+              </pre>
+            </div>
+            <p className="text-gray-400 text-sm mt-4">
+              📌 This webhook will receive POST requests with customer inquiry data at: <code className="bg-zinc-800 px-2 py-1 rounded text-cyan-300">https://your-n8n-instance.com/webhook/customer-support</code>
+            </p>
+          </div>
+        </div>
 
-                  <h4 className="text-xl font-semibold text-blue-300 mb-3">Step 2: Prepare Data for GPT</h4>
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <p className="text-gray-300 mb-4">Add a Function node to structure the data for GPT analysis:</p>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <div className="not-prose mb-10">
+          <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-2xl p-8">
+            <h4 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <Code className="w-7 h-7 text-cyan-400" />
+              Step 2: Prepare Data for GPT
+            </h4>
+            <p className="text-gray-200 mb-4">Add a Function node to structure the data for GPT analysis:</p>
+            <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/20">
+              <pre className="text-sm text-cyan-300 overflow-x-auto font-mono">
 {`// Extract and clean customer inquiry data
 const customerEmail = $input.item.json.email;
 const subject = $input.item.json.subject;
@@ -301,13 +302,20 @@ return {
     originalData: $input.item.json
   }
 };`}
-                    </pre>
-                  </div>
+              </pre>
+            </div>
+          </div>
+        </div>
 
-                  <h4 className="text-xl font-semibold text-blue-300 mb-3">Step 3: Call OpenAI GPT API</h4>
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <p className="text-gray-300 mb-4">Add an HTTP Request node to call OpenAI:</p>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <div className="not-prose mb-10">
+          <div className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 border border-purple-500/30 rounded-2xl p-8">
+            <h4 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <Zap className="w-7 h-7 text-purple-400" />
+              Step 3: Call OpenAI GPT API
+            </h4>
+            <p className="text-gray-200 mb-4">Add an HTTP Request node to call OpenAI:</p>
+            <div className="bg-black/50 rounded-xl p-6 border border-purple-500/20">
+              <pre className="text-sm text-purple-300 overflow-x-auto font-mono">
 {`{
   "method": "POST",
   "url": "https://api.openai.com/v1/chat/completions",
@@ -332,17 +340,29 @@ return {
     "response_format": { "type": "json_object" }
   }
 }`}
-                    </pre>
-                    <p className="text-gray-400 text-sm mt-4">
-                      Note: Store your API key in N8N's credentials manager for security. The temperature of 0.3 ensures consistent,
-                      deterministic responses for classification tasks.
-                    </p>
-                  </div>
+              </pre>
+            </div>
+            <div className="mt-4 p-4 bg-purple-500/10 rounded-lg border border-purple-500/30">
+              <p className="text-purple-300 font-semibold mb-2 flex items-center gap-2">
+                <Lock className="w-5 h-5" />
+                Security Note
+              </p>
+              <p className="text-gray-200 text-sm">
+                Store your API key in N8N's credentials manager for security. The temperature of 0.3 ensures consistent, deterministic responses for classification tasks.
+              </p>
+            </div>
+          </div>
+        </div>
 
-                  <h4 className="text-xl font-semibold text-blue-300 mb-3">Step 4: Parse and Route Response</h4>
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <p className="text-gray-300 mb-4">Add a Function node to parse GPT's response:</p>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <div className="not-prose mb-10">
+          <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-2xl p-8">
+            <h4 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <Database className="w-7 h-7 text-green-400" />
+              Step 4: Parse and Route Response
+            </h4>
+            <p className="text-gray-200 mb-4">Add a Function node to parse GPT's response:</p>
+            <div className="bg-black/50 rounded-xl p-6 border border-green-500/20">
+              <pre className="text-sm text-green-300 overflow-x-auto font-mono">
 {`// Parse GPT response
 const gptResponse = JSON.parse(
   $input.item.json.choices[0].message.content
@@ -359,56 +379,57 @@ return {
     aiProcessingTime: new Date().toISOString()
   }
 };`}
-                    </pre>
-                  </div>
+              </pre>
+            </div>
 
-                  <h4 className="text-xl font-semibold text-blue-300 mb-3">Step 5: Add Conditional Routing</h4>
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <p className="text-gray-300 mb-4">Use a Switch node to route based on urgency:</p>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+            <p className="text-gray-200 mt-6 mb-4">Use a Switch node to route based on urgency:</p>
+            <div className="bg-black/50 rounded-xl p-6 border border-green-500/20">
+              <pre className="text-sm text-yellow-300 overflow-x-auto font-mono">
 {`Switch Routes:
 - Route 0 (Critical): {{ $json.urgencyLevel === 'critical' }}
-- Route 1 (High): {{ $json.urgencyLevel === 'high' }}
-- Route 2 (Medium): {{ $json.urgencyLevel === 'medium' }}
-- Route 3 (Low): {{ $json.urgencyLevel === 'low' }}`}
-                    </pre>
-                    <p className="text-gray-400 text-sm mt-4">
-                      Each route can trigger different actions: critical tickets go to Slack immediately,
-                      high urgency creates priority tickets, etc.
-                    </p>
-                  </div>
-                </div>
+- Route 1 (High):     {{ $json.urgencyLevel === 'high' }}
+- Route 2 (Medium):   {{ $json.urgencyLevel === 'medium' }}
+- Route 3 (Low):      {{ $json.urgencyLevel === 'low' }}`}
+              </pre>
+            </div>
+            <p className="text-gray-400 text-sm mt-4">
+              💡 Each route can trigger different actions: critical tickets go to Slack immediately, high urgency creates priority tickets, etc.
+            </p>
+          </div>
+        </div>
 
-                {/* Tutorial 2: Advanced AI Workflows */}
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Tutorial 2: Advanced AI Workflow Patterns</h2>
+        <h2>Tutorial 2: Advanced AI Workflow Patterns</h2>
+        <p>
+          Advanced workflows often require multiple AI calls with context preservation. Here's how to build a content generation system that analyzes topics, researches context, then generates tailored content.
+        </p>
 
-                  <h3 className="text-2xl font-bold text-white mb-4">Multi-Step AI Processing with Context</h3>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    Advanced workflows often require multiple AI calls with context preservation. Here's how to build
-                    a content generation system that analyzes topics, researches context, then generates tailored content.
-                  </p>
+        <h3>Multi-Step AI Processing with Context</h3>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">Pattern: AI Chain Processing</h4>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <div className="not-prose bg-zinc-900/60 border border-blue-500/20 rounded-xl p-8 mb-10">
+          <h4 className="text-xl font-bold text-blue-300 mb-4">Pattern: AI Chain Processing</h4>
+          <pre className="text-sm text-gray-300 overflow-x-auto font-mono">
 {`Workflow Structure:
+
 1. Topic Analysis (GPT-4)
    ↓ Extract key themes, target audience, content goals
+
 2. Research Phase (GPT-4 + Web Search)
    ↓ Gather relevant information, current trends
+
 3. Outline Generation (GPT-4)
    ↓ Structure content with sections
+
 4. Content Writing (GPT-4)
    ↓ Generate full content with context
+
 5. Quality Check (GPT-4)
    ↓ Review for accuracy, tone, completeness`}
-                    </pre>
-                  </div>
+          </pre>
+        </div>
 
-                  <h4 className="text-xl font-semibold text-blue-300 mb-3">Implementing Context-Aware AI Calls</h4>
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <h4>Implementing Context-Aware AI Calls</h4>
+        <div className="not-prose bg-black/50 border border-cyan-500/20 rounded-xl p-6 mb-12">
+          <pre className="text-sm text-cyan-300 overflow-x-auto font-mono">
 {`// Function node: Build context from previous AI outputs
 const topic = $('Webhook').item.json.topic;
 const analysis = $('TopicAnalysis').item.json;
@@ -441,23 +462,24 @@ return {
     }
   }
 };`}
-                    </pre>
-                  </div>
-                </div>
+          </pre>
+        </div>
 
-                {/* Tutorial 3: Error Handling and Optimization */}
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Tutorial 3: Production-Ready AI Workflows</h2>
+        <h2>Tutorial 3: Production-Ready AI Workflows</h2>
+        <p>
+          AI APIs can fail for various reasons: rate limits, timeouts, invalid responses, or service outages. Production workflows must handle these gracefully with proper error handling and retry logic.
+        </p>
 
-                  <h3 className="text-2xl font-bold text-white mb-4">Error Handling and Retry Logic</h3>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    AI APIs can fail for various reasons: rate limits, timeouts, invalid responses, or service outages.
-                    Production workflows must handle these gracefully.
-                  </p>
+        <h3>Error Handling and Retry Logic</h3>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">Implementing Retry Logic:</h4>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <div className="not-prose space-y-6 mb-12">
+          <div className="bg-zinc-800/60 rounded-xl p-6 border border-yellow-500/20">
+            <h4 className="text-xl font-bold text-yellow-300 mb-4 flex items-center gap-2">
+              <AlertCircle className="w-6 h-6" />
+              Implementing Retry Logic
+            </h4>
+            <div className="bg-black/50 rounded-lg p-6 border border-yellow-500/10">
+              <pre className="text-sm text-yellow-300 overflow-x-auto font-mono">
 {`// Configure on HTTP Request node
 {
   "retry": {
@@ -494,34 +516,39 @@ try {
     }
   };
 }`}
-                    </pre>
-                  </div>
+              </pre>
+            </div>
+          </div>
 
-                  <h3 className="text-2xl font-bold text-white mb-4">Cost Optimization Strategies</h3>
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <ul className="list-disc list-inside text-gray-300 space-y-3">
-                      <li>
-                        <strong>Token Management:</strong> Use GPT-3.5-turbo for simple tasks, reserve GPT-4 for complex reasoning.
-                        Track token usage with a Function node after each AI call.
-                      </li>
-                      <li>
-                        <strong>Response Caching:</strong> Cache common AI responses in Redis or N8N's database to avoid redundant API calls.
-                        Especially useful for classification or FAQ-style queries.
-                      </li>
-                      <li>
-                        <strong>Prompt Optimization:</strong> Shorter, more specific prompts reduce token costs. Test different prompt structures
-                        to find the most efficient version that maintains quality.
-                      </li>
-                      <li>
-                        <strong>Batch Processing:</strong> When possible, batch multiple items into a single AI request rather than making
-                        individual calls for each item.
-                      </li>
-                    </ul>
-                  </div>
+          <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-xl p-6 border border-green-500/20">
+            <h4 className="text-xl font-bold text-green-300 mb-4 flex items-center gap-2">
+              <TrendingUp className="w-6 h-6" />
+              Cost Optimization Strategies
+            </h4>
+            <ul className="space-y-3 text-gray-200">
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <span><strong className="text-white">Token Management:</strong> Use GPT-3.5-turbo for simple tasks, reserve GPT-4 for complex reasoning. Track token usage with a Function node after each AI call.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <span><strong className="text-white">Response Caching:</strong> Cache common AI responses in Redis or N8N's database to avoid redundant API calls. Especially useful for classification or FAQ-style queries.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <span><strong className="text-white">Prompt Optimization:</strong> Shorter, more specific prompts reduce token costs. Test different prompt structures to find the most efficient version that maintains quality.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <span><strong className="text-white">Batch Processing:</strong> When possible, batch multiple items into a single AI request rather than making individual calls for each item.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                  <h4 className="text-xl font-semibold text-blue-300 mb-3">Token Tracking Implementation:</h4>
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <h4>Token Tracking Implementation</h4>
+        <div className="not-prose bg-black/50 border border-blue-500/20 rounded-xl p-6 mb-12">
+          <pre className="text-sm text-blue-300 overflow-x-auto font-mono">
 {`// Function node: Track and log token usage
 const response = $input.item.json;
 const usage = response.usage;
@@ -550,68 +577,71 @@ return {
     }
   }
 };`}
-                    </pre>
-                  </div>
-                </div>
+          </pre>
+        </div>
 
-                {/* Real-World Use Cases */}
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Real-World AI + N8N Use Cases</h2>
+        <h2>Real-World AI + N8N Use Cases</h2>
+        <p>
+          Here are four production-ready use cases that demonstrate the power of GPT + N8N integration, complete with workflow patterns and expected results.
+        </p>
 
-                  <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-6 rounded-lg mb-6">
-                    <h3 className="text-xl font-bold text-white mb-4">1. Intelligent Email Response System</h3>
-                    <p className="text-gray-300 mb-4">
-                      Monitor Gmail/Outlook inbox → GPT classifies email type → Generate contextual draft response →
-                      Human reviews → Send or schedule
-                    </p>
-                    <p className="text-gray-400 text-sm">
-                      <strong>Key Benefit:</strong> Reduces email response time by 70%, ensures consistent tone and messaging
-                    </p>
-                  </div>
+        <div className="not-prose space-y-6 mb-12">
+          {[
+            {
+              title: "Intelligent Email Response System",
+              workflow: "Monitor Gmail/Outlook inbox → GPT classifies email type → Generate contextual draft response → Human reviews → Send or schedule",
+              benefit: "Reduces email response time by 70%, ensures consistent tone and messaging",
+              color: "blue"
+            },
+            {
+              title: "Content Personalization Engine",
+              workflow: "User visits website → Webhook triggers → GPT analyzes user behavior/history → Generates personalized content recommendations → Updates CMS dynamically",
+              benefit: "Increases engagement rates by 40%, improves conversion through personalization",
+              color: "purple"
+            },
+            {
+              title: "Data Analysis & Reporting Automation",
+              workflow: "Scheduled trigger → Pull data from multiple sources → GPT analyzes trends and anomalies → Generates executive summary → Sends formatted report",
+              benefit: "Saves 10+ hours per week on reporting, provides actionable insights automatically",
+              color: "green"
+            },
+            {
+              title: "Social Media Content Pipeline",
+              workflow: "RSS feed monitor → GPT generates unique perspective on trending topics → Creates platform-specific content (Twitter, LinkedIn, Instagram) → Schedules posts → Monitors engagement",
+              benefit: "Maintains consistent social presence, adapts content to platform best practices",
+              color: "cyan"
+            }
+          ].map((useCase, idx) => (
+            <div key={idx} className={`bg-gradient-to-r from-${useCase.color}-500/10 to-${useCase.color}-600/10 border border-${useCase.color}-500/30 rounded-xl p-6`}>
+              <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                <Star className="w-6 h-6 text-${useCase.color}-400" />
+                {idx + 1}. {useCase.title}
+              </h3>
+              <p className="text-gray-200 mb-4">
+                <strong className="text-white">Workflow:</strong> {useCase.workflow}
+              </p>
+              <p className="text-sm text-gray-300">
+                <strong className={`text-${useCase.color}-300`}>Key Benefit:</strong> {useCase.benefit}
+              </p>
+            </div>
+          ))}
+        </div>
 
-                  <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-6 rounded-lg mb-6">
-                    <h3 className="text-xl font-bold text-white mb-4">2. Content Personalization Engine</h3>
-                    <p className="text-gray-300 mb-4">
-                      User visits website → Webhook triggers → GPT analyzes user behavior/history → Generates personalized
-                      content recommendations → Updates CMS dynamically
-                    </p>
-                    <p className="text-gray-400 text-sm">
-                      <strong>Key Benefit:</strong> Increases engagement rates by 40%, improves conversion through personalization
-                    </p>
-                  </div>
+        <h2>Troubleshooting Common Issues</h2>
+        <p>
+          Here are the most common issues you'll encounter when integrating GPT with N8N, along with proven solutions from production implementations.
+        </p>
 
-                  <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-6 rounded-lg mb-6">
-                    <h3 className="text-xl font-bold text-white mb-4">3. Data Analysis & Reporting Automation</h3>
-                    <p className="text-gray-300 mb-4">
-                      Scheduled trigger → Pull data from multiple sources → GPT analyzes trends and anomalies →
-                      Generates executive summary → Sends formatted report
-                    </p>
-                    <p className="text-gray-400 text-sm">
-                      <strong>Key Benefit:</strong> Saves 10+ hours per week on reporting, provides actionable insights automatically
-                    </p>
-                  </div>
-
-                  <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-6 rounded-lg mb-6">
-                    <h3 className="text-xl font-bold text-white mb-4">4. Social Media Content Pipeline</h3>
-                    <p className="text-gray-300 mb-4">
-                      RSS feed monitor → GPT generates unique perspective on trending topics → Creates platform-specific
-                      content (Twitter, LinkedIn, Instagram) → Schedules posts → Monitors engagement
-                    </p>
-                    <p className="text-gray-400 text-sm">
-                      <strong>Key Benefit:</strong> Maintains consistent social presence, adapts content to platform best practices
-                    </p>
-                  </div>
-                </div>
-
-                {/* Troubleshooting Section */}
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Troubleshooting Common Issues</h2>
-
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <h3 className="text-xl font-semibold text-red-300 mb-4">Issue: "Invalid JSON Response from GPT"</h3>
-                    <p className="text-gray-300 mb-3"><strong>Cause:</strong> GPT sometimes adds markdown formatting or explanatory text</p>
-                    <p className="text-gray-300 mb-3"><strong>Solution:</strong></p>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <div className="not-prose space-y-6 mb-12">
+          <div className="bg-zinc-800/60 rounded-xl p-6 border border-red-500/30">
+            <h3 className="text-xl font-bold text-red-300 mb-3 flex items-center gap-2">
+              <AlertCircle className="w-6 h-6" />
+              Issue: "Invalid JSON Response from GPT"
+            </h3>
+            <p className="text-gray-200 mb-2"><strong>Cause:</strong> GPT sometimes adds markdown formatting or explanatory text</p>
+            <p className="text-gray-200 mb-3"><strong>Solution:</strong></p>
+            <div className="bg-black/50 rounded-lg p-4 border border-red-500/20">
+              <pre className="text-sm text-red-300 overflow-x-auto font-mono">
 {`// Add this parsing logic
 let content = response.choices[0].message.content;
 
@@ -625,98 +655,128 @@ if (jsonMatch) {
 }
 
 const parsed = JSON.parse(content);`}
-                    </pre>
-                  </div>
+              </pre>
+            </div>
+          </div>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <h3 className="text-xl font-semibold text-red-300 mb-4">Issue: "Rate Limit Exceeded"</h3>
-                    <p className="text-gray-300 mb-3"><strong>Cause:</strong> Too many API requests in short timeframe</p>
-                    <p className="text-gray-300 mb-3"><strong>Solutions:</strong></p>
-                    <ul className="list-disc list-inside text-gray-300 space-y-2">
-                      <li>Implement exponential backoff retry strategy</li>
-                      <li>Add a rate limiter node before AI calls (limit to X requests per minute)</li>
-                      <li>Use N8N's built-in rate limiting features</li>
-                      <li>Consider upgrading your OpenAI tier for higher limits</li>
-                    </ul>
-                  </div>
+          <div className="bg-zinc-800/60 rounded-xl p-6 border border-orange-500/30">
+            <h3 className="text-xl font-bold text-orange-300 mb-3 flex items-center gap-2">
+              <AlertCircle className="w-6 h-6" />
+              Issue: "Rate Limit Exceeded"
+            </h3>
+            <p className="text-gray-200 mb-2"><strong>Cause:</strong> Too many API requests in short timeframe</p>
+            <p className="text-gray-200 mb-3"><strong>Solutions:</strong></p>
+            <ul className="list-disc list-inside text-gray-200 space-y-2 ml-4">
+              <li>Implement exponential backoff retry strategy</li>
+              <li>Add a rate limiter node before AI calls (limit to X requests per minute)</li>
+              <li>Use N8N's built-in rate limiting features</li>
+              <li>Consider upgrading your OpenAI tier for higher limits</li>
+            </ul>
+          </div>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <h3 className="text-xl font-semibold text-red-300 mb-4">Issue: "Inconsistent AI Responses"</h3>
-                    <p className="text-gray-300 mb-3"><strong>Cause:</strong> High temperature settings or vague prompts</p>
-                    <p className="text-gray-300 mb-3"><strong>Solutions:</strong></p>
-                    <ul className="list-disc list-inside text-gray-300 space-y-2">
-                      <li>Lower temperature to 0.1-0.3 for consistent outputs</li>
-                      <li>Use structured prompts with clear formatting requirements</li>
-                      <li>Add example outputs in your system message</li>
-                      <li>Use response_format: json_object when possible</li>
-                    </ul>
-                  </div>
-                </div>
+          <div className="bg-zinc-800/60 rounded-xl p-6 border border-yellow-500/30">
+            <h3 className="text-xl font-bold text-yellow-300 mb-3 flex items-center gap-2">
+              <AlertCircle className="w-6 h-6" />
+              Issue: "Inconsistent AI Responses"
+            </h3>
+            <p className="text-gray-200 mb-2"><strong>Cause:</strong> High temperature settings or vague prompts</p>
+            <p className="text-gray-200 mb-3"><strong>Solutions:</strong></p>
+            <ul className="list-disc list-inside text-gray-200 space-y-2 ml-4">
+              <li>Lower temperature to 0.1-0.3 for consistent outputs</li>
+              <li>Use structured prompts with clear formatting requirements</li>
+              <li>Add example outputs in your system message</li>
+              <li>Use response_format: json_object when possible</li>
+            </ul>
+          </div>
+        </div>
 
-                {/* Best Practices */}
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Best Practices for Production AI Workflows</h2>
+        <h2>Best Practices for Production AI Workflows</h2>
+        <p>
+          These best practices come from managing production AI workflows serving thousands of users. Follow these guidelines to ensure your integrations are secure, performant, and maintainable.
+        </p>
 
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-gray-800/30 p-6 rounded-lg">
-                      <h3 className="text-lg font-semibold text-green-300 mb-3">Security</h3>
-                      <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
-                        <li>Store API keys in N8N credentials manager</li>
-                        <li>Use environment variables for sensitive data</li>
-                        <li>Implement input validation to prevent prompt injection</li>
-                        <li>Sanitize user inputs before sending to AI</li>
-                        <li>Log AI interactions for audit trails</li>
-                      </ul>
-                    </div>
+        <div className="not-prose grid md:grid-cols-2 gap-6 mb-12">
+          {[
+            {
+              category: "Security",
+              icon: Lock,
+              color: "green",
+              items: [
+                "Store API keys in N8N credentials manager",
+                "Use environment variables for sensitive data",
+                "Implement input validation to prevent prompt injection",
+                "Sanitize user inputs before sending to AI",
+                "Log AI interactions for audit trails"
+              ]
+            },
+            {
+              category: "Performance",
+              icon: Gauge,
+              color: "blue",
+              items: [
+                "Cache frequent AI responses",
+                "Use webhooks instead of polling when possible",
+                "Implement parallel processing for independent tasks",
+                "Set appropriate timeouts (30-60s for AI calls)",
+                "Monitor workflow execution times"
+              ]
+            },
+            {
+              category: "Reliability",
+              icon: CheckCircle,
+              color: "purple",
+              items: [
+                "Always include error handling",
+                "Implement retry logic with exponential backoff",
+                "Create fallback workflows for AI failures",
+                "Send alerts for critical workflow failures",
+                "Test workflows with edge cases"
+              ]
+            },
+            {
+              category: "Maintainability",
+              icon: Wrench,
+              color: "yellow",
+              items: [
+                "Document your workflows with notes",
+                "Use descriptive node names",
+                "Version control workflow JSON exports",
+                "Create reusable sub-workflows",
+                "Monitor costs and set budget alerts"
+              ]
+            }
+          ].map((section, idx) => (
+            <div key={idx} className={`bg-zinc-800/60 rounded-xl p-6 border border-${section.color}-500/20`}>
+              <h3 className={`text-lg font-bold text-${section.color}-300 mb-4 flex items-center gap-2`}>
+                <section.icon className="w-6 h-6" />
+                {section.category}
+              </h3>
+              <ul className="space-y-2 text-gray-200 text-sm">
+                {section.items.map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <CheckCircle className={`w-4 h-4 text-${section.color}-400 mt-0.5 flex-shrink-0`} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
 
-                    <div className="bg-gray-800/30 p-6 rounded-lg">
-                      <h3 className="text-lg font-semibold text-blue-300 mb-3">Performance</h3>
-                      <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
-                        <li>Cache frequent AI responses</li>
-                        <li>Use webhooks instead of polling when possible</li>
-                        <li>Implement parallel processing for independent tasks</li>
-                        <li>Set appropriate timeouts (30-60s for AI calls)</li>
-                        <li>Monitor workflow execution times</li>
-                      </ul>
-                    </div>
+        <h2>Advanced Techniques</h2>
 
-                    <div className="bg-gray-800/30 p-6 rounded-lg">
-                      <h3 className="text-lg font-semibold text-purple-300 mb-3">Reliability</h3>
-                      <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
-                        <li>Always include error handling</li>
-                        <li>Implement retry logic with exponential backoff</li>
-                        <li>Create fallback workflows for AI failures</li>
-                        <li>Send alerts for critical workflow failures</li>
-                        <li>Test workflows with edge cases</li>
-                      </ul>
-                    </div>
+        <h3>Multi-Model AI Strategy</h3>
+        <p>
+          Don't rely on a single AI model. Different models excel at different tasks. Use GPT-4 for complex reasoning, GPT-3.5 for simple tasks, Claude for long-form content, and specialized models for specific domains.
+        </p>
 
-                    <div className="bg-gray-800/30 p-6 rounded-lg">
-                      <h3 className="text-lg font-semibold text-yellow-300 mb-3">Maintainability</h3>
-                      <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
-                        <li>Document your workflows with notes</li>
-                        <li>Use descriptive node names</li>
-                        <li>Version control workflow JSON exports</li>
-                        <li>Create reusable sub-workflows</li>
-                        <li>Monitor costs and set budget alerts</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Advanced Techniques */}
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">Advanced Techniques</h2>
-
-                  <h3 className="text-2xl font-bold text-white mb-4">Multi-Model AI Strategy</h3>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    Don't rely on a single AI model. Different models excel at different tasks. Use GPT-4 for complex reasoning,
-                    GPT-3.5 for simple tasks, Claude for long-form content, and specialized models for specific domains.
-                  </p>
-
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">Example: Smart Model Router</h4>
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
+        <div className="not-prose bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-xl p-8 mb-10">
+          <h4 className="text-xl font-bold text-purple-300 mb-4 flex items-center gap-2">
+            <Cpu className="w-6 h-6" />
+            Example: Smart Model Router
+          </h4>
+          <div className="bg-black/50 rounded-lg p-6 border border-purple-500/20">
+            <pre className="text-sm text-purple-300 overflow-x-auto font-mono">
 {`// Function node: Route to appropriate AI model
 const task = $input.item.json;
 const complexity = task.estimatedComplexity || 'medium';
@@ -746,91 +806,60 @@ if (complexity === 'high' || length > 2000) {
 }
 
 return { json: { ...task, modelConfig } };`}
-                    </pre>
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-white mb-4">Streaming AI Responses</h3>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    For user-facing applications, streaming responses provide a better experience. Here's how to implement
-                    streaming in N8N workflows that feed into real-time interfaces.
-                  </p>
-
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-6">
-                    <pre className="text-sm text-gray-300 overflow-x-auto">
-{`// HTTP Request node configuration for streaming
-{
-  "method": "POST",
-  "url": "https://api.openai.com/v1/chat/completions",
-  "body": {
-    "model": "gpt-4",
-    "messages": [...],
-    "stream": true
-  }
-}
-
-// Handle stream in Function node
-const chunks = [];
-const stream = $input.item.binary.data;
-
-// Process stream chunks
-for await (const chunk of stream) {
-  const data = chunk.toString();
-  if (data.startsWith('data: ')) {
-    const json = JSON.parse(data.slice(6));
-    if (json.choices[0].delta.content) {
-      chunks.push(json.choices[0].delta.content);
-      // Emit to websocket or SSE endpoint
-    }
-  }
-}
-
-return { json: { fullResponse: chunks.join('') } };`}
-                    </pre>
-                  </div>
-                </div>
-
-                {/* Course CTA */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-8">
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-white mb-4">Take Your AI Automation Skills Further</h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Want to learn more advanced N8N workflows with AI integration? Our comprehensive course covers these topics
-                      and much more, with video tutorials, downloadable workflows, and real-world projects.
-                    </p>
-                    <Link href="/n8n-ai-automations" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-300">
-                      Explore N8N AI Automations Course
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Related Articles */}
-                <div className="mt-8">
-                  <h3 className="text-2xl font-bold text-white mb-8">Related Expert Guides</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/expert-content-generator" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        Expert Content Generator
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Generate expert-level content for social media authority building.
-                      </p>
-                    </Link>
-                    <Link href="/courses" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        All Courses
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Explore our complete course library for mastering ai integration.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
-                
-              </div>
-              
-            </div>
+            </pre>
           </div>
-        </article>
-      </div>
-      )
+        </div>
+
+        <h3>Key Takeaways</h3>
+        <div className="not-prose bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-2xl p-8 mb-8">
+          <ul className="space-y-3 text-gray-200">
+            {[
+              "Start with simple workflows and gradually add complexity",
+              "Always implement error handling and retry logic for production",
+              "Monitor costs closely - GPT-4 can get expensive at scale",
+              "Use the right model for each task (don't default to GPT-4 for everything)",
+              "Cache responses when possible to reduce API calls",
+              "Test extensively with edge cases before deploying to production",
+              "Document your workflows thoroughly for future maintenance"
+            ].map((takeaway, idx) => (
+              <li key={idx} className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <span className="text-lg">{takeaway}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <h2>Next Steps: Master AI Automation</h2>
+        <p>
+          You now have the foundational knowledge to build production-ready GPT + N8N workflows. To take your skills to the next level:
+        </p>
+
+        <div className="not-prose bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-2xl p-8 mb-8">
+          <ol className="space-y-4 text-gray-200">
+            {[
+              { text: "Set up N8N locally or on a cloud server", action: "Start with docker compose for quick setup" },
+              { text: "Get your OpenAI API key and configure credentials", action: "Start with pay-as-you-go tier" },
+              { text: "Build the customer support classifier from Tutorial 1", action: "Test with sample data first" },
+              { text: "Implement error handling and monitoring", action: "Add Slack alerts for failures" },
+              { text: "Join the AI Automations Course for advanced workflows", action: "Get 50+ production-ready templates" }
+            ].map((step, idx) => (
+              <li key={idx} className="flex items-start gap-4">
+                <span className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">{idx + 1}</span>
+                <div className="flex-1">
+                  <span className="text-white font-semibold">{step.text}</span>
+                  <p className="text-sm text-gray-400 mt-1">→ {step.action}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <p>
+          Ready to master AI automation? The <strong>AI Automations Course</strong> includes video tutorials, downloadable workflow templates, real-world projects, and lifetime access to our community of 4,000+ automation experts. Start building intelligent systems today!
+        </p>
+
+      </BlogPostLayout>
+    </>
+  )
 }

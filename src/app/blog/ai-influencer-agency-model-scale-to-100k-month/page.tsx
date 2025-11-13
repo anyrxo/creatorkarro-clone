@@ -6,7 +6,7 @@ export const metadata = {
   title: "AI Influencer Agency Model: Scale from $10K to $100K/Month in 18 Months | IImagined",
   description: "Complete agency blueprint for managing 20-50 AI influencers. Client acquisition, pricing models, operational workflows, hiring guide, and case study of $50K/month agency.",
   keywords: ["AI influencer agency", "scale AI influencers", "influencer management", "agency pricing", "client acquisition", "AI automation business", "100K per month"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -18,7 +18,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-22T16:00:00.000Z",
     modifiedTime: "2025-01-22T16:00:00.000Z",
-    authors: ["Karro"],
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Agency Model", "Business Scaling", "Revenue Growth", "Automation"],
     images: [{
       url: "https://iimagined.ai/images/ai-agency-model-og.jpg",

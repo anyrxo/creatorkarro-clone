@@ -6,7 +6,7 @@ export const metadata = {
   title: "How AI Influencers Land Brand Deals: $500-$50K Sponsorships in 2025 | IImagined",
   description: "Complete guide to landing brand deals for AI influencers. Outreach templates, rate cards, negotiation tactics, and real case studies of $3K-$50K deals.",
   keywords: ["AI influencer brand deals", "sponsorship rates", "influencer marketing", "brand partnerships", "sponsored posts", "AI influencer income", "negotiation tactics"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -18,7 +18,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-22T13:00:00.000Z",
     modifiedTime: "2025-01-22T13:00:00.000Z",
-    authors: ["Karro"],
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Brand Deals", "Sponsorships", "Influencer Marketing", "Revenue"],
     images: [{
       url: "https://iimagined.ai/images/ai-influencer-brand-deals-og.jpg",

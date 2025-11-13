@@ -6,7 +6,7 @@ export const metadata = {
   title: "AI Influencer Legal & Ethics Guide 2025: FTC Rules, Copyright, Platform Policies | IImagined",
   description: "Complete legal and ethical guide for AI influencers. FTC disclosure requirements, copyright considerations, platform policies, and case studies of banned accounts.",
   keywords: ["AI influencer legal", "FTC disclosure", "AI content ethics", "copyright AI images", "platform policies", "AI influencer rules", "legal compliance"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -18,7 +18,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-22T15:00:00.000Z",
     modifiedTime: "2025-01-22T15:00:00.000Z",
-    authors: ["Karro"],
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Legal Compliance", "Ethics", "FTC Rules", "Copyright Law"],
     images: [{
       url: "https://iimagined.ai/images/ai-influencer-legal-og.jpg",

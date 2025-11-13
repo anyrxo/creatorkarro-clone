@@ -6,7 +6,7 @@ export const metadata = {
   title: "AI Influencer Content Calendar & Automation Strategy: Post 3x/Day in 2 Hours/Week | IImagined",
   description: "Complete N8N automation workflows for AI influencer content. Batch creation strategies, auto-posting to Instagram/TikTok/Twitter, and trend integration systems.",
   keywords: ["AI influencer automation", "content calendar", "N8N workflows", "Instagram automation", "TikTok automation", "batch content creation", "social media scheduling"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -18,7 +18,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-22T11:00:00.000Z",
     modifiedTime: "2025-01-22T11:00:00.000Z",
-    authors: ["Karro"],
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Automation", "N8N", "Content Calendar", "Social Media Marketing"],
     images: [{
       url: "https://iimagined.ai/images/ai-influencer-automation-og.jpg",

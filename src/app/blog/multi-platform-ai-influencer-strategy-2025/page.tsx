@@ -6,7 +6,7 @@ export const metadata = {
   title: "Multi-Platform AI Influencer Strategy 2025: 500K Combined Followers Playbook | IImagined",
   description: "Complete cross-platform strategy for AI influencers. Content adaptation, platform optimization, repurposing workflows, and growth tactics for Instagram, TikTok, YouTube, and Twitter.",
   keywords: ["multi-platform influencer", "AI influencer strategy", "cross-platform content", "Instagram TikTok YouTube", "content repurposing", "social media growth", "platform optimization"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -18,7 +18,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-22T14:00:00.000Z",
     modifiedTime: "2025-01-22T14:00:00.000Z",
-    authors: ["Karro"],
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Multi-Platform Strategy", "Social Media Growth", "Content Strategy", "Platform Optimization"],
     images: [{
       url: "https://iimagined.ai/images/multi-platform-strategy-og.jpg",

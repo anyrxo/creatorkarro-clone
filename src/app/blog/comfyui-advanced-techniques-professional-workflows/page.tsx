@@ -6,7 +6,7 @@ export const metadata = {
   title: "ComfyUI Advanced Techniques: Professional Workflows for AI Influencers | IImagined",
   description: "Master advanced ComfyUI workflows for AI influencer creation. Custom nodes, batch automation, ControlNet mastery, and 10-second render optimization techniques.",
   keywords: ["ComfyUI", "AI influencers", "custom nodes", "batch processing", "ControlNet", "workflow automation", "AI image generation", "professional workflows", "LoRA training"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -18,7 +18,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-20T10:00:00.000Z",
     modifiedTime: "2025-01-20T10:00:00.000Z",
-    authors: ["Karro"],
+    authors: ["Anyro"],
     tags: ["ComfyUI", "AI Influencers", "Workflow Automation", "ControlNet", "Custom Nodes"],
     images: [{
       url: "https://iimagined.ai/images/comfyui-advanced-og.jpg",

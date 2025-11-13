@@ -6,7 +6,7 @@ export const metadata = {
   title: "Stable Diffusion vs Midjourney for AI Influencer Creation: Complete 2025 Comparison | IImagined",
   description: "Side-by-side comparison of Stable Diffusion vs Midjourney for creating AI influencers. Cost analysis, workflow examples, and when to use each tool in 2025.",
   keywords: ["Stable Diffusion vs Midjourney", "AI influencer creation", "LoRA training", "character consistency", "AI image generation comparison", "Midjourney pricing", "Stable Diffusion cost"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -18,7 +18,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-22T10:00:00.000Z",
     modifiedTime: "2025-01-22T10:00:00.000Z",
-    authors: ["Karro"],
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Stable Diffusion", "Midjourney", "AI Tools Comparison", "Character Creation"],
     images: [{
       url: "https://iimagined.ai/images/stable-diffusion-vs-midjourney-og.jpg",
