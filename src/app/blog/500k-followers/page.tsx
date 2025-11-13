@@ -72,13 +72,13 @@ export default function BlogPost() {
 
   const relatedPosts = [
     {
-      title: "Instagram Growth Strategies That Actually Work in 2025",
-      slug: "instagram-growth-2025",
+      title: "Instagram Growth Strategies That Actually Work in 2026",
+      slug: "instagram-growth-2026",
       description: "Latest tactics and techniques to grow your Instagram following organically",
       readTime: 18
     },
     {
-      title: "Instagram Hashtag Strategy 2025: What Actually Works",
+      title: "Instagram Hashtag Strategy 2026: What Actually Works",
       slug: "instagram-hashtag-strategy-2025-what-actually-works",
       description: "Data-driven hashtag research methods that drive real growth",
       readTime: 15

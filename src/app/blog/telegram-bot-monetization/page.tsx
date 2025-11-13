@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Telegram Bot Monetization: Complete Guide & Expert",
-  description: "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2025",
-  keywords: ["telegram", "bot", "monetization", "telegram 2025", "telegram bot monetization", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2026",
+  keywords: ["telegram", "bot", "monetization", "telegram 2026", "telegram bot monetization", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Telegram Bot Monetization: Complete Guide & Expert",
-    description: "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2025",
+    description: "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/telegram-bot-monetization",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.958Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["telegram", "bot", "monetization", "telegram 2025", "telegram bot monetization", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["telegram", "bot", "monetization", "telegram 2026", "telegram bot monetization", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/telegram-bot-monetization-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Telegram Bot Monetization: Complete Guide & Expert",
-    description: "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2025",
+    description: "Telegram Bot Monetization - comprehensive strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/telegram-bot-monetization-og.jpg",
       alt: "Telegram Bot Monetization"
@@ -136,7 +136,7 @@ export default function TelegramBotMonetizationPage() {
               </p>
               
               <div className="bg-gradient-to-r from-green-800 to-blue-800 border border-green-600 rounded-lg p-6 my-8">
-                <h3 className="text-xl font-semibold text-white mb-4"> Why Telegram Bot Monetization is Exploding in 2025:</h3>
+                <h3 className="text-xl font-semibold text-white mb-4"> Why Telegram Bot Monetization is Exploding in 2026:</h3>
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
                   <li><strong>700M+ Active Users:</strong> Massive, engaged audience ready to pay for premium content</li>
                   <li><strong>Zero Platform Fees:</strong> Keep 100% of your revenue (unlike OnlyFans' 20% cut)</li>
@@ -166,7 +166,7 @@ export default function TelegramBotMonetizationPage() {
               <h2 className="text-3xl font-bold text-white mb-6"> Top Revenue Models for Telegram Bot Monetization</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 The most successful Telegram bot entrepreneurs understand that multiple revenue streams create sustainable income. 
-                Here are the proven monetization models generating the highest ROI in 2025, with real performance metrics from 
+                Here are the proven monetization models generating the highest ROI in 2026, with real performance metrics from 
                 successful implementations.
               </p>
               

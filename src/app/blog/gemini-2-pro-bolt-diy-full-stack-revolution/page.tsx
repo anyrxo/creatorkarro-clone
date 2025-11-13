@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Gemini 2 Pro Bolt Diy Full Stack Revolution",
-  description: "Gemini 2 Pro Bolt Diy Full Stack Revolution - comprehensive strategies, tools, and techniques for 2025",
-  keywords: ["gemini", "pro", "bolt", "diy", "full", "stack", "revolution", "gemini 2025", "gemini pro bolt diy full stack revolution", "automation", "AI tools", "business growth"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Gemini 2 Pro Bolt Diy Full Stack Revolution - comprehensive strategies, tools, and techniques for 2026",
+  keywords: ["gemini", "pro", "bolt", "diy", "full", "stack", "revolution", "gemini 2026", "gemini pro bolt diy full stack revolution", "automation", "AI tools", "business growth"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Gemini 2 Pro Bolt Diy Full Stack Revolution",
-    description: "Gemini 2 Pro Bolt Diy Full Stack Revolution - comprehensive strategies, tools, and techniques for 2025",
+    description: "Gemini 2 Pro Bolt Diy Full Stack Revolution - comprehensive strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/gemini-2-pro-bolt-diy-full-stack-revolution",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.982Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["gemini", "pro", "bolt", "diy", "full", "stack", "revolution", "gemini 2025"],
+    authors: ["Anyro"],
+    tags: ["gemini", "pro", "bolt", "diy", "full", "stack", "revolution", "gemini 2026"],
     images: [{
       url: "https://iimagined.ai/images/gemini-2-pro-bolt-diy-full-stack-revolution-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Gemini 2 Pro Bolt Diy Full Stack Revolution",
-    description: "Gemini 2 Pro Bolt Diy Full Stack Revolution - comprehensive strategies, tools, and techniques for 2025",
+    description: "Gemini 2 Pro Bolt Diy Full Stack Revolution - comprehensive strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/gemini-2-pro-bolt-diy-full-stack-revolution-og.jpg",
       alt: "Gemini 2 Pro Bolt Diy Full Stack Revolution"

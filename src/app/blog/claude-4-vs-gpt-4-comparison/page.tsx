@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
-  description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["claude", "gpt", "comparison", "claude 2025", "claude gpt comparison", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["claude", "gpt", "comparison", "claude 2026", "claude gpt comparison", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
-    description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/claude-4-vs-gpt-4-comparison",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.997Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["claude", "gpt", "comparison", "claude 2025", "claude gpt comparison", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["claude", "gpt", "comparison", "claude 2026", "claude gpt comparison", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/claude-4-vs-gpt-4-comparison-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
-    description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/claude-4-vs-gpt-4-comparison-og.jpg",
       alt: "Claude 4 Vs GPT 4 Comparison"

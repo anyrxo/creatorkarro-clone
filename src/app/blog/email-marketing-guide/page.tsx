@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Email Marketing Guide: Build Campaigns That Convert 2025",
-  description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["email", "marketing", "guide", "email 2025", "email marketing guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "Email Marketing Guide: Build Campaigns That Convert 2026",
+  description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["email", "marketing", "guide", "email 2026", "email marketing guide", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Email Marketing Guide: Build Campaigns That Convert 2025",
-    description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    title: "Email Marketing Guide: Build Campaigns That Convert 2026",
+    description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/email-marketing-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.986Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["email", "marketing", "guide", "email 2025", "email marketing guide", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["email", "marketing", "guide", "email 2026", "email marketing guide", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/email-marketing-guide-og.jpg",
       width: 1200,
@@ -34,8 +34,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Email Marketing Guide: Build Campaigns That Convert 2025",
-    description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    title: "Email Marketing Guide: Build Campaigns That Convert 2026",
+    description: "Email Marketing Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/email-marketing-guide-og.jpg",
       alt: "Email Marketing Guide"

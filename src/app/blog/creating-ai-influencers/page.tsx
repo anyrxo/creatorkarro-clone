@@ -1061,13 +1061,13 @@ PNGInfo Saver → Embed metadata for tracking`}</pre>
                         <span className="text-purple-400 text-sm font-semibold">Read More →</span>
                     </Link>
 
-                    <Link href="/blog/ai-influencer-monetization-complete-guide-2025" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
+                    <Link href="/blog/ai-influencer-monetization-complete-guide-2026" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
                         <h3 className="text-lg font-bold text-white mb-2">AI Influencer Monetization Guide</h3>
                         <p className="text-gray-400 text-sm mb-3">Complete strategies to monetize your AI influencers in 2025</p>
                         <span className="text-purple-400 text-sm font-semibold">Read More →</span>
                     </Link>
 
-                    <Link href="/blog/instagram-growth-2025" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
+                    <Link href="/blog/instagram-growth-2026" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
                         <h3 className="text-lg font-bold text-white mb-2">Instagram Growth 2025</h3>
                         <p className="text-gray-400 text-sm mb-3">Proven strategies to grow your Instagram following organically</p>
                         <span className="text-purple-400 text-sm font-semibold">Read More →</span>

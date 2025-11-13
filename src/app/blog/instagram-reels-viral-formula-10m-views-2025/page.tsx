@@ -4,22 +4,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Instagram Reels Viral Formula: How to Get 10M+ Views in 2025",
+  title: "Instagram Reels Viral Formula: How to Get 10M+ Views in 2026",
   description: "Master the exact viral Reels formula used by top creators to hit 10M+ views. Algorithm insights, hook strategies, and proven editing techniques that guarantee results.",
-  keywords: ["instagram reels", "viral reels", "instagram algorithm", "reels views", "instagram growth", "reels formula", "viral content", "instagram strategy 2025", "social media growth", "content creation"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  keywords: ["instagram reels", "viral reels", "instagram algorithm", "reels views", "instagram growth", "reels formula", "viral content", "instagram strategy 2026", "social media growth", "content creation"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Instagram Growth",
   openGraph: {
-    title: "Instagram Reels Viral Formula: How to Get 10M+ Views in 2025",
+    title: "Instagram Reels Viral Formula: How to Get 10M+ Views in 2026",
     description: "Master the exact viral Reels formula used by top creators to hit 10M+ views. Algorithm insights, hook strategies, and proven editing techniques that guarantee results.",
-    url: "https://iimagined.ai/blog/instagram-reels-viral-formula-10m-views-2025",
+    url: "https://iimagined.ai/blog/instagram-reels-viral-formula-10m-views-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-20T10:00:00.000Z",
     modifiedTime: "2025-01-20T10:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["instagram reels", "viral reels", "instagram algorithm", "reels views", "instagram growth", "content creation"],
     images: [{
       url: "https://iimagined.ai/images/instagram-reels-viral-og.jpg",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Reels Viral Formula: How to Get 10M+ Views in 2025",
+    title: "Instagram Reels Viral Formula: How to Get 10M+ Views in 2026",
     description: "Master the exact viral Reels formula used by top creators to hit 10M+ views. Algorithm insights, hook strategies, and proven editing techniques that guarantee results.",
     images: [{
       url: "https://iimagined.ai/images/instagram-reels-viral-og.jpg",
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/instagram-reels-viral-formula-10m-views-2025"
+    canonical: "https://iimagined.ai/blog/instagram-reels-viral-formula-10m-views-2026"
   }
 }
 
@@ -61,7 +61,7 @@ export default function InstagramReelsViralFormula() {
   const schema = generateBlogPostSchema({
     title: metadata.title,
     description: metadata.description,
-    slug: "instagram-reels-viral-formula-10m-views-2025",
+    slug: "instagram-reels-viral-formula-10m-views-2026",
     publishedTime: metadata.openGraph.publishedTime,
     modifiedTime: metadata.openGraph.modifiedTime,
     category: metadata.category,

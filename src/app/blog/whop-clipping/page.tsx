@@ -3,23 +3,23 @@ import Link from 'next/link'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Whop Clipping: Complete Creator Earnings Guide 2025",
-  description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2025",
-  keywords: ["whop", "clipping", "whop 2025", "whop clipping", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "Whop Clipping: Complete Creator Earnings Guide 2026",
+  description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2026",
+  keywords: ["whop", "clipping", "whop 2026", "whop clipping", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Whop Clipping: Complete Guide to Content Monetization",
-    description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2025",
+    description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/whop-clipping",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.954Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["whop", "clipping", "whop 2025", "whop clipping", "automation", "AI tools", "business growth", "productivity"],
+    authors: ["Anyro"],
+    tags: ["whop", "clipping", "whop 2026", "whop clipping", "automation", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/whop-clipping-og.jpg",
       width: 1200,
@@ -34,7 +34,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Whop Clipping: Complete Guide to Content Monetization",
-    description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2025",
+    description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/whop-clipping-og.jpg",
       alt: "Whop Clipping"

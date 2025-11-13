@@ -7,7 +7,7 @@ export const metadata = {
   title: "Digital Product Pricing Strategy: Maximize Your Revenue",
   description: "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
   keywords: ["digital product pricing","pricing strategy","digital product revenue","price digital products","digital products mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/digital-product-pricing-strategy-maximize-revenue",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T08:10:02.992Z",
-    modifiedTime: "2025-08-05T08:10:02.992Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-25T10:00:00.000Z",
+    modifiedTime: "2026-02-25T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["digital product pricing","pricing strategy","digital product revenue","price digital products"],
     images: [{
       url: "https://iimagined.ai/images/blog/digital-product-pricing-strategy-maximize-revenue-og.jpg",
@@ -72,16 +72,16 @@ export default function DigitalProductPricingStrategyMaximizeYourRevenue() {
         "@id": "https://iimagined.ai/blog/digital-product-pricing-strategy-maximize-revenue#article",
         "headline": "Digital Product Pricing Strategy: Maximize Your Revenue",
         "description": "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery",
-        "datePublished": "2025-08-05T08:10:02.992Z",
-        "dateModified": "2025-08-05T08:10:02.992Z",
+        "datePublished": "2026-02-25T10:00:00.000Z",
+        "dateModified": "2026-02-25T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function DigitalProductPricingStrategyMaximizeYourRevenue() {
           "name": "Digital Products Mastery",
           "description": "Complete Digital Product Creation & Sales System",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }

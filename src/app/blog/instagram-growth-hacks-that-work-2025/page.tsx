@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: "15 Instagram Growth Hacks That Actually Work in 2026",
     description: "Proven Instagram growth strategies from 127K+ students. Master carousels, Reels, hashtags & engagement tactics to gain 10K-500K followers.",
-    url: "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2025",
+    url: "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-28T10:00:00.000Z",
@@ -25,7 +25,7 @@ export const metadata = {
       url: "https://iimagined.ai/images/blog/instagram-growth-hacks-that-work-2025-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Instagram Growth Hacks That Actually Work in 2025",
+      alt: "Instagram Growth Hacks That Actually Work in 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -38,7 +38,7 @@ export const metadata = {
     description: "Proven strategies from 127K+ students to gain 10K-500K followers with carousels, Reels & engagement tactics",
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-growth-hacks-that-work-2025-og.jpg",
-      alt: "Instagram Growth Hacks That Actually Work in 2025"
+      alt: "Instagram Growth Hacks That Actually Work in 2026"
     }]
   },
   robots: {
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2025",
+    canonical: "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2026",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -81,12 +81,12 @@ export default function InstagramGrowthHacksThatActuallyWorkIn2025() {
           "jobTitle": "Instagram Growth Strategist & Creator Educator"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2025"
+          "@id": "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2026"
         },
         "image": {
           "@type": "ImageObject",
@@ -101,7 +101,7 @@ export default function InstagramGrowthHacksThatActuallyWorkIn2025() {
           "name": "Instagram Ignited",
           "description": "Ultimate Instagram Growth & Monetization Course",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "Topstep vs MyFundedTrader: Complete 2025 Comparison",
+  title: "Topstep vs MyFundedTrader: Complete 2026 Comparison",
   description: "Detailed comparison of Topstep and MyFundedTrader prop firms. Discover which funded trading program offers better profit splits, evaluation rules, and trader support.",
   keywords: ["topstep","myfundedtrader","prop firm comparison","funded trading","futures trading","prop firm review"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -11,7 +11,7 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Trading & Finance",
   openGraph: {
-    title: "Topstep vs MyFundedTrader: Complete 2025 Comparison",
+    title: "Topstep vs MyFundedTrader: Complete 2026 Comparison",
     description: "Detailed comparison of Topstep and MyFundedTrader prop firms. Discover which funded trading program offers better profit splits, evaluation rules, and trader support.",
     url: "https://iimagined.ai/blog/topstep-vs-myfundedtrader-comparison",
     siteName: "IImagined.ai",
@@ -24,7 +24,7 @@ export const metadata = {
       url: "https://iimagined.ai/images/topstep-vs-myfundedtrader-comparison-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Topstep vs MyFundedTrader: Complete 2025 Comparison",
+      alt: "Topstep vs MyFundedTrader: Complete 2026 Comparison",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -33,11 +33,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Topstep vs MyFundedTrader: Complete 2025 Comparison",
+    title: "Topstep vs MyFundedTrader: Complete 2026 Comparison",
     description: "Detailed comparison of Topstep and MyFundedTrader prop firms. Discover which funded trading program offers better profit splits, evaluation rules, and trader support.",
     images: [{
       url: "https://iimagined.ai/images/topstep-vs-myfundedtrader-comparison-og.jpg",
-      alt: "Topstep vs MyFundedTrader: Complete 2025 Comparison"
+      alt: "Topstep vs MyFundedTrader: Complete 2026 Comparison"
     }]
   },
   robots: {

@@ -25,7 +25,7 @@ export const metadata = {
       url: "https://iimagined.ai/images/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Best Automation Tools 2025: N8N vs Zapier vs Make.com",
+      alt: "Best Automation Tools 2026: N8N vs Zapier vs Make.com",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -38,7 +38,7 @@ export const metadata = {
     description: "Expert comparison: N8N, Zapier & Make.com pricing, features & AI capabilities tested by 127K+ students",
     images: [{
       url: "https://iimagined.ai/images/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make-og.jpg",
-      alt: "Best Automation Tools 2025: N8N vs Zapier vs Make.com"
+      alt: "Best Automation Tools 2026: N8N vs Zapier vs Make.com"
     }]
   },
   robots: {
@@ -80,7 +80,7 @@ export default function BestAutomationTools2025N8nVsZapierVsMakecom() {
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -100,7 +100,7 @@ export default function BestAutomationTools2025N8nVsZapierVsMakecom() {
           "name": "N8N AI Automations",
           "description": "Advanced Workflow Automation with AI Integration",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -137,7 +137,7 @@ export default function BestAutomationTools2025N8nVsZapierVsMakecom() {
                   <li aria-current="page">
                     <div className="flex items-center">
                       <span className="mx-2 text-gray-500">/</span>
-                      <span className="text-gray-300">Best Automation Tools 2025: N8N vs Zapier vs Make.com</span>
+                      <span className="text-gray-300">Best Automation Tools 2026: N8N vs Zapier vs Make.com</span>
                     </div>
                   </li>
                 </ol>
@@ -151,7 +151,7 @@ export default function BestAutomationTools2025N8nVsZapierVsMakecom() {
                 </div>
                 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  Best Automation Tools 2025: N8N vs Zapier vs Make.com
+                  Best Automation Tools 2026: N8N vs Zapier vs Make.com
                 </h1>
                 
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -187,7 +187,7 @@ export default function BestAutomationTools2025N8nVsZapierVsMakecom() {
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-white mb-6">Introduction: The Automation Tools Landscape in 2025</h2>
                   <p className="text-gray-300 leading-relaxed mb-4">
-                    Choosing the right automation platform can make or break your workflow strategy. In 2025, three platforms
+                    Choosing the right automation platform can make or break your workflow strategy. In 2026, three platforms
                     dominate the workflow automation space: N8N, Zapier, and Make.com (formerly Integromat). Each has distinct
                     strengths, pricing models, and ideal use cases that make them better suited for different scenarios.
                   </p>

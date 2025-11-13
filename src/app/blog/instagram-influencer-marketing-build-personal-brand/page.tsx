@@ -7,7 +7,7 @@ export const metadata = {
   title: "Instagram Influencer Marketing: Build Your Personal Brand",
   description: "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited with 127K+ students...",
   keywords: ["instagram influencer marketing","personal brand instagram","instagram influence","become instagram influencer","instagram ignited","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Instagram & Social Media",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/instagram-influencer-marketing-build-personal-brand",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T08:10:02.991Z",
-    modifiedTime: "2025-08-05T08:10:02.991Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-25T10:00:00.000Z",
+    modifiedTime: "2026-02-25T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["instagram influencer marketing","personal brand instagram","instagram influence","become instagram influencer"],
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-influencer-marketing-build-personal-brand-og.jpg",
@@ -72,16 +72,16 @@ export default function InstagramInfluencerMarketingBuildYourPersonalBrand() {
         "@id": "https://iimagined.ai/blog/instagram-influencer-marketing-build-personal-brand#article",
         "headline": "Instagram Influencer Marketing: Build Your Personal Brand",
         "description": "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited",
-        "datePublished": "2025-08-05T08:10:02.991Z",
-        "dateModified": "2025-08-05T08:10:02.991Z",
+        "datePublished": "2026-02-25T10:00:00.000Z",
+        "dateModified": "2026-02-25T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function InstagramInfluencerMarketingBuildYourPersonalBrand() {
           "name": "Instagram Ignited",
           "description": "Ultimate Instagram Growth & Monetization Course",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }

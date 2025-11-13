@@ -7,7 +7,7 @@ export const metadata = {
   title: "Instagram Monetization Guide: 15 Proven Ways to Make Money",
   description: "instagram monetization, make money instagram, instagram income - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in...",
   keywords: ["instagram monetization","make money instagram","instagram income","monetize instagram","instagram ignited","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/instagram-monetization-guide-15-ways-make-money",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.594Z",
-    modifiedTime: "2025-08-05T07:10:42.594Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-25T10:00:00.000Z",
+    modifiedTime: "2026-02-25T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["instagram monetization","make money instagram","instagram income","monetize instagram"],
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-monetization-guide-15-ways-make-money-og.jpg",
@@ -72,16 +72,16 @@ export default function InstagramMonetizationGuide15ProvenWaysToMakeMoney() {
         "@id": "https://iimagined.ai/blog/instagram-monetization-guide-15-ways-make-money#article",
         "headline": "Instagram Monetization Guide: 15 Proven Ways to Make Money",
         "description": "instagram monetization, make money instagram, instagram income - Expert guide from the creators of Instagram Ignited",
-        "datePublished": "2025-08-05T07:10:42.594Z",
-        "dateModified": "2025-08-05T07:10:42.594Z",
+        "datePublished": "2026-02-25T10:00:00.000Z",
+        "dateModified": "2026-02-25T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function InstagramMonetizationGuide15ProvenWaysToMakeMoney() {
           "name": "Instagram Ignited",
           "description": "Ultimate Instagram Growth & Monetization Course",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }

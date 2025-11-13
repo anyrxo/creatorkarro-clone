@@ -3,22 +3,22 @@ import Link from 'next/link'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Collab Feature: Double Your Reach Overnight in 2025",
+  title: "Instagram Collab Feature: Double Your Reach Overnight in 2026",
   description: "Master Instagram Collabs to double your feed post reach overnight. Learn how to find partners, create viral collab content, and gain 5K+ followers from one post.",
-  keywords: ["instagram collabs", "instagram collaboration", "instagram growth", "collab feature", "instagram reach", "instagram partnerships", "social media growth 2025", "instagram algorithm", "follower growth", "viral collaboration"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  keywords: ["instagram collabs", "instagram collaboration", "instagram growth", "collab feature", "instagram reach", "instagram partnerships", "social media growth 2026", "instagram algorithm", "follower growth", "viral collaboration"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Instagram Growth",
   openGraph: {
-    title: "Instagram Collab Feature: Double Your Reach Overnight in 2025",
+    title: "Instagram Collab Feature: Double Your Reach Overnight in 2026",
     description: "Master Instagram Collabs to double your feed post reach overnight. Learn how to find partners, create viral collab content, and gain 5K+ followers from one post.",
     url: "https://iimagined.ai/blog/instagram-collab-feature-double-reach-overnight",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-23T10:00:00.000Z",
     modifiedTime: "2025-01-23T10:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["instagram collabs", "instagram collaboration", "instagram growth", "collab feature", "instagram reach"],
     images: [{
       url: "https://iimagined.ai/images/instagram-collab-og.jpg",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Collab Feature: Double Your Reach Overnight in 2025",
+    title: "Instagram Collab Feature: Double Your Reach Overnight in 2026",
     description: "Master Instagram Collabs to double your feed post reach overnight. Learn how to find partners, create viral collab content, and gain 5K+ followers from one post.",
     images: [{
       url: "https://iimagined.ai/images/instagram-collab-og.jpg",
@@ -63,18 +63,18 @@ export default function InstagramCollabFeature() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/instagram-collab-feature-double-reach-overnight#article",
-        "headline": "Instagram Collab Feature: Double Your Reach Overnight in 2025",
+        "headline": "Instagram Collab Feature: Double Your Reach Overnight in 2026",
         "description": "Master Instagram Collabs to double your feed post reach overnight. Learn how to find partners, create viral collab content, and gain 5K+ followers from one post.",
         "datePublished": "2025-01-23T10:00:00.000Z",
         "dateModified": "2025-01-23T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -720,7 +720,7 @@ export default function InstagramCollabFeature() {
             <div className="mt-8">
               <h3 className="text-2xl font-bold text-white mb-8">Related Articles</h3>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link href="/blog/instagram-growth-2025" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
+                <Link href="/blog/instagram-growth-2026" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
                   <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
                     Instagram Growth Strategies 2025
                   </h4>

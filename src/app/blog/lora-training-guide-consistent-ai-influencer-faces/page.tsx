@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "LoRA Training Guide: Create 98% Consistent AI Influencer Faces in 2025 | IImagined",
+  title: "LoRA Training Guide: Create 98% Consistent AI Influencer Faces in 2026 | IImagined",
   description: "Complete LoRA training workflow for AI influencer character consistency. Dataset prep, training parameters, quality control, and troubleshooting guide.",
   keywords: ["LoRA training", "AI influencer consistency", "character LoRA", "Stable Diffusion training", "Kohya SS", "face consistency", "AI character creation"],
   authors: [{ name: "Anyro", url: "https://iimagined.ai" }],

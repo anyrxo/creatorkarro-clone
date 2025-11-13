@@ -7,7 +7,7 @@ export const metadata = {
   title: "Email Marketing Automation: Advanced N8N Sequences",
   description: "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations with 127K+ students and...",
   keywords: ["email marketing automation","automated email sequences","email automation","marketing automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "SEO & Marketing",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/email-marketing-automation-advanced-n8n-sequences",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.598Z",
-    modifiedTime: "2025-08-05T07:10:42.598Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-25T10:00:00.000Z",
+    modifiedTime: "2026-02-25T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["email marketing automation","automated email sequences","email automation","marketing automation"],
     images: [{
       url: "https://iimagined.ai/images/blog/email-marketing-automation-advanced-n8n-sequences-og.jpg",
@@ -72,16 +72,16 @@ export default function EmailMarketingAutomationAdvancedN8nSequences() {
         "@id": "https://iimagined.ai/blog/email-marketing-automation-advanced-n8n-sequences#article",
         "headline": "Email Marketing Automation: Advanced N8N Sequences",
         "description": "email marketing automation, automated email sequences, email automation - Expert guide from the creators of N8N AI Automations",
-        "datePublished": "2025-08-05T07:10:42.598Z",
-        "dateModified": "2025-08-05T07:10:42.598Z",
+        "datePublished": "2026-02-25T10:00:00.000Z",
+        "dateModified": "2026-02-25T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function EmailMarketingAutomationAdvancedN8nSequences() {
           "name": "N8N AI Automations",
           "description": "Advanced Workflow Automation with AI Integration",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }

@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Sales Page Psychology: Complete Guide & Expert Strategies",
-  description: "Sales Page Psychology - comprehensive strategies, tools, and techniques for 2025",
-  keywords: ["sales", "page", "psychology", "sales 2025", "sales page psychology", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Sales Page Psychology - comprehensive strategies, tools, and techniques for 2026",
+  keywords: ["sales", "page", "psychology", "sales 2026", "sales page psychology", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Sales Page Psychology: Complete Guide & Expert Strategies",
-    description: "Sales Page Psychology - comprehensive strategies, tools, and techniques for 2025",
+    description: "Sales Page Psychology - comprehensive strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/sales-page-psychology",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.964Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["sales", "page", "psychology", "sales 2025", "sales page psychology", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["sales", "page", "psychology", "sales 2026", "sales page psychology", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/sales-page-psychology-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Sales Page Psychology: Complete Guide & Expert Strategies",
-    description: "Sales Page Psychology - comprehensive strategies, tools, and techniques for 2025",
+    description: "Sales Page Psychology - comprehensive strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/sales-page-psychology-og.jpg",
       alt: "Sales Page Psychology"
@@ -1115,7 +1115,7 @@ const schema = generateBlogPostSchema({
                 <span className="text-purple-400 text-sm font-semibold">Read More →</span>
               </Link>
 
-              <Link href="/blog/digital-products-that-sell-2025" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
+              <Link href="/blog/digital-products-that-sell-2026" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
                 <h3 className="text-lg font-bold text-white mb-2">Digital Products That Sell</h3>
                 <p className="text-gray-400 text-sm mb-3">17 profitable digital product ideas for 2025</p>
                 <span className="text-purple-400 text-sm font-semibold">Read More →</span>

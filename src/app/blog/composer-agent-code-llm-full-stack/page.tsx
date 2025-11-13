@@ -7,7 +7,7 @@ export const metadata = {
   title: "Composer Agent: Full-Stack Development with AI",
   description: "Complete guide to using Composer Agent for full-stack development with LLMs and advanced coding automation",
   keywords: ["composer agent", "full stack development", "ai coding", "llm development", "automated programming", "web development", "backend automation", "frontend generation", "database design"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
@@ -19,7 +19,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2025-01-30T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:08:37.210Z",
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["composer agent", "full stack development", "ai coding", "llm development", "automated programming", "web development", "backend automation", "frontend generation"],
     images: [{
       url: "https://iimagined.ai/images/composer-agent-code-llm-full-stack-og.jpg",
@@ -80,9 +80,9 @@ export default function ComposerAgentCodeLlmFullStack() {
         "datePublished": "2025-01-30T10:00:00.000Z",
         "dateModified": "2025-08-03T06:08:37.210Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai",
           "logo": {
             "@type": "ImageObject",
@@ -92,7 +92,7 @@ export default function ComposerAgentCodeLlmFullStack() {
           }
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -149,7 +149,7 @@ export default function ComposerAgentCodeLlmFullStack() {
           "query-input": "required name=search_term_string"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         }
       }

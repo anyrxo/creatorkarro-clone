@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Instagram Reels Guide: Create Viral Content in 2025",
-  description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
-  keywords: ["instagram", "reels", "guide", "instagram 2025", "instagram reels guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "Instagram Reels Guide: Create Viral Content in 2026",
+  description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2026",
+  keywords: ["instagram", "reels", "guide", "instagram 2026", "instagram reels guide", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Instagram Reels Guide: Create Viral Content in 2025",
-    description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
+    title: "Instagram Reels Guide: Create Viral Content in 2026",
+    description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2026",
     url: "https://iimagined.ai/blog/instagram-reels-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-15T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:14:29.978Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["instagram", "reels", "guide", "instagram 2025", "instagram reels guide", "automation", "AI tools", "business growth"],
+    authors: ["Anyro"],
+    tags: ["instagram", "reels", "guide", "instagram 2026", "instagram reels guide", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/instagram-reels-guide-og.jpg",
       width: 1200,
@@ -34,8 +34,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "Instagram Reels Guide: Create Viral Content in 2025",
-    description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2025",
+    title: "Instagram Reels Guide: Create Viral Content in 2026",
+    description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2026",
     images: [{
       url: "https://iimagined.ai/images/instagram-reels-guide-og.jpg",
       alt: "Instagram Reels Guide"

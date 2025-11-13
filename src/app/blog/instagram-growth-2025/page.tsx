@@ -3,28 +3,28 @@ import Link from 'next/link'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Growth Strategies That Actually Work in 2025",
+  title: "Instagram Growth Strategies That Actually Work in 2026",
   description: "Latest tactics and techniques to grow your Instagram following organically - proven methods used by top creators",
-  keywords: ["instagram growth 2025", "instagram marketing", "grow instagram followers", "instagram strategy", "social media growth", "instagram tips", "organic growth", "engagement tactics", "reels strategy", "story optimization"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  keywords: ["instagram growth 2026", "instagram marketing", "grow instagram followers", "instagram strategy", "social media growth", "instagram tips", "organic growth", "engagement tactics", "reels strategy", "story optimization"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Instagram Growth Strategies That Actually Work in 2025",
+    title: "Instagram Growth Strategies That Actually Work in 2026",
     description: "Latest tactics and techniques to grow your Instagram following organically - proven methods used by top creators",
-    url: "https://iimagined.ai/blog/instagram-growth-2025",
+    url: "https://iimagined.ai/blog/instagram-growth-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2025-01-20T10:00:00.000Z",
     modifiedTime: "2025-08-03T06:08:37.209Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["instagram growth 2025", "instagram marketing", "grow instagram followers", "instagram strategy", "social media growth", "instagram tips", "organic growth", "engagement tactics"],
+    authors: ["Anyro"],
+    tags: ["instagram growth 2026", "instagram marketing", "grow instagram followers", "instagram strategy", "social media growth", "instagram tips", "organic growth", "engagement tactics"],
     images: [{
       url: "https://iimagined.ai/images/instagram-growth-2025-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Instagram Growth Strategies That Actually Work in 2025",
+      alt: "Instagram Growth Strategies That Actually Work in 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -33,11 +33,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Growth Strategies That Actually Work in 2025",
+    title: "Instagram Growth Strategies That Actually Work in 2026",
     description: "Latest tactics and techniques to grow your Instagram following organically - proven methods used by top creators",
     images: [{
       url: "https://iimagined.ai/images/instagram-growth-2025-og.jpg",
-      alt: "Instagram Growth Strategies That Actually Work in 2025"
+      alt: "Instagram Growth Strategies That Actually Work in 2026"
     }]
   },
   robots: {
@@ -52,7 +52,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/instagram-growth-2025",
+    canonical: "https://iimagined.ai/blog/instagram-growth-2026",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -74,14 +74,14 @@ export default function InstagramGrowth2025() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/instagram-growth-2025#article",
-        "headline": "Instagram Growth Strategies That Actually Work in 2025",
+        "headline": "Instagram Growth Strategies That Actually Work in 2026",
         "description": "Latest tactics and techniques to grow your Instagram following organically - proven methods used by top creators",
         "datePublished": "2025-01-20T10:00:00.000Z",
         "dateModified": "2025-08-03T06:08:37.209Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai",
           "logo": {
             "@type": "ImageObject",
@@ -91,12 +91,12 @@ export default function InstagramGrowth2025() {
           }
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/instagram-growth-2025"
+          "@id": "https://iimagined.ai/blog/instagram-growth-2026"
         },
         "image": {
           "@type": "ImageObject",
@@ -104,7 +104,7 @@ export default function InstagramGrowth2025() {
           "width": 1200,
           "height": 630
         },
-        "keywords": "instagram growth 2025, instagram marketing, grow instagram followers, instagram strategy, social media growth, instagram tips, organic growth, engagement tactics, reels strategy, story optimization",
+        "keywords": "instagram growth 2026, instagram marketing, grow instagram followers, instagram strategy, social media growth, instagram tips, organic growth, engagement tactics, reels strategy, story optimization",
         "articleSection": "Technology",
         "inLanguage": "en-US",
         "isPartOf": {
@@ -131,8 +131,8 @@ export default function InstagramGrowth2025() {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Instagram Growth Strategies That Actually Work in 2025",
-            "item": "https://iimagined.ai/blog/instagram-growth-2025"
+            "name": "Instagram Growth Strategies That Actually Work in 2026",
+            "item": "https://iimagined.ai/blog/instagram-growth-2026"
           }
         ]
       },
@@ -148,7 +148,7 @@ export default function InstagramGrowth2025() {
           "query-input": "required name=search_term_string"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         }
       }
@@ -297,7 +297,7 @@ export default function InstagramGrowth2025() {
                 </div>
 
                 <div className="bg-purple-900/20 border border-purple-500/30 rounded-xl p-6 mb-8">
-                  <h3 className="text-2xl font-bold text-purple-400 mb-4">🎯 2025 Instagram Algorithm Reality Check</h3>
+                  <h3 className="text-2xl font-bold text-purple-400 mb-4">🎯 2026 Instagram Algorithm Reality Check</h3>
                   <p className="text-gray-300 mb-4">Instagram's algorithm changed dramatically in January 2025. Here's what the data shows:</p>
                   <div className="space-y-2">
                     <div className="flex items-start space-x-3">
@@ -345,7 +345,7 @@ export default function InstagramGrowth2025() {
                   </div>
                 </div>
 
-                <h2 className="text-3xl font-bold text-white mb-6">🚀 The 2025 Instagram Growth Framework</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">🚀 The 2026 Instagram Growth Framework</h2>
 
                 {/* Strategy 1 */}
                 <div className="bg-zinc-900 rounded-xl p-8 mb-8">
@@ -359,7 +359,7 @@ export default function InstagramGrowth2025() {
 
                   <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-6 mb-6">
                     <h4 className="text-xl font-semibold text-blue-400 mb-4">The 4-Pillar System</h4>
-                    <p className="text-gray-300 mb-4">Every successful Instagram account in 2025 operates on 4 distinct content pillars:</p>
+                    <p className="text-gray-300 mb-4">Every successful Instagram account in 2026 operates on 4 distinct content pillars:</p>
 
                     <div className="space-y-4">
                       <div className="bg-zinc-800 rounded-lg p-4">
@@ -511,7 +511,7 @@ export default function InstagramGrowth2025() {
                       </tbody>
                     </table>
 
-                    <h4 className="text-lg font-semibold text-white mb-3">Best Posting Times (EST) Based on 2025 Data</h4>
+                    <h4 className="text-lg font-semibold text-white mb-3">Best Posting Times (EST) Based on 2026 Data</h4>
                     <div className="grid md:grid-cols-3 gap-4">
                       <div className="bg-zinc-800 rounded-lg p-4">
                         <div className="text-blue-400 font-semibold mb-2">Peak Times</div>
@@ -852,7 +852,7 @@ export default function InstagramGrowth2025() {
 
                     <div>
                       <h3 className="text-lg font-semibold text-blue-400 mb-2">Is it too late to start growing on Instagram in 2025?</h3>
-                      <p className="text-gray-300">Absolutely not. With 2 billion monthly users and constant algorithm updates favoring quality creators, 2025 might be the best time to start. The key is working smarter, not just harder.</p>
+                      <p className="text-gray-300">Absolutely not. With 2 billion monthly users and constant algorithm updates favoring quality creators, 2026 might be the best time to start. The key is working smarter, not just harder.</p>
                     </div>
 
                     <div>
