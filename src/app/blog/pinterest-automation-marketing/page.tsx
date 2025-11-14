@@ -549,7 +549,7 @@ const schema = generateBlogPostSchema({
                   <ul className="text-gray-300 space-y-3">
                     <li className="flex items-start gap-3">
                       <span className="text-orange-400 text-xl flex-shrink-0">1.</span>
-                      <span><strong className="text-white">Identify top performers</strong> from your last 90 days using Pinterest Analytics (Impressions > 10K, saves > 100, clicks > 50).</span>
+                      <span><strong className="text-white">Identify top performers</strong> from your last 90 days using Pinterest Analytics (Impressions &gt; 10K, saves &gt; 100, clicks &gt; 50).</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-orange-400 text-xl flex-shrink-0">2.</span>
@@ -860,7 +860,7 @@ const schema = generateBlogPostSchema({
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-orange-400">3.</span>
-                      <span><strong className="text-white">Hootsuite's Pinterest Ads integration:</strong> Pause underperforming ad groups automatically when ROAS drops below 1.5x. Set rules: "If ROAS < 1.5x for 7 days, pause ad group and send Slack notification."</span>
+                      <span><strong className="text-white">Hootsuite's Pinterest Ads integration:</strong> Pause underperforming ad groups automatically when ROAS drops below 1.5x. Set rules: "If ROAS &lt; 1.5x for 7 days, pause ad group and send Slack notification."</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-orange-400">4.</span>

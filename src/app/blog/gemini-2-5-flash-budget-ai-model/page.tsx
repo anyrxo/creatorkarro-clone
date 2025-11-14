@@ -490,7 +490,7 @@ const schema = generateBlogPostSchema({
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-red-400 mt-2 flex-shrink-0" />
-                    <p className="text-gray-300 text-sm"><strong className="text-white">Small context size:</strong> < 32K tokens (minimum cache size). If your context is 10K tokens, caching doesn't activate.</p>
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Small context size:</strong> &lt; 32K tokens (minimum cache size). If your context is 10K tokens, caching doesn't activate.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-red-400 mt-2 flex-shrink-0" />
