@@ -98,7 +98,7 @@ export default function AIAutomationBeginnersGuide() {
       />
 
       <BlogPostLayout
-        category="AI Automation"
+        category="AI Automations"
         title="AI Automation for Beginners: Complete Guide to Save 20+ Hours Every Week"
         description="Master AI automation from scratch with this complete beginner's guide. Learn N8N, ChatGPT workflows, automation tools, and real-world use cases that will transform your productivity."
         date="Jan 20, 2026"
