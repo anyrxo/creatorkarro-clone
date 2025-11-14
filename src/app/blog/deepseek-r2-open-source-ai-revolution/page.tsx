@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Brain, Zap, Code, TrendingUp, BarChart3, FileText } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "DeepSeek R2 Open Source AI Revolution 2026: Next-Gen Reasoning Model Outperforms o3 at 1/15th the Cost",
   description: "Master DeepSeek R2, the open-source reasoning AI revolutionizing problem-solving in 2026. Complete guide to chain-of-thought capabilities, self-hosting strategies, performance benchmarks, and deployment tactics that companies use to automate complex reasoning tasks at 93% accuracy.",
   keywords: [

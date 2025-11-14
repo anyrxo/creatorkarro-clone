@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Zap, BarChart3, Brain, Globe, Languages } from 'lucide-react'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Qwen 3 Alibaba Open Source LLM: Complete Guide 2026 | Multilingual AI Powerhouse",
   description: "Master Qwen 3, Alibaba's open-source multilingual LLM for 2026. Learn deployment, fine-tuning, Chinese language excellence, and how this Apache 2.0 licensed model rivals GPT-4 at zero cost for commercial use.",
   keywords: [

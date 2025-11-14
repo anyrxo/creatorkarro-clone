@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Code, Layers, Rocket, Zap, TrendingUp, FileText } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Gemini 2 Pro + Bolt.new DIY Full-Stack Revolution 2026: Build Production Apps from Text Prompts in Minutes",
   description: "Master the Gemini 2 Pro + Bolt.new combination revolutionizing full-stack development in 2026. Complete guide to AI-powered app building, prompt engineering for code generation, and deployment strategies that enable non-coders to ship production-ready SaaS products.",
   keywords: [

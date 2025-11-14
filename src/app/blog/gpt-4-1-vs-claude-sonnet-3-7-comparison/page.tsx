@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Zap, Scale, TrendingUp, BarChart3, FileText, Sparkles } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "GPT-4.1 vs Claude Sonnet 3.7 Comparison 2026: Complete Head-to-Head Benchmark Analysis",
   description: "Master the complete GPT-4.1 vs Claude Sonnet 3.7 comparison for 2026. Detailed benchmarks, cost analysis, use case recommendations, and real-world performance tests across coding, writing, reasoning, and business automation tasks.",
   keywords: [

@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, DollarSign, Users, TrendingUp, Target, BarChart3, BookOpen, Video, Award } from 'lucide-react'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Create Online Courses That Sell 2026 | Complete Blueprint",
   description: "Master online course creation in 2026. Learn platform selection, pricing strategies, content structure, marketing tactics, and real case studies from creators earning $50K+/month with courses.",
   keywords: [

@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, Zap, Brain, Code, Image as ImageIcon, TrendingUp, BarChart3, Target, CheckCircle, Cpu, GitBranch } from 'lucide-react'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "ComfyUI Tutorial: Master AI Image Generation 2026 | Complete Guide",
   description: "Master ComfyUI in 2026 with this complete tutorial. Learn installation, workflow architecture, node-based generation, performance optimization, and real case studies from professionals generating $10K+/month with AI images.",
   keywords: [

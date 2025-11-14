@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Zap, BarChart3, Brain, Globe } from 'lucide-react'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "DeepSeek R1 Browser Use AI Research: Complete Guide 2026 | Reasoning Model for Web Automation",
   description: "Master DeepSeek R1 for browser automation and AI research in 2026. Learn how this open-source reasoning model powers automated web research, data extraction, and multi-step browsing tasks that rival GPT-4 at 90% lower cost.",
   keywords: [

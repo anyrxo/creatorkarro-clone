@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Zap, BarChart3, Users, Calendar } from 'lucide-react'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "HR Automation Systems: Complete Guide 2026 | Recruiting, Payroll & Performance Management",
   description: "Master HR automation systems in 2026. Learn how to automate recruiting, onboarding, payroll, performance reviews, and employee engagement with BambooHR, Workday, Rippling—saving 20+ hours/week while improving employee experience.",
   keywords: [

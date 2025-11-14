@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Zap, GitBranch, Filter, RotateCw, AlertTriangle, Code, DollarSign, Clock } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Make App Automation: Complete Workflow Builder Guide 2026 | Visual Automation Platform",
   description: "Master Make.com (formerly Integromat) with this complete 2026 guide. Learn visual workflow automation, scenarios, routers, error handling, and advanced techniques that successful businesses use.",
   keywords: [

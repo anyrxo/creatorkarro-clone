@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Calendar, BarChart3, Zap } from 'lucide-react'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Pinterest Automation Marketing: Complete Strategy Guide 2026 | Automated Pin Scheduling & Growth",
   description: "Master Pinterest automation marketing with this complete 2026 guide. Learn automated pin scheduling, Pinterest SEO, analytics tracking, and proven strategies that brands use to drive 10x traffic growth.",
   keywords: [

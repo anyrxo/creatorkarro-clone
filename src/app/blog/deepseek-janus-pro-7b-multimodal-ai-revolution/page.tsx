@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Eye, Image, FileText, Zap, TrendingUp, BarChart3 } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "DeepSeek Janus Pro 7B Multimodal AI Revolution 2026: Vision + Language Model for Image Understanding & OCR",
   description: "Master DeepSeek Janus Pro 7B, the open-source multimodal AI revolutionizing vision-language tasks in 2026. Complete guide to image understanding, OCR, visual reasoning, and deployment strategies that companies use to automate document processing with 94% accuracy.",
   keywords: [

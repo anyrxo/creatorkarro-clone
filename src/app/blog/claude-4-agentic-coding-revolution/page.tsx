@@ -57,7 +57,7 @@ export const metadata = {
   }
 }
 
-import { Metadata } from 'next'
+
 import Breadcrumbs from '@/components/Breadcrumbs'
 import NewsletterSignup from '@/components/NewsletterSignup'
 import { FAQCard } from '@/components/course/CourseLayout'
