@@ -504,7 +504,7 @@ Final Answer: Founder dilution is 25% (ownership drops from 60% to 45%).`}
 
                 <div className="mt-6 p-4 bg-zinc-900/50 rounded-lg">
                   <p className="text-sm text-gray-300">
-                    <strong className="text-white">Rule of thumb:</strong> If task requires >10 logical steps or verification of work, use R1. If task needs <5 steps or creative output, use GPT-4. <strong className="text-emerald-400">Don't use a reasoning hammer for every nail</strong>—R1's power comes at cost of speed and verbosity.
+                    <strong className="text-white">Rule of thumb:</strong> If task requires &gt;10 logical steps or verification of work, use R1. If task needs &lt;5 steps or creative output, use GPT-4. <strong className="text-emerald-400">Don't use a reasoning hammer for every nail</strong>—R1's power comes at cost of speed and verbosity.
                   </p>
                 </div>
               </div>

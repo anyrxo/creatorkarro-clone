@@ -627,7 +627,7 @@ const schema = generateBlogPostSchema({
                   </div>
                 </div>
                 <p className="text-gray-300 text-sm mt-4">
-                  <strong className="text-white">Breakeven calculation:</strong> If you process >15K images/month, Janus Pro 7B self-hosting becomes cheaper than GPT-4V API. At 100K images/month, you save $1,260/month ($15K/year) vs GPT-4V with comparable accuracy on document-focused tasks.
+                  <strong className="text-white">Breakeven calculation:</strong> If you process &gt;15K images/month, Janus Pro 7B self-hosting becomes cheaper than GPT-4V API. At 100K images/month, you save $1,260/month ($15K/year) vs GPT-4V with comparable accuracy on document-focused tasks.
                 </p>
               </div>
 
@@ -912,7 +912,7 @@ total_amount. If any field is unclear, return null for that field."`}
                       </div>
                       <div className="bg-zinc-900/50 rounded-lg p-4">
                         <p className="text-purple-400 font-semibold mb-2">🖥️ On-Premise (Scale Phase)</p>
-                        <p className="text-gray-300 text-xs mb-2"><strong>Pros:</strong> No ongoing cloud costs, data stays in-house, better economics at scale (>50K images/mo)</p>
+                        <p className="text-gray-300 text-xs mb-2"><strong>Pros:</strong> No ongoing cloud costs, data stays in-house, better economics at scale (>&gt;50K images/mo)</p>
                         <p className="text-gray-300 text-xs mb-3"><strong>Cons:</strong> $8K-15K upfront hardware cost, need DevOps team, 2-4 week setup</p>
                         <p className="text-purple-400 text-xs font-semibold">Hardware build:</p>
                         <ul className="text-gray-400 text-xs space-y-1 list-disc list-inside">

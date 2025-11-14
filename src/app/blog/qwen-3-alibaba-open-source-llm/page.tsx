@@ -419,7 +419,7 @@ const schema = generateBlogPostSchema({
                         <li>• <strong className="text-white">Hardware:</strong> RTX 4090 (24GB), RTX 3090 (24GB), or M2 Max MacBook (32GB unified)</li>
                         <li>• <strong className="text-white">Speed:</strong> ~50 tokens/sec on RTX 4090</li>
                         <li>• <strong className="text-white">Cost:</strong> $1,600 (consumer GPU) or $0 (existing Mac)</li>
-                        <li>• <strong className="text-emerald-400">Best for:</strong> Development, prototyping, small-scale production (<1K requests/day)</li>
+                        <li>• <strong className="text-emerald-400">Best for:</strong> Development, prototyping, small-scale production (&lt;1K requests/day)</li>
                       </ul>
                     </div>
 

@@ -689,7 +689,7 @@ const schema = generateBlogPostSchema({
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-green-400 mt-2 flex-shrink-0" />
-                    <p className="text-gray-300"><strong className="text-emerald-400">Use Flash when:</strong> Volume is high (>10K requests/month), latency matters (<1 second required), tasks are repetitive/predictable, cost directly impacts profitability, 90-95% accuracy is acceptable.</p>
+                    <p className="text-gray-300"><strong className="text-emerald-400">Use Flash when:</strong> Volume is high (&gt;10K requests/month), latency matters (&lt;1 second required), tasks are repetitive/predictable, cost directly impacts profitability, 90-95% accuracy is acceptable.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-red-400 mt-2 flex-shrink-0" />
