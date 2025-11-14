@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { Zap, TrendingUp, Clock, DollarSign, Target, CheckCircle, MessageCircle, Rocket, Code, Users } from 'lucide-react'
-import { FAQSchema } from '@/components/seo/FAQSchema'
+import FAQSchema from '@/components/seo/FAQSchema'
 
 export const metadata: Metadata = {
   title: "ChatGPT Automation Tips 2026: 37 Hacks That Save 20+ Hours Weekly (Complete Guide with ROI)",
