@@ -497,7 +497,7 @@ export const trackTiming = (
   })
 }
 
-export default {
+const gtagUtils = {
   initGA,
   isGALoaded,
   pageview,
@@ -529,3 +529,4 @@ export default {
   trackDownload,
   trackTiming,
 }
+export default gtagUtils

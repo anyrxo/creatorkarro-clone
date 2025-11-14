@@ -110,8 +110,8 @@ export default function InventoryManagementAutomationPage() {
     title: metadata.title as string,
     description: metadata.description as string,
     slug: "inventory-management-automation",
-    publishedTime: metadata.openGraph?.publishedTime as string,
-    modifiedTime: metadata.openGraph?.modifiedTime as string,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category || "Technology",
     keywords: metadata.keywords as string[],
     image: (metadata.openGraph?.images as any)?.[0]?.url || ""

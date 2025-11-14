@@ -102,8 +102,8 @@ const schema = generateBlogPostSchema({
   title: metadata.title as string,
   description: metadata.description as string,
   slug: "create-online-courses-that-sell-step-by-step-blueprint",
-  publishedTime: metadata.openGraph?.publishedTime as string,
-  modifiedTime: metadata.openGraph?.modifiedTime as string,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category as string || "Digital Products",
   keywords: metadata.keywords as string[] || [],
   image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""

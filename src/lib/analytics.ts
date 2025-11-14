@@ -584,7 +584,7 @@ export const trackABTest = (
 /**
  * Export all tracking utilities
  */
-export default {
+const analyticsUtils = {
   initAnalytics,
   trackPageView,
   trackEvent,
@@ -614,3 +614,4 @@ export default {
   EngagementScoreTracker,
   SessionTracker,
 }
+export default analyticsUtils
