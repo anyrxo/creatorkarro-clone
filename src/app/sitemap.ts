@@ -2,10 +2,6 @@ import { MetadataRoute } from 'next'
 import { siteConfig } from '@/config/seo'
 import { generateMassiveSitemaps, getAllBlogSlugs } from '@/lib/sitemap-generator'
 
-// Required for static export
-export const dynamic = 'force-static';
-export const revalidate = false;
-
 // Product/Course slugs
 const productPages = [
   'ai-influencers',
