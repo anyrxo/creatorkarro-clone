@@ -58,9 +58,10 @@ const nextConfig = {
     ]
   },
 
-  // Remove problematic webpack configuration that causes navigator issues
+  // Configuration to reduce build issues with static export
   experimental: {
-    // Remove forceSwcTransforms which was causing problems
+    workerThreads: false,
+    cpus: 1,
   },
 
   // Production optimizations - Remove console statements in production builds
