@@ -7,7 +7,7 @@ export const metadata = {
   title: "N8N Zapier Alternative: Why N8N is Superior for Automation",
   description: "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations with 127K+ students and $2.7M+...",
   keywords: ["n8n zapier alternative","zapier vs n8n","automation tools comparison","workflow automation","n8n ai automations","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/n8n-zapier-alternative-why-n8n-superior-automation",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T08:10:02.993Z",
-    modifiedTime: "2025-08-05T08:10:02.993Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-10T10:00:00.000Z",
+    modifiedTime: "2026-02-10T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["n8n zapier alternative","zapier vs n8n","automation tools comparison","workflow automation"],
     images: [{
       url: "https://iimagined.ai/images/blog/n8n-zapier-alternative-why-n8n-superior-automation-og.jpg",
@@ -72,16 +72,16 @@ export default function N8nZapierAlternativeWhyN8nIsSuperiorForAutomation() {
         "@id": "https://iimagined.ai/blog/n8n-zapier-alternative-why-n8n-superior-automation#article",
         "headline": "N8N Zapier Alternative: Why N8N is Superior for Automation",
         "description": "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations",
-        "datePublished": "2025-08-05T08:10:02.993Z",
-        "dateModified": "2025-08-05T08:10:02.993Z",
+        "datePublished": "2026-02-10T10:00:00.000Z",
+        "dateModified": "2026-02-10T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function N8nZapierAlternativeWhyN8nIsSuperiorForAutomation() {
           "name": "N8N AI Automations",
           "description": "Advanced Workflow Automation with AI Integration",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -146,8 +146,8 @@ export default function N8nZapierAlternativeWhyN8nIsSuperiorForAutomation() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 

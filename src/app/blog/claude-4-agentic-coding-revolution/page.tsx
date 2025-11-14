@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Claude 4 Agentic Coding Revolution",
-  description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["claude", "agentic", "coding", "revolution", "claude 2025", "claude agentic coding revolution", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["claude", "agentic", "coding", "revolution", "claude 2026", "claude agentic coding revolution", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Claude 4 Agentic Coding Revolution",
-    description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/claude-4-agentic-coding-revolution",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.997Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["claude", "agentic", "coding", "revolution", "claude 2025", "claude agentic coding revolution", "automation", "AI tools"],
+    publishedTime: "2026-02-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:14:29.997Z",
+    authors: ["Anyro"],
+    tags: ["claude", "agentic", "coding", "revolution", "claude 2026", "claude agentic coding revolution", "automation", "AI tools"],
     images: [{
       url: "https://iimagined.ai/images/claude-4-agentic-coding-revolution-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Claude 4 Agentic Coding Revolution",
-    description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/claude-4-agentic-coding-revolution-og.jpg",
       alt: "Claude 4 Agentic Coding Revolution"
@@ -116,7 +116,7 @@ export default function Claude4AgenticCodingPage() {
                 <div className="flex items-center justify-center gap-4 text-gray-400">
                     <span>By Anyro</span>
                     <span>•</span>
-                    <span>January 1, 2025</span>
+                    <span>January 2026</span>
                     <span>•</span>
                     <span>12 min read</span>
                 </div>

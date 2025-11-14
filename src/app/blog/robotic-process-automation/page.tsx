@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Robotic Process Automation: Complete Guide & Expert",
-  description: "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2025",
-  keywords: ["robotic", "process", "automation", "robotic 2025", "robotic process automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2026",
+  keywords: ["robotic", "process", "automation", "robotic 2026", "robotic process automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Robotic Process Automation: Complete Guide & Expert",
-    description: "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/robotic-process-automation",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.966Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["robotic", "process", "automation", "robotic 2025", "robotic process automation", "AI tools", "business growth", "productivity"],
+    publishedTime: "2026-02-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:14:29.966Z",
+    authors: ["Anyro"],
+    tags: ["robotic", "process", "automation", "robotic 2026", "robotic process automation", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/robotic-process-automation-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Robotic Process Automation: Complete Guide & Expert",
-    description: "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to robotic process automation - proven strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/robotic-process-automation-og.jpg",
       alt: "Robotic Process Automation"

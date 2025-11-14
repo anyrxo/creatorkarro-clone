@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "AI Image Generation Guide 2025",
-  description: "AI Image Generation Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["image", "generation", "guide", "image 2025", "image generation guide", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "AI Image Generation Guide 2026",
+  description: "AI Image Generation Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["image", "generation", "guide", "image 2026", "image generation guide", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "AI Image Generation Guide 2025",
-    description: "AI Image Generation Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    title: "AI Image Generation Guide 2026",
+    description: "AI Image Generation Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/ai-image-generation-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:30.001Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["image", "generation", "guide", "image 2025", "image generation guide", "automation", "AI tools", "business growth"],
+    publishedTime: "2026-02-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:14:30.001Z",
+    authors: ["Anyro"],
+    tags: ["image", "generation", "guide", "image 2026", "image generation guide", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/ai-image-generation-guide-og.jpg",
       width: 1200,
@@ -34,8 +34,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
-    title: "AI Image Generation Guide 2025",
-    description: "AI Image Generation Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    title: "AI Image Generation Guide 2026",
+    description: "AI Image Generation Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/ai-image-generation-guide-og.jpg",
       alt: "AI Image Generation Guide"

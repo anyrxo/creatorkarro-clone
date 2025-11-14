@@ -7,7 +7,7 @@ export const metadata = {
   title: "Online Course Creation Guide: Build & Sell Courses That",
   description: "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery with 127K+ students and $2.7M+ in...",
   keywords: ["course creation","create online course","sell online courses","online course business","digital products mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/online-course-creation-guide-build-sell-courses",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.596Z",
-    modifiedTime: "2025-08-05T07:10:42.596Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-22T10:00:00.000Z",
+    modifiedTime: "2026-02-22T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["course creation","create online course","sell online courses","online course business"],
     images: [{
       url: "https://iimagined.ai/images/blog/online-course-creation-guide-build-sell-courses-og.jpg",
@@ -72,16 +72,16 @@ export default function OnlineCourseCreationGuideBuildSellCoursesThatConvert() {
         "@id": "https://iimagined.ai/blog/online-course-creation-guide-build-sell-courses#article",
         "headline": "Online Course Creation Guide: Build & Sell Courses That Convert",
         "description": "Complete guide to creating and selling online courses. Learn curriculum design, platform selection, pricing, launch strategy, and conversion optimization.",
-        "datePublished": "2025-08-05T07:10:42.596Z",
-        "dateModified": "2025-08-05T07:10:42.596Z",
+        "datePublished": "2026-02-22T10:00:00.000Z",
+        "dateModified": "2026-02-22T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function OnlineCourseCreationGuideBuildSellCoursesThatConvert() {
           "name": "Digital Products Mastery",
           "description": "Complete Digital Product Creation & Sales System",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -146,8 +146,8 @@ export default function OnlineCourseCreationGuideBuildSellCoursesThatConvert() {
 
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
 

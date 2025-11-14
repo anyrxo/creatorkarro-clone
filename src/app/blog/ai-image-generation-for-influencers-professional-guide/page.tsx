@@ -7,7 +7,7 @@ export const metadata = {
   title: "AI Image Generation for Influencers: Professional Guide",
   description: "ai image generation, ai images for influencers, ai photography - Expert guide from the creators of AI Influencers Academy with 127K+ students and $2.7M+...",
   keywords: ["ai image generation","ai images for influencers","ai photography","virtual influencer photos","ai influencers academy","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-image-generation-for-influencers-professional-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T08:10:02.989Z",
-    modifiedTime: "2025-08-05T08:10:02.989Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-25T10:00:00.000Z",
+    modifiedTime: "2026-02-25T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["ai image generation","ai images for influencers","ai photography","virtual influencer photos"],
     images: [{
       url: "https://iimagined.ai/images/blog/ai-image-generation-for-influencers-professional-guide-og.jpg",
@@ -72,16 +72,16 @@ export default function AiImageGenerationForInfluencersProfessionalGuide() {
         "@id": "https://iimagined.ai/blog/ai-image-generation-for-influencers-professional-guide#article",
         "headline": "AI Image Generation for Influencers: Professional Guide",
         "description": "ai image generation, ai images for influencers, ai photography - Expert guide from the creators of AI Influencers Academy",
-        "datePublished": "2025-08-05T08:10:02.989Z",
-        "dateModified": "2025-08-05T08:10:02.989Z",
+        "datePublished": "2026-02-25T10:00:00.000Z",
+        "dateModified": "2026-02-25T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function AiImageGenerationForInfluencersProfessionalGuide() {
           "name": "AI Influencers Academy",
           "description": "Build & Monetize AI-Powered Virtual Influencers",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -146,8 +146,8 @@ export default function AiImageGenerationForInfluencersProfessionalGuide() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 

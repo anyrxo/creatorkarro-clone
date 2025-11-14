@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
-  description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2025",
-  keywords: ["youtube", "shorts", "strategy", "youtube 2025", "youtube shorts strategy", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2026",
+  keywords: ["youtube", "shorts", "strategy", "youtube 2026", "youtube shorts strategy", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
-    description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2025",
+    description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2026",
     url: "https://iimagined.ai/blog/youtube-shorts-strategy",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.952Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["youtube", "shorts", "strategy", "youtube 2025", "youtube shorts strategy", "automation", "AI tools", "business growth"],
+    publishedTime: "2026-02-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:14:29.952Z",
+    authors: ["Anyro"],
+    tags: ["youtube", "shorts", "strategy", "youtube 2026", "youtube shorts strategy", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/youtube-shorts-strategy-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
-    description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2025",
+    description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2026",
     images: [{
       url: "https://iimagined.ai/images/youtube-shorts-strategy-og.jpg",
       alt: "YouTube Shorts Strategy"

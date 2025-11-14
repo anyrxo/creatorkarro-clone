@@ -7,19 +7,19 @@ export const metadata = {
   title: "Best Passive Income Ideas: 20+ Digital Products That Work",
   description: "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery with 127K+ students...",
   keywords: ["passive income ideas","digital products passive income","make money online","passive income","digital products mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
   openGraph: {
     title: "Best Passive Income Ideas: 20+ Digital Products That Work",
     description: "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery",
-    url: "https://iimagined.ai/blog/best-passive-income-ideas-digital-products-2025",
+    url: "https://iimagined.ai/blog/best-passive-income-ideas-digital-products-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.595Z",
-    modifiedTime: "2025-08-05T07:10:42.595Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-22T10:00:00.000Z",
+    modifiedTime: "2026-02-22T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["passive income ideas","digital products passive income","make money online","passive income"],
     images: [{
       url: "https://iimagined.ai/images/blog/best-passive-income-ideas-digital-products-2025-og.jpg",
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/best-passive-income-ideas-digital-products-2025",
+    canonical: "https://iimagined.ai/blog/best-passive-income-ideas-digital-products-2026",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -72,21 +72,21 @@ export default function BestPassiveIncomeIdeas20DigitalProductsThatWork() {
         "@id": "https://iimagined.ai/blog/best-passive-income-ideas-digital-products-2025#article",
         "headline": "Best Passive Income Ideas: 20+ Digital Products That Work",
         "description": "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery",
-        "datePublished": "2025-08-05T07:10:42.595Z",
-        "dateModified": "2025-08-05T07:10:42.595Z",
+        "datePublished": "2026-02-22T10:00:00.000Z",
+        "dateModified": "2026-02-22T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/best-passive-income-ideas-digital-products-2025"
+          "@id": "https://iimagined.ai/blog/best-passive-income-ideas-digital-products-2026"
         },
         "image": {
           "@type": "ImageObject",
@@ -101,7 +101,7 @@ export default function BestPassiveIncomeIdeas20DigitalProductsThatWork() {
           "name": "Digital Products Mastery",
           "description": "Complete Digital Product Creation & Sales System",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -146,8 +146,8 @@ export default function BestPassiveIncomeIdeas20DigitalProductsThatWork() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
@@ -185,9 +185,9 @@ export default function BestPassiveIncomeIdeas20DigitalProductsThatWork() {
               <div className="prose prose-lg prose-invert max-w-none">
 
                 <section className="mb-12">
-                  <h2 className="text-3xl font-bold text-white mb-6">The Digital Products Passive Income Landscape in 2025</h2>
+                  <h2 className="text-3xl font-bold text-white mb-6">The Digital Products Passive Income Landscape in 2026</h2>
                   <p className="text-gray-300 mb-4 leading-relaxed">
-                    The digital products market has reached $331 billion in 2025, growing 47% year-over-year. Unlike traditional income streams that require constant time investment, digital products offer true passive income potential. Once created, they can generate revenue 24/7 without additional effort.
+                    The digital products market has reached $331 billion in 2026, growing 47% year-over-year. Unlike traditional income streams that require constant time investment, digital products offer true passive income potential. Once created, they can generate revenue 24/7 without additional effort.
                   </p>
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     The opportunity is unprecedented. Creators are building sustainable income streams selling everything from Notion templates ($2,000-15,000/month) to comprehensive online courses ($5,000-50,000/month). The barrier to entry has never been lower, with platforms like Gumroad, Teachable, and ConvertKit handling payments, hosting, and delivery automatically.
@@ -234,7 +234,7 @@ export default function BestPassiveIncomeIdeas20DigitalProductsThatWork() {
                     </ul>
 
                     <p className="text-gray-300 mb-4 leading-relaxed">
-                      <strong>Profitable Course Niches in 2025:</strong>
+                      <strong>Profitable Course Niches in 2026:</strong>
                     </p>
                     <ul className="space-y-2 text-gray-300 mb-4">
                       <li>AI prompt engineering ($197-497 price point)</li>

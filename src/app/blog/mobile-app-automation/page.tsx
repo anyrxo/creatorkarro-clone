@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Mobile App Automation: Complete Guide & Expert Strategies",
-  description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2025",
-  keywords: ["mobile", "app", "automation", "mobile 2025", "mobile app automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2026",
+  keywords: ["mobile", "app", "automation", "mobile 2026", "mobile app automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Mobile App Automation: Complete Guide & Expert Strategies",
-    description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/mobile-app-automation",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.974Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["mobile", "app", "automation", "mobile 2025", "mobile app automation", "AI tools", "business growth", "productivity"],
+    publishedTime: "2026-02-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:14:29.974Z",
+    authors: ["Anyro"],
+    tags: ["mobile", "app", "automation", "mobile 2026", "mobile app automation", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/mobile-app-automation-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Mobile App Automation: Complete Guide & Expert Strategies",
-    description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/mobile-app-automation-og.jpg",
       alt: "Mobile App Automation"

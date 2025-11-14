@@ -4,22 +4,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Futures Trading Psychology: Master Your Emotions & Win Consistently 2025",
+  title: "Futures Trading Psychology: Master Your Emotions & Win Consistently 2026",
   description: "Master trading psychology with proven mental frameworks, daily routines, and strategies to overcome revenge trading, FOMO, and drawdowns. Real case study: trader overcame $10K loss to profitability.",
   keywords: ["trading psychology", "futures trading mindset", "overcome revenge trading", "trading discipline", "emotional control trading", "trading drawdown recovery", "FOMO trading", "overtrading solutions", "mental game trading"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Futures Trading",
   openGraph: {
-    title: "Futures Trading Psychology: Master Your Emotions & Win Consistently 2025",
+    title: "Futures Trading Psychology: Master Your Emotions & Win Consistently 2026",
     description: "Master trading psychology with proven mental frameworks and strategies to overcome revenge trading, FOMO, and drawdowns.",
     url: "https://iimagined.ai/blog/futures-trading-psychology-master-emotions-win",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T09:00:00.000Z",
-    modifiedTime: "2025-01-22T09:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-01-22T09:00:00.000Z",
+    modifiedTime: "2026-01-22T09:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["trading psychology", "mental game", "futures trading", "discipline", "emotions"],
     images: [{
       url: "https://iimagined.ai/images/trading-psychology-og.jpg",

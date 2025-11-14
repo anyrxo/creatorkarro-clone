@@ -7,7 +7,7 @@ export const metadata = {
   title: "Digital Product Launch Strategy: From Idea to $100K",
   description: "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery with 127K+...",
   keywords: ["digital product launch","product launch strategy","digital product marketing","launch products","digital products mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Digital Products & Business",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/digital-product-launch-strategy-idea-to-100k",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.595Z",
-    modifiedTime: "2025-08-05T07:10:42.595Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-03T10:00:00.000Z",
+    modifiedTime: "2026-02-03T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["digital product launch","product launch strategy","digital product marketing","launch products"],
     images: [{
       url: "https://iimagined.ai/images/blog/digital-product-launch-strategy-idea-to-100k-og.jpg",
@@ -72,16 +72,16 @@ export default function DigitalProductLaunchStrategyFromIdeaTo100k() {
         "@id": "https://iimagined.ai/blog/digital-product-launch-strategy-idea-to-100k#article",
         "headline": "Digital Product Launch Strategy: From Idea to $100K",
         "description": "Complete guide to launching digital products. Learn product creation, pricing strategies, launch timelines, email sequences, landing pages, and sales funnels.",
-        "datePublished": "2025-08-05T07:10:42.595Z",
-        "dateModified": "2025-08-05T07:10:42.595Z",
+        "datePublished": "2026-02-03T10:00:00.000Z",
+        "dateModified": "2026-02-03T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function DigitalProductLaunchStrategyFromIdeaTo100k() {
           "name": "Digital Products Mastery",
           "description": "Complete Digital Product Creation & Sales System",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -146,8 +146,8 @@ export default function DigitalProductLaunchStrategyFromIdeaTo100k() {
 
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
 
@@ -280,7 +280,7 @@ export default function DigitalProductLaunchStrategyFromIdeaTo100k() {
                           <li>• Current price: $97</li>
                           <li>• Annual revenue potential: $100K+ at 30 sales/month</li>
                           <li>• Profit margin: 95% (digital)</li>
-                          <li>• Sold since: January 2025</li>
+                          <li>• Sold since: January 2026</li>
                         </ul>
                       </div>
                     </div>

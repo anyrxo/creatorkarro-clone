@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "DeepSeek Market Disruption: Complete Guide & Expert",
-  description: "DeepSeek Market Disruption - comprehensive strategies, tools, and techniques for 2025",
-  keywords: ["deepseek", "market", "disruption", "deepseek 2025", "deepseek market disruption", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "DeepSeek Market Disruption - comprehensive strategies, tools, and techniques for 2026",
+  keywords: ["deepseek", "market", "disruption", "deepseek 2026", "deepseek market disruption", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "DeepSeek Market Disruption: Complete Guide & Expert",
-    description: "DeepSeek Market Disruption - comprehensive strategies, tools, and techniques for 2025",
+    description: "DeepSeek Market Disruption - comprehensive strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/deepseek-market-disruption",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.989Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["deepseek", "market", "disruption", "deepseek 2025", "deepseek market disruption", "automation", "AI tools", "business growth"],
+    publishedTime: "2026-02-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:14:29.989Z",
+    authors: ["Anyro"],
+    tags: ["deepseek", "market", "disruption", "deepseek 2026", "deepseek market disruption", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/deepseek-market-disruption-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "DeepSeek Market Disruption: Complete Guide & Expert",
-    description: "DeepSeek Market Disruption - comprehensive strategies, tools, and techniques for 2025",
+    description: "DeepSeek Market Disruption - comprehensive strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/deepseek-market-disruption-og.jpg",
       alt: "DeepSeek Market Disruption"
@@ -125,7 +125,7 @@ export default function DeepseekMarketDisruptionPage() {
             <div className="prose prose-invert prose-lg max-w-none" id="disruption">
               <h2 className="text-3xl font-bold text-white mb-6">💥 The $500 Billion AI Market Disruption</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                January 27, 2025 marked the day everything changed. DeepSeek's R1 model didn't just match OpenAI's performance—it 
+                January 27, 2026 marked the day everything changed. DeepSeek's R1 model didn't just match OpenAI's performance—it 
                 obliterated the cost structure that made AI exclusive to tech giants. While companies spent billions on AI infrastructure, 
                 a small Chinese trading firm created equivalent AI for $5 million. The result? A 96% cost reduction that's opening 
                 floodgates for entrepreneurs worldwide.

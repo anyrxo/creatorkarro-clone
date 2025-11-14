@@ -4,28 +4,28 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Complete Passive Income Blueprint for 2025",
+  title: "Complete Passive Income Blueprint for 2026",
   description: "Learn proven strategies to build passive income streams that work while you sleep - from $0 to $10K/month",
-  keywords: ["passive income 2025", "passive income ideas", "make money while sleeping", "online passive income", "digital passive income streams", "automated income", "recurring revenue", "investment income", "royalties"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  keywords: ["passive income 2026", "passive income ideas", "make money while sleeping", "online passive income", "digital passive income streams", "automated income", "recurring revenue", "investment income", "royalties"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "Complete Passive Income Blueprint for 2025",
+    title: "Complete Passive Income Blueprint for 2026",
     description: "Learn proven strategies to build passive income streams that work while you sleep - from $0 to $10K/month",
     url: "https://iimagined.ai/blog/passive-income-blueprint",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:08:37.208Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["passive income 2025", "passive income ideas", "make money while sleeping", "online passive income", "digital passive income streams", "automated income", "recurring revenue", "investment income"],
+    publishedTime: "2026-01-22T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:08:37.208Z",
+    authors: ["Anyro"],
+    tags: ["passive income 2026", "passive income ideas", "make money while sleeping", "online passive income", "digital passive income streams", "automated income", "recurring revenue", "investment income"],
     images: [{
       url: "https://iimagined.ai/images/passive-income-blueprint-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Complete Passive Income Blueprint for 2025",
+      alt: "Complete Passive Income Blueprint for 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +34,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Complete Passive Income Blueprint for 2025",
+    title: "Complete Passive Income Blueprint for 2026",
     description: "Learn proven strategies to build passive income streams that work while you sleep - from $0 to $10K/month",
     images: [{
       url: "https://iimagined.ai/images/passive-income-blueprint-og.jpg",
-      alt: "Complete Passive Income Blueprint for 2025"
+      alt: "Complete Passive Income Blueprint for 2026"
     }]
   },
   robots: {
@@ -75,14 +75,14 @@ export default function PassiveIncomeBlueprint() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/passive-income-blueprint#article",
-        "headline": "Complete Passive Income Blueprint for 2025",
+        "headline": "Complete Passive Income Blueprint for 2026",
         "description": "Learn proven strategies to build passive income streams that work while you sleep - from $0 to $10K/month",
-        "datePublished": "2025-01-22T10:00:00.000Z",
-        "dateModified": "2025-08-03T06:08:37.208Z",
+        "datePublished": "2026-01-22T10:00:00.000Z",
+        "dateModified": "2026-08-03T06:08:37.208Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai",
           "logo": {
             "@type": "ImageObject",
@@ -92,7 +92,7 @@ export default function PassiveIncomeBlueprint() {
           }
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -105,7 +105,7 @@ export default function PassiveIncomeBlueprint() {
           "width": 1200,
           "height": 630
         },
-        "keywords": "passive income 2025, passive income ideas, make money while sleeping, online passive income, digital passive income streams, automated income, recurring revenue, investment income, royalties",
+        "keywords": "passive income 2026, passive income ideas, make money while sleeping, online passive income, digital passive income streams, automated income, recurring revenue, investment income, royalties",
         "articleSection": "Technology",
         "inLanguage": "en-US",
         "isPartOf": {
@@ -132,7 +132,7 @@ export default function PassiveIncomeBlueprint() {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Complete Passive Income Blueprint for 2025",
+            "name": "Complete Passive Income Blueprint for 2026",
             "item": "https://iimagined.ai/blog/passive-income-blueprint"
           }
         ]
@@ -149,7 +149,7 @@ export default function PassiveIncomeBlueprint() {
           "query-input": "required name=search_term_string"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         }
       }
@@ -197,10 +197,10 @@ export default function PassiveIncomeBlueprint() {
               <header className="mb-12">
                 <div className="mb-6">
                   <time 
-                    dateTime="2025-01-22" 
+                    dateTime="2026-01-22" 
                     className="text-sm text-blue-400 font-medium"
                   >
-                    January 22, 2025
+                    January 2026
                   </time>
                 </div>
                 

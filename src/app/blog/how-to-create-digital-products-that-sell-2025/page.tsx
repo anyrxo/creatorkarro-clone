@@ -4,28 +4,28 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "How to Create Digital Products That Sell: Complete 2025",
+  title: "How to Create Digital Products That Sell: Complete 2026",
   description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery with 127K+ students and...",
   keywords: ["create digital products","digital product ideas","sell digital products","digital products business","digital products mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Digital Products & Business",
   openGraph: {
-    title: "How to Create Digital Products That Sell: Complete 2025",
+    title: "How to Create Digital Products That Sell: Complete 2026",
     description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery",
-    url: "https://iimagined.ai/blog/how-to-create-digital-products-that-sell-2025",
+    url: "https://iimagined.ai/blog/how-to-create-digital-products-that-sell-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.595Z",
-    modifiedTime: "2025-08-05T07:10:42.595Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-03T10:00:00.000Z",
+    modifiedTime: "2026-02-03T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["create digital products","digital product ideas","sell digital products","digital products business"],
     images: [{
       url: "https://iimagined.ai/images/blog/how-to-create-digital-products-that-sell-2025-og.jpg",
       width: 1200,
       height: 630,
-      alt: "How to Create Digital Products That Sell: Complete 2025 Guide",
+      alt: "How to Create Digital Products That Sell: Complete 2026 Guide",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +34,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "How to Create Digital Products That Sell: Complete 2025",
+    title: "How to Create Digital Products That Sell: Complete 2026",
     description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/how-to-create-digital-products-that-sell-2025-og.jpg",
-      alt: "How to Create Digital Products That Sell: Complete 2025 Guide"
+      alt: "How to Create Digital Products That Sell: Complete 2026 Guide"
     }]
   },
   robots: {
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/how-to-create-digital-products-that-sell-2025",
+    canonical: "https://iimagined.ai/blog/how-to-create-digital-products-that-sell-2026",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -70,23 +70,23 @@ export default function HowToCreateDigitalProductsThatSellComplete2025Guide() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/how-to-create-digital-products-that-sell-2025#article",
-        "headline": "How to Create Digital Products That Sell: Complete 2025 Guide",
+        "headline": "How to Create Digital Products That Sell: Complete 2026 Guide",
         "description": "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery",
-        "datePublished": "2025-08-05T07:10:42.595Z",
-        "dateModified": "2025-08-05T07:10:42.595Z",
+        "datePublished": "2026-02-03T10:00:00.000Z",
+        "dateModified": "2026-02-03T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/how-to-create-digital-products-that-sell-2025"
+          "@id": "https://iimagined.ai/blog/how-to-create-digital-products-that-sell-2026"
         },
         "image": {
           "@type": "ImageObject",
@@ -101,7 +101,7 @@ export default function HowToCreateDigitalProductsThatSellComplete2025Guide() {
           "name": "Digital Products Mastery",
           "description": "Complete Digital Product Creation & Sales System",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -138,7 +138,7 @@ export default function HowToCreateDigitalProductsThatSellComplete2025Guide() {
                   <li aria-current="page">
                     <div className="flex items-center">
                       <span className="mx-2 text-gray-500">/</span>
-                      <span className="text-gray-300">How to Create Digital Products That Sell: Complete 2025 Guide</span>
+                      <span className="text-gray-300">How to Create Digital Products That Sell: Complete 2026 Guide</span>
                     </div>
                   </li>
                 </ol>
@@ -146,13 +146,13 @@ export default function HowToCreateDigitalProductsThatSellComplete2025Guide() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  How to Create Digital Products That Sell: Complete 2025 Guide
+                  How to Create Digital Products That Sell: Complete 2026 Guide
                 </h1>
                 
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -190,7 +190,7 @@ export default function HowToCreateDigitalProductsThatSellComplete2025Guide() {
                     Creating digital products that actually sell requires more than just producing content. It's a systematic process of market research, strategic planning, quality creation, and effective marketing. The creators who succeed follow proven frameworks that eliminate guesswork and maximize their chances of success.
                   </p>
                   <p className="text-gray-300 mb-4 leading-relaxed">
-                    In 2025, the digital products market is more competitive than ever, but also more accessible. The creators making $5,000-50,000/month aren't just creating better products—they're following strategic processes from validation to launch. This guide walks you through the exact steps used by successful creators.
+                    In 2026, the digital products market is more competitive than ever, but also more accessible. The creators making $5,000-50,000/month aren't just creating better products—they're following strategic processes from validation to launch. This guide walks you through the exact steps used by successful creators.
                   </p>
                 </section>
 

@@ -3,22 +3,22 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "AI Influencer Monetization: Complete Guide to Making $10K-$100K/Month in 2025 | IImagined",
+  title: "AI Influencer Monetization: Complete Guide to Making $10K-$100K/Month in 2026 | IImagined",
   description: "12 proven revenue streams for AI influencers. Pricing strategies, platform-specific tactics, and real case studies of influencers earning $10K-$100K monthly.",
   keywords: ["AI influencer monetization", "virtual influencer revenue", "sponsored posts pricing", "AI influencer income", "OnlyFans AI", "Patreon AI creator", "brand deals"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
   openGraph: {
     title: "AI Influencer Monetization: Complete Guide to $10K-$100K/Month",
     description: "12 proven revenue streams, pricing strategies, and real case studies from AI influencers earning $10K-$100K monthly.",
-    url: "https://iimagined.ai/blog/ai-influencer-monetization-complete-guide-2025",
+    url: "https://iimagined.ai/blog/ai-influencer-monetization-complete-guide-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-21T10:00:00.000Z",
-    modifiedTime: "2025-01-21T10:00:00.000Z",
-    authors: ["Karro"],
+    publishedTime: "2026-01-21T10:00:00.000Z",
+    modifiedTime: "2026-01-21T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Monetization", "Revenue Streams", "Brand Deals", "Digital Products"],
     images: [{
       url: "https://iimagined.ai/images/ai-influencer-monetization-og.jpg",
@@ -52,7 +52,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/ai-influencer-monetization-complete-guide-2025"
+    canonical: "https://iimagined.ai/blog/ai-influencer-monetization-complete-guide-2026"
   }
 }
 
@@ -60,7 +60,7 @@ export default function AIInfluencerMonetization() {
   const schema = generateBlogPostSchema({
     title: metadata.title,
     description: metadata.description,
-    slug: "ai-influencer-monetization-complete-guide-2025",
+    slug: "ai-influencer-monetization-complete-guide-2026",
     publishedTime: metadata.openGraph.publishedTime,
     modifiedTime: metadata.openGraph.modifiedTime,
     category: metadata.category || "AI Influencers",
@@ -1267,7 +1267,7 @@ export default function AIInfluencerMonetization() {
               </div>
             </Link>
 
-            <Link href="/blog/ai-influencers-complete-guide-virtual-influencer-creation-2025" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-blue-500/50">
+            <Link href="/blog/ai-influencers-complete-guide-virtual-influencer-creation-2026" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-blue-500/50">
               <div className="text-blue-400 text-3xl mb-3">🤖</div>
               <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                 AI Influencer Creation Guide

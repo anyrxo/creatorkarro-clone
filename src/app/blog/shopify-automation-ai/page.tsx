@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Shopify Automation AI: Complete Guide & Expert Strategies",
-  description: "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2025",
-  keywords: ["shopify", "automation", "shopify 2025", "shopify automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2026",
+  keywords: ["shopify", "automation", "shopify 2026", "shopify automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Shopify Automation AI: Complete Guide & Expert Strategies",
-    description: "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/shopify-automation-ai",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.961Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["shopify", "automation", "shopify 2025", "shopify automation", "AI tools", "business growth", "productivity", "2025 strategies"],
+    publishedTime: "2026-02-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:14:29.961Z",
+    authors: ["Anyro"],
+    tags: ["shopify", "automation", "shopify 2026", "shopify automation", "AI tools", "business growth", "productivity", "2026 strategies"],
     images: [{
       url: "https://iimagined.ai/images/shopify-automation-ai-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Shopify Automation AI: Complete Guide & Expert Strategies",
-    description: "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to shopify automation ai - proven strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/shopify-automation-ai-og.jpg",
       alt: "Shopify Automation AI"
@@ -936,7 +936,7 @@ export default function ShopifyAutomationAiPage() {
               </div>
               
               <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-white mb-3">What Shopify automation AI skills do I need to learn in 2025?</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">What Shopify automation AI skills do I need to learn in 2026?</h3>
                 <p className="text-gray-300">No coding required for 80% of implementations. Focus on: workflow design, customer segmentation, basic analytics interpretation, and AI tool configuration. Advanced users benefit from understanding APIs and Shopify Liquid templating. Most successful implementations require business strategy skills rather than technical expertise.</p>
               </div>
               

@@ -7,7 +7,7 @@ export const metadata = {
   title: "ComfyUI Installation & Setup: Complete Beginner Guide",
   description: "comfyui installation, comfyui setup, install comfyui - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
   keywords: ["comfyui installation","comfyui setup","install comfyui","comfyui getting started","comfyui mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
@@ -17,9 +17,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/comfyui-installation-setup-complete-beginner-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T08:10:02.990Z",
-    modifiedTime: "2025-08-05T08:10:02.990Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-12T10:00:00.000Z",
+    modifiedTime: "2026-02-12T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["comfyui installation","comfyui setup","install comfyui","comfyui getting started"],
     images: [{
       url: "https://iimagined.ai/images/blog/comfyui-installation-setup-complete-beginner-guide-og.jpg",
@@ -72,16 +72,16 @@ export default function ComfyuiInstallationSetupCompleteBeginnerGuide() {
         "@id": "https://iimagined.ai/blog/comfyui-installation-setup-complete-beginner-guide#article",
         "headline": "ComfyUI Installation & Setup: Complete Beginner Guide",
         "description": "comfyui installation, comfyui setup, install comfyui - Expert guide from the creators of ComfyUI Mastery",
-        "datePublished": "2025-08-05T08:10:02.990Z",
-        "dateModified": "2025-08-05T08:10:02.990Z",
+        "datePublished": "2026-02-12T10:00:00.000Z",
+        "dateModified": "2026-02-12T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function ComfyuiInstallationSetupCompleteBeginnerGuide() {
           "name": "ComfyUI Mastery",
           "description": "Professional AI Image Generation & Workflows",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -146,8 +146,8 @@ export default function ComfyuiInstallationSetupCompleteBeginnerGuide() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 

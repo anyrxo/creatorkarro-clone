@@ -4,28 +4,28 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Instagram Reels Algorithm: Viral Content Strategy 2025",
+  title: "Instagram Reels Algorithm: Viral Content Strategy 2026",
   description: "instagram reels algorithm, viral reels, reels strategy - Expert guide from the creators of Instagram Ignited with 127K+ students and $2.7M+ in student revenue",
   keywords: ["instagram reels algorithm","viral reels","reels strategy","instagram viral content","instagram ignited","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
   openGraph: {
-    title: "Instagram Reels Algorithm: Viral Content Strategy 2025",
+    title: "Instagram Reels Algorithm: Viral Content Strategy 2026",
     description: "instagram reels algorithm, viral reels, reels strategy - Expert guide from the creators of Instagram Ignited",
-    url: "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2025",
+    url: "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T08:10:02.991Z",
-    modifiedTime: "2025-08-05T08:10:02.991Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-05T10:00:00.000Z",
+    modifiedTime: "2026-02-05T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["instagram reels algorithm","viral reels","reels strategy","instagram viral content"],
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-reels-algorithm-viral-content-strategy-2025-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Instagram Reels Algorithm: Viral Content Strategy 2025",
+      alt: "Instagram Reels Algorithm: Viral Content Strategy 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +34,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Reels Algorithm: Viral Content Strategy 2025",
+    title: "Instagram Reels Algorithm: Viral Content Strategy 2026",
     description: "instagram reels algorithm, viral reels, reels strategy - Expert guide from the creators of Instagram Ignited",
     images: [{
       url: "https://iimagined.ai/images/blog/instagram-reels-algorithm-viral-content-strategy-2025-og.jpg",
-      alt: "Instagram Reels Algorithm: Viral Content Strategy 2025"
+      alt: "Instagram Reels Algorithm: Viral Content Strategy 2026"
     }]
   },
   robots: {
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2025",
+    canonical: "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2026",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -70,23 +70,23 @@ export default function InstagramReelsAlgorithmViralContentStrategy2025() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2025#article",
-        "headline": "Instagram Reels Algorithm: Viral Content Strategy 2025",
+        "headline": "Instagram Reels Algorithm: Viral Content Strategy 2026",
         "description": "instagram reels algorithm, viral reels, reels strategy - Expert guide from the creators of Instagram Ignited",
-        "datePublished": "2025-08-05T08:10:02.991Z",
-        "dateModified": "2025-08-05T08:10:02.991Z",
+        "datePublished": "2026-02-05T10:00:00.000Z",
+        "dateModified": "2026-02-05T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization", 
+          "@type": "Person", 
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2025"
+          "@id": "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2026"
         },
         "image": {
           "@type": "ImageObject",
@@ -101,7 +101,7 @@ export default function InstagramReelsAlgorithmViralContentStrategy2025() {
           "name": "Instagram Ignited",
           "description": "Ultimate Instagram Growth & Monetization Course",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -146,8 +146,8 @@ export default function InstagramReelsAlgorithmViralContentStrategy2025() {
               
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
                 
@@ -338,7 +338,7 @@ export default function InstagramReelsAlgorithmViralContentStrategy2025() {
                       <p className="text-gray-300 text-sm mb-3">On-screen text: "This [belief] is wrong"</p>
                       <p className="text-gray-300 text-sm mb-3">Debate/disagreement drives comments. Avg comments: 184</p>
                       <div className="bg-zinc-800 rounded p-3 text-xs text-gray-400">
-                        Example: "This Instagram growth strategy is dead in 2025" = 14.8% comment rate
+                        Example: "This Instagram growth strategy is dead in 2026" = 14.8% comment rate
                       </div>
                     </div>
                   </div>

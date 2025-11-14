@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "RSI Trading Strategy 2025: Complete Guide to Mastering Relative Strength Index",
+  title: "RSI Trading Strategy 2026: Complete Guide to Mastering Relative Strength Index",
   description: "Master RSI indicator trading with proven strategies. Learn RSI divergence, overbought/oversold signals, hidden divergence, and advanced techniques for 65%+ win rates.",
   keywords: ["rsi indicator","rsi trading strategy","rsi divergence","oversold overbought","technical indicators","rsi settings"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -11,20 +11,20 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Trading & Finance",
   openGraph: {
-    title: "RSI Trading Strategy 2025: Complete Guide to Mastering Relative Strength Index",
+    title: "RSI Trading Strategy 2026: Complete Guide to Mastering Relative Strength Index",
     description: "Master RSI indicator trading with proven strategies. Learn RSI divergence, overbought/oversold signals, hidden divergence, and advanced techniques for 65%+ win rates.",
     url: "https://iimagined.ai/blog/rsi-trading-strategy-complete-guide",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-10-29T19:00:00.000Z",
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-10-29T19:00:00.000Z",
     authors: ["IImagined.ai Expert Team"],
     tags: ["rsi indicator","rsi trading strategy","rsi divergence","oversold overbought","technical indicators"],
     images: [{
       url: "https://iimagined.ai/images/rsi-trading-strategy-complete-guide-og.jpg",
       width: 1200,
       height: 630,
-      alt: "RSI Trading Strategy 2025: Complete Guide to Mastering Relative Strength Index",
+      alt: "RSI Trading Strategy 2026: Complete Guide to Mastering Relative Strength Index",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -33,11 +33,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "RSI Trading Strategy 2025: Complete Guide to Mastering Relative Strength Index",
+    title: "RSI Trading Strategy 2026: Complete Guide to Mastering Relative Strength Index",
     description: "Master RSI indicator trading with proven strategies. Learn RSI divergence, overbought/oversold signals, hidden divergence, and advanced techniques for 65%+ win rates.",
     images: [{
       url: "https://iimagined.ai/images/rsi-trading-strategy-complete-guide-og.jpg",
-      alt: "RSI Trading Strategy 2025: Complete Guide to Mastering Relative Strength Index"
+      alt: "RSI Trading Strategy 2026: Complete Guide to Mastering Relative Strength Index"
     }]
   },
   robots: {
@@ -83,7 +83,7 @@ export default function RSITradingStrategy() {
             </div>
 
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              RSI Trading Strategy 2025: <span className="text-purple-400">Master the Relative Strength Index</span> for Consistent Profits
+              RSI Trading Strategy 2026: <span className="text-purple-400">Master the Relative Strength Index</span> for Consistent Profits
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-8">

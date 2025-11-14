@@ -4,22 +4,22 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Digital Product Validation: Test Your Idea Before Building (2025 Guide)",
+  title: "Digital Product Validation: Test Your Idea Before Building (2026 Guide)",
   description: "digital product validation, validate product idea, pre-sell validation, MVP testing - Expert guide from Digital Products Mastery with proven validation strategies that helped students generate $2.7M+",
   keywords: ["digital product validation","validate product idea","pre-sell validation","MVP testing","product validation strategies","beta testing","market validation","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Digital Products & Business",
   openGraph: {
-    title: "Digital Product Validation: Test Your Idea Before Building (2025 Guide)",
+    title: "Digital Product Validation: Test Your Idea Before Building (2026 Guide)",
     description: "digital product validation, validate product idea, pre-sell validation, MVP testing - Expert guide from Digital Products Mastery",
     url: "https://iimagined.ai/blog/digital-product-validation-test-idea-before-building",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-10-29T10:00:00.000Z",
-    modifiedTime: "2025-10-29T10:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-10-29T10:00:00.000Z",
+    modifiedTime: "2026-10-29T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["digital product validation","validate product idea","pre-sell validation","MVP testing","product validation"],
     images: [{
       url: "https://iimagined.ai/images/blog/digital-product-validation-test-idea-before-building-og.jpg",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Digital Product Validation: Test Your Idea Before Building (2025 Guide)",
+    title: "Digital Product Validation: Test Your Idea Before Building (2026 Guide)",
     description: "digital product validation, validate product idea, pre-sell validation, MVP testing - Expert guide from Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/digital-product-validation-test-idea-before-building-og.jpg",
@@ -70,18 +70,18 @@ export default function DigitalProductValidationTestYourIdeaBeforeBuilding() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/digital-product-validation-test-idea-before-building#article",
-        "headline": "Digital Product Validation: Test Your Idea Before Building (2025 Guide)",
+        "headline": "Digital Product Validation: Test Your Idea Before Building (2026 Guide)",
         "description": "digital product validation, validate product idea, pre-sell validation, MVP testing - Expert guide from Digital Products Mastery",
-        "datePublished": "2025-10-29T10:00:00.000Z",
-        "dateModified": "2025-10-29T10:00:00.000Z",
+        "datePublished": "2026-10-29T10:00:00.000Z",
+        "dateModified": "2026-10-29T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
@@ -101,7 +101,7 @@ export default function DigitalProductValidationTestYourIdeaBeforeBuilding() {
           "name": "Digital Products Mastery",
           "description": "Complete Digital Product Creation & Sales System",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -146,13 +146,13 @@ export default function DigitalProductValidationTestYourIdeaBeforeBuilding() {
 
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-10-29" className="text-sm text-blue-400 font-medium">
-                    October 29, 2025
+                  <time dateTime="2026-10-29" className="text-sm text-blue-400 font-medium">
+                    October 2026
                   </time>
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  Digital Product Validation: Test Your Idea Before Building (2025 Guide)
+                  Digital Product Validation: Test Your Idea Before Building (2026 Guide)
                 </h1>
 
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">

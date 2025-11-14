@@ -4,22 +4,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "5 Proven ES Futures Scalping Strategies 2025 | Complete Entry/Exit Rules",
+  title: "5 Proven ES Futures Scalping Strategies 2026 | Complete Entry/Exit Rules",
   description: "Master 5 complete ES scalping strategies with entry rules, stop loss, profit targets, and backtesting results. Opening Range Breakout (68% win rate), VWAP Bounce (72%), Market Profile, Volume Spike, and Fibonacci scalps.",
   keywords: ["ES scalping", "E-mini S&P scalping", "futures scalping strategies", "opening range breakout", "VWAP scalping", "market profile trading", "ES day trading", "scalping entry rules", "futures strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Futures Trading",
   openGraph: {
-    title: "5 Proven ES Futures Scalping Strategies 2025 | Complete Entry/Exit Rules",
+    title: "5 Proven ES Futures Scalping Strategies 2026 | Complete Entry/Exit Rules",
     description: "Master ES scalping with 5 proven strategies: Opening Range Breakout, VWAP Bounce, Market Profile, Volume Spike, and Fibonacci scalps.",
     url: "https://iimagined.ai/blog/scalping-strategies-es-futures-5-proven-methods",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-23T09:00:00.000Z",
-    modifiedTime: "2025-01-23T09:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-01-23T09:00:00.000Z",
+    modifiedTime: "2026-01-23T09:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["ES futures", "scalping", "day trading", "futures strategies", "trading strategies"],
     images: [{
       url: "https://iimagined.ai/images/es-scalping-strategies-og.jpg",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "5 Proven ES Futures Scalping Strategies 2025",
+    title: "5 Proven ES Futures Scalping Strategies 2026",
     description: "Master ES scalping with complete entry/exit rules and backtesting results for 5 proven strategies.",
     images: [{
       url: "https://iimagined.ai/images/es-scalping-strategies-og.jpg",
@@ -100,7 +100,7 @@ const schema = generateBlogPostSchema({
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold text-white mb-4">Why ES Scalping Works in 2025</h2>
+                <h2 className="text-2xl font-bold text-white mb-4">Why ES Scalping Works in 2026</h2>
                 <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl p-8 border border-blue-500/20">
                     <p className="text-lg text-gray-300 mb-6">
                 The E-mini S&P 500 (ES) is the <span className="text-white font-semibold">most liquid futures contract</span> in the world, trading 24/5 with tight spreads (0.25 points). For scalpers targeting 3-8 point moves, ES provides consistent opportunities during high-volume sessions. These 5 strategies have been tested over 500+ combined trades.

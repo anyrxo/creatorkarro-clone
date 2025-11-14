@@ -4,28 +4,28 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "FTMO Challenge Guide: Pass on First Attempt 2025 | Proven Strategy",
+  title: "FTMO Challenge Guide: Pass on First Attempt 2026 | Proven Strategy",
   description: "Complete FTMO Challenge guide with Phase 1 & 2 breakdown, risk management rules, daily trading routines, and 3 real case studies of traders passing in 10-30 days. Master the 1% rule.",
   keywords: ["FTMO challenge", "FTMO pass first attempt", "prop trading", "funded account", "FTMO rules", "FTMO strategy", "phase 1 FTMO", "phase 2 FTMO", "prop firm challenge", "trading psychology", "risk management"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Futures Trading",
   openGraph: {
-    title: "FTMO Challenge Guide: Pass on First Attempt 2025 | Proven Strategy",
+    title: "FTMO Challenge Guide: Pass on First Attempt 2026 | Proven Strategy",
     description: "Complete FTMO Challenge guide with Phase 1 & 2 breakdown, risk management rules, daily trading routines, and 3 real case studies of traders passing in 10-30 days.",
-    url: "https://iimagined.ai/blog/ftmo-challenge-guide-pass-first-attempt-2025",
+    url: "https://iimagined.ai/blog/ftmo-challenge-guide-pass-first-attempt-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T09:00:00.000Z",
-    modifiedTime: "2025-01-20T09:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-01-20T09:00:00.000Z",
+    modifiedTime: "2026-01-20T09:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["FTMO", "prop trading", "funded account", "futures trading", "risk management", "trading psychology"],
     images: [{
       url: "https://iimagined.ai/images/ftmo-challenge-guide-og.jpg",
       width: 1200,
       height: 630,
-      alt: "FTMO Challenge Guide 2025",
+      alt: "FTMO Challenge Guide 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +34,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "FTMO Challenge Guide: Pass on First Attempt 2025 | Proven Strategy",
+    title: "FTMO Challenge Guide: Pass on First Attempt 2026 | Proven Strategy",
     description: "Complete FTMO Challenge guide with Phase 1 & 2 breakdown, risk management rules, and real case studies.",
     images: [{
       url: "https://iimagined.ai/images/ftmo-challenge-guide-og.jpg",
-      alt: "FTMO Challenge Guide 2025"
+      alt: "FTMO Challenge Guide 2026"
     }]
   },
   robots: {
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/ftmo-challenge-guide-pass-first-attempt-2025"
+    canonical: "https://iimagined.ai/blog/ftmo-challenge-guide-pass-first-attempt-2026"
   }
 }
 
@@ -62,7 +62,7 @@ export default function FTMOChallengeGuide() {
 const schema = generateBlogPostSchema({
   title: metadata.title,
   description: metadata.description,
-  slug: "ftmo-challenge-guide-pass-first-attempt-2025",
+  slug: "ftmo-challenge-guide-pass-first-attempt-2026",
   publishedTime: metadata.openGraph.publishedTime,
   modifiedTime: metadata.openGraph.modifiedTime,
   category: metadata.category || "Futures Trading",
@@ -87,7 +87,7 @@ const schema = generateBlogPostSchema({
                 </div>
 
                 <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              How to Pass the FTMO Challenge on Your <span className="text-green-400">First Attempt</span>: Complete 2025 Guide
+              How to Pass the FTMO Challenge on Your <span className="text-green-400">First Attempt</span>: Complete 2026 Guide
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-400 mb-8">
@@ -863,7 +863,7 @@ const schema = generateBlogPostSchema({
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">📚 Related Articles</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/blog/best-passive-income-ideas-digital-products-2025" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-green-500/50">
+            <Link href="/blog/best-passive-income-ideas-digital-products-2026" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-green-500/50">
               <div className="text-green-400 text-3xl mb-3">💰</div>
               <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400 transition-colors">
                 Passive Income Ideas 2025

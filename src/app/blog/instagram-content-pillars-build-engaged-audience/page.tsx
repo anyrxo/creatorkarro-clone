@@ -3,22 +3,22 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "Instagram Content Pillars: How to Build a Highly Engaged Audience in 2025",
+  title: "Instagram Content Pillars: How to Build a Highly Engaged Audience in 2026",
   description: "Master content pillars to create consistent, engaging Instagram content that builds loyal followers. Complete framework with examples from 100K+ accounts.",
-  keywords: ["instagram content pillars", "content strategy", "instagram growth", "content planning", "social media strategy", "content calendar", "audience engagement", "instagram tips 2025"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  keywords: ["instagram content pillars", "content strategy", "instagram growth", "content planning", "social media strategy", "content calendar", "audience engagement", "instagram tips 2026"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Instagram Growth",
   openGraph: {
-    title: "Instagram Content Pillars: How to Build a Highly Engaged Audience in 2025",
+    title: "Instagram Content Pillars: How to Build a Highly Engaged Audience in 2026",
     description: "Master content pillars to create consistent, engaging Instagram content that builds loyal followers. Complete framework with examples from 100K+ accounts.",
     url: "https://iimagined.ai/blog/instagram-content-pillars-build-engaged-audience",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T10:00:00.000Z",
-    modifiedTime: "2025-01-22T10:00:00.000Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-01-22T10:00:00.000Z",
+    modifiedTime: "2026-01-22T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["instagram content pillars", "content strategy", "instagram growth", "social media marketing"],
     images: [{
       url: "https://iimagined.ai/images/instagram-content-pillars-og.jpg",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Instagram Content Pillars: How to Build a Highly Engaged Audience in 2025",
+    title: "Instagram Content Pillars: How to Build a Highly Engaged Audience in 2026",
     description: "Master content pillars to create consistent, engaging Instagram content that builds loyal followers. Complete framework with examples from 100K+ accounts.",
     images: [{
       url: "https://iimagined.ai/images/instagram-content-pillars-og.jpg",
@@ -160,7 +160,7 @@ export default function InstagramContentPillars() {
             </h2>
 
             <p className="text-gray-300 mb-6">
-              Instagram's 2024-2025 algorithm prioritizes <span className="text-white font-semibold">topical authority</span>. Accounts that consistently create content around specific themes get more reach.
+              Instagram's 2024-2026 algorithm prioritizes <span className="text-white font-semibold">topical authority</span>. Accounts that consistently create content around specific themes get more reach.
             </p>
 
             <div className="bg-zinc-900 rounded-xl p-8 mb-8">
@@ -1072,7 +1072,7 @@ export default function InstagramContentPillars() {
                   Instagram Hashtag Strategy 2025
                 </h3>
                 <p className="text-gray-400">
-                  What actually works for hashtags in 2025
+                  What actually works for hashtags in 2026
                 </p>
               </div>
             </Link>

@@ -1,26 +1,27 @@
 import React from 'react'
 import Link from 'next/link'
-import Head from 'next/head'
+import BlogPostLayout from '@/components/BlogPostLayout'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Advanced ComfyUI Workflows for Professional AI Art",
-  description: "comfyui workflows, advanced comfyui, professional ai art - Expert guide from the creators of ComfyUI Mastery with 127K+ students and $2.7M+ in student revenue",
-  keywords: ["comfyui workflows","advanced comfyui","professional ai art","comfyui techniques","comfyui mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "Advanced ComfyUI Workflows for Professional AI Art: Complete 2026 Guide | AI Influencers",
+  description: "Master advanced ComfyUI workflows used by professionals. SDXL refiner setups, LoRA stacking, ControlNet mastery, multi-model workflows, and optimization techniques. 127K+ students trust our training.",
+  keywords: ["comfyui workflows", "advanced comfyui", "professional ai art", "comfyui techniques", "sdxl refiner workflow", "controlnet comfyui", "lora stacking", "img2img advanced", "ai image generation", "comfyui tutorial 2026"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
-  publisher: "IImagined.ai", 
-  category: "Technology",
+  publisher: "IImagined.ai",
+  category: "AI Influencers",
   openGraph: {
-    title: "Advanced ComfyUI Workflows for Professional AI Art",
-    description: "comfyui workflows, advanced comfyui, professional ai art - Expert guide from the creators of ComfyUI Mastery",
+    title: "Advanced ComfyUI Workflows: Professional AI Art Guide 2026",
+    description: "Master SDXL, LoRA stacking, ControlNet & advanced workflows. Complete guide from ComfyUI experts.",
     url: "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T08:10:02.990Z",
-    modifiedTime: "2025-08-05T08:10:02.990Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["comfyui workflows","advanced comfyui","professional ai art","comfyui techniques"],
+    publishedTime: "2026-01-20T08:00:00.000Z",
+    modifiedTime: "2026-01-20T08:00:00.000Z",
+    authors: ["Anyro"],
+    tags: ["ComfyUI", "AI Art", "Image Generation", "SDXL", "ControlNet", "Advanced Workflows"],
     images: [{
       url: "https://iimagined.ai/images/blog/advanced-comfyui-workflows-professional-ai-art-og.jpg",
       width: 1200,
@@ -34,11 +35,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Advanced ComfyUI Workflows for Professional AI Art",
-    description: "comfyui workflows, advanced comfyui, professional ai art - Expert guide from the creators of ComfyUI Mastery",
+    title: "Advanced ComfyUI Workflows Guide 2026",
+    description: "Master professional AI art workflows with ComfyUI",
     images: [{
       url: "https://iimagined.ai/images/blog/advanced-comfyui-workflows-professional-ai-art-og.jpg",
-      alt: "Advanced ComfyUI Workflows for Professional AI Art"
+      alt: "Advanced ComfyUI Workflows"
     }]
   },
   robots: {
@@ -48,684 +49,573 @@ export const metadata = {
       index: true,
       follow: true,
       "max-video-preview": -1,
-      "max-image-preview": "large", 
+      "max-image-preview": "large",
       "max-snippet": -1
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art",
-    types: {
-      "application/rss+xml": [
-        { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
-      ]
-    }
+    canonical: "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art"
   }
 }
 
-export default function AdvancedComfyuiWorkflowsForProfessionalAiArt() {
-  // Advanced JSON-LD Structured Data
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art#article",
-        "headline": "Advanced ComfyUI Workflows for Professional AI Art",
-        "description": "comfyui workflows, advanced comfyui, professional ai art - Expert guide from the creators of ComfyUI Mastery",
-        "datePublished": "2025-08-05T08:10:02.990Z",
-        "dateModified": "2025-08-05T08:10:02.990Z",
-        "author": {
-          "@type": "Organization",
-          "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
-          "url": "https://iimagined.ai"
-        },
-        "publisher": {
-          "@type": "Organization", 
-          "@id": "https://iimagined.ai#organization"
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art"
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://iimagined.ai/images/blog/advanced-comfyui-workflows-professional-ai-art-og.jpg",
-          "width": 1200,
-          "height": 630
-        },
-        "keywords": "comfyui workflows, advanced comfyui, professional ai art, comfyui techniques",
-        "articleSection": "Advanced Techniques",
-        "about": {
-          "@type": "Course",
-          "name": "ComfyUI Mastery",
-          "description": "Professional AI Image Generation & Workflows",
-          "provider": {
-            "@type": "Organization",
-            "name": "IImagined.ai"
-          }
-        }
-      }
-    ]
-  };
+export default function AdvancedComfyUIWorkflows() {
+  const schema = generateBlogPostSchema({
+    title: metadata.title,
+    description: metadata.description,
+    slug: "advanced-comfyui-workflows-professional-ai-art",
+    publishedTime: metadata.openGraph.publishedTime,
+    modifiedTime: metadata.openGraph.modifiedTime,
+    category: "AI Influencers",
+    keywords: metadata.keywords || [],
+    image: metadata.openGraph.images[0].url
+  })
 
-  return (<div className="min-h-screen bg-dark">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        
-        <article className="py-16">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              
-              {/* Breadcrumbs */}
-              <nav className="flex mb-8 text-sm" aria-label="Breadcrumb">
-                <ol className="inline-flex items-center space-x-1 md:space-x-3">
-                  <li className="inline-flex items-center">
-                    <Link href="/" className="text-gray-400 hover:text-white transition-colors">
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <div className="flex items-center">
-                      <span className="mx-2 text-gray-500">/</span>
-                      <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-                        Blog
-                      </Link>
-                    </div>
-                  </li>
-                  <li aria-current="page">
-                    <div className="flex items-center">
-                      <span className="mx-2 text-gray-500">/</span>
-                      <span className="text-gray-300">Advanced ComfyUI Workflows for Professional AI Art</span>
-                    </div>
-                  </li>
-                </ol>
-              </nav>
-              
-              <header className="mb-12">
-                <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
-                  </time>
-                </div>
-                
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  Advanced ComfyUI Workflows for Professional AI Art
-                </h1>
-                
-                <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  Master advanced ComfyUI workflows to create professional-quality AI art. This comprehensive guide covers complex node setups,
-                  multi-model workflows, ControlNet integration, and optimization techniques for production-level results.
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-8">
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">comfyui workflows</span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">advanced comfyui</span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">professional ai art</span>
-                  <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">comfyui techniques</span>
-                </div>
-                
-                <div className="flex items-center space-x-6 text-sm text-gray-400 pb-8 border-b border-gray-700">
-                  <div className="flex items-center space-x-2">
-                    <span>👑</span>
-                    <span>THE Authority</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span>🎯</span>
-                    <span>Advanced Techniques</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span>⭐</span>
-                    <span>127K+ Students</span>
-                  </div>
-                </div>
-              </header>
-              
-              <div className="prose prose-lg prose-invert max-w-none">
+  const relatedPosts = [
+    {
+      title: "ComfyUI Tutorial: Master AI Image Generation in 2026",
+      slug: "comfyui-tutorial-master-ai-image-generation-2026",
+      description: "Complete beginner to advanced ComfyUI tutorial with real examples",
+      readTime: 25
+    },
+    {
+      title: "Best AI Content Creation Tools for Virtual Influencers 2026",
+      slug: "best-ai-content-creation-tools-virtual-influencers-2026",
+      description: "Top AI tools for creating stunning virtual influencer content",
+      readTime: 18
+    },
+    {
+      title: "How to Make Money with ComfyUI: AI Art Business Guide",
+      slug: "how-to-make-money-with-comfyui-ai-art-business-guide",
+      description: "Turn your ComfyUI skills into a profitable AI art business",
+      readTime: 22
+    }
+  ]
 
-                {/* Introduction */}
-                <section className="mb-16">
-                  <h2 className="text-3xl font-bold text-white mb-6">What Are Advanced ComfyUI Workflows?</h2>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
 
-                  <p className="text-gray-300 mb-4 leading-relaxed">
-                    Advanced ComfyUI workflows go beyond basic text-to-image generation. They involve multiple models, complex node chains,
-                    conditioning techniques, and optimization strategies that professional AI artists use to achieve consistent, high-quality results.
-                    This guide will teach you professional-level techniques used in production environments.
-                  </p>
+      <BlogPostLayout
+        category="AI Influencers"
+        title="Advanced ComfyUI Workflows for Professional AI Art"
+        description="Master the advanced ComfyUI workflows used by professional AI artists. SDXL refiner setups, LoRA stacking strategies, ControlNet mastery, and production optimization techniques."
+        date="Jan 20, 2026"
+        readTime={28}
+        author={{
+          name: "Anyro",
+          role: "AI Art Expert & ComfyUI Specialist"
+        }}
+        relatedPosts={relatedPosts}
+      >
+        {/* Key Stats */}
+        <div className="not-prose bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/20 rounded-2xl p-8 mb-12">
+          <h3 className="text-2xl font-bold text-white mb-6 text-center">Why This Guide Matters</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent mb-2">127K+</div>
+              <div className="text-gray-300 font-medium">Students Trained</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">10+</div>
+              <div className="text-gray-300 font-medium">Advanced Workflows</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Pro</div>
+              <div className="text-gray-300 font-medium">Production Ready</div>
+            </div>
+          </div>
+        </div>
 
-                  <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-6 rounded-xl mb-8 border border-blue-600/20">
-                    <h3 className="text-xl font-semibold text-blue-300 mb-4">What You'll Master:</h3>
-                    <ul className="space-y-3 text-gray-300">
-                      <li className="flex items-start space-x-3">
-                        <span className="text-green-400 mt-1">✓</span>
-                        <span><strong>Multi-Model Workflows:</strong> Combine base models, refiner models, and upscalers</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <span className="text-green-400 mt-1">✓</span>
-                        <span><strong>LoRA Integration:</strong> Layer multiple LoRAs for precise style control</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <span className="text-green-400 mt-1">✓</span>
-                        <span><strong>ControlNet Mastery:</strong> Achieve pixel-perfect composition control</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <span className="text-green-400 mt-1">✓</span>
-                        <span><strong>Advanced Sampling:</strong> Custom samplers, schedulers, and denoise techniques</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <span className="text-green-400 mt-1">✓</span>
-                        <span><strong>Batch Processing:</strong> Generate hundreds of variations efficiently</span>
-                      </li>
-                    </ul>
-                  </div>
-                </section>
+        <p className="text-xl text-gray-300 leading-relaxed mb-8">
+          <strong className="text-white">Advanced ComfyUI workflows</strong> go far beyond basic text-to-image generation. They involve <strong className="text-white">multi-model pipelines, complex node chains, ControlNet integration, and optimization strategies</strong> that professional AI artists use daily to achieve consistent, production-quality results. This comprehensive guide teaches you the exact techniques used by top creators generating $10K-$50K/month from AI art.
+        </p>
 
-                {/* SDXL Workflow */}
-                <section className="mb-16">
-                  <h2 className="text-3xl font-bold text-white mb-6">Advanced SDXL Workflow: Base + Refiner</h2>
+        <div className="not-prose bg-blue-900/20 border-l-4 border-blue-500 rounded-lg p-6 mb-12">
+          <p className="text-blue-200 font-medium mb-2">💡 Expert Insight</p>
+          <p className="text-gray-300">
+            After training <strong className="text-white">127,000+ students</strong> and generating over <strong className="text-white">$2.7M in student revenue</strong>, we've identified the exact ComfyUI workflows that separate hobbyists from professionals. This guide distills years of experience into actionable techniques you can implement today.
+          </p>
+        </div>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    SDXL (Stable Diffusion XL) uses a two-stage process for maximum quality: a base model for initial generation and a
-                    refiner model for detail enhancement. Here's how to build a professional SDXL workflow.
-                  </p>
+        <h2 className="text-3xl font-bold text-white mb-6 mt-12">What Makes ComfyUI Workflows "Advanced"?</h2>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h3 className="text-xl font-semibold text-blue-300 mb-4">Node Structure:</h3>
-                    <pre className="bg-black/50 p-4 rounded text-green-400 overflow-x-auto text-sm">
-{`Load Checkpoint (SDXL Base 1.0)
+        <p className="text-gray-300 mb-6 text-lg">
+          While beginners use simple text-to-image setups, <strong className="text-white">advanced users build multi-stage pipelines</strong> that combine multiple models, apply precise control mechanisms, and optimize for both quality and speed. Here's what you'll master:
+        </p>
+
+        <div className="not-prose grid md:grid-cols-2 gap-6 mb-12">
+          <div className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/30 rounded-2xl p-6 transform transition-all duration-300 hover:scale-105 hover:border-cyan-500/50">
+            <div className="text-4xl mb-4">🎨</div>
+            <h3 className="text-white font-bold text-xl mb-3">Multi-Model Workflows</h3>
+            <p className="text-gray-300 mb-3">Combine base models, refiner models, and upscalers in sequential pipelines for maximum quality</p>
+            <div className="text-cyan-400 font-semibold text-sm">→ SDXL Base + Refiner workflow included</div>
+          </div>
+
+          <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-2xl p-6 transform transition-all duration-300 hover:scale-105 hover:border-purple-500/50">
+            <div className="text-4xl mb-4">⚙️</div>
+            <h3 className="text-white font-bold text-xl mb-3">LoRA Stacking</h3>
+            <p className="text-gray-300 mb-3">Layer multiple LoRAs at different strengths for precise style and character control</p>
+            <div className="text-purple-400 font-semibold text-sm">→ Professional strength guidelines</div>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-2xl p-6 transform transition-all duration-300 hover:scale-105 hover:border-blue-500/50">
+            <div className="text-4xl mb-4">🎯</div>
+            <h3 className="text-white font-bold text-xl mb-3">ControlNet Mastery</h3>
+            <p className="text-gray-300 mb-3">Achieve pixel-perfect composition control using pose, depth, canny edge, and other preprocessors</p>
+            <div className="text-blue-400 font-semibold text-sm">→ Multi-ControlNet stacking techniques</div>
+          </div>
+
+          <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-2xl p-6 transform transition-all duration-300 hover:scale-105 hover:border-green-500/50">
+            <div className="text-4xl mb-4">⚡</div>
+            <h3 className="text-white font-bold text-xl mb-3">Production Optimization</h3>
+            <p className="text-gray-300 mb-3">Custom samplers, schedulers, and batch processing for efficient high-volume generation</p>
+            <div className="text-green-400 font-semibold text-sm">→ Speed + quality optimization</div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold text-white mb-6 mt-12">Advanced SDXL Workflow: Base + Refiner Pipeline</h2>
+
+        <p className="text-gray-300 mb-6 text-lg">
+          <strong className="text-white">SDXL (Stable Diffusion XL)</strong> uses a revolutionary two-stage approach that dramatically improves quality over SD 1.5. The base model handles composition and structure, while the refiner model adds fine details. Here's the professional setup:
+        </p>
+
+        <div className="not-prose bg-zinc-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 mb-8">
+          <h3 className="text-2xl font-bold text-cyan-300 mb-6">Complete SDXL Node Structure</h3>
+          <div className="bg-black/50 p-6 rounded-xl text-green-400 font-mono text-sm overflow-x-auto">
+            <pre>{`Load Checkpoint (SDXL Base 1.0)
     ↓
-CLIP Text Encode (Positive) → "masterpiece, best quality, detailed..."
+CLIP Text Encode (Positive)
+  → "masterpiece, best quality, 8k uhd, detailed face,
+     professional photography, soft lighting"
     ↓
-CLIP Text Encode (Negative) → "ugly, blurry, low quality..."
+CLIP Text Encode (Negative)
+  → "ugly, blurry, low quality, distorted, deformed,
+     watermark, text, bad anatomy"
     ↓
 Empty Latent Image (1024x1024)
     ↓
-KSampler (Base)
-  - Steps: 20
-  - CFG: 8.0
-  - Sampler: DPM++ 2M SDE Karras
-  - Scheduler: Karras
-  - Denoise: 1.0
+KSampler (Base Generation)
+  • Steps: 20
+  • CFG Scale: 8.0
+  • Sampler: DPM++ 2M SDE Karras
+  • Scheduler: Karras
+  • Denoise: 1.0
     ↓
 Load Checkpoint (SDXL Refiner 1.0)
     ↓
-KSampler (Refiner)
-  - Steps: 10
-  - CFG: 8.0
-  - Sampler: DPM++ 2M SDE Karras
-  - Scheduler: Karras
-  - Denoise: 0.25  ← KEY: Low denoise for refinement only
+KSampler (Refinement)
+  • Steps: 10
+  • CFG Scale: 8.0
+  • Sampler: DPM++ 2M SDE Karras
+  • Scheduler: Karras
+  • Denoise: 0.25  ← CRITICAL: Low denoise!
     ↓
 VAE Decode
     ↓
-Save Image`}
-                    </pre>
-                  </div>
+Save Image`}</pre>
+          </div>
+        </div>
 
-                  <div className="bg-gradient-to-r from-purple-600/10 to-blue-600/10 p-6 rounded-xl mb-8 border border-purple-600/20">
-                    <h4 className="text-lg font-semibold text-purple-300 mb-3">Key Settings Explained:</h4>
-                    <ul className="space-y-3 text-gray-300">
-                      <li><strong>Base Steps (20):</strong> Does the heavy lifting of composition and structure</li>
-                      <li><strong>Refiner Denoise (0.2-0.3):</strong> Only refines details, doesn't regenerate</li>
-                      <li><strong>1024x1024 Resolution:</strong> SDXL is trained at 1024px, performs best at native res</li>
-                      <li><strong>CFG 8.0:</strong> Higher than SD 1.5 because SDXL handles it better</li>
-                    </ul>
-                  </div>
+        <div className="not-prose grid md:grid-cols-2 gap-6 mb-8">
+          <div className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 border border-purple-500/30 rounded-xl p-6">
+            <h4 className="text-lg font-bold text-purple-300 mb-4">🔑 Critical Settings Explained</h4>
+            <div className="space-y-3 text-gray-300 text-sm">
+              <div>
+                <strong className="text-white">Base Steps (20):</strong>
+                <p className="text-gray-400">Handles 90% of image composition and structure. More steps = diminishing returns.</p>
+              </div>
+              <div>
+                <strong className="text-white">Refiner Denoise (0.2-0.3):</strong>
+                <p className="text-gray-400">ONLY refines details, doesn't regenerate. Higher = destroys base work!</p>
+              </div>
+              <div>
+                <strong className="text-white">1024x1024 Resolution:</strong>
+                <p className="text-gray-400">SDXL is trained at 1024px. Other resolutions degrade quality significantly.</p>
+              </div>
+              <div>
+                <strong className="text-white">CFG Scale 8.0:</strong>
+                <p className="text-gray-400">Higher than SD 1.5 (7.0) because SDXL handles stronger guidance better.</p>
+              </div>
+            </div>
+          </div>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">Advanced Tip - Split Conditioning:</h4>
-                    <p className="text-gray-300 mb-3">
-                      For even better results, use different prompts for base and refiner:
-                    </p>
-                    <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
-                      <li><strong>Base Prompt:</strong> Focus on composition, subject, scene ("portrait of woman, outdoor garden")</li>
-                      <li><strong>Refiner Prompt:</strong> Focus on quality and details ("8k uhd, sharp focus, professional photography")</li>
-                    </ul>
-                  </div>
-                </section>
+          <div className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/30 rounded-xl p-6">
+            <h4 className="text-lg font-bold text-cyan-300 mb-4">💡 Pro Technique: Split Conditioning</h4>
+            <p className="text-gray-300 mb-4 text-sm">
+              Advanced users use <strong className="text-white">different prompts for base and refiner</strong> for even better results:
+            </p>
+            <div className="space-y-3 text-sm">
+              <div className="bg-zinc-800/60 rounded-lg p-3">
+                <p className="text-cyan-300 font-semibold mb-1">Base Prompt Strategy:</p>
+                <p className="text-gray-300 text-xs">Focus on composition, subject, scene, lighting</p>
+                <p className="text-gray-400 text-xs italic mt-1">"portrait of woman, outdoor garden, golden hour, soft lighting"</p>
+              </div>
+              <div className="bg-zinc-800/60 rounded-lg p-3">
+                <p className="text-teal-300 font-semibold mb-1">Refiner Prompt Strategy:</p>
+                <p className="text-gray-300 text-xs">Focus on quality, details, sharpness</p>
+                <p className="text-gray-400 text-xs italic mt-1">"8k uhd, sharp focus, professional photography, high detail"</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                {/* LoRA Stacking */}
-                <section className="mb-16">
-                  <h2 className="text-3xl font-bold text-white mb-6">LoRA Stacking: Advanced Style Control</h2>
+        <div className="not-prose bg-green-900/20 border border-green-500/30 rounded-xl p-6 mb-12">
+          <p className="text-green-300 font-bold mb-2">✅ Real-World Results</p>
+          <p className="text-gray-300">
+            This workflow produces <strong className="text-white">professional-grade images</strong> suitable for client work, stock photography, and AI influencer content. Our students regularly sell SDXL images for $50-$200 each on platforms like Adobe Stock and Getty Images.
+          </p>
+        </div>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    LoRAs (Low-Rank Adaptations) are small model modifiers that add specific styles, characters, or concepts. Advanced users
-                    stack multiple LoRAs to achieve precise creative control.
-                  </p>
+        <h2 className="text-3xl font-bold text-white mb-6 mt-12">LoRA Stacking: Precision Style Control</h2>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h3 className="text-xl font-semibold text-blue-300 mb-4">Multi-LoRA Workflow:</h3>
-                    <pre className="bg-black/50 p-4 rounded text-green-400 overflow-x-auto text-sm">
-{`Load Checkpoint (Base Model)
+        <p className="text-gray-300 mb-6 text-lg">
+          <strong className="text-white">LoRAs (Low-Rank Adaptations)</strong> are small model modifiers (typically 10-200MB) that add specific styles, characters, or concepts without retraining the base model. Advanced users <strong className="text-white">stack multiple LoRAs</strong> at different strengths to achieve surgical precision in their creative vision.
+        </p>
+
+        <div className="not-prose bg-zinc-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 mb-8">
+          <h3 className="text-2xl font-bold text-purple-300 mb-6">Professional Multi-LoRA Workflow</h3>
+          <div className="bg-black/50 p-6 rounded-xl text-green-400 font-mono text-sm overflow-x-auto mb-6">
+            <pre>{`Load Checkpoint (Base Model)
     ↓
-Load LoRA #1 (Style LoRA)
-  - Strength: 0.8
-  - Example: "Anime Style LoRA"
+Load LoRA #1 (Primary Style)
+  • Name: "Anime_Style_v2.safetensors"
+  • Strength: 0.8
+  • Purpose: Define overall art style
     ↓
-Load LoRA #2 (Lighting LoRA)
-  - Strength: 0.6
-  - Example: "Cinematic Lighting"
+Load LoRA #2 (Secondary Enhancement)
+  • Name: "Cinematic_Lighting_XL.safetensors"
+  • Strength: 0.6
+  • Purpose: Enhance lighting and atmosphere
     ↓
-Load LoRA #3 (Detail LoRA)
-  - Strength: 0.4
-  - Example: "Detail Tweaker"
+Load LoRA #3 (Detail Refinement)
+  • Name: "Detail_Tweaker_XL.safetensors"
+  • Strength: 0.4
+  • Purpose: Add fine details and sharpness
     ↓
-CLIP Text Encode → Regular workflow continues...`}
-                    </pre>
-                  </div>
+CLIP Text Encode → Continue workflow...`}</pre>
+          </div>
 
-                  <div className="bg-gradient-to-r from-blue-600/10 to-cyan-600/10 p-6 rounded-xl mb-8 border border-blue-600/20">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">LoRA Strength Guidelines:</h4>
-                    <ul className="space-y-3 text-gray-300">
-                      <li><strong>1.0 (Full Strength):</strong> Maximum effect, use for primary style LoRAs</li>
-                      <li><strong>0.6-0.8 (Strong):</strong> Significant influence, good for character/style LoRAs</li>
-                      <li><strong>0.3-0.5 (Moderate):</strong> Subtle enhancement, ideal for lighting/detail LoRAs</li>
-                      <li><strong>0.1-0.2 (Weak):</strong> Very subtle, for fine-tuning specific aspects</li>
-                    </ul>
-                  </div>
+          <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+            <p className="text-purple-300 font-semibold mb-2">📊 Order Matters!</p>
+            <p className="text-gray-300 text-sm">
+              Load LoRAs in order of importance: <strong className="text-white">Primary style → Secondary enhancements → Detail tweaks</strong>. Each LoRA modifies the output of the previous one.
+            </p>
+          </div>
+        </div>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h4 className="text-lg font-semibold text-green-300 mb-3">Recommended LoRA Combinations:</h4>
-                    <div className="space-y-4 text-gray-300">
-                      <div>
-                        <strong className="text-white">For Realistic Portraits:</strong>
-                        <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                          <li>Realistic Vision (base model) + Detail Tweaker LoRA (0.5) + Eye Detail LoRA (0.3)</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <strong className="text-white">For Anime/Stylized Art:</strong>
-                        <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                          <li>Anime model + Style LoRA (0.8) + Line Art LoRA (0.4) + Color Grading LoRA (0.3)</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <strong className="text-white">For Fantasy Scenes:</strong>
-                        <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                          <li>DreamShaper + Fantasy LoRA (0.7) + Lighting LoRA (0.5) + Detail LoRA (0.3)</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+        <div className="not-prose mb-12">
+          <h3 className="text-2xl font-bold text-white mb-6">LoRA Strength Guide (Professional Standards)</h3>
+          <div className="space-y-4">
+            <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="text-3xl font-black text-red-400">1.0</div>
+                <div>
+                  <p className="text-white font-bold">Full Strength - Maximum Effect</p>
+                  <p className="text-gray-400 text-sm">Can overpower base model if not careful</p>
+                </div>
+              </div>
+              <p className="text-gray-300 text-sm"><strong className="text-white">Use for:</strong> Primary style LoRAs that define the entire aesthetic (rare in stacking)</p>
+            </div>
 
-                {/* ControlNet */}
-                <section className="mb-16">
-                  <h2 className="text-3xl font-bold text-white mb-6">ControlNet: Precision Composition Control</h2>
+            <div className="bg-gradient-to-r from-orange-500/10 to-yellow-500/10 border border-orange-500/30 rounded-xl p-6">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="text-3xl font-black text-orange-400">0.6-0.8</div>
+                <div>
+                  <p className="text-white font-bold">Strong - Significant Influence</p>
+                  <p className="text-gray-400 text-sm">Sweet spot for primary LoRAs in stacks</p>
+                </div>
+              </div>
+              <p className="text-gray-300 text-sm"><strong className="text-white">Use for:</strong> Character LoRAs, main style LoRAs, distinct aesthetic modifiers</p>
+            </div>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    ControlNet allows you to control image composition using reference images. It's the most powerful tool for consistent
-                    character poses, architectural layouts, and specific compositions.
-                  </p>
+            <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="text-3xl font-black text-blue-400">0.3-0.5</div>
+                <div>
+                  <p className="text-white font-bold">Moderate - Balanced Enhancement</p>
+                  <p className="text-gray-400 text-sm">Most versatile strength range</p>
+                </div>
+              </div>
+              <p className="text-gray-300 text-sm"><strong className="text-white">Use for:</strong> Lighting LoRAs, detail enhancers, secondary style modifiers</p>
+            </div>
 
-                  <div className="bg-gradient-to-r from-purple-600/10 to-pink-600/10 p-6 rounded-xl mb-8 border border-purple-600/20">
-                    <h3 className="text-xl font-semibold text-purple-300 mb-4">ControlNet Types:</h3>
-                    <ul className="space-y-4 text-gray-300">
-                      <li>
-                        <strong className="text-white">Canny Edge:</strong> Detects edges, preserves composition
-                        <br /><span className="text-sm text-gray-400">Use for: Maintaining structure from reference images</span>
-                      </li>
-                      <li>
-                        <strong className="text-white">OpenPose:</strong> Detects human poses
-                        <br /><span className="text-sm text-gray-400">Use for: Consistent character poses across generations</span>
-                      </li>
-                      <li>
-                        <strong className="text-white">Depth:</strong> Preserves depth information
-                        <br /><span className="text-sm text-gray-400">Use for: Architectural renders, 3D-consistent scenes</span>
-                      </li>
-                      <li>
-                        <strong className="text-white">Scribble:</strong> Follows rough sketches
-                        <br /><span className="text-sm text-gray-400">Use for: Quick concept art from simple drawings</span>
-                      </li>
-                      <li>
-                        <strong className="text-white">Lineart:</strong> Follows line drawings
-                        <br /><span className="text-sm text-gray-400">Use for: Coloring manga/comic line art</span>
-                      </li>
-                    </ul>
-                  </div>
+            <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="text-3xl font-black text-purple-400">0.1-0.2</div>
+                <div>
+                  <p className="text-white font-bold">Subtle - Gentle Tweaks</p>
+                  <p className="text-gray-400 text-sm">Barely noticeable but effective</p>
+                </div>
+              </div>
+              <p className="text-gray-300 text-sm"><strong className="text-white">Use for:</strong> Color grading, micro-adjustments, experimental combinations</p>
+            </div>
+          </div>
+        </div>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h3 className="text-xl font-semibold text-blue-300 mb-4">ControlNet OpenPose Workflow:</h3>
-                    <pre className="bg-black/50 p-4 rounded text-green-400 overflow-x-auto text-sm">
-{`Load Image (Reference Photo)
+        <h3 className="text-2xl font-bold text-white mb-6">Proven LoRA Combinations (Production-Tested)</h3>
+
+        <div className="not-prose grid md:grid-cols-3 gap-6 mb-12">
+          <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+            <div className="text-3xl mb-3">👤</div>
+            <h4 className="text-white font-bold mb-3">Realistic Portraits</h4>
+            <div className="space-y-2 text-sm text-gray-300">
+              <p><strong className="text-blue-400">Base:</strong> Realistic Vision XL</p>
+              <p><strong className="text-purple-400">LoRA 1:</strong> Detail Tweaker (0.5)</p>
+              <p><strong className="text-pink-400">LoRA 2:</strong> Eye Detail (0.3)</p>
+              <p className="text-gray-500 mt-3">Result: Ultra-realistic portraits with crisp details</p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+            <div className="text-3xl mb-3">🎨</div>
+            <h4 className="text-white font-bold mb-3">Anime/Stylized</h4>
+            <div className="space-y-2 text-sm text-gray-300">
+              <p><strong className="text-blue-400">Base:</strong> AnythingXL v5</p>
+              <p><strong className="text-purple-400">LoRA 1:</strong> Anime Style (0.8)</p>
+              <p><strong className="text-pink-400">LoRA 2:</strong> Line Art (0.4)</p>
+              <p><strong className="text-cyan-400">LoRA 3:</strong> Color Grade (0.3)</p>
+              <p className="text-gray-500 mt-3">Result: Professional anime art with bold lines</p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+            <div className="text-3xl mb-3">🏰</div>
+            <h4 className="text-white font-bold mb-3">Fantasy Scenes</h4>
+            <div className="space-y-2 text-sm text-gray-300">
+              <p><strong className="text-blue-400">Base:</strong> DreamShaper XL</p>
+              <p><strong className="text-purple-400">LoRA 1:</strong> Fantasy Style (0.7)</p>
+              <p><strong className="text-pink-400">LoRA 2:</strong> Dramatic Lighting (0.5)</p>
+              <p><strong className="text-cyan-400">LoRA 3:</strong> Detail Enhancer (0.3)</p>
+              <p className="text-gray-500 mt-3">Result: Epic fantasy with cinematic atmosphere</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold text-white mb-6 mt-12">ControlNet: Precision Composition Control</h2>
+
+        <p className="text-gray-300 mb-6 text-lg">
+          <strong className="text-white">ControlNet</strong> is the most powerful tool in advanced ComfyUI workflows. It allows you to <strong className="text-white">control image composition using reference images</strong>, enabling consistent character poses, precise architectural layouts, and exact compositions. This is what separates amateur AI art from professional production work.
+        </p>
+
+        <div className="not-prose bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-2xl p-8 mb-8">
+          <h3 className="text-2xl font-bold text-blue-300 mb-6">ControlNet Types & Use Cases</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <div className="bg-zinc-800/60 rounded-xl p-4">
+                <h4 className="text-white font-bold mb-2 flex items-center gap-2">
+                  <span className="text-2xl">📐</span> Canny Edge
+                </h4>
+                <p className="text-gray-300 text-sm mb-2">Detects edges and preserves composition structure</p>
+                <p className="text-blue-400 text-xs font-semibold">Use for: Maintaining structure from reference photos</p>
+              </div>
+
+              <div className="bg-zinc-800/60 rounded-xl p-4">
+                <h4 className="text-white font-bold mb-2 flex items-center gap-2">
+                  <span className="text-2xl">🧍</span> OpenPose
+                </h4>
+                <p className="text-gray-300 text-sm mb-2">Detects and replicates human skeleton/poses</p>
+                <p className="text-purple-400 text-xs font-semibold">Use for: Consistent character poses, AI influencers</p>
+              </div>
+
+              <div className="bg-zinc-800/60 rounded-xl p-4">
+                <h4 className="text-white font-bold mb-2 flex items-center gap-2">
+                  <span className="text-2xl">🏗️</span> Depth
+                </h4>
+                <p className="text-gray-300 text-sm mb-2">Preserves 3D depth information from reference</p>
+                <p className="text-cyan-400 text-xs font-semibold">Use for: Architectural renders, 3D-consistent scenes</p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="bg-zinc-800/60 rounded-xl p-4">
+                <h4 className="text-white font-bold mb-2 flex items-center gap-2">
+                  <span className="text-2xl">✏️</span> Scribble
+                </h4>
+                <p className="text-gray-300 text-sm mb-2">Follows rough sketches and scribbles</p>
+                <p className="text-pink-400 text-xs font-semibold">Use for: Quick concept art from simple drawings</p>
+              </div>
+
+              <div className="bg-zinc-800/60 rounded-xl p-4">
+                <h4 className="text-white font-bold mb-2 flex items-center gap-2">
+                  <span className="text-2xl">🎨</span> Lineart
+                </h4>
+                <p className="text-gray-300 text-sm mb-2">Follows detailed line drawings precisely</p>
+                <p className="text-green-400 text-xs font-semibold">Use for: Coloring manga/comic line art</p>
+              </div>
+
+              <div className="bg-zinc-800/60 rounded-xl p-4">
+                <h4 className="text-white font-bold mb-2 flex items-center gap-2">
+                  <span className="text-2xl">🖼️</span> Normal Map
+                </h4>
+                <p className="text-gray-300 text-sm mb-2">Preserves surface normals and lighting</p>
+                <p className="text-orange-400 text-xs font-semibold">Use for: Relighting scenes, texture generation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold text-white mb-6">ControlNet OpenPose Workflow (Most Popular)</h3>
+
+        <div className="not-prose bg-zinc-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 mb-8">
+          <div className="bg-black/50 p-6 rounded-xl text-green-400 font-mono text-sm overflow-x-auto mb-6">
+            <pre>{`Load Image (Reference Photo with Person)
     ↓
 ControlNet Preprocessor (OpenPose)
-  - Extracts skeleton/pose from reference
+  • Extracts skeleton/pose from photo
+  • Detects: body, hands, face keypoints
     ↓
-Load Checkpoint
+Load Checkpoint (Your chosen model)
     ↓
 Apply ControlNet
-  - Control Image: OpenPose output
-  - Strength: 0.8-1.0
-  - Start Percent: 0.0
-  - End Percent: 1.0
+  • Control Image: OpenPose skeleton
+  • Strength: 0.8-1.0
+  • Start Percent: 0.0
+  • End Percent: 1.0
     ↓
 CLIP Text Encode (Your custom prompt)
+  → "woman in elegant dress, professional photography..."
     ↓
 KSampler → Generate with controlled pose
     ↓
-VAE Decode → Save Image`}
-                    </pre>
-                  </div>
+VAE Decode → Save Image`}</pre>
+          </div>
 
-                  <div className="bg-gradient-to-r from-green-600/10 to-emerald-600/10 p-6 rounded-xl mb-8 border border-green-600/20">
-                    <h4 className="text-lg font-semibold text-green-300 mb-3">ControlNet Strength Guide:</h4>
-                    <ul className="space-y-3 text-gray-300">
-                      <li><strong>1.0 (Maximum):</strong> Exactly follows reference, use for pose/architecture</li>
-                      <li><strong>0.7-0.9 (Strong):</strong> Strong influence with some creative freedom</li>
-                      <li><strong>0.4-0.6 (Moderate):</strong> Balanced between reference and prompt</li>
-                      <li><strong>0.2-0.3 (Subtle):</strong> Gentle guidance, mostly follows prompt</li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">Multi-ControlNet Workflow:</h4>
-                    <p className="text-gray-300 mb-4">
-                      Stack multiple ControlNets for ultimate precision:
-                    </p>
-                    <pre className="bg-black/50 p-4 rounded text-green-400 overflow-x-auto text-sm">
-{`Apply ControlNet (OpenPose) - Strength: 1.0
+          <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+            <p className="text-purple-300 font-semibold mb-2">🎯 Pro Tip: Multi-ControlNet Stacking</p>
+            <p className="text-gray-300 text-sm mb-3">
+              Stack multiple ControlNets for <strong className="text-white">ultimate precision:</strong>
+            </p>
+            <div className="bg-black/50 p-3 rounded text-xs text-green-400 font-mono">
+              <pre>{`Apply ControlNet (OpenPose) - Strength: 1.0  ← Control pose
     ↓
-Apply ControlNet (Depth) - Strength: 0.6
+Apply ControlNet (Depth) - Strength: 0.6     ← Add depth consistency
     ↓
-Apply ControlNet (Canny) - Strength: 0.4
-    ↓
-Continue to KSampler...`}
-                    </pre>
-                    <p className="text-gray-400 mt-4 text-sm">
-                      This combination gives you pose control + depth consistency + edge preservation
-                    </p>
-                  </div>
-                </section>
+Apply ControlNet (Canny) - Strength: 0.4     ← Preserve edges`}</pre>
+            </div>
+            <p className="text-gray-400 mt-3 text-xs">Result: Perfect pose + depth + edge preservation = professional consistency</p>
+          </div>
+        </div>
 
-                {/* Img2Img Advanced */}
-                <section className="mb-16">
-                  <h2 className="text-3xl font-bold text-white mb-6">Advanced Img2Img: Image Transformation</h2>
+        <h2 className="text-3xl font-bold text-white mb-6 mt-12">Production Optimization: Speed + Quality</h2>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    Img2Img transforms existing images while maintaining composition. Master denoise strength for different effects.
-                  </p>
+        <p className="text-gray-300 mb-6 text-lg">
+          Professional AI artists generate <strong className="text-white">hundreds of images per day</strong>. Here's how to optimize your workflows for production without sacrificing quality:
+        </p>
 
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h3 className="text-xl font-semibold text-blue-300 mb-4">Img2Img Workflow:</h3>
-                    <pre className="bg-black/50 p-4 rounded text-green-400 overflow-x-auto text-sm">
-{`Load Image (Your source image)
-    ↓
-VAE Encode (Convert to latent space)
-    ↓
-Load Checkpoint
-    ↓
-CLIP Text Encode (Positive/Negative)
-    ↓
-KSampler
-  - Latent Image: From VAE Encode (not Empty Latent!)
-  - Steps: 20-30
-  - CFG: 7-9
-  - Denoise: 0.4-0.7 (KEY PARAMETER!)
-    ↓
-VAE Decode → Save Image`}
-                    </pre>
-                  </div>
-
-                  <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-6 rounded-xl mb-8 border border-blue-600/20">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">Denoise Strength Guide:</h4>
-                    <ul className="space-y-4 text-gray-300">
-                      <li>
-                        <strong>0.2-0.3 (Subtle Enhancement):</strong>
-                        <br />Minor refinements, keeps original composition 95%
-                        <br /><span className="text-sm text-gray-400">Use for: Upscaling, minor color correction</span>
-                      </li>
-                      <li>
-                        <strong>0.4-0.5 (Moderate Changes):</strong>
-                        <br />Noticeable style change, keeps composition ~70%
-                        <br /><span className="text-sm text-gray-400">Use for: Style transfer, adding details</span>
-                      </li>
-                      <li>
-                        <strong>0.6-0.7 (Heavy Transformation):</strong>
-                        <br />Major changes, keeps general composition ~40%
-                        <br /><span className="text-sm text-gray-400">Use for: Creative reinterpretation, genre changes</span>
-                      </li>
-                      <li>
-                        <strong>0.8-1.0 (Almost New Image):</strong>
-                        <br />Barely uses reference, mostly follows prompt
-                        <br /><span className="text-sm text-gray-400">Use for: Complete reimagining</span>
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-
-                {/* Upscaling Workflow */}
-                <section className="mb-16">
-                  <h2 className="text-3xl font-bold text-white mb-6">Professional Upscaling Workflow</h2>
-
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    True professional upscaling uses a multi-stage process combining AI upscalers with detail enhancement.
-                  </p>
-
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h3 className="text-xl font-semibold text-blue-300 mb-4">2-Stage Upscaling Workflow:</h3>
-                    <pre className="bg-black/50 p-4 rounded text-green-400 overflow-x-auto text-sm">
-{`STAGE 1: AI Upscale (2x)
-Load Image (512x512)
-    ↓
-Upscale Image (Model)
-  - Upscale Method: nearest-exact
-  - Model: 4x-UltraSharp or RealESRGAN
-  - Scale by: 2.0
-    ↓
-Result: 1024x1024 upscaled image
-
-STAGE 2: Detail Enhancement
-VAE Encode (upscaled image)
-    ↓
-KSampler (Hi-Res Fix)
-  - Denoise: 0.3-0.4
-  - Steps: 15-20
-  - CFG: 7.0
-  - Use same prompt as original
-    ↓
-VAE Decode → Save Image (1024x1024 enhanced)`}
-                    </pre>
-                  </div>
-
-                  <div className="bg-gradient-to-r from-green-600/10 to-blue-600/10 p-6 rounded-xl mb-8 border border-green-600/20">
-                    <h4 className="text-lg font-semibold text-green-300 mb-3">Upscale Model Recommendations:</h4>
-                    <ul className="space-y-3 text-gray-300">
-                      <li><strong>4x-UltraSharp:</strong> Best for general purpose, anime and realistic</li>
-                      <li><strong>RealESRGAN x4plus:</strong> Excellent for photorealistic images</li>
-                      <li><strong>4x-AnimeSharp:</strong> Specialized for anime/manga artwork</li>
-                      <li><strong>LDSR:</strong> Slower but highest quality for faces</li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">4x Upscaling Strategy:</h4>
-                    <p className="text-gray-300 mb-4">
-                      For maximum quality 4x upscaling (512px → 2048px):
-                    </p>
-                    <ol className="list-decimal list-inside space-y-2 text-gray-300 ml-4">
-                      <li>Generate at 512x512 with maximum quality settings</li>
-                      <li>First upscale: 512 → 1024 using 4x-UltraSharp</li>
-                      <li>Hi-res fix: Denoise 0.35, 20 steps</li>
-                      <li>Second upscale: 1024 → 2048 using same model</li>
-                      <li>Final hi-res fix: Denoise 0.25, 15 steps</li>
-                    </ol>
-                    <p className="text-gray-400 mt-4 text-sm">
-                      This produces professional print-quality 2048x2048 images
-                    </p>
-                  </div>
-                </section>
-
-                {/* Batch Processing */}
-                <section className="mb-16">
-                  <h2 className="text-3xl font-bold text-white mb-6">Batch Processing for Production</h2>
-
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    Professional workflows require generating dozens or hundreds of variations. Here's how to set up efficient batch processing.
-                  </p>
-
-                  <div className="bg-gradient-to-r from-purple-600/10 to-blue-600/10 p-6 rounded-xl mb-8 border border-purple-600/20">
-                    <h3 className="text-xl font-semibold text-purple-300 mb-4">Batch Processing Techniques:</h3>
-                    <ul className="space-y-4 text-gray-300">
-                      <li>
-                        <strong className="text-white">Batch Size in Empty Latent:</strong>
-                        <br />Set batch_size to 4-8 (if VRAM allows)
-                        <br /><span className="text-sm text-gray-400">Generates multiple images simultaneously</span>
-                      </li>
-                      <li>
-                        <strong className="text-white">Seed Iteration:</strong>
-                        <br />Use "Seed Increment" node or manual seed changes
-                        <br /><span className="text-sm text-gray-400">Creates variations with controlled randomness</span>
-                      </li>
-                      <li>
-                        <strong className="text-white">Prompt Scheduling:</strong>
-                        <br />Use "Prompt from File" node for batch prompts
-                        <br /><span className="text-sm text-gray-400">Automate different prompts in sequence</span>
-                      </li>
-                      <li>
-                        <strong className="text-white">Queue Multiple Prompts:</strong>
-                        <br />Press "Queue Prompt" multiple times before generation
-                        <br /><span className="text-sm text-gray-400">Builds a generation queue for unattended operation</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">Production Workflow Example:</h4>
-                    <pre className="bg-black/50 p-4 rounded text-green-400 overflow-x-auto text-sm">
-{`Empty Latent Image
-  - Width: 768
-  - Height: 768
-  - Batch Size: 4  ← Generate 4 images at once
-    ↓
-KSampler
-  - Seed: -1 (random)
-  - Or use specific seeds: 12345, 12346, 12347, 12348
-    ↓
-Save Image
-  - Filename Prefix: character_variations_%batch_index%`}
-                    </pre>
-                  </div>
-                </section>
-
-                {/* Workflow Optimization */}
-                <section className="mb-16">
-                  <h2 className="text-3xl font-bold text-white mb-6">Workflow Optimization Tips</h2>
-
-                  <div className="space-y-6">
-                    <div className="bg-gradient-to-r from-blue-600/10 to-cyan-600/10 p-6 rounded-xl border border-blue-600/20">
-                      <h3 className="text-xl font-semibold text-blue-300 mb-3">Memory Optimization:</h3>
-                      <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
-                        <li>Use "Model Sampling Discrete" node for efficient VRAM usage</li>
-                        <li>Enable "Tiled VAE" for processing large images in chunks</li>
-                        <li>Use FP16 (half precision) models when possible</li>
-                        <li>Unload models when not in use with "Model Management" nodes</li>
-                      </ul>
-                    </div>
-
-                    <div className="bg-gradient-to-r from-green-600/10 to-emerald-600/10 p-6 rounded-xl border border-green-600/20">
-                      <h3 className="text-xl font-semibold text-green-300 mb-3">Speed Optimization:</h3>
-                      <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
-                        <li>Use DPM++ 2M SDE Karras sampler (fast + high quality)</li>
-                        <li>Reduce steps to 20-25 for most workflows (diminishing returns after that)</li>
-                        <li>Enable xformers: <code className="text-blue-400">pip install xformers</code></li>
-                        <li>Use lower resolution for testing, full res for final render</li>
-                      </ul>
-                    </div>
-
-                    <div className="bg-gradient-to-r from-purple-600/10 to-pink-600/10 p-6 rounded-xl border border-purple-600/20">
-                      <h3 className="text-xl font-semibold text-purple-300 mb-3">Quality Optimization:</h3>
-                      <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
-                        <li>Always use negative prompts (quality matters!)</li>
-                        <li>Match resolution to model training (512 for SD1.5, 1024 for SDXL)</li>
-                        <li>Use separate VAE if model doesn't have baked-in VAE</li>
-                        <li>Test different samplers - results vary by model</li>
-                      </ul>
-                    </div>
-                  </div>
-                </section>
-
-                {/* Workflow Export */}
-                <section className="mb-16">
-                  <h2 className="text-3xl font-bold text-white mb-6">Saving and Sharing Workflows</h2>
-
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    ComfyUI workflows are saved as JSON files that can be shared, versioned, and reused.
-                  </p>
-
-                  <div className="bg-gray-800/50 p-6 rounded-lg mb-8 border border-gray-700">
-                    <h3 className="text-xl font-semibold text-blue-300 mb-4">How to Save Workflows:</h3>
-                    <ol className="list-decimal list-inside space-y-3 text-gray-300 ml-4">
-                      <li>Click "Save" button in top menu</li>
-                      <li>Choose location and name (e.g., "sdxl_refiner_workflow.json")</li>
-                      <li>Workflow saves complete node structure and settings</li>
-                      <li>To load: Drag JSON file onto ComfyUI canvas</li>
-                    </ol>
-                  </div>
-
-                  <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-6 rounded-xl mb-8 border border-blue-600/20">
-                    <h4 className="text-lg font-semibold text-blue-300 mb-3">Workflow Organization Tips:</h4>
-                    <ul className="space-y-2 text-gray-300">
-                      <li>Create a "Workflows" folder in your ComfyUI directory</li>
-                      <li>Use descriptive names: "portrait_sdxl_refiner.json"</li>
-                      <li>Add comments using "Note" nodes in the workflow</li>
-                      <li>Version workflows: "character_v1.json", "character_v2.json"</li>
-                      <li>Share on GitHub or Civitai for the community</li>
-                    </ul>
-                  </div>
-                </section>
-
-                {/* Course CTA */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-white mb-4">
-                      Master Advanced Workflows Faster
-                    </h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Get access to 50+ pre-built professional workflows, video tutorials, and step-by-step breakdowns
-                      of complex techniques in our comprehensive ComfyUI course.
-                    </p>
-
-                    <Link href="/comfyui-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-4">
-                      Explore ComfyUI Mastery Course
-                    </Link>
-
-                    <p className="text-sm text-gray-400 mt-4">
-                      Includes downloadable workflow library and custom node tutorials
-                    </p>
-                  </div>
+        <div className="not-prose grid md:grid-cols-2 gap-6 mb-12">
+          <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+            <h3 className="text-xl font-bold text-green-300 mb-4">⚡ Speed Optimization</h3>
+            <div className="space-y-3 text-gray-300 text-sm">
+              <div className="flex items-start gap-2">
+                <span className="text-green-400 mt-1">✓</span>
+                <div>
+                  <strong className="text-white">Reduce steps to 20-25:</strong> Diminishing returns after 25 steps for most models
                 </div>
-
-                {/* Related Articles */}
-                <div className="mt-12">
-                  <h3 className="text-2xl font-bold text-white mb-8">Related Guides</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/blog/comfyui-installation-setup-complete-beginner-guide" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        ComfyUI Installation Guide
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Complete beginner's guide to installing and setting up ComfyUI from scratch.
-                      </p>
-                    </Link>
-                    <Link href="/blog/how-to-make-money-with-comfyui-ai-art-business-guide" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-purple-500">
-                      <h4 className="font-semibold text-white group-hover:text-purple-300 transition-colors mb-2">
-                        Monetize Your AI Art
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Learn how to turn your ComfyUI skills into income through various business models.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
-                
               </div>
-              
+              <div className="flex items-start gap-2">
+                <span className="text-green-400 mt-1">✓</span>
+                <div>
+                  <strong className="text-white">Enable xformers:</strong> <code className="text-blue-400 bg-black/50 px-2 py-1 rounded">pip install xformers</code> for 30-50% speed boost
+                </div>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-green-400 mt-1">✓</span>
+                <div>
+                  <strong className="text-white">Use lower res for testing:</strong> Test at 512px, render finals at 1024px
+                </div>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-green-400 mt-1">✓</span>
+                <div>
+                  <strong className="text-white">Batch processing:</strong> Generate 4-10 variations simultaneously
+                </div>
+              </div>
             </div>
           </div>
-        </article>
-      </div>
-      )
+
+          <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+            <h3 className="text-xl font-bold text-purple-300 mb-4">💎 Quality Optimization</h3>
+            <div className="space-y-3 text-gray-300 text-sm">
+              <div className="flex items-start gap-2">
+                <span className="text-purple-400 mt-1">✓</span>
+                <div>
+                  <strong className="text-white">Always use negative prompts:</strong> Quality matters more than you think!
+                </div>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-purple-400 mt-1">✓</span>
+                <div>
+                  <strong className="text-white">Match model training resolution:</strong> 512 for SD1.5, 1024 for SDXL
+                </div>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-purple-400 mt-1">✓</span>
+                <div>
+                  <strong className="text-white">Use proper VAE:</strong> Some models need separate VAE files
+                </div>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-purple-400 mt-1">✓</span>
+                <div>
+                  <strong className="text-white">Test samplers:</strong> DPM++ 2M SDE Karras is best for most cases
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold text-white mb-6 mt-12">Key Takeaways: Your Action Plan</h2>
+
+        <div className="not-prose grid md:grid-cols-2 gap-6 mb-12">
+          <div className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/30 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+            <div className="text-4xl mb-4">🎯</div>
+            <h3 className="text-white font-bold text-xl mb-3">1. Master SDXL Base + Refiner</h3>
+            <p className="text-gray-300">This two-stage workflow is the foundation of professional AI art. Get this right before moving to advanced techniques.</p>
+          </div>
+
+          <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+            <div className="text-4xl mb-4">⚙️</div>
+            <h3 className="text-white font-bold text-xl mb-3">2. Stack LoRAs Strategically</h3>
+            <p className="text-gray-300">Use 2-4 LoRAs maximum. Start high strength for style, lower for details. Order matters!</p>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+            <div className="text-4xl mb-4">🎨</div>
+            <h3 className="text-white font-bold text-xl mb-3">3. Use ControlNet for Consistency</h3>
+            <p className="text-gray-300">OpenPose + Depth ControlNets are essential for AI influencers and character consistency.</p>
+          </div>
+
+          <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+            <div className="text-4xl mb-4">⚡</div>
+            <h3 className="text-white font-bold text-xl mb-3">4. Optimize for Production</h3>
+            <p className="text-gray-300">20-25 steps, xformers enabled, batch processing. Speed without quality loss.</p>
+          </div>
+        </div>
+
+        <div className="not-prose bg-gradient-to-br from-cyan-500/20 to-teal-500/20 border border-cyan-500/30 rounded-2xl p-8 text-center mb-12">
+          <div className="text-5xl mb-4">🚀</div>
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Ready to Master ComfyUI Like a Pro?
+          </h3>
+          <p className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto">
+            These workflows are just the beginning. In the <strong className="text-white">AI Influencers Course</strong>, you'll get <strong className="text-white">50+ pre-built ComfyUI workflows</strong>, live workflow breakdowns, and the exact setups I use to generate $50K+/month in AI art revenue.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/ai-influencers">
+              <button className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                Get the Full Course Now →
+              </button>
+            </Link>
+            <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
+              Or read more free ComfyUI guides
+            </Link>
+          </div>
+          <p className="text-gray-400 text-sm mt-6">Join 127,000+ students • $2.7M+ in student revenue generated</p>
+        </div>
+      </BlogPostLayout>
+    </>
+  )
 }

@@ -3,22 +3,22 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "Multi-Platform AI Influencer Strategy 2025: 500K Combined Followers Playbook | IImagined",
+  title: "Multi-Platform AI Influencer Strategy 2026: 500K Combined Followers Playbook | IImagined",
   description: "Complete cross-platform strategy for AI influencers. Content adaptation, platform optimization, repurposing workflows, and growth tactics for Instagram, TikTok, YouTube, and Twitter.",
   keywords: ["multi-platform influencer", "AI influencer strategy", "cross-platform content", "Instagram TikTok YouTube", "content repurposing", "social media growth", "platform optimization"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
   openGraph: {
     title: "Multi-Platform AI Influencer Strategy: 500K Followers Playbook",
     description: "Master Instagram, TikTok, YouTube, and Twitter with optimized content adaptation and cross-promotion strategies.",
-    url: "https://iimagined.ai/blog/multi-platform-ai-influencer-strategy-2025",
+    url: "https://iimagined.ai/blog/multi-platform-ai-influencer-strategy-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T14:00:00.000Z",
-    modifiedTime: "2025-01-22T14:00:00.000Z",
-    authors: ["Karro"],
+    publishedTime: "2026-01-22T14:00:00.000Z",
+    modifiedTime: "2026-01-22T14:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Multi-Platform Strategy", "Social Media Growth", "Content Strategy", "Platform Optimization"],
     images: [{
       url: "https://iimagined.ai/images/multi-platform-strategy-og.jpg",
@@ -52,7 +52,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/multi-platform-ai-influencer-strategy-2025"
+    canonical: "https://iimagined.ai/blog/multi-platform-ai-influencer-strategy-2026"
   }
 }
 
@@ -60,7 +60,7 @@ export default function MultiPlatformStrategy() {
   const schema = generateBlogPostSchema({
     title: metadata.title,
     description: metadata.description,
-    slug: "multi-platform-ai-influencer-strategy-2025",
+    slug: "multi-platform-ai-influencer-strategy-2026",
     publishedTime: metadata.openGraph.publishedTime,
     modifiedTime: metadata.openGraph.modifiedTime,
     category: metadata.category || "AI Influencers",
@@ -657,7 +657,7 @@ export default function MultiPlatformStrategy() {
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-6">
-              <h3 className="text-xl font-semibold text-white mb-3">Which platform has the best growth potential in 2025?</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">Which platform has the best growth potential in 2026?</h3>
               <p className="text-gray-400">
                 TikTok for raw discovery, Instagram Reels for monetization, YouTube Shorts for longevity. TikTok can take you 0-100K fastest (3-6 months), but Instagram has better brand deal opportunities. YouTube builds long-term passive traffic. Ideal: Start TikTok, monetize Instagram, compound YouTube.
               </p>

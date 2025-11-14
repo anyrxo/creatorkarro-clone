@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "AI SEO Content Optimization: Complete Guide & Expert",
-  description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["seo", "content", "optimization", "seo 2025", "seo content optimization", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+  keywords: ["seo", "content", "optimization", "seo 2026", "seo content optimization", "automation", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "AI SEO Content Optimization: Complete Guide & Expert",
-    description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     url: "https://iimagined.ai/blog/ai-seo-content-optimization",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.999Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["seo", "content", "optimization", "seo 2025", "seo content optimization", "automation", "AI tools", "business growth"],
+    publishedTime: "2026-02-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:14:29.999Z",
+    authors: ["Anyro"],
+    tags: ["seo", "content", "optimization", "seo 2026", "seo content optimization", "automation", "AI tools", "business growth"],
     images: [{
       url: "https://iimagined.ai/images/ai-seo-content-optimization-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "AI SEO Content Optimization: Complete Guide & Expert",
-    description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
     images: [{
       url: "https://iimagined.ai/images/ai-seo-content-optimization-og.jpg",
       alt: "AI SEO Content Optimization"

@@ -4,28 +4,28 @@ import Head from 'next/head'
 
 // Advanced SEO Metadata Export
 export const metadata = {
-  title: "Most Profitable Digital Product Niches in 2025",
+  title: "Most Profitable Digital Product Niches in 2026",
   description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery with 127K+...",
   keywords: ["digital product niches","profitable digital products","digital product market","best niches","digital products mastery","iimagined.ai","expert guide","proven strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai", 
   category: "Technology",
   openGraph: {
-    title: "Most Profitable Digital Product Niches in 2025",
+    title: "Most Profitable Digital Product Niches in 2026",
     description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery",
-    url: "https://iimagined.ai/blog/most-profitable-digital-product-niches-2025",
+    url: "https://iimagined.ai/blog/most-profitable-digital-product-niches-2026",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-08-05T07:10:42.596Z",
-    modifiedTime: "2025-08-05T07:10:42.596Z",
-    authors: ["IImagined.ai Team"],
+    publishedTime: "2026-02-03T10:00:00.000Z",
+    modifiedTime: "2026-02-03T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["digital product niches","profitable digital products","digital product market","best niches"],
     images: [{
       url: "https://iimagined.ai/images/blog/most-profitable-digital-product-niches-2025-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Most Profitable Digital Product Niches in 2025",
+      alt: "Most Profitable Digital Product Niches in 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -34,11 +34,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "Most Profitable Digital Product Niches in 2025",
+    title: "Most Profitable Digital Product Niches in 2026",
     description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery",
     images: [{
       url: "https://iimagined.ai/images/blog/most-profitable-digital-product-niches-2025-og.jpg",
-      alt: "Most Profitable Digital Product Niches in 2025"
+      alt: "Most Profitable Digital Product Niches in 2026"
     }]
   },
   robots: {
@@ -53,7 +53,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: "https://iimagined.ai/blog/most-profitable-digital-product-niches-2025",
+    canonical: "https://iimagined.ai/blog/most-profitable-digital-product-niches-2026",
     types: {
       "application/rss+xml": [
         { url: "https://iimagined.ai/rss.xml", title: "IImagined.ai RSS Feed" }
@@ -70,23 +70,23 @@ export default function MostProfitableDigitalProductNichesIn2025() {
       {
         "@type": "Article",
         "@id": "https://iimagined.ai/blog/most-profitable-digital-product-niches-2025#article",
-        "headline": "Most Profitable Digital Product Niches in 2025",
+        "headline": "Most Profitable Digital Product Niches in 2026",
         "description": "Complete guide to profitable digital product niches. Learn niche research methods, competition analysis, revenue data, and how to pick a winning niche.",
-        "datePublished": "2025-08-05T07:10:42.596Z",
-        "dateModified": "2025-08-05T07:10:42.596Z",
+        "datePublished": "2026-02-03T10:00:00.000Z",
+        "dateModified": "2026-02-03T10:00:00.000Z",
         "author": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization",
-          "name": "IImagined.ai Team",
+          "name": "Anyro",
           "url": "https://iimagined.ai"
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": "Person",
           "@id": "https://iimagined.ai#organization"
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://iimagined.ai/blog/most-profitable-digital-product-niches-2025"
+          "@id": "https://iimagined.ai/blog/most-profitable-digital-product-niches-2026"
         },
         "image": {
           "@type": "ImageObject",
@@ -101,7 +101,7 @@ export default function MostProfitableDigitalProductNichesIn2025() {
           "name": "Digital Products Mastery",
           "description": "Complete Digital Product Creation & Sales System",
           "provider": {
-            "@type": "Organization",
+            "@type": "Person",
             "name": "IImagined.ai"
           }
         }
@@ -138,7 +138,7 @@ export default function MostProfitableDigitalProductNichesIn2025() {
                   <li aria-current="page">
                     <div className="flex items-center">
                       <span className="mx-2 text-gray-500">/</span>
-                      <span className="text-gray-300">Most Profitable Digital Product Niches in 2025</span>
+                      <span className="text-gray-300">Most Profitable Digital Product Niches in 2026</span>
                     </div>
                   </li>
                 </ol>
@@ -146,13 +146,13 @@ export default function MostProfitableDigitalProductNichesIn2025() {
 
               <header className="mb-12">
                 <div className="mb-6">
-                  <time dateTime="2025-08-05" className="text-sm text-blue-400 font-medium">
-                    August 5, 2025
+                  <time dateTime="2026-08-05" className="text-sm text-blue-400 font-medium">
+                    August 2026
                   </time>
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  Most Profitable Digital Product Niches in 2025
+                  Most Profitable Digital Product Niches in 2026
                 </h1>
 
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -362,7 +362,7 @@ export default function MostProfitableDigitalProductNichesIn2025() {
                 <section className="mb-12">
                   <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
                     <span className="mr-3">3️⃣</span>
-                    Top 12 Most Profitable Niches in 2025
+                    Top 12 Most Profitable Niches in 2026
                   </h2>
 
                   <div className="space-y-6">

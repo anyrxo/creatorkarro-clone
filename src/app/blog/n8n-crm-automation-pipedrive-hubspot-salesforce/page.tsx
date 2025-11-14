@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "N8N CRM Automation 2025: Pipedrive, HubSpot, Salesforce Integration - Save 15 Hours/Week",
+  title: "N8N CRM Automation 2026: Pipedrive, HubSpot, Salesforce Integration - Save 15 Hours/Week",
   description: "Master CRM automation with N8N. Lead capture, automated scoring, email sequences, deal pipeline automation. Complete workflows for Pipedrive, HubSpot, Salesforce. Sales team case study.",
   keywords: [
     "n8n crm automation", "pipedrive n8n integration", "hubspot n8n workflow",
@@ -11,19 +11,19 @@ export const metadata = {
     "n8n deal automation", "automated lead scoring", "crm email automation",
     "n8n crm workflows", "sales automation n8n", "crm integration n8n"
   ],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
-    title: "N8N CRM Automation 2025: Pipedrive, HubSpot, Salesforce",
+    title: "N8N CRM Automation 2026: Pipedrive, HubSpot, Salesforce",
     description: "Complete CRM automation with N8N - lead capture, scoring, pipeline automation, email sequences. Save 15+ hours per week.",
     url: "https://iimagined.ai/blog/n8n-crm-automation-pipedrive-hubspot-salesforce",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T12:00:00.000Z",
+    publishedTime: "2026-01-15T12:00:00.000Z",
     modifiedTime: new Date().toISOString(),
-    authors: ["IImagined.ai Team"],
+    authors: ["Anyro"],
     tags: ["n8n", "crm automation", "pipedrive", "hubspot", "salesforce", "sales automation"],
     images: [{
       url: "https://iimagined.ai/images/n8n-crm-automation-og.jpg",

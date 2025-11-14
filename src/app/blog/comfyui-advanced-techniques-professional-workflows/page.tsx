@@ -6,7 +6,7 @@ export const metadata = {
   title: "ComfyUI Advanced Techniques: Professional Workflows for AI Influencers | IImagined",
   description: "Master advanced ComfyUI workflows for AI influencer creation. Custom nodes, batch automation, ControlNet mastery, and 10-second render optimization techniques.",
   keywords: ["ComfyUI", "AI influencers", "custom nodes", "batch processing", "ControlNet", "workflow automation", "AI image generation", "professional workflows", "LoRA training"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -16,9 +16,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/comfyui-advanced-techniques-professional-workflows",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-01-20T10:00:00.000Z",
-    authors: ["Karro"],
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-01-20T10:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["ComfyUI", "AI Influencers", "Workflow Automation", "ControlNet", "Custom Nodes"],
     images: [{
       url: "https://iimagined.ai/images/comfyui-advanced-og.jpg",
@@ -1192,7 +1192,7 @@ SaveImageBatch → Final output`}</pre>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">📚 Related Articles</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/blog/ai-influencer-monetization-complete-guide-2025" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-purple-500/50">
+            <Link href="/blog/ai-influencer-monetization-complete-guide-2026" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-purple-500/50">
               <div className="text-purple-400 text-3xl mb-3">💰</div>
               <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
                 AI Influencer Monetization Guide
@@ -1208,7 +1208,7 @@ SaveImageBatch → Final output`}</pre>
               </div>
             </Link>
 
-            <Link href="/blog/ai-influencers-complete-guide-virtual-influencer-creation-2025" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-blue-500/50">
+            <Link href="/blog/ai-influencers-complete-guide-virtual-influencer-creation-2026" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-blue-500/50">
               <div className="text-blue-400 text-3xl mb-3">🎨</div>
               <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                 Complete AI Influencer Creation Guide
@@ -1224,7 +1224,7 @@ SaveImageBatch → Final output`}</pre>
               </div>
             </Link>
 
-            <Link href="/blog/comfyui-tutorial-master-ai-image-generation-2025" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-green-500/50">
+            <Link href="/blog/comfyui-tutorial-master-ai-image-generation-2026" className="group bg-zinc-800 rounded-xl p-6 hover:bg-zinc-750 transition-all border border-zinc-700 hover:border-green-500/50">
               <div className="text-green-400 text-3xl mb-3">🚀</div>
               <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400 transition-colors">
                 ComfyUI Beginner Tutorial

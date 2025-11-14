@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2025",
+  title: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2026",
   description: "FTMO vs Topstep detailed comparison. Compare evaluation processes, profit splits, trading rules, and payout speeds to find the best funded trading program.",
   keywords: ["ftmo","topstep","prop firm","funded trader","forex prop firm","futures prop firm"],
   authors: [{ name: "IImagined.ai Expert Team", url: "https://iimagined.ai" }],
@@ -11,20 +11,20 @@ export const metadata = {
   publisher: "IImagined.ai",
   category: "Trading & Finance",
   openGraph: {
-    title: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2025",
+    title: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2026",
     description: "FTMO vs Topstep detailed comparison. Compare evaluation processes, profit splits, trading rules, and payout speeds to find the best funded trading program.",
     url: "https://iimagined.ai/blog/ftmo-vs-topstep-prop-firm-review",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-20T10:00:00.000Z",
-    modifiedTime: "2025-10-21T14:00:00.000Z",
+    publishedTime: "2026-01-20T10:00:00.000Z",
+    modifiedTime: "2026-10-21T14:00:00.000Z",
     authors: ["IImagined.ai Expert Team"],
     tags: ["ftmo","topstep","prop firm","funded trader","forex prop firm","futures prop firm"],
     images: [{
       url: "https://iimagined.ai/images/ftmo-vs-topstep-prop-firm-review-og.jpg",
       width: 1200,
       height: 630,
-      alt: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2025",
+      alt: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2026",
       type: "image/jpeg"
     }],
     locale: "en_US"
@@ -33,11 +33,11 @@ export const metadata = {
     card: "summary_large_image",
     site: "@iimagined_ai",
     creator: "@iimagined_ai",
-    title: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2025",
+    title: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2026",
     description: "FTMO vs Topstep detailed comparison. Compare evaluation processes, profit splits, trading rules, and payout speeds to find the best funded trading program.",
     images: [{
       url: "https://iimagined.ai/images/ftmo-vs-topstep-prop-firm-review-og.jpg",
-      alt: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2025"
+      alt: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2026"
     }]
   },
   robots: {

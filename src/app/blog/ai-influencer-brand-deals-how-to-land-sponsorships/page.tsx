@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 export const metadata = {
-  title: "How AI Influencers Land Brand Deals: $500-$50K Sponsorships in 2025 | IImagined",
+  title: "How AI Influencers Land Brand Deals: $500-$50K Sponsorships in 2026 | IImagined",
   description: "Complete guide to landing brand deals for AI influencers. Outreach templates, rate cards, negotiation tactics, and real case studies of $3K-$50K deals.",
   keywords: ["AI influencer brand deals", "sponsorship rates", "influencer marketing", "brand partnerships", "sponsored posts", "AI influencer income", "negotiation tactics"],
-  authors: [{ name: "Karro", url: "https://iimagined.ai" }],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "AI Influencers",
@@ -16,9 +16,9 @@ export const metadata = {
     url: "https://iimagined.ai/blog/ai-influencer-brand-deals-how-to-land-sponsorships",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-22T13:00:00.000Z",
-    modifiedTime: "2025-01-22T13:00:00.000Z",
-    authors: ["Karro"],
+    publishedTime: "2026-01-22T13:00:00.000Z",
+    modifiedTime: "2026-01-22T13:00:00.000Z",
+    authors: ["Anyro"],
     tags: ["AI Influencers", "Brand Deals", "Sponsorships", "Influencer Marketing", "Revenue"],
     images: [{
       url: "https://iimagined.ai/images/ai-influencer-brand-deals-og.jpg",
@@ -83,7 +83,7 @@ export default function AIInfluencerBrandDeals() {
             </div>
 
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              How AI Influencers Land <span className="text-green-400">$500-$50K Brand Deals</span> in 2025
+              How AI Influencers Land <span className="text-green-400">$500-$50K Brand Deals</span> in 2026
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-8">

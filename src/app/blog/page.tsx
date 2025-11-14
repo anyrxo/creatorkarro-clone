@@ -187,6 +187,33 @@ export default function BlogPage() {
                 </div>
               </div>
             </ScrollAnimation>
+
+            {/* Popular Categories Quick Stats */}
+            <ScrollAnimation animation="fade-up" delay={700}>
+              <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                {[
+                  {name: 'AI Influencers', count: allBlogPosts.filter(p => p.category === 'AI Influencers').length, gradient: 'from-purple-500 to-pink-500', icon: '🤖'},
+                  {name: 'Instagram Growth', count: allBlogPosts.filter(p => p.category === 'Instagram Growth').length, gradient: 'from-pink-500 to-rose-500', icon: '📸'},
+                  {name: 'AI Automation', count: allBlogPosts.filter(p => p.category === 'AI Automation').length, gradient: 'from-blue-500 to-cyan-500', icon: '⚡'},
+                  {name: 'Futures Trading', count: allBlogPosts.filter(p => p.category === 'Futures Trading').length, gradient: 'from-green-500 to-emerald-500', icon: '📈'},
+                ].filter(cat => cat.count > 0).map((cat, idx) => (
+                  <button
+                    key={cat.name}
+                    onClick={() => updateCategory(cat.name)}
+                    className={`group relative bg-zinc-900/60 backdrop-blur-sm border border-zinc-700/50 rounded-xl p-4 hover:border-zinc-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ${selectedCategory === cat.name ? 'ring-2 ring-blue-500/50' : ''}`}
+                  >
+                    <div className="text-center">
+                      <div className="text-3xl mb-2">{cat.icon}</div>
+                      <div className={`text-2xl font-bold bg-gradient-to-r ${cat.gradient} bg-clip-text text-transparent mb-1`}>
+                        {cat.count}
+                      </div>
+                      <div className="text-xs text-zinc-400 font-medium">{cat.name}</div>
+                    </div>
+                    <div className={`absolute inset-0 bg-gradient-to-r ${cat.gradient} opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-300`}></div>
+                  </button>
+                ))}
+              </div>
+            </ScrollAnimation>
           </div>
 
           {/* Category Filters */}
@@ -270,87 +297,113 @@ export default function BlogPage() {
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {featuredPosts.map((post) => (
-                    <ScrollAnimation key={post.slug} animation="fade-up" delay={1000}>
+                  {featuredPosts.map((post, idx) => {
+                    const categoryColors: Record<string, {bg: string, border: string, text: string, gradient: string}> = {
+                      'AI Influencers': {bg: 'from-purple-500/30 to-pink-500/30', border: 'border-purple-500/40', text: 'text-purple-300', gradient: 'from-purple-600/10 via-pink-600/10 to-purple-600/10'},
+                      'Futures Trading': {bg: 'from-green-500/30 to-emerald-500/30', border: 'border-green-500/40', text: 'text-green-300', gradient: 'from-green-600/10 via-emerald-600/10 to-green-600/10'},
+                      'Instagram Growth': {bg: 'from-pink-500/30 to-rose-500/30', border: 'border-pink-500/40', text: 'text-pink-300', gradient: 'from-pink-600/10 via-rose-600/10 to-pink-600/10'},
+                      'AI Automation': {bg: 'from-blue-500/30 to-cyan-500/30', border: 'border-blue-500/40', text: 'text-blue-300', gradient: 'from-blue-600/10 via-cyan-600/10 to-blue-600/10'},
+                      'N8N': {bg: 'from-orange-500/30 to-yellow-500/30', border: 'border-orange-500/40', text: 'text-orange-300', gradient: 'from-orange-600/10 via-yellow-600/10 to-orange-600/10'},
+                    }
+                    const colors = categoryColors[post.category] || {bg: 'from-blue-500/30 to-purple-500/30', border: 'border-blue-500/40', text: 'text-blue-300', gradient: 'from-blue-600/10 via-purple-600/10 to-blue-600/10'}
+
+                    return (
+                    <ScrollAnimation key={post.slug} animation="fade-up" delay={1000 + idx * 100}>
                       <TiltCard className="h-full">
-                      <Link href={`/blog/${post.slug}`}>
-                        <SpotlightCard 
-                          className="h-full bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10"
-                          spotlightColor="rgba(59, 130, 246, 0.3)"
+                      <Link href={`/blog/${post.slug}`} className="block h-full group">
+                        <SpotlightCard
+                          className="h-full bg-gradient-to-br from-gray-800/70 to-gray-900/70 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:border-yellow-500/50 hover:shadow-2xl hover:shadow-yellow-500/20 transform hover:-translate-y-1"
+                          spotlightColor="rgba(251, 191, 36, 0.4)"
                         >
                           <div className="h-full flex flex-col">
-                            {/* Badge Section */}
-                            <div className="flex items-center gap-2 mb-4">
-                              <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-2 py-1 rounded-full text-xs font-medium shadow-lg">
-                                {post.category}
-                              </span>
-                              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full text-xs font-medium shadow-lg animate-pulse flex items-center gap-1">
-                                <span className="text-xs"></span>
-                                <span className="hidden sm:inline">Featured</span>
-                                <span className="sm:hidden"></span>
-                              </span>
-                            </div>
+                            {/* Featured Image Section */}
+                            <div className={`relative h-40 bg-gradient-to-br ${colors.bg} overflow-hidden`}>
+                              <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
 
-                            {/* Title */}
-                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors line-clamp-2 leading-tight">
-                              {post.title}
-                            </h3>
-
-                            {/* Description */}
-                            <p className="text-zinc-200 mb-4 leading-relaxed text-sm line-clamp-3 flex-grow">
-                              {post.description}
-                            </p>
-
-                            {/* Meta Info */}
-                            <div className="flex items-center justify-between text-sm text-zinc-300 mb-4">
-                              <div className="flex items-center gap-4">
-                                <div className="flex items-center gap-1">
-                                  <Clock className="w-4 h-4" />
-                                  <span>{post.readTime} min</span>
-                                </div>
-                                <div className="flex items-center gap-1">
-                                  <Calendar className="w-4 h-4" />
-                                  <span>{post.date}</span>
-                                </div>
+                              {/* Decorative elements */}
+                              <div className="absolute inset-0 opacity-20">
+                                <div className="absolute top-2 left-2 w-16 h-16 border-2 border-white rounded-full animate-pulse"></div>
+                                <div className="absolute bottom-2 right-2 w-24 h-24 border-2 border-white rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
                               </div>
-                              <div className="flex items-center gap-1 text-blue-400 group-hover:text-blue-300 transition-colors">
-                                <span className="text-xs font-medium">Read</span>
-                                <ChevronRight className="w-4 h-4" />
+
+                              {/* Badges on Image */}
+                              <div className="absolute top-3 left-3 flex flex-wrap gap-2 z-10">
+                                <span className={`bg-gradient-to-r ${colors.bg} border ${colors.border} text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg backdrop-blur-md`}>
+                                  {post.category}
+                                </span>
+                                <span className="bg-gradient-to-r from-yellow-400/95 to-orange-500/95 border border-yellow-500/50 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse backdrop-blur-md">
+                                  ⭐ FEATURED
+                                </span>
+                              </div>
+
+                              {/* Reading Time */}
+                              <div className="absolute bottom-3 right-3 z-10">
+                                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-xs text-white font-medium shadow-lg">
+                                  <Clock className="w-3 h-3" />
+                                  {post.readTime} min
+                                </span>
                               </div>
                             </div>
 
-                            {/* Engagement Metrics */}
-                            <div className="flex items-center justify-between pt-3 border-t border-gray-700/50">
-                              {(() => {
-                                const metrics = calculateBlogMetrics(post.date, post.slug)
-                                return (
-                                  <div className="flex items-center gap-4 text-xs text-zinc-300">
-                                    <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer">
-                                      <Eye className="w-3 h-3" />
-                                      <span>{metrics.views}</span>
+                            <div className="p-6 flex flex-col flex-grow">
+                              {/* Title */}
+                              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-yellow-300 transition-colors line-clamp-2 leading-tight min-h-[3.5rem]">
+                                {post.title}
+                              </h3>
+
+                              {/* Description */}
+                              <p className="text-zinc-300 mb-4 leading-relaxed text-sm line-clamp-3 flex-grow">
+                                {post.description}
+                              </p>
+
+                              {/* Meta Info */}
+                              <div className="flex items-center justify-between text-xs text-zinc-400 mb-4 pt-3 border-t border-gray-700/50">
+                                <div className="flex items-center gap-3">
+                                  <span className="flex items-center gap-1">
+                                    <Calendar className="w-3 h-3" />
+                                    {post.date}
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-1 text-yellow-400 group-hover:text-yellow-300 transition-colors font-semibold">
+                                  <span className="text-xs">Read</span>
+                                  <ChevronRight className="w-3 h-3 transform group-hover:translate-x-1 transition-transform" />
+                                </div>
+                              </div>
+
+                              {/* Engagement Metrics */}
+                              <div className="flex items-center justify-between pt-3 border-t border-gray-700/50">
+                                {(() => {
+                                  const metrics = calculateBlogMetrics(post.date, post.slug)
+                                  return (
+                                    <div className="flex items-center gap-4 text-xs text-zinc-400">
+                                      <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer group/metric">
+                                        <Eye className="w-3 h-3 group-hover/metric:scale-110 transition-transform" />
+                                        <span className="font-medium">{metrics.views}</span>
+                                      </div>
+                                      <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer group/metric">
+                                        <Heart className="w-3 h-3 group-hover/metric:scale-110 transition-transform" />
+                                        <span className="font-medium">{metrics.likes}</span>
+                                      </div>
+                                      <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer group/metric">
+                                        <MessageCircle className="w-3 h-3 group-hover/metric:scale-110 transition-transform" />
+                                        <span className="font-medium">{metrics.comments}</span>
+                                      </div>
+                                      <div className="flex items-center gap-1 hover:text-purple-400 transition-colors cursor-pointer group/metric">
+                                        <Share2 className="w-3 h-3 group-hover/metric:scale-110 transition-transform" />
+                                        <span className="font-medium">{metrics.shares}</span>
+                                      </div>
                                     </div>
-                                    <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer">
-                                      <Heart className="w-3 h-3" />
-                                      <span>{metrics.likes}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer">
-                                      <MessageCircle className="w-3 h-3" />
-                                      <span>{metrics.comments}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1 hover:text-purple-400 transition-colors cursor-pointer">
-                                      <Share2 className="w-3 h-3" />
-                                      <span>{metrics.shares}</span>
-                                    </div>
-                                  </div>
-                                )
-                              })()}
+                                  )
+                                })()}
+                              </div>
                             </div>
                           </div>
                         </SpotlightCard>
                       </Link>
                     </TiltCard>
                     </ScrollAnimation>
-                  ))}
+                  )
+                })}
                 </div>
               </div>
             )}
@@ -396,98 +449,135 @@ export default function BlogPage() {
                   </div>
                   
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {(filteredPosts.length > 0 ? filteredPosts : allBlogPosts.slice(0, 12)).map((post, index) => (
-                      <article key={post.slug} className="group relative bg-gradient-to-br from-gray-800/60 to-gray-900/80 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 overflow-hidden">
-                        {/* Gradient overlay effect */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-purple-600/5 to-pink-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-                        
+                    {(filteredPosts.length > 0 ? filteredPosts : allBlogPosts.slice(0, 12)).map((post, index) => {
+                      // Category-specific color schemes
+                      const categoryColors: Record<string, {bg: string, border: string, text: string, hover: string, gradient: string}> = {
+                        'AI Influencers': {bg: 'from-purple-500/20 to-pink-500/20', border: 'border-purple-500/30', text: 'text-purple-300', hover: 'group-hover:border-purple-500/50 group-hover:shadow-purple-500/10', gradient: 'from-purple-600/5 via-pink-600/5 to-purple-600/5'},
+                        'Futures Trading': {bg: 'from-green-500/20 to-emerald-500/20', border: 'border-green-500/30', text: 'text-green-300', hover: 'group-hover:border-green-500/50 group-hover:shadow-green-500/10', gradient: 'from-green-600/5 via-emerald-600/5 to-green-600/5'},
+                        'Instagram Growth': {bg: 'from-pink-500/20 to-rose-500/20', border: 'border-pink-500/30', text: 'text-pink-300', hover: 'group-hover:border-pink-500/50 group-hover:shadow-pink-500/10', gradient: 'from-pink-600/5 via-rose-600/5 to-pink-600/5'},
+                        'AI Automation': {bg: 'from-blue-500/20 to-cyan-500/20', border: 'border-blue-500/30', text: 'text-blue-300', hover: 'group-hover:border-blue-500/50 group-hover:shadow-blue-500/10', gradient: 'from-blue-600/5 via-cyan-600/5 to-blue-600/5'},
+                        'N8N': {bg: 'from-orange-500/20 to-yellow-500/20', border: 'border-orange-500/30', text: 'text-orange-300', hover: 'group-hover:border-orange-500/50 group-hover:shadow-orange-500/10', gradient: 'from-orange-600/5 via-yellow-600/5 to-orange-600/5'},
+                        'Digital Products': {bg: 'from-indigo-500/20 to-violet-500/20', border: 'border-indigo-500/30', text: 'text-indigo-300', hover: 'group-hover:border-indigo-500/50 group-hover:shadow-indigo-500/10', gradient: 'from-indigo-600/5 via-violet-600/5 to-indigo-600/5'},
+                        'ComfyUI': {bg: 'from-cyan-500/20 to-teal-500/20', border: 'border-cyan-500/30', text: 'text-cyan-300', hover: 'group-hover:border-cyan-500/50 group-hover:shadow-cyan-500/10', gradient: 'from-cyan-600/5 via-teal-600/5 to-cyan-600/5'},
+                        'AI Models': {bg: 'from-violet-500/20 to-fuchsia-500/20', border: 'border-violet-500/30', text: 'text-violet-300', hover: 'group-hover:border-violet-500/50 group-hover:shadow-violet-500/10', gradient: 'from-violet-600/5 via-fuchsia-600/5 to-violet-600/5'},
+                      }
+                      const colors = categoryColors[post.category] || {bg: 'from-blue-500/20 to-purple-500/20', border: 'border-blue-500/30', text: 'text-blue-300', hover: 'group-hover:border-blue-500/50 group-hover:shadow-blue-500/10', gradient: 'from-blue-600/5 via-purple-600/5 to-blue-600/5'}
+
+                      return (
+                      <article key={post.slug} className={`group relative bg-gradient-to-br from-gray-800/60 to-gray-900/80 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${colors.hover}`}>
+                        {/* Animated gradient overlay effect */}
+                        <div className={`absolute inset-0 bg-gradient-to-r ${colors.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+
                         <Link href={`/blog/${post.slug}`} className="block relative z-10">
-                          <div className="space-y-4">
-                            {/* Category & Featured Badge */}
-                            <div className="flex items-center justify-between">
-                              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 backdrop-blur-sm text-xs text-blue-300 font-semibold uppercase tracking-wide">
-                                <Tag className="w-3 h-3" />
-                                {post.category}
-                              </span>
-                              {post.featured && (
-                                <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border border-yellow-500/30 backdrop-blur-sm text-xs text-yellow-300 font-semibold animate-pulse">
-                                  <TrendingUp className="w-3 h-3" />
-                                  <span className="hidden sm:inline">FEATURED</span>
+                          <div className="relative">
+                            {/* Featured Image Placeholder with Category Gradient */}
+                            <div className={`relative h-48 bg-gradient-to-br ${colors.bg} overflow-hidden`}>
+                              <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent"></div>
+
+                              {/* Decorative Pattern */}
+                              <div className="absolute inset-0 opacity-10">
+                                <div className="absolute top-4 left-4 w-20 h-20 border-2 border-white rounded-full"></div>
+                                <div className="absolute bottom-4 right-4 w-32 h-32 border-2 border-white rounded-full"></div>
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 border-2 border-white rounded-full"></div>
+                              </div>
+
+                              {/* Category Badge on Image */}
+                              <div className="absolute top-4 left-4 z-10">
+                                <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r ${colors.bg} border ${colors.border} backdrop-blur-md text-xs ${colors.text} font-semibold uppercase tracking-wide shadow-lg`}>
+                                  <Tag className="w-3 h-3" />
+                                  {post.category}
                                 </span>
+                              </div>
+
+                              {/* Featured Badge */}
+                              {post.featured && (
+                                <div className="absolute top-4 right-4 z-10">
+                                  <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-gradient-to-r from-yellow-400/90 to-orange-500/90 border border-yellow-500/50 backdrop-blur-md text-xs text-white font-semibold shadow-lg animate-pulse">
+                                    <TrendingUp className="w-3 h-3" />
+                                    <span>FEATURED</span>
+                                  </span>
+                                </div>
+                              )}
+
+                              {/* Reading Time Badge */}
+                              <div className="absolute bottom-4 right-4 z-10">
+                                <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-xs text-white font-medium">
+                                  <Clock className="w-3 h-3" />
+                                  {post.readTime} min read
+                                </span>
+                              </div>
+                            </div>
+
+                            <div className="p-6 space-y-4">
+                              {/* Title */}
+                              <h3 className={`text-xl font-bold text-white group-hover:${colors.text} transition-colors leading-tight line-clamp-2 min-h-[3.5rem]`}>
+                                {post.title}
+                              </h3>
+
+                              {/* Description */}
+                              <p className="text-zinc-300 text-sm leading-relaxed line-clamp-3 min-h-[4rem]">
+                                {post.description}
+                              </p>
+
+                              {/* Meta Info */}
+                              <div className="flex items-center justify-between text-xs text-zinc-400 pt-2 border-t border-gray-700/30">
+                                <div className="flex items-center gap-3">
+                                  <span className="flex items-center gap-1">
+                                    <Calendar className="w-3 h-3" />
+                                    {post.date}
+                                  </span>
+                                </div>
+                                <span className={`${colors.text} group-hover:brightness-125 flex items-center gap-1 font-semibold transition-all`}>
+                                  Read <ChevronRight className="w-3 h-3 transform group-hover:translate-x-1 transition-transform" />
+                                </span>
+                              </div>
+
+                              {/* Engagement Metrics */}
+                              <div className="flex items-center justify-between pt-3 border-t border-gray-700/30">
+                                {(() => {
+                                  const metrics = calculateBlogMetrics(post.date, post.slug)
+                                  return (
+                                    <div className="flex items-center gap-4 text-xs text-zinc-400">
+                                      <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer group/metric">
+                                        <Eye className="w-3 h-3 group-hover/metric:scale-110 transition-transform" />
+                                        <span className="font-medium">{metrics.views}</span>
+                                      </div>
+                                      <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer group/metric">
+                                        <Heart className="w-3 h-3 group-hover/metric:scale-110 transition-transform" />
+                                        <span className="font-medium">{metrics.likes}</span>
+                                      </div>
+                                      <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer group/metric">
+                                        <MessageCircle className="w-3 h-3 group-hover/metric:scale-110 transition-transform" />
+                                        <span className="font-medium">{metrics.comments}</span>
+                                      </div>
+                                      <div className="flex items-center gap-1 hover:text-purple-400 transition-colors cursor-pointer group/metric">
+                                        <Share2 className="w-3 h-3 group-hover/metric:scale-110 transition-transform" />
+                                        <span className="font-medium">{metrics.shares}</span>
+                                      </div>
+                                    </div>
+                                  )
+                                })()}
+                              </div>
+
+                              {/* Tags */}
+                              {post.tags.length > 0 && (
+                                <div className="flex flex-wrap gap-2 pt-3 border-t border-gray-700/30">
+                                  {post.tags.slice(0, 2).map((tag, tagIndex) => (
+                                    <span key={tagIndex} className={`text-xs bg-gradient-to-r ${colors.bg} border ${colors.border} ${colors.text} px-2.5 py-1 rounded-full font-medium hover:brightness-125 transition-all`}>
+                                      #{tag}
+                                    </span>
+                                  ))}
+                                  {post.tags.length > 2 && (
+                                    <span className="text-xs text-zinc-500 px-2 py-1">+{post.tags.length - 2}</span>
+                                  )}
+                                </div>
                               )}
                             </div>
-
-                            {/* Title */}
-                            <h3 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors leading-tight line-clamp-2">
-                              {post.title}
-                            </h3>
-
-                            {/* Description */}
-                            <p className="text-zinc-200 text-sm leading-relaxed line-clamp-3">
-                              {post.description}
-                            </p>
-
-                            {/* Meta Info */}
-                            <div className="flex items-center justify-between text-xs text-zinc-400 pt-2">
-                              <div className="flex items-center gap-4">
-                                <span className="flex items-center gap-1">
-                                  <Calendar className="w-3 h-3" />
-                                  {post.date}
-                                </span>
-                                <span className="flex items-center gap-1">
-                                  <Clock className="w-3 h-3" />
-                                  {post.readTime} min
-                                </span>
-                              </div>
-                              <span className="text-blue-400 group-hover:text-blue-300 flex items-center gap-1 font-medium transition-colors">
-                                Read <ChevronRight className="w-3 h-3 transform group-hover:translate-x-1 transition-transform" />
-                              </span>
-                            </div>
-
-                            {/* Engagement Metrics */}
-                            <div className="flex items-center justify-between pt-3 border-t border-gray-700/30">
-                              {(() => {
-                                const metrics = calculateBlogMetrics(post.date, post.slug)
-                                return (
-                                  <div className="flex items-center gap-4 text-xs text-zinc-400">
-                                    <div className="flex items-center gap-1 hover:text-blue-400 transition-colors cursor-pointer">
-                                      <Eye className="w-3 h-3" />
-                                      <span>{metrics.views}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1 hover:text-red-400 transition-colors cursor-pointer">
-                                      <Heart className="w-3 h-3" />
-                                      <span>{metrics.likes}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-pointer">
-                                      <MessageCircle className="w-3 h-3" />
-                                      <span>{metrics.comments}</span>
-                                    </div>
-                                    <div className="flex items-center gap-1 hover:text-purple-400 transition-colors cursor-pointer">
-                                      <Share2 className="w-3 h-3" />
-                                      <span>{metrics.shares}</span>
-                                    </div>
-                                  </div>
-                                )
-                              })()}
-                            </div>
-
-                            {/* Tags */}
-                            {post.tags.length > 0 && (
-                              <div className="flex flex-wrap gap-2 pt-3">
-                                {post.tags.slice(0, 3).map((tag, tagIndex) => (
-                                  <span key={tagIndex} className="text-xs bg-zinc-700/30 text-zinc-300 px-2 py-1 rounded-md hover:bg-zinc-600/40 transition-colors border border-zinc-600/20">
-                                    #{tag}
-                                  </span>
-                                ))}
-                                {post.tags.length > 3 && (
-                                  <span className="text-xs text-zinc-500">+{post.tags.length - 3} more</span>
-                                )}
-                              </div>
-                            )}
                           </div>
                         </Link>
                       </article>
-                    ))}
+                    )}
+                  )}
                   
                 </div>
                 </>

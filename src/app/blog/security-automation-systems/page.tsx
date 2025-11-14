@@ -5,22 +5,22 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 // Comprehensive SEO Metadata
 export const metadata = {
   title: "Security Automation Systems: Complete Guide & Expert",
-  description: "Complete guide to security automation systems - proven strategies, tools, and techniques for 2025",
-  keywords: ["security", "automation", "systems", "security 2025", "security automation systems", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  description: "Complete guide to security automation systems - proven strategies, tools, and techniques for 2026",
+  keywords: ["security", "automation", "systems", "security 2026", "security automation systems", "AI tools", "business growth", "productivity", "2026 strategies"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
   category: "Technology",
   openGraph: {
     title: "Security Automation Systems: Complete Guide & Expert",
-    description: "Complete guide to security automation systems - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to security automation systems - proven strategies, tools, and techniques for 2026",
     url: "https://iimagined.ai/blog/security-automation-systems",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.961Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["security", "automation", "systems", "security 2025", "security automation systems", "AI tools", "business growth", "productivity"],
+    publishedTime: "2026-02-28T10:00:00.000Z",
+    modifiedTime: "2026-08-03T06:14:29.961Z",
+    authors: ["Anyro"],
+    tags: ["security", "automation", "systems", "security 2026", "security automation systems", "AI tools", "business growth", "productivity"],
     images: [{
       url: "https://iimagined.ai/images/security-automation-systems-og.jpg",
       width: 1200,
@@ -35,7 +35,7 @@ export const metadata = {
     site: "@iimagined_ai",
     creator: "@iimagined_ai", 
     title: "Security Automation Systems: Complete Guide & Expert",
-    description: "Complete guide to security automation systems - proven strategies, tools, and techniques for 2025",
+    description: "Complete guide to security automation systems - proven strategies, tools, and techniques for 2026",
     images: [{
       url: "https://iimagined.ai/images/security-automation-systems-og.jpg",
       alt: "Security Automation Systems"

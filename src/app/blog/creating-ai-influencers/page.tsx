@@ -4,23 +4,23 @@ import { generateBlogPostSchema } from '@/lib/blog-schema'
 
 // Comprehensive SEO Metadata
 export const metadata = {
-  title: "Creating AI Influencers: Complete Guide & Expert Strategies",
-  description: "Creating AI Influencers comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
-  keywords: ["creating", "influencers", "creating 2025", "creating influencers", "automation", "AI tools", "business growth", "productivity", "2025 strategies"],
-  authors: [{ name: "IImagined.ai Team", url: "https://iimagined.ai" }],
+  title: "Creating AI Influencers 2026: Complete Step-by-Step Guide to Virtual Personas | IImagined.ai",
+  description: "Master creating AI influencers in 2026. Complete guide covering Midjourney character design, consistent personas, content automation, monetization strategies, and building revenue-generating virtual influencers. 127K+ students trust our methods.",
+  keywords: ["creating ai influencers", "ai influencer creation", "virtual influencer guide", "ai persona development", "midjourney ai influencer", "ai influencer monetization", "create virtual influencer", "ai content creator", "digital influencer business", "ai influencer 2026"],
+  authors: [{ name: "Anyro", url: "https://iimagined.ai" }],
   creator: "IImagined.ai",
   publisher: "IImagined.ai",
-  category: "Technology",
+  category: "AI Influencers",
   openGraph: {
-    title: "Creating AI Influencers: Complete Guide & Expert Strategies",
-    description: "Creating AI Influencers comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    title: "Creating AI Influencers 2026: Complete Step-by-Step Guide to Virtual Personas",
+    description: "Master creating AI influencers with Midjourney, consistent personas, content automation & monetization strategies",
     url: "https://iimagined.ai/blog/creating-ai-influencers",
     siteName: "IImagined.ai",
     type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-08-03T06:14:29.991Z",
-    authors: ["IImagined.ai Team"],
-    tags: ["creating", "influencers", "creating 2025", "creating influencers", "automation", "AI tools", "business growth", "productivity"],
+    publishedTime: "2026-01-26T10:00:00.000Z",
+    modifiedTime: new Date().toISOString(),
+    authors: ["Anyro"],
+    tags: ["AI Influencers", "Virtual Influencer", "AI Content Creation", "Midjourney", "Character Design", "Content Automation", "Influencer Monetization"],
     images: [{
       url: "https://iimagined.ai/images/creating-ai-influencers-og.jpg",
       width: 1200,
@@ -33,9 +33,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@iimagined_ai",
-    creator: "@iimagined_ai", 
-    title: "Creating AI Influencers: Complete Guide & Expert Strategies",
-    description: "Creating AI Influencers comprehensive guide - latest AI tools, strategies, and implementation tips for 2025",
+    creator: "@iimagined_ai",
+    title: "Creating AI Influencers 2026: Complete Step-by-Step Guide",
+    description: "Master creating AI influencers with Midjourney, consistent personas & monetization strategies",
     images: [{
       url: "https://iimagined.ai/images/creating-ai-influencers-og.jpg",
       alt: "Creating AI Influencers"
@@ -1061,13 +1061,13 @@ PNGInfo Saver → Embed metadata for tracking`}</pre>
                         <span className="text-purple-400 text-sm font-semibold">Read More →</span>
                     </Link>
 
-                    <Link href="/blog/ai-influencer-monetization-complete-guide-2025" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
+                    <Link href="/blog/ai-influencer-monetization-complete-guide-2026" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
                         <h3 className="text-lg font-bold text-white mb-2">AI Influencer Monetization Guide</h3>
-                        <p className="text-gray-400 text-sm mb-3">Complete strategies to monetize your AI influencers in 2025</p>
+                        <p className="text-gray-400 text-sm mb-3">Complete strategies to monetize your AI influencers in 2026</p>
                         <span className="text-purple-400 text-sm font-semibold">Read More →</span>
                     </Link>
 
-                    <Link href="/blog/instagram-growth-2025" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
+                    <Link href="/blog/instagram-growth-2026" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-purple-500/50 transition-all">
                         <h3 className="text-lg font-bold text-white mb-2">Instagram Growth 2025</h3>
                         <p className="text-gray-400 text-sm mb-3">Proven strategies to grow your Instagram following organically</p>
                         <span className="text-purple-400 text-sm font-semibold">Read More →</span>
