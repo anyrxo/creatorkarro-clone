@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+// Metadata import removed for type inference
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Globe, Code, Database, TrendingUp, Shield, Zap, Clock } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Web Scraping Automation: Complete 2026 Guide to Data Extraction & Mining at Scale",
   description: "Master web scraping automation with this comprehensive 2026 guide. Learn Playwright, Puppeteer, anti-detection strategies, legal compliance, and systems that extract millions of data points automatically.",
   keywords: [

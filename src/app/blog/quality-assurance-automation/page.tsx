@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+// Metadata import removed for type inference
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { CheckCircle, Bug, Play, GitBranch, Shield, Zap, Clock } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "QA Automation Testing: Complete 2026 Guide to Automated Testing & CI/CD Integration",
   description: "Master QA automation testing with this comprehensive 2026 guide. Learn Playwright, Cypress, test frameworks, CI/CD integration, and strategies that reduce bugs by 80% while shipping 3x faster.",
   keywords: [

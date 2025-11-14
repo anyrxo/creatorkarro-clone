@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+// Metadata import removed for type inference
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Zap, BarChart3, Brain, Code, Shield } from 'lucide-react'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Llama 4 Open Source AI Powerhouse: Complete Guide 2026 | Self-Hosting & Fine-Tuning",
   description: "Master Llama 4, Meta's most powerful open-source AI model for 2026. Learn self-hosting, fine-tuning on custom data, commercial use, and deployment strategies that give you full control without API vendor lock-in.",
   keywords: [

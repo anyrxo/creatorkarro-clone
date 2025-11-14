@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+// Metadata import removed for type inference
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Target, Users, Mail, TrendingUp, Zap, Filter, Clock } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Lead Generation Automation: Complete 2026 Guide to Automated Lead Capture & Nurturing",
   description: "Master lead generation automation with this comprehensive 2026 guide. Learn proven strategies, top tools, multi-channel tactics, and lead scoring systems that successful businesses use to scale growth.",
   keywords: [

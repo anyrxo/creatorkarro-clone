@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+// Metadata import removed for type inference
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Package, TrendingUp, RefreshCw, BarChart3, AlertTriangle, Zap, Clock } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Inventory Management Automation: Complete 2026 Guide to Smart Stock Control & Forecasting",
   description: "Master inventory management automation with this comprehensive 2026 guide. Learn demand forecasting, auto-reordering, multi-channel sync, and systems that reduce stockouts by 90% while cutting costs.",
   keywords: [

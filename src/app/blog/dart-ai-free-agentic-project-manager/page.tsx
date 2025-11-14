@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+// Metadata import removed for type inference
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Zap, BarChart3, Brain } from 'lucide-react'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Dart AI Free Agentic Project Manager: Complete Guide 2026 | AI-Powered Task Management",
   description: "Master Dart AI, the free agentic project manager for 2026. Learn AI-powered task breakdown, natural language commands, smart scheduling, and advanced workflows that teams use to 3x productivity without complex setup.",
   keywords: [

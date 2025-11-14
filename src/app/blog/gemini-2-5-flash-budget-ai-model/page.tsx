@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
+// Metadata import removed for type inference
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Zap, BarChart3, Brain, DollarSign } from 'lucide-react'
 
 // Comprehensive SEO Metadata
-export const metadata: Metadata = {
+export const metadata = {
   title: "Gemini 2.5 Flash: Budget AI Model Guide 2026 | Fast, Cheap, and Powerful",
   description: "Master Gemini 2.5 Flash, Google's budget AI model for 2026. Learn how this lightning-fast, cost-effective model handles multimodal tasks, long context windows, and real-time applications at 80% lower cost than GPT-4.",
   keywords: [
