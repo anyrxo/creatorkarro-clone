@@ -524,7 +524,7 @@ const schema = generateBlogPostSchema({
                     </ul>
                     <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-lg p-3">
                       <p className="text-xs text-gray-300">
-                        <strong className="text-white">When to use:</strong> <50M tokens/month (cheaper than self-hosting), China compliance required, rapid prototyping
+                        <strong className="text-white">When to use:</strong> &lt;50M tokens/month (cheaper than self-hosting), China compliance required, rapid prototyping
                       </p>
                     </div>
                   </div>
