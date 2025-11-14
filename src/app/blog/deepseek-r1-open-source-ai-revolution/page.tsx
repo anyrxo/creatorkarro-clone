@@ -495,7 +495,7 @@ Final Answer: Founder dilution is 25% (ownership drops from 60% to 45%).`}
                     <ul className="space-y-2 text-gray-300 text-sm ml-6">
                       <li>• <strong className="text-white">Creative writing:</strong> Poetry, storytelling, marketing copy (doesn't require reasoning, just creativity)</li>
                       <li>• <strong className="text-white">Real-time conversation:</strong> Slow inference (28 tokens/sec vs GPT-4's 85 tokens/sec) makes chat UX sluggish</li>
-                      <li>• <strong className="text-white">Simple queries:</strong> "What's the weather?" doesn't need 850-token reasoning chain (use GPT-4 for < 5-step tasks)</li>
+                      <li>• <strong className="text-white">Simple queries:</strong> "What's the weather?" doesn't need 850-token reasoning chain (use GPT-4 for &lt; 5-step tasks)</li>
                       <li>• <strong className="text-white">Ambiguous problems:</strong> Reasoning requires clear problem definition—vague questions produce 2,000-token chains exploring all possibilities</li>
                       <li>• <strong className="text-white">Image/video analysis:</strong> R1 is text-only (no multimodal capabilities yet—R2 rumors suggest vision coming)</li>
                     </ul>

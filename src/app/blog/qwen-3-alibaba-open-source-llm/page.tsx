@@ -302,7 +302,7 @@ const schema = generateBlogPostSchema({
                       <tr className="border-b border-zinc-800">
                         <td className="py-3 px-4">Commercial use</td>
                         <td className="py-3 px-4 text-green-400">✓ Unlimited</td>
-                        <td className="py-3 px-4 text-green-400">✓ <700M MAU</td>
+                        <td className="py-3 px-4 text-green-400">✓ &lt;700M MAU</td>
                         <td className="py-3 px-4 text-yellow-400">✓ With fees</td>
                       </tr>
                       <tr className="border-b border-zinc-800">
