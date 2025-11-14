@@ -389,7 +389,7 @@ export default function MakeAppAutomationPage() {
                           <h4 className="text-xl font-bold text-white mb-2">Filter</h4>
                           <p className="text-gray-300 mb-3">
                             A condition between modules that determines whether execution continues. If the filter condition is false, the scenario stops at that point.
-                            Example: "Continue only if order total > $100."
+                            Example: "Continue only if order total &gt; $100."
                           </p>
                           <div className="bg-zinc-800 rounded px-3 py-1 inline-block">
                             <span className="text-orange-300 text-sm">= "Conditional logic" - placed between modules</span>
