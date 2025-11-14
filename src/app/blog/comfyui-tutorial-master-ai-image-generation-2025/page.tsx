@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
-import FAQSchema from '@/components/FAQSchema'
+import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, Zap, Brain, Code, Image as ImageIcon, TrendingUp, BarChart3, Target, CheckCircle, Cpu, GitBranch } from 'lucide-react'
 
 // Comprehensive SEO Metadata

@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { Activity, MessageCircle, TrendingUp, Eye, Target, Users, Zap, CheckCircle } from 'lucide-react'
-import { FAQSchema } from '@/components/FAQSchema'
+import { FAQSchema } from '@/components/seo/FAQSchema'
 
 export const metadata: Metadata = {
   title: "Instagram Story Marketing 2026: 7 Advanced Engagement Tactics (Case Studies: 340% Reply Rate Boost)",

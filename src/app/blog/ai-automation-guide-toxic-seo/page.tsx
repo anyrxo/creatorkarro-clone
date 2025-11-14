@@ -1,4 +1,4 @@
-'use client'
+
 
 import React from 'react'
 import Link from 'next/link'
@@ -694,7 +694,7 @@ export default function AIAutomationGuidePage() {
             </li>
             <li className="flex items-start gap-4">
               <span className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</span>
-              <span><strong className="text-white">Document your repetitive tasks:</strong> Spend 30 minutes listing everything that takes >30 mins daily</span>
+              <span><strong className="text-white">Document your repetitive tasks:</strong> Spend 30 minutes listing everything that takes &gt;30 mins daily</span>
             </li>
             <li className="flex items-start gap-4">
               <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</span>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Code, Layers, Rocket, Zap, TrendingUp, FileText } from 'lucide-react'
-import FAQSchema from '@/components/FAQSchema'
+import FAQSchema from '@/components/seo/FAQSchema'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {

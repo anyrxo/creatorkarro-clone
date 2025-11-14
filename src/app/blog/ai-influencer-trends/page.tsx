@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { TrendingUp, Sparkles, Users, Zap, DollarSign, Globe, Brain, Heart, Target, CheckCircle, MessageCircle, Rocket, Eye } from 'lucide-react'
-import { FAQSchema } from '@/components/FAQSchema'
+import FAQSchema from '@/components/seo/FAQSchema'
 
 export const metadata: Metadata = {
   title: "AI Influencer Trends 2026: $15B Virtual Creator Market Analysis (7 Game-Changing Trends)",

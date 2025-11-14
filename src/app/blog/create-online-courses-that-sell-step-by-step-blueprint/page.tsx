@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
-import FAQSchema from '@/components/FAQSchema'
+import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, DollarSign, Users, TrendingUp, Target, BarChart3, BookOpen, Video, Award } from 'lucide-react'
 
 // Comprehensive SEO Metadata
@@ -216,7 +216,7 @@ const schema = generateBlogPostSchema({
                     <td className="py-3 px-4 font-semibold">Teachable</td>
                     <td className="py-3 px-4">Free ($5%+$1/sale)</td>
                     <td className="py-3 px-4 text-red-400">5% (Free), 0% ($159/mo)</td>
-                    <td className="py-3 px-4 text-green-400">Beginners, <$10K/mo</td>
+                    <td className="py-3 px-4 text-green-400">Beginners, &lt;$10K/mo</td>
                   </tr>
                   <tr className="border-b border-zinc-800">
                     <td className="py-3 px-4 font-semibold">Thinkific</td>

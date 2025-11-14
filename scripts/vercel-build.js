@@ -102,6 +102,7 @@ module.exports = nextConfig;
         NODE_OPTIONS: '--max-old-space-size=8192',
         NEXT_TELEMETRY_DISABLED: '1',
         VERCEL_FORCE_NO_BUILD_CACHE: '1',
+        TURBOPACK: '0',
       }
     });
     
