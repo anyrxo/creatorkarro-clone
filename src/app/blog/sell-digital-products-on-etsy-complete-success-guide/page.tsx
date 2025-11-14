@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, DollarSign, Target, Zap, ShoppingCart, Package } from 'lucide-react'
 
 // Advanced SEO Metadata Export
-export const metadata: Metadata = {
+export const metadata = {
   title: "Sell Digital Products on Etsy: Complete 2026 Success Guide with Revenue Models",
   description: "Master Etsy digital products in 2026. Comprehensive guide covering best-selling niches, SEO optimization, platform comparisons, cost analysis, and realistic revenue timelines ($500-$8K/month case studies).",
   keywords: ["sell digital products etsy", "etsy digital products", "etsy passive income", "digital downloads etsy", "etsy printables", "etsy templates", "etsy planner templates", "etsy SEO optimization", "etsy shop profitability", "digital product niches", "etsy vs gumroad", "etsy listing optimization", "etsy fees calculator", "print on demand etsy", "canva templates etsy", "wedding invitation templates", "budget planner printables", "etsy revenue expectations", "passive income etsy 2026"],
@@ -67,14 +66,14 @@ export const metadata: Metadata = {
 
 export default function SellDigitalProductsOnEtsyCompleteSuccessGuide() {
   const jsonLd = generateBlogPostSchema({
-    headline: "Sell Digital Products on Etsy: Complete 2026 Success Guide with Revenue Models",
+    title: "Sell Digital Products on Etsy: Complete 2026 Success Guide with Revenue Models",
     description: "Master Etsy digital products in 2026. Comprehensive guide covering best-selling niches, SEO optimization, platform comparisons, cost analysis, and realistic revenue timelines ($500-$8K/month case studies).",
-    datePublished: "2026-02-22T10:00:00.000Z",
-    dateModified: "2026-02-22T10:00:00.000Z",
-    authorName: "Anyro",
-    authorUrl: "https://iimagined.ai",
-    images: ["https://iimagined.ai/images/blog/sell-digital-products-on-etsy-complete-success-guide-og.jpg"],
-    articleSection: "E-Commerce",
+    slug: "sell-digital-products-on-etsy-complete-success-guide",
+    publishedTime: "2026-02-22T10:00:00.000Z",
+    modifiedTime: "2026-02-22T10:00:00.000Z",
+    author: "Anyro",
+    image: "https://iimagined.ai/images/blog/sell-digital-products-on-etsy-complete-success-guide-og.jpg",
+    category: "E-Commerce",
     keywords: ["sell digital products etsy", "etsy digital products", "etsy passive income", "digital downloads etsy"]
   })
 
