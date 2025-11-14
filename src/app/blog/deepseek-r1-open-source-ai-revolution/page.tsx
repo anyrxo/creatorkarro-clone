@@ -218,7 +218,7 @@ const schema = generateBlogPostSchema({
                       <strong className="text-white">o1's black box problem:</strong> You ask "What's 15% of 240?" → o1 responds "36" → you have no idea if it calculated correctly or got lucky guessing. For high-stakes decisions (approving a $50M acquisition, diagnosing cancer, validating bridge engineering), blind faith in AI isn't acceptable.
                     </p>
                     <p className="text-gray-300 mb-4">
-                      <strong className="text-white">R1's transparency:</strong> You ask same question → R1 shows: <code>&lt;thinking&gt;</code> Step 1: Convert 15% to decimal = 0.15. Step 2: Multiply 240 × 0.15 = 36. Step 3: Verify: 36 ÷ 240 = 0.15 = 15% ✓ `</thinking>` Final answer: 36.
+                      <strong className="text-white">R1's transparency:</strong> You ask same question → R1 shows: <code>&lt;thinking&gt;</code> Step 1: Convert 15% to decimal = 0.15. Step 2: Multiply 240 × 0.15 = 36. Step 3: Verify: 36 ÷ 240 = 0.15 = 15% ✓ </thinking> Final answer: 36.
                     </p>
                     <p className="text-gray-300">
                       <strong className="text-white">Why this matters:</strong> Financial auditors can review R1's DCF model calculations step-by-step (SOX compliance). Lawyers can cite R1's contract analysis reasoning in court filings (admissible as evidence with transparent methodology). Doctors can explain to patients exactly how R1 reached a diagnosis recommendation. <strong className="text-emerald-400">Trust through transparency</strong>.

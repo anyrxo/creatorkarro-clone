@@ -637,7 +637,7 @@ const schema = generateBlogPostSchema({
                 <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-5">
                   <h4 className="text-lg font-semibold text-blue-400 mb-2">✅ Choose Janus Pro 7B When:</h4>
                   <ul className="text-gray-300 text-sm space-y-1.5 list-disc list-inside">
-                    <li>Processing >10K images/month (cost savings vs API models)</li>
+                    <li>Processing &gt;10K images/month (cost savings vs API models)</li>
                     <li>Document-heavy workflows (invoices, receipts, forms, contracts)</li>
                     <li>Need data privacy (self-hosted = no data leaves your infrastructure)</li>
                     <li>Want to fine-tune on domain-specific data (open weights enable customization)</li>
@@ -717,7 +717,7 @@ const schema = generateBlogPostSchema({
                   <div className="mb-4">
                     <h4 className="text-lg font-semibold text-white mb-2">The Solution</h4>
                     <p className="text-gray-300 text-sm mb-3">
-                      Deployed Janus Pro 7B pipeline on AWS (1x g5.2xlarge GPU instance): <strong className="text-blue-400">1) Email ingestion</strong> → invoices auto-extracted from email attachments. <strong className="text-blue-400">2) Janus Pro extraction</strong> → model reads image/PDF, extracts invoice #, vendor name, date, line items (description/quantity/price), subtotal, tax, total. <strong className="text-blue-400">3) Validation layer</strong> → cross-reference with purchase orders, flag mismatches ("Line item 3 quantity: invoice shows 12 units, PO shows 8 units"). <strong className="text-blue-400">4) Auto-populate ERP</strong> → if confidence >95% and no flags, auto-enter into QuickBooks; otherwise route to human review queue.
+                      Deployed Janus Pro 7B pipeline on AWS (1x g5.2xlarge GPU instance): <strong className="text-blue-400">1) Email ingestion</strong> → invoices auto-extracted from email attachments. <strong className="text-blue-400">2) Janus Pro extraction</strong> → model reads image/PDF, extracts invoice #, vendor name, date, line items (description/quantity/price), subtotal, tax, total. <strong className="text-blue-400">3) Validation layer</strong> → cross-reference with purchase orders, flag mismatches ("Line item 3 quantity: invoice shows 12 units, PO shows 8 units"). <strong className="text-blue-400">4) Auto-populate ERP</strong> → if confidence &gt;95% and no flags, auto-enter into QuickBooks; otherwise route to human review queue.
                     </p>
                     <div className="bg-zinc-900/50 rounded-lg p-4">
                       <p className="text-xs text-gray-400 mb-2">Prompt engineering (simplified):</p>

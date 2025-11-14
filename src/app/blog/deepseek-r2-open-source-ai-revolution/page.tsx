@@ -604,7 +604,7 @@ Step 4: Verify logic.
                 <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-5">
                   <h4 className="text-lg font-semibold text-emerald-400 mb-2">✅ Choose DeepSeek R2 When:</h4>
                   <ul className="text-gray-300 text-sm space-y-1.5 list-disc list-inside">
-                    <li>Processing >1M reasoning tokens/month (cost savings vs API models)</li>
+                    <li>Processing &gt;1M reasoning tokens/month (cost savings vs API models)</li>
                     <li>Need transparent, auditable reasoning chains for compliance/regulation</li>
                     <li>Want to fine-tune on domain-specific data (legal, scientific, financial)</li>
                     <li>Require data privacy (self-hosted = data never leaves your infrastructure)</li>
