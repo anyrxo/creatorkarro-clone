@@ -722,7 +722,7 @@ const schema = generateBlogPostSchema({
                     <div className="bg-zinc-900/50 rounded-lg p-4">
                       <p className="text-sm font-semibold text-red-400 mb-2">❌ Bad Prompt Structure</p>
                       <pre className="text-xs text-gray-300 bg-black/30 rounded p-3 overflow-x-auto">
-{`User question: ${question}
+{`User question: [Variable - changes every time]
 
 System instructions: You are a support bot...
 Knowledge base: Product FAQ (50K tokens)...`}
@@ -735,7 +735,7 @@ Knowledge base: Product FAQ (50K tokens)...`}
 {`System instructions: You are a support bot...
 Knowledge base: Product FAQ (50K tokens)...
 
-User question: ${question}`}
+User question: [Variable - changes every time]`}
                       </pre>
                       <p className="text-xs text-gray-400 mt-2">First 50K+ tokens identical across calls—cache hits 100% of the time.</p>
                     </div>
