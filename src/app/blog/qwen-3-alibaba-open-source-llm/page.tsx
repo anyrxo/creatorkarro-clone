@@ -535,11 +535,11 @@ const schema = generateBlogPostSchema({
                       <li>• <strong className="text-white">Pricing:</strong> $3-8/hour for A100 instance (p4d.24xlarge on AWS)</li>
                       <li>• <strong className="text-white">Latency:</strong> 300-500ms (region-dependent)</li>
                       <li>• <strong className="text-white">Advantages:</strong> Full control, global CDN integration, AWS/Azure ecosystem compatibility</li>
-                      <li>• <strong className="text-emerald-400">Best for:</strong> Enterprise apps, global users, >100M tokens/month workloads</li>
+                      <li>• <strong className="text-emerald-400">Best for:</strong> Enterprise apps, global users, &gt;100M tokens/month workloads</li>
                     </ul>
                     <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg p-3">
                       <p className="text-xs text-gray-300">
-                        <strong className="text-white">When to use:</strong> >100M tokens/month (self-hosting cost-effective), existing AWS/Azure infrastructure, global user base
+                        <strong className="text-white">When to use:</strong> &gt;100M tokens/month (self-hosting cost-effective), existing AWS/Azure infrastructure, global user base
                       </p>
                     </div>
                   </div>
