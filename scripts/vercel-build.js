@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * VERCEL-OPTIMIZED BUILD SCRIPT FOR 550 BLOG POSTS
+ * VERCEL-OPTIMIZED BUILD SCRIPT
  * Handles large-scale Next.js builds efficiently
  */
 
@@ -27,17 +27,16 @@ process.env.NEXT_PHASE = 'phase-production-build';
 
 async function optimizedBuild() {
   try {
-    console.log('📊 Blog Stats:');
-    console.log('- Total Blog Posts: 550');
-    console.log('- Build Optimization: Active');
-    
     // Check if we have too many blog posts for static generation
     const blogDir = path.join(__dirname, '../src/app/blog');
-    const blogPosts = fs.readdirSync(blogDir).filter(dir => 
-      fs.statSync(path.join(blogDir, dir)).isDirectory() && 
+    const blogPosts = fs.readdirSync(blogDir).filter(dir =>
+      fs.statSync(path.join(blogDir, dir)).isDirectory() &&
       dir !== '[slug]'
     );
-    
+
+    console.log('📊 Blog Stats:');
+    console.log(`- Total Blog Posts: ${blogPosts.length}`);
+    console.log('- Build Optimization: Active');
     console.log(`📁 Found ${blogPosts.length} blog directories`);
     
     if (blogPosts.length > 500) {
@@ -110,7 +109,7 @@ module.exports = nextConfig;
       if (code === 0) {
         console.log('✅ Vercel build completed successfully!');
         console.log('📊 Build Stats:');
-        console.log('- Blog Posts: 550 (dynamically rendered)');
+        console.log(`- Blog Posts: ${blogPosts.length} (dynamically rendered)`);
         console.log('- Route Optimization: Active');
         console.log('- Memory Usage: Optimized');
         
