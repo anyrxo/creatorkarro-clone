@@ -11,7 +11,7 @@
     "start-live": "NEXT_CONFIG_PATH=next.config.dev.js next start -H 0.0.0.0",
     "build-live": "NEXT_CONFIG_PATH=next.config.dev.js next build",
     "production": "./production-startup.sh",
-    "build": "node scripts/vercel-build.js",
+    "build": "next build",
     "build-original": "node scripts/silent-build.js",
     "build-bash": "./build.sh",
     "build-smart": "node scripts/build-with-ignore.js",
