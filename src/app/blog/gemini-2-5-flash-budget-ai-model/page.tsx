@@ -693,7 +693,7 @@ const schema = generateBlogPostSchema({
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-red-400 mt-2 flex-shrink-0" />
-                    <p className="text-gray-300"><strong className="text-red-400">Use GPT-4/Claude when:</strong> Single high-stakes tasks, accuracy >95% required, creative/unique output needed, legal/medical/financial consequences of errors, research-level reasoning required.</p>
+                    <p className="text-gray-300"><strong className="text-red-400">Use GPT-4/Claude when:</strong> Single high-stakes tasks, accuracy &gt;95% required, creative/unique output needed, legal/medical/financial consequences of errors, research-level reasoning required.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-blue-400 mt-2 flex-shrink-0" />
@@ -782,7 +782,7 @@ if (response.confidence < 0.85) {
                   </div>
                   <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg p-4">
                     <p className="text-gray-300 text-sm">
-                      <strong className="text-white">Prevention:</strong> Set up Google Cloud billing alerts for >20% week-over-week increase. Log token usage per request type. Review top 10 most expensive endpoints monthly.
+                      <strong className="text-white">Prevention:</strong> Set up Google Cloud billing alerts for &gt;20% week-over-week increase. Log token usage per request type. Review top 10 most expensive endpoints monthly.
                     </p>
                   </div>
                 </div>

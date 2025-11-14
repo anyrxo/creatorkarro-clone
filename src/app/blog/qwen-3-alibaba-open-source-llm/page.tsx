@@ -429,7 +429,7 @@ const schema = generateBlogPostSchema({
                         <li>• <strong className="text-orange-400">VRAM Required:</strong> 4.5GB</li>
                         <li>• <strong className="text-white">Hardware:</strong> RTX 3060 (12GB), M1 MacBook Pro (16GB), or any modern laptop</li>
                         <li>• <strong className="text-white">Speed:</strong> ~35 tokens/sec (slight slowdown vs. FP16)</li>
-                        <li>• <strong className="text-white">Quality loss:</strong> <2% accuracy drop (negligible for most tasks)</li>
+                        <li>• <strong className="text-white">Quality loss:</strong> &lt;2% accuracy drop (negligible for most tasks)</li>
                         <li>• <strong className="text-emerald-400">Perfect for:</strong> Local testing, personal AI assistant, offline translation</li>
                       </ul>
                     </div>
