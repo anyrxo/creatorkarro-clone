@@ -106,44 +106,6 @@ export default function HowToSellTemplates() {
     </section>
 
       {/* Course CTA #1 */}
-      <section className="py-12 px-4">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-8 border border-blue-500/20">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">💎</span>
-              <h3 className="text-2xl font-bold text-white">Master Digital Products</h3>
-            </div>
-            <p className="text-gray-300 mb-6">Get my complete template creation system with 50+ done-for-you templates, sales page swipe files, and the exact strategies I used to build a $47K/month template business.</p>
-
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400">$5,959</div>
-                <div className="text-sm text-gray-400">Total Value</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400">50+</div>
-                <div className="text-sm text-gray-400">Templates Included</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400">$189</div>
-                <div className="text-sm text-gray-400">Today Only</div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <Link href="/digital-products" className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition-all">
-                Get Complete Digital Products Course - Just $189
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
-              <p className="text-sm text-gray-400 mt-3">
-                Lifetime Access • 30-Day Money-Back Guarantee • Join 18,900+ Students
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

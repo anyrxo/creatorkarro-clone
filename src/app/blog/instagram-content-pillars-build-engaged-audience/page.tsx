@@ -456,48 +456,6 @@ export default function InstagramContentPillars() {
       </section>
 
       {/* First CTA */}
-      <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-r from-green-600/20 to-blue-600/20 border border-green-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Master Instagram Growth with Proven Content Strategies
-            </h2>
-
-            <p className="text-xl text-gray-400 mb-6">
-              Access content pillar templates, 90-day content calendars, and the full strategy that's helped 12,000+ creators build engaged audiences
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">Content pillar templates</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">90-day calendars</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">Growth frameworks</span>
-              </div>
-            </div>
-
-            <Link
-              href="/instagram-ignited"
-              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
-            >
-              Get Instagram Ignited - $189
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-
-            <p className="text-gray-500 mt-6 text-sm">
-              Never run out of content ideas again
-            </p>
-          </div>
-        </div>
-      </section>
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
@@ -1015,48 +973,6 @@ export default function InstagramContentPillars() {
       </section>
 
       {/* Second CTA */}
-      <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-r from-green-600/20 to-blue-600/20 border border-green-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Get the Complete Instagram Growth System
-            </h2>
-
-            <p className="text-xl text-gray-400 mb-6">
-              Access content pillar templates, 90-day content calendars, and the full strategy that's helped 12,000+ creators build engaged audiences
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">Content systems</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">Calendar templates</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">Strategy guides</span>
-              </div>
-            </div>
-
-            <Link
-              href="/instagram-ignited"
-              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
-            >
-              Get Instagram Ignited - $189
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-
-            <p className="text-gray-500 mt-6 text-sm">
-              Never run out of content ideas again
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Smart CTA - All Access Pass */}
       <SmartCTA blogSlug="instagram-content-pillars-build-engaged-audience" />

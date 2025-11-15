@@ -193,59 +193,6 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section className="section-spacing bg-zinc-900/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                        Ready to Master AI Influencer Creation?
-                    </h3>
-                    <p className="text-xl text-gray-300 mb-2">
-                        Join AI Influencers Course - Trusted by 127K+ Students
-                    </p>
-                    <p className="text-lg text-blue-300 mb-8">
-                        Learn the exact system that generates $2K-8K/month per AI influencer
-                    </p>
-
-                    <div className="grid md:grid-cols-4 gap-4 mb-8 text-center">
-                        <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
-                            <div className="text-2xl font-bold text-blue-400">ComfyUI</div>
-                            <div className="text-sm text-gray-400">Mastery</div>
-                        </div>
-                        <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
-                            <div className="text-2xl font-bold text-green-400">$5,959</div>
-                            <div className="text-sm text-gray-400">Total Value</div>
-                        </div>
-                        <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
-                            <div className="text-2xl font-bold text-purple-400">Lifetime</div>
-                            <div className="text-sm text-gray-400">Access</div>
-                        </div>
-                        <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
-                            <div className="text-2xl font-bold text-yellow-400">30-Day</div>
-                            <div className="text-sm text-gray-400">Guarantee</div>
-                        </div>
-                    </div>
-
-                    <div className="mb-6">
-                        <div className="text-4xl font-bold text-white mb-2">
-                            Get AI Influencers for $189
-                        </div>
-                        <div className="text-lg text-gray-400 line-through mb-2">$5,959 Value</div>
-                        <div className="text-green-400 font-semibold">Save $5,770 Today</div>
-                    </div>
-
-                    <Link href="/ai-influencers" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
-                        Start Creating AI Influencers
-                    </Link>
-
-                    <p className="text-sm text-gray-400">
-                        Lifetime Access • 30-Day Money-Back Guarantee • Join 127K+ Students
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
       <section
 
         className="section-spacing"
@@ -994,55 +941,6 @@ PNGInfo Saver → Embed metadata for tracking`}</pre>
                             <span>Track metrics and iterate constantly</span>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-      <section className="section-spacing bg-zinc-900/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                        Ready to Build Your AI Influencer Empire?
-                    </h3>
-                    <p className="text-xl text-gray-300 mb-2">
-                        Get Complete ComfyUI Workflows & Character Templates
-                    </p>
-                    <p className="text-lg text-blue-300 mb-8">
-                        Join 127K+ students creating AI influencers that generate passive income
-                    </p>
-
-                    <div className="grid md:grid-cols-3 gap-4 mb-8 text-center">
-                        <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
-                            <div className="text-2xl font-bold text-blue-400">50+ Workflows</div>
-                            <div className="text-sm text-gray-400">Ready to use</div>
-                        </div>
-                        <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
-                            <div className="text-2xl font-bold text-green-400">10+ Characters</div>
-                            <div className="text-sm text-gray-400">Pre-trained LoRAs</div>
-                        </div>
-                        <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
-                            <div className="text-2xl font-bold text-purple-400">Live Support</div>
-                            <div className="text-sm text-gray-400">Private community</div>
-                        </div>
-                    </div>
-
-                    <div className="mb-6">
-                        <div className="text-4xl font-bold text-white mb-2">
-                            Get AI Influencers for $189
-                        </div>
-                        <div className="text-lg text-gray-400 line-through mb-2">$5,959 Value</div>
-                        <div className="text-green-400 font-semibold">Limited Time: Save $5,770</div>
-                    </div>
-
-                    <Link href="/ai-influencers" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
-                        Start Creating AI Influencers
-                    </Link>
-
-                    <p className="text-sm text-gray-400">
-                        Lifetime Access • 30-Day Money-Back Guarantee • Join 127K+ Students
-                    </p>
                 </div>
             </div>
         </div>

@@ -328,48 +328,6 @@ export default function InstagramHashtagStrategy() {
       </section>
 
       {/* First CTA */}
-      <section className="section-spacing bg-gradient-to-b from-dark to-zinc-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Master Instagram Growth with the Complete System
-            </h2>
-
-            <p className="text-xl text-gray-400 mb-6">
-              Get the full Instagram growth playbook including hashtag research tools, content templates, and the exact strategies used by top creators
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">Hashtag research frameworks</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">Content templates</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">Growth strategies</span>
-              </div>
-            </div>
-
-            <Link
-              href="/instagram-ignited"
-              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
-            >
-              Get Instagram Ignited - $189
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-
-            <p className="text-gray-500 mt-6 text-sm">
-              Join 12,000+ creators growing with proven strategies
-            </p>
-          </div>
-        </div>
-      </section>
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">

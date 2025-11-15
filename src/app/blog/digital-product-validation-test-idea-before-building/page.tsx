@@ -597,46 +597,6 @@ export default function DigitalProductValidationTestYourIdeaBeforeBuilding() {
                   </div>
                 </div>
 
-                {/* Course CTA #1 */}
-                <div className="my-12">
-                  <div className="max-w-4xl mx-auto bg-gradient-to-br from-purple-600/20 via-blue-600/20 to-green-600/20 rounded-2xl p-8 md:p-12 border border-purple-500/30">
-                    <div className="text-center">
-                      <div className="inline-block bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-4">
-                        <span className="text-purple-400 font-semibold text-sm">⚡ VALIDATION MASTERY</span>
-                      </div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                        Master Digital Product Validation
-                      </h3>
-                      <p className="text-gray-300 mb-6 text-lg">
-                        Get the complete validation system with templates, frameworks, and case studies proven by 127K+ students
-                      </p>
-                      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-                        <div className="text-center">
-                          <div className="text-3xl font-bold text-green-400">$189</div>
-                          <div className="text-sm text-gray-400">Full course access</div>
-                        </div>
-                        <div className="hidden sm:block text-gray-600">•</div>
-                        <div className="text-center">
-                          <div className="text-xl text-gray-400"><span className="line-through">$5,959</span></div>
-                          <div className="text-sm text-purple-400 font-semibold">97% Off Today</div>
-                        </div>
-                      </div>
-                      <Link
-                        href="/digital-products"
-                        className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
-                      >
-                        Start Validating Your Ideas
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
-                      </Link>
-                      <p className="text-gray-500 text-sm mt-4">
-                        ✓ Pre-sell templates ✓ Survey frameworks ✓ MVP blueprints ✓ Lifetime access
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
                 {/* Strategy 4: MVP Approach */}
                 <div className="bg-gray-800/50 p-8 rounded-lg mb-8">
                   <h2 className="text-3xl font-bold text-white mb-4 flex items-center">
@@ -853,60 +813,6 @@ export default function DigitalProductValidationTestYourIdeaBeforeBuilding() {
                       <p className="text-gray-300 leading-relaxed">
                         This honesty builds trust. Our students have a 98% delivery rate on pre-sold products because the accountability of paying customers is a powerful motivator.
                       </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Course CTA */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                      Master Product Validation in Digital Products Mastery
-                    </h3>
-                    <p className="text-xl text-gray-300 mb-2">
-                      Get THE definitive course on creating and selling digital products
-                    </p>
-                    <p className="text-lg text-blue-300 mb-8">
-                      Complete validation frameworks, pre-sell templates, and launch strategies used by 127K+ students to generate millions
-                    </p>
-
-                    <div className="grid md:grid-cols-4 gap-4 mb-8 text-center">
-                      <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
-                        <div className="text-2xl font-bold text-blue-400">THE</div>
-                        <div className="text-sm text-gray-400">Authority</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
-                        <div className="text-2xl font-bold text-green-400">$5,959</div>
-                        <div className="text-sm text-gray-400">Total Value</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
-                        <div className="text-2xl font-bold text-purple-400">Lifetime</div>
-                        <div className="text-sm text-gray-400">Access</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
-                        <div className="text-2xl font-bold text-yellow-400">30-Day</div>
-                        <div className="text-sm text-gray-400">Guarantee</div>
-                      </div>
-                    </div>
-
-                    <div className="mb-6">
-                      <div className="text-4xl font-bold text-white mb-2">
-                        Get Digital Products Mastery for $189
-                      </div>
-                      <div className="text-lg text-gray-400 line-through mb-2">$5,959 Value</div>
-                      <div className="text-green-400 font-semibold">Save $5,770 Today</div>
-                    </div>
-
-                    <Link href="/digital-products-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
-                      Master Product Validation Now
-                    </Link>
-
-                    <p className="text-sm text-gray-400">
-                      ✅ Lifetime Access • ✅ 30-Day Money-Back Guarantee • ✅ Join 127K+ Successful Students
-                    </p>
-
-                    <div className="mt-6 p-4 bg-yellow-600/10 border border-yellow-600/30 rounded-lg">
-                      <p className="text-yellow-300 font-semibold">⚠️ LIMITED TIME: Master the validation strategies that prevent $50K+ failures</p>
                     </div>
                   </div>
                 </div>
