@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -867,40 +869,11 @@ export default function InstagramGrowth2025() {
                   </div>
                 </div>
 
-                {/* Course CTA #2 - Bottom 25% */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                      Master Instagram Growth
-                    </h3>
-                    <p className="text-xl text-gray-300 mb-8">
-                      Join Instagram Ignited - Grow from 0 to 100K+ followers with our proven viral content system
-                    </p>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="instagram-growth-2025" />
 
-                    <div className="grid md:grid-cols-4 gap-4 mb-8">
-                      <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
-                        <div className="text-2xl font-bold text-blue-400">500K+</div>
-                        <div className="text-sm text-gray-400">Followers Grown</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
-                        <div className="text-2xl font-bold text-green-400">$2.5M+</div>
-                        <div className="text-sm text-gray-400">Revenue</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
-                        <div className="text-2xl font-bold text-purple-400">2,000+</div>
-                        <div className="text-sm text-gray-400">Students</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
-                        <div className="text-2xl font-bold text-yellow-400">30-Day</div>
-                        <div className="text-sm text-gray-400">Guarantee</div>
-                      </div>
-                    </div>
-
-                    <Link href="/instagram-ignited" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                      🚀 Get Instagram Ignited →
-                    </Link>
-                  </div>
-                </div>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="instagram-growth-2025" limit={3} />
               </div>
               
               {/* Related Articles Section */}

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -63,11 +65,11 @@ const schema = generateBlogPostSchema({
   title: metadata.title,
   description: metadata.description,
   slug: "ftmo-challenge-guide-pass-first-attempt-2026",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Futures Trading",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
+  keywords: metadata.keywords as string[] || [],
+  image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
 
@@ -239,47 +241,8 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      {/* Course CTA #1 */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-green-600/20 via-blue-600/20 to-purple-600/20 rounded-2xl p-8 md:p-12 border border-green-500/30">
-            <div className="text-center">
-              <div className="inline-block bg-green-500/10 border border-green-500/30 rounded-full px-4 py-2 mb-4">
-                <span className="text-green-400 font-semibold text-sm">📈 PASS FTMO CHALLENGE</span>
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Master Prop Firm Trading & Get Funded
-              </h3>
-              <p className="text-gray-300 mb-6 text-lg">
-                Complete course with Phase 1 & 2 strategies, risk management systems, and proven trading psychology
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-green-400">$189</div>
-                  <div className="text-sm text-gray-400">One-time payment</div>
-                </div>
-                <div className="hidden sm:block text-gray-600">•</div>
-                <div className="text-center">
-                  <div className="text-xl text-gray-400"><span className="line-through">$3,500</span></div>
-                  <div className="text-sm text-green-400 font-semibold">Save $3,311</div>
-                </div>
-              </div>
-              <Link
-                href="/futures-trading"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
-              >
-                Get The Complete Trading Course
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
-              <p className="text-gray-500 text-sm mt-4">
-                ✓ FTMO Phase 1 & 2 blueprints ✓ Risk calculators ✓ Daily routines
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="ftmo-challenge-guide-pass-first-attempt-2025" />
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
@@ -711,47 +674,8 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      {/* Course CTA #2 */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-600/20 via-green-600/20 to-emerald-600/20 rounded-2xl p-8 md:p-12 border border-blue-500/30">
-            <div className="text-center">
-              <div className="inline-block bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-4">
-                <span className="text-blue-400 font-semibold text-sm">💪 GET FUNDED NOW</span>
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Pass FTMO & Start Trading with $100K+
-              </h3>
-              <p className="text-gray-300 mb-6 text-lg">
-                Learn the exact strategies, routines, and psychology used by the 23% who pass first time
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-green-400">$189</div>
-                  <div className="text-sm text-gray-400">Complete course</div>
-                </div>
-                <div className="hidden sm:block text-gray-600">•</div>
-                <div className="text-center">
-                  <div className="text-xl text-gray-400"><span className="line-through">$3,500</span></div>
-                  <div className="text-sm text-blue-400 font-semibold">95% Off Today</div>
-                </div>
-              </div>
-              <Link
-                href="/futures-trading"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105"
-              >
-                Get Funded Faster
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
-              <p className="text-gray-500 text-sm mt-4">
-                ✓ Phase 1 & 2 strategies ✓ Trading psychology modules ✓ Risk calculators
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="ftmo-challenge-guide-pass-first-attempt-2025" limit={3} />
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">

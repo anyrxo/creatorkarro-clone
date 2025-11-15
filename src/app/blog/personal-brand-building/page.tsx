@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -63,11 +65,11 @@ export default function PersonalBrandBuilding() {
   title: metadata.title,
   description: metadata.description,
   slug: "personal-brand-building",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Technology",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
+  keywords: metadata.keywords as string[] || [],
+  image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
           
@@ -4038,30 +4040,11 @@ If you're struggling right now, you're one decision away from your breakthrough.
         </div>
       </section>
 
-      <section
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="personal-brand-building" />
 
-        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
-      >
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Build Your Magnetic Personal Brand
-        </h2>
-
-        <p className="text-xl text-gray-400 mb-8">
-            Get the complete blueprint and 1-on-1 guidance
-        </p>
-
-        <Link
-            href="/creator-personal-brand"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all"
-          >
-            Start Building Your Brand
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-        </Link>
-    </div>
-</section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="personal-brand-building" limit={3} />
 </div>
 )
 }

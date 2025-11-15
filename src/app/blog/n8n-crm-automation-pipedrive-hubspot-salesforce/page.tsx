@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "N8N CRM Automation 2026: Pipedrive, HubSpot, Salesforce Integration - Save 15 Hours/Week",
@@ -66,11 +68,11 @@ export default function N8nCRMAutomation() {
     title: metadata.title,
     description: metadata.description,
     slug: "n8n-crm-automation-pipedrive-hubspot-salesforce",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -1662,41 +1664,11 @@ return [{
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Automate Your CRM & Close More Deals?
-          </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="n8n-crm-automation-pipedrive-hubspot-salesforce" />
 
-          <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-            Get complete CRM automation workflows for Pipedrive, HubSpot, and Salesforce. Save 15+ hours per week and close 28% more deals.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              href="/automation-empire"
-              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 hover:to-green-700 transition-all"
-            >
-              Get CRM Automation Course
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-
-            <Link
-              href="/blog/n8n-beginners-guide"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gray-600 text-white hover:bg-zinc-800 transition-all"
-            >
-              Start with N8N Basics
-            </Link>
-          </div>
-
-          <p className="text-sm text-gray-500 mt-6">
-            ✓ 4 Complete Workflows  ✓ JSON Templates  ✓ CRM Platform Guides  ✓ Lifetime Access
-          </p>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="n8n-crm-automation-pipedrive-hubspot-salesforce" limit={3} />
     </div>
   )
 }

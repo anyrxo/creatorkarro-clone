@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -62,11 +64,11 @@ export default function ShopifyAutomationAiPage() {
     title: metadata.title,
     description: metadata.description,
     slug: "shopify-automation-ai",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -895,20 +897,11 @@ export default function ShopifyAutomationAiPage() {
                 in this guide, you'll be well-equipped to implement successful automation solutions.
               </p>
               
-              <div className="bg-green-900 bg-opacity-30 border border-green-600 rounded-lg p-6 my-8">
-                <h3 className="text-xl font-semibold text-green-300 mb-4"> Ready to Get Started?</h3>
-                <p className="text-gray-300 mb-4">
-                  Take the next step in your automation journey with our comprehensive courses and resources.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/business-automation" className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors text-center">
-                    Read in E-commerce Business →
-                  </Link>
-                  <Link href="/blog" className="border border-green-600 text-green-300 px-6 py-3 rounded-lg font-semibold hover:bg-green-900 hover:bg-opacity-30 transition-colors text-center">
-                    Read More Guides
-                  </Link>
-                </div>
-              </div>
+              {/* Smart CTA - All Access Pass */}
+              <SmartCTA blogSlug="shopify-automation-ai" />
+
+              {/* Related Posts */}
+              <RelatedPosts currentSlug="shopify-automation-ai" limit={3} />
             </div>
           </div>
         </div>

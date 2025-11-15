@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { Zap, TrendingUp, Clock, DollarSign, Target, CheckCircle, MessageCircle, Rocket, Code, Users } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata: Metadata = {
   title: "ChatGPT Automation Tips 2026: 37 Hacks That Save 20+ Hours Weekly (Complete Guide with ROI)",
@@ -885,50 +887,11 @@ export default function ChatGPTAutomationTipsPage() {
             <FAQSchema faqs={faqs} />
           </section>
 
-          {/* CTA Section */}
-          <section className="bg-gradient-to-r from-green-600/20 to-emerald-600/20 border border-green-500/30 rounded-2xl p-8">
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to 10x Your Content Output?
-              </h2>
-              <p className="text-xl text-gray-300 mb-2">
-                Get complete training in <strong>AI Automations Course</strong>
-              </p>
-              <p className="text-lg text-green-300 mb-8">
-                Master ChatGPT automation, n8n workflows, Zapier integrations, and complete AI business systems. Join thousands automating their way to 6-figure businesses in 2026.
-              </p>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="chatgpt-automation-tips" />
 
-              <div className="grid md:grid-cols-4 gap-4 mb-8">
-                <div className="bg-black/30 p-4 rounded-lg border border-green-500/30">
-                  <div className="text-2xl font-bold text-green-400 mb-1">Complete</div>
-                  <div className="text-sm text-gray-400">Automation System</div>
-                </div>
-                <div className="bg-black/30 p-4 rounded-lg border border-emerald-500/30">
-                  <div className="text-2xl font-bold text-emerald-400 mb-1">37+ Templates</div>
-                  <div className="text-sm text-gray-400">Copy-Paste Ready</div>
-                </div>
-                <div className="bg-black/30 p-4 rounded-lg border border-blue-500/30">
-                  <div className="text-2xl font-bold text-blue-400 mb-1">Video</div>
-                  <div className="text-sm text-gray-400">Step-by-Step</div>
-                </div>
-                <div className="bg-black/30 p-4 rounded-lg border border-purple-500/30">
-                  <div className="text-2xl font-bold text-purple-400 mb-1">Lifetime</div>
-                  <div className="text-sm text-gray-400">Access & Updates</div>
-                </div>
-              </div>
-
-              <Link
-                href="/ai-automations"
-                className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white px-12 py-6 rounded-xl font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4"
-              >
-                🚀 Get AI Automations Course →
-              </Link>
-
-              <p className="text-sm text-gray-400 mt-4">
-                ✅ 30-Day Money-Back Guarantee • ✅ Lifetime Access • ✅ Instant Course Access
-              </p>
-            </div>
-          </section>
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="chatgpt-automation-tips" limit={3} />
         </div>
       </article>
     </div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -69,11 +71,11 @@ export default function N8nBeginnersGuide() {
     title: metadata.title,
     description: metadata.description,
     slug: "n8n-beginners-guide",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -1441,80 +1443,11 @@ return items.map(item => ({
         </div>
       </section>
 
-      {/* Course CTA #2 */}
-      <section className="section-spacing bg-zinc-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-xl p-8 border border-green-500/20">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">💎</span>
-              <h3 className="text-2xl font-bold text-white">Master Automation with N8N</h3>
-            </div>
-            <p className="text-gray-300 mb-6">Get instant access to our complete N8N automation blueprint with 50+ ready-to-use workflows, 20+ hours of video tutorials, and lifetime updates.</p>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="n8n-beginners-guide" />
 
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-zinc-800 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-green-400 mb-1">50+</div>
-                <div className="text-sm text-gray-400">Workflow Templates</div>
-              </div>
-              <div className="bg-zinc-800 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-blue-400 mb-1">20+</div>
-                <div className="text-sm text-gray-400">Hours Video Training</div>
-              </div>
-              <div className="bg-zinc-800 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-purple-400 mb-1">$5,959</div>
-                <div className="text-sm text-gray-400">Total Value</div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <Link
-                href="/n8n-ai-automations"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all"
-              >
-                Get Complete N8N Course - Just $189
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
-              <p className="text-sm text-gray-400 mt-3">
-                Lifetime Access • 30-Day Money-Back Guarantee • Join 12,400+ Students
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Articles */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
-            <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center">
-              <span className="mr-3">📚</span>
-              Related Articles
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              <Link href="/blog/essential-n8n-workflows" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-blue-500/50 transition-all">
-                <h3 className="text-lg font-bold text-white mb-2">Essential N8N Workflows</h3>
-                <p className="text-gray-400 text-sm mb-3">25+ must-have automation workflows for business</p>
-                <span className="text-blue-400 text-sm font-semibold">Read More →</span>
-              </Link>
-
-              <Link href="/blog/zapier-automation-mastery" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-blue-500/50 transition-all">
-                <h3 className="text-lg font-bold text-white mb-2">Zapier Automation Mastery</h3>
-                <p className="text-gray-400 text-sm mb-3">Complete guide to Zapier vs N8N comparison</p>
-                <span className="text-blue-400 text-sm font-semibold">Read More →</span>
-              </Link>
-
-              <Link href="/blog/workflow-automation-guide" className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-700 hover:border-blue-500/50 transition-all">
-                <h3 className="text-lg font-bold text-white mb-2">Workflow Automation Guide</h3>
-                <p className="text-gray-400 text-sm mb-3">Master business process automation from scratch</p>
-                <span className="text-blue-400 text-sm font-semibold">Read More →</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="n8n-beginners-guide" limit={3} />
     </div>
   )
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -62,11 +64,11 @@ export default function SaaSAutomationSystemsPage() {
     title: metadata.title,
     description: metadata.description,
     slug: "saas-automation-systems",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -466,36 +468,13 @@ export default function SaaSAutomationSystemsPage() {
                   <p className="text-gray-300">Build robust fallbacks and monitoring for when automations fail.</p>
                 </div>
               </div>
-            </div><div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-center">
-              <h2 className="text-3xl font-bold text-white mb-4">Ready to Build Your Automated SaaS Empire?</h2>
-              <p className="text-xl text-blue-100 mb-6">
-                Learn the exact automation systems and strategies used by successful SaaS founders
-              </p>
-              <Link href="/ai-agents" className="inline-block bg-gray-900 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-                Start AI Agents Course →
-              </Link>
-              <p className="text-sm text-blue-200 mt-4">Join 5,000+ SaaS founders automating their way to success</p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section className="py-16 bg-gray-800">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center text-white">Related Automation Guides</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Link href="/blog/api-automation-integration" className="bg-gray-900 rounded-lg p-6 hover:shadow-2xl transition-shadow">
-              <h3 className="text-xl font-bold mb-2 text-blue-400">API Automation & Integration</h3>
-              <p className="text-gray-400">Connect your SaaS to 1000+ apps automatically</p>
-            </Link>
-            <Link href="/blog/no-code-automation-tools" className="bg-gray-900 rounded-lg p-6 hover:shadow-2xl transition-shadow">
-              <h3 className="text-xl font-bold mb-2 text-purple-400">No-Code Automation Tools</h3>
-              <p className="text-gray-400">Build powerful automations without writing code</p>
-            </Link>
-            <Link href="/blog/cloud-automation-infrastructure" className="bg-gray-900 rounded-lg p-6 hover:shadow-2xl transition-shadow">
-              <h3 className="text-xl font-bold mb-2 text-green-400">Cloud Automation Infrastructure</h3>
-              <p className="text-gray-400">Scale your SaaS infrastructure automatically</p>
-            </Link>
+            {/* Smart CTA - All Access Pass */}
+            <SmartCTA blogSlug="saas-automation-systems" />
+
+            {/* Related Posts */}
+            <RelatedPosts currentSlug="saas-automation-systems" limit={3} />
           </div>
         </div>
       </section>

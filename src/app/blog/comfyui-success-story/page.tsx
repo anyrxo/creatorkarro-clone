@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 import type { Metadata } from 'next'
 
 // Comprehensive SEO Metadata
@@ -80,8 +82,8 @@ const schema = generateBlogPostSchema({
   title: metadata.title as string,
   description: metadata.description as string,
   slug: "comfyui-success-story",
-  publishedTime: metadata.openGraph?.publishedTime as string,
-  modifiedTime: metadata.openGraph?.modifiedTime as string,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Technology",
   keywords: metadata.keywords as string[] || [],
   image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
@@ -1487,52 +1489,11 @@ Great client management isn't about pleasing everyone - it's about setting clear
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-br from-purple-500/5 via-pink-500/5 to-blue-500/5">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Build Your Own $10K/Month ComfyUI Business
-          </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="comfyui-success-story" />
 
-          <p className="text-xl text-gray-400 mb-8">
-            Get the exact workflows, client acquisition strategies, and business templates these creators use to generate <span className="text-white font-semibold">$10K-$200K monthly</span>
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <div className="flex items-center gap-2 text-gray-300">
-              <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>50+ Production-ready workflows</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Client acquisition templates</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Pricing & business models</span>
-            </div>
-          </div>
-
-          <Link
-            href="/ai-accelerator"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all text-lg px-8 py-4"
-          >
-            Get ComfyUI Business Blueprint
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
-
-          <p className="text-sm text-gray-500 mt-4">
-            Same strategies used by creators earning $10K-$200K monthly
-          </p>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="comfyui-success-story" limit={3} />
     </div>
   )
 }

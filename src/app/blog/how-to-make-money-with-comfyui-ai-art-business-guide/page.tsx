@@ -2,7 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import FAQSchema from '@/components/seo/FAQSchema'
-import { generateBlogPostSchema } from '@/lib/schema'
+import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -220,20 +222,20 @@ const faqs = [
 **ComfyUI Installation & Essential Custom Nodes**
 
 **Step 1: Core Installation**
-```bash
+\`\`\`bash
 git clone https://github.com/comfyanonymous/ComfyUI.git
 cd ComfyUI
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 python main.py
 # Access at http://localhost:8188
-```
+\`\`\`
 
 **Step 2: Install ComfyUI Manager** (for easy node management)
-```bash
+\`\`\`bash
 cd custom_nodes
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git
-```
+\`\`\`
 
 **Step 3: Essential Custom Nodes for Monetization**
 
@@ -250,7 +252,7 @@ Install via ComfyUI Manager interface:
 
 **Step 4: Essential Models to Download**
 
-Place in `ComfyUI/models/checkpoints/`:
+Place in \`ComfyUI/models/checkpoints/\`:
 
 **Base Models** (general purpose):
 - **Deliberate v3** (8GB): Versatile, great for fantasy, portraits, landscapes
@@ -263,7 +265,7 @@ Place in `ComfyUI/models/checkpoints/`:
 - **Realistic Vision** (for stock photos, commercial imagery)
 - **Flat-2D Animerge** (for POD designs, clean vector-style art)
 
-Place in `ComfyUI/models/loras/`:
+Place in \`ComfyUI/models/loras/\`:
 - **Detail Tweaker LoRA**: Adds fine detail to any generation
 - **Add More Details LoRA**: Enhances sharpness and clarity
 - Custom trained LoRAs (for recurring client needs or consistent character generation)
@@ -349,7 +351,7 @@ Place in `ComfyUI/models/loras/`:
 **Advanced Optimization Tips**
 
 **Speed optimization**:
-- Use `--highvram` flag when launching ComfyUI (if you have 16GB+ VRAM)
+- Use \`--highvram\` flag when launching ComfyUI (if you have 16GB+ VRAM)
 - Enable xFormers attention (20-30% speed boost)
 - Use DPM++ 2M Karras sampler (faster than DPM++ SDE, similar quality)
 - Reduce steps for drafts: 20-25 steps for client review, 40-50 steps for final delivery
@@ -666,32 +668,32 @@ As you build experience, portfolio, and reputation, increase prices every 3-6 mo
 **When selling to clients**, use clear licensing terms:
 
 **Standard Commercial License** (recommended for most sales):
-```
+\`\`\`
 Grant of Rights:
 - Client may use image in marketing, advertising, websites, social media
 - Client may NOT resell image as standalone product
 - Client may NOT claim authorship/copyright
 - Non-exclusive (you retain rights to sell to others)
 - Worldwide, perpetual usage rights
-```
+\`\`\`
 
 **Exclusive Commercial License** (charge 3-5x more):
-```
+\`\`\`
 Grant of Rights:
 - Same as Standard License above
 - PLUS: Exclusive (you cannot sell to others or reuse)
 - PLUS: Client has exclusive usage in their industry/category
 - Artist retains copyright but cannot exercise it commercially
-```
+\`\`\`
 
 **Full Rights Buyout** (charge 5-10x more):
-```
+\`\`\`
 Grant of Rights:
 - Client owns all rights including copyright (if copyrightable)
 - Artist cannot reuse, resell, or display image
 - Artist cannot include in portfolio (unless negotiated otherwise)
 - Effectively "work for hire" - client is copyright owner
-```
+\`\`\`
 
 **Real example**: An artist creates custom fantasy character for game developer. Options offered:
 
@@ -945,7 +947,7 @@ If you were charging $100/commission and getting 15 orders/month ($1,500/month):
 - Cold email: Find agency websites, email their contact form with portfolio
 
 **Pitch template**:
-```
+\`\`\`
 Subject: Custom AI Art for [Their Company Name] - Portfolio Inside
 
 Hi [Name],
@@ -962,7 +964,7 @@ Best,
 [Your Name]
 [Portfolio link]
 [Instagram/Behance]
-```
+\`\`\`
 
 **Real example**: An artist sent 40 cold emails to SaaS companies over 2 weeks. Response rate: 8 replies (20%). Calls scheduled: 5. Conversion: 1 client signed at $3,800/month retainer for 30 images/month. This one client matched their entire previous monthly income from individual commissions.
 
@@ -1291,16 +1293,14 @@ The path to sustainable $5K-10K/month ComfyUI income is navigating these seven m
 
 export default function HowToMakeMoneyWithComfyuiAiArtBusinessGuide() {
   const blogPostSchema = generateBlogPostSchema({
-    headline: "Make Money with ComfyUI 2026: $2K-12K/Month AI Art Business Blueprint",
-    description: "Master ComfyUI monetization in 2026. Learn 8 proven income streams, batch generation workflows, pricing strategies, and scale from $500 to $12K/month.",
-    datePublished: "2026-02-25T10:00:00.000Z",
-    dateModified: "2026-02-26T14:00:00.000Z",
-    authorName: "Anyro",
-    authorUrl: "https://iimagined.ai",
-    publisherName: "IImagined.ai",
-    publisherLogo: "https://iimagined.ai/images/logo.png",
-    image: "https://iimagined.ai/images/blog/how-to-make-money-with-comfyui-ai-art-business-guide-og.jpg",
-    url: "https://iimagined.ai/blog/how-to-make-money-with-comfyui-ai-art-business-guide"
+    title: metadata.title as string,
+    description: metadata.description as string,
+    slug: "how-to-make-money-with-comfyui-ai-art-business-guide",
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
+    category: metadata.category || "AI Business",
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -1542,38 +1542,11 @@ export default function HowToMakeMoneyWithComfyuiAiArtBusinessGuide() {
               <FAQSchema faqs={faqs} />
             </div>
 
-            {/* CTA Section */}
-            <div className="bg-gradient-to-r from-green-600/20 via-emerald-600/20 to-teal-600/20 border border-green-500/30 rounded-2xl p-8 mb-12">
-              <div className="text-center">
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Master ComfyUI and Build Your $5K-10K/Month AI Art Business
-                </h3>
-                <p className="text-xl text-gray-300 mb-6">
-                  Learn professional ComfyUI workflows, advanced techniques, and proven monetization strategies from our comprehensive course
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-                  <div className="flex items-center space-x-2 text-green-400">
-                    <span className="text-2xl">✓</span>
-                    <span>8 income stream blueprints</span>
-                  </div>
-                  <div className="flex items-center space-x-2 text-emerald-400">
-                    <span className="text-2xl">✓</span>
-                    <span>Production workflow templates</span>
-                  </div>
-                  <div className="flex items-center space-x-2 text-teal-400">
-                    <span className="text-2xl">✓</span>
-                    <span>Marketing + pricing strategies</span>
-                  </div>
-                </div>
-                <Link
-                  href="/comfyui-mastery"
-                  className="inline-block bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 transform hover:scale-105"
-                >
-                  Enroll in ComfyUI Mastery Course
-                </Link>
-                <p className="text-gray-400 text-sm mt-4">Join 12,000+ students building AI art businesses</p>
-              </div>
-            </div>
+            {/* Smart CTA - All Access Pass */}
+            <SmartCTA blogSlug="how-to-make-money-with-comfyui-ai-art-business-guide" />
+
+            {/* Related Posts */}
+            <RelatedPosts currentSlug="how-to-make-money-with-comfyui-ai-art-business-guide" limit={3} />
 
           </div>
         </div>

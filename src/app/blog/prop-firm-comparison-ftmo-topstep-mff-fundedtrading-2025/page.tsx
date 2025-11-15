@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -63,11 +65,11 @@ const schema = generateBlogPostSchema({
   title: metadata.title,
   description: metadata.description,
   slug: "prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2026",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Futures Trading",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
+  keywords: metadata.keywords as string[] || [],
+  image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
 
@@ -970,31 +972,11 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Master Prop Firm Strategies & Pass Evaluations
-            </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2025" />
 
-            <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-            Learn evaluation strategies, risk management, and trading psychology to pass FTMO, Topstep, and other prop firm challenges
-            </p>
-
-            <Link
-            href="/futures-trading"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all"
-          >
-            Start Your Prop Trading Journey
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-            </Link>
-
-            <div className="mt-8 text-sm text-gray-500">
-                Join 5,000+ traders who have passed prop firm evaluations
-            </div>
-        </div>
-    </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2025" limit={3} />
 </div>
 )
 }

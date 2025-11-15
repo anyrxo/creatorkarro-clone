@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Zap, BarChart3, Brain, Globe, Languages } from 'lucide-react'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -748,22 +750,11 @@ const schema = generateBlogPostSchema({
             <FAQSchema faqs={faqs} />
           </div>
 
-          {/* CTA Section */}
-          <div className="bg-gradient-to-br from-orange-900/30 via-red-900/30 to-pink-900/30 border border-orange-500/30 rounded-2xl p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Deploy Multilingual AI with Qwen 3?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Learn how to build complete AI automation systems (including multilingual deployment, Chinese language optimization, and Asia-Pacific market strategies) in our AI Automations course—designed for global teams targeting diverse markets.
-            </p>
-            <Link
-              href="/courses#ai-automations"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-orange-700 hover:to-red-700 transition-all shadow-lg hover:shadow-orange-500/25"
-            >
-              <Sparkles className="w-5 h-5" />
-              Explore AI Automations Course
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="qwen-3-alibaba-open-source-llm" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="qwen-3-alibaba-open-source-llm" limit={3} />
 
         </div>
       </section>

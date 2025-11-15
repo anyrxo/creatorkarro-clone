@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Zap, BarChart3, Brain } from 'lucide-react'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -635,22 +637,11 @@ const schema = generateBlogPostSchema({
             <FAQSchema faqs={faqs} />
           </div>
 
-          {/* CTA Section */}
-          <div className="bg-gradient-to-br from-blue-900/30 via-cyan-900/30 to-indigo-900/30 border border-blue-500/30 rounded-2xl p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Automate Your Project Management with AI?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Learn how to build complete AI automation systems (including agentic PM workflows, smart task delegation, and productivity optimization) in our AI Automations course—designed for teams who want to work smarter, not harder.
-            </p>
-            <Link
-              href="/courses#ai-automations"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg hover:shadow-blue-500/25"
-            >
-              <Sparkles className="w-5 h-5" />
-              Explore AI Automations Course
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="dart-ai-free-agentic-project-manager" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="dart-ai-free-agentic-project-manager" limit={3} />
 
         </div>
       </section>

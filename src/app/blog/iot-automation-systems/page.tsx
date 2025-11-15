@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -62,11 +64,11 @@ export default function IoTAutomationSystemsPage() {
     title: metadata.title,
     description: metadata.description,
     slug: "iot-automation-systems",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -474,16 +476,13 @@ export default function IoTAutomationSystemsPage() {
                   <p className="text-gray-300">Enable secure OTA updates for patches and feature deployments.</p>
                 </div>
               </div>
-            </div><div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-lg p-8 text-center">
-              <h2 className="text-3xl font-bold text-white mb-4">Ready to Build Your IoT Automation Empire?</h2>
-              <p className="text-xl text-green-100 mb-6">
-                Master the complete IoT automation stack and build connected systems that transform industries
-              </p>
-              <Link href="/ai-agents" className="inline-block bg-gray-900 text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-colors">
-                Start AI Agents Course →
-              </Link>
-              <p className="text-sm text-green-200 mt-4">Join 5,000+ engineers building the connected future</p>
             </div>
+
+            {/* Smart CTA - All Access Pass */}
+            <SmartCTA blogSlug="iot-automation-systems" />
+
+            {/* Related Posts */}
+            <RelatedPosts currentSlug="iot-automation-systems" limit={3} />
           </div>
         </div>
       </section>

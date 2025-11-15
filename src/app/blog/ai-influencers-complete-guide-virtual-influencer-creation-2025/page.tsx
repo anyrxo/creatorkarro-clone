@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -917,42 +919,11 @@ export default function AiInfluencersCompleteGuideToVirtualInfluencerCreation202
                   <li><strong>Link Clicks:</strong> Essential for affiliate and product sales. Track which posts drive most link traffic.</li>
                 </ul>
 
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mt-12">
-                  <div className="text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                      Ready to Master AI Influencer Creation?
-                    </h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Want to dive deeper with step-by-step video tutorials, custom LoRA training templates, and direct support? Check out our comprehensive AI Influencers Academy course.
-                    </p>
-                    <Link href="/ai-influencers-academy" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      Learn More About AI Influencers Academy
-                    </Link>
-                  </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="ai-influencers-complete-guide-virtual-influencer-creation-2025" />
 
-                {/* Related Authority Content */}
-                <div className="mt-12">
-                  <h3 className="text-2xl font-bold text-white mb-8">More Authority Guides from THE Experts</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/expert-content-generator" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        🤖 Expert Content Generator
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        THE tool for generating authority-building content across all platforms.
-                      </p>
-                    </Link>
-                    <Link href="/courses" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-purple-500">
-                      <h4 className="font-semibold text-white group-hover:text-purple-300 transition-colors mb-2">
-                        👑 All Authority Courses
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        THE complete collection - master every skill that matters.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="ai-influencers-complete-guide-virtual-influencer-creation-2025" limit={3} />
                 
               </div>
               

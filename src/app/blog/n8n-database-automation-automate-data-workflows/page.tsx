@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -735,46 +737,11 @@ WHERE id IN (1, 2, 3, 4, 5)`}</pre>
                   </div>
                 </section>
 
-                {/* CTA Section */}
-                <section className="mb-12">
-                  <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8">
-                    <div className="text-center">
-                      <h3 className="text-2xl font-bold text-white mb-4">
-                        Master N8N Database Automation
-                      </h3>
-                      <p className="text-lg text-gray-300 mb-6">
-                        Want to dive deeper? Our N8N AI Automations course includes 50+ pre-built database workflows,
-                        advanced error handling patterns, and production deployment strategies.
-                      </p>
-                      <Link href="/n8n-ai-automations" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                        Explore N8N Course
-                      </Link>
-                    </div>
-                  </div>
-                </section>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="n8n-database-automation-automate-data-workflows" />
 
-                {/* Related Articles */}
-                <section>
-                  <h3 className="text-2xl font-bold text-white mb-6">Related Resources</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/expert-content-generator" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        Expert Content Generator
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Generate professional automation documentation and workflow guides.
-                      </p>
-                    </Link>
-                    <Link href="/courses" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-purple-500">
-                      <h4 className="font-semibold text-white group-hover:text-purple-300 transition-colors mb-2">
-                        All Courses
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Explore our complete automation and AI course library.
-                      </p>
-                    </Link>
-                  </div>
-                </section>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="n8n-database-automation-automate-data-workflows" limit={3} />
 
               </div>
               

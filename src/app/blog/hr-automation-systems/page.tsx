@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Zap, BarChart3, Users, Calendar } from 'lucide-react'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -1029,22 +1031,11 @@ const schema = generateBlogPostSchema({
             <FAQSchema faqs={faqs} />
           </div>
 
-          {/* CTA Section */}
-          <div className="bg-gradient-to-br from-indigo-900/30 via-emerald-900/30 to-cyan-900/30 border border-indigo-500/30 rounded-2xl p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Transform Your HR Operations with Automation?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Learn how to build complete automation systems (including HR workflows, employee onboarding, and performance management) in our AI Automations course—designed for operations teams who want to scale efficiently.
-            </p>
-            <Link
-              href="/courses#ai-automations"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-indigo-700 hover:to-emerald-700 transition-all shadow-lg hover:shadow-indigo-500/25"
-            >
-              <Sparkles className="w-5 h-5" />
-              Explore AI Automations Course
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="hr-automation-systems" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="hr-automation-systems" limit={3} />
 
         </div>
       </section>

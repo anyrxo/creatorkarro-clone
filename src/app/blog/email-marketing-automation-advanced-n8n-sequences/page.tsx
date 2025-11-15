@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { Mail, Zap, TrendingUp, Clock, DollarSign, Target, CheckCircle, MessageCircle, Rocket, Code, Users } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata: Metadata = {
   title: "Email Marketing Automation with N8N 2026: 10 Advanced Sequences (40% Open Rate Blueprint)",
@@ -1026,50 +1028,11 @@ export default function EmailMarketingAutomationPage() {
             <FAQSchema faqs={faqs} />
           </section>
 
-          {/* CTA Section */}
-          <section className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8">
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Master N8N Email Automation & All AI Workflows
-              </h2>
-              <p className="text-xl text-gray-300 mb-2">
-                Get complete training in <strong>AI Automations Course</strong>
-              </p>
-              <p className="text-lg text-blue-300 mb-8">
-                Learn n8n workflows, ChatGPT integration, Zapier alternatives, and complete AI business automation. Trusted by 127K+ students building automated income streams in 2026.
-              </p>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="email-marketing-automation-advanced-n8n-sequences" />
 
-              <div className="grid md:grid-cols-4 gap-4 mb-8">
-                <div className="bg-black/30 p-4 rounded-lg border border-blue-500/30">
-                  <div className="text-2xl font-bold text-blue-400 mb-1">Complete</div>
-                  <div className="text-sm text-gray-400">N8N System</div>
-                </div>
-                <div className="bg-black/30 p-4 rounded-lg border border-purple-500/30">
-                  <div className="text-2xl font-bold text-purple-400 mb-1">10+ Workflows</div>
-                  <div className="text-sm text-gray-400">Copy-Paste Ready</div>
-                </div>
-                <div className="bg-black/30 p-4 rounded-lg border border-green-500/30">
-                  <div className="text-2xl font-bold text-green-400 mb-1">Video</div>
-                  <div className="text-sm text-gray-400">Step-by-Step</div>
-                </div>
-                <div className="bg-black/30 p-4 rounded-lg border border-pink-500/30">
-                  <div className="text-2xl font-bold text-pink-400 mb-1">Lifetime</div>
-                  <div className="text-sm text-gray-400">Access & Updates</div>
-                </div>
-              </div>
-
-              <Link
-                href="/ai-automations"
-                className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-xl font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4"
-              >
-                🚀 Get AI Automations Course →
-              </Link>
-
-              <p className="text-sm text-gray-400 mt-4">
-                ✅ 30-Day Money-Back Guarantee • ✅ Lifetime Access • ✅ Instant Course Access
-              </p>
-            </div>
-          </section>
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="email-marketing-automation-advanced-n8n-sequences" limit={3} />
         </div>
       </article>
     </div>

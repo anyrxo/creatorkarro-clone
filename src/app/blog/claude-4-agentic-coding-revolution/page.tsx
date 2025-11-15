@@ -61,6 +61,8 @@ import { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import NewsletterSignup from '@/components/NewsletterSignup'
 import { FAQCard } from '@/components/course/CourseLayout'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 const faqs = [
   {
     question:"What makes Claude 4 different from previous AI models?",
@@ -89,11 +91,11 @@ export default function Claude4AgenticCodingPage() {
     title: metadata.title,
     description: metadata.description,
     slug: "claude-4-agentic-coding-revolution",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -552,20 +554,11 @@ claude-cli create-workflow \\
             For businesses ready to embrace this shift, Claude 4 offers a compelling platform for building the next generation of automated workflows. The question isn't whether agentic AI will transform enterprise operations—it's whether your organization will lead or follow in this transformation.
                 </p>
 
-                <div className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 p-8 rounded-lg border border-purple-500/30 mb-8">
-                    <h3 className="text-2xl font-bold text-white mb-4"> Ready to Implement Agentic AI?</h3>
-                    <p className="text-gray-300 mb-6">
-              At IImagined.ai, we specialize in enterprise AI implementation and automation strategy. Whether you're evaluating Claude 4 for your organization or planning a comprehensive agentic AI rollout, we can help you navigate this transformation.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <Link href="/contact" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
-                Schedule AI Strategy Consultation
-                        </Link>
-                        <Link href="/resources" className="bg-transparent border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white px-6 py-3 rounded-lg font-bold text-center transition-colors">
-                Download Enterprise AI Guide
-                        </Link>
-                    </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="claude-4-agentic-coding-revolution" />
+
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="claude-4-agentic-coding-revolution" limit={3} />
 
                 <div className="mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">

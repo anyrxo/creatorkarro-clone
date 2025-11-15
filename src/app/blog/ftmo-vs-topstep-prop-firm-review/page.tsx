@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2026",
@@ -61,11 +63,11 @@ export default function FTMOvsTopstep() {
     title: metadata.title,
     description: metadata.description,
     slug: "ftmo-vs-topstep-prop-firm-review",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -517,18 +519,11 @@ export default function FTMOvsTopstep() {
             </div>
           </div>
 
-          <div className="mt-16 p-8 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-2xl border border-blue-500/30">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Dominate Prop Firms?</h3>
-            <p className="text-gray-300 mb-6 text-lg">
-              Whether you choose FTMO's forex empire or Topstep's futures kingdom, success requires battle-tested strategies, iron discipline, and proper risk management.
-            </p>
-            <p className="text-gray-300 mb-6">
-              Our <span className="text-white font-semibold">Futures Trading course</span> teaches you the exact systems to pass prop firm evaluations and build sustainable trading income. Get live market analysis, proven strategies, and the psychological edge you need.
-            </p>
-            <Link href="/fx-trading" className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-semibold text-white hover:from-blue-500 hover:to-purple-500 transition-all text-lg">
-              Master Futures Trading →
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="ftmo-vs-topstep-prop-firm-review" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="ftmo-vs-topstep-prop-firm-review" limit={3} />
         </div>
       </section>
     </div>

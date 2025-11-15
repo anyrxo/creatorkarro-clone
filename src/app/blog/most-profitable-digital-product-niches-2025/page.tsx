@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -623,19 +625,11 @@ export default function MostProfitableDigitalProductNichesIn2025() {
                   </div>
                 </section>
 
-                {/* CTA Section */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mt-12">
-                  <div className="text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Pick Your Niche & Launch?</h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Get the complete system to validate, create, and sell in your profitable niche.
-                    </p>
-                    <Link href="/digital-products-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                      Get Digital Products Mastery for $189 →
-                    </Link>
-                    <p className="text-sm text-gray-400 mt-3">✅ Lifetime Access • ✅ 30-Day Guarantee • ✅ Expert Support</p>
-                  </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="most-profitable-digital-product-niches-2025" />
+
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="most-profitable-digital-product-niches-2025" limit={3} />
 
               </div>
 

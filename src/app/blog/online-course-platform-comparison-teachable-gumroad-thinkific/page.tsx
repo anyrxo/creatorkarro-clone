@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -966,55 +968,11 @@ export default function OnlineCoursePlatformComparison() {
                   </div>
                 </div>
 
-                {/* Course CTA */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                      Master Course Creation in Digital Products Mastery
-                    </h3>
-                    <p className="text-xl text-gray-300 mb-2">
-                      Get THE definitive course on creating and selling digital products
-                    </p>
-                    <p className="text-lg text-blue-300 mb-8">
-                      Complete platform setup guides, course creation templates, and launch strategies for ALL major platforms
-                    </p>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="online-course-platform-comparison-teachable-gumroad-thinkific" />
 
-                    <div className="grid md:grid-cols-4 gap-4 mb-8 text-center">
-                      <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
-                        <div className="text-2xl font-bold text-blue-400">THE</div>
-                        <div className="text-sm text-gray-400">Authority</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
-                        <div className="text-2xl font-bold text-green-400">$5,959</div>
-                        <div className="text-sm text-gray-400">Total Value</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
-                        <div className="text-2xl font-bold text-purple-400">Lifetime</div>
-                        <div className="text-sm text-gray-400">Access</div>
-                      </div>
-                      <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
-                        <div className="text-2xl font-bold text-yellow-400">30-Day</div>
-                        <div className="text-sm text-gray-400">Guarantee</div>
-                      </div>
-                    </div>
-
-                    <div className="mb-6">
-                      <div className="text-4xl font-bold text-white mb-2">
-                        Get Digital Products Mastery for $189
-                      </div>
-                      <div className="text-lg text-gray-400 line-through mb-2">$5,959 Value</div>
-                      <div className="text-green-400 font-semibold">Save $5,770 Today</div>
-                    </div>
-
-                    <Link href="/digital-products-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
-                      Master Course Platforms Now
-                    </Link>
-
-                    <p className="text-sm text-gray-400">
-                      ✅ Lifetime Access • ✅ 30-Day Money-Back Guarantee • ✅ Join 127K+ Successful Students
-                    </p>
-                  </div>
-                </div>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="online-course-platform-comparison-teachable-gumroad-thinkific" limit={3} />
 
                 {/* FAQ Section */}
                 <div className="bg-gray-800/30 p-8 rounded-xl mb-12 border border-gray-700">

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "AI Influencer Legal & Ethics Guide 2026: FTC Rules, Copyright, Platform Policies | IImagined",
@@ -61,11 +63,11 @@ export default function AIInfluencerLegal() {
     title: metadata.title,
     description: metadata.description,
     slug: "ai-influencer-legal-ethics-complete-guide",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category || "AI Influencers",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -553,15 +555,11 @@ export default function AIInfluencerLegal() {
             </div>
           </div>
 
-          <div className="text-center mb-12">
-            <Link
-              href="/ai-influencers"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-500 to-pink-500 rounded-full font-semibold text-white hover:scale-105 transition-transform"
-            >
-              Get Legal Compliance Checklist
-              <span>→</span>
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="ai-influencer-legal-ethics-complete-guide" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="ai-influencer-legal-ethics-complete-guide" limit={3} />
         </div>
       </section>
 

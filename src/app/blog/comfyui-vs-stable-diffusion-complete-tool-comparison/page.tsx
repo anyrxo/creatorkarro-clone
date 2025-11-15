@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -485,21 +487,11 @@ Generate</pre>
                   </div>
                 </div>
 
-                {/* Final CTA - Single */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                      Master Both Tools & Advanced Techniques
-                    </h3>
-                    <p className="text-xl text-gray-300 mb-8">
-                      Learn ComfyUI professional workflows, optimization, and when to use each tool for maximum efficiency
-                    </p>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" />
 
-                    <Link href="/comfyui-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
-                      Enroll in ComfyUI Mastery
-                    </Link>
-                  </div>
-                </div>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" limit={3} />
                 
               </div>
               

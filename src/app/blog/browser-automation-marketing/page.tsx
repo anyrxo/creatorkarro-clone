@@ -3,6 +3,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { generateOptimizedMeta } from '@/utils/metaGenerator'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata: Metadata = {
   title: "Browser Automation for Marketing: 2026 Complete Guide to Automated Web Tasks",
@@ -755,22 +757,11 @@ await page.setExtraHTTPHeaders({ 'User-Agent': randomUA });`}
             <FAQSchema faqs={faqs} displayType="accordion" />
           </section>
 
-          {/* CTA Section */}
-          <section className="mt-16 text-center bg-gradient-to-r from-purple-900/20 to-pink-900/20 rounded-2xl p-8 border border-purple-500/20">
-            <h2 className="text-3xl font-bold mb-4">Master Browser Automation & Marketing Automation</h2>
-            <p className="text-xl text-zinc-300 mb-6">
-              Learn the complete automation workflows that successful marketers use to eliminate repetitive web tasks and scale competitive intelligence.
-            </p>
-            <Link
-              href="/courses"
-              className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-8 rounded-xl text-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105"
-            >
-              Explore AI Automation Courses
-            </Link>
-            <p className="text-sm text-gray-400 mt-4">
-              Join 127K+ students mastering automation workflows
-            </p>
-          </section>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="browser-automation-marketing" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="browser-automation-marketing" limit={3} />
         </div>
       </article>
     </div>

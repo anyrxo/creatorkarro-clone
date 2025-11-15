@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -674,18 +676,11 @@ export default function HowToGet10kInstagramFollowersFastExpertGuide() {
                   </div>
                 </div>
 
-                {/* Single CTA at End */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mt-12">
-                  <div className="text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Accelerate Your Instagram Growth?</h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Learn the complete Instagram growth system in Instagram Ignited - the course trusted by 127K+ students.
-                    </p>
-                    <Link href="/instagram-ignited" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                      Explore Instagram Ignited
-                    </Link>
-                  </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="how-to-get-10k-instagram-followers-fast" />
+
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="how-to-get-10k-instagram-followers-fast" limit={3} />
                 
               </div>
               

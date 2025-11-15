@@ -37,7 +37,7 @@ export default function SmartCTA({ blogSlug, variant = 'default', className = ''
               href={course.whopUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-colors"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] ring-1 ring-white/10"
             >
               Start Learning for $99/month
               <ArrowRight className="w-4 h-4" />
@@ -72,7 +72,7 @@ export default function SmartCTA({ blogSlug, variant = 'default', className = ''
           All courses, templates, and automation systems in one subscription
         </p>
         <div className="space-y-2 mb-4">
-          {course.features.slice(0, 4).map((feature, index) => (
+          {course.features.slice(0, 4).map((feature: string, index: number) => (
             <div key={index} className="flex items-start gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0" />
               <p className="text-sm text-gray-400">{feature}</p>
@@ -90,7 +90,7 @@ export default function SmartCTA({ blogSlug, variant = 'default', className = ''
           href={course.whopUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all transform hover:scale-105"
+          className="block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] ring-1 ring-white/10"
         >
           Get All Access Now
         </Link>
@@ -126,7 +126,7 @@ export default function SmartCTA({ blogSlug, variant = 'default', className = ''
         </div>
 
         <div className="grid md:grid-cols-2 gap-4 mb-8">
-          {course.features.map((feature, index) => (
+          {course.features.map((feature: string, index: number) => (
             <div key={index} className="flex items-start gap-3 bg-zinc-900/50 rounded-lg p-4">
               <div className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 mt-2 flex-shrink-0" />
               <p className="text-gray-300">{feature}</p>
@@ -139,7 +139,7 @@ export default function SmartCTA({ blogSlug, variant = 'default', className = ''
             href={course.whopUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] ring-1 ring-white/10"
           >
             Get All Access for $99/month
             <ArrowRight className="w-5 h-5" />

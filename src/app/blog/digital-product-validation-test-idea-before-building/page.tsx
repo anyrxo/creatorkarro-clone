@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -991,28 +993,11 @@ export default function DigitalProductValidationTestYourIdeaBeforeBuilding() {
                   </div>
                 </div>
 
-                {/* Related Articles */}
-                <div className="mt-12">
-                  <h3 className="text-2xl font-bold text-white mb-8">Related Expert Guides</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/blog/digital-product-launch-strategy-idea-to-100k" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        Digital Product Launch Strategy: From Idea to $100K
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Complete launch framework for taking validated products from $0 to $100K in revenue.
-                      </p>
-                    </Link>
-                    <Link href="/blog/digital-product-pricing-strategy-maximize-revenue" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-purple-500">
-                      <h4 className="font-semibold text-white group-hover:text-purple-300 transition-colors mb-2">
-                        Digital Product Pricing Strategy: Maximize Your Revenue
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Expert pricing psychology and strategies to maximize revenue per customer.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="digital-product-validation-test-idea-before-building" />
+
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="digital-product-validation-test-idea-before-building" limit={3} />
 
               </div>
 

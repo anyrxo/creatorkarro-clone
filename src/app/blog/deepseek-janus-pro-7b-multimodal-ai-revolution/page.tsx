@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Eye, Image, FileText, Zap, TrendingUp, BarChart3 } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -1125,34 +1127,11 @@ async def extract_invoice(file: UploadFile = File(...)):
             <FAQSchema faqs={faqs} />
           </section>
 
-          {/* Final CTA */}
-          <section className="relative overflow-hidden rounded-2xl p-12 text-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1),transparent_70%)]" />
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="deepseek-janus-pro-7b-multimodal-ai-revolution" />
 
-            <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Transform Your Visual Workflows?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Join thousands of businesses automating document processing, image analysis, and visual content operations with multimodal AI. Learn to build production-ready systems in our AI Automations course.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Link
-                  href="/courses/ai-automations"
-                  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-lg hover:from-blue-500 hover:to-purple-500 transition-all transform hover:scale-105"
-                >
-                  Start Learning AI Automations
-                </Link>
-                <Link
-                  href="/blog"
-                  className="px-8 py-4 bg-zinc-800 text-white font-bold rounded-lg hover:bg-zinc-700 transition-all border border-zinc-700"
-                >
-                  Read More Guides
-                </Link>
-              </div>
-            </div>
-          </section>
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="deepseek-janus-pro-7b-multimodal-ai-revolution" limit={3} />
 
         </div>
       </article>

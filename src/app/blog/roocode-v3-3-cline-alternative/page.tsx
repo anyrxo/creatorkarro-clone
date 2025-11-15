@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Code2, Zap, GitBranch, Sparkles, Target, TrendingUp } from 'lucide-react'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -951,35 +953,11 @@ roocode migrate --from-cline`}</code>
               </div>
             </section>
 
-            {/* CTA Section */}
-            <section className="mb-16">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Ready to Accelerate Your Development with Roocode V3.3?
-                </h2>
-                <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                  Join thousands of development teams achieving 40-65% faster development cycles. Start your free 14-day trial today—no credit card required.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <Link
-                    href="/ai-automations"
-                    className="inline-flex items-center px-8 py-4 rounded-lg font-semibold bg-white text-blue-600 hover:bg-blue-50 transition-all transform hover:scale-105 shadow-xl"
-                  >
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    Master AI Development Automation
-                  </Link>
-                  <Link
-                    href="/blog"
-                    className="inline-flex items-center px-8 py-4 rounded-lg font-semibold bg-blue-500/20 text-white border-2 border-white/30 hover:bg-blue-500/30 transition-all"
-                  >
-                    Explore More AI Tools →
-                  </Link>
-                </div>
-                <p className="text-blue-200 mt-6 text-sm">
-                  💡 Pro Tip: Pair Roocode with our <Link href="/ai-automations" className="underline hover:text-white">AI Automations course</Link> to build complete AI-powered development workflows that save 10+ hours/week
-                </p>
-              </div>
-            </section>
+            {/* Smart CTA - All Access Pass */}
+            <SmartCTA blogSlug="roocode-v3-3-cline-alternative" />
+
+            {/* Related Posts */}
+            <RelatedPosts currentSlug="roocode-v3-3-cline-alternative" limit={3} />
 
           </div>
         </div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "Instagram Content Pillars: How to Build a Highly Engaged Audience in 2026",
@@ -61,11 +63,11 @@ export default function InstagramContentPillars() {
     title: metadata.title,
     description: metadata.description,
     slug: "instagram-content-pillars-build-engaged-audience",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -1056,53 +1058,11 @@ export default function InstagramContentPillars() {
         </div>
       </section>
 
-      {/* Related Articles */}
-      <section className="section-spacing bg-zinc-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
-            <span>📚</span>
-            Related Articles
-          </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="instagram-content-pillars-build-engaged-audience" />
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/blog/instagram-hashtag-strategy-2025-what-actually-works" className="group">
-              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
-                <div className="text-3xl mb-4">🎯</div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
-                  Instagram Hashtag Strategy 2025
-                </h3>
-                <p className="text-gray-400">
-                  What actually works for hashtags in 2026
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/blog/instagram-reels-strategy" className="group">
-              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
-                <div className="text-3xl mb-4">🎬</div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
-                  Instagram Reels Strategy
-                </h3>
-                <p className="text-gray-400">
-                  Master Reels and grow your account exponentially
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/blog/instagram-growth-automation" className="group">
-              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
-                <div className="text-3xl mb-4">⚡</div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
-                  Instagram Growth Automation
-                </h3>
-                <p className="text-gray-400">
-                  Automate your Instagram growth with proven tools
-                </p>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="instagram-content-pillars-build-engaged-audience" limit={3} />
     </div>
   )
 }

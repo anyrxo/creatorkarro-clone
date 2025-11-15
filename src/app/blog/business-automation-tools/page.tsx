@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -62,11 +64,11 @@ export default function BusinessAutomationTools() {
     title: metadata.title,
     description: metadata.description,
     slug: "business-automation-tools",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category || "Business Automation",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -465,20 +467,11 @@ export default function BusinessAutomationTools() {
                 </div>
               </section>
 
-              {/* CTA */}
-              <div className="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                <div className="text-center">
-                  <h3 className="text-3xl font-bold text-white mb-4">
-                    Master Business Automation
-                  </h3>
-                  <p className="text-xl text-gray-300 mb-6">
-                    Learn how to build custom automations with N8N, ChatGPT, and more
-                  </p>
-                  <Link href="/ai-automations" className="inline-block bg-gradient-to-r from-blue-500 to-cyan-600 text-white px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                    Explore AI Automations Course →
-                  </Link>
-                </div>
-              </div>
+              {/* Smart CTA - All Access Pass */}
+              <SmartCTA blogSlug="business-automation-tools" />
+
+              {/* Related Posts */}
+              <RelatedPosts currentSlug="business-automation-tools" limit={3} />
 
             </div>
           </div>

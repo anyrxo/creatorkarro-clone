@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import BlogPostLayout from '@/components/BlogPostLayout'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -63,11 +65,11 @@ export default function BlogPost() {
     title: metadata.title,
     description: metadata.description,
     slug: "500k-followers",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: "Instagram Growth",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   const relatedPosts = [
@@ -3051,24 +3053,11 @@ Plateaus are feedback, not failure. Fix the root cause, and growth resumes.`}</p
           </div>
         </div>
 
-        <div className="not-prose bg-gradient-to-br from-pink-500/20 to-rose-500/20 border border-pink-500/30 rounded-2xl p-8 text-center mt-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Ready to Start Your Journey to 500K?
-          </h3>
-          <p className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto">
-            Everything in this guide is taught step-by-step in <strong className="text-white">Instagram Ignited</strong> - the complete system for building a thriving Instagram presence and business.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/instagram-ignited">
-              <button className="px-8 py-4 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Get Instagram Ignited Now →
-              </button>
-            </Link>
-            <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-              Or explore more free guides
-            </Link>
-          </div>
-        </div>
+        {/* Smart CTA - All Access Pass */}
+        <SmartCTA blogSlug="500k-followers" />
+
+        {/* Related Posts */}
+        <RelatedPosts currentSlug="500k-followers" limit={3} />
       </BlogPostLayout>
     </>
   )

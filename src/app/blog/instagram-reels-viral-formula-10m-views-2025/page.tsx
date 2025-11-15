@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -62,11 +64,11 @@ export default function InstagramReelsViralFormula() {
     title: metadata.title,
     description: metadata.description,
     slug: "instagram-reels-viral-formula-10m-views-2026",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -1153,31 +1155,11 @@ export default function InstagramReelsViralFormula() {
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Create Your First 10M View Reel?
-          </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="instagram-reels-viral-formula-10m-views-2025" />
 
-          <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Get my complete viral Reels system with templates, editing tutorials, and the exact workflows I use to consistently hit millions of views
-          </p>
-
-          <Link
-            href="/instagram-ignited"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all"
-          >
-            Join Instagram Ignited
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
-
-          <p className="text-gray-500 mt-6 text-sm">
-            Join 12,000+ creators already using the viral formula
-          </p>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="instagram-reels-viral-formula-10m-views-2025" limit={3} />
     </div>
   )
 }

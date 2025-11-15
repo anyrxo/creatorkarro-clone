@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -648,20 +650,11 @@ export default function DigitalProductPricingStrategyMaximizeYourRevenue() {
                   </div>
                 </div>
 
-                {/* CTA */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-white mb-4">
-                      Ready to Launch Your Digital Product?
-                    </h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Learn the complete system for creating and selling digital products profitably
-                    </p>
-                    <Link href="/digital-products-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                      Explore Digital Products Mastery
-                    </Link>
-                  </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="digital-product-pricing-strategy-maximize-revenue" />
+
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="digital-product-pricing-strategy-maximize-revenue" limit={3} />
                 
               </div>
               

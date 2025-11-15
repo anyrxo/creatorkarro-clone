@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Brain, Sparkles, Code, TrendingUp, BarChart3, FileText } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -599,34 +601,11 @@ Final Answer: Founder dilution is 25% (ownership drops from 60% to 45%).`}
             <FAQSchema faqs={faqs} />
           </section>
 
-          {/* Final CTA */}
-          <section className="relative overflow-hidden rounded-2xl p-12 text-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1),transparent_70%)]" />
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="deepseek-r1-open-source-ai-revolution" />
 
-            <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Join the Open Source Reasoning Revolution?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Deploy DeepSeek R1 for transparent, cost-effective reasoning AI. Learn advanced techniques in our comprehensive AI Automations course.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Link
-                  href="/courses/ai-automations"
-                  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-lg hover:from-blue-500 hover:to-purple-500 transition-all transform hover:scale-105"
-                >
-                  Start Learning Now
-                </Link>
-                <Link
-                  href="/blog"
-                  className="px-8 py-4 bg-zinc-800 text-white font-bold rounded-lg hover:bg-zinc-700 transition-all border border-zinc-700"
-                >
-                  Read More Guides
-                </Link>
-              </div>
-            </div>
-          </section>
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="deepseek-r1-open-source-ai-revolution" limit={3} />
 
         </div>
       </article>

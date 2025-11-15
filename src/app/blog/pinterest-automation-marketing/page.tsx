@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, Target, Calendar, BarChart3, Zap } from 'lucide-react'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -878,22 +880,11 @@ const schema = generateBlogPostSchema({
             <FAQSchema faqs={faqs} />
           </div>
 
-          {/* CTA Section */}
-          <div className="bg-gradient-to-br from-pink-900/30 via-orange-900/30 to-red-900/30 border border-pink-500/30 rounded-2xl p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Scale Your Pinterest Traffic with Automation?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Learn how to build complete marketing automation systems (including Pinterest, email, and sales funnels) in our AI Automations course—transforming manual tasks into 24/7 traffic machines.
-            </p>
-            <Link
-              href="/courses#ai-automations"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-600 to-orange-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-pink-700 hover:to-orange-700 transition-all shadow-lg hover:shadow-pink-500/25"
-            >
-              <Sparkles className="w-5 h-5" />
-              Explore AI Automations Course
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="pinterest-automation-marketing" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="pinterest-automation-marketing" limit={3} />
 
         </div>
       </section>

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -68,11 +70,11 @@ export default function N8nInstagramAutomation() {
     title: metadata.title,
     description: metadata.description,
     slug: "n8n-instagram-automation-complete-growth-workflow",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -2405,99 +2407,11 @@ Engagement Rate: {{$json["bestPost"]["engagementRate"]}}%
         </div>
       </section>
 
-      {/* Second CTA */}
-      <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Automate Your Instagram Growth?
-            </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="n8n-instagram-automation-complete-growth-workflow" />
 
-            <p className="text-xl text-gray-400 mb-6">
-              Get all 4 workflow JSONs, video tutorials, and our Instagram automation blueprint. Start automating today and save 35+ hours per week.
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">4 Complete workflows</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">JSON templates</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-green-400">✓</span>
-                <span className="text-gray-300">Video tutorials</span>
-              </div>
-            </div>
-
-            <Link
-              href="https://n8n.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all px-8 py-4 rounded-xl text-white font-semibold text-lg"
-            >
-              Master N8N Automation
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-
-            <p className="text-gray-500 mt-6 text-sm">
-              Save 35+ hours per week with automation
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Articles */}
-      <section className="section-spacing bg-zinc-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
-            <span>📚</span>
-            Related Articles
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/blog/instagram-hashtag-strategy-2025-what-actually-works" className="group">
-              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
-                <div className="text-3xl mb-4">🎯</div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
-                  Instagram Hashtag Strategy 2025
-                </h3>
-                <p className="text-gray-400">
-                  What actually works for hashtags in 2026
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/blog/instagram-content-pillars-build-engaged-audience" className="group">
-              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
-                <div className="text-3xl mb-4">🎨</div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
-                  Instagram Content Pillars
-                </h3>
-                <p className="text-gray-400">
-                  Build a highly engaged audience with strategic content
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/blog/automation-tools-comparison" className="group">
-              <div className="bg-zinc-800 rounded-xl p-6 hover:bg-zinc-700 transition-all h-full">
-                <div className="text-3xl mb-4">⚡</div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
-                  Automation Tools Comparison
-                </h3>
-                <p className="text-gray-400">
-                  N8N vs Make vs Zapier - Which is best for you?
-                </p>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="n8n-instagram-automation-complete-growth-workflow" limit={3} />
     </div>
   )
 }

@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { Activity, MessageCircle, TrendingUp, Eye, Target, Users, Zap, CheckCircle } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata: Metadata = {
   title: "Instagram Story Marketing 2026: 7 Advanced Engagement Tactics (Case Studies: 340% Reply Rate Boost)",
@@ -978,50 +980,11 @@ export default function InstagramStoryMarketingPage() {
             <FAQSchema faqs={faqs} />
           </section>
 
-          {/* CTA Section */}
-          <section className="bg-gradient-to-r from-pink-600/20 to-purple-600/20 border border-pink-500/30 rounded-2xl p-8">
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Master Instagram Story Marketing (& All Instagram Growth Strategies)
-              </h2>
-              <p className="text-xl text-gray-300 mb-2">
-                Get complete Instagram growth training in <strong>Instagram Ignited</strong>
-              </p>
-              <p className="text-lg text-pink-300 mb-8">
-                The comprehensive Instagram course covering stories, reels, content strategy, monetization, and algorithmic growth tactics—used by 127K+ students to build profitable Instagram businesses.
-              </p>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="instagram-story-marketing-advanced-engagement-tactics" />
 
-              <div className="grid md:grid-cols-4 gap-4 mb-8">
-                <div className="bg-black/30 p-4 rounded-lg border border-pink-500/30">
-                  <div className="text-2xl font-bold text-pink-400 mb-1">Complete</div>
-                  <div className="text-sm text-gray-400">Instagram System</div>
-                </div>
-                <div className="bg-black/30 p-4 rounded-lg border border-purple-500/30">
-                  <div className="text-2xl font-bold text-purple-400 mb-1">Story</div>
-                  <div className="text-sm text-gray-400">Mastery Training</div>
-                </div>
-                <div className="bg-black/30 p-4 rounded-lg border border-blue-500/30">
-                  <div className="text-2xl font-bold text-blue-400 mb-1">Proven</div>
-                  <div className="text-sm text-gray-400">By 127K+ Students</div>
-                </div>
-                <div className="bg-black/30 p-4 rounded-lg border border-cyan-500/30">
-                  <div className="text-2xl font-bold text-cyan-400 mb-1">Lifetime</div>
-                  <div className="text-sm text-gray-400">Access & Updates</div>
-                </div>
-              </div>
-
-              <Link
-                href="/instagram-ignited"
-                className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-12 py-6 rounded-xl font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4"
-              >
-                🚀 Get Instagram Ignited →
-              </Link>
-
-              <p className="text-sm text-gray-400 mt-4">
-                ✅ 30-Day Money-Back Guarantee • ✅ Lifetime Access • ✅ Instant Course Access
-              </p>
-            </div>
-          </section>
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="instagram-story-marketing-advanced-engagement-tactics" limit={3} />
         </div>
       </article>
     </div>

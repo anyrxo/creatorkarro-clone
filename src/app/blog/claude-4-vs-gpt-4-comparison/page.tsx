@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -63,11 +65,11 @@ export default function Claude4ComparisonPage() {
   title: metadata.title,
   description: metadata.description,
   slug: "claude-4-vs-gpt-4-comparison",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Technology",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
+  keywords: metadata.keywords as string[] || [],
+  image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
   return (
@@ -631,24 +633,11 @@ export default function Claude4ComparisonPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-r from-orange-500/10 to-red-600/10">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">
-            Ready to Build with <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">AI Models?</span>
-          </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Choose the right AI model for your automation projects and start building intelligent systems that work around the clock
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl text-white font-semibold hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 hover:scale-105">
-              Start Building with AI
-            </Link>
-            <Link href="/blog" className="px-8 py-4 border border-gray-600 rounded-xl text-white font-semibold hover:bg-gray-800 transition-all duration-300 hover:scale-105">
-              Explore More Comparisons
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="claude-4-vs-gpt-4-comparison" />
+
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="claude-4-vs-gpt-4-comparison" limit={3} />
     </div>
   )
 }

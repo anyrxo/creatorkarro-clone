@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "Trading Psychology: Master Your Emotions for Consistent Profits",
@@ -60,11 +62,11 @@ const schema = generateBlogPostSchema({
   title: metadata.title,
   description: metadata.description,
   slug: "trading-psychology-master-your-emotions",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Trading Psychology",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
+  keywords: metadata.keywords as string[] || [],
+  image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
 export default function BlogPost() {
@@ -618,15 +620,11 @@ export default function BlogPost() {
 
           </div>
 
-          <div className="mt-16 p-8 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-2xl border border-blue-500/30">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Start Trading?</h3>
-            <p className="text-gray-300 mb-6">
-              Access our Futures Trading course with live market analysis, real-time charts, and proven strategies.
-            </p>
-            <Link href="/fx-trading" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-semibold text-white hover:from-blue-500 hover:to-purple-500 transition-all">
-              Explore Futures Trading →
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="trading-psychology-master-your-emotions" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="trading-psychology-master-your-emotions" limit={3} />
         </div>
       </section>
     </div>

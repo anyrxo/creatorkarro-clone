@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema';
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -63,11 +65,11 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
   title: metadata.title,
   description: metadata.description,
   slug: "gpt5-roadmap-creator-empire",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Technology",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
+  keywords: metadata.keywords as string[] || [],
+  image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
   return (
@@ -453,47 +455,11 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 text-center"> Related Resources</h2>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-blue-500 transition-colors">
-                <h3 className="text-lg font-semibold text-white mb-3">🧠 AI Strategy Guide</h3>
-                <p className="text-gray-300 mb-4">Complete guide to building strategic AI consulting businesses.</p>
-                <Link href="/blog/ai-strategy-consulting" className="text-blue-400 hover:text-blue-300 font-medium">Read More →</Link>
-              </div>
-              
-              <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-blue-500 transition-colors">
-                <h3 className="text-lg font-semibold text-white mb-3"> Future-Proofing</h3>
-                <p className="text-gray-300 mb-4">How to position your business for rapid AI evolution.</p>
-                <Link href="/blog/future-proof-creator-business" className="text-blue-400 hover:text-blue-300 font-medium">Read More →</Link>
-              </div>
-              
-              <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-blue-500 transition-colors">
-                <h3 className="text-lg font-semibold text-white mb-3"> Scaling Strategies</h3>
-                <p className="text-gray-300 mb-4">Advanced techniques for scaling AI-powered creator businesses.</p>
-                <Link href="/blog/ai-creator-scaling" className="text-blue-400 hover:text-blue-300 font-medium">Read More →</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="gpt5-roadmap-creator-empire" />
 
-      <section className="section-spacing bg-gradient-to-r from-blue-900 to-purple-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Ready to Build Your GPT-5 Empire?</h2>
-            <p className="text-xl text-blue-100 mb-8">
-              Join the elite creators positioning for the unified AI revolution before the masses catch on.
-            </p>
-            <Link href="/instagram-automation" className="bg-gray-900 text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors">
-              Start Your Pre-Launch Strategy →
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="gpt5-roadmap-creator-empire" limit={3} />
     </div>
   )
 }

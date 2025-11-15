@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import type { Metadata } from 'next'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -65,8 +67,8 @@ const schema = generateBlogPostSchema({
   title: metadata.title as string,
   description: metadata.description as string,
   slug: "create-faceless-youtube-channel",
-  publishedTime: metadata.openGraph?.publishedTime as string,
-  modifiedTime: metadata.openGraph?.modifiedTime as string,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Technology",
   keywords: metadata.keywords as string[] || [],
   image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
@@ -2397,30 +2399,11 @@ Creating content for low-CPM countries
         </div>
       </section>
 
-      <section
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="create-faceless-youtube-channel" />
 
-        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
-      >
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Build Your Faceless Empire?
-        </h2>
-
-        <p className="text-xl text-gray-400 mb-8">
-            Get my complete faceless channel system with scripts, templates, and step-by-step training
-        </p>
-
-        <Link
-            href="/digital-products"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all"
-          >
-            Get The Faceless Channel Blueprint
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-        </Link>
-    </div>
-</section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="create-faceless-youtube-channel" limit={3} />
 </div>
 )
 }

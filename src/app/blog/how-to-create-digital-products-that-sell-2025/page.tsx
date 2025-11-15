@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -862,41 +864,11 @@ export default function HowToCreateDigitalProductsThatSellComplete2025Guide() {
                   </div>
                 </div>
 
-                {/* Single Subtle CTA */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mt-12">
-                  <div className="text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Want Step-by-Step Guidance?</h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Digital Products Mastery includes video tutorials, templates, and worksheets to guide you through each step of the process.
-                    </p>
-                    <Link href="/digital-products-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                      Learn More About the Course
-                    </Link>
-                  </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="how-to-create-digital-products-that-sell-2025" />
 
-                {/* Related Articles */}
-                <div className="mt-8">
-                  <h3 className="text-2xl font-bold text-white mb-8">Related Expert Guides</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/expert-content-generator" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        Expert Content Generator
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Generate expert-level content for social media authority building.
-                      </p>
-                    </Link>
-                    <Link href="/courses" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        All Courses
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Explore our complete course library for mastering digital products.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="how-to-create-digital-products-that-sell-2025" limit={3} />
                 
               </div>
               

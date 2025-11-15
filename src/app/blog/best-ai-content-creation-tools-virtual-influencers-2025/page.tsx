@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -803,7 +805,7 @@ npm install -g yt-dlp tweepy</pre>
                                 - Features: Visual workflow builder, 1000+ app integrations
                               </span>
                               <span className="text-sm text-green-400 mt-2">
-                                POWER USER CHOICE: Chain ChatGPT -> Midjourney -> Social posting automatically
+                                POWER USER CHOICE: Chain ChatGPT {'->'} Midjourney {'->'} Social posting automatically
                               </span>
                             </li>
 
@@ -2404,7 +2406,7 @@ Target audience: 25-35 year old women"
 RESULT: Get 5 formatted ideas in 30 seconds`}</pre>
                               </div>
                               <p className="text-xs text-gray-400">
-                                Pick the 2-3 strongest ideas. Focus on high-engagement formats (video > carousel > static image)
+                                Pick the 2-3 strongest ideas. Focus on high-engagement formats (video {'>'} carousel {'>'} static image)
                               </p>
                             </div>
 
@@ -2681,7 +2683,7 @@ RESULT: Get high-converting caption in 20 seconds`}</pre>
                             <div className="bg-zinc-800 rounded-lg p-3">
                               <p className="font-semibold text-purple-300 text-sm mb-2">1. Trend Surfing</p>
                               <p className="text-xs text-gray-300 mb-2">
-                                When a trend emerges, speed > perfection. Trends have 24-72 hour windows.
+                                When a trend emerges, speed {'>'} perfection. Trends have 24-72 hour windows.
                               </p>
                               <p className="text-xs text-yellow-300">
                                 STRATEGY: Use fastest tools (DALL-E 15 sec, Pika 30 sec). Post within 4 hours of trend spotting.
@@ -2807,7 +2809,7 @@ RESULT: Get high-converting caption in 20 seconds`}</pre>
                             <span className="text-red-400 mr-2">X</span>
                             <p className="text-gray-300">
                               <strong>Mistake 5:</strong> Not iterating based on performance. Post, analyze, adapt. If quick
-                              posts get same engagement as slow ones, optimize for speed. Data > assumptions.
+                              posts get same engagement as slow ones, optimize for speed. Data {'>'} assumptions.
                             </p>
                           </div>
                         </div>
@@ -3105,7 +3107,7 @@ RESULT: Every caption sounds like the same person wrote it`}</pre>
                         </div>
 
                         <p className="text-yellow-300 text-sm mt-4">
-                          If you can't check all boxes, either fix it or don't post. Consistency > frequency.
+                          If you can't check all boxes, either fix it or don't post. Consistency {'>'} frequency.
                         </p>
                       </div>
                     </div>
@@ -3420,21 +3422,11 @@ RESULT: Every caption sounds like the same person wrote it`}</pre>
 
                 </div>
 
-                {/* Final CTA - Single */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                      Build Your AI-Powered Content Machine
-                    </h3>
-                    <p className="text-xl text-gray-300 mb-8">
-                      Master content creation tools, automation workflows, and influencer monetization strategies
-                    </p>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="best-ai-content-creation-tools-virtual-influencers-2025" />
 
-                    <Link href="/ai-influencers-academy" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 mb-4">
-                      Join AI Influencers Academy
-                    </Link>
-                  </div>
-                </div>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="best-ai-content-creation-tools-virtual-influencers-2025" limit={3} />
 
               </div>
 

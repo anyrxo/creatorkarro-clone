@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import BlogPostLayout from '@/components/BlogPostLayout'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "AI Automation for Beginners: Complete 2026 Guide to Save 20+ Hours/Week | AI Automations",
@@ -62,11 +64,11 @@ export default function AIAutomationBeginnersGuide() {
     title: metadata.title,
     description: metadata.description,
     slug: "ai-automation-beginners-guide",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: "AI Automation",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   const relatedPosts = [
@@ -611,26 +613,11 @@ Respond with ONLY the category word."`}</pre>
           </div>
         </div>
 
-        <div className="not-prose bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-2xl p-8 text-center mb-12">
-          <div className="text-5xl mb-4">🚀</div>
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Ready to Build Production-Grade Automations?
-          </h3>
-          <p className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto">
-            This guide covers the basics. In the <strong className="text-white">AI Automations Course</strong>, you'll get <strong className="text-white">50+ pre-built N8N workflows</strong>, live automation breakdowns, and the exact systems successful automation specialists use to save 40+ hours per week while scaling their businesses to $100K+/month.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/ai-automations">
-              <button className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Get the Full Course Now →
-              </button>
-            </Link>
-            <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-              Or read more free automation guides
-            </Link>
-          </div>
-          <p className="text-gray-400 text-sm mt-6">Join 127,000+ students • Save 20-40 hours per week</p>
-        </div>
+        {/* Smart CTA - All Access Pass */}
+        <SmartCTA blogSlug="ai-automation-beginners-guide" />
+
+        {/* Related Posts */}
+        <RelatedPosts currentSlug="ai-automation-beginners-guide" limit={3} />
       </BlogPostLayout>
     </>
   )

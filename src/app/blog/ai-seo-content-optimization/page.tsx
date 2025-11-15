@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -62,11 +64,11 @@ export default function AISEOContentOptimization() {
     title: metadata.title,
     description: metadata.description,
     slug: "ai-seo-content-optimization",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -692,161 +694,11 @@ export default function AISEOContentOptimization() {
         </div>
       </section>
 
-      {/* N8N Course CTA - Content Automation Focus */}
-      <section className="section-spacing bg-gradient-to-r from-green-600/20 to-blue-600/20 border-y border-green-500/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 border border-green-500/30 mb-6">
-              <span className="text-green-400 text-sm font-semibold"> AUTOMATE YOUR CONTENT DOMINATION</span>
-            </div>
-            
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              Stop Writing Content Manually - <span className="text-green-400">Automate 100+ SEO Articles/Week</span> With N8N
-            </h2>
-            
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-4xl mx-auto">
-              Why struggle with Jasper and Surfer SEO when you can build a complete content automation pipeline? 
-              Get my N8N system that <span className="text-white font-semibold">generates 500+ optimized articles monthly</span> using 
-              ChatGPT, Ahrefs, and automated publishing workflows.
-            </p>
-            
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-zinc-900/50 rounded-xl p-6">
-                <div className="text-3xl font-bold text-green-400 mb-2">500+</div>
-                <div className="text-sm text-gray-400 mb-2">SEO articles per month</div>
-                <div className="text-xs text-gray-500">Fully automated pipeline</div>
-              </div>
-              <div className="bg-zinc-900/50 rounded-xl p-6">
-                <div className="text-3xl font-bold text-blue-400 mb-2">$2.3M</div>
-                <div className="text-sm text-gray-400 mb-2">Monthly organic traffic value</div>
-                <div className="text-xs text-gray-500">SEMrush valuation</div>
-              </div>
-              <div className="bg-zinc-900/50 rounded-xl p-6">
-                <div className="text-3xl font-bold text-purple-400 mb-2">95%</div>
-                <div className="text-sm text-gray-400 mb-2">Time reduction</div>
-                <div className="text-xs text-gray-500">vs manual content creation</div>
-              </div>
-            </div>
-            
-            <div className="bg-zinc-900/50 rounded-xl p-6 mb-8">
-              <h3 className="text-xl font-bold text-white mb-4">Complete SEO Content Automation Pipeline:</h3>
-              <div className="grid md:grid-cols-2 gap-6 text-left">
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <div>
-                      <span className="text-white font-semibold">Keyword Research:</span>
-                      <span className="text-gray-300"> Auto-scrape Ahrefs for 1000+ opportunities</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <div>
-                      <span className="text-white font-semibold">Content Generation:</span>
-                      <span className="text-gray-300"> ChatGPT creates SEO-optimized articles</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <div>
-                      <span className="text-white font-semibold">SERP Analysis:</span>
-                      <span className="text-gray-300"> Analyze top 10 results automatically</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <div>
-                      <span className="text-white font-semibold">Auto Publishing:</span>
-                      <span className="text-gray-300"> WordPress, Ghost, or CMS integration</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <div>
-                      <span className="text-white font-semibold">Schema Markup:</span>
-                      <span className="text-gray-300"> Structured data added automatically</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-400 mt-1">✓</span>
-                    <div>
-                      <span className="text-white font-semibold">Performance Tracking:</span>
-                      <span className="text-gray-300"> Google Search Console monitoring</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-zinc-800/50 rounded-xl p-6 mb-8">
-              <div className="text-center mb-4">
-                <span className="text-orange-400 font-bold text-lg">⚠ STOP Paying $500+ Monthly for Content Tools</span>
-              </div>
-              <div className="grid md:grid-cols-3 gap-4 text-sm">
-                <div className="text-center">
-                  <div className="text-red-400 font-semibold">Jasper AI: $59/mo</div>
-                  <div className="text-gray-400">+ Surfer: $89/mo</div>
-                  <div className="text-gray-400">+ Ahrefs: $99/mo</div>
-                  <div className="text-red-400 font-bold mt-2">= $247/month</div>
-                </div>
-                <div className="text-center flex items-center justify-center">
-                  <span className="text-2xl">VS</span>
-                </div>
-                <div className="text-center">
-                  <div className="text-green-400 font-semibold">N8N System: FREE</div>
-                  <div className="text-gray-400">+ ChatGPT API: $20/mo</div>
-                  <div className="text-gray-400">+ Hosting: $10/mo</div>
-                  <div className="text-green-400 font-bold mt-2">= $30/month</div>
-                </div>
-              </div>
-              <div className="text-center mt-4">
-                <span className="text-yellow-400 font-bold">Save $217/month = $2,604/year</span>
-              </div>
-            </div>
-            
-            <Link
-              href="/n8n-ai-automations"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-bold rounded-xl transition-all transform hover:scale-105 shadow-2xl"
-            >
-              Get The Complete Content Automation System
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-            
-            <div className="mt-6 text-sm text-gray-400">
-               4.9/5 from 2,400+ content creators | 🔒 30-day money-back guarantee |  Generate 500+ articles monthly
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="ai-seo-content-optimization" />
 
-      <section
-        
-        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
-      >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Dominate Google with AI SEO?
-          </h2>
-          
-          <p className="text-xl text-gray-400 mb-8">
-            Master AI-powered SEO strategies in our comprehensive AI Agents Course
-          </p>
-          
-          <Link
-            href="/ai-agents"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 transition-all"
-          >
-            Start AI SEO Mastery
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="ai-seo-content-optimization" limit={3} />
     </div>
   )
 }

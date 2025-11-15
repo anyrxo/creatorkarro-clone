@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -649,42 +651,11 @@ Savings: $40/month or $480/year`}
                   </div>
                 </div>
 
-                {/* Course CTA */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-8">
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-white mb-4">Master N8N Automation</h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Ready to dive deep into N8N? Our course covers advanced workflow patterns, AI integration,
-                      and real-world implementations that save hours every week.
-                    </p>
-                    <Link href="/n8n-ai-automations" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-300">
-                      Explore N8N AI Automations Course
-                    </Link>
-                  </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="best-automation-tools-2025-n8n-vs-zapier-vs-make" />
 
-                {/* Related Articles */}
-                <div className="mt-8">
-                  <h3 className="text-2xl font-bold text-white mb-8">Related Expert Guides</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/expert-content-generator" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        Expert Content Generator
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Generate expert-level content for social media authority building.
-                      </p>
-                    </Link>
-                    <Link href="/courses" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        All Courses
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Explore our complete course library for mastering tool comparison.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="best-automation-tools-2025-n8n-vs-zapier-vs-make" limit={3} />
                 
               </div>
               

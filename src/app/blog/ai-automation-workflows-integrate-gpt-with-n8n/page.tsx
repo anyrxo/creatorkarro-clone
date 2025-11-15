@@ -4,6 +4,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Workflow, GitBranch, Zap, Code, AlertCircle, CheckCircle, TrendingUp, Cpu, Database, Lock, Gauge, Wrench, Lightbulb, Rocket, Star, ArrowRight } from 'lucide-react'
 import BlogPostLayout from '@/components/BlogPostLayout'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -830,34 +832,11 @@ return { json: { ...task, modelConfig } };`}
           </ul>
         </div>
 
-        <h2>Next Steps: Master AI Automation</h2>
-        <p>
-          You now have the foundational knowledge to build production-ready GPT + N8N workflows. To take your skills to the next level:
-        </p>
+        {/* Smart CTA - All Access Pass */}
+        <SmartCTA blogSlug="ai-automation-workflows-integrate-gpt-with-n8n" />
 
-        <div className="not-prose bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-2xl p-8 mb-8">
-          <ol className="space-y-4 text-gray-200">
-            {[
-              { text: "Set up N8N locally or on a cloud server", action: "Start with docker compose for quick setup" },
-              { text: "Get your OpenAI API key and configure credentials", action: "Start with pay-as-you-go tier" },
-              { text: "Build the customer support classifier from Tutorial 1", action: "Test with sample data first" },
-              { text: "Implement error handling and monitoring", action: "Add Slack alerts for failures" },
-              { text: "Join the AI Automations Course for advanced workflows", action: "Get 50+ production-ready templates" }
-            ].map((step, idx) => (
-              <li key={idx} className="flex items-start gap-4">
-                <span className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">{idx + 1}</span>
-                <div className="flex-1">
-                  <span className="text-white font-semibold">{step.text}</span>
-                  <p className="text-sm text-gray-400 mt-1">→ {step.action}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </div>
-
-        <p>
-          Ready to master AI automation? The <strong>AI Automations Course</strong> includes video tutorials, downloadable workflow templates, real-world projects, and lifetime access to our community of 4,000+ automation experts. Start building intelligent systems today!
-        </p>
+        {/* Related Posts */}
+        <RelatedPosts currentSlug="ai-automation-workflows-integrate-gpt-with-n8n" limit={3} />
 
       </BlogPostLayout>
     </>

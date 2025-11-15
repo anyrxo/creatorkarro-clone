@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Brain, Zap, Code, TrendingUp, BarChart3, FileText } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -733,34 +735,11 @@ Step 4: Verify logic.
             <FAQSchema faqs={faqs} />
           </section>
 
-          {/* Final CTA */}
-          <section className="relative overflow-hidden rounded-2xl p-12 text-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/20 via-cyan-600/20 to-blue-600/20" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.1),transparent_70%)]" />
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" />
 
-            <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Revolutionize Your Problem-Solving with Open Source AI?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Join thousands of developers and businesses deploying DeepSeek R2 for transparent, cost-effective reasoning automation. Learn to build production reasoning systems in our AI Automations course.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Link
-                  href="/courses/ai-automations"
-                  className="px-8 py-4 bg-gradient-to-r from-emerald-600 to-cyan-600 text-white font-bold rounded-lg hover:from-emerald-500 hover:to-cyan-500 transition-all transform hover:scale-105"
-                >
-                  Start Learning AI Automations
-                </Link>
-                <Link
-                  href="/blog"
-                  className="px-8 py-4 bg-zinc-800 text-white font-bold rounded-lg hover:bg-zinc-700 transition-all border border-zinc-700"
-                >
-                  Read More AI Guides
-                </Link>
-              </div>
-            </div>
-          </section>
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="deepseek-r2-open-source-ai-revolution" limit={3} />
 
         </div>
       </article>

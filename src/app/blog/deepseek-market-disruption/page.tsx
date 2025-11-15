@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -63,11 +65,11 @@ export default function DeepseekMarketDisruptionPage() {
   title: metadata.title,
   description: metadata.description,
   slug: "deepseek-market-disruption",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Technology",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
+  keywords: metadata.keywords as string[] || [],
+  image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
   return (
@@ -460,16 +462,14 @@ export default function DeepseekMarketDisruptionPage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-r from-blue-900 to-purple-900">
+      <section className="section-spacing bg-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Ready to Transform Your Workflow?</h2>
-            <p className="text-xl text-blue-100 mb-8">
-              Join thousands of professionals who have revolutionized their operations with deepseek market disruption strategies.
-            </p>
-            <Link href="/instagram-automation" className="bg-gray-900 text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors">
-              Start Your Instagram Automation Journey →
-            </Link>
+          <div className="max-w-4xl mx-auto">
+            {/* Smart CTA - All Access Pass */}
+            <SmartCTA blogSlug="deepseek-market-disruption" />
+
+            {/* Related Posts */}
+            <RelatedPosts currentSlug="deepseek-market-disruption" limit={3} />
           </div>
         </div>
       </section>

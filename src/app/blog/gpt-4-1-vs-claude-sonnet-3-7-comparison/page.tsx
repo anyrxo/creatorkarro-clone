@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -67,7 +69,7 @@ export const metadata: Metadata = {
       follow: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
-      "max-snippet": -1"
+      "max-snippet": -1
     }
   },
   alternates: {
@@ -81,8 +83,8 @@ const schema = generateBlogPostSchema({
   title: metadata.title as string,
   description: metadata.description as string,
   slug: "gpt-4-1-vs-claude-sonnet-3-7-comparison",
-  publishedTime: metadata.openGraph?.publishedTime as string,
-  modifiedTime: metadata.openGraph?.modifiedTime as string,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "AI Tools",
   keywords: metadata.keywords as string[] || [],
   image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
@@ -1951,52 +1953,11 @@ message = client.messages.create(
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-br from-purple-500/5 via-pink-500/5 to-blue-500/5">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Build AI-Powered Products That Scale
-          </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="gpt-4-1-vs-claude-sonnet-3-7-comparison" />
 
-          <p className="text-xl text-gray-400 mb-8">
-            Learn how to choose, integrate, and optimize AI models for your business. Get strategies from creators earning <span className="text-white font-semibold">$10K-$200K/month</span> with AI automation
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <div className="flex items-center gap-2 text-gray-300">
-              <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>API integration templates</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Cost optimization strategies</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Real use case playbooks</span>
-            </div>
-          </div>
-
-          <Link
-            href="/ai-accelerator"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all text-lg px-8 py-4"
-          >
-            Master AI Model Integration
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
-
-          <p className="text-sm text-gray-500 mt-4">
-            Same AI strategies used by businesses earning $100K+ monthly
-          </p>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="gpt-4-1-vs-claude-sonnet-3-7-comparison" limit={3} />
     </div>
   )
 }

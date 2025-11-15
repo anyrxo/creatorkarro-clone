@@ -4,6 +4,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Zap, TrendingUp, Target, CheckCircle, AlertCircle, Rocket, Clock, DollarSign, Users, BarChart3, Sparkles, ArrowRight, Star } from 'lucide-react'
 import BlogPostLayout from '@/components/BlogPostLayout'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -707,9 +709,11 @@ export default function AIAutomationGuidePage() {
           </ol>
         </div>
 
-        <p>
-          Ready to build your automated business empire? The <strong>AI Automations Course</strong> gives you everything: step-by-step tutorials, proven workflows, templates, and lifetime support. Join 4,000+ successful students who've automated their way to freedom.
-        </p>
+        {/* Smart CTA - All Access Pass */}
+        <SmartCTA blogSlug="ai-automation-guide-toxic-seo" />
+
+        {/* Related Posts */}
+        <RelatedPosts currentSlug="ai-automation-guide-toxic-seo" limit={3} />
 
       </BlogPostLayout>
     </>

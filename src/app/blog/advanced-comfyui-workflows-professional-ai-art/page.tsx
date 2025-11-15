@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import BlogPostLayout from '@/components/BlogPostLayout'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -63,11 +65,11 @@ export default function AdvancedComfyUIWorkflows() {
     title: metadata.title,
     description: metadata.description,
     slug: "advanced-comfyui-workflows-professional-ai-art",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: "AI Influencers",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   const relatedPosts = [
@@ -595,26 +597,11 @@ Apply ControlNet (Canny) - Strength: 0.4     ← Preserve edges`}</pre>
           </div>
         </div>
 
-        <div className="not-prose bg-gradient-to-br from-cyan-500/20 to-teal-500/20 border border-cyan-500/30 rounded-2xl p-8 text-center mb-12">
-          <div className="text-5xl mb-4">🚀</div>
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Ready to Master ComfyUI Like a Pro?
-          </h3>
-          <p className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto">
-            These workflows are just the beginning. In the <strong className="text-white">AI Influencers Course</strong>, you'll get <strong className="text-white">50+ pre-built ComfyUI workflows</strong>, live workflow breakdowns, and the exact setups I use to generate $50K+/month in AI art revenue.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/ai-influencers">
-              <button className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Get the Full Course Now →
-              </button>
-            </Link>
-            <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-              Or read more free ComfyUI guides
-            </Link>
-          </div>
-          <p className="text-gray-400 text-sm mt-6">Join 127,000+ students • $2.7M+ in student revenue generated</p>
-        </div>
+        {/* Smart CTA - All Access Pass */}
+        <SmartCTA blogSlug="advanced-comfyui-workflows-professional-ai-art" />
+
+        {/* Related Posts */}
+        <RelatedPosts currentSlug="advanced-comfyui-workflows-professional-ai-art" limit={3} />
       </BlogPostLayout>
     </>
   )

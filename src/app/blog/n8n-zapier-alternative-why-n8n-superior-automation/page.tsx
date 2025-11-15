@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -622,20 +624,11 @@ IF node → Stock available?
                   </div>
                 </div>
 
-                {/* CTA */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-white mb-4">
-                      Ready to Master N8N Automation?
-                    </h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Learn advanced N8N workflows with our comprehensive course
-                    </p>
-                    <Link href="/n8n-ai-automations" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                      Explore N8N AI Automations Course
-                    </Link>
-                  </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="n8n-zapier-alternative-why-n8n-superior-automation" />
+
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="n8n-zapier-alternative-why-n8n-superior-automation" limit={3} />
                 
               </div>
               

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -62,11 +64,11 @@ export default function N8nApiIntegrationConnectAnyServiceWithWorkflows() {
     title: metadata.title,
     description: metadata.description,
     slug: "n8n-api-integration-connect-any-service-workflows",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category || "API Integration",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -512,13 +514,11 @@ Loop Node:
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 border border-purple-500/30 rounded-2xl p-8 text-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Master N8N API Integration</h3>
-            <p className="text-xl text-gray-300 mb-8">Get complete API integration workflows and real-world examples</p>
-            <Link href="/n8n-ai-automations" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-              Explore N8N AI Automations Course
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="n8n-api-integration-connect-any-service-workflows" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="n8n-api-integration-connect-any-service-workflows" limit={3} />
         </div>
       </section>
     </div>

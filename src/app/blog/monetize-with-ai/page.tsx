@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -99,11 +101,11 @@ export default function MonetizeWithAI() {
   title: metadata.title,
   description: metadata.description,
   slug: "monetize-with-ai",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Technology",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
+  keywords: metadata.keywords as string[] || [],
+  image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
           
@@ -3241,30 +3243,11 @@ Months 13-18: Optimization
 
       <FAQSchema faqs={faqData} displayType="hidden" />
 
-      <section
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="monetize-with-ai" />
 
-        className="section-spacing bg-gradient-to-b from-zinc-900 to-dark"
-      >
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Start Making Money with AI?
-        </h2>
-
-        <p className="text-xl text-gray-400 mb-8">
-            Get the complete AI monetization blueprint with tools, templates, and support
-        </p>
-
-        <Link
-            href="/ai-accelerator"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all"
-          >
-            Start Your AI Business Today
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-        </Link>
-    </div>
-</section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="monetize-with-ai" limit={3} />
 </div>
 )
 }

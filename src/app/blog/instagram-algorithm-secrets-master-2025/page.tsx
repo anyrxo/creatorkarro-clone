@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -612,18 +614,11 @@ export default function InstagramAlgorithmSecretsMasterThe2025Algorithm() {
                   </div>
                 </div>
 
-                {/* Single CTA at End */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mt-12">
-                  <div className="text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Master Instagram Algorithm & Growth</h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Want to learn the complete system? Check out Instagram Ignited for in-depth training on algorithm optimization.
-                    </p>
-                    <Link href="/instagram-ignited" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                      Explore Instagram Ignited
-                    </Link>
-                  </div>
-                </div>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="instagram-algorithm-secrets-master-2025" />
+
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="instagram-algorithm-secrets-master-2025" limit={3} />
                 
               </div>
               

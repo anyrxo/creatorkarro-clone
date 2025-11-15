@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Code2, Zap, Eye, Sparkles, Target, TrendingUp } from 'lucide-react'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -726,35 +728,11 @@ export default function WindsurfAiCodingPage() {
               </div>
             </section>
 
-            {/* CTA Section */}
-            <section className="mb-16">
-              <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 md:p-12 text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Ready for Best-in-Class Visual AI Coding?
-                </h2>
-                <p className="text-xl text-cyan-100 mb-8 max-w-2xl mx-auto">
-                  Join developers choosing Windsurf AI for superior code review UX and frontend excellence. Start your 14-day Pro trial—experience Cascade Agent's visual diff interface with no credit card required.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <Link
-                    href="/ai-automations"
-                    className="inline-flex items-center px-8 py-4 rounded-lg font-semibold bg-white text-cyan-600 hover:bg-cyan-50 transition-all transform hover:scale-105 shadow-xl"
-                  >
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    Master AI Development
-                  </Link>
-                  <Link
-                    href="/blog"
-                    className="inline-flex items-center px-8 py-4 rounded-lg font-semibold bg-cyan-500/20 text-white border-2 border-white/30 hover:bg-cyan-500/30 transition-all"
-                  >
-                    Explore More AI Tools →
-                  </Link>
-                </div>
-                <p className="text-cyan-200 mt-6 text-sm">
-                  💡 Pro Tip: Pair Windsurf AI with our <Link href="/ai-automations" className="underline hover:text-white">AI Automations course</Link> to master visual AI-powered development workflows
-                </p>
-              </div>
-            </section>
+            {/* Smart CTA - All Access Pass */}
+            <SmartCTA blogSlug="windsurf-ai-coding" />
+
+            {/* Related Posts */}
+            <RelatedPosts currentSlug="windsurf-ai-coding" limit={3} />
 
           </div>
         </div>

@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, TrendingUp, DollarSign, Target, Zap, ShoppingCart, Package } from 'lucide-react'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata: Metadata = {
@@ -853,30 +855,11 @@ Etsy's algorithm slightly favors listings priced within the "normal range" for t
                 <FAQSchema faqs={faqs} />
               </div>
 
-              {/* Related Content */}
-              <div className="mt-16 pt-8 border-t border-gray-800">
-                <h3 className="text-2xl font-bold text-white mb-6">Related E-Commerce Guides</h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <Link href="/blog/create-online-courses-that-sell-step-by-step-blueprint" className="group block p-6 bg-gradient-to-br from-indigo-900/20 to-purple-900/10 rounded-lg hover:from-indigo-900/30 hover:to-purple-900/20 transition-all duration-300 border border-indigo-500/20 hover:border-indigo-500/40">
-                    <h4 className="font-semibold text-white group-hover:text-indigo-300 transition-colors mb-2 text-lg flex items-center">
-                      <Target className="w-5 h-5 mr-2" />
-                      Create Online Courses That Sell
-                    </h4>
-                    <p className="text-gray-400 text-sm">
-                      Build profitable online courses with $27K-511K/year revenue potential. Platform comparison, pricing strategies, and launch timelines.
-                    </p>
-                  </Link>
-                  <Link href="/blog" className="group block p-6 bg-gradient-to-br from-emerald-900/20 to-green-900/10 rounded-lg hover:from-emerald-900/30 hover:to-green-900/20 transition-all duration-300 border border-emerald-500/20 hover:border-emerald-500/40">
-                    <h4 className="font-semibold text-white group-hover:text-emerald-300 transition-colors mb-2 text-lg flex items-center">
-                      <TrendingUp className="w-5 h-5 mr-2" />
-                      More E-Commerce Strategies
-                    </h4>
-                    <p className="text-gray-400 text-sm">
-                      Explore our complete library of digital product creation, marketing automation, and passive income strategies.
-                    </p>
-                  </Link>
-                </div>
-              </div>
+              {/* Smart CTA - All Access Pass */}
+              <SmartCTA blogSlug="sell-digital-products-on-etsy-complete-success-guide" />
+
+              {/* Related Posts */}
+              <RelatedPosts currentSlug="sell-digital-products-on-etsy-complete-success-guide" limit={3} />
 
             </div>
 

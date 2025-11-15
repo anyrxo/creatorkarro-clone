@@ -4,6 +4,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Brain, Sparkles, Target, TrendingUp, Users, Lightbulb, Shield, Zap, Heart, Globe, CheckCircle, ArrowRight, Award } from 'lucide-react'
 import BlogPostLayout from '@/components/BlogPostLayout'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -973,6 +975,12 @@ export default function AIEraSkills() {
                 </p>
               </div>
             </div>
+
+            {/* Smart CTA - All Access Pass */}
+            <SmartCTA blogSlug="ai-era-skills" />
+
+            {/* Related Posts */}
+            <RelatedPosts currentSlug="ai-era-skills" limit={3} />
 
           </div>
         </div>

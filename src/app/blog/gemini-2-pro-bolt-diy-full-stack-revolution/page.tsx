@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import { Code, Layers, Rocket, Zap, TrendingUp, FileText } from 'lucide-react'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -457,34 +459,11 @@ const schema = generateBlogPostSchema({
             <FAQSchema faqs={faqs} />
           </section>
 
-          {/* Final CTA */}
-          <section className="relative overflow-hidden rounded-2xl p-12 text-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-blue-600/20 to-cyan-600/20" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(147,51,234,0.1),transparent_70%)]" />
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="gemini-2-pro-bolt-diy-full-stack-revolution" />
 
-            <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Build Your SaaS MVP in Hours, Not Weeks?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Join thousands of indie hackers, agencies, and founders using Gemini 2 Pro + Bolt.new to ship production apps at lightning speed. Learn advanced AI development in our course.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Link
-                  href="/courses/ai-automations"
-                  className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-500 hover:to-blue-500 transition-all transform hover:scale-105"
-                >
-                  Start Learning AI Automations
-                </Link>
-                <Link
-                  href="/blog"
-                  className="px-8 py-4 bg-zinc-800 text-white font-bold rounded-lg hover:bg-zinc-700 transition-all border border-zinc-700"
-                >
-                  Read More Guides
-                </Link>
-              </div>
-            </div>
-          </section>
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="gemini-2-pro-bolt-diy-full-stack-revolution" limit={3} />
 
         </div>
       </article>

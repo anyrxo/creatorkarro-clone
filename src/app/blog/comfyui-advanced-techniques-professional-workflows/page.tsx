@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "ComfyUI Advanced Techniques: Professional Workflows for AI Influencers | IImagined",
@@ -61,11 +63,11 @@ export default function ComfyUIAdvancedTechniques() {
     title: metadata.title,
     description: metadata.description,
     slug: "comfyui-advanced-techniques-professional-workflows",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category || "AI Influencers",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -1243,36 +1245,11 @@ SaveImageBatch → Final output`}</pre>
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Master Professional ComfyUI Workflows
-          </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="comfyui-advanced-techniques-professional-workflows" />
 
-          <p className="text-xl text-gray-400 mb-8">
-            Learn the exact workflows, custom nodes, and automation systems used by professional AI influencer agencies
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/ai-influencers"
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold px-8 py-4 rounded-lg transition-all"
-            >
-              Get The Complete AI Influencer Course
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-
-            <Link
-              href="/digital-products"
-              className="inline-flex items-center gap-3 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold px-8 py-4 rounded-lg transition-all border border-zinc-700"
-            >
-              Browse All Courses
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="comfyui-advanced-techniques-professional-workflows" limit={3} />
     </div>
   )
 }

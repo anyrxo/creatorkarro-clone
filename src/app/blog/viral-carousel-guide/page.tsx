@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import type { Metadata } from 'next'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -80,8 +82,8 @@ const schema = generateBlogPostSchema({
   title: metadata.title as string,
   description: metadata.description as string,
   slug: "viral-carousel-guide",
-  publishedTime: metadata.openGraph?.publishedTime as string,
-  modifiedTime: metadata.openGraph?.modifiedTime as string,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Technology",
   keywords: metadata.keywords as string[] || [],
   image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
@@ -2064,52 +2066,11 @@ Create one template, duplicate 30 times, change accent color for each:
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-br from-purple-500/5 via-pink-500/5 to-blue-500/5">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Get 50+ Viral Carousel Templates
-          </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="viral-carousel-guide" />
 
-          <p className="text-xl text-gray-400 mb-8">
-            Done-for-you templates, hooks, and designs from carousels that generated <span className="text-white font-semibold">10M+ views and 100K+ followers</span>
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <div className="flex items-center gap-2 text-gray-300">
-              <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>50+ proven carousel templates</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>200+ viral hook examples</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Canva design files included</span>
-            </div>
-          </div>
-
-          <Link
-            href="/instagram-ignited"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all text-lg px-8 py-4"
-          >
-            Get Viral Carousel Templates
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
-
-          <p className="text-sm text-gray-500 mt-4">
-            Same templates used by creators with 100K-1M followers
-          </p>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="viral-carousel-guide" limit={3} />
     </div>
   )
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -653,64 +655,11 @@ export default function InstagramInfluencerMarketingBuildYourPersonalBrand() {
                   </div>
                 </section>
 
-                {/* Updated CTA */}
-                <div className="bg-gradient-to-r from-pink-600/20 to-purple-600/20 border border-pink-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                      Ready to Build Your Influencer Brand?
-                    </h3>
-                    <p className="text-xl text-gray-300 mb-6">
-                      Learn the complete Instagram growth system used by 127K+ students
-                    </p>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="instagram-influencer-marketing-build-personal-brand" />
 
-                    <div className="max-w-2xl mx-auto mb-8">
-                      <p className="text-gray-300 mb-4">
-                        Instagram Ignited provides the complete framework for building an authentic influencer brand on Instagram - from finding your niche to landing $10K+ brand deals.
-                      </p>
-                      <div className="grid md:grid-cols-3 gap-4 text-sm">
-                        <div className="bg-zinc-900 rounded p-4">
-                          <p className="text-purple-400 font-semibold mb-1">✓ Niche positioning</p>
-                          <p className="text-gray-400 text-xs">Find your unique angle</p>
-                        </div>
-                        <div className="bg-zinc-900 rounded p-4">
-                          <p className="text-blue-400 font-semibold mb-1">✓ Content systems</p>
-                          <p className="text-gray-400 text-xs">Batch creation workflows</p>
-                        </div>
-                        <div className="bg-zinc-900 rounded p-4">
-                          <p className="text-pink-400 font-semibold mb-1">✓ Monetization</p>
-                          <p className="text-gray-400 text-xs">Multiple revenue streams</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <Link href="/instagram-ignited" className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                      Explore Instagram Ignited →
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Related Content */}
-                <div className="mt-12">
-                  <h3 className="text-2xl font-bold text-white mb-6">Related Instagram Growth Guides</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/blog/instagram-growth-hacks-that-work-2025" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-pink-500">
-                      <h4 className="font-semibold text-white group-hover:text-pink-300 transition-colors mb-2">
-                        15 Instagram Growth Hacks That Actually Work in 2026
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Proven strategies for gaining 600-700 followers per week organically.
-                      </p>
-                    </Link>
-                    <Link href="/blog/instagram-hashtag-strategy-2025-what-actually-works" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-purple-500">
-                      <h4 className="font-semibold text-white group-hover:text-purple-300 transition-colors mb-2">
-                        Instagram Hashtag Strategy 2026: What Actually Works
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        The new hashtag formula that's generating 10K+ followers for creators.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="instagram-influencer-marketing-build-personal-brand" limit={3} />
 
               </div>
 

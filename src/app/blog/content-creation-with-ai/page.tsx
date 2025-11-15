@@ -3,6 +3,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { generateOptimizedMeta } from '@/utils/metaGenerator'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata: Metadata = {
   title: "Content Creation With AI: Complete 2026 Guide to AI-Powered Content",
@@ -669,22 +671,11 @@ export default function ContentCreationWithAiPage() {
             <FAQSchema faqs={faqs} displayType="accordion" />
           </section>
 
-          {/* CTA Section */}
-          <section className="mt-16 text-center bg-gradient-to-r from-blue-900/20 to-cyan-900/20 rounded-2xl p-8 border border-blue-500/20">
-            <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Content Creation?</h2>
-            <p className="text-xl text-zinc-300 mb-6">
-              Learn our complete AI automation workflows that successful creators use to scale their content without sacrificing quality.
-            </p>
-            <Link
-              href="/courses"
-              className="inline-block bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold py-4 px-8 rounded-xl text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
-            >
-              Explore AI Automation Courses
-            </Link>
-            <p className="text-sm text-gray-400 mt-4">
-              Join 127K+ students mastering AI-powered content creation
-            </p>
-          </section>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="content-creation-with-ai" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="content-creation-with-ai" limit={3} />
         </div>
       </article>
     </div>

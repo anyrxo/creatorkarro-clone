@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -65,11 +67,11 @@ const schema = generateBlogPostSchema({
   title: metadata.title,
   description: metadata.description,
   slug: "whop-clipping",
-  publishedTime: metadata.openGraph.publishedTime,
-  modifiedTime: metadata.openGraph.modifiedTime,
+  publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+  modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
   category: metadata.category || "Technology",
-  keywords: metadata.keywords || [],
-  image: metadata.openGraph.images[0].url
+  keywords: metadata.keywords as string[] || [],
+  image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
   // Scroll animations
@@ -348,32 +350,11 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section
-        
-        className="section-spacing"
-      >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Get The Creator Playbook
-            </h2>
-          
-            <p className="text-xl text-gray-400 mb-8">
-            Join <span className="text-white font-semibold">10,000+ creators</span> getting actionable strategies delivered weekly.
-            </p>
-          
-            <a
-            href="https://anyro.beehiiv.com/subscribe"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all"
-          >
-            Join Free Newsletter
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-            </a>
-        </div>
-    </section>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="whop-clipping" />
+
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="whop-clipping" limit={3} />
 </div>
 )
 }

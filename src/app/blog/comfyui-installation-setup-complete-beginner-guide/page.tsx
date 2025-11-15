@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -682,49 +684,11 @@ low quality, jpeg artifacts, watermark, text`}
                   </div>
                 </section>
 
-                {/* Course CTA */}
-                <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-white mb-4">
-                      Take Your ComfyUI Skills to the Next Level
-                    </h3>
-                    <p className="text-lg text-gray-300 mb-6">
-                      Now that you have ComfyUI installed, learn how to create professional workflows, master advanced techniques,
-                      and generate stunning AI art with our comprehensive course.
-                    </p>
+                {/* Smart CTA - All Access Pass */}
+                <SmartCTA blogSlug="comfyui-installation-setup-complete-beginner-guide" />
 
-                    <Link href="/comfyui-mastery" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-4">
-                      Explore ComfyUI Mastery Course
-                    </Link>
-
-                    <p className="text-sm text-gray-400 mt-4">
-                      Learn advanced workflows, prompt engineering, model selection, and professional techniques
-                    </p>
-                  </div>
-                </div>
-
-                {/* Related Articles */}
-                <div className="mt-12">
-                  <h3 className="text-2xl font-bold text-white mb-8">Continue Learning</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Link href="/blog/advanced-comfyui-workflows-professional-ai-art" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-blue-500">
-                      <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                        Advanced ComfyUI Workflows
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Learn professional workflows, node combinations, and advanced techniques for ComfyUI.
-                      </p>
-                    </Link>
-                    <Link href="/blog/comfyui-vs-stable-diffusion-complete-tool-comparison" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-purple-500">
-                      <h4 className="font-semibold text-white group-hover:text-purple-300 transition-colors mb-2">
-                        ComfyUI vs Stable Diffusion
-                      </h4>
-                      <p className="text-gray-400 text-sm">
-                        Compare different AI image tools and understand when to use each one.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
+                {/* Related Posts */}
+                <RelatedPosts currentSlug="comfyui-installation-setup-complete-beginner-guide" limit={3} />
                 
               </div>
               

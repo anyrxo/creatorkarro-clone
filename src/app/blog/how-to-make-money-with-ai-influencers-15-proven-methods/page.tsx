@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Advanced SEO Metadata Export
 export const metadata = {
@@ -67,11 +69,11 @@ export default function HowToMakeMoneyWithAiInfluencers15ProvenMethods() {
     title: metadata.title,
     description: metadata.description,
     slug: "how-to-make-money-with-ai-influencers-15-proven-methods",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category || "AI Influencers",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -901,15 +903,11 @@ export default function HowToMakeMoneyWithAiInfluencers15ProvenMethods() {
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-6">Ready to Transform Your AI Influencer Into Revenue?</h2>
-            <p className="text-xl text-gray-300 mb-8">
-              This complete guide covers everything you need to go from zero followers to $10K-$100K monthly revenue. Execute the strategies above, track your metrics, and optimize based on real performance data.
-            </p>
-            <Link href="/ai-influencers-academy" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-              Get the Complete AI Influencers Academy
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="how-to-make-money-with-ai-influencers-15-proven-methods" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="how-to-make-money-with-ai-influencers-15-proven-methods" limit={3} />
         </div>
       </section>
     </div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata = {
@@ -62,11 +64,11 @@ export default function AlphaEvolveAiBusinessEmpirePage() {
     title: metadata.title,
     description: metadata.description,
     slug: "alpha-evolve-ai-business-empire",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -3662,19 +3664,11 @@ This is how you build generational wealth, not just a business.`}
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-r from-blue-900 to-purple-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Ready to Build Your Alpha Evolve Business?</h2>
-            <p className="text-xl text-blue-100 mb-8">
-              Join the entrepreneurs building profitable businesses around evolutionary AI before the opportunity passes.
-            </p>
-            <Link href="/instagram-automation" className="bg-gray-900 text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors">
-              Start Your AI Empire →
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="alpha-evolve-ai-business-empire" />
+
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="alpha-evolve-ai-business-empire" limit={3} />
     </div>
   )
 }

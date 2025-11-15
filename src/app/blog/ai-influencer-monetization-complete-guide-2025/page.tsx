@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "AI Influencer Monetization: Complete Guide to Making $10K-$100K/Month in 2026 | IImagined",
@@ -61,11 +63,11 @@ export default function AIInfluencerMonetization() {
     title: metadata.title,
     description: metadata.description,
     slug: "ai-influencer-monetization-complete-guide-2026",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category || "AI Influencers",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -1302,36 +1304,11 @@ export default function AIInfluencerMonetization() {
         </div>
       </section>
 
-      <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Start Your AI Influencer Revenue Journey
-          </h2>
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="ai-influencer-monetization-complete-guide-2025" />
 
-          <p className="text-xl text-gray-400 mb-8">
-            Learn the exact monetization strategies, pricing templates, and brand outreach systems used by 6-figure AI influencer creators
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/ai-influencers"
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-all"
-            >
-              Get The Complete Monetization Course
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-
-            <Link
-              href="/instagram-ignited"
-              className="inline-flex items-center gap-3 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold px-8 py-4 rounded-lg transition-all border border-zinc-700"
-            >
-              Instagram Growth Masterclass
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="ai-influencer-monetization-complete-guide-2025" limit={3} />
     </div>
   )
 }

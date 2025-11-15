@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Code2, Zap, Target, Sparkles, Layers, TrendingUp } from 'lucide-react'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -700,35 +702,11 @@ export default function CursorAiCodingPage() {
               </div>
             </section>
 
-            {/* CTA Section */}
-            <section className="mb-16">
-              <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8 md:p-12 text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Ready to Code 300% Faster with Cursor AI?
-                </h2>
-                <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-                  Join 500,000+ developers using Cursor AI to build applications faster. Start your 14-day Pro trial—experience Composer Agent, Cursor Tab, and AI Chat with no credit card required.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <Link
-                    href="/ai-automations"
-                    className="inline-flex items-center px-8 py-4 rounded-lg font-semibold bg-white text-purple-600 hover:bg-purple-50 transition-all transform hover:scale-105 shadow-xl"
-                  >
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    Master AI Development
-                  </Link>
-                  <Link
-                    href="/blog"
-                    className="inline-flex items-center px-8 py-4 rounded-lg font-semibold bg-purple-500/20 text-white border-2 border-white/30 hover:bg-purple-500/30 transition-all"
-                  >
-                    Explore More AI Tools →
-                  </Link>
-                </div>
-                <p className="text-purple-200 mt-6 text-sm">
-                  💡 Pro Tip: Pair Cursor AI with our <Link href="/ai-automations" className="underline hover:text-white">AI Automations course</Link> to build complete AI-powered development workflows
-                </p>
-              </div>
-            </section>
+            {/* Smart CTA - All Access Pass */}
+            <SmartCTA blogSlug="cursor-ai-coding" />
+
+            {/* Related Posts */}
+            <RelatedPosts currentSlug="cursor-ai-coding" limit={3} />
 
           </div>
         </div>

@@ -3,6 +3,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { generateOptimizedMeta } from '@/utils/metaGenerator'
 import FAQSchema from '@/components/seo/FAQSchema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata: Metadata = {
   title: "AI Research for Content Marketing: 2026 Complete Guide to AI-Powered Research",
@@ -751,22 +753,11 @@ export default function AIResearchContentMarketingPage() {
             <FAQSchema faqs={faqs} displayType="accordion" />
           </section>
 
-          {/* CTA Section */}
-          <section className="mt-16 text-center bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-2xl p-8 border border-blue-500/20">
-            <h2 className="text-3xl font-bold mb-4">Master AI-Powered Content Marketing</h2>
-            <p className="text-xl text-zinc-300 mb-6">
-              Learn the complete AI automation workflows that successful content marketers use to dominate search rankings and scale content production.
-            </p>
-            <Link
-              href="/courses"
-              className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-xl text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
-            >
-              Explore AI Automation Courses
-            </Link>
-            <p className="text-sm text-gray-400 mt-4">
-              Join 127K+ students mastering AI-powered workflows
-            </p>
-          </section>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="ai-research-content-marketing" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="ai-research-content-marketing" limit={3} />
         </div>
       </article>
     </div>

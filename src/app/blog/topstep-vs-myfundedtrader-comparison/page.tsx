@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "Topstep vs MyFundedTrader: Complete 2026 Comparison",
@@ -61,11 +63,11 @@ export default function TopstepVsMyFundedTrader() {
     title: metadata.title,
     description: metadata.description,
     slug: "topstep-vs-myfundedtrader-comparison",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category,
     keywords: metadata.keywords,
-    image: metadata.openGraph.images[0].url
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -1037,63 +1039,11 @@ export default function TopstepVsMyFundedTrader() {
             </div>
           </div>
 
-          {/* Course CTA #2 - Bottom 25% */}
-          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-2xl p-8 mb-12">
-            <div className="text-center">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Master Futures Trading
-              </h3>
-              <p className="text-xl text-gray-300 mb-8">
-                Join our Futures Trading Mastery course - Pass prop firm challenges & scale to $100K+
-              </p>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="topstep-vs-myfundedtrader-comparison" />
 
-              <div className="grid md:grid-cols-4 gap-4 mb-8">
-                <div className="bg-black/50 rounded-lg p-4 border border-blue-500/30">
-                  <div className="text-2xl font-bold text-blue-400">THE</div>
-                  <div className="text-sm text-gray-400">Authority</div>
-                </div>
-                <div className="bg-black/50 rounded-lg p-4 border border-green-500/30">
-                  <div className="text-2xl font-bold text-green-400">$3,500</div>
-                  <div className="text-sm text-gray-400">Value</div>
-                </div>
-                <div className="bg-black/50 rounded-lg p-4 border border-purple-500/30">
-                  <div className="text-2xl font-bold text-purple-400">Lifetime</div>
-                  <div className="text-sm text-gray-400">Access</div>
-                </div>
-                <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
-                  <div className="text-2xl font-bold text-yellow-400">30-Day</div>
-                  <div className="text-sm text-gray-400">Guarantee</div>
-                </div>
-              </div>
-
-              <Link href="/futures-trading" className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-12 py-6 rounded-lg font-bold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                🚀 Start Trading Profitably →
-              </Link>
-            </div>
-          </div>
-
-          {/* Related Articles Section */}
-          <div className="mt-16">
-            <h2 className="text-3xl font-bold text-white mb-8">📚 Related Articles</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Link href="/blog/rsi-trading-strategy-complete-guide" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
-                <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                  RSI Trading Strategy: Complete Guide
-                </h4>
-                <p className="text-gray-400 text-sm">
-                  Master RSI divergence, overbought/oversold signals, and advanced techniques for 65%+ win rates in futures trading.
-                </p>
-              </Link>
-              <Link href="/blog/ftmo-vs-topstep-prop-firm-review" className="group block p-6 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-colors border border-gray-700 hover:border-gray-600">
-                <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors mb-2">
-                  FTMO vs Topstep: Prop Firm Review
-                </h4>
-                <p className="text-gray-400 text-sm">
-                  Compare FTMO and Topstep evaluation rules, profit splits, and which prop firm is best for your trading style.
-                </p>
-              </Link>
-            </div>
-          </div>
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="topstep-vs-myfundedtrader-comparison" limit={3} />
         </div>
       </section>
     </div>

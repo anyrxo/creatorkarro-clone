@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
 import { Sparkles, DollarSign, Users, TrendingUp, Target, BarChart3, BookOpen, Video, Award } from 'lucide-react'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 // Comprehensive SEO Metadata
 export const metadata: Metadata = {
@@ -250,22 +252,11 @@ const schema = generateBlogPostSchema({
             <FAQSchema faqs={faqs} />
           </div>
 
-          {/* CTA Section */}
-          <div className="bg-gradient-to-br from-green-900/30 via-emerald-900/30 to-teal-900/30 border border-green-500/30 rounded-2xl p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Build Your Course Business?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Learn how to create profitable digital products (including courses, templates, and memberships) in our Digital Products course—designed for creators who want scalable income.
-            </p>
-            <Link
-              href="/courses#digital-products"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-green-700 hover:to-emerald-700 transition-all shadow-lg hover:shadow-green-500/25"
-            >
-              <Sparkles className="w-5 h-5" />
-              Explore Digital Products Course
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="create-online-courses-that-sell-step-by-step-blueprint" limit={3} />
 
         </div>
       </section>

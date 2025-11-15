@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
+import SmartCTA from '@/components/blog/SmartCTA'
+import RelatedPosts from '@/components/blog/RelatedPosts'
 
 export const metadata = {
   title: "AI Influencer Agency Model: Scale from $10K to $100K/Month in 18 Months | IImagined",
@@ -61,11 +63,11 @@ export default function AIInfluencerAgency() {
     title: metadata.title,
     description: metadata.description,
     slug: "ai-influencer-agency-model-scale-to-100k-month",
-    publishedTime: metadata.openGraph.publishedTime,
-    modifiedTime: metadata.openGraph.modifiedTime,
+    publishedTime: (metadata.openGraph as any)?.publishedTime as string,
+    modifiedTime: (metadata.openGraph as any)?.modifiedTime as string,
     category: metadata.category || "AI Influencers",
-    keywords: metadata.keywords || [],
-    image: metadata.openGraph.images[0].url
+    keywords: metadata.keywords as string[] || [],
+    image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
   })
 
   return (
@@ -832,15 +834,11 @@ export default function AIInfluencerAgency() {
             </div>
           </div>
 
-          <div className="text-center mb-12">
-            <Link
-              href="/ai-influencers"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-semibold text-white hover:scale-105 transition-transform"
-            >
-              Get Complete Agency Templates & SOPs
-              <span>→</span>
-            </Link>
-          </div>
+          {/* Smart CTA - All Access Pass */}
+          <SmartCTA blogSlug="ai-influencer-agency-model-scale-to-100k-month" />
+
+          {/* Related Posts */}
+          <RelatedPosts currentSlug="ai-influencer-agency-model-scale-to-100k-month" limit={3} />
         </div>
       </section>
 
