@@ -276,6 +276,10 @@ export default function InstagramMonetization() {
                         <p className="text-white font-semibold mb-2 text-sm">Top Affiliate Programs:</p>
                         <div className="grid md:grid-cols-2 gap-3 mb-3">
                           <div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="instagram-monetization-beyond-sponsored-posts-2025" variant="inline" />
+
                             <p className="text-blue-400 font-semibold text-xs">Amazon Associates</p>
                             <p className="text-gray-400 text-xs">1-10% commission</p>
                           </div>

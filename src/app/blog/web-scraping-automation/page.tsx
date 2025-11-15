@@ -559,6 +559,10 @@ await browser.close();`}
 
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="web-scraping-automation" variant="inline" />
+
       </section>
     </div>
   )

@@ -98,6 +98,10 @@ export default function IoTAutomationSystemsPage() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="iot-automation-systems" variant="inline" />
+
       </section>
 
       <section className="py-16 bg-gray-800/50">

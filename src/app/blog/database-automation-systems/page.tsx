@@ -170,6 +170,10 @@ export default function DatabaseAutomationSystems() {
             <p className="text-white font-semibold">- Sarah Chen, CTO at DataScale</p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="database-automation-systems" variant="inline" />
+
       </section>
 
       <section

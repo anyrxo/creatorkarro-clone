@@ -300,6 +300,10 @@ const faqs = [
 - **Revenue Impact**: +265 meetings × 20% close rate × $15K ACV = $795,000 additional pipeline/month
 - **ROI**: 41,800% monthly (including revenue impact)
 
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="manus-ai-general-automation-agent" variant="inline" />
+
 ---
 
 **Break-Even Analysis**:

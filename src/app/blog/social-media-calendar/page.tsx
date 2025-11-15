@@ -164,6 +164,10 @@ export default function SocialMediaCalendar() {
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="social-media-calendar" variant="inline" />
+
     </section>
 
       <section

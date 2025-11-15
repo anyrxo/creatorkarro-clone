@@ -1111,6 +1111,10 @@ async def extract_invoice(file: UploadFile = File(...)):
                 </Link>
               </div>
             </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="deepseek-janus-pro-7b-multimodal-ai-revolution" variant="inline" />
+
           </section>
 
           {/* Section 6: FAQs */}

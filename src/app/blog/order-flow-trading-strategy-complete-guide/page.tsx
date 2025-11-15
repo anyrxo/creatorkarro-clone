@@ -940,6 +940,10 @@ const schema = generateBlogPostSchema({
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="order-flow-trading-strategy-complete-guide" variant="inline" />
+
     </section>
 
       <section className="section-spacing">

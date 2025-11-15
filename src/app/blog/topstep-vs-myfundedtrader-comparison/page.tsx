@@ -379,6 +379,10 @@ export default function TopstepVsMyFundedTrader() {
 
           <h2 className="text-3xl font-bold text-white mb-8">💰 Profit Splits & Payout Structures</h2>
 
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="topstep-vs-myfundedtrader-comparison" variant="inline" />
+
+
           <div className="bg-gradient-to-r from-green-600/10 to-emerald-600/10 p-8 rounded-xl mb-12 border border-green-600/20">
           <div>
             <div className="bg-zinc-900 rounded-xl p-6 mb-6">

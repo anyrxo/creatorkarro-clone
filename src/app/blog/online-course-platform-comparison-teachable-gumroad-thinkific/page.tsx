@@ -362,6 +362,10 @@ export default function OnlineCoursePlatformComparison() {
                 {/* Platform Deep Dive 1: Teachable */}
                 <div className="bg-gray-800/50 p-8 rounded-lg mb-8">
                   <h2 className="text-3xl font-bold text-white mb-4 flex items-center">
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="online-course-platform-comparison-teachable-gumroad-thinkific" variant="inline" />
+
                     <span className="text-3xl mr-3">1️⃣</span>
                     Teachable: The Industry Standard
                   </h2>

@@ -407,6 +407,10 @@ export default function AIContentOpportunity() {
             </div>
         </div>
     </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-content-opportunity" variant="inline" />
+
 </section>
 
       <section

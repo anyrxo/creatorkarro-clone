@@ -219,6 +219,10 @@ export default function DigitalProductPricingStrategyMaximizeYourRevenue() {
                     </div>
 
                     <div className="bg-zinc-900 rounded-xl p-6">
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="digital-product-pricing-strategy-maximize-revenue" variant="inline" />
+
                       <h3 className="text-2xl font-bold text-purple-400 mb-4">2. Price Anchoring</h3>
                       <p className="text-gray-300 mb-4">
                         The first price a customer sees becomes their reference point for value judgment.

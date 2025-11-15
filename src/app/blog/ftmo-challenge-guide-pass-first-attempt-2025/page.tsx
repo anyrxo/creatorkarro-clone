@@ -780,6 +780,10 @@ const schema = generateBlogPostSchema({
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ftmo-challenge-guide-pass-first-attempt-2025" variant="inline" />
+
     </section>
 
       {/* Related Articles */}

@@ -902,6 +902,10 @@ One long-form, high-value piece that serves as the source material.
 - **Time:** 20 minutes
 - **Reach multiplier:** 3-8x (Pinterest has 6-12 month content lifespan vs 48 hours on other platforms)
 
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="scale-content-creation" variant="inline" />
+
 **Spoke 7-11: 5 Standalone Social Posts**
 - Each highlighting 1 key insight
 - Different format: quote cards, statistics, before/after, etc.

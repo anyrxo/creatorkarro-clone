@@ -199,6 +199,10 @@ export default function PromptEngineeringGuide() {
                 <div className="bg-zinc-800 rounded-lg p-6">
                     <h4 className="text-white font-semibold mb-3">Format Commands:</h4>
                     <div className="grid md:grid-cols-2 gap-4">
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="prompt-engineering-guide" variant="inline" />
+
                         <ul className="space-y-2 text-gray-300">
                             <li>•"Use bullet points for..."</li>
                             <li>•"Structure as: [format]"</li>

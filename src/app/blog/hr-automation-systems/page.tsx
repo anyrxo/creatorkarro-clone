@@ -1038,6 +1038,10 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="hr-automation-systems" limit={3} />
 
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="hr-automation-systems" variant="inline" />
+
       </section>
     </div>
   )

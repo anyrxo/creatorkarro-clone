@@ -637,6 +637,10 @@ export default function BlogPost() {
           {/* Related Posts */}
           <RelatedPosts currentSlug="macd-indicator-trading-strategy" limit={3} />
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="macd-indicator-trading-strategy" variant="inline" />
+
       </section>
     </div>
   )

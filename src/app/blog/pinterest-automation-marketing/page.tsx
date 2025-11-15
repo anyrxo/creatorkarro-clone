@@ -887,6 +887,10 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="pinterest-automation-marketing" limit={3} />
 
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="pinterest-automation-marketing" variant="inline" />
+
       </section>
     </div>
   )

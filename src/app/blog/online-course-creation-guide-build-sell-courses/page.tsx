@@ -320,6 +320,10 @@ export default function OnlineCourseCreationGuideBuildSellCoursesThatConvert() {
                       </div>
                     </div>
                   </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="online-course-creation-guide-build-sell-courses" variant="inline" />
+
                 </section>
 
                 {/* Section 2: Course Platforms */}

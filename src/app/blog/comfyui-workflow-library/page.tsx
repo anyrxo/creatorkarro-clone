@@ -138,6 +138,10 @@ export default function ComfyUIWorkflowLibrary() {
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="comfyui-workflow-library" variant="inline" />
+
     </section>
 
       <section

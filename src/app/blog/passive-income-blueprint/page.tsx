@@ -280,6 +280,10 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="passive-income-blueprint" limit={3} />
 
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="passive-income-blueprint" variant="inline" />
+
       </section>
     </div>
   )

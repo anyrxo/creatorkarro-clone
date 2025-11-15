@@ -273,6 +273,10 @@ Save Image`}</pre>
 
         <h2 className="text-3xl font-bold text-white mb-6 mt-12">LoRA Stacking: Precision Style Control</h2>
 
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="advanced-comfyui-workflows-professional-ai-art" variant="inline" />
+
+
         <p className="text-gray-300 mb-6 text-lg">
           <strong className="text-white">LoRAs (Low-Rank Adaptations)</strong> are small model modifiers (typically 10-200MB) that add specific styles, characters, or concepts without retraining the base model. Advanced users <strong className="text-white">stack multiple LoRAs</strong> at different strengths to achieve surgical precision in their creative vision.
         </p>

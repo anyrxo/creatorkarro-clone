@@ -213,6 +213,10 @@ export default function InstagramCollabFeature() {
                 <div className="bg-zinc-900 p-6 rounded-xl text-center">
                   <div className="text-4xl font-bold text-green-400 mb-2">67%</div>
                   <p className="text-gray-300 text-sm">Higher Explore page distribution</p>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="instagram-collab-feature-double-reach-overnight" variant="inline" />
+
                 </div>
                 <div className="bg-zinc-900 p-6 rounded-xl text-center">
                   <div className="text-4xl font-bold text-purple-400 mb-2">20-35%</div>

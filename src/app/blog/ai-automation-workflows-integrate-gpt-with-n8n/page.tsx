@@ -356,6 +356,10 @@ return {
           </div>
         </div>
 
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-automation-workflows-integrate-gpt-with-n8n" variant="inline" />
+
+
         <div className="not-prose mb-10">
           <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-2xl p-8">
             <h4 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">

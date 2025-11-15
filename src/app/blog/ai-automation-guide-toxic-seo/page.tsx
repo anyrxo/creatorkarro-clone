@@ -259,6 +259,10 @@ export default function AIAutomationGuidePage() {
           <div className="bg-zinc-800/60 backdrop-blur-sm rounded-2xl p-8 border border-blue-500/20">
             <div className="flex items-start gap-6 mb-6">
               <div className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full w-14 h-14 flex items-center justify-center font-bold text-2xl flex-shrink-0">1</div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-automation-guide-toxic-seo" variant="inline" />
+
               <div className="flex-1">
                 <h3 className="text-3xl font-bold text-white mb-3">Content Creation AI Automation Tools</h3>
                 <p className="text-gray-300 text-lg">Generate unlimited high-quality content at scale using AI-powered content automation software</p>

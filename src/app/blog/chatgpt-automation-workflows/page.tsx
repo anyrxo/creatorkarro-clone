@@ -562,6 +562,10 @@ async function generateResponse(prompt) {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="chatgpt-automation-workflows" variant="inline" />
+
       </section>
 
       <section className="py-20 px-4 bg-gray-800/20">

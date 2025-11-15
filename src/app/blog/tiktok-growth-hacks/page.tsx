@@ -387,6 +387,10 @@ export default function TikTokGrowthHacks() {
             </div>
         </div>
     </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="tiktok-growth-hacks" variant="inline" />
+
 </section>
 
       <section className="section-spacing">

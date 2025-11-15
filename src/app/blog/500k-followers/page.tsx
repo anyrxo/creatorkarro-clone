@@ -929,6 +929,10 @@ Slide 9: Summary + results ("This strategy got me 100K followers")
 Slide 10: CTA ("Save this, follow for more, tag a creator friend")
 
 **Real Performance Data**
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="500k-followers" variant="inline" />
+
 Average carousel (no strategy): 3,200 impressions, 45 saves
 Optimized problem-solution carousel: 68,000 impressions, 2,400 saves
 Growth multiplier: 21x more effective

@@ -93,6 +93,10 @@ export default function ComfyUIAdvancedTechniques() {
             </p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="comfyui-advanced-techniques-professional-workflows" variant="inline" />
+
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">

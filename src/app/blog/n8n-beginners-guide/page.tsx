@@ -517,6 +517,10 @@ export default function N8nBeginnersGuide() {
             </p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="n8n-beginners-guide" variant="inline" />
+
       </section>
 
       {/* 10 Essential Workflows Section */}

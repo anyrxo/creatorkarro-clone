@@ -218,6 +218,10 @@ export default function BusinessProcessAutomationSave20HoursPerWeek() {
 
                   <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-6 rounded-lg mb-6">
                     <h4 className="text-xl font-semibold text-blue-300 mb-4">The Automation Scorecard</h4>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="business-process-automation-save-20-hours-per-week" variant="inline" />
+
                     <p className="text-gray-300 mb-4">Score each process from 1-5 on these criteria:</p>
                     <ul className="space-y-3 text-gray-300">
                       <li><strong>Frequency:</strong> How often does this task occur? (Daily = 5, Monthly = 2)</li>

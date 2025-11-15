@@ -168,6 +168,10 @@ export default function AISEOContentOptimization() {
             <p className="text-white font-semibold">- Sarah Chen, CMO at TechStartup Inc</p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-seo-content-optimization" variant="inline" />
+
       </section>
 
       <section

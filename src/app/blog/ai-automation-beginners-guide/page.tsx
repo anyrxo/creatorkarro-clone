@@ -228,6 +228,10 @@ export default function AIAutomationBeginnersGuide() {
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-white mb-3">N8N (The Hub)</h3>
                 <p className="text-gray-300 mb-4">
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-automation-beginners-guide" variant="inline" />
+
                   <strong className="text-white">Open-source automation platform</strong> that connects all your tools. Think of it as the "brain" of your automation. It's like Zapier but <strong className="text-blue-400">10x more powerful and self-hosted</strong>.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mb-4">

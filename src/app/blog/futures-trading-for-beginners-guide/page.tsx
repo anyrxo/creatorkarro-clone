@@ -297,6 +297,10 @@ export default function BlogPost() {
       <h3>Step 1: Choose a Futures Broker</h3>
       <p>Select a broker with:</p>
       <ul>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="futures-trading-for-beginners-guide" variant="inline" />
+
         <li>Low commissions ($0.25-$1.00 per side for micros)</li>
         <li>Reliable platform (NinjaTrader, TradingView, ThinkOrSwim)</li>
         <li>Real-time data feeds included</li>

@@ -328,6 +328,10 @@ const faqs = [
 **Cost Recommendation Matrix:**
 
 | Use Case | Volume | Best Model | Monthly Cost (Est) |
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="gpt-4-1-vs-claude-sonnet-3-7-comparison" variant="inline" />
+
 |----------|--------|------------|-------------------|
 | Content generation | 500K+ calls | Gemini 2.5 Pro | $800-$1,200 |
 | Code generation | 50K+ calls | Claude Sonnet 4.5 | $2,000-$3,000 |

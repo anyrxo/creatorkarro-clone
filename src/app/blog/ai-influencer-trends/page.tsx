@@ -499,6 +499,10 @@ export default function AIInfluencerTrendsPage() {
             <p className="text-gray-300">
               From hyper-realistic avatars to interactive AI personalities, the technology powering virtual creators has reached mainstream quality. Brands are investing heavily, platforms are adapting their algorithms, and audiences are embracing AI influencers as authentic voices in their feeds. <strong>The question isn't whether AI influencers will dominate—it's whether you'll be positioned to benefit from this shift</strong>.
             </p>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-influencer-trends" variant="inline" />
+
           </section>
 
           {/* Section 2: 7 Trends - keeping this concise since we have detailed FAQ */}

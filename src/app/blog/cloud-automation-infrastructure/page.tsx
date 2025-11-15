@@ -252,6 +252,10 @@ export default function CloudAutomationInfrastructurePage() {
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm">Agentless</span>
                 <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm">YAML-based</span>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="cloud-automation-infrastructure" variant="inline" />
+
                 <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm">Idempotent</span>
               </div>
             </div>

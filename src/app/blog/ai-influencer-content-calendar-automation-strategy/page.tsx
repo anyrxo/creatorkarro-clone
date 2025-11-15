@@ -93,6 +93,10 @@ export default function AIInfluencerAutomation() {
             </p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-influencer-content-calendar-automation-strategy" variant="inline" />
+
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">

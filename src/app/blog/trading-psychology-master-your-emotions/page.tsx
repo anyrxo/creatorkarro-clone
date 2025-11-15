@@ -626,6 +626,10 @@ export default function BlogPost() {
           {/* Related Posts */}
           <RelatedPosts currentSlug="trading-psychology-master-your-emotions" limit={3} />
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="trading-psychology-master-your-emotions" variant="inline" />
+
       </section>
     </div>
   )

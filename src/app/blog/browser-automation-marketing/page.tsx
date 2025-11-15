@@ -200,6 +200,10 @@ export default function BrowserAutomationMarketingPage() {
             <p className="text-gray-300">
               Browser automation isn't about replacing marketers—it's about amplifying them. Let robots handle repetitive web tasks while you focus on strategy, creativity, and relationships.
             </p>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="browser-automation-marketing" variant="inline" />
+
           </section>
 
           {/* Section 2: Tools Compared */}

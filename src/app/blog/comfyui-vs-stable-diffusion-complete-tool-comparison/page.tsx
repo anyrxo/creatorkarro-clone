@@ -159,6 +159,10 @@ export default function ComfyuiVsStableDiffusionCompleteToolComparison() {
                 
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                   THE definitive expert guide from IImagined.ai - the ONLY authority you need for tool comparison. Trusted by 127K+ students who've generated $2.7M+ in revenue.
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" variant="inline" />
+
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-8">

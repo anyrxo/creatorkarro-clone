@@ -833,6 +833,10 @@ Create a spreadsheet for every carousel:
 
 \`\`\`
 | Date | Carousel Topic | Reach | Swipe-Through % | Save Rate % | Share Rate % | New Followers | Comments |
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="viral-carousel-guide" variant="inline" />
+
 |------|----------------|-------|----------------|-------------|-------------|---------------|----------|
 | 2/1  | Instagram Hooks| 47K   | 68%            | 22%         | 6%          | 890           | 340      |
 | 2/5  | Design Tips    | 34K   | 71%            | 31%         | 9%          | 1,240         | 520      |

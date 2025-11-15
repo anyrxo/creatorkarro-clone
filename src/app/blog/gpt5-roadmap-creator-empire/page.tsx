@@ -162,6 +162,10 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
               </p>
               
               <div className="grid md:grid-cols-2 gap-6 my-8">
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="gpt5-roadmap-creator-empire" variant="inline" />
+
                 <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
                   <h4 className="text-lg font-semibold text-white mb-3"> Unified Model Superpowers</h4>
                   <ul className="text-gray-300 space-y-1">

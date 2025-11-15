@@ -675,6 +675,10 @@ export default function BlogPost() {
           {/* Related Posts */}
           <RelatedPosts currentSlug="es-futures-trading-strategy" limit={3} />
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="es-futures-trading-strategy" variant="inline" />
+
       </section>
     </div>
   )

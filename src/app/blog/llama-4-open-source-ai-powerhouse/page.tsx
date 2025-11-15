@@ -283,6 +283,10 @@ const faqs = [
 - Budget for high-end hardware (671B requires $200K+ investment)
 
 **When to choose Llama 4**:
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="llama-4-open-source-ai-powerhouse" variant="inline" />
+
 - Western company with data sovereignty requirements
 - Larger community (more tutorials, fine-tuning scripts, integrations)
 - Better ecosystem (Hugging Face, vLLM, Ollama prioritize Llama support)

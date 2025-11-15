@@ -128,6 +128,10 @@ const schema = generateBlogPostSchema({
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="whop-clipping" variant="inline" />
+
     </section>
 
       <section

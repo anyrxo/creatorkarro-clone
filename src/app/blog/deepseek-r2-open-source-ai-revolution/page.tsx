@@ -669,6 +669,10 @@ Step 4: Verify logic.
                 </Link>
               </div>
             </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" variant="inline" />
+
           </section>
 
           {/* Section 5: Deployment Guide - abbreviated, details in FAQs */}

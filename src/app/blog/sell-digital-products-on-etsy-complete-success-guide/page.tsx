@@ -395,6 +395,10 @@ Etsy's algorithm slightly favors listings priced within the "normal range" for t
 **Platform Comparison Matrix**
 
 | Platform | Built-in Traffic | Fees | Best For | Revenue Potential |
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="sell-digital-products-on-etsy-complete-success-guide" variant="inline" />
+
 |----------|------------------|------|----------|-------------------|
 | **Etsy** | 90M buyers, HIGH | 10% total | Beginners, design assets, printables | $500-8K/month |
 | **Gumroad** | Minimal, BYOT* | 10% free plan, 0% if $10/mo | Creators with existing audience, digital downloads, courses | $0-50K/month |

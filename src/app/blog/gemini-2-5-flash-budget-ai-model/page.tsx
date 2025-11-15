@@ -388,6 +388,10 @@ const schema = generateBlogPostSchema({
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="gemini-2-5-flash-budget-ai-model" variant="inline" />
+
                       <span className="text-purple-300 font-bold">1</span>
                     </div>
                     <div>

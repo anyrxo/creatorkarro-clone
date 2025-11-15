@@ -281,6 +281,10 @@ export default function InstagramGrowth2025() {
                       </div>
                       <div className="bg-black/50 rounded-lg p-4 border border-yellow-500/30">
                         <div className="text-2xl font-bold text-yellow-400">30-Day</div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="instagram-growth-2025" variant="inline" />
+
                         <div className="text-sm text-gray-400">Guarantee</div>
                       </div>
                     </div>

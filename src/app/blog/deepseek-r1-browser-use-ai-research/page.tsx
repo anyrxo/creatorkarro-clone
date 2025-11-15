@@ -235,6 +235,10 @@ const schema = generateBlogPostSchema({
           </div>
 
           {/* Section 1: What is DeepSeek R1 */}
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="deepseek-r1-browser-use-ai-research" variant="inline" />
+
           <div id="section-1" className="mb-20 scroll-mt-8">
             <div className="flex items-center gap-4 mb-8">
               <div className="p-3 rounded-xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 border border-purple-500/30">

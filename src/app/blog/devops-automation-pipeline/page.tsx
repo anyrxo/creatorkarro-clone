@@ -101,6 +101,10 @@ export default function DevOpsAutomationPipelinePage() {
             </Link>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="devops-automation-pipeline" variant="inline" />
+
       </section>
 
       <section className="py-16 px-4">

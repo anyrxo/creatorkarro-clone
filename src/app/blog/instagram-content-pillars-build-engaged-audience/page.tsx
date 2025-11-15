@@ -93,6 +93,10 @@ export default function InstagramContentPillars() {
             </p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="instagram-content-pillars-build-engaged-audience" variant="inline" />
+
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">

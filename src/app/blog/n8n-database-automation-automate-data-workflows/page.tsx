@@ -262,6 +262,10 @@ export default function N8nDatabaseAutomationAutomateYourDataWorkflows() {
 n8n start`}</pre>
                     </div>
                   </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="n8n-database-automation-automate-data-workflows" variant="inline" />
+
                 </section>
 
                 {/* Database Connection Section */}

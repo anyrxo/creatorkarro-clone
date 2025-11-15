@@ -171,6 +171,10 @@ const schema = generateBlogPostSchema({
                 <h3 className="text-xl font-bold text-white">Multilingual Master</h3>
               </div>
               <p className="text-gray-300 text-sm">
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="qwen-3-alibaba-open-source-llm" variant="inline" />
+
                 <strong className="text-orange-400">89.5% C-Eval score</strong> - Dominates Chinese language tasks, beating GPT-4 by 18 points
               </p>
             </div>

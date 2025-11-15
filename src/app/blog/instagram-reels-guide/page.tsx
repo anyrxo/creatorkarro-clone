@@ -126,6 +126,10 @@ export default function InstagramReelsGuide() {
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="instagram-reels-guide" variant="inline" />
+
     </section>
 
       <section

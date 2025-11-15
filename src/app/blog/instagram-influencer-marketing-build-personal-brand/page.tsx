@@ -212,6 +212,10 @@ export default function InstagramInfluencerMarketingBuildYourPersonalBrand() {
                       </div>
                     </div>
                   </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="instagram-influencer-marketing-build-personal-brand" variant="inline" />
+
                 </section>
 
                 {/* What is Instagram Influencer Marketing */}

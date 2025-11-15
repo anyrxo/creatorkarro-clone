@@ -1407,6 +1407,10 @@ Great client management isn't about pleasing everyone - it's about setting clear
             </p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="comfyui-success-story" variant="inline" />
+
       </section>
 
       <section className="section-spacing bg-zinc-900/50">

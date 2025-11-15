@@ -280,6 +280,10 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="comfyui-tutorial-master-ai-image-generation-2025" limit={3} />
 
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="comfyui-tutorial-master-ai-image-generation-2025" variant="inline" />
+
       </section>
     </div>
   )

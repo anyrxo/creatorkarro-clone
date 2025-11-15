@@ -135,6 +135,10 @@ export default function SocialMediaAutomation() {
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="social-media-automation" variant="inline" />
+
     </section>
 
       <section

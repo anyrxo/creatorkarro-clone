@@ -597,6 +597,10 @@ export default function AIContentIncome() {
           </ul>
         </div>
 
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-content-income" variant="inline" />
+
+
         <h2>What's Next: Scaling to $10K/Month</h2>
         <p>
           The next goal for Q2 2026 is hitting <strong>$10,000/month</strong> in revenue while maintaining or reducing the 3-hour daily workload. Here's the strategy:

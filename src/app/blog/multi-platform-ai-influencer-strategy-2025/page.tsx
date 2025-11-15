@@ -118,6 +118,10 @@ export default function MultiPlatformStrategy() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="multi-platform-ai-influencer-strategy-2025" variant="inline" />
+
       </section>
 
       <section className="section-spacing">

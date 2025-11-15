@@ -468,6 +468,10 @@ export default function TelegramBotMonetizationPage() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="telegram-bot-monetization" variant="inline" />
+
       </section>
 
       <section id="engagement-optimization" className="section-spacing bg-dark">

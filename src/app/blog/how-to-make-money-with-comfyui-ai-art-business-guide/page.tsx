@@ -481,6 +481,10 @@ Place in \`ComfyUI/models/loras/\`:
 **Commercial Licensing & Agency Pricing**
 
 **Per-project pricing**:
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="how-to-make-money-with-comfyui-ai-art-business-guide" variant="inline" />
+
 - Single image, standard commercial license (client can use in marketing, not resell): $200-500
 - Image pack (10 images): $1,500-3,000
 - Large project (50+ images): $5,000-12,000

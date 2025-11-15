@@ -428,6 +428,10 @@ export default function ContentScalingFramework() {
             </div>
         </div>
     </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="content-scaling-framework" variant="inline" />
+
 </section>
 
       <section className="section-spacing">

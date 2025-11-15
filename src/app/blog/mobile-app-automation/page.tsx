@@ -101,6 +101,10 @@ export default function MobileAppAutomationPage() {
             </Link>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="mobile-app-automation" variant="inline" />
+
       </section>
 
       <section className="py-16 px-4">

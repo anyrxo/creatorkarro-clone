@@ -287,6 +287,10 @@ export default function DigitalProductLaunchStrategyFromIdeaTo100k() {
                       </div>
                     </div>
                   </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="digital-product-launch-strategy-idea-to-100k" variant="inline" />
+
                 </section>
 
                 {/* Section 2: Market Research */}

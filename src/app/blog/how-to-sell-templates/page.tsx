@@ -358,6 +358,10 @@ export default function HowToSellTemplates() {
             </div>
         </div>
     </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="how-to-sell-templates" variant="inline" />
+
 </section>
 
       <section

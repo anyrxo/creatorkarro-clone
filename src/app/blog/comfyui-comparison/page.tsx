@@ -128,6 +128,10 @@ const faqs = [
 **Feature Comparison Table:**
 
 | Feature | ComfyUI | FLUX.1 Pro | Midjourney v7 | SD 3.5 | A1111 |
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="comfyui-comparison" variant="inline" />
+
 |---------|---------|------------|---------------|--------|-------|
 | **Image Quality** | 9/10 | 10/10 | 9/10 | 8/10 | 7/10 |
 | **Prompt Adherence** | 9/10 | 10/10 | 8/10 | 8/10 | 7/10 |

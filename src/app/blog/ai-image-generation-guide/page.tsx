@@ -213,6 +213,10 @@ export default function AIImageGenerationGuide() {
                   
                 <div className="bg-zinc-800 rounded-lg p-6">
                     <h4 className="text-white font-semibold mb-3">Why Pros Use It:</h4>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-image-generation-guide" variant="inline" />
+
                     <div className="grid md:grid-cols-2 gap-4">
                         <ul className="space-y-2 text-gray-300">
                             <li>• Free and open source</li>

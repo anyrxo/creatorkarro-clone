@@ -427,6 +427,10 @@ const schema = generateBlogPostSchema({
             </div>
         </div>
     </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="youtube-shorts-strategy" variant="inline" />
+
 </section>
 
       <section className="section-spacing">

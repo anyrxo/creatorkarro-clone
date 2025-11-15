@@ -259,6 +259,10 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="create-online-courses-that-sell-step-by-step-blueprint" limit={3} />
 
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" variant="inline" />
+
       </section>
     </div>
   )

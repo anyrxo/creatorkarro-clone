@@ -811,6 +811,10 @@ Cost: $0.040 per image (1024x1024)
             </ol>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="n8n-ai-integration-openai-gpt-chatgpt-complete-workflows" variant="inline" />
+
       </section>
 
       {/* Additional Workflows Overview */}

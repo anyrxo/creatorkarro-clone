@@ -261,6 +261,10 @@ export default function InstagramGrowthHacksThatActuallyWorkIn2025() {
                       Add your own voiceover, text overlays, and editing to stand out.
                     </p>
                   </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="instagram-growth-hacks-that-work-2025" variant="inline" />
+
                 </section>
 
                 {/* Advanced Hashtag Strategy */}

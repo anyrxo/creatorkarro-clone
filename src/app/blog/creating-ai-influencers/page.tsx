@@ -402,6 +402,10 @@ const schema = generateBlogPostSchema({
             </div>
             </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="creating-ai-influencers" variant="inline" />
+
     </section>
 
       <section

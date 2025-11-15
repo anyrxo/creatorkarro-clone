@@ -786,6 +786,10 @@ export default function RoboticProcessAutomation() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="robotic-process-automation" variant="inline" />
+
       </section>
 
       {/* Smart CTA - All Access Pass */}

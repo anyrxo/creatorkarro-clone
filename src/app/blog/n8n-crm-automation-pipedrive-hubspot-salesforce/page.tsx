@@ -160,6 +160,10 @@ export default function N8nCRMAutomation() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="n8n-crm-automation-pipedrive-hubspot-salesforce" variant="inline" />
+
       </section>
 
       {/* CRM Platform Comparison */}

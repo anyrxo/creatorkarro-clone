@@ -101,6 +101,10 @@ export default function NoCodeAutomationToolsPage() {
             </Link>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="no-code-automation-tools" variant="inline" />
+
       </section>
 
       <section className="py-16 px-4">

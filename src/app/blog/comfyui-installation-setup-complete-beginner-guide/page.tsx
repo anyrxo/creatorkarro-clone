@@ -265,6 +265,10 @@ export default function ComfyuiInstallationSetupCompleteBeginnerGuide() {
                     and Apple Silicon Macs (using MPS backend), but NVIDIA GPUs offer the best performance and compatibility. If you have an
                     AMD GPU or Mac, installation steps will be slightly different.
                   </p>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="comfyui-installation-setup-complete-beginner-guide" variant="inline" />
+
                 </section>
 
                 {/* Installation Steps */}

@@ -915,6 +915,10 @@ Published: {{$now.format('MM/DD/YYYY HH:mm')}}`}</pre>
             </p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="n8n-instagram-automation-complete-growth-workflow" variant="inline" />
+
       </section>
 
       {/* Workflow 2: Comment Monitoring */}

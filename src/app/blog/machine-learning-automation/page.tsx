@@ -168,6 +168,10 @@ export default function MachineLearningAutomation() {
             <p className="text-white font-semibold">- Alex Chen, CTO at PredictiveAI</p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="machine-learning-automation" variant="inline" />
+
       </section>
 
       <section

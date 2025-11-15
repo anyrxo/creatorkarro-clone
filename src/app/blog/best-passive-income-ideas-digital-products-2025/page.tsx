@@ -403,6 +403,10 @@ export default function BestPassiveIncomeIdeas20DigitalProductsThatWork() {
                       </ul>
                     </div>
                   </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="best-passive-income-ideas-digital-products-2025" variant="inline" />
+
                 </section>
 
                 <section className="mb-12">

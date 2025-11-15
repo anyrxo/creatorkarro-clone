@@ -623,6 +623,10 @@ export default function MostProfitableDigitalProductNichesIn2025() {
                       </div>
                     </div>
                   </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="most-profitable-digital-product-niches-2025" variant="inline" />
+
                 </section>
 
                 {/* Smart CTA - All Access Pass */}

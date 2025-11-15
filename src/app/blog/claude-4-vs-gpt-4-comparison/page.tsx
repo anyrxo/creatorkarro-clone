@@ -198,6 +198,10 @@ export default function Claude4ComparisonPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="p-8 bg-gray-800/50 rounded-xl border border-gray-700">
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="claude-4-vs-gpt-4-comparison" variant="inline" />
+
               <h3 className="text-2xl font-bold text-white mb-6">Coding Performance</h3>
               <div className="space-y-4">
                 <div>

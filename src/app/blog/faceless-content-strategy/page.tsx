@@ -289,6 +289,10 @@ export default function FacelessContentStrategy() {
 </div>
 </div>
 </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="faceless-content-strategy" variant="inline" />
+
 </section>
 
       <section className="section-spacing bg-zinc-900">

@@ -391,6 +391,10 @@ export default function WorkflowAutomationGuidePage() {
                 </p>
               </div>
             </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="workflow-automation-guide" variant="inline" />
+
           </section>
 
           {/* Section 4: Designing Workflows */}

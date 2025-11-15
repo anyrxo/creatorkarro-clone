@@ -807,6 +807,10 @@ export default function ChatGPTAutomationTipsPage() {
             <p className="text-gray-300">
               This guide covers the exact automation strategies, copy-paste templates, and integration setups used by top creators achieving these results. See the detailed FAQs below for specific implementations and step-by-step instructions.
             </p>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="chatgpt-automation-tips" variant="inline" />
+
           </section>
 
           {/* Content Summary - keeping brief since comprehensive details are in FAQs */}

@@ -462,6 +462,10 @@ export default function InstagramStoryMarketingPage() {
             <p className="text-gray-300">
               <strong>Bottom line:</strong> If you're only posting to your Instagram feed in 2026, you're missing 67% of potential engagement opportunities and reaching less than 15% of your followers. Stories aren't optional—they're the core of Instagram marketing strategy.
             </p>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="instagram-story-marketing-advanced-engagement-tactics" variant="inline" />
+
           </section>
 
           {/* Section 2 */}

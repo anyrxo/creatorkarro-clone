@@ -460,6 +460,10 @@ export default function DeepseekMarketDisruptionPage() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="deepseek-market-disruption" variant="inline" />
+
       </section>
 
       <section className="section-spacing bg-dark">

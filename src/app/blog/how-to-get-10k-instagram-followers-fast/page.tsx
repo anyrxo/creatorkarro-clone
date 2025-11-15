@@ -295,6 +295,10 @@ export default function HowToGet10kInstagramFollowersFastExpertGuide() {
                   </ul>
 
                   <h3 className="text-2xl font-bold text-white mb-4 mt-8">Content Calendar Template</h3>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="how-to-get-10k-instagram-followers-fast" variant="inline" />
+
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     Here's a 7-day content calendar that drives consistent growth:
                   </p>

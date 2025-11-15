@@ -201,6 +201,10 @@ export default function InstagramAlgorithmSecretsMasterThe2025Algorithm() {
                 </div>
 
                 {/* Algorithm Ranking Factors */}
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="instagram-algorithm-secrets-master-2025" variant="inline" />
+
                 <div className="mb-12">
                   <h2 className="text-3xl font-bold text-white mb-6">The 7 Core Ranking Factors Instagram Uses</h2>
                   <p className="text-gray-300 mb-4 leading-relaxed">

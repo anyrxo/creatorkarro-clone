@@ -93,6 +93,10 @@ export default function RSITradingStrategy() {
             </p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="rsi-trading-strategy-complete-guide" variant="inline" />
+
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">

@@ -409,6 +409,10 @@ export default function APIAutomationIntegrationPage() {
                 <p><strong className="text-white">Choose Pabbly if:</strong> Budget is primary concern and you can accept less polish (any volume)</p>
               </div>
             </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="api-automation-integration" variant="inline" />
+
           </section>
 
           {/* Section 3: REST APIs & Webhooks */}

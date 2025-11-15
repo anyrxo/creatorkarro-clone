@@ -458,6 +458,10 @@ export default function PersonalBrandBuilding() {
             </div>
         </div>
     </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="personal-brand-building" variant="inline" />
+
 </section>
 
       <section

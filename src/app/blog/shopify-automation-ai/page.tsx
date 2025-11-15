@@ -905,6 +905,10 @@ export default function ShopifyAutomationAiPage() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="shopify-automation-ai" variant="inline" />
+
       </section>
 
       <section className="section-spacing bg-gray-900">

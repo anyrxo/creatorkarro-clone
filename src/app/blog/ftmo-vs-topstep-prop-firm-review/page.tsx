@@ -174,6 +174,10 @@ export default function FTMOvsTopstep() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-blue-400 mb-4">FTMO Challenge</h3>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ftmo-vs-topstep-prop-firm-review" variant="inline" />
+
               <div className="space-y-4 text-gray-300">
                 <div>
                   <p className="font-semibold text-white mb-2">Phase 1: FTMO Challenge (30 days max)</p>

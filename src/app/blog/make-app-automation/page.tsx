@@ -1583,6 +1583,10 @@ export default function MakeAppAutomationPage() {
 
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="make-app-automation" variant="inline" />
+
       </section>
     </div>
   )

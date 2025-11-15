@@ -93,6 +93,10 @@ export default function LoRATrainingGuide() {
             </p>
           </div>
         </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="lora-training-guide-consistent-ai-influencer-faces" variant="inline" />
+
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">

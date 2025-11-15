@@ -166,6 +166,10 @@ export default function AiImageGenerationForInfluencersProfessionalGuide() {
                   <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">ai images for influencers</span>
                   <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">ai photography</span>
                   <span className="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600/30 transition-colors">virtual influencer photos</span>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-image-generation-for-influencers-professional-guide" variant="inline" />
+
                 </div>
                 
                 <div className="flex items-center space-x-6 text-sm text-gray-400 pb-8 border-b border-gray-700">

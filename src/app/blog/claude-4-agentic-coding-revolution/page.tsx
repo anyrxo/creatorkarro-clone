@@ -199,6 +199,10 @@ export default function Claude4AgenticCodingPage() {
 
                 <h2 className="text-3xl font-bold text-white mb-6">Developer Infrastructure: Claude 4's Enterprise Arsenal</h2>
 
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="claude-4-agentic-coding-revolution" variant="inline" />
+
                 <p className="text-gray-300 mb-6">
             Anthropic isn't just building a better language model—they're constructing an entire ecosystem for agentic development. The Claude 4 toolkit includes:
                 </p>

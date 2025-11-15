@@ -150,6 +150,10 @@ export default function BusinessAutomationTools() {
                     </div>
                   </div>
                 </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="business-automation-tools" variant="inline" />
+
               </section>
 
               {/* Categories of Business Automation */}

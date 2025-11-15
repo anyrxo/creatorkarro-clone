@@ -252,6 +252,10 @@ export default function SecurityAutomationSystemsPage() {
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm">Exploit automation</span>
                 <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm">Payload gen</span>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="security-automation-systems" variant="inline" />
+
                 <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm">Vuln validation</span>
               </div>
             </div>
