@@ -143,39 +143,44 @@ export const courses: Record<string, Course> = {
 
   'all-access': {
     id: 'all-access',
-    name: 'All Access Bundle: Complete Creator Academy',
+    name: 'All Access Pass: Complete Creator Academy',
     slug: 'all-access',
-    price: 997, // Typically bundles are offered at discount vs buying individually (4 x $399 = $1,596)
+    price: 99, // Monthly subscription
     whopUrl: 'https://whop.com/iimagined/all-access-reimagined/',
-    description: 'Get ALL 4 courses: Instagram Ignited, AI Influencers Academy, Digital Products Empire, and AI Automations Reimagined. Build a complete creator business empire.',
-    shortDescription: 'All 4 courses - Complete creator business system',
+    description: 'Get instant access to ALL courses, templates, and automation systems for just $99/month. Master Instagram growth, AI influencers, n8n automation, and digital products. Cancel anytime.',
+    shortDescription: 'All courses + templates + automation for $99/month',
     keywords: [
       'all access',
-      'course bundle',
+      'subscription',
       'creator academy',
-      'complete training',
+      'monthly access',
       'instagram course',
       'ai automation course',
       'digital products course',
-      'ai influencer course'
+      'ai influencer course',
+      'unlimited training'
     ],
-    ctaText: 'Get All Access',
+    ctaText: 'Get All Access for $99/month',
     features: [
-      'All 4 premium courses ($1,596 value)',
-      'Instagram growth mastery',
-      'AI influencer creation',
-      'Digital products business',
-      'AI automation workflows',
-      'Lifetime access and updates'
+      'All 4 premium courses (Instagram, AI Influencers, Automation, Digital Products)',
+      '100+ hours of training content',
+      'Exclusive templates and workflows',
+      'Weekly live Q&A sessions',
+      'Private community access',
+      'New courses and updates included',
+      'Cancel anytime - no long-term commitment'
     ]
   }
 }
 
 /**
  * Get recommended course based on blog post topic
+ * Returns all-access subscription with relevant highlighted content
  */
-export function getRecommendedCourse(blogSlug: string): Course {
-  // Instagram-related content
+export function getRecommendedCourse(blogSlug: string): Course & { highlightedCourse?: string } {
+  const allAccess = courses['all-access']
+
+  // Instagram-related content - highlight Instagram course within all-access
   if (blogSlug.includes('instagram') ||
       blogSlug.includes('500k-followers') ||
       blogSlug.includes('viral-carousel') ||
@@ -185,10 +190,10 @@ export function getRecommendedCourse(blogSlug: string): Course {
       blogSlug.includes('content-pillars') ||
       blogSlug.includes('hashtag-strategy') ||
       blogSlug.includes('story-marketing')) {
-    return courses['instagram-ignited']
+    return { ...allAccess, highlightedCourse: 'Instagram Ignited' }
   }
 
-  // AI Influencer content
+  // AI Influencer content - highlight AI Influencers course
   if (blogSlug.includes('ai-influencer') ||
       blogSlug.includes('comfyui') ||
       blogSlug.includes('lora-training') ||
@@ -196,10 +201,10 @@ export function getRecommendedCourse(blogSlug: string): Course {
       blogSlug.includes('midjourney') ||
       blogSlug.includes('virtual-influencer') ||
       blogSlug.includes('ai-content-creation-tools')) {
-    return courses['ai-influencers']
+    return { ...allAccess, highlightedCourse: 'AI Influencers Academy' }
   }
 
-  // Digital Products content
+  // Digital Products content - highlight Digital Products course
   if (blogSlug.includes('digital-product') ||
       blogSlug.includes('online-course') ||
       blogSlug.includes('passive-income') ||
@@ -209,10 +214,10 @@ export function getRecommendedCourse(blogSlug: string): Course {
       blogSlug.includes('pricing-strategy') ||
       blogSlug.includes('validation') ||
       blogSlug.includes('templates-sell')) {
-    return courses['digital-products']
+    return { ...allAccess, highlightedCourse: 'Digital Products Empire' }
   }
 
-  // AI Automation / n8n content
+  // AI Automation / n8n content - highlight AI Automations course
   if (blogSlug.includes('n8n') ||
       blogSlug.includes('automation') ||
       blogSlug.includes('chatgpt-automation') ||
@@ -220,7 +225,7 @@ export function getRecommendedCourse(blogSlug: string): Course {
       blogSlug.includes('ai-automation') ||
       blogSlug.includes('zapier') ||
       blogSlug.includes('make-app')) {
-    return courses['ai-automations']
+    return { ...allAccess, highlightedCourse: 'AI Automations Reimagined' }
   }
 
   // Personal brand, monetization, scaling content
@@ -231,19 +236,11 @@ export function getRecommendedCourse(blogSlug: string): Course {
       blogSlug.includes('faceless-content') ||
       blogSlug.includes('youtube-shorts') ||
       blogSlug.includes('tiktok-growth')) {
-    return courses['instagram-ignited'] // Best fit for creators
+    return { ...allAccess, highlightedCourse: 'All Courses' }
   }
 
-  // AI business, empire building
-  if (blogSlug.includes('business-empire') ||
-      blogSlug.includes('alpha-evolve') ||
-      blogSlug.includes('gpt5') ||
-      blogSlug.includes('ai-era')) {
-    return courses['all-access'] // Upsell to bundle
-  }
-
-  // Default: Instagram Ignited (most popular)
-  return courses['instagram-ignited']
+  // Default: All Access with all courses highlighted
+  return { ...allAccess, highlightedCourse: 'All Courses' }
 }
 
 /**
