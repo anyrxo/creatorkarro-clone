@@ -1,69 +1,65 @@
-import React from 'react'
+'use client'
+
 import Link from 'next/link'
-import { getRelatedPosts } from '@/lib/blog-metadata'
+import { getRelatedPosts } from '@/lib/internal-links'
+import { ArrowRight, BookOpen } from 'lucide-react'
 
 interface RelatedPostsProps {
   currentSlug: string
   limit?: number
+  className?: string
 }
 
-export default function RelatedPosts({ currentSlug, limit = 6 }: RelatedPostsProps) {
-  const relatedPosts = getRelatedPosts(currentSlug, limit)
+const blogTitles: Record<string, string> = {
+  'instagram-growth-2025': 'Instagram Growth Guide 2025',
+  '500k-followers': 'How to Reach 500K Instagram Followers',
+  'viral-carousel-guide': 'Viral Instagram Carousel Guide',
+  'scale-content-creation': 'Scale Content Creation',
+  'ai-influencer-success': 'AI Influencer Success Guide',
+  'monetize-with-ai': 'How to Monetize with AI',
+  'personal-brand-building': 'Personal Brand Building',
+  'youtube-shorts-strategy': 'YouTube Shorts Strategy',
+}
 
-  if (relatedPosts.length === 0) {
+export default function RelatedPosts({ currentSlug, limit = 3, className = '' }: RelatedPostsProps) {
+  const relatedSlugs = getRelatedPosts(currentSlug, limit)
+
+  if (relatedSlugs.length === 0) {
     return null
   }
 
   return (
-    <div className="mt-16 pt-12 border-t border-gray-700">
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold text-white mb-2">Related Articles</h2>
-        <p className="text-gray-400">Continue exploring related topics and strategies</p>
+    <section className={`bg-zinc-900/50 rounded-2xl border border-gray-800 p-8 my-12 ${className}`}>
+      <div className="flex items-center gap-3 mb-6">
+        <div className="p-2 bg-blue-500/10 rounded-lg">
+          <BookOpen className="w-5 h-5 text-blue-400" />
+        </div>
+        <h3 className="text-2xl font-bold text-white">Continue Reading</h3>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {relatedPosts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/blog/${post.slug}`}
-            className="group block p-6 bg-gray-800/30 rounded-xl hover:bg-gray-800/50 transition-all duration-300 border border-gray-700 hover:border-blue-600/50 hover:shadow-lg hover:shadow-blue-600/10"
-          >
-            <div className="mb-3">
-              <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-400 bg-blue-600/20 rounded-full">
-                {post.category}
-              </span>
-            </div>
+      <div className="grid md:grid-cols-3 gap-6">
+        {relatedSlugs.map((slug) => {
+          const title = blogTitles[slug] || slug.split('-').map(word =>
+            word.charAt(0).toUpperCase() + word.slice(1)
+          ).join(' ')
 
-            <h3 className="font-bold text-white group-hover:text-blue-300 transition-colors mb-3 text-lg leading-tight">
-              {post.title}
-            </h3>
-
-            <p className="text-gray-400 text-sm mb-4 line-clamp-2">
-              {post.description}
-            </p>
-
-            <div className="flex items-center justify-between text-xs text-gray-500">
-              <span>{post.readTime || '5 min read'}</span>
-              <span className="text-blue-400 group-hover:translate-x-1 transition-transform">
-                Read more →
-              </span>
-            </div>
-
-            {post.tags.length > 0 && (
-              <div className="mt-3 flex flex-wrap gap-1">
-                {post.tags.slice(0, 3).map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs text-gray-500 bg-gray-700/50 px-2 py-1 rounded"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
-          </Link>
-        ))}
+          return (
+            <Link
+              key={slug}
+              href={`/blog/${slug}`}
+              className="group bg-zinc-900 hover:bg-zinc-800 border border-gray-800 hover:border-blue-500/50 rounded-xl p-6 transition-all"
+            >
+              <h4 className="text-lg font-semibold text-white group-hover:text-blue-400 mb-3 line-clamp-2">
+                {title}
+              </h4>
+              <p className="text-sm text-gray-400 flex items-center gap-2">
+                Read article
+                <ArrowRight className="w-4 h-4" />
+              </p>
+            </Link>
+          )
+        })}
       </div>
-    </div>
+    </section>
   )
 }
