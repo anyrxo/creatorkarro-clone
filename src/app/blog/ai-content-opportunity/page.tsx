@@ -90,11 +90,11 @@ export default function AIContentOpportunity() {
                 </div>
 
                 <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              The <span className="text-purple-400">$1.2 Trillion</span> AI Content Gold Rush
+              The <span className="text-purple-400">AI Content</span> Opportunity Guide
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-400 mb-8">
-              Why the next 24 months will create more <span className="text-white font-semibold">content millionaires than the last 24 years</span>
+              How AI tools are transforming <span className="text-white font-semibold">content creation and digital publishing in 2026</span>
                 </p>
 
                 
@@ -105,23 +105,23 @@ export default function AIContentOpportunity() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl font-bold text-white text-center mb-8">The AI Content Economy Explosion</h2>
+                <h2 className="text-2xl font-bold text-white text-center mb-8">AI Content Capabilities in 2026</h2>
                 <div className="grid md:grid-cols-4 gap-4">
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-purple-400 mb-2">$1.2T</div>
-                        <p className="text-gray-400 text-sm">Creator economy by 2027</p>
+                        <div className="text-3xl font-bold text-purple-400 mb-2">Multi-Platform</div>
+                        <p className="text-gray-400 text-sm">Content repurposing</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-blue-400 mb-2">500M</div>
-                        <p className="text-gray-400 text-sm">New creators by 2027</p>
+                        <div className="text-3xl font-bold text-blue-400 mb-2">Auto-Scale</div>
+                        <p className="text-gray-400 text-sm">Production workflows</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-green-400 mb-2">82%</div>
-                        <p className="text-gray-400 text-sm">Content will be AI-assisted</p>
+                        <div className="text-3xl font-bold text-green-400 mb-2">50+ Languages</div>
+                        <p className="text-gray-400 text-sm">Instant translation</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-pink-400 mb-2">1000x</div>
-                        <p className="text-gray-400 text-sm">Content production speed</p>
+                        <div className="text-3xl font-bold text-pink-400 mb-2">24/7</div>
+                        <p className="text-gray-400 text-sm">Content generation</p>
                     </div>
                 </div>
             </div>
@@ -156,20 +156,20 @@ export default function AIContentOpportunity() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 className="text-green-400 font-semibold mb-2">Real Results:</h5>
+                                    <h5 className="text-green-400 font-semibold mb-2">Key Benefits:</h5>
                                     <ul className="space-y-1 text-sm text-gray-300">
-                                        <li>• Course creation: 30 days → 3 days</li>
-                                        <li>• Revenue per course: $50K-500K</li>
-                                        <li>• Students reached: 10x more</li>
-                                        <li>• Profit margins: 95%+</li>
-                                        <li>• Market size: $350B by 2026</li>
+                                        <li>• Course creation: 30 days → 3 days with AI</li>
+                                        <li>• Reach: Global audience, 50+ languages</li>
+                                        <li>• Scale: Multiple courses simultaneously</li>
+                                        <li>• Quality: Professional production with AI</li>
+                                        <li>• Updates: Easy content refresh and iteration</li>
                                     </ul>
                                 </div>
                             </div>
-                    
+
                             <div className="mt-4 p-4 bg-zinc-900 rounded">
                                 <p className="text-sm text-gray-300">
-                                    <span className="text-purple-400 font-semibold">Case Study:</span> Creator used AI to build 12 courses in 3 months, generated $1.2M
+                                    <span className="text-purple-400 font-semibold">Tools:</span> ChatGPT for outlines, Synthesia for video avatars, ElevenLabs for voiceovers
                                 </p>
                             </div>
                         </div>
@@ -202,15 +202,15 @@ export default function AIContentOpportunity() {
                                 <span className="text-gray-300">Thumbnail A/B testing at scale</span>
                             </div>
                         </div>
-                    
+
                         <div className="mt-4 grid grid-cols-3 gap-3">
                             <div className="bg-zinc-900 rounded p-3 text-center">
-                                <p className="text-2xl font-bold text-green-400">$10-50K</p>
-                                <p className="text-xs text-gray-400">Monthly revenue</p>
+                                <p className="text-2xl font-bold text-green-400">YT Partner</p>
+                                <p className="text-xs text-gray-400">Monetization</p>
                             </div>
                             <div className="bg-zinc-900 rounded p-3 text-center">
-                                <p className="text-2xl font-bold text-blue-400">5-10</p>
-                                <p className="text-xs text-gray-400">Channels possible</p>
+                                <p className="text-2xl font-bold text-blue-400">Multi-Channel</p>
+                                <p className="text-xs text-gray-400">Scalability</p>
                             </div>
                             <div className="bg-zinc-900 rounded p-3 text-center">
                                 <p className="text-2xl font-bold text-purple-400">2-4hrs</p>
@@ -235,7 +235,7 @@ export default function AIContentOpportunity() {
                         <p>• Monetize through brands, affiliates, products</p>
                         <p>• Scale without human limitations</p>
                     </div>
-                    <p className="text-green-400 font-semibold mt-4">Potential: $1-10M/year with 20+ AI influencers</p>
+                    <p className="text-green-400 font-semibold mt-4">Monetization: Sponsorships, affiliate marketing, product sales across multiple accounts</p>
                 </div>
             </div>
         </div>
@@ -257,9 +257,9 @@ export default function AIContentOpportunity() {
                     </ul>
                     <ul className="space-y-2 text-gray-300">
                         <li>• Example:"Left-handed guitar"</li>
-                        <li>• 1000 articles in 1 week</li>
-                        <li>• $500-5K/month per site</li>
-                        <li>• Manage 50-100 sites</li>
+                        <li>• 1000 articles in 1 week with AI</li>
+                        <li>• AdSense + affiliate monetization</li>
+                        <li>• Scalable site management</li>
                     </ul>
                 </div>
             </div>
@@ -274,8 +274,8 @@ export default function AIContentOpportunity() {
             <p className="text-gray-400 mb-3">Buy newsletters, 10x with AI, flip for profit</p>
             <p className="text-sm text-gray-300">• Buy at 2-3x revenue</p>
             <p className="text-sm text-gray-300">• AI-enhance content quality</p>
-            <p className="text-sm text-gray-300">• Sell at 10-15x revenue</p>
-            <p className="text-green-400 text-sm mt-3">ROI: 300-500%</p>
+            <p className="text-sm text-gray-300">• Increase subscriber value</p>
+            <p className="text-green-400 text-sm mt-3">Strategy: Growth + optimization</p>
         </div>
     </div>
 </div>
@@ -288,8 +288,8 @@ export default function AIContentOpportunity() {
             <p className="text-gray-400 mb-3">Publish 100+ books per year</p>
             <p className="text-sm text-gray-300">• Fiction & non-fiction</p>
             <p className="text-sm text-gray-300">• Multiple pen names</p>
-            <p className="text-sm text-gray-300">• Amazon KDP goldmine</p>
-            <p className="text-green-400 text-sm mt-3">$50-500K/year</p>
+            <p className="text-sm text-gray-300">• Amazon KDP platform</p>
+            <p className="text-green-400 text-sm mt-3">Monetization: Royalties + KU pages</p>
         </div>
     </div>
 </div>
@@ -303,7 +303,7 @@ export default function AIContentOpportunity() {
             <p className="text-sm text-gray-300">• AI hosts and guests</p>
             <p className="text-sm text-gray-300">• Infinite content topics</p>
             <p className="text-sm text-gray-300">• 24/7 production</p>
-            <p className="text-green-400 text-sm mt-3">CPM: $25-50</p>
+            <p className="text-green-400 text-sm mt-3">Monetization: Ads, sponsors, affiliates</p>
         </div>
     </div>
 </div>
@@ -316,8 +316,8 @@ export default function AIContentOpportunity() {
             <p className="text-gray-400 mb-3">Build SEO fortresses for SaaS</p>
             <p className="text-sm text-gray-300">• 10,000+ pages per site</p>
             <p className="text-sm text-gray-300">• Programmatic SEO</p>
-            <p className="text-sm text-gray-300">• $100K+ contracts</p>
-            <p className="text-green-400 text-sm mt-3">Per client: $10-50K/mo</p>
+            <p className="text-sm text-gray-300">• B2B SaaS clients</p>
+            <p className="text-green-400 text-sm mt-3">Model: Monthly retainers</p>
         </div>
     </div>
 </div>
@@ -331,7 +331,7 @@ export default function AIContentOpportunity() {
             <p className="text-sm text-gray-300">• AI speakers</p>
             <p className="text-sm text-gray-300">• Infinite scalability</p>
             <p className="text-sm text-gray-300">• Year-round events</p>
-            <p className="text-green-400 text-sm mt-3">$50-200K per event</p>
+            <p className="text-green-400 text-sm mt-3">Monetization: Tickets, sponsors, replays</p>
         </div>
     </div>
 </div>
@@ -345,7 +345,7 @@ export default function AIContentOpportunity() {
             <p className="text-sm text-gray-300">•"Best X in [City]" sites</p>
             <p className="text-sm text-gray-300">• Lead generation</p>
             <p className="text-sm text-gray-300">• Sell leads to businesses</p>
-            <p className="text-green-400 text-sm mt-3">$100-1K per lead</p>
+            <p className="text-green-400 text-sm mt-3">Model: Cost-per-lead pricing</p>
         </div>
     </div>
 </div>
@@ -484,6 +484,44 @@ export default function AIContentOpportunity() {
                 <p className="text-purple-400 mt-2">
                 It's whether you'll be among the first to build an empire with it.
                 </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Essential AI Tools for Content Creation</h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-purple-400 mb-3">Text Generation</h3>
+                <ul className="space-y-2 text-sm text-gray-300">
+                    <li>• ChatGPT: Long-form content, outlines, scripts</li>
+                    <li>• Claude: Research, analysis, technical writing</li>
+                    <li>• Jasper: Marketing copy, ads, emails</li>
+                    <li>• Copy.ai: Short-form content variations</li>
+                </ul>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-blue-400 mb-3">Image & Video</h3>
+                <ul className="space-y-2 text-sm text-gray-300">
+                    <li>• Midjourney: High-quality image generation</li>
+                    <li>• DALL-E 3: Photorealistic images</li>
+                    <li>• Synthesia: AI video avatars</li>
+                    <li>• Runway: Video editing and generation</li>
+                </ul>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-green-400 mb-3">Audio & Voice</h3>
+                <ul className="space-y-2 text-sm text-gray-300">
+                    <li>• ElevenLabs: Realistic voice cloning</li>
+                    <li>• Murf.ai: Professional voiceovers</li>
+                    <li>• Descript: Podcast editing with transcription</li>
+                    <li>• Suno: AI music generation</li>
+                </ul>
             </div>
         </div>
     </div>
