@@ -126,6 +126,13 @@ export default function ChatGPTAutomationPage() {
         </div>
       </section>
 
+      {/* Inline CTA - After ChatGPT Metrics: $25K+ Monthly Revenue + 24/7 Automation + 10K+ Tasks + 95% Cost Reduction */}
+      <div className="py-12 px-4">
+        <div className="max-w-4xl mx-auto">
+          <SmartCTA blogSlug="chatgpt-automation-workflows" variant="inline" />
+        </div>
+      </div>
+
       <section id="automation-workflows" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">
@@ -562,9 +569,6 @@ async function generateResponse(prompt) {
             </div>
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="chatgpt-automation-workflows" variant="inline" />
 
       </section>
 
