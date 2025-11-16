@@ -94,7 +94,7 @@ export default function SocialMediaAutomation() {
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-400 mb-8">
-              The complete system I use to manage <span className="text-white font-semibold">50+ accounts with 2 hours/week</span>
+              A complete guide to <span className="text-white font-semibold">social media automation tools, workflows, and best practices</span>
                 </p>
 
                 
@@ -105,32 +105,32 @@ export default function SocialMediaAutomation() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl font-bold text-white text-center mb-8">My Automation Results</h2>
+                <h2 className="text-2xl font-bold text-white text-center mb-8">What Social Media Automation Can Do</h2>
                 <div className="grid md:grid-cols-5 gap-4">
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">Platforms</h3>
-                        <p className="text-2xl font-bold text-blue-400">10</p>
-                        <p className="text-xs text-gray-500">Active</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Scheduling</h3>
+                        <p className="text-2xl font-bold text-blue-400">Multi-Platform</p>
+                        <p className="text-xs text-gray-500">Batch posting</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">Posts/Day</h3>
-                        <p className="text-2xl font-bold text-green-400">50+</p>
-                        <p className="text-xs text-gray-500">Automated</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Content</h3>
+                        <p className="text-2xl font-bold text-green-400">Repurposing</p>
+                        <p className="text-xs text-gray-500">AI-powered</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">Time Saved</h3>
-                        <p className="text-2xl font-bold text-purple-400">30hrs</p>
-                        <p className="text-xs text-gray-500">Per week</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Analytics</h3>
+                        <p className="text-2xl font-bold text-purple-400">Tracking</p>
+                        <p className="text-xs text-gray-500">Performance</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
                         <h3 className="text-sm text-gray-400 mb-2">Engagement</h3>
-                        <p className="text-2xl font-bold text-pink-400">+247%</p>
-                        <p className="text-xs text-gray-500">Increase</p>
+                        <p className="text-2xl font-bold text-pink-400">Auto-Response</p>
+                        <p className="text-xs text-gray-500">DMs & comments</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">Revenue</h3>
-                        <p className="text-2xl font-bold text-yellow-400">+$32K</p>
-                        <p className="text-xs text-gray-500">Monthly</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Optimization</h3>
+                        <p className="text-2xl font-bold text-yellow-400">Testing</p>
+                        <p className="text-xs text-gray-500">A/B variants</p>
                     </div>
                 </div>
             </div>
@@ -148,16 +148,16 @@ export default function SocialMediaAutomation() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
                 <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              Managing social media manually is a full-time job. I was spending <span className="text-white font-semibold">6 hours a day</span> posting, responding, and analyzing. Then I discovered automation...
+              Managing social media manually across multiple platforms is time-intensive. Automation tools can help streamline posting, engagement, and analytics workflows to make multi-platform presence more sustainable.
                 </p>
 
                 <div className="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-8 mb-8">
-                    <h2 className="text-2xl font-bold text-blue-400 mb-4">🚨 The Manual Posting Trap</h2>
+                    <h2 className="text-2xl font-bold text-blue-400 mb-4">🚨 The Manual Posting Challenge</h2>
                     <ul className="space-y-3 text-gray-300">
-                        <li>• <span className="text-white font-semibold">10 platforms × 3 posts/day = 30 posts</span></li>
-                        <li>• <span className="text-white font-semibold">5 minutes per post = 2.5 hours daily</span></li>
-                        <li>• <span className="text-white font-semibold">Add engagement = 4+ hours daily</span></li>
-                        <li>• <span className="text-white font-semibold">That's 28 hours per week!</span></li>
+                        <li>• <span className="text-white font-semibold">Multi-platform presence requires consistent posting schedules</span></li>
+                        <li>• <span className="text-white font-semibold">Each platform has optimal posting times and formats</span></li>
+                        <li>• <span className="text-white font-semibold">Engagement requires timely responses across channels</span></li>
+                        <li>• <span className="text-white font-semibold">Analytics tracking is essential for optimization</span></li>
                     </ul>
                 </div>
             </div>
@@ -461,6 +461,131 @@ export default function SocialMediaAutomation() {
                     <li>• Add advanced workflows</li>
                     <li>• Document your system</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Advanced Automation: API Integration</h2>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Direct API Posting</h3>
+                <p className="text-gray-300 mb-4">For maximum control and customization, many platforms offer APIs for programmatic posting:</p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Platform APIs</h4>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li>• <span className="text-blue-400">Twitter API v2:</span> Tweet posting, thread automation, media uploads</li>
+                            <li>• <span className="text-blue-400">Instagram Graph API:</span> Photo/video publishing, Stories, Reels (requires Business/Creator account)</li>
+                            <li>• <span className="text-blue-400">LinkedIn API:</span> Share posts, articles, company updates</li>
+                            <li>• <span className="text-blue-400">YouTube Data API:</span> Video uploads, metadata management, playlists</li>
+                            <li>• <span className="text-blue-400">Meta Graph API:</span> Facebook Pages posting and management</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Integration Tools</h4>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li>• <span className="text-green-400">Zapier:</span> 6,000+ app integrations, no-code workflows</li>
+                            <li>• <span className="text-green-400">Make (Integromat):</span> Visual automation builder, complex scenarios</li>
+                            <li>• <span className="text-green-400">n8n:</span> Open-source, self-hosted, unlimited workflows</li>
+                            <li>• <span className="text-green-400">Pipedream:</span> Code-first automation, developer-friendly</li>
+                            <li>• <span className="text-green-400">IFTTT:</span> Simple trigger-action automations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">Automation Workflows with No-Code Tools</h3>
+
+                <div className="space-y-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Example Workflow 1: Blog to Social</h4>
+                        <p className="text-sm text-gray-400 mb-2">Automatically share new blog posts across all platforms</p>
+                        <ol className="space-y-1 text-sm text-gray-300">
+                            <li>1. Trigger: New blog post published (RSS feed)</li>
+                            <li>2. Action: Extract title, excerpt, featured image</li>
+                            <li>3. Action: Generate platform-specific captions with AI</li>
+                            <li>4. Action: Post to Twitter, LinkedIn, Facebook simultaneously</li>
+                            <li>5. Action: Schedule Instagram post for optimal time</li>
+                        </ol>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Example Workflow 2: YouTube to Clips</h4>
+                        <p className="text-sm text-gray-400 mb-2">Repurpose long-form video into short clips</p>
+                        <ol className="space-y-1 text-sm text-gray-300">
+                            <li>1. Trigger: New YouTube video upload</li>
+                            <li>2. Action: Use AI to identify highlight moments</li>
+                            <li>3. Action: Auto-generate 30-60s clips</li>
+                            <li>4. Action: Add captions via speech-to-text</li>
+                            <li>5. Action: Post clips to TikTok, Instagram Reels, YouTube Shorts</li>
+                        </ol>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Example Workflow 3: Curated Content Sharing</h4>
+                        <p className="text-sm text-gray-400 mb-2">Share relevant industry content automatically</p>
+                        <ol className="space-y-1 text-sm text-gray-300">
+                            <li>1. Trigger: New article from curated RSS feeds</li>
+                            <li>2. Filter: Check if topic matches keywords</li>
+                            <li>3. Action: AI generates commentary/perspective</li>
+                            <li>4. Action: Schedule post with original link</li>
+                            <li>5. Action: Track engagement for optimization</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">Platform Rate Limits & Safety</h3>
+                <p className="text-gray-300 mb-4">Every platform has limits to prevent spam. Exceeding them can result in account restrictions:</p>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Twitter/X Limits</h4>
+                        <ul className="space-y-1 text-xs text-gray-300">
+                            <li>• 2,400 tweets/day (all users)</li>
+                            <li>• 1,000 DMs/day</li>
+                            <li>• 400 follows/day</li>
+                            <li>• API: 300 requests/15 min (varies by endpoint)</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Instagram Limits</h4>
+                        <ul className="space-y-1 text-xs text-gray-300">
+                            <li>• 200-500 likes/day (account age dependent)</li>
+                            <li>• 150-200 follows/day</li>
+                            <li>• 60 comments/hour</li>
+                            <li>• Graph API: 200 calls/user/hour</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">LinkedIn Limits</h4>
+                        <ul className="space-y-1 text-xs text-gray-300">
+                            <li>• 100-150 connection requests/week</li>
+                            <li>• 5-10 posts/day recommended</li>
+                            <li>• API: Varies by partnership tier</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="mt-4 p-4 bg-red-500/10 border border-red-500/20 rounded">
+                    <p className="text-red-400 font-semibold mb-2">⚠️ Automation Risks to Avoid:</p>
+                    <ul className="space-y-1 text-sm text-gray-300">
+                        <li>• <strong>Shadow banning:</strong> Excessive automation can trigger algorithmic penalties</li>
+                        <li>• <strong>Account suspension:</strong> Violating TOS with aggressive bot behavior</li>
+                        <li>• <strong>Engagement drops:</strong> Spammy automation reduces authentic interaction</li>
+                        <li>• <strong>Brand damage:</strong> Generic automated responses feel impersonal</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
