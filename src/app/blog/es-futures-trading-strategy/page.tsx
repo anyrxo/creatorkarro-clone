@@ -613,6 +613,9 @@ export default function BlogPost() {
         </p>
       </div>
 
+        {/* Inline CTA - After 6-Month Backtest: $8,940 + $11,220 Profit + 58-66% Win Rates */}
+        <SmartCTA blogSlug="es-futures-trading-strategy" variant="inline" />
+
       <h2>Frequently Asked Questions</h2>
 
       <div className="space-y-4 my-8">
@@ -675,10 +678,6 @@ export default function BlogPost() {
           {/* Related Posts */}
           <RelatedPosts currentSlug="es-futures-trading-strategy" limit={3} />
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="es-futures-trading-strategy" variant="inline" />
-
       </section>
     </div>
   )
