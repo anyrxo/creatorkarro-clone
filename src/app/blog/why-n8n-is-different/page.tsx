@@ -184,7 +184,14 @@ const schema = generateBlogPostSchema({
                         </div>
                     </div>
                 </div>
-            </div><div className="bg-zinc-900 rounded-xl p-6">
+            </div>
+
+            {/* Inline CTA - After Open Source Freedom: 100% Free + Unlimited Workflows + No Vendor Lock-in */}
+            <div className="my-8">
+              <SmartCTA blogSlug="why-n8n-is-different" variant="inline" />
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
             <div className="flex items-start gap-4">
                 <div className="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">2</div>
                 <div className="flex-1">
@@ -339,10 +346,6 @@ const schema = generateBlogPostSchema({
             </table>
         </div>
     </div>
-
-    {/* Inline CTA - After Cost Comparison: $0-20 vs $750+ Zapier vs $200+ Make */}
-    <SmartCTA blogSlug="why-n8n-is-different" variant="inline" />
-
 </section>
 
       <section
@@ -437,9 +440,6 @@ const schema = generateBlogPostSchema({
         </div>
     </div>
 </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="why-n8n-is-different" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="why-n8n-is-different" limit={3} />
