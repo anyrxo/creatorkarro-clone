@@ -275,6 +275,9 @@ const schema = generateBlogPostSchema({
             </p>
           </div>
 
+          {/* Inline CTA - After Benchmarks: 89.5% Chinese Score (Beats GPT-4 by 18pts) + $0 Cost vs $10-30 */}
+          <SmartCTA blogSlug="qwen-3-alibaba-open-source-llm" variant="inline" />
+
           {/* Section 1: Apache 2.0 License Deep Dive */}
           <div id="license" className="mb-20 scroll-mt-20">
             <h2 className="text-4xl font-bold text-white mb-8 flex items-center gap-3">
@@ -717,9 +720,6 @@ const schema = generateBlogPostSchema({
                 </div>
               </div>
 
-              {/* Inline CTA - After Hong Kong Fintech Success Story: 78%→91% Satisfaction + $4,200→$600 Cost Reduction */}
-              <SmartCTA blogSlug="qwen-3-alibaba-open-source-llm" variant="inline" />
-
               <div className="bg-gradient-to-br from-red-900/30 to-pink-900/20 border border-red-500/30 rounded-xl p-6">
                 <h3 className="text-2xl font-bold text-red-400 mb-4">🌏 Asia-Pacific Multilingual Support</h3>
                 <p className="text-gray-300 mb-4">
@@ -752,9 +752,6 @@ const schema = generateBlogPostSchema({
             <h2 className="text-4xl font-bold text-white mb-8">Frequently Asked Questions</h2>
             <FAQSchema faqs={faqs} />
           </div>
-
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="qwen-3-alibaba-open-source-llm" />
 
           {/* Related Posts */}
           <RelatedPosts currentSlug="qwen-3-alibaba-open-source-llm" limit={3} />
