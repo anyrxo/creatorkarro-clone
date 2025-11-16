@@ -94,9 +94,6 @@ export default function AIInfluencerLegal() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ai-influencer-legal-ethics-complete-guide" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">

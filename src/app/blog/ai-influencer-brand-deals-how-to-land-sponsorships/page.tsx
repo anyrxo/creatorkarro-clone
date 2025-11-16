@@ -94,9 +94,6 @@ export default function AIInfluencerBrandDeals() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ai-influencer-brand-deals-how-to-land-sponsorships" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
