@@ -99,9 +99,6 @@ export default function SaaSAutomationSystemsPage() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="saas-automation-systems" variant="inline" />
-
       </section>
 
       <section className="py-16 bg-gray-800/50">
@@ -455,6 +452,10 @@ export default function SaaSAutomationSystemsPage() {
                     <div className="text-sm text-gray-400">G2 Rating</div>
                   </div>
                 </div>
+
+                {/* Inline CTA - After Success Story Showing $3.2M ARR + 100x Customer Growth */}
+                <SmartCTA blogSlug="saas-automation-systems" variant="inline" />
+
               </div>
             </div><div className="mb-16">
               <h2 className="text-3xl font-bold mb-8 text-white">Avoid These SaaS Automation Mistakes</h2>

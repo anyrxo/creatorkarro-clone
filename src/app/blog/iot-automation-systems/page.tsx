@@ -99,9 +99,6 @@ export default function IoTAutomationSystemsPage() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="iot-automation-systems" variant="inline" />
-
       </section>
 
       <section className="py-16 bg-gray-800/50">
@@ -459,6 +456,10 @@ export default function IoTAutomationSystemsPage() {
                     <div className="text-sm text-gray-400">Satisfaction Rate</div>
                   </div>
                 </div>
+
+                {/* Inline CTA - After Success Story Showing €42.5M Annual Savings + 47% Energy Reduction */}
+                <SmartCTA blogSlug="iot-automation-systems" variant="inline" />
+
               </div>
             </div><div className="mb-16">
               <h2 className="text-3xl font-bold mb-8 text-white">Essential IoT Security & Best Practices</h2>
