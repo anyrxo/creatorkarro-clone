@@ -635,9 +635,11 @@ Step 4: Verify logic.
                 </div>
               </div>
             </div>
-          </section>
 
-          {/* Due to length, I'll add Sections 4-6 (Use Cases, Deployment, FAQs) in a follow-up. Let me add abbreviated versions for completion. */}
+            {/* Inline CTA - After Comparison: 96% Accuracy at 1/57th Cost + 78.3% MATH vs GPT-4's 52.9% + 3-4mo ROI */}
+            <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" variant="inline" />
+
+          </section>
 
           {/* Section 4: Real-World Use Cases - abbreviated */}
           <section id="real-world-use-cases" className="mb-20 scroll-mt-24">
@@ -669,10 +671,6 @@ Step 4: Verify logic.
                 </Link>
               </div>
             </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" variant="inline" />
-
           </section>
 
           {/* Section 5: Deployment Guide - abbreviated, details in FAQs */}
