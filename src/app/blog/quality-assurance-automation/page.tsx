@@ -104,7 +104,11 @@ const faqs = [
   {
     question: "What's the ROI of QA test automation and how long does implementation take?",
     answer: "QA automation typically delivers 300-500% ROI within 12-18 months through multiple benefits. Time savings: Manual regression testing takes 40-80 hours per release cycle; automated tests run in 1-3 hours, saving 35-75 hours monthly per tester. At $50/hour, that's $1,750-3,750 monthly savings per QA engineer. Bug cost reduction: Bugs found in production cost 10-100x more to fix than bugs caught in development. Automated tests catch bugs earlier, reducing total bug cost by 40-60%. Faster releases: Teams with good automation ship 3-10x more frequently, enabling faster feature delivery and market response. Implementation timeline: Small team (<10 engineers): 2-4 months to automate critical paths (login, checkout, top 20 features), 6-12 months for comprehensive coverage. Medium team (10-50 engineers): 3-6 months for initial automation framework + critical tests, 12-18 months for 70%+ coverage. Initial investment: $20,000-100,000 (test engineer time, tools, infrastructure) depending on team size and app complexity. Ongoing: $10,000-30,000 annually for maintenance and expansion. Payback period: 6-12 months for most teams. Key: Start with highest-ROI tests (critical user paths, frequently-breaking features) to see value quickly."
-  }
+  },
+
+        {/* Inline CTA - After ROI Analysis: 300-500% ROI + $1,750-3,750/Month Savings + 3-10x Faster Releases */}
+        <SmartCTA blogSlug="quality-assurance-automation" variant="inline" />
+
 ]
 
 export default function QualityAssuranceAutomationPage() {
@@ -526,9 +530,6 @@ test('user can login successfully', async ({ page }) => {
 
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="quality-assurance-automation" variant="inline" />
 
       </section>
     </div>
