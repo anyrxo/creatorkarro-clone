@@ -124,12 +124,17 @@ export default function AIImageGenerationGuide() {
                         <p className="text-gray-400 text-sm">Creative possibilities</p>
                     </div>
                 </div>
+
+                {/* Inline CTA - After Landscape Stats: 15+ Tools + $0.002/Image + 10 Sec Generation */}
+                <div className="mt-8">
+                  <SmartCTA blogSlug="ai-image-generation-guide" variant="inline" />
+                </div>
             </div>
         </div>
     </section>
 
       <section
-        
+
         className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
@@ -213,10 +218,6 @@ export default function AIImageGenerationGuide() {
                   
                 <div className="bg-zinc-800 rounded-lg p-6">
                     <h4 className="text-white font-semibold mb-3">Why Pros Use It:</h4>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ai-image-generation-guide" variant="inline" />
-
                     <div className="grid md:grid-cols-2 gap-4">
                         <ul className="space-y-2 text-gray-300">
                             <li>• Free and open source</li>
@@ -453,9 +454,6 @@ export default function AIImageGenerationGuide() {
         </div>
     </div>
 </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="ai-image-generation-guide" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="ai-image-generation-guide" limit={3} />
