@@ -135,6 +135,11 @@ export default function N8nApiIntegrationConnectAnyServiceWithWorkflows() {
               </div>
             </div>
 
+            {/* Inline CTA - After Fundamentals: 7 Key Topics + Authentication Methods + Production Workflows */}
+            <div className="my-8">
+              <SmartCTA blogSlug="n8n-api-integration-connect-any-service-workflows" variant="inline" />
+            </div>
+
             <div className="bg-gradient-to-r from-blue-600/10 to-cyan-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
               <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
                 <span className="mr-3">🔐</span>
@@ -434,9 +439,6 @@ Loop Node:
               </div>
             </div>
 
-            {/* Inline CTA - After Production Best Practices Tutorial Content */}
-            <SmartCTA blogSlug="n8n-api-integration-connect-any-service-workflows" variant="inline" />
-
             <div className="bg-gradient-to-r from-red-600/10 to-pink-600/10 p-8 rounded-xl mb-12 border border-red-600/20">
               <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
                 <span className="mr-3">🐛</span>
@@ -517,9 +519,6 @@ Loop Node:
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="n8n-api-integration-connect-any-service-workflows" />
-
           {/* Related Posts */}
           <RelatedPosts currentSlug="n8n-api-integration-connect-any-service-workflows" limit={3} />
         </div>
