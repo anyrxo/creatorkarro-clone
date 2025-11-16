@@ -296,7 +296,32 @@ export default function EssentialN8NWorkflows() {
             </div>
         </div>
     </div>
-</div><div className="bg-zinc-900 rounded-xl p-6">
+</div>
+
+                {/* Results Summary After First 4 Workflows */}
+                <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 mt-12">
+                    <h3 className="text-2xl font-bold text-white mb-6 text-center">Time & Money Saved with These 4 Workflows</h3>
+                    <div className="grid md:grid-cols-3 gap-8 mb-6">
+                        <div className="text-center">
+                            <div className="text-4xl font-bold text-blue-400 mb-2">16 hours</div>
+                            <p className="text-gray-400">Saved per week</p>
+                        </div>
+                        <div className="text-center">
+                            <div className="text-4xl font-bold text-purple-400 mb-2">$3,500</div>
+                            <p className="text-gray-400">Value of time saved/month</p>
+                        </div>
+                        <div className="text-center">
+                            <div className="text-4xl font-bold text-green-400 mb-2">+230%</div>
+                            <p className="text-gray-400">Engagement boost</p>
+                        </div>
+                    </div>
+                    <p className="text-center text-gray-300 italic">"These workflows alone have transformed how I run my creator business"</p>
+                </div>
+
+                {/* Inline CTA - After Showing 16 Hours Saved + $3.5K Value + 230% Engagement Boost */}
+                <SmartCTA blogSlug="essential-n8n-workflows" variant="inline" />
+
+            </div><div className="bg-zinc-900 rounded-xl p-6 mt-8">
 <div className="flex items-start gap-4">
     <div className="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-lg">5</div>
     <div className="flex-1">
@@ -453,44 +478,7 @@ export default function EssentialN8NWorkflows() {
     </div>
 </section>
 
-      <section
-        
-        className="section-spacing"
-      >
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
-        <h2 className="text-3xl font-bold text-white mb-8">The Bottom Line</h2>
-          
-        <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <div className="text-4xl font-bold text-blue-400 mb-2">22 hours</div>
-                    <p className="text-gray-400">Saved per week</p>
-                </div>
-                <div>
-                    <div className="text-4xl font-bold text-purple-400 mb-2">$4,800</div>
-                    <p className="text-gray-400">Value of time saved/month</p>
-                </div>
-                <div>
-                    <div className="text-4xl font-bold text-green-400 mb-2">∞</div>
-                    <p className="text-gray-400">Peace of mind</p>
-                </div>
-            </div>
-            
-            <blockquote className="text-xl text-gray-300 italic">"N8N turned my chaotic creator business into a well-oiled machine. I spend 80% less time on admin and 100% more time creating."
-            </blockquote>
-            <p className="text-white font-semibold mt-4">- Every creator who implements these workflows</p>
-        </div>
-    </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="essential-n8n-workflows" variant="inline" />
-
-</section>
-
       <section className="section-spacing">
-        {/* Smart CTA - All Access Pass */}
-        <SmartCTA blogSlug="essential-n8n-workflows" />
-
         {/* Related Posts */}
         <RelatedPosts currentSlug="essential-n8n-workflows" limit={3} />
       </section>
