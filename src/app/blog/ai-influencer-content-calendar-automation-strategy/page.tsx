@@ -121,6 +121,15 @@ export default function AIInfluencerAutomation() {
         </div>
       </section>
 
+      {/* Inline CTA - After Time Leverage Formula: 40hrs → 2hrs (95% Time Saved) + 3x/Day Automated Posting */}
+      <div className="py-12 px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <SmartCTA blogSlug="ai-influencer-content-calendar-automation-strategy" variant="inline" />
+          </div>
+        </div>
+      </div>
+
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Content Batching Strategy</h2>
@@ -577,9 +586,6 @@ export default function AIInfluencerAutomation() {
               </p>
             </div>
           </div>
-
-          {/* Inline CTA - After @EvaMetaverse Case Study Showing 47K Followers, $6.8K Revenue, 2 Hours/Week */}
-          <SmartCTA blogSlug="ai-influencer-content-calendar-automation-strategy" variant="inline" />
 
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Advanced Automation: Caption Generation</h2>
 
