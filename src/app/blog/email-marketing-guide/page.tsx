@@ -1280,37 +1280,10 @@ const schema = generateBlogPostSchema({
               The proven email sequences, AI-powered tools, and automation strategies that generate <span className="text-white font-semibold">$10K+ monthly</span> for thousands of businesses in 2026
                 </p>
 
-
-            </div>
-        </div>
-    </section>
-
-      <section className="py-16 px-4 border-y border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl font-bold text-white text-center mb-8">Real Email Marketing Results</h2>
-                <div className="grid md:grid-cols-4 gap-4">
-                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-blue-400 mb-2">$127K</div>
-                        <div className="text-gray-400 text-sm">Annual Email Revenue</div>
-                    </div>
-                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-green-400 mb-2">34%</div>
-                        <div className="text-gray-400 text-sm">Average Open Rate</div>
-                    </div>
-                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-purple-400 mb-2">$47</div>
-                        <div className="text-gray-400 text-sm">Revenue Per Subscriber</div>
-                    </div>
-                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-pink-400 mb-2">12.7%</div>
-                        <div className="text-gray-400 text-sm">Launch Conversion Rate</div>
-                    </div>
+                {/* Inline CTA - After Hero Metrics: $127K Annual Revenue + $10K+ Monthly + $42 ROI Per $1 Spent */}
+                <div className="mt-8">
+                  <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
                 </div>
-
-                {/* Inline CTA - After Showing $127K Revenue + $47 Per Subscriber Metrics */}
-                <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
-
             </div>
         </div>
     </section>
@@ -1344,8 +1317,31 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="email-marketing-guide" />
+      <section className="py-16 px-4 border-y border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+                <h2 className="text-2xl font-bold text-white text-center mb-8">Real Email Marketing Results</h2>
+                <div className="grid md:grid-cols-4 gap-4">
+                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                        <div className="text-3xl font-bold text-blue-400 mb-2">$127K</div>
+                        <div className="text-gray-400 text-sm">Annual Email Revenue</div>
+                    </div>
+                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                        <div className="text-3xl font-bold text-green-400 mb-2">34%</div>
+                        <div className="text-gray-400 text-sm">Average Open Rate</div>
+                    </div>
+                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                        <div className="text-3xl font-bold text-purple-400 mb-2">$47</div>
+                        <div className="text-gray-400 text-sm">Revenue Per Subscriber</div>
+                    </div>
+                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                        <div className="text-3xl font-bold text-pink-400 mb-2">12.7%</div>
+                        <div className="text-gray-400 text-sm">Launch Conversion Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="email-marketing-guide" limit={3} />

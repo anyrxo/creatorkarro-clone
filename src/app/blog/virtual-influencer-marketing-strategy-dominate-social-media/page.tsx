@@ -122,6 +122,11 @@ export default function VirtualInfluencerMarketingStrategyDominateSocialMedia() 
                 <p className="text-sm text-gray-500">vs Human influencers</p>
               </div>
             </div>
+
+            {/* Inline CTA - After Market Metrics: $15.5B Market + 380K+ AI Influencers (200% Growth) + 68% Higher Engagement */}
+            <div className="mt-8">
+              <SmartCTA blogSlug="virtual-influencer-marketing-strategy-dominate-social-media" variant="inline" />
+            </div>
           </div>
         </div>
       </section>
@@ -587,10 +592,6 @@ export default function VirtualInfluencerMarketingStrategyDominateSocialMedia() 
             </div>
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="virtual-influencer-marketing-strategy-dominate-social-media" variant="inline" />
-
       </section>
 
       <section className="section-spacing">

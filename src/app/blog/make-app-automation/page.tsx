@@ -312,6 +312,9 @@ export default function MakeAppAutomationPage() {
               </div>
             </div>
 
+            {/* Inline CTA - After Key Benefits: 40-60% Cheaper + Visual Workflows + Unlimited Branching */}
+            <SmartCTA blogSlug="make-app-automation" variant="inline" />
+
             {/* Section 2 */}
             <div id="section-2" className="mb-16 scroll-mt-8">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 flex items-center gap-3">
@@ -1575,18 +1578,11 @@ export default function MakeAppAutomationPage() {
               <FAQSchema faqs={faqs} />
             </div>
 
-            {/* Smart CTA - All Access Pass */}
-            <SmartCTA blogSlug="make-app-automation" />
-
             {/* Related Posts */}
             <RelatedPosts currentSlug="make-app-automation" limit={3} />
 
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="make-app-automation" variant="inline" />
-
       </section>
     </div>
   )

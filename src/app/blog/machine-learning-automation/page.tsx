@@ -289,6 +289,9 @@ export default function MachineLearningAutomation() {
               </div>
             </div>
 
+          {/* Inline CTA - After 3 ML Systems: $50K-200K/Month AutoML + $100K+ Computer Vision + $50K/Month NLP Savings */}
+          <SmartCTA blogSlug="machine-learning-automation" variant="inline" />
+
             <div className="bg-zinc-800 rounded-xl p-6">
               <div className="flex items-start gap-4">
                 <div className="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">4</div>
@@ -660,9 +663,6 @@ export default function MachineLearningAutomation() {
             </div>
           </div>
 
-          {/* Inline CTA - After 3 Success Stories: $45M Revenue, $12M Fraud Prevention, $3M Healthcare Savings */}
-          <SmartCTA blogSlug="machine-learning-automation" variant="inline" />
-
         </div>
       </section>
 
@@ -758,9 +758,6 @@ export default function MachineLearningAutomation() {
           </div>
         </div>
       </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="machine-learning-automation" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="machine-learning-automation" limit={3} />

@@ -121,6 +121,11 @@ export default function BlogPost() {
         </div>
       </div>
 
+      {/* Inline CTA - After Market Stats: 3.2M Daily Volume + $50/Point + $600B Notional Value */}
+      <div className="my-8">
+        <SmartCTA blogSlug="es-futures-trading-strategy" variant="inline" />
+      </div>
+
       <h2>ES Futures: The Ultimate Trading Guide for the World's Most Liquid Contract</h2>
       <p>The E-mini S&P 500 (ES) is not just another futures contract—it's the heartbeat of global equity markets. With 3.2 million contracts traded daily and over $600 billion in notional value changing hands, ES represents pure institutional money flow. If you want to trade where the smart money trades, this is it.</p>
 
@@ -613,9 +618,6 @@ export default function BlogPost() {
         </p>
       </div>
 
-        {/* Inline CTA - After 6-Month Backtest: $8,940 + $11,220 Profit + 58-66% Win Rates */}
-        <SmartCTA blogSlug="es-futures-trading-strategy" variant="inline" />
-
       <h2>Frequently Asked Questions</h2>
 
       <div className="space-y-4 my-8">
@@ -671,9 +673,6 @@ export default function BlogPost() {
       <p>Most importantly: ES trading is a marathon, not a sprint. Traders who survive the first year do so by protecting capital, not by chasing massive wins. Focus on consistency, and the profits will follow.</p>
 
           </div>
-
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="es-futures-trading-strategy" />
 
           {/* Related Posts */}
           <RelatedPosts currentSlug="es-futures-trading-strategy" limit={3} />

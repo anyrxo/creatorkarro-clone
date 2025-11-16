@@ -322,6 +322,9 @@ export default function AIInfluencerBrandDeals() {
             </div>
           </div>
 
+          {/* Inline CTA - After Pricing Tables: $2K-$200K Deal Ranges + Platform Rate Cards + Real Case Studies */}
+          <SmartCTA blogSlug="ai-influencer-brand-deals-how-to-land-sponsorships" variant="inline" />
+
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Outreach Templates (15-30% Response Rates)</h2>
 
           <div className="space-y-8 mb-12">
@@ -641,9 +644,6 @@ export default function AIInfluencerBrandDeals() {
               </p>
             </div>
           </div>
-
-          {/* Inline CTA - After @ZaraAI Case Study Showing $10,700 in First Month (2 Brand Deals) */}
-          <SmartCTA blogSlug="ai-influencer-brand-deals-how-to-land-sponsorships" variant="inline" />
 
           {/* Smart CTA - All Access Pass */}
           <SmartCTA blogSlug="ai-influencer-brand-deals-how-to-land-sponsorships" />

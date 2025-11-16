@@ -312,6 +312,9 @@ const schema = generateBlogPostSchema({
             </div>
           </section>
 
+          {/* Inline CTA - After Cost Analysis: 57x Cheaper ($80K → $1.4K Annually) + 98% Savings + 40% Cheaper Than R1 */}
+          <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" variant="inline" />
+
           {/* Section 2: Reasoning Mechanics */}
           <section id="reasoning-mechanics" className="mb-20 scroll-mt-24">
             <div className="flex items-center gap-3 mb-6">
@@ -635,9 +638,8 @@ Step 4: Verify logic.
                 </div>
               </div>
             </div>
-          </section>
 
-          {/* Due to length, I'll add Sections 4-6 (Use Cases, Deployment, FAQs) in a follow-up. Let me add abbreviated versions for completion. */}
+          </section>
 
           {/* Section 4: Real-World Use Cases - abbreviated */}
           <section id="real-world-use-cases" className="mb-20 scroll-mt-24">
@@ -669,10 +671,6 @@ Step 4: Verify logic.
                 </Link>
               </div>
             </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" variant="inline" />
-
           </section>
 
           {/* Section 5: Deployment Guide - abbreviated, details in FAQs */}
@@ -738,9 +736,6 @@ Step 4: Verify logic.
 
             <FAQSchema faqs={faqs} />
           </section>
-
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" />
 
           {/* Related Posts */}
           <RelatedPosts currentSlug="deepseek-r2-open-source-ai-revolution" limit={3} />

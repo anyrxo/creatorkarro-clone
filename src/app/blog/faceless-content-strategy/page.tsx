@@ -93,11 +93,11 @@ export default function FacelessContentStrategy() {
                 </div>
 
                 <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              How I Built 5 <span className="text-purple-400">Faceless Channels</span> to $500K/Year
+              How to Build <span className="text-purple-400">Faceless Channels</span> with AI Tools
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-400 mb-8">
-              The complete blueprint to <span className="text-white font-semibold">anonymous content empire building</span>
+              A complete guide to <span className="text-white font-semibold">creating anonymous content at scale</span>
                 </p>
 
                 
@@ -108,32 +108,32 @@ export default function FacelessContentStrategy() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl font-bold text-white text-center mb-8">My Faceless Content Empire Stats</h2>
+                <h2 className="text-2xl font-bold text-white text-center mb-8">Faceless Content Benefits</h2>
                 <div className="grid md:grid-cols-5 gap-4">
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">YouTube</h3>
-                        <p className="text-2xl font-bold text-red-500">2.3M</p>
-                        <p className="text-xs text-gray-500">Subscribers</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Privacy</h3>
+                        <p className="text-2xl font-bold text-red-500">Anonymous</p>
+                        <p className="text-xs text-gray-500">Identity protection</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">TikTok</h3>
-                        <p className="text-2xl font-bold text-purple-400">4.7M</p>
-                        <p className="text-xs text-gray-500">Followers</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Scalability</h3>
+                        <p className="text-2xl font-bold text-purple-400">Multi-Channel</p>
+                        <p className="text-xs text-gray-500">No camera limits</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">Instagram</h3>
-                        <p className="text-2xl font-bold text-pink-400">890K</p>
-                        <p className="text-xs text-gray-500">Followers</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Automation</h3>
+                        <p className="text-2xl font-bold text-pink-400">AI-Powered</p>
+                        <p className="text-xs text-gray-500">Tools available</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">Revenue</h3>
-                        <p className="text-2xl font-bold text-green-400">$42K</p>
-                        <p className="text-xs text-gray-500">Monthly avg</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Flexibility</h3>
+                        <p className="text-2xl font-bold text-green-400">Outsourceable</p>
+                        <p className="text-xs text-gray-500">Team building</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">Time</h3>
-                        <p className="text-2xl font-bold text-blue-400">10hrs</p>
-                        <p className="text-xs text-gray-500">Per week</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Niches</h3>
+                        <p className="text-2xl font-bold text-blue-400">Unlimited</p>
+                        <p className="text-xs text-gray-500">Topic flexibility</p>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@ export default function FacelessContentStrategy() {
         className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold text-white mb-8">The 7 Faceless Content Types That Print Money</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">7 Popular Faceless Content Types</h2>
           
             <div className="space-y-8"><div className="bg-zinc-900 rounded-xl p-6">
                 <div className="flex items-start gap-4">
@@ -167,12 +167,12 @@ export default function FacelessContentStrategy() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h4 className="text-green-400 font-semibold mb-3">Revenue Streams:</h4>
+                                    <h4 className="text-green-400 font-semibold mb-3">Monetization Options:</h4>
                                     <ul className="space-y-2 text-gray-300">
-                                        <li>• YouTube AdSense: $5-10K/mo</li>
-                                        <li>• TikTok Creator Fund: $2-5K/mo</li>
-                                        <li>• Affiliate products: $3-8K/mo</li>
-                                        <li>• Merch sales: $2-5K/mo</li>
+                                        <li>• YouTube AdSense (Partner Program)</li>
+                                        <li>• TikTok Creator Fund</li>
+                                        <li>• Affiliate marketing programs</li>
+                                        <li>• Print-on-demand merchandise</li>
                                     </ul>
                                 </div>
                             </div>
@@ -206,10 +206,10 @@ export default function FacelessContentStrategy() {
                                 <span className="text-gray-300">Split into parts for maximum retention</span>
                             </div>
                         </div>
-                    
+
                         <div className="mt-4 p-4 bg-zinc-900 rounded">
                             <p className="text-sm text-gray-300">
-                                <span className="text-purple-400 font-semibold">Success story:</span> One channel: 500K subs in 6 months, $15K/mo revenue
+                                <span className="text-purple-400 font-semibold">Monetization:</span> YouTube Partner Program, affiliate links, sponsored content
                             </p>
                         </div>
                     </div>
@@ -245,13 +245,13 @@ export default function FacelessContentStrategy() {
     </div><div className="grid md:grid-cols-2 gap-6">
     <div className="bg-zinc-900 rounded-xl p-6">
         <h4 className="text-xl font-bold text-white mb-3">4. Meditation & Sleep Content</h4>
-        <p className="text-gray-400 mb-3">Passive income champion</p>
+        <p className="text-gray-400 mb-3">Long-form passive content</p>
         <ul className="space-y-1 text-sm text-gray-300">
             <li>• Rain sounds, white noise</li>
             <li>• Guided meditations</li>
             <li>• Sleep stories</li>
         </ul>
-        <p className="text-green-400 text-sm mt-3">Revenue: $10-30K/mo (long videos = more ads)</p>
+        <p className="text-green-400 text-sm mt-3">Monetization: YouTube ads (longer videos), Spotify, sponsorships</p>
     </div>
 
     <div className="bg-zinc-900 rounded-xl p-6">
@@ -262,18 +262,18 @@ export default function FacelessContentStrategy() {
             <li>• Epic fails/wins</li>
             <li>• Tips & tricks</li>
         </ul>
-        <p className="text-green-400 text-sm mt-3">Revenue: $5-20K/mo per channel</p>
+        <p className="text-green-400 text-sm mt-3">Monetization: YouTube Partner Program, Twitch highlights, affiliates</p>
     </div>
 
     <div className="bg-zinc-900 rounded-xl p-6">
         <h4 className="text-xl font-bold text-white mb-3">6. Animation Channels</h4>
-        <p className="text-gray-400 mb-3">Higher barrier, higher reward</p>
+        <p className="text-gray-400 mb-3">Higher barrier, creative potential</p>
         <ul className="space-y-1 text-sm text-gray-300">
             <li>• Story time animations</li>
             <li>• Educational content</li>
             <li>• Comedy sketches</li>
         </ul>
-        <p className="text-green-400 text-sm mt-3">Revenue: $20-100K/mo potential</p>
+        <p className="text-green-400 text-sm mt-3">Monetization: Ad revenue, brand deals, merchandise, courses</p>
     </div>
 
     <div className="bg-zinc-900 rounded-xl p-6">
@@ -284,7 +284,7 @@ export default function FacelessContentStrategy() {
             <li>• Lo-fi compilations</li>
             <li>• Genre playlists</li>
         </ul>
-        <p className="text-green-400 text-sm mt-3">Revenue: $3-15K/mo + streaming</p>
+        <p className="text-green-400 text-sm mt-3">Monetization: YouTube Content ID, Spotify playlists, licensing</p>
     </div>
 </div>
 </div>
@@ -346,7 +346,7 @@ export default function FacelessContentStrategy() {
             
             <div className="mt-6 p-4 bg-zinc-900 rounded text-center">
                 <p className="text-white">
-                Result: <span className="text-purple-400 font-bold">50-60 pieces of content weekly</span> across all channels
+                Result: <span className="text-purple-400 font-bold">Consistent multi-platform content pipeline</span> with batch production efficiency
                 </p>
             </div>
         </div>
@@ -482,6 +482,166 @@ export default function FacelessContentStrategy() {
 </section>
 
       <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Platform Monetization Requirements</h2>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-red-500 mb-4">YouTube Partner Program</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Requirements</h4>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li>• 1,000 subscribers minimum</li>
+                            <li>• 4,000 watch hours (past 12 months)</li>
+                            <li>• OR 10 million Shorts views (past 90 days)</li>
+                            <li>• AdSense account linked</li>
+                            <li>• Follow YouTube monetization policies</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Revenue Sources</h4>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li>• Ad revenue (CPM varies by niche)</li>
+                            <li>• Channel memberships</li>
+                            <li>• Super Chat & Super Thanks</li>
+                            <li>• YouTube Premium revenue share</li>
+                            <li>• Merchandise shelf</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">TikTok Creator Fund & Rewards</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">TikTok Creativity Program</h4>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li>• 10,000 followers minimum</li>
+                            <li>• 100,000 views in past 30 days</li>
+                            <li>• Videos must be 1+ minute long</li>
+                            <li>• Age 18+ requirement</li>
+                            <li>• Available in select countries</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Alternative Monetization</h4>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li>• TikTok Shop affiliate program</li>
+                            <li>• Brand partnerships via Creator Marketplace</li>
+                            <li>• Link in bio to products/courses</li>
+                            <li>• LIVE gifts (1,000+ followers)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-pink-400 mb-4">Instagram Monetization</h3>
+                <div className="bg-zinc-800 rounded-lg p-4">
+                    <h4 className="text-white font-semibold mb-3">Available Options</h4>
+                    <div className="grid md:grid-cols-3 gap-4">
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li><strong>Reels Play Bonus:</strong></li>
+                            <li>• Invitation-only program</li>
+                            <li>• Based on Reels performance</li>
+                            <li>• Payment varies by views</li>
+                        </ul>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li><strong>Brand Partnerships:</strong></li>
+                            <li>• Via Instagram Partnership Ads</li>
+                            <li>• Branded content tools</li>
+                            <li>• Affiliate program integration</li>
+                        </ul>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li><strong>Shop Features:</strong></li>
+                            <li>• Instagram Shopping</li>
+                            <li>• Product tagging</li>
+                            <li>• Checkout integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Content Production Workflow Details</h3>
+
+                <div className="space-y-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Script Development Process</h4>
+                        <ol className="space-y-2 text-sm text-gray-300">
+                            <li><strong>1. Topic Research:</strong> Use AnswerThePublic, Reddit, Quora, Google Trends to find trending questions in your niche</li>
+                            <li><strong>2. Outline Creation:</strong> Structure with hook (first 3 seconds), main content (70%), and call-to-action (final 10%)</li>
+                            <li><strong>3. AI-Assisted Writing:</strong> Use ChatGPT/Claude with prompts: "Write a 60-second script about [topic] for [platform] targeting [audience]"</li>
+                            <li><strong>4. Human Editing:</strong> Add personality, check facts, ensure brand voice consistency</li>
+                            <li><strong>5. A/B Testing:</strong> Create 2-3 hook variations to test which performs best</li>
+                        </ol>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Video Production Techniques</h4>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <p className="text-purple-400 font-semibold mb-2">Stock Footage Method:</p>
+                                <ul className="space-y-1 text-xs text-gray-300">
+                                    <li>• Download 10-20 clips per video from Pexels/Unsplash</li>
+                                    <li>• Match footage to script timing (3-5 sec per clip)</li>
+                                    <li>• Add transitions in CapCut or DaVinci Resolve</li>
+                                    <li>• Apply color grading presets for consistency</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="text-purple-400 font-semibold mb-2">AI Video Method:</p>
+                                <ul className="space-y-1 text-xs text-gray-300">
+                                    <li>• Use Runway, Pika, or Leonardo for AI clips</li>
+                                    <li>• Generate consistent character/style</li>
+                                    <li>• Prompt engineering: "[scene description], cinematic, 4K"</li>
+                                    <li>• Combine multiple AI tools for variety</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Voice-Over Options</h4>
+                        <div className="grid md:grid-cols-3 gap-4">
+                            <div>
+                                <p className="text-green-400 font-semibold mb-2">AI Voice (ElevenLabs)</p>
+                                <ul className="space-y-1 text-xs text-gray-300">
+                                    <li>• Professional Voice Library</li>
+                                    <li>• Voice cloning available</li>
+                                    <li>• Pricing: $5-99/mo</li>
+                                    <li>• 30+ languages</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="text-green-400 font-semibold mb-2">Freelance VO Artists</p>
+                                <ul className="space-y-1 text-xs text-gray-300">
+                                    <li>• Fiverr: $10-50 per video</li>
+                                    <li>• Upwork: $20-100 per video</li>
+                                    <li>• Build ongoing relationship</li>
+                                    <li>• Request commercial rights</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="text-green-400 font-semibold mb-2">Text-to-Speech (Free)</p>
+                                <ul className="space-y-1 text-xs text-gray-300">
+                                    <li>• Google Cloud TTS</li>
+                                    <li>• Microsoft Azure TTS</li>
+                                    <li>• Limited voice quality</li>
+                                    <li>• Good for testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing bg-zinc-900">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Avoid These Faceless Content Mistakes</h2>
           

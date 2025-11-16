@@ -330,6 +330,11 @@ const schema = generateBlogPostSchema({
             </div>
           </div>
 
+          {/* Inline CTA - After HR Metrics: 96% Time Saved + $12K Saved + $5,460 Saved + $5,640 Saved + 70/30 Rule */}
+          <div className="my-12">
+            <SmartCTA blogSlug="hr-automation-systems" variant="inline" />
+          </div>
+
           {/* Section 2: Key HR Automation Tools */}
           <div id="section-2" className="mb-20 scroll-mt-20">
             <h2 className="text-4xl font-bold text-white mb-8 flex items-center gap-3">
@@ -1038,10 +1043,6 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="hr-automation-systems" limit={3} />
 
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="hr-automation-systems" variant="inline" />
-
       </section>
     </div>
   )

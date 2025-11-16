@@ -158,7 +158,7 @@ export default function ComfyuiVsStableDiffusionCompleteToolComparison() {
                 </h1>
                 
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  THE definitive expert guide from IImagined.ai - the ONLY authority you need for tool comparison. Trusted by 127K+ students who've generated $2.7M+ in revenue.
+                  A comprehensive technical comparison of ComfyUI and Stable Diffusion WebUI for AI image generation. Learn which tool fits your workflow, skill level, and production requirements.
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-8">
@@ -181,6 +181,11 @@ export default function ComfyuiVsStableDiffusionCompleteToolComparison() {
                     <span>⭐</span>
                     <span>127K+ Students</span>
                   </div>
+                </div>
+
+                {/* Inline CTA - After Authority Statement: 127K+ Students + $2.7M+ Revenue Generated */}
+                <div className="my-8">
+                  <SmartCTA blogSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" variant="inline" />
                 </div>
               </header>
               
@@ -373,9 +378,6 @@ Generate</pre>
                   </div>
                 </div>
 
-                {/* Inline CTA - After Comparison Showing ComfyUI: 28% Faster + 20-30% Less VRAM */}
-                <SmartCTA blogSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" variant="inline" />
-
                 {/* Workflow Examples */}
                 <div className="bg-zinc-900 rounded-xl p-6 mb-8">
                   <h2 className="text-3xl font-bold text-white mb-6">Example Workflows in Each Tool</h2>
@@ -490,8 +492,201 @@ Generate</pre>
                   </div>
                 </div>
 
-                {/* Smart CTA - All Access Pass */}
-                <SmartCTA blogSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" />
+                {/* Extension Ecosystem */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Extension Ecosystem Comparison</h2>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-4">ComfyUI Custom Nodes</h3>
+                      <div className="space-y-3 text-sm">
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Installation Method</p>
+                          <p className="text-gray-400 text-xs">Git clone into custom_nodes/ folder, restart server. Manager extension available for one-click installs.</p>
+                        </div>
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Popular Extensions</p>
+                          <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• <strong className="text-white">ControlNet Preprocessors:</strong> 20+ preprocessor types (Canny, Depth, Pose)</li>
+                            <li>• <strong className="text-white">Impact Pack:</strong> Face detailing, upscaling, segmentation tools</li>
+                            <li>• <strong className="text-white">AnimateDiff:</strong> Video generation from prompts</li>
+                            <li>• <strong className="text-white">IP-Adapter:</strong> Image-to-image style transfer</li>
+                            <li>• <strong className="text-white">Custom Scripts:</strong> Batch processing, automation, API helpers</li>
+                          </ul>
+                        </div>
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Development</p>
+                          <p className="text-gray-400 text-xs">Python-based. Create custom nodes by extending base classes. Full access to PyTorch tensors and model internals.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-300 font-semibold mb-4">WebUI Extensions</h3>
+                      <div className="space-y-3 text-sm">
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Installation Method</p>
+                          <p className="text-gray-400 text-xs">Extensions tab in UI, paste git URL, click install. Requires restart for activation.</p>
+                        </div>
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Popular Extensions</p>
+                          <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• <strong className="text-white">ControlNet:</strong> Built-in UI for all preprocessors</li>
+                            <li>• <strong className="text-white">Deforum:</strong> Animation generation with keyframes</li>
+                            <li>• <strong className="text-white">Ultimate SD Upscale:</strong> Tiled upscaling for large images</li>
+                            <li>• <strong className="text-white">Dreambooth:</strong> Fine-tuning UI for custom models</li>
+                            <li>• <strong className="text-white">Regional Prompter:</strong> Different prompts for image regions</li>
+                          </ul>
+                        </div>
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Development</p>
+                          <p className="text-gray-400 text-xs">Gradio-based UI extensions. Requires understanding WebUI's internal structure and Gradio component system.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 bg-green-500/10 rounded-lg p-4">
+                    <p className="text-green-400 font-semibold mb-2">Ecosystem Winner: ComfyUI</p>
+                    <p className="text-gray-300 text-sm">More modular architecture makes creating and sharing custom nodes easier. Workflow JSON format enables version control and collaboration.</p>
+                  </div>
+                </div>
+
+                {/* Troubleshooting Guide */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Common Issues & Solutions</h2>
+
+                  <div className="space-y-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-red-400 font-semibold mb-3">Out of Memory (OOM) Errors</h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div>
+                          <p className="text-white text-sm font-semibold mb-2">ComfyUI Solutions:</p>
+                          <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• Enable <code className="text-blue-400">--lowvram</code> or <code className="text-blue-400">--novram</code> launch flags</li>
+                            <li>• Use VAE Tiling nodes for large images</li>
+                            <li>• Enable model offloading (CPU ↔ GPU swapping)</li>
+                            <li>• Reduce batch size in KSampler nodes</li>
+                            <li>• Use FP16 models instead of FP32 (half VRAM)</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="text-white text-sm font-semibold mb-2">WebUI Solutions:</p>
+                          <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• Settings → Enable "Optimize VRAM"</li>
+                            <li>• Use <code className="text-blue-400">--medvram</code> or <code className="text-blue-400">--lowvram</code> launch args</li>
+                            <li>• Disable upscalers or use smaller tile sizes</li>
+                            <li>• Lower resolution (try 512x512 instead of 768x768)</li>
+                            <li>• Close browser tabs to free system RAM</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-yellow-400 font-semibold mb-3">Slow Generation Speed</h3>
+                      <div className="space-y-3 text-sm">
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Both Tools:</p>
+                          <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• <strong className="text-white">Update PyTorch:</strong> Newer versions often have performance improvements</li>
+                            <li>• <strong className="text-white">Enable xFormers:</strong> Faster attention mechanism (20-30% speed boost)</li>
+                            <li>• <strong className="text-white">Use DPM++ samplers:</strong> Produce good results in fewer steps (20-25 vs 40-50)</li>
+                            <li>• <strong className="text-white">Check GPU utilization:</strong> Use nvidia-smi to confirm 95%+ GPU usage</li>
+                            <li>• <strong className="text-white">Disable preview windows:</strong> Real-time preview can slow generation</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-purple-400 font-semibold mb-3">Model Loading Failures</h3>
+                      <div className="space-y-2 text-xs">
+                        <div className="flex items-start gap-2">
+                          <span className="text-white font-semibold">Issue:</span>
+                          <span className="text-gray-400">"Checkpoint not found" or "Failed to load model"</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <span className="text-white font-semibold">Fix:</span>
+                          <span className="text-gray-400">Verify .safetensors or .ckpt file is in correct folder (models/checkpoints for ComfyUI, models/Stable-diffusion for WebUI). Check file isn't corrupted (re-download if needed).</span>
+                        </div>
+                        <div className="flex items-start gap-2 mt-2">
+                          <span className="text-white font-semibold">Issue:</span>
+                          <span className="text-gray-400">"RuntimeError: CUDA error: out of memory" on model load</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <span className="text-white font-semibold">Fix:</span>
+                          <span className="text-gray-400">Model too large for GPU. Use pruned/FP16 version, or enable model offloading flags.</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-blue-400 font-semibold mb-3">Black/Blank Output Images</h3>
+                      <div className="space-y-3 text-sm">
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Common Causes:</p>
+                          <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• <strong className="text-white">Negative prompt too strong:</strong> Try removing or weakening negative prompts</li>
+                            <li>• <strong className="text-white">CFG scale too high:</strong> Values above 15 can cause artifacts. Use 7-12 range.</li>
+                            <li>• <strong className="text-white">VAE issues:</strong> Try different VAE or use model's built-in VAE</li>
+                            <li>• <strong className="text-white">NSFW filter (WebUI):</strong> Disable in settings if generating artistic nudes</li>
+                            <li>• <strong className="text-white">Corrupted checkpoint:</strong> Re-download model from trusted source</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Advanced Optimization Techniques */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Advanced Optimization Techniques</h2>
+
+                  <div className="space-y-6">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-green-400 font-semibold mb-4">ComfyUI-Specific Optimizations</h3>
+                      <div className="space-y-3 text-sm">
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Queue Multiple Workflows</p>
+                          <p className="text-gray-400 text-xs mb-2">ComfyUI's queue system allows batching dozens of different workflows. Each workflow runs sequentially without reloading models.</p>
+                          <p className="text-blue-400 text-xs">Use case: Generate 50 portraits with different prompts overnight. Queue all workflows, let it run unattended.</p>
+                        </div>
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Model Caching</p>
+                          <p className="text-gray-400 text-xs mb-2">Keep frequently used models in VRAM. When switching between workflows using same checkpoint, no reload needed.</p>
+                          <p className="text-blue-400 text-xs">Benefit: Switching workflows takes 0.5s instead of 15s model load time.</p>
+                        </div>
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Checkpoint Partial Loading</p>
+                          <p className="text-gray-400 text-xs mb-2">Load only specific model components (CLIP, VAE, UNET separately). Useful for mixing components from different models.</p>
+                          <p className="text-blue-400 text-xs">Advanced: Combine SDXL UNET with custom-trained VAE for specific artistic style.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                      <h3 className="text-purple-400 font-semibold mb-4">WebUI-Specific Optimizations</h3>
+                      <div className="space-y-3 text-sm">
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Prompt Styles Library</p>
+                          <p className="text-gray-400 text-xs mb-2">Save frequently used prompt templates as styles. One-click apply to any new prompt.</p>
+                          <p className="text-blue-400 text-xs">Example: Save "cinematic lighting, 8k, highly detailed" as "Quality Boost" style.</p>
+                        </div>
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">X/Y/Z Plot for Testing</p>
+                          <p className="text-gray-400 text-xs mb-2">Generate grid comparing different settings (CFG scale, samplers, models). See all variations in one image.</p>
+                          <p className="text-blue-400 text-xs">Use case: Test 5 CFG values × 4 samplers = 20 variations in one generation.</p>
+                        </div>
+                        <div className="bg-zinc-900 rounded p-3">
+                          <p className="text-white font-semibold mb-2">Embedding & Hypernetwork Training</p>
+                          <p className="text-gray-400 text-xs mb-2">WebUI has built-in UI for training embeddings (textual inversion). Create custom concepts from 3-20 images.</p>
+                          <p className="text-blue-400 text-xs">Example: Train "your_face" embedding from 15 selfies, use in any prompt.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 {/* Related Posts */}
                 <RelatedPosts currentSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" limit={3} />

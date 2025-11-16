@@ -1393,6 +1393,9 @@ Great client management isn't about pleasing everyone - it's about setting clear
         </div>
     </section>
 
+      {/* Inline CTA - After Hero Stats: $127K Highest Revenue + 89% Profit Margin + 3-6mo to $5K/Month */}
+      <SmartCTA blogSlug="comfyui-success-story" variant="inline" />
+
       <section className="py-16 px-4">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <div className="prose prose-invert max-w-none">
@@ -1407,9 +1410,6 @@ Great client management isn't about pleasing everyone - it's about setting clear
             </p>
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="comfyui-success-story" variant="inline" />
 
       </section>
 
@@ -1492,9 +1492,6 @@ Great client management isn't about pleasing everyone - it's about setting clear
           </div>
         </div>
       </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="comfyui-success-story" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="comfyui-success-story" limit={3} />

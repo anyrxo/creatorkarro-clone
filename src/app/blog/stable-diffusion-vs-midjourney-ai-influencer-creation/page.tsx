@@ -425,6 +425,9 @@ export default function StableDiffusionVsMidjourneyComparison() {
               </div>
             </div>
 
+            {/* Inline CTA - After Cost Comparison: $684/year Savings + $3/mo SD vs $60/mo MJ + 95% Consistency */}
+            <SmartCTA blogSlug="stable-diffusion-vs-midjourney-ai-influencer-creation" variant="inline" />
+
             <div className="bg-zinc-900 rounded-xl p-8">
               <h3 className="text-xl font-bold text-blue-400 mb-4">4. NSFW or Adult Content</h3>
               <p className="text-gray-300 mb-4">
@@ -780,9 +783,6 @@ export default function StableDiffusionVsMidjourneyComparison() {
               </p>
             </div>
           </div>
-
-          {/* Inline CTA - After @AivaStyle Case Study Showing 152K Followers, $18K/Month Revenue */}
-          <SmartCTA blogSlug="stable-diffusion-vs-midjourney-ai-influencer-creation" variant="inline" />
 
           <div className="bg-yellow-900/30 border border-yellow-500/30 rounded-xl p-8 mb-12">
             <h3 className="text-xl font-bold text-yellow-400 mb-4">Learning Tips for Beginners</h3>

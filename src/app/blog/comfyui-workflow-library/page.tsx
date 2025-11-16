@@ -420,9 +420,126 @@ export default function ComfyUIWorkflowLibrary() {
     </div>
 </section>
 
-      <section className="section-spacing bg-zinc-900">
+      <section className="section-spacing">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center"> Advanced Workflows (Game Changers)</h2>
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Understanding ComfyUI Node Architecture</h2>
+
+        <div className="space-y-6 mb-12">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Core Node Types Explained</h3>
+                <div className="space-y-4">
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">1. Loader Nodes</h4>
+                        <p className="text-gray-300 text-sm mb-2">Load checkpoints, LoRAs, VAEs, and other models into memory.</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">CheckpointLoaderSimple:</strong> Loads base SD model (SDXL, SD 1.5, etc.)</li>
+                            <li>• <strong className="text-white">LoraLoader:</strong> Adds style/character LoRAs on top of checkpoint</li>
+                            <li>• <strong className="text-white">VAELoader:</strong> Loads VAE for encoding/decoding latents to pixels</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">2. Conditioning Nodes</h4>
+                        <p className="text-gray-300 text-sm mb-2">Convert text prompts into embeddings the model understands.</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">CLIPTextEncode:</strong> Processes positive/negative prompts into conditioning vectors</li>
+                            <li>• <strong className="text-white">ConditioningCombine:</strong> Merges multiple conditioning inputs</li>
+                            <li>• <strong className="text-white">ConditioningSetArea:</strong> Applies conditioning to specific image regions</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">3. Sampling Nodes</h4>
+                        <p className="text-gray-300 text-sm mb-2">The core denoising process that generates images.</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">KSampler:</strong> Basic sampler with seed, steps, CFG, sampler method selection</li>
+                            <li>• <strong className="text-white">KSamplerAdvanced:</strong> Add noise levels, denoise strength control</li>
+                            <li>• <strong className="text-white">Common samplers:</strong> DPM++ 2M Karras, Euler a, DDIM, UniPC</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">4. Latent Nodes</h4>
+                        <p className="text-gray-300 text-sm mb-2">Create and manipulate the latent space (compressed image representation).</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">EmptyLatentImage:</strong> Creates blank latent at specified resolution</li>
+                            <li>• <strong className="text-white">VAEEncode:</strong> Converts pixel image to latent space</li>
+                            <li>• <strong className="text-white">LatentUpscale:</strong> Scales latent before decoding for higher resolution</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">5. Image Processing Nodes</h4>
+                        <p className="text-gray-300 text-sm mb-2">Post-process final outputs or prepare inputs.</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">VAEDecode:</strong> Converts latent back to viewable pixel image</li>
+                            <li>• <strong className="text-white">ImageScale:</strong> Resize images with various algorithms (lanczos, nearest, etc.)</li>
+                            <li>• <strong className="text-white">SaveImage:</strong> Exports final output to disk with metadata</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">Workflow Connection Logic</h3>
+                <p className="text-gray-300 mb-4">ComfyUI workflows are directed acyclic graphs (DAGs). Data flows from inputs to outputs through typed connections.</p>
+                <div className="space-y-3">
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <p className="text-white font-semibold mb-2">Connection Types:</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">MODEL:</strong> Purple - Checkpoint data flows from loaders to samplers</li>
+                            <li>• <strong className="text-white">CONDITIONING:</strong> Yellow - Text embeddings flow to sampler positive/negative inputs</li>
+                            <li>• <strong className="text-white">LATENT:</strong> Pink - Compressed images flow between latent operations</li>
+                            <li>• <strong className="text-white">IMAGE:</strong> Green - Pixel data flows through image processing nodes</li>
+                            <li>• <strong className="text-white">VAE:</strong> Red - VAE model flows to encode/decode nodes</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <p className="text-white font-semibold mb-2">Execution Order:</p>
+                        <p className="text-gray-400 text-sm">ComfyUI automatically determines execution order by analyzing dependencies. Nodes execute only when all required inputs are available. This allows parallel execution of independent branches.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">Building Custom Workflows</h3>
+                <div className="space-y-3 text-gray-300">
+                    <div className="flex items-start gap-3">
+                        <span className="text-green-400 mt-1">•</span>
+                        <div>
+                            <strong className="text-white">Start with basic pipeline:</strong> CheckpointLoader → CLIPTextEncode (2x) → EmptyLatentImage → KSampler → VAEDecode → SaveImage
+                        </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <span className="text-green-400 mt-1">•</span>
+                        <div>
+                            <strong className="text-white">Add LoRAs for style:</strong> Insert LoraLoader between checkpoint and CLIP/sampler
+                        </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <span className="text-green-400 mt-1">•</span>
+                        <div>
+                            <strong className="text-white">Implement img2img:</strong> Replace EmptyLatentImage with LoadImage → VAEEncode, set denoise <1.0
+                        </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <span className="text-green-400 mt-1">•</span>
+                        <div>
+                            <strong className="text-white">Add upscaling:</strong> Append LatentUpscale between sampler and decode, or use separate upscaler model
+                        </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                        <span className="text-green-400 mt-1">•</span>
+                        <div>
+                            <strong className="text-white">Control composition:</strong> Use ControlNet nodes with depth maps, canny edges, or pose skeletons as guides
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 className="text-3xl font-bold text-white mb-8 text-center"> Advanced Workflows</h2>
           
         <div className="space-y-4">
             <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 rounded-xl p-6">

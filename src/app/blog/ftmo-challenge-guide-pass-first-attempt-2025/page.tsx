@@ -122,6 +122,11 @@ const schema = generateBlogPostSchema({
                         </div>
                     </div>
                 </div>
+
+                {/* Inline CTA - After Reality Check: 77% Fail + 23% Pass + 15-30 Days Average Success Time */}
+                <div className="mt-8">
+                  <SmartCTA blogSlug="ftmo-challenge-guide-pass-first-attempt-2025" variant="inline" />
+                </div>
             </div>
         </div>
     </section>
@@ -240,9 +245,6 @@ const schema = generateBlogPostSchema({
             </div>
         </div>
     </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="ftmo-challenge-guide-pass-first-attempt-2025" />
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
@@ -780,10 +782,6 @@ const schema = generateBlogPostSchema({
                 </div>
             </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ftmo-challenge-guide-pass-first-attempt-2025" variant="inline" />
-
     </section>
 
       {/* Related Articles */}

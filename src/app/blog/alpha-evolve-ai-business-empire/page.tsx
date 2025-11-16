@@ -379,6 +379,9 @@ This is the framework the top 1% of AI entrepreneurs are using to build real wea
                 </div>
               </div>
 
+              {/* Inline CTA - After Empire Framework: $175K/Month Portfolio + $110K/Month Stack + $1.2M Annual Revenue on $50K (2,400% ROI) */}
+              <SmartCTA blogSlug="alpha-evolve-ai-business-empire" variant="inline" />
+
               <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-white mb-3">What are the best multiple revenue stream strategies for AI businesses?</h3>
                 <div className="text-gray-300 leading-relaxed whitespace-pre-line">
@@ -2912,9 +2915,6 @@ The opportunity is massive. The playbooks are proven. The only question: which e
                 </div>
               </div>
 
-              {/* Inline CTA - After 5 Case Studies: $50K-200K Monthly Empire Builders */}
-              <SmartCTA blogSlug="alpha-evolve-ai-business-empire" variant="inline" />
-
               <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-white mb-3">How do I manage risk and diversify when building an AI business empire?</h3>
                 <div className="text-gray-300 leading-relaxed whitespace-pre-line">
@@ -3393,9 +3393,6 @@ This is how you build generational wealth, not just a business.`}
           </div>
         </div>
       </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="alpha-evolve-ai-business-empire" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="alpha-evolve-ai-business-empire" limit={3} />

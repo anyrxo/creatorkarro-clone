@@ -1123,6 +1123,11 @@ The tool doesn't matter as much as matching it to your volume, budget, and consi
               Real benchmarks, cost breakdowns, and workflow examples from creators generating <span className="text-white font-semibold">50,000+ images monthly</span>
                 </p>
 
+                {/* Inline CTA - After Hero: $127K Revenue + 50,000+ Images Monthly + Real Benchmarks */}
+                <div className="mb-12">
+                  <SmartCTA blogSlug="comfyui-comparison" variant="inline" />
+                </div>
+
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-12">
                   <div className="bg-zinc-900 rounded-xl p-6 border border-purple-500/20">
                     <div className="text-3xl font-bold text-purple-400 mb-2">$127K</div>
@@ -1144,10 +1149,6 @@ The tool doesn't matter as much as matching it to your volume, budget, and consi
 
             </div>
         </div>
-
-        {/* Inline CTA - After Showing $127K Revenue and 10x Productivity Stats */}
-        <SmartCTA blogSlug="comfyui-comparison" variant="inline" />
-
     </section>
 
       <section className="py-16 px-4">
@@ -1240,9 +1241,6 @@ The tool doesn't matter as much as matching it to your volume, budget, and consi
           </div>
         </div>
       </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="comfyui-comparison" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="comfyui-comparison" limit={3} />

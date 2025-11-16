@@ -124,12 +124,17 @@ export default function AIImageGenerationGuide() {
                         <p className="text-gray-400 text-sm">Creative possibilities</p>
                     </div>
                 </div>
+
+                {/* Inline CTA - After Landscape Stats: 15+ Tools + $0.002/Image + 10 Sec Generation */}
+                <div className="mt-8">
+                  <SmartCTA blogSlug="ai-image-generation-guide" variant="inline" />
+                </div>
             </div>
         </div>
     </section>
 
       <section
-        
+
         className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
@@ -213,10 +218,6 @@ export default function AIImageGenerationGuide() {
                   
                 <div className="bg-zinc-800 rounded-lg p-6">
                     <h4 className="text-white font-semibold mb-3">Why Pros Use It:</h4>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ai-image-generation-guide" variant="inline" />
-
                     <div className="grid md:grid-cols-2 gap-4">
                         <ul className="space-y-2 text-gray-300">
                             <li>• Free and open source</li>
@@ -273,8 +274,49 @@ export default function AIImageGenerationGuide() {
 
       <section className="section-spacing bg-zinc-900">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Technical Guide: Understanding AI Image Models</h2>
+
+        <div className="bg-zinc-800 rounded-xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-white mb-6">Model Architecture Comparison</h3>
+
+            <div className="space-y-6">
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-blue-400 font-bold mb-3">Diffusion Models (Stable Diffusion, Midjourney, DALL-E)</h4>
+                    <p className="text-gray-300 mb-4">Work by gradually removing noise from random pixels until an image emerges. Think of it like sculpting from static.</p>
+                    <ul className="space-y-2 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">Process:</strong> Start with pure noise, denoise over 20-50 steps guided by text prompt</li>
+                        <li>• <strong className="text-white">Strengths:</strong> High quality, controllable, can do img2img transformations</li>
+                        <li>• <strong className="text-white">Limitations:</strong> Slower generation (10-60 seconds), requires GPU power</li>
+                        <li>• <strong className="text-white">Best for:</strong> Artistic images, portraits, landscapes, concept art</li>
+                    </ul>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-purple-400 font-bold mb-3">GAN Models (StyleGAN, older tools)</h4>
+                    <p className="text-gray-300 mb-4">Generator network creates images while discriminator network judges quality. Adversarial training.</p>
+                    <ul className="space-y-2 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">Process:</strong> Generator learns to fool discriminator into thinking images are real</li>
+                        <li>• <strong className="text-white">Strengths:</strong> Fast generation, photorealistic faces</li>
+                        <li>• <strong className="text-white">Limitations:</strong> Limited control, mode collapse, harder to train</li>
+                        <li>• <strong className="text-white">Best for:</strong> Face generation, style transfer (mostly superseded by diffusion)</li>
+                    </ul>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-green-400 font-bold mb-3">Transformer-Based (DALL-E 3)</h4>
+                    <p className="text-gray-300 mb-4">Uses attention mechanisms similar to ChatGPT to understand text and generate images.</p>
+                    <ul className="space-y-2 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">Process:</strong> Processes entire text prompt at once, understands context and relationships</li>
+                        <li>• <strong className="text-white">Strengths:</strong> Better text understanding, follows complex prompts accurately</li>
+                        <li>• <strong className="text-white">Limitations:</strong> Computationally expensive, requires large models</li>
+                        <li>• <strong className="text-white">Best for:</strong> Complex scenes with multiple objects, text-in-images</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Master Prompt Engineering</h2>
-          
+
         <div className="bg-zinc-800 rounded-xl p-8">
             <h3 className="text-xl font-bold text-blue-400 mb-6">The Anatomy of a Perfect Prompt</h3>
             
@@ -419,43 +461,62 @@ export default function AIImageGenerationGuide() {
 
       <section className="section-spacing">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">Turn AI Images Into Income</h2>
-          
-        <div className="bg-zinc-900 rounded-xl p-8">
-            <h3 className="text-xl font-bold text-green-400 mb-6">Revenue Streams for AI Artists</h3>
-            
-            <div className="space-y-4">
-                <div className="flex justify-between items-center pb-3 border-b border-gray-800">
-                    <span className="text-gray-300">Stock photography (Adobe, Shutterstock)</span>
-                    <span className="text-green-400">$500-5K/mo</span>
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Critical Parameters Explained</h2>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">CFG Scale (Classifier-Free Guidance)</h3>
+                <p className="text-gray-300 mb-4">Controls how strictly the AI follows your prompt.</p>
+                <div className="grid md:grid-cols-3 gap-4 text-sm">
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <p className="text-white font-semibold mb-2">Low (1-7)</p>
+                        <p className="text-gray-400">More creative, ignores prompt details. Good for abstract art, exploration.</p>
+                    </div>
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <p className="text-white font-semibold mb-2">Medium (7-12)</p>
+                        <p className="text-gray-400">Balanced. Default for most use cases. Sweet spot for quality.</p>
+                    </div>
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <p className="text-white font-semibold mb-2">High (12-20)</p>
+                        <p className="text-gray-400">Strict adherence, can oversaturate. Use for precise requirements.</p>
+                    </div>
                 </div>
-                <div className="flex justify-between items-center pb-3 border-b border-gray-800">
-                    <span className="text-gray-300">Print on demand products</span>
-                    <span className="text-green-400">$1-10K/mo</span>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">Steps (Sampling Steps)</h3>
+                <p className="text-gray-300 mb-4">Number of denoising iterations. More steps = higher quality but slower.</p>
+                <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>• <strong className="text-white">20-30 steps:</strong> Fast drafts, concept testing</li>
+                    <li>• <strong className="text-white">30-50 steps:</strong> Standard quality, most common</li>
+                    <li>• <strong className="text-white">50-100 steps:</strong> High detail, diminishing returns after 50</li>
+                    <li>• <strong className="text-white">Pro tip:</strong> DPM++ 2M Karras sampler gets good results at 25 steps</li>
+                </ul>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">Seed Values</h3>
+                <p className="text-gray-300 mb-4">Random number that determines starting noise pattern.</p>
+                <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>• <strong className="text-white">-1 (random):</strong> Different result every time, good for exploration</li>
+                    <li>• <strong className="text-white">Fixed seed:</strong> Reproducible results with same prompt and settings</li>
+                    <li>• <strong className="text-white">Seed traveling:</strong> Incrementally change seed for variations</li>
+                    <li>• <strong className="text-white">Use case:</strong> Lock seed when testing prompt variations</li>
+                </ul>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-pink-400 mb-4">Negative Prompts</h3>
+                <p className="text-gray-300 mb-4">Tell the AI what NOT to include. Essential for quality control.</p>
+                <div className="bg-zinc-800 p-4 rounded mb-3">
+                    <p className="text-white font-semibold mb-2">Standard negative prompt template:</p>
+                    <p className="text-gray-400 text-sm font-mono">low quality, blurry, pixelated, distorted, watermark, text, signature, cropped, out of frame, worst quality, jpeg artifacts</p>
                 </div>
-                <div className="flex justify-between items-center pb-3 border-b border-gray-800">
-                    <span className="text-gray-300">NFT collections</span>
-                    <span className="text-green-400">$5-50K/launch</span>
-                </div>
-                <div className="flex justify-between items-center pb-3 border-b border-gray-800">
-                    <span className="text-gray-300">Custom client work</span>
-                    <span className="text-green-400">$50-500/image</span>
-                </div>
-                <div className="flex justify-between items-center pb-3 border-b border-gray-800">
-                    <span className="text-gray-300">Social media content packages</span>
-                    <span className="text-green-400">$500-5K/client</span>
-                </div>
-                <div className="flex justify-between items-center">
-                    <span className="text-gray-300">AI art courses/tutorials</span>
-                    <span className="text-green-400">$10-100K/launch</span>
-                </div>
+                <p className="text-gray-400 text-sm">Add specific negatives based on issues: "extra fingers" for hands, "duplicate" for repeated objects</p>
             </div>
         </div>
     </div>
 </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="ai-image-generation-guide" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="ai-image-generation-guide" limit={3} />

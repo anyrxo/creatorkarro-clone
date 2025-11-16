@@ -163,6 +163,15 @@ export default function N8nAIIntegration() {
         </div>
       </section>
 
+      {/* Inline CTA - After AI Automation Results: $11,800/mo Saved + 5x Content Output + $12K → $200 Cost Reduction */}
+      <div className="py-12 px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <SmartCTA blogSlug="n8n-ai-integration-openai-gpt-chatgpt-complete-workflows" variant="inline" />
+          </div>
+        </div>
+      </div>
+
       {/* API Cost Warnings */}
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
@@ -811,9 +820,6 @@ Cost: $0.040 per image (1024x1024)
             </ol>
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="n8n-ai-integration-openai-gpt-chatgpt-complete-workflows" variant="inline" />
 
       </section>
 

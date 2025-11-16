@@ -120,8 +120,8 @@ export default function InstagramReelsGuide() {
                         <div className="text-gray-400 text-sm">Viral Reels (1M+)</div>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-green-400 mb-2">$147K</div>
-                        <div className="text-gray-400 text-sm">Revenue Generated</div>
+                        <div className="text-3xl font-bold text-green-400 mb-2">6.2%</div>
+                        <div className="text-gray-400 text-sm">Avg Engagement Rate</div>
                     </div>
                 </div>
             </div>
@@ -398,36 +398,127 @@ export default function InstagramReelsGuide() {
     </div>
 </section>
 
-      <section
-        
-        className="section-spacing"
-      >
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">Turn Reels Views Into Revenue</h2>
-          
-        <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">My Reels Revenue Breakdown</h3>
-            
-            <div className="space-y-4">
-                <div className="flex justify-between items-center p-4 bg-zinc-900/50 rounded">
-                    <span className="text-gray-300">Course Sales (from Reels traffic)</span>
-                    <span className="text-white font-bold">$67,000/month</span>
+      <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Technical Specifications & Best Practices</h2>
+
+        <div className="space-y-8">
+            <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-white mb-6">Optimal Video Specifications</h3>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-zinc-900 rounded-lg p-6">
+                        <h4 className="text-purple-400 font-bold mb-4">Resolution & Format</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• <strong className="text-white">Aspect Ratio:</strong> 9:16 (vertical) mandatory for full-screen display</li>
+                            <li>• <strong className="text-white">Resolution:</strong> 1080x1920 pixels minimum (recommended for quality)</li>
+                            <li>• <strong className="text-white">Frame Rate:</strong> 30 fps standard, 60 fps for smooth motion</li>
+                            <li>• <strong className="text-white">File Format:</strong> MP4 or MOV (H.264 codec preferred)</li>
+                            <li>• <strong className="text-white">Max File Size:</strong> 4GB limit (though smaller files upload faster)</li>
+                            <li>• <strong className="text-white">Bitrate:</strong> 10-15 Mbps for optimal quality without large file size</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-900 rounded-lg p-6">
+                        <h4 className="text-pink-400 font-bold mb-4">Length & Timing</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• <strong className="text-white">Duration Range:</strong> 15 seconds to 90 seconds (max length)</li>
+                            <li>• <strong className="text-white">Sweet Spot:</strong> 15-30 seconds for highest completion rates</li>
+                            <li>• <strong className="text-white">Hook Window:</strong> First 0.5-1 second to stop scroll</li>
+                            <li>• <strong className="text-white">Value Window:</strong> Deliver core value within first 3 seconds</li>
+                            <li>• <strong className="text-white">Loop Point:</strong> End frame should connect to start (encourages replays)</li>
+                            <li>• <strong className="text-white">Safe Zones:</strong> Keep critical elements 120px from edges</li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="flex justify-between items-center p-4 bg-zinc-900/50 rounded">
-                    <span className="text-gray-300">Affiliate Commissions</span>
-                    <span className="text-white font-bold">$23,000/month</span>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-blue-400 mb-6">Caption Writing Strategy</h3>
+                <p className="text-gray-300 mb-6">Captions directly impact discoverability and engagement. Instagram indexes caption text for search.</p>
+
+                <div className="space-y-4">
+                    <div className="bg-zinc-800 p-6 rounded-lg">
+                        <h4 className="text-white font-semibold mb-3">Caption Structure</h4>
+                        <div className="space-y-3 text-gray-300 text-sm">
+                            <div className="flex items-start gap-3">
+                                <span className="text-purple-400 font-bold">1.</span>
+                                <div>
+                                    <p className="text-white font-semibold">Hook (First Line)</p>
+                                    <p className="text-gray-400">First 125 characters visible without "more" tap. Must be compelling.</p>
+                                    <p className="text-purple-400 text-xs mt-1">Example: "This mistake cost me 10M views (and how to avoid it)"</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-3">
+                                <span className="text-purple-400 font-bold">2.</span>
+                                <div>
+                                    <p className="text-white font-semibold">Value/Story (Middle)</p>
+                                    <p className="text-gray-400">Expand on hook. Provide context, tips, or story details.</p>
+                                    <p className="text-purple-400 text-xs mt-1">Keep paragraphs short (2-3 lines each) for readability</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-3">
+                                <span className="text-purple-400 font-bold">3.</span>
+                                <div>
+                                    <p className="text-white font-semibold">CTA (End)</p>
+                                    <p className="text-gray-400">Clear action: "Save this", "Share with someone who needs this", "Comment your experience"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-zinc-800 p-6 rounded-lg">
+                        <h4 className="text-white font-semibold mb-3">SEO Keywords in Captions</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• <strong className="text-white">Natural Integration:</strong> Include 2-3 target keywords organically in caption text</li>
+                            <li>• <strong className="text-white">Search Intent:</strong> Use phrases people actually search (e.g., "how to edit Reels", "Reels tutorial")</li>
+                            <li>• <strong className="text-white">Location Tags:</strong> Add if locally relevant (boosts discoverability in area)</li>
+                            <li>• <strong className="text-white">Accessibility:</strong> Describe visual elements for screen readers (helps SEO too)</li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="flex justify-between items-center p-4 bg-zinc-900/50 rounded">
-                    <span className="text-gray-300">Brand Partnerships</span>
-                    <span className="text-white font-bold">$35,000/month</span>
-                </div>
-                <div className="flex justify-between items-center p-4 bg-zinc-900/50 rounded">
-                    <span className="text-gray-300">1:1 Coaching</span>
-                    <span className="text-white font-bold">$22,000/month</span>
-                </div>
-                <div className="flex justify-between items-center p-4 bg-purple-500/20 rounded border border-purple-500/30">
-                    <span className="text-purple-400 font-semibold">Total Monthly Revenue</span>
-                    <span className="text-purple-400 font-bold text-xl">$147,000</span>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-green-400 mb-6">Hashtag Strategy That Actually Works</h3>
+
+                <div className="space-y-6">
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">The 3-5-7 Method</h4>
+                        <div className="grid md:grid-cols-3 gap-4">
+                            <div className="bg-zinc-800 p-4 rounded">
+                                <p className="text-purple-400 font-semibold mb-2">3 Niche Tags</p>
+                                <p className="text-gray-400 text-sm">10K-100K posts. Your specific niche.</p>
+                                <p className="text-gray-500 text-xs mt-2">Example: #reelstutorial #instagramgrowth #contentcreators</p>
+                            </div>
+                            <div className="bg-zinc-800 p-4 rounded">
+                                <p className="text-pink-400 font-semibold mb-2">5 Medium Tags</p>
+                                <p className="text-gray-400 text-sm">100K-500K posts. Broader topics.</p>
+                                <p className="text-gray-500 text-xs mt-2">Example: #reelsinstagram #instagramtips #socialmediatips</p>
+                            </div>
+                            <div className="bg-zinc-800 p-4 rounded">
+                                <p className="text-blue-400 font-semibold mb-2">7 Total Max</p>
+                                <p className="text-gray-400 text-sm">Instagram recommends 3-5. Never exceed 10.</p>
+                                <p className="text-gray-500 text-xs mt-2">Avoid: #viral #explorepage #fyp (low-quality, spammy)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-zinc-800 p-6 rounded-lg">
+                        <h4 className="text-white font-semibold mb-3">Hashtag Research Process</h4>
+                        <ol className="space-y-2 text-gray-300 text-sm">
+                            <li><strong className="text-white">1. Search Your Topic:</strong> Type keyword in Instagram search, see suggested hashtags</li>
+                            <li><strong className="text-white">2. Check Post Volume:</strong> Click hashtag to see total posts. Aim for 10K-500K range</li>
+                            <li><strong className="text-white">3. Analyze Top Posts:</strong> Are they recent? Similar to your content? Good engagement?</li>
+                            <li><strong className="text-white">4. Monitor Performance:</strong> Track which hashtags drive reach in Insights</li>
+                            <li><strong className="text-white">5. Rotate Sets:</strong> Use 3-4 different hashtag sets, alternate between posts</li>
+                        </ol>
+                    </div>
+
+                    <div className="bg-purple-500/20 border border-purple-500/30 p-6 rounded-lg">
+                        <h4 className="text-purple-400 font-bold mb-3">Pro Tip: Branded Hashtag</h4>
+                        <p className="text-gray-300 text-sm">Create a unique branded hashtag for your community (e.g., #YourNameCreates). Encourage followers to use it. Builds community and provides UGC content source.</p>
+                    </div>
                 </div>
             </div>
         </div>
