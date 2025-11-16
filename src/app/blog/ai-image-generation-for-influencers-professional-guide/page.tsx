@@ -273,6 +273,29 @@ cd stable-diffusion-webui
                   </div>
                 </div>
 
+                {/* Real Use Cases */}
+                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Real Use Cases: Influencer Success Stories</h2>
+
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold">Case 1: Fashion Influencer Content Calendar</p>
+                      <p className="text-gray-300 text-sm mt-2">Generated 90 outfit variations in 3 days (would take 3 weeks for photoshoots). Posted consistent daily content for 3 months. Engagement increased 240%.</p>
+                    </div>
+                    <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold">Case 2: Virtual AI Influencer Launch</p>
+                      <p className="text-gray-300 text-sm mt-2">Created fully synthetic character. Generated 500+ unique posts in 2 weeks. Reached 50K followers with zero photoshoots or travel costs. Monetized with brand sponsorships at $2K per post.</p>
+                    </div>
+                    <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-lg p-4">
+                      <p className="text-white font-semibold">Case 3: Product Photography Alternative</p>
+                      <p className="text-gray-300 text-sm mt-2">Small ecommerce brand generated lifestyle product photos (15 variations per product). Saved $3,000 in photography studio costs. Same quality as professional shoots.</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Inline CTA - After Success Stories: 50K Followers + $2K/Post Sponsorships + $3K Savings */}
+                <SmartCTA blogSlug="ai-image-generation-for-influencers-professional-guide" variant="inline" />
+
                 {/* Settings Optimization */}
                 <div className="bg-zinc-900 rounded-xl p-6 mb-8">
                   <h2 className="text-3xl font-bold text-white mb-6">Settings Optimization: Configuration Guide</h2>
@@ -405,32 +428,6 @@ cd stable-diffusion-webui
                     </div>
                   </div>
                 </div>
-
-                {/* Real Use Cases */}
-                <div className="bg-zinc-900 rounded-xl p-6 mb-8">
-                  <h2 className="text-3xl font-bold text-white mb-6">Real Use Cases: Influencer Success Stories</h2>
-
-                  <div className="space-y-4">
-                    <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg p-4">
-                      <p className="text-white font-semibold">Case 1: Fashion Influencer Content Calendar</p>
-                      <p className="text-gray-300 text-sm mt-2">Generated 90 outfit variations in 3 days (would take 3 weeks for photoshoots). Posted consistent daily content for 3 months. Engagement increased 240%.</p>
-                    </div>
-                    <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-lg p-4">
-                      <p className="text-white font-semibold">Case 2: Virtual AI Influencer Launch</p>
-                      <p className="text-gray-300 text-sm mt-2">Created fully synthetic character. Generated 500+ unique posts in 2 weeks. Reached 50K followers with zero photoshoots or travel costs. Monetized with brand sponsorships at $2K per post.</p>
-                    </div>
-                    <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-lg p-4">
-                      <p className="text-white font-semibold">Case 3: Product Photography Alternative</p>
-                      <p className="text-gray-300 text-sm mt-2">Small ecommerce brand generated lifestyle product photos (15 variations per product). Saved $3,000 in photography studio costs. Same quality as professional shoots.</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Inline CTA - After Success Stories: 50K Followers + $2K/Post Sponsorships + $3K Savings */}
-                <SmartCTA blogSlug="ai-image-generation-for-influencers-professional-guide" variant="inline" />
-
-                {/* Smart CTA - All Access Pass */}
-                <SmartCTA blogSlug="ai-image-generation-for-influencers-professional-guide" />
 
                 {/* Related Posts */}
                 <RelatedPosts currentSlug="ai-image-generation-for-influencers-professional-guide" limit={3} />
