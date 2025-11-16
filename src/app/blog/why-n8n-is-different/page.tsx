@@ -154,10 +154,6 @@ const schema = generateBlogPostSchema({
             <div className="space-y-8"><div className="bg-zinc-900 rounded-xl p-6">
                 <div className="flex items-start gap-4">
                     <div className="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold flex-shrink-0">1</div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="why-n8n-is-different" variant="inline" />
-
                     <div className="flex-1">
                         <h3 className="text-2xl font-bold text-white mb-3">100% Open Source Freedom</h3>
                         <p className="text-gray-400 mb-4">Own your automations forever, modify anything, contribute back</p>
@@ -343,6 +339,10 @@ const schema = generateBlogPostSchema({
             </table>
         </div>
     </div>
+
+    {/* Inline CTA - After Cost Comparison: $0-20 vs $750+ Zapier vs $200+ Make */}
+    <SmartCTA blogSlug="why-n8n-is-different" variant="inline" />
+
 </section>
 
       <section
