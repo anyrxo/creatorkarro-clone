@@ -407,6 +407,10 @@ export default function NoCodeAutomationToolsPage() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - After Automation Examples: 3x Conversion + 15hrs/day Saved + 99% Accuracy + 60% Faster Support */}
+        <SmartCTA blogSlug="no-code-automation-tools" variant="inline" />
+
       </section>
 
       <section className="py-20 px-4">
@@ -558,10 +562,6 @@ export default function NoCodeAutomationToolsPage() {
               </div>
             </div>
           </div>
-
-          {/* Inline CTA - After 3 Success Stories: $2M ARR, 300% Efficiency, 90% Time Saved */}
-          <SmartCTA blogSlug="no-code-automation-tools" variant="inline" />
-
         </div>
       </section>
 
