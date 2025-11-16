@@ -616,6 +616,10 @@ export default function RoboticProcessAutomation() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - After 3 Success Stories: $4.2M Savings + 99.9% Accuracy + 10x Order Capacity */}
+        <SmartCTA blogSlug="robotic-process-automation" variant="inline" />
+
       </section>
 
       <section className="section-spacing">
@@ -786,10 +790,6 @@ export default function RoboticProcessAutomation() {
             </div>
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="robotic-process-automation" variant="inline" />
-
       </section>
 
       {/* Smart CTA - All Access Pass */}
