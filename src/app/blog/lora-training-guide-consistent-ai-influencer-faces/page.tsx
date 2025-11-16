@@ -166,6 +166,9 @@ export default function LoRATrainingGuide() {
             </div>
           </div>
 
+          {/* Inline CTA - After LoRA Benefits: 95-98% Consistency + 30-90min Training + Unlimited Variations */}
+          <SmartCTA blogSlug="lora-training-guide-consistent-ai-influencer-faces" variant="inline" />
+
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Phase 1: Dataset Preparation</h2>
 
           <div className="space-y-8 mb-12">
@@ -693,9 +696,6 @@ export default function LoRATrainingGuide() {
               </ul>
             </div>
           </div>
-
-          {/* Inline CTA - After @LunaRae Case Study Showing 98% Consistency, 1,200+ Images, 4 Brand Deals */}
-          <SmartCTA blogSlug="lora-training-guide-consistent-ai-influencer-faces" variant="inline" />
 
           {/* Smart CTA - All Access Pass */}
           <SmartCTA blogSlug="lora-training-guide-consistent-ai-influencer-faces" />
