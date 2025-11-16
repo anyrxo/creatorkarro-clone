@@ -200,6 +200,31 @@ const schema = generateBlogPostSchema({
             </p>
           </div>
 
+          {/* Real Revenue Examples */}
+          <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 border border-green-500/30 rounded-2xl p-8 mb-12">
+            <h2 className="text-3xl font-bold text-white mb-6">Real Creator Revenue Examples (First Year)</h2>
+            <div className="space-y-6">
+              <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-green-500">
+                <h3 className="text-xl font-bold text-green-400 mb-2">Side Hustle (10 hrs/week)</h3>
+                <p className="text-2xl font-bold text-white mb-2">$27,383 Year 1</p>
+                <p className="text-gray-300 text-sm">Freelance writer's "Rate Negotiation" course. $197 price, 340-person email list. Worked 8-12 hours/week on marketing. 85% profit margin = $23,276 net.</p>
+              </div>
+              <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-emerald-500">
+                <h3 className="text-xl font-bold text-emerald-400 mb-2">Focused Business (30 hrs/week)</h3>
+                <p className="text-2xl font-bold text-white mb-2">$122,661 Year 1</p>
+                <p className="text-gray-300 text-sm">Notion consultant's "Notion for Teams" course. $347 price, ran Facebook ads ($1,500/month), built YouTube channel (24 videos). Quit day job month 7.</p>
+              </div>
+              <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-teal-500">
+                <h3 className="text-xl font-bold text-teal-400 mb-2">Full-Time Course Business (50+ hrs/week)</h3>
+                <p className="text-2xl font-bold text-white mb-2">$511,189 Year 1</p>
+                <p className="text-gray-300 text-sm">Business automation expert's 3-course stack ($97 intro, $497 core, $1,997 advanced) + $3K group coaching. Hired VA month 4, course manager month 8. 60% profit margin = $306,713 net.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Inline CTA - After Revenue Examples: $27K-511K First Year Revenue + Real Case Studies */}
+          <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" variant="inline" />
+
           {/* Platform Comparison Table */}
           <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 border border-zinc-700 rounded-2xl p-8 mb-12">
             <h2 className="text-3xl font-bold text-white mb-6">Course Platform Comparison 2026</h2>
@@ -251,12 +276,6 @@ const schema = generateBlogPostSchema({
             <h2 className="text-4xl font-bold text-white mb-8">Frequently Asked Questions</h2>
             <FAQSchema faqs={faqs} />
           </div>
-
-          {/* Inline CTA - After FAQs Showing $50K+/month Revenue Examples + $511K First Year Case Study */}
-          <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" variant="inline" />
-
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" />
 
           {/* Related Posts */}
           <RelatedPosts currentSlug="create-online-courses-that-sell-step-by-step-blueprint" limit={3} />
