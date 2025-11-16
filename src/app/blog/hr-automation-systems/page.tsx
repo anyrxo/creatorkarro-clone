@@ -330,6 +330,11 @@ const schema = generateBlogPostSchema({
             </div>
           </div>
 
+          {/* Inline CTA - After HR Metrics: 96% Time Saved + $12K Saved + $5,460 Saved + $5,640 Saved + 70/30 Rule */}
+          <div className="my-12">
+            <SmartCTA blogSlug="hr-automation-systems" variant="inline" />
+          </div>
+
           {/* Section 2: Key HR Automation Tools */}
           <div id="section-2" className="mb-20 scroll-mt-20">
             <h2 className="text-4xl font-bold text-white mb-8 flex items-center gap-3">
@@ -920,9 +925,6 @@ const schema = generateBlogPostSchema({
                   </div>
                 </div>
               </div>
-
-              {/* Inline CTA - After ROI Analysis: 1,649% ROI + $284K Annual Value + $1.2M Turnover Savings */}
-              <SmartCTA blogSlug="hr-automation-systems" variant="inline" />
 
               <div className="bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border border-indigo-500/30 rounded-xl p-8 mb-8">
                 <h3 className="text-2xl font-bold text-white mb-6">Implementation Roadmap: 90-Day Rollout</h3>
