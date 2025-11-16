@@ -581,6 +581,9 @@ export default function AIInfluencerAutomation() {
             </div>
           </div>
 
+          {/* Inline CTA - After @EvaMetaverse Case Study Showing 47K Followers, $6.8K Revenue, 2 Hours/Week */}
+          <SmartCTA blogSlug="ai-influencer-content-calendar-automation-strategy" variant="inline" />
+
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Advanced Automation: Caption Generation</h2>
 
           <div className="bg-zinc-900 rounded-xl p-8 mb-12">

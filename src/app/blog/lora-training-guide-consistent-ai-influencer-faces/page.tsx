@@ -94,9 +94,6 @@ export default function LoRATrainingGuide() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="lora-training-guide-consistent-ai-influencer-faces" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
@@ -696,6 +693,9 @@ export default function LoRATrainingGuide() {
               </ul>
             </div>
           </div>
+
+          {/* Inline CTA - After @LunaRae Case Study Showing 98% Consistency, 1,200+ Images, 4 Brand Deals */}
+          <SmartCTA blogSlug="lora-training-guide-consistent-ai-influencer-faces" variant="inline" />
 
           {/* Smart CTA - All Access Pass */}
           <SmartCTA blogSlug="lora-training-guide-consistent-ai-influencer-faces" />

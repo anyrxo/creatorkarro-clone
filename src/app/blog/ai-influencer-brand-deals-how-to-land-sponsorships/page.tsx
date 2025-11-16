@@ -645,6 +645,9 @@ export default function AIInfluencerBrandDeals() {
             </div>
           </div>
 
+          {/* Inline CTA - After @ZaraAI Case Study Showing $10,700 in First Month (2 Brand Deals) */}
+          <SmartCTA blogSlug="ai-influencer-brand-deals-how-to-land-sponsorships" variant="inline" />
+
           {/* Smart CTA - All Access Pass */}
           <SmartCTA blogSlug="ai-influencer-brand-deals-how-to-land-sponsorships" />
 

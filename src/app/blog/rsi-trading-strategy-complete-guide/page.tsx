@@ -94,9 +94,6 @@ export default function RSITradingStrategy() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="rsi-trading-strategy-complete-guide" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
@@ -631,6 +628,9 @@ export default function RSITradingStrategy() {
               Note: Results based on 1 ES contract per trade. Past performance doesn't guarantee future results. Backtests assume disciplined execution without emotional interference.
             </p>
           </div>
+
+          {/* Inline CTA - After Backtest Results Showing 68.1%, 64%, 71.4% Win Rates with $14K-$15K Profits */}
+          <SmartCTA blogSlug="rsi-trading-strategy-complete-guide" variant="inline" />
 
           <h2 className="text-3xl font-bold text-white mb-8">❓ Frequently Asked Questions</h2>
 

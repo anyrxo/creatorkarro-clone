@@ -784,6 +784,9 @@ export default function StableDiffusionVsMidjourneyComparison() {
             </div>
           </div>
 
+          {/* Inline CTA - After @AivaStyle Case Study Showing 152K Followers, $18K/Month Revenue */}
+          <SmartCTA blogSlug="stable-diffusion-vs-midjourney-ai-influencer-creation" variant="inline" />
+
           <div className="bg-yellow-900/30 border border-yellow-500/30 rounded-xl p-8 mb-12">
             <h3 className="text-xl font-bold text-yellow-400 mb-4">Learning Tips for Beginners</h3>
             <div className="space-y-4 text-gray-300">
