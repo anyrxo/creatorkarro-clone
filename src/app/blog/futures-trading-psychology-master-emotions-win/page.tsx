@@ -877,6 +877,9 @@ const schema = generateBlogPostSchema({
                     </div>
                 </div>
 
+                {/* Inline CTA - After Recovery Table: -$10.4K Loss → +$22.6K Profit + 49% → 73% Win Rate */}
+                <SmartCTA blogSlug="futures-trading-psychology-master-emotions-win" variant="inline" />
+
                 <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl p-6 border border-green-500/30">
                     <h4 className="text-xl font-bold text-green-400 mb-3">Jessica's Key Lessons</h4>
                     <div className="space-y-3 text-gray-300 text-sm">
@@ -892,9 +895,6 @@ const schema = generateBlogPostSchema({
                     </div>
                 </div>
             </div>
-
-            {/* Inline CTA - After Case Study Showing $10.4K Loss → $22.6K Profit Recovery Story */}
-            <SmartCTA blogSlug="futures-trading-psychology-master-emotions-win" variant="inline" />
 
         </div>
     </section>
@@ -941,9 +941,6 @@ const schema = generateBlogPostSchema({
             </div>
         </div>
     </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="futures-trading-psychology-master-emotions-win" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="futures-trading-psychology-master-emotions-win" limit={3} />
