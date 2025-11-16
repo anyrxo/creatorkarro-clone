@@ -98,9 +98,6 @@ const schema = generateBlogPostSchema({
             </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="futures-trading-psychology-master-emotions-win" variant="inline" />
-
     </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
@@ -722,7 +719,7 @@ const schema = generateBlogPostSchema({
                         <div className="text-gray-400 text-sm">Recovery Timeline</div>
                     </div>
                     <div className="bg-zinc-900 rounded-lg p-4 text-center">
-                        <div className="text-3xl font-bold text-green-400 mb-2">+$28,600</div>
+                        <div className="text-3xl font-bold text-green-400 mb-2">+$22,600</div>
                         <div className="text-gray-400 text-sm">Current Profit (Month 12)</div>
                     </div>
                 </div>
@@ -895,6 +892,10 @@ const schema = generateBlogPostSchema({
                     </div>
                 </div>
             </div>
+
+            {/* Inline CTA - After Case Study Showing $10.4K Loss → $22.6K Profit Recovery Story */}
+            <SmartCTA blogSlug="futures-trading-psychology-master-emotions-win" variant="inline" />
+
         </div>
     </section>
 

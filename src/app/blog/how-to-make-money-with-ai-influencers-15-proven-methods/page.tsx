@@ -100,9 +100,6 @@ export default function HowToMakeMoneyWithAiInfluencers15ProvenMethods() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="how-to-make-money-with-ai-influencers-15-proven-methods" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
@@ -836,6 +833,10 @@ export default function HowToMakeMoneyWithAiInfluencers15ProvenMethods() {
               </div>
             </div>
           </div>
+
+          {/* Inline CTA - After Case Studies Showing $48K, $282K, and $804K Annual Revenue Examples */}
+          <SmartCTA blogSlug="how-to-make-money-with-ai-influencers-15-proven-methods" variant="inline" />
+
         </div>
       </section>
 
