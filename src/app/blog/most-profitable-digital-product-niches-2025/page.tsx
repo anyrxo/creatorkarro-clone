@@ -554,6 +554,10 @@ export default function MostProfitableDigitalProductNichesIn2025() {
                     </div>
 
                   </div>
+
+        {/* Inline CTA - After 8 Profitable Niches: $10K-37K/Month Revenue Examples + >$5M/Year Competitors */}
+        <SmartCTA blogSlug="most-profitable-digital-product-niches-2025" variant="inline" />
+
                 </section>
 
                 {/* Section 4: Competition Analysis */}
@@ -623,10 +627,6 @@ export default function MostProfitableDigitalProductNichesIn2025() {
                       </div>
                     </div>
                   </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="most-profitable-digital-product-niches-2025" variant="inline" />
-
                 </section>
 
                 {/* Smart CTA - All Access Pass */}
