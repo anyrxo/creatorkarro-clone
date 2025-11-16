@@ -138,10 +138,14 @@ export default function ProductLaunchStrategy() {
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - After 5 Launch Results: $127K, $89K, $234K, $67K, $312K */}
+        <SmartCTA blogSlug="product-launch-strategy" variant="inline" />
+
     </section>
 
       <section
-        
+
         className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
@@ -582,9 +586,6 @@ export default function ProductLaunchStrategy() {
         {/* Related Posts */}
         <RelatedPosts currentSlug="product-launch-strategy" limit={3} />
     </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="product-launch-strategy" variant="inline" />
 
 </section>
 </div>
