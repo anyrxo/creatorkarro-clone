@@ -94,9 +94,6 @@ export default function AIInfluencerMonetization() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ai-influencer-monetization-complete-guide-2025" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
@@ -123,6 +120,9 @@ export default function AIInfluencerMonetization() {
           </div>
         </div>
       </section>
+
+      {/* Inline CTA - After Showing Impressive Revenue Potential */}
+      <SmartCTA blogSlug="ai-influencer-monetization-complete-guide-2025" variant="inline" />
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
