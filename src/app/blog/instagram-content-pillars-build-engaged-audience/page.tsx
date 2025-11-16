@@ -122,6 +122,9 @@ export default function InstagramContentPillars() {
         </div>
       </section>
 
+      {/* Inline CTA - After Results: 347K Followers + 8.9% Engagement Rate + 5 Content Pillars + 90 Days Planned */}
+      <SmartCTA blogSlug="instagram-content-pillars-build-engaged-audience" variant="inline" />
+
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="prose prose-invert prose-lg max-w-none">
@@ -911,9 +914,6 @@ export default function InstagramContentPillars() {
             </div>
           </div>
 
-          {/* Inline CTA - After Case Study Showing 0 to 103K Followers in 11 Months */}
-          <SmartCTA blogSlug="instagram-content-pillars-build-engaged-audience" variant="inline" />
-
         </div>
       </section>
 
@@ -976,11 +976,6 @@ export default function InstagramContentPillars() {
           </div>
         </div>
       </section>
-
-      {/* Second CTA */}
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="instagram-content-pillars-build-engaged-audience" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="instagram-content-pillars-build-engaged-audience" limit={3} />
