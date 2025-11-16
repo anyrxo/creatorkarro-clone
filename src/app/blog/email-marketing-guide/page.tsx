@@ -1285,36 +1285,6 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section className="py-16 px-4 border-y border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl font-bold text-white text-center mb-8">Real Email Marketing Results</h2>
-                <div className="grid md:grid-cols-4 gap-4">
-                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-blue-400 mb-2">$127K</div>
-                        <div className="text-gray-400 text-sm">Annual Email Revenue</div>
-                    </div>
-                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-green-400 mb-2">34%</div>
-                        <div className="text-gray-400 text-sm">Average Open Rate</div>
-                    </div>
-                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-purple-400 mb-2">$47</div>
-                        <div className="text-gray-400 text-sm">Revenue Per Subscriber</div>
-                    </div>
-                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-pink-400 mb-2">12.7%</div>
-                        <div className="text-gray-400 text-sm">Launch Conversion Rate</div>
-                    </div>
-                </div>
-
-                {/* Inline CTA - After Showing $127K Revenue + $47 Per Subscriber Metrics */}
-                <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
-
-            </div>
-        </div>
-    </section>
-
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -1344,8 +1314,35 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="email-marketing-guide" />
+      <section className="py-16 px-4 border-y border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+                <h2 className="text-2xl font-bold text-white text-center mb-8">Real Email Marketing Results</h2>
+                <div className="grid md:grid-cols-4 gap-4">
+                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                        <div className="text-3xl font-bold text-blue-400 mb-2">$127K</div>
+                        <div className="text-gray-400 text-sm">Annual Email Revenue</div>
+                    </div>
+                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                        <div className="text-3xl font-bold text-green-400 mb-2">34%</div>
+                        <div className="text-gray-400 text-sm">Average Open Rate</div>
+                    </div>
+                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                        <div className="text-3xl font-bold text-purple-400 mb-2">$47</div>
+                        <div className="text-gray-400 text-sm">Revenue Per Subscriber</div>
+                    </div>
+                    <div className="bg-zinc-900 rounded-xl p-4 text-center">
+                        <div className="text-3xl font-bold text-pink-400 mb-2">12.7%</div>
+                        <div className="text-gray-400 text-sm">Launch Conversion Rate</div>
+                    </div>
+                </div>
+
+                {/* Inline CTA - After FAQs + Metrics: $127K Revenue + 34% Open Rate + $47 Per Subscriber + 12.7% Conversion */}
+                <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
+
+            </div>
+        </div>
+    </section>
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="email-marketing-guide" limit={3} />
