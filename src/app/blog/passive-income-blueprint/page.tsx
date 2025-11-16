@@ -267,14 +267,14 @@ const schema = generateBlogPostSchema({
             </p>
           </div>
 
+          {/* Inline CTA - After Revenue Models Table: $500-8,000/Month Passive Income + 70-85% Margins + 80-90% Passive */}
+          <SmartCTA blogSlug="passive-income-blueprint" variant="inline" />
+
           {/* FAQs */}
           <div className="mb-20">
             <h2 className="text-4xl font-bold text-white mb-8">Frequently Asked Questions</h2>
             <FAQSchema faqs={faqs} />
           </div>
-
-          {/* Inline CTA - After Comprehensive FAQs Showing $3K-10K/Month Revenue Models */}
-          <SmartCTA blogSlug="passive-income-blueprint" variant="inline" />
 
           {/* Related Posts */}
           <RelatedPosts currentSlug="passive-income-blueprint" limit={3} />
