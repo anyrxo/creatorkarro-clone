@@ -351,6 +351,9 @@ export default function RSITradingStrategy() {
           </div>
           </div>
 
+          {/* Inline CTA - After Divergence Strategies: $1,150 ES Trade + $1,400 NQ Trade + 65-75% Win Rates */}
+          <SmartCTA blogSlug="rsi-trading-strategy-complete-guide" variant="inline" />
+
           <h2 className="text-3xl font-bold text-white mb-8">🎯 Strategy #2: RSI Mean Reversion (60-70% Win Rate)</h2>
 
           <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6 mb-12">
@@ -628,9 +631,6 @@ export default function RSITradingStrategy() {
               Note: Results based on 1 ES contract per trade. Past performance doesn't guarantee future results. Backtests assume disciplined execution without emotional interference.
             </p>
           </div>
-
-          {/* Inline CTA - After Backtest Results Showing 68.1%, 64%, 71.4% Win Rates with $14K-$15K Profits */}
-          <SmartCTA blogSlug="rsi-trading-strategy-complete-guide" variant="inline" />
 
           <h2 className="text-3xl font-bold text-white mb-8">❓ Frequently Asked Questions</h2>
 
