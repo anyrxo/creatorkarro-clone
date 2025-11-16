@@ -93,11 +93,11 @@ export default function ContentScalingFramework() {
                 </div>
 
                 <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              The Content Scaling Framework That Built <span className="text-purple-400">7 Six-Figure Brands</span>
+              The Content Scaling Framework for <span className="text-purple-400">Sustainable Growth</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-400 mb-8">
-              How to create <span className="text-white font-semibold">1,000 pieces of content monthly</span> without burning out
+              Systematic approaches to <span className="text-white font-semibold">scaling content production</span> without burning out
                 </p>
 
                 
@@ -132,7 +132,7 @@ export default function ContentScalingFramework() {
                     </div>
                 </div>
 
-                {/* Inline CTA - After C.A.S.H. Framework: 7 Six-Figure Brands + 1,000 Pieces Monthly + Proven System */}
+                {/* Inline CTA - After C.A.S.H. Framework Introduction */}
                 <div className="mt-8">
                   <SmartCTA blogSlug="content-scaling-framework" variant="inline" />
                 </div>
@@ -397,39 +397,47 @@ export default function ContentScalingFramework() {
 </section>
 
       <section
-        
+
         className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-        <h2 className="text-3xl font-bold text-white mb-8">Phase 4: Harvest - The Profit</h2>
-          
+        <h2 className="text-3xl font-bold text-white mb-8">Phase 4: Harvest - Monetization Strategy</h2>
+
         <div className="bg-zinc-800 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-pink-400 mb-6">Monetization Matrix</h3>
-            
+            <h3 className="text-2xl font-bold text-pink-400 mb-6">Monetization Pathways</h3>
+
             <div className="space-y-4">
                 <div className="border-l-4 border-pink-500 pl-4">
-                    <h4 className="text-lg font-bold text-white">Immediate Revenue (Month 1-3)</h4>
-                    <p className="text-gray-400">Affiliate marketing, sponsored posts, digital products</p>
-                    <p className="text-sm text-green-400 mt-1">Target: $5-10K/month</p>
+                    <h4 className="text-lg font-bold text-white">Early Stage (First 90 Days)</h4>
+                    <p className="text-gray-400">Focus on building audience and testing offers</p>
+                    <ul className="text-gray-300 text-sm mt-2 space-y-1">
+                        <li>• Affiliate marketing with products you actually use</li>
+                        <li>• Small digital products (templates, checklists, guides)</li>
+                        <li>• Sponsored content opportunities (once you hit audience thresholds)</li>
+                    </ul>
                 </div>
-              
+
                 <div className="border-l-4 border-pink-500 pl-4">
-                    <h4 className="text-lg font-bold text-white">Growth Revenue (Month 4-6)</h4>
-                    <p className="text-gray-400">Course launches, coaching, high-ticket services</p>
-                    <p className="text-sm text-green-400 mt-1">Target: $20-50K/month</p>
+                    <h4 className="text-lg font-bold text-white">Growth Stage (4-6 Months)</h4>
+                    <p className="text-gray-400">Develop scalable offerings based on audience feedback</p>
+                    <ul className="text-gray-300 text-sm mt-2 space-y-1">
+                        <li>• Online courses or educational programs</li>
+                        <li>• Group coaching or mastermind programs</li>
+                        <li>• Premium content or membership communities</li>
+                        <li>• Service offerings aligned with expertise</li>
+                    </ul>
                 </div>
-              
+
                 <div className="border-l-4 border-pink-500 pl-4">
-                    <h4 className="text-lg font-bold text-white">Scale Revenue (Month 7+)</h4>
-                    <p className="text-gray-400">Membership sites, enterprise deals, licensing</p>
-                    <p className="text-sm text-green-400 mt-1">Target: $100K+/month</p>
+                    <h4 className="text-lg font-bold text-white">Scale Stage (7+ Months)</h4>
+                    <p className="text-gray-400">Build leveraged business models and passive income streams</p>
+                    <ul className="text-gray-300 text-sm mt-2 space-y-1">
+                        <li>• Membership sites with recurring revenue</li>
+                        <li>• Done-for-you services with team delivery</li>
+                        <li>• Licensing content or intellectual property</li>
+                        <li>• Speaking engagements and consulting</li>
+                    </ul>
                 </div>
-            </div>
-            
-            <div className="mt-6 p-4 bg-zinc-900 rounded">
-                <p className="text-center text-white">
-                Average revenue per 1,000 pieces of content: <span className="text-pink-400 font-bold text-2xl">$50-100K</span>
-                </p>
             </div>
         </div>
     </div>
@@ -437,36 +445,169 @@ export default function ContentScalingFramework() {
 
       <section className="section-spacing">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">Real Results from the Framework</h2>
-          
-        <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-zinc-900 rounded-xl p-6 text-center">
-                <h3 className="text-xl font-bold text-purple-400 mb-2">Sarah M.</h3>
-                <p className="text-gray-400 mb-3">Fitness Coach</p>
-                <div className="space-y-2 text-sm">
-                    <p className="text-gray-300">Started: 500 followers</p>
-                    <p className="text-gray-300">After 6 months: 125K followers</p>
-                    <p className="text-green-400 font-bold">Revenue: $45K/month</p>
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Content Repurposing Strategies</h2>
+
+        <p className="text-gray-300 mb-8 text-center max-w-3xl mx-auto">
+            One piece of cornerstone content can be transformed into dozens of micro-content pieces across platforms.
+        </p>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">The Content Pyramid Model</h3>
+                <div className="space-y-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Level 1: Cornerstone Content (1 piece)</h4>
+                        <p className="text-gray-400 text-sm">Long-form blog post (2,000+ words), YouTube video (10-20 min), or podcast episode</p>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Level 2: Medium Content (5-10 pieces)</h4>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• Extract 5-7 key points into individual blog posts</li>
+                            <li>• Create LinkedIn article summarizing main insights</li>
+                            <li>• Record 3-5 minute video summary</li>
+                            <li>• Design infographic visualizing core concepts</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Level 3: Micro Content (20-50 pieces)</h4>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• Pull quotes for Instagram posts and Stories</li>
+                            <li>• Create Twitter thread breaking down concepts</li>
+                            <li>• Design quote cards for Pinterest</li>
+                            <li>• Record short tips for TikTok/Reels</li>
+                            <li>• Extract statistics for social media posts</li>
+                            <li>• Create carousel posts explaining frameworks</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            
-            <div className="bg-zinc-900 rounded-xl p-6 text-center">
-                <h3 className="text-xl font-bold text-blue-400 mb-2">Mike T.</h3>
-                <p className="text-gray-400 mb-3">Business Consultant</p>
-                <div className="space-y-2 text-sm">
-                    <p className="text-gray-300">Started: 2K followers</p>
-                    <p className="text-gray-300">After 8 months: 89K followers</p>
-                    <p className="text-green-400 font-bold">Revenue: $120K/month</p>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Platform-Specific Adaptation</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Short-Form Platforms</h4>
+                        <p className="text-gray-400 text-sm mb-2">TikTok, Instagram Reels, YouTube Shorts</p>
+                        <ul className="text-gray-300 text-xs space-y-1">
+                            <li>• 15-60 second clips from long videos</li>
+                            <li>• Single tip or insight per video</li>
+                            <li>• Hook in first 3 seconds</li>
+                            <li>• Vertical 9:16 format</li>
+                            <li>• Add captions for sound-off viewing</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Long-Form Platforms</h4>
+                        <p className="text-gray-400 text-sm mb-2">Blog, YouTube, Podcast, LinkedIn</p>
+                        <ul className="text-gray-300 text-xs space-y-1">
+                            <li>• Expand on core concepts with details</li>
+                            <li>• Add case studies and examples</li>
+                            <li>• Include actionable implementation steps</li>
+                            <li>• Optimize for SEO keywords</li>
+                            <li>• Add downloadable resources</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            
-            <div className="bg-zinc-900 rounded-xl p-6 text-center">
-                <h3 className="text-xl font-bold text-green-400 mb-2">Lisa K.</h3>
-                <p className="text-gray-400 mb-3">Life Coach</p>
-                <div className="space-y-2 text-sm">
-                    <p className="text-gray-300">Started: 0 followers</p>
-                    <p className="text-gray-300">After 12 months: 250K followers</p>
-                    <p className="text-green-400 font-bold">Revenue: $85K/month</p>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Analytics & Performance Measurement</h2>
+
+        <p className="text-gray-300 mb-8 text-center max-w-3xl mx-auto">
+            Effective content scaling requires data-driven decision making. Track the right metrics to optimize your strategy.
+        </p>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">Core Metrics to Track</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">Engagement Metrics</h4>
+                        <ul className="text-gray-300 text-sm space-y-2">
+                            <li>• <strong className="text-white">Engagement Rate:</strong> (Likes + Comments + Shares) ÷ Reach × 100</li>
+                            <li>• <strong className="text-white">Save Rate:</strong> Saves ÷ Reach (indicates content value)</li>
+                            <li>• <strong className="text-white">Comment Quality:</strong> Substantive comments vs. emojis</li>
+                            <li>• <strong className="text-white">Share Rate:</strong> Indicates virality potential</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">Growth Metrics</h4>
+                        <ul className="text-gray-300 text-sm space-y-2">
+                            <li>• <strong className="text-white">Follower Growth Rate:</strong> New followers ÷ Total followers × 100</li>
+                            <li>• <strong className="text-white">Profile Visit Rate:</strong> Visits ÷ Reach (conversion indicator)</li>
+                            <li>• <strong className="text-white">Click-Through Rate:</strong> Link clicks ÷ Impressions</li>
+                            <li>• <strong className="text-white">Audience Demographics:</strong> Age, location, interests</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Content Performance Analysis</h3>
+                <div className="space-y-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Weekly Content Audit</h4>
+                        <ul className="text-gray-300 text-sm space-y-1">
+                            <li>• Identify top 3 performing posts by engagement</li>
+                            <li>• Analyze common elements (topic, format, time posted)</li>
+                            <li>• Identify bottom 3 posts and determine why they underperformed</li>
+                            <li>• Look for patterns in audience response</li>
+                            <li>• Adjust content calendar based on insights</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Monthly Strategy Review</h4>
+                        <ul className="text-gray-300 text-sm space-y-1">
+                            <li>• Calculate average engagement rate across all platforms</li>
+                            <li>• Track follower growth trends and velocity</li>
+                            <li>• Measure conversion rates for links and CTAs</li>
+                            <li>• Review audience demographics shifts</li>
+                            <li>• Document lessons learned and strategy adjustments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">A/B Testing Framework</h3>
+                <p className="text-gray-300 mb-4">Systematically test variables to optimize content performance:</p>
+                <div className="grid md:grid-cols-3 gap-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2 text-sm">Test Variables</h4>
+                        <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• Posting times</li>
+                            <li>• Caption length</li>
+                            <li>• Hook styles</li>
+                            <li>• Visual formats</li>
+                            <li>• CTA placement</li>
+                            <li>• Hashtag sets</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2 text-sm">Test Process</h4>
+                        <ul className="text-gray-400 text-xs space-y-1">
+                            <li>1. Choose one variable</li>
+                            <li>2. Create A/B versions</li>
+                            <li>3. Post at same time</li>
+                            <li>4. Track for 48 hours</li>
+                            <li>5. Analyze results</li>
+                            <li>6. Implement winner</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2 text-sm">Success Criteria</h4>
+                        <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• 20%+ engagement lift</li>
+                            <li>• 15%+ reach increase</li>
+                            <li>• 10%+ save rate boost</li>
+                            <li>• Statistical significance</li>
+                            <li>• Repeatable results</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
