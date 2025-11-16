@@ -131,12 +131,17 @@ export default function TikTokGrowthHacks() {
                         <div className="text-gray-400 text-sm">Videos Posted</div>
                     </div>
                 </div>
+
+                {/* Inline CTA - After 90-Day Results: 0→127K Followers + 47M Views + $32K Revenue + 23 Viral Videos */}
+                <div className="mt-8">
+                  <SmartCTA blogSlug="tiktok-growth-hacks" variant="inline" />
+                </div>
             </div>
         </div>
     </section>
 
       <section
-        
+
         className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
@@ -387,10 +392,6 @@ export default function TikTokGrowthHacks() {
             </div>
         </div>
     </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="tiktok-growth-hacks" variant="inline" />
-
 </section>
 
       <section className="section-spacing">
@@ -455,9 +456,6 @@ export default function TikTokGrowthHacks() {
         </div>
     </div>
 </section>
-
-      {/* Smart CTA - All Access Pass */}
-<SmartCTA blogSlug="tiktok-growth-hacks" />
 
 {/* Related Posts */}
 <RelatedPosts currentSlug="tiktok-growth-hacks" limit={3} />
