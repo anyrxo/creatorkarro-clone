@@ -429,49 +429,100 @@ export default function DatabaseAutomationSystems() {
 
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">Real-World Database Automation Success</h2>
-          
-          <div className="space-y-8">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">Advanced Automation Techniques</h2>
+
+          <div className="space-y-6">
             <div className="bg-zinc-800 rounded-xl p-6">
-              <div className="flex items-start gap-4">
-                <div className="text-3xl">🏦</div>
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-2">FinTech Giant Saves $2.4M Annually</h3>
-                  <p className="text-gray-400 mb-3">
-                    Automated 50TB financial database operations across 200+ instances.
-                  </p>
-                  <div className="grid md:grid-cols-3 gap-4 text-center">
-                    <div>
-                      <div className="text-2xl font-bold text-green-400">99.99%</div>
-                      <div className="text-sm text-gray-400">Uptime Achieved</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-blue-400">85%</div>
-                      <div className="text-sm text-gray-400">Cost Reduction</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-purple-400">0</div>
-                      <div className="text-sm text-gray-400">Data Incidents</div>
-                    </div>
-                  </div>
+              <h3 className="text-xl font-bold text-blue-400 mb-4">Automated Query Optimization</h3>
+              <p className="text-gray-300 mb-4">Tools that automatically identify and fix slow queries without manual intervention.</p>
+              <ul className="space-y-3 text-gray-300">
+                <li>• <strong className="text-white">pg_stat_statements (PostgreSQL):</strong> Tracks execution statistics, identifies top slow queries by total time</li>
+                <li>• <strong className="text-white">MySQL Query Profiler:</strong> Shows exactly where time is spent in query execution (parsing, locking, sorting)</li>
+                <li>• <strong className="text-white">EXPLAIN ANALYZE:</strong> Returns actual execution plan with real timing data, not just estimates</li>
+                <li>• <strong className="text-white">Auto-rewrite rules:</strong> Automatically transform subqueries to JOINs, eliminate redundant operations</li>
+              </ul>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-purple-400 mb-4">Index Management Automation</h3>
+              <p className="text-gray-300 mb-4">Automatically create, update, and remove indexes based on actual query patterns.</p>
+              <div className="space-y-3 text-gray-300">
+                <div className="bg-zinc-900 p-4 rounded">
+                  <p className="font-semibold text-white mb-2">Missing Index Detection:</p>
+                  <p className="text-sm">Analyze query logs to find WHERE/JOIN columns lacking indexes. Auto-suggest composite indexes for multi-column filters.</p>
+                </div>
+                <div className="bg-zinc-900 p-4 rounded">
+                  <p className="font-semibold text-white mb-2">Unused Index Cleanup:</p>
+                  <p className="text-sm">Track index usage via pg_stat_user_indexes. Auto-drop indexes with zero scans after 30+ days to reduce write overhead.</p>
+                </div>
+                <div className="bg-zinc-900 p-4 rounded">
+                  <p className="font-semibold text-white mb-2">Index Bloat Management:</p>
+                  <p className="text-sm">Detect fragmented B-tree indexes (>40% bloat). Schedule REINDEX during low-traffic windows to reclaim space.</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-zinc-800 rounded-xl p-6">
-              <div className="flex items-start gap-4">
-                <div className="text-3xl">🛒</div>
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-2">E-commerce Platform Scales to Black Friday</h3>
-                  <p className="text-gray-400 mb-3">
-                    Automated scaling handled 10x traffic spike without manual intervention.
-                  </p>
-                  <ul className="space-y-2 text-gray-400">
-                    <li>• Auto-scaled from 5 to 50 database instances in minutes</li>
-                    <li>• Zero downtime during peak 2M transactions/hour</li>
-                    <li>• Automated rollback saved $500K potential loss</li>
-                    <li>• Self-healing resolved 147 issues automatically</li>
-                  </ul>
+              <h3 className="text-xl font-bold text-green-400 mb-4">Backup Automation Strategies</h3>
+              <p className="text-gray-300 mb-4">Multi-tier backup systems with automatic verification and retention policies.</p>
+              <div className="grid md:grid-cols-2 gap-4 text-sm">
+                <div className="bg-zinc-900 p-4 rounded">
+                  <p className="text-white font-semibold mb-2">Full Backups</p>
+                  <p className="text-gray-400">Weekly complete database dumps. Compress with zstd (3x better than gzip). Store in 3 locations (local, S3, offsite).</p>
+                </div>
+                <div className="bg-zinc-900 p-4 rounded">
+                  <p className="text-white font-semibold mb-2">Incremental Backups</p>
+                  <p className="text-gray-400">Daily WAL (Write-Ahead Log) archiving. Only captures changes since last backup. 10x faster, 20x smaller.</p>
+                </div>
+                <div className="bg-zinc-900 p-4 rounded">
+                  <p className="text-white font-semibold mb-2">Point-in-Time Recovery</p>
+                  <p className="text-gray-400">Combine full + incremental to restore to any second. Critical for rolling back bad deployments or data corruption.</p>
+                </div>
+                <div className="bg-zinc-900 p-4 rounded">
+                  <p className="text-white font-semibold mb-2">Automated Testing</p>
+                  <p className="text-gray-400">Restore random backups to staging weekly. Verify data integrity with checksums. Alert if restoration fails.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-pink-400 mb-4">Connection Pooling & Resource Management</h3>
+              <p className="text-gray-300 mb-4">Prevent database overload by intelligently managing connections and resources.</p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• <strong className="text-white">PgBouncer/ProxySQL:</strong> Reuses database connections instead of creating new ones. Reduces connection overhead from 10ms to 0.1ms.</li>
+                <li>• <strong className="text-white">Statement timeouts:</strong> Auto-kill queries running longer than threshold (e.g., 30 seconds). Prevents runaway queries from blocking other transactions.</li>
+                <li>• <strong className="text-white">Connection limits:</strong> Cap max connections per user/application. Prevents single service from monopolizing database resources.</li>
+                <li>• <strong className="text-white">Query queueing:</strong> When DB is maxed, queue requests instead of rejecting. Smooth out traffic spikes automatically.</li>
+              </ul>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-orange-400 mb-4">Automated Performance Monitoring</h3>
+              <p className="text-gray-300 mb-4">Continuous tracking of database health metrics with intelligent alerting.</p>
+              <div className="space-y-2 text-gray-300">
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-400 mt-1">•</span>
+                  <div>
+                    <strong className="text-white">Query Performance Degradation:</strong> Track execution time percentiles (p50, p95, p99). Alert when p95 latency exceeds baseline by 50%+ for 5+ minutes.
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-400 mt-1">•</span>
+                  <div>
+                    <strong className="text-white">Disk Space Monitoring:</strong> Predict when database will run out of space based on growth rate. Auto-expand cloud storage or trigger cleanup scripts before reaching 85% capacity.
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-400 mt-1">•</span>
+                  <div>
+                    <strong className="text-white">Replication Lag Detection:</strong> Monitor replica delay in milliseconds. Auto-failover to healthy replica if primary is down or lag exceeds 10 seconds.
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-orange-400 mt-1">•</span>
+                  <div>
+                    <strong className="text-white">Anomaly Detection:</strong> Use machine learning to identify unusual patterns (sudden spike in writes, unexpected table scans). Alert on statistical outliers that rule-based monitors miss.
+                  </div>
                 </div>
               </div>
             </div>
