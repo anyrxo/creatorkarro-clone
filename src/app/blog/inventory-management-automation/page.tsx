@@ -97,6 +97,10 @@ const faqs = [
     question: "How much does inventory management automation save companies?",
     answer: "Inventory management automation typically delivers 15-30% reduction in total inventory costs through multiple mechanisms. Companies commonly see: (1) 20-30% reduction in carrying costs by optimizing stock levels and reducing excess inventory, (2) 50-90% reduction in stockouts through accurate demand forecasting and automated reordering, (3) 10-20% decrease in obsolete inventory write-offs by identifying slow-moving products early, (4) 30-50% reduction in manual labor costs for inventory counts and order processing, and (5) 5-15% improvement in profit margins from reduced rush orders and better supplier negotiation with predictable ordering. For a $5M revenue e-commerce business holding $750K in average inventory, automation might save $100K-200K annually through reduced carrying costs, fewer stockouts, and labor savings. ROI typically occurs within 6-12 months, making it one of the highest-return operational investments."
   },
+
+        {/* Inline CTA - After ROI Analysis: $100K-200K Annual Savings + 15-30% Cost Reduction + 6-12 Month ROI */}
+        <SmartCTA blogSlug="inventory-management-automation" variant="inline" />
+
   {
     question: "What's the difference between perpetual and periodic inventory systems?",
     answer: "Perpetual inventory systems track stock levels continuously in real-time - every sale, receipt, or adjustment immediately updates inventory counts. This is the foundation of modern automation: your system always knows exactly what you have. Periodic inventory systems only update counts at set intervals (weekly, monthly, quarterly) through physical counts. Between counts, you don't have accurate inventory data. Perpetual systems enable automation features like real-time reorder point triggers, multi-location visibility, and accurate promise dates for customers. Periodic systems require manual counts and can't support automation. In 2026, all serious e-commerce and retail businesses use perpetual systems - it's no longer a choice. The only businesses still using periodic systems are very small operations (under $500K revenue) or businesses with low inventory complexity. Moving from periodic to perpetual inventory is usually the first step in inventory automation journey."
@@ -478,9 +482,6 @@ export default function InventoryManagementAutomationPage() {
 
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="inventory-management-automation" variant="inline" />
 
       </section>
     </div>
