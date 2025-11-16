@@ -334,6 +334,9 @@ const schema = generateBlogPostSchema({
             </div>
           </div>
 
+        {/* Inline CTA - After Tailwind Impact: 15 Hours/Week Saved + 4x Growth + 780 Hours/Year */}
+        <SmartCTA blogSlug="pinterest-automation-marketing" variant="inline" />
+
           {/* Section 2: Key Pinterest Automation Tools */}
           <div id="section-2" className="mb-20 scroll-mt-8">
             <div className="flex items-center gap-4 mb-8">
@@ -887,9 +890,6 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="pinterest-automation-marketing" limit={3} />
 
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="pinterest-automation-marketing" variant="inline" />
 
       </section>
     </div>
