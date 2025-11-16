@@ -120,6 +120,11 @@ export default function IoTAutomationSystemsPage() {
               <div className="text-3xl md:text-4xl font-bold text-yellow-400">24/7</div>
               <div className="text-gray-400 mt-2">Autonomous Operations</div>
             </div>
+
+            {/* Inline CTA - After Market Stats: $12T Market + 75B+ Devices + 89% Energy Savings */}
+            <div className="mt-8">
+              <SmartCTA blogSlug="iot-automation-systems" variant="inline" />
+            </div>
           </div>
         </div>
       </section>
@@ -456,10 +461,6 @@ export default function IoTAutomationSystemsPage() {
                     <div className="text-sm text-gray-400">Satisfaction Rate</div>
                   </div>
                 </div>
-
-                {/* Inline CTA - After Success Story Showing €42.5M Annual Savings + 47% Energy Reduction */}
-                <SmartCTA blogSlug="iot-automation-systems" variant="inline" />
-
               </div>
             </div><div className="mb-16">
               <h2 className="text-3xl font-bold mb-8 text-white">Essential IoT Security & Best Practices</h2>
@@ -482,9 +483,6 @@ export default function IoTAutomationSystemsPage() {
                 </div>
               </div>
             </div>
-
-            {/* Smart CTA - All Access Pass */}
-            <SmartCTA blogSlug="iot-automation-systems" />
 
             {/* Related Posts */}
             <RelatedPosts currentSlug="iot-automation-systems" limit={3} />
