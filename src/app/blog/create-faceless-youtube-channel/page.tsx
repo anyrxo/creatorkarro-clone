@@ -1585,6 +1585,10 @@ Tell them exactly what they'll learn:
 
 **Bottom Line:** Don't start Channel 2 until Channel 1 hits $5K+/month and you have a team in place. When ready, launch Channel 2 in a different niche (higher ceiling, diversification). Scale to 3-5 channels by Month 24. Build team of 8-10 (scriptwriters, editors, designer, manager). Total team cost: $7K-$9K/month. Potential revenue with 5 channels: $75K-$109K/month. Your time: 5-6 hours/week. Portfolio strategy: 2 high-CPM + 2 viral + 1 passive. Give each channel 9 months to hit $2K+/month or shut it down. Timeline to $100K/month: 24-33 months depending on capital.`
   },
+
+        {/* Inline CTA - After Multi-Channel Strategy: $75K-$109K/month Revenue Potential */}
+        <SmartCTA blogSlug="create-faceless-youtube-channel" variant="inline" />
+
   {
     question: "What are the biggest mistakes beginners make with faceless YouTube channels, and how do I avoid them?",
     answer: `**The #1 mistake: Quitting in Months 2-4 when growth is slow (80% quit here). Breakthrough comes in Month 4-6 if you persist.** After seeing hundreds of channels fail and helping dozens succeed, here are the 15 fatal mistakes and how to avoid them:
@@ -2365,9 +2369,6 @@ Creating content for low-CPM countries
             </div>
         </div>
     </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="create-faceless-youtube-channel" variant="inline" />
 
 </section>
 
