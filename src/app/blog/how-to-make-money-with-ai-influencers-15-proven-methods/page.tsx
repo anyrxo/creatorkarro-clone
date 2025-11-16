@@ -523,6 +523,10 @@ export default function HowToMakeMoneyWithAiInfluencers15ProvenMethods() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - After 15 Revenue Methods: $800-75K/post Sponsorships + $2K-30K/month Affiliates + $3K-25K/month Subscriptions */}
+        <SmartCTA blogSlug="how-to-make-money-with-ai-influencers-15-proven-methods" variant="inline" />
+
       </section>
 
       <section className="section-spacing">
@@ -833,10 +837,6 @@ export default function HowToMakeMoneyWithAiInfluencers15ProvenMethods() {
               </div>
             </div>
           </div>
-
-          {/* Inline CTA - After Case Studies Showing $48K, $282K, and $804K Annual Revenue Examples */}
-          <SmartCTA blogSlug="how-to-make-money-with-ai-influencers-15-proven-methods" variant="inline" />
-
         </div>
       </section>
 
