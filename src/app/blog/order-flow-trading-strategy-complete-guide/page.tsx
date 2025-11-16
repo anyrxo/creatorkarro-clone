@@ -586,6 +586,9 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
+      {/* Inline CTA - After 3 Order Flow Setups: +$2,000 POC Support Trade + Absorption Fade Strategy + +$1,800 Stacked Imbalance Breakout */}
+      <SmartCTA blogSlug="order-flow-trading-strategy-complete-guide" variant="inline" />
+
       <section className="section-spacing bg-zinc-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8">Order Flow Software Comparison: Sierra Chart vs ATAS vs Bookmap</h2>
@@ -818,9 +821,6 @@ const schema = generateBlogPostSchema({
             </div>
         </div>
 
-        {/* Inline CTA - After $50K Case Study: $8,450 First Month + $800-1,200 to $7,000-9,000/Month + 73% Win Rate */}
-        <SmartCTA blogSlug="order-flow-trading-strategy-complete-guide" variant="inline" />
-
     </section>
 
       <section className="section-spacing bg-zinc-900">
@@ -948,9 +948,6 @@ const schema = generateBlogPostSchema({
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="order-flow-trading-strategy-complete-guide" />
-
           {/* Related Posts */}
           <RelatedPosts currentSlug="order-flow-trading-strategy-complete-guide" limit={3} />
         </div>
