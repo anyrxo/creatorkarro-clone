@@ -425,6 +425,74 @@ export default function DevOpsAutomationPipelinePage() {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-gray-800/20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            <span className="bg-gradient-to-r from-green-400 to-cyan-500 bg-clip-text text-transparent">Success Stories</span>
+          </h2>
+
+          <div className="space-y-8">
+            <div className="p-8 bg-gradient-to-r from-green-500/10 to-cyan-600/10 rounded-xl border border-green-500/30">
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-cyan-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xl">DT</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">DevTech Corp - 1000% Deployment Frequency</h3>
+                  <p className="text-gray-300 mb-4">"Our DevOps automation transformed our release cycle from monthly to 100+ deployments per day. We reduced deployment time from 6 hours to 15 minutes while achieving 99.9% success rate."
+                  </p>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <span className="text-green-400">1000% more deployments</span>
+                    <span className="text-cyan-400">24x faster releases</span>
+                    <span className="text-blue-400">99.9% success rate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-8 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-xl border border-blue-500/30">
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xl">AS</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">AgileScale - Zero-Downtime at Scale</h3>
+                  <p className="text-gray-300 mb-4">"Automated CI/CD pipelines enabled us to serve 50M+ users with zero-downtime deployments. Our 20-service microarchitecture deploys seamlessly with blue-green strategies."
+                  </p>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <span className="text-blue-400">50M+ users served</span>
+                    <span className="text-purple-400">Zero downtime</span>
+                    <span className="text-green-400">20-service architecture</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-8 bg-gradient-to-r from-purple-500/10 to-pink-600/10 rounded-xl border border-purple-500/30">
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xl">CS</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">CloudStart - Infrastructure Automation</h3>
+                  <p className="text-gray-300 mb-4">"Terraform automation reduced our infrastructure provisioning from weeks to hours. We now manage 500+ environments across AWS, Azure, and GCP with complete consistency."
+                  </p>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <span className="text-purple-400">500+ environments</span>
+                    <span className="text-pink-400">Multi-cloud automation</span>
+                    <span className="text-yellow-400">100x faster provisioning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Inline CTA - After Success Stories: 1000% More Deployments + 24x Faster + 50M Users + 100x Faster Provisioning */}
+          <SmartCTA blogSlug="devops-automation-pipeline" variant="inline" />
+
+        </div>
+      </section>
+
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">
@@ -512,77 +580,6 @@ export default function DevOpsAutomationPipelinePage() {
           </div>
         </div>
       </section>
-
-      <section className="py-20 px-4 bg-gray-800/20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-green-400 to-cyan-500 bg-clip-text text-transparent">Success Stories</span>
-          </h2>
-
-          <div className="space-y-8">
-            <div className="p-8 bg-gradient-to-r from-green-500/10 to-cyan-600/10 rounded-xl border border-green-500/30">
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-cyan-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-xl">DT</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-2">DevTech Corp - 1000% Deployment Frequency</h3>
-                  <p className="text-gray-300 mb-4">"Our DevOps automation transformed our release cycle from monthly to 100+ deployments per day. We reduced deployment time from 6 hours to 15 minutes while achieving 99.9% success rate."
-                  </p>
-                  <div className="flex flex-wrap gap-4 text-sm">
-                    <span className="text-green-400">1000% more deployments</span>
-                    <span className="text-cyan-400">24x faster releases</span>
-                    <span className="text-blue-400">99.9% success rate</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-8 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-xl border border-blue-500/30">
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-xl">AS</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-2">AgileScale - Zero-Downtime at Scale</h3>
-                  <p className="text-gray-300 mb-4">"Automated CI/CD pipelines enabled us to serve 50M+ users with zero-downtime deployments. Our 20-service microarchitecture deploys seamlessly with blue-green strategies."
-                  </p>
-                  <div className="flex flex-wrap gap-4 text-sm">
-                    <span className="text-blue-400">50M+ users served</span>
-                    <span className="text-purple-400">Zero downtime</span>
-                    <span className="text-green-400">20-service architecture</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-8 bg-gradient-to-r from-purple-500/10 to-pink-600/10 rounded-xl border border-purple-500/30">
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-xl">CS</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-2">CloudStart - Infrastructure Automation</h3>
-                  <p className="text-gray-300 mb-4">"Terraform automation reduced our infrastructure provisioning from weeks to hours. We now manage 500+ environments across AWS, Azure, and GCP with complete consistency."
-                  </p>
-                  <div className="flex flex-wrap gap-4 text-sm">
-                    <span className="text-purple-400">500+ environments</span>
-                    <span className="text-pink-400">Multi-cloud automation</span>
-                    <span className="text-yellow-400">100x faster provisioning</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Inline CTA - After 3 Case Studies Showing 24x Faster Deployments, Zero Downtime, 100x Faster Provisioning */}
-          <SmartCTA blogSlug="devops-automation-pipeline" variant="inline" />
-
-        </div>
-      </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="devops-automation-pipeline" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="devops-automation-pipeline" limit={3} />
