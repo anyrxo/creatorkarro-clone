@@ -95,9 +95,6 @@ export default function InstagramReelsViralFormula() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="instagram-reels-viral-formula-10m-views-2025" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
@@ -948,6 +945,10 @@ export default function InstagramReelsViralFormula() {
               </div>
             </div>
           </div>
+
+          {/* Inline CTA - After 3 Case Studies Showing 15.3M, 12.7M, and 18.9M View Reels */}
+          <SmartCTA blogSlug="instagram-reels-viral-formula-10m-views-2025" variant="inline" />
+
         </div>
       </section>
 
