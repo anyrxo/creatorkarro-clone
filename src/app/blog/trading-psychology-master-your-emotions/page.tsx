@@ -322,6 +322,9 @@ export default function BlogPost() {
         </div>
       </div>
 
+      {/* Inline CTA - After Showing Profitable Math: $8K Net Profit Example + 60% Win Rate Strategy */}
+      <SmartCTA blogSlug="trading-psychology-master-your-emotions" variant="inline" />
+
       <h2>Daily Mental Routine: How Pros Prepare</h2>
 
       <div className="space-y-4 my-6">
@@ -618,13 +621,7 @@ export default function BlogPost() {
 
       <p>That's when consistent profitability arrives. Not when you find the perfect strategy, but when you become the type of person who can execute any strategy with discipline.</p>
 
-        {/* Inline CTA - After Final Thoughts: Path to Consistent Profitability Through Discipline */}
-        <SmartCTA blogSlug="trading-psychology-master-your-emotions" variant="inline" />
-
           </div>
-
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="trading-psychology-master-your-emotions" />
 
           {/* Related Posts */}
           <RelatedPosts currentSlug="trading-psychology-master-your-emotions" limit={3} />
