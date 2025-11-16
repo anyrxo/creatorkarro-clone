@@ -167,10 +167,6 @@ const faqs = [
 **Platform Comparison Table (2026):**
 
 | Feature | ConvertKit | ActiveCampaign | Beehiiv | Klaviyo | Mailmodo |
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
-
 |---------|-----------|---------------|---------|---------|----------|
 | **Starting Price** | Free → $29 | $49/mo | Free → $49 | Free → $45 | $39/mo |
 | **AI Features** | Basic | Advanced | Medium | Advanced | Advanced |
@@ -1311,6 +1307,10 @@ const schema = generateBlogPostSchema({
                         <div className="text-gray-400 text-sm">Launch Conversion Rate</div>
                     </div>
                 </div>
+
+                {/* Inline CTA - After Showing $127K Revenue + $47 Per Subscriber Metrics */}
+                <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
+
             </div>
         </div>
     </section>
