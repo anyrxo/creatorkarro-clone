@@ -930,9 +930,6 @@ Slide 10: CTA ("Save this, follow for more, tag a creator friend")
 
 **Real Performance Data**
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="500k-followers" variant="inline" />
-
 Average carousel (no strategy): 3,200 impressions, 45 saves
 Optimized problem-solution carousel: 68,000 impressions, 2,400 saves
 Growth multiplier: 21x more effective
@@ -992,6 +989,9 @@ Growth multiplier: 40x reach, 74x engagement
 **Creation Time**: 20-40 minutes per Reel
 **Posting Frequency**: 1-2 per week
 **Expected Results**: 1-3 viral posts per month, +5,000-15,000 followers per viral Reel
+
+        {/* Inline CTA - Perfectly Placed After Showing 2 Proven Strategies with Results */}
+        <SmartCTA blogSlug="500k-followers" variant="inline" />
 
 **#3: Data-Driven Case Studies (Highest Credibility)**
 
