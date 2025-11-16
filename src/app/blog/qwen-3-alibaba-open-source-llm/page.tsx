@@ -171,10 +171,6 @@ const schema = generateBlogPostSchema({
                 <h3 className="text-xl font-bold text-white">Multilingual Master</h3>
               </div>
               <p className="text-gray-300 text-sm">
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="qwen-3-alibaba-open-source-llm" variant="inline" />
-
                 <strong className="text-orange-400">89.5% C-Eval score</strong> - Dominates Chinese language tasks, beating GPT-4 by 18 points
               </p>
             </div>
@@ -720,6 +716,9 @@ const schema = generateBlogPostSchema({
                   </ul>
                 </div>
               </div>
+
+              {/* Inline CTA - After Hong Kong Fintech Success Story: 78%→91% Satisfaction + $4,200→$600 Cost Reduction */}
+              <SmartCTA blogSlug="qwen-3-alibaba-open-source-llm" variant="inline" />
 
               <div className="bg-gradient-to-br from-red-900/30 to-pink-900/20 border border-red-500/30 rounded-xl p-6">
                 <h3 className="text-2xl font-bold text-red-400 mb-4">🌏 Asia-Pacific Multilingual Support</h3>
