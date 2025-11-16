@@ -169,9 +169,6 @@ export default function MachineLearningAutomation() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="machine-learning-automation" variant="inline" />
-
       </section>
 
       <section
@@ -662,6 +659,10 @@ export default function MachineLearningAutomation() {
               </div>
             </div>
           </div>
+
+          {/* Inline CTA - After 3 Success Stories: $45M Revenue, $12M Fraud Prevention, $3M Healthcare Savings */}
+          <SmartCTA blogSlug="machine-learning-automation" variant="inline" />
+
         </div>
       </section>
 
