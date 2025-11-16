@@ -102,9 +102,6 @@ export default function NoCodeAutomationToolsPage() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="no-code-automation-tools" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4">
@@ -561,6 +558,10 @@ export default function NoCodeAutomationToolsPage() {
               </div>
             </div>
           </div>
+
+          {/* Inline CTA - After 3 Success Stories: $2M ARR, 300% Efficiency, 90% Time Saved */}
+          <SmartCTA blogSlug="no-code-automation-tools" variant="inline" />
+
         </div>
       </section>
 
