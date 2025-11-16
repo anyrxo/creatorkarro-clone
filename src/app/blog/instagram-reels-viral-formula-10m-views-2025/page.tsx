@@ -123,6 +123,15 @@ export default function InstagramReelsViralFormula() {
         </div>
       </section>
 
+      {/* Inline CTA - After Viral Stats: 1.2B Total Views + 89 Reels Over 10M Views + 847K Followers Gained */}
+      <div className="py-12 px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <SmartCTA blogSlug="instagram-reels-viral-formula-10m-views-2025" variant="inline" />
+          </div>
+        </div>
+      </div>
+
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="prose prose-invert prose-lg max-w-none">
@@ -945,9 +954,6 @@ export default function InstagramReelsViralFormula() {
               </div>
             </div>
           </div>
-
-          {/* Inline CTA - After 3 Case Studies Showing 15.3M, 12.7M, and 18.9M View Reels */}
-          <SmartCTA blogSlug="instagram-reels-viral-formula-10m-views-2025" variant="inline" />
 
         </div>
       </section>
