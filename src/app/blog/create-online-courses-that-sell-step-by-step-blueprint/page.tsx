@@ -183,6 +183,12 @@ const schema = generateBlogPostSchema({
               </p>
             </div>
           </div>
+
+          {/* Inline CTA - After Course Stats: $27K-511K/Year Revenue + 30-45 Days MVP + 85% Margins */}
+          <div className="my-12">
+            <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" variant="inline" />
+          </div>
+
         </div>
       </section>
 
@@ -221,9 +227,6 @@ const schema = generateBlogPostSchema({
               </div>
             </div>
           </div>
-
-          {/* Inline CTA - After Revenue Examples: $27K-511K First Year Revenue + Real Case Studies */}
-          <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" variant="inline" />
 
           {/* Platform Comparison Table */}
           <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 border border-zinc-700 rounded-2xl p-8 mb-12">
