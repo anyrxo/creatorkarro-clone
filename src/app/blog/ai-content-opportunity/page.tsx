@@ -352,10 +352,14 @@ export default function AIContentOpportunity() {
 </div>
 </div>
 </div>
+
+        {/* Inline CTA - After 10 Revenue Opportunities: $1.2M Courses + $10-50K/mo YouTube + $1-10M/year AI Influencers */}
+        <SmartCTA blogSlug="ai-content-opportunity" variant="inline" />
+
 </section>
 
       <section
-        
+
         className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
@@ -407,10 +411,6 @@ export default function AIContentOpportunity() {
             </div>
         </div>
     </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ai-content-opportunity" variant="inline" />
-
 </section>
 
       <section
