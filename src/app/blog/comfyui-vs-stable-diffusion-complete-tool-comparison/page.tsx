@@ -182,6 +182,11 @@ export default function ComfyuiVsStableDiffusionCompleteToolComparison() {
                     <span>127K+ Students</span>
                   </div>
                 </div>
+
+                {/* Inline CTA - After Authority Statement: 127K+ Students + $2.7M+ Revenue Generated */}
+                <div className="my-8">
+                  <SmartCTA blogSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" variant="inline" />
+                </div>
               </header>
               
               <div className="prose prose-lg prose-invert max-w-none">
@@ -373,9 +378,6 @@ Generate</pre>
                   </div>
                 </div>
 
-                {/* Inline CTA - After Comparison Showing ComfyUI: 28% Faster + 20-30% Less VRAM */}
-                <SmartCTA blogSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" variant="inline" />
-
                 {/* Workflow Examples */}
                 <div className="bg-zinc-900 rounded-xl p-6 mb-8">
                   <h2 className="text-3xl font-bold text-white mb-6">Example Workflows in Each Tool</h2>
@@ -489,9 +491,6 @@ Generate</pre>
                     </div>
                   </div>
                 </div>
-
-                {/* Smart CTA - All Access Pass */}
-                <SmartCTA blogSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" />
 
                 {/* Related Posts */}
                 <RelatedPosts currentSlug="comfyui-vs-stable-diffusion-complete-tool-comparison" limit={3} />
