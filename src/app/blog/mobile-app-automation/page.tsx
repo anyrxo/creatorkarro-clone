@@ -423,6 +423,10 @@ export default function MobileAppAutomationPage() {
             </div>
           </div>
         </div>
+
+        {/* Inline CTA - After Revenue Strategies: 280% IAP Increase + 92% Retention + $89 LTV + 35% Conversion */}
+        <SmartCTA blogSlug="mobile-app-automation" variant="inline" />
+
       </section>
 
       <section className="py-20 px-4">
@@ -574,10 +578,6 @@ export default function MobileAppAutomationPage() {
               </div>
             </div>
           </div>
-
-          {/* Inline CTA - After Testimonials Showing $45K and $120K Monthly Revenue from App Automation */}
-          <SmartCTA blogSlug="mobile-app-automation" variant="inline" />
-
         </div>
       </section>
 
