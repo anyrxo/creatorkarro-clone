@@ -618,6 +618,9 @@ export default function BlogPost() {
 
       <p>That's when consistent profitability arrives. Not when you find the perfect strategy, but when you become the type of person who can execute any strategy with discipline.</p>
 
+        {/* Inline CTA - After Final Thoughts: Path to Consistent Profitability Through Discipline */}
+        <SmartCTA blogSlug="trading-psychology-master-your-emotions" variant="inline" />
+
           </div>
 
           {/* Smart CTA - All Access Pass */}
@@ -626,9 +629,6 @@ export default function BlogPost() {
           {/* Related Posts */}
           <RelatedPosts currentSlug="trading-psychology-master-your-emotions" limit={3} />
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="trading-psychology-master-your-emotions" variant="inline" />
 
       </section>
     </div>
