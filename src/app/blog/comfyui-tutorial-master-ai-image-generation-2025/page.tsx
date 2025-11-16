@@ -265,6 +265,9 @@ const schema = generateBlogPostSchema({
             </p>
           </div>
 
+          {/* Inline CTA - After Comparison Showing 20-30% Faster + $0 vs $120/month */}
+          <SmartCTA blogSlug="comfyui-tutorial-master-ai-image-generation-2025" variant="inline" />
+
           {/* Rest of the content will continue in the next parts */}
 
           {/* FAQs */}
@@ -280,10 +283,6 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="comfyui-tutorial-master-ai-image-generation-2025" limit={3} />
 
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="comfyui-tutorial-master-ai-image-generation-2025" variant="inline" />
-
       </section>
     </div>
   )
