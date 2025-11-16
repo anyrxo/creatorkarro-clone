@@ -404,6 +404,10 @@ For each section include:
 
 **Key Insight**: Even the *lowest* ROI scenario (enterprise at 500%) means every $1 invested returns $5. For solo creators and small businesses, ChatGPT automation typically delivers **20-300x returns** within the first year—making it one of the highest-ROI business investments available in 2026.`
   },
+
+        {/* Inline CTA - After 4 ROI Case Studies: $6K-$20K/month Gains + 2,500-30,000% ROI */}
+        <SmartCTA blogSlug="chatgpt-automation-tips" variant="inline" />
+
   {
     question: "How do you set up ChatGPT automations with Zapier, Make, or n8n for true hands-free workflows?",
     answer: `**Complete Guide to ChatGPT API Automation** (3 Platforms Compared):
@@ -807,9 +811,6 @@ export default function ChatGPTAutomationTipsPage() {
             <p className="text-gray-300">
               This guide covers the exact automation strategies, copy-paste templates, and integration setups used by top creators achieving these results. See the detailed FAQs below for specific implementations and step-by-step instructions.
             </p>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="chatgpt-automation-tips" variant="inline" />
 
           </section>
 
