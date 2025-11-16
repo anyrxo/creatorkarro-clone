@@ -252,6 +252,9 @@ const schema = generateBlogPostSchema({
             <FAQSchema faqs={faqs} />
           </div>
 
+          {/* Inline CTA - After FAQs Showing $50K+/month Revenue Examples + $511K First Year Case Study */}
+          <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" variant="inline" />
+
           {/* Smart CTA - All Access Pass */}
           <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" />
 
@@ -259,10 +262,6 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="create-online-courses-that-sell-step-by-step-blueprint" limit={3} />
 
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="create-online-courses-that-sell-step-by-step-blueprint" variant="inline" />
-
       </section>
     </div>
   )
