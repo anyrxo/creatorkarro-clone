@@ -378,6 +378,9 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
                   </div>
                 </section>
 
+                {/* Inline CTA - After Posting Schedule: +83% Reach on Reels + +71% Reach on Polls + 47 Avg Likes per 1K Followers */}
+                <SmartCTA blogSlug="instagram-content-strategy-maximum-engagement-2025" variant="inline" />
+
                 {/* Engagement Tactics */}
                 <section className="mb-12">
                   <h2 className="text-3xl font-bold text-white mb-6">9 Advanced Engagement Tactics (With Real Metrics)</h2>
@@ -489,9 +492,6 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
                     </ul>
                   </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="instagram-content-strategy-maximum-engagement-2025" variant="inline" />
-
                 </section>
 
                 {/* Analytics Interpretation */}
@@ -515,9 +515,6 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
                     </div>
                   </div>
                 </section>
-
-                {/* Smart CTA - All Access Pass */}
-                <SmartCTA blogSlug="instagram-content-strategy-maximum-engagement-2025" />
 
                 {/* Related Posts */}
                 <RelatedPosts currentSlug="instagram-content-strategy-maximum-engagement-2025" limit={3} />
