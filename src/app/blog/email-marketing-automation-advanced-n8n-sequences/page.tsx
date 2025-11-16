@@ -448,6 +448,10 @@ Trigger: Purchase completed (via Shopify/Stripe webhook)
 
 **Key Insight**: Even conservative estimates show n8n email automation delivers **minimum 1,000% ROI** for any business sending regular emails. The combination of cost savings (80-95% cheaper) plus conversion improvements (2-5x better with advanced workflows) makes this one of the highest-ROI business investments in 2026.`
   },
+
+        {/* Inline CTA - After ROI Analysis: $66K→$142K Per Launch + 1,000%+ ROI + 3.2% Conversion */}
+        <SmartCTA blogSlug="email-marketing-automation-advanced-n8n-sequences" variant="inline" />
+
   {
     question: "How do you set up n8n for email automation from scratch (complete beginner's guide)?",
     answer: `**Complete N8N Email Automation Setup Guide** (Step-by-Step for Beginners):
@@ -1026,9 +1030,6 @@ export default function EmailMarketingAutomationPage() {
               Complete N8N Email Automation Guide
             </h2>
             <FAQSchema faqs={faqs} />
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="email-marketing-automation-advanced-n8n-sequences" variant="inline" />
 
           </section>
 
