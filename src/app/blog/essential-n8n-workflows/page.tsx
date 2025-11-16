@@ -217,8 +217,8 @@ export default function EssentialN8NWorkflows() {
                             <span className="text-white ml-2">5 hours/week</span>
                         </div>
                         <div>
-                            <span className="text-blue-400 font-semibold">Engagement boost:</span>
-                            <span className="text-white ml-2">+230%</span>
+                            <span className="text-blue-400 font-semibold">Tools needed:</span>
+                            <span className="text-white ml-2">OpenAI API, Social APIs</span>
                         </div>
                     </div>
                 </div>
@@ -254,12 +254,12 @@ export default function EssentialN8NWorkflows() {
                   
                 <div className="flex items-center gap-6">
                     <div>
-                        <span className="text-green-400 font-semibold">Conversion rate:</span>
-                        <span className="text-white ml-2">24%</span>
+                        <span className="text-green-400 font-semibold">Time saved:</span>
+                        <span className="text-white ml-2">2 hours/week</span>
                     </div>
                     <div>
-                        <span className="text-blue-400 font-semibold">List growth:</span>
-                        <span className="text-white ml-2">+500/month</span>
+                        <span className="text-blue-400 font-semibold">Tools needed:</span>
+                        <span className="text-white ml-2">ConvertKit, Mailchimp</span>
                     </div>
                 </div>
             </div>
@@ -298,28 +298,10 @@ export default function EssentialN8NWorkflows() {
     </div>
 </div>
 
-                {/* Results Summary After First 4 Workflows */}
-                <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 mt-12">
-                    <h3 className="text-2xl font-bold text-white mb-6 text-center">Time & Money Saved with These 4 Workflows</h3>
-                    <div className="grid md:grid-cols-3 gap-8 mb-6">
-                        <div className="text-center">
-                            <div className="text-4xl font-bold text-blue-400 mb-2">16 hours</div>
-                            <p className="text-gray-400">Saved per week</p>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-4xl font-bold text-purple-400 mb-2">$3,500</div>
-                            <p className="text-gray-400">Value of time saved/month</p>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-4xl font-bold text-green-400 mb-2">+230%</div>
-                            <p className="text-gray-400">Engagement boost</p>
-                        </div>
-                    </div>
-                    <p className="text-center text-gray-300 italic">"These workflows alone have transformed how I run my creator business"</p>
+                {/* Inline CTA - After Showing First 4 Essential Workflows */}
+                <div className="mt-12">
+                    <SmartCTA blogSlug="essential-n8n-workflows" variant="inline" />
                 </div>
-
-                {/* Inline CTA - After Showing 16 Hours Saved + $3.5K Value + 230% Engagement Boost */}
-                <SmartCTA blogSlug="essential-n8n-workflows" variant="inline" />
 
             </div><div className="bg-zinc-900 rounded-xl p-6 mt-8">
 <div className="flex items-start gap-4">
@@ -435,9 +417,183 @@ export default function EssentialN8NWorkflows() {
 </div>
 </section>
 
+      <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Understanding N8N Node Types</h2>
+        <p className="text-gray-300 text-center mb-8 max-w-3xl mx-auto">N8N workflows are built by connecting different node types. Understanding these building blocks is essential for creating powerful automations.</p>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Trigger Nodes</h3>
+                <p className="text-gray-300 mb-4">Start workflows automatically when specific events occur.</p>
+                <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Webhook Trigger</h4>
+                        <p className="text-gray-400 text-sm">Listens for HTTP requests. Used for real-time integrations like form submissions, payment notifications, or external app events.</p>
+                    </div>
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Schedule Trigger</h4>
+                        <p className="text-gray-400 text-sm">Runs workflow at specific times (cron syntax). Perfect for daily reports, backups, or recurring tasks.</p>
+                    </div>
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Email Trigger</h4>
+                        <p className="text-gray-400 text-sm">Monitors inbox for new emails matching criteria. Enables email-based automations and support workflows.</p>
+                    </div>
+                    <div className="bg-zinc-800 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">File Trigger</h4>
+                        <p className="text-gray-400 text-sm">Watches folders for new/modified files. Triggers when files appear in Google Drive, Dropbox, or local directories.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">Function Nodes</h3>
+                <p className="text-gray-300 mb-4">Process and transform data as it flows through your workflow.</p>
+                <ul className="space-y-3 text-gray-300">
+                    <li>• <strong className="text-white">Set Node:</strong> Add, modify, or remove data fields. Essential for data transformation and cleanup.</li>
+                    <li>• <strong className="text-white">Code Node:</strong> Run custom JavaScript or Python. Full programming power for complex logic.</li>
+                    <li>• <strong className="text-white">IF Node:</strong> Branch workflow based on conditions. Routes data to different paths based on logic.</li>
+                    <li>• <strong className="text-white">Switch Node:</strong> Multi-way branching. Routes to different paths based on multiple conditions.</li>
+                    <li>• <strong className="text-white">Merge Node:</strong> Combine data from multiple branches. Useful for parallel processing then joining results.</li>
+                    <li>• <strong className="text-white">Item Lists Node:</strong> Split arrays into individual items or aggregate items into arrays.</li>
+                </ul>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">Integration Nodes</h3>
+                <p className="text-gray-300 mb-4">Connect to external services and APIs. N8N has 400+ pre-built integrations:</p>
+                <div className="grid md:grid-cols-3 gap-4">
+                    <div>
+                        <h4 className="text-white font-semibold mb-2 text-sm">Communication</h4>
+                        <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• Slack, Discord, Telegram</li>
+                            <li>• Gmail, Outlook, SendGrid</li>
+                            <li>• Twilio (SMS), Vonage</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold mb-2 text-sm">Content & Social</h4>
+                        <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• Twitter, Instagram, LinkedIn</li>
+                            <li>• YouTube, TikTok (via APIs)</li>
+                            <li>• WordPress, Medium, Ghost</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold mb-2 text-sm">Data & Productivity</h4>
+                        <ul className="text-gray-400 text-xs space-y-1">
+                            <li>• Google Sheets, Airtable, Notion</li>
+                            <li>• Postgres, MySQL, MongoDB</li>
+                            <li>• Stripe, PayPal, Gumroad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing bg-zinc-900">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Workflow Best Practices</h2>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Error Handling & Reliability</h3>
+                <p className="text-gray-300 mb-4">Production workflows must handle failures gracefully. Here's how to build robust automations:</p>
+
+                <div className="space-y-4">
+                    <div className="bg-zinc-900 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Use Error Workflows</h4>
+                        <p className="text-gray-400 text-sm mb-2">N8N lets you define separate workflows that trigger when errors occur.</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• Send notifications to Slack/email when workflows fail</li>
+                            <li>• Log errors to database or monitoring service (Sentry, Datadog)</li>
+                            <li>• Implement retry logic with exponential backoff</li>
+                            <li>• Create fallback actions (e.g., save to queue for manual processing)</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-900 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Continue On Fail Setting</h4>
+                        <p className="text-gray-400 text-sm mb-2">Each node has a "Continue On Fail" toggle. Use strategically:</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">Enable for:</strong> Optional steps (notifications, logging) that shouldn't block workflow</li>
+                            <li>• <strong className="text-white">Disable for:</strong> Critical operations (payments, data writes) where failure should stop execution</li>
+                            <li>• Check error output in downstream nodes using expressions like <code className="text-blue-400">$node["NodeName"].error</code></li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-900 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Retry Logic</h4>
+                        <p className="text-gray-400 text-sm mb-2">Configure retries for nodes that interact with external APIs:</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• Set retry attempts (typically 3-5 for transient failures)</li>
+                            <li>• Use exponential backoff (wait times: 1s, 2s, 4s, 8s)</li>
+                            <li>• Distinguish between retryable errors (rate limits, network issues) and permanent failures (auth errors, invalid data)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">Performance Optimization</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">Parallel Processing</h4>
+                        <p className="text-gray-400 text-sm mb-2">Process multiple items simultaneously instead of sequentially:</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• Use "Split In Batches" node for large datasets</li>
+                            <li>• Process batches of 10-50 items at once</li>
+                            <li>• Reduces total execution time by 5-10x</li>
+                            <li>• Prevents API rate limit issues</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">Caching Strategies</h4>
+                        <p className="text-gray-400 text-sm mb-2">Reduce redundant API calls and database queries:</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• Store frequently accessed data in variables</li>
+                            <li>• Use Redis or database for cross-workflow cache</li>
+                            <li>• Cache API responses with TTL (time-to-live)</li>
+                            <li>• Invalidate cache when source data changes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">Security Best Practices</h3>
+                <div className="space-y-3">
+                    <div className="bg-zinc-900 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Credential Management</h4>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• Never hardcode API keys or passwords in workflows</li>
+                            <li>• Use N8N's built-in credential system (encrypted at rest)</li>
+                            <li>• Rotate credentials regularly (every 90 days minimum)</li>
+                            <li>• Use environment variables for self-hosted instances</li>
+                            <li>• Grant minimum necessary permissions (principle of least privilege)</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-900 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Webhook Security</h4>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• Always use HTTPS webhooks, never HTTP</li>
+                            <li>• Implement webhook signature verification (HMAC validation)</li>
+                            <li>• Add authentication headers or query parameters</li>
+                            <li>• Rate limit webhook endpoints to prevent abuse</li>
+                            <li>• Validate and sanitize all incoming data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
       <section
-        
-        className="section-spacing bg-zinc-900"
+
+        className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Get Started in 15 Minutes</h2>
