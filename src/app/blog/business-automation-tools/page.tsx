@@ -150,6 +150,11 @@ export default function BusinessAutomationTools() {
                     </div>
                   </div>
                 </div>
+
+                {/* Inline CTA - After Value Proposition: 20-30 Hours Weekly Saved + 500+ Businesses + 15 Tools + Real ROI */}
+                <div className="my-8">
+                  <SmartCTA blogSlug="business-automation-tools" variant="inline" />
+                </div>
               </section>
 
               {/* Categories of Business Automation */}
@@ -344,9 +349,6 @@ export default function BusinessAutomationTools() {
                     </div>
                   </div>
 
-                  {/* Inline CTA - After Tool Comparisons Showing 10-15 Hours/Week Saved = $400-$600 Value */}
-                  <SmartCTA blogSlug="business-automation-tools" variant="inline" />
-
                   {/* Quick List: Tools 4-15 */}
                   <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-xl p-8">
                     <h3 className="text-2xl font-bold text-white mb-6">Tools 4-15: Quick Comparison</h3>
@@ -469,9 +471,6 @@ export default function BusinessAutomationTools() {
                   </div>
                 </div>
               </section>
-
-              {/* Smart CTA - All Access Pass */}
-              <SmartCTA blogSlug="business-automation-tools" />
 
               {/* Related Posts */}
               <RelatedPosts currentSlug="business-automation-tools" limit={3} />
