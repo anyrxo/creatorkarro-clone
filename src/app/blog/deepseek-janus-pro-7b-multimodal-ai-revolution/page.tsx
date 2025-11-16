@@ -859,6 +859,10 @@ total_amount. If any field is unclear, return null for that field."`}
                 </div>
               </div>
             </div>
+
+        {/* Inline CTA - After 3 Case Studies: $97K Savings + 5.4x ROI + 89% Time Reduction */}
+        <SmartCTA blogSlug="deepseek-janus-pro-7b-multimodal-ai-revolution" variant="inline" />
+
           </section>
 
           {/* Section 5: Deployment Guide */}
@@ -1111,9 +1115,6 @@ async def extract_invoice(file: UploadFile = File(...)):
                 </Link>
               </div>
             </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="deepseek-janus-pro-7b-multimodal-ai-revolution" variant="inline" />
 
           </section>
 
