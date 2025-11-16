@@ -472,6 +472,17 @@ export default function BusinessAutomationTools() {
                 </div>
               </section>
 
+              <section className="section-spacing bg-zinc-900">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                  <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-blue-400 mb-3">Getting Started Today</h3>
+                    <p className="text-gray-300 mb-4">
+                      Begin your automation journey by mapping your current workflow on paper. Identify the 3-5 most repetitive tasks consuming your time daily. Choose one automation tool from this guide that matches your technical comfort level and budget. Start with a simple automation connecting just two apps you already use, then gradually expand your automated workflows as you gain confidence and see results.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
               {/* Related Posts */}
               <RelatedPosts currentSlug="business-automation-tools" limit={3} />
 
