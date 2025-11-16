@@ -1305,6 +1305,10 @@ const schema = generateBlogPostSchema({
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - After Email Benefits: $42 ROI + 23.4% Conversion + 100% Automation Possible */}
+        <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
+
     </section>
 
     <section className="section-spacing">
@@ -1336,10 +1340,6 @@ const schema = generateBlogPostSchema({
                         <div className="text-gray-400 text-sm">Launch Conversion Rate</div>
                     </div>
                 </div>
-
-                {/* Inline CTA - After FAQs + Metrics: $127K Revenue + 34% Open Rate + $47 Per Subscriber + 12.7% Conversion */}
-                <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
-
             </div>
         </div>
     </section>
