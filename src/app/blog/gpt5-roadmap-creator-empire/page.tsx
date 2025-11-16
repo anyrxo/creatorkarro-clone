@@ -162,10 +162,6 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
               </p>
               
               <div className="grid md:grid-cols-2 gap-6 my-8">
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="gpt5-roadmap-creator-empire" variant="inline" />
-
                 <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
                   <h4 className="text-lg font-semibold text-white mb-3"> Unified Model Superpowers</h4>
                   <ul className="text-gray-300 space-y-1">
@@ -311,6 +307,9 @@ export default function Gpt5RoadmapCreatorEmpirePage() {
                   </div>
                 </div>
               </div>
+
+              {/* Inline CTA - After Success Stories: $89K, $127K, $156K Revenue Examples */}
+              <SmartCTA blogSlug="gpt5-roadmap-creator-empire" variant="inline" />
 
               <h2 id="implementation" className="text-3xl font-bold text-white mb-6"> 90-Day Pre-Launch Empire Plan</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
