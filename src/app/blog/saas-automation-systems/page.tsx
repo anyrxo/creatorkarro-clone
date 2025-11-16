@@ -391,7 +391,12 @@ export default function SaaSAutomationSystemsPage() {
                   </ul>
                 </div>
               </div>
-            </div><div className="mb-16">
+            </div>
+
+            {/* Inline CTA - After 10 Automation Systems + 90-Day Roadmap: -23% Churn + +45% LTV + +65% Trial-to-Paid */}
+            <SmartCTA blogSlug="saas-automation-systems" variant="inline" />
+
+            <div className="mb-16">
               <h2 className="text-3xl font-bold mb-8 text-white">Complete SaaS Automation Tech Stack</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-gray-800 rounded-lg p-6">
@@ -453,9 +458,6 @@ export default function SaaSAutomationSystemsPage() {
                   </div>
                 </div>
 
-                {/* Inline CTA - After Success Story Showing $3.2M ARR + 100x Customer Growth */}
-                <SmartCTA blogSlug="saas-automation-systems" variant="inline" />
-
               </div>
             </div><div className="mb-16">
               <h2 className="text-3xl font-bold mb-8 text-white">Avoid These SaaS Automation Mistakes</h2>
@@ -474,9 +476,6 @@ export default function SaaSAutomationSystemsPage() {
                 </div>
               </div>
             </div>
-
-            {/* Smart CTA - All Access Pass */}
-            <SmartCTA blogSlug="saas-automation-systems" />
 
             {/* Related Posts */}
             <RelatedPosts currentSlug="saas-automation-systems" limit={3} />
