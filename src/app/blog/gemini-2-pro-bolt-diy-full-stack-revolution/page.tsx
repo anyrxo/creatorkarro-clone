@@ -388,6 +388,9 @@ const schema = generateBlogPostSchema({
             </div>
           </section>
 
+          {/* Inline CTA - After Success Stories: 3.5hr Build → $2,088 MRR + 2hr Build → $14,760 MRR + $0.65 Cost vs $40 */}
+          <SmartCTA blogSlug="gemini-2-pro-bolt-diy-full-stack-revolution" variant="inline" />
+
           <section id="tutorial" className="mb-20 scroll-mt-24">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center">
@@ -444,9 +447,6 @@ const schema = generateBlogPostSchema({
               </div>
             </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="gemini-2-pro-bolt-diy-full-stack-revolution" variant="inline" />
-
           </section>
 
           {/* FAQs */}
@@ -462,9 +462,6 @@ const schema = generateBlogPostSchema({
 
             <FAQSchema faqs={faqs} />
           </section>
-
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="gemini-2-pro-bolt-diy-full-stack-revolution" />
 
           {/* Related Posts */}
           <RelatedPosts currentSlug="gemini-2-pro-bolt-diy-full-stack-revolution" limit={3} />
