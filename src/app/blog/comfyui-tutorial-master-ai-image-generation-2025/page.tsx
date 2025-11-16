@@ -201,6 +201,9 @@ const schema = generateBlogPostSchema({
             </p>
           </div>
 
+          {/* Inline CTA - After Intro Showing 25% Faster + Free vs $120/month + Production-Ready Workflows */}
+          <SmartCTA blogSlug="comfyui-tutorial-master-ai-image-generation-2025" variant="inline" />
+
           {/* Comparison Table */}
           <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 border border-zinc-700 rounded-2xl p-8 mb-12">
             <h2 className="text-3xl font-bold text-white mb-6">ComfyUI vs Automatic1111 vs Midjourney</h2>
@@ -264,11 +267,6 @@ const schema = generateBlogPostSchema({
               * Benchmarks from February 2026. ComfyUI offers best performance and control for technical users.
             </p>
           </div>
-
-          {/* Inline CTA - After Comparison Showing 20-30% Faster + $0 vs $120/month */}
-          <SmartCTA blogSlug="comfyui-tutorial-master-ai-image-generation-2025" variant="inline" />
-
-          {/* Rest of the content will continue in the next parts */}
 
           {/* FAQs */}
           <div className="mb-20">
