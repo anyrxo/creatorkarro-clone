@@ -131,12 +131,17 @@ export default function ContentScalingFramework() {
                         <p className="text-gray-400 text-sm">Maximum profit</p>
                     </div>
                 </div>
+
+                {/* Inline CTA - After C.A.S.H. Framework: 7 Six-Figure Brands + 1,000 Pieces Monthly + Proven System */}
+                <div className="mt-8">
+                  <SmartCTA blogSlug="content-scaling-framework" variant="inline" />
+                </div>
             </div>
         </div>
     </section>
 
       <section
-        
+
         className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
@@ -428,10 +433,6 @@ export default function ContentScalingFramework() {
             </div>
         </div>
     </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="content-scaling-framework" variant="inline" />
-
 </section>
 
       <section className="section-spacing">
@@ -519,9 +520,6 @@ export default function ContentScalingFramework() {
         </div>
     </div>
 </section>
-
-      {/* Smart CTA - All Access Pass */}
-      <SmartCTA blogSlug="content-scaling-framework" />
 
       {/* Related Posts */}
       <RelatedPosts currentSlug="content-scaling-framework" limit={3} />
