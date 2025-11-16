@@ -98,6 +98,10 @@ const faqs = [
     question: "How much does lead generation automation cost?",
     answer: "Lead generation automation costs vary widely based on tools and scale. Basic setups start at $50-200/month for small businesses using tools like ActiveCampaign ($29/mo) + Instantly.ai ($37/mo) + basic landing page builder. Mid-market companies typically spend $500-2,000/month for platforms like HubSpot Pro ($890/mo) or Marketo ($895/mo) plus add-ons. Enterprise solutions can exceed $5,000-10,000/month for full-featured stacks with ABM, advanced AI, and integrations. However, the ROI typically justifies costs: if automation generates 50 extra qualified leads/month and your close rate is 20% with $5,000 average deal value, that's $50,000 in new revenue from a $1,000/month investment. Most businesses see 5-15x ROI within 6 months once systems are optimized."
   },
+
+        {/* Inline CTA - After ROI Example: $50K Revenue from $1K Investment + 5-15x ROI */}
+        <SmartCTA blogSlug="lead-generation-automation" variant="inline" />
+
   {
     question: "What's the difference between inbound and outbound lead generation automation?",
     answer: "Inbound lead generation automation attracts prospects who are actively searching for solutions. It includes: SEO-optimized content, lead magnets (ebooks, templates, calculators), landing pages with forms, chatbots for website engagement, and nurture email sequences for downloaded resources. Prospects come to you, so they're often more qualified and have higher intent. Outbound lead generation automation proactively reaches prospects who haven't expressed interest yet. It includes: cold email sequences to targeted lists, LinkedIn connection + messaging automation, paid advertising with automated follow-up, and cold calling with CRM automation. Outbound requires more volume and persistence but gives you control over who you target. In 2026, the most successful strategies combine both: inbound for warm leads with high intent, outbound for strategic accounts and expansion into new markets. Use inbound when you have strong brand awareness and content, outbound when entering new segments or pursuing specific accounts."
@@ -700,9 +704,6 @@ export default function LeadGenerationAutomationPage() {
 
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="lead-generation-automation" variant="inline" />
 
       </section>
     </div>
