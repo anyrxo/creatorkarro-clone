@@ -472,6 +472,212 @@ Loop Node:
               </div>
             </div>
 
+            <div className="bg-gradient-to-r from-indigo-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-indigo-600/20">
+              <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+                <span className="mr-3">🔗</span>
+                Common API Integration Examples
+              </h2>
+
+              <div className="space-y-6">
+                <div className="bg-zinc-900 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-indigo-400 mb-4">Stripe Payment API</h3>
+                  <div className="bg-dark rounded p-4 font-mono text-sm text-gray-300 mb-3">
+                    <pre>{`// Create a customer
+POST https://api.stripe.com/v1/customers
+Headers:
+  - Authorization: Bearer sk_test_xxx
+  - Content-Type: application/x-www-form-urlencoded
+
+Body:
+email=customer@example.com&name=John Doe
+
+// Create a payment intent
+POST https://api.stripe.com/v1/payment_intents
+Body:
+amount=2000&currency=usd&customer=cus_xxx
+
+// N8N Workflow:
+Trigger → HTTP Request (Create Customer) → Set Customer ID →
+HTTP Request (Create Payment Intent) → Send confirmation email`}</pre>
+                  </div>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-indigo-400 mb-4">Airtable Database API</h3>
+                  <div className="bg-dark rounded p-4 font-mono text-sm text-gray-300 mb-3">
+                    <pre>{`// Create record
+POST https://api.airtable.com/v0/appXXX/TableName
+Headers:
+  - Authorization: Bearer patXXX.xxx
+  - Content-Type: application/json
+
+Body:
+{
+  "fields": {
+    "Name": "New Contact",
+    "Email": "contact@example.com",
+    "Status": "Active"
+  }
+}
+
+// Get records with filter
+GET https://api.airtable.com/v0/appXXX/TableName
+Query Parameters:
+  - filterByFormula: {Status}='Active'
+  - maxRecords: 100
+  - sort[0][field]: Created
+  - sort[0][direction]: desc`}</pre>
+                  </div>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-indigo-400 mb-4">Slack Messaging API</h3>
+                  <div className="bg-dark rounded p-4 font-mono text-sm text-gray-300 mb-3">
+                    <pre>{`// Post message to channel
+POST https://slack.com/api/chat.postMessage
+Headers:
+  - Authorization: Bearer xoxb-xxx
+  - Content-Type: application/json
+
+Body:
+{
+  "channel": "#general",
+  "text": "Workflow completed successfully!",
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*Status:* ✅ Complete\\n*Records:* 42"
+      }
+    }
+  ]
+}
+
+// N8N: Use Slack node or HTTP Request for advanced formatting`}</pre>
+                  </div>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-indigo-400 mb-4">Google Sheets API</h3>
+                  <div className="bg-dark rounded p-4 font-mono text-sm text-gray-300">
+                    <pre>{`// Append row to spreadsheet
+POST https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values/{range}:append
+Headers:
+  - Authorization: Bearer ya29.xxx (OAuth2 token)
+
+Query:
+  - valueInputOption: USER_ENTERED
+
+Body:
+{
+  "values": [
+    ["2025-01-15", "John Doe", "john@example.com", "Active"]
+  ]
+}
+
+// Read data from sheet
+GET https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values/{range}
+
+Response:
+{
+  "values": [
+    ["Date", "Name", "Email", "Status"],
+    ["2025-01-15", "John Doe", "john@example.com", "Active"]
+  ]
+}`}</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-pink-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-pink-600/20">
+              <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
+                <span className="mr-3">🪝</span>
+                Webhook Setup Tutorial
+              </h2>
+
+              <div className="space-y-6">
+                <div className="bg-zinc-900 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-pink-400 mb-4">What Are Webhooks?</h3>
+                  <p className="text-gray-300 mb-3">
+                    Webhooks are HTTP callbacks that deliver real-time data when events occur, eliminating the need for polling APIs repeatedly.
+                  </p>
+                  <div className="bg-zinc-800 rounded-lg p-4">
+                    <h4 className="text-white font-semibold mb-2">Polling vs Webhooks</h4>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <p className="text-red-400 font-semibold mb-1">❌ Polling (inefficient)</p>
+                        <ul className="text-gray-300 space-y-1">
+                          <li>• Check API every 5 minutes</li>
+                          <li>• Waste API calls if no changes</li>
+                          <li>• Delayed data (up to 5 min)</li>
+                          <li>• Hits rate limits quickly</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="text-green-400 font-semibold mb-1">✅ Webhooks (efficient)</p>
+                        <ul className="text-gray-300 space-y-1">
+                          <li>• Instant notification on change</li>
+                          <li>• Only calls when needed</li>
+                          <li>• Real-time data delivery</li>
+                          <li>• Saves API quota</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-pink-400 mb-4">N8N Webhook Node Setup</h3>
+                  <div className="bg-dark rounded p-4 font-mono text-sm text-gray-300">
+                    <pre>{`// Step 1: Add Webhook node to N8N
+Node: Webhook
+HTTP Method: POST
+Path: /my-custom-webhook
+Authentication: None (or Header Auth for security)
+
+// Step 2: Get webhook URL
+Production: https://your-n8n.com/webhook/my-custom-webhook
+Test: https://your-n8n.com/webhook-test/my-custom-webhook
+
+// Step 3: Configure in external service
+Example - GitHub webhook for new issues:
+  Payload URL: https://your-n8n.com/webhook/github-issues
+  Content type: application/json
+  Events: Issues → created
+
+// Step 4: Process incoming data
+{
+  "action": "opened",
+  "issue": {
+    "id": 123,
+    "title": "Bug report",
+    "body": "Description...",
+    "user": {
+      "login": "username"
+    }
+  }
+}
+
+// N8N: Access data with {{$json.issue.title}}`}</pre>
+                  </div>
+                </div>
+
+                <div className="bg-zinc-900 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-pink-400 mb-4">Webhook Security Best Practices</h3>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li>• <strong>Signature Verification:</strong> Validate webhook signatures (HMAC) to ensure requests are from trusted sources</li>
+                    <li>• <strong>Header Authentication:</strong> Add custom header like "X-Webhook-Secret" that must match expected value</li>
+                    <li>• <strong>IP Whitelisting:</strong> Only accept requests from known IP ranges (GitHub, Stripe provide IP lists)</li>
+                    <li>• <strong>HTTPS Only:</strong> Never use HTTP for webhooks - always require SSL/TLS encryption</li>
+                    <li>• <strong>Idempotency:</strong> Handle duplicate webhook deliveries gracefully (same event sent twice)</li>
+                    <li>• <strong>Timeout Handling:</strong> Respond within 5 seconds or service may retry (process async if needed)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-gradient-to-r from-cyan-600/10 to-blue-600/10 p-8 rounded-xl border border-cyan-600/20">
               <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
                 <span className="mr-3">✅</span>
