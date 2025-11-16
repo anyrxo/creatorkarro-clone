@@ -121,6 +121,11 @@ export default function BlogPost() {
         </div>
       </div>
 
+      {/* Inline CTA - After Trading Stats: 65% Win Rate + 1:2+ Risk:Reward + 50+ Years Proven */}
+      <div className="my-8">
+        <SmartCTA blogSlug="macd-indicator-trading-strategy" variant="inline" />
+      </div>
+
       <h2>MACD Indicator: From Basics to Consistently Profitable Trading</h2>
       <p>The MACD (Moving Average Convergence Divergence) indicator has remained one of the most powerful technical tools for 50+ years. Developed by Gerald Appel in 1974, MACD combines trend-following and momentum principles to identify high-probability trade entries.</p>
 
@@ -569,9 +574,6 @@ export default function BlogPost() {
         </div>
       </div>
 
-        {/* Inline CTA - After Professional MACD System: 62-68% Win Rate + 8-15% Monthly Returns + 1:2.3 R:R */}
-        <SmartCTA blogSlug="macd-indicator-trading-strategy" variant="inline" />
-
       <h2>Frequently Asked Questions</h2>
 
       <div className="space-y-4 my-8">
@@ -633,9 +635,6 @@ export default function BlogPost() {
       <p>Traders who approach MACD with patience, proper risk management (1-2% per trade), and a systematic approach are the ones still profitably trading it five years from now.</p>
 
           </div>
-
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="macd-indicator-trading-strategy" />
 
           {/* Related Posts */}
           <RelatedPosts currentSlug="macd-indicator-trading-strategy" limit={3} />
