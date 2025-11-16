@@ -93,11 +93,11 @@ export default function ProductLaunchStrategy() {
                 </div>
 
                 <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              The $250K Digital Product Launch <span className="text-green-400">Blueprint</span>
+              Digital Product Launch Strategy <span className="text-green-400">Blueprint</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-400 mb-8">
-              The exact 60-day strategy I use to launch <span className="text-white font-semibold">6-figure digital products consistently</span>
+              A comprehensive 60-day strategy framework for <span className="text-white font-semibold">successful digital product launches</span>
                 </p>
 
                 
@@ -108,38 +108,38 @@ export default function ProductLaunchStrategy() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold text-white text-center mb-8">My Last 5 Launch Results</h2>
+                <h2 className="text-2xl font-bold text-white text-center mb-8">5 Digital Product Launch Models</h2>
                 <div className="grid md:grid-cols-5 gap-4">
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">AI Course</h3>
-                        <p className="text-2xl font-bold text-green-400">$127K</p>
-                        <p className="text-xs text-gray-500">7 days</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Courses</h3>
+                        <p className="text-2xl font-bold text-green-400">7-14 days</p>
+                        <p className="text-xs text-gray-500">Launch window</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
                         <h3 className="text-sm text-gray-400 mb-2">Templates</h3>
-                        <p className="text-2xl font-bold text-green-400">$89K</p>
-                        <p className="text-xs text-gray-500">5 days</p>
+                        <p className="text-2xl font-bold text-green-400">3-5 days</p>
+                        <p className="text-xs text-gray-500">Quick launch</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
                         <h3 className="text-sm text-gray-400 mb-2">Masterclass</h3>
-                        <p className="text-2xl font-bold text-green-400">$234K</p>
-                        <p className="text-xs text-gray-500">14 days</p>
+                        <p className="text-2xl font-bold text-green-400">10-14 days</p>
+                        <p className="text-xs text-gray-500">Live event</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
                         <h3 className="text-sm text-gray-400 mb-2">Workshop</h3>
-                        <p className="text-2xl font-bold text-green-400">$67K</p>
-                        <p className="text-xs text-gray-500">3 days</p>
+                        <p className="text-2xl font-bold text-green-400">2-3 days</p>
+                        <p className="text-xs text-gray-500">Flash launch</p>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <h3 className="text-sm text-gray-400 mb-2">Bundle</h3>
-                        <p className="text-2xl font-bold text-green-400">$312K</p>
-                        <p className="text-xs text-gray-500">10 days</p>
+                        <h3 className="text-sm text-gray-400 mb-2">Bundles</h3>
+                        <p className="text-2xl font-bold text-green-400">7-10 days</p>
+                        <p className="text-xs text-gray-500">Limited offer</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        {/* Inline CTA - After 5 Launch Results: $127K, $89K, $234K, $67K, $312K */}
+        {/* Inline CTA */}
         <SmartCTA blogSlug="product-launch-strategy" variant="inline" />
 
     </section>
@@ -183,10 +183,10 @@ export default function ProductLaunchStrategy() {
                                     </ul>
                                 </div>
                             </div>
-                    
+
                             <div className="mt-4 p-4 bg-zinc-900 rounded">
                                 <p className="text-sm text-gray-300">
-                                    <span className="text-green-400 font-semibold">Goal:</span> Build email list of 5,000+ interested prospects
+                                    <span className="text-green-400 font-semibold">Goal:</span> Build targeted email list of interested prospects through lead magnets and valuable content
                                 </p>
                             </div>
                         </div>
@@ -222,19 +222,19 @@ export default function ProductLaunchStrategy() {
                                 <span className="text-gray-300">Refine sales copy based on real feedback</span>
                             </div>
                         </div>
-                    
+
                         <div className="mt-4 grid grid-cols-3 gap-3">
                             <div className="bg-zinc-900 rounded p-3 text-center">
-                                <p className="text-2xl font-bold text-green-400">$15-25K</p>
-                                <p className="text-xs text-gray-400">Typical seed revenue</p>
+                                <p className="text-2xl font-bold text-green-400">Beta Testing</p>
+                                <p className="text-xs text-gray-400">Early access validation</p>
                             </div>
                             <div className="bg-zinc-900 rounded p-3 text-center">
-                                <p className="text-2xl font-bold text-blue-400">20-30</p>
-                                <p className="text-xs text-gray-400">Testimonials gathered</p>
+                                <p className="text-2xl font-bold text-blue-400">Testimonials</p>
+                                <p className="text-xs text-gray-400">Social proof collection</p>
                             </div>
                             <div className="bg-zinc-900 rounded p-3 text-center">
-                                <p className="text-2xl font-bold text-purple-400">5-10</p>
-                                <p className="text-xs text-gray-400">Case studies created</p>
+                                <p className="text-2xl font-bold text-purple-400">Case Studies</p>
+                                <p className="text-xs text-gray-400">Success documentation</p>
                             </div>
                         </div>
                     </div>
@@ -341,7 +341,7 @@ export default function ProductLaunchStrategy() {
 
       <section className="section-spacing bg-zinc-900">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">The Psychology Behind $250K Launches</h2>
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">The Psychology Behind Successful Launches</h2>
           
         <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-zinc-800 rounded-xl p-6">
@@ -405,7 +405,7 @@ export default function ProductLaunchStrategy() {
         className="section-spacing"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <h2 className="text-3xl font-bold text-white mb-8">The Million-Dollar Email Sequence</h2>
+        <h2 className="text-3xl font-bold text-white mb-8">The Pre-Launch Email Sequence</h2>
           
         <div className="bg-zinc-900 rounded-xl p-8">
             <h3 className="text-xl font-bold text-green-400 mb-6">Pre-Launch Sequence (30 days)</h3>
@@ -461,8 +461,117 @@ export default function ProductLaunchStrategy() {
     </div>
 </section>
 
+      <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Launch Pricing Strategies</h2>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">Tiered Pricing Model</h3>
+                <p className="text-gray-300 mb-4">Offer multiple price points to capture different customer segments:</p>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Basic Tier</h4>
+                        <ul className="space-y-1 text-sm text-gray-300">
+                            <li>• Core product only</li>
+                            <li>• Self-service support</li>
+                            <li>• Community access</li>
+                            <li>• Lower price point attracts volume</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4 border-2 border-green-400">
+                        <h4 className="text-green-400 font-semibold mb-2">Premium Tier (Most Popular)</h4>
+                        <ul className="space-y-1 text-sm text-gray-300">
+                            <li>• All basic features</li>
+                            <li>• Bonus modules/templates</li>
+                            <li>• Priority support</li>
+                            <li>• Private community</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">VIP Tier</h4>
+                        <ul className="space-y-1 text-sm text-gray-300">
+                            <li>• All premium features</li>
+                            <li>• 1-on-1 coaching sessions</li>
+                            <li>• Done-for-you services</li>
+                            <li>• Lifetime updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Payment Plan Options</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">One-Time Payment</h4>
+                        <p className="text-gray-300 text-sm mb-2">Advantages:</p>
+                        <ul className="space-y-1 text-xs text-gray-300">
+                            <li>• Immediate cash flow boost</li>
+                            <li>• Higher perceived value</li>
+                            <li>• No subscription management</li>
+                            <li>• Discount incentive (pay in full = save 20%)</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Payment Plans</h4>
+                        <p className="text-gray-300 text-sm mb-2">Advantages:</p>
+                        <ul className="space-y-1 text-xs text-gray-300">
+                            <li>• Lower barrier to entry</li>
+                            <li>• Higher conversion rates (2-3x typical)</li>
+                            <li>• Total revenue often higher due to slight markup</li>
+                            <li>• Common: 3-pay, 6-pay, 12-month options</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">Early Bird & Scarcity Tactics</h3>
+                <div className="space-y-4">
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Launch Week Discount Ladder</h4>
+                        <div className="space-y-2 text-sm text-gray-300">
+                            <div className="flex justify-between items-center">
+                                <span>Day 1-2: Early Bird</span>
+                                <span className="text-green-400">30% off</span>
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <span>Day 3-5: Standard Launch Price</span>
+                                <span className="text-green-400">20% off</span>
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <span>Day 6-7: Last Chance</span>
+                                <span className="text-green-400">10% off</span>
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <span>Post-Launch: Evergreen</span>
+                                <span className="text-gray-400">Full price</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-zinc-800 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Quantity Scarcity</h4>
+                        <ul className="space-y-1 text-sm text-gray-300">
+                            <li>• "Only 100 founding member spots" creates urgency</li>
+                            <li>• Use countdown timer on sales page</li>
+                            <li>• Display live counter showing spots remaining</li>
+                            <li>• Close cart at deadline (don't extend - builds trust)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
       <section
-        
+
         className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
