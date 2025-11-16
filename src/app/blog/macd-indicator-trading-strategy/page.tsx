@@ -569,6 +569,9 @@ export default function BlogPost() {
         </div>
       </div>
 
+        {/* Inline CTA - After Professional MACD System: 62-68% Win Rate + 8-15% Monthly Returns + 1:2.3 R:R */}
+        <SmartCTA blogSlug="macd-indicator-trading-strategy" variant="inline" />
+
       <h2>Frequently Asked Questions</h2>
 
       <div className="space-y-4 my-8">
@@ -637,10 +640,6 @@ export default function BlogPost() {
           {/* Related Posts */}
           <RelatedPosts currentSlug="macd-indicator-trading-strategy" limit={3} />
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="macd-indicator-trading-strategy" variant="inline" />
-
       </section>
     </div>
   )
