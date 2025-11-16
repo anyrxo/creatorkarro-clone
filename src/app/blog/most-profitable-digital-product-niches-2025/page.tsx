@@ -438,6 +438,9 @@ export default function MostProfitableDigitalProductNichesIn2025() {
                       <p className="text-gray-400 text-sm mt-4 border-t border-gray-700 pt-4">Challenge: Highly regulated (requires disclaimers). Best approach: Educational, not financial advice</p>
                     </div>
 
+        {/* Inline CTA - After 3 Profitable Niches: $10K-30K/Month Revenue + $7.5K-25K AI Tools + $6K-18K Finance + >$5M/Year Competitors */}
+        <SmartCTA blogSlug="most-profitable-digital-product-niches-2025" variant="inline" />
+
                     <div className="bg-zinc-900 rounded-xl p-6 border border-pink-500/30">
                       <h3 className="text-xl font-bold text-pink-400 mb-4">4. Health & Fitness Coaching</h3>
                       <div className="grid md:grid-cols-2 gap-6">
@@ -555,9 +558,6 @@ export default function MostProfitableDigitalProductNichesIn2025() {
 
                   </div>
 
-        {/* Inline CTA - After 8 Profitable Niches: $10K-37K/Month Revenue Examples + >$5M/Year Competitors */}
-        <SmartCTA blogSlug="most-profitable-digital-product-niches-2025" variant="inline" />
-
                 </section>
 
                 {/* Section 4: Competition Analysis */}
@@ -628,9 +628,6 @@ export default function MostProfitableDigitalProductNichesIn2025() {
                     </div>
                   </div>
                 </section>
-
-                {/* Smart CTA - All Access Pass */}
-                <SmartCTA blogSlug="most-profitable-digital-product-niches-2025" />
 
                 {/* Related Posts */}
                 <RelatedPosts currentSlug="most-profitable-digital-product-niches-2025" limit={3} />
