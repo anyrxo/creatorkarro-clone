@@ -124,6 +124,11 @@ export default function DevOpsAutomationPipelinePage() {
               <div className="text-gray-300">Downtime Required</div>
             </div>
           </div>
+
+          {/* Inline CTA - After DevOps Metrics: 100+ Daily Deployments + 99.9% Success + 2min Builds + 0s Downtime */}
+          <div className="mt-12">
+            <SmartCTA blogSlug="devops-automation-pipeline" variant="inline" />
+          </div>
         </div>
       </section>
 
@@ -486,10 +491,6 @@ export default function DevOpsAutomationPipelinePage() {
               </div>
             </div>
           </div>
-
-          {/* Inline CTA - After Success Stories: 1000% More Deployments + 24x Faster + 50M Users + 100x Faster Provisioning */}
-          <SmartCTA blogSlug="devops-automation-pipeline" variant="inline" />
-
         </div>
       </section>
 
