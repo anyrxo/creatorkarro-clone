@@ -921,6 +921,9 @@ const schema = generateBlogPostSchema({
                 </div>
               </div>
 
+              {/* Inline CTA - After ROI Analysis: 1,649% ROI + $284K Annual Value + $1.2M Turnover Savings */}
+              <SmartCTA blogSlug="hr-automation-systems" variant="inline" />
+
               <div className="bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border border-indigo-500/30 rounded-xl p-8 mb-8">
                 <h3 className="text-2xl font-bold text-white mb-6">Implementation Roadmap: 90-Day Rollout</h3>
 
@@ -1038,10 +1041,6 @@ const schema = generateBlogPostSchema({
           <RelatedPosts currentSlug="hr-automation-systems" limit={3} />
 
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="hr-automation-systems" variant="inline" />
-
       </section>
     </div>
   )
