@@ -128,10 +128,6 @@ const faqs = [
 **Feature Comparison Table:**
 
 | Feature | ComfyUI | FLUX.1 Pro | Midjourney v7 | SD 3.5 | A1111 |
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="comfyui-comparison" variant="inline" />
-
 |---------|---------|------------|---------------|--------|-------|
 | **Image Quality** | 9/10 | 10/10 | 9/10 | 8/10 | 7/10 |
 | **Prompt Adherence** | 9/10 | 10/10 | 8/10 | 8/10 | 7/10 |
@@ -1148,6 +1144,10 @@ The tool doesn't matter as much as matching it to your volume, budget, and consi
 
             </div>
         </div>
+
+        {/* Inline CTA - After Showing $127K Revenue and 10x Productivity Stats */}
+        <SmartCTA blogSlug="comfyui-comparison" variant="inline" />
+
     </section>
 
       <section className="py-16 px-4">

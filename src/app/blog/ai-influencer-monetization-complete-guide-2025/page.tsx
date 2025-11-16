@@ -121,9 +121,6 @@ export default function AIInfluencerMonetization() {
         </div>
       </section>
 
-      {/* Inline CTA - After Showing Impressive Revenue Potential */}
-      <SmartCTA blogSlug="ai-influencer-monetization-complete-guide-2025" variant="inline" />
-
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">💸 12 Proven Revenue Streams for AI Influencers</h2>
@@ -935,6 +932,10 @@ export default function AIInfluencerMonetization() {
               </div>
             </div>
           </div>
+
+          {/* Inline CTA - After 3 Case Studies Showing $35K, $13K, and $33K Monthly Revenue */}
+          <SmartCTA blogSlug="ai-influencer-monetization-complete-guide-2025" variant="inline" />
+
         </div>
       </section>
 
