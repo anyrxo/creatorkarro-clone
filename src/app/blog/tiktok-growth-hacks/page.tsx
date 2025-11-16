@@ -123,8 +123,8 @@ export default function TikTokGrowthHacks() {
                         <div className="text-gray-400 text-sm">Viral Videos</div>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-purple-400 mb-2">$32K</div>
-                        <div className="text-gray-400 text-sm">Revenue Generated</div>
+                        <div className="text-3xl font-bold text-purple-400 mb-2">8.7%</div>
+                        <div className="text-gray-400 text-sm">Avg Engagement Rate</div>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
                         <div className="text-3xl font-bold text-yellow-400 mb-2">267</div>
@@ -396,60 +396,181 @@ export default function TikTokGrowthHacks() {
 
       <section className="section-spacing">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">Turn Views Into Cash</h2>
-          
-        <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">My TikTok Revenue Streams</h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                    <div className="bg-zinc-900/50 rounded p-4">
-                        <div className="flex justify-between mb-2">
-                            <span className="text-gray-300">Digital Products</span>
-                            <span className="text-white font-bold">$18K/mo</span>
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Mastering TikTok Analytics</h2>
+
+        <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-white mb-6">Understanding Your Analytics Dashboard</h3>
+
+            <div className="space-y-6">
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-xl font-bold text-pink-400 mb-4">Video Performance Metrics</h4>
+                    <ul className="space-y-3 text-gray-300">
+                        <li>• <strong className="text-white">Watch Time:</strong> Total minutes viewers spent on your video. Higher watch time = better distribution.</li>
+                        <li>• <strong className="text-white">Average Watch Time:</strong> How long viewers watch before scrolling. Aim for 80%+ of video length.</li>
+                        <li>• <strong className="text-white">Traffic Source:</strong> Where views came from (For You Page, Following, Profile, Search, etc.)</li>
+                        <li>• <strong className="text-white">Audience Territories:</strong> Geographic data showing where viewers are located. Helps optimize posting times.</li>
+                        <li>• <strong className="text-white">Video Views:</strong> Total views (includes replays). Not as important as engagement metrics.</li>
+                    </ul>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-xl font-bold text-blue-400 mb-4">Follower Analytics</h4>
+                    <ul className="space-y-3 text-gray-300">
+                        <li>• <strong className="text-white">Follower Activity:</strong> Shows when your followers are most active. Schedule posts 1-2 hours before peak times.</li>
+                        <li>• <strong className="text-white">Gender & Age Split:</strong> Demographics help tailor content style and topics.</li>
+                        <li>• <strong className="text-white">Top Territories:</strong> Target content for your top 3 countries to maximize engagement.</li>
+                        <li>• <strong className="text-white">Sounds You Used:</strong> Track which audio drives the most views and engagement.</li>
+                    </ul>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-xl font-bold text-green-400 mb-4">The Metrics That Actually Matter</h4>
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-zinc-800 p-4 rounded">
+                            <p className="text-white font-semibold mb-2">Engagement Rate</p>
+                            <p className="text-gray-400 text-sm">(Likes + Comments + Shares) ÷ Views × 100</p>
+                            <p className="text-pink-400 text-sm mt-2">Target: 5-10% is excellent</p>
                         </div>
-                        <div className="text-sm text-gray-400">Link in bio → Landing page</div>
-                    </div>
-                
-                    <div className="bg-zinc-900/50 rounded p-4">
-                        <div className="flex justify-between mb-2">
-                            <span className="text-gray-300">Brand Deals</span>
-                            <span className="text-white font-bold">$8K/mo</span>
+                        <div className="bg-zinc-800 p-4 rounded">
+                            <p className="text-white font-semibold mb-2">Completion Rate</p>
+                            <p className="text-gray-400 text-sm">Percentage who watched full video</p>
+                            <p className="text-pink-400 text-sm mt-2">Target: 60%+ triggers algorithm boost</p>
                         </div>
-                        <div className="text-sm text-gray-400">$200-1000 per sponsored post</div>
-                    </div>
-                
-                    <div className="bg-zinc-900/50 rounded p-4">
-                        <div className="flex justify-between mb-2">
-                            <span className="text-gray-300">Creator Fund</span>
-                            <span className="text-white font-bold">$2K/mo</span>
+                        <div className="bg-zinc-800 p-4 rounded">
+                            <p className="text-white font-semibold mb-2">Share-to-View Ratio</p>
+                            <p className="text-gray-400 text-sm">Shares ÷ Views × 100</p>
+                            <p className="text-pink-400 text-sm mt-2">Target: 0.5%+ is viral territory</p>
                         </div>
-                        <div className="text-sm text-gray-400">$0.02-0.04 per 1000 views</div>
+                        <div className="bg-zinc-800 p-4 rounded">
+                            <p className="text-white font-semibold mb-2">Profile Visit Rate</p>
+                            <p className="text-gray-400 text-sm">Profile visits ÷ Views × 100</p>
+                            <p className="text-pink-400 text-sm mt-2">Target: 3-5% converts to followers</p>
+                        </div>
                     </div>
                 </div>
-              
+            </div>
+        </div>
+
+        <div className="bg-zinc-800 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-purple-400 mb-6">How the For You Page Algorithm Really Works</h3>
+            <p className="text-gray-300 mb-6">TikTok's recommendation system uses a multi-stage filtering process to determine which videos reach millions versus which die at 300 views.</p>
+
+            <div className="space-y-6">
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-white font-bold mb-3">Stage 1: Initial Test Batch (First 100-500 Views)</h4>
+                    <p className="text-gray-300 mb-4">When you post, TikTok shows your video to a small test audience to gauge engagement quality.</p>
+                    <ul className="space-y-2 text-gray-400 text-sm">
+                        <li>• <strong className="text-white">Who sees it:</strong> Some followers + similar interest users (based on past content performance)</li>
+                        <li>• <strong className="text-white">Decision window:</strong> First 1-2 hours after posting is critical</li>
+                        <li>• <strong className="text-white">What TikTok measures:</strong> Completion rate, likes, comments, shares, profile clicks</li>
+                        <li>• <strong className="text-white">Pass threshold:</strong> If engagement beats your account average, moves to Stage 2</li>
+                    </ul>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-white font-bold mb-3">Stage 2: Expanded Distribution (1K-10K Views)</h4>
+                    <p className="text-gray-300 mb-4">Video passed initial test. TikTok expands to broader audience with similar interests.</p>
+                    <ul className="space-y-2 text-gray-400 text-sm">
+                        <li>• <strong className="text-white">Audience expansion:</strong> Users who engaged with similar content, hashtags, sounds</li>
+                        <li>• <strong className="text-white">Testing period:</strong> 6-12 hours</li>
+                        <li>• <strong className="text-white">Key metric:</strong> Watch time dominance. If avg watch time stays high, advances</li>
+                        <li>• <strong className="text-white">Failure point:</strong> Many videos plateau here if content doesn't resonate broadly</li>
+                    </ul>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-white font-bold mb-3">Stage 3: Viral Acceleration (10K-1M+ Views)</h4>
+                    <p className="text-gray-300 mb-4">Algorithm detects exceptional engagement. Video enters mass distribution.</p>
+                    <ul className="space-y-2 text-gray-400 text-sm">
+                        <li>• <strong className="text-white">FYP dominance:</strong> Video appears on For You Page of users with loose interest connections</li>
+                        <li>• <strong className="text-white">Exponential growth:</strong> Views can jump 10x-100x in hours</li>
+                        <li>• <strong className="text-white">Duration:</strong> 24-72 hours of peak distribution, then gradual decline</li>
+                        <li>• <strong className="text-white">Revival potential:</strong> Videos can resurge days/weeks later if new engagement spikes occur</li>
+                    </ul>
+                </div>
+
+                <div className="bg-pink-500/20 border border-pink-500/30 rounded-lg p-6">
+                    <h4 className="text-pink-400 font-bold mb-3">🎯 Pro Tip: The First Hour Strategy</h4>
+                    <p className="text-gray-300 text-sm">The first 60 minutes after posting are make-or-break. Maximize your chances:</p>
+                    <ul className="space-y-1 text-gray-400 text-sm mt-3">
+                        <li>✓ Post when your followers are most active (check analytics)</li>
+                        <li>✓ Respond to every comment within first hour</li>
+                        <li>✓ Share to other platforms immediately to drive initial traffic</li>
+                        <li>✓ Avoid posting multiple videos within 4 hours (competes for same audience)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing bg-zinc-900">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Technical Video Optimization</h2>
+
+        <div className="space-y-8">
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Optimal Video Specifications</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">Resolution & Format</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• <strong className="text-white">Resolution:</strong> 1080x1920 (9:16 aspect ratio)</li>
+                            <li>• <strong className="text-white">Frame rate:</strong> 30fps minimum, 60fps for smooth motion</li>
+                            <li>• <strong className="text-white">File format:</strong> MP4 or MOV (H.264 codec preferred)</li>
+                            <li>• <strong className="text-white">File size:</strong> Under 287.6 MB (3-minute limit)</li>
+                            <li>• <strong className="text-white">Bitrate:</strong> 15-20 Mbps for best quality</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">Length Strategy</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• <strong className="text-white">7-15 seconds:</strong> Highest completion rates, best for hooks/teasers</li>
+                            <li>• <strong className="text-white">21-34 seconds:</strong> Sweet spot for most content types</li>
+                            <li>• <strong className="text-white">45-60 seconds:</strong> Tutorials, storytelling, educational content</li>
+                            <li>• <strong className="text-white">60+ seconds:</strong> Only for highly engaging content (watch time risk)</li>
+                            <li>• <strong className="text-white">Rule:</strong> Make it as short as possible while delivering value</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">Content Retention Techniques</h3>
+                <p className="text-gray-300 mb-4">Keeping viewers watching is the most critical skill for TikTok growth. Here's how to maximize retention:</p>
+
                 <div className="space-y-4">
-                    <div className="bg-zinc-900/50 rounded p-4">
-                        <div className="flex justify-between mb-2">
-                            <span className="text-gray-300">Live Gifts</span>
-                            <span className="text-white font-bold">$3K/mo</span>
-                        </div>
-                        <div className="text-sm text-gray-400">2-hour streams 3x/week</div>
+                    <div className="bg-zinc-900 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">The 3-Second Hook Rule</h4>
+                        <p className="text-gray-400 text-sm mb-2">First 3 seconds determine if viewers keep watching or scroll. Use these patterns:</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">Visual hook:</strong> Bright colors, fast motion, unexpected elements</li>
+                            <li>• <strong className="text-white">Audio hook:</strong> Trending sound, loud/surprising noise, voice pattern interrupt</li>
+                            <li>• <strong className="text-white">Text hook:</strong> Compelling question or bold statement (overlay text)</li>
+                            <li>• <strong className="text-white">Curiosity gap:</strong> "Wait for the end..." or "Watch what happens next..."</li>
+                        </ul>
                     </div>
-                
-                    <div className="bg-zinc-900/50 rounded p-4">
-                        <div className="flex justify-between mb-2">
-                            <span className="text-gray-300">Affiliate Links</span>
-                            <span className="text-white font-bold">$1K/mo</span>
-                        </div>
-                        <div className="text-sm text-gray-400">Amazon, software, tools</div>
+
+                    <div className="bg-zinc-900 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Pacing and Loop Points</h4>
+                        <p className="text-gray-400 text-sm mb-2">Control the rhythm to maintain attention throughout:</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">Cut every 1-3 seconds:</strong> Keep visual variety high, prevents boredom</li>
+                            <li>• <strong className="text-white">Loop back to start:</strong> Last frame connects to first frame (auto-replay boost)</li>
+                            <li>• <strong className="text-white">Mid-video hook:</strong> At 40-60% mark, add surprise/reveal to prevent drop-off</li>
+                            <li>• <strong className="text-white">Text layers:</strong> Add overlay text that appears progressively (forces reading/rewatching)</li>
+                        </ul>
                     </div>
-                
-                    <div className="bg-pink-500/20 rounded p-4 border border-pink-500/30">
-                        <div className="flex justify-between mb-2">
-                            <span className="text-pink-400 font-semibold">Total</span>
-                            <span className="text-pink-400 font-bold text-xl">$32K/mo</span>
-                        </div>
+
+                    <div className="bg-zinc-900 p-4 rounded">
+                        <h4 className="text-white font-semibold mb-2">Strategic Audio Use</h4>
+                        <p className="text-gray-400 text-sm mb-2">Sound selection impacts distribution and retention:</p>
+                        <ul className="text-gray-400 text-sm space-y-1">
+                            <li>• <strong className="text-white">Trending sounds:</strong> Check "Discover" tab daily for rising audio (upload icon shows trend)</li>
+                            <li>• <strong className="text-white">Match energy:</strong> Fast-paced content = upbeat sound, storytelling = ambient/slower</li>
+                            <li>• <strong className="text-white">Voiceover clarity:</strong> If using voiceover, keep background music -15 to -20dB below voice</li>
+                            <li>• <strong className="text-white">Sound sync:</strong> Match visual cuts to beat drops/audio peaks for satisfying rhythm</li>
+                        </ul>
                     </div>
                 </div>
             </div>
