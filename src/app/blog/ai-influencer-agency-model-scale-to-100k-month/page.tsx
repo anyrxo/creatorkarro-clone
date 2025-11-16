@@ -94,9 +94,6 @@ export default function AIInfluencerAgency() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ai-influencer-agency-model-scale-to-100k-month" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
@@ -801,6 +798,9 @@ export default function AIInfluencerAgency() {
               </p>
             </div>
           </div>
+
+          {/* Inline CTA - After Case Study Showing $52K MRR Real Results */}
+          <SmartCTA blogSlug="ai-influencer-agency-model-scale-to-100k-month" variant="inline" />
 
           <div className="bg-yellow-900/30 border border-yellow-500/30 rounded-xl p-8 mb-12">
             <h3 className="text-xl font-bold text-yellow-400 mb-4">Common Pitfalls to Avoid</h3>

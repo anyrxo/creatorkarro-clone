@@ -94,9 +94,6 @@ export default function InstagramHashtagStrategy() {
           </div>
         </div>
 
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="instagram-hashtag-strategy-2025-what-actually-works" variant="inline" />
-
       </section>
 
       <section className="py-16 px-4 border-y border-gray-800">
@@ -327,6 +324,10 @@ export default function InstagramHashtagStrategy() {
                 </li>
               </ul>
             </div>
+
+            {/* Inline CTA - After 60-Day Experiment Showing 5x Better Results with 3-5 Hashtags */}
+            <SmartCTA blogSlug="instagram-hashtag-strategy-2025-what-actually-works" variant="inline" />
+
           </div>
         </div>
       </section>
