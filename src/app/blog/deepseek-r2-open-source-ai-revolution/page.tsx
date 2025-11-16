@@ -312,6 +312,9 @@ const schema = generateBlogPostSchema({
             </div>
           </section>
 
+          {/* Inline CTA - After Cost Analysis: 57x Cheaper ($80K → $1.4K Annually) + 98% Savings + 40% Cheaper Than R1 */}
+          <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" variant="inline" />
+
           {/* Section 2: Reasoning Mechanics */}
           <section id="reasoning-mechanics" className="mb-20 scroll-mt-24">
             <div className="flex items-center gap-3 mb-6">
@@ -636,9 +639,6 @@ Step 4: Verify logic.
               </div>
             </div>
 
-            {/* Inline CTA - After Comparison: 96% Accuracy at 1/57th Cost + 78.3% MATH vs GPT-4's 52.9% + 3-4mo ROI */}
-            <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" variant="inline" />
-
           </section>
 
           {/* Section 4: Real-World Use Cases - abbreviated */}
@@ -736,9 +736,6 @@ Step 4: Verify logic.
 
             <FAQSchema faqs={faqs} />
           </section>
-
-          {/* Smart CTA - All Access Pass */}
-          <SmartCTA blogSlug="deepseek-r2-open-source-ai-revolution" />
 
           {/* Related Posts */}
           <RelatedPosts currentSlug="deepseek-r2-open-source-ai-revolution" limit={3} />
