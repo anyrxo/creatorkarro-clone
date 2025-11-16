@@ -2912,6 +2912,9 @@ The opportunity is massive. The playbooks are proven. The only question: which e
                 </div>
               </div>
 
+              {/* Inline CTA - After 5 Case Studies: $50K-200K Monthly Empire Builders */}
+              <SmartCTA blogSlug="alpha-evolve-ai-business-empire" variant="inline" />
+
               <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-white mb-3">How do I manage risk and diversify when building an AI business empire?</h3>
                 <div className="text-gray-300 leading-relaxed whitespace-pre-line">
@@ -3361,10 +3364,6 @@ This is how you build generational wealth, not just a business.`}
             </div>
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="alpha-evolve-ai-business-empire" variant="inline" />
-
       </section>
 
       <section className="section-spacing bg-dark">
