@@ -817,6 +817,10 @@ const schema = generateBlogPostSchema({
                 </div>
             </div>
         </div>
+
+        {/* Inline CTA - After $50K Case Study: $8,450 First Month + $800-1,200 to $7,000-9,000/Month + 73% Win Rate */}
+        <SmartCTA blogSlug="order-flow-trading-strategy-complete-guide" variant="inline" />
+
     </section>
 
       <section className="section-spacing bg-zinc-900">
@@ -940,10 +944,6 @@ const schema = generateBlogPostSchema({
                 </div>
             </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="order-flow-trading-strategy-complete-guide" variant="inline" />
-
     </section>
 
       <section className="section-spacing">
