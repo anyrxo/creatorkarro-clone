@@ -1280,7 +1280,10 @@ const schema = generateBlogPostSchema({
               The proven email sequences, AI-powered tools, and automation strategies that generate <span className="text-white font-semibold">$10K+ monthly</span> for thousands of businesses in 2026
                 </p>
 
-
+                {/* Inline CTA - After Hero Metrics: $127K Annual Revenue + $10K+ Monthly + $42 ROI Per $1 Spent */}
+                <div className="mt-8">
+                  <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
+                </div>
             </div>
         </div>
     </section>
@@ -1305,10 +1308,6 @@ const schema = generateBlogPostSchema({
                 </div>
             </div>
         </div>
-
-        {/* Inline CTA - After Email Benefits: $42 ROI + 23.4% Conversion + 100% Automation Possible */}
-        <SmartCTA blogSlug="email-marketing-guide" variant="inline" />
-
     </section>
 
     <section className="section-spacing">
