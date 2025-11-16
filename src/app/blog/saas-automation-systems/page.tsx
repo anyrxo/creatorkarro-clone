@@ -121,6 +121,11 @@ export default function SaaSAutomationSystemsPage() {
               <div className="text-gray-400 mt-2">ARR Achieved</div>
             </div>
           </div>
+
+          {/* Inline CTA - After SaaS Metrics: $3M+ ARR + 87% Reduced Tickets + 5x Faster Scaling + 24/7 Automation */}
+          <div className="mt-8">
+            <SmartCTA blogSlug="saas-automation-systems" variant="inline" />
+          </div>
         </div>
       </section>
 
@@ -392,9 +397,6 @@ export default function SaaSAutomationSystemsPage() {
                 </div>
               </div>
             </div>
-
-            {/* Inline CTA - After 10 Automation Systems + 90-Day Roadmap: -23% Churn + +45% LTV + +65% Trial-to-Paid */}
-            <SmartCTA blogSlug="saas-automation-systems" variant="inline" />
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold mb-8 text-white">Complete SaaS Automation Tech Stack</h2>
