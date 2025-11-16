@@ -183,7 +183,12 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
                   </div>
                 </div>
               </header>
-              
+
+              {/* Inline CTA - After Social Proof: 127K+ Students + $2.7M+ Revenue Generated + Expert Guide */}
+              <div className="my-12">
+                <SmartCTA blogSlug="instagram-content-strategy-maximum-engagement-2025" variant="inline" />
+              </div>
+
               <div className="prose prose-lg prose-invert max-w-none">
 
                 {/* Content Pillar Framework */}
@@ -377,9 +382,6 @@ export default function InstagramContentStrategyForMaximumEngagement2025() {
                     </div>
                   </div>
                 </section>
-
-                {/* Inline CTA - After Posting Schedule: +83% Reach on Reels + +71% Reach on Polls + 47 Avg Likes per 1K Followers */}
-                <SmartCTA blogSlug="instagram-content-strategy-maximum-engagement-2025" variant="inline" />
 
                 {/* Engagement Tactics */}
                 <section className="mb-12">
