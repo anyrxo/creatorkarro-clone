@@ -93,11 +93,11 @@ export default function SocialMediaCalendar() {
                 </div>
 
                 <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              The 30-Day Social Media Calendar That <span className="text-green-400">Tripled My Sales</span>
+              The 30-Day Social Media Calendar <span className="text-green-400">Planning Framework</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-400 mb-8">
-              Copy my exact posting schedule and content themes that <span className="text-white font-semibold">convert followers into customers</span>
+              A systematic approach to <span className="text-white font-semibold">planning and organizing content</span> for consistent posting
                 </p>
 
                 
@@ -108,23 +108,23 @@ export default function SocialMediaCalendar() {
       <section className="py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl font-bold text-white text-center mb-8">30-Day Calendar Results</h2>
+                <h2 className="text-2xl font-bold text-white text-center mb-8">Calendar Planning Benefits</h2>
                 <div className="grid md:grid-cols-4 gap-4">
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-green-400 mb-2">3.2x</div>
-                        <div className="text-gray-400 text-sm">Sales Increase</div>
+                        <div className="text-3xl font-bold text-green-400 mb-2">Consistency</div>
+                        <div className="text-gray-400 text-sm">Regular posting schedule</div>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-blue-400 mb-2">247%</div>
-                        <div className="text-gray-400 text-sm">Engagement Boost</div>
+                        <div className="text-3xl font-bold text-blue-400 mb-2">Efficiency</div>
+                        <div className="text-gray-400 text-sm">Batch content creation</div>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-purple-400 mb-2">52K</div>
-                        <div className="text-gray-400 text-sm">New Followers</div>
+                        <div className="text-3xl font-bold text-purple-400 mb-2">Strategy</div>
+                        <div className="text-gray-400 text-sm">Intentional messaging</div>
                     </div>
                     <div className="bg-zinc-900 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-pink-400 mb-2">$147K</div>
-                        <div className="text-gray-400 text-sm">Revenue Generated</div>
+                        <div className="text-3xl font-bold text-pink-400 mb-2">Balance</div>
+                        <div className="text-gray-400 text-sm">Value vs promotion mix</div>
                     </div>
                 </div>
             </div>
@@ -416,46 +416,128 @@ export default function SocialMediaCalendar() {
 </section>
 
       <section
-        
+
         className="section-spacing bg-zinc-900"
       >
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">Real Results From This Calendar</h2>
-          
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Scheduling Tools & Platforms</h2>
+
+        <p className="text-gray-300 mb-8 text-center max-w-3xl mx-auto">
+            The right scheduling tools can save hours weekly and ensure consistent posting across all platforms.
+        </p>
+
         <div className="space-y-6">
-            <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-white mb-4"> Growth Metrics</h3>
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">All-in-One Platforms</h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <h4 className="text-green-400 font-semibold mb-3">Before Calendar:</h4>
-                        <ul className="space-y-2 text-gray-300">
-                            <li>• 127 daily followers</li>
-                            <li>• 2.3% engagement rate</li>
-                            <li>• $14K monthly revenue</li>
-                            <li>• 3-5 sales per day</li>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Buffer</h4>
+                        <p className="text-gray-400 text-sm mb-3">Schedule posts across Twitter, Facebook, Instagram, LinkedIn, Pinterest</p>
+                        <ul className="text-gray-300 text-xs space-y-1">
+                            <li>• Visual calendar view for planning</li>
+                            <li>• Analytics dashboard for all platforms</li>
+                            <li>• Team collaboration features</li>
+                            <li>• Browser extension for quick scheduling</li>
+                            <li>• Pricing: Free tier, paid from $6/month</li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 className="text-blue-400 font-semibold mb-3">After 30 Days:</h4>
-                        <ul className="space-y-2 text-gray-300">
-                            <li>• 1,733 daily followers</li>
-                            <li>• 8.1% engagement rate</li>
-                            <li>• $147K monthly revenue</li>
-                            <li>• 25-30 sales per day</li>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Hootsuite</h4>
+                        <p className="text-gray-400 text-sm mb-3">Enterprise-grade scheduling for multiple accounts</p>
+                        <ul className="text-gray-300 text-xs space-y-1">
+                            <li>• Manage up to 50 social accounts</li>
+                            <li>• Bulk scheduling from CSV</li>
+                            <li>• Advanced analytics and reporting</li>
+                            <li>• Social listening tools</li>
+                            <li>• Pricing: From $99/month (30-day free trial)</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Later</h4>
+                        <p className="text-gray-400 text-sm mb-3">Visual planning focused on Instagram, TikTok, Facebook, Twitter, Pinterest, LinkedIn</p>
+                        <ul className="text-gray-300 text-xs space-y-1">
+                            <li>• Drag-and-drop visual calendar</li>
+                            <li>• Media library for organizing assets</li>
+                            <li>• Best time to post suggestions</li>
+                            <li>• Linkin.bio tool for Instagram</li>
+                            <li>• Pricing: Free tier, paid from $18/month</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Sprout Social</h4>
+                        <p className="text-gray-400 text-sm mb-3">Professional social media management suite</p>
+                        <ul className="text-gray-300 text-xs space-y-1">
+                            <li>• Smart inbox for all messages</li>
+                            <li>• CRM integration capabilities</li>
+                            <li>• Custom reporting and analytics</li>
+                            <li>• Team workflow and approval processes</li>
+                            <li>• Pricing: From $249/month</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
+
             <div className="bg-zinc-800 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-white mb-4"> Key Success Factors</h3>
-                <ul className="space-y-3 text-gray-300">
-                    <li>✅ <span className="text-white font-semibold">Consistency</span> - Posted every single day without fail</li>
-                    <li>✅ <span className="text-white font-semibold">Value First</span> - 80% value, 20% promotion ratio</li>
-                    <li>✅ <span className="text-white font-semibold">Strategic Timing</span> - Sales aligned with engagement peaks</li>
-                    <li>✅ <span className="text-white font-semibold">Theme Repetition</span> - Audience knew what to expect</li>
-                    <li>✅ <span className="text-white font-semibold">Cross-Platform</span> - Same calendar on all channels</li>
-                </ul>
+                <h3 className="text-xl font-bold text-blue-400 mb-4">Platform-Specific Native Schedulers</h3>
+                <div className="space-y-3">
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Meta Business Suite</h4>
+                        <p className="text-gray-400 text-sm mb-2">Free scheduling for Facebook and Instagram</p>
+                        <ul className="text-gray-300 text-xs space-y-1">
+                            <li>• No third-party app required</li>
+                            <li>• Schedule posts, Stories, and Reels</li>
+                            <li>• Native analytics and insights</li>
+                            <li>• Manage multiple pages and accounts</li>
+                            <li>• Cross-posting between Facebook and Instagram</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">LinkedIn Scheduler</h4>
+                        <p className="text-gray-400 text-sm mb-2">Built-in scheduling for LinkedIn posts</p>
+                        <ul className="text-gray-300 text-xs space-y-1">
+                            <li>• Schedule up to 3 months in advance</li>
+                            <li>• Works for personal profiles and company pages</li>
+                            <li>• Post analytics available immediately</li>
+                            <li>• Free for all LinkedIn users</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Twitter Scheduler</h4>
+                        <p className="text-gray-400 text-sm mb-2">Native scheduling within Twitter</p>
+                        <ul className="text-gray-300 text-xs space-y-1">
+                            <li>• Schedule individual tweets for free</li>
+                            <li>• Set specific time and date</li>
+                            <li>• Edit or delete scheduled tweets</li>
+                            <li>• Available on web and mobile</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">Calendar Best Practices</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">Planning Workflow</h4>
+                        <ol className="text-gray-300 text-sm space-y-2">
+                            <li>1. <strong className="text-white">Content Audit:</strong> Review past performance data monthly</li>
+                            <li>2. <strong className="text-white">Theme Selection:</strong> Choose 3-5 content themes for the month</li>
+                            <li>3. <strong className="text-white">Batch Creation:</strong> Create 1-2 weeks of content in one session</li>
+                            <li>4. <strong className="text-white">Schedule Queue:</strong> Upload and schedule all created content</li>
+                            <li>5. <strong className="text-white">Monitor & Adjust:</strong> Review performance weekly, adjust strategy</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">Optimization Tips</h4>
+                        <ul className="text-gray-300 text-sm space-y-2">
+                            <li>• <strong className="text-white">Flexible Buffer:</strong> Leave 20% of slots open for trending topics</li>
+                            <li>• <strong className="text-white">Time Zone Awareness:</strong> Schedule for audience location, not yours</li>
+                            <li>• <strong className="text-white">Platform Timing:</strong> Each platform has different optimal posting times</li>
+                            <li>• <strong className="text-white">Content Variety:</strong> Mix formats (text, image, video, carousel)</li>
+                            <li>• <strong className="text-white">Engagement Windows:</strong> Be online shortly after posts go live</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
