@@ -245,7 +245,10 @@ export default function ShopifyAutomationAiPage() {
                 </div>
               </div>
 
-              
+              {/* Inline CTA - After ROI Framework: $20,125 Monthly Benefit + 300-500% ROI + 35% Revenue Increase */}
+              <SmartCTA blogSlug="shopify-automation-ai" variant="inline" />
+
+
               <h2 id="tools" className="text-3xl font-bold text-white mb-6"> Essential AI Tools and Technologies</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 Selecting the right AI automation tools can make or break your Shopify automation strategy. After analyzing 
@@ -905,10 +908,6 @@ export default function ShopifyAutomationAiPage() {
             </div>
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="shopify-automation-ai" variant="inline" />
-
       </section>
 
       <section className="section-spacing bg-gray-900">
