@@ -265,6 +265,11 @@ const schema = generateBlogPostSchema({
             </div>
           </section>
 
+          {/* Inline CTA - After Bolt Economics: 78.3% HumanEval + 80x Cost Advantage + $5K-15K → $1-5 + 2-4 weeks → 3-6 hours */}
+          <div className="my-12">
+            <SmartCTA blogSlug="gemini-2-pro-bolt-diy-full-stack-revolution" variant="inline" />
+          </div>
+
           {/* Abbreviated sections pointing to detailed FAQs */}
           <section id="buildable-apps" className="mb-20 scroll-mt-24">
             <div className="flex items-center gap-3 mb-6">
@@ -387,9 +392,6 @@ const schema = generateBlogPostSchema({
               </div>
             </div>
           </section>
-
-          {/* Inline CTA - After Success Stories: 3.5hr Build → $2,088 MRR + 2hr Build → $14,760 MRR + $0.65 Cost vs $40 */}
-          <SmartCTA blogSlug="gemini-2-pro-bolt-diy-full-stack-revolution" variant="inline" />
 
           <section id="tutorial" className="mb-20 scroll-mt-24">
             <div className="flex items-center gap-3 mb-6">
