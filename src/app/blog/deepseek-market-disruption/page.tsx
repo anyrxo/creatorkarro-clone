@@ -289,6 +289,9 @@ export default function DeepseekMarketDisruptionPage() {
                 </div>
               </div>
 
+        {/* Inline CTA - After 3 Case Studies: $28K, $67K, $143K/Month Success Stories */}
+        <SmartCTA blogSlug="deepseek-market-disruption" variant="inline" />
+
               <h2 id="action-plan" className="text-3xl font-bold text-white mb-6"> 30-Day Action Plan to Launch Your AI Business</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 Don't wait for the opportunity to pass. This 30-day plan walks you through exactly how to identify your 
@@ -460,9 +463,6 @@ export default function DeepseekMarketDisruptionPage() {
             </div>
           </div>
         </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="deepseek-market-disruption" variant="inline" />
 
       </section>
 
