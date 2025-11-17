@@ -507,6 +507,289 @@ const schema = generateBlogPostSchema({
 </section>
 
       <section className="section-spacing bg-zinc-900">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">N8N vs Zapier: Technical Deep Dive</h2>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-2xl font-bold text-blue-400 mb-4">Architecture Philosophy</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">N8N's Approach</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• <span className="text-blue-400 font-semibold">Node.js based</span> - Full JavaScript runtime, npm ecosystem access</li>
+                            <li>• <span className="text-blue-400 font-semibold">Workflow as code</span> - Export to JSON, version control friendly</li>
+                            <li>• <span className="text-blue-400 font-semibold">Execution modes</span> - Queue, worker, webhook support</li>
+                            <li>• <span className="text-blue-400 font-semibold">Database agnostic</span> - SQLite, PostgreSQL, MySQL support</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold mb-3">Zapier's Approach</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• <span className="text-gray-500 font-semibold">Proprietary platform</span> - Black box execution</li>
+                            <li>• <span className="text-gray-500 font-semibold">UI-only configuration</span> - No export, locked to platform</li>
+                            <li>• <span className="text-gray-500 font-semibold">Managed execution</span> - No control over infrastructure</li>
+                            <li>• <span className="text-gray-500 font-semibold">Cloud-only</span> - No self-hosting option</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-2xl font-bold text-purple-400 mb-4">Performance & Scalability</h3>
+                <div className="space-y-4">
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">N8N Self-Hosted Performance</h4>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                            <li>• Process 1000+ executions/minute on modest hardware ($10/month VPS)</li>
+                            <li>• Horizontal scaling with queue mode and multiple workers</li>
+                            <li>• Zero network latency for internal API calls</li>
+                            <li>• Direct database connections (no API rate limits)</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-2">Real-World Benchmark</h4>
+                        <p className="text-gray-300 text-sm mb-2">Processing 10,000 webhook → database → email workflows:</p>
+                        <div className="grid grid-cols-2 gap-4 mt-3">
+                            <div>
+                                <p className="text-blue-400 font-semibold">N8N (Self-hosted)</p>
+                                <p className="text-white text-lg">~8 minutes</p>
+                                <p className="text-gray-400 text-xs">Cost: $0 (included in hosting)</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-400 font-semibold">Zapier</p>
+                                <p className="text-white text-lg">~45 minutes</p>
+                                <p className="text-red-400 text-xs">Cost: ~$45 (at $0.0045/task)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-2xl font-bold text-green-400 mb-4">Developer Experience</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">What Makes N8N Developer-Friendly</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>✓ Full Git integration - track workflow changes over time</li>
+                            <li>✓ Environment variables - dev, staging, prod configs</li>
+                            <li>✓ Custom node development - extend with your own integrations</li>
+                            <li>✓ REST API - programmatically manage workflows</li>
+                            <li>✓ Webhook debugging - test locally with ngrok</li>
+                            <li>✓ Expression editor - JavaScript for data transformation</li>
+                        </ul>
+                    </div>
+                    <div className="bg-zinc-900 rounded-lg p-4">
+                        <h4 className="text-white font-semibold mb-3">Advanced Capabilities</h4>
+                        <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• Execute shell commands directly in workflows</li>
+                            <li>• Connect to local databases and services</li>
+                            <li>• Use npm packages in Function nodes</li>
+                            <li>• Build sub-workflows and reuse across projects</li>
+                            <li>• Implement complex branching and loops</li>
+                            <li>• Handle errors with custom retry logic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Common N8N Use Cases & Implementation</h2>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-blue-500/20 rounded-lg p-3">
+                        <div className="text-2xl">📧</div>
+                    </div>
+                    <div className="flex-1">
+                        <h3 className="text-xl font-bold text-white mb-2">Email Marketing Automation</h3>
+                        <p className="text-gray-400 mb-4">Replace expensive email tools with intelligent workflows</p>
+                    </div>
+                </div>
+                <div className="bg-zinc-800 rounded-lg p-4">
+                    <h4 className="text-blue-400 font-semibold mb-3">Example Workflow:</h4>
+                    <div className="space-y-2 text-gray-300 text-sm">
+                        <p>1. <span className="text-white font-semibold">Trigger:</span> New subscriber via webhook from website form</p>
+                        <p>2. <span className="text-white font-semibold">Enrich:</span> Look up company data via Clearbit API</p>
+                        <p>3. <span className="text-white font-semibold">Segment:</span> JavaScript node categorizes by industry/size</p>
+                        <p>4. <span className="text-white font-semibold">Personalize:</span> Generate custom email using GPT-4</p>
+                        <p>5. <span className="text-white font-semibold">Send:</span> Deliver via SendGrid with tracking</p>
+                        <p>6. <span className="text-white font-semibold">Log:</span> Record in PostgreSQL for analytics</p>
+                    </div>
+                    <div className="mt-4 p-3 bg-green-900/20 border border-green-500/30 rounded">
+                        <p className="text-green-400 text-sm"><strong>Savings:</strong> ActiveCampaign equivalent costs $150-300/month for this workflow. N8N cost: $0 (self-hosted) or $20/month (cloud).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-purple-500/20 rounded-lg p-3">
+                        <div className="text-2xl">🔄</div>
+                    </div>
+                    <div className="flex-1">
+                        <h3 className="text-xl font-bold text-white mb-2">Multi-Platform Content Distribution</h3>
+                        <p className="text-gray-400 mb-4">Post once, distribute everywhere automatically</p>
+                    </div>
+                </div>
+                <div className="bg-zinc-800 rounded-lg p-4">
+                    <h4 className="text-purple-400 font-semibold mb-3">Workflow Details:</h4>
+                    <ul className="space-y-2 text-gray-300 text-sm mb-4">
+                        <li>• Monitor Google Drive folder for new content</li>
+                        <li>• Resize/optimize images for each platform (Instagram 1:1, Twitter 16:9, etc.)</li>
+                        <li>• Generate platform-specific captions (hashtags for IG, threads for Twitter)</li>
+                        <li>• Schedule posts at optimal times (different for each platform)</li>
+                        <li>• Cross-post to: Instagram, Twitter, LinkedIn, Facebook, TikTok, YouTube</li>
+                        <li>• Track engagement metrics in centralized dashboard</li>
+                    </ul>
+                    <p className="text-gray-300 text-sm"><span className="text-purple-400 font-semibold">Technical advantage:</span> N8N's custom code nodes let you implement complex image processing using Sharp library - impossible in Zapier/Make.</p>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-green-500/20 rounded-lg p-3">
+                        <div className="text-2xl">💰</div>
+                    </div>
+                    <div className="flex-1">
+                        <h3 className="text-xl font-bold text-white mb-2">E-commerce Order Processing</h3>
+                        <p className="text-gray-400 mb-4">End-to-end order fulfillment automation</p>
+                    </div>
+                </div>
+                <div className="bg-zinc-800 rounded-lg p-4">
+                    <h4 className="text-green-400 font-semibold mb-3">Complete Pipeline:</h4>
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <p className="text-white font-semibold mb-2">Order Intake</p>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Shopify webhook on new order</li>
+                                <li>• Validate payment via Stripe API</li>
+                                <li>• Check inventory in local database</li>
+                                <li>• Fraud detection using custom ML model</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p className="text-white font-semibold mb-2">Fulfillment</p>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Create shipping label via ShipStation</li>
+                                <li>• Update inventory counts</li>
+                                <li>• Send tracking email to customer</li>
+                                <li>• Sync to QuickBooks for accounting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="mt-4 p-3 bg-blue-900/20 border border-blue-500/30 rounded">
+                        <p className="text-blue-400 text-sm"><strong>Why N8N wins:</strong> Direct database access means instant inventory updates without API rate limits. Zapier would hit Shopify's API limits at 1000+ orders/day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing bg-zinc-900">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Migration Guide: Moving from Zapier/Make to N8N</h2>
+
+        <div className="bg-zinc-800 rounded-xl p-8 mb-6">
+            <h3 className="text-2xl font-bold text-purple-400 mb-4">Step-by-Step Migration Process</h3>
+
+            <div className="space-y-4">
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">1</div>
+                        <h4 className="text-lg font-bold text-white">Audit Your Current Workflows</h4>
+                    </div>
+                    <ul className="ml-11 space-y-2 text-gray-300 text-sm">
+                        <li>• Export workflow documentation (screenshots, logic maps)</li>
+                        <li>• Identify monthly execution counts per workflow</li>
+                        <li>• List all connected apps and required API credentials</li>
+                        <li>• Note custom logic or transformations</li>
+                    </ul>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">2</div>
+                        <h4 className="text-lg font-bold text-white">Set Up N8N Environment</h4>
+                    </div>
+                    <div className="ml-11 space-y-3">
+                        <p className="text-gray-300 text-sm">Choose your deployment method:</p>
+                        <div className="grid md:grid-cols-2 gap-3">
+                            <div className="bg-zinc-800 rounded p-3">
+                                <p className="text-blue-400 font-semibold text-sm mb-2">Quick Start (Cloud)</p>
+                                <code className="text-xs text-green-400">Sign up at n8n.cloud<br/>$20/month, instant setup</code>
+                            </div>
+                            <div className="bg-zinc-800 rounded p-3">
+                                <p className="text-green-400 font-semibold text-sm mb-2">Self-Hosted (Docker)</p>
+                                <code className="text-xs text-green-400">docker-compose up -d<br/>$5-40/month hosting</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">3</div>
+                        <h4 className="text-lg font-bold text-white">Rebuild Workflows (Easier Than You Think)</h4>
+                    </div>
+                    <div className="ml-11 space-y-2 text-gray-300 text-sm">
+                        <p>Start with low-risk workflows first (non-customer-facing, easy to test):</p>
+                        <ul className="space-y-1 mt-2">
+                            <li>• Use N8N's visual builder - drag nodes, connect flows</li>
+                            <li>• Most Zapier apps have equivalent N8N nodes (400+ integrations)</li>
+                            <li>• Test with sample data before activating</li>
+                            <li>• Run both systems in parallel for 1-2 weeks during transition</li>
+                        </ul>
+                        <div className="mt-3 p-3 bg-blue-900/20 border border-blue-500/30 rounded">
+                            <p className="text-blue-400 text-sm"><strong>Pro tip:</strong> Many Zapier workflows translate 1:1 to N8N. Average rebuild time: 15-30 minutes per workflow.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">4</div>
+                        <h4 className="text-lg font-bold text-white">Cutover & Monitor</h4>
+                    </div>
+                    <ul className="ml-11 space-y-2 text-gray-300 text-sm">
+                        <li>• Deactivate Zapier workflows one at a time</li>
+                        <li>• Monitor N8N execution logs for first 48 hours</li>
+                        <li>• Set up error notifications (email/Slack alerts)</li>
+                        <li>• Keep Zapier account active for 1 month as backup</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-green-900/30 to-blue-900/30 border border-green-500/30 rounded-xl p-6">
+            <h4 className="text-xl font-bold text-white mb-4">🎯 Expected Migration Timeline</h4>
+            <div className="grid md:grid-cols-3 gap-4 text-center">
+                <div>
+                    <p className="text-gray-400 text-sm mb-1">Planning & Setup</p>
+                    <p className="text-white font-bold text-xl">2-3 days</p>
+                </div>
+                <div>
+                    <p className="text-gray-400 text-sm mb-1">Workflow Rebuilding</p>
+                    <p className="text-white font-bold text-xl">3-7 days</p>
+                </div>
+                <div>
+                    <p className="text-gray-400 text-sm mb-1">Testing & Cutover</p>
+                    <p className="text-white font-bold text-xl">5-10 days</p>
+                </div>
+            </div>
+            <p className="text-green-400 text-center mt-4 font-semibold">Total migration: 10-20 days for typical business (10-50 workflows)</p>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Start Using N8N Today</h2>
           

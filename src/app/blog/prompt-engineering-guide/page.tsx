@@ -441,6 +441,216 @@ export default function PromptEngineeringGuide() {
     </div>
 </section>
 
+      <section className="section-spacing bg-zinc-900">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Getting Started: Your First Prompt</h2>
+
+        <div className="bg-zinc-800 rounded-xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-purple-400 mb-4">Beginner's 3-Step Formula</h3>
+            <p className="text-gray-300 mb-6">New to AI prompting? Start with this simple structure that works for 80% of use cases:</p>
+
+            <div className="space-y-4">
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-lg font-bold text-white mb-3">Step 1: Define the Task</h4>
+                    <p className="text-gray-400 mb-2">What do you want the AI to create or analyze?</p>
+                    <div className="bg-zinc-800 rounded p-3">
+                        <code className="text-sm text-green-400">"Write an email..." / "Analyze this data..." / "Create a plan for..."</code>
+                    </div>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-lg font-bold text-white mb-3">Step 2: Add Context</h4>
+                    <p className="text-gray-400 mb-2">Who is it for? What's the background? Any constraints?</p>
+                    <div className="bg-zinc-800 rounded p-3">
+                        <code className="text-sm text-blue-400">"...for potential clients who are non-technical small business owners..."</code>
+                    </div>
+                </div>
+
+                <div className="bg-zinc-900 rounded-lg p-6">
+                    <h4 className="text-lg font-bold text-white mb-3">Step 3: Specify Format</h4>
+                    <p className="text-gray-400 mb-2">How should it look? What tone? What length?</p>
+                    <div className="bg-zinc-800 rounded p-3">
+                        <code className="text-sm text-purple-400">"...Keep it under 200 words, friendly tone, include 3 bullet points."</code>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mt-6 p-6 bg-gradient-to-r from-purple-900/30 to-blue-900/30 rounded-lg border border-purple-500/20">
+                <p className="text-white font-semibold mb-3">Complete Example:</p>
+                <p className="text-gray-300 text-sm leading-relaxed">"Write an email introducing our new AI automation service for potential clients who are non-technical small business owners. Keep it under 200 words, use a friendly and approachable tone, include 3 bullet points highlighting time savings, cost reduction, and ease of implementation."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Industry-Specific Prompt Applications</h2>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4"> Marketing & Advertising</h3>
+                <ul className="space-y-3 text-gray-300">
+                    <li>• <span className="text-white font-semibold">Social media content calendars</span> - Generate 30 days of posts in minutes</li>
+                    <li>• <span className="text-white font-semibold">Ad copy variations</span> - A/B test 50+ headlines simultaneously</li>
+                    <li>• <span className="text-white font-semibold">Email campaigns</span> - Personalized sequences for different segments</li>
+                    <li>• <span className="text-white font-semibold">SEO optimization</span> - Keyword research and content briefs</li>
+                </ul>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4"> Software Development</h3>
+                <ul className="space-y-3 text-gray-300">
+                    <li>• <span className="text-white font-semibold">Code documentation</span> - Auto-generate README files and comments</li>
+                    <li>• <span className="text-white font-semibold">Bug fixing assistance</span> - Identify issues and suggest solutions</li>
+                    <li>• <span className="text-white font-semibold">API integration</span> - Generate boilerplate code quickly</li>
+                    <li>• <span className="text-white font-semibold">Test case creation</span> - Comprehensive testing scenarios</li>
+                </ul>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4"> E-commerce & Retail</h3>
+                <ul className="space-y-3 text-gray-300">
+                    <li>• <span className="text-white font-semibold">Product descriptions</span> - Unique copy for thousands of SKUs</li>
+                    <li>• <span className="text-white font-semibold">Customer service responses</span> - Handle FAQs automatically</li>
+                    <li>• <span className="text-white font-semibold">Pricing strategies</span> - Competitive analysis and recommendations</li>
+                    <li>• <span className="text-white font-semibold">Review analysis</span> - Extract insights from customer feedback</li>
+                </ul>
+            </div>
+
+            <div className="bg-zinc-900 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-pink-400 mb-4">🏢 Corporate & Consulting</h3>
+                <ul className="space-y-3 text-gray-300">
+                    <li>• <span className="text-white font-semibold">Report generation</span> - Transform data into executive summaries</li>
+                    <li>• <span className="text-white font-semibold">Presentation decks</span> - Outline and content creation</li>
+                    <li>• <span className="text-white font-semibold">Contract analysis</span> - Review legal documents for key terms</li>
+                    <li>• <span className="text-white font-semibold">Meeting summaries</span> - Action items and next steps</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing bg-zinc-900">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">2026 Prompt Engineering Trends</h2>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-2xl font-bold text-purple-400 mb-4">1. Multi-Modal Prompting</h3>
+                <p className="text-gray-300 mb-4">AI models now process text, images, audio, and video simultaneously. Learn how to craft prompts that leverage multiple input types for richer outputs.</p>
+                <div className="bg-zinc-900 rounded p-4">
+                    <p className="text-sm text-gray-300"><span className="text-purple-400 font-semibold">Example:</span> "Analyze this product image + customer review + usage video to create a comprehensive feature comparison table."</p>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-2xl font-bold text-blue-400 mb-4">2. Conversational Context Memory</h3>
+                <p className="text-gray-300 mb-4">Modern AI maintains context across longer conversations. Advanced prompt engineers design multi-turn dialogues that build on previous responses for increasingly refined outputs.</p>
+                <div className="bg-zinc-900 rounded p-4">
+                    <p className="text-sm text-gray-300">Benefit: Iterate and refine without repeating context each time</p>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-2xl font-bold text-green-400 mb-4">3. Domain-Specific Fine-Tuning</h3>
+                <p className="text-gray-300 mb-4">Businesses are creating custom AI models trained on their specific industry data. Prompt engineering for specialized models requires understanding domain-specific terminology and use cases.</p>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-2xl font-bold text-yellow-400 mb-4">4. Automated Prompt Optimization</h3>
+                <p className="text-gray-300 mb-4">AI-powered tools that test thousands of prompt variations automatically to find the highest-performing version for your specific use case.</p>
+                <div className="bg-zinc-900 rounded p-4">
+                    <p className="text-sm text-gray-300">Tools like PromptPerfect and Anthropic's prompt generator are becoming essential in professional workflows</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Measuring & Optimizing Prompt Performance</h2>
+
+        <div className="bg-zinc-900 rounded-xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-purple-400 mb-6">Key Performance Metrics</h3>
+
+            <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-zinc-800 rounded-lg p-6">
+                    <h4 className="text-lg font-bold text-white mb-4">Quality Metrics</h4>
+                    <ul className="space-y-2 text-gray-300">
+                        <li>• <span className="text-purple-400 font-semibold">Relevance Score:</span> Does output match intent?</li>
+                        <li>• <span className="text-purple-400 font-semibold">Accuracy Rate:</span> Factual correctness</li>
+                        <li>• <span className="text-purple-400 font-semibold">Completeness:</span> All requirements addressed</li>
+                        <li>• <span className="text-purple-400 font-semibold">Creativity Level:</span> Novel insights generated</li>
+                    </ul>
+                </div>
+
+                <div className="bg-zinc-800 rounded-lg p-6">
+                    <h4 className="text-lg font-bold text-white mb-4">Efficiency Metrics</h4>
+                    <ul className="space-y-2 text-gray-300">
+                        <li>• <span className="text-blue-400 font-semibold">Time Saved:</span> Hours vs. manual work</li>
+                        <li>• <span className="text-blue-400 font-semibold">Iterations Needed:</span> Revisions required</li>
+                        <li>• <span className="text-blue-400 font-semibold">Token Efficiency:</span> Cost per output</li>
+                        <li>• <span className="text-blue-400 font-semibold">First-Try Success:</span> Usable without edits</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="mt-6 p-6 bg-gradient-to-r from-green-900/20 to-blue-900/20 rounded-lg border border-green-500/20">
+                <h4 className="text-lg font-bold text-white mb-3">A/B Testing Your Prompts</h4>
+                <p className="text-gray-300 mb-3">Professional prompt engineers test multiple variations systematically:</p>
+                <ol className="space-y-2 text-gray-300 list-decimal list-inside">
+                    <li>Create 3-5 prompt variations testing one variable at a time</li>
+                    <li>Run each prompt 10+ times to account for AI randomness</li>
+                    <li>Score outputs using your quality metrics</li>
+                    <li>Identify the winning prompt and iterate further</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section className="section-spacing bg-zinc-900">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Prompt Engineering by Profession</h2>
+
+        <div className="space-y-6">
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-purple-400 mb-4">For Content Creators & Writers</h3>
+                <p className="text-gray-300 mb-4">Use AI to overcome writer's block, generate outlines, and produce first drafts 10x faster. Focus your time on editing and adding unique insights rather than staring at blank pages.</p>
+                <div className="bg-zinc-900 rounded p-4">
+                    <p className="text-sm text-gray-300"><span className="text-purple-400 font-semibold">Pro Tip:</span> Create a personal style guide and include it in every prompt: "Write in my style: conversational, uses short sentences, includes data points, minimal jargon."</p>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-400 mb-4">For Sales & Business Development</h3>
+                <p className="text-gray-300 mb-4">Generate personalized outreach messages, objection handlers, and proposal drafts. AI can analyze prospect data and suggest the most compelling value propositions.</p>
+                <div className="bg-zinc-900 rounded p-4">
+                    <p className="text-sm text-gray-300"><span className="text-blue-400 font-semibold">Use Case:</span> "Given this prospect's LinkedIn profile [paste], their company's recent news [paste], and our product features [paste], create a personalized email that addresses their specific pain points."</p>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-green-400 mb-4">For Project Managers</h3>
+                <p className="text-gray-300 mb-4">Automate status reports, risk assessments, and resource planning. AI excels at organizing complex project data into clear action plans and stakeholder communications.</p>
+                <div className="bg-zinc-900 rounded p-4">
+                    <p className="text-sm text-gray-300"><span className="text-green-400 font-semibold">Template:</span> "Based on this project data [paste], create a weekly status report highlighting: progress vs. timeline, budget utilization, top 3 risks with mitigation strategies, and next week's priorities."</p>
+                </div>
+            </div>
+
+            <div className="bg-zinc-800 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">For Educators & Trainers</h3>
+                <p className="text-gray-300 mb-4">Design lesson plans, create assessment questions, and develop personalized learning materials. AI can adapt content for different learning styles and comprehension levels.</p>
+                <div className="bg-zinc-900 rounded p-4">
+                    <p className="text-sm text-gray-300"><span className="text-yellow-400 font-semibold">Example:</span> "Create a 45-minute lesson plan on [topic] for [grade level]. Include: learning objectives, warm-up activity, main instruction with examples, group activity, and assessment. Adapt for visual, auditory, and kinesthetic learners."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
       <section className="section-spacing">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Prompt Engineering Toolkit</h2>
