@@ -124,9 +124,9 @@ export default function BlogPage() {
   const displayCategories = ['All', ...categories]
 
   return (
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-dark w-full overflow-x-hidden">
       {/* MAGICAL HEADER */}
-      <section className="relative py-20 px-4 overflow-hidden">
+      <section className="relative py-12 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <HeroBackground variant="default" />
 
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -286,17 +286,17 @@ export default function BlogPage() {
 
           {/* Featured Posts - Only show when All is selected and no search */}
           {searchTerm === '' && selectedCategory === 'All' && featuredPosts.length > 0 && (
-            <div className="mb-16">
+            <div className="mb-16 px-4 sm:px-0">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="p-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg">
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
-                  <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+                  <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
                     Featured Articles
                   </h2>
                 </div>
                 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                   {featuredPosts.map((post, idx) => {
                     const categoryColors: Record<string, {bg: string, border: string, text: string, gradient: string}> = {
                       'AI Influencers': {bg: 'from-purple-500/30 to-pink-500/30', border: 'border-purple-500/40', text: 'text-purple-300', gradient: 'from-purple-600/10 via-pink-600/10 to-purple-600/10'},
@@ -409,10 +409,10 @@ export default function BlogPage() {
             )}
 
           {/* All Posts with Beautiful Grid Layout */}
-          <div className="mb-8">
-              <div className="flex items-center gap-3 mb-8">
-                <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory} Articles` : (featuredPosts.length > 0 && searchTerm === '' ? 'All Articles' : 'All Articles')}
+          <div className="mb-8 px-4 sm:px-0">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8">
+                <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory} Articles` : 'All Articles'}
                 </h2>
                 <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full border border-blue-500/30 backdrop-blur-sm">
                   <span className="text-sm font-semibold text-blue-300">
@@ -443,12 +443,7 @@ export default function BlogPage() {
                 </div>
               ) : (
                 <>
-                  {/* Articles count */}
-                  <div className="text-center mb-6 text-zinc-400 text-sm font-medium">
-                    Showing {filteredPosts.length} articles
-                  </div>
-                  
-                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     {(filteredPosts.length > 0 ? filteredPosts : allBlogPosts.slice(0, 12)).map((post, index) => {
                       // Category-specific color schemes
                       const categoryColors: Record<string, {bg: string, border: string, text: string, hover: string, gradient: string}> = {
@@ -587,7 +582,7 @@ export default function BlogPage() {
           {/* Beautiful CTA Section */}
           <ScrollAnimation animation="fade-up" delay={1600}>
             <SpotlightCard 
-              className="bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 backdrop-blur-sm border border-blue-600/30 rounded-2xl p-8 text-center mt-16 relative overflow-hidden"
+              className="bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 backdrop-blur-sm border border-blue-600/30 rounded-2xl p-6 sm:p-8 text-center mt-16 relative overflow-hidden mx-4 sm:mx-0"
               spotlightColor="rgba(59, 130, 246, 0.4)"
             >
               <div className="relative z-10">
