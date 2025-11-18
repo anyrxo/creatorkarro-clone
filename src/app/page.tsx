@@ -131,7 +131,7 @@ export default function HomePage() {
 
   const testimonials = [
     {
-      name: "Marcus Rivera",
+      name: "Amanda Rivera",
       role: "Content Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=32",
@@ -139,7 +139,7 @@ export default function HomePage() {
       rating: 5
     },
     {
-      name: "Jake Chen",
+      name: "Sarah Mitchell",
       role: "Digital Entrepreneur", 
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=45",

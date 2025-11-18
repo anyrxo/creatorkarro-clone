@@ -88,7 +88,7 @@ export default function TestimonialsPage() {
 
   const testimonials = [
     {
-      name: "Marcus Rivera",
+      name: "Emma Williams",
       role: "Content Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=32",
@@ -96,7 +96,7 @@ export default function TestimonialsPage() {
       results: "800 → 125K followers in 8 months"
     },
     {
-      name: "Sophia Chen",
+      name: "Emily Anderson",
       role: "Digital Entrepreneur",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=28",
@@ -144,7 +144,7 @@ export default function TestimonialsPage() {
       results: "3x customers, same team size"
     },
     {
-      name: "Alex Morgan",
+      name: "Jessica Jorgan",
       role: "Digital Product Creator",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=23",
@@ -168,7 +168,7 @@ export default function TestimonialsPage() {
       results: "100K followers, paid community launched"
     },
     {
-      name: "Maria Gonzalez",
+      name: "Kenji Tanaka",
       role: "Fashion Blogger",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=33",
@@ -184,7 +184,7 @@ export default function TestimonialsPage() {
       results: "$50K launch, 500+ students"
     },
     {
-      name: "Lisa Thompson",
+      name: "Harold Thompson",
       role: "Travel Blogger",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=17",
@@ -216,7 +216,7 @@ export default function TestimonialsPage() {
       results: "8 clients, dual income streams"
     },
     {
-      name: "Sarah Johnson",
+      name: "Robert Johnson",
       role: "Nutritionist",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=50",
@@ -224,7 +224,7 @@ export default function TestimonialsPage() {
       results: "$15K launch, $5K/mo passive"
     },
     {
-      name: "Robert Garcia",
+      name: "Rachel Garcia",
       role: "Music Producer",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=41",
@@ -240,7 +240,7 @@ export default function TestimonialsPage() {
       results: "1.2M views, $10K/mo in deals"
     },
     {
-      name: "Kevin Martinez",
+      name: "Marcus Washington",
       role: "Business Coach",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=7",
@@ -501,20 +501,20 @@ export default function TestimonialsPage() {
             </h2>
             
             <div className="space-y-16">
-              {/* Houston's Journey */}
+              {/* Danni's Journey */}
               <div className={`relative overflow-hidden bg-gradient-to-br from-zinc-900 via-blue-900/20 to-zinc-900 rounded-2xl p-8 md:p-12 hover-lift scroll-scale ${successAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
                 <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
                 <div className="relative z-10">
                   <div className="flex items-center mb-6">
                     <Image
                       src="https://i.pravatar.cc/150?img=29"
-                      alt="Houston"
+                      alt="Danni"
                       width={80}
                       height={80}
                       className="w-20 h-20 rounded-full ring-4 ring-blue-500/50 mr-6"
                     />
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-white">Houston's Instagram Journey</h3>
+                      <h3 className="text-2xl md:text-3xl font-bold text-white">Danni's Instagram Journey</h3>
                       <p className="text-zinc-300">From Unknown to 80K+ Followers</p>
                     </div>
                   </div>
@@ -554,20 +554,20 @@ export default function TestimonialsPage() {
                 </div>
               </div>
 
-              {/* Tochi's Transformation */}
+              {/* Aubrey's Transformation */}
               <div className={`relative overflow-hidden bg-gradient-to-br from-zinc-900 via-purple-900/20 to-zinc-900 rounded-2xl p-8 md:p-12 hover-lift scroll-scale ${successAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
                 <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
                 <div className="relative z-10">
                   <div className="flex items-center mb-6">
                     <Image
                       src="https://i.pravatar.cc/150?img=36"
-                      alt="Tochi"
+                      alt="Aubrey"
                       width={80}
                       height={80}
                       className="w-20 h-20 rounded-full ring-4 ring-purple-500/50 mr-6"
                     />
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-white">Tochi's Complete Transformation</h3>
+                      <h3 className="text-2xl md:text-3xl font-bold text-white">Aubrey's Complete Transformation</h3>
                       <p className="text-zinc-300">From 400 to 240K Followers + Digital Empire</p>
                     </div>
                   </div>

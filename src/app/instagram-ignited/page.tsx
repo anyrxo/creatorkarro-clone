@@ -1569,8 +1569,8 @@ CLAIM INSTAGRAM IGNITED NOW - $399
           <div className="space-y-16 max-w-4xl mx-auto">
             {[
               {
-                name: "Houston",
-                story: "Houston joined Instagram Ignited with a few thousand followers. After applying the viral strategies from IImagined, he hit 20K+ followers in a month, launched digital products, and grew his brand to 80K+."
+                name: "Danni",
+                story: "Danni joined Instagram Ignited with a few thousand followers. After applying the viral strategies from IImagined, she hit 20K+ followers in a month, launched digital products, and grew her brand to 80K+."
               },
               {
                 name: "Tim",
@@ -1612,7 +1612,7 @@ CLAIM INSTAGRAM IGNITED NOW - $399
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto mb-16">
             {[
               {
-                name: "Marcus Rivera",
+                name: "Amanda Rivera",
                 role: "Content Creator • 125K Followers",
                 avatar: "https://i.pravatar.cc/150?img=32",
                 content: "Went from 847 followers to 52,000 in 67 days. Landed my first $3,200 brand deal in month 2. This system is INSANE. The engagement went from 15 likes to thousands per post."
