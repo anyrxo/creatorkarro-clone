@@ -336,10 +336,6 @@ export default function AIEraSkills() {
               icon: Target,
               title: "Complex Problem Solving",
               desc: "Navigating ambiguity and solving problems with incomplete information",
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ai-era-skills" variant="inline" />
-
               income: "$200-500K+ consulting",
               color: "blue"
             },

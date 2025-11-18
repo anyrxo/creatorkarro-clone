@@ -581,7 +581,7 @@ export default function AIInstagramModel() {
             <div className="bg-zinc-900 rounded-xl p-6">
               <h3 className="text-xl font-semibold text-white mb-3">How many images should I post per week for an AI Instagram model?</h3>
               <p className="text-gray-400">
-                Recommended: 4-7 feed posts per week + 5-10 Stories daily + 3-4 Reels per week. Since you can generate unlimited content with AI, consistency is easy. However, quality > quantity. Focus on high-quality images that match your aesthetic. Batch-generate 20-30 images at once, then schedule posts throughout the week using tools like Later, Planoly, or Buffer. This gives you a content library while maintaining consistent posting.
+                Recommended: 4-7 feed posts per week + 5-10 Stories daily + 3-4 Reels per week. Since you can generate unlimited content with AI, consistency is easy. However, quality {'>'} quantity. Focus on high-quality images that match your aesthetic. Batch-generate 20-30 images at once, then schedule posts throughout the week using tools like Later, Planoly, or Buffer. This gives you a content library while maintaining consistent posting.
               </p>
             </div>
 

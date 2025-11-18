@@ -535,19 +535,19 @@ export default function AIInfluencerMarketingPage() {
           <div className="grid md:grid-cols-2 gap-6 text-gray-300">
             <div>
               <p className="font-semibold text-white mb-2">Fashion & Beauty:</p>
-              <p className="text-sm">Instagram (Reels + Feed) > TikTok > YouTube Shorts</p>
+              <p className="text-sm">Instagram (Reels + Feed) {'>'} TikTok {'>'} YouTube Shorts</p>
             </div>
             <div>
               <p className="font-semibold text-white mb-2">Gaming & Tech:</p>
-              <p className="text-sm">YouTube (Long-form) > Twitch > TikTok</p>
+              <p className="text-sm">YouTube (Long-form) {'>'} Twitch {'>'} TikTok</p>
             </div>
             <div>
               <p className="font-semibold text-white mb-2">Fitness & Wellness:</p>
-              <p className="text-sm">Instagram > TikTok > YouTube</p>
+              <p className="text-sm">Instagram {'>'} TikTok {'>'} YouTube</p>
             </div>
             <div>
               <p className="font-semibold text-white mb-2">Education & Finance:</p>
-              <p className="text-sm">YouTube > LinkedIn > Instagram</p>
+              <p className="text-sm">YouTube {'>'} LinkedIn {'>'} Instagram</p>
             </div>
           </div>
         </div>
@@ -924,7 +924,7 @@ export default function AIInfluencerMarketingPage() {
 
         <div className="not-prose bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl p-6 my-8">
           <p className="text-lg text-gray-200 mb-0">
-            <strong className="text-green-300">💎 Pro Tip:</strong> My most successful AI influencer has "<strong className="text-white">AI-powered digital creator 🤖</strong>" right in her bio. Engagement rate? <strong className="text-cyan-300">8.4%</strong> (industry average is 1.22%). Authenticity > deception, always.
+            <strong className="text-green-300">💎 Pro Tip:</strong> My most successful AI influencer has "<strong className="text-white">AI-powered digital creator 🤖</strong>" right in her bio. Engagement rate? <strong className="text-cyan-300">8.4%</strong> (industry average is 1.22%). Authenticity {'>'} deception, always.
           </p>
         </div>
 

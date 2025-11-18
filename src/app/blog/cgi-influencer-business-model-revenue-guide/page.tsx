@@ -283,7 +283,7 @@ export default function CGIInfluencerBusinessModelPage() {
                 <p className="text-cyan-300 mb-2">Base Rate = (Followers ÷ 1,000) × $100</p>
                 <p className="text-gray-400 text-xs mb-4">Then adjust for:</p>
                 <ul className="space-y-1 text-xs text-gray-300">
-                  <li>• Engagement rate: +20% if >5%, -20% if &lt;2%</li>
+                  <li>• Engagement rate: +20% if {'>'}5%, -20% if {'<'}2%</li>
                   <li>• Niche: +50% for luxury fashion, +30% for beauty, +20% for tech</li>
                   <li>• Exclusivity: +100% for exclusive annual contracts</li>
                   <li>• Content rights: +50% for perpetual usage rights</li>
@@ -1004,7 +1004,7 @@ export default function CGIInfluencerBusinessModelPage() {
               <div>
                 <h4 className="font-semibold text-white mb-2">Then Apply Multipliers:</h4>
                 <ul className="space-y-2 text-sm text-gray-300 ml-4">
-                  <li>• <strong className="text-green-300">Engagement rate >5%:</strong> +20-30%</li>
+                  <li>• <strong className="text-green-300">Engagement rate {'>'}5%:</strong> +20-30%</li>
                   <li>• <strong className="text-purple-300">Luxury niche:</strong> +50-100%</li>
                   <li>• <strong className="text-cyan-300">Multi-platform campaign:</strong> +30% per platform</li>
                   <li>• <strong className="text-yellow-300">Usage rights (perpetual):</strong> +50-100%</li>
