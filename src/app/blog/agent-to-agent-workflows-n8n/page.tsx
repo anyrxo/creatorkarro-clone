@@ -81,7 +81,7 @@ export default function AgentToAgentWorkflows() {
     description: "79% of companies adopt AI agents in 2025. Agent-to-agent workflows improve problem-solving by 45% and accuracy by 60%. Master N8N's multi-agent orchestration.",
     publishedTime: "2026-01-16T00:00:00.000Z",
     modifiedTime: "2026-01-16T00:00:00.000Z",
-    url: "https://iimagined.ai/blog/agent-to-agent-workflows-n8n",
+    category: "AI Automation",
     slug: "agent-to-agent-workflows-n8n",
     keywords: ["agent to agent workflows", "N8N multi-agent", "AI agent orchestration", "agentic AI", "multi-agent systems"]
   });
