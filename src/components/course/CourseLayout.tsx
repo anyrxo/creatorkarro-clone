@@ -284,10 +284,31 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
             <div className="bg-red-500/10 border border-red-500/30 text-red-400 py-3 px-6 rounded-xl font-bold text-center">
               ⚠ NOT RECOMMENDED
             </div>
+          ) : option.buttonLink && option.buttonLink.includes('polar.sh') ? (
+            <div className="w-full">
+              <a 
+                href={option.buttonLink} 
+                data-polar-checkout 
+                data-polar-checkout-theme="dark"
+                className="block w-full"
+              >
+                <ShimmerButton
+                  className="shadow-2xl w-full"
+                  shimmerColor="#ffffff"
+                  shimmerSize="0.1em"
+                  background="linear-gradient(135deg, #10b981, #3b82f6)"
+                  borderRadius="12px"
+                >
+                  <span className="whitespace-nowrap font-bold px-6 py-3 text-base">
+                    {option.buttonText || 'Purchase'}
+                  </span>
+                </ShimmerButton>
+              </a>
+            </div>
           ) : option.buttonLink && option.buttonText ? (
             <Link 
               href={option.buttonLink} 
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
               className="block w-full"
             >

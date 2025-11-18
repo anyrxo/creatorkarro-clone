@@ -1215,8 +1215,8 @@ export default function AIAutomationsPage() {
                   ],
                   badge: "LIFETIME ACCESS",
                   badgeColor: "bg-green-500",
-                  buttonText: "Get AI Automations Course",
-                  buttonLink: "https://whop.com/iimagined/ai-automations-reimagined/"
+                  buttonText: "Purchase",
+                  buttonLink: "https://buy.polar.sh/polar_cl_wHteicqGV6kYtZZ2wZO5PgSqXznsQm84Uhct12ICuhC"
                 },
                 {
                   name: "All Access Reimagined",

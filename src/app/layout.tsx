@@ -242,6 +242,14 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* Polar Checkout Script */}
+        <Script
+          src="https://cdn.jsdelivr.net/npm/@polar-sh/checkout@0.1/dist/embed.global.js"
+          strategy="afterInteractive"
+          defer
+          data-auto-init
+        />
         
         <ErrorBoundary>
           <ClientOnlyFortress>

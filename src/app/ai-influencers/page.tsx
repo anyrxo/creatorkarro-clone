@@ -515,8 +515,8 @@ export default function AIInfluencersPage() {
       ],
       badge: "LIFETIME ACCESS",
       badgeColor: "bg-red-500",
-      buttonText: "Get AI Influencers Course",
-      buttonLink: "https://whop.com/iimagined/ai-influencers-reimagined/"
+      buttonText: "Purchase",
+      buttonLink: "https://buy.polar.sh/polar_cl_HcgnXcPKJUUn75RUv8Bodu1E8P2f6fqRzOsCS100zLw"
     },
     {
       name: "All Access Reimagined",

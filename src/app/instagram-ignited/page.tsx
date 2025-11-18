@@ -1342,8 +1342,8 @@ export default function InstagramIgnitedPage() {
                   ],
                   badge: "LIFETIME ACCESS",
                   badgeColor: "bg-green-500",
-                  buttonText: "Get Instagram Ignited",
-                  buttonLink: "https://whop.com/iimagined/instagram-reimagined/"
+                  buttonText: "Purchase",
+                  buttonLink: "https://buy.polar.sh/polar_cl_VUiP4zHtlE9yZDStI4TRd0PvIE5Eho6A5VPWP2smv9n"
                 },
                 {
                   name: "All Access Reimagined",
@@ -1396,13 +1396,15 @@ export default function InstagramIgnitedPage() {
             </div>
 
             <div className="space-y-6">
-              <button
-                onClick={handleBuyNow}
-                className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-500/50"
+              <a
+                href="https://buy.polar.sh/polar_cl_VUiP4zHtlE9yZDStI4TRd0PvIE5Eho6A5VPWP2smv9n"
+                data-polar-checkout
+                data-polar-checkout-theme="dark"
+                className="inline-block bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-500/50 text-center"
                 aria-label="Claim Instagram Ignited course for $399"
               >
 CLAIM INSTAGRAM IGNITED NOW - $399
-              </button>
+              </a>
 
               <p className="text-sm text-zinc-300 flex items-center justify-center gap-1">
                 {getIcon('checkCircle', 'w-4 h-4')} Instant Access • {getIcon('checkCircle', 'w-4 h-4')} Lifetime Updates • {getIcon('checkCircle', 'w-4 h-4')} 30-Day Money-Back Guarantee

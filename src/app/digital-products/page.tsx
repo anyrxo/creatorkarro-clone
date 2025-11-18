@@ -1217,8 +1217,8 @@ export default function DigitalProductsPage() {
                     "Avoid $10K in costly launch mistakes",
                     "Save $3,451! Complete $3,850 system for just $399"
                   ],
-                  buttonText: "Get Digital Products Course",
-                  buttonLink: "https://whop.com/iimagined/digital-products-reimagined/"
+                  buttonText: "Purchase",
+                  buttonLink: "https://buy.polar.sh/polar_cl_bL05hR1eXtSx6TUqsQ5OogpSVa3vwTyerCjmO3PCl4N"
                 },
                 {
                   name: "All Access Reimagined",

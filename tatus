@@ -1,0 +1,20 @@
+[33m9a04d3b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #4 from anyrxo/claude/seo-blog-posts-strategy-01DDeDbVLyrJApBKxyyPoC5e
+[33m134bc11[m[33m ([m[1;31morigin/claude/seo-blog-posts-strategy-017uTtyRtZmG5R49VibCQtHD[m[33m)[m Add Post 37: LoRA Training for Influencers - Perfect Face Consistency (2026)
+[33m0262e20[m Add Post 36: AI Influencer Generator - Top 12 Tools Comparison (2026)
+[33m24c009b[m[33m ([m[1;31morigin/claude/continue-blog-posts-30-01F9njde7LtbKHyhrkHksoBN[m[33m)[m Add Posts 33-35: Instagram AI Influencers cluster completion (2,900+, 2,900+, and 2,800+ words)
+[33mbb51614[m Add Posts 31-32: Instagram AI Influencers cluster (2,700+ and 3,100+ words)
+[33m0b09598[m Add Post 30: Synthetic Media Marketing - Future of Brand Partnerships (2,500+ words, AI Influencers cluster)
+[33mef3f28b[m[33m ([m[1;31morigin/claude/process-posts-from-26-01M4NKYeem4RgonY8uhE3v16[m[33m)[m Add Post 29: CGI Influencer Business Model - Revenue Guide
+[33mec0c939[m Add Post 28: AI Influencer Examples - 15 Earning $100K+/Month
+[33m11365e4[m Add Posts 26-27: AI Influencer Marketing & Statistics (2026)
+[33m56ee844[m[33m ([m[1;31morigin/claude/seo-blog-posts-strategy-01DDeDbVLyrJApBKxyyPoC5e[m[33m)[m Fix TypeScript errors: add missing schema parameters to 5 blog posts
+[33m96cbb2f[m Fix TypeScript error in ai-business-process-automation: add missing schema parameters
+[33mcd87607[m Add missing 'category' parameter to 9 blog post schemas
+[33m465124e[m Remove invalid 'url' parameter from all blog post schemas (161 files)
+[33m54360ef[m Fix TypeScript error in agentic-ai-workflows: update schema parameters
+[33m64ab19d[m Fix TypeScript error: remove invalid url parameter from schema
+[33mf1aa0f6[m Fix final 2 build errors: extra div tag and misplaced SmartCTA
+[33m6fd452c[m Fix final JSX errors: escaped strings, malformed divs, misplaced CTAs
+[33mf21d9c9[m Fix more JSX errors: SmartCTA in arrays and malformed JSX
+[33m9929434[m Fix more JSX syntax errors: SmartCTA placement and HTML entities
+[33mf579749[m Fix additional JSX syntax errors in blog posts
