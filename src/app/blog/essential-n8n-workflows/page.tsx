@@ -374,7 +374,9 @@ export default function EssentialN8NWorkflows() {
         </div>
     </div>
 </div>
-</div><div className="bg-zinc-900 rounded-xl p-6">
+</div>
+
+<div className="bg-zinc-900 rounded-xl p-6">
 <div className="flex items-start gap-4">
     <div className="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-lg">7</div>
     <div className="flex-1">
