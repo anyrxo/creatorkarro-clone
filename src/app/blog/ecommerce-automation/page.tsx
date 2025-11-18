@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'E-commerce Automation: $1M Store, Zero Employees (2026 Model)',
@@ -55,13 +55,27 @@ export default function EcommerceAutomationBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'E-commerce Automation: Run $1M Store with Zero Employees',
+              title: 'E-commerce Automation: Run $1M Store with Zero Employees',
               description:
                 '$464.4B dropshipping market. 23% of ecommerce automated. Complete automation blueprint.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/ecommerce-automation',
-              imageUrl: 'https://iimagined.ai/og-ecommerce-automation.png',
+              slug: 'ecommerce-automation',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'E-commerce',
+              keywords: [
+                'ecommerce automation',
+                'fully automated ecommerce business model 2026',
+                'dropshipping automation tools',
+                'automated online store management',
+                'ecommerce workflow automation',
+                'Shopify automation apps',
+                'automated order fulfillment systems',
+                'ecommerce marketing automation',
+                'zero employee ecommerce store',
+                'automated dropshipping business',
+                'ecommerce automation statistics',
+                'passive income ecommerce automation'
+              ]
             })
           ),
         }}

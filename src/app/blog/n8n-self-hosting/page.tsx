@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'N8N Self-Hosting: Save $10K/Year vs Zapier (Setup Guide)',
@@ -55,13 +55,27 @@ export default function N8NSelfHostingBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'N8N Self-Hosting: Save $10,000 per Year vs Zapier',
+              title: 'N8N Self-Hosting: Save $10,000 per Year vs Zapier',
               description:
                 'Complete guide to self-hosting N8N. 85% cost reduction vs Zapier. Infrastructure requirements, setup tutorial, production deployment checklist.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/n8n-self-hosting',
-              imageUrl: 'https://iimagined.ai/og-n8n-self-hosting.png',
+              slug: 'n8n-self-hosting',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Automation',
+              keywords: [
+                'N8N self hosting',
+                'how to self host N8N complete setup guide',
+                'N8N vs Zapier cost comparison',
+                'N8N Docker installation 2025',
+                'self hosted automation platform',
+                'N8N infrastructure requirements',
+                'N8N production deployment',
+                'automation cost reduction strategies',
+                'N8N PostgreSQL setup',
+                'workflow automation self hosting',
+                'N8N cloud vs self hosted',
+                'enterprise automation platform comparison'
+              ]
             })
           ),
         }}

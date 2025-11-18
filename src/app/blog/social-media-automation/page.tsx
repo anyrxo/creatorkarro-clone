@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Social Media Automation: 10x Posts, Zero Burnout (2026 Tools)',
@@ -55,13 +55,27 @@ export default function SocialMediaAutomationBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'Social Media Automation: Post 10x per Day Without Burnout',
+              title: 'Social Media Automation: Post 10x per Day Without Burnout',
               description:
                 'AI-powered timing outperforms manual by 25-300%. Boost engagement 32%. Complete automation guide.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/social-media-automation',
-              imageUrl: 'https://iimagined.ai/og-social-media-automation.png',
+              slug: 'social-media-automation',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Social Media',
+              keywords: [
+                'social media automation',
+                'automate social media posting across all platforms',
+                'social media scheduling tools 2025',
+                'AI social media content automation',
+                'best social media automation software',
+                'automated social media management',
+                'social media posting automation tools',
+                'increase engagement with automation',
+                'social media automation statistics',
+                'content calendar automation',
+                'multi-platform social media automation',
+                'social media workflow automation'
+              ]
             })
           ),
         }}

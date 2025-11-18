@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Real-Time Data Integration: The 2026 Enterprise Standard (Guide)',
@@ -55,13 +55,27 @@ export default function RealTimeDataIntegrationBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'Real-Time Data Integration: The 2026 Enterprise Standard (Guide)',
+              title: 'Real-Time Data Integration: The 2026 Enterprise Standard (Guide)',
               description:
                 '70% of enterprises use AI for real-time data integration, achieving 3.7x average ROI. Complete architecture and implementation guide.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/real-time-data-integration',
-              imageUrl: 'https://iimagined.ai/og-real-time-data-integration.png',
+              slug: 'real-time-data-integration',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Data & AI',
+              keywords: [
+                'real-time data integration',
+                'real time data integration with AI automation 2026',
+                'data integration best practices 2025',
+                'streaming data analytics platform',
+                'CDC change data capture implementation',
+                'ELT vs ETL cloud data warehouse',
+                'enterprise data integration architecture',
+                'real-time data processing benefits ROI',
+                'data integration tools comparison 2025',
+                'Apache Kafka streaming analytics',
+                'low-code data integration platforms',
+                'AI-powered data integration solutions'
+              ]
             })
           ),
         }}

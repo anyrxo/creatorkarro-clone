@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Zapier to N8N Migration: 100 Workflows in 1 Day (Guide)',
@@ -55,13 +55,27 @@ export default function ZapierN8NMigrationBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'Zapier to N8N Migration: Move 100 Workflows in One Day',
+              title: 'Zapier to N8N Migration: Move 100 Workflows in One Day',
               description:
                 'Complete migration guide from Zapier to N8N. Export workflows, migrate systematically, save 60-90% on automation costs.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/zapier-n8n-migration',
-              imageUrl: 'https://iimagined.ai/og-zapier-n8n-migration.png',
+              slug: 'zapier-n8n-migration',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Migration',
+              keywords: [
+                'migrate Zapier to N8N',
+                'how to migrate from Zapier to N8N complete guide',
+                'Zapier N8N migration tutorial 2025',
+                'switch from Zapier to N8N',
+                'Zapier workflow export JSON',
+                'N8N migration timeline',
+                'Zapier cost savings N8N',
+                'automation platform migration guide',
+                'Zapier to N8N converter tool',
+                'migrate automation workflows',
+                'Zapier alternative migration',
+                'N8N vs Zapier migration'
+              ]
             })
           ),
         }}

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Lead Generation Automation: 500+ Leads/Month (2026 System)',
@@ -55,13 +55,27 @@ export default function LeadGenerationAutomationBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'Lead Generation Automation: 500+ Leads/Month (2026 System)',
+              title: 'Lead Generation Automation: 500+ Leads/Month (2026 System)',
               description:
                 'Marketing automation increases qualified leads by 451%. AI boosts lead gen by 50%. Complete 24/7 automation system.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/lead-generation-automation',
-              imageUrl: 'https://iimagined.ai/og-lead-generation-automation.png',
+              slug: 'lead-generation-automation',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Marketing',
+              keywords: [
+                'lead generation automation',
+                'automated lead generation system that works 24/7',
+                'AI lead generation tools 2025',
+                'marketing automation lead generation',
+                'lead generation automation software',
+                'automated lead qualification system',
+                'B2B lead generation automation',
+                'cost per lead reduction strategies',
+                'lead scoring automation tools',
+                'chatbot lead generation 2026',
+                'automated lead nurturing workflows',
+                'sales qualified leads automation'
+              ]
             })
           ),
         }}

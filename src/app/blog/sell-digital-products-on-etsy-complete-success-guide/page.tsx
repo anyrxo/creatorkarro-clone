@@ -351,7 +351,7 @@ Etsy's algorithm slightly favors listings priced within the "normal range" for t
 | **Inventory** | $0 (sell unlimited copies) | $500-2,000 upfront inventory |
 | **Storage** | $0 | Garage/storage unit ($0-150/month) |
 | **Packaging** | $0 | $1-3 per order |
-| **Returns** | <1% (file delivery issues) | 5-12% (damaged, wrong size, etc.) |
+| **Returns** | &lt;1% (file delivery issues) | 5-12% (damaged, wrong size, etc.) |
 | **Time per sale** | 0 minutes (automated) | 15-45 minutes (make, pack, ship) |
 | **Etsy fees** | 10% | 10% (same) |
 | **Overall margin** | **92-97%** | **25-60%** |

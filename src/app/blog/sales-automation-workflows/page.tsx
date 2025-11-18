@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Sales Automation: Close 3x More Deals with AI (2026 Workflows)',
@@ -55,13 +55,27 @@ export default function SalesAutomationWorkflowsBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'Sales Automation Workflows: Close 3x More Deals with AI (2026)',
+              title: 'Sales Automation Workflows: Close 3x More Deals with AI (2026)',
               description:
                 'AI-driven sales automation delivers 76% boost in win rates. Complete workflow templates and implementation guide.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/sales-automation-workflows',
-              imageUrl: 'https://iimagined.ai/og-sales-automation-workflows.png',
+              slug: 'sales-automation-workflows',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Sales',
+              keywords: [
+                'sales automation workflows',
+                'AI powered sales automation workflow templates',
+                'sales automation tools 2025',
+                'increase sales close rates with automation',
+                'AI sales productivity tools',
+                'automated sales pipeline management',
+                'sales workflow optimization 2026',
+                'CRM automation best practices',
+                'AI SDR tools',
+                'sales follow-up automation',
+                'lead nurturing automation sales',
+                'sales process automation ROI'
+              ]
             })
           ),
         }}

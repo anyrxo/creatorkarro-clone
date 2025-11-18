@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'N8N Database Automation: SQL Workflows (Complete Guide)',
@@ -55,13 +55,27 @@ export default function N8NDatabaseAutomationBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'N8N Database Automation: Automate SQL Operations Visually',
+              title: 'N8N Database Automation: Automate SQL Operations Visually',
               description:
                 'Complete guide to N8N database workflows. PostgreSQL, MySQL, MongoDB automation. No-code SQL operations with visual workflows.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/n8n-database-automation',
-              imageUrl: 'https://iimagined.ai/og-n8n-database-automation.png',
+              slug: 'n8n-database-automation',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Database',
+              keywords: [
+                'N8N database automation',
+                'N8N PostgreSQL MySQL automation workflows',
+                'automated SQL queries N8N',
+                'N8N database integration tutorial',
+                'visual SQL workflow automation',
+                'N8N database nodes 2025',
+                'automated database reporting',
+                'PostgreSQL automation workflows',
+                'MySQL workflow automation N8N',
+                'database data synchronization automation',
+                'SQL operations without coding',
+                'N8N database workflow examples'
+              ]
             })
           ),
         }}

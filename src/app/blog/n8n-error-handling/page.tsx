@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'N8N Error Handling: Bulletproof Workflows (2026 Practices)',
@@ -55,13 +55,27 @@ export default function N8NErrorHandlingBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'N8N Error Handling: Build Bulletproof Workflows',
+              title: 'N8N Error Handling: Build Bulletproof Workflows',
               description:
                 'Complete guide to N8N error handling. Error Trigger nodes, retry logic, exponential backoff, production-ready workflows.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/n8n-error-handling',
-              imageUrl: 'https://iimagined.ai/og-n8n-error-handling.png',
+              slug: 'n8n-error-handling',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Development',
+              keywords: [
+                'N8N error handling',
+                'N8N workflow error handling best practices',
+                'N8N retry logic automation',
+                'N8N Error Trigger node tutorial',
+                'bulletproof N8N workflows',
+                'N8N exponential backoff retry',
+                'production ready N8N workflows',
+                'N8N error workflow examples',
+                'automated error recovery N8N',
+                'N8N workflow monitoring 2025',
+                'resilient automation workflows',
+                'N8N failsafe automation'
+              ]
             })
           ),
         }}

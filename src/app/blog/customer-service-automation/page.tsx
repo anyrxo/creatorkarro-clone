@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Customer Service Automation: Handle 1000+ Tickets (AI System)',
@@ -55,13 +55,27 @@ export default function CustomerServiceAutomationBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'Customer Service Automation: Handle 1000+ Tickets with AI',
+              title: 'Customer Service Automation: Handle 1000+ Tickets with AI',
               description:
                 'AI handles 80% of customer interactions. 30% cost reduction. 70% ticket volume decrease. Complete automation guide.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/customer-service-automation',
-              imageUrl: 'https://iimagined.ai/og-customer-service-automation.png',
+              slug: 'customer-service-automation',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Customer Support',
+              keywords: [
+                'customer service automation',
+                'AI customer service automation reduce support costs',
+                'automated ticket management system',
+                'AI chatbot customer support',
+                'reduce customer service costs 2025',
+                'customer support automation tools',
+                'AI-powered help desk automation',
+                'automated customer service workflows',
+                'chatbot ticket deflection strategies',
+                'customer service AI statistics',
+                'reduce support ticket volume',
+                'automated customer support ROI'
+              ]
             })
           ),
         }}

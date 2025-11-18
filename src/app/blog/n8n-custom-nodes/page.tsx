@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'N8N Custom Nodes: Build Any Integration (Developer Guide)',
@@ -55,13 +55,27 @@ export default function N8NCustomNodesBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'N8N Custom Nodes: Build Any Integration You Need',
+              title: 'N8N Custom Nodes: Build Any Integration You Need',
               description:
                 'Complete developer guide to building custom N8N nodes. TypeScript tutorial, starter template, declarative vs programmatic approaches.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/n8n-custom-nodes',
-              imageUrl: 'https://iimagined.ai/og-n8n-custom-nodes.png',
+              slug: 'n8n-custom-nodes',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Development',
+              keywords: [
+                'N8N custom nodes',
+                'create custom N8N nodes tutorial 2026',
+                'N8N node development TypeScript',
+                'N8N API integration development',
+                'build N8N integrations',
+                'N8N nodes starter template',
+                'custom N8N workflow nodes',
+                'N8N programmatic node tutorial',
+                'N8N declarative node development',
+                'N8N self hosted custom integrations',
+                'N8N developer guide 2025',
+                'extend N8N functionality'
+              ]
             })
           ),
         }}

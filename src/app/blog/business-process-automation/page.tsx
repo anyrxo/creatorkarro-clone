@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Business Process Automation: Save 20+ Hours/Week (2026 Blueprint)',
@@ -55,13 +55,27 @@ export default function BusinessProcessAutomationBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'Business Process Automation: Save 20+ Hours/Week (2026 Blueprint)',
+              title: 'Business Process Automation: Save 20+ Hours/Week (2026 Blueprint)',
               description:
                 '87% of organizations have implemented BPA, achieving 240% average ROI and saving 20+ hours weekly. Complete implementation guide.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/business-process-automation',
-              imageUrl: 'https://iimagined.ai/og-business-process-automation.png',
+              slug: 'business-process-automation',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Automation',
+              keywords: [
+                'business process automation',
+                'automate business processes step by step guide',
+                'BPA implementation guide 2025',
+                'workflow automation time savings',
+                'business automation ROI calculator',
+                'process automation software best practices',
+                'how to automate repetitive business tasks',
+                'enterprise automation strategy 2026',
+                'BPA tools comparison N8N vs Zapier',
+                'cloud-based business process automation',
+                'AI-powered workflow automation',
+                'small business automation solutions'
+              ]
             })
           ),
         }}

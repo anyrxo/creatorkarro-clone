@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Enterprise Automation: N8N vs Zapier vs Make (2026 Analysis)',
@@ -55,13 +55,27 @@ export default function EnterpriseAutomationPlatformsBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'Enterprise Automation: N8N vs Zapier vs Make (2026 Analysis)',
+              title: 'Enterprise Automation: N8N vs Zapier vs Make (2026 Analysis)',
               description:
                 'Complete comparison of N8N, Zapier, and Make for enterprise automation. Pricing, features, and ROI analysis.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/enterprise-automation-platforms',
-              imageUrl: 'https://iimagined.ai/og-enterprise-automation-platforms.png',
+              slug: 'enterprise-automation-platforms',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Automation',
+              keywords: [
+                'enterprise automation platforms',
+                'best enterprise automation platform comparison 2026',
+                'N8N vs Zapier vs Make comparison',
+                'workflow automation tools enterprise',
+                'automation platform pricing 2025',
+                'self-hosted vs cloud automation platforms',
+                'enterprise workflow automation software',
+                'business process automation tools comparison',
+                'low-code automation platforms 2026',
+                'open source automation N8N',
+                'Zapier alternatives for enterprise',
+                'Make vs Zapier enterprise features'
+              ]
             })
           ),
         }}

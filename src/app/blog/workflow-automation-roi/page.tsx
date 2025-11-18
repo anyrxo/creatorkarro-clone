@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import SmartCTA from '@/components/SmartCTA';
-import RelatedPosts from '@/components/RelatedPosts';
-import { generateBlogPostSchema } from '@/lib/seo-utils';
+import SmartCTA from '@/components/blog/SmartCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import { generateBlogPostSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Workflow Automation ROI Calculator: Calculate Your Savings (2026)',
@@ -55,13 +55,27 @@ export default function WorkflowAutomationROIBlogPost() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBlogPostSchema({
-              headline: 'Workflow Automation ROI Calculator: Calculate Your Savings (2026)',
+              title: 'Workflow Automation ROI Calculator: Calculate Your Savings (2026)',
               description:
                 '54% see ROI within 12 months with 240% average returns. Free calculator framework and proven formulas to measure workflow automation savings.',
-              datePublished: '2025-01-15',
-              dateModified: '2025-01-15',
-              url: 'https://iimagined.ai/blog/workflow-automation-roi',
-              imageUrl: 'https://iimagined.ai/og-workflow-automation-roi.png',
+              slug: 'workflow-automation-roi',
+              publishedTime: '2025-01-15',
+              modifiedTime: '2025-01-15',
+              category: 'Automation',
+              keywords: [
+                'workflow automation ROI',
+                'calculate workflow automation cost savings and ROI',
+                'automation ROI calculator template',
+                'business process automation return on investment',
+                'workflow automation cost benefit analysis',
+                'how to measure automation ROI metrics',
+                'automation implementation costs 2025',
+                'productivity gains from workflow automation',
+                'automation payback period calculator',
+                'RPA ROI calculation formula',
+                'enterprise automation cost savings',
+                'workflow efficiency ROI measurement'
+              ]
             })
           ),
         }}
