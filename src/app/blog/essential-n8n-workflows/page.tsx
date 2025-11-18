@@ -420,7 +420,6 @@ export default function EssentialN8NWorkflows() {
 </div>
 </div>
 </div>
-</div>
 </section>
 
       <section className="section-spacing">
