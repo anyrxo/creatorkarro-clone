@@ -91,7 +91,7 @@ export default function AIContentCreationAutomation() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <article className="max-w-4xl mx-auto px-4 py-12 bg-dark text-white">
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-dark text-white min-h-screen">
         {/* Hero Section */}
         <header className="mb-12">
           <div className="inline-block bg-green-500/10 text-green-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">

@@ -151,7 +151,7 @@ export const pageSEO = {
   },
   about: {
     title: 'About Anyro - From 0 to 500K Followers | IImagined.ai',
-    description: 'Learn how Anyro went from broke college student to 500K+ followers and $2M+ in revenue. Discover the journey behind IImagined.ai and the mission to help creators succeed.',
+    description: 'Learn how Anyro built 500K+ followers and $2M+ in revenue. Discover the journey behind IImagined.ai and the mission to help creators succeed.',
     keywords: [
       'anyro',
       'about anyro',

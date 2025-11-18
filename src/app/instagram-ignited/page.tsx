@@ -264,7 +264,7 @@ export default function InstagramIgnitedPage() {
         <HeroSection
           badge="INSTAGRAM EMPIRE BUILDER"
           badgeColor="bg-gradient-to-r from-red-600/20 to-orange-600/20 text-red-300 px-4 py-2 rounded-full"
-          title="Stop Wasting Time on <span class='text-red-400'>Dead Content</span>. Build a <span class='text-blue-400'>500K+ Instagram Empire</span> That Prints Money While You Sleep"
+          title={<>Stop Wasting Time on <span className='text-red-400'>Dead Content</span>. Build a <span className='text-blue-400'>500K+ Instagram Empire</span> That Prints Money While You Sleep</>}
           description="2,000+ students went from invisible to influencer in 30 days. Stop guessing. Start dominating. This is the EXACT system that built 10M+ followers and $2.5M+ in revenue."
           ctaText="Claim Instagram Ignited Bundle"
           ctaLink="#pricing"

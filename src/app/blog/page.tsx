@@ -124,7 +124,7 @@ export default function BlogPage() {
   const displayCategories = ['All', ...categories]
 
   return (
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-dark w-full overflow-x-hidden">
       {/* MAGICAL HEADER */}
       <section className="relative py-20 px-4 overflow-hidden">
         <HeroBackground variant="default" />

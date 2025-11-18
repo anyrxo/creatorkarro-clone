@@ -1,13 +1,12 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Anyro\'s Story - From Broke College Student to 500K+ Followers & $2M+ Revenue | IImagined.ai',
-  description: 'Discover how Anyro went from broke college student to building a 500K+ follower empire and generating $2M+ revenue through AI automation and Instagram growth strategies.',
+  title: 'Anyro\'s Story - From 0 to 500K+ Followers & $2M+ Revenue | IImagined.ai',
+  description: 'Discover how Anyro built a 500K+ follower empire and generated $2M+ revenue through AI automation and Instagram growth strategies.',
   keywords: [
     'anyro story',
     'entrepreneur success story',
     'instagram success story',
-    'from broke to millionaire',
     '500k followers story',
     'digital entrepreneur journey',
     'ai automation success',
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Anyro\'s Story - From 0 to 500K Followers & $2M+ Revenue',
-    description: 'Inspiring journey from broke college student to social media empire and $2M+ business.',
+    description: 'Inspiring journey from 0 to social media empire and $2M+ business.',
     creator: '@anyro'
   }
 }

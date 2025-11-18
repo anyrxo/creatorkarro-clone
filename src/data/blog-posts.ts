@@ -1,6 +1,6 @@
 // Auto-generated from blog directories
 // Last updated: 2025-10-29T11:23:31.397Z
-// Total posts: 151
+// Total posts: 154 (updated with new posts 7, 8, 9)
 
 export interface BlogPost {
   id: number;

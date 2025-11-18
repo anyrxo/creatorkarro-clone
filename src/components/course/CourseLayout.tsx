@@ -386,10 +386,7 @@ export function HeroSection({
           )}
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            {typeof title === 'string' && title.includes('className') ? 
-              <span dangerouslySetInnerHTML={{ __html: title }} /> : 
-              title
-            }
+            {title}
           </h1>
 
           <p className="text-xl text-gray-400 mb-8">
