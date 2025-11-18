@@ -762,7 +762,7 @@ export default function AIEmailAutomationBlogPost() {
                 <div className="bg-zinc-800 rounded-lg p-4">
                   <h4 className="font-bold text-blue-400 mb-2">Schedule Triggers</h4>
                   <ul className="space-y-1 text-xs text-gray-300">
-                    <li>• Daily check for abandoned carts >1hr old</li>
+                    <li>• Daily check for abandoned carts &gt;1hr old</li>
                     <li>• Weekly re-engagement for inactive subscribers</li>
                     <li>• Monthly product restocks</li>
                   </ul>
@@ -819,11 +819,11 @@ Generate subject line and email body.`}
                   </div>
                   <div className="flex items-start">
                     <span className="text-purple-400 mr-2">2.</span>
-                    <span>IF cart value > $50 → Send premium recovery email</span>
+                    <span>IF cart value &gt; $50 - Send premium recovery email</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-purple-400 mr-2">3.</span>
-                    <span>IF cart value < $50 → Send basic reminder</span>
+                    <span>IF cart value &lt; $50 - Send basic reminder</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-purple-400 mr-2">4.</span>

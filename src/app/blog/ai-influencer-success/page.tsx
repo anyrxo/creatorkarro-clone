@@ -1175,10 +1175,6 @@ Create ecosystem where each revenue stream feeds others:
 
 **Result**: Same 1,000 true fans generate revenue across 5+ streams instead of 1.`
   },
-
-        {/* Inline CTA - After Revenue Diversification Strategy: $5K-10K/month Recession-Proof + Multiple Case Studies */}
-        <SmartCTA blogSlug="ai-influencer-success" variant="inline" />
-
   {
     question: "How do I grow an AI influencer from 0 to 50,000 followers in 6 months?",
     answer: `**Aggressive 6-month growth roadmap** from 0 to 50K followers (requires 15-25 hours/week commitment):

@@ -427,7 +427,7 @@ export default function AgenticAIWorkflowsBlogPost() {
                   <div className="bg-blue-500/20 text-blue-300 rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">2026</div>
                   <div className="flex-1">
                     <p className="text-white font-bold">40% of enterprise apps will have AI agents</p>
-                    <p className="text-sm text-gray-400">Up from <5% in 2025 — 8x growth in 1 year</p>
+                    <p className="text-sm text-gray-400">Up from &lt;5% in 2025 — 8x growth in 1 year</p>
                   </div>
                 </div>
                 <div className="flex items-center">
