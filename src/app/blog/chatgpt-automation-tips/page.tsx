@@ -404,10 +404,6 @@ For each section include:
 
 **Key Insight**: Even the *lowest* ROI scenario (enterprise at 500%) means every $1 invested returns $5. For solo creators and small businesses, ChatGPT automation typically delivers **20-300x returns** within the first year—making it one of the highest-ROI business investments available in 2026.`
   },
-
-        {/* Inline CTA - After 4 ROI Case Studies: $6K-$20K/month Gains + 2,500-30,000% ROI */}
-        <SmartCTA blogSlug="chatgpt-automation-tips" variant="inline" />
-
   {
     question: "How do you set up ChatGPT automations with Zapier, Make, or n8n for true hands-free workflows?",
     answer: `**Complete Guide to ChatGPT API Automation** (3 Platforms Compared):
