@@ -67,6 +67,12 @@ export default function AIWorkflowOrchestrationBlogPost() {
     title: "AI Workflow Orchestration: Beyond Automation (2026 Guide)",
     description:
       "80% of organizations adopt intelligent orchestration by 2025. Learn the difference between orchestration and automation—and why one is 10x more powerful.",
+  
+    slug: "ai-workflow-orchestration",
+    publishedTime: "2025-11-17",
+    modifiedTime: "2025-11-17",
+    category: "AI Automation",
+    keywords: ["ai workflow orchestration"],
   });
 
   return (

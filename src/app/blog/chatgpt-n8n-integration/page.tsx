@@ -67,6 +67,12 @@ export default function ChatGPTN8NIntegrationBlogPost() {
     title: "ChatGPT N8N Integration: AI-Powered Workflows (2026)",
     description:
       "92% of Fortune 500 companies use OpenAI products. Learn how to connect ChatGPT API to N8N's 1,100+ apps and build AI workflows in minutes—no coding required.",
+  
+    slug: "chatgpt-n8n-integration",
+    publishedTime: "2025-11-17",
+    modifiedTime: "2025-11-17",
+    category: "AI Automation",
+    keywords: ["chatgpt n8n integration"],
   });
 
   return (

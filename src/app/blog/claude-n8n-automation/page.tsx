@@ -67,6 +67,12 @@ export default function ClaudeN8NAutomationBlogPost() {
     title: "Claude N8N Automation: Anthropic AI Workflows (2026)",
     description:
       "Claude captures 32% enterprise market share, beating OpenAI. Learn how to automate workflows with Claude API and N8N—92% coding accuracy, 30-hour autonomous operation.",
+  
+    slug: "claude-n8n-automation",
+    publishedTime: "2025-11-17",
+    modifiedTime: "2025-11-17",
+    category: "AI Automation",
+    keywords: ["claude n8n automation"],
   });
 
   return (
