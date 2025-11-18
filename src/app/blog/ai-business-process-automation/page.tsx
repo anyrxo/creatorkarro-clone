@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import SmartCTA from "@/components/SmartCTA";
-import RelatedPosts from "@/components/RelatedPosts";
-import { generateBlogPostSchema } from "@/lib/schema";
+import SmartCTA from "@/components/blog/SmartCTA";
+import RelatedPosts from "@/components/blog/RelatedPosts";
+import { generateBlogPostSchema } from "@/lib/blog-schema";
 
 export const metadata: Metadata = {
   title: "AI Business Process Automation: Complete 2026 Guide",

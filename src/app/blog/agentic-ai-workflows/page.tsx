@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import SmartCTA from "@/components/SmartCTA";
-import RelatedPosts from "@/components/RelatedPosts";
-import { generateBlogPostSchema } from "@/lib/schema";
+import SmartCTA from "@/components/blog/SmartCTA";
+import RelatedPosts from "@/components/blog/RelatedPosts";
+import { generateBlogPostSchema } from "@/lib/blog-schema";
 
 export const metadata: Metadata = {
   title: "Agentic AI Workflows: Autonomous Systems That Think (2026)",
@@ -119,7 +119,7 @@ export default function AgenticAIWorkflowsBlogPost() {
             <strong>Agentic AI doesn't follow rules—it pursues goals</strong>. You tell it: "Reduce outstanding invoices by 30%." It autonomously plans a strategy, analyzes payment patterns, identifies bottlenecks, sends personalized reminders, escalates overdue accounts, and adjusts tactics based on results. No human intervention required.
           </p>
           <p className="text-lg leading-relaxed">
-            This is why Gartner named agentic AI the <strong>#1 strategic technology trend for 2025</strong>. According to their latest research: <strong>40% of enterprise applications will integrate task-specific AI agents by 2026</strong>—up from less than 5% in 2025. By 2028, <strong>33% of enterprise software will include agentic AI</strong> (vs. <1% in 2024), and <strong>15% of day-to-day work decisions will be made autonomously</strong>.
+            This is why Gartner named agentic AI the <strong>#1 strategic technology trend for 2025</strong>. According to their latest research: <strong>40% of enterprise applications will integrate task-specific AI agents by 2026</strong>—up from less than 5% in 2025. By 2028, <strong>33% of enterprise software will include agentic AI</strong> (vs. &lt;1% in 2024), and <strong>15% of day-to-day work decisions will be made autonomously</strong>.
           </p>
           <p className="text-lg leading-relaxed">
             The adoption curve is explosive: <strong>79% of companies report AI agents are already being adopted</strong>, with 66% of those saying agents deliver measurable value through increased productivity (PwC, April 2025). <strong>85% of organizations have integrated AI agents in at least one workflow</strong>. And <strong>96% of enterprise IT leaders plan to expand AI agent use over the next 12 months</strong>.

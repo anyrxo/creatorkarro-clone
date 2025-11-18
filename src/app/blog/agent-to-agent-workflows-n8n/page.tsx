@@ -595,15 +595,15 @@ Write the final article.`}
                 <div className="space-y-3 text-sm">
                   <div>
                     <p className="text-blue-400 font-semibold mb-1">Research Agent Input:</p>
-                    <p className="text-gray-400 font-mono">{{ $json.topic }}</p>
+                    <p className="text-gray-400 font-mono">{'{{ $json.topic }}'}</p>
                   </div>
                   <div>
                     <p className="text-purple-400 font-semibold mb-1">Outline Agent Input:</p>
-                    <p className="text-gray-400 font-mono">{{ $node["Research Agent"].json.facts }}</p>
+                    <p className="text-gray-400 font-mono">{'{{ $node["Research Agent"].json.facts }}'}</p>
                   </div>
                   <div>
                     <p className="text-green-400 font-semibold mb-1">Writing Agent Input:</p>
-                    <p className="text-gray-400 font-mono">{{ $node["Outline Agent"].json.outline }}</p>
+                    <p className="text-gray-400 font-mono">{'{{ $node["Outline Agent"].json.outline }}'}</p>
                   </div>
                 </div>
               </div>
