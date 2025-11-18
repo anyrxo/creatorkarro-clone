@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     title: "Hyperautomation Strategy: Scale 5x Without Hiring (2026)",
     description:
       "90% of enterprises prioritize hyperautomation. 250-380% ROI in 6-9 months. 30% cost reduction. Market exploding from $58.4B to $278.3B by 2035. Complete implementation guide.",
-    url: "https://iimagined.ai/blog/hyperautomation-strategy",
     siteName: "IImagined.ai",
     images: [
       {
@@ -68,10 +67,6 @@ export default function HyperautomationStrategyBlogPost() {
     title: "Hyperautomation Strategy: Scale 5x Without Hiring (2026)",
     description:
       "90% of enterprises prioritize hyperautomation. 250-380% ROI in 6-9 months. 30% cost reduction. Market exploding from $58.4B to $278.3B by 2035. Complete implementation guide.",
-    url: "https://iimagined.ai/blog/hyperautomation-strategy",
-    datePublished: "2025-11-17",
-    dateModified: "2025-11-17",
-    authorName: "Anyro",
   });
 
   return (

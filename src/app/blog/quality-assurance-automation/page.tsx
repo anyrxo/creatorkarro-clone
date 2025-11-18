@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "QA Automation Testing: Complete 2026 Guide to Automated Testing & CI/CD",
     description: "Master QA automation testing with Playwright, Cypress, and CI/CD integration strategies that reduce bugs by 80% while shipping 3x faster.",
-    url: "https://iimagined.ai/blog/quality-assurance-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

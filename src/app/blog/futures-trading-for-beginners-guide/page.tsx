@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "Futures Trading for Beginners: Complete 2026 Guide",
     description: "Learn futures trading from scratch. Understand contracts, margin requirements, tick values, and proven strategies to start trading futures profitably.",
-    url: "https://iimagined.ai/blog/futures-trading-for-beginners-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",

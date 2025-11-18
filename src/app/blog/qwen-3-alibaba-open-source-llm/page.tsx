@@ -35,7 +35,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Qwen 3 Alibaba Open Source LLM: Complete Guide 2026 | Multilingual AI Powerhouse",
     description: "Master Qwen 3, Alibaba's open-source multilingual LLM. Learn deployment, fine-tuning, Chinese language excellence, and commercial use with Apache 2.0 license.",
-    url: "https://iimagined.ai/blog/qwen-3-alibaba-open-source-llm",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

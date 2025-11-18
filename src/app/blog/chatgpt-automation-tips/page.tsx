@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChatGPT Automation Tips 2026: 37 Hacks That Save 20+ Hours Weekly",
     description: "37 proven ChatGPT automation hacks with copy-paste prompts. Real case studies: 10x content output, $50K+ monthly revenue, 95% time savings.",
-    url: "https://iimagined.ai/blog/chatgpt-automation-tips",
     siteName: "IImagined.ai",
     locale: "en_US",
     type: "article",
@@ -667,8 +666,6 @@ export default function ChatGPTAutomationTipsPage() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2026-02-28T10:00:00.000Z',
-    dateModified: '2026-02-28T10:00:00.000Z',
     image: 'https://iimagined.ai/images/chatgpt-automation-tips-og.jpg',
     articleSection: 'AI Automation',
     keywords: 'chatgpt automation tips, chatgpt automation, chatgpt hacks 2026, ai automation'

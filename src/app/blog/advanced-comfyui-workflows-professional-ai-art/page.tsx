@@ -17,7 +17,6 @@ export const metadata = {
   openGraph: {
     title: "Advanced ComfyUI Workflows: Professional AI Art Guide 2026",
     description: "Master SDXL, LoRA stacking, ControlNet & advanced workflows. Complete guide from ComfyUI experts.",
-    url: "https://iimagined.ai/blog/advanced-comfyui-workflows-professional-ai-art",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T08:00:00.000Z",

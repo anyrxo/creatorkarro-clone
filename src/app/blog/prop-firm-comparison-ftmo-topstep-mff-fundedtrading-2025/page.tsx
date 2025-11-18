@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Prop Firm Comparison 2026: FTMO vs Topstep vs MFF vs FundedTrading+",
     description: "Complete comparison of top 4 prop firms: fees, profit splits, rules, and best fit for your trading style.",
-    url: "https://iimagined.ai/blog/prop-firm-comparison-ftmo-topstep-mff-fundedtrading-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T09:00:00.000Z",

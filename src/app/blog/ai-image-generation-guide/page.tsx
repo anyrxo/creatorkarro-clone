@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "AI Image Generation Guide 2026",
     description: "AI Image Generation Guide comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
-    url: "https://iimagined.ai/blog/ai-image-generation-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

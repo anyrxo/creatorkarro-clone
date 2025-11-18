@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Essential N8N Workflows: Complete Guide & Expert Strategies",
     description: "Essential N8N Workflows - comprehensive strategies, tools, and techniques for 2026",
-    url: "https://iimagined.ai/blog/essential-n8n-workflows",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

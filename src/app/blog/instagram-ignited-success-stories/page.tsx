@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "Instagram Ignited Success Stories",
     description: "Instagram Ignited Success Stories strategies that work - proven tactics for growth, engagement, and monetization in 2026",
-    url: "https://iimagined.ai/blog/instagram-ignited-success-stories",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

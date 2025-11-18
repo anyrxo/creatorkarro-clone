@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "Instagram Collab Feature: Double Your Reach Overnight in 2026",
     description: "Master Instagram Collabs to double your feed post reach overnight. Learn how to find partners, create viral collab content, and gain 5K+ followers from one post.",
-    url: "https://iimagined.ai/blog/instagram-collab-feature-double-reach-overnight",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-23T10:00:00.000Z",

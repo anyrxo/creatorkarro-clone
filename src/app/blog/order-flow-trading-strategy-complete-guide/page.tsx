@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Order Flow Trading Strategy: Complete Guide 2026",
     description: "Master order flow trading with Volume Profile, Delta, and Footprint charts. Learn 3 proven setups and compare the best order flow tools.",
-    url: "https://iimagined.ai/blog/order-flow-trading-strategy-complete-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-21T09:00:00.000Z",

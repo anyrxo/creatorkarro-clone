@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "AI Influencer Content Calendar & Automation: 3x/Day in 2 Hours/Week",
     description: "N8N workflows for automated posting, batch creation strategies, and trend integration for AI influencers.",
-    url: "https://iimagined.ai/blog/ai-influencer-content-calendar-automation-strategy",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T11:00:00.000Z",

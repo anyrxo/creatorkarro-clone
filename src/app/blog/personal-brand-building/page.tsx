@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Personal Brand Building: Complete Guide & Expert Strategies",
     description: "Personal Brand Building - comprehensive strategies, tools, and techniques for 2026",
-    url: "https://iimagined.ai/blog/personal-brand-building",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

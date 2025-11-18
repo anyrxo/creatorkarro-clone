@@ -34,7 +34,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Passive Income Blueprint 2026: Build $3K-10K/Month Digital Income Streams",
     description: "Master passive income with digital products, AI automations, and scalable systems. Proven strategies and case studies from $3K-10K/month creators.",
-    url: "https://iimagined.ai/blog/passive-income-blueprint",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T10:00:00.000Z",

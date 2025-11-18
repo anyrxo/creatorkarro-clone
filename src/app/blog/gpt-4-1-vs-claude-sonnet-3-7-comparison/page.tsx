@@ -34,7 +34,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GPT-4.5 vs Claude Sonnet 4.5 vs Gemini 2.5: Definitive 2026 Comparison",
     description: "Complete comparison of latest 2026 AI models with real benchmarks, cost analysis, and use case recommendations from businesses earning $127K/year.",
-    url: "https://iimagined.ai/blog/gpt-4-1-vs-claude-sonnet-3-7-comparison",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-03-15T10:00:00.000Z",

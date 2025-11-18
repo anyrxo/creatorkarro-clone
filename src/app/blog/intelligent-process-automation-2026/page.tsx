@@ -26,7 +26,6 @@ export const metadata = {
   openGraph: {
     title: "Intelligent Process Automation: 70% of Enterprises Adopt AI by 2026",
     description: "87% of organizations scale IPA. 2x productivity vs RPA. 50-70% task automation. 20-35% cost savings. Complete guide to intelligent automation.",
-    url: "https://iimagined.ai/blog/intelligent-process-automation-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-18T00:00:00.000Z",
@@ -81,7 +80,6 @@ export default function IntelligentProcessAutomation2026() {
     description: "87% of organizations scale IPA in 2025. IPA delivers 2x productivity vs RPA. 50-70% task automation with 20-35% cost savings. The future of enterprise automation.",
     publishedTime: "2026-01-18T00:00:00.000Z",
     modifiedTime: "2026-01-18T00:00:00.000Z",
-    url: "https://iimagined.ai/blog/intelligent-process-automation-2026",
     slug: "intelligent-process-automation-2026",
     keywords: ["intelligent process automation", "IPA vs RPA", "hyperautomation", "enterprise automation", "AI automation"]
   });

@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Viral Instagram Carousels 2026: Complete Guide to 10M+ Reach",
     description: "Master viral Instagram carousels with proven templates, hooks, and strategies from creators getting 10M+ monthly reach in 2026.",
-    url: "https://iimagined.ai/blog/viral-carousel-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

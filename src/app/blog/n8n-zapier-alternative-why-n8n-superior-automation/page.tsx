@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "N8N Zapier Alternative: Why N8N is Superior for Automation",
     description: "n8n zapier alternative, zapier vs n8n, automation tools comparison - Expert guide from the creators of N8N AI Automations",
-    url: "https://iimagined.ai/blog/n8n-zapier-alternative-why-n8n-superior-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-10T10:00:00.000Z",

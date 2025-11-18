@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Create Faceless YouTube Channel 2026: $127K/Month Blueprint",
     description: "Complete guide to creating profitable faceless YouTube channels. Proven strategies and AI tools from channels earning $127K/month.",
-    url: "https://iimagined.ai/blog/create-faceless-youtube-channel",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

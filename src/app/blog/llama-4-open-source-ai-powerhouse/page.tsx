@@ -35,7 +35,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Llama 4 Open Source AI Powerhouse: Complete Guide 2026 | Self-Hosting & Fine-Tuning",
     description: "Master Llama 4, Meta's most powerful open-source AI. Learn self-hosting, fine-tuning, commercial use, and deployment strategies for full control without vendor lock-in.",
-    url: "https://iimagined.ai/blog/llama-4-open-source-ai-powerhouse",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

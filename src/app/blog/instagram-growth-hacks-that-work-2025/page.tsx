@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "15 Instagram Growth Hacks That Actually Work in 2026",
     description: "Proven Instagram growth strategies from 127K+ students. Master carousels, Reels, hashtags & engagement tactics to gain 10K-500K followers.",
-    url: "https://iimagined.ai/blog/instagram-growth-hacks-that-work-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-28T10:00:00.000Z",

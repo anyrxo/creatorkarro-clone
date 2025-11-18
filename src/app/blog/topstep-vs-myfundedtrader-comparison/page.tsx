@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "Topstep vs MyFundedTrader: Complete 2026 Comparison",
     description: "Detailed comparison of Topstep and MyFundedTrader prop firms. Discover which funded trading program offers better profit splits, evaluation rules, and trader support.",
-    url: "https://iimagined.ai/blog/topstep-vs-myfundedtrader-comparison",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",

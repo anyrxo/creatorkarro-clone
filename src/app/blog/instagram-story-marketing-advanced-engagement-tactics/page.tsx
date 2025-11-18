@@ -37,7 +37,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Instagram Story Marketing 2026: 7 Advanced Engagement Tactics (340% Reply Rate Boost)",
     description: "Master Instagram Story marketing with 7 proven tactics achieving 340% reply rate increases and 5.2x more conversions. Complete 30-day blueprint included.",
-    url: "https://iimagined.ai/blog/instagram-story-marketing-advanced-engagement-tactics",
     siteName: "IImagined.ai",
     locale: "en_US",
     type: "article",
@@ -325,8 +324,6 @@ export default function InstagramStoryMarketingPage() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2026-02-25T10:00:00.000Z',
-    dateModified: '2026-02-25T10:00:00.000Z',
     image: 'https://iimagined.ai/images/blog/instagram-story-marketing-advanced-engagement-tactics-og.jpg',
     articleSection: 'Instagram Marketing',
     keywords: 'instagram story marketing, instagram stories, story engagement, instagram story strategy'

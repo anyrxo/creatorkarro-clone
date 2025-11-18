@@ -26,7 +26,6 @@ export const metadata = {
   openGraph: {
     title: "AI Agent Automation: Build 24/7 Autonomous Workflows (2026)",
     description: "30% of enterprises automate 50%+ of operations by 2026. Learn to build autonomous AI workflows with N8N, ChatGPT & Claude. Step-by-step guide.",
-    url: "https://iimagined.ai/blog/ai-agent-automation-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-15T00:00:00.000Z",
@@ -81,7 +80,6 @@ export default function AIAgentAutomation2026() {
     description: "30% of enterprises automate 50%+ of operations by 2026. Build autonomous AI workflows with N8N & ChatGPT. Complete guide to AI agent automation.",
     publishedTime: "2026-01-15T00:00:00.000Z",
     modifiedTime: "2026-01-15T00:00:00.000Z",
-    url: "https://iimagined.ai/blog/ai-agent-automation-2026",
     slug: "ai-agent-automation-2026",
     keywords: ["AI agent automation", "autonomous workflows", "N8N automation", "ChatGPT agents", "business process automation"]
   });

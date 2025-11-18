@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     title: "AI Business Process Automation: Complete 2026 Guide",
     description:
       "AI-powered BPA delivers 240% average ROI in 6-9 months, cuts costs 50-70%, and saves 2+ hours daily. Learn how to implement AI in business process automation for 2026.",
-    url: "https://iimagined.ai/blog/ai-business-process-automation",
     siteName: "IImagined.ai",
     images: [
       {
@@ -68,10 +67,6 @@ export default function AIBusinessProcessAutomationBlogPost() {
     title: "AI Business Process Automation: Complete 2026 Guide",
     description:
       "AI-powered BPA delivers 240% average ROI in 6-9 months, cuts costs 50-70%, and saves 2+ hours daily. Learn how to implement AI in business process automation for 2026.",
-    url: "https://iimagined.ai/blog/ai-business-process-automation",
-    datePublished: "2025-11-17",
-    dateModified: "2025-11-17",
-    authorName: "Anyro",
   });
 
   return (

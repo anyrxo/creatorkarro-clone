@@ -40,7 +40,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Windsurf AI IDE 2026: Visual AI Coding with Superior UX",
     description: "Master Windsurf AI by Codeium. Cascade Agent, visual diff interface, and multi-file editing. 250% faster development with superior code review experience.",
-    url: "https://iimagined.ai/blog/windsurf-ai-coding",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-28T10:00:00.000Z",

@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Instagram Influencer Marketing: Build Your Personal Brand",
     description: "instagram influencer marketing, personal brand instagram, instagram influence - Expert guide from the creators of Instagram Ignited",
-    url: "https://iimagined.ai/blog/instagram-influencer-marketing-build-personal-brand",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-25T10:00:00.000Z",

@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ComfyUI Success Stories 2026: 7 Creators Making $10K-$200K/Month",
     description: "Real ComfyUI success stories with exact workflows, revenue breakdowns, and strategies from creators earning $10K-$200K monthly with AI art.",
-    url: "https://iimagined.ai/blog/comfyui-success-story",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

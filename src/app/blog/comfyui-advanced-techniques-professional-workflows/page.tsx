@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "ComfyUI Advanced Techniques: Professional Workflows for AI Influencers",
     description: "Master advanced ComfyUI workflows for AI influencer creation with custom nodes, batch automation, and optimization techniques.",
-    url: "https://iimagined.ai/blog/comfyui-advanced-techniques-professional-workflows",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",

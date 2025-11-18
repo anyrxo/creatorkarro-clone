@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     title: "AI Workflow Orchestration: Beyond Automation (2026 Guide)",
     description:
       "80% of organizations adopt intelligent orchestration by 2025. Learn the difference between orchestration and automation—and why one is 10x more powerful.",
-    url: "https://iimagined.ai/blog/ai-workflow-orchestration",
     siteName: "IImagined.ai",
     images: [
       {
@@ -68,10 +67,6 @@ export default function AIWorkflowOrchestrationBlogPost() {
     title: "AI Workflow Orchestration: Beyond Automation (2026 Guide)",
     description:
       "80% of organizations adopt intelligent orchestration by 2025. Learn the difference between orchestration and automation—and why one is 10x more powerful.",
-    url: "https://iimagined.ai/blog/ai-workflow-orchestration",
-    datePublished: "2025-11-17",
-    dateModified: "2025-11-17",
-    authorName: "Anyro",
   });
 
   return (

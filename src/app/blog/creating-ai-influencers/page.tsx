@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Creating AI Influencers 2026: Complete Step-by-Step Guide to Virtual Personas",
     description: "Master creating AI influencers with Midjourney, consistent personas, content automation & monetization strategies",
-    url: "https://iimagined.ai/blog/creating-ai-influencers",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-26T10:00:00.000Z",

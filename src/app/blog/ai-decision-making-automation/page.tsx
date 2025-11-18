@@ -26,7 +26,6 @@ export const metadata = {
   openGraph: {
     title: "AI Decision-Making Automation: Let AI Choose Your Next Steps (2026)",
     description: "AI decision-making improves productivity 4.8x, reduces errors 49%. 92% of executives adopt AI automation by 2025. Complete guide to autonomous decisioning.",
-    url: "https://iimagined.ai/blog/ai-decision-making-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-17T00:00:00.000Z",
@@ -81,7 +80,6 @@ export default function AIDecisionMakingAutomation() {
     description: "92% of executives adopt AI automation. AI improves productivity 4.8x and reduces errors 49%. Let AI make intelligent decisions in your workflows autonomously.",
     publishedTime: "2026-01-17T00:00:00.000Z",
     modifiedTime: "2026-01-17T00:00:00.000Z",
-    url: "https://iimagined.ai/blog/ai-decision-making-automation",
     slug: "ai-decision-making-automation",
     keywords: ["AI decision making", "automated decisions", "intelligent automation", "decision intelligence", "agentic AI"]
   });

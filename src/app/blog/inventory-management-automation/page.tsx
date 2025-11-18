@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Inventory Management Automation: Complete 2026 Guide to Smart Stock Control",
     description: "Master inventory management automation with demand forecasting, auto-reordering, and multi-channel sync that reduce stockouts by 90% while cutting costs.",
-    url: "https://iimagined.ai/blog/inventory-management-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

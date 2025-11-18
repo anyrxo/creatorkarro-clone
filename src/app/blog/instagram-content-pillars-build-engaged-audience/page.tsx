@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "Instagram Content Pillars: How to Build a Highly Engaged Audience in 2026",
     description: "Master content pillars to create consistent, engaging Instagram content that builds loyal followers. Complete framework with examples from 100K+ accounts.",
-    url: "https://iimagined.ai/blog/instagram-content-pillars-build-engaged-audience",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T10:00:00.000Z",

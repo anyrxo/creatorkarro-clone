@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     title: "AI Email Automation: 2,361% Higher Conversions (2026 Formula)",
     description:
       "Automated emails convert 2,361% better than regular campaigns. 82% conversion boost with AI personalization. Learn how to build email sequences that generate 320% more revenue.",
-    url: "https://iimagined.ai/blog/ai-email-automation",
     siteName: "IImagined.ai",
     images: [
       {
@@ -68,10 +67,6 @@ export default function AIEmailAutomationBlogPost() {
     title: "AI Email Automation: 2,361% Higher Conversions (2026 Formula)",
     description:
       "Automated emails convert 2,361% better than regular campaigns. 82% conversion boost with AI personalization. Learn how to build email sequences that generate 320% more revenue.",
-    url: "https://iimagined.ai/blog/ai-email-automation",
-    datePublished: "2025-11-17",
-    dateModified: "2025-11-17",
-    authorName: "Anyro",
   });
 
   return (

@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Create Online Courses That Sell 2026 | Complete Blueprint",
     description: "Master online course creation. Platform selection, pricing strategies, marketing tactics, and case studies from creators earning $50K+/month.",
-    url: "https://iimagined.ai/blog/create-online-courses-that-sell-step-by-step-blueprint",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-22T10:00:00.000Z",

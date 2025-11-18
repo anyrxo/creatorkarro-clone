@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     title: "Claude N8N Automation: Anthropic AI Workflows (2026)",
     description:
       "Claude captures 32% enterprise market share, beating OpenAI. Learn how to automate workflows with Claude API and N8N—92% coding accuracy, 30-hour autonomous operation.",
-    url: "https://iimagined.ai/blog/claude-n8n-automation",
     siteName: "IImagined.ai",
     images: [
       {
@@ -68,10 +67,6 @@ export default function ClaudeN8NAutomationBlogPost() {
     title: "Claude N8N Automation: Anthropic AI Workflows (2026)",
     description:
       "Claude captures 32% enterprise market share, beating OpenAI. Learn how to automate workflows with Claude API and N8N—92% coding accuracy, 30-hour autonomous operation.",
-    url: "https://iimagined.ai/blog/claude-n8n-automation",
-    datePublished: "2025-11-17",
-    dateModified: "2025-11-17",
-    authorName: "Anyro",
   });
 
   return (

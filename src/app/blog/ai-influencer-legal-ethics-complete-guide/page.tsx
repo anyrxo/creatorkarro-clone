@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "AI Influencer Legal & Ethics: Complete Compliance Guide 2026",
     description: "FTC rules, copyright law, platform policies, and ethical boundaries for AI influencers.",
-    url: "https://iimagined.ai/blog/ai-influencer-legal-ethics-complete-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T15:00:00.000Z",

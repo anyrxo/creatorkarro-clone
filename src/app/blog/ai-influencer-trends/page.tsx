@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Influencer Trends 2026: $15B Virtual Creator Market Analysis",
     description: "7 game-changing AI influencer trends reshaping social media. Hyper-realistic avatars, interactive personalities, and $10M+ revenue potential.",
-    url: "https://iimagined.ai/blog/ai-influencer-trends",
     siteName: "IImagined.ai",
     locale: "en_US",
     type: "article",
@@ -357,8 +356,6 @@ export default function AIInfluencerTrendsPage() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2026-01-15T10:00:00.000Z',
-    dateModified: '2026-01-15T10:00:00.000Z',
     image: 'https://iimagined.ai/images/ai-influencer-trends-og.jpg',
     articleSection: 'AI Influencers',
     keywords: 'ai influencer trends, virtual influencer, ai creator, virtual creator trends, ai influencer market'

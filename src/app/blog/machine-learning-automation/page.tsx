@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Machine Learning Automation: Complete Guide & Expert",
     description: "Complete guide to machine learning automation - proven strategies, tools, and techniques for 2026",
-    url: "https://iimagined.ai/blog/machine-learning-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

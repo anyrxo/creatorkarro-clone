@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     title: "Agentic AI Workflows: Autonomous Systems That Think (2026)",
     description:
       "40% of enterprise apps will have AI agents by 2026. 79% already adopting. Learn how to build agentic AI workflows that autonomously plan, decide, and execute—171% average ROI.",
-    url: "https://iimagined.ai/blog/agentic-ai-workflows",
     siteName: "IImagined.ai",
     images: [
       {

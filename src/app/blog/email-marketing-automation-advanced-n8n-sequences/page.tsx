@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Email Marketing Automation with N8N 2026: 10 Advanced Sequences (40% Open Rate)",
     description: "10 advanced n8n email automation workflows achieving 40%+ open rates. Copy-paste workflows, real case studies, complete setup guide.",
-    url: "https://iimagined.ai/blog/email-marketing-automation-advanced-n8n-sequences",
     siteName: "IImagined.ai",
     locale: "en_US",
     type: "article",
@@ -838,8 +837,6 @@ export default function EmailMarketingAutomationPage() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2026-02-25T10:00:00.000Z',
-    dateModified: '2026-02-25T10:00:00.000Z',
     image: 'https://iimagined.ai/images/blog/email-marketing-automation-advanced-n8n-sequences-og.jpg',
     articleSection: 'Email Marketing',
     keywords: 'email marketing automation, n8n email automation, automated email sequences, n8n workflows'

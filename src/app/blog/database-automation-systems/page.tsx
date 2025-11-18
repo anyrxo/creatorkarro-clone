@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Database Automation Systems: Complete Guide & Expert",
     description: "Complete guide to database automation systems - proven strategies, tools, and techniques for 2026",
-    url: "https://iimagined.ai/blog/database-automation-systems",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

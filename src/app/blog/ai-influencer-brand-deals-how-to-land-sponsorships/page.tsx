@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "AI Influencer Brand Deals: Land $500-$50K Sponsorships",
     description: "Outreach templates, pricing strategies, and negotiation tactics that landed real $3K-$50K deals for AI influencers.",
-    url: "https://iimagined.ai/blog/ai-influencer-brand-deals-how-to-land-sponsorships",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T13:00:00.000Z",

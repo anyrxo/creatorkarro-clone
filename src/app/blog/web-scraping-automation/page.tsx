@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Web Scraping Automation: Complete 2026 Guide to Data Extraction at Scale",
     description: "Master web scraping automation with Playwright, anti-detection strategies, and systems that extract millions of data points automatically while staying compliant.",
-    url: "https://iimagined.ai/blog/web-scraping-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

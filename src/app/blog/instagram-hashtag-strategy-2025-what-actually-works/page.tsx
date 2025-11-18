@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "Instagram Hashtag Strategy 2026: What Actually Works (Data-Backed)",
     description: "The Instagram hashtag algorithm changed. Discover the new hashtag strategy that's generating 10K+ followers for creators in 2026. Size doesn't matter anymore.",
-    url: "https://iimagined.ai/blog/instagram-hashtag-strategy-2025-what-actually-works",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-21T10:00:00.000Z",

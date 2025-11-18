@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Best Automation Tools 2026: N8N vs Zapier vs Make.com - Complete Comparison",
     description: "Expert comparison of N8N, Zapier & Make.com. Pricing, features, AI capabilities & use cases tested by 127K+ students.",
-    url: "https://iimagined.ai/blog/best-automation-tools-2025-n8n-vs-zapier-vs-make",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-30T10:00:00.000Z",

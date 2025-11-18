@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "RSI Trading Strategy 2026: Complete Guide to Mastering Relative Strength Index",
     description: "Master RSI indicator trading with proven strategies. Learn RSI divergence, overbought/oversold signals, hidden divergence, and advanced techniques for 65%+ win rates.",
-    url: "https://iimagined.ai/blog/rsi-trading-strategy-complete-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",

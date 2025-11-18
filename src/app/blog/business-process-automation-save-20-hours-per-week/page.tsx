@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Business Process Automation: Save 20+ Hours Per Week",
     description: "business process automation, automate business, workflow automation - Expert guide from the creators of N8N AI Automations",
-    url: "https://iimagined.ai/blog/business-process-automation-save-20-hours-per-week",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-15T10:00:00.000Z",

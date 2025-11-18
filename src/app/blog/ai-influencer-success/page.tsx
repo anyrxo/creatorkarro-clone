@@ -34,7 +34,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Influencer Success 2026: Build Virtual Personas Earning $5K-15K/Month",
     description: "Master AI influencer creation. ComfyUI workflows, character consistency, monetization strategies, and case studies from creators earning $5K-15K/month.",
-    url: "https://iimagined.ai/blog/ai-influencer-success",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

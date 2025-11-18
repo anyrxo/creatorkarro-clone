@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Scale Content Creation to 100+ Posts/Month: Complete 2026 System",
     description: "Proven strategies to scale content creation using AI, batching, and automation. Create 100+ posts monthly in just hours.",
-    url: "https://iimagined.ai/blog/scale-content-creation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Instagram Reels Guide: Create Viral Content in 2026",
     description: "Instagram Reels Guide strategies that work - proven tactics for growth, engagement, and monetization in 2026",
-    url: "https://iimagined.ai/blog/instagram-reels-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

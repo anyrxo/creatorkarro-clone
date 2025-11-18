@@ -34,7 +34,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Make App Automation: Complete Workflow Builder Guide 2026",
     description: "Master Make.com (formerly Integromat) with this complete guide to visual workflow automation, scenarios, routers, and advanced techniques for 2026.",
-    url: "https://iimagined.ai/blog/make-app-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

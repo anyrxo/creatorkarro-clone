@@ -40,7 +40,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Roocode V3.3 vs Cline 2026: Complete AI Coding Assistant Comparison",
     description: "Master Roocode V3.3 as the leading Cline alternative for 2026. Compare features, performance, pricing, and see real case studies showing 40-65% faster development.",
-    url: "https://iimagined.ai/blog/roocode-v3-3-cline-alternative",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

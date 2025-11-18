@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sell Digital Products on Etsy: Complete 2026 Success Guide with Revenue Models",
     description: "Master Etsy digital products in 2026. Comprehensive guide covering best-selling niches, SEO optimization, platform comparisons, cost analysis, and realistic revenue timelines.",
-    url: "https://iimagined.ai/blog/sell-digital-products-on-etsy-complete-success-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-22T10:00:00.000Z",

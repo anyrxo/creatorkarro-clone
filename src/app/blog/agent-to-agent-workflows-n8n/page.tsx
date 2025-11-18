@@ -26,7 +26,6 @@ export const metadata = {
   openGraph: {
     title: "Agent-to-Agent Workflows: The N8N Feature That Changes Everything",
     description: "Multi-agent collaboration improves speed by 45% and accuracy by 60%. Learn to build agent-to-agent workflows with N8N. Complete 2026 guide with examples.",
-    url: "https://iimagined.ai/blog/agent-to-agent-workflows-n8n",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-16T00:00:00.000Z",
