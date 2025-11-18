@@ -98,7 +98,7 @@ const schema = generateBlogPostSchema({
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-400 mb-8">
-              How Amanda Rivera used <span className="text-white font-semibold">Instagram Ignited</span> to build a $15K/month business in just 8 months
+              How Emma Williams used <span className="text-white font-semibold">Instagram Ignited</span> to build a $15K/month business in just 8 months
                 </p>
 
                 
@@ -136,14 +136,14 @@ const schema = generateBlogPostSchema({
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
                 <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              When Amanda Rivera joined Instagram Ignited, she had just 800 followers and was struggling to get her content seen. Today, she's sitting at 125K engaged followers, making $15K/month through sponsored posts and digital products. Here's her complete transformation story.
+              When Emma Williams joined Instagram Ignited, she had just 800 followers and was struggling to get her content seen. Today, she's sitting at 125K engaged followers, making $15K/month through sponsored posts and digital products. Here's her complete transformation story.
                 </p>
 
                 <h2 className="text-3xl font-bold text-white mb-6">The Starting Point: Struggling Content Creator</h2>
             
                 <div className="bg-zinc-900 rounded-2xl p-8 mb-8">
                     <p className="text-gray-300 mb-6">
-                Amanda joined Instagram Ignited feeling overwhelmed by the platform. Like many creators, she was:
+                Emma joined Instagram Ignited feeling overwhelmed by the platform. Like many creators, she was:
                     </p>
               
                     <div className="grid md:grid-cols-2 gap-6">
@@ -183,7 +183,7 @@ const schema = generateBlogPostSchema({
                     <div className="mt-8 p-6 bg-zinc-800 rounded-xl">
                         <p className="text-gray-300 italic">"I was ready to give up on Instagram. I'd watch other creators blow up overnight while I couldn't even break 50 likes on my posts. That's when I found Anyro's Instagram Ignited program."
                         </p>
-                        <p className="text-purple-400 mt-4 font-semibold">- Amanda Rivera</p>
+                        <p className="text-purple-400 mt-4 font-semibold">- Emma Williams</p>
                     </div>
                 </div>
 
@@ -255,7 +255,7 @@ const schema = generateBlogPostSchema({
                 <div className="space-y-8 mb-8">
                     <div className="bg-zinc-900 rounded-xl p-6">
                         <h3 className="text-xl font-bold text-white mb-3">Month 1: Foundation & Niche Clarity</h3>
-                        <p className="text-gray-300 mb-4">The first breakthrough came when Amanda used the Niche OS module:</p>
+                        <p className="text-gray-300 mb-4">The first breakthrough came when Emma used the Niche OS module:</p>
                         <div className="grid md:grid-cols-2 gap-4">
                             <div className="bg-zinc-800 rounded-lg p-4">
                                 <div className="text-purple-400 font-semibold mb-1">Specific Audience</div>
@@ -276,7 +276,7 @@ const schema = generateBlogPostSchema({
               
                     <div className="bg-zinc-900 rounded-xl p-6">
                         <h3 className="text-xl font-bold text-white mb-3">Months 2-3: Content Mastery</h3>
-                        <p className="text-gray-300 mb-4">Amanda implemented the Instagram OS framework:</p>
+                        <p className="text-gray-300 mb-4">Emma implemented the Instagram OS framework:</p>
                         <ul className="space-y-2 text-gray-300">
                             <li>✓ <span className="text-white font-semibold">Viral Carousel Templates:</span> Used proven designs that hit 10K+ likes</li>
                             <li>✓ <span className="text-white font-semibold">Hook Psychology:</span> Applied emotional triggers that stop scrolling</li>
@@ -292,7 +292,7 @@ const schema = generateBlogPostSchema({
               
                     <div className="bg-zinc-900 rounded-xl p-6">
                         <h3 className="text-xl font-bold text-white mb-3">Months 4-8: Scaling to 6 Figures</h3>
-                        <p className="text-gray-300 mb-4">With 25K engaged followers, Amanda implemented monetization:</p>
+                        <p className="text-gray-300 mb-4">With 25K engaged followers, Emma implemented monetization:</p>
                         <div className="space-y-3">
                             <div className="flex justify-between">
                                 <div>
@@ -557,7 +557,7 @@ const schema = generateBlogPostSchema({
                         <div className="flex-1">
                             <h3 className="text-xl font-bold text-white mb-3">Consistency Beats Perfection Every Time</h3>
                             <p className="text-gray-300 mb-4">
-                                Every successful student prioritized posting consistently over creating "perfect" content. Amanda posted 5x per week for 8 months straight, even when posts didn't perform well initially. The algorithm rewards consistency above all else.
+                                Every successful student prioritized posting consistently over creating "perfect" content. Emma posted 5x per week for 8 months straight, even when posts didn't perform well initially. The algorithm rewards consistency above all else.
                             </p>
                             <div className="bg-zinc-800 rounded-lg p-4">
                                 <p className="text-sm text-purple-400 font-semibold mb-2">Key Takeaway:</p>
@@ -621,7 +621,7 @@ const schema = generateBlogPostSchema({
                         <div className="flex-1">
                             <h3 className="text-xl font-bold text-white mb-3">Monetization Requires Strategy, Not Just Followers</h3>
                             <p className="text-gray-300 mb-4">
-                                Many creators wait until 100K followers to monetize. Amanda started selling at 5K followers and made her first $2,400 that month. The Instagram Ignited monetization framework showed her how to create offers her audience actually wanted.
+                                Many creators wait until 100K followers to monetize. Emma started selling at 5K followers and made her first $2,400 that month. The Instagram Ignited monetization framework showed her how to create offers her audience actually wanted.
                             </p>
                             <div className="bg-zinc-800 rounded-lg p-4">
                                 <p className="text-sm text-orange-400 font-semibold mb-2">Key Takeaway:</p>
@@ -729,7 +729,7 @@ const schema = generateBlogPostSchema({
                 <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full"></div>
                     <div>
-                        <div className="text-white font-semibold">Amanda Rivera</div>
+                        <div className="text-white font-semibold">Emma Williams</div>
                         <div className="text-gray-400">Instagram Ignited Success Story</div>
                     </div>
                 </div>

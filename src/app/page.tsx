@@ -131,7 +131,7 @@ export default function HomePage() {
 
   const testimonials = [
     {
-      name: "Amanda Rivera",
+      name: "Emma Williams",
       role: "Content Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=32",

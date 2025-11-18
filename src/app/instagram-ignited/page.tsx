@@ -1612,7 +1612,7 @@ CLAIM INSTAGRAM IGNITED NOW - $399
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto mb-16">
             {[
               {
-                name: "Amanda Rivera",
+                name: "Emma Williams",
                 role: "Content Creator • 125K Followers",
                 avatar: "https://i.pravatar.cc/150?img=32",
                 content: "Went from 847 followers to 52,000 in 67 days. Landed my first $3,200 brand deal in month 2. This system is INSANE. The engagement went from 15 likes to thousands per post."
