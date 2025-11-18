@@ -457,7 +457,7 @@ export default function DatabaseAutomationSystems() {
                 </div>
                 <div className="bg-zinc-900 p-4 rounded">
                   <p className="font-semibold text-white mb-2">Index Bloat Management:</p>
-                  <p className="text-sm">Detect fragmented B-tree indexes (>40% bloat). Schedule REINDEX during low-traffic windows to reclaim space.</p>
+                  <p className="text-sm">Detect fragmented B-tree indexes ({'>'}40% bloat). Schedule REINDEX during low-traffic windows to reclaim space.</p>
                 </div>
               </div>
             </div>

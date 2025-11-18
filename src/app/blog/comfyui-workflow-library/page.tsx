@@ -520,7 +520,7 @@ export default function ComfyUIWorkflowLibrary() {
                     <div className="flex items-start gap-3">
                         <span className="text-green-400 mt-1">•</span>
                         <div>
-                            <strong className="text-white">Implement img2img:</strong> Replace EmptyLatentImage with LoadImage → VAEEncode, set denoise <1.0
+                            <strong className="text-white">Implement img2img:</strong> Replace EmptyLatentImage with LoadImage → VAEEncode, set denoise {'<'}1.0
                         </div>
                     </div>
                     <div className="flex items-start gap-3">
