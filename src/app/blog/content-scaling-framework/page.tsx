@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Content Scaling Framework: Complete Guide & Expert",
     description: "Content Scaling Framework - comprehensive strategies, tools, and techniques for 2026",
+    url: "https://iimagined.ai/blog/content-scaling-framework",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

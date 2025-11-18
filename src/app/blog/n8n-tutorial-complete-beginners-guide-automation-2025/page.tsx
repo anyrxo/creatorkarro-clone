@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "N8N Tutorial 2026: Complete Beginner's Guide to Workflow Automation",
     description: "Master N8N from scratch. Installation, nodes, AI integrations & real workflows tested by 127K+ students.",
+    url: "https://iimagined.ai/blog/n8n-tutorial-complete-beginners-guide-automation-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-01T10:00:00.000Z",

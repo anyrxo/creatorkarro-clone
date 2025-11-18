@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Faceless Content Strategy: Complete Guide & Expert",
     description: "Faceless Content Strategy - comprehensive strategies, tools, and techniques for 2026",
+    url: "https://iimagined.ai/blog/faceless-content-strategy",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

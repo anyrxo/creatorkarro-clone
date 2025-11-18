@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ComfyUI vs FLUX vs Midjourney 2026: Ultimate AI Art Tool Comparison",
     description: "Complete comparison of ComfyUI, FLUX.1, Stable Diffusion 3.5, Midjourney v7, and Automatic1111 for creators. Real benchmarks, cost analysis, and workflow examples.",
+    url: "https://iimagined.ai/blog/comfyui-comparison",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

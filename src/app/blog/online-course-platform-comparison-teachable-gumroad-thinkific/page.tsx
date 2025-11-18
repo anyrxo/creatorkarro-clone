@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Online Course Platform Comparison 2026: Teachable vs Gumroad vs Thinkific",
     description: "course platform comparison, teachable vs gumroad, best course platform - Expert guide from Digital Products Mastery",
+    url: "https://iimagined.ai/blog/online-course-platform-comparison-teachable-gumroad-thinkific",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-10-29T11:00:00.000Z",

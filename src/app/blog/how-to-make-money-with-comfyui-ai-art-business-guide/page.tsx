@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Make Money with ComfyUI 2026: $2K-12K/Month AI Art Business Blueprint",
     description: "Master ComfyUI monetization with 8 proven income streams, batch workflows, and real case studies. Scale from $500 to $12K/month.",
+    url: "https://iimagined.ai/blog/how-to-make-money-with-comfyui-ai-art-business-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-25T10:00:00.000Z",

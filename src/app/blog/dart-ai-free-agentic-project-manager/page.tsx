@@ -38,6 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dart AI Free Agentic Project Manager: Complete Guide 2026 | AI-Powered Task Management",
     description: "Master Dart AI, the free agentic project manager for 2026. Learn AI-powered task breakdown, natural language commands, smart scheduling, and advanced workflows that teams use to 3x productivity.",
+    url: "https://iimagined.ai/blog/dart-ai-free-agentic-project-manager",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

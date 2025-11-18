@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Digital Product Validation: Test Your Idea Before Building (2026 Guide)",
     description: "digital product validation, validate product idea, pre-sell validation, MVP testing - Expert guide from Digital Products Mastery",
+    url: "https://iimagined.ai/blog/digital-product-validation-test-idea-before-building",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-10-29T10:00:00.000Z",

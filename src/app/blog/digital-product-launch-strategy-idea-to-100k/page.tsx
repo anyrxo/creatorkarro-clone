@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Digital Product Launch Strategy: From Idea to $100K",
     description: "digital product launch, product launch strategy, digital product marketing - Expert guide from the creators of Digital Products Mastery",
+    url: "https://iimagined.ai/blog/digital-product-launch-strategy-idea-to-100k",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-03T10:00:00.000Z",

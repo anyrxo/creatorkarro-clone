@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Email Marketing Mastery 2026: Build $10K/Month Campaigns That Convert",
     description: "Master email marketing with AI-powered tools, proven sequences, and automation strategies for $127K+ annual revenue.",
+    url: "https://iimagined.ai/blog/email-marketing-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

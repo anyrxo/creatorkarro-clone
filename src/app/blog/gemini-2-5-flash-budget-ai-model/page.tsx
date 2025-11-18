@@ -35,6 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gemini 2.5 Flash: Budget AI Model Guide 2026 | Fast, Cheap, and Powerful",
     description: "Master Gemini 2.5 Flash, Google's budget AI model. Lightning-fast, cost-effective multimodal AI for real-time applications at 80% lower cost than GPT-4.",
+    url: "https://iimagined.ai/blog/gemini-2-5-flash-budget-ai-model",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

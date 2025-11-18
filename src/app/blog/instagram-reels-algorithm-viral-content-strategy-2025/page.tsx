@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Instagram Reels Algorithm: Viral Content Strategy 2026",
     description: "instagram reels algorithm, viral reels, reels strategy - Expert guide from the creators of Instagram Ignited",
+    url: "https://iimagined.ai/blog/instagram-reels-algorithm-viral-content-strategy-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-05T10:00:00.000Z",

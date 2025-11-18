@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Instagram Monetization Beyond Sponsored Posts: 10 Revenue Streams in 2026",
     description: "Discover 10 proven Instagram monetization strategies beyond sponsored posts. Learn how to make $21,500/month with 48K followers through diversified income streams.",
+    url: "https://iimagined.ai/blog/instagram-monetization-beyond-sponsored-posts-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-24T10:00:00.000Z",

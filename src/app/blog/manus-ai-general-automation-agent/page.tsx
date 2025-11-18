@@ -40,6 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Manus AI General Automation Agent 2026: Automate 50+ Business Workflows with No-Code",
     description: "Master Manus AI, the general-purpose automation agent. Build custom AI agents for customer support, data entry, research, and more. Save 15-40 hours/week per employee.",
+    url: "https://iimagined.ai/blog/manus-ai-general-automation-agent",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

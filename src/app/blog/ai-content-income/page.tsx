@@ -19,6 +19,7 @@ export const metadata = {
   openGraph: {
     title: "AI Content Income: $5,847/Month Working 3 Hours Daily Case Study",
     description: "Full breakdown of AI content monetization: 7 income streams, tools, and strategies",
+    url: "https://iimagined.ai/blog/ai-content-income",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T10:00:00.000Z",
@@ -82,6 +83,8 @@ function generateBlogPostSchema() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
+    datePublished: '2026-01-22T10:00:00.000Z',
+    dateModified: new Date().toISOString(),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://iimagined.ai/blog/ai-content-income'

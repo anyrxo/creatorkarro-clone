@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "AI SEO Content Optimization: Complete Guide & Expert",
     description: "AI SEO Content Optimization comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+    url: "https://iimagined.ai/blog/ai-seo-content-optimization",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Digital Product Pricing Strategy: Maximize Your Revenue",
     description: "digital product pricing, pricing strategy, digital product revenue - Expert guide from the creators of Digital Products Mastery",
+    url: "https://iimagined.ai/blog/digital-product-pricing-strategy-maximize-revenue",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-25T10:00:00.000Z",

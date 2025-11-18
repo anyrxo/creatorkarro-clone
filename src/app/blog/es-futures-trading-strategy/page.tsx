@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "ES Futures Trading Strategy: Proven E-mini S&P 500 Techniques",
     description: "Master ES futures trading with proven strategies. Learn order flow, volume profile, and institutional setups to trade E-mini S&P 500 profitably.",
+    url: "https://iimagined.ai/blog/es-futures-trading-strategy",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",

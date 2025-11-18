@@ -20,6 +20,7 @@ export const metadata = {
   openGraph: {
     title: "N8N CRM Automation 2026: Pipedrive, HubSpot, Salesforce",
     description: "Complete CRM automation with N8N - lead capture, scoring, pipeline automation, email sequences. Save 15+ hours per week.",
+    url: "https://iimagined.ai/blog/n8n-crm-automation-pipedrive-hubspot-salesforce",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-15T12:00:00.000Z",

@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Trading Psychology: Master Your Emotions for Consistent Profits",
     description: "Master trading psychology to overcome fear, greed, and revenge trading. Learn proven mental strategies used by professional traders to stay disciplined.",
+    url: "https://iimagined.ai/blog/trading-psychology-master-your-emotions",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",

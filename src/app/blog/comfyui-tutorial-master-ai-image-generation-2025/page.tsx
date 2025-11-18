@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ComfyUI Tutorial: Master AI Image Generation 2026 | Complete Guide",
     description: "Master ComfyUI with this complete tutorial. Learn installation, workflows, node-based generation, and real case studies from professionals making $10K+/month.",
+    url: "https://iimagined.ai/blog/comfyui-tutorial-master-ai-image-generation-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-12T10:00:00.000Z",

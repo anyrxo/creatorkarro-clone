@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "AI Image Generation for Influencers: Professional Guide",
     description: "ai image generation, ai images for influencers, ai photography - Expert guide from the creators of AI Influencers Academy",
+    url: "https://iimagined.ai/blog/ai-image-generation-for-influencers-professional-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-25T10:00:00.000Z",

@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "How to Get 10K Instagram Followers Fast: Expert Guide",
     description: "get instagram followers, 10k followers, instagram growth - Expert guide from the creators of Instagram Ignited",
+    url: "https://iimagined.ai/blog/how-to-get-10k-instagram-followers-fast",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-25T10:00:00.000Z",

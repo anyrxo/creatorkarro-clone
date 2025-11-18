@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "MACD Indicator: Complete Trading Strategy Guide 2026",
     description: "Master MACD indicator trading with this complete guide. Learn MACD crossover strategies, divergence trading, and histogram analysis for profitable trades.",
+    url: "https://iimagined.ai/blog/macd-indicator-trading-strategy",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",

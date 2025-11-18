@@ -37,6 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HR Automation Systems: Complete Guide 2026 | Recruiting, Payroll & Performance Management",
     description: "Master HR automation systems in 2026. Automate recruiting, onboarding, payroll, performance reviews, and employee engagement—saving 20+ hours/week while improving employee experience.",
+    url: "https://iimagined.ai/blog/hr-automation-systems",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

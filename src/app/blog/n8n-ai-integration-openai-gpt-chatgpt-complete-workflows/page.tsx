@@ -22,6 +22,7 @@ export const metadata = {
   openGraph: {
     title: "N8N AI Integration 2026: OpenAI GPT & ChatGPT Complete Workflows",
     description: "Complete AI automation with N8N and OpenAI - content generation, customer support, data analysis. Save $12K/month on writing costs.",
+    url: "https://iimagined.ai/blog/n8n-ai-integration-openai-gpt-chatgpt-complete-workflows",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-16T10:00:00.000Z",

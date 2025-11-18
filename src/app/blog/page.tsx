@@ -124,7 +124,7 @@ export default function BlogPage() {
   const displayCategories = ['All', ...categories]
 
   return (
-    <div className="min-h-screen bg-dark w-full overflow-x-hidden">
+    <div className="min-h-screen bg-dark">
       {/* MAGICAL HEADER */}
       <section className="relative py-20 px-4 overflow-hidden">
         <HeroBackground variant="default" />
@@ -187,10 +187,37 @@ export default function BlogPage() {
                 </div>
               </div>
             </ScrollAnimation>
+
+            {/* Popular Categories Quick Stats */}
+            <ScrollAnimation animation="fade-up" delay={700}>
+              <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                {[
+                  {name: 'AI Influencers', count: allBlogPosts.filter(p => p.category === 'AI Influencers').length, gradient: 'from-purple-500 to-pink-500', icon: '🤖'},
+                  {name: 'Instagram Growth', count: allBlogPosts.filter(p => p.category === 'Instagram Growth').length, gradient: 'from-pink-500 to-rose-500', icon: '📸'},
+                  {name: 'AI Automation', count: allBlogPosts.filter(p => p.category === 'AI Automation').length, gradient: 'from-blue-500 to-cyan-500', icon: '⚡'},
+                  {name: 'Futures Trading', count: allBlogPosts.filter(p => p.category === 'Futures Trading').length, gradient: 'from-green-500 to-emerald-500', icon: '📈'},
+                ].filter(cat => cat.count > 0).map((cat, idx) => (
+                  <button
+                    key={cat.name}
+                    onClick={() => updateCategory(cat.name)}
+                    className={`group relative bg-zinc-900/60 backdrop-blur-sm border border-zinc-700/50 rounded-xl p-4 hover:border-zinc-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ${selectedCategory === cat.name ? 'ring-2 ring-blue-500/50' : ''}`}
+                  >
+                    <div className="text-center">
+                      <div className="text-3xl mb-2">{cat.icon}</div>
+                      <div className={`text-2xl font-bold bg-gradient-to-r ${cat.gradient} bg-clip-text text-transparent mb-1`}>
+                        {cat.count}
+                      </div>
+                      <div className="text-xs text-zinc-400 font-medium">{cat.name}</div>
+                    </div>
+                    <div className={`absolute inset-0 bg-gradient-to-r ${cat.gradient} opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-300`}></div>
+                  </button>
+                ))}
+              </div>
+            </ScrollAnimation>
           </div>
 
           {/* Category Filters */}
-          <ScrollAnimation animation="fade-up" delay={700}>
+          <ScrollAnimation animation="fade-up" delay={800}>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
               {displayCategories.map((category, index) => (
                 <ScrollAnimation 
@@ -216,30 +243,42 @@ export default function BlogPage() {
             </div>
           </ScrollAnimation>
 
-          {/* Search Box */}
-          <ScrollAnimation animation="fade-up" delay={800}>
-            <div className="w-full flex justify-center mb-8">
+          {/* Search Box with Gradient Flow Effect - Positioned Below Filters */}
+          <ScrollAnimation animation="fade-up" delay={1000}>
+            <div className="w-full flex justify-center mb-12">
               <div className="relative w-full max-w-2xl">
-                <div className="relative bg-zinc-900/60 backdrop-blur-sm rounded-xl border border-zinc-700/50 focus-within:border-blue-500/50 transition-all">
-                  <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-zinc-400 w-5 h-5 pointer-events-none" />
-                  <input
-                    ref={searchInputRef}
-                    type="text"
-                    placeholder="Search articles..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-12 pr-4 py-3 bg-transparent text-white placeholder-zinc-500 focus:outline-none rounded-xl"
-                    aria-label="Search blog articles"
-                  />
-                  {searchTerm && (
-                    <button
-                      onClick={() => setSearchTerm('')}
-                      className="absolute right-3 top-1/2 transform -translate-y-1/2 text-zinc-400 hover:text-white text-xl w-6 h-6 flex items-center justify-center"
-                      aria-label="Clear search"
-                    >
-                      ×
-                    </button>
-                  )}
+                <div className="relative group">
+                  {/* Gradient background that shows on focus */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 blur-sm z-0 pointer-events-none"></div>
+                  
+                  {/* Search input container */}
+                  <div className="relative bg-zinc-900/90 backdrop-blur-sm rounded-xl border border-zinc-700/50 group-focus-within:border-transparent transition-all duration-300 z-10">
+                    <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-zinc-400 group-focus-within:text-blue-400 w-6 h-6 z-20 transition-colors duration-300 pointer-events-none" />
+                    <input
+                      ref={searchInputRef}
+                      type="text"
+                      placeholder="Search articles, topics, or tags..."
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="relative w-full pl-16 pr-24 py-5 bg-transparent text-white placeholder-zinc-400 focus:outline-none text-lg rounded-xl z-30"
+                      aria-label="Search blog articles by title, description, or tags"
+                    />
+                    <kbd className="absolute right-4 top-1/2 transform -translate-y-1/2 px-3 py-1.5 text-xs font-medium bg-zinc-800/60 border border-zinc-600/50 rounded-lg text-zinc-400 pointer-events-none z-20 whitespace-nowrap">
+                      Cmd+K
+                    </kbd>
+                    {searchTerm && (
+                      <button
+                        onClick={() => setSearchTerm('')}
+                        className="absolute right-5 top-1/2 transform -translate-y-1/2 text-zinc-400 hover:text-white transition-colors duration-200 text-xl font-light w-8 h-8 flex items-center justify-center rounded-full hover:bg-zinc-700/50 z-20 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+                        aria-label="Clear search"
+                      >
+                        ×
+                      </button>
+                    )}
+                  </div>
+                  
+                  {/* Animated gradient border */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl opacity-0 group-focus-within:opacity-20 transition-opacity duration-500 z-0 pointer-events-none"></div>
                 </div>
               </div>
             </div>
@@ -371,12 +410,15 @@ export default function BlogPage() {
 
           {/* All Posts with Beautiful Grid Layout */}
           <div className="mb-8">
-              <div className="flex items-center justify-between mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-white">
-                  {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory}` : 'All Articles'}
+              <div className="flex items-center gap-3 mb-8">
+                <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  {searchTerm ? 'Search Results' : selectedCategory !== 'All' ? `${selectedCategory} Articles` : (featuredPosts.length > 0 && searchTerm === '' ? 'All Articles' : 'All Articles')}
                 </h2>
-                <div className="text-sm text-zinc-400">
-                  <NumberTicker value={filteredPosts.length} className="text-blue-400 font-semibold" /> of {allBlogPosts.length}
+                <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full border border-blue-500/30 backdrop-blur-sm">
+                  <span className="text-sm font-semibold text-blue-300">
+                    <NumberTicker value={filteredPosts.length} className="text-lg font-bold text-blue-400" />
+                    <span className="ml-1 text-blue-300">of {allBlogPosts.length} articles</span>
+                  </span>
                 </div>
               </div>
               
@@ -400,7 +442,13 @@ export default function BlogPage() {
                   </div>
                 </div>
               ) : (
-                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <>
+                  {/* Articles count */}
+                  <div className="text-center mb-6 text-zinc-400 text-sm font-medium">
+                    Showing {filteredPosts.length} articles
+                  </div>
+                  
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {(filteredPosts.length > 0 ? filteredPosts : allBlogPosts.slice(0, 12)).map((post, index) => {
                       // Category-specific color schemes
                       const categoryColors: Record<string, {bg: string, border: string, text: string, hover: string, gradient: string}> = {
@@ -530,7 +578,9 @@ export default function BlogPage() {
                       </article>
                     )}
                   )}
+                  
                 </div>
+                </>
               )}
             </div>
 

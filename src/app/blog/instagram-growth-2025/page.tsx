@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Instagram Growth Strategies That Actually Work in 2026",
     description: "Latest tactics and techniques to grow your Instagram following organically - proven methods used by top creators",
+    url: "https://iimagined.ai/blog/instagram-growth-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",

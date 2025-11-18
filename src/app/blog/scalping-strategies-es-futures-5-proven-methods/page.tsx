@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "5 Proven ES Futures Scalping Strategies 2026 | Complete Entry/Exit Rules",
     description: "Master ES scalping with 5 proven strategies: Opening Range Breakout, VWAP Bounce, Market Profile, Volume Spike, and Fibonacci scalps.",
+    url: "https://iimagined.ai/blog/scalping-strategies-es-futures-5-proven-methods",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-23T09:00:00.000Z",

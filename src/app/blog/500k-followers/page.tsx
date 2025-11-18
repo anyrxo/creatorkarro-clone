@@ -17,6 +17,7 @@ export const metadata = {
   openGraph: {
     title: "0 to 500K Instagram Followers: The Complete Blueprint 2026",
     description: "How successful creators build 500K followers and $15K/month in 10 months with proven Instagram strategies",
+    url: "https://iimagined.ai/blog/500k-followers",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-18T10:00:00.000Z",

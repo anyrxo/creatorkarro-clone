@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "TikTok Growth Hacks: Viral Content Strategies for 2026",
     description: "TikTok Growth Hacks - comprehensive strategies, tools, and techniques for 2026",
+    url: "https://iimagined.ai/blog/tiktok-growth-hacks",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

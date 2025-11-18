@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Sales Page Psychology: Complete Guide & Expert Strategies",
     description: "Sales Page Psychology - comprehensive strategies, tools, and techniques for 2026",
+    url: "https://iimagined.ai/blog/sales-page-psychology",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

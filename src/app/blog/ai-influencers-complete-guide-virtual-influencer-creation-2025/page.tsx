@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "AI Influencers: Complete Guide to Virtual Influencer",
     description: "ai influencers, virtual influencers, ai instagram influencer - Expert guide from the creators of AI Influencers Academy",
+    url: "https://iimagined.ai/blog/ai-influencers-complete-guide-virtual-influencer-creation-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-25T10:00:00.000Z",

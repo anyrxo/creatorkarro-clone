@@ -40,6 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Composer Agent 2026: Full-Stack AI Coding with Claude - Build Apps 10x Faster",
     description: "Master Composer Agent by Cursor. AI coding tool that generates full-stack applications autonomously using Claude Sonnet. Build production apps in hours, not weeks.",
+    url: "https://iimagined.ai/blog/composer-agent-code-llm-full-stack",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-30T10:00:00.000Z",

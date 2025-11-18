@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "FTMO vs Topstep: Ultimate Prop Firm Showdown 2026",
     description: "FTMO vs Topstep detailed comparison. Compare evaluation processes, profit splits, trading rules, and payout speeds to find the best funded trading program.",
+    url: "https://iimagined.ai/blog/ftmo-vs-topstep-prop-firm-review",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",

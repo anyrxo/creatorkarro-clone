@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "YouTube Shorts Strategy: Complete Guide & Expert Strategies",
     description: "YouTube Shorts Strategy strategies that work - proven tactics for growth, engagement, and monetization in 2026",
+    url: "https://iimagined.ai/blog/youtube-shorts-strategy",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "How to Create Digital Products That Sell: Complete 2026",
     description: "create digital products, digital product ideas, sell digital products - Expert guide from the creators of Digital Products Mastery",
+    url: "https://iimagined.ai/blog/how-to-create-digital-products-that-sell-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-03T10:00:00.000Z",

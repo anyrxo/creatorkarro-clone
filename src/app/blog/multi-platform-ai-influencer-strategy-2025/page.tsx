@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Multi-Platform AI Influencer Strategy: 500K Followers Playbook",
     description: "Master Instagram, TikTok, YouTube, and Twitter with optimized content adaptation and cross-promotion strategies.",
+    url: "https://iimagined.ai/blog/multi-platform-ai-influencer-strategy-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T14:00:00.000Z",

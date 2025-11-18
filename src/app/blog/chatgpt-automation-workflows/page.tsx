@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "ChatGPT Automation Workflows: Complete Guide & Expert",
     description: "Complete guide to chatgpt automation workflows - proven strategies, tools, and techniques for 2026",
+    url: "https://iimagined.ai/blog/chatgpt-automation-workflows",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

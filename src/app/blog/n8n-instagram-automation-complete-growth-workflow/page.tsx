@@ -22,6 +22,7 @@ export const metadata = {
   openGraph: {
     title: "N8N Instagram Automation 2026: Complete Growth Workflow",
     description: "Complete Instagram automation with N8N - auto-posting, DM automation, comment monitoring, analytics tracking. Agency case study included.",
+    url: "https://iimagined.ai/blog/n8n-instagram-automation-complete-growth-workflow",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-15T11:00:00.000Z",

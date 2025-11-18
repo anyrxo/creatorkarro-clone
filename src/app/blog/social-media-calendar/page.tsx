@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Social Media Calendar: Complete Guide & Expert Strategies",
     description: "Social Media Calendar strategies that work - proven tactics for growth, engagement, and monetization in 2026",
+    url: "https://iimagined.ai/blog/social-media-calendar",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

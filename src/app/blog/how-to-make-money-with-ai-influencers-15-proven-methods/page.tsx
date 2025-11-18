@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "How to Make Money with AI Influencers: 15 Proven Methods",
     description: "make money ai influencers, ai influencer income, monetize virtual influencers - Expert guide from the creators of AI Influencers Academy",
+    url: "https://iimagined.ai/blog/how-to-make-money-with-ai-influencers-15-proven-methods",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-25T10:00:00.000Z",

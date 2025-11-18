@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "N8N Database Automation: Automate Your Data Workflows",
     description: "n8n database automation, database workflows, automated data processing - Expert guide from the creators of N8N AI Automations",
+    url: "https://iimagined.ai/blog/n8n-database-automation-automate-data-workflows",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-10T10:00:00.000Z",

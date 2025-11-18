@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Virtual Influencer Marketing Strategy: Dominate Social Media",
     description: "virtual influencer marketing, ai marketing strategy, virtual influencer campaigns - Expert guide from the creators of AI Influencers Academy",
+    url: "https://iimagined.ai/blog/virtual-influencer-marketing-strategy-dominate-social-media",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-20T10:00:00.000Z",

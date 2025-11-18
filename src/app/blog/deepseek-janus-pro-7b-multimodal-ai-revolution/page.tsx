@@ -40,6 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DeepSeek Janus Pro 7B Multimodal AI Revolution 2026: Vision + Language Model Guide",
     description: "Master DeepSeek Janus Pro 7B, the open-source multimodal AI revolutionizing vision-language tasks. Complete guide to image understanding, OCR, visual reasoning, and deployment strategies for automating document processing.",
+    url: "https://iimagined.ai/blog/deepseek-janus-pro-7b-multimodal-ai-revolution",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

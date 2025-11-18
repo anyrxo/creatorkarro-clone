@@ -17,6 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Monetize With AI: Complete Income Generation Guide 2026",
     description: "Monetize With AI comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
+    url: "https://iimagined.ai/blog/monetize-with-ai",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

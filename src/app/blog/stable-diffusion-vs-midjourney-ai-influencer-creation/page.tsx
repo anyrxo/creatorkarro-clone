@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Stable Diffusion vs Midjourney: AI Influencer Creation Comparison",
     description: "Complete comparison of Stable Diffusion vs Midjourney for AI influencer creation with cost analysis and workflow examples.",
+    url: "https://iimagined.ai/blog/stable-diffusion-vs-midjourney-ai-influencer-creation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T10:00:00.000Z",

@@ -40,6 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gemini 2 Pro + Bolt.new DIY Full-Stack Revolution 2026",
     description: "Master AI-powered full-stack development with Gemini 2 Pro + Bolt.new. Build production SaaS apps from text prompts—complete guide for 2026.",
+    url: "https://iimagined.ai/blog/gemini-2-pro-bolt-diy-full-stack-revolution",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

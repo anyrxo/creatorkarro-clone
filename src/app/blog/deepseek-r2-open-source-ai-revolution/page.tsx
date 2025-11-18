@@ -40,6 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DeepSeek R2 Open Source AI Revolution 2026: Reasoning Model Outperforms o3",
     description: "Master DeepSeek R2, the open-source reasoning AI revolutionizing problem-solving. Complete guide to chain-of-thought capabilities, self-hosting, benchmarks, and deployment strategies.",
+    url: "https://iimagined.ai/blog/deepseek-r2-open-source-ai-revolution",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

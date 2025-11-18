@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Instagram Monetization Guide: 15 Proven Ways to Make Money",
     description: "instagram monetization, make money instagram, instagram income - Expert guide from the creators of Instagram Ignited",
+    url: "https://iimagined.ai/blog/instagram-monetization-guide-15-ways-make-money",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-25T10:00:00.000Z",

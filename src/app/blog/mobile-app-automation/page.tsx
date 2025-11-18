@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Mobile App Automation: Complete Guide & Expert Strategies",
     description: "Complete guide to mobile app automation - proven strategies, tools, and techniques for 2026",
+    url: "https://iimagined.ai/blog/mobile-app-automation",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

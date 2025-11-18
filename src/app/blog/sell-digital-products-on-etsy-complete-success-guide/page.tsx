@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sell Digital Products on Etsy: Complete 2026 Success Guide with Revenue Models",
     description: "Master Etsy digital products in 2026. Comprehensive guide covering best-selling niches, SEO optimization, platform comparisons, cost analysis, and realistic revenue timelines.",
+    url: "https://iimagined.ai/blog/sell-digital-products-on-etsy-complete-success-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-22T10:00:00.000Z",
@@ -350,7 +351,7 @@ Etsy's algorithm slightly favors listings priced within the "normal range" for t
 | **Inventory** | $0 (sell unlimited copies) | $500-2,000 upfront inventory |
 | **Storage** | $0 | Garage/storage unit ($0-150/month) |
 | **Packaging** | $0 | $1-3 per order |
-| **Returns** | &lt;1% (file delivery issues) | 5-12% (damaged, wrong size, etc.) |
+| **Returns** | <1% (file delivery issues) | 5-12% (damaged, wrong size, etc.) |
 | **Time per sale** | 0 minutes (automated) | 15-45 minutes (make, pack, ship) |
 | **Etsy fees** | 10% | 10% (same) |
 | **Overall margin** | **92-97%** | **25-60%** |

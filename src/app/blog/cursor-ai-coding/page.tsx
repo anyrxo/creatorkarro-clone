@@ -40,6 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cursor AI IDE 2026: Complete Guide - 300% Faster Development with AI",
     description: "Master Cursor AI IDE with Composer Agent, Cursor Tab, and Claude Sonnet 4. Achieve 300% faster development with AI pair programming and autonomous agents.",
+    url: "https://iimagined.ai/blog/cursor-ai-coding",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-25T10:00:00.000Z",

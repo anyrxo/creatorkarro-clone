@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Whop Clipping: Complete Guide to Content Monetization",
     description: "Whop Clipping - comprehensive strategies, tools, and techniques for 2026",
+    url: "https://iimagined.ai/blog/whop-clipping",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

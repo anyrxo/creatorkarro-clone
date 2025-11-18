@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Best Passive Income Ideas: 20+ Digital Products That Work",
     description: "passive income ideas, digital products passive income, make money online - Expert guide from the creators of Digital Products Mastery",
+    url: "https://iimagined.ai/blog/best-passive-income-ideas-digital-products-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-22T10:00:00.000Z",

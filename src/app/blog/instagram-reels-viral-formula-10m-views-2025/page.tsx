@@ -16,6 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Instagram Reels Viral Formula: How to Get 10M+ Views in 2026",
     description: "Master the exact viral Reels formula used by top creators to hit 10M+ views. Algorithm insights, hook strategies, and proven editing techniques that guarantee results.",
+    url: "https://iimagined.ai/blog/instagram-reels-viral-formula-10m-views-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T10:00:00.000Z",
