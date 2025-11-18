@@ -564,7 +564,7 @@ LIMIT 10;`}</code>
                   <p className="mt-1">Use <strong className="text-white">parameterized queries</strong> to prevent SQL injection attacks.</p>
                   <div className="bg-black border border-zinc-700 rounded-lg p-3 mt-2">
                     <p className="text-sm text-red-400 mb-2">❌ Dangerous (SQL Injection Vulnerable):</p>
-                    <code className="text-sm">SELECT * FROM users WHERE email = &apos;{{ $json.email }}&apos;</code>
+                    <code className="text-sm">{'SELECT * FROM users WHERE email = \'{{ $json.email }}\''}</code>
                     <p className="text-sm text-green-400 mt-3 mb-2">✓ Safe (Parameterized):</p>
                     <code className="text-sm">Use N8N&apos;s expression editor to bind parameters</code>
                   </div>
