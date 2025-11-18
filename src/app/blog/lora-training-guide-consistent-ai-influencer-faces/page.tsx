@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "LoRA Training Guide: 98% Consistent AI Influencer Faces",
     description: "Complete workflow from dataset prep to final model. Achieve photorealistic character consistency for AI influencers.",
-    url: "https://iimagined.ai/blog/lora-training-guide-consistent-ai-influencer-faces",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T12:00:00.000Z",

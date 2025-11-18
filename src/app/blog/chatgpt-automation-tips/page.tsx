@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChatGPT Automation Tips 2026: 37 Hacks That Save 20+ Hours Weekly",
     description: "37 proven ChatGPT automation hacks with copy-paste prompts. Real case studies: 10x content output, $50K+ monthly revenue, 95% time savings.",
-    url: "https://iimagined.ai/blog/chatgpt-automation-tips",
     siteName: "IImagined.ai",
     locale: "en_US",
     type: "article",
@@ -404,10 +403,6 @@ For each section include:
 
 **Key Insight**: Even the *lowest* ROI scenario (enterprise at 500%) means every $1 invested returns $5. For solo creators and small businesses, ChatGPT automation typically delivers **20-300x returns** within the first year—making it one of the highest-ROI business investments available in 2026.`
   },
-
-        {/* Inline CTA - After 4 ROI Case Studies: $6K-$20K/month Gains + 2,500-30,000% ROI */}
-        <SmartCTA blogSlug="chatgpt-automation-tips" variant="inline" />
-
   {
     question: "How do you set up ChatGPT automations with Zapier, Make, or n8n for true hands-free workflows?",
     answer: `**Complete Guide to ChatGPT API Automation** (3 Platforms Compared):
@@ -671,8 +666,6 @@ export default function ChatGPTAutomationTipsPage() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2026-02-28T10:00:00.000Z',
-    dateModified: '2026-02-28T10:00:00.000Z',
     image: 'https://iimagined.ai/images/chatgpt-automation-tips-og.jpg',
     articleSection: 'AI Automation',
     keywords: 'chatgpt automation tips, chatgpt automation, chatgpt hacks 2026, ai automation'

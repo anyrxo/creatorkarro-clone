@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "ComfyUI Installation & Setup: Complete Beginner Guide",
     description: "comfyui installation, comfyui setup, install comfyui - Expert guide from the creators of ComfyUI Mastery",
-    url: "https://iimagined.ai/blog/comfyui-installation-setup-complete-beginner-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-12T10:00:00.000Z",

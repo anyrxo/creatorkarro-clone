@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Cloud Automation Infrastructure",
     description: "Complete guide to cloud automation infrastructure - proven strategies, tools, and techniques for 2026",
-    url: "https://iimagined.ai/blog/cloud-automation-infrastructure",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

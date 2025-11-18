@@ -23,7 +23,6 @@ export const metadata = {
   openGraph: {
     title: "N8N for Beginners 2026: Complete Course Guide",
     description: "Complete n8n beginners guide - step-by-step instructions, 25+ workflows, best practices, and expert tips",
-    url: "https://iimagined.ai/blog/n8n-beginners-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

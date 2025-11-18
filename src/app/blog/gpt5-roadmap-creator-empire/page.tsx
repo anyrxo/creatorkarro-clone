@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "GPT-5 Roadmap Creator Empire: Complete Guide & Expert",
     description: "GPT-5 Roadmap Creator Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
-    url: "https://iimagined.ai/blog/gpt5-roadmap-creator-empire",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Essential N8N Workflows: Complete Guide & Expert Strategies",
     description: "Essential N8N Workflows - comprehensive strategies, tools, and techniques for 2026",
-    url: "https://iimagined.ai/blog/essential-n8n-workflows",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
@@ -303,7 +302,9 @@ export default function EssentialN8NWorkflows() {
                     <SmartCTA blogSlug="essential-n8n-workflows" variant="inline" />
                 </div>
 
-            </div><div className="bg-zinc-900 rounded-xl p-6 mt-8">
+            </div>
+
+<div className="bg-zinc-900 rounded-xl p-6 mt-8">
 <div className="flex items-start gap-4">
     <div className="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-lg">5</div>
     <div className="flex-1">
@@ -344,7 +345,9 @@ export default function EssentialN8NWorkflows() {
         </div>
     </div>
 </div>
-</div><div className="bg-zinc-900 rounded-xl p-6">
+</div>
+
+<div className="bg-zinc-900 rounded-xl p-6">
 <div className="flex items-start gap-4">
     <div className="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-lg">6</div>
     <div className="flex-1">
@@ -374,7 +377,9 @@ export default function EssentialN8NWorkflows() {
         </div>
     </div>
 </div>
-</div><div className="bg-zinc-900 rounded-xl p-6">
+</div>
+
+<div className="bg-zinc-900 rounded-xl p-6">
 <div className="flex items-start gap-4">
     <div className="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold flex-shrink-0 text-lg">7</div>
     <div className="flex-1">
@@ -411,7 +416,6 @@ export default function EssentialN8NWorkflows() {
             </div>
         </div>
     </div>
-</div>
 </div>
 </div>
 </div>

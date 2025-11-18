@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Claude 4 Vs GPT 4 Comparison: Complete Guide & Expert",
     description: "Claude 4 Vs GPT 4 Comparison comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
-    url: "https://iimagined.ai/blog/claude-4-vs-gpt-4-comparison",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

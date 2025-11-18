@@ -14,7 +14,6 @@ export const metadata = {
   openGraph: {
     title: "Claude 4 Agentic Coding Revolution",
     description: "Claude 4 Agentic Coding Revolution comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
-    url: "https://iimagined.ai/blog/claude-4-agentic-coding-revolution",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

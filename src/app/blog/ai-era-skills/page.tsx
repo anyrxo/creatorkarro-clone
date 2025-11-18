@@ -19,7 +19,6 @@ export const metadata = {
   openGraph: {
     title: "10 High-Income Skills AI Can't Replace in 2026",
     description: "Master irreplaceable human skills commanding $100K-$1M+ in the AI era",
-    url: "https://iimagined.ai/blog/ai-era-skills",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-15T10:00:00.000Z",
@@ -83,8 +82,6 @@ function generateBlogPostSchema() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2026-01-15T10:00:00.000Z',
-    dateModified: new Date().toISOString(),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://iimagined.ai/blog/ai-era-skills'
@@ -336,10 +333,6 @@ export default function AIEraSkills() {
               icon: Target,
               title: "Complex Problem Solving",
               desc: "Navigating ambiguity and solving problems with incomplete information",
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="ai-era-skills" variant="inline" />
-
               income: "$200-500K+ consulting",
               color: "blue"
             },

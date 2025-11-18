@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Most Profitable Digital Product Niches in 2026",
     description: "digital product niches, profitable digital products, digital product market - Expert guide from the creators of Digital Products Mastery",
-    url: "https://iimagined.ai/blog/most-profitable-digital-product-niches-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-03T10:00:00.000Z",

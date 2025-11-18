@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "AI Content Opportunity: Complete Guide & Expert Strategies 2026",
     description: "AI Content Opportunity comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
-    url: "https://iimagined.ai/blog/ai-content-opportunity",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-24T10:00:00.000Z",

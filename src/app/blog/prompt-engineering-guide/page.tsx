@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Prompt Engineering Guide: Master AI Prompts in 2026",
     description: "Complete prompt engineering guide - step-by-step instructions, best practices, and expert tips",
-    url: "https://iimagined.ai/blog/prompt-engineering-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

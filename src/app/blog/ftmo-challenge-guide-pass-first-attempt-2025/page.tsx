@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "FTMO Challenge Guide: Pass on First Attempt 2026 | Proven Strategy",
     description: "Complete FTMO Challenge guide with Phase 1 & 2 breakdown, risk management rules, daily trading routines, and 3 real case studies of traders passing in 10-30 days.",
-    url: "https://iimagined.ai/blog/ftmo-challenge-guide-pass-first-attempt-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T09:00:00.000Z",

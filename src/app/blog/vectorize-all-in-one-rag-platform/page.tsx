@@ -40,7 +40,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vectorize All-in-One RAG Platform 2026: Build Production RAG Apps 80% Faster",
     description: "Master Vectorize, the all-in-one RAG platform combining vector database, embeddings, retrieval, and monitoring. Build production RAG apps with 10x less code.",
-    url: "https://iimagined.ai/blog/vectorize-all-in-one-rag-platform",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

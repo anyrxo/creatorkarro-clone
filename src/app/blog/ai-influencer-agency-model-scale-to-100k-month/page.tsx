@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "AI Influencer Agency: $10K to $100K/Month Blueprint",
     description: "Complete agency model for scaling AI influencer management to $100K monthly revenue.",
-    url: "https://iimagined.ai/blog/ai-influencer-agency-model-scale-to-100k-month",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T16:00:00.000Z",

@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "15 Best Business Automation Tools 2026: Save 20+ Hours Weekly",
     description: "Compare top automation tools like N8N, Zapier, and Make. Real case studies from businesses saving 20+ hours per week.",
-    url: "https://iimagined.ai/blog/business-automation-tools",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Alpha Evolve AI Business Empire",
     description: "Alpha Evolve AI Business Empire comprehensive guide - latest AI tools, strategies, and implementation tips for 2026",
-    url: "https://iimagined.ai/blog/alpha-evolve-ai-business-empire",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

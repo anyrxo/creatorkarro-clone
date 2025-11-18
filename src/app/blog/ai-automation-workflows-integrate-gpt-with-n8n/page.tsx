@@ -19,7 +19,6 @@ export const metadata = {
   openGraph: {
     title: "AI Automation Workflows: Integrate GPT with N8N - Technical Guide",
     description: "Expert guide on production-ready GPT + N8N workflows with code examples and best practices",
-    url: "https://iimagined.ai/blog/ai-automation-workflows-integrate-gpt-with-n8n",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-10T10:00:00.000Z",
@@ -83,8 +82,6 @@ function generateBlogPostSchema() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2026-02-10T10:00:00.000Z',
-    dateModified: new Date().toISOString(),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://iimagined.ai/blog/ai-automation-workflows-integrate-gpt-with-n8n'

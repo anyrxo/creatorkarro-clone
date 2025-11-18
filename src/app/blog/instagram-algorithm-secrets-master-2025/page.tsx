@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Instagram Algorithm Secrets: Master the 2026 Algorithm",
     description: "instagram algorithm, instagram algorithm 2026, instagram reach - Expert guide from the creators of Instagram Ignited",
-    url: "https://iimagined.ai/blog/instagram-algorithm-secrets-master-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-25T10:00:00.000Z",

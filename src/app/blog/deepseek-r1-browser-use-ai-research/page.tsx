@@ -37,7 +37,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DeepSeek R1 Browser Use AI Research: Complete Guide 2026 | Reasoning Model for Web Automation",
     description: "Master DeepSeek R1 for browser automation and AI research in 2026. Learn how this open-source reasoning model powers automated web research, data extraction, and multi-step browsing tasks at 90% lower cost than GPT-4.",
-    url: "https://iimagined.ai/blog/deepseek-r1-browser-use-ai-research",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",

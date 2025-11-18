@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Online Course Creation Guide: Build & Sell Courses That",
     description: "course creation, create online course, sell online courses - Expert guide from the creators of Digital Products Mastery",
-    url: "https://iimagined.ai/blog/online-course-creation-guide-build-sell-courses",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-22T10:00:00.000Z",

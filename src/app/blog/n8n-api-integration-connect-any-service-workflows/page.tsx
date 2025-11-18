@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "N8N API Integration: Connect Any Service with Workflows",
     description: "Complete guide to N8N API integration - tutorials, code examples, authentication methods, and webhooks setup",
-    url: "https://iimagined.ai/blog/n8n-api-integration-connect-any-service-workflows",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-10T10:00:00.000Z",

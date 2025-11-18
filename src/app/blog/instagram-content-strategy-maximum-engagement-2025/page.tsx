@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Instagram Content Strategy for Maximum Engagement 2026",
     description: "instagram content strategy, instagram content, instagram engagement - Expert guide from the creators of Instagram Ignited",
-    url: "https://iimagined.ai/blog/instagram-content-strategy-maximum-engagement-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-05T10:00:00.000Z",

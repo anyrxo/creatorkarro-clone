@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "Futures Trading Psychology: Master Your Emotions & Win Consistently 2026",
     description: "Master trading psychology with proven mental frameworks and strategies to overcome revenge trading, FOMO, and drawdowns.",
-    url: "https://iimagined.ai/blog/futures-trading-psychology-master-emotions-win",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-22T09:00:00.000Z",

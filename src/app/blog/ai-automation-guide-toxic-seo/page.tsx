@@ -19,7 +19,6 @@ export const metadata = {
   openGraph: {
     title: "AI Automation Guide: $88K/Month Business in 4 Hours Daily",
     description: "254+ tested AI automation tools and workflows that generated $1.2M in automated revenue",
-    url: "https://iimagined.ai/blog/ai-automation-guide-toxic-seo",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-02-28T10:00:00.000Z",
@@ -83,8 +82,6 @@ function generateBlogPostSchema() {
         url: 'https://iimagined.ai/logo.png'
       }
     },
-    datePublished: '2026-02-28T10:00:00.000Z',
-    dateModified: new Date().toISOString(),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://iimagined.ai/blog/ai-automation-guide-toxic-seo'

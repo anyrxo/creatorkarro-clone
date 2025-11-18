@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title: "AI Influencer Monetization: Complete Guide to $10K-$100K/Month",
     description: "12 proven revenue streams, pricing strategies, and real case studies from AI influencers earning $10K-$100K monthly.",
-    url: "https://iimagined.ai/blog/ai-influencer-monetization-complete-guide-2026",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-21T10:00:00.000Z",

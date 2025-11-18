@@ -16,7 +16,6 @@ export const metadata = {
   openGraph: {
     title: "AI Automation for Beginners: Complete Guide 2026",
     description: "Master AI automation with N8N, ChatGPT & more. Save 20+ hours/week with proven workflows.",
-    url: "https://iimagined.ai/blog/ai-automation-beginners-guide",
     siteName: "IImagined.ai",
     type: "article",
     publishedTime: "2026-01-20T00:00:00.000Z",
