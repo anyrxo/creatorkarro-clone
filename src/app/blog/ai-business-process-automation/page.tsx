@@ -67,6 +67,18 @@ export default function AIBusinessProcessAutomationBlogPost() {
     title: "AI Business Process Automation: Complete 2026 Guide",
     description:
       "AI-powered BPA delivers 240% average ROI in 6-9 months, cuts costs 50-70%, and saves 2+ hours daily. Learn how to implement AI in business process automation for 2026.",
+    slug: "ai-business-process-automation",
+    publishedTime: "2025-11-17",
+    modifiedTime: "2025-11-17",
+    category: "AI Automation",
+    keywords: [
+      "AI business process automation",
+      "BPA automation",
+      "intelligent process automation",
+      "AI workflow automation",
+      "business process optimization",
+      "RPA automation"
+    ]
   });
 
   return (
