@@ -80,6 +80,7 @@ export default function AIAgentAutomation2026() {
     description: "30% of enterprises automate 50%+ of operations by 2026. Build autonomous AI workflows with N8N & ChatGPT. Complete guide to AI agent automation.",
     publishedTime: "2026-01-15T00:00:00.000Z",
     modifiedTime: "2026-01-15T00:00:00.000Z",
+    category: "AI Automation",
     slug: "ai-agent-automation-2026",
     keywords: ["AI agent automation", "autonomous workflows", "N8N automation", "ChatGPT agents", "business process automation"]
   });

@@ -80,6 +80,7 @@ export default function IntelligentProcessAutomation2026() {
     description: "87% of organizations scale IPA in 2025. IPA delivers 2x productivity vs RPA. 50-70% task automation with 20-35% cost savings. The future of enterprise automation.",
     publishedTime: "2026-01-18T00:00:00.000Z",
     modifiedTime: "2026-01-18T00:00:00.000Z",
+    category: "AI Automation",
     slug: "intelligent-process-automation-2026",
     keywords: ["intelligent process automation", "IPA vs RPA", "hyperautomation", "enterprise automation", "AI automation"]
   });

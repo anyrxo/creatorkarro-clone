@@ -80,6 +80,7 @@ export default function AIDecisionMakingAutomation() {
     description: "92% of executives adopt AI automation. AI improves productivity 4.8x and reduces errors 49%. Let AI make intelligent decisions in your workflows autonomously.",
     publishedTime: "2026-01-17T00:00:00.000Z",
     modifiedTime: "2026-01-17T00:00:00.000Z",
+    category: "AI Automation",
     slug: "ai-decision-making-automation",
     keywords: ["AI decision making", "automated decisions", "intelligent automation", "decision intelligence", "agentic AI"]
   });
