@@ -4756,7 +4756,7 @@ export default function YouTubeShortsStrategy() {
             </div>
         </div>
     </div>
-</section>
+      </section>
 
       <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
