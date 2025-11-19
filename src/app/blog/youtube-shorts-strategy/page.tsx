@@ -70,8 +70,7 @@ const schema = generateBlogPostSchema({
 })
 
 export default function YouTubeShortsStrategy() {
-  return (
-    <div className="min-h-screen bg-dark">
+  return <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -4761,5 +4760,4 @@ export default function YouTubeShortsStrategy() {
         </div>
       </section>
     </div>
-  )
 }
