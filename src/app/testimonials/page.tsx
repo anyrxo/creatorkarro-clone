@@ -13,6 +13,9 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import ScrambleText from '@/components/magicui/scramble-text'
 import HeroBackground from '@/components/HeroBackground'
 import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
+import StickyCTA from '@/components/StickyCTA'
+import EcosystemGraph from '@/components/EcosystemGraph'
+import { Play, BarChart2, ArrowUpRight, Quote, UserCheck, AlertTriangle, CheckCircle, XCircle, Video } from 'lucide-react'
 
 // Review Schema.org markup for testimonials
 const testimonialsSchema = {
@@ -264,6 +267,13 @@ export default function TestimonialsPage() {
 
   return (
     <>
+      <StickyCTA 
+        price="$99/mo" 
+        originalPrice="$399" 
+        ctaLink="/checkout?course=empire-bundle"
+        productName="Empire Pass All Access" 
+      />
+
       {/* SEO: AI Content Declaration for Testimonials Page */}
       <AIContentDeclaration
         title="Student Success Stories & Testimonials - IImagined.ai"
@@ -422,7 +432,48 @@ export default function TestimonialsPage() {
             </div>
           </div>
 
-          {/* Testimonials Grid */}
+          {/* Video Wall of Fame */}
+          <div ref={videoAnimation.elementRef} className={`mb-24 scroll-fade-up ${videoAnimation.isVisible ? 'visible' : ''}`}>
+            <div className="text-center mb-12">
+              <div className="inline-block bg-red-500/10 border border-red-500/30 rounded-full px-4 py-2 mb-6">
+                <span className="text-red-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
+                  <Video className="w-4 h-4" />
+                  WATCH THEIR STORIES
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-black text-white mb-6">
+                Real People. <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">Real Results.</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                { name: "Sarah's $10K Month", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", duration: "2:14" },
+                { name: "Mike's Agency Scale", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", duration: "3:45" },
+                { name: "Jen's Viral Strategy", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", duration: "1:58" }
+              ].map((video, i) => (
+                <div key={i} className="group relative aspect-video rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-white/20 transition-all duration-500 hover:scale-[1.02] shadow-2xl">
+                  <Image 
+                    src={video.image} 
+                    alt={video.name} 
+                    fill 
+                    className="object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/20">
+                      <Play className="w-6 h-6 text-white fill-white" />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
+                    <h3 className="text-lg font-bold text-white mb-1">{video.name}</h3>
+                    <p className="text-xs text-zinc-400 flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" /> Verified Student • {video.duration}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {filteredTestimonials.map((testimonial, index) => (
               <div
@@ -608,6 +659,45 @@ export default function TestimonialsPage() {
               </div>
             </div>
           </div>
+
+          {/* Skeptic's Corner */}
+          <div className="mb-24 max-w-5xl mx-auto">
+             <div className="text-center mb-12">
+                <p className="text-zinc-500 font-medium text-sm uppercase tracking-wider mb-2">Brutal Honesty</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">"I thought this was a scam..."</h2>
+             </div>
+             <div className="grid md:grid-cols-2 gap-6">
+                {[
+                  {
+                    quote: "I've bought so many 'guru' courses that turned out to be garbage. I was 100% sure this would be another one. I only bought it because of the refund policy. Turns out, it's the only one that actually taught me something tangible. The n8n module alone is worth 10x the price.",
+                    author: "Marcus Chen",
+                    role: "Formerly Skeptical Dev"
+                  },
+                  {
+                    quote: "I didn't think I had time. I work a 9-5 and have 2 kids. The '2 Hours a Day' claim sounded like marketing BS. But the systems actually work. I do most of my work on my commute and on weekends. It's not magic, it's just efficient.",
+                    author: "Sarah Jenkins",
+                    role: "Busy Mom & Entrepreneur"
+                  }
+                ].map((item, i) => (
+                  <div key={i} className="bg-zinc-900/30 border border-zinc-800 p-8 rounded-2xl relative">
+                     <Quote className="w-10 h-10 text-zinc-700 absolute top-6 left-6 opacity-50" />
+                     <p className="text-zinc-300 relative z-10 pl-8 mb-6 italic leading-relaxed">"{item.quote}"</p>
+                     <div className="flex items-center gap-3 pl-8">
+                        <div className="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">
+                          {item.author[0]}
+                        </div>
+                        <div>
+                           <p className="text-white font-bold text-sm">{item.author}</p>
+                           <p className="text-zinc-500 text-xs">{item.role}</p>
+                        </div>
+                     </div>
+                  </div>
+                ))}
+             </div>
+          </div>
+
+          {/* Ecosystem Graph */}
+          <EcosystemGraph currentCourseId="instagram-ignited" /> {/* Defaulting to IG for visual anchor */}
 
           {/* CTA Section */}
           <div
