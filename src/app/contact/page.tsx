@@ -129,7 +129,7 @@ export default function ContactPage() {
                 {[
                    { q: "Do I get lifetime access?", a: "Yes. One payment (or subscription) gets you in forever. Including all future updates." },
                    { q: "Is this suitable for beginners?", a: "100%. I built these systems specifically for people starting from zero. No prior experience needed." },
-                   { q: "What if I'm not happy?", a: "We have a 60-day action-based guarantee. If you do the work and don't see results, you get a refund." },
+                   { q: "What if I'm not happy?", a: "We have a 30-day action-based guarantee. If you do the work and don't see results, you get a refund." },
                    { q: "How much time do I need?", a: "Most students start with 1-2 hours a day. The systems are designed for efficiency, not grinding." }
                 ].map((faq, i) => (
                    <div key={i} className="bg-zinc-900/30 border border-zinc-800/50 p-6 rounded-2xl">

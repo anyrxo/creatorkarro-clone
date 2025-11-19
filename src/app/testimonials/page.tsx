@@ -345,7 +345,7 @@ export default function TestimonialsPage() {
                   {/* Main Title with ScrambleText Morphing Effect */}
                   <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
                     <ScrambleText
-                      text="Testimonials"
+                      text="Wall of Wins"
                       className="text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight drop-shadow-2xl"
                       scrambleSpeed={1}
                       revealSpeed={1}

@@ -167,7 +167,7 @@ export default function HelpPage() {
               },
               {
                 question: 'Do you offer refunds?',
-                answer: 'Yes! We offer a 365-day action-based money-back guarantee. If you complete the course and don\'t see results, we\'ll refund you.'
+                answer: 'Yes! We offer a 30-day action-based money-back guarantee. If you complete the course and don\'t see results, we\'ll refund you.'
               },
               {
                 question: 'How long do I have access to courses?',

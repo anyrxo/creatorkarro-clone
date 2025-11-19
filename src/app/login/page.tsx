@@ -44,10 +44,10 @@ export default function LoginPage() {
             <p>
               If you've lost access to your course as a past customer, please don't hesitate to email me at{' '}
               <a
-                href="mailto:biz@iimagined.ai"
+                href="mailto:support@iimagined.ai"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                biz@iimagined.ai
+                support@iimagined.ai
               </a>{' '}
               with the subject line "Course Access," and we'll assist you within 12-24 hours.
             </p>

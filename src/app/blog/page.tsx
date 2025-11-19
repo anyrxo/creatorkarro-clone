@@ -145,7 +145,7 @@ export default function BlogPage() {
                 {/* Main Title with Magical Effects */}
                 <div className="mb-8" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
                   <ScrambleText
-                    text="Creator Blog"
+                    text="Empire Intelligence"
                     className="text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight drop-shadow-2xl"
                     scrambleSpeed={1}
                     revealSpeed={1}

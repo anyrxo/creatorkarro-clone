@@ -264,8 +264,8 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <p className="text-purple-300">
                   <strong>Business Inquiries:</strong>{' '}
-                  <a href="mailto:biz@iimagined.ai" className="text-purple-400 hover:text-purple-300 underline">
-                    biz@iimagined.ai
+                  <a href="mailto:support@iimagined.ai" className="text-purple-400 hover:text-purple-300 underline">
+                    support@iimagined.ai
                   </a>
                 </p>
               </div>

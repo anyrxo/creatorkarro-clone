@@ -116,10 +116,10 @@ export default function RefundPolicyPage() {
             >
               If you meet these criteria and still want a refund within 30 days, email me at{' '}
               <a
-                href="mailto:biz@iimagined.ai"
+                href="mailto:support@iimagined.ai"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                biz@iimagined.ai
+                support@iimagined.ai
               </a>
               , with your proof of work, and I'll refund 100% of your purchase.
             </p>

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Refund Policy - 60-Day Money-Back Guarantee | IImagined.ai',
-    description: 'Transparent refund policy with 60-day money-back guarantee on all courses. Customer satisfaction guaranteed.',
+    description: 'Transparent refund policy with 30-day money-back guarantee on all courses. Customer satisfaction guaranteed.',
     type: 'website',
     images: [
       {
