@@ -2437,431 +2437,714 @@ export default function PersonalBrandBuilding() {
 
             <div className="bg-zinc-800 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-purple-400 mb-4">What AI tools should I use for personal branding in 2026?</h3>
-              <div className="text-gray-300 space-y-4">
-                <p className="leading-relaxed">{`**AI tools can reduce your content creation time by 70% while improving quality.** After testing 100+ AI tools, here's the complete stack for personal branding in 2026:
-
-**Content Creation AI Tools**
-
-**1. ChatGPT + Claude (Content Strategy)**
-
-**Use cases**:
-- Content ideation and brainstorming
-- Outline creation for long-form content
-- Repurposing content across platforms
-- Email copywriting
-- Social media caption writing
-
-**Best practices**:
-
-**Content Ideation Prompt**:
-"I'm a [your positioning] who helps [target audience] achieve [outcome]. Generate 30 content ideas that would attract my ideal clients. Focus on: pain points, quick wins, frameworks, and personal stories. Format as: [Hook] + [Main point] + [CTA]"
-
-**Repurposing Prompt**:
-"Take this [YouTube script/article/podcast transcript] and create:
-- 5 LinkedIn posts (1,000 characters each)
-- 10 Twitter/X tweets (280 characters)
-- 7 Instagram carousel slides
-- 3 short-form video scripts (30 seconds)
-
-Maintain my voice: [describe your tone]"
-
-**Email Writing Prompt**:
-"Write a weekly newsletter for my audience of [description]. Topic: [topic]. Include:
-- Compelling subject line
-- Personal story hook
-- 3 actionable insights
-- Soft CTA to [your offer]
-Keep it conversational and under 500 words."
-
-**Tools**:
-- ChatGPT Plus ($20/month) - Best for ideation
-- Claude Pro ($20/month) - Best for long-form writing
-- Gemini Advanced ($20/month) - Best for research
-
-**Cost**: $20-$60/month
-**Time saved**: 10-15 hours/week
-
-**2. Descript (Video & Podcast Editing)**
-
-**Use cases**:
-- Video editing through text
-- Remove filler words automatically
-- Create clips from long content
-- Add captions and graphics
-- Repurpose video to audio
-
-**Workflow**:
-1. Record raw video/podcast
-2. Upload to Descript
-3. Edit by editing transcript
-4. Remove "ums" and pauses (1-click)
-5. Add intro/outro templates
-6. Export clips for social
-7. Publish main content
-
-**Features I use daily**:
-- **Studio Sound**: Make audio professional
-- **Filler Word Removal**: Clean up 100+ "ums" in seconds
-- **Clip Creation**: Auto-generate 5-10 clips from 1 video
-- **Overdub**: Fix mistakes with AI voice clone
-- **Screen Recording**: Built-in recording
-
-**Cost**: $24-$50/month
-**Time saved**: 5-10 hours/week on editing
-
-**3. Canva + Magic Studio (Design)**
-
-**Use cases**:
-- Social media graphics
-- Carousels and infographics
-- Thumbnails for videos
-- Email headers
-- Brand assets
-
-**AI features**:
-- **Magic Write**: Generate copy for designs
-- **Magic Edit**: Remove/add elements to photos
-- **Magic Design**: Auto-create designs from prompts
-- **Background Remover**: 1-click removal
-- **Brand Kit**: Consistent brand colors/fonts
-
-**Templates I use**:
-- LinkedIn carousels (10 slides)
-- Instagram posts (1:1, 4:5)
-- YouTube thumbnails (1280x720)
-- Email headers
-- Quote graphics
-
-**Workflow**:
-1. Use Canva templates
-2. Customize with brand colors
-3. Use Magic Write for headlines
-4. Batch create 10-20 designs
-5. Schedule or download
-
-**Cost**: $13-$30/month
-**Time saved**: 5-8 hours/week
-
-**4. Opus Clip (Short-Form Video)**
-
-**Use cases**:
-- Turn long videos into viral clips
-- Auto-add captions
-- Identify best moments
-- Optimize for each platform
-
-**How it works**:
-1. Upload long-form video (YouTube, podcast)
-2. AI analyzes and finds viral moments
-3. Auto-creates 10-30 clips
-4. Adds captions, b-roll, effects
-5. Scores each clip (virality potential)
-6. Export top clips for social
-
-**Real results**:
-- 1 hour video → 15-20 clips
-- Top 5 clips average 10K+ views
-- Manual creation: 6+ hours
-- Opus creation: 15 minutes
-
-**Cost**: $29-$129/month (based on minutes)
-**Time saved**: 8-12 hours/week
-
-**Content Writing AI Tools**
-
-**5. Jasper AI (Branded Content)**
-
-**Use cases**:
-- Blog posts (2,000+ words)
-- Sales pages
-- Email sequences
-- Ad copy
-- Long-form content
-
-**Why Jasper over ChatGPT**:
-- Brand voice training (learns your style)
-- SEO optimization built-in
-- Templates for every use case
-- Plagiarism checker
-- Team collaboration
-
-**Best templates**:
-- **AIDA Framework**: Attention, Interest, Desire, Action
-- **PAS**: Problem, Agitate, Solution
-- **Feature to Benefit**: Convert features to benefits
-- **Blog Post Outline**: SEO-optimized structure
-
-**Cost**: $49-$125/month
-**Time saved**: 6-10 hours/week
-
-**6. Copy.ai (Social Media)**
-
-**Use cases**:
-- Social media captions
-- Hooks and headlines
-- Email subject lines
-- Ad variations
-- Product descriptions
-
-**Best features**:
-- 90+ templates
-- Tone adjustment (professional, casual, funny)
-- Generate 10+ variations
-- Character count for each platform
-- Hashtag generator
-
-**Workflow**:
-1. Choose template (e.g., "Instagram Caption")
-2. Input topic/context
-3. Set tone
-4. Generate 10 variations
-5. Edit and customize
-6. Schedule in content calendar
-
-**Cost**: $49/month (or ChatGPT alternative)
-**Time saved**: 3-5 hours/week
-
-**Design & Visual AI Tools**
-
-**7. Midjourney (Custom Graphics)**
-
-**Use cases**:
-- Unique blog header images
-- Social media visuals
-- Brand photography (when you don't have photos)
-- Abstract concepts visualization
-- Book covers
-
-**Prompting framework**:
-"[Subject], [style], [lighting], [mood], [composition], [camera], --ar [aspect ratio]"
-
-**Example prompts**:
-
-**LinkedIn Header**:
-"/imagine professional entrepreneur working on laptop in modern office, natural lighting, cinematic, wide angle, inspirational mood --ar 16:9 --v 6"
-
-**Instagram Brand Photo**:
-"/imagine minimal workspace with coffee and notebook, soft morning light, pastel colors, overhead view, cozy aesthetic --ar 4:5 --v 6"
-
-**Cost**: $10-$60/month
-**Time saved**: 4-6 hours/week (vs. stock photos/photoshoot)
-
-**8. Kittl (Alternative to Canva)**
-
-**Use cases**:
-- Logo variations
-- Social media templates
-- Typography designs
-- Brand assets
-- Merchandise designs
-
-**AI features**:
-- **AI Image Generator**: Custom illustrations
-- **Magic Recoloring**: Change entire design palette
-- **Background Remover**: Clean product shots
-- **Text Effects**: 3D, vintage, modern
-
-**Cost**: $15-$30/month
-**Time saved**: 2-4 hours/week
-
-**Analytics & Optimization AI**
-
-**9. Taplio (LinkedIn Growth)**
-
-**Use cases**:
-- Content inspiration from top performers
-- Post scheduling with best time prediction
-- AI writing assistant
-- Engagement tracking
-- Competitor analysis
-
-**AI features**:
-- **Content Inspiration**: See what's working in your niche
-- **AI Post Generator**: Create posts from topics
-- **Best Time to Post**: AI predicts optimal timing
-- **Engagement Predictions**: Score posts before publishing
-
-**ROI**: Clients average 3x engagement in 90 days
-
-**Cost**: $39-$149/month
-**Time saved**: 5-7 hours/week
-
-**10. Tweet Hunter (Twitter/X Growth)**
-
-**Use cases**:
-- Viral tweet inspiration
-- Thread scheduling
-- Auto-retweet best content
-- CRM for Twitter connections
-- Analytics and growth tracking
-
-**AI features**:
-- **AI Writing**: Generate tweets from ideas
-- **Rewrite Engine**: Improve existing tweets
-- **Thread Finisher**: Auto-complete threads
-- **Inspiration Library**: 3M+ high-performing tweets
-
-**Cost**: $49-$149/month
-**Time saved**: 5-8 hours/week
-
-**Email & Automation AI**
-
-**11. Instantly.ai (Email Outreach)**
-
-**Use cases**:
-- Cold email campaigns
-- AI email writer
-- Deliverability optimization
-- Lead generation
-- A/B testing
-
-**AI features**:
-- **AI Email Generator**: Create sequences from goals
-- **Inbox Rotation**: Maintain sender reputation
-- **Smart Sending**: Optimize send times
-- **Reply Detection**: AI categorizes responses
-
-**Use case**: Reach out to potential clients, podcast guests, partners
-
-**Cost**: $37-$97/month
-**Time saved**: 3-5 hours/week
-
-**12. Beehiiv AI (Newsletter)**
-
-**Use cases**:
-- Newsletter writing assistant
-- Subject line optimization
-- Content recommendations
-- Subscriber segmentation
-- Growth analytics
-
-**AI features**:
-- **AI Writing Assistant**: Draft newsletters
-- **Subject Line Scorer**: Predict open rates
-- **Send Time Optimization**: Best time per subscriber
-- **Content Recommendations**: Suggest topics
-
-**Cost**: $39-$99/month (vs. ConvertKit)
-**Time saved**: 2-4 hours/week
-
-**Research & Learning AI**
-
-**13. Perplexity AI (Research)**
-
-**Use cases**:
-- Fact-checking for content
-- Market research
-- Competitor analysis
-- Trend identification
-- Source citation
-
-**Why better than ChatGPT for research**:
-- Real-time web access
-- Citations for all claims
-- Follow-up questions
-- Curated source selection
-
-**Research prompts**:
-"What are the top 10 personal branding trends in 2026 according to recent articles? Include statistics and cite sources."
-
-**Cost**: $20/month
-**Time saved**: 3-5 hours/week
-
-**14. Consensus (Academic Research)**
-
-**Use cases**:
-- Find scientific studies
-- Back claims with research
-- Authority building content
-- Evidence-based approaches
-
-**How it works**:
-- Ask research question
-- AI searches academic papers
-- Summarizes findings
-- Provides paper links
-
-**Example**: "What does research say about optimal posting frequency for social media engagement?"
-
-**Cost**: Free-$7/month
-**Time saved**: 2-3 hours/week
-
-**Complete AI Tool Stack**
-
-**Essential Stack** ($200-$300/month):
-1. ChatGPT Plus ($20)
-2. Canva Pro ($13)
-3. Descript ($24)
-4. Taplio or Tweet Hunter ($49)
-5. Opus Clip ($29)
-6. Perplexity AI ($20)
-
-**Total**: ~$155/month
-**Time saved**: 25-35 hours/week
-**ROI**: If your time is worth $50/hour = $1,250-$1,750/month value
-
-**Advanced Stack** ($500-$700/month):
-Add to essential:
-7. Jasper AI ($49)
-8. Midjourney ($30)
-9. Beehiiv AI ($39)
-10. Instantly.ai ($37)
-
-**Total**: ~$310/month
-**Time saved**: 35-45 hours/week
-
-**AI Workflow Examples**
-
-**Monday Morning Content Batching** (2 hours):
-
-1. **ChatGPT** (15 min): Generate 30 content ideas
-2. **Perplexity AI** (15 min): Research trending topics
-3. **Jasper** (30 min): Write 2,000-word article
-4. **Canva** (20 min): Create 5 graphics
-5. **Taplio** (20 min): Schedule LinkedIn posts for week
-6. **Tweet Hunter** (20 min): Schedule Twitter threads
-
-**Result**: Week of content created in 2 hours (vs. 10-15 hours manual)
-
-**Video Content Creation** (3 hours):
-
-1. **ChatGPT** (20 min): Script outline for video
-2. **Record** (60 min): Film talking head video
-3. **Descript** (30 min): Edit and clean up
-4. **Opus Clip** (15 min): Generate 15 short clips
-5. **Canva** (20 min): Create thumbnail
-6. **Upload & schedule** (15 min): YouTube + social clips
-
-**Result**: 1 long video + 15 clips (vs. 8-12 hours manual)
-
-**AI Limitations & Human Touch**
-
-**What AI is great for**:
-- First drafts
-- Ideation
-- Repurposing
-- Formatting
-- Research
-
-**What still needs human**:
-- Personal stories
-- Unique insights
-- Brand voice refinement
-- Relationship building
-- Strategic decisions
-
-**Best practice**: AI creates 70%, you polish the final 30%
-
-**The Future: AI Agents (2026+)**
-
-**Coming soon**:
-- **Personal AI Writer**: Trained on all your content
-- **AI Video Editor**: "Make me a viral reel about X"
-- **AI Community Manager**: Auto-respond to DMs/comments
-- **AI Course Creator**: Turn knowledge into courses automatically
-- **AI Brand Strategist**: Recommend positioning and tactics
-
-**Bottom line**: The creators who master AI tools will 10x their output while others are still manually creating everything. Start with the essential stack and expand as you grow.`}</p>
+              <div className="text-gray-300 space-y-6">
+                <p className="text-lg leading-relaxed">
+                  <strong className="text-white font-semibold">AI tools can reduce your content creation time by 70% while improving quality.</strong> After testing 100+ AI tools, here's the complete stack for personal branding in 2026:
+                </p>
+
+                {/* Content Creation AI Tools */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">Content Creation AI Tools</h4>
+                  
+                  {/* 1. ChatGPT + Claude */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">1. ChatGPT + Claude (Content Strategy)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Content ideation and brainstorming</li>
+                        <li>• Outline creation for long-form content</li>
+                        <li>• Repurposing content across platforms</li>
+                        <li>• Email copywriting</li>
+                        <li>• Social media caption writing</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Best practices:</h6>
+                      <div className="space-y-3">
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">Content Ideation Prompt:</h6>
+                          <p className="text-gray-300 text-xs italic">"I'm a [your positioning] who helps [target audience] achieve [outcome]. Generate <strong className="text-white">30 content ideas</strong> that would attract my ideal clients. Focus on: pain points, quick wins, frameworks, and personal stories. Format as: [Hook] + [Main point] + [CTA]"</p>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">Repurposing Prompt:</h6>
+                          <p className="text-gray-300 text-xs italic">"Take this [YouTube script/article/podcast transcript] and create: <strong className="text-white">5 LinkedIn posts</strong> (1,000 characters each), <strong className="text-white">10 Twitter/X tweets</strong> (280 characters), <strong className="text-white">7 Instagram carousel slides</strong>, <strong className="text-white">3 short-form video scripts</strong> (30 seconds). Maintain my voice: [describe your tone]"</p>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">Email Writing Prompt:</h6>
+                          <p className="text-gray-300 text-xs italic">"Write a weekly newsletter for my audience of [description]. Topic: [topic]. Include: Compelling subject line, Personal story hook, <strong className="text-white">3 actionable insights</strong>, Soft CTA to [your offer]. Keep it conversational and under <strong className="text-white">500 words</strong>."</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Tools:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• ChatGPT Plus (<strong className="text-white">$20/month</strong>) - Best for ideation</li>
+                        <li>• Claude Pro (<strong className="text-white">$20/month</strong>) - Best for long-form writing</li>
+                        <li>• Gemini Advanced (<strong className="text-white">$20/month</strong>) - Best for research</li>
+                      </ul>
+                      <div className="mt-2 pt-2 border-t border-green-500/30">
+                        <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $20-$60/month</p>
+                        <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 10-15 hours/week</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 2. Descript */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">2. Descript (Video & Podcast Editing)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Video editing through text</li>
+                        <li>• Remove filler words automatically</li>
+                        <li>• Create clips from long content</li>
+                        <li>• Add captions and graphics</li>
+                        <li>• Repurpose video to audio</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Workflow:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>Record raw video/podcast</li>
+                        <li>Upload to Descript</li>
+                        <li>Edit by editing transcript</li>
+                        <li>Remove "ums" and pauses (<strong className="text-white">1-click</strong>)</li>
+                        <li>Add intro/outro templates</li>
+                        <li>Export clips for social</li>
+                        <li>Publish main content</li>
+                      </ol>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Features I use daily:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">Studio Sound</strong>: Make audio professional</li>
+                        <li>• <strong className="text-white">Filler Word Removal</strong>: Clean up <strong className="text-white">100+ "ums"</strong> in seconds</li>
+                        <li>• <strong className="text-white">Clip Creation</strong>: Auto-generate <strong className="text-white">5-10 clips</strong> from 1 video</li>
+                        <li>• <strong className="text-white">Overdub</strong>: Fix mistakes with AI voice clone</li>
+                        <li>• <strong className="text-white">Screen Recording</strong>: Built-in recording</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $24-$50/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 5-10 hours/week on editing</p>
+                    </div>
+                  </div>
+
+                  {/* 3. Canva + Magic Studio */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">3. Canva + Magic Studio (Design)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Social media graphics</li>
+                        <li>• Carousels and infographics</li>
+                        <li>• Thumbnails for videos</li>
+                        <li>• Email headers</li>
+                        <li>• Brand assets</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">AI features:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">Magic Write</strong>: Generate copy for designs</li>
+                        <li>• <strong className="text-white">Magic Edit</strong>: Remove/add elements to photos</li>
+                        <li>• <strong className="text-white">Magic Design</strong>: Auto-create designs from prompts</li>
+                        <li>• <strong className="text-white">Background Remover</strong>: 1-click removal</li>
+                        <li>• <strong className="text-white">Brand Kit</strong>: Consistent brand colors/fonts</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Templates I use:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• LinkedIn carousels (<strong className="text-white">10 slides</strong>)</li>
+                        <li>• Instagram posts (1:1, 4:5)</li>
+                        <li>• YouTube thumbnails (<strong className="text-white">1280x720</strong>)</li>
+                        <li>• Email headers</li>
+                        <li>• Quote graphics</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Workflow:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>Use Canva templates</li>
+                        <li>Customize with brand colors</li>
+                        <li>Use Magic Write for headlines</li>
+                        <li>Batch create <strong className="text-white">10-20 designs</strong></li>
+                        <li>Schedule or download</li>
+                      </ol>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $13-$30/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 5-8 hours/week</p>
+                    </div>
+                  </div>
+
+                  {/* 4. Opus Clip */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">4. Opus Clip (Short-Form Video)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Turn long videos into viral clips</li>
+                        <li>• Auto-add captions</li>
+                        <li>• Identify best moments</li>
+                        <li>• Optimize for each platform</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">How it works:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>Upload long-form video (YouTube, podcast)</li>
+                        <li>AI analyzes and finds viral moments</li>
+                        <li>Auto-creates <strong className="text-white">10-30 clips</strong></li>
+                        <li>Adds captions, b-roll, effects</li>
+                        <li>Scores each clip (virality potential)</li>
+                        <li>Export top clips for social</li>
+                      </ol>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Real results:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">1 hour video</strong> → <strong className="text-white">15-20 clips</strong></li>
+                        <li>• Top <strong className="text-white">5 clips</strong> average <strong className="text-white">10K+ views</strong></li>
+                        <li>• Manual creation: <strong className="text-white">6+ hours</strong></li>
+                        <li>• Opus creation: <strong className="text-white">15 minutes</strong></li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $29-$129/month (based on minutes)</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 8-12 hours/week</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content Writing AI Tools */}
+                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-green-400 mb-4">Content Writing AI Tools</h4>
+                  
+                  {/* 5. Jasper AI */}
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">5. Jasper AI (Branded Content)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Blog posts (<strong className="text-white">2,000+ words</strong>)</li>
+                        <li>• Sales pages</li>
+                        <li>• Email sequences</li>
+                        <li>• Ad copy</li>
+                        <li>• Long-form content</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Why Jasper over ChatGPT:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Brand voice training (learns your style)</li>
+                        <li>• SEO optimization built-in</li>
+                        <li>• Templates for every use case</li>
+                        <li>• Plagiarism checker</li>
+                        <li>• Team collaboration</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Best templates:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">AIDA Framework</strong>: Attention, Interest, Desire, Action</li>
+                        <li>• <strong className="text-white">PAS</strong>: Problem, Agitate, Solution</li>
+                        <li>• <strong className="text-white">Feature to Benefit</strong>: Convert features to benefits</li>
+                        <li>• <strong className="text-white">Blog Post Outline</strong>: SEO-optimized structure</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $49-$125/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 6-10 hours/week</p>
+                    </div>
+                  </div>
+
+                  {/* 6. Copy.ai */}
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">6. Copy.ai (Social Media)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Social media captions</li>
+                        <li>• Hooks and headlines</li>
+                        <li>• Email subject lines</li>
+                        <li>• Ad variations</li>
+                        <li>• Product descriptions</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Best features:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">90+ templates</strong></li>
+                        <li>• Tone adjustment (professional, casual, funny)</li>
+                        <li>• Generate <strong className="text-white">10+ variations</strong></li>
+                        <li>• Character count for each platform</li>
+                        <li>• Hashtag generator</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Workflow:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>Choose template (e.g., "Instagram Caption")</li>
+                        <li>Input topic/context</li>
+                        <li>Set tone</li>
+                        <li>Generate <strong className="text-white">10 variations</strong></li>
+                        <li>Edit and customize</li>
+                        <li>Schedule in content calendar</li>
+                      </ol>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $49/month (or ChatGPT alternative)</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 3-5 hours/week</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Design & Visual AI Tools */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">Design & Visual AI Tools</h4>
+                  
+                  {/* 7. Midjourney */}
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">7. Midjourney (Custom Graphics)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Unique blog header images</li>
+                        <li>• Social media visuals</li>
+                        <li>• Brand photography (when you don't have photos)</li>
+                        <li>• Abstract concepts visualization</li>
+                        <li>• Book covers</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3 mb-3">
+                      <h6 className="text-xs font-semibold text-purple-200 mb-1">Prompting framework:</h6>
+                      <p className="text-gray-300 text-xs italic">"[Subject], [style], [lighting], [mood], [composition], [camera], --ar [aspect ratio]"</p>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Example prompts:</h6>
+                      <div className="space-y-2">
+                        <div className="bg-purple-800/20 border border-purple-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-purple-200 mb-1">LinkedIn Header:</h6>
+                          <p className="text-gray-300 text-xs italic">"/imagine professional entrepreneur working on laptop in modern office, natural lighting, cinematic, wide angle, inspirational mood --ar 16:9 --v 6"</p>
+                        </div>
+                        <div className="bg-purple-800/20 border border-purple-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-purple-200 mb-1">Instagram Brand Photo:</h6>
+                          <p className="text-gray-300 text-xs italic">"/imagine minimal workspace with coffee and notebook, soft morning light, pastel colors, overhead view, cozy aesthetic --ar 4:5 --v 6"</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $10-$60/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 4-6 hours/week (vs. stock photos/photoshoot)</p>
+                    </div>
+                  </div>
+
+                  {/* 8. Kittl */}
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">8. Kittl (Alternative to Canva)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Logo variations</li>
+                        <li>• Social media templates</li>
+                        <li>• Typography designs</li>
+                        <li>• Brand assets</li>
+                        <li>• Merchandise designs</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">AI features:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">AI Image Generator</strong>: Custom illustrations</li>
+                        <li>• <strong className="text-white">Magic Recoloring</strong>: Change entire design palette</li>
+                        <li>• <strong className="text-white">Background Remover</strong>: Clean product shots</li>
+                        <li>• <strong className="text-white">Text Effects</strong>: 3D, vintage, modern</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $15-$30/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 2-4 hours/week</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Analytics & Optimization AI */}
+                <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-yellow-400 mb-4">Analytics & Optimization AI</h4>
+                  
+                  {/* 9. Taplio */}
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-yellow-300 mb-3">9. Taplio (LinkedIn Growth)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Content inspiration from top performers</li>
+                        <li>• Post scheduling with best time prediction</li>
+                        <li>• AI writing assistant</li>
+                        <li>• Engagement tracking</li>
+                        <li>• Competitor analysis</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">AI features:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">Content Inspiration</strong>: See what's working in your niche</li>
+                        <li>• <strong className="text-white">AI Post Generator</strong>: Create posts from topics</li>
+                        <li>• <strong className="text-white">Best Time to Post</strong>: AI predicts optimal timing</li>
+                        <li>• <strong className="text-white">Engagement Predictions</strong>: Score posts before publishing</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">ROI:</strong> Clients average <strong className="text-white">3x engagement</strong> in 90 days</p>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $39-$149/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 5-7 hours/week</p>
+                    </div>
+                  </div>
+
+                  {/* 10. Tweet Hunter */}
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-yellow-300 mb-3">10. Tweet Hunter (Twitter/X Growth)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Viral tweet inspiration</li>
+                        <li>• Thread scheduling</li>
+                        <li>• Auto-retweet best content</li>
+                        <li>• CRM for Twitter connections</li>
+                        <li>• Analytics and growth tracking</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">AI features:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">AI Writing</strong>: Generate tweets from ideas</li>
+                        <li>• <strong className="text-white">Rewrite Engine</strong>: Improve existing tweets</li>
+                        <li>• <strong className="text-white">Thread Finisher</strong>: Auto-complete threads</li>
+                        <li>• <strong className="text-white">Inspiration Library</strong>: <strong className="text-white">3M+</strong> high-performing tweets</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $49-$149/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 5-8 hours/week</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Email & Automation AI */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">Email & Automation AI</h4>
+                  
+                  {/* 11. Instantly.ai */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">11. Instantly.ai (Email Outreach)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Cold email campaigns</li>
+                        <li>• AI email writer</li>
+                        <li>• Deliverability optimization</li>
+                        <li>• Lead generation</li>
+                        <li>• A/B testing</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">AI features:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">AI Email Generator</strong>: Create sequences from goals</li>
+                        <li>• <strong className="text-white">Inbox Rotation</strong>: Maintain sender reputation</li>
+                        <li>• <strong className="text-white">Smart Sending</strong>: Optimize send times</li>
+                        <li>• <strong className="text-white">Reply Detection</strong>: AI categorizes responses</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2 mb-3">
+                      <p className="text-gray-300 text-xs">Use case: Reach out to potential clients, podcast guests, partners</p>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $37-$97/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 3-5 hours/week</p>
+                    </div>
+                  </div>
+
+                  {/* 12. Beehiiv AI */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">12. Beehiiv AI (Newsletter)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Newsletter writing assistant</li>
+                        <li>• Subject line optimization</li>
+                        <li>• Content recommendations</li>
+                        <li>• Subscriber segmentation</li>
+                        <li>• Growth analytics</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">AI features:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">AI Writing Assistant</strong>: Draft newsletters</li>
+                        <li>• <strong className="text-white">Subject Line Scorer</strong>: Predict open rates</li>
+                        <li>• <strong className="text-white">Send Time Optimization</strong>: Best time per subscriber</li>
+                        <li>• <strong className="text-white">Content Recommendations</strong>: Suggest topics</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $39-$99/month (vs. ConvertKit)</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 2-4 hours/week</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Research & Learning AI */}
+                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-green-400 mb-4">Research & Learning AI</h4>
+                  
+                  {/* 13. Perplexity AI */}
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">13. Perplexity AI (Research)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Fact-checking for content</li>
+                        <li>• Market research</li>
+                        <li>• Competitor analysis</li>
+                        <li>• Trend identification</li>
+                        <li>• Source citation</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Why better than ChatGPT for research:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Real-time web access</li>
+                        <li>• Citations for all claims</li>
+                        <li>• Follow-up questions</li>
+                        <li>• Curated source selection</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded p-3 mb-3">
+                      <h6 className="text-xs font-semibold text-green-200 mb-1">Research prompts:</h6>
+                      <p className="text-gray-300 text-xs italic">"What are the top <strong className="text-white">10 personal branding trends</strong> in 2026 according to recent articles? Include statistics and cite sources."</p>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> $20/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 3-5 hours/week</p>
+                    </div>
+                  </div>
+
+                  {/* 14. Consensus */}
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">14. Consensus (Academic Research)</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Use cases:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Find scientific studies</li>
+                        <li>• Back claims with research</li>
+                        <li>• Authority building content</li>
+                        <li>• Evidence-based approaches</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">How it works:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Ask research question</li>
+                        <li>• AI searches academic papers</li>
+                        <li>• Summarizes findings</li>
+                        <li>• Provides paper links</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded p-3 mb-3">
+                      <h6 className="text-xs font-semibold text-green-200 mb-1">Example:</h6>
+                      <p className="text-gray-300 text-xs italic">"What does research say about optimal posting frequency for social media engagement?"</p>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Cost:</strong> Free-$7/month</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 2-3 hours/week</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Complete AI Tool Stack */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">Complete AI Tool Stack</h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-purple-300 mb-3">Essential Stack ($200-$300/month):</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside mb-3">
+                        <li>ChatGPT Plus (<strong className="text-white">$20</strong>)</li>
+                        <li>Canva Pro (<strong className="text-white">$13</strong>)</li>
+                        <li>Descript (<strong className="text-white">$24</strong>)</li>
+                        <li>Taplio or Tweet Hunter (<strong className="text-white">$49</strong>)</li>
+                        <li>Opus Clip (<strong className="text-white">$29</strong>)</li>
+                        <li>Perplexity AI (<strong className="text-white">$20</strong>)</li>
+                      </ol>
+                      <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                        <p className="text-gray-300 text-sm"><strong className="text-white">Total:</strong> ~$155/month</p>
+                        <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 25-35 hours/week</p>
+                        <p className="text-gray-300 text-sm"><strong className="text-white">ROI:</strong> If your time is worth $50/hour = <strong className="text-white">$1,250-$1,750/month</strong> value</p>
+                      </div>
+                    </div>
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-purple-300 mb-3">Advanced Stack ($500-$700/month):</h6>
+                      <p className="text-gray-300 text-sm mb-2">Add to essential:</p>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside mb-3" start={7}>
+                        <li>Jasper AI (<strong className="text-white">$49</strong>)</li>
+                        <li>Midjourney (<strong className="text-white">$30</strong>)</li>
+                        <li>Beehiiv AI (<strong className="text-white">$39</strong>)</li>
+                        <li>Instantly.ai (<strong className="text-white">$37</strong>)</li>
+                      </ol>
+                      <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                        <p className="text-gray-300 text-sm"><strong className="text-white">Total:</strong> ~$310/month</p>
+                        <p className="text-gray-300 text-sm"><strong className="text-white">Time saved:</strong> 35-45 hours/week</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* AI Workflow Examples */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">AI Workflow Examples</h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-3">Monday Morning Content Batching (2 hours):</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside mb-3">
+                        <li><strong className="text-white">ChatGPT</strong> (<strong className="text-white">15 min</strong>): Generate <strong className="text-white">30 content ideas</strong></li>
+                        <li><strong className="text-white">Perplexity AI</strong> (<strong className="text-white">15 min</strong>): Research trending topics</li>
+                        <li><strong className="text-white">Jasper</strong> (<strong className="text-white">30 min</strong>): Write <strong className="text-white">2,000-word</strong> article</li>
+                        <li><strong className="text-white">Canva</strong> (<strong className="text-white">20 min</strong>): Create <strong className="text-white">5 graphics</strong></li>
+                        <li><strong className="text-white">Taplio</strong> (<strong className="text-white">20 min</strong>): Schedule LinkedIn posts for week</li>
+                        <li><strong className="text-white">Tweet Hunter</strong> (<strong className="text-white">20 min</strong>): Schedule Twitter threads</li>
+                      </ol>
+                      <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                        <p className="text-white font-semibold text-sm">Result: Week of content created in <strong className="text-green-400">2 hours</strong> (vs. <strong className="text-white">10-15 hours</strong> manual)</p>
+                      </div>
+                    </div>
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-3">Video Content Creation (3 hours):</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside mb-3">
+                        <li><strong className="text-white">ChatGPT</strong> (<strong className="text-white">20 min</strong>): Script outline for video</li>
+                        <li><strong className="text-white">Record</strong> (<strong className="text-white">60 min</strong>): Film talking head video</li>
+                        <li><strong className="text-white">Descript</strong> (<strong className="text-white">30 min</strong>): Edit and clean up</li>
+                        <li><strong className="text-white">Opus Clip</strong> (<strong className="text-white">15 min</strong>): Generate <strong className="text-white">15 short clips</strong></li>
+                        <li><strong className="text-white">Canva</strong> (<strong className="text-white">20 min</strong>): Create thumbnail</li>
+                        <li><strong className="text-white">Upload & schedule</strong> (<strong className="text-white">15 min</strong>): YouTube + social clips</li>
+                      </ol>
+                      <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                        <p className="text-white font-semibold text-sm">Result: <strong className="text-green-400">1 long video + 15 clips</strong> (vs. <strong className="text-white">8-12 hours</strong> manual)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* AI Limitations & Human Touch */}
+                <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-yellow-400 mb-4">AI Limitations & Human Touch</h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">What AI is great for:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• First drafts</li>
+                        <li>• Ideation</li>
+                        <li>• Repurposing</li>
+                        <li>• Formatting</li>
+                        <li>• Research</li>
+                      </ul>
+                    </div>
+                    <div className="bg-red-900/20 border border-red-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-red-300 mb-2">What still needs human:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Personal stories</li>
+                        <li>• Unique insights</li>
+                        <li>• Brand voice refinement</li>
+                        <li>• Relationship building</li>
+                        <li>• Strategic decisions</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded p-4">
+                    <p className="text-white font-semibold text-center">Best practice: AI creates <strong className="text-blue-400">70%</strong>, you polish the final <strong className="text-blue-400">30%</strong></p>
+                  </div>
+                </div>
+
+                {/* The Future: AI Agents */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">The Future: AI Agents (2026+)</h4>
+                  
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-sm font-semibold text-purple-300 mb-3">Coming soon:</h6>
+                    <ul className="space-y-2 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">Personal AI Writer</strong>: Trained on all your content</li>
+                      <li>• <strong className="text-white">AI Video Editor</strong>: "Make me a viral reel about X"</li>
+                      <li>• <strong className="text-white">AI Community Manager</strong>: Auto-respond to DMs/comments</li>
+                      <li>• <strong className="text-white">AI Course Creator</strong>: Turn knowledge into courses automatically</li>
+                      <li>• <strong className="text-white">AI Brand Strategist</strong>: Recommend positioning and tactics</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded p-4">
+                    <p className="text-white font-semibold text-center">Bottom line: The creators who master AI tools will <strong className="text-blue-400">10x their output</strong> while others are still manually creating everything. Start with the essential stack and expand as you grow.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
