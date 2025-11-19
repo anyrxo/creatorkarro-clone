@@ -9,8 +9,8 @@ export default function RevenueCalculator() {
   const [followers, setFollowers] = useState(50000)
   const [niche, setNiche] = useState<'Lifestyle' | 'Tech' | 'Adult'>('Lifestyle')
   const [isSimulating, setIsSimulating] = useState(false)
-  const [currentMonth, setCurrentMonth] = useState(0)
-  const [monthlyRevenue, setMonthlyRevenue] = useState(0)
+  const [currentWeek, setCurrentWeek] = useState(0)
+  const [weeklyRevenue, setWeeklyRevenue] = useState(0)
   const [totalEarned, setTotalEarned] = useState(0)
   const [unlockedStreams, setUnlockedStreams] = useState<string[]>([])
   const [logs, setLogs] = useState<string[]>([])
@@ -27,46 +27,47 @@ export default function RevenueCalculator() {
     setLogs([])
     setUnlockedStreams([])
     setTotalEarned(0)
-    setMonthlyRevenue(0)
+    setWeeklyRevenue(0)
 
     let currentRev = 0
-    let currentFollowersSim = 0
-    const growthRate = 0.4 // 40% month over month
+    let currentFollowersSim = 100
+    const growthRate = 0.15 // 15% week over week (aggressive but possible for AI)
     
-    for (let i = 1; i <= 12; i++) {
-      setCurrentMonth(i)
-      await new Promise(r => setTimeout(r, 800))
+    const totalWeeks = 12
+    
+    for (let i = 1; i <= totalWeeks; i++) {
+      setCurrentWeek(i)
+      await new Promise(r => setTimeout(r, 400))
       
       // Growth
-      if (i === 1) currentFollowersSim = 500
-      else currentFollowersSim = currentFollowersSim * (1 + growthRate)
+      currentFollowersSim = currentFollowersSim * (1 + growthRate)
 
       // Revenue Streams Logic
       let streamRev = 0
       const newStreams: string[] = []
       
-      // 1. Affiliate (Unlocks at 1k)
-      if (currentFollowersSim > 1000) {
+      // 1. Affiliate (Unlocks at 500)
+      if (currentFollowersSim > 500) {
         if (!unlockedStreams.includes('Affiliate')) newStreams.push('Affiliate')
-        streamRev += (currentFollowersSim * 0.02) * nicheMultipliers[niche]
+        streamRev += (currentFollowersSim * 0.005) * nicheMultipliers[niche]
       }
 
-      // 2. Fanvue/Digital Products (Unlocks at 5k)
-      if (currentFollowersSim > 5000) {
+      // 2. Fanvue/Digital Products (Unlocks at 2k)
+      if (currentFollowersSim > 2000) {
         if (!unlockedStreams.includes('Digital Products')) newStreams.push('Digital Products')
-        streamRev += (currentFollowersSim * 0.15) * nicheMultipliers[niche]
+        streamRev += (currentFollowersSim * 0.04) * nicheMultipliers[niche]
       }
 
-      // 3. Brand Deals (Unlocks at 10k)
-      if (currentFollowersSim > 10000) {
+      // 3. Brand Deals (Unlocks at 5k)
+      if (currentFollowersSim > 5000) {
          if (!unlockedStreams.includes('Brand Deals')) newStreams.push('Brand Deals')
-         streamRev += (currentFollowersSim / 1000) * 20 * nicheMultipliers[niche] // $20 CPM roughly
+         streamRev += (currentFollowersSim / 1000) * 5 * nicheMultipliers[niche] // Weekly deal value
       }
 
       // Random Boost
       if (Math.random() > 0.8) {
         streamRev *= 1.5
-        setLogs(prev => [`🚀 Viral month! Income spiked.`, ...prev].slice(0, 3))
+        setLogs(prev => [`🚀 Viral week! Income spiked.`, ...prev].slice(0, 3))
       }
 
       if (newStreams.length > 0) {
@@ -75,7 +76,7 @@ export default function RevenueCalculator() {
       }
 
       currentRev = Math.round(streamRev)
-      setMonthlyRevenue(currentRev)
+      setWeeklyRevenue(currentRev)
       setTotalEarned(prev => prev + currentRev)
     }
     setIsSimulating(false)
@@ -94,7 +95,7 @@ export default function RevenueCalculator() {
               </div>
               <h3 className="text-3xl font-bold text-white mb-2">AI Money Printer</h3>
               <p className="text-zinc-400 text-sm">
-                Simulate a year of AI influencer growth and see how revenue streams stack up.
+                Simulate the first 12 weeks of AI influencer growth and see how quickly revenue streams unlock.
               </p>
            </div>
 
@@ -128,7 +129,7 @@ export default function RevenueCalculator() {
                  : 'bg-white text-black hover:bg-zinc-200 shadow-xl shadow-white/10'
              }`}
            >
-             {isSimulating ? 'Simulating Year 1...' : <><Play className="w-5 h-5" /> Start Simulation</>}
+             {isSimulating ? 'Simulating 12 Weeks...' : <><Play className="w-5 h-5" /> Start Simulation</>}
            </button>
         </div>
 
@@ -138,15 +139,15 @@ export default function RevenueCalculator() {
            {/* Header Stats */}
            <div className="flex justify-between items-start mb-8">
               <div>
-                 <p className="text-zinc-500 text-xs uppercase tracking-widest mb-1">Current Month</p>
+                 <p className="text-zinc-500 text-xs uppercase tracking-widest mb-1">Current Week</p>
                  <div className="text-4xl font-black text-white font-mono">
-                    {currentMonth === 0 ? "Start" : `Month ${currentMonth}`}
+                    {currentWeek === 0 ? "Start" : `Week ${currentWeek}`}
                  </div>
               </div>
               <div className="text-right">
-                 <p className="text-zinc-500 text-xs uppercase tracking-widest mb-1">Monthly Revenue</p>
+                 <p className="text-zinc-500 text-xs uppercase tracking-widest mb-1">Weekly Revenue</p>
                  <div className="text-5xl font-black text-green-400 font-mono tracking-tight">
-                    $<NumberTicker value={monthlyRevenue} className="text-green-400" />
+                    $<NumberTicker value={weeklyRevenue} className="text-green-400" />
                  </div>
               </div>
            </div>
@@ -178,7 +179,7 @@ export default function RevenueCalculator() {
            {/* Total Year Stats */}
            <div className="bg-zinc-900 rounded-xl p-6 border border-zinc-800 flex justify-between items-center">
               <div>
-                 <p className="text-zinc-400 text-sm">Total Year 1 Earnings</p>
+                 <p className="text-zinc-400 text-sm">Total Generated</p>
                  <p className="text-3xl font-bold text-white">${totalEarned.toLocaleString()}</p>
               </div>
               <div className="h-12 w-px bg-zinc-800 mx-4" />

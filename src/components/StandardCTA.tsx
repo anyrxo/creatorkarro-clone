@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import React from 'react'
 import { motion } from 'framer-motion'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import { ChevronRight } from 'lucide-react'
@@ -50,73 +51,80 @@ export default function StandardCTA({
     lg: 'px-8 py-4 text-lg'
   }
 
+  const renderButton = (children: React.ReactNode) => {
+     if (isPolar) {
+       return (
+         <a href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
+           {children}
+         </a>
+       )
+     }
+     return (
+       <Link href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
+         {children}
+       </Link>
+     )
+  }
+
   // PRIMARY: Shimmer gradient button (Get Started, Enroll Now)
   if (variant === 'primary') {
-    return (
-      <Link href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <ShimmerButton
-            className="shadow-2xl"
-            shimmerColor="#ffffff"
-            shimmerSize="0.1em"
-            background="linear-gradient(135deg, #2563eb, #9333ea)"
-            borderRadius="12px"
-          >
-            <span className={`font-bold flex items-center gap-2 ${sizeClasses[size]}`}>
-              {text}
-              {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}
-            </span>
-          </ShimmerButton>
-        </motion.div>
-      </Link>
+    return renderButton(
+      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <ShimmerButton
+          className="shadow-2xl"
+          shimmerColor="#ffffff"
+          shimmerSize="0.1em"
+          background="linear-gradient(135deg, #2563eb, #9333ea)"
+          borderRadius="12px"
+        >
+          <span className={`font-bold flex items-center gap-2 ${sizeClasses[size]}`}>
+            {text}
+            {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}
+          </span>
+        </ShimmerButton>
+      </motion.div>
     )
   }
 
   // SECONDARY: Solid gradient button (Learn More)
   if (variant === 'secondary') {
-    return (
-      <Link href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className={`font-semibold bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-xl transition-all duration-300 flex items-center gap-2 ${sizeClasses[size]}`}
-        >
-          {text}
-          {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}
-        </motion.button>
-      </Link>
+    return renderButton(
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className={`font-semibold bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-xl transition-all duration-300 flex items-center gap-2 ${sizeClasses[size]}`}
+      >
+        {text}
+        {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}
+      </motion.button>
     )
   }
 
   // OUTLINE: Border only button
   if (variant === 'outline') {
-    return (
-      <Link href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className={`font-semibold bg-transparent border-2 border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white rounded-xl transition-all duration-300 flex items-center gap-2 ${sizeClasses[size]}`}
-        >
-          {text}
-          {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}
-        </motion.button>
-      </Link>
+    return renderButton(
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className={`font-semibold bg-transparent border-2 border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white rounded-xl transition-all duration-300 flex items-center gap-2 ${sizeClasses[size]}`}
+      >
+        {text}
+        {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}
+      </motion.button>
     )
   }
 
   // TERTIARY: Text link with hover effect (View Course)
-  return (
-    <Link href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
-      <motion.span
-        whileHover={{ x: 5 }}
-        className={`font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center gap-2 ${
-          size === 'sm' ? 'text-sm' : size === 'lg' ? 'text-lg' : 'text-base'
-        }`}
-      >
-        {text}
-        {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}
-      </motion.span>
-    </Link>
+  return renderButton(
+    <motion.span
+      whileHover={{ x: 5 }}
+      className={`font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center gap-2 ${
+        size === 'sm' ? 'text-sm' : size === 'lg' ? 'text-lg' : 'text-base'
+      }`}
+    >
+      {text}
+      {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}
+    </motion.span>
   )
 }
 

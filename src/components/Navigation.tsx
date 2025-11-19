@@ -105,11 +105,13 @@ export default function Navigation() {
 
             {/* Desktop Join Button */}
             <div className="hidden md:block">
-              <Link
+              <a
                 href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
                 onClick={() => {
                   analytics.trackCTAClick('header_nav', 'JOIN', 'https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5')
                 }}
+                data-polar-checkout
+                data-polar-checkout-theme="dark"
               >
                 <ShimmerButton
                   className="shadow-lg"
@@ -122,7 +124,7 @@ export default function Navigation() {
                     JOIN EMPIRE
                   </span>
                 </ShimmerButton>
-              </Link>
+              </a>
             </div>
 
             {/* Mobile menu button */}

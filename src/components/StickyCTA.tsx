@@ -58,14 +58,24 @@ export default function StickyCTA({
                 )}
               </div>
             </div>
-            <Link 
-              href={ctaLink}
-              {...polarProps as any}
-              className="bg-white text-black px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 hover:bg-zinc-200 transition-colors"
-            >
-              {ctaText}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            {isPolar ? (
+              <a
+                href={ctaLink}
+                {...polarProps as any}
+                className="bg-white text-black px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 hover:bg-zinc-200 transition-colors"
+              >
+                {ctaText}
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            ) : (
+              <Link 
+                href={ctaLink}
+                className="bg-white text-black px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 hover:bg-zinc-200 transition-colors"
+              >
+                {ctaText}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            )}
           </div>
         </motion.div>
       )}

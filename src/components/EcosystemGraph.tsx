@@ -128,12 +128,14 @@ export default function EcosystemGraph({ currentCourseId }: EcosystemGraphProps)
              <p className="text-zinc-400 text-sm mb-6">
                Why pay for just one engine when you can get the entire fleet?
              </p>
-             <Link 
+             <a 
                href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
                className="w-full md:w-auto bg-white text-black px-8 py-3 rounded-xl font-bold hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2"
+               data-polar-checkout
+               data-polar-checkout-theme="dark"
              >
                Upgrade to Empire Pass <ArrowRight className="w-4 h-4" />
-             </Link>
+             </a>
           </div>
         </div>
       </div>

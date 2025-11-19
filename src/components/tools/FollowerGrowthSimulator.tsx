@@ -6,26 +6,27 @@ import { TrendingUp, Zap, Clock, Play, RotateCcw, CheckCircle2, Award, DollarSig
 import NumberTicker from '@/components/magicui/number-ticker'
 
 export default function FollowerGrowthSimulator() {
-  const [months, setMonths] = useState(6)
+  const [days, setDays] = useState(30)
   const [dailyEffort, setDailyEffort] = useState(2) // hours
   const [contentQuality, setContentQuality] = useState<'Average' | 'Good' | 'God Tier'>('Good')
   const [isSimulating, setIsSimulating] = useState(false)
   const [simulatedData, setSimulatedData] = useState<number[]>([])
-  const [simulationLog, setSimulationLog] = useState<{month: number, message: string, type: 'good' | 'neutral' | 'bad'}[]>([])
+  const [simulationLog, setSimulationLog] = useState<{day: number, message: string, type: 'good' | 'neutral' | 'bad'}[]>([])
   const [currentFollowers, setCurrentFollowers] = useState(100)
   const [estimatedRevenue, setEstimatedRevenue] = useState(0)
 
   const containerRef = useRef<HTMLDivElement>(null)
 
-  // Pre-calculate curve for "Old Way" baseline
-  const manualData = Array.from({ length: 12 }, (_, i) => {
-    return Math.round(100 * Math.pow(1.05 + (dailyEffort * 0.01), i + 1))
+  // Pre-calculate curve for "Old Way" baseline (slower, linear-ish growth)
+  const manualData = Array.from({ length: 30 }, (_, i) => {
+    // Old way: roughly 1-2 followers per day compounding very slowly
+    return Math.round(100 + (i * 5) * (1 + dailyEffort * 0.1))
   })
 
   const qualityMultipliers: Record<string, number> = {
-    'Average': 1.1,
-    'Good': 1.3,
-    'God Tier': 1.6
+    'Average': 1.05,
+    'Good': 1.15,
+    'God Tier': 1.30
   }
 
   const runSimulation = async () => {
@@ -40,42 +41,57 @@ export default function FollowerGrowthSimulator() {
     let revenue = 0
     const data = []
     
-    for (let i = 1; i <= months; i++) {
+    // Faster simulation step
+    const stepDelay = 100 
+    
+    for (let i = 1; i <= days; i++) {
       // Simulate delay
-      await new Promise(r => setTimeout(r, 600))
+      await new Promise(r => setTimeout(r, stepDelay))
 
-      // Base Growth
-      const baseGrowth = current * 0.2 // 20% base
-      const effortBonus = current * (dailyEffort * 0.05)
-      const qualityBonus = current * (qualityMultipliers[contentQuality] - 1)
+      // Viral Growth Model
+      // Base growth: 5% - 15% daily (very aggressive for "Ignited")
+      const baseRate = 0.05 
+      const effortBonus = dailyEffort * 0.01
+      const qualityBonus = qualityMultipliers[contentQuality] - 1
       
-      let monthlyGrowth = baseGrowth + effortBonus + qualityBonus
+      let dailyGrowthRate = baseRate + effortBonus + qualityBonus
+      let dailyGrowth = current * dailyGrowthRate
+      
       let eventMsg = null
       let eventType: 'good' | 'neutral' | 'bad' = 'neutral'
 
-      // Random Events
+      // Random Viral Events
       const rand = Math.random()
-      if (rand > 0.7) {
-        const spike = Math.floor(current * 0.5)
-        monthlyGrowth += spike
-        eventMsg = "🚀 Viral Reel Exploded!"
+      
+      // Higher chance of viral spikes with better quality
+      const viralThreshold = contentQuality === 'God Tier' ? 0.6 : contentQuality === 'Good' ? 0.75 : 0.9
+
+      if (rand > viralThreshold) {
+        const spikeMultiplier = Math.random() * 0.5 + 0.2 // 20-70% boost
+        const spike = Math.floor(current * spikeMultiplier)
+        dailyGrowth += spike
+        
+        if (spike > 1000) eventMsg = "🚀 Viral Reel Exploded!"
+        else if (spike > 500) eventMsg = "🔥 Explore Page Hit!"
         eventType = 'good'
-      } else if (rand > 0.9) {
-        const spike = Math.floor(current * 0.8)
-        monthlyGrowth += spike
-        eventMsg = "🔥 Collab with big creator!"
-        eventType = 'good'
-      } else if (i % 3 === 0) {
-         eventMsg = "📈 Algorithm boost detected."
-         monthlyGrowth *= 1.2
-         eventType = 'good'
+      } else if (i % 7 === 0) {
+         // Weekly momentum
+         dailyGrowth *= 1.2
+         if (current > 1000) {
+             eventMsg = "📈 Weekly Algorithm Boost"
+             eventType = 'good'
+         }
       }
 
-      current += monthlyGrowth
+      current += dailyGrowth
       
-      // Revenue Calculation (approx $1 per 100 followers/mo initially, scaling up)
-      const monthRev = (current / 1000) * 50 // $50 CPM equivalent roughly
-      revenue += monthRev
+      // Revenue Calculation
+      // Unlocks after 1000 followers
+      if (current > 1000) {
+          // Approx $10 per 1000 followers daily potential (very rough estimate for high engagement)
+          const dailyRev = (current / 1000) * (Math.random() * 10 + 5) 
+          revenue += dailyRev
+      }
 
       data.push(current)
       setSimulatedData([...data])
@@ -83,7 +99,7 @@ export default function FollowerGrowthSimulator() {
       setEstimatedRevenue(Math.round(revenue))
 
       if (eventMsg) {
-        setSimulationLog(prev => [{month: i, message: eventMsg!, type: eventType}, ...prev].slice(0, 3))
+        setSimulationLog(prev => [{day: i, message: eventMsg!, type: eventType}, ...prev].slice(0, 3))
       }
     }
 
@@ -98,9 +114,6 @@ export default function FollowerGrowthSimulator() {
     setIsSimulating(false)
   }
 
-  // Calculate potential max for progress bars
-  const maxPotential = 100 * Math.pow(1 + (0.2 + (8 * 0.05) + 0.6), 12) // Rough max
-
   return (
     <div ref={containerRef} className="bg-zinc-900/80 backdrop-blur-md border border-zinc-800 rounded-3xl p-6 md:p-8 max-w-5xl mx-auto shadow-2xl shadow-orange-900/20 relative overflow-hidden">
       {/* Background Effects */}
@@ -112,7 +125,7 @@ export default function FollowerGrowthSimulator() {
         <div className="lg:col-span-4 space-y-8 relative z-10">
           <div>
              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 text-orange-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
-               <Zap className="w-3 h-3" /> God Mode Simulator
+               <Zap className="w-3 h-3" /> Ignited Simulator
              </div>
              <h3 className="text-3xl font-bold text-white mb-2">Simulate Your Empire</h3>
              <p className="text-zinc-400 text-sm leading-relaxed">
@@ -127,14 +140,14 @@ export default function FollowerGrowthSimulator() {
                  <label className="text-sm font-medium text-zinc-300 flex items-center gap-2">
                    <Clock className="w-4 h-4 text-orange-500" /> Duration
                  </label>
-                 <span className="text-xs font-bold bg-zinc-800 text-white px-2 py-1 rounded">{months} Months</span>
+                 <span className="text-xs font-bold bg-zinc-800 text-white px-2 py-1 rounded">{days} Days</span>
               </div>
               <input 
                 type="range" 
-                min="3" 
-                max="12" 
-                value={months} 
-                onChange={(e) => setMonths(parseInt(e.target.value))}
+                min="7" 
+                max="60" 
+                value={days} 
+                onChange={(e) => setDays(parseInt(e.target.value))}
                 disabled={isSimulating}
                 className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-orange-500 disabled:opacity-50"
               />
@@ -230,7 +243,7 @@ export default function FollowerGrowthSimulator() {
                  <div className="text-3xl md:text-4xl font-black text-orange-400 flex items-baseline gap-1">
                     {simulatedData.length > 0 ? (
                       <>
-                        <NumberTicker value={Math.round(currentFollowers / (manualData[months-1] || 100))} className="text-orange-400" />x
+                        <NumberTicker value={Math.round(currentFollowers / (manualData[days-1] || 100))} className="text-orange-400" />x
                       </>
                     ) : (
                       "1x"
@@ -247,7 +260,10 @@ export default function FollowerGrowthSimulator() {
               </div>
 
               {/* Bars */}
-              {Array.from({ length: months }).map((_, i) => {
+              {Array.from({ length: days }).map((_, i) => {
+                // Only show some bars if too many days to fit nicely
+                if (days > 40 && i % 2 !== 0) return null
+
                 const hasData = i < simulatedData.length
                 const val = simulatedData[i] || 0
                 // Scale relative to current max to keep chart looking full
@@ -280,7 +296,10 @@ export default function FollowerGrowthSimulator() {
                        )}
                     </motion.div>
                     
-                    <div className="text-[10px] text-zinc-600 text-center mt-2 font-mono">M{i+1}</div>
+                    {/* Show label for every 5th day or if sparse */}
+                    {(i + 1) % 5 === 0 && (
+                       <div className="text-[10px] text-zinc-600 text-center mt-2 font-mono absolute top-full left-1/2 -translate-x-1/2">D{i+1}</div>
+                    )}
                   </div>
                 )
               })}
@@ -292,7 +311,7 @@ export default function FollowerGrowthSimulator() {
                <div className="absolute top-4 right-4 flex flex-col gap-2 items-end pointer-events-none">
                  {simulationLog.map((log, i) => (
                    <motion.div
-                     key={`${log.month}-${i}`}
+                     key={`${log.day}-${i}`}
                      initial={{ opacity: 0, x: 20, scale: 0.9 }}
                      animate={{ opacity: 1, x: 0, scale: 1 }}
                      exit={{ opacity: 0, y: -20 }}
@@ -302,7 +321,7 @@ export default function FollowerGrowthSimulator() {
                      `}
                    >
                      {log.type === 'good' && <CheckCircle2 className="w-3 h-3" />}
-                     {log.message}
+                     Day {log.day}: {log.message}
                    </motion.div>
                  ))}
                </div>
