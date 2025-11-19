@@ -15,6 +15,7 @@ import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
 import ScrambleText from '@/components/magicui/scramble-text'
 import HeroBackground from '@/components/HeroBackground'
+import StickyCTA from '@/components/StickyCTA'
 
 export default function BlogPage() {
   const searchParams = useSearchParams()
@@ -125,6 +126,12 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-dark w-full overflow-x-hidden">
+      <StickyCTA 
+        price="$99/mo" 
+        originalPrice="$399" 
+        ctaLink="/checkout?course=empire-bundle"
+        productName="Empire Pass All Access" 
+      />
       {/* MAGICAL HEADER */}
       <section className="relative py-12 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <HeroBackground variant="default" />
@@ -603,20 +610,18 @@ export default function BlogPage() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <ScrollAnimation animation="fade-up" delay={500}>
-                    <Link href="/instagram-ignited" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-xl">
-                      <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 focus:outline-none">
-                        Start Learning Today
-                      </button>
-                    </Link>
-                  </ScrollAnimation>
-
-                  <ScrollAnimation animation="fade-up" delay={600}>
-                    <Link href="/digital-products" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-xl">
-                      <TiltCard>
-                        <button className="border border-blue-500/50 bg-zinc-800/50 backdrop-blur-sm text-blue-300 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-600/10 hover:border-blue-400 transition-all duration-300 focus:outline-none">
-                          Browse Products
-                        </button>
-                      </TiltCard>
+                    <Link href="/checkout?course=empire-bundle" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full">
+                      <ShimmerButton
+                        className="shadow-lg"
+                        shimmerColor="#ffffff"
+                        shimmerSize="0.1em"
+                        background="linear-gradient(135deg, #2563eb, #9333ea)"
+                        borderRadius="9999px"
+                      >
+                        <span className="whitespace-nowrap text-lg font-bold px-8 py-4">
+                          Get The Empire Pass
+                        </span>
+                      </ShimmerButton>
                     </Link>
                   </ScrollAnimation>
                 </div>

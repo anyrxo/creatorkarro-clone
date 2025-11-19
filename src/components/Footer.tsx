@@ -149,19 +149,22 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Disclaimers */}
+          {/* Disclaimers */}
         <div className="pt-6 border-t border-zinc-800 mb-6">
-          <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 max-w-5xl mx-auto">
-            <h4 className="text-white font-semibold mb-3 text-sm">Income & Results Disclaimer</h4>
-            <div className="text-zinc-400 text-xs leading-relaxed space-y-2">
+          <div className="bg-zinc-950/50 border border-zinc-800/50 rounded-xl p-6 max-w-5xl mx-auto">
+            <h4 className="text-zinc-500 font-bold mb-3 text-xs uppercase tracking-widest flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-zinc-600" />
+              Legal Disclaimer
+            </h4>
+            <div className="text-zinc-500 text-[10px] leading-relaxed space-y-2 font-mono">
               <p>
-                <strong>Individual results vary.</strong> Any income examples, earnings, or testimonials shown on this site represent exceptional results and do not guarantee that you or others will achieve the same or similar outcomes. Your results depend on many factors including your effort, skill level, background, market conditions, and other variables beyond our control.
+                <strong>NOT FINANCIAL ADVICE.</strong> The content provided on IImagined.ai and associated channels is for educational and informational purposes only. We do not guarantee any specific financial results. Your success depends on your execution, market conditions, and individual effort.
               </p>
               <p>
-                <strong>Educational Content:</strong> Our courses provide educational information and strategies for building online businesses, automation agencies, and digital products. Success requires dedication, consistent effort, and the application of taught principles. We do not guarantee specific results or income levels. The purchase of any product or service should be made based on your own evaluation and judgment.
+                <strong>EARNINGS DISCLOSURE.</strong> Any revenue figures mentioned are from our own results or verified student case studies. These are exceptional results and not typical. Most people who buy "how-to" information get little to no results because they fail to take action.
               </p>
               <p>
-                <strong>AI & Automation Services:</strong> Building an AI automation agency or consulting business requires learning technical skills, client acquisition, and business development. Results depend on your ability to acquire clients, deliver services, and scale your business effectively.
+                <strong>AI & AUTOMATION.</strong> Strategies involving AI and third-party platforms (Instagram, Fanvue, etc.) are subject to those platforms' Terms of Service. We teach you how to use these tools effectively, but we do not own or control them.
               </p>
             </div>
           </div>

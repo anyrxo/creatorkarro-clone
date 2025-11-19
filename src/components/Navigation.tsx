@@ -6,6 +6,8 @@ import { useState } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import * as analytics from '@/lib/analytics'
 
+import ShimmerButton from '@/components/magicui/shimmer-button'
+
 interface DropdownItem {
   name: string
   href: string
@@ -104,16 +106,22 @@ export default function Navigation() {
             {/* Desktop Join Button */}
             <div className="hidden md:block">
               <Link
-                href="https://whop.com/iimagined/all-access-reimagined/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 rounded-full font-semibold"
+                href="/checkout?course=empire-bundle"
                 onClick={() => {
-                  analytics.trackCTAClick('header_nav', 'JOIN', 'https://whop.com/iimagined/all-access-reimagined/')
-                  analytics.trackOutboundLink('https://whop.com/iimagined/all-access-reimagined/', 'JOIN', 'header_nav')
+                  analytics.trackCTAClick('header_nav', 'JOIN', '/checkout?course=empire-bundle')
                 }}
               >
-                JOIN
+                <ShimmerButton
+                  className="shadow-lg"
+                  shimmerColor="#ffffff"
+                  shimmerSize="0.1em"
+                  background="linear-gradient(135deg, #2563eb, #9333ea)"
+                  borderRadius="9999px"
+                >
+                  <span className="whitespace-nowrap text-sm font-bold px-6 py-2">
+                    JOIN EMPIRE
+                  </span>
+                </ShimmerButton>
               </Link>
             </div>
 
