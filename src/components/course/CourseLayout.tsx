@@ -61,37 +61,37 @@ export function ModuleCard({
           <div className={`relative ${bgColor} border ${borderColor} rounded-lg p-8 card-premium transition-all duration-500`}>
             <ValueBadge value={value} />
             <div className="flex items-start space-x-6">
-        <div className={`${color.replace('text-', 'bg-')} text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0`}>
-          {number}
-        </div>
-        <div className="flex-1 pr-8"> {/* Add right padding to prevent overlap with badge */}
-          <h3 className={`text-2xl font-bold mb-4 ${color}`}>{title}</h3>
-          <p className="text-gray-300 mb-4">{description}</p>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <h4 className="font-semibold text-white mb-2">What You'll Learn:</h4>
-              <ul className="text-sm text-gray-400 space-y-1">
-                {whatYouLearn.map((item, index) => (
-                  <li key={index}>• {item}</li>
-                ))}
-              </ul>
-            </div>
-            {(deliverables.length > 0 || tools.length > 0) && (
-              <div>
-                <h4 className="font-semibold text-white mb-2">{deliverables.length > 0 ? 'Deliverables:' : 'Tools Included:'}</h4>
-                <ul className="text-sm text-gray-400 space-y-1">
-                  {(deliverables.length > 0 ? deliverables : tools).map((item, index) => (
-                    <li key={index}>• {item}</li>
-                  ))}
-                </ul>
+              <div className={`${color.replace('text-', 'bg-')} text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0`}>
+                {number}
               </div>
-            )}
+              <div className="flex-1 pr-8"> {/* Add right padding to prevent overlap with badge */}
+                <h3 className={`text-2xl font-bold mb-4 ${color}`}>{title}</h3>
+                <p className="text-gray-300 mb-4">{description}</p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-semibold text-white mb-2">What You'll Learn:</h4>
+                    <ul className="text-sm text-gray-400 space-y-1">
+                      {whatYouLearn.map((item, index) => (
+                        <li key={index}>• {item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  {(deliverables.length > 0 || tools.length > 0) && (
+                    <div>
+                      <h4 className="font-semibold text-white mb-2">{deliverables.length > 0 ? 'Deliverables:' : 'Tools Included:'}</h4>
+                      <ul className="text-sm text-gray-400 space-y-1">
+                        {(deliverables.length > 0 ? deliverables : tools).map((item, index) => (
+                          <li key={index}>• {item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    </SpotlightCard>
-    </TiltCard>
+        </SpotlightCard>
+      </TiltCard>
     </ScrollAnimation>
   )
 }
@@ -223,15 +223,13 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
       {options.map((option, index) => (
         <div
           key={index}
-          className={`${
-            option.disabled 
-              ? 'bg-zinc-900/60 border border-red-500/30' 
-              : option.popular 
-                ? 'bg-zinc-900/60 border border-purple-500/50' 
+          className={`${option.disabled
+              ? 'bg-zinc-900/60 border border-red-500/30'
+              : option.popular
+                ? 'bg-zinc-900/60 border border-purple-500/50'
                 : 'bg-zinc-900/60 border border-green-500/50'
-          } backdrop-blur-sm rounded-2xl p-8 text-center hover:scale-105 transition-all duration-300 scroll-fade-up relative ${
-            isVisible ? `visible scroll-stagger-${index + 1}` : ''
-          }`}
+            } backdrop-blur-sm rounded-2xl p-8 text-center hover:scale-105 transition-all duration-300 scroll-fade-up relative ${isVisible ? `visible scroll-stagger-${index + 1}` : ''
+            }`}
         >
           {option.badge && (
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -242,33 +240,31 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
           )}
 
           <div className="mb-8">
-            <h3 className={`text-2xl font-bold mb-2 ${
-              option.disabled ? 'text-red-400' : 
-              option.popular ? 'text-purple-400' : 
-              'text-green-400'
-            }`}>
+            <h3 className={`text-2xl font-bold mb-2 ${option.disabled ? 'text-red-400' :
+                option.popular ? 'text-purple-400' :
+                  'text-green-400'
+              }`}>
               {option.name}
             </h3>
             <p className="text-gray-300 mb-4 text-sm">{option.description}</p>
-            
+
             {option.originalPrice && (
               <div className="flex items-center justify-center space-x-3 mb-2">
                 <span className="text-gray-400 line-through text-lg">{option.originalPrice}</span>
                 {!option.disabled && <span className="text-green-400 font-bold text-sm">Save {parseInt(option.originalPrice.replace('$', '').replace(',', '')) - parseInt(option.price.replace('$', '').replace(',', '')) > 0 ? `$${parseInt(option.originalPrice.replace('$', '').replace(',', '')) - parseInt(option.price.replace('$', '').replace(',', ''))}` : ''}!</span>}
               </div>
             )}
-            
-            <div className={`text-4xl font-bold mb-2 ${
-              option.disabled ? 'text-red-400' : 
-              option.popular ? 'text-purple-400' : 
-              'text-green-400'
-            }`}>
+
+            <div className={`text-4xl font-bold mb-2 ${option.disabled ? 'text-red-400' :
+                option.popular ? 'text-purple-400' :
+                  'text-green-400'
+              }`}>
               {option.price}
             </div>
             <p className="text-gray-400 text-sm">
-              {option.disabled ? 'LOST REVENUE' : 
-               option.description === 'PER MONTH' ? 'PER MONTH' : 
-               'ONE-TIME PAYMENT'}
+              {option.disabled ? 'LOST REVENUE' :
+                option.description === 'PER MONTH' ? 'PER MONTH' :
+                  'ONE-TIME PAYMENT'}
             </p>
           </div>
 
@@ -286,9 +282,9 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
             </div>
           ) : option.buttonLink && option.buttonLink.includes('polar.sh') ? (
             <div className="w-full">
-              <a 
-                href={option.buttonLink} 
-                data-polar-checkout 
+              <a
+                href={option.buttonLink}
+                data-polar-checkout
                 data-polar-checkout-theme="dark"
                 className="block w-full"
               >
@@ -306,8 +302,8 @@ export function PricingComparison({ options, isVisible }: PricingComparisonProps
               </a>
             </div>
           ) : option.buttonLink && option.buttonText ? (
-            <Link 
-              href={option.buttonLink} 
+            <Link
+              href={option.buttonLink}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full"
@@ -364,16 +360,16 @@ interface HeroSectionProps {
   isVisible: boolean
 }
 
-export function HeroSection({ 
-  badge, 
-  badgeColor = 'bg-green-600/30 text-green-300', 
-  title, 
-  description, 
-  ctaText, 
-  ctaLink, 
-  socialProof, 
+export function HeroSection({
+  badge,
+  badgeColor = 'bg-green-600/30 text-green-300',
+  title,
+  description,
+  ctaText,
+  ctaLink,
+  socialProof,
   stats,
-  isVisible 
+  isVisible
 }: HeroSectionProps) {
   return (
     <section className="section-spacing">
@@ -385,8 +381,11 @@ export function HeroSection({
             </div>
           )}
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            {title}
+          <h1
+            className="text-4xl md:text-6xl font-bold mb-6 leading-tight"
+            dangerouslySetInnerHTML={typeof title === 'string' ? { __html: title } : undefined}
+          >
+            {typeof title !== 'string' ? title : null}
           </h1>
 
           <p className="text-xl text-gray-400 mb-8">
@@ -460,7 +459,7 @@ export function SectionHeader({ badge, badgeColor = 'text-gray-400', title, desc
   return (
     <div className={`text-center mb-16 scroll-fade-up ${isVisible ? 'visible' : ''}`}>
       {badge && <div className={`inline-block text-sm ${badgeColor} uppercase tracking-wider mb-4 font-semibold`}>{badge}</div>}
-      <h2 
+      <h2
         className="text-4xl md:text-5xl font-bold mb-6"
         dangerouslySetInnerHTML={typeof title === 'string' ? { __html: title } : undefined}
       >
