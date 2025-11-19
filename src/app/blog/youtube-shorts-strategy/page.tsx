@@ -435,8 +435,8 @@ export default function YouTubeShortsStrategy() {
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Complete YouTube Shorts FAQ</h2>
 
             <div className="space-y-8">
-            <div className="bg-zinc-900 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-red-400 mb-6">How much money can you actually make from YouTube Shorts in 2026?</h3>
+                <div className="bg-zinc-900 rounded-xl p-8">
+                    <h3 className="text-2xl font-bold text-red-400 mb-6">How much money can you actually make from YouTube Shorts in 2026?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
                         <strong className="text-white font-semibold">YouTube Shorts in 2026 can generate $3,000-$20,000/month through multiple revenue streams.</strong> After analyzing 500+ viral Shorts creators and growing 3 channels to 100K+ subscribers, here's the complete monetization breakdown:
