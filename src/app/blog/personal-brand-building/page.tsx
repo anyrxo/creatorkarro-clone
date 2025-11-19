@@ -853,263 +853,379 @@ export default function PersonalBrandBuilding() {
 
             <div className="bg-zinc-800 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-purple-400 mb-4">How do I find my unique positioning and niche?</h3>
-              <div className="text-gray-300 space-y-4">
-                <p className="leading-relaxed">{`**Finding your unique positioning is the difference between struggling for years and attracting dream clients in months.** After helping 200+ creators find their niche, here's the proven framework:
-
-**The Positioning Discovery Process**
-
-**Phase 1: Skills & Experience Audit**
-
-Most people think they need to be the best in the world. Wrong. You need to be the best for a specific group of people.
-
-**The 3-Circle Exercise**:
-
-Circle 1: What you're good at (skills)
-- List 10-15 skills you've developed
-- Include professional + personal skills
-- Don't filter yet, just brainstorm
-
-Circle 2: What you enjoy doing (passion)
-- What could you talk about for hours?
-- What do you research for fun?
-- What topics energize you?
-
-Circle 3: What people will pay for (market demand)
-- What do people ask you for help with?
-- What problems cost people money/time?
-- What industries are growing?
-
-Your positioning lives in the overlap of all three circles.
-
-**Example**:
-- Skills: Web development, design, marketing
-- Passion: Helping small businesses, local community
-- Market: Local businesses struggling with online presence
-- Positioning: "I help local restaurants get 50+ online orders/week through optimized websites"
-
-**Phase 2: Market Research Framework**
-
-Don't guess what people want. Research what they're already buying.
-
-**Step 1: Competitor Analysis**
-
-Find 5-10 people doing something similar:
-1. What do they charge?
-2. What results do they promise?
-3. What's their unique angle?
-4. What gaps exist in their offerings?
-5. What complaints do their customers have?
-
-**Step 2: Audience Research**
-
-Spend 5 hours in these places:
-- Reddit communities where your audience hangs out
-- Facebook groups discussing their problems
-- Twitter threads about their pain points
-- Amazon reviews of books they buy
-- YouTube comments on relevant videos
-
-Look for:
-- Repeated frustrations
-- Questions asked multiple times
-- Problems they're willing to pay to solve
-- Language they use (write this down!)
-
-**Real example**: Creator researching productivity niche found:
-- "I know what to do, I just can't stick to it" (repeated 47 times)
-- "All these systems are too complicated" (repeated 33 times)
-- "I need something that works with ADHD" (repeated 28 times)
-
-This led to positioning: "Simple productivity systems for people with ADHD who've tried everything"
-
-**Phase 3: The Unique Positioning Formula**
-
-Now combine everything into your positioning statement:
-
-**Formula**:
-I help [SPECIFIC WHO] achieve [SPECIFIC WHAT] through [UNIQUE HOW] so they can [ULTIMATE WHY]
-
-**Breaking down each element**:
-
-**SPECIFIC WHO** (avoid "anyone who wants to"):
-- Bad: "Anyone who wants to get fit"
-- Good: "Busy executives over 40 who travel 50%+ of the time"
-
-**SPECIFIC WHAT** (measurable outcome):
-- Bad: "Feel better about themselves"
-- Good: "Lose 20 pounds without giving up business dinners"
-
-**UNIQUE HOW** (your methodology):
-- Bad: "Diet and exercise"
-- Good: "The Road Warrior Protocol (15-min hotel room workouts + flexible eating)"
-
-**ULTIMATE WHY** (bigger transformation):
-- Bad: "So they look good"
-- Good: "So they can keep up with their kids and lead with energy"
-
-**Full positioning**:
-"I help busy executives over 40 who travel 50%+ lose 20 pounds using the Road Warrior Protocol (15-min hotel room workouts + flexible eating) so they can keep up with their kids and lead with energy"
-
-**Phase 4: Positioning Validation**
-
-Before going all-in, validate your positioning:
-
-**Test 1: The DM Test** (1 week)
-- Message 20 people in your target audience
-- Share your positioning
-- Ask: "Is this something you'd want help with?"
-- Goal: 50%+ say "yes, tell me more"
-
-**Test 2: The Content Test** (2 weeks)
-- Create 10 posts speaking directly to this niche
-- Track engagement vs. your previous content
-- Goal: 2x engagement rate
-
-**Test 3: The Offer Test** (1 week)
-- Create a simple paid offer ($50-$200)
-- Share with engaged audience
-- Goal: 1-3 sales = validated
-
-If tests fail, pivot one element:
-- Narrow the WHO (more specific)
-- Change the WHAT (different problem)
-- Adjust the HOW (different method)
-
-**The Riches in Niches Matrix**
-
-Here are real positioning pivots that 10x'd results:
-
-**Broad → Specific**:
-- "Marketing consultant" → "LinkedIn ghostwriter for venture-backed SaaS CEOs"
-- Result: $5K/month → $45K/month
-
-**Industry → Sub-Industry**:
-- "Fitness coach" → "Strength training for women over 50 recovering from injuries"
-- Result: 200 followers → 15K followers in 8 months
-
-**General → Methodology**:
-- "Business coach" → "The 4-Hour Workweek implementer for service businesses"
-- Result: $3K/month → $28K/month
-
-**Problem → Specific Solution**:
-- "Help people make money online" → "Teach designers to get first $10K client in 90 days"
-- Result: 0 sales → $127K first year
-
-**Positioning Red Flags**
-
-Avoid these positioning mistakes:
-
-1. **Too broad**: "I help everyone with everything"
-- Fix: Choose ONE avatar for first 12 months
-
-2. **No clear outcome**: "I help people be better"
-- Fix: Define specific, measurable result
-
-3. **Commodity positioning**: "I do the same thing as 1,000 others"
-- Fix: Add unique methodology or target market
-
-4. **Passion without market**: "I love this but no one will pay"
-- Fix: Find where your passion intersects with market demand
-
-5. **Too narrow**: "I help 5 people in the world"
-- Fix: Expand slightly while staying specific
-
-**Advanced Positioning Strategies**
-
-**The Intersection Strategy**:
-Combine 2-3 seemingly unrelated skills:
-
-Examples:
-- "Developer + Fitness" = "Coding bootcamp for people who want to stay fit while learning"
-- "Therapist + Business" = "Mental health coaching for entrepreneurs"
-- "Chef + Marketing" = "Food photography for restaurant Instagram growth"
-
-The intersection is often blue ocean (no competition).
-
-**The Transformation Story Strategy**:
-Your positioning comes from your own transformation:
-
-Framework:
-- What problem did you solve for yourself?
-- How long did it take you?
-- What method did you use?
-- Who else has this problem?
-
-Example: "I went from 20K to 200K Twitter followers in 14 months using the Engagement Loop Method. Now I teach B2B founders to do the same."
-
-**The Contrarian Strategy**:
-Take a popular belief and challenge it:
-
-Examples:
-- "You don't need 10K followers to make $10K/month"
-- "Cold email is better than content for B2B leads"
-- "You should charge MORE, not less, as a beginner"
-
-This positioning attracts people tired of traditional advice.
-
-**Positioning Evolution Timeline**
-
-Your positioning will evolve. Here's the typical journey:
-
-**Months 1-6**: Narrow positioning
-- Focus on ONE specific niche
-- Build case studies and testimonials
-- Establish authority in small pond
-
-**Months 7-12**: Expand slightly
-- Serve adjacent markets
-- Add related services
-- Test new offers
-
-**Year 2+**: Broader positioning
-- Become known in wider industry
-- Multiple revenue streams
-- Thought leadership status
-
-Example journey:
-- Year 1: "LinkedIn ghostwriter for SaaS founders"
-- Year 2: "Content strategist for B2B tech executives"
-- Year 3: "Personal branding for tech leaders"
-
-**Your Positioning Worksheet**
-
-Answer these to find your positioning:
-
-1. **Skills Inventory**:
-   - What are you in the top 10% at?
-   - What certifications/experience do you have?
-   - What do people compliment you on?
-
-2. **Passion Filter**:
-   - What topics do you read about for fun?
-   - What could you do for free and still love?
-   - What problems do you want to solve?
-
-3. **Market Validation**:
-   - Who already pays for solutions in this area?
-   - What's the average price point?
-   - Is this market growing or shrinking?
-
-4. **Unique Angle**:
-   - What's your unusual background?
-   - What's your contrarian opinion?
-   - What methodology have you developed?
-
-5. **Target Avatar**:
-   - Who specifically do you want to serve?
-   - What's their biggest frustration?
-   - What outcome do they desperately want?
-
-**Final Reality Check**
-
-Good positioning:
-- Makes some people say "that's not for me" (specificity)
-- Makes your ideal client say "this is exactly what I need"
-- Differentiates you from 95% of competition
-- You can stick with it for 12+ months
-- There's a clear monetization path
-
-Great positioning attracts dream clients like a magnet. Take the time to get this right before creating content.`}</p>
+              <div className="text-gray-300 space-y-6">
+                <p className="text-lg leading-relaxed">
+                  <strong className="text-white font-semibold">Finding your unique positioning is the difference between struggling for years and attracting dream clients in months.</strong> After helping 200+ creators find their niche, here's the proven framework:
+                </p>
+
+                {/* The Positioning Discovery Process */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">The Positioning Discovery Process</h4>
+                  
+                  {/* Phase 1: Skills & Experience Audit */}
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">Phase 1: Skills & Experience Audit</h5>
+                    <p className="text-gray-300 mb-4">Most people think they need to be the best in the world. Wrong. You need to be the best for a specific group of people.</p>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">The 3-Circle Exercise:</h6>
+                      <div className="grid md:grid-cols-3 gap-3">
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">Circle 1: What you're good at (skills)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• List <strong className="text-white">10-15 skills</strong> you've developed</li>
+                            <li>• Include professional + personal skills</li>
+                            <li>• Don't filter yet, just brainstorm</li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">Circle 2: What you enjoy doing (passion)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• What could you talk about for hours?</li>
+                            <li>• What do you research for fun?</li>
+                            <li>• What topics energize you?</li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">Circle 3: What people will pay for (market demand)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• What do people ask you for help with?</li>
+                            <li>• What problems cost people money/time?</li>
+                            <li>• What industries are growing?</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p className="text-gray-300 text-sm mt-3 font-semibold">Your positioning lives in the overlap of all three circles.</p>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Example:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Skills: Web development, design, marketing</li>
+                        <li>• Passion: Helping small businesses, local community</li>
+                        <li>• Market: Local businesses struggling with online presence</li>
+                        <li>• Positioning: <strong className="text-white">"I help local restaurants get 50+ online orders/week through optimized websites"</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Phase 2: Market Research Framework */}
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">Phase 2: Market Research Framework</h5>
+                    <p className="text-gray-300 mb-4">Don't guess what people want. Research what they're already buying.</p>
+                    
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-300 mb-2">Step 1: Competitor Analysis</h6>
+                        <p className="text-gray-300 text-xs mb-2">Find 5-10 people doing something similar:</p>
+                        <ol className="space-y-1 text-gray-300 text-xs list-decimal list-inside">
+                          <li>What do they charge?</li>
+                          <li>What results do they promise?</li>
+                          <li>What's their unique angle?</li>
+                          <li>What gaps exist in their offerings?</li>
+                          <li>What complaints do their customers have?</li>
+                        </ol>
+                      </div>
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-300 mb-2">Step 2: Audience Research</h6>
+                        <p className="text-gray-300 text-xs mb-2">Spend <strong className="text-white">5 hours</strong> in these places:</p>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Reddit communities where your audience hangs out</li>
+                          <li>• Facebook groups discussing their problems</li>
+                          <li>• Twitter threads about their pain points</li>
+                          <li>• Amazon reviews of books they buy</li>
+                          <li>• YouTube comments on relevant videos</li>
+                        </ul>
+                        <p className="text-gray-300 text-xs mt-2 font-semibold">Look for: Repeated frustrations, questions asked multiple times, problems they're willing to pay to solve, language they use (write this down!)</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mt-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Real example:</h6>
+                      <p className="text-gray-300 text-sm mb-2">Creator researching productivity niche found:</p>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• "I know what to do, I just can't stick to it" (repeated <strong className="text-white">47 times</strong>)</li>
+                        <li>• "All these systems are too complicated" (repeated <strong className="text-white">33 times</strong>)</li>
+                        <li>• "I need something that works with ADHD" (repeated <strong className="text-white">28 times</strong>)</li>
+                      </ul>
+                      <p className="text-gray-300 text-sm mt-2">This led to positioning: <strong className="text-white">"Simple productivity systems for people with ADHD who've tried everything"</strong></p>
+                    </div>
+                  </div>
+
+                  {/* Phase 3: The Unique Positioning Formula */}
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">Phase 3: The Unique Positioning Formula</h5>
+                    <p className="text-gray-300 mb-3">Now combine everything into your positioning statement:</p>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Formula:</h6>
+                      <p className="text-white font-semibold text-sm">I help [SPECIFIC WHO] achieve [SPECIFIC WHAT] through [UNIQUE HOW] so they can [ULTIMATE WHY]</p>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-2 gap-3">
+                      <div className="space-y-3">
+                        <div className="bg-red-900/20 border border-red-500/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-red-300 mb-1">SPECIFIC WHO (avoid "anyone who wants to"):</h6>
+                          <p className="text-gray-300 text-xs mb-1"><strong className="text-red-300">Bad:</strong> "Anyone who wants to get fit"</p>
+                          <p className="text-gray-300 text-xs"><strong className="text-green-300">Good:</strong> "Busy executives over 40 who travel <strong className="text-white">50%+</strong> of the time"</p>
+                        </div>
+                        <div className="bg-red-900/20 border border-red-500/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-red-300 mb-1">SPECIFIC WHAT (measurable outcome):</h6>
+                          <p className="text-gray-300 text-xs mb-1"><strong className="text-red-300">Bad:</strong> "Feel better about themselves"</p>
+                          <p className="text-gray-300 text-xs"><strong className="text-green-300">Good:</strong> "Lose <strong className="text-white">20 pounds</strong> without giving up business dinners"</p>
+                        </div>
+                      </div>
+                      <div className="space-y-3">
+                        <div className="bg-red-900/20 border border-red-500/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-red-300 mb-1">UNIQUE HOW (your methodology):</h6>
+                          <p className="text-gray-300 text-xs mb-1"><strong className="text-red-300">Bad:</strong> "Diet and exercise"</p>
+                          <p className="text-gray-300 text-xs"><strong className="text-green-300">Good:</strong> "The Road Warrior Protocol (<strong className="text-white">15-min hotel room workouts</strong> + flexible eating)"</p>
+                        </div>
+                        <div className="bg-red-900/20 border border-red-500/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-red-300 mb-1">ULTIMATE WHY (bigger transformation):</h6>
+                          <p className="text-gray-300 text-xs mb-1"><strong className="text-red-300">Bad:</strong> "So they look good"</p>
+                          <p className="text-gray-300 text-xs"><strong className="text-green-300">Good:</strong> "So they can keep up with their kids and lead with energy"</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mt-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Full positioning:</h6>
+                      <p className="text-gray-300 text-sm italic">"I help busy executives over 40 who travel 50%+ lose 20 pounds using the Road Warrior Protocol (15-min hotel room workouts + flexible eating) so they can keep up with their kids and lead with energy"</p>
+                    </div>
+                  </div>
+
+                  {/* Phase 4: Positioning Validation */}
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">Phase 4: Positioning Validation</h5>
+                    <p className="text-gray-300 mb-3">Before going all-in, validate your positioning:</p>
+                    
+                    <div className="grid md:grid-cols-3 gap-3 mb-3">
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-300 mb-2">Test 1: The DM Test (1 week)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Message <strong className="text-white">20 people</strong> in your target audience</li>
+                          <li>• Share your positioning</li>
+                          <li>• Ask: "Is this something you'd want help with?"</li>
+                          <li>• Goal: <strong className="text-white">50%+</strong> say "yes, tell me more"</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-300 mb-2">Test 2: The Content Test (2 weeks)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Create <strong className="text-white">10 posts</strong> speaking directly to this niche</li>
+                          <li>• Track engagement vs. your previous content</li>
+                          <li>• Goal: <strong className="text-white">2x engagement rate</strong></li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-300 mb-2">Test 3: The Offer Test (1 week)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Create a simple paid offer (<strong className="text-white">$50-$200</strong>)</li>
+                          <li>• Share with engaged audience</li>
+                          <li>• Goal: <strong className="text-white">1-3 sales</strong> = validated</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-yellow-300 mb-2">If tests fail, pivot one element:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Narrow the WHO (more specific)</li>
+                        <li>• Change the WHAT (different problem)</li>
+                        <li>• Adjust the HOW (different method)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Riches in Niches Matrix */}
+                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-green-400 mb-4">The Riches in Niches Matrix</h4>
+                  <p className="text-gray-300 mb-4">Here are real positioning pivots that 10x'd results:</p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Broad → Specific:</h6>
+                      <p className="text-gray-300 text-sm mb-1">"Marketing consultant" → "LinkedIn ghostwriter for venture-backed SaaS CEOs"</p>
+                      <p className="text-white font-semibold text-sm">Result: <strong className="text-green-400">$5K/month → $45K/month</strong></p>
+                    </div>
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Industry → Sub-Industry:</h6>
+                      <p className="text-gray-300 text-sm mb-1">"Fitness coach" → "Strength training for women over 50 recovering from injuries"</p>
+                      <p className="text-white font-semibold text-sm">Result: <strong className="text-green-400">200 followers → 15K followers</strong> in 8 months</p>
+                    </div>
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">General → Methodology:</h6>
+                      <p className="text-gray-300 text-sm mb-1">"Business coach" → "The 4-Hour Workweek implementer for service businesses"</p>
+                      <p className="text-white font-semibold text-sm">Result: <strong className="text-green-400">$3K/month → $28K/month</strong></p>
+                    </div>
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Problem → Specific Solution:</h6>
+                      <p className="text-gray-300 text-sm mb-1">"Help people make money online" → "Teach designers to get first $10K client in 90 days"</p>
+                      <p className="text-white font-semibold text-sm">Result: <strong className="text-green-400">0 sales → $127K</strong> first year</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Positioning Red Flags */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">Positioning Red Flags</h4>
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 mb-3">Avoid these positioning mistakes:</p>
+                    <ol className="space-y-2 text-gray-300 text-sm list-decimal list-inside">
+                      <li><strong className="text-white">Too broad:</strong> "I help everyone with everything" → Fix: Choose ONE avatar for first 12 months</li>
+                      <li><strong className="text-white">No clear outcome:</strong> "I help people be better" → Fix: Define specific, measurable result</li>
+                      <li><strong className="text-white">Commodity positioning:</strong> "I do the same thing as 1,000 others" → Fix: Add unique methodology or target market</li>
+                      <li><strong className="text-white">Passion without market:</strong> "I love this but no one will pay" → Fix: Find where your passion intersects with market demand</li>
+                      <li><strong className="text-white">Too narrow:</strong> "I help 5 people in the world" → Fix: Expand slightly while staying specific</li>
+                    </ol>
+                  </div>
+                </div>
+
+                {/* Advanced Positioning Strategies */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">Advanced Positioning Strategies</h4>
+                  <div className="space-y-4">
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                      <h5 className="text-lg font-semibold text-blue-300 mb-2">The Intersection Strategy:</h5>
+                      <p className="text-gray-300 mb-3">Combine 2-3 seemingly unrelated skills:</p>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• "Developer + Fitness" = "Coding bootcamp for people who want to stay fit while learning"</li>
+                        <li>• "Therapist + Business" = "Mental health coaching for entrepreneurs"</li>
+                        <li>• "Chef + Marketing" = "Food photography for restaurant Instagram growth"</li>
+                      </ul>
+                      <p className="text-gray-300 text-sm mt-2 italic">The intersection is often blue ocean (no competition).</p>
+                    </div>
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                      <h5 className="text-lg font-semibold text-blue-300 mb-2">The Transformation Story Strategy:</h5>
+                      <p className="text-gray-300 mb-3">Your positioning comes from your own transformation:</p>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3 mb-3">
+                        <h6 className="text-sm font-semibold text-blue-200 mb-2">Framework:</h6>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                          <li>• What problem did you solve for yourself?</li>
+                          <li>• How long did it take you?</li>
+                          <li>• What method did you use?</li>
+                          <li>• Who else has this problem?</li>
+                        </ul>
+                      </div>
+                      <p className="text-gray-300 text-sm italic">Example: "I went from <strong className="text-white">20K to 200K Twitter followers</strong> in <strong className="text-white">14 months</strong> using the Engagement Loop Method. Now I teach B2B founders to do the same."</p>
+                    </div>
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                      <h5 className="text-lg font-semibold text-blue-300 mb-2">The Contrarian Strategy:</h5>
+                      <p className="text-gray-300 mb-3">Take a popular belief and challenge it:</p>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• "You don't need 10K followers to make $10K/month"</li>
+                        <li>• "Cold email is better than content for B2B leads"</li>
+                        <li>• "You should charge MORE, not less, as a beginner"</li>
+                      </ul>
+                      <p className="text-gray-300 text-sm mt-2 italic">This positioning attracts people tired of traditional advice.</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Positioning Evolution Timeline */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">Positioning Evolution Timeline</h4>
+                  <p className="text-gray-300 mb-4">Your positioning will evolve. Here's the typical journey:</p>
+                  <div className="grid md:grid-cols-3 gap-4 mb-4">
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-purple-300 mb-2">Months 1-6: Narrow positioning</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• Focus on <strong className="text-white">ONE specific niche</strong></li>
+                        <li>• Build case studies and testimonials</li>
+                        <li>• Establish authority in small pond</li>
+                      </ul>
+                    </div>
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-purple-300 mb-2">Months 7-12: Expand slightly</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• Serve adjacent markets</li>
+                        <li>• Add related services</li>
+                        <li>• Test new offers</li>
+                      </ul>
+                    </div>
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-purple-300 mb-2">Year 2+: Broader positioning</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• Become known in wider industry</li>
+                        <li>• Multiple revenue streams</li>
+                        <li>• Thought leadership status</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                    <h6 className="text-sm font-semibold text-green-300 mb-2">Example journey:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Year 1: "LinkedIn ghostwriter for SaaS founders"</li>
+                      <li>• Year 2: "Content strategist for B2B tech executives"</li>
+                      <li>• Year 3: "Personal branding for tech leaders"</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Your Positioning Worksheet */}
+                <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-yellow-400 mb-4">Your Positioning Worksheet</h4>
+                  <p className="text-gray-300 mb-4">Answer these to find your positioning:</p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-yellow-300 mb-2">1. Skills Inventory:</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• What are you in the top <strong className="text-white">10%</strong> at?</li>
+                        <li>• What certifications/experience do you have?</li>
+                        <li>• What do people compliment you on?</li>
+                      </ul>
+                    </div>
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-yellow-300 mb-2">2. Passion Filter:</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• What topics do you read about for fun?</li>
+                        <li>• What could you do for free and still love?</li>
+                        <li>• What problems do you want to solve?</li>
+                      </ul>
+                    </div>
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-yellow-300 mb-2">3. Market Validation:</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• Who already pays for solutions in this area?</li>
+                        <li>• What's the average price point?</li>
+                        <li>• Is this market growing or shrinking?</li>
+                      </ul>
+                    </div>
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-yellow-300 mb-2">4. Unique Angle:</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• What's your unusual background?</li>
+                        <li>• What's your contrarian opinion?</li>
+                        <li>• What methodology have you developed?</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3 mt-4">
+                    <h6 className="text-sm font-semibold text-yellow-300 mb-2">5. Target Avatar:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Who specifically do you want to serve?</li>
+                      <li>• What's their biggest frustration?</li>
+                      <li>• What outcome do they desperately want?</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Final Reality Check */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">Final Reality Check</h4>
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                    <h6 className="text-sm font-semibold text-purple-300 mb-2">Good positioning:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Makes some people say "that's not for me" (specificity)</li>
+                      <li>• Makes your ideal client say "this is exactly what I need"</li>
+                      <li>• Differentiates you from <strong className="text-white">95%</strong> of competition</li>
+                      <li>• You can stick with it for <strong className="text-white">12+ months</strong></li>
+                      <li>• There's a clear monetization path</li>
+                    </ul>
+                    <p className="text-white font-semibold text-sm mt-3">Great positioning attracts dream clients like a magnet. Take the time to get this right before creating content.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
