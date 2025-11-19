@@ -71,7 +71,7 @@ const schema = generateBlogPostSchema({
 
 export default function YouTubeShortsStrategy() {
   return (
-
+    
     <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"
@@ -80,7 +80,10 @@ export default function YouTubeShortsStrategy() {
 
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-5xl mx-auto">
+            <div
+            
+            className="text-center max-w-5xl mx-auto"
+          >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 mb-6">
                     <span className="text-red-400 text-sm font-semibold">VIDEO STRATEGY</span>
                 </div>
@@ -128,7 +131,9 @@ export default function YouTubeShortsStrategy() {
         </div>
     </section>
 
-      <section className="section-spacing"
+      <section
+        
+        className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -202,7 +207,9 @@ export default function YouTubeShortsStrategy() {
 </div>
 </section>
 
-      <section className="section-spacing bg-zinc-900"
+      <section
+        
+        className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">The Content Calendar That Prints Views</h2>
@@ -336,7 +343,10 @@ export default function YouTubeShortsStrategy() {
     </div>
 </section>
 
-      <section className="section-spacing bg-zinc-900">
+      <section
+        
+        className="section-spacing bg-zinc-900"
+      >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Mistakes That Kill Your Views</h2>
           
@@ -414,8 +424,10 @@ export default function YouTubeShortsStrategy() {
             </div>
         </div>
     </div>
-    {/* Inline CTA - Contextually Placed */}
-    <SmartCTA blogSlug="youtube-shorts-strategy" variant="inline" />
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="youtube-shorts-strategy" variant="inline" />
+
 </section>
 
       <section className="section-spacing">
