@@ -235,7 +235,7 @@ export default function VirtualInfluencerStatisticsPage() {
                 <div className="w-full bg-zinc-800 rounded-full h-4">
                   <div className="bg-gradient-to-r from-orange-500 to-red-500 h-4 rounded-full" style={{width: '100%'}}></div>
                 </div>
-                <p className="text-sm text-gray-400 mt-2">Virtual > human influencers in total market share</p>
+                <p className="text-sm text-gray-400 mt-2">Virtual {'>'} human influencers in total market share</p>
               </div>
             </div>
 
@@ -1032,7 +1032,7 @@ export default function VirtualInfluencerStatisticsPage() {
               <li><strong className="text-white">35% adoption = 115 million U.S. consumers</strong> who WILL buy - that's a massive market</li>
               <li><strong className="text-white">Gen Z adoption is 67%</strong> - skepticism decreases with younger demographics</li>
               <li><strong className="text-white">78% want transparency</strong> - clear disclosure actually builds trust</li>
-              <li><strong className="text-white">35% have already purchased</strong> - behavior > stated intent</li>
+              <li><strong className="text-white">35% have already purchased</strong> - behavior {'>'} stated intent</li>
             </ol>
             <p className="text-gray-300 mt-4">
               The key: <strong className="text-cyan-300">transparency + quality content + niche targeting</strong> overcomes skepticism.
