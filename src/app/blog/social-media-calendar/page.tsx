@@ -83,9 +83,7 @@ export default function SocialMediaCalendar() {
 
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-            
-            className="text-center max-w-5xl mx-auto"
+            <div className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-6">
                     <span className="text-green-400 text-sm font-semibold">CONTENT STRATEGY</span>
@@ -130,9 +128,7 @@ export default function SocialMediaCalendar() {
         </div>
     </section>
 
-      <section
-        
-        className="section-spacing"
+      <section className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="prose prose-invert prose-lg max-w-none">
@@ -169,9 +165,7 @@ export default function SocialMediaCalendar() {
 
     </section>
 
-      <section
-        
-        className="section-spacing bg-zinc-900"
+      <section className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">The Exact 30-Day Calendar</h2><div className="mb-8">
@@ -414,9 +408,7 @@ export default function SocialMediaCalendar() {
     </div>
 </section>
 
-      <section
-
-        className="section-spacing bg-zinc-900"
+      <section className="section-spacing bg-zinc-900"
       >
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Scheduling Tools & Platforms</h2>

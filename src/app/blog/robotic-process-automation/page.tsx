@@ -80,9 +80,7 @@ export default function RoboticProcessAutomation() {
 
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            
-            className="text-center max-w-5xl mx-auto"
+          <div className="text-center max-w-5xl mx-auto"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 mb-6">
               <span className="text-orange-400 text-sm font-semibold">RPA AUTOMATION</span>
@@ -127,9 +125,7 @@ export default function RoboticProcessAutomation() {
         </div>
       </section>
 
-      <section
-        
-        className="section-spacing"
+      <section className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8">Why Your Business Desperately Needs RPA</h2>
@@ -170,9 +166,7 @@ export default function RoboticProcessAutomation() {
         </div>
       </section>
 
-      <section
-        
-        className="section-spacing bg-zinc-900"
+      <section className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">10 Game-Changing RPA Use Cases</h2>
@@ -397,9 +391,7 @@ export default function RoboticProcessAutomation() {
         </div>
       </section>
 
-      <section
-        
-        className="section-spacing"
+      <section className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Enterprise RPA Platform Comparison</h2>

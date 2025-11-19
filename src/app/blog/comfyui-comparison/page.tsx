@@ -1106,9 +1106,7 @@ The tool doesn't matter as much as matching it to your volume, budget, and consi
 
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-
-            className="text-center max-w-5xl mx-auto"
+            <div className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
                     <span className="text-purple-400 text-sm font-semibold">AI IMAGE GENERATION 2026</span>

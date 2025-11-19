@@ -82,9 +82,7 @@ const schema = generateBlogPostSchema({
 
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-            
-            className="text-center max-w-5xl mx-auto"
+            <div className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-6">
                     <span className="text-green-400 text-sm font-semibold">SALES</span>
@@ -148,9 +146,7 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section
-
-        className="section-spacing"
+      <section className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8 flex items-center">
@@ -249,9 +245,7 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section
-        
-        className="section-spacing bg-zinc-900"
+      <section className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Advanced Psychological Triggers</h2>
@@ -300,9 +294,7 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section
-        
-        className="section-spacing"
+      <section className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-8">Copy That Converts: Real Examples</h2>

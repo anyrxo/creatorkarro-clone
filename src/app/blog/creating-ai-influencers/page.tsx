@@ -82,9 +82,7 @@ const schema = generateBlogPostSchema({
 
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-            
-            className="text-center max-w-5xl mx-auto"
+            <div className="text-center max-w-5xl mx-auto"
           >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-500/20 mb-6">
                     <span className="text-pink-400 text-sm font-semibold">AI STRATEGY</span>
@@ -192,9 +190,7 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section
-
-        className="section-spacing"
+      <section className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 p-8 rounded-xl mb-12 border border-blue-600/20">
@@ -338,9 +334,7 @@ const schema = generateBlogPostSchema({
         </div>
     </section>
 
-      <section
-
-        className="section-spacing bg-zinc-900"
+      <section className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="bg-gradient-to-r from-green-600/10 to-emerald-600/10 p-8 rounded-xl mb-12 border border-green-600/20">
@@ -407,9 +401,7 @@ const schema = generateBlogPostSchema({
 
     </section>
 
-      <section
-
-        className="section-spacing"
+      <section className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="bg-gradient-to-r from-yellow-600/10 to-orange-600/10 p-8 rounded-xl mb-12 border border-yellow-600/20">

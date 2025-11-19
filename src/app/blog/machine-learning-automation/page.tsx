@@ -80,9 +80,7 @@ export default function MachineLearningAutomation() {
 
       <section className="section-spacing overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            
-            className="text-center max-w-5xl mx-auto"
+          <div className="text-center max-w-5xl mx-auto"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
               <span className="text-blue-400 text-sm font-semibold">ML AUTOMATION</span>
@@ -127,9 +125,7 @@ export default function MachineLearningAutomation() {
         </div>
       </section>
 
-      <section
-        
-        className="section-spacing"
+      <section className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8">Why ML Automation Changes Everything</h2>
@@ -171,9 +167,7 @@ export default function MachineLearningAutomation() {
 
       </section>
 
-      <section
-        
-        className="section-spacing bg-zinc-900"
+      <section className="section-spacing bg-zinc-900"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">8 ML Automation Systems That Print Money</h2>
@@ -415,9 +409,7 @@ export default function MachineLearningAutomation() {
         </div>
       </section>
 
-      <section
-        
-        className="section-spacing"
+      <section className="section-spacing"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">ML Automation Platform Stack</h2>
