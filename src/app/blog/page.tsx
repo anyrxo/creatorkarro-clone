@@ -17,6 +17,8 @@ import ScrambleText from '@/components/magicui/scramble-text'
 import HeroBackground from '@/components/HeroBackground'
 import StickyCTA from '@/components/StickyCTA'
 
+import ShimmerButton from '@/components/magicui/shimmer-button'
+
 export default function BlogPage() {
   const searchParams = useSearchParams()
   const router = useRouter()

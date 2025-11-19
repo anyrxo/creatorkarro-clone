@@ -9,7 +9,7 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import ScrambleText from '@/components/magicui/scramble-text'
 import HeroBackground from '@/components/HeroBackground'
 import StickyCTA from '@/components/StickyCTA'
-import { Wrench, Zap, BarChart3, Video, Cloud, Calendar, ExternalLink } from 'lucide-react'
+import { Wrench, Zap, BarChart3, Video, Cloud, Calendar, ExternalLink, ArrowRight } from 'lucide-react'
 
 export default function ResourcesPage() {
   const heroAnimation = useScrollAnimation({ threshold: 0.3 })
