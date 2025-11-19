@@ -123,9 +123,9 @@ export const socialLinks = [
  * Call-to-action links
  */
 export const ctaLinks = {
-  allAccess: 'https://whop.com/iimagined/all-access-reimagined/',
-  communityMonthly: 'https://whop.com/iimagined/all-access-reimagined/',
-  communityYearly: 'https://whop.com/iimagined/all-access-reimagined/',
+  allAccess: 'https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5',
+  communityMonthly: 'https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5',
+  communityYearly: 'https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5',
 } as const
 
 /**

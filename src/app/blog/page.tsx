@@ -131,7 +131,7 @@ export default function BlogPage() {
       <StickyCTA 
         price="$99/mo" 
         originalPrice="$399" 
-        ctaLink="/checkout?course=empire-bundle"
+        ctaLink="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
         productName="Empire Pass All Access" 
       />
       {/* MAGICAL HEADER */}
@@ -612,7 +612,7 @@ export default function BlogPage() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <ScrollAnimation animation="fade-up" delay={500}>
-                    <Link href="/checkout?course=empire-bundle" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full">
+                    <Link href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5" className="focus:outline-none focus:ring-4 focus:ring-blue-500/50 rounded-full">
                       <ShimmerButton
                         className="shadow-lg"
                         shimmerColor="#ffffff"

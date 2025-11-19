@@ -262,7 +262,7 @@ export default function HomePage() {
                      </div>
                      
                      <div className="flex flex-col gap-3">
-                        <Link href="/checkout?course=empire-bundle" className="w-full group relative">
+                        <Link href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5" className="w-full group relative">
                           <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
                           <div className="relative w-full bg-black rounded-xl leading-none flex items-center justify-center px-8 py-4">
                             <span className="text-white font-bold text-lg group-hover:text-gray-100 transition duration-200 flex items-center gap-2">
@@ -407,7 +407,7 @@ export default function HomePage() {
             Don't let another year pass watching others succeed. Get the blueprint, the tools, and the community you need to win.
           </p>
           <div className="flex justify-center">
-            <Link href="/checkout?course=empire-bundle" className="group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-white px-8 font-medium text-black transition-all duration-300 hover:bg-zinc-200 hover:w-64 w-56">
+            <Link href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5" className="group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-white px-8 font-medium text-black transition-all duration-300 hover:bg-zinc-200 hover:w-64 w-56">
               <span className="mr-2 text-lg font-bold">Get Full Access</span>
               <ArrowRight className="transition-all duration-300 group-hover:translate-x-1" size={20} />
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500" />

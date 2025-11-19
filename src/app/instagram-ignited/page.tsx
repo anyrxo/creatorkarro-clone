@@ -217,7 +217,7 @@ export default function InstagramIgnitedPage() {
       <StickyCTA 
         price="$99/mo" 
         originalPrice="$399" 
-        ctaLink="/checkout?course=empire-bundle"
+        ctaLink="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
         productName="Empire Pass All Access" 
       />
 
@@ -702,7 +702,7 @@ export default function InstagramIgnitedPage() {
               
               <StandardCTA
                 text="Get All Access Pass"
-                href="/checkout?course=empire-bundle"
+                href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
                 variant="primary"
                 className="w-full justify-center relative z-10"
               />

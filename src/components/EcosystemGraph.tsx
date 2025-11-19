@@ -129,7 +129,7 @@ export default function EcosystemGraph({ currentCourseId }: EcosystemGraphProps)
                Why pay for just one engine when you can get the entire fleet?
              </p>
              <Link 
-               href="/checkout?course=empire-bundle"
+               href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
                className="w-full md:w-auto bg-white text-black px-8 py-3 rounded-xl font-bold hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2"
              >
                Upgrade to Empire Pass <ArrowRight className="w-4 h-4" />

@@ -57,7 +57,7 @@ export default function TestimonialsPage() {
       
       const targets = {
         students: 4000,
-        views: 50,
+        views: 500,
         followers: 3,
         revenue: 5
       }
@@ -270,7 +270,7 @@ export default function TestimonialsPage() {
       <StickyCTA 
         price="$99/mo" 
         originalPrice="$399" 
-        ctaLink="/checkout?course=empire-bundle"
+        ctaLink="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
         productName="Empire Pass All Access" 
       />
 
@@ -414,7 +414,7 @@ export default function TestimonialsPage() {
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-green-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-2">
-                <NumberTicker value={50} className="text-3xl md:text-4xl font-bold text-green-400" />M+
+                <NumberTicker value={500} className="text-3xl md:text-4xl font-bold text-green-400" />M+
               </div>
               <p className="text-zinc-300 text-sm md:text-base font-medium">Total Views Generated</p>
             </div>
@@ -432,48 +432,6 @@ export default function TestimonialsPage() {
             </div>
           </div>
 
-          {/* Video Wall of Fame */}
-          <div ref={videoAnimation.elementRef} className={`mb-24 scroll-fade-up ${videoAnimation.isVisible ? 'visible' : ''}`}>
-            <div className="text-center mb-12">
-              <div className="inline-block bg-red-500/10 border border-red-500/30 rounded-full px-4 py-2 mb-6">
-                <span className="text-red-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
-                  <Video className="w-4 h-4" />
-                  WATCH THEIR STORIES
-                </span>
-              </div>
-              <h2 className="text-3xl md:text-5xl font-black text-white mb-6">
-                Real People. <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">Real Results.</span>
-              </h2>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { name: "Sarah's $10K Month", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", duration: "2:14" },
-                { name: "Mike's Agency Scale", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", duration: "3:45" },
-                { name: "Jen's Viral Strategy", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", duration: "1:58" }
-              ].map((video, i) => (
-                <div key={i} className="group relative aspect-video rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-white/20 transition-all duration-500 hover:scale-[1.02] shadow-2xl">
-                  <Image 
-                    src={video.image} 
-                    alt={video.name} 
-                    fill 
-                    className="object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/20">
-                      <Play className="w-6 h-6 text-white fill-white" />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
-                    <h3 className="text-lg font-bold text-white mb-1">{video.name}</h3>
-                    <p className="text-xs text-zinc-400 flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" /> Verified Student • {video.duration}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {filteredTestimonials.map((testimonial, index) => (
               <div

@@ -54,7 +54,7 @@ export default function StoryPage() {
       <StickyCTA 
         price="$99/mo" 
         originalPrice="$399" 
-        ctaLink="/checkout?course=empire-bundle"
+        ctaLink="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
         productName="Empire Pass All Access" 
       />
 
@@ -194,7 +194,7 @@ export default function StoryPage() {
                   I've packaged 5 years of failure and success into a blueprint you can copy.
                   You don't need to guess anymore.
                </p>
-               <Link href="/checkout?course=empire-bundle">
+               <Link href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5">
                   <ShimmerButton
                      className="shadow-2xl w-full md:w-auto"
                      shimmerColor="#ffffff"

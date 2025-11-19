@@ -101,7 +101,7 @@ export default function ResourcesPage() {
       <StickyCTA 
         price="$99/mo" 
         originalPrice="$399" 
-        ctaLink="/checkout?course=empire-bundle"
+        ctaLink="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
         productName="Empire Pass All Access" 
       />
 

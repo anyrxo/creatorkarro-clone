@@ -34,9 +34,14 @@ export default function StandardCTA({
   className = '',
   size = 'md'
 }: StandardCTAProps) {
-  const linkProps = external
-    ? { target: '_blank', rel: 'noopener noreferrer' }
-    : {}
+  
+  const isPolar = href.includes('polar.sh')
+  const polarProps = isPolar ? { 'data-polar-checkout': true, 'data-polar-checkout-theme': 'dark' } : {}
+
+  const linkProps = {
+    ...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {}),
+    ...polarProps
+  }
 
   // Size mappings
   const sizeClasses = {
@@ -48,6 +53,7 @@ export default function StandardCTA({
   // PRIMARY: Shimmer gradient button (Get Started, Enroll Now)
   if (variant === 'primary') {
     return (
+      // @ts-ignore - Next.js Link passes extra props to the underlying anchor tag
       <Link href={href} {...linkProps} className={`inline-block ${className}`}>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <ShimmerButton
@@ -70,6 +76,7 @@ export default function StandardCTA({
   // SECONDARY: Solid gradient button (Learn More)
   if (variant === 'secondary') {
     return (
+      // @ts-ignore
       <Link href={href} {...linkProps} className={`inline-block ${className}`}>
         <motion.button
           whileHover={{ scale: 1.05 }}
@@ -86,6 +93,7 @@ export default function StandardCTA({
   // OUTLINE: Border only button
   if (variant === 'outline') {
     return (
+      // @ts-ignore
       <Link href={href} {...linkProps} className={`inline-block ${className}`}>
         <motion.button
           whileHover={{ scale: 1.05 }}
@@ -101,6 +109,7 @@ export default function StandardCTA({
 
   // TERTIARY: Text link with hover effect (View Course)
   return (
+    // @ts-ignore
     <Link href={href} {...linkProps} className={`inline-block ${className}`}>
       <motion.span
         whileHover={{ x: 5 }}

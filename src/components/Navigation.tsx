@@ -106,9 +106,9 @@ export default function Navigation() {
             {/* Desktop Join Button */}
             <div className="hidden md:block">
               <Link
-                href="/checkout?course=empire-bundle"
+                href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
                 onClick={() => {
-                  analytics.trackCTAClick('header_nav', 'JOIN', '/checkout?course=empire-bundle')
+                  analytics.trackCTAClick('header_nav', 'JOIN', 'https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5')
                 }}
               >
                 <ShimmerButton

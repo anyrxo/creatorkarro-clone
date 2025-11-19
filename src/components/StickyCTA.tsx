@@ -22,6 +22,9 @@ export default function StickyCTA({
 }: StickyCTAProps) {
   const [isVisible, setIsVisible] = useState(false)
 
+  const isPolar = ctaLink.includes('polar.sh')
+  const polarProps = isPolar ? { 'data-polar-checkout': true, 'data-polar-checkout-theme': 'dark' } : {}
+
   useEffect(() => {
     const handleScroll = () => {
       // Show after scrolling past 600px (approx hero height)
@@ -55,8 +58,10 @@ export default function StickyCTA({
                 )}
               </div>
             </div>
+            {/* @ts-ignore */}
             <Link 
               href={ctaLink}
+              {...polarProps}
               className="bg-white text-black px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 hover:bg-zinc-200 transition-colors"
             >
               {ctaText}
@@ -68,4 +73,3 @@ export default function StickyCTA({
     </AnimatePresence>
   )
 }
-
