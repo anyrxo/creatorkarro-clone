@@ -4760,502 +4760,872 @@ Just a simple referral relationship - no complicated agreements needed. What do 
             <div className="bg-zinc-800 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-purple-400 mb-4">How do I scale my personal brand into a business empire?</h3>
               <div className="text-gray-300 space-y-4">
-                <p className="leading-relaxed">{`**Scaling from personal brand to business empire requires strategic leverage and systems.** After studying 50+ creators who built $10M+ businesses, here's the complete scaling playbook:
-
-**The Scaling Mindset Shift**
-
-**Personal Brand** ($0-$300K/year):
-- You are the product
-- Trading time for money
-- Limited by your hours
-- Personal reputation
-
-**Business Empire** ($300K-$10M+/year):
-- Products/systems are the value
-- Leverage > effort
-- Scale without you
-- Brand > person
-
-**Phase 1: Creator Business ($100K-$500K/year)**
-
-**Revenue mix**:
-- 60% services (consulting, coaching)
-- 30% digital products
-- 10% passive income
-
-**Team**:
-- You + 1-2 contractors
-- 80% of work is you
-
-**Time investment**:
-- 30-40 hours/week
-- Actively creating content
-- Personally delivering services
-
-**Example brands at this stage**:
-- Solo consultant with group programs
-- YouTuber with course
-- Newsletter writer with paid tier
-
-**Key activities**:
-1. Build core audience (10K-50K)
-2. Validate multiple offers
-3. Create content systems
-4. Develop signature methodology
-5. Build email list (5K-20K)
-
-**Transition milestone**: Hit $30K-$50K/month consistently for 3+ months
-
-**Phase 2: Creator Company ($500K-$2M/year)**
-
-**Revenue mix**:
-- 40% premium programs
-- 35% digital products (courses, templates)
-- 15% community/membership
-- 10% affiliates/sponsors
-
-**Team**:
-- You + 3-6 people
-- VA, editor, designer, ops manager
-- 50% of work is you
-
-**Time investment**:
-- 25-35 hours/week
-- Less execution, more strategy
-- Team handles operations
-
-**Example brands at this stage**:
-- Ali Abdaal (productivity)
-- Justin Welsh (solopreneur)
-- Dickie Bush (writing)
-
-**Key activities**:
-1. Build systems for content creation
-2. Hire execution team
-3. Launch membership/community
-4. Create multiple product lines
-5. Focus on strategic partnerships
-
-**Scaling strategies**:
-
-**Strategy 1: Product Ladder Optimization**
-
-**Your product ladder should have**:
-
-**Entry tier** ($0-$50):
-- Free content (social, YouTube)
-- Lead magnet
-- Low-ticket trip wire ($27-$97)
-- Goal: Build trust + cover ad costs
-
-**Mid tier** ($300-$1,500):
-- Core course or program
-- Group coaching
-- Templates + resources
-- Goal: Main revenue driver
-
-**High tier** ($3,000-$15,000):
-- Premium coaching/mastermind
-- Done-for-you services
-- Certification programs
-- Goal: Premium revenue + case studies
-
-**Ultra tier** ($25,000-$100,000+):
-- Private consulting
-- Equity partnerships
-- Licensing deals
-- Goal: Major revenue + prestige
-
-**Real example**:
-Creator revenue ladder (100K followers):
-- Free content: 100K followers
-- Lead magnet: 15K email subscribers (15% conversion)
-- $97 course: 300 buyers/year = $29,100
-- $997 program: 50 buyers/year = $49,850
-- $5,000 coaching: 20 clients/year = $100,000
-- Total: $179K from product ladder
-
-**Strategy 2: Community Leverage**
-
-**Why communities scale**:
-- Recurring revenue (predictable)
-- Members help each other (less you)
-- Network effects (more valuable as it grows)
-- Upsell funnel to premium offers
-
-**Community models**:
-
-**Free community** (0-5K members):
-- Discord, Facebook Group
-- Value: Audience engagement
-- Monetization: Upsell to paid offers
-- Time: 2-5 hours/week moderation
-
-**Paid community** ($49-$199/month):
-- Circle, Skool, Mighty Networks
-- Value: Exclusive access, resources, calls
-- Monetization: 100 members × $99 = $9,900/month
-- Time: 5-10 hours/week
-
-**Mastermind** ($500-$5,000/month):
-- Small group (6-20 people)
-- High-touch, high-value
-- Monetization: 10 members × $2,000 = $20,000/month
-- Time: 10-15 hours/week
-
-**Community launch strategy**:
-1. Start free (build to 500-1,000 members)
-2. Migrate top 10% to paid (50-100 paying members)
-3. Extract top 5% for mastermind (5-10 members)
-
-**Real example**:
-- Free community: 2,000 members
-- Paid tier launch: 87 founding members × $99 = $8,613/month
-- After 12 months: 243 members × $99 = $24,057/month
-- Mastermind: 8 members × $1,500 = $12,000/month
-- Total: $36,057/month recurring revenue
-
-**Phase 3: Creator Empire ($2M-$10M+/year)**
-
-**Revenue mix**:
-- 30% flagship products
-- 25% community/membership
-- 20% media/sponsorships
-- 15% software/tools
-- 10% investments/equity
-
-**Team**:
-- You + 10-30 people
-- Full departments (content, ops, sales, support)
-- 20% of work is you
-- CEO role
-
-**Time investment**:
-- 15-25 hours/week
-- Pure strategy and relationships
-- Team runs day-to-day
-
-**Example brands at this stage**:
-- MrBeast (content empire)
-- Tim Ferriss (books, podcast, investments)
-- Hormozi (education company)
-
-**Key activities**:
-1. Build multiple brands
-2. Software/SaaS products
-3. Acquisitions
-4. Strategic investments
-5. Media properties
-
-**Scaling strategies**:
-
-**Strategy 1: Multi-Brand Portfolio**
-
-**Why multiple brands**:
-- Diversify revenue streams
-- Serve different audiences
-- Reduce platform risk
-- Maximize reach
-
-**Multi-brand approaches**:
-
-**Vertical integration**:
-- Main brand: Personal branding education
-- Sub-brand 1: Template marketplace
-- Sub-brand 2: Agency for done-for-you
-- Sub-brand 3: Software tool for creators
-
-**Horizontal expansion**:
-- Main brand: Business education
-- Sub-brand 1: Fitness for entrepreneurs
-- Sub-brand 2: Relationship coaching for founders
-- Sub-brand 3: Mindset coaching
-
-**Real example (Alex Hormozi)**:
-- Main brand: Acquisition.com
-- Brand 2: Gym Launch
-- Brand 3: Book publishing
-- Brand 4: Investment portfolio
-- Result: $100M+ portfolio
-
-**Strategy 2: Software/SaaS Development**
-
-**Why creators build software**:
-- Higher valuations (10-20x revenue vs. 3-5x for services)
-- Scalable revenue
-- Platform independence
-- Sellable asset
-
-**Creator → SaaS path**:
-
-**Step 1: Identify repetitive problems**
-- What do customers ask for repeatedly?
-- What manual processes could be automated?
-- What tools do you use and recommend?
-
-**Step 2: Start with productized service**
-- Offer service manually first
-- Understand exact workflow
-- Build systems and processes
-- Hire team to execute
-
-**Step 3: Automate with software**
-- Partner with developer or
-- Hire dev team or
-- Acquire existing tool
-
-**Step 4: Beta test with community**
-- Offer to existing customers first
-- Iterate based on feedback
-- Prove value before scaling
-
-**Real examples**:
-
-**Morning Brew → Newsletter platform**:
-- Built audience: 4M newsletter subscribers
-- Identified need: Newsletter tools
-- Built: Sparkloop (referral tool)
-- Exit: Acquired by Hopin
-
-**Sahil Bloom → Career tool**:
-- Built audience: 1M+ followers
-- Identified need: Career growth tools
-- Built: SahilOS (career operating system)
-- Status: Growing software company
-
-**Strategy 3: Acquisitions & Investments**
-
-**What to acquire**:
-- Complementary businesses
-- Similar audiences, different products
-- Undervalued assets
-- Synergistic brands
-
-**Acquisition strategy**:
-
-**Identify targets**:
-- Revenue: $100K-$1M/year
-- Audience overlap with yours
-- Owner wanting to exit
-- Underpriced (2-4x revenue)
-
-**Add your distribution**:
-- Promote to your audience
-- Cross-sell products
-- Improve operations
-- 2-5x revenue in 12 months
-
-**Example deal structure**:
-- Acquire: $500K revenue business for $1.5M (3x)
-- Add your 100K audience + systems
-- Grow to: $1.5M revenue in 18 months
-- New valuation: $4.5M-$7.5M
-- Profit: $3M-$6M on $1.5M investment
-
-**Real example**:
-Creator with 500K audience:
-- Acquired course in niche for $800K
-- Original revenue: $250K/year
-- Promoted to audience
-- New revenue: $1.2M/year (first year)
-- Valuation: $3.6M
-- ROI: 350% in 12 months
-
-**Strategy 4: Media Company Model**
-
-**What it is**: Build multiple content/media properties
-
-**Revenue streams**:
-1. Advertising/sponsorships
-2. Affiliate commissions
-3. Product sales
-4. Community memberships
-5. Events/conferences
-
-**Example build**:
-
-**Year 1-2**: Main content channel
-- YouTube channel or podcast
-- 100K-500K audience
-- $10K-$50K/month
-
-**Year 3-4**: Add media properties
-- Newsletter (50K subscribers)
-- Second YouTube channel
-- Podcast
-- $50K-$150K/month
-
-**Year 5+**: Media empire
-- Multiple YouTube channels
-- 10+ newsletters
-- Podcast network
-- Events/conferences
-- $500K-$2M+/month
-
-**Real example (MrBeast)**:
-- Main channel: 200M+ subscribers
-- Beast Burger: Food brand
-- Feastables: Chocolate company
-- Beast Philanthropy: Charity channel
-- Mobile games: Gaming apps
-- Estimated value: $1B+
-
-**The Team Build-Out**
-
-**$0-$100K/year**: Just you
-- Solo creator
-
-**$100K-$300K/year**: You + contractors (3-5)
-- VA (admin, scheduling)
-- Video editor
-- Graphic designer
-- Occasional freelancers
-
-**$300K-$1M/year**: Small team (5-10)
-- Operations manager
-- Content team (2-3)
-- Customer support
-- Sales/marketing
-
-**$1M-$3M/year**: Growing company (10-20)
-- Chief Operating Officer
-- Content department
-- Sales team
-- Product team
-- Support team
-
-**$3M-$10M+/year**: Full company (20-50+)
-- C-suite (COO, CMO, CTO)
-- Multiple departments
-- Managers for each area
-- Scalable systems
-
-**Hiring principles**:
-
-**Rule 1: Hire when painful**
-- Task taking 10+ hours/week
-- Preventing you from high-value work
-- Could be done by someone else
-
-**Rule 2: Hire for where you're going**
-- 6 months ahead of need
-- Building for scale
-- Invest before revenue forces it
-
-**Rule 3: Hire A-players or train B-players**
-- A-player: Expensive but 10x productivity
-- B-player: Cheaper, train to A-player
-- C-player: Fire fast
-
-**The Exit Strategy**
-
-**Why plan exit from day 1**:
-- Build sellable asset
-- Create optionality
-- Maximize valuation
-- Strategic decisions
-
-**Exit options**:
-
-**Option 1: Acquisition**
-- Sell business to larger company
-- Typical multiple: 3-7x revenue
-- Example: $3M/year revenue = $9M-$21M sale
-
-**Option 2: Merger**
-- Combine with complementary brand
-- Maintain ownership stake
-- Scale faster together
-
-**Option 3: Public via SPAC**
-- Go public through special purpose acquisition
-- Rare but happening more
-- Example: Barstool Sports
-
-**Option 4: Keep & optimize**
-- Build to run without you
-- Passive income machine
-- Focus on new ventures
-
-**Valuation multipliers**:
-
-**Service business**: 1-3x revenue
-**Digital products**: 2-4x revenue
-**SaaS/Software**: 5-15x revenue
-**Media company**: 3-8x revenue
-**E-commerce brand**: 2-5x revenue
-
-**How to maximize valuation**:
-
-**1. Reduce owner dependency**
-- Business runs without you
-- Team handles operations
-- Systems in place
-
-**2. Diversify revenue**
-- 3+ revenue streams
-- No single source >40% of revenue
-- Recurring revenue preferred
-
-**3. Build moats**
-- Proprietary technology
-- Owned audience (email list)
-- Brand recognition
-- Network effects
-
-**4. Strong financials**
-- Clean books
-- Profitable margins
-- Predictable revenue
-- Low churn
-
-**Real exit examples**:
-
-**Pat Flynn (Smart Passive Income)**:
-- Built: Education brand
-- Revenue: ~$3M/year
-- Hasn't sold: Optimizing for lifestyle
-- Estimated value: $9M-$15M
-
-**Sahil Bloom**:
-- Built: Newsletter + education
-- Revenue: ~$2M/year
-- Status: Scaling, not selling yet
-- Estimated value: $8M-$12M
-
-**Steph Smith (a16z)**:
-- Built: Multiple products
-- Sold: Trends.co to The Hustle
-- Joined: a16z as investor
-- Outcome: Exit + dream job
-
-**Timeline Expectations**
-
-**Years 1-3**: Foundation ($0-$500K)
-- Build audience
-- Validate offers
-- Small team
-- Learning phase
-
-**Years 4-6**: Growth ($500K-$3M)
-- Scale systems
-- Bigger team
-- Multiple products
-- Momentum phase
-
-**Years 7-10**: Empire ($3M-$10M+)
-- Multiple brands
-- Large team
-- Strategic moves
-- Exit options
-
-**The Reality**:
-- 5% make it to $1M+/year
-- 1% make it to $10M+/year
-- 10-year overnight success
-- Requires: Patience, persistence, pivots
-
-**Bottom line**: Personal brand → Business empire is a 7-10 year journey requiring strategic leverage, team building, and multiple revenue streams. Start with authority, scale with systems.`}</p>
+                <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mb-6">
+                  <p className="text-gray-300"><strong className="text-white">Scaling from personal brand to business empire requires strategic leverage and systems.</strong> After studying 50+ creators who built $10M+ businesses, here's the complete scaling playbook:</p>
+                </div>
+
+                {/* The Scaling Mindset Shift */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">The Scaling Mindset Shift</h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                      <h5 className="text-lg font-semibold text-purple-300 mb-3">Personal Brand ($0-$300K/year):</h5>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• You are the product</li>
+                        <li>• Trading time for money</li>
+                        <li>• Limited by your hours</li>
+                        <li>• Personal reputation</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                      <h5 className="text-lg font-semibold text-pink-300 mb-3">Business Empire ($300K-$10M+/year):</h5>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Products/systems are the value</li>
+                        <li>• Leverage {'>'} effort</li>
+                        <li>• Scale without you</li>
+                        <li>• Brand {'>'} person</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Phase 1: Creator Business */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">Phase 1: Creator Business ($100K-$500K/year)</h4>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Revenue mix:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">60%</strong> services (consulting, coaching)</li>
+                      <li>• <strong className="text-white">30%</strong> digital products</li>
+                      <li>• <strong className="text-white">10%</strong> passive income</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Team:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• You + <strong className="text-white">1-2</strong> contractors</li>
+                      <li>• <strong className="text-white">80%</strong> of work is you</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Time investment:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">30-40</strong> hours/week</li>
+                      <li>• Actively creating content</li>
+                      <li>• Personally delivering services</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Example brands at this stage:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Solo consultant with group programs</li>
+                      <li>• YouTuber with course</li>
+                      <li>• Newsletter writer with paid tier</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">Key activities:</h5>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                      <li>Build core audience (<strong className="text-white">10K-50K</strong>)</li>
+                      <li>Validate multiple offers</li>
+                      <li>Create content systems</li>
+                      <li>Develop signature methodology</li>
+                      <li>Build email list (<strong className="text-white">5K-20K</strong>)</li>
+                    </ol>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Transition milestone:</strong> Hit <strong className="text-white">$30K-$50K/month</strong> consistently for <strong className="text-white">3+ months</strong></p>
+                  </div>
+                </div>
+
+                {/* Phase 2: Creator Company */}
+                <div className="bg-gradient-to-br from-indigo-500/10 to-violet-500/10 border border-indigo-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-indigo-400 mb-4">Phase 2: Creator Company ($500K-$2M/year)</h4>
+                  
+                  <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-indigo-300 mb-3">Revenue mix:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">40%</strong> premium programs</li>
+                      <li>• <strong className="text-white">35%</strong> digital products (courses, templates)</li>
+                      <li>• <strong className="text-white">15%</strong> community/membership</li>
+                      <li>• <strong className="text-white">10%</strong> affiliates/sponsors</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-indigo-300 mb-3">Team:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• You + <strong className="text-white">3-6</strong> people</li>
+                      <li>• VA, editor, designer, ops manager</li>
+                      <li>• <strong className="text-white">50%</strong> of work is you</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-indigo-300 mb-3">Time investment:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">25-35</strong> hours/week</li>
+                      <li>• Less execution, more strategy</li>
+                      <li>• Team handles operations</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-indigo-300 mb-3">Example brands at this stage:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Ali Abdaal (productivity)</li>
+                      <li>• Justin Welsh (solopreneur)</li>
+                      <li>• Dickie Bush (writing)</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">Key activities:</h5>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                      <li>Build systems for content creation</li>
+                      <li>Hire execution team</li>
+                      <li>Launch membership/community</li>
+                      <li>Create multiple product lines</li>
+                      <li>Focus on strategic partnerships</li>
+                    </ol>
+                  </div>
+                </div>
+
+                {/* Scaling strategies */}
+                <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-emerald-400 mb-4">Scaling strategies</h4>
+                  
+                  {/* Strategy 1: Product Ladder Optimization */}
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">Strategy 1: Product Ladder Optimization</h5>
+                    
+                    <p className="text-gray-300 mb-3">Your product ladder should have:</p>
+                    
+                    <div className="bg-emerald-800/20 border border-emerald-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-emerald-300 mb-2">Entry tier ($0-$50):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Free content (social, YouTube)</li>
+                        <li>• Lead magnet</li>
+                        <li>• Low-ticket trip wire ($27-$97)</li>
+                        <li>• Goal: Build trust + cover ad costs</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-emerald-800/20 border border-emerald-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-emerald-300 mb-2">Mid tier ($300-$1,500):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Core course or program</li>
+                        <li>• Group coaching</li>
+                        <li>• Templates + resources</li>
+                        <li>• Goal: Main revenue driver</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-emerald-800/20 border border-emerald-400/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-emerald-300 mb-2">High tier ($3,000-$15,000):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Premium coaching/mastermind</li>
+                        <li>• Done-for-you services</li>
+                        <li>• Certification programs</li>
+                        <li>• Goal: Premium revenue + case studies</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-emerald-800/20 border border-emerald-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-emerald-300 mb-2">Ultra tier ($25,000-$100,000+):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Private consulting</li>
+                        <li>• Equity partnerships</li>
+                        <li>• Licensing deals</li>
+                        <li>• Goal: Major revenue + prestige</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Real example:</h6>
+                      <p className="text-gray-300 text-sm mb-2">Creator revenue ladder (<strong className="text-white">100K</strong> followers):</p>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Free content: <strong className="text-white">100K</strong> followers</li>
+                        <li>• Lead magnet: <strong className="text-white">15K</strong> email subscribers (<strong className="text-white">15%</strong> conversion)</li>
+                        <li>• $97 course: <strong className="text-white">300</strong> buyers/year = <strong className="text-white">$29,100</strong></li>
+                        <li>• $997 program: <strong className="text-white">50</strong> buyers/year = <strong className="text-white">$49,850</strong></li>
+                        <li>• $5,000 coaching: <strong className="text-white">20</strong> clients/year = <strong className="text-white">$100,000</strong></li>
+                        <li>• Total: <strong className="text-white">$179K</strong> from product ladder</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Strategy 2: Community Leverage */}
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">Strategy 2: Community Leverage</h5>
+                    
+                    <div className="bg-emerald-800/20 border border-emerald-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-emerald-300 mb-2">Why communities scale:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Recurring revenue (predictable)</li>
+                        <li>• Members help each other (less you)</li>
+                        <li>• Network effects (more valuable as it grows)</li>
+                        <li>• Upsell funnel to premium offers</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Community models:</h6>
+                      
+                      <div className="bg-emerald-800/20 border border-emerald-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-emerald-300 mb-2">Free community (0-5K members):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Discord, Facebook Group</li>
+                          <li>• Value: Audience engagement</li>
+                          <li>• Monetization: Upsell to paid offers</li>
+                          <li>• Time: <strong className="text-white">2-5 hours/week</strong> moderation</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-emerald-800/20 border border-emerald-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-emerald-300 mb-2">Paid community ($49-$199/month):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Circle, Skool, Mighty Networks</li>
+                          <li>• Value: Exclusive access, resources, calls</li>
+                          <li>• Monetization: <strong className="text-white">100</strong> members × $99 = <strong className="text-white">$9,900/month</strong></li>
+                          <li>• Time: <strong className="text-white">5-10 hours/week</strong></li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-emerald-800/20 border border-emerald-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-emerald-300 mb-2">Mastermind ($500-$5,000/month):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Small group (<strong className="text-white">6-20</strong> people)</li>
+                          <li>• High-touch, high-value</li>
+                          <li>• Monetization: <strong className="text-white">10</strong> members × $2,000 = <strong className="text-white">$20,000/month</strong></li>
+                          <li>• Time: <strong className="text-white">10-15 hours/week</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Community launch strategy:</h6>
+                      <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                        <li>Start free (build to <strong className="text-white">500-1,000</strong> members)</li>
+                        <li>Migrate top <strong className="text-white">10%</strong> to paid (<strong className="text-white">50-100</strong> paying members)</li>
+                        <li>Extract top <strong className="text-white">5%</strong> for mastermind (<strong className="text-white">5-10</strong> members)</li>
+                      </ol>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3 mt-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Real example:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Free community: <strong className="text-white">2,000</strong> members</li>
+                        <li>• Paid tier launch: <strong className="text-white">87</strong> founding members × $99 = <strong className="text-white">$8,613/month</strong></li>
+                        <li>• After <strong className="text-white">12 months</strong>: <strong className="text-white">243</strong> members × $99 = <strong className="text-white">$24,057/month</strong></li>
+                        <li>• Mastermind: <strong className="text-white">8</strong> members × $1,500 = <strong className="text-white">$12,000/month</strong></li>
+                        <li>• Total: <strong className="text-white">$36,057/month</strong> recurring revenue</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Phase 3: Creator Empire */}
+                <div className="bg-gradient-to-br from-amber-500/10 to-orange-500/10 border border-amber-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-amber-400 mb-4">Phase 3: Creator Empire ($2M-$10M+/year)</h4>
+                  
+                  <div className="bg-amber-900/20 border border-amber-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-amber-300 mb-3">Revenue mix:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">30%</strong> flagship products</li>
+                      <li>• <strong className="text-white">25%</strong> community/membership</li>
+                      <li>• <strong className="text-white">20%</strong> media/sponsorships</li>
+                      <li>• <strong className="text-white">15%</strong> software/tools</li>
+                      <li>• <strong className="text-white">10%</strong> investments/equity</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-amber-900/20 border border-amber-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-amber-300 mb-3">Team:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• You + <strong className="text-white">10-30</strong> people</li>
+                      <li>• Full departments (content, ops, sales, support)</li>
+                      <li>• <strong className="text-white">20%</strong> of work is you</li>
+                      <li>• CEO role</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-amber-900/20 border border-amber-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-amber-300 mb-3">Time investment:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">15-25</strong> hours/week</li>
+                      <li>• Pure strategy and relationships</li>
+                      <li>• Team runs day-to-day</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-amber-900/20 border border-amber-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-amber-300 mb-3">Example brands at this stage:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• MrBeast (content empire)</li>
+                      <li>• Tim Ferriss (books, podcast, investments)</li>
+                      <li>• Hormozi (education company)</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">Key activities:</h5>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                      <li>Build multiple brands</li>
+                      <li>Software/SaaS products</li>
+                      <li>Acquisitions</li>
+                      <li>Strategic investments</li>
+                      <li>Media properties</li>
+                    </ol>
+                  </div>
+                </div>
+
+                {/* Advanced Scaling strategies */}
+                <div className="bg-gradient-to-br from-rose-500/10 to-pink-500/10 border border-rose-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-rose-400 mb-4">Advanced Scaling strategies</h4>
+                  
+                  {/* Strategy 1: Multi-Brand Portfolio */}
+                  <div className="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-rose-300 mb-3">Strategy 1: Multi-Brand Portfolio</h5>
+                    
+                    <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-rose-300 mb-2">Why multiple brands:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Diversify revenue streams</li>
+                        <li>• Serve different audiences</li>
+                        <li>• Reduce platform risk</li>
+                        <li>• Maximize reach</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Multi-brand approaches:</h6>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Vertical integration:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Main brand: Personal branding education</li>
+                          <li>• Sub-brand 1: Template marketplace</li>
+                          <li>• Sub-brand 2: Agency for done-for-you</li>
+                          <li>• Sub-brand 3: Software tool for creators</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Horizontal expansion:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Main brand: Business education</li>
+                          <li>• Sub-brand 1: Fitness for entrepreneurs</li>
+                          <li>• Sub-brand 2: Relationship coaching for founders</li>
+                          <li>• Sub-brand 3: Mindset coaching</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Real example (Alex Hormozi):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Main brand: Acquisition.com</li>
+                        <li>• Brand 2: Gym Launch</li>
+                        <li>• Brand 3: Book publishing</li>
+                        <li>• Brand 4: Investment portfolio</li>
+                        <li>• Result: <strong className="text-white">$100M+</strong> portfolio</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Strategy 2: Software/SaaS Development */}
+                  <div className="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-rose-300 mb-3">Strategy 2: Software/SaaS Development</h5>
+                    
+                    <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-rose-300 mb-2">Why creators build software:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Higher valuations (<strong className="text-white">10-20x</strong> revenue vs. <strong className="text-white">3-5x</strong> for services)</li>
+                        <li>• Scalable revenue</li>
+                        <li>• Platform independence</li>
+                        <li>• Sellable asset</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Creator → SaaS path:</h6>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Step 1: Identify repetitive problems</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• What do customers ask for repeatedly?</li>
+                          <li>• What manual processes could be automated?</li>
+                          <li>• What tools do you use and recommend?</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Step 2: Start with productized service</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Offer service manually first</li>
+                          <li>• Understand exact workflow</li>
+                          <li>• Build systems and processes</li>
+                          <li>• Hire team to execute</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Step 3: Automate with software</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Partner with developer or</li>
+                          <li>• Hire dev team or</li>
+                          <li>• Acquire existing tool</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Step 4: Beta test with community</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Offer to existing customers first</li>
+                          <li>• Iterate based on feedback</li>
+                          <li>• Prove value before scaling</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Real examples:</h6>
+                      
+                      <div className="mb-2">
+                        <p className="text-xs font-semibold text-white mb-1">Morning Brew → Newsletter platform:</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Built audience: <strong className="text-white">4M</strong> newsletter subscribers</li>
+                          <li>• Identified need: Newsletter tools</li>
+                          <li>• Built: Sparkloop (referral tool)</li>
+                          <li>• Exit: Acquired by Hopin</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-xs font-semibold text-white mb-1">Sahil Bloom → Career tool:</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Built audience: <strong className="text-white">1M+</strong> followers</li>
+                          <li>• Identified need: Career growth tools</li>
+                          <li>• Built: SahilOS (career operating system)</li>
+                          <li>• Status: Growing software company</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Strategy 3: Acquisitions & Investments */}
+                  <div className="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-rose-300 mb-3">Strategy 3: Acquisitions & Investments</h5>
+                    
+                    <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-rose-300 mb-2">What to acquire:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Complementary businesses</li>
+                        <li>• Similar audiences, different products</li>
+                        <li>• Undervalued assets</li>
+                        <li>• Synergistic brands</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Acquisition strategy:</h6>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Identify targets:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Revenue: <strong className="text-white">$100K-$1M/year</strong></li>
+                          <li>• Audience overlap with yours</li>
+                          <li>• Owner wanting to exit</li>
+                          <li>• Underpriced (<strong className="text-white">2-4x</strong> revenue)</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Add your distribution:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Promote to your audience</li>
+                          <li>• Cross-sell products</li>
+                          <li>• Improve operations</li>
+                          <li>• <strong className="text-white">2-5x</strong> revenue in <strong className="text-white">12 months</strong></li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-blue-300 mb-2">Example deal structure:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Acquire: <strong className="text-white">$500K</strong> revenue business for <strong className="text-white">$1.5M</strong> (3x)</li>
+                          <li>• Add your <strong className="text-white">100K</strong> audience + systems</li>
+                          <li>• Grow to: <strong className="text-white">$1.5M</strong> revenue in <strong className="text-white">18 months</strong></li>
+                          <li>• New valuation: <strong className="text-white">$4.5M-$7.5M</strong></li>
+                          <li>• Profit: <strong className="text-white">$3M-$6M</strong> on <strong className="text-white">$1.5M</strong> investment</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Real example:</h6>
+                        <p className="text-gray-300 text-xs mb-1">Creator with <strong className="text-white">500K</strong> audience:</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Acquired course in niche for <strong className="text-white">$800K</strong></li>
+                          <li>• Original revenue: <strong className="text-white">$250K/year</strong></li>
+                          <li>• Promoted to audience</li>
+                          <li>• New revenue: <strong className="text-white">$1.2M/year</strong> (first year)</li>
+                          <li>• Valuation: <strong className="text-white">$3.6M</strong></li>
+                          <li>• ROI: <strong className="text-white">350%</strong> in <strong className="text-white">12 months</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Strategy 4: Media Company Model */}
+                  <div className="bg-rose-900/20 border border-rose-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-rose-300 mb-3">Strategy 4: Media Company Model</h5>
+                    
+                    <p className="text-gray-300 mb-3">What it is: Build multiple content/media properties</p>
+                    
+                    <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-rose-300 mb-2">Revenue streams:</h6>
+                      <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                        <li>Advertising/sponsorships</li>
+                        <li>Affiliate commissions</li>
+                        <li>Product sales</li>
+                        <li>Community memberships</li>
+                        <li>Events/conferences</li>
+                      </ol>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Example build:</h6>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Year 1-2: Main content channel</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• YouTube channel or podcast</li>
+                          <li>• <strong className="text-white">100K-500K</strong> audience</li>
+                          <li>• <strong className="text-white">$10K-$50K/month</strong></li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Year 3-4: Add media properties</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Newsletter (<strong className="text-white">50K</strong> subscribers)</li>
+                          <li>• Second YouTube channel</li>
+                          <li>• Podcast</li>
+                          <li>• <strong className="text-white">$50K-$150K/month</strong></li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-rose-800/20 border border-rose-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-rose-300 mb-2">Year 5+: Media empire</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Multiple YouTube channels</li>
+                          <li>• <strong className="text-white">10+</strong> newsletters</li>
+                          <li>• Podcast network</li>
+                          <li>• Events/conferences</li>
+                          <li>• <strong className="text-white">$500K-$2M+/month</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Real example (MrBeast):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Main channel: <strong className="text-white">200M+</strong> subscribers</li>
+                        <li>• Beast Burger: Food brand</li>
+                        <li>• Feastables: Chocolate company</li>
+                        <li>• Beast Philanthropy: Charity channel</li>
+                        <li>• Mobile games: Gaming apps</li>
+                        <li>• Estimated value: <strong className="text-white">$1B+</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Team Build-Out */}
+                <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-cyan-400 mb-4">The Team Build-Out</h4>
+                  
+                  <div className="space-y-3">
+                    <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-cyan-300 mb-2">$0-$100K/year: Just you</h5>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Solo creator</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-cyan-300 mb-2">$100K-$300K/year: You + contractors (3-5)</h5>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• VA (admin, scheduling)</li>
+                        <li>• Video editor</li>
+                        <li>• Graphic designer</li>
+                        <li>• Occasional freelancers</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-cyan-300 mb-2">$300K-$1M/year: Small team (5-10)</h5>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Operations manager</li>
+                        <li>• Content team (<strong className="text-white">2-3</strong>)</li>
+                        <li>• Customer support</li>
+                        <li>• Sales/marketing</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-cyan-300 mb-2">$1M-$3M/year: Growing company (10-20)</h5>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Chief Operating Officer</li>
+                        <li>• Content department</li>
+                        <li>• Sales team</li>
+                        <li>• Product team</li>
+                        <li>• Support team</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-cyan-300 mb-2">$3M-$10M+/year: Full company (20-50+)</h5>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• C-suite (COO, CMO, CTO)</li>
+                        <li>• Multiple departments</li>
+                        <li>• Managers for each area</li>
+                        <li>• Scalable systems</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mt-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">Hiring principles:</h5>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                      <h6 className="text-xs font-semibold text-green-300 mb-2">Rule 1: Hire when painful</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• Task taking <strong className="text-white">10+ hours/week</strong></li>
+                        <li>• Preventing you from high-value work</li>
+                        <li>• Could be done by someone else</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                      <h6 className="text-xs font-semibold text-green-300 mb-2">Rule 2: Hire for where you're going</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• <strong className="text-white">6 months</strong> ahead of need</li>
+                        <li>• Building for scale</li>
+                        <li>• Invest before revenue forces it</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                      <h6 className="text-xs font-semibold text-green-300 mb-2">Rule 3: Hire A-players or train B-players</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• A-player: Expensive but <strong className="text-white">10x</strong> productivity</li>
+                        <li>• B-player: Cheaper, train to A-player</li>
+                        <li>• C-player: Fire fast</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Exit Strategy */}
+                <div className="bg-gradient-to-br from-violet-500/10 to-purple-500/10 border border-violet-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-violet-400 mb-4">The Exit Strategy</h4>
+                  
+                  <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-violet-300 mb-3">Why plan exit from day 1:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Build sellable asset</li>
+                      <li>• Create optionality</li>
+                      <li>• Maximize valuation</li>
+                      <li>• Strategic decisions</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h5 className="text-lg font-semibold text-violet-300 mb-3">Exit options:</h5>
+                    
+                    <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-violet-300 mb-2">Option 1: Acquisition</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Sell business to larger company</li>
+                        <li>• Typical multiple: <strong className="text-white">3-7x</strong> revenue</li>
+                        <li>• Example: <strong className="text-white">$3M/year</strong> revenue = <strong className="text-white">$9M-$21M</strong> sale</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-violet-300 mb-2">Option 2: Merger</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Combine with complementary brand</li>
+                        <li>• Maintain ownership stake</li>
+                        <li>• Scale faster together</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-violet-300 mb-2">Option 3: Public via SPAC</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Go public through special purpose acquisition</li>
+                        <li>• Rare but happening more</li>
+                        <li>• Example: Barstool Sports</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-violet-300 mb-2">Option 4: Keep & optimize</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Build to run without you</li>
+                        <li>• Passive income machine</li>
+                        <li>• Focus on new ventures</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Valuation multipliers:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">Service business</strong>: <strong className="text-white">1-3x</strong> revenue</li>
+                      <li>• <strong className="text-white">Digital products</strong>: <strong className="text-white">2-4x</strong> revenue</li>
+                      <li>• <strong className="text-white">SaaS/Software</strong>: <strong className="text-white">5-15x</strong> revenue</li>
+                      <li>• <strong className="text-white">Media company</strong>: <strong className="text-white">3-8x</strong> revenue</li>
+                      <li>• <strong className="text-white">E-commerce brand</strong>: <strong className="text-white">2-5x</strong> revenue</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">How to maximize valuation:</h5>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                      <h6 className="text-xs font-semibold text-green-300 mb-2">1. Reduce owner dependency</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• Business runs without you</li>
+                        <li>• Team handles operations</li>
+                        <li>• Systems in place</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                      <h6 className="text-xs font-semibold text-green-300 mb-2">2. Diversify revenue</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• <strong className="text-white">3+</strong> revenue streams</li>
+                        <li>• No single source {'>'}40% of revenue</li>
+                        <li>• Recurring revenue preferred</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                      <h6 className="text-xs font-semibold text-green-300 mb-2">3. Build moats</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• Proprietary technology</li>
+                        <li>• Owned audience (email list)</li>
+                        <li>• Brand recognition</li>
+                        <li>• Network effects</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                      <h6 className="text-xs font-semibold text-green-300 mb-2">4. Strong financials</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• Clean books</li>
+                        <li>• Profitable margins</li>
+                        <li>• Predictable revenue</li>
+                        <li>• Low churn</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Real exit examples:</h5>
+                    
+                    <div className="mb-3">
+                      <p className="text-sm font-semibold text-white mb-1">Pat Flynn (Smart Passive Income):</p>
+                      <ul className="space-y-1 text-gray-300 text-sm ml-2">
+                        <li>• Built: Education brand</li>
+                        <li>• Revenue: ~<strong className="text-white">$3M/year</strong></li>
+                        <li>• Hasn't sold: Optimizing for lifestyle</li>
+                        <li>• Estimated value: <strong className="text-white">$9M-$15M</strong></li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <p className="text-sm font-semibold text-white mb-1">Sahil Bloom:</p>
+                      <ul className="space-y-1 text-gray-300 text-sm ml-2">
+                        <li>• Built: Newsletter + education</li>
+                        <li>• Revenue: ~<strong className="text-white">$2M/year</strong></li>
+                        <li>• Status: Scaling, not selling yet</li>
+                        <li>• Estimated value: <strong className="text-white">$8M-$12M</strong></li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <p className="text-sm font-semibold text-white mb-1">Steph Smith (a16z):</p>
+                      <ul className="space-y-1 text-gray-300 text-sm ml-2">
+                        <li>• Built: Multiple products</li>
+                        <li>• Sold: Trends.co to The Hustle</li>
+                        <li>• Joined: a16z as investor</li>
+                        <li>• Outcome: Exit + dream job</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Timeline Expectations */}
+                <div className="bg-gradient-to-br from-slate-500/10 to-gray-500/10 border border-slate-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-slate-400 mb-4">Timeline Expectations</h4>
+                  
+                  <div className="bg-slate-900/20 border border-slate-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-slate-300 mb-3">Years 1-3: Foundation ($0-$500K)</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Build audience</li>
+                      <li>• Validate offers</li>
+                      <li>• Small team</li>
+                      <li>• Learning phase</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-slate-900/20 border border-slate-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-slate-300 mb-3">Years 4-6: Growth ($500K-$3M)</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Scale systems</li>
+                      <li>• Bigger team</li>
+                      <li>• Multiple products</li>
+                      <li>• Momentum phase</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-slate-900/20 border border-slate-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-slate-300 mb-3">Years 7-10: Empire ($3M-$10M+)</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Multiple brands</li>
+                      <li>• Large team</li>
+                      <li>• Strategic moves</li>
+                      <li>• Exit options</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-yellow-300 mb-3">The Reality:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">5%</strong> make it to <strong className="text-white">$1M+/year</strong></li>
+                      <li>• <strong className="text-white">1%</strong> make it to <strong className="text-white">$10M+/year</strong></li>
+                      <li>• <strong className="text-white">10-year</strong> overnight success</li>
+                      <li>• Requires: Patience, persistence, pivots</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Bottom line:</strong> Personal brand → Business empire is a <strong className="text-white">7-10 year</strong> journey requiring strategic leverage, team building, and multiple revenue streams. Start with authority, scale with systems.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
