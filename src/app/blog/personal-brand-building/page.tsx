@@ -3150,89 +3150,154 @@ export default function PersonalBrandBuilding() {
 
             <div className="bg-zinc-800 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-purple-400 mb-4">How do I network and collaborate effectively as a creator?</h3>
-              <div className="text-gray-300 space-y-4">
-                <p className="leading-relaxed">{`**Strategic networking can generate more opportunities than content alone.** After building a network of 500+ creators and landing partnerships worth $500K+, here's the complete networking playbook:
+              <div className="text-gray-300 space-y-6">
+                <p className="text-lg leading-relaxed">
+                  <strong className="text-white font-semibold">Strategic networking can generate more opportunities than content alone.</strong> After building a network of 500+ creators and landing partnerships worth $500K+, here's the complete networking playbook:
+                </p>
 
-**The Networking Mindset Shift**
+                {/* The Networking Mindset Shift */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">The Networking Mindset Shift</h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-red-900/20 border border-red-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-red-300 mb-2">Old approach (doesn't work):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• "Can you promote my stuff?"</li>
+                        <li>• "Let's collab" (no context)</li>
+                        <li>• "I'd love to pick your brain"</li>
+                        <li>• Transactional relationship</li>
+                      </ul>
+                    </div>
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">New approach (works):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Lead with value</li>
+                        <li>• Build relationships before asks</li>
+                        <li>• Create win-win opportunities</li>
+                        <li>• Long-term relationship focus</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-**Old approach** (doesn't work):
-- "Can you promote my stuff?"
-- "Let's collab" (no context)
-- "I'd love to pick your brain"
-- Transactional relationship
+                {/* The Value-First Framework */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">The Value-First Framework</h4>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                    <h6 className="text-sm font-semibold text-blue-300 mb-3">Before reaching out, ask:</h6>
+                    <ol className="space-y-2 text-gray-300 text-sm list-decimal list-inside">
+                      <li>What can I offer them?</li>
+                      <li>Why would they care about me?</li>
+                      <li>How can I make their life easier?</li>
+                      <li>What value can I provide first?</li>
+                    </ol>
+                  </div>
+                </div>
 
-**New approach** (works):
-- Lead with value
-- Build relationships before asks
-- Create win-win opportunities
-- Long-term relationship focus
+                {/* Level 1: Online Networking Strategy */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">Level 1: Online Networking Strategy</h4>
+                  
+                  {/* Phase 1: Identify Your Dream 100 */}
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">Phase 1: Identify Your Dream 100</h5>
+                    
+                    <div className="mb-3">
+                      <p className="text-gray-300 mb-2">Create a list of <strong className="text-white">100 people</strong> who:</p>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Have your ideal audience</li>
+                        <li>• Are <strong className="text-white">1-2 steps ahead</strong> (not 10 steps)</li>
+                        <li>• Create complementary content</li>
+                        <li>• Share your values</li>
+                        <li>• Are accessible (under <strong className="text-white">100K followers</strong>)</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Categories:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">40 peers</strong> (similar size/niche)</li>
+                        <li>• <strong className="text-white">30 slightly bigger</strong> (2-5x your size)</li>
+                        <li>• <strong className="text-white">20 authorities</strong> (10x your size)</li>
+                        <li>• <strong className="text-white">10 dream collaborators</strong> (any size)</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                      <h6 className="text-xs font-semibold text-purple-200 mb-2">Tools to find them:</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• Twitter lists of followers</li>
+                        <li>• LinkedIn connections of competitors</li>
+                        <li>• Instagram explore in your niche</li>
+                        <li>• YouTube recommendations</li>
+                        <li>• Podcast guest appearances</li>
+                      </ul>
+                    </div>
+                  </div>
 
-**The Value-First Framework**
+                  {/* Phase 2: Engagement Strategy */}
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">Phase 2: Engagement Strategy (30 days before outreach)</h5>
+                    
+                    <div className="grid md:grid-cols-2 gap-3 mb-3">
+                      <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-purple-200 mb-2">Week 1-2: Silent observer</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Follow all <strong className="text-white">100 people</strong></li>
+                          <li>• Turn on notifications for top <strong className="text-white">20</strong></li>
+                          <li>• Study their content style</li>
+                          <li>• Note what gets most engagement</li>
+                          <li>• Understand their audience</li>
+                        </ul>
+                      </div>
+                      <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-purple-200 mb-2">Week 3-4: Value-add engagement</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Comment thoughtfully on every post (top <strong className="text-white">20</strong>)</li>
+                          <li>• Share their content with your take</li>
+                          <li>• Tag them when relevant</li>
+                          <li>• Join their communities</li>
+                          <li>• Buy their products (if affordable)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Golden engagement formula:</h6>
+                      <div className="space-y-2">
+                        <div className="bg-red-900/20 border border-red-500/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-red-300 mb-1">Bad comment:</h6>
+                          <p className="text-gray-300 text-xs">"Great post! "</p>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-green-300 mb-1">Good comment:</h6>
+                          <p className="text-gray-300 text-xs italic">"This framework totally shifted how I think about [topic]. The part about [specific point] reminded me of when I [relevant experience]. Curious - have you found [thoughtful question]?"</p>
+                        </div>
+                      </div>
+                      <p className="text-gray-300 text-xs mt-2">Why it works: Shows you read it, adds value, asks non-obvious question</p>
+                    </div>
+                  </div>
 
-**Before reaching out, ask**:
-1. What can I offer them?
-2. Why would they care about me?
-3. How can I make their life easier?
-4. What value can I provide first?
-
-**Level 1: Online Networking Strategy**
-
-**Phase 1: Identify Your Dream 100**
-
-Create a list of 100 people who:
-- Have your ideal audience
-- Are 1-2 steps ahead (not 10 steps)
-- Create complementary content
-- Share your values
-- Are accessible (under 100K followers)
-
-**Categories**:
-- 40 peers (similar size/niche)
-- 30 slightly bigger (2-5x your size)
-- 20 authorities (10x your size)
-- 10 dream collaborators (any size)
-
-**Tools to find them**:
-- Twitter lists of followers
-- LinkedIn connections of competitors
-- Instagram explore in your niche
-- YouTube recommendations
-- Podcast guest appearances
-
-**Phase 2: Engagement Strategy** (30 days before outreach)
-
-**Week 1-2: Silent observer**
-- Follow all 100 people
-- Turn on notifications for top 20
-- Study their content style
-- Note what gets most engagement
-- Understand their audience
-
-**Week 3-4: Value-add engagement**
-- Comment thoughtfully on every post (top 20)
-- Share their content with your take
-- Tag them when relevant
-- Join their communities
-- Buy their products (if affordable)
-
-**Golden engagement formula**:
-
-**Bad comment**: "Great post! "
-**Good comment**: "This framework totally shifted how I think about [topic]. The part about [specific point] reminded me of when I [relevant experience]. Curious - have you found [thoughtful question]?"
-
-**Why it works**: Shows you read it, adds value, asks non-obvious question
-
-**Phase 3: The DM Introduction**
-
-**Wait for a warm moment**:
-- They respond to your comment
-- They share something you can genuinely help with
-- You have a specific collaboration idea
-- You've created something they'd find valuable
-
-**DM Template** (Tested 500+ times):
-
-"Hey [Name]!
+                  {/* Phase 3: The DM Introduction */}
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">Phase 3: The DM Introduction</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Wait for a warm moment:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• They respond to your comment</li>
+                        <li>• They share something you can genuinely help with</li>
+                        <li>• You have a specific collaboration idea</li>
+                        <li>• You've created something they'd find valuable</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">DM Template (Tested 500+ times):</h6>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <p className="text-gray-300 text-xs italic whitespace-pre-line">"Hey [Name]!
 
 I've been following your content on [topic] for a few weeks and [specific compliment about their work].
 
@@ -3242,32 +3307,50 @@ I recently [something relevant you did] and thought you might find it interestin
 
 No expectation of a response - just wanted to share in case it's helpful!
 
-[Your name]"
+[Your name]"</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Why it works:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Specific (not generic)</li>
+                        <li>• Value-first (giving, not asking)</li>
+                        <li>• Low pressure (no expectation)</li>
+                        <li>• Shows you pay attention</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Follow-up:</strong> If they respond positively, continue conversation naturally. Don't immediately pitch collaboration.</p>
+                    </div>
+                  </div>
+                </div>
 
-**Why it works**:
-- Specific (not generic)
-- Value-first (giving, not asking)
-- Low pressure (no expectation)
-- Shows you pay attention
-
-**Follow-up**: If they respond positively, continue conversation naturally. Don't immediately pitch collaboration.
-
-**Level 2: Collaboration Strategies**
-
-**Collaboration Type 1: Content Swaps**
-
-**What it is**: Create content together or for each other's audiences
-
-**Examples**:
-- Guest post on their blog
-- Interview on their podcast
-- Guest appearance in their newsletter
-- Co-create LinkedIn carousel
-- Twitter thread collaboration
-
-**How to pitch**:
-
-"Hey [Name],
+                {/* Level 2: Collaboration Strategies */}
+                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-green-400 mb-4">Level 2: Collaboration Strategies</h4>
+                  
+                  {/* Collaboration Type 1: Content Swaps */}
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">Collaboration Type 1: Content Swaps</h5>
+                    
+                    <div className="mb-3">
+                      <p className="text-gray-300 mb-2">What it is: Create content together or for each other's audiences</p>
+                      <h6 className="text-sm font-semibold text-white mb-2">Examples:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Guest post on their blog</li>
+                        <li>• Interview on their podcast</li>
+                        <li>• Guest appearance in their newsletter</li>
+                        <li>• Co-create LinkedIn carousel</li>
+                        <li>• Twitter thread collaboration</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">How to pitch:</h6>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <p className="text-gray-300 text-xs italic whitespace-pre-line">"Hey [Name],
 
 I have an idea that could bring value to your [platform] audience.
 
@@ -3275,23 +3358,34 @@ I noticed your audience loves [topic they cover]. I recently [your relevant achi
 
 Happy to write the first draft and you can edit to match your style. No pressure if the timing isn't right!
 
-What do you think?"
+What do you think?"</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Success rate:</strong> <strong className="text-white">30-40%</strong> response, <strong className="text-white">15-20%</strong> yes</p>
+                    </div>
+                  </div>
 
-**Success rate**: 30-40% response, 15-20% yes
-
-**Collaboration Type 2: Audience Cross-Pollination**
-
-**What it is**: Introduce each other's audiences
-
-**Examples**:
-- Newsletter swap (feature each other)
-- Social media shoutouts
-- Course affiliate partnership
-- Community cross-promotions
-
-**How to pitch**:
-
-"Hey [Name],
+                  {/* Collaboration Type 2: Audience Cross-Pollination */}
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">Collaboration Type 2: Audience Cross-Pollination</h5>
+                    
+                    <div className="mb-3">
+                      <p className="text-gray-300 mb-2">What it is: Introduce each other's audiences</p>
+                      <h6 className="text-sm font-semibold text-white mb-2">Examples:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Newsletter swap (feature each other)</li>
+                        <li>• Social media shoutouts</li>
+                        <li>• Course affiliate partnership</li>
+                        <li>• Community cross-promotions</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">How to pitch:</h6>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <p className="text-gray-300 text-xs italic whitespace-pre-line">"Hey [Name],
 
 I have [X] subscribers interested in [topic]. I noticed your audience is similar but focused on [their angle].
 
@@ -3299,297 +3393,500 @@ What if we did a newsletter swap? I'd feature you + your [offer/resource] in my 
 
 I think your insights on [their topic] would be perfect for my audience.
 
-Interested?"
+Interested?"</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Success rate:</strong> <strong className="text-white">40-50%</strong> yes (if audiences are truly aligned)</p>
+                    </div>
+                  </div>
 
-**Success rate**: 40-50% yes (if audiences are truly aligned)
-
-**Collaboration Type 3: Product Partnerships**
-
-**What it is**: Collaborate on a product/offer
-
-**Examples**:
-- Co-host a workshop/webinar
-- Bundle products together
-- Create joint course
-- Collaborative template pack
-- Co-authored guide
-
-**How to pitch**:
-
-"Hey [Name],
+                  {/* Collaboration Type 3: Product Partnerships */}
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">Collaboration Type 3: Product Partnerships</h5>
+                    
+                    <div className="mb-3">
+                      <p className="text-gray-300 mb-2">What it is: Collaborate on a product/offer</p>
+                      <h6 className="text-sm font-semibold text-white mb-2">Examples:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Co-host a workshop/webinar</li>
+                        <li>• Bundle products together</li>
+                        <li>• Create joint course</li>
+                        <li>• Collaborative template pack</li>
+                        <li>• Co-authored guide</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">How to pitch:</h6>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <p className="text-gray-300 text-xs italic whitespace-pre-line">"Hey [Name],
 
 I've been thinking about how our skills complement each other. You're great at [their strength] and I focus on [your strength].
 
 What if we co-hosted a workshop on [combined topic]?
 
 Quick idea:
-- 90-minute live workshop
+- <strong className="text-white">90-minute</strong> live workshop
 - I cover [your part], you cover [their part]
 - We both promote to our lists
-- Split the revenue 50/50
+- Split the revenue <strong className="text-white">50/50</strong>
 
 I'm thinking we could get [realistic number] attendees and charge [price point].
 
-Would you be open to a quick call to explore this?"
+Would you be open to a quick call to explore this?"</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Success rate:</strong> <strong className="text-white">20-30%</strong> yes (higher if proven track record)</p>
+                    </div>
+                  </div>
 
-**Success rate**: 20-30% yes (higher if proven track record)
-
-**Collaboration Type 4: Referral Partnerships**
-
-**What it is**: Send each other clients/customers
-
-**Examples**:
-- Refer clients to each other's services
-- Affiliate arrangement for products
-- White-label partnership
-- Strategic referral network
-
-**How to pitch**:
-
-"Hey [Name],
+                  {/* Collaboration Type 4: Referral Partnerships */}
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">Collaboration Type 4: Referral Partnerships</h5>
+                    
+                    <div className="mb-3">
+                      <p className="text-gray-300 mb-2">What it is: Send each other clients/customers</p>
+                      <h6 className="text-sm font-semibold text-white mb-2">Examples:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Refer clients to each other's services</li>
+                        <li>• Affiliate arrangement for products</li>
+                        <li>• White-label partnership</li>
+                        <li>• Strategic referral network</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">How to pitch:</h6>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <p className="text-gray-300 text-xs italic whitespace-pre-line">"Hey [Name],
 
 I occasionally get leads for [service they offer] that aren't a fit for me. I've been impressed with your work and would love to refer them to you.
 
 Similarly, if you ever get leads for [your service], I'd be happy to offer your audience [special offer/discount].
 
-Just a simple referral relationship - no complicated agreements needed. What do you think?"
+Just a simple referral relationship - no complicated agreements needed. What do you think?"</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Success rate:</strong> <strong className="text-white">50-60%</strong> yes (low-risk for them)</p>
+                    </div>
+                  </div>
+                </div>
 
-**Success rate**: 50-60% yes (low-risk for them)
+                {/* Level 3: In-Person Networking */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">Level 3: In-Person Networking</h4>
+                  
+                  <div className="mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">Events Worth Attending</h5>
+                    
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Creator Economy Events:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• VidCon</li>
+                        <li>• Podcast Movement</li>
+                        <li>• Social Media Marketing World</li>
+                        <li>• Creator Economy Expo</li>
+                        <li>• Substack Meetups</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Industry-Specific Conferences:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Your niche conferences (find top 3-5)</li>
+                        <li>• Speaking opportunities</li>
+                        <li>• Sponsor booths</li>
+                        <li>• Networking parties</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-white mb-2">Mastermind Groups:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Paid groups ($5K-$50K/year)</li>
+                        <li>• Peer groups (6-10 people)</li>
+                        <li>• Accountability partnerships</li>
+                        <li>• High-level networks</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">Event Networking Strategy</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Before event:</h6>
+                      <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                        <li>Research attendee list</li>
+                        <li>Identify 10-15 people to meet</li>
+                        <li>Reach out on social: "Hey, I'll be at [event]. Would love to grab coffee if you're free!"</li>
+                        <li>Schedule 3-5 coffee chats in advance</li>
+                      </ol>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">During event:</h6>
+                      <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                        <li>Don't try to meet everyone</li>
+                        <li>Have 5-10 deep conversations</li>
+                        <li>Take notes after each conversation</li>
+                        <li>Offer specific help to 3-5 people</li>
+                        <li>Host a dinner for 6-8 people</li>
+                      </ol>
+                    </div>
+                    
+                    <div>
+                      <h6 className="text-sm font-semibold text-white mb-2">After event:</h6>
+                      <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                        <li>Follow up within 48 hours</li>
+                        <li>Reference specific conversation</li>
+                        <li>Share promised resources</li>
+                        <li>Suggest next step</li>
+                        <li>Add to CRM/network list</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
 
-**Level 3: In-Person Networking**
+                {/* Level 4: Creating Your Own Networking Opportunities */}
+                <div className="bg-gradient-to-br from-indigo-500/10 to-blue-500/10 border border-indigo-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-indigo-400 mb-4">Level 4: Creating Your Own Networking Opportunities</h4>
+                  
+                  {/* Strategy 1: Host Virtual Events */}
+                  <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-indigo-300 mb-3">Strategy 1: Host Virtual Events</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Examples:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Weekly Twitter Spaces</li>
+                        <li>• Monthly LinkedIn Lives</li>
+                        <li>• Quarterly workshops</li>
+                        <li>• Seasonal challenges</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Benefits:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• You control the audience</li>
+                        <li>• Position as connector</li>
+                        <li>• Build relationships while providing value</li>
+                        <li>• Content creation opportunity</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h6 className="text-sm font-semibold text-white mb-2">How to start:</h6>
+                      <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                        <li>Pick format (Twitter Space is easiest)</li>
+                        <li>Choose weekly topic theme</li>
+                        <li>Invite 2-3 guests each week</li>
+                        <li>Promote to both audiences</li>
+                        <li>Record and repurpose</li>
+                      </ol>
+                    </div>
+                  </div>
 
-**Events Worth Attending**:
+                  {/* Strategy 2: Build a Community */}
+                  <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-indigo-300 mb-3">Strategy 2: Build a Community</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Platforms:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Discord (free)</li>
+                        <li>• Circle ($39/month)</li>
+                        <li>• Facebook Group (free)</li>
+                        <li>• Telegram (free)</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Structure:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Free entry</li>
+                        <li>• Multiple channels/topics</li>
+                        <li>• Regular events</li>
+                        <li>• Member spotlights</li>
+                        <li>• Collaboration opportunities</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h6 className="text-sm font-semibold text-white mb-2">Networking value:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• 100+ members = natural partnerships</li>
+                        <li>• Members promote each other</li>
+                        <li>• Built-in collaboration pool</li>
+                        <li>• Shared resources</li>
+                      </ul>
+                    </div>
+                  </div>
 
-**Creator Economy Events**:
-- VidCon
-- Podcast Movement
-- Social Media Marketing World
-- Creator Economy Expo
-- Substack Meetups
+                  {/* Strategy 3: Create a Newsletter Round-Up */}
+                  <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-indigo-300 mb-3">Strategy 3: Create a Newsletter Round-Up</h5>
+                    
+                    <div className="mb-3">
+                      <p className="text-gray-300 mb-2">What it is: Feature other creators weekly</p>
+                      
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-sm font-semibold text-blue-300 mb-2">Format:</h6>
+                        <p className="text-gray-300 text-sm mb-2">"5 Creators You Should Follow This Week"</p>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                          <li>• Brief intro</li>
+                          <li>• Why you like them</li>
+                          <li>• Link to their best content</li>
+                          <li>• Tag them</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-3">
+                        <h6 className="text-sm font-semibold text-white mb-2">Benefits:</h6>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                          <li>• Builds goodwill</li>
+                          <li>• They share with their audience</li>
+                          <li>• Natural relationship starter</li>
+                          <li>• Positions you as connector</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                        <p className="text-gray-300 text-sm"><strong className="text-white">Time:</strong> 30 min/week</p>
+                      </div>
+                    </div>
+                  </div>
 
-**Industry-Specific Conferences**:
-- Your niche conferences (find top 3-5)
-- Speaking opportunities
-- Sponsor booths
-- Networking parties
+                  {/* Strategy 4: Podcast/Interview Series */}
+                  <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-indigo-300 mb-3">Strategy 4: Podcast/Interview Series</h5>
+                    
+                    <div className="mb-3">
+                      <p className="text-gray-300 mb-2">What it is: Interview creators in your niche</p>
+                      
+                      <div className="mb-3">
+                        <h6 className="text-sm font-semibold text-white mb-2">Benefits:</h6>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                          <li>• 30-60 min deep conversation</li>
+                          <li>• They promote the episode</li>
+                          <li>• Content for both of you</li>
+                          <li>• Natural relationship builder</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h6 className="text-sm font-semibold text-white mb-2">Setup:</h6>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                          <li>• Use Riverside.fm ($15/month)</li>
+                          <li>• 30-min episodes</li>
+                          <li>• Weekly or bi-weekly</li>
+                          <li>• Repurpose into clips</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-**Mastermind Groups**:
-- Paid groups ($5K-$50K/year)
-- Peer groups (6-10 people)
-- Accountability partnerships
-- High-level networks
+                {/* Networking Automation */}
+                <div className="bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-teal-400 mb-4">Networking Automation</h4>
+                  
+                  <p className="text-gray-300 mb-4">Tools to manage relationships:</p>
+                  
+                  {/* Tool 1: Notion CRM */}
+                  <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-teal-300 mb-3">1. Notion CRM (Free)</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm mb-3">
+                      <li>• Track all 100 dream connections</li>
+                      <li>• Log conversations</li>
+                      <li>• Set follow-up reminders</li>
+                      <li>• Note collaboration ideas</li>
+                    </ul>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Template:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Name</li>
+                        <li>• Platform</li>
+                        <li>• Follower count</li>
+                        <li>• Last interaction</li>
+                        <li>• Next action</li>
+                        <li>• Collaboration ideas</li>
+                        <li>• Notes</li>
+                      </ul>
+                    </div>
+                  </div>
 
-**Event Networking Strategy**:
+                  {/* Tool 2: Lyne.ai */}
+                  <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-teal-300 mb-3">2. Lyne.ai ($39/month)</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Track engagement</li>
+                      <li>• Get notified when to reach out</li>
+                      <li>• Relationship scoring</li>
+                      <li>• Follow-up reminders</li>
+                    </ul>
+                  </div>
 
-**Before event**:
-1. Research attendee list
-2. Identify 10-15 people to meet
-3. Reach out on social: "Hey, I'll be at [event]. Would love to grab coffee if you're free!"
-4. Schedule 3-5 coffee chats in advance
+                  {/* Tool 3: Folk */}
+                  <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-teal-300 mb-3">3. Folk ($20/month)</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Lightweight CRM</li>
+                      <li>• Track all interactions</li>
+                      <li>• Set reminders</li>
+                      <li>• Pipeline for collaborations</li>
+                    </ul>
+                  </div>
+                </div>
 
-**During event**:
-1. Don't try to meet everyone
-2. Have 5-10 deep conversations
-3. Take notes after each conversation
-4. Offer specific help to 3-5 people
-5. Host a dinner for 6-8 people
+                {/* Common Networking Mistakes */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">Common Networking Mistakes</h4>
+                  
+                  <div className="space-y-3">
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-red-300 mb-2">Mistake 1: The Immediate Ask</h5>
+                      <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Bad:</strong> First DM is a collaboration pitch</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Good:</strong> 4-6 weeks of value-first engagement</p>
+                    </div>
+                    
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-red-300 mb-2">Mistake 2: Too Transactional</h5>
+                      <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Bad:</strong> Only reach out when you want something</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Good:</strong> Regular check-ins, share resources</p>
+                    </div>
+                    
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-red-300 mb-2">Mistake 3: Aiming Too High Too Soon</h5>
+                      <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Bad:</strong> Trying to collab with 1M+ follower accounts</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Good:</strong> Start with peers, build up</p>
+                    </div>
+                    
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-red-300 mb-2">Mistake 4: No Follow-Through</h5>
+                      <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Bad:</strong> Great conversation, no follow-up</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Good:</strong> Follow up within 48 hours</p>
+                    </div>
+                    
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-red-300 mb-2">Mistake 5: One-Sided Value</h5>
+                      <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Bad:</strong> "What can you do for me?"</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Good:</strong> "How can we both win?"</p>
+                    </div>
+                    
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                      <h5 className="text-sm font-semibold text-red-300 mb-2">Mistake 6: Copying Instead of Complementing</h5>
+                      <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Bad:</strong> Reaching out to direct competitors</p>
+                      <p className="text-gray-300 text-sm"><strong className="text-white">Good:</strong> Find complementary creators</p>
+                    </div>
+                  </div>
+                </div>
 
-**After event**:
-1. Follow up within 48 hours
-2. Reference specific conversation
-3. Share promised resources
-4. Suggest next step
-5. Add to CRM/network list
+                {/* Networking ROI Examples */}
+                <div className="bg-gradient-to-br from-emerald-500/10 to-green-500/10 border border-emerald-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-emerald-400 mb-4">Networking ROI Examples</h4>
+                  
+                  <p className="text-gray-300 mb-4">Real results from strategic networking:</p>
+                  
+                  {/* Case 1 */}
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">Case 1: Newsletter swap</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Partner audience: <strong className="text-white">15K</strong> subscribers</li>
+                      <li>• Your feature converted: <strong className="text-white">8%</strong> (1,200 new subscribers)</li>
+                      <li>• Value: 1,200 × $3/subscriber = <strong className="text-white">$3,600</strong></li>
+                    </ul>
+                  </div>
 
-**Level 4: Creating Your Own Networking Opportunities**
+                  {/* Case 2 */}
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">Case 2: Joint webinar</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Combined audience: <strong className="text-white">25K</strong></li>
+                      <li>• <strong className="text-white">800</strong> registrants</li>
+                      <li>• <strong className="text-white">300</strong> attended</li>
+                      <li>• $97 product</li>
+                      <li>• 30 sales = <strong className="text-white">$2,910</strong></li>
+                      <li>• Split 50/50 = <strong className="text-white">$1,455</strong> each</li>
+                    </ul>
+                  </div>
 
-**Strategy 1: Host Virtual Events**
+                  {/* Case 3 */}
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">Case 3: Referral partnership</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Referred <strong className="text-white">3</strong> clients in 6 months</li>
+                      <li>• $5K service</li>
+                      <li>• 20% referral fee</li>
+                      <li>• <strong className="text-white">$3,000</strong> passive income</li>
+                    </ul>
+                  </div>
 
-**Examples**:
-- Weekly Twitter Spaces
-- Monthly LinkedIn Lives
-- Quarterly workshops
-- Seasonal challenges
+                  {/* Case 4 */}
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">Case 4: Podcast appearance</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Their audience: <strong className="text-white">50K</strong> downloads/episode</li>
+                      <li>• Your segment: <strong className="text-white">15 minutes</strong></li>
+                      <li>• Link in show notes</li>
+                      <li>• Result: <strong className="text-white">500</strong> website visits, <strong className="text-white">80</strong> email signups</li>
+                      <li>• Value: 80 × $3 = <strong className="text-white">$240</strong> + credibility</li>
+                    </ul>
+                  </div>
+                </div>
 
-**Benefits**:
-- You control the audience
-- Position as connector
-- Build relationships while providing value
-- Content creation opportunity
-
-**How to start**:
-1. Pick format (Twitter Space is easiest)
-2. Choose weekly topic theme
-3. Invite 2-3 guests each week
-4. Promote to both audiences
-5. Record and repurpose
-
-**Strategy 2: Build a Community**
-
-**Platforms**:
-- Discord (free)
-- Circle ($39/month)
-- Facebook Group (free)
-- Telegram (free)
-
-**Structure**:
-- Free entry
-- Multiple channels/topics
-- Regular events
-- Member spotlights
-- Collaboration opportunities
-
-**Networking value**:
-- 100+ members = natural partnerships
-- Members promote each other
-- Built-in collaboration pool
-- Shared resources
-
-**Strategy 3: Create a Newsletter Round-Up**
-
-**What it is**: Feature other creators weekly
-
-**Format**:
-"5 Creators You Should Follow This Week"
-- Brief intro
-- Why you like them
-- Link to their best content
-- Tag them
-
-**Benefits**:
-- Builds goodwill
-- They share with their audience
-- Natural relationship starter
-- Positions you as connector
-
-**Time**: 30 min/week
-
-**Strategy 4: Podcast/Interview Series**
-
-**What it is**: Interview creators in your niche
-
-**Benefits**:
-- 30-60 min deep conversation
-- They promote the episode
-- Content for both of you
-- Natural relationship builder
-
-**Setup**:
-- Use Riverside.fm ($15/month)
-- 30-min episodes
-- Weekly or bi-weekly
-- Repurpose into clips
-
-**Networking Automation**
-
-**Tools to manage relationships**:
-
-**1. Notion CRM** (Free)
-- Track all 100 dream connections
-- Log conversations
-- Set follow-up reminders
-- Note collaboration ideas
-
-**Template**:
-- Name
-- Platform
-- Follower count
-- Last interaction
-- Next action
-- Collaboration ideas
-- Notes
-
-**2. Lyne.ai** ($39/month)
-- Track engagement
-- Get notified when to reach out
-- Relationship scoring
-- Follow-up reminders
-
-**3. Folk** ($20/month)
-- Lightweight CRM
-- Track all interactions
-- Set reminders
-- Pipeline for collaborations
-
-**Common Networking Mistakes**
-
-**Mistake 1: The Immediate Ask**
-- Bad: First DM is a collaboration pitch
-- Good: 4-6 weeks of value-first engagement
-
-**Mistake 2: Too Transactional**
-- Bad: Only reach out when you want something
-- Good: Regular check-ins, share resources
-
-**Mistake 3: Aiming Too High Too Soon**
-- Bad: Trying to collab with 1M+ follower accounts
-- Good: Start with peers, build up
-
-**Mistake 4: No Follow-Through**
-- Bad: Great conversation, no follow-up
-- Good: Follow up within 48 hours
-
-**Mistake 5: One-Sided Value**
-- Bad: "What can you do for me?"
-- Good: "How can we both win?"
-
-**Mistake 6: Copying Instead of Complementing**
-- Bad: Reaching out to direct competitors
-- Good: Find complementary creators
-
-**Networking ROI Examples**
-
-**Real results from strategic networking**:
-
-**Case 1: Newsletter swap**
-- Partner audience: 15K subscribers
-- Your feature converted: 8% (1,200 new subscribers)
-- Value: 1,200 × $3/subscriber = $3,600
-
-**Case 2: Joint webinar**
-- Combined audience: 25K
-- 800 registrants
-- 300 attended
-- $97 product
-- 30 sales = $2,910
-- Split 50/50 = $1,455 each
-
-**Case 3: Referral partnership**
-- Referred 3 clients in 6 months
-- $5K service
-- 20% referral fee
-- $3,000 passive income
-
-**Case 4: Podcast appearance**
-- Their audience: 50K downloads/episode
-- Your segment: 15 minutes
-- Link in show notes
-- Result: 500 website visits, 80 email signups
-- Value: 80 × $3 = $240 + credibility
-
-**The Compound Effect**
-
-**Month 1-3**:
-- Build list of 100
-- Engage consistently
-- Make 10 connections
-
-**Month 4-6**:
-- First 3-5 collaborations
-- Build reputation
-- Get introductions
-
-**Month 7-12**:
-- 15-20 active relationships
-- Regular collaborations
-- Inbound opportunities
-
-**Year 2+**:
-- 50+ strong connections
-- Opportunities find you
-- Network becomes unfair advantage
-
-**Bottom line**: Your network is your net worth. Invest 20% of your time in relationships, not just content.`}</p>
+                {/* The Compound Effect */}
+                <div className="bg-gradient-to-br from-violet-500/10 to-purple-500/10 border border-violet-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-violet-400 mb-4">The Compound Effect</h4>
+                  
+                  <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-violet-300 mb-3">Month 1-3:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Build list of <strong className="text-white">100</strong></li>
+                      <li>• Engage consistently</li>
+                      <li>• Make <strong className="text-white">10</strong> connections</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-violet-300 mb-3">Month 4-6:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• First <strong className="text-white">3-5</strong> collaborations</li>
+                      <li>• Build reputation</li>
+                      <li>• Get introductions</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-violet-300 mb-3">Month 7-12:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">15-20</strong> active relationships</li>
+                      <li>• Regular collaborations</li>
+                      <li>• Inbound opportunities</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-violet-300 mb-3">Year 2+:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">50+</strong> strong connections</li>
+                      <li>• Opportunities find you</li>
+                      <li>• Network becomes unfair advantage</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mt-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Bottom line:</strong> Your network is your net worth. Invest <strong className="text-white">20%</strong> of your time in relationships, not just content.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
