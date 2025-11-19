@@ -432,9 +432,9 @@ export default function YouTubeShortsStrategy() {
 
       <section className="section-spacing">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">Complete YouTube Shorts FAQ</h2>
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Complete YouTube Shorts FAQ</h2>
 
-        <div className="space-y-8">
+            <div className="space-y-8">
             <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">How much money can you actually make from YouTube Shorts in 2026?</h3>
                 <div className="space-y-6">
@@ -4754,7 +4754,7 @@ export default function YouTubeShortsStrategy() {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
         </div>
       </section>
 
