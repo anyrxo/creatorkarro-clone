@@ -431,7 +431,7 @@ export default function YouTubeShortsStrategy() {
 </section>
 
       <section className="section-spacing">
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Complete YouTube Shorts FAQ</h2>
 
         <div className="space-y-8">
@@ -4755,7 +4755,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
             </div>
         </div>
-    </div>
+        </div>
       </section>
 
       <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
