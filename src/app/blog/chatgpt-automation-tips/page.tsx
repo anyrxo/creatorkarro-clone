@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { Zap, TrendingUp, Clock, DollarSign, Target, CheckCircle, MessageCircle, Rocket, Code, Users } from 'lucide-react'

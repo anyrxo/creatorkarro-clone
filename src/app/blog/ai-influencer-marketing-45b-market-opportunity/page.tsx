@@ -1,5 +1,4 @@
 
-import React from 'react'
 import Link from 'next/link'
 import { TrendingUp, DollarSign, Users, Sparkles, Target, Rocket, BarChart3, CheckCircle, AlertCircle, Star, Zap, ArrowRight, Globe, Brain } from 'lucide-react'
 import BlogPostLayout from '@/components/BlogPostLayout'

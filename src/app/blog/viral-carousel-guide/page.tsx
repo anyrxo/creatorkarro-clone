@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
@@ -75,8 +74,6 @@ export const metadata: Metadata = {
     canonical: "https://iimagined.ai/blog/viral-carousel-guide"
   }
 }
-
-export default function ViralCarouselGuide() {
 
 const schema = generateBlogPostSchema({
   title: metadata.title as string,
@@ -1942,6 +1939,7 @@ Create one template, duplicate 30 times, change accent color for each:
   }
 ]
 
+export default function ViralCarouselGuide() {
   return (
     <div className="min-h-screen bg-dark">
       <script

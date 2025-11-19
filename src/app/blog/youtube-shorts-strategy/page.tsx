@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import SmartCTA from '@/components/blog/SmartCTA'
@@ -59,8 +58,6 @@ export const metadata = {
   }
 }
 
-export default function YouTubeShortsStrategy() {
-
 const schema = generateBlogPostSchema({
   title: metadata.title,
   description: metadata.description,
@@ -72,7 +69,7 @@ const schema = generateBlogPostSchema({
   image: (metadata.openGraph?.images as Array<{url: string}>)?.[0]?.url || ""
 })
 
-          
+export default function YouTubeShortsStrategy() {
   return (
     
     <div className="min-h-screen bg-dark">

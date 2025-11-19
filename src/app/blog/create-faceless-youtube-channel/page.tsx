@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import FAQSchema from '@/components/seo/FAQSchema'
@@ -60,8 +59,6 @@ export const metadata: Metadata = {
     canonical: "https://iimagined.ai/blog/create-faceless-youtube-channel"
   }
 }
-
-export default function CreateFacelessYouTubeChannel() {
 
 const schema = generateBlogPostSchema({
   title: metadata.title as string,
@@ -2028,7 +2025,7 @@ Creating content for low-CPM countries
   }
 ]
 
-
+export default function CreateFacelessYouTubeChannel() {
   return (
     
     <div className="min-h-screen bg-dark">

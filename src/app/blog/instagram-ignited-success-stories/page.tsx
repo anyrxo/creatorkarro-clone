@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import SmartCTA from '@/components/blog/SmartCTA'
 import RelatedPosts from '@/components/blog/RelatedPosts'

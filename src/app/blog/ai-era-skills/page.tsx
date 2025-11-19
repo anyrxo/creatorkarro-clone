@@ -1,6 +1,5 @@
 
 
-import React from 'react'
 import Link from 'next/link'
 import { Brain, Sparkles, Target, TrendingUp, Users, Lightbulb, Shield, Zap, Heart, Globe, CheckCircle, ArrowRight, Award } from 'lucide-react'
 import BlogPostLayout from '@/components/BlogPostLayout'

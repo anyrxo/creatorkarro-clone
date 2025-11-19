@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import { generateBlogPostSchema } from '@/lib/blog-schema'
 import SmartCTA from '@/components/blog/SmartCTA'
