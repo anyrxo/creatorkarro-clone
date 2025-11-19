@@ -291,7 +291,7 @@ export default function InstagramIgnitedPage() {
           stats={[
             { value: "10M+", label: "Followers Grown", color: "text-red-400" },
             { value: "$2.5M+", label: "Revenue Generated", color: "text-green-400" },
-            { value: "250M+", label: "Views Created", color: "text-blue-400" }
+            { value: "250M+", label: "Views Created", color: "text-orange-400" }
           ]}
           isVisible={heroAnimation.isVisible}
         />
@@ -413,15 +413,15 @@ export default function InstagramIgnitedPage() {
       <section className="section-spacing bg-zinc-950 relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/20 blur-[120px] rounded-full opacity-30 pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-600/20 blur-[120px] rounded-full opacity-30 pointer-events-none" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div
             ref={solutionAnimation.elementRef}
             className={`text-center mb-16 scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}
           >
-             <div className="inline-block bg-zinc-900/80 backdrop-blur-sm border border-blue-500/30 rounded-full px-4 py-2 mb-6">
-              <span className="text-blue-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
+             <div className="inline-block bg-zinc-900/80 backdrop-blur-sm border border-orange-500/30 rounded-full px-4 py-2 mb-6">
+              <span className="text-orange-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
                 <CheckCircle className="w-4 h-4" />
                 THE SOLUTION
               </span>
@@ -432,14 +432,14 @@ export default function InstagramIgnitedPage() {
                 className="text-3xl md:text-6xl font-black text-white"
                 duration={0.8}
               />
-              <span className="text-blue-500 mx-3">
+              <span className="text-red-500 mx-3">
                 <TypingAnimation
                   text="Ignited"
-                  className="text-3xl md:text-6xl font-black text-blue-500 inline"
+                  className="text-3xl md:text-6xl font-black text-red-500 inline"
                   duration={100}
                 />
               </span>
-              <div className="mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+              <div className="mt-2 text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">
                 Changes Everything
               </div>
             </div>
@@ -449,7 +449,7 @@ export default function InstagramIgnitedPage() {
           </div>
 
           <div className={`bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8 md:p-12 mb-16 scroll-scale relative overflow-hidden ${solutionAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-br from-red-900/10 to-transparent pointer-events-none" />
             
             <div className="grid md:grid-cols-2 gap-12 relative z-10">
               <div className="space-y-8">
@@ -498,11 +498,11 @@ export default function InstagramIgnitedPage() {
                    </div>
                    <div className="flex items-center justify-between p-3 bg-zinc-900 rounded-lg border border-zinc-800">
                      <span className="text-zinc-300">Daily Work</span>
-                     <span className="text-blue-400 font-mono font-bold">2 Hours</span>
+                     <span className="text-orange-400 font-mono font-bold">2 Hours</span>
                    </div>
                    <div className="flex items-center justify-between p-3 bg-zinc-900 rounded-lg border border-zinc-800">
                      <span className="text-zinc-300">Location</span>
-                     <span className="text-purple-400 font-mono font-bold">Anywhere</span>
+                     <span className="text-red-400 font-mono font-bold">Anywhere</span>
                    </div>
                 </div>
                 <div className="mt-8">

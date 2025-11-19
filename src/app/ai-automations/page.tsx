@@ -181,7 +181,7 @@ export default function AIAutomationsPage() {
             stats={[
               { value: "800+", label: "Students Enrolled", color: "text-orange-400" },
               { value: "$400K+", label: "Student Revenue", color: "text-green-400" },
-              { value: "5-15", label: "Avg Clients Landed", color: "text-purple-400" }
+              { value: "5-15", label: "Avg Clients Landed", color: "text-red-400" }
             ]}
             isVisible={heroAnimation.isVisible}
           />
@@ -338,11 +338,11 @@ export default function AIAutomationsPage() {
                      </div>
                      <div className="flex items-center justify-between p-3 bg-zinc-900 rounded-lg border border-zinc-800">
                        <span className="text-zinc-300">Profit Margin</span>
-                       <span className="text-blue-400 font-mono font-bold">85%+</span>
+                       <span className="text-orange-400 font-mono font-bold">85%+</span>
                      </div>
                      <div className="flex items-center justify-between p-3 bg-zinc-900 rounded-lg border border-zinc-800">
                        <span className="text-zinc-300">Clients Needed</span>
-                       <span className="text-purple-400 font-mono font-bold">Just 5-10</span>
+                       <span className="text-red-400 font-mono font-bold">Just 5-10</span>
                      </div>
                   </div>
                   <div className="mt-8">

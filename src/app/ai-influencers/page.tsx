@@ -130,38 +130,44 @@ export default function AIInfluencersPage() {
     {
       number: 1,
       title: "AI Character Creation Mastery",
-      description: "Learn to create photorealistic AI models that look and feel authentic using Flux & SDXL.",
+      description: "Create photorealistic AI models for any niche: Fashion, Fitness, Cosplay, or Adult/Fanvue.",
       color: "text-pink-400",
       bgColor: "bg-gradient-to-r from-pink-900/20 to-purple-900/20",
       borderColor: "border-pink-500/30",
       whatYouLearn: [
-        "Advanced Flux & SDXL model training",
-        "LoRA training for consistent faces",
-        "Character personality development",
-        "Facial expression control",
-        "Age, ethnicity, and style variations"
+        "Flux & SDXL for SFW & NSFW models",
+        "Consistent face training (LoRA)",
+        "Realistic skin textures & lighting",
+        "Body type & ethnicity customization",
+        "Styling for specific niches"
       ],
       deliverables: [
-        "3+ photorealistic AI characters",
-        "Character style guides",
-        "Training datasets",
-        "Custom LoRA models"
+        "3+ Market-Ready AI Models",
+        "Character Style Guide",
+        "Custom LoRA Models",
+        "Niche-Specific Portfolios"
       ],
       value: "$197"
     },
     {
       number: 2,
-      title: "Content Automation Engine",
-      description: "Build systems that generate unlimited content automatically with ComfyUI.",
-      color: "text-blue-400",
-      bgColor: "bg-gradient-to-r from-blue-900/20 to-cyan-900/20",
-      borderColor: "border-blue-500/30",
+      title: "Multi-Media Content Engine",
+      description: "Generate viral content formats: Images, AI Video, and AI Audio voiceovers.",
+      color: "text-purple-400",
+      bgColor: "bg-gradient-to-r from-purple-900/20 to-fuchsia-900/20",
+      borderColor: "border-purple-500/30",
       whatYouLearn: [
-        "ComfyUI automation workflows",
-        "Batch image generation",
-        "Video content creation",
-        "Custom request fulfillment",
-        "Content scheduling systems"
+        "Viral TikTok dance generation",
+        "Ultra-realistic image sets",
+        "AI Voice cloning & Audio messages",
+        "Lip-syncing & talking head videos",
+        "Deepfake technology (Ethical use)"
+      ],
+      deliverables: [
+        "Viral Video Library",
+        "Custom Voice Clones",
+        "Automated Content Calendar",
+        "Multi-Format Content Pipeline"
       ],
       value: "$147"
     },
@@ -169,9 +175,9 @@ export default function AIInfluencersPage() {
       number: 3,
       title: "Platform Domination Strategy",
       description: "Master every major platform with AI influencer specific strategies.",
-      color: "text-green-400",
-      bgColor: "bg-gradient-to-r from-green-900/20 to-emerald-900/20",
-      borderColor: "border-green-500/30",
+      color: "text-fuchsia-400",
+      bgColor: "bg-gradient-to-r from-fuchsia-900/20 to-pink-900/20",
+      borderColor: "border-fuchsia-500/30",
       whatYouLearn: [
         "Instagram growth & monetization",
         "TikTok viral strategies",
@@ -179,21 +185,33 @@ export default function AIInfluencersPage() {
         "YouTube Shorts automation",
         "Fanvue & OnlyFans optimization"
       ],
+      deliverables: [
+        "Cross-Platform Growth Strategy",
+        "Fanvue Launch Plan",
+        "Hashtag & Trend Strategy",
+        "Community Management Scripts"
+      ],
       value: "$197"
     },
     {
       number: 4,
       title: "Monetization Mastery",
-      description: "Turn your AI influencers into profit-generating machines.",
-      color: "text-purple-400",
-      bgColor: "bg-gradient-to-r from-purple-900/20 to-indigo-900/20",
-      borderColor: "border-purple-500/30",
+      description: "Turn followers into paying subscribers. SFW brand deals & NSFW subscription models.",
+      color: "text-pink-300",
+      bgColor: "bg-gradient-to-r from-pink-900/20 to-rose-900/20",
+      borderColor: "border-pink-500/30",
       whatYouLearn: [
-        "Brand partnerships & sponsorships",
-        "Custom content & PPV sales",
-        "Subscription tier optimization",
-        "Affiliate marketing systems",
-        "Premium content upsells"
+        "Fanvue & Subscription optimization",
+        "Selling custom content (PPV)",
+        "SFW Brand sponsorships",
+        "Chatting scripts that convert",
+        "High-ticket private requests"
+      ],
+      deliverables: [
+        "Monetization Roadmap",
+        "PPV Pricing Strategy",
+        "Chatter Training Guide",
+        "Sponsorship Media Kit"
       ],
       value: "$147"
     },
@@ -201,9 +219,9 @@ export default function AIInfluencersPage() {
       number: 5,
       title: "Scaling & Automation Systems",
       description: "Scale to multiple AI models and automate everything.",
-      color: "text-orange-400",
-      bgColor: "bg-gradient-to-r from-orange-900/20 to-red-900/20",
-      borderColor: "border-orange-500/30",
+      color: "text-violet-400",
+      bgColor: "bg-gradient-to-r from-violet-900/20 to-purple-900/20",
+      borderColor: "border-violet-500/30",
       whatYouLearn: [
         "Multi-model management",
         "Team building & delegation",
@@ -211,21 +229,33 @@ export default function AIInfluencersPage() {
         "Quality control systems",
         "Performance tracking"
       ],
+      deliverables: [
+        "Agency SOPs",
+        "Hiring Templates",
+        "Scaling Roadmap",
+        "Multi-Model Dashboard"
+      ],
       value: "$197"
     },
     {
       number: 6,
       title: "Legal & Compliance Framework",
       description: "Stay compliant and protect your business legally.",
-      color: "text-teal-400",
-      bgColor: "bg-gradient-to-r from-teal-900/20 to-cyan-900/20",
-      borderColor: "border-teal-500/30",
+      color: "text-rose-400",
+      bgColor: "bg-gradient-to-r from-rose-900/20 to-pink-900/20",
+      borderColor: "border-rose-500/30",
       whatYouLearn: [
         "AI content disclosure requirements",
         "Platform terms of service",
         "Copyright & trademark protection",
         "Tax implications & structures",
         "International compliance"
+      ],
+      deliverables: [
+        "Legal Contract Templates",
+        "Disclosure Checklists",
+        "Copyright Guides",
+        "Compliance Audit Tool"
       ],
       value: "$127"
     }
@@ -281,10 +311,10 @@ export default function AIInfluencersPage() {
 
       <AIContentDeclaration
         title="AI Influencers Mastery: Create Photorealistic Virtual Models & Earn $10K/Month"
-        description="Master ComfyUI, SDXL, and AI workflows to create photorealistic AI influencers. Build virtual models that generate content 24/7 without showing your face."
+        description="Master ComfyUI, SDXL, and AI workflows to create photorealistic AI influencers for any niche (SFW/NSFW). Build virtual models that generate content 24/7."
         contentType="course"
         primaryTopic="AI Influencer Creation & Monetization"
-        keywords={['AI influencers', 'ComfyUI', 'SDXL', 'virtual models', 'AI image generation', 'passive income']}
+        keywords={['AI influencers', 'ComfyUI', 'SDXL', 'Fanvue', 'virtual models', 'AI image generation', 'passive income', 'NSFW AI', 'SFW AI']}
         author="Anyro"
         datePublished="2024-02-01"
         dateModified="2025-10-31"
@@ -296,7 +326,7 @@ export default function AIInfluencersPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aiInfluencersSchema) }} />
 
       <div className="min-h-screen bg-dark relative selection:bg-pink-500/30 selection:text-pink-200">
-        <h1 className="sr-only">AI Influencers Mastery: Build Your AI-Powered Virtual Influencer Empire</h1>
+        <h1 className="sr-only">AI Influencers Mastery: Build Your AI-Powered Virtual Influencer Empire (SFW & NSFW)</h1>
 
         {/* Hero Section */}
         <div ref={heroAnimation.elementRef} className="relative z-10">
@@ -304,7 +334,7 @@ export default function AIInfluencersPage() {
             badge="AI INFLUENCER MASTERY"
             badgeColor="bg-pink-600/20 text-pink-300 border border-pink-500/30 backdrop-blur-sm"
             title={<>Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500">AI Influencer Empire</span> And Make <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">$10K/Month</span> Without Showing Your Face</>}
-            description="The complete system to create, grow, and monetize AI-powered virtual models. 500+ students are already generating passive income."
+            description="The complete system to create, grow, and monetize AI-powered virtual models across ANY niche—from Fashion & Lifestyle to Fanvue & Adult content. Master AI video, audio, and images."
             ctaText="Start Building Your AI Influencer"
             ctaLink="#pricing"
             socialProof={{
