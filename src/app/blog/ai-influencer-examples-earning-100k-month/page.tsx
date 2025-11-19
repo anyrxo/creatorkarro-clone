@@ -509,6 +509,10 @@ export default function AIInfluencerExamplesPage() {
         <SmartCTA blogSlug="ai-influencer-examples-earning-100k-month" />
 
         {/* Quick Overview of Remaining 12 */}
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-influencer-examples-earning-100k-month" variant="inline" />
+
         <h2 className="text-4xl font-bold text-white mt-16 mb-6 flex items-center gap-3">
           <Star className="w-10 h-10 text-cyan-400" />
           The Next 12: Rapid-Fire Success Stories

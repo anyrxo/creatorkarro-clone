@@ -1026,6 +1026,10 @@ export default function EmailMarketingAutomationPage() {
             </h2>
             <FAQSchema faqs={faqs} />
 
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="email-marketing-automation-advanced-n8n-sequences" variant="inline" />
+
           </section>
 
           {/* Smart CTA - All Access Pass */}

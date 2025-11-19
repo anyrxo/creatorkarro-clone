@@ -701,6 +701,10 @@ export default function LeadGenerationAutomationPage() {
           </div>
         </div>
 
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="lead-generation-automation" variant="inline" />
+
       </section>
     </div>
   )

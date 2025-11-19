@@ -479,6 +479,10 @@ export default function InventoryManagementAutomationPage() {
           </div>
         </div>
 
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="inventory-management-automation" variant="inline" />
+
       </section>
     </div>
   )

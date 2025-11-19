@@ -401,6 +401,10 @@ export default function CGIInfluencerBusinessModelPage() {
                 <span>Monthly Revenue Range:</span>
                 <span className="text-cyan-300 font-bold">$5K-$30K</span>
               </div>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="cgi-influencer-business-model-revenue-guide" variant="inline" />
+
               <div className="flex justify-between items-center text-gray-300">
                 <span>Typical Commission:</span>
                 <span className="text-white font-semibold">8-15%</span>

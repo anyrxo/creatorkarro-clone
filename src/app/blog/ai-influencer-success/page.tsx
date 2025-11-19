@@ -618,6 +618,10 @@ Example: 'Outfit 3' at end transitions smoothly to 'Outfit 1' at start
 - Generate 10 images in ComfyUI on Sunday (1 hour)
 - Convert all to videos Monday (Runway batch upload, 30 min)
 - Edit all 10 videos Tuesday (CapCut, 2 hours)
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-influencer-success" variant="inline" />
+
 - Schedule week's content (Buffer/Later, 15 min)
 - **Total**: 3.75 hours for 10 Reels = 22 min per video
 

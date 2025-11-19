@@ -2,7 +2,7 @@ import os
 import re
 from pathlib import Path
 
-base_path = Path("C:/Users/manna/Downloads/iimaginedaii/creatorkarro-clone/src/app/blog")
+base_path = Path("C:/Users/manna/Downloads/imagined/creatorkarro-clone/src/app/blog")
 
 # Get all blog post page.tsx files
 blog_posts = list(base_path.glob("*/page.tsx"))

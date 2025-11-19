@@ -527,6 +527,10 @@ test('user can login successfully', async ({ page }) => {
           </div>
         </div>
 
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="quality-assurance-automation" variant="inline" />
+
       </section>
     </div>
   )

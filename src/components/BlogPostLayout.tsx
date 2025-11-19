@@ -67,7 +67,7 @@ export default function BlogPostLayout({
   description,
   date,
   readTime,
-  author = { name: 'Karro', role: 'Founder & Creator Entrepreneur' },
+  author = { name: 'Anyro', role: 'Founder & Creator Entrepreneur' },
   children,
   relatedPosts = []
 }: BlogPostLayoutProps) {
@@ -93,7 +93,7 @@ export default function BlogPostLayout({
 
           {/* Animated Gradient Orbs */}
           <div className={`absolute top-20 left-20 w-72 h-72 bg-gradient-to-r ${colors.gradient} rounded-full blur-3xl opacity-20 animate-pulse`}></div>
-          <div className={`absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r ${colors.gradient} rounded-full blur-3xl opacity-20 animate-pulse`} style={{animationDelay: '1s'}}></div>
+          <div className={`absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r ${colors.gradient} rounded-full blur-3xl opacity-20 animate-pulse`} style={{ animationDelay: '1s' }}></div>
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

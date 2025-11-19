@@ -2354,6 +2354,10 @@ export default function CreateFacelessYouTubeChannel() {
         </div>
     </div>
 
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="create-faceless-youtube-channel" variant="inline" />
+
 </section>
 
       <section className="section-spacing">

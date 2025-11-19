@@ -331,6 +331,10 @@ export default function VirtualInfluencerStatisticsPage() {
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-gray-300">CAGR 2024-2033</span>
                   <span className="text-3xl font-bold text-blue-300">39%</span>
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="virtual-influencer-statistics-2026-complete-data" variant="inline" />
+
                 </div>
                 <p className="text-sm text-gray-400">Strong growth, premium pricing</p>
               </div>

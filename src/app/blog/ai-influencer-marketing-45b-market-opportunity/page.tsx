@@ -369,6 +369,10 @@ export default function AIInfluencerMarketingPage() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+
+        {/* Inline CTA - Contextually Placed */}
+        <SmartCTA blogSlug="ai-influencer-marketing-45b-market-opportunity" variant="inline" />
+
                     <span className="text-green-400 font-bold">✓</span>
                   </div>
                   <div>
