@@ -14,6 +14,10 @@ import {
   HeroSection,
   SectionHeader
 } from '@/components/course/CourseLayout'
+import StandardCTA from '@/components/StandardCTA'
+import StickyCTA from '@/components/StickyCTA'
+import EcosystemGraph from '@/components/EcosystemGraph'
+import ProductLaunchSimulator from '@/components/tools/ProductLaunchSimulator'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
 import TypingAnimation from '@/components/magicui/typing-animation'
@@ -23,7 +27,24 @@ import ShimmerButton from '@/components/magicui/shimmer-button'
 import Marquee from '@/components/magicui/marquee'
 import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
 import SocialProof from '@/components/seo/SocialProof'
-import { ChevronRight, Target, Flame, Zap, Rocket, DollarSign, Mail, BarChart3, Users, AlertTriangle, CheckCircle, Gem, XCircle, Package } from 'lucide-react'
+import { 
+  ChevronRight, 
+  Target, 
+  Flame, 
+  Zap, 
+  Rocket, 
+  DollarSign, 
+  Mail, 
+  BarChart3, 
+  Users, 
+  AlertTriangle, 
+  CheckCircle, 
+  Gem, 
+  XCircle, 
+  Package,
+  Check,
+  Crown
+} from 'lucide-react'
 
 // Icon mapping function
 const getIcon = (iconName: string, className?: string) => {
@@ -47,7 +68,7 @@ const getIcon = (iconName: string, className?: string) => {
 }
 
 export default function DigitalProductsPage() {
-  // Scroll animations for different sections
+  // Scroll animations
   const heroAnimation = useScrollAnimation({ threshold: 0.2 })
   const problemAnimation = useScrollAnimation({ threshold: 0.1 })
   const solutionAnimation = useScrollAnimation({ threshold: 0.1 })
@@ -65,7 +86,7 @@ export default function DigitalProductsPage() {
   const faqAnimation = useScrollAnimation({ threshold: 0.1 })
   const finalCtaAnimation = useScrollAnimation({ threshold: 0.2 })
 
-  // For grid items that need staggered animations
+  // Staggered animations
   const problemCards = useScrollAnimations(6, { threshold: 0.1 })
   const whoForCards = useScrollAnimations(3, { threshold: 0.1 })
   const moduleCards = useScrollAnimations(8, { threshold: 0.1 })
@@ -73,7 +94,7 @@ export default function DigitalProductsPage() {
   const testimonialCards = useScrollAnimations(3, { threshold: 0.1 })
   const faqCards = useScrollAnimations(12, { threshold: 0.1 })
 
-  // Schema markup for Digital Products Course
+  // Schema Markup
   const digitalProductsSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
@@ -84,117 +105,111 @@ export default function DigitalProductsPage() {
       "name": "IImagined",
       "url": "https://iimagined.ai"
     },
-    "instructor": {
-      "@type": "Person",
-      "name": "Anyro",
-      "url": "https://iimagined.ai/story",
-      "jobTitle": "Digital Product & Business Expert",
-      "alumniOf": "Digital Entrepreneur"
-    },
-    "courseMode": "online",
-    "educationalLevel": "Beginner to Advanced",
-    "teaches": [
-      "Digital Product Creation",
-      "Online Business Strategy",
-      "Marketing Automation",
-      "Sales Funnel Development",
-      "Passive Income Systems",
-      "Product Monetization"
-    ],
     "offers": {
       "@type": "Offer",
       "price": "399",
       "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "category": "Business Course",
-      "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "online",
-        "courseWorkload": "20+ hours",
-        "instructor": "Anyro"
-      }
-    },
-    "totalTime": "PT20H",
-    "numberOfCredits": 10,
-    "educationalCredentialAwarded": "Digital Products Business Certificate",
-    "audience": {
-      "@type": "EducationalAudience",
-      "educationalRole": "student",
-      "audienceType": ["Entrepreneurs", "Content Creators", "Business Owners", "Online Marketers"]
-    },
-    "coursePrerequisites": "Basic computer and internet skills",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1500",
-      "bestRating": "5"
+      "availability": "https://schema.org/InStock"
     }
   }
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What are digital products and how do I create them?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Digital products are downloadable items like courses, ebooks, templates, software, or digital services. Our course teaches you to create, market, and sell profitable digital products from scratch."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I really make money selling digital products?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! Digital products have incredible profit margins since there's no inventory or shipping costs. Many students earn $10K-$100K+ monthly selling digital products with the right strategies."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need technical skills to sell digital products?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No technical skills required! Our course covers everything including simple tools for creating products, setting up sales pages, and automating delivery systems - perfect for complete beginners."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What's the best digital product to start with?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We recommend starting with digital templates, guides, or mini-courses in your area of expertise. These are quick to create, have high demand, and generate immediate revenue while you learn."
-        }
-      }
-    ]
-  }
+  const modules = [
+    {
+      title: "<span className='text-green-400'>Module 1:</span> Product Idea Validation",
+      value: "$497",
+      description: "Never build a product that doesn't sell. Learn the exact validation process to identify profitable ideas before you create anything."
+    },
+    {
+      title: "<span className='text-green-400'>Module 2:</span> High-Converting Product Creation",
+      value: "$697",
+      description: "Transform raw knowledge into irresistible digital products. Courses, eBooks, templates, tools - learn what formats work best."
+    },
+    {
+      title: "<span className='text-green-400'>Module 3:</span> Pricing Psychology Mastery",
+      value: "$597",
+      description: "Price your products for maximum profit and positioning. Psychology-based pricing strategies that let you charge 10x more."
+    },
+    {
+      title: "<span className='text-green-400'>Module 4:</span> Zero-Ad Launch Strategies",
+      value: "$797",
+      description: "Launch profitable products without spending a dime on ads. Organic marketing strategies and launch sequences that generate massive buzz."
+    },
+    {
+      title: "<span className='text-green-400'>Module 5:</span> Sales Funnel Automation",
+      value: "$897",
+      description: "Build automated sales systems that work 24/7 using N8N workflows. Advanced email sequences and landing pages."
+    },
+    {
+      title: "<span className='text-green-400'>Module 6:</span> Customer Success Systems",
+      value: "$497",
+      description: "Keep customers happy and buying more. Onboarding sequences and support systems that turn one-time buyers into lifetime fans."
+    },
+    {
+      title: "<span className='text-green-400'>Module 7:</span> Scaling to Multiple Products",
+      value: "$897",
+      description: "Expand from one product to an entire empire. Product suites, membership sites, and mastermind programs."
+    },
+    {
+      title: "<span className='text-green-400'>Module 8:</span> Business Operations & Growth",
+      value: "$597",
+      description: "Build systems that scale without you. Team building, automation tools, and financial management for long-term success."
+    }
+  ]
+
+  const bonuses = [
+    {
+      title: "50+ Product Templates",
+      icon: "target",
+      value: "$797",
+      description: "Done-for-you templates for courses, eBooks, worksheets, checklists, and more."
+    },
+    {
+      title: "Pricing Calculator Tool",
+      icon: "dollarSign",
+      value: "$297",
+      description: "Scientific pricing calculator that determines the optimal price point for maximum revenue."
+    },
+    {
+      title: "Email Sequence Library",
+      icon: "mail",
+      value: "$697",
+      description: "100+ high-converting email templates for launches, nurturing, sales, and success."
+    },
+    {
+      title: "Launch Checklist System",
+      icon: "target",
+      value: "$197",
+      description: "Step-by-step launch checklists that ensure nothing falls through the cracks."
+    },
+    {
+      title: "Analytics & Tracking Templates",
+      icon: "barChart3",
+      value: "$397",
+      description: "Spreadsheet templates and dashboard setups to track every metric that matters."
+    },
+    {
+      title: "Private Mastermind Access",
+      icon: "users",
+      value: "$1,997",
+      description: "Exclusive access to our private community of successful digital product creators."
+    }
+  ]
 
   return (
     <>
-      {/* SEO: AI Content Declaration for Digital Products Course */}
+      <StickyCTA 
+        price="$99/mo" 
+        originalPrice="$399" 
+        ctaLink="/checkout?course=empire-bundle"
+        productName="Empire Pass All Access" 
+      />
+
       <AIContentDeclaration
         title="Digital Products Academy: Build $500K+ Digital Empire with Automated Funnels"
         description="Complete system for creating, launching, and scaling digital products. Learn product creation, N8N automation, sales funnels, and systems that generate $10K-$50K monthly on autopilot."
         contentType="course"
         primaryTopic="Digital Product Creation & Business Automation"
-        keywords={[
-          'digital products',
-          'online course creation',
-          'N8N automation',
-          'sales funnels',
-          'passive income',
-          'product launch',
-          'email marketing',
-          'business automation',
-          'automated sales',
-          'digital empire',
-          'online business',
-          'info products',
-          'content monetization',
-          'marketing automation',
-          'creator economy'
-        ]}
+        keywords={['digital products', 'online course creation', 'N8N automation', 'sales funnels', 'passive income']}
         author="Anyro"
         datePublished="2024-03-01"
         dateModified="2025-10-31"
@@ -203,1342 +218,395 @@ export default function DigitalProductsPage() {
         expertiseLevel="beginner"
       />
 
-      {/* Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(digitalProductsSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(digitalProductsSchema) }} />
 
-      <div className="min-h-screen bg-dark relative">
-      <h1 className="sr-only">
-        Digital Products Academy: Create, Launch & Scale Profitable Digital Products
-      </h1>
-      {/* 1. Hero Section */}
-      <div ref={heroAnimation.elementRef}>
-        <HeroSection
-          badge="DIGITAL EMPIRE BUILDER"
-          badgeColor="bg-gradient-to-r from-green-600/20 to-emerald-600/20 text-green-300 px-4 py-2 rounded-full"
-          title="Turn Your <span className='text-green-400'>Knowledge</span> Into a <span className='text-green-400'>$500K+ Digital Empire</span> Without Ads or Followers"
-          description="The complete Digital Products Academy that shows you how to create, launch, and scale high-converting digital products that generate consistent $10K-$50K months on autopilot."
-          ctaText="Get Digital Products Mastery"
-          ctaLink="#pricing"
-          socialProof={{
-            images: [
-              "https://ext.same-assets.com/1161517358/2822588328.webp",
-              "https://ext.same-assets.com/1161517358/3376144705.webp",
-              "https://ext.same-assets.com/1161517358/2657109700.webp"
-            ],
-            rating: 5,
-            text: "3,500+ students earning $10K+ monthly"
-          }}
-          stats={[
-            { value: "$5M+", label: "Student Revenue Generated", color: "text-green-400" },
-            { value: "4,200+", label: "Products Launched", color: "text-blue-400" },
-            { value: "89%", label: "Success Rate", color: "text-purple-400" }
-          ]}
-          isVisible={heroAnimation.isVisible}
-        />
-      </div>
+      <div className="min-h-screen bg-dark relative selection:bg-green-500/30 selection:text-green-200">
+        <h1 className="sr-only">Digital Products Academy: Create, Launch & Scale Profitable Digital Products</h1>
 
-      {/* SEO: Social Proof Component */}
-      <div className="container mx-auto px-4">
-        <SocialProof
-          students={1200}
-          revenue="$5M+"
-          rating={4.9}
-          reviews={950}
-          companies={30}
-          showAll={true}
-        />
-      </div>
-
-      {/* 2. Problem Section */}
-      <section className="section-spacing border-t border-red-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={problemAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <SectionHeader
-              badge="BRUTAL REALITY"
-              badgeColor="bg-red-500/10 text-red-400 px-4 py-2 rounded-full"
-              isVisible={problemAnimation.isVisible}
-              title="You're Trapped in the <span className='text-red-400'>Trading Time for Money</span> Prison"
-              subtitle="While others build digital empires that work 24/7, you're managing limited growth with traditional methods..."
-            />
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
-            {[
-              {
-                icon: getIcon("dollarSign"),
-                title: "Working Harder, Earning Less: Complete Guide & Expert",
-                description: "You're grinding 60+ hours a week but your income is still capped by your time. Every dollar requires your personal involvement - there's no scalability, no freedom."
-              },
-              {
-                icon: getIcon("target"),
-                title: "Valuable Knowledge Going to Waste",
-                description: "You have incredible expertise and knowledge that could help thousands of people, but you have no idea how to package and monetize it profitably."
-              },
-              {
-                icon: getIcon("alertTriangle"),
-                title: "Confused by 'Digital Product' Gurus",
-                description: "Everyone's talking about courses and digital products, but all the advice is contradictory. You're overwhelmed by the options and don't know where to start."
-              },
-              {
-                icon: getIcon("xCircle"),
-                title: "Failed Launches and Zero Sales",
-                description: "You've tried creating products before but they flopped. No one bought, no one engaged, and you wasted months building something nobody wanted."
-              },
-              {
-                icon: getIcon("flame"),
-                title: "Watching Others Get Rich Off Your Ideas",
-                description: "Competitors with worse knowledge are making millions selling products while you're limited by trading time for money. They discovered the right approach - and you can too."
-              },
-              {
-                icon: getIcon("zap"),
-                title: "No Time Freedom or Passive Income",
-                description: "Your income stops when you stop working. You can't take vacations, you can't scale, and you're building a glorified job instead of a real business."
-              }
-            ].map((problem, index) => (
-              <div
-                key={index}
-                ref={problemCards.setElementRef(index)}
-                className={`scroll-fade-up ${problemCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
-              >
-                <ProblemCard {...problem} isVisible={problemCards.visibleElements[index]} />
-              </div>
-            ))}
-          </div>
-
-          <div className={`text-center scroll-fade-up ${problemAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-            <div className="bg-zinc-900 border border-red-900/30 rounded-2xl p-8 max-w-4xl mx-auto">
-              <h3 className="text-2xl md:text-4xl font-bold mb-4 text-red-400">
-                The Painful Truth...
-              </h3>
-              <p className="text-lg md:text-xl text-zinc-200 mb-6">
-                Every month you stay trapped in trading time for money is $10K-$50K in lost potential. Every day you delay
-                building digital products, others get further ahead in the passive income game.
-              </p>
-              <div className="bg-zinc-900 border border-red-500 rounded-lg p-6">
-                <p className="text-xl font-bold text-red-400 mb-2 flex items-center gap-2">
-                  {getIcon('xCircle', 'w-5 h-5')} You're not just missing money... you're missing the freedom to live life on your terms.
-                </p>
-                <p className="text-zinc-200">
-                  While others build products that sell while they sleep, you're limited by the continuous demands of manual work.
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* Hero Section */}
+        <div ref={heroAnimation.elementRef} className="relative z-10">
+          <HeroSection
+            badge="DIGITAL EMPIRE BUILDER"
+            badgeColor="bg-green-600/20 text-green-300 border border-green-500/30 backdrop-blur-sm"
+            title={<>Turn Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">Knowledge</span> Into a <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">$500K+ Digital Empire</span> Without Ads</>}
+            description="The complete Digital Products Academy that shows you how to create, launch, and scale high-converting digital products that generate consistent $10K-$50K months on autopilot."
+            ctaText="Start Your Digital Empire"
+            ctaLink="#pricing"
+            socialProof={{
+              images: [
+                "https://ext.same-assets.com/1161517358/2822588328.webp",
+                "https://ext.same-assets.com/1161517358/3376144705.webp",
+                "https://ext.same-assets.com/1161517358/2657109700.webp"
+              ],
+              rating: 5,
+              text: "3,500+ students earning $10K+ monthly"
+            }}
+            stats={[
+              { value: "$5M+", label: "Student Revenue", color: "text-green-400" },
+              { value: "4,200+", label: "Products Launched", color: "text-emerald-400" },
+              { value: "89%", label: "Success Rate", color: "text-teal-400" }
+            ]}
+            isVisible={heroAnimation.isVisible}
+          />
         </div>
-      </section>
 
-      {/* 3. Solution Section */}
-      <section className="section-spacing bg-gradient-to-b from-green-900/20 to-emerald-900/20 border-t border-green-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={solutionAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <div className="text-center mb-8">
-              <div className="text-4xl md:text-6xl font-bold text-white mb-6">
+        {/* Social Proof */}
+        <div className="container mx-auto px-4 relative z-10">
+          <SocialProof
+            students={1200}
+            revenue="$5M+"
+            rating={4.9}
+            reviews={950}
+            companies={30}
+            showAll={true}
+          />
+        </div>
+
+        {/* PROBLEM Section - The Gap */}
+        <section className="section-spacing relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-green-900/10 to-transparent pointer-events-none" />
+          
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div
+              ref={problemAnimation.elementRef}
+              className={`text-center mb-16 scroll-fade-up ${problemAnimation.isVisible ? 'visible' : ''}`}
+            >
+              <div className="inline-block bg-zinc-900/80 backdrop-blur-sm border border-green-500/30 rounded-full px-4 py-2 mb-6">
+                <span className="text-green-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
+                  <AlertTriangle className="w-4 h-4" />
+                  THE TIME TRAP
+                </span>
+              </div>
+              <div className="text-3xl md:text-6xl font-black mb-6 text-white tracking-tight">
                 <BlurIn
-                  word="Digital Products Academy"
-                  className="text-4xl md:text-6xl font-bold text-white"
+                  word="Stop Trading Time For Money"
+                  className="text-3xl md:text-6xl font-black text-white"
                   duration={0.8}
                 />
-                <div className="bg-gradient-to-r from-green-400 via-emerald-500 to-green-500 bg-clip-text text-transparent">
-                  <WordRotate
-                    words={["Changes Everything", "Transforms Lives", "Creates Freedom", "Builds Empires"]}
-                    className="text-4xl md:text-6xl font-bold"
-                    duration={3000}
-                  />
-                </div>
               </div>
-              <TypingAnimation
-                text="The ONLY proven system that transforms your knowledge into high-converting digital products that scale infinitely."
-                className="text-xl text-zinc-200 max-w-3xl mx-auto"
-                duration={150}
-              />
-            </div>
-          </div>
-
-          <div className={`bg-gradient-to-r from-green-900/30 to-emerald-900/30 border border-green-500/30 rounded-3xl p-8 md:p-12 mb-16 scroll-scale ${solutionAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-            <div className="text-center mb-8">
-              <h3 className="text-3xl md:text-5xl font-bold mb-4">
-                This is the <span className="text-green-400">EXACT</span> System That...
-              </h3>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-green-500 rounded-full p-2 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-green-400 mb-2">Generated $5M+ in student revenue</h4>
-                    <p className="text-zinc-200">Students have created and sold everything from $47 guides to $2,997 mastermind programs using this system.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-green-500 rounded-full p-2 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-green-400 mb-2">Launched 4,200+ successful products</h4>
-                    <p className="text-zinc-200">From complete beginners to experts, this system works for anyone with valuable knowledge to share.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-green-500 rounded-full p-2 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-green-400 mb-2">89% success rate across all niches</h4>
-                    <p className="text-zinc-200">Whether you're in fitness, business, relationships, or any other niche - these principles work universally.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-green-500 rounded-full p-2 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-green-400 mb-2">Works without ads or huge followings</h4>
-                    <p className="text-zinc-200">You don't need 100K followers or expensive ads. This system creates demand and sales through strategic positioning.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-green-500 rounded-full p-2 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-green-400 mb-2">Creates true passive income streams</h4>
-                    <p className="text-zinc-200">Build once, sell forever. Your products work 24/7 generating sales while you sleep, travel, or focus on new projects.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-green-500 rounded-full p-2 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-green-400 mb-2">Scales from $1K to $100K+ monthly</h4>
-                    <p className="text-zinc-200">Start with simple products and scale up to comprehensive programs, mastermind groups, and licensing deals.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <div className="bg-yellow-500/20 border border-yellow-500 rounded-2xl p-6">
-                <h4 className="text-2xl font-bold text-yellow-400 mb-2 flex items-center gap-2">
-                  <Zap className="w-6 h-6" />
-                  This System is BATTLE-TESTED
-                </h4>
-                <p className="text-zinc-200 text-lg">
-                  No theory, no guesswork, no "hope this works." Every strategy has been proven across thousands of students
-                  and millions in digital product sales.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* NEW SECTION 1: Tools & Platforms Grid */}
-      <section className="section-spacing bg-gradient-to-b from-black to-zinc-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div ref={toolsAnimation.elementRef}>
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 rounded-full px-6 py-2 mb-6">
-                <Package className="w-5 h-5 text-green-400" />
-                <span className="text-green-300 font-semibold">TOOLS & PLATFORMS</span>
-              </div>
-              <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Master the <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Complete Digital Product Stack</span>
-              </h2>
-              <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                Create, market, and sell digital products using industry-leading platforms
+              <p className="text-xl md:text-2xl text-zinc-400 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
+                While others build digital assets that pay them 24/7, you're stuck in the manual labor trap.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-16">
               {[
-                { name: 'Notion', category: 'Product Creation', icon: '📝' },
-                { name: 'Canva', category: 'Design', icon: '🎨' },
-                { name: 'Gumroad', category: 'Selling Platform', icon: '💳' },
-                { name: 'Teachable', category: 'Course Platform', icon: '📚' },
-                { name: 'Kajabi', category: 'All-in-One', icon: '🎯' },
-                { name: 'ConvertKit', category: 'Email Marketing', icon: '📧' },
-                { name: 'Stripe', category: 'Payments', icon: '💰' },
-                { name: 'Lemon Squeezy', category: 'Checkout', icon: '🛒' },
-                { name: 'Figma', category: 'Design', icon: '🎨' },
-                { name: 'Adobe Creative', category: 'Professional Tools', icon: '🎨' },
-                { name: 'ClickFunnels', category: 'Sales Funnels', icon: '🎯' },
-                { name: 'Podia', category: 'Digital Store', icon: '🏪' }
-              ].map((tool, index) => (
+                {
+                  icon: "dollarSign",
+                  title: "Income Capped by Time",
+                  description: "You can only work so many hours. Your income hits a ceiling while expenses keep rising."
+                },
+                {
+                  icon: "target",
+                  title: "Knowledge Wasted",
+                  description: "You have valuable expertise that could help thousands, but no way to package and sell it."
+                },
+                {
+                  icon: "alertTriangle",
+                  title: "Information Overload",
+                  description: "Confused by contradictory advice on courses, ebooks, and platforms. Analysis paralysis."
+                },
+                {
+                  icon: "xCircle",
+                  title: "Failed Launches",
+                  description: "Wasted months building products nobody wanted. Zero sales and crushed confidence."
+                },
+                {
+                  icon: "flame",
+                  title: "Competitors Winning",
+                  description: "Watching people with less skill make millions because they have a product strategy."
+                },
+                {
+                  icon: "zap",
+                  title: "Zero Freedom",
+                  description: "If you stop working, the money stops. You own a job, not a business."
+                }
+              ].map((problem, index) => (
                 <div
-                  key={tool.name}
-                  className="group relative bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-zinc-800 hover:border-green-500/50 transition-all duration-300 hover:scale-105"
+                  key={index}
+                  ref={problemCards.setElementRef(index)}
+                  className={`bg-zinc-900/50 border border-green-900/20 rounded-2xl p-6 hover:bg-green-900/10 hover:border-green-500/30 transition-all duration-300 hover-lift scroll-fade-up ${problemCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
                 >
-                  <div className="flex flex-col items-center text-center">
-                    <span className="text-4xl mb-3 group-hover:scale-110 transition-transform">{tool.icon}</span>
-                    <h3 className="font-semibold text-white text-sm mb-1">{tool.name}</h3>
-                    <p className="text-xs text-zinc-400">{tool.category}</p>
+                  <div className="mb-4 bg-green-500/10 w-12 h-12 rounded-xl flex items-center justify-center">
+                    <PainPointIcon
+                      type={problem.icon as any}
+                      size={24}
+                      className="text-green-500"
+                      color="currentColor"
+                    />
                   </div>
-
-                  {/* Hover effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-600/10 to-emerald-600/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <h3 className="text-lg font-bold mb-2 text-white">{problem.title}</h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed">{problem.description}</p>
                 </div>
               ))}
             </div>
+          </div>
+        </section>
 
-            <div className="text-center mt-12">
-              <p className="text-zinc-300 mb-6">
-                Plus dozens more tools for automation, analytics, hosting, and scaling your digital empire
+        {/* SOLUTION Section */}
+        <section className="section-spacing bg-zinc-950 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-green-600/20 blur-[120px] rounded-full opacity-30 pointer-events-none" />
+
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div ref={solutionAnimation.elementRef} className={`text-center mb-16 scroll-fade-up ${solutionAnimation.isVisible ? 'visible' : ''}`}>
+              <div className="inline-block bg-zinc-900/80 backdrop-blur-sm border border-green-500/30 rounded-full px-4 py-2 mb-6">
+                <span className="text-green-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4" />
+                  THE DIGITAL PRODUCT SYSTEM
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-6xl font-black mb-6 text-white tracking-tight">
+                Build Once, <span className="text-green-500">Sell Forever</span>
+              </h2>
+              <p className="text-xl md:text-2xl text-zinc-400 mb-8 max-w-4xl mx-auto">
+                The proven framework to package your knowledge into high-ticket assets that generate revenue while you sleep.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* 4. Results/Proof Section */}
-      <section className="section-spacing bg-zinc-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={resultsAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <SectionHeader isVisible={resultsAnimation.isVisible}
-              badge="PROVEN RESULTS"
-              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
-              title="The Digital Product Revolution is <span className='text-green-400'>Here</span>"
-              subtitle="While you're trading time for money, smart entrepreneurs are building passive income empires."
-            />
-          </div>
+            <div className={`bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8 md:p-12 mb-16 scroll-scale relative overflow-hidden ${solutionAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
+              <div className="grid md:grid-cols-2 gap-12 relative z-10">
+                <div className="space-y-8">
+                  <h3 className="text-2xl font-bold text-white mb-6">Why This System Works:</h3>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="bg-green-500/20 p-3 rounded-lg"><DollarSign className="w-6 h-6 text-green-400" /></div>
+                    <div>
+                      <h4 className="text-lg font-bold text-white mb-2">$5M+ Student Revenue</h4>
+                      <p className="text-zinc-400 text-sm">Proven across thousands of students in every niche imaginable.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-green-500/20 p-3 rounded-lg"><Rocket className="w-6 h-6 text-green-400" /></div>
+                    <div>
+                      <h4 className="text-lg font-bold text-white mb-2">4,200+ Products Launched</h4>
+                      <p className="text-zinc-400 text-sm">From simple ebooks to comprehensive masterminds, we've launched it all.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-green-500/20 p-3 rounded-lg"><Zap className="w-6 h-6 text-green-400" /></div>
+                    <div>
+                      <h4 className="text-lg font-bold text-white mb-2">True Passive Income</h4>
+                      <p className="text-zinc-400 text-sm">Build the asset once, set up the funnel, and let it run on autopilot forever.</p>
+                    </div>
+                  </div>
+                </div>
 
-          <div className={`grid md:grid-cols-3 gap-8 mb-16 scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-            <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <div className="text-4xl font-bold text-green-400 mb-2">
-                $<NumberTicker value={5} className="text-4xl font-bold text-green-400" />M+
-              </div>
-              <div className="text-zinc-200">Student Revenue Generated</div>
-            </div>
-            <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <div className="text-4xl font-bold text-blue-400 mb-2">
-                <NumberTicker value={3500} className="text-4xl font-bold text-blue-400" />+
-              </div>
-              <div className="text-zinc-200">Products Launched</div>
-            </div>
-            <div className="bg-zinc-900 rounded-2xl p-8 text-center hover-lift">
-              <div className="text-4xl font-bold text-purple-400 mb-2">
-                <NumberTicker value={89} className="text-4xl font-bold text-purple-400" />%
-              </div>
-              <div className="text-zinc-200">Success Rate</div>
-            </div>
-          </div>
-
-          <div className={`text-center scroll-fade-up ${resultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-            <p className="text-lg md:text-xl text-zinc-200 mb-8">Ready to turn your knowledge into a digital empire?</p>
-            <Link
-              href="#pricing"
-              className="cta-button inline-block focus:outline-none focus:ring-4 focus:ring-green-500/50"
-              aria-label="Get Digital Products Academy course"
-            >
-              Get Digital Products Academy
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 5. Who This Is For Section */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={whoForAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${whoForAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <SectionHeader
-              badge="IS THIS YOU?"
-              badgeColor="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full"
-              isVisible={whoForAnimation.isVisible}
-              title="Who This System is <span className='text-blue-400'>Perfect</span> For"
-              subtitle="See if you match the profile of our most successful students."
-            />
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                title: "Knowledge-Rich Professionals",
-                description: "You have valuable expertise in your field but don't know how to package and monetize it. You want to escape trading time for money and build scalable income streams."
-              },
-              {
-                title: "Service-Based Business Owners",
-                description: "You're tired of the 1-on-1 client grind and want to scale your impact. Transform your services into digital products that serve many people simultaneously."
-              },
-              {
-                title: "Aspiring Online Entrepreneurs",
-                description: "You want to build a real online business but don't know where to start. You need a proven system that works without needing a massive audience or expensive ads."
-              }
-            ].map((item, index) => (
-              <div
-                key={index}
-                ref={whoForCards.setElementRef(index)}
-                className={`testimonial-card text-center hover-lift scroll-fade-up ${whoForCards.visibleElements[index] ? `visible scroll-stagger-${index + 1}` : ''}`}
-              >
-                <h3 className="text-xl md:text-2xl font-bold mb-4">{item.title}</h3>
-                <p className="text-zinc-200">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. Student Results Section */}
-      <section className="section-spacing bg-zinc-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={studentResultsAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <SectionHeader
-              badge="SUCCESS STORIES"
-              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
-              title="Real People, <span className='text-green-400'>Real Results</span>"
-              isVisible={studentResultsAnimation.isVisible}
-              subtitle="These entrepreneurs went from financial constraint to building digital empires..."
-            />
-          </div>
-
-          <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
-              <div className="text-2xl font-bold text-green-400 mb-2">Jake C.</div>
-              <div className="text-zinc-300 mb-4">Fitness Coach</div>
-              <p className="text-zinc-200">"Launched my first digital fitness program and hit $25K in the first month! Now I help people get fit while sleeping in and making more than my personal training ever did."</p>
-            </div>
-            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
-              <div className="text-2xl font-bold text-green-400 mb-2">Sarah K.</div>
-              <div className="text-zinc-300 mb-4">Marketing Consultant</div>
-              <p className="text-zinc-200">"Turned my marketing knowledge into a $197 course that generates $15K monthly on autopilot. I went from chasing clients to having a waitlist of customers."</p>
-            </div>
-            <div className="bg-zinc-900 rounded-2xl p-6 hover-lift">
-              <div className="text-2xl font-bold text-green-400 mb-2">Marcus R.</div>
-              <div className="text-zinc-300 mb-4">Real Estate Expert</div>
-              <p className="text-zinc-200">"Created a real estate investing masterclass that does $40K+ months. I help more people in a month than I used to help in a year, and I'm making 10x more."</p>
-            </div>
-          </div>
-
-          <div className={`text-center scroll-fade-up ${studentResultsAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-            <h3 className="text-2xl md:text-4xl font-bold mb-4">Become Our Next Success Story</h3>
-            <p className="text-lg md:text-xl text-zinc-200 mb-8">Join thousands of entrepreneurs building digital product empires!</p>
-            <Link
-              href="#pricing"
-              className="cta-button inline-block focus:outline-none focus:ring-4 focus:ring-green-500/50"
-              aria-label="Start building my digital product empire"
-            >
-              Start My Digital Empire
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 7. What You Get Section */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={modulesAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <div className="text-center mb-8">
-              <div className="text-4xl md:text-6xl font-bold text-white mb-6">
-                <BlurIn
-                  word="Everything You Need to Build"
-                  className="text-4xl md:text-6xl font-bold text-white"
-                  duration={0.8}
-                />
-                <div className="bg-gradient-to-r from-green-400 via-emerald-500 to-green-500 bg-clip-text text-transparent">
-                  <WordRotate
-                    words={["Million-Dollar Products", "Digital Empires", "Passive Income Streams", "Scalable Businesses"]}
-                    className="text-4xl md:text-6xl font-bold"
-                    duration={3500}
-                  />
+                <div className="bg-zinc-950 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-center">
+                  <div className="text-center mb-6">
+                    <p className="text-zinc-400 text-sm uppercase tracking-wider mb-2">POTENTIAL RESULTS</p>
+                    <h3 className="text-3xl font-bold text-white">Financial Freedom</h3>
+                  </div>
+                  <div className="space-y-4">
+                     <div className="flex items-center justify-between p-3 bg-zinc-900 rounded-lg border border-zinc-800">
+                       <span className="text-zinc-300">Monthly Revenue</span>
+                       <span className="text-green-400 font-mono font-bold">$50,000+</span>
+                     </div>
+                     <div className="flex items-center justify-between p-3 bg-zinc-900 rounded-lg border border-zinc-800">
+                       <span className="text-zinc-300">Profit Margin</span>
+                       <span className="text-blue-400 font-mono font-bold">95%+</span>
+                     </div>
+                     <div className="flex items-center justify-between p-3 bg-zinc-900 rounded-lg border border-zinc-800">
+                       <span className="text-zinc-300">Work Hours</span>
+                       <span className="text-purple-400 font-mono font-bold">Automated</span>
+                     </div>
+                  </div>
+                  <div className="mt-8">
+                     <StandardCTA
+                      text="Start Building"
+                      href="#pricing"
+                      variant="primary"
+                      className="w-full justify-center"
+                    />
+                  </div>
                 </div>
               </div>
-              <TypingAnimation
-                text="The most comprehensive digital product creation system ever built."
-                className="text-xl text-zinc-200 max-w-3xl mx-auto"
-                duration={120}
-              />
+            </div>
+            
+            {/* Product Launch Simulator */}
+            <div className="mb-16">
+              <ProductLaunchSimulator />
             </div>
           </div>
+        </section>
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                title: "<span className='text-green-400'>Module 1:</span> Product Idea Validation",
-                value: "$497",
-                description: "Never build a product that doesn't sell. Learn the exact validation process to identify profitable ideas before you create anything. Market research, competitor analysis, and demand testing."
-              },
-              {
-                title: "<span className='text-green-400'>Module 2:</span> High-Converting Product Creation",
-                value: "$697",
-                description: "Transform raw knowledge into irresistible digital products. Courses, eBooks, templates, tools - learn what formats work best and how to structure content that delivers results."
-              },
-              {
-                title: "<span className='text-green-400'>Module 3:</span> Pricing Psychology Mastery",
-                value: "$597",
-                description: "Price your products for maximum profit and positioning. Psychology-based pricing strategies, value stacking, and premium positioning that lets you charge 10x more than competitors."
-              },
-              {
-                title: "<span className='text-green-400'>Module 4:</span> Zero-Ad Launch Strategies",
-                value: "$797",
-                description: "Launch profitable products without spending a dime on ads. Organic marketing strategies, partnerships, and launch sequences that generate massive buzz and sales."
-              },
-              {
-                title: "<span className='text-green-400'>Module 5:</span> Sales Funnel Automation + N8N Workflows",
-                value: "$897",
-                description: "Build automated sales systems that work 24/7 using N8N workflows. Advanced email sequences, landing pages, customer segmentation, and complete sales automation systems that handle everything from lead capture to post-purchase follow-up without any manual intervention."
-              },
-              {
-                title: "<span className='text-green-400'>Module 6:</span> Customer Success Systems",
-                value: "$497",
-                description: "Keep customers happy and buying more. Onboarding sequences, support systems, and strategies that turn one-time buyers into lifetime customers and raving fans."
-              },
-              {
-                title: "<span className='text-green-400'>Module 7:</span> Scaling to Multiple Products",
-                value: "$897",
-                description: "Expand from one product to an entire empire. Product suites, membership sites, mastermind programs, and licensing strategies that multiply your income streams."
-              },
-              {
-                title: "<span className='text-green-400'>Module 8:</span> Business Operations & Growth",
-                value: "$597",
-                description: "Build systems that scale without you. Team building, automation tools, financial management, and growth strategies for sustainable long-term success."
-              }
-            ].map((module, index) => (
-              <div
-                key={index}
-                ref={moduleCards.setElementRef(index)}
-                className={`testimonial-card hover-lift scroll-fade-up relative ${moduleCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
-              >
-                <ValueBadge
-                  value={module.value}
-                  className="absolute top-4 right-4"
-                />
-                <h3 className="text-lg md:text-xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: module.title }}></h3>
-                <p className="text-zinc-200 leading-relaxed">{module.description}</p>
-              </div>
-            ))}
+        {/* CURRICULUM Section */}
+        <section className="section-spacing bg-zinc-900/30">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div ref={curriculumAnimation.elementRef}>
+              <SectionHeader
+                badge="COMPLETE SYSTEM"
+                badgeColor="text-green-400"
+                title="The Digital Product Blueprint"
+                description="8 comprehensive modules + bonuses worth over $8,000"
+                isVisible={curriculumAnimation.isVisible}
+              />
+            </div>
+
+            <div className="space-y-8 max-w-6xl mx-auto">
+              {modules.map((module, index) => (
+                <div
+                  key={index}
+                  ref={moduleCards.setElementRef(index)}
+                  className={`bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-green-500/30 transition-all duration-300 scroll-fade-up ${moduleCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
+                >
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                    <h3 className="text-xl font-bold text-white" dangerouslySetInnerHTML={{ __html: module.title }} />
+                    <span className="text-green-400 font-mono font-bold">{module.value}</span>
+                  </div>
+                  <p className="text-zinc-400">{module.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
+        </section>
 
-          <div className={`text-center mt-16 scroll-fade-up ${modulesAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Plus Lifetime Access & Updates</h3>
-            <p className="text-lg md:text-xl text-zinc-200 mb-8">
-              The digital product landscape evolves constantly. You'll get every update, new module, and strategy added to the academy forever.
-            </p>
-            <Link
-              href="#pricing"
-              className="cta-button inline-block focus:outline-none focus:ring-4 focus:ring-green-500/50"
-              aria-label="Get Digital Products Academy course with lifetime access"
-            >
-              Get Digital Products Academy
-            </Link>
-          </div>
-        </div>
-      </section>
+        {/* BONUSES Section */}
+        <section className="section-spacing">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div ref={bonusAnimation.elementRef}>
+              <SectionHeader
+                badge="EXCLUSIVE BONUSES"
+                badgeColor="text-yellow-400"
+                title="Tools to Accelerate Your Success"
+                description="Included free when you join today"
+                isVisible={bonusAnimation.isVisible}
+              />
+            </div>
 
-      {/* 8. Bonuses Section */}
-      <section className="section-spacing bg-zinc-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={bonusAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${bonusAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <SectionHeader
-              badge="INCREDIBLE BONUSES"
-              badgeColor="bg-yellow-500/10 text-yellow-400 px-4 py-2 rounded-full"
-              isVisible={bonusAnimation.isVisible}
-              title="Get $3,794 in <span className='text-yellow-400'>Premium Bonuses</span> FREE"
-              subtitle="These bonuses alone are worth more than most courses. But you get them FREE today."
-            />
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                title: "50+ Product Templates",
-                icon: "target",
-                value: "$797",
-                description: "Done-for-you templates for courses, eBooks, worksheets, checklists, and more. Just customize with your content and launch immediately."
-              },
-              {
-                title: "Pricing Calculator Tool",
-                icon: "dollarSign",
-                value: "$297",
-                description: "Scientific pricing calculator that determines the optimal price point for maximum revenue based on your niche, competition, and value proposition."
-              },
-              {
-                title: "Email Sequence Library",
-                icon: "mail",
-                value: "$697",
-                description: "100+ high-converting email templates for launches, nurturing, sales, and customer success. Copy, paste, and customize for instant results."
-              },
-              {
-                title: "Launch Checklist System",
-                icon: "target",
-                value: "$197",
-                description: "Step-by-step launch checklists that ensure nothing falls through the cracks. From pre-launch to post-launch optimization - every detail covered."
-              },
-              {
-                title: "Analytics & Tracking Templates",
-                icon: "barChart3",
-                value: "$397",
-                description: "Spreadsheet templates and dashboard setups to track every metric that matters. Know exactly what's working and what needs improvement."
-              },
-              {
-                title: "Private Mastermind Access",
-                icon: "users",
-                value: "$1,997/year",
-                description: "Exclusive access to our private community of successful digital product creators. Get feedback, ask questions, and network with winners."
-              }
-            ].map((bonus, index) => (
-              <div
-                key={index}
-                ref={bonusCards.setElementRef(index)}
-                className={`bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-2xl p-6 hover:from-yellow-500/20 hover:to-orange-500/20 transition-all duration-300 hover-lift scroll-fade-up relative ${bonusCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
-              >
-                <ValueBadge
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {bonuses.map((bonus, index) => (
+                <BonusCard
+                  key={index}
+                  icon={getIcon(bonus.icon)}
+                  title={bonus.title}
+                  description={bonus.description}
                   value={bonus.value}
-                  className="absolute top-4 right-4 bg-yellow-500"
+                  isVisible={bonusAnimation.isVisible}
+                  staggerClass={`scroll-stagger-${index + 1}`}
                 />
-                <h3 className="text-lg md:text-xl font-bold mb-4 text-yellow-400 flex items-center gap-2">
-                  {bonus.icon && getIcon(bonus.icon, "w-5 h-5")}
-                  {bonus.title}
-                </h3>
-                <p className="text-zinc-200 leading-relaxed">{bonus.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+        
+        {/* Ecosystem Graph */}
+        <EcosystemGraph currentCourseId="digital-products" />
 
-      {/* NEW SECTION 2: 90-Day Transformation Journey */}
-      <section className="section-spacing bg-gradient-to-b from-black to-zinc-900 border-t border-green-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div ref={journeyAnimation.elementRef}>
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 rounded-full px-6 py-2 mb-6">
-                <Zap className="w-5 h-5 text-green-400" />
-                <span className="text-green-300 font-semibold">YOUR JOURNEY</span>
+        {/* PRICING Section */}
+        <section className="section-spacing bg-zinc-950 border-t border-zinc-800" id="pricing">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div ref={pricingAnimation.elementRef} className={`text-center mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}>
+              <div className="inline-block bg-green-500/10 border border-green-500/30 rounded-full px-4 py-2 mb-6">
+                <span className="text-green-400 text-sm font-bold uppercase tracking-wider">CHOOSE YOUR PATH</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                From <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Zero</span> to <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">$10K/Month</span> in 30 Days
+              <h2 className="text-3xl md:text-6xl font-black mb-6 text-white">
+                Start Your Empire Today
               </h2>
-              <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                The ruthlessly efficient playbook students used to hit $10K/month FAST
+              <p className="text-xl text-zinc-400 mb-8 max-w-2xl mx-auto">
+                Stop trading time for money. Build assets that pay you forever.
               </p>
             </div>
 
-            <div className="max-w-5xl mx-auto space-y-8">
-              {[
-                {
-                  phase: "Days 1-7",
-                  title: "Product Validation Blitz",
-                  description: "Find 3 winning product ideas in 48 hours. Rapid-fire market research and validation sprints that identify profit opportunities instantly.",
-                  outcomes: ["Identify 3 profitable niches in 48 hours", "Spy on competitors and steal what works", "Get 10+ buyers to pre-commit before you build anything"]
-                },
-                {
-                  phase: "Days 8-14",
-                  title: "Creation Sprint - Ship in 7 Days",
-                  description: "Build and launch your first product in ONE WEEK. No perfectionism, no delays - just ruthless execution and speed to market.",
-                  outcomes: ["Create your MVP product in 4 days flat", "Build high-converting sales page in 48 hours", "Go live and start collecting money Day 7"]
-                },
-                {
-                  phase: "Days 15-21",
-                  title: "Traffic Explosion - 10K+ Visitors",
-                  description: "Drive massive traffic with viral marketing tactics. Zero-cost strategies that flood your funnel with hungry buyers immediately.",
-                  outcomes: ["Drive 10,000+ targeted visitors using free tactics", "Build email list of 500+ hot prospects", "Generate $2K-$5K in first sales week"]
-                },
-                {
-                  phase: "Days 22-30",
-                  title: "$10K Month - Revenue Multiplication",
-                  description: "Scale to $10K through multiple revenue streams. Add upsells, automate everything, and maximize every dollar from your traffic.",
-                  outcomes: ["Add high-ticket upsells ($297-$997 offers)", "Automate entire funnel with N8N workflows", "Hit $10K/month with proven scaling systems"]
-                }
-              ].map((phase, index) => (
-                <div key={index} className="relative">
-                  {/* Connection line */}
-                  {index < 3 && (
-                    <div className="absolute left-12 top-full h-8 w-0.5 bg-gradient-to-b from-green-500 to-green-500/0 hidden md:block" />
-                  )}
-
-                  <div className="flex items-start gap-6">
-                    {/* Phase number */}
-                    <div className="flex-shrink-0 w-24 h-24 rounded-full bg-gradient-to-br from-green-600 to-emerald-600 flex items-center justify-center text-2xl font-bold text-white border-4 border-zinc-900">
-                      {index + 1}
-                    </div>
-
-                    {/* Content */}
-                    <div className="flex-1 bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-green-500/50 transition-all duration-300">
-                      <div className="flex items-center justify-between mb-4">
-                        <h3 className="text-3xl font-bold text-white">{phase.title}</h3>
-                        <span className="text-green-400 font-semibold px-4 py-2 bg-green-500/10 rounded-full">{phase.phase}</span>
-                      </div>
-                      <p className="text-zinc-200 text-lg mb-6">{phase.description}</p>
-                      <div className="space-y-2">
-                        {phase.outcomes.map((outcome, i) => (
-                          <div key={i} className="flex items-center gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-400" />
-                            <span className="text-zinc-300">{outcome}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+            <div className={`max-w-5xl mx-auto grid md:grid-cols-2 gap-8 ${pricingAnimation.isVisible ? 'visible' : ''}`}>
+              {/* Standard Option */}
+              <div className="bg-zinc-900 rounded-3xl border border-zinc-800 p-8 flex flex-col relative overflow-hidden">
+                 <div className="mb-8">
+                  <h3 className="text-xl font-bold text-zinc-400 mb-2">Single Course</h3>
+                  <h4 className="text-3xl font-bold text-white mb-4">Digital Products Academy</h4>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-4xl font-bold text-white">$399</span>
+                    <span className="text-zinc-500">one-time</span>
                   </div>
+                  <p className="text-zinc-400 text-sm mt-4">Lifetime access to Digital Products course only.</p>
                 </div>
-              ))}
-            </div>
-
-            <div className="text-center mt-16">
-              <p className="text-xl text-zinc-200 mb-8">
-                Ready to start your transformation?
-              </p>
-              <Link
-                href="#pricing"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-semibold text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
-              >
-                Start Your Journey Today
-                <ChevronRight className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* NEW SECTION 3: What You'll Actually Learn */}
-      <section className="section-spacing bg-zinc-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div ref={whatYouLearnAnimation.elementRef}>
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 rounded-full px-6 py-2 mb-6">
-                <Target className="w-5 h-5 text-green-400" />
-                <span className="text-green-300 font-semibold">SPECIFIC OUTCOMES</span>
-              </div>
-              <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                What You'll <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Actually Learn</span>
-              </h2>
-              <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                Not theory. Practical skills that generate revenue from day one.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-              {[
-                {
-                  category: "Product Creation",
-                  skills: [
-                    "Online courses with video, worksheets, and community",
-                    "Premium templates and swipe files",
-                    "Comprehensive guides and ebooks",
-                    "Digital planners and tools",
-                    "Membership sites with recurring revenue",
-                    "Software and digital tools",
-                    "Private communities and masterminds"
-                  ]
-                },
-                {
-                  category: "Sales & Marketing",
-                  skills: [
-                    "High-converting copywriting for sales pages",
-                    "Sales funnel design and optimization",
-                    "Email sequences that convert at 10%+",
-                    "Product launch campaigns that work",
-                    "Webinar funnels for high-ticket sales",
-                    "Paid ads strategy (Facebook, Instagram, Google)",
-                    "SEO and organic traffic generation"
-                  ]
-                },
-                {
-                  category: "Pricing Strategy",
-                  skills: [
-                    "Value-based pricing for premium positioning",
-                    "Tiered pricing structures (good/better/best)",
-                    "Bundle strategies that increase AOV",
-                    "Strategic upsells and downsells",
-                    "Lifetime deal vs subscription models",
-                    "Recurring revenue pricing optimization",
-                    "A/B testing price points for maximum profit"
-                  ]
-                },
-                {
-                  category: "Scaling & Automation",
-                  skills: [
-                    "Email marketing automation with N8N",
-                    "Evergreen funnels that sell 24/7",
-                    "Affiliate programs for passive marketing",
-                    "Team building and delegation systems",
-                    "Strategic partnerships and collaborations",
-                    "Creating product suites and upsell ladders",
-                    "True passive income systems"
-                  ]
-                }
-              ].map((category, index) => (
-                <div key={index} className="bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-green-500/50 transition-all duration-300">
-                  <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                    <CheckCircle className="w-8 h-8 text-green-400" />
-                    {category.category}
-                  </h3>
-                  <ul className="space-y-4">
-                    {category.skills.map((skill, i) => (
-                      <li key={i} className="flex items-start gap-3 text-zinc-200">
-                        <ChevronRight className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                        <span>{skill}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* NEW SECTION 4: Comparison Table */}
-      <section className="section-spacing bg-gradient-to-b from-black to-zinc-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div ref={comparisonAnimation.elementRef}>
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 rounded-full px-6 py-2 mb-6">
-                <BarChart3 className="w-5 h-5 text-green-400" />
-                <span className="text-green-300 font-semibold">THE DIFFERENCE</span>
-              </div>
-              <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Digital Products Empire vs <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">Broke One-Off Sellers</span>
-              </h2>
-              <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                Why building an empire beats one-off hustling every single time
-              </p>
-            </div>
-
-            <div className="max-w-5xl mx-auto bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl overflow-hidden">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-zinc-800/50">
-                    <th className="px-6 py-4 text-left text-zinc-400 font-semibold">Factor</th>
-                    <th className="px-6 py-4 text-left text-green-400 font-semibold">Digital Products Empire</th>
-                    <th className="px-6 py-4 text-left text-red-400 font-semibold">Broke One-Off Sellers</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-zinc-800">
-                  {[
-                    {
-                      factor: "Income Model",
-                      empire: "7-figure ecosystem with recurring subscriptions + upsells",
-                      oneoff: "Broke hustler selling one product over and over"
-                    },
-                    {
-                      factor: "Monthly Revenue",
-                      empire: "$10K-$100K+ from multiple income streams on autopilot",
-                      oneoff: "$500-$2K from grinding manual sales (if lucky)"
-                    },
-                    {
-                      factor: "Time Freedom",
-                      empire: "Fully automated - make money while sleeping/traveling",
-                      oneoff: "Slave to manual launches and constant promotion"
-                    },
-                    {
-                      factor: "Growth Potential",
-                      empire: "Infinite scaling with product suite + backend offers",
-                      oneoff: "Dead-end capped by single product price point"
-                    },
-                    {
-                      factor: "Customer Value",
-                      empire: "$1,000-$10,000+ lifetime value per customer",
-                      oneoff: "$50-$200 one-time purchase, then gone forever"
-                    },
-                    {
-                      factor: "Leverage",
-                      empire: "N8N automation + evergreen funnels = zero manual work",
-                      oneoff: "Trading hours for dollars, manual effort for every sale"
-                    },
-                    {
-                      factor: "Business Equity",
-                      empire: "Real asset worth 3-5x revenue ($500K-$5M+ valuation)",
-                      oneoff: "Worthless side hustle - nobody wants to buy it"
-                    },
-                    {
-                      factor: "Exit Strategy",
-                      empire: "Sell empire for life-changing $1M-$10M payday",
-                      oneoff: "No exit - stuck hustling until you burn out"
-                    }
-                  ].map((row, index) => (
-                    <tr key={index} className="hover:bg-zinc-800/30 transition-colors">
-                      <td className="px-6 py-4 text-zinc-300 font-semibold">{row.factor}</td>
-                      <td className="px-6 py-4 text-green-400 flex items-start gap-2">
-                        <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                        <span>{row.empire}</span>
-                      </td>
-                      <td className="px-6 py-4 text-zinc-400 flex items-start gap-2">
-                        <XCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-red-400" />
-                        <span>{row.oneoff}</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            <div className="text-center mt-12">
-              <p className="text-xl text-zinc-200 mb-6">
-                The choice is clear. Start building your digital empire today.
-              </p>
-              <Link
-                href="#pricing"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-semibold text-lg rounded-xl transition-all duration-300 transform hover:scale-105"
-              >
-                Join Digital Products Academy
-                <ChevronRight className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 9. Pricing Section */}
-      <section className="section-spacing bg-gradient-to-b from-green-900/20 to-emerald-900/20 border-t border-green-500/30" id="pricing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={pricingAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <SectionHeader
-              badge="INSANE VALUE"
-              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
-              isVisible={pricingAnimation.isVisible}
-              title="This is <span className='text-green-400'>RIDICULOUS</span>"
-              subtitle="Let's do the math on what you're actually getting today vs. learning this the hard way..."
-            />
-          </div>
-
-          {/* Value Stack */}
-          <div className={`max-w-4xl mx-auto mb-16 scroll-scale ${pricingAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
-            <div className="bg-zinc-900 border border-green-500/30 rounded-3xl p-8 md:p-12">
-              <h3 className="text-3xl font-bold mb-8 text-center text-green-400">Total Value Breakdown</h3>
-
-              <div className="space-y-4 mb-8">
-                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">8 Core Modules ($97-197 each)</span>
-                  <span className="text-xl font-bold text-green-400">$1,168</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">50+ Product Templates</span>
-                  <span className="text-xl font-bold text-green-400">$497</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Pricing Calculator Tool</span>
-                  <span className="text-xl font-bold text-green-400">$297</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Email Sequence Library (100+ templates)</span>
-                  <span className="text-xl font-bold text-green-400">$397</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Launch Checklist System</span>
-                  <span className="text-xl font-bold text-green-400">$197</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Analytics & Tracking Templates</span>
-                  <span className="text-xl font-bold text-green-400">$297</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-zinc-700">
-                  <span className="text-lg">Private Mastermind Access (1 Year)</span>
-                  <span className="text-xl font-bold text-green-400">$997</span>
-                </div>
-
-                <div className="flex justify-between items-center py-6 bg-green-900/20 rounded-lg px-6 mt-6">
-                  <span className="text-2xl font-bold">TOTAL VALUE:</span>
-                  <span className="text-3xl font-black text-green-400">$3,850</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Pricing Comparison */}
-          <div className={`mb-16 scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-3' : ''}`}>
-            <PricingComparison
-              options={[
-                {
-                  name: "Trial & Error Method",
-                  description: "LOST REVENUE",
-                  price: "$10,000+",
-                  features: [
-                    "Years of failed launches",
-                    "Wasted time and money",
-                    "No guidance or system",
-                    "High stress and frustration",
-                    "No guarantee of success"
-                  ],
-                  disabled: true
-                },
-                {
-                  name: "Digital Products Academy",
-                  description: "ONE-TIME PAYMENT",
-                  price: "$399",
-                  originalPrice: "$3,850",
-                  badge: "LIFETIME ACCESS",
-                  badgeColor: "bg-green-500",
-                  features: [
-                    "Replace $50K consultant fees with DIY mastery",
-                    "Launch your first $5K product in 30 days",
-                    "Proven system saves 200+ hours of research",
-                    "Avoid $10K in costly launch mistakes",
-                    "Save $3,451! Complete $3,850 system for just $399"
-                  ],
-                  buttonText: "Purchase",
-                  buttonLink: "https://buy.polar.sh/polar_cl_bL05hR1eXtSx6TUqsQ5OogpSVa3vwTyerCjmO3PCl4N"
-                },
-                {
-                  name: "All Access Reimagined",
-                  description: "PER MONTH",
-                  price: "$99",
-                  originalPrice: "$199",
-                  badge: "POPULAR - ALL 4 COURSES",
-                  badgeColor: "bg-purple-500",
-                  popular: true,
-                  features: [
-                    "Complete $88K/month business system",
-                    "Instagram: 0 to 500K followers proven method",
-                    "AI Influencers: $20K/month passive income",
-                    "Digital Products: $50K launch blueprints",
-                    "ComfyUI: Professional AI image business",
-                    "Live coaching calls + private community",
-                    "New courses added monthly (5+ planned)",
-                    "Cancel anytime, keep what you downloaded"
-                  ],
-                  hoverEffect: true,
-                  buttonText: "Join Whop All-Access",
-                  buttonLink: "https://whop.com/iimagined/all-access-reimagined/"
-                }
-              ]}
-              isVisible={pricingAnimation.isVisible}
-            />
-          </div>
-
-          {/* Ready to Start */}
-          <div className={`max-w-4xl mx-auto text-center scroll-fade-up ${pricingAnimation.isVisible ? 'visible scroll-stagger-4' : ''}`}>
-            <div className="bg-zinc-900 border border-green-500/30 rounded-3xl p-8 mb-8">
-              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                Ready to Build Your Digital Product Business?
-              </h3>
-
-              <p className="text-xl text-zinc-200 mb-6">
-                Join 1,200+ students who've used Digital Products Academy to validate, launch, and scale profitable digital products. Get lifetime access to everything you need.
-              </p>
-
-              <div className="bg-green-500/10 border border-green-500/30 rounded-2xl p-6 mb-8">
-                <h4 className="text-2xl font-bold text-green-400 mb-3">
-                  What You Get Today:
-                </h4>
-                <div className="text-left space-y-2 text-zinc-200 max-w-2xl mx-auto">
-                  <p>• Complete validation framework to test ideas before building</p>
-                  <p>• Step-by-step launch system with proven templates</p>
-                  <p>• Pricing psychology training to charge what you're worth</p>
-                  <p>• $3,451 in bonuses + lifetime updates</p>
-                  <p>• 30-day money-back guarantee if not satisfied</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <Link
-                href="https://whop.com/iimagined/digital-products-reimagined/"
-                className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse focus:outline-none focus:ring-4 focus:ring-green-500/50"
-                aria-label="Get Digital Products Academy course for $399"
-              >
-                GET DIGITAL PRODUCTS ACADEMY - $399
-              </Link>
-
-              <p className="text-sm text-zinc-300">
-                Instant Access • Lifetime Updates • 30-Day Money-Back Guarantee
-              </p>
-
-              <div className="bg-zinc-900 border border-green-500 rounded-2xl p-6 max-w-2xl mx-auto">
-                <h4 className="text-xl font-bold text-green-400 mb-3 flex items-center gap-2">
-                  {getIcon('checkCircle', 'w-5 h-5')} Zero-Risk Guarantee
-                </h4>
-                <p className="text-zinc-200">
-                  Try Digital Products Academy for 30 days. If you don't create a profitable product idea
-                  and clear launch plan, I'll refund every penny. No questions asked.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 10. Testimonials Section */}
-      <section className="section-spacing bg-zinc-900/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={testimonialsAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${testimonialsAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <SectionHeader
-              badge="SUCCESS STORIES"
-              badgeColor="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full"
-              title="What <span className='text-blue-400'>Digital Product</span> Students Are Saying..."
-              isVisible={testimonialsAnimation.isVisible}
-              subtitle="Real entrepreneurs sharing their transformation stories."
-            />
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto mb-16">
-            {[
-              {
-                name: "Jennifer Martinez",
-                role: "Life Coach • $45K/Month",
-                avatar: "https://i.pravatar.cc/150?img=65",
-                content: "Digital Products Academy changed my life! I went from struggling to get coaching clients to running a $45K/month digital empire. My signature course practically sells itself now. I help more people in a month than I used to help in a year!"
-              },
-              {
-                name: "David Thompson",
-                role: "Marketing Expert • $32K/Month",
-                avatar: "https://i.pravatar.cc/150?img=38",
-                content: "I was burned out from client work when I found this system. Now I have 3 digital products generating consistent passive income. Last month I made $32K while traveling Europe. This isn't just a course - it's a complete business transformation!"
-              },
-              {
-                name: "Sarah Kim",
-                role: "Fitness Expert • $28K/Month",
-                avatar: "https://i.pravatar.cc/150?img=73",
-                content: "From personal trainer making $3K/month to digital product creator making $28K/month! My online fitness programs have helped thousands of people while giving me complete time freedom. The pricing strategies alone 10x'd my income!"
-              }
-            ].map((testimonial, index) => (
-              <div
-                key={index}
-                ref={testimonialCards.setElementRef(index)}
-                className={`testimonial-card hover-lift scroll-fade-up ${testimonialCards.visibleElements[index] ? `visible scroll-stagger-${index + 1}` : ''}`}
-              >
-                <TestimonialCard
-                  name={testimonial.name}
-                  role={testimonial.role.split(' • ')[0]}
-                  image={testimonial.avatar}
-                  testimonial={testimonial.content}
-                  result={testimonial.role.split(' • ')[1]}
-                  isVisible={testimonialCards.visibleElements[index]}
+                <ul className="space-y-4 mb-8 flex-1">
+                  <li className="flex items-center gap-3 text-zinc-300">
+                    <Check className="w-5 h-5 text-green-500" /> 8 Modules
+                  </li>
+                  <li className="flex items-center gap-3 text-zinc-300">
+                    <Check className="w-5 h-5 text-green-500" /> All Bonuses Included
+                  </li>
+                  <li className="flex items-center gap-3 text-zinc-300">
+                    <Check className="w-5 h-5 text-green-500" /> Lifetime Updates
+                  </li>
+                </ul>
+                <StandardCTA
+                  text="Buy Course Only"
+                  href="https://buy.polar.sh/polar_cl_bL05hR1eXtSx6TUqsQ5OogpSVa3vwTyerCjmO3PCl4N"
+                  variant="outline"
+                  className="w-full justify-center"
                 />
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* 11. FAQ Section */}
-      <section className="section-spacing">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            ref={faqAnimation.elementRef}
-            className={`text-center mb-16 scroll-fade-up ${faqAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <SectionHeader
-              badge="FAQ"
-              badgeColor="bg-green-500/10 text-green-400 px-4 py-2 rounded-full"
-              isVisible={faqAnimation.isVisible}
-              title="Frequently Asked <span className='text-green-400'>Questions</span>"
-              subtitle="Everything you need to know about building digital product empires."
+              {/* Godlike Option */}
+              <div className="bg-zinc-900 rounded-3xl border border-purple-500/50 p-8 flex flex-col relative overflow-hidden shadow-2xl shadow-purple-900/20">
+                <div className="absolute top-0 right-0 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+                  Best Value
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 to-transparent pointer-events-none" />
+                
+                <div className="mb-8 relative z-10">
+                   <h3 className="text-xl font-bold text-purple-400 mb-2 flex items-center gap-2">
+                     <Crown className="w-5 h-5" /> All Access
+                   </h3>
+                  <h4 className="text-3xl font-bold text-white mb-4">Empire Pass</h4>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-4xl font-bold text-white">$99</span>
+                    <span className="text-zinc-400 text-xl">/mo</span>
+                  </div>
+                  <p className="text-zinc-400 text-sm mt-4">Access to EVERYTHING. Cancel anytime.</p>
+                </div>
+                
+                <ul className="space-y-4 mb-8 flex-1 relative z-10">
+                  <li className="flex items-center gap-3 text-white font-medium">
+                    <div className="bg-purple-500/20 p-1 rounded-full"><Check className="w-4 h-4 text-purple-400" /></div>
+                    <span>Access to Digital Products ($399)</span>
+                  </li>
+                   <li className="flex items-center gap-3 text-white font-medium">
+                    <div className="bg-purple-500/20 p-1 rounded-full"><Check className="w-4 h-4 text-purple-400" /></div>
+                    <span>Access to Instagram Ignited ($399)</span>
+                  </li>
+                   <li className="flex items-center gap-3 text-white font-medium">
+                    <div className="bg-purple-500/20 p-1 rounded-full"><Check className="w-4 h-4 text-purple-400" /></div>
+                    <span>Access to AI Influencers ($399)</span>
+                  </li>
+                   <li className="flex items-center gap-3 text-white font-medium">
+                    <div className="bg-purple-500/20 p-1 rounded-full"><Check className="w-4 h-4 text-purple-400" /></div>
+                    <span>Access to Automation Agency ($399)</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-white font-medium">
+                    <div className="bg-purple-500/20 p-1 rounded-full"><Check className="w-4 h-4 text-purple-400" /></div>
+                    <span>Private Inner Circle Community</span>
+                  </li>
+                </ul>
+                
+                <StandardCTA
+                  text="Get All Access Pass"
+                  href="/checkout?course=empire-bundle"
+                  variant="primary"
+                  className="w-full justify-center relative z-10"
+                />
+                <p className="text-center text-zinc-500 text-xs mt-4 relative z-10">30-day money-back guarantee. Secure checkout.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA */}
+        <section className="py-24 bg-black text-center">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
+              Your Empire Starts Now
+            </h2>
+            <StandardCTA
+               text="Join Digital Products Academy"
+               href="#pricing"
+               size="lg"
+               variant="primary"
             />
           </div>
-
-          <div className="max-w-4xl mx-auto space-y-6">
-            {[
-              {
-                question: "I don't have a big audience. Can I still make money with digital products?",
-                answer: "Absolutely! You don't need thousands of followers to succeed. This system shows you how to find and convert your ideal customers without a massive audience. Many students started with under 500 followers and built 6-figure product businesses."
-              },
-              {
-                question: "What if I don't know what product to create?",
-                answer: "That's exactly what Module 1 covers! The Product Idea Validation process will help you identify profitable opportunities based on your existing knowledge and skills. You'll discover product ideas you never knew you had."
-              },
-              {
-                question: "How quickly can I see results?",
-                answer: "Most students have a validated product idea within 2 weeks and launch their first product within 4-6 weeks. Revenue typically starts flowing within 30-60 days of launch, depending on implementation speed."
-              },
-              {
-                question: "Do I need technical skills to create digital products?",
-                answer: "Not at all! This course focuses on non-technical product creation. You'll learn to use simple tools and platforms that require no coding or advanced technical knowledge. If you can use email, you can build digital products."
-              },
-              {
-                question: "What types of digital products work best?",
-                answer: "The best product depends on your niche and expertise. We cover all formats: online courses, eBooks, templates, tools, membership sites, and coaching programs. You'll learn which format matches your situation perfectly."
-              },
-              {
-                question: "How is this different from other digital product courses?",
-                answer: "Most courses focus on course creation. This is a complete business system covering ideation, validation, creation, pricing, marketing, and scaling. Plus, our 89% success rate speaks for itself - we focus on what actually works in the real world."
-              },
-              {
-                question: "What if my niche is too competitive?",
-                answer: "Every niche has competition, but that's actually good news - it means there's demand! You'll learn positioning strategies to stand out and capture your share of the market, even in crowded niches."
-              },
-              {
-                question: "Do I need to spend money on ads?",
-                answer: "No! Module 4 covers zero-ad launch strategies that have generated millions in sales. You'll learn organic marketing methods, partnerships, and launch sequences that create massive demand without paid advertising."
-              },
-              {
-                question: "How much money can I realistically make?",
-                answer: "Results vary, but students typically see $1K-$5K monthly within 90 days, scaling to $10K-$50K+ monthly within 6-12 months. Some achieve 6-figures annually, others build multi-million dollar businesses. Your success depends on implementation and market size."
-              },
-              {
-                question: "What if I start and then get stuck?",
-                answer: "You get lifetime access to our private mastermind community where successful students and I personally help troubleshoot challenges. Plus, the course includes detailed implementation guides and common problem solutions."
-              },
-              {
-                question: "Is there a money-back guarantee?",
-                answer: "Yes! 30-day money-back guarantee, no questions asked. If you don't have a clear, validated product idea and launch plan within 30 days, I'll refund every penny. I'm confident this system works."
-              },
-              {
-                question: "Why is the price so low for such a comprehensive system?",
-                answer: "This is a founder's launch price. I want to help as many people as possible escape the time-for-money trap and build real passive income. Once we reach 100 founding members, the price will increase significantly."
-              }
-            ].map((faq, index) => (
-              <div
-                key={index}
-                ref={faqCards.setElementRef(index)}
-                className={`bg-zinc-900 rounded-2xl p-6 md:p-8 hover-lift scroll-fade-up ${faqCards.visibleElements[index] ? `visible scroll-stagger-${Math.min(index + 1, 6)}` : ''}`}
-              >
-                <FAQCard {...faq} isVisible={faqCards.visibleElements[index]} />
-              </div>
-            ))}
-          </div>
-
-          <div className={`text-center mt-16 scroll-fade-up ${faqAnimation.isVisible ? 'visible scroll-stagger-6' : ''}`}>
-            <div className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border border-green-500/30 rounded-3xl p-8 max-w-3xl mx-auto">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">Still Have Questions?</h3>
-              <p className="text-lg text-zinc-200 mb-6">
-                Join the private mastermind and get direct access to me and other successful digital product creators.
-                Your questions get answered by people who've already built profitable product businesses.
-              </p>
-              <Link
-                href="#"
-                className="cta-button inline-block text-lg focus:outline-none focus:ring-4 focus:ring-green-500/50"
-                aria-label="Get Digital Products Academy and access Q&A community"
-              >
-                Get Digital Products Academy & Ask Me Anything
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 12. Final CTA Section */}
-      <section className="section-spacing bg-gradient-to-b from-green-900/20 to-black">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div
-            ref={finalCtaAnimation.elementRef}
-            className={`scroll-fade-up ${finalCtaAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <div className="flex items-center justify-center mb-8">
-              <div className="flex items-center space-x-2">
-                <div className="flex">
-                  <Image
-                    src="https://ext.same-assets.com/1161517358/2822588328.webp"
-                    alt="User"
-                    width={24}
-                    height={24}
-                    className="w-6 h-6 rounded-full -mr-1"
-                  />
-                  <Image
-                    src="https://ext.same-assets.com/1161517358/3376144705.webp"
-                    alt="User"
-                    width={24}
-                    height={24}
-                    className="w-6 h-6 rounded-full -mr-1"
-                  />
-                </div>
-                <div className="flex text-yellow-400">
-                  {'★'.repeat(5)}
-                </div>
-                <span className="text-sm text-zinc-300">3,500+ successful students</span>
-              </div>
-            </div>
-            <div className="text-3xl md:text-5xl font-bold text-white mb-4">
-              <BlurIn
-                word="Your Digital Empire Starts"
-                className="text-3xl md:text-5xl font-bold text-white"
-                duration={0.8}
-              />
-              <div className="bg-gradient-to-r from-green-400 via-emerald-500 to-green-500 bg-clip-text text-transparent">
-                <WordRotate
-                  words={["TODAY", "NOW", "RIGHT HERE", "THIS MOMENT"]}
-                  className="text-3xl md:text-5xl font-bold"
-                  duration={2500}
-                />
-              </div>
-            </div>
-            <p className="text-lg md:text-xl text-zinc-200 mb-8">Join thousands of entrepreneurs who escaped the time-for-money trap and built scalable passive income streams</p>
-
-            <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-500/30 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-white mb-3">
-                Your Digital Product Journey Starts Here
-              </h3>
-              <p className="text-zinc-200 mb-4">
-                Get instant access to the complete Digital Products Academy for $399. Includes all modules, templates, bonuses worth $3,451, and lifetime updates.
-              </p>
-              <p className="text-lg font-semibold text-green-400">
-                Join 1,200+ entrepreneurs building scalable digital product businesses today.
-              </p>
-            </div>
-
-            <Link
-              href="https://whop.com/iimagined/digital-products-reimagined/"
-              className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-8 rounded-2xl text-xl md:text-2xl transition-all duration-300 transform hover:scale-105 animate-pulse mb-4 text-center focus:outline-none focus:ring-4 focus:ring-green-500/50"
-              aria-label="Build my digital empire for $399"
-            >
-              BUILD MY DIGITAL EMPIRE<br className="md:hidden" /> - $399
-            </Link>
-
-            <p className="text-sm text-zinc-300 mb-6">
-              Instant Access • 30-Day Guarantee • Lifetime Updates • $3,451 in Savings
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
-              <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-green-400">$5M+</div>
-                <div className="text-sm text-zinc-300">Student Revenue</div>
-              </div>
-              <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-blue-400">3,500+</div>
-                <div className="text-sm text-zinc-300">Products Launched</div>
-              </div>
-              <div className="bg-zinc-900 rounded-lg p-4">
-                <div className="text-2xl font-bold text-purple-400">89%</div>
-                <div className="text-sm text-gray-400">Success Rate</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
       </div>
     </>
   )

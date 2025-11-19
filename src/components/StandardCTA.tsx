@@ -12,10 +12,11 @@ import { ChevronRight } from 'lucide-react'
  * - primary: Main action buttons (Get Started, Enroll Now) - Gradient shimmer
  * - secondary: Supporting actions (Learn More) - Solid gradient
  * - tertiary: Link-style actions (View Course) - Text with hover effect
+ * - outline: Border only, transparent bg - for secondary actions
  */
 
 interface StandardCTAProps {
-  variant?: 'primary' | 'secondary' | 'tertiary'
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'outline'
   text: string
   href: string
   external?: boolean
@@ -74,6 +75,22 @@ export default function StandardCTA({
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className={`font-semibold bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-xl transition-all duration-300 flex items-center gap-2 ${sizeClasses[size]}`}
+        >
+          {text}
+          {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}
+        </motion.button>
+      </Link>
+    )
+  }
+
+  // OUTLINE: Border only button
+  if (variant === 'outline') {
+    return (
+      <Link href={href} {...linkProps} className={`inline-block ${className}`}>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className={`font-semibold bg-transparent border-2 border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white rounded-xl transition-all duration-300 flex items-center gap-2 ${sizeClasses[size]}`}
         >
           {text}
           {showIcon && <ChevronRight size={size === 'sm' ? 16 : size === 'lg' ? 20 : 18} />}

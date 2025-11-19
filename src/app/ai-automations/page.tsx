@@ -28,6 +28,9 @@ import TypingAnimation from '@/components/magicui/typing-animation'
 import AIContentDeclaration from '@/components/seo/AIContentDeclaration'
 import SocialProof from '@/components/seo/SocialProof'
 import StandardCTA from '@/components/StandardCTA'
+import StickyCTA from '@/components/StickyCTA'
+import EcosystemGraph from '@/components/EcosystemGraph'
+import AgencyScaler from '@/components/tools/AgencyScaler'
 import { 
   ChevronRight, 
   Target, 
@@ -131,6 +134,13 @@ export default function AIAutomationsPage() {
 
   return (
     <>
+      <StickyCTA 
+        price="$99/mo" 
+        originalPrice="$399" 
+        ctaLink="/checkout?course=empire-bundle"
+        productName="Empire Pass All Access" 
+      />
+
       <AIContentDeclaration
         title="AI Automations: Build 6-Figure Automation Agency - Complete n8n, Zapier, Make Course"
         description="Master AI automation agency business with proven AI integration strategies. Learn n8n, Zapier, Make + ChatGPT, Claude, Midjourney integrations."
@@ -345,6 +355,11 @@ export default function AIAutomationsPage() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Agency Scaler Simulator */}
+            <div className="mb-16">
+              <AgencyScaler />
             </div>
           </div>
         </section>
