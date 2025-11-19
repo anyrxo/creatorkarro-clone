@@ -909,253 +909,523 @@ The platform doesn't matter as much as your execution and consistency. Pick the 
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">What specific content types drive the fastest growth to 500K followers?</h3>
-            <div className="text-gray-300 space-y-4">
-              <p>{`**Educational content that delivers immediate value consistently drives 3-5x faster growth than entertainment-only content.** After analyzing 500+ viral posts across multiple 500K+ accounts, here are the exact content types and formulas:
+            <h3 className="text-2xl font-bold text-white mb-6">What specific content types drive the fastest growth to 500K followers?</h3>
+            <div className="space-y-8">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                <strong className="text-white font-semibold">Educational content that delivers immediate value consistently drives 3-5x faster growth than entertainment-only content.</strong> After analyzing 500+ viral posts across multiple 500K+ accounts, here are the exact content types and formulas:
+              </p>
 
-**#1: Problem-Solution Carousels (Highest Save Rate)**
+              {/* Content Type #1 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">#1: Problem-Solution Carousels (Highest Save Rate)</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">Why They Work</h5>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Users save them as reference guides (strongest algorithm signal)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Each slide creates a micro-commitment to keep swiping</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Shareable to friends who have the same problem</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Position you as the expert/solution provider</span>
+                  </li>
+                </ul>
 
-**Why They Work**
-- Users save them as reference guides (strongest algorithm signal)
-- Each slide creates a micro-commitment to keep swiping
-- Shareable to friends who have the same problem
-- Position you as the expert/solution provider
+                <h5 className="text-lg font-semibold text-green-400 mb-3">Winning Formula</h5>
+                <div className="space-y-2 text-gray-300 mb-6">
+                  <p><strong className="text-white">Slide 1:</strong> "I grew from 0 to 100K followers in 6 months. Here's the exact posting schedule I used (save this)"</p>
+                  <p><strong className="text-white">Slide 2:</strong> "Here's what doesn't work (posting randomly)"</p>
+                  <p><strong className="text-white">Slides 3-8:</strong> Step-by-step solution (one actionable tip per slide)</p>
+                  <p><strong className="text-white">Slide 9:</strong> Summary + results ("This strategy got me 100K followers")</p>
+                  <p><strong className="text-white">Slide 10:</strong> CTA ("Save this, follow for more, tag a creator friend")</p>
+                </div>
 
-**Winning Formula**
-Slide 1: "I grew from 0 to 100K followers in 6 months. Here's the exact posting schedule I used (save this)"
-Slide 2: "Here's what doesn't work (posting randomly)"
-Slides 3-8: Step-by-step solution (one actionable tip per slide)
-Slide 9: Summary + results ("This strategy got me 100K followers")
-Slide 10: CTA ("Save this, follow for more, tag a creator friend")
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-green-400 mb-2">Real Performance Data</h5>
+                  <p className="text-gray-300 mb-2">Average carousel (no strategy): <strong className="text-white">3,200 impressions, 45 saves</strong></p>
+                  <p className="text-gray-300 mb-2">Optimized problem-solution carousel: <strong className="text-white">68,000 impressions, 2,400 saves</strong></p>
+                  <p className="text-green-300 font-semibold">Growth multiplier: 21x more effective</p>
+                </div>
 
-**Real Performance Data**
+                <h5 className="text-lg font-semibold text-purple-400 mb-3">Best Niches for This Format</h5>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Business/entrepreneurship (how to make money, grow business)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Fitness (workout plans, meal prep guides)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Personal development (productivity hacks, morning routines)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Marketing (Instagram growth, content strategy)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Finance (budgeting templates, investment guides)</span>
+                  </li>
+                </ul>
 
-Average carousel (no strategy): 3,200 impressions, 45 saves
-Optimized problem-solution carousel: 68,000 impressions, 2,400 saves
-Growth multiplier: 21x more effective
+                <div className="text-sm text-gray-400 space-y-1">
+                  <p><strong className="text-white">Creation Time:</strong> 45-90 minutes per carousel</p>
+                  <p><strong className="text-white">Posting Frequency:</strong> 3-4 per week</p>
+                  <p><strong className="text-white">Expected Results:</strong> +2,000-8,000 followers per month at 10K+ followers</p>
+                </div>
+              </div>
 
-**Best Niches for This Format**
-- Business/entrepreneurship (how to make money, grow business)
-- Fitness (workout plans, meal prep guides)
-- Personal development (productivity hacks, morning routines)
-- Marketing (Instagram growth, content strategy)
-- Finance (budgeting templates, investment guides)
+              {/* Content Type #2 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">#2: Contrarian Take Reels (Highest Engagement Rate)</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">Why They Work</h5>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Controversial opinions spark debate (comments explode)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>People share to their Stories with "thoughts?"</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Algorithm loves engagement, pushes to Explore page</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Positions you as thought leader, not follower</span>
+                  </li>
+                </ul>
 
-**Creation Time**: 45-90 minutes per carousel
-**Posting Frequency**: 3-4 per week
-**Expected Results**: +2,000-8,000 followers per month at 10K+ followers
+                <h5 className="text-lg font-semibold text-green-400 mb-3">Winning Formula</h5>
+                <div className="space-y-2 text-gray-300 mb-6">
+                  <p><strong className="text-white">0-3 seconds:</strong> Bold contrarian statement on screen + face reaction</p>
+                  <p className="text-gray-400 italic ml-4">Example: "Posting every day is KILLING your Instagram growth"</p>
+                  <p><strong className="text-white">4-10 seconds:</strong> Why conventional wisdom is wrong</p>
+                  <p className="text-gray-400 italic ml-4">"Everyone says post daily, but the algorithm rewards QUALITY over quantity"</p>
+                  <p><strong className="text-white">11-20 seconds:</strong> Your alternative approach</p>
+                  <p className="text-gray-400 italic ml-4">"I post 3x/week, spend 2 hours per post, and grow faster than daily posters"</p>
+                  <p><strong className="text-white">21-25 seconds:</strong> Proof/results</p>
+                  <p className="text-gray-400 italic ml-4">"Proof: 0 to 50K in 4 months with 3 posts/week"</p>
+                  <p><strong className="text-white">26-30 seconds:</strong> Strong CTA</p>
+                  <p className="text-gray-400 italic ml-4">"Stop burning out. Work smarter. Follow for real strategies."</p>
+                </div>
 
-**#2: Contrarian Take Reels (Highest Engagement Rate)**
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-green-400 mb-2">Real Performance Data</h5>
+                  <p className="text-gray-300 mb-2">Average Reel: <strong className="text-white">8,500 views, 340 likes, 12 comments</strong></p>
+                  <p className="text-gray-300 mb-2">Contrarian Reel: <strong className="text-white">340,000 views, 18,000 likes, 890 comments</strong></p>
+                  <p className="text-green-300 font-semibold">Growth multiplier: 40x reach, 74x engagement</p>
+                </div>
 
-**Why They Work**
-- Controversial opinions spark debate (comments explode)
-- People share to their Stories with "thoughts?"
-- Algorithm loves engagement, pushes to Explore page
-- Positions you as thought leader, not follower
+                <h5 className="text-lg font-semibold text-purple-400 mb-3">Best Contrarian Topics</h5>
+                <div className="space-y-3 text-gray-300 mb-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400">❌</span>
+                    <p>"You need 10K followers to make money"</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400">✅</span>
+                    <p>"I made $5K with 1,200 followers - here's how"</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400">❌</span>
+                    <p>"Post at optimal times for best results"</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400">✅</span>
+                    <p>"I post at 3am and still go viral - timing is a myth"</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400">❌</span>
+                    <p>"Never delete underperforming posts"</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400">✅</span>
+                    <p>"I delete posts under 5K views - here's why it works"</p>
+                  </div>
+                </div>
 
-**Winning Formula**
-0-3 seconds: Bold contrarian statement on screen + face reaction
-Example: "Posting every day is KILLING your Instagram growth"
+                <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3 mb-4">
+                  <p className="text-yellow-300"><strong className="text-white">WARNING:</strong> Be contrarian, not wrong. Your take must be defensible with data/experience.</p>
+                </div>
 
-4-10 seconds: Why conventional wisdom is wrong
-"Everyone says post daily, but the algorithm rewards QUALITY over quantity"
+                <div className="text-sm text-gray-400 space-y-1">
+                  <p><strong className="text-white">Creation Time:</strong> 20-40 minutes per Reel</p>
+                  <p><strong className="text-white">Posting Frequency:</strong> 1-2 per week</p>
+                  <p><strong className="text-white">Expected Results:</strong> 1-3 viral posts per month, +5,000-15,000 followers per viral Reel</p>
+                </div>
+              </div>
 
-11-20 seconds: Your alternative approach
-"I post 3x/week, spend 2 hours per post, and grow faster than daily posters"
-
-21-25 seconds: Proof/results
-"Proof: 0 to 50K in 4 months with 3 posts/week"
-
-26-30 seconds: Strong CTA
-"Stop burning out. Work smarter. Follow for real strategies."
-
-**Real Performance Data**
-Average Reel: 8,500 views, 340 likes, 12 comments
-Contrarian Reel: 340,000 views, 18,000 likes, 890 comments
-Growth multiplier: 40x reach, 74x engagement
-
-**Best Contrarian Topics**
-❌ "You need 10K followers to make money"
-✅ "I made $5K with 1,200 followers - here's how"
-
-❌ "Post at optimal times for best results"
-✅ "I post at 3am and still go viral - timing is a myth"
-
-❌ "Never delete underperforming posts"
-✅ "I delete posts under 5K views - here's why it works"
-
-**WARNING**: Be contrarian, not wrong. Your take must be defensible with data/experience.
-
-**Creation Time**: 20-40 minutes per Reel
-**Posting Frequency**: 1-2 per week
-**Expected Results**: 1-3 viral posts per month, +5,000-15,000 followers per viral Reel
-
-        {/* Inline CTA - Perfectly Placed After Showing 2 Proven Strategies with Results */}
+              {/* Inline CTA */}
         <SmartCTA blogSlug="500k-followers" variant="inline" />
 
-**#3: Data-Driven Case Studies (Highest Credibility)**
+              {/* Content Type #3 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">#3: Data-Driven Case Studies (Highest Credibility)</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">Why They Work</h5>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Numbers prove you know what you're talking about</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Screenshots provide social proof</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Other creators share as research</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Attracts premium brand partnerships</span>
+                  </li>
+                </ul>
 
-**Why They Work**
-- Numbers prove you know what you're talking about
-- Screenshots provide social proof
-- Other creators share as research
-- Attracts premium brand partnerships
+                <h5 className="text-lg font-semibold text-green-400 mb-3">Winning Formula (Carousel)</h5>
+                <div className="space-y-2 text-gray-300 mb-6">
+                  <p><strong className="text-white">Slide 1:</strong> Big result headline</p>
+                  <p className="text-gray-400 italic ml-4">"How I Made $47,382 in 30 Days on Instagram (Full Breakdown)"</p>
+                  <p><strong className="text-white">Slide 2:</strong> Starting point (relatability)</p>
+                  <p className="text-gray-400 italic ml-4">"30 days ago: 12,400 followers, $0 revenue"</p>
+                  <p><strong className="text-white">Slides 3-7:</strong> The exact strategy with numbers</p>
+                  <ul className="ml-8 space-y-1 text-gray-400">
+                    <li>• Day 1-10: Created $97 digital product (2,400 sales)</li>
+                    <li>• Day 11-20: Ran 5 Reels promoting it (1.2M combined views)</li>
+                    <li>• Day 21-30: Brand deal from viral Reel ($7,382)</li>
+                  </ul>
+                  <p><strong className="text-white">Slide 8:</strong> Lessons learned (tactical insights)</p>
+                  <p className="text-gray-400 italic ml-4">"3 things I'd do differently"</p>
+                  <p><strong className="text-white">Slide 9:</strong> Screenshots (proof)</p>
+                  <p className="text-gray-400 italic ml-4">Stripe dashboard, Instagram analytics, testimonials</p>
+                  <p><strong className="text-white">Slide 10:</strong> Next steps CTA</p>
+                  <p className="text-gray-400 italic ml-4">"Want my complete strategy? Link in bio"</p>
+                </div>
 
-**Winning Formula (Carousel)**
-Slide 1: Big result headline
-"How I Made $47,382 in 30 Days on Instagram (Full Breakdown)"
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-green-400 mb-2">Real Performance Data</h5>
+                  <p className="text-gray-300 mb-2">Average educational post: <strong className="text-white">12,000 impressions, 180 profile visits</strong></p>
+                  <p className="text-gray-300 mb-2">Data-driven case study: <strong className="text-white">95,000 impressions, 3,400 profile visits, 780 new followers</strong></p>
+                  <p className="text-green-300 font-semibold">Growth multiplier: 8x reach, 19x profile visits</p>
+                </div>
 
-Slide 2: Starting point (relatability)
-"30 days ago: 12,400 followers, $0 revenue"
+                <h5 className="text-lg font-semibold text-purple-400 mb-3">Best Metrics to Share</h5>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Revenue numbers ($X in Y days)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Follower growth (0 to X in Y months)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Engagement rates (X% to Y%)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Time invested (X hours/week)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>ROI calculations (spent $X, made $Y)</span>
+                  </li>
+                </ul>
 
-Slides 3-7: The exact strategy with numbers
-- Day 1-10: Created $97 digital product (2,400 sales)
-- Day 11-20: Ran 5 Reels promoting it (1.2M combined views)
-- Day 21-30: Brand deal from viral Reel ($7,382)
+                <div className="text-sm text-gray-400 space-y-1">
+                  <p><strong className="text-white">Creation Time:</strong> 2-3 hours per case study (requires data collection)</p>
+                  <p><strong className="text-white">Posting Frequency:</strong> 1-2 per month (they're premium content)</p>
+                  <p><strong className="text-white">Expected Results:</strong> +1,000-5,000 followers per case study, high-quality audience</p>
+                </div>
+              </div>
 
-Slide 8: Lessons learned (tactical insights)
-"3 things I'd do differently"
+              {/* Content Type #4 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">#4: Transformation Stories (Highest Share Rate)</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">Why They Work</h5>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Before/after is inherently captivating</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Aspirational (people want the same results)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Emotional connection drives shares</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Proves your method works</span>
+                  </li>
+                </ul>
 
-Slide 9: Screenshots (proof)
-Stripe dashboard, Instagram analytics, testimonials
+                <h5 className="text-lg font-semibold text-green-400 mb-3">Winning Formula (Reel or Carousel)</h5>
+                <div className="space-y-4 text-gray-300 mb-6">
+                  <div>
+                    <p className="font-semibold text-white mb-2">Format 1: Side-by-side before/after</p>
+                    <ul className="ml-4 space-y-1 text-gray-400">
+                      <li>• Left: Where you were (struggling, 0 followers, broke)</li>
+                      <li>• Right: Where you are now (thriving, 500K followers, $X/month)</li>
+                      <li>• Text overlay: "What changed? I stopped [bad habit] and started [good habit]"</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-white mb-2">Format 2: Timeline progression</p>
+                    <ul className="ml-4 space-y-1 text-gray-400">
+                      <li>• Slide 1: "My Instagram journey in 12 months"</li>
+                      <li>• Slide 2: Month 0 (230 followers, posted randomly)</li>
+                      <li>• Slide 3: Month 3 (1,800 followers, found my niche)</li>
+                      <li>• Slide 4: Month 6 (12,000 followers, first viral Reel)</li>
+                      <li>• Slide 5: Month 9 (67,000 followers, quit my job)</li>
+                      <li>• Slide 6: Month 12 (145,000 followers, $18K/month)</li>
+                      <li>• Slide 7: "The 3 decisions that changed everything"</li>
+                      <li>• Slides 8-10: Those 3 decisions explained</li>
+                    </ul>
+                  </div>
+                </div>
 
-Slide 10: Next steps CTA
-"Want my complete strategy? Link in bio"
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-green-400 mb-2">Real Performance Data</h5>
+                  <p className="text-gray-300 mb-2">Average Reel: <strong className="text-white">12,000 views, 15 shares</strong></p>
+                  <p className="text-gray-300 mb-2">Transformation Reel: <strong className="text-white">280,000 views, 4,200 shares</strong></p>
+                  <p className="text-green-300 font-semibold">Growth multiplier: 23x views, 280x shares</p>
+                </div>
 
-**Real Performance Data**
-Average educational post: 12,000 impressions, 180 profile visits
-Data-driven case study: 95,000 impressions, 3,400 profile visits, 780 new followers
-Growth multiplier: 8x reach, 19x profile visits
+                <h5 className="text-lg font-semibold text-purple-400 mb-3">Best Transformation Angles</h5>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Income transformation (broke to $X/month)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Follower transformation (0 to X followers in Y months)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Lifestyle transformation (corporate job to creator freedom)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Skill transformation (camera-shy to confident on video)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Health transformation (before/after fitness journey)</span>
+                  </li>
+                </ul>
 
-**Best Metrics to Share**
-- Revenue numbers ($X in Y days)
-- Follower growth (0 to X in Y months)
-- Engagement rates (X% to Y%)
-- Time invested (X hours/week)
-- ROI calculations (spent $X, made $Y)
+                <div className="text-sm text-gray-400 space-y-1">
+                  <p><strong className="text-white">Creation Time:</strong> 30-60 minutes per transformation post</p>
+                  <p><strong className="text-white">Posting Frequency:</strong> 2-3 per month</p>
+                  <p><strong className="text-white">Expected Results:</strong> +3,000-10,000 followers per viral transformation post</p>
+                </div>
+              </div>
 
-**Creation Time**: 2-3 hours per case study (requires data collection)
-**Posting Frequency**: 1-2 per month (they're premium content)
-**Expected Results**: +1,000-5,000 followers per case study, high-quality audience
+              {/* Content Type #5 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">#5: "Steal This" Templates (Highest Save + Follow Rate)</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">Why They Work</h5>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Plug-and-play templates reduce friction</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Users save them to implement later</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Following you = access to more templates</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Positions you as generous expert</span>
+                  </li>
+                </ul>
 
-**#4: Transformation Stories (Highest Share Rate)**
+                <h5 className="text-lg font-semibold text-green-400 mb-3">Winning Formula</h5>
+                <div className="space-y-2 text-gray-300 mb-6">
+                  <p><strong className="text-white">Slide 1:</strong> "Steal my viral Reel template (that got me 2.4M views)"</p>
+                  <p><strong className="text-white">Slide 2:</strong> "Here's the template:"</p>
+                  <p><strong className="text-white">Slide 3:</strong> Hook formula</p>
+                  <p><strong className="text-white">Slide 4:</strong> Body formula</p>
+                  <p><strong className="text-white">Slide 5:</strong> CTA formula</p>
+                  <p><strong className="text-white">Slide 6:</strong> Example of template in action</p>
+                  <p><strong className="text-white">Slide 7:</strong> Results from using this template</p>
+                  <p><strong className="text-white">Slide 8:</strong> "Now customize it for your niche"</p>
+                  <p><strong className="text-white">Slide 9:</strong> "Follow for 50+ more templates"</p>
+                </div>
 
-**Why They Work**
-- Before/after is inherently captivating
-- Aspirational (people want the same results)
-- Emotional connection drives shares
-- Proves your method works
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-green-400 mb-2">Real Performance Data</h5>
+                  <p className="text-gray-300 mb-2">Average how-to post: <strong className="text-white">8,000 impressions, 120 saves, 40 new followers</strong></p>
+                  <p className="text-gray-300 mb-2">"Steal this template" post: <strong className="text-white">78,000 impressions, 3,800 saves, 1,200 new followers</strong></p>
+                  <p className="text-green-300 font-semibold">Growth multiplier: 10x reach, 32x saves, 30x followers</p>
+                </div>
 
-**Winning Formula (Reel or Carousel)**
-Format 1: Side-by-side before/after
-- Left: Where you were (struggling, 0 followers, broke)
-- Right: Where you are now (thriving, 500K followers, $X/month)
-- Text overlay: "What changed? I stopped [bad habit] and started [good habit]"
+                <h5 className="text-lg font-semibold text-purple-400 mb-3">Best Template Types</h5>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Reel script templates (hooks, transitions, CTAs)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Caption formulas (engagement-driving caption structure)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>DM conversation scripts (sales/outreach templates)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Content calendars (30-day posting plans)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Bio optimization templates (high-converting bio formulas)</span>
+                  </li>
+                </ul>
 
-Format 2: Timeline progression
-Slide 1: "My Instagram journey in 12 months"
-Slide 2: Month 0 (230 followers, posted randomly)
-Slide 3: Month 3 (1,800 followers, found my niche)
-Slide 4: Month 6 (12,000 followers, first viral Reel)
-Slide 5: Month 9 (67,000 followers, quit my job)
-Slide 6: Month 12 (145,000 followers, $18K/month)
-Slide 7: "The 3 decisions that changed everything"
-Slides 8-10: Those 3 decisions explained
+                <div className="text-sm text-gray-400 space-y-1">
+                  <p><strong className="text-white">Creation Time:</strong> 60-90 minutes (creating genuinely useful template)</p>
+                  <p><strong className="text-white">Posting Frequency:</strong> 1-2 per week</p>
+                  <p><strong className="text-white">Expected Results:</strong> +2,000-6,000 followers per month, extremely loyal audience</p>
+                </div>
+              </div>
 
-**Real Performance Data**
-Average Reel: 12,000 views, 15 shares
-Transformation Reel: 280,000 views, 4,200 shares
-Growth multiplier: 23x views, 280x shares
+              {/* Content Mix Section */}
+              <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-xl p-6">
+                <h4 className="text-xl font-bold text-white mb-4">Content Mix for Maximum Growth</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="text-lg font-semibold text-blue-400 mb-3">Week 1</h5>
+                    <ul className="space-y-2 text-gray-300">
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-400 mt-1">•</span>
+                        <span><strong className="text-white">Monday:</strong> Problem-solution carousel</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-400 mt-1">•</span>
+                        <span><strong className="text-white">Wednesday:</strong> Contrarian Reel</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-400 mt-1">•</span>
+                        <span><strong className="text-white">Friday:</strong> Transformation story</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-400 mt-1">•</span>
+                        <span><strong className="text-white">Sunday:</strong> "Steal this" template</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="text-lg font-semibold text-purple-400 mb-3">Week 2</h5>
+                    <ul className="space-y-2 text-gray-300">
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-400 mt-1">•</span>
+                        <span><strong className="text-white">Monday:</strong> Data-driven case study</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-400 mt-1">•</span>
+                        <span><strong className="text-white">Wednesday:</strong> Problem-solution carousel</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-400 mt-1">•</span>
+                        <span><strong className="text-white">Friday:</strong> Contrarian Reel</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-400 mt-1">•</span>
+                        <span><strong className="text-white">Sunday:</strong> Behind-the-scenes/personal content (20% rule)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-**Best Transformation Angles**
-- Income transformation (broke to $X/month)
-- Follower transformation (0 to X followers in Y months)
-- Lifestyle transformation (corporate job to creator freedom)
-- Skill transformation (camera-shy to confident on video)
-- Health transformation (before/after fitness journey)
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-6">
+                  <h5 className="text-lg font-semibold text-green-400 mb-2">Weekly Content ROI</h5>
+                  <ul className="space-y-2 text-gray-300">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span>6 value posts (80%) = algorithmic growth + credibility</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span>2 personal posts (20%) = connection + relatability</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span><strong className="text-white">Expected growth:</strong> +1,500-4,000 followers per week at 50K+ followers</span>
+                    </li>
+                  </ul>
+                </div>
 
-**Creation Time**: 30-60 minutes per transformation post
-**Posting Frequency**: 2-3 per month
-**Expected Results**: +3,000-10,000 followers per viral transformation post
+                <h5 className="text-lg font-semibold text-yellow-400 mb-3">Content Creation Efficiency System</h5>
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h6 className="text-md font-semibold text-white mb-2">Batch Creation (Sunday)</h6>
+                    <ul className="space-y-2 text-gray-300 text-sm">
+                      <li>• 2 hours: Plan 8 posts for the week (topics, angles, hooks)</li>
+                      <li>• 3 hours: Create 4 carousels (Canva templates)</li>
+                      <li>• 2 hours: Film 4 Reels (batch film all at once)</li>
+                      <li>• 1 hour: Write captions with engagement loops</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 className="text-md font-semibold text-white mb-2">Daily Execution (Monday-Sunday)</h6>
+                    <ul className="space-y-2 text-gray-300 text-sm">
+                      <li>• 9am: Post scheduled content</li>
+                      <li>• 9:30am-10:30am: Reply to ALL comments (critical!)</li>
+                      <li>• 12pm: Engage with 50 accounts in your niche</li>
+                      <li>• 7pm: Post to Stories (polls, questions, BTS)</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm"><strong className="text-white">Total time investment:</strong> 8 hours on Sunday, 2 hours/day during week = 22 hours/week</p>
+              </div>
 
-**#5: "Steal This" Templates (Highest Save + Follow Rate)**
-
-**Why They Work**
-- Plug-and-play templates reduce friction
-- Users save them to implement later
-- Following you = access to more templates
-- Positions you as generous expert
-
-**Winning Formula**
-Slide 1: "Steal my viral Reel template (that got me 2.4M views)"
-Slide 2: "Here's the template:"
-Slide 3: Hook formula
-Slide 4: Body formula
-Slide 5: CTA formula
-Slide 6: Example of template in action
-Slide 7: Results from using this template
-Slide 8: "Now customize it for your niche"
-Slide 9: "Follow for 50+ more templates"
-
-**Real Performance Data**
-Average how-to post: 8,000 impressions, 120 saves, 40 new followers
-"Steal this template" post: 78,000 impressions, 3,800 saves, 1,200 new followers
-Growth multiplier: 10x reach, 32x saves, 30x followers
-
-**Best Template Types**
-- Reel script templates (hooks, transitions, CTAs)
-- Caption formulas (engagement-driving caption structure)
-- DM conversation scripts (sales/outreach templates)
-- Content calendars (30-day posting plans)
-- Bio optimization templates (high-converting bio formulas)
-
-**Creation Time**: 60-90 minutes (creating genuinely useful template)
-**Posting Frequency**: 1-2 per week
-**Expected Results**: +2,000-6,000 followers per month, extremely loyal audience
-
-**Content Mix for Maximum Growth**
-
-**Week 1**
-- Monday: Problem-solution carousel
-- Wednesday: Contrarian Reel
-- Friday: Transformation story
-- Sunday: "Steal this" template
-
-**Week 2**
-- Monday: Data-driven case study
-- Wednesday: Problem-solution carousel
-- Friday: Contrarian Reel
-- Sunday: Behind-the-scenes/personal content (20% rule)
-
-**Weekly Content ROI**
-- 6 value posts (80%) = algorithmic growth + credibility
-- 2 personal posts (20%) = connection + relatability
-- Expected growth: +1,500-4,000 followers per week at 50K+ followers
-
-**Content Creation Efficiency System**
-
-**Batch Creation (Sunday)**
-- 2 hours: Plan 8 posts for the week (topics, angles, hooks)
-- 3 hours: Create 4 carousels (Canva templates)
-- 2 hours: Film 4 Reels (batch film all at once)
-- 1 hour: Write captions with engagement loops
-
-**Daily Execution (Monday-Sunday)**
-- 9am: Post scheduled content
-- 9:30am-10:30am: Reply to ALL comments (critical!)
-- 12pm: Engage with 50 accounts in your niche
-- 7pm: Post to Stories (polls, questions, BTS)
-
-**Total time investment**: 8 hours on Sunday, 2 hours/day during week = 22 hours/week
-
-**The Secret Multiplier: Consistency**
-
-The creators who hit 500K didn't post the perfect content every time. They posted GOOD content CONSISTENTLY.
-
-- 80% quality content + 100% consistency = 500K followers
-- 100% quality content + 50% consistency = stuck at 50K followers
-
-Post your content mix religiously for 12 months. The growth is inevitable.`}</p>
+              {/* Consistency Section */}
+              <div className="bg-gradient-to-br from-pink-500/10 to-rose-500/10 border border-pink-500/30 rounded-xl p-6">
+                <h4 className="text-xl font-bold text-white mb-4">The Secret Multiplier: Consistency</h4>
+                <p className="text-lg text-gray-300 mb-4 leading-relaxed">
+                  The creators who hit 500K didn't post the perfect content every time. They posted <strong className="text-white">GOOD content CONSISTENTLY</strong>.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400 text-xl">✓</span>
+                    <p className="text-gray-300"><strong className="text-white">80% quality content + 100% consistency</strong> = 500K followers</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">✗</span>
+                    <p className="text-gray-300"><strong className="text-white">100% quality content + 50% consistency</strong> = stuck at 50K followers</p>
+                  </div>
+                </div>
+                <p className="text-lg text-white font-semibold mt-4">Post your content mix religiously for 12 months. The growth is inevitable.</p>
+              </div>
             </div>
           </div>
 
