@@ -4,6 +4,7 @@ import Link from 'next/link'
 import SocialIcon from './SocialIcon'
 import NumberTicker from './magicui/number-ticker'
 import ScrambleText from './magicui/scramble-text'
+import ShimmerButton from './magicui/shimmer-button'
 import * as analytics from '@/lib/analytics'
 import HeroBackground from './HeroBackground'
 import { ctaLinks } from '@/config/navigation'
@@ -65,13 +66,23 @@ export default function Footer() {
                 href={ctaLinks.allAccess}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
+                className="inline-block rounded-full focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
                 onClick={() => {
                   analytics.trackCTAClick('footer', 'Join Our Community', ctaLinks.allAccess)
                   analytics.trackOutboundLink(ctaLinks.allAccess, 'Join Our Community', 'footer')
                 }}
               >
-                Join Our Community
+                <ShimmerButton
+                  className="shadow-lg"
+                  shimmerColor="#ffffff"
+                  shimmerSize="0.1em"
+                  background="linear-gradient(135deg, #2563eb, #9333ea)"
+                  borderRadius="9999px"
+                >
+                  <span className="whitespace-nowrap text-sm md:text-base font-bold px-6 py-3">
+                    Join Our Community
+                  </span>
+                </ShimmerButton>
               </Link>
             </div>
             <div className="flex space-x-4">

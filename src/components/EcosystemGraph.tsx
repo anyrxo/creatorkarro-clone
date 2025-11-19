@@ -51,7 +51,7 @@ export default function EcosystemGraph({ currentCourseId }: EcosystemGraphProps)
             <span className="text-zinc-300 text-xs font-bold tracking-widest uppercase">The Empire Ecosystem</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Don't Just Build a Course. <br className="hidden md:block" />
+            Don't Just Learn A Skill. <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Build an Empire.</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
