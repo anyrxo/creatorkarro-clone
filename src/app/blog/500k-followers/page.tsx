@@ -552,135 +552,334 @@ export default function BlogPost() {
 
         <div className="not-prose space-y-8 mb-12">
           <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">How long does it realistically take to reach 500K followers, and what should I expect along the way?</h3>
-            <div className="text-gray-300 space-y-4">
-              <p>{`**Reaching 500K followers takes 12-36 months with the right strategy, depending on platform and content quality.** After growing 5 accounts to 500K+ (2 Instagram, 2 TikTok, 1 YouTube) and analyzing 200+ successful creators, here's the complete roadmap:
+            <h3 className="text-2xl font-bold text-white mb-6">How long does it realistically take to reach 500K followers, and what should I expect along the way?</h3>
+            <div className="space-y-8">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                <strong className="text-white font-semibold">Reaching 500K followers takes 12-36 months with the right strategy, depending on platform and content quality.</strong> After growing 5 accounts to 500K+ (2 Instagram, 2 TikTok, 1 YouTube) and analyzing 200+ successful creators, here's the complete roadmap:
+              </p>
 
-**Timeline Breakdown by Platform**
+              <h4 className="text-xl font-bold text-white mb-6">Timeline Breakdown by Platform</h4>
 
-**Instagram (18-36 months to 500K)**
-- Month 1-3: 0-5,000 followers (finding content-market fit)
-- Month 4-9: 5K-50K (1-2 viral Reels per week)
-- Month 10-18: 50K-200K (consistent viral hits, collaborations)
-- Month 19-36: 200K-500K (established niche authority)
+              {/* Instagram Timeline */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50 mb-6">
+                <h5 className="text-lg font-bold text-pink-400 mb-4">Instagram (18-36 months to 500K)</h5>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 1-3:</strong> 0-5,000 followers (finding content-market fit)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 4-9:</strong> 5K-50K (1-2 viral Reels per week)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 10-18:</strong> 50K-200K (consistent viral hits, collaborations)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 19-36:</strong> 200K-500K (established niche authority)</span>
+                  </li>
+                </ul>
+                <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-3 mb-3">
+                  <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Average posting frequency:</strong> 1 Reel/day + 3 Stories/day</p>
+                  <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Viral rate needed:</strong> 20-30% of Reels hit 100K+ views</p>
+                </div>
+                <p className="text-gray-400 text-sm italic">Real example: Fitness creator posted 1 Reel/day for 24 months. Month 14: first 1M+ view Reel. Month 24: 520K followers. Revenue: $15K/month (brand deals + digital products).</p>
+              </div>
 
-Average posting frequency: 1 Reel/day + 3 Stories/day
-Viral rate needed: 20-30% of Reels hit 100K+ views
+              {/* TikTok Timeline */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50 mb-6">
+                <h5 className="text-lg font-bold text-cyan-400 mb-4">TikTok (12-24 months to 500K)</h5>
+                <p className="text-gray-300 mb-3">Much faster growth potential due to algorithm</p>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 1-2:</strong> 0-10K (testing content formats)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 3-6:</strong> 10K-100K (finding viral formula)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 7-15:</strong> 100K-300K (consistent virality)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 16-24:</strong> 300K-500K (established presence)</span>
+                  </li>
+                </ul>
+                <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-3 mb-3">
+                  <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Average posting frequency:</strong> 2-3 videos/day</p>
+                  <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Viral rate needed:</strong> 10-15% of videos hit 500K+ views</p>
+                </div>
+                <p className="text-gray-400 text-sm italic">Real example: Finance creator posted 3x/day for 18 months. Month 5: first 2M view video. Month 18: 580K followers. Revenue: $22K/month (course sales + sponsorships).</p>
+              </div>
 
-Real example: Fitness creator posted 1 Reel/day for 24 months. Month 14: first 1M+ view Reel. Month 24: 520K followers. Revenue: $15K/month (brand deals + digital products).
+              {/* YouTube Timeline */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50 mb-6">
+                <h5 className="text-lg font-bold text-red-400 mb-4">YouTube (24-48 months to 500K)</h5>
+                <p className="text-gray-300 mb-3">Slowest but most sustainable growth</p>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 1-6:</strong> 0-1,000 subscribers (learning production)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 7-18:</strong> 1K-25K (improving quality, finding hook formulas)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 19-36:</strong> 25K-150K (1-2 videos hitting 100K+ views/month)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Month 37-48:</strong> 150K-500K (snowball effect from catalog)</span>
+                  </li>
+                </ul>
+                <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3 mb-3">
+                  <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Average posting frequency:</strong> 2-3 long-form videos/week + daily Shorts</p>
+                  <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Viral rate needed:</strong> 1 video/month hitting 500K+ views</p>
+                </div>
+                <p className="text-gray-400 text-sm italic">Real example: Tech reviewer posted 3x/week for 36 months. Month 22: first 1M view video. Month 36: 520K subscribers. Revenue: $35K/month (AdSense + affiliates + sponsorships).</p>
+              </div>
 
-**TikTok (12-24 months to 500K)**
-- Much faster growth potential due to algorithm
-- Month 1-2: 0-10K (testing content formats)
-- Month 3-6: 10K-100K (finding viral formula)
-- Month 7-15: 100K-300K (consistent virality)
-- Month 16-24: 300K-500K (established presence)
+              <h4 className="text-xl font-bold text-white mb-6">What to Expect During the Journey</h4>
 
-Average posting frequency: 2-3 videos/day
-Viral rate needed: 10-15% of videos hit 500K+ views
+              {/* Journey Phases */}
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                {/* Grind Phase */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                  <h5 className="text-lg font-bold text-red-400 mb-3">The Grind Phase (Months 1-6)</h5>
+                  <ul className="space-y-2 text-gray-300 mb-4">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <span>Average 50-500 views per post</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <span>Slow follower growth (10-50 new followers/week)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <span>High temptation to quit</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <span>Testing 20+ different content angles</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <span>Learning editing, hooks, storytelling</span>
+                    </li>
+                  </ul>
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3 mb-3">
+                    <p className="text-red-300 font-semibold mb-2">Mental state:</p>
+                    <p className="text-gray-300 text-sm">Frustration, self-doubt, questioning if it's worth it.</p>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2 text-sm">Survival tactics:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Batch-create content on weekends (film 10-15 pieces in one session)</li>
+                      <li>• Join accountability groups with other creators</li>
+                      <li>• Study 10 top creators in your niche religiously</li>
+                      <li>• Track small wins (first 100 followers, first saved post, first DM)</li>
+                      <li>• Remind yourself: Everyone starts at zero</li>
+                    </ul>
+                  </div>
+                </div>
 
-Real example: Finance creator posted 3x/day for 18 months. Month 5: first 2M view video. Month 18: 580K followers. Revenue: $22K/month (course sales + sponsorships).
+                {/* Breakthrough Phase */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                  <h5 className="text-lg font-bold text-blue-400 mb-3">The Breakthrough Phase (Months 7-12)</h5>
+                  <ul className="space-y-2 text-gray-300 mb-4">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">•</span>
+                      <span>First viral post (100K+ views)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">•</span>
+                      <span>Follower growth accelerates (200-1,000 new followers/week)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">•</span>
+                      <span>Pattern recognition: You understand what works</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">•</span>
+                      <span>Brands start reaching out (small collaborations)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">•</span>
+                      <span>Engagement rate stabilizes around 3-5%</span>
+                    </li>
+                  </ul>
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3 mb-3">
+                    <p className="text-blue-300 font-semibold mb-2">Mental state:</p>
+                    <p className="text-gray-300 text-sm">Excitement, validation, renewed energy.</p>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2 text-sm">Key actions:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Double down on content formats that went viral</li>
+                      <li>• Start building email list from Instagram bio</li>
+                      <li>• Create lead magnet (free guide/template/checklist)</li>
+                      <li>• Engage with every comment (algorithm loves this)</li>
+                      <li>• Collaborate with creators at similar follower counts</li>
+                    </ul>
+                  </div>
+                </div>
 
-**YouTube (24-48 months to 500K)**
-- Slowest but most sustainable growth
-- Month 1-6: 0-1,000 subscribers (learning production)
-- Month 7-18: 1K-25K (improving quality, finding hook formulas)
-- Month 19-36: 25K-150K (1-2 videos hitting 100K+ views/month)
-- Month 37-48: 150K-500K (snowball effect from catalog)
+                {/* Scaling Phase */}
+                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                  <h5 className="text-lg font-bold text-green-400 mb-3">The Scaling Phase (Months 13-24)</h5>
+                  <ul className="space-y-2 text-gray-300 mb-4">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span>Multiple viral posts per month</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span>Follower growth compounds (1,000-5,000 new followers/week)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span>First monetization: $500-$3,000/month</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span>Content production becomes systematic</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span>You've found your "content pillars" (3-5 core topics)</span>
+                    </li>
+                  </ul>
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3 mb-3">
+                    <p className="text-green-300 font-semibold mb-2">Mental state:</p>
+                    <p className="text-gray-300 text-sm">Confidence, strategic thinking, business mindset.</p>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2 text-sm">Revenue milestones:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• 50K followers: First brand deal ($300-$800)</li>
+                      <li>• 100K followers: Launch digital product ($2K-$5K/month)</li>
+                      <li>• 200K followers: Consistent sponsorships ($3K-$8K/month)</li>
+                      <li>• 300K followers: Multiple income streams ($8K-$15K/month)</li>
+                    </ul>
+                  </div>
+                </div>
 
-Average posting frequency: 2-3 long-form videos/week + daily Shorts
-Viral rate needed: 1 video/month hitting 500K+ views
+                {/* Authority Phase */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                  <h5 className="text-lg font-bold text-purple-400 mb-3">The Authority Phase (Months 25-36)</h5>
+                  <ul className="space-y-2 text-gray-300 mb-4">
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-400 mt-1">•</span>
+                      <span>500K followers achieved</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-400 mt-1">•</span>
+                      <span>$10K-$25K/month revenue</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-400 mt-1">•</span>
+                      <span>Brands seek YOU out (no cold pitching needed)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-400 mt-1">•</span>
+                      <span>Community feels like a movement</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-400 mt-1">•</span>
+                      <span>Other creators want to collaborate with you</span>
+                    </li>
+                  </ul>
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3 mb-3">
+                    <p className="text-purple-300 font-semibold mb-2">Mental state:</p>
+                    <p className="text-gray-300 text-sm">Gratitude, responsibility, long-term vision.</p>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2 text-sm">Portfolio diversification:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Main account: 500K followers</li>
+                      <li>• Email list: 25,000-50,000 subscribers</li>
+                      <li>• YouTube channel: 50K-100K subscribers (repurposed content)</li>
+                      <li>• Podcast or newsletter: 5,000-15,000 engaged followers</li>
+                      <li>• Community/membership: 200-500 paying members</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-Real example: Tech reviewer posted 3x/week for 36 months. Month 22: first 1M view video. Month 36: 520K subscribers. Revenue: $35K/month (AdSense + affiliates + sponsorships).
+              {/* Critical Success Factors */}
+              <div className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-xl p-6 mb-6">
+                <h5 className="text-lg font-bold text-yellow-400 mb-4">Critical Success Factors Across All Timelines</h5>
+                <ol className="space-y-3 text-gray-300 list-decimal list-inside">
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">1.</span>
+                    <span><strong className="text-white">Consistency beats intensity</strong> - Posting 1x/day for 365 days beats posting 7x/week for 2 months then quitting</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">2.</span>
+                    <span><strong className="text-white">Viral content is systematizable</strong> - Study your viral posts, find patterns, replicate the formula</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">3.</span>
+                    <span><strong className="text-white">Engagement compounds</strong> - Reply to every comment in first 2 hours after posting</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">4.</span>
+                    <span><strong className="text-white">Quality threshold matters</strong> - Below-average production kills growth; above-average production enables it</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">5.</span>
+                    <span><strong className="text-white">Monetization accelerates growth</strong> - Revenue lets you invest in better equipment, editors, ads</span>
+                  </li>
+                </ol>
+              </div>
 
-**What to Expect During the Journey**
-
-**The Grind Phase (Months 1-6)**
-- Average 50-500 views per post
-- Slow follower growth (10-50 new followers/week)
-- High temptation to quit
-- Testing 20+ different content angles
-- Learning editing, hooks, storytelling
-
-Mental state: Frustration, self-doubt, questioning if it's worth it.
-
-Survival tactics:
-• Batch-create content on weekends (film 10-15 pieces in one session)
-• Join accountability groups with other creators
-• Study 10 top creators in your niche religiously
-• Track small wins (first 100 followers, first saved post, first DM)
-• Remind yourself: Everyone starts at zero
-
-**The Breakthrough Phase (Months 7-12)**
-- First viral post (100K+ views)
-- Follower growth accelerates (200-1,000 new followers/week)
-- Pattern recognition: You understand what works
-- Brands start reaching out (small collaborations)
-- Engagement rate stabilizes around 3-5%
-
-Mental state: Excitement, validation, renewed energy.
-
-Key actions:
-• Double down on content formats that went viral
-• Start building email list from Instagram bio
-• Create lead magnet (free guide/template/checklist)
-• Engage with every comment (algorithm loves this)
-• Collaborate with creators at similar follower counts
-
-**The Scaling Phase (Months 13-24)**
-- Multiple viral posts per month
-- Follower growth compounds (1,000-5,000 new followers/week)
-- First monetization: $500-$3,000/month
-- Content production becomes systematic
-- You've found your "content pillars" (3-5 core topics)
-
-Mental state: Confidence, strategic thinking, business mindset.
-
-Revenue milestones:
-• 50K followers: First brand deal ($300-$800)
-• 100K followers: Launch digital product ($2K-$5K/month)
-• 200K followers: Consistent sponsorships ($3K-$8K/month)
-• 300K followers: Multiple income streams ($8K-$15K/month)
-
-**The Authority Phase (Months 25-36)**
-- 500K followers achieved
-- $10K-$25K/month revenue
-- Brands seek YOU out (no cold pitching needed)
-- Community feels like a movement
-- Other creators want to collaborate with you
-
-Mental state: Gratitude, responsibility, long-term vision.
-
-Portfolio diversification:
-• Main account: 500K followers
-• Email list: 25,000-50,000 subscribers
-• YouTube channel: 50K-100K subscribers (repurposed content)
-• Podcast or newsletter: 5,000-15,000 engaged followers
-• Community/membership: 200-500 paying members
-
-**Critical Success Factors Across All Timelines**
-
-1. **Consistency beats intensity** - Posting 1x/day for 365 days beats posting 7x/week for 2 months then quitting
-2. **Viral content is systematizable** - Study your viral posts, find patterns, replicate the formula
-3. **Engagement compounds** - Reply to every comment in first 2 hours after posting
-4. **Quality threshold matters** - Below-average production kills growth; above-average production enables it
-5. **Monetization accelerates growth** - Revenue lets you invest in better equipment, editors, ads
-
-**Realistic Expectations vs. False Promises**
-
-❌ Unrealistic: "500K followers in 90 days guaranteed"
-✅ Realistic: "500K followers in 18-36 months with disciplined execution"
-
-❌ Unrealistic: "Post 3 times and go viral"
-✅ Realistic: "Post 100+ times to find your viral formula, then systematize it"
-
-❌ Unrealistic: "No experience needed, just copy this template"
-✅ Realistic: "Study successful creators, test relentlessly, develop your unique angle"
-
-❌ Unrealistic: "Passive income from day one"
-✅ Realistic: "Significant work for 12-18 months before meaningful revenue"
-
-The truth: 500K followers is absolutely achievable, but it requires treating content creation like a serious business, not a hobby. Expect to invest 15-30 hours/week for 18-36 months. The payoff? A 6-figure annual income potential and complete location freedom.`}</p>
+              {/* Realistic Expectations */}
+              <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 border border-gray-700/50 rounded-xl p-6">
+                <h5 className="text-lg font-bold text-white mb-4">Realistic Expectations vs. False Promises</h5>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">❌</span>
+                    <div>
+                      <p className="text-gray-300 font-semibold">Unrealistic: "500K followers in 90 days guaranteed"</p>
+                      <p className="text-green-300 mt-1">✅ Realistic: "500K followers in 18-36 months with disciplined execution"</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">❌</span>
+                    <div>
+                      <p className="text-gray-300 font-semibold">Unrealistic: "Post 3 times and go viral"</p>
+                      <p className="text-green-300 mt-1">✅ Realistic: "Post 100+ times to find your viral formula, then systematize it"</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">❌</span>
+                    <div>
+                      <p className="text-gray-300 font-semibold">Unrealistic: "No experience needed, just copy this template"</p>
+                      <p className="text-green-300 mt-1">✅ Realistic: "Study successful creators, test relentlessly, develop your unique angle"</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400 text-xl">❌</span>
+                    <div>
+                      <p className="text-gray-300 font-semibold">Unrealistic: "Passive income from day one"</p>
+                      <p className="text-green-300 mt-1">✅ Realistic: "Significant work for 12-18 months before meaningful revenue"</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-4 mt-6">
+                  <p className="text-lg text-white font-semibold text-center">
+                    The truth: 500K followers is absolutely achievable, but it requires treating content creation like a serious business, not a hobby. Expect to invest 15-30 hours/week for 18-36 months. The payoff? A 6-figure annual income potential and complete location freedom.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
