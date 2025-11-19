@@ -785,470 +785,681 @@ export default function MonetizeWithAI() {
 
             <div className="bg-zinc-800 rounded-xl p-6">
                 <h3 className="text-2xl font-bold text-blue-400 mb-4">How do different AI business models compare in terms of revenue potential?</h3>
-                <div className="text-gray-300 space-y-4">
-                    <p className="leading-relaxed">{`**After running 8 different AI business models simultaneously and tracking revenue for 24 months, here's the complete revenue comparison with real numbers:**
+                <div className="text-gray-300 space-y-6">
+                    <p className="text-lg font-semibold text-white mb-6">After running 8 different AI business models simultaneously and tracking revenue for 24 months, here's the complete revenue comparison with real numbers:</p>
 
-**TIER 1: Service-Based Models ($3K-$50K/month)**
+                    {/* TIER 1 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-blue-500">
+                        <h4 className="text-2xl font-bold text-blue-400 mb-4">TIER 1: Service-Based Models ($3K-$50K/month)</h4>
+                        <div className="space-y-6">
+                            <div>
+                                <h5 className="text-xl font-bold text-blue-300 mb-3">AI Content Agency</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Revenue range: $5K-$30K/month</li>
+                                    <li>Time to first dollar: 1-2 weeks</li>
+                                    <li>Startup costs: $50-$200</li>
+                                    <li>Monthly expenses: $100-$300 (tools)</li>
+                                    <li>Profit margin: 85-95%</li>
+                                    <li>Hours per week: 20-40</li>
+                                    <li>Scalability: Medium (limited by your time unless you hire)</li>
+                                    <li>Difficulty: Easy</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>Breakdown:</strong> With 10 clients paying $1,500/month average, you earn $15K/month. Tool costs ($150), profit = $14,850. Takes 30 hours/week to service clients. Revenue ceiling around $30K/month solo, but can scale to $100K+ with team.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-blue-300 mb-3">AI Automation Consulting</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Revenue range: $10K-$100K/month</li>
+                                    <li>Time to first dollar: 2-4 weeks</li>
+                                    <li>Startup costs: $0-$500</li>
+                                    <li>Monthly expenses: $200-$500 (tools + demos)</li>
+                                    <li>Profit margin: 90-95%</li>
+                                    <li>Hours per week: 30-50</li>
+                                    <li>Scalability: High (projects scale well)</li>
+                                    <li>Difficulty: Medium</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>Breakdown:</strong> Charge $5,000 per project on average. Complete 4-6 projects/month = $20K-$30K/month. Add retainer clients ($2K-$5K/month each) to stabilize income. Top consultants earn $50K-$100K/month with a small team.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-blue-300 mb-3">AI Design/Video Services</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Revenue range: $4K-$25K/month</li>
+                                    <li>Time to first dollar: 1-3 weeks</li>
+                                    <li>Startup costs: $100-$300</li>
+                                    <li>Monthly expenses: $150-$300 (AI tools)</li>
+                                    <li>Profit margin: 80-90%</li>
+                                    <li>Hours per week: 25-35</li>
+                                    <li>Scalability: Medium</li>
+                                    <li>Difficulty: Easy-Medium</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>Breakdown:</strong> Charge $500-$2,000 per project. Complete 15-20 projects/month = $10K-$15K/month. Higher-end clients (AI influencers, video ads) can push this to $25K+/month.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-**AI Content Agency**
-- Revenue range: $5K-$30K/month
-- Time to first dollar: 1-2 weeks
-- Startup costs: $50-$200
-- Monthly expenses: $100-$300 (tools)
-- Profit margin: 85-95%
-- Hours per week: 20-40
-- Scalability: Medium (limited by your time unless you hire)
-- Difficulty: Easy
+                    {/* TIER 2 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-purple-500">
+                        <h4 className="text-2xl font-bold text-purple-400 mb-4">TIER 2: Product-Based Models ($5K-$500K/month)</h4>
+                        <div className="space-y-6">
+                            <div>
+                                <h5 className="text-xl font-bold text-purple-300 mb-3">AI SaaS Tools</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Revenue range: $0-$500K+/month (highly variable)</li>
+                                    <li>Time to first dollar: 3-6 months</li>
+                                    <li>Startup costs: $2,000-$20,000 (development)</li>
+                                    <li>Monthly expenses: $500-$5,000 (hosting, APIs, tools)</li>
+                                    <li>Profit margin: 60-80% at scale</li>
+                                    <li>Hours per week: 50-70 (initially), 10-20 (at scale)</li>
+                                    <li>Scalability: Very High (unlimited users)</li>
+                                    <li>Difficulty: Hard</li>
+                                </ul>
+                                <div className="mb-3">
+                                    <p className="font-semibold text-white mb-2">Breakdown by user count:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>50 users × $30/mo = $1,500 MRR</li>
+                                        <li>200 users × $30/mo = $6,000 MRR</li>
+                                        <li>500 users × $30/mo = $15,000 MRR</li>
+                                        <li>1,000 users × $50/mo = $50,000 MRR</li>
+                                        <li>5,000 users × $50/mo = $250,000 MRR</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm italic"><strong>Real example:</strong> AI writing tool with 850 users at $47/month = $39,950 MRR. Expenses: $3,500/month (servers, APIs, support) = $36,450/month profit. Development took 4 months, now runs with 15 hours/week maintenance.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-purple-300 mb-3">AI Courses & Info Products</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Revenue range: $2K-$100K+/month</li>
+                                    <li>Time to first dollar: 4-8 weeks</li>
+                                    <li>Startup costs: $500-$3,000</li>
+                                    <li>Monthly expenses: $100-$500 (email, hosting)</li>
+                                    <li>Profit margin: 90-95%</li>
+                                    <li>Hours per week: 40 (creation), 5-10 (maintenance)</li>
+                                    <li>Scalability: Very High (sell to unlimited students)</li>
+                                    <li>Difficulty: Medium</li>
+                                </ul>
+                                <div className="mb-3">
+                                    <p className="font-semibold text-white mb-2">Breakdown by pricing tier:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>Low-ticket ($27-$97): Need 100-200 sales/month = $2,700-$19,400/month</li>
+                                        <li>Mid-ticket ($297-$997): Need 20-50 sales/month = $5,940-$49,850/month</li>
+                                        <li>High-ticket ($1,997-$4,997): Need 5-15 sales/month = $9,985-$74,955/month</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm italic"><strong>Real example:</strong> AI business course at $697. First launch: 143 sales = $99,671 in one week. Ongoing evergreen: 25-40 sales/month = $17,425-$27,880/month passive income.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-purple-300 mb-3">AI Templates & Digital Products</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Revenue range: $500-$10K/month</li>
+                                    <li>Time to first dollar: 1-2 weeks</li>
+                                    <li>Startup costs: $50-$200</li>
+                                    <li>Monthly expenses: $50-$100</li>
+                                    <li>Profit margin: 95%+</li>
+                                    <li>Hours per week: 10-20 (creation), 2-5 (maintenance)</li>
+                                    <li>Scalability: High</li>
+                                    <li>Difficulty: Easy</li>
+                                </ul>
+                                <div className="mb-3">
+                                    <p className="font-semibold text-white mb-2">Breakdown:</p>
+                                    <p>Sell prompt packs ($27), workflow templates ($47), custom GPTs ($97)</p>
+                                    <p>Need 50-100 sales/month = $1,350-$9,700/month</p>
+                                </div>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm italic"><strong>Real example:</strong> ChatGPT prompt bundle for marketers ($37). Sells 85 copies/month = $3,145/month. Created in 1 week, automated delivery, zero maintenance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-Breakdown: With 10 clients paying $1,500/month average, you earn $15K/month. Tool costs ($150), profit = $14,850. Takes 30 hours/week to service clients. Revenue ceiling around $30K/month solo, but can scale to $100K+ with team.
+                    {/* TIER 3 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-yellow-500">
+                        <h4 className="text-2xl font-bold text-yellow-400 mb-4">TIER 3: Content Monetization Models ($2K-$100K+/month)</h4>
+                        <div className="space-y-6">
+                            <div>
+                                <h5 className="text-xl font-bold text-yellow-300 mb-3">YouTube Automation (per channel)</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Revenue range: $500-$20K/month per channel</li>
+                                    <li>Time to first dollar: 2-6 months</li>
+                                    <li>Startup costs: $100-$500</li>
+                                    <li>Monthly expenses: $100-$300 (tools, stock footage)</li>
+                                    <li>Profit margin: 70-85%</li>
+                                    <li>Hours per week: 15-25 per channel</li>
+                                    <li>Scalability: High (run multiple channels)</li>
+                                    <li>Difficulty: Medium</li>
+                                </ul>
+                                <div className="mb-3">
+                                    <p className="font-semibold text-white mb-2">Breakdown by views:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>100K views/month = $400-$800/month (ads only)</li>
+                                        <li>500K views/month = $2,000-$4,000/month</li>
+                                        <li>1M views/month = $4,000-$8,000/month</li>
+                                        <li>2M views/month = $8,000-$16,000/month</li>
+                                    </ul>
+                                    <p className="mt-2">Add sponsorships: +$500-$5,000 per video (if monetized)</p>
+                                    <p>Add affiliates: +$500-$3,000/month</p>
+                                </div>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm italic"><strong>Real example:</strong> 3 faceless channels in tech niche. Channel 1: 1.2M views = $5,000/month. Channel 2: 800K views = $3,200/month. Channel 3: 400K views = $1,600/month. Total: $9,800/month. Work 6 hours/day creating content.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-yellow-300 mb-3">AI Blog Networks</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Revenue range: $500-$15K/month per site</li>
+                                    <li>Time to first dollar: 3-6 months</li>
+                                    <li>Startup costs: $100-$500 per site</li>
+                                    <li>Monthly expenses: $50-$200 per site</li>
+                                    <li>Profit margin: 75-90%</li>
+                                    <li>Hours per week: 10-15 per site</li>
+                                    <li>Scalability: High (run 5-10 sites)</li>
+                                    <li>Difficulty: Medium</li>
+                                </ul>
+                                <div className="mb-3">
+                                    <p className="font-semibold text-white mb-2">Breakdown by traffic:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>10K visits/month = $300-$800/month</li>
+                                        <li>50K visits/month = $1,500-$4,000/month</li>
+                                        <li>100K visits/month = $3,000-$8,000/month</li>
+                                        <li>200K+ visits/month = $6,000-$15,000/month</li>
+                                    </ul>
+                                    <p className="mt-2"><strong className="text-white">Monetization:</strong> Ads (60%), Affiliates (30%), Sponsored posts (10%)</p>
+                                </div>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm italic"><strong>Real example:</strong> 5 AI-written niche sites. Average traffic: 60K/month each. Average revenue: $2,200/month each. Total: $11,000/month. Uses ChatGPT to write 100 articles/month across all sites. 20 hours/week total.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-yellow-300 mb-3">AI Newsletter Publishing</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Revenue range: $1K-$50K+/month</li>
+                                    <li>Time to first dollar: 2-4 months</li>
+                                    <li>Startup costs: $100-$300</li>
+                                    <li>Monthly expenses: $100-$500 (email service)</li>
+                                    <li>Profit margin: 85-95%</li>
+                                    <li>Hours per week: 10-20</li>
+                                    <li>Scalability: Very High</li>
+                                    <li>Difficulty: Medium</li>
+                                </ul>
+                                <div className="mb-3">
+                                    <p className="font-semibold text-white mb-2">Breakdown by subscribers:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>1,000 subs = $500-$2,000/month (affiliates)</li>
+                                        <li>5,000 subs = $2,000-$8,000/month (sponsors + affiliates)</li>
+                                        <li>10,000 subs = $5,000-$15,000/month (sponsors)</li>
+                                        <li>25,000 subs = $10,000-$30,000/month</li>
+                                        <li>50,000+ subs = $20,000-$100,000+/month</li>
+                                    </ul>
+                                    <p className="mt-2"><strong className="text-white">Monetization:</strong> Sponsorships ($1-$4 per subscriber/month), Premium tier ($5-$50/month), Affiliates</p>
+                                </div>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm italic"><strong>Real example:</strong> AI tools newsletter with 18,000 subscribers. 3 sponsors/month at $1,500 each = $4,500. 400 premium subscribers at $15/month = $6,000. Affiliates = $2,800/month. Total: $13,300/month. Uses AI to write daily emails, 12 hours/week.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-**AI Automation Consulting**
-- Revenue range: $10K-$100K/month
-- Time to first dollar: 2-4 weeks
-- Startup costs: $0-$500
-- Monthly expenses: $200-$500 (tools + demos)
-- Profit margin: 90-95%
-- Hours per week: 30-50
-- Scalability: High (projects scale well)
-- Difficulty: Medium
+                    {/* Comparison Matrix */}
+                    <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 rounded-lg p-6 border border-blue-500/30">
+                        <h4 className="text-2xl font-bold text-blue-400 mb-4">COMPARISON MATRIX: Which Model is Right for You?</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <p className="font-semibold text-white mb-2">If you need money FAST (within 30 days):</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>AI Content Services - Get first client in 1-2 weeks</li>
+                                    <li>AI Design Services - Quick turnaround projects</li>
+                                    <li>AI Templates/Products - Can sell immediately</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">If you want HIGHEST income ceiling:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>AI SaaS Tools - $100K-$500K+/month potential</li>
+                                    <li>AI Courses - $50K-$100K+/month potential</li>
+                                    <li>YouTube Automation - $20K-$100K+/month with multiple channels</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">If you want PASSIVE income:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>AI Courses - Create once, sell forever</li>
+                                    <li>AI Templates - Create once, sell unlimited</li>
+                                    <li>AI SaaS - Recurring revenue, minimal maintenance</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">If you have LIMITED time (under 20 hrs/week):</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>AI Templates/Products - 5-10 hours/week</li>
+                                    <li>AI Newsletter - 10-15 hours/week</li>
+                                    <li>AI Courses (after creation) - 5-10 hours/week</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">If you have ZERO startup capital:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>AI Content Services - Start with free ChatGPT</li>
+                                    <li>AI Consulting - Sell expertise, use client tools</li>
+                                    <li>AI Social Media - Free AI tools + scheduling</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
 
-Breakdown: Charge $5,000 per project on average. Complete 4-6 projects/month = $20K-$30K/month. Add retainer clients ($2K-$5K/month each) to stabilize income. Top consultants earn $50K-$100K/month with a small team.
-
-**AI Design/Video Services**
-- Revenue range: $4K-$25K/month
-- Time to first dollar: 1-3 weeks
-- Startup costs: $100-$300
-- Monthly expenses: $150-$300 (AI tools)
-- Profit margin: 80-90%
-- Hours per week: 25-35
-- Scalability: Medium
-- Difficulty: Easy-Medium
-
-Breakdown: Charge $500-$2,000 per project. Complete 15-20 projects/month = $10K-$15K/month. Higher-end clients (AI influencers, video ads) can push this to $25K+/month.
-
-**TIER 2: Product-Based Models ($5K-$500K/month)**
-
-**AI SaaS Tools**
-- Revenue range: $0-$500K+/month (highly variable)
-- Time to first dollar: 3-6 months
-- Startup costs: $2,000-$20,000 (development)
-- Monthly expenses: $500-$5,000 (hosting, APIs, tools)
-- Profit margin: 60-80% at scale
-- Hours per week: 50-70 (initially), 10-20 (at scale)
-- Scalability: Very High (unlimited users)
-- Difficulty: Hard
-
-Breakdown by user count:
-- 50 users × $30/mo = $1,500 MRR
-- 200 users × $30/mo = $6,000 MRR
-- 500 users × $30/mo = $15,000 MRR
-- 1,000 users × $50/mo = $50,000 MRR
-- 5,000 users × $50/mo = $250,000 MRR
-
-Real example: AI writing tool with 850 users at $47/month = $39,950 MRR. Expenses: $3,500/month (servers, APIs, support) = $36,450/month profit. Development took 4 months, now runs with 15 hours/week maintenance.
-
-**AI Courses & Info Products**
-- Revenue range: $2K-$100K+/month
-- Time to first dollar: 4-8 weeks
-- Startup costs: $500-$3,000
-- Monthly expenses: $100-$500 (email, hosting)
-- Profit margin: 90-95%
-- Hours per week: 40 (creation), 5-10 (maintenance)
-- Scalability: Very High (sell to unlimited students)
-- Difficulty: Medium
-
-Breakdown by pricing tier:
-Low-ticket ($27-$97): Need 100-200 sales/month = $2,700-$19,400/month
-Mid-ticket ($297-$997): Need 20-50 sales/month = $5,940-$49,850/month
-High-ticket ($1,997-$4,997): Need 5-15 sales/month = $9,985-$74,955/month
-
-Real example: AI business course at $697. First launch: 143 sales = $99,671 in one week. Ongoing evergreen: 25-40 sales/month = $17,425-$27,880/month passive income.
-
-**AI Templates & Digital Products**
-- Revenue range: $500-$10K/month
-- Time to first dollar: 1-2 weeks
-- Startup costs: $50-$200
-- Monthly expenses: $50-$100
-- Profit margin: 95%+
-- Hours per week: 10-20 (creation), 2-5 (maintenance)
-- Scalability: High
-- Difficulty: Easy
-
-Breakdown: Sell prompt packs ($27), workflow templates ($47), custom GPTs ($97)
-Need 50-100 sales/month = $1,350-$9,700/month
-
-Real example: ChatGPT prompt bundle for marketers ($37). Sells 85 copies/month = $3,145/month. Created in 1 week, automated delivery, zero maintenance.
-
-**TIER 3: Content Monetization Models ($2K-$100K+/month)**
-
-**YouTube Automation (per channel)**
-- Revenue range: $500-$20K/month per channel
-- Time to first dollar: 2-6 months
-- Startup costs: $100-$500
-- Monthly expenses: $100-$300 (tools, stock footage)
-- Profit margin: 70-85%
-- Hours per week: 15-25 per channel
-- Scalability: High (run multiple channels)
-- Difficulty: Medium
-
-Breakdown by views:
-- 100K views/month = $400-$800/month (ads only)
-- 500K views/month = $2,000-$4,000/month
-- 1M views/month = $4,000-$8,000/month
-- 2M views/month = $8,000-$16,000/month
-
-Add sponsorships: +$500-$5,000 per video (if monetized)
-Add affiliates: +$500-$3,000/month
-
-Real example: 3 faceless channels in tech niche. Channel 1: 1.2M views = $5,000/month. Channel 2: 800K views = $3,200/month. Channel 3: 400K views = $1,600/month. Total: $9,800/month. Work 6 hours/day creating content.
-
-**AI Blog Networks**
-- Revenue range: $500-$15K/month per site
-- Time to first dollar: 3-6 months
-- Startup costs: $100-$500 per site
-- Monthly expenses: $50-$200 per site
-- Profit margin: 75-90%
-- Hours per week: 10-15 per site
-- Scalability: High (run 5-10 sites)
-- Difficulty: Medium
-
-Breakdown by traffic:
-- 10K visits/month = $300-$800/month
-- 50K visits/month = $1,500-$4,000/month
-- 100K visits/month = $3,000-$8,000/month
-- 200K+ visits/month = $6,000-$15,000/month
-
-Monetization: Ads (60%), Affiliates (30%), Sponsored posts (10%)
-
-Real example: 5 AI-written niche sites. Average traffic: 60K/month each. Average revenue: $2,200/month each. Total: $11,000/month. Uses ChatGPT to write 100 articles/month across all sites. 20 hours/week total.
-
-**AI Newsletter Publishing**
-- Revenue range: $1K-$50K+/month
-- Time to first dollar: 2-4 months
-- Startup costs: $100-$300
-- Monthly expenses: $100-$500 (email service)
-- Profit margin: 85-95%
-- Hours per week: 10-20
-- Scalability: Very High
-- Difficulty: Medium
-
-Breakdown by subscribers:
-- 1,000 subs = $500-$2,000/month (affiliates)
-- 5,000 subs = $2,000-$8,000/month (sponsors + affiliates)
-- 10,000 subs = $5,000-$15,000/month (sponsors)
-- 25,000 subs = $10,000-$30,000/month
-- 50,000+ subs = $20,000-$100,000+/month
-
-Monetization: Sponsorships ($1-$4 per subscriber/month), Premium tier ($5-$50/month), Affiliates
-
-Real example: AI tools newsletter with 18,000 subscribers. 3 sponsors/month at $1,500 each = $4,500. 400 premium subscribers at $15/month = $6,000. Affiliates = $2,800/month. Total: $13,300/month. Uses AI to write daily emails, 12 hours/week.
-
-**COMPARISON MATRIX: Which Model is Right for You?**
-
-**If you need money FAST (within 30 days):**
-1. AI Content Services - Get first client in 1-2 weeks
-2. AI Design Services - Quick turnaround projects
-3. AI Templates/Products - Can sell immediately
-
-**If you want HIGHEST income ceiling:**
-1. AI SaaS Tools - $100K-$500K+/month potential
-2. AI Courses - $50K-$100K+/month potential
-3. YouTube Automation - $20K-$100K+/month with multiple channels
-
-**If you want PASSIVE income:**
-1. AI Courses - Create once, sell forever
-2. AI Templates - Create once, sell unlimited
-3. AI SaaS - Recurring revenue, minimal maintenance
-
-**If you have LIMITED time (under 20 hrs/week):**
-1. AI Templates/Products - 5-10 hours/week
-2. AI Newsletter - 10-15 hours/week
-3. AI Courses (after creation) - 5-10 hours/week
-
-**If you have ZERO startup capital:**
-1. AI Content Services - Start with free ChatGPT
-2. AI Consulting - Sell expertise, use client tools
-3. AI Social Media - Free AI tools + scheduling
-
-**RECOMMENDED PATH (2026):**
-
-Month 1-3: AI Content Services ($5K-$15K/month)
-- Build skills, get clients, generate cash flow
-- Tool cost: $100/month
-- Expected income: $5K-$10K/month by month 3
-
-Month 4-6: Create AI Course from experience ($10K-$50K launch)
-- Document what you learned
-- Create course while still serving clients
-- Launch to audience you built
-
-Month 7-12: Build AI SaaS or scale services ($20K-$50K/month)
-- Reinvest course profits into product or team
-- Maintain courses as passive income
-- Scale to $30K-$50K/month combined
-
-Year 2: Diversify income streams ($50K-$100K+/month)
-- Run services with team: $30K/month
-- Course evergreen sales: $15K/month
-- SaaS or content: $10K-$20K/month
-- Consulting: $10K-$20K/month
-- Total: $65K-$85K/month
-
-This is the exact path that's worked for the most successful AI entrepreneurs in 2026. Start with services for immediate cash, create products for leverage, build software for scale.`}</p>
+                    {/* Recommended Path */}
+                    <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 rounded-lg p-6 border border-green-500/30">
+                        <h4 className="text-2xl font-bold text-green-400 mb-4">RECOMMENDED PATH (2026):</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <p className="font-semibold text-white mb-2">Month 1-3: AI Content Services ($5K-$15K/month)</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Build skills, get clients, generate cash flow</li>
+                                    <li>Tool cost: $100/month</li>
+                                    <li>Expected income: $5K-$10K/month by month 3</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Month 4-6: Create AI Course from experience ($10K-$50K launch)</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Document what you learned</li>
+                                    <li>Create course while still serving clients</li>
+                                    <li>Launch to audience you built</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Month 7-12: Build AI SaaS or scale services ($20K-$50K/month)</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Reinvest course profits into product or team</li>
+                                    <li>Maintain courses as passive income</li>
+                                    <li>Scale to $30K-$50K/month combined</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Year 2: Diversify income streams ($50K-$100K+/month)</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Run services with team: $30K/month</li>
+                                    <li>Course evergreen sales: $15K/month</li>
+                                    <li>SaaS or content: $10K-$20K/month</li>
+                                    <li>Consulting: $10K-$20K/month</li>
+                                    <li className="font-semibold text-green-400">Total: $65K-$85K/month</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p className="mt-4 italic">This is the exact path that's worked for the most successful AI entrepreneurs in 2026. Start with services for immediate cash, create products for leverage, build software for scale.</p>
+                    </div>
                 </div>
             </div>
 
             <div className="bg-zinc-800 rounded-xl p-6">
                 <h3 className="text-2xl font-bold text-purple-400 mb-4">Can I start an AI business with $0 investment?</h3>
-                <div className="text-gray-300 space-y-4">
-                    <p className="leading-relaxed">{`**Yes, you can absolutely start an AI business with $0 and reach $5K/month within 60-90 days.** I've personally coached 47 people who started with zero investment and hit $3K-$10K/month within their first 3 months. Here's the exact blueprint:
+                <div className="text-gray-300 space-y-6">
+                    <p className="text-lg font-semibold text-white mb-6">Yes, you can absolutely start an AI business with $0 and reach $5K/month within 60-90 days. I've personally coached 47 people who started with zero investment and hit $3K-$10K/month within their first 3 months. Here's the exact blueprint:</p>
 
-**The $0 to $5K/Month AI Business Plan**
+                    <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 rounded-lg p-6 border border-green-500/30">
+                        <h4 className="text-2xl font-bold text-green-400 mb-4">The $0 to $5K/Month AI Business Plan</h4>
+                        
+                        {/* Week 1 */}
+                        <div className="mb-6">
+                            <h5 className="text-xl font-bold text-green-300 mb-3">Week 1: Master Free AI Tools (0-10 hours, $0 invested)</h5>
+                            <p className="mb-3">Use completely free AI tools to build skills:</p>
+                            <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                <li>ChatGPT Free (3.5): Unlimited access to AI writing and problem-solving</li>
+                                <li>Claude Free: 20 messages per day (enough to learn)</li>
+                                <li>Bing Chat: Free GPT-4 access through Microsoft Edge</li>
+                                <li>Google Bard: Free, unlimited usage</li>
+                                <li>Canva Free: AI image generation (10 images/day)</li>
+                                <li>Leonardo.ai: 150 free AI images/day</li>
+                                <li>Runway Free: 125 credits for AI video</li>
+                            </ul>
+                            <p className="mb-3 font-semibold text-white">Learn these skills:</p>
+                            <ol className="list-decimal list-inside space-y-1 ml-2 mb-3">
+                                <li>Prompt engineering (how to get great results from AI)</li>
+                                <li>AI content writing (blogs, social posts, emails)</li>
+                                <li>AI image creation (basic design skills)</li>
+                                <li>AI workflow building (connecting tools together)</li>
+                            </ol>
+                            <p><strong className="text-white">Time investment:</strong> 2 hours/day for 7 days = 14 hours total</p>
+                            <p><strong className="text-white">Cost:</strong> $0</p>
+                        </div>
 
-**Week 1: Master Free AI Tools (0-10 hours, $0 invested)**
+                        {/* Week 2 */}
+                        <div className="mb-6">
+                            <h5 className="text-xl font-bold text-green-300 mb-3">Week 2: Choose Your Service & Create Portfolio (10-15 hours, $0 invested)</h5>
+                            <p className="mb-3 font-semibold text-white">Pick ONE service to offer (easiest to start):</p>
+                            <p className="mb-3 font-semibold text-green-400">AI Content Writing Services - Highest demand, fastest to monetize</p>
+                            <p className="mb-3">Create your portfolio with free tools:</p>
+                            <ol className="list-decimal list-inside space-y-1 ml-2 mb-3">
+                                <li>Use ChatGPT to write 3 sample blog posts in your niche</li>
+                                <li>Use Canva Free to design portfolio presentation</li>
+                                <li>Create free website with Carrd.co or Notion (free)</li>
+                                <li>Set up free email with Gmail</li>
+                                <li>Create LinkedIn profile showcasing AI skills</li>
+                            </ol>
+                            <p className="mb-3 font-semibold text-white">Portfolio pieces to create:</p>
+                            <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                <li>3 blog posts (1,000-2,000 words each)</li>
+                                <li>5 social media post examples</li>
+                                <li>1 email sequence (5 emails)</li>
+                                <li>1 product description set (10 descriptions)</li>
+                            </ul>
+                            <div className="bg-zinc-800/50 rounded p-3 mb-3">
+                                <p className="text-sm mb-2"><strong>Use ChatGPT prompts like:</strong></p>
+                                <p className="text-sm italic">"Write a 1,500-word blog post about [topic] for [audience]. Make it engaging, SEO-optimized, and include actionable tips."</p>
+                                <p className="text-sm mt-2"><strong>Then edit with Claude:</strong></p>
+                                <p className="text-sm italic">"Edit this blog post for clarity, tone, and engagement. Fix any errors and improve the flow."</p>
+                            </div>
+                            <p><strong className="text-white">Time investment:</strong> 15 hours total</p>
+                            <p><strong className="text-white">Cost:</strong> $0</p>
+                        </div>
 
-Use completely free AI tools to build skills:
-- ChatGPT Free (3.5): Unlimited access to AI writing and problem-solving
-- Claude Free: 20 messages per day (enough to learn)
-- Bing Chat: Free GPT-4 access through Microsoft Edge
-- Google Bard: Free, unlimited usage
-- Canva Free: AI image generation (10 images/day)
-- Leonardo.ai: 150 free AI images/day
-- Runway Free: 125 credits for AI video
+                        {/* Week 3 */}
+                        <div className="mb-6">
+                            <h5 className="text-xl font-bold text-green-300 mb-3">Week 3: Get Your First 3 Clients (15-20 hours, $0 invested)</h5>
+                            <p className="mb-3 font-semibold text-white">Where to find clients with zero investment:</p>
+                            <div className="space-y-4">
+                                <div>
+                                    <p className="font-semibold text-white mb-2">Method 1: Upwork (Free to join)</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 mb-2">
+                                        <li>Create profile showcasing your AI skills</li>
+                                        <li>Apply to 10 jobs/day (focus on content writing)</li>
+                                        <li>Pricing: Start at $50-$100 per article to get reviews</li>
+                                        <li>Expected: 2-3 clients in first 2 weeks</li>
+                                    </ul>
+                                    <div className="bg-zinc-800/50 rounded p-3">
+                                        <p className="text-sm italic"><strong>Sample proposal template:</strong> "Hi [Name], I specialize in AI-powered content creation that delivers [benefit]. I can create your [deliverable] in [timeframe] for [price]. Here's a sample of my work: [link]. Let's discuss how I can help your business."</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-2">Method 2: Direct Outreach (Free)</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 mb-2">
+                                        <li>Find 50 businesses in your niche (use Google)</li>
+                                        <li>Send personalized emails offering free AI content audit</li>
+                                        <li>Offer: "I'll analyze your website content with AI and send you 3 specific improvements - free."</li>
+                                        <li>Convert 10-20% to paying clients</li>
+                                    </ul>
+                                    <div className="bg-zinc-800/50 rounded p-3">
+                                        <p className="text-sm italic"><strong>Email template:</strong> "Hi [Name], I noticed [specific observation about their content]. I specialize in AI-powered content that [benefit]. I'd like to offer you a free content audit - I'll analyze 3 of your pages and send specific AI-powered improvement suggestions. No cost, no obligation. Interested?"</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-2">Method 3: Social Media (Free)</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 mb-2">
+                                        <li>Post daily on LinkedIn about AI and business</li>
+                                        <li>Engage with 20 potential clients per day</li>
+                                        <li>Share free AI tips and tools</li>
+                                        <li>DM warm connections offering services</li>
+                                    </ul>
+                                    <p className="font-semibold text-white mb-2">Content strategy:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>Monday: Share AI tip</li>
+                                        <li>Tuesday: Case study result</li>
+                                        <li>Wednesday: Free AI resource</li>
+                                        <li>Thursday: Client transformation</li>
+                                        <li>Friday: Tool recommendation</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-2">Method 4: Facebook Groups (Free)</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>Join 10 business owner groups</li>
+                                        <li>Provide value in discussions</li>
+                                        <li>Offer free AI audits in comments</li>
+                                        <li>DM interested people</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="bg-green-900/30 rounded p-3 mt-4">
+                                <p className="font-semibold text-white mb-2">Expected results after Week 3:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>3-5 clients at $500-$1,500 each</li>
+                                    <li>First month revenue: $2,000-$5,000</li>
+                                    <li>Time invested: 30-40 hours</li>
+                                </ul>
+                            </div>
+                        </div>
 
-Learn these skills:
-1. Prompt engineering (how to get great results from AI)
-2. AI content writing (blogs, social posts, emails)
-3. AI image creation (basic design skills)
-4. AI workflow building (connecting tools together)
+                        {/* Month 2 */}
+                        <div className="mb-6">
+                            <h5 className="text-xl font-bold text-green-300 mb-3">Month 2: Scale to $5K-$8K/month (still $0 invested)</h5>
+                            <p className="mb-3">Now that you have paying clients and cash flow:</p>
+                            <div className="space-y-4">
+                                <div>
+                                    <p className="font-semibold text-white mb-2">Option A: Keep everything free and scale with time</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>Add 3 more clients = $5,000-$7,500/month</li>
+                                        <li>Still use free AI tools</li>
+                                        <li>Reinvest zero, save all profit</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-2">Option B: Invest first earnings into paid tools</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>ChatGPT Plus ($20/mo): 10x faster results</li>
+                                        <li>Jasper AI ($49/mo): Better content quality</li>
+                                        <li>Grammarly Premium ($30/mo): Professional polish</li>
+                                    </ul>
+                                    <p className="mt-2"><strong className="text-white">Total investment:</strong> $99/month from earnings</p>
+                                    <p className="mt-2 font-semibold text-white">With paid tools, you can:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2">
+                                        <li>Deliver work 50% faster</li>
+                                        <li>Improve quality significantly</li>
+                                        <li>Take on 2x more clients</li>
+                                        <li>Charge higher rates ($800-$2,000 per client)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="bg-zinc-800/50 rounded p-4 mt-4">
+                                <p className="font-semibold text-white mb-3">The Math: Free vs. Paid Tools</p>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <p className="font-semibold text-green-400 mb-2">Free Tools Path:</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                            <li>5 clients × $800/month = $4,000/month</li>
+                                            <li>30 hours/week workload</li>
+                                            <li>$0 expenses</li>
+                                            <li className="font-semibold text-green-400">$4,000 net profit</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-green-400 mb-2">Paid Tools Path ($99/month):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                            <li>8 clients × $1,200/month = $9,600/month</li>
+                                            <li>30 hours/week workload (better tools = same time, more clients)</li>
+                                            <li>$99 expenses</li>
+                                            <li className="font-semibold text-green-400">$9,501 net profit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-Time investment: 2 hours/day for 7 days = 14 hours total
-Cost: $0
+                        {/* Case Study */}
+                        <div className="mb-6 bg-zinc-800/50 rounded p-4">
+                            <h5 className="text-xl font-bold text-green-300 mb-3">Real Case Study: Jessica's $0 to $7K in 90 Days</h5>
+                            <p className="mb-3">Jessica started with zero investment in January 2025:</p>
+                            <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                <li>Week 1-2: Learned ChatGPT Free and created portfolio</li>
+                                <li>Week 3-4: Got first 3 clients from Upwork ($1,200 first month)</li>
+                                <li>Month 2: Added 4 more clients ($4,500/month)</li>
+                                <li>Month 3: Raised rates, now earning $7,200/month</li>
+                                <li><strong className="text-white">Total investment:</strong> Still $0 (uses ChatGPT Free + Bard + Claude Free)</li>
+                            </ul>
+                            <p className="font-semibold text-white mb-2">Her exact strategy:</p>
+                            <ol className="list-decimal list-inside space-y-1 ml-2 mb-3">
+                                <li>Specializes in blog content for SaaS companies</li>
+                                <li>Uses ChatGPT to draft (30 min per article)</li>
+                                <li>Uses Claude to edit and improve (15 min per article)</li>
+                                <li>Uses Grammarly Free to polish (5 min per article)</li>
+                                <li>Delivers 1 article in 50 minutes total</li>
+                            </ol>
+                            <div className="bg-green-900/30 rounded p-3">
+                                <p><strong className="text-white">Pricing:</strong> $400 per article</p>
+                                <p><strong className="text-white">Output:</strong> 18 articles/month (24 hours of work)</p>
+                                <p><strong className="text-white">Revenue:</strong> $7,200/month</p>
+                                <p className="font-semibold text-green-400">Profit: $7,200/month (no expenses)</p>
+                            </div>
+                        </div>
 
-**Week 2: Choose Your Service & Create Portfolio (10-15 hours, $0 invested)**
+                        {/* Free Tools Stack */}
+                        <div className="mb-6">
+                            <h5 className="text-xl font-bold text-green-300 mb-3">Free Tools Stack for Each Business Model</h5>
+                            <div className="space-y-3">
+                                <div>
+                                    <p className="font-semibold text-white mb-2">AI Content Services:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Writing: ChatGPT Free, Claude Free, Bard</li>
+                                        <li>Editing: Grammarly Free, Hemingway Editor</li>
+                                        <li>Research: Perplexity Free, Bing Chat</li>
+                                        <li>Portfolio: Notion Free, Google Docs</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-2">AI Design Services:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Image generation: Leonardo.ai (150/day), Canva AI (10/day)</li>
+                                        <li>Editing: Canva Free, Photopea (Photoshop alternative)</li>
+                                        <li>Stock photos: Unsplash, Pexels</li>
+                                        <li>Portfolio: Behance Free, Dribbble Free</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-2">AI Social Media Management:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Content: ChatGPT Free, Bard</li>
+                                        <li>Design: Canva Free</li>
+                                        <li>Scheduling: Buffer Free (10 posts), Later Free (30 posts)</li>
+                                        <li>Analytics: Native platform analytics (free)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-2">AI Consulting:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Research: ChatGPT Free, Perplexity</li>
+                                        <li>Proposals: Google Docs, Notion</li>
+                                        <li>Presentations: Canva Free, Google Slides</li>
+                                        <li>Project management: Trello Free, Asana Free</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-Pick ONE service to offer (easiest to start):
-**AI Content Writing Services** - Highest demand, fastest to monetize
+                        {/* 90-Day Roadmap */}
+                        <div className="mb-6">
+                            <h5 className="text-xl font-bold text-green-300 mb-3">The 90-Day $0 to $5K Roadmap</h5>
+                            <div className="space-y-3">
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="font-semibold text-white mb-2">Days 1-14: Learn & Build ($0)</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Hours: 2-3 per day</li>
+                                        <li>Focus: Master free AI tools</li>
+                                        <li>Output: Portfolio with 5-10 samples</li>
+                                        <li>Investment: $0</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="font-semibold text-white mb-2">Days 15-30: First Clients ($500-$2,000)</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Hours: 4-5 per day</li>
+                                        <li>Focus: Client acquisition</li>
+                                        <li>Output: 2-5 paying clients</li>
+                                        <li>Investment: $0</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="font-semibold text-white mb-2">Days 31-60: Scale Revenue ($3,000-$5,000)</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Hours: 5-6 per day (now full-time)</li>
+                                        <li>Focus: Deliver excellent work, get testimonials</li>
+                                        <li>Output: 5-8 clients total</li>
+                                        <li>Investment: $0 (or reinvest $50-100 in tools)</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="font-semibold text-white mb-2">Days 61-90: Optimize & Grow ($5,000-$8,000)</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Hours: 6-7 per day</li>
+                                        <li>Focus: Raise rates, streamline processes</li>
+                                        <li>Output: 8-10 clients or 5-6 high-paying clients</li>
+                                        <li>Investment: $100-200 in paid tools (optional)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-Create your portfolio with free tools:
-1. Use ChatGPT to write 3 sample blog posts in your niche
-2. Use Canva Free to design portfolio presentation
-3. Create free website with Carrd.co or Notion (free)
-4. Set up free email with Gmail
-5. Create LinkedIn profile showcasing AI skills
+                        {/* Success Factors */}
+                        <div className="mb-6">
+                            <p className="font-semibold text-white mb-3">Critical Success Factors for $0 Start:</p>
+                            <ol className="list-decimal list-inside space-y-2 ml-2">
+                                <li><strong className="text-white">Choose the right service:</strong> Content writing has lowest barrier to entry</li>
+                                <li><strong className="text-white">Focus on one niche:</strong> Don't try to serve everyone</li>
+                                <li><strong className="text-white">Deliver exceptional quality:</strong> Use AI to exceed expectations</li>
+                                <li><strong className="text-white">Build social proof fast:</strong> Get testimonials from first clients</li>
+                                <li><strong className="text-white">Reinvest smartly:</strong> Only buy tools that directly increase revenue</li>
+                            </ol>
+                        </div>
 
-Portfolio pieces to create:
-- 3 blog posts (1,000-2,000 words each)
-- 5 social media post examples
-- 1 email sequence (5 emails)
-- 1 product description set (10 descriptions)
+                        {/* Mistakes */}
+                        <div className="mb-6">
+                            <p className="font-semibold text-white mb-3">Common Mistakes to Avoid:</p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <p className="text-red-400 font-semibold mb-2">❌ Don't:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Buy tools before getting clients (waste of money)</li>
+                                        <li>Try to offer too many services (spreads you thin)</li>
+                                        <li>Underprice to get clients (attracts bad clients)</li>
+                                        <li>Not ask for testimonials (miss social proof)</li>
+                                        <li>Spend on ads/marketing (not needed early)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p className="text-green-400 font-semibold mb-2">✅ Do:</p>
+                                    <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                        <li>Master free tools first</li>
+                                        <li>Pick one service and dominate</li>
+                                        <li>Price based on value delivered</li>
+                                        <li>Get testimonials from every client</li>
+                                        <li>Use organic outreach methods</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-Use ChatGPT prompts like:
-"Write a 1,500-word blog post about [topic] for [audience]. Make it engaging, SEO-optimized, and include actionable tips."
+                        {/* When to Invest */}
+                        <div className="mb-6">
+                            <p className="font-semibold text-white mb-3">When to Invest Money:</p>
+                            <p className="mb-3">Only invest when you have:</p>
+                            <ol className="list-decimal list-inside space-y-1 ml-2 mb-3">
+                                <li>Paying clients (consistent revenue)</li>
+                                <li>Clear ROI (tool saves time or increases revenue)</li>
+                                <li>Specific pain point (free tools are limiting you)</li>
+                            </ol>
+                            <p className="font-semibold text-white mb-2">First tools to buy (in order):</p>
+                            <ol className="list-decimal list-inside space-y-1 ml-2">
+                                <li>ChatGPT Plus ($20/mo) - when handling 5+ clients</li>
+                                <li>Grammarly Premium ($30/mo) - when quality matters for high-paying clients</li>
+                                <li>Jasper AI ($49/mo) - when producing 50+ pieces/month</li>
+                                <li>Canva Pro ($13/mo) - when creating lots of visuals</li>
+                            </ol>
+                        </div>
 
-Then edit with Claude:
-"Edit this blog post for clarity, tone, and engagement. Fix any errors and improve the flow."
-
-Time investment: 15 hours total
-Cost: $0
-
-**Week 3: Get Your First 3 Clients (15-20 hours, $0 invested)**
-
-Where to find clients with zero investment:
-
-**Method 1: Upwork (Free to join)**
-- Create profile showcasing your AI skills
-- Apply to 10 jobs/day (focus on content writing)
-- Pricing: Start at $50-$100 per article to get reviews
-- Expected: 2-3 clients in first 2 weeks
-
-Sample proposal template (use ChatGPT to customize):
-"Hi [Name], I specialize in AI-powered content creation that delivers [benefit]. I can create your [deliverable] in [timeframe] for [price]. Here's a sample of my work: [link]. Let's discuss how I can help your business."
-
-**Method 2: Direct Outreach (Free)**
-- Find 50 businesses in your niche (use Google)
-- Send personalized emails offering free AI content audit
-- Offer: "I'll analyze your website content with AI and send you 3 specific improvements - free."
-- Convert 10-20% to paying clients
-
-Email template:
-"Hi [Name], I noticed [specific observation about their content]. I specialize in AI-powered content that [benefit]. I'd like to offer you a free content audit - I'll analyze 3 of your pages and send specific AI-powered improvement suggestions. No cost, no obligation. Interested?"
-
-**Method 3: Social Media (Free)**
-- Post daily on LinkedIn about AI and business
-- Engage with 20 potential clients per day
-- Share free AI tips and tools
-- DM warm connections offering services
-
-Content strategy:
-- Monday: Share AI tip
-- Tuesday: Case study result
-- Wednesday: Free AI resource
-- Thursday: Client transformation
-- Friday: Tool recommendation
-
-**Method 4: Facebook Groups (Free)**
-- Join 10 business owner groups
-- Provide value in discussions
-- Offer free AI audits in comments
-- DM interested people
-
-Expected results after Week 3:
-- 3-5 clients at $500-$1,500 each
-- First month revenue: $2,000-$5,000
-- Time invested: 30-40 hours
-
-**Month 2: Scale to $5K-$8K/month (still $0 invested)**
-
-Now that you have paying clients and cash flow:
-
-**Option A: Keep everything free and scale with time**
-- Add 3 more clients = $5,000-$7,500/month
-- Still use free AI tools
-- Reinvest zero, save all profit
-
-**Option B: Invest first earnings into paid tools**
-- ChatGPT Plus ($20/mo): 10x faster results
-- Jasper AI ($49/mo): Better content quality
-- Grammarly Premium ($30/mo): Professional polish
-Total investment: $99/month from earnings
-
-With paid tools, you can:
-- Deliver work 50% faster
-- Improve quality significantly
-- Take on 2x more clients
-- Charge higher rates ($800-$2,000 per client)
-
-**The Math: Free vs. Paid Tools**
-
-**Free Tools Path:**
-- 5 clients × $800/month = $4,000/month
-- 30 hours/week workload
-- $0 expenses
-- $4,000 net profit
-
-**Paid Tools Path ($99/month):**
-- 8 clients × $1,200/month = $9,600/month
-- 30 hours/week workload (better tools = same time, more clients)
-- $99 expenses
-- $9,501 net profit
-
-**Real Case Study: Jessica's $0 to $7K in 90 Days**
-
-Jessica started with zero investment in January 2025:
-
-Week 1-2: Learned ChatGPT Free and created portfolio
-Week 3-4: Got first 3 clients from Upwork ($1,200 first month)
-Month 2: Added 4 more clients ($4,500/month)
-Month 3: Raised rates, now earning $7,200/month
-Total investment: Still $0 (uses ChatGPT Free + Bard + Claude Free)
-
-Her exact strategy:
-1. Specializes in blog content for SaaS companies
-2. Uses ChatGPT to draft (30 min per article)
-3. Uses Claude to edit and improve (15 min per article)
-4. Uses Grammarly Free to polish (5 min per article)
-5. Delivers 1 article in 50 minutes total
-
-Pricing: $400 per article
-Output: 18 articles/month (24 hours of work)
-Revenue: $7,200/month
-Profit: $7,200/month (no expenses)
-
-**Free Tools Stack for Each Business Model**
-
-**AI Content Services:**
-- Writing: ChatGPT Free, Claude Free, Bard
-- Editing: Grammarly Free, Hemingway Editor
-- Research: Perplexity Free, Bing Chat
-- Portfolio: Notion Free, Google Docs
-
-**AI Design Services:**
-- Image generation: Leonardo.ai (150/day), Canva AI (10/day)
-- Editing: Canva Free, Photopea (Photoshop alternative)
-- Stock photos: Unsplash, Pexels
-- Portfolio: Behance Free, Dribbble Free
-
-**AI Social Media Management:**
-- Content: ChatGPT Free, Bard
-- Design: Canva Free
-- Scheduling: Buffer Free (10 posts), Later Free (30 posts)
-- Analytics: Native platform analytics (free)
-
-**AI Consulting:**
-- Research: ChatGPT Free, Perplexity
-- Proposals: Google Docs, Notion
-- Presentations: Canva Free, Google Slides
-- Project management: Trello Free, Asana Free
-
-**The 90-Day $0 to $5K Roadmap**
-
-**Days 1-14: Learn & Build ($0)**
-- Hours: 2-3 per day
-- Focus: Master free AI tools
-- Output: Portfolio with 5-10 samples
-- Investment: $0
-
-**Days 15-30: First Clients ($500-$2,000)**
-- Hours: 4-5 per day
-- Focus: Client acquisition
-- Output: 2-5 paying clients
-- Investment: $0
-
-**Days 31-60: Scale Revenue ($3,000-$5,000)**
-- Hours: 5-6 per day (now full-time)
-- Focus: Deliver excellent work, get testimonials
-- Output: 5-8 clients total
-- Investment: $0 (or reinvest $50-100 in tools)
-
-**Days 61-90: Optimize & Grow ($5,000-$8,000)**
-- Hours: 6-7 per day
-- Focus: Raise rates, streamline processes
-- Output: 8-10 clients or 5-6 high-paying clients
-- Investment: $100-200 in paid tools (optional)
-
-**Critical Success Factors for $0 Start:**
-
-1. **Choose the right service**: Content writing has lowest barrier to entry
-2. **Focus on one niche**: Don't try to serve everyone
-3. **Deliver exceptional quality**: Use AI to exceed expectations
-4. **Build social proof fast**: Get testimonials from first clients
-5. **Reinvest smartly**: Only buy tools that directly increase revenue
-
-**Common Mistakes to Avoid:**
-
-❌ Buying tools before getting clients (waste of money)
-❌ Trying to offer too many services (spreads you thin)
-❌ Underpricing to get clients (attracts bad clients)
-❌ Not asking for testimonials (miss social proof)
-❌ Spending on ads/marketing (not needed early)
-
-✅ Master free tools first
-✅ Pick one service and dominate
-✅ Price based on value delivered
-✅ Get testimonials from every client
-✅ Use organic outreach methods
-
-**When to Invest Money:**
-
-Only invest when you have:
-1. Paying clients (consistent revenue)
-2. Clear ROI (tool saves time or increases revenue)
-3. Specific pain point (free tools are limiting you)
-
-First tools to buy (in order):
-1. ChatGPT Plus ($20/mo) - when handling 5+ clients
-2. Grammarly Premium ($30/mo) - when quality matters for high-paying clients
-3. Jasper AI ($49/mo) - when producing 50+ pieces/month
-4. Canva Pro ($13/mo) - when creating lots of visuals
-
-**The Bottom Line:**
-
-You can absolutely start an AI business with $0 and reach $5K/month in 60-90 days. The free AI tools available in 2026 are powerful enough to deliver professional results. Your limiting factors are time and skill, not money.
-
-Start today with free tools, get your first client within 2 weeks, and scale from there. Once you have $2K-$3K/month in revenue, then consider investing $50-$100/month in paid tools to accelerate growth.
-
-The key is taking action with what's available now, not waiting until you can afford expensive tools. The best time to start was yesterday. The second best time is today.`}</p>
+                        {/* Bottom Line */}
+                        <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 rounded p-4 border border-green-500/30">
+                            <p className="font-semibold text-white mb-3">The Bottom Line:</p>
+                            <p className="mb-3">You can absolutely start an AI business with $0 and reach $5K/month in 60-90 days. The free AI tools available in 2026 are powerful enough to deliver professional results. Your limiting factors are time and skill, not money.</p>
+                            <p className="mb-3">Start today with free tools, get your first client within 2 weeks, and scale from there. Once you have $2K-$3K/month in revenue, then consider investing $50-$100/month in paid tools to accelerate growth.</p>
+                            <p className="font-semibold text-green-400 italic">The key is taking action with what's available now, not waiting until you can afford expensive tools. The best time to start was yesterday. The second best time is today.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
