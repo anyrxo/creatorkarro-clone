@@ -1465,373 +1465,534 @@ export default function MonetizeWithAI() {
 
             <div className="bg-zinc-800 rounded-xl p-6">
                 <h3 className="text-2xl font-bold text-pink-400 mb-4">What tools and tech stack do I need for each AI monetization method?</h3>
-                <div className="text-gray-300 space-y-4">
-                    <p className="leading-relaxed">{`**Complete tech stack breakdown for every AI business model in 2026.** After spending $15,000+ testing 100+ AI tools, here are the exact stacks that actually work:
-
-**STACK #1: AI Content Services ($50-$200/month)**
-
-**Essential Tools (Beginner Stack - $50/month):**
-- ChatGPT Plus: $20/month (primary writing tool)
-- Grammarly Free: $0 (basic editing)
-- Google Docs: $0 (writing platform)
-- Gmail: $0 (client communication)
-
-What you can deliver: Blog posts, social media content, emails, basic product descriptions
-Monthly capacity: 30-50 pieces of content
-Client capacity: 3-5 clients at $800-$1,500 each
-
-**Professional Stack ($150/month):**
-- ChatGPT Plus: $20/month (drafting)
-- Claude Pro: $20/month (editing and refinement)
-- Jasper AI: $49/month (brand voice consistency)
-- Grammarly Premium: $30/month (advanced editing)
-- Hemingway Editor: $20 (one-time, readability)
-- SurferSEO: $59/month (SEO optimization)
-- Copyscape: $10/month (plagiarism checking)
-
-What you can deliver: Premium blog posts, SEO content, sales copy, technical writing
-Monthly capacity: 60-100 pieces of content
-Client capacity: 8-12 clients at $1,500-$3,000 each
-
-**Premium Stack ($300/month):**
-Add to Professional Stack:
-- Frase.io: $45/month (content briefs)
-- Clearscope: $170/month (advanced SEO)
-- MarketMuse: $149/month (content strategy)
-
-Revenue potential: $15K-$30K/month
-Best for: Established content agencies serving enterprise clients
-
-**Tool Workflows:**
-
-Workflow for blog posts:
-1. SurferSEO: Generate content brief (10 min)
-2. ChatGPT: Write first draft using brief (15 min)
-3. Claude: Edit for clarity and engagement (10 min)
-4. Grammarly: Polish grammar and style (5 min)
-5. Copyscape: Check originality (2 min)
-Total time: 42 minutes per 1,500-word article
-
-**STACK #2: AI Automation Consulting ($200-$800/month)**
-
-**Essential Tools (Beginner Stack - $200/month):**
-- ChatGPT Plus: $20/month (planning and problem-solving)
-- Make.com: $9/month (workflow automation, 1,000 operations)
-- Zapier Free: $0 (basic integrations)
-- Notion: $10/month (project documentation)
-- Loom: $12.50/month (demo videos)
-
-What you can deliver: Basic chatbots, email automation, simple workflows
-Monthly capacity: 3-5 small projects
-Revenue potential: $5K-$15K/month
-
-**Professional Stack ($500/month):**
-- ChatGPT Plus + API: $20 + usage (custom implementations)
-- Claude API: Usage-based (~$50/month)
-- Make.com Pro: $16/month (10,000 operations)
-- Zapier Professional: $49/month (premium apps)
-- Airtable Plus: $20/month (database automation)
-- Typeform Plus: $29/month (form automation)
-- ManyChat Pro: $15/month (chatbot building)
-- Voiceflow Pro: $50/month (advanced chatbots)
-- n8n: $20/month (advanced automation)
-
-What you can deliver: Advanced chatbots, complex workflows, AI integrations, custom solutions
-Monthly capacity: 5-8 medium projects or 2-3 large projects
-Revenue potential: $15K-$50K/month
-
-**Premium Stack ($1,200/month):**
-Add to Professional Stack:
-- Retool: $50/month (internal tools)
-- Bubble: $29/month (no-code apps)
-- Xano: $45/month (backend database)
-- Twilio: $50/month (SMS/phone automation)
-- AWS/Google Cloud: $100-300/month (hosting, APIs)
-
-Revenue potential: $30K-$100K/month
-Best for: Automation agencies serving enterprise clients
-
-**Tool Workflows:**
-
-Workflow for chatbot implementation:
-1. ChatGPT: Design conversation flow (1 hour)
-2. Voiceflow: Build and test chatbot (4 hours)
-3. Zapier: Connect to client's CRM (2 hours)
-4. Make.com: Set up backend workflows (3 hours)
-5. Loom: Create training videos (1 hour)
-Total project time: 11 hours, charge $3,000-$5,000
-
-**STACK #3: AI Image & Video Production ($110-$400/month)**
-
-**Essential Tools (Beginner Stack - $110/month):**
-- Midjourney Basic: $10/month (200 images)
-- Canva Pro: $13/month (design and editing)
-- Leonardo.ai Premium: $12/month (500 images)
-- RunwayML Basic: $12/month (125 credits)
-- CapCut Free: $0 (video editing)
-- ElevenLabs: $5/month (voice generation)
-
-What you can deliver: Social media graphics, product photos, basic videos, AI art
-Monthly capacity: 40-60 client projects
-Revenue potential: $4K-$12K/month
-
-**Professional Stack ($250/month):**
-- Midjourney Standard: $30/month (unlimited relaxed, 15hr fast)
-- Stable Diffusion via Replicate: $50/month (custom models)
-- Adobe Creative Cloud: $55/month (Photoshop, Premiere)
-- RunwayML Standard: $35/month (625 credits)
-- ElevenLabs Creator: $22/month (better voices)
-- Pictory Pro: $59/month (AI video creation)
-- Descript Pro: $24/month (video editing with AI)
-
-What you can deliver: High-end visuals, AI influencers, commercial videos, brand campaigns
-Monthly capacity: 60-100 projects
-Revenue potential: $10K-$25K/month
-
-**Premium Stack ($500/month):**
-Add to Professional Stack:
-- Midjourney Pro: $60/month (unlimited fast generation)
-- DaVinci Resolve Studio: $295 (one-time, professional video editing)
-- Topaz Labs Suite: $200 (one-time, AI upscaling and enhancement)
-- Wonder Studio: $25/month (AI VFX)
-- Kaiber: $15/month (AI animation)
-
-Revenue potential: $15K-$40K/month
-Best for: AI creative studios serving high-end clients
-
-**Tool Workflows:**
-
-Workflow for product photography:
-1. Client sends product photo (they provide)
-2. Midjourney: Generate background scenes (20 min, 10 variations)
-3. Photoshop: Composite product into scenes (40 min)
-4. Topaz Labs: Upscale and enhance (10 min)
-Total time: 70 minutes, charge $150-$200 per final image
-
-Workflow for social media video:
-1. ChatGPT: Write video script (10 min)
-2. ElevenLabs: Generate voiceover (5 min)
-3. Midjourney: Create visual assets (30 min)
-4. Pictory: Combine into video (20 min)
-5. CapCut: Final editing and effects (15 min)
-Total time: 80 minutes, charge $500-$800 per video
-
-**STACK #4: AI Course Creation ($150-$500/month)**
-
-**Essential Tools (Beginner Stack - $150/month):**
-- ChatGPT Plus: $20/month (course content creation)
-- Canva Pro: $13/month (course design)
-- Loom: $12.50/month (screen recording)
-- Google Workspace: $6/month (docs, sheets, slides)
-- ConvertKit Free: $0 (email, up to 1,000 subscribers)
-- Gumroad Free: $0 (selling platform, 10% fee)
-- Notion: $10/month (course planning)
-
-What you can deliver: Mini-courses, digital products, basic courses
-Course price range: $27-$297
-Revenue potential: $2K-$10K/month
-
-**Professional Stack ($400/month):**
-- ChatGPT Plus: $20/month (content)
-- Claude Pro: $20/month (editing)
-- Descript Pro: $24/month (video editing)
-- ElevenLabs Creator: $22/month (AI voiceovers)
-- Canva Pro: $13/month (graphics)
-- Teachable: $119/month (course platform)
-- ConvertKit Creator: $29/month (email marketing)
-- ClickFunnels: $147/month (sales funnels)
-- Kajabi: $149/month (all-in-one alternative)
-
-What you can deliver: Professional courses, membership sites, coaching programs
-Course price range: $297-$1,997
-Revenue potential: $10K-$50K/month
-
-**Premium Stack ($800/month):**
-Add to Professional Stack:
-- Circle.so: $49/month (community)
-- Riverside.fm: $24/month (high-quality video recording)
-- Synthesia: $30/month (AI avatar videos)
-- Jasper AI: $49/month (sales copy)
-
-Revenue potential: $20K-$100K+/month
-Best for: Course creators building education empires
-
-**Tool Workflows:**
-
-Workflow for creating a course:
-1. ChatGPT: Outline complete course curriculum (2 hours)
-2. ChatGPT: Write scripts for 20 lessons (8 hours)
-3. Descript: Record and edit video lessons (20 hours)
-4. Canva: Design course graphics and materials (6 hours)
-5. Teachable: Upload and organize content (4 hours)
-6. ConvertKit: Set up email sequences (3 hours)
-Total creation time: 43 hours, sell for $497-$997
-
-**STACK #5: AI SaaS Development ($500-$5,000/month)**
-
-**Essential Tools (MVP Stack - $500/month):**
-- ChatGPT Plus + API: $20 + $100 usage
-- Claude API: $50-100/month usage
-- Vercel Pro: $20/month (hosting)
-- Supabase Pro: $25/month (database)
-- Stripe: $0 base (2.9% + 30¢ per transaction)
-- GitHub: $4/month (code repository)
-- Linear: $8/month per user (project management)
-
-What you can deliver: Simple AI tools, MVPs, beta products
-User capacity: 50-200 users
-Revenue potential: $1K-$10K/month MRR
-
-**Professional Stack ($2,000/month):**
-- GPT-4 API: $500-1,000/month (depending on usage)
-- Claude API: $200-400/month
-- AWS/Google Cloud: $300-500/month (hosting, CDN, storage)
-- MongoDB Atlas: $57/month (database)
-- Auth0: $35/month (authentication)
-- Stripe: Transaction fees
-- SendGrid: $20/month (transactional emails)
-- Mixpanel: $89/month (analytics)
-- Intercom: $74/month (customer support)
-
-What you can deliver: Professional AI SaaS products
-User capacity: 200-1,000 users
-Revenue potential: $10K-$50K/month MRR
-
-**Premium Stack ($5,000-15,000/month):**
-Add to Professional Stack:
-- Enterprise APIs: $2,000-5,000/month
-- AWS Enterprise: $1,000-3,000/month
-- Dedicated support tools: $500-1,000/month
-- Advanced analytics: $500-1,000/month
-- Security and compliance: $500-1,000/month
-
-User capacity: 1,000-10,000+ users
-Revenue potential: $50K-$500K+/month MRR
-
-**Tool Workflows:**
-
-Workflow for launching AI SaaS:
-1. ChatGPT: Define product spec and features (4 hours)
-2. Cursor/VS Code: Write code with AI assistance (80 hours)
-3. Supabase: Set up database and auth (8 hours)
-4. Vercel: Deploy and configure (4 hours)
-5. Stripe: Set up payments (4 hours)
-Total development time: 100 hours, charge $30-100/month per user
-
-**STACK #6: YouTube Automation ($120-$300/month)**
-
-**Essential Tools (Beginner Stack - $120/month):**
-- ChatGPT Plus: $20/month (scripts)
-- ElevenLabs Starter: $5/month (AI voice)
-- Pictory Standard: $23/month (video creation)
-- CapCut Free: $0 (editing)
-- Canva Pro: $13/month (thumbnails)
-- TubeBuddy Pro: $9/month (YouTube optimization)
-- VidIQ Basic: $0 (analytics)
-
-What you can deliver: Faceless YouTube videos, 1-2 videos/day
-Channel potential: 1-2 channels
-Revenue potential: $1K-$5K/month per channel
-
-**Professional Stack ($300/month):**
-- ChatGPT Plus: $20/month
-- ElevenLabs Creator: $22/month (better voices)
-- Pictory Premium: $59/month (more video credits)
-- Descript Pro: $24/month (advanced editing)
-- Midjourney Basic: $10/month (custom visuals)
-- Artlist: $14.99/month (stock footage and music)
-- VidIQ Pro: $39/month (advanced analytics)
-- Thumbnail Blaster: $67 (one-time, thumbnail creation)
-
-What you can deliver: High-quality faceless videos, 2-3 videos/day
-Channel potential: 3-5 channels
-Revenue potential: $5K-$20K/month total
-
-**Tool Workflows:**
-
-Workflow for YouTube video:
-1. ChatGPT: Research topic and write script (20 min)
-2. ElevenLabs: Generate voiceover (5 min)
-3. Pictory: Create video from script (30 min)
-4. CapCut: Final edits and effects (20 min)
-5. Canva: Design thumbnail (10 min)
-6. TubeBuddy: Optimize title and tags (10 min)
-Total time: 95 minutes per video, publish daily
-
-**STACK #7: AI Newsletter ($100-$400/month)**
-
-**Essential Tools (Beginner Stack - $100/month):**
-- ChatGPT Plus: $20/month (content)
-- ConvertKit Creator: $29/month (email, up to 1,000 subs)
-- Canva Pro: $13/month (graphics)
-- Feedly Pro: $6/month (content curation)
-- Notion: $10/month (content planning)
-
-Subscriber capacity: Up to 1,000
-Revenue potential: $500-$2K/month
-
-**Professional Stack ($300/month):**
-- ChatGPT Plus: $20/month
-- Claude Pro: $20/month
-- ConvertKit Creator Pro: $59/month (up to 3,000 subs)
-- beehiiv Scale: $99/month (newsletter platform)
-- Canva Pro: $13/month
-- Perplexity Pro: $20/month (research)
-- SparkToro: $50/month (audience research)
-
-Subscriber capacity: Up to 10,000
-Revenue potential: $3K-$15K/month
-
-**Tool Workflows:**
-
-Workflow for daily newsletter:
-1. Perplexity: Research latest AI news (15 min)
-2. ChatGPT: Write newsletter draft (20 min)
-3. Claude: Edit and refine (10 min)
-4. Canva: Create header graphic (10 min)
-5. beehiiv: Format and schedule (10 min)
-Total time: 65 minutes per issue
-
-**TOTAL INVESTMENT BY BUSINESS MODEL:**
-
-Starter Investment (Month 1):
-- AI Content: $50/month
-- AI Consulting: $200/month
-- AI Design: $110/month
-- AI Courses: $150/month
-- AI SaaS: $500/month
-- YouTube: $120/month
-- Newsletter: $100/month
-
-Professional Investment (Month 6+):
-- AI Content: $150-300/month
-- AI Consulting: $500-800/month
-- AI Design: $250-400/month
-- AI Courses: $400-800/month
-- AI SaaS: $2,000-5,000/month
-- YouTube: $300/month
-- Newsletter: $300-400/month
-
-**When to Upgrade Your Stack:**
-
-Upgrade when you hit these revenue milestones:
-- $3K/month: Add one paid tool ($20-50/month)
-- $5K/month: Upgrade to professional stack ($200-400/month)
-- $10K/month: Add premium tools ($500-800/month)
-- $20K/month: Full premium stack ($1,000-2,000/month)
-
-**ROI Calculation:**
-
-Example: Content Services
-- Beginner stack: $50/month investment
-- Revenue: $5,000/month
-- ROI: 10,000%
-
-- Professional stack: $150/month investment
-- Revenue: $15,000/month
-- ROI: 10,000%
-
-The key is matching your tool investment to your revenue level. Start lean, upgrade as you grow.`}</p>
+                <div className="text-gray-300 space-y-6">
+                    <p className="text-lg font-semibold text-white mb-6">Complete tech stack breakdown for every AI business model in 2026. After spending $15,000+ testing 100+ AI tools, here are the exact stacks that actually work:</p>
+
+                    {/* STACK #1 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-blue-500">
+                        <h4 className="text-2xl font-bold text-blue-400 mb-4">STACK #1: AI Content Services ($50-$200/month)</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <h5 className="text-xl font-bold text-blue-300 mb-3">Essential Tools (Beginner Stack - $50/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus: $20/month (primary writing tool)</li>
+                                    <li>Grammarly Free: $0 (basic editing)</li>
+                                    <li>Google Docs: $0 (writing platform)</li>
+                                    <li>Gmail: $0 (client communication)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Blog posts, social media content, emails, basic product descriptions</p>
+                                    <p className="text-sm"><strong>Monthly capacity:</strong> 30-50 pieces of content</p>
+                                    <p className="text-sm"><strong>Client capacity:</strong> 3-5 clients at $800-$1,500 each</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-blue-300 mb-3">Professional Stack ($150/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus: $20/month (drafting)</li>
+                                    <li>Claude Pro: $20/month (editing and refinement)</li>
+                                    <li>Jasper AI: $49/month (brand voice consistency)</li>
+                                    <li>Grammarly Premium: $30/month (advanced editing)</li>
+                                    <li>Hemingway Editor: $20 (one-time, readability)</li>
+                                    <li>SurferSEO: $59/month (SEO optimization)</li>
+                                    <li>Copyscape: $10/month (plagiarism checking)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Premium blog posts, SEO content, sales copy, technical writing</p>
+                                    <p className="text-sm"><strong>Monthly capacity:</strong> 60-100 pieces of content</p>
+                                    <p className="text-sm"><strong>Client capacity:</strong> 8-12 clients at $1,500-$3,000 each</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-blue-300 mb-3">Premium Stack ($300/month):</h5>
+                                <p className="mb-2">Add to Professional Stack:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Frase.io: $45/month (content briefs)</li>
+                                    <li>Clearscope: $170/month (advanced SEO)</li>
+                                    <li>MarketMuse: $149/month (content strategy)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm font-semibold text-green-400"><strong>Revenue potential:</strong> $15K-$30K/month</p>
+                                    <p className="text-sm"><strong>Best for:</strong> Established content agencies serving enterprise clients</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-blue-300 mb-3">Tool Workflows:</h5>
+                                <p className="font-semibold text-white mb-2">Workflow for blog posts:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>SurferSEO: Generate content brief (10 min)</li>
+                                    <li>ChatGPT: Write first draft using brief (15 min)</li>
+                                    <li>Claude: Edit for clarity and engagement (10 min)</li>
+                                    <li>Grammarly: Polish grammar and style (5 min)</li>
+                                    <li>Copyscape: Check originality (2 min)</li>
+                                </ol>
+                                <p className="mt-2 font-semibold text-green-400">Total time: 42 minutes per 1,500-word article</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* STACK #2 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-purple-500">
+                        <h4 className="text-2xl font-bold text-purple-400 mb-4">STACK #2: AI Automation Consulting ($200-$800/month)</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <h5 className="text-xl font-bold text-purple-300 mb-3">Essential Tools (Beginner Stack - $200/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus: $20/month (planning and problem-solving)</li>
+                                    <li>Make.com: $9/month (workflow automation, 1,000 operations)</li>
+                                    <li>Zapier Free: $0 (basic integrations)</li>
+                                    <li>Notion: $10/month (project documentation)</li>
+                                    <li>Loom: $12.50/month (demo videos)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Basic chatbots, email automation, simple workflows</p>
+                                    <p className="text-sm"><strong>Monthly capacity:</strong> 3-5 small projects</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $5K-$15K/month</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-purple-300 mb-3">Professional Stack ($500/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus + API: $20 + usage (custom implementations)</li>
+                                    <li>Claude API: Usage-based (~$50/month)</li>
+                                    <li>Make.com Pro: $16/month (10,000 operations)</li>
+                                    <li>Zapier Professional: $49/month (premium apps)</li>
+                                    <li>Airtable Plus: $20/month (database automation)</li>
+                                    <li>Typeform Plus: $29/month (form automation)</li>
+                                    <li>ManyChat Pro: $15/month (chatbot building)</li>
+                                    <li>Voiceflow Pro: $50/month (advanced chatbots)</li>
+                                    <li>n8n: $20/month (advanced automation)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Advanced chatbots, complex workflows, AI integrations, custom solutions</p>
+                                    <p className="text-sm"><strong>Monthly capacity:</strong> 5-8 medium projects or 2-3 large projects</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $15K-$50K/month</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-purple-300 mb-3">Premium Stack ($1,200/month):</h5>
+                                <p className="mb-2">Add to Professional Stack:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Retool: $50/month (internal tools)</li>
+                                    <li>Bubble: $29/month (no-code apps)</li>
+                                    <li>Xano: $45/month (backend database)</li>
+                                    <li>Twilio: $50/month (SMS/phone automation)</li>
+                                    <li>AWS/Google Cloud: $100-300/month (hosting, APIs)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm font-semibold text-green-400"><strong>Revenue potential:</strong> $30K-$100K/month</p>
+                                    <p className="text-sm"><strong>Best for:</strong> Automation agencies serving enterprise clients</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-purple-300 mb-3">Tool Workflows:</h5>
+                                <p className="font-semibold text-white mb-2">Workflow for chatbot implementation:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>ChatGPT: Design conversation flow (1 hour)</li>
+                                    <li>Voiceflow: Build and test chatbot (4 hours)</li>
+                                    <li>Zapier: Connect to client's CRM (2 hours)</li>
+                                    <li>Make.com: Set up backend workflows (3 hours)</li>
+                                    <li>Loom: Create training videos (1 hour)</li>
+                                </ol>
+                                <p className="mt-2 font-semibold text-green-400">Total project time: 11 hours, charge $3,000-$5,000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* STACK #3 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-pink-500">
+                        <h4 className="text-2xl font-bold text-pink-400 mb-4">STACK #3: AI Image & Video Production ($110-$400/month)</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <h5 className="text-xl font-bold text-pink-300 mb-3">Essential Tools (Beginner Stack - $110/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Midjourney Basic: $10/month (200 images)</li>
+                                    <li>Canva Pro: $13/month (design and editing)</li>
+                                    <li>Leonardo.ai Premium: $12/month (500 images)</li>
+                                    <li>RunwayML Basic: $12/month (125 credits)</li>
+                                    <li>CapCut Free: $0 (video editing)</li>
+                                    <li>ElevenLabs: $5/month (voice generation)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Social media graphics, product photos, basic videos, AI art</p>
+                                    <p className="text-sm"><strong>Monthly capacity:</strong> 40-60 client projects</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $4K-$12K/month</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-pink-300 mb-3">Professional Stack ($250/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Midjourney Standard: $30/month (unlimited relaxed, 15hr fast)</li>
+                                    <li>Stable Diffusion via Replicate: $50/month (custom models)</li>
+                                    <li>Adobe Creative Cloud: $55/month (Photoshop, Premiere)</li>
+                                    <li>RunwayML Standard: $35/month (625 credits)</li>
+                                    <li>ElevenLabs Creator: $22/month (better voices)</li>
+                                    <li>Pictory Pro: $59/month (AI video creation)</li>
+                                    <li>Descript Pro: $24/month (video editing with AI)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> High-end visuals, AI influencers, commercial videos, brand campaigns</p>
+                                    <p className="text-sm"><strong>Monthly capacity:</strong> 60-100 projects</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $10K-$25K/month</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-pink-300 mb-3">Premium Stack ($500/month):</h5>
+                                <p className="mb-2">Add to Professional Stack:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Midjourney Pro: $60/month (unlimited fast generation)</li>
+                                    <li>DaVinci Resolve Studio: $295 (one-time, professional video editing)</li>
+                                    <li>Topaz Labs Suite: $200 (one-time, AI upscaling and enhancement)</li>
+                                    <li>Wonder Studio: $25/month (AI VFX)</li>
+                                    <li>Kaiber: $15/month (AI animation)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm font-semibold text-green-400"><strong>Revenue potential:</strong> $15K-$40K/month</p>
+                                    <p className="text-sm"><strong>Best for:</strong> AI creative studios serving high-end clients</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-pink-300 mb-3">Tool Workflows:</h5>
+                                <div className="space-y-3">
+                                    <div>
+                                        <p className="font-semibold text-white mb-2">Workflow for product photography:</p>
+                                        <ol className="list-decimal list-inside space-y-1 ml-2">
+                                            <li>Client sends product photo (they provide)</li>
+                                            <li>Midjourney: Generate background scenes (20 min, 10 variations)</li>
+                                            <li>Photoshop: Composite product into scenes (40 min)</li>
+                                            <li>Topaz Labs: Upscale and enhance (10 min)</li>
+                                        </ol>
+                                        <p className="mt-2 font-semibold text-green-400">Total time: 70 minutes, charge $150-$200 per final image</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white mb-2">Workflow for social media video:</p>
+                                        <ol className="list-decimal list-inside space-y-1 ml-2">
+                                            <li>ChatGPT: Write video script (10 min)</li>
+                                            <li>ElevenLabs: Generate voiceover (5 min)</li>
+                                            <li>Midjourney: Create visual assets (30 min)</li>
+                                            <li>Pictory: Combine into video (20 min)</li>
+                                            <li>CapCut: Final editing and effects (15 min)</li>
+                                        </ol>
+                                        <p className="mt-2 font-semibold text-green-400">Total time: 80 minutes, charge $500-$800 per video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* STACK #4 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-yellow-500">
+                        <h4 className="text-2xl font-bold text-yellow-400 mb-4">STACK #4: AI Course Creation ($150-$500/month)</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <h5 className="text-xl font-bold text-yellow-300 mb-3">Essential Tools (Beginner Stack - $150/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus: $20/month (course content creation)</li>
+                                    <li>Canva Pro: $13/month (course design)</li>
+                                    <li>Loom: $12.50/month (screen recording)</li>
+                                    <li>Google Workspace: $6/month (docs, sheets, slides)</li>
+                                    <li>ConvertKit Free: $0 (email, up to 1,000 subscribers)</li>
+                                    <li>Gumroad Free: $0 (selling platform, 10% fee)</li>
+                                    <li>Notion: $10/month (course planning)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Mini-courses, digital products, basic courses</p>
+                                    <p className="text-sm"><strong>Course price range:</strong> $27-$297</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $2K-$10K/month</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-yellow-300 mb-3">Professional Stack ($400/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus: $20/month (content)</li>
+                                    <li>Claude Pro: $20/month (editing)</li>
+                                    <li>Descript Pro: $24/month (video editing)</li>
+                                    <li>ElevenLabs Creator: $22/month (AI voiceovers)</li>
+                                    <li>Canva Pro: $13/month (graphics)</li>
+                                    <li>Teachable: $119/month (course platform)</li>
+                                    <li>ConvertKit Creator: $29/month (email marketing)</li>
+                                    <li>ClickFunnels: $147/month (sales funnels)</li>
+                                    <li>Kajabi: $149/month (all-in-one alternative)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Professional courses, membership sites, coaching programs</p>
+                                    <p className="text-sm"><strong>Course price range:</strong> $297-$1,997</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $10K-$50K/month</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-yellow-300 mb-3">Premium Stack ($800/month):</h5>
+                                <p className="mb-2">Add to Professional Stack:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Circle.so: $49/month (community)</li>
+                                    <li>Riverside.fm: $24/month (high-quality video recording)</li>
+                                    <li>Synthesia: $30/month (AI avatar videos)</li>
+                                    <li>Jasper AI: $49/month (sales copy)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm font-semibold text-green-400"><strong>Revenue potential:</strong> $20K-$100K+/month</p>
+                                    <p className="text-sm"><strong>Best for:</strong> Course creators building education empires</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-yellow-300 mb-3">Tool Workflows:</h5>
+                                <p className="font-semibold text-white mb-2">Workflow for creating a course:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>ChatGPT: Outline complete course curriculum (2 hours)</li>
+                                    <li>ChatGPT: Write scripts for 20 lessons (8 hours)</li>
+                                    <li>Descript: Record and edit video lessons (20 hours)</li>
+                                    <li>Canva: Design course graphics and materials (6 hours)</li>
+                                    <li>Teachable: Upload and organize content (4 hours)</li>
+                                    <li>ConvertKit: Set up email sequences (3 hours)</li>
+                                </ol>
+                                <p className="mt-2 font-semibold text-green-400">Total creation time: 43 hours, sell for $497-$997</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* STACK #5 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-cyan-500">
+                        <h4 className="text-2xl font-bold text-cyan-400 mb-4">STACK #5: AI SaaS Development ($500-$5,000/month)</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <h5 className="text-xl font-bold text-cyan-300 mb-3">Essential Tools (MVP Stack - $500/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus + API: $20 + $100 usage</li>
+                                    <li>Claude API: $50-100/month usage</li>
+                                    <li>Vercel Pro: $20/month (hosting)</li>
+                                    <li>Supabase Pro: $25/month (database)</li>
+                                    <li>Stripe: $0 base (2.9% + 30¢ per transaction)</li>
+                                    <li>GitHub: $4/month (code repository)</li>
+                                    <li>Linear: $8/month per user (project management)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Simple AI tools, MVPs, beta products</p>
+                                    <p className="text-sm"><strong>User capacity:</strong> 50-200 users</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $1K-$10K/month MRR</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-cyan-300 mb-3">Professional Stack ($2,000/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>GPT-4 API: $500-1,000/month (depending on usage)</li>
+                                    <li>Claude API: $200-400/month</li>
+                                    <li>AWS/Google Cloud: $300-500/month (hosting, CDN, storage)</li>
+                                    <li>MongoDB Atlas: $57/month (database)</li>
+                                    <li>Auth0: $35/month (authentication)</li>
+                                    <li>Stripe: Transaction fees</li>
+                                    <li>SendGrid: $20/month (transactional emails)</li>
+                                    <li>Mixpanel: $89/month (analytics)</li>
+                                    <li>Intercom: $74/month (customer support)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Professional AI SaaS products</p>
+                                    <p className="text-sm"><strong>User capacity:</strong> 200-1,000 users</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $10K-$50K/month MRR</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-cyan-300 mb-3">Premium Stack ($5,000-15,000/month):</h5>
+                                <p className="mb-2">Add to Professional Stack:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>Enterprise APIs: $2,000-5,000/month</li>
+                                    <li>AWS Enterprise: $1,000-3,000/month</li>
+                                    <li>Dedicated support tools: $500-1,000/month</li>
+                                    <li>Advanced analytics: $500-1,000/month</li>
+                                    <li>Security and compliance: $500-1,000/month</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>User capacity:</strong> 1,000-10,000+ users</p>
+                                    <p className="text-sm font-semibold text-green-400"><strong>Revenue potential:</strong> $50K-$500K+/month MRR</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-cyan-300 mb-3">Tool Workflows:</h5>
+                                <p className="font-semibold text-white mb-2">Workflow for launching AI SaaS:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>ChatGPT: Define product spec and features (4 hours)</li>
+                                    <li>Cursor/VS Code: Write code with AI assistance (80 hours)</li>
+                                    <li>Supabase: Set up database and auth (8 hours)</li>
+                                    <li>Vercel: Deploy and configure (4 hours)</li>
+                                    <li>Stripe: Set up payments (4 hours)</li>
+                                </ol>
+                                <p className="mt-2 font-semibold text-green-400">Total development time: 100 hours, charge $30-100/month per user</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* STACK #6 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-red-500">
+                        <h4 className="text-2xl font-bold text-red-400 mb-4">STACK #6: YouTube Automation ($120-$300/month)</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <h5 className="text-xl font-bold text-red-300 mb-3">Essential Tools (Beginner Stack - $120/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus: $20/month (scripts)</li>
+                                    <li>ElevenLabs Starter: $5/month (AI voice)</li>
+                                    <li>Pictory Standard: $23/month (video creation)</li>
+                                    <li>CapCut Free: $0 (editing)</li>
+                                    <li>Canva Pro: $13/month (thumbnails)</li>
+                                    <li>TubeBuddy Pro: $9/month (YouTube optimization)</li>
+                                    <li>VidIQ Basic: $0 (analytics)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> Faceless YouTube videos, 1-2 videos/day</p>
+                                    <p className="text-sm"><strong>Channel potential:</strong> 1-2 channels</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $1K-$5K/month per channel</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-red-300 mb-3">Professional Stack ($300/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus: $20/month</li>
+                                    <li>ElevenLabs Creator: $22/month (better voices)</li>
+                                    <li>Pictory Premium: $59/month (more video credits)</li>
+                                    <li>Descript Pro: $24/month (advanced editing)</li>
+                                    <li>Midjourney Basic: $10/month (custom visuals)</li>
+                                    <li>Artlist: $14.99/month (stock footage and music)</li>
+                                    <li>VidIQ Pro: $39/month (advanced analytics)</li>
+                                    <li>Thumbnail Blaster: $67 (one-time, thumbnail creation)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>What you can deliver:</strong> High-quality faceless videos, 2-3 videos/day</p>
+                                    <p className="text-sm"><strong>Channel potential:</strong> 3-5 channels</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $5K-$20K/month total</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-red-300 mb-3">Tool Workflows:</h5>
+                                <p className="font-semibold text-white mb-2">Workflow for YouTube video:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>ChatGPT: Research topic and write script (20 min)</li>
+                                    <li>ElevenLabs: Generate voiceover (5 min)</li>
+                                    <li>Pictory: Create video from script (30 min)</li>
+                                    <li>CapCut: Final edits and effects (20 min)</li>
+                                    <li>Canva: Design thumbnail (10 min)</li>
+                                    <li>TubeBuddy: Optimize title and tags (10 min)</li>
+                                </ol>
+                                <p className="mt-2 font-semibold text-green-400">Total time: 95 minutes per video, publish daily</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* STACK #7 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-indigo-500">
+                        <h4 className="text-2xl font-bold text-indigo-400 mb-4">STACK #7: AI Newsletter ($100-$400/month)</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <h5 className="text-xl font-bold text-indigo-300 mb-3">Essential Tools (Beginner Stack - $100/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus: $20/month (content)</li>
+                                    <li>ConvertKit Creator: $29/month (email, up to 1,000 subs)</li>
+                                    <li>Canva Pro: $13/month (graphics)</li>
+                                    <li>Feedly Pro: $6/month (content curation)</li>
+                                    <li>Notion: $10/month (content planning)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>Subscriber capacity:</strong> Up to 1,000</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $500-$2K/month</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-indigo-300 mb-3">Professional Stack ($300/month):</h5>
+                                <ul className="list-disc list-inside space-y-1 ml-2 mb-3">
+                                    <li>ChatGPT Plus: $20/month</li>
+                                    <li>Claude Pro: $20/month</li>
+                                    <li>ConvertKit Creator Pro: $59/month (up to 3,000 subs)</li>
+                                    <li>beehiiv Scale: $99/month (newsletter platform)</li>
+                                    <li>Canva Pro: $13/month</li>
+                                    <li>Perplexity Pro: $20/month (research)</li>
+                                    <li>SparkToro: $50/month (audience research)</li>
+                                </ul>
+                                <div className="bg-zinc-800/50 rounded p-3">
+                                    <p className="text-sm"><strong>Subscriber capacity:</strong> Up to 10,000</p>
+                                    <p className="text-sm"><strong>Revenue potential:</strong> $3K-$15K/month</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 className="text-xl font-bold text-indigo-300 mb-3">Tool Workflows:</h5>
+                                <p className="font-semibold text-white mb-2">Workflow for daily newsletter:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>Perplexity: Research latest AI news (15 min)</li>
+                                    <li>ChatGPT: Write newsletter draft (20 min)</li>
+                                    <li>Claude: Edit and refine (10 min)</li>
+                                    <li>Canva: Create header graphic (10 min)</li>
+                                    <li>beehiiv: Format and schedule (10 min)</li>
+                                </ol>
+                                <p className="mt-2 font-semibold text-green-400">Total time: 65 minutes per issue</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Summary Sections */}
+                    <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 rounded-lg p-6 border border-blue-500/30">
+                        <h4 className="text-2xl font-bold text-blue-400 mb-4">TOTAL INVESTMENT BY BUSINESS MODEL</h4>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <p className="font-semibold text-white mb-3">Starter Investment (Month 1):</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>AI Content: $50/month</li>
+                                    <li>AI Consulting: $200/month</li>
+                                    <li>AI Design: $110/month</li>
+                                    <li>AI Courses: $150/month</li>
+                                    <li>AI SaaS: $500/month</li>
+                                    <li>YouTube: $120/month</li>
+                                    <li>Newsletter: $100/month</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-3">Professional Investment (Month 6+):</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>AI Content: $150-300/month</li>
+                                    <li>AI Consulting: $500-800/month</li>
+                                    <li>AI Design: $250-400/month</li>
+                                    <li>AI Courses: $400-800/month</li>
+                                    <li>AI SaaS: $2,000-5,000/month</li>
+                                    <li>YouTube: $300/month</li>
+                                    <li>Newsletter: $300-400/month</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 rounded-lg p-6 border border-green-500/30">
+                        <h4 className="text-2xl font-bold text-green-400 mb-4">When to Upgrade Your Stack</h4>
+                        <p className="mb-3">Upgrade when you hit these revenue milestones:</p>
+                        <ul className="list-disc list-inside space-y-2 ml-2">
+                            <li><strong className="text-white">$3K/month:</strong> Add one paid tool ($20-50/month)</li>
+                            <li><strong className="text-white">$5K/month:</strong> Upgrade to professional stack ($200-400/month)</li>
+                            <li><strong className="text-white">$10K/month:</strong> Add premium tools ($500-800/month)</li>
+                            <li><strong className="text-white">$20K/month:</strong> Full premium stack ($1,000-2,000/month)</li>
+                        </ul>
+                    </div>
+
+                    <div className="bg-zinc-800/50 rounded-lg p-6">
+                        <h4 className="text-2xl font-bold text-green-400 mb-4">ROI Calculation</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <p className="font-semibold text-white mb-2">Example: Content Services</p>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div className="bg-zinc-900/50 rounded p-3">
+                                        <p className="font-semibold text-green-400 mb-2">Beginner stack:</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                            <li>$50/month investment</li>
+                                            <li>$5,000/month revenue</li>
+                                            <li className="font-semibold text-green-400">ROI: 10,000%</li>
+                                        </ul>
+                                    </div>
+                                    <div className="bg-zinc-900/50 rounded p-3">
+                                        <p className="font-semibold text-green-400 mb-2">Professional stack:</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2 text-sm">
+                                            <li>$150/month investment</li>
+                                            <li>$15,000/month revenue</li>
+                                            <li className="font-semibold text-green-400">ROI: 10,000%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className="mt-4 italic">The key is matching your tool investment to your revenue level. Start lean, upgrade as you grow.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
