@@ -416,10 +416,8 @@ export default function YouTubeShortsStrategy() {
             </div>
         </div>
     </div>
-
-        {/* Inline CTA - Contextually Placed */}
-        <SmartCTA blogSlug="youtube-shorts-strategy" variant="inline" />
-
+    {/* Inline CTA - Contextually Placed */}
+    <SmartCTA blogSlug="youtube-shorts-strategy" variant="inline" />
 </section>
 
       <section className="section-spacing">
