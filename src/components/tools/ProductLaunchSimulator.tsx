@@ -1,103 +1,137 @@
 'use client'
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { DollarSign, Rocket } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { DollarSign, Rocket, Users, Filter, MousePointerClick } from 'lucide-react'
 
 export default function ProductLaunchSimulator() {
   const [productPrice, setProductPrice] = useState(47)
   const [audienceSize, setAudienceSize] = useState(1000)
   const [conversionRate, setConversionRate] = useState(2) // %
+  const [isLaunching, setIsLaunching] = useState(false)
+  const [currentRevenue, setCurrentRevenue] = useState(0)
 
-  const launchRevenue = audienceSize * (conversionRate / 100) * productPrice
+  const targetRevenue = audienceSize * (conversionRate / 100) * productPrice
+  
+  // Funnel Metrics
+  const clicks = Math.round(audienceSize * 0.4) // 40% CTR to landing page
+  const sales = Math.round(clicks * (conversionRate / 100))
+
+  useEffect(() => {
+     if (isLaunching) {
+        let start = 0
+        const duration = 2000
+        const interval = 20
+        const steps = duration / interval
+        const increment = targetRevenue / steps
+        
+        const timer = setInterval(() => {
+           start += increment
+           if (start >= targetRevenue) {
+              setCurrentRevenue(targetRevenue)
+              setIsLaunching(false)
+              clearInterval(timer)
+           } else {
+              setCurrentRevenue(start)
+           }
+        }, interval)
+        return () => clearInterval(timer)
+     } else {
+        setCurrentRevenue(targetRevenue)
+     }
+  }, [isLaunching, targetRevenue])
 
   return (
-    <div className="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8 max-w-3xl mx-auto">
-      <div className="text-center mb-8">
-        <div className="inline-flex items-center gap-2 bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-          <Rocket className="w-3 h-3" /> Launch Simulator
-        </div>
-        <h3 className="text-2xl font-bold text-white">Digital Product Launch Potential</h3>
-        <p className="text-zinc-400 text-sm">Calculate the potential of your first product launch.</p>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8">
+    <div className="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 md:p-8 max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
+      <div className="grid lg:grid-cols-12 gap-8">
+        {/* LEFT: Controls */}
+        <div className="lg:col-span-5 space-y-8">
           <div>
-            <label className="block text-sm font-medium text-zinc-300 mb-2">Product Price: <span className="text-white font-bold">${productPrice}</span></label>
-            <input 
-              type="range" 
-              min="7" 
-              max="297" 
-              value={productPrice} 
-              onChange={(e) => setProductPrice(parseInt(e.target.value))}
-              className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-green-500"
-            />
-            <div className="flex justify-between text-xs text-zinc-500 mt-1">
-              <span>$7 (Ebook)</span>
-              <span>$297 (Course)</span>
+            <div className="inline-flex items-center gap-2 bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <Rocket className="w-3 h-3" /> Launch Simulator
             </div>
+            <h3 className="text-2xl font-bold text-white mb-2">The Launch Math</h3>
+            <p className="text-zinc-400 text-sm">See how a small audience creates massive income.</p>
           </div>
 
-          <div>
-            <label className="block text-sm font-medium text-zinc-300 mb-2">Audience Size: <span className="text-white font-bold">{audienceSize.toLocaleString()}</span></label>
-            <input 
-              type="range" 
-              min="100" 
-              max="10000" 
-              value={audienceSize} 
-              onChange={(e) => setAudienceSize(parseInt(e.target.value))}
-              className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-green-500"
-            />
-             <div className="flex justify-between text-xs text-zinc-500 mt-1">
-              <span>100 Fans</span>
-              <span>10k Fans</span>
-            </div>
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-zinc-300 mb-2">Conversion Rate: <span className="text-white font-bold">{conversionRate}%</span></label>
-            <input 
-              type="range" 
-              min="0.5" 
-              max="5" 
-              step="0.5"
-              value={conversionRate} 
-              onChange={(e) => setConversionRate(parseFloat(e.target.value))}
-              className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-green-500"
-            />
-             <div className="flex justify-between text-xs text-zinc-500 mt-1">
-              <span>Avg (0.5%)</span>
-              <span>Super Fan (5%)</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-black/50 rounded-2xl p-6 border border-white/5 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent pointer-events-none" />
-          
-          <p className="text-zinc-400 text-sm uppercase tracking-wider mb-2">Est. Launch Revenue</p>
-          <motion.div 
-            key={launchRevenue}
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            className="text-5xl md:text-6xl font-black text-white mb-2"
-          >
-            ${Math.round(launchRevenue).toLocaleString()}
-          </motion.div>
-          <p className="text-sm text-green-400 font-medium flex items-center justify-center gap-1">
-             <DollarSign className="w-4 h-4" /> 100% Profit Margin
-          </p>
-          
-          <div className="mt-6 pt-6 border-t border-white/5">
-             <p className="text-zinc-400 text-sm mb-2">If you launch 1 product per month:</p>
-             <div className="text-2xl font-bold text-white">
-                ${(Math.round(launchRevenue) * 12).toLocaleString()} / yr
+          <div className="space-y-6">
+             <div className="space-y-2">
+                <label className="text-sm font-medium text-zinc-300">Audience Size</label>
+                <input 
+                  type="range" min="100" max="10000" value={audienceSize} 
+                  onChange={(e) => setAudienceSize(parseInt(e.target.value))}
+                  className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-green-500"
+                />
              </div>
+             <div className="space-y-2">
+                <label className="text-sm font-medium text-zinc-300">Product Price ($)</label>
+                <input 
+                  type="range" min="7" max="297" value={productPrice} 
+                  onChange={(e) => setProductPrice(parseInt(e.target.value))}
+                  className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-green-500"
+                />
+             </div>
+             <div className="space-y-2">
+                <label className="text-sm font-medium text-zinc-300">Conversion Rate (%)</label>
+                <input 
+                  type="range" min="0.5" max="5" step="0.5" value={conversionRate} 
+                  onChange={(e) => setConversionRate(parseFloat(e.target.value))}
+                  className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-green-500"
+                />
+             </div>
+
+             <button 
+               onClick={() => setIsLaunching(true)}
+               className="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl transition-all active:scale-95 flex items-center justify-center gap-2"
+             >
+               <Rocket className="w-4 h-4" /> Simulate Launch Day
+             </button>
           </div>
+        </div>
+
+        {/* RIGHT: Visual Funnel */}
+        <div className="lg:col-span-7 bg-black/40 rounded-2xl border border-white/5 p-6 relative flex flex-col justify-between">
+           {/* Funnel Steps */}
+           <div className="space-y-2 relative z-10">
+              <div className="flex items-center justify-between p-3 bg-zinc-800/50 rounded-lg border border-zinc-700/50">
+                 <div className="flex items-center gap-3">
+                    <Users className="w-5 h-5 text-zinc-500" />
+                    <span className="text-zinc-300 text-sm">Audience</span>
+                 </div>
+                 <span className="font-mono text-white">{audienceSize.toLocaleString()}</span>
+              </div>
+              
+              <div className="flex justify-center"><div className="w-0.5 h-4 bg-zinc-700" /></div>
+
+              <div className="flex items-center justify-between p-3 bg-zinc-800/50 rounded-lg border border-zinc-700/50 w-[80%] mx-auto">
+                 <div className="flex items-center gap-3">
+                    <MousePointerClick className="w-5 h-5 text-zinc-500" />
+                    <span className="text-zinc-300 text-sm">Clicks (40%)</span>
+                 </div>
+                 <span className="font-mono text-white">{clicks.toLocaleString()}</span>
+              </div>
+
+              <div className="flex justify-center"><div className="w-0.5 h-4 bg-zinc-700" /></div>
+
+              <div className="flex items-center justify-between p-3 bg-zinc-800/50 rounded-lg border border-zinc-700/50 w-[60%] mx-auto shadow-[0_0_15px_rgba(74,222,128,0.1)]">
+                 <div className="flex items-center gap-3">
+                    <Filter className="w-5 h-5 text-green-500" />
+                    <span className="text-green-400 text-sm font-bold">Sales</span>
+                 </div>
+                 <span className="font-mono text-green-400 font-bold">{sales.toLocaleString()}</span>
+              </div>
+           </div>
+
+           <div className="mt-8 text-center">
+              <p className="text-zinc-500 text-xs uppercase tracking-widest mb-2">Total Launch Revenue</p>
+              <motion.div 
+                className="text-5xl font-black text-white tracking-tight"
+              >
+                ${Math.round(currentRevenue).toLocaleString()}
+              </motion.div>
+           </div>
         </div>
       </div>
     </div>
   )
 }
-

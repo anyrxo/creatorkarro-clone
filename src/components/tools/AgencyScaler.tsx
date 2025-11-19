@@ -2,113 +2,111 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { DollarSign, Users, Building } from 'lucide-react'
+import { DollarSign, Users, Building, Clock, Briefcase } from 'lucide-react'
 
 export default function AgencyScaler() {
   const [clients, setClients] = useState(5)
   const [retainer, setRetainer] = useState(2000)
-  const [setupFee, setSetupFee] = useState(1500)
+  const [mode, setMode] = useState<'freelancer' | 'agency'>('freelancer')
   
   // Revenue Logic
   const monthlyRecurring = clients * retainer
   const yearlyRecurring = monthlyRecurring * 12
-  const oneTimeSetup = clients * setupFee // Assuming new clients per year for simplicity or just total value
   
-  // Let's keep it simple: Total Annual Value of these clients
-  const totalAnnualValue = yearlyRecurring + oneTimeSetup
-
+  // Work Logic
+  // Freelancer: 5 hrs/week per client. Capped at 60 hrs/week total.
+  // Agency: 1 hr/week per client (management). Uncapped scale.
+  const hoursPerClient = mode === 'freelancer' ? 5 : 1
+  const totalHours = clients * hoursPerClient
+  const isOverworked = totalHours > 60 && mode === 'freelancer'
+  
   return (
-    <div className="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8 max-w-3xl mx-auto">
-      <div className="text-center mb-8">
-        <div className="inline-flex items-center gap-2 bg-orange-500/10 text-orange-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-          <Building className="w-3 h-3" /> Agency Simulator
-        </div>
-        <h3 className="text-2xl font-bold text-white">AI Agency Revenue Potential</h3>
-        <p className="text-zinc-400 text-sm">Calculate the value of your automation agency.</p>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8">
+    <div className="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 md:p-8 max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
+      <div className="grid lg:grid-cols-12 gap-8">
+        {/* LEFT: Controls */}
+        <div className="lg:col-span-5 space-y-8">
           <div>
-            <label className="block text-sm font-medium text-zinc-300 mb-2">Active Clients: <span className="text-white font-bold">{clients}</span></label>
-            <input 
-              type="range" 
-              min="1" 
-              max="20" 
-              value={clients} 
-              onChange={(e) => setClients(parseInt(e.target.value))}
-              className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-orange-500"
-            />
-            <div className="flex justify-between text-xs text-zinc-500 mt-1">
-              <span>1 Client</span>
-              <span>20 Clients</span>
+            <div className="inline-flex items-center gap-2 bg-orange-500/10 text-orange-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+              <Building className="w-3 h-3" /> Scale Simulator
             </div>
+            <h3 className="text-2xl font-bold text-white mb-2">Freelancer vs Agency</h3>
+            <p className="text-zinc-400 text-sm">See why selling time keeps you broke.</p>
           </div>
 
-          <div>
-            <label className="block text-sm font-medium text-zinc-300 mb-2">Monthly Retainer: <span className="text-white font-bold">${retainer.toLocaleString()}</span></label>
-            <input 
-              type="range" 
-              min="500" 
-              max="10000" 
-              step="500"
-              value={retainer} 
-              onChange={(e) => setRetainer(parseInt(e.target.value))}
-              className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-orange-500"
-            />
-             <div className="flex justify-between text-xs text-zinc-500 mt-1">
-              <span>$500/mo</span>
-              <span>$10k/mo</span>
-            </div>
+          <div className="flex bg-zinc-800 p-1 rounded-lg">
+             <button 
+               onClick={() => setMode('freelancer')}
+               className={`flex-1 py-2 rounded-md text-sm font-bold transition-all ${mode === 'freelancer' ? 'bg-zinc-600 text-white' : 'text-zinc-400 hover:text-white'}`}
+             >
+               Freelancer (You)
+             </button>
+             <button 
+               onClick={() => setMode('agency')}
+               className={`flex-1 py-2 rounded-md text-sm font-bold transition-all ${mode === 'agency' ? 'bg-orange-600 text-white' : 'text-zinc-400 hover:text-white'}`}
+             >
+               Agency (System)
+             </button>
           </div>
 
-           <div>
-            <label className="block text-sm font-medium text-zinc-300 mb-2">Setup Fee (One-time): <span className="text-white font-bold">${setupFee.toLocaleString()}</span></label>
-            <input 
-              type="range" 
-              min="500" 
-              max="5000" 
-              step="500"
-              value={setupFee} 
-              onChange={(e) => setSetupFee(parseInt(e.target.value))}
-              className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-orange-500"
-            />
-             <div className="flex justify-between text-xs text-zinc-500 mt-1">
-              <span>$500</span>
-              <span>$5k</span>
-            </div>
+          <div className="space-y-6">
+             <div className="space-y-2">
+                <label className="text-sm font-medium text-zinc-300">Active Clients: <span className="text-white font-bold">{clients}</span></label>
+                <input 
+                  type="range" min="1" max="30" value={clients} 
+                  onChange={(e) => setClients(parseInt(e.target.value))}
+                  className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-orange-500"
+                />
+             </div>
+             <div className="space-y-2">
+                <label className="text-sm font-medium text-zinc-300">Monthly Retainer: <span className="text-white font-bold">${retainer.toLocaleString()}</span></label>
+                <input 
+                  type="range" min="1000" max="10000" step="500" value={retainer} 
+                  onChange={(e) => setRetainer(parseInt(e.target.value))}
+                  className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-orange-500"
+                />
+             </div>
           </div>
         </div>
 
-        <div className="bg-black/50 rounded-2xl p-6 border border-white/5 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent pointer-events-none" />
-          
-          <p className="text-zinc-400 text-sm uppercase tracking-wider mb-2">Total Annual Revenue</p>
-          <motion.div 
-            key={totalAnnualValue}
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            className="text-5xl md:text-6xl font-black text-white mb-2"
-          >
-            ${Math.round(totalAnnualValue).toLocaleString()}
-          </motion.div>
-          <p className="text-sm text-orange-400 font-medium flex items-center justify-center gap-1">
-             <Users className="w-4 h-4" /> With just {clients} clients
-          </p>
-          
-          <div className="mt-6 pt-6 border-t border-white/5 space-y-2">
-             <div className="flex justify-between text-xs">
-                <span className="text-zinc-400">Monthly Recurring:</span>
-                <span className="text-white font-bold">${monthlyRecurring.toLocaleString()}</span>
-             </div>
-              <div className="flex justify-between text-xs">
-                <span className="text-zinc-400">Setup Fees:</span>
-                <span className="text-white font-bold">${oneTimeSetup.toLocaleString()}</span>
-             </div>
-          </div>
+        {/* RIGHT: Visualizer */}
+        <div className="lg:col-span-7 bg-black/40 rounded-2xl border border-white/5 p-6 relative flex flex-col justify-between">
+           <div className="grid grid-cols-2 gap-4">
+              <div className="bg-zinc-800/50 p-4 rounded-xl border border-zinc-700/50">
+                 <div className="flex items-center gap-2 text-zinc-400 text-xs uppercase tracking-wider mb-2">
+                    <DollarSign className="w-4 h-4" /> Monthly
+                 </div>
+                 <div className="text-2xl font-bold text-white">${monthlyRecurring.toLocaleString()}</div>
+              </div>
+              <div className="bg-zinc-800/50 p-4 rounded-xl border border-zinc-700/50">
+                 <div className="flex items-center gap-2 text-zinc-400 text-xs uppercase tracking-wider mb-2">
+                    <Clock className="w-4 h-4" /> Hours/Week
+                 </div>
+                 <div className={`text-2xl font-bold ${isOverworked ? 'text-red-500' : 'text-white'}`}>
+                    {totalHours}h
+                 </div>
+                 {isOverworked && <div className="text-[10px] text-red-400 mt-1">BURNOUT WARNING</div>}
+              </div>
+           </div>
+
+           <div className="mt-8 text-center relative">
+              {isOverworked ? (
+                 <div className="bg-red-500/10 border border-red-500/50 p-4 rounded-xl">
+                    <h4 className="text-red-400 font-bold mb-1">Scale Impossible</h4>
+                    <p className="text-red-300/80 text-xs">You physically cannot work this much. You need the Agency System to scale past this point.</p>
+                 </div>
+              ) : (
+                 <>
+                    <p className="text-zinc-500 text-xs uppercase tracking-widest mb-2">Annual Run Rate</p>
+                    <motion.div 
+                      className="text-5xl font-black text-orange-500 tracking-tight"
+                    >
+                      ${Math.round(yearlyRecurring).toLocaleString()}
+                    </motion.div>
+                 </>
+              )}
+           </div>
         </div>
       </div>
     </div>
   )
 }
-
