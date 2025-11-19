@@ -1231,377 +1231,614 @@ export default function PersonalBrandBuilding() {
 
             <div className="bg-zinc-800 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-purple-400 mb-4">What's the best content strategy across LinkedIn, Twitter, Instagram, and YouTube?</h3>
-              <div className="text-gray-300 space-y-4">
-                <p className="leading-relaxed">{`**A multi-platform content strategy can generate 10x more opportunities than focusing on one platform.** After building audiences totaling 500K+ across platforms, here's the complete cross-platform playbook:
-
-**The Platform-Specific Strategy**
-
-**LinkedIn: The Professional Engine**
-
-Best for: B2B, consulting, thought leadership, professional services
-
-**Content Strategy**:
-
-Post Types (by performance):
-1. **Personal Stories** (highest engagement)
-   - Share business lessons from experience
-   - Format: Hook + Story + Lesson + CTA
-   - Length: 800-1,200 characters
-   - Frequency: 2x/week
-   - Average reach: 3-5x follower count
-
-2. **How-To Posts** (best for authority)
-   - Step-by-step frameworks
-   - Format: Numbered list with details
-   - Length: 1,000-1,500 characters
-   - Frequency: 2x/week
-   - Average reach: 2-3x follower count
-
-3. **Carousel Posts** (highest saves)
-   - Visual guides and frameworks
-   - Format: 6-10 slides with key points
-   - Tools: Canva, Figma
-   - Frequency: 1x/week
-   - Average reach: 4-6x follower count
-
-**LinkedIn Posting Schedule**:
-- Monday 8 AM: Inspirational/motivational
-- Tuesday 12 PM: How-to/educational
-- Wednesday 8 AM: Personal story
-- Thursday 12 PM: Carousel/framework
-- Friday 8 AM: Weekly insights
-
-**Growth Tactics**:
-1. **Engagement Pod Strategy** (30 min/day)
-   - Find 10-15 creators in your niche
-   - Engage with their posts within 1 hour
-   - They reciprocate on yours
-   - Result: 2-3x organic reach
-
-2. **Comment Value Bombs**
-   - Find posts from bigger creators
-   - Leave insightful 3-4 line comments
-   - Don't self-promote
-   - Result: 50-200 profile views/day
-
-3. **Connection Strategy**
-   - Send 20 personalized requests/day
-   - Target engaged followers of competitors
-   - Message: Compliment their content + light question
-   - Acceptance rate: 30-40%
-
-**Monetization Path**:
-- 0-1K followers: Land consulting clients ($5K-$20K)
-- 1K-10K: Launch digital products ($3K-$15K/month)
-- 10K+: Speaking + partnerships ($10K-$50K/month)
-
-**Twitter/X: The Thought Leadership Accelerator**
-
-Best for: Tech, startups, real-time commentary, building in public
-
-**Content Strategy**:
-
-Tweet Types (by performance):
-1. **Thread Tutorials** (highest engagement)
-   - 5-15 tweet deep dives
-   - Hook tweet with clear promise
-   - Numbered tweets with insights
-   - CTA to email list at end
-   - Frequency: 2-3x/week
-
-2. **Quick Tips** (best for consistency)
-   - Single actionable insight
-   - 150-200 characters
-   - Use line breaks for readability
-   - Frequency: 2-3x/day
-
-3. **Hot Takes** (viral potential)
-   - Contrarian opinions
-   - Challenge conventional wisdom
-   - Back with experience/data
-   - Frequency: 1-2x/week
-
-**Twitter Posting Schedule**:
-- 7 AM: Motivational/insight
-- 12 PM: Educational thread
-- 5 PM: Commentary/hot take
-- 9 PM: Behind-the-scenes/personal
-
-**Growth Tactics**:
-1. **Reply Guy Strategy** (45 min/day)
-   - Follow 50 big accounts in niche
-   - Turn on notifications
-   - Reply with value in first 5 minutes
-   - Best replies get 100-500 followers/month
-
-2. **Thread Repurposing**
-   - Turn 1 article into 3-5 threads
-   - Repost top threads every 2-3 months
-   - A-B test different hooks
-   - Top thread = 1K+ followers
-
-3. **Engagement Groups**
-   - Join Discord/Telegram groups
-   - Share preview tweets
-   - Like + RT within first hour
-   - Boost reach by 5-10x
-
-**Monetization Path**:
-- 0-1K: Build credibility
-- 1K-10K: Affiliate products ($500-$5K/month)
-- 10K-50K: Sponsored tweets ($500-$2K/tweet)
-- 50K+: Premium products ($20K-$100K/month)
-
-**Instagram: The Visual Brand Builder**
-
-Best for: Lifestyle, personal brand, visual products, B2C
-
-**Content Strategy**:
-
-Content Mix:
-1. **Reels** (70% of strategy)
-   - 7-15 second educational content
-   - Trending audio with your twist
-   - Text overlay for no-sound viewing
-   - Frequency: 1-2x/day
-   - Average reach: 5-10x follower count
-
-2. **Carousels** (20% of strategy)
-   - 5-10 slide visual guides
-   - Stop-the-scroll first slide
-   - Swipe-worthy content
-   - Frequency: 3-4x/week
-   - Average saves: 5-8% of reach
-
-3. **Stories** (10% of strategy)
-   - Behind-the-scenes content
-   - Polls and questions
-   - Drive engagement
-   - Frequency: 3-5x/day
-
-**Instagram Posting Schedule**:
-- 9 AM: Reel (educational)
-- 12 PM: Carousel (framework/tips)
-- 3 PM: Stories (personal/BTS)
-- 6 PM: Reel (entertaining/relatable)
-
-**Growth Tactics**:
-1. **Reel Strategy**
-   - Hook in first 1 second
-   - Value in 7-15 seconds
-   - Clear CTA at end
-   - Post during peak hours (9 AM, 6 PM)
-   - Result: 1K-10K views/reel
-
-2. **Story Engagement**
-   - Question stickers (2x/day)
-   - Poll stickers (1x/day)
-   - Reply to every DM
-   - Result: 30-50% engagement rate
-
-3. **Collaboration Posts**
-   - Partner with similar-size accounts
-   - Create collaborative content
-   - Share with both audiences
-   - Result: 500-2K new followers/collab
-
-**Monetization Path**:
-- 0-10K: Brand deals ($200-$1K/post)
-- 10K-50K: Affiliate marketing ($1K-$5K/month)
-- 50K-100K: Premium sponsorships ($2K-$10K/post)
-- 100K+: Own products ($10K-$100K/month)
-
-**YouTube: The Long-Term Authority Builder**
-
-Best for: In-depth education, product reviews, entertainment
-
-**Content Strategy**:
-
-Video Types:
-1. **Tutorials** (40% of content)
-   - Step-by-step how-to guides
-   - Length: 8-15 minutes
-   - Searchable titles with keywords
-   - Evergreen value
-
-2. **Value Bombs** (30% of content)
-   - Big list videos (Top 10, Best X for Y)
-   - Length: 10-20 minutes
-   - Clickable thumbnails
-   - Binge-worthy content
-
-3. **Personal/Story** (20% of content)
-   - Behind-the-scenes
-   - Personal journey
-   - Length: 5-12 minutes
-   - Build connection
-
-4. **Shorts** (10% of content)
-   - 15-60 second tips
-   - Repurposed from Reels
-   - Drive to main channel
-
-**YouTube Posting Schedule**:
-- Monday: Tutorial/How-to
-- Wednesday: Value bomb/List video
-- Friday: Personal story/Journey
-- Daily: 1-2 Shorts
-
-**Growth Tactics**:
-1. **SEO Optimization**
-   - Keyword research (TubeBuddy, VidIQ)
-   - Descriptive titles (50-60 characters)
-   - Tags with variations
-   - Detailed descriptions with timestamps
-
-2. **Thumbnail Strategy**
-   - Bold text (3-5 words max)
-   - Expressive face
-   - High contrast colors
-   - Test 3 options, pick best
-
-3. **Hook Formula** (first 30 seconds)
-   - State the promise
-   - Show the result
-   - Tease the method
-   - Ask to subscribe
-
-**Monetization Path**:
-- 0-1K subs: Build library (no revenue)
-- 1K-10K: AdSense ($500-$2K/month)
-- 10K-100K: Sponsorships ($1K-$10K/video)
-- 100K+: Multiple streams ($20K-$200K/month)
-
-**The Cross-Platform Content System**
-
-Don't create unique content for each platform. Use this repurposing workflow:
-
-**Weekly Content Creation**:
-
-**Step 1: Long-Form Foundation** (Monday, 2-3 hours)
-- Create YouTube video OR
-- Write 2,000-word article OR
-- Record podcast episode
-
-**Step 2: Platform Adaptation** (Tuesday, 1-2 hours)
-- Extract 5-7 key points
-- Create platform-specific versions:
-  - LinkedIn: Turn into carousel + 2 text posts
-  - Twitter: 2-3 threads
-  - Instagram: 3-4 reels + 1 carousel
-  - TikTok: 3-5 short videos
-
-**Step 3: Micro-Content** (Wednesday, 1 hour)
-- Pull 10-15 quotes
-- Create quote graphics
-- Schedule throughout week
-
-**Step 4: Engagement** (Daily, 30-60 min)
-- Respond to comments
-- Engage with community
-- DM conversations
-
-**Real Example**:
-YouTube video "How I Built a $50K/Month Business" becomes:
-- LinkedIn post: "The 5 systems that got me to $50K/month"
-- LinkedIn carousel: "My $50K/month business breakdown"
-- Twitter thread: "5 lessons from scaling to $50K/month"
-- 7 Twitter tips: Individual lessons as tweets
-- Instagram reel: "What $50K/month taught me"
-- 3 Instagram carousels: Systems breakdown
-- 10 quote graphics: Pull key statements
-- Email newsletter: Expanded insights
-
-**Result**: 1 video = 25+ content pieces
-
-**Platform Priority Based on Goals**
-
-**If you want:**
-
-**B2B Clients**:
-1. LinkedIn (primary)
-2. Twitter (secondary)
-3. YouTube (long-term)
-
-**Creator Economy**:
-1. Twitter (primary)
-2. YouTube (secondary)
-3. Instagram (tertiary)
-
-**Lifestyle/Personal Brand**:
-1. Instagram (primary)
-2. TikTok (secondary)
-3. YouTube (long-term)
-
-**Expertise/Authority**:
-1. YouTube (primary)
-2. LinkedIn (secondary)
-3. Twitter (tertiary)
-
-**Advanced Multi-Platform Strategies**
-
-**The Platform Pyramid**:
-
-Foundation: Email list (you own it)
-- Drive all platform traffic here
-- Weekly value-packed newsletter
-- Monetization hub
-
-Tier 1: Primary platform (where ideal audience lives)
-- Post daily
-- 60% of content effort
-- Deepest engagement
-
-Tier 2: Secondary platform (audience discovery)
-- Post 3-5x/week
-- 30% of content effort
-- Repurposed content
-
-Tier 3: Experimental platform (future growth)
-- Post 1-2x/week
-- 10% of content effort
-- Test and learn
-
-**Traffic Bridge Strategy**:
-
-Use each platform to drive to others:
-- YouTube → "Follow me on Twitter for daily tips"
-- Twitter → "Watch full breakdown on YouTube"
-- Instagram → "Read detailed guide in my newsletter"
-- LinkedIn → "See behind-the-scenes on Instagram"
-
-**Tools for Multi-Platform Management**:
-
-**Content Creation**:
-- Descript: Video editing + repurposing
-- Canva: Graphics for all platforms
-- CapCut: Short-form video editing
-- ChatGPT: Content ideation + repurposing
-
-**Scheduling**:
-- Buffer: LinkedIn, Twitter, Instagram
-- Later: Instagram-focused
-- TubeBuddy: YouTube optimization
-
-**Analytics**:
-- Taplio: LinkedIn analytics
-- Tweet Hunter: Twitter analytics
-- Instagram Insights: Native analytics
-- YouTube Analytics: Native analytics
-
-**The Reality of Multi-Platform**
-
-Timeline to see results:
-- Month 1-3: Low growth, testing content
-- Month 4-6: Finding what works
-- Month 7-12: Momentum building
-- Year 2: Compounding growth
-
-Effort required:
-- 10-15 hours/week for 3 platforms
-- 15-20 hours/week for 4 platforms
-
-Don't try to dominate all platforms at once. Master one, then expand.`}</p>
+              <div className="text-gray-300 space-y-6">
+                <p className="text-lg leading-relaxed">
+                  <strong className="text-white font-semibold">A multi-platform content strategy can generate 10x more opportunities than focusing on one platform.</strong> After building audiences totaling 500K+ across platforms, here's the complete cross-platform playbook:
+                </p>
+
+                {/* The Platform-Specific Strategy */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">The Platform-Specific Strategy</h4>
+                  
+                  {/* LinkedIn: The Professional Engine */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-2">LinkedIn: The Professional Engine</h5>
+                    <p className="text-gray-300 mb-3">Best for: B2B, consulting, thought leadership, professional services</p>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Content Strategy - Post Types (by performance):</h6>
+                      <div className="space-y-3">
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">1. Personal Stories (highest engagement)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Share business lessons from experience</li>
+                            <li>• Format: Hook + Story + Lesson + CTA</li>
+                            <li>• Length: <strong className="text-white">800-1,200 characters</strong></li>
+                            <li>• Frequency: <strong className="text-white">2x/week</strong></li>
+                            <li>• Average reach: <strong className="text-white">3-5x follower count</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">2. How-To Posts (best for authority)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Step-by-step frameworks</li>
+                            <li>• Format: Numbered list with details</li>
+                            <li>• Length: <strong className="text-white">1,000-1,500 characters</strong></li>
+                            <li>• Frequency: <strong className="text-white">2x/week</strong></li>
+                            <li>• Average reach: <strong className="text-white">2-3x follower count</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">3. Carousel Posts (highest saves)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Visual guides and frameworks</li>
+                            <li>• Format: <strong className="text-white">6-10 slides</strong> with key points</li>
+                            <li>• Tools: Canva, Figma</li>
+                            <li>• Frequency: <strong className="text-white">1x/week</strong></li>
+                            <li>• Average reach: <strong className="text-white">4-6x follower count</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">LinkedIn Posting Schedule:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Monday <strong className="text-white">8 AM</strong>: Inspirational/motivational</li>
+                        <li>• Tuesday <strong className="text-white">12 PM</strong>: How-to/educational</li>
+                        <li>• Wednesday <strong className="text-white">8 AM</strong>: Personal story</li>
+                        <li>• Thursday <strong className="text-white">12 PM</strong>: Carousel/framework</li>
+                        <li>• Friday <strong className="text-white">8 AM</strong>: Weekly insights</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Growth Tactics:</h6>
+                      <div className="space-y-2">
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">1. Engagement Pod Strategy (30 min/day)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Find <strong className="text-white">10-15 creators</strong> in your niche</li>
+                            <li>• Engage with their posts within <strong className="text-white">1 hour</strong></li>
+                            <li>• They reciprocate on yours</li>
+                            <li>• Result: <strong className="text-white">2-3x organic reach</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">2. Comment Value Bombs</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Find posts from bigger creators</li>
+                            <li>• Leave insightful <strong className="text-white">3-4 line comments</strong></li>
+                            <li>• Don't self-promote</li>
+                            <li>• Result: <strong className="text-white">50-200 profile views/day</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">3. Connection Strategy</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Send <strong className="text-white">20 personalized requests/day</strong></li>
+                            <li>• Target engaged followers of competitors</li>
+                            <li>• Message: Compliment their content + light question</li>
+                            <li>• Acceptance rate: <strong className="text-white">30-40%</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-yellow-300 mb-2">Monetization Path:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">0-1K followers</strong>: Land consulting clients (<strong className="text-white">$5K-$20K</strong>)</li>
+                        <li>• <strong className="text-white">1K-10K</strong>: Launch digital products (<strong className="text-white">$3K-$15K/month</strong>)</li>
+                        <li>• <strong className="text-white">10K+</strong>: Speaking + partnerships (<strong className="text-white">$10K-$50K/month</strong>)</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Twitter/X: The Thought Leadership Accelerator */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-2">Twitter/X: The Thought Leadership Accelerator</h5>
+                    <p className="text-gray-300 mb-3">Best for: Tech, startups, real-time commentary, building in public</p>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Content Strategy - Tweet Types (by performance):</h6>
+                      <div className="space-y-3">
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">1. Thread Tutorials (highest engagement)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• <strong className="text-white">5-15 tweet</strong> deep dives</li>
+                            <li>• Hook tweet with clear promise</li>
+                            <li>• Numbered tweets with insights</li>
+                            <li>• CTA to email list at end</li>
+                            <li>• Frequency: <strong className="text-white">2-3x/week</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">2. Quick Tips (best for consistency)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Single actionable insight</li>
+                            <li>• <strong className="text-white">150-200 characters</strong></li>
+                            <li>• Use line breaks for readability</li>
+                            <li>• Frequency: <strong className="text-white">2-3x/day</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">3. Hot Takes (viral potential)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Contrarian opinions</li>
+                            <li>• Challenge conventional wisdom</li>
+                            <li>• Back with experience/data</li>
+                            <li>• Frequency: <strong className="text-white">1-2x/week</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Twitter Posting Schedule:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">7 AM</strong>: Motivational/insight</li>
+                        <li>• <strong className="text-white">12 PM</strong>: Educational thread</li>
+                        <li>• <strong className="text-white">5 PM</strong>: Commentary/hot take</li>
+                        <li>• <strong className="text-white">9 PM</strong>: Behind-the-scenes/personal</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Growth Tactics:</h6>
+                      <div className="space-y-2">
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">1. Reply Guy Strategy (45 min/day)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Follow <strong className="text-white">50 big accounts</strong> in niche</li>
+                            <li>• Turn on notifications</li>
+                            <li>• Reply with value in first <strong className="text-white">5 minutes</strong></li>
+                            <li>• Best replies get <strong className="text-white">100-500 followers/month</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">2. Thread Repurposing</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Turn 1 article into <strong className="text-white">3-5 threads</strong></li>
+                            <li>• Repost top threads every <strong className="text-white">2-3 months</strong></li>
+                            <li>• A-B test different hooks</li>
+                            <li>• Top thread = <strong className="text-white">1K+ followers</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">3. Engagement Groups</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Join Discord/Telegram groups</li>
+                            <li>• Share preview tweets</li>
+                            <li>• Like + RT within first hour</li>
+                            <li>• Boost reach by <strong className="text-white">5-10x</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-yellow-300 mb-2">Monetization Path:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">0-1K</strong>: Build credibility</li>
+                        <li>• <strong className="text-white">1K-10K</strong>: Affiliate products (<strong className="text-white">$500-$5K/month</strong>)</li>
+                        <li>• <strong className="text-white">10K-50K</strong>: Sponsored tweets (<strong className="text-white">$500-$2K/tweet</strong>)</li>
+                        <li>• <strong className="text-white">50K+</strong>: Premium products (<strong className="text-white">$20K-$100K/month</strong>)</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Instagram: The Visual Brand Builder */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-2">Instagram: The Visual Brand Builder</h5>
+                    <p className="text-gray-300 mb-3">Best for: Lifestyle, personal brand, visual products, B2C</p>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Content Strategy - Content Mix:</h6>
+                      <div className="space-y-3">
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">1. Reels (70% of strategy)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• <strong className="text-white">7-15 second</strong> educational content</li>
+                            <li>• Trending audio with your twist</li>
+                            <li>• Text overlay for no-sound viewing</li>
+                            <li>• Frequency: <strong className="text-white">1-2x/day</strong></li>
+                            <li>• Average reach: <strong className="text-white">5-10x follower count</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">2. Carousels (20% of strategy)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• <strong className="text-white">5-10 slide</strong> visual guides</li>
+                            <li>• Stop-the-scroll first slide</li>
+                            <li>• Swipe-worthy content</li>
+                            <li>• Frequency: <strong className="text-white">3-4x/week</strong></li>
+                            <li>• Average saves: <strong className="text-white">5-8%</strong> of reach</li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">3. Stories (10% of strategy)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Behind-the-scenes content</li>
+                            <li>• Polls and questions</li>
+                            <li>• Drive engagement</li>
+                            <li>• Frequency: <strong className="text-white">3-5x/day</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Instagram Posting Schedule:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">9 AM</strong>: Reel (educational)</li>
+                        <li>• <strong className="text-white">12 PM</strong>: Carousel (framework/tips)</li>
+                        <li>• <strong className="text-white">3 PM</strong>: Stories (personal/BTS)</li>
+                        <li>• <strong className="text-white">6 PM</strong>: Reel (entertaining/relatable)</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Growth Tactics:</h6>
+                      <div className="space-y-2">
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">1. Reel Strategy</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Hook in first <strong className="text-white">1 second</strong></li>
+                            <li>• Value in <strong className="text-white">7-15 seconds</strong></li>
+                            <li>• Clear CTA at end</li>
+                            <li>• Post during peak hours (<strong className="text-white">9 AM, 6 PM</strong>)</li>
+                            <li>• Result: <strong className="text-white">1K-10K views/reel</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">2. Story Engagement</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Question stickers (<strong className="text-white">2x/day</strong>)</li>
+                            <li>• Poll stickers (<strong className="text-white">1x/day</strong>)</li>
+                            <li>• Reply to every DM</li>
+                            <li>• Result: <strong className="text-white">30-50% engagement rate</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">3. Collaboration Posts</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Partner with similar-size accounts</li>
+                            <li>• Create collaborative content</li>
+                            <li>• Share with both audiences</li>
+                            <li>• Result: <strong className="text-white">500-2K new followers/collab</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-yellow-300 mb-2">Monetization Path:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">0-10K</strong>: Brand deals (<strong className="text-white">$200-$1K/post</strong>)</li>
+                        <li>• <strong className="text-white">10K-50K</strong>: Affiliate marketing (<strong className="text-white">$1K-$5K/month</strong>)</li>
+                        <li>• <strong className="text-white">50K-100K</strong>: Premium sponsorships (<strong className="text-white">$2K-$10K/post</strong>)</li>
+                        <li>• <strong className="text-white">100K+</strong>: Own products (<strong className="text-white">$10K-$100K/month</strong>)</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* YouTube: The Long-Term Authority Builder */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-2">YouTube: The Long-Term Authority Builder</h5>
+                    <p className="text-gray-300 mb-3">Best for: In-depth education, product reviews, entertainment</p>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Content Strategy - Video Types:</h6>
+                      <div className="space-y-3">
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">1. Tutorials (40% of content)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Step-by-step how-to guides</li>
+                            <li>• Length: <strong className="text-white">8-15 minutes</strong></li>
+                            <li>• Searchable titles with keywords</li>
+                            <li>• Evergreen value</li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">2. Value Bombs (30% of content)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Big list videos (Top 10, Best X for Y)</li>
+                            <li>• Length: <strong className="text-white">10-20 minutes</strong></li>
+                            <li>• Clickable thumbnails</li>
+                            <li>• Binge-worthy content</li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">3. Personal/Story (20% of content)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• Behind-the-scenes</li>
+                            <li>• Personal journey</li>
+                            <li>• Length: <strong className="text-white">5-12 minutes</strong></li>
+                            <li>• Build connection</li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                          <h6 className="text-xs font-semibold text-blue-200 mb-1">4. Shorts (10% of content)</h6>
+                          <ul className="space-y-1 text-gray-300 text-xs">
+                            <li>• <strong className="text-white">15-60 second</strong> tips</li>
+                            <li>• Repurposed from Reels</li>
+                            <li>• Drive to main channel</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">YouTube Posting Schedule:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Monday: Tutorial/How-to</li>
+                        <li>• Wednesday: Value bomb/List video</li>
+                        <li>• Friday: Personal story/Journey</li>
+                        <li>• Daily: <strong className="text-white">1-2 Shorts</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  {/* YouTube Growth Tactics */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">YouTube Growth Tactics:</h5>
+                    <div className="space-y-3">
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-blue-200 mb-1">1. SEO Optimization</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Keyword research (TubeBuddy, VidIQ)</li>
+                          <li>• Descriptive titles (<strong className="text-white">50-60 characters</strong>)</li>
+                          <li>• Tags with variations</li>
+                          <li>• Detailed descriptions with timestamps</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-blue-200 mb-1">2. Thumbnail Strategy</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Bold text (<strong className="text-white">3-5 words max</strong>)</li>
+                          <li>• Expressive face</li>
+                          <li>• High contrast colors</li>
+                          <li>• Test <strong className="text-white">3 options</strong>, pick best</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-blue-200 mb-1">3. Hook Formula (first 30 seconds)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• State the promise</li>
+                          <li>• Show the result</li>
+                          <li>• Tease the method</li>
+                          <li>• Ask to subscribe</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3 mt-3">
+                      <h6 className="text-sm font-semibold text-yellow-300 mb-2">Monetization Path:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">0-1K subs</strong>: Build library (no revenue)</li>
+                        <li>• <strong className="text-white">1K-10K</strong>: AdSense (<strong className="text-white">$500-$2K/month</strong>)</li>
+                        <li>• <strong className="text-white">10K-100K</strong>: Sponsorships (<strong className="text-white">$1K-$10K/video</strong>)</li>
+                        <li>• <strong className="text-white">100K+</strong>: Multiple streams (<strong className="text-white">$20K-$200K/month</strong>)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Cross-Platform Content System */}
+                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-green-400 mb-4">The Cross-Platform Content System</h4>
+                  <p className="text-gray-300 mb-4">Don't create unique content for each platform. Use this repurposing workflow:</p>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                      <h5 className="text-lg font-semibold text-green-300 mb-2">Weekly Content Creation:</h5>
+                      <div className="space-y-3">
+                        <div className="bg-green-800/20 border border-green-400/30 rounded p-3">
+                          <h6 className="text-sm font-semibold text-green-200 mb-1">Step 1: Long-Form Foundation (Monday, 2-3 hours)</h6>
+                          <ul className="space-y-1 text-gray-300 text-sm">
+                            <li>• Create YouTube video OR</li>
+                            <li>• Write <strong className="text-white">2,000-word</strong> article OR</li>
+                            <li>• Record podcast episode</li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-800/20 border border-green-400/30 rounded p-3">
+                          <h6 className="text-sm font-semibold text-green-200 mb-1">Step 2: Platform Adaptation (Tuesday, 1-2 hours)</h6>
+                          <p className="text-gray-300 text-sm mb-1">Extract <strong className="text-white">5-7 key points</strong> and create platform-specific versions:</p>
+                          <ul className="space-y-1 text-gray-300 text-sm">
+                            <li>• LinkedIn: Turn into carousel + <strong className="text-white">2 text posts</strong></li>
+                            <li>• Twitter: <strong className="text-white">2-3 threads</strong></li>
+                            <li>• Instagram: <strong className="text-white">3-4 reels</strong> + 1 carousel</li>
+                            <li>• TikTok: <strong className="text-white">3-5 short videos</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-800/20 border border-green-400/30 rounded p-3">
+                          <h6 className="text-sm font-semibold text-green-200 mb-1">Step 3: Micro-Content (Wednesday, 1 hour)</h6>
+                          <ul className="space-y-1 text-gray-300 text-sm">
+                            <li>• Pull <strong className="text-white">10-15 quotes</strong></li>
+                            <li>• Create quote graphics</li>
+                            <li>• Schedule throughout week</li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-800/20 border border-green-400/30 rounded p-3">
+                          <h6 className="text-sm font-semibold text-green-200 mb-1">Step 4: Engagement (Daily, 30-60 min)</h6>
+                          <ul className="space-y-1 text-gray-300 text-sm">
+                            <li>• Respond to comments</li>
+                            <li>• Engage with community</li>
+                            <li>• DM conversations</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Real Example:</h6>
+                      <p className="text-gray-300 text-sm mb-2">YouTube video "How I Built a $50K/Month Business" becomes:</p>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• LinkedIn post: "The <strong className="text-white">5 systems</strong> that got me to $50K/month"</li>
+                        <li>• LinkedIn carousel: "My $50K/month business breakdown"</li>
+                        <li>• Twitter thread: "<strong className="text-white">5 lessons</strong> from scaling to $50K/month"</li>
+                        <li>• <strong className="text-white">7 Twitter tips</strong>: Individual lessons as tweets</li>
+                        <li>• Instagram reel: "What $50K/month taught me"</li>
+                        <li>• <strong className="text-white">3 Instagram carousels</strong>: Systems breakdown</li>
+                        <li>• <strong className="text-white">10 quote graphics</strong>: Pull key statements</li>
+                        <li>• Email newsletter: Expanded insights</li>
+                      </ul>
+                      <p className="text-white font-semibold text-sm mt-2">Result: <strong className="text-green-400">1 video = 25+ content pieces</strong></p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Platform Priority Based on Goals */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">Platform Priority Based on Goals</h4>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-purple-300 mb-2">B2B Clients:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>LinkedIn (primary)</li>
+                        <li>Twitter (secondary)</li>
+                        <li>YouTube (long-term)</li>
+                      </ol>
+                    </div>
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-purple-300 mb-2">Creator Economy:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>Twitter (primary)</li>
+                        <li>YouTube (secondary)</li>
+                        <li>Instagram (tertiary)</li>
+                      </ol>
+                    </div>
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-purple-300 mb-2">Lifestyle/Personal Brand:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>Instagram (primary)</li>
+                        <li>TikTok (secondary)</li>
+                        <li>YouTube (long-term)</li>
+                      </ol>
+                    </div>
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                      <h6 className="text-sm font-semibold text-purple-300 mb-2">Expertise/Authority:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>YouTube (primary)</li>
+                        <li>LinkedIn (secondary)</li>
+                        <li>Twitter (tertiary)</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Advanced Multi-Platform Strategies */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">Advanced Multi-Platform Strategies</h4>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">The Platform Pyramid:</h5>
+                    <div className="space-y-3">
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-200 mb-1">Foundation: Email list (you own it)</h6>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                          <li>• Drive all platform traffic here</li>
+                          <li>• Weekly value-packed newsletter</li>
+                          <li>• Monetization hub</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-200 mb-1">Tier 1: Primary platform (where ideal audience lives)</h6>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                          <li>• Post <strong className="text-white">daily</strong></li>
+                          <li>• <strong className="text-white">60%</strong> of content effort</li>
+                          <li>• Deepest engagement</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-200 mb-1">Tier 2: Secondary platform (audience discovery)</h6>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                          <li>• Post <strong className="text-white">3-5x/week</strong></li>
+                          <li>• <strong className="text-white">30%</strong> of content effort</li>
+                          <li>• Repurposed content</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-200 mb-1">Tier 3: Experimental platform (future growth)</h6>
+                        <ul className="space-y-1 text-gray-300 text-sm">
+                          <li>• Post <strong className="text-white">1-2x/week</strong></li>
+                          <li>• <strong className="text-white">10%</strong> of content effort</li>
+                          <li>• Test and learn</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-2">Traffic Bridge Strategy:</h5>
+                    <p className="text-gray-300 mb-2">Use each platform to drive to others:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• YouTube → "Follow me on Twitter for daily tips"</li>
+                      <li>• Twitter → "Watch full breakdown on YouTube"</li>
+                      <li>• Instagram → "Read detailed guide in my newsletter"</li>
+                      <li>• LinkedIn → "See behind-the-scenes on Instagram"</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-yellow-300 mb-3">Tools for Multi-Platform Management:</h5>
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-yellow-200 mb-2">Content Creation:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Descript: Video editing + repurposing</li>
+                          <li>• Canva: Graphics for all platforms</li>
+                          <li>• CapCut: Short-form video editing</li>
+                          <li>• ChatGPT: Content ideation + repurposing</li>
+                        </ul>
+                      </div>
+                      <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-yellow-200 mb-2">Scheduling:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Buffer: LinkedIn, Twitter, Instagram</li>
+                          <li>• Later: Instagram-focused</li>
+                          <li>• TubeBuddy: YouTube optimization</li>
+                        </ul>
+                      </div>
+                      <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-yellow-200 mb-2">Analytics:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Taplio: LinkedIn analytics</li>
+                          <li>• Tweet Hunter: Twitter analytics</li>
+                          <li>• Instagram Insights: Native analytics</li>
+                          <li>• YouTube Analytics: Native analytics</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Reality of Multi-Platform */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">The Reality of Multi-Platform</h4>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-red-900/20 border border-red-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-red-300 mb-2">Timeline to see results:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">Month 1-3</strong>: Low growth, testing content</li>
+                        <li>• <strong className="text-white">Month 4-6</strong>: Finding what works</li>
+                        <li>• <strong className="text-white">Month 7-12</strong>: Momentum building</li>
+                        <li>• <strong className="text-white">Year 2</strong>: Compounding growth</li>
+                      </ul>
+                    </div>
+                    <div className="bg-red-900/20 border border-red-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-red-300 mb-2">Effort required:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">10-15 hours/week</strong> for 3 platforms</li>
+                        <li>• <strong className="text-white">15-20 hours/week</strong> for 4 platforms</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded p-4 mt-4">
+                    <p className="text-white font-semibold text-center">Don't try to dominate all platforms at once. Master one, then expand.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
