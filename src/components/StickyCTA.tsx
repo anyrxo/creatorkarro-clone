@@ -58,10 +58,9 @@ export default function StickyCTA({
                 )}
               </div>
             </div>
-            {/* @ts-ignore */}
             <Link 
               href={ctaLink}
-              {...polarProps}
+              {...polarProps as any}
               className="bg-white text-black px-5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 hover:bg-zinc-200 transition-colors"
             >
               {ctaText}

@@ -127,7 +127,7 @@ export default function BlogPage() {
   const displayCategories = ['All', ...categories]
 
   return (
-    <div className="min-h-screen bg-dark w-full overflow-x-hidden">
+    <div className="min-h-screen bg-black w-full overflow-x-hidden">
       <StickyCTA 
         price="$99/mo" 
         originalPrice="$399" 

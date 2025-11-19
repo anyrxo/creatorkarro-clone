@@ -91,7 +91,7 @@ export default function TestimonialsPage() {
 
   const testimonials = [
     {
-      name: "Emma Williams",
+      name: "Elena Rodriguez",
       role: "Content Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=32",
@@ -99,7 +99,7 @@ export default function TestimonialsPage() {
       results: "800 → 125K followers in 8 months"
     },
     {
-      name: "Emily Anderson",
+      name: "Sarah Jenkins",
       role: "Digital Entrepreneur",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=28",
@@ -107,7 +107,7 @@ export default function TestimonialsPage() {
       results: "$10K first launch, now doing $25K/mo"
     },
     {
-      name: "Devon Mitchell",
+      name: "Marcus Thorne",
       role: "Automation Consultant",
       course: "AI Automations",
       avatar: "https://i.pravatar.cc/150?img=67",
@@ -115,7 +115,7 @@ export default function TestimonialsPage() {
       results: "5 clients, $12K/mo recurring"
     },
     {
-      name: "Ashton Torres",
+      name: "Julian Chen",
       role: "AI Content Creator",
       course: "AI Influencers",
       avatar: "https://i.pravatar.cc/150?img=12",
@@ -123,7 +123,7 @@ export default function TestimonialsPage() {
       results: "200K followers, $8K/mo from AI content"
     },
     {
-      name: "Ryan Blackwood",
+      name: "Alex V.",
       role: "Digital Entrepreneur",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=52",
@@ -131,7 +131,7 @@ export default function TestimonialsPage() {
       results: "2x pricing, launches in weeks not months"
     },
     {
-      name: "Allan Rodriguez",
+      name: "Mateo Cruz",
       role: "Lifestyle Blogger",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=88",
@@ -139,7 +139,7 @@ export default function TestimonialsPage() {
       results: "2.3M views, 5K → 85K followers"
     },
     {
-      name: "Cameron Lee",
+      name: "Jordan K.",
       role: "Tech Entrepreneur",
       course: "AI Influencers",
       avatar: "https://i.pravatar.cc/150?img=71",
@@ -147,7 +147,7 @@ export default function TestimonialsPage() {
       results: "3x customers, same team size"
     },
     {
-      name: "Jessica Jorgan",
+      name: "Priya Patel",
       role: "Digital Product Creator",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=23",
@@ -155,7 +155,7 @@ export default function TestimonialsPage() {
       results: "$22K first week, 2x higher prices"
     },
     {
-      name: "Brendan Williams",
+      name: "Liam O'Connor",
       role: "Instagram Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=65",
@@ -163,7 +163,7 @@ export default function TestimonialsPage() {
       results: "4x follower growth, inbound brand deals"
     },
     {
-      name: "Jack Connors",
+      name: "Kaelen Moss",
       role: "Content Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=18",
@@ -171,7 +171,7 @@ export default function TestimonialsPage() {
       results: "100K followers, paid community launched"
     },
     {
-      name: "Kenji Tanaka",
+      name: "Kenji T.",
       role: "Fashion Blogger",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=33",
@@ -179,7 +179,7 @@ export default function TestimonialsPage() {
       results: "0 → 45K in 6 months, first $5K deal"
     },
     {
-      name: "David Park",
+      name: "David P.",
       role: "Fitness Coach",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=85",
@@ -187,7 +187,7 @@ export default function TestimonialsPage() {
       results: "$50K launch, 500+ students"
     },
     {
-      name: "Harold Thompson",
+      name: "H. Thompson",
       role: "Travel Blogger",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=17",
@@ -195,7 +195,7 @@ export default function TestimonialsPage() {
       results: "25 hours saved weekly, better results"
     },
     {
-      name: "James Wilson",
+      name: "Jay Wilson",
       role: "Tech Reviewer",
       course: "AI Influencers",
       avatar: "https://i.pravatar.cc/150?img=94",
@@ -203,7 +203,7 @@ export default function TestimonialsPage() {
       results: "$4K/mo from AI reviewer account"
     },
     {
-      name: "Emma Davis",
+      name: "Elise D.",
       role: "Life Coach",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=89",
@@ -211,7 +211,7 @@ export default function TestimonialsPage() {
       results: "2K → 75K, coaching waitlist"
     },
     {
-      name: "Michael Brown",
+      name: "Michael B.",
       role: "Photographer & Automation Specialist",
       course: "AI Automations",
       avatar: "https://i.pravatar.cc/150?img=76",
@@ -219,7 +219,7 @@ export default function TestimonialsPage() {
       results: "8 clients, dual income streams"
     },
     {
-      name: "Robert Johnson",
+      name: "Rob J.",
       role: "Nutritionist",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=50",
@@ -227,7 +227,7 @@ export default function TestimonialsPage() {
       results: "$15K launch, $5K/mo passive"
     },
     {
-      name: "Rachel Garcia",
+      name: "Rachel G.",
       role: "Music Producer",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=41",
@@ -235,7 +235,7 @@ export default function TestimonialsPage() {
       results: "Beats → Course, $8K/mo passive"
     },
     {
-      name: "Amanda White",
+      name: "Amara W.",
       role: "Beauty Influencer",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=21",
@@ -243,7 +243,7 @@ export default function TestimonialsPage() {
       results: "1.2M views, $10K/mo in deals"
     },
     {
-      name: "Marcus Washington",
+      name: "Marcus W.",
       role: "Business Coach",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=7",

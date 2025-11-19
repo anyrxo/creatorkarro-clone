@@ -24,7 +24,7 @@ export default function AgencyScaler() {
     setEvents([])
 
     const days = 30
-    let currentStats = { leads: 0, calls: 0, clients: 0, revenue: 0 }
+    const currentStats = { leads: 0, calls: 0, clients: 0, revenue: 0 }
 
     for (let i = 1; i <= days; i++) {
       await new Promise(r => setTimeout(r, 200))

@@ -53,8 +53,7 @@ export default function StandardCTA({
   // PRIMARY: Shimmer gradient button (Get Started, Enroll Now)
   if (variant === 'primary') {
     return (
-      // @ts-ignore - Next.js Link passes extra props to the underlying anchor tag
-      <Link href={href} {...linkProps} className={`inline-block ${className}`}>
+      <Link href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <ShimmerButton
             className="shadow-2xl"
@@ -76,8 +75,7 @@ export default function StandardCTA({
   // SECONDARY: Solid gradient button (Learn More)
   if (variant === 'secondary') {
     return (
-      // @ts-ignore
-      <Link href={href} {...linkProps} className={`inline-block ${className}`}>
+      <Link href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -93,8 +91,7 @@ export default function StandardCTA({
   // OUTLINE: Border only button
   if (variant === 'outline') {
     return (
-      // @ts-ignore
-      <Link href={href} {...linkProps} className={`inline-block ${className}`}>
+      <Link href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -109,8 +106,7 @@ export default function StandardCTA({
 
   // TERTIARY: Text link with hover effect (View Course)
   return (
-    // @ts-ignore
-    <Link href={href} {...linkProps} className={`inline-block ${className}`}>
+    <Link href={href} {...(linkProps as any)} className={`inline-block ${className}`}>
       <motion.span
         whileHover={{ x: 5 }}
         className={`font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center gap-2 ${

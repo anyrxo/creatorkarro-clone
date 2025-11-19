@@ -75,259 +75,111 @@ export default function TermsPage() {
               <p><strong>Last Updated:</strong> January 1, 2025</p>
             </div>
 
-            <section className="bg-zinc-900/50 rounded-2xl p-8 border border-zinc-700/50">
-              <h2 className="text-2xl font-bold mb-6 text-blue-400">Agreement to Terms</h2>
-              <p className="text-lg mb-4">
-                By accessing IImagined.ai ("we," "us," "our") or purchasing any of our courses, joining our community, or using our services, you agree to be bound by these Terms of Service and all applicable laws and regulations.
+            <section className="bg-zinc-900/50 rounded-2xl p-8 border border-zinc-700/50 text-sm">
+              <h2 className="text-2xl font-bold mb-6 text-blue-400">1. Agreement to Terms</h2>
+              <p className="mb-4 text-zinc-300">
+                By accessing IImagined.ai ("we," "us," "our") or purchasing any of our courses, joining our community, or using our services, you agree to be bound by these Terms of Service ("Terms"), our Privacy Policy, and all applicable laws and regulations. These Terms constitute a legally binding agreement between you and IImagined.ai regarding your use of our Platform.
               </p>
-              <p className="text-zinc-300 text-sm">
-                If you do not agree with any of these terms, you are prohibited from using or accessing our services. Continued use constitutes acceptance of any updated terms.
+              <p className="text-zinc-400 mb-4">
+                <strong>IF YOU DO NOT AGREE WITH ANY OF THESE TERMS, YOU ARE EXPRESSLY PROHIBITED FROM USING OR ACCESSING OUR SERVICES AND MUST DISCONTINUE USE IMMEDIATELY.</strong>
+              </p>
+              <p className="text-zinc-300">
+                We reserve the right, in our sole discretion, to make changes or modifications to these Terms at any time and for any reason. We will alert you about any changes by updating the "Last Updated" date of these Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms by your continued use of the Site after the date such revised Terms are posted.
               </p>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-purple-400">Service Description</h2>
-              
-              <div className="space-y-6">
-                <div className="bg-zinc-900/30 rounded-xl p-6 border border-zinc-700/30">
-                  <h3 className="text-xl font-semibold mb-4 text-blue-300">Digital Courses</h3>
-                  <ul className="space-y-2 text-zinc-300">
-                    <li>• Premium video courses on AI automation, content creation, and digital products</li>
-                    <li>• Course materials, templates, and resources delivered digitally</li>
-                    <li>• Access provided through third-party platforms (primarily Whop)</li>
-                    <li>• Course content and structure subject to updates and improvements</li>
-                  </ul>
-                </div>
-
-                <div className="bg-zinc-900/30 rounded-xl p-6 border border-zinc-700/30">
-                  <h3 className="text-xl font-semibold mb-4 text-green-300">Community Access</h3>
-                  <ul className="space-y-2 text-zinc-300">
-                    <li>• Private community forums and discussion groups</li>
-                    <li>• Direct access to instructors and fellow students</li>
-                    <li>• Regular live sessions, Q&As, and mastermind calls</li>
-                    <li>• Networking opportunities with other course members</li>
-                  </ul>
-                </div>
-
-                <div className="bg-zinc-900/30 rounded-xl p-6 border border-zinc-700/30">
-                  <h3 className="text-xl font-semibold mb-4 text-pink-300">Support Services</h3>
-                  <ul className="space-y-2 text-zinc-300">
-                    <li>• Technical support for course access and content</li>
-                    <li>• Strategic guidance and implementation assistance</li>
-                    <li>• Regular content updates and platform improvements</li>
-                    <li>• Priority support for premium members</li>
-                  </ul>
-                </div>
+            <section className="text-sm">
+              <h2 className="text-2xl font-bold mb-6 text-purple-400">2. Intellectual Property Rights</h2>
+              <div className="bg-zinc-900/30 rounded-xl p-6 border border-zinc-700/30 space-y-4">
+                <p className="text-zinc-300">
+                  Unless otherwise indicated, the Site and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the "Content") and the trademarks, service marks, and logos contained therein (the "Marks") are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the United States, international copyright laws, and international conventions.
+                </p>
+                <p className="text-zinc-300">
+                  The Content and the Marks are provided on the Site "AS IS" for your information and personal use only. Except as expressly provided in these Terms, no part of the Site and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.
+                </p>
+                <p className="text-zinc-300">
+                  Provided that you are eligible to use the Site, you are granted a limited license to access and use the Site and to download or print a copy of any portion of the Content to which you have properly gained access solely for your personal, non-commercial use. We reserve all rights not expressly granted to you in and to the Site, the Content, and the Marks.
+                </p>
               </div>
             </section>
 
-            <section className="bg-red-900/10 border border-red-500/20 rounded-2xl p-8">
-              <h2 className="text-2xl font-bold mb-6 text-red-400">Prohibited Uses</h2>
-              <div className="space-y-4">
-                <p>You may not use our services for any unlawful purpose or in any way that could damage, disable, or impair our services. Specifically prohibited:</p>
-                <ul className="space-y-3 text-zinc-300">
-                  <li className="flex items-start">
-                    <span className="text-red-400 mr-3 mt-1">•</span>
-                    <span><strong>Content Redistribution:</strong> Sharing, reselling, or redistributing course materials without explicit written permission</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-400 mr-3 mt-1">•</span>
-                    <span><strong>Account Sharing:</strong> Allowing others to access your account or sharing login credentials</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-400 mr-3 mt-1">•</span>
-                    <span><strong>Reverse Engineering:</strong> Attempting to copy, modify, or create derivative works from our content</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-400 mr-3 mt-1">•</span>
-                    <span><strong>Harmful Activities:</strong> Using our platform to harass others, spread misinformation, or engage in illegal activities</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-400 mr-3 mt-1">•</span>
-                    <span><strong>System Abuse:</strong> Attempting to hack, overwhelm, or otherwise compromise our systems</span>
-                  </li>
+            <section className="text-sm">
+              <h2 className="text-2xl font-bold mb-6 text-red-400">3. User Representations & Prohibited Activities</h2>
+              <div className="bg-red-900/10 border border-red-500/20 rounded-2xl p-8 space-y-4">
+                <p className="text-zinc-300">
+                  By using the Site, you represent and warrant that: (1) all registration information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update such registration information as necessary; (3) you have the legal capacity and you agree to comply with these Terms; (4) you are not a minor in the jurisdiction in which you reside; (5) you will not access the Site through automated or non-human means, whether through a bot, script, or otherwise; (6) you will not use the Site for any illegal or unauthorized purpose; and (7) your use of the Site will not violate any applicable law or regulation.
+                </p>
+                <p className="text-zinc-300">
+                  You may not access or use the Site for any purpose other than that for which we make the Site available. The Site may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.
+                </p>
+                <ul className="space-y-2 text-zinc-400 list-disc pl-5">
+                  <li>Systematically retrieve data or other content from the Site to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.</li>
+                  <li>Make any unauthorized use of the Site, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretenses.</li>
+                  <li>Circumvent, disable, or otherwise interfere with security-related features of the Site, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Site and/or the Content contained therein.</li>
+                  <li>Engage in unauthorized framing of or linking to the Site.</li>
+                  <li>Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.</li>
+                  <li>Make improper use of our support services or submit false reports of abuse or misconduct.</li>
+                  <li>Engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.</li>
+                  <li>Interfere with, disrupt, or create an undue burden on the Site or the networks or services connected to the Site.</li>
+                  <li>Sell or otherwise transfer your profile.</li>
                 </ul>
-                <p className="text-sm text-zinc-400 mt-4">
-                  Violation of these terms may result in immediate termination of access without refund.
+              </div>
+            </section>
+
+            <section className="text-sm">
+              <h2 className="text-2xl font-bold mb-6 text-yellow-400">4. Purchases and Payment</h2>
+              <div className="bg-yellow-900/10 border border-yellow-500/20 rounded-xl p-6 space-y-4">
+                <p className="text-zinc-300">
+                  We accept the following forms of payment: Visa, Mastercard, American Express, Discover, and PayPal via our secure payment processors (Stripe, Polar, Whop). You agree to provide current, complete, and accurate purchase and account information for all purchases made via the Site. You further agree to promptly update your account and payment information, including email address, payment method, and payment card expiration date, so that we can complete your transactions and contact you as needed. Sales tax will be added to the price of purchases as deemed required by us. We may change prices at any time. All payments shall be in U.S. dollars.
+                </p>
+                <p className="text-zinc-300">
+                  You agree to pay all charges at the prices then in effect for your purchases and any applicable shipping fees, and you authorize us to charge your chosen payment provider for any such amounts upon placing your order. If your order is subject to recurring charges, then you consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until such time as you cancel the applicable order. We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received payment.
+                </p>
+                <p className="text-zinc-300 font-bold">
+                  NO REFUNDS WILL BE ISSUED FOR "CHANGE OF MIND" OR "FAILURE TO IMPLEMENT". REFER TO OUR REFUND POLICY FOR SPECIFIC CRITERIA RELATING TO OUR CONDITIONAL GUARANTEE.
                 </p>
               </div>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-yellow-400">Payment Terms</h2>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 rounded-xl p-6 border border-blue-500/20">
-                  <h3 className="text-lg font-semibold mb-4 text-blue-300">Course Purchases</h3>
-                  <ul className="space-y-2 text-sm text-zinc-300">
-                    <li>• All prices are in USD and subject to change</li>
-                    <li>• Payment processed securely through Stripe</li>
-                    <li>• Immediate access granted upon successful payment</li>
-                    <li>• No recurring charges for one-time purchases</li>
-                  </ul>
-                </div>
-
-                <div className="bg-gradient-to-br from-green-900/20 to-blue-900/20 rounded-xl p-6 border border-green-500/20">
-                  <h3 className="text-lg font-semibold mb-4 text-green-300">Subscription Services</h3>
-                  <ul className="space-y-2 text-sm text-zinc-300">
-                    <li>• Monthly subscriptions auto-renew unless cancelled</li>
-                    <li>• Cancel anytime through your account dashboard</li>
-                    <li>• Refunds prorated only in specific circumstances</li>
-                    <li>• Price changes communicated 30 days in advance</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-cyan-400">Intellectual Property Rights</h2>
-              <div className="bg-cyan-900/10 border border-cyan-500/20 rounded-xl p-6">
-                <p className="mb-4 text-zinc-300">All content, including but not limited to courses, videos, text, graphics, logos, and software, is the exclusive property of IImagined.ai and protected by copyright, trademark, and other intellectual property laws.</p>
-                <div className="space-y-3">
-                  <div>
-                    <h4 className="font-semibold text-cyan-300 mb-2">Your License</h4>
-                    <p className="text-sm text-zinc-300">We grant you a limited, non-exclusive, non-transferable license to access and use our content for personal educational purposes only.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-cyan-300 mb-2">Restrictions</h4>
-                    <p className="text-sm text-zinc-300">You may not modify, distribute, transmit, display, reproduce, or create derivative works from our content without express written consent.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-cyan-300 mb-2">Termination</h4>
-                    <p className="text-sm text-zinc-300">Your license terminates immediately upon breach of these terms or termination of your account.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-indigo-400">Disclaimers & Limitations</h2>
-              <div className="space-y-6">
-                <div className="bg-indigo-900/10 border border-indigo-500/20 rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-3 text-indigo-300">Educational Purpose</h3>
-                  <p className="text-zinc-300 text-sm">
-                    Our courses are for educational purposes only. We do not guarantee specific results, income, or success. Your results depend on your effort, implementation, and market conditions beyond our control.
-                  </p>
-                </div>
-                
-                <div className="bg-orange-900/10 border border-orange-500/20 rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-3 text-orange-300">No Warranties</h3>
-                  <p className="text-zinc-300 text-sm">
-                    Services are provided "as is" without warranties of any kind. We disclaim all warranties, express or implied, including merchantability, fitness for a particular purpose, and non-infringement.
-                  </p>
-                </div>
-
-                <div className="bg-red-900/10 border border-red-500/20 rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-3 text-red-300">Limitation of Liability</h3>
-                  <p className="text-zinc-300 text-sm">
-                    In no event shall IImagined.ai be liable for any indirect, incidental, special, or consequential damages, including loss of profits, data, or use, regardless of the theory of liability.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-green-400">User Responsibilities</h2>
-              <div className="bg-green-900/10 border border-green-500/20 rounded-xl p-6">
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-green-300 mb-2">Account Security</h4>
-                    <p className="text-sm text-zinc-300">You are responsible for maintaining the confidentiality of your account credentials and all activities under your account.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-green-300 mb-2">Accurate Information</h4>
-                    <p className="text-sm text-zinc-300">You must provide accurate, current, and complete information during registration and keep it updated.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-green-300 mb-2">Compliance</h4>
-                    <p className="text-sm text-zinc-300">You must comply with all applicable laws and regulations when using our services.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-green-300 mb-2">Community Standards</h4>
-                    <p className="text-sm text-zinc-300">Maintain respectful, professional conduct in all community interactions. No spam, harassment, or inappropriate content.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-purple-400">Termination</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-zinc-900/30 rounded-xl p-6 border border-zinc-700/30">
-                  <h3 className="text-lg font-semibold mb-4 text-purple-300">By You</h3>
-                  <p className="text-zinc-300 text-sm">
-                    You may terminate your account at any time by contacting support. Termination does not entitle you to a refund except as specified in our Refund Policy.
-                  </p>
-                </div>
-                <div className="bg-zinc-900/30 rounded-xl p-6 border border-zinc-700/30">
-                  <h3 className="text-lg font-semibold mb-4 text-purple-300">By Us</h3>
-                  <p className="text-zinc-300 text-sm">
-                    We may terminate or suspend your access immediately for violations of these terms, fraudulent activity, or other reasons we deem necessary to protect our services.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-orange-400">Dispute Resolution</h2>
-              <div className="bg-orange-900/10 border border-orange-500/20 rounded-xl p-6">
-                <p className="text-zinc-300 mb-4">
-                  Any disputes arising from these terms or your use of our services shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association.
+            <section className="text-sm">
+              <h2 className="text-2xl font-bold mb-6 text-indigo-400">5. Earnings Disclaimer</h2>
+              <div className="bg-indigo-900/10 border border-indigo-500/20 rounded-xl p-6 space-y-4">
+                <p className="text-zinc-300">
+                  Every effort has been made to accurately represent this product and its potential. However, there is no guarantee that you will earn any money using the techniques and ideas in these materials. Examples in these materials are not to be interpreted as a promise or guarantee of earnings. Earning potential is entirely dependent on the person using our product, ideas, and techniques. We do not position this product as a "get rich quick scheme."
                 </p>
-                <div className="space-y-2 text-sm text-zinc-400">
-                  <p>• Arbitration shall take place in the United States</p>
-                  <p>• The arbitrator's decision shall be final and binding</p>
-                  <p>• You waive your right to participate in class action lawsuits</p>
-                  <p>• Small claims court disputes under $10,000 may be pursued individually</p>
-                </div>
+                <p className="text-zinc-300">
+                  Your level of success in attaining the results claimed in our materials depends on the time you devote to the program, ideas and techniques mentioned, your finances, knowledge and various skills. Since these factors differ according to individuals, we cannot guarantee your success or income level. Nor are we responsible for any of your actions.
+                </p>
+                <p className="text-zinc-300">
+                  Materials in our product and our website may contain information that includes or is based upon forward-looking statements within the meaning of the securities litigation reform act of 1995. Forward-looking statements give our expectations or forecasts of future events. You can identify these statements by the fact that they do not relate strictly to historical or current facts. They use words such as "anticipate," "estimate," "expect," "project," "intend," "plan," "believe," and other words and terms of similar meaning in connection with a description of potential earnings or financial performance.
+                </p>
               </div>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-cyan-400">Governing Law</h2>
+            <section className="text-sm">
+              <h2 className="text-2xl font-bold mb-6 text-orange-400">6. Dispute Resolution & Class Action Waiver</h2>
+              <div className="bg-orange-900/10 border border-orange-500/20 rounded-xl p-6 space-y-4">
+                <p className="text-zinc-300">
+                  <strong>Binding Arbitration:</strong> If the Parties are unable to resolve a Dispute through informal negotiations, the Dispute (except those Disputes expressly excluded below) will be finally and exclusively resolved by binding arbitration. YOU UNDERSTAND THAT WITHOUT THIS PROVISION, YOU WOULD HAVE THE RIGHT TO SUE IN COURT AND HAVE A JURY TRIAL.
+                </p>
+                <p className="text-zinc-300">
+                  <strong>Class Action Waiver:</strong> The Parties agree that any arbitration shall be limited to the Dispute between the Parties individually. To the full extent permitted by law, (a) no arbitration shall be joined with any other proceeding; (b) there is no right or authority for any Dispute to be arbitrated on a class-action basis or to utilize class action procedures; and (c) there is no right or authority for any Dispute to be brought in a purported representative capacity on behalf of the general public or any other persons.
+                </p>
+              </div>
+            </section>
+
+            <section className="text-sm">
+              <h2 className="text-2xl font-bold mb-6 text-cyan-400">7. Limitation of Liability</h2>
+              <p className="text-zinc-300 bg-zinc-900/50 p-6 rounded-xl border border-zinc-800">
+                IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US DURING THE SIX (6) MONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING.
+              </p>
+            </section>
+
+            <section className="text-sm">
+              <h2 className="text-2xl font-bold mb-6 text-pink-400">8. Indemnification</h2>
               <p className="text-zinc-300">
-                These Terms of Service are governed by and construed in accordance with the laws of the United States and the State of Delaware, without regard to conflict of law principles.
+                You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys' fees and expenses, made by any third party due to or arising out of: (1) your use of the Site; (2) breach of these Terms of Service; (3) any breach of your representations and warranties set forth in these Terms of Service; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Site with whom you connected via the Site.
               </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-yellow-400">Changes to Terms</h2>
-              <p className="text-zinc-300 mb-4">
-                We reserve the right to modify these terms at any time. Material changes will be communicated via email or prominent notice on our platform. Continued use after changes constitutes acceptance of updated terms.
-              </p>
-              <div className="bg-yellow-900/10 border border-yellow-500/20 rounded-xl p-4">
-                <p className="text-sm text-zinc-400">
-                  We recommend reviewing these terms periodically to stay informed of any updates that may affect your use of our services.
-                </p>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-pink-400">Severability</h2>
-              <p className="text-zinc-300">
-                If any provision of these terms is found to be unenforceable, the remaining provisions will remain in full force and effect. The unenforceable provision will be replaced with an enforceable provision that most closely achieves the original intent.
-              </p>
-            </section>
-
-            <section className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-2xl p-8 border border-blue-500/30 text-center">
-              <h2 className="text-3xl font-bold mb-6 text-white">Questions About These Terms?</h2>
-              <p className="text-zinc-200 mb-6 text-lg">
-                Need clarification on any of these terms? We're here to help.
-              </p>
-              <div className="space-y-2">
-                <p className="text-blue-300">
-                  <strong>Legal Inquiries:</strong>{' '}
-                  <a href="mailto:legal@iimagined.ai" className="text-blue-400 hover:text-blue-300 underline">
-                    legal@iimagined.ai
-                  </a>
-                </p>
-                <p className="text-purple-300">
-                  <strong>General Support:</strong>{' '}
-                  <a href="mailto:support@iimagined.ai" className="text-purple-400 hover:text-purple-300 underline">
-                    support@iimagined.ai
-                  </a>
-                </p>
-              </div>
             </section>
           </div>
         </div>

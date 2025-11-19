@@ -247,11 +247,10 @@ export function BeautifulHero() {
               size="lg"
             />
             <StandardCTA
-              variant="secondary"
+              variant="outline"
               text="View Courses"
               href="#courses"
               size="lg"
-              className="bg-white/5 hover:bg-white/10 border border-white/10"
             />
           </motion.div>
         </motion.div>

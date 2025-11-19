@@ -65,47 +65,48 @@ export default function RefundPolicyPage() {
               className={`bg-zinc-900 border border-zinc-700 rounded-lg p-8 my-12 card-hover hover-lift scroll-fade-up ${guaranteeAnimation.isVisible ? 'visible' : ''}`}
             >
               <h2 className="text-3xl font-bold mb-6 text-center">
-                <NumberTicker value={365} className="text-3xl font-bold text-green-400 inline-block" />-Day
+                <NumberTicker value={30} className="text-3xl font-bold text-green-400 inline-block" />-Day
                 <span className="text-white"> Action-Based Money-Back Guarantee</span>
               </h2>
 
               <p className="mb-6">
-                However, as stated on our website, we do offer a <strong>365-Day Action-Based Money-Back Guarantee.</strong>
+                We are incredibly confident that IImagined.ai will help you achieve results. That's why we offer a <strong>30-Day Action-Based Money-Back Guarantee.</strong>
               </p>
 
-              <TypingAnimation
-                text="We are confident that IImagined will help you achieve massive success. That's why we're offering a 365-Day Action-Based Money-Back Guarantee."
-                className="mb-6"
-                duration={50}
-              />
-
-              <p className="mb-8">
-                If you follow the program and do not achieve at least one video with <NumberTicker value={1} className="font-bold text-blue-400 inline-block" /> million views within <NumberTicker value={12} className="font-bold text-green-400 inline-block" /> months, we'll refund your full purchase price—no questions asked.
+              <p className="mb-8 text-zinc-300">
+                This guarantee is NOT a "no questions asked" or "change of mind" refund policy. It is designed to protect the value of our intellectual property and community while ensuring that serious students who do the work are protected. If you follow the program, implement the strategies, and do not see results, we will refund your investment.
               </p>
 
-              <h3 className="text-2xl font-bold mb-4">To qualify for this guarantee, you must:</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">To qualify for a refund, you must demonstrate that you have implemented the system:</h3>
 
-              <div className="space-y-4">
+              <div className="space-y-4 text-sm md:text-base">
                 <div className="flex items-start">
                   <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">1</span>
-                  <span>Post at least <NumberTicker value={4} className="font-semibold text-blue-400 inline-block" /> pieces of content per week throughout the program.</span>
+                  <span><strong>Course Completion:</strong> You must have watched 100% of the core curriculum videos (tracked via our backend analytics).</span>
                 </div>
                 <div className="flex items-start">
                   <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">2</span>
-                  <span>Complete the full course and implement the strategies shared.</span>
+                  <span><strong>Action Items:</strong> You must provide completed worksheets and proof of implementation for each major module.</span>
                 </div>
                 <div className="flex items-start">
                   <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">3</span>
-                  <span>Submit your Instagram page for an audit at least once during your learning.</span>
+                  <span><strong>Community Participation:</strong> You must have posted at least once in the community introducing yourself and engaged with the material.</span>
                 </div>
                 <div className="flex items-start">
                   <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">4</span>
-                  <span>Attend at least one live mastermind session in our community.</span>
+                  <span><strong>Proof of Work:</strong> You must provide screenshots of your setup (e.g., Instagram account optimization, AI model creation, n8n workflow setup) and outreach attempts.</span>
                 </div>
                 <div className="flex items-start">
                   <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">5</span>
-                  <span>Request support and help by reaching out to our 24/7 community or support team.</span>
+                  <span><strong>Fair Attempt:</strong> You must demonstrate that you have consistently applied the strategies for at least 14 days before requesting a refund.</span>
                 </div>
+              </div>
+              
+              <div className="mt-8 p-4 bg-red-900/20 border border-red-500/20 rounded-lg">
+                <h4 className="text-red-400 font-bold mb-2">Non-Disparagement</h4>
+                <p className="text-xs text-zinc-400">
+                  By purchasing, you agree that if your refund request is denied due to failure to meet these criteria, or if you are granted a refund, you will not disparage IImagined.ai, its instructors, or its community publicly or privately. Violation of this clause may result in legal action and forfeiture of any potential refund.
+                </p>
               </div>
             </div>
 
@@ -113,14 +114,14 @@ export default function RefundPolicyPage() {
               ref={emailAnimation.elementRef}
               className={`text-center text-xl font-semibold scroll-fade-up ${emailAnimation.isVisible ? 'visible' : ''}`}
             >
-              If you meet these criteria and still do not hit 1 million views on at least one video within 12 months, email me at{' '}
+              If you meet these criteria and still want a refund within 30 days, email me at{' '}
               <a
                 href="mailto:biz@iimagined.ai"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
                 biz@iimagined.ai
               </a>
-              , and I'll refund 100% of your purchase.
+              , with your proof of work, and I'll refund 100% of your purchase.
             </p>
 
             <div 

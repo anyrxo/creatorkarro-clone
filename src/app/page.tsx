@@ -46,7 +46,7 @@ export default function HomePage() {
   const allAccessFeatures = [
     { text: "Full access to all 4 Flagship Courses", highlight: "4 Premium Courses" },
     { text: "Weekly Live Coaching Calls with Anyro", highlight: "Live Coaching" },
-    { text: "Private 'Inner Circle' Discord Community", highlight: "Inner Circle" },
+    { text: "Private 'Empire Collective' Discord Community", highlight: "Empire Collective" },
     { text: "Exclusive Resource Library (Templates, Prompts)", highlight: "Resource Library" },
     { text: "Lifetime Updates & New Modules", highlight: "Lifetime Updates" }
   ]
@@ -96,7 +96,7 @@ export default function HomePage() {
 
   const testimonials = [
     {
-      name: "Emma Williams",
+      name: "Elena Rodriguez",
       role: "Content Creator",
       course: "Instagram Ignited",
       avatar: "https://i.pravatar.cc/150?img=32",
@@ -104,7 +104,7 @@ export default function HomePage() {
       rating: 5
     },
     {
-      name: "Sarah Mitchell",
+      name: "Sarah M.",
       role: "Digital Entrepreneur", 
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=45",
@@ -112,7 +112,7 @@ export default function HomePage() {
       rating: 5
     },
     {
-      name: "Devon Mitchell",
+      name: "Marcus Thorne",
       role: "Automation Specialist",
       course: "N8N AI Automations", 
       avatar: "https://i.pravatar.cc/150?img=78",
@@ -257,14 +257,14 @@ export default function HomePage() {
                        <span className="text-6xl font-bold text-white tracking-tighter">$99</span>
                        <div className="flex flex-col mb-2">
                          <span className="text-zinc-400 font-medium text-lg">/month</span>
-                         <span className="text-zinc-600 line-through text-sm">$199/mo value</span>
+                         <span className="text-zinc-600 line-through text-sm">Total Ecosystem Value: $2,500+</span>
                        </div>
                      </div>
                      
                      <div className="flex flex-col gap-3">
                         <Link href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5" className="w-full group relative">
-                          <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
-                          <div className="relative w-full bg-black rounded-xl leading-none flex items-center justify-center px-8 py-4">
+                          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 opacity-50 group-hover:opacity-100 blur-sm transition duration-200"></div>
+                          <div className="relative w-full bg-black rounded-xl leading-none flex items-center justify-center px-8 py-4 border border-zinc-800 group-hover:border-purple-500/50">
                             <span className="text-white font-bold text-lg group-hover:text-gray-100 transition duration-200 flex items-center gap-2">
                               Get Instant Access <ArrowRight size={18} />
                             </span>

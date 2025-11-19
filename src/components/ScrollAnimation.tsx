@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { cn } from '@/lib/utils'
 
 interface ScrollAnimationProps {
@@ -37,7 +37,7 @@ export default function ScrollAnimation({
           setIsVisible(false)
         }
       },
-      { threshold, rootMargin: '0px 0px -50px 0px' }
+      { threshold: 0, rootMargin: '0px 0px -10% 0px' } // More lenient threshold and margin
     )
 
     if (elementRef.current) {
