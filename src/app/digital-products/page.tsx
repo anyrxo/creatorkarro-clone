@@ -14,6 +14,7 @@ import {
   HeroSection,
   SectionHeader
 } from '@/components/course/CourseLayout'
+import PainPointIcon from '@/components/PainPointIcon'
 import StandardCTA from '@/components/StandardCTA'
 import StickyCTA from '@/components/StickyCTA'
 import EcosystemGraph from '@/components/EcosystemGraph'
