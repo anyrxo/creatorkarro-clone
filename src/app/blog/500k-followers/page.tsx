@@ -1699,135 +1699,346 @@ The platform doesn't matter as much as your execution and consistency. Pick the 
                 </div>
               </div>
 
-**Algorithm Hack #5: The "Strategic Shadowban Avoidance" System**
+              {/* Algorithm Hack #5 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">Algorithm Hack #5: The "Strategic Shadowban Avoidance" System</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">The Discovery</h5>
+                <p className="text-gray-300 mb-6">
+                  Instagram shadowbans (reduced reach without notification) account for 70%+ of "my growth stopped" complaints. Avoiding triggers is critical.
+                </p>
 
-**The Discovery**
-Instagram shadowbans (reduced reach without notification) account for 70%+ of "my growth stopped" complaints. Avoiding triggers is critical.
+                <h5 className="text-lg font-semibold text-red-400 mb-3">Known Shadowban Triggers (2026)</h5>
+                <ol className="space-y-2 text-gray-300 mb-6 list-decimal list-inside">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">❌</span>
+                    <span>Using banned hashtags (changes weekly - check status at https://shadowban-check.com)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">❌</span>
+                    <span>Posting same caption/hashtags repeatedly (flags as spam)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">❌</span>
+                    <span>Mass following/unfollowing (50+ per day)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">❌</span>
+                    <span>Using bots, automation tools, or third-party apps</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">❌</span>
+                    <span>Receiving multiple reports (even if unfounded)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">❌</span>
+                    <span>Including certain words in captions (list constantly updated by Meta)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400">❌</span>
+                    <span>Overly aggressive CTAs (too many links, demands to click)</span>
+                  </li>
+                </ol>
 
-**Known Shadowban Triggers (2026)**
-1. ❌ Using banned hashtags (changes weekly - check status at https://shadowban-check.com)
-2. ❌ Posting same caption/hashtags repeatedly (flags as spam)
-3. ❌ Mass following/unfollowing (50+ per day)
-4. ❌ Using bots, automation tools, or third-party apps
-5. ❌ Receiving multiple reports (even if unfounded)
-6. ❌ Including certain words in captions (list constantly updated by Meta)
-7. ❌ Overly aggressive CTAs (too many links, demands to click)
+                <h5 className="text-lg font-semibold text-green-400 mb-3">Shadowban Avoidance Protocol</h5>
+                
+                <h6 className="text-md font-semibold text-white mb-2">Daily Limits</h6>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span><strong className="text-white">Follows:</strong> Max 30/day (space them out over hours, not all at once)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span><strong className="text-white">Unfollows:</strong> Max 30/day</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span><strong className="text-white">Likes:</strong> Max 150/day (avoid liking 50 posts in 5 minutes)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span><strong className="text-white">Comments:</strong> Max 100/day (must be genuine, avoid copy-paste)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span><strong className="text-white">DMs:</strong> Max 50/day to non-followers (spam trigger)</span>
+                  </li>
+                </ul>
 
-**Shadowban Avoidance Protocol**
+                <h6 className="text-md font-semibold text-white mb-2">Hashtag Safety System</h6>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Never use the same 30 hashtags on multiple posts</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Rotate between 5-6 different hashtag sets</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Check hashtag status before posting (avoid banned ones)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Mix hashtag sizes (large, medium, small)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Exclude hashtags from Stories (they don't help anyway)</span>
+                  </li>
+                </ul>
 
-**Daily Limits**
-- Follows: Max 30/day (space them out over hours, not all at once)
-- Unfollows: Max 30/day
-- Likes: Max 150/day (avoid liking 50 posts in 5 minutes)
-- Comments: Max 100/day (must be genuine, avoid copy-paste)
-- DMs: Max 50/day to non-followers (spam trigger)
+                <h6 className="text-md font-semibold text-white mb-2">Caption Red Flags to Avoid</h6>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">•</span>
+                    <span>"Link in bio" more than once per caption</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">•</span>
+                    <span>Words like "forex," "Bitcoin" (if not in finance niche)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">•</span>
+                    <span>Excessive emojis (more than 5 per caption)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">•</span>
+                    <span>Generic engagement bait ("double tap if you agree")</span>
+                  </li>
+                </ul>
 
-**Hashtag Safety System**
-- Never use the same 30 hashtags on multiple posts
-- Rotate between 5-6 different hashtag sets
-- Check hashtag status before posting (avoid banned ones)
-- Mix hashtag sizes (large, medium, small)
-- Exclude hashtags from Stories (they don't help anyway)
+                <h6 className="text-md font-semibold text-white mb-2">How to Check if You're Shadowbanned</h6>
+                <ol className="space-y-2 text-gray-300 mb-6 list-decimal list-inside">
+                  <li>Post to feed with unique hashtag (create: #yourusername2026test)</li>
+                  <li>Check if post appears in that hashtag from logged-out account</li>
+                  <li>If it doesn't show up = shadowbanned</li>
+                  <li>Recovery time: 7-14 days of clean behavior</li>
+                </ol>
 
-**Caption Red Flags to Avoid**
-- "Link in bio" more than once per caption
-- Words like "forex," "Bitcoin" (if not in finance niche)
-- Excessive emojis (more than 5 per caption)
-- Generic engagement bait ("double tap if you agree")
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                  <p className="text-green-300 font-semibold"><strong className="text-white">Expected Results:</strong> Avoiding shadowbans alone can preserve 40-60% of your reach that would otherwise be lost</p>
+                </div>
+              </div>
 
-**How to Check if You're Shadowbanned**
-1. Post to feed with unique hashtag (create: #yourusername2026test)
-2. Check if post appears in that hashtag from logged-out account
-3. If it doesn't show up = shadowbanned
-4. Recovery time: 7-14 days of clean behavior
+              {/* Algorithm Hack #6 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">Algorithm Hack #6: The "Collaboration Multiplier"</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">The Discovery</h5>
+                <p className="text-gray-300 mb-6">
+                  Instagram's algorithm massively boosts collaborative posts (Collabs feature) because they generate 2x the engagement signals (both audiences engage on same post).
+                </p>
 
-**Expected Results**: Avoiding shadowbans alone can preserve 40-60% of your reach that would otherwise be lost
+                <h5 className="text-lg font-semibold text-green-400 mb-3">How to Exploit It</h5>
+                <ol className="space-y-2 text-gray-300 mb-6 list-decimal list-inside">
+                  <li>Find creators at similar follower counts in your niche</li>
+                  <li>Create collaborative carousel or Reel (both accounts tagged as authors)</li>
+                  <li>Post appears on BOTH profiles simultaneously</li>
+                  <li>Both audiences engage → algorithm sees 2x signals → exponential reach</li>
+                </ol>
 
-**Algorithm Hack #6: The "Collaboration Multiplier"**
+                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-blue-400 mb-2">Real Data</h5>
+                  <p className="text-gray-300 mb-2">Solo post from 50K account: <strong className="text-white">35,000 reach</strong></p>
+                  <p className="text-gray-300 mb-2">Collab post between two 50K accounts: <strong className="text-white">240,000 reach</strong> (not 70K - way more than additive)</p>
+                  <p className="text-blue-300 text-sm mt-2">Why: Algorithm detects high engagement velocity from two distinct audiences, interprets as exceptional content, pushes to Explore.</p>
+                </div>
 
-**The Discovery**
-Instagram's algorithm massively boosts collaborative posts (Collabs feature) because they generate 2x the engagement signals (both audiences engage on same post).
+                <h5 className="text-lg font-semibold text-purple-400 mb-3">Best Collaboration Formats</h5>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>"Creator A vs Creator B: Our different approaches to X"</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Joint case study: "We both tested this strategy - here are our results"</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Debate format: "Creator A says X, Creator B says Y - who's right?"</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Combined transformation: "How we both grew from 0 to 50K"</span>
+                  </li>
+                </ul>
 
-**How to Exploit It**
-1. Find creators at similar follower counts in your niche
-2. Create collaborative carousel or Reel (both accounts tagged as authors)
-3. Post appears on BOTH profiles simultaneously
-4. Both audiences engage → algorithm sees 2x signals → exponential reach
+                <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3 mb-4">
+                  <h6 className="text-md font-semibold text-yellow-400 mb-2">Collaboration Outreach Template</h6>
+                  <p className="text-gray-300 text-sm italic">"Hey [Name], love your content on [niche]. I have [X followers] in the [same niche]. Want to collab on a post? I'm thinking [specific idea]. We'd both post it as a Collab - usually these get 3-5x normal reach. Interested?"</p>
+                </div>
 
-**Real Data**
-Solo post from 50K account: 35,000 reach
-Collab post between two 50K accounts: 240,000 reach (not 70K - way more than additive)
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                  <p className="text-green-300 font-semibold"><strong className="text-white">Expected Results:</strong> Each collab can generate 2,000-5,000 followers from the partner's audience + Explore boost</p>
+                </div>
+              </div>
 
-Why: Algorithm detects high engagement velocity from two distinct audiences, interprets as exceptional content, pushes to Explore.
+              {/* Algorithm Hack #7 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">Algorithm Hack #7: The "Story Reply Funnel"</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">The Discovery</h5>
+                <p className="text-gray-300 mb-6">
+                  Instagram prioritizes content from accounts you've recently interacted with via DM. If someone replies to your Story, your next feed post appears higher in their feed.
+                </p>
 
-**Best Collaboration Formats**
-- "Creator A vs Creator B: Our different approaches to X"
-- Joint case study: "We both tested this strategy - here are our results"
-- Debate format: "Creator A says X, Creator B says Y - who's right?"
-- Combined transformation: "How we both grew from 0 to 50K"
+                <h5 className="text-lg font-semibold text-green-400 mb-3">How to Exploit It</h5>
+                <p className="text-gray-300 mb-4">Create Stories specifically designed to generate DM replies:</p>
+                
+                <h6 className="text-md font-semibold text-white mb-2">High-Response Story Formats</h6>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Poll: "Should I post about X or Y tomorrow?" (investment in outcome)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Question sticker: "What's your biggest struggle with [niche topic]?"</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>This or That: "Coffee or tea?" with relevant images</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Quiz: "Can you guess which strategy grew me faster?"</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Controversial take: "Hot take: [contrarian opinion] - agree or disagree?"</span>
+                  </li>
+                </ul>
 
-**Collaboration Outreach Template**
-"Hey [Name], love your content on [niche]. I have [X followers] in the [same niche]. Want to collab on a post? I'm thinking [specific idea]. We'd both post it as a Collab - usually these get 3-5x normal reach. Interested?"
+                <h6 className="text-md font-semibold text-white mb-2">The Funnel</h6>
+                <ol className="space-y-2 text-gray-300 mb-6 list-decimal list-inside">
+                  <li>Post engaging Story (generates 50-200 DM replies)</li>
+                  <li>Reply to every DM within 2 hours (strengthens connection)</li>
+                  <li>Post feed content 2-3 hours later (appears high in those 200 people's feeds)</li>
+                  <li>Those 200 people engage early → velocity → algorithm boost</li>
+                </ol>
 
-**Expected Results**: Each collab can generate 2,000-5,000 followers from the partner's audience + Explore boost
+                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-blue-400 mb-2">Real Example</h5>
+                  <p className="text-gray-300 mb-2">Creator without Story funnel: Posts to feed → <strong className="text-white">2,400 reach first hour</strong></p>
+                  <p className="text-gray-300 mb-2">Creator with Story funnel: 180 Story replies → Posts to feed → <strong className="text-white">8,900 reach first hour</strong></p>
+                  <p className="text-blue-300 font-semibold">Result: 3.7x better early velocity from DM interactions</p>
+                </div>
 
-**Algorithm Hack #7: The "Story Reply Funnel"**
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                  <p className="text-green-300 font-semibold"><strong className="text-white">Expected Results:</strong> 2-4x improvement in feed post reach by warming up audience via Stories first</p>
+                </div>
+              </div>
 
-**The Discovery**
-Instagram prioritizes content from accounts you've recently interacted with via DM. If someone replies to your Story, your next feed post appears higher in their feed.
+              {/* Complete Algorithm Strategy Summary */}
+              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                <h4 className="text-xl font-bold text-white mb-4">The Complete Algorithm Exploit Strategy</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="text-lg font-semibold text-purple-400 mb-3">Day Before Posting</h5>
+                    <ul className="space-y-2 text-gray-300">
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-400 mt-1">•</span>
+                        <span><strong className="text-white">8pm:</strong> Post engaging Story with question/poll (collect DM replies)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-400 mt-1">•</span>
+                        <span><strong className="text-white">9-10pm:</strong> Reply to all DMs (prime the algorithm)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="text-lg font-semibold text-pink-400 mb-3">Posting Day</h5>
+                    <ul className="space-y-2 text-gray-300">
+                      <li className="flex items-start gap-2">
+                        <span className="text-pink-400 mt-1">•</span>
+                        <span><strong className="text-white">30 min before:</strong> Message hype list (build velocity team)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-pink-400 mt-1">•</span>
+                        <span><strong className="text-white">Post time:</strong> Share with optimal hook/save-bait/loop structure</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-pink-400 mt-1">•</span>
+                        <span><strong className="text-white">First 60 min:</strong> Reply to EVERY comment within seconds</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-pink-400 mt-1">•</span>
+                        <span><strong className="text-white">2 hours after:</strong> Post to Stories directing traffic to feed post</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-**How to Exploit It**
-Create Stories specifically designed to generate DM replies:
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="text-lg font-semibold text-blue-400 mb-3">Days 2-7 After Posting</h5>
+                    <ul className="space-y-2 text-gray-300">
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-400 mt-1">•</span>
+                        <span>Monitor which posts hit Explore (5%+ save rate)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-400 mt-1">•</span>
+                        <span>Analyze retention analytics (completion %, rewatch %)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-400 mt-1">•</span>
+                        <span>Double down on formats that worked</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="text-lg font-semibold text-green-400 mb-3">Weekly Routine</h5>
+                    <ul className="space-y-2 text-gray-300">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-400 mt-1">•</span>
+                        <span>Check for shadowban status (hashtag test)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-400 mt-1">•</span>
+                        <span>Plan 1 collaboration per week</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-400 mt-1">•</span>
+                        <span>Review analytics: which hacks drove most growth?</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-**High-Response Story Formats**
-- Poll: "Should I post about X or Y tomorrow?" (investment in outcome)
-- Question sticker: "What's your biggest struggle with [niche topic]?"
-- This or That: "Coffee or tea?" with relevant images
-- Quiz: "Can you guess which strategy grew me faster?"
-- Controversial take: "Hot take: [contrarian opinion] - agree or disagree?"
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-green-400 mb-3">30-Day Expected Results</h5>
+                  <ul className="space-y-2 text-gray-300">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span><strong className="text-white">Month 1:</strong> 2-3x reach increase from implementing hacks</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span><strong className="text-white">Month 2:</strong> 5-8x reach as you optimize</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span><strong className="text-white">Month 3:</strong> 10-15x reach with full system mastery</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">•</span>
+                      <span><strong className="text-white">Follower growth:</strong> 8,000-25,000 new followers per month at 50K+ base</span>
+                    </li>
+                  </ul>
+                </div>
 
-**The Funnel**
-1. Post engaging Story (generates 50-200 DM replies)
-2. Reply to every DM within 2 hours (strengthens connection)
-3. Post feed content 2-3 hours later (appears high in those 200 people's feeds)
-4. Those 200 people engage early → velocity → algorithm boost
-
-**Real Example**
-Creator without Story funnel: Posts to feed → 2,400 reach first hour
-Creator with Story funnel: 180 Story replies → Posts to feed → 8,900 reach first hour
-Result: 3.7x better early velocity from DM interactions
-
-**Expected Results**: 2-4x improvement in feed post reach by warming up audience via Stories first
-
-**The Complete Algorithm Exploit Strategy**
-
-**Day Before Posting**
-- 8pm: Post engaging Story with question/poll (collect DM replies)
-- 9-10pm: Reply to all DMs (prime the algorithm)
-
-**Posting Day**
-- 30 min before: Message hype list (build velocity team)
-- Post time: Share with optimal hook/save-bait/loop structure
-- First 60 min: Reply to EVERY comment within seconds
-- 2 hours after: Post to Stories directing traffic to feed post
-
-**Days 2-7 After Posting**
-- Monitor which posts hit Explore (5%+ save rate)
-- Analyze retention analytics (completion %, rewatch %)
-- Double down on formats that worked
-
-**Weekly Routine**
-- Check for shadowban status (hashtag test)
-- Plan 1 collaboration per week
-- Review analytics: which hacks drove most growth?
-
-**30-Day Expected Results**
-- Month 1: 2-3x reach increase from implementing hacks
-- Month 2: 5-8x reach as you optimize
-- Month 3: 10-15x reach with full system mastery
-- Follower growth: 8,000-25,000 new followers per month at 50K+ base
-
-The algorithm isn't your enemy - it's a game with rules. Learn the rules, exploit the mechanics, and growth becomes predictable rather than lucky.`}</p>
+                <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-4">
+                  <p className="text-lg text-white font-semibold text-center">
+                    The algorithm isn't your enemy - it's a game with rules. Learn the rules, exploit the mechanics, and growth becomes predictable rather than lucky.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
