@@ -134,5 +134,3 @@ export function BeautifulHero() {
     </motion.section>
   )
 }
-
-}
