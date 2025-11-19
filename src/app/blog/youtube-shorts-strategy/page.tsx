@@ -4766,7 +4766,7 @@ export default function YouTubeShortsStrategy() {
         {/* Related Posts */}
         <RelatedPosts currentSlug="youtube-shorts-strategy" limit={3} />
     </div>
-</section>
-</div>
-)
+      </section>
+    </div>
+  )
 }
