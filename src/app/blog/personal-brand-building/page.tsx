@@ -1844,384 +1844,594 @@ export default function PersonalBrandBuilding() {
 
             <div className="bg-zinc-800 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-purple-400 mb-4">What's a realistic timeline for monetizing my personal brand?</h3>
-              <div className="text-gray-300 space-y-4">
-                <p className="leading-relaxed">{`**Most creators can reach $5K-$10K/month within 6-12 months with the right strategy.** After analyzing 150+ creator monetization journeys, here's the realistic timeline and revenue expectations:
-
-**Months 0-3: Foundation Phase ($0-$2K/month)**
-
-Focus: Build foundation + early revenue
-
-**What's happening**:
-- Creating content consistently (3-5x/week)
-- Growing initial audience (100-1,000 followers)
-- Testing messaging and positioning
-- Building email list (50-200 subscribers)
-
-**Monetization Opportunities**:
-
-1. **Freelance/Consulting** ($500-$2,000)
-   - Leverage existing skills
-   - Reach out to warm network
-   - 2-3 clients at $500-$1K each
-   - Time: 5-10 hours/week
-
-2. **Affiliate Marketing** ($100-$500)
-   - Promote tools you already use
-   - Share genuine recommendations
-   - Focus on high-ticket items ($100+ commission)
-   - Start with 1-2 sales/month
-
-3. **Sponsored Posts** ($100-$300/post)
-   - Even small accounts get opportunities
-   - Partner with early-stage startups
-   - 1-2 posts/month
-   - Build portfolio of brand work
-
-**Real Example**:
-Sarah, career coach:
-- Month 1: $400 (2 freelance clients)
-- Month 2: $800 (same clients + 1 affiliate sale)
-- Month 3: $1,200 (added 1 more client)
-Total: $2,400 in 90 days
-
-**Key Metrics**:
-- 500-1,000 followers
-- 100-300 email subscribers
-- 5-10% engagement rate
-- 1-3 clients/customers
-
-**Months 4-6: Growth Phase ($2K-$5K/month)**
-
-Focus: Scale audience + productize offers
-
-**What's happening**:
-- Content gaining traction
-- Consistent posting paying off
-- Audience: 1,000-5,000 followers
-- Email list: 300-1,000 subscribers
-- Finding repeatable content formats
-
-**Monetization Opportunities**:
-
-1. **Digital Product Launch** ($1,000-$3,000)
-   - First info product ($27-$97)
-   - Mini-course or template pack
-   - Sell to email list
-   - Expected: 20-40 sales
-
-2. **Group Coaching** ($1,500-$3,000)
-   - 5-10 person cohort
-   - 4-6 week program
-   - Price: $300-$500/person
-   - Time: 3-5 hours/week
-
-3. **Increased Freelance** ($1,000-$2,000)
-   - Raise rates by 30-50%
-   - Maintain 2-3 clients
-   - Inbound leads from content
-
-**Real Example**:
-Marcus, LinkedIn strategist:
-- Month 4: $2,100 (2 clients + affiliates)
-- Month 5: $3,800 (2 clients + first product launch: 32 sales × $97)
-- Month 6: $4,500 (3 clients + affiliate income)
-Total: $10,400 in 3 months
-
-**Key Metrics**:
-- 2,000-5,000 followers
-- 500-1,000 email subscribers
-- 50-100 engaged community members
-- 3-5% conversion on offers
-
-**Months 7-9: Scaling Phase ($5K-$15K/month)**
-
-Focus: Optimize + multiply revenue streams
-
-**What's happening**:
-- Content systems in place
-- Audience: 5,000-15,000 followers
-- Email list: 1,000-3,000 subscribers
-- Clear brand positioning
-- Proven offers that convert
-
-**Monetization Opportunities**:
-
-1. **Signature Course** ($3,000-$8,000/month)
-   - Comprehensive program ($297-$997)
-   - Launch 1-2x/quarter
-   - Expected: 10-20 sales/launch
-   - Evergreen funnel between launches
-
-2. **Premium Coaching** ($3,000-$6,000/month)
-   - 1-on-1 or small group
-   - $1,500-$3,000/person
-   - 2-4 clients/month
-   - High-touch transformation
-
-3. **Sponsored Content** ($1,000-$3,000/month)
-   - Consistent brand partnerships
-   - $500-$1,500/post
-   - 2-3 posts/month
-   - Negotiate retainers
-
-4. **Affiliate Income** ($500-$2,000/month)
-   - Established trust with audience
-   - Multiple product recommendations
-   - Passive recurring revenue
-
-**Real Example**:
-Jenny, business automation expert:
-- Month 7: $6,200 (course launch + 2 coaching clients)
-- Month 8: $8,900 (coaching + affiliates + sponsor)
-- Month 9: $12,400 (second course launch)
-Total: $27,500 in 3 months
-
-**Key Metrics**:
-- 8,000-15,000 followers
-- 1,500-3,000 email subscribers
-- $500-$1,000 in passive income
-- 2-3 proven revenue streams
-
-**Months 10-12: Optimization Phase ($15K-$30K/month)**
-
-Focus: Systematize + scale what works
-
-**What's happening**:
-- Multiple revenue streams humming
-- Audience: 15,000-30,000 followers
-- Email list: 3,000-7,000 subscribers
-- Team support (VA, assistant)
-- Refined systems and processes
-
-**Monetization Opportunities**:
-
-1. **Flagship Program** ($10,000-$20,000/month)
-   - Premium offering ($997-$2,997)
-   - Monthly launches or evergreen
-   - 10-20 sales/month
-   - Group coaching + course
-
-2. **Membership Community** ($3,000-$7,000/month)
-   - Recurring revenue model
-   - $49-$99/month
-   - 50-150 members
-   - Monthly content + community
-
-3. **Speaking/Workshops** ($2,000-$5,000/month)
-   - Virtual workshops ($500-$2,000)
-   - Conference speaking ($1,000-$5,000)
-   - Corporate training ($2,000-$10,000)
-
-4. **Strategic Partnerships** ($2,000-$5,000/month)
-   - Revenue share deals
-   - White-label products
-   - Affiliate partnerships
-   - Brand ambassadorships
-
-**Real Example**:
-David, productivity coach:
-- Month 10: $18,400 (program + membership + speaking)
-- Month 11: $24,700 (program + partnerships + sponsors)
-- Month 12: $28,900 (holiday launch + recurring)
-Total: $72,000 in 3 months
-
-**Key Metrics**:
-- 20,000-40,000 followers
-- 4,000-8,000 email subscribers
-- 60-70% revenue from digital products
-- 20-30% profit margin
-
-**Year 2+: Scale Phase ($30K-$100K+/month)**
-
-Focus: Leverage + systems + team
-
-**What's happening**:
-- Established authority in niche
-- Audience: 50,000-200,000+ followers
-- Email list: 10,000-50,000+ subscribers
-- Small team (2-5 people)
-- Multiple product lines
-
-**Monetization Opportunities**:
-
-1. **Premium Programs** ($30K-$80K/month)
-   - High-ticket coaching ($5K-$20K)
-   - Mastermind groups ($10K-$50K/year)
-   - Done-for-you services
-   - 5-15 clients/month
-
-2. **Productized Offers** ($20K-$50K/month)
-   - SaaS tools
-   - Template libraries
-   - Certification programs
-   - Licensing deals
-
-3. **Media Deals** ($10K-$30K/month)
-   - Book advances ($50K-$500K)
-   - Podcast sponsorships ($5K-$20K/episode)
-   - YouTube AdSense ($5K-$50K/month)
-
-4. **Business Ventures** ($20K-$100K+/month)
-   - Equity in companies
-   - Joint ventures
-   - Acquisition of complementary businesses
-
-**Real Examples**:
-
-**Ali Abdaal** (Productivity):
-- Years 1-2: $0 → $50K/month
-- Years 3-4: $50K → $200K/month
-- Year 5+: $200K+/month
-- Revenue mix: YouTube ads (30%), courses (40%), sponsorships (20%), other (10%)
-
-**Sahil Bloom** (Business/Life):
-- Years 1-2: $0 → $30K/month
-- Year 3: $30K → $100K/month
-- Revenue mix: Newsletter sponsors (50%), consulting (30%), investments (20%)
-
-**The Realistic Revenue Curve**
-
-**Misconceptions vs. Reality**:
-
-**What people think**:
-- Month 1: $5K
-- Month 3: $10K
-- Month 6: $30K
-(Linear growth)
-
-**What actually happens**:
-- Months 1-3: $0-$500 (struggle)
-- Months 4-6: $1K-$3K (slow growth)
-- Months 7-9: $3K-$8K (momentum)
-- Months 10-12: $10K-$25K (breakout)
-(Hockey stick growth)
-
-**Why the curve looks like this**:
-
-1. **Months 1-3: Planting seeds**
-   - Building trust takes time
-   - Testing what resonates
-   - Small audience = small revenue
-   - Most quit here (don't!)
-
-2. **Months 4-6: Early growth**
-   - Content starting to compound
-   - First product validations
-   - Word of mouth kicking in
-   - Confidence building
-
-3. **Months 7-9: Momentum**
-   - Multiple revenue streams active
-   - Audience knows/trusts you
-   - Systems in place
-   - Compounding effects
-
-4. **Months 10-12: Breakthrough**
-   - Everything clicking
-   - Passive income flowing
-   - Inbound opportunities
-   - True leverage achieved
-
-**Revenue Streams by Timeline**
-
-**Months 1-3** (Quick wins):
-1. Freelancing/consulting
-2. Affiliate marketing
-3. Small sponsorships
-
-**Months 4-6** (First products):
-1. Digital products ($27-$97)
-2. Group coaching
-3. Templates/resources
-
-**Months 7-12** (Scalable offers):
-1. Online courses ($297-$997)
-2. Membership communities
-3. Speaking/workshops
-4. Premium sponsorships
-
-**Year 2+** (Leverage):
-1. High-ticket programs ($5K-$20K)
-2. SaaS/tools
-3. Equity deals
-4. Book/media deals
-
-**Factors That Accelerate Timeline**
-
-**Can reach $10K/month in 3-6 months if**:
-1. Existing audience elsewhere (transfer)
-2. High-ticket service skills (consulting)
-3. Established network (warm connections)
-4. Industry expertise (instant credibility)
-5. Capital to invest (ads, tools, team)
-
-**Will take 12-24 months if**:
-1. Starting from zero followers
-2. New to monetization
-3. Low-ticket products only
-4. Limited time to invest (side hustle)
-5. Highly competitive niche
-
-**Common Monetization Mistakes**
-
-1. **Waiting too long to monetize**
-   - "I need 10K followers first"
-   - Reality: Start selling at 100-500 followers
-   - Lost revenue: $5K-$20K
-
-2. **Only having one revenue stream**
-   - "I'll just do courses"
-   - Reality: Diversify for stability
-   - Risk: One platform change = income crash
-
-3. **Underpricing offers**
-   - "$27 course for years of knowledge"
-   - Reality: Price for transformation value
-   - Lost revenue: 50-70% potential earnings
-
-4. **Not building email list**
-   - "I have social media followers"
-   - Reality: You don't own those platforms
-   - Risk: Account ban = zero income
-
-5. **No backend offers**
-   - "Just selling $97 course"
-   - Reality: Build ascension ladder
-   - Lost revenue: 80% of potential LTV
-
-**Your Personalized Timeline**
-
-Calculate your realistic timeline:
-
-**Starting point**:
-- Existing audience? (Subtract 2-4 months)
-- Monetizable skills? (Subtract 1-3 months)
-- Full-time focus? (Subtract 3-6 months)
-- Starting budget ($5K+)? (Subtract 1-2 months)
-
-**Baseline**: 12 months to $10K/month
-
-**Adjustments**:
-- Yes to 1 above: 9-10 months
-- Yes to 2 above: 6-8 months
-- Yes to 3-4 above: 3-6 months
-
-**The Bottom Line**
-
-Realistic expectations:
-- Month 3: $500-$2,000
-- Month 6: $2,000-$5,000
-- Month 12: $5,000-$15,000
-- Month 24: $15,000-$50,000
-
-This assumes:
-- Consistent content (3-5x/week)
-- Building email list from day 1
-- Multiple revenue streams
-- Strategic positioning
-- 10-20 hours/week effort
-
-Patience + consistency + strategy = sustainable income.`}</p>
+              <div className="text-gray-300 space-y-6">
+                <p className="text-lg leading-relaxed">
+                  <strong className="text-white font-semibold">Most creators can reach $5K-$10K/month within 6-12 months with the right strategy.</strong> After analyzing 150+ creator monetization journeys, here's the realistic timeline and revenue expectations:
+                </p>
+
+                {/* Months 0-3: Foundation Phase */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">Months 0-3: Foundation Phase ($0-$2K/month)</h4>
+                  <p className="text-gray-300 mb-4 font-semibold">Focus: Build foundation + early revenue</p>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-2">What's happening:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Creating content consistently (<strong className="text-white">3-5x/week</strong>)</li>
+                      <li>• Growing initial audience (<strong className="text-white">100-1,000 followers</strong>)</li>
+                      <li>• Testing messaging and positioning</li>
+                      <li>• Building email list (<strong className="text-white">50-200 subscribers</strong>)</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-3">Monetization Opportunities:</h6>
+                    <div className="space-y-3">
+                      <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-purple-300 mb-1">1. Freelance/Consulting ($500-$2,000)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Leverage existing skills</li>
+                          <li>• Reach out to warm network</li>
+                          <li>• <strong className="text-white">2-3 clients</strong> at $500-$1K each</li>
+                          <li>• Time: <strong className="text-white">5-10 hours/week</strong></li>
+                        </ul>
+                      </div>
+                      <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-purple-300 mb-1">2. Affiliate Marketing ($100-$500)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Promote tools you already use</li>
+                          <li>• Share genuine recommendations</li>
+                          <li>• Focus on high-ticket items (<strong className="text-white">$100+ commission</strong>)</li>
+                          <li>• Start with <strong className="text-white">1-2 sales/month</strong></li>
+                        </ul>
+                      </div>
+                      <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-purple-300 mb-1">3. Sponsored Posts ($100-$300/post)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Even small accounts get opportunities</li>
+                          <li>• Partner with early-stage startups</li>
+                          <li>• <strong className="text-white">1-2 posts/month</strong></li>
+                          <li>• Build portfolio of brand work</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                    <h6 className="text-sm font-semibold text-green-300 mb-2">Real Example:</h6>
+                    <p className="text-gray-300 text-sm mb-1">Sarah, career coach:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Month 1: <strong className="text-white">$400</strong> (2 freelance clients)</li>
+                      <li>• Month 2: <strong className="text-white">$800</strong> (same clients + 1 affiliate sale)</li>
+                      <li>• Month 3: <strong className="text-white">$1,200</strong> (added 1 more client)</li>
+                      <li>• Total: <strong className="text-white">$2,400</strong> in 90 days</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                    <h6 className="text-sm font-semibold text-blue-300 mb-2">Key Metrics:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">500-1,000</strong> followers</li>
+                      <li>• <strong className="text-white">100-300</strong> email subscribers</li>
+                      <li>• <strong className="text-white">5-10%</strong> engagement rate</li>
+                      <li>• <strong className="text-white">1-3</strong> clients/customers</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Months 4-6: Growth Phase */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">Months 4-6: Growth Phase ($2K-$5K/month)</h4>
+                  <p className="text-gray-300 mb-4 font-semibold">Focus: Scale audience + productize offers</p>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-2">What's happening:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Content gaining traction</li>
+                      <li>• Consistent posting paying off</li>
+                      <li>• Audience: <strong className="text-white">1,000-5,000 followers</strong></li>
+                      <li>• Email list: <strong className="text-white">300-1,000 subscribers</strong></li>
+                      <li>• Finding repeatable content formats</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-3">Monetization Opportunities:</h6>
+                    <div className="space-y-3">
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-300 mb-1">1. Digital Product Launch ($1,000-$3,000)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• First info product (<strong className="text-white">$27-$97</strong>)</li>
+                          <li>• Mini-course or template pack</li>
+                          <li>• Sell to email list</li>
+                          <li>• Expected: <strong className="text-white">20-40 sales</strong></li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-300 mb-1">2. Group Coaching ($1,500-$3,000)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• <strong className="text-white">5-10 person</strong> cohort</li>
+                          <li>• <strong className="text-white">4-6 week</strong> program</li>
+                          <li>• Price: <strong className="text-white">$300-$500/person</strong></li>
+                          <li>• Time: <strong className="text-white">3-5 hours/week</strong></li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-blue-300 mb-1">3. Increased Freelance ($1,000-$2,000)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Raise rates by <strong className="text-white">30-50%</strong></li>
+                          <li>• Maintain <strong className="text-white">2-3 clients</strong></li>
+                          <li>• Inbound leads from content</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                    <h6 className="text-sm font-semibold text-green-300 mb-2">Real Example:</h6>
+                    <p className="text-gray-300 text-sm mb-1">Marcus, LinkedIn strategist:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Month 4: <strong className="text-white">$2,100</strong> (2 clients + affiliates)</li>
+                      <li>• Month 5: <strong className="text-white">$3,800</strong> (2 clients + first product launch: <strong className="text-white">32 sales × $97</strong>)</li>
+                      <li>• Month 6: <strong className="text-white">$4,500</strong> (3 clients + affiliate income)</li>
+                      <li>• Total: <strong className="text-white">$10,400</strong> in 3 months</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                    <h6 className="text-sm font-semibold text-blue-300 mb-2">Key Metrics:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">2,000-5,000</strong> followers</li>
+                      <li>• <strong className="text-white">500-1,000</strong> email subscribers</li>
+                      <li>• <strong className="text-white">50-100</strong> engaged community members</li>
+                      <li>• <strong className="text-white">3-5%</strong> conversion on offers</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Months 7-9: Scaling Phase */}
+                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-green-400 mb-4">Months 7-9: Scaling Phase ($5K-$15K/month)</h4>
+                  <p className="text-gray-300 mb-4 font-semibold">Focus: Optimize + multiply revenue streams</p>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-2">What's happening:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Content systems in place</li>
+                      <li>• Audience: <strong className="text-white">5,000-15,000 followers</strong></li>
+                      <li>• Email list: <strong className="text-white">1,000-3,000 subscribers</strong></li>
+                      <li>• Clear brand positioning</li>
+                      <li>• Proven offers that convert</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-3">Monetization Opportunities:</h6>
+                    <div className="grid md:grid-cols-2 gap-3">
+                      <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-green-300 mb-1">1. Signature Course ($3,000-$8,000/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Comprehensive program (<strong className="text-white">$297-$997</strong>)</li>
+                          <li>• Launch <strong className="text-white">1-2x/quarter</strong></li>
+                          <li>• Expected: <strong className="text-white">10-20 sales/launch</strong></li>
+                          <li>• Evergreen funnel between launches</li>
+                        </ul>
+                      </div>
+                      <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-green-300 mb-1">2. Premium Coaching ($3,000-$6,000/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• 1-on-1 or small group</li>
+                          <li>• <strong className="text-white">$1,500-$3,000/person</strong></li>
+                          <li>• <strong className="text-white">2-4 clients/month</strong></li>
+                          <li>• High-touch transformation</li>
+                        </ul>
+                      </div>
+                      <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-green-300 mb-1">3. Sponsored Content ($1,000-$3,000/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Consistent brand partnerships</li>
+                          <li>• <strong className="text-white">$500-$1,500/post</strong></li>
+                          <li>• <strong className="text-white">2-3 posts/month</strong></li>
+                          <li>• Negotiate retainers</li>
+                        </ul>
+                      </div>
+                      <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-green-300 mb-1">4. Affiliate Income ($500-$2,000/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Established trust with audience</li>
+                          <li>• Multiple product recommendations</li>
+                          <li>• Passive recurring revenue</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                    <h6 className="text-sm font-semibold text-green-300 mb-2">Real Example:</h6>
+                    <p className="text-gray-300 text-sm mb-1">Jenny, business automation expert:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Month 7: <strong className="text-white">$6,200</strong> (course launch + 2 coaching clients)</li>
+                      <li>• Month 8: <strong className="text-white">$8,900</strong> (coaching + affiliates + sponsor)</li>
+                      <li>• Month 9: <strong className="text-white">$12,400</strong> (second course launch)</li>
+                      <li>• Total: <strong className="text-white">$27,500</strong> in 3 months</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                    <h6 className="text-sm font-semibold text-blue-300 mb-2">Key Metrics:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">8,000-15,000</strong> followers</li>
+                      <li>• <strong className="text-white">1,500-3,000</strong> email subscribers</li>
+                      <li>• <strong className="text-white">$500-$1,000</strong> in passive income</li>
+                      <li>• <strong className="text-white">2-3</strong> proven revenue streams</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Months 10-12: Optimization Phase */}
+                <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-yellow-400 mb-4">Months 10-12: Optimization Phase ($15K-$30K/month)</h4>
+                  <p className="text-gray-300 mb-4 font-semibold">Focus: Systematize + scale what works</p>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-2">What's happening:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Multiple revenue streams humming</li>
+                      <li>• Audience: <strong className="text-white">15,000-30,000 followers</strong></li>
+                      <li>• Email list: <strong className="text-white">3,000-7,000 subscribers</strong></li>
+                      <li>• Team support (VA, assistant)</li>
+                      <li>• Refined systems and processes</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-3">Monetization Opportunities:</h6>
+                    <div className="grid md:grid-cols-2 gap-3">
+                      <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-yellow-300 mb-1">1. Flagship Program ($10,000-$20,000/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Premium offering (<strong className="text-white">$997-$2,997</strong>)</li>
+                          <li>• Monthly launches or evergreen</li>
+                          <li>• <strong className="text-white">10-20 sales/month</strong></li>
+                          <li>• Group coaching + course</li>
+                        </ul>
+                      </div>
+                      <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-yellow-300 mb-1">2. Membership Community ($3,000-$7,000/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Recurring revenue model</li>
+                          <li>• <strong className="text-white">$49-$99/month</strong></li>
+                          <li>• <strong className="text-white">50-150 members</strong></li>
+                          <li>• Monthly content + community</li>
+                        </ul>
+                      </div>
+                      <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-yellow-300 mb-1">3. Speaking/Workshops ($2,000-$5,000/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Virtual workshops (<strong className="text-white">$500-$2,000</strong>)</li>
+                          <li>• Conference speaking (<strong className="text-white">$1,000-$5,000</strong>)</li>
+                          <li>• Corporate training (<strong className="text-white">$2,000-$10,000</strong>)</li>
+                        </ul>
+                      </div>
+                      <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-yellow-300 mb-1">4. Strategic Partnerships ($2,000-$5,000/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Revenue share deals</li>
+                          <li>• White-label products</li>
+                          <li>• Affiliate partnerships</li>
+                          <li>• Brand ambassadorships</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mb-3">
+                    <h6 className="text-sm font-semibold text-green-300 mb-2">Real Example:</h6>
+                    <p className="text-gray-300 text-sm mb-1">David, productivity coach:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Month 10: <strong className="text-white">$18,400</strong> (program + membership + speaking)</li>
+                      <li>• Month 11: <strong className="text-white">$24,700</strong> (program + partnerships + sponsors)</li>
+                      <li>• Month 12: <strong className="text-white">$28,900</strong> (holiday launch + recurring)</li>
+                      <li>• Total: <strong className="text-white">$72,000</strong> in 3 months</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                    <h6 className="text-sm font-semibold text-blue-300 mb-2">Key Metrics:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">20,000-40,000</strong> followers</li>
+                      <li>• <strong className="text-white">4,000-8,000</strong> email subscribers</li>
+                      <li>• <strong className="text-white">60-70%</strong> revenue from digital products</li>
+                      <li>• <strong className="text-white">20-30%</strong> profit margin</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Year 2+: Scale Phase */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">Year 2+: Scale Phase ($30K-$100K+/month)</h4>
+                  <p className="text-gray-300 mb-4 font-semibold">Focus: Leverage + systems + team</p>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-2">What's happening:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Established authority in niche</li>
+                      <li>• Audience: <strong className="text-white">50,000-200,000+ followers</strong></li>
+                      <li>• Email list: <strong className="text-white">10,000-50,000+ subscribers</strong></li>
+                      <li>• Small team (<strong className="text-white">2-5 people</strong>)</li>
+                      <li>• Multiple product lines</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-3">Monetization Opportunities:</h6>
+                    <div className="grid md:grid-cols-2 gap-3">
+                      <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-red-300 mb-1">1. Premium Programs ($30K-$80K/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• High-ticket coaching (<strong className="text-white">$5K-$20K</strong>)</li>
+                          <li>• Mastermind groups (<strong className="text-white">$10K-$50K/year</strong>)</li>
+                          <li>• Done-for-you services</li>
+                          <li>• <strong className="text-white">5-15 clients/month</strong></li>
+                        </ul>
+                      </div>
+                      <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-red-300 mb-1">2. Productized Offers ($20K-$50K/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• SaaS tools</li>
+                          <li>• Template libraries</li>
+                          <li>• Certification programs</li>
+                          <li>• Licensing deals</li>
+                        </ul>
+                      </div>
+                      <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-red-300 mb-1">3. Media Deals ($10K-$30K/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Book advances (<strong className="text-white">$50K-$500K</strong>)</li>
+                          <li>• Podcast sponsorships (<strong className="text-white">$5K-$20K/episode</strong>)</li>
+                          <li>• YouTube AdSense (<strong className="text-white">$5K-$50K/month</strong>)</li>
+                        </ul>
+                      </div>
+                      <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                        <h6 className="text-sm font-semibold text-red-300 mb-1">4. Business Ventures ($20K-$100K+/month)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Equity in companies</li>
+                          <li>• Joint ventures</li>
+                          <li>• Acquisition of complementary businesses</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                    <h6 className="text-sm font-semibold text-green-300 mb-2">Real Examples:</h6>
+                    <div className="space-y-3">
+                      <div className="bg-green-800/20 border border-green-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-green-200 mb-1">Ali Abdaal (Productivity):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Years 1-2: <strong className="text-white">$0 → $50K/month</strong></li>
+                          <li>• Years 3-4: <strong className="text-white">$50K → $200K/month</strong></li>
+                          <li>• Year 5+: <strong className="text-white">$200K+/month</strong></li>
+                          <li>• Revenue mix: YouTube ads (<strong className="text-white">30%</strong>), courses (<strong className="text-white">40%</strong>), sponsorships (<strong className="text-white">20%</strong>), other (<strong className="text-white">10%</strong>)</li>
+                        </ul>
+                      </div>
+                      <div className="bg-green-800/20 border border-green-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-green-200 mb-1">Sahil Bloom (Business/Life):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Years 1-2: <strong className="text-white">$0 → $30K/month</strong></li>
+                          <li>• Year 3: <strong className="text-white">$30K → $100K/month</strong></li>
+                          <li>• Revenue mix: Newsletter sponsors (<strong className="text-white">50%</strong>), consulting (<strong className="text-white">30%</strong>), investments (<strong className="text-white">20%</strong>)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Realistic Revenue Curve */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">The Realistic Revenue Curve</h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="bg-red-900/20 border border-red-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-red-300 mb-2">What people think (Linear growth):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Month 1: <strong className="text-white">$5K</strong></li>
+                        <li>• Month 3: <strong className="text-white">$10K</strong></li>
+                        <li>• Month 6: <strong className="text-white">$30K</strong></li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">What actually happens (Hockey stick growth):</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Months 1-3: <strong className="text-white">$0-$500</strong> (struggle)</li>
+                        <li>• Months 4-6: <strong className="text-white">$1K-$3K</strong> (slow growth)</li>
+                        <li>• Months 7-9: <strong className="text-white">$3K-$8K</strong> (momentum)</li>
+                        <li>• Months 10-12: <strong className="text-white">$10K-$25K</strong> (breakout)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h6 className="text-sm font-semibold text-white mb-3">Why the curve looks like this:</h6>
+                    <div className="grid md:grid-cols-2 gap-3">
+                      <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-purple-300 mb-1">1. Months 1-3: Planting seeds</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Building trust takes time</li>
+                          <li>• Testing what resonates</li>
+                          <li>• Small audience = small revenue</li>
+                          <li>• Most quit here (don't!)</li>
+                        </ul>
+                      </div>
+                      <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-purple-300 mb-1">2. Months 4-6: Early growth</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Content starting to compound</li>
+                          <li>• First product validations</li>
+                          <li>• Word of mouth kicking in</li>
+                          <li>• Confidence building</li>
+                        </ul>
+                      </div>
+                      <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-purple-300 mb-1">3. Months 7-9: Momentum</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Multiple revenue streams active</li>
+                          <li>• Audience knows/trusts you</li>
+                          <li>• Systems in place</li>
+                          <li>• Compounding effects</li>
+                        </ul>
+                      </div>
+                      <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3">
+                        <h6 className="text-xs font-semibold text-purple-300 mb-1">4. Months 10-12: Breakthrough</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Everything clicking</li>
+                          <li>• Passive income flowing</li>
+                          <li>• Inbound opportunities</li>
+                          <li>• True leverage achieved</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-sm font-semibold text-blue-300 mb-3">Revenue Streams by Timeline:</h6>
+                    <div className="grid md:grid-cols-4 gap-3">
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-blue-200 mb-1">Months 1-3 (Quick wins):</h6>
+                        <ol className="space-y-1 text-gray-300 text-xs list-decimal list-inside">
+                          <li>Freelancing/consulting</li>
+                          <li>Affiliate marketing</li>
+                          <li>Small sponsorships</li>
+                        </ol>
+                      </div>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-blue-200 mb-1">Months 4-6 (First products):</h6>
+                        <ol className="space-y-1 text-gray-300 text-xs list-decimal list-inside">
+                          <li>Digital products (<strong className="text-white">$27-$97</strong>)</li>
+                          <li>Group coaching</li>
+                          <li>Templates/resources</li>
+                        </ol>
+                      </div>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-blue-200 mb-1">Months 7-12 (Scalable offers):</h6>
+                        <ol className="space-y-1 text-gray-300 text-xs list-decimal list-inside">
+                          <li>Online courses (<strong className="text-white">$297-$997</strong>)</li>
+                          <li>Membership communities</li>
+                          <li>Speaking/workshops</li>
+                          <li>Premium sponsorships</li>
+                        </ol>
+                      </div>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-blue-200 mb-1">Year 2+ (Leverage):</h6>
+                        <ol className="space-y-1 text-gray-300 text-xs list-decimal list-inside">
+                          <li>High-ticket programs (<strong className="text-white">$5K-$20K</strong>)</li>
+                          <li>SaaS/tools</li>
+                          <li>Equity deals</li>
+                          <li>Book/media deals</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="bg-green-900/20 border border-green-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Can reach $10K/month in 3-6 months if:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>Existing audience elsewhere (transfer)</li>
+                        <li>High-ticket service skills (consulting)</li>
+                        <li>Established network (warm connections)</li>
+                        <li>Industry expertise (instant credibility)</li>
+                        <li>Capital to invest (ads, tools, team)</li>
+                      </ol>
+                    </div>
+                    <div className="bg-red-900/20 border border-red-500/30 rounded p-4">
+                      <h6 className="text-sm font-semibold text-red-300 mb-2">Will take 12-24 months if:</h6>
+                      <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                        <li>Starting from zero followers</li>
+                        <li>New to monetization</li>
+                        <li>Low-ticket products only</li>
+                        <li>Limited time to invest (side hustle)</li>
+                        <li>Highly competitive niche</li>
+                      </ol>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <h6 className="text-sm font-semibold text-yellow-300 mb-3">Common Monetization Mistakes:</h6>
+                    <div className="space-y-3">
+                      <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-yellow-200 mb-1">1. Waiting too long to monetize</h6>
+                        <p className="text-gray-300 text-xs mb-1">"I need 10K followers first" → Reality: Start selling at <strong className="text-white">100-500 followers</strong></p>
+                        <p className="text-red-300 text-xs">Lost revenue: <strong className="text-white">$5K-$20K</strong></p>
+                      </div>
+                      <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-yellow-200 mb-1">2. Only having one revenue stream</h6>
+                        <p className="text-gray-300 text-xs mb-1">"I'll just do courses" → Reality: Diversify for stability</p>
+                        <p className="text-red-300 text-xs">Risk: One platform change = income crash</p>
+                      </div>
+                      <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-yellow-200 mb-1">3. Underpricing offers</h6>
+                        <p className="text-gray-300 text-xs mb-1">"$27 course for years of knowledge" → Reality: Price for transformation value</p>
+                        <p className="text-red-300 text-xs">Lost revenue: <strong className="text-white">50-70%</strong> potential earnings</p>
+                      </div>
+                      <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-yellow-200 mb-1">4. Not building email list</h6>
+                        <p className="text-gray-300 text-xs mb-1">"I have social media followers" → Reality: You don't own those platforms</p>
+                        <p className="text-red-300 text-xs">Risk: Account ban = zero income</p>
+                      </div>
+                      <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-2">
+                        <h6 className="text-xs font-semibold text-yellow-200 mb-1">5. No backend offers</h6>
+                        <p className="text-gray-300 text-xs mb-1">"Just selling $97 course" → Reality: Build ascension ladder</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Your Personalized Timeline */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">Your Personalized Timeline</h4>
+                  <p className="text-gray-300 mb-4">Calculate your realistic timeline:</p>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-sm font-semibold text-blue-300 mb-2">Starting point:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Existing audience? (Subtract <strong className="text-white">2-4 months</strong>)</li>
+                      <li>• Monetizable skills? (Subtract <strong className="text-white">1-3 months</strong>)</li>
+                      <li>• Full-time focus? (Subtract <strong className="text-white">3-6 months</strong>)</li>
+                      <li>• Starting budget (<strong className="text-white">$5K+</strong>)? (Subtract <strong className="text-white">1-2 months</strong>)</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded p-4 mb-4">
+                    <h6 className="text-sm font-semibold text-green-300 mb-2">Baseline: <strong className="text-white">12 months</strong> to $10K/month</h6>
+                    <h6 className="text-sm font-semibold text-green-300 mb-2 mt-3">Adjustments:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Yes to <strong className="text-white">1</strong> above: <strong className="text-white">9-10 months</strong></li>
+                      <li>• Yes to <strong className="text-white">2</strong> above: <strong className="text-white">6-8 months</strong></li>
+                      <li>• Yes to <strong className="text-white">3-4</strong> above: <strong className="text-white">3-6 months</strong></li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                    <h6 className="text-sm font-semibold text-purple-300 mb-2">The Bottom Line - Realistic expectations:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm mb-3">
+                      <li>• Month 3: <strong className="text-white">$500-$2,000</strong></li>
+                      <li>• Month 6: <strong className="text-white">$2,000-$5,000</strong></li>
+                      <li>• Month 12: <strong className="text-white">$5,000-$15,000</strong></li>
+                      <li>• Month 24: <strong className="text-white">$15,000-$50,000</strong></li>
+                    </ul>
+                    <p className="text-gray-300 text-sm mb-2">This assumes:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Consistent content (<strong className="text-white">3-5x/week</strong>)</li>
+                      <li>• Building email list from day 1</li>
+                      <li>• Multiple revenue streams</li>
+                      <li>• Strategic positioning</li>
+                      <li>• <strong className="text-white">10-20 hours/week</strong> effort</li>
+                    </ul>
+                    <p className="text-white font-semibold text-sm mt-3">Patience + consistency + strategy = sustainable income.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
