@@ -74,7 +74,6 @@ const schema = generateBlogPostSchema({
 
           
   return (
-    
     <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"

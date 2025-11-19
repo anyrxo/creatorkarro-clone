@@ -143,7 +143,7 @@ export default async function GuestPostsPage() {
               const color = campaignColors[index]
               
               return (
-                <div key={index} className="bg-gray-900 rounded-lg p-8">
+    <div key={index} className="bg-gray-900 rounded-lg p-8">
                   {/* Campaign Header */}
                   <div className="flex justify-between items-start mb-6">
                     <div>

@@ -2354,7 +2354,6 @@ You can't monetize an audience that doesn't trust you yet.
 ]
 
   return (
-
     <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"

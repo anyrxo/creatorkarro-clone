@@ -74,7 +74,6 @@ export default function ProductLaunchStrategy() {
 
           
   return (
-    
     <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"

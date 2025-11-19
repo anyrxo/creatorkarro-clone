@@ -108,7 +108,7 @@ export default async function ParasitePage() {
               const isDofollow = ['GitHub', 'Dev.to', 'Hashnode', 'Notion Public Pages', 'Substack', 'Ghost.org'].includes(platform)
               
               return (
-                <div key={platform} className="bg-gray-800 p-6 rounded-lg">
+    <div key={platform} className="bg-gray-800 p-6 rounded-lg">
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-lg font-semibold text-white">{platform}</h3>
                     <span className={`px-2 py-1 rounded text-xs font-semibold ${
@@ -152,7 +152,7 @@ export default async function ParasitePage() {
               const color = strategyColors[index]
               
               return (
-                <div key={index} className="bg-gray-900 rounded-lg p-8">
+    <div key={index} className="bg-gray-900 rounded-lg p-8">
                   {/* Campaign Header */}
                   <div className="flex justify-between items-start mb-6">
                     <div>

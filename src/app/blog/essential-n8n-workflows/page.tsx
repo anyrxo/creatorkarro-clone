@@ -72,7 +72,6 @@ export default function EssentialN8NWorkflows() {
   })
 
   return (
-
     <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"

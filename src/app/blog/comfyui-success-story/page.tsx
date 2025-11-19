@@ -1344,7 +1344,6 @@ Great client management isn't about pleasing everyone - it's about setting clear
 ]
 
   return (
-
     <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"

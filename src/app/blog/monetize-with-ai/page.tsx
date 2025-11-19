@@ -109,7 +109,6 @@ export default function MonetizeWithAI() {
 
           
   return (
-    
     <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"
@@ -558,8 +557,8 @@ export default function MonetizeWithAI() {
     </div>
 </section>
 
-    <section className="section-spacing bg-zinc-900">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <section className="section-spacing bg-zinc-900">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Frequently Asked Questions</h2>
 
         <div className="space-y-6">
@@ -3270,13 +3269,13 @@ Real example: Marcus sent 500 cold emails to SaaS companies offering free AI con
             </div>
 
         </div>
-      </div>
+    </div>
 
-      {/* Inline CTA - After Scaling Strategies: $42.9K MRR SaaS + $100K+/month Hybrid Model + Real Case Studies */}
-      <SmartCTA blogSlug="monetize-with-ai" variant="inline" />
-    </section>
+        {/* Inline CTA - After Scaling Strategies: $42.9K MRR SaaS + $100K+/month Hybrid Model + Real Case Studies */}
+        <SmartCTA blogSlug="monetize-with-ai" variant="inline" />
+</section>
 
-    <section className="section-spacing bg-zinc-900">
+      <section className="section-spacing bg-zinc-900">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Frequently Asked Questions</h2>
 
@@ -4513,7 +4512,7 @@ Real example: Marcus sent 500 cold emails to SaaS companies offering free AI con
                                 <p><strong className="text-white">Time to $10K/month:</strong> 5 months</p>
                                 <p><strong className="text-white">Time to $30K/month:</strong> 11 months</p>
                                 <p><strong className="text-white">Current revenue:</strong> $38,000/month average</p>
-                            </div>
+                </div>
                             <div>
                                 <p className="font-semibold text-white mb-2">Full Revenue Breakdown (Across 4 Channels):</p>
                                 <div className="space-y-3 ml-2">
@@ -4525,7 +4524,7 @@ Real example: Marcus sent 500 cold emails to SaaS companies offering free AI con
                                             <li>Affiliate links: $2,400/month</li>
                                         </ul>
                                         <p className="mt-1 font-semibold text-green-400">Subtotal: $21,200/month</p>
-                                    </div>
+            </div>
                                     <div>
                                         <p className="font-semibold text-white">Channel 2: AI News (450K subs, 800K views/month):</p>
                                         <ul className="list-disc list-inside space-y-1 ml-2">
@@ -4720,16 +4719,16 @@ Real example: Marcus sent 500 cold emails to SaaS companies offering free AI con
                 </div>
             </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <FAQSchema faqs={faqData} displayType="hidden" />
+      <FAQSchema faqs={faqData} displayType="hidden" />
 
-    {/* Smart CTA - All Access Pass */}
-    <SmartCTA blogSlug="monetize-with-ai" />
+      {/* Smart CTA - All Access Pass */}
+      <SmartCTA blogSlug="monetize-with-ai" />
 
-    {/* Related Posts */}
-    <RelatedPosts currentSlug="monetize-with-ai" limit={3} />
-  </div>
+      {/* Related Posts */}
+      <RelatedPosts currentSlug="monetize-with-ai" limit={3} />
+</div>
 )
 }

@@ -141,7 +141,7 @@ export default async function SocialSignalsPage() {
               const color = campaignColors[index]
               
               return (
-                <div key={index} className="bg-gray-900 rounded-lg p-8">
+    <div key={index} className="bg-gray-900 rounded-lg p-8">
                   {/* Campaign Header */}
                   <div className="flex justify-between items-start mb-6">
                     <div>
@@ -244,7 +244,7 @@ export default async function SocialSignalsPage() {
                         const actionsPerPlatform = Math.round(campaign.metrics.totalActions / campaign.platforms.length)
                         
                         return (
-                          <div key={platformIndex} className="bg-gray-800 p-4 rounded">
+    <div key={platformIndex} className="bg-gray-800 p-4 rounded">
                             <div className="flex justify-between items-start mb-2">
                               <h5 className="text-white font-semibold text-sm capitalize">{platform}</h5>
                               <span className={`px-2 py-1 rounded text-xs font-semibold bg-${color}-600 text-white`}>

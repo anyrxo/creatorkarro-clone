@@ -1097,7 +1097,6 @@ The tool doesn't matter as much as matching it to your volume, budget, and consi
 ]
 
   return (
-
     <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"

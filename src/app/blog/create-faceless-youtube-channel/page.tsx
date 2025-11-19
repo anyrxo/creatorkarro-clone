@@ -2027,7 +2027,6 @@ Creating content for low-CPM countries
 
 export default function CreateFacelessYouTubeChannel() {
   return (
-    
     <div className="min-h-screen bg-dark">
       <script
         type="application/ld+json"
