@@ -435,7 +435,7 @@ export default function YouTubeShortsStrategy() {
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Complete YouTube Shorts FAQ</h2>
 
             <div className="space-y-8">
-                <div className="bg-zinc-900 rounded-xl p-8">
+                    <div className="bg-zinc-900 rounded-xl p-8">
                     <h3 className="text-2xl font-bold text-red-400 mb-6">How much money can you actually make from YouTube Shorts in 2026?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
@@ -760,7 +760,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-xl p-8">
+                <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">What's the proven formula for creating viral YouTube Shorts?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
@@ -1194,7 +1194,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-xl p-8">
+                <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">What content ideas consistently perform well on YouTube Shorts?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
@@ -1626,7 +1626,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-xl p-8">
+                <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">What equipment and editing tools do I need for YouTube Shorts in 2026?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
@@ -2070,7 +2070,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-xl p-8">
+                <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">How do I optimize my Shorts for the YouTube algorithm to maximize reach?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
@@ -2636,7 +2636,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-xl p-8">
+                <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">How do I grow from 0 to 100K subscribers using YouTube Shorts?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
@@ -3103,7 +3103,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-xl p-8">
+                <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">Should I focus on Shorts or long-form content? What's the best strategy?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
@@ -3532,7 +3532,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-xl p-8">
+                <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">How do I repurpose YouTube Shorts content across other platforms effectively?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
@@ -4024,7 +4024,7 @@ export default function YouTubeShortsStrategy() {
                 </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-xl p-8">
+                <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">What are the biggest mistakes that kill YouTube Shorts growth?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
