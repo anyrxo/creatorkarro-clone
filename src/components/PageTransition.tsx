@@ -17,6 +17,7 @@ export default function PageTransition({ children }: PageTransitionProps) {
     setIsTransitioning(true)
     
     const timer = setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' })
       setDisplayChildren(children)
       setIsTransitioning(false)
     }, 600)

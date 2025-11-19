@@ -60,8 +60,142 @@ export function BeautifulHero() {
           style={{ right: '10%', bottom: '0%' }}
         />
         
-        {/* Grid Pattern - Subtle & Static */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_80%)]" />
+        {/* Heartbeat Grid Pulsing from Center */}
+        {!isMobile && (
+          <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-30">
+            {/* Center Point - Heart of the pulse */}
+            <motion.div
+              className="absolute w-4 h-4 rounded-full"
+              style={{
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)',
+                background: 'rgba(59, 130, 246, 0.8)'
+              }}
+              animate={{
+                scale: [1, 3, 1],
+                opacity: [0.8, 1, 0.8],
+                boxShadow: [
+                  '0 0 20px rgba(59, 130, 246, 0.5)',
+                  '0 0 60px rgba(59, 130, 246, 1)',
+                  '0 0 20px rgba(59, 130, 246, 0.5)'
+                ]
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+
+            {/* Horizontal Grid Lines - Pulse from center outward */}
+            {[...Array(14)].map((_, i) => {
+              const distanceFromCenter = Math.abs(i - 7)
+              const delay = distanceFromCenter * 0.1
+              
+              return (
+                <motion.div
+                  key={`h-line-${i}`}
+                  className="absolute w-full h-px"
+                  style={{
+                    top: `${5 + i * 7}%`,
+                    left: '0%',
+                    background: 'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)'
+                  }}
+                  animate={{
+                    opacity: [0, 1, 0],
+                    scaleX: [0, 1, 0],
+                    background: [
+                      'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)',
+                      'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.8), transparent)',
+                      'linear-gradient(90deg, transparent, rgba(147, 51, 234, 0.6), transparent)',
+                      'linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.4), transparent)',
+                      'linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent)'
+                    ]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    delay: delay,
+                    ease: "easeInOut",
+                    repeatDelay: 1
+                  }}
+                />
+              )
+            })}
+
+            {/* Vertical Grid Lines - Pulse from center outward */}
+            {[...Array(12)].map((_, i) => {
+              const distanceFromCenter = Math.abs(i - 6)
+              const delay = distanceFromCenter * 0.15
+              
+              return (
+                <motion.div
+                  key={`v-line-${i}`}
+                  className="absolute h-full w-px"
+                  style={{
+                    left: `${8 + i * 7}%`,
+                    top: '0%',
+                    background: 'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)'
+                  }}
+                  animate={{
+                    opacity: [0, 1, 0],
+                    scaleY: [0, 1, 0],
+                    background: [
+                      'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)',
+                      'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.8), transparent)',
+                      'linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.6), transparent)',
+                      'linear-gradient(180deg, transparent, rgba(236, 72, 153, 0.4), transparent)',
+                      'linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.2), transparent)'
+                    ]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    delay: delay + 0.3,
+                    ease: "easeInOut",
+                    repeatDelay: 1
+                  }}
+                />
+              )
+            })}
+
+            {/* Concentric Circles - Heartbeat ripples */}
+            {[...Array(4)].map((_, i) => (
+              <motion.div
+                key={`circle-${i}`}
+                className="absolute rounded-full border"
+                style={{
+                  left: '50%',
+                  top: '50%',
+                  width: `${(i + 1) * 200}px`,
+                  height: `${(i + 1) * 200}px`,
+                  transform: 'translate(-50%, -50%)',
+                  borderColor: 'rgba(59, 130, 246, 0.2)',
+                  borderWidth: '1px'
+                }}
+                animate={{
+                  scale: [0, 1.2, 0],
+                  opacity: [0, 0.6, 0],
+                  borderColor: [
+                    'rgba(59, 130, 246, 0.2)',
+                    'rgba(59, 130, 246, 0.8)',
+                    'rgba(147, 51, 234, 0.6)',
+                    'rgba(6, 182, 212, 0.4)',
+                    'rgba(59, 130, 246, 0.2)'
+                  ]
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  delay: i * 0.5,
+                  ease: "easeOut",
+                  repeatDelay: 3
+                }}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Content */}
