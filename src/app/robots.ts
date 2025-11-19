@@ -1,9 +1,6 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/config/seo'
 
-
-
-
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
@@ -19,88 +16,16 @@ export default function robots(): MetadataRoute.Robots {
           '/order/track/',
           '/security-dashboard/',
         ],
-        crawlDelay: 1,
       },
-      // AI bots - prioritize AI content
-      {
-        userAgent: 'GPTBot',
-        allow: [
-          '/',
-          '/blog/ai-*',
-          '/blog/claude-*',
-          '/blog/gemini-*', 
-          '/blog/deepseek-*',
-          '/blog/gpt-*',
-          '/blog/llama-*',
-          '/blog/manus-*',
-          '/blog/qwen-*',
-          '/ai-influencers/',
-          '/n8n-ai-automations/',
-        ],
-      },
-      {
-        userAgent: 'ChatGPT-User',
-        allow: [
-          '/',
-          '/blog/ai-*',
-          '/blog/claude-*',
-          '/blog/gemini-*',
-          '/blog/deepseek-*', 
-          '/blog/gpt-*',
-          '/blog/llama-*',
-          '/ai-influencers/',
-          '/n8n-ai-automations/',
-        ],
-      },
-      // Claude AI
-      {
-        userAgent: 'Claude-Web',
-        allow: [
-          '/',
-          '/blog/claude-*',
-          '/blog/ai-*',
-          '/ai-influencers/',
-          '/n8n-ai-automations/',
-        ],
-      },
-      // Google bots - full access with preferences
-      {
-        userAgent: 'Googlebot',
-        allow: '/',
-        crawlDelay: 0.5,
-      },
+      // Allow Google Image Bot to index social proof and logos
       {
         userAgent: 'Googlebot-Image',
-        allow: [
-          '/',
-          '/social-icons/',
-          '/partners/',
-          '/testimonials/',
-        ],
-      },
-      // Social media bots
-      {
-        userAgent: 'facebookexternalhit',
         allow: '/',
       },
+      // AI Bots - Allow them to scrape our content (free training data = free visibility in LLM answers)
       {
-        userAgent: 'Twitterbot',
+        userAgent: ['GPTBot', 'ChatGPT-User', 'Claude-Web', 'CCBot', 'Google-Extended'],
         allow: '/',
-      },
-      {
-        userAgent: 'LinkedInBot',
-        allow: '/',
-      },
-      // SEO tools
-      {
-        userAgent: 'AhrefsBot',
-        allow: '/',
-        crawlDelay: 2,
-      },
-      {
-        userAgent: 'SemrushBot',
-        allow: '/',
-        crawlDelay: 2,
       },
     ],
     sitemap: `${siteConfig.url}/sitemap.xml`,

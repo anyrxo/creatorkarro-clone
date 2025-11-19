@@ -9,7 +9,7 @@ import ClientOnlyFortress from "@/components/ClientOnlyFortress";
 import ScrollProgressIndicator from "@/components/ScrollProgressIndicator";
 import LoadingBar from "@/components/LoadingBar";
 import PageTransition, { RouteLoader } from "@/components/PageTransition";
-import { siteConfig, defaultSEO, schemas } from "@/config/seo";
+import { siteConfig, defaultSEO, schemas, pageSEO } from "@/config/seo";
 import { generateDynamicMeta } from "@/lib/meta-generator";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -22,25 +22,9 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 // Generate AI-powered meta tags
 const dynamicMeta = generateDynamicMeta({
-  title: 'AI Automation Course & Instagram Growth Training | 10K+/Month Business Systems',
-  description: 'Master N8N automation, Claude 4 AI, and Instagram growth strategies. 127K+ students building $10K+/month businesses with proven AI tools, social media marketing, and digital products systems.',
-  keywords: [
-    // High-Volume Course Keywords
-    'ai automation course', 'instagram growth course', 'n8n course', 'automation training', 'social media course',
-    'business automation course', 'digital marketing course', 'make money online course', 'passive income course',
-    // AI & Automation Terms
-    'ai automation', 'ai agents', 'workflow automation', 'business automation', 'marketing automation',
-    'claude 4 ai', 'n8n automation', 'ai tools', 'automation tools', 'ai business tools',
-    // Instagram Growth Keywords
-    'instagram growth', 'how to grow instagram', 'instagram marketing', 'instagram followers',
-    'instagram course', 'social media growth', 'instagram strategy', 'viral content creation',
-    // Business & Income Keywords  
-    'make money online', 'passive income', 'online business', 'digital products', 'side hustle',
-    '10k per month', 'business course', 'entrepreneur course', 'income generation',
-    // Tech Training Keywords
-    'ai course', 'automation course', 'tech course', 'coding course', 'no code automation',
-    'workflow course', 'productivity course', 'business systems', 'process automation'
-  ]
+  title: pageSEO.home.title,
+  description: pageSEO.home.description,
+  keywords: siteConfig.keywords
 })
 
 export const metadata: Metadata = {
