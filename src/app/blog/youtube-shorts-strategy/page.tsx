@@ -4747,6 +4747,7 @@ export default function YouTubeShortsStrategy() {
                                 </ul>
                             </div>
                         </div>
+                    </div>
                         <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mt-4">
                             <p className="text-gray-300 text-sm mb-2">The difference between success and failure isn't talent or equipment. It's avoiding these mistakes and staying consistent long enough for the algorithm to work in your favor.</p>
                             <p className="text-white font-semibold text-center">Most mistakes are fixable. The only unfixable mistake is quitting.</p>
