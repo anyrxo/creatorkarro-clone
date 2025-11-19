@@ -1198,396 +1198,434 @@ const schema = generateBlogPostSchema({
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-red-400 mb-4">What content ideas consistently perform well on YouTube Shorts?</h3>
-                <div className="prose prose-invert max-w-none text-gray-300">
-                    <p className="mb-4">{`**The 10 evergreen content categories that consistently get 1M+ views: How-to tutorials, Before/After transformations, Myth-busting, "Day in the life", Ranking/Tier lists, Productivity hacks, Money-saving tips, Tool comparisons, Common mistakes, and "Things I wish I knew".** Here's the complete breakdown:
-
-**Category 1: How-To Tutorials (Highest Consistency)**
-
-Format: "How to [achieve result] in [timeframe]"
-Average views: 500K-3M
-Subscriber conversion: 2-4% (very high)
-
-Top performers:
-- "How to edit videos like a pro in 60 seconds" (4.2M views)
-- "How to grow on Instagram in 2026" (3.8M views)
-- "How to negotiate salary (actually works)" (5.1M views)
-
-Why it works:
-- Immediate actionable value
-- Searchable content (SEO benefits)
-- High save/share rate
-- Positions you as expert
-
-Template breakdown:
-1. Hook: "Here's how to [result]"
-2. Context: "I've done this 100+ times"
-3. Step 1: Show, don't tell (visual demonstration)
-4. Step 2: Add pro tip
-5. Step 3: Common mistake to avoid
-6. CTA: "Follow for more [topic] tips"
-
-Niches that crush it:
-- Tech tutorials: "How to use [feature]" (3-5M views)
-- Career advice: "How to [career win]" (2-4M views)
-- Creative skills: "How to draw [subject]" (1-3M views)
-- Life skills: "How to [adult task]" (2-6M views)
-
-Content ideas (plug in your niche):
-- How to [solve common problem] in under 5 minutes
-- How to [achieve result] without [common requirement]
-- How to [do expert-level thing] as a complete beginner
-- How to tell if [quality check] in 3 seconds
-
-**Category 2: Before/After Transformations**
-
-Format: Show end result first, then show process
-Average views: 800K-5M
-Engagement rate: 6-12% (extremely high)
-
-Top performers:
-- "I decluttered my room in 1 hour" (7.3M views)
-- "30 days of consistent posting" (4.9M views)
-- "$20 thrift flip" (6.2M views)
-
-Why it works:
-- Instant visual payoff
-- Aspirational content
-- Clear value demonstration
-- Natural loop mechanism
-
-Template breakdown:
-1. Hook: Show stunning after (0-2s)
-2. Contrast: Flash to disaster before (2-4s)
-3. Process: Time-lapse of transformation (4-25s)
-4. Reveal: Final result with details (25-35s)
-5. Stats: Time/cost/effort invested (35-45s)
-6. CTA: "Want the full tutorial?"
-
-Transformation types:
-- Space transformations: Room, desk, car (2-8M views)
-- Physical transformations: Fitness, skincare, hair (3-10M views)
-- Digital transformations: Before/after editing (1-4M views)
-- Financial transformations: Debt payoff, savings (2-5M views)
-
-Content ideas:
-- "I [transformed X] in [short timeframe]"
-- "Turning [low value] into [high value]"
-- "[Time period] of [habit] results"
-- "Fixing [disaster] in [time limit]"
-
-**Category 3: Myth-Busting (High Engagement)**
-
-Format: "Everyone thinks [myth] but actually [truth]"
-Average views: 1M-4M
-Comment rate: 8-15% (drives algorithm)
-
-Top performers:
-- "The 10,000 hour rule is a lie" (8.7M views)
-- "Passive income isn't passive" (3.2M views)
-- "Why you shouldn't follow your passion" (11.4M views)
-
-Why it works:
-- Challenges beliefs (creates cognitive dissonance)
-- Sparks debate in comments
-- High share rate (people tag friends)
-- Positions you as contrarian expert
-
-Template breakdown:
-1. Hook: State the myth confidently (0-3s)
-2. Agitation: "But here's the truth..." (3-7s)
-3. Evidence: Data/examples proving your point (7-25s)
-4. Nuance: "Now, there's an exception..." (25-35s)
-5. Takeaway: What to do instead (35-50s)
-6. CTA: "Agree or disagree? Comment below"
-
-Myth categories:
-- Career myths: "You don't need a degree" (2-6M views)
-- Money myths: "Debt isn't always bad" (1-4M views)
-- Productivity myths: "Waking up early doesn't matter" (3-8M views)
-- Skill myths: "Talent is overrated" (2-5M views)
-
-Content ideas:
-- "Why [popular advice] is actually terrible"
-- "[Number] lies about [topic] no one talks about"
-- "The [industry] doesn't want you to know this"
-- "I believed [myth] for years. I was wrong."
-
-**Category 4: "Day in the Life" (High Relatability)**
-
-Format: POV-style walkthrough of your day/routine
-Average views: 700K-3M
-Follower conversion: 3-5% (people connect with personality)
-
-Top performers:
-- "Day in the life of a software engineer" (5.8M views)
-- "How I make $10K/month working 4 hours" (4.3M views)
-- "What I actually do all day as a CEO" (3.9M views)
-
-Why it works:
-- Aspirational + relatable
-- Behind-the-scenes appeal
-- Shows proof of lifestyle/income claims
-- Builds parasocial relationship
-
-Template breakdown:
-1. Hook: "Day in the life of [intriguing job/lifestyle]" (0-3s)
-2. Morning: Show interesting morning routine (3-12s)
-3. Work: Show actual work (not boring parts) (12-30s)
-4. Break: Relatable moment/humanizing detail (30-40s)
-5. Evening: Results of the day (40-50s)
-6. CTA: "Follow to see more behind-the-scenes"
-
-DITL variations:
-- Specific day: "Day I made $X" (2-7M views)
-- Challenging day: "Busiest day as [job]" (1-4M views)
-- Unusual day: "Day I [unusual event]" (3-9M views)
-- Comparative: "My day vs my [other person's] day" (2-5M views)
-
-Content ideas:
-- "What I actually do working remotely"
-- "Day in the life making [income claim]"
-- "Behind the scenes of [creating X]"
-- "My routine that [achieves result]"
-
-**Category 5: Ranking/Tier Lists**
-
-Format: Rank items from best to worst with quick explanations
-Average views: 1M-4M
-Engagement: High comments (people argue rankings)
-
-Top performers:
-- "Ranking side hustles by difficulty" (6.1M views)
-- "Best AI tools tier list" (3.7M views)
-- "Rating productivity apps I actually use" (4.2M views)
-
-Why it works:
-- Easy to consume format
-- People love rankings/comparisons
-- Sparks debate (engagement)
-- Saves viewer research time
-
-Template breakdown:
-1. Hook: "Ranking [category] from worst to best" (0-3s)
-2. Criteria: "Based on [X, Y, Z]" (3-5s)
-3. F Tier: Show worst options with reasons (5-15s)
-4. C-B Tier: Show middle options (15-30s)
-5. A-S Tier: Show best options (30-50s)
-6. CTA: "What would you rank differently?"
-
-Ranking categories:
-- Tools/apps: "Best [category] apps ranked" (2-5M views)
-- Methods/strategies: "Ranking growth strategies" (1-4M views)
-- Products: "Best [product] for the money" (2-6M views)
-- Skills: "Easiest to hardest skills to learn" (3-7M views)
-
-Content ideas:
-- "I tried [number] [tools] - here's my ranking"
-- "Ranking [topic] from beginner to expert"
-- "[Category] tier list no one asked for"
-- "Best to worst [items] for [specific use]"
-
-**Category 6: Productivity Hacks**
-
-Format: "I [optimized X] and now [result]"
-Average views: 800K-4M
-Save rate: 8-15% (people bookmark for later)
-
-Top performers:
-- "The 2-minute rule that changed my life" (9.2M views)
-- "How I reply to 200 emails in 10 minutes" (3.8M views)
-- "My morning routine that saves 2 hours" (5.1M views)
-
-Why it works:
-- Universal pain point (lack of time)
-- Immediately applicable
-- Clear benefit promised
-- Aspirational efficiency
-
-Template breakdown:
-1. Hook: "This [hack] saves me [time/energy]" (0-3s)
-2. Problem: "I used to struggle with [pain point]" (3-8s)
-3. Solution: Show the hack in action (8-30s)
-4. Results: Specific outcomes/metrics (30-40s)
-5. Bonus: Second related hack (40-50s)
-6. CTA: "Try this and report back"
-
-Hack categories:
-- Time management: "How I [save time]" (2-6M views)
-- Focus/deep work: "How I [achieve focus]" (1-4M views)
-- Organization: "How I [stay organized]" (2-5M views)
-- Automation: "How I [automate task]" (3-8M views)
-
-Content ideas:
-- "The [X-minute] rule that [result]"
-- "How I [do overwhelming task] in [short time]"
-- "[Number] productivity hacks I actually use"
-- "Stop [common approach], do this instead"
-
-**Category 7: Money-Saving/Making Tips**
-
-Format: "How to [save/make money] doing [specific thing]"
-Average views: 1M-6M
-Viral potential: Highest (everyone wants money)
-
-Top performers:
-- "How I save $500/month without trying" (12.3M views)
-- "Make $100/day with this app" (8.9M views)
-- "Expensive things I stopped buying" (7.4M views)
-
-Why it works:
-- Universal appeal
-- Immediate perceived value
-- High share rate (help friends/family)
-- Action-oriented content
-
-Template breakdown:
-1. Hook: "[Money amount] in [timeframe]" (0-2s)
-2. Credibility: "Here's proof" (2-5s)
-3. Method 1: First tip with specifics (5-15s)
-4. Method 2: Second tip (15-25s)
-5. Method 3: Third tip (25-40s)
-6. Reality check: "Realistically expect [X]" (40-50s)
-7. CTA: "Which will you try first?"
-
-Money content types:
-- Side hustles: "How I make [X] doing [Y]" (3-10M views)
-- Saving: "Cut [expense] by [%]" (2-6M views)
-- Investing: "How I invest [amount]" (1-5M views)
-- Budgeting: "Budget that actually works" (2-7M views)
-
-Content ideas:
-- "How to make $X/month with [specific method]"
-- "[Number] ways I save on [category]"
-- "I tracked every expense for [time] - here's what I learned"
-- "Free alternatives to expensive [products]"
-
-**Category 8: Tool Comparisons**
-
-Format: "I tested [X tools] so you don't have to"
-Average views: 900K-4M
-Decision-making value: High (saves viewers time/money)
-
-Top performers:
-- "CapCut vs Premiere Pro for Shorts" (4.7M views)
-- "I tried every AI writing tool" (5.3M views)
-- "Free vs paid [tool category]" (3.9M views)
-
-Why it works:
-- Saves viewer research time
-- Positions you as expert
-- High commercial intent (affiliate opportunities)
-- Comparative content performs well
-
-Template breakdown:
-1. Hook: "I tested [number] [tools]" (0-3s)
-2. Criteria: "Testing [specific factors]" (3-6s)
-3. Tool 1: Demo + verdict (6-18s)
-4. Tool 2: Demo + verdict (18-30s)
-5. Tool 3: Demo + verdict (30-42s)
-6. Winner: "Best overall is..." (42-50s)
-7. CTA: "Links in description"
-
-Comparison types:
-- Free vs paid: "Is [paid tool] worth it?" (2-5M views)
-- Popular vs unknown: "Better alternative to [popular]" (3-7M views)
-- Old vs new: "[Legacy] vs [new tool]" (1-4M views)
-- Budget tier: "Best [tool] under $X" (2-6M views)
-
-Content ideas:
-- "[Popular tool] alternatives no one talks about"
-- "I used [tool] for [time] - honest review"
-- "Best [tool type] for [specific use case]"
-- "Stop using [tool], use this instead"
-
-**Category 9: Common Mistakes**
-
-Format: "Stop doing [wrong thing], do this instead"
-Average views: 1M-5M
-Authority building: Very high
-
-Top performers:
-- "5 mistakes killing your productivity" (6.8M views)
-- "Why your Shorts aren't getting views" (4.1M views)
-- "Editing mistakes that scream amateur" (3.6M views)
-
-Why it works:
-- Corrective value
-- Makes viewer feel "in the know"
-- Negative framing = higher curiosity
-- Actionable improvement path
-
-Template breakdown:
-1. Hook: "Stop making these [mistakes]" (0-3s)
-2. Mistake 1: Show the error (3-12s)
-3. Fix 1: Show correct way (12-20s)
-4. Mistake 2: Show the error (20-28s)
-5. Fix 2: Show correct way (28-40s)
-6. Bonus: "Biggest mistake of all..." (40-50s)
-7. CTA: "Which mistake are you making?"
-
-Mistake categories:
-- Beginner mistakes: "5 things beginners get wrong" (2-6M views)
-- Common misconceptions: "You're doing [X] wrong" (3-8M views)
-- Efficiency errors: "This wastes hours" (1-4M views)
-- Quality issues: "Why [outcome] looks bad" (2-5M views)
-
-Content ideas:
-- "[Number] mistakes I made as a beginner"
-- "Why your [results] suck (and how to fix)"
-- "Things that seem right but are wrong"
-- "I did [X] wrong for years - here's the right way"
-
-**Category 10: "Things I Wish I Knew"**
-
-Format: "If I could tell my past self anything about [topic]"
-Average views: 800K-3M
-Emotional resonance: Very high
-
-Top performers:
-- "What I wish I knew before starting YouTube" (5.9M views)
-- "Things I wish I knew at 20" (7.2M views)
-- "Starting a business? Watch this first" (4.4M views)
-
-Why it works:
-- Wisdom/mentorship appeal
-- Prevents viewer mistakes
-- Vulnerable storytelling
-- Timeless advice
-
-Template breakdown:
-1. Hook: "I wish I knew this [timeframe] ago" (0-3s)
-2. Context: "It would've saved me [pain]" (3-7s)
-3. Lesson 1: Specific insight (7-18s)
-4. Lesson 2: Specific insight (18-30s)
-5. Lesson 3: Most important insight (30-45s)
-6. Current state: "Now I [result]" (45-52s)
-7. CTA: "Learn from my mistakes"
-
-Lesson categories:
-- Career lessons: "Wish I knew about [career topic]" (2-5M views)
-- Skill lessons: "Learning [skill] faster" (1-4M views)
-- Life lessons: "Things that actually matter" (3-8M views)
-- Business lessons: "Starting [business] advice" (2-6M views)
-
-Content ideas:
-- "I wasted [time] not knowing this"
-- "Things I'd tell myself [years] ago"
-- "What [success] actually takes (not what they say)"
-- "The only [number] things that matter for [goal]"
-
-**Content Calendar Strategy**
-
-Rotate these 10 categories throughout the week:
-- Monday: How-to tutorial (high value start)
-- Tuesday: Myth-busting (drives comments)
-- Wednesday: Before/after transformation (visual)
-- Thursday: Productivity hack (midweek motivation)
-- Friday: Money tip (weekend side hustle prep)
-- Saturday: Day in the life (weekend entertainment)
-- Sunday: Ranking/tier list (discussion starter)
-
-Post 3-5 Shorts per day mixing categories based on performance data. Track which categories perform best for YOUR specific niche, then double down on top 3 categories while sprinkling in others for variety.`}</p>
+                <h3 className="text-2xl font-bold text-red-400 mb-6">What content ideas consistently perform well on YouTube Shorts?</h3>
+                <div className="space-y-6">
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                        <strong className="text-white font-semibold">The 10 evergreen content categories that consistently get 1M+ views:</strong> How-to tutorials, Before/After transformations, Myth-busting, "Day in the life", Ranking/Tier lists, Productivity hacks, Money-saving tips, Tool comparisons, Common mistakes, and "Things I wish I knew". Here's the complete breakdown:
+                    </p>
+
+                    {/* Category 1 */}
+                    <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-blue-400 mb-4">Category 1: How-To Tutorials (Highest Consistency)</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: <span className="italic">"How to [achieve result] in [timeframe]"</span></p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">500K-3M</strong></p>
+                                <p className="text-gray-300 text-sm">Subscriber conversion: <strong className="text-white">2-4%</strong> (very high)</p>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "How to edit videos like a pro in 60 seconds" <strong className="text-white">(4.2M views)</strong></li>
+                                    <li>• "How to grow on Instagram in 2026" <strong className="text-white">(3.8M views)</strong></li>
+                                    <li>• "How to negotiate salary (actually works)" <strong className="text-white">(5.1M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-green-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Immediate actionable value</li>
+                                <li>• Searchable content (SEO benefits)</li>
+                                <li>• High save/share rate</li>
+                                <li>• Positions you as expert</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Template breakdown:</h5>
+                            <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                                <li>Hook: "Here's how to [result]"</li>
+                                <li>Context: "I've done this 100+ times"</li>
+                                <li>Step 1: Show, don't tell (visual demonstration)</li>
+                                <li>Step 2: Add pro tip</li>
+                                <li>Step 3: Common mistake to avoid</li>
+                                <li>CTA: "Follow for more [topic] tips"</li>
+                            </ol>
+                        </div>
+                        <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-purple-300 mb-2">Niches that crush it:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Tech tutorials: "How to use [feature]" <strong className="text-white">(3-5M views)</strong></li>
+                                <li>• Career advice: "How to [career win]" <strong className="text-white">(2-4M views)</strong></li>
+                                <li>• Creative skills: "How to draw [subject]" <strong className="text-white">(1-3M views)</strong></li>
+                                <li>• Life skills: "How to [adult task]" <strong className="text-white">(2-6M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Category 2 */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">Category 2: Before/After Transformations</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: Show end result first, then show process</p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">800K-5M</strong></p>
+                                <p className="text-gray-300 text-sm">Engagement rate: <strong className="text-white">6-12%</strong> (extremely high)</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-green-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "I decluttered my room in 1 hour" <strong className="text-white">(7.3M views)</strong></li>
+                                    <li>• "30 days of consistent posting" <strong className="text-white">(4.9M views)</strong></li>
+                                    <li>• "$20 thrift flip" <strong className="text-white">(6.2M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-green-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Instant visual payoff</li>
+                                <li>• Aspirational content</li>
+                                <li>• Clear value demonstration</li>
+                                <li>• Natural loop mechanism</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Transformation types:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Space transformations: Room, desk, car <strong className="text-white">(2-8M views)</strong></li>
+                                <li>• Physical transformations: Fitness, skincare, hair <strong className="text-white">(3-10M views)</strong></li>
+                                <li>• Digital transformations: Before/after editing <strong className="text-white">(1-4M views)</strong></li>
+                                <li>• Financial transformations: Debt payoff, savings <strong className="text-white">(2-5M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Category 3 */}
+                    <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-red-400 mb-4">Category 3: Myth-Busting (High Engagement)</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: <span className="italic">"Everyone thinks [myth] but actually [truth]"</span></p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">1M-4M</strong></p>
+                                <p className="text-gray-300 text-sm">Comment rate: <strong className="text-white">8-15%</strong> (drives algorithm)</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-red-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "The 10,000 hour rule is a lie" <strong className="text-white">(8.7M views)</strong></li>
+                                    <li>• "Passive income isn't passive" <strong className="text-white">(3.2M views)</strong></li>
+                                    <li>• "Why you shouldn't follow your passion" <strong className="text-white">(11.4M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-red-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Challenges beliefs (creates cognitive dissonance)</li>
+                                <li>• Sparks debate in comments</li>
+                                <li>• High share rate (people tag friends)</li>
+                                <li>• Positions you as contrarian expert</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Myth categories:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Career myths: "You don't need a degree" <strong className="text-white">(2-6M views)</strong></li>
+                                <li>• Money myths: "Debt isn't always bad" <strong className="text-white">(1-4M views)</strong></li>
+                                <li>• Productivity myths: "Waking up early doesn't matter" <strong className="text-white">(3-8M views)</strong></li>
+                                <li>• Skill myths: "Talent is overrated" <strong className="text-white">(2-5M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Category 4 */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">Category 4: "Day in the Life" (High Relatability)</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: POV-style walkthrough of your day/routine</p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">700K-3M</strong></p>
+                                <p className="text-gray-300 text-sm">Follower conversion: <strong className="text-white">3-5%</strong> (people connect with personality)</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-purple-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "Day in the life of a software engineer" <strong className="text-white">(5.8M views)</strong></li>
+                                    <li>• "How I make $10K/month working 4 hours" <strong className="text-white">(4.3M views)</strong></li>
+                                    <li>• "What I actually do all day as a CEO" <strong className="text-white">(3.9M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-purple-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Aspirational + relatable</li>
+                                <li>• Behind-the-scenes appeal</li>
+                                <li>• Shows proof of lifestyle/income claims</li>
+                                <li>• Builds parasocial relationship</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">DITL variations:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Specific day: "Day I made $X" <strong className="text-white">(2-7M views)</strong></li>
+                                <li>• Challenging day: "Busiest day as [job]" <strong className="text-white">(1-4M views)</strong></li>
+                                <li>• Unusual day: "Day I [unusual event]" <strong className="text-white">(3-9M views)</strong></li>
+                                <li>• Comparative: "My day vs my [other person's] day" <strong className="text-white">(2-5M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Category 5 */}
+                    <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-yellow-400 mb-4">Category 5: Ranking/Tier Lists</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: Rank items from best to worst with quick explanations</p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">1M-4M</strong></p>
+                                <p className="text-gray-300 text-sm">Engagement: High comments (people argue rankings)</p>
+                            </div>
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-yellow-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "Ranking side hustles by difficulty" <strong className="text-white">(6.1M views)</strong></li>
+                                    <li>• "Best AI tools tier list" <strong className="text-white">(3.7M views)</strong></li>
+                                    <li>• "Rating productivity apps I actually use" <strong className="text-white">(4.2M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-yellow-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Easy to consume format</li>
+                                <li>• People love rankings/comparisons</li>
+                                <li>• Sparks debate (engagement)</li>
+                                <li>• Saves viewer research time</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Ranking categories:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Tools/apps: "Best [category] apps ranked" <strong className="text-white">(2-5M views)</strong></li>
+                                <li>• Methods/strategies: "Ranking growth strategies" <strong className="text-white">(1-4M views)</strong></li>
+                                <li>• Products: "Best [product] for the money" <strong className="text-white">(2-6M views)</strong></li>
+                                <li>• Skills: "Easiest to hardest skills to learn" <strong className="text-white">(3-7M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Category 6 */}
+                    <div className="bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-teal-400 mb-4">Category 6: Productivity Hacks</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: <span className="italic">"I [optimized X] and now [result]"</span></p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">800K-4M</strong></p>
+                                <p className="text-gray-300 text-sm">Save rate: <strong className="text-white">8-15%</strong> (people bookmark for later)</p>
+                            </div>
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-teal-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "The 2-minute rule that changed my life" <strong className="text-white">(9.2M views)</strong></li>
+                                    <li>• "How I reply to 200 emails in 10 minutes" <strong className="text-white">(3.8M views)</strong></li>
+                                    <li>• "My morning routine that saves 2 hours" <strong className="text-white">(5.1M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-teal-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Universal pain point (lack of time)</li>
+                                <li>• Immediately applicable</li>
+                                <li>• Clear benefit promised</li>
+                                <li>• Aspirational efficiency</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Hack categories:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Time management: "How I [save time]" <strong className="text-white">(2-6M views)</strong></li>
+                                <li>• Focus/deep work: "How I [achieve focus]" <strong className="text-white">(1-4M views)</strong></li>
+                                <li>• Organization: "How I [stay organized]" <strong className="text-white">(2-5M views)</strong></li>
+                                <li>• Automation: "How I [automate task]" <strong className="text-white">(3-8M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Category 7 */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">Category 7: Money-Saving/Making Tips</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: <span className="italic">"How to [save/make money] doing [specific thing]"</span></p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">1M-6M</strong></p>
+                                <p className="text-gray-300 text-sm">Viral potential: <strong className="text-white">Highest</strong> (everyone wants money)</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-green-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "How I save $500/month without trying" <strong className="text-white">(12.3M views)</strong></li>
+                                    <li>• "Make $100/day with this app" <strong className="text-white">(8.9M views)</strong></li>
+                                    <li>• "Expensive things I stopped buying" <strong className="text-white">(7.4M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-green-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Universal appeal</li>
+                                <li>• Immediate perceived value</li>
+                                <li>• High share rate (help friends/family)</li>
+                                <li>• Action-oriented content</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Money content types:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Side hustles: "How I make [X] doing [Y]" <strong className="text-white">(3-10M views)</strong></li>
+                                <li>• Saving: "Cut [expense] by [%]" <strong className="text-white">(2-6M views)</strong></li>
+                                <li>• Investing: "How I invest [amount]" <strong className="text-white">(1-5M views)</strong></li>
+                                <li>• Budgeting: "Budget that actually works" <strong className="text-white">(2-7M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Category 8 */}
+                    <div className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-indigo-400 mb-4">Category 8: Tool Comparisons</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: <span className="italic">"I tested [X tools] so you don't have to"</span></p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">900K-4M</strong></p>
+                                <p className="text-gray-300 text-sm">Decision-making value: High (saves viewers time/money)</p>
+                            </div>
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-indigo-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "CapCut vs Premiere Pro for Shorts" <strong className="text-white">(4.7M views)</strong></li>
+                                    <li>• "I tried every AI writing tool" <strong className="text-white">(5.3M views)</strong></li>
+                                    <li>• "Free vs paid [tool category]" <strong className="text-white">(3.9M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-indigo-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Saves viewer research time</li>
+                                <li>• Positions you as expert</li>
+                                <li>• High commercial intent (affiliate opportunities)</li>
+                                <li>• Comparative content performs well</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Comparison types:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Free vs paid: "Is [paid tool] worth it?" <strong className="text-white">(2-5M views)</strong></li>
+                                <li>• Popular vs unknown: "Better alternative to [popular]" <strong className="text-white">(3-7M views)</strong></li>
+                                <li>• Old vs new: "[Legacy] vs [new tool]" <strong className="text-white">(1-4M views)</strong></li>
+                                <li>• Budget tier: "Best [tool] under $X" <strong className="text-white">(2-6M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Category 9 */}
+                    <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-red-400 mb-4">Category 9: Common Mistakes</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: <span className="italic">"Stop doing [wrong thing], do this instead"</span></p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">1M-5M</strong></p>
+                                <p className="text-gray-300 text-sm">Authority building: Very high</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-red-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "5 mistakes killing your productivity" <strong className="text-white">(6.8M views)</strong></li>
+                                    <li>• "Why your Shorts aren't getting views" <strong className="text-white">(4.1M views)</strong></li>
+                                    <li>• "Editing mistakes that scream amateur" <strong className="text-white">(3.6M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-red-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Corrective value</li>
+                                <li>• Makes viewer feel "in the know"</li>
+                                <li>• Negative framing = higher curiosity</li>
+                                <li>• Actionable improvement path</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Mistake categories:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Beginner mistakes: "5 things beginners get wrong" <strong className="text-white">(2-6M views)</strong></li>
+                                <li>• Common misconceptions: "You're doing [X] wrong" <strong className="text-white">(3-8M views)</strong></li>
+                                <li>• Efficiency errors: "This wastes hours" <strong className="text-white">(1-4M views)</strong></li>
+                                <li>• Quality issues: "Why [outcome] looks bad" <strong className="text-white">(2-5M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Category 10 */}
+                    <div className="bg-gradient-to-br from-pink-500/10 to-rose-500/10 border border-pink-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-pink-400 mb-4">Category 10: "Things I Wish I Knew"</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <p className="text-gray-300 text-sm mb-2">Format: <span className="italic">"If I could tell my past self anything about [topic]"</span></p>
+                                <p className="text-gray-300 text-sm mb-2">Average views: <strong className="text-white">800K-3M</strong></p>
+                                <p className="text-gray-300 text-sm">Emotional resonance: Very high</p>
+                            </div>
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-pink-300 mb-2">Top performers:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• "What I wish I knew before starting YouTube" <strong className="text-white">(5.9M views)</strong></li>
+                                    <li>• "Things I wish I knew at 20" <strong className="text-white">(7.2M views)</strong></li>
+                                    <li>• "Starting a business? Watch this first" <strong className="text-white">(4.4M views)</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-sm font-semibold text-pink-300 mb-2">Why it works:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Wisdom/mentorship appeal</li>
+                                <li>• Prevents viewer mistakes</li>
+                                <li>• Vulnerable storytelling</li>
+                                <li>• Timeless advice</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Lesson categories:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Career lessons: "Wish I knew about [career topic]" <strong className="text-white">(2-5M views)</strong></li>
+                                <li>• Skill lessons: "Learning [skill] faster" <strong className="text-white">(1-4M views)</strong></li>
+                                <li>• Life lessons: "Things that actually matter" <strong className="text-white">(3-8M views)</strong></li>
+                                <li>• Business lessons: "Starting [business] advice" <strong className="text-white">(2-6M views)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Content Calendar Strategy */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">Content Calendar Strategy</h4>
+                        <p className="text-gray-300 mb-4">Rotate these 10 categories throughout the week:</p>
+                        <div className="grid md:grid-cols-2 gap-3 mb-4">
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-sm"><strong className="text-white">Monday:</strong> How-to tutorial (high value start)</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-sm"><strong className="text-white">Tuesday:</strong> Myth-busting (drives comments)</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-sm"><strong className="text-white">Wednesday:</strong> Before/after transformation (visual)</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-sm"><strong className="text-white">Thursday:</strong> Productivity hack (midweek motivation)</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-sm"><strong className="text-white">Friday:</strong> Money tip (weekend side hustle prep)</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-sm"><strong className="text-white">Saturday:</strong> Day in the life (weekend entertainment)</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-sm"><strong className="text-white">Sunday:</strong> Ranking/tier list (discussion starter)</p>
+                            </div>
+                        </div>
+                        <p className="text-white font-semibold text-center">
+                            Post 3-5 Shorts per day mixing categories based on performance data. Track which categories perform best for YOUR specific niche, then double down on top 3 categories while sprinkling in others for variety.
+                        </p>
+                    </div>
                 </div>
             </div>
 
