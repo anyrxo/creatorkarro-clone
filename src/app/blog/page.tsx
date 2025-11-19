@@ -103,6 +103,13 @@ export default function BlogPage() {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [])
 
+  const [visibleCount, setVisibleCount] = useState(9)
+
+  // Reset visible count when search or category changes
+  useEffect(() => {
+    setVisibleCount(9)
+  }, [searchTerm, selectedCategory])
+
   const filteredPosts = useMemo(() => {
     let posts = allBlogPosts
 
@@ -450,7 +457,7 @@ export default function BlogPage() {
             ) : (
               <>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                  {(filteredPosts.length > 0 ? filteredPosts : allBlogPosts.slice(0, 12)).map((post, index) => {
+                  {filteredPosts.slice(0, visibleCount).map((post, index) => {
                     // Category-specific color schemes
                     const categoryColors: Record<string, { bg: string, border: string, text: string, hover: string, gradient: string }> = {
                       'AI Influencers': { bg: 'from-purple-500/20 to-pink-500/20', border: 'border-purple-500/30', text: 'text-purple-300', hover: 'group-hover:border-purple-500/50 group-hover:shadow-purple-500/10', gradient: 'from-purple-600/5 via-pink-600/5 to-purple-600/5' },
@@ -580,8 +587,22 @@ export default function BlogPage() {
                     )
                   }
                   )}
-
                 </div>
+
+                {/* Load More Button */}
+                {visibleCount < filteredPosts.length && (
+                  <div className="mt-12 flex justify-center">
+                    <button
+                      onClick={() => setVisibleCount(prev => prev + 9)}
+                      className="group relative px-8 py-3 bg-zinc-900 border border-zinc-800 rounded-full font-medium text-zinc-300 hover:text-white hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
+                    >
+                      <span className="relative z-10 flex items-center gap-2">
+                        Load More Articles
+                        <ArrowRight className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-300 rotate-90" />
+                      </span>
+                    </button>
+                  </div>
+                )}
               </>
             )}
           </div>

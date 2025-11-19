@@ -168,7 +168,7 @@ export default function HomePage() {
                   </div>
                   <ul className="space-y-4 text-zinc-400">
                     <li className="flex items-start gap-3">
-                      <span className="text-red-500 font-bold">×</span> Buying 5 different generic courses ($5k+)
+                      <span className="text-red-500 font-bold">×</span> Buying 5 different generic programs ($5k+)
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-red-500 font-bold">×</span> Strategies that conflict with each other
@@ -310,7 +310,7 @@ export default function HomePage() {
       </section>
 
       {/* === THE 4 PILLARS (Sub-Products) === */}
-      <section id="courses" className="relative py-24 bg-black">
+      <section id="systems" className="relative py-24 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
              <span className="text-blue-500 font-bold tracking-widest uppercase text-xs">The Ecosystem</span>

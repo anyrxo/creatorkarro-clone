@@ -249,7 +249,7 @@ export function BeautifulHero() {
             <StandardCTA
               variant="outline"
               text="View Systems"
-              href="#courses"
+              href="#systems"
               size="lg"
             />
           </motion.div>
