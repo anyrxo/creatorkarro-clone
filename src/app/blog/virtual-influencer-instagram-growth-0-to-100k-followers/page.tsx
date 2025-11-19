@@ -398,7 +398,7 @@ export default function VirtualInfluencerInstagramGrowth() {
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="text-emerald-400">3.</span>
-                        <p><strong className="text-white">Kill losers:</strong> Stop creating content types that underperform. Data > assumptions.</p>
+                        <p><strong className="text-white">Kill losers:</strong> Stop creating content types that underperform. Data {'>'} assumptions.</p>
                       </div>
                       <div className="flex items-start gap-2">
                         <span className="text-emerald-400">4.</span>
@@ -588,7 +588,7 @@ export default function VirtualInfluencerInstagramGrowth() {
                         <li>• Growth rate slows (10K/month typical)</li>
                         <li>• Focus shifts from growth to monetization</li>
                         <li>• Engagement rate naturally drops (1-3% normal)</li>
-                        <li>• Quality > quantity becomes critical</li>
+                        <li>• Quality {'>'} quantity becomes critical</li>
                         <li>• Build multiple revenue streams (don't rely on one)</li>
                       </ul>
                     </div>

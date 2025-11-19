@@ -563,7 +563,7 @@ export default function InstagramAIInfluencer() {
             <div className="bg-zinc-900 rounded-xl p-6">
               <h3 className="text-xl font-semibold text-white mb-3">Should I buy followers to kickstart growth?</h3>
               <p className="text-gray-400">
-                No. Bought followers are fake, don't engage, and tank your engagement rate. Brands can detect this instantly. Instagram's algorithm also detects fake engagement and will suppress your reach. Organic growth is slower but builds real value. 5K real followers > 50K fake followers. Focus on quality content and genuine engagement tactics.
+                No. Bought followers are fake, don't engage, and tank your engagement rate. Brands can detect this instantly. Instagram's algorithm also detects fake engagement and will suppress your reach. Organic growth is slower but builds real value. 5K real followers {'>'} 50K fake followers. Focus on quality content and genuine engagement tactics.
               </p>
             </div>
 
