@@ -431,23 +431,7 @@ export default function VirtualInfluencerStatisticsPage() {
           </div>
         </div>
 
-        <SmartCTA
-          title="Build Your AI Influencer Following This Data"
-          description="Join 4,000+ students using market data to build AI influencers earning $10K-$100K+/month in the fastest-growing niches."
-          primaryButton={{
-            text: "Enroll in AI Influencers Course →",
-            href: "/ai-influencer-creation"
-          }}
-          features={[
-            "Regional strategy guide: Which markets to target first",
-            "Niche selection based on 2026 market data",
-            "Platform-specific growth tactics (Instagram, TikTok, YouTube)",
-            "Monetization blueprints optimized by region",
-            "Legal compliance for all major markets",
-            "Case studies from top-earning virtual influencers"
-          ]}
-          gradient="from-blue-600 to-purple-600"
-        />
+        <SmartCTA blogSlug="virtual-influencer-statistics-2026-complete-data" />
 
         {/* Consumer Behavior Statistics */}
         <h2 className="text-4xl font-bold text-white mt-16 mb-6 flex items-center gap-3">
@@ -820,27 +804,7 @@ export default function VirtualInfluencerStatisticsPage() {
           </div>
         </div>
 
-        <SmartCTA
-          title="Turn These Statistics Into Your Reality"
-          description="Join 4,000+ students building AI influencers using proven data-driven strategies that generate $10K-$100K+/month."
-          primaryButton={{
-            text: "Start Building Your AI Influencer →",
-            href: "/ai-influencer-creation"
-          }}
-          secondaryButton={{
-            text: "Download Complete Market Report",
-            href: "/resources/virtual-influencer-market-report-2026"
-          }}
-          features={[
-            "Market-validated niche selection framework",
-            "Platform growth strategies backed by data",
-            "Revenue optimization for all 7 income streams",
-            "Regional targeting based on CAGR analysis",
-            "Demographic targeting (Gen Z = 67% adoption)",
-            "Engagement rate benchmarks and optimization"
-          ]}
-          gradient="from-green-600 to-emerald-600"
-        />
+        <SmartCTA blogSlug="virtual-influencer-statistics-2026-complete-data" />
 
         {/* Industry Trends */}
         <h2 className="text-4xl font-bold text-white mt-16 mb-6 flex items-center gap-3">
@@ -1058,29 +1022,7 @@ export default function VirtualInfluencerStatisticsPage() {
 
         {/* Final CTA */}
         <div className="my-16">
-          <SmartCTA
-            title="Use This Data to Build Your Virtual Influencer Empire"
-            description="Join 4,000+ students who leveraged market statistics to build AI influencers earning $10K-$100K+/month. Don't just read the data - act on it."
-            primaryButton={{
-              text: "Enroll in AI Influencer Course Now →",
-              href: "/ai-influencer-creation"
-            }}
-            secondaryButton={{
-              text: "Download Complete 2026 Market Report",
-              href: "/resources/virtual-influencer-statistics-2026"
-            }}
-            features={[
-              "Market-validated niche selection (Fashion = 60% market share)",
-              "Regional targeting strategy (Asia Pacific = 44% CAGR)",
-              "Platform optimization (YouTube 28.7%, Instagram 28.4%, TikTok 20.5%)",
-              "Revenue stream setup (7 income sources, avg $28K-$51K/mo mid-tier)",
-              "Demographic targeting (Gen Z = 67% adoption rate)",
-              "Engagement benchmarks & optimization tactics",
-              "Compliance templates (FTC March 2025 guidelines)",
-              "Case studies from $100K+/month virtual influencers"
-            ]}
-            gradient="from-purple-600 via-pink-600 to-cyan-600"
-          />
+          <SmartCTA blogSlug="virtual-influencer-statistics-2026-complete-data" />
         </div>
 
         {/* Conclusion */}

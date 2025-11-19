@@ -283,23 +283,7 @@ export default function AIInfluencerMarketingPage() {
           </div>
         </div>
 
-        <SmartCTA
-          title="Master AI Influencer Creation in Our Complete Course"
-          description="Learn to build, grow, and monetize AI influencers earning $10K-$100K+/month with our comprehensive training."
-          primaryButton={{
-            text: "Enroll in AI Influencers Course →",
-            href: "/ai-influencer-creation"
-          }}
-          features={[
-            "ComfyUI workflows for photorealistic AI models",
-            "LoRA training for perfect face consistency",
-            "Monetization strategies: brand deals, Fanvue, affiliate",
-            "Instagram/TikTok/YouTube growth automation",
-            "Legal compliance & platform policies",
-            "Agency model to manage 20+ AI influencers"
-          ]}
-          gradient="from-purple-600 to-pink-600"
-        />
+        <SmartCTA blogSlug="ai-influencer-marketing-45b-market-opportunity" />
 
         {/* Why Brands Are Switching Section */}
         <h2 className="text-4xl font-bold text-white mt-16 mb-6 flex items-center gap-3">
@@ -738,27 +722,7 @@ export default function AIInfluencerMarketingPage() {
           </div>
         </div>
 
-        <SmartCTA
-          title="Ready to Build Your AI Influencer Empire?"
-          description="Join 4,000+ students learning to create, grow, and monetize AI influencers earning $10K-$100K+/month."
-          primaryButton={{
-            text: "Start Your AI Influencer Journey →",
-            href: "/ai-influencer-creation"
-          }}
-          secondaryButton={{
-            text: "Download Free Market Report",
-            href: "/resources/ai-influencer-market-report"
-          }}
-          features={[
-            "Zero coding required - visual ComfyUI workflows",
-            "Face consistency mastery with LoRA training",
-            "Platform growth automation (Instagram/TikTok/YouTube)",
-            "7 monetization blueprints with real examples",
-            "Legal compliance & FTC disclosure templates",
-            "Agency scaling to manage 20+ AI influencers"
-          ]}
-          gradient="from-purple-600 to-pink-600"
-        />
+        <SmartCTA blogSlug="ai-influencer-marketing-45b-market-opportunity" />
 
         {/* Entry Strategy Section */}
         <h2 className="text-4xl font-bold text-white mt-16 mb-6 flex items-center gap-3">

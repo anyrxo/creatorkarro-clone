@@ -527,23 +527,7 @@ export default function CGIInfluencerBusinessModelPage() {
           </div>
         </div>
 
-        <SmartCTA
-          title="Master All 7 Revenue Streams in Our Complete Course"
-          description="Learn to build, monetize, and scale CGI influencers using proven business models from top earners making $100K+/month."
-          primaryButton={{
-            text: "Enroll in AI Influencer Course →",
-            href: "/ai-influencer-creation"
-          }}
-          features={[
-            "Complete revenue stream setup (all 7 sources)",
-            "Brand pitch deck templates ($40K+ deals proven)",
-            "Fanvue/Patreon monetization strategies",
-            "Affiliate program selection guide",
-            "Digital product creation framework",
-            "Pricing calculator & negotiation scripts"
-          ]}
-          gradient="from-green-600 to-emerald-600"
-        />
+        <SmartCTA blogSlug="cgi-influencer-business-model-revenue-guide" />
 
         {/* Cost Structure */}
         <h2 className="text-4xl font-bold text-white mt-16 mb-6 flex items-center gap-3">
@@ -741,29 +725,7 @@ export default function CGIInfluencerBusinessModelPage() {
           </div>
         </div>
 
-        <SmartCTA
-          title="Build Your Scalable CGI Influencer Business"
-          description="Learn the exact business model strategies used by top CGI influencers earning $100K-$1M+/year with 90%+ profit margins."
-          primaryButton={{
-            text: "Enroll in AI Influencer Course →",
-            href: "/ai-influencer-creation"
-          }}
-          secondaryButton={{
-            text: "Download Business Model Template",
-            href: "/resources/cgi-influencer-business-model-template"
-          }}
-          features={[
-            "Complete 7-stream revenue setup guide",
-            "Cost calculator & profit margin optimizer",
-            "Multi-influencer portfolio strategy",
-            "Agency model implementation blueprint",
-            "IP licensing & exit strategy templates",
-            "Brand pitch decks ($40K+ deals proven)",
-            "Legal contracts & FTC compliance",
-            "Financial projections & valuation tools"
-          ]}
-          gradient="from-green-600 via-emerald-600 to-cyan-600"
-        />
+        <SmartCTA blogSlug="cgi-influencer-business-model-revenue-guide" />
 
         {/* FAQ Section */}
         <h2 className="text-4xl font-bold text-white mt-16 mb-8">Frequently Asked Questions About CGI Influencer Business Model</h2>
@@ -1020,29 +982,7 @@ export default function CGIInfluencerBusinessModelPage() {
 
         {/* Final CTA */}
         <div className="my-16">
-          <SmartCTA
-            title="Build Your 90% Margin CGI Influencer Business Today"
-            description="Join 4,000+ students learning to build, monetize, and scale CGI influencers with business models proven to generate $100K-$1M+/year."
-            primaryButton={{
-              text: "Enroll in AI Influencer Course Now →",
-              href: "/ai-influencer-creation"
-            }}
-            secondaryButton={{
-              text: "Download Free Business Model PDF",
-              href: "/resources/cgi-influencer-business-model-pdf"
-            }}
-            features={[
-              "Complete 7-stream revenue implementation guide",
-              "Profit margin calculator & financial projections",
-              "Brand partnership pitch deck templates ($40K+ proven)",
-              "Premium content strategy (Fanvue, Patreon setup)",
-              "Multi-influencer portfolio blueprint",
-              "Agency model implementation guide",
-              "IP licensing & exit strategy templates",
-              "Legal contracts, FTC compliance, & tax optimization"
-            ]}
-            gradient="from-green-600 via-emerald-600 to-cyan-600"
-          />
+          <SmartCTA blogSlug="cgi-influencer-business-model-revenue-guide" />
         </div>
 
         {/* Conclusion */}
