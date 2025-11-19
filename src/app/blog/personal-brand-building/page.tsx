@@ -3893,516 +3893,867 @@ Just a simple referral relationship - no complicated agreements needed. What do 
             <div className="bg-zinc-800 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-purple-400 mb-4">What are the biggest personal branding mistakes to avoid?</h3>
               <div className="text-gray-300 space-y-4">
-                <p className="leading-relaxed">{`**Avoiding these mistakes can save you 6-12 months of wasted effort and thousands in lost revenue.** After auditing 300+ personal brands, here are the critical mistakes killing your growth:
-
-**MISTAKE 1: Trying to Appeal to Everyone**
-
-**What it looks like**:
-- Bio: "Marketing expert helping everyone grow"
-- Content: Jumping between 10 different topics
-- Offers: Everything for everybody
-- Messaging: Generic and vague
-
-**Why it kills your brand**:
-- No one feels like you're talking to them
-- No clear authority in anything
-- Can't charge premium prices
-- Competitors beat you in specific niches
-
-**Real example**:
-Creator with 10K followers, $2K/month revenue, vague positioning: "I help people with business and marketing and mindset"
-
-After niche-down to "LinkedIn ghostwriting for B2B SaaS CEOs":
-- Lost 2K followers (people who weren't ideal)
-- Gained 5K highly-engaged followers
-- Revenue jumped to $18K/month in 4 months
-- Started getting $5K+ ghostwriting clients
-
-**The fix**:
-
-**Step 1**: Choose ONE primary audience
-- Who do you love serving most?
-- Who has the biggest budget?
-- Who gets the best results from you?
-
-**Step 2**: Define ONE primary problem you solve
-- What keeps them up at night?
-- What are they actively seeking solutions for?
-- What problem are they willing to pay to solve?
-
-**Step 3**: Commit for 90 days minimum
-- Don't pivot every 2 weeks
-- Give positioning time to work
-- Build authority in one thing first
-- Expand later once established
-
-**Reality check**: Being specific doesn't limit you, it focuses you. You can expand later from a position of strength.
-
-**MISTAKE 2: Inconsistent Posting (or No Posting)**
-
-**What it looks like**:
-- Post 5x one week, disappear for 3 weeks
-- Go viral once, stop posting
-- "I'll post when I have something good to say"
-- Waiting for perfect content
-
-**Why it kills your brand**:
-- Algorithm deprioritizes you
-- Audience forgets you exist
-- Can't build momentum
-- Competition passes you by
-- No data to learn from
-
-**Real stats**:
-- Posting 1x/week: 12% follower growth/quarter
-- Posting 3x/week: 47% follower growth/quarter
-- Posting 5x/week: 93% follower growth/quarter
-
-**The fix**:
-
-**Create a sustainable posting schedule**:
-
-**Minimum viable consistency**:
-- LinkedIn: 3x/week
-- Twitter: 5x/week (or 2 threads/week)
-- Instagram: 4x/week
-- YouTube: 1x/week
-
-**Batch creation strategy**:
-- Block 3 hours every Monday
-- Create all content for the week
-- Schedule using Buffer/Later
-- Spend 30 min/day engaging
-
-**Emergency content bank**:
-- Keep 10-15 pieces of evergreen content ready
-- Use when you can't create new content
-- Personal stories, frameworks, lists
-- Never go dark
-
-**Accountability systems**:
-- Public commitment ("New post every Monday/Wednesday/Friday")
-- Accountability partner (text when posted)
-- Paid community with posting requirements
-- Streak tracking (don't break the chain)
-
-**Reality check**: Consistent B+ content beats inconsistent A+ content every time. The algorithm rewards consistency more than perfection.
-
-**MISTAKE 3: Not Building an Email List**
-
-**What it looks like**:
-- "I have 50K followers, why do I need email?"
-- No lead magnet
-- No email capture on profile
-- Relying only on social media
-
-**Why it kills your brand**:
-- You don't own your audience (platform does)
-- One algorithm change = income gone
-- Account ban = start from zero
-- Can't directly reach your audience
-- Lowest conversion rates
-
-**Real example**:
-Creator with 80K Instagram followers:
-- Posted course launch: 12 sales ($1,164)
-- Email list: 800 subscribers
-- Email announcement: 47 sales ($4,559)
-- Email list 0.01% of followers but 4x revenue
-
-Another example:
-Creator account banned (20K followers):
-- Lost entire audience overnight
-- No way to reach them
-- Started from zero
-- Took 14 months to rebuild
-
-Same creator with email list backup:
-- Lost social account but had 5K emails
-- Announced new account to list
-- 3,200 followed to new account
-- Back to revenue in 2 weeks
-
-**The fix**:
-
-**Step 1**: Create lead magnet (this week)
-- Template/checklist
-- Mini-course (5 emails)
-- Resource list
-- Exclusive guide
-
-**Step 2**: Set up email platform (today)
-- ConvertKit ($0-29/month)
-- Beehiiv ($0-39/month)
-- MailerLite ($0-10/month)
-
-**Step 3**: Add to all profiles (today)
-- Link in bio
-- Pin post with signup
-- CTA in every 3rd post
-- Mention in content
-
-**Step 4**: Email weekly (minimum)
-- 1 educational email
-- 1 personal story
-- 1 soft promotion
-
-**Email list benchmarks**:
-- 1,000 followers → 50-100 email subs
-- 10,000 followers → 500-1,500 email subs
-- 50,000 followers → 3,000-10,000 email subs
-
-**Reality check**: Your email list is your business insurance policy. Platform followers are rented, email subscribers are owned.
-
-**MISTAKE 4: No Clear Monetization Strategy**
-
-**What it looks like**:
-- "I'll figure out monetization when I'm big enough"
-- Free content forever
-- No products or services
-- "I don't want to be salesy"
-
-**Why it kills your brand**:
-- Running out of money before success
-- Can't invest in growth
-- No business model validation
-- Wasted audience building
-
-**Real example**:
-Creator built to 30K followers over 18 months:
-- No products launched
-- No monetization
-- Burned out
-- Quit creating
-- Wasted 18 months of audience building
-
-Same scenario, monetization from month 1:
-- Month 3: $800 (freelance from followers)
-- Month 6: $3,200 (first product launch)
-- Month 12: $12,000 (multiple revenue streams)
-- Month 18: $28,000 (scaled products)
-- Sustained because profitable
-
-**The fix**:
-
-**Monetization timeline**:
-
-**0-500 followers** (Month 1-2):
-- Freelance/consulting
-- Affiliate products you use
-- Small sponsorships ($100-300)
-- Goal: $500-2,000/month
-
-**500-3,000 followers** (Month 3-6):
-- Digital product ($27-$97)
-- Group coaching
-- Paid workshops
-- Goal: $2,000-$5,000/month
-
-**3,000-10,000 followers** (Month 7-12):
-- Online course ($297-$997)
-- Membership ($49-$99/month)
-- Higher-ticket coaching
-- Goal: $5,000-$15,000/month
-
-**Don't wait checklist**:
-- ✅ Start pitching services at 100 followers
-- ✅ Launch first product at 500 followers
-- ✅ Build email funnel at 1,000 followers
-- ✅ Test premium offers at 3,000 followers
-
-**Reality check**: Followers don't pay bills. Revenue does. Build monetization into your strategy from day 1.
-
-**MISTAKE 5: Copying Others Instead of Being Authentic**
-
-**What it looks like**:
-- Copying successful creators' content word-for-word
-- Using their hooks, structures, even examples
-- Faking expertise you don't have
-- Pretending to live a life you don't
-
-**Why it kills your brand**:
-- People can smell inauthenticity
-- No unique perspective
-- Can't sustain the facade
-- No competitive advantage
-- Audience doesn't trust you
-
-**Real example**:
-Creator copied viral templates for 6 months:
-- Grew to 8K followers
-- Launched product: 2 sales
-- Why? No authentic connection
-- Audience didn't know the real person
-
-Same creator pivoted to authentic sharing:
-- Shared real struggles
-- Behind-the-scenes of journey
-- Honest wins and losses
-- Next product launch: 47 sales (same size audience)
-
-**The fix**:
-
-**Find your authentic voice**:
-
-**Exercise 1: Voice Inventory**
-- How do you talk to friends?
-- What phrases do you use?
-- What stories do you tell?
-- What makes you laugh?
-
-**Exercise 2: Unique Perspective**
-- What do you disagree with in your industry?
-- What unconventional path did you take?
-- What mistakes did you make that others can avoid?
-- What's your contrarian opinion?
-
-**Exercise 3: Personal Stories**
-- What failures taught you the most?
-- What were you wrong about?
-- What surprises people about your journey?
-- What do you wish you knew earlier?
-
-**Inspiration vs. Copying**:
-- ✅ Inspiration: "That hook format works, let me use it for my unique story"
-- ❌ Copying: "I'll just change a few words and post the same thing"
-
-**Reality check**: People follow you for you, not for you pretending to be someone else. Your weird is your superpower.
-
-**MISTAKE 6: Ignoring Analytics and Data**
-
-**What it looks like**:
-- Never checking what content performs
-- No tracking of follower growth
-- Not testing different formats
-- Guessing what audience wants
-
-**Why it kills your brand**:
-- Repeating what doesn't work
-- Missing what does work
-- Can't optimize
-- Wasting effort on low-return activities
-
-**Real example**:
-Creator posting daily for 6 months:
-- Mix of 10 content types
-- No tracking of performance
-- Slow, inconsistent growth
-- 3K followers
-
-Same creator analyzed data:
-- Found carousels got 5x engagement
-- Personal stories got 3x saves
-- Generic tips got minimal engagement
-- Doubled down on top 2 formats
-- 3K → 15K followers in next 6 months
-
-**The fix**:
-
-**Weekly analytics review** (30 minutes):
-
-**Metrics to track**:
-1. Follower growth (net new followers)
-2. Engagement rate (likes + comments / followers)
-3. Reach (how many people saw content)
-4. Saves/shares (indicator of value)
-5. Profile visits (top of funnel)
-6. Link clicks (conversion intent)
-
-**What to look for**:
-- Top 20% of content (double down)
-- Bottom 20% (stop doing)
-- Patterns in high performers
-- Best posting times
-- Format preferences
-
-**Monthly deep dive** (1-2 hours):
-- Revenue by source
-- Email list growth
-- Conversion rates
-- Customer feedback
-- Competitive analysis
-
-**Tools**:
-- Native analytics (free)
-- Taplio for LinkedIn ($39/month)
-- Tweet Hunter for Twitter ($49/month)
-- Google Analytics for website (free)
-
-**Reality check**: What gets measured gets improved. Data beats opinions.
-
-**MISTAKE 7: No Clear Call-to-Action**
-
-**What it looks like**:
-- Content with no next step
-- No link in bio
-- Vague CTAs ("Let me know what you think!")
-- Not guiding the audience journey
-
-**Why it kills your brand**:
-- Leaving money on the table
-- Audience doesn't know how to engage further
-- No lead generation
-- Missing conversion opportunities
-
-**CTA framework**:
-
-**Every piece of content should have ONE of**:
-1. **Engagement CTA**: "What's your experience with this?"
-2. **Follow CTA**: "Follow for daily [topic] insights"
-3. **Save CTA**: "Save this for when you need [solution]"
-4. **Share CTA**: "Tag someone who needs to see this"
-5. **Click CTA**: "Link to full guide in bio"
-6. **Email CTA**: "Get my free [resource] in bio"
-
-**Content distribution**:
-- 60% engagement CTAs
-- 20% email/click CTAs
-- 10% follow CTAs
-- 10% sale CTAs
-
-**The fix**:
-
-**Audit your last 20 posts**:
-- How many have clear CTAs?
-- How many drive to email list?
-- How many promote your offers?
-- Add CTAs to top performers
-
-**Reality check**: If you don't ask, you don't get. Guide your audience on the journey.
-
-**MISTAKE 8: Burning Out from Doing Everything Alone**
-
-**What it looks like**:
-- Creating all content yourself
-- Editing all videos yourself
-- Designing all graphics yourself
-- Managing all admin yourself
-- No systems or team
-
-**Why it kills your brand**:
-- Burnout within 12-18 months
-- Can't scale past your time
-- Quality decreases from exhaustion
-- Missing opportunities
-- Eventually quit
-
-**Real example**:
-Creator doing everything:
-- 30 hours/week on content
-- 10 hours/week on admin
-- 5 hours/week on strategy
-- Burned out after 14 months
-- Took 3-month break
-- Lost all momentum
-
-Same creator with team:
-- Hired VA for $800/month (admin, scheduling)
-- Hired video editor for $500/month
-- Hired designer for $400/month
-- Freed up 20 hours/week
-- Used for strategy and growth
-- Revenue increased $7K/month (4x ROI on team)
-
-**The fix**:
-
-**Hire in this order**:
-
-**First hire at $2K-$3K/month revenue**:
-- Virtual Assistant ($600-$1,000/month)
-- Tasks: Email management, scheduling, basic admin
-- Time saved: 10-15 hours/week
-
-**Second hire at $5K-$8K/month revenue**:
-- Video Editor or Designer ($500-$800/month)
-- Tasks: Edit videos or create graphics
-- Time saved: 8-12 hours/week
-
-**Third hire at $10K-$15K/month revenue**:
-- Content Repurposer ($600-$1,000/month)
-- Tasks: Turn long-form into clips, graphics, posts
-- Time saved: 10-15 hours/week
-
-**Where to find them**:
-- Upwork, Fiverr (hourly contractors)
-- OnlineJobs.ph (full-time VAs)
-- Contra, Workello (creator-focused)
-- Twitter (search "looking for clients")
-
-**Reality check**: Your time is your most valuable asset. Spend it on $1,000/hour activities (strategy, relationships, high-level content), delegate $20/hour activities.
-
-**MISTAKE 9: No Personal Branding Outside Social Media**
-
-**What it looks like**:
-- Only present on social media
-- No website or portfolio
-- No speaking or podcasts
-- No media mentions
-- Purely digital presence
-
-**Why it limits your brand**:
-- Perceived as less credible
-- Missing opportunities (speaking, media, partnerships)
-- One-dimensional brand
-- Can't command premium prices
-
-**The fix**:
-
-**Build a multi-dimensional presence**:
-
-**1. Professional website** (Week 1)
-- Simple one-pager: About, Services, Contact
-- Tools: Carrd ($19/year), Webflow (free), Framer (free)
-- Include: Portfolio, testimonials, media mentions
-
-**2. Podcast appearances** (Month 3+)
-- Reach out to 5-10 podcasts in your niche
-- Offer specific episode topics
-- Repurpose into clips and quotes
-- Credibility boost: "As featured on..."
-
-**3. Guest writing** (Month 3+)
-- Contribute to industry publications
-- Medium, LinkedIn articles
-- Guest posts on established blogs
-- Build authority and backlinks
-
-**4. Speaking** (Month 6+)
-- Virtual events (easier to start)
-- Industry conferences
-- Corporate workshops
-- Create speaker one-sheet
-
-**Reality check**: Multi-platform presence = perceived authority = premium pricing.
-
-**The Recovery Plan**
-
-**If you've made these mistakes**:
-
-**Week 1: Audit**
-- List all mistakes you're making
-- Prioritize by impact (biggest ROI first)
-- Create action plan
-
-**Week 2-4: Foundation fixes**
-- Set up email list
-- Define clear niche
-- Create posting schedule
-- Add CTAs to content
-
-**Month 2-3: Growth fixes**
-- Start tracking analytics
-- Test monetization
-- Build authentic voice
-- Create lead magnet
-
-**Month 4-6: Scale fixes**
-- Hire first team member
-- Multi-platform presence
-- Strategic networking
-- Product development
-
-**Bottom line**: Everyone makes these mistakes. The difference between success and failure is how quickly you identify and fix them.`}</p>
+                <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mb-6">
+                  <p className="text-gray-300"><strong className="text-white">Avoiding these mistakes can save you 6-12 months of wasted effort and thousands in lost revenue.</strong> After auditing 300+ personal brands, here are the critical mistakes killing your growth:</p>
+                </div>
+
+                {/* MISTAKE 1: Trying to Appeal to Everyone */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">MISTAKE 1: Trying to Appeal to Everyone</h4>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">What it looks like:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Bio: "Marketing expert helping everyone grow"</li>
+                      <li>• Content: Jumping between 10 different topics</li>
+                      <li>• Offers: Everything for everybody</li>
+                      <li>• Messaging: Generic and vague</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">Why it kills your brand:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• No one feels like you're talking to them</li>
+                      <li>• No clear authority in anything</li>
+                      <li>• Can't charge premium prices</li>
+                      <li>• Competitors beat you in specific niches</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Real example:</h5>
+                    <p className="text-gray-300 text-sm mb-3">Creator with <strong className="text-white">10K</strong> followers, <strong className="text-white">$2K/month</strong> revenue, vague positioning: "I help people with business and marketing and mindset"</p>
+                    
+                    <p className="text-gray-300 text-sm mb-2">After niche-down to "LinkedIn ghostwriting for B2B SaaS CEOs":</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Lost <strong className="text-white">2K</strong> followers (people who weren't ideal)</li>
+                      <li>• Gained <strong className="text-white">5K</strong> highly-engaged followers</li>
+                      <li>• Revenue jumped to <strong className="text-white">$18K/month</strong> in 4 months</li>
+                      <li>• Started getting <strong className="text-white">$5K+</strong> ghostwriting clients</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">The fix:</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Step 1: Choose ONE primary audience</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Who do you love serving most?</li>
+                        <li>• Who has the biggest budget?</li>
+                        <li>• Who gets the best results from you?</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Step 2: Define ONE primary problem you solve</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• What keeps them up at night?</li>
+                        <li>• What are they actively seeking solutions for?</li>
+                        <li>• What problem are they willing to pay to solve?</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h6 className="text-sm font-semibold text-white mb-2">Step 3: Commit for 90 days minimum</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Don't pivot every 2 weeks</li>
+                        <li>• Give positioning time to work</li>
+                        <li>• Build authority in one thing first</li>
+                        <li>• Expand later once established</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Reality check:</strong> Being specific doesn't limit you, it focuses you. You can expand later from a position of strength.</p>
+                  </div>
+                </div>
+
+                {/* MISTAKE 2: Inconsistent Posting */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">MISTAKE 2: Inconsistent Posting (or No Posting)</h4>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">What it looks like:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Post 5x one week, disappear for 3 weeks</li>
+                      <li>• Go viral once, stop posting</li>
+                      <li>• "I'll post when I have something good to say"</li>
+                      <li>• Waiting for perfect content</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">Why it kills your brand:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Algorithm deprioritizes you</li>
+                      <li>• Audience forgets you exist</li>
+                      <li>• Can't build momentum</li>
+                      <li>• Competition passes you by</li>
+                      <li>• No data to learn from</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Real stats:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Posting <strong className="text-white">1x/week</strong>: <strong className="text-white">12%</strong> follower growth/quarter</li>
+                      <li>• Posting <strong className="text-white">3x/week</strong>: <strong className="text-white">47%</strong> follower growth/quarter</li>
+                      <li>• Posting <strong className="text-white">5x/week</strong>: <strong className="text-white">93%</strong> follower growth/quarter</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">The fix:</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Create a sustainable posting schedule:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Minimum viable consistency:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• LinkedIn: <strong className="text-white">3x/week</strong></li>
+                          <li>• Twitter: <strong className="text-white">5x/week</strong> (or 2 threads/week)</li>
+                          <li>• Instagram: <strong className="text-white">4x/week</strong></li>
+                          <li>• YouTube: <strong className="text-white">1x/week</strong></li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Batch creation strategy:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Block <strong className="text-white">3 hours</strong> every Monday</li>
+                          <li>• Create all content for the week</li>
+                          <li>• Schedule using Buffer/Later</li>
+                          <li>• Spend <strong className="text-white">30 min/day</strong> engaging</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Emergency content bank:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Keep <strong className="text-white">10-15</strong> pieces of evergreen content ready</li>
+                          <li>• Use when you can't create new content</li>
+                          <li>• Personal stories, frameworks, lists</li>
+                          <li>• Never go dark</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Accountability systems:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Public commitment ("New post every Monday/Wednesday/Friday")</li>
+                          <li>• Accountability partner (text when posted)</li>
+                          <li>• Paid community with posting requirements</li>
+                          <li>• Streak tracking (don't break the chain)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Reality check:</strong> Consistent B+ content beats inconsistent A+ content every time. The algorithm rewards consistency more than perfection.</p>
+                  </div>
+                </div>
+
+                {/* MISTAKE 3: Not Building an Email List */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">MISTAKE 3: Not Building an Email List</h4>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">What it looks like:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• "I have 50K followers, why do I need email?"</li>
+                      <li>• No lead magnet</li>
+                      <li>• No email capture on profile</li>
+                      <li>• Relying only on social media</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">Why it kills your brand:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• You don't own your audience (platform does)</li>
+                      <li>• One algorithm change = income gone</li>
+                      <li>• Account ban = start from zero</li>
+                      <li>• Can't directly reach your audience</li>
+                      <li>• Lowest conversion rates</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Real example:</h5>
+                    <p className="text-gray-300 text-sm mb-3">Creator with <strong className="text-white">80K</strong> Instagram followers:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm mb-3">
+                      <li>• Posted course launch: <strong className="text-white">12</strong> sales ($1,164)</li>
+                      <li>• Email list: <strong className="text-white">800</strong> subscribers</li>
+                      <li>• Email announcement: <strong className="text-white">47</strong> sales ($4,559)</li>
+                      <li>• Email list <strong className="text-white">0.01%</strong> of followers but <strong className="text-white">4x</strong> revenue</li>
+                    </ul>
+                    
+                    <p className="text-gray-300 text-sm mb-2">Another example:</p>
+                    <p className="text-gray-300 text-sm mb-2">Creator account banned (<strong className="text-white">20K</strong> followers):</p>
+                    <ul className="space-y-1 text-gray-300 text-sm mb-3">
+                      <li>• Lost entire audience overnight</li>
+                      <li>• No way to reach them</li>
+                      <li>• Started from zero</li>
+                      <li>• Took <strong className="text-white">14 months</strong> to rebuild</li>
+                    </ul>
+                    
+                    <p className="text-gray-300 text-sm mb-2">Same creator with email list backup:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Lost social account but had <strong className="text-white">5K</strong> emails</li>
+                      <li>• Announced new account to list</li>
+                      <li>• <strong className="text-white">3,200</strong> followed to new account</li>
+                      <li>• Back to revenue in <strong className="text-white">2 weeks</strong></li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">The fix:</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Step 1: Create lead magnet (this week)</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Template/checklist</li>
+                        <li>• Mini-course (5 emails)</li>
+                        <li>• Resource list</li>
+                        <li>• Exclusive guide</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Step 2: Set up email platform (today)</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• ConvertKit ($0-29/month)</li>
+                        <li>• Beehiiv ($0-39/month)</li>
+                        <li>• MailerLite ($0-10/month)</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Step 3: Add to all profiles (today)</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Link in bio</li>
+                        <li>• Pin post with signup</li>
+                        <li>• CTA in every 3rd post</li>
+                        <li>• Mention in content</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Step 4: Email weekly (minimum)</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• 1 educational email</li>
+                        <li>• 1 personal story</li>
+                        <li>• 1 soft promotion</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Email list benchmarks:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">1,000</strong> followers → 50-100 email subs</li>
+                        <li>• <strong className="text-white">10,000</strong> followers → 500-1,500 email subs</li>
+                        <li>• <strong className="text-white">50,000</strong> followers → 3,000-10,000 email subs</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Reality check:</strong> Your email list is your business insurance policy. Platform followers are rented, email subscribers are owned.</p>
+                  </div>
+                </div>
+
+                {/* MISTAKE 4: No Clear Monetization Strategy */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">MISTAKE 4: No Clear Monetization Strategy</h4>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">What it looks like:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• "I'll figure out monetization when I'm big enough"</li>
+                      <li>• Free content forever</li>
+                      <li>• No products or services</li>
+                      <li>• "I don't want to be salesy"</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">Why it kills your brand:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Running out of money before success</li>
+                      <li>• Can't invest in growth</li>
+                      <li>• No business model validation</li>
+                      <li>• Wasted audience building</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Real example:</h5>
+                    <p className="text-gray-300 text-sm mb-2">Creator built to <strong className="text-white">30K</strong> followers over <strong className="text-white">18 months</strong>:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm mb-3">
+                      <li>• No products launched</li>
+                      <li>• No monetization</li>
+                      <li>• Burned out</li>
+                      <li>• Quit creating</li>
+                      <li>• Wasted <strong className="text-white">18 months</strong> of audience building</li>
+                    </ul>
+                    
+                    <p className="text-gray-300 text-sm mb-2">Same scenario, monetization from month 1:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Month <strong className="text-white">3</strong>: $800 (freelance from followers)</li>
+                      <li>• Month <strong className="text-white">6</strong>: $3,200 (first product launch)</li>
+                      <li>• Month <strong className="text-white">12</strong>: $12,000 (multiple revenue streams)</li>
+                      <li>• Month <strong className="text-white">18</strong>: $28,000 (scaled products)</li>
+                      <li>• Sustained because profitable</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">The fix:</h5>
+                    
+                    <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Monetization timeline:</h6>
+                      
+                      <div className="mb-2">
+                        <p className="text-xs font-semibold text-white mb-1">0-500 followers (Month 1-2):</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Freelance/consulting</li>
+                          <li>• Affiliate products you use</li>
+                          <li>• Small sponsorships ($100-300)</li>
+                          <li>• Goal: <strong className="text-white">$500-2,000/month</strong></li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-2">
+                        <p className="text-xs font-semibold text-white mb-1">500-3,000 followers (Month 3-6):</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Digital product ($27-$97)</li>
+                          <li>• Group coaching</li>
+                          <li>• Paid workshops</li>
+                          <li>• Goal: <strong className="text-white">$2,000-$5,000/month</strong></li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-xs font-semibold text-white mb-1">3,000-10,000 followers (Month 7-12):</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Online course ($297-$997)</li>
+                          <li>• Membership ($49-$99/month)</li>
+                          <li>• Higher-ticket coaching</li>
+                          <li>• Goal: <strong className="text-white">$5,000-$15,000/month</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Don't wait checklist:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>✅ Start pitching services at <strong className="text-white">100</strong> followers</li>
+                        <li>✅ Launch first product at <strong className="text-white">500</strong> followers</li>
+                        <li>✅ Build email funnel at <strong className="text-white">1,000</strong> followers</li>
+                        <li>✅ Test premium offers at <strong className="text-white">3,000</strong> followers</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Reality check:</strong> Followers don't pay bills. Revenue does. Build monetization into your strategy from day 1.</p>
+                  </div>
+                </div>
+
+                {/* MISTAKE 5: Copying Others Instead of Being Authentic */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">MISTAKE 5: Copying Others Instead of Being Authentic</h4>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">What it looks like:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Copying successful creators' content word-for-word</li>
+                      <li>• Using their hooks, structures, even examples</li>
+                      <li>• Faking expertise you don't have</li>
+                      <li>• Pretending to live a life you don't</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">Why it kills your brand:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• People can smell inauthenticity</li>
+                      <li>• No unique perspective</li>
+                      <li>• Can't sustain the facade</li>
+                      <li>• No competitive advantage</li>
+                      <li>• Audience doesn't trust you</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Real example:</h5>
+                    <p className="text-gray-300 text-sm mb-2">Creator copied viral templates for <strong className="text-white">6 months</strong>:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm mb-3">
+                      <li>• Grew to <strong className="text-white">8K</strong> followers</li>
+                      <li>• Launched product: <strong className="text-white">2</strong> sales</li>
+                      <li>• Why? No authentic connection</li>
+                      <li>• Audience didn't know the real person</li>
+                    </ul>
+                    
+                    <p className="text-gray-300 text-sm mb-2">Same creator pivoted to authentic sharing:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Shared real struggles</li>
+                      <li>• Behind-the-scenes of journey</li>
+                      <li>• Honest wins and losses</li>
+                      <li>• Next product launch: <strong className="text-white">47</strong> sales (same size audience)</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">The fix:</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Find your authentic voice:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Exercise 1: Voice Inventory</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• How do you talk to friends?</li>
+                          <li>• What phrases do you use?</li>
+                          <li>• What stories do you tell?</li>
+                          <li>• What makes you laugh?</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Exercise 2: Unique Perspective</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• What do you disagree with in your industry?</li>
+                          <li>• What unconventional path did you take?</li>
+                          <li>• What mistakes did you make that others can avoid?</li>
+                          <li>• What's your contrarian opinion?</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Exercise 3: Personal Stories</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• What failures taught you the most?</li>
+                          <li>• What were you wrong about?</li>
+                          <li>• What surprises people about your journey?</li>
+                          <li>• What do you wish you knew earlier?</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Inspiration vs. Copying:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>✅ Inspiration: "That hook format works, let me use it for my unique story"</li>
+                        <li>❌ Copying: "I'll just change a few words and post the same thing"</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Reality check:</strong> People follow you for you, not for you pretending to be someone else. Your weird is your superpower.</p>
+                  </div>
+                </div>
+
+                {/* MISTAKE 6: Ignoring Analytics and Data */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">MISTAKE 6: Ignoring Analytics and Data</h4>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">What it looks like:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Never checking what content performs</li>
+                      <li>• No tracking of follower growth</li>
+                      <li>• Not testing different formats</li>
+                      <li>• Guessing what audience wants</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">Why it kills your brand:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Repeating what doesn't work</li>
+                      <li>• Missing what does work</li>
+                      <li>• Can't optimize</li>
+                      <li>• Wasting effort on low-return activities</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Real example:</h5>
+                    <p className="text-gray-300 text-sm mb-2">Creator posting daily for <strong className="text-white">6 months</strong>:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm mb-3">
+                      <li>• Mix of <strong className="text-white">10</strong> content types</li>
+                      <li>• No tracking of performance</li>
+                      <li>• Slow, inconsistent growth</li>
+                      <li>• <strong className="text-white">3K</strong> followers</li>
+                    </ul>
+                    
+                    <p className="text-gray-300 text-sm mb-2">Same creator analyzed data:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Found carousels got <strong className="text-white">5x</strong> engagement</li>
+                      <li>• Personal stories got <strong className="text-white">3x</strong> saves</li>
+                      <li>• Generic tips got minimal engagement</li>
+                      <li>• Doubled down on top <strong className="text-white">2</strong> formats</li>
+                      <li>• <strong className="text-white">3K → 15K</strong> followers in next 6 months</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">The fix:</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Weekly analytics review (30 minutes):</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Metrics to track:</h6>
+                        <ol className="list-decimal list-inside space-y-1 text-gray-300 text-xs ml-2">
+                          <li>Follower growth (net new followers)</li>
+                          <li>Engagement rate (likes + comments / followers)</li>
+                          <li>Reach (how many people saw content)</li>
+                          <li>Saves/shares (indicator of value)</li>
+                          <li>Profile visits (top of funnel)</li>
+                          <li>Link clicks (conversion intent)</li>
+                        </ol>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">What to look for:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Top <strong className="text-white">20%</strong> of content (double down)</li>
+                          <li>• Bottom <strong className="text-white">20%</strong> (stop doing)</li>
+                          <li>• Patterns in high performers</li>
+                          <li>• Best posting times</li>
+                          <li>• Format preferences</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Monthly deep dive (1-2 hours):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Revenue by source</li>
+                          <li>• Email list growth</li>
+                          <li>• Conversion rates</li>
+                          <li>• Customer feedback</li>
+                          <li>• Competitive analysis</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-blue-300 mb-2">Tools:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Native analytics (free)</li>
+                          <li>• Taplio for LinkedIn ($39/month)</li>
+                          <li>• Tweet Hunter for Twitter ($49/month)</li>
+                          <li>• Google Analytics for website (free)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Reality check:</strong> What gets measured gets improved. Data beats opinions.</p>
+                  </div>
+                </div>
+
+                {/* MISTAKE 7: No Clear Call-to-Action */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">MISTAKE 7: No Clear Call-to-Action</h4>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">What it looks like:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Content with no next step</li>
+                      <li>• No link in bio</li>
+                      <li>• Vague CTAs ("Let me know what you think!")</li>
+                      <li>• Not guiding the audience journey</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">Why it kills your brand:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Leaving money on the table</li>
+                      <li>• Audience doesn't know how to engage further</li>
+                      <li>• No lead generation</li>
+                      <li>• Missing conversion opportunities</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">CTA framework:</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Every piece of content should have ONE of:</h6>
+                      <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                        <li><strong className="text-white">Engagement CTA</strong>: "What's your experience with this?"</li>
+                        <li><strong className="text-white">Follow CTA</strong>: "Follow for daily [topic] insights"</li>
+                        <li><strong className="text-white">Save CTA</strong>: "Save this for when you need [solution]"</li>
+                        <li><strong className="text-white">Share CTA</strong>: "Tag someone who needs to see this"</li>
+                        <li><strong className="text-white">Click CTA</strong>: "Link to full guide in bio"</li>
+                        <li><strong className="text-white">Email CTA</strong>: "Get my free [resource] in bio"</li>
+                      </ol>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Content distribution:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• <strong className="text-white">60%</strong> engagement CTAs</li>
+                        <li>• <strong className="text-white">20%</strong> email/click CTAs</li>
+                        <li>• <strong className="text-white">10%</strong> follow CTAs</li>
+                        <li>• <strong className="text-white">10%</strong> sale CTAs</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h6 className="text-sm font-semibold text-white mb-2">The fix:</h6>
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Audit your last 20 posts:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• How many have clear CTAs?</li>
+                          <li>• How many drive to email list?</li>
+                          <li>• How many promote your offers?</li>
+                          <li>• Add CTAs to top performers</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Reality check:</strong> If you don't ask, you don't get. Guide your audience on the journey.</p>
+                  </div>
+                </div>
+
+                {/* MISTAKE 8: Burning Out from Doing Everything Alone */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">MISTAKE 8: Burning Out from Doing Everything Alone</h4>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">What it looks like:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Creating all content yourself</li>
+                      <li>• Editing all videos yourself</li>
+                      <li>• Designing all graphics yourself</li>
+                      <li>• Managing all admin yourself</li>
+                      <li>• No systems or team</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">Why it kills your brand:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Burnout within <strong className="text-white">12-18 months</strong></li>
+                      <li>• Can't scale past your time</li>
+                      <li>• Quality decreases from exhaustion</li>
+                      <li>• Missing opportunities</li>
+                      <li>• Eventually quit</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Real example:</h5>
+                    <p className="text-gray-300 text-sm mb-2">Creator doing everything:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm mb-3">
+                      <li>• <strong className="text-white">30</strong> hours/week on content</li>
+                      <li>• <strong className="text-white">10</strong> hours/week on admin</li>
+                      <li>• <strong className="text-white">5</strong> hours/week on strategy</li>
+                      <li>• Burned out after <strong className="text-white">14 months</strong></li>
+                      <li>• Took <strong className="text-white">3-month</strong> break</li>
+                      <li>• Lost all momentum</li>
+                    </ul>
+                    
+                    <p className="text-gray-300 text-sm mb-2">Same creator with team:</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Hired VA for <strong className="text-white">$800/month</strong> (admin, scheduling)</li>
+                      <li>• Hired video editor for <strong className="text-white">$500/month</strong></li>
+                      <li>• Hired designer for <strong className="text-white">$400/month</strong></li>
+                      <li>• Freed up <strong className="text-white">20 hours/week</strong></li>
+                      <li>• Used for strategy and growth</li>
+                      <li>• Revenue increased <strong className="text-white">$7K/month</strong> (4x ROI on team)</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">The fix:</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Hire in this order:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">First hire at $2K-$3K/month revenue:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Virtual Assistant ($600-$1,000/month)</li>
+                          <li>• Tasks: Email management, scheduling, basic admin</li>
+                          <li>• Time saved: <strong className="text-white">10-15 hours/week</strong></li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Second hire at $5K-$8K/month revenue:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Video Editor or Designer ($500-$800/month)</li>
+                          <li>• Tasks: Edit videos or create graphics</li>
+                          <li>• Time saved: <strong className="text-white">8-12 hours/week</strong></li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Third hire at $10K-$15K/month revenue:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Content Repurposer ($600-$1,000/month)</li>
+                          <li>• Tasks: Turn long-form into clips, graphics, posts</li>
+                          <li>• Time saved: <strong className="text-white">10-15 hours/week</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Where to find them:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Upwork, Fiverr (hourly contractors)</li>
+                        <li>• OnlineJobs.ph (full-time VAs)</li>
+                        <li>• Contra, Workello (creator-focused)</li>
+                        <li>• Twitter (search "looking for clients")</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Reality check:</strong> Your time is your most valuable asset. Spend it on $1,000/hour activities (strategy, relationships, high-level content), delegate $20/hour activities.</p>
+                  </div>
+                </div>
+
+                {/* MISTAKE 9: No Personal Branding Outside Social Media */}
+                <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">MISTAKE 9: No Personal Branding Outside Social Media</h4>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">What it looks like:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Only present on social media</li>
+                      <li>• No website or portfolio</li>
+                      <li>• No speaking or podcasts</li>
+                      <li>• No media mentions</li>
+                      <li>• Purely digital presence</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-red-300 mb-3">Why it limits your brand:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Perceived as less credible</li>
+                      <li>• Missing opportunities (speaking, media, partnerships)</li>
+                      <li>• One-dimensional brand</li>
+                      <li>• Can't command premium prices</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">The fix:</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Build a multi-dimensional presence:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">1. Professional website (Week 1)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Simple one-pager: About, Services, Contact</li>
+                          <li>• Tools: Carrd ($19/year), Webflow (free), Framer (free)</li>
+                          <li>• Include: Portfolio, testimonials, media mentions</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">2. Podcast appearances (Month 3+)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Reach out to <strong className="text-white">5-10</strong> podcasts in your niche</li>
+                          <li>• Offer specific episode topics</li>
+                          <li>• Repurpose into clips and quotes</li>
+                          <li>• Credibility boost: "As featured on..."</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">3. Guest writing (Month 3+)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Contribute to industry publications</li>
+                          <li>• Medium, LinkedIn articles</li>
+                          <li>• Guest posts on established blogs</li>
+                          <li>• Build authority and backlinks</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">4. Speaking (Month 6+)</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Virtual events (easier to start)</li>
+                          <li>• Industry conferences</li>
+                          <li>• Corporate workshops</li>
+                          <li>• Create speaker one-sheet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Reality check:</strong> Multi-platform presence = perceived authority = premium pricing.</p>
+                  </div>
+                </div>
+
+                {/* The Recovery Plan */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">The Recovery Plan</h4>
+                  
+                  <p className="text-gray-300 mb-4">If you've made these mistakes:</p>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Week 1: Audit</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• List all mistakes you're making</li>
+                      <li>• Prioritize by impact (biggest ROI first)</li>
+                      <li>• Create action plan</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Week 2-4: Foundation fixes</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Set up email list</li>
+                      <li>• Define clear niche</li>
+                      <li>• Create posting schedule</li>
+                      <li>• Add CTAs to content</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Month 2-3: Growth fixes</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Start tracking analytics</li>
+                      <li>• Test monetization</li>
+                      <li>• Build authentic voice</li>
+                      <li>• Create lead magnet</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Month 4-6: Scale fixes</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Hire first team member</li>
+                      <li>• Multi-platform presence</li>
+                      <li>• Strategic networking</li>
+                      <li>• Product development</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Bottom line:</strong> Everyone makes these mistakes. The difference between success and failure is how quickly you identify and fix them.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
