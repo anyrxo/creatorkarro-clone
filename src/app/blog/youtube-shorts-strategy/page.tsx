@@ -3228,644 +3228,810 @@ const schema = generateBlogPostSchema({
                         </div>
                     </div>
 
-**The Content Repurposing System**
-
-Strategy 1: Long-to-Short
-Start with long video, extract Shorts
-
-Example: "Complete guide to [topic]" (20 minutes)
-Extract Shorts:
-- Short 1: "The biggest mistake people make with [topic]"
-- Short 2: "Tool I use for [topic task]"
-- Short 3: "Before/after [topic result]"
-- Short 4: "Fastest way to [topic outcome]"
-- Short 5: "Common [topic] myth debunked"
-
-Each Short links to full video in pinned comment.
-
-Conversion rate: 3-7% of Short viewers watch full video
-- 100K Short views → 3K-7K long-form views
-- Long video earns $60-$350 (at $20-$50 RPM)
-
-Strategy 2: Shorts-to-Long
-Use Shorts to test ideas for long content
-
-Process:
-- Post 10 Shorts on different subtopics
-- Analyze which gets most engagement
-- Top 3 performing Shorts = ideas for long videos
-- Create comprehensive long video on winning topic
-
-Benefits:
-- Data-driven content decisions
-- Reduced risk of "flop" videos
-- Audience pre-validated the topic
-
-Example from my channel:
-- Posted 10 Shorts about different productivity methods
-- "Time blocking" Short got 3.2M views (10× others)
-- Created long video: "Complete time blocking tutorial"
-- Long video got 420K views, $8,400 revenue
-
-**When Shorts Outperform Long-Form**
-
-Shorts are better for:
-
-1. Building audience quickly
-- 0-10K subs: 5× faster with Shorts
-- 10K-100K subs: 3× faster with Shorts
-- 100K-500K subs: 2× faster with Shorts
-
-2. Testing content ideas
-- Shorts = low-risk experiments
-- Long videos = high-effort commitment
-- Test in Shorts first
-
-3. Trending topics
-- Shorts allow quick turnaround (film + edit in 1 hour)
-- Long-form takes days (slower to capitalize on trends)
-
-4. International audiences
-- Shorts transcend language barriers better
-- Visual content = universal appeal
-- Long-form requires understanding language/culture
-
-5. Mobile-first niches
-- Gen Z primarily consumes short-form
-- If audience is 13-25, Shorts dominate
-
-Example niches where Shorts outperform:
-- Quick life hacks
-- Satisfying/ASMR content
-- Comedy/entertainment
-- Before/after transformations
-- "Did you know?" facts
-
-**When Long-Form Outperforms Shorts**
-
-Long-form is better for:
-
-1. Educational content
-- Complex topics need depth
-- Tutorials require step-by-step
-- Hard to teach programming in 60 seconds
-
-2. Building authority
-- Long videos = perceived expertise
-- 20-minute breakdown vs 30-second tip
-- Positions you as true expert
-
-3. Revenue per view
-- $20-$50 RPM vs $0.05-$0.15 RPM
-- 1M long-form views = $20K-$50K
-- 1M Short views = $50-$150
-
-4. Audience loyalty
-- Long-form viewers = more invested
-- Higher engagement rate
-- More likely to buy products/services
-
-5. Search traffic
-- Long videos rank better in YouTube search
-- Evergreen content gets views for years
-- Shorts mostly feed-based (less search traffic)
-
-Example niches where long-form dominates:
-- Software tutorials
-- Business/finance deep-dives
-- Documentary-style content
-- Product reviews
-- Podcast-style content
-
-**The Conversion Funnel Architecture**
-
-Think of it as a pyramid:
-
-Top: Shorts (Awareness)
-- 10M people see your Shorts/month
-- Goal: Hook attention, build curiosity
-- CTA: "Full tutorial on my channel"
-
-Middle: Long-form (Consideration)
-- 500K people watch long videos/month
-- Goal: Deliver deep value, build trust
-- CTA: "Subscribe for weekly tutorials"
-
-Bottom: Products/Services (Conversion)
-- 25K people on email list
-- Goal: Sell courses, coaching, products
-- CTA: "Get my complete system"
-
-Real funnel example from finance channel:
-
-Shorts: "3 passive income streams for beginners"
-- 5M views
-- 3% click to channel
-- 150K channel visits
-
-Long-form: "How I built $10K/month passive income"
-- 150K views (from Shorts funnel)
-- 5% join email list
-- 7,500 email signups
-
-Email → Course sales:
-- 7,500 emails
-- 3% buy $297 course
-- 225 sales = $66,825 revenue
-
-Shorts = $250 ad revenue
-Long-form = $3,000 ad revenue
-Course sales = $66,825
-
-Total: $70,075 from one topic across funnel
-
-**The Hybrid Content Calendar**
-
-Monday:
-- Upload long video (15 min tutorial)
-- Post 3 Shorts (clips from long video)
-
-Tuesday:
-- Post 3 Shorts (standalone content)
-
-Wednesday:
-- Upload long video (product review)
-- Post 3 Shorts (highlights from review)
-
-Thursday:
-- Post 3 Shorts (standalone content)
-
-Friday:
-- Upload long video (weekly news/trends)
-- Post 3 Shorts (trend reactions)
-
-Weekend:
-- Post 4-6 Shorts (mix of repurposed + new)
-
-Weekly totals:
-- 3 long videos (30-50 minutes total content)
-- 19-21 Shorts
-
-This maximizes both:
-- Growth (from Shorts volume)
-- Revenue (from long-form RPM)
-
-**Common Hybrid Strategy Mistakes**
-
-Mistake 1: Treating Shorts as afterthought
-- Making lazy Short clips from long videos
-- No hook optimization
-- Low performance
-
-Fix: Edit Shorts with same care as long videos
-- Dedicated hooks for each Short
-- Optimize pacing for 30-60 seconds
-- Not just "lazy clips"
-
-Mistake 2: Neglecting Shorts after growth
-- Hit 100K subs → stop posting Shorts
-- Growth stalls
-- Algorithm stops favoring you
-
-Fix: Maintain Shorts presence
-- Even at 500K subs, post 2-3 Shorts/day
-- Keeps algorithm engaged
-- Continues feeding funnel
-
-Mistake 3: No clear connection between Shorts and long-form
-- Shorts about Topic A
-- Long videos about Topic B
-- Audiences don't crossover
-
-Fix: Strategic alignment
-- Shorts = teasers for long content
-- Same topics, different depths
-- Clear funnel path
-
-Mistake 4: Spreading too thin
-- Trying to post 5 Shorts/day + daily long videos
-- Quality suffers
-- Burnout
-
-Fix: Sustainable rhythm
-- Start with 1 long video/week + 3 Shorts/day
-- Increase gradually
-- Quality over quantity
-
-**The Decision Framework**
-
-Choose Shorts-only if:
-- ✅ You're 0-10K subscribers (need growth)
-- ✅ Your niche is visual/entertainment
-- ✅ Your goal is quick audience building
-- ✅ You have limited time (Shorts are faster)
-
-Choose long-form only if:
-- ✅ You're 100K+ subscribers (have audience)
-- ✅ Your niche is educational/complex
-- ✅ Your goal is maximizing revenue
-- ✅ You have patience for slower growth
-
-Choose hybrid if:
-- ✅ You want best of both (recommended)
-- ✅ You can commit to consistent schedule
-- ✅ Your niche works for both formats
-- ✅ You're building long-term business
-
-**My Recommendation by Stage**
-
-Stage 1 (0-1K subscribers):
-- 100% Shorts
-- Goal: Get monetized fast
-- Post 5 Shorts/day
-
-Stage 2 (1K-10K subscribers):
-- 90% Shorts, 10% long-form
-- Goal: Rapid growth + test long-form
-- Post 4 Shorts/day + 1 long video/week
-
-Stage 3 (10K-50K subscribers):
-- 70% Shorts, 30% long-form
-- Goal: Build sustainable revenue
-- Post 3 Shorts/day + 2 long videos/week
-
-Stage 4 (50K-100K subscribers):
-- 50% Shorts, 50% long-form
-- Goal: Maximize revenue
-- Post 2-3 Shorts/day + 3 long videos/week
-
-Stage 5 (100K+ subscribers):
-- 30% Shorts, 70% long-form
-- Goal: Optimize revenue per hour
-- Post 2 Shorts/day + 4-5 long videos/week
-
-The answer isn't Shorts OR long-form. It's Shorts THEN long-form, maintaining both for optimal results. Use Shorts as the growth engine, long-form as the revenue engine.`}</p>
+                    {/* Content Repurposing System */}
+                    <div className="bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-teal-400 mb-4">The Content Repurposing System</h4>
+                        <div className="space-y-4">
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-teal-300 mb-2">Strategy 1: Long-to-Short</h5>
+                                <p className="text-gray-300 text-sm mb-2">Start with long video, extract Shorts</p>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mb-2">
+                                    <p className="text-gray-300 text-xs italic mb-1">Example: "Complete guide to [topic]" (20 minutes)</p>
+                                    <h6 className="text-xs font-semibold text-blue-300 mb-1">Extract Shorts:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Short 1: "The biggest mistake people make with [topic]"</li>
+                                        <li>• Short 2: "Tool I use for [topic task]"</li>
+                                        <li>• Short 3: "Before/after [topic result]"</li>
+                                        <li>• Short 4: "Fastest way to [topic outcome]"</li>
+                                        <li>• Short 5: "Common [topic] myth debunked"</li>
+                                    </ul>
+                                </div>
+                                <p className="text-gray-300 text-xs mb-1">Each Short links to full video in pinned comment.</p>
+                                <p className="text-gray-300 text-xs">Conversion rate: <strong className="text-white">3-7%</strong> of Short viewers watch full video → <strong className="text-white">100K Short views</strong> → <strong className="text-white">3K-7K long-form views</strong> → Long video earns <strong className="text-white">$60-$350</strong> (at $20-$50 RPM)</p>
+                            </div>
+
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-teal-300 mb-2">Strategy 2: Shorts-to-Long</h5>
+                                <p className="text-gray-300 text-sm mb-2">Use Shorts to test ideas for long content</p>
+                                <div className="mb-2">
+                                    <h6 className="text-xs font-semibold text-white mb-1">Process:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Post <strong className="text-white">10 Shorts</strong> on different subtopics</li>
+                                        <li>• Analyze which gets most engagement</li>
+                                        <li>• Top 3 performing Shorts = ideas for long videos</li>
+                                        <li>• Create comprehensive long video on winning topic</li>
+                                    </ul>
+                                </div>
+                                <div className="mb-2">
+                                    <h6 className="text-xs font-semibold text-white mb-1">Benefits:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Data-driven content decisions</li>
+                                        <li>• Reduced risk of "flop" videos</li>
+                                        <li>• Audience pre-validated the topic</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3 mt-2">
+                                    <h6 className="text-xs font-semibold text-purple-300 mb-1">Example from my channel:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Posted 10 Shorts about different productivity methods</li>
+                                        <li>• "Time blocking" Short got <strong className="text-white">3.2M views</strong> (10× others)</li>
+                                        <li>• Created long video: "Complete time blocking tutorial"</li>
+                                        <li>• Long video got <strong className="text-white">420K views</strong>, <strong className="text-white">$8,400 revenue</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* When Shorts Outperform */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">When Shorts Outperform Long-Form</h4>
+                        <p className="text-gray-300 text-sm mb-4">Shorts are better for:</p>
+                        <div className="space-y-3">
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-green-300 mb-1">1. Building audience quickly</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• 0-10K subs: <strong className="text-white">5× faster</strong> with Shorts</li>
+                                    <li>• 10K-100K subs: <strong className="text-white">3× faster</strong> with Shorts</li>
+                                    <li>• 100K-500K subs: <strong className="text-white">2× faster</strong> with Shorts</li>
+                                </ul>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-green-300 mb-1">2. Testing content ideas</h5>
+                                <p className="text-gray-300 text-xs">Shorts = low-risk experiments | Long videos = high-effort commitment | Test in Shorts first</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-green-300 mb-1">3. Trending topics</h5>
+                                <p className="text-gray-300 text-xs">Shorts allow quick turnaround (film + edit in <strong className="text-white">1 hour</strong>) | Long-form takes days</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-green-300 mb-1">4. International audiences</h5>
+                                <p className="text-gray-300 text-xs">Shorts transcend language barriers better | Visual content = universal appeal</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-green-300 mb-1">5. Mobile-first niches</h5>
+                                <p className="text-gray-300 text-xs">Gen Z primarily consumes short-form | If audience is <strong className="text-white">13-25</strong>, Shorts dominate</p>
+                            </div>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3 mt-4">
+                            <h5 className="text-xs font-semibold text-blue-300 mb-1">Example niches where Shorts outperform:</h5>
+                            <p className="text-gray-300 text-xs">Quick life hacks, Satisfying/ASMR content, Comedy/entertainment, Before/after transformations, "Did you know?" facts</p>
+                        </div>
+                    </div>
+
+                    {/* When Long-Form Outperforms */}
+                    <div className="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-blue-400 mb-4">When Long-Form Outperforms Shorts</h4>
+                        <p className="text-gray-300 text-sm mb-4">Long-form is better for:</p>
+                        <div className="space-y-3">
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-1">1. Educational content</h5>
+                                <p className="text-gray-300 text-xs">Complex topics need depth | Tutorials require step-by-step | Hard to teach programming in 60 seconds</p>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-1">2. Building authority</h5>
+                                <p className="text-gray-300 text-xs">Long videos = perceived expertise | 20-minute breakdown vs 30-second tip | Positions you as true expert</p>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-1">3. Revenue per view</h5>
+                                <p className="text-gray-300 text-xs"><strong className="text-white">$20-$50 RPM</strong> vs <strong className="text-white">$0.05-$0.15 RPM</strong> | 1M long-form views = <strong className="text-white">$20K-$50K</strong> | 1M Short views = $50-$150</p>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-1">4. Audience loyalty</h5>
+                                <p className="text-gray-300 text-xs">Long-form viewers = more invested | Higher engagement rate | More likely to buy products/services</p>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-1">5. Search traffic</h5>
+                                <p className="text-gray-300 text-xs">Long videos rank better in YouTube search | Evergreen content gets views for years | Shorts mostly feed-based</p>
+                            </div>
+                        </div>
+                        <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3 mt-4">
+                            <h5 className="text-xs font-semibold text-purple-300 mb-1">Example niches where long-form dominates:</h5>
+                            <p className="text-gray-300 text-xs">Software tutorials, Business/finance deep-dives, Documentary-style content, Product reviews, Podcast-style content</p>
+                        </div>
+                    </div>
+
+                    {/* Conversion Funnel */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">The Conversion Funnel Architecture</h4>
+                        <p className="text-gray-300 text-sm mb-4">Think of it as a pyramid:</p>
+                        <div className="space-y-3 mb-4">
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-1">Top: Shorts (Awareness)</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• <strong className="text-white">10M people</strong> see your Shorts/month</li>
+                                    <li>• Goal: Hook attention, build curiosity</li>
+                                    <li>• CTA: "Full tutorial on my channel"</li>
+                                </ul>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-1">Middle: Long-form (Consideration)</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• <strong className="text-white">500K people</strong> watch long videos/month</li>
+                                    <li>• Goal: Deliver deep value, build trust</li>
+                                    <li>• CTA: "Subscribe for weekly tutorials"</li>
+                                </ul>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-1">Bottom: Products/Services (Conversion)</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• <strong className="text-white">25K people</strong> on email list</li>
+                                    <li>• Goal: Sell courses, coaching, products</li>
+                                    <li>• CTA: "Get my complete system"</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                            <h5 className="text-md font-semibold text-green-300 mb-2">Real funnel example from finance channel:</h5>
+                            <div className="space-y-2 text-gray-300 text-sm">
+                                <div>
+                                    <p className="font-semibold text-white mb-1">Shorts: "3 passive income streams for beginners"</p>
+                                    <p className="text-xs">5M views → <strong className="text-white">3% click to channel</strong> → <strong className="text-white">150K channel visits</strong></p>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-1">Long-form: "How I built $10K/month passive income"</p>
+                                    <p className="text-xs">150K views (from Shorts funnel) → <strong className="text-white">5% join email list</strong> → <strong className="text-white">7,500 email signups</strong></p>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-1">Email → Course sales:</p>
+                                    <p className="text-xs">7,500 emails → <strong className="text-white">3% buy $297 course</strong> → <strong className="text-white">225 sales = $66,825 revenue</strong></p>
+                                </div>
+                            </div>
+                            <div className="mt-3 pt-3 border-t border-green-500/30">
+                                <p className="text-gray-300 text-sm">Shorts = $250 ad revenue | Long-form = $3,000 ad revenue | Course sales = <strong className="text-white">$66,825</strong></p>
+                                <p className="text-white font-semibold mt-2">Total: <strong className="text-yellow-400">$70,075</strong> from one topic across funnel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Hybrid Content Calendar */}
+                    <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-yellow-400 mb-4">The Hybrid Content Calendar</h4>
+                        <div className="grid md:grid-cols-3 gap-3 mb-4">
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Monday:</h5>
+                                <p className="text-gray-300 text-xs">Upload long video (15 min tutorial) + Post 3 Shorts (clips from long video)</p>
+                            </div>
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Tuesday:</h5>
+                                <p className="text-gray-300 text-xs">Post 3 Shorts (standalone content)</p>
+                            </div>
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Wednesday:</h5>
+                                <p className="text-gray-300 text-xs">Upload long video (product review) + Post 3 Shorts (highlights)</p>
+                            </div>
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Thursday:</h5>
+                                <p className="text-gray-300 text-xs">Post 3 Shorts (standalone content)</p>
+                            </div>
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Friday:</h5>
+                                <p className="text-gray-300 text-xs">Upload long video (weekly news/trends) + Post 3 Shorts (trend reactions)</p>
+                            </div>
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Weekend:</h5>
+                                <p className="text-gray-300 text-xs">Post 4-6 Shorts (mix of repurposed + new)</p>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                            <p className="text-gray-300 text-sm"><strong className="text-white">Weekly totals:</strong> 3 long videos (30-50 minutes total) + <strong className="text-white">19-21 Shorts</strong></p>
+                            <p className="text-gray-300 text-xs mt-1">This maximizes both: Growth (from Shorts volume) + Revenue (from long-form RPM)</p>
+                        </div>
+                    </div>
+
+                    {/* Common Mistakes */}
+                    <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-red-400 mb-4">Common Hybrid Strategy Mistakes</h4>
+                        <div className="space-y-3">
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-red-300 mb-1">Mistake 1: Treating Shorts as afterthought</h5>
+                                <p className="text-gray-300 text-xs mb-1">Making lazy Short clips from long videos, no hook optimization → Low performance</p>
+                                <p className="text-gray-300 text-xs"><strong className="text-white">Fix:</strong> Edit Shorts with same care as long videos - Dedicated hooks, optimize pacing for 30-60 seconds</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-red-300 mb-1">Mistake 2: Neglecting Shorts after growth</h5>
+                                <p className="text-gray-300 text-xs mb-1">Hit 100K subs → stop posting Shorts → Growth stalls, algorithm stops favoring you</p>
+                                <p className="text-gray-300 text-xs"><strong className="text-white">Fix:</strong> Maintain Shorts presence - Even at 500K subs, post 2-3 Shorts/day</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-red-300 mb-1">Mistake 3: No clear connection between Shorts and long-form</h5>
+                                <p className="text-gray-300 text-xs mb-1">Shorts about Topic A, Long videos about Topic B → Audiences don't crossover</p>
+                                <p className="text-gray-300 text-xs"><strong className="text-white">Fix:</strong> Strategic alignment - Shorts = teasers for long content, same topics, different depths</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-red-300 mb-1">Mistake 4: Spreading too thin</h5>
+                                <p className="text-gray-300 text-xs mb-1">Trying to post 5 Shorts/day + daily long videos → Quality suffers, burnout</p>
+                                <p className="text-gray-300 text-xs"><strong className="text-white">Fix:</strong> Sustainable rhythm - Start with 1 long video/week + 3 Shorts/day, increase gradually</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Decision Framework */}
+                    <div className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-indigo-400 mb-4">The Decision Framework</h4>
+                        <div className="grid md:grid-cols-3 gap-4">
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Choose Shorts-only if:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>✅ You're <strong className="text-white">0-10K subscribers</strong> (need growth)</li>
+                                    <li>✅ Your niche is visual/entertainment</li>
+                                    <li>✅ Your goal is quick audience building</li>
+                                    <li>✅ You have limited time (Shorts are faster)</li>
+                                </ul>
+                            </div>
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Choose long-form only if:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>✅ You're <strong className="text-white">100K+ subscribers</strong> (have audience)</li>
+                                    <li>✅ Your niche is educational/complex</li>
+                                    <li>✅ Your goal is maximizing revenue</li>
+                                    <li>✅ You have patience for slower growth</li>
+                                </ul>
+                            </div>
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Choose hybrid if:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>✅ You want best of both <strong className="text-white">(recommended)</strong></li>
+                                    <li>✅ You can commit to consistent schedule</li>
+                                    <li>✅ Your niche works for both formats</li>
+                                    <li>✅ You're building long-term business</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Recommendation by Stage */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">My Recommendation by Stage</h4>
+                        <div className="grid md:grid-cols-5 gap-3">
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-green-300 mb-1">Stage 1 (0-1K):</h5>
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">100% Shorts</strong></p>
+                                <p className="text-gray-300 text-xs">Post <strong className="text-white">5 Shorts/day</strong></p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-green-300 mb-1">Stage 2 (1K-10K):</h5>
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">90% Shorts</strong>, 10% long-form</p>
+                                <p className="text-gray-300 text-xs">Post <strong className="text-white">4 Shorts/day</strong> + 1 long/week</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-green-300 mb-1">Stage 3 (10K-50K):</h5>
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">70% Shorts</strong>, 30% long-form</p>
+                                <p className="text-gray-300 text-xs">Post <strong className="text-white">3 Shorts/day</strong> + 2 long/week</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-green-300 mb-1">Stage 4 (50K-100K):</h5>
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">50% Shorts</strong>, 50% long-form</p>
+                                <p className="text-gray-300 text-xs">Post <strong className="text-white">2-3 Shorts/day</strong> + 3 long/week</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-green-300 mb-1">Stage 5 (100K+):</h5>
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">30% Shorts</strong>, 70% long-form</p>
+                                <p className="text-gray-300 text-xs">Post <strong className="text-white">2 Shorts/day</strong> + 4-5 long/week</p>
+                            </div>
+                        </div>
+                        <p className="text-white font-semibold text-center mt-4">The answer isn't Shorts OR long-form. It's Shorts THEN long-form, maintaining both for optimal results. Use Shorts as the growth engine, long-form as the revenue engine.</p>
+                    </div>
                 </div>
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-red-400 mb-4">How do I repurpose YouTube Shorts content across other platforms effectively?</h3>
-                <div className="prose prose-invert max-w-none text-gray-300">
-                    <p className="mb-4">{`**The optimal repurposing strategy is "Platform-Native Adaptation": Create once for YouTube Shorts, then modify 20-30% for each platform (TikTok, Instagram Reels, Pinterest, LinkedIn) rather than direct cross-posting.** Here's the complete multi-platform system:
-
-**The Platform Landscape (2026 Reality)**
-
-YouTube Shorts:
-- Best for: Educational content, tutorials, how-tos
-- Audience: 25-45 years old, value-seekers
-- Algorithm priority: Watch time (AVD)
-- Monetization: Ad revenue ($0.05-$0.15 RPM)
-
-TikTok:
-- Best for: Entertainment, trends, relatability
-- Audience: 16-34 years old, entertainment-first
-- Algorithm priority: Completion rate + shares
-- Monetization: Creator Fund + brand deals
-
-Instagram Reels:
-- Best for: Aesthetic content, lifestyle, brands
-- Audience: 18-35 years old, visual-focused
-- Algorithm priority: Saves + shares
-- Monetization: Brand deals, affiliate
-
-Pinterest Idea Pins:
-- Best for: DIY, recipes, home decor, fashion
-- Audience: 25-45 years old (70% female), planners
-- Algorithm priority: Saves + outbound clicks
-- Monetization: Affiliate links, traffic to website
-
-LinkedIn Videos:
-- Best for: Business, career, professional development
-- Audience: 25-55 years old, professionals
-- Algorithm priority: Comments + engagement time
-- Monetization: Lead generation, B2B deals
-
-**The Cross-Platform Adaptation System**
-
-Step 1: Create master video for YouTube Shorts
-- This is your base asset
-- Optimize for YouTube first (largest revenue potential)
-- 30-60 seconds, 9:16 vertical format
-- High production value
-
-Step 2: Create platform-specific versions
-
-**TikTok Adaptation (20% change)**
-
-What to modify:
-1. Hook style (more casual, less "teaching" tone)
-2. Caption style (TikTok-style trending formats)
-3. Hashtags (TikTok trending tags, not YouTube keywords)
-4. Sound (use trending TikTok audio, not Epidemic Sound)
-
-Example transformation:
-YouTube Short title: "3 Excel formulas that'll save you hours"
-TikTok version title: "pov: you just discovered these Excel hacks"
-
-YouTube hook: "Here are 3 Excel formulas every professional should know"
-TikTok hook: "Wait till you see #3... game changer"
-
-Why it works:
-- TikTok audience prefers casual over formal
-- "POV" and trending formats perform better
-- Algorithm favors platform-native content
-
-Advanced TikTok optimization:
-- Add green screen effect (even if same content)
-- Use text-to-speech voice (TikTok-specific feature)
-- Leverage trending sounds (changes weekly)
-- Engage with comments via video replies
-
-**Instagram Reels Adaptation (30% change)**
-
-What to modify:
-1. Visual aesthetic (more polished, brand-consistent)
-2. Caption (longer, more context, story-driven)
-3. Cover image (Instagram shows cover before playing)
-4. Call-to-action (drive to link in bio, not "subscribe")
-
-Example transformation:
-YouTube Short: Standard editing, text overlays
-Instagram Reel: Add branded intro card (1 second), color-graded warmer, consistent font matching feed
-
-YouTube CTA: "Follow for more Excel tips"
-Instagram CTA: "Save this for later + check link in bio for full Excel course"
-
-Why it works:
-- Instagram users care about aesthetics
-- "Save" function = powerful algorithm signal
-- Link in bio = conversion opportunity
-
-Advanced Instagram optimization:
-- Use Instagram-native fonts/stickers
-- Add location tag (increases local reach)
-- Tag relevant accounts (potential shares)
-- Post to both Feed and Reels (2× reach)
-- Add to Instagram Story 24 hours later (3× touchpoints)
-
-**Pinterest Idea Pins Adaptation (40% change)**
-
-What to modify:
-1. Structure (multiple cards, not single video)
-2. Text overlays (very detailed, Pinterest users read more)
-3. Title and description (SEO-heavy, keyword-optimized)
-4. Ending CTA (drive to blog/website)
-
-Example transformation:
-YouTube Short: Single 45-second video
-Pinterest Idea Pin:
-- Card 1: Title card with main benefit
-- Card 2-4: Three tips (one per card)
-- Card 5: Full tutorial link
-
-YouTube title: "How to organize your workspace"
-Pinterest title: "5 Workspace Organization Ideas for Small Spaces (2026 Guide)"
-
-Why it works:
-- Pinterest is search engine, not social media
-- Longer, more descriptive = better SEO
-- Multi-card format native to platform
-- Drives traffic to owned properties
-
-Advanced Pinterest optimization:
-- Keyword-stuff description (doesn't hurt on Pinterest)
-- Add to multiple relevant boards
-- Create "Series" of related Pins
-- Link to blog post with affiliate links
-
-**LinkedIn Adaptation (50% change)**
-
-What to modify:
-1. Tone (professional, business-focused)
-2. Context (add professional credibility)
-3. Caption (LinkedIn favors longer captions, 1,200+ characters)
-4. CTA (networking, not selling)
-
-Example transformation:
-YouTube Short: "3 productivity hacks"
-LinkedIn version: "After managing teams for 10 years, these are the 3 productivity systems that actually work in corporate environments"
-
-YouTube caption: "Try these productivity hacks!"
-LinkedIn caption:
-"I spent the last decade testing productivity systems across Fortune 500 companies and startups. Most fail in real business environments.
-
-These 3 systems consistently work:
-
-1. [Detailed explanation with business context]
-2. [Case study from corporate experience]
-3. [ROI breakdown]
-
-I've seen these improve team output by 30-40% while reducing overtime.
-
-What productivity systems work in your organization?
-
-#Productivity #Leadership #BusinessStrategy"
-
-Why it works:
-- LinkedIn rewards professional depth
-- Personal credibility matters more
-- Longer captions = more engagement time
-- Discussion in comments boosts algorithm
-
-Advanced LinkedIn optimization:
-- Post as native video (not link)
-- Tag relevant companies/people
-- Engage with every comment
-- Cross-post to LinkedIn articles (written version)
-
-**The Efficient Workflow**
-
-Don't create 5 separate videos. Create variations efficiently.
-
-Production workflow:
-
-Monday: Film 1 master video
-- Record at highest quality
-- Get 3-4 takes (can use different ones for different platforms)
-- Film vertical (9:16) and horizontal (16:9) if doing long-form
-
-Tuesday: Edit master version
-- Create YouTube Short version (primary)
-- Export at highest quality
-- This is your "source file"
-
-Wednesday: Create platform variants
-- Duplicate project 4 times (TikTok, Instagram, Pinterest, LinkedIn)
-- Make platform-specific modifications
-- Export all versions
-
-Thursday: Batch upload and optimize
-- Upload to all platforms
-- Write platform-specific captions
-- Optimize tags/hashtags per platform
-- Schedule for best times
-
-Time breakdown:
-- Film: 30 minutes
-- Edit master: 45 minutes
-- Create variants: 60 minutes (15 min per platform)
-- Upload and optimize: 45 minutes
-**Total: 3 hours for 5 platforms**
-
-Compare to creating separately:
-- 5 separate videos = 10-15 hours
-- Repurposing saves 70-80% time
-
-**The Scheduling Strategy**
-
-Don't post everywhere simultaneously. Stagger for maximum reach.
-
-Monday 9 AM: YouTube Shorts
-- Primary platform, highest revenue
-- Post first to establish as original
-
-Tuesday 7 PM: TikTok
-- Different audience, less cannibalization
-- Trending times differ from YouTube
-
-Wednesday 1 PM: Instagram Reels
-- Instagram users most active midday Wed-Thu
-- 48 hours after YouTube prevents cross-contamination
-
-Thursday 10 AM: Pinterest
-- Pinterest users plan ahead (weekday mornings)
-- Searching mode, not scrolling mode
-
-Friday 8 AM: LinkedIn
-- Professionals check LinkedIn Friday morning
-- Less competition (most post Mon-Wed)
-
-Spacing benefits:
-- Algorithm sees as new content each day
-- Extends content lifespan (5 days vs 1 day)
-- Captures different audience active times
-- Reduces platform cannibalization
-
-**Platform-Specific Performance Tracking**
-
-Track metrics by platform to optimize:
-
-YouTube Shorts:
-- Primary KPI: Average View Duration
-- Secondary: CTR, Subscribers gained
-- Goal: 85%+ AVD, 3%+ conversion
-
-TikTok:
-- Primary KPI: Completion rate
-- Secondary: Shares, For You Page %
-- Goal: 70%+ completion, 10K+ FYP views
-
-Instagram Reels:
-- Primary KPI: Saves
-- Secondary: Shares, Profile visits
-- Goal: 5%+ save rate, 3%+ profile visit rate
-
-Pinterest:
-- Primary KPI: Outbound clicks
-- Secondary: Saves, Impressions
-- Goal: 2%+ CTR to website
-
-LinkedIn:
-- Primary KPI: Engagement rate
-- Secondary: Comments, Profile views
-- Goal: 10%+ engagement (likes+comments+shares)
-
-**The Watermark Strategy**
-
-YouTube HATES watermarks from other platforms. But you need branding.
-
-Solution: Dynamic watermarking
-
-YouTube version: Clean, no watermark (or subtle corner logo)
-TikTok version: Can include creator branding
-Instagram version: Branded lower-third text
-Pinterest version: Large watermark with website URL
-LinkedIn version: Professional logo lower-third
-
-Tools for dynamic watermarking:
-- CapCut: Easy preset export templates
-- Premiere Pro: Export presets with different watermarks
-- Canva: Template variations
-
-**Cross-Platform Growth Hacks**
-
-Hack 1: The Platform Loop
-Use each platform to drive growth on others
-
-YouTube Short → "Follow me on Instagram for behind-the-scenes"
-Instagram Reel → "Full tutorial on YouTube (link in bio)"
-TikTok → "Replying to this tomorrow on my YouTube"
-
-Creates cross-platform ecosystem
-
-Hack 2: The Remix Culture
-Take viral content from one platform, adapt for another
-
-Viral TikTok sound → Create YouTube Short version
-Trending Instagram Reel format → Adapt for TikTok
-YouTube viral topic → Create LinkedIn thought leadership post
-
-Ride multiple trend waves simultaneously
-
-Hack 3: The Platform-Specific Series
-Create series that lives on only one platform
-
-"TikTok Tuesday" series (exclusive to TikTok)
-"LinkedIn Leadership Lessons" (exclusive to LinkedIn)
-
-Gives audiences reason to follow on multiple platforms
-
-**What NOT To Do**
-
-❌ Don't directly cross-post same video
-- Algorithms detect and demote
-- Looks lazy
-- Underperforms by 60-80%
-
-❌ Don't leave watermarks
-- TikTok watermark on YouTube = death sentence
-- YouTube logo on TikTok = lower distribution
-- Always remove
-
-❌ Don't ignore platform culture
-- LinkedIn is not TikTok
-- YouTube Shorts is not Instagram Reels
-- Respect platform norms
-
-❌ Don't over-optimize for one platform
-- Creates content that fails everywhere else
-- Balance platform-specific with universal appeal
-
-**Real Results From Multi-Platform**
-
-My repurposing results (same content, 5 platforms):
-
-YouTube Shorts: 2.3M views
-TikTok: 4.7M views
-Instagram Reels: 1.8M views
-Pinterest: 450K impressions (32K website clicks)
-LinkedIn: 180K views
-
-Total reach: 9.43M (vs 2.3M YouTube-only)
-Time investment: 3 hours (not 15 hours creating separately)
-ROI: 4.1× reach for same time investment
-
-Revenue breakdown:
-- YouTube: $3,450 (ad revenue)
-- TikTok: $0 (building audience for brand deals)
-- Instagram: $1,200 (affiliate sales from bio link)
-- Pinterest: $2,800 (affiliate + website traffic)
-- LinkedIn: $8,500 (B2B lead generation)
-**Total: $15,950 from one piece of content**
-
-The multi-platform strategy isn't about being everywhere. It's about maximizing the value of content you're already creating. One video, five revenue streams, 4× reach. That's efficiency.`}</p>
+                <h3 className="text-2xl font-bold text-red-400 mb-6">How do I repurpose YouTube Shorts content across other platforms effectively?</h3>
+                <div className="space-y-6">
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                        <strong className="text-white font-semibold">The optimal repurposing strategy is "Platform-Native Adaptation": Create once for YouTube Shorts, then modify 20-30% for each platform (TikTok, Instagram Reels, Pinterest, LinkedIn) rather than direct cross-posting.</strong> Here's the complete multi-platform system:
+                    </p>
+
+                    {/* Platform Landscape */}
+                    <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-blue-400 mb-4">The Platform Landscape (2026 Reality)</h4>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">YouTube Shorts:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Best for: Educational content, tutorials, how-tos</li>
+                                    <li>• Audience: <strong className="text-white">25-45 years old</strong>, value-seekers</li>
+                                    <li>• Algorithm priority: Watch time (AVD)</li>
+                                    <li>• Monetization: Ad revenue (<strong className="text-white">$0.05-$0.15 RPM</strong>)</li>
+                                </ul>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">TikTok:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Best for: Entertainment, trends, relatability</li>
+                                    <li>• Audience: <strong className="text-white">16-34 years old</strong>, entertainment-first</li>
+                                    <li>• Algorithm priority: Completion rate + shares</li>
+                                    <li>• Monetization: Creator Fund + brand deals</li>
+                                </ul>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">Instagram Reels:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Best for: Aesthetic content, lifestyle, brands</li>
+                                    <li>• Audience: <strong className="text-white">18-35 years old</strong>, visual-focused</li>
+                                    <li>• Algorithm priority: Saves + shares</li>
+                                    <li>• Monetization: Brand deals, affiliate</li>
+                                </ul>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">Pinterest Idea Pins:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Best for: DIY, recipes, home decor, fashion</li>
+                                    <li>• Audience: <strong className="text-white">25-45 years old</strong> (70% female), planners</li>
+                                    <li>• Algorithm priority: Saves + outbound clicks</li>
+                                    <li>• Monetization: Affiliate links, traffic to website</li>
+                                </ul>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">LinkedIn Videos:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Best for: Business, career, professional development</li>
+                                    <li>• Audience: <strong className="text-white">25-55 years old</strong>, professionals</li>
+                                    <li>• Algorithm priority: Comments + engagement time</li>
+                                    <li>• Monetization: Lead generation, B2B deals</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Cross-Platform Adaptation System */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">The Cross-Platform Adaptation System</h4>
+                        <div className="space-y-4">
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-2">Step 1: Create master video for YouTube Shorts</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• This is your base asset</li>
+                                    <li>• Optimize for YouTube first (largest revenue potential)</li>
+                                    <li>• <strong className="text-white">30-60 seconds</strong>, 9:16 vertical format</li>
+                                    <li>• High production value</li>
+                                </ul>
+                            </div>
+
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-2">Step 2: Create platform-specific versions</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* TikTok Adaptation */}
+                    <div className="bg-gradient-to-br from-pink-500/10 to-rose-500/10 border border-pink-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-pink-400 mb-4">TikTok Adaptation (20% change)</h4>
+                        <div className="space-y-3">
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-pink-300 mb-2">What to modify:</h5>
+                                <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                                    <li>Hook style (more casual, less "teaching" tone)</li>
+                                    <li>Caption style (TikTok-style trending formats)</li>
+                                    <li>Hashtags (TikTok trending tags, not YouTube keywords)</li>
+                                    <li>Sound (use trending TikTok audio, not Epidemic Sound)</li>
+                                </ol>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-1">Example transformation:</h5>
+                                <p className="text-gray-300 text-xs mb-1">YouTube Short title: "3 Excel formulas that'll save you hours"</p>
+                                <p className="text-gray-300 text-xs mb-2">TikTok version title: <strong className="text-white">"pov: you just discovered these Excel hacks"</strong></p>
+                                <p className="text-gray-300 text-xs mb-1">YouTube hook: "Here are 3 Excel formulas every professional should know"</p>
+                                <p className="text-gray-300 text-xs">TikTok hook: <strong className="text-white">"Wait till you see #3... game changer"</strong></p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-green-300 mb-1">Why it works:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• TikTok audience prefers casual over formal</li>
+                                    <li>• "POV" and trending formats perform better</li>
+                                    <li>• Algorithm favors platform-native content</li>
+                                </ul>
+                            </div>
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-pink-300 mb-1">Advanced TikTok optimization:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Add green screen effect (even if same content)</li>
+                                    <li>• Use text-to-speech voice (TikTok-specific feature)</li>
+                                    <li>• Leverage trending sounds (changes weekly)</li>
+                                    <li>• Engage with comments via video replies</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Instagram Reels Adaptation */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">Instagram Reels Adaptation (30% change)</h4>
+                        <div className="space-y-3">
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-purple-300 mb-2">What to modify:</h5>
+                                <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                                    <li>Visual aesthetic (more polished, brand-consistent)</li>
+                                    <li>Caption (longer, more context, story-driven)</li>
+                                    <li>Cover image (Instagram shows cover before playing)</li>
+                                    <li>Call-to-action (drive to link in bio, not "subscribe")</li>
+                                </ol>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-1">Example transformation:</h5>
+                                <p className="text-gray-300 text-xs mb-1">YouTube Short: Standard editing, text overlays</p>
+                                <p className="text-gray-300 text-xs mb-2">Instagram Reel: Add branded intro card (1 second), color-graded warmer, consistent font matching feed</p>
+                                <p className="text-gray-300 text-xs mb-1">YouTube CTA: "Follow for more Excel tips"</p>
+                                <p className="text-gray-300 text-xs">Instagram CTA: <strong className="text-white">"Save this for later + check link in bio for full Excel course"</strong></p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-green-300 mb-1">Why it works:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Instagram users care about aesthetics</li>
+                                    <li>• "Save" function = powerful algorithm signal</li>
+                                    <li>• Link in bio = conversion opportunity</li>
+                                </ul>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-purple-300 mb-1">Advanced Instagram optimization:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Use Instagram-native fonts/stickers</li>
+                                    <li>• Add location tag (increases local reach)</li>
+                                    <li>• Tag relevant accounts (potential shares)</li>
+                                    <li>• Post to both Feed and Reels (<strong className="text-white">2× reach</strong>)</li>
+                                    <li>• Add to Instagram Story 24 hours later (<strong className="text-white">3× touchpoints</strong>)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Pinterest Adaptation */}
+                    <div className="bg-gradient-to-br from-red-500/10 to-pink-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-red-400 mb-4">Pinterest Idea Pins Adaptation (40% change)</h4>
+                        <div className="space-y-3">
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-red-300 mb-2">What to modify:</h5>
+                                <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                                    <li>Structure (multiple cards, not single video)</li>
+                                    <li>Text overlays (very detailed, Pinterest users read more)</li>
+                                    <li>Title and description (SEO-heavy, keyword-optimized)</li>
+                                    <li>Ending CTA (drive to blog/website)</li>
+                                </ol>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-1">Example transformation:</h5>
+                                <p className="text-gray-300 text-xs mb-1">YouTube Short: Single 45-second video</p>
+                                <p className="text-gray-300 text-xs mb-1">Pinterest Idea Pin:</p>
+                                <ul className="space-y-1 text-gray-300 text-xs ml-4">
+                                    <li>• Card 1: Title card with main benefit</li>
+                                    <li>• Card 2-4: Three tips (one per card)</li>
+                                    <li>• Card 5: Full tutorial link</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs mt-2 mb-1">YouTube title: "How to organize your workspace"</p>
+                                <p className="text-gray-300 text-xs">Pinterest title: <strong className="text-white">"5 Workspace Organization Ideas for Small Spaces (2026 Guide)"</strong></p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-green-300 mb-1">Why it works:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Pinterest is search engine, not social media</li>
+                                    <li>• Longer, more descriptive = better SEO</li>
+                                    <li>• Multi-card format native to platform</li>
+                                    <li>• Drives traffic to owned properties</li>
+                                </ul>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-red-300 mb-1">Advanced Pinterest optimization:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Keyword-stuff description (doesn't hurt on Pinterest)</li>
+                                    <li>• Add to multiple relevant boards</li>
+                                    <li>• Create "Series" of related Pins</li>
+                                    <li>• Link to blog post with affiliate links</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* LinkedIn Adaptation */}
+                    <div className="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-blue-400 mb-4">LinkedIn Adaptation (50% change)</h4>
+                        <div className="space-y-3">
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-2">What to modify:</h5>
+                                <ol className="space-y-1 text-gray-300 text-sm list-decimal list-inside">
+                                    <li>Tone (professional, business-focused)</li>
+                                    <li>Context (add professional credibility)</li>
+                                    <li>Caption (LinkedIn favors longer captions, <strong className="text-white">1,200+ characters</strong>)</li>
+                                    <li>CTA (networking, not selling)</li>
+                                </ol>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-blue-300 mb-1">Example transformation:</h5>
+                                <p className="text-gray-300 text-xs mb-1">YouTube Short: "3 productivity hacks"</p>
+                                <p className="text-gray-300 text-xs mb-2">LinkedIn version: <strong className="text-white">"After managing teams for 10 years, these are the 3 productivity systems that actually work in corporate environments"</strong></p>
+                                <div className="bg-indigo-900/20 border border-indigo-500/30 rounded p-2 mt-2">
+                                    <p className="text-gray-300 text-xs italic mb-1">LinkedIn caption structure:</p>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Personal credibility statement</li>
+                                        <li>• Detailed explanation with business context</li>
+                                        <li>• Case study from corporate experience</li>
+                                        <li>• ROI breakdown</li>
+                                        <li>• Discussion question</li>
+                                        <li>• Professional hashtags</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-green-300 mb-1">Why it works:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• LinkedIn rewards professional depth</li>
+                                    <li>• Personal credibility matters more</li>
+                                    <li>• Longer captions = more engagement time</li>
+                                    <li>• Discussion in comments boosts algorithm</li>
+                                </ul>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-blue-300 mb-1">Advanced LinkedIn optimization:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Post as native video (not link)</li>
+                                    <li>• Tag relevant companies/people</li>
+                                    <li>• Engage with every comment</li>
+                                    <li>• Cross-post to LinkedIn articles (written version)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Efficient Workflow */}
+                    <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-yellow-400 mb-4">The Efficient Workflow</h4>
+                        <p className="text-gray-300 text-sm mb-4">Don't create 5 separate videos. Create variations efficiently.</p>
+                        <div className="grid md:grid-cols-4 gap-3 mb-4">
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Monday: Film</h5>
+                                <p className="text-gray-300 text-xs">Record at highest quality, get 3-4 takes, film vertical (9:16)</p>
+                            </div>
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Tuesday: Edit master</h5>
+                                <p className="text-gray-300 text-xs">Create YouTube Short version (primary), export at highest quality</p>
+                            </div>
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Wednesday: Create variants</h5>
+                                <p className="text-gray-300 text-xs">Duplicate project 4 times, make platform-specific modifications</p>
+                            </div>
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-yellow-300 mb-1">Thursday: Batch upload</h5>
+                                <p className="text-gray-300 text-xs">Upload to all platforms, write captions, optimize tags/hashtags</p>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-green-300 mb-2">Time breakdown:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Film: <strong className="text-white">30 minutes</strong></li>
+                                <li>• Edit master: <strong className="text-white">45 minutes</strong></li>
+                                <li>• Create variants: <strong className="text-white">60 minutes</strong> (15 min per platform)</li>
+                                <li>• Upload and optimize: <strong className="text-white">45 minutes</strong></li>
+                            </ul>
+                            <p className="text-white font-semibold mt-2">Total: <strong className="text-yellow-400">3 hours for 5 platforms</strong></p>
+                            <p className="text-gray-300 text-xs mt-2">Compare to creating separately: 5 separate videos = 10-15 hours → Repurposing saves <strong className="text-white">70-80% time</strong></p>
+                        </div>
+                    </div>
+
+                    {/* Scheduling Strategy */}
+                    <div className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-indigo-400 mb-4">The Scheduling Strategy</h4>
+                        <p className="text-gray-300 text-sm mb-4">Don't post everywhere simultaneously. Stagger for maximum reach.</p>
+                        <div className="grid md:grid-cols-5 gap-3 mb-4">
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-indigo-300 mb-1">Monday 9 AM: YouTube</h5>
+                                <p className="text-gray-300 text-xs">Primary platform, highest revenue, post first to establish as original</p>
+                            </div>
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-indigo-300 mb-1">Tuesday 7 PM: TikTok</h5>
+                                <p className="text-gray-300 text-xs">Different audience, less cannibalization, trending times differ</p>
+                            </div>
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-indigo-300 mb-1">Wednesday 1 PM: Instagram</h5>
+                                <p className="text-gray-300 text-xs">Users most active midday Wed-Thu, 48 hours after YouTube prevents cross-contamination</p>
+                            </div>
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-indigo-300 mb-1">Thursday 10 AM: Pinterest</h5>
+                                <p className="text-gray-300 text-xs">Users plan ahead (weekday mornings), searching mode, not scrolling mode</p>
+                            </div>
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-indigo-300 mb-1">Friday 8 AM: LinkedIn</h5>
+                                <p className="text-gray-300 text-xs">Professionals check LinkedIn Friday morning, less competition (most post Mon-Wed)</p>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                            <h5 className="text-xs font-semibold text-green-300 mb-1">Spacing benefits:</h5>
+                            <ul className="space-y-1 text-gray-300 text-xs">
+                                <li>• Algorithm sees as new content each day</li>
+                                <li>• Extends content lifespan (<strong className="text-white">5 days vs 1 day</strong>)</li>
+                                <li>• Captures different audience active times</li>
+                                <li>• Reduces platform cannibalization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Performance Tracking */}
+                    <div className="bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-teal-400 mb-4">Platform-Specific Performance Tracking</h4>
+                        <p className="text-gray-300 text-sm mb-4">Track metrics by platform to optimize:</p>
+                        <div className="grid md:grid-cols-5 gap-3">
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-teal-300 mb-1">YouTube Shorts:</h5>
+                                <p className="text-gray-300 text-xs mb-1">Primary KPI: <strong className="text-white">Average View Duration</strong></p>
+                                <p className="text-gray-300 text-xs">Goal: <strong className="text-white">85%+ AVD</strong>, 3%+ conversion</p>
+                            </div>
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-teal-300 mb-1">TikTok:</h5>
+                                <p className="text-gray-300 text-xs mb-1">Primary KPI: <strong className="text-white">Completion rate</strong></p>
+                                <p className="text-gray-300 text-xs">Goal: <strong className="text-white">70%+ completion</strong>, 10K+ FYP views</p>
+                            </div>
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-teal-300 mb-1">Instagram Reels:</h5>
+                                <p className="text-gray-300 text-xs mb-1">Primary KPI: <strong className="text-white">Saves</strong></p>
+                                <p className="text-gray-300 text-xs">Goal: <strong className="text-white">5%+ save rate</strong>, 3%+ profile visit rate</p>
+                            </div>
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-teal-300 mb-1">Pinterest:</h5>
+                                <p className="text-gray-300 text-xs mb-1">Primary KPI: <strong className="text-white">Outbound clicks</strong></p>
+                                <p className="text-gray-300 text-xs">Goal: <strong className="text-white">2%+ CTR</strong> to website</p>
+                            </div>
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-teal-300 mb-1">LinkedIn:</h5>
+                                <p className="text-gray-300 text-xs mb-1">Primary KPI: <strong className="text-white">Engagement rate</strong></p>
+                                <p className="text-gray-300 text-xs">Goal: <strong className="text-white">10%+ engagement</strong> (likes+comments+shares)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Watermark Strategy */}
+                    <div className="bg-gradient-to-br from-orange-500/10 to-yellow-500/10 border border-orange-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-orange-400 mb-4">The Watermark Strategy</h4>
+                        <p className="text-gray-300 text-sm mb-4">YouTube HATES watermarks from other platforms. But you need branding.</p>
+                        <p className="text-gray-300 text-sm mb-4"><strong className="text-white">Solution: Dynamic watermarking</strong></p>
+                        <div className="grid md:grid-cols-5 gap-3 mb-4">
+                            <div className="bg-orange-900/20 border border-orange-500/30 rounded-lg p-2">
+                                <p className="text-gray-300 text-xs"><strong className="text-white">YouTube:</strong> Clean, no watermark (or subtle corner logo)</p>
+                            </div>
+                            <div className="bg-orange-900/20 border border-orange-500/30 rounded-lg p-2">
+                                <p className="text-gray-300 text-xs"><strong className="text-white">TikTok:</strong> Can include creator branding</p>
+                            </div>
+                            <div className="bg-orange-900/20 border border-orange-500/30 rounded-lg p-2">
+                                <p className="text-gray-300 text-xs"><strong className="text-white">Instagram:</strong> Branded lower-third text</p>
+                            </div>
+                            <div className="bg-orange-900/20 border border-orange-500/30 rounded-lg p-2">
+                                <p className="text-gray-300 text-xs"><strong className="text-white">Pinterest:</strong> Large watermark with website URL</p>
+                            </div>
+                            <div className="bg-orange-900/20 border border-orange-500/30 rounded-lg p-2">
+                                <p className="text-gray-300 text-xs"><strong className="text-white">LinkedIn:</strong> Professional logo lower-third</p>
+                            </div>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                            <h5 className="text-xs font-semibold text-blue-300 mb-1">Tools for dynamic watermarking:</h5>
+                            <p className="text-gray-300 text-xs">CapCut (easy preset export templates), Premiere Pro (export presets with different watermarks), Canva (template variations)</p>
+                        </div>
+                    </div>
+
+                    {/* Cross-Platform Growth Hacks */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">Cross-Platform Growth Hacks</h4>
+                        <div className="space-y-3">
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-green-300 mb-1">Hack 1: The Platform Loop</h5>
+                                <p className="text-gray-300 text-sm mb-1">Use each platform to drive growth on others</p>
+                                <p className="text-gray-300 text-xs italic mb-1">YouTube Short → "Follow me on Instagram for behind-the-scenes"</p>
+                                <p className="text-gray-300 text-xs italic mb-1">Instagram Reel → "Full tutorial on YouTube (link in bio)"</p>
+                                <p className="text-gray-300 text-xs italic">TikTok → "Replying to this tomorrow on my YouTube"</p>
+                                <p className="text-gray-300 text-xs mt-1">Creates cross-platform ecosystem</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-green-300 mb-1">Hack 2: The Remix Culture</h5>
+                                <p className="text-gray-300 text-sm mb-1">Take viral content from one platform, adapt for another</p>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Viral TikTok sound → Create YouTube Short version</li>
+                                    <li>• Trending Instagram Reel format → Adapt for TikTok</li>
+                                    <li>• YouTube viral topic → Create LinkedIn thought leadership post</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs mt-1">Ride multiple trend waves simultaneously</p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-green-300 mb-1">Hack 3: The Platform-Specific Series</h5>
+                                <p className="text-gray-300 text-sm mb-1">Create series that lives on only one platform</p>
+                                <p className="text-gray-300 text-xs italic mb-1">"TikTok Tuesday" series (exclusive to TikTok)</p>
+                                <p className="text-gray-300 text-xs italic">"LinkedIn Leadership Lessons" (exclusive to LinkedIn)</p>
+                                <p className="text-gray-300 text-xs mt-1">Gives audiences reason to follow on multiple platforms</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* What NOT To Do */}
+                    <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-red-400 mb-4">What NOT To Do</h4>
+                        <div className="space-y-2">
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                                <p className="mb-1">❌ <strong className="text-white">Don't directly cross-post same video</strong></p>
+                                <p className="text-gray-300 text-xs">Algorithms detect and demote, looks lazy, underperforms by <strong className="text-white">60-80%</strong></p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                                <p className="mb-1">❌ <strong className="text-white">Don't leave watermarks</strong></p>
+                                <p className="text-gray-300 text-xs">TikTok watermark on YouTube = death sentence, YouTube logo on TikTok = lower distribution</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                                <p className="mb-1">❌ <strong className="text-white">Don't ignore platform culture</strong></p>
+                                <p className="text-gray-300 text-xs">LinkedIn is not TikTok, YouTube Shorts is not Instagram Reels - Respect platform norms</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                                <p className="mb-1">❌ <strong className="text-white">Don't over-optimize for one platform</strong></p>
+                                <p className="text-gray-300 text-xs">Creates content that fails everywhere else - Balance platform-specific with universal appeal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Real Results */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">Real Results From Multi-Platform</h4>
+                        <p className="text-gray-300 text-sm mb-4">My repurposing results (same content, 5 platforms):</p>
+                        <div className="grid md:grid-cols-5 gap-3 mb-4">
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">YouTube Shorts:</strong></p>
+                                <p className="text-white font-semibold">2.3M views</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">TikTok:</strong></p>
+                                <p className="text-white font-semibold">4.7M views</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">Instagram Reels:</strong></p>
+                                <p className="text-white font-semibold">1.8M views</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">Pinterest:</strong></p>
+                                <p className="text-white font-semibold">450K impressions</p>
+                                <p className="text-gray-300 text-xs">(32K website clicks)</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <p className="text-gray-300 text-xs mb-1"><strong className="text-white">LinkedIn:</strong></p>
+                                <p className="text-white font-semibold">180K views</p>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                            <p className="text-gray-300 text-sm mb-2">Total reach: <strong className="text-white">9.43M</strong> (vs 2.3M YouTube-only)</p>
+                            <p className="text-gray-300 text-sm mb-2">Time investment: <strong className="text-white">3 hours</strong> (not 15 hours creating separately)</p>
+                            <p className="text-white font-semibold">ROI: <strong className="text-yellow-400">4.1× reach</strong> for same time investment</p>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-sm font-semibold text-blue-300 mb-2">Revenue breakdown:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• YouTube: <strong className="text-white">$3,450</strong> (ad revenue)</li>
+                                <li>• TikTok: $0 (building audience for brand deals)</li>
+                                <li>• Instagram: <strong className="text-white">$1,200</strong> (affiliate sales from bio link)</li>
+                                <li>• Pinterest: <strong className="text-white">$2,800</strong> (affiliate + website traffic)</li>
+                                <li>• LinkedIn: <strong className="text-white">$8,500</strong> (B2B lead generation)</li>
+                            </ul>
+                            <p className="text-white font-semibold text-center mt-3">Total: <strong className="text-yellow-400">$15,950</strong> from one piece of content</p>
+                        </div>
+                        <p className="text-white font-semibold text-center mt-4">The multi-platform strategy isn't about being everywhere. It's about maximizing the value of content you're already creating. One video, five revenue streams, 4× reach. That's efficiency.</p>
+                    </div>
                 </div>
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-red-400 mb-4">What are the biggest mistakes that kill YouTube Shorts growth?</h3>
-                <div className="prose prose-invert max-w-none text-gray-300">
-                    <p className="mb-4">{`**The 3 fatal mistakes that kill 90% of YouTube Shorts channels: Weak hooks (losing 80% of viewers in first 3 seconds), inconsistent posting (breaking algorithm momentum), and creating for yourself instead of your audience.** Here's the complete mistake breakdown with fixes:
+                <h3 className="text-2xl font-bold text-red-400 mb-6">What are the biggest mistakes that kill YouTube Shorts growth?</h3>
+                <div className="space-y-6">
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                        <strong className="text-white font-semibold">The 3 fatal mistakes that kill 90% of YouTube Shorts channels: Weak hooks (losing 80% of viewers in first 3 seconds), inconsistent posting (breaking algorithm momentum), and creating for yourself instead of your audience.</strong> Here's the complete mistake breakdown with fixes:
 
 **Category 1: Hook and Retention Mistakes**
 
