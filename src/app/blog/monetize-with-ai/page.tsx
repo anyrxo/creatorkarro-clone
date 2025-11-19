@@ -3079,462 +3079,694 @@ Most successful AI entrepreneurs do services first (for cash flow), products sec
                     {/* CASE STUDY #1 */}
                     <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-cyan-500">
                         <h4 className="text-2xl font-bold text-cyan-400 mb-4">CASE STUDY #1: The $73K/Month AI Course Creator</h4>
-
-**Business owner:** Mike Chen (former marketing manager)
-**Business model:** AI courses and info products
-**Time to $10K/month:** 4 months
-**Time to $50K/month:** 11 months
-**Current revenue:** $73,000/month average
-
-**Full Revenue Breakdown (Monthly Average):**
-- Main course ($997): 22 sales = $21,934
-- Mini course ($297): 41 sales = $12,177
-- Membership ($97/mo): 215 members = $20,855
-- Coaching program ($2,997): 3 spots = $8,991
-- Affiliate commissions: $4,200
-- Sponsored newsletter: $4,800
-**Total: $72,957/month**
-
-**Expenses Breakdown:**
-- Email marketing (ConvertKit): $199/month
-- Course platform (Teachable): $199/month
-- AI tools (ChatGPT Plus, Claude, Jasper): $89/month
-- Ads (Facebook, Google): $3,500/month
-- VA support (2 VAs): $1,800/month
-- Software/tools: $350/month
-**Total expenses: $6,137/month**
-**Net profit: $66,820/month (91.6% margin)**
-
-**Tools & Tech Stack:**
-- ChatGPT Plus: Course content creation
-- Claude Pro: Editing and refinement
-- Descript: Video recording and editing
-- Canva Pro: Graphics and design
-- Teachable: Course hosting
-- ConvertKit: Email marketing
-- ClickFunnels: Sales funnels
-
-**Timeline:**
-
-Month 1-2: Created first course
-- Used ChatGPT to outline 40-hour curriculum
-- Recorded videos using Descript (AI editing)
-- Created workbooks and templates with AI
-- Invested: 120 hours, $500 in tools
-
-Month 3: First launch
-- Built email list to 847 subscribers (free lead magnets)
-- Launched at $997 early-bird pricing
-- Results: 43 sales = $42,871 revenue
-- Profit after expenses: $41,500
-
-Month 4-6: Evergreen funnel
-- Set up automated webinar funnel
-- Ran Facebook ads to lead magnet
-- Average: 15-20 sales/month = $15K-20K/month
-- Created mini course as frontend offer
-
-Month 7-9: Added membership
-- Launched $97/month membership community
-- Started with 47 founding members
-- Grew to 150 members by month 9
-- Recurring revenue: $14,550/month
-
-Month 10-12: Added coaching tier
-- High-ticket offer: $2,997 for 8-week program
-- Limited to 3-5 students per cohort
-- Runs 1 cohort per month
-- Additional $9K-15K/month
-
-Year 2: Scaled to $70K+/month
-- Membership grew to 215 members
-- Evergreen course: 20-25 sales/month
-- Added sponsored newsletter: $4,800/month
-- Affiliate income from tools: $4K/month
-
-**Key Success Factors:**
-1. Built email list before launching (847 subscribers)
-2. Used AI to create course 5x faster than manual
-3. Launched with beta pricing to get testimonials
-4. Created product ladder (low to high ticket)
-5. Focused on one niche (AI for business owners)
-
-**Lessons Learned:**
-- Don't launch without email list (first attempt: 8 sales)
-- Quality matters - AI draft + human polish = best results
-- Membership provides stable recurring revenue
-- Coaching adds high margins with personal touch
-
-**CASE STUDY #2: The $52K/Month AI Content Agency**
-
-**Business owner:** Emily Rodriguez (former freelance writer)
-**Business model:** AI-powered content agency
-**Time to $10K/month:** 3 months
-**Time to $50K/month:** 9 months
-**Current revenue:** $52,000/month average
-
-**Full Revenue Breakdown (Monthly Average):**
-- Blog content (25 clients × $1,800): $45,000
-- Social media packages (8 clients × $800): $6,400
-- One-time projects: $3,200
-**Total: $54,600/month**
-
-**Expenses Breakdown:**
-- Team (1 PM, 5 VAs): $6,500/month
-- AI tools & subscriptions: $450/month
-- Software (Notion, ClickUp, Slack): $150/month
-- Marketing: $800/month
-**Total expenses: $7,900/month**
-**Net profit: $46,700/month (85.5% margin)**
-
-**Team Structure:**
-- Emily: CEO, sales, strategy (25 hrs/week)
-- Project Manager: Client communication ($2,000/month)
-- Content VA #1-3: Writing/editing ($1,200 each)
-- Social Media VA #1-2: Graphics/scheduling ($800 each)
-
-**Tools & Tech Stack:**
-- ChatGPT Plus: Primary writing tool
-- Claude Pro: Editing and fact-checking
-- Jasper AI: Brand voice templates
-- Grammarly: Final polish
-- SurferSEO: Content optimization
-- Canva Pro: Social graphics
-- ClickUp: Project management
-- Notion: SOPs and documentation
-
-**Timeline:**
-
-Month 1: Solo freelancer
-- Got 3 clients from Upwork at $500-800 each
-- Revenue: $1,900
-- Worked 45 hours/week
-- Used only free ChatGPT
-
-Month 2-3: Raised prices and hired
-- Raised rates to $1,200/client
-- Got 6 total clients
-- Revenue: $7,200
-- Hired first VA ($800/month)
-
-Month 4-6: Built team
-- Raised rates to $1,500-2,000/client
-- Scaled to 15 clients
-- Revenue: $26,000/month
-- Hired PM + 2 more VAs
-- Expenses: $4,200
-
-Month 7-9: Systematized
-- Created SOPs for everything
-- Standardized pricing: $1,800/month packages
-- Scaled to 25 clients
-- Revenue: $45,000/month
-- Team of 6 (including Emily)
-
-Month 10-12: Optimized
-- Switched from hourly to project-based VA pay
-- Improved margins to 85%+
-- Added premium clients at $2,500-3,500/month
-- Revenue: $50K-55K/month
-- Emily works 25 hours/week (strategy + sales only)
-
-**Service Packages:**
-
-**Starter Package ($1,800/month):**
-- 4 blog posts (1,500 words each)
-- SEO optimization
-- 2 revision rounds
-- Delivered via Google Docs
-
-**Growth Package ($2,800/month):**
-- 6 blog posts (1,500-2,000 words)
-- 10 social media posts
-- Email newsletter (weekly)
-- Priority support
-
-**Enterprise Package ($4,500/month):**
-- 8 blog posts (2,000+ words)
-- 20 social media posts
-- 2 email newsletters (weekly)
-- Dedicated account manager
-- Same-day revisions
-
-**Client Acquisition Strategy:**
-- Months 1-3: Upwork (cold applications)
-- Months 4-6: Direct outreach + referrals
-- Months 7+: 70% referrals, 30% inbound (LinkedIn content)
-
-**Key Success Factors:**
-1. Specialized in B2B SaaS content (niche focus)
-2. Hired team early (month 3) to scale
-3. Created repeatable systems and templates
-4. Premium pricing (top 20% of market)
-5. Excellent client retention (avg 11 months)
-
-**Revenue Retention:**
-- Average client lifetime: 11 months
-- Monthly churn: <5%
-- Referral rate: 60% of clients refer at least 1 new client
-
-**CASE STUDY #3: The $42K/Month AI SaaS Founder**
-
-**Business owner:** Tom Williams (developer)
-**Business model:** AI writing tool for real estate agents
-**Time to $10K MRR:** 8 months
-**Time to $40K MRR:** 18 months
-**Current MRR:** $42,400/month
-
-**Full Revenue Breakdown (Monthly):**
-- Basic plan ($47/mo): 520 users = $24,440
-- Pro plan ($97/mo): 145 users = $14,065
-- Enterprise plan ($297/mo): 13 users = $3,861
-**Total: $42,366/month MRR**
-
-**Expenses Breakdown:**
-- OpenAI API costs: $3,200/month
-- AWS hosting: $850/month
-- Stripe fees (3%): $1,271/month
-- Customer support VA: $1,200/month
-- Email/marketing tools: $250/month
-- Development contractor: $2,000/month
-**Total expenses: $8,771/month**
-**Net profit: $33,595/month (79.3% margin)**
-
-**Tools & Tech Stack:**
-- Frontend: Next.js (React framework)
-- Backend: Node.js + Express
-- Database: PostgreSQL (Supabase)
-- AI: OpenAI GPT-4 API
-- Auth: Clerk
-- Payments: Stripe
-- Hosting: Vercel + AWS
-- Email: SendGrid
-- Analytics: Mixpanel
-
-**Product Features:**
-- Property description generator
-- Social media post creator
-- Email templates for leads
-- Listing headline optimizer
-- Neighborhood description writer
-- Open house invitation generator
-
-**Timeline:**
-
-Months 1-3: Development
-- Built MVP with core features
-- Investment: $5,000 (contractor help)
-- Beta testing with 10 real estate agents (free)
-
-Month 4: Beta launch
-- Launched at $39/month beta pricing
-- Got 47 beta users from real estate Facebook groups
-- MRR: $1,833
-- Collected feedback, iterated features
-
-Months 5-7: Product-market fit
-- Improved based on user feedback
-- Raised price to $47/month
-- Added Pro tier at $97/month
-- MRR: $6,200 (Month 7)
-- Users: 110
-
-Months 8-12: Growth phase
-- Launched SEO content strategy
-- Ran Facebook ads to real estate agents
-- Added affiliate program (20% recurring)
-- MRR growth: $6,200 → $18,500
-- Users: 350
-
-Months 13-18: Scale
-- Hired VA for customer support
-- Added Enterprise tier for brokerages
-- Improved features based on usage data
-- MRR: $18,500 → $42,400
-- Users: 678
-
-**User Acquisition Channels:**
-
-**SEO/Content (40% of signups):**
-- Blog posts: "AI tools for real estate agents"
-- Comparison posts vs. ChatGPT
-- Tutorial videos on YouTube
-- Free tier drives organic discovery
-
-**Facebook Ads (35% of signups):**
-- Target: Real estate agents, 25-55
-- Ad spend: $2,500/month
-- CAC: $65
-- LTV: $470 (10-month average retention)
-- LTV:CAC ratio: 7.2:1
-
-**Affiliates (15% of signups):**
-- 47 active affiliates (coaches, educators)
-- 20% recurring commission
-- Cost: $1,800/month in commissions
-
-**Referrals (10% of signups):**
-- Users refer other agents
-- Offer 1 month free for each referral
-
-**Pricing Strategy:**
-- Basic ($47/mo): Individual agents, 500 generations/month
-- Pro ($97/mo): Power users, unlimited generations, priority support
-- Enterprise ($297/mo): Brokerages, team access, white-label option
-
-**Key Success Factors:**
-1. Built for specific niche (real estate agents)
-2. Solved painful problem (writing listings takes 1-2 hours)
-3. Simple, focused product (did one thing very well)
-4. Freemium model for discovery (10 free generations)
-5. Great onboarding (users get value in first 60 seconds)
-
-**Metrics:**
-- Signup → paid conversion: 18%
-- Monthly churn: 8% (average SaaS: 5-7%)
-- Average customer lifetime: 10 months
-- NPS score: 67
-- Daily active users: 380 (56% DAU/MAU ratio)
-
-**CASE STUDY #4: The $38K/Month YouTube Automation Entrepreneur**
-
-**Business owner:** Marcus Thompson (no previous YouTube experience)
-**Business model:** Faceless YouTube channels
-**Time to $10K/month:** 5 months
-**Time to $30K/month:** 11 months
-**Current revenue:** $38,000/month average
-
-**Full Revenue Breakdown (Across 4 Channels):**
-
-**Channel 1: Tech Explained (1.8M subs, 3.2M views/month):**
-- AdSense: $12,800/month ($4 CPM)
-- Sponsorships: $6,000/month (2 videos)
-- Affiliate links: $2,400/month
-**Subtotal: $21,200/month**
-
-**Channel 2: AI News (450K subs, 800K views/month):**
-- AdSense: $4,000/month ($5 CPM, higher niche CPM)
-- Sponsorships: $2,500/month (1 video)
-- Affiliate links: $1,800/month
-**Subtotal: $8,300/month**
-
-**Channel 3: Business Stories (320K subs, 600K views/month):**
-- AdSense: $3,000/month
-- Sponsorships: $2,000/month
-- Affiliate links: $800/month
-**Subtotal: $5,800/month**
-
-**Channel 4: Money Tips (180K subs, 400K views/month):**
-- AdSense: $1,600/month
-- Affiliate links: $1,100/month
-**Subtotal: $2,700/month**
-
-**Total Revenue: $38,000/month**
-
-**Expenses Breakdown:**
-- Video editors (2 VAs): $2,400/month
-- Script writers (2 VAs): $1,600/month
-- Thumbnail designer: $800/month
-- AI tools (ChatGPT, ElevenLabs, Pictory): $120/month
-- Stock footage (Artlist): $30/month
-- VidIQ Pro: $39/month
-**Total expenses: $4,989/month**
-**Net profit: $33,011/month (86.9% margin)**
-
-**Tools & Tech Stack:**
-- ChatGPT Plus: Script writing
-- ElevenLabs: AI voiceovers
-- Pictory: AI video creation
-- CapCut: Final video editing
-- Canva Pro: Thumbnail creation
-- Artlist: Stock footage and music
-- VidIQ: Keyword research and analytics
-- TubeBuddy: SEO optimization
-
-**Content Production Workflow (Per Video):**
-
-1. **Topic research (20 min):**
-   - Use VidIQ to find trending topics
-   - Analyze competitor videos
-   - Identify content gaps
-
-2. **Script writing (30 min):**
-   - ChatGPT prompt: "Write 2,000-word YouTube script about [topic] for [audience]. Include hook, main points, examples, and CTA."
-   - VA edits for flow and engagement
-
-3. **Voiceover (5 min):**
-   - ElevenLabs generates voice from script
-   - Clone voice for channel consistency
-
-4. **Video creation (45 min):**
-   - Pictory creates video from script
-   - Add stock footage from Artlist
-   - Final editing in CapCut
-
-5. **Thumbnail (15 min):**
-   - Canva template customization
-   - A/B test 3 variations
-
-6. **Upload & optimize (15 min):**
-   - Write title (ChatGPT assistance)
-   - Optimize description and tags (VidIQ)
-   - Schedule upload
-
-**Total time per video: 2.5 hours**
-**Videos published: 28/month (7 per channel)**
-**Team time investment: 70 hours/month**
-**Marcus's time: 10 hours/month (strategy only)**
-
-**Timeline:**
-
-Months 1-2: First channel launch
-- Published 60 videos (2/day)
-- Hit monetization (1K subs, 4K watch hours)
-- Revenue: $400/month
-
-Months 3-5: Growth phase
-- Increased to 3 videos/day
-- Hit 100K subs at month 5
-- Revenue: $3,200/month
-- Hired first VA
-
-Months 6-8: Channel 2 launch
-- Applied same formula to AI niche
-- Channel 1 at 300K subs ($8K/month)
-- Channel 2 at 50K subs ($1,500/month)
-- Total: $9,500/month
-
-Months 9-12: Channels 3 & 4
-- Launched 2 more channels
-- Hired team of 5 VAs
-- Combined revenue: $28K/month
-
-Months 13-18: Optimization
-- Got first sponsorships ($2K-6K per video)
-- Optimized for higher CPM niches
-- Added affiliate revenue streams
-- Revenue: $35K-40K/month
-
-**Key Success Factors:**
-1. Consistent publishing (7 videos/week per channel)
-2. Data-driven topic selection (VidIQ trends)
-3. High-CPM niches (tech, AI, business)
-4. Professional production quality (AI + human)
-5. Multiple revenue streams (ads + sponsors + affiliates)
-
-**Channel Performance Metrics:**
-- Average CPM: $3.50-5.00 (niche-dependent)
-- Click-through rate: 8-12%
-- Average view duration: 45-60%
-- Subscriber growth: 15K-25K/month (all channels)
-- Sponsorship rate: $0.03-0.05 per view
-
-**Lessons Learned:**
-- First 100 videos = learning phase (low views okay)
-- Niche selection matters more than production quality
-- Consistency beats perfection
-- Team is essential for multi-channel strategy
-- Sponsorships 2-3x more profitable than AdSense`}</p>
+                        <div className="space-y-4">
+                            <div>
+                                <p><strong className="text-white">Business owner:</strong> Mike Chen (former marketing manager)</p>
+                                <p><strong className="text-white">Business model:</strong> AI courses and info products</p>
+                                <p><strong className="text-white">Time to $10K/month:</strong> 4 months</p>
+                                <p><strong className="text-white">Time to $50K/month:</strong> 11 months</p>
+                                <p><strong className="text-white">Current revenue:</strong> $73,000/month average</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Full Revenue Breakdown (Monthly Average):</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Main course ($997): 22 sales = $21,934</li>
+                                    <li>Mini course ($297): 41 sales = $12,177</li>
+                                    <li>Membership ($97/mo): 215 members = $20,855</li>
+                                    <li>Coaching program ($2,997): 3 spots = $8,991</li>
+                                    <li>Affiliate commissions: $4,200</li>
+                                    <li>Sponsored newsletter: $4,800</li>
+                                </ul>
+                                <p className="mt-2 font-semibold text-green-400">Total: $72,957/month</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Expenses Breakdown:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Email marketing (ConvertKit): $199/month</li>
+                                    <li>Course platform (Teachable): $199/month</li>
+                                    <li>AI tools (ChatGPT Plus, Claude, Jasper): $89/month</li>
+                                    <li>Ads (Facebook, Google): $3,500/month</li>
+                                    <li>VA support (2 VAs): $1,800/month</li>
+                                    <li>Software/tools: $350/month</li>
+                                </ul>
+                                <p className="mt-2"><strong className="text-white">Total expenses:</strong> $6,137/month</p>
+                                <p className="font-semibold text-green-400">Net profit: $66,820/month (91.6% margin)</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Tools & Tech Stack:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>ChatGPT Plus: Course content creation</li>
+                                    <li>Claude Pro: Editing and refinement</li>
+                                    <li>Descript: Video recording and editing</li>
+                                    <li>Canva Pro: Graphics and design</li>
+                                    <li>Teachable: Course hosting</li>
+                                    <li>ConvertKit: Email marketing</li>
+                                    <li>ClickFunnels: Sales funnels</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Timeline:</p>
+                                <div className="space-y-3 ml-2">
+                                    <div>
+                                        <p className="font-semibold text-white">Month 1-2: Created first course</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Used ChatGPT to outline 40-hour curriculum</li>
+                                            <li>Recorded videos using Descript (AI editing)</li>
+                                            <li>Created workbooks and templates with AI</li>
+                                            <li>Invested: 120 hours, $500 in tools</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Month 3: First launch</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Built email list to 847 subscribers (free lead magnets)</li>
+                                            <li>Launched at $997 early-bird pricing</li>
+                                            <li>Results: 43 sales = $42,871 revenue</li>
+                                            <li>Profit after expenses: $41,500</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Month 4-6: Evergreen funnel</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Set up automated webinar funnel</li>
+                                            <li>Ran Facebook ads to lead magnet</li>
+                                            <li>Average: 15-20 sales/month = $15K-20K/month</li>
+                                            <li>Created mini course as frontend offer</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Month 7-9: Added membership</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Launched $97/month membership community</li>
+                                            <li>Started with 47 founding members</li>
+                                            <li>Grew to 150 members by month 9</li>
+                                            <li>Recurring revenue: $14,550/month</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Month 10-12: Added coaching tier</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>High-ticket offer: $2,997 for 8-week program</li>
+                                            <li>Limited to 3-5 students per cohort</li>
+                                            <li>Runs 1 cohort per month</li>
+                                            <li>Additional $9K-15K/month</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Year 2: Scaled to $70K+/month</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Membership grew to 215 members</li>
+                                            <li>Evergreen course: 20-25 sales/month</li>
+                                            <li>Added sponsored newsletter: $4,800/month</li>
+                                            <li>Affiliate income from tools: $4K/month</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Key Success Factors:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>Built email list before launching (847 subscribers)</li>
+                                    <li>Used AI to create course 5x faster than manual</li>
+                                    <li>Launched with beta pricing to get testimonials</li>
+                                    <li>Created product ladder (low to high ticket)</li>
+                                    <li>Focused on one niche (AI for business owners)</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Lessons Learned:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Don't launch without email list (first attempt: 8 sales)</li>
+                                    <li>Quality matters - AI draft + human polish = best results</li>
+                                    <li>Membership provides stable recurring revenue</li>
+                                    <li>Coaching adds high margins with personal touch</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* CASE STUDY #2 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-cyan-500">
+                        <h4 className="text-2xl font-bold text-cyan-400 mb-4">CASE STUDY #2: The $52K/Month AI Content Agency</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <p><strong className="text-white">Business owner:</strong> Emily Rodriguez (former freelance writer)</p>
+                                <p><strong className="text-white">Business model:</strong> AI-powered content agency</p>
+                                <p><strong className="text-white">Time to $10K/month:</strong> 3 months</p>
+                                <p><strong className="text-white">Time to $50K/month:</strong> 9 months</p>
+                                <p><strong className="text-white">Current revenue:</strong> $52,000/month average</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Full Revenue Breakdown (Monthly Average):</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Blog content (25 clients × $1,800): $45,000</li>
+                                    <li>Social media packages (8 clients × $800): $6,400</li>
+                                    <li>One-time projects: $3,200</li>
+                                </ul>
+                                <p className="mt-2 font-semibold text-green-400">Total: $54,600/month</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Expenses Breakdown:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Team (1 PM, 5 VAs): $6,500/month</li>
+                                    <li>AI tools & subscriptions: $450/month</li>
+                                    <li>Software (Notion, ClickUp, Slack): $150/month</li>
+                                    <li>Marketing: $800/month</li>
+                                </ul>
+                                <p className="mt-2"><strong className="text-white">Total expenses:</strong> $7,900/month</p>
+                                <p className="font-semibold text-green-400">Net profit: $46,700/month (85.5% margin)</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Team Structure:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Emily: CEO, sales, strategy (25 hrs/week)</li>
+                                    <li>Project Manager: Client communication ($2,000/month)</li>
+                                    <li>Content VA #1-3: Writing/editing ($1,200 each)</li>
+                                    <li>Social Media VA #1-2: Graphics/scheduling ($800 each)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Tools & Tech Stack:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>ChatGPT Plus: Primary writing tool</li>
+                                    <li>Claude Pro: Editing and fact-checking</li>
+                                    <li>Jasper AI: Brand voice templates</li>
+                                    <li>Grammarly: Final polish</li>
+                                    <li>SurferSEO: Content optimization</li>
+                                    <li>Canva Pro: Social graphics</li>
+                                    <li>ClickUp: Project management</li>
+                                    <li>Notion: SOPs and documentation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Timeline:</p>
+                                <div className="space-y-3 ml-2">
+                                    <div>
+                                        <p className="font-semibold text-white">Month 1: Solo freelancer</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Got 3 clients from Upwork at $500-800 each</li>
+                                            <li>Revenue: $1,900</li>
+                                            <li>Worked 45 hours/week</li>
+                                            <li>Used only free ChatGPT</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Month 2-3: Raised prices and hired</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Raised rates to $1,200/client</li>
+                                            <li>Got 6 total clients</li>
+                                            <li>Revenue: $7,200</li>
+                                            <li>Hired first VA ($800/month)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Month 4-6: Built team</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Raised rates to $1,500-2,000/client</li>
+                                            <li>Scaled to 15 clients</li>
+                                            <li>Revenue: $26,000/month</li>
+                                            <li>Hired PM + 2 more VAs</li>
+                                            <li>Expenses: $4,200</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Month 7-9: Systematized</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Created SOPs for everything</li>
+                                            <li>Standardized pricing: $1,800/month packages</li>
+                                            <li>Scaled to 25 clients</li>
+                                            <li>Revenue: $45,000/month</li>
+                                            <li>Team of 6 (including Emily)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Month 10-12: Optimized</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Switched from hourly to project-based VA pay</li>
+                                            <li>Improved margins to 85%+</li>
+                                            <li>Added premium clients at $2,500-3,500/month</li>
+                                            <li>Revenue: $50K-55K/month</li>
+                                            <li>Emily works 25 hours/week (strategy + sales only)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Service Packages:</p>
+                                <div className="space-y-3 ml-2">
+                                    <div>
+                                        <p className="font-semibold text-white">Starter Package ($1,800/month):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>4 blog posts (1,500 words each)</li>
+                                            <li>SEO optimization</li>
+                                            <li>2 revision rounds</li>
+                                            <li>Delivered via Google Docs</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Growth Package ($2,800/month):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>6 blog posts (1,500-2,000 words)</li>
+                                            <li>10 social media posts</li>
+                                            <li>Email newsletter (weekly)</li>
+                                            <li>Priority support</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Enterprise Package ($4,500/month):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>8 blog posts (2,000+ words)</li>
+                                            <li>20 social media posts</li>
+                                            <li>2 email newsletters (weekly)</li>
+                                            <li>Dedicated account manager</li>
+                                            <li>Same-day revisions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Client Acquisition Strategy:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Months 1-3: Upwork (cold applications)</li>
+                                    <li>Months 4-6: Direct outreach + referrals</li>
+                                    <li>Months 7+: 70% referrals, 30% inbound (LinkedIn content)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Key Success Factors:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>Specialized in B2B SaaS content (niche focus)</li>
+                                    <li>Hired team early (month 3) to scale</li>
+                                    <li>Created repeatable systems and templates</li>
+                                    <li>Premium pricing (top 20% of market)</li>
+                                    <li>Excellent client retention (avg 11 months)</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Revenue Retention:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Average client lifetime: 11 months</li>
+                                    <li>Monthly churn: {'<'}5%</li>
+                                    <li>Referral rate: 60% of clients refer at least 1 new client</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* CASE STUDY #3 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-cyan-500">
+                        <h4 className="text-2xl font-bold text-cyan-400 mb-4">CASE STUDY #3: The $42K/Month AI SaaS Founder</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <p><strong className="text-white">Business owner:</strong> Tom Williams (developer)</p>
+                                <p><strong className="text-white">Business model:</strong> AI writing tool for real estate agents</p>
+                                <p><strong className="text-white">Time to $10K MRR:</strong> 8 months</p>
+                                <p><strong className="text-white">Time to $40K MRR:</strong> 18 months</p>
+                                <p><strong className="text-white">Current MRR:</strong> $42,400/month</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Full Revenue Breakdown (Monthly):</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Basic plan ($47/mo): 520 users = $24,440</li>
+                                    <li>Pro plan ($97/mo): 145 users = $14,065</li>
+                                    <li>Enterprise plan ($297/mo): 13 users = $3,861</li>
+                                </ul>
+                                <p className="mt-2 font-semibold text-green-400">Total: $42,366/month MRR</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Expenses Breakdown:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>OpenAI API costs: $3,200/month</li>
+                                    <li>AWS hosting: $850/month</li>
+                                    <li>Stripe fees (3%): $1,271/month</li>
+                                    <li>Customer support VA: $1,200/month</li>
+                                    <li>Email/marketing tools: $250/month</li>
+                                    <li>Development contractor: $2,000/month</li>
+                                </ul>
+                                <p className="mt-2"><strong className="text-white">Total expenses:</strong> $8,771/month</p>
+                                <p className="font-semibold text-green-400">Net profit: $33,595/month (79.3% margin)</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Tools & Tech Stack:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Frontend: Next.js (React framework)</li>
+                                    <li>Backend: Node.js + Express</li>
+                                    <li>Database: PostgreSQL (Supabase)</li>
+                                    <li>AI: OpenAI GPT-4 API</li>
+                                    <li>Auth: Clerk</li>
+                                    <li>Payments: Stripe</li>
+                                    <li>Hosting: Vercel + AWS</li>
+                                    <li>Email: SendGrid</li>
+                                    <li>Analytics: Mixpanel</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Product Features:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Property description generator</li>
+                                    <li>Social media post creator</li>
+                                    <li>Email templates for leads</li>
+                                    <li>Listing headline optimizer</li>
+                                    <li>Neighborhood description writer</li>
+                                    <li>Open house invitation generator</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Timeline:</p>
+                                <div className="space-y-3 ml-2">
+                                    <div>
+                                        <p className="font-semibold text-white">Months 1-3: Development</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Built MVP with core features</li>
+                                            <li>Investment: $5,000 (contractor help)</li>
+                                            <li>Beta testing with 10 real estate agents (free)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Month 4: Beta launch</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Launched at $39/month beta pricing</li>
+                                            <li>Got 47 beta users from real estate Facebook groups</li>
+                                            <li>MRR: $1,833</li>
+                                            <li>Collected feedback, iterated features</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Months 5-7: Product-market fit</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Improved based on user feedback</li>
+                                            <li>Raised price to $47/month</li>
+                                            <li>Added Pro tier at $97/month</li>
+                                            <li>MRR: $6,200 (Month 7)</li>
+                                            <li>Users: 110</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Months 8-12: Growth phase</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Launched SEO content strategy</li>
+                                            <li>Ran Facebook ads to real estate agents</li>
+                                            <li>Added affiliate program (20% recurring)</li>
+                                            <li>MRR growth: $6,200 → $18,500</li>
+                                            <li>Users: 350</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Months 13-18: Scale</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Hired VA for customer support</li>
+                                            <li>Added Enterprise tier for brokerages</li>
+                                            <li>Improved features based on usage data</li>
+                                            <li>MRR: $18,500 → $42,400</li>
+                                            <li>Users: 678</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">User Acquisition Channels:</p>
+                                <div className="space-y-3 ml-2">
+                                    <div>
+                                        <p className="font-semibold text-white">SEO/Content (40% of signups):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Blog posts: "AI tools for real estate agents"</li>
+                                            <li>Comparison posts vs. ChatGPT</li>
+                                            <li>Tutorial videos on YouTube</li>
+                                            <li>Free tier drives organic discovery</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Facebook Ads (35% of signups):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Target: Real estate agents, 25-55</li>
+                                            <li>Ad spend: $2,500/month</li>
+                                            <li>CAC: $65</li>
+                                            <li>LTV: $470 (10-month average retention)</li>
+                                            <li>LTV:CAC ratio: 7.2:1</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Affiliates (15% of signups):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>47 active affiliates (coaches, educators)</li>
+                                            <li>20% recurring commission</li>
+                                            <li>Cost: $1,800/month in commissions</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Referrals (10% of signups):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Users refer other agents</li>
+                                            <li>Offer 1 month free for each referral</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Pricing Strategy:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Basic ($47/mo): Individual agents, 500 generations/month</li>
+                                    <li>Pro ($97/mo): Power users, unlimited generations, priority support</li>
+                                    <li>Enterprise ($297/mo): Brokerages, team access, white-label option</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Key Success Factors:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>Built for specific niche (real estate agents)</li>
+                                    <li>Solved painful problem (writing listings takes 1-2 hours)</li>
+                                    <li>Simple, focused product (did one thing very well)</li>
+                                    <li>Freemium model for discovery (10 free generations)</li>
+                                    <li>Great onboarding (users get value in first 60 seconds)</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Metrics:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Signup → paid conversion: 18%</li>
+                                    <li>Monthly churn: 8% (average SaaS: 5-7%)</li>
+                                    <li>Average customer lifetime: 10 months</li>
+                                    <li>NPS score: 67</li>
+                                    <li>Daily active users: 380 (56% DAU/MAU ratio)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* CASE STUDY #4 */}
+                    <div className="bg-zinc-900/50 rounded-lg p-6 border-l-4 border-cyan-500">
+                        <h4 className="text-2xl font-bold text-cyan-400 mb-4">CASE STUDY #4: The $38K/Month YouTube Automation Entrepreneur</h4>
+                        <div className="space-y-4">
+                            <div>
+                                <p><strong className="text-white">Business owner:</strong> Marcus Thompson (no previous YouTube experience)</p>
+                                <p><strong className="text-white">Business model:</strong> Faceless YouTube channels</p>
+                                <p><strong className="text-white">Time to $10K/month:</strong> 5 months</p>
+                                <p><strong className="text-white">Time to $30K/month:</strong> 11 months</p>
+                                <p><strong className="text-white">Current revenue:</strong> $38,000/month average</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Full Revenue Breakdown (Across 4 Channels):</p>
+                                <div className="space-y-3 ml-2">
+                                    <div>
+                                        <p className="font-semibold text-white">Channel 1: Tech Explained (1.8M subs, 3.2M views/month):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>AdSense: $12,800/month ($4 CPM)</li>
+                                            <li>Sponsorships: $6,000/month (2 videos)</li>
+                                            <li>Affiliate links: $2,400/month</li>
+                                        </ul>
+                                        <p className="mt-1 font-semibold text-green-400">Subtotal: $21,200/month</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Channel 2: AI News (450K subs, 800K views/month):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>AdSense: $4,000/month ($5 CPM, higher niche CPM)</li>
+                                            <li>Sponsorships: $2,500/month (1 video)</li>
+                                            <li>Affiliate links: $1,800/month</li>
+                                        </ul>
+                                        <p className="mt-1 font-semibold text-green-400">Subtotal: $8,300/month</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Channel 3: Business Stories (320K subs, 600K views/month):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>AdSense: $3,000/month</li>
+                                            <li>Sponsorships: $2,000/month</li>
+                                            <li>Affiliate links: $800/month</li>
+                                        </ul>
+                                        <p className="mt-1 font-semibold text-green-400">Subtotal: $5,800/month</p>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Channel 4: Money Tips (180K subs, 400K views/month):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>AdSense: $1,600/month</li>
+                                            <li>Affiliate links: $1,100/month</li>
+                                        </ul>
+                                        <p className="mt-1 font-semibold text-green-400">Subtotal: $2,700/month</p>
+                                    </div>
+                                </div>
+                                <p className="mt-3 font-semibold text-green-400 text-lg">Total Revenue: $38,000/month</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Expenses Breakdown:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Video editors (2 VAs): $2,400/month</li>
+                                    <li>Script writers (2 VAs): $1,600/month</li>
+                                    <li>Thumbnail designer: $800/month</li>
+                                    <li>AI tools (ChatGPT, ElevenLabs, Pictory): $120/month</li>
+                                    <li>Stock footage (Artlist): $30/month</li>
+                                    <li>VidIQ Pro: $39/month</li>
+                                </ul>
+                                <p className="mt-2"><strong className="text-white">Total expenses:</strong> $4,989/month</p>
+                                <p className="font-semibold text-green-400">Net profit: $33,011/month (86.9% margin)</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Tools & Tech Stack:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>ChatGPT Plus: Script writing</li>
+                                    <li>ElevenLabs: AI voiceovers</li>
+                                    <li>Pictory: AI video creation</li>
+                                    <li>CapCut: Final video editing</li>
+                                    <li>Canva Pro: Thumbnail creation</li>
+                                    <li>Artlist: Stock footage and music</li>
+                                    <li>VidIQ: Keyword research and analytics</li>
+                                    <li>TubeBuddy: SEO optimization</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Content Production Workflow (Per Video):</p>
+                                <ol className="list-decimal list-inside space-y-2 ml-2">
+                                    <li>
+                                        <p className="font-semibold text-white">Topic research (20 min):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-4">
+                                            <li>Use VidIQ to find trending topics</li>
+                                            <li>Analyze competitor videos</li>
+                                            <li>Identify content gaps</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p className="font-semibold text-white">Script writing (30 min):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-4">
+                                            <li>ChatGPT prompt: "Write 2,000-word YouTube script about [topic] for [audience]. Include hook, main points, examples, and CTA."</li>
+                                            <li>VA edits for flow and engagement</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p className="font-semibold text-white">Voiceover (5 min):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-4">
+                                            <li>ElevenLabs generates voice from script</li>
+                                            <li>Clone voice for channel consistency</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p className="font-semibold text-white">Video creation (45 min):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-4">
+                                            <li>Pictory creates video from script</li>
+                                            <li>Add stock footage from Artlist</li>
+                                            <li>Final editing in CapCut</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p className="font-semibold text-white">Thumbnail (15 min):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-4">
+                                            <li>Canva template customization</li>
+                                            <li>A/B test 3 variations</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p className="font-semibold text-white">Upload & optimize (15 min):</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-4">
+                                            <li>Write title (ChatGPT assistance)</li>
+                                            <li>Optimize description and tags (VidIQ)</li>
+                                            <li>Schedule upload</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <div className="mt-3 ml-2">
+                                    <p><strong className="text-white">Total time per video:</strong> 2.5 hours</p>
+                                    <p><strong className="text-white">Videos published:</strong> 28/month (7 per channel)</p>
+                                    <p><strong className="text-white">Team time investment:</strong> 70 hours/month</p>
+                                    <p><strong className="text-white">Marcus's time:</strong> 10 hours/month (strategy only)</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Timeline:</p>
+                                <div className="space-y-3 ml-2">
+                                    <div>
+                                        <p className="font-semibold text-white">Months 1-2: First channel launch</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Published 60 videos (2/day)</li>
+                                            <li>Hit monetization (1K subs, 4K watch hours)</li>
+                                            <li>Revenue: $400/month</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Months 3-5: Growth phase</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Increased to 3 videos/day</li>
+                                            <li>Hit 100K subs at month 5</li>
+                                            <li>Revenue: $3,200/month</li>
+                                            <li>Hired first VA</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Months 6-8: Channel 2 launch</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Applied same formula to AI niche</li>
+                                            <li>Channel 1 at 300K subs ($8K/month)</li>
+                                            <li>Channel 2 at 50K subs ($1,500/month)</li>
+                                            <li>Total: $9,500/month</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Months 9-12: Channels 3 & 4</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Launched 2 more channels</li>
+                                            <li>Hired team of 5 VAs</li>
+                                            <li>Combined revenue: $28K/month</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-white">Months 13-18: Optimization</p>
+                                        <ul className="list-disc list-inside space-y-1 ml-2">
+                                            <li>Got first sponsorships ($2K-6K per video)</li>
+                                            <li>Optimized for higher CPM niches</li>
+                                            <li>Added affiliate revenue streams</li>
+                                            <li>Revenue: $35K-40K/month</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Key Success Factors:</p>
+                                <ol className="list-decimal list-inside space-y-1 ml-2">
+                                    <li>Consistent publishing (7 videos/week per channel)</li>
+                                    <li>Data-driven topic selection (VidIQ trends)</li>
+                                    <li>High-CPM niches (tech, AI, business)</li>
+                                    <li>Professional production quality (AI + human)</li>
+                                    <li>Multiple revenue streams (ads + sponsors + affiliates)</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Channel Performance Metrics:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>Average CPM: $3.50-5.00 (niche-dependent)</li>
+                                    <li>Click-through rate: 8-12%</li>
+                                    <li>Average view duration: 45-60%</li>
+                                    <li>Subscriber growth: 15K-25K/month (all channels)</li>
+                                    <li>Sponsorship rate: $0.03-0.05 per view</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-semibold text-white mb-2">Lessons Learned:</p>
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                    <li>First 100 videos = learning phase (low views okay)</li>
+                                    <li>Niche selection matters more than production quality</li>
+                                    <li>Consistency beats perfection</li>
+                                    <li>Team is essential for multi-channel strategy</li>
+                                    <li>Sponsorships 2-3x more profitable than AdSense</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
