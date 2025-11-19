@@ -5632,91 +5632,149 @@ Just a simple referral relationship - no complicated agreements needed. What do 
             <div className="bg-zinc-800 rounded-xl p-6">
               <h3 className="text-2xl font-bold text-purple-400 mb-4">How do I maintain authenticity while growing my brand?</h3>
               <div className="text-gray-300 space-y-4">
-                <p className="leading-relaxed">{`**Authenticity is your competitive moat in an AI-saturated world.** After interviewing 100+ successful creators about staying authentic while scaling, here's the complete framework:
+                <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mb-6">
+                  <p className="text-gray-300"><strong className="text-white">Authenticity is your competitive moat in an AI-saturated world.</strong> After interviewing 100+ successful creators about staying authentic while scaling, here's the complete framework:</p>
+                </div>
 
-**The Authenticity Paradox**
+                {/* The Authenticity Paradox */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-purple-400 mb-4">The Authenticity Paradox</h4>
+                  
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-purple-300 mb-3">The tension:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• More followers = more pressure to perform</li>
+                      <li>• More revenue = temptation to sell out</li>
+                      <li>• More visibility = more judgment</li>
+                      <li>• More success = more imposter syndrome</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-green-300 mb-3">The solution:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Authenticity isn't "saying everything"</li>
+                      <li>• It's "being truthful in what you share"</li>
+                      <li>• Strategic vulnerability, not oversharing</li>
+                      <li>• Consistent values, evolving content</li>
+                    </ul>
+                  </div>
+                </div>
 
-**The tension**:
-- More followers = more pressure to perform
-- More revenue = temptation to sell out
-- More visibility = more judgment
-- More success = more imposter syndrome
+                {/* The Authenticity Framework */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 border border-blue-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-blue-400 mb-4">The Authenticity Framework</h4>
+                  
+                  {/* Pillar 1: Know Your Non-Negotiables */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Pillar 1: Know Your Non-Negotiables</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">What are your core values?</h6>
+                      
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-blue-300 mb-2">Exercise: List 3-5 values you won't compromise:</h6>
+                        <p className="text-gray-300 text-xs mb-2">Example (Creator in business space):</p>
+                        <ol className="list-decimal list-inside space-y-1 text-gray-300 text-xs ml-2">
+                          <li>Honest income claims (no fake screenshots)</li>
+                          <li>No selling products I don't believe in</li>
+                          <li>No pretending to be richer than I am</li>
+                          <li>No attacking competitors</li>
+                          <li>Family time is protected</li>
+                        </ol>
+                      </div>
+                      
+                      <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Your non-negotiables become:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Filter for opportunities (say no to misaligned deals)</li>
+                          <li>• Content boundaries (what you will/won't talk about)</li>
+                          <li>• Business decisions (what offers you create)</li>
+                          <li>• Partnership criteria (who you work with)</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-yellow-300 mb-2">Real example:</h6>
+                        <p className="text-gray-300 text-xs mb-1">Creator offered <strong className="text-white">$50K</strong> sponsorship deal:</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Product didn't align with values</li>
+                          <li>• Would have to fake enthusiasm</li>
+                          <li>• Would erode audience trust</li>
+                          <li>• Said no despite needing money</li>
+                          <li>• Three months later: Better aligned deal for <strong className="text-white">$40K</strong></li>
+                          <li>• Audience engagement stayed strong</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
-**The solution**:
-- Authenticity isn't "saying everything"
-- It's "being truthful in what you share"
-- Strategic vulnerability, not oversharing
-- Consistent values, evolving content
-
-**The Authenticity Framework**
-
-**Pillar 1: Know Your Non-Negotiables**
-
-**What are your core values?**
-
-**Exercise**: List 3-5 values you won't compromise:
-
-Example (Creator in business space):
-1. Honest income claims (no fake screenshots)
-2. No selling products I don't believe in
-3. No pretending to be richer than I am
-4. No attacking competitors
-5. Family time is protected
-
-**Your non-negotiables become**:
-- Filter for opportunities (say no to misaligned deals)
-- Content boundaries (what you will/won't talk about)
-- Business decisions (what offers you create)
-- Partnership criteria (who you work with)
-
-**Real example**:
-Creator offered $50K sponsorship deal:
-- Product didn't align with values
-- Would have to fake enthusiasm
-- Would erode audience trust
-- Said no despite needing money
-- Three months later: Better aligned deal for $40K
-- Audience engagement stayed strong
-
-**Pillar 2: The Vulnerability Spectrum**
-
-**Not all vulnerability is equal**:
-
-**Under-sharing** (inauthentic):
-- Only highlight reel
-- No struggles shown
-- Fake perfection
-- Result: Unrelatable
-
-**Over-sharing** (unprofessional):
-- Every personal detail
-- Trauma dumping
-- Complaining constantly
-- Result: Uncomfortable audience
-
-**Strategic vulnerability** (authentic):
-- Relevant struggles
-- Resolved challenges
-- Lessons learned
-- Result: Relatable + valuable
-
-**The Vulnerability Formula**:
-
-**Share when**:
-1. There's a lesson or insight
-2. It's relevant to your audience's journey
-3. You've processed it (not raw emotion)
-4. It serves their transformation
-
-**Don't share when**:
-1. Just venting
-2. Involves others without permission
-3. You're not ready to discuss
-4. It doesn't serve your audience
-
-**Example post** (strategic vulnerability):
-
-"Two years ago I had $847 in my bank account and a failed business.
+                  {/* Pillar 2: The Vulnerability Spectrum */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Pillar 2: The Vulnerability Spectrum</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">Not all vulnerability is equal:</h6>
+                      
+                      <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-red-300 mb-2">Under-sharing (inauthentic):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Only highlight reel</li>
+                          <li>• No struggles shown</li>
+                          <li>• Fake perfection</li>
+                          <li>• Result: Unrelatable</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-red-300 mb-2">Over-sharing (unprofessional):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Every personal detail</li>
+                          <li>• Trauma dumping</li>
+                          <li>• Complaining constantly</li>
+                          <li>• Result: Uncomfortable audience</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Strategic vulnerability (authentic):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Relevant struggles</li>
+                          <li>• Resolved challenges</li>
+                          <li>• Lessons learned</li>
+                          <li>• Result: Relatable + valuable</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-3">The Vulnerability Formula:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Share when:</h6>
+                        <ol className="list-decimal list-inside space-y-1 text-gray-300 text-xs ml-2">
+                          <li>There's a lesson or insight</li>
+                          <li>It's relevant to your audience's journey</li>
+                          <li>You've processed it (not raw emotion)</li>
+                          <li>It serves their transformation</li>
+                        </ol>
+                      </div>
+                      
+                      <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-red-300 mb-2">Don't share when:</h6>
+                        <ol className="list-decimal list-inside space-y-1 text-gray-300 text-xs ml-2">
+                          <li>Just venting</li>
+                          <li>Involves others without permission</li>
+                          <li>You're not ready to discuss</li>
+                          <li>It doesn't serve your audience</li>
+                        </ol>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-2">Example post (strategic vulnerability):</h6>
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded-lg p-3">
+                        <p className="text-gray-300 text-xs italic whitespace-pre-line">"Two years ago I had $847 in my bank account and a failed business.
 
 Today I crossed $50K/month.
 
@@ -5726,319 +5784,548 @@ What changed?
 
 The hardest part wasn't the tactics - it was believing I deserved success.
 
-If you're struggling right now, you're one decision away from your breakthrough."
+If you're struggling right now, you're one decision away from your breakthrough."</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">Why it works:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Relatable starting point</li>
+                        <li>• Proof of transformation</li>
+                        <li>• Specific value (strategies)</li>
+                        <li>• Emotional connection</li>
+                        <li>• Encouragement</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-red-300 mb-2">What to avoid:</h6>
+                      <div className="bg-red-800/20 border border-red-400/30 rounded-lg p-3 mb-2">
+                        <p className="text-gray-300 text-xs italic">"I'm so broke, everything sucks, I hate my life, nothing works"</p>
+                      </div>
+                      <p className="text-gray-300 text-xs">(Venting, no value, no lesson)</p>
+                    </div>
+                  </div>
 
-**Why it works**:
-- Relatable starting point
-- Proof of transformation
-- Specific value (strategies)
-- Emotional connection
-- Encouragement
-
-**What to avoid**:
-
-"I'm so broke, everything sucks, I hate my life, nothing works"
-(Venting, no value, no lesson)
-
-**Pillar 3: Share the Journey, Not Just the Destination**
-
-**What most do** (highlight reel):
-- "I made $100K!"
-- "Hit 50K followers!"
-- "Launched my course!"
-
-**What builds authenticity** (the journey):
-- "Here's week 1-12 of my $100K journey"
-- "The 17 failed attempts before 50K followers"
-- "My course bombed (here's what I learned)"
-
-**Building in public framework**:
-
-**Weekly transparency share**:
-
-**Template**:
-"Weekly update:
+                  {/* Pillar 3: Share the Journey, Not Just the Destination */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Pillar 3: Share the Journey, Not Just the Destination</h5>
+                    
+                    <div className="mb-3">
+                      <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-red-300 mb-2">What most do (highlight reel):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• "I made $100K!"</li>
+                          <li>• "Hit 50K followers!"</li>
+                          <li>• "Launched my course!"</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">What builds authenticity (the journey):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• "Here's week <strong className="text-white">1-12</strong> of my $100K journey"</li>
+                          <li>• "The <strong className="text-white">17</strong> failed attempts before 50K followers"</li>
+                          <li>• "My course bombed (here's what I learned)"</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-3">Building in public framework:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Weekly transparency share:</h6>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                          <h6 className="text-xs font-semibold text-blue-300 mb-2">Template:</h6>
+                          <p className="text-gray-300 text-xs italic whitespace-pre-line">"Weekly update:
 ✅ What worked: [specific win]
 ❌ What flopped: [specific failure]
 📊 Numbers: [real metrics]
 🧠 Lesson: [what you learned]
-🎯 Next week: [what you're trying]"
+🎯 Next week: [what you're trying]"</p>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-blue-300 mb-2">Real example:</h6>
+                        <div className="bg-blue-800/20 border border-blue-400/30 rounded-lg p-3">
+                          <p className="text-gray-300 text-xs italic whitespace-pre-line">"Week 23 of building in public:
 
-**Real example**:
+✅ What worked: LinkedIn carousel got <strong className="text-white">47K</strong> views (tested new hook format)
 
-"Week 23 of building in public:
-
-✅ What worked: LinkedIn carousel got 47K views (tested new hook format)
-
-❌ What flopped: Product launch did $3,200 (goal was $10K)
+❌ What flopped: Product launch did <strong className="text-white">$3,200</strong> (goal was <strong className="text-white">$10K</strong>)
 
 📊 Numbers:
-- Followers: 8,247 (+412)
-- Email list: 1,843 (+67)
-- Revenue: $3,200 ($2,800 from course, $400 affiliates)
-
-🧠 Lesson: Small audience can buy, but I didn't warm them up enough. Need 2-week pre-launch sequence next time.
-
-🎯 Next week: Creating better launch sequence for next attempt"
-
-**Why this works**:
-- Transparent (real numbers)
-- Vulnerable (admitted failure)
-- Educational (lesson shared)
-- Relatable (still building)
-- Inspiring (consistent progress)
-
-**Pillar 4: The Personal/Professional Balance**
-
-**What to share**:
-
-**Professional** (70%):
-- Your expertise
-- Industry insights
-- Strategies and tactics
-- Case studies
-- Lessons learned
-
-**Personal** (25%):
-- Behind-the-scenes
-- Personal growth moments
-- Relevant life stories
-- Values and beliefs
-- Hobbies that relate to your brand
-
-**Private** (5%):
-- Family (with permission)
-- Sensitive topics (when ready)
-- Controversial opinions (calculated risk)
-
-**Boundaries to set**:
-
-**What I share**:
-- My business journey
-- Marketing strategies
-- Personal productivity
-- Entrepreneurship challenges
-
-**What I don't share**:
-- My kids' faces
-- My exact location
-- My partner's private details
-- Family conflicts
-
-**Pillar 5: Evolving Without Losing Your Core**
-
-**The challenge**:
-- You grow and change
-- Your interests evolve
-- Your audience expects consistency
-- How do you evolve authentically?
-
-**The solution**: Core stays, wrapper evolves
-
-**Your core** (never changes):
-- Values
-- Mission
-- Who you serve
-- Why you do it
-
-**Your wrapper** (can evolve):
-- Topics you cover
-- Platforms you use
-- Products you offer
-- Content format
-
-**Example evolution**:
-
-**Year 1**: "I teach Twitter growth"
-**Year 2**: "I teach social media growth"
-**Year 3**: "I teach creator businesses"
-**Year 4**: "I teach entrepreneurship"
-
-**Core stayed same**: Helping creators build income
-**Wrapper evolved**: Broadened expertise
-
-**How to evolve without audience whiplash**:
-
-**Step 1: Signal change**:
-"I've been thinking a lot about [new topic]. Might start exploring this more. What do you think?"
-
-**Step 2: Test gradually**:
-- 10% of content on new topic
-- Track engagement
-- Gauge interest
-
-**Step 3: Explain evolution**:
-"When I started, I focused on [original]. As I've grown, I realized [broader topic] is the real transformation. Here's why..."
-
-**Step 4: Bridge old and new**:
-"Everything I taught you about [original topic] applies to [new topic]. Let me show you..."
-
-**Pillar 6: Dealing with Success Without Becoming Unrelatable**
-
-**The trap**:
-- You start: Broke, struggling, relatable
-- You succeed: Wealthy, thriving, unrelatable?
-
-**How to stay grounded**:
-
-**1. Remember your origin story**:
-- Regular posts about your journey
-- Share how far you've come
-- Don't pretend you didn't struggle
-
-**2. Stay in the trenches**:
-- Still doing the work
-- Testing new strategies
-- Building new things
-- Sharing experiments
-
-**3. Celebrate wins humbly**:
-- ❌ "I made $100K easy, you can too!"
-- ✅ "After 3 years of work, I hit $100K. Here's exactly what worked..."
-
-**4. Acknowledge privilege**:
-- "I had advantages: [list them]"
-- "This won't work for everyone because [reality]"
-- "Here's how to adapt this if you don't have [resource]"
-
-**5. Create new "underdogs"**:
-- Start new challenges
-- Learn publicly in new areas
-- Stay hungry
-
-**Real example**:
-- Gary Vaynerchuk: Worth $200M
-- Still posts: Daily vlogs, hustle content
-- Stays relatable: "I'm still grinding"
-- Maintains authenticity: Started from immigrant family, never forgets
-
-**Pillar 7: Saying No to Misaligned Opportunities**
-
-**When you're small**:
-- Few opportunities
-- Easy to stay aligned
-- No temptation to sell out
-
-**When you grow**:
-- Many opportunities
-- Money is tempting
-- Easy to compromise
-
-**The filter**:
-
-**Before saying yes to anything, ask**:
-1. Does this align with my values?
-2. Would I recommend this to my best friend?
-3. Will my audience benefit or just me?
-4. Can I promote this authentically?
-5. Will I regret this in 5 years?
-
-**If any answer is no → say no**
-
-**Real examples of saying no**:
-
-**Example 1**: Cryptocurrency sponsor
-- Offer: $30K for promotion
-- Concern: Don't believe in that specific crypto
-- Decision: No
-- Result: Trust maintained, better deals came later
-
-**Example 2**: MLM partnership
-- Offer: $20K + commission
-- Concern: Don't support MLM model
-- Decision: No
-- Result: Audience respected integrity
-
-**Example 3**: Misleading product claim
-- Offer: $50K for "results guaranteed" claim
-- Concern: Results aren't guaranteed
-- Decision: No (or negotiated different language)
-- Result: Kept authenticity
-
-**How to say no gracefully**:
-
-"Thanks for thinking of me! This isn't the right fit for my audience right now, but I appreciate the offer. Let me know if you have other opportunities that might align better."
-
-**Pillar 8: Community as Your Compass**
-
-**Your audience knows when you're off**:
-
-**Authenticity check-ins**:
-
-**Monthly**: Ask your community:
-- "What content has been most valuable?"
-- "What do you want to see more/less of?"
-- "How can I serve you better?"
-
-**Quarterly**: Deep dive:
-- Survey top 100 engaged followers
-- 10 one-on-one calls
-- What are they really struggling with?
-- Are you still serving them?
-
-**Annually**: Reflection:
-- Review your content from the year
-- Does it align with your values?
-- Are you proud of what you created?
-- What needs to change?
-
-**Red flags you're losing authenticity**:
-
-1. Dreading content creation
-2. Avoiding specific topics because of sponsors
-3. Creating for algorithm, not audience
-4. Can't remember why you started
-5. Success feels empty
-
-**If you notice these**:
-- Take a break
-- Reconnect with your why
-- Audit your commitments
-- Cut misaligned partnerships
-- Return to core values
-
-**The Authenticity Action Plan**
-
-**This week**:
-1. Define your 3-5 core values
-2. Audit recent content against values
-3. Identify one misaligned commitment to end
-
-**This month**:
-1. Share one strategic vulnerability
-2. Post one "building in public" update
-3. Survey your audience
-
-**This quarter**:
-1. Review all partnerships/sponsors
-2. Say no to one misaligned opportunity
-3. Recommit to your core mission
-
-**This year**:
-1. Annual authenticity audit
-2. Realign strategy with values
-3. Plan evolution (if needed)
-
-**The Authenticity ROI**
-
-**Short-term** (feels hard):
-- Say no to easy money
-- Share uncomfortable truths
-- Slower growth
-
-**Long-term** (worth it):
-- Deeper audience connection
-- Higher trust = higher conversion
-- Sustainable business
-- No regrets
-- Attract dream opportunities
-
-**Real data**:
-- Authentic creators: 5-8% conversion rates
-- Inauthentic creators: 1-2% conversion rates
-- Same audience size, 3-4x revenue difference
-
-**Bottom line**: Authenticity isn't about sharing everything or being perfect. It's about staying true to your values while providing value to your audience. Your authenticity is your moat in a world of AI-generated content and polished personas.`}</p>
+- Followers: <strong className="text-white">8,247</strong> (+412)
+- Email list: <strong className="text-white">1,843</strong> (+67)
+- Revenue: <strong className="text-white">$3,200</strong> ($2,800 from course, $400 affiliates)
+
+🧠 Lesson: Small audience can buy, but I didn't warm them up enough. Need <strong className="text-white">2-week</strong> pre-launch sequence next time.
+
+🎯 Next week: Creating better launch sequence for next attempt"</p>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Why this works:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Transparent (real numbers)</li>
+                          <li>• Vulnerable (admitted failure)</li>
+                          <li>• Educational (lesson shared)</li>
+                          <li>• Relatable (still building)</li>
+                          <li>• Inspiring (consistent progress)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Pillar 4: The Personal/Professional Balance */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Pillar 4: The Personal/Professional Balance</h5>
+                    
+                    <div className="mb-3">
+                      <h6 className="text-sm font-semibold text-white mb-2">What to share:</h6>
+                      
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-blue-300 mb-2">Professional (70%):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Your expertise</li>
+                          <li>• Industry insights</li>
+                          <li>• Strategies and tactics</li>
+                          <li>• Case studies</li>
+                          <li>• Lessons learned</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-blue-300 mb-2">Personal (25%):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Behind-the-scenes</li>
+                          <li>• Personal growth moments</li>
+                          <li>• Relevant life stories</li>
+                          <li>• Values and beliefs</li>
+                          <li>• Hobbies that relate to your brand</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-blue-300 mb-2">Private (5%):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Family (with permission)</li>
+                          <li>• Sensitive topics (when ready)</li>
+                          <li>• Controversial opinions (calculated risk)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-green-300 mb-3">Boundaries to set:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">What I share:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• My business journey</li>
+                          <li>• Marketing strategies</li>
+                          <li>• Personal productivity</li>
+                          <li>• Entrepreneurship challenges</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-red-300 mb-2">What I don't share:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• My kids' faces</li>
+                          <li>• My exact location</li>
+                          <li>• My partner's private details</li>
+                          <li>• Family conflicts</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Pillar 5: Evolving Without Losing Your Core */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Pillar 5: Evolving Without Losing Your Core</h5>
+                    
+                    <div className="bg-blue-800/20 border border-blue-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-xs font-semibold text-blue-300 mb-2">The challenge:</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• You grow and change</li>
+                        <li>• Your interests evolve</li>
+                        <li>• Your audience expects consistency</li>
+                        <li>• How do you evolve authentically?</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-xs font-semibold text-green-300 mb-2">The solution: Core stays, wrapper evolves</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Your core (never changes):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Values</li>
+                          <li>• Mission</li>
+                          <li>• Who you serve</li>
+                          <li>• Why you do it</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Your wrapper (can evolve):</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Topics you cover</li>
+                          <li>• Platforms you use</li>
+                          <li>• Products you offer</li>
+                          <li>• Content format</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-xs font-semibold text-blue-300 mb-2">Example evolution:</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• <strong className="text-white">Year 1</strong>: "I teach Twitter growth"</li>
+                        <li>• <strong className="text-white">Year 2</strong>: "I teach social media growth"</li>
+                        <li>• <strong className="text-white">Year 3</strong>: "I teach creator businesses"</li>
+                        <li>• <strong className="text-white">Year 4</strong>: "I teach entrepreneurship"</li>
+                      </ul>
+                      <p className="text-gray-300 text-xs mt-2"><strong className="text-white">Core stayed same:</strong> Helping creators build income</p>
+                      <p className="text-gray-300 text-xs"><strong className="text-white">Wrapper evolved:</strong> Broadened expertise</p>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-green-300 mb-3">How to evolve without audience whiplash:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Step 1: Signal change</h6>
+                        <p className="text-gray-300 text-xs italic">"I've been thinking a lot about [new topic]. Might start exploring this more. What do you think?"</p>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Step 2: Test gradually</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• <strong className="text-white">10%</strong> of content on new topic</li>
+                          <li>• Track engagement</li>
+                          <li>• Gauge interest</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Step 3: Explain evolution</h6>
+                        <p className="text-gray-300 text-xs italic">"When I started, I focused on [original]. As I've grown, I realized [broader topic] is the real transformation. Here's why..."</p>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Step 4: Bridge old and new</h6>
+                        <p className="text-gray-300 text-xs italic">"Everything I taught you about [original topic] applies to [new topic]. Let me show you..."</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Pillar 6: Dealing with Success Without Becoming Unrelatable */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Pillar 6: Dealing with Success Without Becoming Unrelatable</h5>
+                    
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-xs font-semibold text-red-300 mb-2">The trap:</h6>
+                      <ul className="space-y-1 text-gray-300 text-xs">
+                        <li>• You start: Broke, struggling, relatable</li>
+                        <li>• You succeed: Wealthy, thriving, unrelatable?</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-green-300 mb-3">How to stay grounded:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">1. Remember your origin story:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Regular posts about your journey</li>
+                          <li>• Share how far you've come</li>
+                          <li>• Don't pretend you didn't struggle</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">2. Stay in the trenches:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Still doing the work</li>
+                          <li>• Testing new strategies</li>
+                          <li>• Building new things</li>
+                          <li>• Sharing experiments</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">3. Celebrate wins humbly:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>❌ "I made $100K easy, you can too!"</li>
+                          <li>✅ "After <strong className="text-white">3 years</strong> of work, I hit $100K. Here's exactly what worked..."</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">4. Acknowledge privilege:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• "I had advantages: [list them]"</li>
+                          <li>• "This won't work for everyone because [reality]"</li>
+                          <li>• "Here's how to adapt this if you don't have [resource]"</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">5. Create new "underdogs":</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Start new challenges</li>
+                          <li>• Learn publicly in new areas</li>
+                          <li>• Stay hungry</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-blue-300 mb-2">Real example:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Gary Vaynerchuk: Worth <strong className="text-white">$200M</strong></li>
+                          <li>• Still posts: Daily vlogs, hustle content</li>
+                          <li>• Stays relatable: "I'm still grinding"</li>
+                          <li>• Maintains authenticity: Started from immigrant family, never forgets</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Pillar 7: Saying No to Misaligned Opportunities */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Pillar 7: Saying No to Misaligned Opportunities</h5>
+                    
+                    <div className="mb-3">
+                      <div className="bg-blue-800/20 border border-blue-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-blue-300 mb-2">When you're small:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Few opportunities</li>
+                          <li>• Easy to stay aligned</li>
+                          <li>• No temptation to sell out</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-red-300 mb-2">When you grow:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Many opportunities</li>
+                          <li>• Money is tempting</li>
+                          <li>• Easy to compromise</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-3">The filter:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Before saying yes to anything, ask:</h6>
+                        <ol className="list-decimal list-inside space-y-1 text-gray-300 text-xs ml-2">
+                          <li>Does this align with my values?</li>
+                          <li>Would I recommend this to my best friend?</li>
+                          <li>Will my audience benefit or just me?</li>
+                          <li>Can I promote this authentically?</li>
+                          <li>Will I regret this in <strong className="text-white">5 years</strong>?</li>
+                        </ol>
+                      </div>
+                      
+                      <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-3">
+                        <p className="text-gray-300 text-xs"><strong className="text-white">If any answer is no → say no</strong></p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-blue-300 mb-3">Real examples of saying no:</h6>
+                      
+                      <div className="mb-2">
+                        <p className="text-xs font-semibold text-white mb-1">Example 1: Cryptocurrency sponsor</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Offer: <strong className="text-white">$30K</strong> for promotion</li>
+                          <li>• Concern: Don't believe in that specific crypto</li>
+                          <li>• Decision: No</li>
+                          <li>• Result: Trust maintained, better deals came later</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="mb-2">
+                        <p className="text-xs font-semibold text-white mb-1">Example 2: MLM partnership</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Offer: <strong className="text-white">$20K</strong> + commission</li>
+                          <li>• Concern: Don't support MLM model</li>
+                          <li>• Decision: No</li>
+                          <li>• Result: Audience respected integrity</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-xs font-semibold text-white mb-1">Example 3: Misleading product claim</p>
+                        <ul className="space-y-1 text-gray-300 text-xs ml-2">
+                          <li>• Offer: <strong className="text-white">$50K</strong> for "results guaranteed" claim</li>
+                          <li>• Concern: Results aren't guaranteed</li>
+                          <li>• Decision: No (or negotiated different language)</li>
+                          <li>• Result: Kept authenticity</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">How to say no gracefully:</h6>
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <p className="text-gray-300 text-xs italic">"Thanks for thinking of me! This isn't the right fit for my audience right now, but I appreciate the offer. Let me know if you have other opportunities that might align better."</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Pillar 8: Community as Your Compass */}
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Pillar 8: Community as Your Compass</h5>
+                    
+                    <div className="bg-blue-800/20 border border-blue-400/30 rounded-lg p-3 mb-3">
+                      <h6 className="text-xs font-semibold text-blue-300 mb-2">Your audience knows when you're off:</h6>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                      <h6 className="text-sm font-semibold text-green-300 mb-3">Authenticity check-ins:</h6>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3 mb-2">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Monthly: Ask your community:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• "What content has been most valuable?"</li>
+                          <li>• "What do you want to see more/less of?"</li>
+                          <li>• "How can I serve you better?"</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Quarterly: Deep dive:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Survey top <strong className="text-white">100</strong> engaged followers</li>
+                          <li>• <strong className="text-white">10</strong> one-on-one calls</li>
+                          <li>• What are they really struggling with?</li>
+                          <li>• Are you still serving them?</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-green-800/20 border border-green-400/30 rounded-lg p-3">
+                        <h6 className="text-xs font-semibold text-green-300 mb-2">Annually: Reflection:</h6>
+                        <ul className="space-y-1 text-gray-300 text-xs">
+                          <li>• Review your content from the year</li>
+                          <li>• Does it align with your values?</li>
+                          <li>• Are you proud of what you created?</li>
+                          <li>• What needs to change?</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-3">
+                      <h6 className="text-sm font-semibold text-red-300 mb-3">Red flags you're losing authenticity:</h6>
+                      <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                        <li>Dreading content creation</li>
+                        <li>Avoiding specific topics because of sponsors</li>
+                        <li>Creating for algorithm, not audience</li>
+                        <li>Can't remember why you started</li>
+                        <li>Success feels empty</li>
+                      </ol>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                      <h6 className="text-sm font-semibold text-green-300 mb-2">If you notice these:</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Take a break</li>
+                        <li>• Reconnect with your why</li>
+                        <li>• Audit your commitments</li>
+                        <li>• Cut misaligned partnerships</li>
+                        <li>• Return to core values</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Authenticity Action Plan */}
+                <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-emerald-400 mb-4">The Authenticity Action Plan</h4>
+                  
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">This week:</h5>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                      <li>Define your <strong className="text-white">3-5</strong> core values</li>
+                      <li>Audit recent content against values</li>
+                      <li>Identify one misaligned commitment to end</li>
+                    </ol>
+                  </div>
+                  
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">This month:</h5>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                      <li>Share one strategic vulnerability</li>
+                      <li>Post one "building in public" update</li>
+                      <li>Survey your audience</li>
+                    </ol>
+                  </div>
+                  
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4 mb-3">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">This quarter:</h5>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                      <li>Review all partnerships/sponsors</li>
+                      <li>Say no to one misaligned opportunity</li>
+                      <li>Recommit to your core mission</li>
+                    </ol>
+                  </div>
+                  
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-emerald-300 mb-3">This year:</h5>
+                    <ol className="list-decimal list-inside space-y-1 text-gray-300 text-sm ml-2">
+                      <li>Annual authenticity audit</li>
+                      <li>Realign strategy with values</li>
+                      <li>Plan evolution (if needed)</li>
+                    </ol>
+                  </div>
+                </div>
+
+                {/* The Authenticity ROI */}
+                <div className="bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/30 rounded-xl p-6 mb-4">
+                  <h4 className="text-xl font-bold text-amber-400 mb-4">The Authenticity ROI</h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                      <h5 className="text-lg font-semibold text-red-300 mb-3">Short-term (feels hard):</h5>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Say no to easy money</li>
+                        <li>• Share uncomfortable truths</li>
+                        <li>• Slower growth</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                      <h5 className="text-lg font-semibold text-green-300 mb-3">Long-term (worth it):</h5>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Deeper audience connection</li>
+                        <li>• Higher trust = higher conversion</li>
+                        <li>• Sustainable business</li>
+                        <li>• No regrets</li>
+                        <li>• Attract dream opportunities</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h5 className="text-lg font-semibold text-blue-300 mb-3">Real data:</h5>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Authentic creators: <strong className="text-white">5-8%</strong> conversion rates</li>
+                      <li>• Inauthentic creators: <strong className="text-white">1-2%</strong> conversion rates</li>
+                      <li>• Same audience size, <strong className="text-white">3-4x</strong> revenue difference</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <p className="text-gray-300 text-sm"><strong className="text-white">Bottom line:</strong> Authenticity isn't about sharing everything or being perfect. It's about staying true to your values while providing value to your audience. Your authenticity is your moat in a world of AI-generated content and polished personas.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
