@@ -72,6 +72,23 @@ const COURSES = {
     whopUrl: 'https://whop.com/iimagined/all-access-reimagined/',
     image: '/courses/fx-trading.jpg'
   },
+  'empire-bundle': {
+    id: 'empire-bundle',
+    name: 'All Access Empire Pass',
+    price: 99,
+    originalPrice: 199,
+    isSubscription: true,
+    features: [
+      'Access to ALL 4 Courses',
+      'Private Inner Circle Community',
+      'Weekly Live Coaching Calls',
+      'Exclusive Resource Library',
+      'Future Course Updates Included',
+      'Cancel Anytime'
+    ],
+    whopUrl: 'https://whop.com/iimagined/all-access-reimagined/',
+    image: '/courses/all-access.jpg'
+  },
   'all-access': {
     id: 'all-access',
     name: 'All-Access Pass',
