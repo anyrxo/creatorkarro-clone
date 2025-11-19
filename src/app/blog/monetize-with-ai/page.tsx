@@ -2646,7 +2646,6 @@ Real example: Marcus sent 500 cold emails to SaaS companies offering free AI con
                         <p className="mt-4 italic">The best client acquisition strategy is the one you'll actually execute consistently. Start with 1-2 methods, master them, then add more.</p>
                     </div>
                 </div>
-                </div>
             </div>
 
             <div className="bg-zinc-800 rounded-xl p-6">
