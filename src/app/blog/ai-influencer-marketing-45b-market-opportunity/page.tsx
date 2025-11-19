@@ -973,29 +973,7 @@ export default function AIInfluencerMarketingPage() {
 
         {/* Final CTA */}
         <div className="my-16">
-          <SmartCTA
-            title="Don't Watch This $45.88B Market Pass You By"
-            description="Join the 4,000+ students who chose to get in early. Our AI Influencer Creation course gives you everything you need to build, grow, and monetize virtual creators earning $10K-$100K+/month."
-            primaryButton={{
-              text: "Enroll in AI Influencers Course Now →",
-              href: "/ai-influencer-creation"
-            }}
-            secondaryButton={{
-              text: "Download Free Starter Guide",
-              href: "/resources/ai-influencer-starter-guide"
-            }}
-            features={[
-              "Complete ComfyUI & Stable Diffusion mastery (zero coding)",
-              "LoRA training for perfect face consistency across 1000s of posts",
-              "Growth automation: Instagram, TikTok, YouTube strategies",
-              "7 monetization blueprints with real revenue breakdowns",
-              "FTC compliance templates & legal protection",
-              "Agency scaling model to manage 20+ AI influencers simultaneously",
-              "Private community of 4,000+ AI creator entrepreneurs",
-              "Lifetime updates as tools and platforms evolve"
-            ]}
-            gradient="from-purple-600 via-pink-600 to-orange-600"
-          />
+          <SmartCTA blogSlug="ai-influencer-marketing-45b-market-opportunity" />
         </div>
 
         {/* Conclusion */}
