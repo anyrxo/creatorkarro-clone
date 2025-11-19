@@ -4025,8 +4025,8 @@ export default function YouTubeShortsStrategy() {
                 </div>
 
                 <div className="bg-zinc-900 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-red-400 mb-6">What are the biggest mistakes that kill YouTube Shorts growth?</h3>
-                <div className="space-y-6">
+                    <h3 className="text-2xl font-bold text-red-400 mb-6">What are the biggest mistakes that kill YouTube Shorts growth?</h3>
+                    <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
                         <strong className="text-white font-semibold">The 3 fatal mistakes that kill 90% of YouTube Shorts channels: Weak hooks (losing 80% of viewers in first 3 seconds), inconsistent posting (breaking algorithm momentum), and creating for yourself instead of your audience.</strong> Here's the complete mistake breakdown with fixes:
                     </p>
