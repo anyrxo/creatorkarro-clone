@@ -2476,317 +2476,551 @@ export default function BlogPost() {
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">How should I monetize at different follower milestones on the way to 500K?</h3>
-            <div className="text-gray-300 space-y-4">
-              <p>{`**Strategic monetization at each milestone accelerates your path to 500K by funding better equipment, outsourcing, and paid promotion.** Here's the exact revenue roadmap based on monetizing 12 accounts from 0 to 500K+:
-
-**1,000-10,000 Followers: The Foundation Phase**
-
-**Primary Revenue Focus: Affiliate Marketing**
-
-Why affiliates work at this stage:
-- No upfront costs to you
-- No need to create products yet
-- Learn how to sell without inventory risk
-- Build trust with promotional content
-
-**Best Affiliate Programs for Small Audiences**
-1. **Amazon Associates** (5-8% commission)
-   - Promote tools you actually use
-   - Average: $200-$800/month at 5K followers
-   - Example: Fitness creator promotes workout equipment
-
-2. **Software affiliate programs** (20-40% commission)
-   - Canva, ClickFunnels, ConvertKit
-   - Average: $300-$1,200/month at 5K followers
-   - Example: Content creator promotes design tools
-
-3. **Course platforms** (30-50% commission)
-   - Promote other creators' courses in your niche
-   - Average: $150-$600/month at 5K followers
-   - Only promote products you've personally used
-
-**Real Example: Fitness Creator (3,200 followers)**
-- Month 1: Promoted protein powder (Amazon) → $180
-- Month 2: Added workout app affiliate (30%) → $420 total
-- Month 3: Included resistance bands link → $680 total
-- Month 4: Consistent promotion → $920/month
-
-**Revenue Target**: $200-$1,200/month
-**Time Investment**: 2-3 hours/week (creating affiliate content)
-**Reinvestment Strategy**: Buy better equipment (lighting, camera, mic)
-
-**10,000-50,000 Followers: The Validation Phase**
-
-**Primary Revenue Focus: Small Brand Deals + First Digital Product**
-
-**Brand Deals at This Tier**
-At 10K-50K, brands start reaching out for micro-influencer partnerships.
-
-**Pricing Formula**
-- Instagram post: $100-$500 ($0.01-0.02 per follower)
-- Instagram Reel: $200-$800 ($0.02-0.03 per follower)
-- Instagram Story (24hr): $50-$200
-- Package deal (1 feed + 3 Stories): $300-$1,000
-
-**Real Pricing Examples**
-- 12K follower account: $240 per feed post, $120 for Stories
-- 30K follower account: $600 per Reel, $300 for Stories
-- 45K follower account: $900 per feed post, $450 for Stories
-
-**How to Get Brand Deals**
-1. **Outbound (you contact brands)**
-   - List 20 brands you genuinely use/love
-   - Email: "Hi [Brand], I'm [name] with [X followers] in [niche]. I love your [product]. Would you be interested in a partnership? Here's my media kit: [link]"
-   - Success rate: 5-10% reply rate, 2-3% conversion
-
-2. **Inbound (brands contact you)**
-   - Optimize bio: "Brand partnerships: yourname@email.com"
-   - Post high-quality content (brands watch for professionalism)
-   - Tag brands you use (they notice)
-
-3. **Platforms**
-   - AspireIQ, Grin, Creator.co (marketplaces that connect creators with brands)
-   - Approval rate: 60-70% at 10K+ followers
-
-**First Digital Product Launch**
-
-At 10K+ followers, you have enough audience to validate a product.
-
-**Best First Products**
-1. **Notion Template** ($7-$27)
-   - Create a template for your niche (content calendar, workout tracker, budget planner)
-   - Time to create: 4-8 hours
-   - Example: "Instagram Content Calendar Template" ($17)
-   - Average sales at 15K followers: 80-200 purchases in first month
-   - Revenue: $1,360-$3,400 first month
-
-2. **Canva Template Bundle** ($17-$47)
-   - Create 30-50 editable templates (carousels, Reels, Stories)
-   - Time to create: 10-15 hours
-   - Example: "50 Viral Instagram Templates" ($27)
-   - Average sales at 20K followers: 120-300 purchases in first month
-   - Revenue: $3,240-$8,100 first month
-
-3. **Mini-Course or eBook** ($27-$97)
-   - Teach ONE specific skill you've mastered
-   - Time to create: 20-40 hours
-   - Example: "How to Grow to 10K Followers in 90 Days" ($47)
-   - Average sales at 25K followers: 50-150 purchases in first month
-   - Revenue: $2,350-$7,050 first month
-
-**Launch Strategy**
-- Week 1: Tease the product (Stories: "I'm creating something for you...")
-- Week 2: Share behind-the-scenes creation process
-- Week 3: Pre-sell (early bird discount)
-- Week 4: Official launch (7-day promotion blitz)
-- Post-launch: Evergreen sales from bio link
-
-**Real Example: Marketing Creator (18,000 followers)**
-- Month 1: 2 brand deals → $1,100
-- Month 2: Launched "Viral Reel Scripts" template pack ($27)
-- Launch week: 147 sales → $3,969
-- Ongoing: 40-60 sales/month → $1,080-$1,620/month passive
-- Month 2 total: $2,180 (brand deal) + $3,969 (launch) = $6,149
-- Month 3+: $1,500-$2,500/month (brand deals + product)
-
-**Revenue Target**: $1,500-$5,000/month
-**Time Investment**: 10-15 hours/week (content + deal negotiations + product creation)
-**Reinvestment Strategy**: Hire editor ($200-500/month) to free up time for content strategy
-
-**50,000-100,000 Followers: The Scaling Phase**
-
-**Primary Revenue Focus: Premium Coaching + Flagship Digital Course**
-
-**1-on-1 Coaching Packages**
-
-At 50K+, your expertise is validated. People will pay premium prices for your time.
-
-**Pricing Structure**
-- Single session (60 min): $200-$500
-- 4-week package (4 sessions): $800-$1,500
-- 12-week intensive (12 sessions + support): $2,500-$5,000
-
-**Positioning Strategy**
-- Don't sell "coaching" - sell transformation
-- Bad: "Instagram coaching - $300/session"
-- Good: "Get your first 10K followers in 90 days - $1,200 (4 sessions + support)"
-
-**Client Acquisition**
-- Post results/case studies consistently
-- Add "Limited 1:1 spots available - DM COACHING to apply" to bio
-- Screen clients (only work with committed people)
-- Expect: 5-15 inquiries per week at 60K followers
-- Conversion rate: 20-30% (1-4 new clients per week)
-
-**Time Management**
-- Max 8-10 active 1:1 clients at once (avoid burnout)
-- Block calendar: Mondays/Wednesdays for coaching calls
-- Tuesdays/Thursdays for content creation
-- Fridays for admin/planning
-
-**Flagship Digital Course**
-
-This is where life-changing money happens. A well-crafted course can generate $50K-$500K+ per year.
-
-**Course Creation Process**
-1. **Validate the idea** (survey your audience)
-   - Stories poll: "Would you buy a course on X?"
-   - DM 50 engaged followers: "What's your biggest struggle with X?"
-   - Create course that solves their #1 pain point
-
-2. **Structure the course** (outcome-driven modules)
-   - Module 1: Quick win (build confidence)
-   - Modules 2-5: Core transformation (main value)
-   - Module 6: Advanced strategies (exceed expectations)
-   - Bonus: Templates, scripts, checklists (increase perceived value)
-
-3. **Record the course** (doesn't need to be perfect)
-   - Use Loom or Zoom to record screen + face
-   - Each video: 8-20 minutes (attention span sweet spot)
-   - Total course length: 3-6 hours of content
-   - Time to create: 40-80 hours (spread over 4-6 weeks)
-
-4. **Host the course**
-   - Teachable, Gumroad, Thinkific (easiest platforms)
-   - Cost: $0-$99/month depending on platform
-   - Include community access (Facebook Group or Discord)
-
-**Pricing Strategy**
-- Entry course: $97-$197 (maximize volume)
-- Mid-tier course: $297-$497 (sweet spot)
-- Premium course: $697-$1,997 (high-touch, includes coaching calls)
-
-**Launch Strategy (Open/Close Cart Model)**
-- Pre-launch (2 weeks): Tease course, share testimonials from beta testers
-- Launch week: 5-7 days of promotion (Stories, feed posts, Reels, emails)
-- Create urgency: "Cart closes Friday - enroll now"
-- Re-open cart every 6-8 weeks (scarcity drives action)
-
-**Real Example: Business Creator (72,000 followers)**
-- Launched "Instagram Growth Blueprint" course ($297)
-- Pre-launch email list: 8,400 subscribers
-- Launch week promotion:
-  - Day 1: Announcement post + email (68 sales)
-  - Day 2-3: Case study posts (42 sales)
-  - Day 4: Objection-handling content (31 sales)
-  - Day 5: Q&A livestream (29 sales)
-  - Day 6: Last chance email (53 sales)
-  - Day 7: Cart closes (41 sales)
-- Total sales: 264 purchases × $297 = $78,408 in 7 days
-- Ongoing evergreen sales: 30-50 purchases/month = $8,910-$14,850/month
-
-**Additional Revenue at This Tier**
-- Brand deals: $1,500-$4,000 per post (at 75K followers)
-- Affiliate commissions: $800-$2,000/month (recommending course platforms, tools)
-- Speaking opportunities: $1,000-$5,000 per event
-
-**Revenue Target**: $8,000-$25,000/month
-**Time Investment**: 20-30 hours/week (coaching calls, course support, content)
-**Reinvestment Strategy**: Hire team (editor, VA, email marketer) for $1,500-$3,000/month
-
-**100,000-500,000 Followers: The Authority Phase**
-
-**Primary Revenue Focus: Multiple Income Streams + Premium Offerings**
-
-**Revenue Stream #1: Flagship Course (Scaled)**
-- Monthly recurring revenue: $15,000-$50,000
-- 4 launches per year: $80,000-$300,000
-- Evergreen funnel: Additional $5,000-$20,000/month between launches
-
-**Revenue Stream #2: Group Coaching Program**
-- Cohort-based program: $497-$1,997 per person
-- Cohort size: 30-100 people (max for group coaching)
-- Frequency: 4 cohorts per year
-- Revenue: $60,000-$600,000/year depending on pricing/size
-
-**Example**: 50-person cohort at $997 = $49,850 per cohort × 4 = $199,400/year
-
-**Revenue Stream #3: Premium Brand Partnerships**
-At 100K+, brands pay 5-10x more for partnerships.
-
-**Pricing at This Tier**
-- 100K followers: $2,000-$5,000 per feed post
-- 250K followers: $5,000-$12,000 per feed post
-- 500K followers: $10,000-$30,000 per feed post
-
-Long-term partnerships (6-12 months): $5,000-$25,000/month retainer
-
-**Revenue Stream #4: Membership Community**
-- Monthly recurring: $27-$97/month
-- Member count at 150K followers: 200-800 members
-- Monthly revenue: $5,400-$77,600
-
-**Membership Benefits**
-- Weekly group coaching calls
-- Private community (Discord/Circle)
-- Exclusive content and resources
-- Monthly expert interviews
-- Direct access to you via Q&A
-
-**Revenue Stream #5: High-Ticket Mastermind**
-- 6-12 month program: $5,000-$25,000 per person
-- Group size: 10-30 people (intimate, high-touch)
-- Includes: Quarterly in-person meetups, weekly calls, 1:1 access
-- Revenue: $50,000-$750,000/year
-
-**Revenue Stream #6: Speaking + Consulting**
-- Virtual speaking: $3,000-$10,000 per event
-- In-person speaking: $5,000-$25,000 per event
-- Consulting retainers: $5,000-$20,000/month
-
-**Real Example: Full Portfolio at 380,000 followers**
-
-**Monthly Breakdown**
-- Course sales (evergreen): $22,000
-- Quarterly course launch (prorated): $18,000
-- Membership community (480 members @ $47/mo): $22,560
-- Brand partnerships (2 per month): $16,000
-- Affiliate revenue: $3,200
-- Speaking (1 event/month average): $6,000
-- **Total monthly revenue: $87,760**
-
-**Annual Revenue: $1,053,120**
-
-**Time Investment at This Level**
-- Content creation: 10 hours/week (team handles editing)
-- Community management: 5 hours/week (moderators help)
-- Coaching/calls: 8 hours/week
-- Strategy/business: 7 hours/week
-- Total: 30 hours/week (working ON business, not IN it)
-
-**Team Structure at 500K**
-- Video editor: $1,500-$3,000/month
-- Social media manager: $2,000-$4,000/month
-- Virtual assistant: $1,000-$2,000/month
-- Email marketing specialist: $1,500-$3,000/month
-- Community manager: $1,500-$2,500/month
-- **Total team costs: $7,500-$14,500/month**
-
-**Net monthly profit after team**: $73,260-$80,260
-
-**The Monetization Mistake That Kills Growth**
-
-❌ **Waiting until 500K to monetize**
-- You burn out before getting there
-- You can't invest in growth (equipment, team, ads)
-- Audience questions why you never offer anything
-
-✅ **Start monetizing at 5K-10K**
-- Revenue funds better content
-- Proves your business model works
-- Builds audience relationship (they want to support you)
-- Each revenue milestone funds the next growth phase
-
-**The Compounding Effect**
-
-Creators who monetize early grow faster because:
-1. Revenue → Better equipment → Better content → More followers
-2. Revenue → Hire editor → More time for strategy → Faster growth
-3. Revenue → Run ads → Accelerate growth → Hit milestones faster
-4. Revenue → Validation → Confidence → Better content → More trust
-
-Start small. Monetize early. Scale systematically. By the time you hit 500K, you'll have a multi-six-figure business, not just a large follower count.`}</p>
+            <h3 className="text-2xl font-bold text-white mb-6">How should I monetize at different follower milestones on the way to 500K?</h3>
+            <div className="space-y-8">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                <strong className="text-white font-semibold">Strategic monetization at each milestone accelerates your path to 500K by funding better equipment, outsourcing, and paid promotion.</strong> Here's the exact revenue roadmap based on monetizing 12 accounts from 0 to 500K+:
+              </p>
+
+              {/* 1,000-10,000 Followers */}
+              <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                <h4 className="text-xl font-bold text-green-400 mb-4">1,000-10,000 Followers: The Foundation Phase</h4>
+                
+                <h5 className="text-lg font-semibold text-white mb-3">Primary Revenue Focus: Affiliate Marketing</h5>
+                <p className="text-gray-300 mb-4">Why affiliates work at this stage:</p>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>No upfront costs to you</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>No need to create products yet</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Learn how to sell without inventory risk</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Build trust with promotional content</span>
+                  </li>
+                </ul>
+
+                <h5 className="text-lg font-semibold text-white mb-3">Best Affiliate Programs for Small Audiences</h5>
+                <div className="space-y-4 mb-6">
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                    <p className="text-white font-semibold mb-2">1. Amazon Associates (5-8% commission)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• Promote tools you actually use</li>
+                      <li>• <strong className="text-white">Average:</strong> $200-$800/month at 5K followers</li>
+                      <li>• Example: Fitness creator promotes workout equipment</li>
+                    </ul>
+                  </div>
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                    <p className="text-white font-semibold mb-2">2. Software affiliate programs (20-40% commission)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• Canva, ClickFunnels, ConvertKit</li>
+                      <li>• <strong className="text-white">Average:</strong> $300-$1,200/month at 5K followers</li>
+                      <li>• Example: Content creator promotes design tools</li>
+                    </ul>
+                  </div>
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                    <p className="text-white font-semibold mb-2">3. Course platforms (30-50% commission)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• Promote other creators' courses in your niche</li>
+                      <li>• <strong className="text-white">Average:</strong> $150-$600/month at 5K followers</li>
+                      <li>• Only promote products you've personally used</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                  <h6 className="text-md font-semibold text-blue-400 mb-2">Real Example: Fitness Creator (3,200 followers)</h6>
+                  <ul className="space-y-1 text-gray-300 text-sm">
+                    <li>• Month 1: Promoted protein powder (Amazon) → <strong className="text-white">$180</strong></li>
+                    <li>• Month 2: Added workout app affiliate (30%) → <strong className="text-white">$420 total</strong></li>
+                    <li>• Month 3: Included resistance bands link → <strong className="text-white">$680 total</strong></li>
+                    <li>• Month 4: Consistent promotion → <strong className="text-white">$920/month</strong></li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                    <p className="text-green-300 font-semibold mb-1">Revenue Target</p>
+                    <p className="text-white text-lg font-bold">$200-$1,200/month</p>
+                  </div>
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                    <p className="text-blue-300 font-semibold mb-1">Time Investment</p>
+                    <p className="text-white text-lg font-bold">2-3 hours/week</p>
+                  </div>
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                    <p className="text-purple-300 font-semibold mb-1">Reinvestment Strategy</p>
+                    <p className="text-white text-sm">Buy better equipment (lighting, camera, mic)</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 10,000-50,000 Followers */}
+              <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                <h4 className="text-xl font-bold text-blue-400 mb-4">10,000-50,000 Followers: The Validation Phase</h4>
+                
+                <h5 className="text-lg font-semibold text-white mb-3">Primary Revenue Focus: Small Brand Deals + First Digital Product</h5>
+                
+                <div className="mb-6">
+                  <h6 className="text-md font-semibold text-blue-400 mb-2">Brand Deals at This Tier</h6>
+                  <p className="text-gray-300 mb-4 text-sm">At 10K-50K, brands start reaching out for micro-influencer partnerships.</p>
+                  
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-blue-400 mb-2">Pricing Formula</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Instagram post: $100-$500 ($0.01-0.02 per follower)</li>
+                      <li>• Instagram Reel: $200-$800 ($0.02-0.03 per follower)</li>
+                      <li>• Instagram Story (24hr): $50-$200</li>
+                      <li>• Package deal (1 feed + 3 Stories): $300-$1,000</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-green-400 mb-2">Real Pricing Examples</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• 12K follower account: <strong className="text-white">$240 per feed post</strong>, $120 for Stories</li>
+                      <li>• 30K follower account: <strong className="text-white">$600 per Reel</strong>, $300 for Stories</li>
+                      <li>• 45K follower account: <strong className="text-white">$900 per feed post</strong>, $450 for Stories</li>
+                    </ul>
+                  </div>
+
+                  <h6 className="text-md font-semibold text-white mb-2">How to Get Brand Deals</h6>
+                  <div className="space-y-3 mb-4">
+                    <div className="bg-zinc-800/40 rounded-lg p-3">
+                      <p className="text-white font-semibold mb-2 text-sm">1. Outbound (you contact brands)</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• List 20 brands you genuinely use/love</li>
+                        <li>• Email: "Hi [Brand], I'm [name] with [X followers] in [niche]. I love your [product]. Would you be interested in a partnership? Here's my media kit: [link]"</li>
+                        <li>• <strong className="text-white">Success rate:</strong> 5-10% reply rate, 2-3% conversion</li>
+                      </ul>
+                    </div>
+                    <div className="bg-zinc-800/40 rounded-lg p-3">
+                      <p className="text-white font-semibold mb-2 text-sm">2. Inbound (brands contact you)</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• Optimize bio: "Brand partnerships: yourname@email.com"</li>
+                        <li>• Post high-quality content (brands watch for professionalism)</li>
+                        <li>• Tag brands you use (they notice)</li>
+                      </ul>
+                    </div>
+                    <div className="bg-zinc-800/40 rounded-lg p-3">
+                      <p className="text-white font-semibold mb-2 text-sm">3. Platforms</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• AspireIQ, Grin, Creator.co (marketplaces that connect creators with brands)</li>
+                        <li>• <strong className="text-white">Approval rate:</strong> 60-70% at 10K+ followers</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <h6 className="text-md font-semibold text-purple-400 mb-3">First Digital Product Launch</h6>
+                  <p className="text-gray-300 mb-4 text-sm">At 10K+ followers, you have enough audience to validate a product.</p>
+                  
+                  <h6 className="text-md font-semibold text-white mb-2">Best First Products</h6>
+                  <div className="space-y-4 mb-4">
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">1. Notion Template ($7-$27)</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• Create a template for your niche (content calendar, workout tracker, budget planner)</li>
+                        <li>• <strong className="text-white">Time to create:</strong> 4-8 hours</li>
+                        <li>• Example: "Instagram Content Calendar Template" ($17)</li>
+                        <li>• Average sales at 15K followers: 80-200 purchases in first month</li>
+                        <li>• <strong className="text-white">Revenue:</strong> $1,360-$3,400 first month</li>
+                      </ul>
+                    </div>
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">2. Canva Template Bundle ($17-$47)</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• Create 30-50 editable templates (carousels, Reels, Stories)</li>
+                        <li>• <strong className="text-white">Time to create:</strong> 10-15 hours</li>
+                        <li>• Example: "50 Viral Instagram Templates" ($27)</li>
+                        <li>• Average sales at 20K followers: 120-300 purchases in first month</li>
+                        <li>• <strong className="text-white">Revenue:</strong> $3,240-$8,100 first month</li>
+                      </ul>
+                    </div>
+                    <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2">3. Mini-Course or eBook ($27-$97)</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• Teach ONE specific skill you've mastered</li>
+                        <li>• <strong className="text-white">Time to create:</strong> 20-40 hours</li>
+                        <li>• Example: "How to Grow to 10K Followers in 90 Days" ($47)</li>
+                        <li>• Average sales at 25K followers: 50-150 purchases in first month</li>
+                        <li>• <strong className="text-white">Revenue:</strong> $2,350-$7,050 first month</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-yellow-400 mb-2">Launch Strategy</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">Week 1:</strong> Tease the product (Stories: "I'm creating something for you...")</li>
+                      <li>• <strong className="text-white">Week 2:</strong> Share behind-the-scenes creation process</li>
+                      <li>• <strong className="text-white">Week 3:</strong> Pre-sell (early bird discount)</li>
+                      <li>• <strong className="text-white">Week 4:</strong> Official launch (7-day promotion blitz)</li>
+                      <li>• <strong className="text-white">Post-launch:</strong> Evergreen sales from bio link</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-blue-400 mb-2">Real Example: Marketing Creator (18,000 followers)</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Month 1: 2 brand deals → <strong className="text-white">$1,100</strong></li>
+                      <li>• Month 2: Launched "Viral Reel Scripts" template pack ($27)</li>
+                      <li>• Launch week: 147 sales → <strong className="text-white">$3,969</strong></li>
+                      <li>• Ongoing: 40-60 sales/month → <strong className="text-white">$1,080-$1,620/month passive</strong></li>
+                      <li>• Month 2 total: $2,180 (brand deal) + $3,969 (launch) = <strong className="text-white">$6,149</strong></li>
+                      <li>• Month 3+: <strong className="text-white">$1,500-$2,500/month</strong> (brand deals + product)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                    <p className="text-blue-300 font-semibold mb-1">Revenue Target</p>
+                    <p className="text-white text-lg font-bold">$1,500-$5,000/month</p>
+                  </div>
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                    <p className="text-purple-300 font-semibold mb-1">Time Investment</p>
+                    <p className="text-white text-lg font-bold">10-15 hours/week</p>
+                  </div>
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                    <p className="text-green-300 font-semibold mb-1">Reinvestment Strategy</p>
+                    <p className="text-white text-sm">Hire editor ($200-500/month) to free up time for content strategy</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 50,000-100,000 Followers */}
+              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                <h4 className="text-xl font-bold text-purple-400 mb-4">50,000-100,000 Followers: The Scaling Phase</h4>
+                
+                <h5 className="text-lg font-semibold text-white mb-3">Primary Revenue Focus: Premium Coaching + Flagship Digital Course</h5>
+                
+                <div className="mb-6">
+                  <h6 className="text-md font-semibold text-purple-400 mb-3">1-on-1 Coaching Packages</h6>
+                  <p className="text-gray-300 mb-4 text-sm">At 50K+, your expertise is validated. People will pay premium prices for your time.</p>
+                  
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-purple-400 mb-2">Pricing Structure</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Single session (60 min): <strong className="text-white">$200-$500</strong></li>
+                      <li>• 4-week package (4 sessions): <strong className="text-white">$800-$1,500</strong></li>
+                      <li>• 12-week intensive (12 sessions + support): <strong className="text-white">$2,500-$5,000</strong></li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-yellow-400 mb-2">Positioning Strategy</h6>
+                    <p className="text-gray-300 text-sm mb-2">Don't sell "coaching" - sell transformation</p>
+                    <div className="space-y-2">
+                      <p className="text-red-300 text-sm">❌ Bad: "Instagram coaching - $300/session"</p>
+                      <p className="text-green-300 text-sm">✅ Good: "Get your first 10K followers in 90 days - $1,200 (4 sessions + support)"</p>
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                      <h6 className="text-md font-semibold text-white mb-2">Client Acquisition</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Post results/case studies consistently</li>
+                        <li>• Add "Limited 1:1 spots available - DM COACHING to apply" to bio</li>
+                        <li>• Screen clients (only work with committed people)</li>
+                        <li>• <strong className="text-white">Expect:</strong> 5-15 inquiries per week at 60K followers</li>
+                        <li>• <strong className="text-white">Conversion rate:</strong> 20-30% (1-4 new clients per week)</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h6 className="text-md font-semibold text-white mb-2">Time Management</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Max 8-10 active 1:1 clients at once (avoid burnout)</li>
+                        <li>• Block calendar: Mondays/Wednesdays for coaching calls</li>
+                        <li>• Tuesdays/Thursdays for content creation</li>
+                        <li>• Fridays for admin/planning</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <h6 className="text-md font-semibold text-pink-400 mb-3">Flagship Digital Course</h6>
+                  <p className="text-gray-300 mb-4 text-sm">This is where life-changing money happens. A well-crafted course can generate $50K-$500K+ per year.</p>
+                  
+                  <h6 className="text-md font-semibold text-white mb-2">Course Creation Process</h6>
+                  <div className="space-y-4 mb-4">
+                    <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2 text-sm">1. Validate the idea (survey your audience)</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• Stories poll: "Would you buy a course on X?"</li>
+                        <li>• DM 50 engaged followers: "What's your biggest struggle with X?"</li>
+                        <li>• Create course that solves their #1 pain point</li>
+                      </ul>
+                    </div>
+                    <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2 text-sm">2. Structure the course (outcome-driven modules)</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• Module 1: Quick win (build confidence)</li>
+                        <li>• Modules 2-5: Core transformation (main value)</li>
+                        <li>• Module 6: Advanced strategies (exceed expectations)</li>
+                        <li>• Bonus: Templates, scripts, checklists (increase perceived value)</li>
+                      </ul>
+                    </div>
+                    <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2 text-sm">3. Record the course (doesn't need to be perfect)</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• Use Loom or Zoom to record screen + face</li>
+                        <li>• Each video: 8-20 minutes (attention span sweet spot)</li>
+                        <li>• Total course length: 3-6 hours of content</li>
+                        <li>• <strong className="text-white">Time to create:</strong> 40-80 hours (spread over 4-6 weeks)</li>
+                      </ul>
+                    </div>
+                    <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                      <p className="text-white font-semibold mb-2 text-sm">4. Host the course</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                        <li>• Teachable, Gumroad, Thinkific (easiest platforms)</li>
+                        <li>• Cost: $0-$99/month depending on platform</li>
+                        <li>• Include community access (Facebook Group or Discord)</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-green-400 mb-2">Pricing Strategy</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Entry course: <strong className="text-white">$97-$197</strong> (maximize volume)</li>
+                      <li>• Mid-tier course: <strong className="text-white">$297-$497</strong> (sweet spot)</li>
+                      <li>• Premium course: <strong className="text-white">$697-$1,997</strong> (high-touch, includes coaching calls)</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-yellow-400 mb-2">Launch Strategy (Open/Close Cart Model)</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• <strong className="text-white">Pre-launch (2 weeks):</strong> Tease course, share testimonials from beta testers</li>
+                      <li>• <strong className="text-white">Launch week:</strong> 5-7 days of promotion (Stories, feed posts, Reels, emails)</li>
+                      <li>• Create urgency: "Cart closes Friday - enroll now"</li>
+                      <li>• Re-open cart every 6-8 weeks (scarcity drives action)</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-blue-400 mb-2">Real Example: Business Creator (72,000 followers)</h6>
+                    <p className="text-gray-300 text-sm mb-2">Launched "Instagram Growth Blueprint" course ($297)</p>
+                    <p className="text-gray-300 text-sm mb-2">Pre-launch email list: 8,400 subscribers</p>
+                    <p className="text-gray-300 text-sm mb-2">Launch week promotion:</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• Day 1: Announcement post + email (68 sales)</li>
+                      <li>• Day 2-3: Case study posts (42 sales)</li>
+                      <li>• Day 4: Objection-handling content (31 sales)</li>
+                      <li>• Day 5: Q&A livestream (29 sales)</li>
+                      <li>• Day 6: Last chance email (53 sales)</li>
+                      <li>• Day 7: Cart closes (41 sales)</li>
+                    </ul>
+                    <p className="text-blue-300 font-semibold mt-2">Total sales: 264 purchases × $297 = <strong className="text-white">$78,408 in 7 days</strong></p>
+                    <p className="text-gray-300 text-sm mt-1">Ongoing evergreen sales: 30-50 purchases/month = <strong className="text-white">$8,910-$14,850/month</strong></p>
+                  </div>
+
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-green-400 mb-2">Additional Revenue at This Tier</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Brand deals: <strong className="text-white">$1,500-$4,000 per post</strong> (at 75K followers)</li>
+                      <li>• Affiliate commissions: <strong className="text-white">$800-$2,000/month</strong> (recommending course platforms, tools)</li>
+                      <li>• Speaking opportunities: <strong className="text-white">$1,000-$5,000 per event</strong></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                    <p className="text-purple-300 font-semibold mb-1">Revenue Target</p>
+                    <p className="text-white text-lg font-bold">$8,000-$25,000/month</p>
+                  </div>
+                  <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-3">
+                    <p className="text-pink-300 font-semibold mb-1">Time Investment</p>
+                    <p className="text-white text-lg font-bold">20-30 hours/week</p>
+                  </div>
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                    <p className="text-green-300 font-semibold mb-1">Reinvestment Strategy</p>
+                    <p className="text-white text-sm">Hire team (editor, VA, email marketer) for $1,500-$3,000/month</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 100,000-500,000 Followers */}
+              <div className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-xl p-6 mb-6">
+                <h4 className="text-xl font-bold text-yellow-400 mb-4">100,000-500,000 Followers: The Authority Phase</h4>
+                
+                <h5 className="text-lg font-semibold text-white mb-3">Primary Revenue Focus: Multiple Income Streams + Premium Offerings</h5>
+                
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <h6 className="text-md font-semibold text-yellow-400 mb-2">Revenue Stream #1: Flagship Course (Scaled)</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Monthly recurring revenue: <strong className="text-white">$15,000-$50,000</strong></li>
+                      <li>• 4 launches per year: <strong className="text-white">$80,000-$300,000</strong></li>
+                      <li>• Evergreen funnel: Additional <strong className="text-white">$5,000-$20,000/month</strong> between launches</li>
+                    </ul>
+                  </div>
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <h6 className="text-md font-semibold text-yellow-400 mb-2">Revenue Stream #2: Group Coaching Program</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Cohort-based program: <strong className="text-white">$497-$1,997 per person</strong></li>
+                      <li>• Cohort size: 30-100 people (max for group coaching)</li>
+                      <li>• Frequency: 4 cohorts per year</li>
+                      <li>• Revenue: <strong className="text-white">$60,000-$600,000/year</strong> depending on pricing/size</li>
+                    </ul>
+                    <p className="text-yellow-300 text-sm mt-2 italic">Example: 50-person cohort at $997 = $49,850 per cohort × 4 = $199,400/year</p>
+                  </div>
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <h6 className="text-md font-semibold text-yellow-400 mb-2">Revenue Stream #3: Premium Brand Partnerships</h6>
+                    <p className="text-gray-300 text-sm mb-2">At 100K+, brands pay 5-10x more for partnerships.</p>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• 100K followers: <strong className="text-white">$2,000-$5,000 per feed post</strong></li>
+                      <li>• 250K followers: <strong className="text-white">$5,000-$12,000 per feed post</strong></li>
+                      <li>• 500K followers: <strong className="text-white">$10,000-$30,000 per feed post</strong></li>
+                      <li>• Long-term partnerships (6-12 months): <strong className="text-white">$5,000-$25,000/month retainer</strong></li>
+                    </ul>
+                  </div>
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <h6 className="text-md font-semibold text-yellow-400 mb-2">Revenue Stream #4: Membership Community</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Monthly recurring: <strong className="text-white">$27-$97/month</strong></li>
+                      <li>• Member count at 150K followers: 200-800 members</li>
+                      <li>• Monthly revenue: <strong className="text-white">$5,400-$77,600</strong></li>
+                    </ul>
+                    <div className="mt-2">
+                      <p className="text-white font-semibold text-sm mb-1">Membership Benefits:</p>
+                      <ul className="ml-4 space-y-1 text-gray-300 text-xs">
+                        <li>• Weekly group coaching calls</li>
+                        <li>• Private community (Discord/Circle)</li>
+                        <li>• Exclusive content and resources</li>
+                        <li>• Monthly expert interviews</li>
+                        <li>• Direct access to you via Q&A</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <h6 className="text-md font-semibold text-yellow-400 mb-2">Revenue Stream #5: High-Ticket Mastermind</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• 6-12 month program: <strong className="text-white">$5,000-$25,000 per person</strong></li>
+                      <li>• Group size: 10-30 people (intimate, high-touch)</li>
+                      <li>• Includes: Quarterly in-person meetups, weekly calls, 1:1 access</li>
+                      <li>• Revenue: <strong className="text-white">$50,000-$750,000/year</strong></li>
+                    </ul>
+                  </div>
+                  <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                    <h6 className="text-md font-semibold text-yellow-400 mb-2">Revenue Stream #6: Speaking + Consulting</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Virtual speaking: <strong className="text-white">$3,000-$10,000 per event</strong></li>
+                      <li>• In-person speaking: <strong className="text-white">$5,000-$25,000 per event</strong></li>
+                      <li>• Consulting retainers: <strong className="text-white">$5,000-$20,000/month</strong></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-6">
+                  <h6 className="text-lg font-bold text-green-400 mb-4">Real Example: Full Portfolio at 380,000 followers</h6>
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                      <h6 className="text-md font-semibold text-white mb-2">Monthly Breakdown</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Course sales (evergreen): <strong className="text-white">$22,000</strong></li>
+                        <li>• Quarterly course launch (prorated): <strong className="text-white">$18,000</strong></li>
+                        <li>• Membership community (480 members @ $47/mo): <strong className="text-white">$22,560</strong></li>
+                        <li>• Brand partnerships (2 per month): <strong className="text-white">$16,000</strong></li>
+                        <li>• Affiliate revenue: <strong className="text-white">$3,200</strong></li>
+                        <li>• Speaking (1 event/month average): <strong className="text-white">$6,000</strong></li>
+                      </ul>
+                      <p className="text-green-300 font-bold text-xl mt-3">Total monthly revenue: <strong className="text-white">$87,760</strong></p>
+                      <p className="text-green-300 font-bold text-lg mt-2">Annual Revenue: <strong className="text-white">$1,053,120</strong></p>
+                    </div>
+                    <div>
+                      <h6 className="text-md font-semibold text-white mb-2">Time Investment at This Level</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm mb-4">
+                        <li>• Content creation: 10 hours/week (team handles editing)</li>
+                        <li>• Community management: 5 hours/week (moderators help)</li>
+                        <li>• Coaching/calls: 8 hours/week</li>
+                        <li>• Strategy/business: 7 hours/week</li>
+                        <li>• <strong className="text-white">Total: 30 hours/week</strong> (working ON business, not IN it)</li>
+                      </ul>
+                      <h6 className="text-md font-semibold text-white mb-2">Team Structure at 500K</h6>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Video editor: $1,500-$3,000/month</li>
+                        <li>• Social media manager: $2,000-$4,000/month</li>
+                        <li>• Virtual assistant: $1,000-$2,000/month</li>
+                        <li>• Email marketing specialist: $1,500-$3,000/month</li>
+                        <li>• Community manager: $1,500-$2,500/month</li>
+                        <li>• <strong className="text-white">Total team costs: $7,500-$14,500/month</strong></li>
+                      </ul>
+                      <p className="text-green-300 font-bold text-lg mt-3">Net monthly profit after team: <strong className="text-white">$73,260-$80,260</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Monetization Mistakes & Conclusion */}
+              <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                <h5 className="text-lg font-bold text-red-400 mb-4">The Monetization Mistake That Kills Growth</h5>
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                    <p className="text-red-300 font-semibold mb-2 flex items-center gap-2">
+                      <span>❌</span>
+                      <span>Waiting until 500K to monetize</span>
+                    </p>
+                    <ul className="space-y-1 text-gray-300 text-sm ml-6">
+                      <li>• You burn out before getting there</li>
+                      <li>• You can't invest in growth (equipment, team, ads)</li>
+                      <li>• Audience questions why you never offer anything</li>
+                    </ul>
+                  </div>
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                    <p className="text-green-300 font-semibold mb-2 flex items-center gap-2">
+                      <span>✅</span>
+                      <span>Start monetizing at 5K-10K</span>
+                    </p>
+                    <ul className="space-y-1 text-gray-300 text-sm ml-6">
+                      <li>• Revenue funds better content</li>
+                      <li>• Proves your business model works</li>
+                      <li>• Builds audience relationship (they want to support you)</li>
+                      <li>• Each revenue milestone funds the next growth phase</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-lg p-6 mb-4">
+                  <h6 className="text-md font-semibold text-blue-400 mb-3">The Compounding Effect</h6>
+                  <p className="text-gray-300 mb-3 text-sm">Creators who monetize early grow faster because:</p>
+                  <ol className="space-y-2 text-gray-300 text-sm list-decimal list-inside">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">1.</span>
+                      <span>Revenue → Better equipment → Better content → More followers</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">2.</span>
+                      <span>Revenue → Hire editor → More time for strategy → Faster growth</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">3.</span>
+                      <span>Revenue → Run ads → Accelerate growth → Hit milestones faster</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">4.</span>
+                      <span>Revenue → Validation → Confidence → Better content → More trust</span>
+                    </li>
+                  </ol>
+                </div>
+
+                <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 rounded-lg p-4">
+                  <p className="text-lg text-white font-semibold text-center">
+                    Start small. Monetize early. Scale systematically. By the time you hit 500K, you'll have a multi-six-figure business, not just a large follower count.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
