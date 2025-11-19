@@ -1430,149 +1430,274 @@ The platform doesn't matter as much as your execution and consistency. Pick the 
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">What are the algorithm hacks that drive exponential reach on the path to 500K?</h3>
-            <div className="text-gray-300 space-y-4">
-              <p>{`**The algorithm isn't random - it's a predictable system that rewards specific behaviors.** After reverse-engineering Instagram's algorithm through 50+ accounts and consulting with Meta engineers, here are the proven tactics for exponential reach:
+            <h3 className="text-2xl font-bold text-white mb-6">What are the algorithm hacks that drive exponential reach on the path to 500K?</h3>
+            <div className="space-y-8">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                <strong className="text-white font-semibold">The algorithm isn't random - it's a predictable system that rewards specific behaviors.</strong> After reverse-engineering Instagram's algorithm through 50+ accounts and consulting with Meta engineers, here are the proven tactics for exponential reach:
+              </p>
 
-**Algorithm Hack #1: The "Hook Velocity" Technique**
+              {/* Algorithm Hack #1 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">Algorithm Hack #1: The "Hook Velocity" Technique</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">The Discovery</h5>
+                <p className="text-gray-300 mb-6">
+                  Instagram measures engagement SPEED in the first 60 minutes after posting. Posts that get rapid early engagement (first hour) receive 10-30x more reach than posts with slow trickle engagement.
+                </p>
 
-**The Discovery**
-Instagram measures engagement SPEED in the first 60 minutes after posting. Posts that get rapid early engagement (first hour) receive 10-30x more reach than posts with slow trickle engagement.
+                <h5 className="text-lg font-semibold text-green-400 mb-3">How to Exploit It</h5>
+                <ol className="space-y-2 text-gray-300 mb-6 list-decimal list-inside">
+                  <li>Build a "hype list" (50-100 engaged followers via DMs)</li>
+                  <li>Message them 5 minutes before posting: "New post dropping in 5 min - can you comment?"</li>
+                  <li>Post at your optimal time (when YOUR audience is most active, not generic "best times")</li>
+                  <li>First 60 minutes: Reply to EVERY comment within 30 seconds (keeps post active)</li>
+                  <li>Ask question in caption to encourage comments (not "like if you agree" - that's weak)</li>
+                </ol>
 
-**How to Exploit It**
-1. Build a "hype list" (50-100 engaged followers via DMs)
-2. Message them 5 minutes before posting: "New post dropping in 5 min - can you comment?"
-3. Post at your optimal time (when YOUR audience is most active, not generic "best times")
-4. First 60 minutes: Reply to EVERY comment within 30 seconds (keeps post active)
-5. Ask question in caption to encourage comments (not "like if you agree" - that's weak)
+                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-blue-400 mb-2">Real Example</h5>
+                  <p className="text-gray-300 mb-2">Creator A: Posts at 2pm, gets 8 comments in first hour → <strong className="text-white">12,000 total reach</strong></p>
+                  <p className="text-gray-300 mb-2">Creator B (same follower count): Posts at 2pm, gets 45 comments in first hour → <strong className="text-white">340,000 total reach</strong></p>
+                  <p className="text-blue-300 font-semibold">Difference: 28x more reach from early velocity alone</p>
+                </div>
 
-**Real Example**
-Creator A: Posts at 2pm, gets 8 comments in first hour → 12,000 total reach
-Creator B (same follower count): Posts at 2pm, gets 45 comments in first hour → 340,000 total reach
-Difference: 28x more reach from early velocity alone
+                <h5 className="text-lg font-semibold text-purple-400 mb-3">Implementation Timeline</h5>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span><strong className="text-white">Week 1:</strong> Build hype list by DMing your 100 most engaged followers</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span><strong className="text-white">Week 2:</strong> Test posting at different times, track first-hour engagement</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span><strong className="text-white">Week 3:</strong> Implement full velocity system (notify list + rapid replies)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span><strong className="text-white">Week 4+:</strong> Optimize - double down on what works</span>
+                  </li>
+                </ul>
 
-**Implementation Timeline**
-- Week 1: Build hype list by DMing your 100 most engaged followers
-- Week 2: Test posting at different times, track first-hour engagement
-- Week 3: Implement full velocity system (notify list + rapid replies)
-- Week 4+: Optimize - double down on what works
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                  <p className="text-green-300 font-semibold"><strong className="text-white">Expected Results:</strong> 3-8x reach increase within 30 days</p>
+                </div>
+              </div>
 
-**Expected Results**: 3-8x reach increase within 30 days
+              {/* Algorithm Hack #2 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">Algorithm Hack #2: The "Engagement Loop Sequence"</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">The Discovery</h5>
+                <p className="text-gray-300 mb-6">
+                  Instagram's algorithm tracks "complete engagement cycles" - when a user sees your post, engages, THEN visits your profile, THEN follows you. This signals high-quality content worthy of more reach.
+                </p>
 
-**Algorithm Hack #2: The "Engagement Loop Sequence"**
+                <h5 className="text-lg font-semibold text-green-400 mb-3">How to Exploit It</h5>
+                <p className="text-gray-300 mb-4">Create a "loop sequence" in every post that guides users through the complete journey:</p>
+                <div className="space-y-2 text-gray-300 mb-6">
+                  <p><strong className="text-white">Slide 1 (Hook):</strong> Attention-grabbing promise</p>
+                  <p className="text-gray-400 italic ml-4">"I grew from 0 to 50K in 4 months with this strategy (swipe to see it)"</p>
+                  <p><strong className="text-white">Slides 2-8 (Value):</strong> Deliver on promise, build trust</p>
+                  <p><strong className="text-white">Slide 9 (Profile CTA):</strong> "Want 50+ more strategies like this? Check my profile"</p>
+                  <p><strong className="text-white">Slide 10 (Follow CTA):</strong> "Follow @yourhandle for daily growth tactics"</p>
+                </div>
 
-**The Discovery**
-Instagram's algorithm tracks "complete engagement cycles" - when a user sees your post, engages, THEN visits your profile, THEN follows you. This signals high-quality content worthy of more reach.
+                <h5 className="text-lg font-semibold text-purple-400 mb-3">The Psychology</h5>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>User engaged (swiped through carousel)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>User wants more (profile visit)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>User commits (follow)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>Algorithm sees complete cycle, rewards with massive reach boost</span>
+                  </li>
+                </ul>
 
-**How to Exploit It**
-Create a "loop sequence" in every post that guides users through the complete journey:
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-green-400 mb-2">Real Data</h5>
+                  <p className="text-gray-300 mb-2">Standard carousel: <strong className="text-white">12% profile visit rate</strong> from viewers</p>
+                  <p className="text-gray-300 mb-2">Loop sequence carousel: <strong className="text-white">41% profile visit rate</strong> from viewers</p>
+                  <p className="text-green-300 font-semibold">Follow rate: 3.4x higher</p>
+                </div>
 
-Slide 1 (Hook): Attention-grabbing promise
-"I grew from 0 to 50K in 4 months with this strategy (swipe to see it)"
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                  <p className="text-green-300 font-semibold"><strong className="text-white">Expected Results:</strong> Each "perfect loop" post can generate 800-2,000 new followers (vs 150-300 without loop)</p>
+                </div>
+              </div>
 
-Slides 2-8 (Value): Deliver on promise, build trust
+              {/* Algorithm Hack #3 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">Algorithm Hack #3: The "Save Bait" Technique</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">The Discovery</h5>
+                <p className="text-gray-300 mb-6">
+                  Saves are weighted 5-7x more heavily than likes in Instagram's algorithm (confirmed by multiple Meta leaks). Posts with high save rates dominate the Explore page.
+                </p>
 
-Slide 9 (Profile CTA): "Want 50+ more strategies like this? Check my profile"
+                <h5 className="text-lg font-semibold text-green-400 mb-3">How to Exploit It</h5>
+                <p className="text-gray-300 mb-4">Explicitly engineer your content to be saved:</p>
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <p className="text-white font-semibold mb-2">1. Create "reference-worthy" content</p>
+                    <ul className="ml-4 space-y-1 text-gray-300">
+                      <li>• Checklists, templates, formulas</li>
+                      <li>• Step-by-step tutorials</li>
+                      <li>• Resource lists, tool recommendations</li>
+                      <li>• Data/statistics compilations</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">2. Tell users to save it (yes, it really works)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300">
+                      <li>• Slide 2: "Save this so you can reference it later"</li>
+                      <li>• Caption: "Bookmark this post - you'll need it"</li>
+                      <li>• Video: "You'll want to save this for when you need it"</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">3. Make it visually saveable</p>
+                    <ul className="ml-4 space-y-1 text-gray-300">
+                      <li>• Clean, screenshot-friendly design</li>
+                      <li>• No memes or dated references (hurts evergreen value)</li>
+                      <li>• Numbered lists (users save to implement later)</li>
+                    </ul>
+                  </div>
+                </div>
 
-Slide 10 (Follow CTA): "Follow @yourhandle for daily growth tactics"
+                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-blue-400 mb-2">Real Example</h5>
+                  <p className="text-gray-300 mb-2">Post A: "10 Instagram growth tips" (no save prompt)</p>
+                  <p className="text-gray-300 mb-2 ml-4">- 45,000 impressions, 380 saves (0.84% save rate)</p>
+                  <p className="text-gray-300 mb-2 mt-4">Post B: "10 Instagram growth tips (SAVE THIS - you'll need it)"</p>
+                  <p className="text-gray-300 mb-2 ml-4">- 78,000 impressions, 4,200 saves (5.38% save rate)</p>
+                  <p className="text-blue-300 font-semibold mt-2">Result: Post B got 740% more saves, which triggered Explore page placement, leading to 680,000 total impressions over 30 days vs 52,000 for Post A.</p>
+                </div>
 
-**The Psychology**
-- User engaged (swiped through carousel)
-- User wants more (profile visit)
-- User commits (follow)
-- Algorithm sees complete cycle, rewards with massive reach boost
+                <h5 className="text-lg font-semibold text-purple-400 mb-3">Save Rate Benchmarks</h5>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Below 1%:</strong> Weak content, minimal reach</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 mt-1">•</span>
+                    <span><strong className="text-white">1-3%:</strong> Average content, moderate reach</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span><strong className="text-white">3-5%:</strong> Good content, strong reach</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span><strong className="text-white">5-10%:</strong> Exceptional content, Explore page likely</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span><strong className="text-white">10%+:</strong> Viral territory, massive exponential reach</span>
+                  </li>
+                </ul>
 
-**Real Data**
-Standard carousel: 12% profile visit rate from viewers
-Loop sequence carousel: 41% profile visit rate from viewers
-Follow rate: 3.4x higher
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                  <p className="text-green-300 font-semibold"><strong className="text-white">Expected Results:</strong> Every high-save post (5%+) can generate 3,000-8,000 followers from Explore page traffic</p>
+                </div>
+              </div>
 
-**Expected Results**: Each "perfect loop" post can generate 800-2,000 new followers (vs 150-300 without loop)
+              {/* Algorithm Hack #4 */}
+              <div className="bg-zinc-800/40 rounded-xl p-6 border border-zinc-700/50">
+                <h4 className="text-xl font-bold text-white mb-4">Algorithm Hack #4: The "Retention Hook" for Reels</h4>
+                
+                <h5 className="text-lg font-semibold text-blue-400 mb-3">The Discovery</h5>
+                <p className="text-gray-300 mb-6">
+                  Instagram measures "completion rate" and "rewatch rate" for Reels. Videos where users watch 80%+ OR rewatch get 20-50x distribution compared to videos people scroll past.
+                </p>
 
-**Algorithm Hack #3: The "Save Bait" Technique**
+                <h5 className="text-lg font-semibold text-green-400 mb-3">How to Exploit It</h5>
+                <p className="text-gray-300 mb-4">Engineer your first 0.5 seconds to be impossible to scroll past:</p>
+                
+                <h6 className="text-md font-semibold text-white mb-2">Pattern Interrupt Hooks</h6>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Face close-up with shocking expression</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Text that appears BEFORE video starts playing</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Contrarian statement that challenges beliefs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-400 mt-1">•</span>
+                    <span>Numbers that create curiosity gap</span>
+                  </li>
+                </ul>
 
-**The Discovery**
-Saves are weighted 5-7x more heavily than likes in Instagram's algorithm (confirmed by multiple Meta leaks). Posts with high save rates dominate the Explore page.
+                <h6 className="text-md font-semibold text-white mb-3">Good vs Great Hooks</h6>
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400">❌</span>
+                    <div>
+                      <p className="text-gray-300 font-semibold">Weak Hook: "Here are my Instagram tips"</p>
+                      <p className="text-gray-400 text-sm">(Gives away everything, no reason to watch)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400">✅</span>
+                    <div>
+                      <p className="text-gray-300 font-semibold">Strong Hook: "I deleted 347 posts and GREW faster"</p>
+                      <p className="text-gray-400 text-sm">(Creates curiosity gap - why? how? what happened?)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-red-400">❌</span>
+                    <div>
+                      <p className="text-gray-300 font-semibold">Weak Hook: "How to grow on Instagram"</p>
+                      <p className="text-gray-400 text-sm">(Generic, seen 10,000 times)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400">✅</span>
+                    <div>
+                      <p className="text-gray-300 font-semibold">Strong Hook: "Instagram changed the algorithm yesterday - do THIS now"</p>
+                      <p className="text-gray-400 text-sm">(Urgency + specificity + authority)</p>
+                    </div>
+                  </div>
+                </div>
 
-**How to Exploit It**
-Explicitly engineer your content to be saved:
+                <h6 className="text-md font-semibold text-white mb-2">The "Loop Point" Technique</h6>
+                <p className="text-gray-300 mb-3">Create Reels that loop perfectly, so when they end, they start again seamlessly. Users often watch 2-3 times before realizing it looped.</p>
+                <p className="text-gray-300 mb-2">Example: Transformation video that ends where it began</p>
+                <ul className="ml-4 space-y-1 text-gray-400 mb-6">
+                  <li>• 0 seconds: "Before" state</li>
+                  <li>• 15 seconds: Shows transformation process</li>
+                  <li>• 30 seconds: "After" state morphs back into "Before"</li>
+                  <li>• Loops perfectly - viewer watches 2-3x trying to catch the transition</li>
+                </ul>
 
-1. **Create "reference-worthy" content**
-   - Checklists, templates, formulas
-   - Step-by-step tutorials
-   - Resource lists, tool recommendations
-   - Data/statistics compilations
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                  <h5 className="text-lg font-semibold text-green-400 mb-2">Real Data</h5>
+                  <p className="text-gray-300 mb-2">Average Reel: <strong className="text-white">28% completion rate, 3% rewatch rate → 18,000 views</strong></p>
+                  <p className="text-gray-300 mb-2">Optimized retention Reel: <strong className="text-white">67% completion rate, 34% rewatch rate → 780,000 views</strong></p>
+                </div>
 
-2. **Tell users to save it** (yes, it really works)
-   - Slide 2: "Save this so you can reference it later"
-   - Caption: "Bookmark this post - you'll need it"
-   - Video: "You'll want to save this for when you need it"
-
-3. **Make it visually saveable**
-   - Clean, screenshot-friendly design
-   - No memes or dated references (hurts evergreen value)
-   - Numbered lists (users save to implement later)
-
-**Real Example**
-Post A: "10 Instagram growth tips" (no save prompt)
-- 45,000 impressions, 380 saves (0.84% save rate)
-
-Post B: "10 Instagram growth tips (SAVE THIS - you'll need it)"
-- 78,000 impressions, 4,200 saves (5.38% save rate)
-
-Result: Post B got 740% more saves, which triggered Explore page placement, leading to 680,000 total impressions over 30 days vs 52,000 for Post A.
-
-**Save Rate Benchmarks**
-- Below 1%: Weak content, minimal reach
-- 1-3%: Average content, moderate reach
-- 3-5%: Good content, strong reach
-- 5-10%: Exceptional content, Explore page likely
-- 10%+: Viral territory, massive exponential reach
-
-**Expected Results**: Every high-save post (5%+) can generate 3,000-8,000 followers from Explore page traffic
-
-**Algorithm Hack #4: The "Retention Hook" for Reels**
-
-**The Discovery**
-Instagram measures "completion rate" and "rewatch rate" for Reels. Videos where users watch 80%+ OR rewatch get 20-50x distribution compared to videos people scroll past.
-
-**How to Exploit It**
-Engineer your first 0.5 seconds to be impossible to scroll past:
-
-**Pattern Interrupt Hooks**
-- Face close-up with shocking expression
-- Text that appears BEFORE video starts playing
-- Contrarian statement that challenges beliefs
-- Numbers that create curiosity gap
-
-**Good vs Great Hooks**
-
-❌ Weak Hook: "Here are my Instagram tips"
-(Gives away everything, no reason to watch)
-
-✅ Strong Hook: "I deleted 347 posts and GREW faster"
-(Creates curiosity gap - why? how? what happened?)
-
-❌ Weak Hook: "How to grow on Instagram"
-(Generic, seen 10,000 times)
-
-✅ Strong Hook: "Instagram changed the algorithm yesterday - do THIS now"
-(Urgency + specificity + authority)
-
-**The "Loop Point" Technique**
-Create Reels that loop perfectly, so when they end, they start again seamlessly. Users often watch 2-3 times before realizing it looped.
-
-Example: Transformation video that ends where it began
-- 0 seconds: "Before" state
-- 15 seconds: Shows transformation process
-- 30 seconds: "After" state morphs back into "Before"
-- Loops perfectly - viewer watches 2-3x trying to catch the transition
-
-**Real Data**
-Average Reel: 28% completion rate, 3% rewatch rate → 18,000 views
-Optimized retention Reel: 67% completion rate, 34% rewatch rate → 780,000 views
-
-**Expected Results**: 1-2 viral Reels per month with retention optimization (vs 1 per quarter without)
+                <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                  <p className="text-green-300 font-semibold"><strong className="text-white">Expected Results:</strong> 1-2 viral Reels per month with retention optimization (vs 1 per quarter without)</p>
+                </div>
+              </div>
 
 **Algorithm Hack #5: The "Strategic Shadowban Avoidance" System**
 
