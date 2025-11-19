@@ -1630,713 +1630,1012 @@ const schema = generateBlogPostSchema({
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-red-400 mb-4">What equipment and editing tools do I need for YouTube Shorts in 2026?</h3>
-                <div className="prose prose-invert max-w-none text-gray-300">
-                    <p className="mb-4">{`**You can create viral Shorts with just a smartphone + CapCut (both free), but the $500-$2,000 "Pro Setup" accelerates quality and consistency 10×.** Here's the complete equipment and software breakdown by budget:
+                <h3 className="text-2xl font-bold text-red-400 mb-6">What equipment and editing tools do I need for YouTube Shorts in 2026?</h3>
+                <div className="space-y-6">
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                        <strong className="text-white font-semibold">You can create viral Shorts with just a smartphone + CapCut (both free), but the $500-$2,000 "Pro Setup" accelerates quality and consistency 10×.</strong> Here's the complete equipment and software breakdown by budget:
+                    </p>
 
-**Budget Tier: $0-$100 (Starter Setup)**
+                    {/* Budget Tier 1 */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">Budget Tier: $0-$100 (Starter Setup)</h4>
+                        <div className="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Hardware:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Smartphone (iPhone 11+ or Android equivalent) - <strong className="text-white">$0</strong> if you have one</li>
+                                    <li>• Phone tripod with remote - <strong className="text-white">$15-$25</strong> (Amazon Basics)</li>
+                                    <li>• Clip-on ring light - <strong className="text-white">$12-$20</strong></li>
+                                    <li>• Lavalier mic for phone - <strong className="text-white">$20-$30</strong> (Rode SmartLav+)</li>
+                                </ul>
+                                <p className="text-green-400 font-semibold mt-2">Total: <strong className="text-white">$47-$75</strong></p>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Software (100% free):</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• CapCut (editing) - <strong className="text-white">FREE</strong></li>
+                                    <li>• Canva (thumbnails/graphics) - <strong className="text-white">FREE</strong> tier</li>
+                                    <li>• ChatGPT (scripts/ideas) - <strong className="text-white">FREE</strong> tier</li>
+                                    <li>• YouTube Studio (analytics) - <strong className="text-white">FREE</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p className="text-gray-300 text-sm mb-2">This setup can create Shorts that get <strong className="text-white">1M+ views</strong>. I grew my first channel to 50K subscribers using only this tier. The limitation isn't quality—it's workflow speed.</p>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                            <p className="text-gray-300 text-xs italic">Real creator example: @financetips (347K subscribers) still shoots 90% of Shorts on iPhone 13 with $20 ring light. Makes <strong className="text-white">$8K/month</strong>.</p>
+                        </div>
+                    </div>
 
-Hardware:
-- Smartphone (iPhone 11+ or Android equivalent) - $0 if you have one
-- Phone tripod with remote - $15-$25 (Amazon Basics)
-- Clip-on ring light - $12-$20
-- Lavalier mic for phone - $20-$30 (Rode SmartLav+)
-Total: $47-$75
+                    {/* Intermediate Tier */}
+                    <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-blue-400 mb-4">Intermediate Tier: $500-$1,000 (Serious Creator)</h4>
+                        <div className="mb-4">
+                            <h5 className="text-md font-semibold text-blue-300 mb-3">Hardware upgrades:</h5>
+                            <div className="space-y-3">
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">iPhone 14 Pro or Samsung S23 Ultra</strong> - $800-$1,000</p>
+                                    <p className="text-gray-300 text-xs mb-1">Why: ProRes video, better low light, superior stabilization</p>
+                                    <p className="text-gray-300 text-xs">Impact: Noticeably higher video quality</p>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Rode VideoMic Me-L</strong> (directional mic) - $80</p>
+                                    <p className="text-gray-300 text-xs mb-1">Why: Much better audio than built-in mic</p>
+                                    <p className="text-gray-300 text-xs">Impact: Reduces need for voiceover fixes</p>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Smallrig phone cage + handles</strong> - $50-$80</p>
+                                    <p className="text-gray-300 text-xs mb-1">Why: Stabilization + professional mounting</p>
+                                    <p className="text-gray-300 text-xs">Impact: Smoother handheld shots</p>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Neewer 10" LED ring light</strong> with stand - $40-$60</p>
+                                    <p className="text-gray-300 text-xs mb-1">Why: Better light control than clip-on</p>
+                                    <p className="text-gray-300 text-xs">Impact: Professional lighting quality</p>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Phone teleprompter</strong> - $50-$80</p>
+                                    <p className="text-gray-300 text-xs mb-1">Why: Better delivery, less retakes</p>
+                                    <p className="text-gray-300 text-xs">Impact: Save <strong className="text-white">30-40% editing time</strong></p>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Green screen backdrop</strong> (optional) - $30-$50</p>
+                                    <p className="text-gray-300 text-xs mb-1">Why: Unlimited backgrounds</p>
+                                    <p className="text-gray-300 text-xs">Impact: More creative possibilities</p>
+                                </div>
+                            </div>
+                            <p className="text-blue-400 font-semibold mt-3">Total hardware: <strong className="text-white">$1,050-$1,350</strong></p>
+                        </div>
+                        <div className="mb-4">
+                            <h5 className="text-md font-semibold text-blue-300 mb-3">Software upgrades:</h5>
+                            <div className="space-y-2">
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">CapCut Pro</strong> - $7.99/month ($95.88/year)</p>
+                                    <p className="text-gray-300 text-xs">Why: Remove watermark, more effects, 4K export | Impact: Professional polish</p>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Canva Pro</strong> - $12.99/month ($155.88/year)</p>
+                                    <p className="text-gray-300 text-xs">Why: Unlimited templates, remove bg tool | Impact: Better thumbnails = higher CTR</p>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">ChatGPT Plus</strong> - $20/month ($240/year)</p>
+                                    <p className="text-gray-300 text-xs">Why: GPT-4 for better scripts | Impact: Higher quality ideas faster</p>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Epidemic Sound</strong> (music) - $15/month ($180/year)</p>
+                                    <p className="text-gray-300 text-xs">Why: Copyright-free music library | Impact: No copyright claims</p>
+                                </div>
+                            </div>
+                            <p className="text-blue-400 font-semibold mt-3">Total software: <strong className="text-white">$671.76/year</strong> ($56/month)</p>
+                        </div>
+                        <p className="text-gray-300 text-sm">This tier is the <strong className="text-white">"sweet spot"</strong> for serious creators. Quality jump is significant, workflow efficiency doubles, and you look as professional as channels with 500K+ subscribers.</p>
+                    </div>
 
-Software (100% free):
-- CapCut (editing) - FREE
-- Canva (thumbnails/graphics) - FREE tier
-- ChatGPT (scripts/ideas) - FREE tier
-- YouTube Studio (analytics) - FREE
+                    {/* Professional Tier */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">Professional Tier: $2,000-$5,000 (Full-Time Creator)</h4>
+                        <div className="mb-4">
+                            <h5 className="text-md font-semibold text-purple-300 mb-3">Hardware upgrades:</h5>
+                            <div className="grid md:grid-cols-2 gap-3">
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Sony ZV-E10 or Canon M50 Mark II</strong> - $700-$900</p>
+                                    <p className="text-gray-300 text-xs">Why: Dedicated camera beats any phone | Impact: Shallow depth of field, better color science</p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Sigma 16mm f/1.4 lens</strong> - $350-$450</p>
+                                    <p className="text-gray-300 text-xs">Why: Wide angle perfect for Shorts | Impact: Cinematic look, subject separation</p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Rode Wireless GO II</strong> - $299</p>
+                                    <p className="text-gray-300 text-xs">Why: Wireless audio, dual channel | Impact: Freedom of movement, backup audio</p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Elgato Key Light</strong> (2x) - $200-$300</p>
+                                    <p className="text-gray-300 text-xs">Why: Adjustable color temperature | Impact: Studio-quality lighting</p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Manfrotto compact tripod</strong> - $100-$150</p>
+                                    <p className="text-gray-300 text-xs">Why: Reliable, smooth pan/tilt | Impact: Stable shots, repeatable setups</p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Atomos Ninja V</strong> (monitor/recorder) - $500-$700</p>
+                                    <p className="text-gray-300 text-xs">Why: Better monitoring, ProRes recording | Impact: Catch focus/exposure issues live</p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">M1 MacBook Air or equivalent PC</strong> - $900-$1,200</p>
+                                    <p className="text-gray-300 text-xs">Why: Fast editing, stable performance | Impact: Edit <strong className="text-white">10× faster</strong> than phone</p>
+                                </div>
+                            </div>
+                            <p className="text-purple-400 font-semibold mt-3">Total hardware: <strong className="text-white">$3,049-$3,899</strong></p>
+                        </div>
+                        <div className="mb-4">
+                            <h5 className="text-md font-semibold text-purple-300 mb-3">Software upgrades:</h5>
+                            <div className="space-y-2">
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Adobe Creative Cloud</strong> (Premiere + After Effects) - $54.99/month ($659.88/year)</p>
+                                    <p className="text-gray-300 text-xs">Why: Industry standard, unlimited creative control | Impact: Professional-grade effects</p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Final Cut Pro</strong> (Mac only, one-time) - $299</p>
+                                    <p className="text-gray-300 text-xs">Alternative to Premiere, faster on Mac</p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Motion Array</strong> - $29.99/month ($359.88/year)</p>
+                                    <p className="text-gray-300 text-xs">Why: Templates, stock footage, plugins | Impact: Speed up editing <strong className="text-white">3-5×</strong></p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">Frame.io</strong> (collaboration) - $15/month ($180/year)</p>
+                                    <p className="text-gray-300 text-xs">Why: Team/client collaboration | Impact: Streamline feedback process</p>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                    <p className="text-gray-300 text-sm mb-1"><strong className="text-white">TubeBuddy or VidIQ Pro</strong> - $39/month ($468/year)</p>
+                                    <p className="text-gray-300 text-xs">Why: Advanced analytics, competitor tracking | Impact: Data-driven decisions</p>
+                                </div>
+                            </div>
+                            <p className="text-purple-400 font-semibold mt-3">Total software: <strong className="text-white">$1,967.76/year</strong> ($164/month)</p>
+                        </div>
+                        <p className="text-gray-300 text-sm">This tier is for creators earning <strong className="text-white">$5K+/month</strong> who need maximum efficiency and quality. Can produce <strong className="text-white">5-10 Shorts per day</strong> at this level.</p>
+                    </div>
 
-This setup can create Shorts that get 1M+ views. I grew my first channel to 50K subscribers using only this tier. The limitation isn't quality—it's workflow speed.
+                    {/* Elite Tier */}
+                    <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-yellow-400 mb-4">Elite Tier: $5,000+ (Business/Agency Level)</h4>
+                        <div className="mb-4">
+                            <h5 className="text-md font-semibold text-yellow-300 mb-3">Hardware:</h5>
+                            <ul className="space-y-2 text-gray-300 text-sm">
+                                <li>• <strong className="text-white">Sony A7IV or Canon R6 Mark II</strong> - $2,500-$3,000</li>
+                                <li>• <strong className="text-white">Multiple prime lenses</strong> (24mm, 35mm, 50mm) - $1,500-$2,500</li>
+                                <li>• <strong className="text-white">Professional lighting kit</strong> (Aputure, Nanlux) - $2,000-$4,000</li>
+                                <li>• <strong className="text-white">Professional audio</strong> (Sennheiser, Shure) - $500-$1,000</li>
+                                <li>• <strong className="text-white">Mac Studio or high-end PC</strong> - $2,000-$4,000</li>
+                                <li>• <strong className="text-white">Professional monitors</strong> (2×) - $600-$1,200</li>
+                            </ul>
+                            <p className="text-yellow-400 font-semibold mt-3">Total: <strong className="text-white">$9,100-$15,700</strong></p>
+                        </div>
+                        <p className="text-gray-300 text-sm">This tier is overkill for most creators unless you're running an agency or creating for major brands.</p>
+                    </div>
 
-Real creator example: @financetips (347K subscribers) still shoots 90% of Shorts on iPhone 13 with $20 ring light. Makes $8K/month.
+                    {/* Editing Software Deep Dive */}
+                    <div className="bg-gradient-to-br from-indigo-500/10 to-blue-500/10 border border-indigo-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-indigo-400 mb-4">The Editing Software Deep Dive</h4>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">CapCut (FREE - Best for beginners)</h5>
+                                <div className="mb-3">
+                                    <p className="text-xs font-semibold text-green-300 mb-1">Pros:</p>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Completely free, no watermark on basic version</li>
+                                        <li>• Mobile + desktop apps</li>
+                                        <li>• Auto-captions (90% accurate)</li>
+                                        <li>• Trending effects updated weekly</li>
+                                        <li>• Templates from viral Shorts</li>
+                                    </ul>
+                                </div>
+                                <div className="mb-2">
+                                    <p className="text-xs font-semibold text-red-300 mb-1">Cons:</p>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Limited to 1080p export (free version)</li>
+                                        <li>• Fewer advanced features than Premiere</li>
+                                    </ul>
+                                </div>
+                                <p className="text-gray-300 text-xs italic">Best for: Beginners to intermediate creators doing 1-5 Shorts/day</p>
+                            </div>
 
-**Intermediate Tier: $500-$1,000 (Serious Creator)**
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Adobe Premiere Pro ($54.99/month)</h5>
+                                <div className="mb-3">
+                                    <p className="text-xs font-semibold text-green-300 mb-1">Pros:</p>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Unlimited creative control</li>
+                                        <li>• Integration with After Effects</li>
+                                        <li>• Professional color grading</li>
+                                        <li>• Advanced audio mixing</li>
+                                        <li>• Plugins ecosystem</li>
+                                    </ul>
+                                </div>
+                                <div className="mb-2">
+                                    <p className="text-xs font-semibold text-red-300 mb-1">Cons:</p>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Steep learning curve</li>
+                                        <li>• Expensive subscription</li>
+                                        <li>• Requires powerful computer</li>
+                                    </ul>
+                                </div>
+                                <p className="text-gray-300 text-xs italic">Best for: Advanced creators, professional productions</p>
+                            </div>
 
-Hardware upgrades:
-- iPhone 14 Pro or Samsung S23 Ultra - $800-$1,000
-  - Why: ProRes video, better low light, superior stabilization
-  - Impact: Noticeably higher video quality
-- Rode VideoMic Me-L (directional mic) - $80
-  - Why: Much better audio than built-in mic
-  - Impact: Reduces need for voiceover fixes
-- Smallrig phone cage + handles - $50-$80
-  - Why: Stabilization + professional mounting
-  - Impact: Smoother handheld shots
-- Neewer 10" LED ring light with stand - $40-$60
-  - Why: Better light control than clip-on
-  - Impact: Professional lighting quality
-- Phone teleprompter - $50-$80
-  - Why: Better delivery, less retakes
-  - Impact: Save 30-40% editing time
-- Green screen backdrop (optional) - $30-$50
-  - Why: Unlimited backgrounds
-  - Impact: More creative possibilities
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Final Cut Pro ($299 one-time) - Mac only</h5>
+                                <div className="mb-3">
+                                    <p className="text-xs font-semibold text-green-300 mb-1">Pros:</p>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Optimized for Mac (extremely fast)</li>
+                                        <li>• Magnetic timeline (faster editing)</li>
+                                        <li>• One-time purchase (no subscription)</li>
+                                        <li>• Good for quick turnarounds</li>
+                                    </ul>
+                                </div>
+                                <div className="mb-2">
+                                    <p className="text-xs font-semibold text-red-300 mb-1">Cons:</p>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Mac only</li>
+                                        <li>• Smaller plugin ecosystem than Premiere</li>
+                                    </ul>
+                                </div>
+                                <p className="text-gray-300 text-xs italic">Best for: Mac users editing high volume</p>
+                            </div>
 
-Total hardware: $1,050-$1,350
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">DaVinci Resolve (FREE)</h5>
+                                <div className="mb-3">
+                                    <p className="text-xs font-semibold text-green-300 mb-1">Pros:</p>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Completely free (professional version)</li>
+                                        <li>• Best color grading tools</li>
+                                        <li>• Professional audio tools (Fairlight)</li>
+                                        <li>• Visual effects (Fusion)</li>
+                                        <li>• No watermarks</li>
+                                    </ul>
+                                </div>
+                                <div className="mb-2">
+                                    <p className="text-xs font-semibold text-red-300 mb-1">Cons:</p>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Steeper learning curve</li>
+                                        <li>• Requires powerful GPU</li>
+                                    </ul>
+                                </div>
+                                <p className="text-gray-300 text-xs italic">Best for: Creators prioritizing color grading</p>
+                            </div>
+                        </div>
+                    </div>
 
-Software upgrades:
-- CapCut Pro - $7.99/month ($95.88/year)
-  - Why: Remove watermark, more effects, 4K export
-  - Impact: Professional polish
-- Canva Pro - $12.99/month ($155.88/year)
-  - Why: Unlimited templates, remove bg tool
-  - Impact: Better thumbnails = higher CTR
-- ChatGPT Plus - $20/month ($240/year)
-  - Why: GPT-4 for better scripts
-  - Impact: Higher quality ideas faster
-- Epidemic Sound (music) - $15/month ($180/year)
-  - Why: Copyright-free music library
-  - Impact: No copyright claims
+                    {/* AI-Powered Tools */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">AI-Powered Tools (2026 Game-Changers)</h4>
+                        <div className="grid md:grid-cols-2 gap-3">
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-purple-300 mb-1">OpusClip ($19-$79/month)</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Auto-cuts long videos into Shorts</li>
+                                    <li>• AI identifies viral moments</li>
+                                    <li>• Saves <strong className="text-white">70% editing time</strong></li>
+                                </ul>
+                                <p className="text-gray-300 text-xs italic mt-1">Best for: Repurposing long-form content</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-purple-300 mb-1">Descript ($12-$30/month)</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Edit video by editing text transcript</li>
+                                    <li>• AI voice cloning</li>
+                                    <li>• Remove filler words automatically</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs italic mt-1">Best for: Talk-to-camera Shorts, podcasters</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-purple-300 mb-1">Runway ML ($12-$35/month)</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• AI video effects (style transfer, remove objects)</li>
+                                    <li>• Green screen without green screen</li>
+                                    <li>• Generative AI backgrounds</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs italic mt-1">Best for: Creative effects, fixing mistakes</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-purple-300 mb-1">Pictory.ai ($23-$119/month)</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Turn blog posts into video Shorts</li>
+                                    <li>• AI script to video</li>
+                                    <li>• Auto-adds stock footage</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs italic mt-1">Best for: Content repurposing, faceless Shorts</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-purple-300 mb-1">Eleven Labs ($5-$99/month)</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• AI voice generation (sounds human)</li>
+                                    <li>• Voice cloning</li>
+                                    <li>• Multiple languages</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs italic mt-1">Best for: Voiceover Shorts, multilingual content</p>
+                            </div>
+                        </div>
+                    </div>
 
-Total software: $671.76/year ($56/month)
+                    {/* Recommended Setup by Stage */}
+                    <div className="bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-teal-400 mb-4">My Recommended Setup by Stage</h4>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-teal-300 mb-2">Starting out (0-10K subscribers):</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm mb-2">
+                                    <li>• Phone + CapCut + free tools</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs">Investment: <strong className="text-white">$50-$100</strong></p>
+                                <p className="text-gray-300 text-xs italic">Focus: Learning formula, testing content</p>
+                            </div>
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-teal-300 mb-2">Growth phase (10K-100K subscribers):</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm mb-2">
+                                    <li>• Upgrade to CapCut Pro + better mic + lighting</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs">Investment: <strong className="text-white">$500-$800</strong> total</p>
+                                <p className="text-gray-300 text-xs italic">Focus: Consistency, quality improvement</p>
+                            </div>
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-teal-300 mb-2">Full-time (100K+ subscribers):</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm mb-2">
+                                    <li>• Professional camera setup + Premiere Pro + AI tools</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs">Investment: <strong className="text-white">$2,000-$3,000</strong> total</p>
+                                <p className="text-gray-300 text-xs italic">Focus: Efficiency, scaling production</p>
+                            </div>
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-sm font-semibold text-teal-300 mb-2">Agency/Business (500K+ or client work):</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm mb-2">
+                                    <li>• Elite setup + team + full Adobe suite</li>
+                                </ul>
+                                <p className="text-gray-300 text-xs">Investment: <strong className="text-white">$10,000+</strong></p>
+                                <p className="text-gray-300 text-xs italic">Focus: Maximum output, client deliverables</p>
+                            </div>
+                        </div>
+                    </div>
 
-This tier is the "sweet spot" for serious creators. Quality jump is significant, workflow efficiency doubles, and you look as professional as channels with 500K+ subscribers.
+                    {/* Equipment Mistake */}
+                    <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-red-400 mb-4">The Equipment Mistake Everyone Makes</h4>
+                        <p className="text-gray-300 mb-4">Don't buy expensive gear thinking it'll make you successful. I see creators with $5K setups getting 500 views while someone with iPhone + CapCut hits 5M views.</p>
+                        <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-md font-semibold text-red-300 mb-2">Success order of importance:</h5>
+                            <ol className="space-y-2 text-gray-300 text-sm list-decimal list-inside">
+                                <li><strong className="text-white">Content strategy</strong> (50% of success)</li>
+                                <li><strong className="text-white">Editing/pacing</strong> (30% of success)</li>
+                                <li><strong className="text-white">Consistency</strong> (15% of success)</li>
+                                <li><strong className="text-white">Equipment quality</strong> (5% of success)</li>
+                            </ol>
+                        </div>
+                        <p className="text-white font-semibold text-center">Master the first 3 before upgrading equipment. Your first viral Short will fund your equipment upgrades.</p>
+                    </div>
 
-**Professional Tier: $2,000-$5,000 (Full-Time Creator)**
-
-Hardware upgrades:
-- Sony ZV-E10 or Canon M50 Mark II - $700-$900
-  - Why: Dedicated camera beats any phone
-  - Impact: Shallow depth of field, better color science
-- Sigma 16mm f/1.4 lens - $350-$450
-  - Why: Wide angle perfect for Shorts, beautiful bokeh
-  - Impact: Cinematic look, subject separation
-- Rode Wireless GO II - $299
-  - Why: Wireless audio, dual channel
-  - Impact: Freedom of movement, backup audio
-- Elgato Key Light (2x) - $200-$300
-  - Why: Adjustable color temperature, app control
-  - Impact: Studio-quality lighting
-- Manfrotto compact tripod - $100-$150
-  - Why: Reliable, smooth pan/tilt
-  - Impact: Stable shots, repeatable setups
-- Atomos Ninja V (monitor/recorder) - $500-$700
-  - Why: Better monitoring, ProRes recording
-  - Impact: Catch focus/exposure issues live
-- M1 MacBook Air or equivalent PC - $900-$1,200
-  - Why: Fast editing, stable performance
-  - Impact: Edit 10× faster than phone
-
-Total hardware: $3,049-$3,899
-
-Software upgrades:
-- Adobe Creative Cloud (Premiere + After Effects) - $54.99/month ($659.88/year)
-  - Why: Industry standard, unlimited creative control
-  - Impact: Professional-grade effects, no limitations
-- Final Cut Pro (Mac only, one-time) - $299
-  - Alternative to Premiere, faster on Mac
-- Motion Array subscription - $29.99/month ($359.88/year)
-  - Why: Templates, stock footage, plugins
-  - Impact: Speed up editing 3-5×
-- Frame.io (collaboration) - $15/month ($180/year)
-  - Why: If working with team/clients
-  - Impact: Streamline feedback process
-- TubeBuddy or VidIQ Pro - $39/month ($468/year)
-  - Why: Advanced analytics, competitor tracking
-  - Impact: Data-driven decisions
-
-Total software: $1,967.76/year ($164/month)
-
-This tier is for creators earning $5K+/month who need maximum efficiency and quality. Can produce 5-10 Shorts per day at this level.
-
-**Elite Tier: $5,000+ (Business/Agency Level)**
-
-Hardware:
-- Sony A7IV or Canon R6 Mark II - $2,500-$3,000
-- Multiple prime lenses (24mm, 35mm, 50mm) - $1,500-$2,500
-- Professional lighting kit (Aputure, Nanlux) - $2,000-$4,000
-- Professional audio (Sennheiser, Shure) - $500-$1,000
-- Mac Studio or high-end PC - $2,000-$4,000
-- Professional monitors (2×) - $600-$1,200
-
-Total: $9,100-$15,700
-
-This tier is overkill for most creators unless you're running an agency or creating for major brands.
-
-**The Editing Software Deep Dive**
-
-**CapCut (FREE - Best for beginners)**
-Pros:
-- Completely free, no watermark on basic version
-- Mobile + desktop apps
-- Auto-captions (90% accurate)
-- Trending effects updated weekly
-- Templates from viral Shorts
-- Green screen/background removal
-- Speed ramping, transitions
-
-Cons:
-- Limited to 1080p export (free version)
-- Fewer advanced features than Premiere
-- Some effects require Pro version
-
-Best for: Beginners to intermediate creators doing 1-5 Shorts/day
-
-**Adobe Premiere Pro ($54.99/month) - Industry standard**
-Pros:
-- Unlimited creative control
-- Integration with After Effects
-- Professional color grading
-- Advanced audio mixing
-- Keyframe animation
-- Plugins ecosystem
-- Multi-cam editing
-
-Cons:
-- Steep learning curve
-- Expensive subscription
-- Requires powerful computer
-- Overkill for simple Shorts
-
-Best for: Advanced creators, professional productions, complex edits
-
-**Final Cut Pro ($299 one-time) - Mac only**
-Pros:
-- Optimized for Mac (extremely fast)
-- Magnetic timeline (faster editing)
-- One-time purchase (no subscription)
-- Clean interface
-- Good for quick turnarounds
-
-Cons:
-- Mac only
-- Smaller plugin ecosystem than Premiere
-- Less industry-standard than Premiere
-
-Best for: Mac users editing high volume, quick turnarounds
-
-**DaVinci Resolve (FREE) - Color grading powerhouse**
-Pros:
-- Completely free (professional version)
-- Best color grading tools
-- Professional audio tools (Fairlight)
-- Visual effects (Fusion)
-- No watermarks
-
-Cons:
-- Steeper learning curve
-- Requires powerful GPU
-- Less intuitive for beginners
-
-Best for: Creators prioritizing color grading, tech-savvy editors
-
-**AI-Powered Tools (2026 Game-Changers)**
-
-**OpusClip ($19-$79/month)**
-- Auto-cuts long videos into Shorts
-- AI identifies viral moments
-- Auto-adds captions, b-roll
-- Saves 70% editing time
-Best for: Repurposing long-form content
-
-**Descript ($12-$30/month)**
-- Edit video by editing text transcript
-- AI voice cloning (fix mistakes without re-recording)
-- Remove filler words automatically
-- Overdub feature (change words after recording)
-Best for: Talk-to-camera Shorts, podcasters
-
-**Runway ML ($12-$35/month)**
-- AI video effects (style transfer, remove objects)
-- Green screen without green screen
-- Generative AI backgrounds
-- Slow motion from regular footage
-Best for: Creative effects, fixing production mistakes
-
-**Pictory.ai ($23-$119/month)**
-- Turn blog posts into video Shorts
-- AI script to video
-- Auto-adds stock footage
-- Voiceover generation
-Best for: Content repurposing, faceless Shorts
-
-**Eleven Labs ($5-$99/month)**
-- AI voice generation (sounds human)
-- Voice cloning (create consistent narrator)
-- Multiple languages
-Best for: Voiceover Shorts, multilingual content
-
-**My Recommended Setup by Stage**
-
-Starting out (0-10K subscribers):
-- Phone + CapCut + free tools
-- Investment: $50-$100
-- Focus: Learning formula, testing content
-
-Growth phase (10K-100K subscribers):
-- Upgrade to CapCut Pro + better mic + lighting
-- Investment: $500-$800 total
-- Focus: Consistency, quality improvement
-
-Full-time (100K+ subscribers):
-- Professional camera setup + Premiere Pro + AI tools
-- Investment: $2,000-$3,000 total
-- Focus: Efficiency, scaling production
-
-Agency/Business (500K+ or client work):
-- Elite setup + team + full Adobe suite
-- Investment: $10,000+
-- Focus: Maximum output, client deliverables
-
-**The Equipment Mistake Everyone Makes**
-
-Don't buy expensive gear thinking it'll make you successful. I see creators with $5K setups getting 500 views while someone with iPhone + CapCut hits 5M views.
-
-Success order of importance:
-1. Content strategy (50% of success)
-2. Editing/pacing (30% of success)
-3. Consistency (15% of success)
-4. Equipment quality (5% of success)
-
-Master the first 3 before upgrading equipment. Your first viral Short will fund your equipment upgrades.
-
-**Workflow Optimization Tools**
-
-**Planning:**
-- Notion (organization) - FREE
-- Trello (content calendar) - FREE
-- Google Sheets (analytics tracking) - FREE
-
-**Productivity:**
-- Loom (async communication) - $12.50/month
-- Frame.io (video feedback) - $15/month
-- Dropbox (file sharing) - $16.58/month
-
-**Analytics:**
-- TubeBuddy (keyword research) - $9-$49/month
-- VidIQ (competitor analysis) - $7.50-$39/month
-- Google Analytics (traffic source) - FREE
-
-My complete tech stack (100K+ subscriber channel):
-- Shooting: iPhone 14 Pro + Rode VideoMic
-- Editing: CapCut Pro + occasional Premiere Pro
-- AI: ChatGPT Plus + OpusClip
-- Audio: Eleven Labs for voiceovers
-- Graphics: Canva Pro
-- Music: Epidemic Sound
-- Analytics: VidIQ + YouTube Studio
-
-Monthly cost: $127
-One-time cost: $350
-Total first year: $1,874
-
-ROI: This setup generates $20K+/month in revenue. Equipment/software is 1% of monthly revenue.
-
-Start cheap, upgrade strategically based on revenue milestones. Your constraint is skill and strategy, not equipment.`}</p>
+                    {/* Workflow Tools & Final Summary */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">Workflow Optimization Tools</h4>
+                        <div className="grid md:grid-cols-3 gap-4 mb-4">
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-green-300 mb-2">Planning:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Notion (organization) - <strong className="text-white">FREE</strong></li>
+                                    <li>• Trello (content calendar) - <strong className="text-white">FREE</strong></li>
+                                    <li>• Google Sheets (analytics) - <strong className="text-white">FREE</strong></li>
+                                </ul>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-green-300 mb-2">Productivity:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Loom - $12.50/month</li>
+                                    <li>• Frame.io - $15/month</li>
+                                    <li>• Dropbox - $16.58/month</li>
+                                </ul>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                                <h5 className="text-sm font-semibold text-green-300 mb-2">Analytics:</h5>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• TubeBuddy - $9-$49/month</li>
+                                    <li>• VidIQ - $7.50-$39/month</li>
+                                    <li>• Google Analytics - <strong className="text-white">FREE</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-md font-semibold text-blue-300 mb-2">My complete tech stack (100K+ subscriber channel):</h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-gray-300 text-sm">
+                                <div>
+                                    <ul className="space-y-1">
+                                        <li>• Shooting: iPhone 14 Pro + Rode VideoMic</li>
+                                        <li>• Editing: CapCut Pro + occasional Premiere Pro</li>
+                                        <li>• AI: ChatGPT Plus + OpusClip</li>
+                                        <li>• Audio: Eleven Labs for voiceovers</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul className="space-y-1">
+                                        <li>• Graphics: Canva Pro</li>
+                                        <li>• Music: Epidemic Sound</li>
+                                        <li>• Analytics: VidIQ + YouTube Studio</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="mt-3 pt-3 border-t border-blue-500/30">
+                                <p className="text-gray-300 text-sm">Monthly cost: <strong className="text-white">$127</strong> | One-time cost: <strong className="text-white">$350</strong> | Total first year: <strong className="text-white">$1,874</strong></p>
+                                <p className="text-green-400 font-semibold mt-2">ROI: This setup generates <strong className="text-white">$20K+/month</strong> in revenue. Equipment/software is 1% of monthly revenue.</p>
+                            </div>
+                        </div>
+                        <p className="text-white font-semibold text-center">Start cheap, upgrade strategically based on revenue milestones. Your constraint is skill and strategy, not equipment.</p>
+                    </div>
                 </div>
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-red-400 mb-4">How do I optimize my Shorts for the YouTube algorithm to maximize reach?</h3>
-                <div className="prose prose-invert max-w-none text-gray-300">
-                    <p className="mb-4">{`**The YouTube Shorts algorithm prioritizes Average View Duration (85%+), Click-Through Rate (5%+), and Engagement Rate (4%+) in that exact order.** After growing 3 channels to 100K+ subscribers and analyzing YouTube's recommendation patterns, here's the complete algorithm optimization guide:
-
-**The Algorithm's Ranking Factors (Priority Order)**
-
-1. **Average View Duration (AVD) - 40% weight**
-2. **Click-Through Rate (CTR) - 25% weight**
-3. **Engagement Rate (likes, comments, shares) - 20% weight**
-4. **Upload Consistency - 10% weight**
-5. **Watch Time Velocity - 5% weight**
-
-**Optimizing Average View Duration (Target: 85%+)**
-
-Why it matters: AVD is the percentage of your video watched. A 60-second Short with 51-second AVD = 85%. Algorithm interprets high AVD as "valuable content" and shows it to more people.
-
-**How to hit 85%+ AVD:**
-
-Strategy 1: The Length Hack
-- Shorter videos = higher AVD naturally
-- Sweet spot: 21-34 seconds
-- Example: 30-second video with 27-second AVD = 90%
-- VS: 60-second video with 45-second AVD = 75%
-
-Real data from my channel:
-- 15-30 second Shorts: 88% average AVD
-- 31-45 second Shorts: 82% average AVD
-- 46-60 second Shorts: 76% average AVD
-
-Action: If you can deliver value in 30 seconds, don't stretch to 60 seconds.
-
-Strategy 2: The Retention Curve Optimization
-YouTube shows you exactly where people drop off. Study this data religiously.
-
-Common drop-off points:
-- 0-3 seconds: Weak hook (70% of failures)
-- 15-20 seconds: No payoff yet (20% of failures)
-- Final 5 seconds: Weak ending (10% of failures)
-
-Fix by section:
-- 0-3s: A/B test different hooks weekly
-- Middle: Add visual change every 2-3 seconds
-- Ending: Add surprise bonus tip or "wait for it"
-
-Strategy 3: The Loop Mechanism
-Make them watch twice = double your AVD
-
-Loop techniques:
-- End at the beginning (circular story)
-- "Did you catch it?" (plant hidden detail)
-- Show result first, explain after, show result again
-- Music loop that seamlessly repeats
-
-Real example: My "3 Photoshop tips" Short
-- 30 seconds long
-- Tips fly by fast (can't catch all)
-- Average viewer watches 2.3 times
-- AVD: 138% (yes, over 100% due to replays)
-- Result: 4.7M views
-
-Strategy 4: Pacing Intensity
-Edit pace should match content energy
-
-High-energy content (entertainment, tech):
-- Cut every 1-2 seconds
-- Fast transitions
-- Dynamic camera movement
-- Example: Tech unboxing, fitness demos
-
-Medium energy (tutorials, explanations):
-- Cut every 2-4 seconds
-- Smooth transitions
-- Stable camera with occasional movement
-- Example: How-to guides, life hacks
-
-Low energy (cinematic, ASMR):
-- Cut every 4-8 seconds
-- Slow transitions
-- Smooth camera movements
-- Example: Satisfying videos, relaxation content
-
-**Optimizing Click-Through Rate (Target: 5%+)**
-
-Why it matters: CTR = (clicks ÷ impressions) × 100. If YouTube shows your Short to 10,000 people and 500 click, CTR = 5%. Low CTR = algorithm stops promoting.
-
-YouTube CTR benchmarks:
-- 0-2%: Poor (algorithm kills promotion)
-- 2-4%: Below average (limited reach)
-- 4-6%: Average (normal distribution)
-- 6-10%: Good (algorithm pushes harder)
-- 10%+: Excellent (viral trajectory)
-
-**How to increase CTR:**
-
-Element 1: Thumbnail (even though Shorts auto-play)
-Thumbnail matters for:
-- Suggested videos sidebar
-- YouTube search results
-- External shares (Twitter, Reddit)
-
-Thumbnail formula:
-- Bright, contrasting colors
-- Large text (5 words max)
-- Human face showing emotion (60% of frame)
-- Curiosity gap ("The secret to...")
-
-Example thumbnails that crushed:
-- Before/after split screen: 8.7% CTR
-- Shocked face reaction: 7.2% CTR
-- Text: "This changed everything": 6.9% CTR
-
-Element 2: Title Optimization
-Shorts titles must work in TWO contexts:
-1. Mobile feed (only first 30-40 characters show)
-2. Search/suggested (full title visible)
-
-Title structures that work:
-
-Pattern 1: Number + Outcome
-"3 Apps That Make $100/Day"
-- Front-loads the benefit
-- Specific number creates curiosity
-- CTR: 6-8%
-
-Pattern 2: Negative Angle
-"Why Your Shorts Aren't Getting Views"
-- Targets pain point
-- Promises solution
-- CTR: 7-9%
-
-Pattern 3: How-To (Specific)
-"How I Edit Shorts in 5 Minutes"
-- Specific timeframe
-- Implies efficiency
-- CTR: 5-7%
-
-Pattern 4: Controversial Statement
-"Passive Income is a Lie"
-- Challenges belief
-- Creates emotional response
-- CTR: 8-11%
-
-Title mistakes killing CTR:
-- ❌ "My thoughts on productivity"
-- ✅ "I wasted 5 years on fake productivity"
-
-- ❌ "Camera settings tutorial"
-- ✅ "Why your photos look amateur (fix in 30 seconds)"
-
-Element 3: The First Frame
-First frame shows in feed before video plays
-
-First frame checklist:
-- ✅ Faces perform better (human connection)
-- ✅ Text overlay stating value proposition
-- ✅ High contrast colors (stands out in feed)
-- ✅ Clear subject (not cluttered)
-
-A/B test first frames:
-Week 1: Close-up face with text
-Week 2: Product/demo with text
-Week 3: Result/transformation with text
-Week 4: Data/chart with text
-Track CTR for each, use winner
-
-**Optimizing Engagement Rate (Target: 4%+)**
-
-Why it matters: Engagement = (likes + comments + shares) ÷ views × 100. High engagement signals "valuable content" to algorithm.
-
-Engagement benchmarks:
-- 0-1%: Poor
-- 1-2%: Below average
-- 2-4%: Average
-- 4-6%: Good
-- 6%+: Excellent
-
-**How to increase engagement:**
-
-Strategy 1: The CTA (Call-To-Action) Science
-
-Best CTAs ranked by conversion:
-1. "Which one would you choose? Comment below" (5.2% engagement)
-2. "Tag someone who needs this" (4.8% engagement)
-3. "Try this and report back in comments" (4.1% engagement)
-4. "Follow for part 2 tomorrow" (3.9% engagement)
-5. "Save this for later" (3.6% engagement)
-
-Worst CTAs:
-- "Like and subscribe" (0.8% engagement - too generic)
-- "Comment what you think" (1.2% engagement - no direction)
-- No CTA (1.5% engagement - missed opportunity)
-
-CTA placement:
-- 🔴 Voiceover at 40-50 second mark
-- 🔴 Text overlay final 10 seconds
-- 🔴 Pinned comment reinforcing CTA
-
-Strategy 2: The Comment Bait Formula
-
-Ask questions that REQUIRE a response:
-
-Binary choice questions:
-"iPhone or Android? Defend your choice"
-- Forces viewers to pick a side
-- Creates debate in comments
-- Average: 6-8% comment rate
-
-Opinion questions:
-"Am I crazy or is [controversial take] actually true?"
-- Makes viewers feel smart sharing opinion
-- Validates their perspective
-- Average: 4-6% comment rate
-
-Experience questions:
-"Has this ever happened to you?"
-- Relatable scenarios
-- Encourages storytelling
-- Average: 3-5% comment rate
-
-Strategy 3: Reply to EVERY Comment (First 24 Hours)
-
-Algorithm boost from creator replies:
-- Reply within 1 hour: 3× algorithm boost
-- Reply within 24 hours: 2× algorithm boost
-- Reply after 24 hours: 1× algorithm boost
-
-My comment reply strategy:
-Hours 0-6: Reply to every single comment
-Hours 6-24: Reply to top 20 comments
-Day 2+: Reply to high-quality comments only
-
-This creates "comment velocity" that algorithm loves.
-
-Strategy 4: The Like Trigger
-
-Psychological triggers that make people like:
-
-1. Value delivered + exceeded expectations
-2. Made them laugh (dopamine = like)
-3. Made them learn something new (aha moment)
-4. Validated their existing belief
-5. Beautiful visuals (aesthetic appreciation)
-
-How to ask for likes (without asking):
-- "If this helped you, show some love" (subtle)
-- "This took me 20 hours to figure out" (reciprocity)
-- Show like button animation in video (visual cue)
-
-**Upload Consistency (Target: 3-5 Shorts/day)**
-
-Why it matters: Algorithm favors active channels. Consistent uploads = more chances to go viral.
-
-Upload frequency data:
-- 1 Short/day: Baseline growth
-- 3 Shorts/day: 2.5× faster growth
-- 5 Shorts/day: 4× faster growth
-- 10 Shorts/day: Diminishing returns (quality drops)
-
-Optimal posting schedule (EST timezone):
-
-Post 1: 7:00 AM (morning commute)
-Post 2: 12:00 PM (lunch break)
-Post 3: 3:00 PM (afternoon slump)
-Post 4: 7:00 PM (prime time)
-Post 5: 10:00 PM (pre-bed scroll)
-
-Space posts 2-3 hours apart minimum. This gives each Short time to gather data before next one posts.
-
-**Watch Time Velocity (First Hour Critical)**
-
-Algorithm tests your Short in first hour:
-- Shows to small audience (500-2,000 people)
-- Measures AVD, CTR, engagement
-- If performance good → shows to bigger audience
-- If performance bad → stops promoting
-
-First hour benchmarks for viral trajectory:
-- 100+ views: Minimum for consideration
-- 500+ views: Good signal
-- 1,000+ views: Strong signal
-- 5,000+ views: Likely going viral
-
-How to boost first-hour performance:
-
-1. Post when YOUR audience is active
-- Check YouTube Studio → Audience tab
-- Find when your subscribers are online
-- Post 30 minutes before peak time
-
-2. Prime your audience
-- Community post 10 minutes before upload
-- "New Short dropping in 10 minutes"
-- Builds anticipation, ensures immediate views
-
-3. Share to other platforms immediately
-- Instagram Stories (link sticker)
-- Twitter/X
-- LinkedIn (if business content)
-- Email list (if you have one)
-
-4. Engage immediately
-- Like your own video (signals quality)
-- Pin strategic comment
-- Reply to first 10 comments within minutes
-
-**Advanced Algorithm Hacks**
-
-Hack 1: The Series Strategy
-Create multi-part series to game algorithm
-
-"Day 1 of learning [skill]" → Post daily for 30 days
-- Each video recommends next video
-- Builds binge-watching behavior
-- Algorithm sees high session time
-- Compounds views across series
-
-Real example: "Day 1 of learning Python"
-- 30-part series
-- Average 2M views per part
-- Total: 60M views
-- Subscribers gained: 150K
-
-Hack 2: The Remix Strategy
-Repurpose best content in new formats
-
-Original: "5 productivity hacks"
-- Remake as: "5 productivity hacks for students"
-- Remake as: "5 productivity hacks for entrepreneurs"
-- Remake as: "5 productivity hacks for parents"
-
-Same core content, different target audience.
-- Extends life of successful content
-- Reaches different audience segments
-- 3× content output from same research
-
-Hack 3: The Trend Hijack
-YouTube Shorts has a "trending sounds" feature
-
-Find trending sound → Create your version
-- Sound already has algorithm momentum
-- You ride the wave
-- Add unique twist to stand out
-
-Check trending sounds:
-- YouTube Shorts camera → Audio library
-- Sort by "Trending"
-- Create video using trending audio within 24 hours
-
-Timing is critical: Trend lasts 3-7 days typically.
-
-Hack 4: The Playlist Strategy
-Create playlists of your Shorts by topic
-
-"YouTube Growth Shorts" playlist
-- Adds your Shorts to search results
-- Increases session time (auto-play next)
-- Better organization for returning viewers
-
-Algorithm loves: Viewers binge-watching your content.
-
-**What NOT To Do (Algorithm Penalties)**
-
-❌ Clickbait that doesn't deliver
-- High CTR but low AVD = algorithm punishment
-- Viewers feel deceived = negative signal
-
-❌ Buying views/engagement
-- Algorithm detects fake engagement
-- Permanent channel damage
-- Not worth the risk
-
-❌ Reposting TikToks (with watermark)
-- Algorithm demotes cross-posted content
-- Especially with visible watermarks
-- Create native Shorts instead
-
-❌ Inconsistent posting
-- Upload daily for 2 weeks → disappear for week
-- Kills momentum
-- Algorithm favors reliability
-
-❌ Ignoring analytics
-- Flying blind
-- Can't optimize what you don't measure
-- Check YouTube Studio daily
-
-**My Algorithm Optimization Checklist**
-
-Before uploading every Short:
-
-☐ AVD: Is this under 35 seconds? (easier to hit 85%+)
-☐ Hook: Does first 3 seconds create curiosity?
-☐ Pacing: Visual change every 2-3 seconds?
-☐ Title: First 40 characters contain main benefit?
-☐ Thumbnail: Bright, contrasting, emotional face?
-☐ CTA: Specific ask in video + pinned comment?
-☐ Timing: Posting when audience is active?
-☐ Reply: Can I reply to comments in first hour?
-
-After uploading:
-
-☐ Share to other platforms within 5 minutes
-☐ Reply to first 10 comments within 30 minutes
-☐ Check analytics at 1 hour, 6 hours, 24 hours
-☐ Note what works for next video
-
-The algorithm isn't random. It's predictable. Give it what it wants: Videos that keep people on YouTube longer. Optimize ruthlessly, test constantly, and the views will come.`}</p>
+                <h3 className="text-2xl font-bold text-red-400 mb-6">How do I optimize my Shorts for the YouTube algorithm to maximize reach?</h3>
+                <div className="space-y-6">
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                        <strong className="text-white font-semibold">The YouTube Shorts algorithm prioritizes Average View Duration (85%+), Click-Through Rate (5%+), and Engagement Rate (4%+) in that exact order.</strong> After growing 3 channels to 100K+ subscribers and analyzing YouTube's recommendation patterns, here's the complete algorithm optimization guide:
+                    </p>
+
+                    {/* Algorithm Ranking Factors */}
+                    <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-blue-400 mb-4">The Algorithm's Ranking Factors (Priority Order)</h4>
+                        <ol className="space-y-2 text-gray-300 list-decimal list-inside">
+                            <li><strong className="text-white">Average View Duration (AVD)</strong> - <strong className="text-blue-400">40% weight</strong></li>
+                            <li><strong className="text-white">Click-Through Rate (CTR)</strong> - <strong className="text-blue-400">25% weight</strong></li>
+                            <li><strong className="text-white">Engagement Rate</strong> (likes, comments, shares) - <strong className="text-blue-400">20% weight</strong></li>
+                            <li><strong className="text-white">Upload Consistency</strong> - <strong className="text-blue-400">10% weight</strong></li>
+                            <li><strong className="text-white">Watch Time Velocity</strong> - <strong className="text-blue-400">5% weight</strong></li>
+                        </ol>
+                    </div>
+
+                    {/* Optimizing AVD */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">Optimizing Average View Duration (Target: 85%+)</h4>
+                        <p className="text-gray-300 mb-4">Why it matters: AVD is the percentage of your video watched. A 60-second Short with 51-second AVD = 85%. Algorithm interprets high AVD as "valuable content" and shows it to more people.</p>
+
+                        <div className="space-y-4">
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Strategy 1: The Length Hack</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm mb-2">
+                                    <li>• Shorter videos = higher AVD naturally</li>
+                                    <li>• Sweet spot: <strong className="text-white">21-34 seconds</strong></li>
+                                    <li>• Example: 30-second video with 27-second AVD = <strong className="text-white">90%</strong></li>
+                                    <li>• VS: 60-second video with 45-second AVD = <strong className="text-white">75%</strong></li>
+                                </ul>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mt-2">
+                                    <h6 className="text-xs font-semibold text-blue-300 mb-1">Real data from my channel:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• 15-30 second Shorts: <strong className="text-white">88%</strong> average AVD</li>
+                                        <li>• 31-45 second Shorts: <strong className="text-white">82%</strong> average AVD</li>
+                                        <li>• 46-60 second Shorts: <strong className="text-white">76%</strong> average AVD</li>
+                                    </ul>
+                                </div>
+                                <p className="text-gray-300 text-xs mt-2 italic">Action: If you can deliver value in 30 seconds, don't stretch to 60 seconds.</p>
+                            </div>
+
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Strategy 2: The Retention Curve Optimization</h5>
+                                <p className="text-gray-300 text-sm mb-2">YouTube shows you exactly where people drop off. Study this data religiously.</p>
+                                <div className="mb-2">
+                                    <h6 className="text-xs font-semibold text-white mb-1">Common drop-off points:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• <strong className="text-white">0-3 seconds:</strong> Weak hook (70% of failures)</li>
+                                        <li>• <strong className="text-white">15-20 seconds:</strong> No payoff yet (20% of failures)</li>
+                                        <li>• <strong className="text-white">Final 5 seconds:</strong> Weak ending (10% of failures)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h6 className="text-xs font-semibold text-white mb-1">Fix by section:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• 0-3s: A/B test different hooks weekly</li>
+                                        <li>• Middle: Add visual change every 2-3 seconds</li>
+                                        <li>• Ending: Add surprise bonus tip or "wait for it"</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Strategy 3: The Loop Mechanism</h5>
+                                <p className="text-gray-300 text-sm mb-2">Make them watch twice = double your AVD</p>
+                                <div className="mb-2">
+                                    <h6 className="text-xs font-semibold text-white mb-1">Loop techniques:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• End at the beginning (circular story)</li>
+                                        <li>• "Did you catch it?" (plant hidden detail)</li>
+                                        <li>• Show result first, explain after, show result again</li>
+                                        <li>• Music loop that seamlessly repeats</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mt-2">
+                                    <h6 className="text-xs font-semibold text-blue-300 mb-1">Real example: My "3 Photoshop tips" Short</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• 30 seconds long</li>
+                                        <li>• Tips fly by fast (can't catch all)</li>
+                                        <li>• Average viewer watches <strong className="text-white">2.3 times</strong></li>
+                                        <li>• AVD: <strong className="text-white">138%</strong> (yes, over 100% due to replays)</li>
+                                        <li>• Result: <strong className="text-white">4.7M views</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Strategy 4: Pacing Intensity</h5>
+                                <p className="text-gray-300 text-sm mb-2">Edit pace should match content energy</p>
+                                <div className="grid md:grid-cols-3 gap-3">
+                                    <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-red-300 mb-1">High-energy (entertainment, tech):</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Cut every <strong className="text-white">1-2 seconds</strong></li>
+                                            <li>• Fast transitions</li>
+                                            <li>• Dynamic camera movement</li>
+                                        </ul>
+                                    </div>
+                                    <div className="bg-yellow-900/20 border border-yellow-500/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-yellow-300 mb-1">Medium energy (tutorials):</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Cut every <strong className="text-white">2-4 seconds</strong></li>
+                                            <li>• Smooth transitions</li>
+                                            <li>• Stable camera</li>
+                                        </ul>
+                                    </div>
+                                    <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-blue-300 mb-1">Low energy (cinematic, ASMR):</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Cut every <strong className="text-white">4-8 seconds</strong></li>
+                                            <li>• Slow transitions</li>
+                                            <li>• Smooth camera movements</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Optimizing CTR */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">Optimizing Click-Through Rate (Target: 5%+)</h4>
+                        <p className="text-gray-300 mb-4">Why it matters: CTR = (clicks ÷ impressions) × 100. If YouTube shows your Short to 10,000 people and 500 click, CTR = 5%. Low CTR = algorithm stops promoting.</p>
+
+                        <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-md font-semibold text-purple-300 mb-2">YouTube CTR benchmarks:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• <strong className="text-red-400">0-2%:</strong> Poor (algorithm kills promotion)</li>
+                                <li>• <strong className="text-orange-400">2-4%:</strong> Below average (limited reach)</li>
+                                <li>• <strong className="text-yellow-400">4-6%:</strong> Average (normal distribution)</li>
+                                <li>• <strong className="text-green-400">6-10%:</strong> Good (algorithm pushes harder)</li>
+                                <li>• <strong className="text-white">10%+:</strong> Excellent (viral trajectory)</li>
+                            </ul>
+                        </div>
+
+                        <div className="space-y-4">
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-2">Element 1: Thumbnail (even though Shorts auto-play)</h5>
+                                <p className="text-gray-300 text-sm mb-2">Thumbnail matters for: Suggested videos sidebar, YouTube search results, External shares</p>
+                                <div className="mb-2">
+                                    <h6 className="text-xs font-semibold text-white mb-1">Thumbnail formula:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Bright, contrasting colors</li>
+                                        <li>• Large text (5 words max)</li>
+                                        <li>• Human face showing emotion (60% of frame)</li>
+                                        <li>• Curiosity gap ("The secret to...")</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mt-2">
+                                    <h6 className="text-xs font-semibold text-blue-300 mb-1">Example thumbnails that crushed:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Before/after split screen: <strong className="text-white">8.7% CTR</strong></li>
+                                        <li>• Shocked face reaction: <strong className="text-white">7.2% CTR</strong></li>
+                                        <li>• Text: "This changed everything": <strong className="text-white">6.9% CTR</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-2">Element 2: Title Optimization</h5>
+                                <p className="text-gray-300 text-sm mb-3">Shorts titles must work in TWO contexts: Mobile feed (only first 30-40 characters show) and Search/suggested (full title visible)</p>
+                                
+                                <div className="space-y-3">
+                                    <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-purple-200 mb-1">Pattern 1: Number + Outcome</h6>
+                                        <p className="text-gray-300 text-xs italic mb-1">"3 Apps That Make $100/Day"</p>
+                                        <p className="text-gray-300 text-xs">Front-loads benefit, specific number creates curiosity | CTR: <strong className="text-white">6-8%</strong></p>
+                                    </div>
+                                    <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-purple-200 mb-1">Pattern 2: Negative Angle</h6>
+                                        <p className="text-gray-300 text-xs italic mb-1">"Why Your Shorts Aren't Getting Views"</p>
+                                        <p className="text-gray-300 text-xs">Targets pain point, promises solution | CTR: <strong className="text-white">7-9%</strong></p>
+                                    </div>
+                                    <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-purple-200 mb-1">Pattern 3: How-To (Specific)</h6>
+                                        <p className="text-gray-300 text-xs italic mb-1">"How I Edit Shorts in 5 Minutes"</p>
+                                        <p className="text-gray-300 text-xs">Specific timeframe, implies efficiency | CTR: <strong className="text-white">5-7%</strong></p>
+                                    </div>
+                                    <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-purple-200 mb-1">Pattern 4: Controversial Statement</h6>
+                                        <p className="text-gray-300 text-xs italic mb-1">"Passive Income is a Lie"</p>
+                                        <p className="text-gray-300 text-xs">Challenges belief, creates emotional response | CTR: <strong className="text-white">8-11%</strong></p>
+                                    </div>
+                                </div>
+
+                                <div className="bg-red-900/20 border border-red-500/30 rounded p-3 mt-3">
+                                    <h6 className="text-xs font-semibold text-red-300 mb-1">Title mistakes killing CTR:</h6>
+                                    <div className="space-y-1 text-gray-300 text-xs">
+                                        <p>❌ "My thoughts on productivity" → ✅ "I wasted 5 years on fake productivity"</p>
+                                        <p>❌ "Camera settings tutorial" → ✅ "Why your photos look amateur (fix in 30 seconds)"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* First Frame Optimization */}
+                    <div className="bg-gradient-to-br from-orange-500/10 to-yellow-500/10 border border-orange-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-orange-400 mb-4">Element 3: The First Frame</h4>
+                        <p className="text-gray-300 text-sm mb-3">First frame shows in feed before video plays</p>
+                        <div className="bg-orange-900/20 border border-orange-500/30 rounded-lg p-4 mb-3">
+                            <h5 className="text-sm font-semibold text-orange-300 mb-2">First frame checklist:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>✅ Faces perform better (human connection)</li>
+                                <li>✅ Text overlay stating value proposition</li>
+                                <li>✅ High contrast colors (stands out in feed)</li>
+                                <li>✅ Clear subject (not cluttered)</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
+                            <h5 className="text-xs font-semibold text-blue-300 mb-1">A/B test first frames:</h5>
+                            <ul className="space-y-1 text-gray-300 text-xs">
+                                <li>• Week 1: Close-up face with text</li>
+                                <li>• Week 2: Product/demo with text</li>
+                                <li>• Week 3: Result/transformation with text</li>
+                                <li>• Week 4: Data/chart with text</li>
+                            </ul>
+                            <p className="text-gray-300 text-xs mt-1 italic">Track CTR for each, use winner</p>
+                        </div>
+                    </div>
+
+                    {/* Optimizing Engagement Rate */}
+                    <div className="bg-gradient-to-br from-pink-500/10 to-rose-500/10 border border-pink-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-pink-400 mb-4">Optimizing Engagement Rate (Target: 4%+)</h4>
+                        <p className="text-gray-300 mb-4">Why it matters: Engagement = (likes + comments + shares) ÷ views × 100. High engagement signals "valuable content" to algorithm.</p>
+
+                        <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-md font-semibold text-pink-300 mb-2">Engagement benchmarks:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• <strong className="text-red-400">0-1%:</strong> Poor</li>
+                                <li>• <strong className="text-orange-400">1-2%:</strong> Below average</li>
+                                <li>• <strong className="text-yellow-400">2-4%:</strong> Average</li>
+                                <li>• <strong className="text-green-400">4-6%:</strong> Good</li>
+                                <li>• <strong className="text-white">6%+:</strong> Excellent</li>
+                            </ul>
+                        </div>
+
+                        <div className="space-y-4">
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-pink-300 mb-2">Strategy 1: The CTA (Call-To-Action) Science</h5>
+                                <div className="mb-3">
+                                    <h6 className="text-xs font-semibold text-white mb-1">Best CTAs ranked by conversion:</h6>
+                                    <ol className="space-y-1 text-gray-300 text-xs list-decimal list-inside">
+                                        <li>"Which one would you choose? Comment below" - <strong className="text-white">5.2% engagement</strong></li>
+                                        <li>"Tag someone who needs this" - <strong className="text-white">4.8% engagement</strong></li>
+                                        <li>"Try this and report back in comments" - <strong className="text-white">4.1% engagement</strong></li>
+                                        <li>"Follow for part 2 tomorrow" - <strong className="text-white">3.9% engagement</strong></li>
+                                        <li>"Save this for later" - <strong className="text-white">3.6% engagement</strong></li>
+                                    </ol>
+                                </div>
+                                <div className="bg-red-900/20 border border-red-500/30 rounded p-3 mb-2">
+                                    <h6 className="text-xs font-semibold text-red-300 mb-1">Worst CTAs:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• "Like and subscribe" - <strong className="text-white">0.8% engagement</strong> (too generic)</li>
+                                        <li>• "Comment what you think" - <strong className="text-white">1.2% engagement</strong> (no direction)</li>
+                                        <li>• No CTA - <strong className="text-white">1.5% engagement</strong> (missed opportunity)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h6 className="text-xs font-semibold text-white mb-1">CTA placement:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>🔴 Voiceover at 40-50 second mark</li>
+                                        <li>🔴 Text overlay final 10 seconds</li>
+                                        <li>🔴 Pinned comment reinforcing CTA</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-pink-300 mb-2">Strategy 2: The Comment Bait Formula</h5>
+                                <p className="text-gray-300 text-sm mb-2">Ask questions that REQUIRE a response:</p>
+                                <div className="space-y-2">
+                                    <div className="bg-pink-800/20 border border-pink-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-pink-200 mb-1">Binary choice questions:</h6>
+                                        <p className="text-gray-300 text-xs italic mb-1">"iPhone or Android? Defend your choice"</p>
+                                        <p className="text-gray-300 text-xs">Forces viewers to pick a side, creates debate | Average: <strong className="text-white">6-8% comment rate</strong></p>
+                                    </div>
+                                    <div className="bg-pink-800/20 border border-pink-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-pink-200 mb-1">Opinion questions:</h6>
+                                        <p className="text-gray-300 text-xs italic mb-1">"Am I crazy or is [controversial take] actually true?"</p>
+                                        <p className="text-gray-300 text-xs">Makes viewers feel smart sharing opinion | Average: <strong className="text-white">4-6% comment rate</strong></p>
+                                    </div>
+                                    <div className="bg-pink-800/20 border border-pink-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-pink-200 mb-1">Experience questions:</h6>
+                                        <p className="text-gray-300 text-xs italic mb-1">"Has this ever happened to you?"</p>
+                                        <p className="text-gray-300 text-xs">Relatable scenarios, encourages storytelling | Average: <strong className="text-white">3-5% comment rate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-pink-300 mb-2">Strategy 3: Reply to EVERY Comment (First 24 Hours)</h5>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mb-2">
+                                    <h6 className="text-xs font-semibold text-blue-300 mb-1">Algorithm boost from creator replies:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Reply within <strong className="text-white">1 hour</strong>: <strong className="text-white">3× algorithm boost</strong></li>
+                                        <li>• Reply within <strong className="text-white">24 hours</strong>: <strong className="text-white">2× algorithm boost</strong></li>
+                                        <li>• Reply after 24 hours: 1× algorithm boost</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h6 className="text-xs font-semibold text-white mb-1">My comment reply strategy:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Hours 0-6: Reply to <strong className="text-white">every single comment</strong></li>
+                                        <li>• Hours 6-24: Reply to top 20 comments</li>
+                                        <li>• Day 2+: Reply to high-quality comments only</li>
+                                    </ul>
+                                </div>
+                                <p className="text-gray-300 text-xs mt-2 italic">This creates "comment velocity" that algorithm loves.</p>
+                            </div>
+
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-pink-300 mb-2">Strategy 4: The Like Trigger</h5>
+                                <div className="mb-2">
+                                    <h6 className="text-xs font-semibold text-white mb-1">Psychological triggers that make people like:</h6>
+                                    <ol className="space-y-1 text-gray-300 text-xs list-decimal list-inside">
+                                        <li>Value delivered + exceeded expectations</li>
+                                        <li>Made them laugh (dopamine = like)</li>
+                                        <li>Made them learn something new (aha moment)</li>
+                                        <li>Validated their existing belief</li>
+                                        <li>Beautiful visuals (aesthetic appreciation)</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <h6 className="text-xs font-semibold text-white mb-1">How to ask for likes (without asking):</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• "If this helped you, show some love" (subtle)</li>
+                                        <li>• "This took me 20 hours to figure out" (reciprocity)</li>
+                                        <li>• Show like button animation in video (visual cue)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Upload Consistency */}
+                    <div className="bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-teal-400 mb-4">Upload Consistency (Target: 3-5 Shorts/day)</h4>
+                        <p className="text-gray-300 mb-4">Why it matters: Algorithm favors active channels. Consistent uploads = more chances to go viral.</p>
+                        <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-md font-semibold text-teal-300 mb-2">Upload frequency data:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• 1 Short/day: Baseline growth</li>
+                                <li>• 3 Shorts/day: <strong className="text-white">2.5× faster growth</strong></li>
+                                <li>• 5 Shorts/day: <strong className="text-white">4× faster growth</strong></li>
+                                <li>• 10 Shorts/day: Diminishing returns (quality drops)</li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-md font-semibold text-blue-300 mb-2">Optimal posting schedule (EST timezone):</h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-gray-300 text-sm">
+                                <div>• Post 1: <strong className="text-white">7:00 AM</strong> (morning commute)</div>
+                                <div>• Post 2: <strong className="text-white">12:00 PM</strong> (lunch break)</div>
+                                <div>• Post 3: <strong className="text-white">3:00 PM</strong> (afternoon slump)</div>
+                                <div>• Post 4: <strong className="text-white">7:00 PM</strong> (prime time)</div>
+                                <div>• Post 5: <strong className="text-white">10:00 PM</strong> (pre-bed scroll)</div>
+                            </div>
+                            <p className="text-gray-300 text-xs mt-2 italic">Space posts 2-3 hours apart minimum. This gives each Short time to gather data before next one posts.</p>
+                        </div>
+                    </div>
+
+                    {/* Watch Time Velocity */}
+                    <div className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-indigo-400 mb-4">Watch Time Velocity (First Hour Critical)</h4>
+                        <p className="text-gray-300 mb-4">Algorithm tests your Short in first hour: Shows to small audience (500-2,000 people), measures AVD/CTR/engagement. If performance good → shows to bigger audience. If performance bad → stops promoting.</p>
+                        <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4 mb-4">
+                            <h5 className="text-md font-semibold text-indigo-300 mb-2">First hour benchmarks for viral trajectory:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• <strong className="text-white">100+ views</strong>: Minimum for consideration</li>
+                                <li>• <strong className="text-white">500+ views</strong>: Good signal</li>
+                                <li>• <strong className="text-white">1,000+ views</strong>: Strong signal</li>
+                                <li>• <strong className="text-white">5,000+ views</strong>: Likely going viral</li>
+                            </ul>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                            <h5 className="text-md font-semibold text-green-300 mb-2">How to boost first-hour performance:</h5>
+                            <div className="space-y-2 text-gray-300 text-sm">
+                                <div>
+                                    <p className="font-semibold text-white mb-1">1. Post when YOUR audience is active</p>
+                                    <p className="text-xs">Check YouTube Studio → Audience tab → Find when subscribers are online → Post 30 minutes before peak time</p>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-1">2. Prime your audience</p>
+                                    <p className="text-xs">Community post 10 minutes before upload: "New Short dropping in 10 minutes" - Builds anticipation</p>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-1">3. Share to other platforms immediately</p>
+                                    <p className="text-xs">Instagram Stories, Twitter/X, LinkedIn, Email list</p>
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-white mb-1">4. Engage immediately</p>
+                                    <p className="text-xs">Like your own video, pin strategic comment, reply to first 10 comments within minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Advanced Algorithm Hacks */}
+                    <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-yellow-400 mb-4">Advanced Algorithm Hacks</h4>
+                        <div className="space-y-4">
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-yellow-300 mb-2">Hack 1: The Series Strategy</h5>
+                                <p className="text-gray-300 text-sm mb-2">Create multi-part series to game algorithm</p>
+                                <p className="text-gray-300 text-xs italic mb-2">"Day 1 of learning [skill]" → Post daily for 30 days</p>
+                                <ul className="space-y-1 text-gray-300 text-xs mb-2">
+                                    <li>• Each video recommends next video</li>
+                                    <li>• Builds binge-watching behavior</li>
+                                    <li>• Algorithm sees high session time</li>
+                                    <li>• Compounds views across series</li>
+                                </ul>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-2 mt-2">
+                                    <p className="text-gray-300 text-xs">Real example: "Day 1 of learning Python" - 30-part series, average <strong className="text-white">2M views per part</strong>, total <strong className="text-white">60M views</strong>, <strong className="text-white">150K subscribers</strong> gained</p>
+                                </div>
+                            </div>
+
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-yellow-300 mb-2">Hack 2: The Remix Strategy</h5>
+                                <p className="text-gray-300 text-sm mb-2">Repurpose best content in new formats</p>
+                                <p className="text-gray-300 text-xs italic mb-2">Original: "5 productivity hacks" → Remake for students/entrepreneurs/parents</p>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Same core content, different target audience</li>
+                                    <li>• Extends life of successful content</li>
+                                    <li>• <strong className="text-white">3× content output</strong> from same research</li>
+                                </ul>
+                            </div>
+
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-yellow-300 mb-2">Hack 3: The Trend Hijack</h5>
+                                <p className="text-gray-300 text-sm mb-2">YouTube Shorts has a "trending sounds" feature</p>
+                                <ul className="space-y-1 text-gray-300 text-xs mb-2">
+                                    <li>• Find trending sound → Create your version</li>
+                                    <li>• Sound already has algorithm momentum</li>
+                                    <li>• Add unique twist to stand out</li>
+                                    <li>• Check: YouTube Shorts camera → Audio library → Sort by "Trending"</li>
+                                    <li>• Create video using trending audio within <strong className="text-white">24 hours</strong></li>
+                                </ul>
+                                <p className="text-gray-300 text-xs italic">Timing is critical: Trend lasts 3-7 days typically.</p>
+                            </div>
+
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-yellow-300 mb-2">Hack 4: The Playlist Strategy</h5>
+                                <p className="text-gray-300 text-sm mb-2">Create playlists of your Shorts by topic</p>
+                                <ul className="space-y-1 text-gray-300 text-xs">
+                                    <li>• Adds your Shorts to search results</li>
+                                    <li>• Increases session time (auto-play next)</li>
+                                    <li>• Better organization for returning viewers</li>
+                                    <li>• Algorithm loves: Viewers binge-watching your content</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* What NOT To Do */}
+                    <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-red-400 mb-4">What NOT To Do (Algorithm Penalties)</h4>
+                        <div className="space-y-2 text-gray-300 text-sm">
+                            <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                                <p className="mb-1">❌ <strong className="text-white">Clickbait that doesn't deliver</strong></p>
+                                <p className="text-xs">High CTR but low AVD = algorithm punishment. Viewers feel deceived = negative signal.</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                                <p className="mb-1">❌ <strong className="text-white">Buying views/engagement</strong></p>
+                            <ul className="space-y-1 text-gray-300 text-xs">
+                                <li>• Algorithm detects fake engagement</li>
+                                <li>• Permanent channel damage</li>
+                                <li>• Not worth the risk</li>
+                            </ul>
+                        </div>
+                        <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                            <p className="mb-1">❌ <strong className="text-white">Reposting TikToks (with watermark)</strong></p>
+                            <ul className="space-y-1 text-gray-300 text-xs">
+                                <li>• Algorithm demotes cross-posted content</li>
+                                <li>• Especially with visible watermarks</li>
+                                <li>• Create native Shorts instead</li>
+                            </ul>
+                        </div>
+                        <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                            <p className="mb-1">❌ <strong className="text-white">Inconsistent posting</strong></p>
+                            <ul className="space-y-1 text-gray-300 text-xs">
+                                <li>• Upload daily for 2 weeks → disappear for week</li>
+                                <li>• Kills momentum</li>
+                                <li>• Algorithm favors reliability</li>
+                            </ul>
+                        </div>
+                        <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                            <p className="mb-1">❌ <strong className="text-white">Ignoring analytics</strong></p>
+                            <ul className="space-y-1 text-gray-300 text-xs">
+                                <li>• Flying blind</li>
+                                <li>• Can't optimize what you don't measure</li>
+                                <li>• Check YouTube Studio daily</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Algorithm Optimization Checklist */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">My Algorithm Optimization Checklist</h4>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-3">Before uploading every Short:</h5>
+                                <ul className="space-y-2 text-gray-300 text-sm">
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span><strong className="text-white">AVD:</strong> Is this under 35 seconds? (easier to hit 85%+)</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span><strong className="text-white">Hook:</strong> Does first 3 seconds create curiosity?</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span><strong className="text-white">Pacing:</strong> Visual change every 2-3 seconds?</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span><strong className="text-white">Title:</strong> First 40 characters contain main benefit?</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span><strong className="text-white">Thumbnail:</strong> Bright, contrasting, emotional face?</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span><strong className="text-white">CTA:</strong> Specific ask in video + pinned comment?</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span><strong className="text-white">Timing:</strong> Posting when audience is active?</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span><strong className="text-white">Reply:</strong> Can I reply to comments in first hour?</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-3">After uploading:</h5>
+                                <ul className="space-y-2 text-gray-300 text-sm">
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Share to other platforms within <strong className="text-white">5 minutes</strong></span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Reply to first <strong className="text-white">10 comments</strong> within <strong className="text-white">30 minutes</strong></span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Check analytics at <strong className="text-white">1 hour, 6 hours, 24 hours</strong></span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Note what works for next video</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p className="text-white font-semibold text-center mt-4">The algorithm isn't random. It's predictable. Give it what it wants: Videos that keep people on YouTube longer. Optimize ruthlessly, test constantly, and the views will come.</p>
+                    </div>
                 </div>
             </div>
 
