@@ -1037,29 +1037,7 @@ export default function AIInfluencerExamplesPage() {
           </div>
         </div>
 
-        <SmartCTA
-          title="Copy These Proven Strategies to Build Your AI Influencer"
-          description="Our course teaches you the exact tactics used by Lu, Lil Miquela, Noonoouri, and 12 other successful virtual influencers earning $100K+/month."
-          primaryButton={{
-            text: "Enroll in AI Influencer Course →",
-            href: "/ai-influencer-creation"
-          }}
-          secondaryButton={{
-            text: "Download Case Study Bundle",
-            href: "/resources/ai-influencer-case-studies"
-          }}
-          features={[
-            "15 case study breakdowns with revenue analysis",
-            "Character development framework (narrative identity)",
-            "Niche selection matrix (tested on luxury brands)",
-            "Content batching system (90 posts in 2 weeks)",
-            "Multi-platform growth roadmap",
-            "Revenue diversification blueprint (7 streams)",
-            "Brand pitch templates (used to land $40K+ deals)",
-            "Legal compliance & FTC disclosure templates"
-          ]}
-          gradient="from-purple-600 via-pink-600 to-orange-600"
-        />
+        <SmartCTA blogSlug="ai-influencer-examples-earning-100k-month" />
 
         {/* FAQ Section */}
         <h2 className="text-4xl font-bold text-white mt-16 mb-8">Frequently Asked Questions About AI Influencer Examples</h2>
@@ -1189,29 +1167,7 @@ export default function AIInfluencerExamplesPage() {
 
         {/* Final CTA */}
         <div className="my-16">
-          <SmartCTA
-            title="Your AI Influencer Success Story Starts Here"
-            description="These 15 examples prove virtual influencers earning $100K+/month is achievable. Join 4,000+ students using our proven framework to build AI influencers with similar success."
-            primaryButton={{
-              text: "Enroll in AI Influencer Course Now →",
-              href: "/ai-influencer-creation"
-            }}
-            secondaryButton={{
-              text: "Download Free Case Study PDF",
-              href: "/resources/15-ai-influencer-case-studies-pdf"
-            }}
-            features={[
-              "Complete case study analysis of all 15 influencers",
-              "ComfyUI & LoRA training (create Lu/Lil Miquela quality)",
-              "Character development framework (narrative identity)",
-              "Brand pitch deck templates ($40K+ deal proven)",
-              "Multi-platform growth automation",
-              "Revenue diversification blueprint (7 streams)",
-              "Legal compliance & FTC disclosure",
-              "Private community of 4,000+ AI creator entrepreneurs"
-            ]}
-            gradient="from-purple-600 via-pink-600 to-orange-600"
-          />
+          <SmartCTA blogSlug="ai-influencer-examples-earning-100k-month" />
         </div>
 
         {/* Conclusion */}
