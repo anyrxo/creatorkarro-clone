@@ -435,7 +435,7 @@ export default function YouTubeShortsStrategy() {
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Complete YouTube Shorts FAQ</h2>
 
             <div className="space-y-8">
-                    <div className="bg-zinc-900 rounded-xl p-8">
+                <div className="bg-zinc-900 rounded-xl p-8">
                     <h3 className="text-2xl font-bold text-red-400 mb-6">How much money can you actually make from YouTube Shorts in 2026?</h3>
                 <div className="space-y-6">
                     <p className="text-lg text-gray-300 leading-relaxed">
