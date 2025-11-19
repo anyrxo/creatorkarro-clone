@@ -7,375 +7,208 @@ import WordRotate from '@/components/magicui/word-rotate'
 import TypingAnimation from '@/components/magicui/typing-animation'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import ScrambleText from '@/components/magicui/scramble-text'
+import HeroBackground from '@/components/HeroBackground'
+import StickyCTA from '@/components/StickyCTA'
+import { Wrench, Zap, BarChart3, Video, Cloud, Calendar, ExternalLink } from 'lucide-react'
 
 export default function ResourcesPage() {
-  // Scroll animations for different sections
   const heroAnimation = useScrollAnimation({ threshold: 0.3 })
-  const freeResourcesAnimation = useScrollAnimation({ threshold: 0.2 })
-  const disclaimerAnimation = useScrollAnimation({ threshold: 0.2 })
-
-  // For category animations (6 categories)
   const categoryAnimations = useScrollAnimations(6, { threshold: 0.1 })
 
   const resources = [
     {
-      category: "Content Creation",
-      tools: [
-        {
-          name: "CapCut",
-          description: "Free video editing software perfect for creating Instagram Reels and TikToks",
-          link: "https://www.capcut.com/",
-          type: "Free",
-          icon: null
-        },
-        {
-          name: "Canva",
-          description: "Design tool for creating thumbnails, graphics, and social media posts",
-          link: "https://www.canva.com/",
-          type: "Freemium",
-          icon: null
-        },
-        {
-          name: "Unsplash",
-          description: "High-quality stock photos for your content",
-          link: "https://unsplash.com/",
-          type: "Free",
-          icon: null
-        }
-      ]
-    },
-    {
-      category: "Email Marketing",
-      tools: [
-        {
-          name: "Beehiiv",
-          description: "Newsletter platform I use for my email list. Get a 30-day trial + 20% OFF for 3 months.",
-          link: "https://www.beehiiv.com?via=AbdulMannan1",
-          type: "Freemium",
-          icon: "beehiiv"
-        },
-        {
-          name: "ConvertKit",
-          description: "Email marketing automation for creators",
-          link: "https://convertkit.com/",
-          type: "Paid",
-          icon: null
-        }
-      ]
-    },
-    {
-      category: "Analytics & Growth",
-      tools: [
-        {
-          name: "Later",
-          description: "Social media scheduling and analytics",
-          link: "https://later.com/",
-          type: "Freemium",
-          icon: null
-        },
-        {
-          name: "Google Analytics",
-          description: "Track your website traffic and user behavior",
-          link: "https://analytics.google.com/",
-          type: "Free",
-          icon: null
-        }
-      ]
-    },
-    {
-      category: "Course Creation",
-      tools: [
-        {
-          name: "Whop",
-          description: "Platform I use to host all my courses",
-          link: "https://whop.com/agencypartners?a=anyro",
-          type: "Platform",
-          icon: "whop"
-        },
-        {
-          name: "Loom",
-          description: "Screen recording for course content",
-          link: "https://loom.com/",
-          type: "Freemium",
-          icon: "loom"
-        }
-      ]
-    },
-    {
-      category: "Productivity",
-      tools: [
-        {
-          name: "Notion",
-          description: "All-in-one workspace for notes, planning, and organization",
-          link: "https://notion.so/",
-          type: "Freemium",
-          icon: null
-        },
-        {
-          name: "Calendly",
-          description: "Scheduling tool for calls and meetings",
-          link: "https://calendly.com/",
-          type: "Freemium",
-          icon: null
-        }
-      ]
-    },
-    {
-      category: "AI & Cloud Computing",
+      category: "AI & Automation",
+      icon: <Zap className="w-6 h-6 text-purple-400" />,
+      gradient: "from-purple-500/20 to-pink-500/20",
+      border: "border-purple-500/30",
       tools: [
         {
           name: "RunPod",
-          description: "GPU cloud computing for AI development. Get a one-time random credit bonus from $5-500 when you sign up and load $10 for the first time. Instant access to RunPod's GPU resources.",
+          description: "GPU cloud computing for AI training. Essential for ComfyUI & SDXL.",
           link: "https://runpod.io?ref=yf9yht6f",
-          type: "Cloud Service",
-          icon: "runpod"
+          tag: "Infrastructure"
         },
         {
           name: "Fanvue",
-          description: "Creator platform for building your audience and monetizing content",
+          description: "The monetization platform for AI influencers. Higher margins than OF.",
           link: "https://www.fanvue.com/signup?referral=FV-33CETP",
-          type: "Platform",
-          icon: "fanvue"
+          tag: "Monetization"
+        },
+        {
+          name: "Beehiiv",
+          description: "Newsletter platform built for growth. Own your audience.",
+          link: "https://www.beehiiv.com?via=AbdulMannan1",
+          tag: "Growth"
+        }
+      ]
+    },
+    {
+      category: "Content Engine",
+      icon: <Video className="w-6 h-6 text-blue-400" />,
+      gradient: "from-blue-500/20 to-cyan-500/20",
+      border: "border-blue-500/30",
+      tools: [
+        {
+          name: "CapCut",
+          description: "Speed is everything. Edit viral reels in minutes, not hours.",
+          link: "https://www.capcut.com/",
+          tag: "Editing"
+        },
+        {
+          name: "Canva",
+          description: "Quick thumbnails and carousel slides. Don't overcomplicate design.",
+          link: "https://www.canva.com/",
+          tag: "Design"
+        },
+        {
+          name: "Loom",
+          description: "Record SOPs and course content. Systematize your knowledge.",
+          link: "https://loom.com/",
+          tag: "Systems"
+        }
+      ]
+    },
+    {
+      category: "Business Stack",
+      icon: <BarChart3 className="w-6 h-6 text-green-400" />,
+      gradient: "from-green-500/20 to-emerald-500/20",
+      border: "border-green-500/30",
+      tools: [
+        {
+          name: "Whop",
+          description: "Where I host my entire empire. Payments, community, and courses in one.",
+          link: "https://whop.com/agencypartners?a=anyro",
+          tag: "Platform"
+        },
+        {
+          name: "Notion",
+          description: "The operating system for my life and businesses. Chaos killer.",
+          link: "https://notion.so/",
+          tag: "Operations"
+        },
+        {
+          name: "Google Analytics",
+          description: "If you can't measure it, you can't improve it. Track everything.",
+          link: "https://analytics.google.com/",
+          tag: "Data"
         }
       ]
     }
   ]
 
   return (
-    <div className="min-h-screen bg-dark">
-      {/* MAGICAL HEADER */}
-      <section className="relative py-20 px-4 overflow-hidden">
-        {/* Beautiful Pulsing Background - Same as Homepage */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black"></div>
-        <div className="absolute inset-0 overflow-hidden">
-          <div 
-            className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-purple-600/20 to-blue-600/20 blur-2xl animate-pulse opacity-60"
-            style={{ 
-              left: '15%', 
-              top: '5%',
-              animationDuration: '4s'
-            }}
-          />
-          <div 
-            className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-pink-600/15 to-purple-600/15 blur-2xl animate-pulse opacity-50"
-            style={{ 
-              right: '5%', 
-              bottom: '15%',
-              animationDuration: '6s',
-              animationDelay: '1s'
-            }}
-          />
-          <div 
-            className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-cyan-600/15 to-blue-600/15 blur-xl animate-pulse opacity-40"
-            style={{ 
-              left: '50%', 
-              top: '50%', 
-              transform: 'translate(-50%, -50%)',
-              animationDuration: '5s',
-              animationDelay: '2s'
-            }}
-          />
-        </div>
-        
-        {/* Heartbeat Grid Pulsing from Center */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          {/* Center Point - Heart of the pulse */}
-          <div
-            className="absolute w-4 h-4 rounded-full"
-            style={{
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%, -50%)',
-              background: 'rgba(59, 130, 246, 0.8)',
-              boxShadow: '0 0 20px rgba(59, 130, 246, 0.5)',
-              animation: 'pulse 2s infinite ease-in-out'
-            }}
-          />
-          
-          {/* Grid Lines radiating from center */}
-          <svg className="absolute inset-0 w-full h-full" style={{ opacity: 0.1 }}>
-            <defs>
-              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
-          
-          {/* Pulsing lines from center */}
-          <div className="absolute inset-0">
-            {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className="absolute bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"
-                style={{
-                  left: '50%',
-                  top: '50%',
-                  width: '200px',
-                  height: '1px',
-                  transformOrigin: '0 0',
-                  transform: `translate(-50%, -50%) rotate(${i * 45}deg)`,
-                  animation: `pulse 2s infinite ease-in-out ${i * 0.1}s`
-                }}
-              />
-            ))}
-          </div>
-        </div>
-        
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-20 w-4 h-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-bounce opacity-60" style={{animationDuration: '3s'}}></div>
-          <div className="absolute top-32 right-32 w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce opacity-50" style={{animationDuration: '4s', animationDelay: '0.5s'}}></div>
-          <div className="absolute bottom-40 left-16 w-5 h-5 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-bounce opacity-70" style={{animationDuration: '3.5s', animationDelay: '1s'}}></div>
-          <div className="absolute bottom-32 right-20 w-2 h-2 bg-gradient-to-r from-green-400 to-teal-400 rounded-full animate-bounce opacity-60" style={{animationDuration: '4.5s', animationDelay: '1.5s'}}></div>
-        </div>
+    <div className="min-h-screen bg-dark selection:bg-blue-500/30 selection:text-blue-200">
+      <StickyCTA 
+        price="$99/mo" 
+        originalPrice="$399" 
+        ctaLink="/checkout?course=empire-bundle"
+        productName="Empire Pass All Access" 
+      />
 
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-16">
-            <div
-              ref={heroAnimation.elementRef}
-              className={`scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
-            >
-              <div className="relative inline-block">
-                {/* Main Title with Magical Effects */}
-                <div className="mb-8" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-                  <ScrambleText
-                    text="Resources"
-                    className="text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight drop-shadow-2xl"
-                    scrambleSpeed={1}
-                    revealSpeed={1}
-                  />
-                </div>
-                
-                {/* Magical Glowing Border */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 via-pink-600 to-yellow-600 rounded-2xl opacity-20 blur-xl animate-pulse"></div>
-                
-                {/* Floating Magic Elements Around Title */}
-                <div className="absolute -top-8 -left-8 w-6 h-6 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-spin opacity-80" style={{animationDuration: '8s'}}></div>
-                <div className="absolute -top-4 -right-12 w-4 h-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-spin opacity-70" style={{animationDuration: '10s', animationDirection: 'reverse'}}></div>
-                <div className="absolute -bottom-6 -left-12 w-5 h-5 bg-gradient-to-r from-pink-400 to-red-400 rounded-full animate-spin opacity-75" style={{animationDuration: '12s'}}></div>
-                <div className="absolute -bottom-8 -right-8 w-3 h-3 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-spin opacity-90" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
-              </div>
-            </div>
-            
-            <div className="relative">
-              <div className="max-w-5xl mx-auto mt-6">
-                <TypingAnimation
-                  text="Here are the tools and resources I personally use and recommend to build and grow your online business."
-                  className="text-2xl md:text-3xl text-white leading-relaxed font-medium drop-shadow-lg"
-                  duration={50}
-                />
-              </div>
-              
-              {/* Subtitle Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent blur-sm"></div>
-            </div>
+      {/* MAGICAL HEADER */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <HeroBackground variant="default" />
+        
+        <div className="container mx-auto max-w-6xl relative z-10 text-center">
+          <div ref={heroAnimation.elementRef} className={`scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}>
+             <div className="inline-flex items-center gap-2 bg-zinc-800/50 border border-white/10 rounded-full px-4 py-1.5 mb-8 backdrop-blur-md">
+               <Wrench className="w-4 h-4 text-blue-400" />
+               <span className="text-zinc-300 text-sm font-medium uppercase tracking-wider">The Creator Stack</span>
+             </div>
+
+             <h1 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
+               My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Arsenal.</span>
+             </h1>
+
+             <div className="max-w-3xl mx-auto">
+               <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed font-medium">
+                 I don't use 50 tools. I use a few powerful ones.
+                 <br />
+                 Here is the exact tech stack that runs my 7-figure ecosystem.
+               </p>
+             </div>
           </div>
         </div>
       </section>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 section-spacing">
-        <div className="max-w-6xl mx-auto">
-          {/* Resources Grid */}
-          <div className="space-y-16">
-            {resources.map((category, categoryIndex) => (
-              <div key={categoryIndex}>
-                <div
-                  ref={categoryAnimations.setElementRef(categoryIndex)}
-                  className={`text-center mb-8 scroll-fade-up ${categoryAnimations.visibleElements[categoryIndex] ? 'visible' : ''}`}
-                >
-                  <WordRotate
-                    words={[category.category, `${category.category} Tools`, `Best ${category.category}`]}
-                    className="text-2xl md:text-3xl font-bold"
-                    duration={3000}
-                  />
+        <div className="max-w-5xl mx-auto">
+          
+          <div className="space-y-12">
+            {resources.map((category, index) => (
+              <div 
+                key={index}
+                ref={categoryAnimations.setElementRef(index)}
+                className={`scroll-fade-up ${categoryAnimations.visibleElements[index] ? 'visible' : ''}`}
+              >
+                <div className="flex items-center gap-3 mb-6">
+                   <div className={`p-2 rounded-lg bg-gradient-to-br ${category.gradient} border ${category.border}`}>
+                      {category.icon}
+                   </div>
+                   <h2 className="text-2xl font-bold text-white">{category.category}</h2>
                 </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                  {category.tools.map((tool, toolIndex) => (
-                    <div
-                      key={toolIndex}
-                      className={`testimonial-card hover-lift scroll-fade-up ${categoryAnimations.visibleElements[categoryIndex] ? `visible scroll-stagger-${toolIndex + 1}` : ''}`}
+
+                <div className="grid md:grid-cols-3 gap-4">
+                  {category.tools.map((tool, tIndex) => (
+                    <a 
+                      key={tIndex}
+                      href={tool.link}
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group block bg-zinc-900/50 border border-zinc-800 hover:border-zinc-600 rounded-xl p-5 transition-all duration-300 hover:bg-zinc-800 hover:-translate-y-1"
                     >
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="flex items-center gap-3">
-                          {tool.icon && (
-                            <SocialIcon 
-                              platform={tool.icon as any} 
-                              variant="color" 
-                              size={24} 
-                              href={undefined}
-                            />
-                          )}
-                          <h3 className="text-lg md:text-xl font-bold">{tool.name}</h3>
-                        </div>
-                        <span className={`px-3 py-1 rounded-full text-sm ${
-                          tool.type === 'Free' ? 'bg-green-600/20 text-green-400' :
-                          tool.type === 'Freemium' ? 'bg-blue-600/20 text-blue-400' :
-                          tool.type === 'Platform' ? 'bg-purple-600/20 text-purple-400' :
-                          tool.type === 'Cloud Service' ? 'bg-cyan-600/20 text-cyan-400' :
-                          'bg-orange-600/20 text-orange-400'
-                        }`}>
-                          {tool.type}
-                        </span>
+                      <div className="flex justify-between items-start mb-3">
+                         <h3 className="font-bold text-white group-hover:text-blue-400 transition-colors">{tool.name}</h3>
+                         <ExternalLink className="w-4 h-4 text-zinc-600 group-hover:text-zinc-400" />
                       </div>
-                      <p className="text-gray-400 mb-6 text-sm md:text-base">{tool.description}</p>
-                      <a
-                        href={tool.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-400 hover:text-blue-300 font-medium transition-colors duration-200"
-                      >
-                        Check it out →
-                      </a>
-                    </div>
+                      <p className="text-zinc-400 text-sm mb-4 h-10 line-clamp-2">{tool.description}</p>
+                      <span className="text-xs font-mono bg-white/5 px-2 py-1 rounded text-zinc-500 uppercase tracking-wider">
+                        {tool.tag}
+                      </span>
+                    </a>
                   ))}
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Free Resources Section */}
-          <div
-            ref={freeResourcesAnimation.elementRef}
-            className={`mt-24 bg-zinc-900/50 rounded-2xl p-6 md:p-8 text-center hover-lift scroll-scale ${freeResourcesAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <BlurIn
-              word="Free Resources"
-              className="text-2xl md:text-3xl font-bold mb-6"
-              duration={0.8}
-            />
-            <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-              I also create free resources to help you get started. Check out my Gumroad for templates, guides, and more.
-            </p>
-            <a
-              href="https://anyrxo.gumroad.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <ShimmerButton
-                className="shadow-2xl"
-                shimmerColor="#ffffff"
-                shimmerSize="0.1em"
-                background="linear-gradient(135deg, #10b981, #059669)"
-                borderRadius="9999px"
-              >
-                <span className="whitespace-nowrap text-lg font-bold px-6 py-2">
-                  Access Free Resources
-                </span>
-              </ShimmerButton>
-            </a>
+          {/* Free Resources CTA */}
+          <div className="mt-24 relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/50 p-12 text-center">
+             <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10 pointer-events-none" />
+             <div className="relative z-10">
+                <h2 className="text-3xl font-bold text-white mb-4">Want the free stuff?</h2>
+                <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
+                   I've dumped a ton of templates, guides, and checklists onto my Gumroad. 
+                   Grab them before I decide to charge for them.
+                </p>
+                <a
+                  href="https://anyrxo.gumroad.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <ShimmerButton
+                    className="shadow-2xl"
+                    shimmerColor="#ffffff"
+                    shimmerSize="0.1em"
+                    background="linear-gradient(135deg, #10b981, #059669)"
+                    borderRadius="12px"
+                  >
+                    <span className="whitespace-nowrap text-lg font-bold px-8 py-3 flex items-center gap-2">
+                      Access Free Vault <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </ShimmerButton>
+                </a>
+             </div>
           </div>
 
-          {/* Disclaimer */}
-          <div
-            ref={disclaimerAnimation.elementRef}
-            className={`mt-16 bg-zinc-900 border border-zinc-700 rounded-lg p-6 scroll-fade-up ${disclaimerAnimation.isVisible ? 'visible' : ''}`}
-          >
-            <p className="text-sm text-gray-400 text-center">
-              <strong>Disclaimer:</strong> Some of the links above may be affiliate links, which means I may earn a commission if you make a purchase. This doesn't affect the price you pay, and I only recommend tools I genuinely use and believe in.
+          <div className="mt-12 text-center">
+            <p className="text-xs text-zinc-600 max-w-2xl mx-auto">
+              Transparency: Some of these are affiliate links. I only recommend tools I actually use to print money. 
+              If you use them, I might buy a coffee. Win-win.
             </p>
           </div>
+
         </div>
       </div>
     </div>

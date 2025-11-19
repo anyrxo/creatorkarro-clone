@@ -24,9 +24,9 @@ export default function StoryPage() {
 
   const timelineEvents = [
     {
-      year: "The Low Point",
-      title: "Dead Broke & Lost",
-      description: "No direction. No skills. Just a burning desire to escape the matrix. I tried everything - dropshipping, surveys, random side hustles. Nothing worked. I realized I was 'dabbling' instead of mastering.",
+      year: "The Realization",
+      title: "The Pharmacy Trap",
+      description: "Studying pharmacy, working in hospitals. I looked at the doctors and pharmacists around me—stressed, overworked, capped income. I realized I was training for a life I didn't want. I knew there had to be more than trading time for money.",
       icon: <Target className="w-6 h-6 text-zinc-500" />
     },
     {
@@ -86,13 +86,13 @@ export default function StoryPage() {
               </div>
               
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 tracking-tight leading-[1.1]">
-                I Was <span className="text-zinc-600 line-through decoration-red-500/50 decoration-4">Dead Broke</span>. <br />
+                I Was <span className="text-zinc-600 line-through decoration-blue-500/50 decoration-4">Studying Pharmacy</span>. <br />
                 Now I Run An <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Empire.</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-zinc-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-                Most "gurus" rent Lambos for ads. I build real systems. 
-                Here is exactly how I went from zero to multiple 7-figure businesses.
+                I looked around the hospital and realized I was training for a life I didn't want.
+                Here is exactly how I pivoted from prescriptions to multiple 7-figure businesses.
               </p>
 
               <div className="flex flex-col sm:flex-row justify-center gap-4">
