@@ -884,226 +884,460 @@ export default function BlogPost() {
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">What are the specific platform differences between Instagram, TikTok, and YouTube for reaching 500K?</h3>
-            <div className="text-gray-300 space-y-4">
-              <p>{`**Each platform has distinct algorithms, content formats, and growth mechanics that require completely different strategies.** Here's the comprehensive breakdown based on growing multiple accounts to 500K+ on each platform:
+            <h3 className="text-2xl font-bold text-white mb-6">What are the specific platform differences between Instagram, TikTok, and YouTube for reaching 500K?</h3>
+            <div className="space-y-8">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                <strong className="text-white font-semibold">Each platform has distinct algorithms, content formats, and growth mechanics that require completely different strategies.</strong> Here's the comprehensive breakdown based on growing multiple accounts to 500K+ on each platform:
+              </p>
 
-**Instagram: The Aesthetic Authority Platform**
+              {/* Instagram Platform */}
+              <div className="bg-gradient-to-br from-pink-500/10 to-rose-500/10 border border-pink-500/30 rounded-xl p-6 mb-6">
+                <h4 className="text-xl font-bold text-pink-400 mb-4">Instagram: The Aesthetic Authority Platform</h4>
+                
+                <h5 className="text-lg font-semibold text-white mb-3">Algorithm Priorities (2026)</h5>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-400 mt-1">•</span>
+                    <span><strong className="text-white">Saves</strong> (highest signal) - indicates reference-worthy content</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-400 mt-1">•</span>
+                    <span><strong className="text-white">Shares via DM</strong> (massive reach multiplier)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-400 mt-1">•</span>
+                    <span><strong className="text-white">Time spent viewing</strong> (watch time on Reels, swipe time on carousels)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-400 mt-1">•</span>
+                    <span><strong className="text-white">Comments quality {'>'} quantity</strong> (meaningful conversations beat spam)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-400 mt-1">•</span>
+                    <span><strong className="text-white">Profile visits and follows</strong> from content</span>
+                  </li>
+                </ul>
 
-**Algorithm Priorities (2026)**
-- Saves (highest signal) - indicates reference-worthy content
-- Shares via DM (massive reach multiplier)
-- Time spent viewing (watch time on Reels, swipe time on carousels)
-- Comments quality > quantity (meaningful conversations beat spam)
-- Profile visits and follows from content
+                <h5 className="text-lg font-semibold text-white mb-3">Content Types That Work</h5>
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <p className="text-white font-semibold mb-2">1. Carousels (50% of feed content)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• Educational deep-dives: 8-10 slides</li>
+                      <li>• Before/after transformations</li>
+                      <li>• Step-by-step tutorials</li>
+                      <li>• Data visualizations and infographics</li>
+                      <li>• <strong className="text-white">Average reach:</strong> 35,000-80,000 impressions at 100K followers</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">2. Reels (40% of content)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• 7-15 second hooks that stop the scroll</li>
+                      <li>• Trending audio integration (but make it relevant)</li>
+                      <li>• Text overlays with valuable insights</li>
+                      <li>• Fast-paced cuts every 1-2 seconds</li>
+                      <li>• <strong className="text-white">Average reach:</strong> 50,000-200,000 impressions at 100K followers</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">3. Stories (daily engagement)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• Polls, questions, quizzes</li>
+                      <li>• Behind-the-scenes content</li>
+                      <li>• Direct audience interaction</li>
+                      <li>• Story highlights as evergreen content library</li>
+                      <li>• <strong className="text-white">Average reach:</strong> 15-25% of follower count</li>
+                    </ul>
+                  </div>
+                </div>
 
-**Content Types That Work**
-1. **Carousels (50% of feed content)**
-   - Educational deep-dives: 8-10 slides
-   - Before/after transformations
-   - Step-by-step tutorials
-   - Data visualizations and infographics
-   - Average reach: 35,000-80,000 impressions at 100K followers
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  <div>
+                    <h6 className="text-md font-semibold text-pink-400 mb-2">Growth Velocity</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• 0-10K: Very slow (3-6 months) - hardest phase</li>
+                      <li>• 10K-50K: Moderate (4-8 months) - algorithm starts recognizing you</li>
+                      <li>• 50K-100K: Accelerating (3-6 months) - viral posts compound</li>
+                      <li>• 100K-500K: Exponential (8-18 months) - established authority</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 className="text-md font-semibold text-pink-400 mb-2">Optimal Posting Schedule</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Reels: 1-2 per day (10am, 7pm local time best)</li>
+                      <li>• Carousels: 3-4 per week (Monday, Wednesday, Friday, Sunday)</li>
+                      <li>• Stories: 5-10 per day (spread throughout the day)</li>
+                    </ul>
+                  </div>
+                </div>
 
-2. **Reels (40% of content)**
-   - 7-15 second hooks that stop the scroll
-   - Trending audio integration (but make it relevant)
-   - Text overlays with valuable insights
-   - Fast-paced cuts every 1-2 seconds
-   - Average reach: 50,000-200,000 impressions at 100K followers
+                <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4 mb-4">
+                  <h6 className="text-md font-semibold text-pink-400 mb-2">Monetization Sweet Spots</h6>
+                  <ul className="space-y-1 text-gray-300 text-sm">
+                    <li>• 10K-50K: Affiliate marketing, small brand deals ($200-$500)</li>
+                    <li>• 50K-100K: Mid-tier sponsorships ($800-$2,500)</li>
+                    <li>• 100K-250K: Major brand partnerships ($2,500-$7,500)</li>
+                    <li>• 250K-500K: Premium deals + product launches ($7,500-$25,000)</li>
+                  </ul>
+                </div>
 
-3. **Stories (daily engagement)**
-   - Polls, questions, quizzes
-   - Behind-the-scenes content
-   - Direct audience interaction
-   - Story highlights as evergreen content library
-   - Average reach: 15-25% of follower count
+                <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                  <h6 className="text-md font-semibold text-red-400 mb-2">Unique Challenges</h6>
+                  <ul className="space-y-1 text-gray-300 text-sm">
+                    <li>• Saturation in most niches (need strong unique angle)</li>
+                    <li>• Engagement rates declining platform-wide (3-5% is good now)</li>
+                    <li>• Shadowbans affect reach unpredictably</li>
+                    <li>• Constant algorithm changes require adaptation</li>
+                    <li>• Competition from established creators is fierce</li>
+                  </ul>
+                </div>
+              </div>
 
-**Growth Velocity**
-- 0-10K: Very slow (3-6 months) - hardest phase
-- 10K-50K: Moderate (4-8 months) - algorithm starts recognizing you
-- 50K-100K: Accelerating (3-6 months) - viral posts compound
-- 100K-500K: Exponential (8-18 months) - established authority
+              {/* TikTok Platform */}
+              <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-xl p-6 mb-6">
+                <h4 className="text-xl font-bold text-cyan-400 mb-4">TikTok: The Viral Meritocracy Platform</h4>
+                
+                <h5 className="text-lg font-semibold text-white mb-3">Algorithm Priorities (2026)</h5>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span><strong className="text-white">Completion rate</strong> (% who watch to the end) - MOST IMPORTANT</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span><strong className="text-white">Re-watches</strong> (people replaying your video)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span><strong className="text-white">Shares</strong> (especially off-platform to Instagram/Snapchat)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span><strong className="text-white">Comments</strong> (both quantity and speed)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span><strong className="text-white">Account switching prevention</strong> (keeping users on TikTok)</span>
+                  </li>
+                </ul>
 
-**Optimal Posting Schedule**
-- Reels: 1-2 per day (10am, 7pm local time best)
-- Carousels: 3-4 per week (Monday, Wednesday, Friday, Sunday)
-- Stories: 5-10 per day (spread throughout the day)
+                <h5 className="text-lg font-semibold text-white mb-3">Content Types That Work</h5>
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <p className="text-white font-semibold mb-2">1. Hook-First Videos (90% of content)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• First 0.5 seconds determines success</li>
+                      <li>• Pattern interrupts (unexpected visuals/statements)</li>
+                      <li>• Curiosity gaps that force watching</li>
+                      <li>• Text hooks appear BEFORE the video plays</li>
+                      <li>• <strong className="text-white">Average virality rate:</strong> 1 in 7 videos hits 100K+ views</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">2. Educational Entertainment (EdTainment)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• Fast-paced teaching (no fluff)</li>
+                      <li>• "Here's what nobody tells you about X..."</li>
+                      <li>• Contrarian takes on popular topics</li>
+                      <li>• Data/statistics presented entertainingly</li>
+                      <li>• <strong className="text-white">Average viral video reach:</strong> 500K-3M views</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">3. Trends + Unique Spin</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• Jump on trends EARLY (first 24-48 hours)</li>
+                      <li>• Add your niche expertise to trending sounds</li>
+                      <li>• Subvert expectations (start with trend, pivot to value)</li>
+                      <li>• <strong className="text-white">Average trend participation reach:</strong> 100K-800K views</li>
+                    </ul>
+                  </div>
+                </div>
 
-**Monetization Sweet Spots**
-- 10K-50K: Affiliate marketing, small brand deals ($200-$500)
-- 50K-100K: Mid-tier sponsorships ($800-$2,500)
-- 100K-250K: Major brand partnerships ($2,500-$7,500)
-- 250K-500K: Premium deals + product launches ($7,500-$25,000)
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  <div>
+                    <h6 className="text-md font-semibold text-cyan-400 mb-2">Growth Velocity</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• 0-10K: Fast (2-4 weeks) - algorithm tests everyone</li>
+                      <li>• 10K-50K: Very fast (4-8 weeks) - viral videos compound quickly</li>
+                      <li>• 50K-100K: Explosive (6-12 weeks) - snowball effect</li>
+                      <li>• 100K-500K: Sustained (6-12 months) - requires consistency to maintain momentum</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 className="text-md font-semibold text-cyan-400 mb-2">Optimal Posting Schedule</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• 2-3 videos per day minimum</li>
+                      <li>• Best times: 6-9am, 12-2pm, 6-10pm</li>
+                      <li>• Post when your specific audience is active (check analytics)</li>
+                      <li>• Weekend posts often perform better (higher engagement)</li>
+                    </ul>
+                  </div>
+                </div>
 
-**Unique Challenges**
-- Saturation in most niches (need strong unique angle)
-- Engagement rates declining platform-wide (3-5% is good now)
-- Shadowbans affect reach unpredictably
-- Constant algorithm changes require adaptation
-- Competition from established creators is fierce
+                <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-4 mb-4">
+                  <h6 className="text-md font-semibold text-cyan-400 mb-2">Monetization Sweet Spots</h6>
+                  <ul className="space-y-1 text-gray-300 text-sm">
+                    <li>• 10K-50K: TikTok Creator Fund ($20-$100/month), small brand deals</li>
+                    <li>• 50K-100K: Sponsorships ($500-$2,000 per video)</li>
+                    <li>• 100K-250K: Premium sponsorships ($2,000-$8,000)</li>
+                    <li>• 250K-500K: Major campaigns + product lines ($8,000-$30,000)</li>
+                  </ul>
+                </div>
 
-**TikTok: The Viral Meritocracy Platform**
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                    <h6 className="text-md font-semibold text-green-400 mb-2">Unique Advantages</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• New creators can go viral IMMEDIATELY (no follower count needed)</li>
+                      <li>• Algorithm is pure meritocracy (quality content always finds audience)</li>
+                      <li>• Fastest path to monetization through rapid growth</li>
+                      <li>• Organic reach far exceeds Instagram (10-50x reach per video)</li>
+                      <li>• Younger, more engaged audience (higher conversion rates)</li>
+                    </ul>
+                  </div>
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                    <h6 className="text-md font-semibold text-red-400 mb-2">Unique Challenges</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Requires DAILY posting to maintain momentum</li>
+                      <li>• Burnout risk is highest due to content volume demands</li>
+                      <li>• Trends change rapidly (what worked yesterday may not work today)</li>
+                      <li>• Comments can be brutal (thick skin required)</li>
+                      <li>• Monetization per view is lower than YouTube</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-**Algorithm Priorities (2026)**
-- Completion rate (% who watch to the end) - MOST IMPORTANT
-- Re-watches (people replaying your video)
-- Shares (especially off-platform to Instagram/Snapchat)
-- Comments (both quantity and speed)
-- Account switching prevention (keeping users on TikTok)
+              {/* YouTube Platform */}
+              <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6 mb-6">
+                <h4 className="text-xl font-bold text-red-400 mb-4">YouTube: The Long-Form Authority Platform</h4>
+                
+                <h5 className="text-lg font-semibold text-white mb-3">Algorithm Priorities (2026)</h5>
+                <ul className="space-y-2 text-gray-300 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Click-through rate (CTR)</strong> on thumbnails (8-12% is excellent)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Average view duration (AVD)</strong> - need 40-60% retention minimum</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Watch time hours</strong> (total minutes watched across all videos)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Subscriber conversion</strong> from videos (viewers → subscribers)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-400 mt-1">•</span>
+                    <span><strong className="text-white">Session time</strong> (keeping viewers on YouTube after your video)</span>
+                  </li>
+                </ul>
 
-**Content Types That Work**
-1. **Hook-First Videos (90% of content)**
-   - First 0.5 seconds determines success
-   - Pattern interrupts (unexpected visuals/statements)
-   - Curiosity gaps that force watching
-   - Text hooks appear BEFORE the video plays
-   - Average virality rate: 1 in 7 videos hits 100K+ views
+                <h5 className="text-lg font-semibold text-white mb-3">Content Types That Work</h5>
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <p className="text-white font-semibold mb-2">1. Long-Form Deep Dives (60% of content)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• 15-30 minute comprehensive guides</li>
+                      <li>• Tutorial series (multi-part content)</li>
+                      <li>• Documentary-style storytelling</li>
+                      <li>• <strong className="text-white">Average views at 100K subs:</strong> 15,000-50,000 per video</li>
+                      <li>• Evergreen content generates views for YEARS</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">2. YouTube Shorts (30% of content)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• 15-60 second viral clips</li>
+                      <li>• Repurpose TikTok/Instagram content</li>
+                      <li>• Funnel to long-form videos</li>
+                      <li>• <strong className="text-white">Average views at 100K subs:</strong> 50,000-500,000 per Short</li>
+                      <li>• Fastest subscriber growth driver</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">3. Livestreams (10% of content)</p>
+                    <ul className="ml-4 space-y-1 text-gray-300 text-sm">
+                      <li>• Q&A sessions, tutorials, behind-the-scenes</li>
+                      <li>• Super Chat revenue opportunity</li>
+                      <li>• Deepens community connection</li>
+                      <li>• <strong className="text-white">Average concurrent viewers:</strong> 0.5-2% of subscriber count</li>
+                    </ul>
+                  </div>
+                </div>
 
-2. **Educational Entertainment (EdTainment)**
-   - Fast-paced teaching (no fluff)
-   - "Here's what nobody tells you about X..."
-   - Contrarian takes on popular topics
-   - Data/statistics presented entertainingly
-   - Average viral video reach: 500K-3M views
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  <div>
+                    <h6 className="text-md font-semibold text-red-400 mb-2">Growth Velocity</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• 0-1K: Extremely slow (3-8 months) - threshold for monetization</li>
+                      <li>• 1K-10K: Slow (6-12 months) - building catalog</li>
+                      <li>• 10K-50K: Moderate (8-16 months) - algorithm recognizes quality</li>
+                      <li>• 50K-100K: Accelerating (6-12 months) - viral videos emerge</li>
+                      <li>• 100K-500K: Sustained (12-24 months) - compounding catalog effect</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 className="text-md font-semibold text-red-400 mb-2">Optimal Posting Schedule</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Long-form: 2-3 videos per week (Tuesday, Thursday, Saturday)</li>
+                      <li>• Shorts: 1-2 per day (leverage TikTok/Instagram content)</li>
+                      <li>• Livestreams: 1-2 per month (weekend afternoons)</li>
+                      <li>• Consistency is MORE important than frequency</li>
+                    </ul>
+                  </div>
+                </div>
 
-3. **Trends + Unique Spin**
-   - Jump on trends EARLY (first 24-48 hours)
-   - Add your niche expertise to trending sounds
-   - Subvert expectations (start with trend, pivot to value)
-   - Average trend participation reach: 100K-800K views
+                <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-4">
+                  <h6 className="text-md font-semibold text-red-400 mb-2">Monetization Sweet Spots</h6>
+                  <ul className="space-y-1 text-gray-300 text-sm">
+                    <li>• 1K-10K: AdSense ($200-$1,000/month), affiliates</li>
+                    <li>• 10K-50K: AdSense + sponsorships ($1,500-$5,000/month)</li>
+                    <li>• 50K-100K: AdSense + major sponsors ($5,000-$15,000/month)</li>
+                    <li>• 100K-500K: Multiple revenue streams ($15,000-$75,000/month)</li>
+                  </ul>
+                </div>
 
-**Growth Velocity**
-- 0-10K: Fast (2-4 weeks) - algorithm tests everyone
-- 10K-50K: Very fast (4-8 weeks) - viral videos compound quickly
-- 50K-100K: Explosive (6-12 weeks) - snowball effect
-- 100K-500K: Sustained (6-12 months) - requires consistency to maintain momentum
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+                    <h6 className="text-md font-semibold text-green-400 mb-2">Unique Advantages</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Highest revenue per 1,000 followers of any platform</li>
+                      <li>• Evergreen content generates passive income for years</li>
+                      <li>• Search engine optimization brings perpetual traffic</li>
+                      <li>• Most professional brand deals (higher budgets)</li>
+                      <li>• Audience has highest intent (actively seeking solutions)</li>
+                      <li>• Content has longest shelf life (videos relevant for 2-5+ years)</li>
+                    </ul>
+                  </div>
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-3">
+                    <h6 className="text-md font-semibold text-red-400 mb-2">Unique Challenges</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• Highest barrier to entry (equipment, editing skills, scripting)</li>
+                      <li>• Slowest growth trajectory (requires patience)</li>
+                      <li>• Production time: 8-20 hours per long-form video</li>
+                      <li>• Thumbnail design is make-or-break skill</li>
+                      <li>• Competition quality is extremely high</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-**Optimal Posting Schedule**
-- 2-3 videos per day minimum
-- Best times: 6-9am, 12-2pm, 6-10pm
-- Post when your specific audience is active (check analytics)
-- Weekend posts often perform better (higher engagement)
+              {/* Platform Selection Strategy */}
+              <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-xl p-6 mb-6">
+                <h4 className="text-xl font-bold text-purple-400 mb-4">Platform Selection Strategy</h4>
+                
+                <div className="grid md:grid-cols-3 gap-4 mb-6">
+                  <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-4">
+                    <h5 className="text-md font-semibold text-cyan-400 mb-3">Start with TikTok if:</h5>
+                    <ul className="space-y-2 text-gray-300 text-sm">
+                      <li className="flex items-start gap-2">
+                        <span className="text-cyan-400 mt-1">•</span>
+                        <span>You want fastest results (potential for 100K in 3-6 months)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-cyan-400 mt-1">•</span>
+                        <span>You're comfortable on camera with high energy</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-cyan-400 mt-1">•</span>
+                        <span>You can commit to daily posting (2-3 videos/day)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-cyan-400 mt-1">•</span>
+                        <span>Your niche is trending/entertaining (fashion, fitness, comedy, finance)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                    <h5 className="text-md font-semibold text-pink-400 mb-3">Start with Instagram if:</h5>
+                    <ul className="space-y-2 text-gray-300 text-sm">
+                      <li className="flex items-start gap-2">
+                        <span className="text-pink-400 mt-1">•</span>
+                        <span>You have design skills or can create aesthetic content</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-pink-400 mt-1">•</span>
+                        <span>Your niche is visual (travel, food, fashion, lifestyle)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-pink-400 mt-1">•</span>
+                        <span>You prefer mix of formats (photos, videos, stories)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-pink-400 mt-1">•</span>
+                        <span>You want to build a "brand" image (Instagram = credibility)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                    <h5 className="text-md font-semibold text-red-400 mb-3">Start with YouTube if:</h5>
+                    <ul className="space-y-2 text-gray-300 text-sm">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-400 mt-1">•</span>
+                        <span>You want highest long-term revenue potential</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-400 mt-1">•</span>
+                        <span>You're willing to invest in quality production</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-400 mt-1">•</span>
+                        <span>You have in-depth expertise to share (tutorials, education)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-400 mt-1">•</span>
+                        <span>You can commit to long-form content creation</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-**Monetization Sweet Spots**
-- 10K-50K: TikTok Creator Fund ($20-$100/month), small brand deals
-- 50K-100K: Sponsorships ($500-$2,000 per video)
-- 100K-250K: Premium sponsorships ($2,000-$8,000)
-- 250K-500K: Major campaigns + product lines ($8,000-$30,000)
-
-**Unique Advantages**
-- New creators can go viral IMMEDIATELY (no follower count needed)
-- Algorithm is pure meritocracy (quality content always finds audience)
-- Fastest path to monetization through rapid growth
-- Organic reach far exceeds Instagram (10-50x reach per video)
-- Younger, more engaged audience (higher conversion rates)
-
-**Unique Challenges**
-- Requires DAILY posting to maintain momentum
-- Burnout risk is highest due to content volume demands
-- Trends change rapidly (what worked yesterday may not work today)
-- Comments can be brutal (thick skin required)
-- Monetization per view is lower than YouTube
-
-**YouTube: The Long-Form Authority Platform**
-
-**Algorithm Priorities (2026)**
-- Click-through rate (CTR) on thumbnails (8-12% is excellent)
-- Average view duration (AVD) - need 40-60% retention minimum
-- Watch time hours (total minutes watched across all videos)
-- Subscriber conversion from videos (viewers → subscribers)
-- Session time (keeping viewers on YouTube after your video)
-
-**Content Types That Work**
-1. **Long-Form Deep Dives (60% of content)**
-   - 15-30 minute comprehensive guides
-   - Tutorial series (multi-part content)
-   - Documentary-style storytelling
-   - Average views at 100K subs: 15,000-50,000 per video
-   - Evergreen content generates views for YEARS
-
-2. **YouTube Shorts (30% of content)**
-   - 15-60 second viral clips
-   - Repurpose TikTok/Instagram content
-   - Funnel to long-form videos
-   - Average views at 100K subs: 50,000-500,000 per Short
-   - Fastest subscriber growth driver
-
-3. **Livestreams (10% of content)**
-   - Q&A sessions, tutorials, behind-the-scenes
-   - Super Chat revenue opportunity
-   - Deepens community connection
-   - Average concurrent viewers: 0.5-2% of subscriber count
-
-**Growth Velocity**
-- 0-1K: Extremely slow (3-8 months) - threshold for monetization
-- 1K-10K: Slow (6-12 months) - building catalog
-- 10K-50K: Moderate (8-16 months) - algorithm recognizes quality
-- 50K-100K: Accelerating (6-12 months) - viral videos emerge
-- 100K-500K: Sustained (12-24 months) - compounding catalog effect
-
-**Optimal Posting Schedule**
-- Long-form: 2-3 videos per week (Tuesday, Thursday, Saturday)
-- Shorts: 1-2 per day (leverage TikTok/Instagram content)
-- Livestreams: 1-2 per month (weekend afternoons)
-- Consistency is MORE important than frequency
-
-**Monetization Sweet Spots**
-- 1K-10K: AdSense ($200-$1,000/month), affiliates
-- 10K-50K: AdSense + sponsorships ($1,500-$5,000/month)
-- 50K-100K: AdSense + major sponsors ($5,000-$15,000/month)
-- 100K-500K: Multiple revenue streams ($15,000-$75,000/month)
-
-**Unique Advantages**
-- Highest revenue per 1,000 followers of any platform
-- Evergreen content generates passive income for years
-- Search engine optimization brings perpetual traffic
-- Most professional brand deals (higher budgets)
-- Audience has highest intent (actively seeking solutions)
-- Content has longest shelf life (videos relevant for 2-5+ years)
-
-**Unique Challenges**
-- Highest barrier to entry (equipment, editing skills, scripting)
-- Slowest growth trajectory (requires patience)
-- Production time: 8-20 hours per long-form video
-- Thumbnail design is make-or-break skill
-- Competition quality is extremely high
-
-**Platform Selection Strategy**
-
-**Start with TikTok if:**
-- You want fastest results (potential for 100K in 3-6 months)
-- You're comfortable on camera with high energy
-- You can commit to daily posting (2-3 videos/day)
-- Your niche is trending/entertaining (fashion, fitness, comedy, finance)
-
-**Start with Instagram if:**
-- You have design skills or can create aesthetic content
-- Your niche is visual (travel, food, fashion, lifestyle)
-- You prefer mix of formats (photos, videos, stories)
-- You want to build a "brand" image (Instagram = credibility)
-
-**Start with YouTube if:**
-- You want highest long-term revenue potential
-- You're willing to invest in quality production
-- You have in-depth expertise to share (tutorials, education)
-- You can commit to long-form content creation
-
-**The Winning Multi-Platform Strategy (What I Recommend)**
-
-1. **Master ONE platform first** (choose based on above criteria)
-2. **Reach 50K-100K followers** on primary platform (6-12 months)
-3. **Repurpose content to second platform** (30% more effort, 200% more reach)
-4. **Cross-promote** between platforms (drive TikTok audience to YouTube, etc.)
-5. **Reach 500K combined** across 2-3 platforms (18-36 months)
-
-Example multi-platform strategy:
-- TikTok: 300K followers (viral content, daily posts)
-- Instagram: 150K followers (repurposed TikToks + carousels)
-- YouTube: 80K subscribers (long-form from TikTok viral topics)
-- Combined reach: 530K, revenue: $25K-$45K/month
-
-The platform doesn't matter as much as your execution and consistency. Pick the platform where YOUR content style naturally fits, then dominate it before expanding.`}</p>
+                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-lg p-6">
+                  <h5 className="text-lg font-bold text-green-400 mb-4">The Winning Multi-Platform Strategy (What I Recommend)</h5>
+                  <ol className="space-y-3 text-gray-300 mb-6 list-decimal list-inside">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">1.</span>
+                      <span><strong className="text-white">Master ONE platform first</strong> (choose based on above criteria)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">2.</span>
+                      <span><strong className="text-white">Reach 50K-100K followers</strong> on primary platform (6-12 months)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">3.</span>
+                      <span><strong className="text-white">Repurpose content to second platform</strong> (30% more effort, 200% more reach)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">4.</span>
+                      <span><strong className="text-white">Cross-promote</strong> between platforms (drive TikTok audience to YouTube, etc.)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">5.</span>
+                      <span><strong className="text-white">Reach 500K combined</strong> across 2-3 platforms (18-36 months)</span>
+                    </li>
+                  </ol>
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mb-4">
+                    <h6 className="text-md font-semibold text-green-400 mb-2">Example multi-platform strategy:</h6>
+                    <ul className="space-y-1 text-gray-300 text-sm">
+                      <li>• TikTok: 300K followers (viral content, daily posts)</li>
+                      <li>• Instagram: 150K followers (repurposed TikToks + carousels)</li>
+                      <li>• YouTube: 80K subscribers (long-form from TikTok viral topics)</li>
+                      <li>• <strong className="text-white">Combined reach:</strong> 530K, revenue: $25K-$45K/month</li>
+                    </ul>
+                  </div>
+                  <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-4">
+                    <p className="text-lg text-white font-semibold text-center">
+                      The platform doesn't matter as much as your execution and consistency. Pick the platform where YOUR content style naturally fits, then dominate it before expanding.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
