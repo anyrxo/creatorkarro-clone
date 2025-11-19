@@ -758,7 +758,7 @@ export default function YouTubeShortsStrategy() {
                         </p>
                     </div>
                 </div>
-            </div>
+                </div>
 
                 <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">What's the proven formula for creating viral YouTube Shorts?</h3>
@@ -1192,7 +1192,7 @@ export default function YouTubeShortsStrategy() {
                         </p>
                     </div>
                 </div>
-            </div>
+                </div>
 
                 <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">What content ideas consistently perform well on YouTube Shorts?</h3>
@@ -1624,7 +1624,7 @@ export default function YouTubeShortsStrategy() {
                         </p>
                     </div>
                 </div>
-            </div>
+                </div>
 
                 <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">What equipment and editing tools do I need for YouTube Shorts in 2026?</h3>
@@ -2068,7 +2068,7 @@ export default function YouTubeShortsStrategy() {
                         <p className="text-white font-semibold text-center">Start cheap, upgrade strategically based on revenue milestones. Your constraint is skill and strategy, not equipment.</p>
                     </div>
                 </div>
-            </div>
+                </div>
 
                 <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">How do I optimize my Shorts for the YouTube algorithm to maximize reach?</h3>
@@ -2634,7 +2634,7 @@ export default function YouTubeShortsStrategy() {
                         <p className="text-white font-semibold text-center mt-4">The algorithm isn't random. It's predictable. Give it what it wants: Videos that keep people on YouTube longer. Optimize ruthlessly, test constantly, and the views will come.</p>
                     </div>
                 </div>
-            </div>
+                </div>
 
                 <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">How do I grow from 0 to 100K subscribers using YouTube Shorts?</h3>
@@ -3101,7 +3101,7 @@ export default function YouTubeShortsStrategy() {
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
 
                 <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">Should I focus on Shorts or long-form content? What's the best strategy?</h3>
@@ -3530,7 +3530,7 @@ export default function YouTubeShortsStrategy() {
                         <p className="text-white font-semibold text-center mt-4">The answer isn't Shorts OR long-form. It's Shorts THEN long-form, maintaining both for optimal results. Use Shorts as the growth engine, long-form as the revenue engine.</p>
                     </div>
                 </div>
-            </div>
+                </div>
 
                 <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">How do I repurpose YouTube Shorts content across other platforms effectively?</h3>
@@ -4022,7 +4022,7 @@ export default function YouTubeShortsStrategy() {
                         <p className="text-white font-semibold text-center mt-4">The multi-platform strategy isn't about being everywhere. It's about maximizing the value of content you're already creating. One video, five revenue streams, 4× reach. That's efficiency.</p>
                     </div>
                 </div>
-            </div>
+                </div>
 
                 <div className="bg-zinc-900 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-red-400 mb-6">What are the biggest mistakes that kill YouTube Shorts growth?</h3>
