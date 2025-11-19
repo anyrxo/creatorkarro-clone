@@ -506,23 +506,7 @@ export default function AIInfluencerExamplesPage() {
           </div>
         </div>
 
-        <SmartCTA
-          title="Build Your Own AI Influencer Like These Success Stories"
-          description="Learn the exact tools and strategies used by Lu, Lil Miquela, and Noonoouri to build AI influencers earning $100K+/month."
-          primaryButton={{
-            text: "Enroll in AI Influencer Course →",
-            href: "/ai-influencer-creation"
-          }}
-          features={[
-            "Create photorealistic or stylized AI characters",
-            "LoRA training for consistent faces across 1000s of posts",
-            "Brand partnership pitch templates (tested on luxury brands)",
-            "Growth strategies from 15 successful case studies",
-            "Revenue optimization: 7 income streams explained",
-            "Platform-specific tactics (Instagram, TikTok, YouTube)"
-          ]}
-          gradient="from-purple-600 to-pink-600"
-        />
+        <SmartCTA blogSlug="ai-influencer-examples-earning-100k-month" />
 
         {/* Quick Overview of Remaining 12 */}
         <h2 className="text-4xl font-bold text-white mt-16 mb-6 flex items-center gap-3">
