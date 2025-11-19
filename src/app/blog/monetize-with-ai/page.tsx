@@ -3271,10 +3271,10 @@ Real example: Marcus sent 500 cold emails to SaaS companies offering free AI con
             </div>
 
         </div>
-
-        {/* Inline CTA - After Scaling Strategies: $42.9K MRR SaaS + $100K+/month Hybrid Model + Real Case Studies */}
-        <SmartCTA blogSlug="monetize-with-ai" variant="inline" />
       </div>
+
+      {/* Inline CTA - After Scaling Strategies: $42.9K MRR SaaS + $100K+/month Hybrid Model + Real Case Studies */}
+      <SmartCTA blogSlug="monetize-with-ai" variant="inline" />
     </section>
 
     <section className="section-spacing bg-zinc-900">
