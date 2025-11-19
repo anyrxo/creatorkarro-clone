@@ -54,7 +54,6 @@ export default function FollowerGrowthSimulator() {
       const effortBonus = dailyEffort * 0.01
       const qualityBonus = qualityMultipliers[contentQuality] - 1
       
-      let dailyGrowthRate = baseRate + effortBonus + qualityBonus
       let dailyGrowth = current * dailyGrowthRate
       
       let eventMsg = null
