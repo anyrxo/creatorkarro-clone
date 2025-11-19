@@ -43,7 +43,7 @@ export default function RevenueCalculator() {
 
       // Revenue Streams Logic
       let streamRev = 0
-      const newStreams = []
+      const newStreams: string[] = []
       
       // 1. Affiliate (Unlocks at 1k)
       if (currentFollowersSim > 1000) {
