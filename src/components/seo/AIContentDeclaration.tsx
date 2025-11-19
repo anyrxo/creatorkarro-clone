@@ -5,7 +5,7 @@
 interface AIContentDeclarationProps {
   title: string
   description: string
-  contentType: 'article' | 'tutorial' | 'guide' | 'course' | 'review' | 'comparison'
+  contentType: 'article' | 'tutorial' | 'guide' | 'course' | 'review' | 'comparison' | 'system'
   primaryTopic: string
   keywords: string[]
   author: string
