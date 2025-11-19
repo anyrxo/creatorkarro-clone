@@ -175,30 +175,21 @@ export default function ResourcesPage() {
           {/* Free Resources CTA */}
           <div className="mt-24 relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/50 p-12 text-center">
              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10 pointer-events-none" />
-             <div className="relative z-10">
+             <div className="relative z-10 flex flex-col items-center justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Want the free stuff?</h2>
                 <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-                   I've dumped a ton of templates, guides, and checklists onto my Gumroad. 
-                   Grab them before I decide to charge for them.
+                   I drop free templates, guides, and alpha in my newsletter. 
+                   Subscribe to get access to the vault.
                 </p>
-                <a
-                  href="https://anyrxo.gumroad.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block"
-                >
-                  <ShimmerButton
-                    className="shadow-2xl"
-                    shimmerColor="#ffffff"
-                    shimmerSize="0.1em"
-                    background="linear-gradient(135deg, #10b981, #059669)"
-                    borderRadius="12px"
-                  >
-                    <span className="whitespace-nowrap text-lg font-bold px-8 py-3 flex items-center gap-2">
-                      Access Free Vault <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </ShimmerButton>
-                </a>
+                <iframe 
+                  src="https://anyrxo.substack.com/embed" 
+                  width="480" 
+                  height="320" 
+                  style={{ border: '1px solid #EEE', background: 'white' }} 
+                  frameBorder="0" 
+                  scrolling="no"
+                  className="rounded-xl shadow-2xl max-w-full"
+                />
              </div>
           </div>
 

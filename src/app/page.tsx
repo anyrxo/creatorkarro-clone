@@ -46,7 +46,7 @@ export default function HomePage() {
   const allAccessFeatures = [
     { text: "Full access to all 4 Flagship Systems", highlight: "4 Premium Systems" },
     { text: "Weekly Live Coaching Calls with Anyro", highlight: "Live Coaching" },
-    { text: "Private 'Empire Collective' Discord Community", highlight: "Empire Collective" },
+    { text: "Private 'Empire Collective' Community", highlight: "Empire Collective" },
     { text: "Exclusive Resource Library (Templates, Prompts)", highlight: "Resource Library" },
     { text: "Lifetime Updates & New Modules", highlight: "Lifetime Updates" }
   ]
@@ -126,7 +126,7 @@ export default function HomePage() {
       <AIContentDeclaration
         title="IImagined.ai - The All Access Creator Empire System"
         description="Master Instagram growth, AI influencers, automation, and digital products with the All Access Pass."
-        contentType="course"
+        contentType="system"
         primaryTopic="Creator Economy"
         keywords={['All Access Pass', 'Creator Economy', 'AI Automation', 'Instagram Growth']}
         author="Anyro"
@@ -152,7 +152,7 @@ export default function HomePage() {
                 The "Fragmented" <br/> Creator Trap
               </h2>
               <p className="text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-                Most creators buy a course on growth. Then another on sales. Then another on automation. 
+                Most creators buy a system on growth. Then another on sales. Then another on automation. 
                 <span className="text-white font-medium"> They end up with pieces that don't fit together.</span>
               </p>
             </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
                       </span>
                     </h3>
                     <p className="text-zinc-400 text-lg leading-relaxed max-w-md">
-                      Unlock the complete suite of 4 premium systems, the private inner circle, and weekly live coaching.
+                      Unlock the complete suite of 4 premium systems, the private community, and weekly live coaching.
                     </p>
                   </div>
 

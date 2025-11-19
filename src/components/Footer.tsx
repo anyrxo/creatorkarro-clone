@@ -21,8 +21,7 @@ export default function Footer() {
     ],
     resources: [
       { name: 'Blog', href: '/blog' },
-      { name: 'Free Resources', href: '/resources' },
-      { name: 'About Anyro', href: '/about' }
+      { name: 'Free Resources', href: '/resources' }
     ],
     legal: [
       { name: 'Refund Policy', href: '/refund-policy' },
