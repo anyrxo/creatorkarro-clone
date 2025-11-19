@@ -4759,13 +4759,13 @@ export default function YouTubeShortsStrategy() {
       </section>
 
       <section className="section-spacing bg-gradient-to-b from-zinc-900 to-dark">
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Smart CTA - All Access Pass */}
         <SmartCTA blogSlug="youtube-shorts-strategy" />
 
         {/* Related Posts */}
         <RelatedPosts currentSlug="youtube-shorts-strategy" limit={3} />
-    </div>
+        </div>
       </section>
     </div>
   )
