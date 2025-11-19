@@ -44,7 +44,7 @@ export default function HomePage() {
   }, [])
 
   const allAccessFeatures = [
-    { text: "Full access to all 4 Flagship Courses", highlight: "4 Premium Courses" },
+    { text: "Full access to all 4 Flagship Systems", highlight: "4 Premium Systems" },
     { text: "Weekly Live Coaching Calls with Anyro", highlight: "Live Coaching" },
     { text: "Private 'Empire Collective' Discord Community", highlight: "Empire Collective" },
     { text: "Exclusive Resource Library (Templates, Prompts)", highlight: "Resource Library" },
@@ -168,7 +168,7 @@ export default function HomePage() {
                   </div>
                   <ul className="space-y-4 text-zinc-400">
                     <li className="flex items-start gap-3">
-                      <span className="text-red-500 font-bold">×</span> Buying 5 different courses ($5k+)
+                      <span className="text-red-500 font-bold">×</span> Buying 5 different generic courses ($5k+)
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-red-500 font-bold">×</span> Strategies that conflict with each other
@@ -248,7 +248,7 @@ export default function HomePage() {
                       </span>
                     </h3>
                     <p className="text-zinc-400 text-lg leading-relaxed max-w-md">
-                      Unlock the complete suite of 4 premium courses, the private inner circle, and weekly live coaching.
+                      Unlock the complete suite of 4 premium systems, the private inner circle, and weekly live coaching.
                     </p>
                   </div>
 
@@ -316,7 +316,7 @@ export default function HomePage() {
              <span className="text-blue-500 font-bold tracking-widest uppercase text-xs">The Ecosystem</span>
              <h2 className="text-3xl md:text-5xl font-bold text-white mt-4 mb-6">4 Pillars of Mastery</h2>
              <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-               Each course is a deep dive into a specific aspect of the digital economy. 
+               Each system is a deep dive into a specific aspect of the digital economy. 
                Master one, or master them all with the Pass.
              </p>
           </div>

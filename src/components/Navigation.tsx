@@ -27,17 +27,17 @@ export default function Navigation() {
 
   const mainNavigation: NavigationItem[] = [
     { name: 'Story', href: '/story' },
-    {
-      name: 'Courses',
-      href: '#',
-      hasDropdown: true,
-      dropdownItems: [
-        { name: 'Instagram Ignited', href: '/instagram-ignited' },
-        { name: 'AI Influencers', href: '/ai-influencers' },
-        { name: 'Digital Products', href: '/digital-products' },
-        { name: 'AI Automations', href: '/ai-automations' }
-      ]
-    },
+        {
+          name: 'Systems',
+          href: '#',
+          hasDropdown: true,
+          dropdownItems: [
+            { name: 'Instagram Ignited', href: '/instagram-ignited' },
+            { name: 'AI Influencers', href: '/ai-influencers' },
+            { name: 'Digital Products', href: '/digital-products' },
+            { name: 'AI Automations', href: '/ai-automations' }
+          ]
+        },
     { name: 'Resources', href: '/resources' },
     { name: 'Testimonials', href: '/testimonials' },
     { name: 'Blog', href: '/blog' },

@@ -115,7 +115,7 @@ export default function TestimonialsPage() {
       results: "5 clients, $12K/mo recurring"
     },
     {
-      name: "Julian Chen",
+      name: "Julian Wright",
       role: "AI Content Creator",
       course: "AI Influencers",
       avatar: "https://i.pravatar.cc/150?img=12",
@@ -147,7 +147,7 @@ export default function TestimonialsPage() {
       results: "3x customers, same team size"
     },
     {
-      name: "Priya Patel",
+      name: "Emily Stone",
       role: "Digital Product Creator",
       course: "Digital Products",
       avatar: "https://i.pravatar.cc/150?img=23",
@@ -277,12 +277,12 @@ export default function TestimonialsPage() {
       {/* SEO: AI Content Declaration for Testimonials Page */}
       <AIContentDeclaration
         title="Student Success Stories & Testimonials - IImagined.ai"
-        description="Real success stories from 4,000+ students who transformed their lives through Instagram growth, AI influencers, AI automation agencies, and digital products courses. Verified results and testimonials."
+        description="Real success stories from 4,000+ students who transformed their lives through Instagram growth, AI influencers, AI automation agencies, and digital products systems. Verified results and testimonials."
         contentType="review"
-        primaryTopic="Student Success Stories & Course Reviews"
+        primaryTopic="Student Success Stories & System Reviews"
         keywords={[
           'student success stories',
-          'course testimonials',
+          'system testimonials',
           'Instagram growth results',
           'AI influencer success',
           'digital product sales',
@@ -341,39 +341,22 @@ export default function TestimonialsPage() {
                 ref={heroAnimation.elementRef}
                 className={`scroll-fade-up ${heroAnimation.isVisible ? 'visible' : ''}`}
               >
-                <div className="relative inline-block">
-                  {/* Main Title with ScrambleText Morphing Effect */}
-                  <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
-                    <ScrambleText
-                      text="Wall of Wins"
-                      className="text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight drop-shadow-2xl"
-                      scrambleSpeed={1}
-                      revealSpeed={1}
-                    />
-                  </h1>
+                 <div className="inline-flex items-center gap-2 bg-zinc-800/50 border border-white/10 rounded-full px-4 py-1.5 mb-8 backdrop-blur-md">
+                   <Quote className="w-4 h-4 text-blue-400" />
+                   <span className="text-zinc-300 text-sm font-medium uppercase tracking-wider">Student Success</span>
+                 </div>
 
-                  {/* Magical Glowing Border */}
-                  <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 via-pink-600 to-yellow-600 rounded-2xl opacity-20 blur-xl animate-pulse"></div>
+                 <h1 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
+                   Wall of <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Wins.</span>
+                 </h1>
 
-                  {/* Floating Magic Elements Around Title */}
-                  <div className="absolute -top-8 -left-8 w-6 h-6 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-spin opacity-80" style={{animationDuration: '8s'}}></div>
-                  <div className="absolute -top-4 -right-12 w-4 h-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-spin opacity-70" style={{animationDuration: '10s', animationDirection: 'reverse'}}></div>
-                  <div className="absolute -bottom-6 -left-12 w-5 h-5 bg-gradient-to-r from-pink-400 to-red-400 rounded-full animate-spin opacity-75" style={{animationDuration: '12s'}}></div>
-                  <div className="absolute -bottom-8 -right-8 w-3 h-3 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-spin opacity-90" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
-                </div>
-              </div>
-
-              <div className="relative">
-                <div className="max-w-5xl mx-auto mt-6">
-                  <TypingAnimation
-                    text="Real creators sharing their transformation journeys. Every story started with a single decision to invest in themselves."
-                    className="text-2xl md:text-3xl text-white leading-relaxed font-medium drop-shadow-lg"
-                    duration={50}
-                  />
-                </div>
-
-                {/* Subtitle Glow Effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent blur-sm"></div>
+                 <div className="max-w-3xl mx-auto">
+                   <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed font-medium">
+                     Real creators sharing their transformation journeys. 
+                     <br />
+                     Every story started with a single decision to invest in themselves.
+                   </p>
+                 </div>
               </div>
             </div>
           </div>
@@ -393,7 +376,7 @@ export default function TestimonialsPage() {
                     ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-blue-500/25'
                     : 'bg-zinc-800 text-zinc-200 hover:bg-zinc-700 hover:text-white'
                 }`}
-                aria-label={`Filter testimonials by ${course === 'all' ? 'all courses' : course}`}
+                aria-label={`Filter testimonials by ${course === 'all' ? 'all systems' : course}`}
                 aria-pressed={activeFilter === course}
               >
                 {course === 'all' ? 'All Stories' : course}
@@ -439,8 +422,8 @@ export default function TestimonialsPage() {
                 ref={testimonialAnimations.setElementRef(index)}
                 className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 border border-zinc-700 hover:border-blue-500/50 transition-all duration-300 group hover-lift scroll-fade-up visible"
               >
-                {/* Course Badge */}
-                <div className="flex items-center justify-between mb-4">
+                  {/* System Badge */}
+                  <div className="flex items-center justify-between mb-4">
                   <span className={`text-xs px-3 py-1 rounded-full ${
                     testimonial.course === 'Instagram Ignited' ? 'bg-blue-500/20 text-blue-400' :
                     testimonial.course === 'Digital Products' ? 'bg-green-500/20 text-green-400' :

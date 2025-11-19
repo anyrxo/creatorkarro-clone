@@ -248,7 +248,7 @@ export function BeautifulHero() {
             />
             <StandardCTA
               variant="outline"
-              text="View Courses"
+              text="View Systems"
               href="#courses"
               size="lg"
             />

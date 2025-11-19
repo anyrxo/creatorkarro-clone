@@ -34,7 +34,7 @@ export default function RefundPolicyPage() {
             className={`space-y-6 text-lg text-gray-300 leading-relaxed scroll-fade-up ${contentAnimation.isVisible ? 'visible' : ''}`}
           >
             <p>
-              At IImagined, we strive to provide clear expectations about our digital products before purchase. The main product we offer is an evergreen video course, along with lifetime access to our community and 24/7 support. Due to the nature of our downloadable content, all sales are final, and we do not offer refunds for the following reasons:
+              At IImagined, we strive to provide clear expectations about our digital products before purchase. The main product we offer is an evergreen video training system, along with lifetime access to our community and 24/7 support. Due to the nature of our downloadable content, all sales are final, and we do not offer refunds for the following reasons:
             </p>
 
             <ul className="space-y-4 ml-6">
@@ -82,7 +82,7 @@ export default function RefundPolicyPage() {
               <div className="space-y-4 text-sm md:text-base">
                 <div className="flex items-start">
                   <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">1</span>
-                  <span><strong>Course Completion:</strong> You must have watched 100% of the core curriculum videos (tracked via our backend analytics).</span>
+                  <span><strong>System Completion:</strong> You must have watched 100% of the core curriculum videos (tracked via our backend analytics).</span>
                 </div>
                 <div className="flex items-start">
                   <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">2</span>
