@@ -2640,485 +2640,593 @@ const schema = generateBlogPostSchema({
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-red-400 mb-4">How do I grow from 0 to 100K subscribers using YouTube Shorts?</h3>
-                <div className="prose prose-invert max-w-none text-gray-300">
-                    <p className="mb-4">{`**Growing from 0 to 100K subscribers with Shorts takes 3-12 months posting 3-5 Shorts daily with a proven content system.** I've done this 3 times, and here's the exact roadmap with timelines, benchmarks, and common pitfalls:
-
-**The Growth Timeline (Realistic Expectations)**
-
-Phase 1: 0-1,000 subscribers (2-6 weeks)
-- Posts needed: 50-150 Shorts
-- Posting frequency: 3-5 per day
-- Expected growth: 10-50 subs/day
-- Main challenge: Getting into YouTube Partner Program
-
-Phase 2: 1,000-10,000 subscribers (1-3 months)
-- Posts needed: 100-300 Shorts
-- Expected growth: 50-200 subs/day
-- Main challenge: Finding viral formula
-- Milestone: First 1M view Short
-
-Phase 3: 10,000-50,000 subscribers (2-4 months)
-- Posts needed: 200-500 Shorts
-- Expected growth: 200-500 subs/day
-- Main challenge: Consistency fatigue
-- Milestone: Multiple viral Shorts weekly
-
-Phase 4: 50,000-100,000 subscribers (1-3 months)
-- Posts needed: 100-300 Shorts
-- Expected growth: 300-800 subs/day
-- Main challenge: Maintaining quality at volume
-- Milestone: Sustainable viral hit rate
-
-Total time: 6-16 months (average: 9 months)
-Total Shorts needed: 450-1,250
-
-**Phase 1: 0-1,000 Subscribers (Foundation)**
-
-Goal: Get monetized, learn what works
-
-Week 1-2 Strategy: Volume Testing
-- Post 5 Shorts/day (70 Shorts in 2 weeks)
-- Test different formats, hooks, topics
-- Goal: Find 2-3 formats that get 1,000+ views
-
-What to test:
-- Different hook types (curiosity, shock, value)
-- Different video lengths (15s, 30s, 45s, 60s)
-- Different topics within your niche
-- Different posting times
-
-Track everything in spreadsheet:
-- Video title
-- Format type
-- Views at 24 hours
-- AVD %
-- CTR %
-- Subscriber gain
-
-Week 3-4 Strategy: Double Down
-- Analyze top 10 performing Shorts from Week 1-2
-- Find common patterns (topic, format, length)
-- Create 5 Shorts/day using winning formula
-- Goal: Hit 1,000 subscribers
-
-Common patterns in successful channels:
-- How-to content: Converts subscribers at 3-5%
-- Before/after: Converts at 2-4%
-- Myth-busting: Converts at 2-3%
-- Entertainment: Converts at 1-2%
-
-Example: My first channel (productivity niche)
-- Tested 15 different topics
-- "How to [productivity win]" format performed best
-- Doubled down on that format
-- Hit 1,000 subs in 23 days
-
-Subscriber conversion benchmarks:
-- 1% conversion = 100,000 views needed for 1,000 subs
-- 2% conversion = 50,000 views needed for 1,000 subs
-- 3% conversion = 33,000 views needed for 1,000 subs
-- 5% conversion = 20,000 views needed for 1,000 subs
-
-**Phase 2: 1,000-10,000 Subscribers (Viral Formula)**
-
-Goal: Create first mega-viral Short (1M+ views)
-
-Month 1-2 Strategy: Systematic Testing
-Now that you're monetized, the algorithm takes you more seriously.
-
-Content mix strategy:
-- 60% proven winners (formats that work)
-- 30% iterations (variations on winners)
-- 10% wild experiments (test new ideas)
-
-How to find your viral formula:
-
-Step 1: Analyze competitors' viral Shorts
-- Find 5 channels in your niche with 100K+ subs
-- Note their top 10 most viewed Shorts
-- Find patterns (topics, formats, lengths)
-- Don't copy—learn the structure
-
-Step 2: Reverse-engineer viral elements
-Viral Short anatomy:
-- Hook type (what grabbed attention)
-- Promise made (what value offered)
-- Delivery method (how value delivered)
-- Loop mechanism (what made them rewatch)
-
-Step 3: Test variations weekly
-Week 1: Test hook variations
-Week 2: Test delivery variations
-Week 3: Test loop variations
-Week 4: Combine best of all three
-
-My breakthrough Short (8.2M views):
-- Title: "Why successful people wake up at 4 AM"
-- Hook: Controversial statement (challenges belief)
-- Delivery: 5 specific reasons with data
-- Loop: "Reason #5 will change your perspective"
-- Result: 35K new subscribers in 48 hours
-
-Viral Short checklist:
-☐ Hooks in first 2 seconds (not 3)
-☐ Clear value proposition in title
-☐ Visual change every 1.5-2 seconds
-☐ Satisfying payoff by 30-second mark
-☐ Surprise bonus element
-☐ Strong CTA for comments
-
-**Phase 3: 10,000-50,000 Subscribers (Consistency Machine)**
-
-Goal: Turn one-hit-wonder into repeatable system
-
-At this stage, you've had viral Shorts. Now: Make virality repeatable.
-
-The 3 Content Buckets:
-
-Bucket 1: Viral Magnets (20% of content)
-- Big swings for viral potential
-- Trending topics, controversial takes
-- Goal: 1M+ views
-- Post: 1 per day
-
-Bucket 2: Steady Performers (60% of content)
-- Proven formats that reliably get 50K-200K views
-- Your bread and butter
-- Goal: 100K-500K views
-- Post: 2-3 per day
-
-Bucket 3: Experimental (20% of content)
-- Test new ideas, formats, topics
-- Future viral magnets
-- Goal: Learn what resonates
-- Post: 1 per day
-
-Example content calendar:
-
-Monday:
-- 7 AM: Steady performer (how-to)
-- 1 PM: Viral magnet (controversial take)
-- 7 PM: Steady performer (quick tip)
-
-Tuesday:
-- 7 AM: Experimental (new format)
-- 1 PM: Steady performer (list format)
-- 7 PM: Viral magnet (trending topic)
-
-Repeat structure, vary topics.
-
-Scaling content production:
-
-Option 1: Batch production
-- Film 15 Shorts in one 3-hour session
-- Different locations in house/office
-- Different outfits (looks like different days)
-- Edit all in one 4-hour session
-- Schedule for week ahead
-
-Option 2: Repurposing system
-- Create 1 long-form video (10 minutes)
-- Extract 5-7 Shorts from that video
-- Each Short is different segment
-- Saves ideation time
-
-Option 3: Team approach (if revenue supports)
-- Hire video editor ($500-$1,500/month)
-- Hire script writer ($300-$800/month)
-- You focus on filming and strategy
-- 10× your output
-
-At 20K subscribers, I hired editor:
-- Was creating 3 Shorts/day alone
-- Hired editor, now create 8 Shorts/day
-- Growth accelerated from 300 subs/day to 700 subs/day
-- Editor cost: $800/month
-- Additional monthly revenue: $4,000+
-- ROI: 5× return
-
-**Phase 4: 50,000-100,000 Subscribers (Optimization)**
-
-Goal: Fine-tune for maximum efficiency
-
-At this stage, you have data. Lots of data. Use it.
-
-Advanced analytics tracking:
-
-Create master spreadsheet with:
-- Title
-- Topic category
-- Format type
-- Length
-- Hook type
-- Upload time
-- 24-hour views
-- 7-day views
-- AVD %
-- CTR %
-- Engagement rate %
-- Subscribers gained
-
-After 100+ Shorts, you'll see patterns:
-
-Pattern example from my finance channel:
-- "How to save $X" titles: Average 450K views
-- "Why [financial myth]" titles: Average 320K views
-- "I tried [money method]" titles: Average 890K views
-
-Discovery: Story-based titles outperformed by 2×
-Action: Shift 60% of content to story format
-Result: Growth rate increased 40%
-
-Topic optimization:
-
-Rank your topics by performance:
-1. Average views per Short
-2. Subscriber conversion rate
-3. Engagement rate
-
-Double down on top 3 topics.
-Reduce/eliminate bottom 3 topics.
-
-My channel topic rankings:
-1. Passive income methods (780K avg views, 4.2% conversion)
-2. Investing for beginners (520K avg views, 3.8% conversion)
-3. Budgeting hacks (410K avg views, 3.1% conversion)
-4. Crypto (210K avg views, 1.2% conversion) ← Eliminated
-5. Real estate (190K avg views, 0.9% conversion) ← Eliminated
-
-Focused on top 3 topics only:
-- Content creation time reduced 30%
-- Average views increased 25%
-- Subscriber growth increased 35%
-
-**The Subscriber Acceleration Tactics**
-
-Tactic 1: The Subscribe Pop-Up
-Add subscribe button animation in video
-- Place at 10-15 second mark
-- Brief (1 second), not annoying
-- Increases subscribe rate 15-25%
-
-Tactic 2: The Value Stack
-Give so much value they feel obligated to subscribe
-
-Example structure:
-- Tip 1 (expected value)
-- Tip 2 (expected value)
-- Tip 3 (bonus unexpected value)
-- "Follow for more [topic] tips every day"
-
-Reciprocity principle: Over-deliver → they subscribe
-
-Tactic 3: The Pattern Recognition
-Create signature format viewers recognize
-
-Examples:
-- Same intro sequence
-- Same background/setup
-- Same music
-- Same text style
-
-When viewers see your Short in feed:
-"Oh, it's [your format]" → instant credibility → subscribe
-
-My signature elements:
-- Purple color grading
-- Specific font (Montserrat Bold)
-- Same intro music (3-second clip)
-- Result: 62% of viewers recognize my content in feed
-
-Tactic 4: The Content Upgrade
-End Shorts with "Full tutorial on my channel"
-
-- Create longer-form version (8-15 minutes)
-- Short = trailer for long video
-- Viewers visit channel → see multiple videos → subscribe
-- Conversion rate: 8-12% (very high)
-
-Example:
-- Short: "3 Canva hacks in 30 seconds"
-- Long video: "Complete Canva tutorial (15 minutes)"
-- Pin comment on Short: "Full tutorial on my channel"
-- Result: 15,000 Short views → 1,800 channel visits → 720 new subs
-
-Tactic 5: The Community Building
-Reply to every comment (humanizes you)
-
-Comment reply strategy:
-- First 10 comments: Detailed replies
-- Next 50 comments: Quick replies
-- After that: Like all comments, reply to best ones
-
-People subscribe to people, not just content.
-
-**Growth Plateaus (And How to Break Through)**
-
-Plateau 1: Stuck at 5,000-8,000 subs
-Problem: Limited topic variety
-Solution: Expand to related niches
-- Finance channel → Add career advice
-- Fitness channel → Add nutrition
-- Tech channel → Add productivity
-
-Plateau 2: Stuck at 20,000-30,000 subs
-Problem: Content becoming repetitive
-Solution: Format innovation
-- Try new video styles
-- Different editing approach
-- Collaborate with similar-sized creators
-
-Plateau 3: Stuck at 60,000-80,000 subs
-Problem: Algorithm saturation (exhausted audience)
-Solution: Expand to new platforms
-- TikTok (different demographic)
-- Instagram Reels (different audience)
-- Bring new viewers to YouTube
-
-**The 100K Milestone Sprint**
-
-Final push from 90K to 100K:
-
-Week 1-2: Content blitz
-- Post 7 Shorts/day
-- Best-performing topics only
-- Goal: Maximize visibility
-
-Week 3: Collaboration sprint
-- Partner with 3-5 creators (80K-150K subs)
-- Cross-promote each other
-- Tap into their audiences
-
-Week 4: Community engagement
-- Community posts daily
-- Reply to every comment
-- Go live (if possible)
-- Build hype for 100K
-
-My 100K sprint results:
-- Week 1: 92K → 95K (+3K)
-- Week 2: 95K → 97.5K (+2.5K)
-- Week 3: 97.5K → 99.2K (+1.7K)
-- Week 4: 99.2K → 101.4K (+2.2K)
-
-Total: 28 days from 92K to 100K
-
-**What I Wish I Knew Starting Out**
-
-1. Quantity over quality early on
-- First 50 Shorts = learning phase
-- Don't obsess over perfection
-- Ship it and learn
-
-2. Thumbnails matter (even for Shorts)
-- Affect suggested videos
-- Affect search results
-- 20% of my views come from search/suggested
-
-3. One viral hit changes everything
-- Algorithm gives you 2-week window
-- Post aggressively during that window
-- Capitalize on momentum
-
-4. Subscriber quality > quantity
-- 100K engaged subs > 500K dead subs
-- Focus on niche, not vanity metrics
-- Engaged audience = better revenue
-
-5. Burnout is real
-- Have 2-week content buffer
-- Take 1 day off per week
-- Sustainable pace > sprint
-
-The 0-100K journey isn't luck. It's:
-- 70% consistency (showing up daily)
-- 20% strategy (understanding algorithm)
-- 10% content quality (good enough beats perfect)
-
-Start today. Post your first Short. Then your second. By Short #100, you'll be a different creator. By Short #500, you'll hit 100K.`}</p>
+                <h3 className="text-2xl font-bold text-red-400 mb-6">How do I grow from 0 to 100K subscribers using YouTube Shorts?</h3>
+                <div className="space-y-6">
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                        <strong className="text-white font-semibold">Growing from 0 to 100K subscribers with Shorts takes 3-12 months posting 3-5 Shorts daily with a proven content system.</strong> I've done this 3 times, and here's the exact roadmap with timelines, benchmarks, and common pitfalls:
+                    </p>
+
+                    {/* Growth Timeline */}
+                    <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-blue-400 mb-4">The Growth Timeline (Realistic Expectations)</h4>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">Phase 1: 0-1,000 subscribers (2-6 weeks)</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Posts needed: <strong className="text-white">50-150 Shorts</strong></li>
+                                    <li>• Posting frequency: <strong className="text-white">3-5 per day</strong></li>
+                                    <li>• Expected growth: <strong className="text-white">10-50 subs/day</strong></li>
+                                    <li>• Main challenge: Getting into YouTube Partner Program</li>
+                                </ul>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">Phase 2: 1,000-10,000 subscribers (1-3 months)</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Posts needed: <strong className="text-white">100-300 Shorts</strong></li>
+                                    <li>• Expected growth: <strong className="text-white">50-200 subs/day</strong></li>
+                                    <li>• Main challenge: Finding viral formula</li>
+                                    <li>• Milestone: First <strong className="text-white">1M view Short</strong></li>
+                                </ul>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">Phase 3: 10,000-50,000 subscribers (2-4 months)</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Posts needed: <strong className="text-white">200-500 Shorts</strong></li>
+                                    <li>• Expected growth: <strong className="text-white">200-500 subs/day</strong></li>
+                                    <li>• Main challenge: Consistency fatigue</li>
+                                    <li>• Milestone: Multiple viral Shorts weekly</li>
+                                </ul>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">Phase 4: 50,000-100,000 subscribers (1-3 months)</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Posts needed: <strong className="text-white">100-300 Shorts</strong></li>
+                                    <li>• Expected growth: <strong className="text-white">300-800 subs/day</strong></li>
+                                    <li>• Main challenge: Maintaining quality at volume</li>
+                                    <li>• Milestone: Sustainable viral hit rate</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mt-4">
+                            <p className="text-gray-300 text-sm">
+                                <strong className="text-white">Total time:</strong> 6-16 months (average: <strong className="text-white">9 months</strong>)<br/>
+                                <strong className="text-white">Total Shorts needed:</strong> 450-1,250
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Phase 1 */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">Phase 1: 0-1,000 Subscribers (Foundation)</h4>
+                        <p className="text-gray-300 mb-4"><strong className="text-white">Goal:</strong> Get monetized, learn what works</p>
+
+                        <div className="space-y-4">
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Week 1-2 Strategy: Volume Testing</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm mb-2">
+                                    <li>• Post <strong className="text-white">5 Shorts/day</strong> (70 Shorts in 2 weeks)</li>
+                                    <li>• Test different formats, hooks, topics</li>
+                                    <li>• Goal: Find <strong className="text-white">2-3 formats</strong> that get 1,000+ views</li>
+                                </ul>
+                                <div className="mt-2">
+                                    <h6 className="text-xs font-semibold text-white mb-1">What to test:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Different hook types (curiosity, shock, value)</li>
+                                        <li>• Different video lengths (15s, 30s, 45s, 60s)</li>
+                                        <li>• Different topics within your niche</li>
+                                        <li>• Different posting times</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Track everything in spreadsheet:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Video title</li>
+                                    <li>• Format type</li>
+                                    <li>• Views at 24 hours</li>
+                                    <li>• AVD %</li>
+                                    <li>• CTR %</li>
+                                    <li>• Subscriber gain</li>
+                                </ul>
+                            </div>
+
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Week 3-4 Strategy: Double Down</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm mb-2">
+                                    <li>• Analyze top 10 performing Shorts from Week 1-2</li>
+                                    <li>• Find common patterns (topic, format, length)</li>
+                                    <li>• Create <strong className="text-white">5 Shorts/day</strong> using winning formula</li>
+                                    <li>• Goal: Hit <strong className="text-white">1,000 subscribers</strong></li>
+                                </ul>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mt-2">
+                                    <h6 className="text-xs font-semibold text-blue-300 mb-1">Common patterns in successful channels:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• How-to content: Converts subscribers at <strong className="text-white">3-5%</strong></li>
+                                        <li>• Before/after: Converts at <strong className="text-white">2-4%</strong></li>
+                                        <li>• Myth-busting: Converts at <strong className="text-white">2-3%</strong></li>
+                                        <li>• Entertainment: Converts at <strong className="text-white">1-2%</strong></li>
+                                    </ul>
+                                </div>
+                                <div className="bg-purple-900/20 border border-purple-500/30 rounded p-3 mt-2">
+                                    <h6 className="text-xs font-semibold text-purple-300 mb-1">Example: My first channel (productivity niche)</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Tested 15 different topics</li>
+                                        <li>• "How to [productivity win]" format performed best</li>
+                                        <li>• Doubled down on that format</li>
+                                        <li>• Hit 1,000 subs in <strong className="text-white">23 days</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Subscriber conversion benchmarks:</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• <strong className="text-white">1% conversion</strong> = 100,000 views needed for 1,000 subs</li>
+                                    <li>• <strong className="text-white">2% conversion</strong> = 50,000 views needed for 1,000 subs</li>
+                                    <li>• <strong className="text-white">3% conversion</strong> = 33,000 views needed for 1,000 subs</li>
+                                    <li>• <strong className="text-white">5% conversion</strong> = 20,000 views needed for 1,000 subs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Phase 2 */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">Phase 2: 1,000-10,000 Subscribers (Viral Formula)</h4>
+                        <p className="text-gray-300 mb-4"><strong className="text-white">Goal:</strong> Create first mega-viral Short (1M+ views)</p>
+
+                        <div className="space-y-4">
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-2">Month 1-2 Strategy: Systematic Testing</h5>
+                                <p className="text-gray-300 text-sm mb-2">Now that you're monetized, the algorithm takes you more seriously.</p>
+                                <div className="mb-2">
+                                    <h6 className="text-xs font-semibold text-white mb-1">Content mix strategy:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• <strong className="text-white">60%</strong> proven winners (formats that work)</li>
+                                        <li>• <strong className="text-white">30%</strong> iterations (variations on winners)</li>
+                                        <li>• <strong className="text-white">10%</strong> wild experiments (test new ideas)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-2">How to find your viral formula:</h5>
+                                <div className="space-y-3">
+                                    <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-purple-200 mb-1">Step 1: Analyze competitors' viral Shorts</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Find 5 channels in your niche with 100K+ subs</li>
+                                            <li>• Note their top 10 most viewed Shorts</li>
+                                            <li>• Find patterns (topics, formats, lengths)</li>
+                                            <li>• Don't copy—learn the structure</li>
+                                        </ul>
+                                    </div>
+                                    <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-purple-200 mb-1">Step 2: Reverse-engineer viral elements</h6>
+                                        <p className="text-xs font-semibold text-white mb-1">Viral Short anatomy:</p>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Hook type (what grabbed attention)</li>
+                                            <li>• Promise made (what value offered)</li>
+                                            <li>• Delivery method (how value delivered)</li>
+                                            <li>• Loop mechanism (what made them rewatch)</li>
+                                        </ul>
+                                    </div>
+                                    <div className="bg-purple-800/20 border border-purple-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-purple-200 mb-1">Step 3: Test variations weekly</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Week 1: Test hook variations</li>
+                                            <li>• Week 2: Test delivery variations</li>
+                                            <li>• Week 3: Test loop variations</li>
+                                            <li>• Week 4: Combine best of all three</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">My breakthrough Short (8.2M views):</h5>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Title: "Why successful people wake up at 4 AM"</li>
+                                    <li>• Hook: Controversial statement (challenges belief)</li>
+                                    <li>• Delivery: 5 specific reasons with data</li>
+                                    <li>• Loop: "Reason #5 will change your perspective"</li>
+                                    <li>• Result: <strong className="text-white">35K new subscribers</strong> in 48 hours</li>
+                                </ul>
+                            </div>
+
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-2">Viral Short checklist:</h5>
+                                <ul className="space-y-2 text-gray-300 text-sm">
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Hooks in first <strong className="text-white">2 seconds</strong> (not 3)</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Clear value proposition in title</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Visual change every <strong className="text-white">1.5-2 seconds</strong></span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Satisfying payoff by <strong className="text-white">30-second mark</strong></span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Surprise bonus element</span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <span>☐</span>
+                                        <span>Strong CTA for comments</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Phase 3 */}
+                    <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-yellow-400 mb-4">Phase 3: 10,000-50,000 Subscribers (Consistency Machine)</h4>
+                        <p className="text-gray-300 mb-4"><strong className="text-white">Goal:</strong> Turn one-hit-wonder into repeatable system</p>
+                        <p className="text-gray-300 text-sm mb-4">At this stage, you've had viral Shorts. Now: Make virality repeatable.</p>
+
+                        <div className="space-y-4">
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-yellow-300 mb-3">The 3 Content Buckets:</h5>
+                                <div className="grid md:grid-cols-3 gap-3">
+                                    <div className="bg-red-900/20 border border-red-500/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-red-300 mb-1">Bucket 1: Viral Magnets (20%)</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Big swings for viral potential</li>
+                                            <li>• Trending topics, controversial takes</li>
+                                            <li>• Goal: <strong className="text-white">1M+ views</strong></li>
+                                            <li>• Post: <strong className="text-white">1 per day</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div className="bg-green-900/20 border border-green-500/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-green-300 mb-1">Bucket 2: Steady Performers (60%)</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Proven formats: 50K-200K views</li>
+                                            <li>• Your bread and butter</li>
+                                            <li>• Goal: <strong className="text-white">100K-500K views</strong></li>
+                                            <li>• Post: <strong className="text-white">2-3 per day</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-blue-300 mb-1">Bucket 3: Experimental (20%)</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Test new ideas, formats, topics</li>
+                                            <li>• Future viral magnets</li>
+                                            <li>• Goal: Learn what resonates</li>
+                                            <li>• Post: <strong className="text-white">1 per day</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-yellow-300 mb-2">Scaling content production:</h5>
+                                <div className="space-y-2">
+                                    <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-yellow-200 mb-1">Option 1: Batch production</h6>
+                                        <p className="text-gray-300 text-xs">Film 15 Shorts in one 3-hour session → Edit all in one 4-hour session → Schedule for week ahead</p>
+                                    </div>
+                                    <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-yellow-200 mb-1">Option 2: Repurposing system</h6>
+                                        <p className="text-gray-300 text-xs">Create 1 long-form video (10 minutes) → Extract 5-7 Shorts → Saves ideation time</p>
+                                    </div>
+                                    <div className="bg-yellow-800/20 border border-yellow-400/30 rounded p-3">
+                                        <h6 className="text-xs font-semibold text-yellow-200 mb-1">Option 3: Team approach</h6>
+                                        <p className="text-gray-300 text-xs">Hire editor ($500-$1,500/month) + script writer ($300-$800/month) → <strong className="text-white">10× your output</strong></p>
+                                    </div>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mt-2">
+                                    <h6 className="text-xs font-semibold text-blue-300 mb-1">At 20K subscribers, I hired editor:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• Was creating <strong className="text-white">3 Shorts/day</strong> alone</li>
+                                        <li>• Hired editor, now create <strong className="text-white">8 Shorts/day</strong></li>
+                                        <li>• Growth: <strong className="text-white">300 → 700 subs/day</strong></li>
+                                        <li>• Editor cost: $800/month | Additional revenue: <strong className="text-white">$4,000+</strong> | ROI: <strong className="text-white">5× return</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Phase 4 */}
+                    <div className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-indigo-400 mb-4">Phase 4: 50,000-100,000 Subscribers (Optimization)</h4>
+                        <p className="text-gray-300 mb-4"><strong className="text-white">Goal:</strong> Fine-tune for maximum efficiency</p>
+                        <p className="text-gray-300 text-sm mb-4">At this stage, you have data. Lots of data. Use it.</p>
+
+                        <div className="space-y-4">
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Advanced analytics tracking:</h5>
+                                <p className="text-gray-300 text-xs mb-2">Create master spreadsheet tracking: Title, Topic category, Format type, Length, Hook type, Upload time, 24-hour views, 7-day views, AVD %, CTR %, Engagement rate %, Subscribers gained</p>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mt-2">
+                                    <h6 className="text-xs font-semibold text-blue-300 mb-1">Pattern example from my finance channel:</h6>
+                                    <ul className="space-y-1 text-gray-300 text-xs">
+                                        <li>• "How to save $X" titles: Average <strong className="text-white">450K views</strong></li>
+                                        <li>• "Why [financial myth]" titles: Average <strong className="text-white">320K views</strong></li>
+                                        <li>• "I tried [money method]" titles: Average <strong className="text-white">890K views</strong></li>
+                                    </ul>
+                                    <p className="text-gray-300 text-xs mt-2">Discovery: Story-based titles outperformed by <strong className="text-white">2×</strong> → Shifted 60% to story format → Growth rate increased <strong className="text-white">40%</strong></p>
+                                </div>
+                            </div>
+
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Topic optimization:</h5>
+                                <p className="text-gray-300 text-sm mb-2">Rank your topics by: 1) Average views per Short, 2) Subscriber conversion rate, 3) Engagement rate. Double down on top 3 topics. Reduce/eliminate bottom 3 topics.</p>
+                                <div className="bg-green-900/20 border border-green-500/30 rounded p-3 mt-2">
+                                    <h6 className="text-xs font-semibold text-green-300 mb-1">My channel topic rankings:</h6>
+                                    <ol className="space-y-1 text-gray-300 text-xs list-decimal list-inside">
+                                        <li>Passive income methods (<strong className="text-white">780K avg views</strong>, <strong className="text-white">4.2% conversion</strong>)</li>
+                                        <li>Investing for beginners (<strong className="text-white">520K avg views</strong>, <strong className="text-white">3.8% conversion</strong>)</li>
+                                        <li>Budgeting hacks (<strong className="text-white">410K avg views</strong>, <strong className="text-white">3.1% conversion</strong>)</li>
+                                        <li className="text-red-400">Crypto (210K avg views, 1.2% conversion) ← Eliminated</li>
+                                        <li className="text-red-400">Real estate (190K avg views, 0.9% conversion) ← Eliminated</li>
+                                    </ol>
+                                    <p className="text-gray-300 text-xs mt-2">Focused on top 3 only: Content time reduced <strong className="text-white">30%</strong>, Average views increased <strong className="text-white">25%</strong>, Subscriber growth increased <strong className="text-white">35%</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Subscriber Acceleration Tactics */}
+                    <div className="bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-teal-400 mb-4">The Subscriber Acceleration Tactics</h4>
+                        <div className="space-y-4">
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-teal-300 mb-2">Tactic 1: The Subscribe Pop-Up</h5>
+                                <p className="text-gray-300 text-sm">Add subscribe button animation in video at <strong className="text-white">10-15 second mark</strong> (brief, 1 second) → Increases subscribe rate <strong className="text-white">15-25%</strong></p>
+                            </div>
+
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-teal-300 mb-2">Tactic 2: The Value Stack</h5>
+                                <p className="text-gray-300 text-sm mb-2">Give so much value they feel obligated to subscribe</p>
+                                <p className="text-gray-300 text-xs italic mb-2">Example: Tip 1 (expected) → Tip 2 (expected) → Tip 3 (bonus unexpected) → "Follow for more [topic] tips every day"</p>
+                                <p className="text-gray-300 text-xs">Reciprocity principle: Over-deliver → they subscribe</p>
+                            </div>
+
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-teal-300 mb-2">Tactic 3: The Pattern Recognition</h5>
+                                <p className="text-gray-300 text-sm mb-2">Create signature format viewers recognize: Same intro sequence, background/setup, music, text style</p>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mt-2">
+                                    <p className="text-gray-300 text-xs">My signature: Purple color grading, Montserrat Bold font, same intro music (3-second clip) → <strong className="text-white">62% of viewers</strong> recognize my content in feed</p>
+                                </div>
+                            </div>
+
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-teal-300 mb-2">Tactic 4: The Content Upgrade</h5>
+                                <p className="text-gray-300 text-sm mb-2">End Shorts with "Full tutorial on my channel" → Create longer-form version (8-15 minutes) → Conversion rate: <strong className="text-white">8-12%</strong> (very high)</p>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-3 mt-2">
+                                    <p className="text-gray-300 text-xs">Example: "3 Canva hacks in 30 seconds" Short → "Complete Canva tutorial (15 minutes)" long video → <strong className="text-white">15,000 Short views</strong> → <strong className="text-white">1,800 channel visits</strong> → <strong className="text-white">720 new subs</strong></p>
+                                </div>
+                            </div>
+
+                            <div className="bg-teal-900/20 border border-teal-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-teal-300 mb-2">Tactic 5: The Community Building</h5>
+                                <p className="text-gray-300 text-sm mb-2">Reply to every comment (humanizes you)</p>
+                                <p className="text-gray-300 text-xs mb-2">Strategy: First 10 comments (detailed replies) → Next 50 comments (quick replies) → After that (like all, reply to best ones)</p>
+                                <p className="text-gray-300 text-xs italic">People subscribe to people, not just content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Growth Plateaus */}
+                    <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-red-400 mb-4">Growth Plateaus (And How to Break Through)</h4>
+                        <div className="space-y-3">
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-red-300 mb-1">Plateau 1: Stuck at 5,000-8,000 subs</h5>
+                                <p className="text-gray-300 text-sm mb-1">Problem: Limited topic variety</p>
+                                <p className="text-gray-300 text-xs">Solution: Expand to related niches (Finance → career advice, Fitness → nutrition, Tech → productivity)</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-red-300 mb-1">Plateau 2: Stuck at 20,000-30,000 subs</h5>
+                                <p className="text-gray-300 text-sm mb-1">Problem: Content becoming repetitive</p>
+                                <p className="text-gray-300 text-xs">Solution: Format innovation (new video styles, different editing, collaborate with similar-sized creators)</p>
+                            </div>
+                            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-red-300 mb-1">Plateau 3: Stuck at 60,000-80,000 subs</h5>
+                                <p className="text-gray-300 text-sm mb-1">Problem: Algorithm saturation (exhausted audience)</p>
+                                <p className="text-gray-300 text-xs">Solution: Expand to new platforms (TikTok, Instagram Reels) → Bring new viewers to YouTube</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 100K Milestone Sprint */}
+                    <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-purple-400 mb-4">The 100K Milestone Sprint</h4>
+                        <p className="text-gray-300 mb-4">Final push from 90K to 100K:</p>
+                        <div className="grid md:grid-cols-4 gap-3 mb-4">
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-purple-300 mb-1">Week 1-2: Content blitz</h5>
+                                <p className="text-gray-300 text-xs">Post <strong className="text-white">7 Shorts/day</strong>, best-performing topics only</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-purple-300 mb-1">Week 3: Collaboration sprint</h5>
+                                <p className="text-gray-300 text-xs">Partner with 3-5 creators (80K-150K subs), cross-promote</p>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-3">
+                                <h5 className="text-xs font-semibold text-purple-300 mb-1">Week 4: Community engagement</h5>
+                                <p className="text-gray-300 text-xs">Community posts daily, reply to every comment, go live</p>
+                            </div>
+                        </div>
+                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                            <h5 className="text-md font-semibold text-blue-300 mb-2">My 100K sprint results:</h5>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• Week 1: 92K → <strong className="text-white">95K</strong> (+3K)</li>
+                                <li>• Week 2: 95K → <strong className="text-white">97.5K</strong> (+2.5K)</li>
+                                <li>• Week 3: 97.5K → <strong className="text-white">99.2K</strong> (+1.7K)</li>
+                                <li>• Week 4: 99.2K → <strong className="text-white">101.4K</strong> (+2.2K)</li>
+                            </ul>
+                            <p className="text-gray-300 text-sm mt-2"><strong className="text-white">Total: 28 days</strong> from 92K to 100K</p>
+                        </div>
+                    </div>
+
+                    {/* What I Wish I Knew */}
+                    <div className="bg-gradient-to-br from-pink-500/10 to-rose-500/10 border border-pink-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-pink-400 mb-4">What I Wish I Knew Starting Out</h4>
+                        <div className="space-y-3">
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-pink-300 mb-1">1. Quantity over quality early on</h5>
+                                <p className="text-gray-300 text-sm">First <strong className="text-white">50 Shorts</strong> = learning phase. Don't obsess over perfection. Ship it and learn.</p>
+                            </div>
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-pink-300 mb-1">2. Thumbnails matter (even for Shorts)</h5>
+                                <p className="text-gray-300 text-sm">Affect suggested videos and search results. <strong className="text-white">20% of my views</strong> come from search/suggested.</p>
+                            </div>
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-pink-300 mb-1">3. One viral hit changes everything</h5>
+                                <p className="text-gray-300 text-sm">Algorithm gives you <strong className="text-white">2-week window</strong>. Post aggressively during that window. Capitalize on momentum.</p>
+                            </div>
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-pink-300 mb-1">4. Subscriber quality {'>'} quantity</h5>
+                                <p className="text-gray-300 text-sm"><strong className="text-white">100K engaged subs</strong> {'>'} 500K dead subs. Focus on niche, not vanity metrics. Engaged audience = better revenue.</p>
+                            </div>
+                            <div className="bg-pink-900/20 border border-pink-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-pink-300 mb-1">5. Burnout is real</h5>
+                                <p className="text-gray-300 text-sm">Have <strong className="text-white">2-week content buffer</strong>. Take 1 day off per week. Sustainable pace {'>'} sprint.</p>
+                            </div>
+                        </div>
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 mt-4">
+                            <p className="text-gray-300 text-sm mb-2">The 0-100K journey isn't luck. It's:</p>
+                            <ul className="space-y-1 text-gray-300 text-sm">
+                                <li>• <strong className="text-white">70% consistency</strong> (showing up daily)</li>
+                                <li>• <strong className="text-white">20% strategy</strong> (understanding algorithm)</li>
+                                <li>• <strong className="text-white">10% content quality</strong> (good enough beats perfect)</li>
+                            </ul>
+                            <p className="text-white font-semibold text-center mt-3">Start today. Post your first Short. Then your second. By Short #100, you'll be a different creator. By Short #500, you'll hit 100K.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div className="bg-zinc-900 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-red-400 mb-4">Should I focus on Shorts or long-form content? What's the best strategy?</h3>
-                <div className="prose prose-invert max-w-none text-gray-300">
-                    <p className="mb-4">{`**The optimal strategy is a Shorts-first funnel: Use Shorts to grow audience rapidly (0-100K subs in 6-12 months), then convert viewers to long-form for 10-20× higher RPM ($20-$50 vs $0.05-$0.15 per 1,000 views).** Here's the complete strategy breakdown:
+                <h3 className="text-2xl font-bold text-red-400 mb-6">Should I focus on Shorts or long-form content? What's the best strategy?</h3>
+                <div className="space-y-6">
+                    <p className="text-lg text-gray-300 leading-relaxed">
+                        <strong className="text-white font-semibold">The optimal strategy is a Shorts-first funnel: Use Shorts to grow audience rapidly (0-100K subs in 6-12 months), then convert viewers to long-form for 10-20× higher RPM ($20-$50 vs $0.05-$0.15 per 1,000 views).</strong> Here's the complete strategy breakdown:
+                    </p>
 
-**The Revenue Reality Check**
+                    {/* Revenue Reality Check */}
+                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">The Revenue Reality Check</h4>
+                        <div className="grid md:grid-cols-3 gap-4">
+                            <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-green-300 mb-2">Shorts-only channel</h5>
+                                <p className="text-gray-300 text-xs mb-2">(100K subscribers, 20M views/month)</p>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Shorts ad revenue: <strong className="text-white">$1,000-$3,000/month</strong></li>
+                                    <li>• Affiliate/sponsors: <strong className="text-white">$5,000-$15,000/month</strong></li>
+                                    <li>• Total: <strong className="text-white">$6,000-$18,000/month</strong></li>
+                                </ul>
+                            </div>
+                            <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-blue-300 mb-2">Long-form only channel</h5>
+                                <p className="text-gray-300 text-xs mb-2">(100K subscribers, 2M views/month)</p>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Long-form ad revenue: <strong className="text-white">$40,000-$100,000/month</strong></li>
+                                    <li>• Sponsors: <strong className="text-white">$10,000-$30,000/month</strong></li>
+                                    <li>• Total: <strong className="text-white">$50,000-$130,000/month</strong></li>
+                                </ul>
+                            </div>
+                            <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-purple-300 mb-2">Hybrid channel</h5>
+                                <p className="text-gray-300 text-xs mb-2">(100K subscribers, 15M Short + 1.5M long views)</p>
+                                <ul className="space-y-1 text-gray-300 text-sm">
+                                    <li>• Shorts ad revenue: $750-$2,250/month</li>
+                                    <li>• Long-form ad revenue: <strong className="text-white">$30,000-$75,000/month</strong></li>
+                                    <li>• Affiliate/sponsors: <strong className="text-white">$15,000-$40,000/month</strong></li>
+                                    <li>• Total: <strong className="text-white">$45,750-$117,250/month</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p className="text-white font-semibold text-center mt-4">The math is clear: Long-form makes more money. But growing with long-form is <strong className="text-yellow-400">5-10× slower</strong>.</p>
+                    </div>
 
-Shorts-only channel (100K subscribers, 20M views/month):
-- Shorts ad revenue: $1,000-$3,000/month
-- Affiliate/sponsors: $5,000-$15,000/month
-- Total: $6,000-$18,000/month
+                    {/* Hybrid Strategy */}
+                    <div className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/30 rounded-xl p-6">
+                        <h4 className="text-xl font-bold text-indigo-400 mb-4">The Hybrid Strategy (Best of Both Worlds)</h4>
+                        <div className="space-y-4">
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Phase 1: Shorts Growth Engine (Months 1-6)</h5>
+                                <p className="text-gray-300 text-sm mb-2">Focus: <strong className="text-white">90% Shorts</strong>, 10% long-form</p>
+                                <div className="grid md:grid-cols-2 gap-3">
+                                    <div>
+                                        <h6 className="text-xs font-semibold text-white mb-1">Shorts strategy:</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Post <strong className="text-white">3-5 Shorts/day</strong></li>
+                                            <li>• Goal: Grow to <strong className="text-white">50K-100K subscribers</strong></li>
+                                            <li>• Monetization: Minimal (build audience first)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h6 className="text-xs font-semibold text-white mb-1">Long-form strategy:</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Post <strong className="text-white">1 long video per week</strong> (8-15 minutes)</li>
+                                            <li>• Repurpose into <strong className="text-white">5-7 Shorts</strong></li>
+                                            <li>• Shorts drive traffic to long-form</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
 
-Long-form only channel (100K subscribers, 2M views/month):
-- Long-form ad revenue: $40,000-$100,000/month
-- Sponsors: $10,000-$30,000/month
-- Total: $50,000-$130,000/month
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Phase 2: Monetization Shift (Months 7-12)</h5>
+                                <p className="text-gray-300 text-sm mb-2">Focus: <strong className="text-white">70% Shorts</strong>, 30% long-form</p>
+                                <div className="grid md:grid-cols-2 gap-3">
+                                    <div>
+                                        <h6 className="text-xs font-semibold text-white mb-1">Shorts strategy:</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Reduce to <strong className="text-white">2-3 Shorts/day</strong></li>
+                                            <li>• Use Shorts as trailers for long videos</li>
+                                            <li>• Each Short = teaser for full tutorial</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h6 className="text-xs font-semibold text-white mb-1">Long-form strategy:</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• Increase to <strong className="text-white">2-3 long videos per week</strong></li>
+                                            <li>• Deep-dive tutorials (15-25 minutes)</li>
+                                            <li>• This is where money is made</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="bg-blue-900/20 border border-blue-500/30 rounded p-2 mt-2">
+                                    <p className="text-gray-300 text-xs">Revenue shift: Month 6: <strong className="text-white">80% from Shorts</strong> → Month 12: <strong className="text-white">70% from long-form</strong></p>
+                                </div>
+                            </div>
 
-Hybrid channel (100K subscribers, 15M Short views + 1.5M long views):
-- Shorts ad revenue: $750-$2,250/month
-- Long-form ad revenue: $30,000-$75,000/month
-- Affiliate/sponsors: $15,000-$40,000/month
-- Total: $45,750-$117,250/month
-
-The math is clear: Long-form makes more money. But growing with long-form is 5-10× slower.
-
-**The Hybrid Strategy (Best of Both Worlds)**
-
-Phase 1: Shorts Growth Engine (Months 1-6)
-Focus: 90% Shorts, 10% long-form
-
-Shorts strategy:
-- Post 3-5 Shorts/day
-- Goal: Grow to 50K-100K subscribers
-- Monetization: Minimal (build audience first)
-
-Long-form strategy:
-- Post 1 long video per week (8-15 minutes)
-- Repurpose into 5-7 Shorts
-- Shorts drive traffic to long-form
-
-Example workflow:
-Monday: Film 1 long tutorial (12 minutes)
-Tuesday: Edit long video, create 6 Short clips
-Wednesday: Post long video + Short #1
-Thursday: Post Shorts #2-3
-Friday: Post Shorts #4-5
-Weekend: Post Shorts #6-7 + plan next week
-
-Phase 2: Monetization Shift (Months 7-12)
-Focus: 70% Shorts, 30% long-form
-
-Shorts strategy:
-- Reduce to 2-3 Shorts/day
-- Use Shorts as trailers for long videos
-- Each Short = teaser for full tutorial
-
-Long-form strategy:
-- Increase to 2-3 long videos per week
-- Deep-dive tutorials (15-25 minutes)
-- This is where money is made
-
-Revenue shift:
-- Month 6: 80% from Shorts revenue
-- Month 12: 70% from long-form revenue
-
-Phase 3: Long-Form Focus (Month 12+)
-Focus: 50% Shorts, 50% long-form
-
-Shorts strategy:
-- 2-3 Shorts/day
-- Primary goal: Feed the funnel
-- Secondary goal: Maintain algorithm favor
-
-Long-form strategy:
-- 3-5 long videos per week
-- Mix of tutorials, vlogs, deep-dives
-- Optimize for watch time and RPM
-
-At this stage, Shorts = marketing, Long-form = product.
+                            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-lg p-4">
+                                <h5 className="text-md font-semibold text-indigo-300 mb-2">Phase 3: Long-Form Focus (Month 12+)</h5>
+                                <p className="text-gray-300 text-sm mb-2">Focus: <strong className="text-white">50% Shorts</strong>, 50% long-form</p>
+                                <div className="grid md:grid-cols-2 gap-3">
+                                    <div>
+                                        <h6 className="text-xs font-semibold text-white mb-1">Shorts strategy:</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• <strong className="text-white">2-3 Shorts/day</strong></li>
+                                            <li>• Primary goal: Feed the funnel</li>
+                                            <li>• Secondary goal: Maintain algorithm favor</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h6 className="text-xs font-semibold text-white mb-1">Long-form strategy:</h6>
+                                        <ul className="space-y-1 text-gray-300 text-xs">
+                                            <li>• <strong className="text-white">3-5 long videos per week</strong></li>
+                                            <li>• Mix of tutorials, vlogs, deep-dives</li>
+                                            <li>• Optimize for watch time and RPM</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p className="text-white font-semibold text-center mt-2 text-sm">At this stage, Shorts = marketing, Long-form = product.</p>
+                            </div>
+                        </div>
+                    </div>
 
 **The Content Repurposing System**
 
