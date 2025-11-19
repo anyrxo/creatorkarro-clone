@@ -83,6 +83,7 @@ export default function DigitalProductsPage() {
   const whatYouLearnAnimation = useScrollAnimation({ threshold: 0.1 })
   const comparisonAnimation = useScrollAnimation({ threshold: 0.1 })
   const pricingAnimation = useScrollAnimation({ threshold: 0.1 })
+  const curriculumAnimation = useScrollAnimation({ threshold: 0.1 })
   const testimonialsAnimation = useScrollAnimation({ threshold: 0.1 })
   const faqAnimation = useScrollAnimation({ threshold: 0.1 })
   const finalCtaAnimation = useScrollAnimation({ threshold: 0.2 })
