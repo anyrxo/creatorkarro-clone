@@ -28,8 +28,19 @@ export default function ProductLaunchSimulator() {
     const steps = 50
     const interval = duration / steps
     
-    // Total potential sales
-    const totalSales = Math.round(audienceSize * (conversionRate / 100))
+    // Realistic Launch Math
+    // Industry avg email open rate: 20-40%
+    // CTR: 1-5%
+    // Landing page conversion: 1-3%
+    // Total Conversion from List Size: 0.5% - 2% typically
+    
+    const realisticConversionRate = conversionRate // User input, but we scale result logic
+    
+    // Total sales calculated with a bit of variance/luck factor
+    // Math.random() * 0.4 + 0.8 ranges from 0.8 to 1.2 (variance)
+    const baseSales = Math.round(audienceSize * (realisticConversionRate / 100))
+    const totalSales = Math.max(0, Math.floor(baseSales * (Math.random() * 0.4 + 0.8)))
+
     let currentSales = 0
 
     for (let i = 0; i <= steps; i++) {
@@ -37,13 +48,22 @@ export default function ProductLaunchSimulator() {
       setLaunchProgress((i / steps) * 100)
 
       // Events based on progress
-      if (i === 5) setEvents(prev => ["📧 Launch Email Sent (Open Rate: 42%)", ...prev].slice(0, 3))
-      if (i === 20) setEvents(prev => ["🔥 High Traffic Alert!", ...prev].slice(0, 3))
-      if (i === 40) setEvents(prev => ["⏰ Scarcity Email Sent (4h left)", ...prev].slice(0, 3))
+      if (i === 5) setEvents(prev => ["📧 Launch Email Sent (Open Rate: 38%)", ...prev].slice(0, 3))
+      if (i === 15) setEvents(prev => ["👥 First Visitors on Page", ...prev].slice(0, 3))
+      if (i === 35) setEvents(prev => ["🔥 Cart Activity Spiking", ...prev].slice(0, 3))
+      if (i === 45) setEvents(prev => ["⏰ Last Chance Email (Conversion Spike)", ...prev].slice(0, 3))
 
-      // Sales Curve (S-Curve ish)
+      // Sales Curve (S-Curve ish) - Launches often have a "U" shape (start high, dip, end high)
+      // We'll simulate a simplified version
       const progress = i / steps
-      const salesNow = Math.floor(totalSales * (progress < 0.5 ? 2 * progress * progress : -1 + (4 - 2 * progress) * progress))
+      
+      // Easing function to distribute sales
+      // Starts slow, accelerates (launch), steady, then accelerates (deadline)
+      const ease = progress < 0.5 
+        ? 4 * progress * progress * progress 
+        : 1 - Math.pow(-2 * progress + 2, 3) / 2
+      
+      const salesNow = Math.floor(totalSales * ease)
       
       if (salesNow > currentSales) {
         const newSales = salesNow - currentSales

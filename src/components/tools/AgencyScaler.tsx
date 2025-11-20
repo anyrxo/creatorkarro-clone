@@ -12,10 +12,20 @@ export default function AgencyScaler() {
   const [stats, setStats] = useState({ leads: 0, calls: 0, clients: 0, revenue: 0 })
   const [events, setEvents] = useState<string[]>([])
   
-  // Simulation Parameters
+  // Simulation Parameters - Grounded in reality
+  // Freelancer: Manual outbound, limited time. 20 DMs/day -> 1-2 calls -> 0.2-0.4 closes/month
+  // Agency: Automated ads/setters. 500+ leads/day -> 10-20 calls -> 3-5 closes/month
   const conversionRates = mode === 'freelancer' 
-    ? { leadToCall: 0.05, callToClose: 0.2, outreachLimit: 20 } // 20 DMs/day
-    : { leadToCall: 0.15, callToClose: 0.35, outreachLimit: 500 } // Ads + Setters
+    ? { 
+        leadToCall: 0.03, // 3% booking rate from manual DMs (realistic cold outreach)
+        callToClose: 0.20, // 20% close rate (founder sales)
+        outreachLimit: 20 // Physical limit of meaningful DMs/day
+      } 
+    : { 
+        leadToCall: 0.08, // 8% booking from warm leads/ads
+        callToClose: 0.25, // 25% close rate (professional closer)
+        outreachLimit: 100 // Daily leads via ads/content
+      }
 
   const runSimulation = async () => {
     if (isSimulating) return
@@ -31,27 +41,38 @@ export default function AgencyScaler() {
       
       // Daily Outreach
       const dailyLeads = conversionRates.outreachLimit
-      const dailyCalls = Math.floor(dailyLeads * conversionRates.leadToCall)
       
-      // Allow multiple closes per day for agency mode
-      // Random variation +- 20% on close rate
-      const closeRate = conversionRates.callToClose * (0.8 + Math.random() * 0.4)
-      const potentialCloses = Math.floor(dailyCalls * closeRate)
+      // Calculate calls with some variance
+      const baseCalls = dailyLeads * conversionRates.leadToCall
+      const dailyCalls = Math.random() < (baseCalls % 1) 
+        ? Math.floor(baseCalls) + 1 
+        : Math.floor(baseCalls)
       
-      // In freelancer mode, cap at 1 per day due to capacity
-      const dailyCloses = mode === 'freelancer' ? (potentialCloses > 0 ? 1 : 0) : potentialCloses
+      // Calculate closes
+      let dailyCloses = 0
+      if (dailyCalls > 0) {
+        for (let c = 0; c < dailyCalls; c++) {
+          if (Math.random() < conversionRates.callToClose) dailyCloses++
+        }
+      }
+
+      // Freelancer bottleneck: Can't handle too many clients at once
+      // Agency bottleneck: Operational drag, but higher ceiling
+      if (mode === 'freelancer' && currentStats.clients >= 4) {
+         // Hard cap for solo freelancer (burnout zone)
+         dailyCloses = 0 
+         if (i % 5 === 0) setEvents(prev => [`⚠️ At Capacity! Can't take new work`, ...prev].slice(0, 3))
+      }
 
       currentStats.leads += dailyLeads
       currentStats.calls += dailyCalls
       
       if (dailyCloses > 0) {
         currentStats.clients += dailyCloses
-        currentStats.revenue += retainer
+        currentStats.revenue += dailyCloses * retainer
         setEvents(prev => [`🎉 New Client Signed! +$${retainer}`, ...prev].slice(0, 3))
-      } else if (i % 5 === 0 && mode === 'freelancer') {
-        setEvents(prev => [`😓 Exhausted from manual outreach...`, ...prev].slice(0, 3))
       } else if (i % 7 === 0 && mode === 'agency') {
-        setEvents(prev => [`🤖 AI Setter qualified 5 leads`, ...prev].slice(0, 3))
+        setEvents(prev => [`🤖 System optimized. Lead cost down.`, ...prev].slice(0, 3))
       }
 
       setStats({...currentStats})

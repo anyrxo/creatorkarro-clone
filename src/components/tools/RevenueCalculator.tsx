@@ -16,9 +16,9 @@ export default function RevenueCalculator() {
   const [logs, setLogs] = useState<string[]>([])
 
   const nicheMultipliers = {
-    'Lifestyle': 1.0,
-    'Tech': 1.5, // Higher CPM
-    'Adult': 4.0 // Fanvue/OF model
+    'Lifestyle': 1.0, // Baseline
+    'Tech': 1.8, // Higher CPM/Affiliate
+    'Adult': 3.5 // Fanvue/OF model - High but realistic
   }
 
   const runSimulation = async () => {
@@ -30,8 +30,8 @@ export default function RevenueCalculator() {
     setWeeklyRevenue(0)
 
     let currentRev = 0
-    let currentFollowersSim = 500 // Start higher to ensure revenue triggers earlier
-    const growthRate = 0.25 // 25% week over week (aggressive "Ignited" growth)
+    let currentFollowersSim = 500 // Realistic starting point for a "new" but active account
+    const growthRate = 0.15 // 15% week-over-week (Aggressive but possible with viral hits)
     
     const totalWeeks = 12
     
@@ -44,35 +44,43 @@ export default function RevenueCalculator() {
       currentFollowersSim = Math.round(currentFollowersSim * (1 + growthRate))
 
       // Revenue Streams Logic
+      // Based on typical creator economy metrics (RPM, conversion rates)
       let streamRev = 0
       const newStreams: string[] = []
       
-      // 1. Affiliate (Unlocks at 500)
-      if (currentFollowersSim > 500) {
+      // 1. Affiliate (Unlocks at 1k - often realistic start)
+      if (currentFollowersSim > 1000) {
         if (!unlockedStreams.includes('Affiliate')) newStreams.push('Affiliate')
-        streamRev += (currentFollowersSim * 0.005) * nicheMultipliers[niche]
+        // $10-$50/week initial affiliate income is common for micro-influencers
+        const baseAffiliate = (currentFollowersSim / 1000) * 15 
+        streamRev += baseAffiliate * nicheMultipliers[niche]
       }
 
-      // 2. Fanvue/Digital Products (Unlocks at 2k)
-      if (currentFollowersSim > 2000) {
+      // 2. Digital Products / Fanvue (Unlocks at 3k)
+      if (currentFollowersSim > 3000) {
         if (!unlockedStreams.includes('Digital Products')) newStreams.push('Digital Products')
         
-        // Fix: Adjust Fanvue/Adult revenue logic to be more realistic but still high
-        // For Adult niche, the multiplier is already 4.0. We shouldn't have an arbitrarily low base.
-        // Base conversion: 0.04 (4%)
-        streamRev += (currentFollowersSim * 0.04) * nicheMultipliers[niche] 
+        // 1-3% conversion rate on low ticket items ($27-$47) or subs ($10-$20)
+        // Weekly revenue estimate
+        const activeFollowers = currentFollowersSim * 0.2 // 20% active
+        const buyers = activeFollowers * 0.01 // 1% of active buy
+        const ticketPrice = niche === 'Adult' ? 15 : 37 // Monthly sub vs One-time
+        
+        streamRev += (buyers * ticketPrice) * (niche === 'Adult' ? 2 : 1) // Adult has recurring
       }
 
-      // 3. Brand Deals (Unlocks at 5k)
-      if (currentFollowersSim > 5000) {
+      // 3. Brand Deals (Unlocks at 10k - Micro influencer status)
+      if (currentFollowersSim > 10000) {
          if (!unlockedStreams.includes('Brand Deals')) newStreams.push('Brand Deals')
-         streamRev += (currentFollowersSim / 1000) * 5 * nicheMultipliers[niche] // Weekly deal value
+         // $100-$500 per deal at this size. Maybe 1 deal per week?
+         const dealValue = 250 * nicheMultipliers[niche]
+         streamRev += dealValue
       }
 
-      // Random Boost
-      if (Math.random() > 0.8) {
-        streamRev *= 1.5
-        setLogs(prev => [`🚀 Viral week! Income spiked.`, ...prev].slice(0, 3))
+      // Random Boost (Viral Video leads to sales spike)
+      if (Math.random() > 0.85) {
+        streamRev *= 1.8
+        setLogs(prev => [`🚀 Viral Reel! Sales spike.`, ...prev].slice(0, 3))
       }
 
       if (newStreams.length > 0) {

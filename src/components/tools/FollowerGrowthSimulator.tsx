@@ -8,7 +8,7 @@ import NumberTicker from '@/components/magicui/number-ticker'
 export default function FollowerGrowthSimulator() {
   const [days, setDays] = useState(30)
   const [dailyEffort, setDailyEffort] = useState(2) // hours
-  const [contentQuality, setContentQuality] = useState<'Average' | 'Good' | 'God Tier'>('Good')
+  const [contentQuality, setContentQuality] = useState<'Average' | 'Good' | 'Ignited'>('Good')
   const [isSimulating, setIsSimulating] = useState(false)
   const [simulatedData, setSimulatedData] = useState<number[]>([])
   const [simulationLog, setSimulationLog] = useState<{day: number, message: string, type: 'good' | 'neutral' | 'bad'}[]>([])
@@ -18,15 +18,15 @@ export default function FollowerGrowthSimulator() {
   const containerRef = useRef<HTMLDivElement>(null)
 
   // Pre-calculate curve for "Old Way" baseline (slower, linear-ish growth)
+  // Realistic struggle: 100 followers -> 150 in 30 days without strategy
   const manualData = Array.from({ length: 30 }, (_, i) => {
-    // Old way: roughly 1-2 followers per day compounding very slowly
-    return Math.round(100 + (i * 5) * (1 + dailyEffort * 0.1))
+    return Math.round(100 + (i * 1.5))
   })
 
   const qualityMultipliers: Record<string, number> = {
-    'Average': 1.05,
-    'Good': 1.15,
-    'God Tier': 1.30
+    'Average': 1.02, // 2% daily organic
+    'Good': 1.05,    // 5% daily organic
+    'Ignited': 1.12  // 12% daily organic (viral strategy)
   }
 
   const runSimulation = async () => {
@@ -48,49 +48,53 @@ export default function FollowerGrowthSimulator() {
       // Simulate delay
       await new Promise(r => setTimeout(r, stepDelay))
 
-      // Viral Growth Model
-      // Base growth: 5% - 15% daily (very aggressive for "Ignited")
-      const baseRate = 0.05 
-      const effortBonus = dailyEffort * 0.01
-      const qualityBonus = qualityMultipliers[contentQuality] - 1
+      // Realistic Viral Growth Model
+      // Base growth is tied to quality + consistency (effort)
+      const effortMultiplier = 1 + (dailyEffort * 0.02) // Max 1.16x bonus
+      const growthRate = qualityMultipliers[contentQuality] * effortMultiplier
       
-      const dailyGrowthRate = baseRate + effortBonus + qualityBonus
-      let dailyGrowth = current * dailyGrowthRate
+      let dailyGrowth = current * (growthRate - 1)
       
+      // Ensure minimum growth to prevent stagnation in UI
+      if (dailyGrowth < 1) dailyGrowth = 1
+
       let eventMsg = null
       let eventType: 'good' | 'neutral' | 'bad' = 'neutral'
 
-      // Random Viral Events
+      // Random Viral Events (The "Ignited" Factor)
       const rand = Math.random()
       
-      // Higher chance of viral spikes with better quality
-      const viralThreshold = contentQuality === 'God Tier' ? 0.6 : contentQuality === 'Good' ? 0.75 : 0.9
+      // Viral probability increases with quality
+      const viralThreshold = contentQuality === 'Ignited' ? 0.7 : contentQuality === 'Good' ? 0.85 : 0.95
 
       if (rand > viralThreshold) {
-        const spikeMultiplier = Math.random() * 0.5 + 0.2 // 20-70% boost
-        const spike = Math.floor(current * spikeMultiplier)
+        // Viral spike: 300-2000 new followers (realistic mini-viral reel)
+        // Capped at reasonable limits relative to current size
+        const spikeBase = Math.max(300, current * 0.5)
+        const spike = Math.floor(Math.random() * spikeBase)
+        
         dailyGrowth += spike
         
-        if (spike > 1000) eventMsg = "🚀 Viral Reel Exploded!"
-        else if (spike > 500) eventMsg = "🔥 Explore Page Hit!"
+        if (spike > 1000) eventMsg = "🚀 Reel hit 100k views!"
+        else if (spike > 500) eventMsg = "🔥 Content trending in niche"
+        else eventMsg = "📈 Algorithm pickup"
+        
         eventType = 'good'
-      } else if (i % 7 === 0) {
-         // Weekly momentum
-         dailyGrowth *= 1.2
-         if (current > 1000) {
-             eventMsg = "📈 Weekly Algorithm Boost"
-             eventType = 'good'
-         }
-      }
+      } 
 
       current += dailyGrowth
       
+      // Cap at realistic "first 30 days" limits to avoid "80M followers"
+      // Exceptionally good first month could hit 10k-50k, but rarely millions
+      if (current > 100000) current = 100000 + (current - 100000) * 0.1
+
       // Revenue Calculation
       // Unlocks after 1000 followers
       if (current > 1000) {
-          // Approx $10 per 1000 followers daily potential (very rough estimate for high engagement)
-          const dailyRev = (current / 1000) * (Math.random() * 10 + 5) 
-          revenue += dailyRev
+        // RPM (Revenue Per Mille followers) approx $0.50 - $2.00 daily potential
+        // Includes potential digital sales, affiliate, etc.
+        const dailyRev = (current / 1000) * (0.5 + Math.random()) 
+        revenue += dailyRev
       }
 
       data.push(current)
@@ -178,7 +182,7 @@ export default function FollowerGrowthSimulator() {
                  <Award className="w-4 h-4 text-orange-500" /> Content Strategy
                </label>
                <div className="grid grid-cols-3 gap-2">
-                  {['Average', 'Good', 'God Tier'].map((q) => (
+                  {['Average', 'Good', 'Ignited'].map((q) => (
                     <button
                       key={q}
                       onClick={() => setContentQuality(q as any)}
