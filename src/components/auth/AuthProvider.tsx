@@ -1,16 +1,16 @@
 import { ClerkProvider } from '@clerk/nextjs';
-import { dark } from '@clerk/themes';
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
     return (
         <ClerkProvider
             appearance={{
-                baseTheme: dark,
                 variables: {
                     colorPrimary: '#8b5cf6',
                     colorBackground: '#0a0118',
                     colorInputBackground: '#1a0b2e',
                     colorInputText: '#ffffff',
+                    colorText: '#ffffff',
+                    colorTextSecondary: '#e9d5ff',
                 },
                 elements: {
                     formButtonPrimary:
