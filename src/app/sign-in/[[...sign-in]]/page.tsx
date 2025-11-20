@@ -37,18 +37,29 @@ export default function SignInPage() {
                     </motion.p>
                 </div>
 
-                <SignIn
-                    appearance={{
-                        elements: {
-                            rootBox: 'mx-auto',
-                            card: 'shadow-2xl shadow-purple-500/20',
-                        },
-                    }}
-                    routing="path"
-                    path="/sign-in"
-                    signUpUrl="/sign-up"
-                    afterSignInUrl="/learning"
-                />
+                <div className="bg-zinc-900/80 backdrop-blur-xl p-8 rounded-2xl border border-white/10 shadow-2xl">
+                    <SignIn
+                        appearance={{
+                            elements: {
+                                rootBox: 'w-full',
+                                card: 'bg-transparent shadow-none w-full',
+                                headerTitle: 'hidden',
+                                headerSubtitle: 'hidden',
+                                formButtonPrimary: 'bg-purple-600 hover:bg-purple-700 text-white',
+                                formFieldInput: 'bg-black/50 border-zinc-700 text-white',
+                                formFieldLabel: 'text-zinc-400',
+                                footerActionLink: 'text-purple-400 hover:text-purple-300',
+                                identityPreviewText: 'text-zinc-300',
+                                formFieldInputShowPasswordButton: 'text-zinc-400',
+                            },
+                            layout: {
+                                socialButtonsPlacement: 'bottom',
+                                showOptionalFields: false,
+                            }
+                        }}
+                        redirectUrl="/learning"
+                    />
+                </div>
             </motion.div>
         </div>
     );
