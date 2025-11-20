@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { generateLicenseKeys, getLicenseKeys } from '@/app/actions/admin-keys'
-import { Key, Plus, Copy, Check, Loader2, RefreshCw } from 'lucide-react'
+import { generateLicenseKeys, getLicenseKeys, deleteLicenseKey, disableLicenseKey } from '@/app/actions/admin-keys'
+import { Key, Plus, Copy, Check, Loader2, Trash2, Ban, Clock } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function AdminKeysPage() {
@@ -10,6 +10,7 @@ export default function AdminKeysPage() {
     const [isLoading, setIsLoading] = useState(true)
     const [isGenerating, setIsGenerating] = useState(false)
     const [copiedId, setCopiedId] = useState<string | null>(null)
+    const [expiryHours, setExpiryHours] = useState<number | ''>('') // New state for expiry
 
     useEffect(() => {
         loadKeys()
@@ -24,9 +25,24 @@ export default function AdminKeysPage() {
 
     const handleGenerate = async () => {
         setIsGenerating(true)
-        await generateLicenseKeys(1)
+        // Pass expiryHours if set, otherwise undefined
+        const hours = expiryHours === '' ? undefined : Number(expiryHours)
+        await generateLicenseKeys(1, 'all-access', hours)
         await loadKeys()
         setIsGenerating(false)
+        setExpiryHours('') // Reset
+    }
+
+    const handleDelete = async (id: string) => {
+        if (!confirm('Are you sure you want to delete this key?')) return
+        await deleteLicenseKey(id)
+        setKeys(keys.filter(k => k.id !== id))
+    }
+
+    const handleDisable = async (id: string) => {
+        if (!confirm('Disable this key? It will no longer work.')) return
+        await disableLicenseKey(id)
+        loadKeys() // Reload to see status update
     }
 
     const copyToClipboard = (text: string, id: string) => {
@@ -42,14 +58,28 @@ export default function AdminKeysPage() {
                     <h1 className="text-3xl font-bold text-white mb-2">License Keys</h1>
                     <p className="text-zinc-400">Manage access keys for students.</p>
                 </div>
-                <button
-                    onClick={handleGenerate}
-                    disabled={isGenerating}
-                    className="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors disabled:opacity-50"
-                >
-                    {isGenerating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
-                    Generate Key
-                </button>
+                
+                <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2 bg-black/30 border border-white/10 rounded-lg px-3 py-2">
+                        <Clock className="w-4 h-4 text-zinc-400" />
+                        <input 
+                            type="number" 
+                            placeholder="Expires in (hrs)" 
+                            value={expiryHours}
+                            onChange={(e) => setExpiryHours(Number(e.target.value))}
+                            className="bg-transparent text-white text-sm w-24 focus:outline-none placeholder:text-zinc-600"
+                        />
+                    </div>
+
+                    <button
+                        onClick={handleGenerate}
+                        disabled={isGenerating}
+                        className="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors disabled:opacity-50"
+                    >
+                        {isGenerating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
+                        Generate Key
+                    </button>
+                </div>
             </div>
 
             {isLoading ? (
@@ -65,7 +95,8 @@ export default function AdminKeysPage() {
                                 <th className="p-4 text-xs font-medium text-zinc-400 uppercase">Status</th>
                                 <th className="p-4 text-xs font-medium text-zinc-400 uppercase">User ID</th>
                                 <th className="p-4 text-xs font-medium text-zinc-400 uppercase">Created</th>
-                                <th className="p-4 text-xs font-medium text-zinc-400 uppercase">Action</th>
+                                <th className="p-4 text-xs font-medium text-zinc-400 uppercase">Expires</th>
+                                <th className="p-4 text-xs font-medium text-zinc-400 uppercase">Actions</th>
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-white/5">
@@ -76,7 +107,9 @@ export default function AdminKeysPage() {
                                         <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
                                             key.status === 'active' 
                                                 ? 'bg-green-500/10 text-green-400 border border-green-500/20' 
-                                                : 'bg-zinc-500/10 text-zinc-400 border border-zinc-500/20'
+                                                : key.status === 'claimed' 
+                                                    ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20'
+                                                    : 'bg-red-500/10 text-red-400 border border-red-500/20'
                                         }`}>
                                             {key.status}
                                         </span>
@@ -87,7 +120,10 @@ export default function AdminKeysPage() {
                                     <td className="p-4 text-sm text-zinc-500">
                                         {new Date(key.created_at).toLocaleDateString()}
                                     </td>
-                                    <td className="p-4">
+                                    <td className="p-4 text-sm text-zinc-500">
+                                        {key.expires_at ? new Date(key.expires_at).toLocaleString() : 'Never'}
+                                    </td>
+                                    <td className="p-4 flex items-center gap-2">
                                         <button
                                             onClick={() => copyToClipboard(key.key, key.id)}
                                             className="p-2 text-zinc-400 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
@@ -95,12 +131,28 @@ export default function AdminKeysPage() {
                                         >
                                             {copiedId === key.id ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
                                         </button>
+                                        {key.status !== 'disabled' && (
+                                            <button
+                                                onClick={() => handleDisable(key.id)}
+                                                className="p-2 text-zinc-400 hover:text-orange-400 hover:bg-orange-500/10 rounded-lg transition-colors"
+                                                title="Disable Key"
+                                            >
+                                                <Ban className="w-4 h-4" />
+                                            </button>
+                                        )}
+                                        <button
+                                            onClick={() => handleDelete(key.id)}
+                                            className="p-2 text-zinc-400 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
+                                            title="Delete Key"
+                                        >
+                                            <Trash2 className="w-4 h-4" />
+                                        </button>
                                     </td>
                                 </tr>
                             ))}
                             {keys.length === 0 && (
                                 <tr>
-                                    <td colSpan={5} className="p-8 text-center text-zinc-500">
+                                    <td colSpan={6} className="p-8 text-center text-zinc-500">
                                         No keys found. Generate one to get started.
                                     </td>
                                 </tr>
@@ -112,4 +164,3 @@ export default function AdminKeysPage() {
         </div>
     )
 }
-
