@@ -135,14 +135,21 @@ export default function Navigation() {
             </div>
 
             {/* Mobile menu button */}
-            <button
-              className="md:hidden p-3 text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-zinc-800/50 flex items-center gap-2"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-            >
-              <span className="text-sm font-medium">Sign In</span>
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            <div className="md:hidden flex items-center gap-4">
+              <Link 
+                href="/sign-in"
+                className="text-sm font-medium text-gray-300 hover:text-white"
+              >
+                Sign In
+              </Link>
+              <button
+                className="p-2 text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-zinc-800/50"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+              >
+                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </header>
