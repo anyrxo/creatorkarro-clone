@@ -21,6 +21,16 @@ const promptCategories = {
             prompt: 'RAW photo, (high detailed skin:1.2), 8k uhd, dslr, natural lighting, high quality, photorealistic, fit 26 year old woman, athletic build, gym outfit, confident pose, gym background, motivational energy, natural makeup',
             tags: ['fitness', 'athletic', 'gym']
         },
+        {
+            name: 'Golden Hour Close-up',
+            prompt: 'Extreme close-up portrait, RAW photo, 8k uhd, (detailed eyes:1.2), (detailed skin texture:1.3), sun flare, golden hour, bokeh, hazel eyes, freckles, natural makeup, wind blowing hair, canon eos r5, 85mm lens',
+            tags: ['portrait', 'closeup', 'golden-hour']
+        },
+        {
+            name: 'Urban Street Style',
+            prompt: 'Full body shot, RAW photo, 8k, trendy streetwear, oversized hoodie, cargo pants, sneakers, city street background, graffiti wall, overcast lighting, cool tones, confident stance, fashion photography',
+            tags: ['fashion', 'street', 'urban']
+        }
     ],
     'Lifestyle Content': [
         {
@@ -38,6 +48,72 @@ const promptCategories = {
             prompt: 'RAW photo, (high detailed skin:1.2), 8k uhd, dslr, cinematic lighting, high quality, photorealistic, stunning woman, 26 years old, elegant evening dress, city nightlife background, neon lights, sophisticated makeup, confident pose',
             tags: ['nightlife', 'city', 'elegant']
         },
+        {
+            name: 'Home Office Setup',
+            prompt: 'Medium shot, RAW photo, 8k, woman working at desk, macbook pro, aesthetic desk setup, plants, natural light from window, messy bun, glasses, focused expression, cozy home office, productivity vibes',
+            tags: ['lifestyle', 'work', 'home']
+        },
+        {
+            name: 'Cooking / Kitchen',
+            prompt: 'Candid shot, RAW photo, 8k, woman in modern kitchen, preparing healthy salad, bright airy lighting, marble countertops, fresh vegetables, apron, smiling, lifestyle photography, food influencer',
+            tags: ['lifestyle', 'food', 'kitchen']
+        }
+    ],
+    'Professional & Business': [
+        {
+            name: 'LinkedIn Headshot',
+            prompt: 'Professional headshot, RAW photo, 8k uhd, studio lighting, neutral grey background, woman in navy blue blazer, white blouse, confident smile, professional makeup, sharp focus, corporate style, high quality',
+            tags: ['professional', 'business', 'linkedin']
+        },
+        {
+            name: 'Tech CEO Presentation',
+            prompt: 'Medium shot, RAW photo, 8k, woman on stage, holding microphone, ted talk style, blurred audience in background, spotlight, smart casual business attire, confident posture, leadership, public speaking',
+            tags: ['business', 'speaking', 'leadership']
+        },
+        {
+            name: 'Modern Office Meeting',
+            prompt: 'Group shot context, RAW photo, 8k, woman leading a meeting, glass whiteboard, modern office environment, pointing at data, colleagues listening, bright professional lighting, startup vibe',
+            tags: ['business', 'office', 'meeting']
+        }
+    ],
+    'Cinematic & Creative': [
+        {
+            name: 'Cyberpunk City',
+            prompt: 'Cinematic shot, RAW photo, 8k, woman in futuristic cyberpunk city, neon rain, transparent raincoat, holographic signs, blue and pink lighting, moody atmosphere, blade runner style, detailed reflection',
+            tags: ['creative', 'cyberpunk', 'sci-fi']
+        },
+        {
+            name: 'Fantasy Elf',
+            prompt: 'Fantasy portrait, RAW photo, 8k, ethereal woman, elf ears, intricate silver jewelry, forest background, magical glowing particles, moonlight, mystical atmosphere, detailed fantasy costume, lord of the rings style',
+            tags: ['creative', 'fantasy', 'cosplay']
+        },
+        {
+            name: 'Steampunk Inventor',
+            prompt: 'Character portrait, RAW photo, 8k, woman wearing brass goggles, leather corset, holding mechanical gears, steam background, victorian workshop, warm copper tones, detailed mechanical parts, cinematic lighting',
+            tags: ['creative', 'steampunk', 'costume']
+        },
+        {
+            name: 'Retro 80s Flash',
+            prompt: 'Flash photography, vintage style, 35mm film grain, woman in 80s aerobics outfit, neon leg warmers, studio backdrop, harsh shadow, vibrant colors, retro aesthetic, vhs glitch effect',
+            tags: ['creative', 'retro', '80s']
+        }
+    ],
+    'Travel & Adventure': [
+        {
+            name: 'Mountain Hiking',
+            prompt: 'Wide shot, RAW photo, 8k, woman standing on mountain peak, looking at view, back to camera, hiking gear, backpack, epic landscape, sunrise, clouds below, adventure photography, national geographic style',
+            tags: ['travel', 'hiking', 'nature']
+        },
+        {
+            name: 'Parisian Cafe',
+            prompt: 'Medium shot, RAW photo, 8k, woman sitting at outdoor cafe table, eiffel tower in distant background, croissant and coffee, beret, trench coat, cloudy paris day, street photography, travel influencer',
+            tags: ['travel', 'paris', 'city']
+        },
+        {
+            name: 'Van Life',
+            prompt: 'Lifestyle shot, RAW photo, 8k, woman sitting in back of open camper van, ocean view, cozy blankets, fairy lights, sunset, guitar, bohemian style, wanderlust, road trip vibes',
+            tags: ['travel', 'vanlife', 'boho']
+        }
     ],
     'Premium Content': [
         {
@@ -50,6 +126,16 @@ const promptCategories = {
             prompt: 'RAW photo, (high detailed skin:1.2), 8k uhd, dslr, professional lighting, high quality, photorealistic, gorgeous woman, 27 years old, designer outfit, luxury hotel suite, champagne, elegant setting, wealthy lifestyle, sophisticated',
             tags: ['luxury', 'premium', 'lifestyle']
         },
+        {
+            name: 'Yacht Life',
+            prompt: 'Wide shot, RAW photo, 8k, woman lounging on private yacht deck, white swimsuit, oversized sunglasses, ocean background, blue sky, champagne glass, high life, luxury travel, sunbathing',
+            tags: ['luxury', 'yacht', 'summer']
+        },
+        {
+            name: 'Red Carpet Event',
+            prompt: 'Full body shot, RAW photo, 8k, woman in gala gown, red carpet, paparazzi flashes, evening makeup, diamond jewelry, elegant pose, celebrity lifestyle, glamour, award show',
+            tags: ['luxury', 'event', 'glamour']
+        }
     ],
     'Seasonal & Themed': [
         {
@@ -62,6 +148,16 @@ const promptCategories = {
             prompt: 'RAW photo, (high detailed skin:1.2), 8k uhd, dslr, warm indoor lighting, high quality, photorealistic, beautiful woman, 25 years old, cozy knit sweater, by fireplace, winter setting, warm drink, comfortable atmosphere, soft lighting',
             tags: ['winter', 'cozy', 'indoor']
         },
+        {
+            name: 'Halloween Witch',
+            prompt: 'Thematic portrait, RAW photo, 8k, woman in modern witch costume, holding pumpkin, dark moody lighting, fog, autumn leaves, spooky atmosphere, dramatic makeup, october vibes',
+            tags: ['seasonal', 'halloween', 'costume']
+        },
+        {
+            name: 'Christmas Morning',
+            prompt: 'Lifestyle shot, RAW photo, 8k, woman in festive pajamas, opening gifts, christmas tree background, bokeh lights, happy expression, morning light, cozy holiday atmosphere',
+            tags: ['seasonal', 'christmas', 'holiday']
+        }
     ],
 };
 
@@ -115,8 +211,8 @@ export default function AIPromptLibrary() {
                                 key={category}
                                 onClick={() => setSelectedCategory(category)}
                                 className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${selectedCategory === category
-                                        ? 'bg-purple-500/20 border-purple-500/50 text-white'
-                                        : 'bg-purple-500/5 border-purple-500/10 text-purple-200 hover:bg-purple-500/10'
+                                    ? 'bg-purple-500/20 border-purple-500/50 text-white'
+                                    : 'bg-purple-500/5 border-purple-500/10 text-purple-200 hover:bg-purple-500/10'
                                     } border`}
                             >
                                 {category}
