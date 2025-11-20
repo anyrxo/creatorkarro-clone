@@ -1,4 +1,3 @@
-
 'use server'
 
 import { createClient } from '@supabase/supabase-js'
@@ -16,7 +15,7 @@ export async function claimAffiliateCode(code: string) {
     }
 
     // 2. Restricted Codes
-    const restricted = ['admin', 'login', 'signup', 'affiliate', 'learning', 'api', 'dashboard', 'story', 'blog']
+    const restricted = ['admin', 'login', 'signup', 'affiliate', 'learning', 'api', 'dashboard', 'story', 'blog', 'pricing', 'contact']
     if (restricted.includes(cleanCode)) {
         return { error: 'This code is reserved.' }
     }
@@ -74,3 +73,27 @@ export async function getAffiliateCode() {
     return data?.code
 }
 
+export async function getAffiliateStats() {
+    const user = await currentUser()
+    if (!user) return { referrals: 0, earnings: 0 }
+
+    const supabaseAdmin = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.SUPABASE_SERVICE_ROLE_KEY!
+    )
+
+    // Fetch referrals where this user is the referrer
+    const { data, error } = await supabaseAdmin
+        .from('referrals')
+        .select('amount')
+        .eq('referrer_id', user.id)
+
+    if (error || !data) {
+        return { referrals: 0, earnings: 0 }
+    }
+
+    const referrals = data.length
+    const earnings = data.reduce((sum, row) => sum + (Number(row.amount) || 0), 0)
+
+    return { referrals, earnings }
+}
