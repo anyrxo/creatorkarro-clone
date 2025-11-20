@@ -1,11 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, PlayCircle, CheckCircle, FileText, Lock, Menu, X } from 'lucide-react'
-import { CourseContent, Module, Lesson } from '@/data/learning-content'
+import { ChevronDown, PlayCircle, CheckCircle, FileText, Menu, X, Flame } from 'lucide-react'
+import { CourseContent } from '@/data/learning-content'
 import Link from 'next/link'
 import { useCourse } from '@/context/CourseContext'
+import { getUserStats } from '@/app/actions/gamification'
 
 interface SidebarProps {
     course: CourseContent
@@ -16,6 +17,11 @@ interface SidebarProps {
 export default function Sidebar({ course, currentLessonId, onClose }: SidebarProps) {
     const [openModules, setOpenModules] = useState<string[]>(course.modules.map(m => m.id))
     const { isLessonComplete, getCourseProgress } = useCourse()
+    const [stats, setStats] = useState({ streak: 0, xp: 0, level: 'Novice', nextLevelXp: 1000 })
+
+    useEffect(() => {
+        getUserStats().then(setStats)
+    }, [])
 
     const toggleModule = (moduleId: string) => {
         setOpenModules(prev =>
@@ -37,6 +43,31 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                 </button>
             </div>
 
+            {/* Gamification Widget */}
+            <div className="p-4 border-b border-white/5 bg-purple-900/10">
+                <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                        <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">Rank: {stats.level}</span>
+                    </div>
+                    {stats.streak > 0 && (
+                         <div className="flex items-center gap-1 text-xs font-bold text-orange-400">
+                             <Flame className="w-3 h-3 fill-orange-500" />
+                             {stats.streak} Days
+                         </div>
+                    )}
+                </div>
+                <div className="flex items-center justify-between mb-1 text-[10px] text-zinc-400">
+                    <span>{stats.xp} XP</span>
+                    <span>{stats.nextLevelXp} XP</span>
+                </div>
+                <div className="w-full bg-black h-1.5 rounded-full overflow-hidden border border-white/10 relative group">
+                    <div 
+                        className="bg-gradient-to-r from-purple-500 to-blue-500 h-full transition-all duration-1000 group-hover:brightness-125" 
+                        style={{ width: `${Math.min((stats.xp / stats.nextLevelXp) * 100, 100)}%` }} 
+                    />
+                </div>
+            </div>
+
             <div className="p-4 border-b border-white/5">
                 <Link
                     href="/learning"
@@ -48,11 +79,11 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                 <h2 className="text-lg font-bold text-white mb-2">{course.title}</h2>
                 <div className="w-full bg-zinc-800 h-1.5 rounded-full overflow-hidden">
                     <div
-                        className="bg-purple-500 h-full transition-all duration-1000"
+                        className="bg-white h-full transition-all duration-1000"
                         style={{ width: `${progress}%` }}
                     />
                 </div>
-                <p className="text-xs text-zinc-500 mt-2">{progress}% Complete</p>
+                <p className="text-xs text-zinc-500 mt-2">{progress}% Course Complete</p>
             </div>
 
             <div className="p-4 space-y-4 flex-1">

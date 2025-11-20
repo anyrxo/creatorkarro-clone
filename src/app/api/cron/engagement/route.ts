@@ -48,7 +48,24 @@ export async function GET(request: Request) {
       const now = new Date()
       const diffInHours = (now.getTime() - lastActivity.getTime()) / (1000 * 60 * 60)
 
-      // 3. Rule: Send Nudge if inactive for 3 days (72-96 hours window)
+      // 3. Rule: Send Streak Warning (24-30 hours inactive)
+      if (diffInHours >= 24 && diffInHours <= 30) {
+        const { error: emailError } = await resend.emails.send({
+          from: 'IImagined Access <access@notifications.iimagined.ai>',
+          to: [user.email],
+          subject: '⚠️ Streak At Risk | IImagined',
+          html: EmailTemplates.streakWarning(
+            `${process.env.NEXT_PUBLIC_SITE_URL}/learning`
+          )
+        })
+
+        if (!emailError) {
+            emailsSent++
+            console.log(`Streak warning sent to ${user.email}`)
+        }
+      }
+
+      // 4. Rule: Send Nudge if inactive for 3 days (72-96 hours window)
       if (diffInHours >= 72 && diffInHours <= 96) {
         const { error: emailError } = await resend.emails.send({
           from: 'IImagined Access <access@notifications.iimagined.ai>',
@@ -73,4 +90,3 @@ export async function GET(request: Request) {
     return NextResponse.json({ success: false, error }, { status: 500 })
   }
 }
-

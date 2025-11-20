@@ -82,6 +82,39 @@ export const EmailTemplates = {
       </body>
     </html>
   `,
+  
+  streakWarning: (dashboardUrl: string) => `
+    <!DOCTYPE html>
+    <html>
+      <body style="font-family: 'Inter', sans-serif; background-color: #000000; color: #ffffff; padding: 40px 0; margin: 0;">
+        <div style="max-width: 600px; margin: 0 auto; background-color: #111111; border-radius: 16px; overflow: hidden; border: 1px solid #333333;">
+          <div style="background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%); padding: 2px;">
+            <div style="background-color: #111111; padding: 30px; text-align: center;">
+              <h1 style="margin: 0; font-size: 28px; color: #ffffff; font-weight: 800;">⚠️ Streak At Risk</h1>
+            </div>
+          </div>
+          <div style="padding: 40px 30px;">
+            <h2 style="color: #ffffff; font-size: 24px; margin-bottom: 16px; font-weight: 600;">Don't break the chain.</h2>
+            <p style="color: #a1a1aa; font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
+              You've been consistent, but you haven't completed a lesson today. Complete one lesson now to keep your streak alive and earn your daily XP bonus.
+            </p>
+            <div style="text-align: center; margin-bottom: 40px;">
+              <a href="${dashboardUrl}" style="background: linear-gradient(90deg, #f59e0b, #d97706); color: #ffffff; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);">
+                Complete a Lesson &rarr;
+              </a>
+            </div>
+          </div>
+           <!-- Footer -->
+          <div style="background-color: #0a0a0a; padding: 20px; text-align: center; border-top: 1px solid #222222;">
+            <p style="color: #52525b; font-size: 12px; margin: 0;">
+              © ${new Date().getFullYear()} IImagined AI. All rights reserved.<br>
+              Sent securely via notifications.iimagined.ai
+            </p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `,
 
   congratulations: (courseName: string, dashboardUrl: string) => `
     <!DOCTYPE html>
