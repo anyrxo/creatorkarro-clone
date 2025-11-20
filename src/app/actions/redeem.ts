@@ -28,16 +28,12 @@ export async function redeemLicenseKey(formData: FormData) {
     }
 
     // Initialize Supabase Client
-    // Note: We are using the standard client here. 
-    // For the RPC call to work, we might need to ensure the public user can call it, 
-    // OR we use the Service Role key here on the server side for max security.
-    // Let's use Service Role key for the redemption action to be safe and robust.
-    
     const supabaseAdmin = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
         process.env.SUPABASE_SERVICE_ROLE_KEY! 
     )
 
+    // 1. Claim the Key
     const { data, error } = await supabaseAdmin.rpc('claim_license_key', {
         p_key: key,
         p_user_id: user.id,
@@ -50,6 +46,30 @@ export async function redeemLicenseKey(formData: FormData) {
     }
 
     if (data === true) {
+        // 2. Credit the Affiliate (if applicable)
+        // We get the referrer ID from the cookie (client-side) passed via the form or we can try to read cookies here
+        // Reading cookies in Server Action:
+        const { cookies } = await import('next/headers')
+        const cookieStore = await cookies()
+        const referrerId = cookieStore.get('iimagined_ref')?.value
+
+        if (referrerId && referrerId !== user.id) {
+            // Check if they are referring themselves (anti-fraud)
+            try {
+                // Insert referral record
+                await supabaseAdmin.from('referrals').insert({
+                    referrer_id: referrerId,
+                    referred_user_id: user.id,
+                    status: 'sale',
+                    amount: 39.60 // 40% of $99
+                })
+                console.log(`Affiliate credited: ${referrerId} for user ${user.id}`)
+            } catch (affiliateError) {
+                console.error('Affiliate credit failed:', affiliateError)
+                // Don't block the user's access just because affiliate failed
+            }
+        }
+
         return { success: true }
     } else {
         return { error: 'Invalid or already claimed license key.' }

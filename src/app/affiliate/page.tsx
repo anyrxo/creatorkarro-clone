@@ -65,6 +65,27 @@ export default function AffiliatePage() {
                     <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
                         Earn 40% recurring commission on every sale you refer. Share the blueprint, get paid, and help others build their empire.
                     </p>
+
+                    <div className="mt-8 bg-zinc-900/30 border border-white/5 rounded-xl p-6 max-w-3xl mx-auto text-left">
+                         <h3 className="text-white font-bold mb-4 flex items-center gap-2">
+                             <Shield className="w-5 h-5 text-purple-400" />
+                             How it works
+                         </h3>
+                         <div className="grid md:grid-cols-3 gap-4">
+                             <div className="bg-black/30 p-4 rounded-lg">
+                                 <div className="text-purple-400 font-bold mb-1">1. Share Link</div>
+                                 <div className="text-sm text-zinc-400">Copy your unique link below. Share it on social media, YouTube, or with friends.</div>
+                             </div>
+                             <div className="bg-black/30 p-4 rounded-lg">
+                                 <div className="text-blue-400 font-bold mb-1">2. We Track</div>
+                                 <div className="text-sm text-zinc-400">We track every click. Even if they buy days later, you get credit.</div>
+                             </div>
+                             <div className="bg-black/30 p-4 rounded-lg">
+                                 <div className="text-green-400 font-bold mb-1">3. You Earn</div>
+                                 <div className="text-sm text-zinc-400">When they activate a license, you instantly see $39.60 in your dashboard.</div>
+                             </div>
+                         </div>
+                    </div>
                 </div>
 
                 {/* Main Dashboard Grid */}
