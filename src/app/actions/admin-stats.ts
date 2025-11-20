@@ -2,10 +2,25 @@
 
 import { createClient } from '@supabase/supabase-js'
 import { clerkClient } from '@clerk/nextjs/server'
+import dns from 'node:dns'
+
+// FORCE IPv4 for Node 18+ environments
+try {
+    if (dns.setDefaultResultOrder) {
+        dns.setDefaultResultOrder('ipv4first')
+    }
+} catch (e) {
+    // Ignore
+}
 
 const supabaseAdmin = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+    {
+        auth: {
+            persistSession: false // Critical for server actions
+        }
+    }
 )
 
 export interface AdminStats {
@@ -29,20 +44,23 @@ export async function getAdminStats(): Promise<AdminStats> {
             .select('claimed_at, email, user_id')
             .eq('status', 'claimed')
         
-        if (error) throw error
+        if (error) {
+            console.error('Error fetching license keys:', error)
+            throw error
+        }
 
         // Map of paid user IDs for quick lookup
-        const paidUserIds = new Set(claimedKeys.map(k => k.user_id))
+        const paidUserIds = new Set(claimedKeys?.map(k => k.user_id) || [])
 
-        // 2. Get All Users from Clerk (Limit to recent 100 for performance if needed, or use getCount)
+        // 2. Get All Users from Clerk
         const client = await clerkClient()
         const { data: clerkUsers, totalCount } = await client.users.getUserList({
-            limit: 10,
+            limit: 50, // Increased limit to see more recent activity
             orderBy: '-created_at'
         })
 
         // 3. Calculate Stats
-        const activeStudents = claimedKeys.length
+        const activeStudents = claimedKeys?.length || 0
         const totalRevenue = activeStudents * 99 // Assuming $99 per key
         const totalUsers = totalCount
 
@@ -53,7 +71,6 @@ export async function getAdminStats(): Promise<AdminStats> {
         ).length
 
         // 5. Recent Activity (Mix of Signups and Redemptions)
-        // For now, let's just show the recent Clerk signups and indicate their status
         const recentActivity = clerkUsers.map(u => {
             const isPaid = paidUserIds.has(u.id)
             const email = u.emailAddresses[0]?.emailAddress || 'No Email'
