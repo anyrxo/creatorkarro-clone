@@ -53,19 +53,16 @@ export default function PartnerSlider() {
           {doubledPartners.map((partner, index) => (
             <div
               key={`${partner.platform}-${index}`}
-              className="flex-shrink-0 w-36 mx-3 flex flex-col items-center justify-center p-6 bg-zinc-800/50 backdrop-blur-sm rounded-lg border border-zinc-700/50 hover:border-zinc-600/50 transition-colors group"
+              className="flex-shrink-0 mx-8 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300"
             >
               <SocialIcon 
                 platform={partner.platform as any}
                 variant="color"
-                size={32}
+                size={64}
                 href={undefined}
                 src={partner.src} // Pass the explicit source
-                className="mb-3 group-hover:scale-110 transition-transform"
+                className="hover:scale-110 transition-transform"
               />
-              <span className="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors font-medium">
-                {partner.name}
-              </span>
             </div>
           ))}
         </div>
