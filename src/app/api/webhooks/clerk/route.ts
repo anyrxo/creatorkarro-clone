@@ -3,6 +3,8 @@ import { headers } from 'next/headers'
 import { WebhookEvent } from '@clerk/nextjs/server'
 import { createClient } from '@supabase/supabase-js'
 import dns from 'node:dns'
+import { Resend } from 'resend'
+import { EmailTemplates } from '@/lib/email-templates'
 
 // FORCE IPv4: Fixes "fetch failed" on Vercel/Node 18+ when connecting to Supabase
 try {
@@ -12,6 +14,8 @@ try {
 } catch (e) {
     // Ignore
 }
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
@@ -64,6 +68,19 @@ export async function POST(req: Request) {
   
   console.log(`Webhook received: ${eventType}`)
 
+  // Sync to Supabase using Service Role (Admin)
+  const supabaseAdmin = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+    {
+        auth: {
+            persistSession: false,
+            autoRefreshToken: false,
+            detectSessionInUrl: false
+        }
+    }
+  )
+
   if (eventType === 'user.created' || eventType === 'user.updated') {
       const { id, email_addresses, first_name, last_name } = evt.data
       const email = email_addresses[0]?.email_address
@@ -71,19 +88,6 @@ export async function POST(req: Request) {
       if (!email) {
           return new Response('No email found', { status: 200 }) // Return 200 to stop retry
       }
-
-      // Sync to Supabase using Service Role (Admin)
-      const supabaseAdmin = createClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.SUPABASE_SERVICE_ROLE_KEY!,
-        {
-            auth: {
-                persistSession: false,
-                autoRefreshToken: false,
-                detectSessionInUrl: false
-            }
-        }
-      )
 
       const { error } = await supabaseAdmin
         .from('profiles')
@@ -101,6 +105,38 @@ export async function POST(req: Request) {
       }
       
       console.log(`Successfully synced user ${id} to Supabase`)
+
+      // Send Welcome Email for New Users (Free Tier) on user.created
+      if (eventType === 'user.created') {
+          try {
+              await resend.emails.send({
+                  from: 'IImagined Access <access@notifications.iimagined.ai>',
+                  to: [email],
+                  subject: 'Welcome to IImagined',
+                  html: EmailTemplates.welcomeFree(first_name || 'Creator', 'https://iimagined.ai/dashboard'),
+              })
+              console.log(`Sent free welcome email to ${email}`)
+          } catch (emailErr) {
+              console.error('Error sending welcome email:', emailErr)
+              // Don't fail the webhook for email error
+          }
+      }
+
+  } else if (eventType === 'user.deleted') {
+      const { id } = evt.data
+      
+      if (id) {
+          const { error } = await supabaseAdmin
+            .from('profiles')
+            .delete()
+            .eq('user_id', id)
+          
+          if (error) {
+              console.error('Supabase delete error:', error)
+              return new Response('Error deleting from Supabase', { status: 500 })
+          }
+          console.log(`Successfully deleted user ${id} from Supabase`)
+      }
   }
 
   return new Response('', { status: 200 })
