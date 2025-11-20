@@ -73,6 +73,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
         if (isUserLoaded) {
             syncWithSupabase()
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, isUserLoaded, isLoaded])
 
     // Save to local storage on change

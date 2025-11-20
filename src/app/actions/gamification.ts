@@ -49,7 +49,7 @@ export async function getUserStats() {
     if (uniqueDates.includes(today) || uniqueDates.includes(yesterday)) {
         streak = 1
         // Count backwards
-        let checkDate = new Date()
+        const checkDate = new Date()
         // If they haven't done today yet, start checking from yesterday
         if (!uniqueDates.includes(today)) {
             checkDate.setDate(checkDate.getDate() - 1)
