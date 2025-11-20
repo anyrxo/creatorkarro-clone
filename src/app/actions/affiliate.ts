@@ -97,3 +97,43 @@ export async function getAffiliateStats() {
 
     return { referrals, earnings }
 }
+
+export async function updatePayoutEmail(email: string) {
+    const user = await currentUser()
+    if (!user) return { error: 'Not logged in' }
+
+    const supabaseAdmin = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.SUPABASE_SERVICE_ROLE_KEY!
+    )
+
+    const { error } = await supabaseAdmin
+        .from('affiliate_profiles')
+        .update({ paypal_email: email })
+        .eq('user_id', user.id)
+
+    if (error) {
+        return { error: 'Failed to save email' }
+    }
+
+    revalidatePath('/affiliate')
+    return { success: true }
+}
+
+export async function getPayoutEmail() {
+    const user = await currentUser()
+    if (!user) return null
+
+    const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    )
+
+    const { data } = await supabase
+        .from('affiliate_profiles')
+        .select('paypal_email')
+        .eq('user_id', user.id)
+        .single()
+
+    return data?.paypal_email
+}

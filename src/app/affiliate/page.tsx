@@ -3,10 +3,10 @@
 import { useUser } from '@clerk/nextjs'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Copy, Check, DollarSign, Users, ExternalLink, Shield, Sparkles, Loader2 } from 'lucide-react'
+import { Copy, Check, DollarSign, Users, ExternalLink, Shield, Sparkles, Loader2, CreditCard } from 'lucide-react'
 import Link from 'next/link'
 import ShimmerButton from '@/components/magicui/shimmer-button'
-import { claimAffiliateCode, getAffiliateCode, getAffiliateStats } from '@/app/actions/affiliate'
+import { claimAffiliateCode, getAffiliateCode, getAffiliateStats, updatePayoutEmail, getPayoutEmail } from '@/app/actions/affiliate'
 
 export default function AffiliatePage() {
     const { user, isLoaded, isSignedIn } = useUser()
@@ -17,6 +17,9 @@ export default function AffiliatePage() {
     const [claimError, setClaimError] = useState('')
     const [copied, setCopied] = useState(false)
     const [stats, setStats] = useState({ referrals: 0, earnings: 0 })
+    const [paypalEmail, setPaypalEmail] = useState('')
+    const [isSavingPaypal, setIsSavingPaypal] = useState(false)
+    const [paypalSaved, setPaypalSaved] = useState(false)
 
     useEffect(() => {
         if (user) {
@@ -33,6 +36,11 @@ export default function AffiliatePage() {
 
             // 2. Fetch Stats
             getAffiliateStats().then(setStats)
+
+            // 3. Fetch Payout Email
+            getPayoutEmail().then(email => {
+                if (email) setPaypalEmail(email)
+            })
         }
     }, [user])
 
@@ -49,6 +57,15 @@ export default function AffiliatePage() {
             setClaimError(result.error || 'Failed to claim code')
         }
         setIsClaiming(false)
+    }
+
+    const handleSavePaypal = async (e: React.FormEvent) => {
+        e.preventDefault()
+        setIsSavingPaypal(true)
+        await updatePayoutEmail(paypalEmail)
+        setIsSavingPaypal(false)
+        setPaypalSaved(true)
+        setTimeout(() => setPaypalSaved(false), 2000)
     }
 
     const copyLink = () => {
@@ -203,43 +220,88 @@ export default function AffiliatePage() {
                     </motion.div>
                 </div>
 
-                {/* Community Nudge Section */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <a 
-                        href="https://discord.gg/ychmBgGCPa" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="group bg-[#5865F2]/10 border border-[#5865F2]/20 hover:bg-[#5865F2]/20 p-6 rounded-2xl transition-all"
+                {/* Payout Settings & Community Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                     {/* Payout Info & Settings */}
+                     <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 }}
+                        className="bg-zinc-900/50 border border-white/10 rounded-2xl p-8"
                     >
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-[#5865F2] rounded-full flex items-center justify-center text-white">
-                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.772-.6083 1.1588a18.2915 18.2915 0 00-5.4868 0c-.1636-.3933-.4058-.7835-.6178-1.1588a.0771.0771 0 00-.0785-.0371 19.7363 19.7363 0 00-4.8852 1.5151.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.0991.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419z"/></svg>
-                            </div>
-                            <div className="flex-grow">
-                                <h3 className="text-lg font-bold text-white group-hover:text-[#5865F2] transition-colors">Join the Discord</h3>
-                                <p className="text-sm text-zinc-400">Network with 4,000+ builders. Free access.</p>
-                            </div>
-                            <ExternalLink className="w-5 h-5 text-zinc-500 ml-auto" />
+                        <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                            <CreditCard className="w-5 h-5 text-blue-400" />
+                            Payout Details
+                        </h3>
+                        <div className="text-sm text-zinc-400 space-y-4 mb-6">
+                            <p>
+                                Payouts are processed via PayPal or Bank Transfer (Wise).
+                            </p>
+                            <p>
+                                In most cases, <strong className="text-white">payouts are same-day processed</strong> upon our system receiving the request for any balance over $50.
+                            </p>
                         </div>
-                    </a>
 
-                    <a 
-                        href="https://t.me/iimagined" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="group bg-[#0088cc]/10 border border-[#0088cc]/20 hover:bg-[#0088cc]/20 p-6 rounded-2xl transition-all"
-                    >
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-[#0088cc] rounded-full flex items-center justify-center text-white">
-                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.638z"/></svg>
+                        <form onSubmit={handleSavePaypal} className="relative">
+                            <label className="text-xs font-bold text-zinc-500 uppercase mb-1 block">PayPal Email</label>
+                            <div className="flex gap-2">
+                                <input 
+                                    type="email" 
+                                    value={paypalEmail}
+                                    onChange={(e) => setPaypalEmail(e.target.value)}
+                                    placeholder="your@paypal.com"
+                                    className="flex-1 bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-all"
+                                    required
+                                />
+                                <button 
+                                    type="submit" 
+                                    disabled={isSavingPaypal}
+                                    className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold disabled:opacity-50 transition-all min-w-[100px]"
+                                >
+                                    {isSavingPaypal ? <Loader2 className="w-4 h-4 animate-spin mx-auto" /> : (paypalSaved ? <Check className="w-4 h-4 mx-auto" /> : 'Save')}
+                                </button>
                             </div>
-                            <div className="flex-grow">
-                                <h3 className="text-lg font-bold text-white group-hover:text-[#0088cc] transition-colors">Join Telegram</h3>
-                                <p className="text-sm text-zinc-400">Get daily alpha and updates directly.</p>
+                        </form>
+                    </motion.div>
+
+                    {/* Community Links */}
+                    <div className="space-y-4">
+                        <a 
+                            href="https://discord.gg/ychmBgGCPa" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block group bg-[#5865F2]/10 border border-[#5865F2]/20 hover:bg-[#5865F2]/20 p-6 rounded-2xl transition-all"
+                        >
+                            <div className="flex items-center gap-4">
+                                <div className="w-12 h-12 bg-[#5865F2] rounded-full flex items-center justify-center text-white">
+                                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.772-.6083 1.1588a18.2915 18.2915 0 00-5.4868 0c-.1636-.3933-.4058-.7835-.6178-1.1588a.0771.0771 0 00-.0785-.0371 19.7363 19.7363 0 00-4.8852 1.5151.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.0991.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419z"/></svg>
+                                </div>
+                                <div className="flex-grow">
+                                    <h3 className="text-lg font-bold text-white group-hover:text-[#5865F2] transition-colors">Join the Discord</h3>
+                                    <p className="text-sm text-zinc-400">Network with 4,000+ builders. Free access.</p>
+                                </div>
+                                <ExternalLink className="w-5 h-5 text-zinc-500 ml-auto" />
                             </div>
-                            <ExternalLink className="w-5 h-5 text-zinc-500 ml-auto" />
-                        </div>
-                    </a>
+                        </a>
+
+                        <a 
+                            href="https://t.me/iimagined" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block group bg-[#0088cc]/10 border border-[#0088cc]/20 hover:bg-[#0088cc]/20 p-6 rounded-2xl transition-all"
+                        >
+                            <div className="flex items-center gap-4">
+                                <div className="w-12 h-12 bg-[#0088cc] rounded-full flex items-center justify-center text-white">
+                                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.638z"/></svg>
+                                </div>
+                                <div className="flex-grow">
+                                    <h3 className="text-lg font-bold text-white group-hover:text-[#0088cc] transition-colors">Join Telegram</h3>
+                                    <p className="text-sm text-zinc-400">Get daily alpha and updates directly.</p>
+                                </div>
+                                <ExternalLink className="w-5 h-5 text-zinc-500 ml-auto" />
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
