@@ -23,24 +23,34 @@ export default function AffiliatePage() {
 
     useEffect(() => {
         if (user) {
-            // 1. Check if they have a custom code
-            getAffiliateCode().then(code => {
-                if (code) {
-                    setClaimedCode(code)
-                    setReferralLink(`${window.location.origin}/${code}`)
-                } else {
-                    // Fallback to default ID ref
+            // Use try-catch to prevent fetch errors from breaking the page
+            const fetchData = async () => {
+                try {
+                    // 1. Check if they have a custom code
+                    const code = await getAffiliateCode()
+                    if (code) {
+                        setClaimedCode(code)
+                        setReferralLink(`${window.location.origin}/${code}`)
+                    } else {
+                        // Fallback to default ID ref
+                        setReferralLink(`${window.location.origin}?ref=${user.id}`)
+                    }
+
+                    // 2. Fetch Stats
+                    const fetchedStats = await getAffiliateStats()
+                    setStats(fetchedStats)
+
+                    // 3. Fetch Payout Email
+                    const email = await getPayoutEmail()
+                    if (email) setPaypalEmail(email)
+                } catch (error) {
+                    console.error("Error loading affiliate data:", error)
+                    // Set fallback link if error
                     setReferralLink(`${window.location.origin}?ref=${user.id}`)
                 }
-            })
-
-            // 2. Fetch Stats
-            getAffiliateStats().then(setStats)
-
-            // 3. Fetch Payout Email
-            getPayoutEmail().then(email => {
-                if (email) setPaypalEmail(email)
-            })
+            }
+            
+            fetchData()
         }
     }, [user])
 
@@ -49,12 +59,16 @@ export default function AffiliatePage() {
         setIsClaiming(true)
         setClaimError('')
 
-        const result = await claimAffiliateCode(customCode)
-        if (result.success) {
-            setClaimedCode(result.code!)
-            setReferralLink(`${window.location.origin}/${result.code}`)
-        } else {
-            setClaimError(result.error || 'Failed to claim code')
+        try {
+            const result = await claimAffiliateCode(customCode)
+            if (result.success) {
+                setClaimedCode(result.code!)
+                setReferralLink(`${window.location.origin}/${result.code}`)
+            } else {
+                setClaimError(result.error || 'Failed to claim code')
+            }
+        } catch (error) {
+            setClaimError('An unexpected error occurred. Please try again.')
         }
         setIsClaiming(false)
     }
@@ -62,10 +76,14 @@ export default function AffiliatePage() {
     const handleSavePaypal = async (e: React.FormEvent) => {
         e.preventDefault()
         setIsSavingPaypal(true)
-        await updatePayoutEmail(paypalEmail)
+        try {
+            await updatePayoutEmail(paypalEmail)
+            setPaypalSaved(true)
+            setTimeout(() => setPaypalSaved(false), 2000)
+        } catch (error) {
+            console.error("Error saving email:", error)
+        }
         setIsSavingPaypal(false)
-        setPaypalSaved(true)
-        setTimeout(() => setPaypalSaved(false), 2000)
     }
 
     const copyLink = () => {

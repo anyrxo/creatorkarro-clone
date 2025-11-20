@@ -81,6 +81,15 @@ export default function RedeemPage() {
                                 <p className="text-sm text-zinc-500">Locked Module</p>
                             </div>
                         </div>
+                        <div className="bg-zinc-900/50 border border-white/5 p-4 rounded-xl flex items-center gap-4 opacity-50">
+                            <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center">
+                                <Lock className="w-6 h-6 text-red-500" />
+                            </div>
+                            <div>
+                                <h3 className="font-bold text-white">AI Influencers</h3>
+                                <p className="text-sm text-zinc-500">Locked Module</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -183,7 +192,7 @@ export default function RedeemPage() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium transition-colors hover:underline"
                         >
-                            Purchase Lifetime Access <ExternalLink className="w-4 h-4" />
+                            Purchase All Access Pass <ExternalLink className="w-4 h-4" />
                         </a>
                     </div>
                 </motion.div>
@@ -191,4 +200,3 @@ export default function RedeemPage() {
         </div>
     )
 }
-

@@ -10,7 +10,7 @@ export default function AdminKeysPage() {
     const [isLoading, setIsLoading] = useState(true)
     const [isGenerating, setIsGenerating] = useState(false)
     const [copiedId, setCopiedId] = useState<string | null>(null)
-    const [expiryHours, setExpiryHours] = useState<number | ''>('') // New state for expiry
+    const [expiryHours, setExpiryHours] = useState<number | ''>('')
 
     useEffect(() => {
         loadKeys()
@@ -25,12 +25,21 @@ export default function AdminKeysPage() {
 
     const handleGenerate = async () => {
         setIsGenerating(true)
-        // Pass expiryHours if set, otherwise undefined
-        const hours = expiryHours === '' ? undefined : Number(expiryHours)
-        await generateLicenseKeys(1, 'all-access', hours)
-        await loadKeys()
-        setIsGenerating(false)
-        setExpiryHours('') // Reset
+        try {
+            const hours = expiryHours === '' ? undefined : Number(expiryHours)
+            const result = await generateLicenseKeys(1, 'all-access', hours)
+            
+            if (result.error) {
+                alert('Error generating key: ' + result.error)
+            }
+        } catch (error) {
+            alert('Failed to generate key. Please try again.')
+            console.error(error)
+        } finally {
+            await loadKeys()
+            setIsGenerating(false)
+            setExpiryHours('')
+        }
     }
 
     const handleDelete = async (id: string) => {

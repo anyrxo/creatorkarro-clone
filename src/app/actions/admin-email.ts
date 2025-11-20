@@ -23,25 +23,39 @@ export async function sendBroadcastEmail(subject: string, htmlContent: string) {
     )
 
     try {
-        // 1. Get all active students
-        const { data: students } = await supabaseAdmin
+        // 1. Get all active students (status = claimed)
+        // We remove the not null check to debug if keys are claimed but emails missing
+        const { data: students, error } = await supabaseAdmin
             .from('license_keys')
-            .select('email')
+            .select('email, user_id')
             .eq('status', 'claimed')
-            .not('email', 'is', null)
 
-        if (!students || students.length === 0) {
-            return { error: 'No active students found to email.' }
+        if (error) {
+            console.error('Database error fetching students:', error)
+            return { error: 'Database error: ' + error.message }
         }
 
-        // Deduplicate emails
-        const uniqueEmails = [...new Set(students.map(s => s.email))]
+        if (!students || students.length === 0) {
+            return { error: 'No claimed license keys found.' }
+        }
+
+        // Filter for valid emails
+        const validEmails = students
+            .map(s => s.email)
+            .filter(email => email && email.includes('@')) as string[]
+        
+        // Deduplicate
+        const uniqueEmails = [...new Set(validEmails)]
+
+        if (uniqueEmails.length === 0) {
+            return { 
+                error: `Found ${students.length} claimed keys, but NO valid emails stored. This implies legacy keys or claim errors.` 
+            }
+        }
 
         // 2. Send Emails (Looping for now - Resend limits batch size)
         let sentCount = 0
         for (const email of uniqueEmails) {
-            if (!email) continue
-            
             const { error } = await resend.emails.send({
                 from: 'IImagined Update <access@notifications.iimagined.ai>',
                 to: [email],
@@ -49,14 +63,17 @@ export async function sendBroadcastEmail(subject: string, htmlContent: string) {
                 html: htmlContent
             })
 
-            if (!error) sentCount++
+            if (error) {
+                console.error(`Failed to send to ${email}:`, error)
+            } else {
+                sentCount++
+            }
         }
 
         return { success: true, sentCount, total: uniqueEmails.length }
 
     } catch (error) {
         console.error('Broadcast Error:', error)
-        return { error: 'Failed to send broadcast.' }
+        return { error: 'Failed to send broadcast. Check server logs.' }
     }
 }
-
