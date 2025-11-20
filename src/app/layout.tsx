@@ -19,6 +19,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import { WebVitals } from "./web-vitals";
 import { AuthProvider } from "@/components/auth/AuthProvider";
 import AffiliateTracker from "@/components/AffiliateTracker"; // Import tracking component
+import UserSync from "@/components/auth/UserSync"; // NEW: Import User Sync
 import { Suspense } from "react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -132,6 +133,7 @@ export default function RootLayout({
       </head>
       <body className={montserrat.className}>
         <AuthProvider>
+          <UserSync /> {/* Automatically syncs logged-in users to Supabase */}
           <Suspense fallback={null}>
             <AffiliateTracker /> {/* Track referrals on every page load */}
           </Suspense>
