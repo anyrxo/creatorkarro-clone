@@ -63,11 +63,11 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                             className="w-full flex items-center justify-between p-4 hover:bg-white/5 transition-colors"
                         >
                             <div className="flex items-center gap-3">
-                                <div className={`flex items-center justify-center w-6 h-6 rounded-full text-xs font-medium border ${module.lessons.every(l => isLessonComplete(l.id))
+                                <div className={`flex items-center justify-center w-6 h-6 rounded-full text-xs font-medium border ${module.lessons.every(l => isLessonComplete(course.id, l.id))
                                         ? 'bg-green-500/20 text-green-400 border-green-500/30'
                                         : 'bg-white/5 text-zinc-400 border-white/10'
                                     }`}>
-                                    {module.lessons.every(l => isLessonComplete(l.id)) ? <CheckCircle className="w-3 h-3" /> : index + 1}
+                                    {module.lessons.every(l => isLessonComplete(course.id, l.id)) ? <CheckCircle className="w-3 h-3" /> : index + 1}
                                 </div>
                                 <span className="text-sm font-medium text-zinc-300 text-left line-clamp-1">
                                     {module.title}
@@ -89,7 +89,7 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                                 >
                                     <div className="px-2 pb-2 space-y-1">
                                         {module.lessons.map((lesson) => {
-                                            const isComplete = isLessonComplete(lesson.id)
+                                            const isComplete = isLessonComplete(course.id, lesson.id)
                                             const isActive = currentLessonId === lesson.id
 
                                             return (

@@ -4,38 +4,59 @@ import { useState, useEffect } from 'react'
 import AdminGate from '@/components/admin/AdminGate'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import { LayoutDashboard, BookOpen, Users, Settings, LogOut } from 'lucide-react'
+import { LayoutDashboard, BookOpen, Users, Settings, LogOut, Key, Loader2 } from 'lucide-react'
+import { checkAdminAccess } from '@/app/actions/admin-auth'
+import { useUser } from '@clerk/nextjs'
 
 export default function AdminLayout({
     children,
 }: {
     children: React.ReactNode
 }) {
-    const [isUnlocked, setIsUnlocked] = useState(false)
-    const [isLoading, setIsLoading] = useState(true)
+    const { isLoaded, isSignedIn } = useUser()
+    const [isAuthorized, setIsAuthorized] = useState(false)
+    const [isChecking, setIsChecking] = useState(true)
 
     useEffect(() => {
-        const unlocked = localStorage.getItem('iimagined_admin_unlocked')
-        if (unlocked === 'true') {
-            setIsUnlocked(true)
+        async function verifyAdmin() {
+            if (!isLoaded) return
+            
+            if (!isSignedIn) {
+                setIsChecking(false)
+                return
+            }
+
+            const result = await checkAdminAccess()
+            if (result.authorized) {
+                setIsAuthorized(true)
+            }
+            setIsChecking(false)
         }
-        setIsLoading(false)
-    }, [])
+        
+        verifyAdmin()
+    }, [isLoaded, isSignedIn])
 
-    const handleUnlock = () => {
-        localStorage.setItem('iimagined_admin_unlocked', 'true')
-        setIsUnlocked(true)
+    if (isChecking) {
+        return (
+            <div className="min-h-screen bg-black flex items-center justify-center">
+                <Loader2 className="w-8 h-8 text-purple-500 animate-spin" />
+            </div>
+        )
     }
 
-    const handleLogout = () => {
-        localStorage.removeItem('iimagined_admin_unlocked')
-        setIsUnlocked(false)
-    }
-
-    if (isLoading) return <div className="min-h-screen bg-black" />
-
-    if (!isUnlocked) {
-        return <AdminGate onUnlock={handleUnlock} />
+    if (!isAuthorized) {
+        return (
+            <div className="min-h-screen bg-black flex flex-col items-center justify-center text-white p-4">
+                <div className="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mb-4 border border-red-500/20">
+                    <LogOut className="w-8 h-8 text-red-500" />
+                </div>
+                <h1 className="text-2xl font-bold mb-2">Access Denied</h1>
+                <p className="text-zinc-400 mb-8 text-center">You are not authorized to access this area.</p>
+                <Link href="/" className="px-6 py-3 bg-white text-black rounded-xl font-medium hover:bg-zinc-200 transition-colors">
+                    Return Home
+                </Link>
+            </div>
+        )
     }
 
     return (
@@ -55,6 +76,10 @@ export default function AdminLayout({
                         <BookOpen className="w-5 h-5" />
                         Courses
                     </Link>
+                    <Link href="/admin/keys" className="flex items-center gap-3 px-4 py-3 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">
+                        <Key className="w-5 h-5" />
+                        License Keys
+                    </Link>
                     <Link href="/admin/users" className="flex items-center gap-3 px-4 py-3 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">
                         <Users className="w-5 h-5" />
                         Students
@@ -66,13 +91,13 @@ export default function AdminLayout({
                 </nav>
 
                 <div className="p-4 border-t border-white/10">
-                    <button
-                        onClick={handleLogout}
-                        className="flex items-center gap-3 px-4 py-3 w-full rounded-lg text-red-400 hover:bg-red-500/10 transition-colors"
+                    <Link
+                        href="/"
+                        className="flex items-center gap-3 px-4 py-3 w-full rounded-lg text-zinc-400 hover:bg-white/5 transition-colors"
                     >
                         <LogOut className="w-5 h-5" />
-                        Logout
-                    </button>
+                        Exit Admin
+                    </Link>
                 </div>
             </div>
 

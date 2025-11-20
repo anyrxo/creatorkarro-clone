@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { Menu, X, ChevronDown, User } from 'lucide-react'
 import * as analytics from '@/lib/analytics'
 
 import ShimmerButton from '@/components/magicui/shimmer-button'
@@ -103,8 +103,15 @@ export default function Navigation() {
               </div>
             </nav>
 
-            {/* Desktop Join Button */}
-            <div className="hidden md:block">
+            {/* Desktop Actions */}
+            <div className="hidden md:flex items-center gap-4">
+              <Link 
+                href="/sign-in"
+                className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-800 rounded-full transition-all"
+              >
+                <span>Sign In</span>
+              </Link>
+              
               <a
                 href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
                 onClick={() => {
@@ -129,10 +136,11 @@ export default function Navigation() {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-3 text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-zinc-800/50"
+              className="md:hidden p-3 text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-zinc-800/50 flex items-center gap-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             >
+              <span className="text-sm font-medium">Sign In</span>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>

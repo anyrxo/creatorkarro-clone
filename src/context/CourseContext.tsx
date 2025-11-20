@@ -7,8 +7,8 @@ import { supabase } from '@/lib/supabase'
 
 interface CourseContextType {
     completedLessons: string[]
-    markLessonComplete: (lessonId: string) => void
-    isLessonComplete: (lessonId: string) => boolean
+    markLessonComplete: (courseId: string, lessonId: string) => void
+    isLessonComplete: (courseId: string, lessonId: string) => boolean
     getCourseProgress: (courseId: string) => number
     isLoading: boolean
 }
@@ -23,7 +23,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
 
     // Load from local storage on mount
     useEffect(() => {
-        const saved = localStorage.getItem('iimagined_completed_lessons')
+        const saved = localStorage.getItem('iimagined_completed_lessons_v2')
         if (saved) {
             try {
                 setCompletedLessons(JSON.parse(saved))
@@ -78,15 +78,17 @@ export function CourseProvider({ children }: { children: ReactNode }) {
     // Save to local storage on change
     useEffect(() => {
         if (isLoaded) {
-            localStorage.setItem('iimagined_completed_lessons', JSON.stringify(completedLessons))
+            localStorage.setItem('iimagined_completed_lessons_v2', JSON.stringify(completedLessons))
         }
     }, [completedLessons, isLoaded])
 
-    const markLessonComplete = async (lessonId: string) => {
+    const markLessonComplete = async (courseId: string, lessonId: string) => {
+        const uniqueLessonId = `${courseId}::${lessonId}`
+        
         // Optimistic update
         setCompletedLessons(prev => {
-            if (prev.includes(lessonId)) return prev
-            return [...prev, lessonId]
+            if (prev.includes(uniqueLessonId)) return prev
+            return [...prev, uniqueLessonId]
         })
 
         // Save to Supabase if user is logged in
@@ -96,7 +98,8 @@ export function CourseProvider({ children }: { children: ReactNode }) {
                     .from('user_progress')
                     .upsert({
                         user_id: user.id,
-                        lesson_id: lessonId,
+                        lesson_id: uniqueLessonId,
+                        course_id: courseId,
                         completed_at: new Date().toISOString()
                     }, { onConflict: 'user_id, lesson_id' })
 
@@ -109,8 +112,8 @@ export function CourseProvider({ children }: { children: ReactNode }) {
         }
     }
 
-    const isLessonComplete = (lessonId: string) => {
-        return completedLessons.includes(lessonId)
+    const isLessonComplete = (courseId: string, lessonId: string) => {
+        return completedLessons.includes(`${courseId}::${lessonId}`)
     }
 
     const getCourseProgress = (courseId: string) => {
@@ -123,7 +126,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
         course.modules.forEach(module => {
             module.lessons.forEach(lesson => {
                 totalLessons++
-                if (completedLessons.includes(lesson.id)) {
+                if (isLessonComplete(courseId, lesson.id)) {
                     completedCount++
                 }
             })

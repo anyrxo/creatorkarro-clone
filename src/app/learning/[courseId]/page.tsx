@@ -23,7 +23,7 @@ export default function CourseOverviewPage() {
 
     for (const courseModule of course.modules) {
         for (const lesson of courseModule.lessons) {
-            if (!isLessonComplete(lesson.id)) {
+            if (!isLessonComplete(courseId, lesson.id)) {
                 nextLessonUrl = `/learning/${courseId}/${courseModule.id}/${lesson.id}`
                 nextLessonTitle = lesson.title
                 break
@@ -130,7 +130,7 @@ export default function CourseOverviewPage() {
                         </div>
                         <div>
                             <div className="text-2xl font-bold text-white">
-                                {course.modules.reduce((acc, m) => acc + m.lessons.filter(l => isLessonComplete(l.id)).length, 0)}
+                                {course.modules.reduce((acc, m) => acc + m.lessons.filter(l => isLessonComplete(courseId, l.id)).length, 0)}
                             </div>
                             <div className="text-xs text-zinc-500 uppercase">Completed</div>
                         </div>
@@ -141,10 +141,10 @@ export default function CourseOverviewPage() {
                 <h2 className="text-2xl font-bold text-white mb-6">Course Modules</h2>
                 <div className="space-y-4">
                     {course.modules.map((courseModule, index) => {
-                        const completedLessons = courseModule.lessons.filter(l => isLessonComplete(l.id)).length
+                        const completedLessons = courseModule.lessons.filter(l => isLessonComplete(courseId, l.id)).length
                         const totalLessons = courseModule.lessons.length
                         const isModuleComplete = completedLessons === totalLessons && totalLessons > 0
-                        const isLocked = index > 0 && !course.modules[index - 1].lessons.every(l => isLessonComplete(l.id))
+                        const isLocked = index > 0 && !course.modules[index - 1].lessons.every(l => isLessonComplete(courseId, l.id))
                         // For now, we won't strictly lock modules, but we can visually indicate it
 
                         return (

@@ -57,7 +57,7 @@ export default function LessonPage() {
 
     if (!course || !courseModule || !lesson) return <div>Not found</div>
 
-    const isCompleted = isLessonComplete(lesson.id)
+    const isCompleted = isLessonComplete(courseId, lesson.id)
 
     // Find next lesson logic
     const currentLessonIndex = courseModule.lessons.findIndex(l => l.id === lessonId)
@@ -76,7 +76,7 @@ export default function LessonPage() {
 
     const handleComplete = () => {
         if (!isCompleted) {
-            markLessonComplete(lesson.id)
+            markLessonComplete(courseId, lesson.id)
             setShowConfetti(true)
             playSuccess()
             setTimeout(() => setShowConfetti(false), 5000)
