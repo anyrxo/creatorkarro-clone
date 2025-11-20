@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Save, Plus, Trash2, GripVertical } from 'lucide-react';
 import Link from 'next/link';
-import { coursesData } from '@/data/learning-content';
+import { learningContent } from '@/data/learning-content';
 
 export default function CourseEditor() {
     const { user, isLoaded } = useUser();
@@ -25,7 +25,7 @@ export default function CourseEditor() {
 
         // Load course data
         if (courseId && courseId !== 'new') {
-            const course = coursesData.find((c: any) => c.id === courseId);
+            const course = learningContent[courseId];
             if (course) {
                 setCourseName(course.title);
                 setModules(course.modules);
@@ -133,7 +133,7 @@ export default function CourseEditor() {
                     </div>
 
                     <div className="space-y-4">
-                        {modules.map((module, moduleIndex) => (
+                        {modules.map((courseModule, moduleIndex) => (
                             <div
                                 key={moduleIndex}
                                 className="bg-purple-500/5 border border-purple-500/20 rounded-xl p-6"
@@ -143,7 +143,7 @@ export default function CourseEditor() {
                                     <div className="flex-1">
                                         <input
                                             type="text"
-                                            value={module.title}
+                                            value={courseModule.title}
                                             className="w-full px-3 py-2 bg-purple-500/10 border border-purple-500/30 rounded-lg text-white text-lg font-medium focus:outline-none focus:border-purple-500/50"
                                             placeholder="Module name"
                                             readOnly
@@ -155,7 +155,7 @@ export default function CourseEditor() {
                                 </div>
 
                                 <div className="ml-8 space-y-2">
-                                    {module.lessons.map((lesson: any, lessonIndex: number) => (
+                                    {courseModule.lessons.map((lesson: any, lessonIndex: number) => (
                                         <div
                                             key={lessonIndex}
                                             className="flex items-center gap-3 p-3 bg-purple-500/5 hover:bg-purple-500/10 border border-purple-500/10 rounded-lg transition-all"
