@@ -13,7 +13,8 @@ import {
     Key,
     Shield,
     Loader2,
-    ArrowRight
+    ArrowRight,
+    UserPlus
 } from 'lucide-react';
 import Link from 'next/link';
 import { getAdminStats, AdminStats } from '@/app/actions/admin-stats';
@@ -24,8 +25,9 @@ export default function AdminDashboard() {
     const router = useRouter();
     const [stats, setStats] = useState<AdminStats>({
         totalRevenue: 0,
-        activeStudents: 0,
+        activeStudents: 0, // Paid
         todaysSignups: 0,
+        totalUsers: 0, // All (Free + Paid)
         recentActivity: []
     });
     const [isLoading, setIsLoading] = useState(true);
@@ -109,25 +111,25 @@ export default function AdminDashboard() {
                         border="border-green-500/20"
                     />
                     <StatsCard 
-                        label="Active Students" 
+                        label="Paid Students" 
                         value={stats.activeStudents.toString()} 
-                        icon={Users} 
+                        icon={Shield} 
                         color="text-blue-400" 
                         bg="bg-blue-500/10"
                         border="border-blue-500/20"
                     />
                     <StatsCard 
-                        label="Today's Signups" 
-                        value={stats.todaysSignups.toString()} 
-                        icon={TrendingUp} 
+                        label="Total Members" 
+                        value={stats.totalUsers.toString()} 
+                        icon={Users} 
                         color="text-purple-400" 
                         bg="bg-purple-500/10"
                         border="border-purple-500/20"
                     />
                     <StatsCard 
-                        label="System Status" 
-                        value="Online" 
-                        icon={Shield} 
+                        label="Today's Signups" 
+                        value={stats.todaysSignups.toString()} 
+                        icon={TrendingUp} 
                         color="text-emerald-400" 
                         bg="bg-emerald-500/10"
                         border="border-emerald-500/20"
@@ -198,7 +200,7 @@ export default function AdminDashboard() {
                             transition={{ delay: 0.1 }}
                             className="bg-zinc-900/50 border border-white/5 rounded-2xl p-8 h-full"
                         >
-                            <h2 className="text-xl font-bold mb-6">Recent Activity</h2>
+                            <h2 className="text-xl font-bold mb-6">Recent Signups & Activity</h2>
                             <div className="space-y-6">
                                 {stats.recentActivity.length === 0 ? (
                                     <div className="text-zinc-500 text-center py-12">No recent activity</div>
@@ -206,19 +208,27 @@ export default function AdminDashboard() {
                                     stats.recentActivity.map((activity, i) => (
                                         <div key={i} className="flex items-start gap-4 pb-6 border-b border-white/5 last:border-0 last:pb-0">
                                             <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
-                                                activity.type === 'signup' ? 'bg-purple-500/10 text-purple-400' : 'bg-green-500/10 text-green-400'
+                                                activity.status === 'paid' ? 'bg-green-500/10 text-green-400' : 'bg-zinc-500/10 text-zinc-400'
                                             }`}>
-                                                {activity.type === 'signup' ? <Users className="w-5 h-5" /> : <Key className="w-5 h-5" />}
+                                                {activity.status === 'paid' ? <Shield className="w-5 h-5" /> : <UserPlus className="w-5 h-5" />}
                                             </div>
                                             <div>
-                                                <p className="text-white font-medium">
-                                                    {activity.type === 'signup' ? 'New User Signup' : 'License Redeemed'}
-                                                </p>
+                                                <div className="flex items-center gap-2">
+                                                    <p className="text-white font-medium">
+                                                        {activity.user}
+                                                    </p>
+                                                    {activity.status === 'paid' ? (
+                                                        <span className="px-2 py-0.5 bg-green-500/20 text-green-400 text-[10px] font-bold uppercase rounded-full tracking-wider">
+                                                            PAID
+                                                        </span>
+                                                    ) : (
+                                                        <span className="px-2 py-0.5 bg-zinc-500/20 text-zinc-400 text-[10px] font-bold uppercase rounded-full tracking-wider">
+                                                            FREE
+                                                        </span>
+                                                    )}
+                                                </div>
                                                 <p className="text-sm text-zinc-400 mb-1">
-                                                    {activity.user}
-                                                </p>
-                                                <p className="text-xs text-zinc-500">
-                                                    {activity.time}
+                                                    Joined {activity.time}
                                                 </p>
                                             </div>
                                         </div>
@@ -228,7 +238,7 @@ export default function AdminDashboard() {
                             
                             <div className="mt-8 pt-4 border-t border-white/5 text-center">
                                 <Link href="/admin/users" className="inline-flex items-center gap-2 text-sm text-purple-400 hover:text-purple-300 transition-colors">
-                                    View All History <ArrowRight className="w-4 h-4" />
+                                    View All Users <ArrowRight className="w-4 h-4" />
                                 </Link>
                             </div>
                         </motion.div>
