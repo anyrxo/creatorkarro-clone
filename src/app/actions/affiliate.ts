@@ -5,6 +5,9 @@ import { currentUser } from '@clerk/nextjs/server'
 import { revalidatePath } from 'next/cache'
 
 export async function claimAffiliateCode(code: string) {
+    const start = Date.now()
+    console.log('[Affiliate] Start Claim')
+    
     try {
         const user = await currentUser()
         if (!user) return { error: 'Not logged in' }
@@ -38,6 +41,7 @@ export async function claimAffiliateCode(code: string) {
         }
 
         // 4. Attempt to insert
+        console.log('[Affiliate] Inserting code')
         const { error } = await supabaseAdmin
             .from('affiliate_profiles')
             .insert({
@@ -49,14 +53,15 @@ export async function claimAffiliateCode(code: string) {
             if (error.code === '23505') { // Unique violation
                 return { error: 'This code is already taken.' }
             }
-            console.error('Affiliate Code Insert Error:', error)
+            console.error('[Affiliate] Insert Error:', error)
             return { error: 'Failed to claim code. Please try again.' }
         }
 
         revalidatePath('/affiliate')
+        console.log(`[Affiliate] Success. Duration: ${Date.now() - start}ms`)
         return { success: true, code: cleanCode }
     } catch (error) {
-        console.error('Claim Code Exception:', error)
+        console.error('[Affiliate] Claim Exception:', error)
         return { error: 'An unexpected error occurred.' }
     }
 }

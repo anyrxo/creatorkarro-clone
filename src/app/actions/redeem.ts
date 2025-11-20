@@ -9,6 +9,9 @@ import { EmailTemplates } from '@/lib/email-templates'
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function redeemLicenseKey(formData: FormData) {
+    const start = Date.now()
+    console.log('[Redeem] Start')
+    
     const key = formData.get('key') as string
     const user = await currentUser()
 
@@ -20,6 +23,7 @@ export async function redeemLicenseKey(formData: FormData) {
         return { error: 'Please enter a license key.' }
     }
 
+    console.log('[Redeem] Init Supabase')
     // Initialize Supabase Client
     const supabaseAdmin = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -27,11 +31,13 @@ export async function redeemLicenseKey(formData: FormData) {
     )
 
     // 1. Claim the Key
+    console.log('[Redeem] Calling RPC')
     const { data, error } = await supabaseAdmin.rpc('claim_license_key', {
         p_key: key,
         p_user_id: user.id,
         p_email: user.emailAddresses[0]?.emailAddress || null
     })
+    console.log(`[Redeem] RPC complete. Duration: ${Date.now() - start}ms. Success: ${!!data}`)
 
     if (error) {
         console.error('Redemption error:', error)
@@ -44,12 +50,19 @@ export async function redeemLicenseKey(formData: FormData) {
 
         // 2. Send Welcome Email to the Student
         if (userEmail) {
-            await resend.emails.send({
-                from: 'IImagined Access <access@notifications.iimagined.ai>',
-                to: [userEmail],
-                subject: 'Welcome to the Empire | IImagined',
-                html: EmailTemplates.welcome(dashboardUrl)
-            })
+            console.log('[Redeem] Sending Welcome Email')
+            // Note: We await this to ensure it sends, but it might add 500ms-1s latency
+            try {
+                await resend.emails.send({
+                    from: 'IImagined Access <access@notifications.iimagined.ai>',
+                    to: [userEmail],
+                    subject: 'Welcome to the Empire | IImagined',
+                    html: EmailTemplates.welcome(userEmail.split('@')[0], dashboardUrl)
+                })
+                console.log('[Redeem] Welcome Email Sent')
+            } catch (emailErr) {
+                console.error('[Redeem] Welcome Email Failed:', emailErr)
+            }
         }
 
         // 3. Credit the Affiliate (if applicable)
@@ -58,6 +71,7 @@ export async function redeemLicenseKey(formData: FormData) {
         const referrerId = cookieStore.get('iimagined_ref')?.value
 
         if (referrerId && referrerId !== user.id) {
+            console.log(`[Redeem] Processing Affiliate: ${referrerId}`)
             try {
                 // Insert referral record
                 await supabaseAdmin.from('referrals').insert({
@@ -66,29 +80,36 @@ export async function redeemLicenseKey(formData: FormData) {
                     status: 'sale',
                     amount: 39.60 // 40% of $99
                 })
-                console.log(`Affiliate credited: ${referrerId} for user ${user.id}`)
+                console.log(`[Redeem] Affiliate credited in DB`)
 
                 // 4. Send Affiliate Notification Email
                 // We need to fetch the referrer's email using Clerk
                 const client = await clerkClient()
-                const referrer = await client.users.getUser(referrerId)
-                const referrerEmail = referrer.emailAddresses[0]?.emailAddress
+                try {
+                    const referrer = await client.users.getUser(referrerId)
+                    const referrerEmail = referrer.emailAddresses[0]?.emailAddress
 
-                if (referrerEmail) {
-                    await resend.emails.send({
-                        from: 'IImagined Access <access@notifications.iimagined.ai>',
-                        to: [referrerEmail],
-                        subject: '💰 You made a sale! | IImagined Partner',
-                        html: EmailTemplates.affiliateSale('$39.60', `${process.env.NEXT_PUBLIC_SITE_URL}/affiliate`)
-                    })
+                    if (referrerEmail) {
+                        console.log('[Redeem] Sending Affiliate Email')
+                        await resend.emails.send({
+                            from: 'IImagined Access <access@notifications.iimagined.ai>',
+                            to: [referrerEmail],
+                            subject: '💰 You made a sale! | IImagined Partner',
+                            html: EmailTemplates.affiliateSale(39.60, `${process.env.NEXT_PUBLIC_SITE_URL}/affiliate`)
+                        })
+                        console.log('[Redeem] Affiliate Email Sent')
+                    }
+                } catch (clerkErr) {
+                    console.error('[Redeem] Clerk/Email error for affiliate:', clerkErr)
                 }
 
             } catch (affiliateError) {
-                console.error('Affiliate logic failed:', affiliateError)
+                console.error('[Redeem] Affiliate logic failed:', affiliateError)
                 // Don't block the user's access just because affiliate failed
             }
         }
 
+        console.log(`[Redeem] Completed. Total Duration: ${Date.now() - start}ms`)
         return { success: true }
     } else {
         return { error: 'Invalid or already claimed license key.' }
