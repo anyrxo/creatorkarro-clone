@@ -24,7 +24,7 @@ export default function ProductLaunchSimulator() {
     setSalesCount(0)
     setEvents([])
 
-    const duration = 5000 // 5 seconds simulation
+    const duration = 2500 // 2.5 seconds simulation
     const steps = 50
     const interval = duration / steps
     

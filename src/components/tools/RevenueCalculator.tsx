@@ -37,7 +37,7 @@ export default function RevenueCalculator() {
     
     for (let i = 1; i <= totalWeeks; i++) {
       setCurrentWeek(i)
-      await new Promise(r => setTimeout(r, 400))
+      await new Promise(r => setTimeout(r, 150))
       
       // Growth: Accelerated week-over-week growth
       // Start small but compound fast

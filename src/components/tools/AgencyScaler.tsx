@@ -27,12 +27,19 @@ export default function AgencyScaler() {
     const currentStats = { leads: 0, calls: 0, clients: 0, revenue: 0 }
 
     for (let i = 1; i <= days; i++) {
-      await new Promise(r => setTimeout(r, 200))
+      await new Promise(r => setTimeout(r, 60))
       
       // Daily Outreach
       const dailyLeads = conversionRates.outreachLimit
       const dailyCalls = Math.floor(dailyLeads * conversionRates.leadToCall)
-      const dailyCloses = Math.random() < (dailyCalls * conversionRates.callToClose) ? 1 : 0
+      
+      // Allow multiple closes per day for agency mode
+      // Random variation +- 20% on close rate
+      const closeRate = conversionRates.callToClose * (0.8 + Math.random() * 0.4)
+      const potentialCloses = Math.floor(dailyCalls * closeRate)
+      
+      // In freelancer mode, cap at 1 per day due to capacity
+      const dailyCloses = mode === 'freelancer' ? (potentialCloses > 0 ? 1 : 0) : potentialCloses
 
       currentStats.leads += dailyLeads
       currentStats.calls += dailyCalls

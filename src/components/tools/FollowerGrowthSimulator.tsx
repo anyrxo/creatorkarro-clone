@@ -42,7 +42,7 @@ export default function FollowerGrowthSimulator() {
     const data = []
     
     // Faster simulation step
-    const stepDelay = 100 
+    const stepDelay = 40 
     
     for (let i = 1; i <= days; i++) {
       // Simulate delay
