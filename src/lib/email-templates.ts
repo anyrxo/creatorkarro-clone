@@ -49,6 +49,90 @@ export const EmailTemplates = {
       </body>
     </html>
   `,
+  
+  affiliateSale: (amount: string, dashboardUrl: string) => `
+    <!DOCTYPE html>
+    <html>
+      <body style="font-family: 'Inter', sans-serif; background-color: #000000; color: #ffffff; padding: 40px 0; margin: 0;">
+        <div style="max-width: 600px; margin: 0 auto; background-color: #111111; border-radius: 16px; overflow: hidden; border: 1px solid #333333;">
+          
+          <!-- Header -->
+          <div style="background: linear-gradient(90deg, #10b981 0%, #059669 100%); padding: 2px;">
+            <div style="background-color: #111111; padding: 30px; text-align: center;">
+              <h1 style="margin: 0; font-size: 28px; color: #10b981; font-weight: 800;">💰 Cha-Ching!</h1>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div style="padding: 40px 30px;">
+            <h2 style="color: #ffffff; font-size: 24px; margin-bottom: 16px; font-weight: 600;">You just made ${amount}.</h2>
+            <p style="color: #a1a1aa; font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
+              Someone just joined the Empire using your link. Your commission has been recorded and will be paid out in the next cycle. Keep up the momentum.
+            </p>
+
+            <!-- CTA Button -->
+            <div style="text-align: center; margin-bottom: 40px;">
+              <a href="${dashboardUrl}" style="background: linear-gradient(90deg, #10b981, #059669); color: #ffffff; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);">
+                View Earnings &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div style="background-color: #0a0a0a; padding: 20px; text-align: center; border-top: 1px solid #222222;">
+            <p style="color: #52525b; font-size: 12px; margin: 0;">
+              © ${new Date().getFullYear()} IImagined AI. All rights reserved.<br>
+              Sent securely via notifications.iimagined.ai
+            </p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `,
+
+  welcome: (dashboardUrl: string) => `
+    <!DOCTYPE html>
+    <html>
+      <body style="font-family: 'Inter', sans-serif; background-color: #000000; color: #ffffff; padding: 40px 0; margin: 0;">
+        <div style="max-width: 600px; margin: 0 auto; background-color: #111111; border-radius: 16px; overflow: hidden; border: 1px solid #333333;">
+          
+          <!-- Header -->
+          <div style="background: linear-gradient(90deg, #7e22ce 0%, #3b82f6 100%); padding: 2px;">
+            <div style="background-color: #111111; padding: 30px; text-align: center;">
+              <h1 style="margin: 0; font-size: 28px; background: linear-gradient(90deg, #a855f7, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; font-weight: 800;">Welcome to the Empire.</h1>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div style="padding: 40px 30px;">
+            <h2 style="color: #ffffff; font-size: 24px; margin-bottom: 16px; font-weight: 600;">Your Access is Confirmed.</h2>
+            <p style="color: #a1a1aa; font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
+              You have successfully unlocked the IImagined ecosystem. The tools, strategies, and blueprints are now at your disposal.
+            </p>
+            
+            <p style="color: #a1a1aa; font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
+              This is not just a course; it's a new operating system for your life. Don't just watch—execute.
+            </p>
+
+            <!-- CTA Button -->
+            <div style="text-align: center; margin-bottom: 40px;">
+              <a href="${dashboardUrl}" style="background: linear-gradient(90deg, #7e22ce, #3b82f6); color: #ffffff; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 20px rgba(126, 34, 206, 0.4);">
+                Enter Dashboard &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div style="background-color: #0a0a0a; padding: 20px; text-align: center; border-top: 1px solid #222222;">
+            <p style="color: #52525b; font-size: 12px; margin: 0;">
+              © ${new Date().getFullYear()} IImagined AI. All rights reserved.<br>
+              Sent securely via notifications.iimagined.ai
+            </p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `,
 
   inactivityNudge: (daysInactive: number, dashboardUrl: string) => `
     <!DOCTYPE html>

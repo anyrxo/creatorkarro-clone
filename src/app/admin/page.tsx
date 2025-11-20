@@ -61,10 +61,6 @@ export default function AdminDashboard() {
         }
     };
 
-    const handleBlastEmail = () => {
-        alert('Email Blast System coming soon! This will integrate with Resend to message all 100+ active students.');
-    };
-
     if (!isLoaded || !user || isLoading) {
         return (
             <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
@@ -152,8 +148,8 @@ export default function AdminDashboard() {
                                 Quick Actions
                             </h2>
                             <div className="grid grid-cols-1 gap-4">
-                                <button 
-                                    onClick={handleBlastEmail}
+                                <Link 
+                                    href="/admin/broadcast"
                                     className="w-full p-4 bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 hover:border-blue-500/50 rounded-xl flex items-center gap-4 transition-all group text-left"
                                 >
                                     <div className="p-3 bg-blue-500/20 rounded-lg group-hover:bg-blue-500/30 transition-colors">
@@ -163,7 +159,7 @@ export default function AdminDashboard() {
                                         <h3 className="font-bold text-white">Blast Email</h3>
                                         <p className="text-xs text-zinc-400">Send update to all students</p>
                                     </div>
-                                </button>
+                                </Link>
 
                                 <button 
                                     onClick={handleGenerateKeys}

@@ -1,19 +1,12 @@
 'use server'
 
-import { supabase } from '@/lib/supabase'
 import { auth, currentUser } from '@clerk/nextjs/server'
-import { redirect } from 'next/navigation'
 import { createClient } from '@supabase/supabase-js'
+import { clerkClient } from '@clerk/nextjs/server'
+import { Resend } from 'resend'
+import { EmailTemplates } from '@/lib/email-templates'
 
-// We need a service role client to execute the secure function if RLS blocks us, 
-// BUT the function is `security definer` so it runs with owner privileges. 
-// However, we need a way to CALL it. 
-// Standard supabase client uses anon key. 
-// We should use the authenticated user's client or a service role client.
-// Since the user doesn't have the key yet, they can't "see" it to update it via standard RLS update.
-// So we MUST use a Service Role client or the Postgres Function approach.
-// The Postgres function `claim_license_key` is `security definer`, so it bypasses RLS.
-// But we need to call it.
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function redeemLicenseKey(formData: FormData) {
     const key = formData.get('key') as string
@@ -46,15 +39,25 @@ export async function redeemLicenseKey(formData: FormData) {
     }
 
     if (data === true) {
-        // 2. Credit the Affiliate (if applicable)
-        // We get the referrer ID from the cookie (client-side) passed via the form or we can try to read cookies here
-        // Reading cookies in Server Action:
+        const userEmail = user.emailAddresses[0]?.emailAddress
+        const dashboardUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://iimagined.ai/learning'
+
+        // 2. Send Welcome Email to the Student
+        if (userEmail) {
+            await resend.emails.send({
+                from: 'IImagined Access <access@notifications.iimagined.ai>',
+                to: [userEmail],
+                subject: 'Welcome to the Empire | IImagined',
+                html: EmailTemplates.welcome(dashboardUrl)
+            })
+        }
+
+        // 3. Credit the Affiliate (if applicable)
         const { cookies } = await import('next/headers')
         const cookieStore = await cookies()
         const referrerId = cookieStore.get('iimagined_ref')?.value
 
         if (referrerId && referrerId !== user.id) {
-            // Check if they are referring themselves (anti-fraud)
             try {
                 // Insert referral record
                 await supabaseAdmin.from('referrals').insert({
@@ -64,8 +67,24 @@ export async function redeemLicenseKey(formData: FormData) {
                     amount: 39.60 // 40% of $99
                 })
                 console.log(`Affiliate credited: ${referrerId} for user ${user.id}`)
+
+                // 4. Send Affiliate Notification Email
+                // We need to fetch the referrer's email using Clerk
+                const client = await clerkClient()
+                const referrer = await client.users.getUser(referrerId)
+                const referrerEmail = referrer.emailAddresses[0]?.emailAddress
+
+                if (referrerEmail) {
+                    await resend.emails.send({
+                        from: 'IImagined Access <access@notifications.iimagined.ai>',
+                        to: [referrerEmail],
+                        subject: '💰 You made a sale! | IImagined Partner',
+                        html: EmailTemplates.affiliateSale('$39.60', `${process.env.NEXT_PUBLIC_SITE_URL}/affiliate`)
+                    })
+                }
+
             } catch (affiliateError) {
-                console.error('Affiliate credit failed:', affiliateError)
+                console.error('Affiliate logic failed:', affiliateError)
                 // Don't block the user's access just because affiliate failed
             }
         }
@@ -75,4 +94,3 @@ export async function redeemLicenseKey(formData: FormData) {
         return { error: 'Invalid or already claimed license key.' }
     }
 }
-
