@@ -18,6 +18,7 @@ import SkipToContent from "@/components/SkipToContent";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { WebVitals } from "./web-vitals";
 import { AuthProvider } from "@/components/auth/AuthProvider";
+import AffiliateTracker from "@/components/AffiliateTracker"; // Import tracking component
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -130,6 +131,7 @@ export default function RootLayout({
       </head>
       <body className={montserrat.className}>
         <AuthProvider>
+          <AffiliateTracker /> {/* Track referrals on every page load */}
           <SkipToContent />
 
           {/* ===== ANALYTICS CONFIGURATION ===== */}

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useUser } from '@clerk/nextjs'
 import { useState, useEffect } from 'react'
-import { Menu, X, ChevronDown, User, Shield, Flame } from 'lucide-react'
+import { Menu, X, ChevronDown, User, Shield, Flame, DollarSign } from 'lucide-react' // Added DollarSign
 import * as analytics from '@/lib/analytics'
 import { getUserStats } from '@/app/actions/gamification'
 
@@ -117,6 +117,17 @@ export default function Navigation() {
                   </div>
                 ))}
                 
+                {/* Affiliate Link - Desktop */}
+                {isSignedIn && (
+                  <Link
+                    href="/affiliate"
+                    className="px-4 py-2 text-sm font-medium text-green-400 hover:text-green-300 hover:bg-green-500/10 transition-all duration-300 rounded-full flex items-center gap-2"
+                  >
+                    <DollarSign size={14} />
+                    Partner
+                  </Link>
+                )}
+
                 {/* Admin Link - Desktop */}
                 {isAdmin && (
                   <Link
@@ -214,6 +225,18 @@ export default function Navigation() {
                 >
                   <Shield size={16} />
                   Admin Dashboard
+                </Link>
+             )}
+
+             {/* Affiliate Link - Mobile */}
+             {isSignedIn && (
+                <Link
+                  href="/affiliate"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-4 py-3 text-green-400 bg-green-500/10 rounded-lg font-medium flex items-center gap-2 mb-4"
+                >
+                  <DollarSign size={16} />
+                  Partner Program
                 </Link>
              )}
 
