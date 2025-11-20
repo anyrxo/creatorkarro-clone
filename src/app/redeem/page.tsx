@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Key, Lock, ArrowRight, Loader2, CheckCircle, XCircle, ExternalLink, DollarSign, Shield } from 'lucide-react'
+import { Key, Lock, ArrowRight, Loader2, CheckCircle, XCircle, ExternalLink, DollarSign, Shield, Mail, MessageCircle } from 'lucide-react'
 import { redeemLicenseKey } from '@/app/actions/redeem'
 import { useRouter } from 'next/navigation'
 import AuroraBackground from '@/components/learning/AuroraBackground'
@@ -131,7 +131,7 @@ export default function RedeemPage() {
                         </div>
                         <div>
                             <h2 className="text-xl font-bold text-white">Enter Access Key</h2>
-                            <p className="text-sm text-zinc-400">Have a license? Redeem it here.</p>
+                            <p className="text-sm text-zinc-400">Check your email for your license key.</p>
                         </div>
                     </div>
 
@@ -184,16 +184,30 @@ export default function RedeemPage() {
                         </button>
                     </form>
 
-                    <div className="mt-8 pt-8 border-t border-white/5 text-center">
-                        <p className="text-zinc-500 text-sm mb-4">Don't have a key yet?</p>
-                        <a 
-                            href="https://whop.com/iimagined/all-access-reimagined/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium transition-colors hover:underline"
-                        >
-                            Purchase All Access Pass <ExternalLink className="w-4 h-4" />
-                        </a>
+                    <div className="mt-8 pt-8 border-t border-white/5 space-y-6">
+                        <div className="text-center">
+                            <p className="text-zinc-500 text-sm mb-4">Don't have a key yet?</p>
+                            <a 
+                                href="https://whop.com/iimagined/all-access-reimagined/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium transition-colors hover:underline"
+                            >
+                                Purchase All Access Pass <ExternalLink className="w-4 h-4" />
+                            </a>
+                        </div>
+
+                        <div className="bg-zinc-900/50 rounded-xl p-4 text-center">
+                            <p className="text-xs text-zinc-500 mb-3">Having trouble? Contact support:</p>
+                            <div className="flex justify-center gap-4">
+                                <a href="mailto:support@iimagined.ai" className="p-2 bg-white/5 hover:bg-white/10 rounded-lg transition-colors" title="Email Support">
+                                    <Mail className="w-4 h-4 text-zinc-300" />
+                                </a>
+                                <a href="https://discord.gg/ychmBgGCPa" target="_blank" rel="noopener noreferrer" className="p-2 bg-[#5865F2]/20 hover:bg-[#5865F2]/30 rounded-lg transition-colors" title="Discord Support">
+                                    <MessageCircle className="w-4 h-4 text-[#5865F2]" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </motion.div>
             </div>
