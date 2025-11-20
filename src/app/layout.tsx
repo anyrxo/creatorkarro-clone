@@ -19,6 +19,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import { WebVitals } from "./web-vitals";
 import { AuthProvider } from "@/components/auth/AuthProvider";
 import AffiliateTracker from "@/components/AffiliateTracker"; // Import tracking component
+import { Suspense } from "react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -131,7 +132,9 @@ export default function RootLayout({
       </head>
       <body className={montserrat.className}>
         <AuthProvider>
-          <AffiliateTracker /> {/* Track referrals on every page load */}
+          <Suspense fallback={null}>
+            <AffiliateTracker /> {/* Track referrals on every page load */}
+          </Suspense>
           <SkipToContent />
 
           {/* ===== ANALYTICS CONFIGURATION ===== */}
@@ -184,6 +187,8 @@ export default function RootLayout({
           <Script
             strategy="afterInteractive"
             src="https://www.googletagmanager.com/gtag/js?id=G-KXTFWR75V4"
+            width="0" 
+            height="0"
           />
           <Script
             id="google-analytics-direct"
