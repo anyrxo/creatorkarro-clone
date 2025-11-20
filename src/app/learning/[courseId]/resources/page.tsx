@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
     Calculator,
     Sparkles,
@@ -11,7 +11,10 @@ import {
     ArrowLeft,
     Rocket,
     Target,
-    DollarSign
+    DollarSign,
+    X,
+    Copy,
+    Check
 } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -21,6 +24,7 @@ import AIInfluencerCalculator from '@/components/learning/tools/AIInfluencerCalc
 import AIPromptLibrary from '@/components/learning/tools/AIPromptLibrary';
 import DigitalProductCalculator from '@/components/learning/tools/DigitalProductCalculator';
 import AgencyPricingCalculator from '@/components/learning/tools/AgencyPricingCalculator';
+import ReactMarkdown from 'react-markdown';
 
 const courseResources: Record<string, any> = {
     'instagram-ignited': {
@@ -31,11 +35,48 @@ const courseResources: Record<string, any> = {
             { id: 'hook-generator', name: 'Viral Hook Generator', icon: Sparkles, component: HookGenerator },
         ],
         downloads: [
-            { name: 'Viral Hook Templates (PDF)', size: '2.4 MB', type: 'pdf', url: '#' },
-            { name: 'Content Calendar Template', size: '156 KB', type: 'xlsx', url: '#' },
-            { name: 'Engagement Tracker Spreadsheet', size: '89 KB', type: 'xlsx', url: '#' },
-            { name: 'Reel Script Templates', size: '1.2 MB', type: 'pdf', url: '#' },
-            { name: 'Profile Optimization Checklist', size: '245 KB', type: 'pdf', url: '#' },
+            {
+                name: 'Viral Hook Templates',
+                type: 'guide',
+                size: 'View',
+                content: `# Viral Hook Templates
+## The "Negative" Hook
+1. "Stop doing [Common Mistake] if you want [Desirable Outcome]."
+2. "Why your [Niche Activity] isn't working (and how to fix it)."
+3. "The #1 reason you're failing at [Goal]."
+
+## The "Secret" Hook
+1. "The [Niche] hack nobody is talking about."
+2. "I wish I knew this before I started [Activity]."
+3. "Gatekeeping this [Tool/Strategy] ends today."
+
+## The "Listicle" Hook
+1. "5 tools that will save you 10 hours a week."
+2. "3 signs you're ready to [Next Level]."
+3. "Top 10 resources for [Niche] in 2024."
+`
+            },
+            {
+                name: 'Content Calendar Template',
+                type: 'template',
+                size: 'View',
+                content: `# Content Calendar Strategy
+## Monday: Educational / How-To
+- **Goal**: Establish authority.
+- **Format**: Carousel or Reel.
+- **Topic**: Solve a specific problem.
+
+## Wednesday: Personal / Behind the Scenes
+- **Goal**: Build connection.
+- **Format**: Photo dump or Story.
+- **Topic**: Day in the life, struggles, wins.
+
+## Friday: Promotional / Soft Sell
+- **Goal**: Drive traffic/sales.
+- **Format**: Reel + CTA.
+- **Topic**: Show results, testimonials, or product demo.
+`
+            },
         ],
     },
     'ai-influencers': {
@@ -46,10 +87,21 @@ const courseResources: Record<string, any> = {
             { id: 'prompt-library', name: 'AI Prompt Library (500+)', icon: Sparkles, component: AIPromptLibrary },
         ],
         downloads: [
-            { name: 'Flux Prompt Library (500+ Prompts)', size: '3.2 MB', type: 'pdf', url: '#' },
-            { name: 'LoRA Training Guide', size: '4.1 MB', type: 'pdf', url: '#' },
-            { name: 'Content Posting Schedule Template', size: '92 KB', type: 'xlsx', url: '#' },
-            { name: 'Platform Comparison Chart', size: '567 KB', type: 'pdf', url: '#' },
+            {
+                name: 'LoRA Training Guide',
+                type: 'guide',
+                size: 'View',
+                content: `# LoRA Training Checklist
+1. **Gather Dataset**: 15-20 high-quality images of the subject.
+2. **Pre-process**: Crop to 512x512 or 768x768.
+3. **Captioning**: Use BLIP or manual captioning (trigger word + description).
+4. **Training Settings**:
+   - Steps: 2000-3000
+   - Learning Rate: 1e-4
+   - Batch Size: 1 or 2
+5. **Testing**: Generate images using the trigger word at different weights (0.6 - 1.0).
+`
+            },
         ],
     },
     'digital-products': {
@@ -59,10 +111,32 @@ const courseResources: Record<string, any> = {
             { id: 'pricing-calc', name: 'Pricing Calculator', icon: Calculator, component: DigitalProductCalculator },
         ],
         downloads: [
-            { name: 'Product Validation Worksheet', size: '890 KB', type: 'pdf', url: '#' },
-            { name: '5-Day Launch Email Sequence', size: '1.8 MB', type: 'pdf', url: '#' },
-            { name: 'Sales Page Template (Notion)', size: '234 KB', type: 'link', url: '#' },
-            { name: 'Customer Onboarding Flow', size: '1.1 MB', type: 'pdf', url: '#' },
+            {
+                name: '5-Day Launch Email Sequence',
+                type: 'template',
+                size: 'View',
+                content: `# 5-Day Launch Sequence
+## Day 1: The Announcement
+- **Subject**: It's finally here...
+- **Body**: Announce the product, explain the "why", link to sales page.
+
+## Day 2: The Logic (Features)
+- **Subject**: What's inside [Product Name]?
+- **Body**: Breakdown modules/features, show value.
+
+## Day 3: The Emotion (Benefits)
+- **Subject**: Imagine if you could [Result]...
+- **Body**: Paint a picture of the after-state. Testimonials.
+
+## Day 4: The Logic (Objections)
+- **Subject**: Is [Product Name] right for you?
+- **Body**: FAQ, money-back guarantee, handle objections.
+
+## Day 5: The Scarcity (Closing)
+- **Subject**: Doors closing in 4 hours!
+- **Body**: Last chance, bonus disappearing, urgency.
+`
+            },
         ],
     },
     'ai-automations': {
@@ -72,10 +146,25 @@ const courseResources: Record<string, any> = {
             { id: 'agency-calc', name: 'Agency Pricing Calculator', icon: DollarSign, component: AgencyPricingCalculator },
         ],
         downloads: [
-            { name: 'Cold Outreach Templates (50+)', size: '2.3 MB', type: 'pdf', url: '#' },
-            { name: 'Service Delivery SOPs', size: '3.4 MB', type: 'pdf', url: '#' },
-            { name: 'Retainer Contract Template', size: '456 KB', type: 'doc', url: '#' },
-            { name: 'N8N Workflow Templates', size: '892 KB', type: 'json', url: '#' },
+            {
+                name: 'Cold Outreach Templates',
+                type: 'template',
+                size: 'View',
+                content: `# Cold Email Template
+**Subject**: Quick question about [Company Name]
+
+Hi [Name],
+
+I noticed you're doing great work with [Specific Observation].
+
+I recently helped a similar agency save 20 hours/week by automating their [Specific Process] using AI.
+
+Would you be open to a 5-minute video showing how we did it? No pitch, just value.
+
+Best,
+[Your Name]
+`
+            },
         ],
     },
 };
@@ -85,6 +174,7 @@ export default function CourseResourcesPage() {
     const courseId = params.courseId as string;
     const resources = courseResources[courseId];
     const [activeTool, setActiveTool] = useState<string | null>(null);
+    const [viewResource, setViewResource] = useState<any | null>(null);
 
     if (!resources) {
         return <div className="p-8 text-white">Resources not found</div>;
@@ -95,7 +185,58 @@ export default function CourseResourcesPage() {
         : null;
 
     return (
-        <div className="p-6 md:p-10 max-w-7xl mx-auto">
+        <div className="p-6 md:p-10 max-w-7xl mx-auto relative">
+            {/* Resource Viewer Modal */}
+            <AnimatePresence>
+                {viewResource && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+                        onClick={() => setViewResource(null)}
+                    >
+                        <motion.div
+                            initial={{ scale: 0.95, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.95, opacity: 0 }}
+                            onClick={(e) => e.stopPropagation()}
+                            className="bg-[#0a0a0a] border border-white/10 rounded-2xl w-full max-w-3xl max-h-[80vh] overflow-hidden flex flex-col shadow-2xl"
+                        >
+                            <div className="p-6 border-b border-white/10 flex items-center justify-between bg-zinc-900/50">
+                                <div className="flex items-center gap-3">
+                                    <div className="p-2 bg-purple-500/10 rounded-lg">
+                                        <FileText className="w-5 h-5 text-purple-400" />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white">{viewResource.name}</h3>
+                                </div>
+                                <button
+                                    onClick={() => setViewResource(null)}
+                                    className="p-2 hover:bg-white/10 rounded-lg transition-colors"
+                                >
+                                    <X className="w-5 h-5 text-zinc-400" />
+                                </button>
+                            </div>
+                            <div className="p-8 overflow-y-auto prose prose-invert max-w-none">
+                                <ReactMarkdown>{viewResource.content}</ReactMarkdown>
+                            </div>
+                            <div className="p-4 border-t border-white/10 bg-zinc-900/50 flex justify-end">
+                                <button
+                                    onClick={() => {
+                                        navigator.clipboard.writeText(viewResource.content);
+                                        // Optional: Show toast
+                                    }}
+                                    className="flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg font-bold hover:bg-zinc-200 transition-colors"
+                                >
+                                    <Copy className="w-4 h-4" />
+                                    Copy Content
+                                </button>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
             {/* Back Button */}
             <Link
                 href={`/learning/${courseId}`}
@@ -176,26 +317,26 @@ export default function CourseResourcesPage() {
                 </motion.div>
             )}
 
-            {/* Downloadable Resources */}
+            {/* Viewable Resources */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
             >
                 <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                    <Download className="w-6 h-6 text-green-400" />
-                    Downloadable Resources
+                    <FileText className="w-6 h-6 text-blue-400" />
+                    Guides & Templates
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-4">
                     {resources.downloads.map((download: any, index: number) => (
-                        <motion.a
+                        <motion.button
                             key={index}
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.3 + (index * 0.05) }}
-                            href={download.url}
-                            className="group flex items-center justify-between p-6 bg-zinc-900/50 hover:bg-zinc-900/70 border border-white/5 hover:border-purple-500/30 rounded-xl transition-all"
+                            onClick={() => setViewResource(download)}
+                            className="group flex items-center justify-between p-6 bg-zinc-900/50 hover:bg-zinc-900/70 border border-white/5 hover:border-purple-500/30 rounded-xl transition-all text-left w-full"
                         >
                             <div className="flex items-center gap-4">
                                 <div className="p-3 bg-purple-500/10 rounded-lg group-hover:scale-110 transition-transform">
@@ -212,8 +353,10 @@ export default function CourseResourcesPage() {
                                     </div>
                                 </div>
                             </div>
-                            <Download className="w-5 h-5 text-zinc-600 group-hover:text-purple-400 transition-colors" />
-                        </motion.a>
+                            <div className="p-2 bg-white/5 rounded-lg group-hover:bg-white/10 transition-colors">
+                                <ArrowLeft className="w-4 h-4 text-zinc-400 rotate-180" />
+                            </div>
+                        </motion.button>
                     ))}
                 </div>
             </motion.div>

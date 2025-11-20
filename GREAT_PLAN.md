@@ -114,30 +114,6 @@ src/
     3.  **Service 1: AI Chatbots**: Building & Selling Support Bots.
     4.  **Service 2: Workflow Automation**: Internal Ops for Businesses.
     5.  **Client Acquisition**: Cold Outreach & Inbound Systems.
-    6.  **Service Delivery**: Templates & Retainer Contracts ($2k-$10k/mo).
-
----
-
-## 4. Design & Interaction Specs
-
-### The "Passcode Gate"
-*   **Visual**: A single, glowing input field in the center of a void.
-*   **Interaction**:
-    *   *Typing*: Numbers glow as typed.
-    *   *Success*: The screen "shatters" or dissolves into the Dashboard.
-    *   *Fail*: A subtle "glitch" shake effect.
-
-### The Dashboard
-*   **Layout**: A 2x2 Grid of "Course Cards".
-*   **Card Design**:
-    *   Glassmorphism background.
-    *   Neon border glow on hover (matching course color).
-    *   "Tilt" effect (3D perspective) on mouse move.
-    *   Progress bar at the bottom of each card.
-
-### The Learning Interface (Inner Page)
-*   **Sidebar (Left)**:
-    *   Accordion list of Modules.
     *   Checkmarks for completed lessons.
     *   "Resources" tab for downloading PDFs/Templates.
 *   **Main Stage (Right)**:

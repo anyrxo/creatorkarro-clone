@@ -2,14 +2,22 @@
 
 import { motion } from 'framer-motion'
 import CourseCard from '@/components/learning/CourseCard'
-import { Instagram, Bot, Package, Workflow, Sparkles } from 'lucide-react'
+import { Instagram, Bot, Package, Workflow, Sparkles, Trophy, Flame, Target, Clock } from 'lucide-react'
 import { useCourse } from '@/context/CourseContext'
+import { useUser } from '@clerk/nextjs'
 import { useEffect, useState } from 'react'
 
 export default function LearningDashboard() {
-    const { getCourseProgress } = useCourse()
-    // We need to force a re-render or ensure progress is updated when mounting
-    // The context handles this.
+    const { getCourseProgress, completedLessons } = useCourse()
+    const { user } = useUser()
+    const [greeting, setGreeting] = useState('')
+
+    useEffect(() => {
+        const hour = new Date().getHours()
+        if (hour < 12) setGreeting('Good morning')
+        else if (hour < 18) setGreeting('Good afternoon')
+        else setGreeting('Good evening')
+    }, [])
 
     const courses = [
         {
@@ -50,31 +58,60 @@ export default function LearningDashboard() {
         }
     ]
 
+    const totalLessonsCompleted = completedLessons.length
+    // Mock streak for now
+    const currentStreak = totalLessonsCompleted > 0 ? 3 : 0
+
     return (
-        <div className="min-h-screen p-8 md:p-12 lg:p-16 max-w-7xl mx-auto">
-            {/* Header */}
-            <div className="mb-16 relative">
+        <div className="min-h-screen p-6 md:p-12 lg:p-16 max-w-7xl mx-auto">
+            {/* Header Section */}
+            <div className="mb-12 relative">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
+                    className="flex flex-col md:flex-row md:items-end justify-between gap-6"
                 >
-                    <div className="flex items-center gap-3 mb-4">
-                        <div className="h-px w-12 bg-purple-500/50" />
-                        <span className="text-purple-400 text-sm font-bold tracking-widest uppercase">
-                            Command Center
-                        </span>
+                    <div>
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="h-px w-12 bg-purple-500/50" />
+                            <span className="text-purple-400 text-sm font-bold tracking-widest uppercase">
+                                Command Center
+                            </span>
+                        </div>
+                        <h1 className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tight">
+                            {greeting}, <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">{user?.firstName || 'Creator'}</span>
+                        </h1>
+                        <p className="text-zinc-400 max-w-xl">
+                            Your empire is waiting. Pick up where you left off or start a new protocol.
+                        </p>
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight">
-                        Your Empire <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Awaits</span>
-                    </h1>
-                    <p className="text-xl text-zinc-400 max-w-2xl">
-                        Select a protocol to begin. All systems are online.
-                    </p>
+
+                    {/* Stats Cards */}
+                    <div className="flex gap-4">
+                        <div className="bg-zinc-900/50 border border-white/5 rounded-2xl p-4 flex items-center gap-4 min-w-[160px]">
+                            <div className="p-3 bg-orange-500/10 rounded-xl">
+                                <Flame className="w-6 h-6 text-orange-500" />
+                            </div>
+                            <div>
+                                <div className="text-2xl font-bold text-white">{currentStreak}</div>
+                                <div className="text-xs text-zinc-500 uppercase font-bold tracking-wider">Day Streak</div>
+                            </div>
+                        </div>
+                        <div className="bg-zinc-900/50 border border-white/5 rounded-2xl p-4 flex items-center gap-4 min-w-[160px]">
+                            <div className="p-3 bg-purple-500/10 rounded-xl">
+                                <Trophy className="w-6 h-6 text-purple-500" />
+                            </div>
+                            <div>
+                                <div className="text-2xl font-bold text-white">{totalLessonsCompleted}</div>
+                                <div className="text-xs text-zinc-500 uppercase font-bold tracking-wider">Lessons Done</div>
+                            </div>
+                        </div>
+                    </div>
                 </motion.div>
 
                 {/* Decorative Background Elements */}
-                <div className="absolute top-0 right-0 -z-10 opacity-20">
+                <div className="absolute top-0 right-0 -z-10 opacity-20 pointer-events-none">
                     <Sparkles className="w-64 h-64 text-purple-500 blur-3xl" />
                 </div>
             </div>
