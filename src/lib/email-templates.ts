@@ -50,7 +50,9 @@ export const EmailTemplates = {
     </html>
   `,
   
-  affiliateSale: (amount: string, dashboardUrl: string) => `
+  affiliateSale: (amount: number | string, dashboardUrl: string) => {
+    const formattedAmount = typeof amount === 'number' ? `$${amount.toFixed(2)}` : amount;
+    return `
     <!DOCTYPE html>
     <html>
       <body style="font-family: 'Inter', sans-serif; background-color: #000000; color: #ffffff; padding: 40px 0; margin: 0;">
@@ -65,7 +67,7 @@ export const EmailTemplates = {
 
           <!-- Content -->
           <div style="padding: 40px 30px;">
-            <h2 style="color: #ffffff; font-size: 24px; margin-bottom: 16px; font-weight: 600;">You just made ${amount}.</h2>
+            <h2 style="color: #ffffff; font-size: 24px; margin-bottom: 16px; font-weight: 600;">You just made ${formattedAmount}.</h2>
             <p style="color: #a1a1aa; font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
               Someone just joined the Empire using your link. Your commission has been recorded and will be paid out in the next cycle. Keep up the momentum.
             </p>
@@ -88,9 +90,9 @@ export const EmailTemplates = {
         </div>
       </body>
     </html>
-  `,
+  `},
 
-  welcome: (dashboardUrl: string) => `
+  welcome: (name: string, dashboardUrl: string) => `
     <!DOCTYPE html>
     <html>
       <body style="font-family: 'Inter', sans-serif; background-color: #000000; color: #ffffff; padding: 40px 0; margin: 0;">
@@ -105,7 +107,7 @@ export const EmailTemplates = {
 
           <!-- Content -->
           <div style="padding: 40px 30px;">
-            <h2 style="color: #ffffff; font-size: 24px; margin-bottom: 16px; font-weight: 600;">Your Access is Confirmed.</h2>
+            <h2 style="color: #ffffff; font-size: 24px; margin-bottom: 16px; font-weight: 600;">Hello ${name}.</h2>
             <p style="color: #a1a1aa; font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
               You have successfully unlocked the IImagined ecosystem. The tools, strategies, and blueprints are now at your disposal.
             </p>
