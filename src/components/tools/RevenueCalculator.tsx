@@ -18,7 +18,7 @@ export default function RevenueCalculator() {
   const nicheMultipliers = {
     'Lifestyle': 1.0, // Baseline
     'Tech': 1.8, // Higher CPM/Affiliate
-    'Adult': 3.5 // Fanvue/OF model - High but realistic
+    'Adult': 12.0 // Fanvue/OF model - High RPM but realistic cap
   }
 
   const runSimulation = async () => {
@@ -30,8 +30,8 @@ export default function RevenueCalculator() {
     setWeeklyRevenue(0)
 
     let currentRev = 0
-    let currentFollowersSim = 500 // Realistic starting point for a "new" but active account
-    const growthRate = 0.15 // 15% week-over-week (Aggressive but possible with viral hits)
+    let currentFollowersSim = 500 // Realistic starting point
+    const growthRate = 0.20 // 20% week-over-week
     
     const totalWeeks = 12
     
@@ -39,70 +39,83 @@ export default function RevenueCalculator() {
       setCurrentWeek(i)
       await new Promise(r => setTimeout(r, 150))
       
-      // Growth: Accelerated week-over-week growth
-      // Start small but compound fast
+      // Growth: Steady compounding
       currentFollowersSim = Math.round(currentFollowersSim * (1 + growthRate))
 
       // Revenue Streams Logic
-      // Based on typical creator economy metrics (RPM, conversion rates)
       let streamRev = 0
       const newStreams: string[] = []
       
-      // 1. Affiliate (Unlocks at 1k - often realistic start)
+      // 1. Affiliate (Unlocks early)
       if (currentFollowersSim > 1000) {
         if (!unlockedStreams.includes('Affiliate')) newStreams.push('Affiliate')
-        // $10-$50/week initial affiliate income is common for micro-influencers
-        const baseAffiliate = (currentFollowersSim / 1000) * 15 
+        const baseAffiliate = (currentFollowersSim / 1000) * 3 // Tuned down
         streamRev += baseAffiliate * nicheMultipliers[niche]
       }
 
-      // 2. Digital Products / Fanvue (Unlocks at 3k)
-      if (currentFollowersSim > 3000) {
+      // 2. Digital Products / Fanvue (Unlocks at 1k)
+      if (currentFollowersSim > 1000) { 
+        const isAdult = niche === 'Adult'
         if (!unlockedStreams.includes('Digital Products')) newStreams.push('Digital Products')
         
-        // 1-3% conversion rate on low ticket items ($27-$47) or subs ($10-$20)
-        // Weekly revenue estimate
-        const activeFollowers = currentFollowersSim * 0.2 // 20% active
-        const buyers = activeFollowers * 0.01 // 1% of active buy
-        const ticketPrice = niche === 'Adult' ? 15 : 37 // Monthly sub vs One-time
+        // Conversion rates - Realistic Funnel
+        const activeRate = isAdult ? 0.25 : 0.15 
+        const conversionRate = isAdult ? 0.03 : 0.015 
+        
+        const activeFollowers = currentFollowersSim * activeRate
+        const buyers = activeFollowers * conversionRate
+        
+        // Pricing
+        const ticketPrice = isAdult ? 25 : 47 // Lower front-end offer
         
         let productRev = buyers * ticketPrice
         
-        if (niche === 'Adult') {
-           // Adult Niche Special: PPVs & Bundles
-           // Top 10% of buyers spend 5x-10x more (Whales)
-           const whales = buyers * 0.1
-           const whaleSpend = 150 // $150 in PPVs/Bundles per whale per week
+        if (isAdult) {
+           // Adult Niche: Whales & Bundles
+           // Whales (top 10% of buyers)
+           const whales = buyers * 0.10 
+           const whaleSpend = 200 // Realistic weekly spend for a whale
            productRev += whales * whaleSpend
+           
+           // "Sexting" / Chat upsells
+           const chatters = activeFollowers * 0.05
+           productRev += chatters * 5 
            
            // Random PPV Blast event
            if (Math.random() > 0.7) {
-              productRev += 500 // $500 PPV blast
-              if (currentFollowersSim > 10000) productRev += 2000 // $2k blast for larger following
+              const blastRev = (currentFollowersSim * 0.02) * 15 
+              productRev += blastRev
+              setLogs(prev => [`🔥 PPV Blast! +$${Math.round(blastRev)}`, ...prev].slice(0, 3))
            }
         }
         
         streamRev += productRev
       }
 
-      // 3. Brand Deals (Unlocks at 10k - Micro influencer status)
-      if (currentFollowersSim > 10000) {
+      // 3. Brand Deals
+      if (currentFollowersSim > 10000 && niche !== 'Adult') {
          if (!unlockedStreams.includes('Brand Deals')) newStreams.push('Brand Deals')
-         // $100-$500 per deal at this size. Maybe 1 deal per week?
-         const dealValue = 250 * nicheMultipliers[niche]
+         const dealValue = 300 * nicheMultipliers[niche]
          streamRev += dealValue
       }
 
-      // Random Boost (Viral Video leads to sales spike)
-      if (Math.random() > 0.85) {
-        streamRev *= 1.8
-        const msg = niche === 'Adult' ? "🔥 Viral! Whale dropped $500 tip." : "🚀 Viral Reel! Sales spike."
+      // Random Viral Boost (Capped variance)
+      if (Math.random() > 0.9) {
+        const boostMultiplier = niche === 'Adult' ? 1.3 : 1.2
+        streamRev *= boostMultiplier
+        const msg = niche === 'Adult' ? "🚀 Viral! New Subs." : "🔥 Reel hit 50k views!"
         setLogs(prev => [msg, ...prev].slice(0, 3))
       }
 
       if (newStreams.length > 0) {
         setUnlockedStreams(prev => [...prev, ...newStreams])
         newStreams.forEach(s => setLogs(prev => [`🔓 Unlocked: ${s}`, ...prev].slice(0, 3)))
+      }
+
+      // Soft Cap logic: Diminishing returns after $12k/week (~$48k/mo)
+      // Prevents "unrealistic" runaway numbers
+      if (streamRev > 12000) {
+        streamRev = 12000 + (streamRev - 12000) * 0.15
       }
 
       currentRev = Math.round(streamRev)

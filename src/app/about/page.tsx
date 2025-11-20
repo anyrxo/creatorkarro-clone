@@ -74,7 +74,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {[
               { value: 4000, suffix: '+', label: 'Students' },
-              { value: 127, suffix: 'K+', label: 'Community Members' },
+              { value: 8500, suffix: '+', label: 'Community Members' },
               { value: 500, suffix: 'K+', label: 'Instagram Followers' },
               { value: 95, suffix: '%', label: 'Success Rate' }
             ].map((stat, index) => (

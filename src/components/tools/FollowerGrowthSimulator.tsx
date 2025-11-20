@@ -20,13 +20,14 @@ export default function FollowerGrowthSimulator() {
   // Pre-calculate curve for "Old Way" baseline (slower, linear-ish growth)
   // Realistic struggle: 100 followers -> 150 in 30 days without strategy
   const manualData = Array.from({ length: 30 }, (_, i) => {
-    return Math.round(100 + (i * 1.5))
+    // Base 100 -> ~1000 over 30 days (8% daily) - "Normal person without strategy"
+    return Math.round(100 * Math.pow(1.08, i))
   })
 
   const qualityMultipliers: Record<string, number> = {
-    'Average': 1.02, // 2% daily organic
-    'Good': 1.05,    // 5% daily organic
-    'Ignited': 1.12  // 12% daily organic (viral strategy)
+    'Average': 1.08, // 8% daily organic (Normal Growth ~1k)
+    'Good': 1.15,    // 15% daily organic (Solid Strategy ~7.5k)
+    'Ignited': 1.20  // 20% daily organic (Aggressive Viral Strategy ~25k)
   }
 
   const runSimulation = async () => {
@@ -50,13 +51,13 @@ export default function FollowerGrowthSimulator() {
 
       // Realistic Viral Growth Model
       // Base growth is tied to quality + consistency (effort)
-      const effortMultiplier = 1 + (dailyEffort * 0.02) // Max 1.16x bonus
+      const effortMultiplier = 1 + (dailyEffort * 0.05) // Max 1.40x bonus
       const growthRate = qualityMultipliers[contentQuality] * effortMultiplier
       
       let dailyGrowth = current * (growthRate - 1)
       
       // Ensure minimum growth to prevent stagnation in UI
-      if (dailyGrowth < 1) dailyGrowth = 1
+      if (dailyGrowth < 5) dailyGrowth = 5
 
       let eventMsg = null
       let eventType: 'good' | 'neutral' | 'bad' = 'neutral'
@@ -65,35 +66,41 @@ export default function FollowerGrowthSimulator() {
       const rand = Math.random()
       
       // Viral probability increases with quality
-      const viralThreshold = contentQuality === 'Ignited' ? 0.7 : contentQuality === 'Good' ? 0.85 : 0.95
+      const viralThreshold = contentQuality === 'Ignited' ? 0.7 : contentQuality === 'Good' ? 0.90 : 0.98
 
       if (rand > viralThreshold) {
-        // Viral spike: 300-2000 new followers (realistic mini-viral reel)
-        // Capped at reasonable limits relative to current size
-        const spikeBase = Math.max(300, current * 0.5)
+        // Viral spike: Scaled to realistic viral hits relative to size
+        const spikeBase = contentQuality === 'Ignited' ? Math.max(500, current * 0.5) : Math.max(100, current * 0.2)
         const spike = Math.floor(Math.random() * spikeBase)
         
         dailyGrowth += spike
         
-        if (spike > 1000) eventMsg = "🚀 Reel hit 100k views!"
-        else if (spike > 500) eventMsg = "🔥 Content trending in niche"
-        else eventMsg = "📈 Algorithm pickup"
+        if (spike > 2000) eventMsg = "🚀 Reel hit 50k Views!"
+        else if (spike > 500) eventMsg = "🔥 Content Trending"
+        else eventMsg = "📈 Algorithm Spike"
         
         eventType = 'good'
       } 
 
       current += dailyGrowth
       
-      // Cap at realistic "first 30 days" limits to avoid "80M followers"
-      // Exceptionally good first month could hit 10k-50k, but rarely millions
-      if (current > 100000) current = 100000 + (current - 100000) * 0.1
+      // Cap logic: Reasonable ceiling for Month 1
+      // Ignited: ~30k max. Good: ~10k max.
+      const caps: Record<string, number> = {
+        'Average': 2000,
+        'Good': 12000,
+        'Ignited': 35000
+      }
+      
+      const cap = caps[contentQuality]
+      if (current > cap) current = cap + (current - cap) * 0.1
 
       // Revenue Calculation
-      // Unlocks after 1000 followers
-      if (current > 1000) {
-        // RPM (Revenue Per Mille followers) approx $0.50 - $2.00 daily potential
-        // Includes potential digital sales, affiliate, etc.
-        const dailyRev = (current / 1000) * (0.5 + Math.random()) 
+      // Unlocks after 500 followers
+      if (current > 500) {
+        // High ticket potential with Ignited Strategy
+        const baseRpm = contentQuality === 'Ignited' ? 5.0 : 1.5
+        const dailyRev = (current / 1000) * (baseRpm + Math.random() * 2) 
         revenue += dailyRev
       }
 

@@ -391,9 +391,9 @@ export default function TestimonialsPage() {
           >
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-blue-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-1' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent mb-2">
-                <NumberTicker value={4000} className="text-3xl md:text-4xl font-bold text-blue-400" />+
+                <NumberTicker value={8500} className="text-3xl md:text-4xl font-bold text-blue-400" />+
               </div>
-              <p className="text-zinc-300 text-sm md:text-base font-medium">Students Enrolled</p>
+              <p className="text-zinc-300 text-sm md:text-base font-medium">Community Members</p>
             </div>
             <div className={`bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-6 text-center border border-zinc-700 hover:border-green-500/50 transition-all duration-300 hover-lift scroll-scale ${statsAnimation.isVisible ? 'visible scroll-stagger-2' : ''}`}>
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-2">

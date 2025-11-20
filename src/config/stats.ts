@@ -8,6 +8,11 @@ export const siteStats = {
   // Student metrics
   totalStudents: 4000,
   activeStudents: 4000,
+  
+  // Community metrics
+  telegramMembers: 3500,
+  newsletterSubscribers: 5000,
+  totalCommunity: 8500, // Combined Telegram + Newsletter
 
   // Revenue metrics (in USD)
   studentRevenue: 5000000, // $5M+ in combined student earnings

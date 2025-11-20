@@ -194,8 +194,8 @@ export default function Footer() {
             {/* Community CTA */}
             <div className="flex flex-col sm:flex-row items-center gap-4 text-zinc-200 text-sm">
               <div className="flex items-center gap-2">
-                <NumberTicker value={4000} className="text-blue-400 font-semibold" />+
-                <span>students building their empire</span>
+                <NumberTicker value={8500} className="text-blue-400 font-semibold" />+
+                <span>community members building their empire</span>
               </div>
               <span className="hidden sm:block">•</span>
               <Link
