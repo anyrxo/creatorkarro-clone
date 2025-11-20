@@ -3,6 +3,8 @@
 import { createClient } from '@supabase/supabase-js'
 import { randomUUID } from 'crypto'
 
+import { revalidatePath } from 'next/cache'
+
 export async function generateLicenseKeys(count: number = 1, planId: string = 'all-access') {
     const supabaseAdmin = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -24,6 +26,8 @@ export async function generateLicenseKeys(count: number = 1, planId: string = 'a
         .from('license_keys')
         .insert(keys)
         .select()
+
+    revalidatePath('/admin/keys')
 
     if (error) {
         return { error: error.message }
