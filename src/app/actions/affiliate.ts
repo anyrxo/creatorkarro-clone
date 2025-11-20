@@ -82,15 +82,37 @@ export async function getAffiliateCode() {
             .eq('user_id', user.id)
             .single()
         
-        if (error) {
-             // If row doesn't exist (PGRST116), that's fine, just return null
-            if (error.code !== 'PGRST116') {
-                console.error('Fetch Affiliate Code Error:', error)
-            }
-            return null
+        if (data?.code) {
+            return data.code
         }
 
-        return data?.code
+        // AUTO-GENERATE LOGIC
+        // If no code exists, let's create a default one: user-xxxx
+        if (error && error.code === 'PGRST116') { // Not found
+            const supabaseAdmin = createClient(
+                process.env.NEXT_PUBLIC_SUPABASE_URL!,
+                process.env.SUPABASE_SERVICE_ROLE_KEY!
+            )
+            
+            // Generate random suffix
+            const suffix = Math.random().toString(36).substring(2, 7) // 5 chars
+            const defaultCode = `user-${suffix}`
+            
+            // Try to insert. If collision (rare), we just fail silently and return null, 
+            // user can try refreshing or claiming manually.
+            const { error: insertError } = await supabaseAdmin
+                .from('affiliate_profiles')
+                .insert({
+                    user_id: user.id,
+                    code: defaultCode
+                })
+            
+            if (!insertError) {
+                return defaultCode
+            }
+        }
+
+        return null
     } catch (error) {
         console.error('Get Affiliate Code Exception:', error)
         return null
@@ -167,7 +189,7 @@ export async function getPayoutEmail() {
 
         const supabase = createClient(
             process.env.NEXT_PUBLIC_SUPABASE_URL!,
-            process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+            process.env.SUPABASE_SERVICE_ROLE_KEY!
         )
 
         const { data, error } = await supabase
