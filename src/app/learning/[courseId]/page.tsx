@@ -3,7 +3,7 @@
 import { learningContent } from '@/data/learning-content'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
-import { PlayCircle, ArrowRight, CheckCircle, Lock, BarChart3, Clock, Trophy } from 'lucide-react'
+import { PlayCircle, ArrowRight, CheckCircle, Lock, BarChart3, Clock, Trophy, Sparkles } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useCourse } from '@/context/CourseContext'
 
@@ -73,13 +73,22 @@ export default function CourseOverviewPage() {
                             />
                         </div>
                         {nextLessonUrl && (
-                            <Link
-                                href={nextLessonUrl}
-                                className="w-full flex items-center justify-center gap-2 bg-white text-black py-3 rounded-xl font-bold hover:bg-zinc-200 transition-colors"
-                            >
-                                <PlayCircle className="w-4 h-4" />
-                                {progress === 0 ? 'Start Course' : progress === 100 ? 'Review Course' : 'Continue Learning'}
-                            </Link>
+                            <>
+                                <Link
+                                    href={nextLessonUrl}
+                                    className="w-full flex items-center justify-center gap-2 bg-white text-black py-3 rounded-xl font-bold hover:bg-zinc-200 transition-colors"
+                                >
+                                    <PlayCircle className="w-4 h-4" />
+                                    {progress === 0 ? 'Start Course' : progress === 100 ? 'Review Course' : 'Continue Learning'}
+                                </Link>
+                                <Link
+                                    href={`/learning/${courseId}/resources`}
+                                    className="w-full flex items-center justify-center gap-2 bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 text-purple-200 py-3 rounded-xl font-medium transition-colors"
+                                >
+                                    <Sparkles className="w-4 h-4" />
+                                    Resources & Tools
+                                </Link>
+                            </>
                         )}
                     </div>
                 </div>

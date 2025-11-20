@@ -197,6 +197,37 @@ src/
 4.  **Course Editor**: Admin can manage course content, modules, and lessons. ✅
 5.  **Environment Setup**: All keys configured in Vercel (Clerk + Supabase). ✅
 
+### Phase 9: Interactive Learning Materials [IN PROGRESS]
+**Goal**: Create comprehensive, actionable resources for each course so students can learn, digest, execute, and make money with minimal video content needed.
+
+**For Each Course:**
+1.  **Interactive Calculators**:
+    - Instagram: Engagement Rate Calculator, Growth Projection Tool
+    - AI Influencers: Revenue Calculator, Content ROI Estimator
+    - Digital Products: Pricing Calculator, Launch Revenue Projector
+    - AI Agency: Client Pricing Calculator, Profit Margin Tool
+
+2.  **Downloadable Templates**:
+    - Notion templates, spreadsheets, checklists
+    - Swipe files, scripts, email sequences
+    - SOPs and workflows
+
+3.  **Interactive Worksheets**:
+    - Step-by-step action plans
+    - Progress trackers
+    - Goal-setting frameworks
+
+4.  **Mini-Tools & Systems**:
+    - Hook generator (Instagram)
+    - Prompt library (AI Influencers)
+    - Product validator (Digital Products)
+    - Outreach script builder (AI Agency)
+
+5.  **Visual Guides**:
+    - Infographics, flowcharts
+    - Step-by-step visual tutorials
+    - Before/after examples
+
 ---
 
 ## 6. What's Working Now
