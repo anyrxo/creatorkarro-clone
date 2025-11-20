@@ -187,8 +187,6 @@ export default function RootLayout({
           <Script
             strategy="afterInteractive"
             src="https://www.googletagmanager.com/gtag/js?id=G-KXTFWR75V4"
-            width="0" 
-            height="0"
           />
           <Script
             id="google-analytics-direct"
