@@ -14,7 +14,7 @@ export default function InstagramCalculator() {
 
     // Calculate engagement rate
     const totalEngagement = likes + comments + (shares * 2) + (saves * 3);
-    const engagementRate = followers > 0 ? ((totalEngagement / followers) * 100).toFixed(2) : 0;
+    const engagementRate = followers > 0 ? ((totalEngagement / followers) * 100).toFixed(2) : '0';
 
     // Calculate projected growth
     const weeklyGrowth = parseFloat(engagementRate) * postsPerWeek * 10;

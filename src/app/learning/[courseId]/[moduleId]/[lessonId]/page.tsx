@@ -39,7 +39,7 @@ export default function LessonPage() {
             if (savedNotes) setNotes(savedNotes)
             else setNotes('')
         }
-    }, [lesson?.id])
+    }, [lesson, lesson?.id])
 
     const toggleActionItem = (itemId: string) => {
         if (!lesson) return

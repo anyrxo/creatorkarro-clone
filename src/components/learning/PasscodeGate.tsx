@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Lock, Unlock, Sparkles } from 'lucide-react'
 
@@ -14,13 +14,14 @@ export default function PasscodeGate({ onUnlock }: PasscodeGateProps) {
   const [success, setSuccess] = useState(false)
 
   // Handle input
-  const handleInput = (value: string) => {
+  // Handle input
+  const handleInput = useCallback((value: string) => {
     if (value.length > 4) return
-    
+
     const newCode = value.split('').slice(0, 4)
     // Pad with empty strings
     while (newCode.length < 4) newCode.push('')
-    
+
     setCode(newCode)
     setError(false)
 
@@ -39,13 +40,13 @@ export default function PasscodeGate({ onUnlock }: PasscodeGateProps) {
         }, 500)
       }
     }
-  }
+  }, [onUnlock])
 
   // Handle physical keyboard
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (success) return
-      
+
       // Allow numbers
       if (/^[0-9]$/.test(e.key)) {
         const currentStr = code.join('')
@@ -62,7 +63,7 @@ export default function PasscodeGate({ onUnlock }: PasscodeGateProps) {
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [code, success])
+  }, [code, success, handleInput])
 
   return (
     <div className="fixed inset-0 bg-[#0a0a0a] flex items-center justify-center z-50 overflow-hidden">
@@ -103,11 +104,10 @@ export default function PasscodeGate({ onUnlock }: PasscodeGateProps) {
           {code.map((digit, i) => (
             <div
               key={i}
-              className={`w-14 h-20 rounded-xl border-2 flex items-center justify-center text-3xl font-mono transition-all duration-300 ${
-                digit
+              className={`w-14 h-20 rounded-xl border-2 flex items-center justify-center text-3xl font-mono transition-all duration-300 ${digit
                   ? 'border-purple-500 bg-purple-500/10 text-white shadow-[0_0_15px_rgba(168,85,247,0.5)]'
                   : 'border-white/10 bg-white/5 text-transparent'
-              } ${success ? 'border-green-500 bg-green-500/20 shadow-[0_0_30px_rgba(34,197,94,0.5)]' : ''}`}
+                } ${success ? 'border-green-500 bg-green-500/20 shadow-[0_0_30px_rgba(34,197,94,0.5)]' : ''}`}
             >
               {digit}
             </div>
