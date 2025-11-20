@@ -4,8 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useUser } from '@clerk/nextjs'
 import { useState, useEffect } from 'react'
-import { Menu, X, ChevronDown, User, Shield } from 'lucide-react'
+import { Menu, X, ChevronDown, User, Shield, Flame } from 'lucide-react'
 import * as analytics from '@/lib/analytics'
+import { getUserStats } from '@/app/actions/gamification'
 
 import ShimmerButton from '@/components/magicui/shimmer-button'
 
@@ -27,6 +28,7 @@ export default function Navigation() {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false)
   const { user, isSignedIn } = useUser()
   const [isAdmin, setIsAdmin] = useState(false)
+  const [streak, setStreak] = useState(0)
 
   useEffect(() => {
     if (isSignedIn && user?.primaryEmailAddress?.emailAddress) {
@@ -34,6 +36,9 @@ export default function Navigation() {
       if (['mannan0010@gmail.com', 'sirenxmedia@gmail.com'].includes(email)) {
         setIsAdmin(true)
       }
+      
+      // Fetch Streak
+      getUserStats().then(stats => setStreak(stats.streak))
     }
   }, [isSignedIn, user])
 
@@ -136,6 +141,12 @@ export default function Navigation() {
                 </Link>
               ) : (
                 <div className="flex items-center gap-3">
+                   {streak > 0 && (
+                     <div className="flex items-center gap-1 px-3 py-1 bg-orange-500/10 border border-orange-500/20 rounded-full">
+                       <Flame size={14} className="text-orange-500 fill-orange-500 animate-pulse" />
+                       <span className="text-xs font-bold text-orange-400">{streak} Day Streak</span>
+                     </div>
+                   )}
                    <Link href="/learning" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
                       My Learning
                    </Link>
