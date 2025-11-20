@@ -8,7 +8,12 @@ import { revalidatePath } from 'next/cache'
 export async function getStudents() {
     const supabaseAdmin = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.SUPABASE_SERVICE_ROLE_KEY!
+        process.env.SUPABASE_SERVICE_ROLE_KEY!,
+        {
+            auth: {
+                persistSession: false
+            }
+        }
     )
 
     // Get all keys that are claimed OR have an email associated (invited)
@@ -32,18 +37,33 @@ export async function getStudents() {
 }
 
 import { sendLicenseEmail } from '@/lib/email'
+import dns from 'node:dns'
+
+// FORCE IPv4: Fixes "fetch failed" on Vercel/Node 18+ when connecting to Supabase
+try {
+    if (dns.setDefaultResultOrder) {
+        dns.setDefaultResultOrder('ipv4first')
+    }
+} catch (e) {
+    // Ignore
+}
 
 export async function inviteStudent(email: string) {
     const supabaseAdmin = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.SUPABASE_SERVICE_ROLE_KEY!
+        process.env.SUPABASE_SERVICE_ROLE_KEY!,
+        {
+            auth: {
+                persistSession: false
+            }
+        }
     )
 
     // 1. Generate a key
     const { success, keys, error } = await generateLicenseKeys(1, 'all-access')
     
     if (!success || !keys || keys.length === 0) {
-        return { error: 'Failed to generate key' }
+        return { error: 'Failed to generate key: ' + error }
     }
 
     const keyData = keys[0]
@@ -79,12 +99,17 @@ export async function inviteStudent(email: string) {
 export async function revokeAccess(keyId: string) {
     const supabaseAdmin = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.SUPABASE_SERVICE_ROLE_KEY!
+        process.env.SUPABASE_SERVICE_ROLE_KEY!,
+        {
+            auth: {
+                persistSession: false
+            }
+        }
     )
 
     const { error } = await supabaseAdmin
         .from('license_keys')
-        .update({ status: 'revoked' })
+        .update({ status: 'disabled' }) // Use 'disabled' to match our schema enum if used, or just 'revoked'
         .eq('id', keyId)
 
     revalidatePath('/admin/users')
@@ -92,4 +117,3 @@ export async function revokeAccess(keyId: string) {
     if (error) return { error: error.message }
     return { success: true }
 }
-
