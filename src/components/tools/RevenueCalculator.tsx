@@ -66,7 +66,23 @@ export default function RevenueCalculator() {
         const buyers = activeFollowers * 0.01 // 1% of active buy
         const ticketPrice = niche === 'Adult' ? 15 : 37 // Monthly sub vs One-time
         
-        streamRev += (buyers * ticketPrice) * (niche === 'Adult' ? 2 : 1) // Adult has recurring
+        let productRev = buyers * ticketPrice
+        
+        if (niche === 'Adult') {
+           // Adult Niche Special: PPVs & Bundles
+           // Top 10% of buyers spend 5x-10x more (Whales)
+           const whales = buyers * 0.1
+           const whaleSpend = 150 // $150 in PPVs/Bundles per whale per week
+           productRev += whales * whaleSpend
+           
+           // Random PPV Blast event
+           if (Math.random() > 0.7) {
+              productRev += 500 // $500 PPV blast
+              if (currentFollowersSim > 10000) productRev += 2000 // $2k blast for larger following
+           }
+        }
+        
+        streamRev += productRev
       }
 
       // 3. Brand Deals (Unlocks at 10k - Micro influencer status)
@@ -80,7 +96,8 @@ export default function RevenueCalculator() {
       // Random Boost (Viral Video leads to sales spike)
       if (Math.random() > 0.85) {
         streamRev *= 1.8
-        setLogs(prev => [`🚀 Viral Reel! Sales spike.`, ...prev].slice(0, 3))
+        const msg = niche === 'Adult' ? "🔥 Viral! Whale dropped $500 tip." : "🚀 Viral Reel! Sales spike."
+        setLogs(prev => [msg, ...prev].slice(0, 3))
       }
 
       if (newStreams.length > 0) {
