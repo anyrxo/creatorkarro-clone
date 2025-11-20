@@ -2,9 +2,9 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useUser } from '@clerk/nextjs'
+import { useUser, useClerk } from '@clerk/nextjs'
 import { useState, useEffect } from 'react'
-import { Menu, X, ChevronDown, User, Shield, Flame, DollarSign } from 'lucide-react' // Added DollarSign
+import { Menu, X, ChevronDown, User, Shield, Flame, DollarSign, Power } from 'lucide-react' // Added DollarSign and Power
 import * as analytics from '@/lib/analytics'
 import { getUserStats } from '@/app/actions/gamification'
 
@@ -27,6 +27,7 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isCoursesOpen, setIsCoursesOpen] = useState(false)
   const { user, isSignedIn } = useUser()
+  const { signOut } = useClerk()
   const [isAdmin, setIsAdmin] = useState(false)
   const [streak, setStreak] = useState(0)
 
@@ -146,9 +147,10 @@ export default function Navigation() {
               {!isSignedIn ? (
                 <Link 
                   href="/sign-in"
-                  className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-800 rounded-full transition-all"
+                  className="group flex items-center justify-center w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 transition-all hover:border-green-500/50 hover:bg-green-500/10 hover:shadow-[0_0_15px_rgba(34,197,94,0.3)]"
+                  title="Power On (Sign In)"
                 >
-                  <span>Sign In</span>
+                  <Power size={18} className="text-zinc-500 group-hover:text-green-400 transition-colors" />
                 </Link>
               ) : (
                 <div className="flex items-center gap-3">
@@ -161,6 +163,15 @@ export default function Navigation() {
                    <Link href="/learning" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
                       My Learning
                    </Link>
+                   
+                   {/* Power Off Button (Sign Out) */}
+                   <button 
+                      onClick={() => signOut()}
+                      className="flex items-center justify-center w-10 h-10 rounded-full bg-green-500/10 border border-green-500/30 shadow-[0_0_10px_rgba(34,197,94,0.2)] transition-all hover:bg-red-500/10 hover:border-red-500/30 hover:shadow-[0_0_15px_rgba(239,68,68,0.3)] group"
+                      title="Power Off (Sign Out)"
+                   >
+                      <Power size={18} className="text-green-400 group-hover:text-red-400 transition-colors" />
+                   </button>
                 </div>
               )}
               
@@ -188,18 +199,6 @@ export default function Navigation() {
 
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center gap-4">
-              {!isSignedIn ? (
-                <Link 
-                  href="/sign-in"
-                  className="text-sm font-medium text-gray-300 hover:text-white"
-                >
-                  Sign In
-                </Link>
-              ) : (
-                 <Link href="/learning" className="text-sm font-medium text-zinc-300 hover:text-white">
-                    My Learning
-                 </Link>
-              )}
               <button
                 className="p-2 text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-zinc-800/50"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -216,6 +215,39 @@ export default function Navigation() {
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 top-20 bg-zinc-900 z-[100] overflow-y-auto">
           <div className="p-6 space-y-4">
+             {/* Mobile Auth Status */}
+             <div className="flex items-center justify-between p-4 bg-zinc-800/50 rounded-xl border border-white/5 mb-6">
+                {!isSignedIn ? (
+                  <Link href="/sign-in" className="flex items-center gap-3 w-full" onClick={() => setIsMenuOpen(false)}>
+                     <div className="w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center">
+                        <Power size={18} className="text-zinc-500" />
+                     </div>
+                     <div>
+                        <p className="text-white font-medium">System Offline</p>
+                        <p className="text-xs text-zinc-400">Tap to Initialize</p>
+                     </div>
+                  </Link>
+                ) : (
+                  <div className="flex items-center justify-between w-full">
+                     <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-green-500/10 border border-green-500/30 flex items-center justify-center shadow-[0_0_10px_rgba(34,197,94,0.2)]">
+                           <Power size={18} className="text-green-400" />
+                        </div>
+                        <div>
+                           <p className="text-white font-medium">System Online</p>
+                           <p className="text-xs text-green-400">Welcome back</p>
+                        </div>
+                     </div>
+                     <button 
+                        onClick={() => signOut()}
+                        className="text-xs text-red-400 hover:text-red-300 border border-red-500/20 px-3 py-1 rounded-full"
+                     >
+                        Disconnect
+                     </button>
+                  </div>
+                )}
+             </div>
+
              {/* Admin Link - Mobile */}
              {isAdmin && (
                 <Link
@@ -237,6 +269,18 @@ export default function Navigation() {
                 >
                   <DollarSign size={16} />
                   Partner Program
+                </Link>
+             )}
+
+             {/* My Learning - Mobile */}
+             {isSignedIn && (
+                <Link
+                  href="/learning"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-4 py-3 text-blue-400 bg-blue-500/10 rounded-lg font-medium flex items-center gap-2 mb-4"
+                >
+                  <Flame size={16} />
+                  My Learning
                 </Link>
              )}
 
