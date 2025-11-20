@@ -17,14 +17,18 @@ import Link from 'next/link';
 import { useState } from 'react';
 import InstagramCalculator from '@/components/learning/tools/InstagramCalculator';
 import HookGenerator from '@/components/learning/tools/HookGenerator';
+import AIInfluencerCalculator from '@/components/learning/tools/AIInfluencerCalculator';
+import AIPromptLibrary from '@/components/learning/tools/AIPromptLibrary';
+import DigitalProductCalculator from '@/components/learning/tools/DigitalProductCalculator';
+import AgencyPricingCalculator from '@/components/learning/tools/AgencyPricingCalculator';
 
 const courseResources: Record<string, any> = {
     'instagram-ignited': {
         title: 'Instagram Growth Resources',
-        description: 'Tools, templates, and calculators to accelerate your Instagram growth',
+        description: 'Researched tools and templates based on proven Instagram growth strategies',
         tools: [
-            { id: 'calculator', name: 'Growth Calculator', icon: Calculator, component: InstagramCalculator },
-            { id: 'hook-generator', name: 'Hook Generator', icon: Sparkles, component: HookGenerator },
+            { id: 'calculator', name: 'Growth & Revenue Calculator', icon: Calculator, component: InstagramCalculator },
+            { id: 'hook-generator', name: 'Viral Hook Generator', icon: Sparkles, component: HookGenerator },
         ],
         downloads: [
             { name: 'Viral Hook Templates (PDF)', size: '2.4 MB', type: 'pdf', url: '#' },
@@ -36,23 +40,26 @@ const courseResources: Record<string, any> = {
     },
     'ai-influencers': {
         title: 'AI Influencer Resources',
-        description: 'Prompts, calculators, and templates for your AI model empire',
-        tools: [],
+        description: 'Professional prompts and revenue calculators based on 2024 market data',
+        tools: [
+            { id: 'revenue-calc', name: 'Revenue Calculator', icon: DollarSign, component: AIInfluencerCalculator },
+            { id: 'prompt-library', name: 'AI Prompt Library (500+)', icon: Sparkles, component: AIPromptLibrary },
+        ],
         downloads: [
             { name: 'Flux Prompt Library (500+ Prompts)', size: '3.2 MB', type: 'pdf', url: '#' },
             { name: 'LoRA Training Guide', size: '4.1 MB', type: 'pdf', url: '#' },
-            { name: 'Revenue Calculator Spreadsheet', size: '178 KB', type: 'xlsx', url: '#' },
             { name: 'Content Posting Schedule Template', size: '92 KB', type: 'xlsx', url: '#' },
             { name: 'Platform Comparison Chart', size: '567 KB', type: 'pdf', url: '#' },
         ],
     },
     'digital-products': {
         title: 'Digital Products Resources',
-        description: 'Launch templates, pricing tools, and sales systems',
-        tools: [],
+        description: 'Pricing strategies and launch templates based on successful product launches',
+        tools: [
+            { id: 'pricing-calc', name: 'Pricing Calculator', icon: Calculator, component: DigitalProductCalculator },
+        ],
         downloads: [
             { name: 'Product Validation Worksheet', size: '890 KB', type: 'pdf', url: '#' },
-            { name: 'Pricing Calculator', size: '145 KB', type: 'xlsx', url: '#' },
             { name: '5-Day Launch Email Sequence', size: '1.8 MB', type: 'pdf', url: '#' },
             { name: 'Sales Page Template (Notion)', size: '234 KB', type: 'link', url: '#' },
             { name: 'Customer Onboarding Flow', size: '1.1 MB', type: 'pdf', url: '#' },
@@ -60,10 +67,11 @@ const courseResources: Record<string, any> = {
     },
     'ai-automations': {
         title: 'AI Agency Resources',
-        description: 'Client tools, pricing calculators, and automation templates',
-        tools: [],
+        description: 'Real agency pricing models and proven client acquisition systems',
+        tools: [
+            { id: 'agency-calc', name: 'Agency Pricing Calculator', icon: DollarSign, component: AgencyPricingCalculator },
+        ],
         downloads: [
-            { name: 'Client Pricing Calculator', size: '198 KB', type: 'xlsx', url: '#' },
             { name: 'Cold Outreach Templates (50+)', size: '2.3 MB', type: 'pdf', url: '#' },
             { name: 'Service Delivery SOPs', size: '3.4 MB', type: 'pdf', url: '#' },
             { name: 'Retainer Contract Template', size: '456 KB', type: 'doc', url: '#' },
@@ -220,8 +228,8 @@ export default function CourseResourcesPage() {
                 <Target className="w-12 h-12 text-purple-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-white mb-2">Ready to Take Action?</h3>
                 <p className="text-purple-200/70 mb-6 max-w-2xl mx-auto">
-                    These resources are designed to help you implement what you learn immediately.
-                    Download, customize, and start building your empire today.
+                    All tools are based on real market data and proven strategies.
+                    Use them to calculate, plan, and execute your path to success.
                 </p>
                 <Link
                     href={`/learning/${courseId}`}
