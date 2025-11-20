@@ -4,21 +4,23 @@ import SocialIcon from './SocialIcon'
 import { motion } from 'framer-motion'
 
 export default function PartnerSlider() {
+  // Explicitly map to the correct file paths in public/logos/ or default to public/social-icons/
+  // If src is provided, it overrides the default SocialIcon logic.
   const partners = [
-    { platform: 'nvidia', name: 'NVIDIA' },
-    { platform: 'digitalocean', name: 'DigitalOcean' },
-    { platform: 'n8n', name: 'N8N' },
-    { platform: 'zapier', name: 'Zapier' },
-    { platform: 'make', name: 'Make' },
-    { platform: 'loom', name: 'Loom' },
-    { platform: 'beehiiv', name: 'Beehiiv' },
-    { platform: 'whop', name: 'Whop' },
-    { platform: 'claude', name: 'Claude' },
-    { platform: 'gemini', name: 'Gemini' },
-    { platform: 'runpod', name: 'RunPod' },
-    { platform: 'fanvue', name: 'Fanvue' },
-    { platform: 'manus', name: 'Manus' },
-    { platform: 'kling', name: 'Kling AI' }
+    { platform: 'nvidia', name: 'NVIDIA', src: '/logos/nvidia-removebg-preview.png' },
+    { platform: 'digitalocean', name: 'DigitalOcean', src: '/logos/digitalocean.png' },
+    { platform: 'n8n', name: 'N8N', src: '/logos/N8n-logo-new.png' },
+    { platform: 'zapier', name: 'Zapier', src: '/logos/Zapier_logo-removebg_edited.png' },
+    { platform: 'make', name: 'Make', src: '/logos/make-logo-freelogovectors.net_.png' },
+    { platform: 'loom', name: 'Loom', src: '/logos/loom_logo_color.png' },
+    { platform: 'beehiiv', name: 'Beehiiv', src: '/logos/beehiv.png' }, // Note typo in filename from user
+    { platform: 'whop', name: 'Whop', src: '/logos/whop.png' },
+    { platform: 'claude', name: 'Claude', src: '/logos/claude.png' },
+    { platform: 'gemini', name: 'Gemini', src: '/logos/Google_Gemini_logo.svg.png' },
+    { platform: 'runpod', name: 'RunPod', src: '/logos/runpod.avif' },
+    { platform: 'fanvue', name: 'Fanvue', src: '/logos/fanvue.png' },
+    { platform: 'manus', name: 'Manus', src: '/logos/manus.png' },
+    { platform: 'kling', name: 'Kling AI', src: '/logos/kling.webp' }
   ]
 
   // Double the array for seamless loop
@@ -58,6 +60,7 @@ export default function PartnerSlider() {
                 variant="color"
                 size={32}
                 href={undefined}
+                src={partner.src} // Pass the explicit source
                 className="mb-3 group-hover:scale-110 transition-transform"
               />
               <span className="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors font-medium">

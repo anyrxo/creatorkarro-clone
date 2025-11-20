@@ -117,7 +117,7 @@ export default function ResourcesPage() {
              </div>
 
              <h1 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tight drop-shadow-2xl">
-               My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Arsenal.</span>
+               My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Tech Stack.</span>
              </h1>
 
              <div className="max-w-3xl mx-auto">

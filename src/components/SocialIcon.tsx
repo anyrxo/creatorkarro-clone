@@ -35,37 +35,12 @@ export interface SocialIconProps {
   size?: number
   className?: string
   href?: string
+  src?: string // Allow custom image source
   target?: '_blank' | '_self'
   onClick?: () => void
 }
 
-const platformUrls: Record<SocialPlatform, string> = {
-  instagram: 'https://instagram.com/',
-  youtube: 'https://youtube.com/',
-  twitter: 'https://twitter.com/',
-  tiktok: 'https://tiktok.com/',
-  facebook: 'https://facebook.com/',
-  linkedin: 'https://linkedin.com/',
-  github: 'https://github.com/',
-  discord: 'https://discord.com/',
-  telegram: 'https://telegram.org/',
-  snapchat: 'https://snapchat.com/',
-  whatsapp: 'https://whatsapp.com/',
-  fanvue: 'https://fanvue.com/',
-  nvidia: 'https://nvidia.com/',
-  digitalocean: 'https://digitalocean.com/',
-  n8n: 'https://n8n.io/',
-  zapier: 'https://zapier.com/',
-  make: 'https://make.com/',
-  loom: 'https://loom.com/',
-  beehiiv: 'https://beehiiv.com/',
-  whop: 'https://whop.com/',
-  manus: 'https://manus.com/',
-  kling: 'https://kling.ai/',
-  claude: 'https://claude.ai/',
-  gemini: 'https://gemini.google.com/',
-  runpod: 'https://runpod.io/'
-}
+// ... (keep platformUrls and platformColors) ...
 
 export default function SocialIcon({
   platform,
@@ -73,18 +48,17 @@ export default function SocialIcon({
   size = 24,
   className = '',
   href,
+  src, // Destructure src
   target = '_blank',
   onClick
 }: SocialIconProps) {
   const defaultHref = href || platformUrls[platform]
   
   // Map variant to filename suffix
-  // Note: 'white' variant isn't in standard set, defaulting to 'black' with potential CSS filter if needed, 
-  // or we can assume 'black' icons are monochromatic and can be inverted via CSS.
-  // For now, mapping 'white' to 'black' and we can add a class to invert it if needed.
   const iconVariant = variant === 'color' ? 'color' : 'black'
   
-  const iconPath = `/social-icons/${platform}-${iconVariant}.svg`
+  // Use provided src or fallback to constructed path
+  const iconPath = src || `/social-icons/${platform}-${iconVariant}.svg`
 
   const iconElement = (
     <div 
