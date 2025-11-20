@@ -2,8 +2,9 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
-import { Menu, X, ChevronDown, User } from 'lucide-react'
+import { useUser } from '@clerk/nextjs'
+import { useState, useEffect } from 'react'
+import { Menu, X, ChevronDown, User, Shield } from 'lucide-react'
 import * as analytics from '@/lib/analytics'
 
 import ShimmerButton from '@/components/magicui/shimmer-button'
@@ -24,6 +25,17 @@ interface NavigationItem {
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isCoursesOpen, setIsCoursesOpen] = useState(false)
+  const { user, isSignedIn } = useUser()
+  const [isAdmin, setIsAdmin] = useState(false)
+
+  useEffect(() => {
+    if (isSignedIn && user?.primaryEmailAddress?.emailAddress) {
+      const email = user.primaryEmailAddress.emailAddress
+      if (['mannan0010@gmail.com', 'sirenxmedia@gmail.com'].includes(email)) {
+        setIsAdmin(true)
+      }
+    }
+  }, [isSignedIn, user])
 
   const mainNavigation: NavigationItem[] = [
     { name: 'Story', href: '/story' },
@@ -48,12 +60,11 @@ export default function Navigation() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-xl border-b border-zinc-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+      <header className="fixed top-4 left-4 right-4 z-50 bg-zinc-900/80 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl transition-all duration-300">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2" onClick={() => analytics.trackNavigation('Logo', '/', 'main_nav')}>
-              <Image src="/anyro.webp" alt="Anyro" width={40} height={40} className="w-10 h-10 rounded-full" />
               <span className="text-xl font-bold whitespace-nowrap">
                 <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">II</span>magined
               </span>
@@ -100,17 +111,36 @@ export default function Navigation() {
                     )}
                   </div>
                 ))}
+                
+                {/* Admin Link - Desktop */}
+                {isAdmin && (
+                  <Link
+                    href="/admin/users"
+                    className="px-4 py-2 text-sm font-medium text-red-400 hover:text-red-300 hover:bg-red-500/10 transition-all duration-300 rounded-full flex items-center gap-2"
+                  >
+                    <Shield size={14} />
+                    Admin
+                  </Link>
+                )}
               </div>
             </nav>
 
             {/* Desktop Actions */}
             <div className="hidden md:flex items-center gap-4">
-              <Link 
-                href="/sign-in"
-                className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-800 rounded-full transition-all"
-              >
-                <span>Sign In</span>
-              </Link>
+              {!isSignedIn ? (
+                <Link 
+                  href="/sign-in"
+                  className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-zinc-800 rounded-full transition-all"
+                >
+                  <span>Sign In</span>
+                </Link>
+              ) : (
+                <div className="flex items-center gap-3">
+                   <Link href="/learning" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
+                      My Learning
+                   </Link>
+                </div>
+              )}
               
               <a
                 href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
@@ -136,12 +166,18 @@ export default function Navigation() {
 
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center gap-4">
-              <Link 
-                href="/sign-in"
-                className="text-sm font-medium text-gray-300 hover:text-white"
-              >
-                Sign In
-              </Link>
+              {!isSignedIn ? (
+                <Link 
+                  href="/sign-in"
+                  className="text-sm font-medium text-gray-300 hover:text-white"
+                >
+                  Sign In
+                </Link>
+              ) : (
+                 <Link href="/learning" className="text-sm font-medium text-zinc-300 hover:text-white">
+                    My Learning
+                 </Link>
+              )}
               <button
                 className="p-2 text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-zinc-800/50"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -158,6 +194,18 @@ export default function Navigation() {
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 top-20 bg-zinc-900 z-[100] overflow-y-auto">
           <div className="p-6 space-y-4">
+             {/* Admin Link - Mobile */}
+             {isAdmin && (
+                <Link
+                  href="/admin/users"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-4 py-3 text-red-400 bg-red-500/10 rounded-lg font-medium flex items-center gap-2 mb-4"
+                >
+                  <Shield size={16} />
+                  Admin Dashboard
+                </Link>
+             )}
+
             {allNavigation.map((item) => (
               <div key={item.name}>
                 {item.hasDropdown ? (

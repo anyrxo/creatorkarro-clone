@@ -5,7 +5,8 @@ import { redirect } from 'next/navigation'
 
 // List of authorized admin emails
 const ADMIN_EMAILS = [
-    'mannan0010@gmail.com'
+    'mannan0010@gmail.com',
+    'sirenxmedia@gmail.com'
 ]
 
 export async function checkAdminAccess() {
