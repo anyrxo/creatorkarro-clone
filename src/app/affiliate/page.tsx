@@ -8,18 +8,47 @@ import { Copy, Check, DollarSign, Users, ExternalLink, Shield, Sparkles } from '
 import Link from 'next/link'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 
+import { claimAffiliateCode, getAffiliateCode } from '@/app/actions/affiliate'
+import { Loader2 } from 'lucide-react'
+
 export default function AffiliatePage() {
     const { user, isLoaded, isSignedIn } = useUser()
     const [referralLink, setReferralLink] = useState('')
+    const [customCode, setCustomCode] = useState('')
+    const [claimedCode, setClaimedCode] = useState<string | null>(null)
+    const [isClaiming, setIsClaiming] = useState(false)
+    const [claimError, setClaimError] = useState('')
     const [copied, setCopied] = useState(false)
 
     useEffect(() => {
         if (user) {
-            // Generate referral link based on Clerk ID
-            const link = `${window.location.origin}?ref=${user.id}`
-            setReferralLink(link)
+            // 1. Check if they have a custom code
+            getAffiliateCode().then(code => {
+                if (code) {
+                    setClaimedCode(code)
+                    setReferralLink(`${window.location.origin}/${code}`)
+                } else {
+                    // Fallback to default ID ref
+                    setReferralLink(`${window.location.origin}?ref=${user.id}`)
+                }
+            })
         }
     }, [user])
+
+    const handleClaim = async (e: React.FormEvent) => {
+        e.preventDefault()
+        setIsClaiming(true)
+        setClaimError('')
+
+        const result = await claimAffiliateCode(customCode)
+        if (result.success) {
+            setClaimedCode(result.code!)
+            setReferralLink(`${window.location.origin}/${result.code}`)
+        } else {
+            setClaimError(result.error || 'Failed to claim code')
+        }
+        setIsClaiming(false)
+    }
 
     const copyLink = () => {
         navigator.clipboard.writeText(referralLink)
@@ -126,19 +155,46 @@ export default function AffiliatePage() {
                         
                         <h3 className="text-xl font-bold text-white mb-6 relative z-10">Your Unique Empire Link</h3>
                         
-                        <div className="flex flex-col md:flex-row gap-4 relative z-10">
-                            <div className="flex-1 bg-black/50 border border-white/10 rounded-xl px-6 py-4 flex items-center gap-3">
-                                <Shield className="text-purple-400 w-5 h-5 flex-shrink-0" />
-                                <code className="text-zinc-300 font-mono truncate">{referralLink}</code>
+                        {claimedCode ? (
+                            <div className="flex flex-col md:flex-row gap-4 relative z-10">
+                                <div className="flex-1 bg-black/50 border border-white/10 rounded-xl px-6 py-4 flex items-center gap-3">
+                                    <Shield className="text-purple-400 w-5 h-5 flex-shrink-0" />
+                                    <code className="text-zinc-300 font-mono truncate">{referralLink}</code>
+                                </div>
+                                <button
+                                    onClick={copyLink}
+                                    className="bg-white text-black hover:bg-zinc-200 font-bold px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-colors min-w-[160px]"
+                                >
+                                    {copied ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                                    {copied ? 'Copied!' : 'Copy Link'}
+                                </button>
                             </div>
-                            <button
-                                onClick={copyLink}
-                                className="bg-white text-black hover:bg-zinc-200 font-bold px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-colors min-w-[160px]"
-                            >
-                                {copied ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                                {copied ? 'Copied!' : 'Copy Link'}
-                            </button>
-                        </div>
+                        ) : (
+                            <div className="relative z-10">
+                                <p className="text-zinc-400 mb-4">Claim your custom handle (e.g., "callan") to get a branded link.</p>
+                                <form onSubmit={handleClaim} className="flex gap-2">
+                                    <input 
+                                        type="text" 
+                                        value={customCode}
+                                        onChange={(e) => setCustomCode(e.target.value.toLowerCase())}
+                                        placeholder="Enter custom code..."
+                                        className="flex-1 bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500"
+                                        minLength={3}
+                                        maxLength={20}
+                                        pattern="[a-z0-9]+"
+                                    />
+                                    <button 
+                                        type="submit" 
+                                        disabled={isClaiming || !customCode}
+                                        className="bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 rounded-xl font-bold disabled:opacity-50 flex items-center gap-2"
+                                    >
+                                        {isClaiming ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Claim'}
+                                    </button>
+                                </form>
+                                {claimError && <p className="text-red-400 text-sm mt-2">{claimError}</p>}
+                                <p className="text-xs text-zinc-500 mt-4">Or use default: {referralLink}</p>
+                            </div>
+                        )}
 
                         <p className="text-zinc-400 text-sm mt-6 relative z-10">
                             Share this link on social media, YouTube, or with friends. When they click, we track them. When they buy, you get paid.
