@@ -2,6 +2,16 @@ import { Webhook } from 'svix'
 import { headers } from 'next/headers'
 import { WebhookEvent } from '@clerk/nextjs/server'
 import { createClient } from '@supabase/supabase-js'
+import dns from 'node:dns'
+
+// FORCE IPv4: Fixes "fetch failed" on Vercel/Node 18+ when connecting to Supabase
+try {
+    if (dns.setDefaultResultOrder) {
+        dns.setDefaultResultOrder('ipv4first')
+    }
+} catch (e) {
+    // Ignore
+}
 
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
@@ -95,4 +105,3 @@ export async function POST(req: Request) {
 
   return new Response('', { status: 200 })
 }
-
