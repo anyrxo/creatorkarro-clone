@@ -40,7 +40,62 @@ export interface SocialIconProps {
   onClick?: () => void
 }
 
-// ... (keep platformUrls and platformColors) ...
+const platformUrls: Record<SocialPlatform, string> = {
+  instagram: 'https://instagram.com/',
+  youtube: 'https://youtube.com/',
+  twitter: 'https://twitter.com/',
+  tiktok: 'https://tiktok.com/',
+  facebook: 'https://facebook.com/',
+  linkedin: 'https://linkedin.com/',
+  github: 'https://github.com/',
+  discord: 'https://discord.com/',
+  telegram: 'https://telegram.org/',
+  snapchat: 'https://snapchat.com/',
+  whatsapp: 'https://whatsapp.com/',
+  fanvue: 'https://fanvue.com/',
+  nvidia: 'https://nvidia.com/',
+  digitalocean: 'https://digitalocean.com/',
+  n8n: 'https://n8n.io/',
+  zapier: 'https://zapier.com/',
+  make: 'https://make.com/',
+  loom: 'https://loom.com/',
+  beehiiv: 'https://beehiiv.com/',
+  whop: 'https://whop.com/',
+  manus: 'https://manus.com/',
+  kling: 'https://kling.ai/',
+  claude: 'https://claude.ai/',
+  gemini: 'https://gemini.google.com/',
+  runpod: 'https://runpod.io/'
+}
+
+// Platform color mapping
+const platformColors: Record<SocialPlatform, string> = {
+  instagram: '#E4405F',
+  youtube: '#FF0000',
+  twitter: '#1DA1F2',
+  tiktok: '#000000',
+  facebook: '#1877F2',
+  linkedin: '#0A66C2',
+  github: '#181717',
+  discord: '#5865F2',
+  telegram: '#0088CC',
+  snapchat: '#FFFC00',
+  whatsapp: '#25D366',
+  fanvue: '#FF6B6B',
+  nvidia: '#76B900',
+  digitalocean: '#0080FF',
+  n8n: '#EA4B71',
+  zapier: '#FF4A00',
+  make: '#6366F1',
+  loom: '#625DF5',
+  beehiiv: '#3B82F6',
+  whop: '#7C3AED',
+  manus: '#8B5CF6',
+  kling: '#EC4899',
+  claude: '#D97706',
+  gemini: '#4285F4',
+  runpod: '#7C3AED'
+}
 
 export default function SocialIcon({
   platform,
