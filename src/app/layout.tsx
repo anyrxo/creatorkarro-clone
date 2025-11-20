@@ -17,6 +17,7 @@ import ClientOnlyBackground from "@/components/ClientOnlyBackground";
 import SkipToContent from "@/components/SkipToContent";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import { WebVitals } from "./web-vitals";
+import { AuthProvider } from "@/components/auth/AuthProvider";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -92,75 +93,76 @@ export default function RootLayout({
       <head>
         {/* Preload critical images */}
         <link rel="preload" href="/hero-bg.webp" as="image" type="image/webp" />
-        
+
         {/* Resource Hints for Better Performance */}
         <link rel="prefetch" href="/instagram-ignited" />
         <link rel="prefetch" href="/n8n-ai-automations" />
         <link rel="prefetch" href="/digital-products" />
-        
+
         {/* Favicon set */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
-        
+
         {/* Additional SEO meta tags */}
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        
+
         {/* RSS Feed */}
         <link rel="alternate" type="application/rss+xml" title={`${siteConfig.name} Blog`} href={`${siteConfig.url}/rss.xml`} />
-        
+
         {/* Structured Data - Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.organization) }}
         />
-        
+
         {/* Structured Data - Website */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.website) }}
         />
-        
+
       </head>
       <body className={montserrat.className}>
-        <SkipToContent />
+        <AuthProvider>
+          <SkipToContent />
 
-        {/* ===== ANALYTICS CONFIGURATION ===== */}
+          {/* ===== ANALYTICS CONFIGURATION ===== */}
 
-        {/* Google Analytics 4 (GA4) */}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <Script
-              strategy="afterInteractive"
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-            />
-            <Script
-              id="google-analytics"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
+          {/* Google Analytics 4 (GA4) */}
+          {process.env.NEXT_PUBLIC_GA_ID && (
+            <>
+              <Script
+                strategy="afterInteractive"
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+              />
+              <Script
+                id="google-analytics"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
                   gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
                 `,
-              }}
-            />
-          </>
-        )}
+                }}
+              />
+            </>
+          )}
 
-        {/* Facebook Pixel */}
-        {process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID && (
-          <Script
-            id="facebook-pixel"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
+          {/* Facebook Pixel */}
+          {process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID && (
+            <Script
+              id="facebook-pixel"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
                 !function(f,b,e,v,n,t,s)
                 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -172,72 +174,73 @@ export default function RootLayout({
                 fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID}');
                 fbq('track', 'PageView');
               `,
-            }}
-          />
-        )}
+              }}
+            />
+          )}
 
-        {/* Google Analytics - Direct Integration */}
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-KXTFWR75V4"
-        />
-        <Script
-          id="google-analytics-direct"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+          {/* Google Analytics - Direct Integration */}
+          <Script
+            strategy="afterInteractive"
+            src="https://www.googletagmanager.com/gtag/js?id=G-KXTFWR75V4"
+          />
+          <Script
+            id="google-analytics-direct"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-KXTFWR75V4');
             `,
-          }}
-        />
+            }}
+          />
 
-        {/* Microsoft Clarity */}
-        <Script
-          id="microsoft-clarity"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+          {/* Microsoft Clarity */}
+          <Script
+            id="microsoft-clarity"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
               (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
               })(window, document, "clarity", "script", "u6hrhbzb63");
             `,
-          }}
-        />
+            }}
+          />
 
-        {/* Polar Checkout Script */}
-        <Script
-          src="https://cdn.jsdelivr.net/npm/@polar-sh/checkout@0.1/dist/embed.global.js"
-          strategy="afterInteractive"
-          defer
-          data-auto-init
-        />
-        
-        <ErrorBoundary>
-          <ClientOnlyFortress>
-            <ClientOnlyBackground />
-            <LoadingBar />
-            <RouteLoader />
-            <ScrollProgressIndicator />
-            <Navigation />
-            <PageTransition>
-              <main id="main-content" className="pt-20 page-enter relative z-10">
-                {children}
-              </main>
-            </PageTransition>
-            <Footer />
-            {/* Vercel Analytics - Disabled to reduce client-side JS */}
-            {/* <Analytics />
+          {/* Polar Checkout Script */}
+          <Script
+            src="https://cdn.jsdelivr.net/npm/@polar-sh/checkout@0.1/dist/embed.global.js"
+            strategy="afterInteractive"
+            defer
+            data-auto-init
+          />
+
+          <ErrorBoundary>
+            <ClientOnlyFortress>
+              <ClientOnlyBackground />
+              <LoadingBar />
+              <RouteLoader />
+              <ScrollProgressIndicator />
+              <Navigation />
+              <PageTransition>
+                <main id="main-content" className="pt-20 page-enter relative z-10">
+                  {children}
+                </main>
+              </PageTransition>
+              <Footer />
+              {/* Vercel Analytics - Disabled to reduce client-side JS */}
+              {/* <Analytics />
             <SpeedInsights /> */}
-          </ClientOnlyFortress>
-        </ErrorBoundary>
+            </ClientOnlyFortress>
+          </ErrorBoundary>
 
-        {/* Web Vitals Performance Monitoring */}
-        <WebVitals />
+          {/* Web Vitals Performance Monitoring */}
+          <WebVitals />
+        </AuthProvider>
       </body>
     </html>
   );
