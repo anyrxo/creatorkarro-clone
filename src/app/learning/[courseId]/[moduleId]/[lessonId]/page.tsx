@@ -25,8 +25,8 @@ export default function LessonPage() {
     const [notes, setNotes] = useState('')
 
     const course = learningContent[courseId]
-    const module = course?.modules.find(m => m.id === moduleId)
-    const lesson = module?.lessons.find(l => l.id === lessonId)
+    const courseModule = course?.modules.find(m => m.id === moduleId)
+    const lesson = courseModule?.lessons.find(l => l.id === lessonId)
 
     // Load checked items and notes from local storage
     useEffect(() => {
@@ -55,13 +55,13 @@ export default function LessonPage() {
         }
     }
 
-    if (!course || !module || !lesson) return <div>Not found</div>
+    if (!course || !courseModule || !lesson) return <div>Not found</div>
 
     const isCompleted = isLessonComplete(lesson.id)
 
     // Find next lesson logic
-    const currentLessonIndex = module.lessons.findIndex(l => l.id === lessonId)
-    const nextLesson = module.lessons[currentLessonIndex + 1]
+    const currentLessonIndex = courseModule.lessons.findIndex(l => l.id === lessonId)
+    const nextLesson = courseModule.lessons[currentLessonIndex + 1]
 
     let nextLessonLink = null
     if (nextLesson) {
@@ -147,7 +147,7 @@ export default function LessonPage() {
                     <div className="flex items-center gap-4 text-sm text-zinc-400 mb-8">
                         <span className="flex items-center gap-1">
                             <FileText className="w-4 h-4" />
-                            Module: {module.title}
+                            Module: {courseModule.title}
                         </span>
                         <span className="w-1 h-1 bg-zinc-700 rounded-full" />
                         <span>{lesson.duration}</span>
@@ -176,8 +176,8 @@ export default function LessonPage() {
                                                 className="flex items-start gap-3 text-zinc-300 cursor-pointer group select-none"
                                             >
                                                 <div className={`w-5 h-5 rounded border flex items-center justify-center mt-0.5 flex-shrink-0 transition-all duration-200 ${checkedItems[item.id]
-                                                        ? 'bg-purple-500 border-purple-500'
-                                                        : 'border-zinc-700 group-hover:border-purple-500'
+                                                    ? 'bg-purple-500 border-purple-500'
+                                                    : 'border-zinc-700 group-hover:border-purple-500'
                                                     }`}>
                                                     {checkedItems[item.id] && <CheckCircle className="w-3.5 h-3.5 text-white" />}
                                                 </div>

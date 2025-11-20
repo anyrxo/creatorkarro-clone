@@ -21,10 +21,10 @@ export default function CourseOverviewPage() {
     let nextLessonUrl = null
     let nextLessonTitle = ""
 
-    for (const module of course.modules) {
-        for (const lesson of module.lessons) {
+    for (const courseModule of course.modules) {
+        for (const lesson of courseModule.lessons) {
             if (!isLessonComplete(lesson.id)) {
-                nextLessonUrl = `/learning/${courseId}/${module.id}/${lesson.id}`
+                nextLessonUrl = `/learning/${courseId}/${courseModule.id}/${lesson.id}`
                 nextLessonTitle = lesson.title
                 break
             }
@@ -131,26 +131,26 @@ export default function CourseOverviewPage() {
                 {/* Modules List */}
                 <h2 className="text-2xl font-bold text-white mb-6">Course Modules</h2>
                 <div className="space-y-4">
-                    {course.modules.map((module, index) => {
-                        const completedLessons = module.lessons.filter(l => isLessonComplete(l.id)).length
-                        const totalLessons = module.lessons.length
+                    {course.modules.map((courseModule, index) => {
+                        const completedLessons = courseModule.lessons.filter(l => isLessonComplete(l.id)).length
+                        const totalLessons = courseModule.lessons.length
                         const isModuleComplete = completedLessons === totalLessons && totalLessons > 0
                         const isLocked = index > 0 && !course.modules[index - 1].lessons.every(l => isLessonComplete(l.id))
                         // For now, we won't strictly lock modules, but we can visually indicate it
 
                         return (
                             <div
-                                key={module.id}
+                                key={courseModule.id}
                                 className={`group relative overflow-hidden rounded-2xl border transition-all duration-300 ${isModuleComplete
-                                        ? 'bg-zinc-900/20 border-green-500/20 hover:border-green-500/40'
-                                        : 'bg-zinc-900/40 border-white/5 hover:border-white/10'
+                                    ? 'bg-zinc-900/20 border-green-500/20 hover:border-green-500/40'
+                                    : 'bg-zinc-900/40 border-white/5 hover:border-white/10'
                                     }`}
                             >
                                 <div className="p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6">
                                     {/* Module Number/Status */}
                                     <div className={`w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold border flex-shrink-0 ${isModuleComplete
-                                            ? 'bg-green-500/10 text-green-400 border-green-500/20'
-                                            : 'bg-white/5 text-zinc-500 border-white/10'
+                                        ? 'bg-green-500/10 text-green-400 border-green-500/20'
+                                        : 'bg-white/5 text-zinc-500 border-white/10'
                                         }`}>
                                         {isModuleComplete ? <CheckCircle className="w-6 h-6" /> : index + 1}
                                     </div>
@@ -158,7 +158,7 @@ export default function CourseOverviewPage() {
                                     {/* Content */}
                                     <div className="flex-1">
                                         <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
-                                            {module.title}
+                                            {courseModule.title}
                                         </h3>
                                         <div className="flex items-center gap-4 text-sm text-zinc-500">
                                             <span>{totalLessons} Lessons</span>
@@ -169,12 +169,12 @@ export default function CourseOverviewPage() {
 
                                     {/* Action */}
                                     <div className="flex items-center gap-4">
-                                        {module.lessons.length > 0 && (
+                                        {courseModule.lessons.length > 0 && (
                                             <Link
-                                                href={`/learning/${courseId}/${module.id}/${module.lessons[0].id}`}
+                                                href={`/learning/${courseId}/${courseModule.id}/${courseModule.lessons[0].id}`}
                                                 className={`px-6 py-3 rounded-xl font-medium text-sm transition-all ${isModuleComplete
-                                                        ? 'bg-white/5 text-white hover:bg-white/10'
-                                                        : 'bg-white text-black hover:bg-zinc-200'
+                                                    ? 'bg-white/5 text-white hover:bg-white/10'
+                                                    : 'bg-white text-black hover:bg-zinc-200'
                                                     }`}
                                             >
                                                 {isModuleComplete ? 'Review Module' : 'Start Module'}
