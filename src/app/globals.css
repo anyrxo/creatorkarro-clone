@@ -1,10 +1,32 @@
-/* Google Fonts moved to layout.tsx for better loading optimization */
+﻿/* Google Fonts moved to layout.tsx for better loading optimization */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
 .perspective-1000 {
   perspective: 1000px;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
 }
 
 @layer base {

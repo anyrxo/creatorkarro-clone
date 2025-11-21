@@ -1,9 +1,10 @@
-'use client'
+﻿'use client'
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 import { learningContent } from '@/data/learning-content'
 import { useUser } from '@clerk/nextjs'
 import { supabase } from '@/lib/supabase'
+import { XP_REWARDS } from '@/lib/gamification'
 
 interface CourseContextType {
     completedLessons: string[]
@@ -43,7 +44,6 @@ export function CourseProvider({ children }: { children: ReactNode }) {
             }
 
             try {
-                // Fetch completed lessons from Supabase
                 const { data, error } = await supabase
                     .from('user_progress')
                     .select('lesson_id')
@@ -56,7 +56,6 @@ export function CourseProvider({ children }: { children: ReactNode }) {
 
                 if (data) {
                     const dbLessons = data.map(row => row.lesson_id)
-                    // Merge with local storage (union)
                     const mergedLessons = Array.from(new Set([...completedLessons, ...dbLessons]))
 
                     if (mergedLessons.length !== completedLessons.length) {
@@ -73,7 +72,6 @@ export function CourseProvider({ children }: { children: ReactNode }) {
         if (isUserLoaded) {
             syncWithSupabase()
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, isUserLoaded, isLoaded])
 
     // Save to local storage on change
@@ -84,7 +82,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
     }, [completedLessons, isLoaded])
 
     const markLessonComplete = async (courseId: string, lessonId: string) => {
-        const uniqueLessonId = `${courseId}::${lessonId}`
+        const uniqueLessonId = ${courseId}::
         
         // Optimistic update
         setCompletedLessons(prev => {
@@ -95,26 +93,103 @@ export function CourseProvider({ children }: { children: ReactNode }) {
         // Save to Supabase if user is logged in
         if (user) {
             try {
+                const today = new Date().toISOString().split('T')[0]
+                
                 const { error } = await supabase
                     .from('user_progress')
                     .upsert({
                         user_id: user.id,
                         lesson_id: uniqueLessonId,
                         course_id: courseId,
-                        completed_at: new Date().toISOString()
+                        completed_at: new Date().toISOString(),
+                        completed_date: today
                     }, { onConflict: 'user_id, lesson_id' })
 
                 if (error) {
                     console.error('Error saving progress to Supabase:', error)
+                    return
                 }
+
+                // Award XP and update streak
+                await awardLessonXP(user.id, today)
             } catch (err) {
                 console.error('Failed to save to Supabase:', err)
             }
         }
     }
 
+    const awardLessonXP = async (userId: string, completedDate: string) => {
+        try {
+            // Check if this is first lesson today
+            const { data: todayLessons } = await supabase
+                .from('user_progress')
+                .select('lesson_id')
+                .eq('user_id', userId)
+                .eq('completed_date', completedDate)
+
+            const isFirstToday = todayLessons && todayLessons.length === 1
+            const xpToAward = XP_REWARDS.LESSON_COMPLETE + (isFirstToday ? XP_REWARDS.FIRST_LESSON_TODAY : 0)
+
+            // Update streak
+            const { data: stats } = await supabase
+                .from('user_stats')
+                .select('*')
+                .eq('user_id', userId)
+                .single()
+
+            if (stats) {
+                const lastActivity = stats.last_activity_date
+                let newStreak = stats.current_streak
+
+                if (!lastActivity) {
+                    newStreak = 1
+                } else if (lastActivity === completedDate) {
+                    // Same day, no change
+                } else {
+                    const yesterday = new Date()
+                    yesterday.setDate(yesterday.getDate() - 1)
+                    const yesterdayStr = yesterday.toISOString().split('T')[0]
+
+                    if (lastActivity === yesterdayStr) {
+                        newStreak += 1
+                        // Bonus XP for streak
+                        const streakBonus = Math.min(newStreak * XP_REWARDS.DAILY_STREAK_BONUS, 100)
+                        await supabase
+                            .from('user_stats')
+                            .update({
+                                total_xp: stats.total_xp + xpToAward + streakBonus,
+                                current_level: Math.floor(Math.sqrt((stats.total_xp + xpToAward + streakBonus) / 75)) + 1,
+                                current_streak: newStreak,
+                                longest_streak: Math.max(stats.longest_streak, newStreak),
+                                last_activity_date: completedDate,
+                                total_lessons_completed: stats.total_lessons_completed + 1
+                            })
+                            .eq('user_id', userId)
+                        return
+                    } else {
+                        newStreak = 1
+                    }
+                }
+
+                await supabase
+                    .from('user_stats')
+                    .update({
+                        total_xp: stats.total_xp + xpToAward,
+                        current_level: Math.floor(Math.sqrt((stats.total_xp + xpToAward) / 75)) + 1,
+                        current_streak: newStreak,
+                        longest_streak: Math.max(stats.longest_streak, newStreak),
+                        last_activity_date: completedDate,
+                        total_lessons_completed: stats.total_lessons_completed + 1
+                    })
+                    .eq('user_id', userId)
+            }
+        } catch (error) {
+            console.error('Failed to award XP:', error)
+        }
+    }
+
     const isLessonComplete = (courseId: string, lessonId: string) => {
-        return completedLessons.includes(`${courseId}::${lessonId}`)
+        return completedLessons.includes(${courseId}::)
     }
 
     const getCourseProgress = (courseId: string) => {
