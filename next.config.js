@@ -2,8 +2,7 @@
 const nextConfig = {
   // Use standalone mode instead of export to avoid error page generation issues
   output: 'standalone',
-  trailingSlash: true,
-  skipTrailingSlashRedirect: false,
+  // Removed trailingSlash to fix Clerk webhook 308 redirects
 
   images: {
     remotePatterns: [
