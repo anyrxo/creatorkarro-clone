@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 import { learningContent } from '@/data/learning-content'
@@ -82,7 +82,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
     }, [completedLessons, isLoaded])
 
     const markLessonComplete = async (courseId: string, lessonId: string) => {
-        const uniqueLessonId = ``${courseId}::${lessonId}`${lessonId}`
+        const uniqueLessonId = `${courseId}::${lessonId}`
         
         // Optimistic update
         setCompletedLessons(prev => {

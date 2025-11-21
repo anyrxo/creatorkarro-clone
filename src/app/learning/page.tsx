@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { motion } from 'framer-motion'
 import CourseCard from '@/components/learning/CourseCard'
@@ -134,7 +134,7 @@ export default function LearningDashboard() {
                     value={totalLessonsCompleted}
                     gradient="from-green-500 to-emerald-500"
                     iconColor="text-green-500"
-                    subtitle={stats?.total_lessons_completed ? All time:  : undefined}
+                    subtitle={stats?.total_lessons_completed ? `All time: ${stats.total_lessons_completed}` : undefined}
                 />
             </div>
 
