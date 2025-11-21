@@ -20,6 +20,7 @@ import { WebVitals } from "./web-vitals";
 import { AuthProvider } from "@/components/auth/AuthProvider";
 import AffiliateTracker from "@/components/AffiliateTracker"; // Import tracking component
 import UserSync from "@/components/auth/UserSync"; // NEW: Import User Sync
+import DisableCopy from "@/components/DisableCopy"; // Import DisableCopy
 import { Suspense } from "react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -133,6 +134,7 @@ export default function RootLayout({
       </head>
       <body className={montserrat.className}>
         <AuthProvider>
+          <DisableCopy />
           <UserSync /> {/* Automatically syncs logged-in users to Supabase */}
           <Suspense fallback={null}>
             <AffiliateTracker /> {/* Track referrals on every page load */}

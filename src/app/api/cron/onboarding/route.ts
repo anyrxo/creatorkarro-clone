@@ -23,14 +23,14 @@ export async function GET(request: Request) {
     const calendlyUrl = 'https://calendly.com/anyrxo/30min'
 
     try {
-        // Get all users who signed up in the last 3 days
-        const threeDaysAgo = new Date()
-        threeDaysAgo.setDate(threeDaysAgo.getDate() - 3)
+        // Get all users who signed up in the last 8 days
+        const eightDaysAgo = new Date()
+        eightDaysAgo.setDate(eightDaysAgo.getDate() - 8)
 
         const { data: recentUsers, error: profilesError } = await supabase
             .from('profiles')
-            .select('user_id, email, first_name, created_at')
-            .gte('created_at', threeDaysAgo.toISOString())
+            .select('user_id, email, first_name, created_at, last_seen_at')
+            .gte('created_at', eightDaysAgo.toISOString())
 
         if (profilesError) {
             console.error('Error fetching profiles:', profilesError)
@@ -38,10 +38,9 @@ export async function GET(request: Request) {
         }
 
         const emailsSent = {
-            freeDay2: 0,
-            freeDay3: 0,
-            paidDay2: 0,
-            paidDay3: 0,
+            free: 0,
+            paid: 0,
+            nudge: 0,
             errors: 0
         }
 
@@ -50,6 +49,7 @@ export async function GET(request: Request) {
             const hoursSinceSignup = (Date.now() - createdAt.getTime()) / (1000 * 60 * 60)
             const email = user.email
             const name = user.first_name || email.split('@')[0] || 'there'
+            const lastSeenAt = user.last_seen_at ? new Date(user.last_seen_at) : null
 
             try {
                 // Check if user has a claimed license key (PAID user)
@@ -67,7 +67,27 @@ export async function GET(request: Request) {
                     const claimedAt = new Date(licenseKey.claimed_at)
                     const hoursSinceClaim = (Date.now() - claimedAt.getTime()) / (1000 * 60 * 60)
 
-                    // Day 2: Implementation Focus (24 hours after claim)
+                    // Check for inactivity Nudge (if inactive for > 3 days)
+                    if (lastSeenAt) {
+                        const hoursSinceLastSeen = (Date.now() - lastSeenAt.getTime()) / (1000 * 60 * 60)
+                        if (hoursSinceLastSeen > 72 && hoursSinceLastSeen < 73) {
+                            // Send Nudge Email (We'll use Day 3 template as fallback if nudge isn't ready, or just skip)
+                            // For now, let's assume we added it. If not, we skip.
+                            if (PaidUserEmails.nudgeInactivity) {
+                                await resend.emails.send({
+                                    from: 'IImagined Access <access@notifications.iimagined.ai>',
+                                    to: [email],
+                                    subject: 'We Miss You - Don\'t Lose Momentum',
+                                    html: PaidUserEmails.nudgeInactivity(name, dashboardUrl)
+                                })
+                                emailsSent.nudge++
+                                console.log(`Sent Nudge email to ${email}`)
+                                continue; // Skip regular sequence if nudging
+                            }
+                        }
+                    }
+
+                    // Regular Paid Sequence
                     if (hoursSinceClaim >= 24 && hoursSinceClaim < 25) {
                         await resend.emails.send({
                             from: 'IImagined Access <access@notifications.iimagined.ai>',
@@ -75,24 +95,51 @@ export async function GET(request: Request) {
                             subject: 'Stop Learning, Start Building',
                             html: PaidUserEmails.day2Implementation(name, dashboardUrl, calendlyUrl)
                         })
-                        emailsSent.paidDay2++
-                        console.log(`Sent PAID Day 2 email to ${email}`)
-                    }
-
-                    // Day 3: Results & Accountability (48 hours after claim)
-                    if (hoursSinceClaim >= 48 && hoursSinceClaim < 49) {
+                        emailsSent.paid++
+                    } else if (hoursSinceClaim >= 48 && hoursSinceClaim < 49) {
                         await resend.emails.send({
                             from: 'IImagined Access <access@notifications.iimagined.ai>',
                             to: [email],
                             subject: 'Track Your Progress - What Gets Measured Gets Done',
                             html: PaidUserEmails.day3Results(name, dashboardUrl, calendlyUrl)
                         })
-                        emailsSent.paidDay3++
-                        console.log(`Sent PAID Day 3 email to ${email}`)
+                        emailsSent.paid++
+                    } else if (hoursSinceClaim >= 72 && hoursSinceClaim < 73) {
+                        await resend.emails.send({
+                            from: 'IImagined Access <access@notifications.iimagined.ai>',
+                            to: [email],
+                            subject: 'XP Boost Available - Level Up Your Business',
+                            html: PaidUserEmails.day4XPBoost(name, dashboardUrl)
+                        })
+                        emailsSent.paid++
+                    } else if (hoursSinceClaim >= 96 && hoursSinceClaim < 97) {
+                        await resend.emails.send({
+                            from: 'IImagined Access <access@notifications.iimagined.ai>',
+                            to: [email],
+                            subject: 'Unlock The Inner Circle',
+                            html: PaidUserEmails.day5Community(name, dashboardUrl)
+                        })
+                        emailsSent.paid++
+                    } else if (hoursSinceClaim >= 120 && hoursSinceClaim < 121) {
+                        await resend.emails.send({
+                            from: 'IImagined Access <access@notifications.iimagined.ai>',
+                            to: [email],
+                            subject: 'The $10k Blueprint Visualized',
+                            html: PaidUserEmails.day6Blueprint(name, dashboardUrl)
+                        })
+                        emailsSent.paid++
+                    } else if (hoursSinceClaim >= 144 && hoursSinceClaim < 145) {
+                        await resend.emails.send({
+                            from: 'IImagined Access <access@notifications.iimagined.ai>',
+                            to: [email],
+                            subject: '7-Day Streak Unlocked! 🔥',
+                            html: PaidUserEmails.day7Streak(name, dashboardUrl)
+                        })
+                        emailsSent.paid++
                     }
+
                 } else {
                     // FREE USER SEQUENCE (Conversion)
-                    // Day 2: Case Study (24 hours after signup)
                     if (hoursSinceSignup >= 24 && hoursSinceSignup < 25) {
                         await resend.emails.send({
                             from: 'IImagined Access <access@notifications.iimagined.ai>',
@@ -100,20 +147,47 @@ export async function GET(request: Request) {
                             subject: 'How Marcus Went From $0 to $23K/Month In 90 Days',
                             html: FreeUserEmails.day2CaseStudy(name, pricingUrl)
                         })
-                        emailsSent.freeDay2++
-                        console.log(`Sent FREE Day 2 email to ${email}`)
-                    }
-
-                    // Day 3: Last Chance + Scarcity (48 hours after signup)
-                    if (hoursSinceSignup >= 48 && hoursSinceSignup < 49) {
+                        emailsSent.free++
+                    } else if (hoursSinceSignup >= 48 && hoursSinceSignup < 49) {
                         await resend.emails.send({
                             from: 'IImagined Access <access@notifications.iimagined.ai>',
                             to: [email],
                             subject: 'The Price Is Going Up - Last Chance At $99',
                             html: FreeUserEmails.day3LastChance(name, pricingUrl)
                         })
-                        emailsSent.freeDay3++
-                        console.log(`Sent FREE Day 3 email to ${email}`)
+                        emailsSent.free++
+                    } else if (hoursSinceSignup >= 72 && hoursSinceSignup < 73) {
+                        await resend.emails.send({
+                            from: 'IImagined Access <access@notifications.iimagined.ai>',
+                            to: [email],
+                            subject: 'The Unfair Advantage You\'re Ignoring',
+                            html: FreeUserEmails.day4Automation(name, pricingUrl)
+                        })
+                        emailsSent.free++
+                    } else if (hoursSinceSignup >= 96 && hoursSinceSignup < 97) {
+                        await resend.emails.send({
+                            from: 'IImagined Access <access@notifications.iimagined.ai>',
+                            to: [email],
+                            subject: 'How to Make Money While You Sleep',
+                            html: FreeUserEmails.day5SleepMoney(name, pricingUrl)
+                        })
+                        emailsSent.free++
+                    } else if (hoursSinceSignup >= 120 && hoursSinceSignup < 121) {
+                        await resend.emails.send({
+                            from: 'IImagined Access <access@notifications.iimagined.ai>',
+                            to: [email],
+                            subject: 'Is This Right For You? Let\'s Be Honest',
+                            html: FreeUserEmails.day6Objections(name, pricingUrl)
+                        })
+                        emailsSent.free++
+                    } else if (hoursSinceSignup >= 144 && hoursSinceSignup < 145) {
+                        await resend.emails.send({
+                            from: 'IImagined Access <access@notifications.iimagined.ai>',
+                            to: [email],
+                            subject: 'Final Notice: Account Status Update',
+                            html: FreeUserEmails.day7Final(name, pricingUrl)
+                        })
+                        emailsSent.free++
                     }
                 }
             } catch (emailError) {

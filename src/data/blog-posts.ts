@@ -24,7 +24,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Digital Products",
     "date": "Nov 15, 2025",
     "readTime": 75,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ai era skills",
       "future proof skills",
@@ -44,7 +44,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 11,
-    "featured": true,
+    "featured": false,
     "tags": [
       "business automation tools",
       "workflow automation",
@@ -64,7 +64,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram Growth",
     "date": "Nov 15, 2025",
     "readTime": 20,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram growth hacks 2026",
       "instagram marketing",
@@ -84,7 +84,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 26,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ES scalping",
       "E-mini S&P scalping",
@@ -104,7 +104,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 15,
-    "featured": true,
+    "featured": false,
     "tags": [
       "comfyui workflows",
       "advanced comfyui",
@@ -124,7 +124,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "agent to agent workflows",
       "n8n agent to agent communication automation tutorial",
@@ -144,7 +144,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 24,
-    "featured": true,
+    "featured": false,
     "tags": [
       "agentic AI workflows",
       "how to build agentic AI workflows with N8N and Claude",
@@ -164,7 +164,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "AI agent automation",
       "how to build AI agents for business automation 2026",
@@ -184,7 +184,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ai automation",
       "ai automation for beginners",
@@ -204,7 +204,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ai automation",
       "business automation",
@@ -224,7 +224,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 18,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ai automation",
       "n8n ai integration",
@@ -284,7 +284,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Digital Products",
     "date": "Nov 15, 2025",
     "readTime": 64,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ai content income",
       "ai content creation",
@@ -304,7 +304,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Digital Products",
     "date": "Nov 15, 2025",
     "readTime": 11,
-    "featured": true,
+    "featured": false,
     "tags": [
       "content",
       "opportunity",
@@ -324,7 +324,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "AI decision making automation",
       "automated decision making with AI workflows",
@@ -344,7 +344,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 27,
-    "featured": true,
+    "featured": false,
     "tags": [
       "AI email automation",
       "AI powered email marketing automation high conversion",
@@ -364,7 +364,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ai image generation",
       "ai images for influencers",
@@ -384,7 +384,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 11,
-    "featured": true,
+    "featured": false,
     "tags": [
       "image",
       "generation",
@@ -404,7 +404,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 20,
-    "featured": true,
+    "featured": false,
     "tags": [
       "AI influencer agency",
       "scale AI influencers",
@@ -423,7 +423,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 16,
-    "featured": true,
+    "featured": false,
     "tags": [
       "AI influencer automation",
       "content calendar",
@@ -442,7 +442,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 15,
-    "featured": true,
+    "featured": false,
     "tags": [
       "AI influencer legal",
       "FTC disclosure",
@@ -461,7 +461,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 24,
-    "featured": true,
+    "featured": false,
     "tags": [
       "AI influencer monetization",
       "virtual influencer revenue",
@@ -480,7 +480,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Business",
     "date": "Nov 15, 2025",
     "readTime": 63,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ai influencer",
       "ai influencer success",
@@ -500,7 +500,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 23,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ai influencer trends",
       "virtual influencer",
@@ -520,7 +520,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 31,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ai influencers",
       "virtual influencers",
@@ -789,7 +789,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 16,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ChatGPT API workflows",
       "ChatGPT API automation cost effective workflows",
@@ -809,7 +809,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 25,
-    "featured": true,
+    "featured": false,
     "tags": [
       "chatgpt automation tips",
       "chatgpt automation",
@@ -829,7 +829,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "chatgpt",
       "automation",
@@ -849,7 +849,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 20,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ChatGPT N8N integration",
       "how to connect ChatGPT API to N8N workflows 2026",
@@ -869,7 +869,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "claude",
       "agentic",
@@ -889,7 +889,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "claude",
       "gpt",
@@ -909,7 +909,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "Claude N8N automation",
       "how to automate workflows with Claude API and N8N 2026",
@@ -929,7 +929,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "cloud",
       "automation",
@@ -949,7 +949,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 24,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ComfyUI",
       "AI influencers",
@@ -969,7 +969,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 16,
-    "featured": true,
+    "featured": false,
     "tags": [
       "comfyui installation",
       "comfyui setup",
@@ -989,7 +989,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 46,
-    "featured": true,
+    "featured": false,
     "tags": [
       "comfyui success stories 2026",
       "comfyui business case studies",
@@ -1009,7 +1009,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "comfyui tutorial",
       "comfyui guide",
@@ -1029,7 +1029,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 36,
-    "featured": true,
+    "featured": false,
     "tags": [
       "comfyui comparison 2026",
       "flux vs comfyui",
@@ -1049,7 +1049,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "comfyui vs stable diffusion",
       "ai image tools comparison",
@@ -1069,7 +1069,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "comfyui",
       "workflow",
@@ -1089,7 +1089,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Development Tools",
     "date": "Nov 15, 2025",
     "readTime": 18,
-    "featured": true,
+    "featured": false,
     "tags": [
       "composer agent",
       "composer cursor",
@@ -1109,7 +1109,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 17,
-    "featured": true,
+    "featured": false,
     "tags": []
   },
   {
@@ -1120,7 +1120,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "content",
       "scaling",
@@ -1140,7 +1140,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 54,
-    "featured": true,
+    "featured": false,
     "tags": [
       "faceless youtube channel 2026",
       "create faceless youtube",
@@ -1160,7 +1160,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Digital Products",
     "date": "Nov 15, 2025",
     "readTime": 17,
-    "featured": true,
+    "featured": false,
     "tags": [
       "create online courses",
       "online course creation",
@@ -1180,7 +1180,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 20,
-    "featured": true,
+    "featured": false,
     "tags": [
       "creating ai influencers",
       "ai influencer creation",
@@ -1200,7 +1200,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Development Tools",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "cursor ai",
       "cursor ide",
@@ -1220,7 +1220,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "dart ai",
       "dart ai project manager",
@@ -1240,7 +1240,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 11,
-    "featured": true,
+    "featured": false,
     "tags": [
       "database",
       "automation",
@@ -1260,7 +1260,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 38,
-    "featured": true,
+    "featured": false,
     "tags": [
       "deepseek janus pro 7b",
       "multimodal ai model",
@@ -1280,7 +1280,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "deepseek",
       "market",
@@ -1300,7 +1300,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "deepseek r1",
       "deepseek r1 browser use",
@@ -1320,7 +1320,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 29,
-    "featured": true,
+    "featured": false,
     "tags": [
       "deepseek r1 reasoning",
       "open source reasoning ai",
@@ -1340,7 +1340,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 29,
-    "featured": true,
+    "featured": false,
     "tags": [
       "deepseek r2 reasoning ai",
       "open source reasoning model",
@@ -1360,7 +1360,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "devops",
       "automation",
@@ -1380,7 +1380,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Digital Products & Business",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "digital product launch",
       "product launch strategy",
@@ -1400,7 +1400,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "digital product pricing",
       "pricing strategy",
@@ -1420,7 +1420,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Digital Products & Business",
     "date": "Nov 15, 2025",
     "readTime": 24,
-    "featured": true,
+    "featured": false,
     "tags": [
       "digital product validation",
       "validate product idea",
@@ -1440,7 +1440,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 26,
-    "featured": true,
+    "featured": false,
     "tags": [
       "email marketing automation",
       "n8n email automation",
@@ -1460,7 +1460,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Marketing",
     "date": "Nov 15, 2025",
     "readTime": 41,
-    "featured": true,
+    "featured": false,
     "tags": [
       "email marketing 2026",
       "email marketing guide",
@@ -1480,7 +1480,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 20,
-    "featured": true,
+    "featured": false,
     "tags": [
       "enterprise automation platforms",
       "best enterprise automation platform comparison 2026",
@@ -1500,7 +1500,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Trading & Finance",
     "date": "Nov 15, 2025",
     "readTime": 18,
-    "featured": true,
+    "featured": false,
     "tags": [
       "es futures",
       "emini sp500",
@@ -1517,7 +1517,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "essential",
       "n8n",
@@ -1537,7 +1537,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "faceless",
       "content",
@@ -1557,7 +1557,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 22,
-    "featured": true,
+    "featured": false,
     "tags": [
       "FTMO challenge",
       "FTMO pass first attempt",
@@ -1577,7 +1577,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Trading & Finance",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "ftmo",
       "topstep",
@@ -1595,7 +1595,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Trading & Finance",
     "date": "Nov 15, 2025",
     "readTime": 17,
-    "featured": true,
+    "featured": false,
     "tags": [
       "futures trading",
       "how to trade futures",
@@ -1613,7 +1613,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 24,
-    "featured": true,
+    "featured": false,
     "tags": [
       "trading psychology",
       "futures trading mindset",
@@ -1633,7 +1633,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "gemini 2 pro bolt.new",
       "bolt diy full stack",
@@ -1653,7 +1653,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 28,
-    "featured": true,
+    "featured": false,
     "tags": [
       "gemini 2.5 flash",
       "gemini flash model",
@@ -1673,7 +1673,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 20,
-    "featured": true,
+    "featured": false,
     "tags": [
       "GPT-4 automation",
       "build custom GPT-4 assistant with N8N automation",
@@ -1693,7 +1693,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 51,
-    "featured": true,
+    "featured": false,
     "tags": [
       "gpt 4.5 vs claude sonnet 4.5",
       "best ai model 2026",
@@ -1713,7 +1713,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "gpt5",
       "roadmap",
@@ -1733,7 +1733,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 17,
-    "featured": true,
+    "featured": false,
     "tags": [
       "AI influencer brand deals",
       "sponsorship rates",
@@ -1752,7 +1752,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Digital Products & Business",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "create digital products",
       "digital product ideas",
@@ -1772,7 +1772,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram & Social Media",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "get instagram followers",
       "10k followers",
@@ -1792,7 +1792,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram Growth",
     "date": "Nov 15, 2025",
     "readTime": 90,
-    "featured": true,
+    "featured": false,
     "tags": [
       "500k instagram followers",
       "instagram growth strategy 2026",
@@ -1812,7 +1812,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 20,
-    "featured": true,
+    "featured": false,
     "tags": [
       "make money ai influencers",
       "ai influencer income",
@@ -1832,7 +1832,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 18,
-    "featured": true,
+    "featured": false,
     "tags": [
       "how",
       "sell",
@@ -1852,7 +1852,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 39,
-    "featured": true,
+    "featured": false,
     "tags": [
       "hr automation systems",
       "hr automation software",
@@ -1872,7 +1872,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 23,
-    "featured": true,
+    "featured": false,
     "tags": [
       "hyperautomation strategy",
       "hyperautomation implementation for small business 2026",
@@ -1892,7 +1892,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 18,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram algorithm",
       "instagram algorithm 2026",
@@ -1912,7 +1912,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram Growth",
     "date": "Nov 15, 2025",
     "readTime": 18,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram collabs",
       "instagram collaboration",
@@ -1932,7 +1932,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram Growth",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram content pillars",
       "content strategy",
@@ -1952,7 +1952,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram & Social Media",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram content strategy",
       "instagram content",
@@ -1972,7 +1972,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram growth 2026",
       "instagram marketing",
@@ -1992,7 +1992,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram Growth",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram hashtags",
       "hashtag strategy",
@@ -2012,7 +2012,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram Growth",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram",
       "ignited",
@@ -2032,7 +2032,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram & Social Media",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram influencer marketing",
       "personal brand instagram",
@@ -2052,7 +2052,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram Monetization",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram monetization",
       "make money on instagram",
@@ -2072,7 +2072,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram monetization",
       "make money instagram",
@@ -2092,7 +2092,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram reels algorithm",
       "viral reels",
@@ -2112,7 +2112,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram",
       "reels",
@@ -2132,7 +2132,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Instagram Growth",
     "date": "Nov 15, 2025",
     "readTime": 27,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram reels",
       "viral reels",
@@ -2152,7 +2152,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 30,
-    "featured": true,
+    "featured": false,
     "tags": [
       "instagram story marketing",
       "instagram stories",
@@ -2172,7 +2172,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "intelligent process automation",
       "intelligent automation vs RPA whats the difference",
@@ -2192,7 +2192,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "inventory management automation",
       "automated inventory tracking",
@@ -2212,7 +2212,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "iot",
       "automation",
@@ -2232,7 +2232,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 29,
-    "featured": true,
+    "featured": false,
     "tags": [
       "llama 4",
       "llama 4 model",
@@ -2252,7 +2252,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "LoRA training",
       "AI influencer consistency",
@@ -2271,7 +2271,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Trading & Finance",
     "date": "Nov 15, 2025",
     "readTime": 18,
-    "featured": true,
+    "featured": false,
     "tags": [
       "macd indicator",
       "macd strategy",
@@ -2288,7 +2288,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "machine",
       "learning",
@@ -2308,7 +2308,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 39,
-    "featured": true,
+    "featured": false,
     "tags": [
       "make app automation",
       "make.com guide",
@@ -2328,7 +2328,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Business",
     "date": "Nov 15, 2025",
     "readTime": 53,
-    "featured": true,
+    "featured": false,
     "tags": [
       "make money comfyui",
       "comfyui monetization",
@@ -2348,7 +2348,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "manus ai automation",
       "general automation agent",
@@ -2368,7 +2368,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "mobile",
       "app",
@@ -2388,7 +2388,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 90,
-    "featured": true,
+    "featured": false,
     "tags": [
       "monetize",
       "with",
@@ -2408,7 +2408,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "digital product niches",
       "profitable digital products",
@@ -2428,7 +2428,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 17,
-    "featured": true,
+    "featured": false,
     "tags": [
       "multi-platform influencer",
       "AI influencer strategy",
@@ -2447,7 +2447,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "n8n openai integration",
       "n8n chatgpt automation",
@@ -2467,7 +2467,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "API Integration",
     "date": "Nov 15, 2025",
     "readTime": 13,
-    "featured": true,
+    "featured": false,
     "tags": [
       "n8n api integration",
       "api automation",
@@ -2486,7 +2486,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 30,
-    "featured": true,
+    "featured": false,
     "tags": [
       "n8n crm automation",
       "pipedrive n8n integration",
@@ -2506,7 +2506,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Development",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "N8N custom nodes",
       "create custom N8N nodes tutorial 2026",
@@ -2526,7 +2526,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 15,
-    "featured": true,
+    "featured": false,
     "tags": [
       "n8n database automation",
       "database workflows",
@@ -2546,7 +2546,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Database",
     "date": "Nov 15, 2025",
     "readTime": 17,
-    "featured": true,
+    "featured": false,
     "tags": [
       "N8N database automation",
       "N8N PostgreSQL MySQL automation workflows",
@@ -2566,7 +2566,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Development",
     "date": "Nov 15, 2025",
     "readTime": 17,
-    "featured": true,
+    "featured": false,
     "tags": [
       "N8N error handling",
       "N8N workflow error handling best practices",
@@ -2586,7 +2586,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 26,
-    "featured": true,
+    "featured": false,
     "tags": [
       "n8n for beginners",
       "n8n course",
@@ -2606,7 +2606,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 43,
-    "featured": true,
+    "featured": false,
     "tags": [
       "n8n instagram automation",
       "instagram automation workflow",
@@ -2626,7 +2626,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 18,
-    "featured": true,
+    "featured": false,
     "tags": [
       "N8N self hosting",
       "how to self host N8N complete setup guide",
@@ -2646,7 +2646,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "n8n tutorial 2026",
       "n8n beginner guide",
@@ -2666,7 +2666,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "n8n zapier alternative",
       "zapier vs n8n",
@@ -2686,7 +2686,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "code",
       "automation",
@@ -2706,7 +2706,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "course creation",
       "create online course",
@@ -2726,7 +2726,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Digital Products & Business",
     "date": "Nov 15, 2025",
     "readTime": 29,
-    "featured": true,
+    "featured": false,
     "tags": [
       "course platform comparison",
       "teachable vs gumroad",
@@ -2746,7 +2746,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 22,
-    "featured": true,
+    "featured": false,
     "tags": [
       "order flow trading",
       "volume profile",
@@ -2766,7 +2766,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Digital Business",
     "date": "Nov 15, 2025",
     "readTime": 23,
-    "featured": true,
+    "featured": false,
     "tags": [
       "passive income 2026",
       "passive income blueprint",
@@ -2786,7 +2786,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 81,
-    "featured": true,
+    "featured": false,
     "tags": [
       "personal",
       "brand",
@@ -2806,7 +2806,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Marketing",
     "date": "Nov 15, 2025",
     "readTime": 26,
-    "featured": true,
+    "featured": false,
     "tags": [
       "pinterest automation marketing",
       "pinterest marketing automation",
@@ -2826,7 +2826,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "product",
       "launch",
@@ -2846,7 +2846,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 11,
-    "featured": true,
+    "featured": false,
     "tags": [
       "prompt",
       "engineering",
@@ -2866,7 +2866,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 22,
-    "featured": true,
+    "featured": false,
     "tags": [
       "prop firm comparison",
       "FTMO vs Topstep",
@@ -2886,7 +2886,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 16,
-    "featured": true,
+    "featured": false,
     "tags": [
       "qa automation testing",
       "automated testing tools",
@@ -2906,7 +2906,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Tools",
     "date": "Nov 15, 2025",
     "readTime": 24,
-    "featured": true,
+    "featured": false,
     "tags": [
       "qwen 3",
       "qwen 3 llm",
@@ -2926,7 +2926,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Data & AI",
     "date": "Nov 15, 2025",
     "readTime": 23,
-    "featured": true,
+    "featured": false,
     "tags": [
       "real-time data integration",
       "real time data integration with AI automation 2026",
@@ -2946,7 +2946,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "robotic",
       "process",
@@ -2966,7 +2966,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Development Tools",
     "date": "Nov 15, 2025",
     "readTime": 26,
-    "featured": true,
+    "featured": false,
     "tags": [
       "roocode v3.3",
       "cline alternative",
@@ -2986,7 +2986,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Trading & Finance",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "rsi indicator",
       "rsi trading strategy",
@@ -3004,7 +3004,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 11,
-    "featured": true,
+    "featured": false,
     "tags": [
       "saas",
       "automation",
@@ -3024,7 +3024,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "sales",
       "page",
@@ -3044,7 +3044,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 60,
-    "featured": true,
+    "featured": false,
     "tags": [
       "scale content creation 2026",
       "content scaling strategies",
@@ -3064,7 +3064,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "security",
       "automation",
@@ -3084,7 +3084,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "E-Commerce",
     "date": "Nov 15, 2025",
     "readTime": 33,
-    "featured": true,
+    "featured": false,
     "tags": [
       "sell digital products etsy",
       "etsy digital products",
@@ -3104,7 +3104,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 23,
-    "featured": true,
+    "featured": false,
     "tags": [
       "shopify",
       "automation",
@@ -3124,7 +3124,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 12,
-    "featured": true,
+    "featured": false,
     "tags": [
       "social",
       "media",
@@ -3144,7 +3144,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Influencers",
     "date": "Nov 15, 2025",
     "readTime": 20,
-    "featured": true,
+    "featured": false,
     "tags": [
       "Stable Diffusion vs Midjourney",
       "AI influencer creation",
@@ -3163,7 +3163,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 25,
-    "featured": true,
+    "featured": false,
     "tags": [
       "telegram",
       "bot",
@@ -3183,7 +3183,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "tiktok",
       "growth",
@@ -3203,7 +3203,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Trading & Finance",
     "date": "Nov 15, 2025",
     "readTime": 26,
-    "featured": true,
+    "featured": false,
     "tags": [
       "topstep",
       "myfundedtrader",
@@ -3221,7 +3221,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Trading & Finance",
     "date": "Nov 15, 2025",
     "readTime": 20,
-    "featured": true,
+    "featured": false,
     "tags": [
       "trading psychology",
       "trader mindset",
@@ -3238,7 +3238,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Infrastructure",
     "date": "Nov 15, 2025",
     "readTime": 23,
-    "featured": true,
+    "featured": false,
     "tags": [
       "vectorize rag platform",
       "all in one rag solution",
@@ -3258,7 +3258,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 63,
-    "featured": true,
+    "featured": false,
     "tags": [
       "viral instagram carousels 2026",
       "instagram carousel design",
@@ -3278,7 +3278,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 14,
-    "featured": true,
+    "featured": false,
     "tags": [
       "virtual influencer marketing",
       "ai marketing strategy",
@@ -3298,7 +3298,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 16,
-    "featured": true,
+    "featured": false,
     "tags": [
       "web scraping automation",
       "automated data extraction",
@@ -3318,7 +3318,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 11,
-    "featured": true,
+    "featured": false,
     "tags": [
       "whop",
       "clipping",
@@ -3338,7 +3338,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 11,
-    "featured": true,
+    "featured": false,
     "tags": [
       "why",
       "n8n",
@@ -3358,7 +3358,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI Development Tools",
     "date": "Nov 15, 2025",
     "readTime": 19,
-    "featured": true,
+    "featured": false,
     "tags": [
       "windsurf ai",
       "windsurf ide",
@@ -3378,7 +3378,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 16,
-    "featured": true,
+    "featured": false,
     "tags": []
   },
   {
@@ -3389,7 +3389,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "AI & Automation",
     "date": "Nov 15, 2025",
     "readTime": 21,
-    "featured": true,
+    "featured": false,
     "tags": [
       "workflow automation ROI",
       "calculate workflow automation cost savings and ROI",
@@ -3409,7 +3409,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Technology",
     "date": "Nov 15, 2025",
     "readTime": 82,
-    "featured": true,
+    "featured": false,
     "tags": [
       "youtube",
       "shorts",
@@ -3429,7 +3429,7 @@ export const allBlogPosts: BlogPost[] = [
     "category": "Migration",
     "date": "Nov 15, 2025",
     "readTime": 16,
-    "featured": true,
+    "featured": false,
     "tags": [
       "migrate Zapier to N8N",
       "how to migrate from Zapier to N8N complete guide",
@@ -4613,3 +4613,4 @@ export const featuredPosts: BlogPost[] = allBlogPosts
   .sort((a, b) => b.wordCount - a.wordCount)
   .slice(0, 3)
   .map(({ wordCount, ...post }) => post);
+

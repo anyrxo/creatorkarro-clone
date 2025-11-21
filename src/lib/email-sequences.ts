@@ -1,7 +1,7 @@
 // Free User Email Sequence - Convert to Paid
 export const FreeUserEmails = {
-    // Day 1: Welcome + Show What They're Missing
-    day1Welcome: (name: string, dashboardUrl: string, pricingUrl: string) => `
+  // Day 1: Welcome + Show What They're Missing
+  day1Welcome: (name: string, dashboardUrl: string, pricingUrl: string) => `
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -105,8 +105,8 @@ export const FreeUserEmails = {
     </html>
   `,
 
-    // Day 2: Case Study + Urgency
-    day2CaseStudy: (name: string, pricingUrl: string) => `
+  // Day 2: Case Study + Urgency
+  day2CaseStudy: (name: string, pricingUrl: string) => `
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -216,8 +216,8 @@ export const FreeUserEmails = {
     </html>
   `,
 
-    // Day 3: Last Chance + Scarcity
-    day3LastChance: (name: string, pricingUrl: string) => `
+  // Day 3: Last Chance + Scarcity
+  day3LastChance: (name: string, pricingUrl: string) => `
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -328,13 +328,240 @@ export const FreeUserEmails = {
         </table>
       </body>
     </html>
-  `
+  `,
+
+  // Day 4: The Unfair Advantage
+  day4Automation: (name: string, pricingUrl: string) => `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #000000; color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: #000000;">
+          <tr>
+            <td style="padding: 40px 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
+                <tr>
+                  <td style="padding-bottom: 30px; text-align: center;">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                      The Unfair Advantage<br>
+                      <span style="color: #f97316; font-size: 20px;">You're Ignoring</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background: #0f0f0f; border-radius: 16px; padding: 40px; border: 1px solid #1f1f1f;">
+                    <p style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 600;">${name},</p>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Most people work hard. They trade time for money.
+                    </p>
+                    <p style="margin: 0 0 30px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      The top 1%? They build systems that work FOR them.
+                    </p>
+                    <div style="background: rgba(249, 115, 22, 0.1); border-left: 4px solid #f97316; padding: 24px; margin: 30px 0; border-radius: 12px;">
+                      <p style="margin: 0 0 16px 0; color: #ffffff; font-size: 16px; font-weight: 700;">Inside IImagined, you get the "AI Automations" module:</p>
+                      <p style="margin: 0 0 8px 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">✓ Automated Content Creation</p>
+                      <p style="margin: 0 0 8px 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">✓ Automated DM Sales</p>
+                      <p style="margin: 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">✓ Automated Customer Support</p>
+                    </div>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Imagine waking up to sales notifications instead of an alarm clock. That's what automation does.
+                    </p>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" style="padding: 20px 0;">
+                          <a href="${pricingUrl}" style="display: inline-block; background: linear-gradient(90deg, #f97316, #ea580c); color: #ffffff; padding: 18px 48px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);">
+                            Get The Automation Blueprint →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    `,
+
+  // Day 5: Sleep Money
+  day5SleepMoney: (name: string, pricingUrl: string) => `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #000000; color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: #000000;">
+          <tr>
+            <td style="padding: 40px 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
+                <tr>
+                  <td style="padding-bottom: 30px; text-align: center;">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                      How to Make Money<br>
+                      <span style="color: #10b981; font-size: 20px;">While You Sleep (Literally)</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background: #0f0f0f; border-radius: 16px; padding: 40px; border: 1px solid #1f1f1f;">
+                    <p style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 600;">${name},</p>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      "Passive income" is a buzzword. But Digital Products are real.
+                    </p>
+                    <p style="margin: 0 0 30px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Build it once. Sell it forever. No shipping. No inventory. 100% profit margins.
+                    </p>
+                    <div style="background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10b981; padding: 24px; margin: 30px 0; border-radius: 12px;">
+                      <p style="margin: 0 0 16px 0; color: #ffffff; font-size: 16px; font-weight: 700;">Our "Digital Products Empire" course teaches you:</p>
+                      <p style="margin: 0 0 8px 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">✓ How to create ebooks/templates in 24h</p>
+                      <p style="margin: 0 0 8px 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">✓ How to sell without showing your face</p>
+                      <p style="margin: 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">✓ How to automate delivery</p>
+                    </div>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" style="padding: 20px 0;">
+                          <a href="${pricingUrl}" style="display: inline-block; background: linear-gradient(90deg, #10b981, #059669); color: #ffffff; padding: 18px 48px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);">
+                            Start Selling Digital Products →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    `,
+
+  // Day 6: Objection Handling
+  day6Objections: (name: string, pricingUrl: string) => `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #000000; color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: #000000;">
+          <tr>
+            <td style="padding: 40px 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
+                <tr>
+                  <td style="padding-bottom: 30px; text-align: center;">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                      Is This Right For You?<br>
+                      <span style="color: #8b5cf6; font-size: 20px;">Let's Be Honest</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background: #0f0f0f; border-radius: 16px; padding: 40px; border: 1px solid #1f1f1f;">
+                    <p style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 600;">${name},</p>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      You're still on the fence. I get it.
+                    </p>
+                    <div style="margin: 30px 0;">
+                      <p style="color: #ffffff; font-weight: 700; margin-bottom: 8px;">"I don't have time."</p>
+                      <p style="color: #a1a1aa; margin-bottom: 20px;">That's exactly why you need this. Our systems are designed to SAVE you time through automation.</p>
+                      
+                      <p style="color: #ffffff; font-weight: 700; margin-bottom: 8px;">"I don't have experience."</p>
+                      <p style="color: #a1a1aa; margin-bottom: 20px;">Marcus didn't either. He went from 0 to $23k/mo. We teach you from scratch.</p>
+                      
+                      <p style="color: #ffffff; font-weight: 700; margin-bottom: 8px;">"What if it doesn't work?"</p>
+                      <p style="color: #a1a1aa; margin-bottom: 0;">The only way it fails is if you don't start. The systems are proven.</p>
+                    </div>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" style="padding: 20px 0;">
+                          <a href="${pricingUrl}" style="display: inline-block; background: linear-gradient(90deg, #3b82f6, #8b5cf6); color: #ffffff; padding: 18px 48px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);">
+                            Join The Community →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    `,
+
+  // Day 7: Final Notice
+  day7Final: (name: string, pricingUrl: string) => `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #000000; color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: #000000;">
+          <tr>
+            <td style="padding: 40px 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
+                <tr>
+                  <td style="padding-bottom: 30px; text-align: center;">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                      Final Notice<br>
+                      <span style="color: #ef4444; font-size: 20px;">Account Status Update</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background: #0f0f0f; border-radius: 16px; padding: 40px; border: 1px solid #1f1f1f;">
+                    <p style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 600;">${name},</p>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      This is the last email I'm sending you about the upgrade.
+                    </p>
+                    <p style="margin: 0 0 30px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      You have two choices:
+                    </p>
+                    <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 16px;">
+                      <p style="margin: 0; color: #a1a1aa;">1. Keep doing what you're doing. Stay on the sidelines.</p>
+                    </div>
+                    <div style="background: rgba(59, 130, 246, 0.1); border: 1px solid #3b82f6; padding: 20px; border-radius: 12px; margin-bottom: 30px;">
+                      <p style="margin: 0; color: #ffffff; font-weight: 700;">2. Join IImagined. Build your empire. Change your life.</p>
+                    </div>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      The price is going up to $297 soon. Lock in $99 lifetime access while you still can.
+                    </p>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" style="padding: 20px 0;">
+                          <a href="${pricingUrl}" style="display: inline-block; background: linear-gradient(90deg, #ef4444, #dc2626); color: #ffffff; padding: 18px 48px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 30px rgba(239, 68, 68, 0.4);">
+                            Last Chance: Upgrade Now →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    `
 }
 
 // Paid User Email Sequence - Onboard & Activate
 export const PaidUserEmails = {
-    // Day 1: Welcome + Quick Wins
-    day1Welcome: (name: string, dashboardUrl: string, calendlyUrl: string) => `
+  // Day 1: Welcome + Quick Wins
+  day1Welcome: (name: string, dashboardUrl: string, calendlyUrl: string) => `
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -460,8 +687,8 @@ export const PaidUserEmails = {
     </html>
   `,
 
-    // Day 2: Implementation Focus
-    day2Implementation: (name: string, dashboardUrl: string, calendlyUrl: string) => `
+  // Day 2: Implementation Focus
+  day2Implementation: (name: string, dashboardUrl: string, calendlyUrl: string) => `
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -561,8 +788,8 @@ export const PaidUserEmails = {
     </html>
   `,
 
-    // Day 3: Results & Accountability
-    day3Results: (name: string, dashboardUrl: string, calendlyUrl: string) => `
+  // Day 3: Results & Accountability
+  day3Results: (name: string, dashboardUrl: string, calendlyUrl: string) => `
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -668,5 +895,284 @@ export const PaidUserEmails = {
         </table>
       </body>
     </html>
-  `
+  `,
+
+  // Day 4: XP Boost
+  day4XPBoost: (name: string, dashboardUrl: string) => `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #000000; color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: #000000;">
+          <tr>
+            <td style="padding: 40px 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
+                <tr>
+                  <td style="padding-bottom: 30px; text-align: center;">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                      XP Boost Available<br>
+                      <span style="color: #f59e0b; font-size: 20px;">Level Up Your Business</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background: #0f0f0f; border-radius: 16px; padding: 40px; border: 1px solid #1f1f1f;">
+                    <p style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 600;">${name},</p>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      You're doing great. Now let's accelerate.
+                    </p>
+                    <div style="background: rgba(245, 158, 11, 0.1); border-left: 4px solid #f59e0b; padding: 24px; margin: 30px 0; border-radius: 12px;">
+                      <p style="margin: 0 0 16px 0; color: #ffffff; font-size: 16px; font-weight: 700;">Daily Challenge: +500 XP</p>
+                      <p style="margin: 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">
+                        Set up your first automation. It could be an auto-reply, a scheduled post, or a welcome DM.
+                      </p>
+                    </div>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Automation is the key to scaling. Do the work once, get paid forever.
+                    </p>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" style="padding: 20px 0;">
+                          <a href="${dashboardUrl}" style="display: inline-block; background: linear-gradient(90deg, #f59e0b, #d97706); color: #ffffff; padding: 18px 48px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);">
+                            Claim Your XP Boost →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    `,
+
+  // Day 5: Inner Circle
+  day5Community: (name: string, dashboardUrl: string) => `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #000000; color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: #000000;">
+          <tr>
+            <td style="padding: 40px 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
+                <tr>
+                  <td style="padding-bottom: 30px; text-align: center;">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                      Unlock The Inner Circle<br>
+                      <span style="color: #8b5cf6; font-size: 20px;">Your Network is Your Net Worth</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background: #0f0f0f; border-radius: 16px; padding: 40px; border: 1px solid #1f1f1f;">
+                    <p style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 600;">${name},</p>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Building alone is hard. Building together is unstoppable.
+                    </p>
+                    <p style="margin: 0 0 30px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Have you introduced yourself in the community yet?
+                    </p>
+                    <div style="background: rgba(139, 92, 246, 0.1); border-left: 4px solid #8b5cf6; padding: 24px; margin: 30px 0; border-radius: 12px;">
+                      <p style="margin: 0 0 16px 0; color: #ffffff; font-size: 16px; font-weight: 700;">Community Wins This Week:</p>
+                      <p style="margin: 0 0 8px 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">🚀 Alex hit 10k followers</p>
+                      <p style="margin: 0 0 8px 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">💰 Sarah made her first $1k day</p>
+                      <p style="margin: 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">🤝 Mike found a business partner</p>
+                    </div>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" style="padding: 20px 0;">
+                          <a href="${dashboardUrl}" style="display: inline-block; background: linear-gradient(90deg, #8b5cf6, #7c3aed); color: #ffffff; padding: 18px 48px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);">
+                            Join The Conversation →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    `,
+
+  // Day 6: Blueprint
+  day6Blueprint: (name: string, dashboardUrl: string) => `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #000000; color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: #000000;">
+          <tr>
+            <td style="padding: 40px 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
+                <tr>
+                  <td style="padding-bottom: 30px; text-align: center;">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                      The $10k Blueprint<br>
+                      <span style="color: #3b82f6; font-size: 20px;">Visualized</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background: #0f0f0f; border-radius: 16px; padding: 40px; border: 1px solid #1f1f1f;">
+                    <p style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 600;">${name},</p>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Sometimes you need to see the path to believe it.
+                    </p>
+                    <div style="background: rgba(59, 130, 246, 0.1); padding: 24px; margin: 30px 0; border-radius: 12px; border: 1px solid #3b82f6;">
+                      <p style="margin: 0 0 12px 0; color: #ffffff; font-weight: 700;">Phase 1: Foundation ($0-$1k)</p>
+                      <p style="margin: 0 0 20px 0; color: #a1a1aa; font-size: 14px;">Setup profile, first 10 posts, first product.</p>
+                      
+                      <p style="margin: 0 0 12px 0; color: #ffffff; font-weight: 700;">Phase 2: Growth ($1k-$5k)</p>
+                      <p style="margin: 0 0 20px 0; color: #a1a1aa; font-size: 14px;">Viral strategy, email list, automation.</p>
+                      
+                      <p style="margin: 0 0 12px 0; color: #ffffff; font-weight: 700;">Phase 3: Scale ($5k-$10k+)</p>
+                      <p style="margin: 0; color: #a1a1aa; font-size: 14px;">Ads, high-ticket offers, team.</p>
+                    </div>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Where are you? Phase 1? Phase 2?
+                    </p>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" style="padding: 20px 0;">
+                          <a href="${dashboardUrl}" style="display: inline-block; background: linear-gradient(90deg, #3b82f6, #2563eb); color: #ffffff; padding: 18px 48px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);">
+                            Execute The Plan →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    `,
+
+  // Day 7: Streak Celebration
+  day7Streak: (name: string, dashboardUrl: string) => `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #000000; color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: #000000;">
+          <tr>
+            <td style="padding: 40px 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
+                <tr>
+                  <td style="padding-bottom: 30px; text-align: center;">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                      7-Day Streak Unlocked! 🔥<br>
+                      <span style="color: #ef4444; font-size: 20px;">You're On Fire</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background: #0f0f0f; border-radius: 16px; padding: 40px; border: 1px solid #1f1f1f;">
+                    <p style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 600;">${name},</p>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      You've been with us for one week. Most people quit by now. You didn't.
+                    </p>
+                    <div style="text-align: center; margin: 40px 0;">
+                      <div style="display: inline-block; background: linear-gradient(135deg, #ef4444, #f97316); padding: 20px; border-radius: 50%; width: 80px; height: 80px; line-height: 80px; font-size: 40px; box-shadow: 0 0 40px rgba(239, 68, 68, 0.5);">
+                        🔥
+                      </div>
+                      <p style="margin: 20px 0 0 0; color: #ffffff; font-weight: 700; font-size: 20px;">7 Day Streak Badge</p>
+                    </div>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Consistency is the only cheat code. Keep showing up.
+                    </p>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" style="padding: 20px 0;">
+                          <a href="${dashboardUrl}" style="display: inline-block; background: linear-gradient(90deg, #ef4444, #dc2626); color: #ffffff; padding: 18px 48px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 30px rgba(239, 68, 68, 0.4);">
+                            Keep The Streak Alive →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    `,
+
+  // Nudge: Inactivity Warning
+  nudgeInactivity: (name: string, dashboardUrl: string) => `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #000000; color: #ffffff;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: #000000;">
+          <tr>
+            <td style="padding: 40px 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
+                <tr>
+                  <td style="padding-bottom: 30px; text-align: center;">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                      We Miss You<br>
+                      <span style="color: #ef4444; font-size: 20px;">Don't Lose Your Momentum</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background: #0f0f0f; border-radius: 16px; padding: 40px; border: 1px solid #1f1f1f;">
+                    <p style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 600;">${name},</p>
+                    <p style="margin: 0 0 20px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      It's been a few days since we saw you inside IImagined.
+                    </p>
+                    <p style="margin: 0 0 30px 0; color: #e5e5e5; font-size: 16px; line-height: 1.7;">
+                      Success isn't about intensity. It's about consistency.
+                    </p>
+                    <div style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #ef4444; padding: 24px; margin: 30px 0; border-radius: 12px;">
+                      <p style="margin: 0 0 16px 0; color: #ffffff; font-size: 16px; font-weight: 700;">Your Empire Is Waiting</p>
+                      <p style="margin: 0; color: #e5e5e5; font-size: 15px; line-height: 1.6;">
+                        Every day you're not building is a day you're delaying your freedom. Jump back in for just 15 minutes today.
+                      </p>
+                    </div>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" style="padding: 20px 0;">
+                          <a href="${dashboardUrl}" style="display: inline-block; background: linear-gradient(90deg, #ef4444, #dc2626); color: #ffffff; padding: 18px 48px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 30px rgba(239, 68, 68, 0.4);">
+                            Resume Your Progress →
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    `
 }
