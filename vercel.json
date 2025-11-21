@@ -8,5 +8,11 @@
       "NODE_OPTIONS": "--max-old-space-size=8192",
       "NODE_ENV": "production"
     }
-  }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/onboarding",
+      "schedule": "0 * * * *"
+    }
+  ]
 }

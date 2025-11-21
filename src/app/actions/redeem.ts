@@ -5,13 +5,14 @@ import { createClient } from '@supabase/supabase-js'
 import { clerkClient } from '@clerk/nextjs/server'
 import { Resend } from 'resend'
 import { EmailTemplates } from '@/lib/email-templates'
+import { PremiumOnboardingEmails } from '@/lib/premium-onboarding-emails'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function redeemLicenseKey(formData: FormData) {
     const start = Date.now()
     console.log('[Redeem] Start')
-    
+
     const key = formData.get('key') as string
     const user = await currentUser()
 
@@ -27,7 +28,7 @@ export async function redeemLicenseKey(formData: FormData) {
     // Initialize Supabase Client
     const supabaseAdmin = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.SUPABASE_SERVICE_ROLE_KEY! 
+        process.env.SUPABASE_SERVICE_ROLE_KEY!
     )
 
     // 1. Claim the Key
@@ -46,22 +47,30 @@ export async function redeemLicenseKey(formData: FormData) {
 
     if (data === true) {
         const userEmail = user.emailAddresses[0]?.emailAddress
-        const dashboardUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://iimagined.ai/learning'
+        const userName = user.firstName || user.emailAddresses[0]?.emailAddress?.split('@')[0] || 'there'
+        const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://iimagined.ai'
+        const dashboardUrl = `${siteUrl}/learning`
+        const firstModuleUrl = `${siteUrl}/learning/instagram-ignited` // Update with your actual first module
+        const calendlyUrl = 'https://calendly.com/anyrxo/30min'
 
-        // 2. Send Welcome Email to the Student
+        // 2. Send Premium Onboarding Day 1 Email
         if (userEmail) {
-            console.log('[Redeem] Sending Welcome Email')
-            // Note: We await this to ensure it sends, but it might add 500ms-1s latency
+            console.log('[Redeem] Sending Premium Onboarding Day 1 Email')
             try {
                 await resend.emails.send({
                     from: 'IImagined Access <access@notifications.iimagined.ai>',
                     to: [userEmail],
-                    subject: 'Welcome to the Empire | IImagined',
-                    html: EmailTemplates.welcome(userEmail.split('@')[0], dashboardUrl)
+                    subject: 'Welcome to IImagined - Your AI Transformation Starts Now',
+                    html: PremiumOnboardingEmails.day1Welcome(
+                        userName,
+                        dashboardUrl,
+                        firstModuleUrl,
+                        calendlyUrl
+                    )
                 })
-                console.log('[Redeem] Welcome Email Sent')
+                console.log('[Redeem] Premium Onboarding Email Sent')
             } catch (emailErr) {
-                console.error('[Redeem] Welcome Email Failed:', emailErr)
+                console.error('[Redeem] Onboarding Email Failed:', emailErr)
             }
         }
 
