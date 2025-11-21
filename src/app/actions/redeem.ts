@@ -5,7 +5,7 @@ import { createClient } from '@supabase/supabase-js'
 import { clerkClient } from '@clerk/nextjs/server'
 import { Resend } from 'resend'
 import { EmailTemplates } from '@/lib/email-templates'
-import { PremiumOnboardingEmails } from '@/lib/premium-onboarding-emails'
+import { PaidUserEmails } from '@/lib/email-sequences'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -53,22 +53,21 @@ export async function redeemLicenseKey(formData: FormData) {
         const firstModuleUrl = `${siteUrl}/learning/instagram-ignited` // Update with your actual first module
         const calendlyUrl = 'https://calendly.com/anyrxo/30min'
 
-        // 2. Send Premium Onboarding Day 1 Email
+        // 2. Send PAID User Day 1 Onboarding Email
         if (userEmail) {
-            console.log('[Redeem] Sending Premium Onboarding Day 1 Email')
+            console.log('[Redeem] Sending PAID User Day 1 Onboarding Email')
             try {
                 await resend.emails.send({
                     from: 'IImagined Access <access@notifications.iimagined.ai>',
                     to: [userEmail],
-                    subject: 'Welcome to IImagined - Your AI Transformation Starts Now',
-                    html: PremiumOnboardingEmails.day1Welcome(
+                    subject: 'Welcome to IImagined - Your Empire Starts Today',
+                    html: PaidUserEmails.day1Welcome(
                         userName,
                         dashboardUrl,
-                        firstModuleUrl,
                         calendlyUrl
                     )
                 })
-                console.log('[Redeem] Premium Onboarding Email Sent')
+                console.log('[Redeem] PAID User Onboarding Email Sent')
             } catch (emailErr) {
                 console.error('[Redeem] Onboarding Email Failed:', emailErr)
             }
