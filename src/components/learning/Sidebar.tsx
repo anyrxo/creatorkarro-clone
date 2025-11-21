@@ -6,7 +6,8 @@ import { ChevronDown, PlayCircle, CheckCircle, FileText, Menu, X, Flame } from '
 import { CourseContent } from '@/data/learning-content'
 import Link from 'next/link'
 import { useCourse } from '@/context/CourseContext'
-import { getUserStats } from '@/app/actions/gamification'
+import { useGamification } from '@/context/GamificationContext'
+import { getXPProgress, getLevelBadge } from '@/lib/gamification'
 
 interface SidebarProps {
     course: CourseContent
@@ -17,11 +18,7 @@ interface SidebarProps {
 export default function Sidebar({ course, currentLessonId, onClose }: SidebarProps) {
     const [openModules, setOpenModules] = useState<string[]>(course.modules.map(m => m.id))
     const { isLessonComplete, getCourseProgress } = useCourse()
-    const [stats, setStats] = useState({ streak: 0, xp: 0, level: 'Novice', nextLevelXp: 1000 })
-
-    useEffect(() => {
-        getUserStats().then(setStats)
-    }, [])
+    const { stats } = useGamification()
 
     const toggleModule = (moduleId: string) => {
         setOpenModules(prev =>
@@ -32,6 +29,12 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
     }
 
     const progress = getCourseProgress(course.id)
+
+    // Calculate display values
+    const currentLevel = stats?.current_level || 1
+    const currentXP = stats?.total_xp || 0
+    const levelProgress = getXPProgress(currentXP, currentLevel)
+    const badge = getLevelBadge(currentLevel)
 
     return (
         <div className="w-full h-full bg-zinc-900/95 backdrop-blur-xl md:bg-zinc-900/50 border-r border-white/5 overflow-y-auto custom-scrollbar flex flex-col">
@@ -47,23 +50,24 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
             <div className="p-4 border-b border-white/5 bg-purple-900/10">
                 <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
-                        <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">Rank: {stats.level}</span>
+                        <span className="text-lg">{badge.emoji}</span>
+                        <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">Level {currentLevel}: {badge.title}</span>
                     </div>
-                    {stats.streak > 0 && (
-                         <div className="flex items-center gap-1 text-xs font-bold text-orange-400">
-                             <Flame className="w-3 h-3 fill-orange-500" />
-                             {stats.streak} Days
-                         </div>
+                    {stats && stats.current_streak > 0 && (
+                        <div className="flex items-center gap-1 text-xs font-bold text-orange-400">
+                            <Flame className="w-3 h-3 fill-orange-500" />
+                            {stats.current_streak} Days
+                        </div>
                     )}
                 </div>
                 <div className="flex items-center justify-between mb-1 text-[10px] text-zinc-400">
-                    <span>{stats.xp} XP</span>
-                    <span>{stats.nextLevelXp} XP</span>
+                    <span>{levelProgress.current} XP</span>
+                    <span>{levelProgress.required} XP needed</span>
                 </div>
                 <div className="w-full bg-black h-1.5 rounded-full overflow-hidden border border-white/10 relative group">
-                    <div 
-                        className="bg-gradient-to-r from-purple-500 to-blue-500 h-full transition-all duration-1000 group-hover:brightness-125" 
-                        style={{ width: `${Math.min((stats.xp / stats.nextLevelXp) * 100, 100)}%` }} 
+                    <div
+                        className="bg-gradient-to-r from-purple-500 to-blue-500 h-full transition-all duration-1000 group-hover:brightness-125"
+                        style={{ width: `${levelProgress.percentage}%` }}
                     />
                 </div>
             </div>
@@ -95,8 +99,8 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                         >
                             <div className="flex items-center gap-3">
                                 <div className={`flex items-center justify-center w-6 h-6 rounded-full text-xs font-medium border ${module.lessons.every(l => isLessonComplete(course.id, l.id))
-                                        ? 'bg-green-500/20 text-green-400 border-green-500/30'
-                                        : 'bg-white/5 text-zinc-400 border-white/10'
+                                    ? 'bg-green-500/20 text-green-400 border-green-500/30'
+                                    : 'bg-white/5 text-zinc-400 border-white/10'
                                     }`}>
                                     {module.lessons.every(l => isLessonComplete(course.id, l.id)) ? <CheckCircle className="w-3 h-3" /> : index + 1}
                                 </div>
@@ -129,8 +133,8 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                                                     href={`/learning/${course.id}/${module.id}/${lesson.id}`}
                                                     onClick={onClose} // Close sidebar on mobile when clicked
                                                     className={`flex items-center gap-3 p-3 rounded-lg text-sm transition-all group ${isActive
-                                                            ? 'bg-purple-500/10 text-purple-400 border border-purple-500/20'
-                                                            : 'text-zinc-400 hover:bg-white/5 hover:text-white'
+                                                        ? 'bg-purple-500/10 text-purple-400 border border-purple-500/20'
+                                                        : 'text-zinc-400 hover:bg-white/5 hover:text-white'
                                                         }`}
                                                 >
                                                     {isComplete ? (

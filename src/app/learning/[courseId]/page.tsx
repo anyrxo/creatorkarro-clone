@@ -3,15 +3,18 @@
 import { learningContent } from '@/data/learning-content'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
-import { PlayCircle, ArrowRight, CheckCircle, Lock, BarChart3, Clock, Trophy, Sparkles } from 'lucide-react'
+import { PlayCircle, ArrowRight, CheckCircle, Lock, BarChart3, Clock, Trophy, Sparkles, Flame, Zap } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useCourse } from '@/context/CourseContext'
+import { useGamification } from '@/context/GamificationContext'
+import LevelProgressBar from '@/components/gamification/LevelProgressBar'
 
 export default function CourseOverviewPage() {
     const params = useParams()
     const courseId = params.courseId as string
     const course = learningContent[courseId]
     const { getCourseProgress, isLessonComplete } = useCourse()
+    const { stats } = useGamification()
 
     if (!course) return null
 
@@ -47,17 +50,43 @@ export default function CourseOverviewPage() {
             >
                 {/* Header Section */}
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
-                    <div>
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-wider mb-6">
-                            <Trophy className="w-3 h-3" />
-                            Course Overview
+                    <div className="flex-1">
+                        <div className="flex items-center gap-4 mb-6">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-wider">
+                                <Trophy className="w-3 h-3" />
+                                Course Overview
+                            </div>
+                            {stats && (
+                                <div className="flex items-center gap-3 text-xs font-medium text-zinc-400">
+                                    <div className="flex items-center gap-1">
+                                        <Flame className="w-3 h-3 text-orange-500" />
+                                        <span className="text-orange-400">{stats.current_streak} Day Streak</span>
+                                    </div>
+                                    <div className="w-1 h-1 bg-zinc-700 rounded-full" />
+                                    <div className="flex items-center gap-1">
+                                        <Zap className="w-3 h-3 text-yellow-500" />
+                                        <span className="text-yellow-400">Lvl {stats.current_level}</span>
+                                    </div>
+                                </div>
+                            )}
                         </div>
+
                         <h1 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight">
                             {course.title}
                         </h1>
-                        <p className="text-xl text-zinc-400 max-w-2xl leading-relaxed">
+                        <p className="text-xl text-zinc-400 max-w-2xl leading-relaxed mb-8">
                             {course.description}
                         </p>
+
+                        {/* Global Level Progress */}
+                        {stats && (
+                            <div className="max-w-md">
+                                <LevelProgressBar
+                                    currentXP={stats.total_xp}
+                                    currentLevel={stats.current_level}
+                                />
+                            </div>
+                        )}
                     </div>
 
                     {/* Progress Card */}

@@ -57,3 +57,49 @@ export function getLevelBadge(level: number): { emoji: string; color: string; ti
   if (level >= 5) return { emoji: '⭐', color: 'from-green-400 to-emerald-500', title: 'Gold' }
   return { emoji: '🌱', color: 'from-zinc-400 to-zinc-500', title: 'Bronze' }
 }
+
+export interface Achievement {
+  id: string
+  title: string
+  description: string
+  icon: string
+  xp_reward: number
+  category: 'learning' | 'social' | 'streak' | 'creation'
+  condition_type: 'lessons_count' | 'streak_days' | 'xp_total'
+  condition_value: number
+}
+
+export interface UserAchievement {
+  id: string
+  user_id: string
+  achievement_id: string
+  unlocked_at: string
+  achievement?: Achievement
+}
+
+export interface DailyQuest {
+  id: string
+  title: string
+  description: string
+  xp_reward: number
+  target_count: number
+  quest_type: 'complete_lesson' | 'login' | 'share_content'
+}
+
+export interface UserQuest {
+  id: string
+  user_id: string
+  quest_id: string
+  progress: number
+  is_completed: boolean
+  last_updated: string
+  quest?: DailyQuest
+}
+
+export interface XPHistory {
+  id: string
+  user_id: string
+  amount: number
+  reason: string
+  created_at: string
+}

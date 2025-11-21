@@ -10,12 +10,19 @@ import { useEffect, useState } from 'react'
 import StatsCard from '@/components/gamification/StatsCard'
 import LevelProgressBar from '@/components/gamification/LevelProgressBar'
 import StreakFlame from '@/components/gamification/StreakFlame'
+import AchievementsList from '@/components/gamification/AchievementsList'
+import DailyQuestsCard from '@/components/gamification/DailyQuestsCard'
 
 export default function LearningDashboard() {
     const { getCourseProgress, completedLessons } = useCourse()
-    const { stats, isLoading } = useGamification()
+    const { stats, achievements, quests, isLoading, updateStreak } = useGamification()
     const { user } = useUser()
     const [greeting, setGreeting] = useState('')
+
+    // Update streak on mount
+    useEffect(() => {
+        updateStreak()
+    }, [updateStreak])
 
     useEffect(() => {
         const hour = new Date().getHours()
@@ -152,6 +159,16 @@ export default function LearningDashboard() {
                     />
                 </motion.div>
             )}
+
+            {/* Quests & Achievements Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <div className="lg:col-span-2">
+                    <AchievementsList achievements={achievements} />
+                </div>
+                <div>
+                    <DailyQuestsCard quests={quests} />
+                </div>
+            </div>
 
             {/* Course Grid */}
             <div>

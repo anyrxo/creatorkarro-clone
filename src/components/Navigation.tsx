@@ -6,7 +6,7 @@ import { useUser, useClerk } from '@clerk/nextjs'
 import { useState, useEffect } from 'react'
 import { Menu, X, ChevronDown, User, Shield, Flame, DollarSign, Power } from 'lucide-react' // Added DollarSign and Power
 import * as analytics from '@/lib/analytics'
-import { getUserStats } from '@/app/actions/gamification'
+import { useGamification } from '@/context/GamificationContext'
 
 import ShimmerButton from '@/components/magicui/shimmer-button'
 
@@ -29,7 +29,8 @@ export default function Navigation() {
   const { user, isSignedIn } = useUser()
   const { signOut } = useClerk()
   const [isAdmin, setIsAdmin] = useState(false)
-  const [streak, setStreak] = useState(0)
+  const { stats } = useGamification()
+  const streak = stats?.current_streak || 0
 
   useEffect(() => {
     if (isSignedIn && user?.primaryEmailAddress?.emailAddress) {
@@ -37,25 +38,22 @@ export default function Navigation() {
       if (['mannan0010@gmail.com', 'sirenxmedia@gmail.com'].includes(email)) {
         setIsAdmin(true)
       }
-      
-      // Fetch Streak
-      getUserStats().then(stats => setStreak(stats.streak))
     }
   }, [isSignedIn, user])
 
   const mainNavigation: NavigationItem[] = [
     { name: 'Story', href: '/story' },
-        {
-          name: 'Systems',
-          href: '#',
-          hasDropdown: true,
-          dropdownItems: [
-            { name: 'Instagram Ignited', href: '/instagram-ignited' },
-            { name: 'AI Influencers', href: '/ai-influencers' },
-            { name: 'Digital Products', href: '/digital-products' },
-            { name: 'AI Automations', href: '/ai-automations' }
-          ]
-        },
+    {
+      name: 'Systems',
+      href: '#',
+      hasDropdown: true,
+      dropdownItems: [
+        { name: 'Instagram Ignited', href: '/instagram-ignited' },
+        { name: 'AI Influencers', href: '/ai-influencers' },
+        { name: 'Digital Products', href: '/digital-products' },
+        { name: 'AI Automations', href: '/ai-automations' }
+      ]
+    },
     { name: 'Resources', href: '/resources' },
     { name: 'Testimonials', href: '/testimonials' },
     { name: 'Blog', href: '/blog' },
@@ -117,7 +115,7 @@ export default function Navigation() {
                     )}
                   </div>
                 ))}
-                
+
                 {/* Affiliate Link - Desktop */}
                 {isSignedIn && (
                   <Link
@@ -145,7 +143,7 @@ export default function Navigation() {
             {/* Desktop Actions */}
             <div className="hidden md:flex items-center gap-4">
               {!isSignedIn ? (
-                <Link 
+                <Link
                   href="/sign-in"
                   className="group flex items-center justify-center w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 transition-all hover:border-green-500/50 hover:bg-green-500/10 hover:shadow-[0_0_15px_rgba(34,197,94,0.3)]"
                   title="Power On (Sign In)"
@@ -154,27 +152,27 @@ export default function Navigation() {
                 </Link>
               ) : (
                 <div className="flex items-center gap-3">
-                   {streak > 0 && (
-                     <div className="flex items-center gap-1 px-3 py-1 bg-orange-500/10 border border-orange-500/20 rounded-full">
-                       <Flame size={14} className="text-orange-500 fill-orange-500 animate-pulse" />
-                       <span className="text-xs font-bold text-orange-400">{streak} Day Streak</span>
-                     </div>
-                   )}
-                   <Link href="/learning" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
-                      My Learning
-                   </Link>
-                   
-                   {/* Power Off Button (Sign Out) */}
-                   <button 
-                      onClick={() => signOut()}
-                      className="flex items-center justify-center w-10 h-10 rounded-full bg-green-500/10 border border-green-500/30 shadow-[0_0_10px_rgba(34,197,94,0.2)] transition-all hover:bg-red-500/10 hover:border-red-500/30 hover:shadow-[0_0_15px_rgba(239,68,68,0.3)] group"
-                      title="Power Off (Sign Out)"
-                   >
-                      <Power size={18} className="text-green-400 group-hover:text-red-400 transition-colors" />
-                   </button>
+                  {streak > 0 && (
+                    <div className="flex items-center gap-1 px-3 py-1 bg-orange-500/10 border border-orange-500/20 rounded-full">
+                      <Flame size={14} className="text-orange-500 fill-orange-500 animate-pulse" />
+                      <span className="text-xs font-bold text-orange-400">{streak} Day Streak</span>
+                    </div>
+                  )}
+                  <Link href="/learning" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
+                    My Learning
+                  </Link>
+
+                  {/* Power Off Button (Sign Out) */}
+                  <button
+                    onClick={() => signOut()}
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-green-500/10 border border-green-500/30 shadow-[0_0_10px_rgba(34,197,94,0.2)] transition-all hover:bg-red-500/10 hover:border-red-500/30 hover:shadow-[0_0_15px_rgba(239,68,68,0.3)] group"
+                    title="Power Off (Sign Out)"
+                  >
+                    <Power size={18} className="text-green-400 group-hover:text-red-400 transition-colors" />
+                  </button>
                 </div>
               )}
-              
+
               <a
                 href="https://buy.polar.sh/polar_cl_RZqECtx9qQzbriWQHfGfIc2JxkSL17qSERkbq3MVgw5"
                 onClick={() => {
@@ -215,74 +213,74 @@ export default function Navigation() {
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 top-20 bg-zinc-900 z-[100] overflow-y-auto">
           <div className="p-6 space-y-4">
-             {/* Mobile Auth Status */}
-             <div className="flex items-center justify-between p-4 bg-zinc-800/50 rounded-xl border border-white/5 mb-6">
-                {!isSignedIn ? (
-                  <Link href="/sign-in" className="flex items-center gap-3 w-full" onClick={() => setIsMenuOpen(false)}>
-                     <div className="w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center">
-                        <Power size={18} className="text-zinc-500" />
-                     </div>
-                     <div>
-                        <p className="text-white font-medium">System Offline</p>
-                        <p className="text-xs text-zinc-400">Tap to Initialize</p>
-                     </div>
-                  </Link>
-                ) : (
-                  <div className="flex items-center justify-between w-full">
-                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-green-500/10 border border-green-500/30 flex items-center justify-center shadow-[0_0_10px_rgba(34,197,94,0.2)]">
-                           <Power size={18} className="text-green-400" />
-                        </div>
-                        <div>
-                           <p className="text-white font-medium">System Online</p>
-                           <p className="text-xs text-green-400">Welcome back</p>
-                        </div>
-                     </div>
-                     <button 
-                        onClick={() => signOut()}
-                        className="text-xs text-red-400 hover:text-red-300 border border-red-500/20 px-3 py-1 rounded-full"
-                     >
-                        Disconnect
-                     </button>
+            {/* Mobile Auth Status */}
+            <div className="flex items-center justify-between p-4 bg-zinc-800/50 rounded-xl border border-white/5 mb-6">
+              {!isSignedIn ? (
+                <Link href="/sign-in" className="flex items-center gap-3 w-full" onClick={() => setIsMenuOpen(false)}>
+                  <div className="w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center">
+                    <Power size={18} className="text-zinc-500" />
                   </div>
-                )}
-             </div>
-
-             {/* Admin Link - Mobile */}
-             {isAdmin && (
-                <Link
-                  href="/admin/users"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block px-4 py-3 text-red-400 bg-red-500/10 rounded-lg font-medium flex items-center gap-2 mb-4"
-                >
-                  <Shield size={16} />
-                  Admin Dashboard
+                  <div>
+                    <p className="text-white font-medium">System Offline</p>
+                    <p className="text-xs text-zinc-400">Tap to Initialize</p>
+                  </div>
                 </Link>
-             )}
+              ) : (
+                <div className="flex items-center justify-between w-full">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-green-500/10 border border-green-500/30 flex items-center justify-center shadow-[0_0_10px_rgba(34,197,94,0.2)]">
+                      <Power size={18} className="text-green-400" />
+                    </div>
+                    <div>
+                      <p className="text-white font-medium">System Online</p>
+                      <p className="text-xs text-green-400">Welcome back</p>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => signOut()}
+                    className="text-xs text-red-400 hover:text-red-300 border border-red-500/20 px-3 py-1 rounded-full"
+                  >
+                    Disconnect
+                  </button>
+                </div>
+              )}
+            </div>
 
-             {/* Affiliate Link - Mobile */}
-             {isSignedIn && (
-                <Link
-                  href="/affiliate"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block px-4 py-3 text-green-400 bg-green-500/10 rounded-lg font-medium flex items-center gap-2 mb-4"
-                >
-                  <DollarSign size={16} />
-                  Partner Program
-                </Link>
-             )}
+            {/* Admin Link - Mobile */}
+            {isAdmin && (
+              <Link
+                href="/admin/users"
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-4 py-3 text-red-400 bg-red-500/10 rounded-lg font-medium flex items-center gap-2 mb-4"
+              >
+                <Shield size={16} />
+                Admin Dashboard
+              </Link>
+            )}
 
-             {/* My Learning - Mobile */}
-             {isSignedIn && (
-                <Link
-                  href="/learning"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block px-4 py-3 text-blue-400 bg-blue-500/10 rounded-lg font-medium flex items-center gap-2 mb-4"
-                >
-                  <Flame size={16} />
-                  My Learning
-                </Link>
-             )}
+            {/* Affiliate Link - Mobile */}
+            {isSignedIn && (
+              <Link
+                href="/affiliate"
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-4 py-3 text-green-400 bg-green-500/10 rounded-lg font-medium flex items-center gap-2 mb-4"
+              >
+                <DollarSign size={16} />
+                Partner Program
+              </Link>
+            )}
+
+            {/* My Learning - Mobile */}
+            {isSignedIn && (
+              <Link
+                href="/learning"
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-4 py-3 text-blue-400 bg-blue-500/10 rounded-lg font-medium flex items-center gap-2 mb-4"
+              >
+                <Flame size={16} />
+                My Learning
+              </Link>
+            )}
 
             {allNavigation.map((item) => (
               <div key={item.name}>
@@ -313,11 +311,10 @@ export default function Navigation() {
                 ) : (
                   <Link
                     href={item.href}
-                    className={`block px-4 py-3 rounded-lg ${
-                      item.external
+                    className={`block px-4 py-3 rounded-lg ${item.external
                         ? 'text-white bg-gradient-to-r from-blue-600 to-purple-600 font-semibold text-center'
                         : 'text-gray-300 hover:text-white bg-zinc-800'
-                    }`}
+                      }`}
                     onClick={() => setIsMenuOpen(false)}
                     target={item.external ? '_blank' : undefined}
                     rel={item.external ? 'noopener noreferrer' : undefined}

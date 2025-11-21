@@ -22,6 +22,7 @@ import AffiliateTracker from "@/components/AffiliateTracker"; // Import tracking
 import UserSync from "@/components/auth/UserSync"; // NEW: Import User Sync
 import DisableCopy from "@/components/DisableCopy"; // Import DisableCopy
 import { Suspense } from "react";
+import { GamificationProvider } from "@/context/GamificationContext";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -134,121 +135,123 @@ export default function RootLayout({
       </head>
       <body className={montserrat.className}>
         <AuthProvider>
-          <DisableCopy />
-          <UserSync /> {/* Automatically syncs logged-in users to Supabase */}
-          <Suspense fallback={null}>
-            <AffiliateTracker /> {/* Track referrals on every page load */}
-          </Suspense>
-          <SkipToContent />
+          <GamificationProvider>
+            <DisableCopy />
+            <UserSync /> {/* Automatically syncs logged-in users to Supabase */}
+            <Suspense fallback={null}>
+              <AffiliateTracker /> {/* Track referrals on every page load */}
+            </Suspense>
+            <SkipToContent />
 
-          {/* ===== ANALYTICS CONFIGURATION ===== */}
+            {/* ===== ANALYTICS CONFIGURATION ===== */}
 
-          {/* Google Analytics 4 (GA4) */}
-          {process.env.NEXT_PUBLIC_GA_ID && (
-            <>
+            {/* Google Analytics 4 (GA4) */}
+            {process.env.NEXT_PUBLIC_GA_ID && (
+              <>
+                <Script
+                  strategy="afterInteractive"
+                  src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+                />
+                <Script
+                  id="google-analytics"
+                  strategy="afterInteractive"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                  `,
+                  }}
+                />
+              </>
+            )}
+
+            {/* Facebook Pixel */}
+            {process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID && (
               <Script
-                strategy="afterInteractive"
-                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-              />
-              <Script
-                id="google-analytics"
+                id="facebook-pixel"
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                   __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                  !function(f,b,e,v,n,t,s)
+                  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                  n.queue=[];t=b.createElement(e);t.async=!0;
+                  t.src=v;s=b.getElementsByTagName(e)[0];
+                  s.parentNode.insertBefore(t,s)}(window, document,'script',
+                  'https://connect.facebook.net/en_US/fbevents.js');
+                  fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID}');
+                  fbq('track', 'PageView');
                 `,
                 }}
               />
-            </>
-          )}
+            )}
 
-          {/* Facebook Pixel */}
-          {process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID && (
+            {/* Google Analytics - Direct Integration */}
             <Script
-              id="facebook-pixel"
+              strategy="afterInteractive"
+              src="https://www.googletagmanager.com/gtag/js?id=G-KXTFWR75V4"
+            />
+            <Script
+              id="google-analytics-direct"
               strategy="afterInteractive"
               dangerouslySetInnerHTML={{
                 __html: `
-                !function(f,b,e,v,n,t,s)
-                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID}');
-                fbq('track', 'PageView');
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-KXTFWR75V4');
               `,
               }}
             />
-          )}
 
-          {/* Google Analytics - Direct Integration */}
-          <Script
-            strategy="afterInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=G-KXTFWR75V4"
-          />
-          <Script
-            id="google-analytics-direct"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-KXTFWR75V4');
-            `,
-            }}
-          />
+            {/* Microsoft Clarity */}
+            <Script
+              id="microsoft-clarity"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "u6hrhbzb63");
+              `,
+              }}
+            />
 
-          {/* Microsoft Clarity */}
-          <Script
-            id="microsoft-clarity"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-              (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "u6hrhbzb63");
-            `,
-            }}
-          />
+            {/* Polar Checkout Script */}
+            <Script
+              src="https://cdn.jsdelivr.net/npm/@polar-sh/checkout@0.1/dist/embed.global.js"
+              strategy="afterInteractive"
+              defer
+              data-auto-init
+            />
 
-          {/* Polar Checkout Script */}
-          <Script
-            src="https://cdn.jsdelivr.net/npm/@polar-sh/checkout@0.1/dist/embed.global.js"
-            strategy="afterInteractive"
-            defer
-            data-auto-init
-          />
+            <ErrorBoundary>
+              <ClientOnlyFortress>
+                <ClientOnlyBackground />
+                <LoadingBar />
+                <RouteLoader />
+                <ScrollProgressIndicator />
+                <Navigation />
+                <PageTransition>
+                  <main id="main-content" className="pt-20 page-enter relative z-10">
+                    {children}
+                  </main>
+                </PageTransition>
+                <Footer />
+                {/* Vercel Analytics - Disabled to reduce client-side JS */}
+                {/* <Analytics />
+              <SpeedInsights /> */}
+              </ClientOnlyFortress>
+            </ErrorBoundary>
 
-          <ErrorBoundary>
-            <ClientOnlyFortress>
-              <ClientOnlyBackground />
-              <LoadingBar />
-              <RouteLoader />
-              <ScrollProgressIndicator />
-              <Navigation />
-              <PageTransition>
-                <main id="main-content" className="pt-20 page-enter relative z-10">
-                  {children}
-                </main>
-              </PageTransition>
-              <Footer />
-              {/* Vercel Analytics - Disabled to reduce client-side JS */}
-              {/* <Analytics />
-            <SpeedInsights /> */}
-            </ClientOnlyFortress>
-          </ErrorBoundary>
-
-          {/* Web Vitals Performance Monitoring */}
-          <WebVitals />
+            {/* Web Vitals Performance Monitoring */}
+            <WebVitals />
+          </GamificationProvider>
         </AuthProvider>
       </body>
     </html>

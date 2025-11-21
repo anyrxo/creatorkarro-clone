@@ -5,6 +5,7 @@ import { learningContent } from '@/data/learning-content'
 import { useUser } from '@clerk/nextjs'
 import { supabase } from '@/lib/supabase'
 import { XP_REWARDS } from '@/lib/gamification'
+import { useGamification } from '@/context/GamificationContext'
 
 interface CourseContextType {
     completedLessons: string[]
@@ -21,6 +22,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
     const [completedLessons, setCompletedLessons] = useState<string[]>([])
     const [isLoaded, setIsLoaded] = useState(false)
     const [isLoading, setIsLoading] = useState(true)
+    const { awardXP, updateStreak } = useGamification()
 
     // Load from local storage on mount
     useEffect(() => {
@@ -110,81 +112,13 @@ export function CourseProvider({ children }: { children: ReactNode }) {
                     return
                 }
 
-                // Award XP and update streak
-                await awardLessonXP(user.id, today)
+                // Award XP and update streak via GamificationContext
+                await awardXP(XP_REWARDS.LESSON_COMPLETE, 'lesson_complete')
+                await updateStreak()
+
             } catch (err) {
                 console.error('Failed to save to Supabase:', err)
             }
-        }
-    }
-
-    const awardLessonXP = async (userId: string, completedDate: string) => {
-        try {
-            // Check if this is first lesson today
-            const { data: todayLessons } = await supabase
-                .from('user_progress')
-                .select('lesson_id')
-                .eq('user_id', userId)
-                .eq('completed_date', completedDate)
-
-            const isFirstToday = todayLessons && todayLessons.length === 1
-            const xpToAward = XP_REWARDS.LESSON_COMPLETE + (isFirstToday ? XP_REWARDS.FIRST_LESSON_TODAY : 0)
-
-            // Update streak
-            const { data: stats } = await supabase
-                .from('user_stats')
-                .select('*')
-                .eq('user_id', userId)
-                .single()
-
-            if (stats) {
-                const lastActivity = stats.last_activity_date
-                let newStreak = stats.current_streak
-
-                if (!lastActivity) {
-                    newStreak = 1
-                } else if (lastActivity === completedDate) {
-                    // Same day, no change
-                } else {
-                    const yesterday = new Date()
-                    yesterday.setDate(yesterday.getDate() - 1)
-                    const yesterdayStr = yesterday.toISOString().split('T')[0]
-
-                    if (lastActivity === yesterdayStr) {
-                        newStreak += 1
-                        // Bonus XP for streak
-                        const streakBonus = Math.min(newStreak * XP_REWARDS.DAILY_STREAK_BONUS, 100)
-                        await supabase
-                            .from('user_stats')
-                            .update({
-                                total_xp: stats.total_xp + xpToAward + streakBonus,
-                                current_level: Math.floor(Math.sqrt((stats.total_xp + xpToAward + streakBonus) / 75)) + 1,
-                                current_streak: newStreak,
-                                longest_streak: Math.max(stats.longest_streak, newStreak),
-                                last_activity_date: completedDate,
-                                total_lessons_completed: stats.total_lessons_completed + 1
-                            })
-                            .eq('user_id', userId)
-                        return
-                    } else {
-                        newStreak = 1
-                    }
-                }
-
-                await supabase
-                    .from('user_stats')
-                    .update({
-                        total_xp: stats.total_xp + xpToAward,
-                        current_level: Math.floor(Math.sqrt((stats.total_xp + xpToAward) / 75)) + 1,
-                        current_streak: newStreak,
-                        longest_streak: Math.max(stats.longest_streak, newStreak),
-                        last_activity_date: completedDate,
-                        total_lessons_completed: stats.total_lessons_completed + 1
-                    })
-                    .eq('user_id', userId)
-            }
-        } catch (error) {
-            console.error('Failed to award XP:', error)
         }
     }
 
