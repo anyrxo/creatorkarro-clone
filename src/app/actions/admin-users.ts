@@ -117,3 +117,93 @@ export async function revokeAccess(keyId: string) {
     if (error) return { error: error.message }
     return { success: true }
 }
+
+export async function deleteUser(keyId: string) {
+    const supabaseAdmin = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.SUPABASE_SERVICE_ROLE_KEY!,
+        {
+            auth: {
+                persistSession: false
+            }
+        }
+    )
+
+    // 1. Get the user_id associated with the key before deleting
+    const { data: keyData } = await supabaseAdmin
+        .from('license_keys')
+        .select('user_id')
+        .eq('id', keyId)
+        .single()
+
+    // 2. Delete the license key
+    const { error: deleteKeyError } = await supabaseAdmin
+        .from('license_keys')
+        .delete()
+        .eq('id', keyId)
+
+    if (deleteKeyError) {
+        return { error: 'Failed to delete license key: ' + deleteKeyError.message }
+    }
+
+    // 3. If there's a linked user profile, delete that too (Optional, but requested)
+    if (keyData?.user_id) {
+        const { error: deleteProfileError } = await supabaseAdmin
+            .from('profiles')
+            .delete()
+            .eq('user_id', keyData.user_id)
+        
+        if (deleteProfileError) {
+            console.error('Failed to delete profile:', deleteProfileError)
+            // We don't return error here, as the key is already deleted, which was the main goal
+        }
+    }
+
+    revalidatePath('/admin/users')
+    return { success: true }
+}
+
+export async function deleteUser(keyId: string) {
+    const supabaseAdmin = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.SUPABASE_SERVICE_ROLE_KEY!,
+        {
+            auth: {
+                persistSession: false
+            }
+        }
+    )
+
+    // 1. Get the user_id associated with the key before deleting
+    const { data: keyData } = await supabaseAdmin
+        .from('license_keys')
+        .select('user_id')
+        .eq('id', keyId)
+        .single()
+
+    // 2. Delete the license key
+    const { error: deleteKeyError } = await supabaseAdmin
+        .from('license_keys')
+        .delete()
+        .eq('id', keyId)
+
+    if (deleteKeyError) {
+        return { error: 'Failed to delete license key: ' + deleteKeyError.message }
+    }
+
+    // 3. If there's a linked user profile, delete that too (Optional, but requested)
+    if (keyData?.user_id) {
+        const { error: deleteProfileError } = await supabaseAdmin
+            .from('profiles')
+            .delete()
+            .eq('user_id', keyData.user_id)
+        
+        if (deleteProfileError) {
+            console.error('Failed to delete profile:', deleteProfileError)
+            // We don't return error here, as the key is already deleted, which was the main goal
+        }
+    }
+
+    revalidatePath('/admin/users')
+    return { success: true }
+}

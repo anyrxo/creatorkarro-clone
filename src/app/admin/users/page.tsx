@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { getStudents, inviteStudent, revokeAccess } from '@/app/actions/admin-users'
+import { getStudents, inviteStudent, revokeAccess, deleteUser } from '@/app/actions/admin-users'
 import { Loader2, Plus, Mail, User, Calendar, Ban, CheckCircle, Search, Copy } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -32,10 +32,10 @@ export default function AdminUsersPage() {
         const result = await inviteStudent(inviteEmail)
 
         if (result.success) {
-            setInviteResult({ 
-                success: true, 
+            setInviteResult({
+                success: true,
                 key: result.key,
-                message: `Access granted to ${inviteEmail}. Since email delivery is not configured, please copy the key below:` 
+                message: `Access granted to ${inviteEmail}. Since email delivery is not configured, please copy the key below:`
             })
             setInviteEmail('')
             loadStudents()
@@ -51,7 +51,7 @@ export default function AdminUsersPage() {
         loadStudents()
     }
 
-    const filteredStudents = students.filter(s => 
+    const filteredStudents = students.filter(s =>
         (s.email && s.email.toLowerCase().includes(searchTerm.toLowerCase())) ||
         (s.key && s.key.toLowerCase().includes(searchTerm.toLowerCase())) ||
         (s.user_id && s.user_id.toLowerCase().includes(searchTerm.toLowerCase()))
@@ -64,7 +64,7 @@ export default function AdminUsersPage() {
                     <h1 className="text-3xl font-bold text-white mb-2">Students & Access</h1>
                     <p className="text-zinc-400">Manage who has access to the platform.</p>
                 </div>
-                
+
                 <div className="bg-zinc-900/50 border border-white/10 p-4 rounded-xl w-full md:w-auto">
                     <h3 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
                         <Plus className="w-4 h-4 text-purple-400" />
@@ -176,13 +176,12 @@ export default function AdminUsersPage() {
                                         </div>
                                     </td>
                                     <td className="p-4">
-                                        <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
-                                            student.status === 'claimed' 
-                                                ? 'bg-green-500/10 text-green-400 border border-green-500/20'
-                                                : student.status === 'active'
+                                        <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${student.status === 'claimed'
+                                            ? 'bg-green-500/10 text-green-400 border border-green-500/20'
+                                            : student.status === 'active'
                                                 ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20'
                                                 : 'bg-red-500/10 text-red-400 border border-red-500/20'
-                                        }`}>
+                                            }`}>
                                             {student.status === 'active' ? 'Invited / Pending' : student.status}
                                         </span>
                                     </td>
@@ -199,12 +198,26 @@ export default function AdminUsersPage() {
                                     </td>
                                     <td className="p-4">
                                         {student.status !== 'revoked' && (
-                                            <button
-                                                onClick={() => handleRevoke(student.id)}
-                                                className="text-red-400 hover:text-red-300 text-xs font-medium hover:underline"
-                                            >
-                                                Revoke
-                                            </button>
+                                            <div className="flex items-center gap-3">
+                                                <button
+                                                    onClick={() => handleRevoke(student.id)}
+                                                    className="text-yellow-500 hover:text-yellow-400 text-xs font-medium hover:underline"
+                                                >
+                                                    Revoke
+                                                </button>
+                                                <button
+                                                    onClick={async () => {
+                                                        if (confirm('Are you sure you want to DELETE this user? This will remove their license key and profile data permanently.')) {
+                                                            await deleteUser(student.id)
+                                                            loadStudents()
+                                                        }
+                                                    }}
+                                                    className="text-red-500 hover:text-red-400 text-xs font-medium hover:underline"
+                                                >
+                                                    Delete
+                                                </button>
+                                            </div>
+                                        )}
                                         )}
                                     </td>
                                 </tr>
