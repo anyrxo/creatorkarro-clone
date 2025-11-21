@@ -7,7 +7,7 @@ import { revalidatePath } from 'next/cache'
 export async function claimAffiliateCode(code: string) {
     const start = Date.now()
     console.log('[Affiliate] Start Claim')
-    
+
     try {
         const user = await currentUser()
         if (!user) return { error: 'Not logged in' }
@@ -81,7 +81,7 @@ export async function getAffiliateCode() {
             .select('code')
             .eq('user_id', user.id)
             .single()
-        
+
         if (data?.code) {
             return data.code
         }
@@ -93,11 +93,11 @@ export async function getAffiliateCode() {
                 process.env.NEXT_PUBLIC_SUPABASE_URL!,
                 process.env.SUPABASE_SERVICE_ROLE_KEY!
             )
-            
+
             // Generate random suffix
             const suffix = Math.random().toString(36).substring(2, 7) // 5 chars
             const defaultCode = `user-${suffix}`
-            
+
             // Try to insert. If collision (rare), we just fail silently and return null, 
             // user can try refreshing or claiming manually.
             const { error: insertError } = await supabaseAdmin
@@ -106,7 +106,7 @@ export async function getAffiliateCode() {
                     user_id: user.id,
                     code: defaultCode
                 })
-            
+
             if (!insertError) {
                 return defaultCode
             }
@@ -141,7 +141,7 @@ export async function getAffiliateStats() {
         }
 
         if (!data) {
-             return { referrals: 0, earnings: 0 }
+            return { referrals: 0, earnings: 0 }
         }
 
         const referrals = data.length
@@ -166,7 +166,7 @@ export async function updatePayoutEmail(email: string) {
 
         const { error } = await supabaseAdmin
             .from('affiliate_profiles')
-            .update({ paypal_email: email })
+            .update({ payout_email: email })
             .eq('user_id', user.id)
 
         if (error) {
@@ -194,18 +194,18 @@ export async function getPayoutEmail() {
 
         const { data, error } = await supabase
             .from('affiliate_profiles')
-            .select('paypal_email')
+            .select('payout_email')
             .eq('user_id', user.id)
             .single()
 
         if (error) {
-             if (error.code !== 'PGRST116') {
+            if (error.code !== 'PGRST116') {
                 console.error('Get Payout Email Error:', error)
-             }
-             return null
+            }
+            return null
         }
 
-        return data?.paypal_email
+        return data?.payout_email
     } catch (error) {
         console.error('Get Payout Email Exception:', error)
         return null
