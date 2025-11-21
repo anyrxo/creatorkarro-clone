@@ -4,7 +4,8 @@ import { Resend } from 'resend'
 import { EmailTemplates } from '@/lib/email-templates'
 import { NextResponse } from 'next/server'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resendApiKey = process.env.RESEND_API_KEY
+const resend = resendApiKey ? new Resend(resendApiKey) : null
 
 export async function GET(request: Request) {
   // Secure this endpoint with a CRON_SECRET if used in production with Vercel Cron
@@ -41,8 +42,8 @@ export async function GET(request: Request) {
         .limit(1)
         .single()
 
-      const lastActivity = progress?.completed_at 
-        ? new Date(progress.completed_at) 
+      const lastActivity = progress?.completed_at
+        ? new Date(progress.completed_at)
         : new Date(user.claimed_at!) // If no progress, use claim date
 
       const now = new Date()
@@ -50,29 +51,15 @@ export async function GET(request: Request) {
 
       // 3. Rule: Send Streak Warning (24-30 hours inactive)
       if (diffInHours >= 24 && diffInHours <= 30) {
+        if (!resend) {
+          console.warn('RESEND_API_KEY missing, skipping email')
+          continue
+        }
         const { error: emailError } = await resend.emails.send({
           from: 'IImagined Access <access@notifications.iimagined.ai>',
           to: [user.email],
           subject: '⚠️ Streak At Risk | IImagined',
           html: EmailTemplates.streakWarning(
-            `${process.env.NEXT_PUBLIC_SITE_URL}/learning`
-          )
-        })
-
-        if (!emailError) {
-            emailsSent++
-            console.log(`Streak warning sent to ${user.email}`)
-        }
-      }
-
-      // 4. Rule: Send Nudge if inactive for 3 days (72-96 hours window)
-      if (diffInHours >= 72 && diffInHours <= 96) {
-        const { error: emailError } = await resend.emails.send({
-          from: 'IImagined Access <access@notifications.iimagined.ai>',
-          to: [user.email],
-          subject: 'We miss your brilliance | IImagined',
-          html: EmailTemplates.inactivityNudge(
-            3, 
             `${process.env.NEXT_PUBLIC_SITE_URL}/learning`
           )
         })

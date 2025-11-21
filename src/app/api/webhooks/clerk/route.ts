@@ -8,14 +8,15 @@ import { EmailTemplates } from '@/lib/email-templates'
 
 // FORCE IPv4: Fixes "fetch failed" on Vercel/Node 18+ when connecting to Supabase
 try {
-    if (dns.setDefaultResultOrder) {
-        dns.setDefaultResultOrder('ipv4first')
-    }
+  if (dns.setDefaultResultOrder) {
+    dns.setDefaultResultOrder('ipv4first')
+  }
 } catch (e) {
-    // Ignore
+  // Ignore
 }
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resendApiKey = process.env.RESEND_API_KEY
+const resend = resendApiKey ? new Resend(resendApiKey) : null
 
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
@@ -65,7 +66,7 @@ export async function POST(req: Request) {
   }
 
   const eventType = evt.type
-  
+
   console.log(`Webhook received: ${eventType}`)
 
   // Sync to Supabase using Service Role (Admin)
@@ -73,70 +74,74 @@ export async function POST(req: Request) {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SERVICE_ROLE_KEY!,
     {
-        auth: {
-            persistSession: false,
-            autoRefreshToken: false,
-            detectSessionInUrl: false
-        }
+      auth: {
+        persistSession: false,
+        autoRefreshToken: false,
+        detectSessionInUrl: false
+      }
     }
   )
 
   if (eventType === 'user.created' || eventType === 'user.updated') {
-      const { id, email_addresses, first_name, last_name } = evt.data
-      const email = email_addresses[0]?.email_address
+    const { id, email_addresses, first_name, last_name } = evt.data
+    const email = email_addresses[0]?.email_address
 
-      if (!email) {
-          return new Response('No email found', { status: 200 }) // Return 200 to stop retry
-      }
+    if (!email) {
+      return new Response('No email found', { status: 200 }) // Return 200 to stop retry
+    }
 
-      const { error } = await supabaseAdmin
-        .from('profiles')
-        .upsert({
-            user_id: id,
-            email: email,
-            first_name: first_name || '',
-            last_name: last_name || '',
-            last_seen_at: new Date().toISOString()
-        }, { onConflict: 'user_id' })
-      
-      if (error) {
-          console.error('Supabase sync error:', error)
-          return new Response('Error syncing to Supabase', { status: 500 })
-      }
-      
-      console.log(`Successfully synced user ${id} to Supabase`)
+    const { error } = await supabaseAdmin
+      .from('profiles')
+      .upsert({
+        user_id: id,
+        email: email,
+        first_name: first_name || '',
+        last_name: last_name || '',
+        last_seen_at: new Date().toISOString()
+      }, { onConflict: 'user_id' })
 
-      // Send Welcome Email for New Users (Free Tier) on user.created
-      if (eventType === 'user.created') {
-          try {
-              await resend.emails.send({
-                  from: 'IImagined Access <access@notifications.iimagined.ai>',
-                  to: [email],
-                  subject: 'Welcome to IImagined',
-                  html: EmailTemplates.welcomeFree(first_name || 'Creator', 'https://iimagined.ai/dashboard'),
-              })
-              console.log(`Sent free welcome email to ${email}`)
-          } catch (emailErr) {
-              console.error('Error sending welcome email:', emailErr)
-              // Don't fail the webhook for email error
-          }
+    if (error) {
+      console.error('Supabase sync error:', error)
+      return new Response('Error syncing to Supabase', { status: 500 })
+    }
+
+    console.log(`Successfully synced user ${id} to Supabase`)
+
+    // Send Welcome Email for New Users (Free Tier) on user.created
+    if (eventType === 'user.created') {
+      try {
+        if (resend) {
+          await resend.emails.send({
+            from: 'IImagined Access <access@notifications.iimagined.ai>',
+            to: [email],
+            subject: 'Welcome to IImagined',
+            html: EmailTemplates.welcomeFree(first_name || 'Creator', 'https://iimagined.ai/dashboard'),
+          })
+          console.log(`Sent free welcome email to ${email}`)
+        } else {
+          console.warn('RESEND_API_KEY missing, skipping welcome email')
+        }
+      } catch (emailErr) {
+        console.error('Error sending welcome email:', emailErr)
+        // Don't fail the webhook for email error
       }
+    }
 
   } else if (eventType === 'user.deleted') {
-      const { id } = evt.data
-      
-      if (id) {
-          const { error } = await supabaseAdmin
-            .from('profiles')
-            .delete()
-            .eq('user_id', id)
-          
-          if (error) {
-              console.error('Supabase delete error:', error)
-              return new Response('Error deleting from Supabase', { status: 500 })
-          }
-          console.log(`Successfully deleted user ${id} from Supabase`)
+    const { id } = evt.data
+
+    if (id) {
+      const { error } = await supabaseAdmin
+        .from('profiles')
+        .delete()
+        .eq('user_id', id)
+
+      if (error) {
+        console.error('Supabase delete error:', error)
+        return new Response('Error deleting from Supabase', { status: 500 })
       }
+      console.log(`Successfully deleted user ${id} from Supabase`)
+    }
   }
 
   return new Response('', { status: 200 })
