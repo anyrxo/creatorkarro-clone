@@ -1,6 +1,6 @@
 ﻿'use client'
 
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
+import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react'
 import { useUser } from '@clerk/nextjs'
 import { supabase } from '@/lib/supabase'
 import { UserStats, XP_REWARDS, getLevelFromXP } from '@/lib/gamification'
@@ -20,7 +20,7 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
   const [stats, setStats] = useState<UserStats | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
-  const fetchStats = async () => {
+  const fetchStats = useCallback(async () => {
     if (!user) {
       setIsLoading(false)
       return
@@ -64,13 +64,13 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
     } finally {
       setIsLoading(false)
     }
-  }
+  }, [user])
 
   useEffect(() => {
     if (isLoaded) {
       fetchStats()
     }
-  }, [user, isLoaded])
+  }, [user, isLoaded, fetchStats])
 
   const awardXP = async (amount: number, reason?: string) => {
     if (!user || !stats) return
@@ -91,7 +91,7 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
 
       if (!error && data) {
         setStats(data)
-        
+
         // Level up animation
         if (newLevel > stats.current_level) {
           console.log('🎉 LEVEL UP!', newLevel)

@@ -72,7 +72,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
         if (isUserLoaded) {
             syncWithSupabase()
         }
-    }, [user, isUserLoaded, isLoaded])
+    }, [user, isUserLoaded, isLoaded, completedLessons])
 
     // Save to local storage on change
     useEffect(() => {
@@ -83,7 +83,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
 
     const markLessonComplete = async (courseId: string, lessonId: string) => {
         const uniqueLessonId = `${courseId}::${lessonId}`
-        
+
         // Optimistic update
         setCompletedLessons(prev => {
             if (prev.includes(uniqueLessonId)) return prev
@@ -94,7 +94,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
         if (user) {
             try {
                 const today = new Date().toISOString().split('T')[0]
-                
+
                 const { error } = await supabase
                     .from('user_progress')
                     .upsert({
