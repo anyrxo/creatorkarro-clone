@@ -3,15 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-.animate-shimmer {
-  animation: shimmer 2s infinite;
-}
-
 .perspective-1000 {
   perspective: 1000px;
 }
@@ -20,6 +11,7 @@
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -58,6 +50,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: 'Montserrat', sans-serif;
@@ -103,14 +96,17 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(calc(-150px * 14)); /* 14 partners * 150px width (including margin) */
+    transform: translateX(calc(-150px * 14));
+    /* 14 partners * 150px width (including margin) */
   }
 }
 
 .animate-scroll {
   animation: scroll 30s linear infinite;
-  width: calc(150px * 28); /* Double the width for seamless loop (14 * 2) */
+  width: calc(150px * 28);
+  /* Double the width for seamless loop (14 * 2) */
 }
 
 .animate-scroll:hover {
@@ -123,18 +119,46 @@ html {
 }
 
 /* Mobile menu animations */
-.delay-0 { transition-delay: 0ms; }
-.delay-75 { transition-delay: 75ms; }
-.delay-150 { transition-delay: 150ms; }
-.delay-225 { transition-delay: 225ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-375 { transition-delay: 375ms; }
-.delay-450 { transition-delay: 450ms; }
-.delay-525 { transition-delay: 525ms; }
+.delay-0 {
+  transition-delay: 0ms;
+}
+
+.delay-75 {
+  transition-delay: 75ms;
+}
+
+.delay-150 {
+  transition-delay: 150ms;
+}
+
+.delay-225 {
+  transition-delay: 225ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-375 {
+  transition-delay: 375ms;
+}
+
+.delay-450 {
+  transition-delay: 450ms;
+}
+
+.delay-525 {
+  transition-delay: 525ms;
+}
 
 /* Dropdown item staggered animations */
-.delay-50 { transition-delay: 50ms; }
-.delay-100 { transition-delay: 100ms; }
+.delay-50 {
+  transition-delay: 50ms;
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
 
 /* Page animations */
 @keyframes fadeInUp {
@@ -142,6 +166,7 @@ html {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -153,6 +178,7 @@ html {
     opacity: 0;
     transform: translateX(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -164,6 +190,7 @@ html {
     opacity: 0;
     transform: translateX(30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -175,6 +202,7 @@ html {
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -182,18 +210,24 @@ html {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
 
 @keyframes glow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
   }
+
   50% {
     box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
   }
@@ -342,12 +376,29 @@ html {
 }
 
 /* Staggered animations */
-.scroll-stagger-1 { transition-delay: 0.1s; }
-.scroll-stagger-2 { transition-delay: 0.2s; }
-.scroll-stagger-3 { transition-delay: 0.3s; }
-.scroll-stagger-4 { transition-delay: 0.4s; }
-.scroll-stagger-5 { transition-delay: 0.5s; }
-.scroll-stagger-6 { transition-delay: 0.6s; }
+.scroll-stagger-1 {
+  transition-delay: 0.1s;
+}
+
+.scroll-stagger-2 {
+  transition-delay: 0.2s;
+}
+
+.scroll-stagger-3 {
+  transition-delay: 0.3s;
+}
+
+.scroll-stagger-4 {
+  transition-delay: 0.4s;
+}
+
+.scroll-stagger-5 {
+  transition-delay: 0.5s;
+}
+
+.scroll-stagger-6 {
+  transition-delay: 0.6s;
+}
 
 /* Premium Parallax Effects */
 .parallax-bg {
@@ -360,9 +411,19 @@ html {
 
 /* Enhanced Particle System */
 @keyframes float-particles {
-  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
-  33% { transform: translate3d(30px, -30px, 0) rotate(120deg); }
-  66% { transform: translate3d(-20px, -20px, 0) rotate(240deg); }
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  33% {
+    transform: translate3d(30px, -30px, 0) rotate(120deg);
+  }
+
+  66% {
+    transform: translate3d(-20px, -20px, 0) rotate(240deg);
+  }
 }
 
 .particles {
@@ -383,15 +444,31 @@ html {
   background: radial-gradient(circle, rgba(59, 130, 246, 0.8) 0%, rgba(59, 130, 246, 0.2) 70%, transparent 100%);
 }
 
-.particle:nth-child(2) { animation-delay: -5s; }
-.particle:nth-child(3) { animation-delay: -10s; }
-.particle:nth-child(4) { animation-delay: -15s; }
+.particle:nth-child(2) {
+  animation-delay: -5s;
+}
+
+.particle:nth-child(3) {
+  animation-delay: -10s;
+}
+
+.particle:nth-child(4) {
+  animation-delay: -15s;
+}
 
 /* Premium Gradient Animations */
 @keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .animated-gradient {
@@ -407,6 +484,7 @@ html {
     transform: translateY(100%);
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -425,8 +503,15 @@ html {
 
 /* Premium Number Counter Animation */
 @keyframes counter-up {
-  from { transform: translateY(100%); opacity: 0; }
-  to { transform: translateY(0%); opacity: 1; }
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .counter-digit {
@@ -436,13 +521,25 @@ html {
 
 /* Typewriter Effect */
 @keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: #3b82f6; }
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #3b82f6;
+  }
 }
 
 .typewriter {
@@ -453,14 +550,37 @@ html {
 }
 
 /* Enhanced Staggered Animations */
-.scroll-stagger-1 { transition-delay: 0.05s; }
-.scroll-stagger-2 { transition-delay: 0.1s; }
-.scroll-stagger-3 { transition-delay: 0.15s; }
-.scroll-stagger-4 { transition-delay: 0.2s; }
-.scroll-stagger-5 { transition-delay: 0.25s; }
-.scroll-stagger-6 { transition-delay: 0.3s; }
-.scroll-stagger-7 { transition-delay: 0.35s; }
-.scroll-stagger-8 { transition-delay: 0.4s; }
+.scroll-stagger-1 {
+  transition-delay: 0.05s;
+}
+
+.scroll-stagger-2 {
+  transition-delay: 0.1s;
+}
+
+.scroll-stagger-3 {
+  transition-delay: 0.15s;
+}
+
+.scroll-stagger-4 {
+  transition-delay: 0.2s;
+}
+
+.scroll-stagger-5 {
+  transition-delay: 0.25s;
+}
+
+.scroll-stagger-6 {
+  transition-delay: 0.3s;
+}
+
+.scroll-stagger-7 {
+  transition-delay: 0.35s;
+}
+
+.scroll-stagger-8 {
+  transition-delay: 0.4s;
+}
 
 /* Luxury Button Effects */
 .btn-luxury {
@@ -528,8 +648,13 @@ html {
 
 /* Loading Skeleton */
 @keyframes skeleton-loading {
-  0% { background-position: -200px 0; }
-  100% { background-position: calc(200px + 100%) 0; }
+  0% {
+    background-position: -200px 0;
+  }
+
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
 }
 
 .skeleton {
@@ -578,12 +703,29 @@ html {
 
 /* Glitch Effect */
 @keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }
 
 .glitch:hover {
@@ -663,25 +805,33 @@ html {
 }
 
 /* Universal Interactive Element Animations */
-a, button, [role="button"], .interactive {
+a,
+button,
+[role="button"],
+.interactive {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
-a:hover, button:hover, [role="button"]:hover, .interactive:hover {
+a:hover,
+button:hover,
+[role="button"]:hover,
+.interactive:hover {
   transform: translateY(-1px);
   filter: brightness(1.05);
 }
 
 /* Premium Button Styles */
-.cta-button, .btn-primary {
+.cta-button,
+.btn-primary {
   position: relative;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.cta-button::before, .btn-primary::before {
+.cta-button::before,
+.btn-primary::before {
   content: '';
   position: absolute;
   top: 0;
@@ -692,11 +842,13 @@ a:hover, button:hover, [role="button"]:hover, .interactive:hover {
   transition: left 0.5s;
 }
 
-.cta-button:hover::before, .btn-primary:hover::before {
+.cta-button:hover::before,
+.btn-primary:hover::before {
   left: 100%;
 }
 
-.cta-button:hover, .btn-primary:hover {
+.cta-button:hover,
+.btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
 }
@@ -716,11 +868,15 @@ a:hover, button:hover, [role="button"]:hover, .interactive:hover {
 }
 
 /* Universal Card Hover Enhancement */
-.card, .bg-zinc-900, .bg-zinc-800 {
+.card,
+.bg-zinc-900,
+.bg-zinc-800 {
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card:hover, .bg-zinc-900:hover, .bg-zinc-800:hover {
+.card:hover,
+.bg-zinc-900:hover,
+.bg-zinc-800:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
@@ -910,7 +1066,9 @@ a:has(img):focus-visible {
 }
 
 /* Legacy support for older focus styles */
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
   transform: scale(1.02);
@@ -947,6 +1105,7 @@ svg {
 
 /* Reduced Motion Preferences */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -955,7 +1114,7 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  
+
   /* Keep essential functionality but reduce motion */
   .hover-lift:hover,
   .card:hover,
@@ -979,13 +1138,22 @@ svg {
   animation: bounce 1.4s ease-in-out infinite both;
 }
 
-.loading-dots span:nth-child(1) { animation-delay: -0.32s; }
-.loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+.loading-dots span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: -0.16s;
+}
 
 @keyframes bounce {
-  0%, 80%, 100% {
+
+  0%,
+  80%,
+  100% {
     transform: scale(0);
   }
+
   40% {
     transform: scale(1);
   }
@@ -1020,16 +1188,38 @@ svg {
 }
 
 @keyframes shimmer {
-  0% { transform: translateX(-100px); }
-  100% { transform: translateX(100%); }
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* Advanced Morphing Effects */
 @keyframes morph {
-  0%, 100% { border-radius: 20px; transform: rotate(0deg); }
-  25% { border-radius: 50px 20px 20px 50px; transform: rotate(90deg); }
-  50% { border-radius: 50px; transform: rotate(180deg); }
-  75% { border-radius: 20px 50px 50px 20px; transform: rotate(270deg); }
+
+  0%,
+  100% {
+    border-radius: 20px;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    border-radius: 50px 20px 20px 50px;
+    transform: rotate(90deg);
+  }
+
+  50% {
+    border-radius: 50px;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    border-radius: 20px 50px 50px 20px;
+    transform: rotate(270deg);
+  }
 }
 
 .morph-animation {
@@ -1038,14 +1228,27 @@ svg {
 
 /* Liquid Loading Effect */
 @keyframes liquid-loading {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes liquid-inner {
-  0% { height: 0%; }
-  50% { height: 100%; }
-  100% { height: 0%; }
+  0% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
 }
 
 .liquid-loader {
@@ -1071,10 +1274,13 @@ svg {
 
 /* Pulsing Glow Effect */
 @keyframes pulse-glow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
     transform: scale(1);
   }
+
   50% {
     box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
     transform: scale(1.05);
@@ -1087,23 +1293,48 @@ svg {
 
 /* Floating Elements */
 @keyframes float-up {
-  0% { opacity: 0; transform: translateY(100px); }
-  50% { opacity: 1; }
-  100% { opacity: 0; transform: translateY(-100px); }
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
 }
 
 .floating-element {
   animation: float-up 4s ease-in-out infinite;
 }
 
-.floating-element:nth-child(2) { animation-delay: 1s; }
-.floating-element:nth-child(3) { animation-delay: 2s; }
-.floating-element:nth-child(4) { animation-delay: 3s; }
+.floating-element:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.floating-element:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.floating-element:nth-child(4) {
+  animation-delay: 3s;
+}
 
 /* Text Scramble Effect */
 @keyframes text-scramble {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
 }
 
 .text-scramble {
@@ -1122,10 +1353,23 @@ svg {
 
 /* Icon Bounce */
 @keyframes icon-bounce {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  25% { transform: translateY(-10px) rotate(-5deg); }
-  50% { transform: translateY(-15px) rotate(0deg); }
-  75% { transform: translateY(-10px) rotate(5deg); }
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(-10px) rotate(5deg);
+  }
 }
 
 .icon-bounce {
@@ -1134,9 +1378,17 @@ svg {
 
 /* Gradient Border Animation */
 @keyframes gradient-border {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .animated-border {
@@ -1180,6 +1432,7 @@ svg {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1191,6 +1444,7 @@ svg {
     opacity: 1;
     transform: translateY(0);
   }
+
   to {
     opacity: 0;
     transform: translateY(-20px);
@@ -1218,6 +1472,7 @@ svg {
     transform: scale(0);
     opacity: 1;
   }
+
   100% {
     transform: scale(4);
     opacity: 0;
@@ -1233,6 +1488,7 @@ svg {
   0% {
     transform: translateX(-100%) skewX(-12deg);
   }
+
   100% {
     transform: translateX(200%) skewX(-12deg);
   }
@@ -1247,21 +1503,27 @@ svg {
   0% {
     transform: scale(1);
   }
+
   30% {
     transform: scale(1.25);
   }
+
   40% {
     transform: scale(0.85);
   }
+
   50% {
     transform: scale(1.15);
   }
+
   65% {
     transform: scale(0.95);
   }
+
   75% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
@@ -1277,6 +1539,7 @@ svg {
     opacity: 0;
     transform: rotate(-180deg) scale(0.5);
   }
+
   to {
     opacity: 1;
     transform: rotate(0) scale(1);
@@ -1293,6 +1556,7 @@ svg {
     opacity: 0;
     filter: blur(10px);
   }
+
   to {
     opacity: 1;
     filter: blur(0);
@@ -1305,9 +1569,12 @@ svg {
 
 /* Background Animations */
 @keyframes bg-pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     background-size: 100% 100%;
   }
+
   50% {
     background-size: 110% 110%;
   }
@@ -1353,9 +1620,11 @@ svg {
   0% {
     transform: translateX(-100%) translateY(-100%) rotate(0deg);
   }
+
   50% {
     transform: translateX(100%) translateY(100%) rotate(180deg);
   }
+
   100% {
     transform: translateX(-100%) translateY(-100%) rotate(360deg);
   }
@@ -1367,12 +1636,16 @@ svg {
 
 /* Wave Animation */
 @keyframes wave {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   25% {
     transform: translateY(-10px);
   }
+
   75% {
     transform: translateY(5px);
   }
@@ -1383,11 +1656,25 @@ svg {
 }
 
 /* Stagger Wave for Multiple Elements */
-.wave-1 { animation-delay: 0s; }
-.wave-2 { animation-delay: 0.1s; }
-.wave-3 { animation-delay: 0.2s; }
-.wave-4 { animation-delay: 0.3s; }
-.wave-5 { animation-delay: 0.4s; }
+.wave-1 {
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  animation-delay: 0.1s;
+}
+
+.wave-3 {
+  animation-delay: 0.2s;
+}
+
+.wave-4 {
+  animation-delay: 0.3s;
+}
+
+.wave-5 {
+  animation-delay: 0.4s;
+}
 
 /* Smooth Transform Origin */
 .transform-center {
@@ -1403,14 +1690,20 @@ svg {
 }
 
 /* Button Micro-interactions */
-button, a.cta-button, .btn-animate, [type="button"], [type="submit"] {
+button,
+a.cta-button,
+.btn-animate,
+[type="button"],
+[type="submit"] {
   position: relative;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Ripple Effect on Click */
-button::before, a.cta-button::before, .btn-animate::before {
+button::before,
+a.cta-button::before,
+.btn-animate::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1423,24 +1716,33 @@ button::before, a.cta-button::before, .btn-animate::before {
   transition: width 0.6s, height 0.6s;
 }
 
-button:active::before, a.cta-button:active::before, .btn-animate:active::before {
+button:active::before,
+a.cta-button:active::before,
+.btn-animate:active::before {
   width: 300px;
   height: 300px;
 }
 
 /* Button Press Animation */
-button:active, a.cta-button:active, .btn-animate:active, [type="button"]:active, [type="submit"]:active {
+button:active,
+a.cta-button:active,
+.btn-animate:active,
+[type="button"]:active,
+[type="submit"]:active {
   transform: scale(0.97);
 }
 
 /* Enhanced Button Hover States */
-button:hover, a.cta-button:hover, .btn-animate:hover {
+button:hover,
+a.cta-button:hover,
+.btn-animate:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
 }
 
 /* Pulse Animation for Important CTAs */
-.pulse-button, .cta-button {
+.pulse-button,
+.cta-button {
   animation: pulse-shadow 2s infinite;
 }
 
@@ -1448,9 +1750,11 @@ button:hover, a.cta-button:hover, .btn-animate:hover {
   0% {
     box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
   }
+
   70% {
     box-shadow: 0 0 0 15px rgba(59, 130, 246, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
   }
@@ -1480,8 +1784,13 @@ button:hover, a.cta-button:hover, .btn-animate:hover {
 }
 
 @keyframes button-loading-spinner {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Success Animation */
@@ -1490,19 +1799,32 @@ button:hover, a.cta-button:hover, .btn-animate:hover {
 }
 
 @keyframes success-bounce {
-  0% { transform: scale(1); }
-  30% { transform: scale(0.9); }
-  60% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(0.9);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Navigation Button Enhancements */
-nav button, nav a {
+nav button,
+nav a {
   position: relative;
   overflow: hidden;
 }
 
-nav button::after, nav a::after {
+nav button::after,
+nav a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1514,7 +1836,8 @@ nav button::after, nav a::after {
   transition: width 0.3s;
 }
 
-nav button:hover::after, nav a:hover::after {
+nav button:hover::after,
+nav a:hover::after {
   width: 80%;
 }
 
@@ -1537,7 +1860,9 @@ nav button:hover::after, nav a:hover::after {
 }
 
 /* Enhanced Focus States */
-button:focus, a.cta-button:focus, .btn-animate:focus {
+button:focus,
+a.cta-button:focus,
+.btn-animate:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
 }
@@ -1606,11 +1931,25 @@ body {
 }
 
 /* Global z-index layers */
-.z-background { z-index: 0; }
-.z-content { z-index: 10; }
-.z-interactive { z-index: 20; }
-.z-navigation { z-index: 50; }
-.z-modal { z-index: 100; }
+.z-background {
+  z-index: 0;
+}
+
+.z-content {
+  z-index: 10;
+}
+
+.z-interactive {
+  z-index: 20;
+}
+
+.z-navigation {
+  z-index: 50;
+}
+
+.z-modal {
+  z-index: 100;
+}
 
 .bg-dark {
   background: linear-gradient(135deg, #0a0c0e 0%, #1a1d29 100%);
@@ -1621,6 +1960,6 @@ body {
 }
 
 .text-gray-400 {
-  color: #a1a1aa; /* Improved contrast: gray-300 equivalent for better WCAG compliance */
+  color: #a1a1aa;
+  /* Improved contrast: gray-300 equivalent for better WCAG compliance */
 }
-

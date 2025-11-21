@@ -82,7 +82,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
     }, [completedLessons, isLoaded])
 
     const markLessonComplete = async (courseId: string, lessonId: string) => {
-        const uniqueLessonId = ${courseId}::
+        const uniqueLessonId = ``${courseId}::${lessonId}`${lessonId}`
         
         // Optimistic update
         setCompletedLessons(prev => {
@@ -189,7 +189,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
     }
 
     const isLessonComplete = (courseId: string, lessonId: string) => {
-        return completedLessons.includes(${courseId}::)
+        return completedLessons.includes(`${courseId}::${lessonId}`)
     }
 
     const getCourseProgress = (courseId: string) => {

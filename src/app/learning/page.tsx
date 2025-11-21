@@ -112,7 +112,7 @@ export default function LearningDashboard() {
                     value={stats?.current_streak || 0}
                     gradient="from-orange-500 to-red-500"
                     iconColor="text-orange-500"
-                    subtitle={stats?.longest_streak ? Best:  : undefined}
+                    subtitle={stats?.longest_streak ? `Best: ${stats.longest_streak}` : undefined}
                 />
                 <StatsCard
                     icon={Zap}

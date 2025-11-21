@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect } from 'react'
 import { getStudents, inviteStudent, revokeAccess, deleteUser } from '@/app/actions/admin-users'
@@ -217,7 +217,6 @@ export default function AdminUsersPage() {
                                                     Delete
                                                 </button>
                                             </div>
-                                        )}
                                         )}
                                     </td>
                                 </tr>
