@@ -5,20 +5,22 @@ import { LucideIcon } from 'lucide-react'
 
 interface StatsCardProps {
     icon: LucideIcon
-    title: string
+    label: string
     value: string | number
     subtitle?: string
     gradient: string
+    iconColor?: string
     animate?: boolean
     delay?: number
 }
 
 export default function StatsCard({
     icon: Icon,
-    title,
+    label,
     value,
     subtitle,
     gradient,
+    iconColor,
     animate = true,
     delay = 0
 }: StatsCardProps) {
@@ -35,13 +37,13 @@ export default function StatsCard({
 
             {/* Icon */}
             <div className={`relative p-3 rounded-xl bg-gradient-to-br ${gradient} bg-opacity-10 w-fit mb-4`}>
-                <Icon className="w-6 h-6 text-white" />
+                <Icon className={`w-6 h-6 ${iconColor || 'text-white'}`} />
             </div>
 
             {/* Content */}
             <div className="relative">
                 <div className="text-sm text-zinc-500 uppercase tracking-wider font-bold mb-1">
-                    {title}
+                    {label}
                 </div>
                 <div className="text-3xl font-black text-white mb-1">
                     {value}
