@@ -1,8 +1,8 @@
 ﻿'use client'
 
 import { useState, useEffect } from 'react'
-import { getStudents, inviteStudent, revokeAccess, deleteUser, toggleAdmin, updateAffiliateCode } from '@/app/actions/admin-users'
-import { Loader2, Plus, Mail, User, Calendar, Ban, CheckCircle, Search, Copy, Shield, ShieldAlert, Edit2, Save, X } from 'lucide-react'
+import { getStudents, inviteStudent, revokeAccess, deleteUser, toggleAdmin, updateAffiliateCode, grantAccessToUser } from '@/app/actions/admin-users'
+import { Loader2, Plus, Mail, User, Calendar, Ban, CheckCircle, Search, Copy, Shield, ShieldAlert, Edit2, Save, X, Key, Clock, Infinity } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function AdminUsersPage() {
@@ -17,6 +17,31 @@ export default function AdminUsersPage() {
     const [editingId, setEditingId] = useState<string | null>(null)
     const [editCode, setEditCode] = useState('')
     const [isSavingCode, setIsSavingCode] = useState(false)
+
+    // Send Key Modal
+    const [sendKeyModal, setSendKeyModal] = useState<{ open: boolean, email: string, userId: string | null } | null>(null)
+    const [isSendingKey, setIsSendingKey] = useState(false)
+
+    const handleSendKey = async (type: 'lifetime' | 'trial_7_days') => {
+        if (!sendKeyModal) return
+        setIsSendingKey(true)
+
+        const result = await grantAccessToUser(sendKeyModal.email, sendKeyModal.userId, type)
+
+        setIsSendingKey(false)
+        setSendKeyModal(null)
+
+        if (result.success) {
+            setInviteResult({
+                success: true,
+                key: result.key,
+                message: `Key sent to ${sendKeyModal.email}.`
+            })
+            loadStudents()
+        } else {
+            setInviteResult({ success: false, message: result.error || 'Failed to send key' })
+        }
+    }
 
     useEffect(() => {
         loadStudents()
@@ -278,6 +303,16 @@ export default function AdminUsersPage() {
                                     <td className="p-4">
                                         {student.status !== 'revoked' && (
                                             <div className="flex items-center gap-3">
+                                                {student.key === 'No Key' && (
+                                                    <button
+                                                        onClick={() => setSendKeyModal({ open: true, email: student.email, userId: student.user_id })}
+                                                        className="text-green-400 hover:text-green-300 text-xs font-medium hover:underline flex items-center gap-1"
+                                                    >
+                                                        <Key className="w-3 h-3" />
+                                                        Send Key
+                                                    </button>
+                                                )}
+
                                                 <button
                                                     onClick={() => handleToggleAdmin(student.user_id, student.is_admin)}
                                                     className="text-purple-400 hover:text-purple-300 text-xs font-medium hover:underline disabled:opacity-50 disabled:cursor-not-allowed"
@@ -286,12 +321,16 @@ export default function AdminUsersPage() {
                                                 >
                                                     {student.is_admin ? 'Remove Admin' : 'Make Admin'}
                                                 </button>
-                                                <button
-                                                    onClick={() => handleRevoke(student.id)}
-                                                    className="text-yellow-500 hover:text-yellow-400 text-xs font-medium hover:underline"
-                                                >
-                                                    Revoke
-                                                </button>
+
+                                                {student.key !== 'No Key' && (
+                                                    <button
+                                                        onClick={() => handleRevoke(student.id)}
+                                                        className="text-yellow-500 hover:text-yellow-400 text-xs font-medium hover:underline"
+                                                    >
+                                                        Revoke
+                                                    </button>
+                                                )}
+
                                                 <button
                                                     onClick={async () => {
                                                         if (confirm('Are you sure you want to DELETE this user? This will remove their license key and profile data permanently.')) {
@@ -319,6 +358,70 @@ export default function AdminUsersPage() {
                     </table>
                 </div>
             )}
+            {/* Send Key Modal */}
+            <AnimatePresence>
+                {sendKeyModal && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.95 }}
+                            className="bg-zinc-900 border border-white/10 rounded-2xl p-6 w-full max-w-md shadow-2xl"
+                        >
+                            <div className="flex items-center justify-between mb-6">
+                                <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                                    <Key className="w-5 h-5 text-purple-400" />
+                                    Send Access Key
+                                </h3>
+                                <button onClick={() => setSendKeyModal(null)} className="text-zinc-400 hover:text-white">
+                                    <X className="w-5 h-5" />
+                                </button>
+                            </div>
+
+                            <p className="text-zinc-400 mb-6">
+                                Grant access to <span className="text-white font-bold">{sendKeyModal.email}</span>.
+                                They will receive an email with their key.
+                            </p>
+
+                            <div className="space-y-3">
+                                <button
+                                    onClick={() => handleSendKey('lifetime')}
+                                    disabled={isSendingKey}
+                                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white p-4 rounded-xl font-bold flex items-center justify-between group transition-all"
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <div className="bg-white/20 p-2 rounded-lg">
+                                            <Infinity className="w-5 h-5 text-white" />
+                                        </div>
+                                        <div className="text-left">
+                                            <div className="text-sm font-bold">Lifetime Access</div>
+                                            <div className="text-xs text-purple-200">Full unrestricted access</div>
+                                        </div>
+                                    </div>
+                                    {isSendingKey ? <Loader2 className="w-5 h-5 animate-spin" /> : <Plus className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />}
+                                </button>
+
+                                <button
+                                    onClick={() => handleSendKey('trial_7_days')}
+                                    disabled={isSendingKey}
+                                    className="w-full bg-zinc-800 hover:bg-zinc-700 text-white p-4 rounded-xl font-bold flex items-center justify-between group transition-all border border-white/5 hover:border-white/10"
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <div className="bg-zinc-700 p-2 rounded-lg">
+                                            <Clock className="w-5 h-5 text-zinc-400" />
+                                        </div>
+                                        <div className="text-left">
+                                            <div className="text-sm font-bold">7-Day Trial</div>
+                                            <div className="text-xs text-zinc-400">Expires automatically</div>
+                                        </div>
+                                    </div>
+                                    {isSendingKey ? <Loader2 className="w-5 h-5 animate-spin" /> : <Plus className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />}
+                                </button>
+                            </div>
+                        </motion.div>
+                    </div>
+                )}
+            </AnimatePresence>
         </div>
     )
 }

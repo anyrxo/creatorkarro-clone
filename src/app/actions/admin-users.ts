@@ -258,3 +258,60 @@ export async function updateAffiliateCode(userId: string, newCode: string) {
     if (error) return { error: error.message }
     return { success: true }
 }
+
+export async function grantAccessToUser(email: string, userId: string | null, type: 'lifetime' | 'trial_7_days') {
+    const supabaseAdmin = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.SUPABASE_SERVICE_ROLE_KEY!,
+        { auth: { persistSession: false } }
+    )
+
+    // 1. Determine expiration
+    let expiresInHours = undefined
+    if (type === 'trial_7_days') {
+        expiresInHours = 7 * 24
+    }
+
+    // 2. Generate Key
+    const { success, keys, error } = await generateLicenseKeys(1, 'all-access', expiresInHours)
+    if (!success || !keys || keys.length === 0) {
+        return { error: 'Failed to generate key: ' + error }
+    }
+
+    const keyData = keys[0]
+
+    // 3. Link to User (if userId exists) OR Email
+    const updates: any = {
+        redeemed_by_email: email,
+        status: 'active'
+    }
+
+    if (userId) {
+        updates.user_id = userId
+        updates.claimed_at = new Date().toISOString()
+    }
+
+    const { error: updateError } = await supabaseAdmin
+        .from('license_keys')
+        .update(updates)
+        .eq('id', keyData.id)
+
+    if (updateError) {
+        return { error: 'Failed to link key: ' + updateError.message }
+    }
+
+    // 4. Send Email
+    const emailResult = await sendLicenseEmail(email, keyData.key)
+
+    revalidatePath('/admin/users')
+
+    if (!emailResult.success) {
+        return {
+            success: true,
+            key: keyData.key,
+            message: 'Key generated and linked, but email failed. Copy key manually.'
+        }
+    }
+
+    return { success: true, key: keyData.key }
+}

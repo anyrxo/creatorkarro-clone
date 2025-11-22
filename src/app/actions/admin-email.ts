@@ -20,7 +20,7 @@ export async function getStudentsForBroadcast() {
     const { data: students, error } = await supabaseAdmin
         .from('license_keys')
         .select('email, user_id, created_at')
-        .eq('status', 'claimed')
+        .in('status', ['active', 'claimed'])
         .order('created_at', { ascending: false })
 
     if (error) {
@@ -53,11 +53,11 @@ export async function sendBroadcastEmail(subject: string, htmlContent: string, r
             // Use provided recipients
             uniqueEmails = [...new Set(recipients)]
         } else {
-            // 1. Get all active students (status = claimed)
+            // 1. Get all active students (status = claimed or active)
             const { data: students, error } = await supabaseAdmin
                 .from('license_keys')
                 .select('email')
-                .eq('status', 'claimed')
+                .in('status', ['active', 'claimed'])
 
             if (error) {
                 console.error('Database error fetching students:', error)
