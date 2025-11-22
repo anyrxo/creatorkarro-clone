@@ -92,7 +92,7 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
           .eq('is_active', true)
 
         if (activeQuests) {
-          const newUserQuests = activeQuests.map(quest => ({
+          const newUserQuests = activeQuests.map((quest: any) => ({
             user_id: user.id,
             quest_id: quest.id,
             progress: 0,
