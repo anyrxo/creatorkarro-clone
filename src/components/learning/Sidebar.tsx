@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, PlayCircle, CheckCircle, FileText, Menu, X, Flame } from 'lucide-react'
+import { ChevronDown, PlayCircle, CheckCircle, FileText, Menu, X, Flame, Monitor } from 'lucide-react'
 import { CourseContent } from '@/data/learning-content'
 import Link from 'next/link'
 import { useCourse } from '@/context/CourseContext'
@@ -158,6 +158,17 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                     </div>
                 ))}
             </div>
-        </div>
+
+
+            <div className="p-4 border-t border-white/5 mt-auto">
+                <Link
+                    href="/admin/creator-studio"
+                    className="flex items-center gap-2 text-xs font-bold text-zinc-500 hover:text-purple-400 transition-colors"
+                >
+                    <Monitor className="w-3 h-3" />
+                    Admin Creator Studio
+                </Link>
+            </div>
+        </div >
     )
 }
