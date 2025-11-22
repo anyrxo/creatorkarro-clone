@@ -5176,8 +5176,954 @@ P.S. - ${productType === 'membership' ? 'Your next billing date is [date]. Looki
     )
 }
 
-function VaJobDescription() { return <div className="text-white">VA Job Description Coming Soon</div> }
-function N8nBlueprints() { return <div className="text-white">N8N Blueprints Coming Soon</div> }
+
+function VaJobDescription() {
+    const [role, setRole] = useState('admin')
+    const [hours, setHours] = useState(20)
+    const [generated, setGenerated] = useState(false)
+
+    const roles = [
+        {
+            id: 'admin',
+            name: '📋 Administrative Assistant',
+            rate: '$5-$8/hr',
+            responsibilities: [
+                'Email management and inbox organization',
+                'Calendar scheduling and appointment booking',
+                'Data entry and spreadsheet management',
+                'Document preparation and formatting',
+                'Travel arrangements and expense tracking'
+            ],
+            skills: [
+                'Proficient in Google Workspace/Microsoft Office',
+                'Excellent written and verbal English',
+                'Strong organizational skills',
+                'Detail-oriented and reliable',
+                'Experience with CRM tools (bonus)'
+            ],
+            trialTask: 'Organize a messy inbox with 50+ emails into folders and draft 3 responses',
+            experience: '1-2 years in administrative role'
+        },
+        {
+            id: 'social',
+            name: '📱 Social Media Manager',
+            rate: '$8-$15/hr',
+            responsibilities: [
+                'Content creation and scheduling (Instagram, TikTok, LinkedIn)',
+                'Community management (respond to comments/DMs)',
+                'Hashtag research and trend analysis',
+                'Performance reporting (weekly/monthly analytics)',
+                'Engagement growth strategies'
+            ],
+            skills: [
+                'Expert in social media platforms and best practices',
+                'Graphic design skills (Canva, Photoshop)',
+                'Copywriting and caption writing',
+                'Understanding of analytics and KPIs',
+                'Experience with scheduling tools (Later, Buffer, etc.)'
+            ],
+            trialTask: 'Create 5 Instagram post captions + 1 carousel design for [your niche]',
+            experience: '2-3 years managing social accounts (with portfolio)'
+        },
+        {
+            id: 'support',
+            name: '🎧 Customer Support Specialist',
+            rate: '$6-$10/hr',
+            responsibilities: [
+                'Respond to customer inquiries via email/chat',
+                'Troubleshoot common issues and FAQ',
+                'Process refunds and handle complaints',
+                'Update help documentation',
+                'Track support tickets and response times'
+            ],
+            skills: [
+                'Excellent communication and empathy',
+                'Problem-solving mindset',
+                'Familiarity with support tools (Zendesk, Intercom)',
+                'Patience with difficult customers',
+                'Fast typing speed (50+ WPM)'
+            ],
+            trialTask: 'Respond to 5 customer support scenarios (provide templates)',
+            experience: '1+ years in customer service'
+        },
+        {
+            id: 'tech',
+            name: '💻 Tech/Web Assistant',
+            rate: '$12-$25/hr',
+            responsibilities: [
+                'WordPress website updates and maintenance',
+                'Basic HTML/CSS edits',
+                'Plugin management and troubleshooting',
+                'Integration setup (Zapier, APIs)',
+                'Website backups and security monitoring'
+            ],
+            skills: [
+                'Strong technical aptitude',
+                'HTML, CSS, basic JavaScript',
+                'WordPress or Webflow experience',
+                'Problem-solving and Googling skills',
+                'Familiarity with hosting/DNS'
+            ],
+            trialTask: 'Fix 3 common WordPress issues (provide test site credentials)',
+            experience: '2+ years web development/tech support'
+        },
+        {
+            id: 'content',
+            name: '✍️ Content Writer/Editor',
+            rate: '$10-$20/hr',
+            responsibilities: [
+                'Write blog posts, emails, and marketing copy',
+                'Edit and proofread existing content',
+                'Research topics and gather data',
+                'SEO optimization (keywords, meta descriptions)',
+                'Content calendar management'
+            ],
+            skills: [
+                'Exceptional writing and grammar',
+                'Research skills',
+                'SEO knowledge',
+                'Ability to match brand voice',
+                'Experience with WordPress/CMS'
+            ],
+            trialTask: 'Write a 500-word blog post on [topic] with SEO in mind',
+            experience: '2+ years writing/editing (portfolio required)'
+        },
+        {
+            id: 'video',
+            name: '🎬 Video Editor',
+            rate: '$15-$30/hr',
+            responsibilities: [
+                'Edit YouTube videos, Reels, and TikToks',
+                'Add captions, b-roll, and effects',
+                'Color correction and audio mixing',
+                'Thumbnail creation',
+                'Batch editing for efficiency'
+            ],
+            skills: [
+                'Expert in editing software (Premiere, DaVinci, CapCut)',
+                'Understanding of pacing and storytelling',
+                'Motion graphics skills (After Effects)',
+                'Fast turnaround time',
+                'Portfolio of viral content'
+            ],
+            trialTask: 'Edit a 1-minute sample video with captions and effects',
+            experience: '2+ years video editing (portfolio required)'
+        }
+    ]
+
+    const generateJobPost = () => {
+        const selectedRole = roles.find(r => r.id === role)!
+        const weeklyBudget = hours * parseFloat(selectedRole.rate.split('-')[0].replace('$', ''))
+        const monthlyBudget = weeklyBudget * 4
+
+        return {
+            title: `Hiring: ${selectedRole.name} (${hours} hrs/week)`,
+            description: `We're looking for a reliable, detail-oriented ${selectedRole.name} to join our team ${hours} hours per week.
+
+**About the Role:**
+This is a part-time, remote position perfect for someone who wants ${hours < 20 ? 'flexible side income' : hours < 30 ? 'part-time work' : 'substantial income'} while working from home.
+
+**What You'll Do:**
+${selectedRole.responsibilities.map(r => `• ${r}`).join('\n')}
+
+**What We're Looking For:**
+${selectedRole.skills.map(s => `• ${s}`).join('\n')}
+
+**Requirements:**
+• ${selectedRole.experience}
+• Availability: ${hours} hours/week (flexible schedule)
+• Strong internet connection and reliable computer
+• Timezone: ${hours < 20 ? 'Any (async work)' : 'Preferably overlap with [your timezone]'}
+• Excellent English communication (written and verbal)
+
+**What We Offer:**
+• Competitive pay: ${selectedRole.rate} (${Math.round(weeklyBudget)}/week = $${Math.round(monthlyBudget)}/month)
+• Flexible schedule (work when you want, hit your ${hours}hr/week)
+• Remote-first company (work from anywhere)
+• Growth potential (start part-time, scale to full-time based on performance)
+• Direct collaboration with [founder/team]
+
+**How to Apply:**
+Please submit:
+1. Your resume/CV
+2. A brief cover letter (why you're a great fit)
+3. ${selectedRole.id === 'social' || selectedRole.id === 'video' || selectedRole.id === 'content' ? 'Portfolio/work samples' : 'Relevant experience examples'}
+
+**Trial Task (Paid):**
+If selected, you'll complete a paid trial task: ${selectedRole.trialTask}
+
+We'll pay $${Math.round(parseFloat(selectedRole.rate.split('-')[1].replace('/hr', '')) * 2)} for the trial (2 hours).
+
+**Timeline:**
+• Applications close: [Date]
+• Interviews: [Date range]
+• Trial tasks: [Date range]
+• Start date: [Date]
+
+Looking forward to working with you! 🚀`,
+
+            whereToPost: [
+                { platform: 'Upwork', pros: 'Large talent pool, escrow protection', cons: '20% fee on payments', fit: '⭐⭐⭐⭐' },
+                { platform: 'OnlineJobs.ph', pros: 'Filipino VAs (great value), direct hire', cons: 'No payment protection', fit: '⭐⭐⭐⭐⭐' },
+                { platform: 'Fiverr', pros: 'Fixed-price gigs, easy to start', cons: 'Limited for ongoing work', fit: '⭐⭐⭐' },
+                { platform: 'Indeed', pros: 'Wide reach, familiar to job seekers', cons: 'Lots of unqualified applicants', fit: '⭐⭐⭐' },
+                { platform: 'LinkedIn', pros: 'Professional network, quality candidates', cons: 'Slower hiring process', fit: '⭐⭐⭐⭐' },
+                { platform: 'VA Groups (Facebook)', pros: 'Direct access to VAs, no fees', cons: 'Manual vetting required', fit: '⭐⭐⭐⭐' }
+            ],
+
+            interviewQuestions: [
+                {
+                    question: 'What tools/software are you most proficient in?',
+                    why: 'Assess technical skills and compatibility with your stack'
+                },
+                {
+                    question: 'Describe your typical work schedule. When are you most productive?',
+                    why: 'Ensure timezone overlap and work style fit'
+                },
+                {
+                    question: `Tell me about a time you [${role === 'support' ? 'dealt with a difficult customer' : role === 'admin' ? 'managed multiple priorities' : role === 'social' ? 'created viral content' : 'solved a complex problem'}].`,
+                    why: 'Behavioral question to assess real experience'
+                },
+                {
+                    question: 'How do you manage your tasks and stay organized?',
+                    why: 'Evaluate organizational systems and reliability'
+                },
+                {
+                    question: 'What makes you different from other VAs in your field?',
+                    why: 'Identify unique skills or value-adds'
+                },
+                {
+                    question: 'Are you comfortable with a trial task before we commit?',
+                    why: 'Gauge seriousness and confidence in abilities'
+                }
+            ],
+
+            redFlags: [
+                '❌ Poor English in application (if role requires strong English)',
+                '❌ Generic cover letter with no personalization',
+                '❌ No portfolio/examples when requested',
+                '❌ Unrealistic rate expectations for experience level',
+                '❌ Unavailable for your required hours/timezone',
+                '❌ Doesn\'t answer application questions directly'
+            ],
+
+            greenFlags: [
+                '✅ Personalized cover letter mentioning your business',
+                '✅ Proactive questions about the role/company',
+                '✅ Portfolio clearly demonstrates relevant skills',
+                '✅ Realistic about availability and rates',
+                '✅ References or testimonials from previous clients',
+                '✅ Shows genuine interest in your industry/niche'
+            ]
+        }
+    }
+
+    const handleGenerate = () => {
+        setGenerated(true)
+    }
+
+    const selectedRole = roles.find(r => r.id === role)!
+    const jobPost = generated ? generateJobPost() : null
+
+    return (
+        <div className="space-y-6">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-teal-500/10 to-emerald-500/10 border border-teal-500/20 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">👔 VA Job Description Generator</h3>
+                <p className="text-gray-300 text-sm">
+                    Create a <strong className="text-teal-400">professional job post</strong> that attracts top-tier VAs.
+                    <span className="text-gray-400"> Hire right, save time.</span>
+                </p>
+            </div>
+
+            {/* Role Selection */}
+            <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                <label className="block text-white font-semibold mb-4">Select Role Type</label>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {roles.map(r => (
+                        <button
+                            key={r.id}
+                            onClick={() => {
+                                setRole(r.id)
+                                setGenerated(false)
+                            }}
+                            className={`p-4 rounded-lg border-2 transition-all text-left ${role === r.id
+                                ? 'border-teal-500 bg-teal-500/10'
+                                : 'border-[#2a2a2a] bg-[#0a0a0a] hover:border-teal-500/50'
+                                }`}
+                        >
+                            <div className="text-white font-bold text-sm mb-1">{r.name}</div>
+                            <div className="text-xs text-teal-400">{r.rate}</div>
+                        </button>
+                    ))}
+                </div>
+            </div>
+
+            {/* Hours per Week */}
+            <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                <label className="block text-white font-semibold mb-3">
+                    Hours per Week: {hours} hrs/week
+                </label>
+                <input
+                    type="range"
+                    min="5"
+                    max="40"
+                    step="5"
+                    value={hours}
+                    onChange={(e) => {
+                        setHours(parseInt(e.target.value))
+                        setGenerated(false)
+                    }}
+                    className="w-full h-2 bg-[#2a2a2a] rounded-lg appearance-none cursor-pointer"
+                />
+                <div className="flex justify-between text-xs text-gray-500 mt-2">
+                    <span>5 hrs (casual)</span>
+                    <span>20 hrs (part-time)</span>
+                    <span>40 hrs (full-time)</span>
+                </div>
+                <div className="mt-3 text-sm text-gray-400">
+                    💰 Estimated cost: ${Math.round(hours * parseFloat(selectedRole.rate.split('-')[0].replace('$', '')))}-${Math.round(hours * parseFloat(selectedRole.rate.split('-')[1].replace('/hr', '')))}/week
+                </div>
+            </div>
+
+            {/* Generate Button */}
+            <button
+                onClick={handleGenerate}
+                className="w-full bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] shadow-lg"
+            >
+                Generate Job Post 👔
+            </button>
+
+            {/* Generated Job Post */}
+            {generated && jobPost && (
+                <div className="space-y-4">
+                    <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl p-5">
+                        <h4 className="text-white font-bold mb-2">✅ Job Post Ready!</h4>
+                        <p className="text-gray-300 text-sm">
+                            Complete job description with requirements, interview questions, and where to post.
+                        </p>
+                    </div>
+
+                    {/* Job Description */}
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                        <div className="flex items-center justify-between mb-4">
+                            <h5 className="text-white font-bold">📝 {jobPost.title}</h5>
+                            <CopyButton text={`${jobPost.title}\n\n${jobPost.description}`} />
+                        </div>
+                        <pre className="text-gray-300 text-sm whitespace-pre-wrap font-sans bg-[#0a0a0a] p-5 rounded-lg border border-[#2a2a2a] max-h-96 overflow-y-auto">
+                            {jobPost.description}
+                        </pre>
+                    </div>
+
+                    {/* Where to Post */}
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                        <h5 className="text-white font-bold mb-4">🌐 Where to Post This Job</h5>
+                        <div className="grid md:grid-cols-2 gap-3">
+                            {jobPost.whereToPost.map((platform, i) => (
+                                <div key={i} className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                    <div className="flex items-center justify-between mb-2">
+                                        <span className="text-white font-semibold">{platform.platform}</span>
+                                        <span className="text-sm text-yellow-400">{platform.fit}</span>
+                                    </div>
+                                    <div className="text-xs text-green-400 mb-1">✓ {platform.pros}</div>
+                                    <div className="text-xs text-red-400">✗ {platform.cons}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Interview Questions */}
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                        <h5 className="text-white font-bold mb-4">❓ Interview Questions</h5>
+                        <div className="space-y-3">
+                            {jobPost.interviewQuestions.map((q, i) => (
+                                <div key={i} className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                    <div className="text-white font-semibold mb-2">Q{i + 1}: {q.question}</div>
+                                    <div className="text-xs text-gray-400">💡 Why: {q.why}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Red Flags & Green Flags */}
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                            <h5 className="text-white font-bold mb-4">🚩 Red Flags to Watch For</h5>
+                            <div className="space-y-2">
+                                {jobPost.redFlags.map((flag, i) => (
+                                    <div key={i} className="text-sm text-gray-300">{flag}</div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                            <h5 className="text-white font-bold mb-4">✨ Green Flags to Look For</h5>
+                            <div className="space-y-2">
+                                {jobPost.greenFlags.map((flag, i) => (
+                                    <div key={i} className="text-sm text-gray-300">{flag}</div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Pro Tips */}
+                    <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-5">
+                        <h4 className="text-white font-bold mb-3">💡 Hiring Pro Tips</h4>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**Always do a paid trial task**: Filters out 80% of unqualified applicants</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**Start part-time, scale up**: Easier to test fit before committing full-time</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**Check timezone overlap**: At least 2-3 hour overlap for real-time communication</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**OnlineJobs.ph is gold**: Best value for Filipino VAs (English-speaking + affordable)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**Pay fair rates**: Underpaying = high turnover. Pay well, get loyalty and quality</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            )}
+        </div>
+    )
+}
+
+
+function N8nBlueprints() {
+    const [selectedWorkflow, setSelectedWorkflow] = useState('cart-abandonment')
+
+    const workflows = [
+        {
+            id: 'cart-abandonment',
+            name: '🛒 Cart Abandonment Recovery',
+            description: 'Recover 15-25% of abandoned carts with automated email sequence',
+            complexity: 'Medium',
+            roi: 'High (15-25% recovery rate)',
+            nodes: [
+                { type: 'Webhook', config: 'Stripe checkout.session.expired' },
+                { type: 'Wait', config: '1 hour delay' },
+                { type: 'Email', config: 'Send reminder email' },
+                { type: 'IF', config: 'Check if purchased' },
+                { type: 'Wait', config: '24 hour delay' },
+                { type: 'Email', config: 'Send discount offer (10% off)' },
+                { type: 'Wait', config: '48 hour delay' },
+                { type: 'Email', config: 'Final reminder (last chance)' }
+            ],
+            emailSequence: [
+                { hour: 1, subject: '🛒 You left something behind...', cta: 'Complete your purchase' },
+                { hour: 24, subject: '💰 Special 10% discount just for you', cta: 'Claim discount' },
+                { hour: 72, subject: '⏰ Last chance - cart expires soon', cta: 'Checkout now' }
+            ],
+            integrations: ['Stripe', 'SendGrid/Mailgun', 'Google Sheets (tracking)'],
+            code: `{
+  "nodes": [
+    {
+      "name": "Stripe Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "webhookId": "checkout.session.expired"
+    },
+    {
+      "name": "Wait 1 Hour",
+      "type": "n8n-nodes-base.wait",
+      "amount": 1,
+      "unit": "hours"
+    },
+    {
+      "name": "Send Reminder",
+      "type": "n8n-nodes-base.emailSend",
+      "subject": "You left something behind...",
+      "toEmail": "{{$json.customer.email}}"
+    }
+  ]
+}`,
+            expectedResults: '15-25% of abandoned carts convert within 72 hours'
+        },
+        {
+            id: 'post-purchase',
+            name: '📦 Post-Purchase Onboarding',
+            description: 'Automated welcome sequence for new customers',
+            complexity: 'Easy',
+            roi: 'Medium (Reduces support tickets 30%)',
+            nodes: [
+                { type: 'Webhook', config: 'Stripe payment.succeeded' },
+                { type: 'Email', config: 'Instant: Welcome + login details' },
+                { type: 'Airtable', config: 'Log new customer' },
+                { type: 'Wait', config: '24 hours' },
+                { type: 'Email', config: 'Check-in: Did you get started?' },
+                { type: 'Wait', config: '7 days' },
+                { type: 'Email', config: 'Request review/testimonial' }
+            ],
+            emailSequence: [
+                { hour: 0, subject: '🎉 Welcome! Here\'s how to get started', cta: 'Access your account' },
+                { hour: 24, subject: '👋 Quick check-in - need any help?', cta: 'Reply if stuck' },
+                { hour: 168, subject: '⭐ Loving it? Leave us a review', cta: 'Share feedback' }
+            ],
+            integrations: ['Stripe', 'Email Service', 'Airtable/Notion'],
+            code: `{
+  "nodes": [
+    {
+      "name": "Stripe Purchase",
+      "type": "n8n-nodes-base.webhook",
+      "webhookId": "payment.succeeded"
+    },
+    {
+      "name": "Welcome Email",
+      "type": "n8n-nodes-base.emailSend",
+      "subject": "Welcome! Here's your login",
+      "body": "Thanks for your purchase..."
+    },
+    {
+      "name": "Log to Airtable",
+      "type": "n8n-nodes-base.airtable",
+      "operation": "create"
+    }
+  ]
+}`,
+            expectedResults: '30% reduction in support tickets, 15% testimonial rate'
+        },
+        {
+            id: 'review-request',
+            name: '⭐ Review Request Automation',
+            description: 'Ask for reviews from satisfied customers at the perfect time',
+            complexity: 'Easy',
+            roi: 'High (10-20% review rate)',
+            nodes: [
+                { type: 'Schedule', config: 'Every Monday 9am' },
+                { type: 'Airtable', config: 'Find customers from 30 days ago' },
+                { type: 'Filter', config: 'No refunds, no complaints' },
+                { type: 'Email', config: 'Request review with template' },
+                { type: 'Airtable', config: 'Mark as "review requested"' }
+            ],
+            emailSequence: [
+                { hour: 720, subject: '💬 Quick question about [Product]', cta: 'Leave a review' }
+            ],
+            integrations: ['Airtable/Database', 'Email Service', 'Review Platform API'],
+            code: `{
+  "nodes": [
+    {
+      "name": "Weekly Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "rule": "0 9 * * 1"
+    },
+    {
+      "name": "Get Happy Customers",
+      "type": "n8n-nodes-base.airtable",
+      "operation": "list",
+      "filterByFormula": "purchaseDate = 30 days ago"
+    },
+    {
+      "name": "Send Review Request",
+      "type": "n8n-nodes-base.emailSend"
+    }
+  ]
+}`,
+            expectedResults: '10-20% of customers leave reviews (massive social proof boost)'
+        },
+        {
+            id: 'lead-nurture',
+            name: '🎯 Lead Nurturing Drip',
+            description: '7-day email sequence to convert free users to paid',
+            complexity: 'Medium',
+            roi: 'High (5-10% conversion)',
+            nodes: [
+                { type: 'Webhook', config: 'New signup webhook' },
+                { type: 'Email', config: 'Day 0: Welcome + value prop' },
+                { type: 'Wait', config: '2 days' },
+                { type: 'Email', config: 'Day 2: Case study / social proof' },
+                { type: 'IF', config: 'Check if upgraded' },
+                { type: 'Wait', config: '3 days' },
+                { type: 'Email', config: 'Day 5: Limited-time discount' },
+                { type: 'Wait', config: '2 days' },
+                { type: 'Email', config: 'Day 7: Final call' }
+            ],
+            emailSequence: [
+                { hour: 0, subject: '👋 Welcome to [Product]', cta: 'Get started' },
+                { hour: 48, subject: '📈 See how [Customer] got results', cta: 'Read case study' },
+                { hour: 120, subject: '🎁 Special offer (24 hours only)', cta: 'Upgrade now' },
+                { hour: 168, subject: '⏰ Offer expires tonight', cta: 'Last chance' }
+            ],
+            integrations: ['Your App Database', 'Email Service', 'Stripe'],
+            code: `{
+  "nodes": [
+    {
+      "name": "New Signup",
+      "type": "n8n-nodes-base.webhook",
+      "path": "new-user"
+    },
+    {
+      "name": "Day 0 Email",
+      "type": "n8n-nodes-base.emailSend"
+    },
+    {
+      "name": "Wait 2 Days",
+      "type": "n8n-nodes-base.wait",
+      "amount": 2,
+      "unit": "days"
+    },
+    {
+      "name": "Check If Paid",
+      "type": "n8n-nodes-base.if",
+      "conditions": "{{$json.plan}} === 'free'"
+    }
+  ]
+}`,
+            expectedResults: '5-10% of free users convert to paid within 7 days'
+        },
+        {
+            id: 'webinar-funnel',
+            name: '🎥 Webinar Follow-Up Funnel',
+            description: 'Automated email sequence for webinar attendees',
+            complexity: 'Medium',
+            roi: 'Very High (20-40% conversion)',
+            nodes: [
+                { type: 'Webhook', config: 'Zoom webinar.ended' },
+                { type: 'Email', config: 'Send replay + slides' },
+                { type: 'IF', config: 'Attended vs No-show' },
+                { type: 'Wait', config: '24 hours' },
+                { type: 'Email', config: 'Special offer (attendees only)' },
+                { type: 'Wait', config: '48 hours' },
+                { type: 'Email', config: 'Urgency: Offer expires soon' },
+                { type: 'Slack', config: 'Notify team of hot leads' }
+            ],
+            emailSequence: [
+                { hour: 0, subject: '🎥 Thanks for attending! Here\'s the replay', cta: 'Watch replay' },
+                { hour: 24, subject: '🎁 Exclusive offer for attendees', cta: 'Claim offer' },
+                { hour: 72, subject: '⏰ Webinar offer closes in 24 hours', cta: 'Act now' }
+            ],
+            integrations: ['Zoom', 'Email Service', 'Stripe', 'Slack'],
+            code: `{
+  "nodes": [
+    {
+      "name": "Zoom Webinar",
+      "type": "n8n-nodes-base.zoom",
+      "event": "webinar.ended"
+    },
+    {
+      "name": "Send Replay",
+      "type": "n8n-nodes-base.emailSend",
+      "attachments": "slides.pdf"
+    },
+    {
+      "name": "Attended?",
+      "type": "n8n-nodes-base.if",
+      "conditions": "{{$json.attended}} === true"
+    }
+  ]
+}`,
+            expectedResults: '20-40% conversion from webinar attendees (with time-limited offer)'
+        },
+        {
+            id: 'affiliate-tracking',
+            name: '💰 Affiliate Commission Tracker',
+            description: 'Auto-calculate and notify affiliates of their commissions',
+            complexity: 'Hard',
+            roi: 'Medium (Scales affiliate program)',
+            nodes: [
+                { type: 'Webhook', config: 'Stripe payment.succeeded' },
+                { type: 'HTTP', config: 'Check affiliate cookie/param' },
+                { type: 'IF', config: 'Has affiliate referrer?' },
+                { type: 'Code', config: 'Calculate commission (30%)' },
+                { type: 'Airtable', config: 'Log commission' },
+                { type: 'Email', config: 'Notify affiliate of sale' },
+                { type: 'Schedule', config: 'Monthly payout trigger' },
+                { type: 'PayPal', config: 'Send mass payout' }
+            ],
+            emailSequence: [
+                { hour: 0, subject: '💰 You earned a commission!', cta: 'View dashboard' },
+                { hour: 720, subject: '💸 Your monthly payout is ready', cta: 'Confirm payment' }
+            ],
+            integrations: ['Stripe', 'Airtable', 'PayPal/Wise', 'Your App'],
+            code: `{
+  "nodes": [
+    {
+      "name": "Sale Webhook",
+      "type": "n8n-nodes-base.webhook"
+    },
+    {
+      "name": "Check Affiliate",
+      "type": "n8n-nodes-base.httpRequest",
+      "url": "yoursite.com/api/affiliate/{{$json.customer.id}}"
+    },
+    {
+      "name": "Calculate Commission",
+      "type": "n8n-nodes-base.code",
+      "code": "return {commission: $json.amount * 0.3}"
+    },
+    {
+      "name": "Log Commission",
+      "type": "n8n-nodes-base.airtable"
+    }
+  ]
+}`,
+            expectedResults: 'Fully automated affiliate tracking + payouts (zero manual work)'
+        },
+        {
+            id: 'referral-program',
+            name: '🎁 Referral Program Automation',
+            description: 'Reward customers who refer friends (both get discount)',
+            complexity: 'Medium',
+            roi: 'High (Viral growth)',
+            nodes: [
+                { type: 'Webhook', config: 'New referral signup' },
+                { type: 'Code', config: 'Generate unique referral code' },
+                { type: 'Stripe', config: 'Create 20% discount coupon' },
+                { type: 'Email', config: 'Send codes to both parties' },
+                { type: 'Airtable', config: 'Track referral tree' },
+                { type: 'IF', config: 'Friend makes purchase?' },
+                { type: 'Email', config: 'Thank referrer + bonus credit' }
+            ],
+            emailSequence: [
+                { hour: 0, subject: '🎉 Your friend signed up! Here\'s your reward', cta: 'Use your discount' },
+                { hour: 24, subject: '💸 You earned $10 credit!', cta: 'Spend it now' }
+            ],
+            integrations: ['Stripe', 'Email Service', 'Airtable'],
+            code: `{
+  "nodes": [
+    {
+      "name": "Referral Signup",
+      "type": "n8n-nodes-base.webhook",
+      "path": "referral"
+    },
+    {
+      "name": "Generate Code",
+      "type": "n8n-nodes-base.code",
+      "code": "return {code: referrer + '_' + Date.now()}"
+    },
+    {
+      "name": "Create Coupon",
+      "type": "n8n-nodes-base.stripe",
+      "operation": "create coupon",
+      "percentOff": 20
+    }
+  ]
+}`,
+            expectedResults: '15-30% of customers refer friends (cheapest customer acquisition)'
+        },
+        {
+            id: 'churn-prevention',
+            name: '🚨 Churn Prevention Alert',
+            description: 'Detect inactive users and re-engage before they cancel',
+            complexity: 'Medium',
+            roi: 'High (Save 10-20% of churning users)',
+            nodes: [
+                { type: 'Schedule', config: 'Daily at 9am' },
+                { type: 'Database', config: 'Find users inactive 14+ days' },
+                { type: 'Email', config: 'Personal check-in from founder' },
+                { type: 'Slack', config: 'Alert team to reach out' },
+                { type: 'Wait', config: '7 days' },
+                { type: 'IF', config: 'Still inactive?' },
+                { type: 'Email', config: 'Offer help or pause subscription' }
+            ],
+            emailSequence: [
+                { hour: 0, subject: '👋 We miss you - everything okay?', cta: 'Let\'s chat' },
+                { hour: 168, subject: '💡 Need help? Or want to pause?', cta: 'Reach out' }
+            ],
+            integrations: ['Database', 'Email Service', 'Slack', 'Stripe'],
+            code: `{
+  "nodes": [
+    {
+      "name": "Daily Check",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "rule": "0 9 * * *"
+    },
+    {
+      "name": "Find Inactive Users",
+      "type": "n8n-nodes-base.postgres",
+      "query": "SELECT * FROM users WHERE last_login < NOW() - INTERVAL '14 days'"
+    },
+    {
+      "name": "Send Check-In",
+      "type": "n8n-nodes-base.emailSend",
+      "from": "founder@yourcompany.com"
+    }
+  ]
+}`,
+            expectedResults: '10-20% of at-risk users re-engage (huge LTV boost)'
+        }
+    ]
+
+    const selected = workflows.find(w => w.id === selectedWorkflow)!
+
+    return (
+        <div className="space-y-6">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">⚡ N8N Workflow Blueprints</h3>
+                <p className="text-gray-300 text-sm">
+                    <strong className="text-indigo-400">8 plug-and-play automation workflows</strong> that run your business on autopilot.
+                    <span className="text-gray-400"> Copy, customize, deploy.</span>
+                </p>
+            </div>
+
+            {/* Workflow Grid */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                {workflows.map(workflow => (
+                    <button
+                        key={workflow.id}
+                        onClick={() => setSelectedWorkflow(workflow.id)}
+                        className={`p-4 rounded-lg border-2 transition-all text-left ${selectedWorkflow === workflow.id
+                                ? 'border-indigo-500 bg-indigo-500/10'
+                                : 'border-[#2a2a2a] bg-[#141414] hover:border-indigo-500/50'
+                            }`}
+                    >
+                        <div className="text-lg mb-2">{workflow.name.split(' ')[0]}</div>
+                        <div className="text-white font-bold text-sm mb-2">{workflow.name.substring(2)}</div>
+                        <div className="text-xs text-gray-400 mb-2">{workflow.description}</div>
+                        <div className="flex items-center justify-between text-xs">
+                            <span className={`px-2 py-1 rounded ${workflow.complexity === 'Easy' ? 'bg-green-500/20 text-green-400' :
+                                    workflow.complexity === 'Medium' ? 'bg-yellow-500/20 text-yellow-400' :
+                                        'bg-red-500/20 text-red-400'
+                                }`}>
+                                {workflow.complexity}
+                            </span>
+                            <span className="text-indigo-400">{workflow.roi.split(' ')[0]}</span>
+                        </div>
+                    </button>
+                ))}
+            </div>
+
+            {/* Selected Workflow Details */}
+            <div className="space-y-4">
+                {/* Overview */}
+                <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                    <h4 className="text-white font-bold text-lg mb-2">{selected.name}</h4>
+                    <p className="text-gray-300 text-sm mb-4">{selected.description}</p>
+                    <div className="grid sm:grid-cols-3 gap-3">
+                        <div className="bg-[#0a0a0a] p-3 rounded-lg border border-[#2a2a2a]">
+                            <div className="text-xs text-gray-500 mb-1">Complexity</div>
+                            <div className={`font-semibold ${selected.complexity === 'Easy' ? 'text-green-400' :
+                                    selected.complexity === 'Medium' ? 'text-yellow-400' :
+                                        'text-red-400'
+                                }`}>{selected.complexity}</div>
+                        </div>
+                        <div className="bg-[#0a0a0a] p-3 rounded-lg border border-[#2a2a2a]">
+                            <div className="text-xs text-gray-500 mb-1">ROI</div>
+                            <div className="font-semibold text-indigo-400">{selected.roi}</div>
+                        </div>
+                        <div className="bg-[#0a0a0a] p-3 rounded-lg border border-[#2a2a2a]">
+                            <div className="text-xs text-gray-500 mb-1">Nodes</div>
+                            <div className="font-semibold text-white">{selected.nodes.length} steps</div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Workflow Nodes */}
+                <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                    <h5 className="text-white font-bold mb-4">🔗 Workflow Steps</h5>
+                    <div className="space-y-3">
+                        {selected.nodes.map((node, i) => (
+                            <div key={i} className="flex items-start gap-3">
+                                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xs font-bold">
+                                    {i + 1}
+                                </div>
+                                <div className="flex-1 bg-[#0a0a0a] p-3 rounded-lg border border-[#2a2a2a]">
+                                    <div className="text-white font-semibold text-sm mb-1">{node.type}</div>
+                                    <div className="text-xs text-gray-400">{node.config}</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Email Sequence */}
+                <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                    <h5 className="text-white font-bold mb-4">📧 Email Sequence</h5>
+                    <div className="space-y-3">
+                        {selected.emailSequence.map((email, i) => (
+                            <div key={i} className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                <div className="flex items-center justify-between mb-2">
+                                    <span className="text-indigo-400 font-semibold text-sm">
+                                        {email.hour === 0 ? 'Immediately' :
+                                            email.hour < 24 ? `${email.hour} hours` :
+                                                `${Math.round(email.hour / 24)} days`}
+                                    </span>
+                                    <span className="text-xs px-2 py-1 rounded bg-blue-500/20 text-blue-400">
+                                        {email.cta}
+                                    </span>
+                                </div>
+                                <div className="text-white text-sm">{email.subject}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Integrations Needed */}
+                <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                    <h5 className="text-white font-bold mb-4">🔌 Required Integrations</h5>
+                    <div className="flex flex-wrap gap-2">
+                        {selected.integrations.map((integration, i) => (
+                            <span key={i} className="px-3 py-1.5 rounded-lg bg-purple-500/10 border border-purple-500/30 text-purple-400 text-sm">
+                                {integration}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Code Example */}
+                <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                    <div className="flex items-center justify-between mb-4">
+                        <h5 className="text-white font-bold">💻 N8N JSON (Import This)</h5>
+                        <CopyButton text={selected.code} />
+                    </div>
+                    <pre className="text-gray-300 text-xs whitespace-pre-wrap font-mono bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a] max-h-64 overflow-y-auto">
+                        {selected.code}
+                    </pre>
+                    <p className="text-xs text-gray-500 mt-3">
+                        💡 Copy this JSON and import it directly into N8N (Settings → Import Workflow)
+                    </p>
+                </div>
+
+                {/* Expected Results */}
+                <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl p-5">
+                    <h5 className="text-white font-bold mb-2">📊 Expected Results</h5>
+                    <p className="text-gray-300 text-sm">{selected.expectedResults}</p>
+                </div>
+
+                {/* Setup Instructions */}
+                <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-5">
+                    <h4 className="text-white font-bold mb-3">🚀 Setup Instructions</h4>
+                    <ol className="space-y-2 text-sm text-gray-300">
+                        <li className="flex items-start gap-2">
+                            <span className="text-blue-400 font-bold">1.</span>
+                            <span>Install N8N (self-hosted or cloud.n8n.io)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-blue-400 font-bold">2.</span>
+                            <span>Connect your integrations: {selected.integrations.join(', ')}</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-blue-400 font-bold">3.</span>
+                            <span>Copy the JSON code above and import into N8N</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-blue-400 font-bold">4.</span>
+                            <span>Customize email templates and timing to match your brand</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-blue-400 font-bold">5.</span>
+                            <span>Test with a dummy user/purchase before going live</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-blue-400 font-bold">6.</span>
+                            <span>Activate workflow and watch it run on autopilot!</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 
 function SystemPromptGenerator() {
     const [businessType, setBusinessType] = useState('ecommerce')

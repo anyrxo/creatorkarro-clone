@@ -1,22 +1,23 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, use } from 'react'
 import { motion } from 'framer-motion'
 import { Search, Filter } from 'lucide-react'
 import { getResourcesByCourse } from '@/data/resources'
 import { ResourceCard } from '@/components/resources/ResourceCard'
 
 interface ResourcesPageProps {
-    params: {
+    params: Promise<{
         courseId: string
-    }
+    }>
 }
 
 export default function ResourcesPage({ params }: ResourcesPageProps) {
+    const { courseId } = use(params)
     const [searchQuery, setSearchQuery] = useState('')
     const [activeFilter, setActiveFilter] = useState<'all' | 'guide' | 'template' | 'tool'>('all')
 
-    const allResources = getResourcesByCourse(params.courseId)
+    const allResources = getResourcesByCourse(courseId)
 
     const filteredResources = allResources.filter(resource => {
         const matchesSearch = resource.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -56,8 +57,8 @@ export default function ResourcesPage({ params }: ResourcesPageProps) {
                                 key={filter}
                                 onClick={() => setActiveFilter(filter as any)}
                                 className={`px-6 py-4 rounded-xl font-medium capitalize whitespace-nowrap transition-colors ${activeFilter === filter
-                                        ? 'bg-white text-black'
-                                        : 'bg-[#0f0f0f] text-gray-400 hover:bg-[#1f1f1f] border border-[#1f1f1f]'
+                                    ? 'bg-white text-black'
+                                    : 'bg-[#0f0f0f] text-gray-400 hover:bg-[#1f1f1f] border border-[#1f1f1f]'
                                     }`}
                             >
                                 {filter}
