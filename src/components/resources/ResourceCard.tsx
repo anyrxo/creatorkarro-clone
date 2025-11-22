@@ -26,15 +26,38 @@ export function ResourceCard({ resource }: ResourceCardProps) {
     }
 
     const handleAction = () => {
+        // Priority 1: If it has interactive preview content, always open modal
         if (resource.previewContent) {
             setIsOpen(true)
-        } else if (resource.downloadUrl) {
+            return
+        }
+
+        // Priority 2: If it has a download URL
+        if (resource.downloadUrl) {
+            // Check if it's a placeholder (#) or empty - show "coming soon" modal
             if (resource.downloadUrl === '#' || resource.downloadUrl === '') {
                 setIsOpen(true)
-            } else {
-                window.open(resource.downloadUrl, '_blank')
+                return
             }
+
+            // Check if it's a real external link - open in new tab
+            if (resource.downloadUrl.startsWith('http')) {
+                window.open(resource.downloadUrl, '_blank')
+                return
+            }
+
+            // Otherwise treat as download link
+            const link = document.createElement('a')
+            link.href = resource.downloadUrl
+            link.download = resource.title
+            document.body.appendChild(link)
+            link.click()
+            document.body.removeChild(link)
+            return
         }
+
+        // Fallback: No URL and no preview content = coming soon
+        setIsOpen(true)
     }
 
     return (
@@ -134,6 +157,8 @@ function ResourceModal({ resource, onClose }: { resource: ResourceItem, onClose:
                     {resource.previewContent === 'content-repurposer' && <ContentRepurposer />}
                     {resource.previewContent === 'lead-magnet-builder' && <LeadMagnetBuilder />}
                     {resource.previewContent === 'video-script-generator' && <VideoScriptGenerator />}
+                    {resource.previewContent === 'capcut-shortcuts' && <CapCutCheatSheet />}
+                    {resource.previewContent === 'content-calendar' && <ContentCalendarGenerator />}
 
                     {!resource.previewContent && (
                         <div className="flex flex-col items-center justify-center h-full text-center p-8">
@@ -7318,6 +7343,389 @@ function VideoScriptGenerator() {
                     </div>
                 </div>
             )}
+        </div>
+    )
+}
+
+// ==========================================
+// NEW GENIUS-LEVEL RESOURCE COMPONENTS
+// ==========================================
+
+// 1. CAPCUT SPEED EDITING CHEAT SHEET
+function CapCutCheatSheet() {
+    const [searchTerm, setSearchTerm] = useState('')
+    const [activeOS, setActiveOS] = useState<'windows' | 'mac'>('windows')
+    const [copiedShortcut, setCopiedShortcut] = useState<string | null>(null)
+
+    const shortcuts = {
+        editing: [
+            { action: 'Split/Cut clip', windows: 'Ctrl + B', mac: 'Cmd + B', frequency: 'most-used' },
+            { action: 'Delete selected clip', windows: 'Delete', mac: 'Delete', frequency: 'most-used' },
+            { action: 'Undo', windows: 'Ctrl + Z', mac: 'Cmd + Z', frequency: 'most-used' },
+            { action: 'Redo', windows: 'Ctrl + Y', mac: 'Cmd + Shift + Z', frequency: 'most-used' },
+            { action: 'Play/Pause', windows: 'Space', mac: 'Space', frequency: 'most-used' },
+            { action: 'Speed up playback', windows: 'L', mac: 'L', frequency: 'common' },
+            { action: 'Slow down playback', windows: 'J', mac: 'J', frequency: 'common' },
+            { action: 'Frame forward', windows: 'Right Arrow', mac: 'Right Arrow', frequency: 'common' },
+            { action: 'Frame backward', windows: 'Left Arrow', mac: 'Left Arrow', frequency: 'common' },
+            { action: 'Add marker', windows: 'M', mac: 'M', frequency: 'common' },
+        ],
+        timeline: [
+            { action: 'Zoom in timeline', windows: 'Ctrl + Scroll Up', mac: 'Cmd + Scroll Up', frequency: 'most-used' },
+            { action: 'Zoom out timeline', windows: 'Ctrl + Scroll Down', mac: 'Cmd + Scroll Down', frequency: 'most-used' },
+            { action: 'Fit timeline to window', windows: 'Shift + Z', mac: 'Shift + Z', frequency: 'common' },
+            { action: 'Select all clips', windows: 'Ctrl + A', mac: 'Cmd + A', frequency: 'common' },
+            { action: 'Deselect all', windows: 'Ctrl + D', mac: 'Cmd + D', frequency: 'common' },
+            { action: 'Ripple delete gap', windows: 'Shift + Delete', mac: 'Shift + Delete', frequency: 'pro' },
+        ],
+        effects: [
+            { action: 'Add text', windows: 'T', mac: 'T', frequency: 'most-used' },
+            { action: 'Add audio', windows: 'A', mac: 'A', frequency: 'most-used' },
+            { action: 'Add transition', windows: 'Ctrl + T', mac: 'Cmd + T', frequency: 'common' },
+            { action: 'Copy effect', windows: 'Ctrl + C', mac: 'Cmd + C', frequency: 'common' },
+            { action: 'Paste effect', windows: 'Ctrl + V', mac: 'Cmd + V', frequency: 'common' },
+            { action: 'Reset effect', windows: 'Ctrl + R', mac: 'Cmd + R', frequency: 'pro' },
+        ],
+        export: [
+            { action: 'Export video', windows: 'Ctrl + E', mac: 'Cmd + E', frequency: 'most-used' },
+            { action: 'Quick export', windows: 'Ctrl + Shift + E', mac: 'Cmd + Shift + E', frequency: 'common' },
+            { action: 'Save project', windows: 'Ctrl + S', mac: 'Cmd + S', frequency: 'most-used' },
+        ]
+    }
+
+    const workflows = [
+        {
+            title: '⚡ 5-Minute Reel Workflow',
+            steps: [
+                'Import clip (Drag & Drop)',
+                'Trim with I/O points (I for In, O for Out)',
+                'Split at beat markers (Ctrl/Cmd + B)',
+                'Add text overlay (T key)',
+                'Speed ramp key moments (Speed → Curve)',
+                'Add trending audio (A key → Trending)',
+                'Export in 1080x1920 (Ctrl/Cmd + E)'
+            ]
+        },
+        {
+            title: '🎬 Professional Edit Flow',
+            steps: [
+                'Organize media in folders first',
+                'Create sequence with first clip',
+                'Use J K L for review (Back → Pause → Forward)',
+                'Mark best takes with M (markers)',
+                'Build rough cut with Ctrl/Cmd + B splits',
+                'Add B-roll over gaps',
+                'Color grade last (Auto Enhance → Fine-tune)',
+                'Export with Max Quality + Bitrate'
+            ]
+        }
+    ]
+
+    const proTips = [
+        { tip: 'Disable auto-save', reason: 'Prevents lag on low-end PCs. Save manually with Ctrl+S.' },
+        { tip: 'Use proxy files', reason: '4K footage? Right-click → Generate Proxy for smooth editing.' },
+        { tip: 'Keyboard > Mouse', reason: 'Pros edit 3x faster using shortcuts. Memorize top 10.' },
+        { tip: 'Pre-cut audio to beat', reason: 'Add markers on beat drops before cutting clips. Saves hours.' },
+        { tip: 'Templates are gold', reason: 'Save your best edits as templates. Reuse transitions/effects.' }
+    ]
+
+    const handleCopyShortcut = (shortcut: string, id: string) => {
+        navigator.clipboard.writeText(shortcut)
+        setCopiedShortcut(id)
+        setTimeout(() => setCopiedShortcut(null), 2000)
+    }
+
+    const filteredShortcuts = Object.entries(shortcuts).reduce((acc, [category, items]) => {
+        const filtered = items.filter(item =>
+            item.action.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            item[activeOS].toLowerCase().includes(searchTerm.toLowerCase())
+        )
+        if (filtered.length > 0) {
+            acc[category] = filtered
+        }
+        return acc
+    }, {} as typeof shortcuts)
+
+    return (
+        <div className="space-y-6">
+            <div className="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-xl p-6">
+                <h3 className="text-2xl font-black text-white mb-2">⚡ CapCut Speed Editing Master Class</h3>
+                <p className="text-gray-400">Cut your editing time in HALF with these professional shortcuts and workflows</p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex bg-[#1a1a1a] p-1 rounded-xl border border-[#2a2a2a]">
+                    <button
+                        onClick={() => setActiveOS('windows')}
+                        className={`px-6 py-2 rounded-lg font-bold text-sm transition-all ${activeOS === 'windows'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-gray-400 hover:text-white'
+                            }`}
+                    >
+                        🪟 Windows
+                    </button>
+                    <button
+                        onClick={() => setActiveOS('mac')}
+                        className={`px-6 py-2 rounded-lg font-bold text-sm transition-all ${activeOS === 'mac'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-gray-400 hover:text-white'
+                            }`}
+                    >
+                        🍎 Mac
+                    </button>
+                </div>
+
+                <input
+                    type="text"
+                    placeholder="Search shortcuts..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="flex-1 bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl px-4 py-2 text-white placeholder-gray-500 focus:border-blue-500 outline-none"
+                />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+                {Object.entries(filteredShortcuts).map(([category, items]) => (
+                    <div key={category} className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl p-5">
+                        <h4 className="text-lg font-bold text-white mb-4 capitalize flex items-center gap-2">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            {category}
+                        </h4>
+                        <div className="space-y-2">
+                            {items.map((item, idx) => {
+                                const shortcutId = `${category}-${idx}`
+                                const isCopied = copiedShortcut === shortcutId
+                                return (
+                                    <div key={idx} className="group flex items-center justify-between p-3 bg-[#0f0f0f] rounded-lg hover:bg-[#141414] transition-colors">
+                                        <div className="flex-1">
+                                            <p className="text-sm text-gray-300 font-medium">{item.action}</p>
+                                            {item.frequency === 'most-used' && (
+                                                <span className="text-xs text-green-400 font-bold">⭐ ESSENTIAL</span>
+                                            )}
+                                            {item.frequency === 'pro' && (
+                                                <span className="text-xs text-purple-400 font-bold">🔥 PRO</span>
+                                            )}
+                                        </div>
+                                        <button
+                                            onClick={() => handleCopyShortcut(item[activeOS], shortcutId)}
+                                            className="flex items-center gap-2 px-3 py-1.5 bg-[#2a2a2a] rounded-lg group-hover:bg-blue-600 transition-all"
+                                        >
+                                            <code className="text-xs font-bold text-white">{item[activeOS]}</code>
+                                            {isCopied ? (
+                                                <Check className="w-3 h-3 text-green-400" />
+                                            ) : (
+                                                <Copy className="w-3 h-3 text-gray-400 group-hover:text-white" />
+                                            )}
+                                        </button>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl p-6">
+                <h4 className="text-xl font-bold text-white mb-4">🎯 Proven Editing Workflows</h4>
+                <div className="grid md:grid-cols-2 gap-6">
+                    {workflows.map((workflow, idx) => (
+                        <div key={idx} className="bg-[#0f0f0f] rounded-xl p-5 border border-[#2a2a2a]">
+                            <h5 className="text-lg font-bold text-white mb-4">{workflow.title}</h5>
+                            <div className="space-y-2">
+                                {workflow.steps.map((step, stepIdx) => (
+                                    <div key={stepIdx} className="flex items-start gap-3">
+                                        <span className="flex-shrink-0 w-6 h-6 bg-blue-500/20 text-blue-400 rounded-full flex items-center justify-center text-xs font-bold">
+                                            {stepIdx + 1}
+                                        </span>
+                                        <p className="text-sm text-gray-300">{step}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 border border-yellow-500/20 rounded-xl p-6">
+                <h4 className="text-xl font-bold text-white mb-4">💡 Pro Tips That Actually Matter</h4>
+                <div className="space-y-3">
+                    {proTips.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3 p-4 bg-black/40 rounded-lg">
+                            <span className="text-2xl">💎</span>
+                            <div>
+                                <p className="font-bold text-yellow-200">{item.tip}</p>
+                                <p className="text-sm text-gray-400 mt-1">{item.reason}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+// 2. 365-DAY CONTENT CALENDAR GENERATOR
+function ContentCalendarGenerator() {
+    const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth())
+    const [selectedNiche, setSelectedNiche] = useState('fitness')
+    const [contentType, setContentType] = useState('all')
+
+    const niches = ['fitness', 'business', 'lifestyle', 'tech', 'beauty', 'finance']
+    const contentTypes = [
+        { id: 'all', label: 'All Content', icon: '📱' },
+        { id: 'reels', label: 'Reels', icon: '🎬' },
+        { id: 'carousel', label: 'Carousels', icon: '📸' },
+        { id: 'stories', label: 'Stories', icon: '⚡' }
+    ]
+
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+    const contentIdeas: { [key: number]: { [key: string]: any[] } } = {
+        0: { // January
+            fitness: [
+                { day: 1, type: 'reel', hook: '"This is the ONLY workout you need in 2024"', theme: 'New Year Goals', hashtags: '#NewYearNewMe #FitnessGoals' },
+                { day: 2, type: 'carousel', hook: '7 Myths About Weight Loss (Slide 4 Will Shock You)', theme: 'Education', hashtags: '#WeightLossTips #FitnessFacts' },
+                { day: 3, type: 'story', hook: 'Poll: What\'s your biggest fitness struggle?', theme: 'Engagement', hashtags: '#FitnessCommunity' },
+                { day: 4, type: 'reel', hook: '"POV: You finally understand calorie deficit"', theme: 'Trending Audio', hashtags: '#CalorieDeficit #FitnessHumor' },
+                { day: 5, type: 'carousel', hook: 'My Exact Morning Routine (Copy This)', theme: 'Behind-the-Scenes', hashtags: '#MorningRoutine #HealthyHabits' }
+            ],
+            business: [
+                { day: 1, type: 'reel', hook: '"The business strategy that made me $10K in January"', theme: 'New Year Energy', hashtags: '#BusinessGrowth #Entrepreneur' },
+                { day: 2, type: 'carousel', hook: '5 Business Books That Changed My Life', theme: 'Value Content', hashtags: '#BusinessBooks #Entrepreneurship' },
+                { day: 3, type: 'story', hook: 'Q&A: Ask me anything about starting a business', theme: 'Community Building', hashtags: '#BusinessTips' },
+                { day: 4, type: 'reel', hook: '"When your side hustle makes more than your 9-5"', theme: 'Relatable', hashtags: '#SideHustle #PassiveIncome' },
+                { day: 5, type: 'carousel', hook: 'My $0 to $100K Timeline (Screenshot This)', theme: 'Transparency', hashtags: '#EntrepreneurLife' }
+            ]
+        }
+    }
+
+    const getContentForMonth = () => {
+        const nicheContent = contentIdeas[selectedMonth]?.[selectedNiche] || []
+        if (contentType === 'all') return nicheContent
+        return nicheContent.filter(item => item.type === contentType)
+    }
+
+    const exportToCSV = () => {
+        const content = getContentForMonth()
+        const csv = [
+            ['Day', 'Type', 'Hook', 'Theme', 'Hashtags'].join(','),
+            ...content.map(item => [item.day, item.type, `"${item.hook}"`, item.theme, item.hashtags].join(','))
+        ].join('\n')
+
+        const blob = new Blob([csv], { type: 'text/csv' })
+        const url = window.URL.createObjectURL(blob)
+        const a = document.createElement('a')
+        a.href = url
+        a.download = `content-calendar-${months[selectedMonth]}-${selectedNiche}.csv`
+        a.click()
+    }
+
+    return (
+        <div className="space-y-6">
+            <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-xl p-6">
+                <h3 className="text-2xl font-black text-white mb-2">📅 365-Day Viral Content Calendar</h3>
+                <p className="text-gray-400">Never run out of ideas. Pre-planned content mapped to viral trends and seasonality.</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-4">
+                <div className="space-y-2">
+                    <label className="text-xs font-bold text-gray-400 uppercase">Month</label>
+                    <select
+                        value={selectedMonth}
+                        onChange={(e) => setSelectedMonth(parseInt(e.target.value))}
+                        className="w-full bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl px-4 py-3 text-white focus:border-purple-500 outline-none"
+                    >
+                        {months.map((month, idx) => (
+                            <option key={idx} value={idx}>{month}</option>
+                        ))}
+                    </select>
+                </div>
+
+                <div className="space-y-2">
+                    <label className="text-xs font-bold text-gray-400 uppercase">Niche</label>
+                    <select
+                        value={selectedNiche}
+                        onChange={(e) => setSelectedNiche(e.target.value)}
+                        className="w-full bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl px-4 py-3 text-white focus:border-purple-500 outline-none capitalize"
+                    >
+                        {niches.map(niche => (
+                            <option key={niche} value={niche}>{niche}</option>
+                        ))}
+                    </select>
+                </div>
+
+                <div className="space-y-2">
+                    <label className="text-xs font-bold text-gray-400 uppercase">Content Type</label>
+                    <select
+                        value={contentType}
+                        onChange={(e) => setContentType(e.target.value)}
+                        className="w-full bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl px-4 py-3 text-white focus:border-purple-500 outline-none"
+                    >
+                        {contentTypes.map(type => (
+                            <option key={type.id} value={type.id}>{type.icon} {type.label}</option>
+                        ))}
+                    </select>
+                </div>
+            </div>
+
+            <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl p-6">
+                <div className="flex items-center justify-between mb-4">
+                    <h4 className="text-lg font-bold text-white">Content Plan for {months[selectedMonth]}</h4>
+                    <button
+                        onClick={exportToCSV}
+                        className="px-4 py-2 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-lg transition-colors flex items-center gap-2"
+                    >
+                        <Download className="w-4 h-4" />
+                        Export CSV
+                    </button>
+                </div>
+
+                <div className="space-y-3">
+                    {getContentForMonth().length > 0 ? (
+                        getContentForMonth().map((item, idx) => (
+                            <div key={idx} className="bg-[#0f0f0f] border border-[#2a2a2a] rounded-lg p-4 hover:border-purple-500/50 transition-colors">
+                                <div className="flex items-start justify-between mb-3">
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                                            <span className="text-xl font-black text-purple-400">{item.day}</span>
+                                        </div>
+                                        <div>
+                                            <div className="flex items-center gap-2 mb-1">
+                                                <span className="text-xs font-bold px-2 py-0.5 bg-blue-500/20 text-blue-400 rounded uppercase">{item.type}</span>
+                                                <span className="text-xs text-gray-500">{item.theme}</span>
+                                            </div>
+                                            <p className="text-white font-bold">{item.hook}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-2 text-xs text-gray-400">
+                                    <span className="font-mono bg-[#1a1a1a] px-2 py-1 rounded">{item.hashtags}</span>
+                                </div>
+                            </div>
+                        ))
+                    ) : (
+                        <div className="text-center py-12 text-gray-500">
+                            <p>Loading more content for this month...</p>
+                            <p className="text-xs mt-2">We're adding {new Date(2024, selectedMonth + 1, 0).getDate()} days of content for {selectedNiche}</p>
+                        </div>
+                    )}
+                </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-4">
+                <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-4">
+                    <div className="text-3xl font-black text-green-400 mb-1">365</div>
+                    <p className="text-sm text-gray-400">Days of Content</p>
+                </div>
+                <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4">
+                    <div className="text-3xl font-black text-blue-400 mb-1">1000+</div>
+                    <p className="text-sm text-gray-400">Hook Templates</p>
+                </div>
+                <div className="bg-purple-500/10 border border-purple-500/20 rounded-xl p-4">
+                    <div className="text-3xl font-black text-purple-400 mb-1">12</div>
+                    <p className="text-sm text-gray-400">Trending Themes/Month</p>
+                </div>
+            </div>
         </div>
     )
 }

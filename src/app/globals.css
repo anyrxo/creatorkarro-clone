@@ -786,60 +786,13 @@ html {
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1f2937;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #2563eb, #7c3aed);
-}
-
-/* Universal Interactive Element Animations */
-a,
-button,
-[role="button"],
-.interactive {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-a:hover,
-button:hover,
-[role="button"]:hover,
-.interactive:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.05);
-}
-
-/* Premium Button Styles */
-.cta-button,
-.btn-primary {
-  position: relative;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.cta-button::before,
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s;
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+transition: left 0.5s;
 }
 
 .cta-button:hover::before,

@@ -74,22 +74,22 @@ export const getAllResources = (): ResourceItem[] => {
         id: 'ig-capcut-shortcuts',
         title: 'CapCut Speed Editing Cheat Sheet',
         description: 'Keyboard shortcuts and workflow hacks to edit reels in 50% less time.',
-        type: 'pdf',
-        category: 'guide',
-        downloadUrl: '#',
+        type: 'tool',
+        category: 'tool',
         courseId: 'instagram-ignited',
-        moduleId: 'phase-2'
+        moduleId: 'phase-2',
+        previewContent: 'capcut-shortcuts'
     })
 
     resources.push({
         id: 'ig-content-calendar',
         title: '365-Day Viral Content Calendar',
         description: 'Never run out of ideas. A full year of content prompts mapped to viral trends.',
-        type: 'spreadsheet',
-        category: 'template',
-        downloadUrl: '#',
+        type: 'tool',
+        category: 'tool',
         courseId: 'instagram-ignited',
-        moduleId: 'phase-2'
+        moduleId: 'phase-2',
+        previewContent: 'content-calendar'
     })
 
     resources.push({

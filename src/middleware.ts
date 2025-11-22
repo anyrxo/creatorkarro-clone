@@ -4,10 +4,12 @@ import { createClient } from '@supabase/supabase-js';
 
 // Initialize Supabase client for middleware
 // Note: Middleware runs on Edge Runtime, so standard env vars work
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+const supabase = (supabaseUrl && supabaseKey)
+  ? createClient(supabaseUrl, supabaseKey)
+  : null;
 
 // Define public routes that don't require authentication
 const isPublicRoute = createRouteMatcher([
@@ -49,17 +51,24 @@ export default clerkMiddleware(async (auth, request) => {
   // e.g. iimagined.ai/callan
   if (pathname && !pathname.includes('/') && !reservedRoutes.includes(pathname) && !isPublicRoute(request)) {
     // Check if this code exists in Supabase
-    const { data } = await supabase
-      .from('affiliate_profiles')
-      .select('user_id')
-      .eq('code', pathname)
-      .single();
+    if (supabase) {
+      try {
+        const { data } = await supabase
+          .from('affiliate_profiles')
+          .select('user_id')
+          .eq('code', pathname)
+          .single();
 
-    if (data) {
-      // Redirect to homepage with ref param
-      const redirectUrl = new URL('/', request.url);
-      redirectUrl.searchParams.set('ref', data.user_id);
-      return NextResponse.redirect(redirectUrl);
+        if (data) {
+          // Redirect to homepage with ref param
+          const redirectUrl = new URL('/', request.url);
+          redirectUrl.searchParams.set('ref', data.user_id);
+          return NextResponse.redirect(redirectUrl);
+        }
+      } catch (error) {
+        // Ignore Supabase errors in middleware to prevent crashing
+        console.error('Middleware Supabase error:', error);
+      }
     }
   }
 

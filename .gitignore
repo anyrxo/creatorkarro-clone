@@ -65,3 +65,6 @@ api/venv/
 *.backup
 *.original-backup
 *.old
+
+# clerk configuration (can include secrets)
+/.clerk/
