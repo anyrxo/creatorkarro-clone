@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import AdminGate from '@/components/admin/AdminGate'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import { LayoutDashboard, BookOpen, Users, Settings, LogOut, Key, Loader2 } from 'lucide-react'
+import { LayoutDashboard, BookOpen, Users, Settings, LogOut, Key, Loader2, Monitor } from 'lucide-react'
 import { checkAdminAccess } from '@/app/actions/admin-auth'
 import { useUser } from '@clerk/nextjs'
 
