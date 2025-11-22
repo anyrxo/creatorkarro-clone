@@ -76,20 +76,27 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
       if (achievementsData) setAchievements(achievementsData)
 
       // 3. Fetch/Initialize Daily Quests
-      const { data: questsData } = await supabase
+      console.log('[Gamification] Fetching quests for user:', user.id)
+      const { data: questsData, error: questsError } = await supabase
         .from('user_quests')
         .select('*, quest:daily_quests(*)')
         .eq('user_id', user.id)
         .eq('last_updated', new Date().toISOString().split('T')[0])
 
+      console.log('[Gamification] Quest fetch result:', { questsData, questsError, date: new Date().toISOString().split('T')[0] })
+
       if (questsData && questsData.length > 0) {
+        console.log('[Gamification] Setting quests from DB:', questsData)
         setQuests(questsData)
       } else {
         // Initialize daily quests if missing for today
+        console.log('[Gamification] No quests found, creating new ones...')
         const { data: activeQuests } = await supabase
           .from('daily_quests')
           .select('*')
           .eq('is_active', true)
+
+        console.log('[Gamification] Active quests:', activeQuests)
 
         if (activeQuests) {
           const newUserQuests = activeQuests.map((quest: any) => ({
@@ -100,10 +107,14 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
             last_updated: new Date().toISOString().split('T')[0]
           }))
 
-          const { data: insertedQuests } = await supabase
+          console.log('[Gamification] Inserting quests:', newUserQuests)
+
+          const { data: insertedQuests, error: insertError } = await supabase
             .from('user_quests')
             .insert(newUserQuests)
             .select('*, quest:daily_quests(*)')
+
+          console.log('[Gamification] Insert result:', { insertedQuests, insertError })
 
           if (insertedQuests) setQuests(insertedQuests)
         }
