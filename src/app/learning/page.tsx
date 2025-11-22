@@ -13,6 +13,7 @@ import StreakFlame from '@/components/gamification/StreakFlame'
 import AchievementsList from '@/components/gamification/AchievementsList'
 import DailyQuestsCard from '@/components/gamification/DailyQuestsCard'
 import ErrorBoundary from '@/components/ErrorBoundary'
+import GamificationDebug from '@/components/gamification/GamificationDebug'
 import Link from 'next/link'
 
 export default function LearningDashboard() {
@@ -235,6 +236,7 @@ export default function LearningDashboard() {
                     </Link>
                 </div>
             </div>
+            <GamificationDebug />
         </div>
     )
 }
