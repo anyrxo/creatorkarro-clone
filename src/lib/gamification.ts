@@ -86,7 +86,7 @@ export interface DailyQuest {
   description: string
   xp_reward: number
   target_count: number
-  quest_type: 'complete_lesson' | 'login' | 'share_content'
+  quest_type: 'complete_lesson' | 'lesson_complete' | 'module_complete' | 'login' | 'share_content'
 }
 
 export interface UserQuest {
